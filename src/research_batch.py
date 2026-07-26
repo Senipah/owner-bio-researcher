@@ -610,7 +610,7 @@ def render_research_report(report: dict[str, Any]) -> str:
             """
         )
 
-    return f"""<!doctype html>
+    rendered = f"""<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -694,3 +694,4 @@ def render_research_report(report: dict[str, Any]) -> str:
 </body>
 </html>
 """
+    return "\n".join(line.rstrip() for line in rendered.splitlines()) + "\n"

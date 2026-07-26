@@ -1,0 +1,253 @@
+{
+  "schema_version": 2,
+  "owner": {
+    "person_id": 20,
+    "display_name": "Roman Abramovich",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The enriched owner record's Eclipse and Solaris relationships align with the exact Forbes profile, public-record identity details, and the official Chelsea ownership record."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.top-100.enriched.json",
+    "raw_blank_details": [
+      "middle_names",
+      "name_suffix",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "known_for_title",
+      "place_of_birth"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/roman-abramovich/",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The profile is an exact name match and aligns with Abramovich's Sibneft sale, investment holdings, Chukotka governorship, citizenships, and former Chelsea ownership."
+    }
+  },
+  "wealth_origin": {
+    "classification": "privatization_or_state_assets",
+    "summary": "Abramovich's fortune was built principally through the acquisition of oil producer Sibneft during Russia's post-Soviet state-asset privatization, followed by the sale of a 73% stake to state-controlled Gazprom in 2005 and later investment holdings in metals and other assets.",
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "The English High Court judgment documents Sibneft's creation and privatization and Abramovich's acquisition of control; Forbes corroborates the later stake sale and investment holdings."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "biography": {
+    "plain_text": "Roman Arkadyevich Abramovich is a Russian-born businessman and investor whose fortune took shape during the post-Soviet privatization of state assets. In 1995, he and partners acquired control of oil producer Sibneft; a decade later he sold a 73% stake to Gazprom. He later diversified through holdings in steel and nickel, served as governor of Chukotka, and became internationally known through his 19-year ownership of Chelsea F.C.",
+    "html": "<p>Roman Arkadyevich Abramovich is a Russian-born businessman and investor whose fortune took shape during the post-Soviet privatization of state assets. In 1995, he and partners acquired control of oil producer Sibneft; a decade later he sold a 73% stake to Gazprom. He later diversified through holdings in steel and nickel, served as governor of Chukotka, and became internationally known through his 19-year ownership of Chelsea F.C.</p>\r\n",
+    "word_count": 67,
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The material wealth, investment, public-office, and football-ownership claims are supported by the High Court judgment, Forbes, and Chelsea's official history."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S5"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "middle_names",
+      "value": "Arkadyevich",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "TASS gives the full name Roman Arkadyevich Abramovich, corroborated in Cyrillic by the official State Duma record."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "known_for_title",
+      "value": "Investor and former owner of Chelsea F.C.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Forbes identifies Abramovich as an investor and Chelsea's official statement confirms completion of the sale after 19 years of ownership."
+      },
+      "source_ids": [
+        "S1",
+        "S5"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "place_of_birth",
+      "value": "Saratov",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "The TASS biographical record states that Abramovich was born in Saratov on 24 October 1966, matching the birth date in the source owner record."
+      },
+      "source_ids": [
+        "S3"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://www.forbes.com/profile/roman-abramovich/",
+      "verification": "The exact Forbes profile matches Abramovich's business history, citizenships, public office, and former Chelsea ownership; type ID 11 is copied from the owner document lookup.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "This is Forbes' dedicated profile for the same Roman Abramovich represented by the owner record."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/profile/roman-abramovich/",
+      "title": "Roman Abramovich & family",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-07-26",
+      "supports": [
+        "identity",
+        "Forbes profile",
+        "Sibneft stake sale",
+        "steel and nickel holdings",
+        "Chukotka governorship",
+        "former Chelsea ownership",
+        "known-for title"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.judiciary.uk/wp-content/uploads/JCO/Documents/Judgments/berezovsky-judgment.pdf",
+      "title": "Berezovsky v Abramovich: Approved Judgment",
+      "publisher": "Courts and Tribunals Judiciary",
+      "tier": 1,
+      "accessed_at": "2026-07-26",
+      "supports": [
+        "Sibneft creation as part of a privatization programme",
+        "Abramovich's role in acquiring control of Sibneft",
+        "wealth-origin classification"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://tass.ru/encyclopedia/person/%D0%90/abramovich-roman-arkadevich",
+      "title": "Abramovich, Roman Arkadyevich",
+      "publisher": "TASS Encyclopedia",
+      "tier": 2,
+      "accessed_at": "2026-07-26",
+      "supports": [
+        "full name",
+        "middle name",
+        "birthplace",
+        "date of birth",
+        "identity"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://duma.gov.ru/duma/deputies/3/",
+      "title": "State Duma Deputies: Third Convocation",
+      "publisher": "State Duma of the Russian Federation",
+      "tier": 1,
+      "accessed_at": "2026-07-26",
+      "supports": [
+        "full name in Cyrillic",
+        "middle name corroboration",
+        "public-office identity"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.chelseafc.com/en/news/article/statement-from-board-of-directors-of-chelsea-football-club-limit",
+      "title": "Statement from the Board of Directors of Chelsea Football Club Limited",
+      "publisher": "Chelsea Football Club",
+      "tier": 1,
+      "accessed_at": "2026-07-26",
+      "supports": [
+        "completion of Chelsea sale",
+        "19 years of Chelsea ownership",
+        "known-for title"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Focused searches found several name-matched LinkedIn and social accounts, but none was linked by an official organisation or corroborated strongly enough to identify it as Abramovich's personal account.",
+    "No personal Instagram, LinkedIn, personal website, Facebook, Twitter/X, YouTube, or TikTok link met the proposal threshold.",
+    "The optional suffix and secondary-residence fields were left blank; death, age, internal-note, and unknown-name fields were classified as inapplicable or system fields rather than enrichment targets.",
+    "Sanctions and related allegations were intentionally excluded from the biography because they are not needed to explain the core origin of wealth in this calibration."
+  ],
+  "review": {
+    "status": "pending",
+    "notes": null
+  }
+}

@@ -1,0 +1,383 @@
+{
+  "schema_version": 2,
+  "owner": {
+    "person_id": 111,
+    "display_name": "Sheikh Mohammed bin Zayed Al Nahyan",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The immutable owner record links this exact name to Azzam, while UAE government and official personal sources identify the matching Emirati ruler; Mohamed and Mohammed are common transliterations of the same Arabic name."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.top-100.enriched.json",
+    "raw_blank_details": [
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Focused exact-name and site:forbes.com/profile searches found Forbes reporting and a distinct profile for his late brother Khalifa, but no matching Mohamed or Mohammed bin Zayed profile."
+    }
+  },
+  "wealth_origin": {
+    "classification": "inherited",
+    "summary": "His financial standing is dynastic rather than self-made: he is a son of UAE founder Sheikh Zayed and belongs to Abu Dhabi's Al Nahyan ruling family, whose oil-derived wealth was later diversified through global investments. Bloomberg notes that state and personal interests overlap, so sovereign assets should not be treated as his personal fortune.",
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Official sources establish his place in the hereditary ruling dynasty, and Bloomberg documents the family's oil-rooted wealth and the blurred boundary between state and personal interests."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4"
+    ]
+  },
+  "biography": {
+    "plain_text": "Sheikh Mohammed bin Zayed Al Nahyan is an Emirati royal and military-trained statesman whose standing derives from Abu Dhabi's ruling Al Nahyan dynasty. A son of UAE founder Sheikh Zayed, he trained at Sandhurst, served across the armed forces and became crown prince in 2004. He succeeded his brother as Ruler of Abu Dhabi and was elected President of the UAE in May 2022, placing him at the centre of the federation's political and economic leadership.",
+    "html": "<p>Sheikh Mohammed bin Zayed Al Nahyan is an Emirati royal and military-trained statesman whose standing derives from Abu Dhabi's ruling Al Nahyan dynasty. A son of UAE founder Sheikh Zayed, he trained at Sandhurst, served across the armed forces and became crown prince in 2004. He succeeded his brother as Ruler of Abu Dhabi and was elected President of the UAE in May 2022, placing him at the centre of the federation's political and economic leadership.</p>\r\n",
+    "word_count": 76,
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The identity, lineage, military training, succession and current offices are documented by UAE government and official personal biographies and independently corroborated by Bloomberg."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "known_for_title",
+      "value": "President of the UAE and Ruler of Abu Dhabi",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Both the official UAE government profile and his official personal biography state these current offices."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "place_of_birth",
+      "value": "Al Ain",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The official UAE government biography gives Al Ain as his birthplace."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "birth_day",
+      "value": "11",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The official UAE government biography states that he was born on 11 March 1961."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "birth_month",
+      "value": "March",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The official UAE government biography states that he was born on 11 March 1961."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "birth_year",
+      "value": "1961",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The official UAE government biography states that he was born on 11 March 1961."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "biography",
+      "value": "<p>Sheikh Mohammed bin Zayed Al Nahyan is an Emirati royal and military-trained statesman whose standing derives from Abu Dhabi's ruling Al Nahyan dynasty. A son of UAE founder Sheikh Zayed, he trained at Sandhurst, served across the armed forces and became crown prince in 2004. He succeeded his brother as Ruler of Abu Dhabi and was elected President of the UAE in May 2022, placing him at the centre of the federation's political and economic leadership.</p>\r\n",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Every material claim in the biography is supported by the cited official and independent sources."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "2",
+      "type": "Facebook",
+      "url": "https://www.facebook.com/HHSheikhMohamedBinZayed",
+      "verification": "His official personal website links directly to this Facebook account; type ID 2 is copied from the owner document lookup.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Direct link from the exact official personal domain."
+      },
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "type_id": "3",
+      "type": "Twitter",
+      "url": "https://twitter.com/MohamedBinZayed",
+      "verification": "His official personal website links directly to this Twitter/X account; type ID 3 is copied from the owner document lookup.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Direct link from the exact official personal domain."
+      },
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "type_id": "5",
+      "type": "LinkedIn",
+      "url": "https://www.linkedin.com/in/hh-sheikh-mohamed-bin-zayed-al-nahyan/",
+      "verification": "His official personal website links directly to this LinkedIn account; type ID 5 is copied from the owner document lookup.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Direct link from the exact official personal domain."
+      },
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "type_id": "9",
+      "type": "Instagram",
+      "url": "https://www.instagram.com/mohamedbinzayed/",
+      "verification": "His official personal website links directly to this Instagram account; type ID 9 is copied from the owner document lookup.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Direct link from the exact official personal domain."
+      },
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mohamed_bin_Zayed_Al_Nahyan",
+      "verification": "The article's identity, offices, lineage, birth details and Sandhurst education match the UAE government and official personal biographies; type ID 10 is copied from the owner document lookup.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact biographical match corroborated field by field against first-party sources."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S5"
+      ]
+    },
+    {
+      "type_id": "15",
+      "type": "Personal Website",
+      "url": "https://www.mohamedbinzayed.ae/en",
+      "verification": "The domain is the official biographical and news site dedicated to Sheikh Mohamed bin Zayed; type ID 15 is copied from the owner document lookup.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Exact official personal site with his biography, current office and first-party news."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://u.ae/en/about-the-uae/the-uae-government/government-leaders/h-h-sheikh-mohamed-bin-zayed-al-nahyan",
+      "title": "H. H. Sheikh Mohamed bin Zayed Al Nahyan",
+      "publisher": "The Official Platform of the UAE Government",
+      "tier": 1,
+      "accessed_at": "2026-07-26",
+      "supports": [
+        "identity",
+        "current offices",
+        "birth date",
+        "birthplace",
+        "lineage",
+        "Sandhurst education",
+        "military career",
+        "crown-prince succession"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.mohamedbinzayed.ae/en/biography",
+      "title": "Biography",
+      "publisher": "Official website of Sheikh Mohamed bin Zayed Al Nahyan",
+      "tier": 1,
+      "accessed_at": "2026-07-26",
+      "supports": [
+        "identity",
+        "official personal website",
+        "current offices",
+        "birth year",
+        "lineage",
+        "succession",
+        "national leadership"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.mohamedbinzayed.ae/en",
+      "title": "His Highness Sheikh Mohamed bin Zayed Al Nahyan",
+      "publisher": "Official website of Sheikh Mohamed bin Zayed Al Nahyan",
+      "tier": 1,
+      "accessed_at": "2026-07-26",
+      "supports": [
+        "official personal website",
+        "Facebook account",
+        "Twitter account",
+        "LinkedIn account",
+        "Instagram account"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.bloomberg.com/features/2022-worlds-richest-family-abu-dhabi-royals-al-nahyans/",
+      "title": "World's Richest Family: How Abu Dhabi's Royals Made Their Wealth",
+      "publisher": "Bloomberg",
+      "tier": 2,
+      "accessed_at": "2026-07-26",
+      "supports": [
+        "Al Nahyan family identity",
+        "dynastic wealth origin",
+        "oil-rooted family wealth",
+        "global investment expansion",
+        "difficulty separating family, personal and state assets"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://en.wikipedia.org/wiki/Mohamed_bin_Zayed_Al_Nahyan",
+      "title": "Mohamed bin Zayed Al Nahyan",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-07-26",
+      "supports": [
+        "Wikipedia profile URL",
+        "identity corroboration",
+        "birth details",
+        "current offices",
+        "lineage",
+        "education"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "No exact Forbes profile was found. The Forbes profile for Khalifa bin Zayed Al-Nahyan belongs to his late brother and was rejected as a different person.",
+    "Public reporting does not cleanly separate Sheikh Mohamed's personal holdings from Al Nahyan family wealth and Abu Dhabi sovereign assets; the latter must not be represented as his private fortune.",
+    "No second nationality was evidenced. The blank secondary-nationality field is therefore left unchanged rather than filled speculatively.",
+    "No official YouTube or TikTok account was linked from the official personal site in this research pass; those link types remain unfilled.",
+    "Blank suffix, secondary residence, death, internal-note and unknown-name fields were treated as optional, inapplicable or system fields rather than enrichment targets."
+  ],
+  "review": {
+    "status": "pending",
+    "notes": null
+  }
+}

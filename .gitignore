@@ -8,7 +8,19 @@ __pycache__/
 .pytest_cache/
 .coverage
 htmlcov/
-output/
+# Generated output remains ignored except for reviewed, portable working data.
+output/*
+!output/owners-list.json
+!output/owners-list.top-100.json
+!output/owners-list.top-100.enriched.json
+!output/top-100-vessels.json
+!output/research-enriched-owners-list.top-100.first-10.json
+!output/research-enriched-owners-list.top-100.first-10.html
+!output/owner-research/
+output/owner-research/*
+!output/owner-research/top-100-first-10/
+output/owner-research/top-100-first-10/*
+!output/owner-research/top-100-first-10/*.research.json
 screenshots/
 downloaded_files/
 *.log

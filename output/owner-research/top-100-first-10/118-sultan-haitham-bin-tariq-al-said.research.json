@@ -1,0 +1,303 @@
+{
+  "schema_version": 2,
+  "owner": {
+    "person_id": 118,
+    "display_name": "Sultan Haitham bin Tariq Al Said",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The immutable owner record's Al Said relationship and full name match the Omani government biography and foreign ministry profile for the current Sultan of Oman."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.top-100.enriched.json",
+    "raw_blank_details": [
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Focused exact-name and site:forbes.com/profile searches found Forbes reporting about Sultan Haitham and Oman but no matching personal profile."
+    }
+  },
+  "wealth_origin": {
+    "classification": "unclear",
+    "summary": "His prominence is dynastic and governmental: he belongs to the Al Bu Said dynasty, was named successor by Sultan Qaboos and became Oman's head of state in 2020 after decades of public service. Public sources reviewed do not establish a separate personal fortune or its origin. Oman Investment Authority is the state's sovereign investment arm, so the national assets it manages are not his personal wealth.",
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Omani government and succession sources establish his dynastic and public route to prominence, while OIA's own material explicitly describes the authority as the state's investment arm."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "biography": {
+    "plain_text": "Sultan Haitham bin Tariq Al Said is Oman's head of state and a member of the Al Bu Said dynasty. After completing Oxford's Foreign Service Programme, he worked in the foreign ministry, served as its secretary-general, and spent eighteen years as minister of heritage and culture. Sultan Qaboos named him as successor, and Haitham took the throne in January 2020. His position derives from dynastic succession and decades of public service, not a documented entrepreneurial fortune.",
+    "html": "<p>Sultan Haitham bin Tariq Al Said is Oman's head of state and a member of the Al Bu Said dynasty. After completing Oxford's Foreign Service Programme, he worked in the foreign ministry, served as its secretary-general, and spent eighteen years as minister of heritage and culture. Sultan Qaboos named him as successor, and Haitham took the throne in January 2020. His position derives from dynastic succession and decades of public service, not a documented entrepreneurial fortune.</p>\r\n",
+    "word_count": 76,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "The education, government career, dynastic status and succession are documented by official Omani sources and corroborated by contemporary succession reporting."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "known_for_title",
+      "value": "Sultan and Head of State of Oman",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Oman's Foreign Ministry identifies Sultan Haitham as the Sultan and head of state."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "gender",
+      "value": "Male",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official Omani biographies consistently identify Sultan Haitham with male titles and pronouns."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "place_of_birth",
+      "value": "Muscat",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The official Ministry of Information biography states that Sultan Haitham was born in Muscat."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "action": "correct_existing",
+      "field": "birth_day",
+      "existing_value": "13",
+      "value": "11",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The source record gives 13 October, while the official Ministry of Information biography and the corroborating reference profile give 11 October 1955."
+      },
+      "source_ids": [
+        "S1",
+        "S6"
+      ]
+    },
+    {
+      "action": "correct_existing",
+      "field": "birth_year",
+      "existing_value": "1954",
+      "value": "1955",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The source record gives 1954, while the official Ministry of Information biography and the corroborating reference profile give 11 October 1955."
+      },
+      "source_ids": [
+        "S1",
+        "S6"
+      ]
+    },
+    {
+      "action": "correct_existing",
+      "field": "biography",
+      "existing_value": "<p>Oman&#39;s Sultan is <a href=\"http://en.wikipedia.org/wiki/Haitham_bin_Tariq\">Haitham bin Tariq Al Said</a>. Prior to becoming Sultan, he spent decades in the Cabinet of his cousin, <a href=\"http://en.wikipedia.org/wiki/Qaboos_bin_Said\">Sultan Qaboos bin Said</a>. From 2002 until 2020, he served as <a href=\"http://en.wikipedia.org/wiki/Ministry_of_Heritage_and_Culture\">The minister of Heritage and Culture</a>. In his will, Sultan Qaboos appointed Haitham as his successor, and he was crowned sultan on January 11, 2020, few hours after Qaboos passed.</p>\r\n",
+      "value": "<p>Sultan Haitham bin Tariq Al Said is Oman's head of state and a member of the Al Bu Said dynasty. After completing Oxford's Foreign Service Programme, he worked in the foreign ministry, served as its secretary-general, and spent eighteen years as minister of heritage and culture. Sultan Qaboos named him as successor, and Haitham took the throne in January 2020. His position derives from dynastic succession and decades of public service, not a documented entrepreneurial fortune.</p>\r\n",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The replacement is concise, removes embedded links and explains the documented route to prominence without conflating sovereign assets with personal wealth."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "proposed_socials": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.omaninfo.om/en/pages/210/show/870",
+      "title": "Biography: His Majesty Sultan Haitham bin Tarik",
+      "publisher": "Ministry of Information, Sultanate of Oman",
+      "tier": 1,
+      "accessed_at": "2026-07-26",
+      "supports": [
+        "identity",
+        "birth date",
+        "birthplace",
+        "gender",
+        "education",
+        "foreign ministry career",
+        "heritage and culture ministry career",
+        "accession"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.fm.gov.om/en/about-oman/state/head-of-state/",
+      "title": "Head of State",
+      "publisher": "Foreign Ministry of Oman",
+      "tier": 1,
+      "accessed_at": "2026-07-26",
+      "supports": [
+        "identity",
+        "Sultan and head-of-state role",
+        "Al Bu Said dynasty",
+        "accession date"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.kuna.net.kw/ArticleDetails.aspx?Language=en&id=2849905",
+      "title": "Haitham bin Tareq proclaimed Oman's new Sultan -- Defense Council",
+      "publisher": "Kuwait News Agency",
+      "tier": 2,
+      "accessed_at": "2026-07-26",
+      "supports": [
+        "succession under Sultan Qaboos's will",
+        "proclamation as Sultan",
+        "January 2020 accession"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://oia.gov.om/uploads/Investor_Guide_Final_72c1f21ef2_f18f31bc04.pdf",
+      "title": "Oman Investment Authority Investor Guide",
+      "publisher": "Oman Investment Authority",
+      "tier": 1,
+      "accessed_at": "2026-07-26",
+      "supports": [
+        "OIA as Oman's sovereign investment fund",
+        "state investment mandate",
+        "national and international asset management",
+        "future-generations mandate"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.forbes.com/sites/dominicdudley/2020/01/14/oman-economy/",
+      "title": "Where Does Oman's Economy Go From Here?",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-07-26",
+      "supports": [
+        "identity",
+        "Oman 2040 role",
+        "January 2020 succession",
+        "distinction between national economy and ruler"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://en.wikipedia.org/wiki/Haitham_bin_Tariq",
+      "title": "Haitham bin Tariq",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-07-26",
+      "supports": [
+        "existing Wikipedia profile",
+        "birth-date corroboration",
+        "birthplace corroboration",
+        "education and career corroboration"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "No transparent, reliable source reviewed establishes the origin or scale of a distinct personal fortune; sovereign and state-controlled assets were deliberately excluded.",
+    "No exact Forbes profile was found. Forbes articles about Sultan Haitham and Oman were not misclassified as a personal profile.",
+    "No personal Instagram, LinkedIn, personal website, Facebook, Twitter/X, YouTube or TikTok account was identity-verified; Omani government and royal-news accounts were not substituted for personal accounts.",
+    "No second nationality was evidenced, so the blank secondary-nationality field remains unchanged.",
+    "Blank suffix, secondary residence, death, internal-note and unknown-name fields were classified as optional, inapplicable or system fields rather than research targets."
+  ],
+  "review": {
+    "status": "pending",
+    "notes": null
+  }
+}
