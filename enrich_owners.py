@@ -12,6 +12,7 @@ from src.io_utils import (
     derived_output_path,
     load_json,
 )
+from src.workflow import ensure_document_workflow, owner_matches_workflow
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -46,6 +47,17 @@ def build_parser() -> argparse.ArgumentParser:
         type=int,
         help="Maximum number of selected records to process.",
     )
+    priority = parser.add_mutually_exclusive_group()
+    priority.add_argument(
+        "--top-100-only",
+        action="store_true",
+        help="Only enrich owners currently linked to a Top-100 vessel.",
+    )
+    priority.add_argument(
+        "--exclude-top-100",
+        action="store_true",
+        help="Exclude owners currently linked to a Top-100 vessel.",
+    )
     parser.add_argument("--headless", action="store_true")
     return parser
 
@@ -62,11 +74,17 @@ def main() -> int:
         print(f"Could not load owner data: {exc}", file=sys.stderr)
         return 1
 
+    ensure_document_workflow(document)
     selected_ids = set(args.person_ids or [])
     eligible = [
         owner
         for owner in document["owners"]
         if (not selected_ids or owner["person_id"] in selected_ids)
+        and owner_matches_workflow(
+            owner,
+            top_100_only=args.top_100_only,
+            exclude_top_100=args.exclude_top_100,
+        )
         and (
             args.refresh
             or owner.get("enrichment", {}).get("status") != "ok"

@@ -7,11 +7,12 @@ applies reviewed JSON changes back through the website's edit overlays.
 The normal workflow is:
 
 1. Export the owner list.
-2. Enrich the export.
-3. Edit a copy of the enriched JSON.
-4. Run an update dry-run and inspect its audit report.
-5. Test the update flow on a dedicated dummy person.
-6. Apply the reviewed changes.
+2. Export the YB Top 100 vessels and mark their current owners.
+3. Enrich current Top-100 owners with existing system details.
+4. Perform the future AI research stage and mark reviewed records.
+5. Run an update dry-run and inspect its audit report.
+6. Test the update flow on a dedicated dummy person.
+7. Apply the reviewed changes.
 
 ## Safety model
 
@@ -77,24 +78,81 @@ Useful options:
 
 `--max-pages` is intended for smoke tests; omit it for the full export.
 
-## 2. Enrich owner details and social profiles
+## 2. Mark current Top-100 owners
+
+Run the Top-100 stage against the owner export before details enrichment:
 
 ```powershell
-.\venv\Scripts\python.exe .\enrich_owners.py `
+.\venv\Scripts\python.exe .\mark_top_100_owners.py `
   --input output\owners-list.json
 ```
 
-The default output is `output\owners-list.enriched.json`. Every named editable
-control in the details form is represented, including blank fields. Selects
-retain both their visible value and internal option ID. Internal notes and
-biography are stored as HTML because the site uses CKEditor.
+This creates two files without overwriting the owner input:
+
+- `output\owners-list.top-100.json`: the owner list with workflow flags and
+  matched Top-100 relationships.
+- `output\top-100-vessels.json`: the ranked vessel report, all report columns,
+  ownership scan status, and current/historical UBO relationships.
+
+The script exports every page with the `yb_100=t` filter, visits each
+specification page, clicks **Edit Details & Specification**, reads the
+**[NEW] Ultimate Beneficial Owners** section, and closes without submitting a
+form. It checkpoints both outputs after every vessel.
+
+Resume pending or failed vessels:
+
+```powershell
+.\venv\Scripts\python.exe .\mark_top_100_owners.py `
+  --input output\owners-list.json `
+  --resume
+```
+
+Re-export and scan the complete list again:
+
+```powershell
+.\venv\Scripts\python.exe .\mark_top_100_owners.py `
+  --input output\owners-list.json `
+  --refresh
+```
+
+For a read-only smoke test, export the full vessel list but inspect only one
+vessel:
+
+```powershell
+.\venv\Scripts\python.exe .\mark_top_100_owners.py `
+  --input output\owners-list.json `
+  --limit-vessels 1 `
+  --headless
+```
+
+Only relationships with a blank To date set
+`workflow.is_top_100_owner=true`. Ended relationships remain under
+`top_100.relationships` and set `top_100.historical_owner=true`.
+
+Person IDs present in the UBO section but absent from the supplied full owner
+export are recorded in the vessel file and cause a non-zero exit so they cannot
+be missed.
+
+## 3. Enrich owner details and social profiles
+
+```powershell
+.\venv\Scripts\python.exe .\enrich_owners.py `
+  --input output\owners-list.top-100.json `
+  --top-100-only
+```
+
+The default output is `output\owners-list.top-100.enriched.json`. Every named
+editable control in the details form is represented, including blank fields.
+Selects retain both their visible value and internal option ID. Internal notes
+and biography are stored as HTML because the site uses CKEditor.
 
 An interrupted run can resume from its existing output:
 
 ```powershell
 .\venv\Scripts\python.exe .\enrich_owners.py `
-  --input output\owners-list.json `
-  --output output\owners-list.enriched.json `
+  --input output\owners-list.top-100.json `
+  --output output\owners-list.top-100.enriched.json `
+  --top-100-only `
   --resume
 ```
 
@@ -103,19 +161,22 @@ Targeted and diagnostic runs:
 ```powershell
 # Re-fetch a specific person
 .\venv\Scripts\python.exe .\enrich_owners.py `
-  --input output\owners-list.enriched.json `
+  --input output\owners-list.top-100.enriched.json `
   --output output\one-owner.enriched.json `
   --person-id 8690 `
   --refresh
 
 # Process at most ten eligible records
 .\venv\Scripts\python.exe .\enrich_owners.py `
-  --input output\owners-list.json `
+  --input output\owners-list.top-100.json `
+  --top-100-only `
   --limit 10
 ```
 
 Each owner records `pending`, `ok`, or `error`. Failures do not discard
-successful checkpoints.
+successful checkpoints. A successful enrichment also sets
+`workflow.owner_details_enriched=true`. Use `--exclude-top-100` in a later run
+to process the remaining owners.
 
 ## Editing the JSON
 
@@ -135,13 +196,32 @@ it as a replacement.
 Blank fields remain in JSON intentionally. By default they are ignored by the
 updater, allowing research to populate them without risking unrelated data.
 
-## 3. Preview and apply updates
+Each owner also has four workflow booleans:
+
+```json
+{
+  "is_top_100_owner": true,
+  "owner_details_enriched": true,
+  "ai_enriched": false,
+  "updated_in_system": false
+}
+```
+
+The Top-100 and details scripts maintain the first two. The future AI stage
+must set `ai_enriched=true` after its result has been reviewed and reset
+`updated_in_system=false` whenever it creates a new desired change. A verified
+live apply sets `updated_in_system=true`.
+
+## 4. Preview and apply updates
 
 Always start with a dry-run:
 
 ```powershell
 .\venv\Scripts\python.exe .\update_owners.py `
-  --input output\owners-list.enriched.json
+  --input output\owners-list.top-100.enriched.json `
+  --top-100-only `
+  --ai-enriched-only `
+  --not-updated-only
 ```
 
 Audit reports are written beneath `output\audits`. Review planned changes,
@@ -149,7 +229,7 @@ skipped blanks, and conflicts before applying:
 
 ```powershell
 .\venv\Scripts\python.exe .\update_owners.py `
-  --input output\owners-list.enriched.json `
+  --input output\owners-list.top-100.enriched.json `
   --person-id 8690 `
   --apply
 ```
@@ -159,14 +239,14 @@ Potentially destructive options are separate and explicit:
 ```powershell
 # Permit edited blank values to clear live fields
 .\venv\Scripts\python.exe .\update_owners.py `
-  --input output\owners-list.enriched.json `
+  --input output\owners-list.top-100.enriched.json `
   --person-id 8690 `
   --allow-clear `
   --apply
 
 # Also remove live social profiles absent from the JSON array
 .\venv\Scripts\python.exe .\update_owners.py `
-  --input output\owners-list.enriched.json `
+  --input output\owners-list.top-100.enriched.json `
   --person-id 8690 `
   --replace-socials `
   --apply
@@ -176,7 +256,7 @@ After an apply run, continue future editing from the generated
 `*.applied-<timestamp>.json` file because it contains the verified current
 baseline.
 
-## 4. Reversible dummy-account test
+## 5. Reversible dummy-account test
 
 Use only a dedicated dummy person. The ID is supplied at runtime and is never
 stored in source code:

@@ -16,11 +16,15 @@ def utc_now() -> str:
 
 
 def load_json(path: str | Path) -> dict[str, Any]:
-    source = Path(path)
-    with source.open("r", encoding="utf-8") as handle:
-        document = json.load(handle)
+    document = load_json_unvalidated(path)
     validate_document(document)
     return document
+
+
+def load_json_unvalidated(path: str | Path) -> dict[str, Any]:
+    source = Path(path)
+    with source.open("r", encoding="utf-8") as handle:
+        return json.load(handle)
 
 
 def atomic_write_json(path: str | Path, document: dict[str, Any]) -> None:
@@ -96,6 +100,17 @@ def new_owner(
             "status": "pending",
             "enriched_at": None,
             "error": None,
+        },
+        "workflow": {
+            "is_top_100_owner": False,
+            "owner_details_enriched": False,
+            "ai_enriched": False,
+            "updated_in_system": False,
+        },
+        "top_100": {
+            "current_owner": False,
+            "historical_owner": False,
+            "relationships": [],
         },
     }
 

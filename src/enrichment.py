@@ -9,6 +9,7 @@ from .auth import fetch_html
 from .constants import OWNER_DETAILS_EDIT_URL, OWNER_SOCIAL_EDIT_URL
 from .io_utils import set_baseline, utc_now
 from .parsers import parse_details_form, parse_social_form
+from .workflow import mark_owner_details_enriched
 
 
 def fetch_owner_enrichment(
@@ -43,6 +44,7 @@ def enrich_owner(
         "enriched_at": utc_now(),
         "error": None,
     }
+    mark_owner_details_enriched(owner)
     return type_lookup
 
 
@@ -61,4 +63,5 @@ def refreshed_owner(
         "enriched_at": utc_now(),
         "error": None,
     }
+    mark_owner_details_enriched(result)
     return result

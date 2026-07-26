@@ -12,6 +12,11 @@ from src.browser_update import OwnerBrowserUpdater
 from src.diffing import build_owner_change_plan
 from src.enrichment import fetch_owner_enrichment, refreshed_owner
 from src.io_utils import atomic_write_json, load_json, utc_now
+from src.workflow import (
+    ensure_document_workflow,
+    mark_owner_updated_in_system,
+    owner_matches_workflow,
+)
 
 
 def _stamp() -> str:
@@ -46,6 +51,21 @@ def build_parser() -> argparse.ArgumentParser:
         help="Only process this person ID; may be supplied more than once.",
     )
     parser.add_argument("--limit", type=int)
+    parser.add_argument(
+        "--top-100-only",
+        action="store_true",
+        help="Only process owners currently linked to a Top-100 vessel.",
+    )
+    parser.add_argument(
+        "--ai-enriched-only",
+        action="store_true",
+        help="Only process records marked as AI enriched.",
+    )
+    parser.add_argument(
+        "--not-updated-only",
+        action="store_true",
+        help="Only process records not yet marked updated in the system.",
+    )
     parser.add_argument("--headless", action="store_true")
     parser.add_argument(
         "--audit-dir",
@@ -85,11 +105,18 @@ def main() -> int:
         print(f"Could not load owner data: {exc}", file=sys.stderr)
         return 1
 
+    ensure_document_workflow(document)
     selected_ids = set(args.person_ids or [])
     owners = [
         owner
         for owner in document["owners"]
         if not selected_ids or owner["person_id"] in selected_ids
+        if owner_matches_workflow(
+            owner,
+            top_100_only=args.top_100_only,
+            ai_enriched_only=args.ai_enriched_only,
+            not_updated_only=args.not_updated_only,
+        )
     ]
     if args.limit is not None:
         owners = owners[: args.limit]
@@ -200,13 +227,13 @@ def main() -> int:
                         )
                     record["status"] = "applied_and_verified"
                     refreshed_by_id[person_id].clear()
-                    refreshed_by_id[person_id].update(
-                        refreshed_owner(
-                            owner,
-                            details=after_details,
-                            socials=after_socials,
-                        )
+                    refreshed = refreshed_owner(
+                        owner,
+                        details=after_details,
+                        socials=after_socials,
                     )
+                    mark_owner_updated_in_system(refreshed)
+                    refreshed_by_id[person_id].update(refreshed)
                     refreshed_document.setdefault("lookups", {}).setdefault(
                         "social_media_types", {}
                     ).update(type_lookup)
