@@ -4,6 +4,7 @@ import argparse
 import sys
 import uuid
 from copy import deepcopy
+from html import escape
 from pathlib import Path
 from typing import Any
 
@@ -95,6 +96,13 @@ def _social_pairs(profiles: list[dict[str, Any]]) -> list[tuple[str, str]]:
         (str(item.get("type_id", "")), str(item.get("url", "")))
         for item in profiles
     ]
+
+
+def _dummy_notes_with_marker(original_notes: str, marker: str) -> str:
+    prefix = original_notes
+    if prefix and not prefix.endswith(("\r", "\n")):
+        prefix += "\r\n"
+    return f"{prefix}<p>{escape(marker)}</p>\r\n"
 
 
 def _restore_dummy(
@@ -195,7 +203,7 @@ def main() -> int:
                 desired_owner["details"]["internal_notes"].get("value", "")
             )
             desired_owner["details"]["internal_notes"]["value"] = (
-                f"{original_notes}<p data-owner-bio-test=\"true\">{marker}</p>"
+                _dummy_notes_with_marker(original_notes, marker)
             )
             type_id = "15" if "15" in social_types else next(iter(social_types))
             desired_owner["social_media_profiles"].append(
@@ -232,6 +240,7 @@ def main() -> int:
                     allow_clear=True,
                     replace_socials=False,
                 )
+                report["verification"] = verification
                 if verification["conflicts"] or verification["has_changes"]:
                     raise RuntimeError("Dummy changes could not be verified")
                 report["changed_verified"] = True

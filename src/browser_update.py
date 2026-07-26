@@ -2,11 +2,15 @@ from __future__ import annotations
 
 from typing import Any
 
+from selenium.common.exceptions import (
+    NoSuchElementException,
+    StaleElementReferenceException,
+)
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select, WebDriverWait
 
-from .constants import DEFAULT_TIMEOUT_SECONDS
+from .constants import DEFAULT_TIMEOUT_SECONDS, RICH_TEXT_DETAIL_FIELDS
 from .diffing import field_value
 
 
@@ -51,6 +55,14 @@ class OwnerBrowserUpdater:
             """,
             element,
         )
+
+    @staticmethod
+    def _is_detached(element) -> bool:
+        try:
+            element.is_enabled()
+            return False
+        except (NoSuchElementException, StaleElementReferenceException):
+            return True
 
     def _set_detail_field(self, key: str, desired_field: dict[str, Any]) -> None:
         name = f"editpersondetails[{key}]"
@@ -101,7 +113,7 @@ class OwnerBrowserUpdater:
             self._dispatch_change(element)
             return
 
-        if kind == "rich_text_html":
+        if kind == "rich_text_html" or key in RICH_TEXT_DETAIL_FIELDS:
             element_id = element.get_attribute("id")
             updated = self.driver.execute_script(
                 """
@@ -172,7 +184,7 @@ class OwnerBrowserUpdater:
         except Exception:
             self.driver.execute_script("arguments[0].click();", save)
         try:
-            self.wait.until(EC.staleness_of(form))
+            self.wait.until(lambda _driver: self._is_detached(form))
         finally:
             self.driver.switch_to.default_content()
 
@@ -212,7 +224,12 @@ class OwnerBrowserUpdater:
                 "Social profile to remove was not present: "
                 f"{profile.get('type')} {profile.get('url')}"
             )
-        row.find_element(By.CSS_SELECTOR, "a.jsDelete").click()
+        delete_link = row.find_element(By.CSS_SELECTOR, "a.jsDelete")
+        deleted_content = delete_link.find_element(By.XPATH, "ancestor::table[1]")
+        self.driver.execute_script(
+            "jQuery(arguments[0]).trigger('click');",
+            delete_link,
+        )
         delete_button = self.wait.until(
             EC.element_to_be_clickable(
                 (
@@ -225,8 +242,11 @@ class OwnerBrowserUpdater:
                 )
             )
         )
-        delete_button.click()
-        self.wait.until(EC.staleness_of(row))
+        self.driver.execute_script(
+            "jQuery(arguments[0]).trigger('click');",
+            delete_button,
+        )
+        self.wait.until(lambda _driver: self._is_detached(deleted_content))
 
     def _add_social(self, profile: dict[str, Any]) -> None:
         type_select = self.driver.find_element(By.ID, "jsSocialMediaTypeId")
@@ -271,7 +291,7 @@ class OwnerBrowserUpdater:
         except Exception:
             self.driver.execute_script("arguments[0].click();", save)
         try:
-            self.wait.until(EC.staleness_of(form))
+            self.wait.until(lambda _driver: self._is_detached(form))
         finally:
             self.driver.switch_to.default_content()
 

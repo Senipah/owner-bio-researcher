@@ -62,6 +62,33 @@ def test_details_fixture_includes_every_field_and_blanks() -> None:
     assert details["biography"]["kind"] == "rich_text_html"
 
 
+def test_details_raw_textareas_preserve_known_rich_text_fields() -> None:
+    details = parse_details_form(
+        """
+        <form name="editpersondetails">
+          <textarea
+            id="EditpersondetailsInternalNotes"
+            name="editpersondetails[internal_notes]"
+          >&lt;p&gt;Note&lt;/p&gt;</textarea>
+          <textarea
+            id="EditpersondetailsBiography"
+            name="editpersondetails[biography]"
+          >&lt;p&gt;Biography&lt;/p&gt;</textarea>
+          <textarea
+            id="EditpersondetailsSummary"
+            name="editpersondetails[summary]"
+          >Plain text</textarea>
+        </form>
+        """
+    )
+
+    assert details["internal_notes"]["kind"] == "rich_text_html"
+    assert details["internal_notes"]["value"] == "<p>Note</p>"
+    assert details["biography"]["kind"] == "rich_text_html"
+    assert details["biography"]["value"] == "<p>Biography</p>"
+    assert details["summary"]["kind"] == "textarea"
+
+
 def test_social_fixture_extracts_profiles_and_full_type_lookup() -> None:
     path = (
         FIXTURES

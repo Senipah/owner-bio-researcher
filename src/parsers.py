@@ -9,7 +9,7 @@ from urllib.parse import parse_qs, urljoin, urlparse
 
 from bs4 import BeautifulSoup, Tag
 
-from .constants import BASE_URL
+from .constants import BASE_URL, RICH_TEXT_DETAIL_FIELDS
 
 _DETAIL_NAME_RE = re.compile(r"^editpersondetails\[([^\]]+)\]$")
 _SOCIAL_TYPE_RE = re.compile(r"^social_media_type_(\d+)$")
@@ -172,7 +172,9 @@ def parse_details_form(html: str) -> dict[str, dict[str, Any]]:
             }
         elif element.name == "textarea":
             element_id = element.get("id", "")
-            is_rich_text = bool(element_id and soup.find(id=f"cke_{element_id}"))
+            is_rich_text = key in RICH_TEXT_DETAIL_FIELDS or bool(
+                element_id and soup.find(id=f"cke_{element_id}")
+            )
             details[key] = {
                 "label": label,
                 "kind": "rich_text_html" if is_rich_text else "textarea",
