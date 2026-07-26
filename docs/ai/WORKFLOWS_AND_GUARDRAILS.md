@@ -32,25 +32,32 @@ Run from the repository root. Omit `--headless` during initial live validation.
   --input output\owners-list.top-100.json `
   --top-100-only
 
-# 4. After AI/review edits, preview changes
-.\venv\Scripts\python.exe .\update_owners.py `
+# 4. Compile pending research for human review
+.\venv\Scripts\python.exe .\compile_owner_research.py `
   --input output\owners-list.top-100.enriched.json `
+  --dossier-dir output\owner-research\top-100
+
+# 5. After dossier approval and approved recompilation, preview changes
+.\venv\Scripts\python.exe .\update_owners.py `
+  --input output\approved-enriched-owners-list.top-100.json `
   --top-100-only `
   --ai-enriched-only `
   --not-updated-only
 
-# 5. Apply only after reviewing the dry-run audit and testing a dummy
+# 6. Apply only after reviewing the dry-run audit and testing a dummy
 .\venv\Scripts\python.exe .\update_owners.py `
-  --input output\owners-list.top-100.enriched.json `
+  --input output\approved-enriched-owners-list.top-100.json `
   --top-100-only `
   --ai-enriched-only `
   --not-updated-only `
   --apply
 ```
 
-The future AI stage may edit only `details[*].value` and the social array. It
-sets `workflow.ai_enriched=true` after review and resets
-`workflow.updated_in_system=false` when it introduces a desired change.
+The AI compiler may edit only `details[*].value` and the social array in a
+separate derived file; it never changes `_baseline`. Pending dossiers keep
+`workflow.ai_enriched=false`. Only explicit human approval followed by
+`compile_owner_research.py --mark-ai-enriched` sets it true and resets
+`workflow.updated_in_system=false` when a desired change is introduced.
 
 Resume checkpointed read stages with their explicit flag:
 
@@ -117,6 +124,8 @@ AI review or a live system update occurred.
   separate output files.
 - `mark_top_100_owners.py` is read-only: it may click the vessel edit link to
   reveal UBO data, but it must never locate or activate a save/submit control.
+- `compile_owner_research.py` must never overwrite its owner input and must not
+  mark pending dossiers AI-enriched.
 - `update_owners.py` remains dry-run unless `--apply` is present.
 - Keep clearing blanks behind `--allow-clear`.
 - Keep removal of absent socials behind `--replace-socials`.
@@ -146,7 +155,7 @@ from memory.
 Check syntax and accidental whitespace errors:
 
 ```powershell
-.\venv\Scripts\python.exe -m compileall -q src export_owners.py mark_top_100_owners.py enrich_owners.py update_owners.py test_dummy_account.py
+.\venv\Scripts\python.exe -m compileall -q src export_owners.py mark_top_100_owners.py enrich_owners.py compile_owner_research.py update_owners.py test_dummy_account.py
 git diff --check
 ```
 

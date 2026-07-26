@@ -9,6 +9,8 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
 
+from inventory_owner import _find_owner, build_inventory
+
 
 CONFIDENCE_BANDS = (
     (95, 100, "very_high"),
@@ -24,6 +26,7 @@ RESEARCH_STATUSES = {
     "insufficient_evidence",
 }
 FORBES_STATUSES = {"verified", "not_found", "ambiguous", "unavailable"}
+REVIEW_STATUSES = {"pending", "approved", "rejected"}
 WEALTH_CLASSES = {
     "self_made_operating_business",
     "self_made_finance_investment",
@@ -96,6 +99,7 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
     required = {
         "schema_version",
         "owner",
+        "input_snapshot",
         "research_status",
         "forbes_profile",
         "wealth_origin",
@@ -111,8 +115,8 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
     if missing:
         errors.append(f"missing top-level keys: {missing}")
 
-    if document.get("schema_version") != 1:
-        errors.append("schema_version must be 1")
+    if document.get("schema_version") != 2:
+        errors.append("schema_version must be 2")
     if document.get("research_status") not in RESEARCH_STATUSES:
         errors.append("research_status is invalid")
 
@@ -127,6 +131,51 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
             "owner.identity_confidence",
             errors,
         )
+
+    snapshot = document.get("input_snapshot")
+    researchable_missing: set[str] = set()
+    raw_blank: set[str] = set()
+    existing_social_types: set[str] = set()
+    social_lookup: dict[str, str] = {}
+    if not isinstance(snapshot, dict):
+        errors.append("input_snapshot must be an object")
+    else:
+        if not isinstance(snapshot.get("source_path"), str) or not snapshot["source_path"].strip():
+            errors.append("input_snapshot.source_path must be non-empty")
+        for key in (
+            "raw_blank_details",
+            "researchable_missing_details",
+            "optional_missing_details",
+            "inapplicable_or_system_details",
+            "existing_social_types",
+            "missing_priority_social_types",
+        ):
+            value = snapshot.get(key)
+            if not isinstance(value, list) or any(
+                not isinstance(item, str) or not item.strip() for item in value
+            ):
+                errors.append(f"input_snapshot.{key} must be a list of strings")
+        raw_blank = set(snapshot.get("raw_blank_details", []))
+        researchable_missing = set(snapshot.get("researchable_missing_details", []))
+        existing_social_types = {
+            item.casefold() for item in snapshot.get("existing_social_types", [])
+            if isinstance(item, str)
+        }
+        lookup = snapshot.get("social_type_lookup")
+        if not isinstance(lookup, dict) or any(
+            not isinstance(key, str)
+            or not key.strip()
+            or not isinstance(value, str)
+            or not value.strip()
+            for key, value in (lookup.items() if isinstance(lookup, dict) else [])
+        ):
+            errors.append("input_snapshot.social_type_lookup must map IDs to labels")
+        else:
+            social_lookup = lookup
+        if not researchable_missing <= raw_blank:
+            errors.append(
+                "input_snapshot.researchable_missing_details must be raw blanks"
+            )
 
     sources = document.get("sources")
     known_sources: set[str] = set()
@@ -242,9 +291,37 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
                     errors.append(f"{path}.field must be non-empty")
                 if "value" not in item:
                     errors.append(f"{path}.value is required")
+                action = item.get("action")
+                if action not in {"fill_missing", "correct_existing"}:
+                    errors.append(
+                        f"{path}.action must be 'fill_missing' or 'correct_existing'"
+                    )
+                elif action == "fill_missing" and item.get("field") not in researchable_missing:
+                    errors.append(
+                        f"{path}.field is not a researchable missing input field"
+                    )
+                elif action == "correct_existing":
+                    if "existing_value" not in item:
+                        errors.append(
+                            f"{path}.existing_value is required for a correction"
+                        )
+                    if item.get("field") in raw_blank:
+                        errors.append(
+                            f"{path}.field is blank; use action 'fill_missing'"
+                        )
             else:
                 if not isinstance(item.get("type"), str) or not item["type"].strip():
                     errors.append(f"{path}.type must be non-empty")
+                type_id = item.get("type_id")
+                if not isinstance(type_id, str) or not type_id.strip():
+                    errors.append(f"{path}.type_id must be non-empty")
+                elif social_lookup.get(type_id) != item.get("type"):
+                    errors.append(f"{path}.type_id does not match the input lookup")
+                if (
+                    isinstance(item.get("type"), str)
+                    and item["type"].casefold() in existing_social_types
+                ):
+                    errors.append(f"{path}.type already exists in the input record")
                 _url(item.get("url"), f"{path}.url", errors)
                 if not isinstance(item.get("verification"), str) or not item["verification"].strip():
                     errors.append(f"{path}.verification must be non-empty")
@@ -254,10 +331,96 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
             errors.append(f"{key} must be a list")
 
     review = document.get("review")
-    if not isinstance(review, dict) or review.get("status") != "pending":
-        errors.append("review.status must be 'pending'")
+    if not isinstance(review, dict):
+        errors.append("review must be an object")
+    elif review.get("status") not in REVIEW_STATUSES:
+        errors.append("review.status must be pending, approved, or rejected")
+    elif review.get("status") != "pending":
+        for key in ("reviewed_by", "reviewed_at"):
+            if not isinstance(review.get(key), str) or not review[key].strip():
+                errors.append(
+                    f"review.{key} must be non-empty after human review"
+                )
 
     return errors, warnings
+
+
+def validate_owner_input(
+    document: Any,
+    input_path: Path,
+) -> list[str]:
+    errors: list[str] = []
+    if not isinstance(document, dict):
+        return ["cannot compare owner input with a non-object dossier"]
+    owner_summary = document.get("owner")
+    snapshot = document.get("input_snapshot")
+    if not isinstance(owner_summary, dict) or not isinstance(snapshot, dict):
+        return ["cannot compare owner input without owner and input_snapshot objects"]
+
+    try:
+        owner_document = json.loads(input_path.read_text(encoding="utf-8"))
+        owners = owner_document.get("owners")
+        if not isinstance(owners, list):
+            raise ValueError("owner input has no owners list")
+        person_id = owner_summary.get("person_id")
+        if not isinstance(person_id, int) or isinstance(person_id, bool):
+            raise ValueError("dossier owner.person_id must be an integer")
+        source_owner = _find_owner(owners, person_id, None)
+        actual = build_inventory(
+            owner_document,
+            source_owner,
+            str(input_path),
+        )
+    except (OSError, json.JSONDecodeError, ValueError) as exc:
+        return [f"owner input comparison failed: {exc}"]
+
+    source_path = snapshot.get("source_path")
+    if isinstance(source_path, str):
+        try:
+            if Path(source_path).resolve() != input_path.resolve():
+                errors.append(
+                    "input_snapshot.source_path does not resolve to --owner-input"
+                )
+        except OSError as exc:
+            errors.append(f"input_snapshot.source_path cannot be resolved: {exc}")
+
+    expected = {
+        "raw_blank_details": [
+            item["field"] for item in actual["raw_blank_details"]
+        ],
+        "researchable_missing_details": actual["researchable_missing_details"],
+        "optional_missing_details": actual["optional_missing_details"],
+        "inapplicable_or_system_details": actual[
+            "inapplicable_or_system_details"
+        ],
+        "existing_social_types": [
+            item["type"] for item in actual["existing_socials"]
+        ],
+        "missing_priority_social_types": [
+            item["type"] for item in actual["missing_priority_social_types"]
+        ],
+        "social_type_lookup": actual["social_type_lookup"],
+    }
+    for key, actual_value in expected.items():
+        if snapshot.get(key) != actual_value:
+            errors.append(f"input_snapshot.{key} does not match --owner-input")
+
+    if owner_summary.get("display_name") != actual["owner"]["display_name"]:
+        errors.append("owner.display_name does not match --owner-input")
+    for index, proposal in enumerate(document.get("proposed_details", [])):
+        if not isinstance(proposal, dict):
+            continue
+        if proposal.get("action") != "correct_existing":
+            continue
+        field = proposal.get("field")
+        detail = source_owner.get("details", {}).get(field)
+        current_value = detail.get("value") if isinstance(detail, dict) else detail
+        if proposal.get("existing_value") != current_value:
+            errors.append(
+                f"proposed_details[{index}].existing_value does not match "
+                "--owner-input"
+            )
+    return errors
 
 
 def main() -> int:
@@ -265,6 +428,11 @@ def main() -> int:
         description="Validate an owner biography research dossier."
     )
     parser.add_argument("path", type=Path)
+    parser.add_argument(
+        "--owner-input",
+        type=Path,
+        help="Re-read the source owners document and verify the dossier snapshot.",
+    )
     args = parser.parse_args()
 
     try:
@@ -274,6 +442,8 @@ def main() -> int:
         return 1
 
     errors, warnings = validate(document)
+    if args.owner_input is not None:
+        errors.extend(validate_owner_input(document, args.owner_input))
     for warning in warnings:
         print(f"WARNING: {warning}", file=sys.stderr)
     if errors:

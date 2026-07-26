@@ -9,7 +9,8 @@ The normal workflow is:
 1. Export the owner list.
 2. Export the YB Top 100 vessels and mark their current owners.
 3. Enrich current Top-100 owners with existing system details.
-4. Perform the future AI research stage and mark reviewed records.
+4. Produce evidence-backed AI research dossiers, a separate enriched owner
+   file, and an HTML review report.
 5. Run an update dry-run and inspect its audit report.
 6. Test the update flow on a dedicated dummy person.
 7. Apply the reviewed changes.
@@ -207,12 +208,52 @@ Each owner also has four workflow booleans:
 }
 ```
 
-The Top-100 and details scripts maintain the first two. The future AI stage
-must set `ai_enriched=true` after its result has been reviewed and reset
+The Top-100 and details scripts maintain the first two. The research compiler
+sets `ai_enriched=true` only for explicitly approved dossiers and resets
 `updated_in_system=false` whenever it creates a new desired change. A verified
 live apply sets `updated_in_system=true`.
 
-## 4. Preview and apply updates
+## 4. Compile researched owners for review
+
+Owner research is stored as one pending-review dossier per person under
+`output\owner-research`. Compile those dossiers into a new owner document and
+a standalone HTML report without changing the enriched input:
+
+```powershell
+.\venv\Scripts\python.exe .\compile_owner_research.py `
+  --input output\owners-list.top-100.enriched.json `
+  --dossier-dir output\owner-research\top-100-first-10 `
+  --limit 10
+```
+
+The default outputs for this calibration run are:
+
+- `output\research-enriched-owners-list.top-100.first-10.json`
+- `output\research-enriched-owners-list.top-100.first-10.html`
+
+The JSON retains each owner's immutable `_baseline`, contains only the selected
+owners, and applies only dossier proposals with confidence 85 or higher.
+Pending research remains `workflow.ai_enriched=false`, so it cannot be selected
+by the normal `--ai-enriched-only` update command.
+
+After human review, change each accepted dossier to `review.status=approved`
+and record `reviewed_by` and `reviewed_at`. Recompile with
+`--mark-ai-enriched` to make the reviewed file eligible for update dry-runs:
+
+```powershell
+.\venv\Scripts\python.exe .\compile_owner_research.py `
+  --input output\owners-list.top-100.enriched.json `
+  --dossier-dir output\owner-research\top-100-first-10 `
+  --limit 10 `
+  --output output\approved-enriched-owners-list.top-100.first-10.json `
+  --report output\approved-enriched-owners-list.top-100.first-10.html `
+  --mark-ai-enriched
+```
+
+Rejected dossiers must also record `reviewed_by` and `reviewed_at`; their
+proposals are left unapplied and their owners remain `ai_enriched=false`.
+
+## 5. Preview and apply updates
 
 Always start with a dry-run:
 
@@ -256,7 +297,7 @@ After an apply run, continue future editing from the generated
 `*.applied-<timestamp>.json` file because it contains the verified current
 baseline.
 
-## 5. Reversible dummy-account test
+## 6. Reversible dummy-account test
 
 Use only a dedicated dummy person. The ID is supplied at runtime and is never
 stored in source code:

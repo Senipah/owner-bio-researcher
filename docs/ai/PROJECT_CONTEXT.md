@@ -10,7 +10,8 @@ Superyacht Network data workflow:
    Ultimate Beneficial Owners in edit mode without saving.
 3. Mark current Top-100 owners for priority processing.
 4. Enrich selected owners with every details-form field and social profile.
-5. Let a future AI/review stage edit the desired JSON values.
+5. Compile confidence-scored AI research dossiers into a separate desired
+   owner JSON and human-readable review report.
 6. Preview and then apply safe, conflict-aware updates.
 
 The human-facing commands and file lineage are maintained in `README.md`.
@@ -24,6 +25,7 @@ The human-facing commands and file lineage are maintained in `README.md`.
 | Owner report | `export_owners.py`, `src/parsers.py` | Requests fetches pages; Beautiful Soup parses rows and pagination. |
 | Top-100 report | `mark_top_100_owners.py`, `src/top_100.py` | Requests exports the report; Selenium clicks the specification edit link and reads the UBO fieldset. |
 | Owner enrichment | `enrich_owners.py`, `src/enrichment.py`, `src/parsers.py` | Authenticated HTTP reads dynamically discover details controls and social profiles. |
+| AI research compilation | `compile_owner_research.py`, `src/research_batch.py` | Selects current Top-100 owners by rank, validates independent dossiers, compiles high-confidence proposals into a separate JSON, and renders an HTML review report. |
 | Change planning | `src/diffing.py` | Compares baseline, desired JSON, and current live state. |
 | Live writes | `update_owners.py`, `src/browser_update.py` | Selenium opens edit overlays, waits for the iframe/form, writes selected fields, saves, and verifies by re-export. |
 | Persistence | `src/io_utils.py` | Versioned JSON and atomic replacement checkpoints. |
@@ -101,8 +103,9 @@ Workflow transitions are intentionally narrow:
 
 - Top-100 annotation maintains `is_top_100_owner`.
 - Successful details/social enrichment sets `owner_details_enriched=true`.
-- The future AI/review stage must set `ai_enriched=true` and reset
-  `updated_in_system=false` whenever it introduces desired changes.
+- Pending AI research compilation keeps `ai_enriched=false`. After explicit
+  human dossier approval, recompilation with `--mark-ai-enriched` sets it true
+  and resets `updated_in_system=false` when it introduces desired changes.
 - Only a verified live apply sets `updated_in_system=true`.
 
 ## Storage and sensitive data
@@ -135,5 +138,5 @@ Known constraints:
 - There is no offline end-to-end browser test. Use
   `test_dummy_account.py --person-id ID --apply` only with a dedicated dummy
   and inspect restoration artifacts.
-- The AI research/enrichment stage is a future component; its current contract
-  is the JSON editing and workflow transition described above.
+- AI research remains agent-driven, while dossier validation, safe JSON
+  compilation, approval gating, and HTML reporting are implemented locally.

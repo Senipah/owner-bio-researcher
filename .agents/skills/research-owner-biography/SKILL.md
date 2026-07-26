@@ -36,8 +36,16 @@ statistics.
 
 # Workflow
 
-1. Load the target owner record and record its immutable identifiers, existing
-   details, socials, and yacht relationships.
+1. Inventory the target before searching. When an owner document is available,
+   run:
+
+   ```powershell
+   .\venv\Scripts\python.exe .agents\skills\research-owner-biography\scripts\inventory_owner.py --input INPUT --person-id PERSON_ID
+   ```
+
+   Record its immutable identifiers, every raw blank, the smaller set of
+   researchable gaps, existing links, missing priority link types, and yacht
+   relationships. A raw blank is not automatically a useful research target.
 2. Resolve identity before enrichment. Require strong agreement among name,
    occupation/company, geography, family, and yacht context. Stop as
    `identity_conflict` when materially ambiguous.
@@ -46,9 +54,11 @@ statistics.
 4. Research the origin story using first-party sources, Forbes, reputable
    business reporting, and well-cited reference sources. Prefer how wealth or
    prominence was created over its current amount.
-5. Find public personal Instagram, LinkedIn, and personal websites. Verify
-   identity from direct official links or strong cross-corroboration. Reject
-   name-only matches.
+5. Search all person-relevant link types supported by the input lookup,
+   prioritising public personal Instagram, LinkedIn, and personal websites.
+   A company website may be proposed under its distinct type when the owner
+   founded, owns, or leads it. Verify identity from direct official links or
+   strong cross-corroboration and reject name-only matches.
 6. Propose only missing or clearly improvable personal fields. Do not infer
    nationality from birthplace, residence from yacht location, or family facts
    from surname.
@@ -59,7 +69,7 @@ statistics.
 9. Run:
 
    ```powershell
-   .\venv\Scripts\python.exe .agents\skills\research-owner-biography\scripts\validate_dossier.py PATH
+   .\venv\Scripts\python.exe .agents\skills\research-owner-biography\scripts\validate_dossier.py PATH --owner-input INPUT
    ```
 
 10. Return the dossier path, biography, strongest evidence, confidence
@@ -92,11 +102,13 @@ tracking. Do not let parallel agents edit the shared owner dataset.
 # Validation
 
 - Confirm every material biography claim maps to one or more source IDs.
+- Confirm the dossier inventory matches the exact source owner record.
 - Confirm Forbes was explicitly checked.
 - Confirm proposed facts and socials score at least 85.
 - Confirm biography is one paragraph, 45-110 words, and canonical CKEditor HTML.
-- Confirm social links are personal and identity-verified.
-- Run `scripts/validate_dossier.py` and fix all errors.
+- Confirm each link matches its type: personal accounts are identity-verified,
+  and company websites are official with an ownership or leadership source.
+- Run `scripts/validate_dossier.py` with `--owner-input` and fix all errors.
 - For skill revisions, validate the Shahid Khan calibration dossier and compare
   its tone against the style reference.
 
@@ -106,6 +118,7 @@ A versioned JSON dossier matching `references/research-contract.md`, saved
 separately from owner inputs. It contains:
 
 - identity and research status;
+- source-record gap inventory and existing link types;
 - Forbes status;
 - wealth-origin classification and explanation;
 - short plain-text and CKEditor biography;

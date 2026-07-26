@@ -1,0 +1,696 @@
+from __future__ import annotations
+
+import html
+from copy import deepcopy
+from datetime import UTC, datetime
+from pathlib import Path
+from typing import Any
+
+from .workflow import ensure_owner_workflow
+
+
+def owner_display_name(owner: dict[str, Any]) -> str:
+    display = owner.get("details", {}).get("display_name", {})
+    if isinstance(display, dict) and str(display.get("value", "")).strip():
+        return str(display["value"]).strip()
+    report = owner.get("report", {})
+    return " ".join(
+        str(report.get(key, "")).strip()
+        for key in ("first_name", "last_name")
+        if str(report.get(key, "")).strip()
+    ) or f"Owner {owner.get('person_id')}"
+
+
+def current_top_100_rank(owner: dict[str, Any]) -> int | None:
+    ranks = [
+        relationship.get("rank")
+        for relationship in owner.get("top_100", {}).get("relationships", [])
+        if relationship.get("is_current")
+        and isinstance(relationship.get("rank"), int)
+    ]
+    return min(ranks) if ranks else None
+
+
+def select_current_top_100_owners(
+    document: dict[str, Any],
+    limit: int | None,
+) -> list[dict[str, Any]]:
+    selected = [
+        owner
+        for owner in document.get("owners", [])
+        if current_top_100_rank(owner) is not None
+    ]
+    selected.sort(
+        key=lambda owner: (
+            current_top_100_rank(owner) or 10_000,
+            owner["person_id"],
+        )
+    )
+    return selected if limit is None else selected[:limit]
+
+
+def load_dossiers(directory: Path) -> tuple[dict[int, dict[str, Any]], dict[int, Path]]:
+    dossiers: dict[int, dict[str, Any]] = {}
+    paths: dict[int, Path] = {}
+    for path in sorted(directory.glob("*.research.json")):
+        import json
+
+        document = json.loads(path.read_text(encoding="utf-8"))
+        person_id = document.get("owner", {}).get("person_id")
+        if not isinstance(person_id, int) or person_id <= 0:
+            raise ValueError(f"Dossier has invalid owner.person_id: {path}")
+        if person_id in dossiers:
+            raise ValueError(f"Duplicate dossier for person_id {person_id}")
+        dossiers[person_id] = document
+        paths[person_id] = path
+    return dossiers, paths
+
+
+def _confidence_score(item: dict[str, Any], path: str) -> int:
+    score = item.get("confidence", {}).get("score")
+    if not isinstance(score, int) or isinstance(score, bool) or score < 85:
+        raise ValueError(f"{path} must have confidence of at least 85")
+    return score
+
+
+def _blank(value: Any) -> bool:
+    return value is None or (isinstance(value, str) and not value.strip())
+
+
+def _source_refs(
+    dossier: dict[str, Any],
+    source_ids: list[str],
+) -> list[dict[str, Any]]:
+    sources = {
+        source.get("id"): source
+        for source in dossier.get("sources", [])
+        if isinstance(source, dict)
+    }
+    return [sources[source_id] for source_id in source_ids if source_id in sources]
+
+
+def _owner_vessels(owner: dict[str, Any]) -> list[dict[str, Any]]:
+    return [
+        {
+            "rank": relationship.get("rank"),
+            "name": relationship.get("vessel_name"),
+        }
+        for relationship in owner.get("top_100", {}).get("relationships", [])
+        if relationship.get("is_current")
+    ]
+
+
+def _build_owner_summary(
+    owner: dict[str, Any],
+    dossier: dict[str, Any],
+    *,
+    identity_score: int,
+    biography_score: int,
+    changes: list[dict[str, Any]],
+) -> dict[str, Any]:
+    unresolved_fields = sorted(
+        set(
+            dossier.get("input_snapshot", {}).get(
+                "researchable_missing_details", []
+            )
+        )
+        - {
+            proposal.get("field")
+            for proposal in dossier.get("proposed_details", [])
+        }
+    )
+    return {
+        "person_id": owner["person_id"],
+        "display_name": owner_display_name(owner),
+        "rank": current_top_100_rank(owner),
+        "vessels": _owner_vessels(owner),
+        "identity_confidence": identity_score,
+        "biography_confidence": biography_score,
+        "biography": dossier.get("biography", {}).get("plain_text"),
+        "research_status": dossier.get("research_status"),
+        "review_status": dossier.get("review", {}).get("status"),
+        "forbes_profile": dossier.get("forbes_profile"),
+        "wealth_origin": dossier.get("wealth_origin"),
+        "changes": changes,
+        "unresolved_fields": unresolved_fields,
+        "candidates_requiring_review": dossier.get(
+            "candidates_requiring_review", []
+        ),
+        "uncertainties": dossier.get("uncertainties", []),
+        "sources": dossier.get("sources", []),
+    }
+
+
+def apply_dossier(
+    owner: dict[str, Any],
+    dossier: dict[str, Any],
+    dossier_path: str,
+    *,
+    mark_ai_enriched: bool,
+    generated_at: str,
+) -> dict[str, Any]:
+    person_id = owner["person_id"]
+    if dossier.get("owner", {}).get("person_id") != person_id:
+        raise ValueError(f"Dossier owner mismatch for person_id {person_id}")
+    identity_score = _confidence_score(
+        {"confidence": dossier.get("owner", {}).get("identity_confidence", {})},
+        f"owner {person_id} identity",
+    )
+    if dossier.get("research_status") in {
+        "identity_conflict",
+        "insufficient_evidence",
+    }:
+        raise ValueError(f"Owner {person_id} has unusable research status")
+
+    review_status = dossier.get("review", {}).get("status")
+    if review_status not in {"pending", "approved", "rejected"}:
+        raise ValueError(f"Owner {person_id} has invalid review status")
+    if review_status != "pending" and any(
+        not isinstance(dossier.get("review", {}).get(key), str)
+        or not dossier["review"][key].strip()
+        for key in ("reviewed_by", "reviewed_at")
+    ):
+        raise ValueError(
+            f"Owner {person_id} final review requires reviewed_by and reviewed_at"
+        )
+    if mark_ai_enriched and review_status == "pending":
+        raise ValueError(
+            f"Owner {person_id} must be approved before marking AI enriched"
+        )
+
+    changes: list[dict[str, Any]] = []
+    biography = dossier.get("biography")
+    if not isinstance(biography, dict):
+        raise ValueError(f"Owner {person_id} has no dossier biography")
+    biography_score = _confidence_score(
+        biography,
+        f"owner {person_id} biography",
+    )
+    if review_status == "rejected":
+        workflow = ensure_owner_workflow(owner)
+        workflow["ai_enriched"] = False
+        owner["ai_research"] = {
+            "dossier": dossier_path.replace("\\", "/"),
+            "research_status": dossier.get("research_status"),
+            "review_status": review_status,
+            "compiled_at": generated_at,
+            "change_count": 0,
+        }
+        return _build_owner_summary(
+            owner,
+            dossier,
+            identity_score=identity_score,
+            biography_score=biography_score,
+            changes=[],
+        )
+
+    details = owner.get("details")
+    if not isinstance(details, dict):
+        raise ValueError(f"Owner {person_id} has no details object")
+
+    biography_field = details.get("biography")
+    if not isinstance(biography_field, dict):
+        raise ValueError(f"Owner {person_id} input has no biography field")
+    before_biography = biography_field.get("value")
+    after_biography = biography.get("html")
+    if not isinstance(after_biography, str) or not after_biography.strip():
+        raise ValueError(f"Owner {person_id} biography HTML is empty")
+    biography_field["value"] = after_biography
+    if before_biography != after_biography:
+        changes.append(
+            {
+                "kind": "biography",
+                "action": (
+                    "fill_missing" if _blank(before_biography)
+                    else "correct_existing"
+                ),
+                "field": "biography",
+                "label": "Biography",
+                "before": before_biography,
+                "after": biography.get("plain_text"),
+                "confidence": biography_score,
+                "source_ids": biography.get("source_ids", []),
+            }
+        )
+
+    for index, proposal in enumerate(dossier.get("proposed_details", [])):
+        field = proposal.get("field")
+        if not isinstance(field, str) or field not in details:
+            raise ValueError(
+                f"Owner {person_id} proposal {index} has unknown field {field!r}"
+            )
+        score = _confidence_score(
+            proposal,
+            f"owner {person_id} detail proposal {field}",
+        )
+        if field == "biography":
+            if proposal.get("value") != after_biography:
+                raise ValueError(
+                    f"Owner {person_id} biography proposal differs from "
+                    "biography.html"
+                )
+            if (
+                proposal.get("action") == "fill_missing"
+                and not _blank(before_biography)
+            ):
+                raise ValueError(
+                    f"Owner {person_id} biography is no longer blank"
+                )
+            if (
+                proposal.get("action") == "correct_existing"
+                and proposal.get("existing_value") != before_biography
+            ):
+                raise ValueError(
+                    f"Owner {person_id} biography no longer matches "
+                    "the correction baseline"
+                )
+            continue
+        detail = details[field]
+        if not isinstance(detail, dict):
+            raise ValueError(f"Owner {person_id} field {field} is not editable")
+        before = detail.get("value")
+        if proposal.get("action") == "fill_missing" and not _blank(before):
+            raise ValueError(
+                f"Owner {person_id} field {field} is no longer blank"
+            )
+        if (
+            proposal.get("action") == "correct_existing"
+            and proposal.get("existing_value") != before
+        ):
+            raise ValueError(
+                f"Owner {person_id} field {field} no longer matches "
+                "the correction baseline"
+            )
+        after = proposal.get("value")
+        detail["value"] = after
+        changes.append(
+            {
+                "kind": "detail",
+                "action": proposal.get("action"),
+                "field": field,
+                "label": detail.get("label", field),
+                "before": before,
+                "after": after,
+                "confidence": score,
+                "source_ids": proposal.get("source_ids", []),
+            }
+        )
+
+    profiles = owner.get("social_media_profiles")
+    if not isinstance(profiles, list):
+        raise ValueError(f"Owner {person_id} has no social profile list")
+    existing_types = {
+        str(profile.get("type_id"))
+        for profile in profiles
+        if isinstance(profile, dict)
+    }
+    for index, proposal in enumerate(dossier.get("proposed_socials", [])):
+        type_id = str(proposal.get("type_id", ""))
+        if type_id in existing_types:
+            raise ValueError(
+                f"Owner {person_id} already has social type_id {type_id}"
+            )
+        score = _confidence_score(
+            proposal,
+            f"owner {person_id} social proposal {index}",
+        )
+        profile = {
+            "type_id": type_id,
+            "type": proposal.get("type"),
+            "url": proposal.get("url"),
+        }
+        profiles.append(profile)
+        existing_types.add(type_id)
+        changes.append(
+            {
+                "kind": "social",
+                "action": "fill_missing",
+                "field": proposal.get("type"),
+                "label": proposal.get("type"),
+                "before": None,
+                "after": proposal.get("url"),
+                "confidence": score,
+                "source_ids": proposal.get("source_ids", []),
+            }
+        )
+
+    workflow = ensure_owner_workflow(owner)
+    workflow["ai_enriched"] = bool(mark_ai_enriched)
+    if changes:
+        workflow["updated_in_system"] = False
+    owner["ai_research"] = {
+        "dossier": dossier_path.replace("\\", "/"),
+        "research_status": dossier.get("research_status"),
+        "review_status": review_status,
+        "compiled_at": generated_at,
+        "change_count": len(changes),
+    }
+    for change in changes:
+        change["sources"] = _source_refs(dossier, change["source_ids"])
+
+    return _build_owner_summary(
+        owner,
+        dossier,
+        identity_score=identity_score,
+        biography_score=biography_score,
+        changes=changes,
+    )
+
+
+def compile_research_batch(
+    source_document: dict[str, Any],
+    dossiers: dict[int, dict[str, Any]],
+    dossier_paths: dict[int, Path],
+    *,
+    source_path: str,
+    limit: int | None,
+    mark_ai_enriched: bool,
+    generated_at: str | None = None,
+) -> tuple[dict[str, Any], dict[str, Any]]:
+    timestamp = generated_at or datetime.now(UTC).isoformat()
+    selected = select_current_top_100_owners(source_document, limit)
+    missing = [
+        owner["person_id"]
+        for owner in selected
+        if owner["person_id"] not in dossiers
+    ]
+    if missing:
+        raise ValueError(f"Missing dossiers for person IDs: {missing}")
+
+    derived = deepcopy(source_document)
+    compiled_owners: list[dict[str, Any]] = []
+    summaries: list[dict[str, Any]] = []
+    for source_owner in selected:
+        person_id = source_owner["person_id"]
+        owner = deepcopy(source_owner)
+        summary = apply_dossier(
+            owner,
+            dossiers[person_id],
+            str(dossier_paths[person_id]),
+            mark_ai_enriched=mark_ai_enriched,
+            generated_at=timestamp,
+        )
+        compiled_owners.append(owner)
+        summaries.append(summary)
+
+    original_count = len(source_document.get("owners", []))
+    derived["owners"] = compiled_owners
+    source = derived.setdefault("source", {})
+    source["original_owner_count"] = original_count
+    source["owner_count"] = len(compiled_owners)
+    source["derived_from"] = source_path.replace("\\", "/")
+    derived["research_batch"] = {
+        "schema_version": 1,
+        "generated_at": timestamp,
+        "selection": "current_top_100_by_minimum_vessel_rank",
+        "limit": limit,
+        "review_state": (
+            "reviewed" if mark_ai_enriched else "pending_review"
+        ),
+        "owner_count": len(compiled_owners),
+    }
+    report = {
+        "generated_at": timestamp,
+        "source_path": source_path.replace("\\", "/"),
+        "mark_ai_enriched": mark_ai_enriched,
+        "owners": summaries,
+    }
+    return derived, report
+
+
+def _e(value: Any) -> str:
+    return html.escape("" if value is None else str(value), quote=True)
+
+
+def _confidence_badge(score: Any) -> str:
+    numeric = int(score) if isinstance(score, int) else 0
+    level = "high" if numeric >= 95 else "medium" if numeric >= 85 else "low"
+    return f'<span class="confidence {level}">{numeric}%</span>'
+
+
+def _source_links(sources: list[dict[str, Any]]) -> str:
+    if not sources:
+        return '<span class="muted">No source link recorded</span>'
+    return ", ".join(
+        f'<a href="{_e(source.get("url"))}" target="_blank" '
+        f'rel="noopener noreferrer">{_e(source.get("publisher"))}: '
+        f'{_e(source.get("title"))}</a>'
+        for source in sources
+    )
+
+
+def render_research_report(report: dict[str, Any]) -> str:
+    owners = report.get("owners", [])
+    field_additions = sum(
+        1
+        for owner in owners
+        for change in owner.get("changes", [])
+        if change.get("kind") == "detail"
+        and change.get("action") == "fill_missing"
+    )
+    link_additions = sum(
+        1
+        for owner in owners
+        for change in owner.get("changes", [])
+        if change.get("kind") == "social"
+    )
+    cards: list[str] = []
+    for owner in owners:
+        vessels = ", ".join(
+            f'#{_e(vessel.get("rank"))} {_e(vessel.get("name"))}'
+            for vessel in owner.get("vessels", [])
+        )
+        detail_rows = []
+        improvement_rows = []
+        link_rows = []
+        for change in owner.get("changes", []):
+            if change.get("kind") == "biography":
+                continue
+            if change.get("action") == "correct_existing":
+                improvement_rows.append(
+                    "<tr>"
+                    f"<td>{_e(change.get('label'))}</td>"
+                    f"<td>{_e(change.get('before'))}</td>"
+                    f"<td>{_e(change.get('after'))}</td>"
+                    f"<td>{_confidence_badge(change.get('confidence'))}</td>"
+                    f"<td>{_source_links(change.get('sources', []))}</td>"
+                    "</tr>"
+                )
+            else:
+                row = (
+                    "<tr>"
+                    f"<td>{_e(change.get('label'))}</td>"
+                    f"<td>{_e(change.get('after'))}</td>"
+                    f"<td>{_confidence_badge(change.get('confidence'))}</td>"
+                    f"<td>{_source_links(change.get('sources', []))}</td>"
+                    "</tr>"
+                )
+                if change.get("kind") == "social":
+                    link_rows.append(row)
+                else:
+                    detail_rows.append(row)
+
+        def table(rows: list[str], empty: str) -> str:
+            if not rows:
+                return f'<p class="muted">{_e(empty)}</p>'
+            return (
+                '<div class="table-wrap"><table><thead><tr>'
+                "<th>Field</th><th>Added value</th><th>Confidence</th>"
+                "<th>Evidence</th></tr></thead><tbody>"
+                + "".join(rows)
+                + "</tbody></table></div>"
+            )
+
+        def improvement_table(rows: list[str]) -> str:
+            if not rows:
+                return '<p class="muted">No existing detail fields were changed.</p>'
+            return (
+                '<div class="table-wrap"><table><thead><tr>'
+                "<th>Field</th><th>Previous value</th><th>New value</th>"
+                "<th>Confidence</th><th>Evidence</th></tr></thead><tbody>"
+                + "".join(rows)
+                + "</tbody></table></div>"
+            )
+
+        def candidate_table(rows: list[str]) -> str:
+            if not rows:
+                return '<p class="muted">No lower-confidence candidates were retained.</p>'
+            return (
+                '<div class="table-wrap"><table><thead><tr>'
+                "<th>Field or link</th><th>Candidate value</th>"
+                "<th>Confidence</th><th>Reason and evidence</th>"
+                "</tr></thead><tbody>"
+                + "".join(rows)
+                + "</tbody></table></div>"
+            )
+
+        source_items = "".join(
+            "<li>"
+            f'<a href="{_e(source.get("url"))}" target="_blank" '
+            f'rel="noopener noreferrer">{_e(source.get("title"))}</a>'
+            f' <span class="muted">— {_e(source.get("publisher"))}, '
+            f'Tier {_e(source.get("tier"))}</span>'
+            "</li>"
+            for source in owner.get("sources", [])
+        )
+        unresolved = owner.get("unresolved_fields", [])
+        owner_source_map = {
+            source.get("id"): source
+            for source in owner.get("sources", [])
+            if isinstance(source, dict)
+        }
+        candidate_rows = []
+        for candidate in owner.get("candidates_requiring_review", []):
+            source_refs = [
+                owner_source_map[source_id]
+                for source_id in candidate.get("source_ids", [])
+                if source_id in owner_source_map
+            ]
+            candidate_rows.append(
+                "<tr>"
+                f"<td>{_e(candidate.get('field') or candidate.get('type'))}</td>"
+                f"<td>{_e(candidate.get('candidate_value') or candidate.get('candidate_url') or candidate.get('value'))}</td>"
+                f"<td>{_confidence_badge(candidate.get('confidence', {}).get('score'))}</td>"
+                f"<td>{_e(candidate.get('confidence', {}).get('reason'))}<br>"
+                f"{_source_links(source_refs)}</td>"
+                "</tr>"
+            )
+        uncertainty_items = "".join(
+            f"<li>{_e(item)}</li>" for item in owner.get("uncertainties", [])
+        )
+        forbes = owner.get("forbes_profile", {})
+        forbes_url = forbes.get("url")
+        forbes_value = (
+            f'<a href="{_e(forbes_url)}" target="_blank" '
+            f'rel="noopener noreferrer">{_e(forbes.get("status"))}</a>'
+            if forbes_url
+            else _e(forbes.get("status"))
+        )
+        cards.append(
+            f"""
+            <details class="owner-card" open>
+              <summary>
+                <span><span class="rank">#{_e(owner.get("rank"))}</span>
+                {_e(owner.get("display_name"))}</span>
+                <span class="summary-badges">
+                  {_confidence_badge(owner.get("biography_confidence"))}
+                  <span class="status">{_e(owner.get("review_status"))}</span>
+                </span>
+              </summary>
+              <div class="owner-body">
+                <p class="vessels">{vessels}</p>
+                <h3>Proposed biography</h3>
+                <blockquote>{_e(owner.get("biography"))}</blockquote>
+                <div class="origin">
+                  <strong>Origin:</strong>
+                  {_e(owner.get("wealth_origin", {}).get("summary"))}
+                  {_confidence_badge(owner.get("wealth_origin", {}).get(
+                      "confidence", {}
+                  ).get("score"))}
+                </div>
+                <p><strong>Forbes profile:</strong> {forbes_value}
+                  {_confidence_badge(forbes.get("confidence", {}).get("score"))}</p>
+                <h3>Missing fields added</h3>
+                {table(detail_rows, "No missing detail fields met the confidence threshold.")}
+                <h3>Existing fields improved</h3>
+                {improvement_table(improvement_rows)}
+                <h3>Links added</h3>
+                {table(link_rows, "No missing links met the identity and confidence threshold.")}
+                <h3>Needs reviewer judgement</h3>
+                {candidate_table(candidate_rows)}
+                <p><strong>Unresolved researchable gaps:</strong>
+                  {_e(", ".join(unresolved) if unresolved else "None")}</p>
+                <details class="evidence">
+                  <summary>Evidence and uncertainties</summary>
+                  <ul>{source_items}</ul>
+                  <ul>{uncertainty_items}</ul>
+                </details>
+              </div>
+            </details>
+            """
+        )
+
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Top-100 owner enrichment review</title>
+  <style>
+    :root {{
+      color-scheme: dark;
+      --bg: #10141b; --panel: #1b222d; --panel-2: #222c39;
+      --text: #edf2f7; --muted: #9eabb9; --accent: #56c2b6;
+      --gold: #e5bd6b; --line: #344154; --good: #4fd1a1;
+      --warn: #f0b65b; --low: #ef7d7d;
+    }}
+    * {{ box-sizing: border-box; }}
+    body {{
+      margin: 0; background: var(--bg); color: var(--text);
+      font: 15px/1.55 Inter, ui-sans-serif, system-ui, sans-serif;
+    }}
+    main {{ max-width: 1180px; margin: auto; padding: 40px 22px 80px; }}
+    h1 {{ margin: 0 0 8px; font-size: clamp(28px, 5vw, 48px); }}
+    h2, h3 {{ letter-spacing: .01em; }}
+    a {{ color: #82d9d0; }}
+    .lede {{ color: var(--muted); max-width: 760px; }}
+    .metrics {{
+      display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px; margin: 26px 0 32px;
+    }}
+    .metric {{ background: var(--panel); padding: 18px; border-radius: 12px; }}
+    .metric strong {{ display: block; font-size: 28px; color: var(--gold); }}
+    .owner-card {{
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 14px; margin: 14px 0; overflow: hidden;
+    }}
+    .owner-card > summary {{
+      cursor: pointer; padding: 18px 20px; font-size: 18px; font-weight: 700;
+      display: flex; justify-content: space-between; gap: 14px;
+      background: var(--panel-2);
+    }}
+    .owner-body {{ padding: 18px 20px 24px; }}
+    .rank {{ color: var(--gold); margin-right: 8px; }}
+    .summary-badges {{ display: flex; gap: 8px; align-items: center; }}
+    .confidence, .status {{
+      display: inline-block; border-radius: 999px; padding: 3px 9px;
+      font-size: 12px; font-weight: 800; white-space: nowrap;
+    }}
+    .confidence.high {{ background: #174f42; color: #8ef0d0; }}
+    .confidence.medium {{ background: #5a4219; color: #ffd58c; }}
+    .confidence.low {{ background: #5b2929; color: #ffaaaa; }}
+    .status {{ background: #303d50; color: #c9d5e4; text-transform: uppercase; }}
+    .vessels, .muted {{ color: var(--muted); }}
+    blockquote {{
+      margin: 12px 0 18px; padding: 16px 18px;
+      border-left: 4px solid var(--accent); background: #151b24;
+      border-radius: 0 10px 10px 0; font-size: 17px;
+    }}
+    .origin {{ background: #151b24; padding: 14px; border-radius: 10px; }}
+    .table-wrap {{ overflow-x: auto; }}
+    table {{ border-collapse: collapse; width: 100%; min-width: 680px; }}
+    th, td {{ padding: 11px; text-align: left; border-bottom: 1px solid var(--line); }}
+    th {{ color: var(--muted); font-size: 12px; text-transform: uppercase; }}
+    .evidence {{ margin-top: 18px; border-top: 1px solid var(--line); padding-top: 12px; }}
+    @media (max-width: 680px) {{
+      .metrics {{ grid-template-columns: 1fr; }}
+      .owner-card > summary {{ align-items: flex-start; flex-direction: column; }}
+    }}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Top-100 owner enrichment review</h1>
+    <p class="lede">A review-only preview of evidence-backed owner research.
+      Source data and live records remain unchanged. Generated
+      {_e(report.get("generated_at"))}.</p>
+    <section class="metrics">
+      <div class="metric"><strong>{len(owners)}</strong>owners researched</div>
+      <div class="metric"><strong>{field_additions}</strong>missing fields added</div>
+      <div class="metric"><strong>{link_additions}</strong>verified links added</div>
+    </section>
+    {"".join(cards)}
+  </main>
+</body>
+</html>
+"""

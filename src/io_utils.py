@@ -50,6 +50,28 @@ def atomic_write_json(path: str | Path, document: dict[str, Any]) -> None:
         raise
 
 
+def atomic_write_text(path: str | Path, content: str) -> None:
+    destination = Path(path)
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    fd, temporary_name = tempfile.mkstemp(
+        prefix=f".{destination.name}.",
+        suffix=".tmp",
+        dir=destination.parent,
+    )
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8", newline="\n") as handle:
+            handle.write(content)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(temporary_name, destination)
+    except Exception:
+        try:
+            os.unlink(temporary_name)
+        except FileNotFoundError:
+            pass
+        raise
+
+
 def validate_document(document: dict[str, Any]) -> None:
     if not isinstance(document, dict):
         raise ValueError("Owner data must be a JSON object")
