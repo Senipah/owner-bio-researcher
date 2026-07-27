@@ -74,3 +74,32 @@ def test_validator_requires_unknown_below_classification_threshold(
         "wealth_origin must use classification 'unknown' below confidence 85"
         in result.stderr
     )
+
+
+def test_validator_enforces_short_biography_length(tmp_path: Path) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["biography"]["plain_text"] = "This biography is too short."
+    dossier["biography"]["html"] = "<p>This biography is too short.</p>\r\n"
+    dossier["biography"]["word_count"] = 5
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert "biography must contain 50-55 words" in result.stderr
+
+
+def test_validator_requires_two_long_biography_paragraphs(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    plain = dossier["long_biography"]["plain_text"].replace("\n\n", " ")
+    dossier["long_biography"]["plain_text"] = plain
+    dossier["long_biography"]["html"] = f"<p>{plain}</p>\r\n"
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert (
+        "long_biography.plain_text must contain exactly two paragraphs"
+        in result.stderr
+    )

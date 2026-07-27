@@ -14,9 +14,10 @@ batch.
 
 Continue until all selected owners have:
 
-1. one schema-v3 dossier beneath `output/owner-research/top-100/`;
-2. a validated, evidence-backed biography plus `primary_industry`,
-   `wealth_origin`, and `wealth_relationship` classifications;
+1. one schema-v4 dossier beneath `output/owner-research/top-100/`;
+2. validated, evidence-backed short and longer biographies plus
+   `primary_industry`, `wealth_origin`, and `wealth_relationship`
+   classifications;
 3. an explicit Forbes result;
 4. an inventory of missing details and supported link types;
 5. only confidence-85-or-higher proposed details and links;
@@ -46,7 +47,13 @@ For every owner:
 - use a distinct Company Website proposal only when official evidence connects
   the person to the company;
 - keep lower-confidence facts and links in review candidates or uncertainties;
-- draft one neutral 55-90 word lore-style paragraph, never exceeding 110 words;
+- draft a neutral 50-55 word short biography and a standalone, two-paragraph
+  longer biography of 90-190 words, preferably 120-170;
+- use the longer biography for the formative route, an important turning
+  point, and one or two strongly sourced layers of character colour, later
+  activity, or meaningful yachting context;
+- do not pad sparse profiles, repeat the short text verbatim, append yacht
+  names without a meaningful story, or infer character from ownership alone;
 - validate the dossier with:
 
 ```powershell
@@ -63,7 +70,8 @@ after each group of ten validated owners.
 
 After all dossiers validate, perform a main-agent consistency review:
 
-- biography tone and length match the Shahid Khan calibration;
+- both biography tones, structures, and lengths match the Shahid Khan
+  calibration;
 - royal, sovereign, family, and personal wealth are not conflated, and an
   oil-producing state is not treated as evidence of personal `Energy` wealth;
 - inherited, self-made, dynastic/royal, family-transfer, mixed, and unknown
@@ -93,8 +101,8 @@ Acceptance criteria:
 - `_baseline`, `person_id`, `profile_url`, and existing `profile_key` values
   remain unchanged;
 - pending output owners retain `workflow.ai_enriched=false`;
-- the HTML report shows, per owner, vessel rank/context, new biography,
-  all three wealth classifications, missing fields added, existing fields
+- the HTML report shows, per owner, vessel rank/context, both biographies, all
+  three wealth classifications, missing fields added, existing fields
   improved, verified links, confidence, evidence links, unresolved gaps, and
   uncertainties;
 - the original input hash is unchanged;

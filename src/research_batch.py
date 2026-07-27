@@ -14,6 +14,7 @@ RESEARCH_CLASSIFICATION_FIELDS = (
     "wealth_origin",
     "wealth_relationship",
 )
+BIOGRAPHY_DETAIL_FIELDS = {"biography", "long_biography"}
 
 
 def owner_display_name(owner: dict[str, Any]) -> str:
@@ -113,6 +114,7 @@ def _build_owner_summary(
     *,
     identity_score: int,
     biography_score: int,
+    long_biography_score: int,
     changes: list[dict[str, Any]],
 ) -> dict[str, Any]:
     unresolved_fields = sorted(
@@ -125,6 +127,7 @@ def _build_owner_summary(
             proposal.get("field")
             for proposal in dossier.get("proposed_details", [])
         }
+        - BIOGRAPHY_DETAIL_FIELDS
     )
     return {
         "person_id": owner["person_id"],
@@ -134,6 +137,8 @@ def _build_owner_summary(
         "identity_confidence": identity_score,
         "biography_confidence": biography_score,
         "biography": dossier.get("biography", {}).get("plain_text"),
+        "long_biography_confidence": long_biography_score,
+        "long_biography": dossier.get("long_biography", {}).get("plain_text"),
         "research_status": dossier.get("research_status"),
         "review_status": dossier.get("review", {}).get("status"),
         "forbes_profile": dossier.get("forbes_profile"),
@@ -196,6 +201,13 @@ def apply_dossier(
         biography,
         f"owner {person_id} biography",
     )
+    long_biography = dossier.get("long_biography")
+    if not isinstance(long_biography, dict):
+        raise ValueError(f"Owner {person_id} has no dossier long_biography")
+    long_biography_score = _confidence_score(
+        long_biography,
+        f"owner {person_id} long biography",
+    )
     if review_status == "rejected":
         workflow = ensure_owner_workflow(owner)
         workflow["ai_enriched"] = False
@@ -205,6 +217,8 @@ def apply_dossier(
             "review_status": review_status,
             "compiled_at": generated_at,
             "change_count": 0,
+            "biography": deepcopy(biography),
+            "long_biography": deepcopy(long_biography),
             **{
                 field: deepcopy(dossier.get(field))
                 for field in RESEARCH_CLASSIFICATION_FIELDS
@@ -215,6 +229,7 @@ def apply_dossier(
             dossier,
             identity_score=identity_score,
             biography_score=biography_score,
+            long_biography_score=long_biography_score,
             changes=[],
         )
 
@@ -247,6 +262,45 @@ def apply_dossier(
             }
         )
 
+    before_long_biography = None
+    after_long_biography = long_biography.get("html")
+    if (
+        not isinstance(after_long_biography, str)
+        or not after_long_biography.strip()
+    ):
+        raise ValueError(f"Owner {person_id} long biography HTML is empty")
+    long_biography_field = details.get("long_biography")
+    if long_biography_field is not None:
+        if not isinstance(long_biography_field, dict):
+            raise ValueError(
+                f"Owner {person_id} long_biography field is not editable"
+            )
+        before_long_biography = long_biography_field.get("value")
+        long_biography_field["value"] = after_long_biography
+        if before_long_biography != after_long_biography:
+            changes.append(
+                {
+                    "kind": "long_biography",
+                    "action": (
+                        "fill_missing" if _blank(before_long_biography)
+                        else "correct_existing"
+                    ),
+                    "field": "long_biography",
+                    "label": "Long Biography",
+                    "before": before_long_biography,
+                    "after": long_biography.get("plain_text"),
+                    "confidence": long_biography_score,
+                    "source_ids": long_biography.get("source_ids", []),
+                }
+            )
+
+    biography_values = {
+        "biography": (before_biography, after_biography),
+        "long_biography": (
+            before_long_biography,
+            after_long_biography,
+        ),
+    }
     for index, proposal in enumerate(dossier.get("proposed_details", [])):
         field = proposal.get("field")
         if not isinstance(field, str) or field not in details:
@@ -257,25 +311,26 @@ def apply_dossier(
             proposal,
             f"owner {person_id} detail proposal {field}",
         )
-        if field == "biography":
-            if proposal.get("value") != after_biography:
+        if field in BIOGRAPHY_DETAIL_FIELDS:
+            before_value, after_value = biography_values[field]
+            if proposal.get("value") != after_value:
                 raise ValueError(
-                    f"Owner {person_id} biography proposal differs from "
-                    "biography.html"
+                    f"Owner {person_id} {field} proposal differs from "
+                    f"{field}.html"
                 )
             if (
                 proposal.get("action") == "fill_missing"
-                and not _blank(before_biography)
+                and not _blank(before_value)
             ):
                 raise ValueError(
-                    f"Owner {person_id} biography is no longer blank"
+                    f"Owner {person_id} {field} is no longer blank"
                 )
             if (
                 proposal.get("action") == "correct_existing"
-                and proposal.get("existing_value") != before_biography
+                and proposal.get("existing_value") != before_value
             ):
                 raise ValueError(
-                    f"Owner {person_id} biography no longer matches "
+                    f"Owner {person_id} {field} no longer matches "
                     "the correction baseline"
                 )
             continue
@@ -358,6 +413,8 @@ def apply_dossier(
         "review_status": review_status,
         "compiled_at": generated_at,
         "change_count": len(changes),
+        "biography": deepcopy(biography),
+        "long_biography": deepcopy(long_biography),
         **{
             field: deepcopy(dossier.get(field))
             for field in RESEARCH_CLASSIFICATION_FIELDS
@@ -371,6 +428,7 @@ def apply_dossier(
         dossier,
         identity_score=identity_score,
         biography_score=biography_score,
+        long_biography_score=long_biography_score,
         changes=changes,
     )
 
@@ -440,6 +498,15 @@ def _e(value: Any) -> str:
     return html.escape("" if value is None else str(value), quote=True)
 
 
+def _plain_paragraphs(value: Any) -> str:
+    if not isinstance(value, str) or not value.strip():
+        return '<p class="muted">No biography supplied.</p>'
+    return "".join(
+        f"<p>{_e(paragraph)}</p>"
+        for paragraph in value.split("\n\n")
+    )
+
+
 def _confidence_badge(score: Any) -> str:
     numeric = int(score) if isinstance(score, int) else 0
     level = "high" if numeric >= 95 else "medium" if numeric >= 85 else "low"
@@ -482,7 +549,7 @@ def render_research_report(report: dict[str, Any]) -> str:
         improvement_rows = []
         link_rows = []
         for change in owner.get("changes", []):
-            if change.get("kind") == "biography":
+            if change.get("kind") in BIOGRAPHY_DETAIL_FIELDS:
                 continue
             if change.get("action") == "correct_existing":
                 improvement_rows.append(
@@ -597,8 +664,16 @@ def render_research_report(report: dict[str, Any]) -> str:
               </summary>
               <div class="owner-body">
                 <p class="vessels">{vessels}</p>
-                <h3>Proposed biography</h3>
+                <h3>Short biography
+                  {_confidence_badge(owner.get("biography_confidence"))}</h3>
                 <blockquote>{_e(owner.get("biography"))}</blockquote>
+                <h3>Longer biography
+                  {_confidence_badge(owner.get(
+                      "long_biography_confidence"
+                  ))}</h3>
+                <div class="long-biography">
+                  {_plain_paragraphs(owner.get("long_biography"))}
+                </div>
                 <div class="origin">
                   <p><strong>Primary industry:</strong>
                   {_e(owner.get("primary_industry", {}).get("label"))}
@@ -703,6 +778,12 @@ def render_research_report(report: dict[str, Any]) -> str:
       border-left: 4px solid var(--accent); background: #151b24;
       border-radius: 0 10px 10px 0; font-size: 17px;
     }}
+    .long-biography {{
+      margin: 12px 0 18px; padding: 14px 18px;
+      background: #151b24; border-radius: 10px;
+    }}
+    .long-biography p:first-child {{ margin-top: 0; }}
+    .long-biography p:last-child {{ margin-bottom: 0; }}
     .origin {{ background: #151b24; padding: 14px; border-radius: 10px; }}
     .table-wrap {{ overflow-x: auto; }}
     table {{ border-collapse: collapse; width: 100%; min-width: 680px; }}

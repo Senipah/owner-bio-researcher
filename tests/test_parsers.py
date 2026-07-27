@@ -75,6 +75,10 @@ def test_details_raw_textareas_preserve_known_rich_text_fields() -> None:
             name="editpersondetails[biography]"
           >&lt;p&gt;Biography&lt;/p&gt;</textarea>
           <textarea
+            id="EditpersondetailsLongBiography"
+            name="editpersondetails[long_biography]"
+          >&lt;p&gt;Long biography&lt;/p&gt;</textarea>
+          <textarea
             id="EditpersondetailsSummary"
             name="editpersondetails[summary]"
           >Plain text</textarea>
@@ -86,6 +90,8 @@ def test_details_raw_textareas_preserve_known_rich_text_fields() -> None:
     assert details["internal_notes"]["value"] == "<p>Note</p>"
     assert details["biography"]["kind"] == "rich_text_html"
     assert details["biography"]["value"] == "<p>Biography</p>"
+    assert details["long_biography"]["kind"] == "rich_text_html"
+    assert details["long_biography"]["value"] == "<p>Long biography</p>"
     assert details["summary"]["kind"] == "textarea"
 
 

@@ -181,8 +181,9 @@ Use `--workers` to adjust the bounded HTTP concurrency, or `--person-id` and
 
 The default output is `output\owners-list.top-100.enriched.json`. Every named
 editable control in the details form is represented, including blank fields.
-Selects retain both their visible value and internal option ID. Internal notes
-and biography are stored as HTML because the site uses CKEditor.
+Selects retain both their visible value and internal option ID. Internal notes,
+biography, and the longer biography are stored as HTML because the site uses
+CKEditor.
 
 An interrupted run can resume from its existing output:
 
@@ -256,12 +257,15 @@ Owner research is stored as one pending-review dossier per person under
 `output\owner-research`. Compile those dossiers into a new owner document and
 a standalone HTML report without changing the enriched input:
 
-Each schema-v3 dossier independently classifies `primary_industry`,
-`wealth_origin`, and `wealth_relationship`. The compiler retains all three
-under each compiled owner's `ai_research` metadata and shows them in the review
-report. If equivalent editable details fields are present in the source owner
-record, reviewed dossier proposals can also populate those fields using their
-exact display labels.
+Each schema-v4 dossier contains a 50-55 word short `biography`, a two-paragraph
+`long_biography` of 90-190 words, and independent `primary_industry`,
+`wealth_origin`, and `wealth_relationship` classifications. The compiler
+retains both biographies and all three classifications under each compiled
+owner's `ai_research` metadata and shows them in the review report. It maps the
+short biography to `details.biography` and maps the longer version to
+`details.long_biography` whenever that form field is available. Equivalent
+editable classification fields can be populated through reviewed dossier
+proposals using their exact display labels.
 
 ```powershell
 .\venv\Scripts\python.exe .\compile_owner_research.py `

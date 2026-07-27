@@ -89,6 +89,30 @@ Only scores of 85 or higher belong in `proposed_details` or
 `proposed_socials`. Put lower-confidence candidates in
 `candidates_requiring_review` or `uncertainties`.
 
+## Biographies
+
+Read [biography-style.md](biography-style.md) and always populate:
+
+- `biography`: a standalone 50-55 word short biography in one paragraph;
+- `long_biography`: a standalone 90-190 word biography in exactly two
+  paragraphs, preferably 120-170 words.
+
+The short biography identifies the person and concisely explains the principal
+origin of wealth or prominence. The longer biography adds the formative route,
+an important turning point, and one or two useful layers of character colour,
+later activity, or meaningful yachting context.
+
+Each biography has its own `confidence` and `source_ids`. Its confidence cannot
+exceed the weakest material claim it contains. Every material claim must be
+supported by the source ledger. Do not pad sparse profiles, repeat the short
+text verbatim, or infer personality or yacht involvement from ownership alone.
+
+The compiler always maps `biography.html` to the existing `details.biography`.
+When the source owner exposes `details.long_biography`, it also maps
+`long_biography.html` there. Both biography objects remain available under
+compiled `ai_research` metadata even when the longer website field does not yet
+exist.
+
 ## Social links
 
 Inventory the exact `lookups.social_media_types` values from the supplied owner
@@ -130,6 +154,7 @@ Common proposal fields include:
 - `gender`
 - `mortality_status`
 - `biography`
+- `long_biography`
 
 Propose only fields that are missing or demonstrably wrong in the supplied
 record. Do not propose calculated age fields. Preserve the site's visible
@@ -164,7 +189,7 @@ Use this top-level structure:
 
 ```json
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "owner": {
     "person_id": null,
     "display_name": "Example Owner",
@@ -235,7 +260,18 @@ Use this top-level structure:
   "biography": {
     "plain_text": "...",
     "html": "<p>...</p>\r\n",
-    "word_count": 70,
+    "word_count": 53,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "..."
+    },
+    "source_ids": ["S1", "S2"]
+  },
+  "long_biography": {
+    "plain_text": "First paragraph...\n\nSecond paragraph...",
+    "html": "<p>First paragraph...</p>\r\n<p>Second paragraph...</p>\r\n",
+    "word_count": 140,
     "confidence": {
       "score": 90,
       "band": "high",

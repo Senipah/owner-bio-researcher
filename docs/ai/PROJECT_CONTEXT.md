@@ -64,9 +64,11 @@ Important owner fields:
   per-vessel normalized specifications, largest-known current vessel,
   `ranking_status`, and LOA rank.
 - `ai_research` (optional, compiled research output): dossier path and review
-  metadata plus evidence-backed `primary_industry`, `wealth_origin`, and
-  `wealth_relationship` classification objects. These are retained even before
-  equivalent editable fields exist on the website.
+  metadata, short and longer biography objects, plus evidence-backed
+  `primary_industry`, `wealth_origin`, and `wealth_relationship`
+  classifications. These are retained even before equivalent editable fields
+  exist on the website. When `details.long_biography` is present, compilation
+  maps the longer CKEditor HTML into that field.
 
 Vessel-enriched owner documents may also contain a top-level
 `vessel_specifications` cache keyed by vessel ID and a `vessel_enrichment`

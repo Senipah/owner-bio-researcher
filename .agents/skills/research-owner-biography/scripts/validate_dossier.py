@@ -77,6 +77,7 @@ CLASSIFICATION_FIELDS = {
     "wealth_origin": WEALTH_ORIGINS,
     "wealth_relationship": WEALTH_RELATIONSHIPS,
 }
+WORD_PATTERN = re.compile(r"\b[\w]+(?:[’'-][\w]+)*\b")
 
 
 def _confidence(
@@ -181,6 +182,7 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
         "wealth_origin",
         "wealth_relationship",
         "biography",
+        "long_biography",
         "proposed_details",
         "proposed_socials",
         "candidates_requiring_review",
@@ -192,8 +194,8 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
     if missing:
         errors.append(f"missing top-level keys: {missing}")
 
-    if document.get("schema_version") != 3:
-        errors.append("schema_version must be 3")
+    if document.get("schema_version") != 4:
+        errors.append("schema_version must be 4")
     if document.get("research_status") not in RESEARCH_STATUSES:
         errors.append("research_status is invalid")
 
@@ -313,17 +315,14 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
         if not isinstance(plain, str) or not plain.strip():
             errors.append("biography.plain_text must be non-empty")
         else:
-            words = re.findall(r"\b[\w]+(?:[’'-][\w]+)*\b", plain)
-            count = len(words)
+            count = len(WORD_PATTERN.findall(plain))
             if biography.get("word_count") != count:
                 errors.append(
                     f"biography.word_count must be {count}, not "
                     f"{biography.get('word_count')!r}"
                 )
-            if not 45 <= count <= 110:
-                errors.append("biography must contain 45-110 words")
-            elif not 55 <= count <= 90:
-                warnings.append("biography is outside the preferred 55-90 words")
+            if not 50 <= count <= 55:
+                errors.append("biography must contain 50-55 words")
             if "\n" in plain or "\r" in plain:
                 errors.append("biography.plain_text must be one paragraph")
             expected_html = f"<p>{html.escape(plain, quote=False)}</p>\r\n"
@@ -333,6 +332,70 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
         _source_ids(
             biography.get("source_ids"),
             "biography.source_ids",
+            known_sources,
+            errors,
+        )
+
+    long_biography = document.get("long_biography")
+    if not isinstance(long_biography, dict):
+        errors.append("long_biography must be an object")
+    else:
+        long_plain = long_biography.get("plain_text")
+        if not isinstance(long_plain, str) or not long_plain.strip():
+            errors.append("long_biography.plain_text must be non-empty")
+        else:
+            count = len(WORD_PATTERN.findall(long_plain))
+            if long_biography.get("word_count") != count:
+                errors.append(
+                    f"long_biography.word_count must be {count}, not "
+                    f"{long_biography.get('word_count')!r}"
+                )
+            if not 90 <= count <= 190:
+                errors.append("long_biography must contain 90-190 words")
+            elif not 120 <= count <= 170:
+                warnings.append(
+                    "long_biography is outside the preferred 120-170 words"
+                )
+            if "\r" in long_plain:
+                errors.append(
+                    "long_biography.plain_text must use LF paragraph separators"
+                )
+            paragraphs = long_plain.split("\n\n")
+            if (
+                len(paragraphs) != 2
+                or any(
+                    not paragraph.strip() or "\n" in paragraph
+                    for paragraph in paragraphs
+                )
+            ):
+                errors.append(
+                    "long_biography.plain_text must contain exactly two "
+                    "paragraphs"
+                )
+            else:
+                expected_html = "".join(
+                    f"<p>{html.escape(paragraph, quote=False)}</p>\r\n"
+                    for paragraph in paragraphs
+                )
+                if long_biography.get("html") != expected_html:
+                    errors.append(
+                        "long_biography.html is not canonical CKEditor HTML"
+                    )
+            if (
+                isinstance(biography, dict)
+                and long_plain == biography.get("plain_text")
+            ):
+                errors.append(
+                    "long_biography must not repeat biography verbatim"
+                )
+        _confidence(
+            long_biography.get("confidence"),
+            "long_biography.confidence",
+            errors,
+        )
+        _source_ids(
+            long_biography.get("source_ids"),
+            "long_biography.source_ids",
             known_sources,
             errors,
         )

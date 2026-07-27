@@ -1,6 +1,6 @@
 ---
 name: research-owner-biography
-description: Research a yacht owner, resolve their identity, classify primary industry, wealth origin, and relationship to wealth, verify Forbes and social profiles, draft a short evidence-backed biography, and produce a confidence-scored review dossier. Use for one-owner biography work, CEO calibration rounds, or review-only batch enrichment of owner JSON; do not use to apply live website updates.
+description: Research a yacht owner, resolve their identity, classify primary industry, wealth origin, and relationship to wealth, verify Forbes and social profiles, draft short and longer evidence-backed biographies, and produce a confidence-scored review dossier. Use for one-owner biography work, CEO calibration rounds, or review-only batch enrichment of owner JSON; do not use to apply live website updates.
 ---
 
 # Purpose
@@ -11,7 +11,8 @@ statistics.
 
 # When to use
 
-- Research one owner before editing `details.biography`.
+- Research one owner before editing `details.biography` or
+  `details.long_biography`.
 - Find missing personal details or verified personal social links.
 - Calibrate biography tone with a reviewer.
 - Prepare independent dossiers for a Top-100 or larger owner batch.
@@ -68,8 +69,10 @@ statistics.
 6. Propose only missing or clearly improvable personal fields. Do not infer
    nationality from birthplace, residence from yacht location, or family facts
    from surname.
-7. Draft one short biography using the style reference. Include only claims
-   supported by the dossier source ledger.
+7. Draft both biographies using the style reference: a 50-55 word short
+   identity card and a 90-190 word, two-paragraph concise profile. Include only
+   claims supported by the dossier source ledger. Add character colour or
+   yachting context only when it is meaningful and strongly sourced.
 8. Save a separate dossier with `review.status=pending`. Put uncertain facts or
    links in `candidates_requiring_review`, not proposed changes.
 9. Run:
@@ -78,7 +81,7 @@ statistics.
    .\venv\Scripts\python.exe .agents\skills\research-owner-biography\scripts\validate_dossier.py PATH --owner-input INPUT
    ```
 
-10. Return the dossier path, biography, strongest evidence, confidence
+10. Return the dossier path, both biographies, strongest evidence, confidence
     summary, unresolved questions, and explicit statement that nothing was
     applied.
 
@@ -101,7 +104,11 @@ tracking. Do not let parallel agents edit the shared owner dataset.
   or family disputes unless directly relevant, strongly sourced, and requested.
 - Separate citizenship, nationality, birthplace, and residence.
 - Exclude a proposed field or social link below confidence 85.
-- Keep biography confidence no higher than its weakest material claim.
+- Score each biography independently and keep its confidence no higher than
+  its weakest material claim.
+- Do not pad the longer biography, repeat the short biography verbatim, append
+  a yacht name without a meaningful story, or infer character from yacht
+  ownership alone.
 - Preserve source access dates because Forbes and business roles change.
 - Never infer an industry's sector from inheritance status, current occupation,
   yacht ownership, nationality, or public office.
@@ -111,7 +118,8 @@ tracking. Do not let parallel agents edit the shared owner dataset.
 
 # Validation
 
-- Confirm every material biography claim maps to one or more source IDs.
+- Confirm every material claim in both biographies maps to one or more source
+  IDs.
 - Confirm the dossier inventory matches the exact source owner record.
 - Confirm Forbes was explicitly checked.
 - Confirm all three wealth classifications are populated, use exact
@@ -120,7 +128,11 @@ tracking. Do not let parallel agents edit the shared owner dataset.
 - Confirm inherited wealth follows its underlying industry, and royal or
   dynastic records do not assume `Energy` from an oil-producing state.
 - Confirm proposed facts and socials score at least 85.
-- Confirm biography is one paragraph, 45-110 words, and canonical CKEditor HTML.
+- Confirm the short biography is one paragraph and 50-55 words.
+- Confirm the longer biography is exactly two paragraphs and 90-190 words,
+  preferably 120-170, without padding.
+- Confirm both biographies use canonical CKEditor HTML and have independent
+  confidence and source IDs.
 - Confirm each link matches its type: personal accounts are identity-verified,
   and company websites are official with an ownership or leadership source.
 - Run `scripts/validate_dossier.py` with `--owner-input` and fix all errors.
@@ -137,7 +149,8 @@ separately from owner inputs. It contains:
 - Forbes status;
 - primary-industry, wealth-origin, and wealth-relationship classifications,
   each with an explanation, confidence, and source IDs;
-- short plain-text and CKEditor biography;
+- short and longer plain-text and CKEditor biographies, each with independent
+  confidence and source IDs;
 - proposed personal fields and verified socials;
 - per-item confidence and source IDs;
 - source ledger, uncertainties, and pending review state.

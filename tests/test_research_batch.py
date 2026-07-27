@@ -12,7 +12,14 @@ from src.research_batch import (
 )
 
 
-def _owner(person_id: int, name: str, rank: int, current: bool = True) -> dict:
+def _owner(
+    person_id: int,
+    name: str,
+    rank: int,
+    current: bool = True,
+    *,
+    include_long_biography: bool = False,
+) -> dict:
     owner = new_owner(
         person_id=person_id,
         profile_url=f"https://example.test/person?id={person_id}",
@@ -23,6 +30,12 @@ def _owner(person_id: int, name: str, rank: int, current: bool = True) -> dict:
         "middle_names": {"label": "Middle Names", "kind": "text", "value": ""},
         "biography": {"label": "Biography", "kind": "textarea", "value": "Old"},
     }
+    if include_long_biography:
+        owner["details"]["long_biography"] = {
+            "label": "Long Biography",
+            "kind": "textarea",
+            "value": "",
+        }
     owner["social_media_profiles"] = []
     owner["top_100"] = {
         "current_owner": current,
@@ -41,8 +54,31 @@ def _owner(person_id: int, name: str, rank: int, current: bool = True) -> dict:
 
 
 def _dossier(person_id: int, name: str, review_status: str = "pending") -> dict:
+    short_biography = (
+        f"{name} is an industrial entrepreneur who built a manufacturing "
+        "business from an early technical innovation. After developing the "
+        "product and founding a specialist company, the owner expanded through "
+        "acquisition and international growth. Later investments broadened the "
+        "public profile, while the principal fortune remained rooted in the "
+        "original operating business."
+    )
+    long_biography = (
+        f"{name} entered manufacturing through technical product development "
+        "and used an early innovation as the basis for a specialist operating "
+        "company. The business grew through a combination of engineering, "
+        "customer relationships and acquisition, eventually developing into "
+        "an international supplier. That operating history, rather than later "
+        "investments, remains the principal source of the owner's wealth and "
+        "public standing.\n\n"
+        "A subsequent phase brought investments in sport, property and other "
+        "public-facing interests. Those holdings expanded the owner's profile "
+        "without displacing the original industrial business at the centre of "
+        "the fortune. The resulting career is best understood as a progression "
+        "from technical founder to international operator and, later, a more "
+        "diversified owner and investor."
+    )
     return {
-        "schema_version": 3,
+        "schema_version": 4,
         "owner": {
             "person_id": person_id,
             "display_name": name,
@@ -54,11 +90,24 @@ def _dossier(person_id: int, name: str, review_status: str = "pending") -> dict:
         },
         "research_status": "complete",
         "biography": {
-            "plain_text": f"{name} built an operating company and later expanded it.",
-            "html": f"<p>{name} built an operating company and later expanded it.</p>\r\n",
+            "plain_text": short_biography,
+            "html": f"<p>{short_biography}</p>\r\n",
             "confidence": {
                 "score": 95,
                 "band": "very_high",
+                "reason": "Official sources",
+            },
+            "source_ids": ["S1"],
+        },
+        "long_biography": {
+            "plain_text": long_biography,
+            "html": "".join(
+                f"<p>{paragraph}</p>\r\n"
+                for paragraph in long_biography.split("\n\n")
+            ),
+            "confidence": {
+                "score": 94,
+                "band": "high",
                 "reason": "Official sources",
             },
             "source_ids": ["S1"],
@@ -170,8 +219,38 @@ def test_compiles_pending_preview_without_changing_baseline() -> None:
     assert compiled["ai_research"]["primary_industry"]["label"] == "Manufacturing"
     assert compiled["ai_research"]["wealth_origin"]["label"] == "Self-made"
     assert compiled["ai_research"]["wealth_relationship"]["label"] == "Founder"
+    assert compiled["ai_research"]["long_biography"]["plain_text"]
     assert len(report["owners"][0]["changes"]) == 3
     assert document["owners"][0]["details"]["middle_names"]["value"] == ""
+
+
+def test_compiles_long_biography_when_owner_field_is_available() -> None:
+    document = new_document()
+    owner = _owner(
+        10,
+        "First Owner",
+        1,
+        include_long_biography=True,
+    )
+    document["owners"] = [owner]
+
+    derived, report = compile_research_batch(
+        document,
+        {10: _dossier(10, "First Owner")},
+        {10: Path("output/10.research.json")},
+        source_path="output/source.json",
+        limit=1,
+        mark_ai_enriched=False,
+    )
+
+    compiled = derived["owners"][0]
+    assert compiled["details"]["long_biography"]["value"].startswith("<p>")
+    assert compiled["_baseline"]["details"]["long_biography"]["value"] == ""
+    assert any(
+        change["kind"] == "long_biography"
+        and change["action"] == "fill_missing"
+        for change in report["owners"][0]["changes"]
+    )
 
 
 def test_mark_ai_enriched_requires_approved_dossier() -> None:
@@ -244,5 +323,8 @@ def test_renders_review_report() -> None:
     assert "Self-made" in rendered
     assert "Relationship to wealth" in rendered
     assert "Founder" in rendered
+    assert "Short biography" in rendered
+    assert "Longer biography" in rendered
+    assert "A subsequent phase brought investments" in rendered
     assert "Missing fields added" in rendered
     assert "Official profile" in rendered
