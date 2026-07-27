@@ -172,10 +172,22 @@ def load_dossiers(directory: Path) -> tuple[dict[int, dict[str, Any]], dict[int,
     return dossiers, paths
 
 
-def _confidence_score(item: dict[str, Any], path: str) -> int:
+def _confidence_score(
+    item: dict[str, Any],
+    path: str,
+    *,
+    minimum: int = 85,
+) -> int:
     score = item.get("confidence", {}).get("score")
-    if not isinstance(score, int) or isinstance(score, bool) or score < 85:
-        raise ValueError(f"{path} must have confidence of at least 85")
+    if (
+        not isinstance(score, int)
+        or isinstance(score, bool)
+        or score < minimum
+        or score > 100
+    ):
+        raise ValueError(
+            f"{path} must have confidence between {minimum} and 100"
+        )
     return score
 
 
@@ -281,15 +293,16 @@ def apply_dossier(
     person_id = owner["person_id"]
     if dossier.get("owner", {}).get("person_id") != person_id:
         raise ValueError(f"Dossier owner mismatch for person_id {person_id}")
+    research_status = dossier.get("research_status")
+    unusable_research = research_status in {
+        "identity_conflict",
+        "insufficient_evidence",
+    }
     identity_score = _confidence_score(
         {"confidence": dossier.get("owner", {}).get("identity_confidence", {})},
         f"owner {person_id} identity",
+        minimum=0 if unusable_research else 85,
     )
-    if dossier.get("research_status") in {
-        "identity_conflict",
-        "insufficient_evidence",
-    }:
-        raise ValueError(f"Owner {person_id} has unusable research status")
 
     review_status = dossier.get("review", {}).get("status")
     if review_status not in {"pending", "approved", "rejected"}:
@@ -301,6 +314,11 @@ def apply_dossier(
     ):
         raise ValueError(
             f"Owner {person_id} final review requires reviewed_by and reviewed_at"
+        )
+    if mark_ai_enriched and unusable_research:
+        raise ValueError(
+            f"Owner {person_id} has unusable research status and cannot be "
+            "marked AI enriched"
         )
     if mark_ai_enriched and review_status == "pending":
         raise ValueError(
@@ -322,7 +340,7 @@ def apply_dossier(
         long_biography,
         f"owner {person_id} long biography",
     )
-    if review_status == "rejected":
+    if review_status == "rejected" or unusable_research:
         workflow = ensure_owner_workflow(owner)
         workflow["ai_enriched"] = False
         owner["ai_research"] = {
@@ -784,6 +802,11 @@ def render_research_report(report: dict[str, Any]) -> str:
         }
         candidate_rows = []
         for candidate in owner.get("candidates_requiring_review", []):
+            if not isinstance(candidate, dict):
+                candidate_rows.append(
+                    f'<tr><td colspan="4">{_e(candidate)}</td></tr>'
+                )
+                continue
             source_refs = [
                 owner_source_map[source_id]
                 for source_id in candidate.get("source_ids", [])

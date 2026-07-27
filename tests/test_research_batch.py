@@ -470,12 +470,59 @@ def test_rejected_dossier_keeps_owner_unchanged() -> None:
     assert report["owners"][0]["changes"] == []
 
 
+def test_unresolved_dossier_is_included_unchanged_for_pending_review() -> None:
+    document = new_document()
+    source_owner = _owner(10, "Unknown Owner", 1)
+    document["owners"] = [source_owner]
+    unresolved = _dossier(10, "Unknown Owner")
+    unresolved["owner"]["identity_confidence"] = {
+        "score": 5,
+        "band": "insufficient",
+        "reason": "The source record is an unresolved placeholder.",
+    }
+    unresolved["research_status"] = "insufficient_evidence"
+    unresolved["proposed_details"] = []
+    unresolved["proposed_socials"] = []
+
+    derived, report = compile_research_batch(
+        document,
+        {10: unresolved},
+        {10: Path("output/10.research.json")},
+        source_path="output/source.json",
+        limit=1,
+        mark_ai_enriched=False,
+    )
+
+    compiled = derived["owners"][0]
+    assert compiled["details"] == source_owner["details"]
+    assert compiled["social_media_profiles"] == []
+    assert compiled["workflow"]["ai_enriched"] is False
+    assert compiled["ai_research"]["research_status"] == "insufficient_evidence"
+    assert compiled["ai_research"]["change_count"] == 0
+    assert report["owners"][0]["identity_confidence"] == 5
+    assert report["owners"][0]["changes"] == []
+
+    with pytest.raises(ValueError, match="cannot be marked AI enriched"):
+        compile_research_batch(
+            document,
+            {10: unresolved},
+            {10: Path("output/10.research.json")},
+            source_path="output/source.json",
+            limit=1,
+            mark_ai_enriched=True,
+        )
+
+
 def test_renders_review_report() -> None:
     document = new_document()
     document["owners"] = [_owner(10, "First Owner", 1)]
+    dossier = _dossier(10, "First Owner")
+    dossier["candidates_requiring_review"] = [
+        "Confirm whether this record represents an institution."
+    ]
     derived, report = compile_research_batch(
         document,
-        {10: _dossier(10, "First Owner")},
+        {10: dossier},
         {10: Path("output/10.research.json")},
         source_path="output/source.json",
         limit=1,
@@ -497,3 +544,4 @@ def test_renders_review_report() -> None:
     assert "A subsequent phase brought investments" in rendered
     assert "Missing fields added" in rendered
     assert "Official profile" in rendered
+    assert "Confirm whether this record represents an institution." in rendered
