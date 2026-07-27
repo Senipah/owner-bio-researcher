@@ -299,12 +299,14 @@ and excludes owners whose vessel scan is missing or `incomplete`. Its default
 outputs include `.largest-loa.first-50` in their filenames. Dossiers must
 exist for every selected owner before compilation succeeds.
 
-For a complete Goal Mode research run over that sample, paste the prompt in
-[`docs/goal-mode-largest-loa-first-50-research-prompt.md`](docs/goal-mode-largest-loa-first-50-research-prompt.md).
-The prompt freezes the exact LOA-selected person IDs in a cohort manifest,
-revalidates existing dossiers, researches only the next configurable tranche,
-and writes a cumulative review report after each run. Its default tranche size
-is ten. Reuse the same prompt until all 50 dossiers pass validation.
+For a resumable Goal Mode research run over the complete owner file, paste the
+prompt in
+[`docs/goal-mode-all-owners-by-loa-research-prompt.md`](docs/goal-mode-all-owners-by-loa-research-prompt.md).
+The prompt freezes every owner in a single LOA-prioritised cohort, revalidates
+existing dossiers, researches only the next configurable tranche, and writes a
+cumulative review report after each run. Its default tranche size is 50, so the
+first run produces owners 1-50 for review and the next approved run continues
+with owners 51-100.
 
 The JSON retains each owner's immutable `_baseline`, contains only the selected
 owners, and applies only dossier proposals with confidence 85 or higher.

@@ -26,7 +26,7 @@ The human-facing commands and file lineage are maintained in `README.md`.
 | Top-100 report | `mark_top_100_owners.py`, `src/top_100.py` | Requests exports the report; Selenium clicks the specification edit link and reads the UBO fieldset. |
 | Owner vessel ranking | `enrich_owner_vessels.py`, `src/owner_vessels.py`, `src/parsers.py` | Requests reads owner UBO relationships, caches distinct vessel specifications, normalizes LOA to metres, and ranks a derived owner document. |
 | Owner enrichment | `enrich_owners.py`, `src/enrichment.py`, `src/parsers.py` | Authenticated HTTP reads dynamically discover details controls and social profiles. |
-| AI research compilation | `compile_owner_research.py`, `src/research_batch.py` | Selects owners explicitly by current Top-100 rank or fully ranked largest current-vessel LOA, validates independent dossiers, compiles high-confidence proposals into a separate JSON, and renders an HTML review report. |
+| AI research compilation | `compile_owner_research.py`, `src/research_batch.py` | Selects owners explicitly by current Top-100 rank, fully ranked largest current-vessel LOA, or the complete owner file prioritised by LOA, validates independent dossiers, compiles high-confidence proposals into a separate JSON, and renders an HTML review report. |
 | Change planning | `src/diffing.py` | Compares baseline, desired JSON, and current live state. |
 | Live writes | `update_owners.py`, `src/browser_update.py` | Selenium opens edit overlays, waits for the iframe/form, writes selected fields, saves, and verifies by re-export. |
 | Persistence | `src/io_utils.py` | Versioned JSON and atomic replacement checkpoints. |
@@ -80,7 +80,10 @@ The research compiler defaults to `--selection top-100`. Its explicit
 `--selection largest-loa` mode accepts only owners whose
 `vessel_ownership.ranking_status` is `ranked`, orders them by `loa_rank`, and
 then applies `--limit` as an exact owner count. Incomplete vessel scans are
-excluded rather than placed below fully ranked owners.
+excluded rather than placed below fully ranked owners. The
+`--selection all-by-loa` mode supports cumulative whole-file research: it
+places those fully ranked owners first, then retains every remaining owner
+after them, and applies `--limit` to that complete ordering.
 
 Existing schema-v1 exports are accepted. `src/workflow.py` backfills missing
 additive workflow fields in memory.

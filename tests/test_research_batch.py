@@ -9,6 +9,7 @@ from src.io_utils import new_document, new_owner, set_baseline
 from src.research_batch import (
     compile_research_batch,
     render_research_report,
+    select_all_owners_by_loa,
     select_current_top_100_owners,
     select_largest_loa_owners,
 )
@@ -248,6 +249,26 @@ def test_selects_fully_ranked_owners_by_largest_current_loa() -> None:
     assert [owner["person_id"] for owner in selected] == [10, 20]
 
 
+def test_selects_all_owners_with_ranked_loa_owners_first() -> None:
+    small = _owner(30, "Small", 3)
+    large = _owner(20, "Large", 2)
+    no_current = _owner(10, "No Current Vessel", 1)
+    _set_loa(small, rank=2, loa_m=90.0, vessel_name="Small Yacht")
+    _set_loa(large, rank=1, loa_m=120.0, vessel_name="Large Yacht")
+    no_current["vessel_ownership"] = {
+        "ranking_status": "no_current_vessels",
+        "loa_rank": None,
+        "largest_current_loa_m": None,
+        "largest_known_current_vessel": None,
+    }
+    document = new_document()
+    document["owners"] = [no_current, small, large]
+
+    selected = select_all_owners_by_loa(document, None)
+
+    assert [owner["person_id"] for owner in selected] == [20, 30, 10]
+
+
 def test_compiler_parser_accepts_largest_loa_selection() -> None:
     args = build_parser().parse_args(
         [
@@ -264,6 +285,23 @@ def test_compiler_parser_accepts_largest_loa_selection() -> None:
 
     assert args.selection == "largest-loa"
     assert args.limit == 50
+
+
+def test_compiler_parser_accepts_all_by_loa_selection() -> None:
+    args = build_parser().parse_args(
+        [
+            "--input",
+            "owners.json",
+            "--dossier-dir",
+            "dossiers",
+            "--selection",
+            "all-by-loa",
+            "--limit",
+            "50",
+        ]
+    )
+
+    assert args.selection == "all-by-loa"
 
 
 def test_compiles_pending_preview_without_changing_baseline() -> None:
@@ -354,6 +392,34 @@ def test_compiles_and_renders_largest_loa_selection() -> None:
     assert report["owners"][0]["loa_rank"] == 1
     assert "Largest-yacht owner enrichment review" in rendered
     assert "Largest current vessel: Largest Yacht (120.5m)" in rendered
+
+
+def test_compiles_and_renders_all_by_loa_unranked_owner() -> None:
+    document = new_document()
+    owner = _owner(10, "No Current Vessel", 1, current=False)
+    owner["vessel_ownership"] = {
+        "ranking_status": "no_current_vessels",
+        "loa_rank": None,
+        "largest_current_loa_m": None,
+        "largest_known_current_vessel": None,
+    }
+    document["owners"] = [owner]
+
+    derived, report = compile_research_batch(
+        document,
+        {10: _dossier(10, "No Current Vessel")},
+        {10: Path("output/10.research.json")},
+        source_path="output/source.json",
+        limit=1,
+        mark_ai_enriched=False,
+        selection="all-by-loa",
+    )
+    rendered = render_research_report(report)
+
+    assert derived["research_batch"]["selection"] == "all-by-loa"
+    assert "LOA-prioritised owner enrichment review" in rendered
+    assert "Unranked" in rendered
+    assert "No ranked current vessel" in rendered
 
 
 def test_mark_ai_enriched_requires_approved_dossier() -> None:

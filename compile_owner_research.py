@@ -42,8 +42,8 @@ def build_parser() -> argparse.ArgumentParser:
         choices=sorted(RESEARCH_SELECTIONS),
         default="top-100",
         help=(
-            "Owner ordering: current YB Top-100 rank (default) or largest "
-            "current-vessel LOA."
+            "Owner ordering: current YB Top-100 rank (default), fully ranked "
+            "largest current-vessel LOA, or all owners prioritised by LOA."
         ),
     )
     parser.add_argument(
@@ -64,7 +64,9 @@ def _default_output(
     limit: int | None,
     selection: str,
 ) -> Path:
-    selection_marker = ".largest-loa" if selection == "largest-loa" else ""
+    selection_marker = (
+        "" if selection == "top-100" else f".{selection}"
+    )
     marker = f".first-{limit}" if limit is not None else ""
     source_stem = input_path.stem.removesuffix(".enriched")
     return input_path.with_name(

@@ -63,7 +63,10 @@ separate derived file; it never changes `_baseline`. Pending dossiers keep
 For an LOA-prioritised research batch, use a vessel-enriched input with
 `--selection largest-loa`. This selector must include only fully ranked owners,
 order them by metric largest-current-vessel LOA, and apply `--limit` as an
-exact count. It must not silently include incomplete vessel scans.
+exact count. It must not silently include incomplete vessel scans. Use
+`--selection all-by-loa` for resumable cumulative research over the complete
+owner file; ranked owners remain first by LOA and owners without a ranked
+current vessel follow rather than being discarded.
 
 Resume checkpointed read stages with their explicit flag:
 

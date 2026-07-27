@@ -1,54 +1,57 @@
-# Goal Mode prompt: first 50 owners by largest-yacht LOA
+# Goal Mode prompt: all owners in LOA-prioritised tranches
 
 Use this prompt after the full details-and-socials enrichment has completed.
-It researches the fixed first-50 LOA cohort in resumable tranches and produces
-review artifacts only. It does not approve research or update the live system.
+It researches the complete owner file in resumable, LOA-prioritised tranches
+and produces review artifacts only. It does not approve research or update the
+live system.
 
-The prompt below processes the next 10 owners whose dossiers are absent,
-invalid, or stale. Change `TRANCHE_SIZE = 10` to another positive number when
+The prompt below processes the next 50 owners whose dossiers are absent,
+invalid, or stale. Change `TRANCHE_SIZE = 50` to another positive number when
 you want a different tranche size. Reuse the same prompt for every tranche.
 
 ## Prompt
 
 Use `$research-owner-biography`.
 
-Set `TRANCHE_SIZE = 10`.
+Set `TRANCHE_SIZE = 50`.
 
-The overall cohort is exactly the first 50 fully ranked owners by largest
-current-vessel LOA from
-`output/owners-list.vessel-enriched.enriched.json`. This run must research only
-the next `TRANCHE_SIZE` owners in that cohort who do not already have a valid,
-current dossier.
+The overall cohort is every owner in
+`output/owners-list.vessel-enriched.enriched.json`, prioritised by largest
+current-vessel LOA. Fully ranked owners come first from largest to smallest;
+owners without a ranked current vessel remain in the cohort after them. This
+run must research only the next `TRANCHE_SIZE` owners in that complete cohort
+who do not already have a valid, current dossier.
 
-Use `output/owner-research/largest-loa-first-50/cohort.json` as the immutable
+Use `output/owner-research/all-by-loa/cohort.json` as the immutable
 cohort manifest.
 
 At the start:
 
 1. Load `output/owners-list.vessel-enriched.enriched.json`.
 2. If the cohort manifest does not exist, call
-   `src.research_batch.select_research_owners(document, "largest-loa", 50)` and
-   save a manifest containing:
+   `src.research_batch.select_research_owners(document, "all-by-loa", None)`
+   and save a manifest containing:
    - the normalized source path;
    - the source file's SHA-256 hash;
-   - selection `largest-loa` and limit `50`;
+   - selection `all-by-loa`, no limit, and the total cohort size;
    - creation timestamp; and
-   - the 50 owners in order, each with cohort position, `person_id`,
-     display name, `loa_rank`, `largest_current_loa_m`, and largest-current
-     vessel name.
+   - every owner in order, each with cohort position, `person_id`, display
+     name, ranking status, `loa_rank`, `largest_current_loa_m`, and
+     largest-current vessel name.
 3. If the manifest exists, reuse its ordered person IDs. Do not regenerate or
    reorder it. Verify that the current input contains the same owners and LOA
    values. If the source hash changed, revalidate every existing dossier
    against the current input and report the change. Stop for user direction
    if cohort membership or LOA ordering changed.
 4. Confirm every cohort owner has:
-   - `vessel_ownership.ranking_status=ranked`;
-   - `vessel_ownership.loa_rank` and `largest_current_loa_m`;
    - `enrichment.status=ok`;
    - `workflow.owner_details_enriched=true`;
    - a populated `details` object; and
    - `person_id` and `profile_url`.
-5. Do not substitute Top-100 rank, array position, gross tonnage, fame, net
+5. Confirm owners marked `vessel_ownership.ranking_status=ranked` have both
+   `loa_rank` and `largest_current_loa_m`. Preserve owners without a ranked
+   current vessel after the fully ranked group; do not drop or replace them.
+6. Do not substitute Top-100 rank, array position, gross tonnage, fame, net
    worth, or editorial judgment for the frozen cohort.
 
 Inventory the dossier directory before assigning research. Treat an existing
@@ -71,10 +74,10 @@ the first `TRANCHE_SIZE`, print that tranche's positions, person IDs, names,
 vessels, and LOAs, and research exactly that selection in this run. Do not
 skip a difficult owner in favour of a later one. If fewer than
 `TRANCHE_SIZE` remain, process all remaining owners. If none remain, skip
-research and compile the final 50-owner review artifacts.
+research and compile the final complete-cohort review artifacts.
 
 For the selected tranche, produce one schema-v4 dossier per owner beneath
-`output/owner-research/largest-loa-first-50/`. Every dossier must contain:
+`output/owner-research/all-by-loa/`. Every dossier must contain:
 
 1. validated, evidence-backed short and longer biographies;
 2. `primary_industry`, `wealth_origin`, and `wealth_relationship`
@@ -151,18 +154,20 @@ compile a cumulative checkpoint review:
 ```powershell
 .\venv\Scripts\python.exe .\compile_owner_research.py `
   --input output\owners-list.vessel-enriched.enriched.json `
-  --dossier-dir output\owner-research\largest-loa-first-50 `
-  --selection largest-loa `
+  --dossier-dir output\owner-research\all-by-loa `
+  --selection all-by-loa `
   --limit COMPLETED_PREFIX `
-  --output output\research-enriched-owners-list.largest-loa.first-COMPLETED_PREFIX.json `
-  --report output\research-enriched-owners-list.largest-loa.first-COMPLETED_PREFIX.html
+  --output output\research-enriched-owners-list.all-by-loa.first-COMPLETED_PREFIX.json `
+  --report output\research-enriched-owners-list.all-by-loa.first-COMPLETED_PREFIX.html
 ```
 
-When all 50 dossiers validate, `COMPLETED_PREFIX` is 50 and the final artifacts
-must be:
+On the first run, `COMPLETED_PREFIX` should normally be 50, producing the
+initial CEO review sample. If that sample is approved, rerun this same prompt;
+the next tranche will normally be cohort positions 51-100 and the cumulative
+checkpoint will contain the first 100 owners.
 
-- `output/research-enriched-owners-list.largest-loa.first-50.json`
-- `output/research-enriched-owners-list.largest-loa.first-50.html`
+When every cohort dossier validates, use the full cohort size in the final
+artifact filenames.
 
 Acceptance criteria for this run:
 

@@ -15,11 +15,14 @@ RESEARCH_CLASSIFICATION_FIELDS = (
     "wealth_relationship",
 )
 BIOGRAPHY_DETAIL_FIELDS = {"biography", "long_biography"}
-RESEARCH_SELECTIONS = {"top-100", "largest-loa"}
+RESEARCH_SELECTIONS = {"top-100", "largest-loa", "all-by-loa"}
 RESEARCH_SELECTION_DESCRIPTIONS = {
     "top-100": "current owners ordered by minimum YB Top-100 vessel rank",
     "largest-loa": (
         "fully ranked owners ordered by largest current-vessel LOA"
+    ),
+    "all-by-loa": (
+        "all owners, with fully ranked current-vessel LOA owners first"
     ),
 }
 
@@ -114,6 +117,27 @@ def select_largest_loa_owners(
     return selected if limit is None else selected[:limit]
 
 
+def select_all_owners_by_loa(
+    document: dict[str, Any],
+    limit: int | None,
+) -> list[dict[str, Any]]:
+    selected = list(document.get("owners", []))
+
+    def sort_key(owner: dict[str, Any]) -> tuple[Any, ...]:
+        rank = current_loa_rank(owner)
+        loa = largest_current_loa(owner)
+        if rank is not None:
+            return (0, rank, -(loa or 0.0), owner["person_id"])
+        return (
+            1 if loa is not None else 2,
+            -(loa or 0.0),
+            owner["person_id"],
+        )
+
+    selected.sort(key=sort_key)
+    return selected if limit is None else selected[:limit]
+
+
 def select_research_owners(
     document: dict[str, Any],
     selection: str,
@@ -123,6 +147,8 @@ def select_research_owners(
         return select_current_top_100_owners(document, limit)
     if selection == "largest-loa":
         return select_largest_loa_owners(document, limit)
+    if selection == "all-by-loa":
+        return select_all_owners_by_loa(document, limit)
     raise ValueError(
         f"Unsupported research selection {selection!r}; "
         f"expected one of {sorted(RESEARCH_SELECTIONS)}"
@@ -627,11 +653,12 @@ def render_research_report(report: dict[str, Any]) -> str:
         "selection_description",
         RESEARCH_SELECTION_DESCRIPTIONS["top-100"],
     )
-    report_title = (
-        "Largest-yacht owner enrichment review"
-        if selection == "largest-loa"
-        else "Top-100 owner enrichment review"
-    )
+    if selection == "largest-loa":
+        report_title = "Largest-yacht owner enrichment review"
+    elif selection == "all-by-loa":
+        report_title = "LOA-prioritised owner enrichment review"
+    else:
+        report_title = "Top-100 owner enrichment review"
     field_additions = sum(
         1
         for owner in owners
@@ -648,8 +675,14 @@ def render_research_report(report: dict[str, Any]) -> str:
     cards: list[str] = []
     for owner in owners:
         display_rank = owner.get("rank")
-        if selection == "largest-loa":
+        rank_label = f"#{display_rank}"
+        if selection in {"largest-loa", "all-by-loa"}:
             display_rank = owner.get("loa_rank")
+            rank_label = (
+                f"#{display_rank}"
+                if isinstance(display_rank, int)
+                else "Unranked"
+            )
             largest = owner.get("largest_current_vessel") or {}
             loa = largest.get("loa_m")
             loa_text = (
@@ -658,8 +691,12 @@ def render_research_report(report: dict[str, Any]) -> str:
                 else "LOA unavailable"
             )
             vessels = (
-                f"Largest current vessel: {_e(largest.get('name'))} "
-                f"({_e(loa_text)})"
+                (
+                    f"Largest current vessel: {_e(largest.get('name'))} "
+                    f"({_e(loa_text)})"
+                )
+                if largest
+                else "No ranked current vessel"
             )
         else:
             vessels = ", ".join(
@@ -776,7 +813,7 @@ def render_research_report(report: dict[str, Any]) -> str:
             f"""
             <details class="owner-card" open>
               <summary>
-                <span><span class="rank">#{_e(display_rank)}</span>
+                <span><span class="rank">{_e(rank_label)}</span>
                 {_e(owner.get("display_name"))}</span>
                 <span class="summary-badges">
                   {_confidence_badge(owner.get("biography_confidence"))}
