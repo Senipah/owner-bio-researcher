@@ -256,6 +256,13 @@ Owner research is stored as one pending-review dossier per person under
 `output\owner-research`. Compile those dossiers into a new owner document and
 a standalone HTML report without changing the enriched input:
 
+Each schema-v3 dossier independently classifies `primary_industry`,
+`wealth_origin`, and `wealth_relationship`. The compiler retains all three
+under each compiled owner's `ai_research` metadata and shows them in the review
+report. If equivalent editable details fields are present in the source owner
+record, reviewed dossier proposals can also populate those fields using their
+exact display labels.
+
 ```powershell
 .\venv\Scripts\python.exe .\compile_owner_research.py `
   --input output\owners-list.top-100.enriched.json `

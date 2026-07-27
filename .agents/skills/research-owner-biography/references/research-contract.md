@@ -42,29 +42,26 @@ Record:
 - `ambiguous`: a profile exists but identity is not secure;
 - `unavailable`: access or search failure prevented a reliable check.
 
-Forbes is a priority source for `source of wealth` and self-made/inherited
-classification, but corroborate the underlying history where possible.
+Forbes is a priority source for industry, `source of wealth`, and
+self-made/inherited classification, but corroborate the underlying history
+where possible.
 
-## Wealth-origin classification
+## Wealth classification
 
-Choose the closest evidence-backed classification:
+Read [wealth-classification.md](wealth-classification.md) and always populate
+its three independent objects:
 
-- `self_made_operating_business`
-- `self_made_finance_investment`
-- `inherited`
-- `inherited_and_expanded`
-- `family_business`
-- `privatization_or_state_assets`
-- `natural_resources`
-- `real_estate`
-- `entertainment_or_sport`
-- `mixed`
-- `unclear`
+- `primary_industry`: the sector principally underpinning current identifiable
+  private wealth;
+- `wealth_origin`: how the person acquired or gained access to it;
+- `wealth_relationship`: the person's principal relationship to the
+  wealth-producing assets.
 
-The summary must explain the mechanism: inherited stake, founded company,
-industrial invention, acquisition, resource concession, property development,
-investment career, or another specific route. Do not substitute a net-worth
-number for this explanation.
+Each object must contain a valid `classification`, its exact mapped `label`, a
+concrete `summary`, `confidence`, and `source_ids`. Non-`unknown`
+classifications require confidence 85 or higher. Inherited and royal status
+describe origin, not industry. Do not treat state, crown, sovereign, or
+office-held assets as personal property without strong evidence.
 
 ## Confidence
 
@@ -122,6 +119,9 @@ Tier 2 source establishes the relationship.
 
 Common proposal fields include:
 
+- `primary_industry`
+- `wealth_origin`
+- `wealth_relationship`
 - `known_for_title`
 - `nationality` and `secondary_nationality`
 - `main_residence_country` and `secondary_residence_country`
@@ -164,7 +164,7 @@ Use this top-level structure:
 
 ```json
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "owner": {
     "person_id": null,
     "display_name": "Example Owner",
@@ -199,8 +199,31 @@ Use this top-level structure:
       "reason": "..."
     }
   },
+  "primary_industry": {
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "...",
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "..."
+    },
+    "source_ids": ["S1", "S2"]
+  },
   "wealth_origin": {
-    "classification": "self_made_operating_business",
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "...",
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "..."
+    },
+    "source_ids": ["S1", "S2"]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
     "summary": "...",
     "confidence": {
       "score": 92,

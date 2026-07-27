@@ -42,6 +42,7 @@ def _owner(person_id: int, name: str, rank: int, current: bool = True) -> dict:
 
 def _dossier(person_id: int, name: str, review_status: str = "pending") -> dict:
     return {
+        "schema_version": 3,
         "owner": {
             "person_id": person_id,
             "display_name": name,
@@ -62,9 +63,26 @@ def _dossier(person_id: int, name: str, review_status: str = "pending") -> dict:
             },
             "source_ids": ["S1"],
         },
+        "primary_industry": {
+            "classification": "manufacturing",
+            "label": "Manufacturing",
+            "summary": "The principal business manufactures products.",
+            "confidence": {"score": 95},
+            "source_ids": ["S1"],
+        },
         "wealth_origin": {
+            "classification": "self_made",
+            "label": "Self-made",
             "summary": "Built an operating company.",
             "confidence": {"score": 95},
+            "source_ids": ["S1"],
+        },
+        "wealth_relationship": {
+            "classification": "founder",
+            "label": "Founder",
+            "summary": "Founded the principal wealth-producing company.",
+            "confidence": {"score": 95},
+            "source_ids": ["S1"],
         },
         "forbes_profile": {"status": "verified"},
         "proposed_details": [
@@ -149,6 +167,9 @@ def test_compiles_pending_preview_without_changing_baseline() -> None:
     assert compiled["_baseline"] == baseline_before
     assert compiled["workflow"]["ai_enriched"] is False
     assert compiled["workflow"]["updated_in_system"] is False
+    assert compiled["ai_research"]["primary_industry"]["label"] == "Manufacturing"
+    assert compiled["ai_research"]["wealth_origin"]["label"] == "Self-made"
+    assert compiled["ai_research"]["wealth_relationship"]["label"] == "Founder"
     assert len(report["owners"][0]["changes"]) == 3
     assert document["owners"][0]["details"]["middle_names"]["value"] == ""
 
@@ -217,5 +238,11 @@ def test_renders_review_report() -> None:
 
     assert derived["owners"]
     assert "First Owner" in rendered
+    assert "Primary industry" in rendered
+    assert "Manufacturing" in rendered
+    assert "Wealth origin" in rendered
+    assert "Self-made" in rendered
+    assert "Relationship to wealth" in rendered
+    assert "Founder" in rendered
     assert "Missing fields added" in rendered
     assert "Official profile" in rendered

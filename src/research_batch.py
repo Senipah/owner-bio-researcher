@@ -9,6 +9,13 @@ from typing import Any
 from .workflow import ensure_owner_workflow
 
 
+RESEARCH_CLASSIFICATION_FIELDS = (
+    "primary_industry",
+    "wealth_origin",
+    "wealth_relationship",
+)
+
+
 def owner_display_name(owner: dict[str, Any]) -> str:
     display = owner.get("details", {}).get("display_name", {})
     if isinstance(display, dict) and str(display.get("value", "")).strip():
@@ -130,7 +137,10 @@ def _build_owner_summary(
         "research_status": dossier.get("research_status"),
         "review_status": dossier.get("review", {}).get("status"),
         "forbes_profile": dossier.get("forbes_profile"),
-        "wealth_origin": dossier.get("wealth_origin"),
+        **{
+            field: dossier.get(field)
+            for field in RESEARCH_CLASSIFICATION_FIELDS
+        },
         "changes": changes,
         "unresolved_fields": unresolved_fields,
         "candidates_requiring_review": dossier.get(
@@ -195,6 +205,10 @@ def apply_dossier(
             "review_status": review_status,
             "compiled_at": generated_at,
             "change_count": 0,
+            **{
+                field: deepcopy(dossier.get(field))
+                for field in RESEARCH_CLASSIFICATION_FIELDS
+            },
         }
         return _build_owner_summary(
             owner,
@@ -344,6 +358,10 @@ def apply_dossier(
         "review_status": review_status,
         "compiled_at": generated_at,
         "change_count": len(changes),
+        **{
+            field: deepcopy(dossier.get(field))
+            for field in RESEARCH_CLASSIFICATION_FIELDS
+        },
     }
     for change in changes:
         change["sources"] = _source_refs(dossier, change["source_ids"])
@@ -582,11 +600,30 @@ def render_research_report(report: dict[str, Any]) -> str:
                 <h3>Proposed biography</h3>
                 <blockquote>{_e(owner.get("biography"))}</blockquote>
                 <div class="origin">
-                  <strong>Origin:</strong>
-                  {_e(owner.get("wealth_origin", {}).get("summary"))}
+                  <p><strong>Primary industry:</strong>
+                  {_e(owner.get("primary_industry", {}).get("label"))}
+                  {_confidence_badge(owner.get("primary_industry", {}).get(
+                      "confidence", {}
+                  ).get("score"))}<br>
+                  <span class="muted">{_e(owner.get("primary_industry", {}).get(
+                      "summary"
+                  ))}</span></p>
+                  <p><strong>Wealth origin:</strong>
+                  {_e(owner.get("wealth_origin", {}).get("label"))}
                   {_confidence_badge(owner.get("wealth_origin", {}).get(
                       "confidence", {}
-                  ).get("score"))}
+                  ).get("score"))}<br>
+                  <span class="muted">{_e(owner.get("wealth_origin", {}).get(
+                      "summary"
+                  ))}</span></p>
+                  <p><strong>Relationship to wealth:</strong>
+                  {_e(owner.get("wealth_relationship", {}).get("label"))}
+                  {_confidence_badge(owner.get("wealth_relationship", {}).get(
+                      "confidence", {}
+                  ).get("score"))}<br>
+                  <span class="muted">{_e(owner.get("wealth_relationship", {}).get(
+                      "summary"
+                  ))}</span></p>
                 </div>
                 <p><strong>Forbes profile:</strong> {forbes_value}
                   {_confidence_badge(forbes.get("confidence", {}).get("score"))}</p>

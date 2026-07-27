@@ -27,18 +27,55 @@ RESEARCH_STATUSES = {
 }
 FORBES_STATUSES = {"verified", "not_found", "ambiguous", "unavailable"}
 REVIEW_STATUSES = {"pending", "approved", "rejected"}
-WEALTH_CLASSES = {
-    "self_made_operating_business",
-    "self_made_finance_investment",
-    "inherited",
-    "inherited_and_expanded",
-    "family_business",
-    "privatization_or_state_assets",
-    "natural_resources",
-    "real_estate",
-    "entertainment_or_sport",
-    "mixed",
-    "unclear",
+PRIMARY_INDUSTRIES = {
+    "automotive": "Automotive",
+    "construction_engineering": "Construction & Engineering",
+    "diversified": "Diversified",
+    "energy": "Energy",
+    "fashion_retail": "Fashion & Retail",
+    "finance_investments": "Finance & Investments",
+    "food_beverage": "Food & Beverage",
+    "gambling_casinos": "Gambling & Casinos",
+    "healthcare": "Healthcare",
+    "logistics": "Logistics",
+    "manufacturing": "Manufacturing",
+    "media_entertainment": "Media & Entertainment",
+    "metals_mining": "Metals & Mining",
+    "real_estate": "Real Estate",
+    "service": "Service",
+    "sports": "Sports",
+    "technology": "Technology",
+    "telecom": "Telecom",
+    "shipping_maritime": "Shipping & Maritime",
+    "aviation_aerospace": "Aviation & Aerospace",
+    "hospitality": "Hospitality",
+    "agriculture": "Agriculture",
+    "unknown": "Unknown",
+}
+WEALTH_ORIGINS = {
+    "self_made": "Self-made",
+    "inherited": "Inherited",
+    "inherited_and_expanded": "Inherited and expanded",
+    "dynastic_royal": "Dynastic / royal",
+    "marriage_family_transfer": "Marriage / family transfer",
+    "mixed": "Mixed",
+    "unknown": "Unknown",
+}
+WEALTH_RELATIONSHIPS = {
+    "founder": "Founder",
+    "operator": "Operator",
+    "investor": "Investor",
+    "heir_family_shareholder": "Heir / family shareholder",
+    "family_office_principal": "Family office principal",
+    "royal_beneficiary": "Royal beneficiary",
+    "trustee_custodian": "Trustee or custodian",
+    "passive_asset_owner": "Passive asset owner",
+    "unknown": "Unknown",
+}
+CLASSIFICATION_FIELDS = {
+    "primary_industry": PRIMARY_INDUSTRIES,
+    "wealth_origin": WEALTH_ORIGINS,
+    "wealth_relationship": WEALTH_RELATIONSHIPS,
 }
 
 
@@ -90,6 +127,44 @@ def _source_ids(
         errors.append(f"{path} contains unknown source IDs: {unknown}")
 
 
+def _classification(
+    value: Any,
+    path: str,
+    choices: dict[str, str],
+    known_sources: set[str],
+    errors: list[str],
+) -> None:
+    if not isinstance(value, dict):
+        errors.append(f"{path} must be an object")
+        return
+    classification = value.get("classification")
+    if classification not in choices:
+        errors.append(f"{path}.classification is invalid")
+    elif value.get("label") != choices[classification]:
+        errors.append(
+            f"{path}.label must be {choices[classification]!r} for "
+            f"classification {classification!r}"
+        )
+    if not isinstance(value.get("summary"), str) or not value["summary"].strip():
+        errors.append(f"{path}.summary must be non-empty")
+    score = _confidence(value.get("confidence"), f"{path}.confidence", errors)
+    if (
+        score is not None
+        and classification in choices
+        and classification != "unknown"
+        and score < 85
+    ):
+        errors.append(
+            f"{path} must use classification 'unknown' below confidence 85"
+        )
+    _source_ids(
+        value.get("source_ids"),
+        f"{path}.source_ids",
+        known_sources,
+        errors,
+    )
+
+
 def validate(document: Any) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warnings: list[str] = []
@@ -102,7 +177,9 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
         "input_snapshot",
         "research_status",
         "forbes_profile",
+        "primary_industry",
         "wealth_origin",
+        "wealth_relationship",
         "biography",
         "proposed_details",
         "proposed_socials",
@@ -115,8 +192,8 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
     if missing:
         errors.append(f"missing top-level keys: {missing}")
 
-    if document.get("schema_version") != 2:
-        errors.append("schema_version must be 2")
+    if document.get("schema_version") != 3:
+        errors.append("schema_version must be 3")
     if document.get("research_status") not in RESEARCH_STATUSES:
         errors.append("research_status is invalid")
 
@@ -219,18 +296,11 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
             warnings.append("non-verified Forbes status normally has a null URL")
         _confidence(forbes.get("confidence"), "forbes_profile.confidence", errors)
 
-    wealth = document.get("wealth_origin")
-    if not isinstance(wealth, dict):
-        errors.append("wealth_origin must be an object")
-    else:
-        if wealth.get("classification") not in WEALTH_CLASSES:
-            errors.append("wealth_origin.classification is invalid")
-        if not isinstance(wealth.get("summary"), str) or not wealth["summary"].strip():
-            errors.append("wealth_origin.summary must be non-empty")
-        _confidence(wealth.get("confidence"), "wealth_origin.confidence", errors)
-        _source_ids(
-            wealth.get("source_ids"),
-            "wealth_origin.source_ids",
+    for field, choices in CLASSIFICATION_FIELDS.items():
+        _classification(
+            document.get(field),
+            field,
+            choices,
             known_sources,
             errors,
         )
@@ -308,6 +378,28 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
                     if item.get("field") in raw_blank:
                         errors.append(
                             f"{path}.field is blank; use action 'fill_missing'"
+                        )
+                classification_field = item.get("field")
+                if classification_field in CLASSIFICATION_FIELDS:
+                    classification_value = document.get(classification_field, {})
+                    if item.get("value") != classification_value.get("label"):
+                        errors.append(
+                            f"{path}.value must match "
+                            f"{classification_field}.label"
+                        )
+                    if classification_value.get("classification") == "unknown":
+                        errors.append(
+                            f"{path} must not propose an Unknown classification"
+                        )
+                    if item.get("confidence") != classification_value.get("confidence"):
+                        errors.append(
+                            f"{path}.confidence must match "
+                            f"{classification_field}.confidence"
+                        )
+                    if item.get("source_ids") != classification_value.get("source_ids"):
+                        errors.append(
+                            f"{path}.source_ids must match "
+                            f"{classification_field}.source_ids"
                         )
             else:
                 if not isinstance(item.get("type"), str) or not item["type"].strip():

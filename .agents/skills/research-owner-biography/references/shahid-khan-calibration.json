@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "owner": {
     "person_id": 1164,
     "display_name": "Shahid Khan",
@@ -81,13 +81,46 @@
       "reason": "The current Forbes profile matches Flex-N-Gate, the Jacksonville Jaguars, Fulham F.C., and Khan's engineering background."
     }
   },
+  "primary_industry": {
+    "classification": "automotive",
+    "label": "Automotive",
+    "summary": "Khan's principal wealth-producing business is Flex-N-Gate, a global automotive-parts manufacturer; his sports and hospitality holdings are a later chapter.",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Forbes, Flex-N-Gate, and the Jaguars consistently identify automotive manufacturing as the foundation of Khan's fortune."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S6"
+    ]
+  },
   "wealth_origin": {
-    "classification": "self_made_operating_business",
-    "summary": "Khan's fortune is self-made and rooted in auto-parts manufacturing: his one-piece truck bumper led to Bumper Works, and he bought and expanded Flex-N-Gate before acquiring sports and hospitality assets.",
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Khan built the fortune through a one-piece truck bumper, founding Bumper Works, and buying and expanding his former employer Flex-N-Gate.",
     "confidence": {
       "score": 98,
       "band": "very_high",
       "reason": "Forbes documents the invention, Bumper Works, and purchase of Flex-N-Gate, corroborated by the company and Jaguars."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S6"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Khan founded Bumper Works and used it as the platform for acquiring and expanding Flex-N-Gate, making founder the best description of his relationship to the core fortune.",
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Forbes and official company and team sources document his founding and ownership history."
     },
     "source_ids": [
       "S1",

@@ -1,6 +1,6 @@
 ---
 name: research-owner-biography
-description: Research a yacht owner, resolve their identity, find reliable personal and wealth-origin facts, verify Forbes and social profiles, draft a short evidence-backed biography, and produce a confidence-scored review dossier. Use for one-owner biography work, CEO calibration rounds, or review-only batch enrichment of owner JSON; do not use to apply live website updates.
+description: Research a yacht owner, resolve their identity, classify primary industry, wealth origin, and relationship to wealth, verify Forbes and social profiles, draft a short evidence-backed biography, and produce a confidence-scored review dossier. Use for one-owner biography work, CEO calibration rounds, or review-only batch enrichment of owner JSON; do not use to apply live website updates.
 ---
 
 # Purpose
@@ -31,6 +31,9 @@ statistics.
 - Write dossiers beneath `output/owner-research/`; never overwrite owner input.
 - Read [references/research-contract.md](references/research-contract.md) for
   evidence, confidence, social-link, and dossier rules.
+- Read
+  [references/wealth-classification.md](references/wealth-classification.md)
+  before classifying industry, wealth origin, or relationship to wealth.
 - Read [references/biography-style.md](references/biography-style.md) before
   drafting or revising biography text.
 
@@ -51,9 +54,12 @@ statistics.
    `identity_conflict` when materially ambiguous.
 3. Search for an exact Forbes profile first. Record `verified`, `not_found`,
    `ambiguous`, or `unavailable`; never silently omit the check.
-4. Research the origin story using first-party sources, Forbes, reputable
-   business reporting, and well-cited reference sources. Prefer how wealth or
-   prominence was created over its current amount.
+4. Research the origin story and current underlying private assets using
+   first-party sources, Forbes, reputable business reporting, and well-cited
+   reference sources. Populate `primary_industry`, `wealth_origin`, and
+   `wealth_relationship` independently under the wealth-classification
+   reference. Prefer how wealth or prominence was created over its current
+   amount.
 5. Search all person-relevant link types supported by the input lookup,
    prioritising public personal Instagram, LinkedIn, and personal websites.
    A company website may be proposed under its distinct type when the owner
@@ -97,6 +103,10 @@ tracking. Do not let parallel agents edit the shared owner dataset.
 - Exclude a proposed field or social link below confidence 85.
 - Keep biography confidence no higher than its weakest material claim.
 - Preserve source access dates because Forbes and business roles change.
+- Never infer an industry's sector from inheritance status, current occupation,
+  yacht ownership, nationality, or public office.
+- Never treat state, sovereign-wealth-fund, crown, or office-held assets as a
+  royal person's private wealth without strong evidence of personal ownership.
 - Never set review approval or workflow flags on behalf of the CEO.
 
 # Validation
@@ -104,6 +114,11 @@ tracking. Do not let parallel agents edit the shared owner dataset.
 - Confirm every material biography claim maps to one or more source IDs.
 - Confirm the dossier inventory matches the exact source owner record.
 - Confirm Forbes was explicitly checked.
+- Confirm all three wealth classifications are populated, use exact
+  classification-to-label mappings, and are supported by source IDs.
+- Confirm every non-`unknown` wealth classification scores at least 85.
+- Confirm inherited wealth follows its underlying industry, and royal or
+  dynastic records do not assume `Energy` from an oil-producing state.
 - Confirm proposed facts and socials score at least 85.
 - Confirm biography is one paragraph, 45-110 words, and canonical CKEditor HTML.
 - Confirm each link matches its type: personal accounts are identity-verified,
@@ -120,7 +135,8 @@ separately from owner inputs. It contains:
 - identity and research status;
 - source-record gap inventory and existing link types;
 - Forbes status;
-- wealth-origin classification and explanation;
+- primary-industry, wealth-origin, and wealth-relationship classifications,
+  each with an explanation, confidence, and source IDs;
 - short plain-text and CKEditor biography;
 - proposed personal fields and verified socials;
 - per-item confidence and source IDs;

@@ -14,8 +14,9 @@ batch.
 
 Continue until all selected owners have:
 
-1. one schema-v2 dossier beneath `output/owner-research/top-100/`;
-2. a validated, evidence-backed biography and wealth-origin classification;
+1. one schema-v3 dossier beneath `output/owner-research/top-100/`;
+2. a validated, evidence-backed biography plus `primary_industry`,
+   `wealth_origin`, and `wealth_relationship` classifications;
 3. an explicit Forbes result;
 4. an inventory of missing details and supported link types;
 5. only confidence-85-or-higher proposed details and links;
@@ -35,6 +36,8 @@ For every owner:
   context before collecting facts;
 - search Forbes first and record `verified`, `not_found`, `ambiguous`, or
   `unavailable`;
+- classify industry, origin, and relationship independently using
+  `references/wealth-classification.md`;
 - explain where wealth or prominence came from rather than foregrounding net
   worth;
 - search supported person-relevant social types, prioritising Instagram,
@@ -61,9 +64,13 @@ after each group of ten validated owners.
 After all dossiers validate, perform a main-agent consistency review:
 
 - biography tone and length match the Shahid Khan calibration;
-- royal, sovereign, family, and personal wealth are not conflated;
-- inherited, self-made, privatization, natural-resource, finance, and mixed
-  classifications are applied consistently;
+- royal, sovereign, family, and personal wealth are not conflated, and an
+  oil-producing state is not treated as evidence of personal `Energy` wealth;
+- inherited, self-made, dynastic/royal, family-transfer, mixed, and unknown
+  origin classifications are applied consistently;
+- industry follows the principal identifiable private assets, while
+  relationship distinguishes founders, operators, investors, heirs, family
+  office principals, royal beneficiaries, custodians, and passive owners;
 - proposed select values use labels supported by the owner form;
 - social type IDs match the input lookup;
 - no dossier is approved on the CEO's behalf.
@@ -87,8 +94,9 @@ Acceptance criteria:
   remain unchanged;
 - pending output owners retain `workflow.ai_enriched=false`;
 - the HTML report shows, per owner, vessel rank/context, new biography,
-  missing fields added, existing fields improved, verified links, confidence,
-  evidence links, unresolved gaps, and uncertainties;
+  all three wealth classifications, missing fields added, existing fields
+  improved, verified links, confidence, evidence links, unresolved gaps, and
+  uncertainties;
 - the original input hash is unchanged;
 - the offline test suite, compile checks, skill validation, dossier validation,
   and `git diff --check` all pass;

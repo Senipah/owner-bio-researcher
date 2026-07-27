@@ -63,6 +63,10 @@ Important owner fields:
 - `vessel_ownership` (optional): read-only all-fleet relationship scan,
   per-vessel normalized specifications, largest-known current vessel,
   `ranking_status`, and LOA rank.
+- `ai_research` (optional, compiled research output): dossier path and review
+  metadata plus evidence-backed `primary_industry`, `wealth_origin`, and
+  `wealth_relationship` classification objects. These are retained even before
+  equivalent editable fields exist on the website.
 
 Vessel-enriched owner documents may also contain a top-level
 `vessel_specifications` cache keyed by vessel ID and a `vessel_enrichment`
