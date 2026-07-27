@@ -1,54 +1,83 @@
 # Goal Mode prompt: first 50 owners by largest-yacht LOA
 
-This prompt researches only the first 50 fully ranked owners in the existing
-LOA-prioritised owner document. It produces review artifacts only; it does not
-approve research or update the live system.
+Use this prompt after the full details-and-socials enrichment has completed.
+It researches the fixed first-50 LOA cohort in resumable tranches and produces
+review artifacts only. It does not approve research or update the live system.
 
-The source report already contains system-exported identity data such as name,
-nationality, image URL, profile URL, and yacht relationships. A false
-`workflow.owner_details_enriched` flag means only that the separate editable
-details and social forms were not fetched. It is not a blocker for this
-review-only AI research run, and the prompt must not change that flag.
+The prompt below processes the next 10 owners whose dossiers are absent,
+invalid, or stale. Change `TRANCHE_SIZE = 10` to another positive number when
+you want a different tranche size. Reuse the same prompt for every tranche.
 
 ## Prompt
 
 Use `$research-owner-biography`.
 
-Your goal is to research exactly the first 50 fully ranked owners by largest
+Set `TRANCHE_SIZE = 10`.
+
+The overall cohort is exactly the first 50 fully ranked owners by largest
 current-vessel LOA from
-`output/owners-list.vessel-enriched.json` and produce a review-ready research
-enrichment batch.
+`output/owners-list.vessel-enriched.enriched.json`. This run must research only
+the next `TRANCHE_SIZE` owners in that cohort who do not already have a valid,
+current dossier.
 
-At the start, load the input once and use
-`src.research_batch.select_research_owners(document, "largest-loa", 50)` to
-freeze the ordered target list. Record the input file hash and the selected
-person IDs. Do not substitute Top-100 rank, array position, gross tonnage, fame,
-net worth, or editorial judgment for this selection.
+Use `output/owner-research/largest-loa-first-50/cohort.json` as the immutable
+cohort manifest.
 
-Preflight every selected owner before researching:
+At the start:
 
-- `vessel_ownership.ranking_status` is `ranked`;
-- `vessel_ownership.loa_rank` and `largest_current_loa_m` are present;
-- the report contains an identity name or the profile can resolve one; and
-- `person_id` and `profile_url` are present.
+1. Load `output/owners-list.vessel-enriched.enriched.json`.
+2. If the cohort manifest does not exist, call
+   `src.research_batch.select_research_owners(document, "largest-loa", 50)` and
+   save a manifest containing:
+   - the normalized source path;
+   - the source file's SHA-256 hash;
+   - selection `largest-loa` and limit `50`;
+   - creation timestamp; and
+   - the 50 owners in order, each with cohort position, `person_id`,
+     display name, `loa_rank`, `largest_current_loa_m`, and largest-current
+     vessel name.
+3. If the manifest exists, reuse its ordered person IDs. Do not regenerate or
+   reorder it. Verify that the current input contains the same owners and LOA
+   values. If the source hash changed, revalidate every existing dossier
+   against the current input and report the change. Stop for user direction
+   if cohort membership or LOA ordering changed.
+4. Confirm every cohort owner has:
+   - `vessel_ownership.ranking_status=ranked`;
+   - `vessel_ownership.loa_rank` and `largest_current_loa_m`;
+   - `enrichment.status=ok`;
+   - `workflow.owner_details_enriched=true`;
+   - a populated `details` object; and
+   - `person_id` and `profile_url`.
+5. Do not substitute Top-100 rank, array position, gross tonnage, fame, net
+   worth, or editorial judgment for the frozen cohort.
 
-If any selected owner fails that preflight, do not research a replacement or
-silently reduce the batch. Stop and report the affected person IDs and the
-missing prerequisite.
+Inventory the dossier directory before assigning research. Treat an existing
+dossier as complete only when:
 
-Treat `report`, `profile_url`, `top_100`, and `vessel_ownership` as the
-available system context. Do not treat an empty `details` object as evidence
-that every website field is blank, and do not invent field or social proposals
-that cannot be mapped to an exposed input control or social type. The
-biographies and wealth classifications must still be populated in the dossier
-and will remain available in compiled `ai_research` metadata.
+- its person ID belongs to the frozen cohort;
+- it is schema version 4; and
+- this exact command succeeds:
 
-Continue until all 50 selected owners have:
+```powershell
+.\venv\Scripts\python.exe `
+  .agents\skills\research-owner-biography\scripts\validate_dossier.py `
+  DOSSIER_PATH `
+  --owner-input output\owners-list.vessel-enriched.enriched.json
+```
 
-1. one schema-v4 dossier beneath
-   `output/owner-research/largest-loa-first-50/`;
-2. validated, evidence-backed short and longer biographies plus
-   `primary_industry`, `wealth_origin`, and `wealth_relationship`
+An absent, invalid, or stale dossier is pending regardless of its filename or
+claimed status. Order pending owners by their frozen cohort position, select
+the first `TRANCHE_SIZE`, print that tranche's positions, person IDs, names,
+vessels, and LOAs, and research exactly that selection in this run. Do not
+skip a difficult owner in favour of a later one. If fewer than
+`TRANCHE_SIZE` remain, process all remaining owners. If none remain, skip
+research and compile the final 50-owner review artifacts.
+
+For the selected tranche, produce one schema-v4 dossier per owner beneath
+`output/owner-research/largest-loa-first-50/`. Every dossier must contain:
+
+1. validated, evidence-backed short and longer biographies;
+2. `primary_industry`, `wealth_origin`, and `wealth_relationship`
    classifications;
 3. an explicit Forbes result;
 4. an inventory of missing details and supported link types;
@@ -56,17 +85,18 @@ Continue until all 50 selected owners have:
 6. `review.status=pending`.
 
 Use a bounded worker pool of at most three research subagents. Give each
-subagent exactly one owner at a time and this skill. When one finishes and its
-dossier validates, give that worker the next unprocessed owner. Do not allow
-subagents to edit the shared owner JSON, source code, skill files, or another
-owner's dossier. The main agent owns target selection, identity review,
-validation, cross-owner consistency, checkpoint tracking, and compilation.
+subagent exactly one owner at a time and `$research-owner-biography`. When a
+subagent finishes, the main agent must validate its dossier before assigning
+that worker another owner. Do not allow subagents to edit the shared owner
+JSON, cohort manifest, source code, skill files, or another owner's dossier.
+The main agent owns cohort selection, identity review, validation,
+cross-owner consistency, checkpoint tracking, and compilation.
 
-For every owner:
+For every selected owner:
 
-- run `inventory_owner.py` against the exact input and person ID;
-- resolve identity using name, public role or business, geography, and yacht
-  context before collecting facts;
+- run `inventory_owner.py` against the exact enriched input and person ID;
+- resolve identity using name, public role or business, geography, family, and
+  yacht context before collecting facts;
 - search Forbes first and record `verified`, `not_found`, `ambiguous`, or
   `unavailable`;
 - classify industry, wealth origin, and wealth relationship independently
@@ -85,23 +115,20 @@ For every owner:
   activity, or meaningful yachting context;
 - do not pad sparse profiles, repeat the short text verbatim, append yacht
   names without a meaningful story, or infer character from ownership alone;
-- save the dossier using the person ID in its filename; and
-- validate the dossier with:
+- save the dossier using the person ID in its filename;
+- leave `review.status=pending`; and
+- run the exact validation command above, fixing all failures before marking
+  that owner complete.
 
-```powershell
-.\venv\Scripts\python.exe `
-  .agents\skills\research-owner-biography\scripts\validate_dossier.py `
-  DOSSIER_PATH `
-  --owner-input output\owners-list.vessel-enriched.json
-```
+If a record represents an institution, government, municipality, unresolved
+placeholder, or otherwise is not a natural person, do not invent a human
+identity or personal wealth story. Preserve its cohort position and record the
+identity limitation explicitly under the research contract. Stop for user
+direction only if a schema-valid, honest dossier cannot represent the record;
+do not silently replace it with a later owner.
 
-Resume safely by treating an existing dossier as complete only when it belongs
-to one of the frozen person IDs and passes that exact validation command.
-Re-research invalid or stale dossiers. Maintain at most three active research
-agents and provide concise checkpoint updates after each group of ten
-validated owners.
-
-After all 50 dossiers validate, perform a main-agent consistency review:
+After the tranche validates, perform a main-agent consistency review across
+all currently valid cohort dossiers:
 
 - both biography tones, structures, and lengths match the Shahid Khan
   calibration;
@@ -116,43 +143,50 @@ After all 50 dossiers validate, perform a main-agent consistency review:
 - social type IDs match the input lookup; and
 - no dossier is approved on the user's behalf.
 
-Compile the review artifacts:
+Find the largest contiguous prefix of the frozen cohort for which every
+dossier validates. Let its size be `COMPLETED_PREFIX`. If it is greater than
+zero, replace every `COMPLETED_PREFIX` placeholder below with that integer and
+compile a cumulative checkpoint review:
 
 ```powershell
 .\venv\Scripts\python.exe .\compile_owner_research.py `
-  --input output\owners-list.vessel-enriched.json `
+  --input output\owners-list.vessel-enriched.enriched.json `
   --dossier-dir output\owner-research\largest-loa-first-50 `
   --selection largest-loa `
-  --limit 50 `
-  --output output\research-enriched-owners-list.largest-loa.first-50.json `
-  --report output\research-enriched-owners-list.largest-loa.first-50.html
+  --limit COMPLETED_PREFIX `
+  --output output\research-enriched-owners-list.largest-loa.first-COMPLETED_PREFIX.json `
+  --report output\research-enriched-owners-list.largest-loa.first-COMPLETED_PREFIX.html
 ```
 
-Acceptance criteria:
+When all 50 dossiers validate, `COMPLETED_PREFIX` is 50 and the final artifacts
+must be:
 
-- the compiled JSON contains exactly the frozen 50 person IDs in descending
-  largest-current-vessel LOA order;
-- every compiled owner has a validated dossier;
+- `output/research-enriched-owners-list.largest-loa.first-50.json`
+- `output/research-enriched-owners-list.largest-loa.first-50.html`
+
+Acceptance criteria for this run:
+
+- only the next requested tranche was researched;
+- every newly completed dossier validates against the exact enriched input;
+- all pre-existing valid dossiers remain unchanged unless validation required
+  a repair;
+- the compiled checkpoint contains exactly the valid contiguous LOA prefix;
 - `_baseline`, `person_id`, `profile_url`, vessel ownership data, and existing
   `profile_key` values remain unchanged;
 - pending output owners retain `workflow.ai_enriched=false`;
-- the HTML report shows, per owner, LOA rank, largest current vessel and metric
-  LOA, both biographies, all three wealth classifications, proposed details
-  and links, confidence, evidence links, unresolved gaps, and uncertainties;
-- the original input hash is unchanged;
-- the offline test suite, compile checks, dossier validation, and
-  `git diff --check` all pass; and
-- nothing is applied to the live website.
+- the original enriched input hash is unchanged;
+- nothing is applied to the live website; and
+- the run stops after this tranche even when more cohort owners remain.
 
-Do not stop merely because an owner has a sparse public footprint. Produce a
-limited or insufficient-evidence dossier with explicit uncertainties. Stop and
-request user direction only for a systemic blocker that prevents safe progress
-across the remaining batch.
+When the tranche is complete, return:
 
-When complete, return the JSON and HTML paths, the frozen person-ID list, owner
-and proposal counts, validation results, unresolved or limited-owner count,
-and an explicit statement that all dossiers remain pending review and nothing
-was applied.
+- the processed cohort positions, person IDs, names, vessels, and LOAs;
+- new and cumulative valid-dossier counts;
+- checkpoint JSON and HTML paths;
+- validation failures, unresolved identities, and limited-evidence owners;
+- the next pending cohort position and number remaining; and
+- an explicit statement that all dossiers remain pending review and nothing
+  was applied.
 
 ## After review
 

@@ -301,12 +301,10 @@ exist for every selected owner before compilation succeeds.
 
 For a complete Goal Mode research run over that sample, paste the prompt in
 [`docs/goal-mode-largest-loa-first-50-research-prompt.md`](docs/goal-mode-largest-loa-first-50-research-prompt.md).
-The prompt freezes the exact LOA-selected person IDs, researches and validates
-one pending dossier per owner, and invokes the compiler only after all 50
-dossiers pass validation. Report-level system fields such as name, nationality,
-photo, profile URL, and vessel context are sufficient for this review-only
-research pass; `owner_details_enriched=false` continues to mean that the
-separate editable details and social forms have not been fetched.
+The prompt freezes the exact LOA-selected person IDs in a cohort manifest,
+revalidates existing dossiers, researches only the next configurable tranche,
+and writes a cumulative review report after each run. Its default tranche size
+is ten. Reuse the same prompt until all 50 dossiers pass validation.
 
 The JSON retains each owner's immutable `_baseline`, contains only the selected
 owners, and applies only dossier proposals with confidence 85 or higher.
