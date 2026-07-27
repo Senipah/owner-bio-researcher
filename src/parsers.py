@@ -13,6 +13,16 @@ from .constants import BASE_URL, RICH_TEXT_DETAIL_FIELDS
 
 _DETAIL_NAME_RE = re.compile(r"^editpersondetails\[([^\]]+)\]$")
 _SOCIAL_TYPE_RE = re.compile(r"^social_media_type_(\d+)$")
+_METRIC_LOA_RE = re.compile(
+    r"(?P<value>\d+(?:[.,]\d+)?)\s*(?:m|metres?|meters?)\b",
+    re.IGNORECASE,
+)
+_IMPERIAL_LOA_RE = re.compile(
+    r"(?P<feet>\d+(?:[.,]\d+)?)\s*(?:ft|feet|foot|['′])"
+    r"(?:\s*(?P<inches>\d+(?:[.,]\d+)?)\s*(?:in|inches?|[\"″]))?",
+    re.IGNORECASE,
+)
+_GROSS_TONNAGE_RE = re.compile(r"\d[\d,]*(?:\.\d+)?")
 
 
 class ParseError(RuntimeError):
@@ -265,6 +275,128 @@ def parse_social_form(
         )
 
     return profiles, type_lookup
+
+
+def _decimal_number(value: str) -> float:
+    normalized = value.strip()
+    if "," in normalized and "." not in normalized:
+        normalized = normalized.replace(",", ".")
+    else:
+        normalized = normalized.replace(",", "")
+    return float(normalized)
+
+
+def normalize_loa_metres(raw_value: str) -> float | None:
+    value = raw_value.replace("\xa0", " ").strip()
+    if not value or value == "-":
+        return None
+
+    metric = _METRIC_LOA_RE.search(value)
+    if metric:
+        return round(_decimal_number(metric.group("value")), 3)
+
+    imperial = _IMPERIAL_LOA_RE.search(value)
+    if imperial:
+        feet = _decimal_number(imperial.group("feet"))
+        inches_text = imperial.group("inches")
+        inches = _decimal_number(inches_text) if inches_text else 0.0
+        return round((feet * 0.3048) + (inches * 0.0254), 3)
+
+    return None
+
+
+def normalize_gross_tonnage(raw_value: str) -> int | float | None:
+    value = raw_value.replace("\xa0", " ").strip()
+    if not value or value == "-":
+        return None
+    match = _GROSS_TONNAGE_RE.search(value)
+    if match is None:
+        return None
+    number = float(match.group(0).replace(",", ""))
+    return int(number) if number.is_integer() else number
+
+
+def parse_owner_vessel_relationships(
+    html: str,
+    *,
+    page_url: str,
+) -> list[dict[str, Any]]:
+    soup = _soup(html)
+    fieldset = next(
+        (
+            candidate
+            for candidate in soup.find_all("fieldset")
+            if (
+                (legend := candidate.find("legend"))
+                and legend.get_text(" ", strip=True) == "Vessels Owned (UBO)"
+            )
+        ),
+        None,
+    )
+    if fieldset is None:
+        raise ParseError("Vessels Owned (UBO) fieldset was not found")
+
+    table = fieldset.select_one("table.jsYayContactExternalRelationshipTable")
+    if table is None:
+        raise ParseError("Vessels Owned (UBO) relationship table was not found")
+
+    relationships: list[dict[str, Any]] = []
+    for row in table.select("tbody tr.jsExternalRelationshipItem"):
+        cells = row.find_all("td", recursive=False)
+        if len(cells) < 3:
+            continue
+        vessel_link = cells[0].select_one("a[href*='/vessel/view.htm?id=']")
+        if vessel_link is None:
+            continue
+        vessel_url = urljoin(page_url, vessel_link.get("href", ""))
+        vessel_id_values = parse_qs(urlparse(vessel_url).query).get("id", [])
+        if not vessel_id_values or not vessel_id_values[0].isdigit():
+            raise ParseError(
+                f"Could not determine vessel ID from owner relationship: {vessel_url}"
+            )
+        relationship_id = str(row.get("data-id", ""))
+        from_value = _clean_cell(cells[1])
+        to_value = _clean_cell(cells[2])
+        relationships.append(
+            {
+                "relationship_id": (
+                    int(relationship_id) if relationship_id.isdigit() else None
+                ),
+                "vessel_id": int(vessel_id_values[0]),
+                "vessel_name": vessel_link.get_text(" ", strip=True),
+                "specification_url": vessel_url,
+                "from": from_value,
+                "to": to_value,
+                "is_current": not bool(to_value),
+            }
+        )
+
+    return relationships
+
+
+def _specification_value(soup: BeautifulSoup, field_name: str) -> str | None:
+    label = soup.find("label", attrs={"for": field_name})
+    if label is None:
+        return None
+    value_node = label.find_next_sibling("div")
+    if value_node is None:
+        return None
+    value = value_node.get_text(" ", strip=True)
+    return "" if value == "-" else value
+
+
+def parse_vessel_specification(html: str) -> dict[str, Any]:
+    soup = _soup(html)
+    loa_raw = _specification_value(soup, "length")
+    if loa_raw is None:
+        raise ParseError("Vessel LOA field was not found")
+    gross_tonnage_raw = _specification_value(soup, "gross_tonnage")
+    return {
+        "loa_raw": loa_raw,
+        "loa_m": normalize_loa_metres(loa_raw),
+        "gross_tonnage_raw": gross_tonnage_raw or "",
+        "gross_tonnage": normalize_gross_tonnage(gross_tonnage_raw or ""),
+    }
 
 
 def is_login_page(html: str) -> bool:

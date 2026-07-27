@@ -134,6 +134,43 @@ Person IDs present in the UBO section but absent from the supplied full owner
 export are recorded in the vessel file and cause a non-zero exit so they cannot
 be missed.
 
+## Optional: rank all owners by current-vessel LOA
+
+Run the read-only vessel enrichment stage against the complete owner export:
+
+```powershell
+.\venv\Scripts\python.exe .\enrich_owner_vessels.py `
+  --input output\owners-list.json `
+  --headless
+```
+
+The default output is `output\owners-list.vessel-enriched.json`. The source
+owner file is not overwritten. For each owner, the stage:
+
+- reads the **Vessels Owned (UBO)** table on the owner profile;
+- treats a blank **To** date as current ownership;
+- fetches each distinct current vessel specification once;
+- preserves raw LOA and gross-tonnage values;
+- normalizes metre, foot, and foot/inch LOA values into `loa_m`;
+- records the largest known current vessel and an explicit ranking status; and
+- sorts the derived owner array by largest known current-vessel LOA.
+
+Gross tonnage is retained when available but does not control the sort. An
+owner is marked `incomplete` rather than fully ranked if any current vessel
+has a failed or unparseable specification.
+
+Resume partial owner and vessel checkpoints:
+
+```powershell
+.\venv\Scripts\python.exe .\enrich_owner_vessels.py `
+  --input output\owners-list.json `
+  --resume `
+  --headless
+```
+
+Use `--workers` to adjust the bounded HTTP concurrency, or `--person-id` and
+`--limit` for smoke tests. The default is four workers.
+
 ## 3. Enrich owner details and social profiles
 
 ```powershell

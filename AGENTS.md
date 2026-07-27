@@ -21,6 +21,9 @@ owner records, and applying reviewed JSON changes through the website.
 - `export_owners.py`: paginated owner-list export.
 - `mark_top_100_owners.py`, `src/top_100.py`, `src/workflow.py`: Top-100
   vessel export, read-only UBO scan, annotations, and workflow flags.
+- `enrich_owner_vessels.py`, `src/owner_vessels.py`, `src/parsers.py`:
+  read-only owner-to-vessel discovery, specification caching, LOA
+  normalization, and descending owner ranking.
 - `enrich_owners.py`, `src/enrichment.py`, `src/parsers.py`: details and
   social enrichment.
 - `compile_owner_research.py`, `src/research_batch.py`: validated AI dossier
@@ -52,7 +55,7 @@ owner records, and applying reviewed JSON changes through the website.
 
 ```powershell
 .\venv\Scripts\python.exe -m pytest -q
-.\venv\Scripts\python.exe -m compileall -q src export_owners.py mark_top_100_owners.py enrich_owners.py compile_owner_research.py update_owners.py test_dummy_account.py
+.\venv\Scripts\python.exe -m compileall -q src export_owners.py mark_top_100_owners.py enrich_owner_vessels.py enrich_owners.py compile_owner_research.py update_owners.py test_dummy_account.py
 git diff --check
 ```
 

@@ -86,7 +86,9 @@ page and fail clearly on session expiry.
 
 ### Report or edit-page HTML changes
 
-- Owner list/details/social parsing: `src/parsers.py`.
+- Owner list/details/social and owner-vessel parsing: `src/parsers.py`.
+- Owner-vessel fetching, specification caching, and ranking:
+  `src/owner_vessels.py`.
 - Top-100 list and UBO parsing: `src/top_100.py`.
 - URLs and timeouts: `src/constants.py`.
 
@@ -122,6 +124,9 @@ AI review or a live system update occurred.
   credentials.
 - Do not overwrite source owner JSON. Write derived, timestamped, or explicitly
   separate output files.
+- Owner-vessel enrichment is read-only. Preserve raw measurements, cache each
+  distinct vessel specification, and do not mark a ranking complete when any
+  current-vessel LOA is unavailable.
 - `mark_top_100_owners.py` is read-only: it may click the vessel edit link to
   reveal UBO data, but it must never locate or activate a save/submit control.
 - `compile_owner_research.py` must never overwrite its owner input and must not

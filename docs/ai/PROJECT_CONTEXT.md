@@ -24,6 +24,7 @@ The human-facing commands and file lineage are maintained in `README.md`.
 | URLs/timeouts | `src/constants.py` | Central SYN endpoints, schema version, and wait/request timeouts. |
 | Owner report | `export_owners.py`, `src/parsers.py` | Requests fetches pages; Beautiful Soup parses rows and pagination. |
 | Top-100 report | `mark_top_100_owners.py`, `src/top_100.py` | Requests exports the report; Selenium clicks the specification edit link and reads the UBO fieldset. |
+| Owner vessel ranking | `enrich_owner_vessels.py`, `src/owner_vessels.py`, `src/parsers.py` | Requests reads owner UBO relationships, caches distinct vessel specifications, normalizes LOA to metres, and ranks a derived owner document. |
 | Owner enrichment | `enrich_owners.py`, `src/enrichment.py`, `src/parsers.py` | Authenticated HTTP reads dynamically discover details controls and social profiles. |
 | AI research compilation | `compile_owner_research.py`, `src/research_batch.py` | Selects current Top-100 owners by rank, validates independent dossiers, compiles high-confidence proposals into a separate JSON, and renders an HTML review report. |
 | Change planning | `src/diffing.py` | Compares baseline, desired JSON, and current live state. |
@@ -59,6 +60,15 @@ Important owner fields:
 - `workflow`: `is_top_100_owner`, `owner_details_enriched`, `ai_enriched`, and
   `updated_in_system`.
 - `top_100`: current/historical markers and all matched vessel relationships.
+- `vessel_ownership` (optional): read-only all-fleet relationship scan,
+  per-vessel normalized specifications, largest-known current vessel,
+  `ranking_status`, and LOA rank.
+
+Vessel-enriched owner documents may also contain a top-level
+`vessel_specifications` cache keyed by vessel ID and a `vessel_enrichment`
+summary. Raw LOA is retained alongside metric `loa_m`; imperial values are
+converted at exactly 0.3048 metres per foot. Gross tonnage is captured when
+present but does not control the default ranking.
 
 Existing schema-v1 exports are accepted. `src/workflow.py` backfills missing
 additive workflow fields in memory.
