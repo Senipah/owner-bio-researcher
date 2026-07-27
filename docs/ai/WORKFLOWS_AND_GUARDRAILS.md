@@ -35,7 +35,8 @@ Run from the repository root. Omit `--headless` during initial live validation.
 # 4. Compile pending research for human review
 .\venv\Scripts\python.exe .\compile_owner_research.py `
   --input output\owners-list.top-100.enriched.json `
-  --dossier-dir output\owner-research\top-100
+  --dossier-dir output\owner-research\top-100 `
+  --selection top-100
 
 # 5. After dossier approval and approved recompilation, preview changes
 .\venv\Scripts\python.exe .\update_owners.py `
@@ -58,6 +59,11 @@ separate derived file; it never changes `_baseline`. Pending dossiers keep
 `workflow.ai_enriched=false`. Only explicit human approval followed by
 `compile_owner_research.py --mark-ai-enriched` sets it true and resets
 `workflow.updated_in_system=false` when a desired change is introduced.
+
+For an LOA-prioritised research batch, use a vessel-enriched input with
+`--selection largest-loa`. This selector must include only fully ranked owners,
+order them by metric largest-current-vessel LOA, and apply `--limit` as an
+exact count. It must not silently include incomplete vessel scans.
 
 Resume checkpointed read stages with their explicit flag:
 

@@ -89,6 +89,7 @@ Compile the review artifacts:
 .\venv\Scripts\python.exe .\compile_owner_research.py `
   --input output\owners-list.top-100.enriched.json `
   --dossier-dir output\owner-research\top-100 `
+  --selection top-100 `
   --output output\research-enriched-owners-list.top-100.json `
   --report output\research-enriched-owners-list.top-100.html
 ```

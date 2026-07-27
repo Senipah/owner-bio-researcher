@@ -4,11 +4,13 @@ from pathlib import Path
 
 import pytest
 
+from compile_owner_research import build_parser
 from src.io_utils import new_document, new_owner, set_baseline
 from src.research_batch import (
     compile_research_batch,
     render_research_report,
     select_current_top_100_owners,
+    select_largest_loa_owners,
 )
 
 
@@ -178,6 +180,27 @@ def _dossier(person_id: int, name: str, review_status: str = "pending") -> dict:
     }
 
 
+def _set_loa(
+    owner: dict,
+    *,
+    rank: int,
+    loa_m: float,
+    vessel_name: str,
+    ranking_status: str = "ranked",
+) -> None:
+    owner["vessel_ownership"] = {
+        "ranking_status": ranking_status,
+        "loa_rank": rank,
+        "largest_current_loa_m": loa_m,
+        "largest_known_current_vessel": {
+            "vessel_name": vessel_name,
+            "specification_url": (
+                f"https://example.test/vessel/{vessel_name.casefold()}"
+            ),
+        },
+    }
+
+
 def test_selects_unique_current_owners_by_rank() -> None:
     document = new_document()
     document["owners"] = [
@@ -190,6 +213,57 @@ def test_selects_unique_current_owners_by_rank() -> None:
     selected = select_current_top_100_owners(document, 2)
 
     assert [owner["person_id"] for owner in selected] == [10, 11]
+
+
+def test_selects_fully_ranked_owners_by_largest_current_loa() -> None:
+    small = _owner(30, "Small", 3)
+    large_second = _owner(20, "Large Second", 2)
+    large_first = _owner(10, "Large First", 1)
+    incomplete = _owner(5, "Incomplete", 4)
+    _set_loa(small, rank=2, loa_m=90.0, vessel_name="Small Yacht")
+    _set_loa(
+        large_second,
+        rank=1,
+        loa_m=120.0,
+        vessel_name="Large Yacht",
+    )
+    _set_loa(
+        large_first,
+        rank=1,
+        loa_m=120.0,
+        vessel_name="Large Yacht",
+    )
+    _set_loa(
+        incomplete,
+        rank=1,
+        loa_m=150.0,
+        vessel_name="Incomplete Yacht",
+        ranking_status="incomplete",
+    )
+    document = new_document()
+    document["owners"] = [small, incomplete, large_second, large_first]
+
+    selected = select_largest_loa_owners(document, 2)
+
+    assert [owner["person_id"] for owner in selected] == [10, 20]
+
+
+def test_compiler_parser_accepts_largest_loa_selection() -> None:
+    args = build_parser().parse_args(
+        [
+            "--input",
+            "owners.json",
+            "--dossier-dir",
+            "dossiers",
+            "--selection",
+            "largest-loa",
+            "--limit",
+            "50",
+        ]
+    )
+
+    assert args.selection == "largest-loa"
+    assert args.limit == 50
 
 
 def test_compiles_pending_preview_without_changing_baseline() -> None:
@@ -251,6 +325,35 @@ def test_compiles_long_biography_when_owner_field_is_available() -> None:
         and change["action"] == "fill_missing"
         for change in report["owners"][0]["changes"]
     )
+
+
+def test_compiles_and_renders_largest_loa_selection() -> None:
+    document = new_document()
+    owner = _owner(10, "Largest Owner", 1, current=False)
+    _set_loa(
+        owner,
+        rank=1,
+        loa_m=120.5,
+        vessel_name="Largest Yacht",
+    )
+    document["owners"] = [owner]
+
+    derived, report = compile_research_batch(
+        document,
+        {10: _dossier(10, "Largest Owner")},
+        {10: Path("output/10.research.json")},
+        source_path="output/source.json",
+        limit=1,
+        mark_ai_enriched=False,
+        selection="largest-loa",
+    )
+    rendered = render_research_report(report)
+
+    assert derived["research_batch"]["selection"] == "largest-loa"
+    assert report["selection"] == "largest-loa"
+    assert report["owners"][0]["loa_rank"] == 1
+    assert "Largest-yacht owner enrichment review" in rendered
+    assert "Largest current vessel: Largest Yacht (120.5m)" in rendered
 
 
 def test_mark_ai_enriched_requires_approved_dossier() -> None:

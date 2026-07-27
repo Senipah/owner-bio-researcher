@@ -15,6 +15,13 @@ RESEARCH_CLASSIFICATION_FIELDS = (
     "wealth_relationship",
 )
 BIOGRAPHY_DETAIL_FIELDS = {"biography", "long_biography"}
+RESEARCH_SELECTIONS = {"top-100", "largest-loa"}
+RESEARCH_SELECTION_DESCRIPTIONS = {
+    "top-100": "current owners ordered by minimum YB Top-100 vessel rank",
+    "largest-loa": (
+        "fully ranked owners ordered by largest current-vessel LOA"
+    ),
+}
 
 
 def owner_display_name(owner: dict[str, Any]) -> str:
@@ -55,6 +62,71 @@ def select_current_top_100_owners(
         )
     )
     return selected if limit is None else selected[:limit]
+
+
+def largest_current_loa(owner: dict[str, Any]) -> float | None:
+    ownership = owner.get("vessel_ownership")
+    if not isinstance(ownership, dict):
+        return None
+    value = ownership.get("largest_current_loa_m")
+    if (
+        not isinstance(value, (int, float))
+        or isinstance(value, bool)
+    ):
+        return None
+    return float(value)
+
+
+def current_loa_rank(owner: dict[str, Any]) -> int | None:
+    ownership = owner.get("vessel_ownership")
+    if (
+        not isinstance(ownership, dict)
+        or ownership.get("ranking_status") != "ranked"
+    ):
+        return None
+    rank = ownership.get("loa_rank")
+    if (
+        not isinstance(rank, int)
+        or isinstance(rank, bool)
+        or rank <= 0
+        or largest_current_loa(owner) is None
+    ):
+        return None
+    return rank
+
+
+def select_largest_loa_owners(
+    document: dict[str, Any],
+    limit: int | None,
+) -> list[dict[str, Any]]:
+    selected = [
+        owner
+        for owner in document.get("owners", [])
+        if current_loa_rank(owner) is not None
+    ]
+    selected.sort(
+        key=lambda owner: (
+            current_loa_rank(owner) or 10_000,
+            -(largest_current_loa(owner) or 0.0),
+            owner["person_id"],
+        )
+    )
+    return selected if limit is None else selected[:limit]
+
+
+def select_research_owners(
+    document: dict[str, Any],
+    selection: str,
+    limit: int | None,
+) -> list[dict[str, Any]]:
+    if selection == "top-100":
+        return select_current_top_100_owners(document, limit)
+    if selection == "largest-loa":
+        return select_largest_loa_owners(document, limit)
+    raise ValueError(
+        f"Unsupported research selection {selection!r}; "
+        f"expected one of {sorted(RESEARCH_SELECTIONS)}"
+    )
 
 
 def load_dossiers(directory: Path) -> tuple[dict[int, dict[str, Any]], dict[int, Path]]:
@@ -108,6 +180,20 @@ def _owner_vessels(owner: dict[str, Any]) -> list[dict[str, Any]]:
     ]
 
 
+def _largest_current_vessel(owner: dict[str, Any]) -> dict[str, Any] | None:
+    ownership = owner.get("vessel_ownership")
+    if not isinstance(ownership, dict):
+        return None
+    vessel = ownership.get("largest_known_current_vessel")
+    if not isinstance(vessel, dict):
+        return None
+    return {
+        "name": vessel.get("vessel_name"),
+        "loa_m": largest_current_loa(owner),
+        "specification_url": vessel.get("specification_url"),
+    }
+
+
 def _build_owner_summary(
     owner: dict[str, Any],
     dossier: dict[str, Any],
@@ -133,7 +219,9 @@ def _build_owner_summary(
         "person_id": owner["person_id"],
         "display_name": owner_display_name(owner),
         "rank": current_top_100_rank(owner),
+        "loa_rank": current_loa_rank(owner),
         "vessels": _owner_vessels(owner),
+        "largest_current_vessel": _largest_current_vessel(owner),
         "identity_confidence": identity_score,
         "biography_confidence": biography_score,
         "biography": dossier.get("biography", {}).get("plain_text"),
@@ -441,10 +529,15 @@ def compile_research_batch(
     source_path: str,
     limit: int | None,
     mark_ai_enriched: bool,
+    selection: str = "top-100",
     generated_at: str | None = None,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
     timestamp = generated_at or datetime.now(UTC).isoformat()
-    selected = select_current_top_100_owners(source_document, limit)
+    selected = select_research_owners(source_document, selection, limit)
+    if not selected:
+        raise ValueError(
+            f"No owners matched research selection {selection!r}"
+        )
     missing = [
         owner["person_id"]
         for owner in selected
@@ -478,7 +571,8 @@ def compile_research_batch(
     derived["research_batch"] = {
         "schema_version": 1,
         "generated_at": timestamp,
-        "selection": "current_top_100_by_minimum_vessel_rank",
+        "selection": selection,
+        "selection_description": RESEARCH_SELECTION_DESCRIPTIONS[selection],
         "limit": limit,
         "review_state": (
             "reviewed" if mark_ai_enriched else "pending_review"
@@ -489,6 +583,8 @@ def compile_research_batch(
         "generated_at": timestamp,
         "source_path": source_path.replace("\\", "/"),
         "mark_ai_enriched": mark_ai_enriched,
+        "selection": selection,
+        "selection_description": RESEARCH_SELECTION_DESCRIPTIONS[selection],
         "owners": summaries,
     }
     return derived, report
@@ -526,6 +622,16 @@ def _source_links(sources: list[dict[str, Any]]) -> str:
 
 def render_research_report(report: dict[str, Any]) -> str:
     owners = report.get("owners", [])
+    selection = report.get("selection", "top-100")
+    selection_description = report.get(
+        "selection_description",
+        RESEARCH_SELECTION_DESCRIPTIONS["top-100"],
+    )
+    report_title = (
+        "Largest-yacht owner enrichment review"
+        if selection == "largest-loa"
+        else "Top-100 owner enrichment review"
+    )
     field_additions = sum(
         1
         for owner in owners
@@ -541,10 +647,25 @@ def render_research_report(report: dict[str, Any]) -> str:
     )
     cards: list[str] = []
     for owner in owners:
-        vessels = ", ".join(
-            f'#{_e(vessel.get("rank"))} {_e(vessel.get("name"))}'
-            for vessel in owner.get("vessels", [])
-        )
+        display_rank = owner.get("rank")
+        if selection == "largest-loa":
+            display_rank = owner.get("loa_rank")
+            largest = owner.get("largest_current_vessel") or {}
+            loa = largest.get("loa_m")
+            loa_text = (
+                f"{float(loa):g}m"
+                if isinstance(loa, (int, float))
+                else "LOA unavailable"
+            )
+            vessels = (
+                f"Largest current vessel: {_e(largest.get('name'))} "
+                f"({_e(loa_text)})"
+            )
+        else:
+            vessels = ", ".join(
+                f'#{_e(vessel.get("rank"))} {_e(vessel.get("name"))}'
+                for vessel in owner.get("vessels", [])
+            )
         detail_rows = []
         improvement_rows = []
         link_rows = []
@@ -655,7 +776,7 @@ def render_research_report(report: dict[str, Any]) -> str:
             f"""
             <details class="owner-card" open>
               <summary>
-                <span><span class="rank">#{_e(owner.get("rank"))}</span>
+                <span><span class="rank">#{_e(display_rank)}</span>
                 {_e(owner.get("display_name"))}</span>
                 <span class="summary-badges">
                   {_confidence_badge(owner.get("biography_confidence"))}
@@ -727,7 +848,7 @@ def render_research_report(report: dict[str, Any]) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Top-100 owner enrichment review</title>
+  <title>{_e(report_title)}</title>
   <style>
     :root {{
       color-scheme: dark;
@@ -798,9 +919,10 @@ def render_research_report(report: dict[str, Any]) -> str:
 </head>
 <body>
   <main>
-    <h1>Top-100 owner enrichment review</h1>
+    <h1>{_e(report_title)}</h1>
     <p class="lede">A review-only preview of evidence-backed owner research.
-      Source data and live records remain unchanged. Generated
+      Selection: {_e(selection_description)}. Source data and live records
+      remain unchanged. Generated
       {_e(report.get("generated_at"))}.</p>
     <section class="metrics">
       <div class="metric"><strong>{len(owners)}</strong>owners researched</div>

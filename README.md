@@ -271,6 +271,7 @@ proposals using their exact display labels.
 .\venv\Scripts\python.exe .\compile_owner_research.py `
   --input output\owners-list.top-100.enriched.json `
   --dossier-dir output\owner-research\top-100-first-10 `
+  --selection top-100 `
   --limit 10
 ```
 
@@ -278,6 +279,34 @@ The default outputs for this calibration run are:
 
 - `output\research-enriched-owners-list.top-100.first-10.json`
 - `output\research-enriched-owners-list.top-100.first-10.html`
+
+`--selection top-100` is the default and orders unique current owners by their
+minimum current Top-100 vessel rank. To compile a review sample of the 50
+owners with the largest current yachts, start from a vessel-enriched owner
+document and select the explicit LOA mode:
+
+```powershell
+.\venv\Scripts\python.exe .\compile_owner_research.py `
+  --input output\owners-list.vessel-enriched.json `
+  --dossier-dir output\owner-research\largest-loa-first-50 `
+  --selection largest-loa `
+  --limit 50
+```
+
+This mode uses `vessel_ownership.loa_rank` and
+`vessel_ownership.largest_current_loa_m`, takes exactly the first 50 owners,
+and excludes owners whose vessel scan is missing or `incomplete`. Its default
+outputs include `.largest-loa.first-50` in their filenames. Dossiers must
+exist for every selected owner before compilation succeeds.
+
+For a complete Goal Mode research run over that sample, paste the prompt in
+[`docs/goal-mode-largest-loa-first-50-research-prompt.md`](docs/goal-mode-largest-loa-first-50-research-prompt.md).
+The prompt freezes the exact LOA-selected person IDs, researches and validates
+one pending dossier per owner, and invokes the compiler only after all 50
+dossiers pass validation. Report-level system fields such as name, nationality,
+photo, profile URL, and vessel context are sufficient for this review-only
+research pass; `owner_details_enriched=false` continues to mean that the
+separate editable details and social forms have not been fetched.
 
 The JSON retains each owner's immutable `_baseline`, contains only the selected
 owners, and applies only dossier proposals with confidence 85 or higher.
@@ -292,6 +321,7 @@ and record `reviewed_by` and `reviewed_at`. Recompile with
 .\venv\Scripts\python.exe .\compile_owner_research.py `
   --input output\owners-list.top-100.enriched.json `
   --dossier-dir output\owner-research\top-100-first-10 `
+  --selection top-100 `
   --limit 10 `
   --output output\approved-enriched-owners-list.top-100.first-10.json `
   --report output\approved-enriched-owners-list.top-100.first-10.html `

@@ -7,10 +7,11 @@ from pathlib import Path
 
 from src.io_utils import atomic_write_json, atomic_write_text, load_json
 from src.research_batch import (
+    RESEARCH_SELECTIONS,
     compile_research_batch,
     load_dossiers,
     render_research_report,
-    select_current_top_100_owners,
+    select_research_owners,
 )
 
 
@@ -37,9 +38,18 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--output", type=Path)
     parser.add_argument("--report", type=Path)
     parser.add_argument(
+        "--selection",
+        choices=sorted(RESEARCH_SELECTIONS),
+        default="top-100",
+        help=(
+            "Owner ordering: current YB Top-100 rank (default) or largest "
+            "current-vessel LOA."
+        ),
+    )
+    parser.add_argument(
         "--limit",
         type=int,
-        help="First N unique current owners ordered by minimum Top-100 rank.",
+        help="First N owners in the selected ordering.",
     )
     parser.add_argument(
         "--mark-ai-enriched",
@@ -49,11 +59,16 @@ def build_parser() -> argparse.ArgumentParser:
     return parser
 
 
-def _default_output(input_path: Path, limit: int | None) -> Path:
+def _default_output(
+    input_path: Path,
+    limit: int | None,
+    selection: str,
+) -> Path:
+    selection_marker = ".largest-loa" if selection == "largest-loa" else ""
     marker = f".first-{limit}" if limit is not None else ""
     source_stem = input_path.stem.removesuffix(".enriched")
     return input_path.with_name(
-        f"research-enriched-{source_stem}{marker}.json"
+        f"research-enriched-{source_stem}{selection_marker}{marker}.json"
     )
 
 
@@ -90,14 +105,22 @@ def main() -> int:
         print("--limit must be greater than zero", file=sys.stderr)
         return 1
 
-    output = args.output or _default_output(args.input, args.limit)
+    output = args.output or _default_output(
+        args.input,
+        args.limit,
+        args.selection,
+    )
     report_path = args.report or output.with_suffix(".html")
     try:
         if output.resolve() == args.input.resolve():
             raise ValueError("Output must not overwrite the input owner document")
         document = load_json(args.input)
         dossiers, paths = load_dossiers(args.dossier_dir)
-        selected = select_current_top_100_owners(document, args.limit)
+        selected = select_research_owners(
+            document,
+            args.selection,
+            args.limit,
+        )
         selected_ids = [owner["person_id"] for owner in selected]
         _validate_dossiers(paths, selected_ids, args.input)
         derived, report = compile_research_batch(
@@ -107,6 +130,7 @@ def main() -> int:
             source_path=str(args.input),
             limit=args.limit,
             mark_ai_enriched=args.mark_ai_enriched,
+            selection=args.selection,
         )
         atomic_write_json(output, derived)
         atomic_write_text(report_path, render_research_report(report))
@@ -115,7 +139,8 @@ def main() -> int:
         return 1
 
     print(
-        f"Compiled {len(derived['owners'])} owners. JSON: {output}. "
+        f"Compiled {len(derived['owners'])} owners using "
+        f"selection={args.selection}. JSON: {output}. "
         f"Review report: {report_path}"
     )
     if not args.mark_ai_enriched:
