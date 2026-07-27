@@ -1,0 +1,401 @@
+{
+  "schema_version": 4,
+  "owner": {
+    "person_id": 8425,
+    "display_name": "Mark Zuckerberg",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The exact full name, American nationality, 14 May 1984 birth date, existing Forbes and Wikipedia links, Meta founder and chief-executive role, and Launchpad relationship align across the source record, Meta's official leadership material, SEC filings, Harvard and Forbes."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia",
+      "Forbes"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/mark-zuckerberg/",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The dedicated current profile exactly matches Zuckerberg's name, Meta cofounder role, Facebook source of wealth, self-made status, U.S. citizenship, Palo Alto residence, Harvard attendance and current Meta shareholding."
+    }
+  },
+  "primary_industry": {
+    "classification": "technology",
+    "label": "Technology",
+    "summary": "Zuckerberg's identifiable private wealth is principally his founder stake in Meta, the technology company built from Facebook and expanded across social platforms, artificial intelligence and immersive computing.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes identifies Facebook as his source of wealth, while Meta's official profile and 2026 proxy establish his founder role, continuing leadership, controlling shareholding and the company's technology businesses."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "He created the principal fortune by co-founding Facebook at Harvard in 2004 and retaining a substantial stake as it developed into Meta.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes explicitly classifies Zuckerberg as self-made; Meta, Harvard and Zuckerberg's own account document Facebook's 2004 founding and growth from a student network."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "His principal relationship to the wealth-producing asset remains that of Meta's founder, chairman, chief executive and controlling shareholder.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Meta's current leadership page and 2026 proxy directly document the founder, chairman and CEO roles, continuing tenure since 2004 and majority voting control."
+    },
+    "source_ids": [
+      "S2",
+      "S3"
+    ]
+  },
+  "biography": {
+    "plain_text": "Mark Zuckerberg is an American technology entrepreneur who co-founded Facebook from his Harvard dormitory in 2004 and built it into Meta. His self-made fortune remains rooted in his controlling stake in the company. He continues as founder, chairman and chief executive, directing its expansion from social networking toward artificial intelligence and immersive computing.",
+    "html": "<p>Mark Zuckerberg is an American technology entrepreneur who co-founded Facebook from his Harvard dormitory in 2004 and built it into Meta. His self-made fortune remains rooted in his controlling stake in the company. He continues as founder, chairman and chief executive, directing its expansion from social networking toward artificial intelligence and immersive computing.</p>\r\n",
+    "word_count": 53,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Meta, the SEC, Forbes, Harvard and Zuckerberg's direct account establish the founding story, self-made wealth mechanism, controlling stake, current leadership and shift toward artificial intelligence and immersive technologies."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Born in White Plains, New York, Mark Zuckerberg began writing software in childhood and studied computer science at Harvard. In 2004 he launched Facebook from his dormitory, initially for students, then moved to Palo Alto to build it full time. The network's expansion and 2012 public offering turned his founder stake into the core of his self-made fortune.\n\nFacebook became Meta in 2021 as the company broadened beyond its original social network. Zuckerberg remains founder, chairman, chief executive and controlling shareholder; Meta's 2026 proxy records 60.8 percent of voting power through its dual-class share structure. His current strategy emphasizes artificial intelligence and immersive technologies. Beyond Meta, he co-leads the Chan Zuckerberg Initiative, which supports biomedical research, education and local communities with an increasingly technical approach to scientific discovery.",
+    "html": "<p>Born in White Plains, New York, Mark Zuckerberg began writing software in childhood and studied computer science at Harvard. In 2004 he launched Facebook from his dormitory, initially for students, then moved to Palo Alto to build it full time. The network's expansion and 2012 public offering turned his founder stake into the core of his self-made fortune.</p>\r\n<p>Facebook became Meta in 2021 as the company broadened beyond its original social network. Zuckerberg remains founder, chairman, chief executive and controlling shareholder; Meta's 2026 proxy records 60.8 percent of voting power through its dual-class share structure. His current strategy emphasizes artificial intelligence and immersive technologies. Beyond Meta, he co-leads the Chan Zuckerberg Initiative, which supports biomedical research, education and local communities with an increasingly technical approach to scientific discovery.</p>\r\n",
+    "word_count": 129,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Harvard supports the birthplace, early programming and student history; Meta, the SEC, Forbes and Zuckerberg's direct account establish the company chronology and wealth mechanism; CZI directly documents his current co-leadership and programme areas."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S7"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "known_for_title",
+      "value": "Founder, Chairman and Chief Executive Officer of Meta",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Meta's official leadership page and 2026 proxy use these exact current roles."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "place_of_birth",
+      "value": "White Plains, New York",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Harvard's institutional biography states that Zuckerberg was born in White Plains, New York, in 1984 and matches the exact founder identity."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "biography",
+      "value": "<p>Mark Zuckerberg is an American technology entrepreneur who co-founded Facebook from his Harvard dormitory in 2004 and built it into Meta. His self-made fortune remains rooted in his controlling stake in the company. He continues as founder, chairman and chief executive, directing its expansion from social networking toward artificial intelligence and immersive computing.</p>\r\n",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The source biography is blank, and the proposed text gives a current, concise identity and wealth-origin account supported by Meta, the SEC, Forbes, Harvard and Zuckerberg's direct account."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "2",
+      "type": "Facebook",
+      "url": "https://www.facebook.com/zuck/",
+      "verification": "Meta's first-quarter 2026 results release identifies facebook.com/zuck as Mark Zuckerberg's Facebook profile and an official Regulation FD disclosure channel. Type ID 2 is copied from the owner input lookup.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Meta directly identifies this URL as Zuckerberg's personal Facebook profile."
+      },
+      "source_ids": [
+        "S6"
+      ]
+    },
+    {
+      "type_id": "9",
+      "type": "Instagram",
+      "url": "https://www.instagram.com/zuck/",
+      "verification": "Meta's first-quarter 2026 results release identifies instagram.com/zuck as Mark Zuckerberg's Instagram account and an official Regulation FD disclosure channel. Type ID 9 is copied from the owner input lookup.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Meta directly identifies this URL as Zuckerberg's personal Instagram account."
+      },
+      "source_ids": [
+        "S6"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://investor.atmeta.com/leadership-and-governance/person-details/default.aspx",
+      "verification": "Meta's official investor-relations biography identifies Zuckerberg as the company's founder, chairman and chief executive. Type ID 14 is copied from the owner input lookup.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "This is Zuckerberg's official leadership profile on Meta's corporate investor-relations domain."
+      },
+      "source_ids": [
+        "S3"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/profile/mark-zuckerberg/",
+      "title": "Mark Zuckerberg",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "exact identity",
+        "verified Forbes profile",
+        "Meta cofounder role",
+        "Facebook as source of wealth",
+        "self-made classification",
+        "continuing Meta shareholding",
+        "2012 public offering",
+        "2021 company renaming",
+        "U.S. citizenship and Palo Alto residence",
+        "Harvard attendance"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025532/meta-20260416.htm",
+      "title": "Meta Platforms, Inc. 2026 Proxy Statement",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "founder, chairman and chief-executive roles",
+        "founder and chief-executive tenure from 2004",
+        "chairmanship from 2012",
+        "controlling-shareholder status",
+        "341823978 beneficially owned Class B shares",
+        "60.8 percent total voting power as of 1 April 2026",
+        "Harvard computer-science study"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://investor.atmeta.com/leadership-and-governance/person-details/default.aspx",
+      "title": "Mark Zuckerberg, Founder, Chairman and Chief Executive Officer",
+      "publisher": "Meta",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "exact identity",
+        "Meta founder, chairman and chief-executive roles",
+        "Facebook founding in 2004",
+        "official company leadership profile"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://news.harvard.edu/gazette/story/2017/03/zuckerberg-speaks-at-harvards-366th-commencement/",
+      "title": "Zuckerberg named Commencement speaker",
+      "publisher": "Harvard Gazette",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "White Plains, New York, birthplace",
+        "1984 birth year",
+        "childhood programming",
+        "Harvard attendance",
+        "Facebook creation at Harvard",
+        "initial student-network purpose"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.facebook.com/zuck/posts/fifteen-years-ago-today-i-launched-the-first-version-of-the-facebook-website-fro/10106411140260321/",
+      "title": "Fifteen years ago today, I launched the first version of the Facebook website",
+      "publisher": "Mark Zuckerberg on Facebook",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "direct first-person account of launching Facebook from a college dormitory",
+        "initial Harvard use",
+        "expansion to other universities",
+        "early growth to one million users"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-First-Quarter-2026-Results/default.aspx",
+      "title": "Meta Reports First Quarter 2026 Results",
+      "publisher": "Meta",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "facebook.com/zuck as Mark Zuckerberg's official Facebook profile",
+        "instagram.com/zuck as Mark Zuckerberg's official Instagram account",
+        "both profiles as Meta Regulation FD disclosure channels",
+        "Meta's current artificial-intelligence and immersive-technology direction"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://chanzuckerberg.com/about/leaders/",
+      "title": "Leadership Team at CZI, Biohub and Learning Commons",
+      "publisher": "Chan Zuckerberg Initiative",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "Mark Zuckerberg as CZI cofounder and co-CEO",
+        "current CZI leadership",
+        "biomedical-research and education work",
+        "technology-focused approach",
+        "Harvard computer-science study and 2004 move to Palo Alto"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.forbes.com/sites/giacomotognini/2024/10/04/inside-the-superyachts-of-americas-richest-people/",
+      "title": "The Definitive Guide To The Superyachts Of America's Richest",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "Mark Zuckerberg as Launchpad's owner",
+        "Launchpad delivery in 2024",
+        "Launchpad as the largest Feadship delivered at that time",
+        "support-vessel ownership context"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Forbes identifies Facebook as Zuckerberg's source of wealth, and Meta's current filing establishes the founder stake and control. Technology is therefore used rather than Media & Entertainment, despite the advertising and content dimensions of Meta's business.",
+    "The 60.8 percent voting-power figure is a dated snapshot from Meta's 2026 proxy. It reflects the dual-class share structure and should not be confused with economic ownership or assumed to remain unchanged.",
+    "Forbes identifies Zuckerberg as Launchpad's owner and records a related support-vessel context. Reliable evidence reviewed does not establish personal involvement in the yacht's design, a sustained maritime programme, competition, research or philanthropy, so yacht ownership is omitted from both biographies.",
+    "The source record previously associated a 67-metre support vessel with Zuckerberg and now lists a different 80-metre Wingman relationship. The dossier does not conflate the two vessels or use uncertain fleet chronology as biographical material.",
+    "No second nationality was established in strong sources, so secondary nationality remains blank.",
+    "No identity-verified personal LinkedIn, X, YouTube or TikTok account or standalone personal website met the verification threshold. Meta's official leadership page is proposed separately as a Company Website.",
+    "The existing Wikipedia and Forbes links resolve to the correct person and were not duplicated. The canonical Forbes profile omits the input URL's tracking query, but the existing link remains functional.",
+    "Blank title, suffix and secondary-residence fields were treated as optional; blank age, death, internal-note and unknown-name fields remain inapplicable or system-managed."
+  ],
+  "review": {
+    "status": "pending",
+    "notes": "Review the Technology classification, the two Meta-verified personal social links and the decision to omit Launchpad from the biographies because ownership alone does not establish a meaningful yachting story."
+  }
+}

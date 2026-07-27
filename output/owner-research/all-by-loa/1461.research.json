@@ -1,0 +1,430 @@
+{
+  "schema_version": 4,
+  "owner": {
+    "person_id": 1461,
+    "display_name": "Andrey Melnichenko",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The exact full name, patronymic, birth date, Russian industrial background, EuroChem and SUEK founder roles, and successive yachts named A align across the owner record, current Forbes and Bloomberg profiles, company evidence and yacht reporting."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/andrey-melnichenko/",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The dedicated Forbes profile exactly matches Andrey Melnichenko's age, Russian citizenship, EuroChem and SUEK founder roles, self-made fertilizer-and-coal wealth, and Sailing Yacht A context."
+    }
+  },
+  "primary_industry": {
+    "classification": "metals_mining",
+    "label": "Metals & Mining",
+    "summary": "Fertilizer producer EuroChem and thermal-coal supplier SUEK underpin the family fortune attributed to Melnichenko; current Bloomberg analysis identifies EuroChem as the largest asset, while Forbes classifies him in Metals & Mining.",
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Current Forbes profiles identify fertilizers and coal as the wealth source and explicitly assign Metals & Mining, while Bloomberg attributes most of the fortune to EuroChem and SUEK and names EuroChem as the largest asset."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S8"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Melnichenko began with currency-exchange booths, founded MDM Bank, and then used banking-era capital and acquisitions to build EuroChem and SUEK rather than inheriting the core assets.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Forbes explicitly labels the fortune self-made and, together with Bloomberg and Melnichenko's foundation, documents the progression from currency exchange to banking and industrial-company creation."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S5"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Melnichenko created EuroChem and SUEK, the businesses still used by Forbes and Bloomberg to attribute the family fortune, but he ceased to be the trust beneficiary and resigned the company boards in 2022.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Forbes, Bloomberg, Reuters and EuroChem agree that he founded the core companies; current evidence also establishes that he is no longer their beneficiary, board member or controller, making Founder more accurate than Operator or current controlling owner."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "biography": {
+    "plain_text": "Andrey Melnichenko is a Russian industrialist who built his fortune by founding MDM Bank before creating fertilizer producer EuroChem and coal company SUEK. Forbes classifies the wealth as self-made, while Bloomberg identifies EuroChem as the largest asset. He also commissioned successive Philippe Starck-designed yachts named A, including the 143-metre Sailing Yacht A.",
+    "html": "<p>Andrey Melnichenko is a Russian industrialist who built his fortune by founding MDM Bank before creating fertilizer producer EuroChem and coal company SUEK. Forbes classifies the wealth as self-made, while Bloomberg identifies EuroChem as the largest asset. He also commissioned successive Philippe Starck-designed yachts named A, including the 143-metre Sailing Yacht A.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Current Forbes and Bloomberg profiles support the industrial route and wealth classification, while Forbes and established yacht reporting document his successive A commissions and Sailing Yacht A's length."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S6",
+      "S7"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Born in Gomel in 1972, Andrey Melnichenko studied physics in Moscow before leaving university amid the Soviet collapse. He began with currency-exchange booths, founded MDM Bank in 1993 and later redirected banking proceeds into industrial assets. Working with Sergei Popov, he assembled fertilizer producer EuroChem and thermal-coal supplier SUEK; Forbes now describes fertilizers and coal as the source of his self-made fortune.\n\nMelnichenko withdrew as beneficiary of the trust holding those companies and resigned their boards in 2022. EuroChem says he no longer controls the company, while Bloomberg continues to attribute the stakes to him for wealth-ranking purposes because he founded them and identifies EuroChem as his largest asset. His yachting history follows a similarly ambitious design thread: he commissioned two Philippe Starck projects named A, culminating in the 143-metre Sailing Yacht A.",
+    "html": "<p>Born in Gomel in 1972, Andrey Melnichenko studied physics in Moscow before leaving university amid the Soviet collapse. He began with currency-exchange booths, founded MDM Bank in 1993 and later redirected banking proceeds into industrial assets. Working with Sergei Popov, he assembled fertilizer producer EuroChem and thermal-coal supplier SUEK; Forbes now describes fertilizers and coal as the source of his self-made fortune.</p>\r\n<p>Melnichenko withdrew as beneficiary of the trust holding those companies and resigned their boards in 2022. EuroChem says he no longer controls the company, while Bloomberg continues to attribute the stakes to him for wealth-ranking purposes because he founded them and identifies EuroChem as his largest asset. His yachting history follows a similarly ambitious design thread: he commissioned two Philippe Starck projects named A, culminating in the 143-metre Sailing Yacht A.</p>\r\n",
+    "word_count": 133,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Bloomberg and Forbes support his birthplace, education and business formation; EuroChem and Reuters establish the 2022 trust and governance changes; Forbes and yacht reporting support the two A commissions."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S6",
+      "S7"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "known_for_title",
+      "value": "Founder of EuroChem and SUEK",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Current Forbes and Bloomberg profiles and EuroChem's own ownership statement consistently identify Melnichenko as founder of the fertilizer and coal businesses."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "place_of_birth",
+      "value": "Gomel",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Bloomberg's current biographical profile states that Melnichenko was born in Gomel, Belarus, in 1972, matching the supplied birth date and broader identity."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "action": "correct_existing",
+      "field": "main_residence_country",
+      "existing_value": "Russian Federation",
+      "value": "United Arab Emirates",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The current Forbes profile gives Ras Al Khaimah, United Arab Emirates, as his residence, and Forbes Middle East independently includes him in its 2026 ranking of the richest UAE residents."
+      },
+      "source_ids": [
+        "S1",
+        "S8"
+      ]
+    },
+    {
+      "action": "correct_existing",
+      "field": "biography",
+      "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/EuroChem\">EuroChem Group</a>, a fertilizer manufacturer, and <a href=\"https://en.wikipedia.org/wiki/Siberian_Coal_Energy_Company\">SUEK</a>, a coal energy firm, are his primary beneficiaries. &nbsp;He serves on the boards of directors of both firms as a non-executive director.&nbsp;<br />\r\nMelnichenko is one of Russia&#39;s most prominent social investors and philanthropists.&nbsp;<br />\r\n&nbsp;Aside from his companies&#39; own charity and social investment activities, the <a href=\"https://en.wikipedia.org/wiki/Andrey_Melnichenko_Foundation\">Andrey Melnichenko Foundation</a> supports gifted students from the regions where his companies operate, with the goal of increasing social mobility in Russia.</p>\r\n",
+      "value": "<p>Andrey Melnichenko is a Russian industrialist who built his fortune by founding MDM Bank before creating fertilizer producer EuroChem and coal company SUEK. Forbes classifies the wealth as self-made, while Bloomberg identifies EuroChem as the largest asset. He also commissioned successive Philippe Starck-designed yachts named A, including the 143-metre Sailing Yacht A.</p>\r\n",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "The replacement corrects the reversed beneficiary wording and obsolete board roles, removes embedded links and unsupported superlatives, and substitutes a current evidence-backed account of the wealth route and yacht commissions."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S6",
+        "S7"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://www.forbes.com/profile/andrey-melnichenko/",
+      "verification": "The dedicated profile matches the exact name, age, citizenship, EuroChem and SUEK founder roles, self-made fertilizer-and-coal wealth and Sailing Yacht A; type ID 11 is copied from the current owner input lookup.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "This is an exact, current Forbes person profile with multiple independent identity facts matching the supplied owner record."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "field": "secondary_nationality",
+      "candidate_value": "Emirati",
+      "confidence": {
+        "score": 84,
+        "band": "medium",
+        "reason": "Bloomberg says Melnichenko took UAE citizenship in 2021, and RBC attributes the same fact to Forbes and his representative, but his current Forbes profile displays only Russian citizenship and the exact website option label is unavailable in the source document."
+      },
+      "source_ids": [
+        "S2",
+        "S10"
+      ],
+      "review_note": "Confirm current dual-citizenship status and the website's exact nationality select label before proposing this field."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/profile/andrey-melnichenko/",
+      "title": "Andrey Melnichenko & family",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "exact identity",
+        "verified Forbes profile",
+        "Russian citizenship",
+        "current residence in Ras Al Khaimah, United Arab Emirates",
+        "EuroChem and SUEK founder roles",
+        "currency-exchange and MDM Bank origin story",
+        "fertilizers and coal as source of wealth",
+        "self-made wealth origin",
+        "2022 trust beneficiary change",
+        "Sailing Yacht A context"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.bloomberg.com/billionaires/profiles/andrey-melnichenko/",
+      "title": "Bloomberg Billionaires Index: Andrey Melnichenko",
+      "publisher": "Bloomberg",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "exact identity",
+        "birthplace in Gomel, Belarus",
+        "birth year",
+        "physics studies in Moscow",
+        "currency-exchange and MDM Bank origin story",
+        "EuroChem and SUEK creation",
+        "EuroChem as largest asset",
+        "family-fortune attribution",
+        "withdrawal as trust beneficiary",
+        "resignation from EuroChem and SUEK boards",
+        "reported UAE citizenship acquired in 2021"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.eurochemgroup.com/media-announcements/eurochem-group-statement-on-ownership-and-control/",
+      "title": "EuroChem Group statement on ownership and control",
+      "publisher": "EuroChem Group",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "Andrey Melnichenko as EuroChem founder",
+        "irrevocable cessation as trust beneficiary in March 2022",
+        "Aleksandra Melnichenko's automatic succession as beneficiary",
+        "trustee control of EuroChem",
+        "absence of founder control or management role",
+        "EuroChem as a vertically integrated fertilizer producer"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.euronews.com/next/2022/05/27/ukraine-crisis-melnichenko-exclusive",
+      "title": "How a Russian billionaire shielded assets from European sanctions",
+      "publisher": "Reuters via Euronews",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "Melnichenko as founder of EuroChem and SUEK",
+        "post-Soviet wealth formation",
+        "2022 withdrawal from beneficial ownership",
+        "trust structure and independent trustees",
+        "succession of Aleksandra Melnichenko as beneficiary"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://aimfoundation.info/o-fonde",
+      "title": "About The Andrey Melnichenko Foundation",
+      "publisher": "The Andrey Melnichenko Foundation",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "self-made industrialist description",
+        "early currency-exchange business",
+        "MDM Bank formation",
+        "later expansion into fertilizer and coal",
+        "foundation identity"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.euronews.com/2022/03/13/uk-ukraine-crisis-russia-melnichenko",
+      "title": "Italy seizes Russian billionaire Melnichenko's Sailing Yacht A",
+      "publisher": "Reuters via Euronews",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "Sailing Yacht A attribution to Andrey Melnichenko",
+        "143-metre length",
+        "Philippe Starck design",
+        "Nobiskrug build",
+        "identity corroboration through yacht context"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.forbes.com/sites/deajusufi/2026/05/16/this-yacht-builder-is-the-new-nobiskrug-and-making-crazy-custom-megayachts/",
+      "title": "This Yacht Builder Is The New Nobiskrug—And Making Crazy Custom Megayachts",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "Sailing Yacht A commissioned by Andrey Melnichenko",
+        "469-foot length",
+        "custom-build context"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.forbesmiddleeast.com/lists/richest-residents-in-the-uae-2026/andrey-melnichenko-family-2/",
+      "title": "Andrey Melnichenko & family",
+      "publisher": "Forbes Middle East",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "current UAE residence",
+        "2026 Metals & Mining industry classification",
+        "Russian citizenship",
+        "EuroChem and SUEK founder roles",
+        "fertilizers and coal as wealth source"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.linkedin.com/pub/dir/Andrey/Melnichenko",
+      "title": "People named Andrey Melnichenko",
+      "publisher": "LinkedIn",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "multiple same-name LinkedIn profiles",
+        "absence of an identity-verified personal LinkedIn profile for the target"
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.rbc.ru/business/07/07/2022/62c708a39a79476cdc88e0fd",
+      "title": "Billionaire Melnichenko became a UAE citizen",
+      "publisher": "RBC",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "reported acquisition of UAE citizenship in 2021",
+        "attribution of citizenship information to Forbes and Melnichenko's representative",
+        "secondary-nationality review candidate"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Melnichenko ceased to be beneficiary of the trust holding EuroChem and SUEK and resigned both company boards in 2022. EuroChem denies that he controls the company; Founder is used as the durable relationship to the core wealth-producing businesses, not as a claim of current operational or legal control.",
+    "Forbes and Bloomberg continue to attribute the EuroChem and SUEK wealth to Melnichenko or his family despite the trust-beneficiary change. The classifications describe the fortune they currently attribute, while preserving the distinction between founder status and present control.",
+    "Metals & Mining follows Forbes' current 2026 classification and the fertilizer-and-coal asset base. Bloomberg calls the broader sector Industrial and identifies EuroChem, a vertically integrated fertilizer producer, as the largest asset; no separate fertilizer classification exists in the contract taxonomy.",
+    "Bloomberg and RBC report UAE citizenship acquired in 2021, while the current Forbes profile lists Russian citizenship only. Because the source document does not expose the exact nationality option labels, Emirati is retained as a review candidate rather than a proposed detail.",
+    "The residence correction relies on the current Forbes profile and Forbes Middle East's 2026 UAE-residents list. Bloomberg's Country / Region value remains Russian Federation, but that field is not presented as residence.",
+    "The source record lists the 142.81-metre A as a current relationship. Public reporting identifies it as Sailing Yacht A and documents Melnichenko's commission and its 2022 freeze, but company and trust changes make present beneficial ownership legally sensitive. The biographies use the historical commissioning relationship rather than asserting current ownership.",
+    "No personal LinkedIn, Instagram, Facebook, X/Twitter, YouTube, TikTok or personal website met the verification threshold. Same-name LinkedIn results belong to other people, and EuroChem, SUEK and foundation accounts were not substituted for personal profiles.",
+    "The Andrey Melnichenko Foundation site is an institutional website, not a personal website or a company site for the wealth-producing assets, so it is retained only as a source.",
+    "The existing Wikipedia link was not duplicated. No correction was needed to its URL.",
+    "Blank suffix, secondary residence, death, internal-note and unknown-name fields were treated as optional, inapplicable or system fields rather than enrichment targets."
+  ],
+  "review": {
+    "status": "pending",
+    "notes": "Review the 2022 trust-beneficiary and governance distinction carefully: retain Founder as the wealth relationship, avoid implying current EuroChem or SUEK control, and confirm the website nationality option before promoting the Emirati citizenship candidate."
+  }
+}

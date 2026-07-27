@@ -1,0 +1,378 @@
+{
+  "schema_version": 4,
+  "owner": {
+    "person_id": 2545,
+    "display_name": "Jeff Bezos",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The full name, Amazon founder and executive-chair role, American nationality, birth date, existing Wikipedia record and Koru ownership align across the source record, Amazon's official leadership page, SEC filings and the current Forbes profile."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Instagram",
+      "Wikipedia"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/jeff-bezos/",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The dedicated current profile exactly matches Jeff Bezos, Amazon, his founder and executive-chair roles, U.S. citizenship, Miami residence, Princeton education and ownership of Blue Origin and The Washington Post."
+    }
+  },
+  "primary_industry": {
+    "classification": "technology",
+    "label": "Technology",
+    "summary": "Bezos's wealth is principally derived from the Amazon founder stake created by building a technology platform spanning e-commerce and cloud computing.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Forbes identifies Amazon as his source of wealth, while Amazon and SEC records establish his founder role and continuing major equity ownership; Amazon's businesses include both technology-enabled retail and Amazon Web Services."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "He created his core fortune by founding Amazon in 1994 and retaining a substantial ownership stake as it grew.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes explicitly classifies Bezos as self-made and both Forbes and Amazon document his creation of Amazon from an online bookstore founded in 1994."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "His relationship to the principal wealth source remains that of Amazon's founder, executive chair and major shareholder.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Amazon's leadership page and current proxy identify Bezos as founder and executive chair, while the proxy records beneficial ownership of 8.8 percent of Amazon shares as of 24 February 2026."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "biography": {
+    "plain_text": "Jeff Bezos is an American technology entrepreneur who founded Amazon as an online bookseller in 1994 and built it into an e-commerce and cloud-computing group. His self-made fortune remains dominated by his Amazon stake. Now executive chair, he also founded Blue Origin, owns The Washington Post and supports climate and early-childhood initiatives through dedicated funds.",
+    "html": "<p>Jeff Bezos is an American technology entrepreneur who founded Amazon as an online bookseller in 1994 and built it into an e-commerce and cloud-computing group. His self-made fortune remains dominated by his Amazon stake. Now executive chair, he also founded Blue Origin, owns The Washington Post and supports climate and early-childhood initiatives through dedicated funds.</p>\r\n",
+    "word_count": 55,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Amazon, Forbes and the SEC establish the founder role, continuing executive position and major shareholding; Amazon's official biography also supports Blue Origin, The Washington Post, the Bezos Earth Fund and the Day One Fund."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Born in Albuquerque and educated in electrical engineering and computer science at Princeton, Jeff Bezos worked in finance before leaving D.E. Shaw to start an online bookstore in 1994. He expanded Amazon across e-commerce, devices, entertainment and cloud computing, turning his founder stake into the dominant source of his self-made fortune. Bezos stepped down as chief executive in 2021 but remains executive chair and a major shareholder.\n\nHis later work extends beyond retail. Amazon identifies him as founder of Blue Origin and owner of The Washington Post, while his Earth Fund and Day One Fund support climate, homelessness and early-childhood projects. His maritime holdings form a distinctive paired commission: Forbes identifies Koru as a custom-built 417-foot sailing yacht and Abeona as its dedicated support vessel, making the connection more substantial than an isolated ownership attribution.",
+    "html": "<p>Born in Albuquerque and educated in electrical engineering and computer science at Princeton, Jeff Bezos worked in finance before leaving D.E. Shaw to start an online bookstore in 1994. He expanded Amazon across e-commerce, devices, entertainment and cloud computing, turning his founder stake into the dominant source of his self-made fortune. Bezos stepped down as chief executive in 2021 but remains executive chair and a major shareholder.</p>\r\n<p>His later work extends beyond retail. Amazon identifies him as founder of Blue Origin and owner of The Washington Post, while his Earth Fund and Day One Fund support climate, homelessness and early-childhood projects. His maritime holdings form a distinctive paired commission: Forbes identifies Koru as a custom-built 417-foot sailing yacht and Abeona as its dedicated support vessel, making the connection more substantial than an isolated ownership attribution.</p>\r\n",
+    "word_count": 136,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Amazon, Forbes, the SEC and the Academy of Achievement support the career and wealth account; Forbes separately identifies the purpose-built relationship between Koru and its dedicated support vessel Abeona."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "known_for_title",
+      "value": "Founder and Executive Chair of Amazon",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Amazon's official leadership page and current SEC proxy directly identify Bezos as Amazon's founder and executive chair."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "place_of_birth",
+      "value": "Albuquerque, New Mexico",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The Academy of Achievement's detailed biographical profile records Albuquerque, New Mexico, as his birthplace and matches his full identity and 12 January 1964 birth date."
+      },
+      "source_ids": [
+        "S6"
+      ]
+    },
+    {
+      "action": "correct_existing",
+      "field": "biography",
+      "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Jeff_Bezos\">Jeffrey Preston Bezos</a>, an American entrepreneur, media mogul, investor, computer engineer, and commercial astronaut, was born on January 12, 1964. He is the founder and executive chairman of <a href=\"https://en.wikipedia.org/wiki/Amazon_(company)\">Amazon</a>, where he formerly served as president and chief executive officer. According to Forbes and Bloomberg&#39;s Billionaires Index, he is the world&#39;s wealthiest individual, with a net worth of roughly US$200 billion as of December 2021.</p>\r\n",
+      "value": "<p>Jeff Bezos is an American technology entrepreneur who founded Amazon as an online bookseller in 1994 and built it into an e-commerce and cloud-computing group. His self-made fortune remains dominated by his Amazon stake. Now executive chair, he also founded Blue Origin, owns The Washington Post and supports climate and early-childhood initiatives through dedicated funds.</p>\r\n",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The replacement removes embedded Wikipedia links and the obsolete December 2021 wealth ranking, uses current roles and focuses on the durable, strongly sourced origin and structure of his wealth."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://www.forbes.com/profile/jeff-bezos/",
+      "verification": "The dedicated current profile exactly matches Bezos's full identity, Amazon source of wealth, founder and executive-chair roles, U.S. citizenship, Miami residence, Princeton education and other major holdings. Type ID 11 is copied from the owner input lookup.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "This is the exact current Forbes person profile for the owner."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://ir.aboutamazon.com/officers-and-directors/person-details/default.aspx?ItemId=f9760835-5c29-49ac-a291-9d7f420c8cdc",
+      "verification": "Amazon's investor-relations site presents the official executive biography for Jeffrey P. Bezos and identifies him as Amazon's founder and executive chair. Type ID 14 is copied from the owner input lookup.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "This is Bezos's official leadership page on Amazon's corporate investor-relations domain."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "type": "Instagram",
+      "type_id": "9",
+      "current_url": "https://www.instagram.com/jeffbezo",
+      "candidate_url": "https://www.instagram.com/jeffbezos/",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The existing owner URL omits the final 's'. Blue Origin's official announcement links directly to the corrected account when quoting Bezos's first-person announcement of his New Shepard flight."
+      },
+      "source_ids": [
+        "S7"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/profile/jeff-bezos/",
+      "title": "Jeff Bezos",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "exact identity",
+        "verified Forbes profile",
+        "Amazon as source of wealth",
+        "self-made classification",
+        "founder and executive-chair roles",
+        "U.S. citizenship and Miami residence",
+        "Princeton education",
+        "Blue Origin and The Washington Post ownership"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://ir.aboutamazon.com/officers-and-directors/person-details/default.aspx?ItemId=f9760835-5c29-49ac-a291-9d7f420c8cdc",
+      "title": "Jeffrey P. Bezos, Executive Chair",
+      "publisher": "Amazon",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "exact identity",
+        "Amazon founder and executive-chair roles",
+        "Amazon founding in 1994",
+        "Blue Origin founder",
+        "The Washington Post ownership",
+        "Bezos Earth Fund and Day One Fund",
+        "Princeton electrical-engineering and computer-science degree"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926041026/tm261382-1_def14a.htm",
+      "title": "Amazon.com, Inc. 2026 Proxy Statement",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "Amazon founder and executive-chair roles",
+        "beneficial ownership of 950,434,581 Amazon shares",
+        "8.8 percent Amazon ownership as of 24 February 2026",
+        "continuing major-shareholder relationship"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.forbes.com/sites/forbeswealthteam/article/jeff-bezos/",
+      "title": "The Road To Riches And The Wealth Behind Jeff Bezos",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "career at D.E. Shaw",
+        "departure to found an online bookstore in 1994",
+        "Amazon as the dominant source of wealth",
+        "Blue Origin and Bezos Expeditions",
+        "custom Koru commission"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.forbes.com/sites/giacomotognini/2024/10/04/inside-the-superyachts-of-americas-richest-people/",
+      "title": "Inside The Superyachts Of America's Richest People",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "Jeff Bezos as Koru's owner",
+        "Koru as a custom-built 417-foot sailing yacht",
+        "Abeona as Koru's dedicated support vessel"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://achievement.org/achiever/jeffrey-p-bezos/",
+      "title": "Jeffrey P. Bezos",
+      "publisher": "Academy of Achievement",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "exact identity",
+        "12 January 1964 birth date",
+        "Albuquerque, New Mexico, birthplace",
+        "early life and education",
+        "finance career before Amazon"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.blueorigin.com/news/jeff-bezos-first-human-flight",
+      "title": "Jeff Bezos to Fly on First Human Flight",
+      "publisher": "Blue Origin",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "Jeff Bezos as Blue Origin founder",
+        "direct official link to the @jeffbezos Instagram account",
+        "Bezos's announcement of his first New Shepard flight"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Amazon spans retail, cloud computing, devices and entertainment. Technology is used because the core fortune comes from the founder stake in the technology platform and Forbes identifies Amazon as the source of wealth; this should not imply that every Amazon business is purely technological.",
+    "The 8.8 percent Amazon ownership figure is a dated snapshot from the 2026 proxy and may change through gifts or transactions. The biographies therefore describe Bezos as a major shareholder without fixing a percentage.",
+    "Forbes identifies Koru as a custom-built sailing yacht and Abeona as its dedicated support vessel. The long biography uses only that paired commissioning context and makes no claim about Bezos's design involvement or broader yachting activity.",
+    "The existing Instagram URL is malformed as https://www.instagram.com/jeffbezo. The proposed type-9 URL adds the missing final 's' and is directly corroborated by Blue Origin's official link.",
+    "No second nationality was established in strong sources, so secondary nationality remains blank.",
+    "No identity-verified personal LinkedIn, Facebook, YouTube, TikTok or personal website met the verification threshold. The official Amazon leadership page is proposed separately as a Company Website.",
+    "The existing Wikipedia link resolves to the correct person and was not duplicated.",
+    "Blank suffix and secondary-residence fields were treated as optional; blank age, death, internal-note and unknown-name fields remain inapplicable or system-managed."
+  ],
+  "review": {
+    "status": "pending",
+    "notes": "Review the corrected Instagram URL, the Technology classification for Amazon's mixed business model, and the limited Koru-Abeona commissioning sentence before approval."
+  }
+}

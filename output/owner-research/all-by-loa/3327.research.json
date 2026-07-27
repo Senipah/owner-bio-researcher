@@ -1,0 +1,413 @@
+{
+  "schema_version": 4,
+  "owner": {
+    "person_id": 3327,
+    "display_name": "Gulbakhor Ismailova",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The source record's name, Dilbar relationship, Uzbek and Russian nationalities, Tashkent residence, and family link to Alisher Usmanov match exact U.S., UK, and EU government records."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "middle_names",
+      "name_suffix",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "known_for_title",
+      "place_of_birth",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "limited",
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Focused exact-name and site:forbes.com/profile searches found Forbes reporting that mentions Ismailova and Dilbar, but no matching individual Forbes profile."
+    }
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No reliable source reviewed identifies a principal wealth-producing industry operated or independently owned by Ismailova. Her documented medical career and reported family-trust interests do not justify assigning her brother's metals, mining, telecommunications, or investment activities to her.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The public record consistently identifies a medical career and family-trust connections, but it does not establish a dominant operating business or investment sector belonging to Ismailova herself."
+    },
+    "source_ids": [
+      "S2",
+      "S4",
+      "S6",
+      "S7"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Ismailova's publicly documented financial position arose through family trusts and indirect transfers associated with her brother, Alisher Usmanov, rather than through an evidenced business she founded or operated. This describes the historical route into the structures, not a claim that she currently controls or benefits from them.",
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "U.S. and EU government records identify the siblings as settlors or describe indirect family transfers into the Dilbar-linked trust structure; later evidence changes the present-benefit question but not the documented family-transfer route."
+    },
+    "source_ids": [
+      "S2",
+      "S6",
+      "S7"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Historical authorities described Ismailova as a beneficiary behind Dilbar's ownership chain, but later reporting says she excluded herself from future trust benefits and is now a former beneficiary. Public evidence therefore does not reliably establish her present ownership, control, or economic interest.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The sources distinguish a well-documented historical beneficiary position from an unresolved current position; treating the earlier attribution as continuing ownership would overstate the evidence."
+    },
+    "source_ids": [
+      "S5",
+      "S6",
+      "S7",
+      "S9"
+    ]
+  },
+  "biography": {
+    "plain_text": "Gulbakhor Burkhanovna Ismailova is a retired gynaecologist who spent her medical career in Tashkent. Her public financial profile comes from family trusts associated with her brother, industrialist Alisher Usmanov, not a documented business career. Authorities historically connected those structures to Dilbar; later reporting identifies her as a former beneficiary whose current economic interest remains unresolved.",
+    "html": "<p>Gulbakhor Burkhanovna Ismailova is a retired gynaecologist who spent her medical career in Tashkent. Her public financial profile comes from family trusts associated with her brother, industrialist Alisher Usmanov, not a documented business career. Authorities historically connected those structures to Dilbar; later reporting identifies her as a former beneficiary whose current economic interest remains unresolved.</p>\r\n",
+    "word_count": 55,
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "Her identity, medical career, family relationship, and historical trust connection are strongly sourced, while the closing wording preserves the material uncertainty about any current benefit or control."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4",
+      "S6",
+      "S7",
+      "S9"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Gulbakhor Burkhanovna Ismailova is a retired gynaecologist who has said she was born, raised and worked throughout her medical career in Tashkent. Public records identify her as the sister of industrialist Alisher Usmanov. Unlike her brother, she has no documented fortune-building business career; her public financial profile instead comes from family trusts and holding companies associated with assets transferred within the family.\n\nU.S. and European authorities identified both siblings with The Sister Trust and historically described Ismailova as the beneficiary behind the chain owning Dilbar. That history explains the yacht connection but does not establish present control. Her representatives said in 2024 that she had irrevocably excluded herself from future trust benefits. In 2026, a German court found insufficient evidence that Usmanov controlled The Sister Trust, while reporting described Ismailova as its former principal beneficiary. Her current economic interest therefore remains unresolved in public evidence.",
+    "html": "<p>Gulbakhor Burkhanovna Ismailova is a retired gynaecologist who has said she was born, raised and worked throughout her medical career in Tashkent. Public records identify her as the sister of industrialist Alisher Usmanov. Unlike her brother, she has no documented fortune-building business career; her public financial profile instead comes from family trusts and holding companies associated with assets transferred within the family.</p>\r\n<p>U.S. and European authorities identified both siblings with The Sister Trust and historically described Ismailova as the beneficiary behind the chain owning Dilbar. That history explains the yacht connection but does not establish present control. Her representatives said in 2024 that she had irrevocably excluded herself from future trust benefits. In 2026, a German court found insufficient evidence that Usmanov controlled The Sister Trust, while reporting described Ismailova as its former principal beneficiary. Her current economic interest therefore remains unresolved in public evidence.</p>\r\n",
+    "word_count": 146,
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "The formative medical background and family relationship are supported by direct and official sources, and the trust narrative separates historical government findings, representative claims, and the latest reported court outcome."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S9"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "middle_names",
+      "value": "Burkhanovna",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "OFAC and the EU Court's official case notice both use the full name Gulbakhor Burkhanovna Ismailova."
+      },
+      "source_ids": [
+        "S1",
+        "S8"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "known_for_title",
+      "value": "Retired gynaecologist",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Ismailova directly described herself as a retired gynaecologist who practised throughout her career in Tashkent, corroborated by reporting based on her representatives."
+      },
+      "source_ids": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "place_of_birth",
+      "value": "Tashkent",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "OFAC lists Tashkent and Ismailova said in a direct interview that she was born and raised there; one other government database gives nearby Bekabad, so confidence is below very high."
+      },
+      "source_ids": [
+        "S1",
+        "S4",
+        "S10"
+      ]
+    },
+    {
+      "action": "correct_existing",
+      "field": "birth_day",
+      "existing_value": "1959",
+      "value": "22",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The source record has day and year transposed; U.S., UK, and EU government records consistently give 22 December 1959."
+      },
+      "source_ids": [
+        "S1",
+        "S3",
+        "S8"
+      ]
+    },
+    {
+      "action": "correct_existing",
+      "field": "birth_year",
+      "existing_value": "22",
+      "value": "1959",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The source record has day and year transposed; U.S., UK, and EU government records consistently give 22 December 1959."
+      },
+      "source_ids": [
+        "S1",
+        "S3",
+        "S8"
+      ]
+    }
+  ],
+  "proposed_socials": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://ofac.treasury.gov/recent-actions/20230412",
+      "title": "Russia-related Designations",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "full name and patronymic",
+        "date of birth",
+        "Tashkent birthplace",
+        "Uzbek, Russian and Cypriot nationalities",
+        "gender",
+        "link to The Sister Trust"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://home.treasury.gov/news/press-releases/jy1402",
+      "title": "Treasury Targets Russian Financial Facilitators and Sanctions Evaders Around the World",
+      "publisher": "U.S. Department of the Treasury",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "identity as Alisher Usmanov's sister",
+        "full name",
+        "both siblings as settlors of The Sister Trust",
+        "trust ownership of Navis Marine"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://find-and-update.company-information.service.gov.uk/disqualified-officers/natural/BCop-ptGV7TKjiEidMZ2Ub_tcMQ",
+      "title": "Gulbakhor Ismailova: Disqualification Details",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "date of birth",
+        "Uzbek nationality",
+        "Tashkent residence",
+        "exact identity"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.corriere.it/esteri/25_febbraio_15/la-sorella-del-miliardario-usmanov-ingiuste-le-sanzioni-contro-di-me-non-ho-nascosto-i-suoi-beni-249e7f97-ee66-4639-bfed-b0bcfffa8xlk.shtml",
+      "title": "Usmanov's sister: The sanctions against me are unjust; I did not hide his assets",
+      "publisher": "Corriere della Sera",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "direct interview",
+        "retired gynaecologist",
+        "medical career in Tashkent",
+        "birth and upbringing in Tashkent",
+        "dispute of asset-concealment claim"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.intellinews.com/sanctioned-sister-of-billionaire-usmanov-waives-right-to-benefit-from-family-trusts-318830/",
+      "title": "Sanctioned sister of billionaire Usmanov waives right to benefit from family trusts",
+      "publisher": "bne IntelliNews",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "gynaecologist living in Uzbekistan",
+        "family-trust origin",
+        "representatives' account of irrevocable exclusion from future trust benefits",
+        "dispute over ownership or control"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.occrp.org/en/project/russian-asset-tracker/german-police-raid-residence-of-russian-oligarch-alisher-usmanov-tax-evasion-and-money-laundering-suspected",
+      "title": "German Police Raid Property Tied to Russian Oligarch Alisher Usmanov",
+      "publisher": "Organized Crime and Corruption Reporting Project",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "trust ownership chain",
+        "historical beneficiary attribution",
+        "2024 correction about current beneficiaries",
+        "absence of public trust-beneficiary information"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://data.consilium.europa.eu/doc/document/ST-7999-2022-INIT/en/pdf",
+      "title": "Council restrictive-measures listing: Gulbakhor Ismailova",
+      "publisher": "Council of the European Union",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "identity and family relationship",
+        "historical beneficial ownership finding for Dilbar",
+        "holding-company and trust chain",
+        "indirect transfer attribution"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://eur-lex.europa.eu/eli/C/2024/5501/oj/eng/pdf",
+      "title": "Appeal by Gulbakhor Burkhanovna Ismailova in Case C-506/24 P",
+      "publisher": "Official Journal of the European Union",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "full legal name and patronymic",
+        "exact identity"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.themoscowtimes.com/2026/06/30/german-court-rules-eu-sanctions-no-longer-apply-to-superyacht-linked-to-usmanov-a93129",
+      "title": "German Court Rules EU Sanctions No Longer Apply to Superyacht Linked to Usmanov",
+      "publisher": "The Moscow Times",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "June 2026 German court finding of insufficient evidence that Usmanov controls The Sister Trust",
+        "Ismailova as former principal beneficiary",
+        "current uncertainty about control of Dilbar"
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://war-sanctions.gur.gov.ua/en/sanctions/persons/4368",
+      "title": "Ismailova Gulbakhor Burkhanovna",
+      "publisher": "Main Directorate of Intelligence of the Ministry of Defence of Ukraine",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "alternate birthplace record of Bekabad in Tashkent Region",
+        "date of birth",
+        "full name",
+        "identity uncertainty"
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.forbes.com/sites/giacomotognini/2022/03/01/biden-and-allies-are-coming-for-russian-billionaires-yachts-forbes-tracked-down-61-heres-where-to-find-them/",
+      "title": "Biden And Allies Are Coming For Russian Billionaires' Yachts: Forbes Tracked Down 63",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "Forbes check",
+        "historical reporting on Dilbar's holding and trust chain",
+        "identity relationship to Alisher Usmanov"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "No individual Forbes profile was found. Forbes has reported on Ismailova in connection with Dilbar, but that reporting is not a personal profile.",
+    "No personal Instagram, LinkedIn, personal website, Facebook, Twitter/X, YouTube, or TikTok account could be identity-verified in focused exact-name searches; namesakes and third-party posts were rejected.",
+    "Current beneficial ownership of Dilbar and the underlying trusts is unresolved in public evidence. Historical government findings, later representative statements, an OCCRP correction, and the 2026 German ruling should not be collapsed into a present-tense ownership claim.",
+    "OFAC and Ismailova's direct interview give Tashkent as her birthplace, while a Ukrainian government database gives Bekabad in Tashkent Region; Tashkent is proposed at high rather than very-high confidence.",
+    "OFAC lists Uzbekistan, Russia and Cyprus nationalities. The owner record already contains Russian and Uzbekistanian values, and the site exposes only two nationality fields, so no nationality change is proposed.",
+    "Blank suffix, secondary residence, calculated age, death, and unknown-name fields were classified as optional, calculated, inapplicable, or system fields rather than enrichment targets."
+  ],
+  "review": {
+    "status": "pending",
+    "notes": null
+  }
+}

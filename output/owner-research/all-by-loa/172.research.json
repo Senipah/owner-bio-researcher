@@ -1,0 +1,485 @@
+{
+  "schema_version": 4,
+  "owner": {
+    "person_id": 172,
+    "display_name": "Bernard Arnault",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The immutable owner's exact name, French identity, LVMH leadership, full name, birthplace, and birth date align across current LVMH, Forbes, and French government records."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/bernard-arnault/",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The current Forbes profile matches Bernard Arnault's name, family, LVMH chairmanship, source of wealth, and documented acquisition history."
+    }
+  },
+  "primary_industry": {
+    "classification": "fashion_retail",
+    "label": "Fashion & Retail",
+    "summary": "Arnault's principal fortune derives from his controlling interest in LVMH, the luxury group spanning fashion and leather goods, watches and jewelry, beauty, selective retailing, wines, and hospitality.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Forbes identifies LVMH as his source of wealth, while LVMH's official profile and history establish his controlling leadership of the luxury-goods group."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Arnault began in his family's construction company but did not inherit LVMH or its luxury portfolio. He used capital from the construction business to acquire Boussac and Christian Dior, then took control of LVMH and expanded the core fortune through acquisitions and brand development.",
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Forbes and LVMH document inherited access to a construction business but show that he bought and built the principal luxury assets that produced his fortune."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4",
+      "S5"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "operator",
+    "label": "Operator",
+    "summary": "Arnault became LVMH's majority shareholder in 1989 and has materially run the existing group as chairman and chief executive. He is classified as its operator rather than founder because LVMH was created by the 1987 merger of Moët Hennessy and Louis Vuitton.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "LVMH's official history distinguishes the group's 1987 creation from Arnault's majority ownership and leadership beginning in 1989."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "biography": {
+    "plain_text": "Bernard Arnault is a French luxury-goods executive who transformed capital from his family's construction business into control of Christian Dior and then LVMH. As LVMH's majority shareholder, chairman and chief executive, he built a portfolio spanning fashion, jewelry, beauty, wines and retail, while retaining control through family holding company Groupe Arnault.",
+    "html": "<p>Bernard Arnault is a French luxury-goods executive who transformed capital from his family's construction business into control of Christian Dior and then LVMH. As LVMH's majority shareholder, chairman and chief executive, he built a portfolio spanning fashion, jewelry, beauty, wines and retail, while retaining control through family holding company Groupe Arnault.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "The summary is supported by Forbes and current LVMH material for his construction-business background, acquisitions, controlling shareholding, leadership, portfolio development, and family holding company."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Bernard Arnault trained at École Polytechnique and began as an engineer in his family's construction company, eventually becoming its chairman. In 1984 he used capital from that business to acquire the Boussac group, reorganised Financière Agache and made Christian Dior the base of a luxury strategy. He became LVMH's majority shareholder in 1989 and has led the group since, combining controlling ownership with the chairman and chief executive roles.\n\nUnder Arnault, LVMH expanded through brand-building and acquisitions, including Tiffany & Co., while the family's Groupe Arnault holding company remained the control vehicle. His business interests also reach yachting: LVMH owns Royal Van Lent, the Feadship builder, and Forbes identifies Arnault as the owner of the Feadship Symphony. Mediapart reported in 2026 that a new 143-metre Royal Van Lent yacht had been ordered for him, connecting his private fleet with the group's shipbuilding arm.",
+    "html": "<p>Bernard Arnault trained at École Polytechnique and began as an engineer in his family's construction company, eventually becoming its chairman. In 1984 he used capital from that business to acquire the Boussac group, reorganised Financière Agache and made Christian Dior the base of a luxury strategy. He became LVMH's majority shareholder in 1989 and has led the group since, combining controlling ownership with the chairman and chief executive roles.</p>\r\n<p>Under Arnault, LVMH expanded through brand-building and acquisitions, including Tiffany &amp; Co., while the family's Groupe Arnault holding company remained the control vehicle. His business interests also reach yachting: LVMH owns Royal Van Lent, the Feadship builder, and Forbes identifies Arnault as the owner of the Feadship Symphony. Mediapart reported in 2026 that a new 143-metre Royal Van Lent yacht had been ordered for him, connecting his private fleet with the group's shipbuilding arm.</p>\r\n",
+    "word_count": 142,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Official LVMH and Forbes sources support the career, acquisition, ownership, leadership, and family-holding narrative; LVMH, Forbes, and Mediapart independently support the yachting paragraph."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S7",
+      "S8"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "middle_names",
+      "value": "Jean Étienne",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "A French Legion of Honour decree gives his full name as Bernard, Jean, Etienne Arnault, independently aligning with his Bloomberg profile."
+      },
+      "source_ids": [
+        "S6",
+        "S11"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "known_for_title",
+      "value": "Chairman and Chief Executive Officer of LVMH",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "LVMH's current governance profile identifies Arnault as Chairman and Chief Executive Officer."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "place_of_birth",
+      "value": "Roubaix",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "LVMH's current official governance profile states that Arnault was born in Roubaix."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "birth_day",
+      "value": "5",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "LVMH's current official governance profile gives his birth date as 5 March 1949."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "birth_month",
+      "value": "March",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "LVMH's current official governance profile gives his birth date as 5 March 1949."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "birth_year",
+      "value": "1949",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "LVMH's current official governance profile gives his birth date as 5 March 1949."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "3",
+      "type": "Twitter",
+      "url": "https://x.com/BernardArnault",
+      "verification": "Current reporting identifies the newly created verified @BernardArnault account as Arnault's only personal social-media account and links his first post to the exact LVMH identity.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "A Bloomberg affiliate and independent current reporting both identify the exact verified handle, while the account itself supplies the canonical URL."
+      },
+      "source_ids": [
+        "S9",
+        "S10",
+        "S12"
+      ]
+    },
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://www.forbes.com/profile/bernard-arnault/",
+      "verification": "The dedicated Forbes profile matches Arnault's name, family, LVMH chairmanship, source of wealth, and business history.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "This is Forbes's dedicated current profile for Bernard Arnault and family."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.lvmh.com/en/our-group/governance/bernard-arnault",
+      "verification": "LVMH's official governance page identifies Bernard Arnault as the group's Chairman and Chief Executive Officer and gives matching biographical details.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The official company profile directly establishes Arnault's leadership and identity."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/profile/bernard-arnault/",
+      "title": "Bernard Arnault & family",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "dedicated Forbes profile",
+        "identity",
+        "LVMH source of wealth",
+        "chairman and chief executive role",
+        "family control",
+        "construction-business capital used for Dior acquisition"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.lvmh.com/en/our-group/governance/bernard-arnault",
+      "title": "Bernard Arnault",
+      "publisher": "LVMH",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "identity",
+        "Chairman and Chief Executive Officer role",
+        "Groupe Arnault presidency",
+        "Roubaix birthplace",
+        "5 March 1949 birth date",
+        "École Polytechnique education",
+        "construction-company career",
+        "1984 Financière Agache reorganisation",
+        "Christian Dior strategy",
+        "1989 LVMH majority ownership"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.lvmh.com/our-group/history",
+      "title": "History",
+      "publisher": "LVMH",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "LVMH creation in 1987",
+        "Arnault leadership since 1989",
+        "majority shareholding",
+        "operator rather than founder classification",
+        "luxury portfolio development"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.forbes.com/sites/forbeswealthteam/article/behind-the-billions-bernard-arnault/",
+      "title": "Behind The Billions: Bernard Arnault",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "construction-business background",
+        "Boussac and Christian Dior acquisition",
+        "LVMH control",
+        "Groupe Arnault family holding company",
+        "acquisition-led expansion",
+        "ownership of Symphony"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.forbes.com/sites/aliciapark/2026/04/13/lvmh-founder-bernard-arnaults-fortune-falls-50-billion-this-year/",
+      "title": "LVMH Founder Bernard Arnault's Fortune Falls $50 Billion This Year",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "current LVMH leadership",
+        "approximately 50 percent LVMH ownership",
+        "1984 pivot from construction to luxury",
+        "Dior and Boussac acquisition",
+        "control of LVMH by 1989",
+        "75-brand luxury group"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.legiondhonneur.fr/sites/default/files/2024-10/lh_20231231.pdf",
+      "title": "Décret du 31 décembre 2023 portant élévation aux dignités de grand'croix et de grand officier",
+      "publisher": "Grande Chancellerie de la Légion d'honneur",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "full name Bernard Jean Etienne Arnault",
+        "business-president identity"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.lvmh.com/en/our-maisons/other-activities/royal-van-lent/",
+      "title": "Royal Van Lent",
+      "publisher": "LVMH",
+      "tier": 1,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "Royal Van Lent as an LVMH Maison",
+        "Royal Van Lent construction of Feadship custom yachts"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.mediapart.fr/en/journal/france/060426/french-billionaire-bernard-arnault-tax-havens-and-new-500-million-euro-megayacht",
+      "title": "French billionaire Bernard Arnault, tax havens and a new €500 million megayacht",
+      "publisher": "Mediapart",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "reported 143-metre Royal Van Lent yacht order",
+        "Symphony acquisition in 2015",
+        "Bernard Arnault yacht context"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.bloomberght.com/avrupa-nin-en-zengini-aile-ici-kavga-soylentilerini-x-e-tasidi-3783898",
+      "title": "Avrupa'nın en zengini aile içi kavga söylentilerini X'e taşıdı",
+      "publisher": "Bloomberg HT",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "verified @BernardArnault X account",
+        "first personal X post",
+        "statement that X is his only personal social-media account"
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.mononews.gr/business/bernar-arno-lvmh-ston-polemo-ton-social-o-plousioteros-evropaios-ti-apanta-stis-fimes-peri-oikogeneiakis-diamachis",
+      "title": "Μπερνάρ Αρνό (LVMH): Στον «πόλεμο» των social ο πλουσιότερος Ευρωπαίος",
+      "publisher": "Mononews",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "exact verified @BernardArnault X handle",
+        "new personal account",
+        "first-post identity context"
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.bloomberg.com/profile/person/1392853",
+      "title": "Bernard Jean Etienne Arnault",
+      "publisher": "Bloomberg",
+      "tier": 2,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "full name",
+        "identity",
+        "LVMH leadership"
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://x.com/BernardArnault",
+      "title": "Bernard Arnault (@BernardArnault)",
+      "publisher": "X",
+      "tier": 3,
+      "accessed_at": "2026-07-27",
+      "supports": [
+        "canonical X profile URL"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Mediapart's current reporting aligns in yard and approximate length with the input vessel Project Maestro, but the public source reviewed does not use that project name or independently establish beneficial ownership under that name.",
+    "The existing short biography is being superseded because its September 2021 net-worth figure and global wealth ranking are stale, and the company description is malformed; the dossier biography uses durable business facts instead.",
+    "No personal LinkedIn, Instagram, personal website, Facebook, YouTube, or TikTok account met the identity-verification threshold. Current reporting says the newly created X account is Arnault's only personal social-media account.",
+    "No strong evidence of a secondary nationality was found, so the blank was preserved rather than inferred.",
+    "Blank title, suffix, secondary residence, death, internal-note, and unknown-name fields were treated as optional, inapplicable, or system fields rather than enrichment targets."
+  ],
+  "review": {
+    "status": "pending",
+    "notes": null
+  }
+}
