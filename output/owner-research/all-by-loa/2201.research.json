@@ -1,12 +1,13 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
+  "record_type": "person",
   "owner": {
     "person_id": 2201,
     "display_name": "Alisher Usmanov",
     "identity_confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The exact Forbes profile, FIE biography, full name, birth record, metals-and-mining career and enriched source record's Dilbar relationship consistently identify the same Alisher Usmanov."
+      "reason": "The exact Forbes profile and official FIE biographies agree on Usmanov's full identity, Russian nationality, Uzbek birthplace, birth date, USM role, metals-and-mining career, and fencing history."
     }
   },
   "input_snapshot": {
@@ -67,23 +68,57 @@
     }
   },
   "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Uzbekistan-born Russian industrial investor whose fortune is rooted in metals and mining.",
+    "wealth_or_prominence_route": "An early manufacturing venture was followed by finance and investment work, then the acquisition-led assembly of iron-ore and steel assets into Metalloinvest.",
+    "turning_point": "Consolidating acquired metals businesses into Metalloinvest created the foundation for a broader investment career.",
+    "later_chapter": "He developed USM across telecommunications, technology and media, backed early internet investments, and combined fencing administration with charitable work.",
+    "character_detail": "Competitive fencing became a durable second strand of his public life through international administration and direct support for the sport.",
+    "excluded_transient_context": [
+      "Current and former personal vessel ownership",
+      "Vessel dimensions, facilities, location, and legal status",
+      "Current net worth, wealth ranking, and asset valuations",
+      "Current sanctions, litigation, and disputed allegations"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "calibration_archetypes": [
+      "founder_operator",
+      "investor_philanthropist"
+    ],
+    "notes": "The biographies follow the manufacturing-to-metals-to-investment route, use fencing and philanthropy as the later chapter, and exclude vessel facts, wealth figures, legal disputes, sanctions, and allegations."
+  },
+  "editorial_note": null,
   "forbes_profile": {
     "status": "verified",
     "url": "https://www.forbes.com/profile/alisher-usmanov/",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The current Forbes profile exactly matches Usmanov's birth origin, Metalloinvest and USM interests, Gazprom Investholding career, technology investments, residence and Dilbar context."
+      "reason": "The current exact Forbes profile matches Usmanov's name, Russian citizenship, Uzbek origin, Metalloinvest founder role, USM interests, fencing history, and Tashkent residence."
     }
   },
   "primary_industry": {
     "classification": "metals_mining",
     "label": "Metals & Mining",
-    "summary": "Usmanov's largest current holding is his stake in iron-ore and steel producer Metalloinvest, so metals and mining remains the principal identifiable sector despite later telecommunications, technology and media investments.",
+    "summary": "Metalloinvest, an iron-ore and steel group, remains the largest identifiable holding behind Usmanov's diversified investment portfolio.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The March 2026 Forbes profile directly identifies Metalloinvest as his largest holding, and company disclosure corroborates the mining and steel asset base and his major shareholding."
+      "reason": "The current Forbes profile identifies Metalloinvest as his largest holding, while official company disclosure corroborates the group's mining and steel activities and his major indirect interest."
     },
     "source_ids": [
       "S1",
@@ -93,11 +128,11 @@
   "wealth_origin": {
     "classification": "self_made",
     "label": "Self-made",
-    "summary": "He first earned substantial wealth manufacturing scarce plastic bags in the late Soviet period, then assembled the mining and steel assets that became Metalloinvest through acquisitions rather than inheritance.",
+    "summary": "Usmanov began with a manufacturing venture and built his central metals fortune by acquiring and combining iron-ore and steel assets rather than inheriting them.",
     "confidence": {
       "score": 98,
       "band": "very_high",
-      "reason": "Forbes identifies him as self-made and documents the plastic-bag business; Reuters and Metalloinvest disclosures independently describe the acquisition-led construction of the core metals group."
+      "reason": "Forbes identifies him as self-made and documents his first manufacturing fortune; Reuters and company disclosure support the acquisition-led formation of the core metals group."
     },
     "source_ids": [
       "S1",
@@ -108,25 +143,26 @@
   "wealth_relationship": {
     "classification": "founder",
     "label": "Founder",
-    "summary": "Usmanov founded Metalloinvest, his largest current holding, and later founded USM to group his metals, mining, telecommunications, technology and media interests.",
+    "summary": "Usmanov founded Metalloinvest and later founded USM as a diversified holding company spanning metals, mining, telecommunications, technology, and media.",
     "confidence": {
       "score": 98,
       "band": "very_high",
-      "reason": "Forbes currently labels him founder of Metalloinvest, while the official FIE biography identifies him as founder of USM."
+      "reason": "Forbes identifies him as the founder of Metalloinvest, and official FIE biographies identify him as the founder of USM."
     },
     "source_ids": [
       "S1",
-      "S2"
+      "S2",
+      "S4"
     ]
   },
   "biography": {
-    "plain_text": "Alisher Usmanov is an Uzbekistan-born Russian industrial investor whose largest holding is a stake in iron-ore and steel producer Metalloinvest. After first earning from plastic-bag manufacturing, he assembled mining assets through acquisitions and diversified into telecommunications and technology. Early investments in Facebook broadened his portfolio, while fencing administration and cultural philanthropy became prominent later chapters.",
-    "html": "<p>Alisher Usmanov is an Uzbekistan-born Russian industrial investor whose largest holding is a stake in iron-ore and steel producer Metalloinvest. After first earning from plastic-bag manufacturing, he assembled mining assets through acquisitions and diversified into telecommunications and technology. Early investments in Facebook broadened his portfolio, while fencing administration and cultural philanthropy became prominent later chapters.</p>\r\n",
-    "word_count": 55,
+    "plain_text": "Alisher Usmanov is an Uzbekistan-born Russian industrial investor who built his fortune in metals and mining. After an early manufacturing venture, he assembled iron-ore and steel assets into Metalloinvest, then expanded into telecommunications and technology investments. A former competitive fencer, he later paired international sports administration with philanthropy supporting culture, education and sport.",
+    "html": "<p>Alisher Usmanov is an Uzbekistan-born Russian industrial investor who built his fortune in metals and mining. After an early manufacturing venture, he assembled iron-ore and steel assets into Metalloinvest, then expanded into telecommunications and technology investments. A former competitive fencer, he later paired international sports administration with philanthropy supporting culture, education and sport.</p>\r\n",
+    "word_count": 53,
     "confidence": {
       "score": 97,
       "band": "very_high",
-      "reason": "Forbes and company disclosures support the current asset emphasis and wealth mechanism, while official FIE and foundation sources corroborate his fencing and philanthropy."
+      "reason": "The metals route and later investment activity are independently supported, while official fencing and foundation sources corroborate the later public chapter."
     },
     "source_ids": [
       "S1",
@@ -137,18 +173,19 @@
     ]
   },
   "long_biography": {
-    "plain_text": "Alisher Usmanov was born in Chust, Uzbekistan, and trained in international law in Moscow. He says his first fortune came from manufacturing scarce plastic bags during the late Soviet period. After working at Gazprom Investholding, he assembled iron-ore and steel assets through secondary-market acquisitions, consolidating them as Metalloinvest. That company remains his largest holding, making metals and mining the clearest basis of his fortune.\n\nUsmanov later grouped mining, telecommunications, technology and media interests under USM and backed early investments in Facebook and other technology companies. A former competitive fencer, he has also spent much of his later public life in fencing administration and philanthropy supporting culture, education and sport. His portfolio is diversified, but his principal current asset remains Metalloinvest, keeping the underlying wealth story rooted in metals and mining.",
-    "html": "<p>Alisher Usmanov was born in Chust, Uzbekistan, and trained in international law in Moscow. He says his first fortune came from manufacturing scarce plastic bags during the late Soviet period. After working at Gazprom Investholding, he assembled iron-ore and steel assets through secondary-market acquisitions, consolidating them as Metalloinvest. That company remains his largest holding, making metals and mining the clearest basis of his fortune.</p>\r\n<p>Usmanov later grouped mining, telecommunications, technology and media interests under USM and backed early investments in Facebook and other technology companies. A former competitive fencer, he has also spent much of his later public life in fencing administration and philanthropy supporting culture, education and sport. His portfolio is diversified, but his principal current asset remains Metalloinvest, keeping the underlying wealth story rooted in metals and mining.</p>\r\n",
-    "word_count": 130,
+    "plain_text": "Alisher Usmanov’s route to industrial wealth began with a manufacturing venture during the late Soviet period. He then moved into finance and investment, using secondary-market acquisitions to assemble iron-ore and steel assets that became Metalloinvest. The group established metals and mining as the foundation for a wider investment career.\n\nUsmanov later developed USM around telecommunications, technology and media, and made early investments in internet companies including Facebook. Fencing supplied a different thread: once a competitive athlete, he became a long-serving international administrator and funded programmes for the sport. His charitable foundation has also supported culture, education and scientific initiatives, extending the same institution-building approach beyond business.",
+    "html": "<p>Alisher Usmanov’s route to industrial wealth began with a manufacturing venture during the late Soviet period. He then moved into finance and investment, using secondary-market acquisitions to assemble iron-ore and steel assets that became Metalloinvest. The group established metals and mining as the foundation for a wider investment career.</p>\r\n<p>Usmanov later developed USM around telecommunications, technology and media, and made early investments in internet companies including Facebook. Fencing supplied a different thread: once a competitive athlete, he became a long-serving international administrator and funded programmes for the sport. His charitable foundation has also supported culture, education and scientific initiatives, extending the same institution-building approach beyond business.</p>\r\n",
+    "word_count": 106,
     "confidence": {
       "score": 97,
       "band": "very_high",
-      "reason": "Every material business claim is supported by Forbes, Reuters or company disclosure, and official FIE and foundation sources support his background and later public activity."
+      "reason": "Forbes, Reuters, and official company material support the industrial and investment route, while FIE and foundation sources support the fencing and charitable chapters."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
+      "S4",
       "S5",
       "S6"
     ]
@@ -161,11 +198,12 @@
       "confidence": {
         "score": 98,
         "band": "very_high",
-        "reason": "Forbes identifies Usmanov as founder of Metalloinvest, and the official FIE biography identifies him as founder of USM."
+        "reason": "Forbes identifies Usmanov as founder of Metalloinvest, and official FIE biographies identify him as founder of USM."
       },
       "source_ids": [
         "S1",
-        "S2"
+        "S2",
+        "S4"
       ]
     },
     {
@@ -175,10 +213,11 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The official FIE biography gives Chust in Uzbekistan's Namangan Region as his birthplace."
+        "reason": "Official FIE biographies give Chust in Uzbekistan's Namangan Region as his birthplace."
       },
       "source_ids": [
-        "S2"
+        "S2",
+        "S4"
       ]
     },
     {
@@ -189,10 +228,11 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The source record has the year transposed into the day field; the official FIE biography gives 9 September 1953."
+        "reason": "The owner input has the year transposed into the day field; two official FIE biographies give 9 September 1953."
       },
       "source_ids": [
-        "S2"
+        "S2",
+        "S4"
       ]
     },
     {
@@ -203,10 +243,11 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The source record has the day transposed into the year field; the official FIE biography gives 9 September 1953."
+        "reason": "The owner input has the day transposed into the year field; two official FIE biographies give 9 September 1953."
       },
       "source_ids": [
-        "S2"
+        "S2",
+        "S4"
       ]
     },
     {
@@ -217,28 +258,10 @@
       "confidence": {
         "score": 98,
         "band": "very_high",
-        "reason": "The Forbes profile updated in March 2026 states that Usmanov moved to Tashkent in 2022 and currently lists his residence as Tashkent, Uzbekistan."
+        "reason": "The current Forbes profile states that Usmanov moved to Tashkent in 2022 and lists his residence as Tashkent, Uzbekistan."
       },
       "source_ids": [
         "S1"
-      ]
-    },
-    {
-      "action": "correct_existing",
-      "field": "biography",
-      "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Alisher_Usmanov\">Alisher Burkhanovich Usmanov</a> is a philanthropist and business entrepreneur from Uzbekistan.</p>\r\n",
-      "value": "<p>Alisher Usmanov is an Uzbekistan-born Russian industrial investor whose largest holding is a stake in iron-ore and steel producer Metalloinvest. After first earning from plastic-bag manufacturing, he assembled mining assets through acquisitions and diversified into telecommunications and technology. Early investments in Facebook broadened his portfolio, while fencing administration and cultural philanthropy became prominent later chapters.</p>\r\n",
-      "confidence": {
-        "score": 97,
-        "band": "very_high",
-        "reason": "The replacement explains the documented mechanism and current basis of his wealth while adding only strongly sourced later context."
-      },
-      "source_ids": [
-        "S1",
-        "S2",
-        "S3",
-        "S5",
-        "S6"
       ]
     }
   ],
@@ -247,11 +270,11 @@
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/alisher-usmanov/",
-      "verification": "The profile matches Usmanov's full identity, current largest holding, business history, residence and Dilbar context; type ID 11 is copied from the current owner input lookup.",
+      "verification": "The exact profile matches Usmanov's identity, Metalloinvest founder role, diversified interests, Russian citizenship, Uzbek origin, and Tashkent residence; type ID 11 is copied from the owner document lookup.",
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "This is an exact, current Forbes profile with multiple matching identity facts."
+        "reason": "This is an exact and current Forbes identity match."
       },
       "source_ids": [
         "S1"
@@ -261,11 +284,11 @@
       "type_id": "14",
       "type": "Company Website",
       "url": "https://www.metalloinvest.com/",
-      "verification": "This is Metalloinvest's official domain; Forbes identifies Usmanov as its founder and largest holding, while company disclosure identifies him as its major indirect shareholder. Type ID 14 is copied from the current owner input lookup.",
+      "verification": "This is Metalloinvest's official domain; Forbes identifies Usmanov as the company's founder and the holding as his largest, while official company disclosure establishes his major indirect interest. Type ID 14 is copied from the owner document lookup.",
       "confidence": {
         "score": 98,
         "band": "very_high",
-        "reason": "The official operating-company domain is tied to Usmanov by current Forbes evidence and company ownership disclosure."
+        "reason": "The official operating-company domain is directly tied to Usmanov by current Forbes evidence and company disclosure."
       },
       "source_ids": [
         "S1",
@@ -281,17 +304,14 @@
       "title": "Alisher Usmanov",
       "publisher": "Forbes",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
-        "verified Forbes profile",
-        "self-made status",
-        "first fortune from plastic bags",
-        "Metalloinvest founder role and largest current holding",
-        "USM business sectors",
-        "technology investments",
-        "current residence",
-        "Dilbar identity context"
+        "Exact identity and verified Forbes result",
+        "Russian citizenship, Uzbek origin, and Tashkent residence",
+        "Self-made status and first manufacturing fortune",
+        "Metalloinvest founder role and largest holding",
+        "Metals, telecommunications, media, and technology investments",
+        "Fencing background and administration"
       ]
     },
     {
@@ -300,15 +320,13 @@
       "title": "Alisher Usmanov (RUS)",
       "publisher": "International Fencing Federation",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
-        "birth date",
-        "birthplace",
-        "international-law education",
-        "USM founder role",
-        "Metalloinvest and telecommunications interests",
-        "fencing administration"
+        "Full identity, birth date, and birthplace",
+        "International-law and banking education",
+        "USM founder role and diversified sectors",
+        "Competitive fencing and international administration",
+        "Fencing and charitable support"
       ]
     },
     {
@@ -317,12 +335,12 @@
       "title": "Metalloinvest Finance Designated Activity Company Eurobond Offering Memorandum",
       "publisher": "Metalloinvest",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "official Metalloinvest domain",
-        "acquisition-built company structure",
-        "Alisher Usmanov as major indirect shareholder",
-        "iron-ore and steel business"
+        "Official Metalloinvest domain",
+        "Acquisition-built company structure",
+        "Usmanov's major indirect interest",
+        "Iron-ore and steel operations"
       ]
     },
     {
@@ -331,13 +349,12 @@
       "title": "Elections 2024: Candidatures for the Presidency",
       "publisher": "International Fencing Federation",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
-        "USM founder role",
-        "metals, mining, telecom and technology interests",
-        "fencing administration",
-        "philanthropic foundations"
+        "Full identity, birth date, birthplace, and Russian nationality",
+        "USM founder role and diversified sectors",
+        "Long-running fencing administration",
+        "Charitable foundations"
       ]
     },
     {
@@ -346,10 +363,10 @@
       "title": "Art, Science and Sport Charitable Foundation",
       "publisher": "Art, Science and Sport Charitable Foundation",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "foundation established by Alisher Usmanov",
-        "cultural, educational and sporting philanthropy"
+        "Foundation established by Alisher Usmanov",
+        "Support for culture, education, science, sport, and social initiatives"
       ]
     },
     {
@@ -358,25 +375,24 @@
       "title": "Usmanov Shows His Acumen Again in Facebook IPO",
       "publisher": "Reuters via The Moscow Times",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "plastic-bag business",
-        "metals and mining wealth origin",
+        "Early manufacturing venture",
+        "Metals-and-mining wealth origin",
         "Metalloinvest built through secondary-market acquisitions",
-        "early Facebook investment"
+        "Early Facebook investment"
       ]
     }
   ],
   "uncertainties": [
-    "Current Uzbek nationality remains below the proposal threshold. Uzbek birth and current residence do not by themselves establish citizenship, while the March 2026 Forbes profile lists Russian citizenship.",
-    "No personal Instagram, LinkedIn, personal website, Facebook, Twitter/X, YouTube or TikTok account was identity-verified; namesake, company and unofficial accounts were rejected.",
-    "The residence correction reflects Forbes' current Tashkent listing. It does not establish that Switzerland or Monaco ceased to be secondary places of residence.",
-    "The existing Wikipedia profile is retained unchanged and was not used as sole evidence for any material wealth or biographical claim.",
-    "Dilbar appears in the enriched owner record and the exact Forbes profile, but neither source establishes a meaningful design, commissioning or operational story suitable for the biographies.",
-    "Blank suffix, death, internal-note and unknown-name fields were treated as optional, inapplicable or system fields rather than enrichment targets."
+    "No sufficiently strong public evidence established a second citizenship; Uzbek birth and current residence do not by themselves establish Uzbek nationality.",
+    "No officially cross-linked personal LinkedIn, Instagram, Facebook, X, YouTube, TikTok, or personal website was found; namesake and unofficial accounts were rejected.",
+    "The residence correction reflects Forbes' current Tashkent listing. It does not establish whether Switzerland or Monaco remain secondary places of residence.",
+    "The existing Wikipedia profile is retained unchanged and was not used as sole evidence for any material biographical or wealth claim.",
+    "Blank suffix, death, internal-note, and unknown-name fields were treated as optional, inapplicable, or system fields rather than enrichment targets."
   ],
   "review": {
     "status": "pending",
-    "notes": null
+    "notes": "Identity, wealth route, and core business history are strongly evidenced. Confirm the residence change during editorial review and do not infer a second nationality from birthplace or residence."
   }
 }

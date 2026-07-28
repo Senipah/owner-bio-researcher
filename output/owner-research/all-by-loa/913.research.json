@@ -1,12 +1,13 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
+  "record_type": "institution",
   "owner": {
     "person_id": 913,
     "display_name": "Oman Government",
     "identity_confidence": {
-      "score": 94,
-      "band": "high",
-      "reason": "The source record explicitly names an institution, while official Omani material and specialist vessel records corroborate a government Royal Yacht Squadron context for Dhafi. The exact legal owner or agency is not established."
+      "score": 99,
+      "band": "very_high",
+      "reason": "The immutable display name explicitly denotes a government, and current official Omani sources describe the Sultanate's government, government entities and Council of Ministers as public institutions rather than a natural person."
     }
   },
   "input_snapshot": {
@@ -84,24 +85,39 @@
       "16": "TikTok"
     }
   },
-  "research_status": "limited",
+  "research_status": "not_applicable",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "The Oman Government entry represents a public institution rather than a natural person. Official Omani sources describe the Sultanate's government as a system of state bodies, with the Council of Ministers serving as its chief executive body. The database label does not identify one ministry, agency or office. Person-specific biography, private-wealth, birth, mortality and personal-social fields are therefore not applicable.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Current official Omani government sources establish the institutional structure and show that the generic record label cannot be treated as a natural-person identity."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
   "forbes_profile": {
     "status": "not_found",
     "url": null,
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Focused exact-name and site-restricted searches found no Forbes profile for Oman Government; the record is an institution rather than a person eligible for a personal wealth profile."
+      "reason": "Focused exact-name and site:forbes.com/profile searches found no dedicated Forbes profile for Oman Government; the record is an institution, not a natural person eligible for a personal wealth profile."
     }
   },
   "primary_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No personal wealth sector can be assigned because the subject is a sovereign government record rather than a named private owner.",
+    "summary": "Private-person industry categories do not apply to the Government of Oman, and no natural person's private wealth is identified by this institutional record.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Official sources describe Oman's state institutions, and no evidence identifies a natural person's private wealth behind this record."
+      "reason": "Official sources establish a public-government identity and provide no basis for assigning a private wealth-producing sector."
     },
     "source_ids": [
       "S1",
@@ -112,11 +128,11 @@
   "wealth_origin": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Wealth-origin categories describe how a person obtained private assets and are not applicable to the Government of Oman as an institution.",
+    "summary": "Wealth-origin categories describe how a natural person gained private wealth and are not applicable to this Government of Oman institutional record.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The evidence supports a state identity only; it does not establish any individual's self-made, inherited, dynastic or transferred private wealth."
+      "reason": "The official record supports a system of state bodies rather than an individual's self-made, inherited, dynastic or transferred private wealth."
     },
     "source_ids": [
       "S1",
@@ -127,71 +143,36 @@
   "wealth_relationship": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No natural person or privately held asset relationship is identified, so operator, beneficiary, custodian or owner categories cannot be assigned.",
+    "summary": "The generic institutional label identifies no natural person and no private relationship to wealth-producing assets.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The generic government label and historical fleet association do not identify a person or establish that any office-holder privately owns the vessel or related assets."
+      "reason": "Current official sources describe government entities and executive state bodies, not a personal founder, operator, investor, beneficiary or private asset owner."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S3",
-      "S5"
+      "S3"
     ]
   },
-  "biography": {
-    "plain_text": "The Oman Government entry is an institutional vessel-owner record, not a biography of an individual. It links the Sultanate's state apparatus to Dhafi, formerly named Fulk Al Salamah and associated with the Royal Yacht Squadron. Because public evidence does not identify a private beneficial owner, no personal fortune or wealth relationship can be responsibly assigned.",
-    "html": "<p>The Oman Government entry is an institutional vessel-owner record, not a biography of an individual. It links the Sultanate's state apparatus to Dhafi, formerly named Fulk Al Salamah and associated with the Royal Yacht Squadron. Because public evidence does not identify a private beneficial owner, no personal fortune or wealth relationship can be responsibly assigned.</p>\r\n",
-    "word_count": 55,
-    "confidence": {
-      "score": 90,
-      "band": "high",
-      "reason": "Official sources establish the Omani government structure and Royal Yacht Squadron as institutional, while specialist vessel sources support Dhafi's name and historical fleet context; the exact legal owner remains unresolved."
-    },
-    "source_ids": [
-      "S1",
-      "S3",
-      "S4",
-      "S5"
-    ]
-  },
-  "long_biography": {
-    "plain_text": "Oman Government is a database label for an institution rather than a named person. Oman's Basic Statute defines the Sultan as head of state and the Council of Ministers as the body that helps formulate and implement state policy. Those constitutional roles do not establish that either the Sultan, a minister or any other individual privately owns assets listed under this entry.\n\nThe record's vessel context points to Dhafi, a large ship previously named Fulk Al Salamah and Al Dhaferah. Specialist ship records link that vessel historically to the Government of Oman and the Royal Yacht Squadron. They also indicate that it left Omani service and was renamed, making the record's current-ownership flag potentially stale. The evidence therefore supports an institutional, historical fleet association, but not a personal biography, source of private wealth or personal relationship to wealth-producing assets.",
-    "html": "<p>Oman Government is a database label for an institution rather than a named person. Oman's Basic Statute defines the Sultan as head of state and the Council of Ministers as the body that helps formulate and implement state policy. Those constitutional roles do not establish that either the Sultan, a minister or any other individual privately owns assets listed under this entry.</p>\r\n<p>The record's vessel context points to Dhafi, a large ship previously named Fulk Al Salamah and Al Dhaferah. Specialist ship records link that vessel historically to the Government of Oman and the Royal Yacht Squadron. They also indicate that it left Omani service and was renamed, making the record's current-ownership flag potentially stale. The evidence therefore supports an institutional, historical fleet association, but not a personal biography, source of private wealth or personal relationship to wealth-producing assets.</p>\r\n",
-    "word_count": 139,
-    "confidence": {
-      "score": 90,
-      "band": "high",
-      "reason": "Official Omani sources support the constitutional distinction between state institutions and individuals; specialist maritime records support Dhafi's historical names, fleet context and later status change."
-    },
-    "source_ids": [
-      "S1",
-      "S2",
-      "S3",
-      "S4",
-      "S5",
-      "S6"
-    ]
-  },
+  "biography": null,
+  "long_biography": null,
   "proposed_details": [],
   "proposed_socials": [],
-  "candidates_requiring_review": [
-    "Reclassify person_id 913 as an institutional or organisation record before compiling any biography; its person-schema birth, gender, mortality and personal-social fields are not applicable."
-  ],
+  "candidates_requiring_review": [],
   "sources": [
     {
       "id": "S1",
-      "url": "https://www.fm.gov.om/en/about-oman/government/constitution/",
-      "title": "The Basic Statute of the State",
-      "publisher": "Foreign Ministry of the Sultanate of Oman",
+      "url": "https://gov.om/en/about",
+      "title": "About the Unified Government Services Portal",
+      "publisher": "Gov.om, Sultanate of Oman",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "Oman's Basic Statute regulates state institutions",
-        "the Sultan is head of state",
-        "the Council of Ministers assists with state policy and implementation",
-        "private ownership is legally distinct and safeguarded"
+        "official Sultanate of Oman government-services identity",
+        "government services delivered through a national platform",
+        "multiple government entities rather than a natural-person identity",
+        "integrated digital-government structure"
       ]
     },
     {
@@ -200,80 +181,36 @@
       "title": "Council of Ministers",
       "publisher": "Foreign Ministry of the Sultanate of Oman",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "the Council of Ministers is Oman's chief executive state body",
-        "the Council shapes and implements state policy",
-        "Sultan Haitham bin Tarik presides as Prime Minister"
+        "Council of Ministers as the chief executive body of the Sultanate of Oman",
+        "institutional responsibility for shaping and implementing state policy",
+        "government composed of ministries and other public authorities"
       ]
     },
     {
       "id": "S3",
-      "url": "https://duqm.gov.om/upload/publications/sezad-quarterly-magazine-issue-21.pdf",
-      "title": "Duqm Magazine, Issue 21",
-      "publisher": "Special Economic Zone Authority at Duqm",
+      "url": "https://www.fm.gov.om/en/about-oman/state/key-facts/",
+      "title": "Key facts",
+      "publisher": "Foreign Ministry of the Sultanate of Oman",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "the Oman Royal Yacht Squadron is identified among government bodies",
-        "government-berth infrastructure included facilities for the Royal Yacht Squadron"
-      ]
-    },
-    {
-      "id": "S4",
-      "url": "https://www.superyachttimes.com/yachts/dhafi/photos",
-      "title": "Dhafi Yacht",
-      "publisher": "SuperYacht Times",
-      "tier": 3,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Dhafi identity",
-        "136.33-metre length",
-        "1987 Bremer Vulkan delivery",
-        "Fulk Al Salamah name in the vessel photo record",
-        "Oman Royal Fleet context in the vessel photo record"
-      ]
-    },
-    {
-      "id": "S5",
-      "url": "https://www.ship-db.de/nawbn.php?wbn_nr=BVAB+78120E",
-      "title": "Ship database record: Al Dhaferah / Dhafi",
-      "publisher": "ship-db.de",
-      "tier": 3,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Dhafi and former Al Dhaferah and Fulk Al Salamah names",
-        "historical Government of Oman and Royal Yacht Squadron association",
-        "136.33-metre length",
-        "reported end-of-service and scrapping status"
-      ]
-    },
-    {
-      "id": "S6",
-      "url": "https://www.vesselfinder.com/vessels/details/8509026",
-      "title": "DHAFI, Passenger Ship, IMO 8509026",
-      "publisher": "VesselFinder",
-      "tier": 3,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Dhafi identity and IMO number 8509026",
-        "136.33-metre length and 1987 build year",
-        "Al Dhaferah to Dhafi name history",
-        "Comoros flag after Omani service",
-        "not in service since 2024"
+        "official name as the Sultanate of Oman",
+        "government described as a hereditary monarchy",
+        "state identity distinct from a natural person"
       ]
     }
   ],
   "uncertainties": [
-    "The record is an institution stored in a person schema. No human identity should be substituted, and its personal birth, gender, mortality, nationality and social-profile fields are not meaningful enrichment targets.",
-    "The exact Omani government agency or legal entity that historically held Dhafi is not established by a primary ownership register; specialist sources associate the vessel with the Government of Oman and Royal Yacht Squadron.",
-    "The source record marks Dhafi as a current Oman Government vessel from May 2016, but public maritime records show later renaming, a non-Omani flag and no service since 2024. The relationship is likely stale and was not rewritten in this review-only dossier.",
-    "No exact Forbes profile exists for Oman Government, and no personal LinkedIn, Instagram, website or other person-relevant social account is applicable to this institutional record.",
-    "The source record's existing Omanian nationality, Oman birth country and Alive mortality values appear to be artefacts of a person-only schema. They were preserved in the immutable snapshot and not proposed as facts about an institution.",
-    "No personal primary industry, wealth origin or wealth relationship can be inferred from Oman's economy, public assets, royal offices or the vessel association."
+    "Oman Government is a generic database label rather than the official name of one ministry, agency or legal entity. No narrower institution should be substituted without stronger record-specific evidence.",
+    "Focused exact-name and site-restricted Forbes searches found no dedicated profile; a personal Forbes profile is not applicable to this institutional record.",
+    "The source record's Omanian nationality, Oman residence and birth-country values, Alive mortality value, and person-name fields are artefacts of storage in a person-oriented schema and were not proposed as institutional facts.",
+    "Personal biography, birth, mortality and social-profile enrichment is not applicable, so no personal detail or social proposals were created.",
+    "The source record's vessel relationships were not used to infer the institution's legal scope, a private wealth classification or a substitute human identity."
   ],
   "review": {
     "status": "pending",
-    "notes": "Institutional edge case: review record type and stale vessel relationship before any compilation or website update."
+    "notes": "Treat person_id 913 as an institutional edge case. Do not compile a person biography or map person-only fields until the underlying data model can represent a government record."
   }
 }

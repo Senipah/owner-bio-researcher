@@ -1,12 +1,13 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
+  "record_type": "person",
   "owner": {
     "person_id": 724,
     "display_name": "Tilman J. Fertitta",
     "identity_confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The exact current Forbes profile, official Landry's and personal biographies, government appointment records and current reporting all align the Houston hospitality entrepreneur, Fertitta Entertainment owner, Houston Rockets owner and U.S. ambassador with the 117-metre Boardwalk."
+      "reason": "The exact Forbes profile, Landry's owner biography, personal website and Houston Rockets records align the Houston hospitality entrepreneur, Fertitta Entertainment owner and team owner."
     }
   },
   "input_snapshot": {
@@ -75,98 +76,132 @@
     }
   },
   "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "American hospitality entrepreneur, sole owner and chief executive of Fertitta Entertainment, owner of Landry's and the Houston Rockets.",
+    "wealth_or_prominence_route": "Fertitta moved from early construction and development work into two Houston-area seafood restaurants. After gaining control of Landry's, he expanded through acquisitions, public ownership and a later return to sole private control.",
+    "turning_point": "Control of Landry's in 1986 gave Fertitta the platform for an acquisition-led expansion from restaurants into hospitality, gaming and entertainment.",
+    "later_chapter": "Fertitta acquired the Houston Rockets after an earlier minority holding and an unsuccessful bid, turning a longstanding hometown basketball interest into a major part of Fertitta Entertainment.",
+    "character_detail": "The route joined hands-on operational detail with a repeated willingness to make large, controlling acquisitions.",
+    "excluded_transient_context": [
+      "Selection-only asset context",
+      "Current net worth and wealth-list placement",
+      "Current property and restaurant counts",
+      "Current ownership percentages and annual financial figures",
+      "Pending or recently announced acquisitions",
+      "The current diplomatic appointment, to preserve a focused business and sports narrative"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "The rewrite follows construction and restaurant beginnings into control and consolidation of Landry's, then uses the Rockets as a single durable Houston chapter. It removes the former asset-led ending, current counts and transient deal values."
+  },
+  "editorial_note": null,
   "forbes_profile": {
     "status": "verified",
     "url": "https://www.forbes.com/profile/tilman-fertitta/",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The current exact-name Forbes profile matches Fertitta's Landry's chairmanship, ownership of Landry's, Golden Nugget and the Houston Rockets, Houston residence, U.S. citizenship, ambassadorial role and Boardwalk yacht history."
+      "reason": "The current exact-name Forbes profile matches Fertitta's Landry's leadership, Golden Nugget and Houston Rockets ownership, Houston residence, U.S. citizenship and self-made hospitality career."
     }
   },
   "primary_industry": {
     "classification": "hospitality",
     "label": "Hospitality",
-    "summary": "Fertitta's principal operating fortune was built through Landry's and Fertitta Entertainment, a privately owned portfolio spanning restaurants, hotels, casinos, resorts and entertainment destinations, with the Houston Rockets added later.",
+    "summary": "Fertitta's principal operating fortune was built through Landry's and Fertitta Entertainment, spanning restaurants, hotels, casinos and entertainment destinations, with professional sport added later.",
     "confidence": {
-      "score": 98,
+      "score": 99,
       "band": "very_high",
-      "reason": "Forbes and Landry's identify the restaurant, hotel, casino and entertainment portfolio as the foundation of Fertitta's wealth, while current AP reporting describes him as a hospitality mogul who made his fortune in restaurants, hotels and casinos."
+      "reason": "Forbes identifies entertainment and the Houston Rockets as the current source of wealth, while Landry's and Fertitta's Senate testimony establish that restaurants and hospitality created the underlying operating platform."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S5",
-      "S11"
+      "S9"
     ]
   },
   "wealth_origin": {
     "classification": "self_made",
     "label": "Self-made",
-    "summary": "Fertitta built the fortune by gaining control of Landry's, expanding it organically and through acquisitions, taking it public and later buying it back into private ownership.",
+    "summary": "Fertitta built the fortune by moving from early entrepreneurial and construction work into Landry's, gaining control, expanding through acquisitions and eventually restoring sole private ownership.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Forbes assigns Fertitta a self-made score of 9 and documents his control, public listing, acquisitions and 2010 take-private; Landry's official history independently traces the operating expansion from the first restaurants."
+      "reason": "Forbes assigns a self-made score of nine, and Landry's, the Houston Chronicle and Bloomberg document Fertitta's control, acquisition-led expansion, public listing and later buyout."
     },
     "source_ids": [
       "S1",
-      "S3",
-      "S5"
+      "S2",
+      "S4",
+      "S8"
     ]
   },
   "wealth_relationship": {
-    "classification": "founder",
-    "label": "Founder",
-    "summary": "Fertitta created and remains the sole owner and CEO of the Fertitta Entertainment platform through which he controls Landry's, Golden Nugget and the Houston Rockets.",
+    "classification": "operator",
+    "label": "Operator",
+    "summary": "Fertitta did not establish the original Landry's restaurants but gained control and materially built the core hospitality business, remaining the sole owner and chief executive of its parent platform.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Landry's records his early partnership and later control of the existing restaurants, while its current owner page and Fertitta's personal site establish his sole ownership and executive leadership."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S7"
+    ]
+  },
+  "biography": {
+    "plain_text": "Tilman J. Fertitta is an American hospitality entrepreneur who used early construction and restaurant ventures to build Fertitta Entertainment. After taking control of Landry's, he built the company through acquisitions across dining, hotels and casinos, later returning it to private ownership. His purchase of the Houston Rockets added a longstanding basketball interest to the group.",
+    "html": "<p>Tilman J. Fertitta is an American hospitality entrepreneur who used early construction and restaurant ventures to build Fertitta Entertainment. After taking control of Landry's, he built the company through acquisitions across dining, hotels and casinos, later returning it to private ownership. His purchase of the Houston Rockets added a longstanding basketball interest to the group.</p>\r\n",
+    "word_count": 55,
     "confidence": {
       "score": 97,
       "band": "very_high",
-      "reason": "His official personal and Landry's profiles identify him as sole owner and CEO of Fertitta Entertainment, while his Senate testimony and Forbes reporting document how he built the platform from an early restaurant business through sustained expansion and acquisitions."
+      "reason": "The Houston Chronicle supports the construction start, Landry's and Bloomberg establish the control and consolidation path, and NBA records document the later hometown team acquisition."
     },
     "source_ids": [
       "S2",
       "S4",
       "S5",
+      "S6",
       "S8"
     ]
   },
-  "biography": {
-    "plain_text": "Tilman J. Fertitta is an American hospitality entrepreneur who built Landry's from two Texas restaurants into a privately owned group spanning dining, hotels, casinos and entertainment. He later acquired the Houston Rockets, adding professional sports to Fertitta Entertainment. Since 2025, he has also served as United States ambassador to Italy and San Marino.",
-    "html": "<p>Tilman J. Fertitta is an American hospitality entrepreneur who built Landry's from two Texas restaurants into a privately owned group spanning dining, hotels, casinos and entertainment. He later acquired the Houston Rockets, adding professional sports to Fertitta Entertainment. Since 2025, he has also served as United States ambassador to Italy and San Marino.</p>\r\n",
-    "word_count": 53,
-    "confidence": {
-      "score": 98,
-      "band": "very_high",
-      "reason": "Forbes and first-party company sources establish the hospitality expansion and Rockets ownership, while Congress.gov and the State Department establish the 2025 ambassadorial appointment."
-    },
-    "source_ids": [
-      "S1",
-      "S2",
-      "S3",
-      "S8",
-      "S9"
-    ]
-  },
   "long_biography": {
-    "plain_text": "Born in Galveston, Tilman J. Fertitta entered the restaurant business as a young entrepreneur. He became a partner in the first Landry's Seafood restaurant in 1980, gained control of Landry's in 1986 and built it through expansion and acquisitions across restaurants, hotels, casinos and entertainment destinations. He later took the company public, then returned it to private ownership in 2010.\n\nFertitta remains the sole owner and CEO of Fertitta Entertainment, whose holdings include Landry's, Golden Nugget and the Houston Rockets. His public career shifted in 2025 when he became United States ambassador to Italy and San Marino. His successive yachts have carried the Boardwalk name, an homage to Landry's Kemah Boardwalk property; in 2026 he took delivery of a 117-metre Lürssen bearing that name.",
-    "html": "<p>Born in Galveston, Tilman J. Fertitta entered the restaurant business as a young entrepreneur. He became a partner in the first Landry's Seafood restaurant in 1980, gained control of Landry's in 1986 and built it through expansion and acquisitions across restaurants, hotels, casinos and entertainment destinations. He later took the company public, then returned it to private ownership in 2010.</p>\r\n<p>Fertitta remains the sole owner and CEO of Fertitta Entertainment, whose holdings include Landry's, Golden Nugget and the Houston Rockets. His public career shifted in 2025 when he became United States ambassador to Italy and San Marino. His successive yachts have carried the Boardwalk name, an homage to Landry's Kemah Boardwalk property; in 2026 he took delivery of a 117-metre Lürssen bearing that name.</p>\r\n",
-    "word_count": 124,
+    "plain_text": "Tilman J. Fertitta began in construction and development before committing fully to restaurants. He invested in two Houston-area seafood restaurants, then gained control of Landry's in 1986. Fertitta expanded the company through a steady programme of acquisitions, took it public and later bought back the remaining shares, restoring sole private ownership.\n\nBasketball became a second expression of his Houston roots. A former minority owner and unsuccessful bidder for the team, Fertitta acquired the Houston Rockets in 2017 after decades as a supporter. The franchise joined his privately held Fertitta Entertainment group, connecting a longstanding local ambition with the hospitality business he had built.",
+    "html": "<p>Tilman J. Fertitta began in construction and development before committing fully to restaurants. He invested in two Houston-area seafood restaurants, then gained control of Landry's in 1986. Fertitta expanded the company through a steady programme of acquisitions, took it public and later bought back the remaining shares, restoring sole private ownership.</p>\r\n<p>Basketball became a second expression of his Houston roots. A former minority owner and unsuccessful bidder for the team, Fertitta acquired the Houston Rockets in 2017 after decades as a supporter. The franchise joined his privately held Fertitta Entertainment group, connecting a longstanding local ambition with the hospitality business he had built.</p>\r\n",
+    "word_count": 103,
     "confidence": {
       "score": 96,
       "band": "very_high",
-      "reason": "Official company history and Forbes establish the business chronology, government sources establish the diplomatic appointment, and current specialist and AP reporting directly connect Fertitta to the 117-metre Boardwalk and its serial naming story."
+      "reason": "The Houston Chronicle, Landry's history and Bloomberg substantiate the business route; NBA and independent reporting document the minority interest, earlier bid, long support and eventual acquisition."
     },
     "source_ids": [
       "S2",
-      "S3",
+      "S4",
       "S5",
       "S6",
-      "S8",
-      "S9",
-      "S10",
-      "S11"
+      "S8"
     ]
   },
   "proposed_details": [
@@ -177,11 +212,11 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "Fertitta's official personal website and Landry's official owner biography both identify him as the sole owner and CEO of Fertitta Entertainment."
+        "reason": "Fertitta's official personal website and Landry's official owner biography identify him as the sole owner and chief executive of Fertitta Entertainment."
       },
       "source_ids": [
-        "S2",
-        "S4"
+        "S3",
+        "S7"
       ]
     },
     {
@@ -191,11 +226,11 @@
       "confidence": {
         "score": 98,
         "band": "very_high",
-        "reason": "The University of Houston's official commencement profile says Fertitta was born in Galveston, and the Houston Chronicle independently reports the same birthplace."
+        "reason": "The Houston Chronicle and the U.S. Senate nomination hearing record both state that Fertitta was born in Galveston."
       },
       "source_ids": [
-        "S6",
-        "S7"
+        "S4",
+        "S9"
       ]
     },
     {
@@ -205,29 +240,29 @@
       "confidence": {
         "score": 93,
         "band": "high",
-        "reason": "The Houston Chronicle's detailed exact-identity profile reports that Fertitta was born in Galveston in 1957; the date is consistent with the age reported by the current Forbes profile."
+        "reason": "The Houston Chronicle reports Fertitta's 1957 birth year, consistent with the age on his current Forbes profile."
       },
       "source_ids": [
         "S1",
-        "S6"
+        "S4"
       ]
     },
     {
       "action": "correct_existing",
       "field": "biography",
       "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Tilman_Fertitta\">Tilman Joseph Fertitta</a> is a millionaire businessman and television personality from the United States. <a href=\"https://en.wikipedia.org/wiki/Landry%27s\">Landry&#39;s, Inc</a>. is his company, and he is the chairman, CEO, and owner. He also owns the <a href=\"https://en.wikipedia.org/wiki/Houston_Rockets\">Houston Rockets</a> of the National Basketball Association (NBA).</p>\r\n",
-      "value": "<p>Tilman J. Fertitta is an American hospitality entrepreneur who built Landry's from two Texas restaurants into a privately owned group spanning dining, hotels, casinos and entertainment. He later acquired the Houston Rockets, adding professional sports to Fertitta Entertainment. Since 2025, he has also served as United States ambassador to Italy and San Marino.</p>\r\n",
+      "value": "<p>Tilman J. Fertitta is an American hospitality entrepreneur who used early construction and restaurant ventures to build Fertitta Entertainment. After taking control of Landry's, he built the company through acquisitions across dining, hotels and casinos, later returning it to private ownership. His purchase of the Houston Rockets added a longstanding basketball interest to the group.</p>\r\n",
       "confidence": {
-        "score": 98,
+        "score": 97,
         "band": "very_high",
-        "reason": "The replacement removes the materially outdated millionaire description and adds the strongly sourced scope of Fertitta's operating business, Rockets ownership and current diplomatic role."
+        "reason": "The replacement removes embedded links and the obsolete wealth label, then explains Fertitta's construction start, hospitality consolidation and durable sports chapter."
       },
       "source_ids": [
-        "S1",
         "S2",
-        "S3",
-        "S8",
-        "S9"
+        "S4",
+        "S5",
+        "S6",
+        "S8"
       ]
     }
   ],
@@ -243,7 +278,7 @@
         "reason": "The exact account is directly cross-linked from Fertitta's official personal domain."
       },
       "source_ids": [
-        "S4"
+        "S7"
       ]
     },
     {
@@ -257,53 +292,52 @@
         "reason": "The exact account is directly cross-linked from Fertitta's official personal domain."
       },
       "source_ids": [
-        "S4"
+        "S7"
       ]
     },
     {
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/tilman-fertitta/",
-      "verification": "The current exact-name Forbes profile matches Fertitta's company, holdings, geography, public role and yacht history; type ID 11 is copied from the current owner input lookup.",
+      "verification": "The current exact-name Forbes profile matches Fertitta's principal company, Houston geography and Houston Rockets ownership; type ID 11 is copied from the current owner input lookup.",
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The exact Forbes profile is independently verified against official company, government and current vessel evidence."
+        "reason": "The exact profile is independently corroborated by current official company and team pages."
       },
       "source_ids": [
         "S1",
-        "S2",
-        "S9",
-        "S10"
+        "S3",
+        "S5"
       ]
     },
     {
       "type_id": "14",
       "type": "Company Website",
       "url": "https://www.landrysinc.com/about-us/meet-the-ceo-tilman-fertitta",
-      "verification": "Landry's official owner page identifies Fertitta as sole owner of Fertitta Entertainment and Landry's and details the portfolio he leads; type ID 14 is copied from the current owner input lookup.",
+      "verification": "Landry's official owner page identifies Fertitta as sole owner of Fertitta Entertainment and Landry's and describes the portfolio he leads; type ID 14 is copied from the current owner input lookup.",
       "confidence": {
         "score": 99,
         "band": "very_high",
         "reason": "This is the first-party owner biography on the official domain of Fertitta's principal operating company."
       },
       "source_ids": [
-        "S2"
+        "S3"
       ]
     },
     {
       "type_id": "15",
       "type": "Personal Website",
       "url": "https://www.tilmanfertitta.com/",
-      "verification": "The exact-name site presents Fertitta's first-person biography and business portfolio and is directly linked from Landry's official owner page; type ID 15 is copied from the current owner input lookup.",
+      "verification": "The exact-name site presents Fertitta's biography and business portfolio and is directly linked from Landry's official owner page; type ID 15 is copied from the current owner input lookup.",
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "Landry's official company profile cross-links the exact personal domain, which in turn identifies Fertitta and his holdings."
+        "reason": "Landry's official company profile cross-links the exact personal domain, which identifies Fertitta and his holdings."
       },
       "source_ids": [
-        "S2",
-        "S4"
+        "S3",
+        "S7"
       ]
     }
   ],
@@ -315,30 +349,46 @@
       "title": "Tilman Fertitta",
       "publisher": "Forbes",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "identity",
         "verified Forbes profile",
-        "chairman and CEO of Landry's",
+        "chairman and chief executive of Landry's",
         "Landry's and Golden Nugget ownership",
         "Houston Rockets ownership",
         "entertainment and Houston Rockets as source of wealth",
-        "self-made status and score of 9",
-        "2010 Landry's take-private",
+        "self-made status and score",
+        "Landry's return to private ownership",
         "U.S. citizenship",
         "Houston residence",
-        "current ambassadorial role",
-        "Boardwalk yacht history",
         "current living status"
       ]
     },
     {
       "id": "S2",
+      "url": "https://www.landrysinc.com/about-us/landrys-history",
+      "title": "Landry's History",
+      "publisher": "Landry's, Inc.",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "partnership in the first Landry's Seafood restaurant",
+        "partnership in two Houston-area restaurants",
+        "controlling interests acquired in 1986",
+        "restaurant expansion plan",
+        "acquisition-led expansion",
+        "public listing",
+        "return to sole private ownership",
+        "diversification into hospitality, gaming and entertainment"
+      ]
+    },
+    {
+      "id": "S3",
       "url": "https://www.landrysinc.com/about-us/meet-the-ceo-tilman-fertitta",
       "title": "Meet the Owner",
       "publisher": "Landry's, Inc.",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "identity",
         "sole ownership of Fertitta Entertainment",
@@ -346,181 +396,121 @@
         "Golden Nugget ownership",
         "Houston Rockets ownership",
         "restaurants, hospitality, gaming and entertainment portfolio",
-        "more than 600 properties",
-        "Rockets acquisition in 2017",
         "official personal-website cross-link"
       ]
     },
     {
-      "id": "S3",
-      "url": "https://www.landrysinc.com/about-us/landrys-history",
-      "title": "Our Company History",
-      "publisher": "Landry's, Inc.",
-      "tier": 1,
-      "accessed_at": "2026-07-27",
+      "id": "S4",
+      "url": "https://www.houstonchronicle.com/news/houston-texas/trending/article/tilman-fertitta-billionaire-houston-rockets-landry-17810637.php/",
+      "title": "What to know about Houston billionaire Tilman Fertitta, who owns the Rockets, Landry's and more",
+      "publisher": "Houston Chronicle",
+      "tier": 2,
+      "accessed_at": "2026-07-28",
       "supports": [
-        "first Landry's Seafood restaurant in 1980",
-        "Willie G's opening in 1981",
-        "Fertitta partnership in both restaurants",
-        "controlling interests acquired in 1986",
-        "restaurant and hospitality expansion",
-        "gaming and entertainment diversification"
+        "identity",
+        "Galveston birthplace",
+        "1957 birth year",
+        "early entrepreneurial ventures",
+        "Fertitta Construction founding",
+        "Landry's controlling interest",
+        "later sole ownership",
+        "acquisition-led restaurant expansion"
       ]
     },
     {
-      "id": "S4",
-      "url": "https://www.tilmanfertitta.com/",
-      "title": "Tilman J. Fertitta - Houston Billionaire",
-      "publisher": "Tilman J. Fertitta",
+      "id": "S5",
+      "url": "https://www.nba.com/rockets/news/tilman-j-fertitta-acquire-nba-houston-rockets",
+      "title": "Tilman J. Fertitta to Acquire NBA Houston Rockets",
+      "publisher": "Houston Rockets",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "identity",
-        "sole owner and CEO of Fertitta Entertainment",
+        "Houston Rockets acquisition",
+        "sole team ownership",
+        "longstanding Houston-area connection",
+        "description of the acquisition as a lifelong ambition"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.nba.com/news/tilman-fertitta-introduced-new-owner-houston-rockets",
+      "title": "Tilman Fertitta introduced as the new owner of the Houston Rockets",
+      "publisher": "Associated Press, via NBA.com",
+      "tier": 2,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "identity",
+        "Houston Rockets ownership",
+        "longstanding support for the team",
+        "earlier unsuccessful bid",
+        "Houston roots",
+        "Galveston birthplace"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.tilmanfertitta.com/",
+      "title": "Tilman J. Fertitta",
+      "publisher": "Tilman J. Fertitta",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "identity",
+        "sole ownership and chief executive role at Fertitta Entertainment",
         "Landry's ownership",
         "Golden Nugget ownership",
         "Houston Rockets ownership",
         "official Facebook URL",
         "official Twitter URL",
+        "official Instagram URL",
         "official personal website"
       ]
     },
     {
-      "id": "S5",
-      "url": "https://www.forbes.com/sites/andreamurphy/2012/03/07/landrys-tilman-fertitta-debuts-on-worlds-billionaires-list/",
-      "title": "Landry's Tilman Fertitta Debuts on World's Billionaires List",
-      "publisher": "Forbes",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "identity",
-        "owner, chairman and CEO of Landry's",
-        "100% ownership",
-        "dining, hospitality and gaming portfolio",
-        "Landry's control chronology",
-        "1993 public listing",
-        "2010 take-private",
-        "acquisition-led expansion",
-        "origin of fortune"
-      ]
-    },
-    {
-      "id": "S6",
-      "url": "https://www.houstonchronicle.com/news/houston-texas/trending/article/tilman-fertitta-billionaire-houston-rockets-landry-17810637.php/",
-      "title": "What to know about Houston billionaire Tilman Fertitta, who owns the Rockets, Landry's and more",
-      "publisher": "Houston Chronicle",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "identity",
-        "Galveston birthplace",
-        "1957 birth year",
-        "Houston move in 1974",
-        "sole ownership and CEO role at Fertitta Entertainment",
-        "Landry's ownership",
-        "Golden Nugget ownership",
-        "Houston Rockets ownership"
-      ]
-    },
-    {
-      "id": "S7",
-      "url": "https://www.uh.edu/commencement/university-commencement-programs/fall25ghl.pdf",
-      "title": "Fall 2025 University Commencement Program",
-      "publisher": "University of Houston",
-      "tier": 1,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "identity",
-        "Galveston birthplace",
-        "self-made entrepreneur description",
-        "Fertitta Entertainment ownership",
-        "Landry's ownership",
-        "Golden Nugget ownership",
-        "Houston Rockets ownership",
-        "ambassadorial role"
-      ]
-    },
-    {
       "id": "S8",
-      "url": "https://www.foreign.senate.gov/download/04-01-25-nominations__stephens-fertitta-barrackpdf",
-      "title": "Prepared Statement of Tilman J. Fertitta",
-      "publisher": "U.S. Senate Committee on Foreign Relations",
-      "tier": 1,
-      "accessed_at": "2026-07-27",
+      "url": "https://www.bloomberg.com/news/articles/2010-10-06/landry-s-wins-court-approval-to-settle-shareholder-lawsuits-over-buyout",
+      "title": "Landry's Lawsuits Are Settled, Company Is Sold",
+      "publisher": "Bloomberg",
+      "tier": 2,
+      "accessed_at": "2026-07-28",
       "supports": [
         "identity",
-        "direct first-person business history",
-        "restaurant-business origin",
-        "expansion into hospitality and gaming",
-        "nearly 600 properties",
-        "Italian family heritage",
-        "ambassadorial nomination"
+        "Landry's chief executive role",
+        "majority ownership before the buyout",
+        "completion of the take-private transaction"
       ]
     },
     {
       "id": "S9",
-      "url": "https://www.art.state.gov/portfolio/rome-publication-2025/",
-      "title": "Rome Publication 2025",
-      "publisher": "U.S. Department of State",
+      "url": "https://www.foreign.senate.gov/download/04-01-25-nominations__stephens-fertitta-barrackpdf",
+      "title": "Nominations of Christopher Landau, Michael Rigas, Tilman Fertitta and Thomas Barrack",
+      "publisher": "U.S. Senate Committee on Foreign Relations",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "identity",
-        "current U.S. ambassador to Italy and San Marino",
-        "service at Villa Taverna",
-        "current living status"
-      ]
-    },
-    {
-      "id": "S10",
-      "url": "https://megayachtnews.com/2026/05/yacht-boardwalk-lurssen-delivery/",
-      "title": "Yacht Boardwalk Sends Final Salute to Lürssen",
-      "publisher": "Megayacht News",
-      "tier": 3,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "identity",
-        "Boardwalk ownership",
-        "117-metre vessel length",
-        "2026 delivery",
-        "Lürssen builder",
-        "successive Boardwalk yachts",
-        "Kemah Boardwalk naming story",
-        "Landry's ownership",
-        "ambassadorial role"
-      ]
-    },
-    {
-      "id": "S11",
-      "url": "https://apnews.com/article/9b962a570b769be403eb8931c9a57b9b",
-      "title": "Trump's envoy faces protests in Venice on latest stop of super yacht diplomacy tour",
-      "publisher": "Associated Press",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "identity",
-        "hospitality as source of fortune",
-        "Fertitta Entertainment ownership",
-        "restaurants, hotels and casinos",
-        "Houston Rockets ownership",
-        "current ambassadorial role",
-        "Boardwalk ownership",
-        "117-metre vessel length",
-        "current living status"
+        "Galveston birthplace",
+        "Italian family heritage",
+        "father's seafood restaurant",
+        "early work in the family restaurant",
+        "expansion from two seafood restaurants into a hospitality enterprise"
       ]
     }
   ],
   "uncertainties": [
-    "Strong sources establish Galveston as Fertitta's birthplace and 1957 as his birth year, but no authoritative source located in this review established the exact day and month. Commonly repeated June 25 claims were therefore not proposed.",
-    "Forbes currently describes the source of wealth as entertainment and the Houston Rockets, while first-party and current AP evidence shows that the broader fortune was built across restaurants, hotels, casinos and entertainment. Hospitality is retained as the primary industry because it best describes the operating platform that generated and continues to underpin the fortune; the Rockets are treated as a later major holding.",
-    "The source record's age of 64 is calculated as of 2020-05-07 and was not proposed for correction because age fields are system-controlled.",
+    "Strong sources establish Galveston as Fertitta's birthplace and 1957 as his birth year, but no authoritative source reviewed here established the exact day and month. Commonly repeated June 25 claims were therefore not proposed.",
+    "Italian ancestry is well documented, but no source established Italian citizenship. The blank secondary-nationality field remains unfilled.",
+    "Hospitality is retained as the primary industry because the restaurant, hotel, casino and entertainment platform created the operating fortune. The Houston Rockets are treated as a later major holding rather than a replacement industry.",
+    "Operator is selected for the wealth relationship because Fertitta acquired and materially built the existing Landry's restaurants rather than founding them. His later creation and sole ownership of Fertitta Entertainment is reflected in the summary and title proposal.",
+    "Recently announced or pending corporate and sports transactions were excluded because their final scope and long-term significance were not yet settled.",
+    "Fertitta's diplomatic appointment is current and verified, but omitted from both biographies to keep the editorial focus on the durable business route and one coherent sports chapter.",
     "No verified personal LinkedIn, YouTube or TikTok account was found. The existing Instagram and Wikipedia URLs are preserved as immutable input links and were not duplicated as proposals.",
-    "The official personal site cross-links Facebook, Twitter and the existing Instagram account. No profile was accepted on name or search prominence alone.",
-    "The current Forbes profile still described the new Boardwalk as on order at its March 2026 editorial update; subsequent May and July 2026 reporting confirms delivery of the 117-metre yacht.",
-    "Blank suffix and secondary residence fields were treated as optional; death, internal-notes and unknown-name fields were treated as inapplicable or system-controlled for a living person."
+    "The official personal site directly links the proposed Facebook and Twitter accounts. No profile was accepted on name or search prominence alone.",
+    "Blank suffix and secondary-residence fields were treated as optional; death, internal-note and unknown-name fields were treated as inapplicable or system-controlled for a living person."
   ],
   "review": {
     "status": "pending",
-    "notes": "Identity, wealth classification, business chronology, public role and Boardwalk context are strongly supported. Reviewer attention is requested for the intentionally limited birth proposal: Galveston and 1957 are included, while the unverified day and month remain blank."
+    "notes": "Reviewer should note the intentionally limited birth proposal and the Operator classification, which distinguishes Fertitta's acquisition and expansion of Landry's from the creation of his later holding platform."
   }
 }

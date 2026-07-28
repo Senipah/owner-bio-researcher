@@ -1,12 +1,13 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
+  "record_type": "person",
   "owner": {
     "person_id": 2824,
     "display_name": "Gabe Logan Newell",
     "identity_confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The exact full name and Gabe Newell identity match Valve's official Microsoft-to-Valve biography, Forbes' current Valve ownership profile, and Forbes and VARD reporting that connects his Inkfish organisation to RV11000."
+      "reason": "The owner record's full name, birth date, American nationality and existing Wikipedia link align with Valve's official Microsoft-to-Valve biography, Forbes' current profile and Starfish Neuroscience's official team page."
     }
   },
   "input_snapshot": {
@@ -73,6 +74,39 @@
     }
   },
   "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Gabe Newell is an American technology entrepreneur, Valve co-founder and chief executive.",
+    "wealth_or_prominence_route": "A 13-year Microsoft career led to Valve, whose games and Steam platform became the basis of his fortune.",
+    "turning_point": "Half-Life established the studio, while Steam developed Valve into a direct digital-distribution platform for its own games and outside creators.",
+    "later_chapter": "He later co-founded Starfish Neuroscience, which develops minimally invasive technologies for interacting with the brain and body.",
+    "character_detail": "At Microsoft he ran programme management for the first two Windows releases before starting Valve.",
+    "excluded_transient_context": [
+      "Current research-vessel ownership and LOA ranking",
+      "Personal yacht ownership, specifications and shipyard relationships",
+      "Current net worth and wealth rankings",
+      "Transient Steam user counts and annual financial estimates"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S8",
+      "S9"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "The profile follows a concrete progression from Windows programme management to Valve, Half-Life and Steam, then uses a separately verified neuroscience venture as a concise later chapter."
+  },
+  "editorial_note": null,
   "forbes_profile": {
     "status": "verified",
     "url": "https://www.forbes.com/profile/gabe-newell/",
@@ -128,38 +162,39 @@
     ]
   },
   "biography": {
-    "plain_text": "Gabe Newell is an American technology entrepreneur who built his fortune by cofounding Valve after a 13-year Microsoft career. Valve’s debut, Half-Life, established the studio, while Steam transformed it into a dominant PC-game distribution platform. Newell later founded marine-research organisation Inkfish, which is commissioning the 162-metre, full-ocean-depth-capable research vessel RV11000.",
-    "html": "<p>Gabe Newell is an American technology entrepreneur who built his fortune by cofounding Valve after a 13-year Microsoft career. Valve’s debut, Half-Life, established the studio, while Steam transformed it into a dominant PC-game distribution platform. Newell later founded marine-research organisation Inkfish, which is commissioning the 162-metre, full-ocean-depth-capable research vessel RV11000.</p>\r\n",
-    "word_count": 50,
+    "plain_text": "Gabe Newell is an American technology entrepreneur who co-founded Valve after 13 years at Microsoft. The studio's debut game, Half-Life, established the business, while Steam turned Valve into a major PC-game distribution platform and the core of his fortune. He later co-founded Starfish Neuroscience to develop minimally invasive technologies for interacting with the brain.",
+    "html": "<p>Gabe Newell is an American technology entrepreneur who co-founded Valve after 13 years at Microsoft. The studio's debut game, Half-Life, established the business, while Steam turned Valve into a major PC-game distribution platform and the core of his fortune. He later co-founded Starfish Neuroscience to develop minimally invasive technologies for interacting with the brain.</p>\r\n",
+    "word_count": 54,
     "confidence": {
-      "score": 95,
+      "score": 96,
       "band": "very_high",
-      "reason": "The Valve career and wealth mechanism are documented by official Valve and Forbes sources, and the Inkfish/RV11000 chapter is independently supported by Forbes and VARD."
-    },
-    "source_ids": [
-      "S1",
-      "S2",
-      "S3",
-      "S5",
-      "S6"
-    ]
-  },
-  "long_biography": {
-    "plain_text": "Gabe Newell left Harvard for Microsoft, where he spent 13 years working across systems, applications and advanced technology and helped manage the first two Windows releases. In 1996 he cofounded Valve with former Microsoft colleague Mike Harrington. Half-Life, the company’s first game, became an immediate bestseller; Valve then used Half-Life 2 to accelerate Steam, turning a game studio into a major PC distribution platform while remaining privately held.\n\nValve is still the source of Newell’s fortune, and Forbes estimates that he owns at least half of the company. His later work has moved into ocean research through Inkfish. In 2026 the organisation contracted VARD to build RV11000, a 162-metre vessel designed for seafloor mapping, submarine support and remotely operated work down to 11,000 metres, with research data intended for open repositories. That programme gives his extensive maritime interests a documented scientific purpose rather than merely a collecting story.",
-    "html": "<p>Gabe Newell left Harvard for Microsoft, where he spent 13 years working across systems, applications and advanced technology and helped manage the first two Windows releases. In 1996 he cofounded Valve with former Microsoft colleague Mike Harrington. Half-Life, the company’s first game, became an immediate bestseller; Valve then used Half-Life 2 to accelerate Steam, turning a game studio into a major PC distribution platform while remaining privately held.</p>\r\n<p>Valve is still the source of Newell’s fortune, and Forbes estimates that he owns at least half of the company. His later work has moved into ocean research through Inkfish. In 2026 the organisation contracted VARD to build RV11000, a 162-metre vessel designed for seafloor mapping, submarine support and remotely operated work down to 11,000 metres, with research data intended for open repositories. That programme gives his extensive maritime interests a documented scientific purpose rather than merely a collecting story.</p>\r\n",
-    "word_count": 149,
-    "confidence": {
-      "score": 95,
-      "band": "very_high",
-      "reason": "The formative route and Steam turning point are documented by Valve and Forbes, while the later Inkfish programme is supported by current Forbes and shipbuilder reporting."
+      "reason": "Valve and Forbes directly document the Microsoft-to-Valve route, Half-Life, Steam and the resulting fortune, while Starfish's official pages identify Newell as co-founder and describe its technology."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
       "S4",
-      "S5",
-      "S6"
+      "S8",
+      "S9"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "At Microsoft, Gabe Newell spent 13 years across systems, applications and advanced technology, including programme management for the first two Windows releases. He left to co-found Valve with Mike Harrington. Half-Life made the young studio a success, then Steam changed its economics by building a direct digital-distribution platform for games from Valve and other developers.\n\nValve remained private as it expanded into further games, hardware and Steam, leaving Newell with a large ownership stake in the company he started. He later co-founded Starfish Neuroscience, a flat, self-directed team developing minimally invasive ways to interact with the brain and body. The venture aims to move experimental neurotechnology from the laboratory towards practical clinical use.",
+    "html": "<p>At Microsoft, Gabe Newell spent 13 years across systems, applications and advanced technology, including programme management for the first two Windows releases. He left to co-found Valve with Mike Harrington. Half-Life made the young studio a success, then Steam changed its economics by building a direct digital-distribution platform for games from Valve and other developers.</p>\r\n<p>Valve remained private as it expanded into further games, hardware and Steam, leaving Newell with a large ownership stake in the company he started. He later co-founded Starfish Neuroscience, a flat, self-directed team developing minimally invasive ways to interact with the brain and body. The venture aims to move experimental neurotechnology from the laboratory towards practical clinical use.</p>\r\n",
+    "word_count": 113,
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Valve and Forbes directly support the formative route, founder relationship, Half-Life, Steam and private ownership; Starfish's current official pages support the later neuroscience chapter and working model."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S8",
+      "S9"
     ]
   },
   "proposed_details": [
@@ -175,6 +210,24 @@
       "source_ids": [
         "S1",
         "S2"
+      ]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Gabe Newell is an American technology entrepreneur who co-founded Valve after 13 years at Microsoft. The studio's debut game, Half-Life, established the business, while Steam turned Valve into a major PC-game distribution platform and the core of his fortune. He later co-founded Starfish Neuroscience to develop minimally invasive technologies for interacting with the brain.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "The replacement gives a durable, source-backed account of the Microsoft-to-Valve route, Steam wealth mechanism and a verified later neuroscience venture."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S8",
+        "S9"
       ]
     }
   ],
@@ -217,7 +270,7 @@
       "title": "Gabe Newell",
       "publisher": "Forbes",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "Verified identity and Forbes result",
         "Valve cofounder and CEO role",
@@ -232,7 +285,7 @@
       "title": "People at Valve: Gabe Newell",
       "publisher": "Valve Corporation",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "Thirteen-year Microsoft career",
         "Program management for the first two Windows releases",
@@ -246,7 +299,7 @@
       "title": "About Us",
       "publisher": "Valve Corporation",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "Valve's games, Steam, and hardware businesses",
         "Half-Life's 1998 debut",
@@ -255,11 +308,11 @@
     },
     {
       "id": "S4",
-      "url": "https://www.forbes.com.au/covers/magazine/how-valve-founder-gabe-newell-turned-half-life-into-a-nearly-10-billion-fortune/",
-      "title": "How Valve Founder Gabe Newell Turned Half-Life Into A Nearly $10 Billion Fortune",
-      "publisher": "Forbes Australia",
+      "url": "https://www.forbes.com/sites/stephenpastis/2024/10/21/how-valve-founder-gabe-newell-built-one-of-the-worlds-most-profitable-videogame-companies/",
+      "title": "How A Microsoft Millionaire Leveraged A Video Game Into $9.5 Billion Fortune",
+      "publisher": "Forbes",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "1996 Valve cofounding with Mike Harrington",
         "Half-Life's immediate commercial success",
@@ -269,42 +322,40 @@
       ]
     },
     {
-      "id": "S5",
-      "url": "https://www.forbes.com/sites/deajusufi/2026/06/13/gabe-newells-700-million-deep-sea-research-vessel-could-change-ocean-science-forever/",
-      "title": "Valve Founder Gabe Newell Backs €700M Research Ship Capable of Reaching Challenger Deep",
-      "publisher": "Forbes",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Newell as founder of Inkfish",
-        "Newell backing RV11000",
-        "Valve and vessel-context identity match"
-      ]
-    },
-    {
-      "id": "S6",
-      "url": "https://www.vard.com/press-releases/vard-secures-its-largest-order-ever-signs-contract-with-inkfish-for-the-worlds-most-capable-deep-sea-research-vessel",
-      "title": "VARD Secures Its Largest Order Ever, Signs Contract With Inkfish for the World's Most Capable Deep-Sea Research Vessel",
-      "publisher": "VARD",
-      "tier": 1,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Inkfish's RV11000 construction contract",
-        "162-metre length",
-        "Seafloor mapping, submarine support, and 11,000-metre ROV capability",
-        "Global marine-research purpose and open-source data intention"
-      ]
-    },
-    {
       "id": "S7",
       "url": "https://en.wikipedia.org/wiki/Gabe_Newell",
       "title": "Gabe Newell",
       "publisher": "Wikipedia",
       "tier": 3,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "Orientation-only birthplace claim of Colorado",
         "Existing-record full name and birth-date cross-check"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://starfishneuroscience.com/team/",
+      "title": "Our Team",
+      "publisher": "Starfish Neuroscience",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Gabe Newell as Starfish Neuroscience co-founder",
+        "flat and self-directed team structure"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://starfishneuroscience.com/",
+      "title": "Starfish Neuroscience",
+      "publisher": "Starfish Neuroscience",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "development of minimally invasive brain and body interfaces",
+        "laboratory-to-real-world development approach",
+        "neurological, psychiatric and oncology research programmes"
       ]
     }
   ],
@@ -324,6 +375,6 @@
   ],
   "review": {
     "status": "pending",
-    "notes": "The Valve/technology wealth story and Inkfish/RV11000 identity are strongly evidenced. The birthplace remains unproposed, and no personal social account met the verification threshold."
+    "notes": "The Microsoft-to-Valve wealth story and Starfish Neuroscience chapter are strongly evidenced. The birthplace remains unproposed, and no personal social account met the verification threshold."
   }
 }

@@ -1,12 +1,13 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
+  "record_type": "institution",
   "owner": {
     "person_id": 894,
     "display_name": "Turkey Government",
     "identity_confidence": {
-      "score": 99,
+      "score": 98,
       "band": "very_high",
-      "reason": "The supplied record explicitly names Turkey Government and links it to Savarona; Turkish government sources independently document the state's purchase, restoration and current naval use of the vessel. This confidence applies to the institutional record, not to a human identity."
+      "reason": "The display name is explicitly governmental, and official Turkish sources describe the Republic's state institutions and executive structure. This confidence concerns only the non-person classification, not a more specific legal-entity mapping."
     }
   },
   "input_snapshot": {
@@ -84,129 +85,75 @@
       "16": "TikTok"
     }
   },
-  "research_status": "limited",
+  "research_status": "not_applicable",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This record represents the Government of Türkiye as a public institution rather than a natural person. Official state sources distinguish the Republic's legislative, executive and judicial institutions and place executive authority within the constitutional state structure. Person-specific biography, private-wealth and personal social-profile proposals are therefore not applicable.",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "The record's governmental name is consistent with official constitutional and e-Government descriptions of Türkiye's public institutions."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
   "forbes_profile": {
     "status": "not_found",
     "url": null,
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Focused exact-name and site:forbes.com/profile searches found no dedicated Forbes profile for Turkey Government. Results concerning Turkish officials, politicians or private individuals were rejected because they are not this institutional record."
+      "reason": "Focused exact-name and site:forbes.com/profile searches found no dedicated Forbes profile for Turkey Government; results concerned unrelated natural persons or policy reporting."
     }
   },
   "primary_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No private-wealth industry applies: this record represents the Turkish state, and public administration or operation of a naval vessel is not a person's wealth-producing sector.",
+    "summary": "A public government record does not identify personal private wealth, so no private-wealth industry can be assigned.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Türkiye's Constitution and e-Government Gateway establish governmental and institutional context, while Defence Ministry sources identify Savarona as a state-restored naval vessel rather than private wealth."
+      "reason": "Official sources establish a public state context rather than a natural person with identifiable private wealth."
     },
     "source_ids": [
       "S1",
-      "S2",
-      "S4",
-      "S5"
+      "S2"
     ]
   },
   "wealth_origin": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Personal wealth origin is inapplicable because Turkey Government is a state institution rather than a natural person with a private fortune.",
+    "summary": "Personal wealth origin is not applicable because the record represents government rather than a natural person with a private fortune.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Official constitutional, administrative and vessel records support an institutional state interpretation and provide no honest basis for assigning a personal wealth-origin mechanism."
+      "reason": "The official institutional context provides no basis for assigning a personal wealth-acquisition mechanism."
     },
     "source_ids": [
       "S1",
-      "S2",
-      "S3",
-      "S4"
+      "S2"
     ]
   },
   "wealth_relationship": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No personal relationship to wealth-producing assets can be assigned; Savarona's documented relationship is governmental and naval, not evidence of a private fortune or individual ownership.",
+    "summary": "No personal relationship to wealth-producing assets can be assigned to this government record.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Official sources document state purchase, public restoration and current TCG designation but do not identify a natural person or privately held wealth-producing asset."
-    },
-    "source_ids": [
-      "S3",
-      "S4",
-      "S5"
-    ]
-  },
-  "biography": {
-    "plain_text": "Turkey Government is an institutional owner record representing the Turkish state, not a natural person or private wealth holder. Its vessel relationship is Savarona, purchased by the state in 1938 and now documented by the Defence Ministry as TCG Savarona. Human identity, personal wealth and person-specific social fields are therefore inapplicable.",
-    "html": "<p>Turkey Government is an institutional owner record representing the Turkish state, not a natural person or private wealth holder. Its vessel relationship is Savarona, purchased by the state in 1938 and now documented by the Defence Ministry as TCG Savarona. Human identity, personal wealth and person-specific social fields are therefore inapplicable.</p>\r\n",
-    "word_count": 51,
-    "confidence": {
-      "score": 98,
-      "band": "very_high",
-      "reason": "The institutional characterization follows official constitutional and administrative sources, while Turkish government and Defence Ministry records directly support Savarona's state purchase and current naval identity."
+      "reason": "The record is institutional, so the person-focused asset-relationship taxonomy is not applicable."
     },
     "source_ids": [
       "S1",
-      "S2",
-      "S3",
-      "S5"
+      "S2"
     ]
   },
-  "long_biography": {
-    "plain_text": "Turkey Government is an institutional record for the Turkish state rather than an individual owner. Türkiye’s Constitution vests executive power in the president, while the e-Government Gateway lists the republic’s legislative, executive and judicial institutions. The record therefore has no human birth, gender, family, occupation or personal social-profile identity to research.\n\nIts Savarona relationship is governmental and historic. The Ministry of Culture and Tourism says the Turkish government purchased the yacht in 1938 for presidential use; the Ministry of National Defence records a state-led restoration completed in 2024 and now identifies the vessel as TCG Savarona in naval events. This public-asset context does not establish a private fortune, wealth origin or personal asset role. All three wealth classifications remain Unknown, and no president or later operator is substituted for the institutional owner.",
-    "html": "<p>Turkey Government is an institutional record for the Turkish state rather than an individual owner. Türkiye’s Constitution vests executive power in the president, while the e-Government Gateway lists the republic’s legislative, executive and judicial institutions. The record therefore has no human birth, gender, family, occupation or personal social-profile identity to research.</p>\r\n<p>Its Savarona relationship is governmental and historic. The Ministry of Culture and Tourism says the Turkish government purchased the yacht in 1938 for presidential use; the Ministry of National Defence records a state-led restoration completed in 2024 and now identifies the vessel as TCG Savarona in naval events. This public-asset context does not establish a private fortune, wealth origin or personal asset role. All three wealth classifications remain Unknown, and no president or later operator is substituted for the institutional owner.</p>\r\n",
-    "word_count": 132,
-    "confidence": {
-      "score": 98,
-      "band": "very_high",
-      "reason": "The text is limited to official constitutional, e-government, culture-ministry and defence-ministry evidence and explicitly declines every personal or private-wealth inference."
-    },
-    "source_ids": [
-      "S1",
-      "S2",
-      "S3",
-      "S4",
-      "S5"
-    ]
-  },
-  "proposed_details": [
-    {
-      "action": "fill_missing",
-      "field": "known_for_title",
-      "value": "Institutional record for Turkish state vessel Savarona",
-      "confidence": {
-        "score": 98,
-        "band": "very_high",
-        "reason": "The supplied record links Turkey Government to Savarona, and official Turkish sources document state purchase, restoration and current naval use; the wording preserves the institutional limitation."
-      },
-      "source_ids": [
-        "S3",
-        "S4",
-        "S5"
-      ]
-    },
-    {
-      "action": "fill_missing",
-      "field": "biography",
-      "value": "<p>Turkey Government is an institutional owner record representing the Turkish state, not a natural person or private wealth holder. Its vessel relationship is Savarona, purchased by the state in 1938 and now documented by the Defence Ministry as TCG Savarona. Human identity, personal wealth and person-specific social fields are therefore inapplicable.</p>\r\n",
-      "confidence": {
-        "score": 98,
-        "band": "very_high",
-        "reason": "The institutional characterization follows official constitutional and administrative sources, while Turkish government and Defence Ministry records directly support Savarona's state purchase and current naval identity."
-      },
-      "source_ids": [
-        "S1",
-        "S2",
-        "S3",
-        "S5"
-      ]
-    }
-  ],
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
   "proposed_socials": [],
   "candidates_requiring_review": [],
   "sources": [
@@ -216,83 +163,34 @@
       "title": "Constitution of the Republic of Turkey",
       "publisher": "Constitutional Court of the Republic of Türkiye",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "Republic of Türkiye state context",
-        "executive power exercised by the President of the Republic",
-        "institutional rather than personal nature of government"
+        "Türkiye's constitutional status as a republic",
+        "executive power and function within the constitutional state structure",
+        "public institutional context rather than a natural-person identity"
       ]
     },
     {
       "id": "S2",
-      "url": "https://turkiye.gov.tr/kurumlar",
+      "url": "https://www.turkiye.gov.tr/kurumlar",
       "title": "Institutions",
       "publisher": "Republic of Türkiye e-Government Gateway",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "legislative, executive and judicial institutions of the Republic of Türkiye",
+        "official listing of the Republic's principal legislative, executive and judicial institutions",
         "government as an institutional state context rather than a natural person"
-      ]
-    },
-    {
-      "id": "S3",
-      "url": "https://www.ktb.gov.tr/EN-104076/savarona.html",
-      "title": "Savarona",
-      "publisher": "Republic of Türkiye Ministry of Culture and Tourism",
-      "tier": 1,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Savarona identity and dimensions",
-        "Turkish government purchase in 1938",
-        "presidential-yacht purpose",
-        "Atatürk's use of the vessel",
-        "later Turkish Navy training-ship use"
-      ]
-    },
-    {
-      "id": "S4",
-      "url": "https://www.msb.gov.tr/Content/Upload/Docs/2024%20YILI%20MSB%20FAAL%C4%B0YET%20RAPORU.pdf",
-      "title": "2024 Activity Report",
-      "publisher": "Republic of Türkiye Ministry of National Defence",
-      "tier": 1,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Savarona as Atatürk's historical legacy",
-        "state-led maintenance, repair and modernization",
-        "Istanbul Shipyard Command responsibility",
-        "completion of restoration in June 2024",
-        "first sea trial in July 2024"
-      ]
-    },
-    {
-      "id": "S5",
-      "url": "https://www.msb.gov.tr/SlaytHaber/03c8f3a692294d2aba25f319876062dd",
-      "title": "President Recep Tayyip Erdoğan Salutes Ships Passing Through the Bosphorus during TEKNOFEST Blue Homeland",
-      "publisher": "Republic of Türkiye Ministry of National Defence",
-      "tier": 1,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "current TCG Savarona designation",
-        "participation with Turkish naval ships in an August 2025 Bosphorus passage",
-        "current governmental and naval context"
       ]
     }
   ],
   "uncertainties": [
-    "This source record uses a person-shaped schema for a non-natural-person institution. Identity confidence refers only to the Turkey Government label and its state-vessel context; it does not identify a human owner.",
-    "The source values first_name=Turkey, last_name=Government, nationality=Turkish, birth_country=Turkey and mortality_status=Alive are schema artifacts when applied to an institution. They are preserved because the current enrichment contract has no institution-safe correction values.",
-    "The inventory categorizes middle names, secondary nationality, gender, birthplace and birth date as researchable human fields. They are deliberately left blank because they are inapplicable to a government, not because a person's details remain undiscovered.",
-    "All three wealth classifications are Unknown because the personal-wealth taxonomy is inapplicable to a state institution. Unknown does not indicate a merely incomplete search for a private fortune.",
-    "Official sources establish the Turkish government's 1938 purchase, later Navy use, state restoration and current TCG Savarona identity. This dossier does not infer a more specific legal-title or beneficial-ownership structure beyond that public institutional context.",
-    "The source owner history contains duplicate current Savarona relationships. The dossier treats them as one institutional vessel association and does not create a second owner or vessel.",
-    "Mustafa Kemal Atatürk used Savarona after the state purchase, and later a private operator held a long lease. Neither is substituted for Turkey Government, as required by the institutional source record.",
-    "No dedicated Forbes profile for Turkey Government was found. Forbes results about Turkish officeholders, politicians and businesspeople were rejected as different natural persons.",
-    "No personal LinkedIn, Instagram, personal website or other social profile is proposed. Government websites and institutional accounts are not personal profiles and do not satisfy this person-focused social contract.",
-    "Blank title, suffix, secondary residence, birth, death, calculated age, internal-note and unknown-name fields remain unfilled because they are optional, inapplicable or system-managed."
+    "Turkey Government is a broad institutional label rather than the formal name of a single legal entity. The evidence establishes its non-person public-government character but does not narrow the record to one ministry, office or agency.",
+    "The source record uses a person-shaped schema, so its human identity and life-event fields are not suitable for this institution. They are preserved in the immutable input snapshot and deliberately receive no proposals.",
+    "No dedicated Forbes profile was found. Forbes results about Turkish officials, politicians, businesspeople or public policy were rejected because they do not identify this institutional record.",
+    "No personal social links are proposed because government websites and institutional accounts are not personal profiles."
   ],
   "review": {
     "status": "pending",
-    "notes": "Institutional exception: preserve the Turkey Government record, all Unknown personal-wealth classifications and the public-asset framing. Do not substitute the president, Atatürk, a former lessee or any other individual as owner."
+    "notes": null
   }
 }

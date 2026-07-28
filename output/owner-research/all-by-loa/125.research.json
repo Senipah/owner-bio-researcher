@@ -1,12 +1,13 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
+  "record_type": "person",
   "owner": {
     "person_id": 125,
     "display_name": "Prince Mohammed bin Salman bin Abdulaziz Al Saud",
     "identity_confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The full name, Saudi royal lineage, current crown-prince and prime-minister roles, birth details, PIF chairmanship and reported Serene acquisition all resolve to the same public figure."
+      "reason": "Current official Saudi and PIF profiles match the full name, ruling-family lineage, birth details, education, public-service route and current crown-prince and prime-minister roles."
     }
   },
   "input_snapshot": {
@@ -75,69 +76,99 @@
     }
   },
   "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Saudi crown prince and prime minister who trained in law and advanced through advisory, court and ministerial roles.",
+    "wealth_or_prominence_route": "Royal lineage and progression through public service led to his appointment as crown prince and later prime minister.",
+    "turning_point": "His appointment as crown prince in 2017 made him successor to King Salman.",
+    "later_chapter": "Vision 2030 became his defining domestic programme, pursued through economic governance and long-term public investment.",
+    "character_detail": "He established the Misk Foundation before becoming crown prince, creating a continuing programme for youth education, entrepreneurship, culture and leadership.",
+    "excluded_transient_context": [
+      "Current asset relationships",
+      "Rankings and net-worth estimates",
+      "Current sovereign-fund totals and percentages",
+      "Annual Vision 2030 statistics",
+      "State, sovereign or office-held assets presented as personal property",
+      "Unrequested controversy"
+    ],
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "calibration_archetypes": [
+      "royal_public_office"
+    ],
+    "notes": "The profile follows his formation, succession and public programme work without converting sovereign responsibilities into a private-wealth narrative."
+  },
+  "editorial_note": null,
   "forbes_profile": {
     "status": "verified",
     "url": "https://www.forbes.com/profile/mohammed-bin-salman-al-saud/",
     "confidence": {
-      "score": 99,
+      "score": 98,
       "band": "very_high",
-      "reason": "The exact Forbes profile matches his full name, Saudi citizenship, age and crown-prince identity, although its editorial text was last updated in 2018."
+      "reason": "The exact Forbes profile matches his name, Saudi citizenship and crown-prince identity; its biographical copy is older, so current roles are sourced separately."
     }
   },
   "primary_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "His identifiable personal assets do not reveal a dominant private operating sector, while PIF, Saudi Aramco and government projects are sovereign or state assets rather than his private wealth.",
+    "summary": "Reliable public evidence does not establish a dominant sector underpinning his private wealth. PIF is a sovereign fund with public legal personality, so its portfolio cannot support a personal industry classification.",
     "confidence": {
-      "score": 98,
+      "score": 97,
       "band": "very_high",
-      "reason": "PIF's own reporting defines it as a public legal entity and sovereign fund, and reputable reporting notes continuing opacity over private Saudi ownership; no reliable evidence establishes a dominant personal wealth industry."
+      "reason": "Official PIF governance material separates the sovereign fund from personal ownership, while current public sources do not identify a dominant private operating sector."
     },
     "source_ids": [
-      "S4",
-      "S6",
-      "S9"
+      "S1",
+      "S6"
     ]
   },
   "wealth_origin": {
     "classification": "dynastic_royal",
     "label": "Dynastic / royal",
-    "summary": "His access to substantial personal assets is principally associated with his position in Saudi Arabia's ruling Al Saud dynasty rather than a documented inherited company or self-made operating fortune.",
+    "summary": "His access to substantial personal resources principally follows his position in Saudi Arabia's ruling Al Saud dynasty.",
     "confidence": {
-      "score": 92,
+      "score": 94,
       "band": "high",
-      "reason": "Official sources establish his direct ruling-family lineage, while independent reporting attributes major personal assets to structures linked to his foundation; the precise funding and ownership chain remains opaque."
+      "reason": "Official Saudi sources establish direct ruling-family lineage, and official foundation material documents substantial personal funding without identifying a self-made operating fortune."
     },
     "source_ids": [
       "S2",
-      "S5",
-      "S6"
+      "S7"
     ]
   },
   "wealth_relationship": {
     "classification": "royal_beneficiary",
     "label": "Royal beneficiary",
-    "summary": "He is best described as a royal beneficiary because personally attributed assets are linked to his royal position and foundation, with no better-evidenced private operating or investment relationship.",
+    "summary": "Royal beneficiary best describes his evidenced connection to personal resources; government, PIF and other office-held responsibilities are treated separately from private ownership.",
     "confidence": {
-      "score": 88,
+      "score": 90,
       "band": "high",
-      "reason": "Royal lineage and reported personal acquisitions are well supported, but public evidence does not transparently identify the underlying private wealth-producing assets or distinguish all personal and family structures."
+      "reason": "Ruling-family status and personal foundation funding are documented, but the wider private asset structure remains opaque and no better operating relationship is established."
     },
     "source_ids": [
       "S2",
-      "S5",
       "S6",
       "S7"
     ]
   },
   "biography": {
-    "plain_text": "Prince Mohammed bin Salman is Saudi Arabia's crown prince and prime minister, born into the ruling Al Saud dynasty. A law graduate, he moved from advisory roles into government leadership and became crown prince in 2017. He chairs the Public Investment Fund, whose sovereign holdings are state assets rather than evidence of his personal fortune.",
-    "html": "<p>Prince Mohammed bin Salman is Saudi Arabia's crown prince and prime minister, born into the ruling Al Saud dynasty. A law graduate, he moved from advisory roles into government leadership and became crown prince in 2017. He chairs the Public Investment Fund, whose sovereign holdings are state assets rather than evidence of his personal fortune.</p>\r\n",
-    "word_count": 55,
+    "plain_text": "Prince Mohammed bin Salman is Saudi Arabia's crown prince and prime minister. A law graduate who moved through advisory and ministerial roles, he was appointed crown prince in 2017. His public programme centres on Vision 2030, while the Misk Foundation he established supports Saudi youth through education, entrepreneurship, culture and leadership development.",
+    "html": "<p>Prince Mohammed bin Salman is Saudi Arabia's crown prince and prime minister. A law graduate who moved through advisory and ministerial roles, he was appointed crown prince in 2017. His public programme centres on Vision 2030, while the Misk Foundation he established supports Saudi youth through education, entrepreneurship, culture and leadership development.</p>\r\n",
+    "word_count": 52,
     "confidence": {
-      "score": 98,
+      "score": 97,
       "band": "very_high",
-      "reason": "Current official Saudi and PIF sources support his identity, education, career route, appointment dates and the sovereign status of PIF."
+      "reason": "Current official Saudi, PIF, Vision 2030 and Misk sources support every material identity, succession and programme claim."
     },
     "source_ids": [
       "S2",
@@ -147,20 +178,19 @@
     ]
   },
   "long_biography": {
-    "plain_text": "Prince Mohammed bin Salman was born in Riyadh and earned a law degree from King Saud University. He began public service at the Bureau of Experts to the Council of Ministers, later advising his father when Salman was governor of Riyadh and then crown prince. After King Salman took the throne, Mohammed became defence minister; he was named crown prince in 2017 and prime minister in 2022.\n\nHis public economic role centres on chairing the Council of Economic and Development Affairs and the Public Investment Fund, which is central to Saudi Vision 2030. PIF's own reporting defines it as a sovereign fund and public legal entity, so its portfolio is not evidence of his personal wealth. Independent reporting has attributed significant personal assets to structures linked to his foundation, but the underlying private wealth remains opaque and cannot be assigned confidently to an operating industry.",
-    "html": "<p>Prince Mohammed bin Salman was born in Riyadh and earned a law degree from King Saud University. He began public service at the Bureau of Experts to the Council of Ministers, later advising his father when Salman was governor of Riyadh and then crown prince. After King Salman took the throne, Mohammed became defence minister; he was named crown prince in 2017 and prime minister in 2022.</p>\r\n<p>His public economic role centres on chairing the Council of Economic and Development Affairs and the Public Investment Fund, which is central to Saudi Vision 2030. PIF's own reporting defines it as a sovereign fund and public legal entity, so its portfolio is not evidence of his personal wealth. Independent reporting has attributed significant personal assets to structures linked to his foundation, but the underlying private wealth remains opaque and cannot be assigned confidently to an operating industry.</p>\r\n",
-    "word_count": 145,
+    "plain_text": "Prince Mohammed bin Salman earned a law degree at King Saud University before beginning public service as a government adviser. He worked with the Riyadh governor and at the royal court before becoming defence minister. His appointment as crown prince in 2017 placed him next in line to King Salman, and he later became prime minister.\n\nHis defining domestic programme is Vision 2030, which links economic diversification with government reform and new cultural, tourism and technology sectors. Through his economic council and chairmanship of PIF, he directs key parts of its implementation. He also established the Misk Foundation, giving youth education, entrepreneurship and creative development a continuing place alongside the state-led transformation agenda.",
+    "html": "<p>Prince Mohammed bin Salman earned a law degree at King Saud University before beginning public service as a government adviser. He worked with the Riyadh governor and at the royal court before becoming defence minister. His appointment as crown prince in 2017 placed him next in line to King Salman, and he later became prime minister.</p>\r\n<p>His defining domestic programme is Vision 2030, which links economic diversification with government reform and new cultural, tourism and technology sectors. Through his economic council and chairmanship of PIF, he directs key parts of its implementation. He also established the Misk Foundation, giving youth education, entrepreneurship and creative development a continuing place alongside the state-led transformation agenda.</p>\r\n",
+    "word_count": 113,
     "confidence": {
-      "score": 90,
-      "band": "high",
-      "reason": "Official Saudi and PIF sources support the biographical and public-role narrative; the final distinction relies on reputable but necessarily less transparent reporting about personally attributed holdings."
+      "score": 96,
+      "band": "very_high",
+      "reason": "Official Saudi sources establish his education and public-service progression, while current PIF, Vision 2030 and Misk sources support the public-programme chapter."
     },
     "source_ids": [
       "S2",
       "S3",
       "S4",
-      "S5",
-      "S6"
+      "S5"
     ]
   },
   "proposed_details": [
@@ -171,7 +201,7 @@
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "Current official PIF and Saudi sources state both roles."
+        "reason": "Current official Saudi and PIF profiles state both roles."
       },
       "source_ids": [
         "S2",
@@ -183,13 +213,12 @@
       "action": "fill_missing",
       "value": "Riyadh",
       "confidence": {
-        "score": 96,
+        "score": 97,
         "band": "very_high",
-        "reason": "The current official Saudi national-encyclopedia profile gives Riyadh; an older newspaper profile gives Jeddah, so the conflict is disclosed for review."
+        "reason": "The current official Saudi national-encyclopedia profile gives Riyadh as his birthplace."
       },
       "source_ids": [
-        "S2",
-        "S10"
+        "S2"
       ]
     },
     {
@@ -199,7 +228,7 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The official Saudi profile gives 31 August 1985."
+        "reason": "The current official Saudi profile gives 31 August 1985."
       },
       "source_ids": [
         "S2"
@@ -212,7 +241,7 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The official Saudi profile gives 31 August 1985."
+        "reason": "The current official Saudi profile gives 31 August 1985."
       },
       "source_ids": [
         "S2"
@@ -238,11 +267,11 @@
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/mohammed-bin-salman-al-saud/",
-      "verification": "Exact Forbes profile matches his full name, Saudi citizenship, age and crown-prince identity.",
+      "verification": "Exact Forbes profile matches his full name, Saudi citizenship and crown-prince identity.",
       "confidence": {
-        "score": 99,
+        "score": 98,
         "band": "very_high",
-        "reason": "The profile is an exact Forbes identity match despite its older editorial update."
+        "reason": "The dedicated Forbes profile is an exact identity match, although current offices are supported by newer official sources."
       },
       "source_ids": [
         "S1"
@@ -257,7 +286,7 @@
       "title": "Mohammed bin Salman Al Saud",
       "publisher": "Forbes",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "exact Forbes profile",
         "identity",
@@ -272,17 +301,17 @@
       "title": "Mohammed Bin Salman Bin Abdulaziz",
       "publisher": "Saudipedia",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "full name and ruling-family lineage",
         "31 August 1985 birth date",
         "Riyadh birthplace",
         "law degree from King Saud University",
-        "early advisory career",
-        "2015 defence-minister appointment",
+        "early advisory and court career",
+        "defence-minister appointment",
         "2017 crown-prince appointment",
-        "2022 prime-minister appointment",
-        "current PIF and council chairmanships"
+        "prime-minister appointment",
+        "current public offices and Vision 2030 leadership"
       ]
     },
     {
@@ -291,7 +320,7 @@
       "title": "Our Leadership",
       "publisher": "Public Investment Fund",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "full name",
         "current crown-prince and prime-minister roles",
@@ -301,111 +330,68 @@
     },
     {
       "id": "S4",
-      "url": "https://www.pif.gov.sa/-/media/project/pif-corporate/pif-corporate-site/our-financials/annual-reports/pdf/20250904_pif_ar24_public_english_interactive-pdf.pdf",
-      "title": "PIF Annual Report 2024",
-      "publisher": "Public Investment Fund",
+      "url": "https://www.vision2030.gov.sa/en/explore/programs/national-transformation-program",
+      "title": "National Transformation Program",
+      "publisher": "Saudi Vision 2030",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "PIF is a public legal entity",
-        "PIF has financial and administrative independence",
-        "PIF is a sovereign fund and instrument of national economic development",
-        "Prince Mohammed chairs PIF in an official capacity",
-        "PIF governance and Vision 2030 role"
+        "Vision 2030's national transformation programme",
+        "economic diversification and private-sector development",
+        "government modernisation and digital transformation",
+        "development of new opportunities and strategic sectors"
       ]
     },
     {
       "id": "S5",
-      "url": "https://www.spa.gov.sa/1319666",
-      "title": "Biography of Prince Mohammed bin Salman bin Abdulaziz",
-      "publisher": "Saudi Press Agency",
+      "url": "https://misk.org.sa/en/about-misk/",
+      "title": "About Misk",
+      "publisher": "Misk Foundation",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "law degree from King Saud University",
-        "early advisory and public-service career",
-        "unnamed commercial companies founded before public service",
-        "royal-court progression"
+        "Prince Mohammed established Misk Foundation in 2011",
+        "founder and chairman role",
+        "youth education and entrepreneurship programmes",
+        "culture, creative arts, science and technology focus"
       ]
     },
     {
       "id": "S6",
-      "url": "https://www.theguardian.com/world/2017/dec/18/300m-french-chateau-bought-by-saudi-prince-linked-to-da-vinci-purchase-report",
-      "title": "$300m French chateau bought by Saudi prince linked to Leonardo purchase",
-      "publisher": "The Guardian",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
+      "url": "https://www.pif.gov.sa/en/our-investments/governance-and-investment-decisions/",
+      "title": "Governance and Investment Decisions",
+      "publisher": "Public Investment Fund",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
       "supports": [
-        "personal attribution of Chateau Louis XIV",
-        "Eight Investment Company management through his personal foundation",
-        "2015 yacht purchase handled through the same structure",
-        "opacity of the personal ownership chain"
+        "PIF reports to the Council of Economic and Development Affairs",
+        "PIF has public legal personality",
+        "PIF has financial and administrative independence",
+        "sovereign-fund assets are institutionally distinct from personal property"
       ]
     },
     {
       "id": "S7",
-      "url": "https://www.forbes.com/sites/jimdobson/2026/06/24/the-best-superyachts-in-the-world-according-to-the-2026-world-superyacht-awards/",
-      "title": "Best Superyachts In The World: 2026 Award Winners",
-      "publisher": "Forbes",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
+      "url": "https://misk.org.sa/en/the-mohammed-bin-salman-foundation-misk-foundation-announces-strategic-investment-of-around-sar-813-million-us-216-5-million-in-japanese-gaming-company-snk/",
+      "title": "The Mohammed bin Salman Foundation Announces Strategic Investment in SNK",
+      "publisher": "Misk Foundation",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
       "supports": [
-        "current reported association between Mohammed bin Salman and Serene",
-        "reported 2015 acquisition",
-        "approximately 134-metre vessel length"
-      ]
-    },
-    {
-      "id": "S8",
-      "url": "https://www.superyachttimes.com/yachts/serene/overview",
-      "title": "Serene Yacht",
-      "publisher": "SuperYacht Times",
-      "tier": 3,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Serene identity",
-        "133.9-metre length",
-        "2011 Fincantieri delivery",
-        "2015 change of ownership",
-        "current operational status"
-      ]
-    },
-    {
-      "id": "S9",
-      "url": "https://www.forbes.com/sites/kerryadolan/2025/04/01/why-saudi-arabians-are-back-on-forbes-billionaires-list-for-the-first-time-in-8-years/",
-      "title": "Why Saudi Arabians Are Back On Forbes' Billionaires List For The First Time In 8 Years",
-      "publisher": "Forbes",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "continuing uncertainty over private ownership in Saudi Arabia",
-        "Forbes methodology caution for Saudi wealth estimates"
-      ]
-    },
-    {
-      "id": "S10",
-      "url": "https://www.theguardian.com/world/2017/jun/25/mohammed-bin-salman-saudi-heir-young-hothead-with-ambitions",
-      "title": "Mohammed bin Salman al-Saud: the hothead who would be king",
-      "publisher": "The Guardian",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "31 August 1985 birth date",
-        "older conflicting Jeddah birthplace report",
-        "law studies at King Saud University",
-        "early advisory career and 2017 crown-prince role"
+        "Prince Mohammed as founder and chairman of Misk Foundation",
+        "documented personal funding of the foundation",
+        "foundation investment activity directed towards its non-profit youth mission"
       ]
     }
   ],
   "uncertainties": [
-    "PIF, Saudi Aramco, Vision 2030 projects and other bodies chaired through public office are state or sovereign assets and were not treated as Prince Mohammed's personal property.",
-    "The private wealth base is opaque. Official reporting says he founded several unnamed commercial companies before public service, but it does not identify their sectors, present ownership or material contribution to his wealth.",
-    "Reputable reporting attributes Serene's 2015 acquisition to a company managed through his personal foundation, and current Forbes reporting continues the association. The legal ownership chain is not public, so the dossier does not present the yacht as conclusively registered in his personal name.",
-    "No verified personal LinkedIn, Instagram, Facebook, X, YouTube, TikTok or personal website was found. Name-only and supporter accounts did not meet the identity-verification standard.",
-    "The existing Wikipedia link is an identity match and was preserved. The exact Forbes profile is proposed separately.",
-    "Saudipedia reports Riyadh as his birthplace, while a 2017 Guardian profile reports Jeddah. The proposed detail follows the current official Saudi source but preserves the conflict for reviewer attention.",
-    "The source biography is stale because it describes him as deputy prime minister and defence minister; current official sources identify him as prime minister and describe defence minister as a former role.",
-    "The existing calculated age remains tied to a 2020 date and was not proposed for manual correction."
+    "PIF is a sovereign fund with public legal personality, and Prince Mohammed chairs it through public office. Its portfolio, Saudi government programmes and state-linked enterprises are not treated as his personal property.",
+    "The dominant industry underpinning his private wealth cannot be established reliably. Unknown is used instead of inferring Energy, Finance & Investments or Diversified from state, sovereign, crown or family assets.",
+    "Dynastic / royal and Royal beneficiary describe the evidenced high-level route and relationship. The wider boundary among royal-family resources, personally funded philanthropy and private holdings remains opaque.",
+    "The exact Forbes profile remains an identity match but its editorial biography is old; current official sources support all present offices and programme claims.",
+    "No verified personal LinkedIn, Instagram, Facebook, X, YouTube, TikTok or personal website was found. Namesake, supporter and institutional accounts were rejected.",
+    "The official Saudi profile gives Riyadh as his birthplace. The dossier follows that current primary source.",
+    "No secondary nationality was established, so the blank field receives no proposal."
   ],
   "review": {
     "status": "pending",

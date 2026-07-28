@@ -1,12 +1,13 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
+  "record_type": "person",
   "owner": {
     "person_id": 8692,
     "display_name": "Stephen Orenstein",
     "identity_confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The exact Forbes profile uniquely aligns the German-American businessman with Supreme Group, Frankfurt residence, the Eintracht Frankfurt investment and the 388-foot Liva delivered in 2023; official Supreme, Eintracht and Abeking & Rasmussen sources independently match the company, geography and enriched 118.2-metre vessel context."
+      "reason": "The exact Forbes profile aligns the German-American businessman, Supreme Group succession, Frankfurt residence and Eintracht Frankfurt investment with first-party company and club histories."
     }
   },
   "input_snapshot": {
@@ -78,23 +79,59 @@
     }
   },
   "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "German-American businessman and former majority owner of Supreme Group, the logistics company founded by his father.",
+    "wealth_or_prominence_route": "After his father's death, Orenstein left university and took responsibility for the family company. He expanded its food, fuel and supply operations across difficult environments, with Afghanistan contracts becoming the decisive growth engine.",
+    "turning_point": "Taking over Supreme Group in 1985 converted an abrupt family succession into an international logistics expansion.",
+    "later_chapter": "Orenstein invested in Eintracht Frankfurt through Freunde des Adlers and served on the club's supervisory board, extending a connection maintained through an uninterrupted season ticket since 1985.",
+    "character_detail": "His long association with Eintracht began in the same year that he returned to Frankfurt to assume responsibility for Supreme.",
+    "excluded_transient_context": [
+      "Current asset relationships and LOA cohort ranking",
+      "Current net worth and rankings",
+      "Former Supreme ownership percentages",
+      "Current commercial-property values and locations",
+      "Contract values, annual revenue and dividend figures",
+      "Litigation unrelated to the durable career narrative"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "calibration_archetypes": [
+      "heir_custodian",
+      "founder_operator"
+    ],
+    "notes": "The rewrite centres the sudden succession and subsequent logistics expansion, then uses a longstanding Frankfurt football commitment as the single later layer. It avoids transient wealth measures, ownership percentages and current asset context."
+  },
+  "editorial_note": null,
   "forbes_profile": {
     "status": "verified",
     "url": "https://www.forbes.com/profile/stephen-orenstein/",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The current exact-name Forbes profile matches Orenstein's former 75% Supreme Group holding, succession after his father's 1985 death, Frankfurt residence, U.S. citizenship, Eintracht Frankfurt stake, commercial-property portfolio and ownership of Liva O."
+      "reason": "The current exact-name Forbes profile matches Orenstein's former Supreme Group ownership, succession after his father's death, Frankfurt residence, U.S. citizenship and Eintracht Frankfurt stake."
     }
   },
   "primary_industry": {
     "classification": "logistics",
     "label": "Logistics",
-    "summary": "Orenstein's fortune was principally created through Supreme Group's supply-chain operations, including food, water, fuel, transport, procurement and storage services for military and humanitarian clients in difficult operating environments.",
+    "summary": "Orenstein's fortune was principally created through Supreme Group's supply-chain operations, including food, water, fuel, transport, procurement and storage services for military and humanitarian clients in difficult environments.",
     "confidence": {
-      "score": 98,
+      "score": 99,
       "band": "very_high",
-      "reason": "Forbes lists supply-chain services as the source of wealth, Bloomberg traces the fortune to Supreme's military logistics activity, and Supreme's official history defines its business as integrated supply-chain and logistics services."
+      "reason": "Forbes identifies supply-chain services as the source of wealth, Bloomberg traces the fortune to Supreme's military logistics activity, and Supreme defines its business as integrated supply-chain services."
     },
     "source_ids": [
       "S1",
@@ -105,11 +142,11 @@
   "wealth_origin": {
     "classification": "inherited_and_expanded",
     "label": "Inherited and expanded",
-    "summary": "Orenstein succeeded to the company founded by his father after Alfred Orenstein died in 1985, then materially expanded it into a global logistics contractor whose Afghanistan operations became the central driver of the family fortune.",
+    "summary": "Orenstein succeeded to the company founded by his father after Alfred Orenstein died in 1985, then materially expanded it into an international logistics contractor whose Afghanistan operations became a central growth engine.",
     "confidence": {
-      "score": 97,
+      "score": 98,
       "band": "very_high",
-      "reason": "Forbes and Bloomberg document the father-founded business, Orenstein's takeover after his father's death and the subsequent growth, while Supreme's official history corroborates the 1957 family-company origin and later geographic expansion."
+      "reason": "Forbes and Bloomberg document the father-founded business, Orenstein's takeover after his father's death and its subsequent growth, while Supreme corroborates the family-company origin and geographic expansion."
     },
     "source_ids": [
       "S1",
@@ -120,11 +157,11 @@
   "wealth_relationship": {
     "classification": "operator",
     "label": "Operator",
-    "summary": "Orenstein did not found Supreme Group but took over and materially ran the family logistics company, historically holding a 75% stake while building its international military-supply operations.",
+    "summary": "Orenstein did not found Supreme Group but took over and materially ran the family logistics company, building its international food, fuel and supply operations.",
     "confidence": {
       "score": 98,
       "band": "very_high",
-      "reason": "Forbes identifies Alfred Orenstein as founder, Stephen Orenstein as the 1985 successor and former 75% owner, while Bloomberg identifies him as Supreme's majority owner and directly quotes him on how he operated the business."
+      "reason": "Forbes identifies Alfred Orenstein as founder and Stephen Orenstein as his successor, while Bloomberg documents his operational leadership and international expansion of the business."
     },
     "source_ids": [
       "S1",
@@ -133,13 +170,13 @@
     ]
   },
   "biography": {
-    "plain_text": "Stephen Orenstein is a German-American businessman whose fortune came from Supreme Group, the military logistics company founded by his father. He took control after Alfred Orenstein's death in 1985 and expanded its supply operations, particularly through Afghanistan contracts. He later shifted capital into commercial property and a stake in Eintracht Frankfurt.",
-    "html": "<p>Stephen Orenstein is a German-American businessman whose fortune came from Supreme Group, the military logistics company founded by his father. He took control after Alfred Orenstein's death in 1985 and expanded its supply operations, particularly through Afghanistan contracts. He later shifted capital into commercial property and a stake in Eintracht Frankfurt.</p>\r\n",
+    "plain_text": "Stephen Orenstein is a German-American businessman who expanded Supreme Group, the military logistics company founded by his father. Taking over after Alfred Orenstein's death, he built its food, fuel and supply operations across difficult environments, especially Afghanistan. He later invested in Eintracht Frankfurt, extending a decades-long connection with the football club.",
+    "html": "<p>Stephen Orenstein is a German-American businessman who expanded Supreme Group, the military logistics company founded by his father. Taking over after Alfred Orenstein's death, he built its food, fuel and supply operations across difficult environments, especially Afghanistan. He later invested in Eintracht Frankfurt, extending a decades-long connection with the football club.</p>\r\n",
     "word_count": 51,
     "confidence": {
-      "score": 96,
+      "score": 98,
       "band": "very_high",
-      "reason": "The exact Forbes profile and Bloomberg reporting support the succession, logistics expansion and current investment portfolio, while Supreme and Eintracht provide first-party corroboration."
+      "reason": "Forbes and Bloomberg establish the succession and logistics growth, while Supreme and Eintracht provide first-party corroboration of the company history and later football investment."
     },
     "source_ids": [
       "S1",
@@ -149,20 +186,21 @@
     ]
   },
   "long_biography": {
-    "plain_text": "Born in Frankfurt, Stephen Orenstein attended school in New Hampshire and studied at Lehigh University. After his father Alfred died in 1985, he left university to take over Supreme Group, the family business established to supply American military bases in Germany. Orenstein developed it into a global food, fuel and logistics contractor serving difficult operating environments.\n\nThe decisive expansion came through military supply work in Afghanistan, where Supreme became the principal provider of food and water to American forces and its revenue rose sharply. Forbes says Orenstein formerly held 75% of the company and still attributes his fortune to supply-chain services. His current portfolio includes commercial property across Europe and the United States and an investment in Eintracht Frankfurt, where he served on the supervisory board until 2024.",
-    "html": "<p>Born in Frankfurt, Stephen Orenstein attended school in New Hampshire and studied at Lehigh University. After his father Alfred died in 1985, he left university to take over Supreme Group, the family business established to supply American military bases in Germany. Orenstein developed it into a global food, fuel and logistics contractor serving difficult operating environments.</p>\r\n<p>The decisive expansion came through military supply work in Afghanistan, where Supreme became the principal provider of food and water to American forces and its revenue rose sharply. Forbes says Orenstein formerly held 75% of the company and still attributes his fortune to supply-chain services. His current portfolio includes commercial property across Europe and the United States and an investment in Eintracht Frankfurt, where he served on the supervisory board until 2024.</p>\r\n",
-    "word_count": 128,
+    "plain_text": "Stephen Orenstein's path into logistics began with an abrupt succession. Educated in New Hampshire and at Lehigh University, he returned to Frankfurt when his father died and took over Supreme Group in 1985. The family company had started by supplying American military bases in Germany. Under Orenstein, it expanded internationally; Afghanistan contracts for food and water became its decisive growth engine.\n\nFrankfurt football formed a durable second thread. A season-ticket holder at Eintracht Frankfurt since 1985, Orenstein later invested through Freunde des Adlers and served on the club's supervisory board. That commitment joined capital with a Frankfurt connection sustained from the year he assumed responsibility for Supreme.",
+    "html": "<p>Stephen Orenstein's path into logistics began with an abrupt succession. Educated in New Hampshire and at Lehigh University, he returned to Frankfurt when his father died and took over Supreme Group in 1985. The family company had started by supplying American military bases in Germany. Under Orenstein, it expanded internationally; Afghanistan contracts for food and water became its decisive growth engine.</p>\r\n<p>Frankfurt football formed a durable second thread. A season-ticket holder at Eintracht Frankfurt since 1985, Orenstein later invested through Freunde des Adlers and served on the club's supervisory board. That commitment joined capital with a Frankfurt connection sustained from the year he assumed responsibility for Supreme.</p>\r\n",
+    "word_count": 107,
     "confidence": {
-      "score": 94,
-      "band": "high",
-      "reason": "Forbes and Bloomberg substantiate the formative chronology, ownership, Afghanistan growth and current portfolio; Supreme and Eintracht corroborate the company history and football-club role. Confidence is moderated because the timing and terms of Orenstein's exit from the Supreme stake are not publicly explained."
+      "score": 97,
+      "band": "very_high",
+      "reason": "Forbes and Bloomberg substantiate the succession and expansion, Supreme corroborates the company history, and Eintracht's first-party announcements document the longstanding club connection, investment and board service."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
       "S4",
-      "S5"
+      "S5",
+      "S6"
     ]
   },
   "proposed_details": [
@@ -173,10 +211,10 @@
       "confidence": {
         "score": 90,
         "band": "high",
-        "reason": "A U.S. Court of Appeals opinion names the Supreme Foodservice defendant as Stephen C. Orenstein, matching the company and exact business identity; only the initial, not the expanded middle name, is publicly established."
+        "reason": "A U.S. Court of Appeals opinion names the Supreme Foodservice defendant as Stephen C. Orenstein, matching the exact business identity; only the initial, not the expanded middle name, is established."
       },
       "source_ids": [
-        "S6"
+        "S7"
       ]
     },
     {
@@ -186,7 +224,7 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The current Forbes profile states that Orenstein formerly owned 75% of Supreme Group, and Bloomberg independently identified him as its majority owner."
+        "reason": "The current Forbes profile states that Orenstein formerly owned a majority of Supreme Group, and Bloomberg independently identified him as its majority owner."
       },
       "source_ids": [
         "S1",
@@ -200,21 +238,20 @@
       "confidence": {
         "score": 96,
         "band": "very_high",
-        "reason": "Bloomberg's direct profile states that Orenstein was born in Frankfurt, consistent with the source record's German birth country and Forbes' current Frankfurt residence."
+        "reason": "Bloomberg's direct profile states that Orenstein was born in Frankfurt, consistent with the source record's German birth country."
       },
       "source_ids": [
-        "S1",
         "S2"
       ]
     },
     {
       "action": "fill_missing",
       "field": "biography",
-      "value": "<p>Stephen Orenstein is a German-American businessman whose fortune came from Supreme Group, the military logistics company founded by his father. He took control after Alfred Orenstein's death in 1985 and expanded its supply operations, particularly through Afghanistan contracts. He later shifted capital into commercial property and a stake in Eintracht Frankfurt.</p>\r\n",
+      "value": "<p>Stephen Orenstein is a German-American businessman who expanded Supreme Group, the military logistics company founded by his father. Taking over after Alfred Orenstein's death, he built its food, fuel and supply operations across difficult environments, especially Afghanistan. He later invested in Eintracht Frankfurt, extending a decades-long connection with the football club.</p>\r\n",
       "confidence": {
-        "score": 96,
+        "score": 98,
         "band": "very_high",
-        "reason": "The exact Forbes profile and Bloomberg reporting support the succession, logistics expansion and current investment portfolio, while Supreme and Eintracht provide first-party corroboration."
+        "reason": "Forbes and Bloomberg establish the succession and logistics growth, while Supreme and Eintracht provide first-party corroboration of the company history and later football investment."
       },
       "source_ids": [
         "S1",
@@ -233,7 +270,7 @@
       "title": "Stephen Orenstein & family",
       "publisher": "Forbes",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "identity",
         "verified Forbes profile",
@@ -241,15 +278,11 @@
         "U.S. citizenship",
         "Frankfurt residence",
         "supply-chain services as source of wealth",
-        "former 75% Supreme Group ownership",
+        "former Supreme Group majority ownership",
         "Alfred Orenstein as company founder",
         "1985 succession after his father's death",
         "Supreme's Afghanistan food and water supply role",
-        "current commercial-property portfolio",
         "Eintracht Frankfurt stake",
-        "Liva O ownership",
-        "388-foot yacht identity",
-        "2023 yacht delivery",
         "current living status"
       ]
     },
@@ -259,7 +292,7 @@
       "title": "Supreme Billionaire Feeds Armies as U.S. Court Battle Blazes",
       "publisher": "Bloomberg",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "identity",
         "Frankfurt birthplace",
@@ -272,7 +305,6 @@
         "majority ownership",
         "food and fuel logistics business",
         "Afghanistan military-supply expansion",
-        "revenue growth",
         "operator relationship",
         "origin of fortune"
       ]
@@ -283,7 +315,7 @@
       "title": "Who we are",
       "publisher": "Supreme Group",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "1957 company founding by Alfred Orenstein",
         "food supply to U.S. military installations in Germany",
@@ -303,71 +335,69 @@
       "title": "Eintracht Frankfurt Fußball AG stärkt Eigenkapital",
       "publisher": "Eintracht Frankfurt",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "identity",
         "Frankfurt businessman",
         "significant participation in Freunde des Adlers",
         "Eintracht Frankfurt investment",
+        "uninterrupted season-ticket holder since 1985",
         "longstanding club association"
       ]
     },
     {
       "id": "S5",
-      "url": "https://en.eintracht.de/news/aufsichtsrat-der-eintracht-frankfurt-fussball-ag-stellt-sich-neu-auf-159536/",
-      "title": "New composition of supervisory board",
+      "url": "https://profis.eintracht.de/news/wechsel-im-aufsichtsrat-der-eintracht-frankfurt-fussball-ag-69646/",
+      "title": "Wechsel im Aufsichtsrat der Eintracht Frankfurt Fußball AG",
       "publisher": "Eintracht Frankfurt",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "identity",
-        "former supervisory-board role",
-        "departure from supervisory board in 2024"
+        "appointment to the supervisory board from January 2019",
+        "representation of Freunde des Adlers"
       ]
     },
     {
       "id": "S6",
-      "url": "https://law.justia.com/cases/federal/appellate-courts/ca4/20-1845/20-1845-2021-08-11.html",
-      "title": "United States ex rel. Anham Fz v. Supreme Foodservice, GMBH, No. 20-1845",
-      "publisher": "U.S. Court of Appeals for the Fourth Circuit, via Justia",
+      "url": "https://en.eintracht.de/news/aufsichtsrat-der-eintracht-frankfurt-fussball-ag-stellt-sich-neu-auf-159536/",
+      "title": "New composition of supervisory board",
+      "publisher": "Eintracht Frankfurt",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "Stephen C. Orenstein name",
-        "middle initial C",
-        "identity link to Supreme Foodservice",
-        "Supreme's 2005 Afghanistan food-supply contract"
+        "identity",
+        "supervisory-board service",
+        "departure from supervisory board in 2024"
       ]
     },
     {
       "id": "S7",
-      "url": "https://www.abeking.com/en/ship/livao/",
-      "title": "Liva",
-      "publisher": "Abeking & Rasmussen",
+      "url": "https://law.justia.com/cases/federal/appellate-courts/ca4/20-1845/20-1845-2021-08-11.html",
+      "title": "United States ex rel. Anham Fz v. Supreme Foodservice, GMBH, No. 20-1845",
+      "publisher": "U.S. Court of Appeals for the Fourth Circuit, via Justia",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "Liva vessel identity",
-        "118.2-metre length",
-        "5,054 gross tonnage",
-        "2023 build year",
-        "Abeking & Rasmussen builder",
-        "Joseph Dirand exterior and interior design"
+        "Stephen C. Orenstein name",
+        "middle initial C",
+        "identity link to Supreme Foodservice"
       ]
     }
   ],
   "uncertainties": [
-    "Forbes' current profile says Orenstein used to own 75% of Supreme Group, but no strong public source explains when, how or to whom that stake was transferred. The dossier therefore describes him as the former majority owner and does not imply current control.",
-    "Orenstein now owns commercial property across several countries, but Forbes continues to identify supply-chain services as the source of wealth. Logistics is retained as the primary industry because Supreme generated the fortune; current property holdings are treated as later capital deployment rather than a better-evidenced replacement origin.",
+    "Forbes says Orenstein formerly owned a majority of Supreme Group, but no strong public source explains when, how or to whom the stake was transferred. The dossier therefore describes him as a former majority owner and does not imply current control.",
+    "Forbes reports commercial-property holdings, but continues to identify supply-chain services as the source of wealth. Logistics remains the primary industry, and the biography uses the better-documented football commitment as its single later chapter.",
     "The U.S. Court of Appeals record establishes only the middle initial C, not the expanded middle name. The proposed middle_names value is therefore limited to C.",
-    "The existing Twitter URL returns a not-found response, and the existing LinkedIn page could not be independently inspected or cross-linked from an official source. Both are preserved as immutable existing links but are not relied upon as evidence.",
-    "No verified personal Instagram, Facebook, YouTube, TikTok or dedicated personal website was found. A prominent steveorenstein.com result belongs to an Australian technology entrepreneur and was rejected as a namesake.",
-    "Supreme's official website remains active but was not proposed as a Company Website because the current Forbes wording no longer establishes Orenstein's ownership or leadership of the company.",
-    "Forbes directly links Orenstein to Liva O, while Abeking & Rasmussen independently confirms the enriched vessel's 118.2-metre length, 5,054 gross tonnage and 2023 delivery. The yacht is omitted from both biographies because no strongly sourced, personally meaningful design or use story was established.",
-    "Blank title, suffix and secondary-residence fields were treated as optional; calculated age, death, internal-notes and unknown-name fields were treated as inapplicable or system-controlled."
+    "The owner input's full birth date is compatible with current public age reporting, but no reviewed source independently confirms the exact day and month.",
+    "The existing Twitter URL returns a not-found response, and the existing LinkedIn page could not be independently cross-linked from an official source. Both are preserved as immutable existing links but are not relied upon as evidence.",
+    "No verified personal Instagram, Facebook, YouTube, TikTok or dedicated personal website was found. A prominent exact-name website belongs to an Australian technology entrepreneur and was rejected as a namesake.",
+    "Supreme's official website remains active but was not proposed as a Company Website because current sources no longer establish Orenstein's ownership or leadership of the company.",
+    "Current asset relationships were excluded from identity reasoning, source claims and both biographies because they are unnecessary to explain Orenstein's documented business career.",
+    "Blank title, suffix and secondary-residence fields were treated as optional; calculated age, death, internal-note and unknown-name fields were treated as inapplicable or system-controlled."
   ],
   "review": {
     "status": "pending",
-    "notes": "Identity, Forbes verification and the inherited-and-expanded logistics history are high-confidence. Reviewer attention is requested for the limited middle-initial proposal and the precise distinction between Orenstein's former Supreme ownership and his current property and football investments."
+    "notes": "Reviewer should note that current Supreme ownership is not publicly established and that the middle-name proposal is deliberately limited to the documented initial."
   }
 }

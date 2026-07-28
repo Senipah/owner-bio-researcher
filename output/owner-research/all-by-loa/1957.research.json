@@ -1,12 +1,13 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
+  "record_type": "person",
   "owner": {
     "person_id": 1957,
     "display_name": "Igor Sechin",
     "identity_confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The exact Forbes profile, Rosneft executive biography, official European Union record and full Igor Ivanovich Sechin name with the same 7 September 1960 birth date identify the same Russian energy executive; Spanish reporting also attributes the enriched 135-metre Crescent relationship to him."
+      "reason": "The exact Forbes profile, Rosneft executive biography and independent biographical records align on Igor Ivanovich Sechin's Russian identity, 7 September 1960 birth date, Leningrad origin and Rosneft leadership."
     }
   },
   "input_snapshot": {
@@ -69,56 +70,86 @@
     }
   },
   "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Igor Ivanovich Sechin is a Russian energy executive, former public official and long-serving chief executive of state-controlled oil producer Rosneft.",
+    "wealth_or_prominence_route": "His prominence developed through language training, interpreter work, municipal administration, senior federal executive posts and leadership of Rosneft.",
+    "turning_point": "After serving as deputy prime minister, Sechin moved back into Rosneft's executive leadership in 2012.",
+    "later_chapter": "His later career has centred on operating Rosneft as chief executive and chairman of its management board.",
+    "character_detail": "His early French and Portuguese studies led to interpreter assignments before his career shifted into administration and energy management.",
+    "excluded_transient_context": [
+      "Current or historical vessel ownership, names, design and LOA ranking",
+      "Current net worth, wealth rankings and asset valuations",
+      "Rosneft revenue, production, reserves and corporate valuation",
+      "Unverified private-asset claims",
+      "Contemporary controversies and personal characterisations"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "The profile follows a durable progression from language study and interpreter work through administration to energy management. It explicitly treats Sechin as Rosneft's operator, separates the state-controlled company from his personal assets and leaves the origin of any wider private fortune unknown."
+  },
+  "editorial_note": null,
   "forbes_profile": {
     "status": "verified",
     "url": "https://www.forbes.com/profile/igor-sechin/",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The current exact-name Forbes profile matches Sechin's Russian citizenship, Moscow residence, age, Rosneft leadership and public-career background."
+      "reason": "The current exact-name Forbes profile matches Sechin's age, Russian citizenship and Moscow residence. It is a public-prominence profile and provides no net-worth or source-of-wealth field."
     }
   },
   "primary_industry": {
     "classification": "energy",
     "label": "Energy",
-    "summary": "Sechin's identifiable private economic interests are tied to his long-running executive role, disclosed compensation and small personal shareholding in oil producer Rosneft; the company's wider state-controlled assets are not treated as his private wealth.",
+    "summary": "Energy is Sechin's principal operating sector through his long executive leadership of Rosneft. The company's state-controlled assets are not treated as his private wealth.",
     "confidence": {
-      "score": 96,
+      "score": 99,
       "band": "very_high",
-      "reason": "Rosneft documents his current chief-executive role and 0.1273 percent personal holding, while public reporting documents substantial executive pay and the acquisition of Rosneft shares."
+      "reason": "Current Forbes and Rosneft material establish his public prominence and sustained operating role in the oil industry, while Rosneft's shareholder disclosure separates federal ownership from his small personal holding."
     },
     "source_ids": [
       "S2",
-      "S3",
-      "S6",
-      "S7"
+      "S3"
     ]
   },
   "wealth_origin": {
-    "classification": "self_made",
-    "label": "Self-made",
-    "summary": "The best-documented basis for Sechin's personal wealth is earnings from his executive career and a personally acquired minority Rosneft stake, rather than inherited assets. Public evidence does not establish the full size or composition of his private fortune.",
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Public evidence documents Sechin's executive career and a small Rosneft shareholding but does not establish the origin, size or composition of a broader private fortune.",
     "confidence": {
-      "score": 88,
-      "band": "high",
-      "reason": "Official and reputable sources document a career-led route through public administration into Rosneft, high executive compensation and a personally acquired shareholding, with no reliable evidence of inheritance; confidence is moderated because his complete private finances are opaque."
+      "score": 97,
+      "band": "very_high",
+      "reason": "Forbes publishes no net-worth or source-of-wealth field, and Rosneft's official disclosures establish only his executive position and small personal stake. That evidence is insufficient for a self-made, inherited or mixed classification."
     },
     "source_ids": [
+      "S1",
       "S2",
-      "S5",
-      "S6",
-      "S7",
-      "S8"
+      "S3"
     ]
   },
   "wealth_relationship": {
     "classification": "operator",
     "label": "Operator",
-    "summary": "Sechin did not found Rosneft and does not control it through personal ownership; he leads the company as chief executive and management-board chairman while holding a small disclosed minority stake.",
+    "summary": "Sechin did not found Rosneft or control it through personal ownership; he leads the company as chief executive and management-board chairman while holding a small disclosed minority stake.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Rosneft's official governance page identifies his executive roles and 0.1273 percent stake, while its shareholder disclosure shows that a federally owned company remains the largest named shareholder."
+      "reason": "Rosneft's official governance page identifies his executive roles and small personal stake, while its shareholder disclosure shows that a federally owned company is the largest named shareholder."
     },
     "source_ids": [
       "S2",
@@ -126,37 +157,34 @@
     ]
   },
   "biography": {
-    "plain_text": "Igor Sechin is a Russian energy executive and former public official who has led state-controlled oil producer Rosneft since 2012. His identifiable private wealth is tied to executive compensation and a small disclosed Rosneft shareholding, not ownership of the company itself. Earlier roles included senior posts in Russia's presidential administration and deputy prime minister.",
-    "html": "<p>Igor Sechin is a Russian energy executive and former public official who has led state-controlled oil producer Rosneft since 2012. His identifiable private wealth is tied to executive compensation and a small disclosed Rosneft shareholding, not ownership of the company itself. Earlier roles included senior posts in Russia's presidential administration and deputy prime minister.</p>\r\n",
-    "word_count": 54,
+    "plain_text": "Igor Sechin is a Russian energy executive who studied French and Portuguese before working abroad as an interpreter. He later entered St Petersburg's municipal administration, advanced through federal executive posts and served as deputy prime minister. Since returning to Rosneft, he has led the state-controlled oil producer as chief executive and management-board chairman.",
+    "html": "<p>Igor Sechin is a Russian energy executive who studied French and Portuguese before working abroad as an interpreter. He later entered St Petersburg's municipal administration, advanced through federal executive posts and served as deputy prime minister. Since returning to Rosneft, he has led the state-controlled oil producer as chief executive and management-board chairman.</p>\r\n",
+    "word_count": 53,
     "confidence": {
       "score": 97,
       "band": "very_high",
-      "reason": "Rosneft, the European Union's official record and reputable independent reporting support his current executive role, public-service chronology, compensation and disclosed personal shareholding."
+      "reason": "Rosneft, TASS and Reuters biographical material support his language studies, interpreter work, administrative progression, deputy-prime-minister service and Rosneft leadership."
     },
     "source_ids": [
       "S2",
-      "S4",
-      "S6",
-      "S8"
+      "S5",
+      "S6"
     ]
   },
   "long_biography": {
-    "plain_text": "Born in Leningrad, Igor Sechin studied French and Portuguese at Leningrad State University and worked as an interpreter in Mozambique and Angola. He later joined St Petersburg's city administration, then moved through senior roles in Russia's presidential administration. From 2008 to 2012 he served as deputy prime minister, overseeing energy policy, before becoming president of Rosneft in 2012.\n\nSechin now serves as Rosneft's chief executive, management-board chairman and deputy board chairman. His wealth relationship is managerial: Rosneft discloses a personal holding of 0.1273 percent, while a federally owned vehicle remains the company's largest named shareholder. Public reporting has also documented substantial executive compensation. Those facts support an energy-sector, self-made executive profile, but they do not make Rosneft's wider state-company assets his private property.",
-    "html": "<p>Born in Leningrad, Igor Sechin studied French and Portuguese at Leningrad State University and worked as an interpreter in Mozambique and Angola. He later joined St Petersburg's city administration, then moved through senior roles in Russia's presidential administration. From 2008 to 2012 he served as deputy prime minister, overseeing energy policy, before becoming president of Rosneft in 2012.</p>\r\n<p>Sechin now serves as Rosneft's chief executive, management-board chairman and deputy board chairman. His wealth relationship is managerial: Rosneft discloses a personal holding of 0.1273 percent, while a federally owned vehicle remains the company's largest named shareholder. Public reporting has also documented substantial executive compensation. Those facts support an energy-sector, self-made executive profile, but they do not make Rosneft's wider state-company assets his private property.</p>\r\n",
+    "plain_text": "Born in Leningrad, Igor Sechin studied French and Portuguese at Leningrad State University. His language training took him abroad as an interpreter before he joined the municipal administration in St Petersburg. He later moved into Russia's federal executive administration, progressing through senior staff roles and serving as deputy prime minister with responsibility for industrial and energy policy.\n\nSechin returned to Rosneft in 2012 and leads the oil producer as chief executive and chairman of its management board. His work there has remained concentrated on energy strategy, industrial policy and the administration of a large operating company. The continuity from government oversight of industry to company leadership defines his public career, while his early language training marks the less conventional route by which it began.",
+    "html": "<p>Born in Leningrad, Igor Sechin studied French and Portuguese at Leningrad State University. His language training took him abroad as an interpreter before he joined the municipal administration in St Petersburg. He later moved into Russia's federal executive administration, progressing through senior staff roles and serving as deputy prime minister with responsibility for industrial and energy policy.</p>\r\n<p>Sechin returned to Rosneft in 2012 and leads the oil producer as chief executive and chairman of its management board. His work there has remained concentrated on energy strategy, industrial policy and the administration of a large operating company. The continuity from government oversight of industry to company leadership defines his public career, while his early language training marks the less conventional route by which it began.</p>\r\n",
     "word_count": 124,
     "confidence": {
       "score": 95,
       "band": "very_high",
-      "reason": "Official Rosneft and European Union records establish the career and current roles; Reuters and Guardian reporting corroborate the education and early-career path, while Rosneft and independent reporting support the ownership and compensation distinctions."
+      "reason": "Rosneft, TASS and Reuters support the education, interpreter work, administrative career, industrial-policy responsibilities and executive leadership described."
     },
     "source_ids": [
       "S2",
-      "S3",
       "S4",
       "S5",
-      "S6",
-      "S8"
+      "S6"
     ]
   },
   "proposed_details": [
@@ -180,11 +208,11 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The official European Union record and Reuters biographical factbox give Leningrad, now Saint Petersburg, as his birthplace."
+        "reason": "TASS and Reuters biographical records give Leningrad, now Saint Petersburg, as his birthplace."
       },
       "source_ids": [
-        "S4",
-        "S5"
+        "S5",
+        "S6"
       ]
     },
     {
@@ -195,11 +223,12 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "Rosneft's official candidate biography, the European Union record and Reuters all give 7 September 1960; the input has the day and year transposed."
+        "reason": "Rosneft's official candidate biography, TASS and Reuters all give 7 September 1960; the input has the day and year transposed."
       },
       "source_ids": [
         "S4",
-        "S5"
+        "S5",
+        "S6"
       ]
     },
     {
@@ -210,28 +239,28 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "Rosneft's official candidate biography, the European Union record and Reuters all give 7 September 1960; the input has the day and year transposed."
+        "reason": "Rosneft's official candidate biography, TASS and Reuters all give 7 September 1960; the input has the day and year transposed."
       },
       "source_ids": [
         "S4",
-        "S5"
+        "S5",
+        "S6"
       ]
     },
     {
       "action": "correct_existing",
       "field": "biography",
       "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Igor_Sechin\">Igor Ivanovich Sechin</a> is a Russian oligarch and government figure who is Vladimir Putin&#39;s close associate and &quot;de facto deputy.&quot; Sechin is widely regarded as one of Putin&#39;s most orthodox advisers and the leader of the Siloviki faction in the Kremlin, which includes former security service personnel. He was Russia&#39;s Deputy Prime Minister in Vladimir Putin&#39;s cabinet until May 21, 2012, and he is now the CEO, President, and Chairman of the Management Board of <a href=\"https://en.wikipedia.org/wiki/Rosneft\">Rosneft</a>, the Russian national oil firm. Darth Vader is his nickname.</p>\r\n",
-      "value": "<p>Igor Sechin is a Russian energy executive and former public official who has led state-controlled oil producer Rosneft since 2012. His identifiable private wealth is tied to executive compensation and a small disclosed Rosneft shareholding, not ownership of the company itself. Earlier roles included senior posts in Russia's presidential administration and deputy prime minister.</p>\r\n",
+      "value": "<p>Igor Sechin is a Russian energy executive who studied French and Portuguese before working abroad as an interpreter. He later entered St Petersburg's municipal administration, advanced through federal executive posts and served as deputy prime minister. Since returning to Rosneft, he has led the state-controlled oil producer as chief executive and management-board chairman.</p>\r\n",
       "confidence": {
         "score": 97,
         "band": "very_high",
-        "reason": "The replacement is a neutral, current summary supported by official and independent sources and removes unsupported characterisation and nickname material from the existing biography."
+        "reason": "The replacement is a neutral, durable career summary supported by official and independent sources and removes unsupported characterisation, nickname and relationship material from the existing biography."
       },
       "source_ids": [
         "S2",
-        "S4",
-        "S6",
-        "S8"
+        "S5",
+        "S6"
       ]
     }
   ],
@@ -240,7 +269,7 @@
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/igor-sechin/",
-      "verification": "The exact-name Forbes profile matches Sechin's age, Russian citizenship, Moscow residence, Rosneft leadership and government-career background; type ID 11 is copied from the current owner input lookup.",
+      "verification": "The exact-name Forbes profile matches Sechin's age, Russian citizenship, Moscow residence and Rosneft leadership; type ID 11 is copied from the current owner input lookup.",
       "confidence": {
         "score": 99,
         "band": "very_high",
@@ -273,15 +302,14 @@
       "title": "Igor Sechin",
       "publisher": "Forbes",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
-        "verified Forbes profile",
+        "Exact identity and verified Forbes profile",
+        "Current age",
         "Russian citizenship",
         "Moscow residence",
-        "current age",
-        "Rosneft leadership",
-        "government-career background"
+        "Public prominence",
+        "Absence of a published net-worth or source-of-wealth field"
       ]
     },
     {
@@ -290,20 +318,18 @@
       "title": "Igor Sechin",
       "publisher": "Rosneft",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
-        "current Rosneft chief executive role",
-        "management-board chair role",
-        "deputy board-chair role",
+        "Exact identity",
+        "Current Rosneft chief-executive role",
+        "Management-board chair role",
+        "Deputy board-chair role",
         "1960 birth year",
         "Leningrad State University education",
-        "economics doctorate",
-        "public-service chronology",
+        "Public-service chronology",
         "Rosneft career chronology",
-        "13489350-share personal holding",
-        "0.1273 percent Rosneft personal stake",
-        "official company profile URL"
+        "Small disclosed personal shareholding",
+        "Official company profile URL"
       ]
     },
     {
@@ -312,30 +338,26 @@
       "title": "Shareholder Structure",
       "publisher": "Rosneft",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "Rosneftegaz as largest named shareholder",
-        "40.40 percent Rosneftegaz holding",
         "Rosneftegaz federal ownership",
-        "separation of state-company assets from Sechin's personal assets"
+        "Separation of Rosneft's state-controlled assets from Sechin's personal assets"
       ]
     },
     {
       "id": "S4",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32022D0337",
-      "title": "Council Decision (CFSP) 2022/337",
-      "publisher": "Official Journal of the European Union",
+      "url": "https://www.rosneft.com/upload/site2/attach/gosa_2021/gosa_01062021_en_06_1.pdf",
+      "title": "Information about candidates to Rosneft's Board of Directors",
+      "publisher": "Rosneft",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
-        "full Igor Ivanovich Sechin name",
+        "Exact identity",
         "7 September 1960 birth date",
-        "Leningrad birthplace",
-        "Russian citizenship",
-        "male gender",
-        "Rosneft chief executive role",
-        "public-service background"
+        "Leningrad State University education",
+        "Rosneft executive chronology",
+        "Deputy-prime-minister service"
       ]
     },
     {
@@ -344,102 +366,75 @@
       "title": "Factbox: Who is Igor Sechin?",
       "publisher": "Reuters",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
+        "Exact identity",
         "7 September 1960 birth date",
         "Leningrad birthplace",
         "French and Portuguese studies",
-        "interpreter work in Mozambique and Angola",
-        "St Petersburg city-administration career",
-        "presidential-administration career",
-        "deputy prime minister role",
+        "Interpreter work abroad",
+        "St Petersburg municipal-administration career",
+        "Federal executive-administration career",
+        "Deputy-prime-minister role",
         "Rosneft leadership"
       ]
     },
     {
       "id": "S6",
-      "url": "https://www.golosameriki.com/a/reuters-russia-rosneft-ceo-1st-update/2749986.html",
-      "title": "Rosneft discloses chief executive Igor Sechin's pay",
-      "publisher": "Reuters via Voice of America",
+      "url": "https://tass.ru/encyclopedia/person/sechin-igor-ivanovich",
+      "title": "Sechin, Igor Ivanovich",
+      "publisher": "TASS",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
-        "Rosneft chief executive role",
-        "2015 disclosed monthly base-pay range",
-        "executive compensation as a documented private wealth source"
+        "Full Igor Ivanovich Sechin name",
+        "7 September 1960 birth date",
+        "Leningrad birthplace",
+        "French and Portuguese studies",
+        "Rosneft chief-executive and management-board roles"
       ]
     },
     {
       "id": "S7",
-      "url": "https://www.forbes.ru/news/244290-sechin-kupil-aktsii-rosnefti-na-kredity-gazprombanka",
-      "title": "Sechin bought Rosneft shares with Gazprombank loans",
-      "publisher": "Forbes Russia",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
+      "url": "https://www.linkedin.com/in/igor-sechin-4ba059135",
+      "title": "Igor Sechin",
+      "publisher": "LinkedIn",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
       "supports": [
-        "personal acquisition of Rosneft shares",
-        "Gazprombank financing of share purchase",
-        "acquired rather than inherited minority stake"
-      ]
-    },
-    {
-      "id": "S8",
-      "url": "https://www.theguardian.com/business/2022/mar/04/igor-sechin-the-epitome-of-power-in-putin-russia-rosneft-economy",
-      "title": "Igor Sechin: the epitome of power in Putin's Russia",
-      "publisher": "The Guardian",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "identity",
-        "French and Portuguese studies",
-        "interpreter work in Mozambique and Angola",
-        "St Petersburg municipal career",
-        "presidential-administration career",
-        "deputy prime minister service",
-        "Rosneft leadership since 2012"
-      ]
-    },
-    {
-      "id": "S9",
-      "url": "https://elpais.com/espana/2022-03-16/espana-inmoviliza-en-tarragona-un-megayate-del-principal-oligarca-de-putin.html",
-      "title": "Spain detains in Tarragona a megayacht attributed to Igor Sechin",
-      "publisher": "El Pais",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "identity resolution against enriched vessel relationship",
-        "Spanish security-force attribution of Crescent to Igor Sechin",
-        "Crescent length of approximately 135 metres"
-      ]
-    },
-    {
-      "id": "S10",
-      "url": "https://www.euronews.com/2022/03/17/us-ukraine-crisis-yacht-spain",
-      "title": "Spain detains 135-metre yacht linked to sanctioned Russian",
-      "publisher": "Reuters via Euronews",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Crescent vessel identity",
-        "135-metre length",
-        "Spanish detention pending ownership investigation",
-        "qualified status of public ownership attribution"
+        "Same-name LinkedIn profile belongs to a different person in Virginia",
+        "No identity-verified personal LinkedIn profile for the Rosneft executive"
       ]
     }
   ],
   "uncertainties": [
-    "The exact Forbes profile is verified, but it does not publish a net-worth estimate or a source-of-wealth field. Wealth classifications therefore rely on Rosneft disclosures and reputable reporting rather than treating Forbes profile existence as proof of a quantified fortune.",
-    "The Self-made classification describes the best-documented origin of Sechin's identifiable personal wealth: executive compensation and an acquired minority Rosneft holding. Public evidence does not establish his complete private balance sheet, so the classification is high rather than very-high confidence.",
-    "Rosneft is a state-controlled company. Its corporate value, revenues and wider assets were not counted as Sechin's private wealth; his wealth relationship is classified as Operator based on his management role and small disclosed personal stake.",
-    "Spanish authorities and El Pais attributed the 135-metre Crescent to Sechin, while Reuters reported that ownership was still under investigation when the yacht was detained. The relationship was used as supporting identity context but omitted from the biographies because public beneficial ownership was not conclusively established.",
-    "No second nationality was evidenced. No personal LinkedIn, Instagram, X/Twitter, Facebook, YouTube, TikTok or dedicated personal website met the identity-verification threshold; a LinkedIn namesake in Virginia was rejected, and a prominent X account using Sechin's name has been reported as parody.",
-    "Blank suffix and secondary-residence fields were treated as optional, while death, internal-notes and unknown-name fields were treated as inapplicable while alive or system-controlled.",
-    "The replacement biographies deliberately focus on documented career and wealth relationships and omit unrequested allegations, political characterisations, sanctions context and nicknames."
+    {
+      "topic": "Forbes scope",
+      "detail": "The exact Forbes profile is verified but publishes neither a net-worth estimate nor a source-of-wealth field. Profile existence is not treated as proof of a quantified private fortune."
+    },
+    {
+      "topic": "Wealth origin",
+      "detail": "Public evidence documents Sechin's executive career and a small disclosed Rosneft shareholding but does not reveal the origin or composition of a broader personal asset base. Wealth origin is therefore Unknown."
+    },
+    {
+      "topic": "State-company distinction",
+      "detail": "Rosneft is state controlled. Its corporate value and wider assets are not counted as Sechin's private wealth; Operator reflects his management role rather than personal ownership of the company."
+    },
+    {
+      "topic": "Personal social accounts",
+      "detail": "No personal LinkedIn, Instagram, Facebook, X, YouTube, TikTok or dedicated personal website met the identity-verification threshold. A same-name LinkedIn profile in Virginia belongs to another person."
+    },
+    {
+      "topic": "Secondary nationality",
+      "detail": "No strong source established a second nationality, so the secondary-nationality field remains blank."
+    },
+    {
+      "topic": "Other blank fields",
+      "detail": "Suffix and secondary residence remain optional; death, internal-note and unknown-name fields remain inapplicable or system-managed for a living person."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": "The identity, current Rosneft role, birth-date correction and operator relationship are very high confidence. Reviewer attention is requested for the deliberately cautious Self-made classification and for the qualified, unresolved Crescent ownership attribution."
+    "notes": "Identity, Rosneft leadership, birth-detail corrections and the Operator relationship are strongly supported. Review should confirm the deliberately cautious Unknown wealth-origin classification and the strict separation of Rosneft's state-controlled assets from Sechin's personal holdings."
   }
 }

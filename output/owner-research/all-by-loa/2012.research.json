@@ -1,12 +1,13 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
+  "record_type": "person",
   "owner": {
     "person_id": 2012,
     "display_name": "Eric Smidt",
     "identity_confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The exact name, American identity, Harbor Freight founder and chief-executive role, Los Angeles background, existing Wikipedia link, and Infinity and Intrepid relationships align across the source record, Harbor Freight, Forbes, Bloomberg, LACMA and established yacht reporting."
+      "reason": "The current dedicated Forbes profile and Harbor Freight biography exactly match Eric Smidt's American identity, teenage start in the family tool business, founder status, sole ownership and chief-executive role."
     }
   },
   "input_snapshot": {
@@ -83,93 +84,113 @@
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The dedicated current profile exactly matches Eric Smidt, Harbor Freight Tools, his teenage co-founding history, current chief-executive and sole-owner roles, hardware-store source of wealth, self-made status, U.S. citizenship and Beverly Hills residence."
+      "reason": "The current dedicated profile exactly matches Eric Smidt, Harbor Freight Tools, his teenage start with his father, current chief-executive and sole-owner roles, hardware retail source of wealth, self-made status, U.S. citizenship and California residence."
     }
   },
   "primary_industry": {
     "classification": "fashion_retail",
     "label": "Fashion & Retail",
-    "summary": "Smidt's identifiable private wealth is principally his complete ownership of Harbor Freight Tools, a nationwide discount tool and home-improvement retailer.",
+    "summary": "Smidt's identifiable private wealth is principally tied to his ownership of Harbor Freight Tools, a tool and home-improvement retailer.",
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "Forbes identifies hardware stores as his source of wealth and classifies Harbor Freight under Fashion & Retail; current Forbes and company sources document more than 1,600 stores and his sole ownership."
+      "reason": "Forbes identifies hardware stores as Smidt's source of wealth and places him in Fashion & Retail, while the current company biography confirms his ownership and leadership."
     },
     "source_ids": [
       "S1",
-      "S2",
-      "S8"
+      "S2"
     ]
   },
   "wealth_origin": {
     "classification": "self_made",
     "label": "Self-made",
-    "summary": "He co-founded Harbor Freight with his father as a teenager, built the mail-order operation into a national retailer and later purchased his father's stake rather than inheriting it.",
+    "summary": "Smidt began working in his father's tool-sales business as a teenager, helped develop Harbor Freight and later bought his father's stake to become sole owner.",
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "Forbes explicitly gives Smidt a self-made score of 10 and documents that he started the business with his father in 1977, bought him out in 1999 and then continued expanding the company."
+      "reason": "The current Forbes profile explicitly classifies him as self-made, and Forbes, Bloomberg and Harbor Freight document the teenage start, company-building work and purchase of his father's interest."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S4",
-      "S8"
+      "S3",
+      "S4"
     ]
   },
   "wealth_relationship": {
     "classification": "founder",
     "label": "Founder",
-    "summary": "His principal relationship to the wealth-producing asset remains that of Harbor Freight's co-founder, sole owner and active chief executive.",
+    "summary": "He co-created Harbor Freight with his father and continues as its owner and chief executive.",
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "Harbor Freight's official biography and Forbes directly identify Smidt as founder, owner and chief executive, with leadership dating from the company's creation."
+      "reason": "Harbor Freight's official biography and current Forbes material directly identify Smidt as founder, owner and chief executive."
     },
     "source_ids": [
       "S1",
-      "S2",
-      "S6",
-      "S8"
+      "S2"
     ]
   },
+  "biography_brief": {
+    "durable_identity": "American retail entrepreneur, founder, owner and chief executive of Harbor Freight Tools.",
+    "wealth_or_prominence_route": "He began working in his father's small tool-sales business as a teenager and helped turn it into a mail-order operation built around direct factory sourcing.",
+    "turning_point": "After becoming president, he bought his father's stake, retained ownership and guided Harbor Freight's national retail expansion.",
+    "later_chapter": "Through Harbor Freight Tools for Schools, his foundation supports skilled-trades education in American public high schools.",
+    "character_detail": "His early responsibilities included travelling independently to Asia to source tools directly from factories and opening stores across the United States.",
+    "excluded_transient_context": [
+      "Current vessel ownership and cohort-selection context",
+      "Current net worth, rankings, revenue and store counts",
+      "Short-term company milestones and valuation estimates"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "The biographies connect Smidt's teenage operating work, direct-sourcing model and ownership transition to Harbor Freight's expansion, then add skilled-trades education as a related civic chapter without transient scale or wealth figures."
+  },
+  "editorial_note": null,
   "biography": {
-    "plain_text": "Eric Smidt is an American retail entrepreneur who co-founded Harbor Freight Tools with his father as a teenager in 1977. He later bought his father's stake, became sole owner and expanded the mail-order business into a nationwide discount-tool chain. His self-made fortune remains rooted in Harbor Freight, which he continues to lead as chief executive.",
-    "html": "<p>Eric Smidt is an American retail entrepreneur who co-founded Harbor Freight Tools with his father as a teenager in 1977. He later bought his father's stake, became sole owner and expanded the mail-order business into a nationwide discount-tool chain. His self-made fortune remains rooted in Harbor Freight, which he continues to lead as chief executive.</p>\r\n",
-    "word_count": 55,
+    "plain_text": "Eric Smidt is an American retail entrepreneur who began working in his family's small tool business as a teenager. He helped turn it into Harbor Freight Tools, bought his father's stake and retained ownership while leading its national expansion. Through Harbor Freight Tools for Schools, he also supports skilled-trades education in public high schools.",
+    "html": "<p>Eric Smidt is an American retail entrepreneur who began working in his family's small tool business as a teenager. He helped turn it into Harbor Freight Tools, bought his father's stake and retained ownership while leading its national expansion. Through Harbor Freight Tools for Schools, he also supports skilled-trades education in public high schools.</p>\r\n",
+    "word_count": 54,
     "confidence": {
-      "score": 100,
+      "score": 99,
       "band": "very_high",
-      "reason": "Harbor Freight, Forbes and Bloomberg directly establish the teenage co-founding, father's-stake purchase, sole ownership, national expansion, self-made classification and current chief-executive role."
+      "reason": "Current Forbes and company sources, Bloomberg's biography and detailed Forbes reporting support the teenage start, company transformation, ownership route, national expansion and skilled-trades education programme."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S4",
-      "S8"
+      "S4"
     ]
   },
   "long_biography": {
-    "plain_text": "Born in Los Angeles in 1960, Eric Smidt endured an unsettled childhood and moved into his own apartment at 16. A year later he and his father, Allan, started Harbor Freight as a small North Hollywood mail-order tool business. Smidt became president in 1985, bought out his father's stake in 1999 and became sole owner, making his fortune self-made rather than inherited.\n\nHe built the retailer around direct factory sourcing and lower-priced tools, then expanded it across the United States. Harbor Freight now describes more than 1,600 stores and 26,000 associates, while Forbes estimates nearly $9 billion in annual sales. Smidt remains owner and chief executive. His foundation's flagship Harbor Freight Tools for Schools program funds skilled-trades education. His maritime record is unusually continuous: public reports connect him to two successive yachts named Infinity and the support vessel Intrepid.",
-    "html": "<p>Born in Los Angeles in 1960, Eric Smidt endured an unsettled childhood and moved into his own apartment at 16. A year later he and his father, Allan, started Harbor Freight as a small North Hollywood mail-order tool business. Smidt became president in 1985, bought out his father's stake in 1999 and became sole owner, making his fortune self-made rather than inherited.</p>\r\n<p>He built the retailer around direct factory sourcing and lower-priced tools, then expanded it across the United States. Harbor Freight now describes more than 1,600 stores and 26,000 associates, while Forbes estimates nearly $9 billion in annual sales. Smidt remains owner and chief executive. His foundation's flagship Harbor Freight Tools for Schools program funds skilled-trades education. His maritime record is unusually continuous: public reports connect him to two successive yachts named Infinity and the support vessel Intrepid.</p>\r\n",
-    "word_count": 141,
+    "plain_text": "Eric Smidt entered the family tool business as a teenager, helping his father turn a small Southern California telephone-sales operation into Harbor Freight Tools. The pair shifted towards mail order, while Smidt developed a direct-factory sourcing model that removed intermediaries and lowered prices. He became president, later bought his father's stake and continued as owner and chief executive.\n\nThat ownership structure allowed Smidt to guide Harbor Freight's expansion while preserving its focus on tools for tradespeople and home users. Education became a connected civic chapter through Harbor Freight Tools for Schools, the flagship programme of his foundation. It supports skilled-trades teaching in American public high schools, linking the business he built with practical routes into welding, automotive work, construction and other skilled careers.",
+    "html": "<p>Eric Smidt entered the family tool business as a teenager, helping his father turn a small Southern California telephone-sales operation into Harbor Freight Tools. The pair shifted towards mail order, while Smidt developed a direct-factory sourcing model that removed intermediaries and lowered prices. He became president, later bought his father's stake and continued as owner and chief executive.</p>\r\n<p>That ownership structure allowed Smidt to guide Harbor Freight's expansion while preserving its focus on tools for tradespeople and home users. Education became a connected civic chapter through Harbor Freight Tools for Schools, the flagship programme of his foundation. It supports skilled-trades teaching in American public high schools, linking the business he built with practical routes into welding, automotive work, construction and other skilled careers.</p>\r\n",
+    "word_count": 123,
     "confidence": {
-      "score": 92,
-      "band": "high",
-      "reason": "Forbes, Bloomberg, Harbor Freight and LACMA strongly support the personal and business history; Forbes and current established newspaper coverage independently connect Smidt to the earlier and current Infinity yachts and to Intrepid, supporting the limited succession statement."
+      "score": 98,
+      "band": "very_high",
+      "reason": "The business chronology, direct-sourcing model and ownership transition are supported by current company, Forbes and Bloomberg material; company and independent reporting support the public-school skilled-trades programme."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S4",
-      "S5",
-      "S6",
-      "S7",
-      "S8",
-      "S9",
-      "S10"
+      "S4"
     ]
   },
   "proposed_details": [
@@ -180,7 +201,7 @@
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "Harbor Freight's official biography and current Forbes profile directly document these roles."
+        "reason": "Harbor Freight's current official biography and Forbes directly document Smidt's founder, owner and chief-executive roles."
       },
       "source_ids": [
         "S1",
@@ -192,12 +213,12 @@
       "field": "place_of_birth",
       "value": "Los Angeles, California",
       "confidence": {
-        "score": 100,
+        "score": 98,
         "band": "very_high",
-        "reason": "In LACMA's official announcement Smidt directly states that he was born in Los Angeles, and Bloomberg independently records the same birthplace."
+        "reason": "Bloomberg records Smidt's birthplace as Los Angeles, and LACMA's official material independently establishes his birth and civic connection there."
       },
       "source_ids": [
-        "S3",
+        "S4",
         "S5"
       ]
     },
@@ -208,29 +229,28 @@
       "confidence": {
         "score": 98,
         "band": "very_high",
-        "reason": "Bloomberg's current billionaire biography records 1960 and the age in Smidt's current Forbes profile is consistent with that year."
+        "reason": "Bloomberg records a 1960 birth year, and the age in Smidt's current Forbes profile is consistent with that year."
       },
       "source_ids": [
         "S1",
-        "S3"
+        "S4"
       ]
     },
     {
       "action": "correct_existing",
       "field": "biography",
       "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Eric_Smidt\">Eric L. Smidt</a> is a businessman from the United States. According to a Moody&#39;s Investors Service report from April 2012, he is the Chairman and CEO of <a href=\"https://en.wikipedia.org/wiki/Harbor_Freight_Tools\">Harbor Freight Tools</a>, which runs over 1000 retail hardware stores in 47 states and generates revenue of almost $2 billion.</p>\r\n",
-      "value": "<p>Eric Smidt is an American retail entrepreneur who co-founded Harbor Freight Tools with his father as a teenager in 1977. He later bought his father's stake, became sole owner and expanded the mail-order business into a nationwide discount-tool chain. His self-made fortune remains rooted in Harbor Freight, which he continues to lead as chief executive.</p>\r\n",
+      "value": "<p>Eric Smidt is an American retail entrepreneur who began working in his family's small tool business as a teenager. He helped turn it into Harbor Freight Tools, bought his father's stake and retained ownership while leading its national expansion. Through Harbor Freight Tools for Schools, he also supports skilled-trades education in public high schools.</p>\r\n",
       "confidence": {
-        "score": 100,
+        "score": 99,
         "band": "very_high",
-        "reason": "The replacement removes embedded Wikipedia links and an obsolete April 2012 store count and revenue figure, then uses current official and Forbes evidence to explain the durable origin and ownership of Smidt's wealth."
+        "reason": "The replacement removes embedded links and obsolete operating figures, then provides a durable account of Smidt's early work, ownership route and skilled-trades education programme."
       },
       "source_ids": [
         "S1",
         "S2",
         "S3",
-        "S4",
-        "S8"
+        "S4"
       ]
     }
   ],
@@ -239,11 +259,11 @@
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/eric-smidt/",
-      "verification": "The dedicated current profile exactly matches Smidt's full identity, Harbor Freight source of wealth, teenage co-founding history, current chief-executive and sole-owner roles, self-made status, U.S. citizenship and Beverly Hills residence. Type ID 11 is copied from the owner input lookup.",
+      "verification": "The current dedicated profile exactly matches Smidt's Harbor Freight source of wealth, teenage start with his father, chief-executive and sole-owner roles, self-made status, U.S. citizenship and California residence. Type ID 11 is copied from the owner-input lookup.",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "This is the exact current Forbes person profile for the owner."
+        "reason": "This is the exact current Forbes person profile for Eric Smidt."
       },
       "source_ids": [
         "S1"
@@ -253,11 +273,11 @@
       "type_id": "14",
       "type": "Company Website",
       "url": "https://www.harborfreight.com/about-us/eric-smidt-bio.html",
-      "verification": "Harbor Freight's official biography identifies Eric Smidt as the company's founder, owner and chief executive and describes the company's history under his leadership. Type ID 14 is copied from the owner input lookup.",
+      "verification": "Harbor Freight's official biography identifies Eric Smidt as the company's founder, owner and chief executive and explains its development under his leadership. Type ID 14 is copied from the owner-input lookup.",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "This is Smidt's official executive biography on the website of the company he owns and leads."
+        "reason": "This is Smidt's current official biography on the website of the company he owns and leads."
       },
       "source_ids": [
         "S2"
@@ -272,18 +292,19 @@
       "title": "Eric Smidt",
       "publisher": "Forbes",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "exact identity",
         "verified Forbes profile",
         "Harbor Freight as source of wealth",
-        "hardware-store business",
+        "hardware retail business",
         "Fashion & Retail industry",
-        "self-made classification and score of 10",
-        "teenage co-founding with Allan Smidt in 1977",
-        "1999 chief-executive and sole-owner status",
-        "more than 1600 stores and nearly $9 billion in sales",
-        "U.S. citizenship and Beverly Hills residence"
+        "self-made classification",
+        "teenage company start with Allan Smidt",
+        "mail-order origin",
+        "chief-executive and sole-owner status",
+        "U.S. citizenship and California residence",
+        "Harbor Freight Tools for Schools"
       ]
     },
     {
@@ -292,51 +313,57 @@
       "title": "Eric Smidt, Owner and Founder",
       "publisher": "Harbor Freight Tools",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "exact identity",
-        "owner and chief-executive roles",
-        "co-founding with Allan Smidt in 1977",
-        "growth from mail order to more than 1600 stores",
-        "more than 26000 associates",
+        "founder, owner and chief-executive roles",
+        "company start with Allan Smidt",
+        "Southern California and mail-order origins",
         "direct factory-sourcing model",
-        "Smidt Foundation and Harbor Freight Tools for Schools"
+        "national retail expansion",
+        "The Smidt Foundation",
+        "Harbor Freight Tools for Schools",
+        "skilled-trades education in public high schools"
       ]
     },
     {
       "id": "S3",
-      "url": "https://www.bloomberg.com/billionaires/profiles/eric-l-smidt/",
-      "title": "Eric Smidt",
-      "publisher": "Bloomberg Billionaires Index",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "exact identity and Eric L. Smidt form",
-        "1960 birth year",
-        "Los Angeles birthplace",
-        "difficult childhood and move into his own apartment at 16",
-        "1977 Harbor Freight co-founding",
-        "1999 purchase of Allan Smidt's stake",
-        "sole-shareholder status"
-      ]
-    },
-    {
-      "id": "S4",
       "url": "https://www.forbes.com/sites/laurendebter/2023/04/28/a-billionaires-quest-to-fund-welding-automotive-and-construction-classes-in-public-high-schools/",
       "title": "A Billionaire's Quest To Fund Welding, Automotive And Construction Classes In Public High Schools",
       "publisher": "Forbes",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "difficult childhood",
-        "independent living at 16",
-        "teenage Harbor Freight co-founding",
+        "identity",
+        "teenage work in the family tool business",
         "mail-order origin in North Hollywood",
         "direct factory sourcing",
-        "national retail expansion",
-        "president and later chief-executive roles",
+        "president and chief-executive progression",
         "sole ownership",
-        "Harbor Freight Tools for Schools"
+        "national retail expansion",
+        "Harbor Freight Tools for Schools",
+        "public high-school skilled-trades education",
+        "welding, automotive and construction teaching"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.bloomberg.com/billionaires/profiles/eric-l-smidt/",
+      "title": "Eric Smidt",
+      "publisher": "Bloomberg Billionaires Index",
+      "tier": 2,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "exact identity and Eric L. Smidt form",
+        "1960 birth year",
+        "Los Angeles birthplace",
+        "teenage work in his father's telephone-sales business",
+        "Harbor Freight start with Allan Smidt",
+        "independent travel to Asia for direct factory sourcing",
+        "store-opening responsibilities",
+        "president role",
+        "purchase of Allan Smidt's stake",
+        "sole ownership"
       ]
     },
     {
@@ -345,98 +372,28 @@
       "title": "Eric and Susan Smidt Pledge $25 Million Gift to LACMA's Campaign",
       "publisher": "Los Angeles County Museum of Art",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "direct first-person statement that Smidt was born in Los Angeles",
-        "Los Angeles civic and philanthropic connection",
+        "identity",
+        "Los Angeles birthplace and civic connection",
+        "LACMA trustee role",
         "support for public access to art"
-      ]
-    },
-    {
-      "id": "S6",
-      "url": "https://newsroom.harborfreight.com/corporate/2024/04/harbor-freight-tools-marks-1500-stores-on-april-6-with-nationwide-celebration/",
-      "title": "Harbor Freight Tools Marks 1500 Stores With Nationwide Celebration",
-      "publisher": "Harbor Freight Tools",
-      "tier": 1,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "founder and chief-executive roles",
-        "growth from a small mail-order company",
-        "national retail expansion",
-        "1500-store milestone in 2024"
-      ]
-    },
-    {
-      "id": "S7",
-      "url": "https://newsroom.harborfreight.com/giving-back/2024/03/high-school-skilled-trades-teachers-can-apply-for-1-5-million-in-cash-prizes-2/",
-      "title": "High School Skilled Trades Teachers Can Apply for $1.5 Million in Cash Prizes",
-      "publisher": "Harbor Freight Tools for Schools",
-      "tier": 1,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Eric Smidt as Harbor Freight owner and founder",
-        "creation of the Tools for Schools prize in 2017",
-        "skilled-trades education mission",
-        "national teacher-prize programme"
-      ]
-    },
-    {
-      "id": "S8",
-      "url": "https://www.forbes.com/sites/andreamurphy/2026/05/14/americas-most-valuable-private-family-businesses-2026/",
-      "title": "The 25 Most Valuable Private Family Businesses in America, Ranked",
-      "publisher": "Forbes",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "teenage start with Allan Smidt",
-        "mail-order origin",
-        "1999 buyout of his father",
-        "100 percent current ownership",
-        "continuing chairman and chief-executive roles",
-        "current Harbor Freight scale"
-      ]
-    },
-    {
-      "id": "S9",
-      "url": "https://www.forbes.com/pictures/5df2b4724e2917000782f4ca/intrepid/",
-      "title": "Intrepid - Superyachts In St. Barths New Years 2020",
-      "publisher": "Forbes",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Eric Smidt ownership of the earlier yacht Infinity",
-        "Intrepid as Infinity's support yacht",
-        "paired-vessel relationship by 2019"
-      ]
-    },
-    {
-      "id": "S10",
-      "url": "https://www.lanazione.it/cronaca/il-re-della-ferramenta-di-los-angeles-sbarca-allelba-il-suo-yacht-e-un-sogno-cosa-ce-dentro-ji55n47n",
-      "title": "Il re della ferramenta di Los Angeles sbarca all'Elba",
-      "publisher": "La Nazione",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Eric Smidt ownership of the current 117-metre Infinity",
-        "Intrepid as the current support vessel",
-        "continued paired operation in July 2026"
       ]
     }
   ],
   "uncertainties": [
-    "Self-made is used rather than Inherited or Inherited and expanded. Smidt co-founded Harbor Freight with his father while still a teenager, then purchased his father's stake in 1999; no inheritance of the core company is documented.",
-    "Founder is used for the current relationship because Smidt created the business with his father and remains sole owner and chief executive. The family-business label does not make him merely an heir or family shareholder.",
-    "Fashion & Retail follows Forbes's current industry taxonomy for Smidt and Harbor Freight. The business sells tools and home-improvement products but is a retailer, not principally a manufacturer.",
-    "Bloomberg and current Forbes age data establish 1960 as the birth year. The exact day and month appear in lower-quality unsourced records but were not confirmed in a strong source, so those fields remain blank.",
-    "Bloomberg uses the form Eric L. Smidt, but no strong source reviewed expands the initial. The middle-name field remains blank rather than guessing or proposing an unexplained initial.",
-    "Forbes identified Smidt's earlier Infinity and Intrepid relationship in 2019, and La Nazione identifies the current 117-metre Infinity and Intrepid in 2026. The long biography limits this to a successive ownership pattern and makes no claim about personal design involvement or intended use.",
+    "Self-made is used because Smidt helped create Harbor Freight as a working teenager and later purchased his father's stake; no inheritance of the core company is documented.",
+    "Founder is used for the current relationship because Smidt created the business with his father and remains its owner and chief executive. The family-business origin does not make him an heir or passive family shareholder.",
+    "Fashion & Retail follows Forbes's current taxonomy for Smidt and Harbor Freight. The company sells and develops tools but operates principally as a retailer.",
+    "Bloomberg and the age in Smidt's current Forbes profile support 1960 as the birth year. No strong source reviewed establishes the exact day or month, so those fields remain blank.",
+    "Bloomberg uses the form Eric L. Smidt, but no strong source reviewed expands the initial. The middle-name field remains blank rather than guessing.",
     "No second nationality was established in strong sources, so secondary nationality remains blank.",
-    "No identity-verified personal LinkedIn, Instagram, Facebook, X, YouTube or TikTok account or personal website met the verification threshold. The official Harbor Freight biography is proposed separately as a Company Website.",
-    "The existing Wikipedia link resolves to the correct person and was not duplicated.",
-    "Blank suffix and secondary-residence fields were treated as optional; blank death, internal-note and unknown-name fields remain inapplicable or system-managed."
+    "No identity-verified personal LinkedIn, Instagram, Facebook, X, YouTube or TikTok account or dedicated personal website met the proposal threshold. The official Harbor Freight biography is proposed separately as a Company Website.",
+    "The existing Wikipedia link resolves to the correct person and was preserved rather than duplicated.",
+    "The existing biography contains embedded links and obsolete store and revenue figures. The replacement removes these transient details and focuses on the family-business transformation, ownership route and skilled-trades education programme."
   ],
   "review": {
     "status": "pending",
-    "notes": "Review Self-made versus Inherited and expanded in light of the documented teenage co-founding and 1999 purchase of Allan Smidt's stake, and review the limited two-Infinity/Intrepid succession sentence before approval."
+    "notes": "Core identity, Forbes profile, retail classification, self-made origin, founder relationship, current Harbor Freight roles and company website are very-high confidence. Reviewer attention is requested for the 1960 birth-year and Los Angeles birthplace proposals, which rely principally on Bloomberg with official civic corroboration."
   }
 }

@@ -1,12 +1,13 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
+  "record_type": "person",
   "owner": {
     "person_id": 828,
     "display_name": "David Geffen",
     "identity_confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The exact name, Brooklyn background, American citizenship, record-label and DreamWorks founder roles, existing Wikipedia URL and Rising Sun ownership align across the source record, current Forbes profile and institutional biographies."
+      "reason": "The exact name, Brooklyn background, American citizenship and progression from the William Morris mailroom to record-label and DreamWorks founder roles align across the owner record, current Forbes and institutional biographies."
     }
   },
   "input_snapshot": {
@@ -79,38 +80,72 @@
     }
   },
   "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "David Lawrence Geffen is an American entertainment entrepreneur who founded influential record labels and co-founded DreamWorks.",
+    "wealth_or_prominence_route": "He progressed from the William Morris Agency mailroom into talent representation and management before building Asylum Records around artists he had championed.",
+    "turning_point": "Moving from talent manager to label founder gave Geffen a business platform that expanded through Geffen Records, DGC, Geffen Pictures and DreamWorks.",
+    "later_chapter": "His foundation's support for tuition-free study at Yale's drama school created a durable arts-and-education chapter.",
+    "character_detail": "His early career combined an ability to recognise creative talent with the relationship-building needed to turn representation into enduring entertainment companies.",
+    "excluded_transient_context": [
+      "Current or historical vessel ownership, names, design and LOA ranking",
+      "Current net worth, wealth rankings and asset valuations",
+      "Current property, investment and art-collection holdings",
+      "Gift amounts and other transient financial figures",
+      "Private relationship and legal matters"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "calibration_archetypes": [
+      "founder_operator",
+      "investor_philanthropist"
+    ],
+    "notes": "The profile follows a clear progression from mailroom work through artist representation to record-label and studio creation, then treats tuition-free drama training at Yale as one distinct and durable philanthropic chapter."
+  },
+  "editorial_note": null,
   "forbes_profile": {
     "status": "verified",
     "url": "https://www.forbes.com/profile/david-geffen/",
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The current dedicated Forbes profile exactly matches David Geffen's age, U.S. citizenship, Beverly Hills residence, Asylum, Geffen and DGC record-label founder roles, DreamWorks role and Rising Sun ownership."
+      "reason": "The current dedicated Forbes profile exactly matches David Geffen's age, U.S. citizenship, Beverly Hills residence, William Morris career and founder roles at Asylum, Geffen, DGC and DreamWorks."
     }
   },
   "primary_industry": {
     "classification": "media_entertainment",
     "label": "Media & Entertainment",
-    "summary": "Geffen's fortune is rooted in the music and film businesses he created, including Asylum Records, Geffen Records, DGC Records, Geffen Pictures and DreamWorks.",
+    "summary": "Geffen's fortune is rooted in the music and film businesses he created, including Asylum Records, Geffen Records, DGC, Geffen Pictures and DreamWorks.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Forbes identifies movies and record labels as his source of wealth, while Yale and the Recording Academy document the companies and transactions that built it."
+      "reason": "Forbes identifies movies and record labels as his source of wealth, while Yale, the Recording Academy and Rock Hall document the companies that built it."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S3"
+      "S3",
+      "S4"
     ]
   },
   "wealth_origin": {
     "classification": "self_made",
     "label": "Self-made",
-    "summary": "Geffen rose from the William Morris Agency mailroom to talent representation, then founded and sold music and film ventures rather than inheriting the core assets.",
+    "summary": "Geffen rose from the William Morris Agency mailroom to talent representation, then created a succession of music and film ventures rather than inheriting the core assets.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Forbes explicitly classifies him as self-made, and Yale and the Recording Academy independently document his mailroom-to-founder route and major company sales."
+      "reason": "Forbes explicitly classifies him as self-made, and Yale and the Recording Academy independently document his mailroom-to-founder route."
     },
     "source_ids": [
       "S1",
@@ -121,48 +156,49 @@
   "wealth_relationship": {
     "classification": "founder",
     "label": "Founder",
-    "summary": "Geffen created or co-created the record labels and film studios that generated his fortune; founder remains the durable relationship even though he later retired from the entertainment industry.",
+    "summary": "Geffen created or co-created the record labels and film studios that generated his fortune; founder is the durable relationship to those businesses.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Forbes, Yale and the Recording Academy consistently identify him as founder of Asylum, Geffen and DGC Records and co-founder of DreamWorks, while the Recording Academy documents his later retirement."
-    },
-    "source_ids": [
-      "S1",
-      "S2",
-      "S3"
-    ]
-  },
-  "biography": {
-    "plain_text": "David Geffen is an American entertainment entrepreneur who built his fortune by founding Asylum Records, Geffen Records and DGC Records, then co-founding DreamWorks with Steven Spielberg and Jeffrey Katzenberg. Beginning in the William Morris mailroom, he rose through talent representation, music and film, later becoming a major arts, education and medical philanthropist.",
-    "html": "<p>David Geffen is an American entertainment entrepreneur who built his fortune by founding Asylum Records, Geffen Records and DGC Records, then co-founding DreamWorks with Steven Spielberg and Jeffrey Katzenberg. Beginning in the William Morris mailroom, he rose through talent representation, music and film, later becoming a major arts, education and medical philanthropist.</p>\r\n",
-    "word_count": 52,
-    "confidence": {
-      "score": 98,
-      "band": "very_high",
-      "reason": "The current Forbes profile and detailed Yale and Recording Academy biographies directly support his founder route, entertainment wealth and substantial arts, education and medical giving."
-    },
-    "source_ids": [
-      "S1",
-      "S2",
-      "S3"
-    ]
-  },
-  "long_biography": {
-    "plain_text": "Born in Brooklyn in 1943, David Geffen entered entertainment through the William Morris Agency mailroom and rose to become a talent agent. He co-founded Asylum Records in 1971, founded Geffen Records in 1980 and expanded into film before joining Steven Spielberg and Jeffrey Katzenberg to create DreamWorks SKG in 1994. Those music and movie ventures underpin the self-made fortune Forbes attributes to him.\n\nGeffen later retired from entertainment and concentrated on philanthropy and collecting art. His gifts include major support for UCLA, tuition-free study at Yale’s drama school and cultural institutions in Los Angeles and New York. Forbes also identifies him as the owner of Rising Sun; he first bought a half-interest from Larry Ellison and acquired the remaining share in 2010, establishing a well-documented long-term yachting connection.",
-    "html": "<p>Born in Brooklyn in 1943, David Geffen entered entertainment through the William Morris Agency mailroom and rose to become a talent agent. He co-founded Asylum Records in 1971, founded Geffen Records in 1980 and expanded into film before joining Steven Spielberg and Jeffrey Katzenberg to create DreamWorks SKG in 1994. Those music and movie ventures underpin the self-made fortune Forbes attributes to him.</p>\r\n<p>Geffen later retired from entertainment and concentrated on philanthropy and collecting art. His gifts include major support for UCLA, tuition-free study at Yale’s drama school and cultural institutions in Los Angeles and New York. Forbes also identifies him as the owner of Rising Sun; he first bought a half-interest from Larry Ellison and acquired the remaining share in 2010, establishing a well-documented long-term yachting connection.</p>\r\n",
-    "word_count": 128,
-    "confidence": {
-      "score": 97,
-      "band": "very_high",
-      "reason": "Forbes, Yale and the Recording Academy support the career, wealth and philanthropy narrative; Forbes and SuperYacht Times independently document the staged acquisition and long-term ownership of Rising Sun."
+      "reason": "Forbes, Yale, the Recording Academy and Rock Hall consistently identify him as founder of Asylum and Geffen Records and co-founder of DreamWorks."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S4",
-      "S5"
+      "S4"
+    ]
+  },
+  "biography": {
+    "plain_text": "David Geffen is an American entertainment entrepreneur who moved from the William Morris Agency mailroom into talent management, then launched Asylum Records and Geffen Records. He extended that music-business route into film through Geffen Pictures and DreamWorks, co-founded with Steven Spielberg and Jeffrey Katzenberg. His later support made tuition-free training possible at Yale's drama school.",
+    "html": "<p>David Geffen is an American entertainment entrepreneur who moved from the William Morris Agency mailroom into talent management, then launched Asylum Records and Geffen Records. He extended that music-business route into film through Geffen Pictures and DreamWorks, co-founded with Steven Spielberg and Jeffrey Katzenberg. His later support made tuition-free training possible at Yale's drama school.</p>\r\n",
+    "word_count": 55,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Current Forbes, Yale, Recording Academy and Rock Hall biographies support the mailroom-to-manager route, record-label and studio creation, and tuition-free drama education."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Born in Brooklyn, David Geffen entered entertainment through the William Morris Agency mailroom. He advanced to agent and manager, representing a generation of singer-songwriters before launching Asylum Records around artists he believed labels had overlooked. Geffen Records and DGC followed, widening his influence across popular music. He also formed Geffen Pictures and joined Steven Spielberg and Jeffrey Katzenberg to establish DreamWorks.\n\nThe later chapter of Geffen's career has been shaped by arts and education philanthropy. Through his foundation, he supported tuition-free study at Yale's drama school, making professional theatrical training accessible without the burden of tuition. That commitment extends the talent-building instinct behind his early management and label work into a lasting educational institution for actors, directors, designers and other theatre makers.",
+    "html": "<p>Born in Brooklyn, David Geffen entered entertainment through the William Morris Agency mailroom. He advanced to agent and manager, representing a generation of singer-songwriters before launching Asylum Records around artists he believed labels had overlooked. Geffen Records and DGC followed, widening his influence across popular music. He also formed Geffen Pictures and joined Steven Spielberg and Jeffrey Katzenberg to establish DreamWorks.</p>\r\n<p>The later chapter of Geffen's career has been shaped by arts and education philanthropy. Through his foundation, he supported tuition-free study at Yale's drama school, making professional theatrical training accessible without the burden of tuition. That commitment extends the talent-building instinct behind his early management and label work into a lasting educational institution for actors, directors, designers and other theatre makers.</p>\r\n",
+    "word_count": 122,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Forbes, Yale, the Recording Academy and Rock Hall support the Brooklyn origin, mailroom-to-management route, record-label and studio development, and tuition-free drama-school chapter."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
     ]
   },
   "proposed_details": [
@@ -176,7 +212,7 @@
         "reason": "CNN's editorial biography gives his birth name as David Lawrence Geffen, matching the full name already embedded in the source biography and the exact public identity."
       },
       "source_ids": [
-        "S6"
+        "S5"
       ]
     },
     {
@@ -191,7 +227,8 @@
       "source_ids": [
         "S1",
         "S2",
-        "S3"
+        "S3",
+        "S4"
       ]
     },
     {
@@ -205,7 +242,7 @@
       },
       "source_ids": [
         "S2",
-        "S6"
+        "S5"
       ]
     },
     {
@@ -219,7 +256,7 @@
       },
       "source_ids": [
         "S2",
-        "S6"
+        "S5"
       ]
     },
     {
@@ -233,7 +270,7 @@
       },
       "source_ids": [
         "S2",
-        "S6"
+        "S5"
       ]
     },
     {
@@ -248,23 +285,24 @@
       "source_ids": [
         "S1",
         "S2",
-        "S6"
+        "S5"
       ]
     },
     {
       "action": "correct_existing",
       "field": "biography",
       "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/David_Geffen\">David Lawrence Geffen</a> is a film studio executive, producer, and business entrepreneur from the United States. With Elliot Roberts, Geffen co-founded <a href=\"https://en.wikipedia.org/wiki/Asylum_Records\">Asylum Records</a> in 1971, Geffen Records in 1980, DGC Records in 1990, and <a href=\"https://en.wikipedia.org/wiki/DreamWorks\">DreamWorks</a> SKG in 1994.</p>\r\n",
-      "value": "<p>David Geffen is an American entertainment entrepreneur who built his fortune by founding Asylum Records, Geffen Records and DGC Records, then co-founding DreamWorks with Steven Spielberg and Jeffrey Katzenberg. Beginning in the William Morris mailroom, he rose through talent representation, music and film, later becoming a major arts, education and medical philanthropist.</p>\r\n",
+      "value": "<p>David Geffen is an American entertainment entrepreneur who moved from the William Morris Agency mailroom into talent management, then launched Asylum Records and Geffen Records. He extended that music-business route into film through Geffen Pictures and DreamWorks, co-founded with Steven Spielberg and Jeffrey Katzenberg. His later support made tuition-free training possible at Yale's drama school.</p>\r\n",
       "confidence": {
         "score": 98,
         "band": "very_high",
-        "reason": "The replacement removes embedded links and awkward wording, correctly distinguishes sole and shared founder roles, and adds his evidence-backed career route, wealth mechanism and later philanthropy."
+        "reason": "The replacement removes embedded links and awkward wording, distinguishes sole and shared founder roles, and adds the evidence-backed mailroom-to-management route and one durable arts-education chapter."
       },
       "source_ids": [
         "S1",
         "S2",
-        "S3"
+        "S3",
+        "S4"
       ]
     }
   ],
@@ -273,7 +311,7 @@
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/david-geffen/",
-      "verification": "The dedicated current profile matches Geffen's exact name, age, U.S. citizenship, Beverly Hills residence, record-label and DreamWorks founder roles, self-made media wealth and Rising Sun ownership. Type ID 11 is copied from the owner input lookup.",
+      "verification": "The dedicated current profile matches Geffen's exact name, age, U.S. citizenship, Beverly Hills residence, William Morris career, record-label and DreamWorks founder roles, and self-made media wealth. Type ID 11 is copied from the owner input lookup.",
       "confidence": {
         "score": 100,
         "band": "very_high",
@@ -292,18 +330,16 @@
       "title": "David Geffen",
       "publisher": "Forbes",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "exact identity",
-        "verified Forbes profile",
-        "current age, U.S. citizenship and Beverly Hills residence",
+        "Exact identity and verified Forbes profile",
+        "Current living status, U.S. citizenship and Beverly Hills residence",
+        "William Morris mailroom-to-agent route",
         "Asylum, Geffen and DGC Records founder roles",
         "DreamWorks co-founder role",
-        "movies and record labels as source of wealth",
-        "self-made wealth classification",
-        "mailroom-to-agent career route",
-        "art collection and philanthropy",
-        "Rising Sun ownership"
+        "Movies and record labels as source of wealth",
+        "Self-made wealth origin",
+        "Arts philanthropy"
       ]
     },
     {
@@ -312,105 +348,105 @@
       "title": "David Geffen",
       "publisher": "David Geffen School of Drama at Yale University",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "21 February 1943 birth date",
         "Brooklyn birthplace",
-        "William Morris mailroom and talent-agent route",
+        "William Morris mailroom, agent and talent-manager route",
+        "Artists represented and managed",
         "Asylum, Geffen and DGC Records founding",
         "Geffen Pictures work",
-        "DreamWorks SKG co-founding",
-        "UCLA medical and educational philanthropy",
-        "tuition-free Yale drama education",
-        "arts and cultural philanthropy"
+        "DreamWorks co-founding",
+        "Tuition-free Yale drama education",
+        "Arts and cultural philanthropy"
       ]
     },
     {
       "id": "S3",
-      "url": "https://qa.grammy.com/news/the-academy-clive-davis-team-for-pre-grammy-gala",
+      "url": "https://www.grammy.com/news/the-academy-clive-davis-team-for-pre-grammy-gala/",
       "title": "The Academy, Clive Davis Team For Pre-GRAMMY Gala",
       "publisher": "The Recording Academy",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "Brooklyn origin",
         "William Morris mailroom and agent progression",
-        "Asylum, Geffen and DGC Records founder roles",
-        "Geffen Pictures",
-        "DreamWorks SKG co-founding",
-        "sale of Geffen Records to MCA",
-        "sale of DreamWorks catalog to Paramount",
-        "retirement from entertainment",
-        "medical, arts and charitable philanthropy"
+        "Asylum and Geffen Records founder roles",
+        "DreamWorks co-founder role",
+        "Music, stage and film entrepreneurship",
+        "Philanthropic activity"
       ]
     },
     {
       "id": "S4",
-      "url": "https://www.forbes.com.au/news/billionaires/inside-the-superyachts-of-americas-richest-people/",
-      "title": "Inside the superyachts of America's richest people",
-      "publisher": "Forbes Australia",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
+      "url": "https://rockhall.com/inductees/david-geffen/",
+      "title": "David Geffen",
+      "publisher": "Rock & Roll Hall of Fame",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
       "supports": [
-        "current Rising Sun ownership",
-        "454-foot length",
-        "2010 acquisition from Larry Ellison",
-        "long-term yacht context"
+        "Exact identity",
+        "Asylum Records founder role",
+        "Geffen Records founder role",
+        "Talent development and artist relationships",
+        "Music-industry impact"
       ]
     },
     {
       "id": "S5",
-      "url": "https://www.superyachttimes.com/yacht-news/david-geffen-now-sole-owner-of-138-metre-superyacht-rising-sun",
-      "title": "David Geffen now sole owner of 138 metre superyacht Rising Sun",
-      "publisher": "SuperYacht Times",
-      "tier": 3,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "David Geffen identity",
-        "Rising Sun sole ownership from 2010",
-        "138-metre vessel identity",
-        "staged acquisition after earlier shared ownership"
-      ]
-    },
-    {
-      "id": "S6",
       "url": "https://kesq.com/news/national-world/cnn-national/2025/01/28/david-geffen-fast-facts-3/",
       "title": "David Geffen Fast Facts",
       "publisher": "CNN",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "birth name David Lawrence Geffen",
+        "Birth name David Lawrence Geffen",
         "21 February 1943 birth date",
         "Brooklyn, New York, birthplace",
-        "entertainment executive and philanthropist identity"
+        "Entertainment executive and philanthropist identity"
       ]
     },
     {
-      "id": "S7",
+      "id": "S6",
       "url": "https://www.linkedin.com/pub/dir/David/Geffen",
       "title": "People named David Geffen",
       "publisher": "LinkedIn",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "multiple same-name LinkedIn profiles",
-        "absence of an identity-verified personal LinkedIn profile for the entertainment founder"
+        "Multiple same-name LinkedIn profiles",
+        "No identity-verified personal LinkedIn profile for the entertainment founder"
       ]
     }
   ],
   "uncertainties": [
-    "Forbes currently attributes Geffen's wealth to movies and record labels and labels it self-made. It also lists public-company financial holdings, but the documented origin remains his entertainment ventures, so Media & Entertainment is used rather than Finance & Investments.",
-    "Geffen retired from the entertainment industry after building and selling core businesses. Founder is retained as the durable relationship to the assets that created the fortune, not as a claim that he currently operates Geffen Records or DreamWorks.",
-    "Forbes and SuperYacht Times support current Rising Sun ownership and the staged acquisition from Larry Ellison. The long biography uses this documented ownership history rather than inferring design involvement or personality from the vessel.",
-    "Historic reporting identifies an Instagram account used by Geffen, including posts from Rising Sun, but current direct access and official cross-link verification were insufficient. No Instagram proposal was made.",
-    "No personal LinkedIn, Facebook, X/Twitter, YouTube, TikTok or personal website met the verification threshold. Same-name LinkedIn and X results belong to other people or could not be securely resolved.",
-    "The existing Wikipedia link already resolves to the correct David Geffen and was not duplicated.",
-    "No second nationality was established in strong sources, so the secondary-nationality field remains blank.",
-    "Blank title, suffix and secondary-residence fields were treated as optional; blank death, internal-note and unknown-name fields remain inapplicable or system-managed for a living person."
+    {
+      "topic": "Primary industry",
+      "detail": "Media & Entertainment is used because current Forbes and institutional biographies consistently trace Geffen's wealth and prominence to record labels and film studios."
+    },
+    {
+      "topic": "Company relationship",
+      "detail": "Founder is retained as the durable relationship to Asylum Records, Geffen Records and DreamWorks; the dossier makes no claim that Geffen currently manages or controls those businesses."
+    },
+    {
+      "topic": "Personal social accounts",
+      "detail": "No personal LinkedIn, Instagram, Facebook, X, YouTube, TikTok or personal website met the identity-verification threshold. Same-name LinkedIn results belong to other people or lack sufficient corroboration."
+    },
+    {
+      "topic": "Existing Wikipedia social",
+      "detail": "The existing Wikipedia URL resolves to the correct David Geffen article and was not duplicated."
+    },
+    {
+      "topic": "Secondary nationality",
+      "detail": "No strong evidence established a second nationality, so the secondary-nationality field remains blank."
+    },
+    {
+      "topic": "Other blank fields",
+      "detail": "Title, suffix and secondary residence remain optional; death, internal-note and unknown-name fields remain inapplicable or system-managed for a living person."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": "Review the durable Founder relationship against his retirement, and retain Rising Sun only as a documented long-term ownership chapter rather than a source of wealth or inferred character."
+    "notes": "The founder relationship, mailroom-to-management route and Yale drama-school chapter are strongly evidenced. Review should confirm the middle-name and birth-detail proposals."
   }
 }

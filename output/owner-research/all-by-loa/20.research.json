@@ -1,12 +1,13 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
+  "record_type": "person",
   "owner": {
     "person_id": 20,
     "display_name": "Roman Abramovich",
     "identity_confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The exact name, full patronymic, birth details, business holdings, Chukotka governorship and former Chelsea ownership align across the owner record, Forbes, an English High Court judgment and the Official Journal of the European Union."
+      "reason": "The exact name, patronymic, birth details, Sibneft business route, Chukotka governorship and former Chelsea ownership align across the owner record, Forbes, an English High Court judgment, Chelsea's official record and reputable biographical sources."
     }
   },
   "input_snapshot": {
@@ -69,37 +70,69 @@
     }
   },
   "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Russian businessman and investor, former governor of Chukotka and former owner of Chelsea Football Club.",
+    "wealth_or_prominence_route": "Commodity trading led into control of oil producer Sibneft during post-Soviet privatisation, followed by a sale that funded a broader investment portfolio centred on steel and mining.",
+    "turning_point": "The sale of the controlling Sibneft stake to Gazprom in 2005 converted an operating oil holding into investment capital.",
+    "later_chapter": "Eight years governing Chukotka and nearly two decades owning Chelsea Football Club became distinct public chapters.",
+    "character_detail": "Frequent football visits during European business travel led him to Chelsea, with the sport's unpredictability providing the attraction.",
+    "excluded_transient_context": [
+      "Current vessel ownership and LOA cohort ranking",
+      "Current net worth and rankings",
+      "Current ownership percentages",
+      "Short-lived legal or political developments not needed to explain the durable career"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "calibration_archetypes": [
+      "investor_philanthropist",
+      "founder_operator"
+    ],
+    "notes": "The rewrite follows the trading-to-oil-to-investment route, then uses Chukotka and the documented attraction to football as distinctive later chapters without current-value, vessel or controversy material."
+  },
+  "editorial_note": null,
   "forbes_profile": {
     "status": "verified",
     "url": "https://www.forbes.com/profile/roman-abramovich/",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The dedicated profile is an exact match and its current account of Sibneft, Evraz, Norilsk Nickel, Chukotka and Chelsea aligns with independent public records."
+      "reason": "The dedicated current profile is an exact identity match and its account of Sibneft, Evraz, Norilsk Nickel, Chukotka and former Chelsea ownership aligns with independent public records."
     }
   },
   "primary_industry": {
     "classification": "metals_mining",
     "label": "Metals & Mining",
-    "summary": "Forbes currently identifies steel and investments as the source of Abramovich's wealth and names stakes in steelmaker Evraz and nickel producer Norilsk Nickel. Metals and mining are therefore the clearest specific sector underpinning his identifiable current holdings.",
+    "summary": "Forbes currently identifies steel and investments as the source of Abramovich's wealth and names stakes in steelmaker Evraz and nickel producer Norilsk Nickel, making metals and mining the clearest specific sector underpinning his identifiable holdings.",
     "confidence": {
       "score": 96,
       "band": "very_high",
-      "reason": "A current Forbes profile identifies both the source-of-wealth category and named metals holdings, while an official EU record corroborates his major Evraz shareholding."
+      "reason": "The current exact Forbes profile identifies both the wealth category and the named steel and nickel holdings."
     },
     "source_ids": [
-      "S1",
-      "S3"
+      "S1"
     ]
   },
   "wealth_origin": {
     "classification": "self_made",
     "label": "Self-made",
-    "summary": "Abramovich built the principal fortune through trading and the acquisition of control of oil producer Sibneft during Russia's post-Soviet privatization, then converted that holding into investment capital through its sale to Gazprom in 2005.",
+    "summary": "Abramovich built the principal fortune through commodity trading and the acquisition of control of oil producer Sibneft during post-Soviet privatisation, then converted that holding into investment capital through its sale to Gazprom.",
     "confidence": {
       "score": 97,
       "band": "very_high",
-      "reason": "Forbes explicitly classifies the fortune as self-made, and the English High Court judgment documents his trading companies, the privatization process and his role in acquiring control of Sibneft."
+      "reason": "Forbes explicitly classifies the fortune as self-made, while the English High Court judgment documents his trading companies and role in acquiring control of Sibneft."
     },
     "source_ids": [
       "S1",
@@ -109,25 +142,24 @@
   "wealth_relationship": {
     "classification": "investor",
     "label": "Investor",
-    "summary": "His present wealth is represented chiefly by investment stakes, including holdings in Evraz and Norilsk Nickel, rather than by a documented current day-to-day operating role at either company.",
+    "summary": "His identifiable wealth is represented chiefly by investment stakes, including holdings in Evraz and Norilsk Nickel, without a documented current day-to-day operating role at either company.",
     "confidence": {
       "score": 96,
       "band": "very_high",
-      "reason": "Forbes describes investments as a current source of wealth and reports ownership stakes, while the official EU record identifies him as a major Evraz shareholder rather than its operating executive."
+      "reason": "The current Forbes profile describes investments as a source of wealth and identifies ownership stakes rather than an operating executive role."
     },
     "source_ids": [
-      "S1",
-      "S3"
+      "S1"
     ]
   },
   "biography": {
-    "plain_text": "Roman Arkadyevich Abramovich is a Russian businessman and investor whose fortune emerged from acquiring oil producer Sibneft during post-Soviet privatization. He sold a controlling stake to Gazprom in 2005 and retained major interests in steel and nickel. His later profile broadened through public service in Chukotka and nineteen years as owner of Chelsea F.C.",
-    "html": "<p>Roman Arkadyevich Abramovich is a Russian businessman and investor whose fortune emerged from acquiring oil producer Sibneft during post-Soviet privatization. He sold a controlling stake to Gazprom in 2005 and retained major interests in steel and nickel. His later profile broadened through public service in Chukotka and nineteen years as owner of Chelsea F.C.</p>\r\n",
-    "word_count": 55,
+    "plain_text": "Roman Arkadyevich Abramovich is a Russian businessman and investor who moved from commodity trading into oil during post-Soviet privatisation. He acquired control of Sibneft and later sold the stake to Gazprom, building a portfolio centred on steel and mining. Chelsea Football Club ownership and public service in Chukotka became distinct later chapters.",
+    "html": "<p>Roman Arkadyevich Abramovich is a Russian businessman and investor who moved from commodity trading into oil during post-Soviet privatisation. He acquired control of Sibneft and later sold the stake to Gazprom, building a portfolio centred on steel and mining. Chelsea Football Club ownership and public service in Chukotka became distinct later chapters.</p>\r\n",
+    "word_count": 52,
     "confidence": {
       "score": 96,
       "band": "very_high",
-      "reason": "The wealth route is documented by the High Court and current Forbes profile; Forbes and official records support the industrial holdings, governorship and completed Chelsea ownership chapter."
+      "reason": "The High Court judgment and current Forbes profile support the business route, while Forbes and Chelsea's official record support the Chukotka and football chapters."
     },
     "source_ids": [
       "S1",
@@ -137,19 +169,20 @@
     ]
   },
   "long_biography": {
-    "plain_text": "Roman Arkadyevich Abramovich was born in Saratov and rose through commodity trading before Russia’s post-Soviet privatization reshaped his career. In the mid-1990s, he and partners acquired control of oil producer Sibneft through that process. The pivotal 2005 sale of his controlling stake to state-owned Gazprom converted the oil holding into investment capital, while stakes in steelmaker Evraz and nickel producer Norilsk Nickel became prominent parts of his portfolio.\n\nAbramovich also served as governor of Chukotka from 2000 to 2008 and invested heavily in the remote region, an unusual public-service chapter in his business career. Internationally, he became best known after buying Chelsea F.C. in 2003; the club changed ownership in 2022 after nineteen years under him. His wealth remains rooted in the Sibneft transaction and subsequent industrial investments, with Forbes currently identifying steel and investments as its source.",
-    "html": "<p>Roman Arkadyevich Abramovich was born in Saratov and rose through commodity trading before Russia’s post-Soviet privatization reshaped his career. In the mid-1990s, he and partners acquired control of oil producer Sibneft through that process. The pivotal 2005 sale of his controlling stake to state-owned Gazprom converted the oil holding into investment capital, while stakes in steelmaker Evraz and nickel producer Norilsk Nickel became prominent parts of his portfolio.</p>\r\n<p>Abramovich also served as governor of Chukotka from 2000 to 2008 and invested heavily in the remote region, an unusual public-service chapter in his business career. Internationally, he became best known after buying Chelsea F.C. in 2003; the club changed ownership in 2022 after nineteen years under him. His wealth remains rooted in the Sibneft transaction and subsequent industrial investments, with Forbes currently identifying steel and investments as its source.</p>\r\n",
-    "word_count": 139,
+    "plain_text": "Abramovich's business path began in commodity trading before post-Soviet privatisation opened a decisive route into oil. He and partners acquired control of Sibneft in the mid-1990s, then sold the controlling stake to Gazprom in 2005. The sale converted an operating oil holding into investment capital, and his portfolio expanded into steel and nickel.\n\nChukotka gave the career an unusual public chapter. Abramovich served as governor of the remote Russian region for eight years and directed substantial investment there. Football later made him internationally familiar: he bought Chelsea Football Club and owned it for nearly two decades, describing the sport's unpredictability as the attraction that drew him in.",
+    "html": "<p>Abramovich's business path began in commodity trading before post-Soviet privatisation opened a decisive route into oil. He and partners acquired control of Sibneft in the mid-1990s, then sold the controlling stake to Gazprom in 2005. The sale converted an operating oil holding into investment capital, and his portfolio expanded into steel and nickel.</p>\r\n<p>Chukotka gave the career an unusual public chapter. Abramovich served as governor of the remote Russian region for eight years and directed substantial investment there. Football later made him internationally familiar: he bought Chelsea Football Club and owned it for nearly two decades, describing the sport's unpredictability as the attraction that drew him in.</p>\r\n",
+    "word_count": 107,
     "confidence": {
-      "score": 96,
-      "band": "very_high",
-      "reason": "The High Court judgment supports the trading and Sibneft route; the current Forbes profile supports the sale, industrial stakes, Chukotka chapter and present source-of-wealth description; Chelsea's official record supports the ownership period."
+      "score": 94,
+      "band": "high",
+      "reason": "The business and public-service route is supported by court, Forbes and reputable reporting, while the football detail comes from a direct interview and Chelsea's official record."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S4"
+      "S4",
+      "S5"
     ]
   },
   "proposed_details": [
@@ -158,12 +191,13 @@
       "field": "middle_names",
       "value": "Arkadyevich",
       "confidence": {
-        "score": 99,
-        "band": "very_high",
-        "reason": "The Official Journal of the European Union records his full name as Roman Arkadyevich Abramovich."
+        "score": 94,
+        "band": "high",
+        "reason": "The High Court judgment records the same patronymic as Arkadievich, while the existing exact-match Wikipedia profile uses the standard English transliteration Arkadyevich."
       },
       "source_ids": [
-        "S3"
+        "S2",
+        "S6"
       ]
     },
     {
@@ -171,7 +205,7 @@
       "field": "known_for_title",
       "value": "Investor and former owner of Chelsea F.C.",
       "confidence": {
-        "score": 99,
+        "score": 98,
         "band": "very_high",
         "reason": "The current Forbes profile identifies his investment holdings and completed Chelsea sale, while Chelsea's official statement confirms his nearly twenty-year ownership."
       },
@@ -185,23 +219,24 @@
       "field": "place_of_birth",
       "value": "Saratov",
       "confidence": {
-        "score": 99,
+        "score": 95,
         "band": "very_high",
-        "reason": "The Official Journal of the European Union records Saratov, Russian Federation, as his place of birth."
+        "reason": "A contemporaneous Press Association biography published by The Guardian and the exact-match Wikipedia profile both record Saratov as his birthplace."
       },
       "source_ids": [
-        "S3"
+        "S3",
+        "S6"
       ]
     },
     {
       "action": "correct_existing",
       "field": "biography",
       "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Roman_Abramovich\">Roman Arkadyevich Abramovich</a> is a Russian-Israeli businessman and politician worth billions of dollars. Abramovich is the founder and majority shareholder of <a href=\"https://en.wikipedia.org/wiki/Millhouse_Capital\">Millhouse LLC</a>, a private investment firm, and is best known outside of Russia as the owner of <a href=\"https://en.wikipedia.org/wiki/Chelsea_F.C.\">Chelsea F.C.</a>, a Premier League football team. From 2000 to 2008, he was the <a href=\"https://en.wikipedia.org/wiki/Governor_of_Chukotka_Autonomous_Okrug\">Governor of Chukotka Autonomous Okrug</a>.</p>\r\n",
-      "value": "<p>Roman Arkadyevich Abramovich is a Russian businessman and investor whose fortune emerged from acquiring oil producer Sibneft during post-Soviet privatization. He sold a controlling stake to Gazprom in 2005 and retained major interests in steel and nickel. His later profile broadened through public service in Chukotka and nineteen years as owner of Chelsea F.C.</p>\r\n",
+      "value": "<p>Roman Arkadyevich Abramovich is a Russian businessman and investor who moved from commodity trading into oil during post-Soviet privatisation. He acquired control of Sibneft and later sold the stake to Gazprom, building a portfolio centred on steel and mining. Chelsea Football Club ownership and public service in Chukotka became distinct later chapters.</p>\r\n",
       "confidence": {
         "score": 96,
         "band": "very_high",
-        "reason": "The replacement removes embedded links and an obsolete description of current Chelsea ownership while explaining the documented origin and later development of the fortune."
+        "reason": "The replacement removes embedded links, net-worth language and obsolete current Chelsea ownership while explaining the documented business route and completed later chapters."
       },
       "source_ids": [
         "S1",
@@ -216,7 +251,7 @@
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/roman-abramovich/",
-      "verification": "The dedicated Forbes profile matches the owner record's full identity, birth details, industrial holdings, public office and former Chelsea ownership; type ID 11 is copied from the current owner input lookup.",
+      "verification": "The dedicated Forbes profile matches the owner record's identity, birth details, industrial holdings, public office and former Chelsea ownership; type ID 11 is copied from the current owner input lookup.",
       "confidence": {
         "score": 99,
         "band": "very_high",
@@ -235,7 +270,7 @@
       "title": "Roman Abramovich & family",
       "publisher": "Forbes",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "identity",
         "verified Forbes profile",
@@ -253,30 +288,29 @@
       "title": "Berezovsky v Abramovich: Approved Judgment",
       "publisher": "Courts and Tribunals Judiciary",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
+        "full name and patronymic transliteration",
         "Abramovich's commodity trading companies",
-        "Sibneft's creation as part of a privatization programme",
+        "Sibneft's creation and privatisation",
         "Abramovich's role in acquiring control of Sibneft",
         "wealth-origin mechanism"
       ]
     },
     {
       "id": "S3",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R0427",
-      "title": "Council Implementing Regulation (EU) 2022/427",
-      "publisher": "Official Journal of the European Union",
-      "tier": 1,
-      "accessed_at": "2026-07-27",
+      "url": "https://www.theguardian.com/football/2003/jul/02/newsstory.sport6",
+      "title": "Who is Roman Abramovich?",
+      "publisher": "The Guardian",
+      "tier": 2,
+      "accessed_at": "2026-07-28",
       "supports": [
-        "full name and patronymic",
         "birth date",
         "birthplace",
-        "gender",
-        "Russian nationality",
-        "Evraz major shareholding",
-        "Chukotka governorship",
-        "identity associations"
+        "early oil-product trading",
+        "controlling Sibneft interest",
+        "Chukotka public office and infrastructure work",
+        "initial Chelsea acquisition"
       ]
     },
     {
@@ -285,20 +319,50 @@
       "title": "Statement from Club Owner Roman Abramovich",
       "publisher": "Chelsea Football Club",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "nearly twenty years of Chelsea ownership",
         "Abramovich's stated custodial approach to the club",
         "former Chelsea ownership identity"
       ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.forbes.com/sites/leeigel/2021/03/19/chelsea-owner-and-billionaire-roman-abramovich-on-the-past-present-and-future-of-the-club/",
+      "title": "Chelsea Owner And Billionaire Roman Abramovich On The Past, Present And Future Of The Club",
+      "publisher": "Forbes",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "direct Abramovich interview",
+        "football interest arising during European business travel",
+        "attraction to the sport's unpredictability",
+        "Chelsea acquisition"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://en.wikipedia.org/wiki/Roman_Abramovich",
+      "title": "Roman Abramovich",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "full name and standard English patronymic transliteration",
+        "birth details",
+        "Chukotka governorship",
+        "former Chelsea ownership"
+      ]
     }
   ],
   "uncertainties": [
     "Forbes uses the combined source-of-wealth description 'steel, investments'. Metals & Mining was selected as the principal industry because the current profile specifically names Evraz and Norilsk Nickel, while Investor separately captures his relationship to those holdings.",
-    "No personal Instagram, LinkedIn, personal website, Facebook, Twitter/X, YouTube or TikTok account met the identity-verification threshold. Name-matched LinkedIn and social accounts were not corroborated by an official organisation and were rejected.",
-    "The owner input lists Eclipse and several other current vessels, but no yachting claim was needed to explain the wealth route or public profile, so vessel names were not appended to either biography.",
-    "The optional suffix and secondary-residence fields remain blank; death, age, internal-note and unknown-name fields were treated as inapplicable or system fields rather than research targets.",
-    "The dossier describes the documented business mechanism and current holdings without including sanctions, political allegations or a net-worth figure, none of which is necessary to explain the origin of wealth."
+    "The High Court judgment spells the patronymic Arkadievich, while the existing Wikipedia profile and established English usage spell it Arkadyevich; the proposed value follows the latter transliteration.",
+    "No personal Instagram, LinkedIn, personal website, Facebook, Twitter/X, YouTube or TikTok account met the identity-verification threshold. Name-matched accounts were not corroborated by an official organisation and were rejected.",
+    "Current ownership percentages were omitted from the biographies because industrial stakes can change while the documented investment route remains durable.",
+    "Vessel relationships and LOA ranking were omitted from the editorial brief and both biographies because they are selection context, not durable biography content.",
+    "Contemporary legal and political controversies were excluded because they are not needed to explain the durable business route and were not requested.",
+    "The optional suffix and secondary-residence fields remain blank; death, age, internal-note and unknown-name fields were treated as inapplicable or system fields rather than research targets."
   ],
   "review": {
     "status": "pending",

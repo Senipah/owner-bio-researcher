@@ -1,12 +1,13 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
+  "record_type": "person",
   "owner": {
     "person_id": 9508,
     "display_name": "Ken Griffin",
     "identity_confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The exact Forbes profile, Citadel biography, full Kenneth C. Griffin name, Harvard background, Miami residence and Citadel/Citadel Securities roles identify the same person; the enriched Defy relationship is also consistent with current reporting on Griffin's yacht."
+      "reason": "The exact Forbes profile, Citadel biography and LinkedIn profile align on Kenneth C. Griffin's full identity, Harvard education, Miami location and founder and chief executive role at Citadel."
     }
   },
   "input_snapshot": {
@@ -69,84 +70,120 @@
     }
   },
   "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Kenneth C. Griffin is an American investor, founder and chief executive of Citadel, and founder and non-executive chairman of Citadel Securities.",
+    "wealth_or_prominence_route": "He progressed from quantitative trading at Harvard to founding Citadel, an alternative investment manager, and later Citadel Securities, a separate market-making firm.",
+    "turning_point": "Early success trading convertible bonds attracted Frank Meyer's backing, enabling Griffin to establish the fund that became Citadel.",
+    "later_chapter": "Griffin Catalyst organises his civic engagement across education, science and medicine, community resilience, upward mobility and enterprise.",
+    "character_detail": "He sold software to educational institutions as a teenager and installed a satellite dish on his Harvard dormitory roof for live market data.",
+    "excluded_transient_context": [
+      "Current vessel ownership, construction projects and LOA ranking",
+      "Current net worth, investment capital, trading-volume figures and wealth rankings",
+      "Current property, art and collectables transactions",
+      "Current political donations, endorsements and commentary",
+      "Short-lived fund performance figures and league-table positions"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "calibration_archetypes": [
+      "founder_operator",
+      "investor_philanthropist"
+    ],
+    "notes": "The profile follows the concrete route from teenage software and Harvard trading to Citadel, distinguishes Citadel Securities as a separate market-making venture, and uses Griffin Catalyst as the civic chapter without present-value, ranking or personal-property material."
+  },
+  "editorial_note": null,
   "forbes_profile": {
     "status": "verified",
     "url": "https://www.forbes.com/profile/ken-griffin/",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The current Forbes profile exactly matches Griffin's Citadel founder and CEO role, Harvard trading origin, Citadel Securities relationship, Miami residence and U.S. citizenship."
+      "reason": "The current exact-name Forbes profile matches Griffin's Citadel founder and chief executive role, Harvard trading origin, Citadel Securities relationship, Miami location and American citizenship."
     }
   },
   "primary_industry": {
     "classification": "finance_investments",
     "label": "Finance & Investments",
-    "summary": "Griffin's identifiable private wealth is principally rooted in Citadel's hedge-fund management business, with Citadel Securities' market-making business providing a second major financial-services holding.",
+    "summary": "Griffin's wealth is principally tied to Citadel's alternative investment-management business, with Citadel Securities adding a separate market-making enterprise.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Forbes identifies hedge funds as the source of wealth, while first-party Citadel and Citadel Securities sources document the two separate finance businesses he founded."
+      "reason": "Forbes identifies hedge funds as his wealth source, while the official company biographies document Citadel's investment-management role and Citadel Securities' distinct market-making business."
     },
     "source_ids": [
       "S1",
       "S2",
+      "S3",
       "S4"
     ]
   },
   "wealth_origin": {
     "classification": "self_made",
     "label": "Self-made",
-    "summary": "He began trading while at Harvard, launched a small quantitative hedge fund from his dorm room and founded Citadel after graduation rather than inheriting the core wealth-producing assets.",
+    "summary": "Griffin began trading while at Harvard, attracted outside backing through his early results and used that route to establish the fund that became Citadel.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Forbes explicitly labels the wealth self-made, and both Forbes and Citadel document his dorm-room trading and subsequent founding of Citadel."
+      "reason": "Forbes marks the fortune self-made, and both Forbes and Citadel trace the progression from dorm-room trading to Griffin's founding of Citadel."
     },
     "source_ids": [
       "S1",
-      "S2"
+      "S2",
+      "S3"
     ]
   },
   "wealth_relationship": {
     "classification": "founder",
     "label": "Founder",
-    "summary": "Griffin founded and continues to lead Citadel, the principal source of his wealth, and also founded the separate market-making firm Citadel Securities.",
+    "summary": "Griffin founded and continues to lead Citadel, and he also founded the separately operated Citadel Securities.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The current Forbes profile and Citadel's official leadership biography identify him as Citadel's founder and CEO, while Citadel and Citadel Securities document his founding role in the market maker."
+      "reason": "The current Forbes profile and first-party biographies identify him as Citadel's founder and chief executive and as Citadel Securities' founder and non-executive chairman."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S3",
       "S4"
     ]
   },
   "biography": {
-    "plain_text": "Ken Griffin is an American investor who built his fortune in hedge funds and market-making. He began trading from his Harvard dorm room, founded Citadel in 1990 and later established Citadel Securities as electronic markets expanded. Citadel remains the core business, while the separate market maker has become a major U.S. liquidity provider.",
-    "html": "<p>Ken Griffin is an American investor who built his fortune in hedge funds and market-making. He began trading from his Harvard dorm room, founded Citadel in 1990 and later established Citadel Securities as electronic markets expanded. Citadel remains the core business, while the separate market maker has become a major U.S. liquidity provider.</p>\r\n",
-    "word_count": 54,
+    "plain_text": "Ken Griffin is an American investor who began trading from his Harvard dorm room, using a rooftop satellite dish for live market data before founding Citadel. He built the firm around quantitative analysis, software and specialist talent, then expanded into electronic market-making through Citadel Securities and civic investment through Griffin Catalyst.",
+    "html": "<p>Ken Griffin is an American investor who began trading from his Harvard dorm room, using a rooftop satellite dish for live market data before founding Citadel. He built the firm around quantitative analysis, software and specialist talent, then expanded into electronic market-making through Citadel Securities and civic investment through Griffin Catalyst.</p>\r\n",
+    "word_count": 51,
     "confidence": {
       "score": 98,
       "band": "very_high",
-      "reason": "Forbes and first-party Citadel sources support the finance classification, Harvard origin, founding dates and the current scale and role of the two distinct firms."
+      "reason": "Forbes and Citadel document Griffin's Harvard trading route and Citadel founding, while Citadel and Griffin Catalyst support the quantitative business model, Citadel Securities expansion and civic chapter."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S4"
+      "S4",
+      "S5"
     ]
   },
   "long_biography": {
-    "plain_text": "Kenneth C. Griffin began investing as a Harvard freshman in 1986 and launched a small hedge fund from his dorm room the following year, using quantitative analysis to guide trades. After graduating, he founded Citadel in 1990. The investment firm became the principal source of his wealth and, despite devastating 2008 losses, grew into one of the most profitable hedge-fund managers by cumulative net gains.\n\nGriffin and his partners established Citadel Securities in 2002 as options markets moved toward electronic trading. The separate market-making firm later became a major liquidity provider across global markets, while Griffin remained Citadel's founder, chief executive and co-chief investment officer. He has also channelled later public activity through Griffin Catalyst, supporting education, medical research and civic institutions.",
-    "html": "<p>Kenneth C. Griffin began investing as a Harvard freshman in 1986 and launched a small hedge fund from his dorm room the following year, using quantitative analysis to guide trades. After graduating, he founded Citadel in 1990. The investment firm became the principal source of his wealth and, despite devastating 2008 losses, grew into one of the most profitable hedge-fund managers by cumulative net gains.</p>\r\n<p>Griffin and his partners established Citadel Securities in 2002 as options markets moved toward electronic trading. The separate market-making firm later became a major liquidity provider across global markets, while Griffin remained Citadel's founder, chief executive and co-chief investment officer. He has also channelled later public activity through Griffin Catalyst, supporting education, medical research and civic institutions.</p>\r\n",
-    "word_count": 122,
+    "plain_text": "Ken Griffin's interest in computers preceded his career in finance: as a teenager, he sold software to educational institutions. At Harvard, he began trading convertible bonds, installed a satellite dish on his dormitory roof for real-time market data and launched a small hedge fund using quantitative analysis. After graduation, he moved to Chicago to work with Frank Meyer, whose backing helped him establish the fund that became Citadel.\n\nGriffin developed Citadel around the combination of specialist talent, advanced analytics and powerful software. He and his partners later founded Citadel Securities as options trading moved towards electronic markets, creating a separate market-making firm. His civic work now runs through Griffin Catalyst, an initiative supporting education, science and medicine, community resilience, upward mobility and enterprise.",
+    "html": "<p>Ken Griffin's interest in computers preceded his career in finance: as a teenager, he sold software to educational institutions. At Harvard, he began trading convertible bonds, installed a satellite dish on his dormitory roof for real-time market data and launched a small hedge fund using quantitative analysis. After graduation, he moved to Chicago to work with Frank Meyer, whose backing helped him establish the fund that became Citadel.</p>\r\n<p>Griffin developed Citadel around the combination of specialist talent, advanced analytics and powerful software. He and his partners later founded Citadel Securities as options trading moved towards electronic markets, creating a separate market-making firm. His civic work now runs through Griffin Catalyst, an initiative supporting education, science and medicine, community resilience, upward mobility and enterprise.</p>\r\n",
+    "word_count": 123,
     "confidence": {
-      "score": 97,
+      "score": 98,
       "band": "very_high",
-      "reason": "First-party Citadel sources document the formative trading route, the 2008 losses, current leadership and Citadel Securities' market-making development; Forbes corroborates the wealth mechanism and Griffin Catalyst supports the later philanthropic chapter."
+      "reason": "Citadel and Griffin Catalyst supply the formative software and trading details, the Meyer-backed launch, the analytical operating model, the creation of Citadel Securities and the later civic initiative; Forbes independently corroborates the core founder route."
     },
     "source_ids": [
       "S1",
@@ -158,13 +195,13 @@
   },
   "proposed_details": [
     {
-      "action": "fill_missing",
       "field": "known_for_title",
       "value": "Founder and CEO of Citadel",
+      "action": "fill_missing",
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The exact current Forbes profile and official Citadel biography identify this role."
+        "reason": "The current exact Forbes profile and Citadel's official leadership biography both identify Griffin as Citadel's founder and chief executive."
       },
       "source_ids": [
         "S1",
@@ -172,35 +209,37 @@
       ]
     },
     {
-      "action": "correct_existing",
       "field": "mortality_status",
       "existing_value": "Unknown",
       "value": "Alive",
+      "action": "correct_existing",
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "Forbes maintains a current profile updated in March 2026, and official Citadel and Griffin Catalyst pages document his current leadership and activity."
+        "reason": "Current Forbes, Citadel, LinkedIn and Griffin Catalyst pages document Griffin's active leadership and civic work."
       },
       "source_ids": [
         "S1",
         "S2",
-        "S5"
+        "S5",
+        "S6"
       ]
     },
     {
-      "action": "fill_missing",
       "field": "biography",
-      "value": "<p>Ken Griffin is an American investor who built his fortune in hedge funds and market-making. He began trading from his Harvard dorm room, founded Citadel in 1990 and later established Citadel Securities as electronic markets expanded. Citadel remains the core business, while the separate market maker has become a major U.S. liquidity provider.</p>\r\n",
+      "value": "<p>Ken Griffin is an American investor who began trading from his Harvard dorm room, using a rooftop satellite dish for live market data before founding Citadel. He built the firm around quantitative analysis, software and specialist talent, then expanded into electronic market-making through Citadel Securities and civic investment through Griffin Catalyst.</p>\r\n",
+      "action": "fill_missing",
       "confidence": {
         "score": 98,
         "band": "very_high",
-        "reason": "Forbes and first-party Citadel sources support the finance classification, Harvard origin, founding dates and the current scale and role of the two distinct firms."
+        "reason": "The replacement gives a durable account of Griffin's formative trading route, Citadel's analytical model and the later Citadel Securities and Griffin Catalyst chapters."
       },
       "source_ids": [
         "S1",
         "S2",
         "S3",
-        "S4"
+        "S4",
+        "S5"
       ]
     }
   ],
@@ -209,11 +248,11 @@
       "type_id": "5",
       "type": "LinkedIn",
       "url": "https://www.linkedin.com/in/ken-griffin",
-      "verification": "The public profile links its Citadel employment to the official Citadel organization page and matches the official biography on full identity, Miami location, Harvard attendance dates and founder/CEO role; type ID 5 is copied from the current owner input lookup.",
+      "verification": "The profile matches Griffin's full identity, Citadel role, Miami location and Harvard attendance, and links its employment to Citadel's official organisation page.",
       "confidence": {
         "score": 94,
         "band": "high",
-        "reason": "Multiple specific identity facts and the linked Citadel employment record match the first-party Citadel biography, with no conflicting namesake indicators."
+        "reason": "Multiple specific identity facts and the linked Citadel employment record match the first-party biography, with no conflicting namesake indicators."
       },
       "source_ids": [
         "S2",
@@ -224,7 +263,7 @@
       "type_id": "10",
       "type": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Kenneth_C._Griffin",
-      "verification": "The article's full name, birth details, Harvard education, Citadel and Citadel Securities roles and Miami context match first-party and Forbes sources; type ID 10 is copied from the current owner input lookup.",
+      "verification": "The article's full name, birth details, Harvard education, Citadel roles and Miami context match the Forbes and first-party biographies.",
       "confidence": {
         "score": 98,
         "band": "very_high",
@@ -240,7 +279,7 @@
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/ken-griffin/",
-      "verification": "The exact profile matches Griffin's current Citadel role, Harvard trading origin, Citadel Securities relationship, Miami residence and U.S. citizenship; type ID 11 is copied from the current owner input lookup.",
+      "verification": "The exact profile matches Griffin's current Citadel role, Harvard trading origin, Citadel Securities relationship, Miami location and American citizenship.",
       "confidence": {
         "score": 99,
         "band": "very_high",
@@ -254,7 +293,7 @@
       "type_id": "14",
       "type": "Company Website",
       "url": "https://www.citadel.com/who-we-are/leadership/kenneth-c-griffin/",
-      "verification": "Citadel's official leadership page identifies Griffin as founder, CEO and co-chief investment officer; type ID 14 is copied from the current owner input lookup.",
+      "verification": "Citadel's official leadership page identifies Griffin as founder, chief executive and co-chief investment officer.",
       "confidence": {
         "score": 99,
         "band": "very_high",
@@ -273,19 +312,16 @@
       "title": "Ken Griffin",
       "publisher": "Forbes",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
-        "verified Forbes profile",
-        "Citadel founder and CEO role",
+        "Exact identity and verified Forbes profile",
+        "Citadel founder and chief executive role",
         "Harvard dorm-room trading",
-        "1990 Citadel founding",
-        "hedge funds as source of wealth",
-        "self-made status",
-        "Citadel Securities market-making role",
-        "Miami residence",
-        "U.S. citizenship",
-        "current living status"
+        "Citadel Securities founder relationship",
+        "Hedge funds as wealth source",
+        "Self-made wealth origin",
+        "Miami location and American citizenship",
+        "Current living status"
       ]
     },
     {
@@ -294,18 +330,16 @@
       "title": "Kenneth C. Griffin",
       "publisher": "Citadel",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
-        "Citadel founder, CEO and co-chief investment officer roles",
+        "Exact identity",
+        "Citadel founder, chief executive and co-chief investment officer roles",
         "Citadel Securities founder and non-executive chairman role",
-        "Harvard dorm-room investing",
-        "1987 hedge-fund launch",
-        "1990 Citadel founding",
-        "2002 Citadel Securities founding",
-        "quantitative investment approach",
-        "current investment capital",
-        "philanthropy"
+        "Harvard dorm-room investing and early hedge-fund launch",
+        "Quantitative investment approach",
+        "Citadel founding",
+        "Griffin Catalyst civic activity",
+        "Current living status"
       ]
     },
     {
@@ -314,13 +348,14 @@
       "title": "Who We Are",
       "publisher": "Citadel",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "Citadel company history",
+        "Convertible-bond trading at Harvard",
+        "Rooftop satellite dish for live market data",
+        "Frank Meyer backing and the fund that became Citadel",
+        "Citadel's alternative investment-management role",
         "Citadel Securities founding during market electronification",
-        "2008 financial-crisis losses",
-        "subsequent recovery",
-        "separate Citadel strategies"
+        "Citadel and Citadel Securities as separate firms"
       ]
     },
     {
@@ -329,11 +364,11 @@
       "title": "Who We Are",
       "publisher": "Citadel Securities",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "Citadel and Citadel Securities as separate firms",
-        "Citadel as alternative investment manager",
-        "Citadel Securities as market maker and liquidity provider"
+        "Citadel Securities as a global market maker",
+        "Quantitative research and technology model",
+        "Citadel and Citadel Securities as separate financial firms"
       ]
     },
     {
@@ -342,14 +377,13 @@
       "title": "About Griffin Catalyst",
       "publisher": "Griffin Catalyst",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
-        "current living status",
-        "Citadel and Citadel Securities roles",
-        "early interest in computers",
-        "Griffin Catalyst philanthropy",
-        "education, medical and civic activity"
+        "Teenage software business serving educational institutions",
+        "Harvard trading and Frank Meyer-backed Citadel route",
+        "Griffin Catalyst as Ken Griffin's civic initiative",
+        "Education, science and medicine, community, mobility and enterprise priorities",
+        "Current living status"
       ]
     },
     {
@@ -358,13 +392,13 @@
       "title": "Ken Griffin",
       "publisher": "LinkedIn",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "LinkedIn profile URL",
-        "Citadel employment link",
-        "founder and CEO role",
+        "Citadel founder and chief executive role",
         "Miami location",
-        "Harvard attendance dates"
+        "Harvard attendance",
+        "Current living status"
       ]
     },
     {
@@ -373,56 +407,40 @@
       "title": "Kenneth C. Griffin",
       "publisher": "Wikipedia",
       "tier": 3,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "Wikipedia profile URL",
-        "identity corroboration",
-        "birth details",
+        "Full-name and birth-detail orientation",
         "Citadel and Citadel Securities roles",
         "Harvard education",
         "Miami context"
       ]
-    },
-    {
-      "id": "S8",
-      "url": "https://www.yachtbuyer.com/en-gb/fleet/project-defy-479-lurssen",
-      "title": "Project Defy Yacht",
-      "publisher": "YachtBuyer",
-      "tier": 3,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Project Defy identity",
-        "146.2-metre length",
-        "Lurssen builder",
-        "10,500 gross tonnage",
-        "2027 delivery"
-      ]
-    },
-    {
-      "id": "S9",
-      "url": "https://therealdeal.com/miami/2026/07/02/ken-griffin-seeks-helipad-for-miami-beach-megayacht-marina/",
-      "title": "Ken Griffin Seeks Helipad for Miami Beach Megayacht Marina",
-      "publisher": "The Real Deal",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "identity",
-        "Citadel founder role",
-        "Griffin ownership of the 94-metre yacht Defy",
-        "current Miami yacht-marina project"
-      ]
     }
   ],
   "uncertainties": [
-    "The exact Forbes profile is verified, but the live page was access-restricted during direct opening; current indexed profile content was available and matched Citadel's first-party biography.",
-    "The enriched owner record attributes both Defy and Project Defy to Griffin. Current reporting independently connects Griffin to the 94-metre Defy, and YachtBuyer confirms the 146.2-metre Project Defy specification, but no strong public source firmly discloses the larger project's buyer. Project Defy was therefore used only as contextual identity evidence and omitted from both biographies.",
-    "The public LinkedIn profile is a strong exact match and links its Citadel employment record to the company's organization page, but Citadel's own biography does not directly link out to LinkedIn.",
-    "No personal Instagram, X/Twitter, Facebook, YouTube, TikTok or dedicated personal website was identity-verified. Griffin Catalyst is an official philanthropic initiative rather than a personal website and was not proposed as one.",
-    "No second nationality was evidenced. The blank death fields are not filled because current Forbes, Citadel and Griffin Catalyst evidence establishes that Griffin is alive; the existing mortality status is instead proposed for correction from Unknown to Alive.",
-    "Blank suffix, secondary residence, calculated age and unknown-name fields were treated as optional or system fields rather than enrichment targets."
+    {
+      "topic": "Secondary nationality",
+      "detail": "No reliable evidence established a citizenship beyond the American nationality already recorded, so no secondary nationality is proposed."
+    },
+    {
+      "topic": "LinkedIn cross-link",
+      "detail": "The exact LinkedIn profile has a strong multi-field match and links its employment to Citadel's organisation page, although Citadel's own biography does not link back to LinkedIn."
+    },
+    {
+      "topic": "Personal social accounts",
+      "detail": "No personal Instagram, X, Facebook, YouTube, TikTok or dedicated personal website could be identity-verified. Griffin Catalyst is an official civic initiative rather than a personal website."
+    },
+    {
+      "topic": "Blank life-status fields",
+      "detail": "Current Forbes, Citadel, LinkedIn and Griffin Catalyst pages establish that Griffin is alive. The mortality status is proposed for correction, while the blank death fields remain inapplicable."
+    },
+    {
+      "topic": "Other blank fields",
+      "detail": "Name suffix, secondary residence, calculated age and unknown-name fields remain optional, calculated or system-managed rather than enrichment targets."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": "The business identity and wealth classifications are high-confidence. Reviewer attention is requested only for the LinkedIn cross-link standard and the still-undisclosed public ownership of Project Defy."
+    "notes": "The identity, founder route and wealth classifications are strongly evidenced. Griffin Catalyst provides the sourced civic chapter; reviewer attention is limited to the LinkedIn cross-link standard."
   }
 }

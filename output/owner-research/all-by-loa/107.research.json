@@ -1,12 +1,13 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
+  "record_type": "person",
   "owner": {
     "person_id": 107,
     "display_name": "Hamdan bin Zayed bin Sultan Al Nahyan",
     "identity_confidence": {
-      "score": 98,
+      "score": 99,
       "band": "very_high",
-      "reason": "The full name, Al Nahyan lineage, current Al Dhafra role, former federal offices and environmental and humanitarian chairmanships agree across Abu Dhabi government, official institutional and established UAE sources; Forbes and other reporting independently connect the same public figure to Yas."
+      "reason": "The full name, Al Nahyan lineage, Al Dhafra office and environmental and humanitarian chairmanships agree across current Abu Dhabi government, Environment Agency and established UAE sources."
     }
   },
   "input_snapshot": {
@@ -76,24 +77,57 @@
       "16": "TikTok"
     }
   },
+  "biography_brief": {
+    "durable_identity": "Emirati royal and public official serving as the Ruler's Representative in Abu Dhabi's Al Dhafra Region.",
+    "wealth_or_prominence_route": "Royal lineage as a son of UAE founder Sheikh Zayed, political-science and business-administration study, and a progression through federal public service underpin his public prominence.",
+    "turning_point": "Appointment as Ruler's Representative shifted a national career in foreign affairs and federal government towards the administration of Al Dhafra.",
+    "later_chapter": "Long-running chairmanships of the Environment Agency – Abu Dhabi and Emirates Red Crescent connect regional administration with conservation and humanitarian relief.",
+    "character_detail": "His environmental work includes a coral-reef rehabilitation programme, giving the institutional role a concrete scientific and conservation focus.",
+    "excluded_transient_context": [
+      "Current and former vessel ownership",
+      "Current net worth and wealth ranking",
+      "Unverified private or family asset estimates",
+      "State, sovereign and office-held assets",
+      "Energy-sector assumptions based on Abu Dhabi's economy"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "calibration_archetypes": [
+      "royal_public_office"
+    ],
+    "notes": "The biographies move from formation and federal service into regional administration, then use coral rehabilitation and humanitarian leadership as durable, office-appropriate character detail."
+  },
+  "editorial_note": null,
   "research_status": "complete",
   "forbes_profile": {
     "status": "not_found",
     "url": null,
     "confidence": {
-      "score": 96,
+      "score": 97,
       "band": "very_high",
-      "reason": "Focused exact-name and site:forbes.com/profile searches found Forbes yacht reporting that names Sheikh Hamdan but no dedicated matching personal profile."
+      "reason": "Focused exact-name and site:forbes.com/profile searches found no dedicated matching personal profile; similarly named Al Nahyan royals were rejected."
     }
   },
   "primary_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No strong source reviewed identifies a principal privately held wealth-producing sector for Sheikh Hamdan. His documented roles are public, educational, environmental and humanitarian, so state institutions and government activity are not treated as private business assets.",
+    "summary": "No strong public source identifies a principal privately held wealth-producing sector for Sheikh Hamdan. Documented public offices and institutional chairmanships do not establish private ownership of state or office-held assets.",
     "confidence": {
       "score": 95,
       "band": "very_high",
-      "reason": "Official and established sources extensively document his public offices and institutional chairmanships but do not establish a distinct dominant private operating or investment sector."
+      "reason": "Official and established sources extensively document public, environmental and humanitarian roles but do not establish a distinct dominant private operating or investment sector."
     },
     "source_ids": [
       "S1",
@@ -106,43 +140,24 @@
   "wealth_origin": {
     "classification": "dynastic_royal",
     "label": "Dynastic / royal",
-    "summary": "His prominence and any publicly implied access to Al Nahyan family wealth arise principally from royal lineage as a son of UAE founder Sheikh Zayed, together with a career in federal and Abu Dhabi public office rather than an evidenced entrepreneurial fortune.",
+    "summary": "His access to royal-family standing and the public prominence associated with it follow his Al Nahyan lineage as a son of UAE founder Sheikh Zayed.",
     "confidence": {
-      "score": 97,
+      "score": 98,
       "band": "very_high",
-      "reason": "Established UAE reporting directly identifies him as Sheikh Zayed's son, while current government sources document the public-service route through which his standing developed."
+      "reason": "Established UAE reporting directly identifies Sheikh Hamdan as a son of Sheikh Zayed and documents the public-service route that followed."
     },
     "source_ids": [
-      "S1",
-      "S2",
-      "S4"
+      "S1"
     ]
   },
   "wealth_relationship": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Reliable public evidence does not identify Sheikh Hamdan's principal privately owned wealth-producing assets or establish whether his relationship to wider family wealth is beneficial, custodial or operational. Public and state institutions are excluded.",
+    "summary": "Reliable public evidence does not identify Sheikh Hamdan's principal privately owned wealth-producing assets or establish whether his relationship to wider family assets is beneficial, custodial or operational.",
     "confidence": {
       "score": 95,
       "band": "very_high",
-      "reason": "The evidence establishes royal lineage, public office and reported ownership of Yas, but does not transparently separate a principal personal asset base or ownership role from wider family and state holdings."
-    },
-    "source_ids": [
-      "S1",
-      "S2",
-      "S4",
-      "S6",
-      "S7"
-    ]
-  },
-  "biography": {
-    "plain_text": "Sheikh Hamdan bin Zayed Al Nahyan is an Emirati royal and public official serving as the Ruler's Representative in Abu Dhabi's Al Dhafra Region. A son of UAE founder Sheikh Zayed, he previously held federal foreign-affairs and deputy-prime-minister posts and now chairs major environmental, humanitarian and higher-education institutions across Abu Dhabi and the UAE.",
-    "html": "<p>Sheikh Hamdan bin Zayed Al Nahyan is an Emirati royal and public official serving as the Ruler's Representative in Abu Dhabi's Al Dhafra Region. A son of UAE founder Sheikh Zayed, he previously held federal foreign-affairs and deputy-prime-minister posts and now chairs major environmental, humanitarian and higher-education institutions across Abu Dhabi and the UAE.</p>\r\n",
-    "word_count": 54,
-    "confidence": {
-      "score": 96,
-      "band": "very_high",
-      "reason": "Current Abu Dhabi government and institutional sources establish his present roles, while established UAE reporting documents his lineage and federal career."
+      "reason": "The evidence establishes royal lineage and office-held responsibilities but does not transparently separate a principal personal asset base from family, sovereign or state holdings."
     },
     "source_ids": [
       "S1",
@@ -152,24 +167,37 @@
       "S5"
     ]
   },
-  "long_biography": {
-    "plain_text": "Born in Al Ain in 1963, Sheikh Hamdan bin Zayed Al Nahyan is a son of Sheikh Zayed, the UAE's founding president. After degrees in political science and business administration from United Arab Emirates University, he entered federal service, becoming foreign-ministry undersecretary, minister of state for foreign affairs and then deputy prime minister. He was appointed the Abu Dhabi Ruler's Representative in the Western Region in 2009, now known as Al Dhafra.\n\nHis present public work spans regional administration, conservation, humanitarian relief and education. He chairs the Environment Agency - Abu Dhabi, Emirates Red Crescent and Abu Dhabi University's board of trustees, roles that connect environmental policy, aid and higher education. Public reporting also identifies him as owner of Yas, a 141-metre motor yacht created in Abu Dhabi through the extensive conversion of a former Dutch naval frigate.",
-    "html": "<p>Born in Al Ain in 1963, Sheikh Hamdan bin Zayed Al Nahyan is a son of Sheikh Zayed, the UAE's founding president. After degrees in political science and business administration from United Arab Emirates University, he entered federal service, becoming foreign-ministry undersecretary, minister of state for foreign affairs and then deputy prime minister. He was appointed the Abu Dhabi Ruler's Representative in the Western Region in 2009, now known as Al Dhafra.</p>\r\n<p>His present public work spans regional administration, conservation, humanitarian relief and education. He chairs the Environment Agency - Abu Dhabi, Emirates Red Crescent and Abu Dhabi University's board of trustees, roles that connect environmental policy, aid and higher education. Public reporting also identifies him as owner of Yas, a 141-metre motor yacht created in Abu Dhabi through the extensive conversion of a former Dutch naval frigate.</p>\r\n",
-    "word_count": 137,
+  "biography": {
+    "plain_text": "Sheikh Hamdan bin Zayed Al Nahyan is an Emirati royal and public official who serves as the Ruler’s Representative in Abu Dhabi’s Al Dhafra Region. A son of UAE founder Sheikh Zayed, he moved from political-science training into federal service. His later public work joins regional administration with environmental conservation and humanitarian relief.",
+    "html": "<p>Sheikh Hamdan bin Zayed Al Nahyan is an Emirati royal and public official who serves as the Ruler’s Representative in Abu Dhabi’s Al Dhafra Region. A son of UAE founder Sheikh Zayed, he moved from political-science training into federal service. His later public work joins regional administration with environmental conservation and humanitarian relief.</p>\r\n",
+    "word_count": 53,
     "confidence": {
-      "score": 93,
+      "score": 94,
       "band": "high",
-      "reason": "Established UAE reporting supports his birthplace, education and career sequence; current official sources establish his institutional roles, while Forbes and reputable specialist sources support the Yas ownership and conversion context."
+      "reason": "Established UAE reporting supports the lineage, education and federal-service route, while current official sources establish the Al Dhafra, environmental and humanitarian roles."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S5"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Political science and business administration prepared Sheikh Hamdan bin Zayed Al Nahyan for a career in public service. A son of UAE founder Sheikh Zayed, he moved through foreign affairs and federal government before his appointment as Ruler’s Representative in Al Dhafra. The change turned a national career towards the administration of Abu Dhabi’s western region.\n\nConservation and humanitarian relief have become durable themes of his public work. As chairman of the Environment Agency – Abu Dhabi, he launched a coral-reef rehabilitation programme and has overseen environmental regulation and biodiversity policy. He also chairs Emirates Red Crescent, directing relief and community initiatives including support for orphan care. Together, these roles connect a family legacy of public service with practical work across communities and ecosystems.",
+    "html": "<p>Political science and business administration prepared Sheikh Hamdan bin Zayed Al Nahyan for a career in public service. A son of UAE founder Sheikh Zayed, he moved through foreign affairs and federal government before his appointment as Ruler’s Representative in Al Dhafra. The change turned a national career towards the administration of Abu Dhabi’s western region.</p>\r\n<p>Conservation and humanitarian relief have become durable themes of his public work. As chairman of the Environment Agency – Abu Dhabi, he launched a coral-reef rehabilitation programme and has overseen environmental regulation and biodiversity policy. He also chairs Emirates Red Crescent, directing relief and community initiatives including support for orphan care. Together, these roles connect a family legacy of public service with practical work across communities and ecosystems.</p>\r\n",
+    "word_count": 123,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The formation and career sequence are supported by established UAE reporting; current official sources establish his office and chairmanships, the coral project, environmental policy work and humanitarian direction."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
       "S4",
-      "S5",
-      "S6",
-      "S7",
-      "S8"
+      "S5"
     ]
   },
   "proposed_details": [
@@ -184,6 +212,7 @@
       },
       "source_ids": [
         "S2",
+        "S3",
         "S5"
       ]
     },
@@ -194,11 +223,11 @@
       "confidence": {
         "score": 94,
         "band": "high",
-        "reason": "Al Etihad's contemporary appointment profile states that Sheikh Hamdan was born in Al Ain, corroborated by the existing exact Wikipedia identity."
+        "reason": "Al Etihad's appointment profile states that Sheikh Hamdan was born in Al Ain, corroborated by the existing exact-identity Wikipedia profile."
       },
       "source_ids": [
         "S1",
-        "S11"
+        "S8"
       ]
     },
     {
@@ -208,29 +237,11 @@
       "confidence": {
         "score": 94,
         "band": "high",
-        "reason": "Al Etihad's contemporary appointment profile states that Sheikh Hamdan was born in 1963, corroborated by the existing exact Wikipedia identity."
+        "reason": "Al Etihad's appointment profile states that Sheikh Hamdan was born in 1963, corroborated by the existing exact-identity Wikipedia profile."
       },
       "source_ids": [
         "S1",
-        "S11"
-      ]
-    },
-    {
-      "action": "correct_existing",
-      "field": "biography",
-      "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Hamdan_bin_Zayed_bin_Sultan_Al_Nahyan\">Hamdan bin Zayed bin Sultan Al Nahyan</a> is a politician and member of the Emirati royal family. He is the ruler&#39;s representative in Abu Dhabi&#39;s western region, or the territory&#39;s mayor.</p>\r\n",
-      "value": "<p>Sheikh Hamdan bin Zayed Al Nahyan is an Emirati royal and public official serving as the Ruler's Representative in Abu Dhabi's Al Dhafra Region. A son of UAE founder Sheikh Zayed, he previously held federal foreign-affairs and deputy-prime-minister posts and now chairs major environmental, humanitarian and higher-education institutions across Abu Dhabi and the UAE.</p>\r\n",
-      "confidence": {
-        "score": 96,
-        "band": "very_high",
-        "reason": "The replacement corrects the outdated Western Region terminology, removes the imprecise mayor gloss and adds his supported lineage, prior federal service and current institutional work."
-      },
-      "source_ids": [
-        "S1",
-        "S2",
-        "S3",
-        "S4",
-        "S5"
+        "S8"
       ]
     }
   ],
@@ -239,15 +250,15 @@
       "type_id": "3",
       "type": "Twitter",
       "url": "https://x.com/HamdanBinZayed",
-      "verification": "The profile describes itself as the official account of His Highness Sheikh Hamdan bin Zayed Al Nahyan, links to the official Al Dhafra Ruler's Representative Court domain and is independently credited by The National for photographs of Sheikh Hamdan's public activity; type ID 3 is copied from the current owner input lookup.",
+      "verification": "The profile describes itself as the official account of Sheikh Hamdan, links to the Ruler's Representative Court domain and was announced as his official account by Al Etihad; type ID 3 is copied from the current owner input lookup.",
       "confidence": {
         "score": 97,
         "band": "very_high",
-        "reason": "The exact-name account self-identifies as official, links to his government office and is independently attributed to him by an established UAE newspaper."
+        "reason": "The exact-name account self-identifies as official, links to his government office and is independently identified as official by an established UAE newspaper."
       },
       "source_ids": [
-        "S9",
-        "S10"
+        "S6",
+        "S7"
       ]
     }
   ],
@@ -259,128 +270,87 @@
       "title": "Khalifa issues decree appointing Hamdan bin Zayed as Ruler's Representative in the Western Region",
       "publisher": "Al Etihad",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "identity",
         "son of UAE founder Sheikh Zayed",
         "Al Ain birthplace",
         "1963 birth year",
         "United Arab Emirates University education",
-        "foreign-ministry undersecretary role",
-        "minister of state for foreign affairs role",
-        "deputy prime minister role",
-        "2009 Ruler's Representative appointment",
-        "environmental, humanitarian and education chairmanships"
+        "political-science and business-administration study",
+        "foreign-affairs career",
+        "federal government career",
+        "Ruler's Representative appointment",
+        "environmental and humanitarian chairmanships"
       ]
     },
     {
       "id": "S2",
       "url": "https://www.mediaoffice.abudhabi/en/environment/hamdan-bin-zayed-chairs-2nd-environment-agency-abu-dhabi-board-meeting-in-2026/",
-      "title": "Hamdan bin Zayed chairs 2nd Environment Agency - Abu Dhabi board meeting in 2026",
+      "title": "Hamdan bin Zayed chairs 2nd Environment Agency – Abu Dhabi board meeting in 2026",
       "publisher": "Abu Dhabi Media Office",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "identity",
         "current living status",
         "Ruler's Representative in Al Dhafra Region",
-        "current Environment Agency - Abu Dhabi chairmanship",
-        "environmental policy and conservation work"
+        "current Environment Agency – Abu Dhabi chairmanship",
+        "environmental regulation",
+        "biodiversity conservation",
+        "institutional environmental work"
       ]
     },
     {
       "id": "S3",
-      "url": "https://www.mediaoffice.abudhabi/en/education/hamdan-bin-zayed-chairs-1st-abu-dhabi-university-board-of-trustees-meeting-in-2026/",
-      "title": "Hamdan bin Zayed chairs 1st Abu Dhabi University Board of Trustees meeting in 2026",
-      "publisher": "Abu Dhabi Media Office",
+      "url": "https://ead.gov.ae/en/About-Us/Our-Leadership/Leaders/Sheikh-Hamdan-Bin-Zayed",
+      "title": "H.H. Sheikh Hamdan Bin Zayed Al Nahyan",
+      "publisher": "Environment Agency – Abu Dhabi",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "identity",
-        "current Ruler's Representative role",
-        "current Abu Dhabi University board of trustees chairmanship",
-        "higher-education activity"
+        "Ruler's Representative in Al Dhafra Region",
+        "Environment Agency – Abu Dhabi board chairmanship"
       ]
     },
     {
       "id": "S4",
-      "url": "https://www.mediaoffice.abudhabi/en/community/under-the-directives-of-hamdan-bin-zayed-emirates-red-crescent-contributes-aed50m-to-mother-of-the-nation-endowment-for-orphans/",
-      "title": "Under the directives of Hamdan bin Zayed, Emirates Red Crescent contributes AED50m to Mother of the Nation Endowment for Orphans",
+      "url": "https://www.mediaoffice.abudhabi/en/environment/hamdan-bin-zayed-launches-the-largest-coral-reef-rehabilitation-project-in-the-region/",
+      "title": "Hamdan bin Zayed launches the largest coral reef rehabilitation project in the region",
       "publisher": "Abu Dhabi Media Office",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "identity",
-        "current Ruler's Representative role",
-        "current Emirates Red Crescent chairmanship",
-        "humanitarian activity",
-        "Sheikh Zayed legacy context"
+        "Ruler's Representative role",
+        "Environment Agency – Abu Dhabi chairmanship",
+        "launch of coral-reef rehabilitation programme",
+        "marine conservation work"
       ]
     },
     {
       "id": "S5",
-      "url": "https://ead.gov.ae/en/About-Us/Our-Leadership",
-      "title": "Our Leadership",
-      "publisher": "Environment Agency - Abu Dhabi",
+      "url": "https://www.mediaoffice.abudhabi/en/community/under-the-directives-of-hamdan-bin-zayed-emirates-red-crescent-contributes-aed50m-to-mother-of-the-nation-endowment-for-orphans/",
+      "title": "Under the directives of Hamdan bin Zayed, Emirates Red Crescent contributes to Mother of the Nation Endowment for Orphans",
+      "publisher": "Abu Dhabi Media Office",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "identity",
         "Ruler's Representative in Al Dhafra Region",
-        "Environment Agency - Abu Dhabi board chairmanship"
+        "current Emirates Red Crescent chairmanship",
+        "direction of humanitarian work",
+        "support for orphan care"
       ]
     },
     {
       "id": "S6",
-      "url": "https://www.forbes.com/sites/jimdobson/2017/12/28/billionaire-superyacht-celebration-where-the-worlds-largest-yachts-will-be-for-new-years/",
-      "title": "Billionaire Superyacht Celebration: Where The World's Largest Yachts Will Be For New Years",
-      "publisher": "Forbes",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "identity context",
-        "Hamdan bin Zayed ownership attribution for Yas",
-        "Yas approximate 141-metre length",
-        "Western Abu Dhabi public role"
-      ]
-    },
-    {
-      "id": "S7",
-      "url": "https://www.superyachttimes.com/yachts/yas",
-      "title": "Yas Yacht",
-      "publisher": "SuperYacht Times",
-      "tier": 3,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Yas vessel identity",
-        "141-metre length",
-        "5002 gross tonnage",
-        "conversion classification",
-        "former names Al Emarat and Hr. Ms. Piet Heyn"
-      ]
-    },
-    {
-      "id": "S8",
-      "url": "https://www.yachtbuyer.com/en/fleet/yas-462-adm-shipyards",
-      "title": "YAS Yacht - 141m ADM Shipyards 1981",
-      "publisher": "YachtBuyer",
-      "tier": 3,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Yas vessel identity",
-        "141-metre length",
-        "former Dutch naval frigate hull",
-        "conversion at ADM Shipyards in Abu Dhabi",
-        "5002 gross tonnage"
-      ]
-    },
-    {
-      "id": "S9",
       "url": "https://x.com/HamdanBinZayed",
       "title": "Hamdan bin Zayed",
       "publisher": "X",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "official Twitter/X profile URL",
         "identity",
@@ -389,25 +359,25 @@
       ]
     },
     {
-      "id": "S10",
-      "url": "https://www.thenationalnews.com/uae/government/2021/10/26/sheikh-hamdan-bin-zayed-at-barakah-for-emergency-exercise-in-pictures/",
-      "title": "Sheikh Hamdan bin Zayed at Barakah for emergency exercise - in pictures",
-      "publisher": "The National",
+      "id": "S7",
+      "url": "https://www.aletihad.ae/article/77441/2018/%D8%B9%D9%84%D9%8A-%D8%A8%D9%86-%D8%AA%D9%85%D9%8A%D9%85%3A-%D8%AA%D9%88%D9%8A%D8%AA%D8%B1-%D9%8A%D8%B2%D8%AF%D8%A7%D8%AF-%D8%A3%D9%84%D9%82%D8%A7%D9%8B-%D8%A8%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8-%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A-%D9%84%D8%AD%D9%85%D8%AF%D8%A7%D9%86-%D8%A8%D9%86-%D8%B2%D8%A7%D9%8A%D8%AF",
+      "title": "Twitter enriched by Hamdan bin Zayed's official account",
+      "publisher": "Al Etihad",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "identity",
-        "Ruler's Representative in Al Dhafra Region",
-        "independent attribution of public-activity photographs to @HamdanBinZayed"
+        "independent identification of @HamdanBinZayed as the official account",
+        "Ruler's Representative role"
       ]
     },
     {
-      "id": "S11",
+      "id": "S8",
       "url": "https://en.wikipedia.org/wiki/Hamdan_bin_Zayed_bin_Sultan_Al_Nahyan",
       "title": "Hamdan bin Zayed bin Sultan Al Nahyan",
       "publisher": "Wikipedia",
       "tier": 3,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "existing Wikipedia profile URL",
         "identity corroboration",
@@ -420,16 +390,16 @@
     }
   ],
   "uncertainties": [
-    "No dedicated personal Forbes profile was found. Forbes yacht reporting names Sheikh Hamdan and Yas but is an article rather than a profile record.",
-    "No strong public source reviewed itemises a personal fortune or identifies a principal private wealth-producing enterprise for Sheikh Hamdan. Al Nahyan family standing, Abu Dhabi state institutions and sovereign assets were not presented as his private property.",
-    "Forbes and several established outlets attribute Yas to Sheikh Hamdan, while specialist yacht databases confirm the vessel's specifications and conversion history. No ownership registry or owner statement was located, so the attribution is phrased as public reporting rather than legal-title fact.",
+    "No dedicated personal Forbes profile was found in focused current searches.",
+    "No strong public source reviewed itemises a personal fortune or identifies a principal private wealth-producing enterprise. Al Nahyan family standing, Abu Dhabi state institutions, sovereign assets and office-held responsibilities were not treated as Sheikh Hamdan's private property.",
     "The exact 19 February birth date appears in the existing Wikipedia identity but was not independently confirmed by a sufficiently strong source. Only the well-supported 1963 birth year and Al Ain birthplace are proposed.",
     "No evidence of a secondary nationality was found, so the blank was preserved rather than inferred.",
-    "No personal Instagram, LinkedIn, personal website, Facebook, YouTube or TikTok account met the skill's identity-verification threshold. The existing Wikipedia profile was not duplicated.",
+    "A current Instagram account using the same name and handle was discoverable, but no first-party cross-link or two-source identity verification was found. No personal Instagram, LinkedIn, personal website, Facebook, YouTube or TikTok proposal was therefore made.",
+    "The existing Wikipedia profile was retained in the input and used only as corroboration, not as sole support for any proposal.",
     "Blank title, suffix, secondary residence, death, internal-notes and unknown-name fields were treated as optional, inapplicable while alive or system fields rather than enrichment targets."
   ],
   "review": {
     "status": "pending",
-    "notes": "Identity, current office, lineage and institutional work are high-confidence. Industry and wealth relationship remain Unknown because private, family and state assets cannot be reliably separated; reviewer attention is also requested for the public attribution of Yas."
+    "notes": null
   }
 }

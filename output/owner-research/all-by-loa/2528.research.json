@@ -1,12 +1,13 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
+  "record_type": "person",
   "owner": {
     "person_id": 2528,
     "display_name": "Mr Dimitris Procopiou",
     "identity_confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The exact name, Greek identity, Centrofin founder role, brother George Procopiou, Sea Traders history and current tanker-and-bulker context align across the source record, a direct founder interview, Centrofin's official history, Forbes Greece and established shipping reporting."
+      "reason": "The exact name, Greek shipowner identity, Centrofin founder role, brother George Procopiou and Sea Traders history align across a direct founder interview, Centrofin's current official material, Forbes Greece and established shipping sources."
     }
   },
   "input_snapshot": {
@@ -81,25 +82,59 @@
     }
   },
   "research_status": "limited",
+  "biography_brief": {
+    "durable_identity": "Dimitris Procopiou is a Greek commercial shipowner and the founder of Centrofin Management.",
+    "wealth_or_prominence_route": "He entered shipping through Sea Traders with his brother George, helped expand their jointly built fleet and formed Centrofin after the brothers separated their business interests.",
+    "turning_point": "The division of the brothers' fleet gave Dimitris an independent operating base from which to develop Centrofin.",
+    "later_chapter": "Centrofin has combined tanker and dry-bulk operation with strategic purchases during market disruption and selective investment in modern tonnage.",
+    "character_detail": "Procopiou's public comments emphasise repair planning, technical quality and timely delivery, while his acquisitions show similar attention to market timing.",
+    "excluded_transient_context": [
+      "Current asset holdings and cohort position",
+      "Current fleet rankings, valuations, vessel counts and transaction prices",
+      "Personal leisure assets and unverified social profiles"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "calibration_archetypes": [
+      "maritime_professional"
+    ],
+    "notes": "The profile opens with the business partnership, treats the fleet division as the decisive turn and follows Centrofin through market dislocation and renewal. The structure and phrasing are independent of the calibration entry."
+  },
+  "editorial_note": null,
   "forbes_profile": {
     "status": "not_found",
     "url": null,
     "confidence": {
-      "score": 98,
+      "score": 99,
       "band": "very_high",
-      "reason": "Focused exact-name, spelling-variant and site:forbes.com/profile searches found a Forbes Greece fleet-ranking article about Procopiou but no dedicated matching Forbes person profile."
+      "reason": "Focused exact-name, spelling-variant and site:forbes.com/profile searches found current Forbes Greece coverage of Procopiou but no dedicated matching Forbes person profile."
     }
   },
   "primary_industry": {
     "classification": "shipping_maritime",
     "label": "Shipping & Maritime",
-    "summary": "Procopiou's identifiable wealth is rooted in ownership and operation of commercial tanker and dry-bulk fleets, first with Sea Traders and later through Centrofin Management.",
+    "summary": "Procopiou's identifiable wealth is rooted in ownership and operation of commercial tanker and dry-bulk fleets, first through Sea Traders and later through Centrofin.",
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "Centrofin's official history documents a 50-year maritime tradition, tanker and dry-bulk operations and a current 44-ship fleet, while Forbes Greece and shipping sources directly identify Procopiou as its founder and shipowner."
+      "reason": "Centrofin's current official material documents a five-decade oil-tanker and dry-bulk operating history, while Forbes Greece and shipping sources identify Procopiou as the shipowner and founder behind the group."
     },
     "source_ids": [
+      "S1",
       "S2",
       "S3",
       "S4",
@@ -111,62 +146,63 @@
   "wealth_origin": {
     "classification": "self_made",
     "label": "Self-made",
-    "summary": "He co-founded Sea Traders with his brother, helped build a 30-vessel debt-free fleet, received half when the brothers divided their jointly built holdings and then established Centrofin.",
+    "summary": "He co-founded Sea Traders, helped build its commercial fleet and received a share of those jointly created holdings before establishing Centrofin.",
     "confidence": {
       "score": 94,
       "band": "high",
-      "reason": "Forbes Greece and Capital Link document the brothers' 1974 co-founding, fleet-building and equal 1988 division before Dimitris founded Centrofin. Although the family had a real-estate background, no source reviewed says he inherited the core shipping assets."
+      "reason": "Forbes Greece and Capital Link document the brothers' co-founding, fleet-building and later division before Dimitris established Centrofin. A family real-estate background is reported, but no source reviewed establishes inherited core shipping assets."
     },
     "source_ids": [
+      "S1",
       "S2",
-      "S3",
-      "S5"
+      "S6"
     ]
   },
   "wealth_relationship": {
     "classification": "founder",
     "label": "Founder",
-    "summary": "Procopiou founded Centrofin Management after separating his shipping interests from those of his brother and remains the figure to whom current reporting attributes the group.",
+    "summary": "Procopiou founded Centrofin after separating his shipping interests from his brother's and remains publicly identified as the figure leading the group.",
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "A direct published interview labels him Founder of Centrofin Management, Forbes Greece describes the same founding sequence and current established reporting continues to call Centrofin Dimitris Procopiou-led."
+      "reason": "A direct published interview identifies him as Centrofin's founder, while current Forbes Greece and shipping reporting continue to connect him directly with the company."
     },
     "source_ids": [
+      "S1",
       "S2",
-      "S4",
-      "S6",
+      "S5",
       "S7"
     ]
   },
   "biography": {
-    "plain_text": "Dimitris Procopiou is a Greek shipowner who co-founded Sea Traders with his brother George in 1974. After the brothers built a 30-vessel, debt-free fleet and divided it in 1988, he founded Centrofin Management. His self-made fortune remains rooted in the family-run group's tanker and dry-bulk shipping operations and continuing fleet investment.",
-    "html": "<p>Dimitris Procopiou is a Greek shipowner who co-founded Sea Traders with his brother George in 1974. After the brothers built a 30-vessel, debt-free fleet and divided it in 1988, he founded Centrofin Management. His self-made fortune remains rooted in the family-run group's tanker and dry-bulk shipping operations and continuing fleet investment.</p>\r\n",
+    "plain_text": "Greek shipowner Dimitris Procopiou began with Sea Traders, the business he established with his brother George. Their fleet grew before they divided the partnership, leaving Dimitris to form Centrofin. Through tanker and dry-bulk operations, he developed a counter-cyclical strategy of buying during market dislocation and renewing the fleet as conditions changed.",
+    "html": "<p>Greek shipowner Dimitris Procopiou began with Sea Traders, the business he established with his brother George. Their fleet grew before they divided the partnership, leaving Dimitris to form Centrofin. Through tanker and dry-bulk operations, he developed a counter-cyclical strategy of buying during market dislocation and renewing the fleet as conditions changed.</p>\r\n",
     "word_count": 51,
     "confidence": {
       "score": 96,
       "band": "very_high",
-      "reason": "Forbes Greece, Capital Link and Centrofin's official history support the co-founding, fleet-building, split and present operating sectors; the self-made wording is a high-confidence classification rather than an inherited-assets claim."
+      "reason": "Forbes Greece and Capital Link support the Sea Traders partnership and division, while Centrofin's official material and current shipping coverage support the operating sectors, post-crisis purchasing and fleet renewal."
     },
     "source_ids": [
+      "S1",
       "S2",
       "S3",
       "S4",
-      "S5",
       "S6",
       "S7"
     ]
   },
   "long_biography": {
-    "plain_text": "Dimitris Procopiou entered commercial shipping with his brother George in 1974, when they co-founded Sea Traders. The brothers expanded from an early bulker into tankers and heavy-lift vessels, and by 1988 controlled 30 debt-free ships. They then divided the fleet equally for family reasons. Dimitris took 15 vessels and later established Centrofin Management, making his shipping fortune self-made rather than inherited.\n\nCentrofin became a private, family-run maritime group operating crude-oil tankers, product carriers and dry-bulk vessels through technical managers Marine Trust and Trust Bulkers. Its official website reports more than 100 vessels operated since 1992 and a current fleet of 44 ships exceeding five million deadweight tonnes. A direct industry interview identifies Procopiou as Centrofin's founder, while recent reporting continues to connect the company with him and with major tanker acquisitions and Kamsarmax newbuildings.",
-    "html": "<p>Dimitris Procopiou entered commercial shipping with his brother George in 1974, when they co-founded Sea Traders. The brothers expanded from an early bulker into tankers and heavy-lift vessels, and by 1988 controlled 30 debt-free ships. They then divided the fleet equally for family reasons. Dimitris took 15 vessels and later established Centrofin Management, making his shipping fortune self-made rather than inherited.</p>\r\n<p>Centrofin became a private, family-run maritime group operating crude-oil tankers, product carriers and dry-bulk vessels through technical managers Marine Trust and Trust Bulkers. Its official website reports more than 100 vessels operated since 1992 and a current fleet of 44 ships exceeding five million deadweight tonnes. A direct industry interview identifies Procopiou as Centrofin's founder, while recent reporting continues to connect the company with him and with major tanker acquisitions and Kamsarmax newbuildings.</p>\r\n",
-    "word_count": 134,
+    "plain_text": "Dimitris Procopiou's shipping career began as a partnership. He and his brother George established Sea Traders in 1974, expanding from an early bulk carrier into a mixed commercial fleet. When they separated their interests in the late 1980s, Dimitris took his share of the vessels and formed Centrofin as an independent family group.\n\nCentrofin has since operated tankers and bulk carriers through specialist technical-management companies. Procopiou's approach has combined vessel operation with patient timing: after the global financial crisis, he acquired ships from failed German investment funds and later renewed the fleet with modern tonnage. This pattern of opportunistic purchasing, technical upkeep and selective renewal has kept the business active through repeated freight and asset-price cycles.",
+    "html": "<p>Dimitris Procopiou's shipping career began as a partnership. He and his brother George established Sea Traders in 1974, expanding from an early bulk carrier into a mixed commercial fleet. When they separated their interests in the late 1980s, Dimitris took his share of the vessels and formed Centrofin as an independent family group.</p>\r\n<p>Centrofin has since operated tankers and bulk carriers through specialist technical-management companies. Procopiou's approach has combined vessel operation with patient timing: after the global financial crisis, he acquired ships from failed German investment funds and later renewed the fleet with modern tonnage. This pattern of opportunistic purchasing, technical upkeep and selective renewal has kept the business active through repeated freight and asset-price cycles.</p>\r\n",
+    "word_count": 116,
     "confidence": {
       "score": 95,
       "band": "very_high",
-      "reason": "The business chronology is corroborated by Forbes Greece, Capital Link and the official Centrofin history; the founder title is direct, and current fleet activity is supported by established maritime reporting."
+      "reason": "The partnership and separation chronology is corroborated by Forbes Greece and Capital Link; Centrofin and a direct interview establish the operating model and technical discipline; current coverage supports post-crisis acquisition and renewal strategy."
     },
     "source_ids": [
+      "S1",
       "S2",
       "S3",
       "S4",
@@ -177,33 +213,33 @@
   },
   "proposed_details": [
     {
-      "action": "fill_missing",
       "field": "known_for_title",
+      "action": "fill_missing",
       "value": "Founder of Centrofin Management",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "A direct published interview identifies Dimitris I. Procopiou with this exact founder role, independently corroborated by Forbes Greece."
+        "reason": "A direct published interview identifies Dimitris I. Procopiou with this exact founder role, independently corroborated by current Forbes Greece coverage."
       },
       "source_ids": [
-        "S2",
-        "S4"
+        "S1",
+        "S5"
       ]
     },
     {
-      "action": "fill_missing",
       "field": "biography",
-      "value": "<p>Dimitris Procopiou is a Greek shipowner who co-founded Sea Traders with his brother George in 1974. After the brothers built a 30-vessel, debt-free fleet and divided it in 1988, he founded Centrofin Management. His self-made fortune remains rooted in the family-run group's tanker and dry-bulk shipping operations and continuing fleet investment.</p>\r\n",
+      "action": "fill_missing",
+      "value": "<p>Greek shipowner Dimitris Procopiou began with Sea Traders, the business he established with his brother George. Their fleet grew before they divided the partnership, leaving Dimitris to form Centrofin. Through tanker and dry-bulk operations, he developed a counter-cyclical strategy of buying during market dislocation and renewing the fleet as conditions changed.</p>\r\n",
       "confidence": {
         "score": 96,
         "band": "very_high",
-        "reason": "The replacement uses only corroborated founder, fleet-history and operating-sector facts and avoids the disputed yacht attributions."
+        "reason": "The source biography is blank, and the replacement supplies a durable commercial-shipping account of the partnership, separation, operating sectors and market-cycle strategy."
       },
       "source_ids": [
+        "S1",
         "S2",
         "S3",
         "S4",
-        "S5",
         "S6",
         "S7"
       ]
@@ -214,16 +250,16 @@
       "type_id": "14",
       "type": "Company Website",
       "url": "https://www.centrofin.gr/about/",
-      "verification": "Centrofin's official About page describes the family-founded private maritime group, its 1974 roots, 1992 establishment and current tanker-and-bulker fleet. Forbes Greece and a direct interview independently identify Dimitris Procopiou as its founder. Type ID 14 is copied from the owner input lookup.",
+      "verification": "Centrofin's official About page describes the family-founded private maritime group and its oil-tanker and dry-bulk operations. A direct interview and current Forbes Greece coverage independently identify Dimitris Procopiou as founder and leader. Type ID 14 is copied from the owner input lookup.",
       "confidence": {
-        "score": 99,
+        "score": 100,
         "band": "very_high",
-        "reason": "This is the official website of the company Procopiou founded, and the founder relationship is established by Tier 1 and Tier 2 sources."
+        "reason": "This is the current official site of the company Procopiou founded, and his relationship to it is established by direct and independent sources."
       },
       "source_ids": [
-        "S2",
+        "S1",
         "S3",
-        "S4"
+        "S5"
       ]
     }
   ],
@@ -231,35 +267,37 @@
   "sources": [
     {
       "id": "S1",
-      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=2528",
-      "title": "Mr Dimitris Procopiou owner record, person ID 2528",
-      "publisher": "Superyacht Network",
-      "tier": 1,
-      "accessed_at": "2026-07-27",
+      "url": "https://forbesgreece.gr/shipping/3995933/oi-50-korufaioi-ellines-efoplistes---lista-forbes-2026",
+      "title": "The 50 Top Greek Shipowners: Forbes 2026 List",
+      "publisher": "Forbes Greece",
+      "tier": 2,
+      "accessed_at": "2026-07-28",
       "supports": [
-        "source-record identity",
-        "Greek nationality and residence values",
-        "Navtilvs relationship recorded from 2017",
-        "Monokini relationship recorded from June 2024",
-        "absence of biography and social profiles"
+        "exact identity and Prokopiou spelling variant",
+        "Centrofin leadership",
+        "career beginning with brother George at Sea Traders",
+        "separate business paths from the late 1980s",
+        "tanker and gas-carrier operations",
+        "systematic investment in modern tonnage",
+        "strategic acquisitions after the global financial crisis"
       ]
     },
     {
       "id": "S2",
       "url": "https://www.forbesgreece.gr/forbes-elliniki-ekdosi/3928810/oi-korufaioi-ellines-efoplistes---lista-forbes-2025",
-      "title": "The Top Greek Shipowners - Forbes 2025 List",
+      "title": "The Top Greek Shipowners: Forbes 2025 List",
       "publisher": "Forbes Greece",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "exact identity and Prokopiou spelling variant",
         "brother George Procopiou",
         "1974 co-founding of Sea Traders",
-        "30 debt-free ships by 1988",
-        "equal 15-vessel division",
+        "joint fleet-building",
+        "late-1980s equal division of the fleet",
         "subsequent founding of Centrofin",
         "family real-estate background",
-        "43-vessel fleet ranking in 2025"
+        "purchases from failed German investment funds after the financial crisis"
       ]
     },
     {
@@ -268,123 +306,90 @@
       "title": "About",
       "publisher": "Centrofin Management",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "official company website",
+        "five-decade maritime operating history",
         "original ship-operating group established in 1974",
-        "Centrofin established in 1992",
+        "Centrofin establishment in 1992",
         "private family-run maritime group",
-        "tanker and dry-bulk operating sectors",
-        "more than 100 vessels operated since 1992",
-        "current 44-vessel fleet exceeding five million deadweight tonnes",
+        "crude-oil tanker, product-carrier and dry-bulk operations",
         "Marine Trust and Trust Bulkers technical-management roles"
       ]
     },
     {
       "id": "S4",
-      "url": "https://www.besiktasshipyard.com/wp-content/uploads/2022/11/news2021.pdf",
-      "title": "Location, quality and commitment makes Besiktas great choice",
-      "publisher": "Besiktas Shipyard",
+      "url": "https://www.centrofin.gr/",
+      "title": "Centrofin Management",
+      "publisher": "Centrofin Management",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "Dimitris I. Procopiou identity",
-        "Founder of Centrofin Management title",
-        "direct interview",
-        "operational focus on repair quality, location and timely delivery"
+        "current activity in oil-tanker and dry-bulk markets",
+        "long commercial-shipping history",
+        "newbuilding experience",
+        "official company domain"
       ]
     },
     {
       "id": "S5",
-      "url": "https://forums.capitallink.com/shipping/2020greece/journal.pdf",
-      "title": "George Procopiou",
-      "publisher": "Capital Link",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
+      "url": "https://www.besiktasshipyard.com/wp-content/uploads/2022/11/news2021.pdf",
+      "title": "Location, quality and commitment makes Besiktas great choice",
+      "publisher": "Besiktas Shipyard",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
       "supports": [
-        "1974 Sea Traders founding",
-        "first company vessel operated with brother Dimitris",
-        "1980s heavy-lift expansion",
-        "1983 VLCC acquisition",
-        "30 debt-free vessels by 1988",
-        "equal split into 15-vessel holdings",
-        "Dimitris Procopiou establishment of Centrofin"
+        "Dimitris I. Procopiou identity",
+        "Founder of Centrofin Management title",
+        "direct interview",
+        "focus on repair planning, technical quality, efficiency and timely completion"
       ]
     },
     {
       "id": "S6",
-      "url": "https://www.rivieramm.com/lead-stories-brand/hayfin-swoops-on-enesels-capesize-trio-marking-lemos-familys-dry-bulk-exit-85970",
-      "title": "Hayfin swoops on Enesel's Capesize trio, marking Lemos family's dry bulk exit",
-      "publisher": "Riviera Maritime Media",
+      "url": "https://forums.capitallink.com/shipping/2020greece/journal.pdf",
+      "title": "George Procopiou",
+      "publisher": "Capital Link",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "current Dimitris Procopiou-led description",
-        "Centrofin tanker activity",
-        "reported acquisition of two 2023-built Aframax/LR2 tankers for US$143 million"
+        "1974 Sea Traders founding",
+        "first company vessel operated with brother Dimitris",
+        "mixed dry-bulk, tanker and heavy-lift expansion",
+        "joint fleet-building before the late-1980s division",
+        "equal division into separate holdings",
+        "Dimitris Procopiou establishment of Centrofin"
       ]
     },
     {
       "id": "S7",
-      "url": "https://www.xindemarinenews.com/china/60891.html",
-      "title": "Hengli wins another dry-bulk order from Greek shipowner",
-      "publisher": "Xinde Marine News",
-      "tier": 3,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Dimitris Procopiou and George Procopiou identity distinction",
-        "Centrofin family ownership",
-        "1974 shipping-business origin",
-        "1992 independent Centrofin establishment",
-        "44-vessel operating fleet",
-        "eight-vessel Kamsarmax newbuilding programme",
-        "current tanker and dry-bulk reinvestment"
-      ]
-    },
-    {
-      "id": "S8",
-      "url": "https://www.boatinternational.com/yachts/the-register/top-20-classic-yachts--25051",
-      "title": "Top 10 largest classic superyachts in the world",
-      "publisher": "BOAT International",
+      "url": "https://www.rivieramm.com/news-content-hub/greek-owner-centrofin-snaps-up-newbuild-mr-tanker-in-resale-market-move-89168",
+      "title": "Greek owner Centrofin snaps up newbuild MR tanker in resale market move",
+      "publisher": "Riviera Maritime Media",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "Navtilvs identity and 115.76-metre length",
-        "1973 Hellenic Shipyards construction",
-        "current Saudi Arabian owner attribution conflicting with the source record"
-      ]
-    },
-    {
-      "id": "S9",
-      "url": "https://www.superyacht24.it/en/2024/06/19/venduto-monokini-un-baglietto-di-44-metri/",
-      "title": "Monokini, a 44-meter Baglietto yacht, sold",
-      "publisher": "SuperYacht24",
-      "tier": 3,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Monokini identity",
-        "June 2024 sale",
-        "Baglietto builder and 2013 delivery",
-        "44-metre length",
-        "undisclosed buyer in public sale reporting"
+        "current Dimitris Procopiou-led description",
+        "continued tanker operations",
+        "combination of newbuilding investment and resale-market purchases",
+        "ongoing fleet renewal and expansion"
       ]
     }
   ],
   "uncertainties": [
-    "Self-made is used because Dimitris co-founded Sea Traders, helped build the 30-vessel debt-free fleet and received half of jointly created holdings before founding Centrofin. Forbes Greece notes a family tradition in real estate, but no reliable source reviewed says he inherited the core shipping assets.",
-    "Centrofin's official history dates the company to 1992, while Forbes Greece and Capital Link describe the brothers' fleet division in 1988 and then say Dimitris founded Centrofin. The biography preserves the sequence without assigning Centrofin an unsupported exact founding year.",
-    "Dimitris Procopiou is distinct from his better-publicised brother George Procopiou, founder of Dynacom, Dynagas and Sea Traders, and from unrelated exact or near-name matches including a Cypriot basketball player and a Greek author. Identity claims were accepted only where the Centrofin and brother context aligned.",
-    "The direct interview prints the name as Dimitris I. Procopiou, but no strong source reviewed expands the initial. The middle-name field remains blank rather than proposing an unexplained initial.",
+    "Self-made is used because Dimitris co-founded Sea Traders, helped build its commercial fleet and received a share of jointly created holdings before founding Centrofin. Forbes Greece notes a family real-estate background, but no source reviewed establishes inherited core shipping assets.",
+    "Centrofin's official history dates the company to 1992, while Forbes Greece and Capital Link describe the brothers' fleet division in the late 1980s and then say Dimitris founded Centrofin. The biographies preserve the sequence without assigning Centrofin an exact founding year.",
+    "Dimitris Procopiou is distinct from his better-publicised brother George Procopiou, founder of Dynacom, Dynagas and the continuing Sea Traders business. Identity claims were accepted only where the Centrofin and brother context aligned.",
+    "The direct interview prints the name as Dimitris I. Procopiou, but no strong source reviewed expands the initial. The middle-name field remains blank.",
     "Procopiou and Prokopiou are spelling variants used by reputable sources for the same Centrofin founder. The source record's Procopiou spelling is preserved.",
-    "The source record links Procopiou to Navtilvs from 2017, but BOAT International currently describes Navtilvs as Saudi-owned. This unresolved conflict prevents using Navtilvs as a verified personal ownership fact.",
-    "The source record links Procopiou to Monokini from June 2024, the month public reporting says the yacht was sold, but the buyer was not disclosed. That timing is consistent with a possible acquisition but does not independently verify it, so Monokini is omitted from both biographies.",
     "No strong source reviewed establishes a birth date, birthplace or second nationality. Those researchable blanks remain unfilled.",
-    "No identity-verified personal LinkedIn, Instagram, Facebook, X, YouTube, TikTok account, personal website or Wikipedia page met the verification threshold. The official Centrofin page is proposed only under Company Website.",
-    "No dedicated Forbes person profile was found. The Forbes Greece fleet-ranking article is an editorial article and is not proposed as a Forbes-profile social link.",
+    "No identity-verified personal LinkedIn, Instagram, Facebook, X, YouTube, TikTok account, personal website or Wikipedia page met the verification threshold. The official Centrofin page is proposed only as a Company Website.",
+    "No dedicated Forbes person profile was found. Forbes Greece's shipping lists are editorial articles and were not proposed as a Forbes-profile social link.",
+    "Current fleet counts, valuations and transaction prices were excluded as transient. The biographies retain only the durable operating sectors, post-crisis acquisition pattern and continuing renewal strategy.",
     "Blank suffix and secondary-residence fields were treated as optional; blank age, death, internal-note and unknown-name fields remain inapplicable or system-managed."
   ],
   "review": {
     "status": "pending",
-    "notes": "Review the Self-made classification against the documented family real-estate background, and do not approve either yacht relationship without stronger ownership evidence resolving the Navtilvs conflict and Monokini's undisclosed 2024 buyer."
+    "notes": "Retain Shipping & Maritime, Self-made and Founder as separate classifications. Review the self-made conclusion against the reported family real-estate background; preserve the unresolved initial and spelling variants."
   }
 }

@@ -1,12 +1,13 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
+  "record_type": "person",
   "owner": {
     "person_id": 3089,
     "display_name": "Mr Roger Samuelsson",
     "identity_confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The current Forbes profile uniquely joins Samuelsson's Swedish identity, SHL Medical founding role, Swiss residence and ownership of Octopus; official SHL history independently confirms the founder and company chronology."
+      "reason": "The exact current Forbes profile and official SHL Medical history uniquely match Samuelsson's Swedish identity, founding role, medical-device business and continuing majority ownership."
     }
   },
   "input_snapshot": {
@@ -75,53 +76,88 @@
     }
   },
   "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Swedish founder and majority owner of SHL Medical, a medical-device company specialising in self-injection systems.",
+    "wealth_or_prominence_route": "Curiosity about the Taiwanese manufacture of his boxing gloves led to cross-border trading, relocation to Taiwan and the company that became SHL Medical.",
+    "turning_point": "An early injector contract redirected the trading business towards drug-delivery devices and ultimately autoinjectors.",
+    "later_chapter": "He invested in automated manufacturing, later handed over executive leadership and retained majority ownership.",
+    "character_detail": "His route joined practical supply-chain curiosity with long-term control of a specialised manufacturing business.",
+    "excluded_transient_context": [
+      "Current asset relationships",
+      "Rankings and net-worth estimates",
+      "Current ownership percentages",
+      "Current production, employee and market-share figures"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "calibration_archetypes": [
+      "sparse_public_record"
+    ],
+    "notes": "The rewrite begins with the supply-chain curiosity and follows the business pivot, manufacturing method and ownership transition without reproducing the calibration's wording or rhythm."
+  },
+  "editorial_note": null,
   "forbes_profile": {
     "status": "verified",
     "url": "https://www.forbes.com/profile/roger-samuelsson/",
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "Forbes's current dedicated profile matches the Swedish SHL Medical founder and majority owner, his residence in Oberägeri, Switzerland, and his ownership of Octopus."
+      "reason": "The dedicated Forbes profile was updated in 2026 and exactly matches the Swedish SHL Medical founder and majority owner."
     }
   },
   "primary_industry": {
     "classification": "healthcare",
     "label": "Healthcare",
-    "summary": "Samuelsson's fortune derives from SHL Medical, a global medical-device company that develops and manufactures drug-delivery systems, particularly autoinjectors used for patient self-administration.",
+    "summary": "Samuelsson's principal private wealth comes from SHL Medical, which designs and manufactures autoinjectors and other drug-delivery devices.",
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "Forbes identifies drug-delivery devices as his source of wealth, while SHL's official history and EQT describe its core autoinjector and drug-delivery business."
+      "reason": "Current Forbes and first-party company sources consistently identify SHL Medical's healthcare-device business as the basis of his ownership and wealth."
     },
     "source_ids": [
       "S1",
       "S3",
-      "S7"
+      "S5",
+      "S6"
     ]
   },
   "wealth_origin": {
     "classification": "self_made",
     "label": "Self-made",
-    "summary": "He built the principal fortune by co-founding SHL in Taiwan, developing its injection-device business and retaining majority ownership as the company became a major autoinjector supplier.",
+    "summary": "He built the core fortune by turning a Taiwan trading venture into the drug-delivery manufacturer SHL Medical.",
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "Forbes explicitly classifies Samuelsson as self-made and documents the progression from his Taiwan trading activity to co-founding and building SHL Medical; official company history corroborates the founding."
+      "reason": "Forbes explicitly records self-made wealth and traces the company from his early trading activity to the medical-device business corroborated by SHL."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S3"
+      "S3",
+      "S4"
     ]
   },
   "wealth_relationship": {
     "classification": "founder",
     "label": "Founder",
-    "summary": "Samuelsson co-founded the business that became SHL Medical and remains its majority shareholder, although he handed day-to-day executive leadership to Ulrich Fässler in 2018.",
+    "summary": "Samuelsson co-founded SHL Medical, led its development and remains the majority shareholder after handing over day-to-day executive management.",
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "Current Forbes and official SHL sources consistently identify Samuelsson as the company's founder, and Forbes reports his continuing controlling stake."
+      "reason": "Forbes, SHL Medical and EQT independently identify his founder role and continuing majority ownership."
     },
     "source_ids": [
       "S1",
@@ -131,29 +167,13 @@
     ]
   },
   "biography": {
-    "plain_text": "Roger Samuelsson is a Swedish entrepreneur who built his fortune in medical-device manufacturing. After trading goods from Taiwan, he co-founded SHL Medical in 1989 and turned an early injector contract into a global autoinjector business. He later stepped back from day-to-day management but remains the company's founder and majority owner.",
-    "html": "<p>Roger Samuelsson is a Swedish entrepreneur who built his fortune in medical-device manufacturing. After trading goods from Taiwan, he co-founded SHL Medical in 1989 and turned an early injector contract into a global autoinjector business. He later stepped back from day-to-day management but remains the company's founder and majority owner.</p>\r\n",
-    "word_count": 50,
+    "plain_text": "Curiosity about where his boxing gloves were made drew Swedish engineering student Roger Samuelsson to Taiwan and into cross-border trade. He later co-founded SHL Medical and shifted the business towards autoinjectors after an early pharmaceutical contract. Automation became central to its manufacturing, while Samuelsson eventually left daily management and retained majority ownership.",
+    "html": "<p>Curiosity about where his boxing gloves were made drew Swedish engineering student Roger Samuelsson to Taiwan and into cross-border trade. He later co-founded SHL Medical and shifted the business towards autoinjectors after an early pharmaceutical contract. Automation became central to its manufacturing, while Samuelsson eventually left daily management and retained majority ownership.</p>\r\n",
+    "word_count": 52,
     "confidence": {
-      "score": 99,
+      "score": 98,
       "band": "very_high",
-      "reason": "Forbes and official SHL sources support his nationality, early trading activity, 1989 founding, injector-business development, leadership transition and continuing majority ownership."
-    },
-    "source_ids": [
-      "S1",
-      "S2",
-      "S3",
-      "S5"
-    ]
-  },
-  "long_biography": {
-    "plain_text": "Roger Samuelsson grew up in Sweden, studied engineering in Linköping and first visited Taiwan after noticing where his boxing gloves were made. He began exporting local goods to Sweden, moved to Taiwan and co-founded Scandinavian Health Limited in 1989. An injector contract with Upjohn became the company's breakthrough; Samuelsson later bought out his partner and focused the business on autoinjectors.\n\nSHL Medical combined device design with automated manufacturing, helping medicines move from clinics into patients' homes. Samuelsson remained chief executive until 2018, when Ulrich Fässler took over, and he continues as majority shareholder rather than day-to-day operator. The company is now based in Switzerland and supplies leading pharmaceutical groups. Its expansion from a Taiwan trading venture to a global drug-delivery manufacturer is the principal source of Samuelsson's wealth.",
-    "html": "<p>Roger Samuelsson grew up in Sweden, studied engineering in Linköping and first visited Taiwan after noticing where his boxing gloves were made. He began exporting local goods to Sweden, moved to Taiwan and co-founded Scandinavian Health Limited in 1989. An injector contract with Upjohn became the company's breakthrough; Samuelsson later bought out his partner and focused the business on autoinjectors.</p>\r\n<p>SHL Medical combined device design with automated manufacturing, helping medicines move from clinics into patients' homes. Samuelsson remained chief executive until 2018, when Ulrich Fässler took over, and he continues as majority shareholder rather than day-to-day operator. The company is now based in Switzerland and supplies leading pharmaceutical groups. Its expansion from a Taiwan trading venture to a global drug-delivery manufacturer is the principal source of Samuelsson's wealth.</p>\r\n",
-    "word_count": 128,
-    "confidence": {
-      "score": 97,
-      "band": "very_high",
-      "reason": "Forbes's detailed feature supplies the early-life and company-development narrative, while official SHL sources corroborate the founding, injection-device focus and executive succession."
+      "reason": "Forbes supplies the formative trading, injector pivot, automation and leadership-transition narrative, with SHL and EQT corroborating the company history and retained ownership."
     },
     "source_ids": [
       "S1",
@@ -161,7 +181,25 @@
       "S3",
       "S4",
       "S5",
-      "S7"
+      "S6"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Roger Samuelsson reached Taiwan by following the supply chain of his boxing equipment. While studying engineering in Sweden, he noticed where his gloves were made, visited the island and began exporting local products. He later settled there and co-founded the trading business that became SHL Medical. A contract to build injectors for Upjohn redirected the company towards drug delivery.\n\nSamuelsson then concentrated on autoinjectors and invested early in machinery that could automate production. Combining device design with in-house manufacturing enabled SHL to scale self-injection systems. He handed executive leadership to Ulrich Fässler but kept a majority stake, preserving founder ownership after withdrawing from day-to-day operations.",
+    "html": "<p>Roger Samuelsson reached Taiwan by following the supply chain of his boxing equipment. While studying engineering in Sweden, he noticed where his gloves were made, visited the island and began exporting local products. He later settled there and co-founded the trading business that became SHL Medical. A contract to build injectors for Upjohn redirected the company towards drug delivery.</p>\r\n<p>Samuelsson then concentrated on autoinjectors and invested early in machinery that could automate production. Combining device design with in-house manufacturing enabled SHL to scale self-injection systems. He handed executive leadership to Ulrich Fässler but kept a majority stake, preserving founder ownership after withdrawing from day-to-day operations.</p>\r\n",
+    "word_count": 105,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "The detailed Forbes feature supports every stage of the narrative, while SHL and EQT first-party sources corroborate the trading origin, device focus, automation and retained majority ownership."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
     ]
   },
   "proposed_details": [
@@ -172,11 +210,12 @@
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "Current Forbes reporting identifies Samuelsson as SHL Medical's founder and 68-percent owner, and SHL's official history confirms the founding role."
+        "reason": "Current Forbes, SHL Medical and EQT sources agree on the founder and majority-owner roles."
       },
       "source_ids": [
         "S1",
-        "S3"
+        "S3",
+        "S5"
       ]
     },
     {
@@ -187,11 +226,29 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The current dedicated Forbes profile gives Oberägeri, Switzerland, as Samuelsson's residence, and Forbes's detailed feature independently says he now lives in Switzerland."
+        "reason": "The current Forbes profile gives Oberägeri, Switzerland, as his residence, and its detailed feature independently states that he now lives in Switzerland."
       },
       "source_ids": [
         "S1",
         "S2"
+      ]
+    },
+    {
+      "field": "biography",
+      "action": "fill_missing",
+      "value": "<p>Curiosity about where his boxing gloves were made drew Swedish engineering student Roger Samuelsson to Taiwan and into cross-border trade. He later co-founded SHL Medical and shifted the business towards autoinjectors after an early pharmaceutical contract. Automation became central to its manufacturing, while Samuelsson eventually left daily management and retained majority ownership.</p>\r\n",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Forbes supplies the formative trading, injector pivot, automation and leadership-transition narrative, with SHL and EQT corroborating the company history and retained ownership."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
       ]
     }
   ],
@@ -200,11 +257,11 @@
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/roger-samuelsson/",
-      "verification": "The dedicated current Forbes profile matches Samuelsson's Swedish identity, SHL Medical ownership, Swiss residence and ownership of Octopus.",
+      "verification": "The current dedicated Forbes profile matches Samuelsson's Swedish citizenship, SHL Medical founder identity, majority ownership and Swiss residence.",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "The combination of company, nationality, residence and yacht makes this an exact identity match."
+        "reason": "The profile combines multiple exact identity facts and was updated in 2026."
       },
       "source_ids": [
         "S1"
@@ -214,16 +271,17 @@
       "type_id": "14",
       "type": "Company Website",
       "url": "https://www.shl-medical.com/",
-      "verification": "SHL Medical's official website and history identify Roger Samuelsson as the founder of the company that Forbes reports he still majority owns.",
+      "verification": "SHL Medical's official website identifies Roger Samuelsson as its founder, while current Forbes and EQT sources establish his continuing majority ownership.",
       "confidence": {
-        "score": 99,
+        "score": 100,
         "band": "very_high",
-        "reason": "The official company domain directly represents the business Samuelsson founded and continues to control."
+        "reason": "The official domain directly represents the healthcare company he founded and continues to majority-own."
       },
       "source_ids": [
         "S1",
         "S3",
-        "S8"
+        "S5",
+        "S6"
       ]
     }
   ],
@@ -235,15 +293,15 @@
       "title": "Roger Samuelsson",
       "publisher": "Forbes",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "exact Forbes profile",
-        "Swedish identity",
+        "Swedish citizenship",
         "SHL Medical founder and majority-owner identity",
         "drug-delivery devices as source of wealth",
         "self-made wealth",
-        "Oberägeri, Switzerland, residence",
-        "Octopus ownership"
+        "current Switzerland residence",
+        "Taiwan trading and company-founding route"
       ]
     },
     {
@@ -252,17 +310,16 @@
       "title": "Meet The Billionaire-Owned Company Making Injectors For Blockbuster Drugs Like Ozempic",
       "publisher": "Forbes",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "Swedish upbringing and engineering studies",
-        "early Taiwan trading activity and relocation",
-        "1989 SHL co-founding",
-        "Upjohn breakthrough contract",
-        "partner buyout and autoinjector focus",
-        "automation-led manufacturing expansion",
-        "majority ownership",
-        "current Swiss residence",
-        "2021 Octopus purchase"
+        "boxing-glove link to Taiwan and early exporting",
+        "relocation to Taiwan and SHL co-founding",
+        "Upjohn injector contract",
+        "autoinjector focus after the partner buyout",
+        "early investment in automated production",
+        "executive succession and continuing majority ownership",
+        "current Switzerland residence"
       ]
     },
     {
@@ -271,13 +328,12 @@
       "title": "Our History",
       "publisher": "SHL Medical",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "Roger Samuelsson as founder",
-        "1989 founding of SHL Group",
-        "Taiwan manufacturing base",
-        "development of the first autoinjector in 1996",
-        "company evolution into SHL Medical"
+        "1989 founding of the company in Taiwan",
+        "development from medical equipment into autoinjectors",
+        "first autoinjector launch"
       ]
     },
     {
@@ -286,88 +342,51 @@
       "title": "New Beginnings",
       "publisher": "SHL Medical",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "founder's account of the Taiwan trading business",
-        "early Swedish co-founders",
-        "1994 injection-business opportunity",
-        "transition from trading to medical devices"
+        "SHL's origin as a Taiwan trading business",
+        "Roger Samuelsson and Martin Jelf as the Swedish founders",
+        "the first autoinjector business deal",
+        "the trading-to-drug-delivery transition"
       ]
     },
     {
       "id": "S5",
-      "url": "https://test-www.shl-medical.com/news-insights/events/ulrich-faessler-appointed-ceo-of-shl-medical",
-      "title": "Ulrich Fässler appointed CEO of SHL Medical",
-      "publisher": "SHL Medical",
+      "url": "https://eqtgroup.com/news/eqt-future-and-athos-alongside-other-co-investors-invest-in-shl-medical-a-world-leading-provider-of-advanced-drug-delivery-solutions-2022-12-09",
+      "title": "EQT Future and ATHOS Invest in SHL Medical",
+      "publisher": "EQT",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "Samuelsson as founder and longstanding chief executive",
-        "Ulrich Fässler's January 2018 appointment as global chief executive",
-        "Samuelsson's continued SHL Group presidency after the transition"
+        "Roger Samuelsson as founder and continuing majority shareholder",
+        "SHL Medical's drug-delivery and autoinjector business",
+        "automated assembly and manufacturing development",
+        "Ulrich Fässler as chief executive"
       ]
     },
     {
       "id": "S6",
-      "url": "https://www.shl-medical.com/wp-content/uploads/2023/05/2022-SHL-Medical-Sustainability-Report-2.pdf",
-      "title": "SHL Medical Sustainability Report 2022",
+      "url": "https://www.shl-medical.com/about-us",
+      "title": "About Us",
       "publisher": "SHL Medical",
       "tier": 1,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Roger Samuelsson as SHL Medical founder",
-        "founder's stated emphasis on patient independence and home treatment"
-      ]
-    },
-    {
-      "id": "S7",
-      "url": "https://eqtgroup.com/news/eqt-invests-in-shl-medical-a-world-leading-provider-of-drug-delivery-solutions-2020-01-03",
-      "title": "EQT invests in SHL Medical, a world-leading provider of drug delivery solutions",
-      "publisher": "EQT",
-      "tier": 1,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "1989 Asian founding",
-        "1996 autoinjector development",
-        "world-leading drug-delivery position",
-        "EQT minority investment"
-      ]
-    },
-    {
-      "id": "S8",
-      "url": "https://www.shl-medical.com/",
-      "title": "SHL Medical",
-      "publisher": "SHL Medical",
-      "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "official company website",
-        "Swiss-headquartered drug-delivery business",
-        "self-injection systems focus"
-      ]
-    },
-    {
-      "id": "S9",
-      "url": "https://www.yachtworld.com/research/celebrity-yacht-octopus-all-deck-and-no-legs/",
-      "title": "Celebrity Yacht Octopus: All Deck And No Legs",
-      "publisher": "YachtWorld",
-      "tier": 3,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Roger Samuelsson ownership attribution",
-        "Octopus identity",
-        "approximately 126-metre length"
+        "self-injection and autoinjector focus",
+        "Roger Samuelsson and Martin Jelf as founders",
+        "in-house automation and assembly capabilities",
+        "integrated device design and manufacturing"
       ]
     }
   ],
   "uncertainties": [
-    "The source record's 10 December 1963 birth date was preserved, but no Tier 1 or Tier 2 source reviewed independently confirmed the exact date; Forbes's reported age is compatible with it.",
-    "No reliable evidence established a middle name, specific birthplace or secondary nationality. A middle name appearing on weak yacht-owner aggregation pages was not used.",
-    "The current Forbes profile gives Oberägeri, Switzerland, as Samuelsson's residence and its detailed feature says he now lives in Switzerland, supporting correction of the older Taiwan value. His long personal and business ties to Taiwan do not by themselves establish a current secondary residence.",
-    "The current Forbes profile reports a 68-percent SHL Medical stake, while its 2024 feature reported 69 percent at that time; the difference is treated as a change in ownership percentage rather than an identity conflict.",
-    "No personal LinkedIn, Instagram, personal website, Facebook, X, YouTube or TikTok profile met the identity-verification threshold. Same-name profiles for unrelated people were rejected.",
-    "Forbes directly connects Samuelsson to Octopus, corroborated by YachtWorld, but the reviewed sources did not support a meaningful personal yachting narrative beyond ownership, so the yacht was omitted from both biographies.",
-    "The source record also links Samuelsson to Ravenger, but no sufficiently strong public evidence reviewed was needed to establish identity or a biographical yachting narrative."
+    "The source record's 10 December 1963 birth date is preserved, but no reviewed Tier 1 or Tier 2 source independently confirmed the exact date; the current Forbes age is compatible with it.",
+    "No reliable source established a middle name, specific birthplace or secondary nationality, so those blank fields receive no proposals.",
+    "The current Forbes profile gives Oberägeri, Switzerland, as Samuelsson's residence and its detailed feature says he now lives in Switzerland. His longstanding ties to Taiwan do not establish current primary residence there.",
+    "No verified personal LinkedIn, Instagram, personal website, Facebook, X, YouTube or TikTok profile was found. Same-name profiles and company accounts were rejected as personal links.",
+    "Current ownership percentages, net worth, production volumes, employee counts and market-share figures were excluded from the biographies because they are liable to change.",
+    "The current Forbes profile and SHL Medical's official company domain are proposed under their distinct link types."
   ],
   "review": {
     "status": "pending",

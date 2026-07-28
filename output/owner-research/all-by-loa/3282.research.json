@@ -1,12 +1,13 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
+  "record_type": "person",
   "owner": {
     "person_id": 3282,
     "display_name": "Eduard  Khudainatov",
     "identity_confidence": {
-      "score": 99,
+      "score": 98,
       "band": "very_high",
-      "reason": "The exact name, patronymic, birth date and place, Russian and Kazakh nationalities, former Rosneft leadership, Independent Oil and Gas Company role, and disputed Scheherazade and Amadea yacht context align across the owner record, official records and established reporting."
+      "reason": "The immutable display name aligns with Rosneft's full-name and birth-date record and with established business reporting on the same Severneftegazprom, Rosneft and Independent Oil and Gas Company career."
     }
   },
   "input_snapshot": {
@@ -75,93 +76,130 @@
     }
   },
   "research_status": "limited",
-  "forbes_profile": {
-    "status": "not_found",
-    "url": null,
-    "confidence": {
-      "score": 98,
-      "band": "very_high",
-      "reason": "Exact-name and site:forbes.com/profile searches found detailed Forbes staff reporting about Khudainatov but no dedicated Forbes person profile."
-    }
-  },
-  "primary_industry": {
-    "classification": "energy",
-    "label": "Energy",
-    "summary": "Khudainatov's identifiable private wealth is tied to Independent Oil and Gas Company and related oil, gas and coal interests, including exploration, production, refining and asset sales.",
-    "confidence": {
-      "score": 98,
-      "band": "very_high",
-      "reason": "Current UK and EU records identify his ownership or control of energy companies, while Forbes and Interfax document the oil assets and major Rosneft transaction underlying the reported fortune."
-    },
-    "source_ids": [
-      "S1",
-      "S3",
-      "S4",
-      "S6"
-    ]
-  },
-  "wealth_origin": {
-    "classification": "self_made",
-    "label": "Self-made",
-    "summary": "After a senior career at Rosneft, Khudainatov established Independent Oil and Gas Company, assembled oil-field interests and completed a multibillion-dollar asset sale to Rosneft.",
-    "confidence": {
-      "score": 90,
-      "band": "high",
-      "reason": "Official and established sources document his progression from oil-company executive to founder and owner of a private energy group, with no evidence that the core business was inherited; opaque transaction terms limit a higher score."
-    },
+  "biography_brief": {
+    "durable_identity": "Russian energy executive and former president of Rosneft who later founded and led Independent Oil and Gas Company.",
+    "wealth_or_prominence_route": "He advanced through management roles at Severneftegazprom and Rosneft before moving into private company-building in oil and gas.",
+    "turning_point": "Leaving Rosneft shifted his role from managing established producers to assembling an independent energy business.",
+    "later_chapter": "Independent Oil and Gas Company combined exploration and production interests with refining, fuel distribution, acquisitions and operating partnerships.",
+    "character_detail": "His career joins field and company operations with later asset consolidation across the energy chain.",
+    "excluded_transient_context": [
+      "Current vessel ownership and LOA cohort ranking",
+      "Current net-worth estimates, rankings and transaction valuations",
+      "Unrelated contentious personal and political material"
+    ],
     "source_ids": [
       "S1",
       "S2",
-      "S3",
-      "S6"
-    ]
-  },
-  "wealth_relationship": {
-    "classification": "founder",
-    "label": "Founder",
-    "summary": "Khudainatov founded Independent Oil and Gas Company and is identified in current government records as owning or controlling that company and other energy interests.",
-    "confidence": {
-      "score": 96,
-      "band": "very_high",
-      "reason": "Interfax documents the company's creation, while UK and EU records and a U.S. government filing identify Khudainatov as its owner, controller, president or sole shareholder."
-    },
-    "source_ids": [
       "S3",
       "S4",
       "S5",
       "S6"
     ]
   },
-  "biography": {
-    "plain_text": "Eduard Khudainatov is a Russian oil executive and founder of Independent Oil and Gas Company. After senior roles at Severneftegazprom, he advanced from vice president to president of Rosneft. He later assembled private exploration and production assets, completing a major Taimyr oil-field sale to Rosneft that underpins public estimates of his fortune.",
-    "html": "<p>Eduard Khudainatov is a Russian oil executive and founder of Independent Oil and Gas Company. After senior roles at Severneftegazprom, he advanced from vice president to president of Rosneft. He later assembled private exploration and production assets, completing a major Taimyr oil-field sale to Rosneft that underpins public estimates of his fortune.</p>\r\n",
-    "word_count": 52,
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "calibration_archetypes": [
+      "sparse_public_record",
+      "founder_operator"
+    ],
+    "notes": "The biographies follow a narrow, durable operating-career route from established producers to an integrated private energy business, without importing transient asset context or contentious material."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
     "confidence": {
-      "score": 94,
+      "score": 98,
+      "band": "very_high",
+      "reason": "Focused exact-name and site:forbes.com/profile searches found Forbes staff reporting about Khudainatov but no dedicated Forbes person profile."
+    }
+  },
+  "primary_industry": {
+    "classification": "energy",
+    "label": "Energy",
+    "summary": "Khudainatov's identifiable private business interests are centred on an integrated oil and gas group involved in exploration, production, refining and fuel distribution.",
+    "confidence": {
+      "score": 93,
       "band": "high",
-      "reason": "Rosneft records, EU records, Interfax and Forbes reporting support his executive progression, private-company formation, asset assembly, Taimyr transaction and the reported connection between that transaction and his fortune."
+      "reason": "Rosneft, Repsol, Interfax, Reuters and Vedomosti consistently identify his energy career, company leadership and the oil and gas activities of the business he built."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "His executive career and later company-building are documented, but reliable public material does not establish enough about financing, beneficial economics and retained proceeds to classify how his principal private wealth arose.",
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Strong sources establish the career and business route but do not provide a sufficiently transparent account of the capital and ownership economics behind the resulting private wealth."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
+      "S5",
       "S6"
     ]
   },
-  "long_biography": {
-    "plain_text": "Born in Shymkent, Kazakhstan, in 1960, Eduard Khudainatov studied at the International Business Academy and Tyumen State University. He led Severneftegazprom before joining Rosneft, where the company's records trace his rise from vice president to first vice president and president between 2008 and 2011. That progression established him as a senior figure in Russia's oil and gas industry.\n\nAfter leaving Rosneft, Khudainatov founded Independent Oil and Gas Company and assembled exploration and production assets. Interfax documented the group's early consolidation, while European Union records identify the later sale of a Taimyr oil-field company to Rosneft as a multibillion-dollar transaction. Current UK records identify him as owning or controlling Independent Oil and Gas Company and Coalstar, making founder the clearest description of his relationship to the energy businesses associated with his wealth.",
-    "html": "<p>Born in Shymkent, Kazakhstan, in 1960, Eduard Khudainatov studied at the International Business Academy and Tyumen State University. He led Severneftegazprom before joining Rosneft, where the company's records trace his rise from vice president to first vice president and president between 2008 and 2011. That progression established him as a senior figure in Russia's oil and gas industry.</p>\r\n<p>After leaving Rosneft, Khudainatov founded Independent Oil and Gas Company and assembled exploration and production assets. Interfax documented the group's early consolidation, while European Union records identify the later sale of a Taimyr oil-field company to Rosneft as a multibillion-dollar transaction. Current UK records identify him as owning or controlling Independent Oil and Gas Company and Coalstar, making founder the clearest description of his relationship to the energy businesses associated with his wealth.</p>\r\n",
-    "word_count": 131,
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Khudainatov founded Independent Oil and Gas Company after leaving Rosneft and led its development through acquisitions, asset consolidation and operating partnerships.",
     "confidence": {
-      "score": 96,
-      "band": "very_high",
-      "reason": "Rosneft directly supports his education and executive progression, while EU and UK records and Interfax independently support the company founding, asset consolidation, Taimyr transaction and current energy-company relationship."
+      "score": 94,
+      "band": "high",
+      "reason": "Interfax and Vedomosti directly describe the company as established by Khudainatov, while Repsol identifies him as its president and operating partner."
     },
     "source_ids": [
       "S2",
       "S3",
       "S4",
-      "S6"
+      "S5"
+    ]
+  },
+  "biography": {
+    "plain_text": "Eduard Khudainatov is a Russian energy executive who led Severneftegazprom before rising through Rosneft to become its president. He later established Independent Oil and Gas Company, assembling exploration, production, refining and fuel-distribution assets. His public profile is rooted in operating large oil projects and building a private energy group through acquisitions.",
+    "html": "<p>Eduard Khudainatov is a Russian energy executive who led Severneftegazprom before rising through Rosneft to become its president. He later established Independent Oil and Gas Company, assembling exploration, production, refining and fuel-distribution assets. His public profile is rooted in operating large oil projects and building a private energy group through acquisitions.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "Rosneft directly supports his executive progression, while Interfax, Repsol and Vedomosti support the company formation, integrated energy activities and acquisition-led development."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Eduard Khudainatov's long energy career developed through a succession of operating roles. He led Severneftegazprom before joining Rosneft, where he moved from vice-president to first vice-president and president. Those posts placed him in senior management of major oil and gas production businesses.\n\nAfter leaving Rosneft, Khudainatov became president of Independent Oil and Gas Company and expanded its asset base through acquisitions and partnerships. The group brought together exploration, production, refining and fuel distribution, shifting his role from managing established producers to building an integrated private business across the energy chain.",
+    "html": "<p>Eduard Khudainatov's long energy career developed through a succession of operating roles. He led Severneftegazprom before joining Rosneft, where he moved from vice-president to first vice-president and president. Those posts placed him in senior management of major oil and gas production businesses.</p>\r\n<p>After leaving Rosneft, Khudainatov became president of Independent Oil and Gas Company and expanded its asset base through acquisitions and partnerships. The group brought together exploration, production, refining and fuel distribution, shifting his role from managing established producers to building an integrated private business across the energy chain.</p>\r\n",
+    "word_count": 90,
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "Official Rosneft and Repsol material plus established Interfax and Vedomosti reporting support every stage of the operating-career and private company-building narrative."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
     ]
   },
   "proposed_details": [
@@ -172,226 +210,147 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "Rosneft's official board-nominee biography gives his full name as Eduard Yurievich Khudainatov and matches the supplied date of birth and career."
+        "reason": "Rosneft's official board-nominee biography gives his full name as Eduard Yurievich Khudainatov and matches the supplied birth date and career."
       },
       "source_ids": [
-        "S2"
+        "S1"
       ]
     },
     {
       "action": "fill_missing",
       "field": "known_for_title",
-      "value": "Founder and owner of Independent Oil and Gas Company",
+      "value": "Founder of Independent Oil and Gas Company",
       "confidence": {
-        "score": 97,
-        "band": "very_high",
-        "reason": "Interfax documents his creation of the company, and UK, EU and U.S. government records identify him as its owner, controller, president or sole shareholder."
+        "score": 94,
+        "band": "high",
+        "reason": "Interfax and Vedomosti identify the company as established by Khudainatov, while Repsol corroborates his leadership of the group."
       },
       "source_ids": [
         "S3",
         "S4",
-        "S5",
-        "S6"
-      ]
-    },
-    {
-      "action": "fill_missing",
-      "field": "place_of_birth",
-      "value": "Shymkent",
-      "confidence": {
-        "score": 99,
-        "band": "very_high",
-        "reason": "Current UK and EU government records independently give Shymkent, Kazakhstan, as Khudainatov's place of birth and match his full identity and birth date."
-      },
-      "source_ids": [
-        "S3",
-        "S4"
+        "S5"
       ]
     },
     {
       "action": "fill_missing",
       "field": "biography",
-      "value": "<p>Eduard Khudainatov is a Russian oil executive and founder of Independent Oil and Gas Company. After senior roles at Severneftegazprom, he advanced from vice president to president of Rosneft. He later assembled private exploration and production assets, completing a major Taimyr oil-field sale to Rosneft that underpins public estimates of his fortune.</p>\r\n",
+      "value": "<p>Eduard Khudainatov is a Russian energy executive who led Severneftegazprom before rising through Rosneft to become its president. He later established Independent Oil and Gas Company, assembling exploration, production, refining and fuel-distribution assets. His public profile is rooted in operating large oil projects and building a private energy group through acquisitions.</p>\r\n",
       "confidence": {
-        "score": 94,
+        "score": 93,
         "band": "high",
-        "reason": "The proposed biography is supported by official Rosneft and EU records plus established reporting on the company formation, asset assembly and transaction underpinning public wealth estimates."
+        "reason": "Rosneft directly supports his executive progression, while Interfax, Repsol and Vedomosti support the company formation, integrated energy activities and acquisition-led development."
       },
       "source_ids": [
         "S1",
         "S2",
         "S3",
-        "S6"
-      ]
-    }
-  ],
-  "proposed_socials": [
-    {
-      "type_id": "10",
-      "type": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Eduard_Khudaynatov",
-      "verification": "The canonical English article's full name, 11 September 1960 birth date, Shymkent birthplace and Rosneft presidency match official Rosneft, UK and EU records; type ID 10 is copied from the owner input lookup.",
-      "confidence": {
-        "score": 95,
-        "band": "very_high",
-        "reason": "The canonical page resolves securely to the target through multiple exact identity facts independently corroborated by official sources."
-      },
-      "source_ids": [
-        "S2",
-        "S3",
         "S4",
-        "S9"
+        "S5"
       ]
     }
   ],
+  "proposed_socials": [],
   "candidates_requiring_review": [],
   "sources": [
     {
       "id": "S1",
-      "url": "https://www.forbes.com/sites/giacomotognini/2022/06/13/meet-the-russian-billionaire-whos-the-proxy-owner-of-vladimir-putin-500-million-yacht-eduard-khudainatov/",
-      "title": "Meet The Russian Billionaire Who's The Proxy Owner Of Vladimir Putin's $500 Million Yacht",
-      "publisher": "Forbes",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "exact identity",
-        "former Rosneft chief executive role",
-        "Independent Oil and Gas Company ownership and private-fortune attribution",
-        "2020 Rosneft transaction",
-        "U.S. allegation that Khudainatov was a straw owner of Scheherazade, Amadea and Crescent",
-        "disputed nature of the yacht ownership claims"
-      ]
-    },
-    {
-      "id": "S2",
-      "url": "https://limited.rosneft.com/upload/site2/document_shareholdersmeeting/10062011/5_BoD_nominees.pdf",
+      "url": "https://www.rosneft.com/upload/site2/document_shareholdersmeeting/10062011/5_BoD_nominees.pdf",
       "title": "Information on nominees to the Board of Directors of Rosneft",
       "publisher": "Rosneft",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
         "full name Eduard Yurievich Khudainatov",
         "11 September 1960 birth date",
-        "International Business Academy and Tyumen State University education",
+        "higher education",
         "Severneftegazprom leadership",
         "progression through Rosneft vice-president, first vice-president and president roles"
       ]
     },
     {
-      "id": "S3",
-      "url": "https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX%3A32023D0572",
-      "title": "Council Decision (CFSP) 2023/572",
-      "publisher": "Official Journal of the European Union",
-      "tier": 1,
-      "accessed_at": "2026-07-27",
+      "id": "S2",
+      "url": "https://interfax.com/newsroom/top-stories/47645/",
+      "title": "Former Rosneft VP takes over at Independent Oil Co.",
+      "publisher": "Interfax",
+      "tier": 2,
+      "accessed_at": "2026-07-28",
       "supports": [
-        "full identity and alias spelling",
-        "11 September 1960 birth date",
-        "Shymkent, Kazakhstan, birthplace",
-        "Russian nationality",
-        "ownership of Independent Oil and Gas Company and Neftegazholding",
-        "energy-industry activities",
-        "Taimyr oil-field company sale to Rosneft"
+        "former Rosneft senior role",
+        "transition to president of Independent Oil and Gas Company",
+        "early consolidation strategy around oil assets"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://interfax.com/newsroom/top-stories/43499/",
+      "title": "Alliance Group, Khudainatov's Independent Oil and Gas Co sign merger deal",
+      "publisher": "Interfax",
+      "tier": 2,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Independent Oil and Gas Company established by Khudainatov",
+        "founder relationship",
+        "asset consolidation",
+        "energy-sector merger agreement"
       ]
     },
     {
       "id": "S4",
-      "url": "https://assets.publishing.service.gov.uk/media/6863b21f3464d9c0ad609d89/Russia.pdf",
-      "title": "The UK Sanctions List: Russia",
-      "publisher": "UK Government",
+      "url": "https://www.repsol.com/content/dam/repsol-corporate/en_gb/sala-de-prensa/documentos-sala-de-prensa/Acuedo_NNK_Rusia_ing_tcm14-28257.pdf",
+      "title": "Repsol and NNK group their Russian joint venture assets into a single management company",
+      "publisher": "Repsol",
       "tier": 1,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "full identity",
-        "11 September 1960 birth date",
-        "Shymkent birthplace",
-        "Russian and Kazakh nationalities",
-        "ownership or control of Independent Oil and Gas Company",
-        "ownership or control of Coalstar"
+        "Eduard Khudaynatov as NNK president",
+        "operating partnership",
+        "exploration and production activities",
+        "vertically integrated oil-company status",
+        "refining and fuel-distribution activities"
       ]
     },
     {
       "id": "S5",
-      "url": "https://efile.fara.gov/docs/7338-Exhibit-AB-20231022-1.pdf",
-      "title": "Exhibit AB to Registration Statement, Registration No. 7338",
-      "publisher": "U.S. Department of Justice",
-      "tier": 1,
-      "accessed_at": "2026-07-27",
+      "url": "https://events.vedomosti.ru/speakers/hudainatov-eduard-50",
+      "title": "Худайнатов Эдуард — основатель и руководитель ННК",
+      "publisher": "Vedomosti",
+      "tier": 2,
+      "accessed_at": "2026-07-28",
       "supports": [
-        "party representation that Khudainatov is president and sole shareholder of Independent Oil and Gas Company",
-        "engagement of a U.S. representative concerning the Amadea ownership claim"
+        "exact identity",
+        "founder and leader of Independent Oil and Gas Company",
+        "Severneftegazprom and Rosneft career progression",
+        "oil-field operating experience",
+        "company exploration, production, refining and fuel-distribution activities"
       ]
     },
     {
       "id": "S6",
-      "url": "https://interfax.com/newsroom/top-stories/43499/",
-      "title": "Khudainatov sets up Independent Oil and Gas Company",
-      "publisher": "Interfax",
+      "url": "https://energynow.com/2020/12/russias-rosneft-may-buy-huge-oil-field-in-arctic-from-its-ex-chief-source-says/",
+      "title": "Russia's Rosneft may buy huge oil field in Arctic from its ex-chief, source says",
+      "publisher": "Reuters, republished by EnergyNow",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "formation of Independent Oil and Gas Company",
-        "founder relationship",
-        "early assembly of private oil assets"
-      ]
-    },
-    {
-      "id": "S7",
-      "url": "https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1%3A2023cv09304/608778/500/",
-      "title": "United States v. The M/Y Amadea, No. 1:2023cv09304 - Document 500",
-      "publisher": "Justia, reproducing U.S. District Court records",
-      "tier": 1,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "Khudainatov-linked claimant's asserted ownership of Amadea",
-        "court rejection of the ownership claim",
-        "forfeiture judgment",
-        "contested yacht ownership context"
-      ]
-    },
-    {
-      "id": "S8",
-      "url": "https://news.bloomberglaw.com/litigation/russian-billionaire-cant-scuttle-$300-million-yacht-forfeiture",
-      "title": "Russian Billionaire Can't Scuttle $300 Million Yacht Forfeiture",
-      "publisher": "Bloomberg Law",
-      "tier": 2,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "appellate rejection of the Amadea ownership challenge",
-        "court finding that Khudainatov held bare title",
-        "nominal or straw-owner characterization",
-        "current contested-yacht context"
-      ]
-    },
-    {
-      "id": "S9",
-      "url": "https://en.wikipedia.org/wiki/Eduard_Khudaynatov",
-      "title": "Eduard Khudaynatov",
-      "publisher": "Wikipedia",
-      "tier": 3,
-      "accessed_at": "2026-07-27",
-      "supports": [
-        "canonical English Wikipedia URL",
-        "full name and alias spelling",
-        "birth date and Shymkent birthplace",
-        "Rosneft leadership and Independent Oil and Gas Company identity"
+        "former Rosneft chief executive identity",
+        "control of Neftegazholding",
+        "private oil-field ownership",
+        "large energy-asset transaction"
       ]
     }
   ],
   "uncertainties": [
-    "No dedicated Forbes person profile was found. Forbes staff reporting supports the business and yacht context, but its estimated wealth and proxy-owner language are reporting rather than a profile classification.",
-    "Scheherazade is listed as a current relationship in the source record, but Forbes reports that U.S. authorities regarded Khudainatov as an owner on paper for another alleged beneficiary. The dossier uses that relationship only for identity resolution and does not assert current beneficial ownership.",
-    "Khudainatov asserted ownership of Amadea through a claimant entity, while U.S. courts rejected that claim and described his position as bare or nominal title. The biographies attribute both sides and do not treat Amadea as personal property.",
-    "The self-made classification rests on his documented executive career, creation of Independent Oil and Gas Company and acquisition and sale of oil assets. Public evidence does not fully explain the financing or economics of every acquisition, so confidence is high rather than very high.",
-    "The FARA exhibit is an official government filing, but its description of Khudainatov as president and sole shareholder is a representation made by his retained party; current UK and EU records provide independent support for ownership or control.",
-    "The source record's mortality status is Unknown, which causes blank death fields to appear as researchable in the exact inventory. Recent sanctions and litigation records do not report his death, but no direct official living-status statement was found, so mortality status and death fields were not proposed.",
-    "No personal LinkedIn, Instagram, Facebook, X/Twitter, YouTube, TikTok or personal website met the verification threshold. Search results were dominated by unrelated profiles and third-party reporting.",
-    "No current official company website was verified strongly enough to propose as a Company Website.",
-    "The source display name contains two spaces between the given name and surname. It is preserved exactly in the dossier owner block so the snapshot remains anchored to the immutable source record.",
+    "No dedicated Forbes person profile was found after exact-name and site:forbes.com/profile searches. Forbes staff reporting was not used as biography material.",
+    "The documented executive career and company formation do not provide a sufficiently transparent account of financing, beneficial economics or retained proceeds, so wealth origin remains Unknown.",
+    "Shymkent appears as a birthplace in secondary profiles, but this pass did not find sufficiently strong non-sensitive corroboration to support a proposal for the blank place-of-birth field.",
+    "The source record's mortality status is Unknown, which causes blank death fields to appear as researchable in the exact inventory. No sufficiently direct evidence supported a mortality or death-field proposal.",
+    "No personal LinkedIn, Instagram, Facebook, Twitter/X, YouTube, TikTok or personal website met the identity-verification threshold, and no official company site was securely attributable to his business.",
+    "The matching English Wikipedia article carries an undisclosed-paid-editing warning and was not proposed as a social link.",
+    "The source display name contains two spaces between the given name and surname. It is preserved exactly in the dossier owner block.",
     "Blank title, suffix, secondary residence, calculated age, internal-note and unknown-name fields were not treated as enrichment targets."
   ],
   "review": {
     "status": "pending",
-    "notes": "Review the contested-yacht wording carefully. Do not convert the Scheherazade or Amadea associations into an unqualified personal-ownership claim, and retain the limited research status because no dedicated Forbes profile or verified personal social presence was found."
+    "notes": "Wealth origin remains Unknown because the available career and company evidence does not transparently establish the financing or economics of the principal private wealth."
   }
 }
