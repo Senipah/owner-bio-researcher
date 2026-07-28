@@ -91,21 +91,48 @@ Only scores of 85 or higher belong in `proposed_details` or
 
 ## Biographies
 
-Read [biography-style.md](biography-style.md) and always populate:
+Read [biography-style.md](biography-style.md). For `record_type=person`,
+populate:
 
 - `biography`: a standalone 50-55 word short biography in one paragraph;
 - `long_biography`: a standalone 90-190 word biography in exactly two
-  paragraphs, preferably 120-170 words.
+  paragraphs.
+- `biography_brief`: the durable, source-backed fact bridge used for the
+  separate editorial pass.
 
 The short biography identifies the person and concisely explains the principal
 origin of wealth or prominence. The longer biography adds the formative route,
-an important turning point, and one or two useful layers of character colour,
-later activity, or meaningful yachting context.
+an important turning point, and one or two useful layers of character colour
+or later activity.
 
 Each biography has its own `confidence` and `source_ids`. Its confidence cannot
 exceed the weakest material claim it contains. Every material claim must be
 supported by the source ledger. Do not pad sparse profiles, repeat the short
-text verbatim, or infer personality or yacht involvement from ownership alone.
+text verbatim, or use the current vessel relationship as biography content.
+Both biographies must remain accurate and coherent if the person later sells
+every vessel in the owner record.
+
+Never include a personally owned vessel merely because it is current, large,
+recently commissioned, successively owned, or used to determine cohort rank.
+Vessel names, dimensions, builders, and ownership histories belong in the
+system's vessel data. Independently significant maritime careers or sustained
+competitive, research, or philanthropic work may be described, but the
+biography must focus on that durable activity rather than the transient asset.
+
+The brief contains `durable_identity`, `wealth_or_prominence_route`,
+`turning_point`, `later_chapter`, optional `character_detail`,
+`excluded_transient_context`, and `source_ids`. Draft prose from the brief
+without source publishers, confidence language, classification deliberation,
+or current-vessel context, then reverse-check claims against the source ledger.
+Record the five 4-or-5 editorial rubric scores, relevant calibration
+archetype(s), and a concise revision note under `editorial_assessment`.
+
+For `record_type=institution` or `unresolved_placeholder`, set
+`biography_brief`, `editorial_assessment`, `biography`, and `long_biography` to
+`null`. Populate a
+20-120 word `editorial_note` explaining the record type or identity limitation.
+That note is review context only and is never mapped into a website biography.
+Non-person dossiers must not propose personal details or social links.
 
 The compiler always maps `biography.html` to the existing `details.biography`.
 When the source owner exposes `details.long_biography`, it also maps
@@ -189,7 +216,8 @@ Use this top-level structure:
 
 ```json
 {
-  "schema_version": 4,
+  "schema_version": 5,
+  "record_type": "person",
   "owner": {
     "person_id": null,
     "display_name": "Example Owner",
@@ -215,6 +243,28 @@ Use this top-level structure:
     }
   },
   "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Example industrial founder.",
+    "wealth_or_prominence_route": "A product innovation led to an operating company.",
+    "turning_point": "The founder acquired a larger former employer.",
+    "later_chapter": "Later activity expanded into sport.",
+    "character_detail": "The business combined engineering with retained control.",
+    "excluded_transient_context": [
+      "Current vessel ownership",
+      "Current net worth"
+    ],
+    "source_ids": ["S1", "S2"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "calibration_archetypes": ["founder_operator"],
+    "notes": "The profile explains the causal route without source or asset narration."
+  },
+  "editorial_note": null,
   "forbes_profile": {
     "status": "verified",
     "url": "https://www.forbes.com/profile/example-owner/",
@@ -301,3 +351,36 @@ Research agents always emit `review.status=pending`. A human reviewer may later
 change it to `approved` or `rejected`; either final state must also include
 non-empty `reviewed_by` and `reviewed_at` values. Approval is a separate human
 action and must never be inferred from confidence.
+
+## Non-person dossier shape
+
+An institution or unresolved placeholder retains the same evidence,
+classification, Forbes-check, uncertainty, and review objects, with these
+differences:
+
+```json
+{
+  "schema_version": 5,
+  "record_type": "institution",
+  "research_status": "not_applicable",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "biography": null,
+  "long_biography": null,
+  "editorial_note": {
+    "plain_text": "This owner record represents a public institution rather than a natural person. Person-specific biography, private-wealth, and social-profile proposals are therefore not applicable.",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official records establish the institutional identity."
+    },
+    "source_ids": ["S1"]
+  },
+  "proposed_details": [],
+  "proposed_socials": []
+}
+```
+
+Use `record_type=unresolved_placeholder` with `research_status` set to
+`identity_conflict` or `insufficient_evidence` when the record purports to be
+a person but no defensible identity can be resolved.

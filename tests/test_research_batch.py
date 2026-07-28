@@ -81,7 +81,8 @@ def _dossier(person_id: int, name: str, review_status: str = "pending") -> dict:
         "diversified owner and investor."
     )
     return {
-        "schema_version": 4,
+        "schema_version": 5,
+        "record_type": "person",
         "owner": {
             "person_id": person_id,
             "display_name": name,
@@ -92,6 +93,27 @@ def _dossier(person_id: int, name: str, review_status: str = "pending") -> dict:
             },
         },
         "research_status": "complete",
+        "biography_brief": {
+            "durable_identity": f"{name} is an industrial founder.",
+            "wealth_or_prominence_route": (
+                "Technical product development led to an operating company."
+            ),
+            "turning_point": "An acquisition accelerated international growth.",
+            "later_chapter": "Later activity expanded into sport and property.",
+            "character_detail": "Engineering informed the founder's approach.",
+            "excluded_transient_context": ["Current vessel ownership"],
+            "source_ids": ["S1"],
+        },
+        "editorial_assessment": {
+            "causal_clarity": 5,
+            "human_specificity": 4,
+            "durability": 5,
+            "source_invisibility": 5,
+            "natural_voice": 4,
+            "calibration_archetypes": ["founder_operator"],
+            "notes": "The profile uses a durable causal story.",
+        },
+        "editorial_note": None,
         "biography": {
             "plain_text": short_biography,
             "html": f"<p>{short_biography}</p>\r\n",
@@ -480,7 +502,25 @@ def test_unresolved_dossier_is_included_unchanged_for_pending_review() -> None:
         "band": "insufficient",
         "reason": "The source record is an unresolved placeholder.",
     }
+    unresolved["record_type"] = "unresolved_placeholder"
     unresolved["research_status"] = "insufficient_evidence"
+    unresolved["biography_brief"] = None
+    unresolved["editorial_assessment"] = None
+    unresolved["biography"] = None
+    unresolved["long_biography"] = None
+    unresolved["editorial_note"] = {
+        "plain_text": (
+            "This owner record is an unresolved placeholder rather than a "
+            "verified natural person. The available public identity evidence "
+            "does not support personal biography or profile changes."
+        ),
+        "confidence": {
+            "score": 95,
+            "band": "very_high",
+            "reason": "The input is explicitly unresolved.",
+        },
+        "source_ids": ["S1"],
+    }
     unresolved["proposed_details"] = []
     unresolved["proposed_socials"] = []
 
@@ -513,6 +553,52 @@ def test_unresolved_dossier_is_included_unchanged_for_pending_review() -> None:
         )
 
 
+def test_institution_dossier_renders_note_without_biography_changes() -> None:
+    document = new_document()
+    source_owner = _owner(10, "Example Government", 1)
+    document["owners"] = [source_owner]
+    institution = _dossier(10, "Example Government")
+    institution["record_type"] = "institution"
+    institution["research_status"] = "not_applicable"
+    institution["biography_brief"] = None
+    institution["editorial_assessment"] = None
+    institution["biography"] = None
+    institution["long_biography"] = None
+    institution["editorial_note"] = {
+        "plain_text": (
+            "This record represents a public institution rather than a "
+            "natural person. Person-specific biography, private-wealth, and "
+            "social-profile proposals are therefore not applicable."
+        ),
+        "confidence": {
+            "score": 98,
+            "band": "very_high",
+            "reason": "Official records establish the institution.",
+        },
+        "source_ids": ["S1"],
+    }
+    institution["proposed_details"] = []
+    institution["proposed_socials"] = []
+
+    derived, report = compile_research_batch(
+        document,
+        {10: institution},
+        {10: Path("output/10.research.json")},
+        source_path="output/source.json",
+        limit=1,
+        mark_ai_enriched=False,
+    )
+    rendered = render_research_report(report)
+
+    compiled = derived["owners"][0]
+    assert compiled["details"] == source_owner["details"]
+    assert compiled["ai_research"]["record_type"] == "institution"
+    assert compiled["ai_research"]["biography"] is None
+    assert report["owners"][0]["changes"] == []
+    assert "Editorial identity note" in rendered
+    assert "No biography change is proposed" in rendered
+
+
 def test_renders_review_report() -> None:
     document = new_document()
     document["owners"] = [_owner(10, "First Owner", 1)]
@@ -541,6 +627,8 @@ def test_renders_review_report() -> None:
     assert "Founder" in rendered
     assert "Short biography" in rendered
     assert "Longer biography" in rendered
+    assert "Editorial assessment" in rendered
+    assert "source invisibility: 5/5" in rendered
     assert "A subsequent phase brought investments" in rendered
     assert "Missing fields added" in rendered
     assert "Official profile" in rendered

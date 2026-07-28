@@ -9,6 +9,10 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
 
+from editorial_rules import (
+    WORD_PATTERN as EDITORIAL_WORD_PATTERN,
+    editorial_findings,
+)
 from inventory_owner import _find_owner, build_inventory
 
 
@@ -24,6 +28,23 @@ RESEARCH_STATUSES = {
     "limited",
     "identity_conflict",
     "insufficient_evidence",
+    "not_applicable",
+}
+RECORD_TYPES = {"person", "institution", "unresolved_placeholder"}
+EDITORIAL_DIMENSIONS = {
+    "causal_clarity",
+    "human_specificity",
+    "durability",
+    "source_invisibility",
+    "natural_voice",
+}
+CALIBRATION_ARCHETYPES = {
+    "founder_operator",
+    "heir_custodian",
+    "royal_public_office",
+    "investor_philanthropist",
+    "sparse_public_record",
+    "maritime_professional",
 }
 FORBES_STATUSES = {"verified", "not_found", "ambiguous", "unavailable"}
 REVIEW_STATUSES = {"pending", "approved", "rejected"}
@@ -174,6 +195,7 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
 
     required = {
         "schema_version",
+        "record_type",
         "owner",
         "input_snapshot",
         "research_status",
@@ -183,6 +205,9 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
         "wealth_relationship",
         "biography",
         "long_biography",
+        "biography_brief",
+        "editorial_assessment",
+        "editorial_note",
         "proposed_details",
         "proposed_socials",
         "candidates_requiring_review",
@@ -194,10 +219,36 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
     if missing:
         errors.append(f"missing top-level keys: {missing}")
 
-    if document.get("schema_version") != 4:
-        errors.append("schema_version must be 4")
-    if document.get("research_status") not in RESEARCH_STATUSES:
+    if document.get("schema_version") != 5:
+        errors.append("schema_version must be 5")
+    record_type = document.get("record_type")
+    if record_type not in RECORD_TYPES:
+        errors.append("record_type is invalid")
+    research_status = document.get("research_status")
+    if research_status not in RESEARCH_STATUSES:
         errors.append("research_status is invalid")
+    if record_type == "person" and research_status == "not_applicable":
+        errors.append("person records cannot use research_status not_applicable")
+    if (
+        record_type == "person"
+        and research_status in {"identity_conflict", "insufficient_evidence"}
+    ):
+        errors.append(
+            "unresolved person identities must use "
+            "record_type unresolved_placeholder"
+        )
+    if record_type == "institution" and research_status != "not_applicable":
+        errors.append(
+            "institution records must use research_status not_applicable"
+        )
+    if (
+        record_type == "unresolved_placeholder"
+        and research_status not in {"identity_conflict", "insufficient_evidence"}
+    ):
+        errors.append(
+            "unresolved placeholders must use identity_conflict or "
+            "insufficient_evidence"
+        )
 
     owner = document.get("owner")
     if not isinstance(owner, dict):
@@ -306,10 +357,150 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
             known_sources,
             errors,
         )
+        if (
+            record_type in {"institution", "unresolved_placeholder"}
+            and isinstance(document.get(field), dict)
+            and document[field].get("classification") != "unknown"
+        ):
+            errors.append(
+                f"{field}.classification must be 'unknown' for "
+                "non-person records"
+            )
+
+    biography_brief = document.get("biography_brief")
+    editorial_assessment = document.get("editorial_assessment")
+    editorial_note = document.get("editorial_note")
+    if record_type == "person":
+        if not isinstance(biography_brief, dict):
+            errors.append("biography_brief must be an object for person records")
+        else:
+            for key in (
+                "durable_identity",
+                "wealth_or_prominence_route",
+                "turning_point",
+                "later_chapter",
+            ):
+                value = biography_brief.get(key)
+                if not isinstance(value, str) or not value.strip():
+                    errors.append(f"biography_brief.{key} must be non-empty")
+            character_detail = biography_brief.get("character_detail")
+            if (
+                character_detail is not None
+                and (
+                    not isinstance(character_detail, str)
+                    or not character_detail.strip()
+                )
+            ):
+                errors.append(
+                    "biography_brief.character_detail must be null or non-empty"
+                )
+            exclusions = biography_brief.get("excluded_transient_context")
+            if not isinstance(exclusions, list) or any(
+                not isinstance(item, str) or not item.strip()
+                for item in (
+                    exclusions if isinstance(exclusions, list) else []
+                )
+            ):
+                errors.append(
+                    "biography_brief.excluded_transient_context must be a "
+                    "list of strings"
+                )
+            _source_ids(
+                biography_brief.get("source_ids"),
+                "biography_brief.source_ids",
+                known_sources,
+                errors,
+            )
+            brief_text = " ".join(
+                str(biography_brief.get(key) or "")
+                for key in (
+                    "durable_identity",
+                    "wealth_or_prominence_route",
+                    "turning_point",
+                    "later_chapter",
+                    "character_detail",
+                )
+            )
+            editorial_errors, editorial_warnings = editorial_findings(
+                brief_text,
+                section="biography_brief",
+            )
+            errors.extend(editorial_errors)
+            warnings.extend(editorial_warnings)
+        if not isinstance(editorial_assessment, dict):
+            errors.append(
+                "editorial_assessment must be an object for person records"
+            )
+        else:
+            for dimension in EDITORIAL_DIMENSIONS:
+                score = editorial_assessment.get(dimension)
+                if (
+                    not isinstance(score, int)
+                    or isinstance(score, bool)
+                    or not 4 <= score <= 5
+                ):
+                    errors.append(
+                        f"editorial_assessment.{dimension} must be 4 or 5"
+                    )
+            archetypes = editorial_assessment.get(
+                "calibration_archetypes",
+            )
+            if (
+                not isinstance(archetypes, list)
+                or not archetypes
+                or any(
+                    item not in CALIBRATION_ARCHETYPES
+                    for item in (
+                        archetypes if isinstance(archetypes, list) else []
+                    )
+                )
+            ):
+                errors.append(
+                    "editorial_assessment.calibration_archetypes must be a "
+                    "non-empty list of valid archetypes"
+                )
+            notes = editorial_assessment.get("notes")
+            if not isinstance(notes, str) or not notes.strip():
+                errors.append("editorial_assessment.notes must be non-empty")
+        if editorial_note is not None:
+            errors.append("editorial_note must be null for person records")
+    else:
+        if biography_brief is not None:
+            errors.append("biography_brief must be null for non-person records")
+        if editorial_assessment is not None:
+            errors.append(
+                "editorial_assessment must be null for non-person records"
+            )
+        if not isinstance(editorial_note, dict):
+            errors.append("editorial_note must be an object for non-person records")
+        else:
+            note = editorial_note.get("plain_text")
+            if not isinstance(note, str) or not note.strip():
+                errors.append("editorial_note.plain_text must be non-empty")
+            else:
+                count = len(EDITORIAL_WORD_PATTERN.findall(note))
+                if not 20 <= count <= 120:
+                    errors.append("editorial_note must contain 20-120 words")
+                if "\n" in note or "\r" in note:
+                    errors.append("editorial_note.plain_text must be one paragraph")
+            _confidence(
+                editorial_note.get("confidence"),
+                "editorial_note.confidence",
+                errors,
+            )
+            _source_ids(
+                editorial_note.get("source_ids"),
+                "editorial_note.source_ids",
+                known_sources,
+                errors,
+            )
 
     biography = document.get("biography")
-    if not isinstance(biography, dict):
-        errors.append("biography must be an object")
+    if record_type != "person":
+        if biography is not None:
+            errors.append("biography must be null for non-person records")
+    elif not isinstance(biography, dict):
+        errors.append("biography must be an object for person records")
     else:
         plain = biography.get("plain_text")
         if not isinstance(plain, str) or not plain.strip():
@@ -328,6 +519,12 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
             expected_html = f"<p>{html.escape(plain, quote=False)}</p>\r\n"
             if biography.get("html") != expected_html:
                 errors.append("biography.html is not canonical CKEditor HTML")
+            editorial_errors, editorial_warnings = editorial_findings(
+                plain,
+                section="biography",
+            )
+            errors.extend(editorial_errors)
+            warnings.extend(editorial_warnings)
         _confidence(biography.get("confidence"), "biography.confidence", errors)
         _source_ids(
             biography.get("source_ids"),
@@ -337,8 +534,11 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
         )
 
     long_biography = document.get("long_biography")
-    if not isinstance(long_biography, dict):
-        errors.append("long_biography must be an object")
+    if record_type != "person":
+        if long_biography is not None:
+            errors.append("long_biography must be null for non-person records")
+    elif not isinstance(long_biography, dict):
+        errors.append("long_biography must be an object for person records")
     else:
         long_plain = long_biography.get("plain_text")
         if not isinstance(long_plain, str) or not long_plain.strip():
@@ -352,10 +552,6 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
                 )
             if not 90 <= count <= 190:
                 errors.append("long_biography must contain 90-190 words")
-            elif not 120 <= count <= 170:
-                warnings.append(
-                    "long_biography is outside the preferred 120-170 words"
-                )
             if "\r" in long_plain:
                 errors.append(
                     "long_biography.plain_text must use LF paragraph separators"
@@ -388,6 +584,12 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
                 errors.append(
                     "long_biography must not repeat biography verbatim"
                 )
+            editorial_errors, editorial_warnings = editorial_findings(
+                long_plain,
+                section="long_biography",
+            )
+            errors.extend(editorial_errors)
+            warnings.extend(editorial_warnings)
         _confidence(
             long_biography.get("confidence"),
             "long_biography.confidence",
@@ -405,6 +607,8 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
         if not isinstance(items, list):
             errors.append(f"{collection} must be a list")
             continue
+        if record_type != "person" and items:
+            errors.append(f"{collection} must be empty for non-person records")
         for index, item in enumerate(items):
             path = f"{collection}[{index}]"
             if not isinstance(item, dict):
@@ -500,6 +704,34 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
     return errors, warnings
 
 
+def _current_vessel_names(owner: dict[str, Any]) -> set[str]:
+    names: set[str] = set()
+    ownership = owner.get("vessel_ownership")
+    if isinstance(ownership, dict):
+        for key in ("relationships", "current_vessels"):
+            for relationship in ownership.get(key, []):
+                if (
+                    isinstance(relationship, dict)
+                    and relationship.get("is_current")
+                    and isinstance(relationship.get("vessel_name"), str)
+                ):
+                    names.add(relationship["vessel_name"].strip())
+        largest = ownership.get("largest_known_current_vessel")
+        if (
+            isinstance(largest, dict)
+            and isinstance(largest.get("vessel_name"), str)
+        ):
+            names.add(largest["vessel_name"].strip())
+    for relationship in owner.get("top_100", {}).get("relationships", []):
+        if (
+            isinstance(relationship, dict)
+            and relationship.get("is_current")
+            and isinstance(relationship.get("vessel_name"), str)
+        ):
+            names.add(relationship["vessel_name"].strip())
+    return {name for name in names if name}
+
+
 def validate_owner_input(
     document: Any,
     input_path: Path,
@@ -562,6 +794,24 @@ def validate_owner_input(
 
     if owner_summary.get("display_name") != actual["owner"]["display_name"]:
         errors.append("owner.display_name does not match --owner-input")
+    if document.get("record_type") == "person":
+        biography_text = " ".join(
+            value.get("plain_text", "")
+            for value in (
+                document.get("biography"),
+                document.get("long_biography"),
+            )
+            if isinstance(value, dict)
+        ).casefold()
+        for vessel_name in sorted(_current_vessel_names(source_owner)):
+            vessel_pattern = re.compile(
+                rf"(?<!\w){re.escape(vessel_name.casefold())}(?!\w)"
+            )
+            if len(vessel_name) >= 3 and vessel_pattern.search(biography_text):
+                errors.append(
+                    "biographies mention current vessel name "
+                    f"{vessel_name!r}; current ownership is ranking context only"
+                )
     for index, proposal in enumerate(document.get("proposed_details", [])):
         if not isinstance(proposal, dict):
             continue
@@ -588,6 +838,11 @@ def main() -> int:
         type=Path,
         help="Re-read the source owners document and verify the dossier snapshot.",
     )
+    parser.add_argument(
+        "--strict-editorial",
+        action="store_true",
+        help="Treat editorial warnings as validation errors.",
+    )
     args = parser.parse_args()
 
     try:
@@ -599,6 +854,9 @@ def main() -> int:
     errors, warnings = validate(document)
     if args.owner_input is not None:
         errors.extend(validate_owner_input(document, args.owner_input))
+    if args.strict_editorial and warnings:
+        errors.extend(f"strict editorial: {warning}" for warning in warnings)
+        warnings = []
     for warning in warnings:
         print(f"WARNING: {warning}", file=sys.stderr)
     if errors:

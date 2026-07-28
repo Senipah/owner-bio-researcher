@@ -2,16 +2,37 @@
 
 ## Two biography outputs
 
-Every dossier contains two standalone biographies:
+Every `record_type=person` dossier contains two standalone biographies:
 
 - `biography`: a short identity card of 50-55 words in one paragraph;
 - `long_biography`: a concise profile of 90-190 words in exactly two
-  paragraphs, preferably 120-170 words.
+  paragraphs.
 
 The longer version must stand alone. It may overlap the short biography's core
 facts, but it must not repeat the short text verbatim and must add a meaningful
-narrative layer. For a sparse public record, write 90-119 strong words rather
-than padding to the preferred range.
+narrative layer. Do not target the midpoint of the permitted range. For a
+sparse public record, stop at 90-119 strong words rather than padding.
+
+Institutions and unresolved placeholders do not receive biographies. They use
+the schema-v5 `editorial_note` path described in the research contract.
+
+## Editorial separation
+
+Research and publication are separate passes:
+
+1. Complete identity, source, social, and wealth research.
+2. Build `biography_brief` from durable verified facts.
+3. Exclude source publishers, confidence language, wealth-taxonomy
+   deliberation, current vessel data, rankings, and transient figures from the
+   writing brief.
+4. Draft both biographies from that brief and the calibration set.
+5. Reverse-check every material claim against the full source ledger.
+
+The published prose must not reveal that a researcher searched sources,
+resolved a database record, assigned classifications, or evaluated confidence.
+Do not write “Forbes identifies”, “Reuters reports”, “available evidence”,
+“records show”, “supports a classification”, or similar research narration.
+Those details belong in the dossier metadata.
 
 ## Short biography
 
@@ -29,6 +50,9 @@ Use this order:
 The result should read like a character-lore card rather than a financial fact
 sheet.
 
+Keep it to two or three sentences. Do not solve the word limit with a dense
+inventory of companies, offices, charities, or investments.
+
 ## Longer biography
 
 Answer four questions:
@@ -37,15 +61,15 @@ Answer four questions:
 2. How did they reach their position?
 3. What turning point, working style, or well-sourced detail distinguishes
    them?
-4. What relevant later chapter or yachting connection completes the profile?
+4. What relevant later chapter completes the profile?
 
 Use two short paragraphs:
 
 - Paragraph one covers identity, background, the wealth mechanism, and an
   important turning point or development.
 - Paragraph two adds one or two layers of character colour: a later business
-  chapter, investment, public role, philanthropy, sport, or meaningful yachting
-  background.
+  chapter, investment, public role, philanthropy, sport, or another durable
+  part of the person's public story.
 
 Useful character colour explains or makes the person memorable. Examples
 include an unusual route into an industry, a formative early job, an invention,
@@ -55,27 +79,45 @@ that became a serious investment or philanthropic programme.
 Use trivia sparingly. Include it only when it illuminates the person's path or
 character rather than merely being surprising.
 
-## Yachting context
+Do not default to birth and education. Lead with the decisive mechanism,
+turning point, or formative episode when it explains the person more directly.
+Paragraph two may continue the causal story, change direction, or add a
+durable public role; it must not become a standard “later activities” slot.
+End on a concrete insight or consequence, not a classification verdict,
+research caveat, or summary of what could not be proved.
 
-Do not append a yacht name to every biography. The vessel relationship is
-already available elsewhere in the system.
+## Vessel independence
 
-Include yachting only when reliable sources establish a meaningful story, such
-as:
+Owners are ordered by current-vessel LOA only to prioritise research. That
+ranking does not make the vessel part of the person's biography.
 
-- a long history of ownership or several successive commissions;
-- material involvement in a yacht's design or construction;
-- competitive sailing or regatta participation;
-- exploration, research, or philanthropy conducted through a yacht;
-- a commission that materially influenced yacht design;
-- another documented personal connection to the sea.
+Apply this counterfactual before accepting either biography:
 
-Do not infer personality, intended use, design involvement, or lifestyle from
-ownership alone. If there is no meaningful and sourced yachting angle, omit it.
+> Would the profile remain accurate, coherent, and complete if the person sold
+> every current vessel tomorrow?
+
+If not, remove the vessel material. Never mention a personally owned vessel
+merely because it appears in the source record, is unusually large, was
+recently delivered, was one of several successive commissions, or has a
+documented builder, designer, or name. Vessel names, dimensions, builders,
+delivery dates, and ownership histories belong elsewhere in the system.
+
+The short biography must not mention a personally owned vessel. The longer
+biography may describe independently significant maritime work only when it
+would remain part of the person's public story without the current ownership
+record. Examples include a fortune built in commercial shipping or
+shipbuilding, competitive sailing, or a sustained ocean-research or
+philanthropic programme. Focus on the enduring career or programme, not the
+transient asset used within it.
+
+For governments, municipalities, unresolved placeholders, and other
+non-natural records, explain the institutional or identity limitation without
+turning the current vessel relationship into a substitute biography.
 
 ## Voice
 
 - Use neutral third-person prose.
+- Use British English except inside official names, titles, and quotations.
 - Be confident but not promotional.
 - Prefer active, concrete verbs: founded, inherited, acquired, expanded,
   designed, developed, invested.
@@ -86,6 +128,16 @@ ownership alone. If there is no meaningful and sourced yachting angle, omit it.
 - Avoid moral judgment and speculation about motives or personality.
 - Omit current net worth unless essential to distinguish the person.
 - Do not include citations inside either biography; keep them in the dossier.
+- Do not name publishers, filings, databases, or source types in the prose.
+- Do not narrate confidence, evidence gaps, or the reasoning behind a wealth
+  classification. State the durable established position cleanly; for opaque
+  royal wealth, one concise distinction between public office and personal
+  assets is normally enough.
+- Avoid stock conclusions such as “remains rooted in”, “broadened his public
+  profile”, “best understood as”, and “the principal source of his wealth”.
+- Prefer facts with a useful shelf life. Current roles may be stated, but
+  current percentages, annual sales, rankings, store counts, or “latest
+  filing” details require a clear narrative purpose.
 
 Prefer causality:
 
@@ -101,15 +153,43 @@ Neither biography should become a compressed Wikipedia article. Avoid:
 
 - a year-by-year chronology;
 - lists of every company, asset, office, relative, or yacht;
-- repeated yacht specifications;
+- vessel names, specifications, builders, deliveries, or ownership histories
+  imported from the ranking data;
 - generic praise or reputation claims without strong evidence;
 - gossip and weakly sourced personality claims;
 - private family information that does not explain the public story;
 - controversies merely because they dominate search results;
 - padding added to meet a target length.
 
-As a rule of thumb, use no more than two dates and very few financial figures
-in the longer biography.
+Use no more than two explicit years and one monetary or percentage figure in
+the longer biography. Keep sentences at 30 words or fewer wherever possible.
+Name no more than three representative companies, investments, offices, or
+institutions unless additional names are indispensable to the causal story.
+
+## Character-colour test
+
+A detail qualifies only when it reveals how the person worked, made a
+consequential choice, developed a sustained interest, or changed direction.
+Generic philanthropy lists, sports-team inventories, current asset ownership,
+and surprising trivia without explanatory value do not qualify. If no strong
+detail exists, write a shorter profile.
+
+## Editorial acceptance rubric
+
+Score each person from 1 to 5 on every dimension and revise any score below 4:
+
+1. `causal_clarity`: the route to wealth or prominence is concrete.
+2. `human_specificity`: at least one detail makes this person distinct without
+   resorting to trivia.
+3. `durability`: the profile survives vessel sales and ordinary changes in
+   holdings, rankings, and annual figures.
+4. `source_invisibility`: the prose contains facts, not research narration.
+5. `natural_voice`: the biography does not read like a template, résumé,
+   classification explanation, or AI-generated conclusion.
+
+For batches, compare the whole tranche as a publication. Revise repeated
+openings, sentence rhythms, paragraph transitions, endings, and stock phrases.
+Run `scripts/audit_biography_corpus.py` before compilation.
 
 ## HTML
 
@@ -130,45 +210,10 @@ Each closing `</p>` in the JSON string must be followed by `\r\n`. Escape `&`,
 `<`, and `>` in HTML while preserving ordinary punctuation in `plain_text`.
 Separate the two `long_biography.plain_text` paragraphs with exactly `\n\n`.
 
-## Shahid Khan calibration
+## Calibration set
 
-Preferred short biography:
-
-> Shahid "Shad" Khan is a Pakistani-born American industrialist who built his
-> fortune in automotive manufacturing. After moving to Illinois as a teenager
-> and studying engineering, he developed a one-piece truck bumper, founded
-> Bumper Works and acquired Flex-N-Gate. He subsequently expanded into sport
-> through the Jacksonville Jaguars, Fulham F.C. and All Elite Wrestling.
-
-Preferred longer biography:
-
-> Shahid "Shad" Khan was born in Lahore and moved to the United States as a
-> teenager to study industrial engineering at the University of Illinois.
-> While working for automotive-parts manufacturer Flex-N-Gate, he developed a
-> one-piece truck bumper designed to resist corrosion. Khan founded Bumper
-> Works to manufacture the design and, in 1980, bought Flex-N-Gate from his
-> former employer, building it into a global automotive supplier.
->
-> His later investments have centred on sport and entertainment. He acquired
-> the Jacksonville Jaguars in 2012, becoming the NFL's first ethnic-minority
-> team owner, and later bought Fulham F.C. in London. Through his son Tony, the
-> family also backs All Elite Wrestling. These holdings broadened his public
-> profile, but the underlying fortune remains rooted in automotive
-> manufacturing and the combination of engineering, product development and
-> acquisition that transformed a small supplier into an international
-> business.
-
-Why they work:
-
-- both lead with identity rather than net worth;
-- the short version captures the complete arc in 53 words;
-- the longer version explains the formative route and pivotal acquisition;
-- sport is treated as a later chapter rather than the source of wealth;
-- neither becomes a chronology or inventory.
-
-Avoid:
-
-> Shahid Khan is a $15 billion billionaire and one of the world's richest
-> sports owners, ranked by Forbes...
-
-That version is stat-heavy and does not explain where the position came from.
+Read [editorial-calibrations.md](editorial-calibrations.md) before drafting.
+It provides distinct patterns for a founder/operator, heir/custodian, royal,
+investor/philanthropist, sparse public record, and maritime professional.
+Use the set to calibrate quality and variation; do not imitate one example
+across an entire tranche.

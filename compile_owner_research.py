@@ -90,6 +90,7 @@ def _validate_dossiers(
                 str(path),
                 "--owner-input",
                 str(owner_input),
+                "--strict-editorial",
             ],
             cwd=REPO_ROOT,
             text=True,

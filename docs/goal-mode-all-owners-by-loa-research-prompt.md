@@ -58,14 +58,15 @@ Inventory the dossier directory before assigning research. Treat an existing
 dossier as complete only when:
 
 - its person ID belongs to the frozen cohort;
-- it is schema version 4; and
+- it is schema version 5; and
 - this exact command succeeds:
 
 ```powershell
 .\venv\Scripts\python.exe `
   .agents\skills\research-owner-biography\scripts\validate_dossier.py `
   DOSSIER_PATH `
-  --owner-input output\owners-list.vessel-enriched.enriched.json
+  --owner-input output\owners-list.vessel-enriched.enriched.json `
+  --strict-editorial
 ```
 
 An absent, invalid, or stale dossier is pending regardless of its filename or
@@ -76,16 +77,20 @@ skip a difficult owner in favour of a later one. If fewer than
 `TRANCHE_SIZE` remain, process all remaining owners. If none remain, skip
 research and compile the final complete-cohort review artifacts.
 
-For the selected tranche, produce one schema-v4 dossier per owner beneath
+For the selected tranche, produce one schema-v5 dossier per owner beneath
 `output/owner-research/all-by-loa/`. Every dossier must contain:
 
-1. validated, evidence-backed short and longer biographies;
-2. `primary_industry`, `wealth_origin`, and `wealth_relationship`
+1. `record_type=person`, `institution`, or `unresolved_placeholder`;
+2. a source-hidden `biography_brief` plus validated short and longer
+   biographies and `editorial_assessment` for a person, or a non-applicable
+   `editorial_note` and null biography/editorial fields for a non-person
+   record;
+3. `primary_industry`, `wealth_origin`, and `wealth_relationship`
    classifications;
-3. an explicit Forbes result;
-4. an inventory of missing details and supported link types;
-5. only confidence-85-or-higher proposed details and links; and
-6. `review.status=pending`.
+4. an explicit Forbes result;
+5. an inventory of missing details and supported link types;
+6. only confidence-85-or-higher proposed details and links; and
+7. `review.status=pending`.
 
 Use a bounded worker pool of at most three research subagents. Give each
 subagent exactly one owner at a time and `$research-owner-biography`. When a
@@ -111,13 +116,37 @@ For every selected owner:
 - use a distinct Company Website proposal only when official evidence connects
   the person to the company;
 - keep lower-confidence facts and links in review candidates or uncertainties;
+- complete all research before drafting and build `biography_brief` from
+  durable verified facts, explicitly excluding source publishers, confidence
+  language, classification deliberation, vessel context, ranking, net worth,
+  and transient figures;
+- perform a separate editorial pass from that brief, then reverse-check every
+  material claim against the full source ledger;
 - draft a neutral 50-55 word short biography and a standalone,
-  two-paragraph longer biography of 90-190 words, preferably 120-170;
+  two-paragraph longer biography of 90-190 words without targeting a preferred
+  midpoint;
 - use the longer biography for the formative route, an important turning
-  point, and one or two strongly sourced layers of character colour, later
-  activity, or meaningful yachting context;
-- do not pad sparse profiles, repeat the short text verbatim, append yacht
-  names without a meaningful story, or infer character from ownership alone;
+  point, and one or two strongly sourced layers of character colour or later
+  activity;
+- keep publisher names, source attribution, evidence gaps, confidence,
+  classification reasoning, database language, and research-process narration
+  out of both biographies;
+- use British English, no more than two explicit years, no more than one
+  monetary or percentage figure, normally no sentence over 30 words, and no
+  inventory of more than three representative companies, investments,
+  offices, or institutions;
+- vary openings, paragraph transitions, rhythms, and endings against
+  `references/editorial-calibrations.md`; do not default to birthplace,
+  “His later...”, or a concluding wealth-classification verdict;
+- treat current-vessel relationships and LOA rank as selection and identity
+  context only, never as a reason to mention a vessel in either biography;
+- apply the sale-independence test: both biographies must remain accurate,
+  coherent, and complete if the owner sells every current vessel tomorrow;
+- never use vessel names, dimensions, builders, delivery dates, commissions,
+  or ownership histories as biography colour; independently significant
+  maritime careers or sustained competitive, research, or philanthropic work
+  may be described only by focusing on the enduring activity;
+- do not pad sparse profiles or repeat the short text verbatim;
 - save the dossier using the person ID in its filename;
 - leave `review.status=pending`; and
 - run the exact validation command above, fixing all failures before marking
@@ -125,16 +154,20 @@ For every selected owner:
 
 If a record represents an institution, government, municipality, unresolved
 placeholder, or otherwise is not a natural person, do not invent a human
-identity or personal wealth story. Preserve its cohort position and record the
-identity limitation explicitly under the research contract. Stop for user
-direction only if a schema-valid, honest dossier cannot represent the record;
-do not silently replace it with a later owner.
+identity or personal wealth story. Set the appropriate non-person
+`record_type`, leave `biography_brief`, `biography`, and `long_biography` null,
+populate `editorial_note`, and make no personal detail or social proposals.
+Preserve its cohort position; do not silently replace it with a later owner.
 
 After the tranche validates, perform a main-agent consistency review across
 all currently valid cohort dossiers:
 
-- both biography tones, structures, and lengths match the Shahid Khan
-  calibration;
+- biographies meet the five-part editorial rubric and use the complete
+  calibration set without copying one structure across the tranche;
+- published prose contains no source narration, classification deliberation,
+  database/process language, or repeated AI-style conclusions;
+- both biographies pass the sale-independence test and contain no vessel fact
+  introduced from the LOA-ranked owner relationship;
 - royal, sovereign, family, and personal wealth are not conflated, and an
   oil-producing state is not treated as evidence of personal `Energy` wealth;
 - inherited, self-made, dynastic/royal, family-transfer, mixed, and unknown
@@ -145,6 +178,15 @@ all currently valid cohort dossiers:
 - proposed select values use labels supported by the owner form;
 - social type IDs match the input lookup; and
 - no dossier is approved on the user's behalf.
+
+Run the tranche-level editorial audit and revise all issues before compiling:
+
+```powershell
+.\venv\Scripts\python.exe `
+  .agents\skills\research-owner-biography\scripts\audit_biography_corpus.py `
+  output\owner-research\all-by-loa `
+  --strict
+```
 
 Find the largest contiguous prefix of the frozen cohort for which every
 dossier validates. Let its size be `COMPLETED_PREFIX`. If it is greater than
@@ -173,6 +215,7 @@ Acceptance criteria for this run:
 
 - only the next requested tranche was researched;
 - every newly completed dossier validates against the exact enriched input;
+- every schema-v5 person dossier passes the strict corpus editorial audit;
 - all pre-existing valid dossiers remain unchanged unless validation required
   a repair;
 - the compiled checkpoint contains exactly the valid contiguous LOA prefix;

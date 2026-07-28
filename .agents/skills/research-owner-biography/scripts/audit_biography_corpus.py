@@ -1,0 +1,205 @@
+from __future__ import annotations
+
+import argparse
+import json
+import math
+import re
+import sys
+from collections import Counter, defaultdict
+from pathlib import Path
+from typing import Any
+
+from editorial_rules import (
+    STOCK_PHRASES,
+    WORD_PATTERN,
+    editorial_findings,
+)
+
+
+BIRTH_LED_PATTERN = re.compile(
+    r"^(?:Born\b|[^.!?]{0,90}\bwas born\b)",
+    re.IGNORECASE,
+)
+
+
+def _load_people(directory: Path) -> tuple[list[dict[str, Any]], list[str]]:
+    people: list[dict[str, Any]] = []
+    problems: list[str] = []
+    for path in sorted(directory.glob("*.research.json")):
+        try:
+            dossier = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            problems.append(f"{path.name}: cannot read dossier: {exc}")
+            continue
+        if dossier.get("schema_version") != 5:
+            problems.append(f"{path.name}: schema_version is not 5")
+            continue
+        if dossier.get("record_type") != "person":
+            continue
+        short = dossier.get("biography")
+        long = dossier.get("long_biography")
+        if not isinstance(short, dict) or not isinstance(long, dict):
+            problems.append(f"{path.name}: person dossier has no biographies")
+            continue
+        people.append(
+            {
+                "path": path,
+                "name": dossier.get("owner", {}).get(
+                    "display_name",
+                    path.stem,
+                ),
+                "short": short.get("plain_text", ""),
+                "long": long.get("plain_text", ""),
+            }
+        )
+    return people, problems
+
+
+def _tokens(text: str) -> list[str]:
+    return [token.casefold() for token in WORD_PATTERN.findall(text)]
+
+
+def _repeated_ngrams(
+    people: list[dict[str, Any]],
+    *,
+    size: int,
+    minimum_owners: int,
+) -> list[tuple[str, list[str]]]:
+    owners_by_gram: dict[tuple[str, ...], set[str]] = defaultdict(set)
+    for person in people:
+        tokens = _tokens(f"{person['short']} {person['long']}")
+        for index in range(len(tokens) - size + 1):
+            gram = tuple(tokens[index:index + size])
+            if any(any(character.isdigit() for character in token) for token in gram):
+                continue
+            owners_by_gram[gram].add(str(person["name"]))
+    repeated = [
+        (" ".join(gram), sorted(owners))
+        for gram, owners in owners_by_gram.items()
+        if len(owners) >= minimum_owners
+    ]
+    repeated.sort(key=lambda item: (-len(item[1]), item[0]))
+    return repeated
+
+
+def audit(
+    directory: Path,
+    *,
+    minimum_owners: int = 3,
+) -> tuple[list[str], list[str], int]:
+    people, issues = _load_people(directory)
+    observations: list[str] = []
+    if not people:
+        issues.append("no schema-v5 person dossiers found")
+        return issues, observations, 0
+    repetition_threshold = max(
+        minimum_owners,
+        math.ceil(len(people) * 0.08),
+    )
+
+    for person in people:
+        for section in ("short", "long"):
+            errors, warnings = editorial_findings(
+                str(person[section]),
+                section=(
+                    "biography"
+                    if section == "short"
+                    else "long_biography"
+                ),
+            )
+            issues.extend(
+                f"{person['name']} {section}: {finding}"
+                for finding in errors + warnings
+            )
+
+    combined_by_owner = {
+        str(person["name"]): (
+            f"{person['short']} {person['long']}".casefold()
+        )
+        for person in people
+    }
+    for phrase in STOCK_PHRASES:
+        owners = sorted(
+            name
+            for name, text in combined_by_owner.items()
+            if phrase in text
+        )
+        if len(owners) >= repetition_threshold:
+            issues.append(
+                f"stock phrase {phrase!r} appears for {len(owners)} owners: "
+                f"{', '.join(owners)}"
+            )
+
+    birth_led = [
+        str(person["name"])
+        for person in people
+        if BIRTH_LED_PATTERN.search(str(person["long"]))
+    ]
+    if len(people) >= 5 and len(birth_led) / len(people) > 0.5:
+        issues.append(
+            f"{len(birth_led)}/{len(people)} long biographies are birth-led: "
+            f"{', '.join(sorted(birth_led))}"
+        )
+
+    opening_counts: dict[tuple[str, ...], list[str]] = defaultdict(list)
+    for person in people:
+        opening = tuple(_tokens(str(person["long"]))[:6])
+        if opening:
+            opening_counts[opening].append(str(person["name"]))
+    for opening, owners in opening_counts.items():
+        if len(owners) >= repetition_threshold:
+            issues.append(
+                f"shared long-biography opening {' '.join(opening)!r}: "
+                f"{', '.join(sorted(owners))}"
+            )
+
+    for gram, owners in _repeated_ngrams(
+        people,
+        size=4,
+        minimum_owners=minimum_owners,
+    )[:20]:
+        observations.append(
+            f"repeated four-word phrase {gram!r} appears for "
+            f"{len(owners)} owners"
+        )
+
+    return issues, observations, len(people)
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(
+        description="Audit a dossier tranche for repeated editorial patterns."
+    )
+    parser.add_argument("directory", type=Path)
+    parser.add_argument(
+        "--minimum-owners",
+        type=int,
+        default=3,
+        help="Minimum distinct owners for a repeated pattern (default: 3).",
+    )
+    parser.add_argument(
+        "--strict",
+        action="store_true",
+        help="Return non-zero when editorial issues are found.",
+    )
+    args = parser.parse_args()
+    if args.minimum_owners < 2:
+        print("--minimum-owners must be at least 2", file=sys.stderr)
+        return 1
+
+    issues, observations, count = audit(
+        args.directory,
+        minimum_owners=args.minimum_owners,
+    )
+    print(f"Audited {count} schema-v5 person dossiers.")
+    for observation in observations:
+        print(f"INFO: {observation}")
+    for issue in issues:
+        print(f"ISSUE: {issue}", file=sys.stderr)
+    if issues and args.strict:
+        return 1
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

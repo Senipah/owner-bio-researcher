@@ -237,8 +237,8 @@ def _build_owner_summary(
     dossier: dict[str, Any],
     *,
     identity_score: int,
-    biography_score: int,
-    long_biography_score: int,
+    biography_score: int | None,
+    long_biography_score: int | None,
     changes: list[dict[str, Any]],
 ) -> dict[str, Any]:
     unresolved_fields = sorted(
@@ -260,11 +260,22 @@ def _build_owner_summary(
         "loa_rank": current_loa_rank(owner),
         "vessels": _owner_vessels(owner),
         "largest_current_vessel": _largest_current_vessel(owner),
+        "record_type": dossier.get("record_type", "person"),
         "identity_confidence": identity_score,
         "biography_confidence": biography_score,
-        "biography": dossier.get("biography", {}).get("plain_text"),
+        "biography": (
+            dossier.get("biography", {}).get("plain_text")
+            if isinstance(dossier.get("biography"), dict)
+            else None
+        ),
         "long_biography_confidence": long_biography_score,
-        "long_biography": dossier.get("long_biography", {}).get("plain_text"),
+        "long_biography": (
+            dossier.get("long_biography", {}).get("plain_text")
+            if isinstance(dossier.get("long_biography"), dict)
+            else None
+        ),
+        "editorial_note": dossier.get("editorial_note"),
+        "editorial_assessment": dossier.get("editorial_assessment"),
         "research_status": dossier.get("research_status"),
         "review_status": dossier.get("review", {}).get("status"),
         "forbes_profile": dossier.get("forbes_profile"),
@@ -293,11 +304,17 @@ def apply_dossier(
     person_id = owner["person_id"]
     if dossier.get("owner", {}).get("person_id") != person_id:
         raise ValueError(f"Dossier owner mismatch for person_id {person_id}")
+    record_type = dossier.get("record_type", "person")
     research_status = dossier.get("research_status")
-    unusable_research = research_status in {
-        "identity_conflict",
-        "insufficient_evidence",
-    }
+    unusable_research = (
+        record_type != "person"
+        or research_status
+        in {
+            "identity_conflict",
+            "insufficient_evidence",
+            "not_applicable",
+        }
+    )
     identity_score = _confidence_score(
         {"confidence": dossier.get("owner", {}).get("identity_confidence", {})},
         f"owner {person_id} identity",
@@ -327,30 +344,43 @@ def apply_dossier(
 
     changes: list[dict[str, Any]] = []
     biography = dossier.get("biography")
-    if not isinstance(biography, dict):
-        raise ValueError(f"Owner {person_id} has no dossier biography")
-    biography_score = _confidence_score(
-        biography,
-        f"owner {person_id} biography",
-    )
     long_biography = dossier.get("long_biography")
-    if not isinstance(long_biography, dict):
-        raise ValueError(f"Owner {person_id} has no dossier long_biography")
-    long_biography_score = _confidence_score(
-        long_biography,
-        f"owner {person_id} long biography",
-    )
+    biography_score: int | None = None
+    long_biography_score: int | None = None
+    if record_type == "person":
+        if not isinstance(biography, dict):
+            raise ValueError(f"Owner {person_id} has no dossier biography")
+        biography_score = _confidence_score(
+            biography,
+            f"owner {person_id} biography",
+        )
+        if not isinstance(long_biography, dict):
+            raise ValueError(f"Owner {person_id} has no dossier long_biography")
+        long_biography_score = _confidence_score(
+            long_biography,
+            f"owner {person_id} long biography",
+        )
+    elif biography is not None or long_biography is not None:
+        raise ValueError(
+            f"Owner {person_id} non-person dossier must not contain biographies"
+        )
     if review_status == "rejected" or unusable_research:
         workflow = ensure_owner_workflow(owner)
         workflow["ai_enriched"] = False
         owner["ai_research"] = {
             "dossier": dossier_path.replace("\\", "/"),
+            "record_type": record_type,
             "research_status": dossier.get("research_status"),
             "review_status": review_status,
             "compiled_at": generated_at,
             "change_count": 0,
+            "biography_brief": deepcopy(dossier.get("biography_brief")),
+            "editorial_assessment": deepcopy(
+                dossier.get("editorial_assessment")
+            ),
             "biography": deepcopy(biography),
             "long_biography": deepcopy(long_biography),
+            "editorial_note": deepcopy(dossier.get("editorial_note")),
             **{
                 field: deepcopy(dossier.get(field))
                 for field in RESEARCH_CLASSIFICATION_FIELDS
@@ -541,12 +571,16 @@ def apply_dossier(
         workflow["updated_in_system"] = False
     owner["ai_research"] = {
         "dossier": dossier_path.replace("\\", "/"),
+        "record_type": record_type,
         "research_status": dossier.get("research_status"),
         "review_status": review_status,
         "compiled_at": generated_at,
         "change_count": len(changes),
+        "biography_brief": deepcopy(dossier.get("biography_brief")),
+        "editorial_assessment": deepcopy(dossier.get("editorial_assessment")),
         "biography": deepcopy(biography),
         "long_biography": deepcopy(long_biography),
+        "editorial_note": deepcopy(dossier.get("editorial_note")),
         **{
             field: deepcopy(dossier.get(field))
             for field in RESEARCH_CLASSIFICATION_FIELDS
@@ -832,19 +866,22 @@ def render_research_report(report: dict[str, Any]) -> str:
             if forbes_url
             else _e(forbes.get("status"))
         )
-        cards.append(
-            f"""
-            <details class="owner-card" open>
-              <summary>
-                <span><span class="rank">{_e(rank_label)}</span>
-                {_e(owner.get("display_name"))}</span>
-                <span class="summary-badges">
-                  {_confidence_badge(owner.get("biography_confidence"))}
-                  <span class="status">{_e(owner.get("review_status"))}</span>
-                </span>
-              </summary>
-              <div class="owner-body">
-                <p class="vessels">{vessels}</p>
+        if owner.get("record_type") == "person":
+            assessment = owner.get("editorial_assessment") or {}
+            assessment_text = ", ".join(
+                f"{label}: {_e(assessment.get(field))}/5"
+                for field, label in (
+                    ("causal_clarity", "causal clarity"),
+                    ("human_specificity", "human specificity"),
+                    ("durability", "durability"),
+                    ("source_invisibility", "source invisibility"),
+                    ("natural_voice", "natural voice"),
+                )
+            )
+            summary_confidence = _confidence_badge(
+                owner.get("biography_confidence")
+            )
+            biography_review = f"""
                 <h3>Short biography
                   {_confidence_badge(owner.get("biography_confidence"))}</h3>
                 <blockquote>{_e(owner.get("biography"))}</blockquote>
@@ -855,6 +892,38 @@ def render_research_report(report: dict[str, Any]) -> str:
                 <div class="long-biography">
                   {_plain_paragraphs(owner.get("long_biography"))}
                 </div>
+                <p><strong>Editorial assessment:</strong>
+                  {assessment_text}<br>
+                  <span class="muted">{_e(assessment.get("notes"))}</span></p>
+            """
+        else:
+            summary_confidence = (
+                '<span class="status">non-person</span>'
+            )
+            editorial_note = owner.get("editorial_note") or {}
+            biography_review = f"""
+                <h3>Editorial identity note
+                  {_confidence_badge(editorial_note.get(
+                      "confidence", {}
+                  ).get("score"))}</h3>
+                <blockquote>{_e(editorial_note.get("plain_text"))}</blockquote>
+                <p class="muted">No biography change is proposed for this
+                non-person record.</p>
+            """
+        cards.append(
+            f"""
+            <details class="owner-card" open>
+              <summary>
+                <span><span class="rank">{_e(rank_label)}</span>
+                {_e(owner.get("display_name"))}</span>
+                <span class="summary-badges">
+                  {summary_confidence}
+                  <span class="status">{_e(owner.get("review_status"))}</span>
+                </span>
+              </summary>
+              <div class="owner-body">
+                <p class="vessels">{vessels}</p>
+                {biography_review}
                 <div class="origin">
                   <p><strong>Primary industry:</strong>
                   {_e(owner.get("primary_industry", {}).get("label"))}

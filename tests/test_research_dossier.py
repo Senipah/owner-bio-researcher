@@ -103,3 +103,104 @@ def test_validator_requires_two_long_biography_paragraphs(
         "long_biography.plain_text must contain exactly two paragraphs"
         in result.stderr
     )
+
+
+def test_validator_requires_person_biography_brief(tmp_path: Path) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["biography_brief"] = None
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert "biography_brief must be an object for person records" in result.stderr
+
+
+def test_validator_requires_editorial_scores_of_at_least_four(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["editorial_assessment"]["natural_voice"] = 3
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert (
+        "editorial_assessment.natural_voice must be 4 or 5"
+        in result.stderr
+    )
+
+
+def test_validator_rejects_research_narration_in_biography(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    plain = dossier["biography"]["plain_text"].replace(
+        "He subsequently expanded",
+        "Forbes identifies his success, and he subsequently expanded",
+    )
+    dossier["biography"]["plain_text"] = plain
+    dossier["biography"]["html"] = f"<p>{plain}</p>\r\n"
+    dossier["biography"]["word_count"] = len(plain.split())
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert "biography contains Forbes attribution" in result.stderr
+
+
+def test_validator_rejects_more_than_two_long_biography_years(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    plain = dossier["long_biography"]["plain_text"].replace(
+        "Sport and entertainment became a second chapter.",
+        "Sport expanded in 2001, 2002 and 2003.",
+    )
+    dossier["long_biography"]["plain_text"] = plain
+    dossier["long_biography"]["html"] = "".join(
+        f"<p>{paragraph}</p>\r\n"
+        for paragraph in plain.split("\n\n")
+    )
+    dossier["long_biography"]["word_count"] = len(plain.split())
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert "explicit years; maximum is 2" in result.stderr
+
+
+def test_validator_accepts_non_person_editorial_note(tmp_path: Path) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["record_type"] = "institution"
+    dossier["research_status"] = "not_applicable"
+    dossier["biography_brief"] = None
+    dossier["editorial_assessment"] = None
+    dossier["biography"] = None
+    dossier["long_biography"] = None
+    dossier["editorial_note"] = {
+        "plain_text": (
+            "This owner record represents a public institution rather than a "
+            "natural person. Person-specific biography, private-wealth, and "
+            "social-profile proposals are therefore not applicable."
+        ),
+        "confidence": {
+            "score": 98,
+            "band": "very_high",
+            "reason": "Official records establish the institutional identity.",
+        },
+        "source_ids": ["S1"],
+    }
+    dossier["proposed_details"] = []
+    dossier["proposed_socials"] = []
+    for field in (
+        "primary_industry",
+        "wealth_origin",
+        "wealth_relationship",
+    ):
+        dossier[field]["classification"] = "unknown"
+        dossier[field]["label"] = "Unknown"
+        dossier[field]["summary"] = "Not applicable to an institutional record."
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 0, result.stderr

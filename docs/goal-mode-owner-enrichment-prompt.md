@@ -14,14 +14,17 @@ batch.
 
 Continue until all selected owners have:
 
-1. one schema-v4 dossier beneath `output/owner-research/top-100/`;
-2. validated, evidence-backed short and longer biographies plus
+1. one schema-v5 dossier beneath `output/owner-research/top-100/`;
+2. a source-hidden biography brief plus validated short and longer biographies
+   and editorial assessment for people, or a non-person editorial note with
+   null biography/editorial fields;
+3. validated
    `primary_industry`, `wealth_origin`, and `wealth_relationship`
    classifications;
-3. an explicit Forbes result;
-4. an inventory of missing details and supported link types;
-5. only confidence-85-or-higher proposed details and links;
-6. `review.status=pending`.
+4. an explicit Forbes result;
+5. an inventory of missing details and supported link types;
+6. only confidence-85-or-higher proposed details and links;
+7. `review.status=pending`.
 
 Use a bounded worker pool of at most three research subagents. Give each
 subagent exactly one owner at a time and this skill. When one finishes and its
@@ -47,20 +50,38 @@ For every owner:
 - use a distinct Company Website proposal only when official evidence connects
   the person to the company;
 - keep lower-confidence facts and links in review candidates or uncertainties;
+- set `record_type` before drafting; institutions and unresolved placeholders
+  receive `editorial_note`, null biographies, and no personal proposals;
+- complete research first, then build `biography_brief` from durable verified
+  facts without source publishers, confidence language, classification
+  deliberation, vessel context, rankings, or transient figures;
+- perform a separate editorial pass from the brief and reverse-check its claims
+  against the full source ledger;
 - draft a neutral 50-55 word short biography and a standalone, two-paragraph
-  longer biography of 90-190 words, preferably 120-170;
+  longer biography of 90-190 words without targeting a preferred midpoint;
 - use the longer biography for the formative route, an important turning
-  point, and one or two strongly sourced layers of character colour, later
-  activity, or meaningful yachting context;
-- do not pad sparse profiles, repeat the short text verbatim, append yacht
-  names without a meaningful story, or infer character from ownership alone;
+  point, and one or two strongly sourced layers of character colour or later
+  activity;
+- keep publishers, source attribution, evidence gaps, confidence,
+  classification reasoning, database language, and research narration out of
+  both biographies;
+- apply the sale-independence test and never use current vessel names,
+  specifications, builders, delivery, commissioning, or ownership history as
+  biography material;
+- use British English, no more than two explicit years, no more than one
+  monetary or percentage figure, normally no sentence over 30 words, and no
+  dense inventory of companies, offices, charities, or investments;
+- vary openings, transitions, rhythms, and endings against the complete
+  editorial calibration set;
+- do not pad sparse profiles or repeat the short text verbatim;
 - validate the dossier with:
 
 ```powershell
 .\venv\Scripts\python.exe `
   .agents\skills\research-owner-biography\scripts\validate_dossier.py `
   DOSSIER_PATH `
-  --owner-input output\owners-list.top-100.enriched.json
+  --owner-input output\owners-list.top-100.enriched.json `
+  --strict-editorial
 ```
 
 Resume safely by treating an existing dossier as complete only when it passes
@@ -70,8 +91,10 @@ after each group of ten validated owners.
 
 After all dossiers validate, perform a main-agent consistency review:
 
-- both biography tones, structures, and lengths match the Shahid Khan
-  calibration;
+- biographies meet the five-part editorial rubric and use the complete
+  calibration set without copying one structure across the cohort;
+- published prose contains no source narration, classification deliberation,
+  database/process language, or repeated AI-style conclusions;
 - royal, sovereign, family, and personal wealth are not conflated, and an
   oil-producing state is not treated as evidence of personal `Energy` wealth;
 - inherited, self-made, dynastic/royal, family-transfer, mixed, and unknown
@@ -82,6 +105,15 @@ After all dossiers validate, perform a main-agent consistency review:
 - proposed select values use labels supported by the owner form;
 - social type IDs match the input lookup;
 - no dossier is approved on the CEO's behalf.
+
+Run the cohort editorial audit and revise all issues before compilation:
+
+```powershell
+.\venv\Scripts\python.exe `
+  .agents\skills\research-owner-biography\scripts\audit_biography_corpus.py `
+  output\owner-research\top-100 `
+  --strict
+```
 
 Compile the review artifacts:
 
@@ -99,6 +131,7 @@ Acceptance criteria:
 - the compiled JSON contains every and only unique current Top-100 owner,
   ordered by minimum current vessel rank;
 - every compiled owner has a validated dossier;
+- every schema-v5 person dossier passes the strict corpus editorial audit;
 - `_baseline`, `person_id`, `profile_url`, and existing `profile_key` values
   remain unchanged;
 - pending output owners retain `workflow.ai_enriched=false`;
