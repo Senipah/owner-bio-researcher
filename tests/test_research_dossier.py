@@ -148,6 +148,28 @@ def test_validator_rejects_research_narration_in_biography(
     assert "biography contains Forbes attribution" in result.stderr
 
 
+def test_validator_rejects_negative_wealth_taxonomy_contrast(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    plain = dossier["biography"]["plain_text"].replace(
+        "He subsequently expanded",
+        "His career reflects public service rather than commercial enterprise. "
+        "He expanded",
+    )
+    dossier["biography"]["plain_text"] = plain
+    dossier["biography"]["html"] = f"<p>{plain}</p>\r\n"
+    dossier["biography"]["word_count"] = len(plain.split())
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert (
+        "biography contains negative wealth-taxonomy contrast"
+        in result.stderr
+    )
+
+
 def test_validator_rejects_more_than_two_long_biography_years(
     tmp_path: Path,
 ) -> None:

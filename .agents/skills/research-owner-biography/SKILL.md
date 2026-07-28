@@ -130,6 +130,11 @@ tracking. Do not let parallel agents edit the shared owner dataset.
 - Keep source attribution, evidence gaps, confidence, and classification
   reasoning out of published prose. The biography must not reveal the research
   process or database contract.
+- Keep public-versus-private asset distinctions in classification metadata.
+  For royal and dynastic owners, write positively about verified formation,
+  succession, public work, interests, and influence; never explain the subject
+  by contrasting those things with commercial enterprise, entrepreneurship, or
+  a personal fortune.
 - Never mention a personally owned vessel merely because it appears in the
   source owner record, determines LOA rank, was commissioned or delivered, or
   has been owned for a long time. Vessel names, dimensions, builders, and
@@ -171,6 +176,9 @@ tracking. Do not let parallel agents edit the shared owner dataset.
   `editorial_note` instead.
 - Confirm neither biography names sources, narrates evidence or confidence,
   explains classifications, or exposes database/process language.
+- Confirm neither biography contains a negative wealth-taxonomy contrast such
+  as "rather than commercial enterprise", "governmental rather than
+  commercial", or "state assets rather than personal wealth".
 - Confirm the longer biography uses no more than two explicit years, no more
   than one monetary or percentage figure, and normally no sentence over 30
   words.

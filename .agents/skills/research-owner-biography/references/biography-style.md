@@ -130,9 +130,16 @@ turning the current vessel relationship into a substitute biography.
 - Do not include citations inside either biography; keep them in the dossier.
 - Do not name publishers, filings, databases, or source types in the prose.
 - Do not narrate confidence, evidence gaps, or the reasoning behind a wealth
-  classification. State the durable established position cleanly; for opaque
-  royal wealth, one concise distinction between public office and personal
-  assets is normally enough.
+  classification. State the durable established position cleanly.
+- Keep public-versus-private asset distinctions in the classification metadata,
+  not the biography. For opaque royal or dynastic wealth, describe the person's
+  verified formation, succession, public work, interests, and influence; omit
+  an uncertain commercial wealth story instead of explaining its absence.
+- Never define a person through a negative taxonomy contrast such as "rather
+  than commercial enterprise", "governmental rather than commercial", "not a
+  documented entrepreneurial fortune", or "state assets rather than personal
+  wealth". These constructions reveal the enrichment brief and sound
+  formulaic even when factually careful.
 - Avoid stock conclusions such as “remains rooted in”, “broadened his public
   profile”, “best understood as”, and “the principal source of his wealth”.
 - Prefer facts with a useful shelf life. Current roles may be stated, but

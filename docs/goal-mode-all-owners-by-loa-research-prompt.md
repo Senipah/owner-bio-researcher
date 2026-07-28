@@ -131,6 +131,10 @@ For every selected owner:
 - keep publisher names, source attribution, evidence gaps, confidence,
   classification reasoning, database language, and research-process narration
   out of both biographies;
+- keep public-versus-private asset analysis in dossier metadata; for royal and
+  dynastic owners, describe verified formation, succession, public work,
+  interests, and influence without contrasting them against commercial
+  enterprise, entrepreneurship, or personal wealth;
 - use British English, no more than two explicit years, no more than one
   monetary or percentage figure, normally no sentence over 30 words, and no
   inventory of more than three representative companies, investments,
@@ -165,7 +169,8 @@ all currently valid cohort dossiers:
 - biographies meet the five-part editorial rubric and use the complete
   calibration set without copying one structure across the tranche;
 - published prose contains no source narration, classification deliberation,
-  database/process language, or repeated AI-style conclusions;
+  negative wealth-taxonomy contrasts, database/process language, or repeated
+  AI-style conclusions;
 - both biographies pass the sale-independence test and contain no vessel fact
   introduced from the LOA-ranked owner relationship;
 - royal, sovereign, family, and personal wealth are not conflated, and an

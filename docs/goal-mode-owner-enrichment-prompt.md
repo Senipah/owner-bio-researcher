@@ -65,6 +65,10 @@ For every owner:
 - keep publishers, source attribution, evidence gaps, confidence,
   classification reasoning, database language, and research narration out of
   both biographies;
+- keep public-versus-private asset analysis in dossier metadata; for royal and
+  dynastic owners, describe verified formation, succession, public work,
+  interests, and influence without contrasting them against commercial
+  enterprise, entrepreneurship, or personal wealth;
 - apply the sale-independence test and never use current vessel names,
   specifications, builders, delivery, commissioning, or ownership history as
   biography material;
@@ -94,7 +98,8 @@ After all dossiers validate, perform a main-agent consistency review:
 - biographies meet the five-part editorial rubric and use the complete
   calibration set without copying one structure across the cohort;
 - published prose contains no source narration, classification deliberation,
-  database/process language, or repeated AI-style conclusions;
+  negative wealth-taxonomy contrasts, database/process language, or repeated
+  AI-style conclusions;
 - royal, sovereign, family, and personal wealth are not conflated, and an
   oil-producing state is not treated as evidence of personal `Energy` wealth;
 - inherited, self-made, dynastic/royal, family-transfer, mixed, and unknown

@@ -61,25 +61,23 @@ Short biography:
 
 > Sheikh Tamim bin Hamad Al Thani is Qatar’s Amir and head of state. Educated at
 > Sherborne and Sandhurst, he entered the armed forces before becoming heir
-> apparent and succeeding his father. His standing derives from dynastic
-> succession and public office, while Qatar’s sovereign investments remain
-> national assets rather than part of a documented commercial career.
+> apparent and succeeding his father. His rule has combined domestic
+> development with an increasingly visible international role for Qatar,
+> particularly through diplomacy, investment and sport.
 
 Longer biography:
 
 > Sheikh Tamim bin Hamad Al Thani was educated at Sherborne School and the Royal
 > Military Academy Sandhurst before joining Qatar’s armed forces. He became
-> heir apparent in 2003 and succeeded his father as Amir, taking responsibility
-> for the state after a planned transfer of power rather than a commercial
-> succession.
+> heir apparent in 2003 and succeeded his father ten years later after a
+> planned transfer of power.
 >
-> His public role combines head-of-state duties with oversight of Qatar’s
-> long-term economic direction and international relationships. Sport has
-> provided another sustained strand: he helped shape the country’s Olympic
-> ambitions and its emergence as a major host and investor. His personal
-> financial position is not transparently separated from wider dynastic
-> holdings, so his biography rests on succession, government and public
-> programmes rather than attributing national assets to him.
+> As Amir, he has overseen a period in which Qatar has expanded its diplomatic
+> reach, international investments and cultural ambitions. Sport has been a
+> sustained personal and national interest: he served on the International
+> Olympic Committee and helped shape Qatar’s emergence as a major host. His
+> public life is defined by succession, statecraft and the effort to give a
+> small Gulf state an unusually prominent global role.
 
 ## Investor and philanthropist: Yuri Milner
 

@@ -72,6 +72,24 @@ PROCESS_LEAK_PATTERNS = (
             re.IGNORECASE,
         ),
     ),
+    (
+        "negative wealth-taxonomy contrast",
+        re.compile(
+            r"\b(?:"
+            r"rather than\s+(?:a |an |part of a |part of an )?"
+            r"(?:documented |private )?"
+            r"(?:commercial|entrepreneurial|business)"
+            r"|(?:governmental|hereditary|dynastic)\s+rather than\s+"
+            r"(?:commercial|entrepreneurial|business)"
+            r"|(?:state|sovereign|national|public)\s+assets?\s+rather than\s+"
+            r"(?:personal|private)"
+            r"|(?:state|sovereign|national|public)\s+assets?\s+"
+            r"rather than\s+evidence of\s+(?:a |an |his |her |their )?"
+            r"(?:personal|private)?\s*(?:wealth|fortune|business)"
+            r")\b",
+            re.IGNORECASE,
+        ),
+    ),
 )
 
 STOCK_PHRASES = (
