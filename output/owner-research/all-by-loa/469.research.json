@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "institution",
   "owner": {
     "person_id": 469,
@@ -7,7 +7,7 @@
     "identity_confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The official City of Rijeka website uses that institutional name for the municipal administration, and its City Council page identifies the council as the citizens' representative and local self-government body."
+      "reason": "The current official City of Rijeka website identifies the municipal administration, City Council and mayoral executive functions under the City of Rijeka name, resolving the input label as a public local-government institution."
     }
   },
   "input_snapshot": {
@@ -92,17 +92,17 @@
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Exact-name and Forbes profile searches found no Rijeka City or City of Rijeka personal profile. A person profile is not applicable because the record is a municipal institution."
+      "reason": "Fresh exact-name and Forbes-profile searches found no Rijeka City or City of Rijeka profile. Search results contained only incidental references to the Croatian city, and a person profile is not applicable to this municipal institution."
     }
   },
   "primary_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "The identified owner is a municipal government, so no personal wealth-producing industry is applicable.",
+    "summary": "The record identifies a municipal government, so no personal wealth-producing industry applies.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Official City of Rijeka pages establish a local-government identity and public administrative functions rather than a natural person's private industry."
+      "reason": "Current official City of Rijeka pages establish a local-government identity, representative council and public administrative functions rather than a natural person's private industry."
     },
     "source_ids": [
       "S1",
@@ -112,11 +112,11 @@
   "wealth_origin": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Personal wealth origin is not applicable to the City of Rijeka as a local-government institution.",
+    "summary": "Personal wealth origin does not apply to the City of Rijeka as a local-government institution.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The official municipal structure and council responsibilities establish public administration, leaving no basis for a personal wealth-origin classification."
+      "reason": "The official municipal structure and statutory council and mayoral responsibilities establish public administration, leaving no basis for a personal wealth-origin classification."
     },
     "source_ids": [
       "S1",
@@ -126,29 +126,31 @@
   "wealth_relationship": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "The dossier's private-wealth relationship taxonomy does not apply to a municipal government exercising public functions.",
+    "summary": "The private-wealth relationship taxonomy does not apply to a municipal government exercising statutory public functions.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Official sources identify the City of Rijeka and its council as components of local government, not a person with a founder, operator, investor or ownership relationship to private wealth."
+      "reason": "Official sources identify the City of Rijeka, its representative council and its executive office as components of local government, not a person with a founder, operator, investor or private-ownership relationship."
     },
     "source_ids": [
       "S1",
-      "S2"
+      "S2",
+      "S3"
     ]
   },
   "biography_brief": null,
   "editorial_assessment": null,
   "editorial_note": {
-    "plain_text": "This record represents the City of Rijeka, Croatia's municipal government, rather than a natural person. The city's administration comprises a mayor, council and administrative departments; its council represents Rijeka's citizens and exercises local self-government functions including budgets, development programmes and municipal acts. Person-specific biography, private-wealth classifications, personal details and social-profile proposals are therefore not applicable.",
+    "plain_text": "This owner record represents the City of Rijeka, a Croatian local-government institution, not a natural person. The municipality acts through a directly elected mayor, City Council and administrative departments exercising statutory self-government functions. Person-specific biography, private-wealth classifications, birth and mortality fields, and personal social profiles therefore do not apply. No current mayor, councillor or other office-holder should be substituted for the institutional record.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The official municipal administration and City Council pages directly establish the institutional identity, government structure and public functions described."
+      "reason": "Current official municipal administration, City Council and mayoral-powers pages directly establish the institutional identity, government structure and public functions described."
     },
     "source_ids": [
       "S1",
-      "S2"
+      "S2",
+      "S3"
     ]
   },
   "biography": null,
@@ -167,32 +169,47 @@
       "supports": [
         "City of Rijeka institutional identity",
         "municipal administration",
-        "mayor, City Council and administrative departments",
+        "Mayor, City Council and administrative departments",
         "official municipal contact information",
         "institutional rather than personal identity"
       ]
     },
     {
       "id": "S2",
-      "url": "https://www.rijeka.hr/en/city-government/city-council/scope-and-rules-of-procedure-of-the-city-council/",
-      "title": "Scope and Rules of Procedure of the City Council",
+      "url": "https://www.rijeka.hr/en/city-government/city-council/",
+      "title": "City Council",
       "publisher": "City of Rijeka",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "City Council as the representative body of Rijeka's citizens",
-        "local self-government status",
-        "municipal budget and development responsibilities",
-        "authority to adopt municipal acts",
+        "Current City Council structure",
+        "City Council as the representative body of the local self-government unit",
+        "Authority to adopt municipal decisions and acts",
         "institutional rather than personal identity"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.rijeka.hr/en/city-government/mayor/powers-of-mayor/",
+      "title": "Powers of the mayor",
+      "publisher": "City of Rijeka",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Mayor as the elected representative and executive office of the City",
+        "Statutory local self-government functions",
+        "City Council budget and legislative relationship",
+        "Municipal administration rather than personal ownership",
+        "Office-holder must not replace the institutional identity"
       ]
     }
   ],
   "uncertainties": [
-    "The source system stores Rijeka City in a person-shaped record. No human identity should be substituted, and the record should ideally be migrated to an organisation or government-owner entity type.",
+    "The input label Rijeka City corresponds to the official English institutional name City of Rijeka. The immutable display name was preserved.",
+    "The source system stores Rijeka City in a person-shaped record. No current or former mayor, councillor or other human identity should be substituted, and the record should ideally be migrated to an organisation or government-owner entity type.",
     "The input's human-specific nationality, residence, mortality and blank birth, gender and biography fields do not meaningfully apply to a municipality. They were preserved as immutable input, with no personal proposals made.",
     "All three wealth dimensions are Unknown by design because municipal budgets, property and public functions are not a natural person's private wealth.",
-    "Focused Forbes searches found no applicable personal profile for Rijeka City or the City of Rijeka.",
+    "Fresh Forbes searches found no applicable profile for Rijeka City or the City of Rijeka; incidental article mentions do not constitute a profile.",
     "The municipality publishes official institutional web and social channels, but proposing them through personal or company link types would misstate their nature."
   ],
   "review": {

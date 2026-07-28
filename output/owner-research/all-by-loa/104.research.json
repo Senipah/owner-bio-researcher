@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 104,
@@ -7,7 +7,7 @@
     "identity_confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The immutable owner's exact name and Emirati identity align with current UAE government biographies, including his offices, birthplace, birth date, education, and public-service history."
+      "reason": "The exact name, Emirati identity, current offices, birth details, education and royal lineage align across the owner record and current UAE government biographies."
     }
   },
   "input_snapshot": {
@@ -84,21 +84,42 @@
   "research_status": "limited",
   "biography_brief": {
     "durable_identity": "Emirati royal, diplomat, UAE Deputy Prime Minister and Minister of Foreign Affairs.",
-    "wealth_or_prominence_route": "Royal lineage and political-science training led into federal information and culture roles, followed by responsibility for the UAE's foreign policy.",
-    "turning_point": "Appointment as foreign minister in 2006 began a long diplomatic chapter that included signing the Abraham Accords for the UAE.",
-    "later_chapter": "The deputy premiership added a broader government role while he retained the foreign-affairs portfolio.",
-    "character_detail": "He is an avid reader and student of history, listens to Umm Kulthum and Fairuz, and has a particular interest in scuba diving.",
+    "defining_work": "A long ministerial tenure directing the UAE's foreign policy and widening its diplomatic relationships.",
+    "formative_context": "A political-science degree from UAE University preceded federal roles in information and culture.",
+    "decisive_moment": "He led negotiations to establish diplomatic relations with Israel and signed the Abraham Accords for the UAE.",
+    "enduring_dimensions": [
+      "Leadership of the UAE's foreign policy",
+      "Expansion of diplomatic and economic partnerships",
+      "Federal responsibility for education and human resources"
+    ],
+    "character_detail": "He is an avid reader and student of history with interests in classical Arab music and scuba diving.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Open with his current responsibility for UAE foreign policy and the longevity of that role."
+      },
+      {
+        "mode": "public_contribution",
+        "angle": "Begin with the diplomatic negotiations and signing that established UAE-Israel relations."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Use political-science study and federal information roles to introduce his preparation for diplomacy."
+      }
+    ],
     "excluded_transient_context": [
-      "Current vessel ownership and LOA cohort ranking",
-      "Current net worth or royal-family rankings",
-      "Unverified private-company or investment interests",
+      "Current or historical vessel association, ownership and LOA ranking",
+      "Current net worth and royal-family rankings",
+      "Unverified private companies, holdings or investment interests",
       "Abu Dhabi sovereign and government assets as personal wealth",
-      "Short-lived diplomatic developments"
+      "Short-lived diplomatic developments",
+      "Source publishers, confidence language and classification deliberation"
     ],
     "source_ids": [
       "S1",
       "S2",
-      "S3"
+      "S3",
+      "S4"
     ]
   },
   "editorial_assessment": {
@@ -107,10 +128,14 @@
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "public_role_then_foundation",
     "calibration_archetypes": [
       "royal_public_office"
     ],
-    "notes": "The rewrite follows a political-science-to-diplomacy route, uses the Abraham Accords as the defining international milestone and closes with specific personal interests instead of private-wealth speculation."
+    "notes": "The long profile opens on Sheikh Abdullah's defining diplomatic responsibility, then adds his preparation, ministerial milestone and specific personal interests. State stewardship and private-wealth uncertainty remain outside the published prose."
   },
   "editorial_note": null,
   "forbes_profile": {
@@ -119,47 +144,46 @@
     "confidence": {
       "score": 96,
       "band": "very_high",
-      "reason": "Focused exact-name and site:forbes.com/profile searches found Forbes reporting that mentions Sheikh Abdullah, but no dedicated matching personal profile."
+      "reason": "Focused exact-name and site:forbes.com/profile searches found Forbes reporting that mentions Sheikh Abdullah, but no dedicated personal profile matching his identity."
     }
   },
   "primary_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No strong public source identifies a principal privately held wealth-producing sector for Sheikh Abdullah. His documented career is governmental, while Abu Dhabi's sovereign investment assets are government funds and do not establish a personal industry.",
+    "summary": "No reliable public source identifies a principal privately held wealth-producing sector for Sheikh Abdullah. His documented work is in government, while Abu Dhabi's sovereign investment assets are government funds.",
     "confidence": {
       "score": 95,
       "band": "very_high",
-      "reason": "Official sources document his public offices and ADIA's government mandate, while focused research found no reliable evidence of a distinct private operating or investment sector."
+      "reason": "Current official sources document a public-service career, and ADIA's governance disclosure establishes that its invested funds are supplied by and returned to the Government of Abu Dhabi; no distinct private operating sector was isolated."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S4"
+      "S5"
     ]
   },
   "wealth_origin": {
     "classification": "dynastic_royal",
     "label": "Dynastic / royal",
-    "summary": "Access to Al Nahyan family standing follows his birth as a son of UAE founder Sheikh Zayed, while his independent public prominence developed through a long federal diplomatic career.",
+    "summary": "His access to Al Nahyan family standing follows his birth as a son of Sheikh Zayed, the founding president of the UAE, while his public prominence developed through a long diplomatic career.",
     "confidence": {
-      "score": 97,
+      "score": 98,
       "band": "very_high",
-      "reason": "Established UAE reporting identifies him as Sheikh Zayed's son, while current government sources document the public-service route through which his standing developed."
+      "reason": "Sheikh Abdullah directly identified Sheikh Zayed as his father on an official ministry page, and the UAE government's founder profile identifies Sheikh Zayed as the country's founding president."
     },
     "source_ids": [
-      "S1",
-      "S2",
-      "S3"
+      "S3",
+      "S4"
     ]
   },
   "wealth_relationship": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Reliable public evidence does not identify Sheikh Abdullah's principal privately owned wealth-producing assets or establish whether his relationship to family wealth is beneficial, custodial, or operational. Government and sovereign assets are excluded.",
+    "summary": "Reliable public evidence does not identify Sheikh Abdullah's principal privately owned wealth-producing assets or establish a personal operating, investment, beneficiary or custodial relationship.",
     "confidence": {
       "score": 95,
       "band": "very_high",
-      "reason": "The evidence establishes dynasty and office but does not transparently separate a personal asset base or ownership role from wider family and state institutions."
+      "reason": "The evidence establishes royal lineage and public office but does not isolate a personal asset base or ownership role from wider family and state institutions."
     },
     "source_ids": [
       "S1",
@@ -169,13 +193,13 @@
     ]
   },
   "biography": {
-    "plain_text": "Sheikh Abdullah bin Zayed Al Nahyan is an Emirati royal, diplomat, Deputy Prime Minister and Minister of Foreign Affairs. Trained in political science, he advanced through information and culture roles before leading foreign policy. He later signed the Abraham Accords for the UAE, while interests in history and scuba diving add a personal dimension.",
-    "html": "<p>Sheikh Abdullah bin Zayed Al Nahyan is an Emirati royal, diplomat, Deputy Prime Minister and Minister of Foreign Affairs. Trained in political science, he advanced through information and culture roles before leading foreign policy. He later signed the Abraham Accords for the UAE, while interests in history and scuba diving add a personal dimension.</p>\r\n",
-    "word_count": 54,
+    "plain_text": "Sheikh Abdullah bin Zayed Al Nahyan is the UAE's Deputy Prime Minister and Minister of Foreign Affairs. A son of founding president Sheikh Zayed, he studied political science and moved through information and culture roles before leading foreign policy. His long diplomatic tenure includes expanding international ties and signing the Abraham Accords for the UAE.",
+    "html": "<p>Sheikh Abdullah bin Zayed Al Nahyan is the UAE's Deputy Prime Minister and Minister of Foreign Affairs. A son of founding president Sheikh Zayed, he studied political science and moved through information and culture roles before leading foreign policy. His long diplomatic tenure includes expanding international ties and signing the Abraham Accords for the UAE.</p>\r\n",
+    "word_count": 55,
     "confidence": {
-      "score": 96,
+      "score": 97,
       "band": "very_high",
-      "reason": "The current official biography supports his education, career sequence, offices, diplomatic milestone and personal interests, while established reporting confirms his royal lineage."
+      "reason": "Current UAE government biographies support his offices, education, career progression and diplomatic milestone, while official sources establish his lineage as Sheikh Zayed's son."
     },
     "source_ids": [
       "S1",
@@ -185,13 +209,13 @@
     ]
   },
   "long_biography": {
-    "plain_text": "Political science at UAE University prepared Sheikh Abdullah bin Zayed Al Nahyan for a career in federal service. He worked in information and culture before becoming minister, then took charge of foreign affairs in 2006. He later added the deputy premiership.\n\nSheikh Abdullah helped widen the country's diplomatic links across Asia, Africa and Latin America, and signed the Abraham Accords for the UAE in 2020. Away from formal diplomacy, he is an avid reader and student of history, listens to Umm Kulthum and Fairuz, and is particularly interested in scuba diving.",
-    "html": "<p>Political science at UAE University prepared Sheikh Abdullah bin Zayed Al Nahyan for a career in federal service. He worked in information and culture before becoming minister, then took charge of foreign affairs in 2006. He later added the deputy premiership.</p>\r\n<p>Sheikh Abdullah helped widen the country's diplomatic links across Asia, Africa and Latin America, and signed the Abraham Accords for the UAE in 2020. Away from formal diplomacy, he is an avid reader and student of history, listens to Umm Kulthum and Fairuz, and is particularly interested in scuba diving.</p>\r\n",
-    "word_count": 91,
+    "plain_text": "Sheikh Abdullah bin Zayed Al Nahyan has directed the United Arab Emirates' foreign policy since becoming foreign minister in 2006. A political-science graduate of UAE University, he previously worked in federal information and culture roles. He later became Deputy Prime Minister while retaining the foreign-affairs portfolio.\n\nHis tenure has widened the country's diplomatic reach and supported new economic partnerships. He also led negotiations to establish diplomatic relations with Israel and signed the Abraham Accords for the UAE in 2020. Beyond formal duties, he is an avid reader and student of history with interests in classical Arab music and scuba diving.",
+    "html": "<p>Sheikh Abdullah bin Zayed Al Nahyan has directed the United Arab Emirates' foreign policy since becoming foreign minister in 2006. A political-science graduate of UAE University, he previously worked in federal information and culture roles. He later became Deputy Prime Minister while retaining the foreign-affairs portfolio.</p>\r\n<p>His tenure has widened the country's diplomatic reach and supported new economic partnerships. He also led negotiations to establish diplomatic relations with Israel and signed the Abraham Accords for the UAE in 2020. Beyond formal duties, he is an avid reader and student of history with interests in classical Arab music and scuba diving.</p>\r\n",
+    "word_count": 100,
     "confidence": {
-      "score": 96,
+      "score": 97,
       "band": "very_high",
-      "reason": "The current official ministry biography directly supports the education, career sequence, diplomatic expansion, Abraham Accords role, deputy premiership and personal interests."
+      "reason": "The current ministry biography directly supports the offices, education, career sequence, diplomatic expansion, Abraham Accords role and personal interests."
     },
     "source_ids": [
       "S1",
@@ -206,7 +230,7 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The current Ministry of Foreign Affairs biography and a March 2026 UAE Cabinet record state these exact offices."
+        "reason": "The current Ministry of Foreign Affairs biography and UAE Cabinet member page state these exact offices."
       },
       "source_ids": [
         "S1",
@@ -220,7 +244,7 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The official Ministry of Foreign Affairs biography consistently identifies him with the male royal title Sheikh and male pronouns."
+        "reason": "The official ministry biography consistently identifies him with the male royal title Sheikh and male pronouns."
       },
       "source_ids": [
         "S1"
@@ -281,16 +305,17 @@
     {
       "action": "fill_missing",
       "field": "biography",
-      "value": "<p>Sheikh Abdullah bin Zayed Al Nahyan is an Emirati royal, diplomat, Deputy Prime Minister and Minister of Foreign Affairs. Trained in political science, he advanced through information and culture roles before leading foreign policy. He later signed the Abraham Accords for the UAE, while interests in history and scuba diving add a personal dimension.</p>\r\n",
+      "value": "<p>Sheikh Abdullah bin Zayed Al Nahyan is the UAE's Deputy Prime Minister and Minister of Foreign Affairs. A son of founding president Sheikh Zayed, he studied political science and moved through information and culture roles before leading foreign policy. His long diplomatic tenure includes expanding international ties and signing the Abraham Accords for the UAE.</p>\r\n",
       "confidence": {
-        "score": 96,
+        "score": 97,
         "band": "very_high",
-        "reason": "The replacement supplies a missing biography using the current offices, federal-service route, diplomatic milestone and personal interests documented by official sources."
+        "reason": "The biography supplies a missing, durable account of Sheikh Abdullah's royal formation, public-service progression and defining diplomatic work."
       },
       "source_ids": [
         "S1",
         "S2",
-        "S3"
+        "S3",
+        "S4"
       ]
     }
   ],
@@ -299,7 +324,7 @@
       "type_id": "3",
       "type": "Twitter",
       "url": "https://x.com/ABZayed",
-      "verification": "The UAE Ministry of Foreign Affairs embeds an @ABZayed post under Sheikh Abdullah's Arabic name and office, providing a direct government cross-link to the account.",
+      "verification": "The UAE Ministry of Foreign Affairs embeds an @ABZayed post under Sheikh Abdullah's Arabic name and ministerial office, directly cross-linking the account; type ID 3 is copied from the current owner input lookup.",
       "confidence": {
         "score": 99,
         "band": "very_high",
@@ -320,7 +345,7 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The existing record contains spaces rather than the canonical article path; the canonical page matches the official identity, offices, and birth details, but an existing social type is surfaced for review rather than added as a new link."
+        "reason": "The existing record uses a non-canonical path containing spaces. The canonical article matches the official identity and offices, but the existing social record is surfaced for review rather than duplicated."
       },
       "source_ids": [
         "S1",
@@ -337,47 +362,57 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
-        "Deputy Prime Minister and Minister of Foreign Affairs offices",
-        "ministerial appointment dates",
-        "education",
-        "career history",
-        "Abraham Accords role",
-        "birthplace",
-        "birth date",
+        "exact identity",
+        "current Deputy Prime Minister and Minister of Foreign Affairs offices",
+        "ministerial appointment history",
+        "education and career history",
+        "Abraham Accords negotiations and signing",
+        "birthplace and birth date",
         "gender",
-        "interest in history and scuba diving",
-        "interest in classical music, Umm Kulthum and Fairuz"
+        "interest in history, classical Arab music and scuba diving"
       ]
     },
     {
       "id": "S2",
-      "url": "https://uaecabinet.ae/en/news/uae-cabinet-chaired-by-mohammed-bin-rashid-praises-heroic-defence-spirit-of-uae-armed-forces-high-national-spirit-by-both-citizens-and-residents-outstanding-sense-of-responsibility-by-all-work-teams-across-uae",
-      "title": "UAE Cabinet chaired by Mohammed bin Rashid praises heroic defence spirit of UAE Armed Forces",
+      "url": "https://uaecabinet.ae/en/cabinet-members?page=1",
+      "title": "The Cabinet Members",
       "publisher": "UAE Cabinet",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "current Deputy Prime Minister role",
-        "current Minister of Foreign Affairs role",
-        "identity in March 2026"
+        "exact identity",
+        "current Deputy Prime Minister office",
+        "current Minister of Foreign Affairs office"
       ]
     },
     {
       "id": "S3",
-      "url": "https://www.thenationalnews.com/uae/sheikh-abdullah-honours-family-of-the-japanese-architect-who-designed-abu-dhabi-1.718806",
-      "title": "Sheikh Abdullah honours family of the Japanese architect who designed Abu Dhabi",
-      "publisher": "The National",
-      "tier": 2,
+      "url": "https://www.mofa.gov.ae/en/mediahub/news/2019/2018/11/26/26-11-2018-uae-zayed",
+      "title": "Abdullah bin Zayed: Sheikh Zayed was not only my father",
+      "publisher": "UAE Ministry of Foreign Affairs",
+      "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "Sheikh Abdullah as a son of UAE founder Sheikh Zayed",
+        "Sheikh Abdullah as a son of Sheikh Zayed",
         "Al Nahyan royal lineage",
-        "foreign-minister identity"
+        "Sheikh Zayed as the UAE's Founding Father"
       ]
     },
     {
       "id": "S4",
+      "url": "https://u.ae/en/about-uae/founders-of-the-union",
+      "title": "Founders of the Union",
+      "publisher": "The Official Platform of the UAE Government",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Sheikh Zayed as Founding President of the UAE",
+        "Sheikh Zayed as first President of the UAE",
+        "Al Nahyan ruling-family context"
+      ]
+    },
+    {
+      "id": "S5",
       "url": "https://www.adia.ae/en/investments/governance",
       "title": "Governance",
       "publisher": "Abu Dhabi Investment Authority",
@@ -391,21 +426,9 @@
       ]
     },
     {
-      "id": "S5",
-      "url": "https://www.forbes.com/sites/natalierobehmed/2014/03/26/meet-the-richest-people-in-the-middle-east/",
-      "title": "Meet The Richest People In The Middle East",
-      "publisher": "Forbes",
-      "tier": 2,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "Forbes check context",
-        "Forbes distinction between individually attributable wealth and UAE royal holdings described as held for the nation"
-      ]
-    },
-    {
       "id": "S6",
       "url": "https://www.mofa.gov.ae/ar-ae/The-Ministry/The-Foreign-Policy/Water-Scarcity",
-      "title": "Water Scarcity - UAE Discussion Paper",
+      "title": "Water Scarcity discussion paper",
       "publisher": "UAE Ministry of Foreign Affairs",
       "tier": 1,
       "accessed_at": "2026-07-28",
@@ -444,14 +467,15 @@
   "uncertainties": [
     "No dedicated personal Forbes profile was found. Forbes articles mentioning Sheikh Abdullah are reporting pages, not profile records.",
     "No strong public source reviewed itemises a personal fortune or wealth-producing enterprise for Sheikh Abdullah. Al Nahyan family standing and Abu Dhabi sovereign assets were not presented as his private property.",
-    "The source owner links Sheikh Abdullah to Opera and formerly Pelorus, but no strong public evidence reviewed established personal legal ownership or a meaningful yachting narrative, so neither vessel appears in the biographies.",
-    "No personal Instagram, LinkedIn, personal website, Facebook, YouTube, or TikTok account met the skill's identity-verification threshold.",
+    "The similarly named Abdulla Bin Zayed Investment Group and name-matched LinkedIn profiles were rejected because no reliable evidence connects them to this owner.",
+    "No personal Instagram, LinkedIn, personal website, Facebook, YouTube or TikTok account met the identity-verification threshold.",
     "The existing Wikipedia URL contains spaces and does not use the canonical article path; it is preserved in the immutable snapshot and surfaced as a review candidate rather than duplicated.",
     "No evidence of a secondary nationality was found, so the blank was preserved rather than inferred.",
-    "Blank title, suffix, secondary residence, death, internal-note, and unknown-name fields were treated as optional, inapplicable, or system fields rather than enrichment targets."
+    "The owner input contains current and historical vessel relationships, but neither biography makes a yacht claim because those records are unnecessary to explain his public identity.",
+    "Blank title, suffix, secondary residence, death, internal-note and unknown-name fields remain optional, inapplicable or system-managed rather than enrichment targets."
   ],
   "review": {
     "status": "pending",
-    "notes": null
+    "notes": "Reviewer should preserve the separation between royal lineage, public office and private wealth. Industry and wealth relationship remain unknown because no personally attributable wealth-producing asset was established."
   }
 }

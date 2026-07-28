@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 1583,
@@ -7,7 +7,7 @@
     "identity_confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The current exact Forbes profile aligns Philip Niarchos's Greek identity, inheritance and continued development of the family art collection with current official records naming Philip S. Niarchos as a Museum of Modern Art trustee and Stavros Niarchos Foundation co-president."
+      "reason": "The current exact Forbes profile aligns Philip Niarchos's Greek identity, father, inheritance and art collection with current official records naming Philip S. Niarchos as a Museum of Modern Art trustee and Stavros Niarchos Foundation co-president."
     }
   },
   "input_snapshot": {
@@ -80,75 +80,44 @@
     }
   },
   "research_status": "complete",
-  "forbes_profile": {
-    "status": "verified",
-    "url": "https://www.forbes.com/profile/philip-niarchos/",
-    "confidence": {
-      "score": 99,
-      "band": "very_high",
-      "reason": "The current dedicated profile exactly matches the Greek art collector, his father Stavros Niarchos, inheritance and later expansion of the family collection, Paris residence and Greek citizenship."
-    }
-  },
-  "primary_industry": {
-    "classification": "shipping_maritime",
-    "label": "Shipping & Maritime",
-    "summary": "The family capital inherited by Niarchos was created principally through the international shipping enterprise built by his father, Stavros Niarchos.",
-    "confidence": {
-      "score": 94,
-      "band": "high",
-      "reason": "The Stavros Niarchos Foundation's founder history directly documents the fleet and shipyard business that created the family capital, while Forbes establishes Philip's position as the elder Niarchos's heir and inheritor of assets assembled from that wealth."
-    },
-    "source_ids": [
-      "S1",
-      "S5"
-    ]
-  },
-  "wealth_origin": {
-    "classification": "inherited_and_expanded",
-    "label": "Inherited and expanded",
-    "summary": "Niarchos inherited much of his father's modern-art collection and materially broadened it through post-war and contemporary acquisitions.",
-    "confidence": {
-      "score": 98,
-      "band": "very_high",
-      "reason": "The current Forbes profile directly states both the inheritance and Niarchos's later additions, with established Forbes art-market reporting identifying representative acquisitions."
-    },
-    "source_ids": [
-      "S1",
-      "S2"
-    ]
-  },
-  "wealth_relationship": {
-    "classification": "heir_family_shareholder",
-    "label": "Heir / family shareholder",
-    "summary": "Niarchos's principal relationship is as heir to family wealth and custodian of inherited cultural assets, which he has continued to develop.",
-    "confidence": {
-      "score": 96,
-      "band": "very_high",
-      "reason": "Forbes documents the inheritance and continued collecting, while no current primary source identifies Niarchos as the operating founder of the shipping enterprise that created the family capital."
-    },
-    "source_ids": [
-      "S1",
-      "S2",
-      "S5"
-    ]
-  },
   "biography_brief": {
-    "durable_identity": "Greek art collector and heir whose family capital originated in the international shipping enterprise built by Stavros Niarchos.",
-    "wealth_or_prominence_route": "He inherited much of his father's modern-art collection, an asset assembled from the elder Niarchos's shipping wealth.",
-    "turning_point": "He developed the inherited collection beyond its earlier foundations by adding post-war and contemporary works.",
-    "later_chapter": "He serves as a Museum of Modern Art trustee and as co-president of the Stavros Niarchos Foundation.",
-    "character_detail": "His additions extended the family's collecting into work by artists including Andy Warhol and Maurizio Cattelan.",
+    "durable_identity": "Philip S. Niarchos is a Greek art collector, heir to shipping-created family wealth, Museum of Modern Art trustee and Stavros Niarchos Foundation co-president.",
+    "defining_work": "He inherited much of the modern-art collection assembled by his father and extended it with post-war and contemporary work.",
+    "formative_context": "His father, Stavros Niarchos, created the family capital through an international shipping fleet and shipyard interests before assembling the inherited collection.",
+    "decisive_moment": "After inheriting much of his father's collection, Philip Niarchos broadened its range through further acquisitions.",
+    "enduring_dimensions": [
+      "Development of the inherited modern-art collection",
+      "Museum governance as a Museum of Modern Art trustee",
+      "Philanthropic governance as co-president of the Stavros Niarchos Foundation"
+    ],
+    "character_detail": "Andy Warhol used CAT-scan films of Niarchos's skull for the Philip's Skull series after Niarchos commissioned a portrait.",
+    "opening_options": [
+      {
+        "mode": "public_contribution",
+        "angle": "Open with Niarchos's current museum and foundation governance, then explain the inherited collection and the shipping capital behind it."
+      },
+      {
+        "mode": "defining_achievement",
+        "angle": "Lead with the way Niarchos broadened an inherited modern-art collection into post-war and contemporary work."
+      },
+      {
+        "mode": "inherited_responsibility",
+        "angle": "Begin with the collection inherited from Stavros Niarchos and show how inheritance became cultural stewardship."
+      }
+    ],
     "excluded_transient_context": [
-      "Current vessel ownership and cohort-selection context",
-      "Current valuations, net worth and rankings",
-      "Short-term art-market prices and auction figures"
+      "Current or historical vessel ownership, vessel names and LOA ranking",
+      "Current net-worth estimates and wealth rankings",
+      "Art valuations, individual acquisition prices and auction results",
+      "Unverified family detail and private family disputes"
     ],
     "source_ids": [
       "S1",
       "S2",
       "S3",
       "S4",
-      "S5"
+      "S5",
+      "S6"
     ]
   },
   "editorial_assessment": {
@@ -157,37 +126,91 @@
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "public_contribution",
+    "narrative_shape": "public_role_then_foundation",
     "calibration_archetypes": [
       "heir_custodian"
     ],
-    "notes": "The biographies independently trace shipping-created family capital into inherited and subsequently developed cultural assets, then connect private collecting with durable museum and foundation stewardship."
+    "notes": "The long profile opens with current public responsibilities, then traces the collection and family capital back to shipping before using Warhol's commissioned portrait as a specific human detail. It independently avoids the calibration's inheritance-first structure. Vessel context, rankings and transient art valuations are excluded."
   },
   "editorial_note": null,
-  "biography": {
-    "plain_text": "Philip S. Niarchos is a Greek collector whose inherited wealth originated in the shipping enterprise built by his father, Stavros Niarchos. He has developed the family's modern-art holdings by adding post-war and contemporary work. Sustained roles at the Museum of Modern Art and Stavros Niarchos Foundation place stewardship alongside private collecting.",
-    "html": "<p>Philip S. Niarchos is a Greek collector whose inherited wealth originated in the shipping enterprise built by his father, Stavros Niarchos. He has developed the family's modern-art holdings by adding post-war and contemporary work. Sustained roles at the Museum of Modern Art and Stavros Niarchos Foundation place stewardship alongside private collecting.</p>\r\n",
-    "word_count": 51,
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/philip-niarchos/",
     "confidence": {
-      "score": 97,
+      "score": 99,
       "band": "very_high",
-      "reason": "Current Forbes and official foundation and museum sources support the identity, shipping origin of the inherited capital, development of the art collection and continuing institutional roles."
+      "reason": "The dedicated profile was updated in March 2026 and exactly matches Philip Niarchos's father, Greek citizenship, Paris residence, inheritance of much of the family art collection and subsequent additions."
+    }
+  },
+  "primary_industry": {
+    "classification": "shipping_maritime",
+    "label": "Shipping & Maritime",
+    "summary": "The family capital underlying Niarchos's inherited assets was created principally through the international shipping enterprise built by his father, Stavros Niarchos.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The Stavros Niarchos Foundation's founder history directly documents the fleet and shipyard business that created the family capital, while Forbes establishes Philip as the shipping magnate's son and an inheritor of assets assembled from that wealth."
+    },
+    "source_ids": [
+      "S1",
+      "S4"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "inherited",
+    "label": "Inherited",
+    "summary": "Niarchos inherited family wealth created through his father's shipping enterprise, including much of the modern-art collection that his father assembled.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The current Forbes profile directly identifies the inherited collection and his father as a shipping magnate, while the foundation's founder history documents the shipping enterprise that created the family capital. Niarchos's later additions to the collection represent cultural stewardship, not material operating expansion or transformation of the inherited wealth-producing base."
+    },
+    "source_ids": [
+      "S1",
+      "S4"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "heir_family_shareholder",
+    "label": "Heir / family shareholder",
+    "summary": "Niarchos's principal relationship is as heir to family wealth and custodian of inherited cultural assets that he continued to develop.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Forbes documents the inheritance and continued collecting, while no current primary source reviewed identifies Niarchos as the operating successor to the shipping business that created the family capital."
+    },
+    "source_ids": [
+      "S1",
+      "S4"
+    ]
+  },
+  "biography": {
+    "plain_text": "Philip S. Niarchos is a Greek art collector and heir to the shipping fortune built by his father, Stavros Niarchos. He inherited much of the family's modern-art collection and extended it into post-war and contemporary work. Niarchos is also a Museum of Modern Art trustee and co-president of the Stavros Niarchos Foundation.",
+    "html": "<p>Philip S. Niarchos is a Greek art collector and heir to the shipping fortune built by his father, Stavros Niarchos. He inherited much of the family's modern-art collection and extended it into post-war and contemporary work. Niarchos is also a Museum of Modern Art trustee and co-president of the Stavros Niarchos Foundation.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Current Forbes, museum and foundation sources support the identity, shipping origin of the inheritance, development of the collection and continuing institutional roles."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S4",
-      "S5"
+      "S4"
     ]
   },
   "long_biography": {
-    "plain_text": "Shipping created the capital behind Philip S. Niarchos's inheritance. His father, Stavros Niarchos, built an international fleet and assembled a modern-art collection; Philip later inherited much of that collection. He did not leave it fixed in its original period, adding post-war and contemporary works and extending the family's range to artists including Andy Warhol and Maurizio Cattelan.\n\nNiarchos's public role extends beyond acquisitions. He serves on the Museum of Modern Art's board of trustees and as co-president of the Stavros Niarchos Foundation, whose grantmaking spans culture, education, health and social welfare. These long-running institutional responsibilities connect a private collection formed from shipping wealth with museum governance and international philanthropy.",
-    "html": "<p>Shipping created the capital behind Philip S. Niarchos's inheritance. His father, Stavros Niarchos, built an international fleet and assembled a modern-art collection; Philip later inherited much of that collection. He did not leave it fixed in its original period, adding post-war and contemporary works and extending the family's range to artists including Andy Warhol and Maurizio Cattelan.</p>\r\n<p>Niarchos's public role extends beyond acquisitions. He serves on the Museum of Modern Art's board of trustees and as co-president of the Stavros Niarchos Foundation, whose grantmaking spans culture, education, health and social welfare. These long-running institutional responsibilities connect a private collection formed from shipping wealth with museum governance and international philanthropy.</p>\r\n",
-    "word_count": 109,
+    "plain_text": "As a Museum of Modern Art trustee and co-president of the Stavros Niarchos Foundation, Philip S. Niarchos holds formal roles in art and philanthropy. His father Stavros built the family fortune in shipping and assembled the modern-art collection that Philip inherited. Philip expanded it with post-war and contemporary work, including works by Andy Warhol and Maurizio Cattelan.\n\nCollecting also made Niarchos a subject. Warhol used CAT scans of his head to create the Philip's Skull series, turning a patron into the artwork. Through MoMA, Niarchos participates in museum governance; through the foundation, he helps oversee grant-making across culture, education, health and sport, and social welfare.",
+    "html": "<p>As a Museum of Modern Art trustee and co-president of the Stavros Niarchos Foundation, Philip S. Niarchos holds formal roles in art and philanthropy. His father Stavros built the family fortune in shipping and assembled the modern-art collection that Philip inherited. Philip expanded it with post-war and contemporary work, including works by Andy Warhol and Maurizio Cattelan.</p>\r\n<p>Collecting also made Niarchos a subject. Warhol used CAT scans of his head to create the Philip's Skull series, turning a patron into the artwork. Through MoMA, Niarchos participates in museum governance; through the foundation, he helps oversee grant-making across culture, education, health and sport, and social welfare.</p>\r\n",
+    "word_count": 105,
     "confidence": {
       "score": 97,
       "band": "very_high",
-      "reason": "The family business and inheritance route are supported by current Forbes and the foundation's founder history; Forbes supports the collection's development and current official institutional pages support the trusteeship and co-presidency."
+      "reason": "The family business and inheritance route are supported by current Forbes and the foundation's founder history; Forbes supports the collection's development, official institutional pages support the current roles, and Gagosian documents the Warhol commission."
     },
     "source_ids": [
       "S1",
@@ -199,36 +222,36 @@
   },
   "proposed_details": [
     {
-      "action": "fill_missing",
       "field": "middle_names",
       "value": "S.",
-      "confidence": {
-        "score": 98,
-        "band": "very_high",
-        "reason": "The Museum of Modern Art's current official trustees page lists him as Philip S. Niarchos, matching the exact family and art-collector identity."
-      },
-      "source_ids": [
-        "S4"
-      ]
-    },
-    {
       "action": "fill_missing",
-      "field": "known_for_title",
-      "value": "Art Collector and SNF Co-President",
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "Forbes identifies Niarchos through the inherited and developed art collection, while the foundation's official board profile identifies him as co-president."
+        "reason": "The Museum of Modern Art's current official trustees page lists him as Philip S. Niarchos, matching the exact family and collector identity."
       },
       "source_ids": [
-        "S1",
         "S3"
       ]
     },
     {
+      "field": "known_for_title",
+      "value": "Art Collector and Co-President of the Stavros Niarchos Foundation",
       "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Forbes identifies Niarchos through the inherited and developed art collection, while the foundation's current official profile identifies him as co-president."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
       "field": "birth_year",
       "value": "1954",
+      "action": "fill_missing",
       "confidence": {
         "score": 91,
         "band": "high",
@@ -240,21 +263,20 @@
       ]
     },
     {
-      "action": "correct_existing",
       "field": "biography",
       "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Philip_Niarchos\">Philip Niarchos</a> is a Greek billionaire. He is the eldest son of <a href=\"https://en.wikipedia.org/wiki/Stavros_Niarchos\">Stavros Niarchos</a>, a Greek shipping magnate, and <a href=\"https://en.wikipedia.org/wiki/Eugenia_Livanos\">Eugenia Livanos</a>, the elder daughter of Stavros Niarchos&#39; adversary, Stavros G. Livanos.</p>\r\n",
-      "value": "<p>Philip S. Niarchos is a Greek collector whose inherited wealth originated in the shipping enterprise built by his father, Stavros Niarchos. He has developed the family's modern-art holdings by adding post-war and contemporary work. Sustained roles at the Museum of Modern Art and Stavros Niarchos Foundation place stewardship alongside private collecting.</p>\r\n",
+      "value": "<p>Philip S. Niarchos is a Greek art collector and heir to the shipping fortune built by his father, Stavros Niarchos. He inherited much of the family's modern-art collection and extended it into post-war and contemporary work. Niarchos is also a Museum of Modern Art trustee and co-president of the Stavros Niarchos Foundation.</p>\r\n",
+      "action": "correct_existing",
       "confidence": {
-        "score": 97,
+        "score": 98,
         "band": "very_high",
-        "reason": "The replacement removes embedded links and an irrelevant family-rivalry detail, then explains the shipping-created inheritance, subsequent development of the collection and durable institutional stewardship."
+        "reason": "The replacement removes embedded links and an irrelevant family-rivalry detail, then explains the shipping-created inheritance, development of the collection and durable museum and foundation stewardship."
       },
       "source_ids": [
         "S1",
         "S2",
         "S3",
-        "S4",
-        "S5"
+        "S4"
       ]
     }
   ],
@@ -263,16 +285,16 @@
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/philip-niarchos/",
-      "verification": "The current exact-name profile matches Niarchos's father, art-collection inheritance, continued acquisitions, Greek citizenship and Paris residence. Type ID 11 is copied from the owner-input lookup.",
+      "verification": "The current exact-name profile matches Niarchos's father, art-collection inheritance, later acquisitions, Greek citizenship and Paris residence. Type ID 11 is copied from the owner-input lookup.",
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The exact Forbes identity is independently corroborated by current official MoMA and Stavros Niarchos Foundation records."
+        "reason": "The exact Forbes identity is independently corroborated by current official Museum of Modern Art and Stavros Niarchos Foundation records."
       },
       "source_ids": [
         "S1",
-        "S3",
-        "S4"
+        "S2",
+        "S3"
       ]
     },
     {
@@ -281,12 +303,12 @@
       "url": "https://www.snf.org/en/about/our-people/our-board-of-directors/snf/philip-niarchos/",
       "verification": "The official Stavros Niarchos Foundation profile identifies Philip Niarchos as co-president. Type ID 14 is copied from the owner-input lookup and is used for the organisation he co-leads.",
       "confidence": {
-        "score": 99,
+        "score": 100,
         "band": "very_high",
-        "reason": "This is the exact first-party leadership profile on the foundation's official domain."
+        "reason": "This is the exact current first-party leadership profile on the foundation's official domain."
       },
       "source_ids": [
-        "S3"
+        "S2"
       ]
     }
   ],
@@ -300,63 +322,47 @@
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
-        "verified Forbes profile",
-        "eldest son of shipping magnate Stavros Niarchos",
-        "inheritance of much of his father's art collection",
-        "continued post-war and contemporary acquisitions",
-        "Andy Warhol and Maurizio Cattelan works",
-        "Greek citizenship",
-        "Paris residence",
-        "current living status"
+        "Exact dedicated Forbes person profile",
+        "Eldest son of shipping magnate Stavros Niarchos",
+        "Inheritance of much of his father's art collection",
+        "Later addition of post-war and contemporary works",
+        "Works by Andy Warhol and Maurizio Cattelan",
+        "Art collection as visible source of wealth",
+        "Greek citizenship and Paris residence",
+        "Current living status",
+        "Age consistent with a 1954 birth year"
       ]
     },
     {
       "id": "S2",
-      "url": "https://www.forbes.com/2009/07/24/top-billionaire-art-collector-picasso-geffen-rich-lifestyle.html",
-      "title": "Top Billionaire Art Collectors",
-      "publisher": "Forbes",
-      "tier": 2,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "identity",
-        "inheritance of the family art collection",
-        "Stavros Niarchos as shipping magnate and original collector",
-        "Philip Niarchos's additions to the collection",
-        "Jean-Michel Basquiat acquisition",
-        "Andy Warhol acquisition"
-      ]
-    },
-    {
-      "id": "S3",
       "url": "https://www.snf.org/en/about/our-people/our-board-of-directors/snf/philip-niarchos/",
       "title": "Philip Niarchos",
       "publisher": "Stavros Niarchos Foundation",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
-        "current co-president role",
-        "current board membership",
-        "official organisation profile"
+        "Exact Philip Niarchos identity",
+        "Current co-president role",
+        "Current foundation board membership",
+        "Official organisation leadership profile"
       ]
     },
     {
-      "id": "S4",
+      "id": "S3",
       "url": "https://www.moma.org/about/trustees",
       "title": "Officers and trustees",
       "publisher": "The Museum of Modern Art",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
-        "Philip S. Niarchos name",
-        "middle initial S.",
-        "current Museum of Modern Art trusteeship"
+        "Exact Philip S. Niarchos identity",
+        "Middle initial S",
+        "Current Museum of Modern Art trusteeship",
+        "Trustee list updated in July 2026"
       ]
     },
     {
-      "id": "S5",
+      "id": "S4",
       "url": "https://www.snf.org/en/about/identity/founder/",
       "title": "Founder",
       "publisher": "Stavros Niarchos Foundation",
@@ -364,12 +370,27 @@
       "accessed_at": "2026-07-28",
       "supports": [
         "Stavros Niarchos identity",
-        "international shipping origin of family wealth",
-        "post-war fleet expansion",
+        "International shipping origin of family wealth",
+        "Post-war fleet expansion",
         "Hellenic Shipyards investment",
         "Niarchos Group formation",
-        "foundation endowment through Stavros Niarchos's bequest",
-        "foundation mission across education, social welfare, health, arts and culture"
+        "Foundation endowment through Stavros Niarchos's bequest",
+        "Foundation grant areas"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://gagosian.com/media/exhibitions/1999/andy-warhol-philips-skull/Gagosian_Andy_Warhol_Philips_Skull_1999_Press_Release.pdf",
+      "title": "Andy Warhol: Philip's Skull",
+      "publisher": "Gagosian Gallery",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Exact Philip Niarchos identity",
+        "Niarchos's commission of an Andy Warhol portrait",
+        "Warhol's use of CAT-scan films of Niarchos's skull",
+        "Creation of the Philip's Skull works in 1985",
+        "Longstanding friendship between Niarchos and Warhol"
       ]
     },
     {
@@ -380,28 +401,62 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
+        "Exact Philip Niarchos identity",
         "1954 birth year",
-        "eldest son and heir of Stavros Niarchos",
-        "art-collection inheritance",
-        "Philip Niarchos's Warhol and Basquiat acquisitions",
+        "Eldest son and heir of Stavros Niarchos",
+        "Art-collection inheritance",
         "Museum of Modern Art board role"
       ]
     }
   ],
   "uncertainties": [
-    "Shipping & Maritime is used for primary industry because the family capital inherited by Niarchos was created by Stavros Niarchos's shipping enterprise. Forbes now presents the art collection as Philip's source of wealth, but the taxonomy has no art or collectibles category.",
-    "Inherited and expanded reflects both the inheritance and well-documented additions to the collection. Public evidence does not disclose the full ownership structure or valuation history of individual works.",
-    "Heir / family shareholder is used as the closest taxonomy match for an heir and cultural-asset custodian. Public sources do not identify Niarchos as the operating successor to his father's shipping business.",
-    "The current Forbes profile and source record are consistent with a 1954 birth year, which is directly reported in a university museum catalogue. No authoritative source located established an exact day or month.",
-    "Athens is widely reported as Niarchos's birthplace, but accessible sources were tertiary or inconsistent on associated biographical details, so place of birth was not proposed.",
-    "No evidence supports a secondary nationality. Greek citizenship is confirmed by Forbes and already present in the input record.",
-    "No verified personal Instagram, LinkedIn, Facebook, X, YouTube, TikTok or dedicated personal website was found. Organisation accounts belonging to the Stavros Niarchos Foundation were rejected as substitutes for personal profiles.",
-    "The existing Wikipedia link resolves to the correct person and was preserved rather than duplicated.",
-    "The existing biography contains embedded links and an irrelevant family-rivalry detail. The replacement centres the inherited shipping capital, development of the collection and continuing museum and foundation stewardship."
+    {
+      "topic": "Shipping versus art classification",
+      "detail": "Shipping & Maritime identifies the industry that created the inherited family capital. Forbes presents the art collection as Niarchos's visible wealth source, but the taxonomy has no art or collectibles category."
+    },
+    {
+      "topic": "Inherited wealth origin",
+      "detail": "Current Forbes reporting establishes the inheritance, and the foundation's founder history traces the family capital to Stavros Niarchos's shipping enterprise. Philip Niarchos's subsequent additions to the collection are cultural stewardship and do not establish material operating expansion or transformation of the inherited core wealth-producing assets."
+    },
+    {
+      "topic": "Heir relationship",
+      "detail": "Heir / family shareholder is the closest taxonomy match for an heir and cultural-asset custodian. No current primary source reviewed identifies Niarchos as the operating successor to his father's shipping business."
+    },
+    {
+      "topic": "Birth details",
+      "detail": "A university museum catalogue reports 1954, consistent with the age on the current Forbes profile. No authoritative source reviewed established an exact birth day or month."
+    },
+    {
+      "topic": "Place of birth",
+      "detail": "Athens is widely reported as Niarchos's birthplace, but the accessible sources were tertiary or internally inconsistent on associated biographical details, so no place-of-birth proposal is made."
+    },
+    {
+      "topic": "Secondary nationality",
+      "detail": "No reliable source established a second nationality. Greek citizenship is confirmed by Forbes and already present in the input record."
+    },
+    {
+      "topic": "Personal social accounts",
+      "detail": "No identity-verified personal LinkedIn, Instagram, Facebook, X, YouTube, TikTok or dedicated personal website met the verification threshold. Foundation accounts and unrelated namesakes were rejected as substitutes."
+    },
+    {
+      "topic": "Institutional links",
+      "detail": "The exact foundation leadership page is proposed as a Company Website because Niarchos co-leads the organisation. The Museum of Modern Art trustee list supports a role but is not proposed as a website for an organisation he leads."
+    },
+    {
+      "topic": "Existing Wikipedia",
+      "detail": "The existing Wikipedia URL resolves to the correct person and is preserved rather than duplicated. Its internally inconsistent birth-year text was not used as evidence."
+    },
+    {
+      "topic": "Existing biography",
+      "detail": "The source biography contains embedded links and an irrelevant family-rivalry detail. The replacement centres the inherited shipping capital, development of the collection and continuing museum and foundation stewardship."
+    },
+    {
+      "topic": "Transient context",
+      "detail": "Vessel information, net worth, rankings, art valuations, auction prices and unsupported private-family detail are excluded from both biographies."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": "Identity, Forbes verification, inheritance, continued collecting, middle initial and current institutional roles are strongly supported. Reviewer attention is requested for the taxonomy choice: Shipping & Maritime identifies the industry that created the inherited capital, while Heir / family shareholder is the closest available relationship label for his present heir-and-custodian role."
+    "notes": "Identity, current Forbes profile, inheritance, continued collecting, middle initial and current institutional roles are strongly supported. Wealth origin is classified as Inherited because development of the art collection does not qualify as operating expansion of the inherited shipping-derived wealth base. Review the remaining taxonomy choice: Shipping & Maritime identifies the industry that created the inherited capital, while Heir / family shareholder is the closest available relationship label for his heir-and-custodian role. The 1954 birth-year proposal is supported at high rather than very-high confidence. Nothing has been applied to the owner record."
   }
 }

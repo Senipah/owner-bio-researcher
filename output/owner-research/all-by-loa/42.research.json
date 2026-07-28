@@ -1,13 +1,13 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 42,
     "display_name": "Farkhad Temurovich Akhmedov",
     "identity_confidence": {
-      "score": 100,
+      "score": 99,
       "band": "very_high",
-      "reason": "The exact name, Russian citizenship, Baku origin, birth date, Tansley Trading and Nortgas history align across the source record, a current dedicated Forbes profile, an official energy transaction and the Nar Gallery founder profile."
+      "reason": "The exact name, Russian citizenship, 15 September 1955 birth date, Baku origin, Tansley Trading history and Nortgas chairmanship align across the immutable owner record, a current dedicated Forbes profile and the Nar Gallery founder account. Temurovich and Teimurovich are consistent transliteration variants."
     }
   },
   "input_snapshot": {
@@ -73,24 +73,43 @@
   },
   "research_status": "complete",
   "biography_brief": {
-    "durable_identity": "Farkhad Akhmedov is a Russian investor of Azerbaijani origin whose fortune was built through natural gas.",
-    "wealth_or_prominence_route": "He began by trading Russian sable in London, founded Tansley Trading to supply gas producers and accumulated a controlling position in Nortgas.",
-    "turning_point": "He became Nortgas chairman after acquiring another shareholder's interest, then sold his remaining stake and shifted from operating energy assets to investments.",
-    "later_chapter": "He assembled a collection spanning twentieth-century Azerbaijani painting and opened Nar Gallery in Baku for public display.",
-    "character_detail": "The gallery's permanent display has included work by nonconformist painter Ashraf Murad, reflecting a sustained interest in preserving and presenting an under-recognised national school.",
+    "durable_identity": "Farkhad Akhmedov is a Russian investor of Azerbaijani origin whose private wealth was formed through commodity trading and natural-gas ownership.",
+    "defining_work": "He founded Tansley Trading, developed an ownership position in Nortgas into control and chaired the Siberian gas producer before selling his remaining interest.",
+    "formative_context": "Trading Russian sable in London exposed Akhmedov to Western commodity markets before he began supplying equipment to Russian gas producers.",
+    "decisive_moment": "Acquiring another investor's Nortgas holding gave Akhmedov control and the chairmanship; the eventual sale converted the operating energy interest into investment capital.",
+    "enduring_dimensions": [
+      "Progression from commodity trading into gas-equipment supply and natural-gas ownership",
+      "Nortgas control, chairmanship and disposal of the remaining private stake",
+      "Nar Gallery as a public home for twentieth-century Azerbaijani painting"
+    ],
+    "character_detail": "His first acquisition for the Azerbaijani collection was Togrul Narimanbekov's Pomegranates, which gave Nar Gallery its name.",
+    "opening_options": [
+      {
+        "mode": "formative_episode",
+        "angle": "Open with Akhmedov trading Russian sable in London before introducing Tansley Trading and his Nortgas ownership."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Lead with the acquisition that brought control of Nortgas and explain the commercial experience behind it."
+      },
+      {
+        "mode": "public_contribution",
+        "angle": "Begin with Nar Gallery's public display in Baku before tracing the business career that supported Akhmedov's collecting."
+      }
+    ],
     "excluded_transient_context": [
-      "Current net-worth estimates, rankings and portfolio figures",
-      "Transient personal asset holdings",
-      "Unrequested legal, family and sanctions disputes or allegations",
-      "Unverified social profiles"
+      "Current or historical vessel ownership, vessel names and LOA ranking",
+      "Current net-worth estimates, wealth rankings and portfolio valuations",
+      "Sanctions designations and delistings as time-sensitive legal metadata",
+      "Divorce proceedings, asset-enforcement disputes and other contentious personal litigation",
+      "Unverified personal social profiles"
     ],
     "source_ids": [
       "S1",
       "S2",
       "S3",
       "S4",
-      "S5",
-      "S6"
+      "S5"
     ]
   },
   "editorial_assessment": {
@@ -99,11 +118,14 @@
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
     "calibration_archetypes": [
-      "founder_operator",
       "investor_philanthropist"
     ],
-    "notes": "The profile follows a compact trading-to-energy-to-investment arc, then closes with the public Azerbaijani-art programme as a distinct cultural chapter. It excludes transient valuations and contentious personal material."
+    "notes": "The long profile uses the London commodity episode to establish Akhmedov's commercial formation, follows the private energy stake into investment capital and gives the Baku gallery a separate cultural payoff. The short profile instead leads with present investor identity. Both omit transient valuations and contentious legal or personal context."
   },
   "editorial_note": null,
   "forbes_profile": {
@@ -112,83 +134,81 @@
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The current dedicated profile exactly matches Akhmedov's Russian citizenship, Moscow residence, sable-trading start, Tansley founding, Nortgas ownership and sale, investment source of wealth and self-made status."
+      "reason": "The current dedicated profile exactly matches Akhmedov's Russian citizenship, Moscow residence, sable-trading start, Tansley founding, Nortgas ownership and chairmanship, 2012 exit, investment source of wealth and self-made status."
     }
   },
   "primary_industry": {
     "classification": "finance_investments",
     "label": "Finance & Investments",
-    "summary": "Natural gas produced Akhmedov's original fortune, but he sold his remaining Nortgas interest and his current dedicated Forbes profile identifies investments as the source of wealth.",
+    "summary": "Akhmedov's current identifiable private wealth is investment capital created after the sale of his remaining Nortgas interest; energy describes the formation route rather than an ongoing operating holding.",
     "confidence": {
-      "score": 98,
+      "score": 97,
       "band": "very_high",
-      "reason": "The current Forbes profile explicitly lists Investments as his source of wealth, while NOVATEK's official announcement confirms the disposal of the remaining Nortgas operating interest."
+      "reason": "The current dedicated Forbes profile lists Investments as the source of wealth, while NOVATEK's official transaction record confirms the 2012 disposal of the remaining 49% Nortgas interest."
     },
     "source_ids": [
-      "S2",
-      "S3"
+      "S1",
+      "S2"
     ]
   },
   "wealth_origin": {
     "classification": "self_made",
     "label": "Self-made",
-    "summary": "He moved from commodity trading and gas-equipment supply into Nortgas ownership and chairmanship, building rather than inheriting the assets that created the fortune.",
+    "summary": "He created the core wealth route through commodity trading, Tansley Trading and the accumulation of a private ownership position in Nortgas rather than through inheritance.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Current and historical Forbes profiles identify Akhmedov as self-made and document the progression from sable trading and Tansley Trading into an ownership position at Nortgas."
+      "reason": "Current and historical Forbes profiles identify the wealth as self-made and document Akhmedov's progression from sable trading and gas-equipment supply into Nortgas ownership."
     },
     "source_ids": [
-      "S2",
-      "S6"
+      "S1",
+      "S5"
     ]
   },
   "wealth_relationship": {
     "classification": "investor",
     "label": "Investor",
-    "summary": "Akhmedov formerly operated energy assets through Nortgas, but the disposal of his remaining stake left him principally associated with investment capital.",
+    "summary": "Akhmedov previously controlled and chaired Nortgas, but the disposal of his remaining interest left him principally associated with investment capital rather than an ongoing operating role.",
     "confidence": {
       "score": 97,
       "band": "very_high",
-      "reason": "The official transaction establishes the exit from the remaining Nortgas interest, and the current Forbes profile now identifies investments rather than natural-gas operations as his source of wealth."
+      "reason": "The current Forbes profile identifies investments as his source of wealth, and the official transaction record establishes the exit from the remaining Nortgas interest."
     },
     "source_ids": [
-      "S2",
-      "S3"
+      "S1",
+      "S2"
     ]
   },
   "biography": {
-    "plain_text": "Farkhad Akhmedov is a Russian investor of Azerbaijani origin whose career moved from commodity trading into natural gas. He founded Tansley Trading, built a controlling position in Siberian producer Nortgas and sold his remaining interest. His later cultural work includes Nar Gallery in Baku, created to make his collection of Azerbaijani painting publicly accessible.",
-    "html": "<p>Farkhad Akhmedov is a Russian investor of Azerbaijani origin whose career moved from commodity trading into natural gas. He founded Tansley Trading, built a controlling position in Siberian producer Nortgas and sold his remaining interest. His later cultural work includes Nar Gallery in Baku, created to make his collection of Azerbaijani painting publicly accessible.</p>\r\n",
+    "plain_text": "Russian investor Farkhad Akhmedov created his wealth by moving from commodity trading into natural gas. He founded Tansley Trading, acquired a controlling stake in Siberian producer Nortgas and chaired the company before selling his remaining interest. In Baku, he established Nar Gallery to give the public access to his collection of twentieth-century Azerbaijani painting.",
+    "html": "<p>Russian investor Farkhad Akhmedov created his wealth by moving from commodity trading into natural gas. He founded Tansley Trading, acquired a controlling stake in Siberian producer Nortgas and chaired the company before selling his remaining interest. In Baku, he established Nar Gallery to give the public access to his collection of twentieth-century Azerbaijani painting.</p>\r\n",
     "word_count": 54,
     "confidence": {
-      "score": 96,
+      "score": 97,
       "band": "very_high",
-      "reason": "Forbes establishes the trading, Tansley and Nortgas sequence; NOVATEK confirms the exit from the remaining stake; Nar Gallery and Sotheby's support the public cultural chapter."
+      "reason": "Forbes establishes the commodity-trading, Tansley and Nortgas sequence; NOVATEK confirms the exit from the remaining interest; Nar Gallery documents the public cultural institution and collection."
     },
     "source_ids": [
+      "S1",
       "S2",
       "S3",
-      "S4",
-      "S5",
-      "S6"
+      "S5"
     ]
   },
   "long_biography": {
-    "plain_text": "Farkhad Akhmedov first built his commercial footing in London, trading Russian sable on the commodity exchange. He then founded Tansley Trading to supply equipment to Russian gas producers. A minority investment in Nortgas became the decisive shift: after acquiring another shareholder's stake, he took the chairmanship and developed an operating position in Siberian natural gas.\n\nThe sale of his remaining Nortgas interest turned an industrial fortune into investment capital. Away from energy, Akhmedov assembled a collection spanning twentieth-century Azerbaijani painting and opened Nar Gallery in Baku to public visitors. Its permanent display has included works by nonconformist artist Ashraf Murad, linking private collecting with the preservation and presentation of an under-recognised national school.",
-    "html": "<p>Farkhad Akhmedov first built his commercial footing in London, trading Russian sable on the commodity exchange. He then founded Tansley Trading to supply equipment to Russian gas producers. A minority investment in Nortgas became the decisive shift: after acquiring another shareholder's stake, he took the chairmanship and developed an operating position in Siberian natural gas.</p>\r\n<p>The sale of his remaining Nortgas interest turned an industrial fortune into investment capital. Away from energy, Akhmedov assembled a collection spanning twentieth-century Azerbaijani painting and opened Nar Gallery in Baku to public visitors. Its permanent display has included works by nonconformist artist Ashraf Murad, linking private collecting with the preservation and presentation of an under-recognised national school.</p>\r\n",
-    "word_count": 113,
+    "plain_text": "Trading Russian sable in London placed Farkhad Akhmedov at the meeting point of Soviet commodities and Western markets. In 1987 he founded Tansley Trading to supply equipment to Russian gas producers, then began acquiring shares in Nortgas. He took control of the Siberian producer after buying another investor's holding and became its chairman.\n\nAkhmedov sold his remaining Nortgas interest in 2012, converting an operating energy stake into investment capital. In Baku, his collecting took institutional form through Nar Gallery, conceived as a permanent public display. Its name came from his first acquisition, Togrul Narimanbekov's Pomegranates, and its holdings join recognised and nonconformist artists within an account of twentieth-century Azerbaijani painting.",
+    "html": "<p>Trading Russian sable in London placed Farkhad Akhmedov at the meeting point of Soviet commodities and Western markets. In 1987 he founded Tansley Trading to supply equipment to Russian gas producers, then began acquiring shares in Nortgas. He took control of the Siberian producer after buying another investor's holding and became its chairman.</p>\r\n<p>Akhmedov sold his remaining Nortgas interest in 2012, converting an operating energy stake into investment capital. In Baku, his collecting took institutional form through Nar Gallery, conceived as a permanent public display. Its name came from his first acquisition, Togrul Narimanbekov's Pomegranates, and its holdings join recognised and nonconformist artists within an account of twentieth-century Azerbaijani painting.</p>\r\n",
+    "word_count": 110,
     "confidence": {
-      "score": 95,
+      "score": 96,
       "band": "very_high",
-      "reason": "Current and historical Forbes coverage supports the formative commercial and Nortgas route, NOVATEK confirms the sale, and the official gallery history plus Sotheby's corroborate the public collection and Ashraf Murad display."
+      "reason": "Current and historical Forbes coverage supports the formative commercial and Nortgas route, NOVATEK confirms the sale, and Nar Gallery documents the public display, its name and its collection of recognised and nonconformist Azerbaijani artists."
     },
     "source_ids": [
+      "S1",
       "S2",
       "S3",
-      "S4",
-      "S5",
-      "S6"
+      "S5"
     ]
   },
   "proposed_details": [
@@ -198,12 +218,12 @@
       "existing_value": "United Kingdom",
       "value": "Russia",
       "confidence": {
-        "score": 99,
+        "score": 95,
         "band": "very_high",
-        "reason": "The current Forbes profile records Moscow, Russia as Akhmedov's residence, superseding the source record's United Kingdom value."
+        "reason": "The current Forbes profile, updated in March 2026, records Moscow, Russia as Akhmedov's residence. The immutable export's United Kingdom value is preserved for conflict-aware human review."
       },
       "source_ids": [
-        "S2"
+        "S1"
       ]
     },
     {
@@ -213,10 +233,10 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "Forbes documents both his Nortgas chairmanship and his current investment-based source of wealth."
+        "reason": "The current Forbes profile identifies investments as Akhmedov's source of wealth and documents his Nortgas chairmanship and subsequent exit."
       },
       "source_ids": [
-        "S2"
+        "S1"
       ]
     },
     {
@@ -224,12 +244,11 @@
       "action": "fill_missing",
       "value": "Baku",
       "confidence": {
-        "score": 99,
+        "score": 98,
         "band": "very_high",
-        "reason": "The Nar Gallery founder profile states that Akhmedov was born in Baku, consistent with the source record's Azerbaijan birth-country value and birth date."
+        "reason": "Nar Gallery's founder account states that Akhmedov was born in Baku in 1955, matching the immutable record's Azerbaijan birth country and 15 September 1955 birth date."
       },
       "source_ids": [
-        "S1",
         "S4"
       ]
     },
@@ -237,18 +256,17 @@
       "field": "biography",
       "action": "correct_existing",
       "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Farkhad_Akhmedov\">Farkhad Teimurovich Akhmedov</a> is a Russian businessman and politician of Azerbaijani descent, philanthropist, and patron of the arts.</p>\r\n\r\n<p>Akhmedov was designated under the UK Russia sanctions regime on 13 April 2022 and removed from the UK consolidated list on 19 March 2025. Within the European Union, he was removed from the sanctions list in September 2023. On 29 May 2024, the General Court of the EU annulled his designation, ruling that the Council had not demonstrated sufficient grounds under the &ldquo;leading businessperson&rdquo; criterion.</p>\r\n\r\n<p></p>\r\n",
-      "value": "<p>Farkhad Akhmedov is a Russian investor of Azerbaijani origin whose career moved from commodity trading into natural gas. He founded Tansley Trading, built a controlling position in Siberian producer Nortgas and sold his remaining interest. His later cultural work includes Nar Gallery in Baku, created to make his collection of Azerbaijani painting publicly accessible.</p>\r\n",
+      "value": "<p>Russian investor Farkhad Akhmedov created his wealth by moving from commodity trading into natural gas. He founded Tansley Trading, acquired a controlling stake in Siberian producer Nortgas and chaired the company before selling his remaining interest. In Baku, he established Nar Gallery to give the public access to his collection of twentieth-century Azerbaijani painting.</p>\r\n",
       "confidence": {
-        "score": 96,
+        "score": 97,
         "band": "very_high",
-        "reason": "The replacement removes embedded external markup, an empty paragraph and a legal chronology, replacing them with a durable, directly sourced account of Akhmedov's business route and cultural work."
+        "reason": "The replacement removes embedded external markup, an empty paragraph and a time-sensitive legal chronology, replacing them with a durable account of Akhmedov's private business route and public cultural work."
       },
       "source_ids": [
+        "S1",
         "S2",
         "S3",
-        "S4",
-        "S5",
-        "S6"
+        "S5"
       ]
     }
   ],
@@ -257,14 +275,14 @@
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/farkhad-akhmedov/",
-      "verification": "The dedicated current profile matches Akhmedov's Russian citizenship, Moscow residence, sable-trading start, Tansley founding, Nortgas ownership and sale, investment source of wealth and self-made status. Type ID 11 is copied from the owner input lookup.",
+      "verification": "The dedicated current profile matches Akhmedov's Russian citizenship, Moscow residence, sable-trading start, Tansley founding, Nortgas ownership and chairmanship, 2012 exit, investment source of wealth and self-made status. Type ID 11 is copied from the owner input lookup.",
       "confidence": {
         "score": 100,
         "band": "very_high",
         "reason": "This is the exact current Forbes person profile for the owner."
       },
       "source_ids": [
-        "S2"
+        "S1"
       ]
     }
   ],
@@ -272,58 +290,39 @@
   "sources": [
     {
       "id": "S1",
-      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=42",
-      "title": "Farkhad Temurovich Akhmedov owner record, person ID 42",
-      "publisher": "Superyacht Network",
-      "tier": 1,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "source-record identity",
-        "Russian nationality",
-        "15 September 1955 birth date",
-        "Azerbaijan birth-country value",
-        "existing United Kingdom residence value",
-        "existing Wikipedia link",
-        "existing biography text requiring editorial replacement"
-      ]
-    },
-    {
-      "id": "S2",
       "url": "https://www.forbes.com/profile/farkhad-akhmedov/",
       "title": "Farkhad Akhmedov",
       "publisher": "Forbes",
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "exact identity and verified Forbes profile",
+        "Exact identity and verified dedicated Forbes profile",
         "Russian citizenship",
-        "Moscow residence",
-        "self-made classification",
+        "Moscow, Russia, residence",
+        "Self-made wealth origin",
         "Investments source of wealth",
-        "sable trading on the London commodity exchange",
-        "Tansley Trading founding",
-        "gas-equipment supply",
-        "Nortgas minority investment and subsequent acquisition",
-        "Nortgas chairmanship",
-        "sale of the remaining Nortgas interest"
+        "Russian sable trading in London",
+        "Tansley Trading founding and gas-equipment supply",
+        "Nortgas ownership and chairmanship",
+        "Sale of the remaining Nortgas interest in 2012"
       ]
     },
     {
-      "id": "S3",
+      "id": "S2",
       "url": "https://www.novatek.ru/en/investors/events/?id_4=637",
       "title": "NOVATEK acquires 49% of Nortgas",
       "publisher": "NOVATEK",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "official agreement to acquire the remaining 49% Nortgas interest from R.E.D.I. Holdings",
+        "Official agreement to acquire the remaining 49% Nortgas interest from R.E.D.I. Holdings",
         "2012 transaction timing",
         "Nortgas natural-gas and condensate production",
         "Severo-Urengoyskoye field operating asset"
       ]
     },
     {
-      "id": "S4",
+      "id": "S3",
       "url": "https://nar-gallery.com/history/",
       "title": "History of Nar Gallery",
       "publisher": "Nar Gallery",
@@ -331,55 +330,83 @@
       "accessed_at": "2026-07-28",
       "supports": [
         "Nar Gallery conceived by Farkhad Akhmedov",
-        "gallery opened to the public",
-        "collection of twentieth-century Azerbaijani painting",
-        "collection spanning recognised and nonconformist artists",
-        "permanent display in Baku"
+        "Gallery opened to the public in 2005",
+        "Permanent public display in Baku",
+        "Collection of twentieth-century Azerbaijani painting",
+        "Recognised and nonconformist artists in the collection",
+        "Togrul Narimanbekov's Pomegranates as the first acquisition and source of the gallery name"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://nar-gallery.com/farkhad-akhmadov/",
+      "title": "Farkhad Akhmedov",
+      "publisher": "Nar Gallery",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Birth in Baku in 1955",
+        "Azerbaijani childhood",
+        "Move to Moscow",
+        "Nar Gallery founder identity",
+        "Azerbaijani art collecting"
       ]
     },
     {
       "id": "S5",
-      "url": "https://www.sothebys.com/en/auctions/ecatalogue/2013/central-asia-selling-exhibition-l13009/lot.10.html",
-      "title": "Ashraf Murad: Napoleon",
-      "publisher": "Sotheby's",
-      "tier": 2,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "Farkhad Akhmedov Family Collection provenance",
-        "permanent Nar Gallery display in Baku",
-        "Ashraf Murad as an Azerbaijani nonconformist painter",
-        "public exhibition history for the work"
-      ]
-    },
-    {
-      "id": "S6",
       "url": "https://images.forbes.com/lists/2007/10/07billionaires_Farkhad-Akhmedov_RFA1.html",
       "title": "Farkhad Akhmedov",
       "publisher": "Forbes",
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "historical natural-gas source of wealth",
-        "self-made origin",
-        "progression from gas-equipment sales into production",
-        "accumulation of a controlling Nortgas position"
+        "Historical natural-gas source of wealth",
+        "Self-made origin",
+        "Progression from gas-equipment sales into production",
+        "Accumulation of a controlling Nortgas position"
       ]
     }
   ],
   "uncertainties": [
-    "Finance & Investments is used for current primary industry because the dedicated Forbes profile lists Investments as Akhmedov's source of wealth and the remaining Nortgas interest was sold. Energy describes the route by which the fortune was created, not the currently identified holding sector.",
-    "Investor is used for the current wealth relationship rather than Founder. Akhmedov founded Tansley Trading and materially operated Nortgas, but the core gas interest was sold and current Forbes classification points to investments.",
-    "The source record gives United Kingdom as the main residence, while the current Forbes profile gives Moscow, Russia. A correction is proposed for human review rather than silently overriding the immutable export.",
-    "Azerbaijani origin describes birthplace and background, not a second citizenship. Forbes lists Russian citizenship, and no current high-confidence source reviewed establishes Azerbaijani citizenship, so secondary nationality remains blank.",
-    "Temurovich in the source record and Teimurovich in other public material are transliteration variants. No name correction is proposed.",
-    "Nar Gallery's official history directly attributes the gallery and collection to Akhmedov, while Sotheby's independently confirms the family collection and permanent gallery display. Promotional claims about scale, motive and broader charitable activity were not used.",
-    "No identity-verified personal LinkedIn, Instagram, Facebook, X, YouTube, TikTok account or personal website met the verification threshold. The existing Wikipedia link is not duplicated.",
-    "Nar Gallery is an organisational cultural site rather than Akhmedov's personal website or a current operating-company site, so it is retained as evidence and not proposed as a social link.",
-    "Current net worth, rankings and portfolio figures were excluded. Legal, family and sanctions disputes or allegations, and transient personal assets, were also omitted because they were not requested and do not explain the durable business-and-cultural profile.",
-    "Blank title, suffix and secondary-residence fields were treated as optional; blank death, internal-note and unknown-name fields remain inapplicable or system-managed."
+    {
+      "topic": "Primary industry",
+      "detail": "Finance & Investments is used because the current dedicated Forbes profile lists Investments as Akhmedov's source of wealth and the remaining Nortgas interest was sold. Energy describes how the private fortune was formed, not an identified current operating holding."
+    },
+    {
+      "topic": "Wealth relationship",
+      "detail": "Investor is used rather than Founder for the current relationship. Akhmedov founded Tansley Trading and controlled Nortgas, but the core gas interest was disposed and current wealth identification points to investment capital."
+    },
+    {
+      "topic": "Residence conflict",
+      "detail": "The immutable source record gives United Kingdom as the main residence, while the Forbes profile updated in March 2026 gives Moscow, Russia. A correction is proposed for human review rather than silently overriding the export baseline."
+    },
+    {
+      "topic": "Azerbaijani origin",
+      "detail": "Azerbaijani origin describes Akhmedov's birthplace and background, not a second citizenship. Current Forbes lists Russian citizenship, and no strong source reviewed establishes Azerbaijani citizenship, so secondary nationality remains blank."
+    },
+    {
+      "topic": "Name transliteration",
+      "detail": "Temurovich in the immutable display name and Teimurovich in some public material are transliteration variants. No name correction is proposed."
+    },
+    {
+      "topic": "Legal and personal context",
+      "detail": "The source biography is dominated by sanctions chronology, while Forbes also includes sanctions, divorce and asset-enforcement material. These are treated as contentious or time-sensitive legal metadata and were not used in the biographies or wealth classifications."
+    },
+    {
+      "topic": "Social and website candidates",
+      "detail": "No identity-verified personal LinkedIn, Instagram, Facebook, X, YouTube, TikTok account or personal website met the verification threshold. Nar Gallery is an organisational cultural site rather than a personal profile or current wealth-company website, so it is evidence only."
+    },
+    {
+      "topic": "Existing profile",
+      "detail": "The existing Wikipedia URL resolves to the correct person and was not duplicated in proposed socials."
+    },
+    {
+      "topic": "Other blank fields",
+      "detail": "Title, name suffix and secondary residence remain optional. Death, death-age, internal-note and unknown-name fields remain inapplicable or system-managed for a living person."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": "Review Finance & Investments versus Energy and Investor versus Founder as separate current classifications. The biographies deliberately retain the durable energy-origin story while omitting current figures, transient assets and contentious personal material."
+    "notes": "Review Finance & Investments versus Energy and Investor versus Founder as separate current classifications. The biographies retain the private energy-origin story and Nar Gallery contribution while excluding valuations, rankings and contentious legal or personal chronology."
   }
 }

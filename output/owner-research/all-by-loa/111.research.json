@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 111,
@@ -78,14 +78,34 @@
   "research_status": "limited",
   "biography_brief": {
     "durable_identity": "Emirati ruler and military-trained public leader who serves as President of the United Arab Emirates and Ruler of Abu Dhabi.",
-    "wealth_or_prominence_route": "His position arose through Al Nahyan succession, service as a son of founding president Sheikh Zayed, military preparation and senior public office.",
-    "turning_point": "After serving as Crown Prince of Abu Dhabi, he succeeded his brother as ruler and was elected President in 2022.",
-    "later_chapter": "His presidency has focused on national development, education, healthcare, infrastructure and regional security.",
+    "defining_work": "His leadership has encompassed national development, education, healthcare, infrastructure and regional security.",
+    "formative_context": "He grew up during the federation's formation, trained at Sandhurst and served in the Amiri Guard, Air Force and senior military command.",
+    "decisive_moment": "After serving as Crown Prince of Abu Dhabi, he succeeded his brother as ruler and was elected President in 2022.",
+    "enduring_dimensions": [
+      "Public engagement through regular meetings with citizens and residents",
+      "Longstanding interests in falconry and Nabati poetry",
+      "Work alongside his father and his brother and predecessor on the country's development"
+    ],
     "character_detail": "Regular engagement with citizens and interests in falconry and Nabati poetry connect his public role with Emirati cultural traditions.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Establish his combined roles as UAE President and Ruler of Abu Dhabi."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Use his military preparation to illuminate the responsibilities he later assumed."
+      },
+      {
+        "mode": "public_contribution",
+        "angle": "Lead with his work across national development and regional security."
+      }
+    ],
     "excluded_transient_context": [
       "Current vessel ownership and LOA cohort ranking",
       "Current net-worth estimates",
-      "Sovereign investment assets and state oil revenues as personal property"
+      "Sovereign investment assets and state oil revenues",
+      "Source publishers, confidence language and wealth-classification analysis"
     ],
     "source_ids": [
       "S1",
@@ -99,10 +119,14 @@
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "public_role_then_foundation",
     "calibration_archetypes": [
       "royal_public_office"
     ],
-    "notes": "The new profile presents succession, military preparation and public work positively, while cultural interests add distinctiveness without importing vessel or wealth-taxonomy language."
+    "notes": "The standalone profile opens on current responsibility, moves through military formation and succession, then closes on concrete civic and cultural practices without vessel or wealth-taxonomy language."
   },
   "editorial_note": null,
   "forbes_profile": {
@@ -143,24 +167,22 @@
     ]
   },
   "wealth_relationship": {
-    "classification": "royal_beneficiary",
-    "label": "Royal beneficiary",
-    "summary": "No strong public evidence establishes Sheikh Mohammed as the founder, investor or operator of a principal private wealth-producing business; royal beneficiary best describes his evidenced relationship to family wealth, with sovereign stewardship kept separate.",
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Public reporting identifies broad Al Nahyan family holdings but does not establish Sheikh Mohammed's principal individual relationship to privately held wealth-producing assets; sovereign stewardship is not treated as personal ownership.",
     "confidence": {
-      "score": 88,
+      "score": 94,
       "band": "high",
-      "reason": "His lineage and the existence of distinct Al Nahyan private holdings are strongly documented, but the opaque division of personal, family and state interests limits precision about his individual economic role."
+      "reason": "Bloomberg distinguishes family holdings from state funds while attributing the family's main private business operations chiefly to other relatives, leaving Sheikh Mohammed's individual economic relationship unresolved."
     },
     "source_ids": [
-      "S1",
-      "S2",
       "S5"
     ]
   },
   "biography": {
-    "plain_text": "Sheikh Mohammed bin Zayed Al Nahyan is President of the United Arab Emirates and Ruler of Abu Dhabi. A son of the country's founding president, Sheikh Zayed, he trained at Sandhurst and advanced through military and hereditary office. His leadership has emphasised national development, regional security and investment in education, healthcare and infrastructure.",
-    "html": "<p>Sheikh Mohammed bin Zayed Al Nahyan is President of the United Arab Emirates and Ruler of Abu Dhabi. A son of the country's founding president, Sheikh Zayed, he trained at Sandhurst and advanced through military and hereditary office. His leadership has emphasised national development, regional security and investment in education, healthcare and infrastructure.</p>\r\n",
-    "word_count": 53,
+    "plain_text": "Sheikh Mohammed bin Zayed Al Nahyan is President of the United Arab Emirates and Ruler of Abu Dhabi. A son of founding president Sheikh Zayed, he trained at Sandhurst, held senior military roles and served as Crown Prince before succeeding his brother. His public work centres on national development, education, healthcare, infrastructure and regional security.",
+    "html": "<p>Sheikh Mohammed bin Zayed Al Nahyan is President of the United Arab Emirates and Ruler of Abu Dhabi. A son of founding president Sheikh Zayed, he trained at Sandhurst, held senior military roles and served as Crown Prince before succeeding his brother. His public work centres on national development, education, healthcare, infrastructure and regional security.</p>\r\n",
+    "word_count": 55,
     "confidence": {
       "score": 97,
       "band": "very_high",
@@ -173,9 +195,9 @@
     ]
   },
   "long_biography": {
-    "plain_text": "Military preparation shaped Sheikh Mohammed bin Zayed Al Nahyan's path to the UAE presidency. Born in Al Ain, he trained at Sandhurst and held roles ranging from the Amiri Guard and Air Force to senior command. He later became Crown Prince of Abu Dhabi, working alongside his father, the federation's founder, and his brother and predecessor.\n\nSince becoming Ruler of Abu Dhabi and President in 2022, he has focused on social and economic development, education, healthcare, infrastructure and regional security. Regular meetings with citizens and residents form part of his public life, while his interests in falconry and Nabati poetry connect him with longstanding Emirati traditions.",
-    "html": "<p>Military preparation shaped Sheikh Mohammed bin Zayed Al Nahyan's path to the UAE presidency. Born in Al Ain, he trained at Sandhurst and held roles ranging from the Amiri Guard and Air Force to senior command. He later became Crown Prince of Abu Dhabi, working alongside his father, the federation's founder, and his brother and predecessor.</p>\r\n<p>Since becoming Ruler of Abu Dhabi and President in 2022, he has focused on social and economic development, education, healthcare, infrastructure and regional security. Regular meetings with citizens and residents form part of his public life, while his interests in falconry and Nabati poetry connect him with longstanding Emirati traditions.</p>\r\n",
-    "word_count": 106,
+    "plain_text": "Sheikh Mohammed bin Zayed Al Nahyan serves as President of the United Arab Emirates and Ruler of Abu Dhabi, offices he assumed in 2022. Raised during the federation's formation, he trained at Sandhurst and developed a military career that included the Amiri Guard, Air Force and senior command.\n\nBefore the presidency, he worked with his father, founding president Sheikh Zayed, and his brother and predecessor, Sheikh Khalifa, on the country's development. Education, healthcare, infrastructure and regional security have remained central to his public programme. Regular meetings with citizens and interests in falconry and Nabati poetry also root his leadership in Emirati civic and cultural traditions.",
+    "html": "<p>Sheikh Mohammed bin Zayed Al Nahyan serves as President of the United Arab Emirates and Ruler of Abu Dhabi, offices he assumed in 2022. Raised during the federation's formation, he trained at Sandhurst and developed a military career that included the Amiri Guard, Air Force and senior command.</p>\r\n<p>Before the presidency, he worked with his father, founding president Sheikh Zayed, and his brother and predecessor, Sheikh Khalifa, on the country's development. Education, healthcare, infrastructure and regional security have remained central to his public programme. Regular meetings with citizens and interests in falconry and Nabati poetry also root his leadership in Emirati civic and cultural traditions.</p>\r\n",
+    "word_count": 105,
     "confidence": {
       "score": 96,
       "band": "very_high",
@@ -257,7 +279,7 @@
     {
       "action": "fill_missing",
       "field": "biography",
-      "value": "<p>Sheikh Mohammed bin Zayed Al Nahyan is President of the United Arab Emirates and Ruler of Abu Dhabi. A son of the country's founding president, Sheikh Zayed, he trained at Sandhurst and advanced through military and hereditary office. His leadership has emphasised national development, regional security and investment in education, healthcare and infrastructure.</p>\r\n",
+      "value": "<p>Sheikh Mohammed bin Zayed Al Nahyan is President of the United Arab Emirates and Ruler of Abu Dhabi. A son of founding president Sheikh Zayed, he trained at Sandhurst, held senior military roles and served as Crown Prince before succeeding his brother. His public work centres on national development, education, healthcare, infrastructure and regional security.</p>\r\n",
       "confidence": {
         "score": 97,
         "band": "very_high",
@@ -461,7 +483,7 @@
   "uncertainties": [
     "No exact Forbes profile was found after exact-name and site:forbes.com/profile searches under both Mohamed and Mohammed. Forbes articles mention him, but the profile for Sheikh Khalifa belongs to his late predecessor and brother.",
     "Public reporting does not cleanly separate Sheikh Mohammed's own private holdings from wider Al Nahyan family wealth and Abu Dhabi state or sovereign assets. The dossier therefore leaves primary industry Unknown and does not classify state oil wealth as personal Energy wealth.",
-    "Royal beneficiary is the best-supported wealth relationship, but opacity around individual ownership and decision-making prevents a more precise description of his personal economic role.",
+    "Public reporting does not establish a defensible principal relationship between Sheikh Mohammed and privately held wealth-producing assets, so the dossier leaves wealth relationship Unknown.",
     "No second nationality was evidenced, so the blank secondary-nationality field is not filled.",
     "The official personal site links Facebook, Twitter/X, LinkedIn and Instagram, but no official personal YouTube or TikTok account was identified in this research pass.",
     "Vessel relationships and LOA ranking were excluded from the editorial brief and both biographies because they are selection context, not durable biography content.",

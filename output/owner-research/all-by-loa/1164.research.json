@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 1164,
@@ -7,7 +7,7 @@
     "identity_confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The exact Forbes profile, Shahid Rafiq Khan full name, Lahore origin, University of Illinois engineering record, Flex-N-Gate ownership and Jacksonville Jaguars and Fulham roles align across Forbes, Flex-N-Gate, the Jaguars, Fulham and the University of Illinois."
+      "reason": "The exact Forbes profile, Shahid Rafiq Khan full name, Lahore origin, University of Illinois engineering record, current Flex-N-Gate ownership and executive role, and Jacksonville Jaguars and Fulham roles align across Forbes, Flex-N-Gate, the Jaguars, Fulham and the University of Illinois."
     }
   },
   "input_snapshot": {
@@ -74,16 +74,36 @@
   },
   "research_status": "complete",
   "biography_brief": {
-    "durable_identity": "Pakistani-born American engineer, automotive industrialist and sports owner.",
-    "wealth_or_prominence_route": "Industrial-engineering study and early work at Flex-N-Gate led to a one-piece truck bumper without welds vulnerable to corrosion, which Khan commercialised through Bumper Works.",
-    "turning_point": "He bought his former employer in 1980 and folded Bumper Works into Flex-N-Gate, creating a privately controlled platform for wider automotive manufacturing.",
-    "later_chapter": "He moved into sport and entertainment through the Jacksonville Jaguars, Fulham Football Club and All Elite Wrestling.",
-    "character_detail": "Khan has described preparation meeting opportunity as the basis of luck and has expressed a preference for direct ownership.",
+    "durable_identity": "Pakistani-born American engineer, founder of Bumper Works, and owner and chief executive of Flex-N-Gate.",
+    "defining_work": "He commercialised a one-piece truck bumper that removed corrosion-prone welds and became the product base for his automotive business.",
+    "formative_context": "He came to Illinois from Pakistan at 16, studied industrial engineering at the University of Illinois and progressed from a student job at Flex-N-Gate to chief engineer.",
+    "decisive_moment": "In 1978 he left to establish Bumper Works; two years later he acquired Flex-N-Gate, his former employer, and combined the businesses.",
+    "enduring_dimensions": [
+      "Current private ownership and executive leadership of Flex-N-Gate",
+      "Long-term development of an automotive systems manufacturer from the combined businesses",
+      "Ownership of the Jacksonville Jaguars and chairmanship of Fulham Football Club"
+    ],
+    "character_detail": "His one-piece bumper eliminated the welds that had tended to rust, linking a specific engineering problem to the company-building route.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Begin with Khan's current owner and chief-executive role at the automotive group formed through product design and acquisition."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Begin with the 1980 purchase of his former employer and explain how Bumper Works supplied the product base."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Begin with the student engineering job that exposed him to the company he would later acquire."
+      }
+    ],
     "excluded_transient_context": [
       "Current vessel ownership, vessel names and LOA cohort ranking",
       "Current net-worth estimates and wealth rankings",
-      "Current company, team and stadium figures",
-      "Short-term sporting results and unrelated personal controversies"
+      "Current company, team, hotel and stadium figures",
+      "Short-term sporting results, recent transactions and unrelated personal controversies",
+      "Source publishers, confidence language and classification deliberation"
     ],
     "source_ids": [
       "S1",
@@ -100,10 +120,15 @@
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "identity_then_origin",
     "calibration_archetypes": [
-      "founder_operator"
+      "founder_operator",
+      "acquirer_consolidator"
     ],
-    "notes": "The biographies independently recast Khan's route from student engineer to product founder, acquirer and sports owner, keeping the evidence ledger, asset context, rankings and current operating figures outside the prose."
+    "notes": "The long profile opens with Khan's present industrial role, then moves backwards to the student job, product business and acquisition that explain it. This differs from the calibration's achievement-led sequence, deepens the core automotive work and ends on concrete durable holdings without using rankings or operating figures."
   },
   "editorial_note": null,
   "forbes_profile": {
@@ -118,11 +143,11 @@
   "primary_industry": {
     "classification": "automotive",
     "label": "Automotive",
-    "summary": "Khan's principal wealth-producing business is Flex-N-Gate, the automotive manufacturer he built around Bumper Works and a one-piece truck-bumper design.",
+    "summary": "Khan's principal wealth-producing business is Flex-N-Gate, the automotive manufacturer he developed after creating Bumper Works around a one-piece truck-bumper design.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Forbes identifies automotive parts as a source of wealth, while Flex-N-Gate, the Jaguars and the University of Illinois document the bumper innovation and automotive-manufacturing route."
+      "reason": "Forbes identifies auto parts as a source of wealth, while Flex-N-Gate, the Jaguars and the University of Illinois document the bumper innovation, company combination and automotive-manufacturing route."
     },
     "source_ids": [
       "S1",
@@ -134,7 +159,7 @@
   "wealth_origin": {
     "classification": "self_made",
     "label": "Self-made",
-    "summary": "Khan created Bumper Works around his one-piece truck bumper and used that business to acquire and expand his former employer, rather than inheriting the core wealth-producing assets.",
+    "summary": "Khan created Bumper Works around his one-piece truck bumper and used the business as the platform for acquiring and expanding his former employer, rather than inheriting the core wealth-producing assets.",
     "confidence": {
       "score": 99,
       "band": "very_high",
@@ -149,7 +174,7 @@
   "wealth_relationship": {
     "classification": "founder",
     "label": "Founder",
-    "summary": "Khan founded Bumper Works, whose bumper design created the commercial platform for his fortune, then acquired and combined it with Flex-N-Gate.",
+    "summary": "Khan founded Bumper Works, whose bumper design created the commercial platform for the automotive fortune, then acquired and combined it with Flex-N-Gate.",
     "confidence": {
       "score": 98,
       "band": "very_high",
@@ -163,13 +188,13 @@
     ]
   },
   "biography": {
-    "plain_text": "Shahid \"Shad\" Khan is a Pakistani-born American engineer and industrialist. A one-piece truck-bumper design enabled him to establish Bumper Works and buy Flex-N-Gate, his former employer. He expanded the automotive supplier internationally before moving into professional sport and entertainment through the Jacksonville Jaguars, Fulham Football Club and All Elite Wrestling.",
-    "html": "<p>Shahid \"Shad\" Khan is a Pakistani-born American engineer and industrialist. A one-piece truck-bumper design enabled him to establish Bumper Works and buy Flex-N-Gate, his former employer. He expanded the automotive supplier internationally before moving into professional sport and entertainment through the Jacksonville Jaguars, Fulham Football Club and All Elite Wrestling.</p>\r\n",
-    "word_count": 50,
+    "plain_text": "Shahid \"Shad\" Khan is a Pakistani-born American engineer who owns and leads Flex-N-Gate. He founded Bumper Works around a one-piece truck bumper, then acquired his former employer and combined the businesses into an automotive supplier. His later investments in professional sport and entertainment include the Jacksonville Jaguars, Fulham Football Club and All Elite Wrestling.",
+    "html": "<p>Shahid \"Shad\" Khan is a Pakistani-born American engineer who owns and leads Flex-N-Gate. He founded Bumper Works around a one-piece truck bumper, then acquired his former employer and combined the businesses into an automotive supplier. His later investments in professional sport and entertainment include the Jacksonville Jaguars, Fulham Football Club and All Elite Wrestling.</p>\r\n",
+    "word_count": 54,
     "confidence": {
-      "score": 98,
+      "score": 99,
       "band": "very_high",
-      "reason": "Forbes, Flex-N-Gate, the University of Illinois and official team sources support the identity, engineering, bumper, company-building and later sport and entertainment sequence."
+      "reason": "Forbes, Flex-N-Gate, the University of Illinois and current official team sources support the identity, current industrial role, engineering, bumper, company-building and later sport and entertainment sequence."
     },
     "source_ids": [
       "S1",
@@ -180,20 +205,19 @@
     ]
   },
   "long_biography": {
-    "plain_text": "Shahid \"Shad\" Khan arrived in Illinois from Lahore at 16 to study industrial engineering. A student job at Flex-N-Gate became the setting for his breakthrough: a one-piece truck bumper formed without welds that could corrode. He left to create Bumper Works around the design. In 1980 he purchased Flex-N-Gate and folded the younger company into his former employer, giving him a platform for wider automotive manufacturing.\n\nKhan later moved into sport and entertainment. He acquired the Jacksonville Jaguars and Fulham Football Club, linking an NFL franchise with one of London's oldest professional clubs, and launched All Elite Wrestling with his son Tony. The clubs and promotion placed him in public-facing institutions far removed from factory floors, while Flex-N-Gate remained the industrial platform created by his bumper innovation.",
-    "html": "<p>Shahid \"Shad\" Khan arrived in Illinois from Lahore at 16 to study industrial engineering. A student job at Flex-N-Gate became the setting for his breakthrough: a one-piece truck bumper formed without welds that could corrode. He left to create Bumper Works around the design. In 1980 he purchased Flex-N-Gate and folded the younger company into his former employer, giving him a platform for wider automotive manufacturing.</p>\r\n<p>Khan later moved into sport and entertainment. He acquired the Jacksonville Jaguars and Fulham Football Club, linking an NFL franchise with one of London's oldest professional clubs, and launched All Elite Wrestling with his son Tony. The clubs and promotion placed him in public-facing institutions far removed from factory floors, while Flex-N-Gate remained the industrial platform created by his bumper innovation.</p>\r\n",
-    "word_count": 127,
+    "plain_text": "Shahid \"Shad\" Khan remains the owner and chief executive of Flex-N-Gate, the automotive supplier he assembled through product design and acquisition. His one-piece truck bumper removed welds that were vulnerable to corrosion and gave the new Bumper Works business a distinctive manufacturing product.\n\nKhan had joined Flex-N-Gate while studying industrial engineering at the University of Illinois and rose from a student job to chief engineer. He left in 1978 to establish Bumper Works, then bought his former employer two years later and folded the younger company into it. The two businesses formed the manufacturing base he still operates, while the Jacksonville Jaguars and Fulham Football Club became his durable sports holdings.",
+    "html": "<p>Shahid \"Shad\" Khan remains the owner and chief executive of Flex-N-Gate, the automotive supplier he assembled through product design and acquisition. His one-piece truck bumper removed welds that were vulnerable to corrosion and gave the new Bumper Works business a distinctive manufacturing product.</p>\r\n<p>Khan had joined Flex-N-Gate while studying industrial engineering at the University of Illinois and rose from a student job to chief engineer. He left in 1978 to establish Bumper Works, then bought his former employer two years later and folded the younger company into it. The two businesses formed the manufacturing base he still operates, while the Jacksonville Jaguars and Fulham Football Club became his durable sports holdings.</p>\r\n",
+    "word_count": 111,
     "confidence": {
-      "score": 98,
+      "score": 99,
       "band": "very_high",
-      "reason": "The University of Illinois and official company and team sources establish the migration, engineering, product, acquisition and sports chronology, while Forbes corroborates the All Elite Wrestling chapter."
+      "reason": "Current Flex-N-Gate material supports Khan's ownership and executive role; the University of Illinois and Jaguars document the engineering, product and acquisition sequence; and current Jaguars and Fulham pages support the sports holdings."
     },
     "source_ids": [
-      "S1",
       "S2",
       "S3",
       "S4",
-      "S6",
+      "S5",
       "S7"
     ]
   },
@@ -229,11 +253,11 @@
       "action": "correct_existing",
       "field": "biography",
       "existing_value": "Shahid \"Shad\" Khan is a prominent Pakistani-American billionaire businessman and sports tycoon. Best known as the owner of the NFL's Jacksonville Jaguars and the Premier League's Fulham F.C., he built his massive fortune in the automotive parts industry. He is frequently cited as the quintessential embodiment of the \"American Dream\"\r\n",
-      "value": "<p>Shahid \"Shad\" Khan is a Pakistani-born American engineer and industrialist. A one-piece truck-bumper design enabled him to establish Bumper Works and buy Flex-N-Gate, his former employer. He expanded the automotive supplier internationally before moving into professional sport and entertainment through the Jacksonville Jaguars, Fulham Football Club and All Elite Wrestling.</p>\r\n",
+      "value": "<p>Shahid \"Shad\" Khan is a Pakistani-born American engineer who owns and leads Flex-N-Gate. He founded Bumper Works around a one-piece truck bumper, then acquired his former employer and combined the businesses into an automotive supplier. His later investments in professional sport and entertainment include the Jacksonville Jaguars, Fulham Football Club and All Elite Wrestling.</p>\r\n",
       "confidence": {
-        "score": 98,
+        "score": 99,
         "band": "very_high",
-        "reason": "The replacement removes promotional labels and generalisations, then explains the engineering, company-building and later ownership sequence with current, independently corroborated evidence."
+        "reason": "The replacement removes promotional labels, a transient wealth descriptor and a stock characterisation, then explains the engineering, company-building and later ownership sequence with current, independently corroborated evidence."
       },
       "source_ids": [
         "S1",
@@ -311,10 +335,11 @@
       "supports": [
         "Exact Shahid Khan identity",
         "Official company website",
-        "Private ownership and operating role",
+        "Current private ownership and operating role",
+        "Current chief-executive title",
         "Automotive manufacturing",
         "One-piece deep-draw bumper design",
-        "International operating presence"
+        "Long-term development of the company"
       ]
     },
     {
@@ -344,7 +369,7 @@
       "accessed_at": "2026-07-28",
       "supports": [
         "Full Shahid Rafiq Khan name",
-        "Sole-director and executive roles",
+        "Sole-director, chief-executive, president and chief-operating-officer roles",
         "Formal attestation dated 30 May 2025",
         "Flex-N-Gate automotive manufacturing identity"
       ]
@@ -381,15 +406,15 @@
     }
   ],
   "uncertainties": [
-    "The current exact Forbes profile was available through indexed content, but direct opening of the page was restricted. Its identity and business claims are independently corroborated by official company, university and team sources.",
+    "The exact Forbes profile was rechecked through current indexed content dated 15 July 2026. Its identity and business claims are independently corroborated by official company, university and team sources.",
     "Khan was born in Pakistan and later became a naturalised United States citizen. No sufficiently authoritative current source established that he retains Pakistani nationality, so secondary nationality remains blank.",
     "Flex-N-Gate was founded before Khan acquired it in 1980. Founder is used because he created Bumper Works and the bumper product that enabled the acquisition and combination, not because he founded the original Flex-N-Gate company.",
-    "No identity-verifiable personal LinkedIn, Instagram, X/Twitter, Facebook, YouTube, TikTok or dedicated personal website was found; namesakes and organisation accounts were rejected.",
+    "No identity-verifiable personal LinkedIn, Instagram, X/Twitter, Facebook, YouTube, TikTok or dedicated personal website was found in a fresh search; namesakes and organisation accounts were rejected.",
     "The existing Wikipedia and Forbes social links were preserved rather than re-proposed. Wikipedia was not used as sole support for any material claim.",
     "Blank title, suffix and secondary-residence fields were treated as optional; blank death fields remain inapplicable while he is alive, and internal-note and unknown-name fields remain system-controlled."
   ],
   "review": {
     "status": "pending",
-    "notes": "Identity, the automotive route, the new biographies, Rafiq middle name, Lahore birthplace and company website are strongly supported. Reviewer attention is requested for the Founder relationship nuance: Khan founded Bumper Works but acquired the older Flex-N-Gate company."
+    "notes": "Identity, current Flex-N-Gate role, the Automotive / Self-made / Founder classifications, new biographies, Rafiq middle name, Lahore birthplace and company website are strongly supported. Reviewer attention is requested for the Founder relationship nuance: Khan founded Bumper Works but acquired the older Flex-N-Gate company."
   }
 }

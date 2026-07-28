@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 105,
@@ -7,7 +7,7 @@
     "identity_confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The enriched owner record, official personal biography, current government roles, Royal Group chairmanship and exact social profile consistently identify the same Sheikh Tahnoon bin Zayed Al Nahyan; Tahnoun is an established alternate transliteration."
+      "reason": "The owner record, current official biography, 2026 UAE government reporting, Royal Group and IHC leadership pages, and official social profiles consistently identify Sheikh Tahnoon bin Zayed Al Nahyan; Tahnoun is an established alternate transliteration."
     }
   },
   "input_snapshot": {
@@ -73,17 +73,32 @@
   },
   "research_status": "complete",
   "biography_brief": {
-    "durable_identity": "Emirati royal, Deputy Ruler of Abu Dhabi, UAE national security adviser and leader of a royal family investment office.",
-    "wealth_or_prominence_route": "Royal lineage and early work in the private department of his father, UAE founder Sheikh Zayed, led into public office. Royal Group leadership established a documented private family-investment role alongside that public career.",
-    "turning_point": "Appointments as national security adviser and Deputy Ruler of Abu Dhabi placed him at the centre of the emirate's strategic and economic leadership.",
-    "later_chapter": "Leadership of Royal Group and International Holding Company developed alongside influential roles in finance, artificial intelligence and advanced technology.",
-    "character_detail": "He studied jiu-jitsu in California, promoted it across the UAE after returning home and later supported Hydra, a chess supercomputer joining strategic competition with technology.",
+    "durable_identity": "Sheikh Tahnoon bin Zayed Al Nahyan is an Emirati royal, Deputy Ruler of Abu Dhabi and the UAE's national security adviser.",
+    "defining_work": "His public responsibilities span national security and Abu Dhabi's strategic leadership, alongside chairmanship of Royal Group and International Holding Company.",
+    "formative_context": "He served in the private department of his father, UAE founder Sheikh Zayed, before taking senior national security appointments.",
+    "decisive_moment": "His appointment as national security adviser was followed by his appointment as Deputy Ruler of Abu Dhabi.",
+    "enduring_dimensions": [
+      "Leadership of Royal Group and International Holding Company",
+      "Founding the Abu Dhabi Combat Club and promoting jiu-jitsu in the UAE",
+      "A sustained interest in chess, including support for the Hydra supercomputer"
+    ],
+    "character_detail": "Jiu-jitsu study in California became a lasting institutional commitment through the Abu Dhabi Combat Club and national promotion of the sport.",
+    "opening_options": [
+      {
+        "mode": "formative_episode",
+        "angle": "Open with his service in Sheikh Zayed's private department as the concrete experience preceding national security leadership."
+      },
+      {
+        "mode": "present_identity",
+        "angle": "Orient the reader through his current Deputy Ruler and national security responsibilities before adding business and sporting roles."
+      }
+    ],
     "excluded_transient_context": [
-      "Current vessel ownership and LOA cohort ranking",
+      "Current vessel ownership, dimensions and LOA cohort ranking",
       "Current net worth and rankings",
-      "Current Royal Group or IHC ownership percentages",
-      "ADIA, ADQ and other sovereign or office-held assets as personal wealth",
-      "Transaction-specific investments that may change"
+      "Current Royal Group or IHC ownership percentages and transaction-specific investments",
+      "ADIA, ADQ and other sovereign or office-held assets as personal property",
+      "Source attribution and wealth-classification deliberation"
     ],
     "source_ids": [
       "S1",
@@ -91,7 +106,8 @@
       "S3",
       "S4",
       "S5",
-      "S6"
+      "S6",
+      "S11"
     ]
   },
   "editorial_assessment": {
@@ -100,10 +116,14 @@
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
     "calibration_archetypes": [
       "royal_public_office"
     ],
-    "notes": "The rewrite follows royal formation into public office and family-investment leadership, then uses the documented jiu-jitsu and chess-computing interests as a distinctive, durable second chapter."
+    "notes": "The long profile opens on a concrete formative role, establishes current public and company responsibilities, then closes with specific jiu-jitsu and chess institutions rather than an abstract summary."
   },
   "editorial_note": null,
   "forbes_profile": {
@@ -122,7 +142,7 @@
     "confidence": {
       "score": 92,
       "band": "high",
-      "reason": "Reuters identifies Royal Group as the Abu Dhabi royal family office led by Sheikh Tahnoon and IHC's 61% shareholder, while Royal Group and IHC confirm his current chairmanship; precise personal beneficial ownership remains private."
+      "reason": "Reuters identifies Royal Group as the Abu Dhabi royal family office led by Sheikh Tahnoon and IHC's controlling shareholder, while Royal Group and IHC confirm his current chairmanship; precise personal beneficial ownership remains private."
     },
     "source_ids": [
       "S2",
@@ -160,8 +180,8 @@
     ]
   },
   "biography": {
-    "plain_text": "Sheikh Tahnoon bin Zayed Al Nahyan is an Emirati royal, Deputy Ruler of Abu Dhabi and national security adviser. His investment role centres on Royal Group, the royal family office whose holdings include International Holding Company. An interest in jiu-jitsu, developed in California, made him an influential patron of the sport in the UAE.",
-    "html": "<p>Sheikh Tahnoon bin Zayed Al Nahyan is an Emirati royal, Deputy Ruler of Abu Dhabi and national security adviser. His investment role centres on Royal Group, the royal family office whose holdings include International Holding Company. An interest in jiu-jitsu, developed in California, made him an influential patron of the sport in the UAE.</p>\r\n",
+    "plain_text": "Sheikh Tahnoon bin Zayed Al Nahyan is Deputy Ruler of Abu Dhabi and the UAE's national security adviser. A son of UAE founder Sheikh Zayed, he also chairs Royal Group and International Holding Company. His study of jiu-jitsu in California led him to establish the Abu Dhabi Combat Club and promote the sport nationally.",
+    "html": "<p>Sheikh Tahnoon bin Zayed Al Nahyan is Deputy Ruler of Abu Dhabi and the UAE's national security adviser. A son of UAE founder Sheikh Zayed, he also chairs Royal Group and International Holding Company. His study of jiu-jitsu in California led him to establish the Abu Dhabi Combat Club and promote the sport nationally.</p>\r\n",
     "word_count": 54,
     "confidence": {
       "score": 95,
@@ -170,15 +190,15 @@
     },
     "source_ids": [
       "S1",
-      "S2",
       "S3",
-      "S4"
+      "S4",
+      "S11"
     ]
   },
   "long_biography": {
-    "plain_text": "Service in the private department of his father, UAE founder Sheikh Zayed, gave Sheikh Tahnoon bin Zayed Al Nahyan an early grounding in public affairs. He later became national security adviser and Deputy Ruler of Abu Dhabi. Alongside those offices, he leads Royal Group, the royal family office behind a controlling stake in International Holding Company.\n\nJiu-jitsu offers a more personal thread through that career. Sheikh Tahnoon studied the sport in California, brought it home in 1995 and helped establish it across the UAE. His interests in competition and technology later converged in Hydra, a chess supercomputer he supported before taking on broader leadership across artificial intelligence and national development.",
-    "html": "<p>Service in the private department of his father, UAE founder Sheikh Zayed, gave Sheikh Tahnoon bin Zayed Al Nahyan an early grounding in public affairs. He later became national security adviser and Deputy Ruler of Abu Dhabi. Alongside those offices, he leads Royal Group, the royal family office behind a controlling stake in International Holding Company.</p>\r\n<p>Jiu-jitsu offers a more personal thread through that career. Sheikh Tahnoon studied the sport in California, brought it home in 1995 and helped establish it across the UAE. His interests in competition and technology later converged in Hydra, a chess supercomputer he supported before taking on broader leadership across artificial intelligence and national development.</p>\r\n",
-    "word_count": 110,
+    "plain_text": "Work in the private department of his father, UAE founder Sheikh Zayed, preceded Sheikh Tahnoon bin Zayed Al Nahyan's appointments to national security leadership. He became the UAE's national security adviser before his appointment as Deputy Ruler of Abu Dhabi. He also chairs Royal Group and International Holding Company, whose activities range from finance and real estate to technology and healthcare.\n\nWhile studying in California, Sheikh Tahnoon took up jiu-jitsu and returned determined to develop the sport in the UAE. He founded the Abu Dhabi Combat Club and helped establish a national training culture around the discipline. Chess provided another sustained interest: he supported the Hydra supercomputer project and has served as honorary president of the Abu Dhabi Chess and Culture Club.",
+    "html": "<p>Work in the private department of his father, UAE founder Sheikh Zayed, preceded Sheikh Tahnoon bin Zayed Al Nahyan's appointments to national security leadership. He became the UAE's national security adviser before his appointment as Deputy Ruler of Abu Dhabi. He also chairs Royal Group and International Holding Company, whose activities range from finance and real estate to technology and healthcare.</p>\r\n<p>While studying in California, Sheikh Tahnoon took up jiu-jitsu and returned determined to develop the sport in the UAE. He founded the Abu Dhabi Combat Club and helped establish a national training culture around the discipline. Chess provided another sustained interest: he supported the Hydra supercomputer project and has served as honorary president of the Abu Dhabi Chess and Culture Club.</p>\r\n",
+    "word_count": 122,
     "confidence": {
       "score": 94,
       "band": "high",
@@ -186,9 +206,9 @@
     },
     "source_ids": [
       "S1",
-      "S2",
       "S3",
-      "S4"
+      "S4",
+      "S11"
     ]
   },
   "proposed_details": [
@@ -202,7 +222,8 @@
         "reason": "The official personal website identifies both current offices."
       },
       "source_ids": [
-        "S1"
+        "S1",
+        "S11"
       ]
     },
     {
@@ -237,7 +258,7 @@
       "action": "correct_existing",
       "field": "biography",
       "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Tahnoun_bin_Zayed_Al_Nahyan_(national_security_advisor)\">Sheikh Tahnoun bin Zayed Al Nahyan</a> is the son of <a href=\"https://en.wikipedia.org/wiki/Zayed_bin_Sultan_Al_Nahyan\">Sheikh Zayed bin Sultan Al Nahyan</a>, the founder of the United Arab Emirates, and presently serves as the UAE&#39;s National Security Advisor.</p>\r\n",
-      "value": "<p>Sheikh Tahnoon bin Zayed Al Nahyan is an Emirati royal, Deputy Ruler of Abu Dhabi and national security adviser. His investment role centres on Royal Group, the royal family office whose holdings include International Holding Company. An interest in jiu-jitsu, developed in California, made him an influential patron of the sport in the UAE.</p>\r\n",
+      "value": "<p>Sheikh Tahnoon bin Zayed Al Nahyan is Deputy Ruler of Abu Dhabi and the UAE's national security adviser. A son of UAE founder Sheikh Zayed, he also chairs Royal Group and International Holding Company. His study of jiu-jitsu in California led him to establish the Abu Dhabi Combat Club and promote the sport nationally.</p>\r\n",
       "confidence": {
         "score": 95,
         "band": "very_high",
@@ -245,9 +266,9 @@
       },
       "source_ids": [
         "S1",
-        "S2",
         "S3",
-        "S4"
+        "S4",
+        "S11"
       ]
     }
   ],
@@ -333,7 +354,7 @@
   "sources": [
     {
       "id": "S1",
-      "url": "https://www.tahnoonbinzayedofficial.ae/biography",
+      "url": "https://www.tahnoonbinzayedofficial.ae/en/biography",
       "title": "Biography",
       "publisher": "Official website of Sheikh Tahnoon bin Zayed Al Nahyan",
       "tier": 1,
@@ -476,16 +497,46 @@
         "exact identity",
         "profile linked from the official personal website"
       ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.wam.ae/en/article/172nipa-uae-president-welcomes-emir-qatar-arrival-abu",
+      "title": "UAE President welcomes Emir of Qatar on arrival in Abu Dhabi",
+      "publisher": "Emirates News Agency",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Current Deputy Ruler of Abu Dhabi role",
+        "Current UAE National Security Adviser role",
+        "Identity corroboration in 2026"
+      ]
     }
   ],
   "uncertainties": [
-    "No exact Forbes profile was found after exact-name and site:forbes.com/profile searches under both Tahnoon and Tahnoun. Current Forbes articles mention him and entities he chairs but do not supply a dedicated personal profile or personal net-worth estimate.",
-    "Royal Group and IHC are the clearest documented private family-business sphere, but public sources do not fully disclose Sheikh Tahnoon's individual beneficial ownership or isolate his personal net worth from wider Al Nahyan family holdings. Finance & Investments therefore describes the evidenced family-office structure, not a quantified personal fortune.",
-    "ADIA and ADQ are sovereign institutions funded by or investing for Abu Dhabi. Their assets were excluded from the personal wealth classification despite Sheikh Tahnoon's chairmanship.",
-    "The official biography confirms Abu Dhabi and 1968 but not the day and month. Gulf News gives 4 December 1968, matching the existing day and month, so only the conflicting input year is proposed for correction.",
-    "The current official personal website now links directly to @hhtbzayed on Instagram, allowing that profile to be proposed. No personal LinkedIn, Facebook, YouTube or TikTok account met the identity-verification threshold.",
-    "The enriched source record links Sheikh Tahnoon to A+ and Alesund, but no sufficiently strong public source established a meaningful personal design, commissioning or operational story, so yachting was omitted from both biographies.",
-    "No second nationality or secondary residence was evidenced. Blank suffix, age, death, internal-note and unknown-name fields were treated as optional, inapplicable or system fields rather than enrichment targets."
+    {
+      "topic": "Forbes profile",
+      "detail": "No exact profile was found after exact-name and site:forbes.com/profile searches under both Tahnoon and Tahnoun. Forbes articles mention him and entities he chairs but do not provide a dedicated personal profile."
+    },
+    {
+      "topic": "Private beneficial ownership",
+      "detail": "Royal Group and IHC are the clearest documented private family-business sphere, but public sources do not fully disclose Sheikh Tahnoon's individual beneficial ownership or isolate his personal assets from wider Al Nahyan family holdings."
+    },
+    {
+      "topic": "Sovereign institutions",
+      "detail": "ADIA and ADQ are government or sovereign institutions investing for Abu Dhabi. Their assets were excluded from the personal wealth classification despite Sheikh Tahnoon's chairmanship."
+    },
+    {
+      "topic": "Birth date correction",
+      "detail": "The official biography confirms Abu Dhabi and 1968 but not the day and month. Gulf News gives 4 December 1968, matching the existing day and month, so only the conflicting input year is proposed for correction."
+    },
+    {
+      "topic": "Social accounts",
+      "detail": "The current official personal website links directly to @hhtbzayed on X and Instagram. No personal LinkedIn, Facebook, YouTube or TikTok account met the verification threshold."
+    },
+    {
+      "topic": "Secondary nationality and residence",
+      "detail": "No second nationality or secondary residence was evidenced, so neither field is proposed."
+    }
   ],
   "review": {
     "status": "pending",

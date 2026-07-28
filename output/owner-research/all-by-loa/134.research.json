@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 134,
@@ -7,7 +7,7 @@
     "identity_confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The exact full name, HBJ initials, Qatari royal identity and former prime-minister and foreign-minister roles align across Qatar's official ministerial history, the current Forbes profile and the wider source record."
+      "reason": "The exact full name, HBJ initials, Qatari royal identity and former prime-minister and foreign-minister roles align across Qatar's official ministerial history, the current Forbes profile and a current Deutsche Bank voting-rights notification."
     }
   },
   "input_snapshot": {
@@ -77,15 +77,37 @@
   },
   "research_status": "complete",
   "biography_brief": {
-    "durable_identity": "Qatari royal Sheikh Hamad bin Jassim bin Jaber Al Thani, widely known as HBJ, is a former prime minister and longtime foreign minister.",
-    "wealth_or_prominence_route": "He rose from municipal administration to foreign affairs and the premiership, becoming closely associated with Qatar's expanding diplomatic and mediation role.",
-    "turning_point": "His departure from government in 2013 marked a shift towards a more visible private-investment chapter.",
-    "later_chapter": "Personally controlled vehicles carry an international portfolio spanning banking, property and other assets, alongside continuing public commentary on regional affairs.",
-    "character_detail": "Personal relationships became a practical part of the mediation style that gave him influence during his diplomatic career.",
+    "durable_identity": "Qatari royal, former prime minister, longtime foreign minister and private investor, widely known by the initials HBJ.",
+    "defining_work": "He became a leading figure in Qatar's diplomacy and mediation activity before establishing a separate public identity around personally controlled international investments.",
+    "formative_context": "His public career began in municipal administration and agriculture before he moved into foreign affairs.",
+    "decisive_moment": "Leaving government in 2013 separated his former public stewardship from his subsequent profile as a private investor.",
+    "enduring_dimensions": [
+      "More than two decades as Qatar's foreign minister, including service as prime minister",
+      "Relationship-led diplomatic and mediation work",
+      "Private investments in banking and technology through personally controlled vehicles"
+    ],
+    "character_detail": "Broad political ties and personal contacts were practical tools in the mediation work associated with his diplomatic career.",
+    "opening_options": [
+      {
+        "mode": "public_contribution",
+        "angle": "Use Qatar's expanding diplomatic reach and Sheikh Hamad's leading role in mediation as the point of entry."
+      },
+      {
+        "mode": "institution_or_asset",
+        "angle": "Use the personally attributed Paramount holding as a concrete entry into his private investment activity."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Use his departure from government in 2013 to distinguish his public-service record from his private investment activity."
+      }
+    ],
     "excluded_transient_context": [
-      "Current asset ownership and cohort ranking",
-      "Current net-worth estimates, rankings, stake percentages and transaction figures",
-      "Unrequested political controversy and current geopolitical disputes"
+      "Current or historical vessel association, ownership and LOA ranking",
+      "Current net-worth estimates, wealth rankings, stake percentages and transaction figures",
+      "Qatari state, sovereign and office-held assets as personal assets",
+      "Energy as an inferred industry from Qatar's economy or his former public roles",
+      "Allegations, crimes, sanctions, political controversy and current geopolitical disputes",
+      "Source publishers, confidence language and classification deliberation"
     ],
     "source_ids": [
       "S1",
@@ -93,8 +115,7 @@
       "S4",
       "S5",
       "S6",
-      "S7",
-      "S8"
+      "S7"
     ]
   },
   "editorial_assessment": {
@@ -103,11 +124,15 @@
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "public_contribution",
+    "narrative_shape": "public_role_then_foundation",
     "calibration_archetypes": [
       "royal_public_office",
       "investor_philanthropist"
     ],
-    "notes": "The biographies follow the public-service route into diplomacy and mediation, then move to the later private-investment chapter. Personally controlled assets remain distinct from former stewardship of state institutions."
+    "notes": "The long profile opens on Sheikh Hamad's diplomatic contribution, gives his relationship-led mediation work a concrete human dimension and then moves to personally controlled private investments. State and sovereign assets remain expressly separate from his private portfolio, and the prose excludes transient figures and contentious material."
   },
   "editorial_note": null,
   "forbes_profile": {
@@ -116,98 +141,91 @@
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The current dedicated profile exactly matches HBJ's name, Qatari citizenship, Doha residence, former government roles and personally controlled Deutsche Bank investment."
+      "reason": "The current dedicated profile exactly matches Sheikh Hamad's name, HBJ identity, Qatari citizenship, Doha residence, former government roles and investment-based wealth."
     }
   },
   "primary_industry": {
     "classification": "finance_investments",
     "label": "Finance & Investments",
-    "summary": "HBJ's identifiable private wealth is an international investment portfolio with substantial financial holdings held through personally controlled vehicles.",
+    "summary": "Sheikh Hamad's identifiable private wealth is an international investment portfolio held through personally attributed vehicles, with documented positions in banking and private companies.",
     "confidence": {
-      "score": 98,
+      "score": 99,
       "band": "very_high",
-      "reason": "Forbes identifies investments as his source of wealth; Forbes and Deutsche Bank materials link him beneficially to a major bank holding, while later reporting describes a broader private portfolio."
+      "reason": "Forbes identifies investments as his source of wealth; current Deutsche Bank disclosures connect him to the Paramount holding chain, and current registry-based reporting documents private-company investment through Prime Capital."
     },
     "source_ids": [
       "S1",
       "S4",
       "S5",
-      "S6",
-      "S7"
+      "S6"
     ]
   },
   "wealth_origin": {
     "classification": "dynastic_royal",
     "label": "Dynastic / royal",
-    "summary": "His access to the relationships and capital from which the private portfolio developed was rooted in Qatar's ruling family and a long senior public career.",
+    "summary": "His wealth context is rooted in membership of Qatar's ruling family, while the evidence available for his private portfolio describes investments rather than a founder-built operating company.",
     "confidence": {
       "score": 90,
       "band": "high",
-      "reason": "Dynastic / royal is the best-supported origin category because official and current profile sources establish ruling-family lineage and senior public access, while the later holdings are described as investments rather than a founder-operated enterprise."
+      "reason": "Official Qatari material establishes ruling-family lineage and Forbes identifies investment wealth, but public evidence does not fully disclose the capital history of the private portfolio. Dynastic / royal is therefore the best-supported origin category without treating state assets as personal property."
     },
     "source_ids": [
       "S1",
-      "S2"
+      "S2",
+      "S3",
+      "S5"
     ]
   },
   "wealth_relationship": {
     "classification": "investor",
     "label": "Investor",
-    "summary": "HBJ relates to his principal private wealth as the beneficial owner and controller of investment vehicles holding banking, property and other assets.",
+    "summary": "Sheikh Hamad relates to the documented private wealth as the personally attributed owner of investment-vehicle holdings rather than as the operator of the underlying companies.",
     "confidence": {
-      "score": 98,
+      "score": 99,
       "band": "very_high",
-      "reason": "Forbes, Deutsche Bank documents and subsequent reporting consistently identify personally controlled investment vehicles and an international private portfolio."
+      "reason": "Forbes, a current Deutsche Bank voting-rights notification and registry-based reporting consistently connect him to private investment vehicles holding banking and technology interests."
     },
     "source_ids": [
       "S1",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "biography": {
+    "plain_text": "Sheikh Hamad bin Jassim bin Jaber Al Thani is a Qatari royal, former prime minister and longtime foreign minister. Known as HBJ, he became a leading figure in Qatar's diplomacy and mediation work. He is also a private investor whose personally controlled vehicles hold interests in international banking and private technology companies.",
+    "html": "<p>Sheikh Hamad bin Jassim bin Jaber Al Thani is a Qatari royal, former prime minister and longtime foreign minister. Known as HBJ, he became a leading figure in Qatar's diplomacy and mediation work. He is also a private investor whose personally controlled vehicles hold interests in international banking and private technology companies.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official Qatari history and Brookings research support the government and mediation record, while Forbes, Deutsche Bank disclosures and registry-based reporting establish the distinct private investment activity."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
       "S4",
       "S5",
       "S6",
       "S7"
     ]
   },
-  "biography": {
-    "plain_text": "Sheikh Hamad bin Jassim bin Jaber Al Thani is a Qatari royal, former prime minister and longtime foreign minister. Known as HBJ, he helped shape Qatar's international diplomacy before moving into a more visible private-investment chapter. His personally controlled portfolio includes major financial holdings, while his continuing public commentary reflects decades spent in regional affairs.",
-    "html": "<p>Sheikh Hamad bin Jassim bin Jaber Al Thani is a Qatari royal, former prime minister and longtime foreign minister. Known as HBJ, he helped shape Qatar's international diplomacy before moving into a more visible private-investment chapter. His personally controlled portfolio includes major financial holdings, while his continuing public commentary reflects decades spent in regional affairs.</p>\r\n",
-    "word_count": 55,
-    "confidence": {
-      "score": 96,
-      "band": "very_high",
-      "reason": "Qatar's official ministerial history and the Brookings mediation study support the public-career narrative, while Forbes, Deutsche Bank and current reporting support the separate private-investment chapter."
-    },
-    "source_ids": [
-      "S1",
-      "S2",
-      "S4",
-      "S5",
-      "S6",
-      "S7",
-      "S8",
-      "S10",
-      "S11"
-    ]
-  },
   "long_biography": {
-    "plain_text": "Sheikh Hamad bin Jassim bin Jaber Al Thani rose through Qatar's government from municipal administration to foreign minister and, later, prime minister. Over two decades at foreign affairs, the Qatari royal became closely associated with the country's expanding diplomatic and mediation role. Personal relationships became a practical part of his mediation style. His public career also included senior responsibility for national planning and state investment institutions.\n\nAfter leaving government, HBJ became more visible as a private investor. Personally controlled vehicles acquired significant positions in international banking, property and other assets. The later chapter retained the international reach of his diplomatic career, now expressed through long-horizon investment across markets and continuing commentary on regional affairs.",
-    "html": "<p>Sheikh Hamad bin Jassim bin Jaber Al Thani rose through Qatar's government from municipal administration to foreign minister and, later, prime minister. Over two decades at foreign affairs, the Qatari royal became closely associated with the country's expanding diplomatic and mediation role. Personal relationships became a practical part of his mediation style. His public career also included senior responsibility for national planning and state investment institutions.</p>\r\n<p>After leaving government, HBJ became more visible as a private investor. Personally controlled vehicles acquired significant positions in international banking, property and other assets. The later chapter retained the international reach of his diplomatic career, now expressed through long-horizon investment across markets and continuing commentary on regional affairs.</p>\r\n",
-    "word_count": 114,
+    "plain_text": "Qatar's diplomatic reach expanded during Sheikh Hamad bin Jassim bin Jaber Al Thani's two decades as foreign minister. Known as HBJ, he rose from municipal administration to combine the foreign affairs portfolio with the premiership. He became a leading figure in the country's mediation efforts, where broad political ties and personal contacts helped bring parties together.\n\nOutside government, Sheikh Hamad is a private investor working through personally controlled vehicles. His portfolio spans banking and private companies. Paramount remains a major Deutsche Bank shareholder. A Prime Capital unit holds an investment interest in the German technology company Neura Robotics.",
+    "html": "<p>Qatar's diplomatic reach expanded during Sheikh Hamad bin Jassim bin Jaber Al Thani's two decades as foreign minister. Known as HBJ, he rose from municipal administration to combine the foreign affairs portfolio with the premiership. He became a leading figure in the country's mediation efforts, where broad political ties and personal contacts helped bring parties together.</p>\r\n<p>Outside government, Sheikh Hamad is a private investor working through personally controlled vehicles. His portfolio spans banking and private companies. Paramount remains a major Deutsche Bank shareholder. A Prime Capital unit holds an investment interest in the German technology company Neura Robotics.</p>\r\n",
+    "word_count": 98,
     "confidence": {
-      "score": 96,
+      "score": 98,
       "band": "very_high",
-      "reason": "Official Qatari material establishes the route through government; independent institutional research supports his mediation role and relationship-led style; investment sources establish the distinct later private portfolio."
+      "reason": "The official ministerial history supports his progression and senior offices, Brookings research supports his mediation prominence and use of political ties and personal contacts, and current investment evidence supports the concrete second paragraph."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S3",
       "S4",
       "S5",
       "S6",
-      "S7",
-      "S8",
-      "S10",
-      "S11"
+      "S7"
     ]
   },
   "proposed_details": [
@@ -249,18 +267,18 @@
       },
       "source_ids": [
         "S2",
-        "S9"
+        "S8"
       ]
     },
     {
       "action": "correct_existing",
       "field": "biography",
       "existing_value": "<p>Qatari politician <a href=\"https://en.wikipedia.org/wiki/Hamad_bin_Jassim_bin_Jaber_Al_Thani\">Sheikh Hamad bin Jassim bin Jaber bin Mohammed bin Thani Al Thani</a> From 3 April 2007 until 26 June 2013, he served as Prime Minister of Qatar and as Foreign Minister from 11 January 1992 to 26 June 2013.</p>\r\n",
-      "value": "<p>Sheikh Hamad bin Jassim bin Jaber Al Thani is a Qatari royal, former prime minister and longtime foreign minister. Known as HBJ, he helped shape Qatar's international diplomacy before moving into a more visible private-investment chapter. His personally controlled portfolio includes major financial holdings, while his continuing public commentary reflects decades spent in regional affairs.</p>\r\n",
+      "value": "<p>Sheikh Hamad bin Jassim bin Jaber Al Thani is a Qatari royal, former prime minister and longtime foreign minister. Known as HBJ, he became a leading figure in Qatar's diplomacy and mediation work. He is also a private investor whose personally controlled vehicles hold interests in international banking and private technology companies.</p>\r\n",
       "confidence": {
-        "score": 96,
+        "score": 98,
         "band": "very_high",
-        "reason": "The replacement removes the embedded link and sentence fragment, preserves the preferred identity and adds a durable account of the diplomatic and private-investment chapters."
+        "reason": "The replacement removes the embedded link and sentence fragment and supplies a durable, neutral account of his diplomatic and separately documented private investment roles."
       },
       "source_ids": [
         "S1",
@@ -268,10 +286,7 @@
         "S4",
         "S5",
         "S6",
-        "S7",
-        "S8",
-        "S10",
-        "S11"
+        "S7"
       ]
     }
   ],
@@ -280,11 +295,11 @@
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/hamad-bin-jassim-bin-jaber-al-thani/",
-      "verification": "The current dedicated profile exactly matches HBJ's full name, former prime-minister and foreign-minister roles, Qatari citizenship, Doha residence and private investment wealth. Type ID 11 is copied from the owner input lookup.",
+      "verification": "The current dedicated profile exactly matches Sheikh Hamad's full name, HBJ identity, former prime-minister and foreign-minister roles, Qatari citizenship, Doha residence and investment-based wealth. Type ID 11 is copied from the owner input lookup.",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "This is the exact current Forbes person profile for the owner."
+        "reason": "This is Forbes's dedicated current profile for the owner."
       },
       "source_ids": [
         "S1"
@@ -294,15 +309,15 @@
       "type_id": "3",
       "type": "Twitter",
       "url": "https://x.com/hamadjjalthani",
-      "verification": "The X profile uses HBJ's Arabic name and initials, identifies Doha as its location, and is independently cited as Sheikh Hamad bin Jassim's account by established news coverage. Type ID 3 is copied from the owner input lookup.",
+      "verification": "The exact-name X account publishes under Sheikh Hamad's Arabic name and is independently attributed to Sheikh Hamad bin Jassim by CNN Arabic. Type ID 3 is copied from the owner input lookup.",
       "confidence": {
         "score": 92,
         "band": "high",
         "reason": "The exact-name account has a sustained public record and independent attribution to the former Qatari prime minister."
       },
       "source_ids": [
-        "S10",
-        "S11"
+        "S9",
+        "S10"
       ]
     }
   ],
@@ -316,12 +331,12 @@
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "exact identity and HBJ initials",
-        "verified current Forbes profile",
-        "prime-minister and foreign-minister tenures",
+        "Exact identity and HBJ initials",
+        "Verified current Forbes profile",
+        "Prime-minister and foreign-minister tenures",
         "Qatari citizenship and Doha residence",
-        "investments as source of wealth",
-        "Paramount Services Holdings and Deutsche Bank stake"
+        "Investments as source of wealth",
+        "Personally attributed Paramount holding and Deutsche Bank interest"
       ]
     },
     {
@@ -332,14 +347,13 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "exact identity",
-        "1959 birth year",
-        "Doha birthplace",
+        "Exact identity",
+        "1959 birth year and Doha birthplace",
         "Al Thani ruling-family lineage",
-        "government entry through municipal affairs in 1982",
-        "foreign-minister appointment in 1992",
-        "prime-minister service from 2007 to 2013",
-        "national planning and state investment-related roles"
+        "Public-career entry through municipal affairs",
+        "Foreign-minister appointment and long tenure",
+        "Prime-minister service",
+        "Former state and public appointments"
       ]
     },
     {
@@ -350,9 +364,10 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "QIA status as the sovereign wealth fund of the State of Qatar",
-        "state ownership of the assets managed by QIA",
-        "mandate to invest state surpluses for Qatar and future generations"
+        "QIA as the sovereign wealth fund of the State of Qatar",
+        "QIA's mandate to invest the State's surpluses",
+        "State and future generations as beneficiaries of QIA assets",
+        "Separation of state assets from Sheikh Hamad's private portfolio"
       ]
     },
     {
@@ -364,120 +379,104 @@
       "accessed_at": "2026-07-28",
       "supports": [
         "Paramount Service Holding as a current major Deutsche Bank shareholder",
-        "current bank-shareholding context for the private investment vehicle"
+        "June 2026 regulatory-disclosure date for the current holding"
       ]
     },
     {
       "id": "S5",
-      "url": "https://investorrelations.db.com/files/documents/capital-increase-2014/Deutsche_Bank_Captial_Increase_2014_Prospectus.pdf?language_id=1",
-      "title": "Deutsche Bank Capital Increase 2014 Prospectus",
-      "publisher": "Deutsche Bank",
+      "url": "https://www.eqs-news.com/de/news/stimmrechtsanteile/his-excellency-sheikh-hamad-bin-jassim-bin-jaber-al-thani/f3934a29-cc76-4496-a77b-115204c87dd9_de",
+      "title": "His Excellency Sheikh Hamad bin Jassim bin Jaber Al Thani: voting-rights notification",
+      "publisher": "Deutsche Bank AG via EQS News",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "Paramount Services Holdings as an investment vehicle",
-        "HBJ as ultimate beneficial owner and controller",
-        "personal attribution of the Deutsche Bank holding"
+        "Exact identity in a June 2026 regulatory notification",
+        "Paramount Service Holding's Deutsche Bank voting rights",
+        "Full holding chain beginning with Sheikh Hamad",
+        "Personal attribution of the current banking investment"
       ]
     },
     {
       "id": "S6",
-      "url": "https://www.investing.com/news/stock-market-news/qatari-investor-in-deutsche-bank-says-european-lenders-should-merge-2538977",
-      "title": "Qatari investor in Deutsche Bank says European lenders should merge",
-      "publisher": "Reuters",
+      "url": "https://news.bloomberglaw.com/private-equity/billionaire-qatari-sheikh-amazon-back-robotics-startup-neura",
+      "title": "Billionaire Qatar Sheikh, Amazon Back Robotics Startup Neura",
+      "publisher": "Bloomberg News",
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "exact identity and former prime-minister role",
-        "private investor description",
-        "significant Deutsche Bank shareholding",
-        "personal property investment",
-        "continuing public commentary on banking and regional affairs"
+        "Exact identity and HBJ initials",
+        "Qatari royal and former-premier identity",
+        "Neura Robotics investment",
+        "Investment through a unit of his holding company Prime Capital",
+        "Corporate-registry basis for the private investment"
       ]
     },
     {
       "id": "S7",
-      "url": "https://www.tradingview.com/news/reuters.com%2C2026-03-26%3Anewsml_Zaw2dLx7V%3A0-zawya-qatari-billionaire-sheikh-hamad-bin-jassim-invests-in-germany-s-neura-robotics/",
-      "title": "Qatari billionaire Sheikh Hamad bin Jassim invests in Germany's Neura Robotics",
-      "publisher": "Zawya",
-      "tier": 2,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "exact identity and former prime-minister role",
-        "private investment through a Prime Capital unit",
-        "international portfolio spanning real estate and banking",
-        "continuing private-investment activity"
-      ]
-    },
-    {
-      "id": "S8",
       "url": "https://www.brookings.edu/wp-content/uploads/2016/06/Final-PDF-English.pdf",
       "title": "Qatari Mediation: Between Ambition and Achievement",
       "publisher": "Brookings Doha Center",
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "long foreign-minister tenure and concurrent premiership",
-        "central role in Qatar's mediation activity",
-        "importance of personal relationships and contacts to his mediation style",
-        "wider diplomatic prominence"
+        "Sheikh Hamad's central role in Qatar's mediation activity",
+        "Importance of broad political ties and personal contacts",
+        "Long foreign-minister tenure and concurrent premiership",
+        "Durable diplomatic prominence"
       ]
     },
     {
-      "id": "S9",
-      "url": "https://find-and-update.company-information.service.gov.uk/officers/x-3WEvys6cGE-BesIed703EV-KY/appointments",
-      "title": "Hamad Bin Jassim Bin Jabr AL-THANI personal appointments",
+      "id": "S8",
+      "url": "https://find-and-update.company-information.service.gov.uk/officers/GwX5YXKQM1EA19qw_L7QgQM5-hA/appointments",
+      "title": "Hamad Bin Jassim Bin Jaber AL-THANI personal appointments",
       "publisher": "UK Companies House",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "exact identity",
-        "1959 birth year",
-        "Qatari nationality",
-        "Qatar residence",
-        "Doha correspondence address"
+        "Exact identity",
+        "January 1959 filing date of birth",
+        "Qatari nationality and Qatar residence",
+        "Historical Harrods directorships"
       ]
     },
     {
-      "id": "S10",
+      "id": "S9",
       "url": "https://x.com/hamadjjalthani",
       "title": "Hamad bin Jassim bin Jaber (@hamadjjalthani)",
       "publisher": "X",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "Arabic personal name",
-        "HBJ initials",
-        "Doha profile location",
-        "continuing public commentary"
+        "Exact-name personal account",
+        "Continuing first-person public commentary"
       ]
     },
     {
-      "id": "S11",
+      "id": "S10",
       "url": "https://arabic.cnn.com/middle-east/article/2019/12/19/hammad-bin-jassem-qatar-national-day-tweet-social-reactions",
       "title": "Reaction to a National Day post by Hamad bin Jassim",
       "publisher": "CNN Arabic",
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "independent attribution of @hamadjjalthani to Sheikh Hamad bin Jassim",
-        "identity verification for the X account"
+        "Independent attribution of @hamadjjalthani to Sheikh Hamad bin Jassim",
+        "Identity verification for the X account"
       ]
     }
   ],
   "uncertainties": [
-    "QIA's official mandate states that it invests the State of Qatar's assets and surpluses for the State and future generations. HBJ's former state investment roles are treated as public stewardship and are not counted as personal ownership or as the source of his private fortune.",
-    "Finance & Investments follows HBJ's personally attributed private portfolio. No Energy classification is inferred from Qatar's economy, state assets or his former public roles.",
-    "Dynastic / royal describes the origin context supplied by ruling-family lineage and senior public access. Investor separately describes his relationship to the personally controlled private assets.",
-    "The current Deutsche Bank page identifies Paramount Service Holding as a major shareholder but does not name HBJ on that page. The current Forbes profile and Deutsche Bank's 2014 prospectus provide the beneficial-ownership link.",
-    "The exact birth month is inconsistent across public sources: UK Companies House records January 1959, while the existing Wikipedia page gives 30 August 1959 and current Forbes age data is more consistent with an August date. Only the uncontested year and official Doha birthplace are proposed.",
+    "QIA's official mandate states that it invests the State of Qatar's assets and surpluses for the State and future generations. Sheikh Hamad's former public and state-investment roles are treated as office-held stewardship, not personal ownership or a source of private wealth.",
+    "Finance & Investments follows the personally attributed Paramount and Prime Capital holdings. Energy is not inferred from Qatar's economy, sovereign assets or Sheikh Hamad's former public roles.",
+    "Dynastic / royal describes the best-supported origin context supplied by ruling-family lineage. Investor separately describes his relationship to documented personally attributed assets; public sources do not fully disclose the capital history of the wider private portfolio.",
+    "The exact birth month is inconsistent across public sources: UK Companies House records January 1959, while the existing Wikipedia page gives 30 August 1959 and the current Forbes age is more consistent with a later birthday. Only the uncontested year and official Doha birthplace are proposed.",
+    "The Forbes profile's published Deutsche Bank percentage predates the current June 2026 regulatory disclosure. The biographies omit percentages and rely on the current Deutsche Bank shareholder page and voting-rights notification for the present holding.",
     "No second nationality was established in strong sources, so secondary nationality remains blank.",
+    "No identity-verified personal LinkedIn, Instagram, Facebook, YouTube, TikTok or personal website met the verification threshold. No official public website for Paramount or Prime Capital was securely attributable to Sheikh Hamad.",
     "The existing Wikipedia link resolves to the correct person and was not duplicated.",
-    "No identity-verified personal LinkedIn, Instagram, Facebook, YouTube, TikTok or personal website met the verification threshold.",
-    "Blank suffix and secondary-residence fields were treated as optional; blank death, internal-note and unknown-name fields remain inapplicable or system-managed."
+    "Suffix and secondary residence remain optional; death, internal-note and unknown-name fields remain inapplicable or system-managed for a living person."
   ],
   "review": {
     "status": "pending",
-    "notes": "Review the Dynastic / royal origin alongside the Investor relationship, and retain the separation between HBJ's private portfolio and former stewardship of Qatar's state institutions. The biographies intentionally omit transient asset, ranking, current-figure and contentious political context."
+    "notes": "Identity, former public roles and the personally attributed Paramount holding are strongly supported. Review should retain the separation between private investments and former stewardship of Qatari state institutions, and should consider Dynastic / royal together with the separate Investor relationship."
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 172,
@@ -7,7 +7,7 @@
     "identity_confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The immutable owner name, French identity, LVMH leadership, full name, birthplace and birth date align across current LVMH, Forbes, Bloomberg and French government records."
+      "reason": "The exact name, French identity, LVMH leadership, full name, birthplace and birth date align across the owner record, current LVMH governance, Forbes and French official records."
     }
   },
   "input_snapshot": {
@@ -81,15 +81,37 @@
   },
   "research_status": "complete",
   "biography_brief": {
-    "durable_identity": "French engineer turned luxury-goods executive, majority shareholder, chairman and chief executive of LVMH.",
-    "wealth_or_prominence_route": "He redirected his family's construction business towards property development, then used its capital and outside backing to acquire a bankrupt textiles group containing Christian Dior.",
-    "turning_point": "He retained Christian Dior as the cornerstone of a luxury strategy, secured control of LVMH and built the group through acquisitions and long-term development of individual houses.",
-    "later_chapter": "His cultural patronage took permanent form in the Fondation Louis Vuitton, a private modern and contemporary art institution in Paris.",
-    "character_detail": "His operating model combines family control with patient investment in distinct creative houses.",
+    "durable_identity": "French luxury-goods executive, majority shareholder, Chairman and Chief Executive Officer of LVMH.",
+    "defining_work": "He made LVMH the central platform of a multi-brand luxury group built through acquisitions and patient development of individual houses.",
+    "formative_context": "Engineering training led into his family's construction company, which he redirected towards property development.",
+    "decisive_moment": "He acquired the business containing Christian Dior, retained Dior as the cornerstone of his luxury strategy and then secured control of LVMH.",
+    "enduring_dimensions": [
+      "Majority ownership and operational leadership of LVMH",
+      "Long-term development of distinct luxury houses",
+      "Cultural patronage through the Fondation Louis Vuitton"
+    ],
+    "character_detail": "Regular store visits and detailed notes to senior executives reflect his close attention to retail presentation and operating detail.",
+    "opening_options": [
+      {
+        "mode": "institution_or_asset",
+        "angle": "Open with LVMH as the platform through which Arnault assembled and developed a global luxury group."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Begin with the acquisition containing Christian Dior, the decision that established the cornerstone of his luxury strategy."
+      },
+      {
+        "mode": "public_contribution",
+        "angle": "Use the Fondation Louis Vuitton to introduce the permanent cultural institution created from his interest in art and architecture."
+      }
+    ],
     "excluded_transient_context": [
-      "Current vessel ownership and LOA cohort ranking",
-      "Current net-worth estimates, wealth rankings and ownership percentages",
-      "Short-term sales, store-count and portfolio totals"
+      "Current or historical vessel association, ownership and LOA ranking",
+      "Current net-worth estimates and wealth rankings",
+      "Current ownership percentages and portfolio totals",
+      "Short-term sales, share-price movements and luxury-market conditions",
+      "Succession speculation and family-dispute reporting",
+      "Source publishers, confidence language and classification deliberation"
     ],
     "source_ids": [
       "S1",
@@ -106,10 +128,14 @@
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "institution_then_person",
     "calibration_archetypes": [
       "founder_operator"
     ],
-    "notes": "The new profile follows Arnault's engineering, property and acquisition route into luxury, then adds the art foundation as a durable later layer without importing rankings, figures or vessel context."
+    "notes": "The long profile opens with LVMH as Arnault's operating platform, explains the acquisition logic behind it, and changes direction to the Fondation Louis Vuitton. It avoids the present-identity openings used for nearby public-office profiles."
   },
   "editorial_note": null,
   "forbes_profile": {
@@ -118,7 +144,7 @@
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The current dedicated Forbes profile matches Bernard Arnault's name, French identity, LVMH chairmanship, source of wealth and documented acquisition history."
+      "reason": "The current dedicated Forbes profile matches Arnault's exact identity, French citizenship, LVMH chairmanship, source of wealth and acquisition history."
     }
   },
   "primary_industry": {
@@ -128,73 +154,73 @@
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Forbes identifies LVMH as his source of wealth, while LVMH's official governance and history pages establish his controlling leadership and the group's luxury portfolio."
+      "reason": "Forbes identifies LVMH as his source of wealth, while LVMH's current governance and history pages establish his majority ownership, leadership and luxury portfolio."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S3"
+      "S4"
     ]
   },
   "wealth_origin": {
     "classification": "self_made",
     "label": "Self-made",
-    "summary": "Arnault gained access to capital through his family's construction and property business, but acquired and built the luxury assets that produced his principal fortune rather than inheriting LVMH or Christian Dior.",
+    "summary": "Arnault began with capital from his family's construction and property business, then acquired Christian Dior and built the luxury assets that produced his principal fortune.",
     "confidence": {
       "score": 97,
       "band": "very_high",
-      "reason": "Current Forbes, LVMH and Bloomberg material consistently documents the family-business starting point, the acquisition containing Christian Dior and the subsequent construction of the LVMH luxury group."
+      "reason": "Forbes, LVMH and Bloomberg consistently document the family-business starting point, the acquisition containing Christian Dior and the subsequent construction of the LVMH luxury group."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S3",
-      "S4"
+      "S4",
+      "S5"
     ]
   },
   "wealth_relationship": {
     "classification": "operator",
     "label": "Operator",
-    "summary": "Arnault did not found LVMH, which pre-dated his control, but became its majority shareholder and has materially led its acquisition, brand-development and operating strategy as chairman and chief executive.",
+    "summary": "Arnault did not found the original LVMH merger, but became its majority shareholder and has materially led its acquisition, brand-development and operating strategy as Chairman and Chief Executive Officer.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "LVMH's official history distinguishes the group's creation from Arnault's majority ownership and leadership, while Bloomberg documents his continuing operational involvement."
+      "reason": "LVMH's official history distinguishes the group's creation from Arnault's later control, its current governance identifies him as Chairman and CEO, and detailed business reporting documents his continuing operational involvement."
     },
     "source_ids": [
       "S2",
       "S3",
-      "S4"
+      "S4",
+      "S5"
     ]
   },
   "biography": {
-    "plain_text": "Bernard Arnault is a French luxury-goods executive who trained as an engineer before moving his family's construction business into property development. He pivoted into luxury by acquiring Boussac and reviving Christian Dior, then secured control of LVMH and built it through selective acquisitions, long-term investment in individual brands and family ownership.",
-    "html": "<p>Bernard Arnault is a French luxury-goods executive who trained as an engineer before moving his family's construction business into property development. He pivoted into luxury by acquiring Boussac and reviving Christian Dior, then secured control of LVMH and built it through selective acquisitions, long-term investment in individual brands and family ownership.</p>\r\n",
-    "word_count": 51,
+    "plain_text": "Bernard Arnault is the French chairman, chief executive and majority shareholder of LVMH. Trained as an engineer, he used capital from his family's construction business to acquire Christian Dior, then secured control of LVMH. Acquisitions and patient development of its luxury houses made the group the foundation of his fortune.",
+    "html": "<p>Bernard Arnault is the French chairman, chief executive and majority shareholder of LVMH. Trained as an engineer, he used capital from his family's construction business to acquire Christian Dior, then secured control of LVMH. Acquisitions and patient development of its luxury houses made the group the foundation of his fortune.</p>\r\n",
+    "word_count": 50,
     "confidence": {
       "score": 97,
       "band": "very_high",
-      "reason": "LVMH, Forbes and Bloomberg support the engineering and property background, the Boussac and Christian Dior acquisition route, LVMH control and acquisition-led group building."
+      "reason": "Current LVMH and Forbes profiles support his leadership, majority ownership, engineering background and family-business capital, while official history and business reporting support the Dior acquisition and group-building strategy."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S3",
-      "S4"
+      "S4",
+      "S5"
     ]
   },
   "long_biography": {
-    "plain_text": "Bernard Arnault trained as an engineer and rose through his family's construction company, redirecting it towards property development. After developing properties in the United States, he returned to France and acquired the bankrupt textiles group that owned Christian Dior. He retained the fashion house as the cornerstone of a luxury strategy. In 1989, he secured control of LVMH and built the group through acquisitions and patient development of individual houses.\n\nArnault has combined operational leadership with family control, remaining chairman and chief executive while preserving ownership through a family holding structure. His later cultural work took concrete form in the Fondation Louis Vuitton, a private art institution housed in Frank Gehry's glass-clad Paris building. Opened in 2014, it created a permanent setting for modern and contemporary art beyond the group's commercial houses.",
-    "html": "<p>Bernard Arnault trained as an engineer and rose through his family's construction company, redirecting it towards property development. After developing properties in the United States, he returned to France and acquired the bankrupt textiles group that owned Christian Dior. He retained the fashion house as the cornerstone of a luxury strategy. In 1989, he secured control of LVMH and built the group through acquisitions and patient development of individual houses.</p>\r\n<p>Arnault has combined operational leadership with family control, remaining chairman and chief executive while preserving ownership through a family holding structure. His later cultural work took concrete form in the Fondation Louis Vuitton, a private art institution housed in Frank Gehry's glass-clad Paris building. Opened in 2014, it created a permanent setting for modern and contemporary art beyond the group's commercial houses.</p>\r\n",
-    "word_count": 132,
+    "plain_text": "LVMH became Bernard Arnault's platform for assembling a global luxury group while preserving the identities of its individual houses. He secured control after using his family's construction and property capital to acquire the business containing Christian Dior, which became the cornerstone of his strategy.\n\nAs chairman and chief executive, Arnault has coupled acquisitions with long-term investment in creativity, craftsmanship and retail. His interest in art and architecture produced the Fondation Louis Vuitton, a private Paris institution commissioned from Frank Gehry. It presents modern and contemporary art in a building conceived as the foundation's first artistic statement.",
+    "html": "<p>LVMH became Bernard Arnault's platform for assembling a global luxury group while preserving the identities of its individual houses. He secured control after using his family's construction and property capital to acquire the business containing Christian Dior, which became the cornerstone of his strategy.</p>\r\n<p>As chairman and chief executive, Arnault has coupled acquisitions with long-term investment in creativity, craftsmanship and retail. His interest in art and architecture produced the Fondation Louis Vuitton, a private Paris institution commissioned from Frank Gehry. It presents modern and contemporary art in a building conceived as the foundation's first artistic statement.</p>\r\n",
+    "word_count": 96,
     "confidence": {
       "score": 97,
       "band": "very_high",
-      "reason": "LVMH and Bloomberg support the career and acquisition narrative, while official LVMH and Fondation Louis Vuitton material supports the later cultural institution and its Frank Gehry building."
+      "reason": "LVMH and Bloomberg support the acquisition, control and multi-house operating model, while Fondation Louis Vuitton material supports Arnault's cultural initiative, the Frank Gehry commission and the institution's art mission."
     },
     "source_ids": [
       "S2",
-      "S3",
       "S4",
       "S5",
       "S6"
@@ -208,11 +234,10 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "A French presidential honours decree gives his full name as Bernard, Jean, Etienne Arnault, independently aligning with Bloomberg's exact-person profile."
+        "reason": "A French presidential honours decree gives his full name as Bernard, Jean, Etienne Arnault and identifies him as a company president."
       },
       "source_ids": [
-        "S7",
-        "S8"
+        "S7"
       ]
     },
     {
@@ -222,10 +247,11 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "LVMH's current governance profile identifies Arnault as Chairman and Chief Executive Officer."
+        "reason": "LVMH's current governance profile and a 2026 board communication identify Arnault as Chairman and Chief Executive Officer."
       },
       "source_ids": [
-        "S2"
+        "S2",
+        "S3"
       ]
     },
     {
@@ -279,6 +305,23 @@
       "source_ids": [
         "S2"
       ]
+    },
+    {
+      "action": "correct_existing",
+      "field": "biography",
+      "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Bernard_Arnault\">Bernard Jean &Eacute;tienne Arnault</a> is a French entrepreneur, art collector, and investor. He is the chairman and CEO of the world&#39;s largest luxury goods firm, <a href=\"https://en.wikipedia.org/wiki/LVMH\">LVMH Moet Hennessy</a> &ndash; Louis Vuitton SE. With an estimated net worth of US $195.3 billion as of September 19, 2021, Arnault is the third richest person in the world and the richest person from Europe.</p>\r\n",
+      "value": "<p>Bernard Arnault is the French chairman, chief executive and majority shareholder of LVMH. Trained as an engineer, he used capital from his family's construction business to acquire Christian Dior, then secured control of LVMH. Acquisitions and patient development of its luxury houses made the group the foundation of his fortune.</p>\r\n",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The replacement removes embedded links, a stale net-worth estimate and obsolete rankings, then explains Arnault's durable acquisition and operating history."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5"
+      ]
     }
   ],
   "proposed_socials": [
@@ -286,23 +329,23 @@
       "type_id": "3",
       "type": "Twitter",
       "url": "https://x.com/BernardArnault",
-      "verification": "Current reporting identifies the exact verified @BernardArnault account as Arnault's personal X account; type ID 3 is copied from the current owner input lookup.",
+      "verification": "Current Forbes and Bloomberg reporting identify the verified @BernardArnault account as Arnault's personal X account, and the profile supplies the canonical URL; type ID 3 is copied from the current owner input lookup.",
       "confidence": {
-        "score": 97,
+        "score": 99,
         "band": "very_high",
-        "reason": "A Bloomberg affiliate and independent current reporting identify the exact verified handle, while the account supplies the canonical URL."
+        "reason": "Two current business publications identify the exact verified handle, which Arnault said is his only personal social-media account."
       },
       "source_ids": [
+        "S8",
         "S9",
-        "S10",
-        "S11"
+        "S10"
       ]
     },
     {
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/bernard-arnault/",
-      "verification": "The dedicated Forbes profile matches Arnault's name, family, LVMH chairmanship, source of wealth and business history; type ID 11 is copied from the current owner input lookup.",
+      "verification": "The dedicated Forbes profile matches Arnault's identity, family, LVMH chairmanship, source of wealth and business history; type ID 11 is copied from the current owner input lookup.",
       "confidence": {
         "score": 99,
         "band": "very_high",
@@ -320,10 +363,11 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The official company profile directly establishes Arnault's leadership and identity."
+        "reason": "The official company profile directly establishes Arnault's current leadership and exact identity."
       },
       "source_ids": [
-        "S2"
+        "S2",
+        "S3"
       ]
     }
   ],
@@ -338,10 +382,11 @@
       "accessed_at": "2026-07-28",
       "supports": [
         "dedicated Forbes profile",
-        "identity",
+        "exact identity",
+        "current LVMH Chairman and CEO role",
         "LVMH source of wealth",
-        "chairman and chief executive role",
-        "family-business capital used for Christian Dior acquisition"
+        "family construction capital used for the Christian Dior acquisition",
+        "French citizenship"
       ]
     },
     {
@@ -352,35 +397,46 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
+        "exact identity",
         "current Chairman and Chief Executive Officer role",
         "Groupe Arnault presidency",
         "Roubaix birthplace",
         "5 March 1949 birth date",
-        "engineering career",
+        "engineering education and career",
         "construction-company leadership",
-        "Financière Agache reorganisation",
         "Christian Dior luxury strategy",
         "LVMH majority ownership and leadership"
       ]
     },
     {
       "id": "S3",
-      "url": "https://www.lvmh.com/our-group/history",
+      "url": "https://www.lvmh.com/en/publications/proposed-appointment-to-the-board-of-directors",
+      "title": "Proposed appointment to the Board of Directors",
+      "publisher": "LVMH",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Bernard Arnault as current LVMH Chairman and Chief Executive Officer in 2026",
+        "continuing board leadership"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.lvmh.com/en/our-group/history",
       "title": "History",
       "publisher": "LVMH",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
         "LVMH creation before Arnault's control",
-        "Arnault leadership and majority shareholding since 1989",
+        "Arnault leadership and majority shareholding",
         "acquisition-led development of distinct houses",
-        "cultural patronage",
+        "luxury industry portfolio",
         "Fondation Louis Vuitton initiation and opening"
       ]
     },
     {
-      "id": "S4",
+      "id": "S5",
       "url": "https://www.bloomberg.com/features/2024-lvmh-bernard-arnault/",
       "title": "The House of Arnault",
       "publisher": "Bloomberg Businessweek",
@@ -390,96 +446,71 @@
         "engineering education",
         "family construction-business entry",
         "pivot towards property development",
-        "United States property-development period",
-        "acquisition of the group containing Christian Dior",
-        "luxury group-building model",
-        "continuing operational involvement"
+        "acquisition of the business containing Christian Dior",
+        "LVMH control and group-building model",
+        "continuing operational involvement",
+        "attention to store and retail detail"
       ]
     },
     {
-      "id": "S5",
+      "id": "S6",
       "url": "https://presse.fondationlouisvuitton.fr/inauguration-the-building/?lang=en",
       "title": "Inauguration of the Fondation Louis Vuitton",
       "publisher": "Fondation Louis Vuitton",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "Bernard Arnault presidency of the Fondation Louis Vuitton",
-        "private cultural initiative",
+        "Bernard Arnault as President of the Fondation Louis Vuitton",
+        "private cultural institution in Paris",
         "modern and contemporary art mission",
-        "2014 opening"
-      ]
-    },
-    {
-      "id": "S6",
-      "url": "https://www.fondationlouisvuitton.fr/en/fondation/the-building",
-      "title": "The Building",
-      "publisher": "Fondation Louis Vuitton",
-      "tier": 1,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "Paris location",
-        "Frank Gehry design",
-        "Bernard Arnault's stated role in commissioning the art and culture space"
+        "Frank Gehry commission",
+        "building as the Fondation's first artistic statement"
       ]
     },
     {
       "id": "S7",
       "url": "https://www.legiondhonneur.fr/sites/default/files/2024-10/lh_20231231.pdf",
-      "title": "Décret du 29 décembre 2023 portant élévation aux dignités de grand'croix et de grand officier",
+      "title": "Decree of 29 December 2023 concerning the Légion d'honneur",
       "publisher": "Grande Chancellerie de la Légion d'honneur",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
         "full name Bernard Jean Etienne Arnault",
-        "business-president identity"
+        "company-president identity"
       ]
     },
     {
       "id": "S8",
-      "url": "https://www.bloomberg.com/profile/person/1392853",
-      "title": "Bernard Jean Etienne Arnault",
-      "publisher": "Bloomberg",
-      "tier": 2,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "full name",
-        "identity",
-        "LVMH leadership"
-      ]
-    },
-    {
-      "id": "S9",
       "url": "https://www.bloomberght.com/avrupa-nin-en-zengini-aile-ici-kavga-soylentilerini-x-e-tasidi-3783898",
-      "title": "Avrupa'nın en zengini, 'aile içi kavga söylentilerini' X'e taşıdı",
+      "title": "Bernard Arnault makes his first post on X",
       "publisher": "Bloomberg HT",
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
         "verified @BernardArnault X account",
-        "first personal X post",
+        "personal X account",
         "statement that X is his only personal social-media account"
       ]
     },
     {
-      "id": "S10",
-      "url": "https://www.mononews.gr/business/bernar-arno-lvmh-ston-polemo-ton-social-o-plousioteros-evropaios-ti-apanta-stis-fimes-peri-oikogeneiakis-diamachis",
-      "title": "Μπερνάρ Αρνό (LVMH): Στον «πόλεμο» των social ο πλουσιότερος Ευρωπαίος",
-      "publisher": "Mononews",
+      "id": "S9",
+      "url": "https://www.forbes.com/sites/maryroeloffs/2026/07/27/billionaire-arnault-frances-richest-person-joins-x-to-battle-negative-stories-of-family-succession-fight/",
+      "title": "Bernard Arnault joins X",
+      "publisher": "Forbes",
       "tier": 2,
-      "accessed_at": "2026-07-27",
+      "accessed_at": "2026-07-28",
       "supports": [
-        "exact verified @BernardArnault X handle",
-        "new personal account",
-        "first-post identity context"
+        "Bernard Arnault's first personal social-media post",
+        "current X account identity",
+        "current LVMH Chairman and Chief Executive Officer role"
       ]
     },
     {
-      "id": "S11",
+      "id": "S10",
       "url": "https://x.com/BernardArnault",
       "title": "Bernard Arnault (@BernardArnault)",
       "publisher": "X",
-      "tier": 3,
+      "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
         "canonical X profile URL"
@@ -487,14 +518,15 @@
     }
   ],
   "uncertainties": [
-    "No personal LinkedIn, Instagram, personal website, Facebook, YouTube or TikTok account met the identity-verification threshold. Current reporting says X is Arnault's only personal social-media account.",
+    "Current reporting says X is Arnault's only personal social-media account. No personal LinkedIn, Instagram, personal website, Facebook, YouTube or TikTok account met the identity-verification threshold.",
     "No strong evidence of a secondary nationality was found, so the blank was preserved rather than inferred.",
-    "The self-made classification describes the principal luxury fortune: Arnault began with access to family construction and property capital, but acquired and built the core LVMH and Christian Dior assets.",
-    "Current net worth, rankings, ownership percentages, portfolio totals and vessel context were excluded from the editorial brief and both biographies because they are transient or unrelated to the durable business story.",
-    "Blank title, suffix, secondary residence, death, internal-note and unknown-name fields were treated as optional, inapplicable or system fields rather than enrichment targets."
+    "The self-made classification describes the principal luxury fortune: Arnault began with access to family construction and property capital, then acquired and built the core Christian Dior and LVMH assets.",
+    "Operator is selected because Arnault did not create the original LVMH merger but became majority shareholder, Chairman and Chief Executive Officer and has led its acquisition and brand-development strategy.",
+    "Current net worth, rankings, ownership percentages, portfolio totals, succession reporting and vessel context were excluded from the editorial brief and biographies.",
+    "Blank title, suffix, secondary residence, death, internal-note and unknown-name fields remain optional, inapplicable or system-managed rather than enrichment targets."
   ],
   "review": {
     "status": "pending",
-    "notes": null
+    "notes": "Reviewer should confirm the newly created personal X account and retain the operator classification, which distinguishes Arnault's control and leadership from the original formation of LVMH."
   }
 }

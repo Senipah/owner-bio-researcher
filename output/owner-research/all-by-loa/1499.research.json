@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 1499,
@@ -7,7 +7,7 @@
     "identity_confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The exact name, Israeli technology-investor identity, DST Global founder role, physics background and science-philanthropy record align across the current Forbes profile, Milner's official website, DST Global and the Breakthrough Foundation."
+      "reason": "The exact name, Israeli technology-investor identity, DST Global founder and partner roles, physics background and science-philanthropy record align across the current Forbes profile, Milner's official website, DST Global and the Breakthrough organisations."
     }
   },
   "input_snapshot": {
@@ -81,25 +81,43 @@
   },
   "research_status": "complete",
   "biography_brief": {
-    "durable_identity": "Yuri Milner is an Israeli technology investor, the founder of DST Global and a science philanthropist.",
-    "wealth_or_prominence_route": "Training and research in theoretical physics led to business study and work in the World Bank's financial sector. He then turned towards internet companies, built Mail.ru and founded DST Global.",
-    "turning_point": "His conviction that the internet would transform investment prompted the move from banking into company-building and global technology investing.",
-    "later_chapter": "The Breakthrough Prizes and Breakthrough Initiatives apply his philanthropy to fundamental science, the search for life beyond Earth and research into uncrewed interstellar travel.",
-    "character_detail": "The analytical questions of his first discipline reappear in both his long-range investment choices and his support for experimental science.",
+    "durable_identity": "Yuri Milner is an Israeli technology investor, DST Global founder and partner, and science philanthropist.",
+    "defining_work": "DST Global became his platform for allocating capital to internet and technology companies across international markets.",
+    "formative_context": "He trained and conducted research in theoretical physics before studying business at Wharton and working in the World Bank's financial sector.",
+    "decisive_moment": "A conviction that the internet would transform investment led him to build Mail.ru Group and then establish DST Global.",
+    "enduring_dimensions": [
+      "Founder and partner role at DST Global",
+      "Breakthrough Prizes in fundamental physics, life sciences and mathematics",
+      "Space-science programmes examining technological life and interstellar flight"
+    ],
+    "character_detail": "Quantum-field research preceded a business career that continued to support ambitious questions in fundamental science.",
+    "opening_options": [
+      {
+        "mode": "public_contribution",
+        "angle": "Open with the Breakthrough Prizes and space-science programmes before moving back to the investment foundation."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Open with the decision to redirect his work from physics towards business and internet investment."
+      },
+      {
+        "mode": "present_identity",
+        "angle": "Open with his current position as an Israeli investor, DST Global partner and science philanthropist."
+      }
+    ],
     "excluded_transient_context": [
-      "Current asset holdings and cohort position",
-      "Current rankings, valuations, stake percentages and fund figures",
-      "Short-lived portfolio movements and unrequested controversy"
+      "Current or historical vessel ownership, vessel names, design and LOA ranking",
+      "Current net worth, wealth rankings, fund valuations and portfolio percentages",
+      "Short-term portfolio movements, individual deal values and changing fund metrics",
+      "Political controversy and unrelated personal material"
     ],
     "source_ids": [
       "S1",
       "S2",
-      "S3",
       "S4",
       "S5",
       "S6",
       "S7",
-      "S8",
       "S9"
     ]
   },
@@ -109,10 +127,14 @@
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "public_contribution",
+    "narrative_shape": "achievement_then_backstory",
     "calibration_archetypes": [
       "investor_philanthropist"
     ],
-    "notes": "The profile uses a fresh change-of-discipline opening, follows physics through finance into internet investing, and returns to scientific questions through philanthropy. It avoids the calibration entry's sentence structure, portfolio inventory and concluding language."
+    "notes": "The long profile opens on Milner's scientific institutions, then moves backwards through quantum-field research into business and internet investment. This reverses the expected investment-first sequence and ends on his current DST Global partnership."
   },
   "editorial_note": null,
   "forbes_profile": {
@@ -121,7 +143,7 @@
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The current dedicated Forbes profile exactly matches Milner's name, Israeli citizenship, DST Global role, technology-investment fortune, self-made status and science philanthropy."
+      "reason": "The current dedicated Forbes profile exactly matches Milner's name, Israeli citizenship, DST Global partnership, technology-investment wealth, self-made status and science philanthropy."
     }
   },
   "primary_industry": {
@@ -131,7 +153,7 @@
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Forbes identifies technology investments as his source of wealth, while Milner's official website and DST Global establish the firm's internet-investment focus and his founder role."
+      "reason": "Forbes identifies tech investments as his source of wealth, while Milner's official website and DST Global establish an investment-firm model centred on internet companies rather than an operating technology business."
     },
     "source_ids": [
       "S1",
@@ -143,63 +165,61 @@
   "wealth_origin": {
     "classification": "self_made",
     "label": "Self-made",
-    "summary": "He built the principal fortune through Mail.ru, DST Global and investments in growing internet companies rather than through inherited operating assets.",
+    "summary": "He built the principal fortune through Mail.ru Group, DST Global and investments in growing internet companies.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Forbes explicitly classifies the wealth as self-made, and first-party sources trace Milner's progression from physics and banking to building Mail.ru and founding DST Global."
+      "reason": "Forbes explicitly classifies the wealth as self-made, and first-party sources trace Milner's progression from physics and banking to building Mail.ru Group and founding DST Global."
     },
     "source_ids": [
       "S1",
-      "S3",
       "S4",
-      "S6",
-      "S9"
+      "S5",
+      "S10"
     ]
   },
   "wealth_relationship": {
     "classification": "investor",
     "label": "Investor",
-    "summary": "His principal relationship to the wealth-producing assets is as an investor allocating capital through the DST Global platform he founded.",
+    "summary": "His principal relationship to the wealth-producing assets is as a partner allocating capital through the DST Global investment platform he founded.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Forbes describes Milner as a technology investor, while DST Global and his official biography establish his founder role in a global internet-investment firm."
+      "reason": "The current Forbes profile identifies Milner as a DST Global partner and technology investor, while DST Global and his official biography establish his founder relationship to the investment firm."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S5"
+    ]
+  },
+  "biography": {
+    "plain_text": "Israeli investor Yuri Milner built his fortune by founding Mail.ru Group and DST Global, an investment firm focused on internet companies. Trained as a theoretical physicist, he later co-founded the Breakthrough Prizes and Breakthrough Initiatives. Those programmes support fundamental science, the search for technological life and research into interstellar flight.",
+    "html": "<p>Israeli investor Yuri Milner built his fortune by founding Mail.ru Group and DST Global, an investment firm focused on internet companies. Trained as a theoretical physicist, he later co-founded the Breakthrough Prizes and Breakthrough Initiatives. Those programmes support fundamental science, the search for technological life and research into interstellar flight.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Current Forbes and first-party DST and personal sources support the investment mechanism and physics background; current Breakthrough sources establish the prizes, initiatives and scientific purposes."
     },
     "source_ids": [
       "S1",
       "S2",
       "S4",
-      "S5"
-    ]
-  },
-  "biography": {
-    "plain_text": "Israeli investor Yuri Milner carried an early training in theoretical physics into finance and internet investment. After the World Bank, he built Mail.ru and founded DST Global to back digital platforms worldwide. His Breakthrough philanthropy supports major science prizes and programmes examining life beyond Earth and the possibility of interstellar travel.",
-    "html": "<p>Israeli investor Yuri Milner carried an early training in theoretical physics into finance and internet investment. After the World Bank, he built Mail.ru and founded DST Global to back digital platforms worldwide. His Breakthrough philanthropy supports major science prizes and programmes examining life beyond Earth and the possibility of interstellar travel.</p>\r\n",
-    "word_count": 52,
-    "confidence": {
-      "score": 98,
-      "band": "very_high",
-      "reason": "Milner's official biography, fact sheet, DST Global and the Breakthrough organisations directly support the physics, banking, internet-investment and science-philanthropy route; Forbes corroborates the identity and wealth mechanism."
-    },
-    "source_ids": [
-      "S1",
-      "S3",
-      "S4",
       "S5",
       "S6",
       "S7",
-      "S8"
+      "S9"
     ]
   },
   "long_biography": {
-    "plain_text": "Yuri Milner's investment career began with a change of discipline. Trained in theoretical physics and quantum-field research, he studied business at Wharton and worked in the World Bank's financial sector. A conviction that the internet would reshape investment then led him to build Mail.ru and create DST Global, a platform for backing digital companies across international markets.\n\nMilner later put his scientific background at the centre of his philanthropy. With Julia Milner and other partners, he established the Breakthrough Prizes for physics, life sciences and mathematics. The Breakthrough Initiatives added astronomy and engineering programmes, including searches for technological life and research on uncrewed interstellar travel. The physicist who changed careers now funds experimental work on some of the questions that first drew him to science.",
-    "html": "<p>Yuri Milner's investment career began with a change of discipline. Trained in theoretical physics and quantum-field research, he studied business at Wharton and worked in the World Bank's financial sector. A conviction that the internet would reshape investment then led him to build Mail.ru and create DST Global, a platform for backing digital companies across international markets.</p>\r\n<p>Milner later put his scientific background at the centre of his philanthropy. With Julia Milner and other partners, he established the Breakthrough Prizes for physics, life sciences and mathematics. The Breakthrough Initiatives added astronomy and engineering programmes, including searches for technological life and research on uncrewed interstellar travel. The physicist who changed careers now funds experimental work on some of the questions that first drew him to science.</p>\r\n",
-    "word_count": 126,
+    "plain_text": "Investor Yuri Milner co-founded the Breakthrough Prizes and Initiatives to support fundamental science and space research. The prizes recognise advances in physics, life sciences and mathematics, while separate programmes search for technological life and investigate interstellar flight. Milner had previously conducted research in quantum field theory.\n\nAfter leaving research, Milner studied business at Wharton and worked in the World Bank's financial sector. Convinced that the internet would transform investment, he built Mail.ru Group and founded DST Global to back technology companies across international markets. He remains a partner in DST Global's investment business.",
+    "html": "<p>Investor Yuri Milner co-founded the Breakthrough Prizes and Initiatives to support fundamental science and space research. The prizes recognise advances in physics, life sciences and mathematics, while separate programmes search for technological life and investigate interstellar flight. Milner had previously conducted research in quantum field theory.</p>\r\n<p>After leaving research, Milner studied business at Wharton and worked in the World Bank's financial sector. Convinced that the internet would transform investment, he built Mail.ru Group and founded DST Global to back technology companies across international markets. He remains a partner in DST Global's investment business.</p>\r\n",
+    "word_count": 94,
     "confidence": {
       "score": 98,
       "band": "very_high",
-      "reason": "First-party personal, DST and Breakthrough sources establish the full formation, investment and philanthropy narrative, with Forbes independently corroborating his investor identity, self-made wealth and early internet-company backing."
+      "reason": "Current Breakthrough records support the science institutions and purposes; Milner's official biography and fact sheet establish the physics, Wharton, World Bank, Mail.ru and DST sequence; current Forbes confirms the DST partnership."
     },
     "source_ids": [
       "S1",
@@ -208,20 +228,19 @@
       "S5",
       "S6",
       "S7",
-      "S8",
       "S9"
     ]
   },
   "proposed_details": [
     {
       "field": "nationality",
+      "value": "Israeli",
       "action": "correct_existing",
       "existing_value": "Russian",
-      "value": "Israeli",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "The current Forbes profile lists Israeli citizenship, and Milner's official fact sheet states that he has been an Israeli citizen since 1999 and completed renunciation of Russian citizenship in 2022."
+        "reason": "The current Forbes profile lists Israeli citizenship, while Milner's official fact sheet states that he has been an Israeli citizen since 1999 and completed renunciation of Russian citizenship in 2022."
       },
       "source_ids": [
         "S1",
@@ -230,94 +249,95 @@
     },
     {
       "field": "known_for_title",
+      "value": "Founder and Partner of DST Global",
       "action": "fill_missing",
-      "value": "Founder of DST Global",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "DST Global's official website and Milner's current official biography directly identify him as the firm's founder."
+        "reason": "DST Global's official website identifies Milner as founder, and his current dedicated Forbes profile identifies him as a DST Global partner."
       },
       "source_ids": [
-        "S2",
-        "S4",
+        "S1",
         "S5"
       ]
     },
     {
       "field": "place_of_birth",
-      "action": "fill_missing",
       "value": "Moscow",
+      "action": "fill_missing",
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "Milner's official fact sheet states that he was born in Moscow, and Forbes independently documents his Moscow birth and upbringing."
+        "reason": "Milner's official fact sheet states that he was born in Moscow, independently corroborated by Forbes and the existing exact-match reference profile."
       },
       "source_ids": [
         "S3",
-        "S9"
+        "S10",
+        "S11"
       ]
     },
     {
       "field": "birth_day",
-      "action": "fill_missing",
       "value": "11",
+      "action": "fill_missing",
       "confidence": {
-        "score": 96,
-        "band": "very_high",
-        "reason": "Forbes' contemporary 2011 profile states that Milner would turn 50 on 11 November 2011, and the existing exact-match Wikipedia biography independently records 11 November 1961."
+        "score": 92,
+        "band": "high",
+        "reason": "Forbes' contemporary 2011 profile records Milner's fiftieth birthday as 11 November 2011, and the exact-match reference profile independently records 11 November 1961."
       },
       "source_ids": [
-        "S9",
-        "S10"
+        "S10",
+        "S11"
       ]
     },
     {
       "field": "birth_month",
-      "action": "fill_missing",
       "value": "November",
+      "action": "fill_missing",
       "confidence": {
-        "score": 96,
-        "band": "very_high",
-        "reason": "Forbes' contemporary 2011 profile states that Milner would turn 50 on 11 November 2011, and the existing exact-match Wikipedia biography independently records 11 November 1961."
+        "score": 92,
+        "band": "high",
+        "reason": "Forbes' contemporary 2011 profile records Milner's fiftieth birthday as 11 November 2011, and the exact-match reference profile independently records 11 November 1961."
       },
       "source_ids": [
-        "S9",
-        "S10"
+        "S10",
+        "S11"
       ]
     },
     {
       "field": "birth_year",
-      "action": "fill_missing",
       "value": "1961",
+      "action": "fill_missing",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "Milner's official fact sheet and Breakthrough Foundation biography both state that he was born in 1961; Forbes' contemporary profile independently corroborates the year."
-      },
-      "source_ids": [
-        "S3",
-        "S6",
-        "S9"
-      ]
-    },
-    {
-      "field": "biography",
-      "action": "correct_existing",
-      "existing_value": "<p>Milner is a Russian-Israeli entrepreneur, venture capitalist, and physicist named <a href=\"https://en.wikipedia.org/wiki/Yuri_Milner\">Yuri Borisovich </a>(Bentsionovich). Milner has been dubbed Russia&#39;s most powerful investor in information technology. He is the cofounder and former chairman of the online corporation <a href=\"https://en.wikipedia.org/wiki/VK_(company)\">Mail.Ru Group</a>, as well as the creator of <a href=\"https://en.wikipedia.org/wiki/DST_Global\">DST Global</a>, an investment firm. Milner is a shareholder in Byju&#39;s, VKontakte, Facebook, Zynga, Stripe, Twitter, Flipkart, Practo, Spotify, Zocdoc, Groupon, JD.com, Xiaomi, OlaCabs, Alibaba, Airbnb, WhatsApp, Nubank, Wish, and many other companies through his DST Global investment firm.</p>\r\n",
-      "value": "<p>Israeli investor Yuri Milner carried an early training in theoretical physics into finance and internet investment. After the World Bank, he built Mail.ru and founded DST Global to back digital platforms worldwide. His Breakthrough philanthropy supports major science prizes and programmes examining life beyond Earth and the possibility of interstellar travel.</p>\r\n",
-      "confidence": {
-        "score": 98,
-        "band": "very_high",
-        "reason": "The replacement removes the obsolete citizenship description, unsupported superlative, embedded links and indiscriminate portfolio list, then supplies a durable account of Milner's investment route and science philanthropy."
+        "reason": "Milner's official fact sheet and Breakthrough Foundation biography both state that he was born in 1961; Forbes independently corroborates the year."
       },
       "source_ids": [
         "S1",
         "S3",
+        "S6",
+        "S10"
+      ]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Israeli investor Yuri Milner built his fortune by founding Mail.ru Group and DST Global, an investment firm focused on internet companies. Trained as a theoretical physicist, he later co-founded the Breakthrough Prizes and Breakthrough Initiatives. Those programmes support fundamental science, the search for technological life and research into interstellar flight.</p>\r\n",
+      "action": "correct_existing",
+      "existing_value": "<p>Milner is a Russian-Israeli entrepreneur, venture capitalist, and physicist named <a href=\"https://en.wikipedia.org/wiki/Yuri_Milner\">Yuri Borisovich </a>(Bentsionovich). Milner has been dubbed Russia&#39;s most powerful investor in information technology. He is the cofounder and former chairman of the online corporation <a href=\"https://en.wikipedia.org/wiki/VK_(company)\">Mail.Ru Group</a>, as well as the creator of <a href=\"https://en.wikipedia.org/wiki/DST_Global\">DST Global</a>, an investment firm. Milner is a shareholder in Byju&#39;s, VKontakte, Facebook, Zynga, Stripe, Twitter, Flipkart, Practo, Spotify, Zocdoc, Groupon, JD.com, Xiaomi, OlaCabs, Alibaba, Airbnb, WhatsApp, Nubank, Wish, and many other companies through his DST Global investment firm.</p>\r\n",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The replacement corrects the obsolete citizenship description, removes embedded links, superlatives and a transient portfolio list, and supplies a durable account of Milner's investment work and science philanthropy."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
         "S4",
         "S5",
         "S6",
         "S7",
-        "S8"
+        "S9"
       ]
     }
   ],
@@ -368,7 +388,7 @@
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/yuri-milner/",
-      "verification": "The current dedicated Forbes profile matches Milner's exact identity, DST Global role, Israeli citizenship, investment wealth and science philanthropy. Type ID 11 is copied from the owner input lookup.",
+      "verification": "The current dedicated Forbes profile matches Milner's exact identity, DST Global partnership, Israeli citizenship, technology-investment wealth and science philanthropy. Type ID 11 is copied from the owner input lookup.",
       "confidence": {
         "score": 100,
         "band": "very_high",
@@ -396,7 +416,7 @@
       "type_id": "15",
       "type": "Personal Website",
       "url": "https://www.yurimilner.com/",
-      "verification": "The exact-name site publishes Milner's official biography, DST Global role, science philanthropy, citizenship facts and verified social links. Type ID 15 is copied from the owner input lookup.",
+      "verification": "The exact-name site publishes Milner's official biography, DST Global role, science philanthropy, citizenship facts and official social links. Type ID 15 is copied from the owner input lookup.",
       "confidence": {
         "score": 100,
         "band": "very_high",
@@ -408,7 +428,25 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "field": "existing_social_profile",
+      "type_id": "5",
+      "type": "LinkedIn",
+      "existing_value": "https://www.linkedin.com/in/yuri-milner-3b2b5910",
+      "recommended_value": "https://www.linkedin.com/in/yuri-milner",
+      "recommended_action": "correct_existing_url",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Milner's official personal website now links directly to the canonical /in/yuri-milner LinkedIn path rather than the legacy URL stored in the input."
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "review_note": "The proposed-social contract cannot replace an existing social type. Review whether the legacy path redirects correctly before changing the stored URL."
+    }
+  ],
   "sources": [
     {
       "id": "S1",
@@ -418,14 +456,13 @@
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "exact identity",
-        "verified Forbes profile",
-        "DST Global role",
+        "Exact identity and verified Forbes profile",
+        "Current DST Global partner role",
         "Israeli citizenship",
-        "technology investments as source of wealth",
-        "self-made wealth origin",
-        "early Facebook and Twitter investments",
-        "science philanthropy"
+        "Tech investments as source of wealth",
+        "Self-made wealth origin",
+        "DST Global investments",
+        "Physics background and science philanthropy"
       ]
     },
     {
@@ -436,16 +473,12 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "exact identity",
+        "Exact identity",
         "Israeli technology-investor identity",
         "DST Global founder role",
-        "Breakthrough Prize Foundation founder role",
-        "Breakthrough Initiatives",
-        "official personal website",
-        "official Facebook profile",
-        "official Twitter profile",
-        "official Instagram profile",
-        "official LinkedIn profile"
+        "Science-philanthropy identity",
+        "Official personal website",
+        "Official Facebook, Twitter, Instagram and LinkedIn profiles"
       ]
     },
     {
@@ -456,10 +489,9 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "exact identity",
-        "Moscow birthplace",
-        "1961 birth year",
-        "theoretical-physics education",
+        "Exact identity",
+        "Moscow birthplace and 1961 birth year",
+        "Theoretical-physics education",
         "Wharton business study",
         "World Bank financial-sector employment",
         "Israeli citizenship since 1999",
@@ -475,10 +507,10 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "advanced degree in theoretical physics",
-        "quantum-field research",
+        "Advanced degree in theoretical physics",
+        "Quantum-field research",
         "Wharton business study",
-        "conviction that the internet was the future of investment",
+        "Conviction that the internet was the future of investment",
         "Mail.ru Group founding and development",
         "DST Global founding and global internet-investment focus"
       ]
@@ -492,9 +524,9 @@
       "accessed_at": "2026-07-28",
       "supports": [
         "Yuri Milner as founder",
-        "official company website",
-        "global internet-investment firm identity",
-        "technology-company investment focus"
+        "Official company website",
+        "Global internet-investment firm identity",
+        "Technology-company investment focus"
       ]
     },
     {
@@ -505,15 +537,12 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "exact identity",
+        "Exact identity",
         "1961 birth year",
-        "theoretical-physics and quantum-field-research background",
-        "Mail.ru Group founding and public development",
-        "DST Global founding",
-        "Breakthrough Prizes",
-        "Breakthrough Listen",
-        "Breakthrough Starshot",
-        "official personal website"
+        "Theoretical-physics and quantum-field-research background",
+        "Mail.ru Group and DST Global founding",
+        "Breakthrough Prizes and Breakthrough Initiatives co-founder roles",
+        "Official personal website"
       ]
     },
     {
@@ -525,10 +554,10 @@
       "accessed_at": "2026-07-28",
       "supports": [
         "Breakthrough Initiatives co-founding by Julia and Yuri Milner",
-        "space-science focus",
-        "search for technological life",
-        "astronomy and planetary research",
-        "uncrewed interstellar-travel research"
+        "Space-science focus",
+        "Search for technological life",
+        "Astronomy and planetary research",
+        "Research into uncrewed interstellar flight"
       ]
     },
     {
@@ -539,41 +568,52 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "theoretical-physics background",
+        "Theoretical-physics background",
         "Breakthrough Prizes in physics, life sciences and mathematics",
-        "Breakthrough Listen",
-        "Breakthrough Starshot",
-        "science-education philanthropy"
+        "Breakthrough Listen and Breakthrough Starshot",
+        "Continuing science philanthropy"
       ]
     },
     {
       "id": "S9",
+      "url": "https://breakthroughprize.org/News/98",
+      "title": "Breakthrough Prize Announces 2026 Laureates",
+      "publisher": "Breakthrough Prize Foundation",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Current continuation of the Breakthrough Prizes in 2026",
+        "Yuri Milner as Breakthrough Prize Foundation co-founder",
+        "Prizes in life sciences, fundamental physics and mathematics"
+      ]
+    },
+    {
+      "id": "S10",
       "url": "https://www.forbes.com/forbes/2011/0328/billionaires-11-profile-yuri-milner-billionaire-friended-web.html",
       "title": "The Billionaire Who Friended the Web",
       "publisher": "Forbes",
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "exact identity",
+        "Exact identity",
         "Moscow birth and upbringing",
         "11 November 1961 birth date",
-        "physics-to-business transition",
+        "Physics-to-business transition",
         "World Bank financial-sector work",
-        "early banking and investment work",
         "Mail.ru company-building history",
         "DST Global investment strategy"
       ]
     },
     {
-      "id": "S10",
+      "id": "S11",
       "url": "https://en.wikipedia.org/wiki/Yuri_Milner",
       "title": "Yuri Milner",
       "publisher": "Wikipedia",
       "tier": 3,
       "accessed_at": "2026-07-28",
       "supports": [
-        "verification of the existing Wikipedia profile",
-        "exact identity corroboration",
+        "Verification of the existing Wikipedia profile",
+        "Exact identity corroboration",
         "11 November 1961 birth date",
         "Moscow birthplace",
         "Borisovich and Bentsionovich patronymic variants",
@@ -582,18 +622,41 @@
     }
   ],
   "uncertainties": [
-    "The source record gives Russian as Milner's nationality, but the current Forbes profile and first-party evidence list him as an Israeli citizen and state that he completed renunciation of Russian citizenship in 2022. Israeli is therefore proposed as a correction rather than as a secondary nationality.",
-    "First-party biographies use Yuri Milner without a patronymic. The existing Wikipedia profile gives both Borisovich and Bentsionovich as variants, so no middle-name proposal was made.",
-    "The official site confirms Moscow and 1961 but not the day and month. Forbes' contemporary 2011 profile states that he would turn 50 on 11 November 2011, and the existing exact-match Wikipedia profile corroborates the full date; the day and month proposals are therefore below 100 confidence.",
-    "No second current nationality was established. United States residence was not treated as evidence of United States citizenship.",
-    "The existing LinkedIn URL uses a legacy profile path, while Milner's official site links to https://www.linkedin.com/in/yuri-milner. The stored link was preserved because both paths may resolve to the same account and the dossier social structure does not provide a correction action.",
-    "No identity-verified personal YouTube or TikTok profile met the proposal threshold. Breakthrough organisation channels were not substituted for personal accounts.",
-    "Finance & Investments is used rather than Technology because the evidenced wealth mechanism is investment allocation through DST Global, even though the underlying portfolio is technology-focused. Investor is used because his principal relationship to the portfolio companies is capital allocation through the firm he founded.",
-    "Current rankings, valuations, portfolio movements and ownership percentages were excluded from the biographies as transient. The science chapter is limited to the durable purposes of the Breakthrough programmes.",
-    "Blank title, suffix and secondary-residence fields were treated as optional; blank death, internal-note and unknown-name fields remain inapplicable or system-managed."
+    {
+      "topic": "Nationality correction",
+      "detail": "The input gives Russian, but the current Forbes profile and Milner's official fact sheet list Israeli citizenship and document completion of Russian-citizenship renunciation in 2022. Israeli is therefore proposed as a correction, not a secondary nationality."
+    },
+    {
+      "topic": "Patronymic variants",
+      "detail": "First-party biographies use Yuri Milner without a patronymic. Reference sources vary between Borisovich and Bentsionovich, so no middle-name proposal was made."
+    },
+    {
+      "topic": "Birth date",
+      "detail": "First-party sources confirm Moscow and 1961 but not the day and month. The 11 November proposals rely on a contemporary Forbes profile and the exact-match reference profile, so they carry lower confidence than birthplace and birth year."
+    },
+    {
+      "topic": "Current DST Global role",
+      "detail": "DST Global's current website identifies Milner as founder, while his current Forbes profile lists him as Partner. The known-for proposal preserves both the durable founder relationship and the current partner role."
+    },
+    {
+      "topic": "Primary-industry boundary",
+      "detail": "Finance & Investments is used instead of Technology because the evidenced private-wealth mechanism is capital allocation through DST Global. The underlying portfolio is technology-focused, but Milner's relationship to those companies is principally investment rather than operation."
+    },
+    {
+      "topic": "Existing LinkedIn URL",
+      "detail": "The input stores a legacy LinkedIn path, while Milner's official website links to the canonical /in/yuri-milner URL. The canonical URL is recorded as a review candidate because proposed_socials cannot replace an existing social type."
+    },
+    {
+      "topic": "Other personal profiles",
+      "detail": "The official personal website verifies the proposed Facebook, Twitter and Instagram accounts. No identity-verified personal YouTube or TikTok account met the proposal threshold, and organisation channels were not substituted."
+    },
+    {
+      "topic": "Other blank and existing fields",
+      "detail": "No second current nationality was established. Blank title, suffix and secondary residence remain optional; blank death, internal-note and unknown-name fields remain inapplicable or system-managed."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": "Retain Finance & Investments, Self-made and Investor as separate classifications. Review the Israeli nationality correction, 11 November birth-date proposals, unresolved patronymic variants and official-site-linked social additions."
+    "notes": "Identity and the Finance & Investments, Self-made and Investor classifications are strongly supported. Review the Israeli nationality correction, 11 November birth-date fills and canonical LinkedIn replacement candidate. Nothing has been compiled or applied."
   }
 }

@@ -1,13 +1,13 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 10463,
     "display_name": "Dimitri Burkhman",
     "identity_confidence": {
-      "score": 99,
+      "score": 100,
       "band": "very_high",
-      "reason": "The source record's stored LinkedIn URL, Vologda birth details, London residence, British and Israeli context and Playrix biography all resolve to Playrix co-founder Dmitri Bukhman. Forbes, Rix Capital and Bukhman Philanthropies consistently use Dmitri Bukhman, demonstrating that Dimitri Burkhman is a source-record spelling error rather than a different person."
+      "reason": "The source record's LinkedIn URL, Vologda birth details, London residence and Playrix association resolve exactly to Playrix co-founder Dmitri Bukhman. Current Forbes, Rix Capital, Bukhman Philanthropies and identity-verified Companies House records distinguish him from his older brother and co-founder Igor Bukhman."
     }
   },
   "input_snapshot": {
@@ -72,25 +72,46 @@
   },
   "research_status": "complete",
   "biography_brief": {
-    "durable_identity": "British-Israeli technology entrepreneur and programmer who co-founded mobile-games developer Playrix with his brother Igor Bukhman.",
-    "wealth_or_prominence_route": "Bukhman learnt programming on a family computer and began building and selling simple PC games while still at school. The brothers formalised that work as Playrix, shifted from downloadable titles into mobile gaming and retained majority ownership without external funding.",
-    "turning_point": "The move from downloadable PC games to mobile platforms gave Playrix a much larger audience and turned a student programming venture into the family's principal operating asset.",
-    "later_chapter": "The brothers created Rix Capital to manage long-term family investments and philanthropic activity. Bukhman and his wife Daria separately founded Bukhman Philanthropies around maternal and neonatal care, young people's mental health and wellbeing, and literature.",
-    "character_detail": "A computer from the brothers' grandfather became their first shared programming laboratory; early sales showed that code written in Vologda could reach customers abroad.",
+    "durable_identity": "Dmitri Bukhman is a British-Israeli programmer and technology entrepreneur who co-founded and co-owns mobile-game developer Playrix with his brother Igor.",
+    "defining_work": "Playrix grew from the brothers' early PC games into an international mobile-game developer while remaining self-funded and under their joint majority ownership.",
+    "formative_context": "A computer from their grandfather became the brothers' shared programming workshop while Dmitri was still at school in Vologda.",
+    "decisive_moment": "The first overseas purchase of one of their games demonstrated that software written in Vologda could find customers abroad. A later shift from downloadable PC titles to mobile games expanded the business.",
+    "enduring_dimensions": [
+      "Continuing joint majority ownership of Playrix",
+      "Rix Capital as a long-term family investment office",
+      "Bukhman Philanthropies' work in maternal and neonatal health, young people's mental wellbeing and literature"
+    ],
+    "character_detail": "The brothers used the proceeds from early game sales to buy a second computer, ending the need to take turns at the same machine.",
+    "opening_options": [
+      {
+        "mode": "formative_episode",
+        "angle": "Use the first overseas game order to show how a school-age programming project acquired commercial meaning."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Use Playrix's transition from downloadable PC games to mobile titles as the scale-changing decision."
+      },
+      {
+        "mode": "present_identity",
+        "angle": "Begin with Bukhman's continuing founder and joint-owner relationship to Playrix."
+      }
+    ],
     "excluded_transient_context": [
-      "Selection-only asset context",
-      "Current net worth and wealth-list placement",
-      "Current revenue, player, download and employee figures",
-      "Current portfolio allocations and recent individual investments",
-      "Recent grant values and sponsorship announcements"
+      "Current vessel ownership, vessel specifications and LOA ranking",
+      "Current net worth and wealth-list rankings",
+      "Current revenue, download, audience and employee totals",
+      "Current ownership percentages, portfolio allocations and individual investments",
+      "Recent grant amounts and sponsorship announcements",
+      "Political controversies and private family details unrelated to the public business story"
     ],
     "source_ids": [
       "S1",
       "S2",
       "S3",
+      "S4",
       "S5",
       "S6",
-      "S11"
+      "S7"
     ]
   },
   "editorial_assessment": {
@@ -99,11 +120,14 @@
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
     "calibration_archetypes": [
-      "founder_operator",
-      "investor_philanthropist"
+      "founder_operator"
     ],
-    "notes": "The rewrite begins with the brothers' shared computer and follows the causal route from early programming to mobile scale, retained ownership, family investment and focused philanthropy. It avoids current figures, title inventories and a concluding wealth-classification verdict."
+    "notes": "The long profile opens on a discrete first-sale episode, establishes why it mattered immediately, and follows the payoff through Playrix's mobile transition. Its second paragraph moves from durable ownership to two current institutions and ends on the specific remit of Dmitri's own foundation."
   },
   "editorial_note": null,
   "forbes_profile": {
@@ -112,93 +136,95 @@
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The current dedicated Forbes profile matches the canonical name, Playrix ownership, online-games wealth source, London residence, British citizenship, Israeli citizenship link, age and education."
+      "reason": "The current dedicated Forbes profile matches the canonical name, Playrix co-ownership, online-games wealth source, London residence, United Kingdom citizenship, Israeli citizenship, age and education."
     }
   },
   "primary_industry": {
     "classification": "technology",
     "label": "Technology",
-    "summary": "Bukhman's identifiable private wealth is principally rooted in Playrix, the mobile-game developer he co-founded and continues to own with his brother Igor.",
+    "summary": "Bukhman's identifiable private wealth is principally underpinned by his joint ownership of Playrix, a software developer and publisher of mobile games.",
     "confidence": {
-      "score": 100,
+      "score": 99,
       "band": "very_high",
-      "reason": "Forbes identifies online games as his source of wealth, while Rix Capital's first-party history identifies Playrix as the family's successful core business and confirms the brothers' continuing majority ownership."
+      "reason": "Current Forbes identifies online games as the wealth source, while Rix Capital and Playrix describe the core company as an international mobile-game developer. Technology best represents the software platform underlying the entertainment products."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S6"
+      "S3"
     ]
   },
   "wealth_origin": {
     "classification": "self_made",
     "label": "Self-made",
-    "summary": "He and his brother began selling games while still students, founded Playrix in 2004 and built it without external funding rather than inheriting the core assets.",
+    "summary": "He and Igor began selling games while Dmitri was still at school, founded Playrix after studying programming and built the company without external funding.",
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "Forbes explicitly labels the fortune self-made, and Rix Capital's official history describes the student start, 2004 founding, retained ownership and absence of external funding."
+      "reason": "Forbes explicitly labels the wealth self-made, and Rix Capital's first-party history plus the brothers' direct interview document the student start, company formation and self-funded growth."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S6",
-      "S11"
+      "S6"
     ]
   },
   "wealth_relationship": {
     "classification": "founder",
     "label": "Founder",
-    "summary": "Bukhman created Playrix with Igor Bukhman and remains a majority owner; the later Rix Capital portfolio manages wealth generated by that operating company.",
+    "summary": "Bukhman co-founded Playrix with Igor and the brothers remain its majority owners; Rix Capital manages investments created from the success of that operating company.",
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "Rix Capital, Bukhman Philanthropies and Forbes consistently identify him as a Playrix co-founder, and first-party material confirms continuing majority ownership."
+      "reason": "Current Forbes, Rix Capital and Bukhman Philanthropies consistently identify Dmitri as a Playrix founder, while current first-party material confirms the brothers' continuing joint majority ownership."
     },
     "source_ids": [
       "S1",
       "S2",
       "S5",
-      "S6"
+      "S7"
     ]
   },
   "biography": {
-    "plain_text": "Working from one computer in Vologda, Dmitri Bukhman and his brother Igor turned programming experiments into Playrix after early online sales proved viable. They retained majority ownership without outside funding. The brothers later created Rix Capital for family investments; with his wife Daria, Bukhman established a foundation focused on health, wellbeing and literature.",
-    "html": "<p>Working from one computer in Vologda, Dmitri Bukhman and his brother Igor turned programming experiments into Playrix after early online sales proved viable. They retained majority ownership without outside funding. The brothers later created Rix Capital for family investments; with his wife Daria, Bukhman established a foundation focused on health, wellbeing and literature.</p>\r\n",
-    "word_count": 53,
-    "confidence": {
-      "score": 99,
-      "band": "very_high",
-      "reason": "Rix Capital and the direct interview support the student programming route, Playrix founding and retained ownership; first-party philanthropic material supports the later family-foundation chapter."
-    },
-    "source_ids": [
-      "S2",
-      "S5",
-      "S11"
-    ]
-  },
-  "long_biography": {
-    "plain_text": "Dmitri Bukhman first explored programming on a computer his grandfather gave the family. While Igor was at university and Dmitri was still at school, the brothers built and sold simple PC games online. They founded Playrix in 2004, developed a distributed studio model and moved from downloadable titles into mobile gaming. The company remained privately funded by its own operations, with the brothers retaining majority ownership.\n\nThe success of Playrix gave the family a platform for investment and philanthropy. Rix Capital now manages a diversified, long-term portfolio for the Bukhman family. With his wife, Daria, he also founded Bukhman Philanthropies, supporting maternal and neonatal care, young people's mental health and wellbeing, and literature. The work extends a career begun through code into institutions intended to outlast individual games.",
-    "html": "<p>Dmitri Bukhman first explored programming on a computer his grandfather gave the family. While Igor was at university and Dmitri was still at school, the brothers built and sold simple PC games online. They founded Playrix in 2004, developed a distributed studio model and moved from downloadable titles into mobile gaming. The company remained privately funded by its own operations, with the brothers retaining majority ownership.</p>\r\n<p>The success of Playrix gave the family a platform for investment and philanthropy. Rix Capital now manages a diversified, long-term portfolio for the Bukhman family. With his wife, Daria, he also founded Bukhman Philanthropies, supporting maternal and neonatal care, young people's mental health and wellbeing, and literature. The work extends a career begun through code into institutions intended to outlast individual games.</p>\r\n",
-    "word_count": 128,
+    "plain_text": "British-Israeli programmer Dmitri Bukhman co-founded Playrix with his brother Igor after they began selling PC games from Vologda. Their self-funded company shifted into mobile games and remains under their majority ownership. Bukhman later helped establish Rix Capital for family investments and co-founded Bukhman Philanthropies, supporting maternal and neonatal health, young people's mental wellbeing and literature.",
+    "html": "<p>British-Israeli programmer Dmitri Bukhman co-founded Playrix with his brother Igor after they began selling PC games from Vologda. Their self-funded company shifted into mobile games and remains under their majority ownership. Bukhman later helped establish Rix Capital for family investments and co-founded Bukhman Philanthropies, supporting maternal and neonatal health, young people's mental wellbeing and literature.</p>\r\n",
+    "word_count": 55,
     "confidence": {
       "score": 98,
       "band": "very_high",
-      "reason": "The brothers' direct interview supports the family computer, early online sales, distributed model and mobile transition. Rix Capital and Bukhman Philanthropies support retained ownership, long-term investment and the foundation's focus areas."
+      "reason": "Official corporate, government and philanthropic sources support the citizenships, canonical identity, Playrix founding, self-funded growth, continuing majority ownership, family investment office and Dmitri-specific philanthropic work."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4",
+      "S5",
+      "S7"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "An overseas order for an early PC game showed Dmitri Bukhman and his brother Igor that software written in Vologda could reach buyers abroad. Dmitri was still at school when they began selling games online. They founded Playrix after studying programming, financed it from its own operations and eventually redirected the business towards mobile titles.\n\nPlayrix's global audience grew around games including Township and Homescapes, while the brothers retained majority ownership. Its success also financed Rix Capital, the family's long-term investment office. With his wife Daria, Dmitri founded Bukhman Philanthropies, whose work encompasses maternal and neonatal health, young people's mental wellbeing and literature.",
+    "html": "<p>An overseas order for an early PC game showed Dmitri Bukhman and his brother Igor that software written in Vologda could reach buyers abroad. Dmitri was still at school when they began selling games online. They founded Playrix after studying programming, financed it from its own operations and eventually redirected the business towards mobile titles.</p>\r\n<p>Playrix's global audience grew around games including Township and Homescapes, while the brothers retained majority ownership. Its success also financed Rix Capital, the family's long-term investment office. With his wife Daria, Dmitri founded Bukhman Philanthropies, whose work encompasses maternal and neonatal health, young people's mental wellbeing and literature.</p>\r\n",
+    "word_count": 103,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "The brothers' direct interview and Rix Capital support the overseas order, school-age programming, Vologda origin, self-funding and mobile transition. Current first-party sources support retained ownership, Rix Capital and the scope of Dmitri and Daria Bukhman's foundation."
     },
     "source_ids": [
       "S2",
       "S3",
       "S5",
-      "S11"
+      "S6",
+      "S7"
     ]
   },
   "proposed_details": [
     {
-      "action": "correct_existing",
       "field": "display_name",
-      "existing_value": "Dimitri Burkhman",
       "value": "Dmitri Bukhman",
+      "action": "correct_existing",
+      "existing_value": "Dimitri Burkhman",
       "confidence": {
         "score": 100,
         "band": "very_high",
@@ -208,119 +234,53 @@
         "S1",
         "S2",
         "S5",
-        "S9"
+        "S8"
       ]
     },
     {
-      "action": "correct_existing",
       "field": "first_name",
-      "existing_value": "Dimitri",
       "value": "Dmitri",
+      "action": "correct_existing",
+      "existing_value": "Dimitri",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "Dmitri is the consistent English form used by Forbes, Rix Capital, Bukhman Philanthropies and his LinkedIn profile; Companies House uses the related transliteration Dmitrii."
+        "reason": "Dmitri is the consistent English form used by current Forbes and first-party family sites; Companies House uses the closely related transliteration Dmitrii."
       },
       "source_ids": [
         "S1",
         "S2",
         "S4",
-        "S5",
-        "S9"
+        "S5"
       ]
     },
     {
-      "action": "correct_existing",
       "field": "last_name",
-      "existing_value": "Burkhman",
       "value": "Bukhman",
+      "action": "correct_existing",
+      "existing_value": "Burkhman",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "Bukhman is the surname used without variation by Forbes, Rix Capital, Bukhman Philanthropies, Companies House and the stored LinkedIn profile."
+        "reason": "Bukhman is the surname used consistently by Forbes, Rix Capital, Bukhman Philanthropies, Companies House and the stored LinkedIn profile."
       },
       "source_ids": [
         "S1",
         "S2",
         "S4",
         "S5",
-        "S9"
+        "S8"
       ]
     },
     {
-      "action": "correct_existing",
       "field": "sort_name",
-      "existing_value": "Burkhman Dimitri",
       "value": "Bukhman Dmitri",
-      "confidence": {
-        "score": 100,
-        "band": "very_high",
-        "reason": "The sort value should reflect the strongly verified corrected first and last names."
-      },
-      "source_ids": [
-        "S1",
-        "S2",
-        "S5",
-        "S9"
-      ]
-    },
-    {
       "action": "correct_existing",
-      "field": "sort_first_name",
-      "existing_value": "Dimitri Burkhman",
-      "value": "Dmitri Bukhman",
-      "confidence": {
-        "score": 100,
-        "band": "very_high",
-        "reason": "The sort value should reflect the strongly verified corrected first and last names."
-      },
-      "source_ids": [
-        "S1",
-        "S2",
-        "S5",
-        "S9"
-      ]
-    },
-    {
-      "action": "correct_existing",
-      "field": "sort_last_name",
       "existing_value": "Burkhman Dimitri",
-      "value": "Bukhman Dmitri",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "The sort value should reflect the strongly verified corrected first and last names."
-      },
-      "source_ids": [
-        "S1",
-        "S2",
-        "S5",
-        "S9"
-      ]
-    },
-    {
-      "action": "correct_existing",
-      "field": "nationality",
-      "existing_value": "Russian",
-      "value": "British",
-      "confidence": {
-        "score": 99,
-        "band": "very_high",
-        "reason": "Current Forbes lists Bukhman's citizenship as the United Kingdom, and Companies House records him as British and Israeli with verified identity; the existing secondary nationality already preserves Israeli."
-      },
-      "source_ids": [
-        "S1",
-        "S4"
-      ]
-    },
-    {
-      "action": "fill_missing",
-      "field": "known_for_title",
-      "value": "Co-founder of Playrix",
-      "confidence": {
-        "score": 100,
-        "band": "very_high",
-        "reason": "Forbes, Rix Capital and Bukhman Philanthropies directly identify Dmitri Bukhman as a Playrix co-founder."
+        "reason": "The corrected sort value follows the strongly verified canonical first and last names."
       },
       "source_ids": [
         "S1",
@@ -329,34 +289,98 @@
       ]
     },
     {
+      "field": "sort_first_name",
+      "value": "Dmitri Bukhman",
       "action": "correct_existing",
-      "field": "place_of_birth",
-      "existing_value": " Vologda",
-      "value": "Vologda",
+      "existing_value": "Dimitri Burkhman",
       "confidence": {
-        "score": 99,
+        "score": 100,
         "band": "very_high",
-        "reason": "The existing value contains an erroneous leading space; a direct interview and established reference profile identify Vologda as Bukhman's birthplace."
+        "reason": "The corrected sort value follows the strongly verified canonical first and last names."
       },
       "source_ids": [
-        "S10",
-        "S11"
+        "S1",
+        "S2",
+        "S5"
       ]
     },
     {
+      "field": "sort_last_name",
+      "value": "Bukhman Dmitri",
       "action": "correct_existing",
-      "field": "biography",
-      "existing_value": "<p>Dmitry Bukhman (Hebrew: דמיטרי בוכמן; Russian: Дмитрий Бухман; born 27 May 1985) is a British-Israeli entrepreneur originally from Russia. Alongside his brother, Igor Bukhman, he co-founded the online gaming company Playrix, renowned for popular mobile titles including Township, Homescapes and Fishdom.</p>\r\n",
-      "value": "<p>Working from one computer in Vologda, Dmitri Bukhman and his brother Igor turned programming experiments into Playrix after early online sales proved viable. They retained majority ownership without outside funding. The brothers later created Rix Capital for family investments; with his wife Daria, Bukhman established a foundation focused on health, wellbeing and literature.</p>\r\n",
+      "existing_value": "Burkhman Dimitri",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The corrected sort value follows the strongly verified canonical first and last names."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S5"
+      ]
+    },
+    {
+      "field": "nationality",
+      "value": "British",
+      "action": "correct_existing",
+      "existing_value": "Russian",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Current Forbes lists United Kingdom citizenship, and identity-verified Companies House records list British and Israeli nationalities. The existing secondary-nationality field already records Israeli."
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Co-founder and co-owner of Playrix",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Current Forbes identifies Dmitri and Igor as owners of Playrix, while Rix Capital and Bukhman Philanthropies identify Dmitri as a co-founder."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S5"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Vologda",
+      "action": "correct_existing",
+      "existing_value": " Vologda",
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The replacement removes corrupt character encoding, standardises the verified English spelling and explains the durable route from student programming to retained ownership, family investment and philanthropy."
+        "reason": "The existing value contains an erroneous leading space. The brothers' direct interview and the reference profile identify Vologda as Dmitri's birthplace and distinguish his record from Igor's."
       },
       "source_ids": [
+        "S6",
+        "S9"
+      ]
+    },
+    {
+      "field": "biography",
+      "value": "<p>British-Israeli programmer Dmitri Bukhman co-founded Playrix with his brother Igor after they began selling PC games from Vologda. Their self-funded company shifted into mobile games and remains under their majority ownership. Bukhman later helped establish Rix Capital for family investments and co-founded Bukhman Philanthropies, supporting maternal and neonatal health, young people's mental wellbeing and literature.</p>\r\n",
+      "action": "correct_existing",
+      "existing_value": "<p>Dmitry Bukhman (Hebrew: דמיטרי בוכמן; Russian: Дмитрий Бухман; born 27 May 1985) is a British-Israeli entrepreneur originally from Russia. Alongside his brother, Igor Bukhman, he co-founded the online gaming company Playrix, renowned for popular mobile titles including Township, Homescapes and Fishdom.</p>\r\n",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The replacement standardises the verified English name, removes unnecessary language variants, explains the durable Playrix origin and ownership, and adds Dmitri-specific investment and philanthropic context."
+      },
+      "source_ids": [
+        "S1",
         "S2",
+        "S4",
         "S5",
-        "S11"
+        "S7"
       ]
     }
   ],
@@ -365,7 +389,7 @@
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/dmitri-bukhman/",
-      "verification": "The current dedicated profile matches the canonical name, Playrix ownership, online-games wealth source, London residence, British citizenship, Israeli citizenship link and age; type ID 11 is copied from the owner-input lookup.",
+      "verification": "The current dedicated profile matches the canonical name, Playrix co-ownership, online-games wealth source, London residence, citizenships, age and education. Type ID 11 is copied from the owner input lookup.",
       "confidence": {
         "score": 100,
         "band": "very_high",
@@ -379,31 +403,33 @@
       "type_id": "10",
       "type": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Dmitry_Bukhman",
-      "verification": "The article's Dmitry transliteration, 27 May 1985 Vologda birth details, brother Igor, Playrix founding, London residence and citizenship history match Forbes, Companies House, Rix Capital and the exact existing record; type ID 10 is copied from the owner-input lookup.",
+      "verification": "The Dmitry transliteration, Vologda birth details, younger-brother relationship to Igor, Playrix founding, London residence and citizenship history match the exact current and official records. Type ID 10 is copied from the owner input lookup.",
       "confidence": {
         "score": 97,
         "band": "very_high",
-        "reason": "The page is an exact identity match whose core facts are independently corroborated by current first-party and official sources."
+        "reason": "The article is an exact identity match whose core facts are independently corroborated by Forbes, Rix Capital, Companies House and the existing LinkedIn profile."
       },
       "source_ids": [
         "S1",
         "S2",
         "S4",
-        "S10"
+        "S8",
+        "S9"
       ]
     },
     {
       "type_id": "14",
       "type": "Company Website",
       "url": "https://playrix.com/",
-      "verification": "Rix Capital's official family-office site identifies Dmitri Bukhman as a Playrix founder and links directly to playrix.com; type ID 14 is copied from the owner-input lookup.",
+      "verification": "Rix Capital's first-party history identifies Dmitri as a Playrix founder and joint majority owner and links to the official Playrix domain; the current Playrix press kit is hosted on that domain. Type ID 14 is copied from the owner input lookup.",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "This is the official website of Bukhman's core wealth-producing company, linked from first-party material that documents his founder and ownership relationship."
+        "reason": "This is the official site of Bukhman's core wealth-producing company, supported by first-party evidence of his founder and ownership relationship."
       },
       "source_ids": [
-        "S2"
+        "S2",
+        "S3"
       ]
     }
   ],
@@ -419,13 +445,13 @@
       "supports": [
         "canonical Dmitri Bukhman identity",
         "verified Forbes profile",
-        "Playrix ownership",
-        "online games as source of wealth",
+        "Playrix ownership with Igor Bukhman",
+        "online games as wealth source",
         "self-made wealth origin",
         "London residence",
-        "British citizenship",
-        "Israeli citizenship link",
-        "age and education"
+        "United Kingdom citizenship",
+        "Israeli citizenship",
+        "age and programming education"
       ]
     },
     {
@@ -438,28 +464,27 @@
       "supports": [
         "canonical Dmitri Bukhman identity",
         "Playrix co-founding with Igor Bukhman",
-        "student origin story",
-        "Playrix founding in 2004",
+        "school-age online game sales",
         "programming education",
-        "continuing majority ownership",
-        "absence of external company funding",
-        "Rix Capital family-office purpose",
+        "self-funded company growth",
+        "continuing joint majority ownership",
+        "Rix Capital family-investment purpose",
         "official Playrix website"
       ]
     },
     {
       "id": "S3",
-      "url": "https://rix.com/investments/",
-      "title": "Investments",
-      "publisher": "Rix Capital",
+      "url": "https://playrix.com/upload/iblock/266/gtc4n43jk9teo0v9jx4n53mnvaphut40.pdf",
+      "title": "Playrix Press Kit",
+      "publisher": "Playrix",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "family investment portfolio",
-        "diversified asset allocation",
-        "long-term investment horizon",
-        "venture-capital allocation",
-        "later investment chapter distinct from Playrix operating wealth"
+        "Playrix as an international mobile-game developer",
+        "transition from PC games to mobile platforms",
+        "Township and Homescapes titles",
+        "international audience",
+        "official Playrix domain"
       ]
     },
     {
@@ -473,10 +498,10 @@
         "Dmitrii Bukhman transliteration",
         "verified identity status",
         "May 1985 birth month and year",
-        "British citizenship",
-        "Israeli citizenship",
+        "British nationality",
+        "Israeli nationality",
         "United Kingdom residence",
-        "share ownership and voting control"
+        "distinction from Igor Bukhman"
       ]
     },
     {
@@ -489,45 +514,62 @@
       "supports": [
         "canonical Dmitri Bukhman identity",
         "Playrix co-founder role",
-        "Bukhman Philanthropies founding with Daria Bukhman",
+        "foundation created by Dmitri and Daria Bukhman",
         "maternal and neonatal support",
         "children and young adults' mental health and wellbeing",
-        "literature funding"
+        "literature support",
+        "distinction from Igor Bukhman's separate foundation"
       ]
     },
     {
       "id": "S6",
-      "url": "https://www.forbes.com/sites/iainmartin/2024/08/22/billionaire-bukhman-brothers-open-foundation-to--fund-diabetes-cure/",
-      "title": "Billionaire Bukhman Brothers Open Foundation To Fund Diabetes Cure",
-      "publisher": "Forbes",
-      "tier": 2,
+      "url": "https://meduza.io/en/feature/2019/04/19/our-games-are-at-the-top-of-the-russian-charts-but-almost-nobody-knows-us-as-a-brand",
+      "title": "Our games are at the top of the Russian charts, but almost nobody knows us as a brand",
+      "publisher": "Meduza",
+      "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "canonical Dmitri Bukhman identity",
-        "Playrix co-founding in Vologda in 2004",
-        "Playrix as source of wealth",
-        "continuing majority ownership",
-        "absence of external funding",
-        "Rix Capital family office",
-        "Bukhman family philanthropy"
+        "direct interview with Dmitri and Igor Bukhman",
+        "Vologda birthplace and company origin",
+        "family computer from their grandfather",
+        "first overseas game sale",
+        "Dmitri's school-age programming",
+        "early online sales",
+        "self-funded growth",
+        "distributed-company model",
+        "mobile-game transition"
       ]
     },
     {
-      "id": "S9",
+      "id": "S7",
+      "url": "https://rix.com/investments/",
+      "title": "Investments",
+      "publisher": "Rix Capital",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "family investment-office purpose",
+        "long-term investment horizon",
+        "diversification across asset classes and geographies",
+        "Rix Capital as a later use of Playrix-generated wealth"
+      ]
+    },
+    {
+      "id": "S8",
       "url": "https://uk.linkedin.com/in/dmitribukhman",
       "title": "Dmitri Bukhman",
       "publisher": "LinkedIn",
       "tier": 3,
       "accessed_at": "2026-07-28",
       "supports": [
-        "verification of existing LinkedIn URL",
+        "verification of the existing LinkedIn URL",
         "canonical Dmitri Bukhman spelling",
         "Playrix affiliation",
         "United Kingdom identity context"
       ]
     },
     {
-      "id": "S10",
+      "id": "S9",
       "url": "https://en.wikipedia.org/wiki/Dmitry_Bukhman",
       "title": "Dmitry Bukhman",
       "publisher": "Wikipedia",
@@ -538,41 +580,48 @@
         "Dmitry spelling variant",
         "27 May 1985 birth date",
         "Vologda birthplace",
-        "Igor Bukhman relationship",
+        "younger-brother relationship to Igor Bukhman",
         "Playrix founding",
-        "British and Israeli citizenship",
         "Wikipedia profile URL"
-      ]
-    },
-    {
-      "id": "S11",
-      "url": "https://meduza.io/en/feature/2019/04/19/our-games-are-at-the-top-of-the-russian-charts-but-almost-nobody-knows-us-as-a-brand",
-      "title": "Our games are at the top of the Russian charts, but almost nobody knows us as a brand",
-      "publisher": "Meduza",
-      "tier": 1,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "direct interview with Igor and Dmitri Bukhman",
-        "Vologda birth and company origin",
-        "Playrix founding in 2004",
-        "early online game sales",
-        "student company-building route",
-        "mobile-gaming transition"
       ]
     }
   ],
   "uncertainties": [
-    "The source record misspells the owner as Dimitri Burkhman in its display, first-name, last-name and sort fields. Current Forbes, Rix Capital, Bukhman Philanthropies and the stored LinkedIn profile consistently use Dmitri Bukhman; Companies House uses Dmitrii Bukhman and Wikipedia uses Dmitry Bukhman, both ordinary transliteration variants of the same Russian given name.",
-    "The middle name Anatolyevich appears in Russian-language reference sources and Wikidata, but the strongest current English-language first-party and official sources omit it. No middle-name proposal was made.",
-    "Current Forbes lists United Kingdom citizenship and separately links Israel as a citizenship, while identity-verified Companies House records British and Israeli nationalities. British is therefore proposed as the primary nationality correction and the existing Israeli secondary nationality is preserved. Public sources reviewed here do not establish whether Russian citizenship was formally renounced.",
-    "The existing 27 May 1985 date and Vologda birthplace resolve to the correct Playrix founder, not a namesake. Only the birthplace's erroneous leading space is proposed for correction; the accurate date fields are preserved.",
-    "Technology is used rather than Media & Entertainment because Forbes identifies online games as the wealth source and Playrix is a software-based mobile-game developer. Founder remains the primary wealth relationship because Playrix still underpins the fortune; Rix Capital is a later family-office structure rather than the origin of the principal wealth.",
-    "The existing LinkedIn URL was verified and not duplicated. An exact-name X account has little corroborating identity information, and focused searches found no identity-verifiable personal Instagram, Facebook, YouTube, TikTok or personal website. No such link was proposed.",
-    "The official Playrix website does not expose founder names in fetchable page text, but Rix Capital's first-party site identifies Dmitri as a founder and links directly to playrix.com, supporting the Company Website proposal.",
-    "Suffix and secondary residence are optional fields and were not inferred. Blank age, death, internal-note and unknown-name fields remain calculated, inapplicable or system-managed."
+    {
+      "topic": "Canonical name and sibling distinction",
+      "detail": "The source record's Dimitri Burkhman spelling is erroneous. Current Forbes and first-party family sites use Dmitri Bukhman; Companies House uses Dmitrii and Wikipedia uses Dmitry as transliteration variants. Dmitri is the younger brother born in May 1985; Igor is the older co-founder born in March 1982."
+    },
+    {
+      "topic": "Current Playrix role",
+      "detail": "Current first-party material supports co-founder, joint majority owner and continuing leadership of a self-funded company. It does not assign Dmitri a formal present chief-executive title, so the proposed known-for title is limited to co-founder and co-owner."
+    },
+    {
+      "topic": "Nationality",
+      "detail": "Current Forbes and identity-verified Companies House records support British and Israeli status, so British is proposed as the primary nationality and the existing Israeli secondary nationality is preserved. The reviewed sources do not establish whether any earlier Russian citizenship was formally renounced."
+    },
+    {
+      "topic": "Middle name",
+      "detail": "Anatolyevich appears in Russian-language reference material, but current English-language first-party, Forbes and official sources omit a middle name. No proposal was made."
+    },
+    {
+      "topic": "Birth details",
+      "detail": "The existing 27 May 1985 date and Vologda birthplace resolve to Dmitri rather than Igor. Companies House independently confirms May 1985, while the exact day is retained rather than re-proposed; only the leading space in the existing birthplace is corrected."
+    },
+    {
+      "topic": "Industry boundary",
+      "detail": "Technology is used rather than Media & Entertainment because Playrix's wealth-producing asset is a software-development and publishing company whose digital games are delivered through mobile platforms. The products are entertainment, but the operating platform and current Forbes wealth source support Technology."
+    },
+    {
+      "topic": "Personal and company links",
+      "detail": "The existing LinkedIn URL matches Dmitri and was not duplicated. An exact-name X account lacks an official cross-link or sufficient identity detail, and no identity-verifiable personal Instagram, Facebook, YouTube, TikTok or personal website was established. Organisation accounts and Igor's accounts were not substituted. The official Playrix site is proposed separately as Company Website."
+    },
+    {
+      "topic": "Other blank fields",
+      "detail": "Suffix and secondary residence remain optional. Blank age, death, internal-note and unknown-name fields remain calculated, inapplicable or system-managed."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": "Reviewer should treat Dmitri Bukhman as the canonical English name, preserve Dmitrii and Dmitry as transliteration variants, and review the supported correction of the stale Russian primary nationality to British while retaining Israeli secondary nationality."
+    "notes": "Review the canonical-name and sort-field corrections, the update from Russian to British primary nationality while retaining Israeli secondary nationality, and the Technology classification boundary. Current role wording deliberately stops at co-founder and co-owner. Nothing has been compiled or applied."
   }
 }

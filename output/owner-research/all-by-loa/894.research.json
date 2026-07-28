@@ -1,13 +1,13 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "institution",
   "owner": {
     "person_id": 894,
     "display_name": "Turkey Government",
     "identity_confidence": {
-      "score": 98,
+      "score": 99,
       "band": "very_high",
-      "reason": "The display name is explicitly governmental, and official Turkish sources describe the Republic's state institutions and executive structure. This confidence concerns only the non-person classification, not a more specific legal-entity mapping."
+      "reason": "The supplied display name is explicitly governmental, while current official Turkish constitutional and e-Government sources distinguish the Republic's state organs and public institutions. The broad label does not identify a natural person."
     }
   },
   "input_snapshot": {
@@ -89,11 +89,11 @@
   "biography_brief": null,
   "editorial_assessment": null,
   "editorial_note": {
-    "plain_text": "This record represents the Government of Türkiye as a public institution rather than a natural person. Official state sources distinguish the Republic's legislative, executive and judicial institutions and place executive authority within the constitutional state structure. Person-specific biography, private-wealth and personal social-profile proposals are therefore not applicable.",
+    "plain_text": "This owner record represents the Government of Türkiye, a public state institution rather than a natural person. Official sources describe a constitutional system in which legislative, executive and judicial powers operate through distinct state organs, while the national e-Government directory lists the Republic's institutions. Person-specific biographies, birth data, private-wealth classifications and personal social-profile proposals are therefore not applicable. It must not be reassigned to a president, minister or other office-holder.",
     "confidence": {
-      "score": 98,
+      "score": 99,
       "band": "very_high",
-      "reason": "The record's governmental name is consistent with official constitutional and e-Government descriptions of Türkiye's public institutions."
+      "reason": "Current official Constitutional Court and e-Government sources establish the public institutional context and the distinct state organs through which governmental powers and services operate."
     },
     "source_ids": [
       "S1",
@@ -106,17 +106,17 @@
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Focused exact-name and site:forbes.com/profile searches found no dedicated Forbes profile for Turkey Government; results concerned unrelated natural persons or policy reporting."
+      "reason": "Focused exact-name and site:forbes.com/profile searches found no dedicated Forbes profile for Turkey Government or Government of Türkiye. Forbes's Turkey country page and Recep Tayyip Erdogan person profile represent different record types and were rejected."
     }
   },
   "primary_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "A public government record does not identify personal private wealth, so no private-wealth industry can be assigned.",
+    "summary": "A private-wealth industry is not applicable because this record represents a state institution rather than a natural person with privately held wealth-producing assets.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Official sources establish a public state context rather than a natural person with identifiable private wealth."
+      "reason": "Official sources establish a constitutional public-state context and institutional government directory, not a person with identifiable private wealth."
     },
     "source_ids": [
       "S1",
@@ -126,7 +126,7 @@
   "wealth_origin": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Personal wealth origin is not applicable because the record represents government rather than a natural person with a private fortune.",
+    "summary": "Personal wealth origin is not applicable because Turkey Government is an institutional state record rather than a natural person with a private fortune.",
     "confidence": {
       "score": 99,
       "band": "very_high",
@@ -140,11 +140,11 @@
   "wealth_relationship": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No personal relationship to wealth-producing assets can be assigned to this government record.",
+    "summary": "No personal relationship to wealth-producing assets can be assigned to a government institution.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The record is institutional, so the person-focused asset-relationship taxonomy is not applicable."
+      "reason": "Official sources establish public state organs and institutions rather than an individual founder, operator, investor, beneficiary or private-asset custodian."
     },
     "source_ids": [
       "S1",
@@ -159,15 +159,17 @@
   "sources": [
     {
       "id": "S1",
-      "url": "https://www.anayasa.gov.tr/media/7258/anayasa_eng.pdf",
-      "title": "Constitution of the Republic of Turkey",
+      "url": "https://www.anayasa.gov.tr/media/7963/basic_legal_texts.pdf",
+      "title": "Basic Legal Texts: Constitution of the Republic of Turkey",
       "publisher": "Constitutional Court of the Republic of Türkiye",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "Türkiye's constitutional status as a republic",
-        "executive power and function within the constitutional state structure",
-        "public institutional context rather than a natural-person identity"
+        "The Republic's constitutional state structure",
+        "Legislative power vested in the Grand National Assembly",
+        "Executive power exercised by the President of the Republic",
+        "Judicial power exercised by independent and impartial courts",
+        "Institutional rather than natural-person context"
       ]
     },
     {
@@ -178,19 +180,23 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "official listing of the Republic's principal legislative, executive and judicial institutions",
-        "government as an institutional state context rather than a natural person"
+        "Official listing of the Republic's principal legislative, executive and judicial institutions",
+        "Government services delivered through multiple public institutions",
+        "Institutional state context rather than a natural person"
       ]
     }
   ],
   "uncertainties": [
-    "Turkey Government is a broad institutional label rather than the formal name of a single legal entity. The evidence establishes its non-person public-government character but does not narrow the record to one ministry, office or agency.",
-    "The source record uses a person-shaped schema, so its human identity and life-event fields are not suitable for this institution. They are preserved in the immutable input snapshot and deliberately receive no proposals.",
-    "No dedicated Forbes profile was found. Forbes results about Turkish officials, politicians, businesspeople or public policy were rejected because they do not identify this institutional record.",
-    "No personal social links are proposed because government websites and institutional accounts are not personal profiles."
+    "Turkey Government is a broad institutional label rather than the formal name of one legal entity. The evidence establishes its non-person public-government character but does not narrow the record to the Presidency, a ministry, an agency or another single institution.",
+    "The source values first_name=Turkey, last_name=Government, nationality=Turkish, birth_country=Turkey and mortality_status=Alive are person-schema artefacts. They are preserved because the current dossier contract has no institution-safe replacement values.",
+    "Human middle-name, gender, birthplace, birth-date and biography fields are deliberately left blank because they are inapplicable to a government.",
+    "All three wealth classifications are Unknown because the personal-wealth taxonomy does not apply to a state institution.",
+    "No president, vice-president, minister or other office-holder was substituted for this institutional record.",
+    "No dedicated Forbes profile for Turkey Government was found. The Forbes Turkey country page, Recep Tayyip Erdogan profile and results for Turkish officials or businesspeople were rejected as different record types or natural persons.",
+    "No personal social profile is proposed. Official government websites and institutional accounts are not personal profiles."
   ],
   "review": {
     "status": "pending",
-    "notes": null
+    "notes": "Institutional exception: preserve the non-person record, Unknown wealth classifications, null biography fields and empty personal-proposal arrays. Do not substitute an office-holder."
   }
 }

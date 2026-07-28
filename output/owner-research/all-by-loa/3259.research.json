@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "unresolved_placeholder",
   "owner": {
     "person_id": 3259,
@@ -7,7 +7,7 @@
     "identity_confidence": {
       "score": 5,
       "band": "insufficient",
-      "reason": "The exact source record has no personal name, occupation, biography or social link. Its many asset associations include publicly different ownership histories, and no reviewed public source identifies the unnamed client of the selected project."
+      "reason": "The exact source record provides no personal name, occupation, employer, biography or social link. Its generic nationality label cannot resolve a natural person, and focused exact-label public searches found no record-specific identity."
     }
   },
   "input_snapshot": {
@@ -97,18 +97,14 @@
   "biography_brief": null,
   "editorial_assessment": null,
   "editorial_note": {
-    "plain_text": "\"Unknown Russian\" is an unresolved placeholder, not a defensibly identified natural person. Its blank personal fields, absent social links and broad set of unrelated asset associations do not establish one owner. Current official and established reporting on the selected build names no client, while other linked assets have publicly different ownership histories. Personal biography and enrichment proposals are therefore withheld.",
+    "plain_text": "\"Unknown Russian\" is an unresolved placeholder rather than a defensibly identified person. The source record supplies no personal name, occupation, employer, biography or social profile. Its nationality label cannot identify one individual. Personal biography, private-wealth classification and enrichment proposals are withheld until reliable evidence links this record to a named natural person.",
     "confidence": {
-      "score": 99,
+      "score": 100,
       "band": "very_high",
-      "reason": "The exact input establishes the placeholder and blank personal record, while current official and established sources omit the selected project's client and document incompatible ownership histories among other linked assets."
+      "reason": "The exact input establishes the generic placeholder label and absence of identifying personal, occupational, biographical and social information."
     },
     "source_ids": [
-      "S1",
-      "S2",
-      "S3",
-      "S4",
-      "S5"
+      "S1"
     ]
   },
   "forbes_profile": {
@@ -117,43 +113,33 @@
     "confidence": {
       "score": 98,
       "band": "very_high",
-      "reason": "Focused exact-label, project-name and site-restricted Forbes searches found general Russian-yacht reporting but no dedicated profile that could resolve this placeholder."
+      "reason": "Focused exact-label, exact-name and site:forbes.com/profile searches found no dedicated Forbes person profile capable of resolving this placeholder."
     }
   },
   "primary_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No identified person, business or private wealth-producing asset can be connected reliably to this placeholder.",
+    "summary": "No identified person, employer, business or private wealth-producing asset can be connected reliably to this placeholder.",
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The record contains no name, occupation or employer, and asset association alone cannot establish a person's primary industry."
+      "reason": "The source record contains no name, occupation or employer, so assigning a primary private-wealth sector would be unsupported."
     },
     "source_ids": [
-      "S1",
-      "S2",
-      "S3",
-      "S4",
-      "S5",
-      "S6"
+      "S1"
     ]
   },
   "wealth_origin": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No reliable evidence identifies a person or establishes how that person's private wealth was created, inherited, transferred or otherwise acquired.",
+    "summary": "No reliable evidence identifies a person or establishes how that person's private wealth was created, inherited, transferred or acquired.",
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "Without a resolved identity or documented private assets, assigning a wealth-origin mechanism would be speculation."
+      "reason": "Without a resolved identity or documented private assets, assigning any wealth-origin mechanism would be speculation."
     },
     "source_ids": [
-      "S1",
-      "S2",
-      "S3",
-      "S4",
-      "S5",
-      "S6"
+      "S1"
     ]
   },
   "wealth_relationship": {
@@ -163,15 +149,10 @@
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The placeholder supplies no business or control evidence, and the reviewed project coverage does not disclose a client whose economic relationship could be assessed."
+      "reason": "The placeholder supplies no business, ownership or control evidence from which an economic relationship can be assessed."
     },
     "source_ids": [
-      "S1",
-      "S2",
-      "S3",
-      "S4",
-      "S5",
-      "S6"
+      "S1"
     ]
   },
   "biography": null,
@@ -188,93 +169,51 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "exact placeholder display name and person ID",
-        "Russian nationality label in the source record",
-        "blank personal name, occupation and biography fields",
-        "absence of social profiles",
-        "aggregation of many apparently current asset relationships",
-        "selected Project Tanzanite association"
-      ]
-    },
-    {
-      "id": "S2",
-      "url": "https://www.amelsyachting.com/fleet/project-tanzanite",
-      "title": "Project Tanzanite",
-      "publisher": "Amels Yachting",
-      "tier": 1,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "official project identity",
-        "project signed in 2020",
-        "scheduled 2026 delivery",
-        "absence of a named client in the official profile"
-      ]
-    },
-    {
-      "id": "S3",
-      "url": "https://www.boatinternational.com/yachts/the-register/top-20-new-yacht-projects--25055",
-      "title": "The biggest superyacht deliveries to look out for in 2026",
-      "publisher": "BOAT International",
-      "tier": 2,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "current Project Tanzanite coverage",
-        "Amels build and 2026 delivery schedule",
-        "absence of a named owner or client"
-      ]
-    },
-    {
-      "id": "S4",
-      "url": "https://www.boatinternational.com/yachts/news/tributes-oleg-burlakov-black-pearl/",
-      "title": "Tributes paid to Oleg Burlakov, owner of 106.7m sailing superyacht Black Pearl",
-      "publisher": "BOAT International",
-      "tier": 2,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "Oleg Burlakov as the documented owner associated with Black Pearl",
-        "incompatibility of the source record's many relationships with a single unnamed current owner"
-      ]
-    },
-    {
-      "id": "S5",
-      "url": "https://www.boatinternational.com/yachts/editorial-features/key-news-stories-from-2016--32299",
-      "title": "The yachting year in review: 12 key news stories from 2016",
-      "publisher": "BOAT International",
-      "tier": 2,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "Galaxy of Happiness delivered to a Middle Eastern owner",
-        "incompatibility of the placeholder's Russian label and aggregated asset relationships"
-      ]
-    },
-    {
-      "id": "S6",
-      "url": "https://www.forbes.com/sites/giacomotognini/2022/03/01/biden-and-allies-are-coming-for-russian-billionaires-yachts-forbes-tracked-down-61-heres-where-to-find-them/",
-      "title": "Biden And Allies Are Coming For Russian Billionaires' Yachts: Forbes Tracked Down 63",
-      "publisher": "Forbes",
-      "tier": 2,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "difficulty of establishing beneficial ownership from asset association",
-        "use of offshore ownership vehicles",
-        "need for source-backed identity attribution",
-        "general Russian-yacht coverage without resolution of this placeholder"
+        "Exact placeholder display name and person ID",
+        "Russian nationality label as an unverified source-record attribute",
+        "Blank first, middle and last names",
+        "Blank occupation, employer and biography information",
+        "Absence of social profiles",
+        "Unknown mortality status"
       ]
     }
   ],
   "uncertainties": [
-    "The exact display name is a placeholder label, not a human identity. The source record's Russian nationality value is preserved as an input attribute but is not independently verified.",
-    "The record aggregates many apparently current relationships. Established reporting links Black Pearl to Oleg Burlakov and describes Galaxy of Happiness as delivered to a Middle Eastern owner, demonstrating that the associations cannot safely be treated as one person's ownership history.",
-    "Current official and established public coverage describes Project Tanzanite but does not name its client. No identity was inferred from the project's management, design, construction, location or rumoured ownership.",
-    "No exact Forbes profile resolves the placeholder. General Forbes reporting on Russian-owned assets does not identify this record's subject.",
-    "No natural-person identity reached confidence 85. No suspected owner, former owner, relative, adviser or representative was substituted.",
-    "All three wealth dimensions remain Unknown because neither a person nor private wealth-producing assets were resolved.",
-    "No personal detail, biography, social link or company website can be proposed at confidence 85 or higher.",
-    "The source's unknown-name flag is inconsistent with the placeholder display name, but non-person dossiers do not make personal-field proposals.",
-    "Mortality cannot be assessed for an unidentified person, so blank death fields remain unresolved."
+    {
+      "topic": "Identity",
+      "detail": "The display name is a generic placeholder, not a human identity. No natural person reached the required identity-confidence threshold."
+    },
+    {
+      "topic": "Nationality",
+      "detail": "Russian is preserved as a source-record attribute but is not independently verified and cannot identify a person."
+    },
+    {
+      "topic": "Public search",
+      "detail": "Focused exact-label public searches returned unrelated generic uses of the phrase rather than evidence tied to person ID 3259."
+    },
+    {
+      "topic": "Forbes",
+      "detail": "Exact-label and site-restricted Forbes searches found no dedicated profile that resolves this record."
+    },
+    {
+      "topic": "Wealth classifications",
+      "detail": "Primary industry, wealth origin and wealth relationship remain Unknown because neither a person nor private wealth-producing assets were resolved."
+    },
+    {
+      "topic": "Personal enrichment",
+      "detail": "No personal field, biography, social account or website can be proposed at confidence 85 or higher."
+    },
+    {
+      "topic": "Unknown-name flag",
+      "detail": "The source's unknown-name flag is set to No despite the placeholder display name. A non-person dossier does not propose a correction to this system-managed field."
+    },
+    {
+      "topic": "Mortality",
+      "detail": "Mortality and death fields cannot be assessed for an unidentified person."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": null
+    "notes": "Keep this record unresolved unless reliable evidence directly links person ID 3259 to a named natural person. Nationality, asset context, rumours, sanctions reporting, ownership claims and namesakes are not sufficient identity evidence."
   }
 }

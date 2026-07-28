@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 1461,
@@ -7,7 +7,7 @@
     "identity_confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The full name, patronymic, birth date, Gomel birthplace and progression from MDM Bank to EuroChem and SUEK align across the owner record, current Forbes and Bloomberg profiles, and foundation material."
+      "reason": "The full name, patronymic, birth date, Gomel birthplace and progression from currency exchange through MDM Bank to EuroChem and SUEK align across the owner record, current Forbes and Bloomberg profiles, and foundation material."
     }
   },
   "input_snapshot": {
@@ -71,22 +71,42 @@
   },
   "research_status": "complete",
   "biography_brief": {
-    "durable_identity": "Andrey Igorevich Melnichenko is a Russian industrialist and the founder of fertiliser producer EuroChem and coal supplier SUEK.",
-    "wealth_or_prominence_route": "Student currency exchange led to MDM Bank, whose banking-era capital and partnerships provided the route into large industrial acquisitions.",
-    "turning_point": "With Sergei Popov, he shifted from banking into plants and mines that were consolidated into EuroChem, SUEK and other industrial groups.",
-    "later_chapter": "The Andrey Melnichenko Foundation develops regional education infrastructure and science-based sustainable-development programmes focused on education, food security and climate action.",
-    "character_detail": "He studied physics in Moscow before leaving university during the Soviet Union's dissolution and entering the emerging currency market.",
+    "durable_identity": "Andrey Igorevich Melnichenko is a Russian industrialist who founded fertiliser producer EuroChem and coal supplier SUEK.",
+    "defining_work": "He and Sergei Popov assembled plants and mines into large fertiliser and coal groups after building MDM Bank.",
+    "formative_context": "He studied physics in Moscow and entered the emerging currency market with fellow students during the Soviet Union's dissolution.",
+    "decisive_moment": "The banking partners redirected capital into industrial acquisitions, consolidating fragmented assets into EuroChem, SUEK and a steel-pipe business later sold.",
+    "enduring_dimensions": [
+      "Industrial consolidation across fertilisers and coal",
+      "Vertical integration from raw-material extraction through manufacturing and distribution",
+      "Science education, food security and climate programmes through his foundation"
+    ],
+    "character_detail": "His first currency-exchange operation grew from a student venture into the banking platform that preceded his industrial investments.",
+    "opening_options": [
+      {
+        "mode": "institution_or_asset",
+        "angle": "Lead with EuroChem and SUEK as industrial groups created from a collection of acquired plants and mines."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Open with the student currency exchanges that developed into MDM Bank and preceded the move into industrial acquisitions."
+      },
+      {
+        "mode": "public_contribution",
+        "angle": "Use the foundation's science-education mission to connect his physics background with a durable public programme."
+      }
+    ],
     "excluded_transient_context": [
       "Current or historical vessel ownership, names, design and LOA ranking",
       "Current net worth, wealth rankings and asset valuations",
-      "Regulatory, political, litigation and allegation context",
-      "Current control or trust-beneficiary disputes",
+      "Sanctions, political controversy and allegations",
+      "Disputed or changing trust-beneficiary, control and management claims",
       "Transient production, investment and employee figures"
     ],
     "source_ids": [
       "S1",
       "S2",
-      "S3"
+      "S3",
+      "S8"
     ]
   },
   "editorial_assessment": {
@@ -95,11 +115,15 @@
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "institution_then_person",
     "calibration_archetypes": [
       "founder_operator",
       "investor_philanthropist"
     ],
-    "notes": "The profile follows a clear progression from physics student to currency exchange, banking and industrial consolidation, then uses the foundation's education and sustainability mission as a durable later chapter without vessel, current-value or disputed-control material."
+    "notes": "The long profile opens on the industrial groups, moves back to the currency-exchange and banking platform, then deepens the operating model and scientific foundation work. It avoids current ownership claims, vessel material, wealth figures and controversy."
   },
   "editorial_note": null,
   "forbes_profile": {
@@ -114,26 +138,26 @@
   "primary_industry": {
     "classification": "metals_mining",
     "label": "Metals & Mining",
-    "summary": "The fortune attributed to Melnichenko is principally associated with fertiliser producer EuroChem and coal supplier SUEK, industrial groups built from acquired plants and mines.",
+    "summary": "Fertiliser producer EuroChem and coal supplier SUEK remain the principal industrial assets attributed to Melnichenko's fortune, with their underlying activities centred on mineral extraction and processing.",
     "confidence": {
       "score": 97,
       "band": "very_high",
-      "reason": "Forbes assigns Metals & Mining and identifies fertilisers and coal as the wealth source, while Bloomberg and foundation material document the creation of EuroChem and SUEK."
+      "reason": "Current Forbes and Forbes Middle East profiles identify fertilisers and coal as the wealth source and assign Metals & Mining, while Bloomberg attributes the majority of the fortune to EuroChem and SUEK."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S3"
+      "S5"
     ]
   },
   "wealth_origin": {
     "classification": "self_made",
     "label": "Self-made",
-    "summary": "Melnichenko progressed from student currency exchange to MDM Bank and then applied banking-era capital and partnerships to build industrial businesses.",
+    "summary": "Melnichenko progressed from student currency exchange to MDM Bank and then used banking-era capital and partnerships to assemble major fertiliser and coal businesses.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Forbes explicitly labels the wealth self-made, and Forbes, Bloomberg and the foundation independently trace the currency-exchange, banking and industrial route."
+      "reason": "Forbes explicitly labels the wealth self-made, and Forbes, Bloomberg and the foundation independently trace the currency-exchange, banking and industrial sequence."
     },
     "source_ids": [
       "S1",
@@ -144,26 +168,26 @@
   "wealth_relationship": {
     "classification": "founder",
     "label": "Founder",
-    "summary": "Melnichenko founded EuroChem and SUEK, the durable relationship used here without implying a current management or control role.",
+    "summary": "Melnichenko founded EuroChem and SUEK; this durable relationship does not imply a current management, control or beneficial-ownership role.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Current Forbes and Bloomberg profiles and the foundation biography consistently identify Melnichenko as the creator of the two core industrial groups."
+      "reason": "Current Forbes and Bloomberg profiles and official EuroChem material consistently identify him as founder, while EuroChem's ownership statement supports avoiding any claim of current control."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S3"
+      "S4"
     ]
   },
   "biography": {
-    "plain_text": "Andrey Melnichenko is a Russian industrialist who moved from student-run currency exchange into banking, co-founding MDM Bank before building EuroChem and SUEK in fertilisers and coal. Those companies grew through the consolidation and modernisation of industrial assets. The Andrey Melnichenko Foundation later extended his work into science education and sustainable-development programmes for regional communities.",
-    "html": "<p>Andrey Melnichenko is a Russian industrialist who moved from student-run currency exchange into banking, co-founding MDM Bank before building EuroChem and SUEK in fertilisers and coal. Those companies grew through the consolidation and modernisation of industrial assets. The Andrey Melnichenko Foundation later extended his work into science education and sustainable-development programmes for regional communities.</p>\r\n",
-    "word_count": 54,
+    "plain_text": "Andrey Melnichenko is a Russian industrialist who founded fertiliser producer EuroChem and coal supplier SUEK. He entered business through student-run currency exchanges, co-founded MDM Bank and used the banking partnership to assemble industrial plants and mines. His foundation supports science education and programmes addressing food security, climate action and regional opportunity.",
+    "html": "<p>Andrey Melnichenko is a Russian industrialist who founded fertiliser producer EuroChem and coal supplier SUEK. He entered business through student-run currency exchanges, co-founded MDM Bank and used the banking partnership to assemble industrial plants and mines. His foundation supports science education and programmes addressing food security, climate action and regional opportunity.</p>\r\n",
+    "word_count": 51,
     "confidence": {
       "score": 97,
       "band": "very_high",
-      "reason": "Forbes, Bloomberg and foundation material support the currency-exchange and banking origin, creation of EuroChem and SUEK, industrial-development approach and later foundation mission."
+      "reason": "Forbes, Bloomberg and foundation material corroborate the founder identity, currency-exchange and banking formation, industrial acquisitions and foundation mission."
     },
     "source_ids": [
       "S1",
@@ -172,18 +196,19 @@
     ]
   },
   "long_biography": {
-    "plain_text": "Born in Gomel, Andrey Melnichenko studied physics in Moscow as the Soviet Union's dissolution opened a fast-changing commercial landscape. He and fellow students started currency-exchange booths, then co-founded MDM Bank. After the bank became an established private lender, Melnichenko and Sergei Popov shifted into industrial acquisitions. They assembled fertiliser producer EuroChem and coal supplier SUEK from a collection of plants and mines.\n\nMelnichenko approached those businesses as long-term industrial projects, investing in modern production, infrastructure and technical capacity. Through the Andrey Melnichenko Foundation, he later returned to science and education, developing regional learning infrastructure and supporting science-based sustainable development. The foundation concentrates on educational opportunity, food security and climate action, linking his early physics background with a broader programme of community investment.",
-    "html": "<p>Born in Gomel, Andrey Melnichenko studied physics in Moscow as the Soviet Union's dissolution opened a fast-changing commercial landscape. He and fellow students started currency-exchange booths, then co-founded MDM Bank. After the bank became an established private lender, Melnichenko and Sergei Popov shifted into industrial acquisitions. They assembled fertiliser producer EuroChem and coal supplier SUEK from a collection of plants and mines.</p>\r\n<p>Melnichenko approached those businesses as long-term industrial projects, investing in modern production, infrastructure and technical capacity. Through the Andrey Melnichenko Foundation, he later returned to science and education, developing regional learning infrastructure and supporting science-based sustainable development. The foundation concentrates on educational opportunity, food security and climate action, linking his early physics background with a broader programme of community investment.</p>\r\n",
-    "word_count": 122,
+    "plain_text": "EuroChem and SUEK grew from a collection of industrial plants and mines assembled by Andrey Melnichenko and business partner Sergei Popov. Melnichenko had studied physics in Moscow before leaving university during the Soviet Union's collapse. Currency-exchange booths established with fellow students evolved into MDM Bank, giving him the financial platform and partnerships for large-scale industrial acquisitions.\n\nAfter leaving banking, Melnichenko concentrated on fertilisers and coal, building vertically integrated groups across mining, manufacturing and distribution. EuroChem now spans the supply chain from raw materials to farm delivery, while SUEK became a major thermal-coal producer. The Andrey Melnichenko Foundation draws on his scientific background through regional education infrastructure and programmes focused on food security and climate action.",
+    "html": "<p>EuroChem and SUEK grew from a collection of industrial plants and mines assembled by Andrey Melnichenko and business partner Sergei Popov. Melnichenko had studied physics in Moscow before leaving university during the Soviet Union's collapse. Currency-exchange booths established with fellow students evolved into MDM Bank, giving him the financial platform and partnerships for large-scale industrial acquisitions.</p>\r\n<p>After leaving banking, Melnichenko concentrated on fertilisers and coal, building vertically integrated groups across mining, manufacturing and distribution. EuroChem now spans the supply chain from raw materials to farm delivery, while SUEK became a major thermal-coal producer. The Andrey Melnichenko Foundation draws on his scientific background through regional education infrastructure and programmes focused on food security and climate action.</p>\r\n",
+    "word_count": 115,
     "confidence": {
-      "score": 97,
+      "score": 96,
       "band": "very_high",
-      "reason": "Bloomberg and the foundation support the birthplace, physics studies, currency exchange, MDM Bank and Popov partnership; all three core sources support the industrial groups, and the foundation directly documents its education and sustainability mission."
+      "reason": "Bloomberg and foundation material support the formative and industrial sequence; Forbes supports the founder roles; EuroChem's current official site supports the vertically integrated supply-chain description."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S3"
+      "S3",
+      "S8"
     ]
   },
   "proposed_details": [
@@ -194,10 +219,10 @@
       "confidence": {
         "score": 90,
         "band": "high",
-        "reason": "Melnichenko's representative said he accepted UAE citizenship in 2021 while retaining Russian citizenship; the owner system contains the exact nationality option label Emirati."
+        "reason": "Melnichenko's representative said he accepted UAE citizenship in 2021 while retaining Russian citizenship; the owner system contains the exact option label Emirati."
       },
       "source_ids": [
-        "S4"
+        "S6"
       ]
     },
     {
@@ -207,12 +232,12 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "Current Forbes and Bloomberg profiles and the foundation biography consistently identify Melnichenko as founder of the fertiliser and coal groups."
+        "reason": "Current Forbes and Bloomberg profiles and official EuroChem material consistently identify Melnichenko as founder of the fertiliser and coal groups."
       },
       "source_ids": [
         "S1",
         "S2",
-        "S3"
+        "S4"
       ]
     },
     {
@@ -250,7 +275,7 @@
       "confidence": {
         "score": 97,
         "band": "very_high",
-        "reason": "The current Forbes profile gives Ras Al Khaimah, United Arab Emirates, as Melnichenko's residence, corroborated by his inclusion in Forbes Middle East's current UAE residents list."
+        "reason": "The current Forbes profile gives Ras Al Khaimah, United Arab Emirates, as Melnichenko's residence, corroborated by his inclusion in Forbes Middle East's 2026 UAE-residents list."
       },
       "source_ids": [
         "S1",
@@ -260,12 +285,12 @@
     {
       "field": "biography",
       "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/EuroChem\">EuroChem Group</a>, a fertilizer manufacturer, and <a href=\"https://en.wikipedia.org/wiki/Siberian_Coal_Energy_Company\">SUEK</a>, a coal energy firm, are his primary beneficiaries. &nbsp;He serves on the boards of directors of both firms as a non-executive director.&nbsp;<br />\r\nMelnichenko is one of Russia&#39;s most prominent social investors and philanthropists.&nbsp;<br />\r\n&nbsp;Aside from his companies&#39; own charity and social investment activities, the <a href=\"https://en.wikipedia.org/wiki/Andrey_Melnichenko_Foundation\">Andrey Melnichenko Foundation</a> supports gifted students from the regions where his companies operate, with the goal of increasing social mobility in Russia.</p>\r\n",
-      "value": "<p>Andrey Melnichenko is a Russian industrialist who moved from student-run currency exchange into banking, co-founding MDM Bank before building EuroChem and SUEK in fertilisers and coal. Those companies grew through the consolidation and modernisation of industrial assets. The Andrey Melnichenko Foundation later extended his work into science education and sustainable-development programmes for regional communities.</p>\r\n",
+      "value": "<p>Andrey Melnichenko is a Russian industrialist who founded fertiliser producer EuroChem and coal supplier SUEK. He entered business through student-run currency exchanges, co-founded MDM Bank and used the banking partnership to assemble industrial plants and mines. His foundation supports science education and programmes addressing food security, climate action and regional opportunity.</p>\r\n",
       "action": "correct_existing",
       "confidence": {
         "score": 97,
         "band": "very_high",
-        "reason": "The replacement corrects obsolete governance language and gives a durable, source-backed account of the banking-to-industrial route and foundation work."
+        "reason": "The replacement removes obsolete board and beneficiary language and provides a durable, source-backed account of his banking-to-industry formation and foundation work."
       },
       "source_ids": [
         "S1",
@@ -279,7 +304,7 @@
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/andrey-melnichenko/",
-      "verification": "The dedicated profile matches Melnichenko's age, Russian citizenship, UAE residence, MDM Bank history, EuroChem and SUEK founder roles, and fertiliser-and-coal wealth route.",
+      "verification": "The dedicated profile matches Melnichenko's age, Russian citizenship, UAE residence, MDM Bank history, EuroChem and SUEK founder roles, and fertiliser-and-coal wealth.",
       "confidence": {
         "score": 99,
         "band": "very_high",
@@ -287,6 +312,21 @@
       },
       "source_ids": [
         "S1"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.eurochemgroup.com/",
+      "verification": "This is EuroChem's official corporate site, and official company material identifies Melnichenko as its founder.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The official domain documents EuroChem's business and separately identifies Melnichenko's founder relationship."
+      },
+      "source_ids": [
+        "S4",
+        "S8"
       ]
     }
   ],
@@ -323,7 +363,8 @@
         "Currency exchange and MDM Bank origin",
         "Partnership with Sergei Popov",
         "Industrial acquisitions forming EuroChem and SUEK",
-        "Founder relationship to EuroChem and SUEK"
+        "Founder relationship to EuroChem and SUEK",
+        "EuroChem and SUEK as the principal assets attributed to the fortune"
       ]
     },
     {
@@ -345,6 +386,34 @@
     },
     {
       "id": "S4",
+      "url": "https://www.eurochemgroup.com/media-announcements/eurochem-group-statement-on-ownership-and-control/",
+      "title": "EuroChem Group statement on ownership and control",
+      "publisher": "EuroChem Group",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Andrey Melnichenko as EuroChem founder",
+        "Cessation as a trust beneficiary in March 2022",
+        "No current management or control role should be inferred",
+        "Official EuroChem corporate domain"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.forbesmiddleeast.com/lists/richest-residents-in-the-uae-2026/andrey-melnichenko-family-2/",
+      "title": "Andrey Melnichenko & family - Richest Residents in the UAE 2026",
+      "publisher": "Forbes Middle East",
+      "tier": 2,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Current UAE residence",
+        "Metals & Mining industry classification",
+        "EuroChem and SUEK founder roles",
+        "Fertilisers and coal as the industrial wealth base"
+      ]
+    },
+    {
+      "id": "S6",
       "url": "https://www.rbc.ru/business/07/07/2022/62c708a39a79476cdc88e0fd",
       "title": "Melnichenko became a citizen of the United Arab Emirates",
       "publisher": "RBC",
@@ -357,20 +426,7 @@
       ]
     },
     {
-      "id": "S5",
-      "url": "https://www.forbesmiddleeast.com/lists/richest-residents-in-the-uae-2026/andrey-melnichenko-family-2/",
-      "title": "Andrey Melnichenko & family",
-      "publisher": "Forbes Middle East",
-      "tier": 2,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "Current UAE residence",
-        "Metals & Mining industry classification",
-        "EuroChem and SUEK founder roles"
-      ]
-    },
-    {
-      "id": "S6",
+      "id": "S7",
       "url": "https://www.linkedin.com/pub/dir/Andrey/Melnichenko",
       "title": "People named Andrey Melnichenko",
       "publisher": "LinkedIn",
@@ -382,7 +438,21 @@
       ]
     },
     {
-      "id": "S7",
+      "id": "S8",
+      "url": "https://www.eurochemgroup.com/about-us/",
+      "title": "About us",
+      "publisher": "EuroChem Group",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Official EuroChem corporate website",
+        "Current fertiliser-production business",
+        "Vertically integrated mine-to-farm supply chain",
+        "Mining, manufacturing and distribution activities"
+      ]
+    },
+    {
+      "id": "S9",
       "url": "https://en.wikipedia.org/wiki/Andrey_Melnichenko_(industrialist)",
       "title": "Andrey Melnichenko (industrialist)",
       "publisher": "Wikipedia",
@@ -390,14 +460,19 @@
       "accessed_at": "2026-07-28",
       "supports": [
         "Exact industrialist article URL",
-        "Full-name, birth-detail and business-role orientation"
+        "Full-name, birth-detail and business-role orientation",
+        "Existing owner social URL requires the industrialist suffix"
       ]
     }
   ],
   "uncertainties": [
     {
       "topic": "Current company relationship",
-      "detail": "Founder is used as the durable relationship to EuroChem and SUEK. The dossier makes no claim about current management, beneficial ownership or operational control."
+      "detail": "Founder is used as the durable relationship to EuroChem and SUEK. The dossier makes no claim about current management, beneficial ownership or operational control; EuroChem states that Melnichenko ceased being a trust beneficiary in 2022."
+    },
+    {
+      "topic": "Current wealth attribution",
+      "detail": "Forbes and Bloomberg continue to attribute the industrial fortune to EuroChem and SUEK, but public descriptions of the trust and beneficiaries differ in terminology. The classification therefore concerns the documented industrial base, not a claim of present legal ownership."
     },
     {
       "topic": "Secondary nationality",
@@ -405,7 +480,7 @@
     },
     {
       "topic": "Wikipedia URL",
-      "detail": "The existing Wikipedia social points to a disambiguation page. The exact industrialist article uses the suffix '(industrialist)', but the validator prevents duplicating an existing social type, so no replacement social is proposed."
+      "detail": "The existing Wikipedia social points to a disambiguation page. The exact industrialist article uses the suffix '(industrialist)', but the dossier does not duplicate an existing social type, so no replacement social is proposed."
     },
     {
       "topic": "Personal social accounts",
@@ -418,6 +493,6 @@
   ],
   "review": {
     "status": "pending",
-    "notes": "The banking-to-industrial route and foundation chapter are strongly evidenced. Review should confirm the Emirati nationality proposal and replace the existing Wikipedia disambiguation URL through the appropriate social-update workflow."
+    "notes": "The banking-to-industrial formation and founder relationship are strongly evidenced. Review should confirm the Emirati nationality proposal, preserve the distinction between founder status and current control, and replace the existing Wikipedia disambiguation URL through the appropriate social-update workflow."
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 3247,
@@ -7,7 +7,7 @@
     "identity_confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "An official Indonesian presidential transcript explicitly equates Haji Isam with Andi Syamsuddin Arsyad and identifies him as Jhonlin Group chairman; Antara, Bloomberg, Tempo and ISEAS independently align on that identity and business relationship."
+      "reason": "Official Indonesian presidential transcripts explicitly equate Haji Isam with Andi Syamsuddin Arsyad and connect him to Jhonlin Group; current government, Antara, Bloomberg and ISEAS sources independently align on the same identity."
     }
   },
   "input_snapshot": {
@@ -77,24 +77,45 @@
   },
   "research_status": "complete",
   "biography_brief": {
-    "durable_identity": "Andi Syamsuddin Arsyad, widely known as Haji Isam, is an Indonesian entrepreneur and the founder and chairman of Jhonlin Group.",
-    "wealth_or_prominence_route": "Work as a driver and heavy-equipment operator led to practical mine-management training, borrowed capital for rented machinery and a first coal-contracting business.",
-    "turning_point": "The equipment-backed contracting venture became Jhonlin Group and provided the base for a broader industrial business.",
-    "later_chapter": "Jhonlin expanded from coal into logistics, palm-oil processing, biodiesel and sugar manufacturing.",
-    "character_detail": "His route from driving and equipment operation into mine contracting gives the group's industrial expansion an unusually practical starting point.",
+    "durable_identity": "Indonesian entrepreneur Andi Syamsuddin Arsyad, widely known as Haji Isam, founded and owns Jhonlin Group.",
+    "defining_work": "A coal-contracting enterprise became the base of a group operating across mining, logistics and downstream agricultural processing.",
+    "formative_context": "Before owning the business, he worked as a driver and heavy-equipment operator and learned mine management from a local entrepreneur.",
+    "decisive_moment": "Borrowed capital allowed him to rent machinery and undertake coal-contracting work.",
+    "enduring_dimensions": [
+      "Founder ownership of Jhonlin Group",
+      "Coal mining supported by logistics operations",
+      "Palm-oil processing, biodiesel and sugar manufacturing"
+    ],
+    "character_detail": "Practical experience operating vehicles and machinery preceded his move into mine contracting and ownership.",
+    "opening_options": [
+      {
+        "mode": "formative_episode",
+        "angle": "Open with his work driving timber trucks and operating heavy equipment in South Kalimantan."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Open with the borrowed capital that enabled his first rented mining machinery and contracting work."
+      },
+      {
+        "mode": "institution_or_asset",
+        "angle": "Open with Jhonlin Group's mining and logistics base before tracing the founder's earlier operating experience."
+      }
+    ],
     "excluded_transient_context": [
-      "Current cohort position and asset context",
-      "Current net-worth estimates, transaction values and investment stakes",
-      "Political relationships, allegations and unrequested controversy"
+      "Current or historical vessel ownership, vessel names, design and LOA ranking",
+      "Current wealth estimates, business rankings, transaction values and changing investment stakes",
+      "Political relationships, allegations and unrelated controversy",
+      "Conflicting birthplace claims and uncertain personal social-media accounts"
     ],
     "source_ids": [
       "S1",
       "S2",
-      "S3",
       "S4",
       "S5",
       "S6",
-      "S7"
+      "S7",
+      "S8",
+      "S9"
     ]
   },
   "editorial_assessment": {
@@ -103,76 +124,81 @@
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
     "calibration_archetypes": [
       "founder_operator"
     ],
-    "notes": "The biographies follow a concrete route from operating equipment to organising coal contracts and then building a wider industrial chain. Transient deals, wealth estimates, political context and unrelated controversy remain outside the prose."
+    "notes": "The long profile begins with hands-on machinery experience, connects borrowed capital to coal contracting and ends with the operating lines that grew around that base. Rankings, transient transactions, political material and unresolved personal details remain outside the prose."
   },
   "editorial_note": null,
   "forbes_profile": {
     "status": "not_found",
     "url": null,
     "confidence": {
-      "score": 98,
+      "score": 99,
       "band": "very_high",
-      "reason": "Focused exact-name and site:forbes.com/profile searches for Haji Isam and Andi Syamsuddin Arsyad found no dedicated or matching Forbes profile."
+      "reason": "Focused exact-name and site-restricted searches for Haji Isam, Andi Syamsuddin Arsyad and common spelling variants found Forbes articles or unrelated results but no dedicated Forbes person profile."
     }
   },
   "primary_industry": {
     "classification": "metals_mining",
     "label": "Metals & Mining",
-    "summary": "Coal mining and mine contracting created the operating and financial base of Jhonlin Group; later logistics, palm-oil, biodiesel and sugar businesses developed around that foundation.",
+    "summary": "Coal mining and mine contracting created Jhonlin Group's operating base and the principal source of Isam's business wealth; logistics and downstream agricultural processing developed alongside it.",
     "confidence": {
       "score": 97,
       "band": "very_high",
-      "reason": "Bloomberg identifies coal mining as the source of Isam's fortune, while Antara, Tempo and ISEAS consistently establish Jhonlin's coal-mining origin and continuing mining operations."
+      "reason": "Current Bloomberg and Bloomberg Technoz reporting identifies coal mining as the foundation of Isam's fortune and business base, while ISEAS and Antara confirm continuing mining operations."
     },
     "source_ids": [
-      "S3",
       "S4",
       "S5",
-      "S6"
+      "S7",
+      "S9",
+      "S10"
     ]
   },
   "wealth_origin": {
     "classification": "self_made",
     "label": "Self-made",
-    "summary": "Isam progressed from driving and heavy-equipment work to mine-management training, used borrowed capital to rent machinery and entered coal contracting before building Jhonlin Group.",
+    "summary": "Isam moved from driving and heavy-equipment work into mine management, used borrowed capital to rent machinery and built a coal-contracting enterprise.",
     "confidence": {
       "score": 94,
       "band": "high",
-      "reason": "Antara records the mine-management training and borrowed-capital route, Tempo independently confirms his early driving work and move into coal, and Bloomberg describes a modest background followed by a coal-made fortune."
+      "reason": "Antara records his early operating work, mine-management training and borrowed-capital entry into coal contracting; Tempo and current Bloomberg reporting independently corroborate his modest working background and coal-built fortune."
     },
     "source_ids": [
-      "S3",
-      "S4",
-      "S5"
-    ]
-  },
-  "wealth_relationship": {
-    "classification": "founder",
-    "label": "Founder",
-    "summary": "He established the coal-contracting enterprise that developed into Jhonlin Group and remains publicly identified as its founder, owner and chairman.",
-    "confidence": {
-      "score": 98,
-      "band": "very_high",
-      "reason": "The official presidential transcript identifies Isam as Jhonlin Group chairman, while Antara, Tempo and ISEAS consistently attribute the group's creation or ownership to him."
-    },
-    "source_ids": [
-      "S1",
       "S4",
       "S5",
       "S6"
     ]
   },
-  "biography": {
-    "plain_text": "Indonesian entrepreneur Andi Syamsuddin Arsyad is widely known as Haji Isam. After working as a driver and heavy-equipment operator, he learned mine management and used borrowed capital to rent machinery for coal contracting. That venture grew into Jhonlin Group, whose mining base later supported expansion into logistics, palm-oil processing, biodiesel and sugar.",
-    "html": "<p>Indonesian entrepreneur Andi Syamsuddin Arsyad is widely known as Haji Isam. After working as a driver and heavy-equipment operator, he learned mine management and used borrowed capital to rent machinery for coal contracting. That venture grew into Jhonlin Group, whose mining base later supported expansion into logistics, palm-oil processing, biodiesel and sugar.</p>\r\n",
-    "word_count": 52,
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "He established the coal-contracting enterprise that became Jhonlin Group and remains publicly identified as its founder and owner.",
     "confidence": {
-      "score": 95,
+      "score": 99,
       "band": "very_high",
-      "reason": "The official presidential transcript establishes the identity and chairmanship; Antara and Tempo support the early work and coal route; ISEAS, presidential records and Antara support the durable later business lines."
+      "reason": "Antara identified him as Jhonlin Group's founder in July 2026, while current government and Bloomberg Technoz sources identify him as the group's leader or owner; earlier official presidential records establish his chairmanship."
+    },
+    "source_ids": [
+      "S1",
+      "S4",
+      "S8",
+      "S9"
+    ]
+  },
+  "biography": {
+    "plain_text": "Indonesian entrepreneur Andi Syamsuddin Arsyad, widely known as Haji Isam, founded Jhonlin Group after working as a driver and heavy-equipment operator. Borrowed capital for rented machinery helped him enter coal contracting. The mining business became the base for interests in logistics, palm-oil processing, biodiesel and sugar manufacturing, with Isam remaining the group's owner.",
+    "html": "<p>Indonesian entrepreneur Andi Syamsuddin Arsyad, widely known as Haji Isam, founded Jhonlin Group after working as a driver and heavy-equipment operator. Borrowed capital for rented machinery helped him enter coal contracting. The mining business became the base for interests in logistics, palm-oil processing, biodiesel and sugar manufacturing, with Isam remaining the group's owner.</p>\r\n",
+    "word_count": 53,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Official presidential records and current Antara reporting establish the identity and Jhonlin relationship; Antara and Tempo support the early operating work and coal entry; current Bloomberg, ISEAS and official records support the durable business lines."
     },
     "source_ids": [
       "S1",
@@ -180,53 +206,55 @@
       "S4",
       "S5",
       "S6",
-      "S7"
+      "S7",
+      "S8",
+      "S9"
     ]
   },
   "long_biography": {
-    "plain_text": "Coal contracting gave Haji Isam his start in business. Known publicly as Haji Isam, Andi Syamsuddin Arsyad worked as a driver and heavy-equipment operator before learning mine management from a local entrepreneur. Borrowed capital allowed him to rent machinery and take on contracting work, forming the enterprise that became Jhonlin Group.\n\nThe South Kalimantan group developed beyond coal into logistics and palm-oil processing. Later projects added biodiesel and sugar manufacturing, extending the business from extraction and transport into downstream industry. He remains Jhonlin's founder and chairman. The arc from operating machinery to organising a mining contractor, then building processing and distribution capacity, defines his business career.",
-    "html": "<p>Coal contracting gave Haji Isam his start in business. Known publicly as Haji Isam, Andi Syamsuddin Arsyad worked as a driver and heavy-equipment operator before learning mine management from a local entrepreneur. Borrowed capital allowed him to rent machinery and take on contracting work, forming the enterprise that became Jhonlin Group.</p>\r\n<p>The South Kalimantan group developed beyond coal into logistics and palm-oil processing. Later projects added biodiesel and sugar manufacturing, extending the business from extraction and transport into downstream industry. He remains Jhonlin's founder and chairman. The arc from operating machinery to organising a mining contractor, then building processing and distribution capacity, defines his business career.</p>\r\n",
-    "word_count": 106,
+    "plain_text": "Driving timber trucks and operating heavy equipment gave Indonesian entrepreneur Haji Isam direct experience of South Kalimantan's mining industry. He learned mine management from a local entrepreneur, then used borrowed capital to rent machinery and take on coal-contracting work. The contracts formed the operating base of Jhonlin Group, the company he founded.\n\nJhonlin developed logistics alongside mining and moved into palm-oil processing, biodiesel and sugar manufacturing. Those businesses added transport and downstream production to the original coal operation. Andi Syamsuddin Arsyad remains Jhonlin's owner as the group operates in coal mining, palm oil and logistics from South Kalimantan.",
+    "html": "<p>Driving timber trucks and operating heavy equipment gave Indonesian entrepreneur Haji Isam direct experience of South Kalimantan's mining industry. He learned mine management from a local entrepreneur, then used borrowed capital to rent machinery and take on coal-contracting work. The contracts formed the operating base of Jhonlin Group, the company he founded.</p>\r\n<p>Jhonlin developed logistics alongside mining and moved into palm-oil processing, biodiesel and sugar manufacturing. Those businesses added transport and downstream production to the original coal operation. Andi Syamsuddin Arsyad remains Jhonlin's owner as the group operates in coal mining, palm oil and logistics from South Kalimantan.</p>\r\n",
+    "word_count": 98,
     "confidence": {
-      "score": 95,
-      "band": "very_high",
-      "reason": "Official Indonesian records, Antara, Bloomberg, Tempo and ISEAS jointly support the identity, coal-contracting route, Jhonlin leadership and industrial diversification used in the narrative."
+      "score": 94,
+      "band": "high",
+      "reason": "Antara and Tempo support the early work, mine-management training and coal-contracting entry; current Bloomberg, Antara, ISEAS and Indonesian official sources establish the identity, founder-owner relationship and continuing industrial activities."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S3",
       "S4",
       "S5",
       "S6",
-      "S7"
+      "S7",
+      "S8",
+      "S9"
     ]
   },
   "proposed_details": [
     {
       "field": "known_for_title",
+      "value": "Founder and owner of Jhonlin Group",
       "action": "fill_missing",
-      "value": "Founder and Chairman of Jhonlin Group",
       "confidence": {
-        "score": 98,
+        "score": 99,
         "band": "very_high",
-        "reason": "An official presidential transcript identifies Haji Isam as Jhonlin Group chairman, while Antara, Tempo and ISEAS consistently establish his founding or ownership relationship."
+        "reason": "Antara identified Isam as Jhonlin Group's founder in July 2026, and current government, Bloomberg Technoz and official company-linked evidence confirm his continuing ownership or leadership relationship."
       },
       "source_ids": [
-        "S1",
-        "S4",
-        "S5",
-        "S6"
+        "S8",
+        "S9",
+        "S11"
       ]
     },
     {
       "field": "biography",
+      "value": "<p>Indonesian entrepreneur Andi Syamsuddin Arsyad, widely known as Haji Isam, founded Jhonlin Group after working as a driver and heavy-equipment operator. Borrowed capital for rented machinery helped him enter coal contracting. The mining business became the base for interests in logistics, palm-oil processing, biodiesel and sugar manufacturing, with Isam remaining the group's owner.</p>\r\n",
       "action": "fill_missing",
-      "value": "<p>Indonesian entrepreneur Andi Syamsuddin Arsyad is widely known as Haji Isam. After working as a driver and heavy-equipment operator, he learned mine management and used borrowed capital to rent machinery for coal contracting. That venture grew into Jhonlin Group, whose mining base later supported expansion into logistics, palm-oil processing, biodiesel and sugar.</p>\r\n",
       "confidence": {
-        "score": 95,
-        "band": "very_high",
-        "reason": "The replacement provides a concise, durable account of the independently corroborated identity, self-made coal-contracting route and later industrial diversification."
+        "score": 94,
+        "band": "high",
+        "reason": "The replacement gives a concise account of the corroborated identity, founder-owner relationship, self-made coal-contracting origin and durable industrial development."
       },
       "source_ids": [
         "S1",
@@ -234,7 +262,9 @@
         "S4",
         "S5",
         "S6",
-        "S7"
+        "S7",
+        "S8",
+        "S9"
       ]
     }
   ],
@@ -243,20 +273,53 @@
       "type_id": "14",
       "type": "Company Website",
       "url": "https://jhonlin.co.id/",
-      "verification": "This is Jhonlin Group's official company domain. The official Indonesian presidential transcript independently establishes Haji Isam's chairmanship, and reputable reporting confirms his founder and owner relationship. Type ID 14 is copied from the owner input lookup.",
+      "verification": "The domain presents Jhonlin Group's official company identity and South Kalimantan contact details. Current Antara and Bloomberg Technoz reporting independently identify Haji Isam as the group's founder or owner. Type ID 14 is copied from the input lookup.",
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The domain is operated as Jhonlin's official company site, and Haji Isam's relationship to the group is independently established."
+        "reason": "The URL is Jhonlin Group's official company domain, and the owner-to-company relationship is independently established by current reputable reporting."
       },
       "source_ids": [
-        "S1",
-        "S6",
-        "S8"
+        "S8",
+        "S9",
+        "S12"
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "field": "existing_social_profile",
+      "type_id": "9",
+      "type": "Instagram",
+      "existing_value": "https://www.instagram.com/dirmanarsyad16/",
+      "recommended_action": "remove_existing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "A September 2025 Jhonlin clarification, published by the Jakarta provincial government's fact-checking service, states that Haji Isam has no social-media accounts and that accounts using his identity are false."
+      },
+      "source_ids": [
+        "S11"
+      ],
+      "review_note": "The immutable input is not changed by this dossier. Removal should occur only after explicit reviewer approval and with the separate live social-removal control."
+    },
+    {
+      "field": "existing_social_profile",
+      "type_id": "2",
+      "type": "Facebook",
+      "existing_value": "https://www.facebook.com/sudirman.a.arsyad/",
+      "recommended_action": "remove_existing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "A September 2025 Jhonlin clarification, published by the Jakarta provincial government's fact-checking service, states that Haji Isam has no social-media accounts and that accounts using his identity are false."
+      },
+      "source_ids": [
+        "S11"
+      ],
+      "review_note": "The immutable input is not changed by this dossier. Removal should occur only after explicit reviewer approval and with the separate live social-removal control."
+    }
+  ],
   "sources": [
     {
       "id": "S1",
@@ -266,8 +329,8 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "official equivalence of Haji Isam and Andi Syamsuddin Arsyad",
-        "Jhonlin Group chairmanship",
+        "Official equivalence of Haji Isam and Andi Syamsuddin Arsyad",
+        "Historical Jhonlin Group chairmanship",
         "Jhonlin relationship to sugar manufacturing"
       ]
     },
@@ -279,109 +342,183 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "Andi Syamsuddin Arsyad's relationship to Jhonlin",
-        "Jhonlin Agro Raya biodiesel manufacturing",
-        "integration of palm-oil processing with downstream biodiesel production"
+        "Haji Isam and Andi Syamsuddin Arsyad identity",
+        "Jhonlin Group relationship",
+        "Jhonlin Agro Raya biodiesel production"
       ]
     },
     {
       "id": "S3",
+      "url": "https://presidenri.go.id/transkrip/pengantar-pertemuan-dengan-investor-global-ray-dalio-dan-para-pengusaha-nasional/",
+      "title": "Pengantar Pertemuan dengan Investor Global Ray Dalio dan Para Pengusaha Nasional",
+      "publisher": "President of the Republic of Indonesia",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Haji Isam and Andi Syamsuddin Arsyad identity",
+        "Jhonlin Group relationship in 2025"
+      ]
+    },
+    {
+      "id": "S4",
       "url": "https://www.bloomberg.com/news/articles/2026-07-16/prabowo-s-favored-billionaire-wants-to-become-indonesia-s-richest-man",
       "title": "Prabowo's Favored Tycoon Wants to Become Indonesia's Richest Man",
       "publisher": "Bloomberg",
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "exact Andi Syamsuddin Arsyad and Haji Isam identity",
-        "modest early background",
-        "coal mining as the source of the principal fortune"
+        "Andi Syamsuddin Arsyad and Haji Isam identity",
+        "Modest early background",
+        "Coal mining as the source of his fortune"
       ]
     },
     {
-      "id": "S4",
-      "url": "https://mataram.antaranews.com/amp/berita/400433/haji-isam-dari-tukang-ojek-pembisnis-hingga-dekat-dengan-kabinet",
-      "title": "Haji Isam dari tukang ojek, pembisnis, hingga dekat dengan kabinet",
+      "id": "S5",
+      "url": "https://kalsel.antaranews.com/amp/berita/355818/sempat-jadi-tukang-ojek-bisnis-haji-isam-semakin-menggurita",
+      "title": "Sempat jadi tukang ojek, bisnis Haji Isam semakin menggurita",
       "publisher": "Antara News",
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
         "Haji Isam and Andi Syamsuddin Arsyad identity",
-        "Jhonlin Group ownership",
-        "early driving and heavy-equipment work",
-        "mine-management training",
-        "borrowed capital for rented machinery and coal contracting",
-        "development of Jhonlin Group",
-        "later transport, palm-oil, biodiesel and sugar businesses"
+        "Early driving and heavy-equipment work",
+        "Mine-management training",
+        "Borrowed capital for rented machinery and coal contracting",
+        "Formation and development of Jhonlin Group",
+        "Later logistics, palm-oil, biodiesel and sugar businesses"
       ]
     },
     {
-      "id": "S5",
+      "id": "S6",
       "url": "https://magz.tempo.co/read/cover-story/34342/andi-syamsuddin-arsyad-owner-of-the-jhonlin-group-that-helicopter-request-is-slander",
       "title": "Andi Syamsuddin Arsyad, owner of the Jhonlin Group: That Helicopter Request is Slander",
       "publisher": "Tempo",
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "exact identity and Haji Isam alias",
+        "Exact identity and Haji Isam alias",
         "Jhonlin Group ownership",
-        "early wood-haulage driving work",
-        "transition into coal mining",
-        "land, sea and air transport interests"
-      ]
-    },
-    {
-      "id": "S6",
-      "url": "https://www.iseas.edu.sg/wp-content/uploads/2026/03/ISEAS-Perspective_2026_23.pdf",
-      "title": "The Nine Haji and Indonesia's Political Economy",
-      "publisher": "ISEAS – Yusof Ishak Institute",
-      "tier": 2,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "exact Haji Isam and Andi Syamsuddin Arsyad identity",
-        "Jhonlin Group relationship",
-        "coal-mining, palm-oil and logistics operations"
+        "Early timber-haulage driving work",
+        "Transition into coal mining",
+        "Transport interests"
       ]
     },
     {
       "id": "S7",
-      "url": "https://m.antaranews.com/amp/berita/2472673/presiden-jokowi-resmikan-pabrik-biodiesel-pt-jhonlin-agro-raya",
-      "title": "Presiden Jokowi resmikan pabrik biodiesel PT Jhonlin Agro Raya",
-      "publisher": "Antara News",
+      "url": "https://www.iseas.edu.sg/wp-content/uploads/2026/03/ISEAS-Perspective_2026_23.pdf",
+      "title": "The Nine Haji and Indonesia's Political Economy",
+      "publisher": "ISEAS - Yusof Ishak Institute",
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "Samsuddin Andi Arsyad and Haji Isam identity",
-        "Jhonlin Group ownership",
-        "Jhonlin Agro Raya biodiesel operation"
+        "Haji Isam and Andi Syamsuddin Arsyad identity",
+        "Jhonlin Group relationship",
+        "Coal-mining, palm-oil and logistics operations in South Kalimantan",
+        "Limited public data about the scale of private wealth"
       ]
     },
     {
       "id": "S8",
+      "url": "https://kepri.antaranews.com/amp/berita/262224/resmi-ipo-saham-rans-milik-raffi-ahmad-langsung-ara",
+      "title": "Resmi IPO, saham RANS milik Raffi Ahmad langsung ARA",
+      "publisher": "Antara News",
+      "tier": 2,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Andi Syamsuddin Arsyad and Haji Isam identity",
+        "Current identification as Jhonlin Group founder in July 2026"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.bloombergtechnoz.com/detail-news/109029/manuver-haji-isam-masuk-tambang-nikel-ini-profil-pack",
+      "title": "Manuver Haji Isam Masuk Tambang Nikel, Ini Profil PACK",
+      "publisher": "Bloomberg Technoz",
+      "tier": 2,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Andi Syamsuddin Arsyad and Haji Isam identity",
+        "Current Jhonlin Group ownership",
+        "Coal mining and logistics as the established business base",
+        "Continuing metals-and-mining activity"
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://aceh.antaranews.com/berita/398377/percepat-pemulihan-jhonlin-group-kirim-16-alat-berat-ke-aceh",
+      "title": "Percepat pemulihan, Jhonlin Group kirim 16 alat berat ke Aceh",
+      "publisher": "Antara News",
+      "tier": 2,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Current Haji Isam ownership of Jhonlin Group",
+        "Jhonlin Group as a mining-sector company"
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://jalahoaks.jakarta.go.id/detail/Hoaks-Pengusaha-Haji-Isam-Bagi-bagi-Uang-Melalui-Facebook",
+      "title": "Hoaks Pengusaha Haji Isam Bagi-bagi Uang Melalui Facebook",
+      "publisher": "JalaHoaks, Jakarta Provincial Government",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Haji Isam and H. Syamsudin Andi Arsyad identity",
+        "Jhonlin identification of him as the company's owner",
+        "Jhonlin's September 2025 statement that he has no social-media accounts",
+        "Existing Instagram and Facebook links require removal review"
+      ]
+    },
+    {
+      "id": "S12",
       "url": "https://jhonlin.co.id/",
       "title": "Jhonlin Group",
       "publisher": "Jhonlin Group",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "official company website",
-        "South Kalimantan company address and contact details"
+        "Official company website",
+        "Jhonlin Group company identity",
+        "South Kalimantan contact details"
       ]
     }
   ],
   "uncertainties": [
-    "Focused Forbes-profile searches found no dedicated profile for Haji Isam or Andi Syamsuddin Arsyad.",
-    "Public sources vary among Andi Syamsuddin Arsyad, Samsuddin Andi Arsyad, Andi Samsudin Arsyad and longer honorific forms. The official presidential transcript directly equates Andi Syamsuddin Arsyad with Haji Isam, but the input name components were preserved because reporting is inconsistent about spelling and order.",
-    "Birthplace reports conflict among Batulicin, Bone and Makassar or describe regional origin rather than birth. No place-of-birth proposal was made.",
-    "The existing 1 January 1977 birth date is compatible with established profile reporting, but it was already populated and was not duplicated in proposals.",
-    "No reliable evidence established a secondary nationality or secondary residence, so both remain blank.",
-    "The existing Instagram URL uses the handle @dirmanarsyad16 and the existing Facebook URL uses the name Sudirman A. Arsyad. Neither could be verified as Haji Isam's personal account; they were preserved as immutable input but not relied upon.",
-    "No identity-verified personal LinkedIn, X, YouTube, TikTok or personal website met the proposal threshold. The Jhonlin URL is explicitly proposed as a Company Website.",
-    "Jhonlin Group is privately held and does not publish a consolidated current segment breakdown. Metals & Mining remains the primary classification because reliable reporting identifies coal as the source of the fortune and the group's operating foundation.",
-    "Current transaction details, investment stakes, net-worth estimates and political material were excluded from the biographies because they are transient or outside the requested durable business narrative.",
-    "Blank suffix and secondary-residence fields were treated as optional; blank age, death, internal-note and unknown-name fields remain inapplicable or system-managed."
+    {
+      "topic": "Name spelling and order",
+      "detail": "Reliable sources use Andi Syamsuddin Arsyad, H. Syamsudin Andi Arsyad, Samsudin Andi Arsyad and occasional spelling variants. Official records establish the Haji Isam identity, but the input name components are preserved because sources do not resolve one canonical field order and spelling."
+    },
+    {
+      "topic": "Current formal role",
+      "detail": "A 2020 presidential transcript calls him Jhonlin Group chairman. Current 2026 Antara, government and Bloomberg Technoz sources support founder, owner or company leader, but do not independently establish a continuing chairman title. The proposal therefore uses Founder and owner."
+    },
+    {
+      "topic": "Birthplace",
+      "detail": "Public reports conflict among Bone, Batulicin and Makassar or describe regional origin rather than a verified place of birth. No birthplace proposal was made."
+    },
+    {
+      "topic": "Existing personal social links",
+      "detail": "The input contains Instagram and Facebook URLs, but a September 2025 Jhonlin clarification states that Haji Isam has no social-media accounts and that accounts using his identity are false. Both links are preserved in the immutable input and presented only as removal candidates requiring explicit review."
+    },
+    {
+      "topic": "Other personal profiles",
+      "detail": "No identity-verified personal LinkedIn, X, YouTube, TikTok or personal website met the proposal threshold. The Jhonlin URL is proposed specifically as a Company Website."
+    },
+    {
+      "topic": "Forbes profile",
+      "detail": "No dedicated Forbes person profile was found after exact-name and site-restricted searches using the public name, full name and spelling variants."
+    },
+    {
+      "topic": "Private business disclosure",
+      "detail": "Jhonlin Group is privately held and no current consolidated segment or ownership disclosure was found. Metals & Mining is retained because multiple current sources identify coal as the fortune's source and the group's operating base."
+    },
+    {
+      "topic": "Other blank fields",
+      "detail": "No reliable source established a secondary nationality or secondary residence. Suffix remains optional, and blank age, death, internal-note and unknown-name fields remain inapplicable or system-managed."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": "Keep Metals & Mining, Self-made and Founder classifications distinct. Preserve the input name components and existing social links pending direct verification; do not infer a birthplace from conflicting reports."
+    "notes": "Identity, Founder relationship and Metals & Mining classification are strongly supported. Reviewer attention is required for the conservative current-role wording, unresolved name-field ordering and birthplace, and the explicit-removal workflow for the two contradicted social links. Nothing has been compiled or applied."
   }
 }

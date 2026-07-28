@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 2545,
@@ -7,7 +7,7 @@
     "identity_confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The exact name, Amazon founder and executive-chair role, United States citizenship, Princeton education, birth details and existing Wikipedia record align across Amazon, the SEC, Forbes, Princeton University and the Academy of Achievement."
+      "reason": "The exact name, Amazon founder and executive-chair role, United States citizenship, Princeton education, birth details and Blue Origin association align across Amazon, the 2026 SEC proxy, Forbes, Princeton University and Bezos's congressional statement."
     }
   },
   "input_snapshot": {
@@ -75,16 +75,37 @@
   },
   "research_status": "complete",
   "biography_brief": {
-    "durable_identity": "American technology entrepreneur, Amazon founder and executive chair.",
-    "wealth_or_prominence_route": "A Princeton education in electrical engineering and computer science led to finance and quantitative investment work before he left D.E. Shaw to create an online bookshop in 1994.",
-    "turning_point": "He recognised that books, with a catalogue too large for print, suited a searchable online database; Amazon then expanded from that focused opening into commerce, logistics, devices and cloud computing.",
-    "later_chapter": "He founded Blue Origin in 2000, extending his engineering interests into reusable launch systems intended to lower the cost of access to space.",
-    "character_detail": "The original bookshop decision joined a systems engineer's interest in rapidly growing Internet use with the practical problem of organising an enormous selection.",
+    "durable_identity": "Amazon founder and executive chair, technology entrepreneur, and founder of Blue Origin.",
+    "defining_work": "He developed Amazon from an online bookshop into a technology platform spanning commerce, devices and cloud computing.",
+    "formative_context": "Electrical-engineering and computer-science training at Princeton preceded work applying computer systems to finance and quantitative investment.",
+    "decisive_moment": "After observing rapid growth in web use, he left D.E. Shaw and selected books for an online business because their vast catalogue suited a searchable database.",
+    "enduring_dimensions": [
+      "Founder and current executive chair of Amazon",
+      "Customer-focused, long-horizon contribution to Amazon's board leadership",
+      "Blue Origin's reusable launch and lunar systems"
+    ],
+    "character_detail": "He evaluated mail-order categories methodically and chose books because a comprehensive printed catalogue would be impractical.",
+    "opening_options": [
+      {
+        "mode": "decisive_event",
+        "angle": "Use the decision to leave quantitative finance and build an online bookshop around a searchable catalogue."
+      },
+      {
+        "mode": "defining_achievement",
+        "angle": "Use Amazon's expansion from books into commerce, devices and cloud computing to establish the scale of his work."
+      },
+      {
+        "mode": "institution_or_asset",
+        "angle": "Use Amazon as the institution connecting Bezos's founder role, operating tenure and continuing board leadership."
+      }
+    ],
     "excluded_transient_context": [
-      "Current vessel ownership, vessel names and LOA cohort ranking",
-      "Current net-worth estimates and wealth rankings",
-      "Current shareholding percentages, market prices and operating figures",
-      "Short-term transactions and unrelated personal controversies"
+      "Current or historical vessel association, ownership and LOA ranking",
+      "Current net-worth estimates, wealth rankings and shareholding percentages",
+      "Annual operating figures, market prices and short-term transactions",
+      "The newly disclosed Project Prometheus role and other short-tenure activities",
+      "Additional media, investment and philanthropic holdings that would turn the profile into an inventory",
+      "Personal controversy, source publishers, confidence language and classification deliberation"
     ],
     "source_ids": [
       "S1",
@@ -93,7 +114,8 @@
       "S4",
       "S5",
       "S6",
-      "S7"
+      "S7",
+      "S11"
     ]
   },
   "editorial_assessment": {
@@ -102,10 +124,14 @@
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "decision_then_consequence",
     "calibration_archetypes": [
       "founder_operator"
     ],
-    "notes": "The biographies trace Bezos's engineering education through quantitative finance, the book-catalogue insight, Amazon's expansion and Blue Origin's reusable-spaceflight mission without exposing sources, valuations, rankings, ownership percentages or asset context."
+    "notes": "The long profile begins with the consequential decision to leave quantitative finance and explains why books suited the early web. Its second paragraph adds only Blue Origin as a durable secondary dimension and ends on concrete engineering programmes, avoiding a résumé, transient ventures and synthetic summary."
   },
   "editorial_note": null,
   "forbes_profile": {
@@ -114,7 +140,7 @@
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The dedicated current Forbes profile exactly matches Jeff Bezos through Amazon, his founder and executive-chair roles, United States citizenship, Princeton education and Blue Origin ownership."
+      "reason": "The current dedicated profile exactly matches Jeff Bezos through Amazon, his founder and executive-chair roles, United States citizenship, Princeton education and Blue Origin ownership."
     }
   },
   "primary_industry": {
@@ -124,23 +150,7 @@
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Forbes identifies Amazon as his source of wealth, while Amazon, the SEC and Princeton establish the founder route and the company's development across digital commerce and cloud infrastructure."
-    },
-    "source_ids": [
-      "S1",
-      "S2",
-      "S3",
-      "S4"
-    ]
-  },
-  "wealth_origin": {
-    "classification": "self_made",
-    "label": "Self-made",
-    "summary": "Bezos created the core business by leaving a finance career to establish an online bookshop in 1994 and expanding it into Amazon.",
-    "confidence": {
-      "score": 100,
-      "band": "very_high",
-      "reason": "Forbes explicitly classifies the fortune as self-made, and Amazon, Princeton and the SEC independently document his creation and development of Amazon."
+      "reason": "Forbes identifies Amazon as his source of wealth, while Amazon, the SEC and Princeton establish the founder route and the company's development across digital commerce, devices and cloud infrastructure."
     },
     "source_ids": [
       "S1",
@@ -150,14 +160,31 @@
       "S5"
     ]
   },
-  "wealth_relationship": {
-    "classification": "founder",
-    "label": "Founder",
-    "summary": "Founder is the clearest relationship because Bezos created Amazon and continues to serve as its executive chair.",
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Bezos created the core business by leaving a quantitative-finance career to establish an online bookshop and expanding it into Amazon.",
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "Amazon's current leadership page and 2026 SEC proxy directly identify Bezos as founder and executive chair, with continuing board leadership."
+      "reason": "Forbes explicitly describes the fortune as self-made, and Amazon, Princeton and Bezos's congressional statement independently document his creation and development of Amazon."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4",
+      "S5",
+      "S11"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Founder is the clearest relationship because Bezos created Amazon, the principal wealth-producing company, and continues to serve as its executive chair.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Amazon's current leadership page and 2026 SEC proxy directly identify Bezos as Amazon's founder and executive chair, with continuing board leadership."
     },
     "source_ids": [
       "S2",
@@ -165,13 +192,13 @@
     ]
   },
   "biography": {
-    "plain_text": "Jeff Bezos is an American technology entrepreneur who studied electrical engineering and computer science at Princeton, then worked in finance before launching an online bookshop. He scaled Amazon into a broader commerce and cloud-computing platform and later founded Blue Origin, pursuing reusable spaceflight as a route to wider access to space.",
-    "html": "<p>Jeff Bezos is an American technology entrepreneur who studied electrical engineering and computer science at Princeton, then worked in finance before launching an online bookshop. He scaled Amazon into a broader commerce and cloud-computing platform and later founded Blue Origin, pursuing reusable spaceflight as a route to wider access to space.</p>\r\n",
-    "word_count": 51,
+    "plain_text": "Jeff Bezos left quantitative finance in 1994 to found Amazon as an online bookshop. He expanded the company into a technology platform spanning commerce, devices and cloud computing, creating his self-made fortune. Bezos remains Amazon's executive chair and also founded Blue Origin, which develops reusable systems for access to space.",
+    "html": "<p>Jeff Bezos left quantitative finance in 1994 to found Amazon as an online bookshop. He expanded the company into a technology platform spanning commerce, devices and cloud computing, creating his self-made fortune. Bezos remains Amazon's executive chair and also founded Blue Origin, which develops reusable systems for access to space.</p>\r\n",
+    "word_count": 50,
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Amazon, the SEC, Princeton, Forbes and Blue Origin support the identity, education, finance-to-bookshop route, Amazon expansion and later reusable-spaceflight chapter."
+      "reason": "Current Amazon and SEC sources support Bezos's founder and executive-chair roles, Princeton supports the finance-to-bookshop formation, and Amazon and Blue Origin support the two companies' durable activities."
     },
     "source_ids": [
       "S1",
@@ -183,21 +210,21 @@
     ]
   },
   "long_biography": {
-    "plain_text": "Jeff Bezos studied electrical engineering and computer science at Princeton before moving into finance and quantitative investment work. At D.E. Shaw, the rapid growth of the web prompted him to leave and build an online bookshop in 1994. Books offered a vast catalogue suited to search, and Amazon grew from that focused opening into a platform spanning retail, logistics, devices and cloud computing.\n\nBezos later channelled the same appetite for long-horizon infrastructure into space. He founded Blue Origin in 2000 to lower the cost and improve the safety of spaceflight, with reusable launch vehicles at the centre of its approach. The venture extended his engineering interests beyond digital commerce towards building a durable route to space for future generations.",
-    "html": "<p>Jeff Bezos studied electrical engineering and computer science at Princeton before moving into finance and quantitative investment work. At D.E. Shaw, the rapid growth of the web prompted him to leave and build an online bookshop in 1994. Books offered a vast catalogue suited to search, and Amazon grew from that focused opening into a platform spanning retail, logistics, devices and cloud computing.</p>\r\n<p>Bezos later channelled the same appetite for long-horizon infrastructure into space. He founded Blue Origin in 2000 to lower the cost and improve the safety of spaceflight, with reusable launch vehicles at the centre of its approach. The venture extended his engineering interests beyond digital commerce towards building a durable route to space for future generations.</p>\r\n",
-    "word_count": 120,
+    "plain_text": "In 1994, Jeff Bezos left quantitative finance to build an online bookshop, choosing books because their vast catalogue suited a searchable web database. Amazon grew from that focused idea into a technology platform spanning commerce, devices and cloud computing. Bezos led the company as chief executive before becoming executive chair.\n\nBezos founded Blue Origin in 2000 around the goal of making spaceflight safer, cheaper and more routine. Its engineering programme centres on reusable launch vehicles designed to reduce the cost of reaching space. That work now includes reusable launch systems, lunar landers and in-space mobility systems.",
+    "html": "<p>In 1994, Jeff Bezos left quantitative finance to build an online bookshop, choosing books because their vast catalogue suited a searchable web database. Amazon grew from that focused idea into a technology platform spanning commerce, devices and cloud computing. Bezos led the company as chief executive before becoming executive chair.</p>\r\n<p>Bezos founded Blue Origin in 2000 around the goal of making spaceflight safer, cheaper and more routine. Its engineering programme centres on reusable launch vehicles designed to reduce the cost of reaching space. That work now includes reusable launch systems, lunar landers and in-space mobility systems.</p>\r\n",
+    "word_count": 96,
     "confidence": {
-      "score": 99,
+      "score": 98,
       "band": "very_high",
-      "reason": "Princeton documents the education, finance career, Internet insight and online-bookshop formation, while Amazon, the SEC and Blue Origin support Amazon's expansion, Blue Origin's founding and its reusable-spaceflight mission."
+      "reason": "Princeton and Bezos's direct congressional account support the Amazon decision and book-catalogue rationale; current Amazon and SEC sources support his leadership progression; official Blue Origin material supports its founding purpose, reusability and present engineering programmes."
     },
     "source_ids": [
-      "S1",
       "S2",
       "S3",
       "S4",
       "S5",
-      "S6"
+      "S6",
+      "S11"
     ]
   },
   "proposed_details": [
@@ -220,23 +247,24 @@
       "field": "place_of_birth",
       "value": "Albuquerque, New Mexico",
       "confidence": {
-        "score": 98,
+        "score": 99,
         "band": "very_high",
-        "reason": "The Academy of Achievement's detailed biographical profile records Albuquerque, New Mexico, as his birthplace and matches his full identity and 12 January 1964 birth date."
+        "reason": "The Academy of Achievement records Albuquerque, New Mexico, as his birthplace, and Bezos's congressional statement independently identifies Albuquerque as where his mother had him."
       },
       "source_ids": [
-        "S7"
+        "S7",
+        "S11"
       ]
     },
     {
       "action": "correct_existing",
       "field": "biography",
       "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Jeff_Bezos\">Jeffrey Preston Bezos</a>, an American entrepreneur, media mogul, investor, computer engineer, and commercial astronaut, was born on January 12, 1964. He is the founder and executive chairman of <a href=\"https://en.wikipedia.org/wiki/Amazon_(company)\">Amazon</a>, where he formerly served as president and chief executive officer. According to Forbes and Bloomberg&#39;s Billionaires Index, he is the world&#39;s wealthiest individual, with a net worth of roughly US$200 billion as of December 2021.</p>\r\n",
-      "value": "<p>Jeff Bezos is an American technology entrepreneur who studied electrical engineering and computer science at Princeton, then worked in finance before launching an online bookshop. He scaled Amazon into a broader commerce and cloud-computing platform and later founded Blue Origin, pursuing reusable spaceflight as a route to wider access to space.</p>\r\n",
+      "value": "<p>Jeff Bezos left quantitative finance in 1994 to found Amazon as an online bookshop. He expanded the company into a technology platform spanning commerce, devices and cloud computing, creating his self-made fortune. Bezos remains Amazon's executive chair and also founded Blue Origin, which develops reusable systems for access to space.</p>\r\n",
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The replacement removes embedded links and dated ranking and valuation language, corrects the existing biography with current roles and focuses on the durable, strongly sourced founder route."
+        "reason": "The replacement removes embedded links, dated ranking and valuation language, and supplies a durable account of the founder route, current Amazon role and one distinguishing secondary enterprise."
       },
       "source_ids": [
         "S1",
@@ -253,11 +281,11 @@
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/jeff-bezos/",
-      "verification": "The dedicated current profile exactly matches Bezos's identity, Amazon source of wealth, founder and executive-chair roles, United States citizenship, Princeton education and Blue Origin ownership; type ID 11 is copied from the owner input lookup.",
+      "verification": "The dedicated current profile exactly matches Bezos's identity, Amazon source of wealth, founder and executive-chair roles, United States citizenship, Princeton education and Blue Origin ownership. Type ID 11 is copied from the owner input lookup.",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "This is the exact current Forbes person profile for Jeff Bezos."
+        "reason": "This is Forbes's exact current person profile for Jeff Bezos."
       },
       "source_ids": [
         "S1"
@@ -266,15 +294,30 @@
     {
       "type_id": "14",
       "type": "Company Website",
-      "url": "https://ir.aboutamazon.com/officers-and-directors/person-details/default.aspx?ItemId=f9760835-5c29-49ac-a291-9d7f420c8cdc",
-      "verification": "Amazon's investor-relations site presents the official executive biography for Jeffrey P. Bezos and identifies him as Amazon's founder and executive chair; type ID 14 is copied from the owner input lookup.",
+      "url": "https://ir.aboutamazon.com/officers-and-directors/person-details/default.aspx?PersonId=19954",
+      "verification": "Amazon's investor-relations site presents its official executive biography for Jeff Bezos and identifies him as Amazon's founder and executive chair. Type ID 14 is copied from the owner input lookup.",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "This is Bezos's official leadership page on Amazon's corporate investor-relations domain."
+        "reason": "This is Bezos's official leadership page on the corporate site of the company he founded and continues to chair."
       },
       "source_ids": [
         "S2"
+      ]
+    },
+    {
+      "type_id": "3",
+      "type": "Twitter",
+      "url": "https://x.com/JeffBezos",
+      "verification": "The Bezos Expeditions website directly labels and links @JeffBezos, while an SEC-hosted company announcement independently identifies Bezos Expeditions as Jeff Bezos's investment arm. Type ID 3 is copied from the owner input lookup.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "A personally attributed investment-office website links the exact account, and its relationship to Bezos is independently documented in an SEC-hosted filing."
+      },
+      "source_ids": [
+        "S9",
+        "S10"
       ]
     }
   ],
@@ -303,20 +346,18 @@
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "Exact identity",
-        "Verified Forbes profile",
+        "Exact identity and verified current Forbes profile",
         "Amazon as source of wealth",
         "Self-made classification",
         "Amazon founder and executive-chair roles",
-        "United States citizenship",
-        "Princeton education",
+        "United States citizenship and Princeton education",
         "Blue Origin ownership"
       ]
     },
     {
       "id": "S2",
-      "url": "https://ir.aboutamazon.com/officers-and-directors/person-details/default.aspx?ItemId=f9760835-5c29-49ac-a291-9d7f420c8cdc",
-      "title": "Jeffrey P. Bezos, Executive Chair",
+      "url": "https://ir.aboutamazon.com/officers-and-directors/person-details/default.aspx?PersonId=19954",
+      "title": "Jeff Bezos, Executive Chair",
       "publisher": "Amazon",
       "tier": 1,
       "accessed_at": "2026-07-28",
@@ -326,7 +367,8 @@
         "Amazon founding in 1994",
         "Amazon's commerce, devices and cloud-computing activities",
         "Blue Origin founder",
-        "Princeton electrical-engineering and computer-science degree"
+        "Princeton electrical-engineering and computer-science degree",
+        "Official company leadership URL"
       ]
     },
     {
@@ -338,10 +380,11 @@
       "accessed_at": "2026-07-28",
       "supports": [
         "Jeffrey P. Bezos exact identity",
-        "Amazon founder and executive-chair roles",
+        "Amazon founder and current executive-chair roles",
         "Board chair since the company's founding",
+        "Chief-executive tenure ending in 2021",
         "Founder relationship to Blue Origin",
-        "Continuing Amazon leadership"
+        "Current co-chief-executive role at Project Prometheus disclosed in 2026"
       ]
     },
     {
@@ -353,12 +396,11 @@
       "accessed_at": "2026-07-28",
       "supports": [
         "Princeton electrical-engineering and computer-science education",
-        "1986 graduation",
         "Finance and quantitative-investment work before Amazon",
         "D.E. Shaw career",
         "Internet-growth insight",
         "Amazon founding in 1994",
-        "Online business model"
+        "Information-rich online business model"
       ]
     },
     {
@@ -385,11 +427,11 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "Jeff Bezos connection to Blue Origin",
-        "Spaceflight mission for the benefit of Earth",
-        "Lowering the cost of access to space",
-        "Reusable launch-vehicle approach",
-        "Long-horizon future-generations vision"
+        "Jeff Bezos association with Blue Origin",
+        "Reducing the cost of access to space",
+        "Reusable launch-vehicle architecture",
+        "Human-spaceflight safety objective",
+        "Current launch, lunar and in-space mobility systems"
       ]
     },
     {
@@ -421,20 +463,63 @@
         "Direct official link to a post on the @jeffbezos Instagram account",
         "Corrected Instagram candidate"
       ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.bezosexpeditions.com/",
+      "title": "Bezos Expeditions",
+      "publisher": "Bezos Expeditions",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Selected private investments associated with Bezos Expeditions",
+        "Direct link labelled Follow @JeffBezos",
+        "Direct links to Blue Origin and Bezos-linked institutions"
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925045373/tm2514304d1_ex99-1.htm",
+      "title": "Nebius welcomes Bezos Expeditions as lead investor in AI data business Toloka",
+      "publisher": "Nebius Group via U.S. Securities and Exchange Commission",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Bezos Expeditions as the investment arm of Jeff Bezos",
+        "Independent identity attribution for the Bezos Expeditions website",
+        "Identity verification chain for @JeffBezos"
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://docs.house.gov/meetings/JU/JU05/20200729/110883/HHRG-116-JU05-Wstate-BezosJ-20200729.pdf",
+      "title": "Statement by Jeffrey P. Bezos",
+      "publisher": "U.S. House Committee on the Judiciary",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Direct first-person identity",
+        "Albuquerque birth context",
+        "Princeton education and D.E. Shaw employment",
+        "Decision to leave investment work",
+        "Selection of books for an online shop",
+        "Early Amazon formation and founder route"
+      ]
     }
   ],
   "uncertainties": [
     "Amazon spans retail, logistics, devices, entertainment and cloud computing. Technology is used because the core wealth source is the founder stake in a technology-enabled commerce and cloud platform, not because every Amazon division is purely technological.",
     "Current Amazon shareholdings can change through transactions and gifts. The biographies and brief therefore describe the durable founder relationship without using a current percentage.",
-    "The Albuquerque birthplace is strongly supported by a detailed biographical organisation and agrees with established public records, but no civil birth record was located.",
+    "Amazon's 2026 proxy identifies Bezos as co-chief executive of Project Prometheus from November 2025. The role was rechecked as current but omitted from the biographies because it is newly established and Blue Origin is the one durable secondary dimension selected for this profile.",
     "The existing Instagram URL is malformed as https://www.instagram.com/jeffbezo. The review candidate adds the missing final 's' and is corroborated by Blue Origin's direct link to a post on the corrected account.",
     "No second nationality was established in strong sources, so secondary nationality remains blank.",
-    "No identity-verified personal LinkedIn, Facebook, YouTube, TikTok or dedicated personal website met the verification threshold. The official Amazon leadership page is proposed separately as a Company Website.",
+    "No identity-verified personal LinkedIn, Facebook, YouTube or TikTok account met the verification threshold. The hoo.be landing page was not proposed as a Personal Website because its ownership and permanence were not independently established.",
+    "Bezos Expeditions is treated as an investment-office company site and used to verify @JeffBezos; it was not proposed as a Personal Website. Amazon's official leadership page is the single Company Website proposal.",
     "The existing Wikipedia link resolves to the correct person and was not duplicated.",
-    "Blank suffix and secondary-residence fields were treated as optional; blank age, death, internal-note and unknown-name fields remain inapplicable or system-managed."
+    "Suffix and secondary residence remain optional; age, death, internal-note and unknown-name fields remain inapplicable or system-managed for a living person."
   ],
   "review": {
     "status": "pending",
-    "notes": "The identity, founder route and current Amazon role are authoritative. Review the corrected Instagram candidate and the Technology classification for Amazon's mixed operating model before approval."
+    "notes": "Identity, the Technology / Self-made / Founder classifications and current Amazon executive-chair role are authoritative. Review should confirm the corrected Instagram candidate and the X verification chain through Bezos Expeditions before approval."
   }
 }

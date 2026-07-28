@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 135,
@@ -7,7 +7,7 @@
     "identity_confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The exact name, Qatari identity, Doha birth, current Amir role, education, armed-forces formation and 2013 succession align across current official profiles and independent reporting."
+      "reason": "The exact official identity, Qatari nationality, Doha birth, education, armed-forces formation and succession align across current Qatari government profiles, a July 2026 UK government readout and independent reporting."
     }
   },
   "input_snapshot": {
@@ -73,23 +73,42 @@
   },
   "research_status": "complete",
   "biography_brief": {
-    "durable_identity": "Sheikh Tamim bin Hamad Al Thani is Qatar's Amir, head of state and supreme commander.",
-    "wealth_or_prominence_route": "Education in Britain and training at Sandhurst led into the armed forces, heir-apparent duties and responsibility for councils spanning education, health and national planning.",
-    "turning_point": "A planned transfer of power from his father made him Amir in 2013.",
-    "later_chapter": "His reign has combined national development with an international role built around diplomacy, mediation and global convening.",
-    "character_detail": "Long involvement in the Olympic movement, promotion of public participation and enthusiasm for tennis and traditional Qatari sports give his public work a distinctive sporting thread.",
+    "durable_identity": "Sheikh Tamim bin Hamad Al Thani is the Amir of Qatar, its head of state and commander-in-chief.",
+    "defining_work": "His public leadership combines national development with an international role centred on diplomacy, dialogue and mediation.",
+    "formative_context": "Education at Sherborne School and the Royal Military Academy Sandhurst preceded armed-forces service and responsibility for bodies spanning education, health and national planning.",
+    "decisive_moment": "A planned transfer of power from his father made Tamim Amir in 2013 after a decade as heir apparent.",
+    "enduring_dimensions": [
+      "Implementation of Qatar's long-term national development programme",
+      "Diplomacy, dialogue and mediation as durable instruments of statecraft",
+      "Olympic involvement and the place of sport in public life"
+    ],
+    "character_detail": "His official biography identifies tennis, falconry and sports tied to Qatari and Arab heritage among his continuing interests.",
+    "opening_options": [
+      {
+        "mode": "public_contribution",
+        "angle": "Use mediation to establish a defining instrument of Tamim's work as Amir."
+      },
+      {
+        "mode": "present_identity",
+        "angle": "Begin with his current responsibilities as Qatar's head of state and commander-in-chief."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Open on the planned transfer of power that ended his decade as heir apparent."
+      }
+    ],
     "excluded_transient_context": [
-      "Current asset ownership and cohort ranking",
-      "Current wealth estimates, sovereign-portfolio figures and sporting-event results",
-      "Current geopolitical disputes and unrequested controversy"
+      "Current and historical vessel ownership, vessel names, dimensions and LOA ranking",
+      "Current net-worth estimates, family-fortune totals and property valuations",
+      "Qatar Investment Authority portfolio figures and other sovereign assets",
+      "Short-lived geopolitical developments, current disputes and event results"
     ],
     "source_ids": [
       "S1",
       "S2",
-      "S4",
-      "S5",
-      "S6",
-      "S11"
+      "S7",
+      "S8",
+      "S9"
     ]
   },
   "editorial_assessment": {
@@ -98,10 +117,14 @@
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "public_contribution",
+    "narrative_shape": "core_work_deepened",
     "calibration_archetypes": [
       "royal_public_office"
     ],
-    "notes": "The biographies move from formation through succession into statecraft, then use sport as a personal and durable parallel thread. Asset-classification reasoning remains outside the published prose."
+    "notes": "The long profile varies the calibration by opening on mediation, then deepens the public-role portrait through constitutional responsibility, formation, succession and a concrete sporting institution. Private-wealth classification and sovereign-asset boundaries remain outside the prose."
   },
   "editorial_note": null,
   "forbes_profile": {
@@ -110,137 +133,135 @@
     "confidence": {
       "score": 98,
       "band": "very_high",
-      "reason": "Focused exact-name and site:forbes.com/profile searches found current Forbes reporting about Tamim, but no dedicated Forbes person profile."
+      "reason": "Focused exact-name and site:forbes.com/profile searches found Forbes reporting about Tamim but no dedicated Forbes person profile."
     }
   },
   "primary_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Reliable reporting identifies some personal and family-held property but does not establish a dominant private wealth-producing sector for Tamim; QIA holds and manages state assets.",
+    "summary": "Public evidence identifies personal residential property and wider family holdings but does not establish a dominant sector underpinning Tamim's private wealth; Qatar Investment Authority manages state reserve assets.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "QIA explicitly defines its portfolio as state reserve assets, while Forbes, Reuters and Bloomberg distinguish individually held, family and state property without identifying a dominant private operating sector for Tamim."
+      "reason": "QIA expressly defines its portfolio as state reserve assets, while Forbes, Reuters and Bloomberg distinguish personally attributed, family and sovereign holdings without establishing a dominant private operating sector for Tamim."
     },
     "source_ids": [
       "S3",
-      "S7",
-      "S8",
-      "S9"
+      "S4",
+      "S5",
+      "S6"
     ]
   },
   "wealth_origin": {
     "classification": "dynastic_royal",
     "label": "Dynastic / royal",
-    "summary": "His access to personal and family wealth follows his position in Qatar's ruling Al Thani dynasty and the succession from his father.",
+    "summary": "His access to the relevant personal and family wealth follows membership of Qatar's ruling Al Thani dynasty and succession from his father.",
     "confidence": {
       "score": 98,
       "band": "very_high",
-      "reason": "Official profiles establish the dynastic father-to-son succession, while Reuters and Bloomberg document private and family-held assets associated with the ruling family."
+      "reason": "Official profiles establish the hereditary father-to-son succession, while Reuters and Bloomberg document private and family-held assets associated with the ruling family."
     },
     "source_ids": [
       "S1",
-      "S2",
-      "S8",
-      "S9"
+      "S5",
+      "S6"
     ]
   },
   "wealth_relationship": {
     "classification": "royal_beneficiary",
     "label": "Royal beneficiary",
-    "summary": "Public reporting attributes personal residential property and family-linked holdings to Tamim; royal beneficiary is the closest fit for that privately attributable wealth.",
+    "summary": "Public reporting attributes personal property and access to wider family holdings to Tamim through his position within the Al Thani ruling dynasty.",
     "confidence": {
       "score": 89,
       "band": "high",
-      "reason": "Forbes confirms a personally owned residence, Reuters identifies private property held by the current Amir among his father's children, and Bloomberg documents the wider family fortune without establishing a clearer private operating role."
+      "reason": "Forbes attributes a residence directly to Tamim, Reuters distinguishes private properties held by the current Amir from state assets, and Bloomberg documents the wider family fortune without establishing a more specific private operating relationship."
     },
     "source_ids": [
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "biography": {
+    "plain_text": "Sheikh Tamim bin Hamad Al Thani is Qatar’s Amir, head of state and commander-in-chief. Educated at Sherborne and Sandhurst, he served in the armed forces and held responsibility for education, health and national planning before succeeding his father. His public work has emphasised long-term development, international mediation and sport as an instrument of national engagement.",
+    "html": "<p>Sheikh Tamim bin Hamad Al Thani is Qatar’s Amir, head of state and commander-in-chief. Educated at Sherborne and Sandhurst, he served in the armed forces and held responsibility for education, health and national planning before succeeding his father. His public work has emphasised long-term development, international mediation and sport as an instrument of national engagement.</p>\r\n",
+    "word_count": 55,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Current official and independent government material establishes Tamim's office and mediation work, while official Qatari and IOC sources support his formation, succession, development responsibilities and sporting role."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
       "S7",
       "S8",
       "S9"
     ]
   },
-  "biography": {
-    "plain_text": "Qatar's Amir, Sheikh Tamim bin Hamad Al Thani, trained at Sandhurst and served in the armed forces before becoming heir apparent and succeeding his father. His statecraft combines long-term national development with diplomacy and mediation. Longstanding involvement in the Olympic movement and enthusiasm for tennis have made sport a distinctive strand of his public life.",
-    "html": "<p>Qatar's Amir, Sheikh Tamim bin Hamad Al Thani, trained at Sandhurst and served in the armed forces before becoming heir apparent and succeeding his father. His statecraft combines long-term national development with diplomacy and mediation. Longstanding involvement in the Olympic movement and enthusiasm for tennis have made sport a distinctive strand of his public life.</p>\r\n",
-    "word_count": 55,
-    "confidence": {
-      "score": 97,
-      "band": "very_high",
-      "reason": "Current official profiles establish his formation, succession and development role; official Olympic material and current Amiri Diwan content support the durable sporting interest; official and independent sources support the diplomacy and mediation theme."
-    },
-    "source_ids": [
-      "S1",
-      "S2",
-      "S4",
-      "S5",
-      "S6",
-      "S11"
-    ]
-  },
   "long_biography": {
-    "plain_text": "Before taking the throne, Sheikh Tamim bin Hamad Al Thani moved from British schooling into military and civic responsibility. A Sandhurst graduate, he joined Qatar's armed forces, became heir apparent and chaired councils for education, health and national planning. A planned transfer of power from his father made him Amir in 2013.\n\nThat broad apprenticeship carried into a reign centred on national development and international reach. Diplomacy and mediation became prominent instruments of Qatari statecraft. Sport provided a parallel thread: as a longtime International Olympic Committee member, Tamim promoted public participation and helped develop Qatar as a global host. His continuing enthusiasm for tennis and traditional Qatari sports gives the public strategy a personal dimension.",
-    "html": "<p>Before taking the throne, Sheikh Tamim bin Hamad Al Thani moved from British schooling into military and civic responsibility. A Sandhurst graduate, he joined Qatar's armed forces, became heir apparent and chaired councils for education, health and national planning. A planned transfer of power from his father made him Amir in 2013.</p>\r\n<p>That broad apprenticeship carried into a reign centred on national development and international reach. Diplomacy and mediation became prominent instruments of Qatari statecraft. Sport provided a parallel thread: as a longtime International Olympic Committee member, Tamim promoted public participation and helped develop Qatar as a global host. His continuing enthusiasm for tennis and traditional Qatari sports gives the public strategy a personal dimension.</p>\r\n",
-    "word_count": 115,
+    "plain_text": "Mediation has become one of Sheikh Tamim bin Hamad Al Thani’s defining instruments as Amir of Qatar. As head of state and commander-in-chief, he represents the country abroad while directing national priorities at home. Qatar’s diplomatic role under his rule has centred on dialogue and negotiated settlement, alongside continued implementation of its long-term development programme.\n\nTamim was educated at Sherborne School and the Royal Military Academy Sandhurst before joining Qatar’s armed forces. He became heir apparent in 2003, chaired bodies spanning education, health and national planning, and succeeded his father ten years later. Elected to the International Olympic Committee in 2002, he also oversaw the launch of National Sports Day, making sport a recurring fixture of public life in Qatar.",
+    "html": "<p>Mediation has become one of Sheikh Tamim bin Hamad Al Thani’s defining instruments as Amir of Qatar. As head of state and commander-in-chief, he represents the country abroad while directing national priorities at home. Qatar’s diplomatic role under his rule has centred on dialogue and negotiated settlement, alongside continued implementation of its long-term development programme.</p>\r\n<p>Tamim was educated at Sherborne School and the Royal Military Academy Sandhurst before joining Qatar’s armed forces. He became heir apparent in 2003, chaired bodies spanning education, health and national planning, and succeeded his father ten years later. Elected to the International Olympic Committee in 2002, he also oversaw the launch of National Sports Day, making sport a recurring fixture of public life in Qatar.</p>\r\n",
+    "word_count": 120,
     "confidence": {
       "score": 97,
       "band": "very_high",
-      "reason": "Official Qatari and Olympic sources support the full formation, succession, council, mediation and sport narrative, with Reuters independently corroborating his preparation for power and the diplomatic and sporting route."
+      "reason": "Current official profiles and a July 2026 UK government readout support the present office and mediation emphasis; Qatari, Reuters and IOC material corroborates the formation, succession, council responsibilities, Olympic election and National Sports Day."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S4",
-      "S5",
-      "S6",
-      "S11"
+      "S7",
+      "S8",
+      "S9"
     ]
   },
   "proposed_details": [
     {
       "field": "known_for_title",
-      "action": "fill_missing",
       "value": "Amir of the State of Qatar",
-      "confidence": {
-        "score": 100,
-        "band": "very_high",
-        "reason": "The current official Amiri Diwan and International Media Office profiles identify Sheikh Tamim as the Amir of the State of Qatar."
-      },
-      "source_ids": [
-        "S1",
-        "S2"
-      ]
-    },
-    {
-      "field": "place_of_birth",
       "action": "fill_missing",
-      "value": "Doha",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "The current official Amiri Diwan biography states that he was born in Doha."
-      },
-      "source_ids": [
-        "S1"
-      ]
-    },
-    {
-      "field": "biography",
-      "action": "correct_existing",
-      "existing_value": "<p>Qatar&#39;s Emir is <a href=\"https://en.wikipedia.org/wiki/Tamim_bin_Hamad_Al_Thani\">Sheikh Tamim bin Hamad Al Thani</a>. He is the fourth son of <a href=\"https://en.wikipedia.org/wiki/Hamad_bin_Khalifa_Al_Thani\">Hamad bin Khalifa</a>, the previous Emir. Since his father abdicated the throne in 2013, he has been the monarch of Qatar. Since his older brother, <a href=\"https://en.wikipedia.org/wiki/Jassim_bin_Hamad_bin_Khalifa_Al_Thani\">Sheikh Jassim</a>, relinquished his claim to the throne in 2003, <a href=\"https://en.wikipedia.org/wiki/Tamim_bin_Hamad_Al_Thani\">Tamim</a> has been the heir apparent.</p>\r\n",
-      "value": "<p>Qatar's Amir, Sheikh Tamim bin Hamad Al Thani, trained at Sandhurst and served in the armed forces before becoming heir apparent and succeeding his father. His statecraft combines long-term national development with diplomacy and mediation. Longstanding involvement in the Olympic movement and enthusiasm for tennis have made sport a distinctive strand of his public life.</p>\r\n",
-      "confidence": {
-        "score": 97,
-        "band": "very_high",
-        "reason": "The replacement removes embedded links and the obsolete statement that Tamim remains heir apparent, then gives a durable, current account of formation, succession, statecraft and sport."
+        "reason": "Current Qatari government profiles and the 27 July 2026 UK government readout identify Sheikh Tamim as the Amir of Qatar."
       },
       "source_ids": [
         "S1",
         "S2",
-        "S4",
-        "S5",
-        "S6",
-        "S11"
+        "S9"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Doha",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The current Amiri Diwan biography and the IOC biography both state that Tamim was born in Doha."
+      },
+      "source_ids": [
+        "S1",
+        "S8"
+      ]
+    },
+    {
+      "field": "biography",
+      "existing_value": "<p>Qatar&#39;s Emir is <a href=\"https://en.wikipedia.org/wiki/Tamim_bin_Hamad_Al_Thani\">Sheikh Tamim bin Hamad Al Thani</a>. He is the fourth son of <a href=\"https://en.wikipedia.org/wiki/Hamad_bin_Khalifa_Al_Thani\">Hamad bin Khalifa</a>, the previous Emir. Since his father abdicated the throne in 2013, he has been the monarch of Qatar. Since his older brother, <a href=\"https://en.wikipedia.org/wiki/Jassim_bin_Hamad_bin_Khalifa_Al_Thani\">Sheikh Jassim</a>, relinquished his claim to the throne in 2003, <a href=\"https://en.wikipedia.org/wiki/Tamim_bin_Hamad_Al_Thani\">Tamim</a> has been the heir apparent.</p>\r\n",
+      "value": "<p>Sheikh Tamim bin Hamad Al Thani is Qatar’s Amir, head of state and commander-in-chief. Educated at Sherborne and Sandhurst, he served in the armed forces and held responsibility for education, health and national planning before succeeding his father. His public work has emphasised long-term development, international mediation and sport as an instrument of national engagement.</p>\r\n",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The replacement removes embedded links and the obsolete claim that Tamim remains heir apparent, then gives a current, durable account of his office, formation and public work."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S7",
+        "S8",
+        "S9"
       ]
     }
   ],
@@ -248,33 +269,31 @@
     {
       "type_id": "3",
       "type": "Twitter",
-      "url": "https://x.com/TamimBinHamad",
-      "verification": "The Amiri Diwan launched @TamimBinHamad as the Amir's official account and currently embeds posts from the same handle on its official homepage. Type ID 3 is copied from the owner input lookup.",
+      "url": "https://twitter.com/tamimbinhamad",
+      "verification": "The current Amiri Diwan biography lists @TamimBinHamad under the Amir's official social-media accounts and links the exact profile. Type ID 3 is copied from the owner input lookup.",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "The exact handle is directly verified and currently used by the Amir's official office."
+        "reason": "The account is directly linked as official by the Amir's current government biography."
       },
       "source_ids": [
-        "S10",
-        "S11",
-        "S12"
+        "S1",
+        "S10"
       ]
     },
     {
       "type_id": "9",
       "type": "Instagram",
-      "url": "https://www.instagram.com/tamim/",
-      "verification": "The Peninsula and Qatar Tribune independently identified @tamim as Sheikh Tamim's official Instagram account at launch, and the canonical URL remains assigned to that identity. Type ID 9 is copied from the owner input lookup.",
+      "url": "https://www.instagram.com/tamim",
+      "verification": "The current Amiri Diwan biography lists @Tamim under the Amir's official social-media accounts and links the exact profile. Type ID 9 is copied from the owner input lookup.",
       "confidence": {
-        "score": 94,
-        "band": "high",
-        "reason": "Two established publications independently attributed the exact account to the Amir, with the direct profile supplying the canonical URL."
+        "score": 100,
+        "band": "very_high",
+        "reason": "The account is directly linked as official by the Amir's current government biography."
       },
       "source_ids": [
-        "S13",
-        "S14",
-        "S15"
+        "S1",
+        "S11"
       ]
     }
   ],
@@ -282,39 +301,38 @@
   "sources": [
     {
       "id": "S1",
-      "url": "https://www.diwan.gov.qa/about-qatar/qatars-rulers/sheikh-tamim-bin-hamad-al-thani?sc_lang=en",
-      "title": "Sheikh Tamim Bin Hamad Al Thani",
+      "url": "https://www.diwan.gov.qa/hh-the-amir/biography?sc_lang=en",
+      "title": "Biography: Sheikh Tamim bin Hamad Al Thani",
       "publisher": "The Amiri Diwan of the State of Qatar",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "exact official identity",
-        "Amir of the State of Qatar title",
-        "3 June 1980 birth date",
-        "Doha birthplace",
+        "Exact official identity and current Amir title",
+        "Head-of-state and commander-in-chief responsibilities",
+        "3 June 1980 birth date and Doha birthplace",
         "Sherborne and Sandhurst education",
-        "Qatar armed-forces service",
-        "2003 heir-apparent appointment",
-        "2013-present reign",
-        "education, health and national-planning responsibilities",
-        "National Sports Day and public-participation interest",
-        "personal role in political dialogue",
-        "tennis and traditional Qatari sports interests"
+        "Armed-forces service and 2003 heir-apparent appointment",
+        "2013 planned transfer of power",
+        "Education, health and national-planning responsibilities",
+        "Qatar National Vision follow-up",
+        "Political dialogue and mediation",
+        "National Sports Day launch and personal sporting interests",
+        "Official Instagram and X account links"
       ]
     },
     {
       "id": "S2",
-      "url": "https://imo.gov.qa/state-of-qatar/his-highness-the-amir/",
+      "url": "https://imo.gov.qa/state-of-qatar/his-highness-the-amir",
       "title": "His Highness The Amir",
       "publisher": "International Media Office, State of Qatar",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "current Amir and head-of-state identity",
-        "planned 2013 transfer of power and pledge of allegiance",
+        "Current Amir, head-of-state and commander-in-chief identity",
+        "2013 transfer of power",
         "Sherborne and Sandhurst education",
         "2003 heir-apparent appointment",
-        "representation of Qatar in domestic and foreign affairs"
+        "Representation of Qatar in domestic and foreign settings"
       ]
     },
     {
@@ -326,86 +344,40 @@
       "accessed_at": "2026-07-28",
       "supports": [
         "QIA as the sovereign wealth fund of the State of Qatar",
-        "management of state reserve funds and assigned state assets",
+        "Management of state reserve funds and assigned state assets",
         "SCEAI acting on behalf of the state",
-        "QIA board and executive responsibility for investment decisions",
-        "Amir's official SCEAI chairmanship"
+        "Amir's official chairmanship of SCEAI",
+        "QIA board and executive responsibility for investment decisions"
       ]
     },
     {
       "id": "S4",
-      "url": "https://library.olympics.com/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=3023181&parentDocumentId=355502&skipCopyright=true&skipWatermark=true",
-      "title": "Biographies of All IOC Members",
-      "publisher": "International Olympic Committee",
-      "tier": 1,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "exact identity and Doha birth",
-        "Sherborne and Sandhurst education",
-        "armed-forces and succession chronology",
-        "election to the IOC in 2002",
-        "long involvement with Qatar's Olympic movement",
-        "promotion of sport's social role",
-        "Qatar's development as an international sporting host"
-      ]
-    },
-    {
-      "id": "S5",
-      "url": "https://news.trust.org/item/20130625055642-wq4m2",
-      "title": "New emir seen maintaining Qatar's role as power broker",
-      "publisher": "Reuters",
-      "tier": 2,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "exact identity and 2013 succession",
-        "Sherborne and Sandhurst education",
-        "armed-forces and heir-apparent preparation",
-        "early high-level diplomatic activity",
-        "diplomacy and sport as instruments of Qatar's international role",
-        "personal enthusiasm for tennis and sport"
-      ]
-    },
-    {
-      "id": "S6",
-      "url": "https://imo.gov.qa/priorities/foreign-policy/",
-      "title": "Qatar's Foreign Policy",
-      "publisher": "International Media Office, State of Qatar",
-      "tier": 1,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "diplomacy and dialogue as enduring foreign-policy principles",
-        "peaceful resolution of disputes",
-        "mediation as a sustained Qatari international role"
-      ]
-    },
-    {
-      "id": "S7",
-      "url": "https://www.forbes.com/sites/phoebeliu/2023/11/03/meet-jeff-bezos-new-neighbors-on-miamis-billionaires-bunker/",
-      "title": "Meet Jeff Bezos' New Neighbors On Miami's Billionaire's Bunker",
+      "url": "https://www.forbes.com/sites/phoebeliu/2024/04/03/jeff-bezos-just-bought-a-third-home-on-miamis-billionaires-bunker-here-are-his-neighbors/",
+      "title": "Jeff Bezos Just Bought A Third Home On Miami's Billionaire Bunker. Here Are His Neighbors",
       "publisher": "Forbes",
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "exact Sheikh Tamim identity",
-        "current Amir of Qatar role",
-        "personally attributed residential property"
+        "Exact Sheikh Tamim identity",
+        "Amir of Qatar role",
+        "Residential property attributed personally to Tamim"
       ]
     },
     {
-      "id": "S8",
+      "id": "S5",
       "url": "https://graphics.thomsonreuters.com/13/09/FRANCE-QATAR.pdf",
       "title": "France's Qatari Exception",
       "publisher": "Reuters",
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "distinction between Qatari state, sovereign-fund and ruling-family property",
-        "private French property held by the former Amir's children including the current Amir",
-        "layered ownership structures and limits on transparent asset allocation"
+        "Distinction between Qatari state, sovereign-fund and ruling-family property",
+        "Private French property held by the former Amir's children including the current Amir",
+        "Layered ownership structures and limits on transparent asset allocation"
       ]
     },
     {
-      "id": "S9",
+      "id": "S6",
       "url": "https://www.bloomberg.com/news/features/2024-04-13/richest-middle-east-families-qatar-s-al-thanis-use-150-billion-for-influence",
       "title": "A $150 Billion Fortune Bolsters Qatari Royals at Critical Moment",
       "publisher": "Bloomberg",
@@ -413,100 +385,127 @@
       "accessed_at": "2026-07-28",
       "supports": [
         "Tamim's position within the Al Thani ruling family",
-        "substantial family wealth",
-        "family wealth as distinct from one individual's transparent operating fortune",
-        "family use of investment, sport and diplomacy to build international influence"
+        "Substantial wider family wealth",
+        "Family wealth as distinct from one individual's transparent operating fortune",
+        "Family use of investment, sport and diplomacy to build international influence"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://news.trust.org/item/20130625055642-wq4m2",
+      "title": "New emir seen maintaining Qatar's role as power broker",
+      "publisher": "Reuters",
+      "tier": 2,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Exact identity and 2013 succession",
+        "Sherborne and Sandhurst education",
+        "Armed-forces and heir-apparent preparation",
+        "Early high-level diplomatic activity",
+        "Diplomacy and sport as instruments of Qatar's international role",
+        "Personal enthusiasm for tennis and sport"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://library.olympics.com/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=3023181&parentDocumentId=355502&skipCopyright=true&skipWatermark=true",
+      "title": "Biographies of All IOC Members",
+      "publisher": "International Olympic Committee",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Exact identity and Doha birth",
+        "Sherborne and Sandhurst education",
+        "Armed-forces and succession chronology",
+        "Election to the IOC in 2002",
+        "Longstanding Olympic involvement",
+        "Sport's growing public role in Qatar"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.gov.uk/government/news/pm-call-with-the-amir-of-qatar-26-july-2026",
+      "title": "PM call with the Amir of Qatar: 26 July 2026",
+      "publisher": "Prime Minister's Office, 10 Downing Street",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Current Amir of Qatar identity as of 27 July 2026",
+        "Continuing personal mediation efforts",
+        "Current international leadership role"
       ]
     },
     {
       "id": "S10",
-      "url": "https://www.diwan.gov.qa/en/briefing-room/news/general/hh-twitter-account",
-      "title": "HH The Amir launches his Account on Twitter",
-      "publisher": "The Amiri Diwan of the State of Qatar",
-      "tier": 1,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "@TamimBinHamad as the Amir's official account",
-        "exact social-profile identity"
-      ]
-    },
-    {
-      "id": "S11",
-      "url": "https://www.diwan.gov.qa/ar-QA/?sc_lang=en",
-      "title": "The Amiri Diwan of the State of Qatar",
-      "publisher": "The Amiri Diwan of the State of Qatar",
-      "tier": 1,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "current Amir identity and 2013 assumption of office",
-        "current embedded posts from @TamimBinHamad",
-        "continuing emphasis on dialogue and regional stability",
-        "continuing public and personal interest in tennis and sport"
-      ]
-    },
-    {
-      "id": "S12",
-      "url": "https://x.com/TamimBinHamad",
+      "url": "https://twitter.com/tamimbinhamad",
       "title": "Tamim bin Hamad (@TamimBinHamad)",
       "publisher": "X",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "canonical X profile URL"
+        "Canonical official X profile linked by the Amiri Diwan"
       ]
     },
     {
-      "id": "S13",
-      "url": "https://thepeninsulaqatar.com/article/14/02/2018/Emir-s-official-Instagram-handle-launched-on-NSD",
-      "title": "Emir's official Instagram handle launched on NSD",
-      "publisher": "The Peninsula",
-      "tier": 2,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "@tamim as Sheikh Tamim's official Instagram account",
-        "exact identity",
-        "account launch through a National Sports Day post"
-      ]
-    },
-    {
-      "id": "S14",
-      "url": "https://www.qatar-tribune.com/article/111678/FIRSTPAGE/Emir-39s-official-Instagram-account-launched",
-      "title": "Emir's official Instagram account launched",
-      "publisher": "Qatar Tribune",
-      "tier": 2,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "independent report of the Amir's official Instagram launch",
-        "exact Sheikh Tamim identity"
-      ]
-    },
-    {
-      "id": "S15",
-      "url": "https://www.instagram.com/tamim/",
+      "id": "S11",
+      "url": "https://www.instagram.com/tamim",
       "title": "Tamim bin Hamad Al Thani (@tamim)",
       "publisher": "Instagram",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "canonical Instagram profile URL"
+        "Canonical official Instagram profile linked by the Amiri Diwan"
       ]
     }
   ],
   "uncertainties": [
-    "Focused Forbes-profile searches found no dedicated profile for Sheikh Tamim. Forbes reporting does independently attribute a private residence to him, so the absence applies only to a dedicated person profile.",
-    "Qatar Investment Authority manages state reserve funds and assigned state assets. Tamim's SCEAI chairmanship is an official state role and does not establish personal ownership of QIA's portfolio.",
-    "Forbes and Reuters document individually attributed property, while Reuters and Bloomberg describe wider Al Thani family holdings. Those private and family assets remain distinct from each other and from sovereign assets.",
-    "No dominant privately held operating sector can be assigned to Tamim from the public record. Primary industry therefore remains Unknown; Energy is not inferred from Qatar's economy, natural resources or his public office.",
-    "Royal beneficiary describes Tamim's relationship to the personally and family-attributed assets. His stewardship of state institutions is separately custodial and is not used to classify his private wealth.",
-    "The existing biography is superseded because it continues to call Tamim heir apparent after his 2013 accession and relies on embedded Wikipedia links.",
-    "No reliable evidence established a secondary nationality, so that field remains blank.",
-    "The existing 3 June 1980 birth date, Qatari nationality, Qatar residence and Wikipedia link remain supported and were not duplicated in proposals.",
-    "The Amiri Diwan is the Amir's official office rather than a personal or company website, so it was not proposed under either website type.",
-    "No identity-verified personal LinkedIn, Facebook, YouTube, TikTok or separate personal website met the verification threshold.",
-    "Blank suffix and secondary-residence fields were treated as optional; blank death, age, internal-note and unknown-name fields remain inapplicable or system-managed."
+    {
+      "topic": "Forbes profile",
+      "detail": "Focused exact-name and site:forbes.com/profile searches found no dedicated profile for Sheikh Tamim. Forbes reporting does independently attribute residential property to him."
+    },
+    {
+      "topic": "Private and sovereign assets",
+      "detail": "Qatar Investment Authority manages state reserve funds and assigned state assets. Tamim's chairmanship of SCEAI is an official state role and does not establish personal ownership of QIA's portfolio."
+    },
+    {
+      "topic": "Primary industry",
+      "detail": "Forbes and Reuters document personally attributed property, while Reuters and Bloomberg describe wider Al Thani family holdings. No dominant private wealth-producing sector can be assigned to Tamim, so primary industry remains Unknown and Energy is not inferred."
+    },
+    {
+      "topic": "Wealth relationship",
+      "detail": "Royal beneficiary describes Tamim's relationship to personally and family-attributed assets. His stewardship of state institutions is kept separate and is not used to classify private wealth."
+    },
+    {
+      "topic": "Secondary nationality",
+      "detail": "No reliable evidence established a secondary nationality, so the field remains blank."
+    },
+    {
+      "topic": "Olympic role",
+      "detail": "The biography states the durable fact that Tamim was elected to the International Olympic Committee in 2002. It does not claim a current committee or executive position."
+    },
+    {
+      "topic": "Social accounts",
+      "detail": "The current Amiri Diwan biography directly verifies the proposed Instagram and X accounts. No identity-verified personal LinkedIn, Facebook, YouTube, TikTok or separate personal website met the threshold."
+    },
+    {
+      "topic": "Website links",
+      "detail": "The Amiri Diwan and International Media Office are official state websites rather than personal or company sites, so neither is proposed under a website type."
+    },
+    {
+      "topic": "Existing biography",
+      "detail": "The source biography is superseded because it continues to call Tamim heir apparent after his accession and uses embedded Wikipedia links."
+    },
+    {
+      "topic": "Optional and system fields",
+      "detail": "Blank suffix and secondary-residence fields remain optional; blank death, age, internal-note and unknown-name fields remain inapplicable or system-managed."
+    },
+    {
+      "topic": "Transient context",
+      "detail": "Vessel data, current wealth estimates, family-fortune totals, property valuations, sovereign-portfolio figures and short-lived geopolitical developments are excluded from the biographies."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": "Retain Unknown for primary industry and keep Dynastic / royal separate from Royal beneficiary. QIA, state assets, family holdings and personally attributed property must remain distinct; the biographies intentionally focus on formation, succession, statecraft, diplomacy and sport."
+    "notes": "Retain Unknown for primary industry and keep Dynastic / royal separate from Royal beneficiary. Preserve the distinction among QIA state assets, wider family holdings and personally attributed property; the biographies intentionally focus on formation, succession, national development, mediation and sport."
   }
 }

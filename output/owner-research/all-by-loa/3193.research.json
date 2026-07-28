@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 3193,
@@ -74,14 +74,33 @@
   "research_status": "complete",
   "biography_brief": {
     "durable_identity": "Alexey Alexandrovich Mordashov is a Russian industrialist, chairman and majority shareholder of steelmaker Severstal.",
-    "wealth_or_prominence_route": "He advanced from economist to finance director at the Cherepovets steel mill, then acquired employee shares during privatisation and built control of the reorganised Severstal.",
-    "turning_point": "Investment funds created under his direction purchased workers' shares, converting a finance mandate into a controlling ownership position.",
-    "later_chapter": "The Way Home charitable foundation, created on his initiative, supports vulnerable families and children and develops talented pupils and teachers.",
-    "character_detail": "Both parents worked at the Cherepovets mill, and he returned to the same industrial community after studying economics in Leningrad.",
+    "defining_work": "He acquired control of the Cherepovets steel mill during privatisation and led its reorganisation into the vertically integrated Severstal group.",
+    "formative_context": "Both parents worked at the Cherepovets mill, and he returned to the same industrial community after studying economics in Leningrad.",
+    "decisive_moment": "Investment funds created under his direction purchased employee shares, converting a finance mandate into a controlling ownership position.",
+    "enduring_dimensions": [
+      "Nineteen years of direct operating leadership",
+      "Modernisation, vertical integration and expansion of Severstal",
+      "Continuing board governance and civic work in Cherepovets"
+    ],
+    "character_detail": "He built his career at the same mill where his parents had worked, moving from economist to finance director and then chief executive.",
+    "opening_options": [
+      {
+        "mode": "decisive_event",
+        "angle": "Use Severstal's privatisation to establish the change from finance director to controlling shareholder."
+      },
+      {
+        "mode": "institution_or_asset",
+        "angle": "Lead with Severstal as the steel group Mordashov acquired, reorganised and governed."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Open with his return to the Cherepovets mill where both parents had worked."
+      }
+    ],
     "excluded_transient_context": [
       "Current or historical vessel ownership, names and LOA ranking",
       "Current net worth, shareholding percentages and wealth rankings",
-      "Regulatory, political, sanctions, allegation and crime context",
+      "Political and legal controversy",
       "Current asset-transfer and voting-right disputes",
       "Short-lived corporate performance and valuation figures"
     ],
@@ -100,11 +119,15 @@
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "decision_then_consequence",
     "calibration_archetypes": [
-      "founder_operator",
+      "acquirer_consolidator",
       "investor_philanthropist"
     ],
-    "notes": "The profile follows Mordashov from a mill-worker family and economics training through Severstal's privatisation and industrial expansion, then uses the Way Home foundation as a durable civic chapter without vessel, ranking, current-value or controversy material."
+    "notes": "The long profile opens on the ownership-changing privatisation, moves back to Mordashov's mill background, and then deepens the operating, governance and civic consequences. It excludes vessel material, rankings, transient percentages and controversy."
   },
   "editorial_note": null,
   "forbes_profile": {
@@ -113,17 +136,17 @@
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The current dedicated Forbes profile matches Mordashov's Russian citizenship, birth year, mill-worker family, Severstal finance career, long chief-executive tenure, majority shareholding and self-made steel wealth."
+      "reason": "The current dedicated Forbes profile matches Mordashov's Russian citizenship, birth year, mill-worker family, Severstal finance career, nineteen-year chief-executive tenure, majority shareholding and self-made steel wealth."
     }
   },
   "primary_industry": {
     "classification": "metals_mining",
     "label": "Metals & Mining",
-    "summary": "Mordashov's wealth and operating career are principally associated with Severstal, the steel and mining group he acquired and led through privatisation and industrial expansion.",
+    "summary": "Mordashov's wealth and operating career remain principally associated with Severstal, the steel and mining group in which current Forbes and Bloomberg profiles identify him as the majority or largest shareholder.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Forbes assigns Metals & Mining and identifies steel and investments as the wealth source, while Bloomberg and company material establish Severstal as the central industrial asset."
+      "reason": "Forbes identifies steel and investments as the wealth source, while Bloomberg attributes the majority of the fortune to Severstal and current company material confirms the group's steel and mining activity."
     },
     "source_ids": [
       "S1",
@@ -138,7 +161,7 @@
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Forbes explicitly labels the wealth self-made, and Bloomberg, Severstal's annual report and detailed business reporting document the economist-to-share-acquisition route."
+      "reason": "Forbes explicitly labels the wealth self-made, and Bloomberg, Severstal's annual report and detailed business reporting document the economist-to-share-acquisition sequence."
     },
     "source_ids": [
       "S1",
@@ -150,51 +173,49 @@
   "wealth_relationship": {
     "classification": "operator",
     "label": "Operator",
-    "summary": "Mordashov acquired control of an existing steel mill, led Severstal as chief executive for nineteen years and remains its chairman and majority shareholder.",
+    "summary": "Mordashov acquired control of an existing steel mill, led Severstal as chief executive for nineteen years and remains its chairman and largest shareholder.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The current Forbes profile, Bloomberg biography and company records consistently establish the ownership route, long operating tenure and continuing chairmanship."
+      "reason": "Current Forbes and Bloomberg profiles establish the majority ownership and long chief-executive tenure, while current official Severstal material identifies him as board chairman."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S3",
       "S6"
     ]
   },
   "biography": {
-    "plain_text": "Alexey Mordashov is a Russian industrialist who joined the Cherepovets steel mill as an economist and became finance director during privatisation. Investment funds he created bought workers' shares, giving him control of the business that became Severstal. He later led its industrial expansion and initiated the Way Home foundation for children and families.",
-    "html": "<p>Alexey Mordashov is a Russian industrialist who joined the Cherepovets steel mill as an economist and became finance director during privatisation. Investment funds he created bought workers' shares, giving him control of the business that became Severstal. He later led its industrial expansion and initiated the Way Home foundation for children and families.</p>\r\n",
-    "word_count": 53,
+    "plain_text": "Alexey Mordashov is a Russian industrialist and the chairman and majority shareholder of steelmaker Severstal. He joined its Cherepovets mill as an economist, became finance director during privatisation and used investment funds to acquire workers' shares. As chief executive, he modernised and expanded the steel group before moving to board leadership.",
+    "html": "<p>Alexey Mordashov is a Russian industrialist and the chairman and majority shareholder of steelmaker Severstal. He joined its Cherepovets mill as an economist, became finance director during privatisation and used investment funds to acquire workers' shares. As chief executive, he modernised and expanded the steel group before moving to board leadership.</p>\r\n",
+    "word_count": 51,
     "confidence": {
       "score": 98,
       "band": "very_high",
-      "reason": "Forbes, Bloomberg and Severstal records establish the finance and privatisation route; BCG documents the industrial transformation, and the foundation's current site identifies Mordashov as its initiator."
+      "reason": "Current Forbes, Bloomberg and official Severstal material establish the chairmanship, majority ownership, finance and privatisation sequence, long operating tenure and later board leadership; BCG supports the industrial transformation."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
       "S4",
-      "S5"
+      "S6"
     ]
   },
   "long_biography": {
-    "plain_text": "Born to steel-mill workers in Cherepovets, Alexey Mordashov studied economics in Leningrad before returning home as an economist at the local works. He rose to finance director as the Soviet industrial system gave way to privatisation. Mordashov created investment funds that bought shares from employees, securing control of the newly reorganised Severstal. He later spent nineteen years as chief executive while expanding and modernising the steel group.\n\nHis later civic work grew from the same industrial community. Mordashov initiated the Way Home charitable foundation, which supports families in difficult circumstances, works to prevent family separation and juvenile offending, and helps talented children and teachers develop. The programme began in Cherepovets and expanded across other regions where Severstal operates.",
-    "html": "<p>Born to steel-mill workers in Cherepovets, Alexey Mordashov studied economics in Leningrad before returning home as an economist at the local works. He rose to finance director as the Soviet industrial system gave way to privatisation. Mordashov created investment funds that bought shares from employees, securing control of the newly reorganised Severstal. He later spent nineteen years as chief executive while expanding and modernising the steel group.</p>\r\n<p>His later civic work grew from the same industrial community. Mordashov initiated the Way Home charitable foundation, which supports families in difficult circumstances, works to prevent family separation and juvenile offending, and helps talented children and teachers develop. The programme began in Cherepovets and expanded across other regions where Severstal operates.</p>\r\n",
-    "word_count": 118,
+    "plain_text": "Severstal's privatisation transformed Alexey Mordashov from the Cherepovets steel mill's finance director into its controlling shareholder. Raised by parents who worked at the same mill, he returned after economics studies and became responsible for restructuring its finances. Investment funds created under his direction bought employee shares, giving him control of the newly reorganised company.\n\nAcross nineteen years as chief executive, Mordashov combined ownership with direct responsibility for modernising production and extending the group beyond its original plant. He made Severstal vertically integrated across steelmaking and mining before moving to board leadership. As chairman, he continues to oversee the company while supporting Cherepovets through long-running civic programmes.",
+    "html": "<p>Severstal's privatisation transformed Alexey Mordashov from the Cherepovets steel mill's finance director into its controlling shareholder. Raised by parents who worked at the same mill, he returned after economics studies and became responsible for restructuring its finances. Investment funds created under his direction bought employee shares, giving him control of the newly reorganised company.</p>\r\n<p>Across nineteen years as chief executive, Mordashov combined ownership with direct responsibility for modernising production and extending the group beyond its original plant. He made Severstal vertically integrated across steelmaking and mining before moving to board leadership. As chairman, he continues to oversee the company while supporting Cherepovets through long-running civic programmes.</p>\r\n",
+    "word_count": 106,
     "confidence": {
       "score": 98,
       "band": "very_high",
-      "reason": "Bloomberg and company records support the birthplace, education, economist role, finance promotion, privatisation and leadership tenure; the current foundation page directly supports the later family and child-development work."
+      "reason": "Bloomberg and company records support the mill background, finance role, privatisation, employee-share purchases and leadership tenure; BCG supports the industrial transformation, and current first-party sources establish the chairmanship and Cherepovets civic work."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
       "S4",
-      "S5",
       "S6"
     ]
   },
@@ -206,7 +227,7 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The current Forbes profile and current business biographies identify Mordashov as Severstal's chairman and majority shareholder."
+        "reason": "Current Forbes and Bloomberg profiles identify Mordashov as Severstal's majority or largest shareholder, and current official company material identifies him as chairman."
       },
       "source_ids": [
         "S1",
@@ -225,7 +246,7 @@
       },
       "source_ids": [
         "S2",
-        "S6"
+        "S9"
       ]
     },
     {
@@ -236,7 +257,7 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The current Forbes and Bloomberg profiles and the foundation's 2026 account document Mordashov's continuing business and civic activity."
+        "reason": "Current Forbes and Bloomberg profiles and the foundation's 2026 account document Mordashov's continuing business and civic activity."
       },
       "source_ids": [
         "S1",
@@ -247,19 +268,19 @@
     {
       "field": "biography",
       "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Alexei_Mordashov\">Alexey Alexandrovich Mordashov</a> is a Russian business magnate worth billions of dollars. <a href=\"https://en.wikipedia.org/wiki/Severstal\">Severstal</a>, a Russian company with holdings in metal, energy, and mining, has him as the majority shareholder and chairman.</p>\r\n",
-      "value": "<p>Alexey Mordashov is a Russian industrialist who joined the Cherepovets steel mill as an economist and became finance director during privatisation. Investment funds he created bought workers' shares, giving him control of the business that became Severstal. He later led its industrial expansion and initiated the Way Home foundation for children and families.</p>\r\n",
+      "value": "<p>Alexey Mordashov is a Russian industrialist and the chairman and majority shareholder of steelmaker Severstal. He joined its Cherepovets mill as an economist, became finance director during privatisation and used investment funds to acquire workers' shares. As chief executive, he modernised and expanded the steel group before moving to board leadership.</p>\r\n",
       "action": "correct_existing",
       "confidence": {
         "score": 98,
         "band": "very_high",
-        "reason": "The replacement adds the evidenced economist-to-privatisation route, long industrial leadership and durable civic chapter while removing embedded links and overly broad conglomerate wording."
+        "reason": "The replacement adds the evidenced economist-to-privatisation sequence and operating transformation while removing transient wealth wording, embedded links and overly broad conglomerate language."
       },
       "source_ids": [
         "S1",
         "S2",
         "S3",
         "S4",
-        "S5"
+        "S6"
       ]
     }
   ],
@@ -268,7 +289,7 @@
       "type_id": "10",
       "type": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Alexei_Mordashov",
-      "verification": "The canonical article's full name, birth details, Severstal chairmanship and ownership and economist-to-chief-executive route match stronger current and first-party sources.",
+      "verification": "The canonical article's full name, birth details, Severstal chairmanship and ownership and economist-to-chief-executive sequence match stronger current and first-party sources.",
       "confidence": {
         "score": 97,
         "band": "very_high",
@@ -284,7 +305,7 @@
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/alexey-mordashov/",
-      "verification": "The dedicated profile matches Mordashov's Russian citizenship, birth year, Severstal finance career, long chief-executive tenure, majority shareholding and steel wealth route.",
+      "verification": "The dedicated profile matches Mordashov's Russian citizenship, birth year, Severstal finance career, nineteen-year chief-executive tenure, majority shareholding and steel wealth.",
       "confidence": {
         "score": 99,
         "band": "very_high",
@@ -298,15 +319,16 @@
       "type_id": "14",
       "type": "Company Website",
       "url": "https://severstal.com/",
-      "verification": "This is Severstal's official corporate domain, and current sources identify Mordashov as the company's chairman and majority shareholder.",
+      "verification": "This is Severstal's official corporate domain, and current sources identify Mordashov as the company's chairman and majority or largest shareholder.",
       "confidence": {
         "score": 98,
         "band": "very_high",
-        "reason": "The official company URL matches Mordashov's principal operating asset and his current leadership relationship is independently verified."
+        "reason": "The official company URL matches Mordashov's principal operating asset, and his current ownership and governance relationship is strongly verified."
       },
       "source_ids": [
         "S1",
         "S2",
+        "S6",
         "S8"
       ]
     }
@@ -325,8 +347,8 @@
         "Russian citizenship and current living status",
         "Mill-worker family background",
         "Severstal finance-director career",
-        "Long chief-executive tenure",
-        "Current chairmanship and majority shareholding",
+        "Nineteen-year chief-executive tenure",
+        "Current majority shareholding",
         "Steel and investments as wealth source",
         "Self-made wealth origin"
       ]
@@ -345,8 +367,8 @@
         "Steel-mill economist role",
         "Finance-director promotion",
         "Privatisation and employee-share purchases",
-        "Severstal leadership and majority ownership",
-        "Metals and mining wealth route",
+        "Severstal leadership and current largest-shareholder status",
+        "Severstal as the principal current private asset",
         "Current living status"
       ]
     },
@@ -362,7 +384,8 @@
         "Severstal privatisation",
         "Share purchases through privatisation auctions and other transactions",
         "Majority ownership",
-        "Chief-executive and board-chair career"
+        "Chief-executive and board-chair career",
+        "Vertically integrated steel and mining activity"
       ]
     },
     {
@@ -376,7 +399,7 @@
         "Economist and finance career",
         "Chief-executive appointment",
         "Transformation of the newly privatised steelmaker",
-        "Industrial modernisation and international expansion"
+        "Industrial restructuring, modernisation, vertical integration and expansion"
       ]
     },
     {
@@ -389,24 +412,21 @@
       "supports": [
         "Foundation created on Alexey Mordashov's initiative",
         "Support for families in difficult circumstances",
-        "Prevention of family separation and juvenile offending",
-        "Development of talented children and teachers",
-        "Expansion across Severstal regions",
+        "Development and support of talented children",
         "Current living status"
       ]
     },
     {
       "id": "S6",
-      "url": "https://www.tuigroup.com/damfiles/default/tuigroup-15/en/investors/7_AGM/2021/AGM/Mordashov_SB_Curriculum-Vitae_21.10.2020.pdf-9eddcd4d12540b2b69e935d355050f21.pdf",
-      "title": "Alexey A. Mordashov: Curriculum Vitae",
-      "publisher": "TUI Group",
+      "url": "https://gorod.severstal.com/",
+      "title": "Cherepovets urban development projects",
+      "publisher": "Severstal",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "Full name",
-        "Birth date and Cherepovets birthplace",
-        "Economics education",
-        "Severstal economist, finance, chief-executive and chair career"
+        "Current Severstal board chairmanship",
+        "Continuing civic involvement in Cherepovets",
+        "Official Severstal corporate domain"
       ]
     },
     {
@@ -432,9 +452,27 @@
       "supports": [
         "Official Severstal corporate website URL"
       ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.tuigroup.com/damfiles/default/tuigroup-15/en/investors/7_AGM/2021/AGM/Mordashov_SB_Curriculum-Vitae_21.10.2020.pdf-9eddcd4d12540b2b69e935d355050f21.pdf",
+      "title": "Alexey A. Mordashov: Curriculum Vitae",
+      "publisher": "TUI Group",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Full name",
+        "Birth date and Cherepovets birthplace",
+        "Economics education",
+        "Severstal economist, finance, chief-executive and chair career"
+      ]
     }
   ],
   "uncertainties": [
+    {
+      "topic": "Current holdings",
+      "detail": "Current Forbes and Bloomberg profiles identify Mordashov as Severstal's majority or largest shareholder and treat it as the principal asset. Exact percentages and secondary holdings are deliberately omitted from the biographies because they are time-sensitive."
+    },
     {
       "topic": "Secondary nationality",
       "detail": "No reliable evidence established a citizenship beyond the Russian nationality already recorded, so no secondary nationality is proposed."
@@ -454,6 +492,6 @@
   ],
   "review": {
     "status": "pending",
-    "notes": "The identity, Severstal route and wealth classifications are strongly evidenced. The Way Home foundation provides the later civic chapter; no personal social account or secondary nationality is claimed."
+    "notes": "The identity, Severstal ownership route and Metals & Mining classification are strongly evidenced. Current official material supports the chairmanship; exact percentages and other transient holdings should be rechecked before any live update."
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 3327,
@@ -7,7 +7,7 @@
     "identity_confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The full name, date of birth, Uzbek nationality, Tashkent residence and sibling relationship align across UK and EU official records and Ismailova's direct interview."
+      "reason": "The full patronymic, exact date of birth, Uzbek identity, Tashkent residence and sibling relationship align across her direct interview and independent UK, EU and US official records."
     }
   },
   "input_snapshot": {
@@ -73,33 +73,60 @@
   },
   "research_status": "limited",
   "biography_brief": {
-    "durable_identity": "Gulbakhor Burkhanovna Ismailova is an Uzbek retired gynaecologist who trained at the Tashkent Medical Institute and spent her working life in Tashkent.",
-    "wealth_or_prominence_route": "Her financial prominence arose from beneficiary interests in family trusts connected to transfers from her brother, industrialist Alisher Usmanov.",
-    "turning_point": "She was named as a trust beneficiary within a family succession arrangement intended to share assets among relatives.",
-    "later_chapter": "She later surrendered future beneficiary rights and described the decision as final and irreversible.",
-    "character_detail": "She graduated from medical institute with honours before pursuing a career in gynaecology.",
+    "durable_identity": "Uzbek retired gynaecologist who trained and spent her working life in Tashkent.",
+    "defining_work": "A lifelong medical career in gynaecology is her clearest independent professional identity.",
+    "formative_context": "She says an early ambition to become a doctor led to graduation with honours from Tashkent Medical Institute.",
+    "decisive_moment": "She was named as a beneficiary in family trusts and later executed an irrevocable exclusion from future benefits.",
+    "enduring_dimensions": [
+      "Medical training and a career in gynaecology in Tashkent",
+      "Historical beneficiary interests created through family succession arrangements",
+      "Permanent exclusion from future trust benefits"
+    ],
+    "character_detail": "She graduated from medical institute with honours before pursuing gynaecology.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Open with the retired gynaecologist and the working life she built in Tashkent."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Begin with her early ambition to become a doctor and graduation with honours."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Use her permanent exclusion from future trust benefits to frame the endpoint of the family-transfer chapter."
+      }
+    ],
     "excluded_transient_context": [
       "Current or historical vessel association, ownership and LOA ranking",
-      "Regulatory, litigation and investigative context unrelated to the neutral career and wealth-route profile",
-      "Disputed current control of particular assets or trust interests",
+      "Sanctions, litigation and disputed asset-attribution claims",
       "Current net worth and wealth rankings",
-      "Private family and lifestyle details beyond the necessary sibling and succession connection"
+      "Any present trust ownership or economic interest not established by the evidence",
+      "Source publishers, confidence language and classification deliberation"
     ],
     "source_ids": [
+      "S1",
       "S2",
-      "S4"
+      "S3",
+      "S4",
+      "S5",
+      "S6"
     ]
   },
   "editorial_assessment": {
     "causal_clarity": 5,
-    "human_specificity": 4,
+    "human_specificity": 5,
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "identity_then_origin",
     "calibration_archetypes": [
       "sparse_public_record"
     ],
-    "notes": "The biography separates Ismailova's medical career from the family-transfer route into financial prominence, using her later renunciation as a durable endpoint while omitting disputed asset attribution and regulatory or vessel context."
+    "notes": "The profile opens with Ismailova's independent medical career, then explains the historical family-transfer route and its irrevocable endpoint. It omits disputed asset attribution, regulatory context and vessel references."
   },
   "editorial_note": null,
   "forbes_profile": {
@@ -108,148 +135,156 @@
     "confidence": {
       "score": 94,
       "band": "high",
-      "reason": "Focused exact-name searches and site-restricted checks of Forbes profile pages found reporting that mentions Ismailova, but no individual Forbes profile matching her identity."
+      "reason": "Focused exact-name and site:forbes.com/profile searches found Forbes reporting that mentions Ismailova, but no dedicated individual profile matching her identity."
     }
   },
   "primary_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Ismailova's own career was in gynaecology, while the documented family-trust interests do not establish a principal wealth-producing industry that she operated or owned.",
+    "summary": "Ismailova's own career was in gynaecology, while her historical family-trust beneficiary interests do not establish a principal wealth-producing industry that she operated or owned.",
     "confidence": {
       "score": 94,
       "band": "high",
-      "reason": "The strongest evidence identifies a medical career and family-transfer interests, but no dominant operating business or investment sector belonging to Ismailova herself."
+      "reason": "The strongest evidence establishes a medical career and a family-transfer route, but no dominant operating business or investment sector attributable to Ismailova herself."
     },
     "source_ids": [
       "S2",
-      "S4"
+      "S4",
+      "S5"
     ]
   },
   "wealth_origin": {
     "classification": "marriage_family_transfer",
     "label": "Marriage / family transfer",
-    "summary": "Her documented financial position arose through beneficiary interests in family trusts formed through intra-family transfers and succession planning involving her brother.",
+    "summary": "Her documented financial position arose through beneficiary interests in family trusts created through transfers and succession planning involving her brother.",
     "confidence": {
       "score": 94,
       "band": "high",
-      "reason": "Ismailova described being made a beneficiary so that her brother's assets could eventually be shared among relatives, while an official notice independently connects both siblings to the family trust structure."
+      "reason": "Ismailova described being named as a beneficiary within a family succession arrangement, while official and independent reporting corroborate the sibling trust structure and her subsequent exclusion."
     },
     "source_ids": [
       "S2",
-      "S4"
+      "S4",
+      "S5"
     ]
   },
   "wealth_relationship": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Ismailova historically held beneficiary rights, but she later said she irrevocably surrendered future benefits. The evidence reviewed does not establish a continuing economic interest.",
+    "summary": "Ismailova historically held beneficiary rights, but she later signed deeds permanently excluding her from future benefits. No continuing economic interest is established.",
     "confidence": {
-      "score": 92,
+      "score": 93,
       "band": "high",
-      "reason": "Her earlier beneficiary position and later renunciation are well supported, but the sparse record does not establish the nature of any present economic relationship."
+      "reason": "Her earlier beneficiary position and permanent renunciation are corroborated, but the evidence does not support assigning a current ownership, operating or investment relationship."
     },
     "source_ids": [
       "S2",
-      "S4"
+      "S4",
+      "S5"
     ]
   },
   "biography": {
-    "plain_text": "Gulbakhor Burkhanovna Ismailova is an Uzbek retired gynaecologist who spent her medical career in Tashkent. Her financial profile developed through family trusts connected to her brother, industrialist Alisher Usmanov. She was named as a beneficiary in a family succession arrangement before later surrendering future benefits, while her own long career stayed centred on medicine.",
-    "html": "<p>Gulbakhor Burkhanovna Ismailova is an Uzbek retired gynaecologist who spent her medical career in Tashkent. Her financial profile developed through family trusts connected to her brother, industrialist Alisher Usmanov. She was named as a beneficiary in a family succession arrangement before later surrendering future benefits, while her own long career stayed centred on medicine.</p>\r\n",
-    "word_count": 54,
+    "plain_text": "Gulbakhor Burkhanovna Ismailova is an Uzbek retired gynaecologist who trained and worked in Tashkent. She later became a beneficiary of family trusts established through transfers involving her brother, industrialist Alisher Usmanov. Ismailova subsequently signed an irrevocable exclusion from future benefits, closing the beneficiary relationship that brought her wider public attention.",
+    "html": "<p>Gulbakhor Burkhanovna Ismailova is an Uzbek retired gynaecologist who trained and worked in Tashkent. She later became a beneficiary of family trusts established through transfers involving her brother, industrialist Alisher Usmanov. Ismailova subsequently signed an irrevocable exclusion from future benefits, closing the beneficiary relationship that brought her wider public attention.</p>\r\n",
+    "word_count": 50,
     "confidence": {
       "score": 92,
       "band": "high",
-      "reason": "The medical career is described in Ismailova's direct interview, while the family relationship, beneficiary history and later renunciation are corroborated by interview and official trust evidence."
+      "reason": "Her direct interview establishes the medical career and beneficiary history; official records corroborate the family trust structure, and independent reporting corroborates the permanent exclusion from future benefits."
     },
     "source_ids": [
       "S2",
-      "S4"
+      "S4",
+      "S5"
     ]
   },
   "long_biography": {
-    "plain_text": "Born in Uzbekistan, Gulbakhor Burkhanovna Ismailova trained at the Tashkent Medical Institute, graduating with honours before pursuing gynaecology. She spent her working life in Tashkent and retired after a career centred on medicine. That record provides the clearest personal chapter of a profile also shaped by her relationship with her brother, industrialist Alisher Usmanov.\n\nIsmailova was named as a beneficiary of family trusts arranged to share assets among relatives as part of the family's succession planning. She later surrendered her right to future benefits, describing the decision as final and irreversible. The move closed that beneficiary chapter; her independent working life was the medical career she pursued in Tashkent.",
-    "html": "<p>Born in Uzbekistan, Gulbakhor Burkhanovna Ismailova trained at the Tashkent Medical Institute, graduating with honours before pursuing gynaecology. She spent her working life in Tashkent and retired after a career centred on medicine. That record provides the clearest personal chapter of a profile also shaped by her relationship with her brother, industrialist Alisher Usmanov.</p>\r\n<p>Ismailova was named as a beneficiary of family trusts arranged to share assets among relatives as part of the family's succession planning. She later surrendered her right to future benefits, describing the decision as final and irreversible. The move closed that beneficiary chapter; her independent working life was the medical career she pursued in Tashkent.</p>\r\n",
-    "word_count": 109,
+    "plain_text": "Gulbakhor Burkhanovna Ismailova spent her working life in medicine, practising as a gynaecologist in Tashkent before retirement. She graduated with honours from Tashkent Medical Institute after pursuing an early ambition to become a doctor, then built her career in the Uzbek capital.\n\nHer wider financial profile came from being named as a beneficiary of family trusts created through transfers involving her brother, industrialist Alisher Usmanov. Ismailova later signed deeds excluding her from future benefits and described the decision as final and irreversible. Her enduring professional record remains the medical career she pursued in Uzbekistan.",
+    "html": "<p>Gulbakhor Burkhanovna Ismailova spent her working life in medicine, practising as a gynaecologist in Tashkent before retirement. She graduated with honours from Tashkent Medical Institute after pursuing an early ambition to become a doctor, then built her career in the Uzbek capital.</p>\r\n<p>Her wider financial profile came from being named as a beneficiary of family trusts created through transfers involving her brother, industrialist Alisher Usmanov. Ismailova later signed deeds excluding her from future benefits and described the decision as final and irreversible. Her enduring professional record remains the medical career she pursued in Uzbekistan.</p>\r\n",
+    "word_count": 94,
     "confidence": {
       "score": 92,
       "band": "high",
-      "reason": "The direct interview supports her training, medical career and description of the family succession arrangement and renunciation; official records corroborate her identity and connection to the trust structure."
+      "reason": "The direct interview supports her medical training, career, family succession account and description of the renunciation; official and independent sources corroborate the family trust structure and exclusion."
     },
     "source_ids": [
       "S2",
-      "S4"
+      "S4",
+      "S5"
     ]
   },
   "proposed_details": [
     {
+      "action": "fill_missing",
       "field": "middle_names",
       "value": "Burkhanovna",
-      "action": "fill_missing",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "The EU Official Journal gives her exact full legal name as Gulbakhor Burkhanovna Ismailova."
+        "reason": "The EU Official Journal and current US official record both give her exact full name as Gulbakhor Burkhanovna Ismailova."
       },
       "source_ids": [
-        "S3"
+        "S3",
+        "S6"
       ]
     },
     {
+      "action": "fill_missing",
       "field": "known_for_title",
       "value": "Retired gynaecologist",
-      "action": "fill_missing",
       "confidence": {
-        "score": 92,
+        "score": 94,
         "band": "high",
-        "reason": "Ismailova directly described herself as a retired gynaecologist who spent her working life in Tashkent."
-      },
-      "source_ids": [
-        "S2"
-      ]
-    },
-    {
-      "field": "birth_day",
-      "existing_value": "1959",
-      "value": "22",
-      "action": "correct_existing",
-      "confidence": {
-        "score": 99,
-        "band": "very_high",
-        "reason": "Companies House records 22 December 1959, while the direct interview independently confirms the birth year; the source record has day and year transposed."
-      },
-      "source_ids": [
-        "S1",
-        "S2"
-      ]
-    },
-    {
-      "field": "birth_year",
-      "existing_value": "22",
-      "value": "1959",
-      "action": "correct_existing",
-      "confidence": {
-        "score": 99,
-        "band": "very_high",
-        "reason": "Companies House records 22 December 1959, while the direct interview independently confirms the birth year; the source record has day and year transposed."
-      },
-      "source_ids": [
-        "S1",
-        "S2"
-      ]
-    },
-    {
-      "field": "biography",
-      "value": "<p>Gulbakhor Burkhanovna Ismailova is an Uzbek retired gynaecologist who spent her medical career in Tashkent. Her financial profile developed through family trusts connected to her brother, industrialist Alisher Usmanov. She was named as a beneficiary in a family succession arrangement before later surrendering future benefits, while her own long career stayed centred on medicine.</p>\r\n",
-      "action": "fill_missing",
-      "confidence": {
-        "score": 92,
-        "band": "high",
-        "reason": "The replacement gives a durable, source-backed account of Ismailova's medical career, family-transfer prominence and later renunciation without relying on current asset attribution."
+        "reason": "Ismailova directly described herself as a retired gynaecologist who spent her working life in Tashkent, and independent reporting corroborates the profession."
       },
       "source_ids": [
         "S2",
-        "S4"
+        "S5"
+      ]
+    },
+    {
+      "action": "correct_existing",
+      "field": "birth_day",
+      "existing_value": "1959",
+      "value": "22",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Independent UK and US official records both give 22 December 1959, showing that the current day and year values are transposed."
+      },
+      "source_ids": [
+        "S1",
+        "S6"
+      ]
+    },
+    {
+      "action": "correct_existing",
+      "field": "birth_year",
+      "existing_value": "22",
+      "value": "1959",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Independent UK and US official records both give 22 December 1959, showing that the current day and year values are transposed."
+      },
+      "source_ids": [
+        "S1",
+        "S6"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "biography",
+      "value": "<p>Gulbakhor Burkhanovna Ismailova is an Uzbek retired gynaecologist who trained and worked in Tashkent. She later became a beneficiary of family trusts established through transfers involving her brother, industrialist Alisher Usmanov. Ismailova subsequently signed an irrevocable exclusion from future benefits, closing the beneficiary relationship that brought her wider public attention.</p>\r\n",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "The biography gives a durable, corroborated account of Ismailova's independent medical career and historical family-transfer prominence without asserting a current trust interest."
+      },
+      "source_ids": [
+        "S2",
+        "S4",
+        "S5"
       ]
     }
   ],
@@ -264,8 +299,8 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "Exact identity",
-        "Date of birth",
+        "exact identity",
+        "date of birth",
         "Uzbek nationality",
         "Tashkent residence"
       ]
@@ -278,26 +313,26 @@
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "Direct interview",
-        "Retired gynaecologist",
+        "direct interview",
+        "retired gynaecologist",
         "Tashkent Medical Institute graduation with honours",
-        "Medical career in Tashkent",
-        "Relationship to Alisher Usmanov",
-        "Family succession explanation for beneficiary interests",
-        "Later surrender of future benefits",
-        "Conflicting city-of-birth statements within the article"
+        "medical career in Tashkent",
+        "relationship to Alisher Usmanov",
+        "family succession explanation for beneficiary interests",
+        "later permanent surrender of future benefits",
+        "conflicting city-of-birth statements within the article"
       ]
     },
     {
       "id": "S3",
-      "url": "https://eur-lex.europa.eu/eli/C/2024/5501/oj/eng/pdf",
-      "title": "Appeal by Gulbakhor Burkhanovna Ismailova in Case C-506/24 P",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:C_202405501",
+      "title": "Appeal by Gulbakhor Burkhanovna Ismailova",
       "publisher": "Official Journal of the European Union",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "Full legal name and patronymic",
-        "Exact identity"
+        "full legal name and patronymic",
+        "exact identity"
       ]
     },
     {
@@ -308,36 +343,51 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "Exact identity",
-        "Relationship to Alisher Usmanov",
-        "Both siblings named within the family trust structure"
+        "exact identity",
+        "relationship to Alisher Usmanov",
+        "both siblings named within the family trust structure"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.intellinews.com/sanctioned-sister-of-billionaire-usmanov-waives-right-to-benefit-from-family-trusts-318830/",
+      "title": "Gulbakhor Ismailova waives right to benefit from family trusts",
+      "publisher": "bne IntelliNews",
+      "tier": 2,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "gynaecologist living in Uzbekistan",
+        "historical family trust beneficiary interests",
+        "deeds permanently excluding future benefits",
+        "independent corroboration of the renunciation"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=41494",
+      "title": "Gulbakhor Burkhanovna Ismailova: official person record",
+      "publisher": "U.S. Office of Foreign Assets Control",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "full legal name and patronymic",
+        "date of birth",
+        "Uzbek, Russian and Cypriot nationalities",
+        "Tashkent address",
+        "place of birth stated as Tashkent"
       ]
     }
   ],
   "uncertainties": [
-    {
-      "topic": "Place of birth",
-      "detail": "The direct-interview article contains conflicting claims of Tashkent and Namangan, while other official records have also varied. No birthplace is proposed."
-    },
-    {
-      "topic": "Present trust relationship",
-      "detail": "Ismailova said she irrevocably surrendered future benefits. The evidence reviewed does not establish a current beneficial interest, so the wealth relationship remains unknown."
-    },
-    {
-      "topic": "Primary industry",
-      "detail": "Her medical career is established, but no evidence reviewed supports attributing a principal operating business or wealth-producing industry to her."
-    },
-    {
-      "topic": "Personal social accounts",
-      "detail": "No personal LinkedIn, Instagram, website or other priority social account could be identity-verified; namesakes and third-party references were rejected."
-    },
-    {
-      "topic": "Other blank fields",
-      "detail": "Suffix, secondary residence, calculated age, death and unknown-name fields remain optional, calculated, inapplicable or system-managed rather than enrichment targets."
-    }
+    "The direct-interview article contains conflicting statements naming Tashkent and Namangan as her birthplace, while official records have also varied. No birthplace is proposed.",
+    "Ismailova signed deeds permanently excluding future benefits. The reviewed evidence does not establish a continuing economic interest, so the wealth relationship remains unknown.",
+    "Her medical career is established, but no evidence supports attributing a principal operating business or wealth-producing industry to her.",
+    "The source input records Russian and Uzbek nationalities, while the current US official record also lists Cypriot nationality. No nationality change is proposed because the available fields already contain two supported nationalities.",
+    "No personal LinkedIn, Instagram, website or other priority social account could be identity-verified; namesakes and third-party references were rejected.",
+    "Blank suffix, secondary residence, calculated age, death and unknown-name fields remain optional, calculated, inapplicable or system-managed rather than enrichment targets."
   ],
   "review": {
     "status": "pending",
-    "notes": "Identity, medical career and the historical family-transfer route are sufficiently supported for a limited person dossier. The birthplace remains unproposed, and no present trust interest, principal wealth-producing industry or personal social account is claimed."
+    "notes": "Identity is secured independently of surname or family inference. Reviewer should preserve the limited-evidence framing: the medical career and historical beneficiary position are corroborated, while birthplace, current wealth relationship, principal industry and personal social profiles remain unresolved."
   }
 }

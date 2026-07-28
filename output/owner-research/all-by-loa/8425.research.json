@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 8425,
@@ -7,7 +7,7 @@
     "identity_confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The exact full name, American identity, 14 May 1984 birth date, Harvard background and Meta founder role align across the current Forbes profile, Meta's official leadership material, SEC filings and Harvard."
+      "reason": "The exact name, American identity, 14 May 1984 birth date, Harvard background and Facebook/Meta founder role align across the current Forbes profile, Meta's official leadership page, its 2026 proxy statement and Harvard's institutional biography."
     }
   },
   "input_snapshot": {
@@ -80,24 +80,42 @@
   },
   "research_status": "complete",
   "biography_brief": {
-    "durable_identity": "Mark Zuckerberg is an American programmer and technology entrepreneur who co-founded Facebook and remains Meta's founder, chairman and chief executive.",
-    "wealth_or_prominence_route": "Early programming led to computer-science study at Harvard, where he and fellow students created Facebook as a campus network before building it into a global technology company.",
-    "turning_point": "Facebook's rapid early expansion led Zuckerberg to leave Harvard and develop the company full time.",
-    "later_chapter": "He and Priscilla Chan created the Chan Zuckerberg Initiative, which applies engineering, research funding and scientific collaboration to biomedical science and education.",
-    "character_detail": "He was writing practical software by middle school, giving the later founder story a concrete technical starting point.",
+    "durable_identity": "Mark Zuckerberg is an American technology entrepreneur who co-founded Facebook and remains Meta's founder, chairman and chief executive.",
+    "defining_work": "A university social network developed into Meta, with Zuckerberg retaining direct responsibility for company direction, product strategy and core technology.",
+    "formative_context": "He wrote practical software while at school and studied computer science at Harvard.",
+    "decisive_moment": "Facebook's early expansion led him to leave Harvard and develop the company full time.",
+    "enduring_dimensions": [
+      "Founder leadership and voting control at Meta",
+      "Application of engineering to biomedical research through the Chan Zuckerberg Initiative and Biohub"
+    ],
+    "character_detail": "One school-age program connected computers at his father's dental practice, illustrating the practical software interests that preceded Facebook.",
+    "opening_options": [
+      {
+        "mode": "institution_or_asset",
+        "angle": "Use Facebook's original Harvard network to establish the institution that became Meta."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Use his decision to leave Harvard after Facebook expanded beyond its first campus."
+      },
+      {
+        "mode": "public_contribution",
+        "angle": "Use the Chan Zuckerberg Initiative's Biohub research work as a distinct expression of his technical interests."
+      }
+    ],
     "excluded_transient_context": [
-      "Current asset holdings and cohort position",
-      "Current rankings, wealth estimates, share percentages and annual figures",
-      "Short-lived product announcements, transactions and unrequested controversy"
+      "Current or historical vessel ownership, vessel names, design and LOA ranking",
+      "Current net worth, wealth rankings, share percentages and transaction values",
+      "Transient product metrics, current product announcements and short-term technology strategy",
+      "Controversies, political activity and unrelated personal material"
     ],
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S4",
       "S5",
-      "S7",
-      "S8"
+      "S6",
+      "S7"
     ]
   },
   "editorial_assessment": {
@@ -106,11 +124,15 @@
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "core_work_deepened",
     "calibration_archetypes": [
       "founder_operator",
       "investor_philanthropist"
     ],
-    "notes": "The biographies trace an unbroken route from school-age programming through Harvard and Facebook to Meta, then use CZI's technical approach to science and education as a distinct later chapter. Rankings, percentages and short-lived corporate detail remain outside the prose."
+    "notes": "The long profile opens on Facebook as the institution that became Meta, moves briefly to Zuckerberg's technical formation and then deepens his continuing product control. CZI's Biohub supplies one distinctive secondary dimension without creating a general philanthropy inventory."
   },
   "editorial_note": null,
   "forbes_profile": {
@@ -119,7 +141,7 @@
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The current dedicated Forbes profile exactly matches Zuckerberg's name, Meta co-founder role, Facebook source of wealth, self-made status, U.S. citizenship and Harvard attendance."
+      "reason": "The current dedicated Forbes profile exactly matches Zuckerberg's name, Meta co-founder role, Facebook source of wealth, self-made status, United States citizenship and Harvard attendance."
     }
   },
   "primary_industry": {
@@ -129,7 +151,7 @@
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "Forbes identifies Facebook as his source of wealth, while Meta and its current SEC filings establish the founder stake, continuing leadership and technology-company relationship."
+      "reason": "Forbes identifies Facebook as his source of wealth, while Meta and its 2026 proxy directly establish the continuing founder stake, leadership role and technology-company relationship."
     },
     "source_ids": [
       "S1",
@@ -140,16 +162,15 @@
   "wealth_origin": {
     "classification": "self_made",
     "label": "Self-made",
-    "summary": "He created the principal fortune by co-founding Facebook at Harvard and retaining ownership as the student network grew into Meta.",
+    "summary": "He created the principal fortune by co-founding Facebook at Harvard and retaining ownership as the student network developed into Meta.",
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "Forbes explicitly classifies Zuckerberg as self-made, while Meta, Harvard and Zuckerberg's direct account document Facebook's creation and early expansion from a university network."
+      "reason": "Forbes explicitly classifies Zuckerberg as self-made, while Meta and Harvard document Facebook's creation and expansion from a university network."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S4",
       "S5"
     ]
   },
@@ -160,7 +181,7 @@
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "Meta's official leadership page and current SEC filings directly document his founder, chairman and chief-executive roles and continuing voting control."
+      "reason": "Meta's official leadership page and 2026 proxy statement directly document his founder, chairman and chief-executive roles and continuing voting control."
     },
     "source_ids": [
       "S2",
@@ -168,49 +189,49 @@
     ]
   },
   "biography": {
-    "plain_text": "Mark Zuckerberg is an American programmer and technology entrepreneur who co-founded Facebook while studying at Harvard and left university to build it full time. Facebook grew into Meta, where he remains founder, chairman and chief executive. He also co-leads the Chan Zuckerberg Initiative, applying technology and philanthropy to biomedical research and education.",
-    "html": "<p>Mark Zuckerberg is an American programmer and technology entrepreneur who co-founded Facebook while studying at Harvard and left university to build it full time. Facebook grew into Meta, where he remains founder, chairman and chief executive. He also co-leads the Chan Zuckerberg Initiative, applying technology and philanthropy to biomedical research and education.</p>\r\n",
+    "plain_text": "Mark Zuckerberg is an American technology entrepreneur who co-founded Facebook at Harvard and left university to build the network full time. It became Meta, where he remains founder, chairman and chief executive. His retained shareholding underpins his self-made fortune, while the Chan Zuckerberg Initiative applies engineering and scientific collaboration to biomedical research.",
+    "html": "<p>Mark Zuckerberg is an American technology entrepreneur who co-founded Facebook at Harvard and left university to build the network full time. It became Meta, where he remains founder, chairman and chief executive. His retained shareholding underpins his self-made fortune, while the Chan Zuckerberg Initiative applies engineering and scientific collaboration to biomedical research.</p>\r\n",
     "word_count": 52,
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Harvard and Meta establish the student-founder route and current leadership, while CZI's current leadership and programme pages directly support Zuckerberg's co-leadership and the science-and-education chapter."
-    },
-    "source_ids": [
-      "S2",
-      "S4",
-      "S7",
-      "S8"
-    ]
-  },
-  "long_biography": {
-    "plain_text": "Programming came early for American technology entrepreneur Mark Zuckerberg. He was writing software by middle school and studied computer science at Harvard, where he and fellow students launched Facebook in 2004 as a campus directory. Its rapid expansion led him to leave college and build the network full time. The growth of that platform made his founder stake the basis of his fortune.\n\nFacebook later became Meta, with Zuckerberg continuing as founder, chairman and chief executive. He and Priscilla Chan also created the Chan Zuckerberg Initiative, bringing engineering into biomedical science and education. Its research institutes, funding and software tools extend his early interest in building systems from connecting people to helping scientists understand disease.",
-    "html": "<p>Programming came early for American technology entrepreneur Mark Zuckerberg. He was writing software by middle school and studied computer science at Harvard, where he and fellow students launched Facebook in 2004 as a campus directory. Its rapid expansion led him to leave college and build the network full time. The growth of that platform made his founder stake the basis of his fortune.</p>\r\n<p>Facebook later became Meta, with Zuckerberg continuing as founder, chairman and chief executive. He and Priscilla Chan also created the Chan Zuckerberg Initiative, bringing engineering into biomedical science and education. Its research institutes, funding and software tools extend his early interest in building systems from connecting people to helping scientists understand disease.</p>\r\n",
-    "word_count": 115,
-    "confidence": {
-      "score": 99,
-      "band": "very_high",
-      "reason": "Harvard documents the early programming, student launch and decision to build Facebook full time; Forbes, Meta and SEC filings support the founder-wealth mechanism; CZI directly supports the later technical-philanthropy narrative."
+      "reason": "Forbes, Meta and Harvard establish the founder route, retained ownership and current roles; current CZI leadership and programme pages support the technical biomedical-research dimension."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S4",
       "S5",
-      "S7",
-      "S8"
+      "S6",
+      "S7"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Facebook's original Harvard network became the foundation of Meta under co-founder Mark Zuckerberg, who remains the technology group's chairman and chief executive. A school-age programmer, he studied computer science at Harvard and left after the network's early expansion to build the company full time.\n\nZuckerberg continues to set Meta's overall direction and product strategy, supported by the voting control attached to his founder stake. He also co-founded the Chan Zuckerberg Initiative, whose Biohub brings scientists, engineers and AI experts together to develop tools for studying cells, disease and basic human biology.",
+    "html": "<p>Facebook's original Harvard network became the foundation of Meta under co-founder Mark Zuckerberg, who remains the technology group's chairman and chief executive. A school-age programmer, he studied computer science at Harvard and left after the network's early expansion to build the company full time.</p>\r\n<p>Zuckerberg continues to set Meta's overall direction and product strategy, supported by the voting control attached to his founder stake. He also co-founded the Chan Zuckerberg Initiative, whose Biohub brings scientists, engineers and AI experts together to develop tools for studying cells, disease and basic human biology.</p>\r\n",
+    "word_count": 91,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Meta, its 2026 proxy and Harvard support the institutional development, technical formation, current operating responsibility and voting control; current CZI pages support the Biohub science-and-engineering work."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S5",
+      "S6",
+      "S7"
     ]
   },
   "proposed_details": [
     {
       "field": "known_for_title",
-      "action": "fill_missing",
       "value": "Founder, Chairman and Chief Executive Officer of Meta",
+      "action": "fill_missing",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "Meta's current official leadership page and 2026 proxy use these exact roles."
+        "reason": "Meta's current official leadership page and 2026 proxy statement use these exact roles."
       },
       "source_ids": [
         "S2",
@@ -219,31 +240,33 @@
     },
     {
       "field": "place_of_birth",
-      "action": "fill_missing",
       "value": "White Plains, New York",
+      "action": "fill_missing",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "Harvard's institutional biography states that Zuckerberg was born in White Plains, New York, and matches the exact founder identity."
+        "reason": "Harvard's institutional biography states that Zuckerberg was born in White Plains, New York, and matches the exact founder identity and birth year."
       },
       "source_ids": [
-        "S4"
+        "S5"
       ]
     },
     {
       "field": "biography",
+      "value": "<p>Mark Zuckerberg is an American technology entrepreneur who co-founded Facebook at Harvard and left university to build the network full time. It became Meta, where he remains founder, chairman and chief executive. His retained shareholding underpins his self-made fortune, while the Chan Zuckerberg Initiative applies engineering and scientific collaboration to biomedical research.</p>\r\n",
       "action": "fill_missing",
-      "value": "<p>Mark Zuckerberg is an American programmer and technology entrepreneur who co-founded Facebook while studying at Harvard and left university to build it full time. Facebook grew into Meta, where he remains founder, chairman and chief executive. He also co-leads the Chan Zuckerberg Initiative, applying technology and philanthropy to biomedical research and education.</p>\r\n",
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The source biography is blank, and the replacement gives a durable account of Zuckerberg's technical formation, founder route, Meta leadership and later philanthropic work."
+        "reason": "The source biography is blank, and the replacement gives a concise account of Zuckerberg's founder-built wealth, continuing Meta role and distinctive biomedical-research work."
       },
       "source_ids": [
+        "S1",
         "S2",
-        "S4",
-        "S7",
-        "S8"
+        "S3",
+        "S5",
+        "S6",
+        "S7"
       ]
     }
   ],
@@ -252,28 +275,28 @@
       "type_id": "2",
       "type": "Facebook",
       "url": "https://www.facebook.com/zuck/",
-      "verification": "Meta's first-quarter 2026 results release identifies facebook.com/zuck as Mark Zuckerberg's Facebook profile and an official Regulation FD disclosure channel. Type ID 2 is copied from the owner input lookup.",
+      "verification": "Meta's first-quarter 2026 results release identifies facebook.com/zuck as Mark Zuckerberg's Facebook profile and a Regulation FD disclosure channel. Type ID 2 is copied from the owner input lookup.",
       "confidence": {
         "score": 100,
         "band": "very_high",
         "reason": "Meta directly identifies this URL as Zuckerberg's personal Facebook profile."
       },
       "source_ids": [
-        "S6"
+        "S4"
       ]
     },
     {
       "type_id": "9",
       "type": "Instagram",
       "url": "https://www.instagram.com/zuck/",
-      "verification": "Meta's first-quarter 2026 results release identifies instagram.com/zuck as Mark Zuckerberg's Instagram account and an official Regulation FD disclosure channel. Type ID 9 is copied from the owner input lookup.",
+      "verification": "Meta's first-quarter 2026 results release identifies instagram.com/zuck as Mark Zuckerberg's Instagram account and a Regulation FD disclosure channel. Type ID 9 is copied from the owner input lookup.",
       "confidence": {
         "score": 100,
         "band": "very_high",
         "reason": "Meta directly identifies this URL as Zuckerberg's personal Instagram account."
       },
       "source_ids": [
-        "S6"
+        "S4"
       ]
     },
     {
@@ -301,12 +324,11 @@
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "exact identity",
-        "verified Forbes profile",
+        "Exact identity and verified Forbes profile",
         "Meta co-founder role",
         "Facebook as source of wealth",
-        "self-made classification",
-        "continuing Meta shareholding",
+        "Self-made classification",
+        "Continuing Meta shareholding",
         "Harvard attendance",
         "United States citizenship"
       ]
@@ -319,13 +341,14 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "exact identity",
-        "Meta founder, chairman and chief-executive roles",
-        "Facebook founding in 2004",
-        "responsibility for product strategy and core technology",
+        "Exact identity",
+        "Current Meta founder, chairman and chief-executive roles",
+        "Facebook founding",
+        "Responsibility for overall direction and product strategy",
+        "Leadership of service design and core technology",
         "Harvard computer-science study",
-        "move to Palo Alto to build the company",
-        "official company leadership profile"
+        "Move to Palo Alto to build the company",
+        "Official company leadership profile"
       ]
     },
     {
@@ -336,47 +359,15 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "founder, chairman and chief-executive roles",
-        "founder and chief-executive tenure from 2004",
-        "chairmanship from 2012",
-        "largest and controlling shareholder status",
+        "Current founder, chairman and chief-executive roles",
+        "Founder and chief-executive tenure since Facebook's creation",
+        "Chairmanship since 2012",
+        "Largest and controlling shareholder status",
         "Harvard computer-science study"
       ]
     },
     {
       "id": "S4",
-      "url": "https://news.harvard.edu/gazette/story/2017/03/zuckerberg-speaks-at-harvards-366th-commencement/",
-      "title": "Zuckerberg named Commencement speaker",
-      "publisher": "Harvard Gazette",
-      "tier": 1,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "White Plains, New York, birthplace",
-        "1984 birth year",
-        "software development by middle school",
-        "Harvard attendance and computer-science study",
-        "Facebook creation with fellow students",
-        "initial campus-network purpose",
-        "move to Palo Alto and decision to build Facebook full time",
-        "later science and education philanthropy"
-      ]
-    },
-    {
-      "id": "S5",
-      "url": "https://www.facebook.com/zuck/posts/fifteen-years-ago-today-i-launched-the-first-version-of-the-facebook-website-fro/10106411140260321/",
-      "title": "Fifteen years ago today, I launched the first version of the Facebook website",
-      "publisher": "Mark Zuckerberg on Facebook",
-      "tier": 1,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "direct first-person account of launching Facebook from a college dormitory",
-        "initial Harvard use",
-        "expansion to other universities",
-        "early growth of the network"
-      ]
-    },
-    {
-      "id": "S6",
       "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-First-Quarter-2026-Results/default.aspx",
       "title": "Meta Reports First Quarter 2026 Results",
       "publisher": "Meta",
@@ -385,11 +376,28 @@
       "supports": [
         "facebook.com/zuck as Mark Zuckerberg's official Facebook profile",
         "instagram.com/zuck as Mark Zuckerberg's official Instagram account",
-        "both profiles as Meta Regulation FD disclosure channels"
+        "Both profiles as Meta Regulation FD disclosure channels"
       ]
     },
     {
-      "id": "S7",
+      "id": "S5",
+      "url": "https://news.harvard.edu/gazette/story/2017/03/zuckerberg-speaks-at-harvards-366th-commencement/",
+      "title": "Zuckerberg named Commencement speaker",
+      "publisher": "Harvard Gazette",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "White Plains, New York, birthplace",
+        "1984 birth year",
+        "Software development while at school",
+        "Harvard attendance and computer-science study",
+        "Facebook creation with fellow students",
+        "Initial Harvard-network purpose",
+        "Move to Palo Alto and decision to build Facebook full time"
+      ]
+    },
+    {
+      "id": "S6",
       "url": "https://chanzuckerberg.com/about/leaders/",
       "title": "Leadership Team at CZI, Biohub and Learning Commons",
       "publisher": "Chan Zuckerberg Initiative",
@@ -397,39 +405,62 @@
       "accessed_at": "2026-07-28",
       "supports": [
         "Mark Zuckerberg as CZI co-founder and co-chief executive",
-        "technical expertise informing CZI's work",
-        "CZI work in science and education",
-        "Meta founder and chief-executive role",
+        "Technical expertise informing CZI's work",
+        "Current Meta founder and chief-executive role",
         "Harvard computer-science study"
       ]
     },
     {
-      "id": "S8",
+      "id": "S7",
       "url": "https://chanzuckerberg.com/",
-      "title": "Chan Zuckerberg Initiative: Our Work",
+      "title": "Chan Zuckerberg Initiative - Our Work",
       "publisher": "Chan Zuckerberg Initiative",
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "CZI founding by Priscilla Chan and Mark Zuckerberg in 2015",
-        "biomedical-science and education focus",
-        "research institutes and collaboration among scientists and engineers",
-        "technology and software tools for science and learning"
+        "CZI founding by Priscilla Chan and Mark Zuckerberg",
+        "Current Biohub focus on biomedical science",
+        "Collaboration among scientists, engineers and AI experts",
+        "Technology and research directed towards cells, disease and human biology"
       ]
     }
   ],
   "uncertainties": [
-    "The dedicated Forbes profile is verified. Its live wealth estimates, rankings and stake figures were excluded from the biographies because they change frequently.",
-    "Technology is used rather than Media & Entertainment because Forbes identifies Facebook as the source of wealth and Meta's own materials describe the company through its products, technology and infrastructure.",
-    "No reliable evidence established a secondary nationality, so that field remains blank.",
-    "The existing 14 May 1984 birth date, American nationality, United States residence and birth country remain supported and were not duplicated in proposals.",
-    "The existing Wikipedia and Forbes links resolve to the correct person and were not duplicated. The canonical Forbes profile omits the input URL's tracking query, but the existing link remains functional.",
-    "No identity-verified personal LinkedIn, X, YouTube or TikTok account or standalone personal website met the proposal threshold. Meta's official leadership page is proposed separately as a Company Website.",
-    "The CZI chapter is limited to its durable technical work in science and education; programme targets, funding amounts and current organisational emphasis were omitted.",
-    "Blank title, suffix and secondary-residence fields were treated as optional; blank age, death, internal-note and unknown-name fields remain inapplicable or system-managed."
+    {
+      "topic": "Forbes profile and changing figures",
+      "detail": "The dedicated Forbes profile is verified. Its live wealth estimate, ranking and stake percentage were excluded because they change frequently."
+    },
+    {
+      "topic": "Current Meta role",
+      "detail": "Meta's official leadership page and April 2026 proxy statement independently confirm Founder, Chairman and Chief Executive Officer. The role wording is current as of the research date."
+    },
+    {
+      "topic": "Secondary nationality",
+      "detail": "No reliable source established a secondary nationality, so the researchable field remains blank."
+    },
+    {
+      "topic": "Existing personal details",
+      "detail": "The stored 14 May 1984 birth date, American nationality, United States residence and birth country remain supported and were not duplicated in proposals."
+    },
+    {
+      "topic": "Existing Forbes and Wikipedia links",
+      "detail": "Both existing links resolve to the correct person. The canonical Forbes profile omits the input URL's tracking query, but the stored URL remains functional and was not proposed again."
+    },
+    {
+      "topic": "Other personal profiles",
+      "detail": "Meta directly authenticates the proposed Facebook and Instagram URLs. An exact-name LinkedIn result lacks an official cross-link, and no identity-verified X, YouTube, TikTok or standalone personal website met the proposal threshold. Meta also authenticates a Threads profile, but Threads is absent from the input lookup."
+    },
+    {
+      "topic": "Secondary editorial dimension",
+      "detail": "The biographies use only CZI's durable Biohub science-and-engineering work as a secondary dimension. Funding totals, programme targets, education projects and changing organisational priorities were omitted."
+    },
+    {
+      "topic": "Other blank fields",
+      "detail": "Blank title, suffix and secondary-residence fields were treated as optional; blank age, death, internal-note and unknown-name fields remain inapplicable or system-managed."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": "Retain Technology, Self-made and Founder as separate classifications. Review the two Meta-verified personal social links and the decision to use CZI's science-and-education work as the single later editorial chapter."
+    "notes": "Identity and the Technology, Self-made and Founder classifications are conclusive. Review the three strongly verified link proposals, the White Plains birthplace fill and the use of CZI's Biohub as the single secondary dimension. Nothing has been compiled or applied."
   }
 }

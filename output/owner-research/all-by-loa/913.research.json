@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "institution",
   "owner": {
     "person_id": 913,
@@ -7,7 +7,7 @@
     "identity_confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The immutable display name explicitly denotes a government, and current official Omani sources describe the Sultanate's government, government entities and Council of Ministers as public institutions rather than a natural person."
+      "reason": "The immutable display name explicitly denotes a government, and current official Omani sources distinguish the Sultanate's government, Council of Ministers and government entities from any natural-person identity."
     }
   },
   "input_snapshot": {
@@ -89,11 +89,11 @@
   "biography_brief": null,
   "editorial_assessment": null,
   "editorial_note": {
-    "plain_text": "The Oman Government entry represents a public institution rather than a natural person. Official Omani sources describe the Sultanate's government as a system of state bodies, with the Council of Ministers serving as its chief executive body. The database label does not identify one ministry, agency or office. Person-specific biography, private-wealth, birth, mortality and personal-social fields are therefore not applicable.",
+    "plain_text": "The Oman Government record represents a public institution, not a natural person. Official Omani sources distinguish the Sultanate's government, its Council of Ministers and numerous government entities, while the database label identifies no single ministry, agency or legal body. Person-specific biography, private-wealth, birth, mortality and personal-social fields are therefore not applicable.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Current official Omani government sources establish the institutional structure and show that the generic record label cannot be treated as a natural-person identity."
+      "reason": "Current official Omani government sources establish an institutional state structure and show that the generic record label cannot be treated as a natural-person identity."
     },
     "source_ids": [
       "S1",
@@ -107,13 +107,13 @@
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Focused exact-name and site:forbes.com/profile searches found no dedicated Forbes profile for Oman Government; the record is an institution, not a natural person eligible for a personal wealth profile."
+      "reason": "Exact-name, alternative-name and site:forbes.com/profile searches returned Forbes articles about Oman but no dedicated profile for Oman Government; the record is an institution rather than a person eligible for a personal wealth profile."
     }
   },
   "primary_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Private-person industry categories do not apply to the Government of Oman, and no natural person's private wealth is identified by this institutional record.",
+    "summary": "Private-person industry categories do not apply to the Government of Oman, and this institutional record identifies no natural person's private wealth.",
     "confidence": {
       "score": 99,
       "band": "very_high",
@@ -169,10 +169,10 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "official Sultanate of Oman government-services identity",
-        "government services delivered through a national platform",
-        "multiple government entities rather than a natural-person identity",
-        "integrated digital-government structure"
+        "Official Sultanate of Oman government-services identity",
+        "Central gateway to government services and official information",
+        "Multiple government entities rather than a natural-person identity",
+        "Integrated digital-government structure"
       ]
     },
     {
@@ -184,8 +184,8 @@
       "accessed_at": "2026-07-28",
       "supports": [
         "Council of Ministers as the chief executive body of the Sultanate of Oman",
-        "institutional responsibility for shaping and implementing state policy",
-        "government composed of ministries and other public authorities"
+        "Institutional responsibility for shaping and implementing state policy",
+        "Government composed of ministries and other public authorities"
       ]
     },
     {
@@ -196,18 +196,18 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "official name as the Sultanate of Oman",
-        "government described as a hereditary monarchy",
-        "state identity distinct from a natural person"
+        "Official state name as the Sultanate of Oman",
+        "Government identified as a hereditary monarchy",
+        "State and government identity distinct from a natural person"
       ]
     }
   ],
   "uncertainties": [
     "Oman Government is a generic database label rather than the official name of one ministry, agency or legal entity. No narrower institution should be substituted without stronger record-specific evidence.",
-    "Focused exact-name and site-restricted Forbes searches found no dedicated profile; a personal Forbes profile is not applicable to this institutional record.",
+    "Focused exact-name, alternative-name and site-restricted Forbes searches found no dedicated profile; Forbes articles about Oman were not treated as personal profiles.",
     "The source record's Omanian nationality, Oman residence and birth-country values, Alive mortality value, and person-name fields are artefacts of storage in a person-oriented schema and were not proposed as institutional facts.",
     "Personal biography, birth, mortality and social-profile enrichment is not applicable, so no personal detail or social proposals were created.",
-    "The source record's vessel relationships were not used to infer the institution's legal scope, a private wealth classification or a substitute human identity."
+    "No private-person industry, wealth-origin or wealth-relationship classification can be inferred from public government or state assets."
   ],
   "review": {
     "status": "pending",

@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 1791,
@@ -7,7 +7,7 @@
     "identity_confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The immutable owner's exact name, patronymic, Russian identity, Magnitogorsk birth details and progression from MMK mechanic to chief executive, controlling shareholder and chairman align across current Forbes, KHL and official company material."
+      "reason": "The exact name, patronymic, 13 October 1948 birth date, Magnitogorsk birthplace and progression from MMK mechanic to general director, controlling owner and board chairman align across current Forbes, KHL and company records."
     }
   },
   "input_snapshot": {
@@ -73,22 +73,43 @@
   },
   "research_status": "complete",
   "biography_brief": {
-    "durable_identity": "Viktor Filippovich Rashnikov is a Russian metallurgical engineer, long-serving MMK executive and the steelmaker's majority owner and chairman.",
-    "wealth_or_prominence_route": "He entered MMK as a repair-shop mechanic, studied metal-forming engineering while working and advanced through production, supply, engineering and management posts.",
-    "turning_point": "After becoming chief executive, Rashnikov accumulated shares through market purchases, gained control of MMK and later moved to the chairmanship.",
-    "later_chapter": "His long presidency of Metallurg Magnitogorsk links his industrial career to the city's ice-hockey institution.",
-    "character_detail": "His working life, engineering education, corporate leadership and sporting role all developed in Magnitogorsk.",
+    "durable_identity": "Russian metallurgical engineer, controlling owner and board chairman of Magnitogorsk Iron and Steel Works.",
+    "defining_work": "He progressed through the steelworks from repair-shop mechanic to general director, then converted a lifelong operating career into ownership by purchasing shares on the market.",
+    "formative_context": "Rashnikov joined MMK in its equipment-repair shop and studied metal-forming engineering while working.",
+    "decisive_moment": "Purchasing MMK shares as he advanced through management transformed him from a senior operator into the steelmaker's controlling owner.",
+    "enduring_dimensions": [
+      "Board chairmanship and beneficial control of MMK through Altair",
+      "Operational experience spanning production, supply, engineering and executive management",
+      "A working life and engineering education rooted in Magnitogorsk"
+    ],
+    "character_detail": "He combined work at the mill with engineering study before rising through its technical and management ranks.",
+    "opening_options": [
+      {
+        "mode": "formative_episode",
+        "angle": "Open in MMK's equipment-repair shop, where Rashnikov began as a mechanic while studying engineering."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Begin with the market purchases that converted a mill operator's career into control of the steelmaker."
+      },
+      {
+        "mode": "institution_or_asset",
+        "angle": "Use MMK as the institution connecting Rashnikov's shop-floor start, executive authority and ownership."
+      }
+    ],
     "excluded_transient_context": [
-      "Current or historical vessel ownership, names, design and LOA ranking",
-      "Current net worth, wealth rankings and shareholding percentages",
-      "Transient production, profit, investment and valuation figures",
-      "Unrequested legal and political context"
+      "Current or historical vessel association, ownership and LOA ranking",
+      "Current net-worth estimates, wealth rankings and precise shareholding percentages",
+      "Sanctions, allegations, political controversy and disputed asset claims",
+      "Short-term production, investment, transaction and valuation figures",
+      "Source publishers, confidence language and classification deliberation"
     ],
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S4"
+      "S4",
+      "S5"
     ]
   },
   "editorial_assessment": {
@@ -97,10 +118,14 @@
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
     "calibration_archetypes": [
-      "founder_operator"
+      "acquirer_consolidator"
     ],
-    "notes": "The profile follows Rashnikov's unusual operator-to-owner progression from repair-shop mechanic through engineering and executive leadership to control of MMK, then uses his long hockey-club presidency as a distinct and durable later chapter."
+    "notes": "The long profile opens with Rashnikov's concrete shop-floor entry into MMK, follows the operating progression that gave him command of the mill and ends with the market purchases and holding structure that explain his control. It excludes wealth estimates, vessel context and contentious material."
   },
   "editorial_note": null,
   "forbes_profile": {
@@ -109,32 +134,32 @@
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The current dedicated Forbes profile matches Rashnikov's full MMK identity, career from mechanic to chief executive, majority ownership, self-made steel fortune, birth year, citizenship and hockey-club presidency."
+      "reason": "The dedicated Forbes profile, updated in March 2026, matches Rashnikov's identity, MMK majority ownership, mechanic-to-chief-executive career, market-purchase route to control and steel-based self-made wealth."
     }
   },
   "primary_industry": {
     "classification": "metals_mining",
     "label": "Metals & Mining",
-    "summary": "Rashnikov's identifiable fortune derives from the controlling stake he accumulated in Magnitogorsk Iron and Steel Works after a career operating the steelmaker.",
+    "summary": "Rashnikov's principal business interest and source of wealth are centred on his controlling ownership of the steelmaker MMK.",
     "confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "Forbes identifies steel as his source of wealth and MMK as the core company, while company reports document his operational career and chairmanship."
+      "reason": "Forbes identifies steel as his source of wealth and MMK as the core company, while current and historical MMK records establish his control, chairmanship and operating career."
     },
     "source_ids": [
       "S1",
-      "S3",
+      "S2",
       "S4"
     ]
   },
   "wealth_origin": {
     "classification": "self_made",
     "label": "Self-made",
-    "summary": "Rashnikov began as an MMK mechanic, rose through technical and management roles and accumulated control by purchasing shares on the market rather than inheriting the steel asset.",
+    "summary": "Rashnikov began as an MMK mechanic, advanced through technical and management posts, and accumulated control by buying shares on the market rather than inheriting the steel asset.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Forbes explicitly labels him self-made and documents both his shop-floor start and the market purchases through which he built ownership; MMK reports corroborate the career route."
+      "reason": "Forbes explicitly classifies the fortune as self-made and documents the market purchases, while KHL and MMK records corroborate the shop-floor start and executive progression."
     },
     "source_ids": [
       "S1",
@@ -145,49 +170,52 @@
   "wealth_relationship": {
     "classification": "operator",
     "label": "Operator",
-    "summary": "Rashnikov did not found MMK; he progressed from the repair shop to senior management and chief executive, accumulated control and moved to the board chairmanship.",
+    "summary": "Rashnikov did not found MMK; he rose from its repair shop through technical management to general director, acquired control and retained the board chairmanship after leaving day-to-day management.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Forbes, KHL and MMK records consistently establish his long operational career, chief-executive tenure, ownership and chairmanship."
+      "reason": "Forbes, KHL, MMK records and established business reporting consistently document the operating career, leadership transition, ownership route and current chairmanship."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S4"
+      "S4",
+      "S5"
     ]
   },
   "biography": {
-    "plain_text": "Viktor Rashnikov is a Russian steel executive who joined Magnitogorsk Iron and Steel Works as a mechanic and trained as a metallurgical engineer while advancing through production roles. He later became chief executive, accumulated a controlling stake through market purchases and moved to the chairmanship. His long presidency of Metallurg Magnitogorsk added a sporting chapter.",
-    "html": "<p>Viktor Rashnikov is a Russian steel executive who joined Magnitogorsk Iron and Steel Works as a mechanic and trained as a metallurgical engineer while advancing through production roles. He later became chief executive, accumulated a controlling stake through market purchases and moved to the chairmanship. His long presidency of Metallurg Magnitogorsk added a sporting chapter.</p>\r\n",
-    "word_count": 55,
+    "plain_text": "Viktor Rashnikov is a Russian metallurgical engineer, controlling owner and board chairman of Magnitogorsk Iron and Steel Works. He joined MMK as a repair-shop mechanic, studied metal-forming engineering while working and advanced through production management to chief executive. Rashnikov built his ownership through market purchases before moving from day-to-day management to the chairmanship.",
+    "html": "<p>Viktor Rashnikov is a Russian metallurgical engineer, controlling owner and board chairman of Magnitogorsk Iron and Steel Works. He joined MMK as a repair-shop mechanic, studied metal-forming engineering while working and advanced through production management to chief executive. Rashnikov built his ownership through market purchases before moving from day-to-day management to the chairmanship.</p>\r\n",
+    "word_count": 53,
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Current Forbes, KHL and MMK material support his shop-floor start, engineering training, executive progression, ownership route, chairmanship and hockey-club presidency."
+      "reason": "Current Forbes and MMK records establish his ownership and chairmanship, while KHL, MMK and business-press records support his engineering training, shop-floor start, executive progression and market-purchase route to control."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S4"
+      "S4",
+      "S5"
     ]
   },
   "long_biography": {
-    "plain_text": "Born in Magnitogorsk, Viktor Rashnikov entered the city's steel works as a repair-shop mechanic. He studied metal-forming engineering while working and advanced through production, supply and technical posts before becoming chief executive. Over that career he accumulated shares through market purchases, eventually taking control of MMK and later moving from day-to-day management to the chairmanship.\n\nRashnikov's later public role stayed closely tied to Magnitogorsk. He became president of Metallurg Magnitogorsk, the city's ice-hockey club, and maintained the association alongside his leadership at MMK. The sporting commitment provides a durable second strand to a career formed almost entirely within the same industrial city and company.",
-    "html": "<p>Born in Magnitogorsk, Viktor Rashnikov entered the city's steel works as a repair-shop mechanic. He studied metal-forming engineering while working and advanced through production, supply and technical posts before becoming chief executive. Over that career he accumulated shares through market purchases, eventually taking control of MMK and later moving from day-to-day management to the chairmanship.</p>\r\n<p>Rashnikov's later public role stayed closely tied to Magnitogorsk. He became president of Metallurg Magnitogorsk, the city's ice-hockey club, and maintained the association alongside his leadership at MMK. The sporting commitment provides a durable second strand to a career formed almost entirely within the same industrial city and company.</p>\r\n",
-    "word_count": 104,
+    "plain_text": "Viktor Rashnikov entered Magnitogorsk Iron and Steel Works as a mechanic in its equipment-repair shop. He studied metal-forming engineering while working, then moved through production, supply and technical posts. That shop-floor experience preceded appointments as chief engineer and general director, giving him operational command of the mill.\n\nWhile running MMK, Rashnikov bought shares on the market until he secured control of the steelmaker. He later transferred day-to-day management to a successor but retained the board chairmanship. Control now sits through Altair, the holding company that directly controls MMK and identifies Rashnikov as its beneficiary.",
+    "html": "<p>Viktor Rashnikov entered Magnitogorsk Iron and Steel Works as a mechanic in its equipment-repair shop. He studied metal-forming engineering while working, then moved through production, supply and technical posts. That shop-floor experience preceded appointments as chief engineer and general director, giving him operational command of the mill.</p>\r\n<p>While running MMK, Rashnikov bought shares on the market until he secured control of the steelmaker. He later transferred day-to-day management to a successor but retained the board chairmanship. Control now sits through Altair, the holding company that directly controls MMK and identifies Rashnikov as its beneficiary.</p>\r\n",
+    "word_count": 94,
     "confidence": {
       "score": 98,
       "band": "very_high",
-      "reason": "Forbes, KHL and MMK material support his birthplace, shop-floor start, studies, career progression, ownership route, chairmanship and long hockey-club role."
+      "reason": "Forbes, KHL, MMK reports and established business reporting support the operating sequence, engineering education, general-director role, market purchases, leadership transition and current Altair control structure."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S4"
+      "S4",
+      "S5"
     ]
   },
   "proposed_details": [
@@ -199,10 +227,9 @@
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "The official KHL biography and MMK reports give the patronymic as Filippovich without the erroneous leading space in the source value."
+        "reason": "KHL and MMK records give the patronymic as Filippovich without the erroneous leading space in the source value."
       },
       "source_ids": [
-        "S2",
         "S3",
         "S4"
       ]
@@ -214,7 +241,7 @@
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "Current Forbes and KHL biographies identify Rashnikov as MMK's majority owner and board chairman."
+        "reason": "Current Forbes identifies Rashnikov as MMK's majority owner, while MMK's 2026 report confirms that he is board chairman and beneficiary of the holding company that controls MMK."
       },
       "source_ids": [
         "S1",
@@ -226,30 +253,30 @@
       "field": "place_of_birth",
       "value": "Magnitogorsk",
       "confidence": {
-        "score": 100,
+        "score": 99,
         "band": "very_high",
-        "reason": "The official KHL biography gives Magnitogorsk as his birthplace, corroborated by Bloomberg's current biographical profile."
+        "reason": "KHL's detailed biography gives Magnitogorsk as Rashnikov's birthplace and matches his full name, birth date and MMK career."
       },
       "source_ids": [
-        "S2",
-        "S5"
+        "S3"
       ]
     },
     {
+      "action": "correct_existing",
       "field": "biography",
       "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Viktor_Rashnikov\">Viktor Filippovich Rashnikov</a> is a Russian business magnate worth billions of dollars. He is the majority owner of <a href=\"https://en.wikipedia.org/wiki/Magnitogorsk_Iron_and_Steel_Works\">Magnitogorsk Iron &amp; Steel Works</a> (MMK), one of the world&#39;s biggest steel producers, and an oligarch who gained his fortune in the iron and steel sector.</p>\r\n",
-      "value": "<p>Viktor Rashnikov is a Russian steel executive who joined Magnitogorsk Iron and Steel Works as a mechanic and trained as a metallurgical engineer while advancing through production roles. He later became chief executive, accumulated a controlling stake through market purchases and moved to the chairmanship. His long presidency of Metallurg Magnitogorsk added a sporting chapter.</p>\r\n",
-      "action": "correct_existing",
+      "value": "<p>Viktor Rashnikov is a Russian metallurgical engineer, controlling owner and board chairman of Magnitogorsk Iron and Steel Works. He joined MMK as a repair-shop mechanic, studied metal-forming engineering while working and advanced through production management to chief executive. Rashnikov built his ownership through market purchases before moving from day-to-day management to the chairmanship.</p>\r\n",
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "The replacement removes generic and transient wealth language and provides a durable, source-backed account of Rashnikov's operator-to-owner route and long hockey-club role."
+        "reason": "The replacement removes generic and transient wealth language and supplies a concise, durable account of Rashnikov's verified operator-to-owner progression."
       },
       "source_ids": [
         "S1",
         "S2",
         "S3",
-        "S4"
+        "S4",
+        "S5"
       ]
     }
   ],
@@ -258,7 +285,7 @@
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/viktor-rashnikov/",
-      "verification": "The dedicated current Forbes profile matches Rashnikov's MMK majority ownership, career from mechanic to chief executive, source of wealth, birth year, citizenship and hockey-club presidency.",
+      "verification": "The dedicated Forbes profile matches Rashnikov's MMK majority ownership, mechanic-to-chief-executive career, market-purchase route to control, birth year and Russian identity.",
       "confidence": {
         "score": 99,
         "band": "very_high",
@@ -272,11 +299,11 @@
       "type_id": "14",
       "type": "Company Website",
       "url": "https://mmk.ru/en/",
-      "verification": "This is MMK's official corporate domain; current Forbes and KHL biographies identify Rashnikov as its majority owner and board chairman.",
+      "verification": "This is MMK's official corporate domain; current Forbes and MMK records establish Rashnikov's majority ownership, beneficial control and board chairmanship.",
       "confidence": {
         "score": 99,
         "band": "very_high",
-        "reason": "MMK is Rashnikov's principal operating company, and his ownership and leadership relationship is directly established by current and official sources."
+        "reason": "MMK is Rashnikov's principal operating company, and his current ownership and leadership relationship is established by independent and company sources."
       },
       "source_ids": [
         "S1",
@@ -295,20 +322,32 @@
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "Exact identity and verified Forbes profile",
-        "Russian citizenship and Magnitogorsk residence",
-        "MMK majority ownership and chairmanship",
+        "Exact identity and verified dedicated Forbes profile",
+        "MMK majority ownership and board chairmanship",
         "Steel as source of wealth",
         "Self-made wealth origin",
         "Mechanic start at MMK",
         "Market purchases as route to ownership",
-        "Chief-executive tenure",
-        "Metallurg Magnitogorsk presidency",
-        "Current living status"
+        "Chief-executive tenure and later handover of day-to-day management",
+        "Control through Altair"
       ]
     },
     {
       "id": "S2",
+      "url": "https://www.marketscreener.com/news/magnitogorsk-iron-steel-works-report-concluded-by-pjsc-mmk-in-reporting-2025-the-transactions-in-ce7f5addd98bf621",
+      "title": "Report on related-party transactions concluded by PJSC MMK in 2025",
+      "publisher": "Magnitogorsk Iron & Steel Works, distributed by Publicnow",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Viktor F. Rashnikov as current chairman of MMK's board of directors",
+        "Altair as the company that directly controls MMK",
+        "Rashnikov as beneficiary of Altair",
+        "Current beneficial-control structure reported in May 2026"
+      ]
+    },
+    {
+      "id": "S3",
       "url": "https://www.khl.ru/news/2023/10/13/521143.html",
       "title": "A Very Personal Matter: Viktor Rashnikov Turns 75",
       "publisher": "Kontinental Hockey League",
@@ -316,28 +355,10 @@
       "accessed_at": "2026-07-28",
       "supports": [
         "Full name Viktor Filippovich Rashnikov",
-        "Magnitogorsk birthplace",
+        "13 October 1948 birth date and Magnitogorsk birthplace",
         "Russian metallurgical-engineer identity",
-        "MMK chief-executive and board-chair progression",
-        "MMK majority ownership",
-        "Metallurg Magnitogorsk presidency",
-        "Long personal commitment to the hockey club"
-      ]
-    },
-    {
-      "id": "S3",
-      "url": "https://www.akm.ru/upload/akmrating/MMK_annual_report_2020.pdf",
-      "title": "MMK Annual Report 2020",
-      "publisher": "Magnitogorsk Iron & Steel Works",
-      "tier": 1,
-      "accessed_at": "2026-07-28",
-      "supports": [
-        "Full name",
-        "MMK board chairmanship",
-        "Work at MMK from 1967",
-        "Engineering education",
-        "Technical and executive career history",
-        "Metallurg Magnitogorsk presidency"
+        "MMK general-director and board-chair progression",
+        "MMK majority ownership"
       ]
     },
     {
@@ -348,29 +369,24 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "Full name",
-        "Russian citizenship",
-        "MMK board chairmanship",
-        "Career from mechanic through production, engineering and management roles",
-        "Chief-executive tenure",
-        "Metallurg Magnitogorsk presidency"
+        "Full name and Russian citizenship",
+        "Work at MMK from 1967 and engineering education",
+        "Career from mechanic through production, supply, technical and management posts",
+        "Chief-engineer, general-director and board-chair roles"
       ]
     },
     {
       "id": "S5",
-      "url": "https://www.bloomberg.com/billionaires/profiles/victor-f-rashnikov/",
-      "title": "Bloomberg Billionaires Index: Victor Rashnikov",
-      "publisher": "Bloomberg",
+      "url": "https://www.vedomosti.ru/business/articles/2011/04/21/dubler_rashnikova",
+      "title": "Дублер Рашникова",
+      "publisher": "Vedomosti",
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "Exact identity",
-        "Magnitogorsk birthplace and 1948 birth year",
         "Mechanic start at MMK",
-        "Engineering education while working",
-        "Progression to chief engineer and chief executive",
-        "Market purchases of MMK shares",
-        "MMK chairmanship"
+        "Appointment as general director",
+        "Progression to principal ownership",
+        "Transfer of day-to-day management while retaining the board chairmanship"
       ]
     },
     {
@@ -386,29 +402,15 @@
     }
   ],
   "uncertainties": [
-    {
-      "topic": "Personal social accounts",
-      "detail": "No personal LinkedIn, Instagram, Facebook, X, YouTube, TikTok or personal website met the identity-verification threshold; absent or unrelated results were not proposed."
-    },
-    {
-      "topic": "Secondary nationality",
-      "detail": "No reliable evidence of a secondary nationality was found, so the blank was preserved rather than inferred."
-    },
-    {
-      "topic": "Middle-name formatting",
-      "detail": "The leading space in the existing middle_names value is treated as a formatting error and removed while preserving the verified patronymic."
-    },
-    {
-      "topic": "System-managed age fields",
-      "detail": "The source owner's birth-age fields contain a dated 2020 calculation. They are system-managed and were not proposed for manual correction."
-    },
-    {
-      "topic": "Other blank fields",
-      "detail": "Title, suffix, secondary residence, death, internal-note and unknown-name fields remain optional, inapplicable or system-managed rather than enrichment targets."
-    }
+    "No personal LinkedIn, Instagram, Facebook, Twitter/X, YouTube, TikTok or personal website met the identity-verification threshold; corporate or unrelated accounts were not proposed.",
+    "No reliable evidence of a secondary nationality was found, so the blank was preserved rather than inferred.",
+    "The leading space in the existing middle_names value is treated as a formatting error and removed while preserving the verified patronymic.",
+    "The source owner's birth-age fields contain a dated 2020 calculation. They are system-managed and were not proposed for manual correction.",
+    "The existing Wikipedia link was preserved in the input snapshot and was not duplicated as a proposal.",
+    "Blank title, suffix, secondary residence, death, internal-note and unknown-name fields remain optional, inapplicable or system-managed rather than enrichment targets."
   ],
   "review": {
     "status": "pending",
-    "notes": "The operator-to-owner route and hockey-club chapter are supported by current Forbes, KHL and MMK material. Review should confirm the middle-name whitespace correction and the two missing-detail proposals."
+    "notes": "The dossier uses current Forbes and a 2026 MMK report for ownership and role verification, with KHL, MMK and Vedomosti material supporting the operator-to-owner history. Review should confirm the patronymic whitespace correction and the two missing-detail proposals."
   }
 }

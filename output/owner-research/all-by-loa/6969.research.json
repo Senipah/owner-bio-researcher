@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 6969,
@@ -7,7 +7,7 @@
     "identity_confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "The exact Forbes profile, SCM founder biography, official Shakhtar profile and Ukrainian institutional records identify the same Donetsk-born businessman under his full Rinat Leonidovych Akhmetov name."
+      "reason": "The current exact Forbes profile, SCM founder biography, Shakhtar profile and Ukrainian institutional records identify the same Donetsk-born businessman under his full Rinat Leonidovych Akhmetov name."
     }
   },
   "input_snapshot": {
@@ -83,25 +83,44 @@
       "16": "TikTok"
     }
   },
+  "research_status": "complete",
   "biography_brief": {
-    "durable_identity": "Ukrainian industrialist, founder and sole shareholder of SCM.",
-    "wealth_or_prominence_route": "Industrial raw-materials trading led to investments in coking coal, coke and metallurgical plants, followed by vertical integration in mining and steel.",
-    "turning_point": "Akhmetov established SCM to organise and manage the industrial portfolio, with Metinvest becoming its mining-and-metals core.",
-    "later_chapter": "As owner and president of Shakhtar Donetsk, he invested in an academy, training facilities, a stadium and international recruitment as the club achieved sustained domestic and European success.",
-    "character_detail": "He has explicitly linked the turnaround logic of underperforming industrial assets to his approach in football: invest in people and infrastructure, then compete internationally.",
+    "durable_identity": "Rinat Akhmetov is a Ukrainian industrialist, founder and sole shareholder of SCM, and owner and president of Shakhtar Donetsk.",
+    "defining_work": "He assembled a vertically integrated mining-and-steel business from coal and coke trading and investments in metallurgical plants, with Metinvest becoming SCM's industrial core.",
+    "formative_context": "The son of a coal miner, Akhmetov grew up in Donetsk and entered business as Ukraine's post-Soviet industrial economy was being reorganised.",
+    "decisive_moment": "He established SCM to structure and manage the industrial portfolio, then developed separate mining-and-metals and energy holdings.",
+    "enduring_dimensions": [
+      "Sole ownership of the wider SCM investment group, including Metinvest, DTEK and businesses in several other sectors",
+      "Long-term ownership and presidency of Shakhtar Donetsk, with sustained investment in its academy, facilities and international recruitment",
+      "Health, child-welfare and humanitarian programmes developed through the Rinat Akhmetov Foundation"
+    ],
+    "character_detail": "Akhmetov has described a common operating emphasis in industry and football: acquire an underperforming institution, invest in people and infrastructure, and compete internationally.",
+    "opening_options": [
+      {
+        "mode": "defining_achievement",
+        "angle": "Open with Akhmetov's assembly of SCM through vertically integrated mining and steel investments."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Open with the childhood Shakhtar supporter watching matches from rocks outside the stadium, then reveal his later ownership and institution-building."
+      }
+    ],
     "excluded_transient_context": [
-      "Current and former vessel ownership",
-      "Current net worth and wealth ranking",
-      "Current portfolio valuations and annual figures",
-      "Transient wartime losses and donation totals",
-      "Unrequested allegations, crime and political disputes"
+      "Current or former vessel ownership, construction projects and LOA ranking",
+      "Current net worth and wealth rankings",
+      "Current portfolio valuations, production totals and annual financial figures",
+      "Transient wartime asset-loss and donation totals",
+      "Unrequested allegations, political controversy and other sensitive disputes",
+      "Source attribution and classification deliberation"
     ],
     "source_ids": [
       "S1",
       "S2",
       "S3",
       "S4",
-      "S5"
+      "S5",
+      "S8",
+      "S9"
     ]
   },
   "editorial_assessment": {
@@ -110,13 +129,16 @@
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "defining_achievement",
+    "narrative_shape": "core_work_deepened",
     "calibration_archetypes": [
       "founder_operator"
     ],
-    "notes": "The biographies trace industrial trading into integrated mining and steel, then use Akhmetov's parallel investment in Shakhtar's people and infrastructure as the distinct later chapter."
+    "notes": "The long profile opens with SCM's industrial assembly, deepens the institution-building approach through Shakhtar, and closes on specific fields of sustained foundation work."
   },
   "editorial_note": null,
-  "research_status": "complete",
   "forbes_profile": {
     "status": "verified",
     "url": "https://www.forbes.com/profile/rinat-akhmetov/",
@@ -131,15 +153,16 @@
     "label": "Metals & Mining",
     "summary": "Akhmetov's private wealth was built principally through coking coal, mining and steel assets, now organised within SCM and centred on the vertically integrated Metinvest business.",
     "confidence": {
-      "score": 97,
+      "score": 98,
       "band": "very_high",
-      "reason": "Forbes gives steel and coal as the source of wealth, while SCM and a current independent interview document the trading, plant-acquisition and vertical-integration route into mining and metals."
+      "reason": "Forbes gives steel and coal as the source of wealth, while SCM, Bloomberg and a current independent interview document the trading, plant-acquisition and vertical-integration route into mining and metals."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S4"
+      "S4",
+      "S8"
     ]
   },
   "wealth_origin": {
@@ -147,14 +170,15 @@
     "label": "Self-made",
     "summary": "Akhmetov moved from trading coal, coke and industrial products into buying stakes in metallurgical businesses and assembling an integrated industrial portfolio.",
     "confidence": {
-      "score": 96,
+      "score": 97,
       "band": "very_high",
-      "reason": "Forbes explicitly classifies him as self-made, and SCM's history is corroborated by a current independent interview describing the trading-to-industrial-investment sequence."
+      "reason": "Forbes explicitly classifies him as self-made, while SCM, Bloomberg and his current independent interview describe the progression from trading to industrial investment."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S4"
+      "S4",
+      "S8"
     ]
   },
   "wealth_relationship": {
@@ -173,44 +197,48 @@
     ]
   },
   "biography": {
-    "plain_text": "Rinat Akhmetov is a Ukrainian industrialist who built SCM from trading and investments in coking coal, coke and metals. He consolidated mining and steel assets into an integrated business centred on Metinvest. Beyond industry, his long stewardship of Shakhtar Donetsk transformed an under-resourced club through investment in players, facilities and youth development.",
-    "html": "<p>Rinat Akhmetov is a Ukrainian industrialist who built SCM from trading and investments in coking coal, coke and metals. He consolidated mining and steel assets into an integrated business centred on Metinvest. Beyond industry, his long stewardship of Shakhtar Donetsk transformed an under-resourced club through investment in players, facilities and youth development.</p>\r\n",
-    "word_count": 52,
+    "plain_text": "Rinat Akhmetov is a Ukrainian industrialist who founded and solely owns SCM. Beginning with coal and coke trading, he acquired metallurgical stakes and built a vertically integrated mining-and-steel business centred on Metinvest. SCM also includes major energy holdings; Akhmetov owns Shakhtar Donetsk and established a charitable foundation focused on social and humanitarian programmes.",
+    "html": "<p>Rinat Akhmetov is a Ukrainian industrialist who founded and solely owns SCM. Beginning with coal and coke trading, he acquired metallurgical stakes and built a vertically integrated mining-and-steel business centred on Metinvest. SCM also includes major energy holdings; Akhmetov owns Shakhtar Donetsk and established a charitable foundation focused on social and humanitarian programmes.</p>\r\n",
+    "word_count": 53,
     "confidence": {
-      "score": 96,
+      "score": 97,
       "band": "very_high",
-      "reason": "Forbes, SCM and a current independent interview support the industrial route, while SCM and Shakhtar's official profile support the club's starting position and investment in players, facilities and youth development."
+      "reason": "Forbes, SCM, Bloomberg and Akhmetov's current interview support the industrial route and ownership, while SCM, Shakhtar and the foundation document the energy, football and charitable dimensions."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
       "S4",
-      "S5"
+      "S5",
+      "S8",
+      "S9"
     ]
   },
   "long_biography": {
-    "plain_text": "Industrial raw-materials trading gave Rinat Akhmetov his entry into business after the Soviet collapse. He focused on coking coal, coke and metals, then acquired minority stakes in coke and metallurgical plants. By pursuing vertical integration and buying larger industrial assets, he assembled the portfolio that became SCM, with Metinvest as its mining-and-steel core.\n\nFootball became a parallel test of his investment approach. Akhmetov took charge of Shakhtar Donetsk when the club lacked a stadium and training base, then backed an academy, facilities and international recruitment. The club grew into a regular domestic champion and won the UEFA Cup, turning a childhood allegiance into a sustained institution-building project.",
-    "html": "<p>Industrial raw-materials trading gave Rinat Akhmetov his entry into business after the Soviet collapse. He focused on coking coal, coke and metals, then acquired minority stakes in coke and metallurgical plants. By pursuing vertical integration and buying larger industrial assets, he assembled the portfolio that became SCM, with Metinvest as its mining-and-steel core.</p>\r\n<p>Football became a parallel test of his investment approach. Akhmetov took charge of Shakhtar Donetsk when the club lacked a stadium and training base, then backed an academy, facilities and international recruitment. The club grew into a regular domestic champion and won the UEFA Cup, turning a childhood allegiance into a sustained institution-building project.</p>\r\n",
-    "word_count": 107,
+    "plain_text": "Rinat Akhmetov assembled SCM by moving from coal and coke trading into stakes in metallurgical plants, then combining mining and steel assets through vertical integration. Metinvest became the industrial core, while SCM also developed energy and other businesses under a common investment structure.\n\nAkhmetov has owned and presided over Shakhtar Donetsk since 1996. He took over a club without its own stadium or training base, then funded an academy, facilities and international recruitment. Shakhtar broke Dynamo Kyiv's domestic dominance and won the UEFA Cup. His charitable foundation has supported cancer care, adoption reform and emergency aid.",
+    "html": "<p>Rinat Akhmetov assembled SCM by moving from coal and coke trading into stakes in metallurgical plants, then combining mining and steel assets through vertical integration. Metinvest became the industrial core, while SCM also developed energy and other businesses under a common investment structure.</p>\r\n<p>Akhmetov has owned and presided over Shakhtar Donetsk since 1996. He took over a club without its own stadium or training base, then funded an academy, facilities and international recruitment. Shakhtar broke Dynamo Kyiv's domestic dominance and won the UEFA Cup. His charitable foundation has supported cancer care, adoption reform and emergency aid.</p>\r\n",
+    "word_count": 96,
     "confidence": {
       "score": 96,
       "band": "very_high",
-      "reason": "SCM and a current independent interview establish the industrial sequence and Akhmetov's stated parallel with football; official SCM and Shakhtar sources document the academy, infrastructure, recruitment and competitive outcome."
+      "reason": "SCM, Forbes, Bloomberg and the current Guardian interview establish the industrial sequence; current first-party Shakhtar and foundation sources document the club presidency, infrastructure, competitive outcome and charitable programmes."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
       "S4",
-      "S5"
+      "S5",
+      "S8",
+      "S9"
     ]
   },
   "proposed_details": [
     {
-      "action": "fill_missing",
       "field": "middle_names",
       "value": "Leonidovych",
+      "action": "fill_missing",
       "confidence": {
         "score": 98,
         "band": "very_high",
@@ -222,13 +250,13 @@
       ]
     },
     {
-      "action": "fill_missing",
       "field": "main_residence_country",
       "value": "Ukraine",
+      "action": "fill_missing",
       "confidence": {
         "score": 97,
         "band": "very_high",
-        "reason": "The current Forbes profile gives Ukraine as his residence country, and a May 2026 interview located him in Ukraine and recorded that he remains there permanently."
+        "reason": "The current Forbes profile gives Ukraine as his residence country, and a May 2026 interview conducted at his home near Kyiv records that he remains in Ukraine permanently."
       },
       "source_ids": [
         "S1",
@@ -236,9 +264,9 @@
       ]
     },
     {
-      "action": "fill_missing",
       "field": "known_for_title",
       "value": "Founder and sole shareholder of SCM",
+      "action": "fill_missing",
       "confidence": {
         "score": 99,
         "band": "very_high",
@@ -249,9 +277,9 @@
       ]
     },
     {
-      "action": "fill_missing",
       "field": "place_of_birth",
       "value": "Donetsk",
+      "action": "fill_missing",
       "confidence": {
         "score": 98,
         "band": "very_high",
@@ -262,9 +290,9 @@
       ]
     },
     {
-      "action": "fill_missing",
       "field": "birth_country",
       "value": "Ukraine",
+      "action": "fill_missing",
       "confidence": {
         "score": 96,
         "band": "very_high",
@@ -273,6 +301,25 @@
       "source_ids": [
         "S6"
       ]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Rinat Akhmetov is a Ukrainian industrialist who founded and solely owns SCM. Beginning with coal and coke trading, he acquired metallurgical stakes and built a vertically integrated mining-and-steel business centred on Metinvest. SCM also includes major energy holdings; Akhmetov owns Shakhtar Donetsk and established a charitable foundation focused on social and humanitarian programmes.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The biography gives a durable, sourced account of Akhmetov's SCM ownership, metals-and-mining wealth route, energy holdings, football ownership and charitable work."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S8",
+        "S9"
+      ]
     }
   ],
   "proposed_socials": [
@@ -280,7 +327,7 @@
       "type_id": "11",
       "type": "Forbes",
       "url": "https://www.forbes.com/profile/rinat-akhmetov/",
-      "verification": "The current exact-name profile matches Akhmetov's Ukrainian citizenship, Donetsk background, steel-and-coal wealth source, self-made status, mining acquisitions, SCM businesses and Shakhtar connection; type ID 11 is copied from the owner input lookup.",
+      "verification": "The current exact-name profile matches Akhmetov's Ukrainian citizenship, Donetsk background, steel-and-coal wealth source, self-made status, mining acquisitions, SCM businesses and Shakhtar connection.",
       "confidence": {
         "score": 99,
         "band": "very_high",
@@ -294,7 +341,7 @@
       "type_id": "14",
       "type": "Company Website",
       "url": "https://scm.global/about-us/rinat-akhmetov/",
-      "verification": "SCM's official individual page identifies Akhmetov as its founder and sole shareholder and documents the industrial portfolio's development; type ID 14 is copied from the owner input lookup.",
+      "verification": "SCM's official individual page identifies Akhmetov as its founder and sole shareholder and documents the industrial portfolio's development.",
       "confidence": {
         "score": 99,
         "band": "very_high",
@@ -315,17 +362,16 @@
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
-        "verified Forbes profile",
-        "Ukrainian citizenship",
+        "Exact identity and verified Forbes profile",
+        "Ukrainian citizenship and residence country",
         "Donetsk background",
-        "steel and coal as sources of wealth",
-        "self-made status",
-        "mining-asset acquisitions",
+        "Steel and coal as sources of wealth",
+        "Self-made wealth origin",
+        "Mining-asset acquisitions",
         "Metinvest mining and steel interests",
+        "DTEK energy interests",
         "SCM business interests",
-        "current living status",
-        "Ukraine residence",
+        "Current living status",
         "Shakhtar connection"
       ]
     },
@@ -337,17 +383,18 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
+        "Exact identity",
         "SCM founder and sole shareholder status",
-        "early industrial-materials trading",
-        "coking coal, coke and metals value-chain focus",
-        "minority industrial stake acquisitions",
-        "vertical integration in mining and steel",
-        "industrial asset acquisitions",
+        "Early industrial-materials trading",
+        "Coking coal, coke and metals value-chain focus",
+        "Minority industrial stake acquisitions",
+        "Vertical integration in mining and steel",
+        "Industrial asset acquisitions",
         "SCM founding",
         "Shakhtar ownership and presidency",
-        "football academy and infrastructure",
-        "official company profile URL"
+        "Football academy and infrastructure",
+        "Foundation establishment and charitable work",
+        "Official company profile URL"
       ]
     },
     {
@@ -360,10 +407,12 @@
       "supports": [
         "SCM founding by Rinat Akhmetov",
         "SCM establishment in Donetsk",
-        "portfolio structuring and corporate management",
-        "vertical integration",
+        "Portfolio structuring and corporate management",
+        "Vertical integration",
         "Metinvest mining and metals business",
-        "development of industrial assets"
+        "DTEK energy business",
+        "Diversification into other sectors",
+        "Development of industrial assets"
       ]
     },
     {
@@ -374,17 +423,18 @@
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
-        "current presence in Ukraine",
+        "Exact identity and current living status",
+        "Current presence and home in Ukraine",
         "Donetsk upbringing",
-        "early coal and coke trading",
-        "minority stakes in industrial companies",
-        "metallurgical investments",
+        "Early coal and coke trading",
+        "Minority stakes in industrial companies",
+        "Metallurgical investments",
         "Shakhtar ownership and presidency",
-        "club's under-resourced starting position",
-        "international recruitment",
-        "childhood support for Shakhtar",
-        "parallel between industrial and football investment"
+        "Club's under-resourced starting position",
+        "International recruitment",
+        "Domestic championship and UEFA Cup outcomes",
+        "Childhood support for Shakhtar",
+        "Parallel between industrial and football investment"
       ]
     },
     {
@@ -395,13 +445,12 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
-        "exact birth date",
-        "club president role",
-        "football academy",
-        "training infrastructure",
-        "stadium development",
-        "domestic championships",
+        "Exact identity and birth date",
+        "Current club president role",
+        "Football academy",
+        "Training infrastructure",
+        "Stadium development",
+        "Domestic championships",
         "UEFA Cup victory"
       ]
     },
@@ -413,12 +462,12 @@
       "tier": 3,
       "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
-        "full Ukrainian-form name",
+        "Exact identity",
+        "Full Ukrainian-form name",
         "Leonidovych patronymic",
         "21 September 1966 birth date",
         "Donetsk birthplace",
-        "business and football roles"
+        "Business and football roles"
       ]
     },
     {
@@ -429,24 +478,75 @@
       "tier": 1,
       "accessed_at": "2026-07-28",
       "supports": [
-        "identity",
-        "full Ukrainian-form name",
+        "Exact identity",
+        "Full Ukrainian-form name",
         "Leonidovych patronymic",
-        "exact birth date"
+        "Exact birth date"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.bloomberg.com/billionaires/profiles/rinat-l-akhmetov/",
+      "title": "Rinat Akhmetov",
+      "publisher": "Bloomberg Billionaires Index",
+      "tier": 2,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Exact identity",
+        "Donetsk industrial background",
+        "Coal-trading business origin",
+        "Consolidation of steel and coal-mining companies",
+        "Metals-and-mining wealth mechanism"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://akhmetovfoundation.org/en/20-rokiv",
+      "title": "20 Years. Always Together",
+      "publisher": "Rinat Akhmetov Foundation",
+      "tier": 1,
+      "accessed_at": "2026-07-28",
+      "supports": [
+        "Foundation established by Rinat Akhmetov",
+        "Systematic charitable activity",
+        "Cancer diagnosis and treatment programmes",
+        "Child welfare and national adoption work",
+        "Humanitarian assistance for civilians"
       ]
     }
   ],
   "uncertainties": [
-    "SCM also holds energy and other businesses, but current Forbes attribution and the documented business-building route identify steel, coal, mining and metallurgy as the principal basis of Akhmetov's fortune.",
-    "The proposed Ukraine residence is country-level only. Current sources place Akhmetov in Ukraine, while the Forbes profile retains Donetsk as its residence label despite noting that he has not returned there for years.",
-    "The birth-country proposal uses the owner schema's current country label, Ukraine, for a person born in Donetsk in the former Ukrainian Soviet Socialist Republic.",
-    "No second nationality was evidenced. Tatar ancestry or ethnicity was not treated as citizenship.",
-    "No personal LinkedIn, Instagram, X/Twitter, Facebook, YouTube, TikTok or dedicated personal website met the identity-verification threshold; institutional SCM, foundation and Shakhtar accounts were not substituted for personal profiles.",
-    "The existing Wikipedia profile was retained in the input but was not used as evidence or duplicated as a proposal.",
-    "Blank title, suffix, secondary residence, calculated age, death, internal-notes and unknown-name fields were treated as optional, inapplicable while alive or system fields rather than enrichment targets."
+    {
+      "topic": "Industry balance",
+      "detail": "SCM also holds a substantial energy business and other investments, but current Forbes attribution and the documented business-building route identify steel, coal, mining and metallurgy as the principal basis of Akhmetov's fortune."
+    },
+    {
+      "topic": "Residence precision",
+      "detail": "The proposal is country-level only. Forbes retains Donetsk as its location label while noting that Akhmetov has not returned there for years; a current interview conducted near Kyiv establishes that he remains in Ukraine."
+    },
+    {
+      "topic": "Birth-country label",
+      "detail": "The birth-country proposal uses the owner schema's current country label, Ukraine, for a person born in Donetsk in the former Ukrainian Soviet Socialist Republic."
+    },
+    {
+      "topic": "Secondary nationality",
+      "detail": "No second citizenship was established. Tatar ancestry or ethnicity was not treated as nationality."
+    },
+    {
+      "topic": "Personal social accounts",
+      "detail": "No personal LinkedIn, Instagram, X, Facebook, YouTube, TikTok or dedicated personal website met the identity-verification threshold. Namesakes and institutional SCM, foundation and Shakhtar accounts were rejected as personal links."
+    },
+    {
+      "topic": "Existing Wikipedia link",
+      "detail": "The existing Wikipedia profile was retained but was neither used as evidence nor duplicated as a proposal."
+    },
+    {
+      "topic": "Other blank fields",
+      "detail": "Title, suffix, secondary residence, calculated age, death, internal-notes and unknown-name fields remain optional, inapplicable while alive or system-managed rather than enrichment targets."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": null
+    "notes": "Identity, SCM ownership and the Metals & Mining / Self-made / Founder classifications are strongly supported. Reviewer attention is limited to the country-level residence proposal and absence of identity-verified personal social accounts."
   }
 }

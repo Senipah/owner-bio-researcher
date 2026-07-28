@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": 93,
@@ -7,7 +7,7 @@
     "identity_confidence": {
       "score": 100,
       "band": "very_high",
-      "reason": "The exact name, current UAE and Dubai offices, Al Maktoum lineage, Dubai geography, and official personal links consistently identify the same person."
+      "reason": "The exact name, current UAE and Dubai offices, Al Maktoum lineage, birth details and official personal links consistently identify the same person."
     }
   },
   "input_snapshot": {
@@ -72,20 +72,42 @@
   "research_status": "limited",
   "biography_brief": {
     "durable_identity": "Emirati ruler and federal statesman serving as Vice President and Prime Minister of the UAE and Ruler of Dubai.",
-    "wealth_or_prominence_route": "His public prominence follows hereditary succession within Dubai's Al Maktoum ruling family and preparation from childhood for government responsibilities.",
-    "turning_point": "Early appointments in security, aviation, and the Jebel Ali Free Zone placed him at the centre of Dubai's state-building before his succession as Ruler.",
-    "later_chapter": "As Ruler and Prime Minister, he has pursued international aviation, trade, tourism, infrastructure, and public-administration development.",
-    "character_detail": "A lifelong involvement with horses developed into the international Godolphin racing and breeding organisation.",
+    "defining_work": "Public leadership associated with Dubai's development as an international centre for aviation and trade, alongside programmes to modernise government administration.",
+    "formative_context": "Raised within the Al Maktoum ruling family, he was prepared for government responsibilities and trained in Britain before entering public service.",
+    "decisive_moment": "After decades in security, defence, aviation and free-zone roles, he succeeded as Ruler of Dubai and became UAE Vice President and Prime Minister.",
+    "enduring_dimensions": [
+      "Infrastructure, trade and public-administration development",
+      "Education and international humanitarian initiatives",
+      "Equestrian sport through Godolphin and endurance riding"
+    ],
+    "character_detail": "A lifelong interest in horses developed into an international racing and breeding organisation and competitive endurance riding.",
+    "opening_options": [
+      {
+        "mode": "inherited_responsibility",
+        "angle": "Open with the decades of public responsibility that preceded his hereditary succession as Ruler."
+      },
+      {
+        "mode": "present_identity",
+        "angle": "Open with his current federal and emirate offices before selecting the most durable elements of his public programme."
+      },
+      {
+        "mode": "public_contribution",
+        "angle": "Open with government modernisation and humanitarian initiatives before supplying the ruling-family formation."
+      }
+    ],
     "excluded_transient_context": [
       "Current and former personal vessel ownership",
-      "Vessel names, dimensions, builders, and ownership histories",
+      "Vessel names, dimensions, builders and ownership histories",
       "Current wealth estimates and rankings",
-      "Current valuations of office-held or government assets"
+      "Government, crown, sovereign and office-held assets presented as personal property",
+      "Source publishers, confidence language and wealth-classification deliberation"
     ],
     "source_ids": [
       "S1",
       "S2",
       "S3",
+      "S4",
+      "S5",
       "S6"
     ]
   },
@@ -95,10 +117,14 @@
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "inherited_responsibility",
+    "narrative_shape": "inheritance_then_stewardship",
     "calibration_archetypes": [
       "royal_public_office"
     ],
-    "notes": "The biographies explain formation, succession, state-building, and equestrian patronage without discussing wealth-taxonomy reasoning, current vessels, or the state-versus-private asset boundary."
+    "notes": "The longer profile opens on the public responsibilities that preceded succession, moves through current state leadership, and ends with a concrete equestrian role. It keeps personal-versus-government asset analysis and all vessel context outside the published prose."
   },
   "editorial_note": null,
   "forbes_profile": {
@@ -107,13 +133,13 @@
     "confidence": {
       "score": 94,
       "band": "high",
-      "reason": "Focused exact-name and site:forbes.com/profile searches found Forbes articles and historic gallery entries, but no matching current individual Forbes profile."
+      "reason": "Focused exact-name and site:forbes.com/profile searches found Forbes articles and historic ruler coverage, but no matching current individual Forbes profile."
     }
   },
   "primary_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Reliable sources do not identify a private sector that principally underpins Sheikh Mohammed's personal wealth. Dubai Holding is legally government-owned; Godolphin establishes personal racing and breeding activity without demonstrating that it is the dominant wealth source.",
+    "summary": "Reliable public evidence does not establish the principal sector of Sheikh Mohammed's personal wealth. Dubai Holding is government-owned, while Godolphin confirms a personal racing and breeding operation without establishing that it dominates his private holdings.",
     "confidence": {
       "score": 94,
       "band": "high",
@@ -127,11 +153,11 @@
   "wealth_origin": {
     "classification": "dynastic_royal",
     "label": "Dynastic / royal",
-    "summary": "His access to family position and associated wealth principally follows birth into Dubai's hereditary Al Maktoum ruling dynasty.",
+    "summary": "Access to associated family wealth principally follows birth into Dubai's hereditary Al Maktoum ruling dynasty.",
     "confidence": {
       "score": 97,
       "band": "very_high",
-      "reason": "Current official Dubai sources directly document his ruling-family lineage, preparation for government, and succession."
+      "reason": "Current official UAE and Dubai sources directly document his ruling-family lineage, preparation for government and succession."
     },
     "source_ids": [
       "S1",
@@ -142,7 +168,7 @@
   "wealth_relationship": {
     "classification": "royal_beneficiary",
     "label": "Royal beneficiary",
-    "summary": "Royal beneficiary is the best-supported relationship to family wealth because no principal private operating or investment role is publicly established; authority over major Dubai companies is exercised through sovereign office.",
+    "summary": "Royal beneficiary is the best-supported relationship to family wealth because no principal private operating or investment role is publicly established; government-owned companies are excluded from his personal holdings.",
     "confidence": {
       "score": 88,
       "band": "high",
@@ -156,29 +182,28 @@
     ]
   },
   "biography": {
-    "plain_text": "Sheikh Mohammed bin Rashid Al Maktoum is the Vice President and Prime Minister of the United Arab Emirates. Raised in the Al Maktoum dynasty, he became ruler of his home emirate, helping shape its expansion through aviation, trade and infrastructure. Equestrian sport and the Godolphin racing organisation form a longstanding personal interest.",
-    "html": "<p>Sheikh Mohammed bin Rashid Al Maktoum is the Vice President and Prime Minister of the United Arab Emirates. Raised in the Al Maktoum dynasty, he became ruler of his home emirate, helping shape its expansion through aviation, trade and infrastructure. Equestrian sport and the Godolphin racing organisation form a longstanding personal interest.</p>\r\n",
-    "word_count": 52,
+    "plain_text": "Sheikh Mohammed bin Rashid Al Maktoum is a hereditary ruler who also serves as Vice President and Prime Minister of the United Arab Emirates. Prepared for government within the Al Maktoum dynasty, he held security, defence, aviation and free-zone roles before succession. His public programme has emphasised trade, infrastructure, government modernisation and international humanitarian initiatives.",
+    "html": "<p>Sheikh Mohammed bin Rashid Al Maktoum is a hereditary ruler who also serves as Vice President and Prime Minister of the United Arab Emirates. Prepared for government within the Al Maktoum dynasty, he held security, defence, aviation and free-zone roles before succession. His public programme has emphasised trade, infrastructure, government modernisation and international humanitarian initiatives.</p>\r\n",
+    "word_count": 55,
     "confidence": {
-      "score": 96,
+      "score": 97,
       "band": "very_high",
-      "reason": "Current official government sources support his offices, formation, and development roles, while Godolphin directly supports the enduring equestrian chapter."
+      "reason": "Current official government sources support his offices, ruling-family formation, earlier public responsibilities and durable development programme."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S3",
-      "S6"
+      "S3"
     ]
   },
   "long_biography": {
-    "plain_text": "Prepared for public life from childhood, Sheikh Mohammed bin Rashid Al Maktoum studied locally and in Britain before completing military training. He became head of the emirate’s police, then took responsibility for its airport and Jebel Ali Free Zone. These roles placed him at the centre of early state-building before he succeeded as Ruler and became UAE Vice President and Prime Minister in 2006.\n\nHis rule has focused on making the emirate an international centre for aviation, trade, tourism and public administration. Alongside government, horses have remained a serious personal pursuit: he founded Godolphin, creating an international racing and breeding organisation. The combination of institutional expansion and sustained equestrian patronage gives his public life a distinctive scale, joining dynastic succession with hands-on state leadership.",
-    "html": "<p>Prepared for public life from childhood, Sheikh Mohammed bin Rashid Al Maktoum studied locally and in Britain before completing military training. He became head of the emirate’s police, then took responsibility for its airport and Jebel Ali Free Zone. These roles placed him at the centre of early state-building before he succeeded as Ruler and became UAE Vice President and Prime Minister in 2006.</p>\r\n<p>His rule has focused on making the emirate an international centre for aviation, trade, tourism and public administration. Alongside government, horses have remained a serious personal pursuit: he founded Godolphin, creating an international racing and breeding organisation. The combination of institutional expansion and sustained equestrian patronage gives his public life a distinctive scale, joining dynastic succession with hands-on state leadership.</p>\r\n",
-    "word_count": 124,
+    "plain_text": "Before succeeding to hereditary rule, Sheikh Mohammed bin Rashid Al Maktoum had overseen police, aviation and the Jebel Ali Free Zone in his emirate. Raised within the Al Maktoum ruling family, he trained in Britain and entered public service in 1968. He became UAE Vice President and Prime Minister alongside his dynastic office.\n\nHis rule has combined infrastructure and trade development with programmes to modernise government services, education and humanitarian work. Equestrian sport supplies a separate, enduring personal dimension. He founded Godolphin from a lifelong interest in horses, developing an international racing and breeding organisation while also competing in endurance riding.",
+    "html": "<p>Before succeeding to hereditary rule, Sheikh Mohammed bin Rashid Al Maktoum had overseen police, aviation and the Jebel Ali Free Zone in his emirate. Raised within the Al Maktoum ruling family, he trained in Britain and entered public service in 1968. He became UAE Vice President and Prime Minister alongside his dynastic office.</p>\r\n<p>His rule has combined infrastructure and trade development with programmes to modernise government services, education and humanitarian work. Equestrian sport supplies a separate, enduring personal dimension. He founded Godolphin from a lifelong interest in horses, developing an international racing and breeding organisation while also competing in endurance riding.</p>\r\n",
+    "word_count": 101,
     "confidence": {
-      "score": 95,
+      "score": 96,
       "band": "very_high",
-      "reason": "Current official government sources document his formation, early appointments, succession, public programme, and offices; Godolphin directly supports the equestrian chapter."
+      "reason": "Current official sources document his formation, earlier public responsibilities, succession, public programme and enduring equestrian work."
     },
     "source_ids": [
       "S1",
@@ -195,10 +220,11 @@
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "The current UAE Cabinet and Dubai Government identify him by these offices."
+        "reason": "The current UAE Cabinet and official UAE and Dubai government pages identify him by these offices."
       },
       "source_ids": [
         "S1",
+        "S2",
         "S3"
       ]
     },
@@ -209,7 +235,7 @@
       "confidence": {
         "score": 96,
         "band": "very_high",
-        "reason": "The National identifies his birthplace as the Al Maktoum family home in Al Shindagha on Dubai Creek."
+        "reason": "The National's named biographical account states that he was born in Dubai and identifies the Al Maktoum family home in Al Shindagha."
       },
       "source_ids": [
         "S5"
@@ -291,7 +317,7 @@
       "type_id": "15",
       "type": "Personal Website",
       "url": "https://sheikhmohammed.ae/",
-      "verification": "The current UAE Cabinet page, Dubai Government Media Office, and Godolphin all link this official personal website; type ID 15 is copied from the owner document lookup.",
+      "verification": "The current UAE Cabinet page, Dubai Government Media Office and Godolphin all link this official personal website; type ID 15 is copied from the owner document lookup.",
       "confidence": {
         "score": 100,
         "band": "very_high",
@@ -334,8 +360,7 @@
         "Al Maktoum ruling-family lineage",
         "Preparation for public service",
         "Education and military training",
-        "Head of Dubai Police appointment",
-        "Airport and Jebel Ali Free Zone roles",
+        "Dubai Police, aviation and Jebel Ali Free Zone roles",
         "Succession and current offices",
         "Development and public-administration programme"
       ]
@@ -351,14 +376,14 @@
         "Exact identity and birth date",
         "Al Maktoum lineage",
         "Succession and current offices",
-        "Government modernisation and development role",
-        "Equestrian involvement and Godolphin",
+        "Government modernisation, education and humanitarian work",
+        "Equestrian involvement and endurance riding",
         "Official personal website"
       ]
     },
     {
       "id": "S4",
-      "url": "https://dlp.dubai.gov.ae/Legislation%20Reference/2023/Law%20No.%20(1)%20of%202023%20Concerning%20the%20Dubai%20Holding%20Company.html",
+      "url": "https://dlp.dubai.gov.ae/Legislation%20Reference/2023/Law%20No.%20%281%29%20of%202023%20Concerning%20the%20Dubai%20Holding%20Company.html",
       "title": "Law No. (1) of 2023 Concerning the Dubai Holding Company",
       "publisher": "Government of Dubai, Supreme Legislation Committee",
       "tier": 1,
@@ -371,16 +396,14 @@
     },
     {
       "id": "S5",
-      "url": "https://www.thenationalnews.com/uae/government/2021/07/15/sheikh-mohammed-bin-rashid-turns-72-celebrating-dubai-rulers-birthday/",
-      "title": "Sheikh Mohammed bin Rashid turns 72: Celebrating Dubai Ruler's birthday",
+      "url": "https://www.thenationalnews.com/weekend/2023/07/14/a-look-back-at-the-dubai-sheikh-mohammed-grew-up-in-as-he-celebrates-his-74th-birthday/",
+      "title": "A look back at the Dubai Sheikh Mohammed grew up in as he celebrates his 74th birthday",
       "publisher": "The National",
       "tier": 2,
       "accessed_at": "2026-07-28",
       "supports": [
-        "Birth at the Al Maktoum family home in Al Shindagha, Dubai",
-        "Birth date and identity",
-        "Formative environment",
-        "Early and later public roles"
+        "Birth in Dubai on 15 July 1949",
+        "Childhood in the Al Maktoum family home in Al Shindagha"
       ]
     },
     {
@@ -400,16 +423,16 @@
     }
   ],
   "uncertainties": [
-    "No current individual Forbes profile was found. Forbes articles and historic gallery entries mention Sheikh Mohammed, but neither is a current profile page.",
+    "No current individual Forbes profile was found. Focused searches returned Forbes articles and historic ruler coverage rather than a profile page.",
     "Public evidence does not cleanly separate Sheikh Mohammed's private wealth from wider Al Maktoum family interests or Dubai government assets. Dubai Holding is explicitly government-owned and is not treated as his personal portfolio.",
     "Godolphin is a clearly documented personal founding role, but available sources do not establish thoroughbred racing as the principal source of his wealth; primary industry therefore remains Unknown.",
     "Royal beneficiary is the best-supported wealth relationship, but limited disclosure prevents a more precise account of his individual private holdings and economic role.",
     "No second nationality was evidenced, so secondary nationality remains unproposed.",
     "No official personal TikTok account was linked from the current UAE Cabinet page or official personal site.",
-    "Blank suffix, secondary residence, death, internal-note, and unknown-name fields were treated as optional, inapplicable, or system fields rather than enrichment targets."
+    "Blank suffix, secondary residence, death, internal-note and unknown-name fields were treated as optional, inapplicable or system fields rather than enrichment targets."
   ],
   "review": {
     "status": "pending",
-    "notes": "Limited public evidence on the boundary between personal, family, and government wealth requires reviewer attention."
+    "notes": "Limited public evidence on the boundary between personal, family and government wealth requires reviewer attention."
   }
 }
