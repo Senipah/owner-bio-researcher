@@ -668,6 +668,96 @@ def compile_research_batch(
     return derived, report
 
 
+def attach_biography_comparisons(
+    report: dict[str, Any],
+    earlier_dossiers: dict[int, dict[str, Any]],
+    *,
+    source_directory: str,
+) -> int:
+    owners = report.get("owners")
+    if not isinstance(owners, list):
+        raise ValueError("Research report has no owner summaries")
+
+    comparison_count = 0
+    for owner in owners:
+        if not isinstance(owner, dict):
+            raise ValueError("Research report contains an invalid owner summary")
+        person_id = owner.get("person_id")
+        if not isinstance(person_id, int):
+            raise ValueError("Research report owner summary has no person_id")
+        earlier = earlier_dossiers.get(person_id)
+        if earlier is None:
+            raise ValueError(
+                "Comparison dossier is missing for person_id "
+                f"{person_id}"
+            )
+        if earlier.get("schema_version") != 6:
+            raise ValueError(
+                "Comparison dossier schema_version is not 6 for person_id "
+                f"{person_id}"
+            )
+        if earlier.get("owner", {}).get("person_id") != person_id:
+            raise ValueError(
+                "Comparison dossier owner mismatch for person_id "
+                f"{person_id}"
+            )
+        if earlier.get("record_type") != owner.get("record_type"):
+            raise ValueError(
+                "Comparison dossier record_type mismatch for person_id "
+                f"{person_id}"
+            )
+        if owner.get("record_type") != "person":
+            continue
+
+        earlier_short = earlier.get("biography")
+        earlier_long = earlier.get("long_biography")
+        if not isinstance(earlier_short, dict) or not isinstance(
+            earlier_long,
+            dict,
+        ):
+            raise ValueError(
+                "Comparison person dossier has no biographies for person_id "
+                f"{person_id}"
+            )
+        before_short = earlier_short.get("plain_text")
+        before_long = earlier_long.get("plain_text")
+        after_short = owner.get("biography")
+        after_long = owner.get("long_biography")
+        if not all(
+            isinstance(value, str) and value.strip()
+            for value in (
+                before_short,
+                before_long,
+                after_short,
+                after_long,
+            )
+        ):
+            raise ValueError(
+                "Biography comparison text is missing for person_id "
+                f"{person_id}"
+            )
+        if before_short == after_short and before_long == after_long:
+            continue
+
+        owner["biography_comparison"] = {
+            "before": {
+                "biography": before_short,
+                "long_biography": before_long,
+            },
+            "after": {
+                "biography": after_short,
+                "long_biography": after_long,
+            },
+        }
+        comparison_count += 1
+
+    report["biography_comparison"] = {
+        "source_directory": source_directory.replace("\\", "/"),
+        "owner_count": comparison_count,
+    }
+    return comparison_count
+
+
 def _e(value: Any) -> str:
     return html.escape("" if value is None else str(value), quote=True)
 
@@ -723,6 +813,17 @@ def render_research_report(report: dict[str, Any]) -> str:
         for owner in owners
         for change in owner.get("changes", [])
         if change.get("kind") == "social"
+    )
+    comparison = report.get("biography_comparison")
+    comparison_count = (
+        int(comparison.get("owner_count", 0))
+        if isinstance(comparison, dict)
+        else 0
+    )
+    comparison_source = (
+        comparison.get("source_directory")
+        if isinstance(comparison, dict)
+        else None
     )
     cards: list[str] = []
     for owner in owners:
@@ -890,7 +991,44 @@ def render_research_report(report: dict[str, Any]) -> str:
             summary_confidence = _confidence_badge(
                 owner.get("biography_confidence")
             )
-            biography_review = f"""
+            biography_comparison = owner.get("biography_comparison")
+            if isinstance(biography_comparison, dict):
+                before = biography_comparison.get("before", {})
+                after = biography_comparison.get("after", {})
+                biography_text = f"""
+                <h3>Short biography — before and after
+                  {_confidence_badge(owner.get("biography_confidence"))}</h3>
+                <div class="comparison-grid">
+                  <section class="comparison-panel before">
+                    <h4>Before</h4>
+                    <blockquote>{_e(before.get("biography"))}</blockquote>
+                  </section>
+                  <section class="comparison-panel after">
+                    <h4>After</h4>
+                    <blockquote>{_e(after.get("biography"))}</blockquote>
+                  </section>
+                </div>
+                <h3>Longer biography — before and after
+                  {_confidence_badge(owner.get(
+                      "long_biography_confidence"
+                  ))}</h3>
+                <div class="comparison-grid">
+                  <section class="comparison-panel before">
+                    <h4>Before</h4>
+                    <div class="long-biography">
+                      {_plain_paragraphs(before.get("long_biography"))}
+                    </div>
+                  </section>
+                  <section class="comparison-panel after">
+                    <h4>After</h4>
+                    <div class="long-biography">
+                      {_plain_paragraphs(after.get("long_biography"))}
+                    </div>
+                  </section>
+                </div>
+                """
+            else:
+                biography_text = f"""
                 <h3>Short biography
                   {_confidence_badge(owner.get("biography_confidence"))}</h3>
                 <blockquote>{_e(owner.get("biography"))}</blockquote>
@@ -901,6 +1039,9 @@ def render_research_report(report: dict[str, Any]) -> str:
                 <div class="long-biography">
                   {_plain_paragraphs(owner.get("long_biography"))}
                 </div>
+                """
+            biography_review = f"""
+                {biography_text}
                 <p><strong>Editorial assessment:</strong>
                   {assessment_text}<br>
                   <span class="muted">{editorial_plan}</span><br>
@@ -1007,7 +1148,8 @@ def render_research_report(report: dict[str, Any]) -> str:
     a {{ color: #82d9d0; }}
     .lede {{ color: var(--muted); max-width: 760px; }}
     .metrics {{
-      display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 14px; margin: 26px 0 32px;
     }}
     .metric {{ background: var(--panel); padding: 18px; border-radius: 12px; }}
@@ -1044,6 +1186,24 @@ def render_research_report(report: dict[str, Any]) -> str:
     }}
     .long-biography p:first-child {{ margin-top: 0; }}
     .long-biography p:last-child {{ margin-bottom: 0; }}
+    .comparison-grid {{
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px; margin: 12px 0 22px;
+    }}
+    .comparison-panel {{
+      min-width: 0; padding: 14px; border: 1px solid var(--line);
+      border-radius: 10px; background: #151b24;
+    }}
+    .comparison-panel.before {{ border-color: #6b4c4c; }}
+    .comparison-panel.after {{ border-color: #276d63; }}
+    .comparison-panel h4 {{
+      margin: 0 0 10px; color: var(--muted);
+      font-size: 12px; text-transform: uppercase; letter-spacing: .08em;
+    }}
+    .comparison-panel.before h4 {{ color: #e4a5a5; }}
+    .comparison-panel.after h4 {{ color: #8ef0d0; }}
+    .comparison-panel blockquote {{ margin: 0; height: 100%; }}
+    .comparison-panel .long-biography {{ margin: 0; height: 100%; }}
     .origin {{ background: #151b24; padding: 14px; border-radius: 10px; }}
     .table-wrap {{ overflow-x: auto; }}
     table {{ border-collapse: collapse; width: 100%; min-width: 680px; }}
@@ -1052,6 +1212,7 @@ def render_research_report(report: dict[str, Any]) -> str:
     .evidence {{ margin-top: 18px; border-top: 1px solid var(--line); padding-top: 12px; }}
     @media (max-width: 680px) {{
       .metrics {{ grid-template-columns: 1fr; }}
+      .comparison-grid {{ grid-template-columns: 1fr; }}
       .owner-card > summary {{ align-items: flex-start; flex-direction: column; }}
     }}
   </style>
@@ -1063,10 +1224,27 @@ def render_research_report(report: dict[str, Any]) -> str:
       Selection: {_e(selection_description)}. Source data and live records
       remain unchanged. Generated
       {_e(report.get("generated_at"))}.</p>
+    {
+      (
+        '<p class="lede">Biography comparisons: '
+        f'{comparison_count} changed owners against '
+        f'<code>{_e(comparison_source)}</code>.</p>'
+      )
+      if comparison_count
+      else ""
+    }
     <section class="metrics">
       <div class="metric"><strong>{len(owners)}</strong>owners researched</div>
       <div class="metric"><strong>{field_additions}</strong>missing fields added</div>
       <div class="metric"><strong>{link_additions}</strong>verified links added</div>
+      {
+        (
+          '<div class="metric"><strong>'
+          f'{comparison_count}</strong>biography pairs compared</div>'
+        )
+        if comparison_count
+        else ""
+      }
     </section>
     {"".join(cards)}
   </main>

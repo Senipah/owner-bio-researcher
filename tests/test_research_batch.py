@@ -7,6 +7,7 @@ import pytest
 from compile_owner_research import build_parser
 from src.io_utils import new_document, new_owner, set_baseline
 from src.research_batch import (
+    attach_biography_comparisons,
     compile_research_batch,
     render_research_report,
     select_all_owners_by_loa,
@@ -339,6 +340,56 @@ def test_compiler_parser_accepts_all_by_loa_selection() -> None:
     )
 
     assert args.selection == "all-by-loa"
+
+
+def test_compiler_parser_accepts_comparison_dossier_directory() -> None:
+    args = build_parser().parse_args(
+        [
+            "--input",
+            "owners.json",
+            "--dossier-dir",
+            "repaired",
+            "--compare-dossier-dir",
+            "original",
+        ]
+    )
+
+    assert args.compare_dossier_dir == Path("original")
+
+
+def test_renders_changed_biographies_before_and_after() -> None:
+    document = new_document()
+    document["owners"] = [_owner(10, "First Owner", 1)]
+    repaired = _dossier(10, "First Owner")
+    earlier = _dossier(10, "First Owner")
+    earlier["biography"]["plain_text"] = "Earlier short biography."
+    earlier["long_biography"]["plain_text"] = (
+        "Earlier long biography first paragraph.\n\n"
+        "Earlier long biography second paragraph."
+    )
+
+    _, report = compile_research_batch(
+        document,
+        {10: repaired},
+        {10: Path("repaired/10.research.json")},
+        source_path="owners.json",
+        limit=1,
+        mark_ai_enriched=False,
+    )
+    count = attach_biography_comparisons(
+        report,
+        {10: earlier},
+        source_directory="original",
+    )
+    rendered = render_research_report(report)
+
+    assert count == 1
+    assert report["biography_comparison"]["owner_count"] == 1
+    assert "Short biography — before and after" in rendered
+    assert "Longer biography — before and after" in rendered
+    assert "Earlier short biography." in rendered
+    assert "First Owner is an industrial entrepreneur" in rendered
+    assert "1</strong>biography pairs compared" in rendered
 
 
 def test_compiles_pending_preview_without_changing_baseline() -> None:

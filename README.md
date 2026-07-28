@@ -327,6 +327,20 @@ owners, and applies only dossier proposals with confidence 85 or higher.
 Pending research remains `workflow.ai_enriched=false`, so it cannot be selected
 by the normal `--ai-enriched-only` update command.
 
+For an editorial repair batch, add `--compare-dossier-dir` to render the
+earlier and current short and long biographies side by side for every owner
+whose biography text changed. The comparison directory is read only and does
+not affect the compiled owner JSON:
+
+```powershell
+.\venv\Scripts\python.exe .\compile_owner_research.py `
+  --input output\owners-list.vessel-enriched.enriched.json `
+  --dossier-dir output\owner-research\all-by-loa-pair-repair `
+  --compare-dossier-dir output\owner-research\all-by-loa `
+  --selection all-by-loa `
+  --limit 50
+```
+
 After human review, change each accepted dossier to `review.status=approved`
 and record `reviewed_by` and `reviewed_at`. Recompile with
 `--mark-ai-enriched` to make the reviewed file eligible for update dry-runs:

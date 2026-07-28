@@ -8,6 +8,7 @@ from pathlib import Path
 from src.io_utils import atomic_write_json, atomic_write_text, load_json
 from src.research_batch import (
     RESEARCH_SELECTIONS,
+    attach_biography_comparisons,
     compile_research_batch,
     load_dossiers,
     render_research_report,
@@ -35,6 +36,14 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--input", required=True, type=Path)
     parser.add_argument("--dossier-dir", required=True, type=Path)
+    parser.add_argument(
+        "--compare-dossier-dir",
+        type=Path,
+        help=(
+            "Optional earlier dossier directory used only to render "
+            "before-and-after biography comparisons in the HTML report."
+        ),
+    )
     parser.add_argument("--output", type=Path)
     parser.add_argument("--report", type=Path)
     parser.add_argument(
@@ -135,6 +144,15 @@ def main() -> int:
             mark_ai_enriched=args.mark_ai_enriched,
             selection=args.selection,
         )
+        if args.compare_dossier_dir is not None:
+            comparison_dossiers, _ = load_dossiers(
+                args.compare_dossier_dir
+            )
+            attach_biography_comparisons(
+                report,
+                comparison_dossiers,
+                source_directory=str(args.compare_dossier_dir),
+            )
         atomic_write_json(output, derived)
         atomic_write_text(report_path, render_research_report(report))
     except Exception as exc:
