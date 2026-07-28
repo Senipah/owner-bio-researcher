@@ -108,8 +108,8 @@ public, or personal material that improves the portrait.
 
 Each biography has its own `confidence` and `source_ids`. Its confidence cannot
 exceed the weakest material claim it contains. Every material claim must be
-supported by the source ledger. Do not pad sparse profiles, repeat the short
-text verbatim, or use the current vessel relationship as biography content.
+supported by the source ledger. Do not pad sparse profiles or repeat, reorder,
+or paraphrase the short biography's complete fact bundle in the long profile.
 Both biographies must remain accurate and coherent if the person later sells
 every vessel in the owner record.
 
@@ -140,12 +140,20 @@ Do not include the schema-v5 outline fields `wealth_or_prominence_route`,
 classification object and source ledger. An opening option is an editorial
 angle, not drafted prose.
 
+Before drafting, make a temporary fact-allocation table with no more than two
+shared anchors, at least one short-only fact or dimension, at least two
+substantive long-only facts or dimensions, and explicit short-biography
+material the long version will omit. This table is working editorial material;
+do not add it to the schema-v6 dossier.
+
 Draft without source publishers, confidence language, classification
 deliberation, current-vessel context, or the order of the brief fields. Select
-and record one `opening_mode` and one `narrative_shape`, then reverse-check
-claims against the source ledger. Record all seven 4-or-5 editorial rubric
-scores, relevant calibration archetype(s), and a concise revision note under
-`editorial_assessment`.
+and record one `opening_mode` and one `narrative_shape`, then review the texts
+as a pair and reverse-check claims against the source ledger. Record all seven
+4-or-5 editorial rubric scores, relevant calibration archetype(s), and a
+concise revision note under `editorial_assessment`. The note should identify
+the shared anchor and the material unique to the long profile. Do not award
+`structural_independence=5` while a pair-audit finding remains.
 
 Allowed opening modes are:
 

@@ -85,31 +85,42 @@ statistics.
    legacy route-turning-point-later-chapter outline or place publishers,
    confidence, classification deliberation, vessel context, rankings, or
    transient figures in the brief.
-8. Perform a separate editorial pass from that source-hidden fact pool. Select
-   an opening mode and narrative shape deliberately; never draft in brief-field
-   order. Draft a 50-55 word short identity card and a 90-190 word,
-   two-paragraph concise profile. Reverse-check material claims against the
-   full ledger only after drafting. Score the seven-part editorial rubric in
-   the style reference and revise any dimension below 4.
-9. Save a separate dossier with `review.status=pending`. Put uncertain facts or
+8. Perform a separate editorial pass from that source-hidden fact pool. Before
+   drafting, make a working fact-allocation table with no more than two shared
+   anchors, at least one short-only fact or dimension, at least two substantive
+   long-only facts or dimensions, and the short-biography material the long
+   version will deliberately omit. Do not store this working table in the
+   schema-v6 dossier.
+9. Select an opening mode and narrative shape deliberately; never draft in
+   brief-field order. Draft a 50-55 word short identity card and a 90-190 word,
+   two-paragraph concise profile from their allocated facts. The long profile
+   must stand alone without restating all three short-biography components or
+   merely reordering and expanding the same fact bundle.
+10. Review the pair before reverse-checking the source ledger. State what the
+    long profile adds, which secondary short-biography fact it omits, and
+    whether it would lose meaningful material if reduced to the short version.
+    Rewrite any paraphrased expansion, then score the seven-part editorial
+    rubric and revise any dimension below 4.
+11. Save a separate dossier with `review.status=pending`. Put uncertain facts or
    links in `candidates_requiring_review`, not proposed changes.
-10. Run:
+12. Run:
 
    ```powershell
    .\venv\Scripts\python.exe .agents\skills\research-owner-biography\scripts\validate_dossier.py PATH --owner-input INPUT --strict-editorial
    ```
 
-11. For a batch, run the corpus auditor before compilation:
+13. For a batch, run the corpus auditor before compilation:
 
     ```powershell
     .\venv\Scripts\python.exe .agents\skills\research-owner-biography\scripts\audit_biography_corpus.py DOSSIER_DIRECTORY --strict
     ```
 
-12. Before compiling a batch, perform a dedicated cross-owner editorial pass.
+14. Before compiling a batch, perform a dedicated cross-owner editorial pass.
     Tabulate every person's opening mode, narrative shape, paragraph-two
-    transition, and final sentence. Revise semantic repetition even when the
-    wording differs, and rerun the corpus auditor until strict mode passes.
-13. Return the dossier path, both biographies or non-person editorial note,
+    transition, final sentence, and short-long pair findings. Revise semantic
+    repetition within each owner and across owners even when the wording
+    differs, and rerun the corpus auditor until strict mode passes.
+15. Return the dossier path, both biographies or non-person editorial note,
     strongest evidence, confidence summary, unresolved questions, and explicit
     statement that nothing was applied.
 
@@ -134,7 +145,8 @@ tracking. Do not let parallel agents edit the shared owner dataset.
 - Exclude a proposed field or social link below confidence 85.
 - Score each biography independently and keep its confidence no higher than
   its weakest material claim.
-- Do not pad the longer biography or repeat the short biography verbatim.
+- Do not pad the longer biography or repeat, reorder, or paraphrase the short
+  biography's complete fact bundle.
 - Treat the short biography as the concise wealth-origin answer and the longer
   biography as an edited profile. Do not expand the short biography's field
   order into a chronological long biography.
@@ -190,6 +202,9 @@ tracking. Do not let parallel agents edit the shared owner dataset.
 - Confirm the short biography is one paragraph and 50-55 words.
 - Confirm the longer biography is exactly two paragraphs and 90-190 words,
   without padding or targeting a preferred midpoint.
+- Confirm the working fact allocation used no more than two shared anchors,
+  retained at least one short-only fact or dimension, and supplied at least two
+  substantive long-only facts or dimensions.
 - Confirm person dossiers contain a schema-v6 source-hidden, unordered
   `biography_brief` with at least two distinct opening options; confirm
   institution and unresolved-placeholder dossiers contain no biography and use
@@ -211,6 +226,9 @@ tracking. Do not let parallel agents edit the shared owner dataset.
   vessel fact introduced solely from the owner record or LOA-ranked cohort.
 - Confirm both biographies use canonical CKEditor HTML and have independent
   confidence and source IDs.
+- Confirm the biography-pair audit reports no near-restated sentence, expanded
+  fact bundle, or unresolved overlap warning. Do not award
+  `structural_independence=5` when any pair finding remains.
 - Confirm each link matches its type: personal accounts are identity-verified,
   and company websites are official with an ownership or leadership source.
 - Run `scripts/validate_dossier.py` with `--owner-input --strict-editorial` and
@@ -231,9 +249,9 @@ separately from owner inputs. It contains:
 - Forbes status;
 - primary-industry, wealth-origin, and wealth-relationship classifications,
   each with an explanation, confidence, and source IDs;
-- a source-hidden biography brief plus short and longer biographies for people,
-  or a non-applicable editorial note for institutions and unresolved
-  placeholders;
+- a source-hidden biography brief plus complementary short and longer
+  biographies for people, or a non-applicable editorial note for institutions
+  and unresolved placeholders;
 - a seven-dimension editorial assessment, selected opening mode, and narrative
   shape, with every person score at least 4;
 - proposed personal fields and verified socials;

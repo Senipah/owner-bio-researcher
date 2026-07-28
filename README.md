@@ -259,8 +259,8 @@ a standalone HTML report without changing the enriched input:
 
 Each schema-v6 person dossier contains an unordered, source-hidden
 `biography_brief` fact pool with multiple opening options, a 50-55 word short
-`biography`, a structurally varied two-paragraph `long_biography` of 90-190
-words, the seven-dimension `editorial_assessment`, and independent
+`biography`, a fact-allocated, complementary two-paragraph `long_biography` of
+90-190 words, the seven-dimension `editorial_assessment`, and independent
 `primary_industry`, `wealth_origin`, and `wealth_relationship`
 classifications. Institution and unresolved-placeholder dossiers instead
 contain an `editorial_note`; their biography values are null and never applied

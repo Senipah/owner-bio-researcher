@@ -130,6 +130,11 @@ For every selected owner:
   explicitly exclude source publishers, confidence language, classification
   deliberation, vessel context, ranking, net worth, and transient figures from
   the brief;
+- before drafting, make a working fact-allocation table with no more than two
+  shared anchors, at least one short-only fact or dimension, at least two
+  substantive long-only facts or dimensions, and the short-biography material
+  the long profile will deliberately omit; do not store this working table in
+  the schema-v6 dossier;
 - perform a separate editorial pass from that fact pool, deliberately select
   and record one opening mode and narrative shape, then reverse-check every
   material claim against the full source ledger;
@@ -140,6 +145,10 @@ For every selected owner:
   answer to how wealth began; orient the reader through the person's defining
   identity, achievement, institution, asset, consequential decision,
   inherited responsibility, or public contribution;
+- do not repeat, reorder, or paraphrase all three components of the short
+  biography across the long profile; allow essential identity and one core
+  mechanism to overlap, but require the long version to answer a different
+  editorial question with its allocated long-only material;
 - use a formative episode as the opening only when its relevance is immediately
   clear, and never open with abstract scaffolding such as "route into
   business", "path to wealth", "career began", "commercial footing", or
@@ -174,6 +183,9 @@ For every selected owner:
   maritime careers or sustained competitive, research, or philanthropic work
   may be described only by focusing on the enduring activity;
 - do not pad sparse profiles or repeat the short text verbatim;
+- review the pair before acceptance: state what the long profile adds, which
+  secondary short-biography fact it omits, and whether reducing it to the short
+  version would discard meaningful material; rewrite the pair if not;
 - save the dossier using the person ID in its filename;
 - leave `review.status=pending`; and
 - run the exact validation command above, fixing all failures before marking
@@ -191,6 +203,9 @@ all currently valid cohort dossiers:
 
 - biographies meet the seven-part editorial rubric and use the complete
   calibration set without copying one structure across the tranche;
+- every person passes the short-long pair audit, and no dossier claims
+  `structural_independence=5` while a near-restated sentence, expanded fact
+  bundle, or overlap warning remains;
 - published prose contains no source narration, classification deliberation,
   negative wealth-taxonomy contrasts, database/process language, or repeated
   AI-style conclusions;

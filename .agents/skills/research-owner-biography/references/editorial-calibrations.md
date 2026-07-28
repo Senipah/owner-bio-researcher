@@ -2,173 +2,222 @@
 
 Use these as tonal and structural references, not templates. Vary the opening,
 sentence rhythm, paragraph transition, and ending. Never copy a recurring
-phrase across a tranche.
+phrase across a tranche. For paired examples, follow the allocation notes:
+shared anchors preserve standalone orientation, while short-only and long-only
+material keep the two outputs complementary.
 
 ## Founder and operator: Shahid Khan
 
-Opening mode: `defining_achievement`
-Narrative shape: `achievement_then_backstory`
+Opening mode: `institution_or_asset`
+Narrative shape: `core_work_deepened`
+
+Pair allocation:
+
+- Shared anchors: Khan and Flex-N-Gate's automotive business.
+- Short-only: migration, engineering, the bumper, Bumper Works and the
+  acquisition.
+- Long-only: retained operating control, international expansion and the
+  family’s sports institutions.
 
 Short biography:
 
 > Shahid "Shad" Khan is a Pakistani-born American industrialist who built his
-> fortune in automotive manufacturing. After moving to Illinois as a teenager
-> and studying engineering, he developed a one-piece truck bumper, founded
-> Bumper Works and acquired Flex-N-Gate. He subsequently expanded into sport
-> through the Jacksonville Jaguars, Fulham F.C. and All Elite Wrestling.
+> fortune in automotive manufacturing. After moving to Illinois to study
+> engineering, he developed a one-piece truck bumper, founded Bumper Works and
+> bought his former employer, Flex-N-Gate. The acquisition gave him the
+> privately controlled manufacturer that remains the foundation of his wider
+> holdings.
 
 Longer biography:
 
-> Shahid "Shad" Khan turned a corrosion-resistant truck bumper into the
-> foundation of Flex-N-Gate, the automotive-parts group he owns. Trained as an
-> industrial engineer, he developed the one-piece design while working for the
-> company, formed Bumper Works to manufacture it and bought his former employer
-> in 1980.
+> Private ownership has kept Shahid "Shad" Khan closely involved in
+> Flex-N-Gate, the automotive-parts group at the centre of his business. As
+> chief executive, he has directed its international expansion while retaining
+> direct control of manufacturing operations and investment decisions.
 >
-> Private ownership gave Khan room to expand the supplier internationally and
-> invest beyond manufacturing. He acquired the Jacksonville Jaguars and Fulham
-> F.C.; his son Tony leads the family's involvement in All Elite Wrestling.
-> Khan remains chief executive of Flex-N-Gate, preserving direct control of the
-> industrial business behind his wider investments.
+> Khan carried that ownership model into professional sport. He acquired the
+> Jacksonville Jaguars and Fulham F.C., while his son Tony leads the family's
+> involvement in All Elite Wrestling. American football, English football and
+> wrestling now sit alongside the manufacturing group, where Khan continues to
+> serve as chief executive under direct private ownership.
 
 ## Heir and custodian: Philip Niarchos
 
-Opening mode: `inherited_responsibility`
-Narrative shape: `inheritance_then_stewardship`
+Opening mode: `public_contribution`
+Narrative shape: `public_role_then_foundation`
+
+Pair allocation:
+
+- Shared anchors: Niarchos as an art collector and member of a shipping family.
+- Short-only: inheritance and development of the private collection.
+- Long-only: museum governance, foundation grant-making and Warhol's portrait.
 
 Short biography:
 
 > Philip S. Niarchos is a Greek art collector and heir to the fortune created
 > by his father, shipping magnate Stavros Niarchos. He inherited much of the
-> family’s modern-art collection and expanded it with post-war and contemporary
-> works. As a Museum of Modern Art trustee and foundation co-president, he
-> combines private collecting with cultural stewardship.
+> family's modern-art collection and extended it into post-war and contemporary
+> work. His acquisitions continue a private collecting tradition built across
+> two generations of the family.
 
 Longer biography:
 
-> Philip S. Niarchos is the principal custodian of a modern-art collection
-> assembled by his father, shipping magnate Stavros Niarchos. Inheriting both
-> family wealth and major works, he expanded the collection beyond its
-> impressionist foundations into post-war and contemporary art, acquiring
-> pieces by Andy Warhol, Jean-Michel Basquiat and Maurizio Cattelan.
+> At the Museum of Modern Art, Philip S. Niarchos has turned private collecting
+> into an institutional role as a trustee. The Greek heir oversees a collection
+> rooted in his family's shipping wealth, while his museum work places him
+> within the governance of a major public collection.
 >
-> Niarchos has given that private role an institutional dimension. He serves as
-> a trustee of the Museum of Modern Art and as co-president of the Stavros
-> Niarchos Foundation, whose grant-making spans culture, health, education and
-> social welfare. These continuing positions place him within the governance of
-> both the family foundation and one of the world's leading museums.
+> Niarchos also serves as co-president of the Stavros Niarchos Foundation,
+> helping direct grants across culture, health, education and social welfare.
+> Andy Warhol once used scans of his head for the Philip's Skull series, an
+> unusual instance in which the collector became the subject of the work.
 
 ## Royal and public office: Sheikh Tamim bin Hamad Al Thani
 
-Opening mode: `present_identity`
+Opening mode: `public_contribution`
 Narrative shape: `public_role_then_foundation`
+
+Pair allocation:
+
+- Shared anchor: Tamim's role as Qatar's Amir.
+- Short-only: education, armed-forces service and pre-succession institutions.
+- Long-only: mediation, the International Olympic Committee and National
+  Sports Day.
 
 Short biography:
 
-> Sheikh Tamim bin Hamad Al Thani is Qatar’s Amir and head of state. Educated at
-> Sherborne and Sandhurst, he entered the armed forces before becoming heir
-> apparent and succeeding his father. His rule has combined domestic
-> development with an increasingly visible international role for Qatar,
-> particularly through diplomacy, investment and sport.
+> Sheikh Tamim bin Hamad Al Thani is Qatar's Amir, head of state and
+> commander-in-chief. Educated at Sherborne and Sandhurst, he served in the
+> armed forces before succeeding his father. Earlier responsibilities for
+> education, health and national planning gave him experience of the
+> institutions central to Qatar's long-term domestic development programme.
 
 Longer biography:
 
-> As Qatar’s Amir, Sheikh Tamim bin Hamad Al Thani combines hereditary
-> leadership with responsibility for a small state that exercises substantial
-> international influence. Educated at Sherborne School and the Royal Military
-> Academy Sandhurst, he served in the armed forces, became heir apparent in
-> 2003 and succeeded his father ten years later.
+> Mediation has become one of Sheikh Tamim bin Hamad Al Thani's defining
+> instruments as Amir of Qatar. His government has used dialogue and negotiated
+> settlement to give the country a diplomatic role beyond its size, alongside
+> continued implementation of a long-term national development programme.
 >
-> His rule has encompassed domestic development, regional diplomacy and the
-> expansion of Qatar’s cultural and investment presence abroad. Sport is a
-> sustained personal and national interest: Tamim served on the International
-> Olympic Committee and supported Qatar’s emergence as a major host. The
-> country’s global sporting programme has remained one of the most visible
-> elements of his tenure.
+> Sport supplies another durable part of Tamim's public work. He served on the
+> International Olympic Committee and oversaw the creation of Qatar's National
+> Sports Day, embedding participation in the public calendar. These roles
+> connect international representation with institutions intended to shape
+> everyday life inside the country.
 
 ## Investor and philanthropist: Yuri Milner
 
-Opening mode: `defining_achievement`
-Narrative shape: `achievement_then_backstory`
+Opening mode: `public_contribution`
+Narrative shape: `public_role_then_foundation`
+
+Pair allocation:
+
+- Shared anchors: Milner's technology-investor identity and physics formation.
+- Short-only: Mail.ru Group, DST Global and his investment strategy.
+- Long-only: the prize structure, scientific fields and Breakthrough
+  Initiatives.
 
 Short biography:
 
-> Yuri Milner is an Israeli technology investor and science philanthropist who
-> trained as a theoretical physicist before moving into business. He founded
-> Mail.ru Group and DST Global, backing internet companies during their early
-> expansion. He later created the Breakthrough Prizes and research initiatives
-> supporting fundamental physics and the search for life beyond Earth.
+> Yuri Milner is an Israeli technology investor who trained as a theoretical
+> physicist before moving into finance. He built Mail.ru Group and founded DST
+> Global, using early internet investments to establish his fortune. His
+> strategy centred on backing consumer technology businesses before their
+> international expansion and commercial scale were assured.
 
 Longer biography:
 
-> Early investments in Facebook and Alibaba established Yuri Milner as a
-> technology investor willing to back consumer platforms before their global
-> growth was assured. He had trained as a theoretical physicist in Moscow
-> before moving into banking, building Mail.ru Group around Russian internet
-> businesses and creating DST Global for international investment.
+> The Breakthrough Prizes gave technology investor Yuri Milner a way to direct
+> private capital towards fundamental science. Created with other technology
+> figures, the awards recognise major advances in physics, life sciences and
+> mathematics while giving researchers unusually prominent public recognition.
 >
-> Science occupies an equally substantial place in Milner’s public work. He and
-> his wife Julia helped establish the Breakthrough Prizes, while the
-> Breakthrough Initiatives support searches for technological civilisations and
-> research into interstellar travel. The programmes direct private funding
-> towards fundamental questions that conventional research budgets can
-> struggle to sustain.
+> Milner extended that commitment through the Breakthrough Initiatives.
+> Separate programmes search for signs of technological civilisations, develop
+> instruments for listening across space and investigate concepts for
+> interstellar flight. The work reconnects him with the theoretical physics he
+> studied before entering business and supports questions that conventional
+> research budgets can struggle to sustain.
 
 ## Sparse public record: Roger Samuelsson
 
 Opening mode: `formative_episode`
 Narrative shape: `formative_episode_then_payoff`
 
+Pair allocation:
+
+- Shared anchors: Samuelsson and medical-device manufacturing.
+- Short-only: the injector contract, autoinjector focus and retained ownership.
+- Long-only: the boxing-glove episode, Taiwan sourcing and patient-use
+  consequences.
+
 Short biography:
 
 > Roger Samuelsson is a Swedish entrepreneur who built his fortune in
-> medical-device manufacturing. After tracing a pair of boxing gloves to
-> Taiwan, he began trading local goods and co-founded SHL Medical. An early
-> injector contract redirected the company towards drug-delivery devices; he
-> later stepped back from management but remains its founder and majority
-> owner.
+> medical-device manufacturing as co-founder and majority owner of SHL Medical.
+> An early injector contract shifted the company from trading towards
+> drug-delivery systems. He developed SHL around autoinjector design and
+> manufacturing before handing daily leadership to a successor while retaining
+> strategic ownership.
 
 Longer biography:
 
 > A pair of boxing gloves prompted Roger Samuelsson to trace their supply chain
-> to Taiwan. The Swedish engineering student began exporting local goods there
-> and co-founded Scandinavian Health Limited. A contract to develop an injector
-> for Upjohn shifted the young trading business towards drug-delivery devices.
+> to Taiwan while he was an engineering student. He began exporting local goods
+> and co-founded Scandinavian Health Limited, using practical sourcing
+> knowledge to establish a business far from Sweden.
 >
-> Samuelsson bought out his partner and focused SHL Medical on autoinjectors,
-> pairing product design with automated manufacturing. Demand grew as
-> injectable medicines moved from clinics into patients’ homes. He eventually
-> handed day-to-day leadership to a successor while retaining majority
-> ownership and a continuing strategic interest in the company.
+> Samuelsson later bought out his partner and paired product design with
+> automated manufacturing. Demand increased as injectable medicines moved from
+> clinics into patients' homes, requiring devices that patients could use
+> reliably themselves. That combination of engineering and production
+> discipline gave the company a specialised position in drug delivery.
 
 ## Maritime professional: Dimitris Procopiou
 
 Opening mode: `institution_or_asset`
 Narrative shape: `institution_then_person`
 
+Pair allocation:
+
+- Shared anchors: Procopiou and Centrofin's commercial-shipping business.
+- Short-only: wealth origin, tanker and dry-bulk overview and retained strategy.
+- Long-only: the Sea Traders division and the group's technical operating
+  system.
+
 Short biography:
 
-> Dimitris Procopiou is a Greek shipping entrepreneur who co-founded Sea
-> Traders with his brother George. After the brothers expanded and divided
-> their fleet, he established Centrofin Management as a separate family
-> business. Its tanker and dry-bulk operations became the basis of his
-> self-made fortune, with Procopiou remaining closely involved in fleet
-> investment and strategy.
+> Dimitris Procopiou is a Greek shipping entrepreneur and founder of Centrofin
+> Management. Tanker and dry-bulk operations became the basis of his self-made
+> fortune after he separated his interests from a business shared with his
+> brother George. He has remained closely involved in fleet investment,
+> technical management and the strategy of the family group.
 
 Longer biography:
 
-> Centrofin Management grew from the shipping assets Dimitris Procopiou
-> retained when he and his brother George divided their joint business. The
-> brothers had established Sea Traders around a single bulk carrier in 1974,
-> expanded into tankers and heavy-lift shipping, and separated their interests
-> in 1988.
+> Dividing Sea Traders in 1988 gave Dimitris Procopiou responsibility for the
+> shipping interests that became Centrofin Management. The brothers had built a
+> mixed commercial fleet together, but the separation required each to
+> establish an independent organisation and investment programme.
 >
-> Procopiou developed Centrofin around crude-oil tankers, product carriers and
-> dry-bulk shipping, supported by dedicated technical-management companies.
-> Repeated freight cycles required the group to balance opportunistic purchases
-> with maintenance and fleet renewal. Procopiou has remained closely involved
-> in those investment and operating decisions as the family business has
-> evolved.
+> Procopiou developed a practical operating system around the new group.
+> Dedicated companies manage tanker and dry-cargo fleets, while decisions about
+> shipyards, repairs, workshops and delivery schedules remain central to
+> performance through freight cycles. That technical discipline has allowed the
+> privately owned business to operate across two distinct shipping markets over
+> time.
+
+## Rejected pair pattern: expanded short
+
+Reject a pair when the short biography presents identity, wealth origin and a
+secondary domain, then the long biography repeats those same three components
+with dates, examples or reordered sentences. Extra detail does not make the
+editorial centre independent.
+
+Repair the pair by retaining only the identity or one core mechanism as a
+shared anchor. Allocate the short version's secondary domain to one output and
+use the other output to develop a decisive choice, operating method, formative
+episode, consequence or public contribution that the first text omits.
 
 ## Acquirer and consolidator: Bernard Arnault
 
@@ -229,6 +278,9 @@ Longer biography:
 
 ## What to vary
 
+- Allocate the pair before drafting. Share no more than essential anchors and
+  give the long profile at least two substantive dimensions absent from the
+  short identity card.
 - Select an opening mode from the facts; do not process the research brief in
   field order.
 - Make the first sentence identify the person or make the relevance of its
@@ -242,4 +294,5 @@ Longer biography:
 - A sparse profile may be shorter. Do not target the midpoint of the permitted
   word range.
 - Across a batch, vary both `opening_mode` and `narrative_shape`; do not merely
-  substitute synonyms for "route into business".
+  substitute synonyms for "route into business" or for facts already used in
+  the short biography.

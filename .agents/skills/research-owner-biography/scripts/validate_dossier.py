@@ -12,6 +12,7 @@ from urllib.parse import urlparse
 from editorial_rules import (
     META_CAREER_OPENING_PATTERN,
     WORD_PATTERN as EDITORIAL_WORD_PATTERN,
+    biography_pair_findings,
     editorial_findings,
 )
 from inventory_owner import _find_owner, build_inventory
@@ -620,6 +621,7 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
             )
 
     biography = document.get("biography")
+    short_plain: str | None = None
     if record_type != "person":
         if biography is not None:
             errors.append("biography must be null for non-person records")
@@ -630,6 +632,7 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
         if not isinstance(plain, str) or not plain.strip():
             errors.append("biography.plain_text must be non-empty")
         else:
+            short_plain = plain
             count = len(WORD_PATTERN.findall(plain))
             if biography.get("word_count") != count:
                 errors.append(
@@ -658,6 +661,7 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
         )
 
     long_biography = document.get("long_biography")
+    long_plain_text: str | None = None
     if record_type != "person":
         if long_biography is not None:
             errors.append("long_biography must be null for non-person records")
@@ -668,6 +672,7 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
         if not isinstance(long_plain, str) or not long_plain.strip():
             errors.append("long_biography.plain_text must be non-empty")
         else:
+            long_plain_text = long_plain
             count = len(WORD_PATTERN.findall(long_plain))
             if long_biography.get("word_count") != count:
                 errors.append(
@@ -725,6 +730,29 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
             known_sources,
             errors,
         )
+
+    if short_plain is not None and long_plain_text is not None:
+        display_name = (
+            str(owner.get("display_name") or "")
+            if isinstance(owner, dict)
+            else ""
+        )
+        pair_errors, pair_warnings, _ = biography_pair_findings(
+            short_plain,
+            long_plain_text,
+            display_name=display_name,
+        )
+        errors.extend(pair_errors)
+        warnings.extend(pair_warnings)
+        if (
+            (pair_errors or pair_warnings)
+            and isinstance(editorial_assessment, dict)
+            and editorial_assessment.get("structural_independence") == 5
+        ):
+            errors.append(
+                "editorial_assessment.structural_independence cannot be 5 "
+                "while the biography-pair audit reports overlap"
+            )
 
     for collection in ("proposed_details", "proposed_socials"):
         items = document.get(collection)

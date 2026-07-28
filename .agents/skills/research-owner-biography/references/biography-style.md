@@ -8,10 +8,11 @@ Every `record_type=person` dossier contains two standalone biographies:
 - `long_biography`: a concise profile of 90-190 words in exactly two
   paragraphs.
 
-The longer version must stand alone. It may overlap the short biography's core
-facts, but it must not repeat the short text verbatim and must add a meaningful
-narrative layer. Do not target the midpoint of the permitted range. For a
-sparse public record, stop at 90-119 strong words rather than padding.
+The longer version must stand alone. It may share essential identity and
+wealth-origin anchors with the short biography, but it must not repeat,
+reorder, or paraphrase the short version's complete fact bundle. It must add a
+meaningful narrative layer. Do not target the midpoint of the permitted range.
+For a sparse public record, stop at 90-119 strong words rather than padding.
 
 Institutions and unresolved placeholders do not receive biographies. They use
 the schema-v6 `editorial_note` path described in the research contract.
@@ -26,16 +27,70 @@ Research and publication are separate passes:
 3. Exclude source publishers, confidence language, wealth-taxonomy
    deliberation, current vessel data, rankings, and transient figures from the
    writing brief.
-4. Select an opening mode and narrative shape deliberately. Do not draft in
+4. Allocate facts between shared anchors, short-only material and long-only
+   material before drafting.
+5. Select an opening mode and narrative shape deliberately. Do not draft in
    brief-field order.
-5. Draft both biographies from the fact pool and calibration set.
-6. Reverse-check every material claim against the full source ledger.
+6. Draft each biography from its allocation and the calibration set.
+7. Review the two texts as a pair, then reverse-check every material claim
+   against the full source ledger.
 
 The published prose must not reveal that a researcher searched sources,
 resolved a database record, assigned classifications, or evaluated confidence.
 Do not write “Forbes identifies”, “Reuters reports”, “available evidence”,
 “records show”, “supports a classification”, or similar research narration.
 Those details belong in the dossier metadata.
+
+## Short-long independence
+
+Use a working allocation before drafting. It is editorial scratch material and
+does not become part of the schema-v6 dossier:
+
+| Bucket | Requirement |
+| --- | --- |
+| Shared anchors | No more than two facts essential to both standalone texts |
+| Short-only | At least one fact or dimension |
+| Long-only | At least two substantive facts or dimensions |
+| Deliberate omissions | Short-biography material the long profile will not repeat |
+
+Names, a durable identity and one core wealth-or-prominence mechanism may be
+shared when needed for orientation. A date, example or extra adjective attached
+to a repeated claim is not a new fact. Reordering the short biography's
+identity, origin and final contextual dimension across two paragraphs is still
+an expanded short biography.
+
+The long profile should answer a different editorial question. It may explain
+how a decisive choice worked, show an operating method, develop a formative
+episode, trace a consequence, or explore a durable public contribution. It
+should not feel obliged to mention every company, role or interest selected for
+the short identity card.
+
+Before acceptance, answer:
+
+1. What does the long profile tell the reader that the short one does not?
+2. Which secondary short-biography fact has the long version deliberately
+   omitted?
+3. Would reducing the long profile to the short version discard meaningful
+   material? If not, rewrite it.
+
+Treat automated overlap findings as editorial diagnostics, not an invitation
+to substitute synonyms. The validator removes owner-name tokens and common
+words, flags near-restated sentences, and combines short-content containment
+with shared three-word phrases. Fix the fact allocation rather than wording
+around the same claims.
+
+The deterministic guardrails are deliberately conservative:
+
+- sentence content similarity of 85% or more is an error; 65% or more is a
+  warning;
+- short-content containment of 70% or more combined with at least eight shared
+  three-word phrases is an error; and
+- containment of 60% or more combined with at least five shared three-word
+  phrases is a warning.
+
+Strict editorial validation treats warnings as failures. These measures catch
+close expansions; the required pair review remains responsible for semantic
+restatement expressed with different vocabulary.
 
 ## Short biography
 
@@ -239,7 +294,12 @@ Score each person from 1 to 5 on every dimension and revise any score below 4:
    narrative opening through an immediately relevant concrete detail.
 7. `structural_independence`: the longer biography is not simply an expanded
    version of the short biography or the default
-   origin-to-later-activity-to-summary template.
+   origin-to-later-activity-to-summary template. Score 5 only when no more than
+   essential anchors overlap and the long profile adds at least two
+   substantive dimensions. Score 4 when unavoidable overlap remains but the
+   long profile adds one substantial independent dimension. A reordered or
+   paraphrased version of the same fact bundle scores 3 or below and must be
+   revised.
 
 For batches, compare the whole tranche as a publication. Revise repeated
 opening modes, narrative shapes, sentence rhythms, paragraph transitions,

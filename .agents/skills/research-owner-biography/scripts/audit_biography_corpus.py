@@ -15,6 +15,7 @@ from editorial_rules import (
     STOCK_PHRASES,
     SYNTHETIC_ENDING_PATTERN,
     WORD_PATTERN,
+    biography_pair_findings,
     editorial_findings,
     final_sentence,
     paragraphs,
@@ -160,6 +161,7 @@ def audit(
         minimum_owners,
         math.ceil(len(people) * 0.08),
     )
+    pair_rankings: list[tuple[float, int, float, str]] = []
 
     for person in people:
         for section in ("short", "long"):
@@ -175,6 +177,34 @@ def audit(
                 f"{person['name']} {section}: {finding}"
                 for finding in errors + warnings
             )
+        pair_errors, pair_warnings, pair_metrics = biography_pair_findings(
+            str(person["short"]),
+            str(person["long"]),
+            display_name=str(person["name"]),
+        )
+        issues.extend(
+            f"{person['name']} pair: {finding}"
+            for finding in pair_errors + pair_warnings
+        )
+        pair_rankings.append(
+            (
+                float(pair_metrics["content_containment"]),
+                int(pair_metrics["shared_trigrams"]),
+                float(pair_metrics["max_sentence_similarity"]),
+                str(person["name"]),
+            )
+        )
+
+    for containment, trigrams, sentence_similarity, name in sorted(
+        pair_rankings,
+        reverse=True,
+    )[:5]:
+        observations.append(
+            f"short-long overlap for {name}: "
+            f"{containment:.0%} short-content containment, "
+            f"{trigrams} shared three-word phrases, "
+            f"{sentence_similarity:.0%} maximum sentence similarity"
+        )
 
     combined_by_owner = {
         str(person["name"]): (

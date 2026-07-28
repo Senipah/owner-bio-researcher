@@ -49,7 +49,7 @@ def _validate(
 def test_calibration_dossier_matches_wealth_classification_contract(
     tmp_path: Path,
 ) -> None:
-    result = _validate(tmp_path, _calibration())
+    result = _validate(tmp_path, _calibration(), strict=True)
 
     assert result.returncode == 0, result.stderr
 
@@ -110,6 +110,38 @@ def test_validator_requires_two_long_biography_paragraphs(
     assert result.returncode == 1
     assert (
         "long_biography.plain_text must contain exactly two paragraphs"
+        in result.stderr
+    )
+
+
+def test_validator_rejects_long_biography_that_expands_short_fact_bundle(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    short = dossier["biography"]["plain_text"]
+    long_plain = (
+        f"{short}\n\n"
+        "Flex-N-Gate remains privately controlled, and Khan continues as "
+        "chief executive. The group expanded internationally under his "
+        "ownership. He also acquired the Jacksonville Jaguars and Fulham "
+        "F.C., while his son Tony leads the family's involvement in All "
+        "Elite Wrestling."
+    )
+    dossier["long_biography"]["plain_text"] = long_plain
+    dossier["long_biography"]["html"] = "".join(
+        f"<p>{paragraph}</p>\r\n"
+        for paragraph in long_plain.split("\n\n")
+    )
+    dossier["long_biography"]["word_count"] = len(
+        re.findall(r"\b[\w]+(?:[’'-][\w]+)*\b", long_plain)
+    )
+    dossier["editorial_assessment"]["structural_independence"] = 4
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert (
+        "long_biography appears to expand the short biography's fact bundle"
         in result.stderr
     )
 
@@ -193,8 +225,8 @@ def test_validator_rejects_research_narration_in_biography(
 ) -> None:
     dossier = deepcopy(_calibration())
     plain = dossier["biography"]["plain_text"].replace(
-        "He subsequently expanded",
-        "Forbes identifies his success, and he subsequently expanded",
+        "The acquisition gave him",
+        "Forbes identifies his success, and the acquisition gave him",
     )
     dossier["biography"]["plain_text"] = plain
     dossier["biography"]["html"] = f"<p>{plain}</p>\r\n"
@@ -211,9 +243,9 @@ def test_validator_rejects_negative_wealth_taxonomy_contrast(
 ) -> None:
     dossier = deepcopy(_calibration())
     plain = dossier["biography"]["plain_text"].replace(
-        "He subsequently expanded",
+        "The acquisition gave him",
         "His career reflects public service rather than commercial enterprise. "
-        "He expanded",
+        "The acquisition gave him",
     )
     dossier["biography"]["plain_text"] = plain
     dossier["biography"]["html"] = f"<p>{plain}</p>\r\n"
@@ -233,8 +265,8 @@ def test_validator_rejects_abstract_career_route_opening(
 ) -> None:
     dossier = deepcopy(_calibration())
     plain = dossier["long_biography"]["plain_text"].replace(
-        'Shahid "Shad" Khan turned a corrosion-resistant truck bumper into '
-        "the foundation of Flex-N-Gate, the automotive-parts group he owns.",
+        'Private ownership has kept Shahid "Shad" Khan closely involved in '
+        "Flex-N-Gate, the automotive-parts group at the centre of his business.",
         'Shahid "Shad" Khan\'s business path began with automotive parts.',
     )
     dossier["long_biography"]["plain_text"] = plain
@@ -260,8 +292,8 @@ def test_strict_validator_rejects_formulaic_second_paragraph(
 ) -> None:
     dossier = deepcopy(_calibration())
     plain = dossier["long_biography"]["plain_text"].replace(
-        "Private ownership gave Khan room",
-        "Khan later found room",
+        "Khan carried that ownership model",
+        "Khan later carried that ownership model",
     )
     dossier["long_biography"]["plain_text"] = plain
     dossier["long_biography"]["html"] = "".join(
@@ -287,8 +319,9 @@ def test_strict_validator_rejects_synthetic_tie_back_ending(
 ) -> None:
     dossier = deepcopy(_calibration())
     plain = dossier["long_biography"]["plain_text"].replace(
-        "Khan remains chief executive of Flex-N-Gate, preserving direct "
-        "control of the industrial business behind his wider investments.",
+        "American football, English football and wrestling now sit alongside "
+        "the manufacturing group, where Khan continues to serve as chief "
+        "executive under direct private ownership.",
         "The same pattern runs through his industrial and sporting interests.",
     )
     dossier["long_biography"]["plain_text"] = plain
@@ -315,8 +348,9 @@ def test_validator_rejects_more_than_two_long_biography_years(
 ) -> None:
     dossier = deepcopy(_calibration())
     plain = dossier["long_biography"]["plain_text"].replace(
-        "Khan remains chief executive of Flex-N-Gate, preserving direct "
-        "control of the industrial business behind his wider investments.",
+        "American football, English football and wrestling now sit alongside "
+        "the manufacturing group, where Khan continues to serve as chief "
+        "executive under direct private ownership.",
         "Khan expanded in 2001, 2002 and 2003.",
     )
     dossier["long_biography"]["plain_text"] = plain

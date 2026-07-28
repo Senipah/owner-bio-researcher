@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 import subprocess
 import sys
 from copy import deepcopy
@@ -45,6 +46,43 @@ def test_corpus_auditor_accepts_clean_single_calibration(
 
     assert result.returncode == 0, result.stderr
     assert "Audited 1 schema-v6 person dossiers." in result.stdout
+
+
+def test_corpus_auditor_rejects_expanded_short_biography(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    short = dossier["biography"]["plain_text"]
+    long_plain = (
+        f"{short}\n\n"
+        "Flex-N-Gate remains privately controlled, and Khan continues as "
+        "chief executive. The group expanded internationally under his "
+        "ownership. He also acquired the Jacksonville Jaguars and Fulham "
+        "F.C., while his son Tony leads the family's involvement in All "
+        "Elite Wrestling."
+    )
+    dossier["long_biography"]["plain_text"] = long_plain
+    dossier["long_biography"]["html"] = "".join(
+        f"<p>{paragraph}</p>\r\n"
+        for paragraph in long_plain.split("\n\n")
+    )
+    dossier["long_biography"]["word_count"] = len(
+        re.findall(r"\b[\w]+(?:[’'-][\w]+)*\b", long_plain)
+    )
+    dossier["editorial_assessment"]["structural_independence"] = 4
+    (tmp_path / "1164.research.json").write_text(
+        json.dumps(dossier, indent=2, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+    result = _run(tmp_path)
+
+    assert result.returncode == 1
+    assert (
+        "pair: long_biography appears to expand the short biography's "
+        "fact bundle"
+        in result.stderr
+    )
 
 
 def test_corpus_auditor_rejects_repeated_stock_phrase(
@@ -145,10 +183,10 @@ def test_corpus_auditor_rejects_dominant_declared_structure(
 
     assert result.returncode == 1
     assert (
-        "declared opening mode 'defining_achievement'"
+        "declared opening mode 'institution_or_asset'"
         in result.stderr
     )
     assert (
-        "declared narrative shape 'achievement_then_backstory'"
+        "declared narrative shape 'core_work_deepened'"
         in result.stderr
     )
