@@ -6,6 +6,9 @@ phrase across a tranche.
 
 ## Founder and operator: Shahid Khan
 
+Opening mode: `defining_achievement`
+Narrative shape: `achievement_then_backstory`
+
 Short biography:
 
 > Shahid "Shad" Khan is a Pakistani-born American industrialist who built his
@@ -16,20 +19,22 @@ Short biography:
 
 Longer biography:
 
-> Shahid "Shad" Khan moved from Lahore to Illinois as a teenager to study
-> industrial engineering. At automotive-parts manufacturer Flex-N-Gate, he
-> developed a one-piece truck bumper designed to resist corrosion. He founded
-> Bumper Works to manufacture it and in 1980 bought Flex-N-Gate from his former
-> employer, turning a product idea into an international supplier.
+> Shahid "Shad" Khan turned a corrosion-resistant truck bumper into the
+> foundation of Flex-N-Gate, the automotive-parts group he owns. Trained as an
+> industrial engineer, he developed the one-piece design while working for the
+> company, formed Bumper Works to manufacture it and bought his former employer
+> in 1980.
 >
-> Sport and entertainment became a second chapter. Khan acquired the
-> Jacksonville Jaguars in 2012 and later bought Fulham F.C. in London. Through
-> his son Tony, the family also backs All Elite Wrestling. The same pattern
-> runs through both sides of his career: identify an overlooked opportunity,
-> retain control and build patiently around a distinctive product or
-> organisation.
+> Private ownership gave Khan room to expand the supplier internationally and
+> invest beyond manufacturing. He acquired the Jacksonville Jaguars and Fulham
+> F.C.; his son Tony leads the family's involvement in All Elite Wrestling.
+> Khan remains chief executive of Flex-N-Gate, preserving direct control of the
+> industrial business behind his wider investments.
 
 ## Heir and custodian: Philip Niarchos
+
+Opening mode: `inherited_responsibility`
+Narrative shape: `inheritance_then_stewardship`
 
 Short biography:
 
@@ -41,21 +46,22 @@ Short biography:
 
 Longer biography:
 
-> Philip S. Niarchos inherited two connected legacies from his father, shipping
-> magnate Stavros Niarchos: family wealth and one of the leading private
-> collections of modern art. He became its principal custodian and expanded
-> beyond its impressionist foundations into post-war and contemporary work,
-> adding artists such as Andy Warhol, Jean-Michel Basquiat and Maurizio
-> Cattelan.
+> Philip S. Niarchos is the principal custodian of a modern-art collection
+> assembled by his father, shipping magnate Stavros Niarchos. Inheriting both
+> family wealth and major works, he expanded the collection beyond its
+> impressionist foundations into post-war and contemporary art, acquiring
+> pieces by Andy Warhol, Jean-Michel Basquiat and Maurizio Cattelan.
 >
-> Collecting became Niarchos’s defining public role rather than a passive
-> inheritance. He serves as a trustee of the Museum of Modern Art and as
-> co-president of the Stavros Niarchos Foundation, linking private
-> connoisseurship with institutional stewardship and philanthropy. His position
-> rests on inherited shipping wealth, but his own profile has been shaped most
-> clearly by the care and development of the family’s cultural assets.
+> Niarchos has given that private role an institutional dimension. He serves as
+> a trustee of the Museum of Modern Art and as co-president of the Stavros
+> Niarchos Foundation, whose grant-making spans culture, health, education and
+> social welfare. These continuing positions place him within the governance of
+> both the family foundation and one of the world's leading museums.
 
 ## Royal and public office: Sheikh Tamim bin Hamad Al Thani
+
+Opening mode: `present_identity`
+Narrative shape: `public_role_then_foundation`
 
 Short biography:
 
@@ -67,19 +73,23 @@ Short biography:
 
 Longer biography:
 
-> Sheikh Tamim bin Hamad Al Thani was educated at Sherborne School and the Royal
-> Military Academy Sandhurst before joining Qatar’s armed forces. He became
-> heir apparent in 2003 and succeeded his father ten years later after a
-> planned transfer of power.
+> As Qatar’s Amir, Sheikh Tamim bin Hamad Al Thani combines hereditary
+> leadership with responsibility for a small state that exercises substantial
+> international influence. Educated at Sherborne School and the Royal Military
+> Academy Sandhurst, he served in the armed forces, became heir apparent in
+> 2003 and succeeded his father ten years later.
 >
-> As Amir, he has overseen a period in which Qatar has expanded its diplomatic
-> reach, international investments and cultural ambitions. Sport has been a
-> sustained personal and national interest: he served on the International
-> Olympic Committee and helped shape Qatar’s emergence as a major host. His
-> public life is defined by succession, statecraft and the effort to give a
-> small Gulf state an unusually prominent global role.
+> His rule has encompassed domestic development, regional diplomacy and the
+> expansion of Qatar’s cultural and investment presence abroad. Sport is a
+> sustained personal and national interest: Tamim served on the International
+> Olympic Committee and supported Qatar’s emergence as a major host. The
+> country’s global sporting programme has remained one of the most visible
+> elements of his tenure.
 
 ## Investor and philanthropist: Yuri Milner
+
+Opening mode: `defining_achievement`
+Narrative shape: `achievement_then_backstory`
 
 Short biography:
 
@@ -91,22 +101,23 @@ Short biography:
 
 Longer biography:
 
-> Yuri Milner trained in theoretical physics in Moscow before moving from
-> science into banking and technology investment. He built Mail.ru Group around
-> Russian internet businesses, then created DST Global to invest
-> internationally. Early backing of companies including Facebook and Alibaba
-> established him as a specialist in identifying consumer platforms before
-> their global growth was fully recognised.
+> Early investments in Facebook and Alibaba established Yuri Milner as a
+> technology investor willing to back consumer platforms before their global
+> growth was assured. He had trained as a theoretical physicist in Moscow
+> before moving into banking, building Mail.ru Group around Russian internet
+> businesses and creating DST Global for international investment.
 >
-> Science remained a continuing interest rather than an abandoned first
-> career. Milner and his wife Julia helped establish the Breakthrough Prizes,
-> while his Breakthrough Initiatives support the search for technological
-> civilisations and research into interstellar travel. That combination of
-> patient technology investing and large-scale scientific patronage gives his
-> public career a consistent theme: placing capital behind ideas whose
-> potential may take years to become visible.
+> Science occupies an equally substantial place in Milner’s public work. He and
+> his wife Julia helped establish the Breakthrough Prizes, while the
+> Breakthrough Initiatives support searches for technological civilisations and
+> research into interstellar travel. The programmes direct private funding
+> towards fundamental questions that conventional research budgets can
+> struggle to sustain.
 
 ## Sparse public record: Roger Samuelsson
+
+Opening mode: `formative_episode`
+Narrative shape: `formative_episode_then_payoff`
 
 Short biography:
 
@@ -119,20 +130,21 @@ Short biography:
 
 Longer biography:
 
-> Roger Samuelsson’s route into medical technology began with a pair of boxing
-> gloves. Curious about their origin, the Swedish engineering student travelled
-> to Taiwan, began exporting local goods and eventually settled there. He
-> co-founded Scandinavian Health Limited in 1989, and an injector contract with
-> Upjohn redirected the young trading business towards drug-delivery devices.
+> A pair of boxing gloves prompted Roger Samuelsson to trace their supply chain
+> to Taiwan. The Swedish engineering student began exporting local goods there
+> and co-founded Scandinavian Health Limited. A contract to develop an injector
+> for Upjohn shifted the young trading business towards drug-delivery devices.
 >
-> Samuelsson later bought out his partner and concentrated SHL Medical on
-> autoinjectors, combining product design with automated manufacturing. The
-> company grew as injectable medicines moved from clinics into patients’ homes.
-> He handed day-to-day leadership to a successor but retained majority
-> ownership, leaving a business shaped by the same practical curiosity that
-> first took him from Sweden to Taiwan.
+> Samuelsson bought out his partner and focused SHL Medical on autoinjectors,
+> pairing product design with automated manufacturing. Demand grew as
+> injectable medicines moved from clinics into patients’ homes. He eventually
+> handed day-to-day leadership to a successor while retaining majority
+> ownership and a continuing strategic interest in the company.
 
 ## Maritime professional: Dimitris Procopiou
+
+Opening mode: `institution_or_asset`
+Narrative shape: `institution_then_person`
 
 Short biography:
 
@@ -145,28 +157,89 @@ Short biography:
 
 Longer biography:
 
-> Dimitris Procopiou entered commercial shipping with his brother George in
-> 1974, when they established Sea Traders around a single bulk carrier. They
-> expanded into tankers and heavy-lift shipping before dividing the business in
-> 1988. Dimitris took his share of the fleet and created Centrofin Management,
-> turning a joint venture into an independently run family group.
+> Centrofin Management grew from the shipping assets Dimitris Procopiou
+> retained when he and his brother George divided their joint business. The
+> brothers had established Sea Traders around a single bulk carrier in 1974,
+> expanded into tankers and heavy-lift shipping, and separated their interests
+> in 1988.
 >
-> Centrofin developed around crude-oil tankers, product carriers and dry-bulk
-> shipping, supported by dedicated technical-management companies. Procopiou
-> remained closely involved in fleet strategy as the group navigated successive
-> market cycles and renewed its tonnage. His career is defined by commercial
-> shipping itself: acquiring, operating and replacing working ships across
-> volatile freight markets.
+> Procopiou developed Centrofin around crude-oil tankers, product carriers and
+> dry-bulk shipping, supported by dedicated technical-management companies.
+> Repeated freight cycles required the group to balance opportunistic purchases
+> with maintenance and fleet renewal. Procopiou has remained closely involved
+> in those investment and operating decisions as the family business has
+> evolved.
+
+## Acquirer and consolidator: Bernard Arnault
+
+Opening mode: `institution_or_asset`
+Narrative shape: `institution_then_person`
+
+Longer biography:
+
+> Bernard Arnault transformed LVMH into the central platform of his
+> luxury-goods holdings, combining fashion houses, jewellery makers, wines and
+> spirits under long-term family control. Trained as an engineer, he first
+> redirected his family’s construction company towards property before using
+> the purchase of Boussac to gain control of Christian Dior.
+>
+> Arnault has remained chairman and chief executive while extending the group
+> through acquisitions and internal development. The Fondation Louis Vuitton
+> gave his interest in art and architecture a permanent public institution in
+> Paris. Designed by Frank Gehry and opened in 2014, it presents modern and
+> contemporary art beyond LVMH’s commercial houses.
+
+## Creative industries founder: David Geffen
+
+Opening mode: `defining_achievement`
+Narrative shape: `achievement_then_backstory`
+
+Longer biography:
+
+> David Geffen founded three businesses that altered American music and film:
+> Asylum Records, Geffen Records and DreamWorks. He learned the entertainment
+> trade in the William Morris Agency mailroom, moved into talent management and
+> built labels around artists whose work did not fit comfortably within
+> established companies.
+>
+> Geffen eventually withdrew from day-to-day entertainment work and
+> concentrated much of his public activity on philanthropy. Major gifts have
+> supported medicine, education, museums and the performing arts. The Geffen
+> School of Drama at Yale provides tuition-free professional training for
+> actors, directors, designers, playwrights and theatre managers.
+
+## Inherited operator: Stephen Orenstein
+
+Opening mode: `decisive_event`
+Narrative shape: `decision_then_consequence`
+
+Longer biography:
+
+> When his father died in 1985, Stephen Orenstein left university to take
+> responsibility for Supreme Group, the family logistics company. He expanded
+> its food, fuel and supply operations across difficult environments, with
+> contracts supporting military deployments in Afghanistan becoming the
+> decisive engine of its international growth.
+>
+> Orenstein eventually sold the business after three decades of family control.
+> Eintracht Frankfurt remained a durable personal commitment. He invested
+> through Freunde des Adlers and served on the football club’s supervisory
+> board. His season ticket dates from the year he assumed responsibility for
+> Supreme.
 
 ## What to vary
 
-- Lead with the decisive mechanism when birthplace or education is not
-  formative.
-- Let paragraph two continue the causal story, change direction, or add a
-  durable public role; do not always begin it with “His later...”.
-- End with a concrete insight or consequence, not a wealth-classification
-  verdict.
+- Select an opening mode from the facts; do not process the research brief in
+  field order.
+- Make the first sentence identify the person or make the relevance of its
+  concrete opening episode immediately clear.
+- Let paragraph two deepen the core work, change direction, or add a genuinely
+  distinctive public role. Do not create a mandatory later-activities slot.
+- End with a concrete fact, role, or consequence, not a classification verdict
+  or a synthetic tie-back explaining how two chapters connect.
 - Prefer one revealing detail over a list of holdings, charities, offices, or
   dates.
 - A sparse profile may be shorter. Do not target the midpoint of the permitted
   word range.
+- Across a batch, vary both `opening_mode` and `narrative_shape`; do not merely
+  substitute synonyms for "route into business".

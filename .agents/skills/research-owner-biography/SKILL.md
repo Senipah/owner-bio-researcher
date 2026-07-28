@@ -77,16 +77,20 @@ statistics.
 6. Propose only missing or clearly improvable personal fields. Do not infer
    nationality from birthplace, residence from yacht location, or family facts
    from surname.
-7. For a person, build the schema-v5 `biography_brief` after research. Include
-   only durable identity, the wealth or prominence route, a turning point, a
-   later chapter, optional character detail, explicit transient exclusions,
-   and source IDs. Do not place publishers, confidence, classification
-   deliberation, vessel context, rankings, or transient figures in the brief.
-8. Perform a separate editorial pass from that source-hidden brief. Draft a
-   50-55 word short identity card and a 90-190 word, two-paragraph concise
-   profile. Reverse-check material claims against the full ledger only after
-   drafting. Score the five-part editorial rubric in the style reference and
-   revise any dimension below 4.
+7. For a person, build the schema-v6 `biography_brief` after research as an
+   unordered editorial fact pool. Include durable identity, defining work,
+   nullable formative context and decisive moment, one to three enduring
+   dimensions, optional character detail, at least two distinct opening
+   options, explicit transient exclusions, and source IDs. Do not use the
+   legacy route-turning-point-later-chapter outline or place publishers,
+   confidence, classification deliberation, vessel context, rankings, or
+   transient figures in the brief.
+8. Perform a separate editorial pass from that source-hidden fact pool. Select
+   an opening mode and narrative shape deliberately; never draft in brief-field
+   order. Draft a 50-55 word short identity card and a 90-190 word,
+   two-paragraph concise profile. Reverse-check material claims against the
+   full ledger only after drafting. Score the seven-part editorial rubric in
+   the style reference and revise any dimension below 4.
 9. Save a separate dossier with `review.status=pending`. Put uncertain facts or
    links in `candidates_requiring_review`, not proposed changes.
 10. Run:
@@ -101,7 +105,11 @@ statistics.
     .\venv\Scripts\python.exe .agents\skills\research-owner-biography\scripts\audit_biography_corpus.py DOSSIER_DIRECTORY --strict
     ```
 
-12. Return the dossier path, both biographies or non-person editorial note,
+12. Before compiling a batch, perform a dedicated cross-owner editorial pass.
+    Tabulate every person's opening mode, narrative shape, paragraph-two
+    transition, and final sentence. Revise semantic repetition even when the
+    wording differs, and rerun the corpus auditor until strict mode passes.
+13. Return the dossier path, both biographies or non-person editorial note,
     strongest evidence, confidence summary, unresolved questions, and explicit
     statement that nothing was applied.
 
@@ -127,6 +135,17 @@ tracking. Do not let parallel agents edit the shared owner dataset.
 - Score each biography independently and keep its confidence no higher than
   its weakest material claim.
 - Do not pad the longer biography or repeat the short biography verbatim.
+- Treat the short biography as the concise wealth-origin answer and the longer
+  biography as an edited profile. Do not expand the short biography's field
+  order into a chronological long biography.
+- For business profiles, establish the person's defining identity,
+  achievement, institution, asset, decision, or public contribution before
+  supplying routine career chronology. A formative episode may lead only when
+  its relevance is immediately clear.
+- Never open with abstract narrative scaffolding such as "route into
+  business", "path to wealth", "career began", "commercial footing", or
+  "gave them their start". Do not use "later chapter", "second strand", "the
+  arc", or a synthetic tie-back to manufacture coherence.
 - Keep source attribution, evidence gaps, confidence, and classification
   reasoning out of published prose. The biography must not reveal the research
   process or database contract.
@@ -171,14 +190,20 @@ tracking. Do not let parallel agents edit the shared owner dataset.
 - Confirm the short biography is one paragraph and 50-55 words.
 - Confirm the longer biography is exactly two paragraphs and 90-190 words,
   without padding or targeting a preferred midpoint.
-- Confirm person dossiers contain a source-hidden `biography_brief`; confirm
+- Confirm person dossiers contain a schema-v6 source-hidden, unordered
+  `biography_brief` with at least two distinct opening options; confirm
   institution and unresolved-placeholder dossiers contain no biography and use
   `editorial_note` instead.
+- Confirm all seven editorial scores are 4 or 5 and that `opening_mode` selects
+  one of the brief options while `narrative_shape` uses an allowed value.
 - Confirm neither biography names sources, narrates evidence or confidence,
   explains classifications, or exposes database/process language.
 - Confirm neither biography contains a negative wealth-taxonomy contrast such
   as "rather than commercial enterprise", "governmental rather than
   commercial", or "state assets rather than personal wealth".
+- Confirm the long biography passes the orientation and enrichment-question
+  tests, does not open with career-route scaffolding, does not force a
+  later-activities paragraph, and ends on a concrete fact or consequence.
 - Confirm the longer biography uses no more than two explicit years, no more
   than one monetary or percentage figure, and normally no sentence over 30
   words.
@@ -191,13 +216,14 @@ tracking. Do not let parallel agents edit the shared owner dataset.
 - Run `scripts/validate_dossier.py` with `--owner-input --strict-editorial` and
   fix all errors and warnings.
 - For batches, run `scripts/audit_biography_corpus.py --strict` and revise
-  repeated openings, stock phrases, structures, and conclusions.
-- For skill revisions, validate the schema-v5 Shahid Khan calibration dossier
+  repeated opening modes, origin-story leads, narrative shapes, paragraph-two
+  transitions, stock phrases, and synthetic conclusions.
+- For skill revisions, validate the schema-v6 Shahid Khan calibration dossier
   and compare the result against every archetype in the calibration set.
 
 # Expected output
 
-A schema-v5 JSON dossier matching `references/research-contract.md`, saved
+A schema-v6 JSON dossier matching `references/research-contract.md`, saved
 separately from owner inputs. It contains:
 
 - record type, identity, and research status;
@@ -208,7 +234,8 @@ separately from owner inputs. It contains:
 - a source-hidden biography brief plus short and longer biographies for people,
   or a non-applicable editorial note for institutions and unresolved
   placeholders;
-- a five-dimension editorial assessment with every person score at least 4;
+- a seven-dimension editorial assessment, selected opening mode, and narrative
+  shape, with every person score at least 4;
 - proposed personal fields and verified socials;
 - per-item confidence and source IDs;
 - source ledger, uncertainties, and pending review state.

@@ -10,9 +10,14 @@ from pathlib import Path
 from typing import Any
 
 from editorial_rules import (
+    FORMULAIC_SECOND_PARAGRAPH_PATTERN,
+    ORIGIN_STORY_OPENING_PATTERN,
     STOCK_PHRASES,
+    SYNTHETIC_ENDING_PATTERN,
     WORD_PATTERN,
     editorial_findings,
+    final_sentence,
+    paragraphs,
 )
 
 
@@ -31,8 +36,8 @@ def _load_people(directory: Path) -> tuple[list[dict[str, Any]], list[str]]:
         except (OSError, json.JSONDecodeError) as exc:
             problems.append(f"{path.name}: cannot read dossier: {exc}")
             continue
-        if dossier.get("schema_version") != 5:
-            problems.append(f"{path.name}: schema_version is not 5")
+        if dossier.get("schema_version") != 6:
+            problems.append(f"{path.name}: schema_version is not 6")
             continue
         if dossier.get("record_type") != "person":
             continue
@@ -41,6 +46,26 @@ def _load_people(directory: Path) -> tuple[list[dict[str, Any]], list[str]]:
         if not isinstance(short, dict) or not isinstance(long, dict):
             problems.append(f"{path.name}: person dossier has no biographies")
             continue
+        classifications = {}
+        for field in (
+            "primary_industry",
+            "wealth_origin",
+            "wealth_relationship",
+        ):
+            value = dossier.get(field)
+            classifications[field] = (
+                value.get("classification")
+                if isinstance(value, dict)
+                else None
+            )
+        assessment = dossier.get("editorial_assessment")
+        if not isinstance(assessment, dict):
+            assessment = {}
+        for field in ("opening_mode", "narrative_shape"):
+            if not isinstance(assessment.get(field), str):
+                problems.append(
+                    f"{path.name}: editorial_assessment.{field} is missing"
+                )
         people.append(
             {
                 "path": path,
@@ -50,6 +75,9 @@ def _load_people(directory: Path) -> tuple[list[dict[str, Any]], list[str]]:
                 ),
                 "short": short.get("plain_text", ""),
                 "long": long.get("plain_text", ""),
+                **classifications,
+                "opening_mode": assessment.get("opening_mode"),
+                "narrative_shape": assessment.get("narrative_shape"),
             }
         )
     return people, problems
@@ -82,6 +110,42 @@ def _repeated_ngrams(
     return repeated
 
 
+def _business_people(
+    people: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    return [
+        person
+        for person in people
+        if person.get("wealth_origin") != "dynastic_royal"
+        and (
+            person.get("primary_industry") not in {None, "unknown"}
+            or person.get("wealth_relationship")
+            not in {None, "unknown", "royal_beneficiary"}
+        )
+    ]
+
+
+def _ratio_limit(count: int) -> float:
+    return 0.5 if count < 10 else 0.35
+
+
+def _ratio_issue(
+    *,
+    label: str,
+    owners: list[str],
+    cohort_size: int,
+) -> str | None:
+    if cohort_size < 5:
+        return None
+    ratio = len(owners) / cohort_size
+    if ratio <= _ratio_limit(cohort_size):
+        return None
+    return (
+        f"{len(owners)}/{cohort_size} business profiles use {label}: "
+        f"{', '.join(sorted(owners))}"
+    )
+
+
 def audit(
     directory: Path,
     *,
@@ -90,7 +154,7 @@ def audit(
     people, issues = _load_people(directory)
     observations: list[str] = []
     if not people:
-        issues.append("no schema-v5 person dossiers found")
+        issues.append("no schema-v6 person dossiers found")
         return issues, observations, 0
     repetition_threshold = max(
         minimum_owners,
@@ -140,6 +204,64 @@ def audit(
             f"{len(birth_led)}/{len(people)} long biographies are birth-led: "
             f"{', '.join(sorted(birth_led))}"
         )
+
+    business_people = _business_people(people)
+    origin_led = [
+        str(person["name"])
+        for person in business_people
+        if ORIGIN_STORY_OPENING_PATTERN.search(
+            paragraphs(str(person["long"]))[0],
+        )
+    ]
+    formulaic_second_paragraph = [
+        str(person["name"])
+        for person in business_people
+        if len(paragraphs(str(person["long"]))) > 1
+        and FORMULAIC_SECOND_PARAGRAPH_PATTERN.search(
+            paragraphs(str(person["long"]))[1],
+        )
+    ]
+    synthetic_endings = [
+        str(person["name"])
+        for person in business_people
+        if SYNTHETIC_ENDING_PATTERN.search(
+            final_sentence(str(person["long"])),
+        )
+    ]
+    for label, owners in (
+        ("origin-story openings", origin_led),
+        ("formulaic paragraph-two transitions", formulaic_second_paragraph),
+        ("synthetic tie-back conclusions", synthetic_endings),
+    ):
+        issue = _ratio_issue(
+            label=label,
+            owners=owners,
+            cohort_size=len(business_people),
+        )
+        if issue:
+            issues.append(issue)
+
+    for field, label in (
+        ("opening_mode", "declared opening mode"),
+        ("narrative_shape", "declared narrative shape"),
+    ):
+        values: dict[str, list[str]] = defaultdict(list)
+        for person in business_people:
+            value = person.get(field)
+            if isinstance(value, str) and value:
+                values[value].append(str(person["name"]))
+        if values:
+            dominant_value, owners = max(
+                values.items(),
+                key=lambda item: len(item[1]),
+            )
+            issue = _ratio_issue(
+                label=f"{label} {dominant_value!r}",
+                owners=owners,
+                cohort_size=len(business_people),
+            )
+            if issue:
+                issues.append(issue)
 
     opening_counts: dict[tuple[str, ...], list[str]] = defaultdict(list)
     for person in people:
@@ -191,7 +313,7 @@ def main() -> int:
         args.directory,
         minimum_owners=args.minimum_owners,
     )
-    print(f"Audited {count} schema-v5 person dossiers.")
+    print(f"Audited {count} schema-v6 person dossiers.")
     for observation in observations:
         print(f"INFO: {observation}")
     for issue in issues:

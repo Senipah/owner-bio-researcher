@@ -14,19 +14,22 @@ narrative layer. Do not target the midpoint of the permitted range. For a
 sparse public record, stop at 90-119 strong words rather than padding.
 
 Institutions and unresolved placeholders do not receive biographies. They use
-the schema-v5 `editorial_note` path described in the research contract.
+the schema-v6 `editorial_note` path described in the research contract.
 
 ## Editorial separation
 
 Research and publication are separate passes:
 
 1. Complete identity, source, social, and wealth research.
-2. Build `biography_brief` from durable verified facts.
+2. Build the schema-v6 `biography_brief` as an unordered fact pool, including
+   at least two genuinely different opening angles.
 3. Exclude source publishers, confidence language, wealth-taxonomy
    deliberation, current vessel data, rankings, and transient figures from the
    writing brief.
-4. Draft both biographies from that brief and the calibration set.
-5. Reverse-check every material claim against the full source ledger.
+4. Select an opening mode and narrative shape deliberately. Do not draft in
+   brief-field order.
+5. Draft both biographies from the fact pool and calibration set.
+6. Reverse-check every material claim against the full source ledger.
 
 The published prose must not reveal that a researcher searched sources,
 resolved a database record, assigned classifications, or evaluated confidence.
@@ -45,7 +48,7 @@ Use this order:
 
 1. Identify the person by nationality/background and main role.
 2. Explain the origin of wealth or prominence in concrete terms.
-3. Add one later chapter, major holding, public role, or distinctive context.
+3. Add one major holding, public role, or distinctive context.
 
 The result should read like a character-lore card rather than a financial fact
 sheet.
@@ -55,36 +58,70 @@ inventory of companies, offices, charities, or investments.
 
 ## Longer biography
 
-Answer four questions:
+Cover the material needed to answer four questions, without treating them as a
+required sequence:
 
 1. Who is this person?
-2. How did they reach their position?
+2. What work, institution, or decision made them consequential?
 3. What turning point, working style, or well-sourced detail distinguishes
    them?
-4. What relevant later chapter completes the profile?
+4. What enduring dimension, if any, completes the profile?
 
-Use two short paragraphs:
-
-- Paragraph one covers identity, background, the wealth mechanism, and an
-  important turning point or development.
-- Paragraph two adds one or two layers of character colour: a later business
-  chapter, investment, public role, philanthropy, sport, or another durable
-  part of the person's public story.
+Use two short paragraphs, but do not assign a fixed function to either one.
+Paragraph two may deepen the central business story through operating style,
+ownership, product strategy, or a decisive acquisition. A separate investment,
+public role, philanthropy, or sport belongs only when it materially
+distinguishes the person; it is never a mandatory "later chapter".
 
 Useful character colour explains or makes the person memorable. Examples
-include an unusual route into an industry, a formative early job, an invention,
-a calculated acquisition, a documented hands-on role, or a sustained interest
-that became a serious investment or philanthropic programme.
+include a formative early job, an invention, a calculated acquisition, a
+documented hands-on role, or a sustained interest that became a serious
+investment or philanthropic programme.
 
-Use trivia sparingly. Include it only when it illuminates the person's path or
-character rather than merely being surprising.
+Use trivia sparingly. Include it only when it illuminates the person's choices
+or character rather than merely being surprising.
 
-Do not default to birth and education. Lead with the decisive mechanism,
-turning point, or formative episode when it explains the person more directly.
-Paragraph two may continue the causal story, change direction, or add a
-durable public role; it must not become a standard “later activities” slot.
-End on a concrete insight or consequence, not a classification verdict,
-research caveat, or summary of what could not be proved.
+The first sentence must orient a reader who has not seen the short biography.
+It should establish the person's defining identity, achievement, institution,
+asset, consequential decision, inherited responsibility, or public
+contribution. A formative episode may lead only when its relevance is
+immediately clear and the detail is genuinely distinctive.
+
+Choose among opening modes such as:
+
+- `present_identity`: establish the person's defining current or durable role;
+- `defining_achievement`: lead with the product, institution, work, or idea
+  that made the person consequential;
+- `decisive_event`: begin with an acquisition, decision, or change that altered
+  the person's trajectory;
+- `institution_or_asset`: make the central business or inherited responsibility
+  the orienting subject;
+- `formative_episode`: use a concrete early episode whose significance is
+  apparent in the same sentence;
+- `inherited_responsibility`: establish what was inherited and what the person
+  did with it; or
+- `public_contribution`: lead with a durable public, cultural, scientific, or
+  philanthropic role when it is the clearest identity anchor.
+
+Do not default to birth, education, or first employment. Never open by
+announcing a "route", "path", "entry", "start", "career beginning",
+"commercial footing", or other abstract account of how business commenced.
+Those phrases expose the underlying enrichment question without orienting the
+reader.
+
+The longer biography need not repeat the short biography's wealth-origin
+sentence. It may move backwards after an orienting lead, remain with the core
+work across both paragraphs, or add a genuinely distinct second dimension.
+End on a concrete fact, role, decision, or consequence. Do not manufacture a
+unifying moral with "linking", "extending the same approach", "the arc",
+"second strand", "second thread", or similar tie-back language.
+
+Apply two tests:
+
+1. **Orientation test:** after the first sentence, can a new reader understand
+   who the person is or why the opening detail matters?
+2. **Enrichment-question test:** would the opening still sound natural if no
+   one had asked how the person's wealth began? If not, rewrite it.
 
 ## Vessel independence
 
@@ -123,7 +160,7 @@ turning the current vessel relationship into a substitute biography.
   designed, developed, invested.
 - Use "self-made" only when supported; otherwise describe the mechanism.
 - Treat "oligarch" and similar labels cautiously. Prefer the sourced
-  industrial route.
+  industrial history.
 - Avoid "visionary", "iconic", "renowned", "legendary", and other puffery.
 - Avoid moral judgment and speculation about motives or personality.
 - Omit current net worth unless essential to distinguish the person.
@@ -140,6 +177,10 @@ turning the current vessel relationship into a substitute biography.
   documented entrepreneurial fortune", or "state assets rather than personal
   wealth". These constructions reveal the enrichment brief and sound
   formulaic even when factually careful.
+- Avoid abstract narrative scaffolding such as "route into business",
+  "business path began", "commercial footing", "later chapter", "the arc",
+  "second strand", and "second thread". Replace it with the event, decision,
+  institution, or consequence itself.
 - Avoid stock conclusions such as “remains rooted in”, “broadened his public
   profile”, “best understood as”, and “the principal source of his wealth”.
 - Prefer facts with a useful shelf life. Current roles may be stated, but
@@ -148,7 +189,7 @@ turning the current vessel relationship into a substitute biography.
 
 Prefer causality:
 
-> engineering training -> bumper design -> Bumper Works -> Flex-N-Gate -> sports
+> engineering training -> bumper design -> Bumper Works -> Flex-N-Gate
 
 Avoid inventories:
 
@@ -185,7 +226,8 @@ detail exists, write a shorter profile.
 
 Score each person from 1 to 5 on every dimension and revise any score below 4:
 
-1. `causal_clarity`: the route to wealth or prominence is concrete.
+1. `causal_clarity`: the work, decision, or asset behind wealth or prominence
+   is concrete.
 2. `human_specificity`: at least one detail makes this person distinct without
    resorting to trivia.
 3. `durability`: the profile survives vessel sales and ordinary changes in
@@ -193,10 +235,17 @@ Score each person from 1 to 5 on every dimension and revise any score below 4:
 4. `source_invisibility`: the prose contains facts, not research narration.
 5. `natural_voice`: the biography does not read like a template, résumé,
    classification explanation, or AI-generated conclusion.
+6. `reader_orientation`: the first sentence establishes identity or earns a
+   narrative opening through an immediately relevant concrete detail.
+7. `structural_independence`: the longer biography is not simply an expanded
+   version of the short biography or the default
+   origin-to-later-activity-to-summary template.
 
 For batches, compare the whole tranche as a publication. Revise repeated
-openings, sentence rhythms, paragraph transitions, endings, and stock phrases.
-Run `scripts/audit_biography_corpus.py` before compilation.
+opening modes, narrative shapes, sentence rhythms, paragraph transitions,
+endings, and stock phrases. No single opening mode or narrative shape should
+dominate business profiles. Run `scripts/audit_biography_corpus.py` before
+compilation.
 
 ## HTML
 
@@ -220,7 +269,8 @@ Separate the two `long_biography.plain_text` paragraphs with exactly `\n\n`.
 ## Calibration set
 
 Read [editorial-calibrations.md](editorial-calibrations.md) before drafting.
-It provides distinct patterns for a founder/operator, heir/custodian, royal,
-investor/philanthropist, sparse public record, and maritime professional.
-Use the set to calibrate quality and variation; do not imitate one example
-across an entire tranche.
+It provides distinct patterns for a founder/operator, acquirer/consolidator,
+inherited operator, creative-industries founder, heir/custodian, royal,
+investor/philanthropist, sparse public record, and maritime professional. Use
+the set to calibrate quality and structural variation; do not imitate one
+example across an entire tranche.

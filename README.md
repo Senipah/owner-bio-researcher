@@ -257,12 +257,14 @@ Owner research is stored as one pending-review dossier per person under
 `output\owner-research`. Compile those dossiers into a new owner document and
 a standalone HTML report without changing the enriched input:
 
-Each schema-v5 person dossier contains a source-hidden `biography_brief`, a
-50-55 word short `biography`, a two-paragraph `long_biography` of 90-190 words,
-the five-dimension `editorial_assessment`, and independent `primary_industry`,
-`wealth_origin`, and `wealth_relationship` classifications. Institution and
-unresolved-placeholder dossiers instead contain an `editorial_note`; their
-biography values are null and never applied to person fields.
+Each schema-v6 person dossier contains an unordered, source-hidden
+`biography_brief` fact pool with multiple opening options, a 50-55 word short
+`biography`, a structurally varied two-paragraph `long_biography` of 90-190
+words, the seven-dimension `editorial_assessment`, and independent
+`primary_industry`, `wealth_origin`, and `wealth_relationship`
+classifications. Institution and unresolved-placeholder dossiers instead
+contain an `editorial_note`; their biography values are null and never applied
+to person fields.
 
 The compiler retains the brief, biographies or editorial note, record type, and
 all three classifications under each compiled owner's `ai_research` metadata
@@ -271,12 +273,13 @@ short biography to `details.biography` and maps the longer version to
 `details.long_biography` whenever that form field is available. Equivalent
 editable classification fields can be populated through reviewed dossier
 proposals using their exact display labels. Compilation runs strict editorial
-validation, including source-invisibility, date, figure, and vessel-independence
-checks.
+validation, including source-invisibility, date, figure, vessel-independence,
+reader-orientation, career-scaffolding, transition, and conclusion checks.
 
-Schema-v4 dossiers are intentionally stale under this contract. Their source
-ledgers may be reused, but they must be migrated through the schema-v5
-biography-brief and editorial pass before compilation.
+Schema-v5 and earlier dossiers are intentionally stale under this contract.
+Their source ledgers may be reused, but they must be migrated through the
+schema-v6 unordered fact-pool and cross-owner editorial pass before
+compilation.
 
 ```powershell
 .\venv\Scripts\python.exe .\compile_owner_research.py `

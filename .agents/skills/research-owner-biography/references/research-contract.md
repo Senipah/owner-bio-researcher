@@ -101,9 +101,10 @@ populate:
   separate editorial pass.
 
 The short biography identifies the person and concisely explains the principal
-origin of wealth or prominence. The longer biography adds the formative route,
-an important turning point, and one or two useful layers of character colour
-or later activity.
+origin of wealth or prominence. The longer biography is an edited profile, not
+an expanded wealth-origin answer. It must orient the reader, select the
+strongest narrative angle, and use only the formative, decisive, operating,
+public, or personal material that improves the portrait.
 
 Each biography has its own `confidence` and `source_ids`. Its confidence cannot
 exceed the weakest material claim it contains. Every material claim must be
@@ -119,13 +120,56 @@ system's vessel data. Independently significant maritime careers or sustained
 competitive, research, or philanthropic work may be described, but the
 biography must focus on that durable activity rather than the transient asset.
 
-The brief contains `durable_identity`, `wealth_or_prominence_route`,
-`turning_point`, `later_chapter`, optional `character_detail`,
-`excluded_transient_context`, and `source_ids`. Draft prose from the brief
-without source publishers, confidence language, classification deliberation,
-or current-vessel context, then reverse-check claims against the source ledger.
-Record the five 4-or-5 editorial rubric scores, relevant calibration
-archetype(s), and a concise revision note under `editorial_assessment`.
+The schema-v6 brief is an unordered editorial fact pool, not a paragraph
+outline. It contains:
+
+- `durable_identity`: the clearest durable description of the person;
+- `defining_work`: the product, institution, asset, achievement, or public
+  contribution that most clearly explains why the person matters;
+- nullable `formative_context` and `decisive_moment`;
+- `enduring_dimensions`: one to three durable aspects that may deepen either
+  paragraph;
+- optional `character_detail`;
+- `opening_options`: at least two fact-level angles using distinct opening
+  modes;
+- `excluded_transient_context`; and
+- `source_ids`.
+
+Do not include the schema-v5 outline fields `wealth_or_prominence_route`,
+`turning_point`, or `later_chapter`. Wealth-origin reasoning remains in its
+classification object and source ledger. An opening option is an editorial
+angle, not drafted prose.
+
+Draft without source publishers, confidence language, classification
+deliberation, current-vessel context, or the order of the brief fields. Select
+and record one `opening_mode` and one `narrative_shape`, then reverse-check
+claims against the source ledger. Record all seven 4-or-5 editorial rubric
+scores, relevant calibration archetype(s), and a concise revision note under
+`editorial_assessment`.
+
+Allowed opening modes are:
+
+- `present_identity`
+- `defining_achievement`
+- `decisive_event`
+- `institution_or_asset`
+- `formative_episode`
+- `inherited_responsibility`
+- `public_contribution`
+
+Allowed narrative shapes are:
+
+- `identity_then_origin`
+- `achievement_then_backstory`
+- `decision_then_consequence`
+- `institution_then_person`
+- `formative_episode_then_payoff`
+- `inheritance_then_stewardship`
+- `core_work_deepened`
+- `public_role_then_foundation`
+
+For a batch, distribute these choices according to the material. They are
+editorial planning metadata, not labels to mention in published prose.
 
 For `record_type=institution` or `unresolved_placeholder`, set
 `biography_brief`, `editorial_assessment`, `biography`, and `long_biography` to
@@ -216,7 +260,7 @@ Use this top-level structure:
 
 ```json
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "person",
   "owner": {
     "person_id": null,
@@ -245,10 +289,24 @@ Use this top-level structure:
   "research_status": "complete",
   "biography_brief": {
     "durable_identity": "Example industrial founder.",
-    "wealth_or_prominence_route": "A product innovation led to an operating company.",
-    "turning_point": "The founder acquired a larger former employer.",
-    "later_chapter": "Later activity expanded into sport.",
+    "defining_work": "A product innovation became the foundation of an operating company.",
+    "formative_context": "Engineering training supplied the technical background.",
+    "decisive_moment": "The founder acquired a larger former employer.",
+    "enduring_dimensions": [
+      "Direct operating control",
+      "Investment in sport"
+    ],
     "character_detail": "The business combined engineering with retained control.",
+    "opening_options": [
+      {
+        "mode": "defining_achievement",
+        "angle": "Use the product innovation to establish why the founder matters."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Use the acquisition to establish the scale-changing decision."
+      }
+    ],
     "excluded_transient_context": [
       "Current vessel ownership",
       "Current net worth"
@@ -261,8 +319,12 @@ Use this top-level structure:
     "durability": 5,
     "source_invisibility": 5,
     "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 4,
+    "opening_mode": "defining_achievement",
+    "narrative_shape": "achievement_then_backstory",
     "calibration_archetypes": ["founder_operator"],
-    "notes": "The profile explains the causal route without source or asset narration."
+    "notes": "The long profile opens on a defining product, deepens the operating story, and ends on a concrete role."
   },
   "editorial_note": null,
   "forbes_profile": {
@@ -360,7 +422,7 @@ differences:
 
 ```json
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "record_type": "institution",
   "research_status": "not_applicable",
   "biography_brief": null,

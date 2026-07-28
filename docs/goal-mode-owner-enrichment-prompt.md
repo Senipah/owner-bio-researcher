@@ -14,10 +14,11 @@ batch.
 
 Continue until all selected owners have:
 
-1. one schema-v5 dossier beneath `output/owner-research/top-100/`;
-2. a source-hidden biography brief plus validated short and longer biographies
-   and editorial assessment for people, or a non-person editorial note with
-   null biography/editorial fields;
+1. one schema-v6 dossier beneath `output/owner-research/top-100/`;
+2. an unordered source-hidden biography fact pool with at least two distinct
+   opening options, plus validated short and longer biographies and editorial
+   assessment for people, or a non-person editorial note with null
+   biography/editorial fields;
 3. validated
    `primary_industry`, `wealth_origin`, and `wealth_relationship`
    classifications;
@@ -52,16 +53,29 @@ For every owner:
 - keep lower-confidence facts and links in review candidates or uncertainties;
 - set `record_type` before drafting; institutions and unresolved placeholders
   receive `editorial_note`, null biographies, and no personal proposals;
-- complete research first, then build `biography_brief` from durable verified
-  facts without source publishers, confidence language, classification
-  deliberation, vessel context, rankings, or transient figures;
-- perform a separate editorial pass from the brief and reverse-check its claims
+- complete research first, then build the schema-v6 `biography_brief` as an
+  unordered fact pool containing durable identity, defining work, nullable
+  formative context and decisive moment, one to three enduring dimensions,
+  optional character detail, at least two fact-level opening options with
+  distinct modes, transient exclusions, and source IDs;
+- never use the schema-v5 route-turning-point-later-chapter outline;
+- perform a separate editorial pass from the fact pool, deliberately select
+  and record one opening mode and narrative shape, and reverse-check its claims
   against the full source ledger;
 - draft a neutral 50-55 word short biography and a standalone, two-paragraph
   longer biography of 90-190 words without targeting a preferred midpoint;
-- use the longer biography for the formative route, an important turning
-  point, and one or two strongly sourced layers of character colour or later
-  activity;
+- treat the longer biography as a standalone edited profile rather than an
+  expanded wealth-origin answer; establish the person's defining identity,
+  achievement, institution, asset, decision, inherited responsibility, or
+  public contribution before supplying routine chronology;
+- never open with "route into business", "path to wealth", "career began",
+  "commercial footing", or "gave them their start"; use a formative episode
+  only when its relevance is immediately clear;
+- allow paragraph two to deepen the core work rather than force a later
+  investment, sport, or philanthropy slot;
+- end on a concrete fact, role, decision, or consequence, not a synthetic
+  tie-back using "linking", "extending the same approach", "the arc",
+  "second strand", "second thread", or equivalent phrasing;
 - keep publishers, source attribution, evidence gaps, confidence,
   classification reasoning, database language, and research narration out of
   both biographies;
@@ -75,8 +89,8 @@ For every owner:
 - use British English, no more than two explicit years, no more than one
   monetary or percentage figure, normally no sentence over 30 words, and no
   dense inventory of companies, offices, charities, or investments;
-- vary openings, transitions, rhythms, and endings against the complete
-  editorial calibration set;
+- vary opening modes, narrative shapes, transitions, rhythms, and endings
+  against the complete editorial calibration set;
 - do not pad sparse profiles or repeat the short text verbatim;
 - validate the dossier with:
 
@@ -95,7 +109,7 @@ after each group of ten validated owners.
 
 After all dossiers validate, perform a main-agent consistency review:
 
-- biographies meet the five-part editorial rubric and use the complete
+- biographies meet the seven-part editorial rubric and use the complete
   calibration set without copying one structure across the cohort;
 - published prose contains no source narration, classification deliberation,
   negative wealth-taxonomy contrasts, database/process language, or repeated
@@ -110,6 +124,14 @@ After all dossiers validate, perform a main-agent consistency review:
 - proposed select values use labels supported by the owner form;
 - social type IDs match the input lookup;
 - no dossier is approved on the CEO's behalf.
+
+Then perform a dedicated cross-owner editorial pass. Create a working table
+containing owner, opening mode, narrative shape, first sentence,
+paragraph-two opening, and final sentence. Revise semantic repetition even
+when exact wording differs. No single opening mode or narrative shape may
+dominate business profiles, origin-story openings must be a minority, and
+formulaic later-chapter transitions or synthetic tie-back conclusions must be
+exceptional.
 
 Run the cohort editorial audit and revise all issues before compilation:
 
@@ -136,7 +158,7 @@ Acceptance criteria:
 - the compiled JSON contains every and only unique current Top-100 owner,
   ordered by minimum current vessel rank;
 - every compiled owner has a validated dossier;
-- every schema-v5 person dossier passes the strict corpus editorial audit;
+- every schema-v6 person dossier passes the strict corpus editorial audit;
 - `_baseline`, `person_id`, `profile_url`, and existing `profile_key` values
   remain unchanged;
 - pending output owners retain `workflow.ai_enriched=false`;

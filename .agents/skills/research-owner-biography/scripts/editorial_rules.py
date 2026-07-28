@@ -95,6 +95,19 @@ PROCESS_LEAK_PATTERNS = (
 STOCK_PHRASES = (
     "built his fortune",
     "built her fortune",
+    "route into business",
+    "path into business",
+    "route to wealth",
+    "path to wealth",
+    "business path began",
+    "career path began",
+    "commercial footing",
+    "second chapter",
+    "second strand",
+    "second thread",
+    "later chapter",
+    "the same pattern",
+    "the arc from",
     "remains rooted in",
     "fortune remains rooted",
     "underlying fortune remains",
@@ -111,6 +124,57 @@ STOCK_PHRASES = (
 
 PERSONAL_YACHT_PATTERN = re.compile(
     r"\b(?:yacht|yachts|yachting|superyacht|superyachts)\b",
+    re.IGNORECASE,
+)
+
+META_CAREER_OPENING_PATTERN = re.compile(
+    r"^(?:"
+    r"[^.!?]{0,140}\b(?:route|path)\s+(?:into|to)\b"
+    r"|[^.!?]{0,140}\b(?:business|commercial|investment|industrial|"
+    r"shipping|energy|logistics)?\s*(?:career|path)\s+began\b"
+    r"|[^.!?]{0,140}\b(?:gave|provided)\s+[^.!?]{0,60}\b"
+    r"(?:start|entry|route)\s+(?:in|into|to)\s+"
+    r"(?:business|industry|commerce|wealth)\b"
+    r"|[^.!?]{0,140}\b(?:commercial footing|entry into business)\b"
+    r")",
+    re.IGNORECASE,
+)
+
+ORIGIN_STORY_OPENING_PATTERN = re.compile(
+    r"^(?:"
+    r"born\b|raised\b|educated\b|trained\b|at\s+[^.!?]{0,55}\b|"
+    r"[^.!?]{0,150}\b(?:"
+    r"began|entered|started|studied|trained|arrived|reached|"
+    r"first\s+(?:worked|built|explored|entered|invested)|"
+    r"came early|preceded (?:his|her|their) career|"
+    r"route|path|start|entry|commercial footing"
+    r")\b"
+    r")",
+    re.IGNORECASE,
+)
+
+FORMULAIC_SECOND_PARAGRAPH_PATTERN = re.compile(
+    r"^(?:"
+    r"(?:[A-Z][\w’'-]+|His|Her|Their|The)\s+(?i:later|then)\b"
+    r"|(?i:[^.!?]{0,130}\b(?:"
+    r"second chapter|second strand|second thread|later chapter|"
+    r"parallel test|parallel strand"
+    r")\b)"
+    r")",
+)
+
+SYNTHETIC_ENDING_PATTERN = re.compile(
+    r"(?:"
+    r"\b(?:link(?:s|ed|ing)?|connect(?:s|ed|ing)?|"
+    r"extend(?:s|ed|ing)?)\b[^.!?]{0,130}"
+    r"\b(?:with|to|into|back)\b"
+    r"|\bthe (?:same pattern|arc)\b"
+    r"|\b(?:second|durable) (?:strand|thread|chapter)\b"
+    r"|\bdefines? (?:his|her|their|the) "
+    r"(?:career|public profile|business career)\b"
+    r"|\bgives? (?:his|her|their|the) [^.!?]{0,90}"
+    r"\bconsistent theme\b"
+    r")",
     re.IGNORECASE,
 )
 
@@ -134,6 +198,19 @@ def explicit_years(text: str) -> list[str]:
 
 def financial_figures(text: str) -> list[str]:
     return FINANCIAL_FIGURE_PATTERN.findall(text)
+
+
+def paragraphs(text: str) -> list[str]:
+    return [paragraph.strip() for paragraph in text.split("\n\n")]
+
+
+def final_sentence(text: str) -> str:
+    sentences = [
+        sentence.strip()
+        for sentence in SENTENCE_PATTERN.split(text.replace("\n\n", " "))
+        if sentence.strip()
+    ]
+    return sentences[-1] if sentences else ""
 
 
 def pattern_hits(
@@ -167,6 +244,23 @@ def editorial_findings(
             errors.append(
                 f"{section} contains {len(figures)} financial or percentage "
                 "figures; maximum is 1"
+            )
+        sections = paragraphs(text)
+        opening = sections[0] if sections else ""
+        if META_CAREER_OPENING_PATTERN.search(opening):
+            errors.append(
+                f"{section} opens with abstract career-route scaffolding"
+            )
+        if (
+            len(sections) > 1
+            and FORMULAIC_SECOND_PARAGRAPH_PATTERN.search(sections[1])
+        ):
+            warnings.append(
+                f"{section} uses a formulaic later-chapter transition"
+            )
+        if SYNTHETIC_ENDING_PATTERN.search(final_sentence(text)):
+            warnings.append(
+                f"{section} ends with a synthetic tie-back conclusion"
             )
 
     long_sentences = [

@@ -58,30 +58,27 @@ def _owner(
 
 def _dossier(person_id: int, name: str, review_status: str = "pending") -> dict:
     short_biography = (
-        f"{name} is an industrial entrepreneur who built a manufacturing "
+        f"{name} is an industrial entrepreneur whose manufacturing business "
         "business from an early technical innovation. After developing the "
         "product and founding a specialist company, the owner expanded through "
         "acquisition and international growth. Later investments broadened the "
-        "public profile, while the principal fortune remained rooted in the "
-        "original operating business."
+        "public profile, while the original operating company remained under "
+        "the founder's control."
     )
     long_biography = (
-        f"{name} entered manufacturing through technical product development "
-        "and used an early innovation as the basis for a specialist operating "
-        "company. The business grew through a combination of engineering, "
-        "customer relationships and acquisition, eventually developing into "
-        "an international supplier. That operating history, rather than later "
-        "investments, remains the principal source of the owner's wealth and "
-        "public standing.\n\n"
-        "A subsequent phase brought investments in sport, property and other "
-        "public-facing interests. Those holdings expanded the owner's profile "
-        "without displacing the original industrial business at the centre of "
-        "the fortune. The resulting career is best understood as a progression "
-        "from technical founder to international operator and, later, a more "
-        "diversified owner and investor."
+        f"{name} turned a technical product into the foundation of an "
+        "international manufacturing company. Engineering informed the "
+        "design, while an acquisition supplied the platform for wider growth. "
+        "The founder retained operating control as the company developed new "
+        "customer relationships and expanded production.\n\n"
+        "Private ownership also supported investments in sport and property. "
+        "Those interests increased the founder's public visibility, but "
+        "day-to-day leadership remained concentrated on the manufacturing "
+        "company. The owner continues to direct its long-term strategy and "
+        "capital investment."
     )
     return {
-        "schema_version": 5,
+        "schema_version": 6,
         "record_type": "person",
         "owner": {
             "person_id": person_id,
@@ -95,12 +92,26 @@ def _dossier(person_id: int, name: str, review_status: str = "pending") -> dict:
         "research_status": "complete",
         "biography_brief": {
             "durable_identity": f"{name} is an industrial founder.",
-            "wealth_or_prominence_route": (
-                "Technical product development led to an operating company."
+            "defining_work": (
+                "A technical product became the basis of an operating company."
             ),
-            "turning_point": "An acquisition accelerated international growth.",
-            "later_chapter": "Later activity expanded into sport and property.",
+            "formative_context": "Engineering supplied the technical background.",
+            "decisive_moment": "An acquisition accelerated international growth.",
+            "enduring_dimensions": [
+                "Direct operating control",
+                "Investment in sport and property",
+            ],
             "character_detail": "Engineering informed the founder's approach.",
+            "opening_options": [
+                {
+                    "mode": "defining_achievement",
+                    "angle": "Open with the product innovation.",
+                },
+                {
+                    "mode": "decisive_event",
+                    "angle": "Open with the acquisition.",
+                },
+            ],
             "excluded_transient_context": ["Current vessel ownership"],
             "source_ids": ["S1"],
         },
@@ -110,8 +121,12 @@ def _dossier(person_id: int, name: str, review_status: str = "pending") -> dict:
             "durability": 5,
             "source_invisibility": 5,
             "natural_voice": 4,
+            "reader_orientation": 5,
+            "structural_independence": 4,
+            "opening_mode": "defining_achievement",
+            "narrative_shape": "achievement_then_backstory",
             "calibration_archetypes": ["founder_operator"],
-            "notes": "The profile uses a durable causal story.",
+            "notes": "The profile opens on a product and ends on operating control.",
         },
         "editorial_note": None,
         "biography": {
@@ -629,7 +644,9 @@ def test_renders_review_report() -> None:
     assert "Longer biography" in rendered
     assert "Editorial assessment" in rendered
     assert "source invisibility: 5/5" in rendered
-    assert "A subsequent phase brought investments" in rendered
+    assert "reader orientation: 5/5" in rendered
+    assert "Opening: defining_achievement" in rendered
+    assert "Private ownership also supported investments" in rendered
     assert "Missing fields added" in rendered
     assert "Official profile" in rendered
     assert "Confirm whether this record represents an institution." in rendered

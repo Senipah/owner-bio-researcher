@@ -10,6 +10,7 @@ from typing import Any
 from urllib.parse import urlparse
 
 from editorial_rules import (
+    META_CAREER_OPENING_PATTERN,
     WORD_PATTERN as EDITORIAL_WORD_PATTERN,
     editorial_findings,
 )
@@ -37,14 +38,38 @@ EDITORIAL_DIMENSIONS = {
     "durability",
     "source_invisibility",
     "natural_voice",
+    "reader_orientation",
+    "structural_independence",
 }
 CALIBRATION_ARCHETYPES = {
     "founder_operator",
+    "acquirer_consolidator",
+    "creative_industries",
+    "inherited_operator",
     "heir_custodian",
     "royal_public_office",
     "investor_philanthropist",
     "sparse_public_record",
     "maritime_professional",
+}
+OPENING_MODES = {
+    "present_identity",
+    "defining_achievement",
+    "decisive_event",
+    "institution_or_asset",
+    "formative_episode",
+    "inherited_responsibility",
+    "public_contribution",
+}
+NARRATIVE_SHAPES = {
+    "identity_then_origin",
+    "achievement_then_backstory",
+    "decision_then_consequence",
+    "institution_then_person",
+    "formative_episode_then_payoff",
+    "inheritance_then_stewardship",
+    "core_work_deepened",
+    "public_role_then_foundation",
 }
 FORBES_STATUSES = {"verified", "not_found", "ambiguous", "unavailable"}
 REVIEW_STATUSES = {"pending", "approved", "rejected"}
@@ -219,8 +244,8 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
     if missing:
         errors.append(f"missing top-level keys: {missing}")
 
-    if document.get("schema_version") != 5:
-        errors.append("schema_version must be 5")
+    if document.get("schema_version") != 6:
+        errors.append("schema_version must be 6")
     record_type = document.get("record_type")
     if record_type not in RECORD_TYPES:
         errors.append("record_type is invalid")
@@ -374,15 +399,41 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
         if not isinstance(biography_brief, dict):
             errors.append("biography_brief must be an object for person records")
         else:
-            for key in (
-                "durable_identity",
-                "wealth_or_prominence_route",
-                "turning_point",
-                "later_chapter",
-            ):
+            for key in ("durable_identity", "defining_work"):
                 value = biography_brief.get(key)
                 if not isinstance(value, str) or not value.strip():
                     errors.append(f"biography_brief.{key} must be non-empty")
+            for key in ("formative_context", "decisive_moment"):
+                value = biography_brief.get(key)
+                if (
+                    value is not None
+                    and (
+                        not isinstance(value, str)
+                        or not value.strip()
+                    )
+                ):
+                    errors.append(
+                        f"biography_brief.{key} must be null or non-empty"
+                    )
+            enduring_dimensions = biography_brief.get(
+                "enduring_dimensions",
+            )
+            if (
+                not isinstance(enduring_dimensions, list)
+                or not 1 <= len(enduring_dimensions) <= 3
+                or any(
+                    not isinstance(item, str) or not item.strip()
+                    for item in (
+                        enduring_dimensions
+                        if isinstance(enduring_dimensions, list)
+                        else []
+                    )
+                )
+            ):
+                errors.append(
+                    "biography_brief.enduring_dimensions must contain "
+                    "1-3 non-empty strings"
+                )
             character_detail = biography_brief.get("character_detail")
             if (
                 character_detail is not None
@@ -393,6 +444,50 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
             ):
                 errors.append(
                     "biography_brief.character_detail must be null or non-empty"
+                )
+            opening_options = biography_brief.get("opening_options")
+            option_modes: set[str] = set()
+            if (
+                not isinstance(opening_options, list)
+                or len(opening_options) < 2
+            ):
+                errors.append(
+                    "biography_brief.opening_options must contain at least "
+                    "two options"
+                )
+            else:
+                for index, option in enumerate(opening_options):
+                    path = f"biography_brief.opening_options[{index}]"
+                    if not isinstance(option, dict):
+                        errors.append(f"{path} must be an object")
+                        continue
+                    mode = option.get("mode")
+                    if mode not in OPENING_MODES:
+                        errors.append(f"{path}.mode is invalid")
+                    elif mode in option_modes:
+                        errors.append(
+                            "biography_brief.opening_options modes must be "
+                            "distinct"
+                        )
+                    else:
+                        option_modes.add(mode)
+                    angle = option.get("angle")
+                    if not isinstance(angle, str) or not angle.strip():
+                        errors.append(f"{path}.angle must be non-empty")
+                    elif META_CAREER_OPENING_PATTERN.search(angle):
+                        errors.append(
+                            f"{path}.angle uses abstract career-route "
+                            "scaffolding"
+                        )
+            legacy_keys = {
+                "wealth_or_prominence_route",
+                "turning_point",
+                "later_chapter",
+            } & biography_brief.keys()
+            if legacy_keys:
+                errors.append(
+                    "biography_brief contains legacy outline fields: "
+                    f"{sorted(legacy_keys)}"
                 )
             exclusions = biography_brief.get("excluded_transient_context")
             if not isinstance(exclusions, list) or any(
@@ -411,16 +506,26 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
                 known_sources,
                 errors,
             )
-            brief_text = " ".join(
+            brief_text = ". ".join(
                 str(biography_brief.get(key) or "")
                 for key in (
                     "durable_identity",
-                    "wealth_or_prominence_route",
-                    "turning_point",
-                    "later_chapter",
+                    "defining_work",
+                    "formative_context",
+                    "decisive_moment",
                     "character_detail",
                 )
             )
+            if isinstance(enduring_dimensions, list):
+                brief_text += ". " + ". ".join(
+                    str(item) for item in enduring_dimensions
+                )
+            if isinstance(opening_options, list):
+                brief_text += ". " + ". ".join(
+                    str(option.get("angle") or "")
+                    for option in opening_options
+                    if isinstance(option, dict)
+                )
             editorial_errors, editorial_warnings = editorial_findings(
                 brief_text,
                 section="biography_brief",
@@ -458,6 +563,25 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
                 errors.append(
                     "editorial_assessment.calibration_archetypes must be a "
                     "non-empty list of valid archetypes"
+                )
+            opening_mode = editorial_assessment.get("opening_mode")
+            if opening_mode not in OPENING_MODES:
+                errors.append("editorial_assessment.opening_mode is invalid")
+            elif (
+                isinstance(biography_brief, dict)
+                and option_modes
+                and opening_mode not in option_modes
+            ):
+                errors.append(
+                    "editorial_assessment.opening_mode must select one of "
+                    "biography_brief.opening_options"
+                )
+            if (
+                editorial_assessment.get("narrative_shape")
+                not in NARRATIVE_SHAPES
+            ):
+                errors.append(
+                    "editorial_assessment.narrative_shape is invalid"
                 )
             notes = editorial_assessment.get("notes")
             if not isinstance(notes, str) or not notes.strip():

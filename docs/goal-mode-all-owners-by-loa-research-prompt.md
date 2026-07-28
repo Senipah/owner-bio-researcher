@@ -8,6 +8,9 @@ live system.
 The prompt below processes the next 50 owners whose dossiers are absent,
 invalid, or stale. Change `TRANCHE_SIZE = 50` to another positive number when
 you want a different tranche size. Reuse the same prompt for every tranche.
+Schema-v5 dossiers are intentionally stale under the current editorial
+contract; reuse their verified research and source ledgers where sound, but
+rebuild their brief, biographies, and editorial assessment as schema v6.
 
 ## Prompt
 
@@ -58,7 +61,7 @@ Inventory the dossier directory before assigning research. Treat an existing
 dossier as complete only when:
 
 - its person ID belongs to the frozen cohort;
-- it is schema version 5; and
+- it is schema version 6; and
 - this exact command succeeds:
 
 ```powershell
@@ -77,14 +80,14 @@ skip a difficult owner in favour of a later one. If fewer than
 `TRANCHE_SIZE` remain, process all remaining owners. If none remain, skip
 research and compile the final complete-cohort review artifacts.
 
-For the selected tranche, produce one schema-v5 dossier per owner beneath
+For the selected tranche, produce one schema-v6 dossier per owner beneath
 `output/owner-research/all-by-loa/`. Every dossier must contain:
 
 1. `record_type=person`, `institution`, or `unresolved_placeholder`;
-2. a source-hidden `biography_brief` plus validated short and longer
-   biographies and `editorial_assessment` for a person, or a non-applicable
-   `editorial_note` and null biography/editorial fields for a non-person
-   record;
+2. an unordered, source-hidden `biography_brief` fact pool with at least two
+   distinct opening options, plus validated short and longer biographies and
+   `editorial_assessment` for a person, or a non-applicable `editorial_note`
+   and null biography/editorial fields for a non-person record;
 3. `primary_industry`, `wealth_origin`, and `wealth_relationship`
    classifications;
 4. an explicit Forbes result;
@@ -116,18 +119,37 @@ For every selected owner:
 - use a distinct Company Website proposal only when official evidence connects
   the person to the company;
 - keep lower-confidence facts and links in review candidates or uncertainties;
-- complete all research before drafting and build `biography_brief` from
-  durable verified facts, explicitly excluding source publishers, confidence
-  language, classification deliberation, vessel context, ranking, net worth,
-  and transient figures;
-- perform a separate editorial pass from that brief, then reverse-check every
+- complete all research before drafting and build the schema-v6
+  `biography_brief` as an unordered editorial fact pool containing durable
+  identity, defining work, nullable formative context and decisive moment, one
+  to three enduring dimensions, optional character detail, at least two
+  fact-level opening options with distinct modes, transient exclusions, and
+  source IDs;
+- never use the schema-v5
+  `wealth_or_prominence_route`/`turning_point`/`later_chapter` outline, and
+  explicitly exclude source publishers, confidence language, classification
+  deliberation, vessel context, ranking, net worth, and transient figures from
+  the brief;
+- perform a separate editorial pass from that fact pool, deliberately select
+  and record one opening mode and narrative shape, then reverse-check every
   material claim against the full source ledger;
 - draft a neutral 50-55 word short biography and a standalone,
   two-paragraph longer biography of 90-190 words without targeting a preferred
   midpoint;
-- use the longer biography for the formative route, an important turning
-  point, and one or two strongly sourced layers of character colour or later
-  activity;
+- treat the longer biography as a standalone edited profile, not an expanded
+  answer to how wealth began; orient the reader through the person's defining
+  identity, achievement, institution, asset, consequential decision,
+  inherited responsibility, or public contribution;
+- use a formative episode as the opening only when its relevance is immediately
+  clear, and never open with abstract scaffolding such as "route into
+  business", "path to wealth", "career began", "commercial footing", or
+  "gave them their start";
+- allow paragraph two to deepen the core work instead of forcing a later
+  investment, sport, or philanthropy slot; include a second domain only when it
+  genuinely distinguishes the person;
+- end on a concrete fact, role, decision, or consequence, never a synthetic
+  tie-back using "linking", "extending the same approach", "the arc",
+  "second strand", "second thread", or equivalent phrasing;
 - keep publisher names, source attribution, evidence gaps, confidence,
   classification reasoning, database language, and research-process narration
   out of both biographies;
@@ -140,8 +162,9 @@ For every selected owner:
   inventory of more than three representative companies, investments,
   offices, or institutions;
 - vary openings, paragraph transitions, rhythms, and endings against
-  `references/editorial-calibrations.md`; do not default to birthplace,
-  “His later...”, or a concluding wealth-classification verdict;
+  `references/editorial-calibrations.md`; vary both opening mode and narrative
+  shape, and do not default to birthplace, career-entry chronology, “His
+  later...”, or a concluding wealth-classification verdict;
 - treat current-vessel relationships and LOA rank as selection and identity
   context only, never as a reason to mention a vessel in either biography;
 - apply the sale-independence test: both biographies must remain accurate,
@@ -166,7 +189,7 @@ Preserve its cohort position; do not silently replace it with a later owner.
 After the tranche validates, perform a main-agent consistency review across
 all currently valid cohort dossiers:
 
-- biographies meet the five-part editorial rubric and use the complete
+- biographies meet the seven-part editorial rubric and use the complete
   calibration set without copying one structure across the tranche;
 - published prose contains no source narration, classification deliberation,
   negative wealth-taxonomy contrasts, database/process language, or repeated
@@ -183,6 +206,15 @@ all currently valid cohort dossiers:
 - proposed select values use labels supported by the owner form;
 - social type IDs match the input lookup; and
 - no dossier is approved on the user's behalf.
+
+Then perform a dedicated cross-owner editorial pass over the selected tranche.
+Create a working table containing owner, opening mode, narrative shape, first
+sentence, paragraph-two opening, and final sentence. Use it to revise semantic
+repetition even where exact wording differs. No single opening mode or
+narrative shape may dominate business profiles, origin-story openings must be
+a minority, and formulaic later-chapter transitions or synthetic tie-back
+conclusions must be exceptional. This table is working review material and
+does not need to be saved.
 
 Run the tranche-level editorial audit and revise all issues before compiling:
 
@@ -220,7 +252,7 @@ Acceptance criteria for this run:
 
 - only the next requested tranche was researched;
 - every newly completed dossier validates against the exact enriched input;
-- every schema-v5 person dossier passes the strict corpus editorial audit;
+- every schema-v6 person dossier passes the strict corpus editorial audit;
 - all pre-existing valid dossiers remain unchanged unless validation required
   a repair;
 - the compiled checkpoint contains exactly the valid contiguous LOA prefix;

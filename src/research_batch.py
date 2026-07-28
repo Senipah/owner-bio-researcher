@@ -876,7 +876,16 @@ def render_research_report(report: dict[str, Any]) -> str:
                     ("durability", "durability"),
                     ("source_invisibility", "source invisibility"),
                     ("natural_voice", "natural voice"),
+                    ("reader_orientation", "reader orientation"),
+                    (
+                        "structural_independence",
+                        "structural independence",
+                    ),
                 )
+            )
+            editorial_plan = (
+                f"Opening: {_e(assessment.get('opening_mode'))}; "
+                f"shape: {_e(assessment.get('narrative_shape'))}"
             )
             summary_confidence = _confidence_badge(
                 owner.get("biography_confidence")
@@ -894,6 +903,7 @@ def render_research_report(report: dict[str, Any]) -> str:
                 </div>
                 <p><strong>Editorial assessment:</strong>
                   {assessment_text}<br>
+                  <span class="muted">{editorial_plan}</span><br>
                   <span class="muted">{_e(assessment.get("notes"))}</span></p>
             """
         else:

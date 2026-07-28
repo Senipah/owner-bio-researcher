@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 import subprocess
 import sys
 from copy import deepcopy
@@ -22,14 +23,22 @@ def _calibration() -> dict:
     return json.loads(CALIBRATION.read_text(encoding="utf-8"))
 
 
-def _validate(tmp_path: Path, dossier: dict) -> subprocess.CompletedProcess[str]:
+def _validate(
+    tmp_path: Path,
+    dossier: dict,
+    *,
+    strict: bool = False,
+) -> subprocess.CompletedProcess[str]:
     path = tmp_path / "dossier.json"
     path.write_text(
         json.dumps(dossier, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
+    command = [sys.executable, str(VALIDATOR), str(path)]
+    if strict:
+        command.append("--strict-editorial")
     return subprocess.run(
-        [sys.executable, str(VALIDATOR), str(path)],
+        command,
         cwd=REPO_ROOT,
         text=True,
         capture_output=True,
@@ -115,6 +124,39 @@ def test_validator_requires_person_biography_brief(tmp_path: Path) -> None:
     assert "biography_brief must be an object for person records" in result.stderr
 
 
+def test_validator_requires_multiple_opening_options(tmp_path: Path) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["biography_brief"]["opening_options"] = [
+        dossier["biography_brief"]["opening_options"][0]
+    ]
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert (
+        "biography_brief.opening_options must contain at least two options"
+        in result.stderr
+    )
+
+
+def test_validator_rejects_abstract_opening_option(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["biography_brief"]["opening_options"][0]["angle"] = (
+        "Open with his route into business."
+    )
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert (
+        "biography_brief.opening_options[0].angle uses abstract "
+        "career-route scaffolding"
+        in result.stderr
+    )
+
+
 def test_validator_requires_editorial_scores_of_at_least_four(
     tmp_path: Path,
 ) -> None:
@@ -126,6 +168,22 @@ def test_validator_requires_editorial_scores_of_at_least_four(
     assert result.returncode == 1
     assert (
         "editorial_assessment.natural_voice must be 4 or 5"
+        in result.stderr
+    )
+
+
+def test_validator_requires_selected_opening_mode_from_brief(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["editorial_assessment"]["opening_mode"] = "public_contribution"
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert (
+        "editorial_assessment.opening_mode must select one of "
+        "biography_brief.opening_options"
         in result.stderr
     )
 
@@ -170,20 +228,105 @@ def test_validator_rejects_negative_wealth_taxonomy_contrast(
     )
 
 
-def test_validator_rejects_more_than_two_long_biography_years(
+def test_validator_rejects_abstract_career_route_opening(
     tmp_path: Path,
 ) -> None:
     dossier = deepcopy(_calibration())
     plain = dossier["long_biography"]["plain_text"].replace(
-        "Sport and entertainment became a second chapter.",
-        "Sport expanded in 2001, 2002 and 2003.",
+        'Shahid "Shad" Khan turned a corrosion-resistant truck bumper into '
+        "the foundation of Flex-N-Gate, the automotive-parts group he owns.",
+        'Shahid "Shad" Khan\'s business path began with automotive parts.',
     )
     dossier["long_biography"]["plain_text"] = plain
     dossier["long_biography"]["html"] = "".join(
         f"<p>{paragraph}</p>\r\n"
         for paragraph in plain.split("\n\n")
     )
-    dossier["long_biography"]["word_count"] = len(plain.split())
+    dossier["long_biography"]["word_count"] = len(
+        re.findall(r"\b[\w]+(?:[’'-][\w]+)*\b", plain)
+    )
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert (
+        "long_biography opens with abstract career-route scaffolding"
+        in result.stderr
+    )
+
+
+def test_strict_validator_rejects_formulaic_second_paragraph(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    plain = dossier["long_biography"]["plain_text"].replace(
+        "Private ownership gave Khan room",
+        "Khan later found room",
+    )
+    dossier["long_biography"]["plain_text"] = plain
+    dossier["long_biography"]["html"] = "".join(
+        f"<p>{paragraph}</p>\r\n"
+        for paragraph in plain.split("\n\n")
+    )
+    dossier["long_biography"]["word_count"] = len(
+        re.findall(r"\b[\w]+(?:[’'-][\w]+)*\b", plain)
+    )
+
+    result = _validate(tmp_path, dossier, strict=True)
+
+    assert result.returncode == 1
+    assert (
+        "strict editorial: long_biography uses a formulaic "
+        "later-chapter transition"
+        in result.stderr
+    )
+
+
+def test_strict_validator_rejects_synthetic_tie_back_ending(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    plain = dossier["long_biography"]["plain_text"].replace(
+        "Khan remains chief executive of Flex-N-Gate, preserving direct "
+        "control of the industrial business behind his wider investments.",
+        "The same pattern runs through his industrial and sporting interests.",
+    )
+    dossier["long_biography"]["plain_text"] = plain
+    dossier["long_biography"]["html"] = "".join(
+        f"<p>{paragraph}</p>\r\n"
+        for paragraph in plain.split("\n\n")
+    )
+    dossier["long_biography"]["word_count"] = len(
+        re.findall(r"\b[\w]+(?:[’'-][\w]+)*\b", plain)
+    )
+
+    result = _validate(tmp_path, dossier, strict=True)
+
+    assert result.returncode == 1
+    assert (
+        "strict editorial: long_biography ends with a synthetic "
+        "tie-back conclusion"
+        in result.stderr
+    )
+
+
+def test_validator_rejects_more_than_two_long_biography_years(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    plain = dossier["long_biography"]["plain_text"].replace(
+        "Khan remains chief executive of Flex-N-Gate, preserving direct "
+        "control of the industrial business behind his wider investments.",
+        "Khan expanded in 2001, 2002 and 2003.",
+    )
+    dossier["long_biography"]["plain_text"] = plain
+    dossier["long_biography"]["html"] = "".join(
+        f"<p>{paragraph}</p>\r\n"
+        for paragraph in plain.split("\n\n")
+    )
+    dossier["long_biography"]["word_count"] = len(
+        re.findall(r"\b[\w]+(?:[’'-][\w]+)*\b", plain)
+    )
 
     result = _validate(tmp_path, dossier)
 
