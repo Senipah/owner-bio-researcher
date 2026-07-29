@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "record_type": "person",
   "owner": {
     "person_id": 119,
@@ -144,6 +144,20 @@
       "band": "very_high",
       "reason": "The dedicated exact-name profile identifies Salman bin Abdulaziz Al Saud as Saudi Arabia's monarch and matches the Riyadh governorship and accession history established by official Saudi sources."
     }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Sources establish King Salman's dynastic lineage and public offices but do not identify which privately held sector created the relevant personal or family fortune; state, crown and office-held assets cannot supply the classification.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "Official sources establish his lineage and state ownership of Saudi natural resources, but no strong evidence identifies or separates a private wealth-creating sector."
+    },
+    "source_ids": [
+      "S2",
+      "S5"
+    ]
   },
   "primary_industry": {
     "classification": "unknown",
@@ -501,6 +515,10 @@
     {
       "topic": "Other blank fields",
       "detail": "Name suffix and secondary residence remain optional. Death, death-age, internal-note and unknown-name fields remain inapplicable or system-managed for a living person."
+    },
+    {
+      "topic": "Wealth-creation industry",
+      "detail": "No reviewed source identifies the private sector that created King Salman's personal or family fortune. State natural resources, crown assets and office-held assets cannot supply the classification, so wealth_creation_industry remains Unknown."
     }
   ],
   "review": {

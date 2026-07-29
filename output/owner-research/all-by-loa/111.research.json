@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "record_type": "person",
   "owner": {
     "person_id": 111,
@@ -137,6 +137,19 @@
       "band": "high",
       "reason": "Focused exact-name and site:forbes.com/profile searches under both Mohamed and Mohammed found Forbes articles mentioning him but no matching Forbes profile; the profile for the late Sheikh Khalifa is a different person."
     }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Reliable reporting identifies substantial Al Nahyan family private holdings but does not establish the sector that originally created Sheikh Mohammed's private or transferred family fortune; state oil revenues, sovereign funds and assets controlled through office are excluded.",
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Bloomberg documents private family holdings while describing a blurred boundary with state assets, and provides no defensible evidence that a particular private sector created the relevant fortune."
+    },
+    "source_ids": [
+      "S5"
+    ]
   },
   "primary_industry": {
     "classification": "unknown",
@@ -487,7 +500,8 @@
     "No second nationality was evidenced, so the blank secondary-nationality field is not filled.",
     "The official personal site links Facebook, Twitter/X, LinkedIn and Instagram, but no official personal YouTube or TikTok account was identified in this research pass.",
     "Vessel relationships and LOA ranking were excluded from the editorial brief and both biographies because they are selection context, not durable biography content.",
-    "Blank suffix, secondary residence, death, internal-note and unknown-name fields were treated as optional, inapplicable or system fields rather than enrichment targets."
+    "Blank suffix, secondary residence, death, internal-note and unknown-name fields were treated as optional, inapplicable or system fields rather than enrichment targets.",
+    "Wealth-creation industry remains Unknown because public reporting does not identify the private sector that created the relevant Al Nahyan family wealth independently from state, sovereign or office-held assets; Energy and Diversified are not inferred."
   ],
   "review": {
     "status": "pending",

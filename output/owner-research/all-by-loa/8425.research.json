@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "record_type": "person",
   "owner": {
     "person_id": 8425,
@@ -143,6 +143,22 @@
       "band": "very_high",
       "reason": "The current dedicated Forbes profile exactly matches Zuckerberg's name, Meta co-founder role, Facebook source of wealth, self-made status, United States citizenship and Harvard attendance."
     }
+  },
+  "wealth_creation_industry": {
+    "classification": "technology",
+    "label": "Technology",
+    "summary": "Zuckerberg's original fortune was created in technology by co-founding Facebook at Harvard and retaining ownership as the student network developed into Meta.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes identifies Facebook as his source of wealth, while Meta, its SEC-filed proxy and Harvard directly document the company's creation, his founder role and the ownership that produced the fortune."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S5"
+    ]
   },
   "primary_industry": {
     "classification": "technology",

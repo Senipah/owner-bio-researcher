@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "record_type": "institution",
   "owner": {
     "person_id": 913,
@@ -109,6 +109,21 @@
       "band": "very_high",
       "reason": "Exact-name, alternative-name and site:forbes.com/profile searches returned Forbes articles about Oman but no dedicated profile for Oman Government; the record is an institution rather than a person eligible for a personal wealth profile."
     }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "A private wealth-creation industry is not applicable because this record represents the Government of Oman, a public institution rather than a natural person or privately held family enterprise.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Official Omani sources establish a government and state-institution identity, leaving no basis for assigning a private fortune-creation sector."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
   },
   "primary_industry": {
     "classification": "unknown",

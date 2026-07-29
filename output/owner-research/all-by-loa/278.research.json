@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "record_type": "person",
   "owner": {
     "person_id": 278,
@@ -150,6 +150,20 @@
       "band": "very_high",
       "reason": "Focused exact-name and site:forbes.com/profile searches found Forbes reporting that matches King Fahd's son but no dedicated personal profile; similarly named royal profiles belong to other people."
     }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Sources establish Prince Abdulaziz's royal lineage and historical property activity but do not identify which privately held sector created the underlying inherited family fortune.",
+    "confidence": {
+      "score": 80,
+      "band": "medium",
+      "reason": "Court records and established reporting document royal lineage and opaque property holdings, but they do not establish the original private wealth-creating sector or separate it reliably from wider royal and state assets."
+    },
+    "source_ids": [
+      "S2",
+      "S3"
+    ]
   },
   "primary_industry": {
     "classification": "unknown",
@@ -546,7 +560,8 @@
     "The wealth relationship remains Unknown because public evidence does not transparently separate the prince's own current assets, King Fahd's estate, wider House of Saud property, and Saudi state assets.",
     "No personal LinkedIn, Instagram, personal website, Facebook, YouTube, or TikTok profile met the identity-verification threshold; namesakes and accounts belonging to similarly named relatives were rejected.",
     "No second nationality was evidenced, so the blank secondary-nationality field remains unfilled.",
-    "Blank suffix, secondary residence, death, internal-note, and unknown-name fields were treated as optional, inapplicable, or system fields rather than enrichment targets."
+    "Blank suffix, secondary residence, death, internal-note, and unknown-name fields were treated as optional, inapplicable, or system fields rather than enrichment targets.",
+    "No reviewed source identifies the sector that originally created Prince Abdulaziz's dynastic family wealth. Historical United States property holdings are later assets, not evidence that Real Estate created the underlying fortune, and state or royal wealth cannot be substituted."
   ],
   "review": {
     "status": "pending",

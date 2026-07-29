@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "record_type": "person",
   "owner": {
     "person_id": 1957,
@@ -136,6 +136,22 @@
       "band": "very_high",
       "reason": "The current exact-name Forbes profile matches Sechin's age, Russian citizenship, Moscow residence and public identity. It does not publish a net-worth or source-of-wealth field."
     }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Public sources establish Sechin's Energy-sector employment and Rosneft operating authority but do not establish a principal private fortune or identify the sector that created it.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "Forbes publishes no source-of-wealth field, while official Rosneft material establishes an executive role and state-linked company ownership rather than the origin of personal wealth."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
   },
   "primary_industry": {
     "classification": "energy",
@@ -442,7 +458,8 @@
     "No strong source established a secondary nationality, so the secondary-nationality field remains blank.",
     "The source has birth day and birth year transposed. The exact date is proposed as two corrections, while the dated calculated-age fields remain system-managed and untouched.",
     "Suffix and secondary residence remain optional; death, internal-note and unknown-name fields remain inapplicable or system-managed for a living person.",
-    "The existing Wikipedia link was preserved and was not duplicated as a proposal."
+    "The existing Wikipedia link was preserved and was not duplicated as a proposal.",
+    "No reviewed source establishes a principal private fortune or the sector that created it. Rosneft employment, management authority and the company's state-linked assets cannot support an Energy wealth-creation classification, so wealth_creation_industry remains Unknown."
   ],
   "review": {
     "status": "pending",

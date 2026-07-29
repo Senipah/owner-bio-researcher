@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "record_type": "person",
   "owner": {
     "person_id": 106,
@@ -137,6 +137,22 @@
       "band": "very_high",
       "reason": "Focused exact-name and site:forbes.com/profile searches found current Forbes team valuations and articles naming Sheikh Mansour, but no dedicated personal Forbes profile."
     }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Public sources establish Sheikh Mansour's dynastic connection to Al Nahyan family wealth but do not identify which privately held sector created that fortune; state and sovereign assets cannot supply the classification.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "Reviewed first-party and Bloomberg evidence establishes his lineage and separates sovereign vehicles from private family wealth, but it does not identify the private wealth-creating sector."
+    },
+    "source_ids": [
+      "S1",
+      "S5",
+      "S7",
+      "S9"
+    ]
   },
   "primary_industry": {
     "classification": "sports",
@@ -514,7 +530,8 @@
     "A current Aletihad report independently attributes and embeds the @hhmansour Instagram account, so it is proposed alongside the corroborated X account. A name-matched LinkedIn profile and possible personal websites lacked equivalent confirmation and were rejected.",
     "No second nationality was evidenced, so the blank secondary-nationality field remains unfilled.",
     "The owner input lists Blue and Hadar as current vessels, but the biographies do not make a yacht-ownership claim because it is unnecessary to explain the documented wealth route or public profile.",
-    "Blank suffix, secondary residence, death, age, internal-note and unknown-name fields were treated as optional, inapplicable or system fields rather than enrichment targets."
+    "Blank suffix, secondary residence, death, age, internal-note and unknown-name fields were treated as optional, inapplicable or system fields rather than enrichment targets.",
+    "The reviewed evidence does not establish which privately held sector created the Al Nahyan family fortune. Oil-producing-state context and sovereign portfolios were excluded, so wealth_creation_industry remains Unknown."
   ],
   "review": {
     "status": "pending",

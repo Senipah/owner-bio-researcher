@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "record_type": "institution",
   "owner": {
     "person_id": 894,
@@ -108,6 +108,20 @@
       "band": "very_high",
       "reason": "Focused exact-name and site:forbes.com/profile searches found no dedicated Forbes profile for Turkey Government or Government of Türkiye. Forbes's Turkey country page and Recep Tayyip Erdogan person profile represent different record types and were rejected."
     }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "A wealth-creation industry is not applicable because this record represents the Government of Türkiye, a public state institution rather than a natural person or private fortune.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Official constitutional and e-Government sources establish a public institutional state context, not privately held wealth-producing assets whose original sector could be classified."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
   },
   "primary_industry": {
     "classification": "unknown",

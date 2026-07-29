@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "record_type": "person",
   "owner": {
     "person_id": 3282,
@@ -143,6 +143,24 @@
       "band": "very_high",
       "reason": "Exact-name and site:forbes.com/profile searches found Forbes staff reporting about Khudainatov but no dedicated Forbes person profile."
     }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Khudainatov's executive career and founding of a private integrated oil and gas group are documented, but reliable public evidence does not establish that this activity or its retained economics created his principal private fortune.",
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Strong sources establish the transition from Rosneft into private energy projects and the formation of Independent Oil and Gas Company, but do not transparently connect its financing, beneficial economics or proceeds to the creation of the principal fortune."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ]
   },
   "primary_industry": {
     "classification": "energy",
@@ -408,7 +426,8 @@
     "No official company website was securely attributable to his Independent Oil and Gas Company. The prominent nnk.ru result belongs to the unrelated National Non-Metallic Company and was rejected.",
     "The matching English Wikipedia article carries an undisclosed-paid-editing warning and was not proposed as a social link.",
     "The source display name contains two spaces between the given name and surname. It is preserved exactly in the dossier owner block.",
-    "Blank title, suffix, secondary residence, calculated age, internal-note and unknown-name fields were not treated as enrichment targets."
+    "Blank title, suffix, secondary residence, calculated age, internal-note and unknown-name fields were not treated as enrichment targets.",
+    "Wealth-creation industry remains Unknown because the evidence establishes an energy career and private-company founder role but does not show that Independent Oil and Gas Company or its retained proceeds created Khudainatov's principal private fortune; employment and office alone are insufficient."
   ],
   "review": {
     "status": "pending",

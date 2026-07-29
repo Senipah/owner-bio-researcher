@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "record_type": "institution",
   "owner": {
     "person_id": 469,
@@ -94,6 +94,21 @@
       "band": "very_high",
       "reason": "Fresh exact-name and Forbes-profile searches found no Rijeka City or City of Rijeka profile. Search results contained only incidental references to the Croatian city, and a person profile is not applicable to this municipal institution."
     }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "A private wealth-creation industry is not applicable because this record represents the City of Rijeka, a municipal government institution rather than a natural person or privately held enterprise.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Official City of Rijeka sources establish a local-government identity, representative council and statutory public functions, leaving no basis for assigning a private fortune-creation sector."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
   },
   "primary_industry": {
     "classification": "unknown",

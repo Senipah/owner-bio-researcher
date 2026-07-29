@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "record_type": "person",
   "owner": {
     "person_id": 42,
@@ -136,6 +136,21 @@
       "band": "very_high",
       "reason": "The current dedicated profile exactly matches Akhmedov's Russian citizenship, Moscow residence, sable-trading start, Tansley founding, Nortgas ownership and chairmanship, 2012 exit, investment source of wealth and self-made status."
     }
+  },
+  "wealth_creation_industry": {
+    "classification": "energy",
+    "label": "Energy",
+    "summary": "Akhmedov created his principal fortune by moving from gas-equipment supply into ownership and control of the natural-gas producer Nortgas before selling his remaining interest and reinvesting the proceeds.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Current and historical Forbes profiles document the gas-equipment-to-Nortgas route and identify natural gas as the historical wealth source, while NOVATEK's official record confirms the disposal of the remaining stake."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S5"
+    ]
   },
   "primary_industry": {
     "classification": "finance_investments",

@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "record_type": "person",
   "owner": {
     "person_id": 93,
@@ -135,6 +135,21 @@
       "band": "high",
       "reason": "Focused exact-name and site:forbes.com/profile searches found Forbes articles and historic ruler coverage, but no matching current individual Forbes profile."
     }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Reliable public evidence does not establish which private sector created the relevant Al Maktoum family fortune transferred through Sheikh Mohammed's dynastic position. Dubai Holding is government-owned, while Godolphin is not evidenced as the origin of his wealth.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Official sources establish the ruling-family lineage, government ownership of Dubai Holding and Sheikh Mohammed's personal Godolphin role, but do not identify a private sector that created the relevant family fortune."
+    },
+    "source_ids": [
+      "S2",
+      "S4",
+      "S6"
+    ]
   },
   "primary_industry": {
     "classification": "unknown",
@@ -429,7 +444,8 @@
     "Royal beneficiary is the best-supported wealth relationship, but limited disclosure prevents a more precise account of his individual private holdings and economic role.",
     "No second nationality was evidenced, so secondary nationality remains unproposed.",
     "No official personal TikTok account was linked from the current UAE Cabinet page or official personal site.",
-    "Blank suffix, secondary residence, death, internal-note and unknown-name fields were treated as optional, inapplicable or system fields rather than enrichment targets."
+    "Blank suffix, secondary residence, death, internal-note and unknown-name fields were treated as optional, inapplicable or system fields rather than enrichment targets.",
+    "Wealth-creation industry remains Unknown because public evidence does not identify the private sector that created the relevant Al Maktoum family fortune independently from Dubai government or office-held assets; Godolphin is documented but not established as the source of wealth."
   ],
   "review": {
     "status": "pending",

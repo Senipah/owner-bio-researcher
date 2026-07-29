@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "record_type": "person",
   "owner": {
     "person_id": 172,
@@ -146,6 +146,22 @@
       "band": "very_high",
       "reason": "The current dedicated Forbes profile matches Arnault's exact identity, French citizenship, LVMH chairmanship, source of wealth and acquisition history."
     }
+  },
+  "wealth_creation_industry": {
+    "classification": "fashion_retail",
+    "label": "Fashion & Retail",
+    "summary": "Arnault used capital from his family's construction and property business to acquire Christian Dior, but created his principal fortune by building and controlling LVMH's global luxury fashion and retail group.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Forbes, LVMH and Bloomberg consistently document the family-business starting capital, the Christian Dior acquisition and the subsequent creation of the principal fortune through LVMH's luxury portfolio."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4",
+      "S5"
+    ]
   },
   "primary_industry": {
     "classification": "fashion_retail",

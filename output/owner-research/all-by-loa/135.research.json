@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "record_type": "person",
   "owner": {
     "person_id": 135,
@@ -135,6 +135,22 @@
       "band": "very_high",
       "reason": "Focused exact-name and site:forbes.com/profile searches found Forbes reporting about Tamim but no dedicated Forbes person profile."
     }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Reliable public evidence does not establish the private sector that created the relevant Al Thani family fortune accessible through Tamim's dynastic position; Qatar's hydrocarbon economy, QIA assets and office-held resources are excluded.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Official and established reporting distinguishes personally attributed property, wider family holdings and QIA state assets, but does not identify an original private wealth-creating sector attributable to Tamim."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S5",
+      "S6"
+    ]
   },
   "primary_industry": {
     "classification": "unknown",
@@ -502,6 +518,10 @@
     {
       "topic": "Transient context",
       "detail": "Vessel data, current wealth estimates, family-fortune totals, property valuations, sovereign-portfolio figures and short-lived geopolitical developments are excluded from the biographies."
+    },
+    {
+      "topic": "Wealth-creation industry",
+      "detail": "No strong source identifies the private sector that created the relevant Al Thani family fortune independently from Qatar's state, sovereign-fund or office-held assets. Wealth-creation industry remains Unknown, and Energy is not inferred from the state's hydrocarbon economy."
     }
   ],
   "review": {

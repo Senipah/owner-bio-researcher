@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "record_type": "person",
   "owner": {
     "person_id": 125,
@@ -141,6 +141,21 @@
       "band": "very_high",
       "reason": "The dedicated exact-name profile matches Mohammed bin Salman's Saudi citizenship and crown-prince identity. Its editorial copy was last updated in 2018, so current offices are independently supported by 2026 official Saudi and PIF sources."
     }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Reliable public evidence does not establish the private sector that created the relevant Al Saud family fortune accessible through Prince Mohammed's dynastic position; Saudi state oil revenues, PIF assets and office-held resources are excluded.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Official sources establish Prince Mohammed's ruling-family lineage and public chairmanships, while PIF confirms its separate public legal personality and institutional governance; none identifies a private wealth-creating sector."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S7"
+    ]
   },
   "primary_industry": {
     "classification": "unknown",
@@ -483,6 +498,10 @@
     {
       "topic": "Secondary nationality and other blank fields",
       "detail": "No nationality beyond the Saudi Arabian nationality already recorded was established. Name suffix and secondary residence remain optional; death, death-age, internal-note and unknown-name fields remain inapplicable or system-managed."
+    },
+    {
+      "topic": "Wealth-creation industry",
+      "detail": "No strong source identifies the private sector that created the relevant Al Saud family fortune independently from Saudi state, crown, sovereign-fund or office-held assets. Wealth-creation industry remains Unknown; Energy and Finance & Investments are not inferred from public stewardship."
     }
   ],
   "review": {

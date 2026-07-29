@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "record_type": "person",
   "owner": {
     "person_id": 134,
@@ -143,6 +143,22 @@
       "band": "very_high",
       "reason": "The current dedicated profile exactly matches Sheikh Hamad's name, HBJ identity, Qatari citizenship, Doha residence, former government roles and investment-based wealth."
     }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Sources establish Sheikh Hamad's dynastic wealth context and current private investment portfolio but do not identify whether investment activity created the original fortune or was funded by pre-existing family capital.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "Forbes and regulatory evidence establish private investment holdings, while official sources establish ruling-family lineage and separate QIA assets; the capital history of the original private fortune remains undisclosed."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S5"
+    ]
   },
   "primary_industry": {
     "classification": "finance_investments",
@@ -473,7 +489,8 @@
     "No second nationality was established in strong sources, so secondary nationality remains blank.",
     "No identity-verified personal LinkedIn, Instagram, Facebook, YouTube, TikTok or personal website met the verification threshold. No official public website for Paramount or Prime Capital was securely attributable to Sheikh Hamad.",
     "The existing Wikipedia link resolves to the correct person and was not duplicated.",
-    "Suffix and secondary residence remain optional; death, internal-note and unknown-name fields remain inapplicable or system-managed for a living person."
+    "Suffix and secondary residence remain optional; death, internal-note and unknown-name fields remain inapplicable or system-managed for a living person.",
+    "Forbes identifies investments as Sheikh Hamad's current source of wealth, but reviewed evidence does not establish whether investment activity created the original private fortune or was funded by dynastic family capital. QIA, public office and Qatar's hydrocarbon context were excluded, so wealth_creation_industry remains Unknown."
   ],
   "review": {
     "status": "pending",
