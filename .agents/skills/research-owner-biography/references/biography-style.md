@@ -15,14 +15,14 @@ meaningful narrative layer. Do not target the midpoint of the permitted range.
 For a sparse public record, stop at 90-119 strong words rather than padding.
 
 Institutions and unresolved placeholders do not receive biographies. They use
-the schema-v6 `editorial_note` path described in the research contract.
+the schema-v7 `editorial_note` path described in the research contract.
 
 ## Editorial separation
 
 Research and publication are separate passes:
 
 1. Complete identity, source, social, and wealth research.
-2. Build the schema-v6 `biography_brief` as an unordered fact pool, including
+2. Build the schema-v7 `biography_brief` as an unordered fact pool, including
    at least two genuinely different opening angles.
 3. Exclude source publishers, confidence language, wealth-taxonomy
    deliberation, current vessel data, rankings, and transient figures from the
@@ -44,7 +44,7 @@ Those details belong in the dossier metadata.
 ## Short-long independence
 
 Use a working allocation before drafting. It is editorial scratch material and
-does not become part of the schema-v6 dossier:
+does not become part of the schema-v7 dossier:
 
 | Bucket | Requirement |
 | --- | --- |

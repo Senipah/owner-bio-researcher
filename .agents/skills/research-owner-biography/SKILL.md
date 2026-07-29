@@ -1,6 +1,6 @@
 ---
 name: research-owner-biography
-description: Research a yacht owner, resolve their identity, classify primary industry, wealth origin, and relationship to wealth, verify Forbes and social profiles, draft short and longer evidence-backed biographies, and produce a confidence-scored review dossier. Use for one-owner biography work, CEO calibration rounds, or review-only batch enrichment of owner JSON; do not use to apply live website updates.
+description: Research a yacht owner, resolve their identity, classify wealth-creation industry, current primary industry, wealth origin, and relationship to wealth, verify Forbes and social profiles, draft short and longer evidence-backed biographies, and produce a confidence-scored review dossier. Use for one-owner biography work, CEO calibration rounds, or review-only batch enrichment of owner JSON; do not use to apply live website updates.
 ---
 
 # Purpose
@@ -36,7 +36,7 @@ statistics.
   evidence, confidence, social-link, and dossier rules.
 - Read
   [references/wealth-classification.md](references/wealth-classification.md)
-  before classifying industry, wealth origin, or relationship to wealth.
+  before classifying industries, wealth origin, or relationship to wealth.
 - Read [references/biography-style.md](references/biography-style.md) before
   drafting or revising biography text.
 - Read
@@ -65,10 +65,12 @@ statistics.
    `ambiguous`, or `unavailable`; never silently omit the check.
 4. Research the origin story and current underlying private assets using
    first-party sources, Forbes, reputable business reporting, and well-cited
-   reference sources. Populate `primary_industry`, `wealth_origin`, and
-   `wealth_relationship` independently under the wealth-classification
-   reference. Prefer how wealth or prominence was created over its current
-   amount.
+   reference sources. Populate `wealth_creation_industry`,
+   `primary_industry`, `wealth_origin`, and `wealth_relationship`
+   independently under the wealth-classification reference. Distinguish the
+   sector that created the fortune from the sector that currently best
+   describes its principal private interests. Prefer how wealth or prominence
+   was created over its current amount.
 5. Search all person-relevant link types supported by the input lookup,
    prioritising public personal Instagram, LinkedIn, and personal websites.
    A company website may be proposed under its distinct type when the owner
@@ -77,7 +79,7 @@ statistics.
 6. Propose only missing or clearly improvable personal fields. Do not infer
    nationality from birthplace, residence from yacht location, or family facts
    from surname.
-7. For a person, build the schema-v6 `biography_brief` after research as an
+7. For a person, build the schema-v7 `biography_brief` after research as an
    unordered editorial fact pool. Include durable identity, defining work,
    nullable formative context and decisive moment, one to three enduring
    dimensions, optional character detail, at least two distinct opening
@@ -90,7 +92,7 @@ statistics.
    anchors, at least one short-only fact or dimension, at least two substantive
    long-only facts or dimensions, and the short-biography material the long
    version will deliberately omit. Do not store this working table in the
-   schema-v6 dossier.
+   schema-v7 dossier.
 9. Select an opening mode and narrative shape deliberately; never draft in
    brief-field order. Draft a 50-55 word short identity card and a 90-190 word,
    two-paragraph concise profile from their allocated facts. The long profile
@@ -181,8 +183,8 @@ tracking. Do not let parallel agents edit the shared owner dataset.
   other details likely to date quickly.
 - Use British English except in official names, titles, and quotations.
 - Preserve source access dates because Forbes and business roles change.
-- Never infer an industry's sector from inheritance status, current occupation,
-  yacht ownership, nationality, or public office.
+- Never infer either industry's sector from inheritance status, current
+  occupation, yacht ownership, nationality, or public office.
 - Never treat state, sovereign-wealth-fund, crown, or office-held assets as a
   royal person's private wealth without strong evidence of personal ownership.
 - Never set review approval or workflow flags on behalf of the CEO.
@@ -193,10 +195,10 @@ tracking. Do not let parallel agents edit the shared owner dataset.
   IDs.
 - Confirm the dossier inventory matches the exact source owner record.
 - Confirm Forbes was explicitly checked.
-- Confirm all three wealth classifications are populated, use exact
+- Confirm all four wealth classifications are populated, use exact
   classification-to-label mappings, and are supported by source IDs.
 - Confirm every non-`unknown` wealth classification scores at least 85.
-- Confirm inherited wealth follows its underlying industry, and royal or
+- Confirm inherited wealth follows its underlying industries, and royal or
   dynastic records do not assume `Energy` from an oil-producing state.
 - Confirm proposed facts and socials score at least 85.
 - Confirm the short biography is one paragraph and 50-55 words.
@@ -205,7 +207,7 @@ tracking. Do not let parallel agents edit the shared owner dataset.
 - Confirm the working fact allocation used no more than two shared anchors,
   retained at least one short-only fact or dimension, and supplied at least two
   substantive long-only facts or dimensions.
-- Confirm person dossiers contain a schema-v6 source-hidden, unordered
+- Confirm person dossiers contain a schema-v7 source-hidden, unordered
   `biography_brief` with at least two distinct opening options; confirm
   institution and unresolved-placeholder dossiers contain no biography and use
   `editorial_note` instead.
@@ -236,19 +238,20 @@ tracking. Do not let parallel agents edit the shared owner dataset.
 - For batches, run `scripts/audit_biography_corpus.py --strict` and revise
   repeated opening modes, origin-story leads, narrative shapes, paragraph-two
   transitions, stock phrases, and synthetic conclusions.
-- For skill revisions, validate the schema-v6 Shahid Khan calibration dossier
+- For skill revisions, validate the schema-v7 Shahid Khan calibration dossier
   and compare the result against every archetype in the calibration set.
 
 # Expected output
 
-A schema-v6 JSON dossier matching `references/research-contract.md`, saved
+A schema-v7 JSON dossier matching `references/research-contract.md`, saved
 separately from owner inputs. It contains:
 
 - record type, identity, and research status;
 - source-record gap inventory and existing link types;
 - Forbes status;
-- primary-industry, wealth-origin, and wealth-relationship classifications,
-  each with an explanation, confidence, and source IDs;
+- wealth-creation-industry, primary-industry, wealth-origin, and
+  wealth-relationship classifications, each with an explanation, confidence,
+  and source IDs;
 - a source-hidden biography brief plus complementary short and longer
   biographies for people, or a non-applicable editorial note for institutions
   and unresolved placeholders;

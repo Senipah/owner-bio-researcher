@@ -10,10 +10,12 @@ from .workflow import ensure_owner_workflow
 
 
 RESEARCH_CLASSIFICATION_FIELDS = (
+    "wealth_creation_industry",
     "primary_industry",
     "wealth_origin",
     "wealth_relationship",
 )
+COMPARISON_DOSSIER_SCHEMA_VERSIONS = {6, 7}
 BIOGRAPHY_DETAIL_FIELDS = {"biography", "long_biography"}
 RESEARCH_SELECTIONS = {"top-100", "largest-loa", "all-by-loa"}
 RESEARCH_SELECTION_DESCRIPTIONS = {
@@ -691,10 +693,13 @@ def attach_biography_comparisons(
                 "Comparison dossier is missing for person_id "
                 f"{person_id}"
             )
-        if earlier.get("schema_version") != 6:
+        if (
+            earlier.get("schema_version")
+            not in COMPARISON_DOSSIER_SCHEMA_VERSIONS
+        ):
             raise ValueError(
-                "Comparison dossier schema_version is not 6 for person_id "
-                f"{person_id}"
+                "Comparison dossier schema_version is not supported for "
+                f"person_id {person_id}"
             )
         if earlier.get("owner", {}).get("person_id") != person_id:
             raise ValueError(
@@ -1076,6 +1081,14 @@ def render_research_report(report: dict[str, Any]) -> str:
                 <p class="vessels">{vessels}</p>
                 {biography_review}
                 <div class="origin">
+                  <p><strong>Wealth creation industry:</strong>
+                  {_e(owner.get("wealth_creation_industry", {}).get("label"))}
+                  {_confidence_badge(owner.get(
+                      "wealth_creation_industry", {}
+                  ).get("confidence", {}).get("score"))}<br>
+                  <span class="muted">{_e(owner.get(
+                      "wealth_creation_industry", {}
+                  ).get("summary"))}</span></p>
                   <p><strong>Primary industry:</strong>
                   {_e(owner.get("primary_industry", {}).get("label"))}
                   {_confidence_badge(owner.get("primary_industry", {}).get(

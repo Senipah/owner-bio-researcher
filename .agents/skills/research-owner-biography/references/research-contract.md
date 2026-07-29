@@ -42,15 +42,18 @@ Record:
 - `ambiguous`: a profile exists but identity is not secure;
 - `unavailable`: access or search failure prevented a reliable check.
 
-Forbes is a priority source for industry, `source of wealth`, and
+Forbes is a priority source for both industry classifications,
+`source of wealth`, and
 self-made/inherited classification, but corroborate the underlying history
 where possible.
 
 ## Wealth classification
 
 Read [wealth-classification.md](wealth-classification.md) and always populate
-its three independent objects:
+its four independent objects:
 
+- `wealth_creation_industry`: the sector principally responsible for creating
+  the original fortune;
 - `primary_industry`: the sector principally underpinning current identifiable
   private wealth;
 - `wealth_origin`: how the person acquired or gained access to it;
@@ -60,7 +63,7 @@ its three independent objects:
 Each object must contain a valid `classification`, its exact mapped `label`, a
 concrete `summary`, `confidence`, and `source_ids`. Non-`unknown`
 classifications require confidence 85 or higher. Inherited and royal status
-describe origin, not industry. Do not treat state, crown, sovereign, or
+describe origin, not either industry. Do not treat state, crown, sovereign, or
 office-held assets as personal property without strong evidence.
 
 ## Confidence
@@ -120,7 +123,7 @@ system's vessel data. Independently significant maritime careers or sustained
 competitive, research, or philanthropic work may be described, but the
 biography must focus on that durable activity rather than the transient asset.
 
-The schema-v6 brief is an unordered editorial fact pool, not a paragraph
+The schema-v7 brief is an unordered editorial fact pool, not a paragraph
 outline. It contains:
 
 - `durable_identity`: the clearest durable description of the person;
@@ -144,7 +147,7 @@ Before drafting, make a temporary fact-allocation table with no more than two
 shared anchors, at least one short-only fact or dimension, at least two
 substantive long-only facts or dimensions, and explicit short-biography
 material the long version will omit. This table is working editorial material;
-do not add it to the schema-v6 dossier.
+do not add it to the schema-v7 dossier.
 
 Draft without source publishers, confidence language, classification
 deliberation, current-vessel context, or the order of the brief fields. Select
@@ -222,6 +225,7 @@ Tier 2 source establishes the relationship.
 
 Common proposal fields include:
 
+- `wealth_creation_industry`
 - `primary_industry`
 - `wealth_origin`
 - `wealth_relationship`
@@ -268,7 +272,7 @@ Use this top-level structure:
 
 ```json
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "record_type": "person",
   "owner": {
     "person_id": null,
@@ -343,6 +347,17 @@ Use this top-level structure:
       "band": "very_high",
       "reason": "..."
     }
+  },
+  "wealth_creation_industry": {
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "...",
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "..."
+    },
+    "source_ids": ["S1", "S2"]
   },
   "primary_industry": {
     "classification": "manufacturing",
@@ -430,7 +445,7 @@ differences:
 
 ```json
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "record_type": "institution",
   "research_status": "not_applicable",
   "biography_brief": null,

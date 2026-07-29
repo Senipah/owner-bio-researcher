@@ -45,7 +45,26 @@ def test_corpus_auditor_accepts_clean_single_calibration(
     result = _run(tmp_path)
 
     assert result.returncode == 0, result.stderr
-    assert "Audited 1 schema-v6 person dossiers." in result.stdout
+    assert "Audited 1 schema-v7 person dossiers." in result.stdout
+
+
+def test_corpus_auditor_requires_wealth_creation_industry(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    del dossier["wealth_creation_industry"]
+    (tmp_path / "1164.research.json").write_text(
+        json.dumps(dossier, indent=2, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+    result = _run(tmp_path)
+
+    assert result.returncode == 1
+    assert (
+        "wealth_creation_industry.classification is missing"
+        in result.stderr
+    )
 
 
 def test_corpus_auditor_rejects_expanded_short_biography(

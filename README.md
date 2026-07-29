@@ -257,17 +257,20 @@ Owner research is stored as one pending-review dossier per person under
 `output\owner-research`. Compile those dossiers into a new owner document and
 a standalone HTML report without changing the enriched input:
 
-Each schema-v6 person dossier contains an unordered, source-hidden
+Each schema-v7 person dossier contains an unordered, source-hidden
 `biography_brief` fact pool with multiple opening options, a 50-55 word short
 `biography`, a fact-allocated, complementary two-paragraph `long_biography` of
 90-190 words, the seven-dimension `editorial_assessment`, and independent
-`primary_industry`, `wealth_origin`, and `wealth_relationship`
-classifications. Institution and unresolved-placeholder dossiers instead
+`wealth_creation_industry`, `primary_industry`, `wealth_origin`, and
+`wealth_relationship` classifications. Both industry fields use the same
+dictionary, including `Cryptocurrency`: the first records the sector that
+created the original fortune, while the second records the current principal
+private interests. Institution and unresolved-placeholder dossiers instead
 contain an `editorial_note`; their biography values are null and never applied
 to person fields.
 
 The compiler retains the brief, biographies or editorial note, record type, and
-all three classifications under each compiled owner's `ai_research` metadata
+all four classifications under each compiled owner's `ai_research` metadata
 and shows the appropriate content in the review report. For people, it maps the
 short biography to `details.biography` and maps the longer version to
 `details.long_biography` whenever that form field is available. Equivalent
@@ -278,8 +281,10 @@ reader-orientation, career-scaffolding, transition, and conclusion checks.
 
 Schema-v5 and earlier dossiers are intentionally stale under this contract.
 Their source ledgers may be reused, but they must be migrated through the
-schema-v6 unordered fact-pool and cross-owner editorial pass before
-compilation.
+schema-v7 unordered fact-pool and cross-owner editorial pass before
+compilation. Schema-v6 dossiers already satisfy the current editorial
+structure but require a separate classification migration that adds
+`wealth_creation_industry` before schema-v7 compilation.
 
 ```powershell
 .\venv\Scripts\python.exe .\compile_owner_research.py `

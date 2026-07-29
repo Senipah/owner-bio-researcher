@@ -106,7 +106,8 @@ PROCESS_LEAK_PATTERNS = (
         re.compile(
             r"\b(?:classification|classified as|classifies (?:him|her|"
             r"the fortune)|wealth relationship|private-wealth industry|"
-            r"remains? unclassified|all three wealth classifications)\b",
+            r"remains? unclassified|all (?:three|four) wealth "
+            r"classifications)\b",
             re.IGNORECASE,
         ),
     ),

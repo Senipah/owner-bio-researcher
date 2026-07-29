@@ -14,14 +14,13 @@ batch.
 
 Continue until all selected owners have:
 
-1. one schema-v6 dossier beneath `output/owner-research/top-100/`;
+1. one schema-v7 dossier beneath `output/owner-research/top-100/`;
 2. an unordered source-hidden biography fact pool with at least two distinct
    opening options, plus validated short and longer biographies and editorial
    assessment for people, or a non-person editorial note with null
    biography/editorial fields;
-3. validated
-   `primary_industry`, `wealth_origin`, and `wealth_relationship`
-   classifications;
+3. validated `wealth_creation_industry`, `primary_industry`,
+   `wealth_origin`, and `wealth_relationship` classifications;
 4. an explicit Forbes result;
 5. an inventory of missing details and supported link types;
 6. only confidence-85-or-higher proposed details and links;
@@ -41,8 +40,11 @@ For every owner:
   context before collecting facts;
 - search Forbes first and record `verified`, `not_found`, `ambiguous`, or
   `unavailable`;
-- classify industry, origin, and relationship independently using
-  `references/wealth-classification.md`;
+- classify wealth-creation industry, current primary industry, wealth origin,
+  and wealth relationship independently using
+  `references/wealth-classification.md`; use the shared Cryptocurrency
+  industry only when reliable evidence establishes crypto as the relevant
+  wealth-creation or current sector, not merely a later investment;
 - explain where wealth or prominence came from rather than foregrounding net
   worth;
 - search supported person-relevant social types, prioritising Instagram,
@@ -53,7 +55,7 @@ For every owner:
 - keep lower-confidence facts and links in review candidates or uncertainties;
 - set `record_type` before drafting; institutions and unresolved placeholders
   receive `editorial_note`, null biographies, and no personal proposals;
-- complete research first, then build the schema-v6 `biography_brief` as an
+- complete research first, then build the schema-v7 `biography_brief` as an
   unordered fact pool containing durable identity, defining work, nullable
   formative context and decisive moment, one to three enduring dimensions,
   optional character detail, at least two fact-level opening options with
@@ -118,9 +120,11 @@ After all dossiers validate, perform a main-agent consistency review:
   oil-producing state is not treated as evidence of personal `Energy` wealth;
 - inherited, self-made, dynastic/royal, family-transfer, mixed, and unknown
   origin classifications are applied consistently;
-- industry follows the principal identifiable private assets, while
-  relationship distinguishes founders, operators, investors, heirs, family
-  office principals, royal beneficiaries, custodians, and passive owners;
+- wealth-creation industry follows the sector that principally created the
+  original fortune, current primary industry follows the principal
+  identifiable private interests as of research, and relationship
+  distinguishes founders, operators, investors, heirs, family office
+  principals, royal beneficiaries, custodians, and passive owners;
 - proposed select values use labels supported by the owner form;
 - social type IDs match the input lookup;
 - no dossier is approved on the CEO's behalf.
@@ -158,7 +162,7 @@ Acceptance criteria:
 - the compiled JSON contains every and only unique current Top-100 owner,
   ordered by minimum current vessel rank;
 - every compiled owner has a validated dossier;
-- every schema-v6 person dossier passes the strict corpus editorial audit;
+- every schema-v7 person dossier passes the strict corpus editorial audit;
 - `_baseline`, `person_id`, `profile_url`, and existing `profile_key` values
   remain unchanged;
 - pending output owners retain `workflow.ai_enriched=false`;

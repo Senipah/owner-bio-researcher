@@ -66,6 +66,104 @@ def test_validator_rejects_mismatched_classification_label(
     assert "primary_industry.label must be 'Automotive'" in result.stderr
 
 
+def test_validator_uses_shared_industry_dictionary_independently(
+    tmp_path: Path,
+) -> None:
+    creation_crypto = deepcopy(_calibration())
+    creation_crypto["wealth_creation_industry"].update(
+        {
+            "classification": "cryptocurrency",
+            "label": "Cryptocurrency",
+            "summary": "The original fortune was created through cryptocurrency.",
+        }
+    )
+    creation_crypto["primary_industry"].update(
+        {
+            "classification": "finance_investments",
+            "label": "Finance & Investments",
+            "summary": "Current principal interests are in investment management.",
+        }
+    )
+
+    creation_result = _validate(tmp_path, creation_crypto)
+
+    assert creation_result.returncode == 0, creation_result.stderr
+
+    primary_crypto = deepcopy(_calibration())
+    primary_crypto["primary_industry"].update(
+        {
+            "classification": "cryptocurrency",
+            "label": "Cryptocurrency",
+            "summary": "Current principal interests are in cryptocurrency.",
+        }
+    )
+
+    primary_result = _validate(tmp_path, primary_crypto)
+
+    assert primary_result.returncode == 0, primary_result.stderr
+
+
+def test_validator_requires_wealth_creation_industry(tmp_path: Path) -> None:
+    dossier = deepcopy(_calibration())
+    del dossier["wealth_creation_industry"]
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert "wealth_creation_industry" in result.stderr
+
+
+def test_validator_maps_wealth_creation_industry_proposal_to_shared_label(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["wealth_creation_industry"].update(
+        {
+            "classification": "cryptocurrency",
+            "label": "Cryptocurrency",
+            "summary": "The original fortune was created through cryptocurrency.",
+        }
+    )
+    for field in ("raw_blank_details", "researchable_missing_details"):
+        dossier["input_snapshot"][field].append("wealth_creation_industry")
+    dossier["proposed_details"].append(
+        {
+            "action": "fill_missing",
+            "field": "wealth_creation_industry",
+            "value": "Cryptocurrency",
+            "confidence": deepcopy(
+                dossier["wealth_creation_industry"]["confidence"]
+            ),
+            "source_ids": list(
+                dossier["wealth_creation_industry"]["source_ids"]
+            ),
+        }
+    )
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 0, result.stderr
+
+
+def test_validator_requires_unknown_wealth_creation_industry_below_threshold(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["wealth_creation_industry"]["confidence"] = {
+        "score": 80,
+        "band": "medium",
+        "reason": "The available evidence is plausible but inconclusive.",
+    }
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert (
+        "wealth_creation_industry must use classification 'unknown' below "
+        "confidence 85"
+    ) in result.stderr
+
+
 def test_validator_requires_unknown_below_classification_threshold(
     tmp_path: Path,
 ) -> None:
@@ -392,6 +490,7 @@ def test_validator_accepts_non_person_editorial_note(tmp_path: Path) -> None:
     dossier["proposed_details"] = []
     dossier["proposed_socials"] = []
     for field in (
+        "wealth_creation_industry",
         "primary_industry",
         "wealth_origin",
         "wealth_relationship",

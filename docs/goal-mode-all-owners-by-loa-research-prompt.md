@@ -10,7 +10,10 @@ invalid, or stale. Change `TRANCHE_SIZE = 50` to another positive number when
 you want a different tranche size. Reuse the same prompt for every tranche.
 Schema-v5 dossiers are intentionally stale under the current editorial
 contract; reuse their verified research and source ledgers where sound, but
-rebuild their brief, biographies, and editorial assessment as schema v6.
+rebuild their brief, biographies, and editorial assessment as schema v7.
+Schema-v6 dossiers retain the current editorial structure but lack
+`wealth_creation_industry`; migrate those separately to schema v7 before
+using this prompt to resume tranche research.
 
 ## Prompt
 
@@ -61,7 +64,7 @@ Inventory the dossier directory before assigning research. Treat an existing
 dossier as complete only when:
 
 - its person ID belongs to the frozen cohort;
-- it is schema version 6; and
+- it is schema version 7; and
 - this exact command succeeds:
 
 ```powershell
@@ -80,7 +83,7 @@ skip a difficult owner in favour of a later one. If fewer than
 `TRANCHE_SIZE` remain, process all remaining owners. If none remain, skip
 research and compile the final complete-cohort review artifacts.
 
-For the selected tranche, produce one schema-v6 dossier per owner beneath
+For the selected tranche, produce one schema-v7 dossier per owner beneath
 `output/owner-research/all-by-loa/`. Every dossier must contain:
 
 1. `record_type=person`, `institution`, or `unresolved_placeholder`;
@@ -88,8 +91,8 @@ For the selected tranche, produce one schema-v6 dossier per owner beneath
    distinct opening options, plus validated short and longer biographies and
    `editorial_assessment` for a person, or a non-applicable `editorial_note`
    and null biography/editorial fields for a non-person record;
-3. `primary_industry`, `wealth_origin`, and `wealth_relationship`
-   classifications;
+3. `wealth_creation_industry`, `primary_industry`, `wealth_origin`, and
+   `wealth_relationship` classifications;
 4. an explicit Forbes result;
 5. an inventory of missing details and supported link types;
 6. only confidence-85-or-higher proposed details and links; and
@@ -110,8 +113,11 @@ For every selected owner:
   yacht context before collecting facts;
 - search Forbes first and record `verified`, `not_found`, `ambiguous`, or
   `unavailable`;
-- classify industry, wealth origin, and wealth relationship independently
-  using `references/wealth-classification.md`;
+- classify wealth-creation industry, current primary industry, wealth origin,
+  and wealth relationship independently using
+  `references/wealth-classification.md`; use the shared Cryptocurrency
+  industry only when reliable evidence establishes crypto as the relevant
+  wealth-creation or current sector, not merely a later investment;
 - explain how wealth or prominence arose rather than foregrounding net worth;
 - search supported person-relevant social types, prioritising Instagram,
   LinkedIn, and Personal Website;
@@ -119,7 +125,7 @@ For every selected owner:
 - use a distinct Company Website proposal only when official evidence connects
   the person to the company;
 - keep lower-confidence facts and links in review candidates or uncertainties;
-- complete all research before drafting and build the schema-v6
+- complete all research before drafting and build the schema-v7
   `biography_brief` as an unordered editorial fact pool containing durable
   identity, defining work, nullable formative context and decisive moment, one
   to three enduring dimensions, optional character detail, at least two
@@ -134,7 +140,7 @@ For every selected owner:
   shared anchors, at least one short-only fact or dimension, at least two
   substantive long-only facts or dimensions, and the short-biography material
   the long profile will deliberately omit; do not store this working table in
-  the schema-v6 dossier;
+  the schema-v7 dossier;
 - perform a separate editorial pass from that fact pool, deliberately select
   and record one opening mode and narrative shape, then reverse-check every
   material claim against the full source ledger;
@@ -215,9 +221,11 @@ all currently valid cohort dossiers:
   oil-producing state is not treated as evidence of personal `Energy` wealth;
 - inherited, self-made, dynastic/royal, family-transfer, mixed, and unknown
   origin classifications are applied consistently;
-- industry follows the principal identifiable private assets, while
-  relationship distinguishes founders, operators, investors, heirs, family
-  office principals, royal beneficiaries, custodians, and passive owners;
+- wealth-creation industry follows the sector that principally created the
+  original fortune, current primary industry follows the principal
+  identifiable private interests as of research, and relationship
+  distinguishes founders, operators, investors, heirs, family office
+  principals, royal beneficiaries, custodians, and passive owners;
 - proposed select values use labels supported by the owner form;
 - social type IDs match the input lookup; and
 - no dossier is approved on the user's behalf.
@@ -267,7 +275,7 @@ Acceptance criteria for this run:
 
 - only the next requested tranche was researched;
 - every newly completed dossier validates against the exact enriched input;
-- every schema-v6 person dossier passes the strict corpus editorial audit;
+- every schema-v7 person dossier passes the strict corpus editorial audit;
 - all pre-existing valid dossiers remain unchanged unless validation required
   a repair;
 - the compiled checkpoint contains exactly the valid contiguous LOA prefix;

@@ -37,8 +37,8 @@ def _load_people(directory: Path) -> tuple[list[dict[str, Any]], list[str]]:
         except (OSError, json.JSONDecodeError) as exc:
             problems.append(f"{path.name}: cannot read dossier: {exc}")
             continue
-        if dossier.get("schema_version") != 6:
-            problems.append(f"{path.name}: schema_version is not 6")
+        if dossier.get("schema_version") != 7:
+            problems.append(f"{path.name}: schema_version is not 7")
             continue
         if dossier.get("record_type") != "person":
             continue
@@ -49,16 +49,23 @@ def _load_people(directory: Path) -> tuple[list[dict[str, Any]], list[str]]:
             continue
         classifications = {}
         for field in (
+            "wealth_creation_industry",
             "primary_industry",
             "wealth_origin",
             "wealth_relationship",
         ):
             value = dossier.get(field)
-            classifications[field] = (
+            classification = (
                 value.get("classification")
                 if isinstance(value, dict)
                 else None
             )
+            if not isinstance(classification, str) or not classification:
+                problems.append(
+                    f"{path.name}: {field}.classification is missing"
+                )
+                classification = None
+            classifications[field] = classification
         assessment = dossier.get("editorial_assessment")
         if not isinstance(assessment, dict):
             assessment = {}
@@ -155,7 +162,7 @@ def audit(
     people, issues = _load_people(directory)
     observations: list[str] = []
     if not people:
-        issues.append("no schema-v6 person dossiers found")
+        issues.append("no schema-v7 person dossiers found")
         return issues, observations, 0
     repetition_threshold = max(
         minimum_owners,
@@ -343,7 +350,7 @@ def main() -> int:
         args.directory,
         minimum_owners=args.minimum_owners,
     )
-    print(f"Audited {count} schema-v6 person dossiers.")
+    print(f"Audited {count} schema-v7 person dossiers.")
     for observation in observations:
         print(f"INFO: {observation}")
     for issue in issues:

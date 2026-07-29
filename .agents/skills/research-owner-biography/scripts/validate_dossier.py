@@ -74,9 +74,10 @@ NARRATIVE_SHAPES = {
 }
 FORBES_STATUSES = {"verified", "not_found", "ambiguous", "unavailable"}
 REVIEW_STATUSES = {"pending", "approved", "rejected"}
-PRIMARY_INDUSTRIES = {
+INDUSTRIES = {
     "automotive": "Automotive",
     "construction_engineering": "Construction & Engineering",
+    "cryptocurrency": "Cryptocurrency",
     "diversified": "Diversified",
     "energy": "Energy",
     "fashion_retail": "Fashion & Retail",
@@ -120,7 +121,8 @@ WEALTH_RELATIONSHIPS = {
     "unknown": "Unknown",
 }
 CLASSIFICATION_FIELDS = {
-    "primary_industry": PRIMARY_INDUSTRIES,
+    "wealth_creation_industry": INDUSTRIES,
+    "primary_industry": INDUSTRIES,
     "wealth_origin": WEALTH_ORIGINS,
     "wealth_relationship": WEALTH_RELATIONSHIPS,
 }
@@ -226,6 +228,7 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
         "input_snapshot",
         "research_status",
         "forbes_profile",
+        "wealth_creation_industry",
         "primary_industry",
         "wealth_origin",
         "wealth_relationship",
@@ -245,8 +248,8 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
     if missing:
         errors.append(f"missing top-level keys: {missing}")
 
-    if document.get("schema_version") != 6:
-        errors.append("schema_version must be 6")
+    if document.get("schema_version") != 7:
+        errors.append("schema_version must be 7")
     record_type = document.get("record_type")
     if record_type not in RECORD_TYPES:
         errors.append("record_type is invalid")

@@ -79,7 +79,7 @@ def _dossier(person_id: int, name: str, review_status: str = "pending") -> dict:
         "capital investment."
     )
     return {
-        "schema_version": 6,
+        "schema_version": 7,
         "record_type": "person",
         "owner": {
             "person_id": person_id,
@@ -151,6 +151,13 @@ def _dossier(person_id: int, name: str, review_status: str = "pending") -> dict:
                 "band": "high",
                 "reason": "Official sources",
             },
+            "source_ids": ["S1"],
+        },
+        "wealth_creation_industry": {
+            "classification": "manufacturing",
+            "label": "Manufacturing",
+            "summary": "The original fortune was created in manufacturing.",
+            "confidence": {"score": 95},
             "source_ids": ["S1"],
         },
         "primary_industry": {
@@ -362,6 +369,7 @@ def test_renders_changed_biographies_before_and_after() -> None:
     document["owners"] = [_owner(10, "First Owner", 1)]
     repaired = _dossier(10, "First Owner")
     earlier = _dossier(10, "First Owner")
+    earlier["schema_version"] = 6
     earlier["biography"]["plain_text"] = "Earlier short biography."
     earlier["long_biography"]["plain_text"] = (
         "Earlier long biography first paragraph.\n\n"
@@ -416,6 +424,10 @@ def test_compiles_pending_preview_without_changing_baseline() -> None:
     assert compiled["_baseline"] == baseline_before
     assert compiled["workflow"]["ai_enriched"] is False
     assert compiled["workflow"]["updated_in_system"] is False
+    assert (
+        compiled["ai_research"]["wealth_creation_industry"]["label"]
+        == "Manufacturing"
+    )
     assert compiled["ai_research"]["primary_industry"]["label"] == "Manufacturing"
     assert compiled["ai_research"]["wealth_origin"]["label"] == "Self-made"
     assert compiled["ai_research"]["wealth_relationship"]["label"] == "Founder"
@@ -685,6 +697,7 @@ def test_renders_review_report() -> None:
 
     assert derived["owners"]
     assert "First Owner" in rendered
+    assert "Wealth creation industry" in rendered
     assert "Primary industry" in rendered
     assert "Manufacturing" in rendered
     assert "Wealth origin" in rendered
