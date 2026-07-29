@@ -364,6 +364,282 @@ and record `reviewed_by` and `reviewed_at`. Recompile with
 Rejected dossiers must also record `reviewed_by` and `reviewed_at`; their
 proposals are left unapplied and their owners remain `ai_enriched=false`.
 
+
+
+```
+Use `$research-owner-biography`.
+
+Goal: research and complete exactly cohort positions 51–100 from the immutable LOA-prioritised owner cohort, then compile cumulative pending-review artifacts for positions 1–100.
+
+Do not mark this goal complete until every acceptance criterion below is satisfied. Do not mark it blocked merely because the frozen first 50 contain the already authorised baseline editorial findings.
+
+## Authoritative files
+
+- Owner input:
+  `output/owners-list.vessel-enriched.enriched.json`
+- Immutable cohort:
+  `output/owner-research/all-by-loa/cohort.json`
+- Dossier directory:
+  `output/owner-research/all-by-loa/`
+- First-50 migration and baseline-exception record:
+  `output/owner-research/all-by-loa-schema-v7-migration-summary.json`
+- Existing cumulative first-50 artifacts:
+  `output/research-enriched-owners-list.all-by-loa.first-50.json`
+  `output/research-enriched-owners-list.all-by-loa.first-50.html`
+
+Read the repository `AGENTS.md`, `README.md`, relevant AI documentation, and the complete `$research-owner-biography` skill and its required references before acting.
+
+## Preflight
+
+1. Verify that the migration summary records:
+
+   - 50 migrated schema-v7 dossiers;
+   - 50 structured-diff passes;
+   - zero migration-related validation failures;
+   - 23 frozen first-50 strict-validation failures;
+   - 27 inherited first-50 corpus-audit findings;
+   - `status.compilation_status` equal to
+     `completed_with_authorised_baseline_editorial_exception`;
+   - 50 compiled owners;
+   - all compiled owners still having `workflow.ai_enriched=false`.
+
+2. Verify the immutable cohort contains 4,197 owners and that its source hash is:
+
+   `4477729a535d9cdf216efa7155a6a7ed0aae4ddf1c5e554b46f856aaf7f2a346`
+
+   A different normalized source path is acceptable only if the content hash and cohort membership are unchanged.
+
+3. Confirm the tranche boundaries:
+
+   - position 51: person ID `7440`, Yusaku Maezawa, Nausicaä, 114.2 m;
+   - position 100: person ID `790`, Robert Friedland, Luna, 90.0 m.
+
+   Stop for user direction if the cohort membership, ordering, IDs, or LOA values have changed.
+
+4. Record SHA-256 hashes for:
+
+   - every dossier at cohort positions 1–50;
+   - the cohort manifest;
+   - the enriched owner input;
+   - the existing first-50 compiled JSON and HTML.
+
+5. Inventory positions 51–100. This run is resumable:
+
+   - reuse a dossier only if it belongs to the correct cohort owner, is schema v7, and passes strict validation against the exact owner input;
+   - treat absent, stale, mismatched, or invalid dossiers as pending;
+   - preserve a backup of any existing invalid partial dossier before replacing it;
+   - never substitute an owner from position 101 or later.
+
+6. Do not modify any dossier from positions 1–50. Their biography and editorial findings are frozen. The authorised exception applies only to their already recorded validation and corpus-audit debt and only permits cumulative compilation.
+
+## Research scope
+
+Research every owner at positions 51–100 whose dossier is not already valid. Complete the whole fixed tranche even when an identity is difficult or the public record is sparse. Do not skip an owner in favour of a later one.
+
+Use a bounded pool of at most three research subagents. Give each subagent exactly one owner at a time and instruct it to use `$research-owner-biography`. The main agent owns cohort selection, validation, cross-owner review, integrity checks, and compilation. Validate each returned dossier before assigning that worker another owner.
+
+Subagents may edit only their assigned owner’s dossier. They must not edit the owner input, cohort, first-50 dossiers, source code, documentation, skill files, compiled artifacts, or another owner’s dossier.
+
+For each owner:
+
+1. Run the skill’s inventory script against the exact enriched input and person ID.
+2. Resolve identity using business role, geography, family context, and the vessel relationship only as identity evidence.
+3. Research using the skill’s source hierarchy and maintain a complete source ledger.
+4. Perform the explicit Forbes check and record the supported result.
+5. Classify these four fields independently:
+
+   - `wealth_creation_industry`
+   - `primary_industry`
+   - `wealth_origin`
+   - `wealth_relationship`
+
+6. Apply the industry distinction carefully:
+
+   - `wealth_creation_industry` is the durable sector that principally created the fortune;
+   - `primary_industry` is the sector that best describes the person’s principal identifiable interests at the time of research;
+   - use the exact shared label `Cryptocurrency` when reliable evidence establishes that crypto principally created the fortune, even if the person subsequently diversified;
+   - examples may be described in the biography as an early Bitcoin investor, protocol creator, exchange founder, or similar, but do not create additional flags;
+   - do not classify someone as Cryptocurrency merely because they later invested in tokens, accepted crypto payments, promoted a project, or hold crypto in a diversified portfolio;
+   - a diversified former crypto entrepreneur may therefore have `wealth_creation_industry=Cryptocurrency` and a different `primary_industry`;
+   - use `Unknown` when the classification cannot be supported confidently. Every non-Unknown classification requires confidence of at least 85.
+
+7. Research supported person-specific social profiles and reject namesake, company-only, fan, family-member, or uncorroborated accounts.
+8. Complete research before writing. Build the schema-v7 unordered `biography_brief` and perform a separate editorial pass.
+9. For a person, produce:
+
+   - a neutral 50–55 word short biography;
+   - a standalone 90–190 word long biography in exactly two paragraphs;
+   - a complete `editorial_assessment`;
+   - no more than two shared short/long anchors;
+   - at least one short-only dimension;
+   - at least two substantive long-only dimensions.
+
+10. Follow the complete biography-style and editorial-calibration requirements:
+
+    - British English;
+    - source attribution and research narration stay out of published prose;
+    - the long biography must not be an expanded or reordered short biography;
+    - vary opening modes, narrative shapes, transitions, rhythms, and endings across the tranche;
+    - avoid formulaic origin-story openings, later-chapter transitions, synthetic tie-backs, and classification verdicts;
+    - apply the sale-independence test;
+    - do not mention vessel names, dimensions, builders, deliveries, commissions, or ownership histories merely because they appear in the input;
+    - do not pad sparse profiles.
+
+11. For a genuine institution or unresolved non-person record, use the schema-v7 non-person path. Do not invent a person, biography, personal fortune, or social proposals.
+12. Leave `review.status=pending`. Do not approve any dossier on the user’s behalf.
+
+## Per-owner validation
+
+Every dossier at positions 51–100 must pass this exact command:
+
+```powershell
+.\venv\Scripts\python.exe `
+  .agents\skills\research-owner-biography\scripts\validate_dossier.py `
+  DOSSIER_PATH `
+  --owner-input output\owners-list.vessel-enriched.enriched.json `
+  --strict-editorial
+```
+
+Fix all errors and warnings for positions 51–100. The first-50 exception must never be extended to a new dossier.
+
+## Tranche and cumulative editorial validation
+
+After all 50 dossiers validate:
+
+1. Perform a main-agent cross-owner review of positions 51–100 using a working table containing owner, opening mode, narrative shape, first sentence, paragraph-two opening, and final sentence.
+
+2. Create a temporary directory containing only the dossiers for positions 51–100 and run:
+
+```powershell
+.\venv\Scripts\python.exe `
+  .agents\skills\research-owner-biography\scripts\audit_biography_corpus.py `
+  TEMP_TRANCHE_DIRECTORY `
+  --strict
+```
+
+Revise the new dossiers until this tranche-only strict audit passes with zero issues.
+
+3. Run the corpus auditor over the cumulative first 100 dossiers. Compare its output with the 27 inherited findings stored in the migration summary.
+
+   - The only permitted unresolved findings are exact inherited findings involving only frozen positions 1–50.
+   - Fix every finding involving a position 51–100 owner by editing only the new owner’s dossier.
+   - Fix every new cross-owner repetition involving the new tranche.
+   - If a genuinely new finding involving only frozen positions 1–50 appears, preserve the first 50 and report it rather than silently expanding the exception.
+   - Do not interpret the inherited 23 validation failures or 27 audit findings as evidence that this goal is blocked.
+
+## Cumulative compilation
+
+Compile cumulative pending-review artifacts for exactly positions 1–100:
+
+- `output/research-enriched-owners-list.all-by-loa.first-100.json`
+- `output/research-enriched-owners-list.all-by-loa.first-100.html`
+
+The normal `compile_owner_research.py` CLI will reject the inherited first-50 editorial failures because it applies strict validation to every selected dossier. Do not weaken or modify that CLI.
+
+Use the already authorised baseline exception through a temporary one-off Python process that calls the normal repository functions directly:
+
+- `src.io_utils.load_json`
+- `src.research_batch.load_dossiers`
+- `src.research_batch.compile_research_batch`
+- `src.research_batch.render_research_report`
+- `src.io_utils.atomic_write_json`
+- `src.io_utils.atomic_write_text`
+
+Use:
+
+- selection `all-by-loa`;
+- limit `100`;
+- `mark_ai_enriched=False`;
+- the exact enriched owner input and dossier directory.
+
+Do not attach biography comparisons because the comparison backup covers only the first 50.
+
+Before bypassing the CLI validation gate, independently prove that:
+
+- all positions 51–100 pass strict validation;
+- the tranche-only audit passes;
+- the cumulative audit contains no unresolved issues beyond the recorded first-50 baseline;
+- all first-50 dossier hashes remain unchanged;
+- all 100 selected dossiers are schema v7 and correspond to the frozen cohort;
+- all reviews remain pending.
+
+After compilation, verify:
+
+- exactly 100 owners were compiled in cohort order;
+- the first and last IDs are the expected position-1 and position-100 IDs;
+- every compiled owner has `workflow.ai_enriched=false`;
+- every compiled `ai_research` object contains all four classification fields;
+- the first-50 biographies, classifications, proposals, and protected owner values match the existing first-50 compiled artifact, allowing only regenerated compilation timestamps and cumulative batch metadata;
+- `_baseline`, `person_id`, `profile_url`, vessel ownership data, and existing `profile_key` values remain unchanged.
+
+## Tranche summary
+
+Write:
+
+`output/owner-research/all-by-loa-tranche-51-100-summary.json`
+
+Include:
+
+- schema version and timestamps;
+- cohort range and exact owner list with positions, IDs, names, vessels, and LOAs;
+- newly created, resumed, and already-valid dossier counts;
+- per-owner strict-validation results;
+- identity conflicts, unresolved identities, and limited-evidence owners;
+- all four classifications and confidence scores;
+- Cryptocurrency count and named owners;
+- Unknown counts by classification;
+- source and Forbes-result summaries;
+- tranche-only audit result;
+- cumulative audit result;
+- the exact inherited first-50 findings permitted by the authorised exception;
+- confirmation that no new owner used the exception;
+- preflight and final hashes for protected inputs and first-50 dossiers;
+- compiled artifact paths, owner counts, and SHA-256 hashes;
+- next pending cohort position and remaining owner count.
+
+## Safety constraints
+
+- Never overwrite the enriched owner input or cohort manifest.
+- Never modify positions 1–50.
+- Do not edit source code, documentation, tests, or skills.
+- Do not approve dossiers.
+- Do not run `update_owners.py`.
+- Do not perform any live website write.
+- Do not commit generated research output.
+- Do not begin position 101.
+
+## Acceptance criteria
+
+The goal is complete only when:
+
+- positions 51–100 all have schema-v7 dossiers;
+- all 50 pass strict per-owner validation;
+- the position-51–100 strict corpus audit passes;
+- cumulative audit debt is limited to the exact authorised first-50 baseline;
+- all first-50 dossier hashes are unchanged;
+- cumulative first-100 JSON and HTML artifacts exist and contain exactly 100 owners;
+- every dossier remains pending and every compiled owner has `workflow.ai_enriched=false`;
+- the owner input and cohort hashes are unchanged;
+- the tranche summary exists;
+- nothing was applied live;
+- processing stopped before position 101.
+
+The expected next pending position after successful completion is 101, with 4,097 owners remaining in the frozen cohort.
+
+Return a concise final report containing:
+
+- processed positions and owner count;
+- new, resumed, and cumulative dossier counts;
+- validation and audit results;
+- Cryptocurrency and Unknown classification counts;
+- unresolved or limited-evidence owners;
+- cumulative artifact paths and hashes;
+- confirmation that the first 50 remained frozen;
+- the next pending position and remaining count;
+- confirmation that all reviews remain pending, nothing was committed, and nothing was applied live.
+
+```
+
 ## 5. Preview and apply updates
 
 Always start with a dry-run:
