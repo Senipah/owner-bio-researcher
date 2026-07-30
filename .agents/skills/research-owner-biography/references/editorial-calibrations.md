@@ -26,6 +26,33 @@ uses `billionaire` as a broad orientation signal instead of quoting a volatile
 net-worth estimate. Omit any unavailable element silently and vary the pattern
 when several owners share similar facts.
 
+## Referential clarity: Ken Griffin
+
+Use this pair to distinguish a factually supported sequence from prose that
+misidentifies what was funded or leaves the causal event implicit.
+
+Unclear:
+
+> Ken Griffin is an American billionaire investor, founder and chief executive
+> of Citadel. His grandmother helped fund Harvard, while family members and
+> other investors supplied capital for his student trading. He used those
+> results to attract institutional backing and build Citadel, later founding
+> the separate electronic market-making company Citadel Securities.
+
+Revised:
+
+> Ken Griffin is an American billionaire investor, founder and chief executive
+> of Citadel. While studying at Harvard, he traded with capital from his
+> grandmother, other relatives and outside investors. His early returns
+> attracted institutional backing for Citadel, which he developed into a
+> hedge-fund business before establishing the separately operated electronic
+> market-maker Citadel Securities.
+
+The unclear version makes Harvard sound like the object of the grandmother's
+funding and asks "those results" to refer backwards across several facts. The
+revision names the funded activity, the providers, the career stage and the
+specific returns that attracted later backing.
+
 ## Founder and operator: Shahid Khan
 
 Opening mode: `institution_or_asset`

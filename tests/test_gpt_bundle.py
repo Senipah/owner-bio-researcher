@@ -52,6 +52,7 @@ def test_generated_gpt_knowledge_is_current() -> None:
     ):
         assert len(re.findall(rf"(?m)^{re.escape(heading)}$", knowledge)) == 1
     for calibration in (
+        "## Referential clarity: Ken Griffin",
         "## Founder and operator: Shahid Khan",
         "## Heir and custodian: Philip Niarchos",
         "## Royal and public office: Sheikh Tamim bin Hamad Al Thani",
@@ -81,6 +82,7 @@ def test_gpt_instructions_are_concise_and_decision_complete() -> None:
         "a broad wealth descriptor such as `billionaire`",
         "Silently omit anything unavailable",
         "For `self_made_advantaged`",
+        "Make assistance sentences name who supplied what and its purpose",
         "## Optional manual dossier contract",
         "Only when the user explicitly requests JSON or a dossier",
         "`owner.person_id` to `null`",

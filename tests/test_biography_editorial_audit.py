@@ -17,6 +17,14 @@ SKILL_ROOT = (
 )
 AUDITOR = SKILL_ROOT / "scripts" / "audit_biography_corpus.py"
 CALIBRATION = SKILL_ROOT / "references" / "shahid-khan-calibration.json"
+UNCLEAR_KEN_GRIFFIN_BIOGRAPHY = (
+    "Ken Griffin is an American billionaire investor, founder and chief "
+    "executive of Citadel. His grandmother helped fund Harvard, while family "
+    "members and other investors supplied capital for his student trading. "
+    "He used those results to attract institutional backing and build "
+    "Citadel, later founding the separate electronic market-making company "
+    "Citadel Securities."
+)
 
 
 def _calibration() -> dict:
@@ -46,6 +54,35 @@ def test_corpus_auditor_accepts_clean_single_calibration(
 
     assert result.returncode == 0, result.stderr
     assert "Audited 1 schema-v7 person dossiers." in result.stdout
+
+
+def test_corpus_auditor_rejects_unclear_references(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["biography"]["plain_text"] = UNCLEAR_KEN_GRIFFIN_BIOGRAPHY
+    dossier["biography"]["html"] = (
+        f"<p>{UNCLEAR_KEN_GRIFFIN_BIOGRAPHY}</p>\r\n"
+    )
+    dossier["biography"]["word_count"] = len(
+        re.findall(
+            r"\b[\w]+(?:[â€™'-][\w]+)*\b",
+            UNCLEAR_KEN_GRIFFIN_BIOGRAPHY,
+        )
+    )
+    (tmp_path / "9508.research.json").write_text(
+        json.dumps(dossier, indent=2, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+    result = _run(tmp_path)
+
+    assert result.returncode == 1
+    assert "uses the bare causal referent 'those results'" in result.stderr
+    assert (
+        "helped fund 'Harvard' without naming what was financed"
+        in result.stderr
+    )
 
 
 def test_corpus_auditor_requires_wealth_creation_industry(

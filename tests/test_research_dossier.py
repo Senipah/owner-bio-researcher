@@ -17,10 +17,49 @@ SKILL_ROOT = (
 )
 VALIDATOR = SKILL_ROOT / "scripts" / "validate_dossier.py"
 CALIBRATION = SKILL_ROOT / "references" / "shahid-khan-calibration.json"
+UNCLEAR_KEN_GRIFFIN_BIOGRAPHY = (
+    "Ken Griffin is an American billionaire investor, founder and chief "
+    "executive of Citadel. His grandmother helped fund Harvard, while family "
+    "members and other investors supplied capital for his student trading. "
+    "He used those results to attract institutional backing and build "
+    "Citadel, later founding the separate electronic market-making company "
+    "Citadel Securities."
+)
+CLEAR_KEN_GRIFFIN_BIOGRAPHY = (
+    "Ken Griffin is an American billionaire investor, founder and chief "
+    "executive of Citadel. While studying at Harvard, he traded with capital "
+    "from his grandmother, other relatives and outside investors. His early "
+    "returns attracted institutional backing for Citadel, which he developed "
+    "into a hedge-fund business before establishing the separately operated "
+    "electronic market-maker Citadel Securities."
+)
 
 
 def _calibration() -> dict:
     return json.loads(CALIBRATION.read_text(encoding="utf-8"))
+
+
+def _set_short_biography(dossier: dict, plain: str) -> None:
+    dossier["biography"]["plain_text"] = plain
+    dossier["biography"]["html"] = f"<p>{plain}</p>\r\n"
+    dossier["biography"]["word_count"] = len(
+        re.findall(r"\b[\w]+(?:[â€™'-][\w]+)*\b", plain)
+    )
+
+
+def _editorial_findings(
+    text: str,
+    *,
+    section: str = "biography",
+) -> tuple[list[str], list[str]]:
+    scripts_path = str(SKILL_ROOT / "scripts")
+    sys.path.insert(0, scripts_path)
+    try:
+        from editorial_rules import editorial_findings
+
+        return editorial_findings(text, section=section)
+    finally:
+        sys.path.remove(scripts_path)
 
 
 def _validate(
@@ -63,6 +102,100 @@ def test_calibration_dossier_matches_wealth_classification_contract(
     result = _validate(tmp_path, _calibration(), strict=True)
 
     assert result.returncode == 0, result.stderr
+
+
+def test_validator_warns_about_unclear_ken_griffin_references(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    _set_short_biography(dossier, UNCLEAR_KEN_GRIFFIN_BIOGRAPHY)
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 0, result.stderr
+    assert (
+        "WARNING: biography uses the bare causal referent 'those results'"
+        in result.stderr
+    )
+    assert (
+        "WARNING: biography says 'His grandmother' helped fund 'Harvard' "
+        "without naming what was financed and for what purpose"
+        in result.stderr
+    )
+
+
+def test_strict_validator_rejects_unclear_ken_griffin_references(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    _set_short_biography(dossier, UNCLEAR_KEN_GRIFFIN_BIOGRAPHY)
+
+    result = _validate(tmp_path, dossier, strict=True)
+
+    assert result.returncode == 1
+    assert (
+        "strict editorial: biography uses the bare causal referent "
+        "'those results'"
+        in result.stderr
+    )
+    assert (
+        "strict editorial: biography says 'His grandmother' helped fund "
+        "'Harvard' without naming what was financed and for what purpose"
+        in result.stderr
+    )
+
+
+def test_strict_validator_accepts_clear_ken_griffin_references(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    _set_short_biography(dossier, CLEAR_KEN_GRIFFIN_BIOGRAPHY)
+
+    result = _validate(tmp_path, dossier, strict=True)
+
+    assert result.returncode == 0, result.stderr
+
+
+def test_referential_clarity_rules_allow_explicit_constructions() -> None:
+    clear_examples = (
+        (
+            "A lifetime gift and family-company loans supplied capital for "
+            "his investment platform. Li used that support to acquire and "
+            "redevelop Japanese property."
+        ),
+        (
+            "Lewis sold the restaurant group before entering currency "
+            "trading. He reinvested that capital through Tavistock Group."
+        ),
+        (
+            "After losses on North American investments, Packer reduced "
+            "leverage. That experience produced a more conservative balance "
+            "sheet."
+        ),
+        (
+            "Her family helped fund the acquisition of a controlling interest "
+            "in the Dallas Mavericks."
+        ),
+        (
+            "Dividends from Inditex fund Pontegadea, his investment vehicle "
+            "for property and infrastructure."
+        ),
+    )
+
+    for text in clear_examples:
+        errors, warnings = _editorial_findings(text)
+        assert errors == []
+        assert warnings == []
+
+
+def test_referential_clarity_automation_skips_internal_brief_text() -> None:
+    errors, warnings = _editorial_findings(
+        UNCLEAR_KEN_GRIFFIN_BIOGRAPHY,
+        section="biography_brief",
+    )
+
+    assert errors == []
+    assert warnings == []
 
 
 def test_vessel_name_checker_allows_independent_company_name() -> None:

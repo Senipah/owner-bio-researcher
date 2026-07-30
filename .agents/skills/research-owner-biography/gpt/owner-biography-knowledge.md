@@ -17,8 +17,8 @@ Use this file as Custom GPT Knowledge. Behaviour, workflow order, manual-mode ru
 | --- | --- | --- |
 | Research and dossier contract | `references/research-contract.md` | `19966677f734919af089484bcfba995a68586a6f8bd408320d17097c7b1188f2` |
 | Wealth classification | `references/wealth-classification.md` | `739320d90d80af42e52187bc782e2ae87d2aa43ca82f85a06b30ee8d5c36055d` |
-| Biography style | `references/biography-style.md` | `d15eb894082fe076b6fda9a5059957c3e6938535f05b4de0ed509ff4728c78d6` |
-| Editorial calibrations | `references/editorial-calibrations.md` | `6af38381b338e94052138cbec14211bf252004bc03cfbdecbffc00fe08c3fad7` |
+| Biography style | `references/biography-style.md` | `8621891b553fc17218b062a5b0b35bed5fbab220da831dc5a6ebf8552200b1ce` |
+| Editorial calibrations | `references/editorial-calibrations.md` | `b705d5ebe33444a8abfecbc7bb0100478dc88c5a848b8fb4121473853a7dc9dd` |
 
 ---
 
@@ -1029,6 +1029,36 @@ Apply two tests:
 2. **Enrichment-question test:** would the opening still sound natural if no
    one had asked how the person's wealth began? If not, rewrite it.
 
+## Referential clarity
+
+Make every causal relationship readable without asking the reader to infer
+what a pronoun, institution, or funding verb means. For each sentence about
+family assistance, funding, financing, backing, support, or supplied capital,
+check that it identifies:
+
+1. who supplied the advantage;
+2. what form the advantage took;
+3. what expense, activity, venture, or asset it supported; and
+4. the relevant stage or setting when that context prevents ambiguity.
+
+Do not write that a relative "funded Harvard" when the supported fact is that
+the relative paid education costs or supplied trading capital while the person
+studied there. Distinguish a gift, loan, introduction, family role, industry
+training, investment capital, and inheritance rather than collapsing them into
+generic "support".
+
+Replace bare backward pointers such as "those results", "that success", or
+"these efforts" when more than one antecedent is possible. Name the event:
+"his early trading returns attracted backing" is clearer than "he used those
+results to attract backing". Clear local references such as "that capital",
+"that support", and "that experience" may remain when the preceding sentence
+supplies one unmistakable antecedent.
+
+This is a semantic review, not merely a prohibited-phrase check. Automated
+validation catches only narrow high-confidence constructions; the writer
+remains responsible for provider, object, purpose, and causal antecedent
+clarity.
+
 ## Vessel independence
 
 Owners are ordered by current-vessel LOA only to prioritise research. That
@@ -1135,7 +1165,8 @@ detail exists, write a shorter profile.
 Score each person from 1 to 5 on every dimension and revise any score below 4:
 
 1. `causal_clarity`: the work, decision, or asset behind wealth or prominence
-   is concrete.
+   is concrete, and assistance or funding relationships identify their
+   provider, form, and purpose.
 2. `human_specificity`: at least one detail makes this person distinct without
    resorting to trivia.
 3. `durability`: the profile survives vessel sales and ordinary changes in
@@ -1144,7 +1175,8 @@ Score each person from 1 to 5 on every dimension and revise any score below 4:
 5. `natural_voice`: the biography does not read like a template, résumé,
    classification explanation, or AI-generated conclusion.
 6. `reader_orientation`: the first sentence establishes identity or earns a
-   narrative opening through an immediately relevant concrete detail.
+   narrative opening through an immediately relevant concrete detail, and
+   causal references have unmistakable antecedents.
 7. `structural_independence`: the longer biography is not simply an expanded
    version of the short biography or the default
    origin-to-later-activity-to-summary template. Score 5 only when no more than
@@ -1217,6 +1249,33 @@ disqualifying. It distinguishes the family platform from his own company and
 uses `billionaire` as a broad orientation signal instead of quoting a volatile
 net-worth estimate. Omit any unavailable element silently and vary the pattern
 when several owners share similar facts.
+
+## Referential clarity: Ken Griffin
+
+Use this pair to distinguish a factually supported sequence from prose that
+misidentifies what was funded or leaves the causal event implicit.
+
+Unclear:
+
+> Ken Griffin is an American billionaire investor, founder and chief executive
+> of Citadel. His grandmother helped fund Harvard, while family members and
+> other investors supplied capital for his student trading. He used those
+> results to attract institutional backing and build Citadel, later founding
+> the separate electronic market-making company Citadel Securities.
+
+Revised:
+
+> Ken Griffin is an American billionaire investor, founder and chief executive
+> of Citadel. While studying at Harvard, he traded with capital from his
+> grandmother, other relatives and outside investors. His early returns
+> attracted institutional backing for Citadel, which he developed into a
+> hedge-fund business before establishing the separately operated electronic
+> market-maker Citadel Securities.
+
+The unclear version makes Harvard sound like the object of the grandmother's
+funding and asks "those results" to refer backwards across several facts. The
+revision names the funded activity, the providers, the career stage and the
+specific returns that attracted later backing.
 
 ## Founder and operator: Shahid Khan
 

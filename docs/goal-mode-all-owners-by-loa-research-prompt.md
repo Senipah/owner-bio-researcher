@@ -1,466 +1,341 @@
 # Goal Mode prompt: next 50 LOA-prioritised owners
 
-Paste the prompt below from the repository root after details-and-socials
-enrichment has completed. No position or filename edits are required between
-runs: it derives the next fixed 50-owner tranche from the immutable cohort and
-the last completed checkpoint.
+Paste the prompt below from the repository root each time another tranche
+should be researched. It reads the shared progress marker, resumes an
+interrupted tranche when necessary, or selects the next contiguous 50 owners.
+No positions, filenames, or prefix values need to be edited between runs.
 
-The first 50 dossiers remain the authorised frozen schema-v7 baseline. Every
-later completed tranche also becomes frozen. A rerun resumes the same
-incomplete tranche, reusing its valid dossiers, rather than moving the window
-forward or selecting 50 scattered gaps. The prompt produces pending-review
-artifacts only; it does not approve research, commit generated output, or
-update the live system.
+The progress marker is the authority for tranche selection. Earlier production
+dossiers are frozen, new dossiers remain pending review, and nothing is
+applied to the live website.
 
 ## Prompt
 
+```text
 Use `$research-owner-biography`.
 
-Set:
+Goal: resume the active LOA-prioritised research tranche, or research the next
+contiguous batch of 50 owners after the completed production prefix, then
+compile cumulative pending-review artifacts through the end of that tranche.
 
-- `BASELINE_PREFIX = 50`
-- `TRANCHE_SIZE = 50`
+This prompt is intentionally reusable without editing. Never choose a tranche
+from filenames, scattered missing dossiers, or the highest dossier position.
+Use the progress marker only.
 
-Goal: resume and complete exactly the next fixed `TRANCHE_SIZE` positions
-after the last completed cumulative checkpoint in the immutable
-LOA-prioritised owner cohort, then compile cumulative pending-review artifacts
-through the end of that tranche.
-
-Do not mark this goal complete until every acceptance criterion below is
-satisfied. Do not mark it blocked merely because positions
-`1..BASELINE_PREFIX` contain the already authorised baseline editorial
-findings.
+Do not mark this goal complete until the selected tranche and every acceptance
+criterion below are complete. An individual sparse or difficult owner is not a
+reason to skip forward or mark the goal blocked.
 
 ## Authoritative files
 
 - Owner input:
   `output/owners-list.vessel-enriched.enriched.json`
-- Immutable cohort:
+- Immutable LOA-sorted cohort:
   `output/owner-research/all-by-loa/cohort.json`
-- Dossier directory:
+- Production dossiers:
   `output/owner-research/all-by-loa/`
-- Baseline migration and exception record:
-  `output/owner-research/all-by-loa-schema-v7-migration-summary.json`
-- Baseline cumulative artifacts:
-  `output/research-enriched-owners-list.all-by-loa.first-50.json`
-  `output/research-enriched-owners-list.all-by-loa.first-50.html`
-- Later cumulative artifacts:
-  `output/research-enriched-owners-list.all-by-loa.first-{PREFIX}.json`
-  `output/research-enriched-owners-list.all-by-loa.first-{PREFIX}.html`
-- Completed-tranche summaries:
-  `output/owner-research/all-by-loa-tranche-{START}-{END}-summary.json`
+- Progress marker:
+  `output/owner-research/all-by-loa-progress.json`
+- Tranche size: 50
 
-Read the repository `AGENTS.md`, `README.md`, relevant AI documentation, and
-the complete `$research-owner-biography` skill and its required references
-before acting.
+Read `AGENTS.md`, the relevant repository documentation, and the complete
+`$research-owner-biography` skill with all required references before acting.
 
-## Preflight
+This is a research-and-review task only. Do not approve dossiers, set
+`workflow.ai_enriched=true`, call `update_owners.py`, apply website changes,
+stage files, commit, or push.
 
-1. Verify that the baseline migration summary records:
+## Read and verify progress
 
-   - 50 migrated schema-v7 dossiers;
-   - 50 structured-diff passes;
-   - zero migration-related validation failures;
-   - 23 frozen baseline strict-validation failures;
-   - 27 inherited baseline corpus-audit findings;
-   - `status.compilation_status` equal to
-     `completed_with_authorised_baseline_editorial_exception`;
-   - 50 compiled owners; and
-   - all compiled owners still having `workflow.ai_enriched=false`.
+1. Load the cohort and progress marker. If the progress marker is missing,
+   malformed, or incompatible, stop for user direction. Do not reconstruct
+   progress from dossier filenames.
+2. Verify:
 
-2. Verify that the immutable cohort contains 4,197 owners and has source hash:
+   - `selection` is `all-by-loa`;
+   - the recorded owner-input, cohort, and dossier paths are the authoritative
+     paths above;
+   - `cohort_size` equals the number of cohort entries;
+   - `tranche_size` is 50;
+   - `completed_prefix` is between 0 and `cohort_size`;
+   - when `completed_prefix > 0`, `completed_through.person_id` matches the
+     person at that cohort position; and
+   - when owners remain, `next_owner` matches the cohort entry immediately
+     after `completed_prefix`.
 
-   `4477729a535d9cdf216efa7155a6a7ed0aae4ddf1c5e554b46f856aaf7f2a346`
+3. Do not modify dossiers at positions `1..completed_prefix`.
+4. If `completed_prefix == cohort_size`, report that the cohort is complete
+   and do not start another tranche.
 
-   A different normalised source path is acceptable only if the content hash,
-   cohort membership, ordering, person IDs, and recorded LOA values are
-   unchanged. Never regenerate or reorder the manifest. Stop for user
-   direction if any of those immutable properties changed.
+## Select or resume the tranche
 
-3. Derive `PRIOR_PREFIX`, the last completed checkpoint:
+If `active_tranche` is not null:
 
-   - begin with `BASELINE_PREFIX`, but only after verifying the baseline
-     summary and both baseline cumulative artifacts;
-   - inspect later completed-tranche summaries in ascending contiguous order;
-   - advance only by a complete `TRANCHE_SIZE` window, except for a possible
-     final short window at the end of the cohort;
-   - accept a later checkpoint only when its summary, cumulative JSON and
-     HTML exist and their recorded hashes, owner range, dossier validation,
-     tranche audit, review states, and compilation checks all agree; and
-   - do not advance because some later dossier happens to exist or validate.
+- resume its exact `start_position` and `end_position`;
+- require `start_position == completed_prefix + 1`;
+- require `end_position` to equal
+  `min(completed_prefix + tranche_size, cohort_size)`;
+- verify every recorded owner ID against the cohort; and
+- preserve its `completed_person_ids`.
 
-   A partial or failed prior run therefore leaves `PRIOR_PREFIX` at the
-   preceding completed checkpoint and resumes the same fixed tranche.
+If `active_tranche` is null:
 
-4. Set:
+1. Set:
 
-   - `COHORT_SIZE` from the immutable manifest;
-   - `TRANCHE_START = PRIOR_PREFIX + 1`;
-   - `TRANCHE_END = min(PRIOR_PREFIX + TRANCHE_SIZE, COHORT_SIZE)`;
-   - `PREVIOUS_JSON` and `PREVIOUS_HTML` to the cumulative artifacts ending
-     at `PRIOR_PREFIX`;
-   - `CURRENT_JSON` and `CURRENT_HTML` to cumulative artifacts ending at
-     `TRANCHE_END`; and
-   - `TRANCHE_SUMMARY` to
-     `output/owner-research/all-by-loa-tranche-{TRANCHE_START}-{TRANCHE_END}-summary.json`.
+   - `TRANCHE_START = completed_prefix + 1`
+   - `TRANCHE_END = min(completed_prefix + tranche_size, cohort_size)`
+   - `CURRENT_LIMIT = TRANCHE_END`
+   - `TRANCHE_SUMMARY = output/owner-research/all-by-loa-tranche-{TRANCHE_START}-{TRANCHE_END}-summary.json`
+   - `CURRENT_JSON = output/research-enriched-owners-list.all-by-loa.first-{TRANCHE_END}.json`
+   - `CURRENT_HTML = output/research-enriched-owners-list.all-by-loa.first-{TRANCHE_END}.html`
 
-   If `PRIOR_PREFIX == COHORT_SIZE`, report that the cohort is complete and do
-   not start another research tranche.
+2. Atomically set `active_tranche` in the progress marker with:
 
-5. Print the derived tranche boundaries and the cohort position, person ID,
-   display name, vessel, and LOA at both boundaries. Verify those records
-   against the enriched input. Stop for user direction if membership,
-   ordering, IDs, or LOA values differ.
+   - start and end positions;
+   - the ordered target person IDs and display names;
+   - `completed_person_ids=[]`;
+   - start timestamp;
+   - tranche summary path; and
+   - cumulative JSON and HTML paths.
 
-6. Record SHA-256 hashes for:
+Use `src.io_utils.atomic_write_json` for every progress-marker update.
 
-   - every dossier at positions `1..PRIOR_PREFIX`;
-   - the cohort manifest;
-   - the enriched owner input;
-   - the baseline migration summary; and
-   - `PREVIOUS_JSON` and `PREVIOUS_HTML`.
+Print the selected range and the cohort position, person ID, display name,
+largest current vessel and LOA at both boundaries.
 
-7. Inventory every owner at positions `TRANCHE_START..TRANCHE_END`. This run
-   is resumable. Reuse a dossier only if it belongs to the correct cohort
-   owner, is schema v7, and passes this exact command against the current
-   owner input:
+Never substitute another owner for a target owner and never move beyond
+`TRANCHE_END` during this run.
 
-```powershell
-.\venv\Scripts\python.exe `
-  .agents\skills\research-owner-biography\scripts\validate_dossier.py `
-  DOSSIER_PATH `
-  --owner-input output\owners-list.vessel-enriched.enriched.json `
-  --strict-editorial
-```
+## Resume rules
 
-   Treat an absent, stale, mismatched, or invalid dossier as pending. Preserve
-   a backup of an invalid partial dossier before replacing it. Never
-   substitute an owner after `TRANCHE_END`.
+For each target owner:
 
-8. Freeze every dossier at positions `1..PRIOR_PREFIX`. Do not modify it in
-   this run. The authorised exception applies only to the exact baseline
-   findings already recorded for positions `1..BASELINE_PREFIX`; it does not
-   apply to any later dossier.
+- if the person ID appears in `active_tranche.completed_person_ids`, reuse the
+  production dossier only when it still matches the target identity and passes
+  strict validation against the current owner input;
+- if that recorded completed dossier is missing, stale, mismatched, or invalid,
+  remove its ID from the completed list atomically and research it again;
+- if a target dossier exists but its ID is not recorded as completed, treat it
+  as interrupted partial work; preserve a copy beneath
+  `output/owner-research/all-by-loa-partials/tranche-{TRANCHE_START}-{TRANCHE_END}/`
+  before replacing it when necessary;
+- never treat mere file existence as completion; and
+- never inspect later dossiers as a reason to advance the tranche.
 
-## Research scope
+## Research the target owners
 
-Research every pending owner at positions `TRANCHE_START..TRANCHE_END`.
-Complete the whole fixed tranche even when an identity is difficult or the
-public record is sparse. Do not skip an owner in favour of a later one.
+Complete every remaining owner at positions
+`TRANCHE_START..TRANCHE_END` in cohort order.
 
-For the target tranche, produce one schema-v7 dossier per owner beneath
-`output/owner-research/all-by-loa/`. Every dossier must contain:
+Use at most three research subagents concurrently. Give each subagent exactly
+one owner at a time and `$research-owner-biography`.
 
-1. `record_type=person`, `institution`, or `unresolved_placeholder`;
-2. an unordered, source-hidden `biography_brief` fact pool with at least two
-   distinct opening options, plus validated short and longer biographies and
-   `editorial_assessment` for a person, or a non-applicable `editorial_note`
-   and null biography/editorial fields for a non-person record;
-3. `wealth_creation_industry`, `primary_industry`, `wealth_origin`, and
-   `wealth_relationship` classifications;
-4. an explicit Forbes result;
-5. an inventory of missing details and supported link types;
-6. only confidence-85-or-higher proposed details and links; and
-7. `review.status=pending`.
+Subagents may edit only their assigned production dossier. They must not edit
+the owner input, cohort, progress marker, source code, documentation, tests,
+compiled artifacts, tranche summary, earlier dossiers, later dossiers, or
+another owner's dossier.
 
-Use a bounded worker pool of at most three research subagents. Give each
-subagent exactly one owner at a time and `$research-owner-biography`. When a
-subagent finishes, the main agent must validate its dossier before assigning
-that worker another owner. Subagents may edit only their assigned target
-owner's dossier. They must not edit the owner input, cohort manifest, frozen
-dossiers, source code, documentation, tests, skill files, compiled artifacts,
-tranche summary, or another owner's dossier. The main agent owns cohort
-selection, identity review, validation, cross-owner consistency, integrity
-checks, checkpoint tracking, and compilation.
+The main agent owns tranche selection, identity review, dossier validation,
+progress updates, cross-owner consistency, corpus auditing and compilation.
 
 For every target owner:
 
-- run `inventory_owner.py` against the exact enriched input and person ID;
-- resolve identity using name, public role or business, geography, family, and
-  yacht context before collecting facts;
-- search Forbes first and record `verified`, `not_found`, `ambiguous`, or
-  `unavailable`;
-- classify wealth-creation industry, current primary industry, wealth origin,
-  and wealth relationship independently using
-  `references/wealth-classification.md`; use the shared Cryptocurrency
-  industry only when reliable evidence establishes crypto as the relevant
-  wealth-creation or current sector, not merely a later investment;
-- explain how wealth or prominence arose rather than foregrounding net worth;
-- search supported person-relevant social types, prioritising Instagram,
-  LinkedIn, and Personal Website;
-- reject namesake, company, fan, family-member, and uncorroborated accounts;
-- use a distinct Company Website proposal only when official evidence connects
-  the person to the company;
-- keep lower-confidence facts and links in review candidates or uncertainties;
-- complete all research before drafting and build the schema-v7
-  `biography_brief` as an unordered editorial fact pool containing durable
-  identity, defining work, nullable formative context and decisive moment, one
-  to three enduring dimensions, optional character detail, at least two
-  fact-level opening options with distinct modes, transient exclusions, and
-  source IDs;
-- never use the schema-v5
-  `wealth_or_prominence_route`/`turning_point`/`later_chapter` outline, and
-  explicitly exclude source publishers, confidence language, classification
-  deliberation, vessel context, ranking, net worth, and transient figures from
-  the brief;
-- before drafting, make a working fact-allocation table with no more than two
-  shared anchors, at least one short-only fact or dimension, at least two
-  substantive long-only facts or dimensions, and the short-biography material
-  the long profile will deliberately omit; do not store this working table in
-  the schema-v7 dossier;
-- perform a separate editorial pass from that fact pool, deliberately select
-  and record one opening mode and narrative shape, then reverse-check every
-  material claim against the full source ledger;
-- draft a neutral 50-55 word short biography and a standalone,
-  two-paragraph longer biography of 90-190 words without targeting a preferred
-  midpoint;
-- treat the longer biography as a standalone edited profile, not an expanded
-  answer to how wealth began; orient the reader through the person's defining
-  identity, achievement, institution, asset, consequential decision,
-  inherited responsibility, or public contribution;
-- do not repeat, reorder, or paraphrase all three components of the short
-  biography across the long profile; allow essential identity and one core
-  mechanism to overlap, but require the long version to answer a different
-  editorial question with its allocated long-only material;
-- use a formative episode as the opening only when its relevance is immediately
-  clear, and never open with abstract scaffolding such as "route into
-  business", "path to wealth", "career began", "commercial footing", or
-  "gave them their start";
-- allow paragraph two to deepen the core work instead of forcing a later
-  investment, sport, or philanthropy slot; include a second domain only when it
-  genuinely distinguishes the person;
-- end on a concrete fact, role, decision, or consequence, never a synthetic
-  tie-back using "linking", "extending the same approach", "the arc",
-  "second strand", "second thread", or equivalent phrasing;
-- keep publisher names, source attribution, evidence gaps, confidence,
-  classification reasoning, database language, and research-process narration
-  out of both biographies;
-- keep public-versus-private asset analysis in dossier metadata; for royal and
-  dynastic owners, describe verified formation, succession, public work,
-  interests, and influence without contrasting them against commercial
-  enterprise, entrepreneurship, or personal wealth;
-- use British English, no more than two explicit years, no more than one
-  monetary or percentage figure, normally no sentence over 30 words, and no
-  inventory of more than three representative companies, investments,
-  offices, or institutions;
-- vary openings, paragraph transitions, rhythms, and endings against
-  `references/editorial-calibrations.md`; vary both opening mode and narrative
-  shape, and do not default to birthplace, career-entry chronology, “His
-  later...”, or a concluding wealth-classification verdict;
-- treat current-vessel relationships and LOA rank as selection and identity
-  context only, never as a reason to mention a vessel in either biography;
-- apply the sale-independence test: both biographies must remain accurate,
-  coherent, and complete if the owner sells every current vessel tomorrow;
-- never use vessel names, dimensions, builders, delivery dates, commissions,
-  or ownership histories as biography colour; independently significant
-  maritime careers or sustained competitive, research, or philanthropic work
-  may be described only by focusing on the enduring activity;
-- do not pad sparse profiles or repeat the short text verbatim;
-- review the pair before acceptance: state what the long profile adds, which
-  secondary short-biography fact it omits, and whether reducing it to the short
-  version would discard meaningful material; rewrite the pair if not;
-- save the dossier using the person ID in its filename;
-- leave `review.status=pending`; and
-- run the exact validation command above, fixing all failures before marking
-  that owner complete.
+1. Run `inventory_owner.py` against the exact owner input and person ID.
+2. Resolve identity before enrichment using the name, business or public role,
+   geography, family context and yacht context.
+3. Search Forbes first and record `verified`, `not_found`, `ambiguous`, or
+   `unavailable`.
+4. Research the origin of wealth or prominence and the principal current
+   private interests using strong public sources.
+5. Populate independently:
 
-If a record represents an institution, government, municipality, unresolved
-placeholder, or otherwise is not a natural person, do not invent a human
-identity or personal wealth story. Set the appropriate non-person
-`record_type`, leave `biography_brief`, `biography`, and `long_biography` null,
-populate `editorial_note`, and make no personal detail or social proposals.
-Preserve its cohort position; do not silently replace it with a later owner.
+   - `wealth_creation_industry`;
+   - `primary_industry`;
+   - `wealth_origin`; and
+   - `wealth_relationship`.
 
-## Tranche and cumulative editorial validation
+6. Apply the current self-made starting-position distinctions:
 
-After every target dossier validates, perform a main-agent consistency review
-across the target tranche and the cumulative prefix ending at `TRANCHE_END`:
+   - use `self_made_independent` only with positive evidence of a materially
+     independent start;
+   - use `self_made_advantaged` when the separately built principal asset
+     followed a material family, social, financial, industry or network
+     advantage;
+   - retain broad `self_made` when the asset was self-created but the starting
+     position cannot be classified reliably;
+   - never infer an independent start merely because no inheritance was found;
+     and
+   - do not conceal a material asset or capital transfer under
+     `self_made_advantaged`.
 
-- biographies meet the seven-part editorial rubric and use the complete
-  calibration set without copying one structure across the tranche;
-- every person passes the short-long pair audit, and no dossier claims
-  `structural_independence=5` while a near-restated sentence, expanded fact
-  bundle, or overlap warning remains;
-- published prose contains no source narration, classification deliberation,
-  negative wealth-taxonomy contrasts, database/process language, or repeated
-  AI-style conclusions;
-- both biographies pass the sale-independence test and contain no vessel fact
-  introduced from the LOA-ranked owner relationship;
-- royal, sovereign, family, and personal wealth are not conflated, and an
-  oil-producing state is not treated as evidence of personal `Energy` wealth;
-- inherited, self-made, dynastic/royal, family-transfer, mixed, and unknown
-  origin classifications are applied consistently;
-- wealth-creation industry follows the sector that principally created the
-  original fortune, current primary industry follows the principal
-  identifiable private interests as of research, and relationship
-  distinguishes founders, operators, investors, heirs, family office
-  principals, royal beneficiaries, custodians, and passive owners;
-- proposed select values use labels supported by the owner form;
-- social type IDs match the input lookup; and
-- no dossier is approved on the user's behalf.
+7. Search supported person-relevant social types and reject namesake, fan,
+   company-only, family-member and uncorroborated personal accounts.
+8. Build the schema-v7 source-hidden `biography_brief` after completing the
+   research.
+9. Draft:
 
-Then perform a dedicated cross-owner editorial pass over the target tranche.
-Create a working table containing owner, opening mode, narrative shape, first
-sentence, paragraph-two opening, and final sentence. Use it to revise semantic
-repetition even where exact wording differs. No single opening mode or
-narrative shape may dominate business profiles, origin-story openings must be
-a minority, and formulaic later-chapter transitions or synthetic tie-back
-conclusions must be exceptional. This table is temporary review material.
+   - a standalone 50–55 word short biography in one paragraph; and
+   - a standalone 90–190 word longer biography in exactly two paragraphs.
 
-1. Create a temporary directory containing only dossiers for positions
-   `TRANCHE_START..TRANCHE_END`. Run:
+10. Where strongly sourced and naturally available, make the short identity
+    card compactly informative about background, defining work, geographic
+    base, broad wealth stature, concrete wealth mechanism and causally relevant
+    family context. Silently omit unavailable signals.
+11. For `self_made_advantaged`, state the material starting advantage naturally
+    in at least one biography and in the short biography when omission would
+    imply a blank-slate origin.
+12. Keep the short and long biographies complementary:
 
-```powershell
-.\venv\Scripts\python.exe `
-  .agents\skills\research-owner-biography\scripts\audit_biography_corpus.py `
-  TEMP_TRANCHE_DIRECTORY `
-  --strict
-```
+    - no more than two shared anchors;
+    - at least one short-only dimension;
+    - at least two substantive long-only dimensions; and
+    - no expanded, reordered or paraphrased short-biography bundle.
 
-   Revise only target dossiers until this tranche-only audit passes with zero
-   issues.
+13. Apply the referential-clarity test to every sentence about family
+    assistance, funding, financing, backing, support, capital, results or
+    success. Name who supplied what, its purpose and relevant setting; replace
+    a causal pronoun when its antecedent is not unmistakable. Do not describe
+    education costs or student trading capital as funding the institution
+    attended.
+14. Keep source narration, confidence language, classification deliberation,
+    database language, rankings, volatile net-worth figures and current vessel
+    context out of published prose.
+15. Apply the sale-independence test and use British English.
+16. Set `review.status=pending`. Never approve on the user's behalf.
+17. Save the dossier as
+    `output/owner-research/all-by-loa/{PERSON_ID}.research.json`.
+18. Run:
 
-2. Create a second temporary directory containing exactly the dossiers for
-   positions `1..TRANCHE_END`, run the same strict corpus-audit command
-   against it, and compare the result with the 27 inherited findings in the
-   baseline migration summary.
+    `.\venv\Scripts\python.exe .agents\skills\research-owner-biography\scripts\validate_dossier.py DOSSIER_PATH --owner-input output\owners-list.vessel-enriched.enriched.json --strict-editorial`
 
-   - The only permitted unresolved findings are exact inherited findings
-     involving only positions `1..BASELINE_PREFIX`.
-   - Fix every finding involving a target owner by editing only that target
-     owner's dossier.
-   - Fix every new cross-owner repetition involving the target tranche.
-   - A finding involving only frozen post-baseline positions is not covered by
-     the baseline exception. Preserve those dossiers, report the integrity
-     conflict, and stop for user direction.
-   - Do not interpret the inherited baseline validation failures or audit
-     findings as evidence that this goal is blocked.
+19. Fix every validation error and warning.
+20. After the dossier passes, atomically append its person ID to
+    `active_tranche.completed_person_ids`.
 
-Delete both temporary audit directories after retaining the command results
-needed for the tranche summary.
+Give the user a concise checkpoint after each group of ten newly completed
+owners. A completed ID in the progress marker makes the run safely resumable.
 
-## Cumulative compilation
+For an institution, government, municipality or unresolved placeholder, do not
+invent a human identity or personal wealth story. Use the appropriate
+non-person schema-v7 path, preserve its cohort position, validate it and count
+it as completed.
 
-Compile cumulative pending-review artifacts for exactly positions
-`1..TRANCHE_END` to `CURRENT_JSON` and `CURRENT_HTML`.
+## Tranche and cumulative editorial review
 
-The normal `compile_owner_research.py` CLI will reject the inherited baseline
-editorial failures because it applies current strict validation to every
-selected dossier. Do not weaken or modify that CLI. Use the already authorised
-baseline exception through a temporary one-off Python process that calls the
-normal repository functions directly:
+After every target person ID is recorded as completed:
 
-- `src.io_utils.load_json`
-- `src.research_batch.load_dossiers`
-- `src.research_batch.compile_research_batch`
-- `src.research_batch.render_research_report`
-- `src.io_utils.atomic_write_json`
-- `src.io_utils.atomic_write_text`
+1. Re-run strict validation for every dossier in the target tranche.
+2. Perform a main-agent consistency review across the target tranche:
 
-Use selection `all-by-loa`, limit `TRANCHE_END`,
-`mark_ai_enriched=False`, the exact enriched owner input and dossier
-directory, and the derived `CURRENT_JSON` and `CURRENT_HTML` paths. Do not
-attach biography comparisons unless a complete comparison backup exists for
-the whole cumulative prefix.
+   - wealth classifications are applied consistently;
+   - self-made starting-position decisions follow positive evidence;
+   - short biographies use useful sourced identity signals without becoming a
+     template;
+   - short and long biographies remain structurally independent;
+   - funding and assistance sentences identify provider, form, purpose and
+     setting, while causal pronouns have unmistakable antecedents;
+   - source narration and classification deliberation stay out of published
+     prose;
+   - royal, sovereign, family and personal wealth are not conflated;
+   - vessel context is absent unless maritime work is independently central;
+     and
+   - opening modes, narrative shapes, transitions and endings are varied.
 
-Before bypassing the CLI validation gate, independently prove that:
+3. Run the strict corpus auditor over the production dossier directory:
 
-- every target dossier passes strict per-owner validation;
-- the target-tranche strict corpus audit passes;
-- the cumulative audit contains no unresolved issue beyond the exact recorded
-  baseline findings;
-- every frozen dossier hash is unchanged;
-- every selected dossier is schema v7 and belongs to the expected frozen
-  cohort owner;
-- every review remains pending; and
-- the owner input, cohort manifest, baseline summary, and previous checkpoint
-  hashes are unchanged.
+   `.\venv\Scripts\python.exe .agents\skills\research-owner-biography\scripts\audit_biography_corpus.py output\owner-research\all-by-loa --strict`
 
-After compilation, verify:
+4. Fix every actionable issue involving a target owner.
+5. If the audit reports an issue involving only a frozen earlier owner, do not
+   edit that owner. Report the unexpected frozen-corpus issue and stop for user
+   direction.
+6. Require zero unresolved actionable issues before compilation.
+
+## Compile cumulative review artifacts
+
+Run the normal compiler:
+
+`.\venv\Scripts\python.exe .\compile_owner_research.py --input output\owners-list.vessel-enriched.enriched.json --dossier-dir output\owner-research\all-by-loa --selection all-by-loa --limit TRANCHE_END --output CURRENT_JSON --report CURRENT_HTML`
+
+Do not pass `--mark-ai-enriched`.
+
+Verify:
 
 - exactly `TRANCHE_END` owners were compiled in cohort order;
-- the first and last IDs match positions 1 and `TRANCHE_END` in the immutable
-  manifest;
+- every selected owner has a validated production dossier;
 - every compiled owner has `workflow.ai_enriched=false`;
-- every compiled `ai_research` object contains all four wealth
-  classifications;
-- positions `1..PRIOR_PREFIX` match `PREVIOUS_JSON` for biographies,
-  classifications, proposals, and protected owner values, allowing only
-  regenerated compilation timestamps and cumulative batch metadata; and
-- `_baseline`, `person_id`, `profile_url`, vessel ownership data, and existing
-  `profile_key` values remain unchanged.
+- all four wealth classifications exist in every compiled `ai_research`
+  object;
+- `_baseline`, person IDs, profile URLs, profile keys and vessel data remain
+  unchanged; and
+- the first and last compiled IDs match cohort positions 1 and `TRANCHE_END`.
 
-## Tranche summary
+## Write the tranche summary
 
-Write `TRANCHE_SUMMARY` with:
+Atomically write `TRANCHE_SUMMARY` with:
 
 - schema version and timestamps;
-- the prior prefix, tranche range, and exact owner list with positions, IDs,
-  names, vessels, and LOAs;
-- newly created, resumed, and already-valid dossier counts;
-- per-owner strict-validation results;
-- identity conflicts, unresolved identities, and limited-evidence owners;
-- all four classifications and confidence scores;
-- Cryptocurrency count and named owners;
-- Unknown counts by classification;
-- source and Forbes-result summaries;
-- target-tranche and cumulative audit results;
-- the exact inherited baseline findings permitted by the authorised exception;
-- confirmation that no later owner used the exception;
-- preflight and final hashes for protected inputs, frozen dossiers, and the
-  previous checkpoint;
-- compiled artifact paths, owner counts, and SHA-256 hashes; and
-- the next pending cohort position and remaining owner count, derived from
-  `TRANCHE_END` and `COHORT_SIZE`.
+- tranche start and end positions;
+- ordered target owner list;
+- newly researched, resumed and reused counts;
+- per-owner validation results;
+- research-status and record-type counts;
+- classification counts and self-made subtype counts;
+- biography and proposal counts;
+- corpus-audit result;
+- cumulative JSON and HTML paths;
+- compiled owner count;
+- confirmation that earlier positions were not modified;
+- confirmation that all dossiers remain pending;
+- test and validation results; and
+- the next cohort position and owner, when one remains.
 
-## Safety constraints
+The tranche summary is an audit record, not the authority for selecting the
+next tranche.
 
-- Never overwrite the enriched owner input or cohort manifest.
-- Never modify positions `1..PRIOR_PREFIX`.
-- Do not edit source code, documentation, tests, or skills while executing
-  this research prompt.
-- Do not approve dossiers.
-- Do not run `update_owners.py`.
-- Do not perform any live website write.
-- Do not commit generated research output.
-- Do not begin any owner after `TRANCHE_END`.
+## Advance progress only after success
 
-## Acceptance criteria
+Do not advance `completed_prefix` until every acceptance criterion passes.
 
-The goal is complete only when:
+After successful research, validation, audit, compilation and summary writing,
+atomically update the progress marker:
 
-- every position `TRANCHE_START..TRANCHE_END` has the correct schema-v7
-  dossier;
-- every target dossier passes strict per-owner validation;
-- the target-tranche strict corpus audit passes;
-- cumulative audit debt is limited to the exact authorised baseline;
-- all frozen dossier and protected input hashes are unchanged;
-- `CURRENT_JSON`, `CURRENT_HTML`, and `TRANCHE_SUMMARY` exist and contain the
-  expected cumulative prefix;
-- every dossier remains pending and every compiled owner has
-  `workflow.ai_enriched=false`;
-- processing stopped before `TRANCHE_END + 1`;
-- nothing was committed; and
-- nothing was applied live.
+- set `completed_prefix = TRANCHE_END`;
+- set `completed_through` to the final target cohort position, person ID and
+  display name;
+- set `next_owner` to the next cohort entry, or null when the cohort is
+  complete;
+- set `last_completed_tranche` to its range, completion timestamp and summary
+  path;
+- set `last_artifacts` to `CURRENT_JSON` and `CURRENT_HTML`;
+- set `active_tranche = null`; and
+- update `updated_at`.
 
-Return a concise final report containing:
+If the run stops before completion, leave `active_tranche` in place so the next
+paste of this same prompt resumes it.
 
-- processed positions and owner count;
-- new, resumed, already-valid, and cumulative dossier counts;
-- validation and target/cumulative audit results;
-- Cryptocurrency and Unknown classification counts;
-- unresolved or limited-evidence owners;
-- cumulative artifact and tranche-summary paths and hashes;
-- confirmation that all earlier positions remained frozen;
-- the derived next pending position and remaining count; and
-- confirmation that all reviews remain pending, nothing was committed, and
-  nothing was applied live.
+## Final acceptance criteria
 
-## After review
+- The exact selected contiguous tranche is complete.
+- Every target owner ID is recorded as completed.
+- Every target dossier passes strict validation.
+- The production corpus audit has zero unresolved actionable issues.
+- Earlier production positions were not modified.
+- Cumulative JSON and HTML exist through `TRANCHE_END`.
+- All compiled owners retain `workflow.ai_enriched=false`.
+- Every dossier remains `review.status=pending`.
+- The tranche summary exists.
+- The progress marker advanced atomically and has `active_tranche=null`.
+- The offline test suite passes.
+- Python compilation passes.
+- Custom GPT Knowledge is current.
+- `git diff --check` passes.
+- Nothing was approved, staged, committed, pushed or applied to the live
+  website.
 
-Approval is a separate task. For accepted dossiers, a human must set
-`review.status=approved` plus `reviewed_by` and `reviewed_at`. Only then compile
-an approved file with `--mark-ai-enriched`, run `update_owners.py` without
-`--apply`, inspect its audit, and obtain separate authorisation before any live
-apply. Dossiers marked `rejected` retain the original owner values and remain
-ineligible for update.
+When complete, return the tranche range, owner count, new/resumed/reused
+counts, dossier and corpus validation results, classification counts,
+unresolved or limited owner count, cumulative JSON and HTML paths, tranche
+summary path, next owner position, and an explicit statement that all dossiers
+remain pending review and nothing was applied.
+```

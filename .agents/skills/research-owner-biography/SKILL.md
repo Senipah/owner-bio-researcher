@@ -109,8 +109,11 @@ statistics.
 10. Review the pair before reverse-checking the source ledger. State what the
     long profile adds, which secondary short-biography fact it omits, and
     whether it would lose meaningful material if reduced to the short version.
-    Rewrite any paraphrased expansion, then score the seven-part editorial
-    rubric and revise any dimension below 4.
+    Perform the referential-clarity test for every sentence about assistance,
+    funding, backing, support, capital, results, or success: name the provider,
+    form, purpose, relevant setting, and any causal antecedent that could
+    otherwise be ambiguous. Rewrite any paraphrased expansion, then score the
+    seven-part editorial rubric and revise any dimension below 4.
 11. Save a separate dossier with `review.status=pending`. Put uncertain facts or
    links in `candidates_requiring_review`, not proposed changes.
 12. Run:
@@ -193,6 +196,10 @@ tracking. Do not let parallel agents edit the shared owner dataset.
   person lacked privilege or assistance. When a substantial family or social
   platform materially shaped the start, classify and describe it neutrally
   while preserving the person's separately evidenced achievement.
+- Do not make an institution the grammatical object of family funding when the
+  supported fact concerns education costs, trading capital, or another
+  specific purpose. Replace vague causal references such as "those results"
+  with the event, return, decision, or achievement itself.
 - Use British English except in official names, titles, and quotations.
 - Preserve source access dates because Forbes and business roles change.
 - Never infer either industry's sector from inheritance status, current
@@ -225,6 +232,10 @@ tracking. Do not let parallel agents edit the shared owner dataset.
 - Confirm a `self_made_advantaged` person's material starting advantage appears
   naturally in at least one biography and in the short biography when omission
   would imply a blank-slate origin.
+- Confirm every assistance or funding sentence identifies the provider, form,
+  purpose, and relevant stage, and that every causal pronoun has one
+  unmistakable antecedent. Treat this as part of `causal_clarity` and
+  `reader_orientation`; do not add another dossier field.
 - Confirm the longer biography is exactly two paragraphs and 90-190 words,
   without padding or targeting a preferred midpoint.
 - Confirm the working fact allocation used no more than two shared anchors,

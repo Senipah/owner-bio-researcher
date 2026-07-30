@@ -190,6 +190,26 @@ PERSONAL_YACHT_PATTERN = re.compile(
     re.IGNORECASE,
 )
 
+VAGUE_CAUSAL_REFERENT_PATTERN = re.compile(
+    r"\b(?:this|that|these|those)\s+"
+    r"(?:results?|success(?:es)?|efforts?)\b"
+    r"(?!\s+(?:at|for|from|in|of)\b)",
+    re.IGNORECASE,
+)
+
+UNDERSPECIFIED_FAMILY_FUNDING_PATTERN = re.compile(
+    r"\b(?P<provider>"
+    r"(?:(?i:his|her|their)\s+)?"
+    r"(?i:father|mother|parents?|grandfather|grandmother|grandparents?|"
+    r"brother|sister|siblings?|family members?|family|relatives?)"
+    r")\b"
+    r"[^.!?]{0,50}?"
+    r"\b(?P<verb>(?i:(?:helped\s+)?(?:fund(?:ed|ing)?|"
+    r"financ(?:e|ed|ing)|back(?:ed|ing)?|support(?:ed|ing)?)))\s+"
+    r"(?P<object>[A-Z][\w&'â€™-]*(?:\s+[A-Z][\w&'â€™-]*){0,3})"
+    r"(?=\s*(?:[.;!?]|,\s*(?i:while|before|after|and|but)\b))",
+)
+
 META_CAREER_OPENING_PATTERN = re.compile(
     r"^(?:"
     r"[^.!?]{0,140}\b(?:route|path)\s+(?:into|to)\b"
@@ -478,6 +498,20 @@ def editorial_findings(
         errors.append(f"{section} contains {label}")
     for label in pattern_hits(text, PROCESS_LEAK_PATTERNS):
         errors.append(f"{section} contains {label}")
+
+    if section in {"biography", "long_biography"}:
+        for match in VAGUE_CAUSAL_REFERENT_PATTERN.finditer(text):
+            warnings.append(
+                f"{section} uses the bare causal referent "
+                f"{match.group(0)!r}; name the result, success, or effort "
+                "explicitly"
+            )
+        for match in UNDERSPECIFIED_FAMILY_FUNDING_PATTERN.finditer(text):
+            warnings.append(
+                f"{section} says {match.group('provider')!r} "
+                f"{match.group('verb')} {match.group('object')!r} without "
+                "naming what was financed and for what purpose"
+            )
 
     if section == "long_biography":
         years = explicit_years(text)
