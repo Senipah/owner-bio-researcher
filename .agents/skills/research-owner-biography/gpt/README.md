@@ -26,9 +26,11 @@ unambiguous, resolves the identity, researches public sources, and returns:
 - verified personal social profiles and relevant official websites;
 - the 50–55 word short biography and 90–190 word two-paragraph profile;
 - confidence, sources, unresolved questions, and limitations; and
-- a downloadable pending manual dossier.
+- optional schema-v7-compatible JSON when explicitly requested.
 
 Only genuinely ambiguous names require a focused follow-up question.
+Ordinary responses never discuss repository scripts, schema resources, or
+internal validation requirements.
 
 OpenAI recommends putting behaviour and workflow in GPT Instructions and using
 uploaded Knowledge for reference material. The package follows that split:
@@ -44,11 +46,12 @@ uploaded Knowledge for reference material. The package follows that split:
 Configure the GPT directly in the web GPT editor.
 
 - **Name:** `Yacht Owner Biography Researcher`
-- **Description:** `Researches one yacht owner from public sources and produces evidence-backed wealth classifications, complementary biographies, and a pending manual review dossier.`
+- **Description:** `Researches one yacht owner from public sources and returns supported personal details, verified links, wealth classifications, complementary biographies, confidence and sources.`
 - **Recommended model:** choose the strongest web-search-capable model
   available in the workspace; do not pin a model name in this repository.
 - **Web Search:** on
-- **Code Interpreter & Data Analysis:** on
+- **Code Interpreter & Data Analysis:** optional; useful for downloadable JSON
+  when requested, but not required for normal research
 - **Image generation:** off
 - **Canvas:** off
 - **Apps:** off
@@ -101,13 +104,15 @@ The GPT searches first and proceeds automatically when one identity is strongly
 supported. It asks for company, role, geography, family context, or another
 disambiguator only when multiple plausible people remain.
 
-The GPT returns a human review summary and a downloadable
-schema-v7-compatible manual dossier. Because no immutable owner export is
-available, verified details and social links remain review candidates and the
-dossier is not compilation-ready.
+The GPT returns the complete human-readable profile by default. The user does
+not need to ask separately for personal details, social links, classifications,
+or biographies. It creates a schema-v7-compatible manual dossier only when the
+user explicitly asks for JSON or a dossier. That optional dossier is not
+owner-input-validated or compilation-ready.
 
 The example in [`manual-dossier.example.json`](manual-dossier.example.json)
-shows this manual contract. Validate a downloaded dossier locally without
+is maintainer documentation for that optional contract; do not upload it as
+Knowledge. A maintainer may validate a downloaded dossier locally without
 `--owner-input`:
 
 ```powershell

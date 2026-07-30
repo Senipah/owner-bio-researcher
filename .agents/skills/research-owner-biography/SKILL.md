@@ -73,7 +73,9 @@ statistics.
    independently under the wealth-classification reference. Distinguish the
    sector that created the fortune from the sector that currently best
    describes its principal private interests. Prefer how wealth or prominence
-   was created over its current amount.
+   was created over its current amount. Within self-made wealth, distinguish
+   an evidenced independent start from an advantaged one; do not equate
+   founder ownership with a blank-slate upbringing.
 5. Search all person-relevant link types supported by the input lookup,
    prioritising public personal Instagram, LinkedIn, and personal websites.
    A company website may be proposed under its distinct type when the owner
@@ -98,9 +100,12 @@ statistics.
    schema-v7 dossier.
 9. Select an opening mode and narrative shape deliberately; never draft in
    brief-field order. Draft a 50-55 word short identity card and a 90-190 word,
-   two-paragraph concise profile from their allocated facts. The long profile
-   must stand alone without restating all three short-biography components or
-   merely reordering and expanding the same fact bundle.
+   two-paragraph concise profile from their allocated facts. When available,
+   make the short identity card compactly informative about background,
+   defining work, geographic base, broad wealth stature, wealth mechanism, and
+   causally relevant family context. Omit unavailable signals silently. The
+   long profile must stand alone without restating all three short-biography
+   components or merely reordering and expanding the same fact bundle.
 10. Review the pair before reverse-checking the source ledger. State what the
     long profile adds, which secondary short-biography fact it omits, and
     whether it would lose meaningful material if reduced to the short version.
@@ -184,6 +189,10 @@ tracking. Do not let parallel agents edit the shared owner dataset.
   the enduring work rather than using a transient vessel as character colour.
 - Prefer durable facts over current percentages, annual figures, rankings, and
   other details likely to date quickly.
+- Treat `Self-made` as an asset-origin classification, not a claim that the
+  person lacked privilege or assistance. When a substantial family or social
+  platform materially shaped the start, classify and describe it neutrally
+  while preserving the person's separately evidenced achievement.
 - Use British English except in official names, titles, and quotations.
 - Preserve source access dates because Forbes and business roles change.
 - Never infer either industry's sector from inheritance status, current
@@ -200,11 +209,22 @@ tracking. Do not let parallel agents edit the shared owner dataset.
 - Confirm Forbes was explicitly checked.
 - Confirm all four wealth classifications are populated, use exact
   classification-to-label mappings, and are supported by source IDs.
+- Confirm self-made starting-position subtypes follow positive evidence:
+  `self_made_independent` is not inferred from missing inheritance evidence,
+  `self_made_advantaged` does not conceal a principal asset transfer, and
+  broad `self_made` is retained when the distinction is unresolved.
 - Confirm every non-`unknown` wealth classification scores at least 85.
 - Confirm inherited wealth follows its underlying industries, and royal or
   dynastic records do not assume `Energy` from an oil-producing state.
 - Confirm proposed facts and socials score at least 85.
 - Confirm the short biography is one paragraph and 50-55 words.
+- Confirm the short biography uses every useful, strongly sourced identity
+  signal that fits naturally—background, work, base, broad wealth stature,
+  wealth mechanism, and material family context—while silently omitting
+  unavailable facts.
+- Confirm a `self_made_advantaged` person's material starting advantage appears
+  naturally in at least one biography and in the short biography when omission
+  would imply a blank-slate origin.
 - Confirm the longer biography is exactly two paragraphs and 90-190 words,
   without padding or targeting a preferred midpoint.
 - Confirm the working fact allocation used no more than two shared anchors,

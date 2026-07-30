@@ -6,6 +6,26 @@ phrase across a tranche. For paired examples, follow the allocation notes:
 shared anchors preserve standalone orientation, while short-only and long-only
 material keep the two outputs complementary.
 
+## Identity-rich short biography: Abbas Hussain Sajwani
+
+Use this pattern when strong sources support a compact combination of
+background, role, business geography, broad wealth stature and formative
+family context. It is a calibration for information density, not a mandatory
+sentence structure.
+
+> Abbas Hussain Sajwani is an Emirati billionaire, property developer and
+> founder and chief executive of Dubai-based AHS Properties. Raised in the
+> property-development family of DAMAC founder Hussain Sajwani, he worked
+> alongside his father before establishing the separately owned company. It
+> develops ultra-luxury homes, waterfront towers and premium offices across
+> Dubai.
+
+The 50-word biography neither hides Sajwani's advantaged start nor treats it as
+disqualifying. It distinguishes the family platform from his own company and
+uses `billionaire` as a broad orientation signal instead of quoting a volatile
+net-worth estimate. Omit any unavailable element silently and vary the pattern
+when several owners share similar facts.
+
 ## Founder and operator: Shahid Khan
 
 Opening mode: `institution_or_asset`

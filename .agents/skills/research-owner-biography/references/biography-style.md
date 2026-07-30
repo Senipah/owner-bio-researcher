@@ -94,16 +94,52 @@ restatement expressed with different vocabulary.
 
 ## Short biography
 
-Answer two questions:
+Build an information-rich identity card. Answer two core questions:
 
 1. Who is this person?
 2. Where did their wealth or prominence principally come from?
 
-Use this order:
+When reliable sources make them available, seek these compact signals:
 
-1. Identify the person by nationality/background and main role.
-2. Explain the origin of wealth or prominence in concrete terms.
-3. Add one major holding, public role, or distinctive context.
+- nationality or relevant background;
+- defining occupation and role;
+- personal base or the geography of the defining business, without confusing
+  business location with residence;
+- a broad, source-backed wealth descriptor such as `billionaire`, rather than
+  a current estimate or ranking;
+- the company, asset, work, or decision behind the wealth; and
+- family background when it materially explains the person's starting
+  position or public identity.
+
+Omit any signal that cannot be established confidently. Never say that a
+birthplace, residence, wealth estimate, relative, or other desired fact could
+not be found. The biography should feel complete at the available evidence
+level.
+
+A useful two-sentence pattern is:
+
+1. Combine nationality or background, broad wealth stature, defining work, and
+   geographic base.
+2. Combine the concrete wealth mechanism with one causally relevant family,
+   institutional, or achievement context.
+
+This is an information pattern, not a sentence template. Vary syntax and
+emphasis across a batch.
+
+Example:
+
+> Abbas Hussain Sajwani is an Emirati billionaire, property developer and
+> founder and chief executive of Dubai-based AHS Properties. Raised in the
+> property-development family of DAMAC founder Hussain Sajwani, he worked
+> alongside his father before establishing the separately owned company. It
+> develops ultra-luxury homes, waterfront towers and premium offices across
+> Dubai.
+
+The example is 50 words. It acknowledges a material head start without
+diminishing the separately founded business. When `wealth_origin` is
+`self_made_advantaged`, include the advantage in at least one biography and in
+the short biography whenever omitting it would create a misleading
+blank-slate narrative.
 
 The result should read like a character-lore card rather than a financial fact
 sheet.
@@ -218,7 +254,9 @@ turning the current vessel relationship into a substitute biography.
   industrial history.
 - Avoid "visionary", "iconic", "renowned", "legendary", and other puffery.
 - Avoid moral judgment and speculation about motives or personality.
-- Omit current net worth unless essential to distinguish the person.
+- Prefer a broad, source-backed wealth descriptor such as `billionaire` when
+  it usefully orients the reader. Omit current net-worth figures, rankings, and
+  narrower claims likely to date quickly.
 - Do not include citations inside either biography; keep them in the dossier.
 - Do not name publishers, filings, databases, or source types in the prose.
 - Do not narrate confidence, evidence gaps, or the reasoning behind a wealth

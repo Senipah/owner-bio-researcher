@@ -102,6 +102,8 @@ INDUSTRIES = {
 }
 WEALTH_ORIGINS = {
     "self_made": "Self-made",
+    "self_made_independent": "Self-made — independent start",
+    "self_made_advantaged": "Self-made — advantaged start",
     "inherited": "Inherited",
     "inherited_and_expanded": "Inherited and expanded",
     "dynastic_royal": "Dynastic / royal",
@@ -127,6 +129,11 @@ CLASSIFICATION_FIELDS = {
     "wealth_relationship": WEALTH_RELATIONSHIPS,
 }
 WORD_PATTERN = re.compile(r"\b[\w]+(?:[’'-][\w]+)*\b")
+ORGANISATION_SUFFIX_PATTERN = re.compile(
+    r"\s+(?:properties|group|holdings|company|corporation|corp|limited|ltd|"
+    r"plc|partners|capital|industries|enterprises|management|foundation)\b",
+    re.IGNORECASE,
+)
 
 
 def _confidence(
@@ -887,6 +894,18 @@ def _current_vessel_names(owner: dict[str, Any]) -> set[str]:
     return {name for name in names if name}
 
 
+def _mentions_vessel_name(text: str, vessel_name: str) -> bool:
+    folded_text = text.casefold()
+    vessel_pattern = re.compile(
+        rf"(?<!\w){re.escape(vessel_name.casefold())}(?!\w)"
+    )
+    for match in vessel_pattern.finditer(folded_text):
+        if ORGANISATION_SUFFIX_PATTERN.match(folded_text, match.end()):
+            continue
+        return True
+    return False
+
+
 def validate_owner_input(
     document: Any,
     input_path: Path,
@@ -959,10 +978,10 @@ def validate_owner_input(
             if isinstance(value, dict)
         ).casefold()
         for vessel_name in sorted(_current_vessel_names(source_owner)):
-            vessel_pattern = re.compile(
-                rf"(?<!\w){re.escape(vessel_name.casefold())}(?!\w)"
-            )
-            if len(vessel_name) >= 3 and vessel_pattern.search(biography_text):
+            if (
+                len(vessel_name) >= 3
+                and _mentions_vessel_name(biography_text, vessel_name)
+            ):
                 errors.append(
                     "biographies mention current vessel name "
                     f"{vessel_name!r}; current ownership is ranking context only"

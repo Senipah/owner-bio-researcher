@@ -46,12 +46,34 @@ def _validate(
     )
 
 
+def _vessel_name_mention(text: str, vessel_name: str) -> bool:
+    scripts_path = str(SKILL_ROOT / "scripts")
+    sys.path.insert(0, scripts_path)
+    try:
+        from validate_dossier import _mentions_vessel_name
+
+        return _mentions_vessel_name(text, vessel_name)
+    finally:
+        sys.path.remove(scripts_path)
+
+
 def test_calibration_dossier_matches_wealth_classification_contract(
     tmp_path: Path,
 ) -> None:
     result = _validate(tmp_path, _calibration(), strict=True)
 
     assert result.returncode == 0, result.stderr
+
+
+def test_vessel_name_checker_allows_independent_company_name() -> None:
+    assert not _vessel_name_mention(
+        "He founded and leads AHS Properties in Dubai.",
+        "AHS",
+    )
+    assert _vessel_name_mention(
+        "He is the current owner of AHS.",
+        "AHS",
+    )
 
 
 def test_validator_rejects_mismatched_classification_label(
@@ -64,6 +86,30 @@ def test_validator_rejects_mismatched_classification_label(
 
     assert result.returncode == 1
     assert "primary_industry.label must be 'Automotive'" in result.stderr
+
+
+def test_validator_accepts_self_made_starting_position_subtypes(
+    tmp_path: Path,
+) -> None:
+    for classification, label in (
+        ("self_made_independent", "Self-made — independent start"),
+        ("self_made_advantaged", "Self-made — advantaged start"),
+    ):
+        dossier = deepcopy(_calibration())
+        dossier["wealth_origin"].update(
+            {
+                "classification": classification,
+                "label": label,
+                "summary": (
+                    "The founder built the principal company, with the "
+                    "starting position classified from supported context."
+                ),
+            }
+        )
+
+        result = _validate(tmp_path, dossier)
+
+        assert result.returncode == 0, result.stderr
 
 
 def test_validator_uses_shared_industry_dictionary_independently(

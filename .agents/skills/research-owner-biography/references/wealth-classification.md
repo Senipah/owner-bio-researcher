@@ -167,7 +167,9 @@ identifiable private business or wealth-producing interests:
 
 | Classification | Label | Definition |
 | --- | --- | --- |
-| `self_made` | Self-made | Founded, built, bought, or earned the principal fortune without inheriting the core wealth-producing assets. |
+| `self_made` | Self-made | Founded, built, bought, or earned the principal fortune without inheriting the core wealth-producing assets, but reliable evidence does not distinguish the person's starting position more precisely. |
+| `self_made_independent` | Self-made — independent start | Built the principal fortune without inheriting the core assets and without a substantial family-wealth or family-business platform materially enabling the launch. This does not require poverty or exclude education, employment experience, ordinary family support, or commercial finance obtained on ordinary terms. |
+| `self_made_advantaged` | Self-made — advantaged start | Built and owns the principal wealth-producing asset without inheriting it, but began with a substantial advantage from family wealth, status, industry access, business experience, networks, mentoring, financial security, or a comparable platform. |
 | `inherited` | Inherited | Inherited the principal stake or assets and has not demonstrably transformed their scale through personal operating activity. |
 | `inherited_and_expanded` | Inherited and expanded | Inherited the core assets and subsequently made a well-documented, material contribution to expanding or transforming them. Passive appreciation is not enough. |
 | `dynastic_royal` | Dynastic / royal | Access to the relevant personal or family wealth principally follows royal or ruling-family lineage. |
@@ -179,6 +181,36 @@ Describe the mechanism in `summary`: for example, founded company, inherited
 stake, property development, investment career, resource concession, marriage
 settlement, or royal-family allocation. Never substitute a net-worth estimate
 for the mechanism.
+
+### Self-made starting position
+
+The self-made classifications answer two questions together: whether the
+person created the principal wealth-producing asset, and what starting
+platform materially shaped that achievement. They are not moral rankings.
+`Self-made — advantaged start` recognises a separately built success while
+making its formative context visible.
+
+Apply these rules:
+
+1. Use `self_made_independent` only when strong evidence supports both the
+   founder-built mechanism and a materially independent launch. Do not treat
+   personally earned education, employment experience, savings, or ordinary
+   commercial borrowing as inherited advantage.
+2. Use `self_made_advantaged` when a wealthy, prominent, or industry-connected
+   family supplied a material head start through relevant exposure, mentoring,
+   networks, security, reputation, access, or opportunity. Direct seed capital
+   is not required when the wider platform is well established.
+3. Use the broader `self_made` value when the core asset was demonstrably
+   created by the person but reliable sources do not establish the starting
+   position well enough to choose either subtype. Do not infer an independent
+   start merely because no inheritance was found.
+4. Do not use `self_made_advantaged` to conceal a material transfer of the
+   principal stake, assets, or launch capital. Use `marriage_family_transfer`,
+   `mixed`, `inherited`, or `inherited_and_expanded` when the transferred
+   component is itself a principal origin mechanism.
+5. State the advantage neutrally in the summary and preserve the person's own
+   achievement. A useful formulation distinguishes the family platform from
+   the separately founded or acquired asset.
 
 ## Wealth-relationship values
 
@@ -232,9 +264,10 @@ and office-held assets:
 | Case | Wealth creation industry | Primary industry | Wealth origin | Wealth relationship |
 | --- | --- | --- | --- | --- |
 | Marijke Mars | Food & Beverage | Food & Beverage | Inherited | Heir / family shareholder |
-| Early Bitcoin investor whose current holdings span unrelated sectors | Cryptocurrency | Diversified | Self-made | Investor |
-| Traditional financier who later becomes active in crypto | Finance & Investments | Cryptocurrency or Finance & Investments, according to current evidence | Self-made | Investor |
-| Founder of an automotive supplier who later buys sports teams | Automotive | Automotive | Self-made | Founder |
+| Early Bitcoin investor whose current holdings span unrelated sectors and whose starting position is unclear | Cryptocurrency | Diversified | Self-made | Investor |
+| Traditional financier who later becomes active in crypto and built the career without a material family platform | Finance & Investments | Cryptocurrency or Finance & Investments, according to current evidence | Self-made — independent start | Investor |
+| Shahid Khan, who built an automotive supplier after arriving in the United States as a student | Automotive | Automotive | Self-made — independent start | Founder |
+| Founder of a separate property company who grew up in a billionaire property-development family | Real Estate | Real Estate | Self-made — advantaged start | Founder |
 | Technology founder now principally directing an investment office | Technology | Finance & Investments | Self-made | Family office principal |
 | Active successor who substantially expands an inherited property company | Real Estate | Real Estate | Inherited and expanded | Operator |
 | Royal with documented private hotels and no larger private sector holding | Hospitality or Unknown, according to origin evidence | Hospitality | Dynastic / royal | Royal beneficiary or Operator, according to the evidence |

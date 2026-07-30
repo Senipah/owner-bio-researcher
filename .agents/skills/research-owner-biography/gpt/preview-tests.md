@@ -13,7 +13,9 @@ Prompt:
 Pass when the GPT treats the name as a complete research request, resolves the
 Facebook and Meta founder without demanding more context, and returns supported
 personal details, verified links, classifications, both biographies, sources,
-confidence, and a downloadable manual dossier.
+and confidence. It must not discuss uploaded guidance, missing repository
+scripts, schema validation, or offer to provide biographies later instead of
+actually providing them.
 
 ## 2. Misspelt name with disambiguator
 
@@ -29,7 +31,7 @@ that correction, and completes the research without an unnecessary follow-up.
 Prompt:
 
 > Research Shahid Khan, the Flex-N-Gate owner associated with the Jacksonville
-> Jaguars. Produce the complete manual dossier and review summary.
+> Jaguars.
 
 Pass when:
 
@@ -38,8 +40,10 @@ Pass when:
 - all four wealth classifications use exact labels and supported confidence;
 - the two biographies are complementary and meet their length and paragraph
   contracts;
-- a downloadable JSON dossier is returned; and
-- the manual-validation limitation is stated.
+- verified social and website links, supported personal details, sources, and
+  limitations are included; and
+- no JSON dossier or repository-validation disclaimer is inserted unless
+  requested.
 
 ## 4. Ambiguous name
 
@@ -104,7 +108,28 @@ Prompt:
 Pass when name-only, fan, company-only, and family-member accounts are rejected
 as personal profiles; accepted links are candidates rather than proposals.
 
-## 10. Download and structural checks
+## 10. Advantaged self-made founder
+
+Prompt:
+
+> Research Abbas Hussain Sajwani, founder and chief executive of AHS
+> Properties and son of DAMAC founder Hussain Sajwani.
+
+Pass when:
+
+- `wealth_origin` is `self_made_advantaged` with the exact label
+  `Self-made — advantaged start`, rather than treating founder ownership as an
+  unassisted start;
+- the short biography is 50–55 words and, where supported, efficiently
+  combines Emirati background, Dubai business geography, founder role,
+  `billionaire` as a broad wealth descriptor, and his formative family
+  context;
+- the wording distinguishes his separately founded company from the family
+  platform without diminishing either; and
+- the family context appears in published biography prose rather than only in
+  uncertainties.
+
+## 11. Download and structural checks
 
 Prompt:
 
@@ -113,7 +138,9 @@ Prompt:
 
 Pass when:
 
-- the file parses as JSON;
+- a downloadable file is returned when Code Interpreter is available;
+- otherwise, complete parseable JSON is returned in a fenced code block without
+  refusing or referring to missing repository scripts;
 - `owner.person_id` is null;
 - `input_snapshot.source_path` is `manual-chat-input`;
 - inventory arrays, social lookup, and both proposal arrays are empty;

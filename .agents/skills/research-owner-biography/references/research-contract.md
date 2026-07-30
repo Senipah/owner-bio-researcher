@@ -66,6 +66,13 @@ classifications require confidence 85 or higher. Inherited and royal status
 describe origin, not either industry. Do not treat state, crown, sovereign, or
 office-held assets as personal property without strong evidence.
 
+Within self-made wealth, distinguish a materially independent start from an
+advantaged one when strong sources establish the person's family and starting
+platform. Retain broad `self_made` when the person demonstrably created the
+core asset but the starting position cannot be classified reliably. This
+distinction recognises founder-built success without turning an affluent,
+connected, or industry-embedded upbringing into a blank-slate story.
+
 ## Confidence
 
 Every confidence object has:
@@ -103,11 +110,22 @@ populate:
 - `biography_brief`: the durable, source-backed fact bridge used for the
   separate editorial pass.
 
-The short biography identifies the person and concisely explains the principal
-origin of wealth or prominence. The longer biography is an edited profile, not
-an expanded wealth-origin answer. It must orient the reader, select the
-strongest narrative angle, and use only the formative, decisive, operating,
-public, or personal material that improves the portrait.
+The short biography is an information-rich identity card. When reliable
+sources make them available, it should compactly establish nationality or
+background, defining work, geographic base, a broad durable wealth descriptor
+such as `billionaire`, the concrete origin of wealth or prominence, and
+causally relevant family context. Do not force, infer, or announce the absence
+of any unavailable element. Prefer a broad sourced descriptor over a current
+net-worth figure or ranking.
+
+The longer biography is an edited profile, not an expanded wealth-origin
+answer. It must orient the reader, select the strongest narrative angle, and
+use only the formative, decisive, operating, public, or personal material that
+improves the portrait. When `wealth_origin` is
+`self_made_advantaged`, at least one biography must state the material starting
+advantage naturally while preserving the person's separately evidenced
+achievement. Put it in the short biography when omission would create a
+misleading blank-slate impression.
 
 Each biography has its own `confidence` and `source_ids`. Its confidence cannot
 exceed the weakest material claim it contains. Every material claim must be
@@ -129,7 +147,8 @@ outline. It contains:
 - `durable_identity`: the clearest durable description of the person;
 - `defining_work`: the product, institution, asset, achievement, or public
   contribution that most clearly explains why the person matters;
-- nullable `formative_context` and `decisive_moment`;
+- nullable `formative_context` and `decisive_moment`; material family or
+  starting-position context belongs in `formative_context`;
 - `enduring_dimensions`: one to three durable aspects that may deepen either
   paragraph;
 - optional `character_detail`;

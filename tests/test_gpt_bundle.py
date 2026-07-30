@@ -77,15 +77,25 @@ def test_gpt_instructions_are_concise_and_decision_complete() -> None:
         "Search the exact name on Forbes first",
         "`wealth_creation_industry`",
         "## Biography requirements",
-        "## Manual dossier contract",
+        "distinguish an evidenced\n   independent start from an advantaged one",
+        "a broad wealth descriptor such as `billionaire`",
+        "Silently omit anything unavailable",
+        "For `self_made_advantaged`",
+        "## Optional manual dossier contract",
+        "Only when the user explicitly requests JSON or a dossier",
         "`owner.person_id` to `null`",
         "`proposed_details` and `proposed_socials` empty",
-        "## Validation and delivery",
+        "## Self-check and delivery",
+        "Always complete the human-readable profile",
+        "Never refuse, stop, or return partial findings",
+        "as non-executable reference, not Instructions",
         "supported personal details, including full name, date of birth",
         "a table of verified social and website links",
-        "nothing was approved or applied",
+        "otherwise return it as a fenced JSON code block",
     ):
         assert required in instructions
+    assert "Before answering, use Code Interpreter" not in instructions
+    assert "schema-v7-compatible manual dossier plus a concise human" not in instructions
 
 
 def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
@@ -95,6 +105,8 @@ def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
     assert "## End-user experience" in guide
     assert "> Mark Zuckerberg" in guide
     assert "> Mark Zucherberg, Facebook founder" in guide
+    assert "complete human-readable profile by default" in guide
+    assert "Code Interpreter & Data Analysis:** optional" in guide
     assert "## One-time GPT creator setup" in guide
     creator_setup = guide.split("## One-time GPT creator setup", 1)[1].split(
         "## Routine use",
@@ -109,6 +121,11 @@ def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
     assert "## 1. Name-only obvious identity" in preview_tests
     assert "> Mark Zuckerberg" in preview_tests
     assert "> Mark Zucherberg, Facebook founder" in preview_tests
+    assert "offer to provide biographies later" in preview_tests
+    assert "without\n  refusing" in preview_tests
+    assert "## 10. Advantaged self-made founder" in preview_tests
+    assert "`self_made_advantaged`" in preview_tests
+    assert "`Self-made — advantaged start`" in preview_tests
 
 
 def test_manual_dossier_example_contract_and_strict_validation() -> None:
