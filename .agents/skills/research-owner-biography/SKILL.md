@@ -42,6 +42,9 @@ statistics.
 - Read
   [references/editorial-calibrations.md](references/editorial-calibrations.md)
   before drafting and use the archetypes to vary structure across a batch.
+- For one-off name-and-context research in a Custom GPT, use the tracked
+  distribution documented in [gpt/README.md](gpt/README.md). The canonical
+  skill and reference files remain its source of truth.
 
 # Workflow
 

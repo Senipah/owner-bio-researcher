@@ -1,0 +1,170 @@
+from __future__ import annotations
+
+import importlib.util
+import json
+import re
+import subprocess
+import sys
+from pathlib import Path
+
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+SKILL_ROOT = (
+    REPO_ROOT
+    / ".agents"
+    / "skills"
+    / "research-owner-biography"
+)
+GPT_ROOT = SKILL_ROOT / "gpt"
+BUILDER = SKILL_ROOT / "scripts" / "build_gpt_knowledge.py"
+VALIDATOR = SKILL_ROOT / "scripts" / "validate_dossier.py"
+INSTRUCTIONS = GPT_ROOT / "instructions.md"
+KNOWLEDGE = GPT_ROOT / "owner-biography-knowledge.md"
+EXAMPLE = GPT_ROOT / "manual-dossier.example.json"
+SETUP_GUIDE = GPT_ROOT / "README.md"
+PREVIEW_TESTS = GPT_ROOT / "preview-tests.md"
+
+
+def _load_builder():
+    spec = importlib.util.spec_from_file_location(
+        "build_gpt_knowledge",
+        BUILDER,
+    )
+    assert spec is not None and spec.loader is not None
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def test_generated_gpt_knowledge_is_current() -> None:
+    builder = _load_builder()
+    knowledge = KNOWLEDGE.read_text(encoding="utf-8")
+
+    assert knowledge == builder.render_knowledge()
+    assert "](wealth-classification.md)" not in knowledge
+    assert "](biography-style.md)" not in knowledge
+    assert "](editorial-calibrations.md)" not in knowledge
+    for heading in (
+        "# Research and dossier contract",
+        "# Wealth classification",
+        "# Biography style",
+        "# Editorial calibrations",
+    ):
+        assert len(re.findall(rf"(?m)^{re.escape(heading)}$", knowledge)) == 1
+    for calibration in (
+        "## Founder and operator: Shahid Khan",
+        "## Heir and custodian: Philip Niarchos",
+        "## Royal and public office: Sheikh Tamim bin Hamad Al Thani",
+        "## Investor and philanthropist: Yuri Milner",
+        "## Sparse public record: Roger Samuelsson",
+        "## Maritime professional: Dimitris Procopiou",
+        "## Acquirer and consolidator: Bernard Arnault",
+        "## Creative industries founder: David Geffen",
+        "## Inherited operator: Stephen Orenstein",
+    ):
+        assert calibration in knowledge
+
+
+def test_gpt_instructions_are_concise_and_decision_complete() -> None:
+    instructions = INSTRUCTIONS.read_text(encoding="utf-8")
+
+    assert len(instructions) <= 6_500
+    for required in (
+        "## Intake",
+        "A name alone is sufficient",
+        "Perform an initial identity search before asking a question",
+        "## Research workflow",
+        "Search the exact name on Forbes first",
+        "`wealth_creation_industry`",
+        "## Biography requirements",
+        "## Manual dossier contract",
+        "`owner.person_id` to `null`",
+        "`proposed_details` and `proposed_socials` empty",
+        "## Validation and delivery",
+        "supported personal details, including full name, date of birth",
+        "a table of verified social and website links",
+        "nothing was approved or applied",
+    ):
+        assert required in instructions
+
+
+def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
+    guide = SETUP_GUIDE.read_text(encoding="utf-8")
+    preview_tests = PREVIEW_TESTS.read_text(encoding="utf-8")
+
+    assert "## End-user experience" in guide
+    assert "> Mark Zuckerberg" in guide
+    assert "> Mark Zucherberg, Facebook founder" in guide
+    assert "## One-time GPT creator setup" in guide
+    creator_setup = guide.split("## One-time GPT creator setup", 1)[1].split(
+        "## Routine use",
+        1,
+    )[0]
+    assert "build_gpt_knowledge.py" not in creator_setup
+    assert "## Updating the package" in guide
+    assert "build_gpt_knowledge.py" in guide.split(
+        "## Updating the package",
+        1,
+    )[1]
+    assert "## 1. Name-only obvious identity" in preview_tests
+    assert "> Mark Zuckerberg" in preview_tests
+    assert "> Mark Zucherberg, Facebook founder" in preview_tests
+
+
+def test_manual_dossier_example_contract_and_strict_validation() -> None:
+    dossier = json.loads(EXAMPLE.read_text(encoding="utf-8"))
+
+    assert dossier["schema_version"] == 7
+    assert dossier["owner"]["person_id"] is None
+    assert dossier["input_snapshot"] == {
+        "source_path": "manual-chat-input",
+        "raw_blank_details": [],
+        "researchable_missing_details": [],
+        "optional_missing_details": [],
+        "inapplicable_or_system_details": [],
+        "existing_social_types": [],
+        "missing_priority_social_types": [],
+        "social_type_lookup": {},
+    }
+    assert dossier["proposed_details"] == []
+    assert dossier["proposed_socials"] == []
+    assert dossier["candidates_requiring_review"]
+    assert all(
+        candidate["confidence"]["score"] >= 85
+        for candidate in dossier["candidates_requiring_review"]
+    )
+    assert dossier["review"] == {
+        "status": "pending",
+        "notes": (
+            "Manual name-and-context dossier; not owner-input-validated "
+            "or compilation-ready."
+        ),
+    }
+    assert any(
+        "No immutable owner input was supplied" in uncertainty
+        for uncertainty in dossier["uncertainties"]
+    )
+
+    result = subprocess.run(
+        [
+            sys.executable,
+            str(VALIDATOR),
+            str(EXAMPLE),
+            "--strict-editorial",
+        ],
+        cwd=REPO_ROOT,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+
+    assert result.returncode == 0, result.stderr
+
+
+def test_gpt_bundle_contains_no_local_absolute_paths() -> None:
+    for path in GPT_ROOT.iterdir():
+        if path.suffix not in {".md", ".json"}:
+            continue
+        text = path.read_text(encoding="utf-8")
+        assert "T:\\Work\\" not in text
+        assert "C:\\Users\\" not in text
