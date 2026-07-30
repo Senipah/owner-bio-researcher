@@ -15,6 +15,19 @@ RESEARCH_CLASSIFICATION_FIELDS = (
     "wealth_origin",
     "wealth_relationship",
 )
+DOSSIER_COMPARISON_FIELDS = (
+    "biography",
+    "long_biography",
+    *RESEARCH_CLASSIFICATION_FIELDS,
+)
+DOSSIER_COMPARISON_LABELS = {
+    "biography": "Short biography",
+    "long_biography": "Longer biography",
+    "wealth_creation_industry": "Wealth creation industry",
+    "primary_industry": "Primary industry",
+    "wealth_origin": "Wealth origin",
+    "wealth_relationship": "Relationship to wealth",
+}
 COMPARISON_DOSSIER_SCHEMA_VERSIONS = {6, 7}
 BIOGRAPHY_DETAIL_FIELDS = {"biography", "long_biography"}
 RESEARCH_SELECTIONS = {"top-100", "largest-loa", "all-by-loa"}
@@ -676,12 +689,22 @@ def attach_biography_comparisons(
     *,
     source_directory: str,
 ) -> int:
+    """Attach material dossier-field comparisons to a compiled report.
+
+    The historical function and report key retain their biography-oriented
+    names for compatibility. New payloads also compare the four wealth
+    classification objects.
+    """
     owners = report.get("owners")
     if not isinstance(owners, list):
         raise ValueError("Research report has no owner summaries")
 
+    changed_owner_count_by_field = {
+        field: 0 for field in DOSSIER_COMPARISON_FIELDS
+    }
+    wealth_origin_transitions: dict[str, int] = {}
     comparison_count = 0
-    for owner in owners:
+    for cohort_position, owner in enumerate(owners, start=1):
         if not isinstance(owner, dict):
             raise ValueError("Research report contains an invalid owner summary")
         person_id = owner.get("person_id")
@@ -711,56 +734,131 @@ def attach_biography_comparisons(
                 "Comparison dossier record_type mismatch for person_id "
                 f"{person_id}"
             )
-        if owner.get("record_type") != "person":
+        owner.pop("biography_comparison", None)
+        owner.pop("comparison_cohort_position", None)
+        changed_fields: dict[str, dict[str, Any]] = {}
+
+        if owner.get("record_type") == "person":
+            for field in ("biography", "long_biography"):
+                earlier_biography = earlier.get(field)
+                if not isinstance(earlier_biography, dict):
+                    raise ValueError(
+                        "Comparison person dossier has no "
+                        f"{field} for person_id {person_id}"
+                    )
+                before = earlier_biography.get("plain_text")
+                after = owner.get(field)
+                if not all(
+                    isinstance(value, str) and value.strip()
+                    for value in (before, after)
+                ):
+                    raise ValueError(
+                        "Biography comparison text is missing for person_id "
+                        f"{person_id}"
+                    )
+                normalised_before = _normalise_biography_text(before)
+                normalised_after = _normalise_biography_text(after)
+                if normalised_before != normalised_after:
+                    changed_fields[field] = {
+                        "before": normalised_before,
+                        "after": normalised_after,
+                    }
+
+        for field in RESEARCH_CLASSIFICATION_FIELDS:
+            earlier_value = earlier.get(field)
+            after_value = owner.get(field)
+            # Schema-v6 comparisons historically covered biographies only and
+            # may not contain wealth_creation_industry.
+            if earlier_value is None and earlier.get("schema_version") == 6:
+                continue
+            if not isinstance(earlier_value, dict) or not isinstance(
+                after_value,
+                dict,
+            ):
+                raise ValueError(
+                    f"Comparison field {field} is missing for person_id "
+                    f"{person_id}"
+                )
+            before = _wealth_comparison_value(earlier_value)
+            after = _wealth_comparison_value(after_value)
+            if before != after:
+                changed_fields[field] = {
+                    "before": before,
+                    "after": after,
+                }
+                if (
+                    field == "wealth_origin"
+                    and before.get("classification")
+                    != after.get("classification")
+                ):
+                    transition = (
+                        f"{before.get('classification')} "
+                        f"\N{RIGHTWARDS ARROW} "
+                        f"{after.get('classification')}"
+                    )
+                    wealth_origin_transitions[transition] = (
+                        wealth_origin_transitions.get(transition, 0) + 1
+                    )
+
+        if not changed_fields:
             continue
 
-        earlier_short = earlier.get("biography")
-        earlier_long = earlier.get("long_biography")
-        if not isinstance(earlier_short, dict) or not isinstance(
-            earlier_long,
-            dict,
-        ):
-            raise ValueError(
-                "Comparison person dossier has no biographies for person_id "
-                f"{person_id}"
-            )
-        before_short = earlier_short.get("plain_text")
-        before_long = earlier_long.get("plain_text")
-        after_short = owner.get("biography")
-        after_long = owner.get("long_biography")
-        if not all(
-            isinstance(value, str) and value.strip()
-            for value in (
-                before_short,
-                before_long,
-                after_short,
-                after_long,
-            )
-        ):
-            raise ValueError(
-                "Biography comparison text is missing for person_id "
-                f"{person_id}"
-            )
-        if before_short == after_short and before_long == after_long:
-            continue
-
+        owner["comparison_cohort_position"] = cohort_position
         owner["biography_comparison"] = {
+            "changed_fields": [
+                field
+                for field in DOSSIER_COMPARISON_FIELDS
+                if field in changed_fields
+            ],
+            "fields": changed_fields,
+            # Retain the legacy biography-only projection for callers that
+            # consume the before/after keys directly.
             "before": {
-                "biography": before_short,
-                "long_biography": before_long,
+                field: value["before"]
+                for field, value in changed_fields.items()
+                if field in BIOGRAPHY_DETAIL_FIELDS
             },
             "after": {
-                "biography": after_short,
-                "long_biography": after_long,
+                field: value["after"]
+                for field, value in changed_fields.items()
+                if field in BIOGRAPHY_DETAIL_FIELDS
             },
         }
+        for field in changed_fields:
+            changed_owner_count_by_field[field] += 1
         comparison_count += 1
 
     report["biography_comparison"] = {
         "source_directory": source_directory.replace("\\", "/"),
         "owner_count": comparison_count,
+        "owners_reviewed": len(owners),
+        "owners_with_changes": comparison_count,
+        "unchanged_owners": len(owners) - comparison_count,
+        "changed_owner_count_by_field": changed_owner_count_by_field,
+        "wealth_origin_transitions": dict(
+            sorted(wealth_origin_transitions.items())
+        ),
     }
     return comparison_count
+
+
+def _normalise_biography_text(value: str) -> str:
+    return value.replace("\r\n", "\n").replace("\r", "\n")
+
+
+def _wealth_comparison_value(value: dict[str, Any]) -> dict[str, Any]:
+    confidence = value.get("confidence")
+    if not isinstance(confidence, dict):
+        confidence = {}
+    return {
+        "classification": value.get("classification"),
+        "label": value.get("label"),
+        "summary": value.get("summary"),
+        "confidence": {
+            "score": confidence.get("score"),
+            "reason": confidence.get("reason"),
+        },
+    }
 
 
 def _e(value: Any) -> str:
@@ -791,6 +889,60 @@ def _source_links(sources: list[dict[str, Any]]) -> str:
         f'{_e(source.get("title"))}</a>'
         for source in sources
     )
+
+
+def _comparison_panel_content(field: str, value: Any) -> str:
+    if field == "biography":
+        return f"<blockquote>{_e(value)}</blockquote>"
+    if field == "long_biography":
+        return (
+            '<div class="long-biography">'
+            f"{_plain_paragraphs(value)}"
+            "</div>"
+        )
+    if not isinstance(value, dict):
+        return '<p class="muted">No comparison value supplied.</p>'
+    confidence = value.get("confidence")
+    if not isinstance(confidence, dict):
+        confidence = {}
+    return f"""
+      <dl class="comparison-details">
+        <dt>Classification</dt>
+        <dd><code>{_e(value.get("classification"))}</code></dd>
+        <dt>Label</dt><dd>{_e(value.get("label"))}</dd>
+        <dt>Summary</dt><dd>{_e(value.get("summary"))}</dd>
+        <dt>Confidence</dt><dd>{_e(confidence.get("score"))}%</dd>
+        <dt>Confidence reason</dt>
+        <dd>{_e(confidence.get("reason"))}</dd>
+      </dl>
+    """
+
+
+def _comparison_pair(
+    field: str,
+    values: dict[str, Any],
+    *,
+    confidence_score: Any = None,
+) -> str:
+    confidence = (
+        f" {_confidence_badge(confidence_score)}"
+        if confidence_score is not None
+        else ""
+    )
+    return f"""
+      <h3>{_e(DOSSIER_COMPARISON_LABELS[field])}
+      &mdash; before and after{confidence}</h3>
+      <div class="comparison-grid" data-comparison-field="{_e(field)}">
+        <section class="comparison-panel before">
+          <h4>Before</h4>
+          {_comparison_panel_content(field, values.get("before"))}
+        </section>
+        <section class="comparison-panel after">
+          <h4>After</h4>
+          {_comparison_panel_content(field, values.get("after"))}
+        </section>
+      </div>
+    """
 
 
 def render_research_report(report: dict[str, Any]) -> str:
@@ -830,6 +982,61 @@ def render_research_report(report: dict[str, Any]) -> str:
         if isinstance(comparison, dict)
         else None
     )
+    comparison_reviewed = (
+        int(comparison.get("owners_reviewed", len(owners)))
+        if isinstance(comparison, dict)
+        else 0
+    )
+    comparison_unchanged = (
+        int(comparison.get("unchanged_owners", len(owners) - comparison_count))
+        if isinstance(comparison, dict)
+        else 0
+    )
+    changed_owner_count_by_field = (
+        comparison.get("changed_owner_count_by_field", {})
+        if isinstance(comparison, dict)
+        else {}
+    )
+    if not isinstance(changed_owner_count_by_field, dict):
+        changed_owner_count_by_field = {}
+    wealth_origin_transitions = (
+        comparison.get("wealth_origin_transitions", {})
+        if isinstance(comparison, dict)
+        else {}
+    )
+    if not isinstance(wealth_origin_transitions, dict):
+        wealth_origin_transitions = {}
+    comparison_summary = ""
+    if isinstance(comparison, dict):
+        field_items = "".join(
+            "<li>"
+            f"{_e(DOSSIER_COMPARISON_LABELS[field])}: "
+            f"<strong>{_e(changed_owner_count_by_field.get(field, 0))}</strong>"
+            "</li>"
+            for field in DOSSIER_COMPARISON_FIELDS
+        )
+        transition_items = (
+            "".join(
+                f"<li><code>{_e(transition)}</code>: "
+                f"<strong>{_e(count)}</strong></li>"
+                for transition, count in wealth_origin_transitions.items()
+            )
+            or '<li class="muted">No wealth-origin classification transitions.</li>'
+        )
+        comparison_summary = f"""
+          <section class="comparison-summary">
+            <h2>Comparison summary</h2>
+            <p>Compared <strong>{comparison_reviewed}</strong> owners against
+            <code>{_e(comparison_source)}</code>:
+            <strong>{comparison_count}</strong> changed and
+            <strong>{comparison_unchanged}</strong> unchanged.</p>
+            <div class="comparison-summary-grid">
+              <div><h3>Changed owners by field</h3><ul>{field_items}</ul></div>
+              <div><h3>Wealth-origin transitions</h3>
+              <ul>{transition_items}</ul></div>
+            </div>
+          </section>
+        """
     cards: list[str] = []
     for owner in owners:
         display_rank = owner.get("rank")
@@ -997,7 +1204,50 @@ def render_research_report(report: dict[str, Any]) -> str:
                 owner.get("biography_confidence")
             )
             biography_comparison = owner.get("biography_comparison")
-            if isinstance(biography_comparison, dict):
+            comparison_fields = (
+                biography_comparison.get("fields")
+                if isinstance(biography_comparison, dict)
+                else None
+            )
+            if isinstance(comparison_fields, dict):
+                if "biography" in comparison_fields:
+                    short_biography_text = _comparison_pair(
+                        "biography",
+                        comparison_fields["biography"],
+                        confidence_score=owner.get(
+                            "biography_confidence"
+                        ),
+                    )
+                else:
+                    short_biography_text = f"""
+                    <h3>Short biography
+                      {_confidence_badge(owner.get(
+                          "biography_confidence"
+                      ))}</h3>
+                    <blockquote>{_e(owner.get("biography"))}</blockquote>
+                    """
+                if "long_biography" in comparison_fields:
+                    long_biography_text = _comparison_pair(
+                        "long_biography",
+                        comparison_fields["long_biography"],
+                        confidence_score=owner.get(
+                            "long_biography_confidence"
+                        ),
+                    )
+                else:
+                    long_biography_text = f"""
+                    <h3>Longer biography
+                      {_confidence_badge(owner.get(
+                          "long_biography_confidence"
+                      ))}</h3>
+                    <div class="long-biography">
+                      {_plain_paragraphs(owner.get("long_biography"))}
+                    </div>
+                    """
+                biography_text = (
+                    short_biography_text + long_biography_text
+                )
+            elif isinstance(biography_comparison, dict):
                 before = biography_comparison.get("before", {})
                 after = biography_comparison.get("after", {})
                 biography_text = f"""
@@ -1066,6 +1316,23 @@ def render_research_report(report: dict[str, Any]) -> str:
                 <p class="muted">No biography change is proposed for this
                 non-person record.</p>
             """
+        biography_comparison = owner.get("biography_comparison")
+        wealth_comparison_text = ""
+        if isinstance(biography_comparison, dict):
+            fields = biography_comparison.get("fields", {})
+            if isinstance(fields, dict):
+                wealth_comparison_text = "".join(
+                    _comparison_pair(field, fields[field])
+                    for field in RESEARCH_CLASSIFICATION_FIELDS
+                    if field in fields
+                )
+        comparison_identity = (
+            '<p class="comparison-identity"><strong>Changed dossier:</strong> '
+            f'Cohort position {_e(owner.get("comparison_cohort_position"))}; '
+            f'person ID {_e(owner.get("person_id"))}.</p>'
+            if isinstance(biography_comparison, dict)
+            else ""
+        )
         cards.append(
             f"""
             <details class="owner-card" open>
@@ -1079,7 +1346,9 @@ def render_research_report(report: dict[str, Any]) -> str:
               </summary>
               <div class="owner-body">
                 <p class="vessels">{vessels}</p>
+                {comparison_identity}
                 {biography_review}
+                {wealth_comparison_text}
                 <div class="origin">
                   <p><strong>Wealth creation industry:</strong>
                   {_e(owner.get("wealth_creation_industry", {}).get("label"))}
@@ -1217,6 +1486,22 @@ def render_research_report(report: dict[str, Any]) -> str:
     .comparison-panel.after h4 {{ color: #8ef0d0; }}
     .comparison-panel blockquote {{ margin: 0; height: 100%; }}
     .comparison-panel .long-biography {{ margin: 0; height: 100%; }}
+    .comparison-details {{
+      display: grid; grid-template-columns: minmax(110px, auto) 1fr;
+      gap: 6px 12px; margin: 0;
+    }}
+    .comparison-details dt {{ color: var(--muted); font-weight: 700; }}
+    .comparison-details dd {{ margin: 0; overflow-wrap: anywhere; }}
+    .comparison-summary {{
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 14px; margin: 22px 0; padding: 18px 20px;
+    }}
+    .comparison-summary h2 {{ margin-top: 0; }}
+    .comparison-summary-grid {{
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }}
+    .comparison-identity {{ color: var(--gold); }}
     .origin {{ background: #151b24; padding: 14px; border-radius: 10px; }}
     .table-wrap {{ overflow-x: auto; }}
     table {{ border-collapse: collapse; width: 100%; min-width: 680px; }}
@@ -1226,6 +1511,7 @@ def render_research_report(report: dict[str, Any]) -> str:
     @media (max-width: 680px) {{
       .metrics {{ grid-template-columns: 1fr; }}
       .comparison-grid {{ grid-template-columns: 1fr; }}
+      .comparison-summary-grid {{ grid-template-columns: 1fr; }}
       .owner-card > summary {{ align-items: flex-start; flex-direction: column; }}
     }}
   </style>
@@ -1237,15 +1523,7 @@ def render_research_report(report: dict[str, Any]) -> str:
       Selection: {_e(selection_description)}. Source data and live records
       remain unchanged. Generated
       {_e(report.get("generated_at"))}.</p>
-    {
-      (
-        '<p class="lede">Biography comparisons: '
-        f'{comparison_count} changed owners against '
-        f'<code>{_e(comparison_source)}</code>.</p>'
-      )
-      if comparison_count
-      else ""
-    }
+    {comparison_summary}
     <section class="metrics">
       <div class="metric"><strong>{len(owners)}</strong>owners researched</div>
       <div class="metric"><strong>{field_additions}</strong>missing fields added</div>
@@ -1253,9 +1531,9 @@ def render_research_report(report: dict[str, Any]) -> str:
       {
         (
           '<div class="metric"><strong>'
-          f'{comparison_count}</strong>biography pairs compared</div>'
+          f'{comparison_count}</strong>owners with relevant changes</div>'
         )
-        if comparison_count
+        if isinstance(comparison, dict)
         else ""
       }
     </section>

@@ -41,7 +41,8 @@ def build_parser() -> argparse.ArgumentParser:
         type=Path,
         help=(
             "Optional earlier dossier directory used only to render "
-            "before-and-after biography comparisons in the HTML report."
+            "before-and-after biography and wealth-classification "
+            "comparisons in the HTML report."
         ),
     )
     parser.add_argument("--output", type=Path)

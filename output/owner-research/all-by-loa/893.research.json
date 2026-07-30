@@ -203,13 +203,13 @@
     "This source record uses a person-shaped schema for a non-natural-person institution. Identity confidence refers to the institutional label and does not identify a human owner.",
     "The source values first_name=Egypt, last_name=Government, nationality=Egyptian, birth_country=Egypt and mortality_status=Alive are person-schema artefacts. They are preserved because the current dossier contract has no institution-safe replacement values.",
     "Human middle-name, gender, birthplace, birth-date and biography fields are deliberately left blank because they are inapplicable to a government.",
-    "All three wealth classifications are Unknown because the personal-wealth taxonomy does not apply to a state institution.",
+    "All four wealth objects are Unknown because the personal-wealth taxonomy does not apply to a state institution; public and state assets are not treated as private wealth.",
     "No president, prime minister, minister or other office-holder was substituted for the institutional record.",
     "No dedicated Forbes profile for Egypt Government was found. Forbes results for Egyptian officials and businesspeople were rejected as different natural persons.",
     "No personal social profile is proposed. Official government websites and institutional accounts are not personal profiles."
   ],
   "review": {
     "status": "pending",
-    "notes": "Institutional exception: preserve the non-person record, Unknown wealth classifications, null biography fields and empty personal-proposal arrays."
+    "notes": "Institutional exception: preserve the non-person record, all four Unknown wealth objects, null biography fields and empty personal-proposal arrays. Public and state assets are not treated as private wealth."
   }
 }

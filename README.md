@@ -331,10 +331,14 @@ owners, and applies only dossier proposals with confidence 85 or higher.
 Pending research remains `workflow.ai_enriched=false`, so it cannot be selected
 by the normal `--ai-enriched-only` update command.
 
-For an editorial repair batch, add `--compare-dossier-dir` to render the
-earlier and current short and long biographies side by side for every owner
-whose biography text changed. The comparison directory is read only and does
-not affect the compiled owner JSON:
+For an editorial repair or classification-calibration batch, add
+`--compare-dossier-dir` to compare the earlier and current short biography,
+long biography, wealth-creation industry, primary industry, wealth origin and
+wealth relationship. The report renders side-by-side panels only for fields
+whose material values changed, ignores biography HTML-wrapper and line-ending
+differences, and summarises changed owners, field counts and wealth-origin
+transitions. The comparison directory is read only and does not affect the
+compiled owner JSON:
 
 ```powershell
 .\venv\Scripts\python.exe .\compile_owner_research.py `

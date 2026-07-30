@@ -364,17 +364,14 @@ def test_compiler_parser_accepts_comparison_dossier_directory() -> None:
     assert args.compare_dossier_dir == Path("original")
 
 
-def test_renders_changed_biographies_before_and_after() -> None:
+def test_renders_biography_only_change_before_and_after() -> None:
     document = new_document()
     document["owners"] = [_owner(10, "First Owner", 1)]
     repaired = _dossier(10, "First Owner")
     earlier = _dossier(10, "First Owner")
     earlier["schema_version"] = 6
+    earlier.pop("wealth_creation_industry")
     earlier["biography"]["plain_text"] = "Earlier short biography."
-    earlier["long_biography"]["plain_text"] = (
-        "Earlier long biography first paragraph.\n\n"
-        "Earlier long biography second paragraph."
-    )
 
     _, report = compile_research_batch(
         document,
@@ -393,11 +390,288 @@ def test_renders_changed_biographies_before_and_after() -> None:
 
     assert count == 1
     assert report["biography_comparison"]["owner_count"] == 1
-    assert "Short biography — before and after" in rendered
-    assert "Longer biography — before and after" in rendered
+    assert report["biography_comparison"]["changed_owner_count_by_field"] == {
+        "biography": 1,
+        "long_biography": 0,
+        "wealth_creation_industry": 0,
+        "primary_industry": 0,
+        "wealth_origin": 0,
+        "wealth_relationship": 0,
+    }
+    assert 'data-comparison-field="biography"' in rendered
+    assert 'data-comparison-field="long_biography"' not in rendered
     assert "Earlier short biography." in rendered
     assert "First Owner is an industrial entrepreneur" in rendered
-    assert "1</strong>biography pairs compared" in rendered
+    assert "1</strong>owners with relevant changes" in rendered
+
+
+def test_renders_wealth_origin_only_change_and_transition() -> None:
+    document = new_document()
+    document["owners"] = [_owner(10, "First Owner", 1)]
+    repaired = _dossier(10, "First Owner")
+    earlier = _dossier(10, "First Owner")
+    earlier["wealth_origin"].update(
+        {
+            "classification": "inherited",
+            "label": "Inherited",
+            "summary": "Inherited the principal operating stake.",
+        }
+    )
+
+    _, report = compile_research_batch(
+        document,
+        {10: repaired},
+        {10: Path("repaired/10.research.json")},
+        source_path="owners.json",
+        limit=1,
+        mark_ai_enriched=False,
+    )
+    count = attach_biography_comparisons(
+        report,
+        {10: earlier},
+        source_directory="original",
+    )
+    rendered = render_research_report(report)
+
+    assert count == 1
+    assert report["owners"][0]["biography_comparison"]["changed_fields"] == [
+        "wealth_origin"
+    ]
+    assert report["biography_comparison"]["wealth_origin_transitions"] == {
+        "inherited → self_made": 1
+    }
+    assert 'data-comparison-field="wealth_origin"' in rendered
+    assert 'data-comparison-field="biography"' not in rendered
+    assert "<code>inherited</code>" in rendered
+    assert "<code>self_made</code>" in rendered
+
+
+def test_summarises_multiple_changed_fields_and_owner_identities() -> None:
+    document = new_document()
+    document["owners"] = [
+        _owner(10, "First Owner", 1),
+        _owner(11, "Second Owner", 2),
+    ]
+    repaired_10 = _dossier(10, "First Owner")
+    repaired_11 = _dossier(11, "Second Owner")
+    repaired_11["wealth_origin"].update(
+        {
+            "classification": "self_made_advantaged",
+            "label": "Self-made — advantaged start",
+            "summary": "Built the company after an evidenced family platform.",
+        }
+    )
+    earlier_10 = _dossier(10, "First Owner")
+    earlier_10["biography"]["plain_text"] = "Earlier identity card."
+    earlier_10["wealth_origin"].update(
+        {
+            "classification": "inherited",
+            "label": "Inherited",
+            "summary": "Inherited the principal stake.",
+        }
+    )
+    earlier_11 = _dossier(11, "Second Owner")
+    earlier_11["primary_industry"]["summary"] = "Earlier industry summary."
+
+    _, report = compile_research_batch(
+        document,
+        {10: repaired_10, 11: repaired_11},
+        {
+            10: Path("repaired/10.research.json"),
+            11: Path("repaired/11.research.json"),
+        },
+        source_path="owners.json",
+        limit=2,
+        mark_ai_enriched=False,
+    )
+    count = attach_biography_comparisons(
+        report,
+        {10: earlier_10, 11: earlier_11},
+        source_directory="original",
+    )
+    rendered = render_research_report(report)
+    summary = report["biography_comparison"]
+
+    assert count == 2
+    assert summary["owners_reviewed"] == 2
+    assert summary["owners_with_changes"] == 2
+    assert summary["unchanged_owners"] == 0
+    assert summary["changed_owner_count_by_field"] == {
+        "biography": 1,
+        "long_biography": 0,
+        "wealth_creation_industry": 0,
+        "primary_industry": 1,
+        "wealth_origin": 2,
+        "wealth_relationship": 0,
+    }
+    assert summary["wealth_origin_transitions"] == {
+        "inherited → self_made": 1,
+        "self_made → self_made_advantaged": 1,
+    }
+    assert "First Owner" in rendered
+    assert "Second Owner" in rendered
+    assert "Cohort position 1; person ID 10." in rendered
+    assert "Cohort position 2; person ID 11." in rendered
+
+
+def test_ignores_html_wrapper_and_line_ending_only_biography_changes() -> None:
+    document = new_document()
+    document["owners"] = [_owner(10, "First Owner", 1)]
+    repaired = _dossier(10, "First Owner")
+    earlier = _dossier(10, "First Owner")
+    earlier["biography"]["html"] = (
+        "<div>" + earlier["biography"]["plain_text"] + "</div>"
+    )
+    earlier["long_biography"]["plain_text"] = earlier[
+        "long_biography"
+    ]["plain_text"].replace("\n", "\r\n")
+
+    _, report = compile_research_batch(
+        document,
+        {10: repaired},
+        {10: Path("repaired/10.research.json")},
+        source_path="owners.json",
+        limit=1,
+        mark_ai_enriched=False,
+    )
+    count = attach_biography_comparisons(
+        report,
+        {10: earlier},
+        source_directory="original",
+    )
+    rendered = render_research_report(report)
+
+    assert count == 0
+    assert report["biography_comparison"]["owners_reviewed"] == 1
+    assert report["biography_comparison"]["unchanged_owners"] == 1
+    assert "biography_comparison" not in report["owners"][0]
+    assert "Comparison summary" in rendered
+    assert 'data-comparison-field="' not in rendered
+
+
+def test_compares_wealth_confidence_and_summary_changes() -> None:
+    document = new_document()
+    document["owners"] = [_owner(10, "First Owner", 1)]
+    repaired = _dossier(10, "First Owner")
+    earlier = _dossier(10, "First Owner")
+    earlier["primary_industry"]["summary"] = "Earlier current-business summary."
+    earlier["wealth_relationship"]["confidence"] = {
+        "score": 94,
+        "reason": "Earlier confidence reason.",
+    }
+
+    _, report = compile_research_batch(
+        document,
+        {10: repaired},
+        {10: Path("repaired/10.research.json")},
+        source_path="owners.json",
+        limit=1,
+        mark_ai_enriched=False,
+    )
+    count = attach_biography_comparisons(
+        report,
+        {10: earlier},
+        source_directory="original",
+    )
+
+    assert count == 1
+    assert report["owners"][0]["biography_comparison"]["changed_fields"] == [
+        "primary_industry",
+        "wealth_relationship",
+    ]
+
+
+def test_ignores_source_id_only_changes() -> None:
+    document = new_document()
+    document["owners"] = [_owner(10, "First Owner", 1)]
+    repaired = _dossier(10, "First Owner")
+    earlier = _dossier(10, "First Owner")
+    for field in (
+        "biography",
+        "long_biography",
+        "wealth_creation_industry",
+        "primary_industry",
+        "wealth_origin",
+        "wealth_relationship",
+    ):
+        earlier[field]["source_ids"] = ["S2"]
+
+    _, report = compile_research_batch(
+        document,
+        {10: repaired},
+        {10: Path("repaired/10.research.json")},
+        source_path="owners.json",
+        limit=1,
+        mark_ai_enriched=False,
+    )
+    count = attach_biography_comparisons(
+        report,
+        {10: earlier},
+        source_directory="original",
+    )
+
+    assert count == 0
+    assert report["biography_comparison"]["owner_count"] == 0
+    assert "biography_comparison" not in report["owners"][0]
+
+
+def test_rejects_missing_or_mismatched_comparison_dossiers() -> None:
+    document = new_document()
+    document["owners"] = [_owner(10, "First Owner", 1)]
+    repaired = _dossier(10, "First Owner")
+    _, report = compile_research_batch(
+        document,
+        {10: repaired},
+        {10: Path("repaired/10.research.json")},
+        source_path="owners.json",
+        limit=1,
+        mark_ai_enriched=False,
+    )
+
+    with pytest.raises(ValueError, match="missing for person_id 10"):
+        attach_biography_comparisons(
+            report,
+            {},
+            source_directory="original",
+        )
+
+    mismatched = _dossier(11, "Different Owner")
+    with pytest.raises(ValueError, match="owner mismatch for person_id 10"):
+        attach_biography_comparisons(
+            report,
+            {10: mismatched},
+            source_directory="original",
+        )
+
+
+def test_escapes_comparison_names_and_wealth_content() -> None:
+    document = new_document()
+    document["owners"] = [_owner(10, "Owner <One>", 1)]
+    repaired = _dossier(10, "Owner <One>")
+    earlier = _dossier(10, "Owner <One>")
+    earlier["wealth_origin"]["summary"] = "<script>alert('before')</script>"
+    repaired["wealth_origin"]["summary"] = "Built A & B."
+
+    _, report = compile_research_batch(
+        document,
+        {10: repaired},
+        {10: Path("repaired/10.research.json")},
+        source_path="owners.json",
+        limit=1,
+        mark_ai_enriched=False,
+    )
+    attach_biography_comparisons(
+        report,
+        {10: earlier},
+        source_directory="<original>",
+    )
+    rendered = render_research_report(report)
+
+    assert "Owner &lt;One&gt;" in rendered
+    assert "&lt;script&gt;alert(&#x27;before&#x27;)&lt;/script&gt;" in rendered
+    assert "Built A &amp; B." in rendered
+    assert "<script>alert('before')</script>" not in rendered
+    assert "<code>&lt;original&gt;</code>" in rendered
 
 
 def test_compiles_pending_preview_without_changing_baseline() -> None:
