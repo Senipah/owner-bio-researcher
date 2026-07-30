@@ -1,0 +1,534 @@
+{
+  "schema_version": 7,
+  "record_type": "person",
+  "owner": {
+    "person_id": 641,
+    "display_name": "Sir James Dyson",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Dyson's official biography, his exact Forbes profile and UK corporate records align on his name, nationality, birth month and year, founder role, company and United Kingdom residence."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Sir James Dyson is a British inventor, industrial designer and founder who remains chairman of the privately controlled Dyson technology and appliance business.",
+    "defining_work": "Cyclonic separation enabled him to replace the clogging vacuum-cleaner bag with a bagless system and build a global manufacturing company around the resulting products.",
+    "formative_context": "Art and architectural-design studies were followed by practical product-development work with inventor Jeremy Fry.",
+    "decisive_moment": "After established manufacturers rejected his vacuum design, Japanese licensing income helped him launch a machine under his own name.",
+    "enduring_dimensions": [
+      "Hands-on product invention and engineering",
+      "Continuing family control through the Weybourne structure",
+      "Engineering education through a foundation and higher-education institute"
+    ],
+    "character_detail": "He developed 5,127 vacuum prototypes before reaching the design that went into production.",
+    "opening_options": [
+      {
+        "mode": "formative_episode",
+        "angle": "Use the timber-mill cyclone that inspired his vacuum work to introduce his problem-solving method."
+      },
+      {
+        "mode": "defining_achievement",
+        "angle": "Open with the bagless cyclonic vacuum as the product that established both his public identity and manufacturing business."
+      },
+      {
+        "mode": "public_contribution",
+        "angle": "Lead with his engineering-education institutions and use them to reveal the design principles that shaped his business."
+      }
+    ],
+    "excluded_transient_context": [
+      "Current vessel ownership, vessel specifications and cohort ranking",
+      "Current net worth and rich-list position",
+      "Annual revenue, market count and current product inventory",
+      "Political commentary and tax-policy interventions",
+      "Unverified personal social accounts"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "The short biography alone explains the manufacturing wealth engine, present chairmanship and Weybourne control. The long profile instead develops the timber-mill insight, prototype process, design formation and engineering-education institutions; only his inventor identity is shared."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/james-dyson/",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The exact Forbes profile matches Dyson's name, British citizenship, United Kingdom residence, age, vacuum-appliance wealth source and self-made founder history."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "Dyson created his fortune by inventing and commercialising cyclonic vacuum cleaners, then expanding the privately held company into a broader appliance manufacturer.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Dyson's official history documents the invention and manufacturing sequence, Forbes identifies vacuums as his source of wealth, and Bloomberg attributes most of the fortune to the appliance manufacturer."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S5"
+    ]
+  },
+  "primary_industry": {
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "Dyson Holdings remains the largest identifiable private asset and the source of most of his current fortune; farming, property and family-office investments are material but secondary.",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Bloomberg's current asset analysis identifies Dyson as his biggest asset and attributes the majority of his fortune to the household-appliance manufacturer, while current UK records classify its activities as electrical-equipment manufacturing and engineering research."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "He developed the bagless vacuum technology, licensed it in Japan and founded the company that commercialised products under his own name.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Forbes explicitly classifies the fortune as self-made, while Dyson's official biography and Bloomberg independently document the invention, licensing and company-building mechanism."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Dyson founded the core operating company, remains its chairman and retains ultimate control through the family's Weybourne holding structure.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The official company biography identifies him as founder and chairman; Companies House records his controlling interest in Weybourne, and current group accounts identify him as the ultimate controlling party."
+    },
+    "source_ids": [
+      "S1",
+      "S4",
+      "S9"
+    ]
+  },
+  "biography": {
+    "plain_text": "Sir James Dyson is a British inventor and industrial designer who made his fortune through engineering and manufacturing. His cyclonic bagless vacuum became the foundation of the privately controlled Dyson company, which expanded into household technologies. He remains its founder and chairman, retaining ultimate control through the family’s Weybourne holding structure.",
+    "html": "<p>Sir James Dyson is a British inventor and industrial designer who made his fortune through engineering and manufacturing. His cyclonic bagless vacuum became the foundation of the privately controlled Dyson company, which expanded into household technologies. He remains its founder and chairman, retaining ultimate control through the family’s Weybourne holding structure.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official Dyson material, Forbes, Bloomberg, Companies House and current group accounts establish his identity, manufacturing wealth engine, founder-chairman role and ultimate control."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S9"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "A cyclone separator at a timber mill gave Sir James Dyson the idea that would define his work as an inventor. Applying it to a household vacuum, he built 5,127 prototypes and licensed the technology in Japan. Established manufacturers rejected the design, so he launched a machine under his own name.\n\nDyson had studied art and architectural design, then learned product development while working with inventor Jeremy Fry. Engineering education became a public focus. The James Dyson Foundation backs young problem-solvers, while the Dyson Institute lets undergraduates combine academic study with salaried work in the company's engineering teams.",
+    "html": "<p>A cyclone separator at a timber mill gave Sir James Dyson the idea that would define his work as an inventor. Applying it to a household vacuum, he built 5,127 prototypes and licensed the technology in Japan. Established manufacturers rejected the design, so he launched a machine under his own name.</p>\r\n<p>Dyson had studied art and architectural design, then learned product development while working with inventor Jeremy Fry. Engineering education became a public focus. The James Dyson Foundation backs young problem-solvers, while the Dyson Institute lets undergraduates combine academic study with salaried work in the company's engineering teams.</p>\r\n",
+    "word_count": 99,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Dyson's official biography directly documents the timber-mill insight, prototype development, licensing, rejection, education and work with Jeremy Fry; the Foundation and Institute independently establish their current educational work."
+    },
+    "source_ids": [
+      "S1",
+      "S6",
+      "S7"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Inventor and Founder of Dyson",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Dyson's official biography identifies him as an inventor and the company's founder and chairman, corroborated by Forbes and Bloomberg."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Cromer, Norfolk",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Bloomberg places his birth in Norfolk and the well-cited canonical biography specifies Cromer, Norfolk."
+      },
+      "source_ids": [
+        "S3",
+        "S8"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "2",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Bloomberg and the canonical biography independently give 2 May 1947 as his date of birth."
+      },
+      "source_ids": [
+        "S3",
+        "S8"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "May",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Bloomberg, Companies House and the canonical biography agree that he was born in May."
+      },
+      "source_ids": [
+        "S3",
+        "S4",
+        "S8"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1947",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Bloomberg, Companies House and the canonical biography agree on the 1947 birth year."
+      },
+      "source_ids": [
+        "S3",
+        "S4",
+        "S8"
+      ]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Sir James Dyson is a British inventor and industrial designer who made his fortune through engineering and manufacturing. His cyclonic bagless vacuum became the foundation of the privately controlled Dyson company, which expanded into household technologies. He remains its founder and chairman, retaining ultimate control through the family’s Weybourne holding structure.</p>\r\n",
+      "action": "correct_existing",
+      "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/James_Dyson\">Sir James Dyson</a>, a British inventor, industrial designer, farmer, and billionaire entrepreneur, was born on May 2, 1947. He founded <a href=\"https://en.wikipedia.org/wiki/Dyson_(company)\">Dyson Ltd</a>. He is most known for inventing the twin cyclone bagless vacuum cleaner, which uses the cyclonic separation technique. He is the fourth richest person in the UK, according to the Sunday Times Rich List 2021, with a net worth of &pound;16.3 billion.</p>\r\n",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The replacement removes a stale ranking and net-worth figure while retaining the durable invention, manufacturing, founder and control facts established by current primary and business sources."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S9"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://www.forbes.com/profile/james-dyson/",
+      "verification": "Exact Forbes profile matching Dyson's founder history, nationality, residence, age and appliance wealth source.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The profile is an exact identity match and is Forbes's dedicated personal profile for James Dyson."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.dyson.com/",
+      "verification": "Official Dyson domain hosting his company biography and identifying him as founder and chairman.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The official company website directly identifies Sir James Dyson as founder and chairman."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "topic": "Existing Wikipedia URL correction",
+      "detail": "The input URL is https://en.wikipedia.org/wiki/ames_Dyson, which omits the initial J and does not resolve to the canonical article. The existing type prevents a duplicate proposal, so a reviewer should replace it with https://en.wikipedia.org/wiki/James_Dyson."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.dyson.com/james-dyson",
+      "title": "Sir James Dyson biography",
+      "publisher": "Dyson",
+      "tier": 1,
+      "accessed_at": "2026-07-30",
+      "supports": [
+        "Sir James Dyson identity",
+        "Inventor, founder and chairman roles",
+        "Art and architectural-design education",
+        "Product-development work with Jeremy Fry",
+        "Timber-mill cyclone inspiration",
+        "Vacuum prototype, licensing and launch history",
+        "Creation of the James Dyson Foundation and Dyson Institute",
+        "Current work with engineers and scientists"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/profile/james-dyson/",
+      "title": "James Dyson",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-07-30",
+      "supports": [
+        "Exact dedicated Forbes profile",
+        "British citizenship and United Kingdom residence",
+        "Vacuums as source of wealth",
+        "Self-made status",
+        "Cyclonic vacuum invention and prototype history"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.bloomberg.com/billionaires/profiles/james-dyson/",
+      "title": "Bloomberg Billionaires Index: James Dyson",
+      "publisher": "Bloomberg",
+      "tier": 2,
+      "accessed_at": "2026-07-30",
+      "supports": [
+        "Founder and chief-engineer identity",
+        "Dyson Holdings as his largest asset",
+        "Majority of fortune derived from the household-appliance manufacturer",
+        "Additional farmland and property assets",
+        "Birth on 2 May 1947 in Norfolk",
+        "Vacuum invention, Japanese licensing and company-building history"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/10260912/persons-with-significant-control",
+      "title": "Weybourne Limited: persons with significant control",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-07-30",
+      "supports": [
+        "Exact Sir James Dyson identity",
+        "British nationality",
+        "May 1947 birth month and year",
+        "United Kingdom residence",
+        "Control through at least 75 per cent of shares and voting rights in Weybourne Limited"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03772814",
+      "title": "Dyson UK Holdings Limited: company overview",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-07-30",
+      "supports": [
+        "Active Dyson UK holding company",
+        "Manufacture of electric domestic appliances",
+        "Manufacture of other electrical equipment",
+        "Engineering and natural-sciences research and development"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.dysoninstitute.ac.uk/about-us/who-we-are/our-story/",
+      "title": "Our story",
+      "publisher": "Dyson Institute of Engineering and Technology",
+      "tier": 1,
+      "accessed_at": "2026-07-30",
+      "supports": [
+        "Sir James Dyson as founder of the Institute",
+        "Creation in response to the engineering-skills shortage",
+        "Combination of academic study with live engineering work",
+        "Continuing higher-education model"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.jamesdysonfoundation.co.uk/who-we-are",
+      "title": "Who we are",
+      "publisher": "James Dyson Foundation",
+      "tier": 1,
+      "accessed_at": "2026-07-30",
+      "supports": [
+        "James Dyson as founder",
+        "Foundation mission to inspire future engineers and scientists",
+        "Hands-on learning and experimentation focus",
+        "Current global educational work"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://en.wikipedia.org/wiki/James_Dyson",
+      "title": "James Dyson",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-07-30",
+      "supports": [
+        "Canonical Wikipedia URL",
+        "Birth on 2 May 1947",
+        "Cromer, Norfolk birthplace",
+        "British inventor and industrial-designer identity"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.dysoninstitute.ac.uk/media/3bvdkfts/dyson-technical-training-limited-fy24-accounts.pdf",
+      "title": "Dyson Technical Training Limited annual accounts for the year ended 31 December 2024",
+      "publisher": "Dyson Technical Training Limited",
+      "tier": 1,
+      "accessed_at": "2026-07-30",
+      "supports": [
+        "Weybourne Holdings as the parent structure",
+        "Sir James Dyson as the ultimate controlling party"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Current primary industry",
+      "detail": "Dyson describes itself as technology-led and the family office also holds farming, property and financial investments. Manufacturing is retained as the primary-industry classification because current independent analysis identifies Dyson Holdings as the largest asset and source of most of the fortune, while official company records classify its core activity as appliance and electrical-equipment manufacturing."
+    },
+    {
+      "topic": "Middle name and secondary nationality",
+      "detail": "Current official, business and reference sources consistently use James Dyson without a middle name and identify British nationality only. The blank middle-name and secondary-nationality fields are left unchanged rather than treating absence as a fact to fill."
+    },
+    {
+      "topic": "Existing Wikipedia link",
+      "detail": "The input's Wikipedia URL omits the initial J from James and is not canonical. Because Wikipedia already exists as a social type, the dossier records the verified replacement for reviewer action instead of proposing a duplicate link."
+    },
+    {
+      "topic": "Personal social accounts",
+      "detail": "No personal LinkedIn, Instagram, Facebook, X, YouTube or TikTok account met the official-crosslink or two-source verification threshold. Company, Foundation, Institute and Award accounts were not substituted for a personal profile."
+    },
+    {
+      "topic": "Residence",
+      "detail": "Forbes and Companies House support the existing United Kingdom residence. Public company headquarters and international business operations are not treated as personal residence evidence."
+    },
+    {
+      "topic": "Other blank fields",
+      "detail": "Name suffix and secondary residence remain optional or unsupported. Death and death-age fields remain inapplicable for a person recorded as alive; internal-note and unknown-name fields remain system-managed."
+    }
+  ],
+  "review": {
+    "status": "pending",
+    "notes": "Review the separation between the manufacturing wealth engine and current primary asset, the verified Forbes and company links, the birth-detail proposals and the existing malformed Wikipedia URL. Do not add unverified personal accounts or reintroduce current wealth rankings."
+  }
+}
