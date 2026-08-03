@@ -1,0 +1,210 @@
+{
+  "schema_version": 7,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 10474,
+    "display_name": "Unknown Mexican",
+    "identity_confidence": {
+      "score": 0,
+      "band": "insufficient",
+      "reason": "The record explicitly marks the name as unknown and supplies no non-vessel personal identifier beyond Mexican nationality and residence in Mexico. Those broad attributes cannot distinguish one person from millions of possible individuals."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This owner record is an unresolved placeholder rather than an identifiable natural person. Its only non-vessel clues are Mexican nationality and residence in Mexico; it provides no name, employer, occupation, biography, social profile or other unique identifier. A public-source identity search would therefore invite speculation, so no biography or personal-field update is proposed.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The immutable input explicitly marks the name as unknown and contains no sufficiently discriminating non-vessel evidence."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "forbes_profile": {
+    "status": "unavailable",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "A Forbes profile cannot be checked for an unidentified placeholder with no personal name or unique biographical clue."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No identifiable person or private wealth-producing business can be established from the record's non-vessel fields.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The input provides no employer, occupation, company, asset or personal identity from which a wealth-creation industry could be determined."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No current private business or investment activity can be attributed to an unresolved nationality-based placeholder.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Neither an identifiable person nor any current business interest is present in the permitted record fields."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The origin of wealth cannot be assessed because the underlying person and wealth-producing assets are unidentified.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Nationality and country of residence provide no evidence of inheritance, entrepreneurship, family wealth or another origin mechanism."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No founder, operator, investor, heir or other relationship can be assigned without an identifiable person or asset platform.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The permitted input contains no person-specific business or ownership relationship."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=10474",
+      "title": "Unknown Mexican owner record",
+      "publisher": "Superyacht Network",
+      "tier": 4,
+      "accessed_at": "2026-08-03",
+      "supports": [
+        "Record display name Unknown Mexican",
+        "Explicit unknown-name flag",
+        "Mexican nationality and Mexico residence",
+        "Absence of a personal name, employer, occupation, biography or social profile in the non-vessel fields"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Identity",
+      "detail": "No natural person can be resolved. Unknown is a placeholder rather than a given name, and Mexican is a nationality descriptor rather than a family name."
+    },
+    {
+      "topic": "Permitted clues",
+      "detail": "The non-vessel record contains only Mexican nationality and residence in Mexico. These broad facts are shared by many people and do not support a targeted public-source search or candidate list."
+    },
+    {
+      "topic": "Identity-resolution boundary",
+      "detail": "No identity was inferred from nationality, residence, wealth assumptions or similarly labelled public figures. Vessel relationships were not inspected or used for identity resolution."
+    },
+    {
+      "topic": "Missing personal data",
+      "detail": "Gender, birth details, occupation, employer, biography, social profiles, mortality status beyond Unknown, wealth source and ownership relationship remain unresolved."
+    },
+    {
+      "topic": "Excluded material",
+      "detail": "Politics, controversies, allegations, legal matters, sanctions, private-family detail and vessel-specific research are excluded."
+    }
+  ],
+  "review": {
+    "status": "pending",
+    "notes": "Preserve this record as an unresolved placeholder. Identity confidence is zero because no unique non-vessel clue exists; the 100-point Unknown classification confidences express certainty that the available evidence does not support a classification, not confidence in any person. Reopen research only if a reliable personal name, employer, occupation, direct profile or comparable distinguishing clue is added. Nothing has been compiled, approved or applied."
+  }
+}

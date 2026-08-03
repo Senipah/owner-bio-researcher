@@ -1,0 +1,468 @@
+{
+  "schema_version": 7,
+  "record_type": "person",
+  "owner": {
+    "person_id": 2088,
+    "display_name": "Lawrence Stroll",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The exact name, July 1959 birth details, Canadian nationality, Swiss residence, fashion career and Aston Martin leadership align across Forbes, Aston Martin, Companies House and the owner record."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "place_of_birth",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "place_of_birth"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia",
+      "Forbes"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Lawrence Stroll is a Canadian fashion investor who became executive chairman of Aston Martin and controlling shareholder of its Formula One operation.",
+    "defining_work": "With Silas Chou, he used Sportswear Holdings to acquire and expand fashion brands including Tommy Hilfiger and Michael Kors.",
+    "formative_context": "He entered the industry through his family's Canadian Pierre Cardin licensing business, providing experience, relationships and a valuable commercial platform.",
+    "decisive_moment": "The Michael Kors investment and 2011 flotation converted decades of fashion-brand building into the bulk of his documented fortune.",
+    "enduring_dimensions": [
+      "Fashion-brand acquisition and international expansion",
+      "Investor-led turnarounds in automotive and motorsport",
+      "Active chairmanship of Aston Martin's road-car and racing businesses"
+    ],
+    "character_detail": "A lifelong interest in performance cars evolved from collecting and circuit ownership into control of a Formula One team and leadership of Aston Martin.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Open with his Aston Martin chairmanship, then distinguish that current role from the fashion investments that created his fortune."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Open with the Michael Kors flotation, then trace the family licensing platform and later automotive turn."
+      }
+    ],
+    "excluded_transient_context": [
+      "Current or historical vessel ownership and LOA ranking",
+      "Current net worth and fluctuating share valuations",
+      "Treating family access as inherited ownership of his later fortune",
+      "Treating Aston Martin Lagonda and its Formula One team as the same legal entity",
+      "Speculation about his son's racing career",
+      "Unverified personal social-media accounts",
+      "Source attribution and confidence deliberation"
+    ],
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "identity_then_origin",
+    "calibration_archetypes": [
+      "acquirer_consolidator",
+      "investor_philanthropist"
+    ],
+    "notes": "The short biography separates Stroll's present Aston Martin role from his fashion-created fortune. The long profile independently explains both the material family starting advantage and the investment record that followed, then treats the road-car company and racing team as related but distinct holdings."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/lawrence-stroll/",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The existing URL is Forbes's dedicated exact-identity profile and matches Stroll's Michael Kors, Force India and Aston Martin history."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "fashion_retail",
+    "label": "Fashion & Retail",
+    "summary": "Stroll's fortune was created through fashion-brand investment and expansion, especially Tommy Hilfiger and Michael Kors. Forbes identifies the sale of his Michael Kors shares as the source of the bulk of his wealth.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes explicitly gives fashion investments as his source of wealth and documents the Michael Kors exit, while Aston Martin's official biography confirms his earlier fashion acquisitions and brand-building career."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S7",
+      "S8"
+    ]
+  },
+  "primary_industry": {
+    "classification": "automotive",
+    "label": "Automotive",
+    "summary": "Stroll is executive chairman of Aston Martin Lagonda and leads its strategy as a luxury road-car manufacturer. He also controls the separately structured Aston Martin Formula One operation and leads its business functions.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Aston Martin's current leadership page and official corporate material identify him as executive chairman, while the team's current statement identifies him as executive chairman and controlling shareholder of the racing operation."
+    },
+    "source_ids": [
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "Stroll built and monetised major fashion investments, but entered the trade through an established family licensing business. His father had already secured Canadian access to Pierre Cardin and Ralph Lauren, giving him valuable commercial foundations.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Forbes classifies him as self-made, while Aston Martin's official biography and independent reporting clearly document the family licence and industry platform from which his career began."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S8",
+      "S9"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "investor",
+    "label": "Investor",
+    "summary": "Stroll built his fortune by acquiring, expanding and selling stakes in fashion businesses with Silas Chou. His later acquisitions and capital commitments in Formula One and Aston Martin continue the same active-investor pattern.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes, Aston Martin and corporate records directly document his controlling fashion investments, consortium-led acquisitions, shareholdings and active chairmanships."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "biography": {
+    "plain_text": "Lawrence Stroll is a Canadian investor and executive chairman of Aston Martin. After entering fashion through his family's Canadian licensing business, he and Silas Chou built Sportswear Holdings, backing Tommy Hilfiger and Michael Kors. He later shifted his attention to automotive and motorsport, acquiring a Formula One team and leading Aston Martin's investment consortium.",
+    "html": "<p>Lawrence Stroll is a Canadian investor and executive chairman of Aston Martin. After entering fashion through his family's Canadian licensing business, he and Silas Chou built Sportswear Holdings, backing Tommy Hilfiger and Michael Kors. He later shifted his attention to automotive and motorsport, acquiring a Formula One team and leading Aston Martin's investment consortium.</p>\r\n",
+    "word_count": 54,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes and Aston Martin's official biography directly establish the family licensing entry point, Sportswear Holdings partnership, fashion investments, racing-team acquisition and Aston Martin chairmanship."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Lawrence Sheldon Stroll entered fashion through a family business that held the Canadian children's-wear licence for Pierre Cardin. He expanded from that established platform, taking Ralph Lauren into Europe and forming Sportswear Holdings with Silas Chou in 1989. Their investments helped build Tommy Hilfiger and later Michael Kors, whose flotation became the central source of Stroll's fortune.\n\nA longstanding interest in cars and racing then became his main business focus. Stroll led the consortium that acquired the Force India team, renamed Racing Point and later Aston Martin. He also led an investment in Aston Martin Lagonda and became its executive chairman in 2020. He now directs the road-car company's strategy while leading the business side of the associated Formula One operation.",
+    "html": "<p>Lawrence Sheldon Stroll entered fashion through a family business that held the Canadian children's-wear licence for Pierre Cardin. He expanded from that established platform, taking Ralph Lauren into Europe and forming Sportswear Holdings with Silas Chou in 1989. Their investments helped build Tommy Hilfiger and later Michael Kors, whose flotation became the central source of Stroll's fortune.</p>\r\n<p>A longstanding interest in cars and racing then became his main business focus. Stroll led the consortium that acquired the Force India team, renamed Racing Point and later Aston Martin. He also led an investment in Aston Martin Lagonda and became its executive chairman in 2020. He now directs the road-car company's strategy while leading the business side of the associated Formula One operation.</p>\r\n",
+    "word_count": 121,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Official Aston Martin material, Forbes and independent business reporting jointly establish the family licence, Ralph Lauren expansion, Sportswear Holdings investments, Michael Kors flotation and the later automotive and motorsport acquisitions."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S7",
+      "S8"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "place_of_birth",
+      "value": "Montreal",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Multiple exact-identity biographical sources identify Montreal as his birthplace or the city where he grew up, consistent with the existing Canadian birth country and full birth date."
+      },
+      "source_ids": [
+        "S8",
+        "S9",
+        "S10"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "existing_value": "Canadian businessman",
+      "value": "Executive chairman of Aston Martin",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Aston Martin's current leadership page directly identifies Lawrence Stroll as executive chairman, providing a more specific and durable title than the generic existing value."
+      },
+      "source_ids": [
+        "S4",
+        "S6"
+      ]
+    },
+    {
+      "field": "biography",
+      "existing_value": "<p>Lawrence Stroll is a Canadian billionaire businessman, fashion tycoon, and prominent motorsport figure who currently serves as the Executive Chairman of Aston Martin Lagonda and the owner of the Aston Martin Aramco Formula One Team. Stroll built his fortune by masterminding the global expansion and highly successful initial public offerings (IPOs) of major fashion brands like Tommy Hilfiger and Michael Kors.</p>\r\n",
+      "value": "<p>Lawrence Stroll is a Canadian investor and executive chairman of Aston Martin. After entering fashion through his family's Canadian licensing business, he and Silas Chou built Sportswear Holdings, backing Tommy Hilfiger and Michael Kors. He later shifted his attention to automotive and motorsport, acquiring a Formula One team and leading Aston Martin's investment consortium.</p>\r\n",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The replacement retains the verified career arc while adding the material family starting advantage, avoiding fluctuating wealth language and distinguishing fashion wealth creation from current automotive leadership."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S8"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.astonmartin.com/en/corporate/about-us/governance/leadership",
+      "verification": "Aston Martin's official current leadership page displays Lawrence Stroll by name and identifies him as executive chairman.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The official corporate leadership page directly profiles the exact person in his current role."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=2088",
+      "title": "Lawrence Stroll owner record",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Input identity and person ID",
+        "Canadian nationality and Swiss residence",
+        "Existing birth details",
+        "Existing Wikipedia and Forbes URLs",
+        "Existing biography baseline"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/profile/lawrence-stroll/",
+      "title": "Lawrence Stroll",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Exact Forbes profile",
+        "Fashion investments and self-made Forbes classifications",
+        "Michael Kors flotation and share-sale wealth",
+        "Force India acquisition",
+        "Aston Martin investment and executive chairmanship",
+        "Canadian citizenship and Geneva residence"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://media.astonmartin.com/lawrence-stroll-executive-chairman-aston-martin-lagonda/",
+      "title": "Lawrence Stroll - Executive Chairman, Aston Martin Lagonda",
+      "publisher": "Aston Martin",
+      "tier": 1,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Exact identity and executive chairmanship",
+        "Family acquisition of the Canadian Pierre Cardin children's-wear licence",
+        "Formation of Sportswear Holdings with Silas Chou",
+        "Tommy Hilfiger, Pepe Jeans and Michael Kors investments",
+        "Michael Kors flotation",
+        "Racing Point acquisition and Aston Martin rebranding"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.astonmartin.com/en/corporate/about-us/governance/leadership",
+      "title": "Leadership",
+      "publisher": "Aston Martin",
+      "tier": 1,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Current executive-chairman role",
+        "Exact identity for proposed company website"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.astonmartinf1.com/en-GB/news/announcement/aston-martin-aramco-announces-changes-to-leadership-structure",
+      "title": "Aston Martin Aramco announces changes to leadership structure ahead of the 2026 season",
+      "publisher": "Aston Martin Formula One Team",
+      "tier": 1,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Current Formula One executive-chairman role",
+        "Leadership of the team's business functions",
+        "Separate technical and team-principal responsibilities"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/11488166/officers",
+      "title": "Aston Martin Lagonda Global Holdings plc officers",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Exact legal name Lawrence Sheldon Strulovitch",
+        "July 1959 birth month and year",
+        "Canadian nationality",
+        "Swiss residence",
+        "Active Aston Martin directorship",
+        "Identity verification in November 2025"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.forbes.com/sites/edwindurgy/2011/12/07/hong-kong-investors-to-take-massive-profits-from-michael-kors-ipo/",
+      "title": "Hong Kong Investors To Take Massive Profits From Michael Kors IPO",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Sportswear Holdings partnership with Silas Chou",
+        "Controlling Michael Kors investment",
+        "Michael Kors flotation economics",
+        "Earlier Tommy Hilfiger expansion"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.theguardian.com/business/2020/jan/31/lawrence-stroll-f1-boss-fashion-tycoon-rescuing-aston-martin",
+      "title": "Lawrence Stroll: the F1 boss and fashion tycoon rescuing Aston Martin",
+      "publisher": "The Guardian",
+      "tier": 2,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Montreal upbringing",
+        "Father Leo Strulovitch's Canadian Pierre Cardin and Ralph Lauren business",
+        "Ralph Lauren expansion into Europe",
+        "Tommy Hilfiger and Michael Kors investments",
+        "Fashion-created fortune",
+        "Aston Martin investment consortium"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/who-is-lawrence-stroll-how-aston-martin-owner-became-a-billionaire/",
+      "title": "Who is Lawrence Stroll? How Aston Martin owner became a billionaire",
+      "publisher": "Motor Sport Magazine",
+      "tier": 2,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Montreal birthplace",
+        "Family fashion-import and licensing background",
+        "Early Pierre Cardin responsibility",
+        "Ralph Lauren expansion",
+        "Michael Kors share-sale wealth"
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://en.wikipedia.org/wiki/Lawrence_Stroll",
+      "title": "Lawrence Stroll",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Existing Wikipedia profile URL",
+        "Exact-identity cross-check",
+        "Montreal birthplace corroboration",
+        "Full birth date"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The official Aston Martin biography says Stroll's family acquired the Canadian Pierre Cardin children's-wear licence, while independent reporting identifies his father Leo as the established fashion importer who also brought Ralph Lauren to Canada. This is sufficient for an advantaged start but does not establish inherited ownership of Stroll's later fortune.",
+    "Aston Martin Lagonda, the listed road-car manufacturer, and the Aston Martin Formula One team are connected through Stroll's investment strategy and branding but remain separately structured businesses. The dossier does not collapse them into a single personal holding.",
+    "The input's last-name value appears to contain character-encoding corruption and Companies House currently records his legal surname as Strulovitch, while he is publicly known as Stroll. No last-name correction is proposed because the record's intended legal-name convention is unclear.",
+    "No reliable evidence of a secondary nationality was found. Companies House and Forbes identify him only as Canadian, so the blank was preserved rather than inferred.",
+    "No personal LinkedIn, Instagram, personal website, Facebook, Twitter, YouTube or TikTok account met the identity-verification threshold. Corporate accounts and posts mentioning him were not treated as personal profiles.",
+    "The existing Forbes and Wikipedia profiles remain unchanged. Only Aston Martin's official current leadership page is proposed as a missing company website.",
+    "The owner input contains vessel relationships, but neither biography uses them because they are unnecessary to explain his durable business identity.",
+    "Blank title, suffix, secondary residence, death, internal-note and unknown-name fields remain optional, inapplicable or system-managed rather than enrichment targets."
+  ],
+  "review": {
+    "status": "pending",
+    "notes": "Review should preserve the classification split: Fashion & Retail created the fortune; Automotive is the current primary industry; Investor is the relationship; and Self-made — advantaged start captures both Stroll's later execution and his family's valuable licensing platform."
+  }
+}

@@ -1,0 +1,435 @@
+{
+  "schema_version": 7,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1222,
+    "display_name": "Stanley Kroenke",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The source record's name, American nationality, birth date, residence country, existing Wikipedia profile and sports-owner biography match current Forbes, Bloomberg and official Kroenke Sports & Entertainment profiles for Enos Stanley 'Stan' Kroenke."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Stan Kroenke is an American billionaire real estate developer and sports owner who founded The Kroenke Group and Kroenke Sports & Entertainment.",
+    "defining_work": "He created his first fortune through shopping centres and other property, then assembled an international portfolio of professional teams, venues and sports-media businesses.",
+    "formative_context": "Kroenke grew up working long days in his father's rural Missouri lumberyard and hardware business. His later marriage to Walmart co-founder Bud Walton's daughter Ann supplied commercially valuable connections, while his fortune remained separate from her inheritance.",
+    "decisive_moment": "Success in real estate enabled Kroenke to begin buying professional sports franchises and to combine team ownership with venue and property development.",
+    "enduring_dimensions": [
+      "Continued ownership of commercial real estate through The Kroenke Group",
+      "An integrated sports model spanning teams, venues and media",
+      "Large-scale property development around major sporting venues"
+    ],
+    "character_detail": "While at university, Kroenke borrowed $1,500 from his father at interest to buy into a clothing shop after supporting his studies through several jobs.",
+    "opening_options": [
+      {
+        "mode": "institution_or_asset",
+        "angle": "Use the stadium-and-district development to show how Kroenke combines sport with property ownership."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Use his early work in the family lumberyard and first financed retail stake to introduce his appetite for ownership."
+      },
+      {
+        "mode": "present_identity",
+        "angle": "Open with his dual identity as a real estate developer and international sports owner."
+      }
+    ],
+    "excluded_transient_context": [
+      "Current vessel ownership, vessel names, specifications and LOA ranking",
+      "Current net worth, wealth-list position and annual franchise valuations",
+      "Current acreage and individual property values",
+      "Short-term team results, league standings and transfer activity",
+      "Controversies unrelated to the durable business story",
+      "Source publishers, confidence language and classification deliberation"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "institution_then_person",
+    "calibration_archetypes": [
+      "founder_operator",
+      "acquirer_consolidator"
+    ],
+    "notes": "The pair shares only Kroenke's real-estate-and-sports identity. The short alone names his companies and explains the Walmart-linked advantage; the long omits those points to develop his integrated stadium model, rural lumberyard work, first financed retail stake and progression into team acquisition."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/stanley-kroenke/",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The current dedicated Forbes profile matches Kroenke's name, age, United States citizenship, Texas residence, real-estate holdings, sports portfolio, education and marriage to Ann Walton Kroenke."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "Kroenke created his first principal fortune by developing and owning shopping centres, warehouses, apartments and other commercial property through partnerships that evolved into The Kroenke Group.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Current Forbes and Bloomberg profiles identify real estate as the original fortune source, while the official KSE biography and Horatio Alger profile document his property partnerships and private development company."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "primary_industry": {
+    "classification": "sports",
+    "label": "Sports",
+    "summary": "Professional sports teams and their related venues now form the largest identifiable part of Kroenke's private holdings, led by the Los Angeles Rams and complemented by major basketball, ice-hockey and football clubs.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Bloomberg identifies the Los Angeles Rams as his largest asset and values several other franchises among his principal holdings; Forbes describes the bulk of his wealth as tied to the sports portfolio, corroborated by the official KSE profile."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S6"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "Kroenke built and retained a fortune separate from his wife's inheritance, but his marriage into the Walton family and subsequent Walmart-linked property relationships supplied a material commercial platform for his real-estate growth.",
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Forbes explicitly separates his fortune from Ann Walton Kroenke's inheritance while describing how the marriage and Walmart-linked development relationships accelerated his career; Bloomberg corroborates Walmart's continuing importance as a client."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S5",
+      "S6"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Kroenke founded the property and sports holding companies through which he owns and directs his principal real-estate, team, venue and media interests.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Bloomberg identifies him as founder of Kroenke Sports & Entertainment, while official and award profiles identify him as owner and chairman of KSE and The Kroenke Group."
+    },
+    "source_ids": [
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "biography": {
+    "plain_text": "Stan Kroenke is an American billionaire real estate developer and sports owner, founder of The Kroenke Group and Kroenke Sports & Entertainment. His property career benefited from commercial ties to Walmart after he married co-founder Bud Walton's daughter Ann. He later used his separately owned fortune to assemble professional teams, venues and media businesses.",
+    "html": "<p>Stan Kroenke is an American billionaire real estate developer and sports owner, founder of The Kroenke Group and Kroenke Sports &amp; Entertainment. His property career benefited from commercial ties to Walmart after he married co-founder Bud Walton's daughter Ann. He later used his separately owned fortune to assemble professional teams, venues and media businesses.</p>\r\n",
+    "word_count": 53,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Forbes, Bloomberg, the official KSE biography and the Horatio Alger profile support the identity, founder roles, real-estate origin, Walmart-linked advantage, separate fortune and subsequent sports expansion."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Building SoFi Stadium around the relocated Los Angeles Rams shows how Stan Kroenke combines professional sport with property development. The privately financed venue anchors a wider district of shops, homes, offices and hotels, extending a model in which his holding company owns teams, arenas and media outlets.\n\nThat appetite for ownership developed early in rural Missouri. Kroenke worked long summer days in his father's lumberyard, kept its books and, while at university, borrowed $1,500 from his father at interest to buy into a clothing shop. After building real estate partnerships, he began acquiring teams and assembled a portfolio spanning American football, basketball, ice hockey and English football.",
+    "html": "<p>Building SoFi Stadium around the relocated Los Angeles Rams shows how Stan Kroenke combines professional sport with property development. The privately financed venue anchors a wider district of shops, homes, offices and hotels, extending a model in which his holding company owns teams, arenas and media outlets.</p>\r\n<p>That appetite for ownership developed early in rural Missouri. Kroenke worked long summer days in his father's lumberyard, kept its books and, while at university, borrowed $1,500 from his father at interest to buy into a clothing shop. After building real estate partnerships, he began acquiring teams and assembled a portfolio spanning American football, basketball, ice hockey and English football.</p>\r\n",
+    "word_count": 108,
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The Horatio Alger profile directly supports the lumberyard work, bookkeeping, university retail investment, loan terms and property-to-sports progression; Forbes and official KSE sources support the stadium district and integrated team, venue and media model."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "known_for_title",
+      "value": "Founder and chairman of Kroenke Sports & Entertainment",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Bloomberg identifies Kroenke as KSE's founder, and the company's official executive profile identifies him as its owner and chairman."
+      },
+      "source_ids": [
+        "S4",
+        "S6"
+      ]
+    },
+    {
+      "action": "correct_existing",
+      "field": "biography",
+      "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Stan_Kroenke\">Enos Stanley Kroenke </a>is a millionaire businessman from the United States. He is the owner of <a href=\"https://en.wikipedia.org/wiki/Kroenke_Sports_%26_Entertainment\">Kroenke Sports &amp; Entertainment</a>, which owns<a href=\"https://en.wikipedia.org/wiki/Arsenal_F.C.\"> Arsenal F.C.</a> of the Premier League and Arsenal W.F.C. of the WSL, the Los Angeles Rams of the NFL, the Denver Nuggets of the NBA, the Colorado Avalanche of the NHL, the Colorado Rapids of Major League Soccer, the Colorado Mammoth of the National Lacrosse League, the Los Angeles Gladiators of the Overwatch League, and the newly formed Los Angeles Guerrillas of&nbsp;the Call of Duty League.</p>\r\n",
+      "value": "<p>Stan Kroenke is an American billionaire real estate developer and sports owner, founder of The Kroenke Group and Kroenke Sports &amp; Entertainment. His property career benefited from commercial ties to Walmart after he married co-founder Bud Walton's daughter Ann. He later used his separately owned fortune to assemble professional teams, venues and media businesses.</p>\r\n",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Forbes, Bloomberg, the official KSE biography and the Horatio Alger profile support the identity, founder roles, real-estate origin, Walmart-linked advantage, separate fortune and subsequent sports expansion."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://www.forbes.com/profile/stanley-kroenke/",
+      "verification": "The dedicated current Forbes profile matches the source record's name, birth date, nationality, residence country, education and sports-and-real-estate business identity; type ID 11 is copied from the owner input lookup.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The Forbes profile is an exact multi-factor identity match."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.kroenkeentertainment.com/executive-team/e-stanley-kroenke/",
+      "verification": "The official Kroenke Sports & Entertainment executive page identifies E. Stanley Kroenke as owner and chairman and matches his teams, property company and University of Missouri education; type ID 14 is copied from the owner input lookup.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "An official company profile directly identifies Kroenke and his leadership relationship to KSE."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1222",
+      "title": "Stanley Kroenke owner record, person ID 1222",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Exact source-record name and person ID",
+        "American nationality, United States residence, gender and birth date as source-record attributes",
+        "Existing Wikipedia link and biography",
+        "Blank known-for title, middle name, secondary nationality and birthplace",
+        "Absence of other social profiles",
+        "Vessel relationships used solely as identity-resolution context"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/profile/stanley-kroenke/",
+      "title": "Stanley Kroenke",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Exact identity and dedicated Forbes profile",
+        "American citizenship and Texas residence",
+        "Billionaire status and self-made designation",
+        "Real estate and sports as wealth sources",
+        "Real-estate holdings and international sports portfolio",
+        "Marriage to Ann Walton Kroenke",
+        "University of Missouri education"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.forbes.com/sites/brettknight/2022/02/13/stan-kroenke-just-won-a-super-bowl-6-years-after-moving-the-rams-to-la-heres-the-billionaires-story/",
+      "title": "Stan Kroenke Just Won A Super Bowl, 6 Years After Moving The Rams To LA. Here's The Billionaire's Story",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Humble upbringing in central Missouri",
+        "Marriage to Ann Walton as a career advantage",
+        "Walmart-linked shopping-centre development",
+        "Kroenke's fortune as separate from his wife's inheritance",
+        "Real estate as the first fortune source",
+        "Sports assets as the largest component of his later wealth",
+        "Privately financed SoFi Stadium and professional-team portfolio"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.kroenkeentertainment.com/executive-team/e-stanley-kroenke/",
+      "title": "E. Stanley Kroenke",
+      "publisher": "Kroenke Sports & Entertainment",
+      "tier": 1,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Official E. Stanley Kroenke identity",
+        "Owner and chairman role at Kroenke Sports & Entertainment",
+        "Ownership of teams, venues and sports-media businesses",
+        "Chairman and owner role at The Kroenke Group",
+        "Real-estate development history",
+        "University of Missouri education"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://horatioalger.org/members/detail/stan-kroenke/",
+      "title": "Stan Kroenke",
+      "publisher": "Horatio Alger Association",
+      "tier": 1,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Full name Enos Stanley Kroenke",
+        "Rural Missouri upbringing and work in his father's lumberyard and hardware business",
+        "Academic scholarship, university jobs and undergraduate retail investment",
+        "$1,500 interest-bearing loan from his father for the clothing-shop stake",
+        "Marriage to Ann Walton and Walton-family context",
+        "Property partnerships evolving into The Kroenke Group",
+        "Property success enabling professional-team ownership",
+        "SoFi Stadium and surrounding mixed-use development"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.bloomberg.com/billionaires/profiles/enos-s-kroenke/",
+      "title": "Bloomberg Billionaires Index: Stan Kroenke",
+      "publisher": "Bloomberg",
+      "tier": 2,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Exact identity and full-name initial",
+        "Founder role at Kroenke Sports & Entertainment",
+        "Los Angeles Rams as largest current asset",
+        "Current sports, commercial-property and ranch holdings",
+        "Walmart-linked real-estate career and continuing client relationship",
+        "Creation of his namesake real-estate business",
+        "Professional-team acquisition history"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Given name storage",
+      "detail": "Strong sources give the full name as Enos Stanley Kroenke and the public name as Stan Kroenke, while the source record stores Stanley as the first name. No name-field correction is proposed because converting the current field structure would require coordinated changes beyond a safe missing-field fill."
+    },
+    {
+      "topic": "Place of birth",
+      "detail": "Public sources differ between Columbia, Cole Camp and a rural community near Mora, Missouri. The source record's blank place-of-birth field is therefore left unchanged."
+    },
+    {
+      "topic": "Primary industry",
+      "detail": "Kroenke retains substantial real-estate and land holdings, but current valuation evidence identifies the Rams as his largest asset and sports as the largest aggregate component of his private holdings."
+    },
+    {
+      "topic": "Personal social profiles",
+      "detail": "Focused searches found no identity-verified personal LinkedIn, Instagram, Facebook, X, YouTube, TikTok or personal website. Company and team accounts were not substituted for personal profiles."
+    },
+    {
+      "topic": "Secondary nationality",
+      "detail": "No reliable evidence established a second citizenship or nationality."
+    }
+  ],
+  "review": {
+    "status": "pending",
+    "notes": "Review the biography replacement, Real Estate-to-Sports industry split and Self-made — advantaged start classification. The proposed Forbes and company links are verified; no personal social account is proposed."
+  }
+}

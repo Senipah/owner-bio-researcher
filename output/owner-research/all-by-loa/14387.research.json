@@ -1,0 +1,220 @@
+{
+  "schema_version": 7,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 14387,
+    "display_name": "Unknown Iranian",
+    "identity_confidence": {
+      "score": 5,
+      "band": "insufficient",
+      "reason": "The record contains no personal name, employer, occupation, nationality value, biography, image or social profile. Its display name is explicitly a nationality-based placeholder, and exact public searches for the literal phrase produced no reliable named-person match."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "nationality",
+      "secondary_nationality",
+      "main_residence_country",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "nationality",
+      "secondary_nationality",
+      "main_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This record is an unresolved nationality-based placeholder, not an identified person. It supplies no personal name, employer, occupation, biography, image, social profile, nationality field or biographical identifiers. Exact public searches for the literal label returned only generic uses of the phrase and no defensible person match, so biography, personal enrichment and wealth classifications are withheld.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The placeholder status follows directly from the absence of personal identifiers in the source record and the failure of exact public searches to identify a natural person."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Exact placeholder and profile searches found no dedicated Forbes profile. A record without a personal name cannot be matched defensibly to any Forbes person page."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No wealth-creation industry can be assigned without an identified person, occupation, employer or independently documented wealth-producing asset.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The placeholder label supplies no evidence about the sector in which an unidentified person's wealth was created."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No current primary industry can be assigned to an unresolved placeholder with no business, investment or professional context.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The source record contains no identifiable person, employer, role or business holding from which a current industry could be established."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No evidence establishes whether the unidentified person's position arose through self-made activity, inheritance, transfer or another mechanism.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Assigning a wealth origin without a resolved identity or documented business history would be speculation."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No reliable evidence establishes whether the unidentified person is a founder, operator, investor, heir, beneficiary or family-office principal.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The placeholder record contains no wealth-producing enterprise or asset relationship from which a role could be determined."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=14387",
+      "title": "Unknown Iranian owner record, person ID 14387",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-08-03",
+      "supports": [
+        "Exact placeholder display name and person ID",
+        "Unknown and Iranian stored as pseudo-person name fields",
+        "Blank nationality, employer, occupation and biographical fields",
+        "Absence of biography, image and social profiles"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Identity",
+      "detail": "No personal name or independently matching biographical identifier is present. The display name is explicitly a nationality-based placeholder and cannot identify one natural person."
+    },
+    {
+      "topic": "Nationality metadata",
+      "detail": "Although the display label says Iranian, the structured nationality and birth-country fields are blank. The label alone is not enough to propose nationality, birth country, residence or identity."
+    },
+    {
+      "topic": "Public search",
+      "detail": "Exact searches for the literal placeholder produced generic uses of the phrase and no named person connected to this record. Unrelated Iranian businesspeople are not retained as candidates."
+    },
+    {
+      "topic": "Forbes",
+      "detail": "No dedicated Forbes profile applies because the source record contains no personal name. Forbes results for named Iranian individuals cannot be matched to this placeholder."
+    },
+    {
+      "topic": "Personal enrichment",
+      "detail": "Biography, personal details, social profiles and non-unknown wealth classifications remain intentionally empty until direct evidence establishes a person identity above 85 confidence."
+    },
+    {
+      "topic": "Excluded material",
+      "detail": "Politics, sanctions, allegations, legal matters, controversy and vessel-specific research were excluded and played no role in the unresolved outcome."
+    }
+  ],
+  "review": {
+    "status": "pending",
+    "notes": "Keep this record on the unresolved-placeholder path. Require a reliable public source naming a person and independently connecting that person to this record before any biography, personal field, social link or non-unknown wealth classification is proposed. Nothing has been compiled, approved or applied."
+  }
+}

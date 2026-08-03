@@ -1,0 +1,222 @@
+{
+  "schema_version": 7,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 3277,
+    "display_name": "Unknown Chinese",
+    "identity_confidence": {
+      "score": 5,
+      "band": "insufficient",
+      "reason": "The record contains no personal name, nationality selection, employer, occupation, biography, identifying image or social profile. 'Unknown Chinese' is a descriptor stored across pseudo-person name fields and cannot identify one natural person; exact public searches returned only unrelated uses of the phrase."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "nationality",
+      "secondary_nationality",
+      "main_residence_country",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "nationality",
+      "secondary_nationality",
+      "main_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This owner record is an unresolved placeholder, not an identified person. The source supplies only the pseudo-name 'Unknown Chinese'; even Chinese nationality is not selected in the record. With no independent name, business, occupation or personal identifier, public evidence cannot establish an identity, wealth source or life history, so biography and enrichment are withheld.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Placeholder treatment follows directly from the absence of a natural-person name and every independent biographical identifier in the immutable source record, together with the lack of a unique match in exact public searches."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes was checked through an exact-placeholder profile search. Results used 'unknown Chinese' descriptively within unrelated articles and did not produce a dedicated person profile that could match this record."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No wealth-creation industry can be assigned without an identified person, employer, occupation or documented wealth-producing business.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The pseudo-name and blank personal fields contain no evidence of an industry or commercial activity."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No current primary private-wealth industry can be assigned to an unresolved placeholder with no business context.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The source record supplies no occupation, employer, company holding or other current economic identifier."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No evidence establishes whether the unidentified person's position arose through self-made activity, inheritance, transfer or another mechanism.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Assigning a wealth origin without a resolved identity or documented asset history would be speculation."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No reliable evidence establishes whether the unidentified person is a founder, operator, investor, heir, beneficiary or other wealth principal.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "No named person or wealth-producing enterprise exists in the non-vessel source fields from which a relationship could be classified."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=3277",
+      "title": "Unknown Chinese owner record, person ID 3277",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-08-03",
+      "supports": [
+        "Exact placeholder display name and person ID",
+        "Unknown and Chinese stored as pseudo-person first and last name fields",
+        "Blank nationality and residence fields",
+        "Unknown mortality status",
+        "Absence of employer, occupation, biography, identifying image and social profiles",
+        "Absence of a non-vessel identity anchor"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Identity",
+      "detail": "No personal name or independently matching biographical identifier is present. The display name is explicitly a descriptor-based placeholder."
+    },
+    {
+      "topic": "Chinese descriptor",
+      "detail": "'Chinese' appears in the pseudo-surname field, while the structured nationality and birth-country fields are blank. It cannot establish nationality, ethnicity, residence or any one individual."
+    },
+    {
+      "topic": "Public search",
+      "detail": "Exact searches for the placeholder phrase returned unrelated articles using 'unknown Chinese' descriptively. None shared a unique name, employer or other identifier with person ID 3277."
+    },
+    {
+      "topic": "Forbes",
+      "detail": "No dedicated Forbes profile applies because the source record has no natural-person name. Unrelated named Chinese businesspeople cannot be treated as candidates."
+    },
+    {
+      "topic": "Personal enrichment",
+      "detail": "Biography, personal details, social profiles and non-unknown wealth classifications remain intentionally empty until direct public evidence establishes a person identity above the 85-point acceptance gate."
+    },
+    {
+      "topic": "Excluded material",
+      "detail": "Politics, allegations, legal matters, controversy and vessel research were excluded from the identity-resolution attempt and dossier."
+    }
+  ],
+  "review": {
+    "status": "pending",
+    "notes": "Keep this record on the unresolved-placeholder path. Require a reliable public source naming the person and an independent non-vessel identifier connecting that person to person ID 3277 before any biography, personal field, social link or non-unknown wealth classification is proposed."
+  }
+}

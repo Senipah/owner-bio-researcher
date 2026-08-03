@@ -1,0 +1,231 @@
+{
+  "schema_version": 7,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 10407,
+    "display_name": "Unknown Ukrainian",
+    "identity_confidence": {
+      "score": 10,
+      "band": "insufficient",
+      "reason": "The record contains no personal name, employer, occupation, biography, image or social profile. Its Ukrainian label and the associated vessel are not sufficient to resolve a natural-person identity, and public searches produced no reliable named-person match."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "main_residence_country",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "main_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This owner record is an unresolved placeholder, not an identified person. The source provides only a Ukrainian nationality label and a vessel relationship, while the builder's public record identifies the vessel but not its owner. Those signals cannot establish a name, occupation, wealth source or personal history, so biography and enrichment are withheld.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The placeholder status follows directly from the absence of personal identifiers in the source record and the absence of a named owner in the exact builder record or focused public searches."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes was checked first through exact-placeholder and profile searches. No dedicated profile can match a record that contains no personal name, and no Forbes result resolved the owner identity."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No wealth-creation industry can be assigned without an identified person or independently documented wealth-producing asset.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Nationality and vessel association provide no evidence about the sector in which an unidentified person's wealth was created."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No current primary private-wealth industry can be assigned to an unresolved placeholder with no occupation, employer or business holding.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The source record has no business context, and the exact public vessel record does not identify an owner or their industry."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No evidence establishes whether the unidentified owner's position arose through self-made activity, inheritance, transfer or another mechanism.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Assigning a wealth origin without a resolved identity or documented asset history would be pure inference."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No reliable evidence establishes whether the unidentified owner is a founder, operator, investor, heir, beneficiary or family-office principal.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "A vessel relationship alone cannot establish a person's relationship to a wealth-producing enterprise or inherited holding."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=10407",
+      "title": "Unknown Ukrainian owner record, person ID 10407",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Exact placeholder display name and person ID",
+        "Unknown and Ukrainian stored as pseudo-person name fields",
+        "Ukrainian nationality and Ukraine birth-country placeholders",
+        "Absence of employer, occupation, biography, image and social profiles",
+        "Vessel relationship retained only as identity-resolution context"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://feadship.nl/fleet/sakura",
+      "title": "Sakura",
+      "publisher": "Feadship",
+      "tier": 1,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Official builder record for the exact 82.15-metre Sakura, hull 712",
+        "2024 build year and matching vessel specifications",
+        "No public owner name on the builder's fleet page"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Identity",
+      "detail": "No personal name or independently matching biographical identifier is present. The display name is explicitly a nationality-based placeholder."
+    },
+    {
+      "topic": "Nationality metadata",
+      "detail": "The Ukrainian nationality and Ukraine birth-country values may describe the unknown person, but they do not identify one individual and cannot support gender, residence, occupation or biography."
+    },
+    {
+      "topic": "Vessel relationship",
+      "detail": "The exact Feadship record confirms Sakura's existence and specifications but does not name its owner. The vessel association is therefore insufficient to resolve person ID 10407."
+    },
+    {
+      "topic": "Forbes",
+      "detail": "No dedicated Forbes profile applies because the source record has no personal name. Forbes results about unrelated Ukrainians cannot be treated as candidates."
+    },
+    {
+      "topic": "Personal enrichment",
+      "detail": "Biography, personal details, social profiles and non-unknown wealth classifications remain intentionally empty until direct evidence establishes a person identity above 85 confidence."
+    }
+  ],
+  "review": {
+    "status": "pending",
+    "notes": "Keep this record on the unresolved-placeholder path. Require a reliable source naming the person and independently connecting that person to the record before any biography, personal field, social link or wealth classification is proposed. No research has been compiled or applied."
+  }
+}

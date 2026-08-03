@@ -1,0 +1,568 @@
+{
+  "schema_version": 7,
+  "record_type": "person",
+  "owner": {
+    "person_id": 2532,
+    "display_name": "Mr Hans Peter Strebel",
+    "identity_confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "The source record's exact name, Swiss nationality and portrait align with Dr Hans-Peter Strebel's Swiss Biotech and EVZ profiles. The portrait is an important discriminator because Swiss registry results contain several exact-name profiles; the score remains below certainty because the source record has no employer, birth date or other direct business anchor."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "limited",
+  "biography_brief": {
+    "durable_identity": "Hans-Peter Strebel is a Swiss pharmaceutical entrepreneur who created his fortune through Fumapharm and later became an owner and strategic leader in elite sport.",
+    "defining_work": "He co-founded Fumapharm and helped turn dimethyl-fumarate research into approved therapies for psoriasis and relapsing multiple sclerosis before the company's sale to Biogen.",
+    "formative_context": "Scientific training and an inherited family pharmacy gave him an established professional platform, but the wealth-producing pharmaceutical company was a separate venture he founded with three scientists.",
+    "decisive_moment": "Biogen's 2006 acquisition of Fumapharm converted the drug-development programme into the proceeds that later supported his EVZ and OYM commitments.",
+    "enduring_dimensions": [
+      "Fumapharm co-founder and pharmaceutical researcher",
+      "EVZ chairman and majority shareholder",
+      "Founder of OYM and the separate OYM sports foundation"
+    ],
+    "character_detail": "His documented career joins patient drug development with a later effort to apply sports science to elite training.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Introduce Strebel as a pharmaceutical entrepreneur who redirected part of his fortune into elite sport."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Open with Fumapharm's sale to Biogen and the shift from drug development to sports ownership."
+      },
+      {
+        "mode": "defining_achievement",
+        "angle": "Trace the path from dimethyl-fumarate research to the science-led OYM training centre."
+      }
+    ],
+    "excluded_transient_context": [
+      "Current and historical yacht ownership, vessel names and specifications",
+      "Private-family trivia beyond the inherited pharmacy needed to classify wealth origin",
+      "Allegations, legal matters and controversy",
+      "Net-worth estimates and wealth rankings",
+      "Unrelated exact-name Swiss business profiles"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "founder_operator",
+      "investor_philanthropist"
+    ],
+    "notes": "The short biography distinguishes the pharmaceutical source of wealth from later sports ownership. The long version adds the inherited pharmacy as context without misclassifying the fortune as inherited, and separates EVZ equity and governance from OYM's institutional and foundation roles."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Exact-name searches for Hans-Peter Strebel and Hans Peter Strebel returned no dedicated Forbes person profile; unrelated search results and non-Forbes profiles were rejected."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "healthcare",
+    "label": "Healthcare",
+    "summary": "Strebel created his fortune through Fumapharm's research and development of dimethyl-fumarate therapies and the pharmaceutical company's later sale to Biogen.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Swiss Biotech documents his founding role, Fumapharm's drug-development work and Biogen's acquisition, while established business reporting independently identifies the multiple-sclerosis medication as the source of his wealth."
+    },
+    "source_ids": [
+      "S2",
+      "S6",
+      "S7"
+    ]
+  },
+  "primary_industry": {
+    "classification": "sports",
+    "label": "Sports",
+    "summary": "His principal identifiable current private interests are EV Zug, where he is chairman and majority shareholder, and OYM, the sports-performance centre he founded and owns.",
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Current EVZ materials document his chairmanship and majority shareholding, while EVZ and OYM materials identify him as OYM's founder and owner; Fumapharm was sold in 2006."
+    },
+    "source_ids": [
+      "S4",
+      "S5",
+      "S8"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "Strebel inherited and operated his father's pharmacy, then built the separate Fumapharm venture with three scientists and created the much larger pharmaceutical fortune through research and a company sale.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The family pharmacy provided an inherited operating platform and professional advantage, but Swiss Biotech and the regional business forum separately document Fumapharm as the company Strebel founded with three scientists and business reporting ties his wealth to its drug programme."
+    },
+    "source_ids": [
+      "S2",
+      "S6",
+      "S7"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "investor",
+    "label": "Investor",
+    "summary": "After selling Fumapharm, Strebel invested part of the pharmaceutical proceeds in elite sport, combining EVZ majority ownership and chairmanship with ownership and founding of OYM.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Swiss Biotech explicitly describes the reinvestment of company profits in his sports club and athlete centre, and current EVZ materials document both a majority shareholding and strategic board leadership rather than day-to-day team management."
+    },
+    "source_ids": [
+      "S2",
+      "S4",
+      "S5",
+      "S8"
+    ]
+  },
+  "biography": {
+    "plain_text": "Hans-Peter Strebel is a Swiss pharmaceutical entrepreneur and sports investor. He co-founded Fumapharm, whose dimethyl-fumarate research led to therapies for psoriasis and multiple sclerosis before Biogen acquired the company. He later became chairman and majority shareholder of EV Zug and founded OYM, combining sports ownership with a science-led training centre and foundation.",
+    "html": "<p>Hans-Peter Strebel is a Swiss pharmaceutical entrepreneur and sports investor. He co-founded Fumapharm, whose dimethyl-fumarate research led to therapies for psoriasis and multiple sclerosis before Biogen acquired the company. He later became chairman and majority shareholder of EV Zug and founded OYM, combining sports ownership with a science-led training centre and foundation.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The pharmaceutical venture, drug-development outcome, Biogen acquisition, EVZ majority ownership and OYM founding role are corroborated by Swiss Biotech, EVZ, OYM and established business reporting."
+    },
+    "source_ids": [
+      "S2",
+      "S4",
+      "S5",
+      "S7",
+      "S8"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Scientific training at ETH Zurich and the University of Geneva led Hans-Peter Strebel into pharmacy and drug development. After taking over his father's pharmacy, he founded Fumapharm with three other scientists in 1983. Their work on dimethyl fumarate first produced a psoriasis treatment and later supported an oral therapy for relapsing multiple sclerosis. Biogen acquired Fumapharm in 2006 and continued the programme that became Tecfidera.\n\nElite sport became his principal public business focus. He joined the EV Zug board, became club president and now chairs the EVZ group while holding a majority shareholding. He also created OYM, a high-performance centre integrating coaching, medicine, nutrition and performance research, and established the OYM sports foundation. The EVZ role is documented ownership and governance; the foundation is a separate philanthropic institution.",
+    "html": "<p>Scientific training at ETH Zurich and the University of Geneva led Hans-Peter Strebel into pharmacy and drug development. After taking over his father's pharmacy, he founded Fumapharm with three other scientists in 1983. Their work on dimethyl fumarate first produced a psoriasis treatment and later supported an oral therapy for relapsing multiple sclerosis. Biogen acquired Fumapharm in 2006 and continued the programme that became Tecfidera.</p>\r\n<p>Elite sport became his principal public business focus. He joined the EV Zug board, became club president and now chairs the EVZ group while holding a majority shareholding. He also created OYM, a high-performance centre integrating coaching, medicine, nutrition and performance research, and established the OYM sports foundation. The EVZ role is documented ownership and governance; the foundation is a separate philanthropic institution.</p>\r\n",
+    "word_count": 128,
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Authoritative education, research and corporate materials support the chronology from scientific training and Fumapharm through the Biogen acquisition to EVZ and OYM, with current first-party evidence separating equity ownership from foundation activity."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S8"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "display_name",
+      "value": "Hans-Peter Strebel",
+      "action": "correct_existing",
+      "existing_value": "Mr Hans Peter Strebel",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The courtesy title is already stored separately as Mr, while Swiss Biotech, ETH Zurich and EVZ consistently style the personal name Hans-Peter Strebel with a hyphen."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "field": "first_name",
+      "value": "Hans-Peter",
+      "action": "correct_existing",
+      "existing_value": "Hans Peter",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Authoritative Swiss Biotech, ETH Zurich and EVZ records consistently use Hans-Peter as the hyphenated given name."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "field": "sort_name",
+      "value": "Hans-Peter Strebel",
+      "action": "correct_existing",
+      "existing_value": "Hans Peter Strebel",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The corrected sort value follows the strongly verified hyphenated given name and existing surname."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "sort_first_name",
+      "value": "Hans-Peter Strebel",
+      "action": "correct_existing",
+      "existing_value": "Hans Peter Strebel",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The corrected first-name sort value follows the strongly verified hyphenated given name and existing surname."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "sort_last_name",
+      "value": "Strebel Hans-Peter",
+      "action": "correct_existing",
+      "existing_value": "Strebel Hans Peter",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The corrected surname-first sort value follows the strongly verified hyphenated given name and existing surname."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Fumapharm co-founder and EV Zug chairman",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Swiss Biotech documents Strebel's Fumapharm founding role, and current EVZ materials identify him as chairman of the EVZ group."
+      },
+      "source_ids": [
+        "S2",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "11",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "ETH Zurich's doctoral record gives Hans-Peter Strebel's birth date as 11 January 1949."
+      },
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "January",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "ETH Zurich's doctoral record gives Hans-Peter Strebel's birth date as 11 January 1949."
+      },
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1949",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "ETH Zurich's doctoral record gives 11 January 1949, consistent with established profiles reporting age 75 in 2024."
+      },
+      "source_ids": [
+        "S3",
+        "S7"
+      ]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Hans-Peter Strebel is a Swiss pharmaceutical entrepreneur and sports investor. He co-founded Fumapharm, whose dimethyl-fumarate research led to therapies for psoriasis and multiple sclerosis before Biogen acquired the company. He later became chairman and majority shareholder of EV Zug and founded OYM, combining sports ownership with a science-led training centre and foundation.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "The biography uses only the well-corroborated pharmaceutical venture, acquisition, current sports ownership and OYM founding role."
+      },
+      "source_ids": [
+        "S2",
+        "S4",
+        "S5",
+        "S7",
+        "S8"
+      ]
+    }
+  ],
+  "proposed_socials": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=2532",
+      "title": "Mr Hans Peter Strebel owner record, person ID 2532",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-08-03",
+      "supports": [
+        "Exact source-record name and person ID",
+        "Separate Mr title and unhyphenated Hans Peter given-name field",
+        "Swiss nationality, Switzerland residence and Switzerland birth country",
+        "Source portrait used only for identity disambiguation",
+        "Blank biography and social profiles"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.swissbiotech.org/listing/dr-hans-peter-strebel/",
+      "title": "Dr Hans-Peter Strebel",
+      "publisher": "Swiss Biotech Association",
+      "tier": 1,
+      "accessed_at": "2026-08-03",
+      "supports": [
+        "Canonical Hans-Peter Strebel name",
+        "Fumapharm founding with three other scientists in 1983",
+        "Development of Tecfidera for relapsing multiple sclerosis",
+        "Pharmaceutical research as the source of documented business success"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.research-collection.ethz.ch/bitstreams/c2cd386a-a247-4600-8559-7a986a293e1b/download",
+      "title": "Hans-Peter Strebel doctoral dissertation record",
+      "publisher": "ETH Zurich Research Collection",
+      "tier": 1,
+      "accessed_at": "2026-08-03",
+      "supports": [
+        "Canonical hyphenated name",
+        "Birth date of 11 January 1949",
+        "Doctoral research at ETH Zurich",
+        "Origin from Beinwil in Freiamt, which is not treated as birthplace"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.evz.ch/en/our-evz/company/corporate-structure/",
+      "title": "EVZ corporate structure",
+      "publisher": "EVZ",
+      "tier": 1,
+      "accessed_at": "2026-08-03",
+      "supports": [
+        "Hans-Peter Strebel's chairmanship across the EVZ group",
+        "EVZ Holding AG as the parent company of EVZ enterprises",
+        "Current strategic governance in sport"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.evz.ch/en/news/medientyp/news/2026/07/the-evz-is-committed-to-clarity-dialogue-and-a-strong-future/",
+      "title": "EVZ is committed to clarity, dialogue and a strong future",
+      "publisher": "EVZ",
+      "tier": 1,
+      "accessed_at": "2026-08-03",
+      "supports": [
+        "Current chairman role",
+        "Hans-Peter Strebel's first-person confirmation that he holds a majority of EVZ shares",
+        "Distinction between equity ownership and board governance"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.ihz.ch/fileadmin/user_upload/Netzwerk-Anlaesse/Zentralschweizer_Wirtschaftsforum/2023/Programmheft_WiFo_2023_web.pdf",
+      "title": "Zentralschweizer Wirtschaftsforum 2023 programme",
+      "publisher": "Industrie- und Handelskammer Zentralschweiz",
+      "tier": 2,
+      "accessed_at": "2026-08-03",
+      "supports": [
+        "Studies at ETH Zurich and the University of Geneva",
+        "Inheritance of his father's Klosterapotheke in 1978",
+        "Fumapharm founding with three scientists in 1983",
+        "EVZ board, vice-president and president chronology",
+        "Creation of OYM"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.handelszeitung.ch/people/hans-peter-strebel",
+      "title": "Hans-Peter Strebel",
+      "publisher": "Handelszeitung / Bilanz",
+      "tier": 2,
+      "accessed_at": "2026-08-03",
+      "supports": [
+        "Wealth creation through development of a multiple-sclerosis medication",
+        "Healthcare and pharmaceutical wealth-creation industry",
+        "President and majority shareholder of EV Zug",
+        "OYM financing and sports focus",
+        "Age 75 in 2024, corroborating a 1949 birth year"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://cms.evz.ch/wp-content/uploads/2026/01/Eiszeit_Business_02_25-26_low.pdf",
+      "title": "Eiszeit Business 2025/26",
+      "publisher": "EVZ",
+      "tier": 1,
+      "accessed_at": "2026-08-03",
+      "supports": [
+        "Hans-Peter Strebel as OYM founder and owner",
+        "OYM as a current sports-performance interest",
+        "Ownership role distinct from the OYM sports foundation"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.moneyhouse.ch/fr/list/person/strebel-hans-peter",
+      "title": "Swiss register search for Hans Peter Strebel",
+      "publisher": "Moneyhouse",
+      "tier": 3,
+      "accessed_at": "2026-08-03",
+      "supports": [
+        "Multiple exact-name Hans Peter Strebel registry profiles in Switzerland",
+        "Namesake risk and the need for portrait and biographical disambiguation",
+        "Separation from construction and waste-management profiles"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Identity linkage",
+      "detail": "The source record has only the common Swiss name, nationality and portrait, with no employer or birth date. Its portrait is consistent with authoritative public images of the Fumapharm and EVZ principal, but several exact-name Swiss registry profiles exist. The dossier is therefore limited and identity confidence is 93 rather than certain."
+    },
+    {
+      "topic": "Wealth origin boundary",
+      "detail": "Strebel inherited his father's pharmacy, which provided an established professional and commercial platform. His much larger documented fortune arose from the separately founded Fumapharm drug-development venture, supporting Self-made, advantaged rather than Inherited."
+    },
+    {
+      "topic": "Sports roles",
+      "detail": "EVZ materials support majority share ownership and chairmanship. OYM materials describe him as founder and owner, while the OYM sports foundation is a separate philanthropic institution; the dossier does not merge foundation stewardship with personal equity."
+    },
+    {
+      "topic": "Birthplace",
+      "detail": "ETH Zurich records that Strebel was from Beinwil in Freiamt, and regional reporting connects him to the family pharmacy in Muri. Neither statement establishes a place of birth, so the field remains blank."
+    },
+    {
+      "topic": "Social profiles",
+      "detail": "No identity-verified personal LinkedIn, Instagram, Facebook, X, YouTube, TikTok or personal website was found. Organisational EVZ and OYM accounts were not misattributed to him personally."
+    },
+    {
+      "topic": "Forbes",
+      "detail": "Exact-name and Forbes profile searches found no dedicated Hans-Peter Strebel person profile."
+    },
+    {
+      "topic": "Excluded material",
+      "detail": "Yacht-specific research, vessel facts, private-family trivia beyond the inherited pharmacy, controversy, legal matters, wealth estimates and unrelated namesake profiles were excluded from the biography and classifications."
+    }
+  ],
+  "review": {
+    "status": "pending",
+    "notes": "Identity clears the 85-point update gate but retains limited status because several Swiss registry namesakes exist and the source record lacks business anchors. Healthcare / Sports / Self-made, advantaged / Investor classifications clear the gate. Review should preserve the distinction between the inherited pharmacy advantage, the separately founded Fumapharm wealth engine, EVZ majority ownership and the OYM sports foundation. Nothing has been compiled, approved or applied."
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "schema_version": 7,
+  "record_type": "institution",
+  "owner": {
+    "person_id": 902,
+    "display_name": "Turkmenistan Government",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The record's first and last name fields combine to form 'Turkmenistan Government', while the official Turkmenistan portal and United Nations country presence separately describe the Government of Turkmenistan as a collection of state institutions and agencies. This is an institutional placeholder, not a natural person or an alias for any officeholder."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "nationality",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "nationality",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "not_applicable",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "The source record names the Government of Turkmenistan, an institutional state body rather than a natural person. It must not be converted into a biography of any officeholder. Personal birth, nationality, gender, wealth, industry, relationship and social-profile fields are therefore unavailable, and no individual ownership inference is proposed.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The record name and authoritative institutional sources establish that this is a government placeholder. The note deliberately avoids identifying or profiling any current or former officeholder."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "forbes_profile": {
+    "status": "unavailable",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "A Forbes personal profile is not applicable because the source record denotes a government institution rather than a natural person. No officeholder is substituted for the record."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Personal wealth creation is not applicable to a government institution, and public or state assets cannot be treated as an individual's fortune.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Authoritative sources identify a government and its agencies, not a natural person with a private wealth-producing business. Unknown is therefore the required non-person classification."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "A personal primary industry is unavailable because this record represents a government institution rather than an individual economic actor.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The official portal describes state services and government agencies. Assigning one commercial industry would misclassify public institutional activity as a person's business."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No personal wealth origin can be assigned to an institutional government placeholder.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The record is not a natural person, so self-made, inherited, transferred and royal-person wealth-origin categories do not apply. State property is not personal wealth."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No personal relationship to wealth-producing assets can be established for a government institution.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Founder, operator, investor, heir and beneficiary classifications describe natural persons' relationships to private wealth. They are inapplicable to this institutional placeholder."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.turkmenistan.gov.tm/en/post/57052/electronic-state-services-turkmenistan",
+      "title": "Electronic state services of Turkmenistan",
+      "publisher": "Turkmenistan Golden Age",
+      "tier": 1,
+      "accessed_at": "2026-08-03",
+      "supports": [
+        "Official state-services portal identity",
+        "Government agencies as organizations and ministries",
+        "Institutional rather than personal nature of the record name"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://turkmenistan.un.org/en/about/about-the-un",
+      "title": "The United Nations in Turkmenistan",
+      "publisher": "United Nations",
+      "tier": 1,
+      "accessed_at": "2026-08-03",
+      "supports": [
+        "Turkmenistan as a United Nations member state",
+        "The Government of Turkmenistan as an institutional counterpart",
+        "Separation between the country, its government and individual representatives"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The owner system stores this institutional label in person-shaped first-name and last-name fields. That data shape does not convert the Government of Turkmenistan into a natural person.",
+    "No current or former officeholder is resolved as the subject, because doing so would replace the recorded institution with a different entity and risk assigning state-associated assets to an individual.",
+    "The populated birth-country and residence-country values are artifacts of a person-oriented schema when applied to this institutional record; the dossier makes no correction proposal because schema-v7 forbids personal-detail proposals for institutions.",
+    "Nationality, gender, birthplace, birth date, mortality, biography and personal social profiles are unavailable rather than missing research facts.",
+    "Public budgets, state property, government-controlled entities and national economic sectors are not treated as private assets, personal wealth or evidence for a wealth classification.",
+    "Politics, state activities beyond minimal identity evidence, controversies, allegations, legal matters, sanctions, private-family information and all vessel research were excluded."
+  ],
+  "review": {
+    "status": "pending",
+    "notes": "This dossier should remain an institutional not-applicable record. Review should not substitute an officeholder, add person-specific details or infer individual ownership from public-state property. Nothing has been compiled, approved or applied."
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "schema_version": 7,
+  "record_type": "institution",
+  "owner": {
+    "person_id": 903,
+    "display_name": "Iraq Government",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The source record literally names Iraq Government, stores Iraq and Government as pseudo-person name fields, and assigns Iraqi nationality and Iraq residence; official Iraqi portals and the constitution confirm that this denotes the public government of the Republic of Iraq, not a natural person."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "not_applicable",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This owner record represents the Government of Iraq, a public institution rather than a natural person. Person-specific biography, birth, gender, private-wealth and personal social-profile enrichment is therefore not applicable. Any assets associated with the record belong to the institutional data path and must not be attributed to an individual president, prime minister, minister or other officeholder.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The literal record name and pseudo-person fields align with Iraq's official government portal and constitutional description of the Republic's public governing institutions."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes was checked first through exact-name and profile searches. Results concerned Iraqi policy, officials or public affairs, but no dedicated profile exists for the Government of Iraq as a person or private-wealth subject."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "A sovereign government institution has no person-specific private fortune or wealth-creation industry to classify under this owner-research taxonomy.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The identity is institutional, so assigning a private wealth-creation sector would misclassify public state resources as personal wealth."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The Government of Iraq does not have a person-specific principal private wealth-producing industry applicable to this dossier.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Government ministries, activities and state assets cannot be recast as a natural person's private business sector."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Private wealth origin is not applicable to a sovereign government and cannot be inferred from state ownership, public finance or office-held resources.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The record represents a public institution rather than a person who acquired, created or inherited private assets."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "A personal founder, operator, investor, heir, beneficiary or custodian relationship is not applicable to this institutional government record.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "No natural person is represented, and no state-associated asset should be converted into an individual's private wealth relationship."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=903",
+      "title": "Iraq Government owner record, person ID 903",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Exact source-record name and person ID",
+        "Iraq and Government stored as pseudo-person first and last names",
+        "Iraqi nationality and Iraq residence placeholders",
+        "Blank person-specific biography, birth, gender and social fields",
+        "Institution-associated vessel relationship retained outside biography research"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://ur.gov.iq/",
+      "title": "Iraq Unified Electronic Portal - Ur Portal",
+      "publisher": "Republic of Iraq / Office of the Prime Minister",
+      "tier": 1,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Official electronic portal of the Republic of Iraq",
+        "Government ministries and public institutions",
+        "Institutional rather than personal identity"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://investpromo.gov.iq/policies-and-laws/iraqi-constitution/",
+      "title": "Iraqi Constitution",
+      "publisher": "Republic of Iraq National Investment Commission",
+      "tier": 1,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Republic of Iraq as a federal, independent and sovereign state",
+        "Republican, representative, parliamentary and democratic system of government",
+        "Council of Representatives, Council of Ministers and other public institutions",
+        "Government identity as a public constitutional body rather than a natural person"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Person-shaped source schema",
+      "detail": "The source system stores Iraq Government in a person-shaped record and marks mortality as Alive. Those fields do not convert the institution into a natural person and are not enrichment targets."
+    },
+    {
+      "topic": "Institutional scope",
+      "detail": "The record names the Iraqi government broadly and does not identify which ministry, office or other public body administers the associated asset. Research does not assign it to an individual officeholder."
+    },
+    {
+      "topic": "Forbes",
+      "detail": "No Forbes profile applies. Forbes reporting about Iraq, its economy, government policy or named officials is not a dedicated profile for this institutional owner record."
+    },
+    {
+      "topic": "Personal enrichment",
+      "detail": "Personal name, birth, gender, biography, private-wealth and social-profile gaps remain intentionally unfilled because they are inapplicable to an institution."
+    },
+    {
+      "topic": "Official institutional links",
+      "detail": "Official Iraqi government websites are used only to establish institutional identity and constitutional structure. They are not proposed as personal or company social links."
+    }
+  ],
+  "review": {
+    "status": "pending",
+    "notes": "Confirm the institution classification and retain all person-specific proposals as empty. The record should remain on the non-person editorial-note path, with state-associated assets kept separate from any individual officeholder. No research has been compiled or applied."
+  }
+}

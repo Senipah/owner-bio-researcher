@@ -1,0 +1,232 @@
+{
+  "schema_version": 7,
+  "record_type": "institution",
+  "owner": {
+    "person_id": 896,
+    "display_name": "Denmark Government",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The source record literally names Denmark Government, uses Denmark and Government as pseudo-person name fields, and assigns Danish nationality and Denmark residence; official Danish government portals confirm that this denotes a public institution, not a natural person."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "not_applicable",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This owner record represents the Government of Denmark, a public institution rather than a natural person. Person-specific biography, birth, gender, private-wealth and personal social-profile enrichment is therefore not applicable. Any assets associated with the record belong to the institutional data path and must not be attributed to an individual minister, royal or officeholder.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The literal record name and pseudo-person fields align with Denmark's official government portals and parliamentary-government description."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Focused exact-name and site:forbes.com/profile searches found Forbes reporting about Denmark and Danish public policy, but no dedicated profile for the Government of Denmark. An institutional government record is not a Forbes person profile candidate."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "A public government institution has no person-specific private fortune or wealth-creation industry to classify under this owner-research taxonomy.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The identity is institutional, so applying a private wealth-creation sector would be a category error."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The Government of Denmark does not have a person-specific principal private wealth-producing industry applicable to this dossier.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Government activities and state assets cannot be recast as a natural person's private business sector."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Private wealth origin is not applicable to a government institution and cannot be inferred from state ownership, public finance or office-held resources.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The record represents a government institution rather than a person who acquired or inherited private assets."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "A personal founder, operator, investor, heir, beneficiary or custodian relationship is not applicable to this institutional government record.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "No natural person is represented, and no state-associated asset should be converted into an individual's private wealth relationship."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://regeringen.dk/",
+      "title": "Regeringen",
+      "publisher": "Government of Denmark / Prime Minister's Office",
+      "tier": 1,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "official Danish government portal",
+        "Government of Denmark as a public institution",
+        "institutional rather than personal identity"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://denmark.dk/society-and-business/government-and-politics",
+      "title": "The Danish Government",
+      "publisher": "Official Website of Denmark, Ministry of Foreign Affairs of Denmark",
+      "tier": 1,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "Danish government and parliamentary-democracy structure",
+        "government as a multi-office public body rather than an individual",
+        "official state information source"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=896",
+      "title": "Denmark Government owner record, person ID 896",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-08-02",
+      "supports": [
+        "exact source-record name and person ID",
+        "Denmark and Government stored as pseudo-person first and last names",
+        "Danish nationality and Denmark residence placeholders",
+        "blank person-specific biography, birth, gender and social fields",
+        "institution-associated vessel relationship retained outside biography research"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The source system stores this institution in a person-shaped owner schema and marks mortality as Alive. Those fields do not convert the government into a natural person and are not enrichment targets.",
+    "The record names the Danish government broadly and does not identify which state, defence, royal-house or administrative body manages the associated asset. Research does not assign it to an individual monarch, prime minister, minister or official.",
+    "No Forbes profile applies. Forbes reporting about Denmark, Danish policy or named officeholders is not a profile for the institutional owner record.",
+    "Personal name, birth, gender, biography, private-wealth and social-profile gaps remain intentionally unfilled because they are inapplicable to an institution.",
+    "Official Danish government websites are used only to establish institutional identity. They are not proposed as personal or company social links."
+  ],
+  "review": {
+    "status": "pending",
+    "notes": "Confirm the institution classification and retain all person-specific proposals as empty. The record should remain on the non-person editorial-note path, with state-associated assets kept separate from any individual royal or officeholder. No research has been compiled or applied."
+  }
+}
