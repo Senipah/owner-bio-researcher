@@ -1,0 +1,236 @@
+{
+  "schema_version": 7,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 10393,
+    "display_name": "Unknown British",
+    "identity_confidence": {
+      "score": 5,
+      "band": "insufficient",
+      "reason": "The record contains no personal name, nationality field, employer, occupation, residence, biography, usable image or social profile. The words Unknown British are a generic placeholder and cannot uniquely identify a natural person."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "nationality",
+      "secondary_nationality",
+      "main_residence_country",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "nationality",
+      "secondary_nationality",
+      "main_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This owner record is an unresolved placeholder, not an identified person. It supplies no unique biographical or business anchor, and its display name is only a generic cultural descriptor. That wording cannot establish a name, nationality, occupation, wealth source or personal history, so biography and enrichment are intentionally withheld.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The placeholder status follows directly from the complete absence of unique personal identifiers in the authoritative record and the failure of exact-phrase public searches to identify one relevant natural person."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Exact-placeholder and Forbes-profile searches produced no dedicated personal profile. A Forbes result containing the words unknown and British in prose does not identify this record and was rejected."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No wealth-creation industry can be assigned without an identified person, employer, business interest or independently documented wealth-producing asset.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The placeholder record provides no evidence about how any person's wealth was created, and the generic display name cannot support an industry inference."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No current primary private-wealth industry can be assigned to a placeholder with no resolved person, occupation, employer or holding.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "There is no non-vessel evidence connecting the record to a person or a current business interest. Assigning a sector would be unsupported speculation."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No evidence establishes whether the unidentified person's position arose through self-made activity, inheritance, transfer or another mechanism.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "A wealth-origin classification requires an identified person and documented ownership history, neither of which is present."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No evidence establishes whether the unidentified owner is a founder, operator, investor, heir, beneficiary or family-office principal.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The record contains no wealth-producing enterprise, inherited holding or personal role from which a relationship classification could be derived."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=10393",
+      "title": "Unknown British owner record, person ID 10393",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-08-10",
+      "supports": [
+        "Exact placeholder display name and person ID",
+        "Unknown and British stored as pseudo-person name fields",
+        "Blank nationality, residence, employer, biography and social profiles",
+        "Unknown mortality status",
+        "Absence of any non-vessel personal identifier"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.getty.edu/vow/ULANFullDisplay?find=&nation=&page=&role=&subjectid=500125220",
+      "title": "Unknown British (modern)",
+      "publisher": "Getty Research Institute",
+      "tier": 1,
+      "accessed_at": "2026-08-10",
+      "supports": [
+        "Unknown British as a generic cultural designation rather than a unique name",
+        "Designation applicable to an unidentified person or group",
+        "Unknown gender",
+        "Exact-phrase ambiguity preventing natural-person resolution"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Identity",
+      "detail": "No personal name or independently matching biographical identifier is present. Unknown British is explicitly a descriptor and cannot be mapped to one natural person."
+    },
+    {
+      "topic": "Nationality",
+      "detail": "The display name suggests a British descriptor, but the authoritative nationality field is blank. Nationality is not proposed because a placeholder label alone is insufficient to establish a person's citizenship."
+    },
+    {
+      "topic": "Forbes",
+      "detail": "No dedicated Forbes profile applies because the record contains no personal name. Forbes articles that happen to contain the words unknown and British refer to unrelated subjects and were rejected."
+    },
+    {
+      "topic": "Personal enrichment",
+      "detail": "Biography, personal details, social profiles and non-unknown wealth classifications remain intentionally empty until direct non-vessel evidence identifies a person above the acceptance threshold."
+    },
+    {
+      "topic": "Excluded evidence",
+      "detail": "No vessel identity, ownership, specifications or history was researched or used. Politics, controversies, allegations, legal matters and irrelevant private-family detail were also excluded."
+    }
+  ],
+  "review": {
+    "status": "pending",
+    "notes": "Keep this record on the unresolved-placeholder path. Require a reliable source naming the person and independently connecting that person to person ID 10393 through a non-vessel anchor before proposing biography, personal fields, social links or wealth classifications. Nothing has been compiled, approved or applied."
+  }
+}
