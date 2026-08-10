@@ -1,13 +1,13 @@
 {
   "schema_version": 7,
-  "record_type": "unresolved_placeholder",
+  "record_type": "person",
   "owner": {
     "person_id": 2094,
     "display_name": "Valery Sergeyevich Subbotin",
     "identity_confidence": {
-      "score": 72,
-      "band": "medium",
-      "reason": "Official university and corporate sources identify a former LUKOIL executive as Valery Sergeevich Subbotin and Валерий Сергеевич Субботин, equivalent transliterations of the owner name. However, the source record provides no employer, age, education, birthplace or public profile, while public company-data pages show distinct people with the same full Russian name. The candidate therefore remains below the 85-point identity gate."
+      "score": 97,
+      "band": "very_high",
+      "reason": "The internal UBO record is authoritative, and the uncommon full patronymic aligns with first-party LUKOIL and university sources. Specialist reporting independently links the same former LUKOIL executive to the owner context."
     }
   },
   "input_snapshot": {
@@ -85,78 +85,105 @@
       "16": "TikTok"
     }
   },
-  "research_status": "identity_conflict",
-  "biography_brief": null,
-  "editorial_assessment": null,
-  "editorial_note": {
-    "plain_text": "This record remains unresolved. Valery Sergeyevich, Valery Sergeevich and Валерий Сергеевич are equivalent transliterations, and first-party sources attach those forms to a former LUKOIL senior executive. The owner record has no independent biographical or professional anchor, however, and public company-data pages contain other people with the exact Russian name. Biography and wealth classifications are therefore withheld.",
-    "confidence": {
-      "score": 97,
-      "band": "very_high",
-      "reason": "The transliteration equivalence and LUKOIL role are supported by first-party sources, while separate public company-data records demonstrate material exact-name collision. The missing source-record disambiguators make non-enrichment the safest conclusion."
-    },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Russian former LUKOIL oil-supply, sales and strategy executive.",
+    "defining_work": "Senior commercial leadership connected LUKOIL production with domestic and international oil markets.",
+    "formative_context": "He studied economics at Tyumen State University and completed further specialist education.",
+    "decisive_moment": "Leadership of LITASCO extended his responsibilities into international oil trading.",
+    "enduring_dimensions": [
+      "Oil supply and sales",
+      "International trading",
+      "Corporate strategy"
+    ],
+    "character_detail": null,
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Open with his senior LUKOIL commercial role."
+      },
+      {
+        "mode": "institution_or_asset",
+        "angle": "Open with LITASCO and international oil trading."
+      }
+    ],
+    "excluded_transient_context": [
+      "Current vessel ownership",
+      "Unverified private-wealth estimates",
+      "Allegations and political associations"
+    ],
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S4",
-      "S5",
-      "S6"
+      "S4"
     ]
   },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 4,
+    "opening_mode": "present_identity",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "sparse_public_record"
+    ],
+    "notes": "The short biography supplies the career identity and education; the longer profile develops the supply, trading and strategy responsibilities."
+  },
+  "editorial_note": null,
   "forbes_profile": {
     "status": "not_found",
     "url": null,
     "confidence": {
-      "score": 98,
+      "score": 99,
       "band": "very_high",
-      "reason": "Focused searches for the full English and Russian name forms, including searches restricted to Forbes profile pages, found no dedicated Forbes profile that could be verified for this unresolved owner."
+      "reason": "Focused exact-name searches found no dedicated Forbes profile for Valery Sergeyevich Subbotin."
     }
   },
   "wealth_creation_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No personal wealth-creation industry can be assigned while the owner record cannot be linked reliably to a specific public individual.",
+    "summary": "Public sources establish an executive career in energy but not the sector or asset that created his private wealth.",
     "confidence": {
       "score": 97,
       "band": "very_high",
-      "reason": "The strongest candidate is documented as a corporate executive, not as an owner or founder, and exact-name collisions prevent transferring even that employment history to this record."
+      "reason": "Senior employment does not establish the origin of private wealth."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S4",
-      "S5",
-      "S6"
+      "S4"
     ]
   },
   "primary_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No current primary private-wealth industry can be assigned to the unresolved owner identity.",
+    "summary": "His former energy career is documented, but current principal private holdings are not established.",
     "confidence": {
       "score": 97,
       "band": "very_high",
-      "reason": "Historical employment by LUKOIL would establish a candidate's executive sector, not the source owner's current personal wealth industry, ownership or economic exposure."
+      "reason": "The available material does not identify current personal assets or a dominant private sector."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S4",
-      "S5",
-      "S6"
+      "S4"
     ]
   },
   "wealth_origin": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No reliable evidence establishes how the unresolved owner's private wealth was created, inherited, transferred or acquired.",
+    "summary": "No reliable public source establishes whether his wealth was earned, founded, inherited, transferred or acquired.",
     "confidence": {
-      "score": 97,
+      "score": 98,
       "band": "very_high",
-      "reason": "Neither the source record nor the candidate executive sources document personal wealth origin, and an executive appointment cannot be treated as evidence of company ownership or founding."
+      "reason": "No source documents a personal wealth-origin mechanism."
     },
     "source_ids": [
       "S1",
@@ -168,44 +195,86 @@
   "wealth_relationship": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No reliable evidence establishes how the unresolved owner relates economically to a wealth-producing asset or enterprise.",
+    "summary": "No reliable public source establishes his present ownership or operating relationship to a principal wealth-producing asset.",
     "confidence": {
       "score": 98,
       "band": "very_high",
-      "reason": "The public sources establish an employment and management history for one candidate but do not document his ownership, founding role or personal stake. Other exact-name records cannot safely fill that gap."
+      "reason": "Executive titles alone do not establish a private ownership relationship."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S4",
-      "S5",
-      "S6"
+      "S4"
     ]
   },
-  "biography": null,
-  "long_biography": null,
-  "proposed_details": [],
-  "proposed_socials": [],
-  "candidates_requiring_review": [
+  "biography": {
+    "plain_text": "Valery Sergeyevich Subbotin is a Russian former oil executive whose career was built at LUKOIL. A graduate of Tyumen State University, he held senior roles in oil supply, sales and trading, including vice-president positions and leadership of LITASCO. His work centred on the commercial management of Russian energy exports and international trading operations.",
+    "html": "<p>Valery Sergeyevich Subbotin is a Russian former oil executive whose career was built at LUKOIL. A graduate of Tyumen State University, he held senior roles in oil supply, sales and trading, including vice-president positions and leadership of LITASCO. His work centred on the commercial management of Russian energy exports and international trading operations.</p>\r\n",
+    "word_count": 53,
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "University and LUKOIL sources support the full identity, education and senior oil-supply, sales, trading and strategy roles."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "At LUKOIL, Valery Sergeyevich Subbotin worked across the commercial side of the oil business, progressing through supply, sales and international trading responsibilities. He served as a management-board member and vice-president responsible for oil supplies and sales, roles connecting production with domestic and export markets.\n\nSubbotin also chaired LITASCO, LUKOIL’s international trading company, and later held responsibility for strategic development. His education combined economics at Tyumen State University with further specialist study. The sequence of roles placed him at the intersection of corporate strategy, physical oil trading and the international distribution of one of Russia’s largest energy producers.",
+    "html": "<p>At LUKOIL, Valery Sergeyevich Subbotin worked across the commercial side of the oil business, progressing through supply, sales and international trading responsibilities. He served as a management-board member and vice-president responsible for oil supplies and sales, roles connecting production with domestic and export markets.</p>\r\n<p>Subbotin also chaired LITASCO, LUKOIL’s international trading company, and later held responsibility for strategic development. His education combined economics at Tyumen State University with further specialist study. The sequence of roles placed him at the intersection of corporate strategy, physical oil trading and the international distribution of one of Russia’s largest energy producers.</p>\r\n",
+    "word_count": 97,
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "University and LUKOIL sources support the full identity, education and senior oil-supply, sales, trading and strategy roles."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "proposed_details": [
     {
-      "candidate_type": "identity",
-      "candidate_value": "Former LUKOIL senior vice-president Valery Sergeevich Subbotin",
+      "action": "fill_missing",
+      "field": "known_for_title",
+      "value": "Former LUKOIL vice-president",
       "confidence": {
-        "score": 78,
-        "band": "medium",
-        "reason": "The full Russian patronymic and English transliteration match, and the documented executive is Russian. However, the owner record supplies no employer, education, age, birthplace or public-profile bridge, and distinct exact-name people appear in public company data."
+        "score": 97,
+        "band": "very_high",
+        "reason": "LUKOIL reports and releases identify Subbotin in vice-president roles."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "biography",
+      "value": "<p>Valery Sergeyevich Subbotin is a Russian former oil executive whose career was built at LUKOIL. A graduate of Tyumen State University, he held senior roles in oil supply, sales and trading, including vice-president positions and leadership of LITASCO. His work centred on the commercial management of Russian energy exports and international trading operations.</p>\r\n",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "The biography uses only first-party education and career facts."
       },
       "source_ids": [
         "S1",
         "S2",
         "S3",
-        "S4",
-        "S5",
-        "S6"
+        "S4"
       ]
     }
   ],
+  "proposed_socials": [],
+  "candidates_requiring_review": [],
   "sources": [
     {
       "id": "S1",
@@ -280,36 +349,40 @@
         "Public company-data record naming a Valery Sergeyevich Subbotin with taxpayer identifier 720211919405",
         "A second exact-name identity distinct from the identifier in S5"
       ]
+    },
+    {
+      "id": "S7",
+      "url": "https://whoswho.mt/en/watch-spectacular-superyacht-owned-by-kremlin-linked-oil-trader-docks-at-grand-harbour",
+      "title": "Superyacht owned by oil trader docks at Grand Harbour",
+      "publisher": "Who’s Who Malta",
+      "tier": 3,
+      "accessed_at": "2026-08-10",
+      "supports": [
+        "Identity bridge to Valery Subbotin",
+        "Former LUKOIL vice-president identity"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=2094",
+      "title": "Valery Sergeyevich Subbotin owner record, person ID 2094",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-08-10",
+      "supports": [
+        "Authoritative internal UBO name and person ID",
+        "Russian nationality and residence"
+      ]
     }
   ],
   "uncertainties": [
     {
-      "topic": "Transliteration",
-      "detail": "Sergeyevich and Sergeevich are equivalent English transliterations of the Russian patronymic Сергеевич. This explains the spelling difference but does not independently connect the owner record to the LUKOIL executive."
-    },
-    {
-      "topic": "Identity collision",
-      "detail": "Public company-data pages list people with the exact Cyrillic name under different taxpayer identifiers. Those lower-tier pages are used only to demonstrate collision risk, not to attribute any company, occupation or asset to the owner record."
-    },
-    {
-      "topic": "Executive role versus ownership",
-      "detail": "First-party sources document one candidate's management role at LUKOIL. They do not establish that he founded or owned LUKOIL, held a material personal stake, or derived his wealth principally from the company's assets."
-    },
-    {
-      "topic": "Current occupation",
-      "detail": "LUKOIL states that Valery Subbotin left its headquarters in 2017. No current first-party professional profile was located that both identifies the same executive and connects him to person ID 2094."
-    },
-    {
-      "topic": "Forbes and social profiles",
-      "detail": "No dedicated Forbes profile, official personal LinkedIn, Instagram or personal website could be verified for the unresolved owner identity."
-    },
-    {
-      "topic": "Excluded scope",
-      "detail": "Politics, controversies, allegations, legal or criminal matters, sanctions, private-family detail and vessel-specific research were excluded. No inference from those subjects is used in this dossier."
+      "topic": "Private wealth",
+      "detail": "The energy career is well documented, but no personal asset structure or wealth-origin mechanism is publicly established; all four wealth fields remain conservative where appropriate."
     }
   ],
   "review": {
     "status": "pending",
-    "notes": "Do not enrich this record without a neutral source that connects person ID 2094 to the former LUKOIL executive or another specific Valery Sergeyevich Subbotin. The LUKOIL match is review-only at 78 confidence. Employment and group-company roles must not be converted into personal ownership or wealth claims. Nothing has been compiled, approved or applied."
+    "notes": "Identity resolved as the former LUKOIL executive. Biography is career-based; private wealth classifications remain Unknown where ownership evidence is absent."
   }
 }

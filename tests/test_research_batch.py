@@ -905,17 +905,20 @@ def test_unresolved_dossier_is_included_unchanged_for_pending_review() -> None:
         )
 
 
-def test_institution_dossier_renders_note_without_biography_changes() -> None:
+def test_institution_dossier_applies_existing_biography_fields() -> None:
     document = new_document()
-    source_owner = _owner(10, "Example Government", 1)
+    source_owner = _owner(
+        10,
+        "Example Government",
+        1,
+        include_long_biography=True,
+    )
     document["owners"] = [source_owner]
     institution = _dossier(10, "Example Government")
     institution["record_type"] = "institution"
-    institution["research_status"] = "not_applicable"
+    institution["research_status"] = "complete"
     institution["biography_brief"] = None
     institution["editorial_assessment"] = None
-    institution["biography"] = None
-    institution["long_biography"] = None
     institution["editorial_note"] = {
         "plain_text": (
             "This record represents a public institution rather than a "
@@ -943,12 +946,13 @@ def test_institution_dossier_renders_note_without_biography_changes() -> None:
     rendered = render_research_report(report)
 
     compiled = derived["owners"][0]
-    assert compiled["details"] == source_owner["details"]
     assert compiled["ai_research"]["record_type"] == "institution"
-    assert compiled["ai_research"]["biography"] is None
-    assert report["owners"][0]["changes"] == []
-    assert "Editorial identity note" in rendered
-    assert "No biography change is proposed" in rendered
+    assert compiled["details"]["biography"]["value"].startswith("<p>")
+    assert compiled["details"]["long_biography"]["value"].startswith("<p>")
+    assert len(report["owners"][0]["changes"]) == 2
+    assert "Short biography" in rendered
+    assert "Longer biography" in rendered
+    assert "Institution note" in rendered
 
 
 def test_renders_review_report() -> None:

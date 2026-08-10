@@ -85,20 +85,19 @@
       "16": "TikTok"
     }
   },
-  "research_status": "not_applicable",
+  "research_status": "complete",
   "biography_brief": null,
   "editorial_assessment": null,
   "editorial_note": {
-    "plain_text": "This owner record represents the Government of Denmark, a public institution rather than a natural person. Person-specific biography, birth, gender, private-wealth and personal social-profile enrichment is therefore not applicable. Any assets associated with the record belong to the institutional data path and must not be attributed to an individual minister, royal or officeholder.",
+    "plain_text": "This record represents a continuing public institution rather than a natural person. The biography fields describe the institution itself. Person-specific birth, mortality, private-wealth and personal-social fields do not apply, and no current or former officeholder should be substituted for the institutional identity.",
     "confidence": {
-      "score": 100,
+      "score": 99,
       "band": "very_high",
-      "reason": "The literal record name and pseudo-person fields align with Denmark's official government portals and parliamentary-government description."
+      "reason": "The source name and official institutional sources directly establish the non-person identity."
     },
     "source_ids": [
       "S1",
-      "S2",
-      "S3"
+      "S2"
     ]
   },
   "forbes_profile": {
@@ -170,9 +169,50 @@
       "S3"
     ]
   },
-  "biography": null,
-  "long_biography": null,
-  "proposed_details": [],
+  "biography": {
+    "plain_text": "The Government of Denmark is the executive authority of the Kingdom of Denmark. Led collectively by the prime minister and ministers, it administers legislation, public services and national policy through ministries and agencies. The name refers to the continuing government itself and does not represent a minister, official or member of the royal family.",
+    "html": "<p>The Government of Denmark is the executive authority of the Kingdom of Denmark. Led collectively by the prime minister and ministers, it administers legislation, public services and national policy through ministries and agencies. The name refers to the continuing government itself and does not represent a minister, official or member of the royal family.</p>\r\n",
+    "word_count": 54,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Denmark is a constitutional monarchy in which the national government exercises executive authority through ministers. The prime minister leads the cabinet, while ministries prepare policy, administer legislation and oversee public responsibilities within their respective fields.\n\nCentral administration also includes agencies and other authorities responsible for regulation and public services. Cabinets and officeholders may change after elections or reshuffles, but the government continues as the executive machinery of the Danish state. The name denotes that enduring public institution rather than a particular prime minister, minister, civil servant or member of the royal family.",
+    "html": "<p>Denmark is a constitutional monarchy in which the national government exercises executive authority through ministers. The prime minister leads the cabinet, while ministries prepare policy, administer legislation and oversee public responsibilities within their respective fields.</p>\r\n<p>Central administration also includes agencies and other authorities responsible for regulation and public services. Cabinets and officeholders may change after elections or reshuffles, but the government continues as the executive machinery of the Danish state. The name denotes that enduring public institution rather than a particular prime minister, minister, civil servant or member of the royal family.</p>\r\n",
+    "word_count": 92,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "biography",
+      "value": "<p>The Government of Denmark is the executive authority of the Kingdom of Denmark. Led collectively by the prime minister and ministers, it administers legislation, public services and national policy through ministries and agencies. The name refers to the continuing government itself and does not represent a minister, official or member of the royal family.</p>\r\n",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
   "proposed_socials": [],
   "candidates_requiring_review": [],
   "sources": [
@@ -219,14 +259,13 @@
     }
   ],
   "uncertainties": [
-    "The source system stores this institution in a person-shaped owner schema and marks mortality as Alive. Those fields do not convert the government into a natural person and are not enrichment targets.",
-    "The record names the Danish government broadly and does not identify which state, defence, royal-house or administrative body manages the associated asset. Research does not assign it to an individual monarch, prime minister, minister or official.",
-    "No Forbes profile applies. Forbes reporting about Denmark, Danish policy or named officeholders is not a profile for the institutional owner record.",
-    "Personal name, birth, gender, biography, private-wealth and social-profile gaps remain intentionally unfilled because they are inapplicable to an institution.",
-    "Official Danish government websites are used only to establish institutional identity. They are not proposed as personal or company social links."
+    {
+      "topic": "Institutional scope",
+      "detail": "The broad database label may encompass several ministries or public bodies; the biography therefore describes the continuing government or municipality without assigning a specific officeholder or agency."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": "Confirm the institution classification and retain all person-specific proposals as empty. The record should remain on the non-person editorial-note path, with state-associated assets kept separate from any individual royal or officeholder. No research has been compiled or applied."
+    "notes": "Review the user-facing institutional biography; person-only fields remain intentionally unknown and no officeholder is substituted."
   }
 }

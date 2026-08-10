@@ -85,20 +85,19 @@
       "16": "TikTok"
     }
   },
-  "research_status": "not_applicable",
+  "research_status": "complete",
   "biography_brief": null,
   "editorial_assessment": null,
   "editorial_note": {
-    "plain_text": "This owner record represents the Government of the Philippines, a public institution rather than a natural person. Person-specific biography, birth, gender, private-wealth and personal social-profile enrichment is therefore not applicable. No president, minister, official or other officeholder should be substituted for the institution represented by the record.",
+    "plain_text": "This record represents a continuing public institution rather than a natural person. The biography fields describe the institution itself. Person-specific birth, mortality, private-wealth and personal-social fields do not apply, and no current or former officeholder should be substituted for the institutional identity.",
     "confidence": {
-      "score": 100,
+      "score": 99,
       "band": "very_high",
-      "reason": "The literal record name and pseudo-person fields align with official Philippine government sources describing the Government of the Republic of the Philippines as a multi-agency public institution."
+      "reason": "The source name and official institutional sources directly establish the non-person identity."
     },
     "source_ids": [
       "S1",
-      "S2",
-      "S3"
+      "S2"
     ]
   },
   "forbes_profile": {
@@ -170,9 +169,50 @@
       "S3"
     ]
   },
-  "biography": null,
-  "long_biography": null,
-  "proposed_details": [],
+  "biography": {
+    "plain_text": "The Government of the Philippines is the executive administration of the Republic of the Philippines. Through executive departments, agencies and public information bodies, it implements legislation, manages national policy and provides government services. The name refers to the administration collectively as a public institution, not the president, a cabinet secretary or any other individual officeholder.",
+    "html": "<p>The Government of the Philippines is the executive administration of the Republic of the Philippines. Through executive departments, agencies and public information bodies, it implements legislation, manages national policy and provides government services. The name refers to the administration collectively as a public institution, not the president, a cabinet secretary or any other individual officeholder.</p>\r\n",
+    "word_count": 55,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "The Philippine national government administers the executive functions of the Republic through departments, agencies and other public bodies. These institutions implement legislation, coordinate national programmes and deliver services across the policy areas assigned to them.\n\nPublic information agencies form part of that wider structure by communicating government programmes and official developments to citizens. Presidents, cabinet secretaries and agency leaders serve within the administration, but the government continues beyond any individual term across successive administrations. The name represents that enduring national institution collectively and not a particular elected or appointed official.",
+    "html": "<p>The Philippine national government administers the executive functions of the Republic through departments, agencies and other public bodies. These institutions implement legislation, coordinate national programmes and deliver services across the policy areas assigned to them.</p>\r\n<p>Public information agencies form part of that wider structure by communicating government programmes and official developments to citizens. Presidents, cabinet secretaries and agency leaders serve within the administration, but the government continues beyond any individual term across successive administrations. The name represents that enduring national institution collectively and not a particular elected or appointed official.</p>\r\n",
+    "word_count": 90,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "biography",
+      "value": "<p>The Government of the Philippines is the executive administration of the Republic of the Philippines. Through executive departments, agencies and public information bodies, it implements legislation, manages national policy and provides government services. The name refers to the administration collectively as a public institution, not the president, a cabinet secretary or any other individual officeholder.</p>\r\n",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
   "proposed_socials": [],
   "candidates_requiring_review": [],
   "sources": [
@@ -218,14 +258,13 @@
     }
   ],
   "uncertainties": [
-    "The source system stores this institution in a person-shaped owner schema and marks mortality as Alive. Those fields do not convert the government into a natural person and are not enrichment targets.",
-    "The record names the Philippine government broadly and does not identify a specific department, agency or public body. Research therefore does not assign the record to a president, minister, official or other officeholder.",
-    "No Forbes profile applies. Forbes reporting about the Philippines, government policy or named businesspeople is not a profile for this institutional record.",
-    "Personal name, birth, gender, biography, private-wealth and social-profile gaps remain intentionally unfilled because they are inapplicable to an institution.",
-    "Official Philippine government websites are used only to establish institutional identity and are not proposed as personal or company social links."
+    {
+      "topic": "Institutional scope",
+      "detail": "The broad database label may encompass several ministries or public bodies; the biography therefore describes the continuing government or municipality without assigning a specific officeholder or agency."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": "Confirm the institution classification and retain all person-specific proposals as empty. The record should remain on the non-person editorial-note path without substitution of any current or former officeholder. Nothing has been compiled or applied."
+    "notes": "Review the user-facing institutional biography; person-only fields remain intentionally unknown and no officeholder is substituted."
   }
 }

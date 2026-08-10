@@ -273,9 +273,9 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
             "unresolved person identities must use "
             "record_type unresolved_placeholder"
         )
-    if record_type == "institution" and research_status != "not_applicable":
+    if record_type == "institution" and research_status != "complete":
         errors.append(
-            "institution records must use research_status not_applicable"
+            "institution records must use research_status complete"
         )
     if (
         record_type == "unresolved_placeholder"
@@ -630,13 +630,16 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
                 errors,
             )
 
+    biography_record = record_type in {"person", "institution"}
     biography = document.get("biography")
     short_plain: str | None = None
-    if record_type != "person":
+    if not biography_record:
         if biography is not None:
-            errors.append("biography must be null for non-person records")
+            errors.append("biography must be null for unresolved records")
     elif not isinstance(biography, dict):
-        errors.append("biography must be an object for person records")
+        errors.append(
+            "biography must be an object for person and institution records"
+        )
     else:
         plain = biography.get("plain_text")
         if not isinstance(plain, str) or not plain.strip():
@@ -672,11 +675,16 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
 
     long_biography = document.get("long_biography")
     long_plain_text: str | None = None
-    if record_type != "person":
+    if not biography_record:
         if long_biography is not None:
-            errors.append("long_biography must be null for non-person records")
+            errors.append(
+                "long_biography must be null for unresolved records"
+            )
     elif not isinstance(long_biography, dict):
-        errors.append("long_biography must be an object for person records")
+        errors.append(
+            "long_biography must be an object for person and institution "
+            "records"
+        )
     else:
         long_plain = long_biography.get("plain_text")
         if not isinstance(long_plain, str) or not long_plain.strip():
@@ -769,8 +777,16 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
         if not isinstance(items, list):
             errors.append(f"{collection} must be a list")
             continue
-        if record_type != "person" and items:
-            errors.append(f"{collection} must be empty for non-person records")
+        if record_type == "unresolved_placeholder" and items:
+            errors.append(
+                f"{collection} must be empty for unresolved records"
+            )
+        if (
+            record_type == "institution"
+            and collection == "proposed_socials"
+            and items
+        ):
+            errors.append("proposed_socials must be empty for institutions")
         for index, item in enumerate(items):
             path = f"{collection}[{index}]"
             if not isinstance(item, dict):
@@ -788,6 +804,13 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
             if collection == "proposed_details":
                 if not isinstance(item.get("field"), str) or not item["field"].strip():
                     errors.append(f"{path}.field must be non-empty")
+                elif (
+                    record_type == "institution"
+                    and item["field"] not in {"biography", "long_biography"}
+                ):
+                    errors.append(
+                        f"{path}.field must be a biography field for institutions"
+                    )
                 if "value" not in item:
                     errors.append(f"{path}.value is required")
                 action = item.get("action")

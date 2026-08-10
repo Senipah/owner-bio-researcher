@@ -62,8 +62,9 @@ statistics.
    occupation/company, geography, family, and yacht context. Stop as
    `identity_conflict` when materially ambiguous.
    Set `record_type` to `person`, `institution`, or `unresolved_placeholder`
-   before drafting anything. Non-person records use `editorial_note` and never
-   receive biography proposals.
+   before drafting anything. Institutions receive durable user-facing text in
+   the existing biography fields plus an `editorial_note`; unresolved
+   placeholders use only the note and never receive biography proposals.
 3. Search for an exact Forbes profile first. Record `verified`, `not_found`,
    `ambiguous`, or `unavailable`; never silently omit the check.
 4. Research the origin story and current underlying private assets using
@@ -133,7 +134,7 @@ statistics.
     transition, final sentence, and short-long pair findings. Revise semantic
     repetition within each owner and across owners even when the wording
     differs, and rerun the corpus auditor until strict mode passes.
-15. Return the dossier path, both biographies or non-person editorial note,
+15. Return the dossier path, both biographies or unresolved editorial note,
     strongest evidence, confidence summary, unresolved questions, and explicit
     statement that nothing was applied.
 
@@ -156,6 +157,10 @@ tracking. Do not let parallel agents edit the shared owner dataset.
   or family disputes unless directly relevant, strongly sourced, and requested.
 - Separate citizenship, nationality, birthplace, and residence.
 - Exclude a proposed field or social link below confidence 85.
+- Treat `research_status=complete` as completion of the research decision, not
+  proof that every field is known. Preserve supported `Unknown`
+  classifications, confidence limits, and uncertainties instead of emitting
+  an importer-ineligible `limited` status for a resolved identity.
 - Score each biography independently and keep its confidence no higher than
   its weakest material claim.
 - Do not pad the longer biography or repeat, reorder, or paraphrase the short
@@ -242,9 +247,10 @@ tracking. Do not let parallel agents edit the shared owner dataset.
   retained at least one short-only fact or dimension, and supplied at least two
   substantive long-only facts or dimensions.
 - Confirm person dossiers contain a schema-v7 source-hidden, unordered
-  `biography_brief` with at least two distinct opening options; confirm
-  institution and unresolved-placeholder dossiers contain no biography and use
-  `editorial_note` instead.
+  `biography_brief` with at least two distinct opening options. Confirm
+  institution dossiers contain short and longer biographies plus an
+  `editorial_note`, and unresolved-placeholder dossiers contain no biography
+  and use only the note.
 - Confirm all seven editorial scores are 4 or 5 and that `opening_mode` selects
   one of the brief options while `narrative_shape` uses an allowed value.
 - Confirm neither biography names sources, narrates evidence or confidence,
@@ -287,8 +293,9 @@ separately from owner inputs. It contains:
   wealth-relationship classifications, each with an explanation, confidence,
   and source IDs;
 - a source-hidden biography brief plus complementary short and longer
-  biographies for people, or a non-applicable editorial note for institutions
-  and unresolved placeholders;
+  biographies for people, short and longer institutional descriptions plus an
+  editorial note for institutions, or only an editorial note for unresolved
+  placeholders;
 - a seven-dimension editorial assessment, selected opening mode, and narrative
   shape, with every person score at least 4;
 - proposed personal fields and verified socials;

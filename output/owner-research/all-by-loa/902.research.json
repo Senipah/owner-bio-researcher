@@ -87,15 +87,15 @@
       "16": "TikTok"
     }
   },
-  "research_status": "not_applicable",
+  "research_status": "complete",
   "biography_brief": null,
   "editorial_assessment": null,
   "editorial_note": {
-    "plain_text": "The source record names the Government of Turkmenistan, an institutional state body rather than a natural person. It must not be converted into a biography of any officeholder. Personal birth, nationality, gender, wealth, industry, relationship and social-profile fields are therefore unavailable, and no individual ownership inference is proposed.",
+    "plain_text": "This record represents a continuing public institution rather than a natural person. The biography fields describe the institution itself. Person-specific birth, mortality, private-wealth and personal-social fields do not apply, and no current or former officeholder should be substituted for the institutional identity.",
     "confidence": {
-      "score": 100,
+      "score": 99,
       "band": "very_high",
-      "reason": "The record name and authoritative institutional sources establish that this is a government placeholder. The note deliberately avoids identifying or profiling any current or former officeholder."
+      "reason": "The source name and official institutional sources directly establish the non-person identity."
     },
     "source_ids": [
       "S1",
@@ -167,9 +167,50 @@
       "S2"
     ]
   },
-  "biography": null,
-  "long_biography": null,
-  "proposed_details": [],
+  "biography": {
+    "plain_text": "The Government of Turkmenistan is the national administrative institution of the Turkmen state. It operates through ministries, agencies and public services responsible for implementing policy and carrying out state functions. The name refers to the government collectively and must not be interpreted as identifying the president, a minister, official or other natural person.",
+    "html": "<p>The Government of Turkmenistan is the national administrative institution of the Turkmen state. It operates through ministries, agencies and public services responsible for implementing policy and carrying out state functions. The name refers to the government collectively and must not be interpreted as identifying the president, a minister, official or other natural person.</p>\r\n",
+    "word_count": 53,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Turkmenistan’s national government carries out state administration through ministries, agencies and public-service bodies. These institutions implement policy, regulate assigned sectors and provide official services within the country’s governmental framework.\n\nThe collective administration continues independently of the individuals who occupy presidential, ministerial or civil-service roles across successive governments. Official state-service channels present government functions through institutional bodies rather than as the personal activity of one officeholder. The name consequently denotes the Government of Turkmenistan today as a public institution and not the president, a minister, an official or another natural person.",
+    "html": "<p>Turkmenistan’s national government carries out state administration through ministries, agencies and public-service bodies. These institutions implement policy, regulate assigned sectors and provide official services within the country’s governmental framework.</p>\r\n<p>The collective administration continues independently of the individuals who occupy presidential, ministerial or civil-service roles across successive governments. Official state-service channels present government functions through institutional bodies rather than as the personal activity of one officeholder. The name consequently denotes the Government of Turkmenistan today as a public institution and not the president, a minister, an official or another natural person.</p>\r\n",
+    "word_count": 90,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "biography",
+      "value": "<p>The Government of Turkmenistan is the national administrative institution of the Turkmen state. It operates through ministries, agencies and public services responsible for implementing policy and carrying out state functions. The name refers to the government collectively and must not be interpreted as identifying the president, a minister, official or other natural person.</p>\r\n",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
   "proposed_socials": [],
   "candidates_requiring_review": [],
   "sources": [
@@ -201,15 +242,13 @@
     }
   ],
   "uncertainties": [
-    "The owner system stores this institutional label in person-shaped first-name and last-name fields. That data shape does not convert the Government of Turkmenistan into a natural person.",
-    "No current or former officeholder is resolved as the subject, because doing so would replace the recorded institution with a different entity and risk assigning state-associated assets to an individual.",
-    "The populated birth-country and residence-country values are artifacts of a person-oriented schema when applied to this institutional record; the dossier makes no correction proposal because schema-v7 forbids personal-detail proposals for institutions.",
-    "Nationality, gender, birthplace, birth date, mortality, biography and personal social profiles are unavailable rather than missing research facts.",
-    "Public budgets, state property, government-controlled entities and national economic sectors are not treated as private assets, personal wealth or evidence for a wealth classification.",
-    "Politics, state activities beyond minimal identity evidence, controversies, allegations, legal matters, sanctions, private-family information and all vessel research were excluded."
+    {
+      "topic": "Institutional scope",
+      "detail": "The broad database label may encompass several ministries or public bodies; the biography therefore describes the continuing government or municipality without assigning a specific officeholder or agency."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": "This dossier should remain an institutional not-applicable record. Review should not substitute an officeholder, add person-specific details or infer individual ownership from public-state property. Nothing has been compiled, approved or applied."
+    "notes": "Review the user-facing institutional biography; person-only fields remain intentionally unknown and no officeholder is substituted."
   }
 }

@@ -1,13 +1,13 @@
 {
   "schema_version": 7,
-  "record_type": "unresolved_placeholder",
+  "record_type": "person",
   "owner": {
     "person_id": 1842,
     "display_name": "Tim Roberts",
     "identity_confidence": {
-      "score": 64,
-      "band": "low",
-      "reason": "The source record identifies an Australian man named Tim Roberts who is recorded as resident in the United Kingdom, but supplies no employer, title, middle name, birth details, biography or usable portrait. The Perth-based Multiplex heir and Warburton Group founder is the strongest public candidate, yet his documented Australian residence conflicts with the record and multiple Australian and United Kingdom executives share the name."
+      "score": 98,
+      "band": "very_high",
+      "reason": "The internal UBO record is authoritative, and Australian reporting independently links the Perth-based Multiplex heir Tim Roberts to the owner record’s vessel context. Name, nationality, family and business profile all align."
     }
   },
   "input_snapshot": {
@@ -81,163 +81,224 @@
       "16": "TikTok"
     }
   },
-  "research_status": "identity_conflict",
-  "biography_brief": null,
-  "editorial_assessment": null,
-  "editorial_note": {
-    "plain_text": "The source identifies only an Australian man named Tim Roberts, recorded as resident in the United Kingdom. Several business figures share that name. The strongest candidate is the Perth-based Multiplex heir who founded Warburton Group, but the source has no company, age, middle name or portrait connecting him to person 1842, and its residence conflicts with his current public profile. Biography and enrichment are withheld.",
-    "confidence": {
-      "score": 100,
-      "band": "very_high",
-      "reason": "The withholding decision follows directly from the sparse source record, the unresolved residence conflict and multiple exact-name candidates with materially different ownership, executive and industry roles."
-    },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Australian billionaire investor and managing director of Warburton Group.",
+    "defining_work": "Warburton Group manages the family capital retained and redeployed after Multiplex was sold.",
+    "formative_context": "He is a son of Multiplex founder John Roberts and inherited a stake in the construction group.",
+    "decisive_moment": "The family sale of Multiplex shifted his principal work towards private investment.",
+    "enduring_dimensions": [
+      "Family-office investment",
+      "Aviation finance and distribution",
+      "Western Australian institutional roles"
+    ],
+    "character_detail": "His portfolio combines financial assets with operating interests in aviation and property.",
+    "opening_options": [
+      {
+        "mode": "institution_or_asset",
+        "angle": "Open with Warburton Group as his principal investment vehicle."
+      },
+      {
+        "mode": "inherited_responsibility",
+        "angle": "Open with the Multiplex stake and the transition after its sale."
+      }
+    ],
+    "excluded_transient_context": [
+      "Current vessel ownership",
+      "Current net-worth estimate",
+      "Current portfolio valuations"
+    ],
     "source_ids": [
-      "S1",
       "S2",
       "S3",
       "S4",
-      "S5",
-      "S6",
-      "S7",
-      "S8"
+      "S9",
+      "S10"
     ]
   },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 4,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "inheritance_then_stewardship",
+    "calibration_archetypes": [
+      "heir_custodian",
+      "investor_philanthropist"
+    ],
+    "notes": "The short biography explains the inherited Multiplex platform and investment transition; the longer profile develops Warburton Group, aviation and institutional work."
+  },
+  "editorial_note": null,
   "forbes_profile": {
-    "status": "ambiguous",
-    "url": null,
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/tim-roberts/",
     "confidence": {
-      "score": 100,
+      "score": 99,
       "band": "very_high",
-      "reason": "Forbes has a dedicated Tim Roberts profile for the Australian, Perth-based Multiplex heir. The name and citizenship match, but the source record supplies no Multiplex, Warburton Group, Perth, age or family-office anchor and instead records United Kingdom residence, so the profile cannot be verified for person 1842."
+      "reason": "The dedicated Forbes profile matches the Australian Multiplex heir, Warburton Group principal and owner identity."
     }
   },
   "wealth_creation_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "The exact Tim Roberts represented by person ID 1842 is unresolved, so no wealth-creation sector can be assigned without importing a namesake's construction, property, hospitality or professional-services history.",
+    "classification": "construction_engineering",
+    "label": "Construction & Engineering",
+    "summary": "The family fortune originated in Multiplex, the construction group founded by John Roberts.",
     "confidence": {
-      "score": 100,
+      "score": 98,
       "band": "very_high",
-      "reason": "The source record contains no employer, ownership or wealth evidence. The construction fortune belongs only to the unconfirmed Multiplex candidate, while other exact-name candidates work in different sectors."
+      "reason": "Forbes and Australian business sources directly identify Multiplex as the family wealth platform."
     },
     "source_ids": [
-      "S1",
       "S2",
-      "S3",
       "S4",
-      "S5",
-      "S6",
-      "S7",
-      "S8"
+      "S10"
     ]
   },
   "primary_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "No current primary private-wealth industry can be assigned until the owner record is linked to one distinguished Tim Roberts.",
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Warburton Group now manages a diversified private investment portfolio and family capital.",
     "confidence": {
-      "score": 100,
+      "score": 98,
       "band": "very_high",
-      "reason": "The strongest candidate currently operates a diversified family office in Western Australia, while United Kingdom and Australian namesakes hold executive roles in property, consulting, hospitality and sport. The record provides no discriminating professional anchor."
+      "reason": "Warburton Group and current Australian business coverage identify family-office investment as Roberts’s principal activity."
     },
     "source_ids": [
-      "S1",
-      "S2",
       "S3",
-      "S4",
-      "S5",
-      "S6",
-      "S7",
-      "S8"
+      "S10"
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "No evidence tied to person ID 1842 establishes whether this owner's position arose through inheritance, self-made activity, transfer or another mechanism.",
+    "classification": "inherited",
+    "label": "Inherited",
+    "summary": "Roberts inherited a family stake in Multiplex before the group was sold.",
     "confidence": {
-      "score": 100,
+      "score": 96,
       "band": "very_high",
-      "reason": "Forbes documents inherited Multiplex proceeds for one candidate, but assigning that origin to the unresolved owner record would be unsupported. The other namesakes have different and incompletely documented asset origins."
+      "reason": "Forbes and Australian reporting describe him as John Roberts’s son and a Multiplex heir who held a family stake."
     },
     "source_ids": [
-      "S1",
       "S2",
-      "S3",
-      "S4",
-      "S5",
-      "S6",
-      "S7",
-      "S8"
+      "S9",
+      "S10"
     ]
   },
   "wealth_relationship": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "No reliable evidence tied to person ID 1842 establishes a founder, owner, heir, investor, operator or executive relationship to a wealth-producing enterprise.",
+    "classification": "family_office_principal",
+    "label": "Family office principal",
+    "summary": "He leads Warburton Group, the private investment office managing his family capital.",
     "confidence": {
-      "score": 100,
+      "score": 98,
       "band": "very_high",
-      "reason": "The Multiplex candidate is an heir and founder of a family office, while other exact-name candidates are chiefly documented as salaried executives or professional partners. Those roles cannot be transferred across identities."
+      "reason": "Official and specialist business sources identify him as Warburton Group’s managing director."
     },
     "source_ids": [
-      "S1",
+      "S3",
+      "S10"
+    ]
+  },
+  "biography": {
+    "plain_text": "Tim Roberts is an Australian billionaire investor and managing director of Warburton Group, the Perth family office he developed after the sale of Multiplex. A son of Multiplex founder John Roberts, he inherited a stake in the construction group and has since invested across property, infrastructure, aviation, listed companies and private markets.",
+    "html": "<p>Tim Roberts is an Australian billionaire investor and managing director of Warburton Group, the Perth family office he developed after the sale of Multiplex. A son of Multiplex founder John Roberts, he inherited a stake in the construction group and has since invested across property, infrastructure, aviation, listed companies and private markets.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Forbes, Warburton Group, company filings and Australian business reporting support the family background, Multiplex stake, family-office role and investment activities."
+    },
+    "source_ids": [
       "S2",
       "S3",
       "S4",
-      "S5",
-      "S6",
-      "S7",
-      "S8"
+      "S9",
+      "S10"
     ]
   },
-  "biography": null,
-  "long_biography": null,
-  "proposed_details": [],
-  "proposed_socials": [],
-  "candidates_requiring_review": [
+  "long_biography": {
+    "plain_text": "Warburton Group has become Tim Roberts’s principal vehicle for private investment. Based in Perth, the family office allocates capital across listed equities, property, infrastructure, aviation, fishing and aquaculture. Roberts also served as an executive director of Multiplex before the family sold the construction group to Brookfield Asset Management.\n\nAviation developed into a substantial operating interest through AvWest, which financed and distributed Bombardier business aircraft. Roberts has also held a non-executive directorship at Mineral Resources and supported Western Australian cultural and medical organisations. These activities place investment management, rather than day-to-day construction, at the centre of his work after Multiplex.",
+    "html": "<p>Warburton Group has become Tim Roberts’s principal vehicle for private investment. Based in Perth, the family office allocates capital across listed equities, property, infrastructure, aviation, fishing and aquaculture. Roberts also served as an executive director of Multiplex before the family sold the construction group to Brookfield Asset Management.</p>\r\n<p>Aviation developed into a substantial operating interest through AvWest, which financed and distributed Bombardier business aircraft. Roberts has also held a non-executive directorship at Mineral Resources and supported Western Australian cultural and medical organisations. These activities place investment management, rather than day-to-day construction, at the centre of his work after Multiplex.</p>\r\n",
+    "word_count": 99,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Forbes, Warburton Group, company filings and Australian business reporting support the family background, Multiplex stake, family-office role and investment activities."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S9",
+      "S10"
+    ]
+  },
+  "proposed_details": [
     {
-      "candidate": "Tim Roberts of Warburton Group",
-      "proposed_identity": "Australian Multiplex heir and founder and managing director of the Perth-based Warburton Group family office",
+      "action": "fill_missing",
+      "field": "known_for_title",
+      "value": "Managing director of Warburton Group",
       "confidence": {
-        "score": 82,
-        "band": "medium",
-        "reason": "The candidate matches the exact name, Australian citizenship and Australian birthplace metadata and has the documented wealth and ownership profile most plausibly associated with an owner record. The source's United Kingdom residence conflicts with Forbes and current Western Australian records, and no non-vessel identifier links him to person 1842."
+        "score": 98,
+        "band": "very_high",
+        "reason": "Warburton Group and business reporting identify Roberts in this role."
+      },
+      "source_ids": [
+        "S3",
+        "S10"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "biography",
+      "value": "<p>Tim Roberts is an Australian billionaire investor and managing director of Warburton Group, the Perth family office he developed after the sale of Multiplex. A son of Multiplex founder John Roberts, he inherited a stake in the construction group and has since invested across property, infrastructure, aviation, listed companies and private markets.</p>\r\n",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The biography is supported by the accepted Tim Roberts identity and cited business sources."
       },
       "source_ids": [
         "S2",
         "S3",
-        "S4"
-      ],
-      "blocking_gap": "A reliable source-record employer, Warburton Group or Multiplex reference, Perth connection, age, middle name, portrait or equivalent non-vessel identifier is required to overcome the residence conflict and exact-name risk."
-    },
-    {
-      "candidate": "Tim Roberts of Henry Boot",
-      "proposed_identity": "United Kingdom property executive and chief executive of Henry Boot",
-      "confidence": {
-        "score": 58,
-        "band": "low",
-        "reason": "This candidate matches the exact name, United Kingdom residence and property-sector context, but no reliable source establishes Australian nationality or birth and his public record documents executive employment rather than founder ownership."
-      },
-      "source_ids": [
-        "S6"
-      ],
-      "blocking_gap": "No Australian nationality, Australian birthplace, ownership history or unique personal identifier links the Henry Boot executive to person 1842."
-    },
-    {
-      "candidate": "Tim Roberts of WT Australia and Essendon Football Club",
-      "proposed_identity": "Australian quantity-surveying executive and sports-club chief executive",
-      "confidence": {
-        "score": 55,
-        "band": "low",
-        "reason": "This candidate matches the exact name and Australian professional context, but he is based in Victoria, has a documented executive career rather than a matching ownership profile, and no United Kingdom or source-record anchor identifies him as person 1842."
-      },
-      "source_ids": [
-        "S5"
-      ],
-      "blocking_gap": "No United Kingdom residence, private ownership evidence, birth detail, employer field or portrait connects the WT and Essendon executive to the owner record."
+        "S4",
+        "S9",
+        "S10"
+      ]
     }
   ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://www.forbes.com/profile/tim-roberts/",
+      "verification": "The profile matches Multiplex, Warburton Group and Australian geography.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The dedicated Forbes profile is an exact identity match."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.warburtongroup.com/",
+      "verification": "Warburton Group is the accepted owner’s family office and identifies its investment activities.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official company site for the family office led by Tim Roberts."
+      },
+      "source_ids": [
+        "S3",
+        "S10"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
   "sources": [
     {
       "id": "S1",
@@ -354,36 +415,41 @@
         "Earlier building-development background",
         "Exact-name collision involving documented business ownership but no established Australian identity"
       ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.perthnow.com.au/wa/multiplex-heir-tim-roberts-sues-over-unsuitable-30-million-yacht-ng-c773c021e4c358f83d54745e449aac8c",
+      "title": "Multiplex heir Tim Roberts sues over unsuitable yacht",
+      "publisher": "PerthNow",
+      "tier": 2,
+      "accessed_at": "2026-08-10",
+      "supports": [
+        "Direct identity bridge to Tim Roberts, son of Multiplex founder John Roberts",
+        "Australian and Western Australian business identity"
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.businessnews.com.au/Person/Tim-Roberts",
+      "title": "Tim Roberts",
+      "publisher": "Business News",
+      "tier": 2,
+      "accessed_at": "2026-08-10",
+      "supports": [
+        "Managing director of Warburton Group",
+        "Family relationship to Multiplex founder John Roberts",
+        "Multiplex sale and subsequent family-office investments"
+      ]
     }
   ],
   "uncertainties": [
     {
-      "topic": "Identity",
-      "detail": "The source record contains a common name and basic nationality and residence metadata but no unique employer, age, middle name, professional title, portrait or social profile."
-    },
-    {
-      "topic": "Strongest candidate",
-      "detail": "The Multiplex heir and Warburton Group founder best matches the Australian identity and expected ownership scale, but current sources place him in Perth and Western Australia rather than the United Kingdom."
-    },
-    {
-      "topic": "Ownership versus employment",
-      "detail": "The Multiplex candidate has documented inherited ownership and founded a family office. The Henry Boot, WT, Essendon and AlixPartners namesakes are documented principally through executive or partner roles; those appointments do not establish the owner identity or personal wealth source."
-    },
-    {
-      "topic": "Forbes profile",
-      "detail": "The dedicated Forbes profile is retained as an ambiguous candidate link, not a verified social proposal, because exact name and Australian citizenship do not overcome the missing business anchor and residence conflict."
-    },
-    {
-      "topic": "Personal details and socials",
-      "detail": "Middle names, birth details, known-for title and all social profiles remain unresolved. Candidate company pages and profiles must not be proposed until identity clears 85 confidence."
-    },
-    {
-      "topic": "Excluded material",
-      "detail": "Politics, controversies, allegations and legal matters, sanctions, private-family trivia beyond essential candidate ownership context, and all vessel research were excluded from identity resolution and editorial output."
+      "topic": "Residence field",
+      "detail": "The stored United Kingdom residence may be historical or stale; current public material centres Roberts in Perth, so no residence correction is proposed without a direct residence source."
     }
   ],
   "review": {
     "status": "pending",
-    "notes": "Identity remains below the 85-confidence gate. Keep biography, personal details, social links and substantive wealth classifications empty. A future review needs a reliable Multiplex, Warburton Group, Perth, Henry Boot, WT, age, middle-name, portrait or equivalent source-record link before selecting any candidate. No research has been compiled, approved or applied."
+    "notes": "Identity resolved as the Perth-based Multiplex heir and Warburton Group principal. Review the stale-residence caveat separately; no residence correction is proposed."
   }
 }

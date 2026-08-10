@@ -85,15 +85,15 @@
       "16": "TikTok"
     }
   },
-  "research_status": "not_applicable",
+  "research_status": "complete",
   "biography_brief": null,
   "editorial_assessment": null,
   "editorial_note": {
-    "plain_text": "The Oman Government record represents a public institution, not a natural person. Official Omani sources distinguish the Sultanate's government, its Council of Ministers and numerous government entities, while the database label identifies no single ministry, agency or legal body. Person-specific biography, private-wealth, birth, mortality and personal-social fields are therefore not applicable.",
+    "plain_text": "This record represents a continuing public institution rather than a natural person. The biography fields describe the institution itself. Person-specific birth, mortality, private-wealth and personal-social fields do not apply, and no current or former officeholder should be substituted for the institutional identity.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Current official Omani government sources establish an institutional state structure and show that the generic record label cannot be treated as a natural-person identity."
+      "reason": "The source name and official institutional sources directly establish the non-person identity."
     },
     "source_ids": [
       "S1",
@@ -170,9 +170,53 @@
       "S3"
     ]
   },
-  "biography": null,
-  "long_biography": null,
-  "proposed_details": [],
+  "biography": {
+    "plain_text": "The Government of Oman is the administration of the Sultanate of Oman. It operates through the Council of Ministers, ministries and public bodies responsible for policy, regulation and government services. The name refers to the state administration collectively as a public institution and should not identify the Sultan, a minister or another individual officeholder.",
+    "html": "<p>The Government of Oman is the administration of the Sultanate of Oman. It operates through the Council of Ministers, ministries and public bodies responsible for policy, regulation and government services. The name refers to the state administration collectively as a public institution and should not identify the Sultan, a minister or another individual officeholder.</p>\r\n",
+    "word_count": 54,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Oman’s unified government portal efficiently organises public services for residents, businesses and visitors across the Sultanate. It arranges transactions by user need and responsible authority, reflecting an administration distributed across specialised bodies rather than one office.\n\nThe Council of Ministers coordinates that wider system at national level. Its members oversee defined portfolios and collective state responsibilities, while departments and agencies carry out implementation. The institutional identity survives changes among ministers and officials. It therefore describes Oman’s continuing public administration, not the personal identity of the Sultan or any individual officeholder.",
+    "html": "<p>Oman’s unified government portal efficiently organises public services for residents, businesses and visitors across the Sultanate. It arranges transactions by user need and responsible authority, reflecting an administration distributed across specialised bodies rather than one office.</p>\r\n<p>The Council of Ministers coordinates that wider system at national level. Its members oversee defined portfolios and collective state responsibilities, while departments and agencies carry out implementation. The institutional identity survives changes among ministers and officials. It therefore describes Oman’s continuing public administration, not the personal identity of the Sultan or any individual officeholder.</p>\r\n",
+    "word_count": 90,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "biography",
+      "value": "<p>The Government of Oman is the administration of the Sultanate of Oman. It operates through the Council of Ministers, ministries and public bodies responsible for policy, regulation and government services. The name refers to the state administration collectively as a public institution and should not identify the Sultan, a minister or another individual officeholder.</p>\r\n",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
   "proposed_socials": [],
   "candidates_requiring_review": [],
   "sources": [
@@ -218,14 +262,13 @@
     }
   ],
   "uncertainties": [
-    "Oman Government is a generic database label rather than the official name of one ministry, agency or legal entity. No narrower institution should be substituted without stronger record-specific evidence.",
-    "Focused exact-name, alternative-name and site-restricted Forbes searches found no dedicated profile; Forbes articles about Oman were not treated as personal profiles.",
-    "The source record's Omanian nationality, Oman residence and birth-country values, Alive mortality value, and person-name fields are artefacts of storage in a person-oriented schema and were not proposed as institutional facts.",
-    "Personal biography, birth, mortality and social-profile enrichment is not applicable, so no personal detail or social proposals were created.",
-    "No private-person industry, wealth-origin or wealth-relationship classification can be inferred from public government or state assets."
+    {
+      "topic": "Institutional scope",
+      "detail": "The broad database label may encompass several ministries or public bodies; the biography therefore describes the continuing government or municipality without assigning a specific officeholder or agency."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": "Treat person_id 913 as an institutional edge case. Do not compile a person biography or map person-only fields until the underlying data model can represent a government record."
+    "notes": "Review the user-facing institutional biography; person-only fields remain intentionally unknown and no officeholder is substituted."
   }
 }

@@ -85,15 +85,15 @@
       "16": "TikTok"
     }
   },
-  "research_status": "not_applicable",
+  "research_status": "complete",
   "biography_brief": null,
   "editorial_assessment": null,
   "editorial_note": {
-    "plain_text": "This owner record represents the Government of Türkiye, a public state institution rather than a natural person. Official sources describe a constitutional system in which legislative, executive and judicial powers operate through distinct state organs, while the national e-Government directory lists the Republic's institutions. Person-specific biographies, birth data, private-wealth classifications and personal social-profile proposals are therefore not applicable. It must not be reassigned to a president, minister or other office-holder.",
+    "plain_text": "This record represents a continuing public institution rather than a natural person. The biography fields describe the institution itself. Person-specific birth, mortality, private-wealth and personal-social fields do not apply, and no current or former officeholder should be substituted for the institutional identity.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Current official Constitutional Court and e-Government sources establish the public institutional context and the distinct state organs through which governmental powers and services operate."
+      "reason": "The source name and official institutional sources directly establish the non-person identity."
     },
     "source_ids": [
       "S1",
@@ -165,9 +165,50 @@
       "S2"
     ]
   },
-  "biography": null,
-  "long_biography": null,
-  "proposed_details": [],
+  "biography": {
+    "plain_text": "The Government of Türkiye forms part of the Republic’s constitutional state system, alongside legislative and judicial institutions. National executive administration is carried out through public institutions listed on the country’s e-Government framework. The name represents the state administration collectively as an enduring public institution, not the president, a minister, civil servant or other individual officeholder.",
+    "html": "<p>The Government of Türkiye forms part of the Republic’s constitutional state system, alongside legislative and judicial institutions. National executive administration is carried out through public institutions listed on the country’s e-Government framework. The name represents the state administration collectively as an enduring public institution, not the president, a minister, civil servant or other individual officeholder.</p>\r\n",
+    "word_count": 55,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Türkiye’s constitutional system separates legislative, executive and judicial authority among the Republic’s state institutions. National administration is carried out through ministries and other public bodies whose services and responsibilities are organised through the country’s official e-Government framework.\n\nThose institutions continue while presidents, ministers and civil servants change over time. Together they provide regulation, administration and services across the state. The government name denotes the collective machinery that implements national policy and performs public administration across Türkiye. It does not identify a single officeholder, department or legal entity beyond that broad institutional designation.",
+    "html": "<p>Türkiye’s constitutional system separates legislative, executive and judicial authority among the Republic’s state institutions. National administration is carried out through ministries and other public bodies whose services and responsibilities are organised through the country’s official e-Government framework.</p>\r\n<p>Those institutions continue while presidents, ministers and civil servants change over time. Together they provide regulation, administration and services across the state. The government name denotes the collective machinery that implements national policy and performs public administration across Türkiye. It does not identify a single officeholder, department or legal entity beyond that broad institutional designation.</p>\r\n",
+    "word_count": 92,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "biography",
+      "value": "<p>The Government of Türkiye forms part of the Republic’s constitutional state system, alongside legislative and judicial institutions. National executive administration is carried out through public institutions listed on the country’s e-Government framework. The name represents the state administration collectively as an enduring public institution, not the president, a minister, civil servant or other individual officeholder.</p>\r\n",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
   "proposed_socials": [],
   "candidates_requiring_review": [],
   "sources": [
@@ -201,16 +242,13 @@
     }
   ],
   "uncertainties": [
-    "Turkey Government is a broad institutional label rather than the formal name of one legal entity. The evidence establishes its non-person public-government character but does not narrow the record to the Presidency, a ministry, an agency or another single institution.",
-    "The source values first_name=Turkey, last_name=Government, nationality=Turkish, birth_country=Turkey and mortality_status=Alive are person-schema artefacts. They are preserved because the current dossier contract has no institution-safe replacement values.",
-    "Human middle-name, gender, birthplace, birth-date and biography fields are deliberately left blank because they are inapplicable to a government.",
-    "All four wealth classifications are Unknown because the personal-wealth taxonomy does not apply to a state institution.",
-    "No president, vice-president, minister or other office-holder was substituted for this institutional record.",
-    "No dedicated Forbes profile for Turkey Government was found. The Forbes Turkey country page, Recep Tayyip Erdogan profile and results for Turkish officials or businesspeople were rejected as different record types or natural persons.",
-    "No personal social profile is proposed. Official government websites and institutional accounts are not personal profiles."
+    {
+      "topic": "Institutional scope",
+      "detail": "The broad database label may encompass several ministries or public bodies; the biography therefore describes the continuing government or municipality without assigning a specific officeholder or agency."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": "Institutional exception: preserve the non-person record, Unknown wealth classifications, null biography fields and empty personal-proposal arrays. Do not substitute an office-holder."
+    "notes": "Review the user-facing institutional biography; person-only fields remain intentionally unknown and no officeholder is substituted."
   }
 }

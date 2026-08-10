@@ -87,20 +87,19 @@
       "16": "TikTok"
     }
   },
-  "research_status": "not_applicable",
+  "research_status": "complete",
   "biography_brief": null,
   "editorial_assessment": null,
   "editorial_note": {
-    "plain_text": "This owner record represents the Government of the Russian Federation, a public institution rather than a natural person. Person-specific biography, birth, gender, private-wealth and personal social-profile enrichment is therefore not applicable. Any assets associated with the record belong to the institutional data path and must not be attributed to an individual officeholder.",
+    "plain_text": "This record represents a continuing public institution rather than a natural person. The biography fields describe the institution itself. Person-specific birth, mortality, private-wealth and personal-social fields do not apply, and no current or former officeholder should be substituted for the institutional identity.",
     "confidence": {
-      "score": 100,
+      "score": 99,
       "band": "very_high",
-      "reason": "The record's literal name and pseudo-person fields align with the official Government of the Russian Federation identity."
+      "reason": "The source name and official institutional sources directly establish the non-person identity."
     },
     "source_ids": [
       "S1",
-      "S2",
-      "S3"
+      "S2"
     ]
   },
   "forbes_profile": {
@@ -172,9 +171,50 @@
       "S3"
     ]
   },
-  "biography": null,
-  "long_biography": null,
-  "proposed_details": [],
+  "biography": {
+    "plain_text": "The Government of the Russian Federation is the federal executive institution. It operates through ministries and other federal bodies responsible for implementing legislation, administering national policy and coordinating public services. The name denotes the government collectively as a body and does not identify the prime minister, a minister, an agency head or another individual officeholder.",
+    "html": "<p>The Government of the Russian Federation is the federal executive institution. It operates through ministries and other federal bodies responsible for implementing legislation, administering national policy and coordinating public services. The name denotes the government collectively as a body and does not identify the prime minister, a minister, an agency head or another individual officeholder.</p>\r\n",
+    "word_count": 55,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Russia’s federal government is organised around a chairman, deputy chairmen and ministers whose portfolios cover national administration. The official government structure groups responsibilities across specialised ministries and services, allowing policy and implementation to be divided among distinct executive bodies.\n\nCollective cabinet work provides coordination across those portfolios, while each body retains defined functions. Changes in personnel or departmental organisation do not alter the continuing identity of the Government of the Russian Federation. The name therefore describes the cabinet-level institution within the federal system and cannot be treated as the personal identity of its chairman, a minister or an agency leader.",
+    "html": "<p>Russia’s federal government is organised around a chairman, deputy chairmen and ministers whose portfolios cover national administration. The official government structure groups responsibilities across specialised ministries and services, allowing policy and implementation to be divided among distinct executive bodies.</p>\r\n<p>Collective cabinet work provides coordination across those portfolios, while each body retains defined functions. Changes in personnel or departmental organisation do not alter the continuing identity of the Government of the Russian Federation. The name therefore describes the cabinet-level institution within the federal system and cannot be treated as the personal identity of its chairman, a minister or an agency leader.</p>\r\n",
+    "word_count": 100,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "biography",
+      "value": "<p>The Government of the Russian Federation is the federal executive institution. It operates through ministries and other federal bodies responsible for implementing legislation, administering national policy and coordinating public services. The name denotes the government collectively as a body and does not identify the prime minister, a minister, an agency head or another individual officeholder.</p>\r\n",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
   "proposed_socials": [],
   "candidates_requiring_review": [],
   "sources": [
@@ -220,14 +260,13 @@
     }
   ],
   "uncertainties": [
-    "The source system stores this institution in a person-shaped owner schema and marks mortality as Alive. Those fields do not convert the government into a natural person and are not enrichment targets.",
-    "The record names the Russian government broadly and does not identify which specific state body administers each associated asset. Research does not assign them to an individual president, prime minister, minister or official.",
-    "No Forbes profile applies. Forbes reporting about Russia or named officeholders is not a profile for the institutional owner record.",
-    "Personal name, birth, gender, biography, private-wealth and social-profile gaps remain intentionally unfilled because they are inapplicable to an institution.",
-    "The government website is used only to establish institutional identity. It is not proposed as a personal or company social link."
+    {
+      "topic": "Institutional scope",
+      "detail": "The broad database label may encompass several ministries or public bodies; the biography therefore describes the continuing government or municipality without assigning a specific officeholder or agency."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": "Confirm the institution classification and retain all person-specific proposals as empty. The record should remain on the non-person editorial-note path, with state-associated assets kept separate from any individual officeholder. No research has been compiled or applied."
+    "notes": "Review the user-facing institutional biography; person-only fields remain intentionally unknown and no officeholder is substituted."
   }
 }

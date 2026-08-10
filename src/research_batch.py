@@ -322,7 +322,7 @@ def apply_dossier(
     record_type = dossier.get("record_type", "person")
     research_status = dossier.get("research_status")
     unusable_research = (
-        record_type != "person"
+        record_type == "unresolved_placeholder"
         or research_status
         in {
             "identity_conflict",
@@ -362,7 +362,7 @@ def apply_dossier(
     long_biography = dossier.get("long_biography")
     biography_score: int | None = None
     long_biography_score: int | None = None
-    if record_type == "person":
+    if record_type in {"person", "institution"}:
         if not isinstance(biography, dict):
             raise ValueError(f"Owner {person_id} has no dossier biography")
         biography_score = _confidence_score(
@@ -377,7 +377,7 @@ def apply_dossier(
         )
     elif biography is not None or long_biography is not None:
         raise ValueError(
-            f"Owner {person_id} non-person dossier must not contain biographies"
+            f"Owner {person_id} unresolved dossier must not contain biographies"
         )
     if review_status == "rejected" or unusable_research:
         workflow = ensure_owner_workflow(owner)
@@ -1301,6 +1301,30 @@ def render_research_report(report: dict[str, Any]) -> str:
                   {assessment_text}<br>
                   <span class="muted">{editorial_plan}</span><br>
                   <span class="muted">{_e(assessment.get("notes"))}</span></p>
+            """
+        elif owner.get("record_type") == "institution":
+            summary_confidence = _confidence_badge(
+                owner.get("biography_confidence")
+            )
+            editorial_note = owner.get("editorial_note") or {}
+            biography_review = f"""
+                <h3>Short biography
+                  {_confidence_badge(owner.get(
+                      "biography_confidence"
+                  ))}</h3>
+                <blockquote>{_e(owner.get("biography"))}</blockquote>
+                <h3>Longer biography
+                  {_confidence_badge(owner.get(
+                      "long_biography_confidence"
+                  ))}</h3>
+                <div class="long-biography">
+                  {_plain_paragraphs(owner.get("long_biography"))}
+                </div>
+                <h3>Institution note
+                  {_confidence_badge(editorial_note.get(
+                      "confidence", {}
+                  ).get("score"))}</h3>
+                <blockquote>{_e(editorial_note.get("plain_text"))}</blockquote>
             """
         else:
             summary_confidence = (

@@ -265,9 +265,11 @@ Each schema-v7 person dossier contains an unordered, source-hidden
 `wealth_relationship` classifications. Both industry fields use the same
 dictionary, including `Cryptocurrency`: the first records the sector that
 created the original fortune, while the second records the current principal
-private interests. Institution and unresolved-placeholder dossiers instead
-contain an `editorial_note`; their biography values are null and never applied
-to person fields.
+private interests. Institution dossiers use the same short and longer
+biography fields for a durable user-facing description of the public body and
+also retain an `editorial_note` explaining the non-person classification.
+Unresolved-placeholder dossiers contain only the editorial note; their
+biography values remain null and are never applied.
 
 The compiler retains the brief, biographies or editorial note, record type, and
 all four classifications under each compiled owner's `ai_research` metadata

@@ -15,9 +15,9 @@ Use this file as Custom GPT Knowledge. Behaviour, workflow order, manual-mode ru
 
 | Section | Canonical source | SHA-256 |
 | --- | --- | --- |
-| Research and dossier contract | `references/research-contract.md` | `19966677f734919af089484bcfba995a68586a6f8bd408320d17097c7b1188f2` |
+| Research and dossier contract | `references/research-contract.md` | `898890825804748c5db0c7e9f78f29b33ac3350531f357d9d1047b05c3514336` |
 | Wealth classification | `references/wealth-classification.md` | `739320d90d80af42e52187bc782e2ae87d2aa43ca82f85a06b30ee8d5c36055d` |
-| Biography style | `references/biography-style.md` | `8621891b553fc17218b062a5b0b35bed5fbab220da831dc5a6ebf8552200b1ce` |
+| Biography style | `references/biography-style.md` | `5bf195683022fbd729219da39ce35f59066cd4b3769be6b22d3d21bddd417cb0` |
 | Editorial calibrations | `references/editorial-calibrations.md` | `b705d5ebe33444a8abfecbc7bb0100478dc88c5a848b8fb4121473853a7dc9dd` |
 
 ---
@@ -54,6 +54,12 @@ available:
 Do not continue below identity confidence 85. Use `identity_conflict` for
 contradictory matches and `insufficient_evidence` when no match is strong
 enough.
+
+`research_status=complete` means the identity and every proposed conclusion
+have reached a terminal research decision. It does not mean that every desired
+field is publicly knowable. Use supported `Unknown` classifications and record
+evidence limits under `uncertainties`; do not use `limited` merely because a
+resolved person has a sparse public profile.
 
 ## Forbes check
 
@@ -225,12 +231,21 @@ Allowed narrative shapes are:
 For a batch, distribute these choices according to the material. They are
 editorial planning metadata, not labels to mention in published prose.
 
-For `record_type=institution` or `unresolved_placeholder`, set
-`biography_brief`, `editorial_assessment`, `biography`, and `long_biography` to
-`null`. Populate a
-20-120 word `editorial_note` explaining the record type or identity limitation.
-That note is review context only and is never mapped into a website biography.
-Non-person dossiers must not propose personal details or social links.
+For `record_type=institution`, set `biography_brief` and
+`editorial_assessment` to `null`, populate the existing `biography` and
+`long_biography` objects with a durable description of the public body, and
+use `research_status=complete`. Also populate a 20-120 word `editorial_note`
+explaining the non-person classification. The biographies are mapped to the
+website fields; the note remains review context only.
+
+Institution dossiers may propose only the existing `biography` and
+`long_biography` detail fields; they must not propose person-specific details
+or social links.
+
+For `record_type=unresolved_placeholder`, set `biography_brief`,
+`editorial_assessment`, `biography`, and `long_biography` to `null`. Populate a
+20-120 word `editorial_note` explaining the identity limitation. Unresolved
+placeholders must not propose details or social links.
 
 The compiler always maps `biography.html` to the existing `details.biography`.
 When the source owner exposes `details.long_biography`, it also maps
@@ -482,19 +497,38 @@ action and must never be inferred from confidence.
 
 ## Non-person dossier shape
 
-An institution or unresolved placeholder retains the same evidence,
-classification, Forbes-check, uncertainty, and review objects, with these
-differences:
+An institution retains the same evidence, classification, Forbes-check,
+uncertainty, and review objects, with these differences:
 
 ```json
 {
   "schema_version": 7,
   "record_type": "institution",
-  "research_status": "not_applicable",
+  "research_status": "complete",
   "biography_brief": null,
   "editorial_assessment": null,
-  "biography": null,
-  "long_biography": null,
+  "biography": {
+    "plain_text": "A 50-55 word user-facing description of the institution.",
+    "html": "<p>A 50-55 word user-facing description of the institution.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official sources establish the institution and its role."
+    },
+    "source_ids": ["S1"]
+  },
+  "long_biography": {
+    "plain_text": "A 90-190 word institutional profile in two paragraphs.",
+    "html": "<p>A 90-190 word institutional profile in two paragraphs.</p>\r\n<p>The second paragraph supplies complementary durable context.</p>\r\n",
+    "word_count": 90,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official sources establish the institution and its role."
+    },
+    "source_ids": ["S1"]
+  },
   "editorial_note": {
     "plain_text": "This owner record represents a public institution rather than a natural person. Person-specific biography, private-wealth, and social-profile proposals are therefore not applicable.",
     "confidence": {
@@ -509,9 +543,15 @@ differences:
 }
 ```
 
+Institution biographies describe the continuing public body, its structure,
+and its durable functions. They must not be biographies of a current
+officeholder and must remain accurate after elections, appointments, or other
+changes of personnel.
+
 Use `record_type=unresolved_placeholder` with `research_status` set to
 `identity_conflict` or `insufficient_evidence` when the record purports to be
-a person but no defensible identity can be resolved.
+a person but no defensible identity can be resolved. These dossiers retain
+null biography fields and use only the editorial note.
 
 ---
 
@@ -817,7 +857,8 @@ classification until the system field becomes available.
 
 ## Two biography outputs
 
-Every `record_type=person` dossier contains two standalone biographies:
+Every resolved person and institution dossier contains two standalone
+biographies:
 
 - `biography`: a short identity card of 50-55 words in one paragraph;
 - `long_biography`: a concise profile of 90-190 words in exactly two
@@ -829,8 +870,11 @@ reorder, or paraphrase the short version's complete fact bundle. It must add a
 meaningful narrative layer. Do not target the midpoint of the permitted range.
 For a sparse public record, stop at 90-119 strong words rather than padding.
 
-Institutions and unresolved placeholders do not receive biographies. They use
-the schema-v7 `editorial_note` path described in the research contract.
+For institutions, these existing fields describe the continuing public body,
+its structure, and its durable functions without substituting a current
+officeholder. Institutions also retain the schema-v7 `editorial_note` for
+review context. Unresolved placeholders do not receive biographies and use
+only the note.
 
 ## Editorial separation
 
@@ -1083,9 +1127,10 @@ shipbuilding, competitive sailing, or a sustained ocean-research or
 philanthropic programme. Focus on the enduring career or programme, not the
 transient asset used within it.
 
-For governments, municipalities, unresolved placeholders, and other
-non-natural records, explain the institutional or identity limitation without
-turning the current vessel relationship into a substitute biography.
+For governments and municipalities, describe the continuing institution
+without turning the current vessel relationship into a substitute biography.
+For unresolved placeholders, explain the identity limitation only in the
+editorial note.
 
 ## Voice
 

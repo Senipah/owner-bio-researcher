@@ -2,7 +2,8 @@
 
 ## Two biography outputs
 
-Every `record_type=person` dossier contains two standalone biographies:
+Every resolved person and institution dossier contains two standalone
+biographies:
 
 - `biography`: a short identity card of 50-55 words in one paragraph;
 - `long_biography`: a concise profile of 90-190 words in exactly two
@@ -14,8 +15,11 @@ reorder, or paraphrase the short version's complete fact bundle. It must add a
 meaningful narrative layer. Do not target the midpoint of the permitted range.
 For a sparse public record, stop at 90-119 strong words rather than padding.
 
-Institutions and unresolved placeholders do not receive biographies. They use
-the schema-v7 `editorial_note` path described in the research contract.
+For institutions, these existing fields describe the continuing public body,
+its structure, and its durable functions without substituting a current
+officeholder. Institutions also retain the schema-v7 `editorial_note` for
+review context. Unresolved placeholders do not receive biographies and use
+only the note.
 
 ## Editorial separation
 
@@ -268,9 +272,10 @@ shipbuilding, competitive sailing, or a sustained ocean-research or
 philanthropic programme. Focus on the enduring career or programme, not the
 transient asset used within it.
 
-For governments, municipalities, unresolved placeholders, and other
-non-natural records, explain the institutional or identity limitation without
-turning the current vessel relationship into a substitute biography.
+For governments and municipalities, describe the continuing institution
+without turning the current vessel relationship into a substitute biography.
+For unresolved placeholders, explain the identity limitation only in the
+editorial note.
 
 ## Voice
 

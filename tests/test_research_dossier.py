@@ -645,14 +645,14 @@ def test_validator_rejects_more_than_two_long_biography_years(
     assert "explicit years; maximum is 2" in result.stderr
 
 
-def test_validator_accepts_non_person_editorial_note(tmp_path: Path) -> None:
+def test_validator_accepts_institution_biographies_and_note(
+    tmp_path: Path,
+) -> None:
     dossier = deepcopy(_calibration())
     dossier["record_type"] = "institution"
-    dossier["research_status"] = "not_applicable"
+    dossier["research_status"] = "complete"
     dossier["biography_brief"] = None
     dossier["editorial_assessment"] = None
-    dossier["biography"] = None
-    dossier["long_biography"] = None
     dossier["editorial_note"] = {
         "plain_text": (
             "This owner record represents a public institution rather than a "

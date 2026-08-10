@@ -31,6 +31,12 @@ Do not continue below identity confidence 85. Use `identity_conflict` for
 contradictory matches and `insufficient_evidence` when no match is strong
 enough.
 
+`research_status=complete` means the identity and every proposed conclusion
+have reached a terminal research decision. It does not mean that every desired
+field is publicly knowable. Use supported `Unknown` classifications and record
+evidence limits under `uncertainties`; do not use `limited` merely because a
+resolved person has a sparse public profile.
+
 ## Forbes check
 
 Search the exact name on Forbes and with `site:forbes.com/profile`. A verified
@@ -201,12 +207,21 @@ Allowed narrative shapes are:
 For a batch, distribute these choices according to the material. They are
 editorial planning metadata, not labels to mention in published prose.
 
-For `record_type=institution` or `unresolved_placeholder`, set
-`biography_brief`, `editorial_assessment`, `biography`, and `long_biography` to
-`null`. Populate a
-20-120 word `editorial_note` explaining the record type or identity limitation.
-That note is review context only and is never mapped into a website biography.
-Non-person dossiers must not propose personal details or social links.
+For `record_type=institution`, set `biography_brief` and
+`editorial_assessment` to `null`, populate the existing `biography` and
+`long_biography` objects with a durable description of the public body, and
+use `research_status=complete`. Also populate a 20-120 word `editorial_note`
+explaining the non-person classification. The biographies are mapped to the
+website fields; the note remains review context only.
+
+Institution dossiers may propose only the existing `biography` and
+`long_biography` detail fields; they must not propose person-specific details
+or social links.
+
+For `record_type=unresolved_placeholder`, set `biography_brief`,
+`editorial_assessment`, `biography`, and `long_biography` to `null`. Populate a
+20-120 word `editorial_note` explaining the identity limitation. Unresolved
+placeholders must not propose details or social links.
 
 The compiler always maps `biography.html` to the existing `details.biography`.
 When the source owner exposes `details.long_biography`, it also maps
@@ -458,19 +473,38 @@ action and must never be inferred from confidence.
 
 ## Non-person dossier shape
 
-An institution or unresolved placeholder retains the same evidence,
-classification, Forbes-check, uncertainty, and review objects, with these
-differences:
+An institution retains the same evidence, classification, Forbes-check,
+uncertainty, and review objects, with these differences:
 
 ```json
 {
   "schema_version": 7,
   "record_type": "institution",
-  "research_status": "not_applicable",
+  "research_status": "complete",
   "biography_brief": null,
   "editorial_assessment": null,
-  "biography": null,
-  "long_biography": null,
+  "biography": {
+    "plain_text": "A 50-55 word user-facing description of the institution.",
+    "html": "<p>A 50-55 word user-facing description of the institution.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official sources establish the institution and its role."
+    },
+    "source_ids": ["S1"]
+  },
+  "long_biography": {
+    "plain_text": "A 90-190 word institutional profile in two paragraphs.",
+    "html": "<p>A 90-190 word institutional profile in two paragraphs.</p>\r\n<p>The second paragraph supplies complementary durable context.</p>\r\n",
+    "word_count": 90,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official sources establish the institution and its role."
+    },
+    "source_ids": ["S1"]
+  },
   "editorial_note": {
     "plain_text": "This owner record represents a public institution rather than a natural person. Person-specific biography, private-wealth, and social-profile proposals are therefore not applicable.",
     "confidence": {
@@ -485,6 +519,12 @@ differences:
 }
 ```
 
+Institution biographies describe the continuing public body, its structure,
+and its durable functions. They must not be biographies of a current
+officeholder and must remain accurate after elections, appointments, or other
+changes of personnel.
+
 Use `record_type=unresolved_placeholder` with `research_status` set to
 `identity_conflict` or `insufficient_evidence` when the record purports to be
-a person but no defensible identity can be resolved.
+a person but no defensible identity can be resolved. These dossiers retain
+null biography fields and use only the editorial note.

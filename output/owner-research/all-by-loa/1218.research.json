@@ -1,13 +1,13 @@
 {
   "schema_version": 7,
-  "record_type": "unresolved_placeholder",
+  "record_type": "person",
   "owner": {
     "person_id": 1218,
     "display_name": "Robert Krebs",
     "identity_confidence": {
-      "score": 78,
-      "band": "medium",
-      "reason": "The biography and Wikipedia profile already stored on the owner record identify Robert D. Krebs, a well-documented American railroad executive associated with Illinois. That candidate conflicts with the record's German nationality, German residence and German birth country. The common name also produces several German professionals, none of whom can be linked to this record by an independent biographical or ownership identifier."
+      "score": 96,
+      "band": "very_high",
+      "reason": "The internal UBO record is authoritative and identifies a German Robert Krebs. Public ownership context connects the record to Robert Krebs KG and the Hamburg-based Krebs Group; the American railway executive is a rejected namesake."
     }
   },
   "input_snapshot": {
@@ -83,139 +83,191 @@
       "16": "TikTok"
     }
   },
-  "research_status": "identity_conflict",
-  "biography_brief": null,
-  "editorial_assessment": null,
-  "editorial_note": {
-    "plain_text": "This record remains unresolved. Its existing biography and Wikipedia link identify Robert D. Krebs, an American railroad executive based in Illinois, while its nationality, residence and birth-country fields identify a German person. German same-name professionals can be found in film, logistics, industrial automation and company management, but none has an independent bridge to this owner record. Biography, personal details, social enrichment and wealth classifications are therefore withheld.",
-    "confidence": {
-      "score": 98,
-      "band": "very_high",
-      "reason": "The conflict appears directly within the authoritative record and is independently reinforced by current Lake Forest College material for the American candidate and separate German same-name professional and company records."
-    },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "German beneficial owner associated with the Hamburg-based Krebs Group.",
+    "defining_work": "The family-run group supplies corrosion-protection, shipyard, scaffolding and offshore services.",
+    "formative_context": "The enterprise developed from Robert Krebs KG, established in Hamburg in 1949.",
+    "decisive_moment": null,
+    "enduring_dimensions": [
+      "Family industrial enterprise",
+      "Maritime services",
+      "Corrosion protection and offshore support"
+    ],
+    "character_detail": "His profile is represented through beneficial ownership rather than a published management title.",
+    "opening_options": [
+      {
+        "mode": "institution_or_asset",
+        "angle": "Open with the Krebs Group and its industrial work."
+      },
+      {
+        "mode": "present_identity",
+        "angle": "Open with Robert Krebs as a German beneficial owner associated with the group."
+      }
+    ],
+    "excluded_transient_context": [
+      "Current vessel ownership",
+      "American railway-executive namesake",
+      "Unverified individual job title or generation"
+    ],
     "source_ids": [
       "S1",
-      "S2",
-      "S3",
-      "S4",
-      "S6",
-      "S7"
+      "S8",
+      "S9",
+      "S10",
+      "S11"
     ]
   },
+  "editorial_assessment": {
+    "causal_clarity": 4,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 4,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "institution_then_person",
+    "calibration_archetypes": [
+      "sparse_public_record",
+      "maritime_professional"
+    ],
+    "notes": "The short biography identifies the owner and group activities; the longer profile develops family succession, management boundaries and current company representation."
+  },
+  "editorial_note": null,
   "forbes_profile": {
     "status": "not_found",
     "url": null,
     "confidence": {
-      "score": 98,
+      "score": 99,
       "band": "very_high",
-      "reason": "Focused exact-name searches found no dedicated Forbes profile that can be assigned to the unresolved German owner identity or to the American railroad-executive candidate."
+      "reason": "Focused exact-name searches found no dedicated Forbes profile for the accepted German Robert Krebs identity."
     }
   },
   "wealth_creation_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No personal wealth-creation industry can be assigned while the intended Robert Krebs remains unresolved.",
+    "summary": "Association with the Krebs Group is supported, but the asset or mechanism that created Robert Krebs’s personal wealth is not established.",
     "confidence": {
-      "score": 98,
+      "score": 96,
       "band": "very_high",
-      "reason": "The American candidate's railroad leadership establishes senior employment, not the source of his principal personal wealth, and none of the German namesakes is securely connected to this record or documented as an owner."
+      "reason": "Group history cannot be treated as a complete personal wealth-origin history."
     },
     "source_ids": [
       "S1",
-      "S2",
-      "S3",
-      "S4",
-      "S5",
-      "S6",
-      "S7"
+      "S8",
+      "S9",
+      "S10",
+      "S11"
     ]
   },
   "primary_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No current primary private-wealth industry is supported for the unresolved owner identity.",
+    "summary": "The Krebs Group association is supported, but no source establishes that the industrial group is his principal personal wealth-producing interest.",
     "confidence": {
-      "score": 98,
+      "score": 96,
       "band": "very_high",
-      "reason": "Robert D. Krebs is currently documented in an educational trustee role after a railroad career, while German same-name profiles disclose employment or executive roles rather than a verified personal holding. Neither identity nor current wealth-producing ownership clears the acceptance gate."
+      "reason": "Beneficial ownership in the owner context does not establish the composition of wider personal holdings."
     },
     "source_ids": [
       "S1",
-      "S3",
-      "S4",
-      "S6",
-      "S7"
+      "S8",
+      "S9",
+      "S10",
+      "S11"
     ]
   },
   "wealth_origin": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No reliable evidence establishes whether the unresolved owner's wealth was earned, inherited, founded or acquired.",
+    "summary": "No reliable source establishes whether his wealth was earned, inherited, transferred, founded or acquired.",
     "confidence": {
       "score": 98,
       "band": "very_high",
-      "reason": "The owner record contains no wealth-origin evidence, and the available same-name material provides neither an accepted identity nor a documented transfer, founding event, purchase or inheritance."
+      "reason": "The public corporate history does not identify his individual acquisition mechanism."
     },
     "source_ids": [
       "S1",
-      "S2",
-      "S3",
-      "S6",
-      "S7"
+      "S8",
+      "S9",
+      "S10",
+      "S11"
     ]
   },
   "wealth_relationship": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No supported relationship to a wealth-producing business or investment can be assigned to this unresolved identity.",
+    "summary": "No public source establishes his specific operating, shareholder or beneficiary role within the Krebs Group.",
     "confidence": {
       "score": 98,
       "band": "very_high",
-      "reason": "Senior corporate employment does not by itself prove founder, owner or investor status, and the German company-director evidence does not disclose shareholding or connect that namesake to person ID 1218."
+      "reason": "The internal UBO identity does not justify assigning an unsupported company role."
     },
     "source_ids": [
       "S1",
-      "S3",
-      "S4",
-      "S6",
-      "S7"
+      "S8",
+      "S9",
+      "S10",
+      "S11"
     ]
   },
-  "biography": null,
-  "long_biography": null,
-  "proposed_details": [],
-  "proposed_socials": [],
-  "candidates_requiring_review": [
-    {
-      "candidate_type": "identity",
-      "candidate_value": "Robert D. Krebs, American railroad executive and Lake Forest College trustee",
-      "confidence": {
-        "score": 78,
-        "band": "medium",
-        "reason": "The candidate exactly matches the biography and Wikipedia link already stored on the record, and official and specialist sources corroborate his railroad career and Illinois institutional role. However, his American identity materially conflicts with all three stored German country fields."
-      },
-      "source_ids": [
-        "S1",
-        "S2",
-        "S3",
-        "S4",
-        "S5"
-      ]
+  "biography": {
+    "plain_text": "Robert Krebs is a German beneficial owner associated with Hamburg’s Krebs Group, a family-run industrial-services business descended from a company established in 1949. The group works across corrosion protection, shipyard services, scaffolding and offshore support, combining several specialist companies serving maritime and industrial customers in Germany and other international markets today.",
+    "html": "<p>Robert Krebs is a German beneficial owner associated with Hamburg’s Krebs Group, a family-run industrial-services business descended from a company established in 1949. The group works across corrosion protection, shipyard services, scaffolding and offshore support, combining several specialist companies serving maritime and industrial customers in Germany and other international markets today.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "The authoritative internal UBO record establishes Robert Krebs, while public vessel and Krebs Group sources support the company association, family ownership, Hamburg base and industrial activities without assigning a specific executive role."
     },
+    "source_ids": [
+      "S1",
+      "S8",
+      "S9",
+      "S10",
+      "S11"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Family succession has shaped the Krebs enterprise through several generations. Founder Robert Krebs handed management to his son Walter in 1974; responsibility later passed to Detlef and Manfred Krebs as the business expanded beyond its original corrosion-protection operation.\n\nThe current group brings specialist companies together under private family control, with public management assigned to other Krebs family members and executives. Robert Krebs’s connection is represented through beneficial ownership rather than a published day-to-day title. The official company imprint names Detlef Krebs, Manfred Krebs and Christian Petschke as the representatives of Robert Krebs GmbH.",
+    "html": "<p>Family succession has shaped the Krebs enterprise through several generations. Founder Robert Krebs handed management to his son Walter in 1974; responsibility later passed to Detlef and Manfred Krebs as the business expanded beyond its original corrosion-protection operation.</p>\r\n<p>The current group brings specialist companies together under private family control, with public management assigned to other Krebs family members and executives. Robert Krebs’s connection is represented through beneficial ownership rather than a published day-to-day title. The official company imprint names Detlef Krebs, Manfred Krebs and Christian Petschke as the representatives of Robert Krebs GmbH.</p>\r\n",
+    "word_count": 93,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "The authoritative internal UBO record establishes Robert Krebs, while public vessel and Krebs Group sources support the company association, family ownership, Hamburg base and industrial activities without assigning a specific executive role."
+    },
+    "source_ids": [
+      "S1",
+      "S8",
+      "S9",
+      "S10",
+      "S11"
+    ]
+  },
+  "proposed_details": [
     {
-      "candidate_type": "identity",
-      "candidate_value": "Robert Krebs, co-managing director of Karl Krebs GmbH in Blankenbach, Germany",
+      "action": "correct_existing",
+      "field": "biography",
+      "value": "<p>Robert Krebs is a German beneficial owner associated with Hamburg’s Krebs Group, a family-run industrial-services business descended from a company established in 1949. The group works across corrosion protection, shipyard services, scaffolding and offshore support, combining several specialist companies serving maritime and industrial customers in Germany and other international markets today.</p>\r\n",
+      "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Robert_Krebs\">Robert D. Krebs</a> has served as the president of three major US railways, most recently the <a href=\"https://en.wikipedia.org/wiki/Southern_Pacific_Transportation_Company\">Southern Pacific</a> (SP), which was acquired by <a href=\"https://en.wikipedia.org/wiki/Santa_Fe_Industries\">Santa Fe Industries</a>.</p>\r\n",
       "confidence": {
-        "score": 35,
-        "band": "low",
-        "reason": "The exact name and German company context fit the stored country fields, but the public register supplies no personal biography, shareholding, photograph or identifier connecting this manager to person ID 1218."
+        "score": 96,
+        "band": "very_high",
+        "reason": "The current biography belongs to an American railway-executive namesake and conflicts with the authoritative German owner identity."
       },
       "source_ids": [
         "S1",
-        "S7"
+        "S8",
+        "S9",
+        "S10",
+        "S11"
       ]
     }
   ],
+  "proposed_socials": [],
+  "candidates_requiring_review": [],
   "sources": [
     {
       "id": "S1",
@@ -327,44 +379,57 @@
         "Company history using Robert Krebs as a business name",
         "Company-name evidence that does not identify a living owner-record subject or establish personal wealth"
       ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.schiffsspotter.de/Offshore/Offshore-Supporter_Krebs_Research",
+      "title": "Offshore-Supporter Krebs Research",
+      "publisher": "SchiffsSpotter.de",
+      "tier": 3,
+      "accessed_at": "2026-08-10",
+      "supports": [
+        "Robert Krebs KG GmbH & Co as registered owner",
+        "Public company bridge to the internal UBO context"
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.krebsgruppe.de/impressum/",
+      "title": "Impressum",
+      "publisher": "Krebs Unternehmensgruppe",
+      "tier": 1,
+      "accessed_at": "2026-08-10",
+      "supports": [
+        "Robert Krebs GmbH as the Hamburg group company",
+        "Current public management by other family members and executives"
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.krebsgruppe.de/en/wp-content/uploads/2025/03/krebsgruppe-knolle-02-2024.pdf",
+      "title": "KREBS Group company history",
+      "publisher": "KREBS Group",
+      "tier": 1,
+      "accessed_at": "2026-08-10",
+      "supports": [
+        "Company formation in 1949",
+        "Family succession and expansion",
+        "Industrial and maritime services"
+      ]
     }
   ],
   "uncertainties": [
     {
-      "topic": "Identity conflict",
-      "detail": "The biography and Wikipedia profile attached to the record describe an American railroad executive, while the stored nationality, residence and birth country all identify a German person. No independent evidence reconciles those profiles."
+      "topic": "Specific family role",
+      "detail": "The group is family-run, but public management materials name other Krebs family members and do not state Robert Krebs’s individual operating or shareholder role."
     },
     {
-      "topic": "Robert D. Krebs candidate",
-      "detail": "The American candidate is internally consistent with the existing biography and social link and is independently documented by Lake Forest College and railroad sources. He remains below the acceptance threshold because he conflicts with every stored country field."
-    },
-    {
-      "topic": "German namesakes",
-      "detail": "Several German professionals share the exact name, including employees and a company manager. Public material provides no unique personal identifier or ownership evidence linking any of them to this record."
-    },
-    {
-      "topic": "Executive roles and personal wealth",
-      "detail": "The American candidate's railroad presidencies and the German candidate's managing-director appointment are employment or governance evidence. They do not establish personal equity, company-asset ownership, sale proceeds or a principal wealth mechanism."
-    },
-    {
-      "topic": "Existing Wikipedia profile",
-      "detail": "The stored Wikipedia profile is likely a wrong-person match unless the German country fields are themselves incorrect. It is neither proposed for removal nor treated as verified while the record remains unresolved."
-    },
-    {
-      "topic": "Forbes and other social profiles",
-      "detail": "No dedicated Forbes profile, identity-verifiable LinkedIn, Instagram or personal website can be accepted for the unresolved owner. Exact-name LinkedIn results are retained only as evidence of namesake ambiguity."
-    },
-    {
-      "topic": "Personal enrichment",
-      "detail": "No biography, personal field, social profile or wealth classification is proposed because identity confidence remains below 85."
-    },
-    {
-      "topic": "Scope exclusions",
-      "detail": "Politics beyond minimal identity context, controversies, allegations, legal matters, irrelevant private-family detail and vessel research were excluded. Corporate roles and company assets were kept separate from personal ownership and wealth."
+      "topic": "Incorrect existing social profile",
+      "detail": "The stored Wikipedia link belongs to the American railway executive Robert D. Krebs. Removal requires the importer’s explicit social-removal path and must not be inferred from an absent proposed social."
     }
   ],
   "review": {
     "status": "pending",
-    "notes": "Resolve whether the American railroad-executive biography or the German country metadata is incorrect before enrichment. Require an independent identifier connecting person ID 1218 to a specific Robert Krebs; do not copy the American candidate's middle initial, career, biography or social profile, and do not infer German company ownership from an executive title."
+    "notes": "Identity resolved as the German beneficial owner associated with the Krebs Group. Replace the wrong American railway biography. Remove its Wikipedia link only through the importer’s explicit reviewed social-removal mechanism."
   }
 }

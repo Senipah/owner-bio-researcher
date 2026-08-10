@@ -85,15 +85,15 @@
       "16": "TikTok"
     }
   },
-  "research_status": "not_applicable",
+  "research_status": "complete",
   "biography_brief": null,
   "editorial_assessment": null,
   "editorial_note": {
-    "plain_text": "This owner record represents the Government of Egypt, an executive and administrative institution of the Egyptian state rather than a natural person. Person-specific biographies, birth data, private-wealth classifications and personal social-profile proposals are therefore not applicable. It should remain an institutional record and must not be reassigned to a president, minister or other office-holder.",
+    "plain_text": "This record represents a continuing public institution rather than a natural person. The biography fields describe the institution itself. Person-specific birth, mortality, private-wealth and personal-social fields do not apply, and no current or former officeholder should be substituted for the institutional identity.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Current official Egyptian sources define the government as the state's supreme executive and administrative body and show the Cabinet as an institutional structure."
+      "reason": "The source name and official institutional sources directly establish the non-person identity."
     },
     "source_ids": [
       "S1",
@@ -165,9 +165,50 @@
       "S2"
     ]
   },
-  "biography": null,
-  "long_biography": null,
-  "proposed_details": [],
+  "biography": {
+    "plain_text": "The Government of Egypt is the executive and administrative authority of the Arab Republic of Egypt. Working through the Cabinet and ministries, it develops public policy, implements legislation and directs state administration. The name represents the continuing government as a public institution rather than the president, prime minister, a particular ministry or any individual officeholder.",
+    "html": "<p>The Government of Egypt is the executive and administrative authority of the Arab Republic of Egypt. Working through the Cabinet and ministries, it develops public policy, implements legislation and directs state administration. The name represents the continuing government as a public institution rather than the president, prime minister, a particular ministry or any individual officeholder.</p>\r\n",
+    "word_count": 55,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Egypt’s Cabinet forms the central framework for national executive administration. Led by the prime minister, ministers direct portfolios covering the state’s major policy and service responsibilities, coordinate government programmes and oversee the work of their ministries.\n\nThe government operates as a continuing institution even when presidents, prime ministers or cabinet members change. Its administrative identity encompasses the collective machinery responsible for implementing legislation and managing national policy across the Arab Republic of Egypt. The name therefore belongs to the institutional government and not to any individual officeholder, ministry, department or public official.",
+    "html": "<p>Egypt’s Cabinet forms the central framework for national executive administration. Led by the prime minister, ministers direct portfolios covering the state’s major policy and service responsibilities, coordinate government programmes and oversee the work of their ministries.</p>\r\n<p>The government operates as a continuing institution even when presidents, prime ministers or cabinet members change. Its administrative identity encompasses the collective machinery responsible for implementing legislation and managing national policy across the Arab Republic of Egypt. The name therefore belongs to the institutional government and not to any individual officeholder, ministry, department or public official.</p>\r\n",
+    "word_count": 92,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "biography",
+      "value": "<p>The Government of Egypt is the executive and administrative authority of the Arab Republic of Egypt. Working through the Cabinet and ministries, it develops public policy, implements legislation and directs state administration. The name represents the continuing government as a public institution rather than the president, prime minister, a particular ministry or any individual officeholder.</p>\r\n",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
   "proposed_socials": [],
   "candidates_requiring_review": [],
   "sources": [
@@ -200,16 +241,13 @@
     }
   ],
   "uncertainties": [
-    "This source record uses a person-shaped schema for a non-natural-person institution. Identity confidence refers to the institutional label and does not identify a human owner.",
-    "The source values first_name=Egypt, last_name=Government, nationality=Egyptian, birth_country=Egypt and mortality_status=Alive are person-schema artefacts. They are preserved because the current dossier contract has no institution-safe replacement values.",
-    "Human middle-name, gender, birthplace, birth-date and biography fields are deliberately left blank because they are inapplicable to a government.",
-    "All four wealth objects are Unknown because the personal-wealth taxonomy does not apply to a state institution; public and state assets are not treated as private wealth.",
-    "No president, prime minister, minister or other office-holder was substituted for the institutional record.",
-    "No dedicated Forbes profile for Egypt Government was found. Forbes results for Egyptian officials and businesspeople were rejected as different natural persons.",
-    "No personal social profile is proposed. Official government websites and institutional accounts are not personal profiles."
+    {
+      "topic": "Institutional scope",
+      "detail": "The broad database label may encompass several ministries or public bodies; the biography therefore describes the continuing government or municipality without assigning a specific officeholder or agency."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": "Institutional exception: preserve the non-person record, all four Unknown wealth objects, null biography fields and empty personal-proposal arrays. Public and state assets are not treated as private wealth."
+    "notes": "Review the user-facing institutional biography; person-only fields remain intentionally unknown and no officeholder is substituted."
   }
 }

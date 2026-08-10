@@ -85,18 +85,17 @@
       "16": "TikTok"
     }
   },
-  "research_status": "not_applicable",
+  "research_status": "complete",
   "biography_brief": null,
   "editorial_assessment": null,
   "editorial_note": {
-    "plain_text": "This owner record represents the Government of Iraq, a public institution rather than a natural person. Person-specific biography, birth, gender, private-wealth and personal social-profile enrichment is therefore not applicable. Any assets associated with the record belong to the institutional data path and must not be attributed to an individual president, prime minister, minister or other officeholder.",
+    "plain_text": "This record represents a continuing public institution rather than a natural person. The biography fields describe the institution itself. Person-specific birth, mortality, private-wealth and personal-social fields do not apply, and no current or former officeholder should be substituted for the institutional identity.",
     "confidence": {
-      "score": 100,
+      "score": 99,
       "band": "very_high",
-      "reason": "The literal record name and pseudo-person fields align with Iraq's official government portal and constitutional description of the Republic's public governing institutions."
+      "reason": "The source name and official institutional sources directly establish the non-person identity."
     },
     "source_ids": [
-      "S1",
       "S2",
       "S3"
     ]
@@ -170,9 +169,50 @@
       "S3"
     ]
   },
-  "biography": null,
-  "long_biography": null,
-  "proposed_details": [],
+  "biography": {
+    "plain_text": "The Government of Iraq is the federal executive institution of the Republic of Iraq. It operates through the Council of Ministers and public authorities responsible for implementing legislation, administering national policy and delivering state services. The name denotes this continuing public institution, not an individual president, prime minister, minister or other officeholder.",
+    "html": "<p>The Government of Iraq is the federal executive institution of the Republic of Iraq. It operates through the Council of Ministers and public authorities responsible for implementing legislation, administering national policy and delivering state services. The name denotes this continuing public institution, not an individual president, prime minister, minister or other officeholder.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+    },
+    "source_ids": [
+      "S2",
+      "S3"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Iraq’s Constitution establishes a federal parliamentary republic in which the Council of Ministers exercises the executive responsibilities assigned to the national government. Led by the prime minister, the council develops public policy, implements laws and coordinates ministries and other federal authorities.\n\nThe government’s work extends across national administration, regulation and public services within Iraq’s constitutional system. Presidents, prime ministers and ministers hold time-limited offices, while the government remains the continuing institutional body through which executive functions are performed. The name represents that public institution collectively, rather than any current or former officeholder.",
+    "html": "<p>Iraq’s Constitution establishes a federal parliamentary republic in which the Council of Ministers exercises the executive responsibilities assigned to the national government. Led by the prime minister, the council develops public policy, implements laws and coordinates ministries and other federal authorities.</p>\r\n<p>The government’s work extends across national administration, regulation and public services within Iraq’s constitutional system. Presidents, prime ministers and ministers hold time-limited offices, while the government remains the continuing institutional body through which executive functions are performed. The name represents that public institution collectively, rather than any current or former officeholder.</p>\r\n",
+    "word_count": 92,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+    },
+    "source_ids": [
+      "S2",
+      "S3"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "biography",
+      "value": "<p>The Government of Iraq is the federal executive institution of the Republic of Iraq. It operates through the Council of Ministers and public authorities responsible for implementing legislation, administering national policy and delivering state services. The name denotes this continuing public institution, not an individual president, prime minister, minister or other officeholder.</p>\r\n",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    }
+  ],
   "proposed_socials": [],
   "candidates_requiring_review": [],
   "sources": [
@@ -221,28 +261,12 @@
   ],
   "uncertainties": [
     {
-      "topic": "Person-shaped source schema",
-      "detail": "The source system stores Iraq Government in a person-shaped record and marks mortality as Alive. Those fields do not convert the institution into a natural person and are not enrichment targets."
-    },
-    {
       "topic": "Institutional scope",
-      "detail": "The record names the Iraqi government broadly and does not identify which ministry, office or other public body administers the associated asset. Research does not assign it to an individual officeholder."
-    },
-    {
-      "topic": "Forbes",
-      "detail": "No Forbes profile applies. Forbes reporting about Iraq, its economy, government policy or named officials is not a dedicated profile for this institutional owner record."
-    },
-    {
-      "topic": "Personal enrichment",
-      "detail": "Personal name, birth, gender, biography, private-wealth and social-profile gaps remain intentionally unfilled because they are inapplicable to an institution."
-    },
-    {
-      "topic": "Official institutional links",
-      "detail": "Official Iraqi government websites are used only to establish institutional identity and constitutional structure. They are not proposed as personal or company social links."
+      "detail": "The broad database label may encompass several ministries or public bodies; the biography therefore describes the continuing government or municipality without assigning a specific officeholder or agency."
     }
   ],
   "review": {
     "status": "pending",
-    "notes": "Confirm the institution classification and retain all person-specific proposals as empty. The record should remain on the non-person editorial-note path, with state-associated assets kept separate from any individual officeholder. No research has been compiled or applied."
+    "notes": "Review the user-facing institutional biography; person-only fields remain intentionally unknown and no officeholder is substituted."
   }
 }

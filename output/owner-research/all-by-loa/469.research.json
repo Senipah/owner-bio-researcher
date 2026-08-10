@@ -85,7 +85,7 @@
       "16": "TikTok"
     }
   },
-  "research_status": "not_applicable",
+  "research_status": "complete",
   "forbes_profile": {
     "status": "not_found",
     "url": null,
@@ -156,11 +156,11 @@
   "biography_brief": null,
   "editorial_assessment": null,
   "editorial_note": {
-    "plain_text": "This owner record represents the City of Rijeka, a Croatian local-government institution, not a natural person. The municipality acts through a directly elected mayor, City Council and administrative departments exercising statutory self-government functions. Person-specific biography, private-wealth classifications, birth and mortality fields, and personal social profiles therefore do not apply. No current mayor, councillor or other office-holder should be substituted for the institutional record.",
+    "plain_text": "This record represents a continuing public institution rather than a natural person. The biography fields describe the institution itself. Person-specific birth, mortality, private-wealth and personal-social fields do not apply, and no current or former officeholder should be substituted for the institutional identity.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Current official municipal administration, City Council and mayoral-powers pages directly establish the institutional identity, government structure and public functions described."
+      "reason": "The source name and official institutional sources directly establish the non-person identity."
     },
     "source_ids": [
       "S1",
@@ -168,9 +168,53 @@
       "S3"
     ]
   },
-  "biography": null,
-  "long_biography": null,
-  "proposed_details": [],
+  "biography": {
+    "plain_text": "The City of Rijeka is Croatia’s principal port city and a local-government institution with elected and administrative bodies. Its mayor, City Council and municipal departments exercise the city’s statutory responsibilities and deliver local services. The name represents the municipality as a continuing public body, rather than any mayor, councillor or municipal employee.",
+    "html": "<p>The City of Rijeka is Croatia’s principal port city and a local-government institution with elected and administrative bodies. Its mayor, City Council and municipal departments exercise the city’s statutory responsibilities and deliver local services. The name represents the municipality as a continuing public body, rather than any mayor, councillor or municipal employee.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Rijeka’s municipal government combines elected representation with professional administration. The City Council adopts local decisions and oversees matters within the municipality’s authority, while the mayor performs executive functions and directs implementation through the city administration.\n\nAdministrative departments manage responsibilities such as local development, services, finance and other statutory municipal work. Mayors and councillors change through elections, but the City of Rijeka continues as a Croatian local-government body with its own legal identity and public duties. The name refers to that municipality today, not to any individual mayor, councillor or employee.",
+    "html": "<p>Rijeka’s municipal government combines elected representation with professional administration. The City Council adopts local decisions and oversees matters within the municipality’s authority, while the mayor performs executive functions and directs implementation through the city administration.</p>\r\n<p>Administrative departments manage responsibilities such as local development, services, finance and other statutory municipal work. Mayors and councillors change through elections, but the City of Rijeka continues as a Croatian local-government body with its own legal identity and public duties. The name refers to that municipality today, not to any individual mayor, councillor or employee.</p>\r\n",
+    "word_count": 90,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "biography",
+      "value": "<p>The City of Rijeka is Croatia’s principal port city and a local-government institution with elected and administrative bodies. Its mayor, City Council and municipal departments exercise the city’s statutory responsibilities and deliver local services. The name represents the municipality as a continuing public body, rather than any mayor, councillor or municipal employee.</p>\r\n",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official government or municipal sources establish the institution, its continuing public role and its durable administrative structure."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
   "proposed_socials": [],
   "candidates_requiring_review": [],
   "sources": [
@@ -220,15 +264,13 @@
     }
   ],
   "uncertainties": [
-    "The input label Rijeka City corresponds to the official English institutional name City of Rijeka. The immutable display name was preserved.",
-    "The source system stores Rijeka City in a person-shaped record. No current or former mayor, councillor or other human identity should be substituted, and the record should ideally be migrated to an organisation or government-owner entity type.",
-    "The input's human-specific nationality, residence, mortality and blank birth, gender and biography fields do not meaningfully apply to a municipality. They were preserved as immutable input, with no personal proposals made.",
-    "All three wealth dimensions are Unknown by design because municipal budgets, property and public functions are not a natural person's private wealth.",
-    "Fresh Forbes searches found no applicable profile for Rijeka City or the City of Rijeka; incidental article mentions do not constitute a profile.",
-    "The municipality publishes official institutional web and social channels, but proposing them through personal or company link types would misstate their nature."
+    {
+      "topic": "Institutional scope",
+      "detail": "The broad database label may encompass several ministries or public bodies; the biography therefore describes the continuing government or municipality without assigning a specific officeholder or agency."
+    }
   ],
   "review": {
     "status": "pending",
-    "notes": "This is an institution-limitation dossier. Review should preserve the City of Rijeka identity, the Unknown personal-wealth classifications and the non-applicability of human fields; consider migrating the source record to an organisation or government-owner entity type before any live update."
+    "notes": "Review the user-facing institutional biography; person-only fields remain intentionally unknown and no officeholder is substituted."
   }
 }
