@@ -74,7 +74,7 @@ Every dossier must contain all four objects:
 show to reviewers and, when the corresponding website field exists, write to
 the select control. The validator requires the two to match.
 
-Use a non-`unknown` classification only at confidence 85 or higher. Below that
+Use a non-`unknown` classification only at confidence 70 or higher. Below that
 threshold, emit `unknown`, explain what could and could not be established, and
 put any plausible alternative in `candidates_requiring_review`.
 

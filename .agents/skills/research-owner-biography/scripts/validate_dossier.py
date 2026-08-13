@@ -73,7 +73,8 @@ NARRATIVE_SHAPES = {
     "public_role_then_foundation",
 }
 FORBES_STATUSES = {"verified", "not_found", "ambiguous", "unavailable"}
-REVIEW_STATUSES = {"pending", "approved", "rejected"}
+REVIEW_STATUSES = {"pending", "complete", "approved", "rejected"}
+IMPORT_CONFIDENCE_THRESHOLD = 70
 INDUSTRIES = {
     "automotive": "Automotive",
     "construction_engineering": "Construction & Engineering",
@@ -209,10 +210,11 @@ def _classification(
         score is not None
         and classification in choices
         and classification != "unknown"
-        and score < 85
+        and score < IMPORT_CONFIDENCE_THRESHOLD
     ):
         errors.append(
-            f"{path} must use classification 'unknown' below confidence 85"
+            f"{path} must use classification 'unknown' below confidence "
+            f"{IMPORT_CONFIDENCE_THRESHOLD}"
         )
     _source_ids(
         value.get("source_ids"),
@@ -793,8 +795,11 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
                 errors.append(f"{path} must be an object")
                 continue
             score = _confidence(item.get("confidence"), f"{path}.confidence", errors)
-            if score is not None and score < 85:
-                errors.append(f"{path} confidence must be at least 85")
+            if score is not None and score < IMPORT_CONFIDENCE_THRESHOLD:
+                errors.append(
+                    f"{path} confidence must be at least "
+                    f"{IMPORT_CONFIDENCE_THRESHOLD}"
+                )
             _source_ids(
                 item.get("source_ids"),
                 f"{path}.source_ids",
@@ -878,8 +883,10 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
     if not isinstance(review, dict):
         errors.append("review must be an object")
     elif review.get("status") not in REVIEW_STATUSES:
-        errors.append("review.status must be pending, approved, or rejected")
-    elif review.get("status") != "pending":
+        errors.append(
+            "review.status must be pending, complete, approved, or rejected"
+        )
+    elif review.get("status") in {"approved", "rejected"}:
         for key in ("reviewed_by", "reviewed_at"):
             if not isinstance(review.get(key), str) or not review[key].strip():
                 errors.append(

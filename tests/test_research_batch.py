@@ -57,7 +57,7 @@ def _owner(
     return owner
 
 
-def _dossier(person_id: int, name: str, review_status: str = "pending") -> dict:
+def _dossier(person_id: int, name: str, review_status: str = "complete") -> dict:
     short_biography = (
         f"{name} is an industrial entrepreneur whose manufacturing business "
         "business from an early technical innovation. After developing the "
@@ -215,8 +215,8 @@ def _dossier(person_id: int, name: str, review_status: str = "pending") -> dict:
         "candidates_requiring_review": [],
         "uncertainties": [],
         "review": (
-            {"status": "pending"}
-            if review_status == "pending"
+            {"status": review_status}
+            if review_status in {"pending", "complete"}
             else {
                 "status": review_status,
                 "reviewed_by": "CEO",
@@ -679,7 +679,7 @@ def test_compiles_pending_preview_without_changing_baseline() -> None:
     owner = _owner(10, "First Owner", 1)
     document["owners"] = [owner]
     baseline_before = owner["_baseline"]
-    dossier = _dossier(10, "First Owner")
+    dossier = _dossier(10, "First Owner", review_status="pending")
 
     derived, report = compile_research_batch(
         document,
@@ -796,22 +796,33 @@ def test_compiles_and_renders_all_by_loa_unranked_owner() -> None:
     assert "No ranked current vessel" in rendered
 
 
-def test_mark_ai_enriched_requires_approved_dossier() -> None:
+def test_mark_ai_enriched_requires_complete_or_approved_dossier() -> None:
     document = new_document()
     document["owners"] = [_owner(10, "First Owner", 1)]
 
-    with pytest.raises(ValueError, match="must be approved"):
+    with pytest.raises(ValueError, match="must be complete or approved"):
         compile_research_batch(
             document,
-            {10: _dossier(10, "First Owner")},
+            {10: _dossier(10, "First Owner", review_status="pending")},
             {10: Path("output/10.research.json")},
             source_path="output/source.json",
             limit=1,
             mark_ai_enriched=True,
         )
 
-    approved = _dossier(10, "First Owner", review_status="approved")
+    complete = _dossier(10, "First Owner")
     derived, _ = compile_research_batch(
+        document,
+        {10: complete},
+        {10: Path("output/10.research.json")},
+        source_path="output/source.json",
+        limit=1,
+        mark_ai_enriched=True,
+    )
+    assert derived["owners"][0]["workflow"]["ai_enriched"] is True
+
+    approved = _dossier(10, "First Owner", review_status="approved")
+    legacy_derived, _ = compile_research_batch(
         document,
         {10: approved},
         {10: Path("output/10.research.json")},
@@ -819,7 +830,36 @@ def test_mark_ai_enriched_requires_approved_dossier() -> None:
         limit=1,
         mark_ai_enriched=True,
     )
-    assert derived["owners"][0]["workflow"]["ai_enriched"] is True
+    assert legacy_derived["owners"][0]["workflow"]["ai_enriched"] is True
+
+
+def test_import_confidence_threshold_is_70() -> None:
+    document = new_document()
+    document["owners"] = [_owner(10, "First Owner", 1)]
+    accepted = _dossier(10, "First Owner")
+    accepted["proposed_details"][0]["confidence"]["score"] = 70
+
+    derived, _ = compile_research_batch(
+        document,
+        {10: accepted},
+        {10: Path("output/10.research.json")},
+        source_path="output/source.json",
+        limit=1,
+        mark_ai_enriched=True,
+    )
+    assert derived["owners"][0]["details"]["middle_names"]["value"] == "Example"
+
+    rejected = _dossier(10, "First Owner")
+    rejected["proposed_details"][0]["confidence"]["score"] = 69
+    with pytest.raises(ValueError, match="between 70 and 100"):
+        compile_research_batch(
+            document,
+            {10: rejected},
+            {10: Path("output/10.research.json")},
+            source_path="output/source.json",
+            limit=1,
+            mark_ai_enriched=True,
+        )
 
 
 def test_rejected_dossier_keeps_owner_unchanged() -> None:
@@ -844,7 +884,7 @@ def test_rejected_dossier_keeps_owner_unchanged() -> None:
     assert report["owners"][0]["changes"] == []
 
 
-def test_unresolved_dossier_is_included_unchanged_for_pending_review() -> None:
+def test_unresolved_dossier_is_included_unchanged_when_complete() -> None:
     document = new_document()
     source_owner = _owner(10, "Unknown Owner", 1)
     document["owners"] = [source_owner]
@@ -894,15 +934,15 @@ def test_unresolved_dossier_is_included_unchanged_for_pending_review() -> None:
     assert report["owners"][0]["identity_confidence"] == 5
     assert report["owners"][0]["changes"] == []
 
-    with pytest.raises(ValueError, match="cannot be marked AI enriched"):
-        compile_research_batch(
-            document,
-            {10: unresolved},
-            {10: Path("output/10.research.json")},
-            source_path="output/source.json",
-            limit=1,
-            mark_ai_enriched=True,
-        )
+    accepted, _ = compile_research_batch(
+        document,
+        {10: unresolved},
+        {10: Path("output/10.research.json")},
+        source_path="output/source.json",
+        limit=1,
+        mark_ai_enriched=True,
+    )
+    assert accepted["owners"][0]["workflow"]["ai_enriched"] is False
 
 
 def test_institution_dossier_applies_existing_biography_fields() -> None:

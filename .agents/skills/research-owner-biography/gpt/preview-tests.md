@@ -145,5 +145,5 @@ Pass when:
 - `input_snapshot.source_path` is `manual-chat-input`;
 - inventory arrays, social lookup, and both proposal arrays are empty;
 - all source IDs resolve;
-- review remains pending; and
+- review is marked complete; and
 - the response says the dossier was not owner-input-validated or applied.

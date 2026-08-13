@@ -64,7 +64,10 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--mark-ai-enriched",
         action="store_true",
-        help="Require approved dossiers and set workflow.ai_enriched=true.",
+        help=(
+            "Require complete or legacy-approved dossiers and set "
+            "workflow.ai_enriched=true for usable research."
+        ),
     )
     return parser
 
@@ -167,7 +170,7 @@ def main() -> int:
     )
     if not args.mark_ai_enriched:
         print(
-            "Review state is pending; workflow.ai_enriched remains false "
+            "workflow.ai_enriched remains false "
             "and the file is not eligible for --ai-enriched-only updates."
         )
     return 0

@@ -1,0 +1,536 @@
+{
+  "schema_version": 7,
+  "record_type": "person",
+  "owner": {
+    "person_id": 353,
+    "display_name": "Sir David Brown",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The owner record's exact Wikipedia link, British nationality, Monaco residence, honorific and age of 89 align with the 1904-1993 industrialist who led David Brown Corporation and owned Aston Martin. Aston Martin, the National Portrait Gallery, the London Gazette and Motor Sport independently match his name, business role, knighthood, age and Monaco death. The source record's apparent current vessel relationship and 2020 age-reference date are stale data conflicts rather than evidence of a competing identity."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Sir David Brown was a British industrialist who expanded his family's Huddersfield engineering group and owned Aston Martin and Lagonda.",
+    "defining_work": "He combined Aston Martin's chassis with Lagonda's engine, established the DB model line and backed the racing programme that won Le Mans and the World Sports Car Championship.",
+    "formative_context": "Brown entered the family gear business as an engineering apprentice, gaining practical factory experience before taking responsibility for the company founded by his grandfather.",
+    "decisive_moment": "He used the family engineering group's facilities, technical expertise and capital to buy Aston Martin and Lagonda in 1947.",
+    "enduring_dimensions": [
+      "Expansion of a family-owned gear business into foundries, tractors and international manufacturing",
+      "Direct technical and personal involvement with Aston Martin's racing team",
+      "A management style that combined practical engineering judgement with delegated authority"
+    ],
+    "character_detail": "Driver Roy Salvadori remembered Brown sharing the team's hotel, knowing mechanics by name and remaining personally close to drivers.",
+    "opening_options": [
+      {
+        "mode": "defining_achievement",
+        "angle": "Lead with Brown's use of racing to establish Aston Martin's post-war reputation."
+      },
+      {
+        "mode": "institution_or_asset",
+        "angle": "Open with the expansion of the David Brown engineering group under his leadership."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Begin with the acquisition and combination of Aston Martin and Lagonda."
+      }
+    ],
+    "excluded_transient_context": [
+      "Current vessel ownership, specifications and ranking",
+      "Current market values and historical purchase prices in published prose",
+      "Source attribution and confidence deliberation",
+      "Unverified personal social accounts",
+      "The source record's stale current-owner and age-reference fields"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "defining_achievement",
+    "narrative_shape": "achievement_then_backstory",
+    "calibration_archetypes": [
+      "inherited_operator",
+      "acquirer_consolidator"
+    ],
+    "notes": "The shared anchors are Brown and Aston Martin. The short biography explains the family engineering platform, acquisitions, engine-chassis combination and DB identity; the long profile deliberately omits those points and instead develops his racing programme, practical engineering background and close relationship with the team. Reducing the long profile to the short version would lose the operating and character material."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Exact-name Forbes searches and a focused site:forbes.com/profile search found historical Forbes articles about Aston Martin and unrelated Brown profiles, but no dedicated identity-matched profile for Sir David Brown."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "The family fortune originated in industrial gear manufacturing, and Brown expanded the business into foundries, tractors, automotive production and other engineering operations.",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Aston Martin's official history identifies the grandfather-founded engineering firm and Brown's later industrial acquisitions, while TIME's contemporary profile documents the family-owned group's gears, castings, tractors and automotive manufacturing."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "primary_industry": {
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "Brown's principal identifiable private business throughout his active career was the family-controlled engineering and manufacturing group, even as it diversified into tractors, automobiles and shipbuilding.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Contemporary and official histories consistently centre Brown's business identity on the family engineering group and its manufacturing subsidiaries. Because he died in 1993, the classification necessarily describes his principal lifetime private business rather than a present holding."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S5"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "inherited_and_expanded",
+    "label": "Inherited and expanded",
+    "summary": "Brown succeeded within the family-owned engineering company founded by his grandfather, then materially expanded it into new factories, tractors, international operations and acquired manufacturers.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "TIME described the company as family-owned and attributed its rapid growth to the two decades after Brown succeeded his father; Aston Martin's histories corroborate his takeover of the grandfather-founded firm and the scale of his subsequent expansion. Public sources do not disclose the precise legal transfer of his family stake."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "operator",
+    "label": "Operator",
+    "summary": "Brown was the active chairman and managing industrialist who expanded and directed the inherited family group rather than its original founder.",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "The London Gazette identifies Brown as chairman of the David Brown Corporation, while Aston Martin and TIME document his direct operational decisions across engineering, tractors and automotive manufacturing."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S5"
+    ]
+  },
+  "biography": {
+    "plain_text": "Sir David Brown was a British industrialist who expanded his family's Huddersfield gear business into tractors and wider manufacturing. He used that platform to buy Aston Martin and Lagonda, pairing the latter's engine with Aston's chassis. The resulting DB cars carried his initials and made his name inseparable from the marque's post-war identity.",
+    "html": "<p>Sir David Brown was a British industrialist who expanded his family's Huddersfield gear business into tractors and wider manufacturing. He used that platform to buy Aston Martin and Lagonda, pairing the latter's engine with Aston's chassis. The resulting DB cars carried his initials and made his name inseparable from the marque's post-war identity.</p>\r\n",
+    "word_count": 53,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Aston Martin's official histories and TIME's contemporary profile support the family engineering platform, industrial expansion, acquisition of Aston Martin and Lagonda, engine-chassis combination and DB initials."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Sir David Brown made motor racing central to Aston Martin's post-war revival. He recruited John Wyer to run the works team, stayed close to drivers and mechanics, and backed a sustained development programme. The effort culminated in 1959 with victory at the 24 Hours of Le Mans and the World Sports Car Championship.\n\nBrown's involvement went beyond finance. An engineering apprentice who had built his own car and raced motorcycles in his youth, he brought practical mechanical judgement to the company. Aston Martin's team culture reflected that direct engagement: driver Roy Salvadori recalled an owner who shared the team's hotel, knew the mechanics by name and maintained friendships with his drivers.",
+    "html": "<p>Sir David Brown made motor racing central to Aston Martin's post-war revival. He recruited John Wyer to run the works team, stayed close to drivers and mechanics, and backed a sustained development programme. The effort culminated in 1959 with victory at the 24 Hours of Le Mans and the World Sports Car Championship.</p>\r\n<p>Brown's involvement went beyond finance. An engineering apprentice who had built his own car and raced motorcycles in his youth, he brought practical mechanical judgement to the company. Aston Martin's team culture reflected that direct engagement: driver Roy Salvadori recalled an owner who shared the team's hotel, knew the mechanics by name and maintained friendships with his drivers.</p>\r\n",
+    "word_count": 111,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Aston Martin's official magazine documents Brown's engineering apprenticeship, early car and motorcycle work, recruitment of John Wyer, closeness to the team and championship-winning programme; Motor Sport independently corroborates the racing achievement and his commitment to the family business."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S6"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Industrialist and former owner of Aston Martin and Lagonda",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Aston Martin's official corporate history identifies the late Sir David Brown as the purchaser of both Aston Martin and Lagonda, while the National Portrait Gallery identifies him as an industrial director."
+      },
+      "source_ids": [
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official and institutional biographies consistently identify Brown with male titles and pronouns."
+      },
+      "source_ids": [
+        "S1",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Huddersfield, Yorkshire",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Aston Martin's official magazine states that Brown was born at Park Cottage within the family firm's Huddersfield works; the National Portrait Gallery independently places him in Yorkshire."
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "10",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "The Aston Martin Owners Club gives Brown's exact birth date as 10 May 1904, corroborated at year level by the National Portrait Gallery and Aston Martin."
+      },
+      "source_ids": [
+        "S4",
+        "S7"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "May",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "The Aston Martin Owners Club gives Brown's exact birth date as 10 May 1904, corroborated at year level by the National Portrait Gallery and Aston Martin."
+      },
+      "source_ids": [
+        "S4",
+        "S7"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1904",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The National Portrait Gallery and Aston Martin Owners Club independently give 1904 as Brown's birth year."
+      },
+      "source_ids": [
+        "S4",
+        "S7"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "action": "correct_existing",
+      "existing_value": "Unknown",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The National Portrait Gallery records Brown as 1904-1993, and Motor Sport's contemporary obituary reports his death at his Monaco home on 3 September aged 89."
+      },
+      "source_ids": [
+        "S4",
+        "S6",
+        "S7"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "3",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Motor Sport's contemporary obituary and the Aston Martin Owners Club give the death date as 3 September 1993."
+      },
+      "source_ids": [
+        "S6",
+        "S7"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "September",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Motor Sport's contemporary obituary and the Aston Martin Owners Club give the death date as 3 September 1993."
+      },
+      "source_ids": [
+        "S6",
+        "S7"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "1993",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The National Portrait Gallery, Aston Martin, Motor Sport and the Aston Martin Owners Club independently establish Brown's death in 1993."
+      },
+      "source_ids": [
+        "S2",
+        "S4",
+        "S6",
+        "S7"
+      ]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Sir David Brown was a British industrialist who expanded his family's Huddersfield gear business into tractors and wider manufacturing. He used that platform to buy Aston Martin and Lagonda, pairing the latter's engine with Aston's chassis. The resulting DB cars carried his initials and made his name inseparable from the marque's post-war identity.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Aston Martin's official histories and TIME's contemporary profile support every material claim in the concise biography."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "proposed_socials": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://astonmartin.blob.core.windows.net/magazine/issue-21/feature-centenary-david-brown.html",
+      "title": "Driven to Succeed",
+      "publisher": "Aston Martin Magazine",
+      "tier": 1,
+      "accessed_at": "2026-08-12",
+      "supports": [
+        "Sir David Brown's identity as a Northern industrialist and Aston Martin owner",
+        "Grandfather-founded Huddersfield gear business and engineering apprenticeship",
+        "Expansion into foundries, tractors and wartime engineering production",
+        "Acquisition and technical combination of Aston Martin and Lagonda",
+        "DB initials and Aston Martin racing programme",
+        "Recruitment of John Wyer and Brown's close relationship with drivers and mechanics",
+        "World Sports Car Championship success, Monaco residence and 1993 death"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.astonmartin.com/en/our-world/news/2018/4/25/celebrating-70-years-of-the-aston-martin-db-bloodline",
+      "title": "Celebrating 70 years of the Aston Martin DB bloodline",
+      "publisher": "Aston Martin",
+      "tier": 1,
+      "accessed_at": "2026-08-12",
+      "supports": [
+        "Brown's takeover of the engineering firm founded by his grandfather",
+        "Purchase of Aston Martin and Lagonda",
+        "Use of Lagonda's engine in Aston Martin cars",
+        "DB model identity and Brown's role in Aston Martin's post-war development",
+        "1968 knighthood, 1972 sale and 1993 death"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://time.com/archive/6621276/business-abroad-the-flying-yorkshireman/",
+      "title": "Business Abroad: The Flying Yorkshireman",
+      "publisher": "TIME",
+      "tier": 2,
+      "accessed_at": "2026-08-12",
+      "supports": [
+        "Family-owned status of David Brown Corporation",
+        "Succession from his father and expansion of the inherited industrial platform",
+        "Gears, castings, tractors and automotive manufacturing",
+        "International factories and export growth",
+        "Foundry development and transition from Ferguson to David Brown tractors"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.npg.org.uk/collections/search/person/mp102819/sir-david-brown",
+      "title": "Sir David Brown",
+      "publisher": "National Portrait Gallery",
+      "tier": 1,
+      "accessed_at": "2026-08-12",
+      "supports": [
+        "Identity as Sir David Brown in business and finance",
+        "1904-1993 lifespan",
+        "Director and founder role at David Brown Tractors",
+        "Yorkshire association"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.thegazette.co.uk/London/issue/44484/supplement/1/data.pdf",
+      "title": "New Year Honours 1968: Knights Bachelor",
+      "publisher": "The London Gazette",
+      "tier": 1,
+      "accessed_at": "2026-08-12",
+      "supports": [
+        "David Brown as chairman of the David Brown Corporation",
+        "Knighthood for services to export",
+        "Industrial leadership identity"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.motorsportmagazine.com/archive/article/october-1993/8/sir-david-brown/",
+      "title": "Sir David Brown",
+      "publisher": "Motor Sport Magazine",
+      "tier": 3,
+      "accessed_at": "2026-08-12",
+      "supports": [
+        "Former chairmanship of Aston Martin Lagonda",
+        "Death at his Monaco home on 3 September aged 89",
+        "Engineering, manufacturing and tractor activities",
+        "Aston Martin and Lagonda acquisitions",
+        "1959 Le Mans victory and commitment to the family business"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://amoc.org/content.aspx?club_id=400407&module_id=752833&page_id=22",
+      "title": "The David Brown Trophy",
+      "publisher": "Aston Martin Owners Club",
+      "tier": 3,
+      "accessed_at": "2026-08-12",
+      "supports": [
+        "Exact birth and death dates: 10 May 1904 and 3 September 1993",
+        "Industrial, engineering and Aston Martin identity",
+        "Early engineering work and motor racing activity"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Stale age and vessel relationship fields",
+      "detail": "The source record stores age 89 with a 2020 reference date and marks a vessel relationship as current, despite authoritative sources establishing Brown's death in 1993 aged 89. The age appears to have been carried from his age at death and the vessel relationship lacks a closing date. These conflicts are documented but excluded from the biographies."
+    },
+    {
+      "topic": "Wealth-origin transfer mechanics",
+      "detail": "Contemporary reporting establishes a family-owned company, Brown's succession from his father and substantial expansion under his leadership. The precise legal form and timing of the inherited share transfer are not disclosed in the reviewed public sources, so the classification does not assign an inherited amount or percentage."
+    },
+    {
+      "topic": "Primary industry for a deceased owner",
+      "detail": "Brown died in 1993, so there is no current private portfolio to classify. Manufacturing is used for primary industry because the family engineering group remained his principal identifiable lifetime private business; the dossier does not infer posthumous holdings."
+    },
+    {
+      "topic": "Personal social and Forbes profiles",
+      "detail": "No identity-verified personal LinkedIn, Instagram, Facebook, X, YouTube, TikTok or personal website was found, which is expected for a person who died in 1993. No dedicated Forbes profile was found. The existing Wikipedia link is retained and no social proposal is made."
+    },
+    {
+      "topic": "Unfilled personal fields",
+      "detail": "No reliable evidence established middle names or a secondary nationality. The fields remain blank rather than being inferred."
+    }
+  ],
+  "review": {
+    "status": "complete"
+  }
+}

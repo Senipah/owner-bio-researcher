@@ -1,7 +1,7 @@
 # Goal Mode prompt: Top-100 owner research enrichment
 
 Paste the prompt below into Goal Mode from the repository root. It produces
-review artifacts only; it does not approve research or update the live system.
+completed research artifacts only; it does not update the live system.
 
 ## Prompt
 
@@ -23,8 +23,8 @@ Continue until all selected owners have:
    `wealth_origin`, and `wealth_relationship` classifications;
 4. an explicit Forbes result;
 5. an inventory of missing details and supported link types;
-6. only confidence-85-or-higher proposed details and links;
-7. `review.status=pending`.
+6. only confidence-70-or-higher proposed details and links;
+7. `review.status=complete` after strict validation.
 
 Use a bounded worker pool of at most three research subagents. Give each
 subagent exactly one owner at a time and this skill. When one finishes and its
@@ -127,7 +127,7 @@ After all dossiers validate, perform a main-agent consistency review:
   principals, royal beneficiaries, custodians, and passive owners;
 - proposed select values use labels supported by the owner form;
 - social type IDs match the input lookup;
-- no dossier is approved on the CEO's behalf.
+- no legacy approval metadata is created.
 
 Then perform a dedicated cross-owner editorial pass. Create a working table
 containing owner, opening mode, narrative shape, first sentence,
@@ -154,7 +154,8 @@ Compile the review artifacts:
   --dossier-dir output\owner-research\top-100 `
   --selection top-100 `
   --output output\research-enriched-owners-list.top-100.json `
-  --report output\research-enriched-owners-list.top-100.html
+  --report output\research-enriched-owners-list.top-100.html `
+  --mark-ai-enriched
 ```
 
 Acceptance criteria:
@@ -165,7 +166,8 @@ Acceptance criteria:
 - every schema-v7 person dossier passes the strict corpus editorial audit;
 - `_baseline`, `person_id`, `profile_url`, and existing `profile_key` values
   remain unchanged;
-- pending output owners retain `workflow.ai_enriched=false`;
+- usable completed output owners have `workflow.ai_enriched=true`, while
+  unresolved placeholders remain false;
 - the HTML report shows, per owner, vessel rank/context, both biographies, all
   three wealth classifications, missing fields added, existing fields
   improved, verified links, confidence, evidence links, unresolved gaps, and
@@ -182,13 +184,10 @@ the remaining batch.
 
 When complete, return the JSON and HTML paths, owner and proposal counts,
 validation results, unresolved/limited owner count, and an explicit statement
-that all dossiers remain pending review and nothing was applied.
+that all dossiers are complete and nothing was applied.
 
-## After CEO review
+## After research compilation
 
-Approval is a separate task. For accepted dossiers, a human must set
-`review.status=approved` plus `reviewed_by` and `reviewed_at`. Only then compile
-an approved file with `--mark-ai-enriched`, run `update_owners.py` without
-`--apply`, inspect its audit, and obtain separate authorization before any live
-apply. Dossiers marked `rejected` retain the original owner values and remain
-ineligible for update.
+Run `update_owners.py` without `--apply`, inspect its audit, and obtain separate
+authorization before any live apply. Legacy dossiers marked `rejected` retain
+the original owner values and remain ineligible for update.

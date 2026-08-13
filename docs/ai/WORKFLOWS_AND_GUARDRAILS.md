@@ -32,22 +32,24 @@ Run from the repository root. Omit `--headless` during initial live validation.
   --input output\owners-list.top-100.json `
   --top-100-only
 
-# 4. Compile pending research for human review
+# 4. Compile completed research
 .\venv\Scripts\python.exe .\compile_owner_research.py `
   --input output\owners-list.top-100.enriched.json `
   --dossier-dir output\owner-research\top-100 `
-  --selection top-100
+  --selection top-100 `
+  --output output\completed-enriched-owners-list.top-100.json `
+  --mark-ai-enriched
 
-# 5. After dossier approval and approved recompilation, preview changes
+# 5. After completed-research compilation, preview changes
 .\venv\Scripts\python.exe .\update_owners.py `
-  --input output\approved-enriched-owners-list.top-100.json `
+  --input output\completed-enriched-owners-list.top-100.json `
   --top-100-only `
   --ai-enriched-only `
   --not-updated-only
 
 # 6. Apply only after reviewing the dry-run audit and testing a dummy
 .\venv\Scripts\python.exe .\update_owners.py `
-  --input output\approved-enriched-owners-list.top-100.json `
+  --input output\completed-enriched-owners-list.top-100.json `
   --top-100-only `
   --ai-enriched-only `
   --not-updated-only `
@@ -55,10 +57,12 @@ Run from the repository root. Omit `--headless` during initial live validation.
 ```
 
 The AI compiler may edit only `details[*].value` and the social array in a
-separate derived file; it never changes `_baseline`. Pending dossiers keep
-`workflow.ai_enriched=false`. Only explicit human approval followed by
-`compile_owner_research.py --mark-ai-enriched` sets it true and resets
-`workflow.updated_in_system=false` when a desired change is introduced.
+separate derived file; it never changes `_baseline`. Dossiers become accepted
+when terminal research passes strict validation and sets
+`review.status=complete`. `compile_owner_research.py --mark-ai-enriched` sets
+the workflow flag for usable complete or legacy-approved dossiers and resets
+`workflow.updated_in_system=false` when a desired change is introduced. Only
+values with confidence 70 or higher are imported.
 
 For an LOA-prioritised research batch, use a vessel-enriched input with
 `--selection largest-loa`. This selector must include only fully ranked owners,
@@ -139,7 +143,7 @@ AI review or a live system update occurred.
 - `mark_top_100_owners.py` is read-only: it may click the vessel edit link to
   reveal UBO data, but it must never locate or activate a save/submit control.
 - `compile_owner_research.py` must never overwrite its owner input and must not
-  mark pending dossiers AI-enriched.
+  mark pending, rejected, or unusable dossiers AI-enriched.
 - `update_owners.py` remains dry-run unless `--apply` is present.
 - Keep clearing blanks behind `--allow-clear`.
 - Keep removal of absent socials behind `--replace-socials`.

@@ -14,8 +14,8 @@ prerequisites. Never refuse, stop, or return partial findings because they are
 unavailable. Do not mention
 Knowledge, repository resources, schemas, or validation unless asked.
 
-Never approve or update records, access the live owner website, or claim
-compilation readiness.
+Never update records, access the live owner website, or claim compilation
+readiness.
 
 ## Intake
 
@@ -45,7 +45,7 @@ Follow these stages in order:
    and `wealth_relationship` independently using the exact mappings and
    distinguish an evidenced
    independent start from an advantaged one; use broad `self_made` when
-   unresolved and `unknown` below confidence 85.
+   unresolved and `unknown` below confidence 70.
 5. Search personal Instagram, LinkedIn, and websites, plus an official company
    site where ownership or leadership is established. Reject namesakes,
    company accounts presented as personal, fan pages, and name-only matches.
@@ -92,9 +92,9 @@ schema-v7-compatible Knowledge structure:
 - Put supported fields and links in `candidates_requiring_review` with
   confidence and source IDs.
 - Record that owner input was unavailable.
-- Set `review.status` to `pending`; note that it is not owner-input-validated or
+- Set `review.status` to `complete`; note that it is not owner-input-validated or
   compilation-ready.
-- Never invent IDs, values, inventories, approvals, or workflow flags.
+- Never invent IDs, values, inventories, or workflow flags.
 
 Institutions and placeholders receive an evidence-backed editorial note, not
 personal biographies. Requested JSON uses the non-person path.
@@ -107,7 +107,7 @@ remaining research by default.
 Before answering, check that:
 
 - every source ID resolves to one source-ledger item;
-- every non-unknown classification and every candidate scores at least 85;
+- every non-unknown classification and every candidate scores at least 70;
 - biography lengths, paragraphs, source IDs, and confidence are consistent;
 - all seven editorial scores are 4 or 5;
 - the short/long pair has no semantic restatement or expanded fact bundle;
@@ -129,6 +129,6 @@ Return:
 
 If JSON was requested, add it after the profile. Use Code Interpreter for a
 download when available; otherwise return it as a fenced JSON code block.
-Self-check and label it schema-v7-compatible, pending, not
+Self-check and label it schema-v7-compatible, complete, not
 owner-input-validated, and not compilation-ready. Missing tools must never
 block or shorten the profile.

@@ -115,8 +115,9 @@ statistics.
     form, purpose, relevant setting, and any causal antecedent that could
     otherwise be ambiguous. Rewrite any paraphrased expansion, then score the
     seven-part editorial rubric and revise any dimension below 4.
-11. Save a separate dossier with `review.status=pending`. Put uncertain facts or
-   links in `candidates_requiring_review`, not proposed changes.
+11. Save a separate dossier with `review.status=complete` once the research
+   decision is terminal. Put facts or links below the import threshold in
+   `candidates_requiring_review`, not proposed changes.
 12. Run:
 
    ```powershell
@@ -156,7 +157,7 @@ tracking. Do not let parallel agents edit the shared owner dataset.
 - Do not describe allegations, sanctions, crimes, health, religion, politics,
   or family disputes unless directly relevant, strongly sourced, and requested.
 - Separate citizenship, nationality, birthplace, and residence.
-- Exclude a proposed field or social link below confidence 85.
+- Exclude a proposed field or social link below confidence 70.
 - Treat `research_status=complete` as completion of the research decision, not
   proof that every field is known. Preserve supported `Unknown`
   classifications, confidence limits, and uncertainties instead of emitting
@@ -211,7 +212,8 @@ tracking. Do not let parallel agents edit the shared owner dataset.
   occupation, yacht ownership, nationality, or public office.
 - Never treat state, sovereign-wealth-fund, crown, or office-held assets as a
   royal person's private wealth without strong evidence of personal ownership.
-- Never set review approval or workflow flags on behalf of the CEO.
+- Use `review.status=complete` for finished research. Do not use legacy
+  `approved` or `rejected` states or set live-update workflow flags.
 
 # Validation
 
@@ -225,10 +227,10 @@ tracking. Do not let parallel agents edit the shared owner dataset.
   `self_made_independent` is not inferred from missing inheritance evidence,
   `self_made_advantaged` does not conceal a principal asset transfer, and
   broad `self_made` is retained when the distinction is unresolved.
-- Confirm every non-`unknown` wealth classification scores at least 85.
+- Confirm every non-`unknown` wealth classification scores at least 70.
 - Confirm inherited wealth follows its underlying industries, and royal or
   dynastic records do not assume `Energy` from an oil-producing state.
-- Confirm proposed facts and socials score at least 85.
+- Confirm proposed facts and socials score at least 70.
 - Confirm the short biography is one paragraph and 50-55 words.
 - Confirm the short biography uses every useful, strongly sourced identity
   signal that fits naturally—background, work, base, broad wealth stature,
@@ -300,4 +302,4 @@ separately from owner inputs. It contains:
   shape, with every person score at least 4;
 - proposed personal fields and verified socials;
 - per-item confidence and source IDs;
-- source ledger, uncertainties, and pending review state.
+- source ledger, uncertainties, and completed research state.

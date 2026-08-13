@@ -6,8 +6,8 @@ interrupted tranche when necessary, or selects the next contiguous 50 owners.
 No positions, filenames, or prefix values need to be edited between runs.
 
 The progress marker is the authority for tranche selection. Earlier production
-dossiers are frozen, new dossiers remain pending review, and nothing is
-applied to the live website.
+dossiers are frozen, new dossiers are marked complete after strict validation,
+and nothing is applied to the live website.
 
 ## Prompt
 
@@ -16,7 +16,7 @@ Use `$research-owner-biography`.
 
 Goal: resume the active LOA-prioritised research tranche, or research the next
 contiguous batch of 50 owners after the completed production prefix, then
-compile cumulative pending-review artifacts through the end of that tranche.
+compile cumulative completed-research artifacts through the end of that tranche.
 
 This prompt is intentionally reusable without editing. Never choose a tranche
 from filenames, scattered missing dossiers, or the highest dossier position.
@@ -41,9 +41,8 @@ reason to skip forward or mark the goal blocked.
 Read `AGENTS.md`, the relevant repository documentation, and the complete
 `$research-owner-biography` skill with all required references before acting.
 
-This is a research-and-review task only. Do not approve dossiers, set
-`workflow.ai_enriched=true`, call `update_owners.py`, apply website changes,
-stage files, commit, or push.
+This is a research-and-compilation task only. Do not call `update_owners.py`,
+apply website changes, stage files, commit, or push.
 
 ## Read and verify progress
 
@@ -201,7 +200,8 @@ For every target owner:
     database language, rankings, volatile net-worth figures and current vessel
     context out of published prose.
 15. Apply the sale-independence test and use British English.
-16. Set `review.status=pending`. Never approve on the user's behalf.
+16. Set `review.status=complete` only after the research decision is terminal
+    and the dossier passes strict validation.
 17. Save the dossier as
     `output/owner-research/all-by-loa/{PERSON_ID}.research.json`.
 18. Run:
@@ -255,15 +255,17 @@ After every target person ID is recorded as completed:
 
 Run the normal compiler:
 
-`.\venv\Scripts\python.exe .\compile_owner_research.py --input output\owners-list.vessel-enriched.enriched.json --dossier-dir output\owner-research\all-by-loa --selection all-by-loa --limit TRANCHE_END --output CURRENT_JSON --report CURRENT_HTML`
+`.\venv\Scripts\python.exe .\compile_owner_research.py --input output\owners-list.vessel-enriched.enriched.json --dossier-dir output\owner-research\all-by-loa --selection all-by-loa --limit TRANCHE_END --output CURRENT_JSON --report CURRENT_HTML --mark-ai-enriched`
 
-Do not pass `--mark-ai-enriched`.
+Pass `--mark-ai-enriched` so usable completed dossiers are accepted into the
+derived owner document.
 
 Verify:
 
 - exactly `TRANCHE_END` owners were compiled in cohort order;
 - every selected owner has a validated production dossier;
-- every compiled owner has `workflow.ai_enriched=false`;
+- every usable compiled owner has `workflow.ai_enriched=true`, while unresolved
+  placeholders remain false;
 - all four wealth classifications exist in every compiled `ai_research`
   object;
 - `_baseline`, person IDs, profile URLs, profile keys and vessel data remain
@@ -286,7 +288,7 @@ Atomically write `TRANCHE_SUMMARY` with:
 - cumulative JSON and HTML paths;
 - compiled owner count;
 - confirmation that earlier positions were not modified;
-- confirmation that all dossiers remain pending;
+- confirmation that all target dossiers are complete;
 - test and validation results; and
 - the next cohort position and owner, when one remains.
 
@@ -322,20 +324,20 @@ paste of this same prompt resumes it.
 - The production corpus audit has zero unresolved actionable issues.
 - Earlier production positions were not modified.
 - Cumulative JSON and HTML exist through `TRANCHE_END`.
-- All compiled owners retain `workflow.ai_enriched=false`.
-- Every dossier remains `review.status=pending`.
+- All usable compiled owners have `workflow.ai_enriched=true`; unresolved
+  placeholders remain false.
+- Every target dossier has `review.status=complete`.
 - The tranche summary exists.
 - The progress marker advanced atomically and has `active_tranche=null`.
 - The offline test suite passes.
 - Python compilation passes.
 - Custom GPT Knowledge is current.
 - `git diff --check` passes.
-- Nothing was approved, staged, committed, pushed or applied to the live
-  website.
+- Nothing was staged, committed, pushed or applied to the live website.
 
 When complete, return the tranche range, owner count, new/resumed/reused
 counts, dossier and corpus validation results, classification counts,
 unresolved or limited owner count, cumulative JSON and HTML paths, tranche
-summary path, next owner position, and an explicit statement that all dossiers
-remain pending review and nothing was applied.
+summary path, next owner position, and an explicit statement that all target
+dossiers are complete and nothing was applied.
 ```

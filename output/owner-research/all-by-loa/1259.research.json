@@ -1,0 +1,330 @@
+{
+  "schema_version": 7,
+  "record_type": "institution",
+  "owner": {
+    "person_id": 1259,
+    "display_name": "Berjaya Langkawi Beach Resort",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The display name is an organisation and hospitality asset, not a human name. Berjaya's official resort site identifies the exact legal operator as Berjaya Langkawi Beach Resort Sdn Bhd with Malaysian registration 199201000979, while Malaysian company reporting and Berjaya corporate filings independently identify the same entity as a resort operator within the group."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This record resolves to the Malaysian resort-operating company and its branded hospitality property, not to a person. Official Berjaya pages supply the legal entity and registration number, and corporate records independently confirm its resort activity and group relationship. Person-only birth, gender, nationality, wealth-origin and personal-social fields must not be inferred from the institutional label.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The exact legal entity, registration number, trading identity, activity and group relationship are corroborated by first-party and Malaysian corporate sources."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The mandatory Forbes-first exact-name, legal-company and resort-variant searches found no dedicated Forbes profile for Berjaya Langkawi Beach Resort or its operating company. No Forbes URL is proposed."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Wealth-creation industry is a person-level ownership classification and is not assigned to this resort-operating institution record.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Schema-v7 requires Unknown classifications for institutions; the organisation's hospitality activity does not establish an individual wealth creator."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Primary industry is not imported as a person classification for an institutional placeholder, despite the operator's documented hospitality activity.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Schema-v7 requires Unknown classifications for institutions and does not permit converting the resort's business activity into a person-level industry field."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No individual is resolved, so self-made, inherited or family-transfer origin cannot be assigned.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The record is a legal resort operator and branded property, not a human owner whose starting position can be classified."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Founder, operator, investor or heir relationships cannot be applied to an unresolved human when the source record itself is an institution.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Strong evidence resolves the organisation but does not uniquely identify a natural person behind this owner entry."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "biography": {
+    "plain_text": "Berjaya Langkawi Beach Resort Sdn Bhd is the Malaysian company that operates Berjaya Langkawi Resort at Burau Bay in Kedah. Incorporated in 1992, it sits within Berjaya's hospitality group. The resort's operating identity centres on rainforest and beachfront accommodation, including land-based and overwater chalets, together with dining, spa, meeting and recreation facilities.",
+    "html": "<p>Berjaya Langkawi Beach Resort Sdn Bhd is the Malaysian company that operates Berjaya Langkawi Resort at Burau Bay in Kedah. Incorporated in 1992, it sits within Berjaya's hospitality group. The resort's operating identity centres on rainforest and beachfront accommodation, including land-based and overwater chalets, together with dining, spa, meeting and recreation facilities.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The official resort site, Malaysian company reporting and Berjaya corporate materials support the legal entity, incorporation year, group relationship, location and durable hospitality format."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Berjaya Langkawi Beach Resort Sdn Bhd was incorporated in Malaysia in 1992 as a resort operator. It forms part of Berjaya's hotel portfolio and trades publicly as Berjaya Langkawi Resort, linking a registered operating company to a distinct hospitality property at Burau Bay.\n\nThe resort is arranged between tropical rainforest and the Andaman Sea. Its accommodation ranges from forest chalets to structures raised over the water, while restaurants, spa treatments, meeting spaces and outdoor activities broaden the operation beyond rooms alone. Together, the landscape and service mix give the resort an identity rooted in its island environment.",
+    "html": "<p>Berjaya Langkawi Beach Resort Sdn Bhd was incorporated in Malaysia in 1992 as a resort operator. It forms part of Berjaya's hotel portfolio and trades publicly as Berjaya Langkawi Resort, linking a registered operating company to a distinct hospitality property at Burau Bay.</p>\r\n<p>The resort is arranged between tropical rainforest and the Andaman Sea. Its accommodation ranges from forest chalets to structures raised over the water, while restaurants, spa treatments, meeting spaces and outdoor activities broaden the operation beyond rooms alone. Together, the landscape and service mix give the resort an identity rooted in its island environment.</p>\r\n",
+    "word_count": 97,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "First-party resort and group pages plus Malaysian registration reporting establish the institution, trading name, group portfolio relationship, location and enduring operating format."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "biography",
+      "value": "<p>Berjaya Langkawi Beach Resort Sdn Bhd is the Malaysian company that operates Berjaya Langkawi Resort at Burau Bay in Kedah. Incorporated in 1992, it sits within Berjaya's hospitality group. The resort's operating identity centres on rainforest and beachfront accommodation, including land-based and overwater chalets, together with dining, spa, meeting and recreation facilities.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The biography accurately describes the institutional record using official and corporate evidence and avoids forcing person-only attributes or an individual owner."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "proposed_socials": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.berjayahotel.com/langkawi",
+      "title": "Berjaya Langkawi Resort",
+      "publisher": "Berjaya Hotels & Resorts",
+      "tier": 1,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Berjaya Langkawi Resort as the public trading identity",
+        "Legal operator Berjaya Langkawi Beach Resort Sdn Bhd",
+        "Malaysian registration number 199201000979",
+        "Burau Bay, Langkawi location",
+        "Rainforest, beachfront, accommodation, dining, spa and recreation model"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://businessreport.ctoscredit.com.my/oneoffreport_api/single-report/malaysia-company/0232483P/BERJAYA-LANGKAWI-BEACH-RESORT-SDN-BHD-",
+      "title": "Berjaya Langkawi Beach Resort Sdn Bhd",
+      "publisher": "CTOS",
+      "tier": 2,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Exact Malaysian legal company name",
+        "Registration number 199201000979 / 0232483P",
+        "Incorporation on 15 January 1992",
+        "Resort operator as nature of business",
+        "Kedah state registration"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.berjaya.com/pdf/bproperty/annual-reports/bjland21.pdf",
+      "title": "Berjaya Land Berhad Annual Report 2021",
+      "publisher": "Berjaya Land Berhad",
+      "tier": 1,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Berjaya Langkawi Beach Resort Sdn Bhd in the corporate group structure",
+        "Berjaya Langkawi Resort in Kedah as the associated hospitality property",
+        "Institutional rather than personal nature of the record"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.berjayahotel.com/about-us",
+      "title": "About Berjaya Hotels & Resorts",
+      "publisher": "Berjaya Hotels & Resorts",
+      "tier": 1,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Berjaya Hotels & Resorts as part of Berjaya Corporation Group",
+        "Berjaya Langkawi Resort within the Malaysian hotel and resort portfolio",
+        "Hospitality group relationship"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://naturallylangkawi.my/wp-content/uploads/2022/10/Accommodation.Guide_.pdf",
+      "title": "Langkawi Accommodation Guide",
+      "publisher": "Langkawi Development Authority / Naturally Langkawi",
+      "tier": 1,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Independent government-destination listing of Berjaya Langkawi Beach & Spa Resort",
+        "Langkawi and Kedah geography",
+        "Rainforest, beachfront and chalet accommodation format"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Record type",
+      "detail": "The first-name and last-name fields split a resort name into person-shaped slots, but the display name exactly matches a Malaysian hospitality company and property. Strong evidence supports record_type institution at 100; no natural person should be inferred from those field positions."
+    },
+    {
+      "topic": "Legal entity and trading name",
+      "detail": "The legal operator is Berjaya Langkawi Beach Resort Sdn Bhd, while the current public brand is Berjaya Langkawi Resort and older tourism materials use Berjaya Langkawi Beach & Spa Resort. These are treated as legal, current trading and historical variants of the same resort operation."
+    },
+    {
+      "topic": "Person fields",
+      "detail": "The input's Malaysian nationality, Malaysia residence and Alive mortality are artefacts of a person-shaped schema and are not evidence that the resort is human. No gender, birth, middle name, personal title, wealth origin or relationship proposal is made."
+    },
+    {
+      "topic": "Ownership attribution",
+      "detail": "Corporate filings establish that the resort company sits within the Berjaya group structure, but this dossier does not infer a specific natural owner, ultimate beneficial owner, director or executive from the institutional label or group relationship."
+    },
+    {
+      "topic": "Classifications and socials",
+      "detail": "Schema-v7 requires all classifications to remain Unknown for institutions even though the company's activity is hospitality. Institution records cannot propose socials, so the verified official resort site is preserved as a source rather than imported as a Company Website social."
+    },
+    {
+      "topic": "Excluded material",
+      "detail": "Vessel ownership and context, private individuals, controversies, litigation, transient offers, room prices, occupancy, valuations, revenues, current room counts and temporary operating details are excluded."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal institutional research and strict editorial validation are complete. Exact legal-entity evidence resolves this record as a resort operator rather than a person; no individual was inferred. Schema-v7 institution rules keep all person-level classifications Unknown and omit social proposals. Nothing was compiled or applied."
+  }
+}

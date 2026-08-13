@@ -329,8 +329,8 @@ def test_validator_requires_unknown_wealth_creation_industry_below_threshold(
 ) -> None:
     dossier = deepcopy(_calibration())
     dossier["wealth_creation_industry"]["confidence"] = {
-        "score": 80,
-        "band": "medium",
+        "score": 60,
+        "band": "low",
         "reason": "The available evidence is plausible but inconclusive.",
     }
 
@@ -339,7 +339,7 @@ def test_validator_requires_unknown_wealth_creation_industry_below_threshold(
     assert result.returncode == 1
     assert (
         "wealth_creation_industry must use classification 'unknown' below "
-        "confidence 85"
+        "confidence 70"
     ) in result.stderr
 
 
@@ -348,8 +348,8 @@ def test_validator_requires_unknown_below_classification_threshold(
 ) -> None:
     dossier = deepcopy(_calibration())
     dossier["wealth_origin"]["confidence"] = {
-        "score": 80,
-        "band": "medium",
+        "score": 60,
+        "band": "low",
         "reason": "The available evidence is plausible but inconclusive.",
     }
 
@@ -357,9 +357,22 @@ def test_validator_requires_unknown_below_classification_threshold(
 
     assert result.returncode == 1
     assert (
-        "wealth_origin must use classification 'unknown' below confidence 85"
+        "wealth_origin must use classification 'unknown' below confidence 70"
         in result.stderr
     )
+
+
+def test_validator_accepts_classification_at_70(tmp_path: Path) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["wealth_origin"]["confidence"] = {
+        "score": 70,
+        "band": "medium",
+        "reason": "The evidence reaches the configured import threshold.",
+    }
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 0, result.stderr
 
 
 def test_validator_enforces_short_biography_length(tmp_path: Path) -> None:

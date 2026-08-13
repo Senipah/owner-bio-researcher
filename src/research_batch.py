@@ -30,6 +30,8 @@ DOSSIER_COMPARISON_LABELS = {
 }
 COMPARISON_DOSSIER_SCHEMA_VERSIONS = {6, 7}
 BIOGRAPHY_DETAIL_FIELDS = {"biography", "long_biography"}
+IMPORT_CONFIDENCE_THRESHOLD = 70
+REVIEW_STATUSES = {"pending", "complete", "approved", "rejected"}
 RESEARCH_SELECTIONS = {"top-100", "largest-loa", "all-by-loa"}
 RESEARCH_SELECTION_DESCRIPTIONS = {
     "top-100": "current owners ordered by minimum YB Top-100 vessel rank",
@@ -191,7 +193,7 @@ def _confidence_score(
     item: dict[str, Any],
     path: str,
     *,
-    minimum: int = 85,
+    minimum: int = IMPORT_CONFIDENCE_THRESHOLD,
 ) -> int:
     score = item.get("confidence", {}).get("score")
     if (
@@ -337,9 +339,9 @@ def apply_dossier(
     )
 
     review_status = dossier.get("review", {}).get("status")
-    if review_status not in {"pending", "approved", "rejected"}:
+    if review_status not in REVIEW_STATUSES:
         raise ValueError(f"Owner {person_id} has invalid review status")
-    if review_status != "pending" and any(
+    if review_status in {"approved", "rejected"} and any(
         not isinstance(dossier.get("review", {}).get(key), str)
         or not dossier["review"][key].strip()
         for key in ("reviewed_by", "reviewed_at")
@@ -347,14 +349,14 @@ def apply_dossier(
         raise ValueError(
             f"Owner {person_id} final review requires reviewed_by and reviewed_at"
         )
-    if mark_ai_enriched and unusable_research:
+    if (
+        mark_ai_enriched
+        and not unusable_research
+        and review_status == "pending"
+    ):
         raise ValueError(
-            f"Owner {person_id} has unusable research status and cannot be "
-            "marked AI enriched"
-        )
-    if mark_ai_enriched and review_status == "pending":
-        raise ValueError(
-            f"Owner {person_id} must be approved before marking AI enriched"
+            f"Owner {person_id} review status must be complete or approved "
+            "before marking AI enriched"
         )
 
     changes: list[dict[str, Any]] = []
@@ -668,7 +670,7 @@ def compile_research_batch(
         "selection_description": RESEARCH_SELECTION_DESCRIPTIONS[selection],
         "limit": limit,
         "review_state": (
-            "reviewed" if mark_ai_enriched else "pending_review"
+            "complete" if mark_ai_enriched else "not_marked_ai_enriched"
         ),
         "owner_count": len(compiled_owners),
     }
@@ -876,7 +878,7 @@ def _plain_paragraphs(value: Any) -> str:
 
 def _confidence_badge(score: Any) -> str:
     numeric = int(score) if isinstance(score, int) else 0
-    level = "high" if numeric >= 95 else "medium" if numeric >= 85 else "low"
+    level = "high" if numeric >= 95 else "medium" if numeric >= 70 else "low"
     return f'<span class="confidence {level}">{numeric}%</span>'
 
 

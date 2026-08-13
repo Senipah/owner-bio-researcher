@@ -47,8 +47,10 @@ owner records, and applying reviewed JSON changes through the website.
   baseline; report a conflict instead.
 - Set `workflow.updated_in_system=true` only after a live save is re-exported
   and verified.
-- Keep pending research `workflow.ai_enriched=false`; only an explicitly
-  approved dossier may be compiled with that flag enabled.
+- Set `review.status=complete` only after a terminal research decision passes
+  strict validation. Compilation may set `workflow.ai_enriched=true` for
+  complete or legacy-approved usable dossiers, and may import only values with
+  confidence 70 or higher.
 - Do not commit generated output or the ignored `examples/` snapshots.
 
 ## Validation baseline

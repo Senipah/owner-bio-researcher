@@ -131,9 +131,11 @@ Workflow transitions are intentionally narrow:
 
 - Top-100 annotation maintains `is_top_100_owner`.
 - Successful details/social enrichment sets `owner_details_enriched=true`.
-- Pending AI research compilation keeps `ai_enriched=false`. After explicit
-  human dossier approval, recompilation with `--mark-ai-enriched` sets it true
-  and resets `updated_in_system=false` when it introduces desired changes.
+- Research compilation keeps `ai_enriched=false` unless
+  `--mark-ai-enriched` is used. A strictly validated dossier with
+  `review.status=complete` (or legacy `approved`) may then set it true and
+  resets `updated_in_system=false` when it introduces desired changes. Only
+  values with confidence 70 or higher are imported.
 - Only a verified live apply sets `updated_in_system=true`.
 
 ## Storage and sensitive data
@@ -166,5 +168,6 @@ Known constraints:
 - There is no offline end-to-end browser test. Use
   `test_dummy_account.py --person-id ID --apply` only with a dedicated dummy
   and inspect restoration artifacts.
-- AI research remains agent-driven, while dossier validation, safe JSON
-  compilation, approval gating, and HTML reporting are implemented locally.
+- AI research remains agent-driven, while dossier validation, confidence-gated
+  JSON compilation, automatic completion gating, and HTML reporting are
+  implemented locally.

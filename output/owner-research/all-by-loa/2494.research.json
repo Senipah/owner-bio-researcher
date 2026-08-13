@@ -1,0 +1,261 @@
+{
+  "schema_version": 7,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 2494,
+    "display_name": "Mr Aspasia Kavvadia",
+    "identity_confidence": {
+      "score": 60,
+      "band": "low",
+      "reason": "The source provides a full name, Greek nationality, Cyprus residence and partial birth metadata, but its display-name title conflicts with the separate Mrs title and female gender fields. A Cyprus company directory repeats Aspasia Kavvadia beside Andreas Andreadis in an ownership-linked entity, while public LinkedIn results show an exact-name person associated with Germany. Neither supplies an independent date, nationality, occupation or biographical anchor that uniquely resolves person ID 2494."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This named owner record cannot yet be resolved to a unique public person. Its display name uses “Mr”, while the separate title and gender fields use “Mrs” and female. A Cyprus company directory repeats the name only in ownership-linked context, and an exact-name LinkedIn result supplies no matching personal anchors. Biography and enrichment are therefore withheld.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The terminal unresolved decision follows from the internal title conflict, the absence of an authoritative public biography and the failure of focused searches to produce an independent identity chain above 85 confidence."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes-first exact-name and profile searches found no dedicated Forbes profile for Aspasia Kavvadia and no Forbes result supplied identity-resolving business, geographic or biographical anchors."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No wealth-creation industry can be assigned because the named person has not been independently resolved and no public operating business, career or wealth-producing asset is established.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The immutable record contains no employer or occupation. The sole Cyprus company listing is ownership-linked and does not establish the subject's personal business activity or source of wealth."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No current primary private-wealth industry can be assigned without a resolved identity or independently documented personal holding.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Name, nationality and ownership-linked company context do not establish a present principal asset or business sector, and the exact-name LinkedIn traces cannot be securely attributed to this record."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No evidence establishes whether the unresolved person's position arose through self-made activity, inheritance, family transfer or another mechanism.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "A wealth-origin classification requires an independently resolved person and a documented asset history, neither of which is available."
+    },
+    "source_ids": [
+      "S1",
+      "S3"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No reliable evidence establishes whether the unresolved person is a founder, operator, investor, heir, family shareholder or other asset principal.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "A directorship in an ownership-linked company does not by itself establish the person's relationship to a wealth-producing enterprise, and no independent operating or ownership role is public."
+    },
+    "source_ids": [
+      "S1",
+      "S3"
+    ]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=2494",
+      "title": "Mr Aspasia Kavvadia owner record, person ID 2494",
+      "publisher": "Superyacht Network Agent",
+      "tier": 1,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Exact source-record name and person ID",
+        "Display-name title Mr conflicting with separate title Mrs and female gender",
+        "Greek nationality, Cyprus residence and Cyprus birth-country metadata",
+        "Birth month May and year 1968 without a day",
+        "Absence of employer, occupation, biography and social profiles",
+        "Ownership context retained only for identity-resolution analysis"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/search/?q=Aspasia%20Kavvadia",
+      "title": "Forbes search: Aspasia Kavvadia",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Mandatory Forbes-first exact-name and profile check",
+        "No dedicated identity-matched Forbes profile was found"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://i-cyprus.com/company/416350",
+      "title": "Coral Waters Shipping Company Limited directory record",
+      "publisher": "i-Cyprus",
+      "tier": 3,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Exact Greek and Latin forms of the name Aspasia Kavvadia",
+        "Aspasia Kavvadia listed as a director of a Cyprus company",
+        "Andreas Andreadis listed as a fellow director and secretary",
+        "Ownership-linked identity context that remains insufficient without an independent personal anchor",
+        "No occupation, birth data, nationality, biography or shareholding detail"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://gr.linkedin.com/directory/people/a-40",
+      "title": "LinkedIn people directory: Aspasia Kavvadia",
+      "publisher": "LinkedIn",
+      "tier": 3,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Existence of an exact-name LinkedIn entry",
+        "No public occupation, location, birth detail or employer anchor sufficient to match person ID 2494",
+        "Identity ambiguity preventing a social-profile proposal"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Title and display name",
+      "detail": "The immutable display name begins with Mr, but the separate title field is Mrs and the gender field is Female. The report summary also uses Mrs. This strongly suggests a display-name prefix error, but no correction is proposed because the natural-person identity remains below 85 confidence."
+    },
+    {
+      "topic": "Identity",
+      "detail": "The exact name and Cyprus company co-director context are consistent with the immutable ownership relationship, but that is not an independent personal biography. No authoritative source links the name to the source birth metadata, Greek nationality, Cyprus residence or a public occupation."
+    },
+    {
+      "topic": "Namesakes",
+      "detail": "An exact-name LinkedIn entry exists, and public posts associate a person of this name with Germany. No evidence shows whether that person is the same as the Cyprus-linked record, so the profile is rejected rather than proposed."
+    },
+    {
+      "topic": "Birth metadata",
+      "detail": "The immutable record gives Cyprus as birth country, May as birth month and 1968 as birth year. These values are not independently corroborated and are therefore retained only as source metadata, not used to force identity resolution."
+    },
+    {
+      "topic": "Wealth and occupation",
+      "detail": "No reliable source establishes an operating career, personal business interest, inherited holding, investment activity or other wealth mechanism. All four classifications remain Unknown."
+    },
+    {
+      "topic": "Personal enrichment",
+      "detail": "Biography, title correction, known-for details and social profiles are intentionally withheld until an authoritative source independently connects Aspasia Kavvadia to person ID 2494 above the identity threshold."
+    },
+    {
+      "topic": "Excluded material",
+      "detail": "No vessel fact is used in user-facing text. Sensitive family inferences, allegations, controversies, legal issues, private addresses and transient personal material were excluded."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal unresolved-placeholder decision. The title conflict is documented but no correction is proposed. Require an authoritative non-ownership source matching the exact name to the source nationality, birth metadata, occupation or another unique personal anchor before biography, social links or non-Unknown classifications are considered. Nothing has been compiled or applied."
+  }
+}

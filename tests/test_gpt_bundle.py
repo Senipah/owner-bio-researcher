@@ -149,11 +149,11 @@ def test_manual_dossier_example_contract_and_strict_validation() -> None:
     assert dossier["proposed_socials"] == []
     assert dossier["candidates_requiring_review"]
     assert all(
-        candidate["confidence"]["score"] >= 85
+        candidate["confidence"]["score"] >= 70
         for candidate in dossier["candidates_requiring_review"]
     )
     assert dossier["review"] == {
-        "status": "pending",
+        "status": "complete",
         "notes": (
             "Manual name-and-context dossier; not owner-input-validated "
             "or compilation-ready."

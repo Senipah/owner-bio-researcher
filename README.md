@@ -247,13 +247,14 @@ Each owner also has four workflow booleans:
 ```
 
 The Top-100 and details scripts maintain the first two. The research compiler
-sets `ai_enriched=true` only for explicitly approved dossiers and resets
+sets `ai_enriched=true` for dossiers whose `review.status` is `complete` (or
+legacy `approved`) when compilation uses `--mark-ai-enriched`. It resets
 `updated_in_system=false` whenever it creates a new desired change. A verified
 live apply sets `updated_in_system=true`.
 
-## 4. Compile researched owners for review
+## 4. Compile completed owner research
 
-Owner research is stored as one pending-review dossier per person under
+Owner research is stored as one completed-research dossier per person under
 `output\owner-research`. Compile those dossiers into a new owner document and
 a standalone HTML report without changing the enriched input:
 
@@ -276,7 +277,7 @@ all four classifications under each compiled owner's `ai_research` metadata
 and shows the appropriate content in the review report. For people, it maps the
 short biography to `details.biography` and maps the longer version to
 `details.long_biography` whenever that form field is available. Equivalent
-editable classification fields can be populated through reviewed dossier
+editable classification fields can be populated through confidence-gated dossier
 proposals using their exact display labels. Compilation runs strict editorial
 validation, including source-invisibility, date, figure, vessel-independence,
 reader-orientation, career-scaffolding, transition, and conclusion checks.
@@ -329,9 +330,10 @@ every earlier completed tranche. It also preserves the explicitly authorised
 first-50 editorial exception without extending that exception to later owners.
 
 The JSON retains each owner's immutable `_baseline`, contains only the selected
-owners, and applies only dossier proposals with confidence 85 or higher.
-Pending research remains `workflow.ai_enriched=false`, so it cannot be selected
-by the normal `--ai-enriched-only` update command.
+owners, and applies only dossier proposals with confidence 70 or higher.
+Compilation with `--mark-ai-enriched` accepts `review.status=complete` and
+marks usable research eligible for a later update dry-run. Unresolved
+placeholders remain `workflow.ai_enriched=false`.
 
 For an editorial repair or classification-calibration batch, add
 `--compare-dossier-dir` to compare the earlier and current short biography,
@@ -351,9 +353,9 @@ compiled owner JSON:
   --limit 50
 ```
 
-After human review, change each accepted dossier to `review.status=approved`
-and record `reviewed_by` and `reviewed_at`. Recompile with
-`--mark-ai-enriched` to make the reviewed file eligible for update dry-runs:
+After research reaches a terminal decision and strict validation passes, set
+`review.status=complete`. Recompile with `--mark-ai-enriched` to make usable
+research eligible for update dry-runs; no manual approval metadata is needed:
 
 ```powershell
 .\venv\Scripts\python.exe .\compile_owner_research.py `
@@ -361,12 +363,12 @@ and record `reviewed_by` and `reviewed_at`. Recompile with
   --dossier-dir output\owner-research\top-100-first-10 `
   --selection top-100 `
   --limit 10 `
-  --output output\approved-enriched-owners-list.top-100.first-10.json `
-  --report output\approved-enriched-owners-list.top-100.first-10.html `
+  --output output\completed-enriched-owners-list.top-100.first-10.json `
+  --report output\completed-enriched-owners-list.top-100.first-10.html `
   --mark-ai-enriched
 ```
 
-Rejected dossiers must also record `reviewed_by` and `reviewed_at`; their
+Legacy rejected dossiers retain `reviewed_by` and `reviewed_at`; their
 proposals are left unapplied and their owners remain `ai_enriched=false`.
 
 ## 5. Preview and apply updates

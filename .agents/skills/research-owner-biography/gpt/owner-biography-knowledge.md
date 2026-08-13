@@ -15,9 +15,9 @@ Use this file as Custom GPT Knowledge. Behaviour, workflow order, manual-mode ru
 
 | Section | Canonical source | SHA-256 |
 | --- | --- | --- |
-| Research and dossier contract | `references/research-contract.md` | `898890825804748c5db0c7e9f78f29b33ac3350531f357d9d1047b05c3514336` |
-| Wealth classification | `references/wealth-classification.md` | `739320d90d80af42e52187bc782e2ae87d2aa43ca82f85a06b30ee8d5c36055d` |
-| Biography style | `references/biography-style.md` | `5bf195683022fbd729219da39ce35f59066cd4b3769be6b22d3d21bddd417cb0` |
+| Research and dossier contract | `references/research-contract.md` | `9d2daf29bf7dd5197a43f31fd6eff5c419ed82e40f17e7ca2bec8f72112e5126` |
+| Wealth classification | `references/wealth-classification.md` | `ffd1f3abaa8e80ccd424747b76e2f7a82e3349ac2b87a1e049b6bc0531f93887` |
+| Biography style | `references/biography-style.md` | `0c0ecaa634c192f95ecd44d85383ea82478b212743cfe3ffaf88aded0e317424` |
 | Editorial calibrations | `references/editorial-calibrations.md` | `b705d5ebe33444a8abfecbc7bb0100478dc88c5a848b8fb4121473853a7dc9dd` |
 
 ---
@@ -92,7 +92,7 @@ its four independent objects:
 
 Each object must contain a valid `classification`, its exact mapped `label`, a
 concrete `summary`, `confidence`, and `source_ids`. Non-`unknown`
-classifications require confidence 85 or higher. Inherited and royal status
+classifications require confidence 70 or higher. Inherited and royal status
 describe origin, not either industry. Do not treat state, crown, sovereign, or
 office-held assets as personal property without strong evidence.
 
@@ -125,7 +125,7 @@ Bands are deterministic:
 | 50-69 | `low` | Weak or incomplete evidence |
 | 0-49 | `insufficient` | Do not use |
 
-Only scores of 85 or higher belong in `proposed_details` or
+Only scores of 70 or higher belong in `proposed_details` or
 `proposed_socials`. Put lower-confidence candidates in
 `candidates_requiring_review` or `uncertainties`.
 
@@ -478,7 +478,7 @@ Use this top-level structure:
   "sources": [],
   "uncertainties": [],
   "review": {
-    "status": "pending",
+    "status": "complete",
     "notes": null
   }
 }
@@ -490,10 +490,12 @@ contain `id`, `url`, `title`, `publisher`, `tier`, `accessed_at`, and
 contain `existing_value`; proposed social items must contain `type_id` copied
 from `input_snapshot.social_type_lookup`.
 
-Research agents always emit `review.status=pending`. A human reviewer may later
-change it to `approved` or `rejected`; either final state must also include
-non-empty `reviewed_by` and `reviewed_at` values. Approval is a separate human
-action and must never be inferred from confidence.
+Research agents emit `review.status=complete` only after the dossier reaches a
+terminal research decision and passes validation. This status is automatic
+acceptance for compilation; no reviewer identity is required. Legacy
+`pending`, `approved`, and `rejected` states remain validator-compatible for
+existing dossiers, and legacy approved or rejected states retain their
+`reviewed_by` and `reviewed_at` requirements.
 
 ## Non-person dossier shape
 
@@ -631,7 +633,7 @@ Every dossier must contain all four objects:
 show to reviewers and, when the corresponding website field exists, write to
 the select control. The validator requires the two to match.
 
-Use a non-`unknown` classification only at confidence 85 or higher. Below that
+Use a non-`unknown` classification only at confidence 70 or higher. Below that
 threshold, emit `unknown`, explain what could and could not be established, and
 put any plausible alternative in `candidates_requiring_review`.
 

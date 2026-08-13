@@ -68,7 +68,7 @@ its four independent objects:
 
 Each object must contain a valid `classification`, its exact mapped `label`, a
 concrete `summary`, `confidence`, and `source_ids`. Non-`unknown`
-classifications require confidence 85 or higher. Inherited and royal status
+classifications require confidence 70 or higher. Inherited and royal status
 describe origin, not either industry. Do not treat state, crown, sovereign, or
 office-held assets as personal property without strong evidence.
 
@@ -101,7 +101,7 @@ Bands are deterministic:
 | 50-69 | `low` | Weak or incomplete evidence |
 | 0-49 | `insufficient` | Do not use |
 
-Only scores of 85 or higher belong in `proposed_details` or
+Only scores of 70 or higher belong in `proposed_details` or
 `proposed_socials`. Put lower-confidence candidates in
 `candidates_requiring_review` or `uncertainties`.
 
@@ -454,7 +454,7 @@ Use this top-level structure:
   "sources": [],
   "uncertainties": [],
   "review": {
-    "status": "pending",
+    "status": "complete",
     "notes": null
   }
 }
@@ -466,10 +466,12 @@ contain `id`, `url`, `title`, `publisher`, `tier`, `accessed_at`, and
 contain `existing_value`; proposed social items must contain `type_id` copied
 from `input_snapshot.social_type_lookup`.
 
-Research agents always emit `review.status=pending`. A human reviewer may later
-change it to `approved` or `rejected`; either final state must also include
-non-empty `reviewed_by` and `reviewed_at` values. Approval is a separate human
-action and must never be inferred from confidence.
+Research agents emit `review.status=complete` only after the dossier reaches a
+terminal research decision and passes validation. This status is automatic
+acceptance for compilation; no reviewer identity is required. Legacy
+`pending`, `approved`, and `rejected` states remain validator-compatible for
+existing dossiers, and legacy approved or rejected states retain their
+`reviewed_by` and `reviewed_at` requirements.
 
 ## Non-person dossier shape
 
