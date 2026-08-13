@@ -1,0 +1,580 @@
+{
+  "schema_version": 7,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1112,
+    "display_name": "Dennis M. Jones",
+    "identity_confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "A New York Times profile provides the owner-context bridge to the St Louis pharmaceutical entrepreneur, while SEC filings independently identify Dennis M. Jones by exact middle initial as Jones Pharma's founder, chairman and chief executive in St Louis. The 2000 transaction date, company, geography and name then converge with St Louis business reporting and the 2016 obituary. The input's calculated age timestamp is inconsistent with the verified dates, so it is treated as stale system data rather than identity evidence."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Dennis M. Jones was an American pharmaceutical entrepreneur and founder of St Louis-based Jones Pharma.",
+    "defining_work": "He built a public specialty-pharmaceutical company around acquiring established niche medicines and applying focused sales and marketing.",
+    "formative_context": "High school, United States Marine Corps service, insurance work and pharmaceutical sales preceded an earlier drug-company partnership and the founding of Jones Medical Industries.",
+    "decisive_moment": "The 2000 sale of Jones Pharma to King Pharmaceuticals converted the founder-built company into substantial personal wealth.",
+    "enduring_dimensions": [
+      "Specialty-pharmaceutical product acquisition and marketing",
+      "Founder ownership and public-company leadership",
+      "Education, employment and social-service philanthropy in St Louis"
+    ],
+    "character_detail": "Jones Pharma concentrated on established medicines that could benefit from focused promotion rather than building its identity around a large research pipeline.",
+    "opening_options": [
+      {
+        "mode": "institution_or_asset",
+        "angle": "Use Jones Pharma's niche-medicine model to establish Jones's defining business work."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Lead with the sale of Jones Pharma as the consequence of two decades of founder-led growth."
+      },
+      {
+        "mode": "present_identity",
+        "angle": "Orient the reader with Jones as a St Louis pharmaceutical founder and later philanthropist."
+      }
+    ],
+    "excluded_transient_context": [
+      "Current foundation grant totals and beneficiary lists",
+      "Historic company market value treated as Jones's personal proceeds",
+      "Private-family detail beyond Judith Jones's causal co-founding and executive role",
+      "Politics, allegations, legal matters and controversy",
+      "Current vessel ownership, specifications and history",
+      "Source attribution and confidence deliberation"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "institution_then_person",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "The shared anchors are Jones and Jones Pharma. The short profile alone gives Judith Jones's co-founding role, the sale and the family foundation. The long profile instead develops the overlooked-medicine strategy, representative therapeutic fields, formative work and Jones's operating method. Reducing the long profile to the short would remove the product and management logic that made the company distinctive."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Exact-name and site:forbes.com/profile searches found no dedicated matching Forbes profile. A Forbes article mentions a pharmaceutical entrepreneur named Dennis Jones, but it lacks the full-name and company anchors required to treat it as a personal profile or identity source."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "healthcare",
+    "label": "Healthcare",
+    "summary": "Jones created his principal wealth through Jones Pharma, a specialty-pharmaceutical manufacturer and marketer built around acquired niche medicines.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Jones Pharma's SEC annual report identifies Dennis M. Jones as founder, chairman and chief executive and describes the company's pharmaceutical products and acquisition-led model. The SEC ownership filing and independent transaction reporting establish that this was an ownership-based wealth mechanism, not employment alone."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S7"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Jones Pharma was sold in 2000, and public sources do not establish how Jones's personal proceeds were principally invested before his death; foundation assets were philanthropic rather than personal operating holdings.",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "The sale and his later foundation activity are well documented, but no reviewed source identifies a dominant post-sale private company, investment portfolio or operating sector. Retaining Healthcare or assigning Finance & Investments as a current field would therefore speculate about undisclosed personal assets."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S8"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made_independent",
+    "label": "Self-made — independent start",
+    "summary": "Jones and his wife built Jones Medical Industries using their savings and investment from friends after Jones had worked in insurance, pharmaceutical sales and an earlier drug-company partnership.",
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "The SEC proves the founder role, executive control and separate shareholdings. Established company-history material traces the launch to the couple's savings and friends' investment after Jones's employment and earlier partnership, while no source indicates inheritance of the core company or a substantial family-wealth platform."
+    },
+    "source_ids": [
+      "S1",
+      "S6"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Jones founded Jones Medical Industries, led it as chairman and chief executive and retained a substantial direct shareholding before the King Pharmaceuticals transaction.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The company's SEC annual report directly identifies Jones as founder, chairman, president and chief executive from inception and records his beneficial ownership. Junior Achievement and transaction reporting independently corroborate his founder role."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S7"
+    ]
+  },
+  "biography": {
+    "plain_text": "Dennis M. Jones was a pharmaceutical entrepreneur who founded St Louis-based Jones Medical Industries with his wife, Judith, in 1981. Built around acquiring and marketing established niche medicines, the company became Jones Pharma and went public before its sale to King Pharmaceuticals in 2000. Jones later supported education and employment charities through a family foundation.",
+    "html": "<p>Dennis M. Jones was a pharmaceutical entrepreneur who founded St Louis-based Jones Medical Industries with his wife, Judith, in 1981. Built around acquiring and marketing established niche medicines, the company became Jones Pharma and went public before its sale to King Pharmaceuticals in 2000. Jones later supported education and employment charities through a family foundation.</p>\r\n",
+    "word_count": 55,
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "SEC filings support the exact identity, founder and spouse-executive roles, St Louis base, 1981 inception, pharmaceutical model and public-company status. Independent transaction reporting supports the sale, while the obituary and foundation records support his later charitable focus."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S8"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Jones Pharma built its business by acquiring established medicines that larger drugmakers no longer prioritised. Under Dennis M. Jones, it focused sales effort on specialty products for thyroid disorders, surgical bleeding and anaesthesia. Thrombin-JMI and Levoxyl became central to the portfolio, while successive acquisitions widened the St Louis company's manufacturing and marketing reach.\n\nJones entered the pharmaceutical industry in 1964 after high school, service in the United States Marine Corps and work in insurance. Sales experience led to an earlier pharmaceutical partnership, giving him the foundation to create Jones Medical Industries. As chairman and chief executive, he combined direct marketing with selective product purchases and disciplined costs. That approach turned overlooked medicines into a substantial public company before his death in 2016.",
+    "html": "<p>Jones Pharma built its business by acquiring established medicines that larger drugmakers no longer prioritised. Under Dennis M. Jones, it focused sales effort on specialty products for thyroid disorders, surgical bleeding and anaesthesia. Thrombin-JMI and Levoxyl became central to the portfolio, while successive acquisitions widened the St Louis company's manufacturing and marketing reach.</p>\r\n<p>Jones entered the pharmaceutical industry in 1964 after high school, service in the United States Marine Corps and work in insurance. Sales experience led to an earlier pharmaceutical partnership, giving him the foundation to create Jones Medical Industries. As chairman and chief executive, he combined direct marketing with selective product purchases and disciplined costs. That approach turned overlooked medicines into a substantial public company before his death in 2016.</p>\r\n",
+    "word_count": 122,
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "The SEC annual report directly supports the acquisition-and-marketing strategy, therapeutic fields, representative products, founder leadership and 1964 industry entry. The formative insurance, Marine Corps and earlier-partnership sequence comes from the published obituary and established company history, and the death date is independently corroborated."
+    },
+    "source_ids": [
+      "S1",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Founder of Jones Pharma",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Jones Pharma's SEC filing and Junior Achievement's current laureate record directly identify Dennis M. Jones as the company's founder."
+      },
+      "source_ids": [
+        "S1",
+        "S7"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "12",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 91,
+        "band": "high",
+        "reason": "The published memorial gives 12 September 1938, consistent with Jones Pharma's SEC-reported age of 61 in March 2000 and the obituary's age of 78 at death."
+      },
+      "source_ids": [
+        "S1",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "September",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 91,
+        "band": "high",
+        "reason": "The published memorial gives 12 September 1938, consistent with Jones Pharma's SEC-reported age of 61 in March 2000 and the obituary's age of 78 at death."
+      },
+      "source_ids": [
+        "S1",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1938",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "The published memorial gives 1938, while the SEC age statement from March 2000 and the obituary's age of 78 in September 2016 independently corroborate that year."
+      },
+      "source_ids": [
+        "S1",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Deceased",
+      "existing_value": "Unknown",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "St Louis Business Journal and the St Louis Post-Dispatch obituary independently report Jones's death in September 2016."
+      },
+      "source_ids": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "20",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The published obituary and memorial both record that Dennis M. Jones died on 20 September 2016."
+      },
+      "source_ids": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "September",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The published obituary and memorial both record that Dennis M. Jones died on 20 September 2016."
+      },
+      "source_ids": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "2016",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The published obituary and memorial both record that Dennis M. Jones died on 20 September 2016."
+      },
+      "source_ids": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Dennis M. Jones was a pharmaceutical entrepreneur who founded St Louis-based Jones Medical Industries with his wife, Judith, in 1981. Built around acquiring and marketing established niche medicines, the company became Jones Pharma and went public before its sale to King Pharmaceuticals in 2000. Jones later supported education and employment charities through a family foundation.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "The biography uses durable founder, operating, transaction and philanthropic facts supported by SEC filings and independent St Louis reporting, with no vessel-dependent material."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S8"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dennis_M._Jones",
+      "verification": "The page's exact full name, Jones Pharma founder role, St Louis geography and 1938-2016 dates all match SEC filings and independent obituary reporting. Type ID 10 is copied from the owner-input lookup.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Multiple strong independent anchors distinguish this page from the many Dennis Jones namesakes."
+      },
+      "source_ids": [
+        "S1",
+        "S4",
+        "S5",
+        "S9"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.sec.gov/Archives/edgar/data/793613/000095012400001305/0000950124-00-001305.txt",
+      "title": "Jones Pharma Incorporated 1999 Form 10-K",
+      "publisher": "United States Securities and Exchange Commission",
+      "tier": 1,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Exact Dennis M. Jones identity",
+        "Jones Pharma founder, chairman, president and chief executive roles",
+        "1981 company inception and St Louis base",
+        "Pharmaceutical-industry work since 1964",
+        "Specialty-product acquisition and focused-marketing strategy",
+        "Thyroid, haemostasis and anaesthesia product fields",
+        "Dennis and Judith Jones's separate executive roles and share ownership",
+        "Age 61 in March 2000"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.sec.gov/Archives/edgar/data/793613/000095012400004345/0000950124-00-004345-index.htm",
+      "title": "Dennis M. Jones Schedule 13D/A for Jones Pharma",
+      "publisher": "United States Securities and Exchange Commission",
+      "tier": 1,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Exact Dennis M. Jones name",
+        "Jones Pharma ownership",
+        "Judith A. Jones joint filing",
+        "St Louis company and personal business geography",
+        "2000 transaction timing"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://money.cnn.com/2000/07/13/deals/king/",
+      "title": "Pharmaceutical firms Jones and King in merger deal",
+      "publisher": "CNN Money",
+      "tier": 2,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Jones Pharma and King Pharmaceuticals merger",
+        "Dennis M. Jones statement about the transaction",
+        "Specialty-pharmaceutical business identity"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.bizjournals.com/stlouis/news/2016/09/21/dennis-jones-drug-company-founder-dies.html",
+      "title": "Dennis Jones, drug company founder, dies",
+      "publisher": "St. Louis Business Journal",
+      "tier": 2,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Dennis Jones as pharmaceutical-company founder and philanthropist",
+        "St Louis geography",
+        "Death in September 2016"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.legacy.com/us/obituaries/stltoday/name/dennis-jones-obituary?id=3032718",
+      "title": "Dennis M. Jones Sr. obituary",
+      "publisher": "St. Louis Post-Dispatch",
+      "tier": 2,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Exact Dennis M. Jones identity",
+        "Ladue and St Louis geography",
+        "Death on 20 September 2016 at age 78",
+        "Jones Pharma founding in 1981",
+        "High-school and United States Marine Corps background",
+        "Education, employment and social-service philanthropy"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.encyclopedia.com/books/politics-and-business-magazines/jones-medical-industries-inc",
+      "title": "Jones Medical Industries, Inc. company history",
+      "publisher": "Encyclopedia.com",
+      "tier": 3,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Insurance and pharmaceutical-sales background",
+        "Earlier pharmaceutical partnership and sale",
+        "Launch of Jones Medical Industries with Judith Jones",
+        "Use of the couple's savings and investment from friends",
+        "Acquisition-led niche-product strategy"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://greaterstlouis.ja.org/about/our-laureates",
+      "title": "Junior Achievement of Greater St. Louis Hall of Fame Laureates",
+      "publisher": "Junior Achievement of Greater St. Louis",
+      "tier": 1,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Dennis Jones as founder of Jones Pharma",
+        "St Louis business-community identity",
+        "2006 Hall of Fame recognition"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://projects.propublica.org/nonprofits/organizations/436786094",
+      "title": "Dennis M Jones Family Foundation",
+      "publisher": "ProPublica Nonprofit Explorer",
+      "tier": 2,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Exact foundation name",
+        "St Louis private-foundation status",
+        "Foundation existence from 2000"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://en.wikipedia.org/wiki/Dennis_M._Jones",
+      "title": "Dennis M. Jones",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Exact personal-page URL",
+        "Jones Pharma founder identity",
+        "1938-2016 lifespan",
+        "St Louis business and foundation context"
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.nytimes.com/2014/07/27/business/seeing-a-supersize-yacht-as-a-job-engine-not-a-self-indulgence.html",
+      "title": "Seeing a Supersize Yacht as a Job Engine, Not a Self-Indulgence",
+      "publisher": "The New York Times",
+      "tier": 2,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Owner-context identity bridge for exact Dennis M. Jones",
+        "Jones Pharma sale as principal fortune mechanism",
+        "St Louis geography",
+        "Family-foundation and education-focused philanthropy"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Input age conflict",
+      "detail": "The immutable record contains birth_age 78 with birth_age_at_date 2020-05-07, which would not fit the verified 1938 birth year. Independent obituary and corporate evidence show that Jones was 78 when he died in 2016; the calculated input field appears stale or misclassified and is not proposed for editing."
+    },
+    {
+      "topic": "Identity and namesakes",
+      "detail": "Dennis Jones is a common name. Resolution does not rely on the name alone: the owner-context bridge, exact SEC middle initial, Jones Pharma, St Louis address, 2000 transaction and 2016 death converge on the same person. FedEx executive, beauty-industry and other Dennis Jones results were rejected."
+    },
+    {
+      "topic": "Current primary industry",
+      "detail": "Jones Pharma was sold in 2000. No reviewed source identifies the principal allocation of Jones's personal proceeds before his death, and the family foundation's assets are charitable rather than private wealth-producing holdings, so the primary industry remains Unknown."
+    },
+    {
+      "topic": "Transaction value and proceeds",
+      "detail": "Published sources report a multi-billion-dollar company transaction, but that enterprise value was not Jones's personal proceeds. The dossier therefore describes the sale without assigning the full transaction value to him."
+    },
+    {
+      "topic": "Birthplace",
+      "detail": "A reference profile gives Terre Haute, Indiana, as Jones's birthplace, but no sufficiently strong independent source was located to justify importing that field. Exact birth and death dates have stronger corroboration and are proposed separately."
+    },
+    {
+      "topic": "Social profiles",
+      "detail": "The exact Wikipedia page is verified through company, geography and date anchors. A LinkedIn result for the family foundation is sparse and uncorroborated by an official cross-link, while no personal Instagram or website was verified; those links are not proposed."
+    },
+    {
+      "topic": "Excluded material",
+      "detail": "Vessel facts were used only for identity resolution and are excluded from both biographies. Politics, allegations, legal matters, controversy, private-family detail, transient foundation totals and exhaustive beneficiary lists are also excluded."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Identity is resolved through exact-name, company, geography and date convergence despite the stale calculated-age field. The deceased-founder dossier is terminal and import-ready at the stated confidences; personal proceeds, company value and foundation assets remain carefully separated. Nothing has been compiled, approved or applied."
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "schema_version": 7,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 11715,
+    "display_name": "Unknown French",
+    "identity_confidence": {
+      "score": 0,
+      "band": "insufficient",
+      "reason": "The immutable record stores Unknown as the first name and French as the last name but supplies no nationality, residence, employer, occupation, biography, life date or social profile. The wording is a generic placeholder rather than a unique natural-person or institutional identity, and even French nationality cannot be inferred from a blank nationality field."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "nationality",
+      "secondary_nationality",
+      "main_residence_country",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "nationality",
+      "secondary_nationality",
+      "main_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This record is a placeholder, not an identified person or institution. French is stored as a surname-like field while the nationality field is blank, so it cannot establish citizenship, residence, language, ethnicity or business location. Exact-phrase and Forbes-first searches produced unrelated descriptive uses rather than one attributable subject. Biography, classifications and personal enrichment are intentionally withheld.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The immutable record contains no natural-person or institutional identifier, and focused public checks found no unique non-vessel evidence capable of resolving the placeholder."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Mandatory exact-phrase and site-restricted Forbes searches found no dedicated personal or institutional profile for Unknown French. Results used the words as an unattributed art descriptor or in unrelated prose and cannot identify this record."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No wealth-creation industry can be assigned without an identified person, institution, employer, enterprise or independently documented wealth-producing asset.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The placeholder provides no evidence about any person's or institution's business or wealth mechanism, and the word French cannot support an industry inference."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No current primary industry can be assigned to a placeholder with no resolved person, institution, occupation, employer or holding.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "No non-vessel evidence connects the record to a natural person, institution or current business interest. Assigning a sector would be unsupported speculation."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No evidence establishes whether the unidentified subject's position arose through self-made activity, inheritance, transfer or another mechanism.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Wealth origin requires an identified subject and documented ownership history, neither of which is present."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No evidence establishes whether the unidentified subject is a founder, operator, investor, heir, beneficiary, family-office principal or institution.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The record contains no wealth-producing enterprise, inherited holding, institutional form or personal role from which a relationship classification could be derived."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=11715",
+      "title": "Unknown French owner record, person ID 11715",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Exact placeholder display name and person ID",
+        "Unknown and French stored as pseudo-person name fields",
+        "Blank nationality, residence, employer, biography and social profiles",
+        "Unknown mortality status",
+        "Multiple asset relationships without a non-vessel personal identifier",
+        "Absence of a resolvable person or institution"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/search/?q=%22Unknown%20French%22",
+      "title": "Forbes search for exact phrase Unknown French",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "No dedicated Forbes person or institution profile for the placeholder",
+        "Phrase used only in unrelated descriptive contexts",
+        "Absence of a Forbes identity anchor"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Identity",
+      "detail": "No personal or institutional name or independently matching biographical identifier is present. Unknown French is explicitly a generic placeholder and cannot be mapped to one natural person or organisation."
+    },
+    {
+      "topic": "Descriptor boundary",
+      "detail": "French is stored in the last-name field while nationality is blank. It was not used to infer citizenship, nationality, residence, language, ethnicity, birthplace, legal form or business location."
+    },
+    {
+      "topic": "Forbes",
+      "detail": "No dedicated Forbes profile applies because the record contains no usable subject name. Forbes results using the exact phrase describe unidentified French artworks or unrelated material and were rejected."
+    },
+    {
+      "topic": "Person versus institution",
+      "detail": "The immutable record is shaped as a person entry, but it supplies no evidence that the underlying subject is a specific natural person rather than a company, trust, nominee or other institution. Record type remains unresolved_placeholder."
+    },
+    {
+      "topic": "Asset-link boundary",
+      "detail": "The inventory contains more than one private-asset relationship, but those links do not name a beneficial owner or provide an independently verifiable non-vessel anchor. They were not used to infer one person or combine unrelated public identities."
+    },
+    {
+      "topic": "Personal enrichment",
+      "detail": "Biography, personal details, social profiles and non-Unknown wealth classifications remain intentionally empty until direct non-vessel evidence identifies a person or institution above the identity threshold."
+    },
+    {
+      "topic": "Excluded evidence",
+      "detail": "No biography was generated from vessel identity, ownership, specifications or history. No identity inference was made from the word French, and unrelated public records were excluded."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Keep this record on the unresolved-placeholder path. Require a reliable source naming a person or institution and independently connecting that subject to person ID 11715 through a non-vessel anchor before proposing biography, personal fields, social links or non-Unknown classifications. Nothing has been compiled or applied."
+  }
+}

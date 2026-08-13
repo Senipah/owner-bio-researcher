@@ -1,0 +1,302 @@
+{
+  "schema_version": 7,
+  "record_type": "institution",
+  "owner": {
+    "person_id": 7021,
+    "display_name": "Revival of Maritime Traditions",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The display phrase is the documented English name of the Russian Association (Non-Profit Partnership) Revival of Maritime Traditions, not a human name. The Russian tax service, Russian corporate-register reporting and an official U.S. entity listing converge on the same Russian and English names, tax number 7805303650 and registration number 1097800006380."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "last_name",
+      "name_suffix",
+      "secondary_nationality",
+      "main_residence_country",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "last_name",
+      "secondary_nationality",
+      "main_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This record resolves to a Russian association and non-profit partnership, not a natural person. Russian tax reporting supplies the full legal name and tax number, while Russian corporate-register reporting and an official English-language government listing corroborate its registration number and institutional identity. Person-only attributes, personal social profiles and wealth classifications are therefore inapplicable.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Multiple government and corporate-register sources establish one legal institution and matching identifiers without requiring a person inference."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The mandatory Forbes-first exact-name and profile searches found a contextual article but no dedicated Forbes profile for Revival of Maritime Traditions. No Forbes URL is proposed."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Wealth-creation industry is a person-level classification and is not assigned to this non-profit association record.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Schema-v7 requires Unknown classifications for institutions, and the evidence resolves an organisation rather than an individual wealth creator."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No person-level primary industry is imported for an institutional record, despite the association's documented registered activities.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Schema-v7 keeps institution classifications Unknown rather than translating an organisation's filed activity codes into a personal industry field."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Self-made, inherited, transferred or dynastic origin is not meaningful without a resolved natural person.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The record is a legally documented association, not a human owner whose starting position can be classified."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Founder, operator, investor, heir or custodian relationships cannot be applied to an institutional record.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The evidence identifies an association but does not resolve a natural person to whom a relationship-to-wealth category could apply."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "biography": {
+    "plain_text": "Revival of Maritime Traditions is a Saint Petersburg association registered in Russia in 2009 as a non-profit partnership. The association carries official Russian registration number 1097800006380 and tax number 7805303650. Its registered activities include market and public-opinion research, publishing, databases, business consulting and several forms of maritime transport support services.",
+    "html": "<p>Revival of Maritime Traditions is a Saint Petersburg association registered in Russia in 2009 as a non-profit partnership. The association carries official Russian registration number 1097800006380 and tax number 7805303650. Its registered activities include market and public-opinion research, publishing, databases, business consulting and several forms of maritime transport support services.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Official tax reporting and corporate-register evidence establish the legal form, location, registration year, identifiers and registered activity scope."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Revival of Maritime Traditions is an institutional identity rather than a person. Its full legal name is Association (Non-Profit Partnership) Revival of Maritime Traditions, and it carries Russian tax number 7805303650 and registration number 1097800006380. The association was registered in 2009 and has its registered office in Saint Petersburg.\n\nIts registered main activity is market and public-opinion research. Additional filed activities span publishing, databases, management consulting and marine transport services. This legal and activity profile establishes a distinct nonprofit association with a broad registered scope; it does not identify a natural person or support person-level wealth attributes.",
+    "html": "<p>Revival of Maritime Traditions is an institutional identity rather than a person. Its full legal name is Association (Non-Profit Partnership) Revival of Maritime Traditions, and it carries Russian tax number 7805303650 and registration number 1097800006380. The association was registered in 2009 and has its registered office in Saint Petersburg.</p>\r\n<p>Its registered main activity is market and public-opinion research. Additional filed activities span publishing, databases, management consulting and marine transport services. This legal and activity profile establishes a distinct nonprofit association with a broad registered scope; it does not identify a natural person or support person-level wealth attributes.</p>\r\n",
+    "word_count": 97,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The Russian tax service, corporate-register reporting and official English-language identity data converge on the institution and support its durable legal and registered-activity description."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "biography",
+      "value": "<p>Revival of Maritime Traditions is a Saint Petersburg association registered in Russia in 2009 as a non-profit partnership. The association carries official Russian registration number 1097800006380 and tax number 7805303650. Its registered activities include market and public-opinion research, publishing, databases, business consulting and several forms of maritime transport support services.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The biography accurately describes the documented institution, is supported by strong public records and avoids person-only or ownership claims."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "proposed_socials": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://bo.nalog.gov.ru/download/bfo/pdf/4667839?detailId=51977781&period=2024",
+      "title": "Information from the State Information Resource for Accounting (Financial) Statements: INN 7805303650",
+      "publisher": "Federal Tax Service of Russia",
+      "tier": 1,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Full Russian legal name Association (Non-Profit Partnership) Revival of Maritime Traditions",
+        "Russian tax number 7805303650 and institutional legal form",
+        "Saint Petersburg registered location",
+        "Registered principal activity in market and public-opinion research"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://companies.rbc.ru/id/1097800006380-assotsiatsiya--np--vozrozhdenie-morskih-traditsij/",
+      "title": "NP VMT — OGRN 1097800006380, INN 7805303650",
+      "publisher": "RBC Companies",
+      "tier": 2,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Exact Russian association name and short form NP VMT",
+        "Registration in Saint Petersburg in 2009",
+        "Registration number 1097800006380 and tax number 7805303650",
+        "Registered principal and additional activity codes"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://ofac.treasury.gov/recent-actions/20220602",
+      "title": "Entity list update of 2 June 2022",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control",
+      "tier": 1,
+      "accessed_at": "2026-08-13",
+      "supports": [
+        "Official English name Non-Profit Partnership Revival of Maritime Traditions",
+        "Revival of Maritime Traditions as a documented strong alias",
+        "Russian name Vozrozhdenie Morskikh Traditsiy",
+        "Matching tax number 7805303650 and registration number 1097800006380"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Record type",
+      "detail": "The immutable source stores the phrase in a person-shaped owner record, but its display name exactly matches a documented Russian association. Strong legal-identifier evidence supports record_type institution at 100; no natural person is inferred."
+    },
+    {
+      "topic": "English rendering",
+      "detail": "Public sources render the legal form as Non-Profit Partnership, Non-Profit Association and Association (Non-Profit Partnership). The concise display name Revival of Maritime Traditions is a documented alias of the same entity, confirmed through matching Russian name, tax number and registration number."
+    },
+    {
+      "topic": "Registration date",
+      "detail": "Russian corporate-register reporting gives 27 October 2009, while the official U.S. listing gives 20 October 2009 as the establishment date. The biographies therefore state only the uncontested year 2009."
+    },
+    {
+      "topic": "Activity description",
+      "detail": "The dossier describes registered activity codes rather than inferring a mission from the organisation's name. Public evidence does not establish a broader cultural-preservation programme suitable for import."
+    },
+    {
+      "topic": "Person fields and classifications",
+      "detail": "The input's Russian nationality and other person-shaped fields are not treated as attributes of a human. Schema-v7 institution rules keep all personal wealth classifications Unknown and prohibit personal detail or social proposals."
+    },
+    {
+      "topic": "Excluded material",
+      "detail": "Vessel ownership and context, private individuals, politics, sanctions, controversy, legal claims, sensitive information and transient financial figures are excluded from the biographies and proposals."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal institutional research and strict editorial validation are complete. Exact legal-identifier evidence resolves the record as a Russian non-profit association rather than a person. All person-level classifications remain Unknown, and only the missing biography is proposed at confidence 99. Nothing was compiled or applied."
+  }
+}
