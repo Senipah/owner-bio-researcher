@@ -134,3 +134,46 @@ def test_exact_social_check_ignores_live_order() -> None:
 
     assert not plan["conflicts"]
     assert not plan["has_changes"]
+
+
+def test_detail_field_scope_ignores_other_details_and_socials() -> None:
+    owner = owner_fixture()
+    owner["details"]["first_name"]["value"] = "A."
+    owner["details"]["title"]["value"] = "Admiral"
+    owner["social_media_profiles"].append(
+        {
+            "profile_key": "new_link",
+            "type_id": "5",
+            "type": "LinkedIn",
+            "url": "https://linkedin.com/in/test",
+        }
+    )
+
+    plan = build_owner_change_plan(
+        owner,
+        detail_fields={"first_name"},
+        include_socials=False,
+    )
+
+    assert [change["field"] for change in plan["detail_changes"]] == [
+        "first_name"
+    ]
+    assert not plan["social_additions"]
+    assert not plan["social_replacements"]
+    assert not plan["social_removals"]
+
+
+def test_rich_text_entities_compare_as_the_same_content() -> None:
+    owner = owner_fixture()
+    owner["details"]["biography"] = field(
+        "<p>Jørn Updated</p>",
+        kind="rich_text_html",
+    )
+    owner["_baseline"]["details"]["biography"] = field(
+        "<p>J&oslash;rn Updated</p>",
+        kind="rich_text_html",
+    )
+
+    plan = build_owner_change_plan(owner)
+
+    assert not plan["has_changes"]

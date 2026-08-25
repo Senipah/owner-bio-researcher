@@ -20,9 +20,11 @@ class _FakeElement:
 
 
 class _FakeDriver:
-    def __init__(self) -> None:
+    def __init__(self, *, actual: str = "<p>Updated</p>") -> None:
         self.element = _FakeElement()
         self.scripts: list[str] = []
+        self.async_scripts: list[str] = []
+        self.actual = actual
 
     def find_elements(self, _by: str, _value: str) -> list[_FakeElement]:
         return [self.element]
@@ -30,6 +32,10 @@ class _FakeDriver:
     def execute_script(self, script: str, *_args: object) -> bool:
         self.scripts.append(script)
         return "CKEDITOR.instances" in script
+
+    def execute_async_script(self, script: str, *_args: object) -> dict:
+        self.async_scripts.append(script)
+        return {"updated": True, "actual": self.actual}
 
 
 def test_known_rich_text_field_uses_ckeditor_for_legacy_textarea_kind() -> None:
@@ -43,6 +49,21 @@ def test_known_rich_text_field_uses_ckeditor_for_legacy_textarea_kind() -> None:
 
     assert len(driver.scripts) == 1
     assert "CKEDITOR.instances" in driver.scripts[0]
+    assert len(driver.async_scripts) == 1
+    assert "callback: function()" in driver.async_scripts[0]
+    assert driver.async_scripts[0].index("callback: function()") < (
+        driver.async_scripts[0].index("editor.updateElement()")
+    )
+
+
+def test_ckeditor_html_entities_are_accepted_as_equivalent() -> None:
+    driver = _FakeDriver(actual="<p>J&oslash;rn Updated</p>")
+    updater = OwnerBrowserUpdater(driver)
+
+    updater._set_detail_field(
+        "biography",
+        {"kind": "rich_text_html", "value": "<p>Jørn Updated</p>"},
+    )
 
 
 class _ElementState:

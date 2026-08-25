@@ -393,6 +393,25 @@ skipped blanks, and conflicts before applying:
   --apply
 ```
 
+To reconcile only one or more named details fields, repeat `--detail-field`.
+This scoped mode ignores every other details field and all social-profile
+changes. For example, to apply only compiled short biographies:
+
+```powershell
+.\venv\Scripts\python.exe .\update_owners.py `
+  --input output\completed-enriched-owners.json `
+  --ai-enriched-only `
+  --detail-field biography `
+  --apply
+```
+
+When existing biographies may have changed since the immutable research
+export, first create a freshly enriched owner snapshot. Compile with
+`--live-biography-baseline SNAPSHOT` to replace only the short-biography
+baseline while keeping the dossier HTML as the desired value. The updater will
+still re-read the live field and report a conflict if it changed again after
+that snapshot.
+
 Potentially destructive options are separate and explicit:
 
 ```powershell

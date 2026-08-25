@@ -1,10 +1,14 @@
 from __future__ import annotations
 
+from copy import deepcopy
 from pathlib import Path
 
 import pytest
 
-from compile_owner_research import build_parser
+from compile_owner_research import (
+    _attach_live_biography_baselines,
+    build_parser,
+)
 from src.io_utils import new_document, new_owner, set_baseline
 from src.research_batch import (
     attach_biography_comparisons,
@@ -1032,3 +1036,34 @@ def test_renders_review_report() -> None:
     assert "Missing fields added" in rendered
     assert "Official profile" in rendered
     assert "Confirm whether this record represents an institution." in rendered
+
+
+def test_live_biography_baseline_replaces_only_the_baseline_field() -> None:
+    owner = _owner(10, "First Owner", 1)
+    owner["details"]["biography"]["value"] = "Desired dossier biography"
+    derived = {"owners": [owner]}
+    live_owner = deepcopy(owner)
+    live_owner["details"]["biography"]["value"] = "Current live biography"
+    set_baseline(live_owner)
+    live_owner["enrichment"] = {"status": "ok"}
+
+    _attach_live_biography_baselines(
+        derived,
+        {"owners": [live_owner]},
+        baseline_path=Path("output/live.json"),
+    )
+
+    compiled = derived["owners"][0]
+    assert compiled["details"]["biography"]["value"] == (
+        "Desired dossier biography"
+    )
+    assert compiled["_baseline"]["details"]["biography"]["value"] == (
+        "Current live biography"
+    )
+    assert compiled["_baseline"]["details"]["display_name"]["value"] == (
+        "First Owner"
+    )
+    assert derived["live_biography_baseline"] == {
+        "source_path": "output/live.json",
+        "owner_count": 1,
+    }

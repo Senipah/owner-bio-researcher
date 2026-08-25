@@ -5,17 +5,38 @@ from typing import Any
 from selenium.common.exceptions import (
     NoSuchElementException,
     StaleElementReferenceException,
+    TimeoutException,
 )
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select, WebDriverWait
 
 from .constants import DEFAULT_TIMEOUT_SECONDS, RICH_TEXT_DETAIL_FIELDS
-from .diffing import field_value
+from .diffing import field_value, normalize_rich_text_html
 
 
 class BrowserUpdateError(RuntimeError):
     pass
+
+
+def _html_difference_summary(expected: str, actual: str) -> str:
+    mismatch = next(
+        (
+            index
+            for index, (expected_char, actual_char) in enumerate(
+                zip(expected, actual, strict=False)
+            )
+            if expected_char != actual_char
+        ),
+        min(len(expected), len(actual)),
+    )
+    start = max(0, mismatch - 12)
+    end = mismatch + 12
+    return (
+        f"expected length {len(expected)}, actual length {len(actual)}, "
+        f"first difference at {mismatch}: "
+        f"expected {expected[start:end]!r}, actual {actual[start:end]!r}"
+    )
 
 
 class OwnerBrowserUpdater:
@@ -115,30 +136,87 @@ class OwnerBrowserUpdater:
 
         if kind == "rich_text_html" or key in RICH_TEXT_DETAIL_FIELDS:
             element_id = element.get_attribute("id")
-            updated = self.driver.execute_script(
-                """
-                const id = arguments[0];
-                const value = arguments[1];
-                if (window.CKEDITOR && CKEDITOR.instances[id]) {
-                    CKEDITOR.instances[id].setData(value);
-                    CKEDITOR.instances[id].updateElement();
-                    return true;
-                }
-                return false;
-                """,
-                element_id,
-                "" if value is None else str(value),
-            )
-            if not updated:
+            desired_value = "" if value is None else str(value)
+            try:
+                editor_available = self.wait.until(
+                    lambda driver: driver.execute_script(
+                        """
+                        const id = arguments[0];
+                        return Boolean(
+                            window.CKEDITOR && CKEDITOR.instances[id]
+                        );
+                        """,
+                        element_id,
+                    )
+                )
+            except TimeoutException:
+                editor_available = False
+
+            if editor_available:
+                result = self.driver.execute_async_script(
+                    """
+                    const id = arguments[0];
+                    const value = arguments[1];
+                    const done = arguments[arguments.length - 1];
+                    const editor = window.CKEDITOR && CKEDITOR.instances[id];
+                    if (!editor) {
+                        done({updated: false, error: 'CKEditor not found'});
+                        return;
+                    }
+                    try {
+                        editor.setData(value, {
+                            callback: function() {
+                                try {
+                                    editor.updateElement();
+                                    done({
+                                        updated: true,
+                                        actual: editor.getData()
+                                    });
+                                } catch (error) {
+                                    done({
+                                        updated: false,
+                                        error: String(error)
+                                    });
+                                }
+                            }
+                        });
+                    } catch (error) {
+                        done({updated: false, error: String(error)});
+                    }
+                    """,
+                    element_id,
+                    desired_value,
+                )
+                if not isinstance(result, dict) or not result.get("updated"):
+                    error = (
+                        result.get("error")
+                        if isinstance(result, dict)
+                        else "no result returned"
+                    )
+                    raise BrowserUpdateError(
+                        f"CKEditor update failed for {name}: {error}"
+                    )
+                actual_value = str(result.get("actual", ""))
+                if normalize_rich_text_html(actual_value) != (
+                    normalize_rich_text_html(desired_value)
+                ):
+                    raise BrowserUpdateError(
+                        f"CKEditor normalized the requested value for {name}: "
+                        f"{_html_difference_summary(desired_value, actual_value)}"
+                    )
+            else:
                 self.driver.execute_script(
                     """
                     arguments[0].value = arguments[1];
+                    arguments[0].dispatchEvent(
+                        new Event('input', {bubbles: true})
+                    );
                     arguments[0].dispatchEvent(
                         new Event('change', {bubbles: true})
                     );
                     """,
                     element,
-                    "" if value is None else str(value),
+                    desired_value,
                 )
             return
 

@@ -1,9 +1,12 @@
 from __future__ import annotations
 
 import argparse
-import subprocess
+import importlib.util
 import sys
+from copy import deepcopy
 from pathlib import Path
+from types import ModuleType
+from typing import Any
 
 from src.io_utils import atomic_write_json, atomic_write_text, load_json
 from src.research_batch import (
@@ -48,6 +51,15 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--output", type=Path)
     parser.add_argument("--report", type=Path)
     parser.add_argument(
+        "--live-biography-baseline",
+        type=Path,
+        help=(
+            "Freshly enriched owner JSON whose current biography values "
+            "replace only the compiled owners' biography baselines. Desired "
+            "biographies still come from the validated dossiers."
+        ),
+    )
+    parser.add_argument(
         "--selection",
         choices=sorted(RESEARCH_SELECTIONS),
         default="top-100",
@@ -88,31 +100,94 @@ def _default_output(
 
 
 def _validate_dossiers(
+    dossiers: dict[int, dict[str, Any]],
     paths: dict[int, Path],
     selected_ids: list[int],
     owner_input: Path,
+    owner_document: dict[str, Any],
 ) -> None:
+    validator = _load_dossier_validator()
     for person_id in selected_ids:
         path = paths.get(person_id)
         if path is None:
             continue
-        result = subprocess.run(
-            [
-                sys.executable,
-                str(DOSSIER_VALIDATOR),
-                str(path),
-                "--owner-input",
-                str(owner_input),
-                "--strict-editorial",
-            ],
-            cwd=REPO_ROOT,
-            text=True,
-            capture_output=True,
-            check=False,
+        dossier = dossiers[person_id]
+        errors, warnings = validator.validate(dossier)
+        errors.extend(
+            validator.validate_owner_document(
+                dossier,
+                owner_document,
+                owner_input,
+            )
         )
-        if result.returncode:
-            detail = (result.stderr or result.stdout).strip()
+        errors.extend(f"strict editorial: {warning}" for warning in warnings)
+        if errors:
+            detail = "\n".join(f"ERROR: {error}" for error in errors)
             raise ValueError(f"Invalid dossier for person_id {person_id}: {detail}")
+
+
+def _load_dossier_validator() -> ModuleType:
+    module_name = "owner_biography_dossier_validator"
+    spec = importlib.util.spec_from_file_location(module_name, DOSSIER_VALIDATOR)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"Could not load dossier validator: {DOSSIER_VALIDATOR}")
+    module = importlib.util.module_from_spec(spec)
+    script_directory = str(DOSSIER_VALIDATOR.parent)
+    sys.path.insert(0, script_directory)
+    try:
+        spec.loader.exec_module(module)
+    finally:
+        sys.path.remove(script_directory)
+    return module
+
+
+def _attach_live_biography_baselines(
+    derived: dict[str, Any],
+    live_document: dict[str, Any],
+    *,
+    baseline_path: Path,
+) -> None:
+    live_by_id = {
+        owner.get("person_id"): owner
+        for owner in live_document.get("owners", [])
+        if isinstance(owner, dict)
+    }
+    for owner in derived.get("owners", []):
+        person_id = owner.get("person_id")
+        live_owner = live_by_id.get(person_id)
+        if not isinstance(live_owner, dict):
+            raise ValueError(
+                f"Live biography baseline has no owner {person_id}"
+            )
+        if live_owner.get("enrichment", {}).get("status") != "ok":
+            raise ValueError(
+                f"Live biography baseline owner {person_id} is not enriched"
+            )
+        live_field = live_owner.get("details", {}).get("biography")
+        baseline_field = (
+            live_owner.get("_baseline", {})
+            .get("details", {})
+            .get("biography")
+        )
+        if not isinstance(live_field, dict) or live_field != baseline_field:
+            raise ValueError(
+                f"Live biography baseline owner {person_id} is not a clean "
+                "current snapshot"
+            )
+        owner_baseline = owner.get("_baseline")
+        if not isinstance(owner_baseline, dict):
+            raise ValueError(f"Compiled owner {person_id} has no baseline")
+        baseline_details = owner_baseline.get("details")
+        if not isinstance(baseline_details, dict):
+            raise ValueError(
+                f"Compiled owner {person_id} has no details baseline"
+            )
+        baseline_details["biography"] = deepcopy(live_field)
+
+    derived["live_biography_baseline"] = {
+        "source_path": str(baseline_path).replace("\\", "/"),
+        "owner_count": len(derived.get("owners", [])),
+    }
 
 
 def main() -> int:
@@ -138,7 +213,13 @@ def main() -> int:
             args.limit,
         )
         selected_ids = [owner["person_id"] for owner in selected]
-        _validate_dossiers(paths, selected_ids, args.input)
+        _validate_dossiers(
+            dossiers,
+            paths,
+            selected_ids,
+            args.input,
+            document,
+        )
         derived, report = compile_research_batch(
             document,
             dossiers,
@@ -148,6 +229,13 @@ def main() -> int:
             mark_ai_enriched=args.mark_ai_enriched,
             selection=args.selection,
         )
+        if args.live_biography_baseline is not None:
+            live_document = load_json(args.live_biography_baseline)
+            _attach_live_biography_baselines(
+                derived,
+                live_document,
+                baseline_path=args.live_biography_baseline,
+            )
         if args.compare_dossier_dir is not None:
             comparison_dossiers, _ = load_dossiers(
                 args.compare_dossier_dir

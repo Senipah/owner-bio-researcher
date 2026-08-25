@@ -10,7 +10,11 @@ from typing import Any
 from src.auth import authenticated_context
 from src.browser_update import OwnerBrowserUpdater
 from src.diffing import build_owner_change_plan
-from src.enrichment import fetch_owner_enrichment, refreshed_owner
+from src.enrichment import (
+    fetch_owner_details,
+    fetch_owner_enrichment,
+    refreshed_owner,
+)
 from src.io_utils import atomic_write_json, load_json, utc_now
 from src.workflow import (
     ensure_document_workflow,
@@ -42,6 +46,15 @@ def build_parser() -> argparse.ArgumentParser:
         "--replace-socials",
         action="store_true",
         help="Make live social profiles exactly match JSON, including removals.",
+    )
+    parser.add_argument(
+        "--detail-field",
+        action="append",
+        dest="detail_fields",
+        help=(
+            "Only reconcile this named details field; may be supplied more "
+            "than once. When used, social profiles are not changed."
+        ),
     )
     parser.add_argument(
         "--person-id",
@@ -87,6 +100,7 @@ def _verify_plan(
     socials: list[dict[str, Any]],
     allow_clear: bool,
     replace_socials: bool,
+    detail_fields: list[str] | None,
 ) -> dict[str, Any]:
     return build_owner_change_plan(
         owner,
@@ -94,6 +108,8 @@ def _verify_plan(
         live_socials=socials,
         allow_clear=allow_clear,
         replace_socials=replace_socials,
+        detail_fields=detail_fields,
+        include_socials=not detail_fields,
     )
 
 
@@ -139,6 +155,7 @@ def main() -> int:
         "input": str(args.input),
         "allow_clear": args.allow_clear,
         "replace_socials": args.replace_socials,
+        "detail_fields": sorted(set(args.detail_fields or [])),
         "records": [],
     }
     failures = 0
@@ -155,15 +172,32 @@ def main() -> int:
                 }
                 audit["records"].append(record)
                 try:
-                    live_details, live_socials, type_lookup = fetch_owner_enrichment(
-                        context.session, person_id
-                    )
+                    if args.detail_fields:
+                        live_details = fetch_owner_details(
+                            context.session,
+                            person_id,
+                        )
+                        live_socials = deepcopy(
+                            owner.get("_baseline", {}).get(
+                                "social_media_profiles",
+                                [],
+                            )
+                        )
+                        type_lookup: dict[str, str] = {}
+                    else:
+                        live_details, live_socials, type_lookup = (
+                            fetch_owner_enrichment(
+                                context.session,
+                                person_id,
+                            )
+                        )
                     plan = _verify_plan(
                         owner,
                         details=live_details,
                         socials=live_socials,
                         allow_clear=args.allow_clear,
                         replace_socials=args.replace_socials,
+                        detail_fields=args.detail_fields,
                     )
                     record["plan"] = plan
                     if plan["conflicts"]:
@@ -210,15 +244,27 @@ def main() -> int:
                             removals=plan["social_removals"],
                         )
 
-                    after_details, after_socials, after_lookup = (
-                        fetch_owner_enrichment(context.session, person_id)
-                    )
+                    if args.detail_fields:
+                        after_details = fetch_owner_details(
+                            context.session,
+                            person_id,
+                        )
+                        after_socials = live_socials
+                        after_lookup: dict[str, str] = {}
+                    else:
+                        after_details, after_socials, after_lookup = (
+                            fetch_owner_enrichment(
+                                context.session,
+                                person_id,
+                            )
+                        )
                     verification = _verify_plan(
                         owner,
                         details=after_details,
                         socials=after_socials,
                         allow_clear=args.allow_clear,
                         replace_socials=args.replace_socials,
+                        detail_fields=args.detail_fields,
                     )
                     record["verification"] = verification
                     if verification["conflicts"] or verification["has_changes"]:
@@ -232,7 +278,8 @@ def main() -> int:
                         details=after_details,
                         socials=after_socials,
                     )
-                    mark_owner_updated_in_system(refreshed)
+                    if not args.detail_fields:
+                        mark_owner_updated_in_system(refreshed)
                     refreshed_by_id[person_id].update(refreshed)
                     refreshed_document.setdefault("lookups", {}).setdefault(
                         "social_media_types", {}

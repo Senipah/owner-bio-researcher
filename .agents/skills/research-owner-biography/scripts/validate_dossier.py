@@ -936,8 +936,9 @@ def _mentions_vessel_name(text: str, vessel_name: str) -> bool:
     return False
 
 
-def validate_owner_input(
+def validate_owner_document(
     document: Any,
+    owner_document: Any,
     input_path: Path,
 ) -> list[str]:
     errors: list[str] = []
@@ -949,7 +950,8 @@ def validate_owner_input(
         return ["cannot compare owner input without owner and input_snapshot objects"]
 
     try:
-        owner_document = json.loads(input_path.read_text(encoding="utf-8"))
+        if not isinstance(owner_document, dict):
+            raise ValueError("owner input is not an object")
         owners = owner_document.get("owners")
         if not isinstance(owners, list):
             raise ValueError("owner input has no owners list")
@@ -1030,6 +1032,17 @@ def validate_owner_input(
                 "--owner-input"
             )
     return errors
+
+
+def validate_owner_input(
+    document: Any,
+    input_path: Path,
+) -> list[str]:
+    try:
+        owner_document = json.loads(input_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        return [f"owner input comparison failed: {exc}"]
+    return validate_owner_document(document, owner_document, input_path)
 
 
 def main() -> int:

@@ -1,8 +1,13 @@
 from __future__ import annotations
 
+import html
+import unicodedata
 from collections import Counter
+from collections.abc import Collection
 from copy import deepcopy
 from typing import Any
+
+from .constants import RICH_TEXT_DETAIL_FIELDS
 
 
 def field_value(field: Any) -> Any:
@@ -13,6 +18,21 @@ def field_value(field: Any) -> Any:
 
 def is_blank(value: Any) -> bool:
     return value is None or value == "" or value == []
+
+
+def normalize_rich_text_html(value: Any) -> Any:
+    if not isinstance(value, str):
+        return value
+    normalized = html.unescape(value)
+    normalized = normalized.replace("\r\n", "\n").replace("\r", "\n")
+    normalized = normalized.replace("\xa0", " ")
+    return unicodedata.normalize("NFC", normalized).strip()
+
+
+def detail_values_equal(field: str, left: Any, right: Any) -> bool:
+    if field in RICH_TEXT_DETAIL_FIELDS:
+        return normalize_rich_text_html(left) == normalize_rich_text_html(right)
+    return left == right
 
 
 def _social_pair(profile: dict[str, Any]) -> tuple[str, str]:
@@ -26,6 +46,8 @@ def build_owner_change_plan(
     live_socials: list[dict[str, Any]] | None = None,
     allow_clear: bool = False,
     replace_socials: bool = False,
+    detail_fields: Collection[str] | None = None,
+    include_socials: bool = True,
 ) -> dict[str, Any]:
     baseline = owner.get("_baseline")
     if not isinstance(baseline, dict):
@@ -39,11 +61,19 @@ def build_owner_change_plan(
     conflicts: list[dict[str, Any]] = []
     skipped_blanks: list[str] = []
 
+    selected_detail_fields = (
+        set(detail_fields) if detail_fields is not None else None
+    )
     for key, desired_field in desired_details.items():
+        if (
+            selected_detail_fields is not None
+            and key not in selected_detail_fields
+        ):
+            continue
         desired_value = field_value(desired_field)
         baseline_field = baseline_details.get(key)
         baseline_value = field_value(baseline_field)
-        if desired_value == baseline_value:
+        if detail_values_equal(key, desired_value, baseline_value):
             continue
         if is_blank(desired_value) and not allow_clear:
             skipped_blanks.append(key)
@@ -51,9 +81,9 @@ def build_owner_change_plan(
 
         if live_details is not None:
             live_value = field_value(live_details.get(key))
-            if live_value == desired_value:
+            if detail_values_equal(key, live_value, desired_value):
                 continue
-            if live_value != baseline_value:
+            if not detail_values_equal(key, live_value, baseline_value):
                 conflicts.append(
                     {
                         "section": "details",
@@ -91,22 +121,23 @@ def build_owner_change_plan(
     social_replacements: list[dict[str, Any]] = []
     social_removals: list[dict[str, Any]] = []
 
-    for item in desired_socials:
-        key = item.get("profile_key")
-        original = baseline_by_key.get(key)
-        if original is None:
-            social_additions.append(deepcopy(item))
-        elif _social_pair(original) != _social_pair(item):
-            social_replacements.append(
-                {"from": deepcopy(original), "to": deepcopy(item)}
-            )
+    if include_socials:
+        for item in desired_socials:
+            key = item.get("profile_key")
+            original = baseline_by_key.get(key)
+            if original is None:
+                social_additions.append(deepcopy(item))
+            elif _social_pair(original) != _social_pair(item):
+                social_replacements.append(
+                    {"from": deepcopy(original), "to": deepcopy(item)}
+                )
 
-    if replace_socials:
+    if include_socials and replace_socials:
         for key, original in baseline_by_key.items():
             if key not in desired_by_key:
                 social_removals.append(deepcopy(original))
 
-    if live_socials is not None:
+    if include_socials and live_socials is not None:
         live_pairs = [_social_pair(item) for item in live_socials]
         desired_pairs = [_social_pair(item) for item in desired_socials]
         baseline_pairs = [_social_pair(item) for item in baseline_socials]
