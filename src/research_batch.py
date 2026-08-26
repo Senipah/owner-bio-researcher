@@ -6,6 +6,12 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
+from .tags import (
+    TagCatalogue,
+    TagResolutionError,
+    load_tag_catalogue,
+    resolve_dossier_tags,
+)
 from .workflow import ensure_owner_workflow
 
 
@@ -28,7 +34,7 @@ DOSSIER_COMPARISON_LABELS = {
     "wealth_origin": "Wealth origin",
     "wealth_relationship": "Relationship to wealth",
 }
-COMPARISON_DOSSIER_SCHEMA_VERSIONS = {6, 7}
+COMPARISON_DOSSIER_SCHEMA_VERSIONS = {6, 7, 8}
 BIOGRAPHY_DETAIL_FIELDS = {"biography", "long_biography"}
 IMPORT_CONFIDENCE_THRESHOLD = 70
 REVIEW_STATUSES = {"pending", "complete", "approved", "rejected"}
@@ -257,6 +263,7 @@ def _build_owner_summary(
     biography_score: int | None,
     long_biography_score: int | None,
     changes: list[dict[str, Any]],
+    resolved_tags: list[dict[str, Any]],
 ) -> dict[str, Any]:
     unresolved_fields = sorted(
         set(
@@ -301,6 +308,7 @@ def _build_owner_summary(
             for field in RESEARCH_CLASSIFICATION_FIELDS
         },
         "changes": changes,
+        "tags": deepcopy(resolved_tags),
         "unresolved_fields": unresolved_fields,
         "candidates_requiring_review": dossier.get(
             "candidates_requiring_review", []
@@ -317,6 +325,7 @@ def apply_dossier(
     *,
     mark_ai_enriched: bool,
     generated_at: str,
+    resolved_tags: list[dict[str, Any]],
 ) -> dict[str, Any]:
     person_id = owner["person_id"]
     if dossier.get("owner", {}).get("person_id") != person_id:
@@ -360,6 +369,9 @@ def apply_dossier(
         )
 
     changes: list[dict[str, Any]] = []
+    compiled_tags = deepcopy(resolved_tags)
+    for tag in compiled_tags:
+        tag["sources"] = _source_refs(dossier, tag.get("source_ids", []))
     biography = dossier.get("biography")
     long_biography = dossier.get("long_biography")
     biography_score: int | None = None
@@ -391,6 +403,7 @@ def apply_dossier(
             "review_status": review_status,
             "compiled_at": generated_at,
             "change_count": 0,
+            "tags": deepcopy(compiled_tags),
             "biography_brief": deepcopy(dossier.get("biography_brief")),
             "editorial_assessment": deepcopy(
                 dossier.get("editorial_assessment")
@@ -410,6 +423,7 @@ def apply_dossier(
             biography_score=biography_score,
             long_biography_score=long_biography_score,
             changes=[],
+            resolved_tags=compiled_tags,
         )
 
     details = owner.get("details")
@@ -593,6 +607,7 @@ def apply_dossier(
         "review_status": review_status,
         "compiled_at": generated_at,
         "change_count": len(changes),
+        "tags": deepcopy(compiled_tags),
         "biography_brief": deepcopy(dossier.get("biography_brief")),
         "editorial_assessment": deepcopy(dossier.get("editorial_assessment")),
         "biography": deepcopy(biography),
@@ -613,6 +628,7 @@ def apply_dossier(
         biography_score=biography_score,
         long_biography_score=long_biography_score,
         changes=changes,
+        resolved_tags=compiled_tags,
     )
 
 
@@ -626,6 +642,7 @@ def compile_research_batch(
     mark_ai_enriched: bool,
     selection: str = "top-100",
     generated_at: str | None = None,
+    tag_catalogue: TagCatalogue | None = None,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
     timestamp = generated_at or datetime.now(UTC).isoformat()
     selected = select_research_owners(source_document, selection, limit)
@@ -641,6 +658,23 @@ def compile_research_batch(
     if missing:
         raise ValueError(f"Missing dossiers for person IDs: {missing}")
 
+    catalogue = tag_catalogue or load_tag_catalogue()
+    resolved_tags_by_owner: dict[int, list[dict[str, Any]]] = {}
+    resolution_issues: list[str] = []
+    for source_owner in selected:
+        person_id = source_owner["person_id"]
+        try:
+            resolved_tags_by_owner[person_id] = resolve_dossier_tags(
+                dossiers[person_id],
+                catalogue,
+                person_id=person_id,
+            )
+        except TagResolutionError as exc:
+            resolution_issues.append(str(exc))
+    if resolution_issues:
+        detail = "\n".join(resolution_issues)
+        raise TagResolutionError(f"Tag resolution failed:\n{detail}")
+
     derived = deepcopy(source_document)
     compiled_owners: list[dict[str, Any]] = []
     summaries: list[dict[str, Any]] = []
@@ -653,6 +687,7 @@ def compile_research_batch(
             str(dossier_paths[person_id]),
             mark_ai_enriched=mark_ai_enriched,
             generated_at=timestamp,
+            resolved_tags=resolved_tags_by_owner[person_id],
         )
         compiled_owners.append(owner)
         summaries.append(summary)
@@ -673,6 +708,10 @@ def compile_research_batch(
             "complete" if mark_ai_enriched else "not_marked_ai_enriched"
         ),
         "owner_count": len(compiled_owners),
+        "tag_catalogue": {
+            "schema_version": catalogue.document.get("schema_version"),
+            "source_path": catalogue.source_reference,
+        },
     }
     report = {
         "generated_at": timestamp,
@@ -680,6 +719,10 @@ def compile_research_batch(
         "mark_ai_enriched": mark_ai_enriched,
         "selection": selection,
         "selection_description": RESEARCH_SELECTION_DESCRIPTIONS[selection],
+        "tag_catalogue": {
+            "schema_version": catalogue.document.get("schema_version"),
+            "source_path": catalogue.source_reference,
+        },
         "owners": summaries,
     }
     return derived, report
@@ -973,6 +1016,9 @@ def render_research_report(report: dict[str, Any]) -> str:
         for change in owner.get("changes", [])
         if change.get("kind") == "social"
     )
+    resolved_tag_count = sum(
+        len(owner.get("tags", [])) for owner in owners
+    )
     comparison = report.get("biography_comparison")
     comparison_count = (
         int(comparison.get("owner_count", 0))
@@ -1133,6 +1179,27 @@ def render_research_report(report: dict[str, Any]) -> str:
                 + "".join(rows)
                 + "</tbody></table></div>"
             )
+
+        tag_rows = [
+            "<tr>"
+            f"<td>{_e(tag.get('name'))}</td>"
+            f"<td><code>{_e(tag.get('id'))}</code></td>"
+            f"<td>{_e(tag.get('summary'))}</td>"
+            f"<td>{_confidence_badge(tag.get('confidence', {}).get('score'))}</td>"
+            f"<td>{_source_links(tag.get('sources', []))}</td>"
+            "</tr>"
+            for tag in owner.get("tags", [])
+            if isinstance(tag, dict)
+        ]
+        tag_table = (
+            '<div class="table-wrap"><table><thead><tr>'
+            "<th>Canonical tag</th><th>Research ID</th><th>Application</th>"
+            "<th>Confidence</th><th>Evidence</th></tr></thead><tbody>"
+            + "".join(tag_rows)
+            + "</tbody></table></div>"
+            if tag_rows
+            else '<p class="muted">No durable material tags apply.</p>'
+        )
 
         source_items = "".join(
             "<li>"
@@ -1411,6 +1478,8 @@ def render_research_report(report: dict[str, Any]) -> str:
                 </div>
                 <p><strong>Forbes profile:</strong> {forbes_value}
                   {_confidence_badge(forbes.get("confidence", {}).get("score"))}</p>
+                <h3>Canonical tags</h3>
+                {tag_table}
                 <h3>Missing fields added</h3>
                 {table(detail_rows, "No missing detail fields met the confidence threshold.")}
                 <h3>Existing fields improved</h3>
@@ -1554,6 +1623,7 @@ def render_research_report(report: dict[str, Any]) -> str:
       <div class="metric"><strong>{len(owners)}</strong>owners researched</div>
       <div class="metric"><strong>{field_additions}</strong>missing fields added</div>
       <div class="metric"><strong>{link_additions}</strong>verified links added</div>
+      <div class="metric"><strong>{resolved_tag_count}</strong>resolved tags</div>
       {
         (
           '<div class="metric"><strong>'

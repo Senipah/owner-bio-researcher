@@ -26,7 +26,8 @@ unambiguous, resolves the identity, researches public sources, and returns:
 - verified personal social profiles and relevant official websites;
 - the 50–55 word short biography and 90–190 word two-paragraph profile;
 - confidence, sources, unresolved questions, and limitations; and
-- optional schema-v7-compatible JSON when explicitly requested.
+- suggested canonical tags, including the supported long tail; and
+- optional schema-v8-compatible JSON when explicitly requested.
 
 Only genuinely ambiguous names require a focused follow-up question.
 Ordinary responses never discuss repository scripts, schema resources, or
@@ -36,8 +37,8 @@ OpenAI recommends putting behaviour and workflow in GPT Instructions and using
 uploaded Knowledge for reference material. The package follows that split:
 
 - paste [`instructions.md`](instructions.md) into the GPT's Instructions;
-- upload [`owner-biography-knowledge.md`](owner-biography-knowledge.md) as its
-  only Knowledge file; and
+- upload [`owner-biography-knowledge.md`](owner-biography-knowledge.md) and
+  [`tag-catalogue.json`](tag-catalogue.json) as its two Knowledge files; and
 - use [`preview-tests.md`](preview-tests.md) before sharing or relying on an
   updated version.
 
@@ -72,8 +73,8 @@ GPT. End users do not perform them.
 
 1. Open the GPT editor in ChatGPT on the web.
 2. Copy the complete contents of `instructions.md` into **Instructions**.
-3. Upload the already generated `owner-biography-knowledge.md` under
-   **Knowledge**.
+3. Upload the already generated `owner-biography-knowledge.md` and
+   `tag-catalogue.json` under **Knowledge**.
 4. Apply the configuration above.
 5. Run every required scenario in `preview-tests.md`.
 6. Keep the GPT private or workspace-restricted unless a separate public
@@ -106,7 +107,7 @@ disambiguator only when multiple plausible people remain.
 
 The GPT returns the complete human-readable profile by default. The user does
 not need to ask separately for personal details, social links, classifications,
-or biographies. It creates a schema-v7-compatible manual dossier only when the
+or biographies. It creates a schema-v8-compatible manual dossier only when the
 user explicitly asks for JSON or a dossier. That optional dossier is not
 owner-input-validated or compilation-ready.
 
@@ -128,8 +129,8 @@ compare the dossier with an owner export.
 ## Updating the package
 
 This section is for repository maintainers, not GPT users. The four canonical
-reference files remain authoritative. After any reference change, rebuild the
-Knowledge file and run:
+reference files and `config/owner-tags.json` remain authoritative. After any
+reference or catalogue change, rebuild both GPT Knowledge files and run:
 
 ```powershell
 .\venv\Scripts\python.exe `

@@ -258,7 +258,7 @@ Owner research is stored as one completed-research dossier per person under
 `output\owner-research`. Compile those dossiers into a new owner document and
 a standalone HTML report without changing the enriched input:
 
-Each schema-v7 person dossier contains an unordered, source-hidden
+Each schema-v8 person dossier contains an unordered, source-hidden
 `biography_brief` fact pool with multiple opening options, a 50-55 word short
 `biography`, a fact-allocated, complementary two-paragraph `long_biography` of
 90-190 words, the seven-dimension `editorial_assessment`, and independent
@@ -272,8 +272,17 @@ also retain an `editorial_note` explaining the non-person classification.
 Unresolved-placeholder dossiers contain only the editorial note; their
 biography values remain null and are never applied.
 
-The compiler retains the brief, biographies or editorial note, record type, and
-all four classifications under each compiled owner's `ai_research` metadata
+Schema v8 also requires `proposed_tags`: every durable, material,
+dossier-supported tag that creates a meaningful grouping. The canonical
+research-layer catalogue is `config\owner-tags.json`; it includes aliases,
+hidden facets, merge targets, and the supported long tail while deliberately
+excluding `Family business` and `Property development`. Each proposal stores
+the local tag ID when known, its readable name, a materiality summary,
+confidence, and direct source IDs.
+
+The compiler retains the brief, biographies or editorial note, record type,
+all four classifications, and resolved canonical ID/name tag pairs under each
+compiled owner's `ai_research` metadata
 and shows the appropriate content in the review report. For people, it maps the
 short biography to `details.biography` and maps the longer version to
 `details.long_biography` whenever that form field is available. Equivalent
@@ -281,18 +290,21 @@ editable classification fields can be populated through confidence-gated dossier
 proposals using their exact display labels. Compilation runs strict editorial
 validation, including source-invisibility, date, figure, vessel-independence,
 reader-orientation, career-scaffolding, transition, and conclusion checks.
+It resolves canonical names and aliases, follows `merged_into`, and fails with
+an explicit unknown or ambiguous-tag error rather than inventing an ID.
 
 Schema-v5 and earlier dossiers are intentionally stale under this contract.
 Their source ledgers may be reused, but they must be migrated through the
-schema-v7 unordered fact-pool and cross-owner editorial pass before
+schema-v8 unordered fact-pool and cross-owner editorial pass before
 compilation. Schema-v6 dossiers already satisfy the current editorial
 structure but require a separate classification migration that adds
-`wealth_creation_industry` before schema-v7 compilation.
+`wealth_creation_industry` before schema-v8 compilation.
 
 ```powershell
 .\venv\Scripts\python.exe .\compile_owner_research.py `
   --input output\owners-list.top-100.enriched.json `
   --dossier-dir output\owner-research\top-100-first-10 `
+  --tag-catalogue config\owner-tags.json `
   --selection top-100 `
   --limit 10
 ```

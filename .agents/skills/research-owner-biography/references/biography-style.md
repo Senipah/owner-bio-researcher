@@ -17,7 +17,7 @@ For a sparse public record, stop at 90-119 strong words rather than padding.
 
 For institutions, these existing fields describe the continuing public body,
 its structure, and its durable functions without substituting a current
-officeholder. Institutions also retain the schema-v7 `editorial_note` for
+officeholder. Institutions also retain the schema-v8 `editorial_note` for
 review context. Unresolved placeholders do not receive biographies and use
 only the note.
 
@@ -26,7 +26,7 @@ only the note.
 Research and publication are separate passes:
 
 1. Complete identity, source, social, and wealth research.
-2. Build the schema-v7 `biography_brief` as an unordered fact pool, including
+2. Build the schema-v8 `biography_brief` as an unordered fact pool, including
    at least two genuinely different opening angles.
 3. Exclude source publishers, confidence language, wealth-taxonomy
    deliberation, current vessel data, rankings, and transient figures from the
@@ -48,7 +48,7 @@ Those details belong in the dossier metadata.
 ## Short-long independence
 
 Use a working allocation before drafting. It is editorial scratch material and
-does not become part of the schema-v7 dossier:
+does not become part of the schema-v8 dossier:
 
 | Bucket | Requirement |
 | --- | --- |

@@ -167,49 +167,54 @@ For every target owner:
    - do not conceal a material asset or capital transfer under
      `self_made_advantaged`.
 
-7. Search supported person-relevant social types and reject namesake, fan,
+7. Populate `proposed_tags` with every durable, material, dossier-supported
+   tag that creates a meaningful grouping. Resolve canonical names or aliases
+   through `config/owner-tags.json`, retain the local ID/name pair, confidence,
+   materiality summary and direct source IDs, and never invent an ID. Exclude
+   `Family business` and `Property development`.
+8. Search supported person-relevant social types and reject namesake, fan,
    company-only, family-member and uncorroborated personal accounts.
-8. Build the schema-v7 source-hidden `biography_brief` after completing the
+9. Build the schema-v8 source-hidden `biography_brief` after completing the
    research.
-9. Draft:
+10. Draft:
 
    - a standalone 50–55 word short biography in one paragraph; and
    - a standalone 90–190 word longer biography in exactly two paragraphs.
 
-10. Where strongly sourced and naturally available, make the short identity
+11. Where strongly sourced and naturally available, make the short identity
     card compactly informative about background, defining work, geographic
     base, broad wealth stature, concrete wealth mechanism and causally relevant
     family context. Silently omit unavailable signals.
-11. For `self_made_advantaged`, state the material starting advantage naturally
+12. For `self_made_advantaged`, state the material starting advantage naturally
     in at least one biography and in the short biography when omission would
     imply a blank-slate origin.
-12. Keep the short and long biographies complementary:
+13. Keep the short and long biographies complementary:
 
     - no more than two shared anchors;
     - at least one short-only dimension;
     - at least two substantive long-only dimensions; and
     - no expanded, reordered or paraphrased short-biography bundle.
 
-13. Apply the referential-clarity test to every sentence about family
+14. Apply the referential-clarity test to every sentence about family
     assistance, funding, financing, backing, support, capital, results or
     success. Name who supplied what, its purpose and relevant setting; replace
     a causal pronoun when its antecedent is not unmistakable. Do not describe
     education costs or student trading capital as funding the institution
     attended.
-14. Keep source narration, confidence language, classification deliberation,
+15. Keep source narration, confidence language, classification deliberation,
     database language, rankings, volatile net-worth figures and current vessel
     context out of published prose.
-15. Apply the sale-independence test and use British English.
-16. Set `review.status=complete` only after the research decision is terminal
+16. Apply the sale-independence test and use British English.
+17. Set `review.status=complete` only after the research decision is terminal
     and the dossier passes strict validation.
-17. Save the dossier as
+18. Save the dossier as
     `output/owner-research/all-by-loa/{PERSON_ID}.research.json`.
-18. Run:
+19. Run:
 
     `.\venv\Scripts\python.exe .agents\skills\research-owner-biography\scripts\validate_dossier.py DOSSIER_PATH --owner-input output\owners-list.vessel-enriched.enriched.json --strict-editorial`
 
-19. Fix every validation error and warning.
-20. After the dossier passes, atomically append its person ID to
+20. Fix every validation error and warning.
+21. After the dossier passes, atomically append its person ID to
     `active_tranche.completed_person_ids`.
 
 Give the user a concise checkpoint after each group of ten newly completed
@@ -217,7 +222,7 @@ owners. A completed ID in the progress marker makes the run safely resumable.
 
 For an institution, government, municipality or unresolved placeholder, do not
 invent a human identity or personal wealth story. Use the appropriate
-non-person schema-v7 path, preserve its cohort position, validate it and count
+non-person schema-v8 path, preserve its cohort position, validate it and count
 it as completed.
 
 ## Tranche and cumulative editorial review

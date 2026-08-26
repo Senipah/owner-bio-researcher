@@ -17,6 +17,7 @@ from src.research_batch import (
     render_research_report,
     select_research_owners,
 )
+from src.tags import DEFAULT_TAG_CATALOGUE_PATH, load_tag_catalogue
 
 
 REPO_ROOT = Path(__file__).resolve().parent
@@ -39,6 +40,15 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--input", required=True, type=Path)
     parser.add_argument("--dossier-dir", required=True, type=Path)
+    parser.add_argument(
+        "--tag-catalogue",
+        type=Path,
+        default=DEFAULT_TAG_CATALOGUE_PATH,
+        help=(
+            "Canonical research-layer tag catalogue used to resolve dossier "
+            "tag IDs, names, aliases, and merges."
+        ),
+    )
     parser.add_argument(
         "--compare-dossier-dir",
         type=Path,
@@ -206,6 +216,7 @@ def main() -> int:
         if output.resolve() == args.input.resolve():
             raise ValueError("Output must not overwrite the input owner document")
         document = load_json(args.input)
+        tag_catalogue = load_tag_catalogue(args.tag_catalogue)
         dossiers, paths = load_dossiers(args.dossier_dir)
         selected = select_research_owners(
             document,
@@ -228,6 +239,7 @@ def main() -> int:
             limit=args.limit,
             mark_ai_enriched=args.mark_ai_enriched,
             selection=args.selection,
+            tag_catalogue=tag_catalogue,
         )
         if args.live_biography_baseline is not None:
             live_document = load_json(args.live_biography_baseline)

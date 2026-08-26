@@ -13,9 +13,9 @@ Prompt:
 Pass when the GPT treats the name as a complete research request, resolves the
 Facebook and Meta founder without demanding more context, and returns supported
 personal details, verified links, classifications, both biographies, sources,
-and confidence. It must not discuss uploaded guidance, missing repository
-scripts, schema validation, or offer to provide biographies later instead of
-actually providing them.
+suggested canonical tags, and confidence. It must not discuss uploaded guidance,
+missing repository scripts, schema validation, or offer to provide biographies later
+instead of actually providing them.
 
 ## 2. Misspelt name with disambiguator
 
@@ -41,7 +41,9 @@ Pass when:
 - the two biographies are complementary and meet their length and paragraph
   contracts;
 - verified social and website links, supported personal details, sources, and
-  limitations are included; and
+  limitations are included;
+- suggested tags include all durable, material, dossier-supported groupings
+  with a materiality explanation and confidence; and
 - no JSON dossier or repository-validation disclaimer is inserted unless
   requested.
 
@@ -75,6 +77,9 @@ Pass when public role and formation are described positively, state energy
 assets are not assumed to be personal wealth, unsupported industries are
 `Unknown`, and no negative wealth-taxonomy contrast appears in either
 biography.
+
+The suggested tags must include canonical `Al Thani` and `Royalty` entries when
+the dynasty and status are supported; do not emit duplicate alias variants.
 
 ## 7. Institution or placeholder
 
@@ -129,7 +134,31 @@ Pass when:
 - the family context appears in published biography prose rather than only in
   uncertainties.
 
-## 11. Download and structural checks
+## 11. Canonical alias resolution
+
+Prompt:
+
+> Research Lawrence Stroll and include all applicable tags. Treat F1, Formula
+> One and Formula_1 as possible aliases rather than separate topics.
+
+Pass when `Formula 1` appears once under canonical name and local catalogue ID,
+with `Motorsport` and any other material dossier-supported tags assessed
+independently. It must not output three Formula 1 variants or use `Family
+business` or `Property development`.
+
+## 12. One-record company tail
+
+Prompt:
+
+> Research Laurene Powell Jobs. Include Apple only if the dossier supports a
+> durable material association, not merely a passing mention.
+
+Pass when `Apple` is included once with its canonical local ID, evidence,
+materiality summary, and confidence if the wealth and family history supports
+it. The GPT must not omit it because it is a one-record tail, and must not infer
+unrelated family or company tags from surname alone.
+
+## 13. Download and structural checks
 
 Prompt:
 
@@ -143,7 +172,10 @@ Pass when:
   refusing or referring to missing repository scripts;
 - `owner.person_id` is null;
 - `input_snapshot.source_path` is `manual-chat-input`;
-- inventory arrays, social lookup, and both proposal arrays are empty;
+- inventory arrays, social lookup, `proposed_details`, and `proposed_socials`
+  are empty;
+- `proposed_tags` contains all applicable tags with ID/name pairs (or a null ID
+  when genuinely unknown), summary, confidence, and direct source IDs;
 - all source IDs resolve;
 - review is marked complete; and
 - the response says the dossier was not owner-input-validated or applied.

@@ -8,7 +8,10 @@ from pathlib import Path
 
 
 SKILL_ROOT = Path(__file__).resolve().parents[1]
+REPO_ROOT = SKILL_ROOT.parents[2]
 OUTPUT_PATH = SKILL_ROOT / "gpt" / "owner-biography-knowledge.md"
+TAG_CATALOGUE_SOURCE = REPO_ROOT / "config" / "owner-tags.json"
+TAG_CATALOGUE_OUTPUT = SKILL_ROOT / "gpt" / "tag-catalogue.json"
 SOURCES = (
     (
         "Research and dossier contract",
@@ -83,20 +86,24 @@ def render_knowledge() -> str:
     )
 
 
-def _write_output(content: str) -> None:
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+def render_tag_catalogue() -> str:
+    return TAG_CATALOGUE_SOURCE.read_text(encoding="utf-8").rstrip() + "\n"
+
+
+def _write_output(path: Path, content: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.NamedTemporaryFile(
         "w",
         encoding="utf-8",
         newline="\n",
         delete=False,
-        dir=OUTPUT_PATH.parent,
-        prefix=f".{OUTPUT_PATH.name}.",
+        dir=path.parent,
+        prefix=f".{path.name}.",
         suffix=".tmp",
     ) as handle:
         handle.write(content)
         temporary_path = Path(handle.name)
-    temporary_path.replace(OUTPUT_PATH)
+    temporary_path.replace(path)
 
 
 def main() -> int:
@@ -110,27 +117,28 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    expected = render_knowledge()
+    expected = {
+        OUTPUT_PATH: render_knowledge(),
+        TAG_CATALOGUE_OUTPUT: render_tag_catalogue(),
+    }
     if args.check:
-        if not OUTPUT_PATH.exists():
-            print(
-                f"Missing generated Knowledge file: {OUTPUT_PATH}",
-                file=sys.stderr,
-            )
-            return 1
-        actual = OUTPUT_PATH.read_text(encoding="utf-8")
-        if actual != expected:
-            print(
-                "Custom GPT Knowledge is stale; run "
-                "scripts/build_gpt_knowledge.py.",
-                file=sys.stderr,
-            )
-            return 1
-        print(f"Custom GPT Knowledge is current: {OUTPUT_PATH}")
+        for path, content in expected.items():
+            if not path.exists():
+                print(f"Missing generated GPT file: {path}", file=sys.stderr)
+                return 1
+            if path.read_text(encoding="utf-8") != content:
+                print(
+                    f"Generated GPT file is stale: {path}; run "
+                    "scripts/build_gpt_knowledge.py.",
+                    file=sys.stderr,
+                )
+                return 1
+        print("Custom GPT Knowledge and tag catalogue are current")
         return 0
 
-    _write_output(expected)
-    print(f"Wrote Custom GPT Knowledge: {OUTPUT_PATH}")
+    for path, content in expected.items():
+        _write_output(path, content)
+        print(f"Wrote GPT file: {path}")
     return 0
 
 

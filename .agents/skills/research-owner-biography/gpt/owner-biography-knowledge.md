@@ -15,10 +15,10 @@ Use this file as Custom GPT Knowledge. Behaviour, workflow order, manual-mode ru
 
 | Section | Canonical source | SHA-256 |
 | --- | --- | --- |
-| Research and dossier contract | `references/research-contract.md` | `9d2daf29bf7dd5197a43f31fd6eff5c419ed82e40f17e7ca2bec8f72112e5126` |
-| Wealth classification | `references/wealth-classification.md` | `ffd1f3abaa8e80ccd424747b76e2f7a82e3349ac2b87a1e049b6bc0531f93887` |
-| Biography style | `references/biography-style.md` | `0c0ecaa634c192f95ecd44d85383ea82478b212743cfe3ffaf88aded0e317424` |
-| Editorial calibrations | `references/editorial-calibrations.md` | `b705d5ebe33444a8abfecbc7bb0100478dc88c5a848b8fb4121473853a7dc9dd` |
+| Research and dossier contract | `references/research-contract.md` | `401688b92e8c56b32a4e182b30b03fe99a6f9076785f76dfabff554f3e5c4946` |
+| Wealth classification | `references/wealth-classification.md` | `2dd9865096d7c7effb2fb30a0a02cb4d81cee0c993cccae976921114cdfac290` |
+| Biography style | `references/biography-style.md` | `ea1fe534a25e99d97c79fdfc89fb2f6dfba17e96c1ee865337482ce7b94f7b55` |
+| Editorial calibrations | `references/editorial-calibrations.md` | `e113250280f3da22a2f81163a4ce9644a9d4172feb26b7a5d10bb5f3f509433c` |
 
 ---
 
@@ -125,8 +125,8 @@ Bands are deterministic:
 | 50-69 | `low` | Weak or incomplete evidence |
 | 0-49 | `insufficient` | Do not use |
 
-Only scores of 70 or higher belong in `proposed_details` or
-`proposed_socials`. Put lower-confidence candidates in
+Only scores of 70 or higher belong in `proposed_details`, `proposed_socials`,
+or `proposed_tags`. Put lower-confidence candidates in
 `candidates_requiring_review` or `uncertainties`.
 
 ## Biographies
@@ -171,7 +171,7 @@ system's vessel data. Independently significant maritime careers or sustained
 competitive, research, or philanthropic work may be described, but the
 biography must focus on that durable activity rather than the transient asset.
 
-The schema-v7 brief is an unordered editorial fact pool, not a paragraph
+The schema-v8 brief is an unordered editorial fact pool, not a paragraph
 outline. It contains:
 
 - `durable_identity`: the clearest durable description of the person;
@@ -196,7 +196,7 @@ Before drafting, make a temporary fact-allocation table with no more than two
 shared anchors, at least one short-only fact or dimension, at least two
 substantive long-only facts or dimensions, and explicit short-biography
 material the long version will omit. This table is working editorial material;
-do not add it to the schema-v7 dossier.
+do not add it to the schema-v8 dossier.
 
 Draft without source publishers, confidence language, classification
 deliberation, current-vessel context, or the order of the brief fields. Select
@@ -324,13 +324,47 @@ Only `researchable` gaps should normally become `proposed_details`. Use
 strong evidence demonstrates an existing value is wrong. Every correction must
 copy the input value into `existing_value` so stale proposals can be rejected.
 
+## Tag selection
+
+Populate `proposed_tags` during every new research pass. Apply the agreed test:
+include every durable, material, dossier-supported tag that would create a
+meaningful grouping. Tags are additive research metadata, so they are not
+limited to blank owner fields and may cover industries, sports, royal houses,
+business families, durable roles, philanthropy, named companies, or other
+catalogued associations.
+
+Use `config/owner-tags.json` as the canonical research-layer catalogue. Match
+its canonical names or aliases. Store both `tag_id` and `name` when the local
+catalogue ID is known. `tag_id` may be `null` when research is performed without
+the catalogue or discovers a defensible new tag; never invent an ID. Compilation
+resolves names and aliases, follows `merged_into`, and stops with an explicit
+unknown or ambiguous result instead of creating a tag.
+When `tag_id` is present it is authoritative, and `name` must match that tag's
+canonical name or one of its aliases; the name remains a readable snapshot.
+
+Each proposal contains:
+
+- `tag_id`: a catalogue ID or `null`;
+- `name`: the canonical name when known, otherwise the researched name;
+- `summary`: a concise explanation of the durable, material association;
+- confidence of at least 70; and
+- one or more `source_ids` directly supporting the association.
+
+Do not add tangential employers, transient interests, unsupported surname-only
+family links, or tags inferred only from another classification. Do not use
+`Family business` or `Property development`. Do not repeat names that normalize
+to the same casefolded, punctuation-insensitive form; compilation also rejects
+different aliases that resolve to the same canonical tag. An empty list is
+valid only when no supported tag meets the applicability test. Unresolved
+placeholders must use an empty list.
+
 ## Dossier shape
 
 Use this top-level structure:
 
 ```json
 {
-  "schema_version": 7,
+  "schema_version": 8,
   "record_type": "person",
   "owner": {
     "person_id": null,
@@ -474,6 +508,7 @@ Use this top-level structure:
   },
   "proposed_details": [],
   "proposed_socials": [],
+  "proposed_tags": [],
   "candidates_requiring_review": [],
   "sources": [],
   "uncertainties": [],
@@ -488,7 +523,8 @@ Each proposed item must contain `confidence` and `source_ids`. Each source must
 contain `id`, `url`, `title`, `publisher`, `tier`, `accessed_at`, and
 `supports`. Proposed detail items must also contain `action`; corrections must
 contain `existing_value`; proposed social items must contain `type_id` copied
-from `input_snapshot.social_type_lookup`.
+from `input_snapshot.social_type_lookup`. Proposed tag items must also contain
+`tag_id`, `name`, and `summary` as defined above.
 
 Research agents emit `review.status=complete` only after the dossier reaches a
 terminal research decision and passes validation. This status is automatic
@@ -504,7 +540,7 @@ uncertainty, and review objects, with these differences:
 
 ```json
 {
-  "schema_version": 7,
+  "schema_version": 8,
   "record_type": "institution",
   "research_status": "complete",
   "biography_brief": null,
@@ -541,7 +577,8 @@ uncertainty, and review objects, with these differences:
     "source_ids": ["S1"]
   },
   "proposed_details": [],
-  "proposed_socials": []
+  "proposed_socials": [],
+  "proposed_tags": []
 }
 ```
 
@@ -874,7 +911,7 @@ For a sparse public record, stop at 90-119 strong words rather than padding.
 
 For institutions, these existing fields describe the continuing public body,
 its structure, and its durable functions without substituting a current
-officeholder. Institutions also retain the schema-v7 `editorial_note` for
+officeholder. Institutions also retain the schema-v8 `editorial_note` for
 review context. Unresolved placeholders do not receive biographies and use
 only the note.
 
@@ -883,7 +920,7 @@ only the note.
 Research and publication are separate passes:
 
 1. Complete identity, source, social, and wealth research.
-2. Build the schema-v7 `biography_brief` as an unordered fact pool, including
+2. Build the schema-v8 `biography_brief` as an unordered fact pool, including
    at least two genuinely different opening angles.
 3. Exclude source publishers, confidence language, wealth-taxonomy
    deliberation, current vessel data, rankings, and transient figures from the
@@ -905,7 +942,7 @@ Those details belong in the dossier metadata.
 ## Short-long independence
 
 Use a working allocation before drafting. It is editorial scratch material and
-does not become part of the schema-v7 dossier:
+does not become part of the schema-v8 dossier:
 
 | Bucket | Requirement |
 | --- | --- |

@@ -18,6 +18,13 @@ from editorial_rules import (
 from inventory_owner import _find_owner, build_inventory
 
 
+REPO_ROOT = Path(__file__).resolve().parents[4]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from src.tags import FORBIDDEN_CANONICAL_TAGS, normalize_tag_name
+
+
 CONFIDENCE_BANDS = (
     (95, 100, "very_high"),
     (85, 94, "high"),
@@ -248,6 +255,7 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
         "editorial_note",
         "proposed_details",
         "proposed_socials",
+        "proposed_tags",
         "candidates_requiring_review",
         "sources",
         "uncertainties",
@@ -257,8 +265,8 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
     if missing:
         errors.append(f"missing top-level keys: {missing}")
 
-    if document.get("schema_version") != 7:
-        errors.append("schema_version must be 7")
+    if document.get("schema_version") != 8:
+        errors.append("schema_version must be 8")
     record_type = document.get("record_type")
     if record_type not in RECORD_TYPES:
         errors.append("record_type is invalid")
@@ -874,6 +882,71 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
                 _url(item.get("url"), f"{path}.url", errors)
                 if not isinstance(item.get("verification"), str) or not item["verification"].strip():
                     errors.append(f"{path}.verification must be non-empty")
+
+    proposed_tags = document.get("proposed_tags")
+    normalized_tag_names: dict[str, int] = {}
+    proposed_tag_ids: dict[str, int] = {}
+    if not isinstance(proposed_tags, list):
+        errors.append("proposed_tags must be a list")
+    else:
+        if record_type == "unresolved_placeholder" and proposed_tags:
+            errors.append("proposed_tags must be empty for unresolved records")
+        for index, item in enumerate(proposed_tags):
+            path = f"proposed_tags[{index}]"
+            if not isinstance(item, dict):
+                errors.append(f"{path} must be an object")
+                continue
+            if "tag_id" not in item:
+                errors.append(f"{path}.tag_id is required")
+            tag_id = item.get("tag_id")
+            if tag_id is not None and (
+                not isinstance(tag_id, str) or not tag_id.strip()
+            ):
+                errors.append(f"{path}.tag_id must be null or non-empty")
+            elif isinstance(tag_id, str):
+                if tag_id in proposed_tag_ids:
+                    errors.append(
+                        f"{path}.tag_id duplicates proposed_tags"
+                        f"[{proposed_tag_ids[tag_id]}].tag_id"
+                    )
+                else:
+                    proposed_tag_ids[tag_id] = index
+
+            name = item.get("name")
+            if not isinstance(name, str) or not name.strip():
+                errors.append(f"{path}.name must be non-empty")
+            else:
+                normalized = normalize_tag_name(name)
+                if normalized in FORBIDDEN_CANONICAL_TAGS:
+                    errors.append(f"{path}.name is deliberately excluded")
+                if normalized in normalized_tag_names:
+                    errors.append(
+                        f"{path}.name duplicates proposed_tags"
+                        f"[{normalized_tag_names[normalized]}].name after "
+                        "normalization"
+                    )
+                else:
+                    normalized_tag_names[normalized] = index
+
+            summary = item.get("summary")
+            if not isinstance(summary, str) or not summary.strip():
+                errors.append(f"{path}.summary must be non-empty")
+            score = _confidence(
+                item.get("confidence"),
+                f"{path}.confidence",
+                errors,
+            )
+            if score is not None and score < IMPORT_CONFIDENCE_THRESHOLD:
+                errors.append(
+                    f"{path} confidence must be at least "
+                    f"{IMPORT_CONFIDENCE_THRESHOLD}"
+                )
+            _source_ids(
+                item.get("source_ids"),
+                f"{path}.source_ids",
+                known_sources,
+                errors,
+            )
 
     for key in ("candidates_requiring_review", "uncertainties"):
         if not isinstance(document.get(key), list):

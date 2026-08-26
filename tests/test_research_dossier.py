@@ -292,6 +292,99 @@ def test_validator_requires_wealth_creation_industry(tmp_path: Path) -> None:
     assert "wealth_creation_industry" in result.stderr
 
 
+def test_validator_requires_schema_v8_proposed_tags(tmp_path: Path) -> None:
+    dossier = deepcopy(_calibration())
+    del dossier["proposed_tags"]
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert "proposed_tags" in result.stderr
+
+
+def test_validator_accepts_name_only_tag_with_direct_sources(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["proposed_tags"] = [
+        {
+            "tag_id": None,
+            "name": "Formula_1",
+            "summary": "A durable material Formula 1 role is established.",
+            "confidence": {
+                "score": 95,
+                "band": "very_high",
+                "reason": "Official evidence supports the role.",
+            },
+            "source_ids": ["S1"],
+        }
+    ]
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 0, result.stderr
+
+
+def test_validator_rejects_normalized_duplicate_tags(tmp_path: Path) -> None:
+    dossier = deepcopy(_calibration())
+    proposal = {
+        "tag_id": None,
+        "name": "Formula 1",
+        "summary": "A durable material Formula 1 role is established.",
+        "confidence": {
+            "score": 95,
+            "band": "very_high",
+            "reason": "Official evidence supports the role.",
+        },
+        "source_ids": ["S1"],
+    }
+    duplicate = deepcopy(proposal)
+    duplicate["name"] = "formula_1"
+    dossier["proposed_tags"] = [proposal, duplicate]
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert "duplicates proposed_tags[0].name after normalization" in result.stderr
+
+
+def test_validator_requires_tag_summary_confidence_and_sources(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["proposed_tags"] = [
+        {
+            "tag_id": None,
+            "name": "Apple",
+            "summary": "",
+            "confidence": {
+                "score": 69,
+                "band": "low",
+                "reason": "The evidence is incomplete.",
+            },
+            "source_ids": [],
+        }
+    ]
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert "proposed_tags[0].summary must be non-empty" in result.stderr
+    assert "proposed_tags[0] confidence must be at least 70" in result.stderr
+    assert "proposed_tags[0].source_ids must be a non-empty list" in result.stderr
+
+
+def test_validator_rejects_deliberately_excluded_tags(tmp_path: Path) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["proposed_tags"][0]["tag_id"] = None
+    dossier["proposed_tags"][0]["name"] = "Family_business"
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert "proposed_tags[0].name is deliberately excluded" in result.stderr
+
+
 def test_validator_maps_wealth_creation_industry_proposal_to_shared_label(
     tmp_path: Path,
 ) -> None:
@@ -681,6 +774,7 @@ def test_validator_accepts_institution_biographies_and_note(
     }
     dossier["proposed_details"] = []
     dossier["proposed_socials"] = []
+    dossier["proposed_tags"] = []
     for field in (
         "wealth_creation_industry",
         "primary_industry",

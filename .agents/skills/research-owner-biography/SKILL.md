@@ -34,6 +34,9 @@ statistics.
 - Write dossiers beneath `output/owner-research/`; never overwrite owner input.
 - Read [references/research-contract.md](references/research-contract.md) for
   evidence, confidence, social-link, and dossier rules.
+- Use the repo-level `config/owner-tags.json` as the canonical tag catalogue.
+  Apply every durable, material, dossier-supported tag that creates a
+  meaningful grouping; never invent catalogue IDs.
 - Read
   [references/wealth-classification.md](references/wealth-classification.md)
   before classifying industries, wealth origin, or relationship to wealth.
@@ -77,15 +80,22 @@ statistics.
    was created over its current amount. Within self-made wealth, distinguish
    an evidenced independent start from an advantaged one; do not equate
    founder ownership with a blank-slate upbringing.
-5. Search all person-relevant link types supported by the input lookup,
+5. Select all applicable canonical tags after the identity and wealth research.
+   Match canonical names or aliases in `config/owner-tags.json`; store both the
+   research-layer `tag_id` and name when known, or a null ID with the supported
+   name when the catalogue is unavailable or lacks the tag. Give every tag a
+   concise materiality summary, confidence of at least 70, and direct source
+   IDs. Exclude `Family business`, `Property development`, tangential links,
+   and surname-only family inferences.
+6. Search all person-relevant link types supported by the input lookup,
    prioritising public personal Instagram, LinkedIn, and personal websites.
    A company website may be proposed under its distinct type when the owner
    founded, owns, or leads it. Verify identity from direct official links or
    strong cross-corroboration and reject name-only matches.
-6. Propose only missing or clearly improvable personal fields. Do not infer
+7. Propose only missing or clearly improvable personal fields. Do not infer
    nationality from birthplace, residence from yacht location, or family facts
    from surname.
-7. For a person, build the schema-v7 `biography_brief` after research as an
+8. For a person, build the schema-v8 `biography_brief` after research as an
    unordered editorial fact pool. Include durable identity, defining work,
    nullable formative context and decisive moment, one to three enduring
    dimensions, optional character detail, at least two distinct opening
@@ -93,13 +103,13 @@ statistics.
    legacy route-turning-point-later-chapter outline or place publishers,
    confidence, classification deliberation, vessel context, rankings, or
    transient figures in the brief.
-8. Perform a separate editorial pass from that source-hidden fact pool. Before
+9. Perform a separate editorial pass from that source-hidden fact pool. Before
    drafting, make a working fact-allocation table with no more than two shared
    anchors, at least one short-only fact or dimension, at least two substantive
    long-only facts or dimensions, and the short-biography material the long
    version will deliberately omit. Do not store this working table in the
-   schema-v7 dossier.
-9. Select an opening mode and narrative shape deliberately; never draft in
+   schema-v8 dossier.
+10. Select an opening mode and narrative shape deliberately; never draft in
    brief-field order. Draft a 50-55 word short identity card and a 90-190 word,
    two-paragraph concise profile from their allocated facts. When available,
    make the short identity card compactly informative about background,
@@ -107,7 +117,7 @@ statistics.
    causally relevant family context. Omit unavailable signals silently. The
    long profile must stand alone without restating all three short-biography
    components or merely reordering and expanding the same fact bundle.
-10. Review the pair before reverse-checking the source ledger. State what the
+11. Review the pair before reverse-checking the source ledger. State what the
     long profile adds, which secondary short-biography fact it omits, and
     whether it would lose meaningful material if reduced to the short version.
     Perform the referential-clarity test for every sentence about assistance,
@@ -115,27 +125,27 @@ statistics.
     form, purpose, relevant setting, and any causal antecedent that could
     otherwise be ambiguous. Rewrite any paraphrased expansion, then score the
     seven-part editorial rubric and revise any dimension below 4.
-11. Save a separate dossier with `review.status=complete` once the research
+12. Save a separate dossier with `review.status=complete` once the research
    decision is terminal. Put facts or links below the import threshold in
    `candidates_requiring_review`, not proposed changes.
-12. Run:
+13. Run:
 
    ```powershell
    .\venv\Scripts\python.exe .agents\skills\research-owner-biography\scripts\validate_dossier.py PATH --owner-input INPUT --strict-editorial
    ```
 
-13. For a batch, run the corpus auditor before compilation:
+14. For a batch, run the corpus auditor before compilation:
 
     ```powershell
     .\venv\Scripts\python.exe .agents\skills\research-owner-biography\scripts\audit_biography_corpus.py DOSSIER_DIRECTORY --strict
     ```
 
-14. Before compiling a batch, perform a dedicated cross-owner editorial pass.
+15. Before compiling a batch, perform a dedicated cross-owner editorial pass.
     Tabulate every person's opening mode, narrative shape, paragraph-two
     transition, final sentence, and short-long pair findings. Revise semantic
     repetition within each owner and across owners even when the wording
     differs, and rerun the corpus auditor until strict mode passes.
-15. Return the dossier path, both biographies or unresolved editorial note,
+16. Return the dossier path, resolved tag set, both biographies or unresolved editorial note,
     strongest evidence, confidence summary, unresolved questions, and explicit
     statement that nothing was applied.
 
@@ -158,6 +168,10 @@ tracking. Do not let parallel agents edit the shared owner dataset.
   or family disputes unless directly relevant, strongly sourced, and requested.
 - Separate citizenship, nationality, birthplace, and residence.
 - Exclude a proposed field or social link below confidence 70.
+- Exclude a proposed tag below confidence 70 or without direct dossier sources.
+- Require `proposed_tags` in every schema-v8 dossier. Include all and only
+  durable, material, dossier-supported tags that create meaningful groupings;
+  unresolved placeholders use an empty list.
 - Treat `research_status=complete` as completion of the research decision, not
   proof that every field is known. Preserve supported `Unknown`
   classifications, confidence limits, and uncertainties instead of emitting
@@ -248,7 +262,7 @@ tracking. Do not let parallel agents edit the shared owner dataset.
 - Confirm the working fact allocation used no more than two shared anchors,
   retained at least one short-only fact or dimension, and supplied at least two
   substantive long-only facts or dimensions.
-- Confirm person dossiers contain a schema-v7 source-hidden, unordered
+- Confirm person dossiers contain a schema-v8 source-hidden, unordered
   `biography_brief` with at least two distinct opening options. Confirm
   institution dossiers contain short and longer biographies plus an
   `editorial_note`, and unresolved-placeholder dossiers contain no biography
@@ -280,12 +294,12 @@ tracking. Do not let parallel agents edit the shared owner dataset.
 - For batches, run `scripts/audit_biography_corpus.py --strict` and revise
   repeated opening modes, origin-story leads, narrative shapes, paragraph-two
   transitions, stock phrases, and synthetic conclusions.
-- For skill revisions, validate the schema-v7 Shahid Khan calibration dossier
+- For skill revisions, validate the schema-v8 Shahid Khan calibration dossier
   and compare the result against every archetype in the calibration set.
 
 # Expected output
 
-A schema-v7 JSON dossier matching `references/research-contract.md`, saved
+A schema-v8 JSON dossier matching `references/research-contract.md`, saved
 separately from owner inputs. It contains:
 
 - record type, identity, and research status;
@@ -300,6 +314,8 @@ separately from owner inputs. It contains:
   placeholders;
 - a seven-dimension editorial assessment, selected opening mode, and narrative
   shape, with every person score at least 4;
-- proposed personal fields and verified socials;
+- proposed personal fields, verified socials, and every applicable canonical
+  tag with its research ID/name pair, materiality summary, confidence, and
+  source IDs;
 - per-item confidence and source IDs;
 - source ledger, uncertainties, and completed research state.

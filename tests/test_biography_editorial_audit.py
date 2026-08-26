@@ -53,7 +53,7 @@ def test_corpus_auditor_accepts_clean_single_calibration(
     result = _run(tmp_path)
 
     assert result.returncode == 0, result.stderr
-    assert "Audited 1 schema-v7 person dossiers." in result.stdout
+    assert "Audited 1 schema-v8 person dossiers." in result.stdout
 
 
 def test_corpus_auditor_rejects_unclear_references(

@@ -101,8 +101,8 @@ Bands are deterministic:
 | 50-69 | `low` | Weak or incomplete evidence |
 | 0-49 | `insufficient` | Do not use |
 
-Only scores of 70 or higher belong in `proposed_details` or
-`proposed_socials`. Put lower-confidence candidates in
+Only scores of 70 or higher belong in `proposed_details`, `proposed_socials`,
+or `proposed_tags`. Put lower-confidence candidates in
 `candidates_requiring_review` or `uncertainties`.
 
 ## Biographies
@@ -147,7 +147,7 @@ system's vessel data. Independently significant maritime careers or sustained
 competitive, research, or philanthropic work may be described, but the
 biography must focus on that durable activity rather than the transient asset.
 
-The schema-v7 brief is an unordered editorial fact pool, not a paragraph
+The schema-v8 brief is an unordered editorial fact pool, not a paragraph
 outline. It contains:
 
 - `durable_identity`: the clearest durable description of the person;
@@ -172,7 +172,7 @@ Before drafting, make a temporary fact-allocation table with no more than two
 shared anchors, at least one short-only fact or dimension, at least two
 substantive long-only facts or dimensions, and explicit short-biography
 material the long version will omit. This table is working editorial material;
-do not add it to the schema-v7 dossier.
+do not add it to the schema-v8 dossier.
 
 Draft without source publishers, confidence language, classification
 deliberation, current-vessel context, or the order of the brief fields. Select
@@ -300,13 +300,47 @@ Only `researchable` gaps should normally become `proposed_details`. Use
 strong evidence demonstrates an existing value is wrong. Every correction must
 copy the input value into `existing_value` so stale proposals can be rejected.
 
+## Tag selection
+
+Populate `proposed_tags` during every new research pass. Apply the agreed test:
+include every durable, material, dossier-supported tag that would create a
+meaningful grouping. Tags are additive research metadata, so they are not
+limited to blank owner fields and may cover industries, sports, royal houses,
+business families, durable roles, philanthropy, named companies, or other
+catalogued associations.
+
+Use `config/owner-tags.json` as the canonical research-layer catalogue. Match
+its canonical names or aliases. Store both `tag_id` and `name` when the local
+catalogue ID is known. `tag_id` may be `null` when research is performed without
+the catalogue or discovers a defensible new tag; never invent an ID. Compilation
+resolves names and aliases, follows `merged_into`, and stops with an explicit
+unknown or ambiguous result instead of creating a tag.
+When `tag_id` is present it is authoritative, and `name` must match that tag's
+canonical name or one of its aliases; the name remains a readable snapshot.
+
+Each proposal contains:
+
+- `tag_id`: a catalogue ID or `null`;
+- `name`: the canonical name when known, otherwise the researched name;
+- `summary`: a concise explanation of the durable, material association;
+- confidence of at least 70; and
+- one or more `source_ids` directly supporting the association.
+
+Do not add tangential employers, transient interests, unsupported surname-only
+family links, or tags inferred only from another classification. Do not use
+`Family business` or `Property development`. Do not repeat names that normalize
+to the same casefolded, punctuation-insensitive form; compilation also rejects
+different aliases that resolve to the same canonical tag. An empty list is
+valid only when no supported tag meets the applicability test. Unresolved
+placeholders must use an empty list.
+
 ## Dossier shape
 
 Use this top-level structure:
 
 ```json
 {
-  "schema_version": 7,
+  "schema_version": 8,
   "record_type": "person",
   "owner": {
     "person_id": null,
@@ -450,6 +484,7 @@ Use this top-level structure:
   },
   "proposed_details": [],
   "proposed_socials": [],
+  "proposed_tags": [],
   "candidates_requiring_review": [],
   "sources": [],
   "uncertainties": [],
@@ -464,7 +499,8 @@ Each proposed item must contain `confidence` and `source_ids`. Each source must
 contain `id`, `url`, `title`, `publisher`, `tier`, `accessed_at`, and
 `supports`. Proposed detail items must also contain `action`; corrections must
 contain `existing_value`; proposed social items must contain `type_id` copied
-from `input_snapshot.social_type_lookup`.
+from `input_snapshot.social_type_lookup`. Proposed tag items must also contain
+`tag_id`, `name`, and `summary` as defined above.
 
 Research agents emit `review.status=complete` only after the dossier reaches a
 terminal research decision and passes validation. This status is automatic
@@ -480,7 +516,7 @@ uncertainty, and review objects, with these differences:
 
 ```json
 {
-  "schema_version": 7,
+  "schema_version": 8,
   "record_type": "institution",
   "research_status": "complete",
   "biography_brief": null,
@@ -517,7 +553,8 @@ uncertainty, and review objects, with these differences:
     "source_ids": ["S1"]
   },
   "proposed_details": [],
-  "proposed_socials": []
+  "proposed_socials": [],
+  "proposed_tags": []
 }
 ```
 

@@ -23,6 +23,7 @@ KNOWLEDGE = GPT_ROOT / "owner-biography-knowledge.md"
 EXAMPLE = GPT_ROOT / "manual-dossier.example.json"
 SETUP_GUIDE = GPT_ROOT / "README.md"
 PREVIEW_TESTS = GPT_ROOT / "preview-tests.md"
+TAG_CATALOGUE = GPT_ROOT / "tag-catalogue.json"
 
 
 def _load_builder():
@@ -41,6 +42,9 @@ def test_generated_gpt_knowledge_is_current() -> None:
     knowledge = KNOWLEDGE.read_text(encoding="utf-8")
 
     assert knowledge == builder.render_knowledge()
+    assert TAG_CATALOGUE.read_text(encoding="utf-8") == (
+        builder.render_tag_catalogue()
+    )
     assert "](wealth-classification.md)" not in knowledge
     assert "](biography-style.md)" not in knowledge
     assert "](editorial-calibrations.md)" not in knowledge
@@ -77,6 +81,7 @@ def test_gpt_instructions_are_concise_and_decision_complete() -> None:
         "## Research workflow",
         "Search the exact name on Forbes first",
         "`wealth_creation_industry`",
+        "every durable, material, dossier-supported catalogue tag",
         "## Biography requirements",
         "distinguish an evidenced\n   independent start from an advantaged one",
         "a broad wealth descriptor such as `billionaire`",
@@ -87,6 +92,7 @@ def test_gpt_instructions_are_concise_and_decision_complete() -> None:
         "Only when the user explicitly requests JSON or a dossier",
         "`owner.person_id` to `null`",
         "`proposed_details` and `proposed_socials` empty",
+        "Populate `proposed_tags` with every applicable tag",
         "## Self-check and delivery",
         "Always complete the human-readable profile",
         "Never refuse, stop, or return partial findings",
@@ -97,7 +103,7 @@ def test_gpt_instructions_are_concise_and_decision_complete() -> None:
     ):
         assert required in instructions
     assert "Before answering, use Code Interpreter" not in instructions
-    assert "schema-v7-compatible manual dossier plus a concise human" not in instructions
+    assert "schema-v7" not in instructions
 
 
 def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
@@ -128,12 +134,16 @@ def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
     assert "## 10. Advantaged self-made founder" in preview_tests
     assert "`self_made_advantaged`" in preview_tests
     assert "`Self-made — advantaged start`" in preview_tests
+    assert "## 11. Canonical alias resolution" in preview_tests
+    assert "F1, Formula" in preview_tests
+    assert "## 12. One-record company tail" in preview_tests
+    assert "`Apple` is included once" in preview_tests
 
 
 def test_manual_dossier_example_contract_and_strict_validation() -> None:
     dossier = json.loads(EXAMPLE.read_text(encoding="utf-8"))
 
-    assert dossier["schema_version"] == 7
+    assert dossier["schema_version"] == 8
     assert dossier["owner"]["person_id"] is None
     assert dossier["input_snapshot"] == {
         "source_path": "manual-chat-input",
@@ -147,6 +157,12 @@ def test_manual_dossier_example_contract_and_strict_validation() -> None:
     }
     assert dossier["proposed_details"] == []
     assert dossier["proposed_socials"] == []
+    assert dossier["proposed_tags"]
+    assert all(
+        tag["tag_id"] is None or tag["tag_id"].startswith("tag_")
+        for tag in dossier["proposed_tags"]
+    )
+    assert all(tag["source_ids"] for tag in dossier["proposed_tags"])
     assert dossier["candidates_requiring_review"]
     assert all(
         candidate["confidence"]["score"] >= 70

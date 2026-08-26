@@ -63,6 +63,10 @@ when terminal research passes strict validation and sets
 the workflow flag for usable complete or legacy-approved dossiers and resets
 `workflow.updated_in_system=false` when a desired change is introduced. Only
 values with confidence 70 or higher are imported.
+Schema-v8 tags are resolved read-only through `config/owner-tags.json` and
+stored under `ai_research.tags`; compilation does not map or write website tag
+IDs. Unknown, ambiguous, mismatched, or canonically duplicated tags fail
+compilation explicitly.
 
 For an LOA-prioritised research batch, use a vessel-enriched input with
 `--selection largest-loa`. This selector must include only fully ranked owners,

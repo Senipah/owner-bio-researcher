@@ -14,7 +14,7 @@ batch.
 
 Continue until all selected owners have:
 
-1. one schema-v7 dossier beneath `output/owner-research/top-100/`;
+1. one schema-v8 dossier beneath `output/owner-research/top-100/`;
 2. an unordered source-hidden biography fact pool with at least two distinct
    opening options, plus validated short and longer biographies and editorial
    assessment for people, or a non-person editorial note with null
@@ -23,8 +23,10 @@ Continue until all selected owners have:
    `wealth_origin`, and `wealth_relationship` classifications;
 4. an explicit Forbes result;
 5. an inventory of missing details and supported link types;
-6. only confidence-70-or-higher proposed details and links;
-7. `review.status=complete` after strict validation.
+6. every durable, material, dossier-supported canonical tag, including the
+   supported long tail, with local ID/name pairs and direct evidence;
+7. only confidence-70-or-higher proposed details, links, and tags;
+8. `review.status=complete` after strict validation.
 
 Use a bounded worker pool of at most three research subagents. Give each
 subagent exactly one owner at a time and this skill. When one finishes and its
@@ -47,6 +49,10 @@ For every owner:
   wealth-creation or current sector, not merely a later investment;
 - explain where wealth or prominence came from rather than foregrounding net
   worth;
+- populate `proposed_tags` with every durable, material, dossier-supported
+  grouping using canonical names/aliases from `config/owner-tags.json`; keep
+  local ID/name pairs, summaries, confidence, and direct source IDs, never
+  invent IDs, and exclude `Family business` and `Property development`;
 - search supported person-relevant social types, prioritising Instagram,
   LinkedIn, and Personal Website;
 - reject namesake, company, fan, family-member, and uncorroborated accounts;
@@ -55,7 +61,7 @@ For every owner:
 - keep lower-confidence facts and links in review candidates or uncertainties;
 - set `record_type` before drafting; institutions and unresolved placeholders
   receive `editorial_note`, null biographies, and no personal proposals;
-- complete research first, then build the schema-v7 `biography_brief` as an
+- complete research first, then build the schema-v8 `biography_brief` as an
   unordered fact pool containing durable identity, defining work, nullable
   formative context and decisive moment, one to three enduring dimensions,
   optional character detail, at least two fact-level opening options with
@@ -163,13 +169,13 @@ Acceptance criteria:
 - the compiled JSON contains every and only unique current Top-100 owner,
   ordered by minimum current vessel rank;
 - every compiled owner has a validated dossier;
-- every schema-v7 person dossier passes the strict corpus editorial audit;
+- every schema-v8 person dossier passes the strict corpus editorial audit;
 - `_baseline`, `person_id`, `profile_url`, and existing `profile_key` values
   remain unchanged;
 - usable completed output owners have `workflow.ai_enriched=true`, while
   unresolved placeholders remain false;
 - the HTML report shows, per owner, vessel rank/context, both biographies, all
-  three wealth classifications, missing fields added, existing fields
+  four wealth classifications, resolved canonical tags, missing fields added, existing fields
   improved, verified links, confidence, evidence links, unresolved gaps, and
   uncertainties;
 - the original input hash is unchanged;

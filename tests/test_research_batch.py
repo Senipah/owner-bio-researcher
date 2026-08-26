@@ -18,6 +18,7 @@ from src.research_batch import (
     select_current_top_100_owners,
     select_largest_loa_owners,
 )
+from src.tags import TagCatalogue
 
 
 def _owner(
@@ -83,7 +84,7 @@ def _dossier(person_id: int, name: str, review_status: str = "complete") -> dict
         "capital investment."
     )
     return {
-        "schema_version": 7,
+        "schema_version": 8,
         "record_type": "person",
         "owner": {
             "person_id": person_id,
@@ -201,6 +202,19 @@ def _dossier(person_id: int, name: str, review_status: str = "complete") -> dict
                 "type": "Personal Website",
                 "url": f"https://{person_id}.example.test/",
                 "confidence": {"score": 94},
+                "source_ids": ["S1"],
+            }
+        ],
+        "proposed_tags": [
+            {
+                "tag_id": "tag_0014",
+                "name": "Apple",
+                "summary": "The owner has a durable material association with Apple.",
+                "confidence": {
+                    "score": 94,
+                    "band": "high",
+                    "reason": "The official source establishes the association.",
+                },
                 "source_ids": ["S1"],
             }
         ],
@@ -919,6 +933,7 @@ def test_unresolved_dossier_is_included_unchanged_when_complete() -> None:
     }
     unresolved["proposed_details"] = []
     unresolved["proposed_socials"] = []
+    unresolved["proposed_tags"] = []
 
     derived, report = compile_research_batch(
         document,
@@ -978,6 +993,7 @@ def test_institution_dossier_applies_existing_biography_fields() -> None:
     }
     institution["proposed_details"] = []
     institution["proposed_socials"] = []
+    institution["proposed_tags"] = []
 
     derived, report = compile_research_batch(
         document,
@@ -997,6 +1013,94 @@ def test_institution_dossier_applies_existing_biography_fields() -> None:
     assert "Short biography" in rendered
     assert "Longer biography" in rendered
     assert "Institution note" in rendered
+
+
+def test_compilation_resolves_and_reports_canonical_tags() -> None:
+    document = new_document()
+    document["owners"] = [_owner(10, "First Owner", 1)]
+    dossier = _dossier(10, "First Owner")
+    dossier["proposed_tags"][0]["tag_id"] = None
+    dossier["proposed_tags"][0]["name"] = "Apple Inc."
+
+    derived, report = compile_research_batch(
+        document,
+        {10: dossier},
+        {10: Path("output/10.research.json")},
+        source_path="output/source.json",
+        limit=1,
+        mark_ai_enriched=True,
+    )
+    rendered = render_research_report(report)
+
+    tag = derived["owners"][0]["ai_research"]["tags"][0]
+    assert tag["id"] == "tag_0014"
+    assert tag["name"] == "Apple"
+    assert report["owners"][0]["tags"][0]["name"] == "Apple"
+    assert "Canonical tags" in rendered
+    assert "tag_0014" in rendered
+
+
+def test_compilation_reports_unknown_tags_without_inventing_ids() -> None:
+    document = new_document()
+    document["owners"] = [_owner(10, "First Owner", 1)]
+    dossier = _dossier(10, "First Owner")
+    dossier["proposed_tags"][0]["tag_id"] = None
+    dossier["proposed_tags"][0]["name"] = "Invented category"
+
+    with pytest.raises(
+        ValueError,
+        match="unknown tag name 'Invented category'",
+    ):
+        compile_research_batch(
+            document,
+            {10: dossier},
+            {10: Path("output/10.research.json")},
+            source_path="output/source.json",
+            limit=1,
+            mark_ai_enriched=True,
+        )
+
+
+def test_compilation_reports_ambiguous_aliases_without_selecting_one() -> None:
+    document = new_document()
+    document["owners"] = [_owner(10, "First Owner", 1)]
+    dossier = _dossier(10, "First Owner")
+    dossier["proposed_tags"][0]["tag_id"] = None
+    dossier["proposed_tags"][0]["name"] = "Shared"
+    catalogue = TagCatalogue(
+        {
+            "schema_version": 1,
+            "tags": [
+                {
+                    "id": "tag_a",
+                    "name": "Alpha",
+                    "normalized_name": "alpha",
+                    "aliases": ["Shared"],
+                    "facets": [],
+                    "merged_into": None,
+                },
+                {
+                    "id": "tag_b",
+                    "name": "Beta",
+                    "normalized_name": "beta",
+                    "aliases": ["Shared"],
+                    "facets": [],
+                    "merged_into": None,
+                },
+            ],
+        }
+    )
+
+    with pytest.raises(ValueError, match="ambiguous tag name 'Shared'"):
+        compile_research_batch(
+            document,
+            {10: dossier},
+            {10: Path("output/10.research.json")},
+            source_path="output/source.json",
+            limit=1,
+            mark_ai_enriched=True,
+            tag_catalogue=catalogue,
+        )
 
 
 def test_renders_review_report() -> None:
