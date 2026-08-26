@@ -155,6 +155,18 @@ and require one dossier per owner. Keep the main agent responsible for identity
 checks, cross-owner consistency, validation, reviewer feedback, and checkpoint
 tracking. Do not let parallel agents edit the shared owner dataset.
 
+## Existing-dossier tag migration
+
+For an explicitly authorised tag-only migration of a completed schema-v7
+corpus, use `scripts/backfill_dossier_tags.py`. Run it without `--apply` first
+and inspect its per-owner decisions, tag counts, and differences from the prior
+whole-corpus review. The tool must use only accepted dossier narrative fields
+and their source ledger; it must not browse, redraft biographies, change
+classifications, or infer tags from unresolved placeholders. With `--apply`, it
+creates and byte-verifies a complete v7 backup before atomically writing v8
+dossiers. Independently validate and resolve every migrated tag before treating
+the migration as complete.
+
 # Guardrails
 
 - Use public sources only and minimise collection of irrelevant personal data.

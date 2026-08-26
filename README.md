@@ -280,6 +280,23 @@ excluding `Family business` and `Property development`. Each proposal stores
 the local tag ID when known, its readable name, a materiality summary,
 confidence, and direct source IDs.
 
+Completed schema-v7 dossiers can be assigned catalogue tags and migrated to v8
+without new web research. Dry-run first and inspect the generated per-owner and
+per-tag audit; `--apply` creates a byte-for-byte v7 backup before atomic writes:
+
+```powershell
+.\venv\Scripts\python.exe `
+  .agents\skills\research-owner-biography\scripts\backfill_dossier_tags.py `
+  output\owner-research\all-by-loa `
+  --audit-output output\owner-research\tag-backfill-v8.audit.json
+
+.\venv\Scripts\python.exe `
+  .agents\skills\research-owner-biography\scripts\backfill_dossier_tags.py `
+  output\owner-research\all-by-loa `
+  --audit-output output\owner-research\tag-backfill-v8.audit.json `
+  --apply
+```
+
 The compiler retains the brief, biographies or editorial note, record type,
 all four classifications, and resolved canonical ID/name tag pairs under each
 compiled owner's `ai_research` metadata

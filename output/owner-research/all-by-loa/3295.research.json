@@ -1,5 +1,5 @@
 {
-  "schema_version": 7,
+  "schema_version": 8,
   "record_type": "person",
   "owner": {
     "person_id": 3295,
@@ -263,7 +263,7 @@
     },
     {
       "field": "biography",
-      "existing_value": "\u003cp\u003e\u0026quot;Born in London,\u0026nbsp;\u003ca href=\"https://iq.superyachttimes.com/people/melanie-laura-sherwood\"\u003eMichael Sherwood\u003c/a\u003e, also known as Woody and described as \u0026ldquo;\u003ca href=\"https://www.ft.com/content/a8d06a14-afde-11e6-a37c-f4a01f1b0fa1\" target=\"_blank\"\u003ethe man who led Goldman\u0026rsquo;s growth in Europe\u003c/a\u003e\u0026rdquo; by the Financial Times, is a British banker. He served as the vice-chairman of\u0026nbsp;\u003ca href=\"https://www.goldmansachs.com/\" target=\"_blank\"\u003eGoldman Sachs\u003c/a\u003e\u0026nbsp;and the co-chief executive officer of Goldman Sachs International until November 2016.\u003c/p\u003e\r\n\r\n\u003cp\u003e\u003ca href=\"https://iq.superyachttimes.com/yachts/jems\"\u003e\u003cem\u003eJems\u003c/em\u003e\u003c/a\u003e\u0026nbsp;is registered to a company named Schooner Marine LLP of which\u0026nbsp;\u003ca href=\"https://iq.superyachttimes.com/people/michael-sidney-sherwood\"\u003eMichael\u003c/a\u003e\u0026nbsp;and his wife,\u0026nbsp;\u003ca href=\"https://iq.superyachttimes.com/people/melanie-laura-sherwood\"\u003eMelanie Sherwood\u003c/a\u003e, are the beneficial owners. The all-aluminium superyacht is currently located in Saint-Mandrier-sur-Mer, France, where she is undergoing some maintenance work at the IMS 700 shipyard\u0026quot;.\u003c/p\u003e\r\n",
+      "existing_value": "<p>&quot;Born in London,&nbsp;<a href=\"https://iq.superyachttimes.com/people/melanie-laura-sherwood\">Michael Sherwood</a>, also known as Woody and described as &ldquo;<a href=\"https://www.ft.com/content/a8d06a14-afde-11e6-a37c-f4a01f1b0fa1\" target=\"_blank\">the man who led Goldman&rsquo;s growth in Europe</a>&rdquo; by the Financial Times, is a British banker. He served as the vice-chairman of&nbsp;<a href=\"https://www.goldmansachs.com/\" target=\"_blank\">Goldman Sachs</a>&nbsp;and the co-chief executive officer of Goldman Sachs International until November 2016.</p>\r\n\r\n<p><a href=\"https://iq.superyachttimes.com/yachts/jems\"><em>Jems</em></a>&nbsp;is registered to a company named Schooner Marine LLP of which&nbsp;<a href=\"https://iq.superyachttimes.com/people/michael-sidney-sherwood\">Michael</a>&nbsp;and his wife,&nbsp;<a href=\"https://iq.superyachttimes.com/people/melanie-laura-sherwood\">Melanie Sherwood</a>, are the beneficial owners. The all-aluminium superyacht is currently located in Saint-Mandrier-sur-Mer, France, where she is undergoing some maintenance work at the IMS 700 shipyard&quot;.</p>\r\n",
       "value": "<p>Michael Sidney Sherwood is a British banker and investor who spent three decades at Goldman Sachs, ultimately serving as vice-chairman and co-chief executive of Goldman Sachs International. A former debt-markets specialist, he now holds non-executive roles at Revolut and Credit Benchmark, where his disclosed investment links his current finance work to ownership.</p>\r\n",
       "action": "correct_existing",
       "confidence": {
@@ -294,6 +294,22 @@
       "verification": "Name, London geography, Goldman Sachs International identity and Greenhouse Sports activity match the resolved banker; type ID 5 is copied from the immutable lookup.",
       "source_ids": [
         "S15"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0084",
+      "name": "Goldman Sachs",
+      "summary": "The dossier documents a material career, ownership, investment or family-wealth association between Michael  Sidney Sherwood and Goldman Sachs.",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "The dossier's durable narrative supports this grouping and the source ledger directly names the association."
+      },
+      "source_ids": [
+        "S4",
+        "S5"
       ]
     }
   ],

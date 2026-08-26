@@ -1,5 +1,5 @@
 {
-  "schema_version": 7,
+  "schema_version": 8,
   "record_type": "person",
   "owner": {
     "person_id": 7049,
@@ -281,7 +281,7 @@
     {
       "field": "biography",
       "value": "<p>Serhat Koçkar is a Turkish tourism executive and investor, known for leading Anex Tour Group and developing Lujo Hotel Bodrum through Serkoç. His work links tour operations, airline partnerships and luxury hospitality. Anex was founded by his older brother Neşet, while Lujo represents Serhat's own hotel investment rather than a group asset.</p>\r\n",
-      "existing_value": "<p>Mr Ko&ccedil;kar and his brother&nbsp;<a href=\"https://www.globaltourismforum.org/neset-kockar/\" target=\"_blank\">Ne\u015fet Ko&ccedil;kar</a>&nbsp;are the co-founders of the travel company Anex Tour. Serhat is the&nbsp;<a href=\"https://www.fvw.de/international/travel-news/anex-tour-turkish-russian-tour-operator-plans-takeoff-with-new-charter-airline-163567?crefresh=1\" target=\"_blank\">CEO of Anex Tour</a>, while Ne\u015fet is billed as the &quot;founder and owner of ANEX Tourism Group companies&quot; according to this&nbsp;<a href=\"https://www.globaltourismforum.org/neset-kockar/\" target=\"_blank\">bio</a>&nbsp;found online.</p>\r\n\r\n<p><a href=\"https://www.linkedin.com/company/anex-tour/\" target=\"_blank\">Anex Tour</a>&nbsp;was founded in 1996 and soon developed a particular focus on drawing Russian tourists to Turkey. In more recent years the company has also expanded to many other countries including Germany.</p>\r\n",
+      "existing_value": "<p>Mr Ko&ccedil;kar and his brother&nbsp;<a href=\"https://www.globaltourismforum.org/neset-kockar/\" target=\"_blank\">Neşet Ko&ccedil;kar</a>&nbsp;are the co-founders of the travel company Anex Tour. Serhat is the&nbsp;<a href=\"https://www.fvw.de/international/travel-news/anex-tour-turkish-russian-tour-operator-plans-takeoff-with-new-charter-airline-163567?crefresh=1\" target=\"_blank\">CEO of Anex Tour</a>, while Neşet is billed as the &quot;founder and owner of ANEX Tourism Group companies&quot; according to this&nbsp;<a href=\"https://www.globaltourismforum.org/neset-kockar/\" target=\"_blank\">bio</a>&nbsp;found online.</p>\r\n\r\n<p><a href=\"https://www.linkedin.com/company/anex-tour/\" target=\"_blank\">Anex Tour</a>&nbsp;was founded in 1996 and soon developed a particular focus on drawing Russian tourists to Turkey. In more recent years the company has also expanded to many other countries including Germany.</p>\r\n",
       "action": "correct_existing",
       "confidence": {
         "score": 97,
@@ -307,6 +307,35 @@
         "score": 100,
         "band": "very_high",
         "reason": "This is the official domain of the hospitality business that directly identifies Koçkar as investor."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0025",
+      "name": "Aviation",
+      "summary": "The dossier supports Aviation as a durable, material grouping for Serhat Kockar.",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "The dossier's durable narrative supports this grouping and the source ledger directly names the association."
+      },
+      "source_ids": [
+        "S2",
+        "S7"
+      ]
+    },
+    {
+      "tag_id": "tag_0111",
+      "name": "Luxury hospitality",
+      "summary": "The dossier supports Luxury hospitality as a durable, material grouping for Serhat Kockar.",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "The dossier's durable narrative supports this grouping and the source ledger directly names the association."
       },
       "source_ids": [
         "S4"
