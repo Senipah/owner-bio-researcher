@@ -323,10 +323,17 @@ def test_sport_rules_distinguish_ownership_from_business_and_game_language() -> 
     franchises = _dossier(
         "He owns and leads the Buffalo Bills and Buffalo Sabres professional franchises."
     )
+    falcons = _dossier(
+        "He bought the Atlanta Falcons and made professional sport central to "
+        "his business portfolio."
+    )
     assert "Professional sports ownership" not in _names(electronics)
     assert "Professional sports ownership" not in _names(regatta)
     assert "Football" not in _names(game)
     assert "Professional sports ownership" in _names(franchises)
+    assert {"American football", "Professional sports ownership"} <= _names(
+        falcons
+    )
 
 
 def test_rock_music_requires_a_performer_not_only_a_label_executive() -> None:

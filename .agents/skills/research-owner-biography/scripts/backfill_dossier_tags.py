@@ -653,6 +653,7 @@ TOPIC_PATTERNS: dict[str, tuple[str, ...]] = {
         r"\bnfl\b",
         r"\bnational football league\b",
         r"\bsuper bowl\b",
+        r"\batlanta falcons\b",
     ),
     "Baseball": (
         r"\bbaseball\b",
