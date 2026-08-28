@@ -174,7 +174,8 @@ For every target owner:
    subagents return null-ID candidates and the main agent deduplicates semantic
    aliases or creates a genuinely distinct qualifying canonical tag before
    final validation. Never invent an ID. Preserve the documented exclusions
-   and the gambling/video-game distinction.
+   and the gambling/video-game distinction, including `Gambling` plus every
+   supported granular gambling tag.
 8. Search supported person-relevant social types and reject namesake, fan,
    company-only, family-member and uncorroborated personal accounts.
 9. Build the schema-v8 source-hidden `biography_brief` after completing the

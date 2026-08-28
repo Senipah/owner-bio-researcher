@@ -139,10 +139,56 @@ def test_gambling_is_distinct_from_video_games() -> None:
 
     casino_names = _names(casino_owner)
     video_game_names = _names(video_game_owner)
-    assert "Gambling" in casino_names
+    assert {"Casino operations", "Gambling", "Online gambling & betting"} <= (
+        casino_names
+    )
     assert "Video games" not in casino_names
     assert "Video games" in video_game_names
     assert "Gambling" not in video_game_names
+
+
+def test_gambling_subtopics_retain_the_umbrella_tag() -> None:
+    examples = {
+        "Bookmaking": "She founded a bookmaker and expanded its retail betting shops.",
+        "Casino operations": "He owns and operates a group of casino resorts.",
+        "Gaming machines": "She manufactures gaming machines and slot machines.",
+        "Lotteries": "He built an international lottery operator.",
+        "Online gambling & betting": (
+            "She founded an online gambling platform and sportsbook."
+        ),
+    }
+
+    for granular_name, text in examples.items():
+        names = _names(_dossier(text, source_support=text))
+        assert {"Gambling", granular_name} <= names
+
+
+def test_ambiguous_online_gaming_needs_gambling_classification() -> None:
+    unclassified = _dossier(
+        "She founded an online gaming company.",
+        source_support="Online gaming company founder.",
+    )
+    classified = deepcopy(unclassified)
+    classified["primary_industry"].update(
+        {
+            "classification": "gambling_casinos",
+            "summary": "Her principal business is an online gaming company.",
+        }
+    )
+
+    assert "Online gambling & betting" not in _names(unclassified)
+    assert {"Gambling", "Online gambling & betting"} <= _names(classified)
+
+
+def test_online_casino_does_not_imply_land_based_casino_operations() -> None:
+    document = _dossier(
+        "She founded cryptocurrency-based online casino and sports-betting brands.",
+        source_support="Online casino and sports-betting company founder.",
+    )
+
+    names = _names(document)
+    assert {"Gambling", "Online gambling & betting"} <= names
+    assert "Casino operations" not in names
 
 
 def test_gambling_classification_disambiguates_bare_gaming_language() -> None:

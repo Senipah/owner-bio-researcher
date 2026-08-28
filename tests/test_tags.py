@@ -48,7 +48,7 @@ def _proposal(name: str, tag_id: str | None = None) -> dict:
 def test_seed_catalogue_contains_complete_supported_long_tail() -> None:
     catalogue = load_tag_catalogue()
 
-    assert len(catalogue.tags_by_id) == 243
+    assert len(catalogue.tags_by_id) == 244
     assert sum(
         "business family" in tag.facets
         for tag in catalogue.tags_by_id.values()
@@ -81,6 +81,7 @@ def test_seed_catalogue_contains_complete_supported_long_tail() -> None:
         "Insurance",
         "Jewellery & watches",
         "Luxury goods",
+        "Lotteries",
         "Oil & gas",
         "Online marketplaces",
         "Pharmaceuticals",
@@ -117,7 +118,7 @@ def test_new_catalogue_entries_are_typed() -> None:
     ]
 
     assert {int(tag.id.removeprefix("tag_")) for tag in new_tags} == set(
-        range(206, 250)
+        range(206, 251)
     )
     assert all(
         len(
@@ -154,6 +155,9 @@ def test_new_catalogue_entries_are_typed() -> None:
     assert catalogue.resolve(tag_id=None, name="Actress").name == "Actor"
     assert catalogue.resolve(tag_id=None, name="Online betting").name == (
         "Online gambling & betting"
+    )
+    assert catalogue.resolve(tag_id=None, name="Lottery operator").name == (
+        "Lotteries"
     )
     assert catalogue.resolve(tag_id=None, name="State-owned").name == (
         "Government-owned"

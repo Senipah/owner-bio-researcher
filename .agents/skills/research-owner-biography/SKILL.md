@@ -206,9 +206,12 @@ backfill as complete.
   completed corpus does not contain it. Do not invent an ID: create the
   canonical entry first in a repo-backed run, or use a null ID and an explicit
   Knowledge-update notice in Custom GPT mode.
-- Resolve bare `Gaming` to `Gambling`, never `Video games`. Use `Video games`
-  only when the evidence explicitly concerns video games, game development,
-  game publishing, or an equivalent interactive-entertainment business.
+- Resolve bare `Gaming` to the `Gambling` family, never `Video games`. Apply
+  the umbrella `Gambling` tag together with every directly supported granular
+  tag: `Bookmaking`, `Casino operations`, `Gaming machines`, `Lotteries`, or
+  `Online gambling & betting`. Use `Video games` only when the evidence
+  explicitly concerns video games, game development, game publishing, or an
+  equivalent interactive-entertainment business.
 - Apply `Government-owned` only when the owner record is itself a government or
   public body, or an institution is explicitly government/state-owned. Public
   office, contracting, employment, stewardship, and royalty do not suffice.
@@ -288,8 +291,9 @@ backfill as complete.
 - Confirm every new repo-backed tag has a unique monotonic ID, a canonical
   name, useful aliases, a type facet, applicable `parent:<classification>`
   facets, and a rebuilt Custom GPT catalogue.
-- Confirm tag selection uses `Gambling` for casino, betting, bookmaking, and
-  gambling-industry gaming, and does not use `Video games` for that evidence.
+- Confirm casino, betting, bookmaking, lottery, and gambling-industry gaming
+  use `Gambling` plus every supported granular gambling tag, and never use
+  `Video games` for that evidence.
 - Confirm `Government-owned` is supported as an owner-entity status and is not
   inferred from public office, government business, sovereign stewardship, or
   royal status.

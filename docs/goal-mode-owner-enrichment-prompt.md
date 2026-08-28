@@ -55,7 +55,8 @@ For every owner:
   catalogue as an evolving registry, resolve semantic aliases first, and have
   the main agent create a genuinely distinct qualifying tag before final
   validation rather than omit it or invent an ID; retain the documented
-  exclusions and gaming/video-game distinction;
+  exclusions, the gambling/video-game distinction, and additive umbrella plus
+  granular gambling tags;
 - search supported person-relevant social types, prioritising Instagram,
   LinkedIn, and Personal Website;
 - reject namesake, company, fan, family-member, and uncorroborated accounts;

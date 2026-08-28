@@ -165,10 +165,12 @@ Prompt:
 > Research one owner whose fortune came from casino gaming and another whose
 > fortune came from a video-game publisher. Apply all relevant tags.
 
-Pass when casino gaming resolves to `Gambling` (including when described as
-`Gaming`) and never to `Video games`; the publisher resolves to `Video games`
-only with explicit interactive-entertainment evidence. Neither result may use
-`Family office` or a generic philanthropy-domain tag.
+Pass when casino gaming resolves to `Gambling` plus `Casino operations`
+(including when described as `Gaming`) and never to `Video games`; the
+publisher resolves to `Video games` only with explicit interactive-
+entertainment evidence. Every supported gambling child is included alongside
+`Gambling`. Neither result may use `Family office` or a generic philanthropy-
+domain tag.
 
 ## 14. Open-world tag discovery
 

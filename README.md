@@ -277,10 +277,11 @@ dossier-supported tag that creates a meaningful grouping. The canonical
 research-layer catalogue is `config\owner-tags.json`; it includes aliases,
 hidden facets, merge targets, and the supported long tail while deliberately
 excluding `Family business`, `Property development`, `Family office`, and the
-generic philanthropy-domain tags. `Gaming` resolves to the casino/betting
-`Gambling` tag; video-game evidence uses the explicit `Video games` tag. Each
-proposal stores the local tag ID when known, its readable name, a materiality
-summary, confidence, and direct source IDs.
+generic philanthropy-domain tags. Casino, betting, bookmaking, lottery, and
+gambling-industry `Gaming` evidence receives the umbrella `Gambling` tag plus
+every supported granular child; video-game evidence uses the explicit `Video
+games` tag. Each proposal stores the local tag ID when known, its readable
+name, a materiality summary, confidence, and direct source IDs.
 
 `Government-owned` identifies owner records that are governments or comparable
 public bodies, plus institutions explicitly documented as government- or

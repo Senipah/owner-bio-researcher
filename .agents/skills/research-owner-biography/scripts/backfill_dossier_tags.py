@@ -409,6 +409,7 @@ TOPIC_PATTERNS: dict[str, tuple[str, ...]] = {
         r"\bgaming (?:operator|operations?|resort|venues?)\b",
         r"\b(?:online|mobile|internet|sports) betting\b",
         r"\bbookmak(?:er|ing)\b",
+        r"\blotter(?:y|ies)\b",
     ),
     "Hedge funds": (
         r"\bhedge fund(?:s)?\b",
@@ -750,6 +751,39 @@ PHILANTHROPY_DOMAINS: dict[str, tuple[str, ...]] = {
 }
 
 
+GAMBLING_SUBTOPIC_PATTERNS: dict[str, tuple[str, ...]] = {
+    "Bookmaking": (
+        r"\bbookmak(?:er|ers|ing)\b",
+        r"\bbetting shops?\b",
+        r"\bretail betting\b",
+    ),
+    "Casino operations": (
+        r"\bcasinos?\b",
+        r"\bcasino (?:business|businesses|company|companies|group|groups|"
+        r"hotels?|operator|operations?|portfolio|properties|resorts?)\b",
+    ),
+    "Gaming machines": (
+        r"\bgaming machines?\b",
+        r"\bslot machines?\b",
+        r"\bvideo poker (?:distribut(?:or|ion)|machines?)\b",
+        r"\b(?:casino|gaming) equipment\b",
+    ),
+    "Lotteries": (
+        r"\blotter(?:y|ies)\b",
+    ),
+    "Online gambling & betting": (
+        r"\bonline (?:betting|casino|casinos|gambling|poker|wagering)\b",
+        r"\b(?:internet|mobile) (?:betting|casino|casinos|gambling|wagering)\b",
+        r"\bsports betting\b",
+        r"\bsportsbook\b",
+        r"\bpokerstars\b",
+        r"\bbetvictor\b",
+        r"\bonline gaming (?:brands?|business|businesses|company|companies|"
+        r"group|operator|operations?|platform|software|ventures?)\b",
+    ),
+}
+
+
 CONSERVATION_PATTERNS: dict[str, tuple[str, ...]] = {
     "Environmental conservation": (
         r"\benvironmental conservation\b", r"\bnature conservation\b",
@@ -773,6 +807,11 @@ IMPLIED_TAGS: dict[str, tuple[str, ...]] = {
     "Formula 1": ("Motorsport",),
     "NASCAR": ("Motorsport",),
     "Marine / ocean conservation": ("Environmental conservation",),
+    "Bookmaking": ("Gambling",),
+    "Casino operations": ("Gambling",),
+    "Gaming machines": ("Gambling",),
+    "Lotteries": ("Gambling",),
+    "Online gambling & betting": ("Gambling",),
 }
 
 
@@ -1167,6 +1206,38 @@ def _gambling_matches(
     ]
 
 
+def _gambling_subtopic_matches(
+    tag_name: str,
+    dossier: dict[str, Any],
+    claims: list[Evidence],
+) -> list[Evidence]:
+    evidence = _matching(claims, GAMBLING_SUBTOPIC_PATTERNS[tag_name])
+    if not evidence:
+        return []
+    if tag_name == "Casino operations":
+        online_casino = re.compile(
+            r"\b(?:crypto(?:currency)? based |digital |internet |mobile |online )"
+            r"casinos?\b"
+        )
+        return [
+            item for item in evidence
+            if not online_casino.search(item.normalized)
+        ]
+    if tag_name != "Online gambling & betting":
+        return evidence
+
+    ambiguous_online_gaming = re.compile(r"\bonline gaming\b")
+    if any(not ambiguous_online_gaming.search(item.normalized) for item in evidence):
+        return evidence
+    if any(
+        isinstance(value := dossier.get(field), dict)
+        and value.get("classification") == "gambling_casinos"
+        for field in ("wealth_creation_industry", "primary_industry")
+    ):
+        return evidence
+    return []
+
+
 def _private_equity_matches(claims: list[Evidence]) -> list[Evidence]:
     topic_patterns = _compile(TOPIC_PATTERNS["Private equity"])
     output: list[Evidence] = []
@@ -1533,6 +1604,8 @@ def _patterns_for_match(match: Match) -> tuple[str, ...]:
         return _company_patterns(match.tag)
     if name in TOPIC_PATTERNS:
         return TOPIC_PATTERNS[name]
+    if name in GAMBLING_SUBTOPIC_PATTERNS:
+        return GAMBLING_SUBTOPIC_PATTERNS[name]
     if name in PHILANTHROPY_DOMAINS:
         return PHILANTHROPY_DOMAINS[name]
     if name in CONSERVATION_PATTERNS:
@@ -1575,6 +1648,9 @@ def assign_tags(
         elif tag.name == "Gambling":
             evidence = _gambling_matches(dossier, claims)
             method = "gambling/casino industry evidence"
+        elif tag.name in GAMBLING_SUBTOPIC_PATTERNS:
+            evidence = _gambling_subtopic_matches(tag.name, dossier, claims)
+            method = "granular gambling-industry evidence"
         elif tag.name == "Government-owned":
             evidence = _government_owned_matches(dossier, claims)
             method = "government/state institutional ownership evidence"

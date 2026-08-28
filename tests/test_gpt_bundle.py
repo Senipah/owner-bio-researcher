@@ -198,7 +198,9 @@ def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
     assert "## 12. One-record company tail" in preview_tests
     assert "`Apple` is included once" in preview_tests
     assert "## 13. Gambling and video-game disambiguation" in preview_tests
-    assert "casino gaming resolves to `Gambling`" in preview_tests
+    assert "casino gaming resolves to `Gambling` plus `Casino operations`" in (
+        preview_tests
+    )
     assert "## 14. Open-world tag discovery" in preview_tests
     assert "uploaded `tag-catalogue.json` Knowledge" in preview_tests
     assert "## 15. Government ownership boundary" in preview_tests

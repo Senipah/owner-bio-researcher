@@ -375,9 +375,9 @@ Apply this canonicalisation workflow in order:
 
 After any repo-backed catalogue change, rebuild the tracked Custom GPT
 Knowledge and tag catalogue with `scripts/build_gpt_knowledge.py`, run its
-`--check` mode, and validate tag resolution. Existing parent-aligned
-compatibility tags such as `Cryptocurrency` and `Gambling` are not precedent
-for creating new duplicates of industry labels.
+`--check` mode, and validate tag resolution. Existing parent-aligned tags such
+as `Cryptocurrency` and the deliberately additive `Gambling` umbrella are not
+precedent for creating new duplicates of industry labels.
 
 Use the dry-run-first helper for repo-backed additions after completing the
 semantic review:
@@ -437,14 +437,19 @@ deliberately excluded; this does not remove the separate
 `family_office_principal` wealth-relationship classification or distinctive
 cause tags such as `Humanitarian aid` and `Marine / ocean conservation`.
 
-Treat bare `Gaming` as an alias for the casino, betting, and gambling-industry
-`Gambling` tag. Use `Video games` only when evidence explicitly concerns video
-games, game development, game publishing, or an equivalent interactive-
-entertainment business. Do not repeat names that normalize to the same
-casefolded, punctuation-insensitive form; compilation also rejects different
-aliases that resolve to the same canonical tag. An empty list is valid only
-when no supported tag meets the applicability test. Unresolved placeholders
-must use an empty list.
+Treat bare `Gaming` as belonging to the casino, betting, and gambling-industry
+`Gambling` family. Whenever that association passes the materiality test,
+apply the umbrella `Gambling` tag and every directly supported granular tag:
+`Bookmaking`, `Casino operations`, `Gaming machines`, `Lotteries`, or `Online
+gambling & betting`. A granular gambling tag always implies `Gambling`; more
+than one granular tag may apply. Do not infer land-based `Casino operations`
+from online-casino evidence alone. Use `Video games` only when evidence
+explicitly concerns video games, game development, game publishing, or an
+equivalent interactive-entertainment business. Do not repeat names that
+normalize to the same casefolded, punctuation-insensitive form; compilation
+also rejects different aliases that resolve to the same canonical tag. An
+empty list is valid only when no supported tag meets the applicability test.
+Unresolved placeholders must use an empty list.
 
 ## Staff-facing owner-page response
 
