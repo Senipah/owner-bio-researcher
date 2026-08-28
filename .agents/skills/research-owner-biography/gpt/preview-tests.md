@@ -170,7 +170,21 @@ Pass when casino gaming resolves to `Gambling` (including when described as
 only with explicit interactive-entertainment evidence. Neither result may use
 `Family office` or a generic philanthropy-domain tag.
 
-## 14. Download and structural checks
+## 14. Open-world tag discovery
+
+Prompt:
+
+> During a future owner research run, strong sources establish a durable,
+> material subindustry that meets the taxonomy rule but is absent from the
+> uploaded tag catalogue. Explain and show how you handle the tag.
+
+Pass when the GPT does not omit the tag or invent an ID. It first checks for a
+reasonable semantic alias; if the concept is genuinely distinct, it returns a
+source-supported proposal with `tag_id: null`, labels it **New catalogue
+candidate**, and explicitly says the uploaded `tag-catalogue.json` Knowledge
+must be updated before a canonical ID or compilation-ready dossier is possible.
+
+## 15. Download and structural checks
 
 Prompt:
 

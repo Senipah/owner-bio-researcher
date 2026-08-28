@@ -282,6 +282,13 @@ generic philanthropy-domain tags. `Gaming` resolves to the casino/betting
 proposal stores the local tag ID when known, its readable name, a materiality
 summary, confidence, and direct source IDs.
 
+The catalogue is deliberately open-world: incomplete corpus coverage is not a
+reason to omit a qualifying tag. Research first canonicalises reasonable
+aliases; a genuinely distinct tag that passes the documented taxonomy rule is
+added to the repo catalogue before compilation. Custom GPT runs cannot mutate
+uploaded Knowledge, so they retain a null-ID candidate and explicitly report
+that the GPT tag catalogue needs updating.
+
 Completed schema-v7 dossiers can be assigned catalogue tags and migrated to v8
 without new web research. Dry-run first and inspect the generated per-owner and
 per-tag audit; `--apply` creates a byte-for-byte v7 backup before atomic writes:

@@ -327,6 +327,27 @@ def test_validator_accepts_name_only_tag_with_direct_sources(
     assert result.returncode == 0, result.stderr
 
 
+def test_validator_accepts_null_id_new_catalogue_candidate(tmp_path: Path) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["proposed_tags"] = [
+        {
+            "tag_id": None,
+            "name": "Quantum computing",
+            "summary": "A durable material quantum-computing business is established.",
+            "confidence": {
+                "score": 92,
+                "band": "high",
+                "reason": "Direct company evidence supports the subindustry.",
+            },
+            "source_ids": ["S1"],
+        }
+    ]
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 0, result.stderr
+
+
 def test_validator_rejects_normalized_duplicate_tags(tmp_path: Path) -> None:
     dossier = deepcopy(_calibration())
     proposal = {

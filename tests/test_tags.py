@@ -48,7 +48,7 @@ def _proposal(name: str, tag_id: str | None = None) -> dict:
 def test_seed_catalogue_contains_complete_supported_long_tail() -> None:
     catalogue = load_tag_catalogue()
 
-    assert len(catalogue.tags_by_id) == 199
+    assert len(catalogue.tags_by_id) == 242
     assert sum(
         "business family" in tag.facets
         for tag in catalogue.tags_by_id.values()
@@ -69,7 +69,25 @@ def test_seed_catalogue_contains_complete_supported_long_tail() -> None:
         "Della Valle family",
         "Haji-Ioannou family",
         "Aston Martin",
+        "Actor",
+        "Asset management",
+        "Banking",
+        "Chemicals",
+        "Commodity trading",
+        "Cosmetics & beauty",
+        "Defence",
         "Gambling",
+        "Insurance",
+        "Jewellery & watches",
+        "Luxury goods",
+        "Oil & gas",
+        "Online marketplaces",
+        "Pharmaceuticals",
+        "Professional athlete",
+        "Publishing",
+        "Semiconductors",
+        "Singer",
+        "Social media",
         "eBay",
         "Pirelli",
         "easyJet",
@@ -87,6 +105,38 @@ def test_seed_catalogue_contains_complete_supported_long_tail() -> None:
         for label, ids in catalogue.lookup.items()
         if len({catalogue._terminal_tag(tag_id).id for tag_id in ids}) > 1
     }
+
+
+def test_new_subindustries_and_occupations_are_typed() -> None:
+    catalogue = load_tag_catalogue()
+    new_tags = [
+        tag
+        for tag in catalogue.tags_by_id.values()
+        if int(tag.id.removeprefix("tag_")) >= 206
+    ]
+
+    assert {int(tag.id.removeprefix("tag_")) for tag in new_tags} == set(
+        range(206, 249)
+    )
+    assert all(
+        len(
+            {"business model", "occupation", "subindustry"} & set(tag.facets)
+        )
+        == 1
+        for tag in new_tags
+    )
+    assert all(
+        any(facet.startswith("parent:") for facet in tag.facets)
+        for tag in new_tags
+        if "subindustry" in tag.facets
+    )
+    assert catalogue.resolve(tag_id=None, name="Luxury brands").name == (
+        "Luxury goods"
+    )
+    assert catalogue.resolve(tag_id=None, name="Actress").name == "Actor"
+    assert catalogue.resolve(tag_id=None, name="Online betting").name == (
+        "Online gambling & betting"
+    )
 
 
 def test_gaming_means_gambling_and_video_games_requires_its_explicit_name() -> None:

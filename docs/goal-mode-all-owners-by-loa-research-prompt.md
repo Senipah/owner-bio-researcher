@@ -170,10 +170,11 @@ For every target owner:
 7. Populate `proposed_tags` with every durable, material, dossier-supported
    tag that creates a meaningful grouping. Resolve canonical names or aliases
    through `config/owner-tags.json`, retain the local ID/name pair, confidence,
-   materiality summary and direct source IDs, and never invent an ID. Exclude
-   `Family business`, `Property development`, `Family office`, and the generic
-   philanthropy-domain tags. Treat `Gaming` as gambling/casinos; use `Video
-   games` only for explicit video-game industry evidence.
+   materiality summary and direct source IDs. Treat the catalogue as evolving:
+   subagents return null-ID candidates and the main agent deduplicates semantic
+   aliases or creates a genuinely distinct qualifying canonical tag before
+   final validation. Never invent an ID. Preserve the documented exclusions
+   and the gambling/video-game distinction.
 8. Search supported person-relevant social types and reject namesake, fan,
    company-only, family-member and uncorroborated personal accounts.
 9. Build the schema-v8 source-hidden `biography_brief` after completing the

@@ -34,10 +34,11 @@ statistics.
 - Write dossiers beneath `output/owner-research/`; never overwrite owner input.
 - Read [references/research-contract.md](references/research-contract.md) for
   evidence, confidence, social-link, and dossier rules.
-- Use the repo-level `config/owner-tags.json` as the canonical tag catalogue.
-  Apply every durable, material, dossier-supported tag that creates a
-  meaningful grouping; never invent catalogue IDs. Generic philanthropy tags
-  and `Family office` are deliberately excluded from the tag taxonomy.
+- Use the repo-level `config/owner-tags.json` as the canonical tag catalogue,
+  not a closed whitelist. Apply every durable, material, dossier-supported tag
+  that passes the taxonomy rule. Resolve aliases first; in a repo-backed run,
+  add a genuinely distinct missing tag to the catalogue before using its new
+  ID. Generic philanthropy tags and `Family office` remain excluded.
 - Read
   [references/wealth-classification.md](references/wealth-classification.md)
   before classifying industries, wealth origin, or relationship to wealth.
@@ -81,15 +82,14 @@ statistics.
    was created over its current amount. Within self-made wealth, distinguish
    an evidenced independent start from an advantaged one; do not equate
    founder ownership with a blank-slate upbringing.
-5. Select all applicable canonical tags after the identity and wealth research.
-   Match canonical names or aliases in `config/owner-tags.json`; store both the
-   research-layer `tag_id` and name when known, or a null ID with the supported
-   name when the catalogue is unavailable or lacks the tag. Give every tag a
-   concise materiality summary, confidence of at least 70, and direct source
-   IDs. Treat `Gaming` as the gambling/casino alias and use `Video games` only
-   for explicit video-game industry evidence. Exclude `Family business`,
-   `Property development`, `Family office`, the generic philanthropy-domain
-   tags, tangential links, and surname-only family inferences.
+5. Generate all applicable tags after the identity and wealth research, even
+   when the current catalogue lacks one. Apply the taxonomy and
+   canonicalisation workflow in `references/research-contract.md`: resolve a
+   reasonable alias to the existing concept; otherwise create a distinct tag
+   in a repo-backed run, or report a null-ID catalogue candidate in Custom GPT
+   mode. Give every proposal a materiality summary, confidence of at least 70,
+   and direct source IDs. Preserve the documented exclusions and the
+   gambling/video-game distinction.
 6. Search all person-relevant link types supported by the input lookup,
    prioritising public personal Instagram, LinkedIn, and personal websites.
    A company website may be proposed under its distinct type when the owner
@@ -156,7 +156,10 @@ For a batch of four or more owners, use subagents when available: give each
 subagent one owner and this skill, allow at most three research agents at once,
 and require one dossier per owner. Keep the main agent responsible for identity
 checks, cross-owner consistency, validation, reviewer feedback, and checkpoint
-tracking. Do not let parallel agents edit the shared owner dataset.
+tracking. Subagents may return null-ID tag candidates but must not edit the
+shared catalogue; the main agent deduplicates candidates, creates approved
+canonical entries once, refreshes their dossiers, and rebuilds GPT Knowledge.
+Do not let parallel agents edit the shared owner dataset.
 
 ## Existing-dossier tag migration
 
@@ -187,6 +190,10 @@ the migration as complete.
 - Require `proposed_tags` in every schema-v8 dossier. Include all and only
   durable, material, dossier-supported tags that create meaningful groupings;
   unresolved placeholders use an empty list.
+- Never omit a qualifying tag merely because the current catalogue or the
+  completed corpus does not contain it. Do not invent an ID: create the
+  canonical entry first in a repo-backed run, or use a null ID and an explicit
+  Knowledge-update notice in Custom GPT mode.
 - Resolve bare `Gaming` to `Gambling`, never `Video games`. Use `Video games`
   only when the evidence explicitly concerns video games, game development,
   game publishing, or an equivalent interactive-entertainment business.
@@ -260,6 +267,11 @@ the migration as complete.
   `self_made_advantaged` does not conceal a principal asset transfer, and
   broad `self_made` is retained when the distinction is unresolved.
 - Confirm every non-`unknown` wealth classification scores at least 70.
+- Confirm every tag candidate was checked against canonical names, aliases,
+  and semantic equivalents; broader or narrower concepts are not aliases.
+- Confirm every new repo-backed tag has a unique monotonic ID, a canonical
+  name, useful aliases, a type facet, applicable `parent:<classification>`
+  facets, and a rebuilt Custom GPT catalogue.
 - Confirm tag selection uses `Gambling` for casino, betting, bookmaking, and
   gambling-industry gaming, and does not use `Video games` for that evidence.
 - Confirm no generic philanthropy-domain or `Family office` tag is proposed;
@@ -339,5 +351,7 @@ separately from owner inputs. It contains:
 - proposed personal fields, verified socials, and every applicable canonical
   tag with its research ID/name pair, materiality summary, confidence, and
   source IDs;
+- any canonical tags created during a repo-backed run, or Custom GPT null-ID
+  candidates with an explicit tag-catalogue Knowledge-update notice;
 - per-item confidence and source IDs;
 - source ledger, uncertainties, and completed research state.

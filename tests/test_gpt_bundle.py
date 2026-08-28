@@ -82,6 +82,9 @@ def test_gpt_instructions_are_concise_and_decision_complete() -> None:
         "Search the exact name on Forbes first",
         "`wealth_creation_industry`",
         "every durable, material, dossier-supported catalogue tag",
+        "Catalogue absence is not a veto",
+        "**New catalogue\n   candidate**",
+        "tag-catalogue Knowledge needs updating",
         "## Biography requirements",
         "distinguish an evidenced\n   independent start from an advantaged one",
         "a broad wealth descriptor such as `billionaire`",
@@ -140,6 +143,8 @@ def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
     assert "`Apple` is included once" in preview_tests
     assert "## 13. Gambling and video-game disambiguation" in preview_tests
     assert "casino gaming resolves to `Gambling`" in preview_tests
+    assert "## 14. Open-world tag discovery" in preview_tests
+    assert "uploaded `tag-catalogue.json` Knowledge" in preview_tests
 
 
 def test_manual_dossier_example_contract_and_strict_validation() -> None:

@@ -111,6 +111,12 @@ or biographies. It creates a schema-v8-compatible manual dossier only when the
 user explicitly asks for JSON or a dossier. That optional dossier is not
 owner-input-validated or compilation-ready.
 
+The uploaded catalogue is not a closed whitelist. When research supports a
+distinct tag that passes the taxonomy rule but is absent from Knowledge, the
+GPT retains it with a null ID, labels it as a new catalogue candidate, and
+states that the uploaded `tag-catalogue.json` must be updated. It must resolve
+reasonable semantic aliases to existing tags and must never invent an ID.
+
 The example in [`manual-dossier.example.json`](manual-dossier.example.json)
 is maintainer documentation for that optional contract; do not upload it as
 Knowledge. A maintainer may validate a downloaded dossier locally without
@@ -130,7 +136,9 @@ compare the dossier with an owner export.
 
 This section is for repository maintainers, not GPT users. The four canonical
 reference files and `config/owner-tags.json` remain authoritative. After any
-reference or catalogue change, rebuild both GPT Knowledge files and run:
+reference or catalogue change—including acceptance of a candidate reported by
+the GPT—deduplicate it against existing concepts, add the canonical repo tag,
+rebuild both GPT Knowledge files and run:
 
 ```powershell
 .\venv\Scripts\python.exe `

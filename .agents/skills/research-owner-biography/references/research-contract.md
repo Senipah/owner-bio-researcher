@@ -309,12 +309,92 @@ limited to blank owner fields and may cover industries, sports, royal houses,
 business families, durable roles, distinctive causes, named companies, or
 other catalogued associations.
 
-Use `config/owner-tags.json` as the canonical research-layer catalogue. Match
-its canonical names or aliases. Store both `tag_id` and `name` when the local
-catalogue ID is known. `tag_id` may be `null` when research is performed without
-the catalogue or discovers a defensible new tag; never invent an ID. Compilation
-resolves names and aliases, follows `merged_into`, and stops with an explicit
-unknown or ambiguous result instead of creating a tag.
+The catalogue is an evolving canonical registry, not a closed whitelist. Only
+part of the owner corpus has completed research, so absence from the current
+catalogue or completed dossiers must never prevent a qualifying tag from being
+proposed or created. A tag qualifies when it does at least one of the following:
+
+- adds a useful subindustry below a broad industry classification;
+- captures a durable, interesting occupation, sport, status, or public role;
+- creates a meaningful cross-industry grouping; or
+- supports a plausible user question about owner or yacht patterns.
+
+Reject a candidate that merely renames an industry classification, repeats
+wealth origin or wealth relationship, describes a commonplace billionaire
+attribute, represents a minor portfolio holding, or lacks durable materiality.
+For analytical subindustries, prefer concepts likely to form a useful cohort;
+rare but inherently browse-worthy identities such as actors or professional
+athletes do not require a minimum count.
+
+Apply this canonicalisation workflow in order:
+
+1. Normalize the candidate and compare it with every canonical name and alias.
+2. Check semantic equivalence. If it is reasonably the same concept, use the
+   existing canonical tag; in a repo-backed run, add a durable missing alias
+   when that will improve future resolution.
+3. Do not collapse broader and narrower concepts into aliases. `Banking` is not
+   an alias of `Finance & Investments`, and `Luxury goods` is not an alias of
+   `Fashion & Retail`; their extra granularity is the point.
+4. If a distinct candidate passes the taxonomy rule in a repo-backed run,
+   allocate the next unused monotonic local ID, add its canonical name,
+   aliases, and facets to `config/owner-tags.json`, then resolve the dossier to
+   that new ID. Use a type facet such as `subindustry`, `occupation`, `sport`,
+   `company`, `status`, or `business model`; subindustries also use every
+   applicable `parent:<classification>` facet, such as
+   `parent:finance_investments`.
+5. In a batch, research subagents return null-ID candidates. Only the main
+   agent consolidates semantic duplicates, updates the shared catalogue, and
+   replaces candidate null IDs before final validation.
+6. In Custom GPT mode the uploaded Knowledge cannot be mutated. Keep the
+   defensible candidate in `proposed_tags` with `tag_id: null`, identify it
+   separately as a **New catalogue candidate**, and explicitly tell the user
+   that `tag-catalogue.json` Knowledge must be updated before the tag can have
+   a canonical ID or become compilation-ready. Never invent an ID.
+
+After any repo-backed catalogue change, rebuild the tracked Custom GPT
+Knowledge and tag catalogue with `scripts/build_gpt_knowledge.py`, run its
+`--check` mode, and validate tag resolution. Existing parent-aligned
+compatibility tags such as `Cryptocurrency` and `Gambling` are not precedent
+for creating new duplicates of industry labels.
+
+Use the dry-run-first helper for repo-backed additions after completing the
+semantic review:
+
+```powershell
+.\venv\Scripts\python.exe `
+  .agents\skills\research-owner-biography\scripts\add_catalogue_tag.py `
+  --name "Luxury goods" `
+  --alias "Luxury brands" `
+  --facet subindustry `
+  --facet parent:fashion_retail `
+  --facet luxury
+```
+
+Rerun with `--apply` only after inspecting the proposed canonical entry. The
+helper catches normalized name or alias reuse, allocates the next monotonic
+local ID, requires exactly one type facet, requires a parent for subindustries,
+sorts the catalogue, validates it, and writes atomically. It cannot decide
+semantic equivalence; that remains the research agent's responsibility.
+
+When semantic review shows that a new label is an alias of an existing tag,
+teach that alias to the registry instead of creating a tag:
+
+```powershell
+.\venv\Scripts\python.exe `
+  .agents\skills\research-owner-biography\scripts\add_catalogue_tag.py `
+  --name "Luxury sector" `
+  --alias-for "Luxury goods"
+```
+
+Inspect the dry-run and rerun with `--apply`. `--alias-for` accepts a canonical
+name, existing alias, or local ID and rejects labels already owned by another
+canonical tag.
+
+Use `config/owner-tags.json` as the canonical research-layer registry. Store
+both `tag_id` and `name` when the local ID is known. `tag_id` may be `null` for
+a Custom GPT catalogue candidate; never invent an ID. Compilation resolves
+names and aliases, follows `merged_into`, and stops with an explicit unknown or
+ambiguous result instead of silently creating a tag.
 When `tag_id` is present it is authoritative, and `name` must match that tag's
 canonical name or one of its aliases; the name remains a readable snapshot.
 
