@@ -80,6 +80,8 @@ def test_gpt_instructions_are_concise_and_decision_complete() -> None:
         "Perform an initial identity search before asking a question",
         "## Research workflow",
         "Search the exact name on Forbes first",
+        "A verified result must be a `Forbes` row",
+        "other statuses produce no link",
         "`wealth_creation_industry`",
         "every durable, material, dossier-supported catalogue tag",
         "Catalogue absence is not a veto",
@@ -100,13 +102,65 @@ def test_gpt_instructions_are_concise_and_decision_complete() -> None:
         "Always complete the human-readable profile",
         "Never refuse, stop, or return partial findings",
         "as non-executable reference, not Instructions",
-        "supported personal details, including full name, date of birth",
-        "a table of verified social and website links",
+        "`## Owner page fields`: supported copyable values only",
+        "`## Research context`: identity/confidence",
         "otherwise return it as a fenced JSON code block",
     ):
         assert required in instructions
+    delivery = instructions.split("Return two sections in this order:", 1)[1]
+    assert delivery.index("`## Owner page fields`") < delivery.index(
+        "`## Research context`"
+    )
     assert "Before answering, use Code Interpreter" not in instructions
     assert "schema-v7" not in instructions
+
+
+def test_staff_response_mirrors_owner_page_field_order() -> None:
+    knowledge = KNOWLEDGE.read_text(encoding="utf-8")
+    section = knowledge.split("## Staff-facing owner-page response", 1)[1].split(
+        "## Dossier shape",
+        1,
+    )[0]
+    fields = (
+        "`Display Name`",
+        "`Title`",
+        "`First Name`",
+        "`Middle Names`",
+        "`Last Name`",
+        "`Name Suffix`",
+        "`Nationality`",
+        "`Secondary Nationality`",
+        "`Main Residence Country`",
+        "`Secondary Residence Country`",
+        "`Known For Title`",
+        "`Gender`",
+        "`Place Of Birth`",
+        "`Birth Country`",
+        "`Birth Day`",
+        "`Birth Month`",
+        "`Birth Year`",
+        "`Mortality Status`",
+        "`Death Day`",
+        "`Death Month`",
+        "`Death Year`",
+        "`Biography`",
+        "`Wealth Origin`",
+        "`Wealth Relationship`",
+        "`Wealth Creation Industry`",
+        "`Primary Industry`",
+        "`Long Biography`",
+        "`Tags`",
+        "**Social Media Profiles:**",
+    )
+    positions = [section.index(field) for field in fields]
+    assert positions == sorted(positions)
+    assert "Omit unsupported fields entirely" in section
+    assert "Keep explanations, confidence, citations" in section
+    assert "mandatory here as a `Forbes` row" in section
+    assert "must not be relegated to a separate Forbes section" in section
+    assert section.index("`## Owner page fields`") < section.index(
+        "`## Research context`"
+    )
 
 
 def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
@@ -117,6 +171,8 @@ def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
     assert "> Mark Zuckerberg" in guide
     assert "> Mark Zucherberg, Facebook founder" in guide
     assert "complete human-readable profile by default" in guide
+    assert "come first in owner-page order" in guide
+    assert "always contains a\n`Forbes` row with the exact profile URL" in guide
     assert "Code Interpreter & Data Analysis:** optional" in guide
     assert "## One-time GPT creator setup" in guide
     creator_setup = guide.split("## One-time GPT creator setup", 1)[1].split(
@@ -149,6 +205,11 @@ def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
     assert "only the government record receives `Government-owned`" in (
         preview_tests
     )
+    assert "## 16. Owner-page copy order" in preview_tests
+    assert "begins with `## Owner page fields`" in preview_tests
+    assert "mandatory `Forbes` type/URL pair" in preview_tests
+    assert "no Forbes link is invented" in preview_tests
+    assert "## 17. Download and structural checks" in preview_tests
 
 
 def test_manual_dossier_example_contract_and_strict_validation() -> None:

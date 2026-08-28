@@ -16,7 +16,10 @@ or add optional identity context:
 > Mark Zucherberg, Facebook founder
 
 The GPT corrects an obvious spelling variation when the context is
-unambiguous, resolves the identity, researches public sources, and returns:
+unambiguous, resolves the identity, researches public sources, and returns an
+`Owner page fields` block first. It contains only supported copyable values in
+the site's order: Details, Birth, Biography, Wealth, Long Biography, Tags, and
+Social Media Profiles. A separate `Research context` section then returns:
 
 - supported personal details such as date of birth, birthplace, nationality,
   residence, gender, mortality status, and a concise known-for title;
@@ -28,6 +31,11 @@ unambiguous, resolves the identity, researches public sources, and returns:
 - confidence, sources, unresolved questions, and limitations; and
 - suggested canonical tags, including the supported long tail; and
 - optional schema-v8-compatible JSON when explicitly requested.
+
+When the Forbes check is `verified`, Social Media Profiles always contains a
+`Forbes` row with the exact profile URL. The later context still states the
+verification result. `not_found`, `ambiguous`, and `unavailable` produce a
+context status but no invented social link.
 
 Only genuinely ambiguous names require a focused follow-up question.
 Ordinary responses never discuss repository scripts, schema resources, or
@@ -105,11 +113,13 @@ The GPT searches first and proceeds automatically when one identity is strongly
 supported. It asks for company, role, geography, family context, or another
 disambiguator only when multiple plausible people remain.
 
-The GPT returns the complete human-readable profile by default. The user does
-not need to ask separately for personal details, social links, classifications,
-or biographies. It creates a schema-v8-compatible manual dossier only when the
-user explicitly asks for JSON or a dossier. That optional dossier is not
-owner-input-validated or compilation-ready.
+The GPT returns the complete human-readable profile by default. Copyable values
+come first in owner-page order; confidence, reasoning, verification context,
+uncertainties, and sources come afterwards. The user does not need to ask
+separately for personal details, social links, classifications, or biographies.
+It creates a schema-v8-compatible manual dossier only when the user explicitly
+asks for JSON or a dossier. That optional dossier is not owner-input-validated
+or compilation-ready.
 
 The uploaded catalogue is not a closed whitelist. When research supports a
 distinct tag that passes the taxonomy rule but is absent from Knowledge, the

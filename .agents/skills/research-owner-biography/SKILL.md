@@ -50,6 +50,9 @@ statistics.
 - For one-off name-and-context research in a Custom GPT, use the tracked
   distribution documented in [gpt/README.md](gpt/README.md). The canonical
   skill and reference files remain its source of truth.
+- For a staff-facing human response, use the owner-page delivery sequence in
+  `references/research-contract.md`: copyable supported values first, then
+  research context and sources. Do not interleave evidence with entry fields.
 
 # Workflow
 
@@ -71,7 +74,9 @@ statistics.
    the existing biography fields plus an `editorial_note`; unresolved
    placeholders use only the note and never receive biography proposals.
 3. Search for an exact Forbes profile first. Record `verified`, `not_found`,
-   `ambiguous`, or `unavailable`; never silently omit the check.
+   `ambiguous`, or `unavailable`; never silently omit the check. When verified,
+   retain the exact URL and include it as a `Forbes` social-profile row in any
+   staff-facing response. Do not leave it only in Forbes-check metadata.
 4. Research the origin story and current underlying private assets using
    first-party sources, Forbes, reputable business reporting, and well-cited
    reference sources. Populate `wealth_creation_industry`,
@@ -150,8 +155,9 @@ statistics.
     transition, final sentence, and short-long pair findings. Revise semantic
     repetition within each owner and across owners even when the wording
     differs, and rerun the corpus auditor until strict mode passes.
-16. Return the dossier path, resolved tag set, both biographies or unresolved editorial note,
-    strongest evidence, confidence summary, unresolved questions, and explicit
+16. For a staff-facing response, return the supported owner-page values first
+    in the documented page order, followed by research context. Also return the
+    dossier path, confidence summary, unresolved questions, and an explicit
     statement that nothing was applied.
 
 For a batch of four or more owners, use subagents when available: give each
@@ -180,6 +186,8 @@ the migration as complete.
 - Use public sources only and minimise collection of irrelevant personal data.
 - Never invent facts, social handles, Forbes profiles, source URLs, or
   confidence.
+- A verified Forbes profile must appear as a `Forbes` link in the staff-facing
+  Social Media Profiles table. Non-verified statuses must not produce a link.
 - Treat Wikipedia as orientation and a route to sources, not sole support for a
   disputed, sensitive, or wealth-origin claim.
 - Avoid people-search sites, scraped biography farms, anonymous claims, and
@@ -264,7 +272,8 @@ the migration as complete.
 - Confirm every material claim in both biographies maps to one or more source
   IDs.
 - Confirm the dossier inventory matches the exact source owner record.
-- Confirm Forbes was explicitly checked.
+- Confirm Forbes was explicitly checked and that a verified result appears as
+  a `Forbes` type/URL row in the staff-facing Social Media Profiles table.
 - Confirm all four wealth classifications are populated, use exact
   classification-to-label mappings, and are supported by source IDs.
 - Confirm self-made starting-position subtypes follow positive evidence:
@@ -363,3 +372,8 @@ separately from owner inputs. It contains:
   candidates with an explicit tag-catalogue Knowledge-update notice;
 - per-item confidence and source IDs;
 - source ledger, uncertainties, and completed research state.
+
+When a human-readable staff profile is requested, present only supported,
+copyable values first in the documented owner-page field order. Put identity
+confidence, reasoning, evidence, uncertainties, and sources afterwards under a
+separate research-context heading.

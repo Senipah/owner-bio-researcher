@@ -48,6 +48,14 @@ Record:
 - `ambiguous`: a profile exists but identity is not secure;
 - `unavailable`: access or search failure prevented a reliable check.
 
+For `verified`, retain the exact profile URL and always include it as a
+`Forbes` type/URL entry in the staff-facing `Social Media Profiles` table. The
+verified URL must not exist only in the separate `forbes_profile` research
+object or a narrative Forbes-check section. In a repo-backed dossier, do not
+duplicate an identical existing social link; propose it when the owner record
+lacks it. For `not_found`, `ambiguous`, or `unavailable`, add no Forbes link and
+report the status only in `Research context`.
+
 Forbes is a priority source for both industry classifications,
 `source of wealth`, and
 self-made/inherited classification, but corroborate the underlying history
@@ -259,18 +267,21 @@ Tier 2 source establishes the relationship.
 
 Common proposal fields include:
 
-- `wealth_creation_industry`
-- `primary_industry`
-- `wealth_origin`
-- `wealth_relationship`
-- `known_for_title`
+- `display_name`
+- `title`, `first_name`, `middle_names`, `last_name`, and `name_suffix`
 - `nationality` and `secondary_nationality`
 - `main_residence_country` and `secondary_residence_country`
+- `known_for_title`
+- `gender`
 - `place_of_birth` and `birth_country`
 - `birth_day`, `birth_month`, and `birth_year`
-- `gender`
 - `mortality_status`
+- `death_day`, `death_month`, and `death_year` when applicable
 - `biography`
+- `wealth_origin`
+- `wealth_relationship`
+- `wealth_creation_industry`
+- `primary_industry`
 - `long_biography`
 
 Propose only fields that are missing or demonstrably wrong in the supplied
@@ -434,6 +445,50 @@ casefolded, punctuation-insensitive form; compilation also rejects different
 aliases that resolve to the same canonical tag. An empty list is valid only
 when no supported tag meets the applicability test. Unresolved placeholders
 must use an empty list.
+
+## Staff-facing owner-page response
+
+The default human-readable response is an entry aid for editorial staff. Put
+the copyable owner values first under `## Owner page fields`, using the site's
+visible labels and this page order:
+
+1. **Details:** `Display Name`, `Title`, `First Name`, `Middle Names`,
+   `Last Name`, `Name Suffix`, `Nationality`, `Secondary Nationality`,
+   `Main Residence Country`, `Secondary Residence Country`,
+   `Known For Title`.
+2. **Birth:** `Gender`, `Place Of Birth`, `Birth Country`, `Birth Day`,
+   `Birth Month`, `Birth Year`, `Mortality Status`, `Death Day`, `Death Month`,
+   `Death Year`.
+3. **Descriptions & Notes:** `Biography`.
+4. **HNWI Profile — Wealth:** `Wealth Origin`, `Wealth Relationship`,
+   `Wealth Creation Industry`, `Primary Industry`.
+5. **HNWI Profile — Long Biography:** `Long Biography`.
+6. **Aliases & Tags:** `Tags`.
+7. **Social Media Profiles:** verified profile type and URL pairs. A verified
+   Forbes result is mandatory here as a `Forbes` row with its exact profile
+   URL; it must not be relegated to a separate Forbes section.
+
+Within each section, include only supported values and preserve the listed
+relative order. Omit unsupported fields entirely; do not insert speculative
+values, `Unknown`, dashes, or copyable placeholders. Render scalar values as
+`**Visible Field Label:** value`. Put biography prose beneath its field label,
+list canonical tags one per line, and use a two-column `Type` / `URL` table for
+social profiles. Use exact visible dropdown labels for the four wealth fields.
+Keep explanations, confidence, citations, source IDs, verification notes, and
+research narration out of this copy block. New null-ID catalogue candidates do
+not yet belong in its canonical `Tags` list.
+
+Do not reproduce fields the research workflow does not populate, including
+`Unknown Name`, sort-name fields, internal notes, calculated ages, net-worth
+fields, addresses, vessel relationships, employment relationships, and system
+metadata.
+
+After the copy block, put supporting material under `## Research context`:
+identity resolution and confidence, the Forbes check, wealth and tag reasoning
+with confidence, strongest evidence, new catalogue candidates and their
+Knowledge-update notice, other verified candidate facts, uncertainties,
+limitations, and the linked source list. This secondary section may explain
+why a field was omitted, but it must never interrupt the owner-page sequence.
 
 ## Dossier shape
 

@@ -197,7 +197,27 @@ government/state-owned institutional entity may also qualify, but public
 office, contracting, employment, sovereign-asset stewardship and royal status
 alone must not. `Government contracting` remains a separate business-model tag.
 
-## 16. Download and structural checks
+## 16. Owner-page copy order
+
+Prompt:
+
+> Research a well-documented owner. Format the result so an editor can copy
+> supported values into the owner edit page.
+
+Pass when the response begins with `## Owner page fields` and presents only
+supported copyable values in this relative order: Details, Birth, Biography,
+Wealth Origin, Wealth Relationship, Wealth Creation Industry, Primary Industry,
+Long Biography, canonical Tags, then Social Media Profiles. Unsupported fields
+are omitted rather than filled with placeholders. Confidence, reasoning,
+verification notes, uncertainties and citations do not interrupt that block.
+They appear afterwards under `## Research context`, with the source links at
+the bottom. A verified Forbes URL appears in Social Media Profiles as a
+mandatory `Forbes` type/URL pair as well as being discussed in the later
+verification context; it must not appear only in a separate Forbes Profile
+section. When the check is `not_found`, `ambiguous`, or `unavailable`, the
+status appears only in Research context and no Forbes link is invented.
+
+## 17. Download and structural checks
 
 Prompt:
 
