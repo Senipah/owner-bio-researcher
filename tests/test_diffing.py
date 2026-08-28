@@ -2,7 +2,8 @@ from __future__ import annotations
 
 from copy import deepcopy
 
-from src.diffing import build_owner_change_plan
+from src.diffing import build_owner_change_plan, build_tag_change_plan
+from src.tags import load_tag_catalogue
 
 
 def field(value: str, kind: str = "text") -> dict[str, str]:
@@ -176,4 +177,76 @@ def test_rich_text_entities_compare_as_the_same_content() -> None:
 
     plan = build_owner_change_plan(owner)
 
+    assert not plan["has_changes"]
+
+
+def test_tag_plan_reports_additions_and_guarded_removals() -> None:
+    plan = build_tag_change_plan(
+        person_id=2824,
+        desired_names=["Microsoft", "Steam", "Valve", "Video games"],
+        live_tags=[
+            {"association_id": "80", "name": "Tech Entrepreneur"},
+            {"association_id": "84", "name": "Microsoft"},
+            {"association_id": "914", "name": "Steam"},
+            {"association_id": "915", "name": "Valve"},
+        ],
+        catalogue=load_tag_catalogue(),
+    )
+
+    assert plan["additions"] == [{"id": "tag_0193", "name": "Video games"}]
+    assert plan["removals"] == [
+        {
+            "association_id": "80",
+            "name": "Tech Entrepreneur",
+            "reason": "not_in_desired_dossier_tags",
+        }
+    ]
+    assert not plan["conflicts"]
+
+
+def test_tag_plan_replaces_live_alias_with_canonical_name() -> None:
+    plan = build_tag_change_plan(
+        person_id=1,
+        desired_names=["Gambling"],
+        live_tags=[{"association_id": "12", "name": "Gaming"}],
+        catalogue=load_tag_catalogue(),
+    )
+
+    assert plan["additions"] == [{"id": "tag_0205", "name": "Gambling"}]
+    assert plan["removals"][0]["reason"] == "replace_alias_with_canonical"
+    assert plan["alias_replacements"] == [
+        {
+            "from": {"association_id": "12", "name": "Gaming"},
+            "to": {"id": "tag_0205", "name": "Gambling"},
+        }
+    ]
+
+
+def test_tag_plan_is_order_independent_when_exact() -> None:
+    plan = build_tag_change_plan(
+        person_id=1,
+        desired_names=["Valve", "Steam"],
+        live_tags=[
+            {"association_id": "2", "name": "Steam"},
+            {"association_id": "1", "name": "Valve"},
+        ],
+        catalogue=load_tag_catalogue(),
+    )
+
+    assert plan["is_exact"]
+    assert not plan["has_changes"]
+
+
+def test_tag_plan_conflicts_on_duplicate_normalized_live_tags() -> None:
+    plan = build_tag_change_plan(
+        person_id=1,
+        desired_names=["Oil & gas"],
+        live_tags=[
+            {"association_id": "1", "name": "Oil & gas"},
+            {"association_id": "2", "name": "Oil and gas"},
+        ],
+        catalogue=load_tag_catalogue(),
+    )
+
+    assert plan["conflicts"]
     assert not plan["has_changes"]

@@ -68,6 +68,12 @@ stored under `ai_research.tags`; compilation does not map or write website tag
 IDs. Unknown, ambiguous, mismatched, or canonically duplicated tags fail
 compilation explicitly.
 
+`update_owner_tags.py` is the separate live reconciliation path for completed
+schema-v8 dossiers. It compares canonical names because catalogue IDs are local
+research identifiers and website row IDs identify owner-tag associations. Keep
+pure tag planning in `src/diffing.py`, HTML parsing in `src/parsers.py`, Selenium
+mechanics in `src/browser_update.py`, and login/auditing in the entrypoint.
+
 For an LOA-prioritised research batch, use a vessel-enriched input with
 `--selection largest-loa`. This selector must include only fully ranked owners,
 order them by metric largest-current-vessel LOA, and apply `--limit` as an
@@ -149,12 +155,20 @@ AI review or a live system update occurred.
 - `compile_owner_research.py` must never overwrite its owner input and must not
   mark pending, rejected, or unusable dossiers AI-enriched.
 - `update_owners.py` remains dry-run unless `--apply` is present.
+- `update_owner_tags.py` remains dry-run unless `--apply` is present. Applying
+  additions must not imply authority to delete; removals additionally require
+  `--replace-tags`.
 - Keep clearing blanks behind `--allow-clear`.
 - Keep removal of absent socials behind `--replace-socials`.
 - Re-read live state before every planned save. A live-versus-baseline
   difference is a conflict, not authorization to overwrite.
 - Re-export after saving and require a clean verification plan before setting
   `workflow.updated_in_system=true`.
+- Tag Add and Delete controls write immediately rather than at the overlay's
+  Done action. Re-read the overlay before the first mutation, add canonical
+  replacements before deleting old names, checkpoint every successful CRUD
+  action, and re-fetch the owner page for verification. Tag-only updates must
+  not set `workflow.updated_in_system`.
 - Keep inputs and partial successes recoverable through atomic checkpoints.
 - Run the live reversible test only against a supplied, dedicated dummy person.
   If restoration is unconfirmed, preserve artifacts and report manual recovery
@@ -177,7 +191,7 @@ from memory.
 Check syntax and accidental whitespace errors:
 
 ```powershell
-.\venv\Scripts\python.exe -m compileall -q src export_owners.py mark_top_100_owners.py enrich_owners.py compile_owner_research.py update_owners.py test_dummy_account.py
+.\venv\Scripts\python.exe -m compileall -q src export_owners.py mark_top_100_owners.py enrich_owner_vessels.py enrich_owners.py compile_owner_research.py update_owners.py update_owner_tags.py test_dummy_account.py
 git diff --check
 ```
 

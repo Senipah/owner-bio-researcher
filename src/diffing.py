@@ -8,6 +8,7 @@ from copy import deepcopy
 from typing import Any
 
 from .constants import RICH_TEXT_DETAIL_FIELDS
+from .tags import TagCatalogue, TagResolutionError, normalize_tag_name
 
 
 def field_value(field: Any) -> Any:
@@ -202,4 +203,175 @@ def build_owner_change_plan(
             or social_replacements
             or social_removals
         ),
+    }
+
+
+def build_tag_change_plan(
+    *,
+    person_id: int,
+    desired_names: Collection[str],
+    live_tags: list[dict[str, Any]],
+    catalogue: TagCatalogue,
+) -> dict[str, Any]:
+    """Build a canonical, order-independent owner-tag reconciliation plan."""
+    desired_by_id = {}
+    desired_order: list[str] = []
+    conflicts: list[dict[str, Any]] = []
+    for index, name in enumerate(desired_names):
+        try:
+            canonical = catalogue.resolve(tag_id=None, name=str(name))
+        except TagResolutionError as exc:
+            conflicts.append(
+                {
+                    "section": "tags",
+                    "field": "desired",
+                    "index": index,
+                    "value": name,
+                    "reason": str(exc),
+                }
+            )
+            continue
+        if canonical.id in desired_by_id:
+            conflicts.append(
+                {
+                    "section": "tags",
+                    "field": "desired",
+                    "index": index,
+                    "value": name,
+                    "reason": (
+                        "duplicate desired canonical tag "
+                        f"{canonical.id} ({canonical.name})"
+                    ),
+                }
+            )
+            continue
+        desired_by_id[canonical.id] = canonical
+        desired_order.append(canonical.id)
+
+    normalized_live: dict[str, list[dict[str, str]]] = {}
+    association_ids: dict[str, int] = {}
+    clean_live: list[dict[str, str]] = []
+    for index, raw in enumerate(live_tags):
+        association_id = str(raw.get("association_id", "")).strip()
+        name = str(raw.get("name", "")).strip()
+        if not association_id or not name:
+            conflicts.append(
+                {
+                    "section": "tags",
+                    "field": "live",
+                    "index": index,
+                    "value": deepcopy(raw),
+                    "reason": "live tag requires association_id and name",
+                }
+            )
+            continue
+        if association_id in association_ids:
+            conflicts.append(
+                {
+                    "section": "tags",
+                    "field": "live",
+                    "index": index,
+                    "value": deepcopy(raw),
+                    "reason": (
+                        "duplicate live association ID; first seen at index "
+                        f"{association_ids[association_id]}"
+                    ),
+                }
+            )
+            continue
+        association_ids[association_id] = index
+        item = {"association_id": association_id, "name": name}
+        clean_live.append(item)
+        normalized_live.setdefault(normalize_tag_name(name), []).append(item)
+
+    for normalized, items in normalized_live.items():
+        if len(items) > 1:
+            conflicts.append(
+                {
+                    "section": "tags",
+                    "field": "live",
+                    "value": deepcopy(items),
+                    "reason": f"duplicate normalized live tag {normalized!r}",
+                }
+            )
+
+    desired_tags = [
+        {"id": desired_by_id[tag_id].id, "name": desired_by_id[tag_id].name}
+        for tag_id in desired_order
+    ]
+    if conflicts:
+        return {
+            "person_id": person_id,
+            "desired_tags": desired_tags,
+            "live_tags": clean_live,
+            "kept": [],
+            "additions": [],
+            "removals": [],
+            "alias_replacements": [],
+            "conflicts": conflicts,
+            "has_changes": False,
+            "is_exact": False,
+        }
+
+    desired_by_normalized = {
+        normalize_tag_name(tag.name): tag for tag in desired_by_id.values()
+    }
+    kept: list[dict[str, str]] = []
+    kept_ids: set[str] = set()
+    removals: list[dict[str, str]] = []
+    alias_replacements: list[dict[str, Any]] = []
+
+    for live in clean_live:
+        normalized = normalize_tag_name(live["name"])
+        exact = desired_by_normalized.get(normalized)
+        if exact is not None:
+            kept_ids.add(exact.id)
+            kept.append(deepcopy(live))
+            continue
+
+        try:
+            canonical = catalogue.resolve(tag_id=None, name=live["name"])
+        except TagResolutionError:
+            canonical = None
+        if canonical is not None and canonical.id in desired_by_id:
+            replacement = {
+                "from": deepcopy(live),
+                "to": {
+                    "id": canonical.id,
+                    "name": canonical.name,
+                },
+            }
+            alias_replacements.append(replacement)
+            removals.append(
+                {
+                    **deepcopy(live),
+                    "reason": "replace_alias_with_canonical",
+                }
+            )
+        else:
+            removals.append(
+                {**deepcopy(live), "reason": "not_in_desired_dossier_tags"}
+            )
+
+    additions = [
+        {"id": tag.id, "name": tag.name}
+        for tag_id in desired_order
+        if tag_id not in kept_ids
+        for tag in [desired_by_id[tag_id]]
+    ]
+    removals.sort(key=lambda item: (item["name"].casefold(), item["association_id"]))
+    alias_replacements.sort(
+        key=lambda item: item["from"]["name"].casefold()
+    )
+    return {
+        "person_id": person_id,
+        "desired_tags": desired_tags,
+        "live_tags": clean_live,
+        "kept": kept,
+        "additions": additions,
+        "removals": removals,
+        "alias_replacements": alias_replacements,
+        "conflicts": [],
+        "has_changes": bool(additions or removals),
+        "is_exact": not additions and not removals,
     }

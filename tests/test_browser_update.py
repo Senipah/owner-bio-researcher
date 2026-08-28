@@ -88,3 +88,104 @@ def test_detached_element_accepts_chrome_element_loss_errors(
 
 def test_attached_element_is_not_detached() -> None:
     assert not OwnerBrowserUpdater._is_detached(_ElementState())
+
+
+def test_tag_state_signature_uses_association_id_and_normalized_name() -> None:
+    left = [
+        {"association_id": "2", "name": "Oil and gas"},
+        {"association_id": "1", "name": "Luxury goods"},
+    ]
+    right = list(reversed([
+        {"association_id": "1", "name": "Luxury goods"},
+        {"association_id": "2", "name": "Oil & gas"},
+    ]))
+
+    assert OwnerBrowserUpdater._tag_state_signature(left) == (
+        OwnerBrowserUpdater._tag_state_signature(right)
+    )
+
+
+class _SwitchTo:
+    def __init__(self) -> None:
+        self.default_count = 0
+
+    def default_content(self) -> None:
+        self.default_count += 1
+
+
+class _TagDriver:
+    def __init__(self) -> None:
+        self.switch_to = _SwitchTo()
+
+
+def test_update_tags_stops_if_overlay_state_changed() -> None:
+    updater = object.__new__(OwnerBrowserUpdater)
+    updater.driver = _TagDriver()
+    updater._open_overlay = lambda *_args, **_kwargs: object()
+    updater._read_tag_rows = lambda: [
+        {"association_id": "2", "name": "Changed"}
+    ]
+
+    with pytest.raises(RuntimeError, match="changed between planning"):
+        updater.update_tags(
+            profile_url="https://example.test/owner/1",
+            expected_live=[{"association_id": "1", "name": "Original"}],
+            additions=[{"name": "Valve"}],
+            removals=[],
+        )
+
+    assert updater.driver.switch_to.default_count == 1
+
+
+class _Done:
+    def click(self) -> None:
+        return None
+
+
+class _ImmediateWait:
+    def until(self, _condition):
+        return _Done()
+
+
+def test_update_tags_adds_before_removing_and_reports_each_operation() -> None:
+    updater = object.__new__(OwnerBrowserUpdater)
+    updater.driver = _TagDriver()
+    updater.wait = _ImmediateWait()
+    updater._open_overlay = lambda *_args, **_kwargs: object()
+    updater._read_tag_rows = lambda: [
+        {"association_id": "1", "name": "Old tag"}
+    ]
+    sequence: list[tuple[str, str]] = []
+    updater._add_tag = lambda name: (
+        sequence.append(("add", name))
+        or {"association_id": "2", "name": name}
+    )
+    updater._delete_tag = lambda removal: (
+        sequence.append(("remove", removal["name"]))
+        or {
+            "association_id": removal["association_id"],
+            "name": removal["name"],
+        }
+    )
+    operations: list[dict] = []
+
+    updater.update_tags(
+        profile_url="https://example.test/owner/1",
+        expected_live=[{"association_id": "1", "name": "Old tag"}],
+        additions=[{"name": "New tag"}],
+        removals=[
+            {
+                "association_id": "1",
+                "name": "Old tag",
+                "reason": "not_in_desired_dossier_tags",
+            }
+        ],
+        on_operation=operations.append,
+    )
+
+    assert sequence == [("add", "New tag"), ("remove", "Old tag")]
+    assert [operation["action"] for operation in operations] == [
+        "add",
+        "remove",
+    ]
+    assert updater.driver.switch_to.default_count == 1

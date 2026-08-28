@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from collections.abc import Callable
 from typing import Any
 
 from selenium.common.exceptions import (
@@ -13,6 +14,7 @@ from selenium.webdriver.support.ui import Select, WebDriverWait
 
 from .constants import DEFAULT_TIMEOUT_SECONDS, RICH_TEXT_DETAIL_FIELDS
 from .diffing import field_value, normalize_rich_text_html
+from .tags import normalize_tag_name
 
 
 class BrowserUpdateError(RuntimeError):
@@ -263,6 +265,186 @@ class OwnerBrowserUpdater:
             self.driver.execute_script("arguments[0].click();", save)
         try:
             self.wait.until(lambda _driver: self._is_detached(form))
+        finally:
+            self.driver.switch_to.default_content()
+
+    def _tag_rows(self):
+        return [
+            row
+            for row in self.driver.find_elements(
+                By.CSS_SELECTOR, "#jsTagRowContainer .jsTagRow"
+            )
+            if row.get_attribute("id") != "jsTagRowTemplate"
+            and row.is_displayed()
+        ]
+
+    def _read_tag_rows(self) -> list[dict[str, str]]:
+        result: list[dict[str, str]] = []
+        for row in self._tag_rows():
+            association_id = str(row.get_attribute("data-id") or "").strip()
+            name = row.find_element(By.CSS_SELECTOR, ".jsTagText").text.strip()
+            if not association_id or not name:
+                raise BrowserUpdateError(
+                    "A visible tag row had no association ID or name"
+                )
+            result.append({"association_id": association_id, "name": name})
+        return result
+
+    @staticmethod
+    def _tag_state_signature(
+        tags: list[dict[str, Any]],
+    ) -> list[tuple[str, str]]:
+        return sorted(
+            (
+                str(item.get("association_id", "")),
+                normalize_tag_name(str(item.get("name", ""))),
+            )
+            for item in tags
+        )
+
+    def _add_tag(self, name: str) -> dict[str, str]:
+        normalized = normalize_tag_name(name)
+        if any(
+            normalize_tag_name(item["name"]) == normalized
+            for item in self._read_tag_rows()
+        ):
+            raise BrowserUpdateError(f"Tag to add is already present: {name}")
+
+        tag_input = self.wait.until(
+            EC.visibility_of_element_located((By.ID, "tag"))
+        )
+        tag_input.clear()
+        tag_input.send_keys(name)
+        add_button = self.wait.until(
+            EC.element_to_be_clickable((By.CSS_SELECTOR, ".jsAddTag"))
+        )
+        try:
+            add_button.click()
+        except Exception:
+            self.driver.execute_script("arguments[0].click();", add_button)
+
+        def added(_driver):
+            return next(
+                (
+                    item
+                    for item in self._read_tag_rows()
+                    if normalize_tag_name(item["name"]) == normalized
+                ),
+                False,
+            )
+
+        try:
+            result = self.wait.until(added)
+        except TimeoutException as exc:
+            raise BrowserUpdateError(f"Tag was not added: {name}") from exc
+        return result
+
+    def _delete_tag(self, removal: dict[str, Any]) -> dict[str, str]:
+        association_id = str(removal.get("association_id", ""))
+        expected_name = str(removal.get("name", ""))
+        row = next(
+            (
+                candidate
+                for candidate in self._tag_rows()
+                if str(candidate.get_attribute("data-id") or "")
+                == association_id
+            ),
+            None,
+        )
+        if row is None:
+            raise BrowserUpdateError(
+                f"Tag association to remove was not present: {association_id}"
+            )
+        actual_name = row.find_element(By.CSS_SELECTOR, ".jsTagText").text.strip()
+        if normalize_tag_name(actual_name) != normalize_tag_name(expected_name):
+            raise BrowserUpdateError(
+                "Tag association changed before removal: "
+                f"expected {expected_name!r}, found {actual_name!r}"
+            )
+        delete_link = row.find_element(By.CSS_SELECTOR, ".jsDeleteTag")
+        try:
+            delete_link.click()
+        except Exception:
+            self.driver.execute_script("arguments[0].click();", delete_link)
+        remove_button = self.wait.until(
+            EC.element_to_be_clickable(
+                (
+                    By.XPATH,
+                    (
+                        "//*[@id='jsDialogConfirm']/ancestor::div"
+                        "[contains(@class,'ui-dialog')]"
+                        "//button[normalize-space()='Remove']"
+                    ),
+                )
+            )
+        )
+        try:
+            remove_button.click()
+        except Exception:
+            self.driver.execute_script("arguments[0].click();", remove_button)
+        try:
+            self.wait.until(lambda _driver: self._is_detached(row))
+        except TimeoutException as exc:
+            raise BrowserUpdateError(
+                f"Tag was not removed: {expected_name}"
+            ) from exc
+        return {"association_id": association_id, "name": actual_name}
+
+    def update_tags(
+        self,
+        *,
+        profile_url: str,
+        expected_live: list[dict[str, Any]],
+        additions: list[dict[str, Any]],
+        removals: list[dict[str, Any]],
+        on_operation: Callable[[dict[str, Any]], None] | None = None,
+    ) -> None:
+        root = self._open_overlay(
+            profile_url,
+            (
+                "a.editButton.jsOverlayIframe"
+                "[href*='/base-entity/edit/tags.htm']"
+            ),
+            "#jsTagRowContainer",
+        )
+        try:
+            opened_live = self._read_tag_rows()
+            if self._tag_state_signature(opened_live) != self._tag_state_signature(
+                expected_live
+            ):
+                raise BrowserUpdateError(
+                    "Live tags changed between planning and opening the edit overlay"
+                )
+
+            for addition in additions:
+                added = self._add_tag(str(addition["name"]))
+                if on_operation is not None:
+                    on_operation(
+                        {
+                            "action": "add",
+                            "requested_name": str(addition["name"]),
+                            "live": added,
+                        }
+                    )
+            for removal in removals:
+                removed = self._delete_tag(removal)
+                if on_operation is not None:
+                    on_operation(
+                        {
+                            "action": "remove",
+                            "reason": removal.get("reason"),
+                            "live": removed,
+                        }
+                    )
+
+            done = self.wait.until(
+                EC.element_to_be_clickable((By.CSS_SELECTOR, "a.save"))
+            )
+            try:
+                done.click()
+            except Exception:
+                self.driver.execute_script("arguments[0].click();", done)
+            self.wait.until(lambda _driver: self._is_detached(root))
         finally:
             self.driver.switch_to.default_content()
 

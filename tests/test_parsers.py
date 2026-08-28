@@ -5,6 +5,7 @@ from pathlib import Path
 from src.parsers import (
     parse_details_form,
     parse_owner_list,
+    parse_owner_tags,
     parse_social_form,
 )
 
@@ -113,3 +114,32 @@ def test_social_fixture_extracts_profiles_and_full_type_lookup() -> None:
     assert profiles[0]["url"] == "https://www.instagram.com/aaronfid/"
     assert profiles[1]["type"] == "LinkedIn"
     assert profiles[0]["profile_key"].startswith("social_")
+
+
+def test_owner_tag_fixture_extracts_names_and_association_ids() -> None:
+    path = FIXTURES / "person-page-with-tags" / "Gabe Newell _ Owners Edit.html"
+
+    tags = parse_owner_tags(path.read_text(encoding="utf-8"))
+
+    assert tags == [
+        {"association_id": "80", "name": "Tech Entrepreneur"},
+        {"association_id": "84", "name": "Microsoft"},
+        {"association_id": "914", "name": "Steam"},
+        {"association_id": "915", "name": "Valve"},
+        {"association_id": "916", "name": "Video games"},
+    ]
+
+
+def test_owner_tag_overlay_ignores_hidden_row_template() -> None:
+    path = (
+        FIXTURES
+        / "person-page-with-tags"
+        / "tags-edit-page"
+        / "Gabe Newell _ Owners Edit_files"
+        / "tags.html"
+    )
+
+    tags = parse_owner_tags(path.read_text(encoding="utf-8"))
+
+    assert len(tags) == 5
+    assert all(tag["association_id"] for tag in tags)

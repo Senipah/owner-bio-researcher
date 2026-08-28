@@ -306,6 +306,45 @@ per-tag audit; `--apply` creates a byte-for-byte v7 backup before atomic writes:
   --apply
 ```
 
+After the schema-v8 backfill has been reviewed, reconcile dossier tags with the
+live owner pages using the standalone tag updater. Catalogue IDs are local
+research identifiers, not website IDs, so the updater compares canonical tag
+names and records the live association ID used for any deletion. The default is
+a read-only dry-run:
+
+```powershell
+.\venv\Scripts\python.exe .\update_owner_tags.py `
+  --dossier-dir output\owner-research\all-by-loa
+```
+
+Apply missing tags to a small reviewed selection first:
+
+```powershell
+.\venv\Scripts\python.exe .\update_owner_tags.py `
+  --dossier-dir output\owner-research\all-by-loa `
+  --person-id 2824 `
+  --apply
+```
+
+Live tags absent from the dossier are always shown in the audit but are not
+removed unless both `--apply` and `--replace-tags` are supplied:
+
+```powershell
+.\venv\Scripts\python.exe .\update_owner_tags.py `
+  --dossier-dir output\owner-research\all-by-loa `
+  --person-id 2824 `
+  --apply `
+  --replace-tags
+```
+
+Only usable `person` or `institution` dossiers with schema 8, usable research,
+and `review.status=complete` or `approved` are processed. Rejected, unresolved,
+or otherwise unusable dossiers are audited and skipped rather than interpreted
+as an instruction to erase live tags. Add and Delete actions save immediately
+inside the website overlay; the updater therefore adds before deleting,
+checkpoints every successful action, and re-fetches the owner page to verify the
+result. It does not edit dossiers or change `workflow.updated_in_system`.
+
 The compiler retains the brief, biographies or editorial note, record type,
 all four classifications, and resolved canonical ID/name tag pairs under each
 compiled owner's `ai_research` metadata

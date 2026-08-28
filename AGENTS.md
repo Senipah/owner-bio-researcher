@@ -30,6 +30,9 @@ owner records, and applying reviewed JSON changes through the website.
   compilation and HTML review reporting.
 - `update_owners.py`, `src/diffing.py`, `src/browser_update.py`: conflict-aware
   planning, browser writes, and post-save verification.
+- `update_owner_tags.py`, `src/owner_tags.py`, `src/parsers.py`,
+  `src/diffing.py`, `src/browser_update.py`: dossier-driven tag reconciliation,
+  guarded removals, immediate-write checkpoints, and post-write verification.
 - `src/auth.py`, `src/io_utils.py`, `src/constants.py`: shared authentication,
   atomic JSON persistence, URLs, and schema version.
 - `test_dummy_account.py`: reversible live write test for a dedicated dummy.
@@ -42,6 +45,8 @@ owner records, and applying reviewed JSON changes through the website.
 - Top-100 scanning must never submit or save a form.
 - Owner updates are dry-run by default and must re-read live values before
   saving.
+- Owner-tag updates are dry-run by default; additions require `--apply`, while
+  removals additionally require `--replace-tags`.
 - Blank clears and social removals require their separate explicit flags.
 - Never overwrite a live value that differs from the immutable export
   baseline; report a conflict instead.
@@ -57,7 +62,7 @@ owner records, and applying reviewed JSON changes through the website.
 
 ```powershell
 .\venv\Scripts\python.exe -m pytest -q
-.\venv\Scripts\python.exe -m compileall -q src export_owners.py mark_top_100_owners.py enrich_owner_vessels.py enrich_owners.py compile_owner_research.py update_owners.py test_dummy_account.py
+.\venv\Scripts\python.exe -m compileall -q src export_owners.py mark_top_100_owners.py enrich_owner_vessels.py enrich_owners.py compile_owner_research.py update_owners.py update_owner_tags.py test_dummy_account.py
 git diff --check
 ```
 

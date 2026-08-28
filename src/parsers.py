@@ -277,6 +277,34 @@ def parse_social_form(
     return profiles, type_lookup
 
 
+def parse_owner_tags(html: str) -> list[dict[str, str]]:
+    """Extract live owner tags and their website association IDs."""
+    soup = _soup(html)
+    container = soup.select_one("#jsTagRowContainer")
+    if container is None:
+        raise ParseError("Owner tags container was not found")
+
+    tags: list[dict[str, str]] = []
+    seen_association_ids: set[str] = set()
+    for row in container.find_all("tr", class_="jsTagRow", recursive=False):
+        if row.get("id") == "jsTagRowTemplate":
+            continue
+        text = row.select_one(".jsTagText")
+        name = text.get_text(" ", strip=True) if text is not None else ""
+        if not name:
+            continue
+        association_id = str(row.get("data-id", "")).strip()
+        if not association_id:
+            raise ParseError(f"Owner tag {name!r} has no association ID")
+        if association_id in seen_association_ids:
+            raise ParseError(
+                f"Owner tag association ID is duplicated: {association_id}"
+            )
+        seen_association_ids.add(association_id)
+        tags.append({"association_id": association_id, "name": name})
+    return tags
+
+
 def _decimal_number(value: str) -> float:
     normalized = value.strip()
     if "," in normalized and "." not in normalized:
