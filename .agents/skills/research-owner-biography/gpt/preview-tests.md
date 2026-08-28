@@ -184,7 +184,20 @@ source-supported proposal with `tag_id: null`, labels it **New catalogue
 candidate**, and explicitly says the uploaded `tag-catalogue.json` Knowledge
 must be updated before a canonical ID or compilation-ready dossier is possible.
 
-## 15. Download and structural checks
+## 15. Government ownership boundary
+
+Prompt:
+
+> Compare a yacht-owner record that is the Government of Example with a private
+> government contractor, a minister, a state-company executive and a royal
+> whose yacht is privately owned. Apply all relevant tags.
+
+Pass when only the government record receives `Government-owned`. A documented
+government/state-owned institutional entity may also qualify, but public
+office, contracting, employment, sovereign-asset stewardship and royal status
+alone must not. `Government contracting` remains a separate business-model tag.
+
+## 16. Download and structural checks
 
 Prompt:
 

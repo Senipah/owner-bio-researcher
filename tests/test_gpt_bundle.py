@@ -145,6 +145,10 @@ def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
     assert "casino gaming resolves to `Gambling`" in preview_tests
     assert "## 14. Open-world tag discovery" in preview_tests
     assert "uploaded `tag-catalogue.json` Knowledge" in preview_tests
+    assert "## 15. Government ownership boundary" in preview_tests
+    assert "only the government record receives `Government-owned`" in (
+        preview_tests
+    )
 
 
 def test_manual_dossier_example_contract_and_strict_validation() -> None:

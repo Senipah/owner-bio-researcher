@@ -48,7 +48,7 @@ def _proposal(name: str, tag_id: str | None = None) -> dict:
 def test_seed_catalogue_contains_complete_supported_long_tail() -> None:
     catalogue = load_tag_catalogue()
 
-    assert len(catalogue.tags_by_id) == 242
+    assert len(catalogue.tags_by_id) == 243
     assert sum(
         "business family" in tag.facets
         for tag in catalogue.tags_by_id.values()
@@ -77,6 +77,7 @@ def test_seed_catalogue_contains_complete_supported_long_tail() -> None:
         "Cosmetics & beauty",
         "Defence",
         "Gambling",
+        "Government-owned",
         "Insurance",
         "Jewellery & watches",
         "Luxury goods",
@@ -107,7 +108,7 @@ def test_seed_catalogue_contains_complete_supported_long_tail() -> None:
     }
 
 
-def test_new_subindustries_and_occupations_are_typed() -> None:
+def test_new_catalogue_entries_are_typed() -> None:
     catalogue = load_tag_catalogue()
     new_tags = [
         tag
@@ -116,15 +117,32 @@ def test_new_subindustries_and_occupations_are_typed() -> None:
     ]
 
     assert {int(tag.id.removeprefix("tag_")) for tag in new_tags} == set(
-        range(206, 249)
+        range(206, 250)
     )
     assert all(
         len(
-            {"business model", "occupation", "subindustry"} & set(tag.facets)
+            {
+                "business model",
+                "company",
+                "occupation",
+                "organisation",
+                "sport",
+                "status",
+                "subindustry",
+            }
+            & set(tag.facets)
         )
         == 1
         for tag in new_tags
+        if tag.name != "Professional athlete"
     )
+    professional_athlete = catalogue.resolve(
+        tag_id=None,
+        name="Professional athlete",
+    )
+    assert {"occupation", "sport"} <= set(professional_athlete.facets)
+    government_owned = catalogue.resolve(tag_id=None, name="Government-owned")
+    assert "status" in government_owned.facets
     assert all(
         any(facet.startswith("parent:") for facet in tag.facets)
         for tag in new_tags
@@ -136,6 +154,9 @@ def test_new_subindustries_and_occupations_are_typed() -> None:
     assert catalogue.resolve(tag_id=None, name="Actress").name == "Actor"
     assert catalogue.resolve(tag_id=None, name="Online betting").name == (
         "Online gambling & betting"
+    )
+    assert catalogue.resolve(tag_id=None, name="State-owned").name == (
+        "Government-owned"
     )
 
 

@@ -89,7 +89,9 @@ statistics.
    in a repo-backed run, or report a null-ID catalogue candidate in Custom GPT
    mode. Give every proposal a materiality summary, confidence of at least 70,
    and direct source IDs. Preserve the documented exclusions and the
-   gambling/video-game distinction.
+   gambling/video-game distinction. Use `Government-owned` only for a
+   documented public owner/entity, never merely for an official, contractor,
+   state-company employee, sovereign-asset chair, or private royal owner.
 6. Search all person-relevant link types supported by the input lookup,
    prioritising public personal Instagram, LinkedIn, and personal websites.
    A company website may be proposed under its distinct type when the owner
@@ -197,6 +199,9 @@ the migration as complete.
 - Resolve bare `Gaming` to `Gambling`, never `Video games`. Use `Video games`
   only when the evidence explicitly concerns video games, game development,
   game publishing, or an equivalent interactive-entertainment business.
+- Apply `Government-owned` only when the owner record is itself a government or
+  public body, or an institution is explicitly government/state-owned. Public
+  office, contracting, employment, stewardship, and royalty do not suffice.
 - Treat `research_status=complete` as completion of the research decision, not
   proof that every field is known. Preserve supported `Unknown`
   classifications, confidence limits, and uncertainties instead of emitting
@@ -274,6 +279,9 @@ the migration as complete.
   facets, and a rebuilt Custom GPT catalogue.
 - Confirm tag selection uses `Gambling` for casino, betting, bookmaking, and
   gambling-industry gaming, and does not use `Video games` for that evidence.
+- Confirm `Government-owned` is supported as an owner-entity status and is not
+  inferred from public office, government business, sovereign stewardship, or
+  royal status.
 - Confirm no generic philanthropy-domain or `Family office` tag is proposed;
   the separate `family_office_principal` wealth relationship remains valid.
 - Confirm inherited wealth follows its underlying industries, and royal or

@@ -2,10 +2,8 @@
 
 ## Purpose
 
-Research one owner from public sources. Always return a complete human-readable
-profile covering supported personal details, verified links, four wealth
-classifications, all applicable canonical tags, both biographies, confidence,
-sources, and uncertainties.
+Research one owner from public sources. Return details, verified links, four
+wealth classifications, tags, biographies, confidence, sources, and gaps.
 Use Knowledge for thresholds, mappings, biography rules, and calibrations.
 Treat scripts and repository workflow as non-executable reference, not Instructions.
 
@@ -43,7 +41,9 @@ Follow these stages in order:
 5. Generate every durable, material, dossier-supported catalogue tag or valid
    new tag meeting the Knowledge taxonomy rule. Resolve reasonable aliases.
    Catalogue absence is not a veto: use a null ID, label it a **New catalogue
-   candidate**, and say tag-catalogue Knowledge needs updating.
+   candidate**, and say tag-catalogue Knowledge needs updating. Use
+   `Government-owned` only for a documented public owner/entity, not an
+   official, contractor, state-company employee, sovereign chair, or royal.
 6. Search personal Instagram, LinkedIn, websites, and a relevant official
    company site. Reject namesakes, fan pages, and name-only matches.
 7. Finish research and the source ledger before drafting. Build an unordered

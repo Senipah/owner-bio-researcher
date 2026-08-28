@@ -326,6 +326,17 @@ For analytical subindustries, prefer concepts likely to form a useful cohort;
 rare but inherently browse-worthy identities such as actors or professional
 athletes do not require a minimum count.
 
+Use `Government-owned` as a status tag when the owner record itself is a
+government, ministry, municipality, state agency, comparable public body, or an
+institution explicitly documented as government- or state-owned. This tag
+describes public ownership of the owner entity and therefore enables analysis
+of the yachts associated with those entities. Do not apply it to a person
+merely because they hold public office, chair or work for a state enterprise,
+manage sovereign assets, or supply a government. `Government contracting`
+remains the separate private-business model tag. Royal or crown-associated
+assets qualify only when reliable evidence establishes public/state ownership
+rather than the ruler's or royal family's private ownership.
+
 Apply this canonicalisation workflow in order:
 
 1. Normalize the candidate and compare it with every canonical name and alias.

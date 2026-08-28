@@ -255,6 +255,23 @@ ROYAL_CONTEXT_PATTERN = re.compile(
     r"\b(?:royal|royalty|ruling family|dynasty|monarch|monarchy|king|queen|prince|"
     r"princess|crown|throne|sovereign|emir|sultan|sheikh)\b"
 )
+GOVERNMENT_OWNER_NAME_PATTERN = re.compile(
+    r"\b(?:government|ministry|municipality|municipal council|city council|"
+    r"state authority|public authority)\b|(?:^|\s)city$"
+)
+GOVERNMENT_OWNERSHIP_PATTERNS = (
+    r"\b(?:government|state|federal|national|municipal|local government|public) "
+    r"(?:administration|authority|body|department|entity|institution|ministry|"
+    r"agency|enterprise)\b",
+    r"\b(?:government of|government itself|state administration|municipality|"
+    r"city council)\b",
+    r"\b(?:is|was|remains|became) (?:an? |the )?(?:wholly |majority )?"
+    r"(?:government|state) owned(?: \w+){0,3} "
+    r"(?:company|enterprise|entity|institution|body|organisation|organization)\b",
+    r"\b(?:is|was|remains) (?:wholly |majority )?owned by (?:the )?"
+    r"(?:government|state|federal government|national government|municipality)\b",
+    r"\b(?:government|state) ownership\b",
+)
 PHILANTHROPY_CONTEXT_PATTERN = re.compile(
     r"\b(?:philanthrop(?:y|ic|ist)|charit(?:y|able)|foundation|nonprofit|non profit|"
     r"donat(?:e|ed|ion|ions)|grant(?:s|making)?|endow(?:ed|ment)|civic work|"
@@ -1323,6 +1340,41 @@ def _royalty_matches(
     ]
 
 
+def _government_owned_matches(
+    dossier: dict[str, Any],
+    claims: list[Evidence],
+) -> list[Evidence]:
+    if dossier.get("record_type") != "institution":
+        return []
+    identity_claims = [
+        item for item in claims
+        if item.path.startswith((
+            "biography.plain_text",
+            "long_biography.plain_text",
+            "biography_brief.durable_identity",
+            "biography_brief.defining_work",
+            "editorial_note.plain_text",
+        ))
+    ]
+    explicit = _matching(identity_claims, GOVERNMENT_OWNERSHIP_PATTERNS)
+    if explicit:
+        return explicit
+
+    owner_name = _normalize(
+        str(dossier.get("owner", {}).get("display_name", ""))
+    )
+    if not GOVERNMENT_OWNER_NAME_PATTERN.search(owner_name):
+        return []
+    return [
+        item for item in identity_claims
+        if re.search(
+            r"\b(?:government|state administration|public institution|"
+            r"public body|municipal|municipality)\b",
+            item.normalized,
+        )
+    ]
+
+
 def _professional_sports_ownership_matches(
     claims: list[Evidence],
 ) -> list[Evidence]:
@@ -1432,6 +1484,11 @@ def _confidence_score(
 
 def _summary(owner_name: str, tag: CanonicalTag) -> str:
     facets = set(tag.facets)
+    if tag.name == "Government-owned":
+        return (
+            f"The dossier identifies {owner_name} as a government or "
+            "state-owned public institution."
+        )
     if "royal family" in facets:
         return f"The dossier identifies {owner_name} as a member of {tag.name}."
     if "family" in facets:
@@ -1469,6 +1526,8 @@ def _confidence(score: int, reason: str) -> dict[str, Any]:
 def _patterns_for_match(match: Match) -> tuple[str, ...]:
     name = match.tag.name
     facets = set(match.tag.facets)
+    if name == "Government-owned":
+        return GOVERNMENT_OWNERSHIP_PATTERNS
     if facets & {"company", "organisation", "company association"}:
         return _company_patterns(match.tag)
     if name in TOPIC_PATTERNS:
@@ -1515,6 +1574,9 @@ def assign_tags(
         elif tag.name == "Gambling":
             evidence = _gambling_matches(dossier, claims)
             method = "gambling/casino industry evidence"
+        elif tag.name == "Government-owned":
+            evidence = _government_owned_matches(dossier, claims)
+            method = "government/state institutional ownership evidence"
         elif tag.name == "Private equity":
             evidence = _private_equity_matches(claims)
             method = "private-equity role evidence"

@@ -183,6 +183,47 @@ def test_removed_generic_tags_stay_out_but_distinctive_causes_remain() -> None:
     }.isdisjoint(names)
 
 
+def test_government_owned_requires_a_public_owner_entity() -> None:
+    government = _dossier(
+        "The Government of Example is the national public institution that owns "
+        "and operates the vessel on behalf of the state.",
+        display_name="Example Government",
+        record_type="institution",
+        source_support=(
+            "The Government of Example is the national public institution and "
+            "registered vessel owner."
+        ),
+    )
+    state_company = _dossier(
+        "Example Energy is a state-owned energy company and public enterprise.",
+        display_name="Example Energy",
+        record_type="institution",
+        source_support="Example Energy is a state-owned energy company.",
+    )
+    contractor = _dossier(
+        "Example Defence is a privately owned government contractor.",
+        display_name="Example Defence",
+        record_type="institution",
+        source_support="Privately owned government contractor.",
+    )
+    official = _dossier(
+        "She is a government minister and chairs a state-owned energy company.",
+        display_name="Example Official",
+        source_support="Government minister and state-company chair.",
+    )
+    royal = _dossier(
+        "The prince privately owns the yacht and serves as a sovereign adviser.",
+        display_name="Prince Example",
+        source_support="Private yacht ownership and a sovereign advisory role.",
+    )
+
+    assert "Government-owned" in _names(government)
+    assert "Government-owned" in _names(state_company)
+    assert "Government-owned" not in _names(contractor)
+    assert "Government-owned" not in _names(official)
+    assert "Government-owned" not in _names(royal)
+
+
 def test_curated_family_assignments_avoid_middle_name_and_surname_collisions() -> None:
     false_reuben = _dossier(
         "Lee Reuben Anderson transformed his father's insulation business.",

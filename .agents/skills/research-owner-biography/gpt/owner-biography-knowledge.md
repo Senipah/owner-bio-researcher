@@ -15,7 +15,7 @@ Use this file as Custom GPT Knowledge. Behaviour, workflow order, manual-mode ru
 
 | Section | Canonical source | SHA-256 |
 | --- | --- | --- |
-| Research and dossier contract | `references/research-contract.md` | `e299b3c80e8e0c0aa54fed6d001d626b01e57c3877ad4d83116c17549a25f150` |
+| Research and dossier contract | `references/research-contract.md` | `da6979be057f3054385c8e690a720ad57253b69f895a80c3b24ab5bd526acdcb` |
 | Wealth classification | `references/wealth-classification.md` | `ffd1f3abaa8e80ccd424747b76e2f7a82e3349ac2b87a1e049b6bc0531f93887` |
 | Biography style | `references/biography-style.md` | `0735c58c4d0c75a0a74d7a1bf95afb7f40eafd9e0b103fed3d0304079474caf8` |
 | Editorial calibrations | `references/editorial-calibrations.md` | `b705d5ebe33444a8abfecbc7bb0100478dc88c5a848b8fb4121473853a7dc9dd` |
@@ -349,6 +349,17 @@ attribute, represents a minor portfolio holding, or lacks durable materiality.
 For analytical subindustries, prefer concepts likely to form a useful cohort;
 rare but inherently browse-worthy identities such as actors or professional
 athletes do not require a minimum count.
+
+Use `Government-owned` as a status tag when the owner record itself is a
+government, ministry, municipality, state agency, comparable public body, or an
+institution explicitly documented as government- or state-owned. This tag
+describes public ownership of the owner entity and therefore enables analysis
+of the yachts associated with those entities. Do not apply it to a person
+merely because they hold public office, chair or work for a state enterprise,
+manage sovereign assets, or supply a government. `Government contracting`
+remains the separate private-business model tag. Royal or crown-associated
+assets qualify only when reliable evidence establishes public/state ownership
+rather than the ruler's or royal family's private ownership.
 
 Apply this canonicalisation workflow in order:
 

@@ -282,6 +282,11 @@ generic philanthropy-domain tags. `Gaming` resolves to the casino/betting
 proposal stores the local tag ID when known, its readable name, a materiality
 summary, confidence, and direct source IDs.
 
+`Government-owned` identifies owner records that are governments or comparable
+public bodies, plus institutions explicitly documented as government- or
+state-owned. It is not inferred from public office, government contracting,
+employment by a state company, sovereign-asset stewardship, or royal status.
+
 The catalogue is deliberately open-world: incomplete corpus coverage is not a
 reason to omit a qualifying tag. Research first canonicalises reasonable
 aliases; a genuinely distinct tag that passes the documented taxonomy rule is
