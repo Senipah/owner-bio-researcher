@@ -7,6 +7,8 @@ import sys
 from copy import deepcopy
 from pathlib import Path
 
+import pytest
+
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 SKILL_ROOT = (
@@ -374,10 +376,22 @@ def test_validator_requires_tag_summary_confidence_and_sources(
     assert "proposed_tags[0].source_ids must be a non-empty list" in result.stderr
 
 
-def test_validator_rejects_deliberately_excluded_tags(tmp_path: Path) -> None:
+@pytest.mark.parametrize(
+    "excluded_name",
+    (
+        "Family_business",
+        "Family office",
+        "Philanthropy",
+        "Education philanthropy",
+    ),
+)
+def test_validator_rejects_deliberately_excluded_tags(
+    tmp_path: Path,
+    excluded_name: str,
+) -> None:
     dossier = deepcopy(_calibration())
     dossier["proposed_tags"][0]["tag_id"] = None
-    dossier["proposed_tags"][0]["name"] = "Family_business"
+    dossier["proposed_tags"][0]["name"] = excluded_name
 
     result = _validate(tmp_path, dossier)
 

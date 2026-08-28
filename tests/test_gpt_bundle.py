@@ -138,6 +138,8 @@ def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
     assert "F1, Formula" in preview_tests
     assert "## 12. One-record company tail" in preview_tests
     assert "`Apple` is included once" in preview_tests
+    assert "## 13. Gambling and video-game disambiguation" in preview_tests
+    assert "casino gaming resolves to `Gambling`" in preview_tests
 
 
 def test_manual_dossier_example_contract_and_strict_validation() -> None:

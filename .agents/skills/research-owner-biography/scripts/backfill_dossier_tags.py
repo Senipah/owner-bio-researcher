@@ -32,14 +32,8 @@ TARGET_SCHEMA = 8
 # Counts from the earlier whole-corpus tag review. They are regression signals,
 # not quotas: the migration keeps dossier evidence authoritative when it differs.
 PRIOR_REVIEW_COUNTS = {
-    "Education philanthropy": 109,
-    "Health philanthropy": 57,
-    "Arts & culture philanthropy": 56,
-    "Children & youth philanthropy": 56,
     "Commercial ship management": 46,
-    "Family office": 44,
     "Private equity": 43,
-    "Science philanthropy": 42,
     "Professional sports ownership": 37,
     "Tanker shipping": 35,
     "Environmental conservation": 31,
@@ -384,16 +378,19 @@ TOPIC_PATTERNS: dict[str, tuple[str, ...]] = {
         r"\bsoftware for (?:businesses|companies|corporate clients|enterprises)\b",
         r"\bdatabase software\b",
     ),
-    "Family office": (
-        r"\bfamily office\b",
-        r"\bsingle family office\b",
-        r"\bmulti family office\b",
-    ),
     "Fintech": (
         r"\bfintech\b",
         r"\bfinancial technology\b",
         r"\bdigital bank(?:ing)?\b",
         r"\bonline brokerage\b",
+    ),
+    "Gambling": (
+        r"\bgambling\b",
+        r"\bcasinos?\b",
+        r"\bcasino gaming\b",
+        r"\bgaming (?:operator|operations?|resort|venues?)\b",
+        r"\b(?:online|mobile|internet|sports) betting\b",
+        r"\bbookmak(?:er|ing)\b",
     ),
     "Hedge funds": (
         r"\bhedge fund(?:s)?\b",
@@ -510,7 +507,7 @@ TOPIC_PATTERNS: dict[str, tuple[str, ...]] = {
     "Video games": (
         r"\bvideo games?\b",
         r"\bgame (?:developer|development|studio|publisher|distribution)\b",
-        r"\bgaming (?:company|industry|platform|software)\b",
+        r"\b(?:computer|console|mobile|online) games?\b",
     ),
     "Wine production": (
         r"\bwine production\b",
@@ -725,32 +722,12 @@ TOPIC_PATTERNS: dict[str, tuple[str, ...]] = {
 
 
 PHILANTHROPY_DOMAINS: dict[str, tuple[str, ...]] = {
-    "Arts & culture philanthropy": (
-        r"\barts?\b", r"\bcultur(?:e|al)\b", r"\bmuseum\b", r"\bgaller(?:y|ies)\b",
-        r"\bmusic education\b", r"\bheritage\b",
-    ),
     "Cancer research / support": (
         r"\bcancer\b", r"\boncology\b", r"\btumou?r\b",
-    ),
-    "Children & youth philanthropy": (
-        r"\bchildren\b", r"\byouth\b", r"\byoung people\b", r"\bchildhood\b",
-        r"\bstudents?\b",
-    ),
-    "Education philanthropy": (
-        r"\beducation\b", r"\bschools?\b", r"\buniversity\b", r"\bcollege access\b",
-        r"\bscholarships?\b", r"\bstudents?\b", r"\blearning\b",
-    ),
-    "Health philanthropy": (
-        r"\bhealth\b", r"\bmedical\b", r"\bhospitals?\b", r"\bmedicine\b",
-        r"\bpublic health\b", r"\bclinical research\b",
     ),
     "Humanitarian aid": (
         r"\bhumanitarian\b", r"\bdisaster relief\b", r"\bemergency relief\b",
         r"\brefugees?\b", r"\bfood aid\b", r"\bhousing (?:aid|relief|programme)\b",
-    ),
-    "Science philanthropy": (
-        r"\bscience\b", r"\bscientific research\b", r"\bresearch institute\b",
-        r"\bresearch\b", r"\bstem\b", r"\bphysics\b", r"\bgenomics?\b",
     ),
 }
 
@@ -778,7 +755,6 @@ IMPLIED_TAGS: dict[str, tuple[str, ...]] = {
     "Formula 1": ("Motorsport",),
     "NASCAR": ("Motorsport",),
     "Marine / ocean conservation": ("Environmental conservation",),
-    "Cancer research / support": ("Health philanthropy",),
 }
 
 
@@ -1150,6 +1126,29 @@ def _philanthropy_matches(
     ]
 
 
+def _gambling_matches(
+    dossier: dict[str, Any],
+    claims: list[Evidence],
+) -> list[Evidence]:
+    direct = _matching(claims, TOPIC_PATTERNS["Gambling"])
+    if direct:
+        return direct
+    classified_prefixes: set[str] = set()
+    for field in ("wealth_creation_industry", "primary_industry"):
+        value = dossier.get(field)
+        if isinstance(value, dict) and value.get("classification") == (
+            "gambling_casinos"
+        ):
+            classified_prefixes.add(f"{field}.summary")
+    if not classified_prefixes:
+        return []
+    return [
+        item
+        for item in claims
+        if item.path.startswith(tuple(classified_prefixes))
+    ]
+
+
 def _private_equity_matches(claims: list[Evidence]) -> list[Evidence]:
     topic_patterns = _compile(TOPIC_PATTERNS["Private equity"])
     output: list[Evidence] = []
@@ -1513,6 +1512,9 @@ def assign_tags(
         elif tag.name in CONSERVATION_PATTERNS:
             evidence = _matching(claims, CONSERVATION_PATTERNS[tag.name])
             method = "conservation evidence"
+        elif tag.name == "Gambling":
+            evidence = _gambling_matches(dossier, claims)
+            method = "gambling/casino industry evidence"
         elif tag.name == "Private equity":
             evidence = _private_equity_matches(claims)
             method = "private-equity role evidence"

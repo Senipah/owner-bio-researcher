@@ -52,7 +52,9 @@ For every owner:
 - populate `proposed_tags` with every durable, material, dossier-supported
   grouping using canonical names/aliases from `config/owner-tags.json`; keep
   local ID/name pairs, summaries, confidence, and direct source IDs, never
-  invent IDs, and exclude `Family business` and `Property development`;
+  invent IDs, treat `Gaming` as gambling/casinos rather than video games, and
+  exclude `Family business`, `Property development`, `Family office`, and the
+  generic philanthropy-domain tags;
 - search supported person-relevant social types, prioritising Instagram,
   LinkedIn, and Personal Website;
 - reject namesake, company, fan, family-member, and uncorroborated accounts;

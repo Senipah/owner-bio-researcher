@@ -48,7 +48,7 @@ def _proposal(name: str, tag_id: str | None = None) -> dict:
 def test_seed_catalogue_contains_complete_supported_long_tail() -> None:
     catalogue = load_tag_catalogue()
 
-    assert len(catalogue.tags_by_id) == 204
+    assert len(catalogue.tags_by_id) == 199
     assert sum(
         "business family" in tag.facets
         for tag in catalogue.tags_by_id.values()
@@ -69,6 +69,7 @@ def test_seed_catalogue_contains_complete_supported_long_tail() -> None:
         "Della Valle family",
         "Haji-Ioannou family",
         "Aston Martin",
+        "Gambling",
         "eBay",
         "Pirelli",
         "easyJet",
@@ -86,6 +87,39 @@ def test_seed_catalogue_contains_complete_supported_long_tail() -> None:
         for label, ids in catalogue.lookup.items()
         if len({catalogue._terminal_tag(tag_id).id for tag_id in ids}) > 1
     }
+
+
+def test_gaming_means_gambling_and_video_games_requires_its_explicit_name() -> None:
+    catalogue = load_tag_catalogue()
+
+    assert catalogue.resolve(tag_id=None, name="Gaming").name == "Gambling"
+    assert catalogue.resolve(tag_id=None, name="Gambling & Casinos").name == (
+        "Gambling"
+    )
+    assert catalogue.resolve(tag_id=None, name="Video games").name == "Video games"
+
+
+def test_generic_philanthropy_and_family_office_tags_are_removed() -> None:
+    catalogue = load_tag_catalogue()
+
+    for name in (
+        "Arts & culture philanthropy",
+        "Children & youth philanthropy",
+        "Education philanthropy",
+        "Family office",
+        "Health philanthropy",
+        "Science philanthropy",
+    ):
+        with pytest.raises(TagResolutionError, match="unknown tag name"):
+            catalogue.resolve(tag_id=None, name=name)
+
+    assert catalogue.resolve(tag_id=None, name="Humanitarian aid").name == (
+        "Humanitarian aid"
+    )
+    assert catalogue.resolve(
+        tag_id=None,
+        name="Marine / ocean conservation",
+    ).name == "Marine / ocean conservation"
 
 
 def test_aliases_share_the_canonical_normalization_path() -> None:

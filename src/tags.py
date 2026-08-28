@@ -11,7 +11,17 @@ from typing import Any
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_TAG_CATALOGUE_PATH = REPO_ROOT / "config" / "owner-tags.json"
 TAG_CATALOGUE_SCHEMA_VERSION = 1
-FORBIDDEN_CANONICAL_TAGS = {"family business", "property development"}
+FORBIDDEN_CANONICAL_TAGS = {
+    "arts and culture philanthropy",
+    "children and youth philanthropy",
+    "education philanthropy",
+    "family business",
+    "family office",
+    "health philanthropy",
+    "philanthropy",
+    "property development",
+    "science philanthropy",
+}
 
 
 class TagCatalogueError(ValueError):

@@ -306,8 +306,8 @@ Populate `proposed_tags` during every new research pass. Apply the agreed test:
 include every durable, material, dossier-supported tag that would create a
 meaningful grouping. Tags are additive research metadata, so they are not
 limited to blank owner fields and may cover industries, sports, royal houses,
-business families, durable roles, philanthropy, named companies, or other
-catalogued associations.
+business families, durable roles, distinctive causes, named companies, or
+other catalogued associations.
 
 Use `config/owner-tags.json` as the canonical research-layer catalogue. Match
 its canonical names or aliases. Store both `tag_id` and `name` when the local
@@ -328,11 +328,21 @@ Each proposal contains:
 
 Do not add tangential employers, transient interests, unsupported surname-only
 family links, or tags inferred only from another classification. Do not use
-`Family business` or `Property development`. Do not repeat names that normalize
-to the same casefolded, punctuation-insensitive form; compilation also rejects
-different aliases that resolve to the same canonical tag. An empty list is
-valid only when no supported tag meets the applicability test. Unresolved
-placeholders must use an empty list.
+`Family business`, `Property development`, `Family office`, `Arts & culture
+philanthropy`, `Children & youth philanthropy`, `Education philanthropy`,
+`Health philanthropy`, or `Science philanthropy`. These generic tags are
+deliberately excluded; this does not remove the separate
+`family_office_principal` wealth-relationship classification or distinctive
+cause tags such as `Humanitarian aid` and `Marine / ocean conservation`.
+
+Treat bare `Gaming` as an alias for the casino, betting, and gambling-industry
+`Gambling` tag. Use `Video games` only when evidence explicitly concerns video
+games, game development, game publishing, or an equivalent interactive-
+entertainment business. Do not repeat names that normalize to the same
+casefolded, punctuation-insensitive form; compilation also rejects different
+aliases that resolve to the same canonical tag. An empty list is valid only
+when no supported tag meets the applicability test. Unresolved placeholders
+must use an empty list.
 
 ## Dossier shape
 

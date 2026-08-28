@@ -171,7 +171,9 @@ For every target owner:
    tag that creates a meaningful grouping. Resolve canonical names or aliases
    through `config/owner-tags.json`, retain the local ID/name pair, confidence,
    materiality summary and direct source IDs, and never invent an ID. Exclude
-   `Family business` and `Property development`.
+   `Family business`, `Property development`, `Family office`, and the generic
+   philanthropy-domain tags. Treat `Gaming` as gambling/casinos; use `Video
+   games` only for explicit video-game industry evidence.
 8. Search supported person-relevant social types and reject namesake, fan,
    company-only, family-member and uncorroborated personal accounts.
 9. Build the schema-v8 source-hidden `biography_brief` after completing the

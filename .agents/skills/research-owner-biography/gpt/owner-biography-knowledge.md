@@ -15,10 +15,10 @@ Use this file as Custom GPT Knowledge. Behaviour, workflow order, manual-mode ru
 
 | Section | Canonical source | SHA-256 |
 | --- | --- | --- |
-| Research and dossier contract | `references/research-contract.md` | `401688b92e8c56b32a4e182b30b03fe99a6f9076785f76dfabff554f3e5c4946` |
-| Wealth classification | `references/wealth-classification.md` | `2dd9865096d7c7effb2fb30a0a02cb4d81cee0c993cccae976921114cdfac290` |
-| Biography style | `references/biography-style.md` | `ea1fe534a25e99d97c79fdfc89fb2f6dfba17e96c1ee865337482ce7b94f7b55` |
-| Editorial calibrations | `references/editorial-calibrations.md` | `e113250280f3da22a2f81163a4ce9644a9d4172feb26b7a5d10bb5f3f509433c` |
+| Research and dossier contract | `references/research-contract.md` | `3a04d8fa46fb285a08a4b6826fe31a1c57e0f7dd603a75dbb1f219fd608fb2c1` |
+| Wealth classification | `references/wealth-classification.md` | `ffd1f3abaa8e80ccd424747b76e2f7a82e3349ac2b87a1e049b6bc0531f93887` |
+| Biography style | `references/biography-style.md` | `0735c58c4d0c75a0a74d7a1bf95afb7f40eafd9e0b103fed3d0304079474caf8` |
+| Editorial calibrations | `references/editorial-calibrations.md` | `b705d5ebe33444a8abfecbc7bb0100478dc88c5a848b8fb4121473853a7dc9dd` |
 
 ---
 
@@ -330,8 +330,8 @@ Populate `proposed_tags` during every new research pass. Apply the agreed test:
 include every durable, material, dossier-supported tag that would create a
 meaningful grouping. Tags are additive research metadata, so they are not
 limited to blank owner fields and may cover industries, sports, royal houses,
-business families, durable roles, philanthropy, named companies, or other
-catalogued associations.
+business families, durable roles, distinctive causes, named companies, or
+other catalogued associations.
 
 Use `config/owner-tags.json` as the canonical research-layer catalogue. Match
 its canonical names or aliases. Store both `tag_id` and `name` when the local
@@ -352,11 +352,21 @@ Each proposal contains:
 
 Do not add tangential employers, transient interests, unsupported surname-only
 family links, or tags inferred only from another classification. Do not use
-`Family business` or `Property development`. Do not repeat names that normalize
-to the same casefolded, punctuation-insensitive form; compilation also rejects
-different aliases that resolve to the same canonical tag. An empty list is
-valid only when no supported tag meets the applicability test. Unresolved
-placeholders must use an empty list.
+`Family business`, `Property development`, `Family office`, `Arts & culture
+philanthropy`, `Children & youth philanthropy`, `Education philanthropy`,
+`Health philanthropy`, or `Science philanthropy`. These generic tags are
+deliberately excluded; this does not remove the separate
+`family_office_principal` wealth-relationship classification or distinctive
+cause tags such as `Humanitarian aid` and `Marine / ocean conservation`.
+
+Treat bare `Gaming` as an alias for the casino, betting, and gambling-industry
+`Gambling` tag. Use `Video games` only when evidence explicitly concerns video
+games, game development, game publishing, or an equivalent interactive-
+entertainment business. Do not repeat names that normalize to the same
+casefolded, punctuation-insensitive form; compilation also rejects different
+aliases that resolve to the same canonical tag. An empty list is valid only
+when no supported tag meets the applicability test. Unresolved placeholders
+must use an empty list.
 
 ## Dossier shape
 

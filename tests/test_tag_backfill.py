@@ -126,6 +126,63 @@ def test_material_long_tail_associations_are_retained() -> None:
     assert {"Apple", "Valve", "Steam", "Video games", "Boxing"} <= names
 
 
+def test_gambling_is_distinct_from_video_games() -> None:
+    casino_owner = _dossier(
+        "She built a gaming business that owns casinos and operates online betting.",
+        source_support="Casino gaming and online-betting operations.",
+    )
+    video_game_owner = _dossier(
+        "He co-founded a video-game studio and became a game publisher.",
+        source_support="Video-game development and publishing.",
+    )
+
+    casino_names = _names(casino_owner)
+    video_game_names = _names(video_game_owner)
+    assert "Gambling" in casino_names
+    assert "Video games" not in casino_names
+    assert "Video games" in video_game_names
+    assert "Gambling" not in video_game_names
+
+
+def test_gambling_classification_disambiguates_bare_gaming_language() -> None:
+    document = _dossier(
+        "She built her fortune through a gaming group.",
+        source_support="Gaming-sector founder and owner.",
+    )
+    document["wealth_creation_industry"].update(
+        {
+            "classification": "gambling_casinos",
+            "summary": "The fortune came from a gaming group.",
+        }
+    )
+
+    names = _names(document)
+    assert "Gambling" in names
+    assert "Video games" not in names
+
+
+def test_removed_generic_tags_stay_out_but_distinctive_causes_remain() -> None:
+    document = _dossier(
+        "She directs a family office and her charitable foundation donated to "
+        "education, medical science and cancer research.",
+        source_support=(
+            "Family office; charitable giving to education, health and cancer "
+            "research."
+        ),
+    )
+
+    names = _names(document)
+    assert "Cancer research / support" in names
+    assert {
+        "Arts & culture philanthropy",
+        "Children & youth philanthropy",
+        "Education philanthropy",
+        "Family office",
+        "Health philanthropy",
+        "Science philanthropy",
+    }.isdisjoint(names)
+
+
 def test_curated_family_assignments_avoid_middle_name_and_surname_collisions() -> None:
     false_reuben = _dossier(
         "Lee Reuben Anderson transformed his father's insulation business.",

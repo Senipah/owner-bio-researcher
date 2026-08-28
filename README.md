@@ -276,9 +276,11 @@ Schema v8 also requires `proposed_tags`: every durable, material,
 dossier-supported tag that creates a meaningful grouping. The canonical
 research-layer catalogue is `config\owner-tags.json`; it includes aliases,
 hidden facets, merge targets, and the supported long tail while deliberately
-excluding `Family business` and `Property development`. Each proposal stores
-the local tag ID when known, its readable name, a materiality summary,
-confidence, and direct source IDs.
+excluding `Family business`, `Property development`, `Family office`, and the
+generic philanthropy-domain tags. `Gaming` resolves to the casino/betting
+`Gambling` tag; video-game evidence uses the explicit `Video games` tag. Each
+proposal stores the local tag ID when known, its readable name, a materiality
+summary, confidence, and direct source IDs.
 
 Completed schema-v7 dossiers can be assigned catalogue tags and migrated to v8
 without new web research. Dry-run first and inspect the generated per-owner and

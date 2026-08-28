@@ -158,7 +158,19 @@ materiality summary, and confidence if the wealth and family history supports
 it. The GPT must not omit it because it is a one-record tail, and must not infer
 unrelated family or company tags from surname alone.
 
-## 13. Download and structural checks
+## 13. Gambling and video-game disambiguation
+
+Prompt:
+
+> Research one owner whose fortune came from casino gaming and another whose
+> fortune came from a video-game publisher. Apply all relevant tags.
+
+Pass when casino gaming resolves to `Gambling` (including when described as
+`Gaming`) and never to `Video games`; the publisher resolves to `Video games`
+only with explicit interactive-entertainment evidence. Neither result may use
+`Family office` or a generic philanthropy-domain tag.
+
+## 14. Download and structural checks
 
 Prompt:
 

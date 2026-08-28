@@ -36,7 +36,8 @@ statistics.
   evidence, confidence, social-link, and dossier rules.
 - Use the repo-level `config/owner-tags.json` as the canonical tag catalogue.
   Apply every durable, material, dossier-supported tag that creates a
-  meaningful grouping; never invent catalogue IDs.
+  meaningful grouping; never invent catalogue IDs. Generic philanthropy tags
+  and `Family office` are deliberately excluded from the tag taxonomy.
 - Read
   [references/wealth-classification.md](references/wealth-classification.md)
   before classifying industries, wealth origin, or relationship to wealth.
@@ -85,8 +86,10 @@ statistics.
    research-layer `tag_id` and name when known, or a null ID with the supported
    name when the catalogue is unavailable or lacks the tag. Give every tag a
    concise materiality summary, confidence of at least 70, and direct source
-   IDs. Exclude `Family business`, `Property development`, tangential links,
-   and surname-only family inferences.
+   IDs. Treat `Gaming` as the gambling/casino alias and use `Video games` only
+   for explicit video-game industry evidence. Exclude `Family business`,
+   `Property development`, `Family office`, the generic philanthropy-domain
+   tags, tangential links, and surname-only family inferences.
 6. Search all person-relevant link types supported by the input lookup,
    prioritising public personal Instagram, LinkedIn, and personal websites.
    A company website may be proposed under its distinct type when the owner
@@ -184,6 +187,9 @@ the migration as complete.
 - Require `proposed_tags` in every schema-v8 dossier. Include all and only
   durable, material, dossier-supported tags that create meaningful groupings;
   unresolved placeholders use an empty list.
+- Resolve bare `Gaming` to `Gambling`, never `Video games`. Use `Video games`
+  only when the evidence explicitly concerns video games, game development,
+  game publishing, or an equivalent interactive-entertainment business.
 - Treat `research_status=complete` as completion of the research decision, not
   proof that every field is known. Preserve supported `Unknown`
   classifications, confidence limits, and uncertainties instead of emitting
@@ -254,6 +260,10 @@ the migration as complete.
   `self_made_advantaged` does not conceal a principal asset transfer, and
   broad `self_made` is retained when the distinction is unresolved.
 - Confirm every non-`unknown` wealth classification scores at least 70.
+- Confirm tag selection uses `Gambling` for casino, betting, bookmaking, and
+  gambling-industry gaming, and does not use `Video games` for that evidence.
+- Confirm no generic philanthropy-domain or `Family office` tag is proposed;
+  the separate `family_office_principal` wealth relationship remains valid.
 - Confirm inherited wealth follows its underlying industries, and royal or
   dynastic records do not assume `Energy` from an oil-producing state.
 - Confirm proposed facts and socials score at least 70.

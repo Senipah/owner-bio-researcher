@@ -41,10 +41,10 @@ Follow these stages in order:
    distinguish an evidenced
    independent start from an advantaged one; use broad `self_made` when
    unresolved and `unknown` below confidence 70.
-5. Select every durable, material, dossier-supported catalogue tag that creates
-   a meaningful grouping. Use catalogue names/aliases and local IDs. Exclude
-   `Family business`, `Property development`, tangential links, and surname-only
-   family inferences.
+5. Select every durable, material, dossier-supported catalogue tag creating a
+   meaningful grouping. Use catalogue names/IDs. Exclude forbidden tags,
+   tangential links, and surname-only inferences. `Gaming` means
+   gambling/casinos; `Video games` requires explicit video-game evidence.
 6. Search personal Instagram, LinkedIn, websites, and a relevant official
    company site. Reject namesakes, fan pages, and name-only matches.
 7. Finish research and the source ledger before drafting. Build an unordered
