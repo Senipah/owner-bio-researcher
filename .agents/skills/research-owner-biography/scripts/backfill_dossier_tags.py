@@ -25,8 +25,9 @@ from validate_dossier import validate
 
 DEFAULT_DOSSIER_DIR = REPO_ROOT / "output" / "owner-research" / "all-by-loa"
 DEFAULT_CATALOGUE = REPO_ROOT / "config" / "owner-tags.json"
-EXPECTED_SOURCE_SCHEMA = 7
+LEGACY_SOURCE_SCHEMA = 7
 TARGET_SCHEMA = 8
+SUPPORTED_SOURCE_SCHEMAS = {LEGACY_SOURCE_SCHEMA, TARGET_SCHEMA}
 
 
 # Counts from the earlier whole-corpus tag review. They are regression signals,
@@ -1696,25 +1697,43 @@ def migrate_dossier(
     dossier: dict[str, Any],
     catalogue: TagCatalogue,
 ) -> tuple[dict[str, Any], list[dict[str, Any]]]:
-    if dossier.get("schema_version") != EXPECTED_SOURCE_SCHEMA:
+    source_schema = dossier.get("schema_version")
+    if source_schema not in SUPPORTED_SOURCE_SCHEMAS:
         raise ValueError(
-            f"expected schema_version {EXPECTED_SOURCE_SCHEMA}, got "
-            f"{dossier.get('schema_version')!r}"
+            "expected schema_version 7 or 8, got "
+            f"{source_schema!r}"
         )
-    if "proposed_tags" in dossier:
+    if source_schema == LEGACY_SOURCE_SCHEMA and "proposed_tags" in dossier:
         raise ValueError("source v7 dossier unexpectedly already has proposed_tags")
+    if source_schema == TARGET_SCHEMA and not isinstance(
+        dossier.get("proposed_tags"),
+        list,
+    ):
+        raise ValueError("source v8 dossier must contain proposed_tags as a list")
 
     proposals, decisions = assign_tags(dossier, catalogue)
     migrated: dict[str, Any] = {}
     for key, value in dossier.items():
         if key == "schema_version":
             migrated[key] = TARGET_SCHEMA
+        elif key == "proposed_tags":
+            migrated[key] = proposals
         else:
             migrated[key] = value
-        if key == "proposed_socials":
+        if source_schema == LEGACY_SOURCE_SCHEMA and key == "proposed_socials":
             migrated["proposed_tags"] = proposals
     if "proposed_tags" not in migrated:
         migrated["proposed_tags"] = proposals
+
+    if source_schema == TARGET_SCHEMA:
+        original_without_tags = {
+            key: value for key, value in dossier.items() if key != "proposed_tags"
+        }
+        migrated_without_tags = {
+            key: value for key, value in migrated.items() if key != "proposed_tags"
+        }
+        if migrated_without_tags != original_without_tags:
+            raise ValueError("schema-v8 refresh changed fields other than proposed_tags")
 
     errors, warnings = validate(migrated)
     if errors:
@@ -1730,7 +1749,7 @@ def _safe_backup_path(directory: Path, requested: Path | None) -> Path:
     owner_research_root = (REPO_ROOT / "output" / "owner-research").resolve()
     if requested is None:
         timestamp = datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
-        requested = directory.with_name(f"{directory.name}-v7-backup-{timestamp}")
+        requested = directory.with_name(f"{directory.name}-tag-backup-{timestamp}")
     resolved = requested.resolve()
     if not resolved.is_relative_to(owner_research_root):
         raise ValueError(
@@ -1753,6 +1772,10 @@ def _load_and_migrate(
 
     migrated: list[tuple[Path, dict[str, Any], dict[str, Any]]] = []
     tag_counts: Counter[str] = Counter()
+    existing_tag_counts: Counter[str] = Counter()
+    added_tag_counts: Counter[str] = Counter()
+    removed_tag_counts: Counter[str] = Counter()
+    source_schema_counts: Counter[int] = Counter()
     owner_rows: list[dict[str, Any]] = []
     warning_count = 0
     for path in paths:
@@ -1764,15 +1787,44 @@ def _load_and_migrate(
         included = [
             item for item in decisions if item.get("decision") == "included"
         ]
+        existing_tags = original.get("proposed_tags", [])
+        existing_names = [
+            item.get("name")
+            for item in existing_tags
+            if isinstance(item, dict) and isinstance(item.get("name"), str)
+        ]
+        target_names = [item["name"] for item in included]
+        existing_name_set = set(existing_names)
+        target_name_set = set(target_names)
+        added_names = sorted(target_name_set - existing_name_set, key=str.casefold)
+        removed_names = sorted(existing_name_set - target_name_set, key=str.casefold)
+        tag_set_changed = bool(added_names or removed_names)
+        document_changed = original != target
+
         warning_count += sum("warning" in item for item in decisions)
-        tag_counts.update(item["name"] for item in included)
+        source_schema_counts.update([original["schema_version"]])
+        existing_tag_counts.update(existing_names)
+        tag_counts.update(target_names)
+        added_tag_counts.update(added_names)
+        removed_tag_counts.update(removed_names)
         owner_rows.append(
             {
                 "person_id": target["owner"]["person_id"],
                 "display_name": target["owner"]["display_name"],
                 "record_type": target["record_type"],
+                "source_schema_version": original["schema_version"],
+                "document_changed": document_changed,
+                "tag_set_changed": tag_set_changed,
+                "existing_tag_ids": [
+                    item.get("tag_id")
+                    for item in existing_tags
+                    if isinstance(item, dict)
+                ],
+                "existing_tag_names": existing_names,
                 "tag_ids": [item["tag_id"] for item in included],
-                "tag_names": [item["name"] for item in included],
+                "tag_names": target_names,
+                "added_tag_names": added_names,
+                "removed_tag_names": removed_names,
                 "decisions": decisions,
             }
         )
@@ -1780,16 +1832,26 @@ def _load_and_migrate(
 
     count_rows = []
     all_names = sorted(
-        {tag.name for tag in catalogue.tags_by_id.values() if tag.merged_into is None},
+        {
+            tag.name
+            for tag in catalogue.tags_by_id.values()
+            if tag.merged_into is None
+        }
+        | set(existing_tag_counts),
         key=str.casefold,
     )
     for name in all_names:
         actual = tag_counts.get(name, 0)
+        before = existing_tag_counts.get(name, 0)
         prior = PRIOR_REVIEW_COUNTS.get(name)
         count_rows.append(
             {
                 "name": name,
+                "before_count": before,
                 "applicable_count": actual,
+                "change": actual - before,
+                "added_assignments": added_tag_counts.get(name, 0),
+                "removed_assignments": removed_tag_counts.get(name, 0),
                 "prior_review_count": prior,
                 "difference": actual - prior if prior is not None else None,
             }
@@ -1800,7 +1862,10 @@ def _load_and_migrate(
         "mode": "dry-run",
         "dossier_directory": str(directory.resolve()),
         "catalogue": catalogue.source_reference,
-        "source_schema_version": EXPECTED_SOURCE_SCHEMA,
+        "source_schema_version_counts": {
+            str(version): count
+            for version, count in sorted(source_schema_counts.items())
+        },
         "target_schema_version": TARGET_SCHEMA,
         "dossier_count": len(migrated),
         "record_type_counts": dict(
@@ -1808,7 +1873,23 @@ def _load_and_migrate(
         ),
         "owners_with_tags": sum(bool(row["tag_ids"]) for row in owner_rows),
         "owners_without_tags": sum(not row["tag_ids"] for row in owner_rows),
+        "owners_with_document_changes": sum(
+            row["document_changed"] for row in owner_rows
+        ),
+        "owners_unchanged": sum(
+            not row["document_changed"] for row in owner_rows
+        ),
+        "owners_with_tag_set_changes": sum(
+            row["tag_set_changed"] for row in owner_rows
+        ),
+        "owners_with_metadata_only_changes": sum(
+            row["document_changed"] and not row["tag_set_changed"]
+            for row in owner_rows
+        ),
+        "existing_total_tag_assignments": sum(existing_tag_counts.values()),
         "total_tag_assignments": sum(tag_counts.values()),
+        "added_tag_assignments": sum(added_tag_counts.values()),
+        "removed_tag_assignments": sum(removed_tag_counts.values()),
         "validator_warning_count": warning_count,
         "tag_counts": count_rows,
         "owners": owner_rows,
@@ -1823,9 +1904,10 @@ def _write_audit(path: Path, report: dict[str, Any]) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
-            "Assign conservative dossier-supported owner tags and migrate a "
-            "completed schema-v7 dossier directory to schema v8. Dry-run is "
-            "the default; --apply makes an exact v7 backup before atomic writes."
+            "Assign conservative dossier-supported owner tags, migrating "
+            "completed schema-v7 dossiers or refreshing schema-v8 dossiers. "
+            "Dry-run is the default; --apply makes an exact backup before "
+            "atomic writes."
         )
     )
     parser.add_argument("directory", nargs="?", type=Path, default=DEFAULT_DOSSIER_DIR)
@@ -1865,11 +1947,31 @@ def main() -> int:
                     "byte-for-byte backup verification failed for: "
                     + ", ".join(mismatches[:10])
                 )
-            for path, _, target in migrated:
+            changed = [item for item in migrated if item[1] != item[2]]
+            for path, _, target in changed:
                 atomic_write_json(path, target)
+            for path, _, target in changed:
+                written = json.loads(path.read_text(encoding="utf-8"))
+                if written != target:
+                    raise ValueError(
+                        f"post-write verification differs from target: {path.name}"
+                    )
+                errors, _ = validate(written)
+                if errors:
+                    raise ValueError(
+                        f"post-write dossier validation failed for {path.name}: "
+                        + "; ".join(errors)
+                    )
+                resolve_dossier_tags(
+                    written,
+                    catalogue,
+                    person_id=written["owner"]["person_id"],
+                )
             report["mode"] = "applied"
             report["backup_directory"] = str(backup_path)
             report["backup_verified_byte_for_byte"] = True
+            report["written_dossier_count"] = len(changed)
+            report["written_dossiers_verified"] = True
         if args.audit_output is not None:
             _write_audit(args.audit_output.resolve(), report)
     except (OSError, ValueError) as exc:

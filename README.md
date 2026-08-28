@@ -294,20 +294,22 @@ added to the repo catalogue before compilation. Custom GPT runs cannot mutate
 uploaded Knowledge, so they retain a null-ID candidate and explicitly report
 that the GPT tag catalogue needs updating.
 
-Completed schema-v7 dossiers can be assigned catalogue tags and migrated to v8
-without new web research. Dry-run first and inspect the generated per-owner and
-per-tag audit; `--apply` creates a byte-for-byte v7 backup before atomic writes:
+Completed schema-v7 dossiers can be assigned catalogue tags and migrated to
+v8; existing schema-v8 dossiers can have their tag sets safely refreshed. No
+new web research is performed. Dry-run first and inspect the per-owner
+additions/removals and before/after tag counts. `--apply` creates a complete
+byte-for-byte backup, writes only changed dossiers, and verifies every write:
 
 ```powershell
 .\venv\Scripts\python.exe `
   .agents\skills\research-owner-biography\scripts\backfill_dossier_tags.py `
   output\owner-research\all-by-loa `
-  --audit-output output\owner-research\tag-backfill-v8.audit.json
+  --audit-output output\owner-research\tag-refresh-v8.dry-run.audit.json
 
 .\venv\Scripts\python.exe `
   .agents\skills\research-owner-biography\scripts\backfill_dossier_tags.py `
   output\owner-research\all-by-loa `
-  --audit-output output\owner-research\tag-backfill-v8.audit.json `
+  --audit-output output\owner-research\tag-refresh-v8.applied.audit.json `
   --apply
 ```
 

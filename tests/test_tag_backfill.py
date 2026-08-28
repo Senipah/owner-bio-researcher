@@ -3,6 +3,7 @@ from __future__ import annotations
 import importlib.util
 import json
 import sys
+from copy import deepcopy
 from pathlib import Path
 from types import ModuleType
 
@@ -332,3 +333,105 @@ def test_migration_is_valid_and_deterministic() -> None:
         catalogue,
         person_id=first["owner"]["person_id"],
     )
+
+
+def test_schema_v8_refresh_replaces_only_tags_and_is_idempotent() -> None:
+    example_path = (
+        REPO_ROOT
+        / ".agents"
+        / "skills"
+        / "research-owner-biography"
+        / "gpt"
+        / "manual-dossier.example.json"
+    )
+    source = json.loads(example_path.read_text(encoding="utf-8"))
+    source["owner"]["person_id"] = 1164
+    source["proposed_tags"] = [
+        {
+            "tag_id": "retired_tag",
+            "name": "Family office",
+            "summary": "Legacy generic tag.",
+            "confidence": {
+                "score": 95,
+                "band": "very_high",
+                "reason": "Legacy proposal retained for refresh testing.",
+            },
+            "source_ids": ["S1"],
+        }
+    ]
+    catalogue = BACKFILL.load_tag_catalogue()
+    expected_untouched = deepcopy(source)
+    expected_untouched.pop("proposed_tags")
+
+    refreshed, _ = BACKFILL.migrate_dossier(source, catalogue)
+    refreshed_untouched = deepcopy(refreshed)
+    refreshed_untouched.pop("proposed_tags")
+    second, _ = BACKFILL.migrate_dossier(refreshed, catalogue)
+
+    assert refreshed_untouched == expected_untouched
+    assert "Family office" not in {
+        tag["name"] for tag in refreshed["proposed_tags"]
+    }
+    assert second == refreshed
+
+
+def test_schema_v8_refresh_audit_reports_before_and_after_changes(
+    tmp_path: Path,
+) -> None:
+    example_path = (
+        REPO_ROOT
+        / ".agents"
+        / "skills"
+        / "research-owner-biography"
+        / "gpt"
+        / "manual-dossier.example.json"
+    )
+    source = json.loads(example_path.read_text(encoding="utf-8"))
+    source["owner"]["person_id"] = 1164
+    catalogue = BACKFILL.load_tag_catalogue()
+    current, _ = BACKFILL.migrate_dossier(source, catalogue)
+    stale = deepcopy(current)
+    stale["owner"]["person_id"] = 1165
+    stale["owner"]["display_name"] = "Stale Example"
+    stale["proposed_tags"] = [
+        {
+            "tag_id": "retired_tag",
+            "name": "Family office",
+            "summary": "Legacy generic tag.",
+            "confidence": {
+                "score": 95,
+                "band": "very_high",
+                "reason": "Legacy proposal retained for refresh testing.",
+            },
+            "source_ids": ["S1"],
+        }
+    ]
+    (tmp_path / "1164.research.json").write_text(
+        json.dumps(current),
+        encoding="utf-8",
+    )
+    (tmp_path / "1165.research.json").write_text(
+        json.dumps(stale),
+        encoding="utf-8",
+    )
+
+    _, report = BACKFILL._load_and_migrate(tmp_path, catalogue)
+    family_office = next(
+        row for row in report["tag_counts"] if row["name"] == "Family office"
+    )
+
+    assert report["source_schema_version_counts"] == {"8": 2}
+    assert report["dossier_count"] == 2
+    assert report["owners_unchanged"] == 1
+    assert report["owners_with_document_changes"] == 1
+    assert report["owners_with_tag_set_changes"] == 1
+    assert family_office == {
+        "name": "Family office",
+        "before_count": 1,
+        "applicable_count": 0,
+        "change": -1,
+        "added_assignments": 0,
+        "removed_assignments": 1,
+        "prior_review_count": None,
+        "difference": None,
+    }

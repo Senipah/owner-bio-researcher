@@ -171,15 +171,17 @@ Do not let parallel agents edit the shared owner dataset.
 
 ## Existing-dossier tag migration
 
-For an explicitly authorised tag-only migration of a completed schema-v7
-corpus, use `scripts/backfill_dossier_tags.py`. Run it without `--apply` first
-and inspect its per-owner decisions, tag counts, and differences from the prior
-whole-corpus review. The tool must use only accepted dossier narrative fields
-and their source ledger; it must not browse, redraft biographies, change
-classifications, or infer tags from unresolved placeholders. With `--apply`, it
-creates and byte-verifies a complete v7 backup before atomically writing v8
-dossiers. Independently validate and resolve every migrated tag before treating
-the migration as complete.
+For an explicitly authorised tag-only migration or refresh of a completed
+schema-v7 or schema-v8 corpus, use `scripts/backfill_dossier_tags.py`. Run it
+without `--apply` first and inspect its per-owner additions/removals, before and
+after tag counts, and differences from the prior whole-corpus review. The tool
+must use only accepted dossier narrative fields and their source ledger; it
+must not browse, redraft biographies, change classifications, or infer tags
+from unresolved placeholders. A v8 refresh may replace only `proposed_tags`.
+With `--apply`, the tool creates and byte-verifies a complete source backup,
+atomically writes only changed dossiers, and verifies every written dossier.
+Independently validate and resolve every refreshed tag before treating the
+backfill as complete.
 
 # Guardrails
 
