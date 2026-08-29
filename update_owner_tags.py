@@ -25,7 +25,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description=(
             "Audit or reconcile live SYN owner tags against completed schema-v8 "
-            "or schema-v9 research dossiers. Dry-run is the default."
+            "research dossiers. Dry-run is the default."
         )
     )
     parser.add_argument("--dossier-dir", type=Path, required=True)
@@ -386,9 +386,6 @@ def main() -> int:
         "non_active_reference_count": sum(
             len(target.get("non_active_tag_references", []))
             for target in targets
-        ),
-        "candidate_concept_count": sum(
-            len(target.get("candidate_concepts", [])) for target in targets
         ),
         "governance_diagnostics": build_tag_governance_diagnostics(
             all_targets,

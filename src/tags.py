@@ -14,6 +14,7 @@ TAG_CATALOGUE_SCHEMA_VERSION = 2
 SUPPORTED_TAG_CATALOGUE_SCHEMA_VERSIONS = {1, 2}
 TAG_LIFECYCLE_STATUSES = {"active", "candidate", "inactive", "merged"}
 ASSIGNABLE_TAG_STATUSES = {"active", "merged"}
+TAG_ID_PATTERN = re.compile(r"^tag_(\d+)$")
 FORBIDDEN_CANONICAL_TAGS = {
     "arts and culture philanthropy",
     "children and youth philanthropy",
@@ -45,6 +46,16 @@ def normalize_tag_name(value: str) -> str:
     )
     expanded = without_marks.replace("&", " and ").replace("_", " ")
     return re.sub(r"[^\w]+", " ", expanded, flags=re.UNICODE).strip()
+
+
+def next_tag_id(document: dict[str, Any]) -> str:
+    """Return the next monotonic stable ID across every lifecycle state."""
+    numbers = []
+    for tag in document.get("tags", []):
+        match = TAG_ID_PATTERN.fullmatch(str(tag.get("id", "")))
+        if match:
+            numbers.append(int(match.group(1)))
+    return f"tag_{max(numbers, default=0) + 1:04d}"
 
 
 @dataclass(frozen=True)

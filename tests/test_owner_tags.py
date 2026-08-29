@@ -81,7 +81,7 @@ def test_load_targets_skips_unusable_dossiers_instead_of_clearing_tags(
 def test_load_targets_rejects_pre_backfill_schema(tmp_path: Path) -> None:
     _write(tmp_path, 4, _dossier(4, schema_version=7))
 
-    with pytest.raises(ValueError, match="schema v8 or v9"):
+    with pytest.raises(ValueError, match="schema v8"):
         load_tag_targets(tmp_path, load_tag_catalogue())
 
 
@@ -114,28 +114,11 @@ def test_load_targets_reports_stale_tag_dossier_without_data_loss(
     assert targets[0]["non_active_tag_references"][0]["status"] == "unknown"
 
 
-def test_schema_v9_keeps_candidates_separate_from_desired_tags(
+def test_schema_v9_is_not_an_owner_tag_reconciliation_input(
     tmp_path: Path,
 ) -> None:
     dossier = _dossier(8, name="Video games", schema_version=9)
-    dossier["proposed_tags"][0].update(
-        {
-            "tag_id": "tag_0193",
-            "relationship_type": "founder",
-            "temporal_scope": "current",
-            "taxonomy_value": "A coherent active cohort.",
-        }
-    )
-    dossier["tag_candidates"] = [
-        {"proposed_name": "Very narrow new concept"}
-    ]
     _write(tmp_path, 8, dossier)
 
-    targets, _ = load_tag_targets(tmp_path, load_tag_catalogue())
-
-    assert targets[0]["desired_tags"] == [
-        {"id": "tag_0193", "name": "Video games"}
-    ]
-    assert targets[0]["candidate_concepts"] == [
-        {"proposed_name": "Very narrow new concept"}
-    ]
+    with pytest.raises(ValueError, match="migrate it to schema v8"):
+        load_tag_targets(tmp_path, load_tag_catalogue())

@@ -40,9 +40,6 @@ def test_diagnostics_are_warnings_and_never_edit_inputs() -> None:
                 {"id": "tag_2", "name": "Beta profession"},
                 {"id": "tag_3", "name": "Gamma profession"},
             ],
-            "candidate_concepts": [
-                {"proposed_name": "Alpha profession"}
-            ],
             "non_active_tag_references": [
                 {"status": "inactive", "name": "Retired"}
             ],
@@ -51,7 +48,6 @@ def test_diagnostics_are_warnings_and_never_edit_inputs() -> None:
             "person_id": 11,
             "display_name": "Same Name",
             "desired_tags": [{"id": "tag_1", "name": "Alpha profession"}],
-            "candidate_concepts": [],
             "non_active_tag_references": [],
         },
     ]
@@ -76,9 +72,6 @@ def test_diagnostics_are_warnings_and_never_edit_inputs() -> None:
     assert report["semantic_dimension_overlaps"][0]["dimension"] == (
         "profession_or_role"
     )
-    assert report["candidate_concepts_matching_active_labels"][0][
-        "active_tag"
-    ]["id"] == "tag_1"
     assert report["non_active_dossier_references"][0]["status"] == "inactive"
     assert report["sentence_or_transition_style_names"][0]["tag_id"] == (
         "tag_4"

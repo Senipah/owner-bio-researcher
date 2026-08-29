@@ -167,16 +167,17 @@ For every target owner:
    - do not conceal a material asset or capital transfer under
      `self_made_advantaged`.
 
-7. Follow `docs/ai/OWNER_TAG_GOVERNANCE.md`. Put only approved active
-   catalogue assignments in `proposed_tags`, choosing the minimum coherent set
-   that creates useful click-through cohorts. Put an exceptional unapproved
-   concept in `tag_candidates` without a production ID only after ruling out
-   active aliases, facets and narrative treatment. Never promote, reactivate,
-   or edit the catalogue from an individual dossier; confidence and record
-   frequency do not confer approval.
+7. Follow `docs/ai/OWNER_TAG_GOVERNANCE.md`. Owner research is closed-world:
+   put only approved active catalogue assignments in `proposed_tags`, choosing
+   the minimum coherent set that creates useful click-through cohorts. If no
+   active tag fits, assign none and preserve the fact in existing narrative,
+   evidence, uncertainty or review structures. Never create a formal
+   candidate, promote, reactivate or edit the catalogue from an individual
+   dossier; confidence, repetition and record frequency do not create taxonomy
+   state.
 8. Search supported person-relevant social types and reject namesake, fan,
    company-only, family-member and uncorroborated personal accounts.
-9. Build the schema-v9 source-hidden `biography_brief` after completing the
+9. Build the schema-v8 source-hidden `biography_brief` after completing the
    research.
 10. Draft:
 
@@ -224,7 +225,7 @@ owners. A completed ID in the progress marker makes the run safely resumable.
 
 For an institution, government, municipality or unresolved placeholder, do not
 invent a human identity or personal wealth story. Use the appropriate
-non-person schema-v9 path, preserve its cohort position, validate it and count
+non-person schema-v8 path, preserve its cohort position, validate it and count
 it as completed.
 
 ## Tranche and cumulative editorial review

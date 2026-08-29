@@ -29,9 +29,8 @@ Social Media Profiles. A separate `Research context` section then returns:
 - verified personal social profiles and relevant official websites;
 - the 50–55 word short biography and 90–190 word two-paragraph profile;
 - confidence, sources, unresolved questions, and limitations; and
-- a minimal set of approved active canonical tags and exceptional separate
-  candidate concepts; and
-- optional schema-v9 JSON when explicitly requested.
+- a minimal set of approved active canonical tags; and
+- optional schema-v8 JSON when explicitly requested.
 
 When the Forbes check is `verified`, Social Media Profiles always contains a
 `Forbes` row with the exact profile URL. The later context still states the
@@ -118,16 +117,16 @@ The GPT returns the complete human-readable profile by default. Copyable values
 come first in owner-page order; confidence, reasoning, verification context,
 uncertainties, and sources come afterwards. The user does not need to ask
 separately for personal details, social links, classifications, or biographies.
-It creates a schema-v9 manual dossier only when the user explicitly
+It creates a schema-v8 manual dossier only when the user explicitly
 asks for JSON or a dossier. That optional dossier is not owner-input-validated
 or compilation-ready.
 
-The uploaded active catalogue is the whitelist for literal assignments. When
-research supports an exceptional concept that passes the taxonomy rule but is
-absent from active Knowledge, the GPT records it separately in
-`tag_candidates`, without a production tag ID, and states that it requires a
-global taxonomy decision before `tag-catalogue.json` can be updated. It must
-resolve reasonable semantic aliases first and must never invent an ID.
+The uploaded active catalogue is a closed-world whitelist for literal
+assignments. The GPT resolves approved aliases to canonical active IDs and
+assigns no tag when none fits. It never invents a tag, emits a formal candidate
+or requests catalogue creation during ordinary owner research. Important
+unrepresented facts remain in biography or research context; an optional
+plain-language gap observation is not a taxonomy proposal.
 
 The example in [`manual-dossier.example.json`](manual-dossier.example.json)
 is maintainer documentation for that optional contract; do not upload it as

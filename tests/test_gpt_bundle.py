@@ -71,19 +71,19 @@ def test_generated_gpt_knowledge_is_current() -> None:
         assert calibration in knowledge
 
 
-def test_gpt_catalogue_exposes_only_assignable_tags() -> None:
+def test_gpt_catalogue_exposes_only_active_closed_world_tags() -> None:
     catalogue = json.loads(TAG_CATALOGUE.read_text(encoding="utf-8"))
+    source = json.loads(
+        (REPO_ROOT / "config" / "owner-tags.json").read_text(encoding="utf-8")
+    )
+    active_ids = {tag["id"] for tag in source["tags"] if tag["status"] == "active"}
 
+    assert catalogue["schema_version"] == 3
+    assert {tag["id"] for tag in catalogue["tags"]} == active_ids
     assert len(catalogue["tags"]) == 244
-    assert {tag["status"] for tag in catalogue["tags"]} <= {
-        "active",
-        "merged",
-    }
+    assert all("status" not in tag for tag in catalogue["tags"])
     assert all("lifecycle" not in tag for tag in catalogue["tags"])
-    assert len(catalogue["reserved_non_assignable_labels"]) == 6640
-    assert {
-        tag["status"] for tag in catalogue["reserved_non_assignable_labels"]
-    } == {"candidate", "inactive"}
+    assert "reserved_non_assignable_labels" not in catalogue
 
 
 def test_gpt_instructions_are_concise_and_decision_complete() -> None:
@@ -100,9 +100,8 @@ def test_gpt_instructions_are_concise_and_decision_complete() -> None:
         "other statuses produce no link",
         "`wealth_creation_industry`",
         "minimum useful set of durable, material active catalogue tags",
-        "Never\n   put an unknown or non-active concept",
-        "**New catalogue candidate**",
-        "global review",
+        "closed-world whitelist",
+        "Never invent,\n   propose or request creation of a tag",
         "## Biography requirements",
         "distinguish an evidenced\n   independent start from an advantaged one",
         "a broad wealth descriptor such as `billionaire`",
@@ -114,7 +113,7 @@ def test_gpt_instructions_are_concise_and_decision_complete() -> None:
         "`owner.person_id` to `null`",
         "`proposed_details` and `proposed_socials` empty",
         "Populate `proposed_tags` only with approved active catalogue tags",
-        "Put exceptional unapproved concepts in `tag_candidates`",
+        "Do not add `tag_candidates`",
         "## Self-check and delivery",
         "Always complete the human-readable profile",
         "Never refuse, stop, or return partial findings",
@@ -218,9 +217,9 @@ def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
     assert "casino gaming resolves to `Gambling` plus `Casino operations`" in (
         preview_tests
     )
-    assert "## 14. Open-world tag discovery" in preview_tests
-    assert "global taxonomy review is required" in preview_tests
-    assert "must not place the concept in `proposed_tags`" in preview_tests
+    assert "## 14. Closed-world taxonomy gap" in preview_tests
+    assert "assigns no\ntag when none fits" in preview_tests
+    assert "must not propose a tag name" in preview_tests
     assert "## 15. Government ownership boundary" in preview_tests
     assert "only the government record receives `Government-owned`" in (
         preview_tests
@@ -235,7 +234,7 @@ def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
 def test_manual_dossier_example_contract_and_strict_validation() -> None:
     dossier = json.loads(EXAMPLE.read_text(encoding="utf-8"))
 
-    assert dossier["schema_version"] == 9
+    assert dossier["schema_version"] == 8
     assert dossier["owner"]["person_id"] is None
     assert dossier["input_snapshot"] == {
         "source_path": "manual-chat-input",
@@ -255,7 +254,7 @@ def test_manual_dossier_example_contract_and_strict_validation() -> None:
     assert all(tag["temporal_scope"] for tag in dossier["proposed_tags"])
     assert all(tag["taxonomy_value"] for tag in dossier["proposed_tags"])
     assert all(tag["source_ids"] for tag in dossier["proposed_tags"])
-    assert dossier["tag_candidates"] == []
+    assert "tag_candidates" not in dossier
     assert dossier["candidates_requiring_review"]
     assert all(
         candidate["confidence"]["score"] >= 70

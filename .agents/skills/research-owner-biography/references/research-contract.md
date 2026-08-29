@@ -161,7 +161,7 @@ system's vessel data. Independently significant maritime careers or sustained
 competitive, research, or philanthropic work may be described, but the
 biography must focus on that durable activity rather than the transient asset.
 
-The schema-v8/v9 brief is an unordered editorial fact pool, not a paragraph
+The schema-v8 brief is an unordered editorial fact pool, not a paragraph
 outline. It contains:
 
 - `durable_identity`: the clearest durable description of the person;
@@ -332,17 +332,13 @@ before tag research. It defines information value, click-through coherence,
 the 5 to 50 record heuristic, minimum useful literal sets, facets, named
 entities, narrative analysis, temporal roles and the binding examples.
 
-Schema v9 separates the two outputs:
-
-- `proposed_tags` contains only approved active catalogue assignments;
-- `tag_candidates` contains exceptional unapproved concepts for later global
-  review and never contains a production tag ID.
-
-Search active canonical names and aliases first. Use merged labels only through
-their canonical active target. Candidate and inactive catalogue entries are
-non-assignable tombstones; a matching candidate may request deliberate
-reconsideration by recording its existing non-active ID, but research must not
-reactivate or recreate it.
+Owner research is closed-world for literal tags. `proposed_tags` contains only
+approved active catalogue assignments. Use the generated active-only
+`gpt/tag-catalogue.json` as the researcher assignment context. Search active
+canonical names and aliases, emit the canonical active ID, and omit the tag
+when no approved concept fits. Merged, candidate and inactive catalogue
+entries are not owner-research choices and must never be assigned, reactivated
+or recreated.
 
 For each active assignment store:
 
@@ -355,24 +351,18 @@ For each active assignment store:
 - evidence confidence of at least 70; and
 - direct `source_ids`.
 
-For each exceptional candidate store:
+Absence from the active catalogue is not permission to create a formal
+candidate. Preserve the underlying fact in the biography brief, source ledger,
+uncertainties, `candidates_requiring_review`, or another existing narrative
+structure where it naturally belongs. A plain-language note that the active
+taxonomy does not represent a characteristic is an observation only: do not
+give it a proposed tag name, aliases, facets, ID or lifecycle status.
 
-- `proposed_name` and its exact `normalized_name`;
-- optional `possible_aliases` and `suggested_facets`;
-- owner-specific `summary`, `relationship_type` and `temporal_scope`;
-- `information_value` describing the cross-owner question it could answer;
-- `existing_active_tag_review` explaining why no active tag covers it;
-- `metadata_likelihood` as `taxonomy_candidate`, `dossier_metadata`, or
-  `uncertain`;
-- evidence confidence and direct source IDs; and
-- `existing_non_active_tag_id` when deliberately reconsidering a matching
-  candidate or inactive tombstone.
-
-Absence from the active catalogue is not permission to mutate it. Preserve a
-useful fact in the dossier narrative when it does not merit a candidate. A
-single owner dossier, multiple occurrences and high evidence confidence never
-activate a concept. Promotion requires a separate global decision document
-with a human `approval_reference`, followed by dry-run-first catalogue tooling.
+Formal candidate creation occurs only in a separate corpus-level taxonomy
+review, or through explicit human global curation. That process must compare
+multiple owner records, inspect every lifecycle state, and use dry-run-first
+catalogue tooling. Frequency and evidence confidence never create or activate
+taxonomy state.
 
 After an approved catalogue change, rebuild and check the tracked Custom GPT
 Knowledge. The helper requires `--approval-reference`; it allocates IDs only
@@ -385,10 +375,10 @@ Retain the established exclusions for generic philanthropy-domain tags,
 Treat bare gambling-industry `Gaming` as `Gambling`, plus every directly
 supported active granular tag. Use `Video games` only for explicit
 interactive-entertainment evidence. Apply `Government-owned` only to a public
-owner entity under the policy's status contract. Empty `proposed_tags` and
-`tag_candidates` lists are valid when nothing qualifies; unresolved
-placeholders normally require both empty, subject only to the documented sole
-active `Government-owned` exception.
+owner entity under the policy's status contract. An empty `proposed_tags` list
+is valid when nothing qualifies; unresolved placeholders normally require it
+to be empty, subject only to the documented sole active `Government-owned`
+exception.
 
 ## Staff-facing owner-page response
 
@@ -419,8 +409,8 @@ values, `Unknown`, dashes, or copyable placeholders. Render scalar values as
 list canonical tags one per line, and use a two-column `Type` / `URL` table for
 social profiles. Use exact visible dropdown labels for the four wealth fields.
 Keep explanations, confidence, citations, source IDs, verification notes, and
-research narration out of this copy block. New null-ID catalogue candidates do
-not yet belong in its canonical `Tags` list.
+research narration out of this copy block. Unrepresented facts do not belong
+in its canonical `Tags` list.
 
 Do not reproduce fields the research workflow does not populate, including
 `Unknown Name`, sort-name fields, internal notes, calculated ages, net-worth
@@ -429,8 +419,8 @@ metadata.
 
 After the copy block, put supporting material under `## Research context`:
 identity resolution and confidence, the Forbes check, wealth and tag reasoning
-with confidence, strongest evidence, new catalogue candidates and their
-Knowledge-update notice, other verified candidate facts, uncertainties,
+with confidence, strongest evidence, other verified candidate facts,
+plain-language taxonomy-gap observations when useful, uncertainties,
 limitations, and the linked source list. This secondary section may explain
 why a field was omitted, but it must never interrupt the owner-page sequence.
 
@@ -440,7 +430,7 @@ Use this top-level structure:
 
 ```json
 {
-  "schema_version": 9,
+  "schema_version": 8,
   "record_type": "person",
   "owner": {
     "person_id": null,
@@ -585,7 +575,6 @@ Use this top-level structure:
   "proposed_details": [],
   "proposed_socials": [],
   "proposed_tags": [],
-  "tag_candidates": [],
   "candidates_requiring_review": [],
   "sources": [],
   "uncertainties": [],
@@ -601,8 +590,8 @@ contain `id`, `url`, `title`, `publisher`, `tier`, `accessed_at`, and
 `supports`. Proposed detail items must also contain `action`; corrections must
 contain `existing_value`; proposed social items must contain `type_id` copied
 from `input_snapshot.social_type_lookup`. Proposed tag items must also contain
-the active-assignment fields defined above. Candidate items use the separate
-`tag_candidates` contract and never receive an active production tag ID.
+the active-assignment fields defined above. `tag_candidates` is not an
+owner-dossier field.
 
 Research agents emit `review.status=complete` only after the dossier reaches a
 terminal research decision and passes validation. This status is automatic
@@ -618,7 +607,7 @@ uncertainty, and review objects, with these differences:
 
 ```json
 {
-  "schema_version": 9,
+  "schema_version": 8,
   "record_type": "institution",
   "research_status": "complete",
   "biography_brief": null,
@@ -656,8 +645,7 @@ uncertainty, and review objects, with these differences:
   },
   "proposed_details": [],
   "proposed_socials": [],
-  "proposed_tags": [],
-  "tag_candidates": []
+  "proposed_tags": []
 }
 ```
 

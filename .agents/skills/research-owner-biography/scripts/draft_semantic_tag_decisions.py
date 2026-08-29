@@ -62,6 +62,7 @@ def prepare_draft(
         )
     return {
         "schema_version": 1,
+        "source_contract": "legacy_pre_closed_world_checkpoint_candidates",
         "approval_status": "draft",
         "approval_reference": None,
         "generated_at": datetime.now(UTC).isoformat(),
@@ -74,8 +75,9 @@ def prepare_draft(
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
-            "Draft an explicit, non-applicable decision document for central "
-            "semantic review of open-taxonomy tag candidates."
+            "Draft a non-applicable global decision document from legacy, "
+            "pre-closed-world semantic-review checkpoint candidates. New owner "
+            "research must not create this input."
         )
     )
     parser.add_argument("output", type=Path)

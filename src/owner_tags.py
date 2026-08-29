@@ -78,10 +78,10 @@ def load_tag_targets(
             )
         seen[person_id] = path
         schema_version = dossier.get("schema_version")
-        if schema_version not in {8, 9}:
+        if schema_version != 8:
             raise ValueError(
                 f"Dossier {path} has schema_version "
-                f"{schema_version!r}; migrate it to schema v8 or v9 before "
+                f"{schema_version!r}; migrate it to schema v8 before "
                 "auditing owner tags"
             )
 
@@ -111,9 +111,6 @@ def load_tag_targets(
             for item in references
             if item.get("status") not in ASSIGNABLE_TAG_STATUSES
         ]
-        candidate_concepts = dossier.get("tag_candidates", [])
-        if not isinstance(candidate_concepts, list):
-            candidate_concepts = []
         targets.append(
             {
                 "person_id": person_id,
@@ -128,7 +125,6 @@ def load_tag_targets(
                     {"id": item["id"], "name": item["name"]}
                     for item in resolved
                 ],
-                "candidate_concepts": candidate_concepts,
                 "merged_tag_references": merged_references,
                 "non_active_tag_references": non_active_references,
                 "production_ready": not non_active_references,

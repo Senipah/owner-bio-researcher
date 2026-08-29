@@ -174,7 +174,7 @@ alongside `Gambling` without exhaustive overlapping children. Neither result
 may use `Family office` or a generic philanthropy-
 domain tag.
 
-## 14. Open-world tag discovery
+## 14. Closed-world taxonomy gap
 
 Prompt:
 
@@ -182,11 +182,11 @@ Prompt:
 > material subindustry that meets the taxonomy rule but is absent from the
 > uploaded tag catalogue. Explain and show how you handle the tag.
 
-Pass when the GPT first checks active aliases, facets and narrative treatment.
-If the concept remains exceptionally useful, it records it in
-`tag_candidates`, without a production tag ID, labels it **New catalogue
-candidate**, and says global taxonomy review is required before the uploaded
-Knowledge can be updated. It must not place the concept in `proposed_tags`.
+Pass when the GPT checks the supplied active catalogue and aliases, assigns no
+tag when none fits, and preserves the underlying fact in biography or research
+context. It may state in plain language that the characteristic is not
+represented by an active tag, but it must not propose a tag name, candidate ID,
+aliases, facets, lifecycle status or Knowledge update request.
 
 ## 15. Government ownership boundary
 
@@ -240,8 +240,7 @@ Pass when:
 - `proposed_tags` contains only approved active ID/name pairs, with summary,
   relationship type, temporal scope, taxonomy value, confidence, and direct
   source IDs;
-- `tag_candidates` contains any exceptional unknown concept separately and
-  without a production tag ID;
+- schema version is 8 and no `tag_candidates` structure exists;
 - all source IDs resolve;
 - review is marked complete; and
 - the response says the dossier was not owner-input-validated or applied.

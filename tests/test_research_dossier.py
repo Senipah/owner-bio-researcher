@@ -307,13 +307,13 @@ def test_validator_requires_schema_v8_proposed_tags(tmp_path: Path) -> None:
     assert "proposed_tags" in result.stderr
 
 
-def test_validator_accepts_name_only_tag_with_direct_sources(
+def test_validator_resolves_active_alias_with_canonical_id(
     tmp_path: Path,
 ) -> None:
     dossier = deepcopy(_calibration())
     dossier["proposed_tags"] = [
         {
-            "tag_id": None,
+            "tag_id": "tag_0078",
             "name": "Formula_1",
             "summary": "A durable material Formula 1 role is established.",
             "confidence": {
@@ -330,92 +330,15 @@ def test_validator_accepts_name_only_tag_with_direct_sources(
     assert result.returncode == 0, result.stderr
 
 
-def test_validator_accepts_null_id_new_catalogue_candidate(tmp_path: Path) -> None:
-    dossier = deepcopy(_calibration())
-    dossier["proposed_tags"] = [
-        {
-            "tag_id": None,
-            "name": "Quantum computing",
-            "summary": "A durable material quantum-computing business is established.",
-            "confidence": {
-                "score": 92,
-                "band": "high",
-                "reason": "Direct company evidence supports the subindustry.",
-            },
-            "source_ids": ["S1"],
-        }
-    ]
-
-    result = _validate(tmp_path, dossier)
-
-    assert result.returncode == 0, result.stderr
-
-
-def _schema_v9_dossier() -> dict:
-    dossier = deepcopy(_calibration())
-    dossier["schema_version"] = 9
-    dossier["tag_candidates"] = []
-    for proposal in dossier["proposed_tags"]:
-        proposal.update(
-            {
-                "relationship_type": "professional_sports_owner",
-                "temporal_scope": "current",
-                "taxonomy_value": (
-                    "Creates a coherent cohort of owners with defining "
-                    "professional-sports interests."
-                ),
-            }
-        )
-    return dossier
-
-
-def test_schema_v9_routes_unknown_concepts_to_separate_candidates(
+def test_validator_rejects_unknown_tag_even_with_high_confidence(
     tmp_path: Path,
 ) -> None:
-    dossier = _schema_v9_dossier()
-    dossier["proposed_tags"] = []
-    dossier["tag_candidates"] = [
-        {
-            "proposed_name": "Quantum maritime choreography",
-            "normalized_name": "quantum maritime choreography",
-            "possible_aliases": [],
-            "suggested_facets": ["subindustry", "technology"],
-            "summary": "The owner founded a defining quantum business.",
-            "relationship_type": "founder",
-            "temporal_scope": "current",
-            "information_value": (
-                "Could group founders of commercially significant quantum firms."
-            ),
-            "existing_active_tag_review": (
-                "Technology is broader and does not preserve this distinction."
-            ),
-            "metadata_likelihood": "taxonomy_candidate",
-            "confidence": {
-                "score": 99,
-                "band": "very_high",
-                "reason": "Official evidence establishes the business.",
-            },
-            "source_ids": ["S1"],
-        }
-    ]
-
-    result = _validate(tmp_path, dossier)
-
-    assert result.returncode == 0, result.stderr
-
-
-def test_schema_v9_confidence_cannot_activate_an_unknown_concept(
-    tmp_path: Path,
-) -> None:
-    dossier = _schema_v9_dossier()
+    dossier = deepcopy(_calibration())
     dossier["proposed_tags"] = [
         {
             "tag_id": None,
             "name": "Quantum maritime choreography",
             "summary": "The fact is established beyond doubt.",
-            "relationship_type": "founder",
-            "temporal_scope": "current",
-            "taxonomy_value": "A possible cohort.",
             "confidence": {
                 "score": 100,
                 "band": "very_high",
@@ -428,78 +351,123 @@ def test_schema_v9_confidence_cannot_activate_an_unknown_concept(
     result = _validate(tmp_path, dossier)
 
     assert result.returncode == 1
-    assert "put unapproved concepts in tag_candidates" in result.stderr
+    assert "closed-world catalogue" in result.stderr
     assert "not an approved active assignment" in result.stderr
 
 
-def test_schema_v9_rejects_inactive_assignment_without_destroying_legacy_v8(
+def test_validator_rejects_candidate_and_inactive_assignments(
     tmp_path: Path,
 ) -> None:
-    inactive = json.loads(
+    catalogue = json.loads(
         (REPO_ROOT / "config" / "owner-tags.json").read_text(encoding="utf-8")
     )
-    inactive_tag = next(tag for tag in inactive["tags"] if tag["status"] == "inactive")
-    dossier = _schema_v9_dossier()
-    dossier["proposed_tags"] = [
-        {
-            "tag_id": inactive_tag["id"],
-            "name": inactive_tag["name"],
-            "summary": "Legacy evidence remains in the record.",
-            "relationship_type": "legacy_association",
-            "temporal_scope": "historical",
-            "taxonomy_value": "Requires review.",
-            "confidence": {
-                "score": 99,
-                "band": "very_high",
-                "reason": "The association is factual.",
-            },
-            "source_ids": ["S1"],
-        }
-    ]
+    for lifecycle_status in ("candidate", "inactive"):
+        tag = next(
+            item for item in catalogue["tags"] if item["status"] == lifecycle_status
+        )
+        dossier = deepcopy(_calibration())
+        dossier["proposed_tags"] = [
+            {
+                "tag_id": tag["id"],
+                "name": tag["name"],
+                "summary": "A factual association is not taxonomy approval.",
+                "confidence": {
+                    "score": 99,
+                    "band": "very_high",
+                    "reason": "The association is strongly evidenced.",
+                },
+                "source_ids": ["S1"],
+            }
+        ]
 
-    current_result = _validate(tmp_path, dossier)
-    dossier["schema_version"] = 8
-    dossier.pop("tag_candidates")
-    legacy_result = _validate(tmp_path, dossier)
+        result = _validate(tmp_path, dossier)
 
-    assert current_result.returncode == 1
-    assert "lifecycle status 'inactive'" in current_result.stderr
-    assert legacy_result.returncode == 0, legacy_result.stderr
-    assert "pending corpus consolidation" in legacy_result.stderr
+        assert result.returncode == 1
+        assert f"lifecycle status '{lifecycle_status}'" in result.stderr
 
 
-def test_schema_v9_keeps_narrower_facets_as_candidate_metadata(
+def test_owner_dossier_rejects_formal_candidate_structure(tmp_path: Path) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["tag_candidates"] = []
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert "tag_candidates is not part of the owner-research" in result.stderr
+
+
+def test_owner_dossier_cannot_hide_taxonomy_candidate_in_review_items(
     tmp_path: Path,
 ) -> None:
-    dossier = _schema_v9_dossier()
-    dossier["proposed_tags"] = [dossier["proposed_tags"][0]]
-    dossier["tag_candidates"] = [
+    dossier = deepcopy(_calibration())
+    dossier["candidates_requiring_review"] = [
         {
-            "proposed_name": "Quantum sailing founder",
-            "normalized_name": "quantum sailing founder",
-            "possible_aliases": [],
-            "suggested_facets": ["technology", "sailing"],
-            "summary": "Narrow detail retained for review.",
-            "relationship_type": "founder",
-            "temporal_scope": "current",
-            "information_value": "May be too narrow for a literal cohort.",
-            "existing_active_tag_review": (
-                "The approved broader sports-owner assignment is retained."
-            ),
-            "metadata_likelihood": "dossier_metadata",
-            "confidence": {
-                "score": 99,
-                "band": "very_high",
-                "reason": "Evidence is strong but taxonomy value is uncertain.",
-            },
-            "source_ids": ["S1"],
+            "candidate_type": "taxonomy_candidate",
+            "proposed_tag_name": "Hidden formal proposal",
         }
     ]
 
     result = _validate(tmp_path, dossier)
 
+    assert result.returncode == 1
+    assert "must not encode a formal taxonomy candidate" in result.stderr
+
+
+def test_schema_v9_is_rejected_after_candidate_contract_retirement(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["schema_version"] = 9
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert "schema_version must be 8" in result.stderr
+
+
+def test_empty_tags_and_unrepresented_fact_are_valid_owner_research(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["proposed_tags"] = []
+    dossier["uncertainties"].append(
+        "A notable specialist manufacturing characteristic is preserved here "
+        "but is not represented by a suitable active tag."
+    )
+
+    result = _validate(tmp_path, dossier)
+
     assert result.returncode == 0, result.stderr
-    assert len(dossier["proposed_tags"]) == 1
+
+
+def test_repeated_unknown_owner_outputs_do_not_mutate_taxonomy(
+    tmp_path: Path,
+) -> None:
+    source = REPO_ROOT / "config" / "owner-tags.json"
+    catalogue = tmp_path / "owner-tags.json"
+    catalogue.write_bytes(source.read_bytes())
+    before = catalogue.read_bytes()
+    dossier = deepcopy(_calibration())
+    dossier["proposed_tags"] = [
+        {
+            "tag_id": None,
+            "name": "Repeated owner-level phrase",
+            "summary": "The same unsupported taxonomy phrase recurred.",
+            "confidence": {
+                "score": 99,
+                "band": "very_high",
+                "reason": "The underlying fact is strongly evidenced.",
+            },
+            "source_ids": ["S1"],
+        }
+    ]
+
+    first = _validate(tmp_path, dossier, catalogue=catalogue)
+    second = _validate(tmp_path, dossier, catalogue=catalogue)
+
+    assert first.returncode == 1
+    assert second.returncode == 1
+    assert catalogue.read_bytes() == before
 
 
 def test_validator_rejects_normalized_duplicate_tags(tmp_path: Path) -> None:

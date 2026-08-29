@@ -728,6 +728,25 @@ def test_compiles_pending_preview_without_changing_baseline() -> None:
     assert document["owners"][0]["details"]["middle_names"]["value"] == ""
 
 
+def test_batch_compiler_rejects_owner_level_candidate_output() -> None:
+    document = new_document()
+    document["owners"] = [_owner(10, "First Owner", 1)]
+    dossier = _dossier(10, "First Owner")
+    dossier["tag_candidates"] = [
+        {"proposed_name": "Repeated owner-level phrase"}
+    ]
+
+    with pytest.raises(ValueError, match="batch research is closed-world"):
+        compile_research_batch(
+            document,
+            {10: dossier},
+            {10: Path("output/10.research.json")},
+            source_path="output/source.json",
+            limit=1,
+            mark_ai_enriched=False,
+        )
+
+
 def test_compiles_long_biography_when_owner_field_is_available() -> None:
     document = new_document()
     owner = _owner(

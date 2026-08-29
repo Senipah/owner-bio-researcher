@@ -174,31 +174,6 @@ def build_tag_governance_diagnostics(
         for reference in target.get("non_active_tag_references", [])
     ]
 
-    candidate_active_duplicates = []
-    for target in targets:
-        for index, candidate in enumerate(target.get("candidate_concepts", [])):
-            if not isinstance(candidate, dict):
-                continue
-            name = str(candidate.get("proposed_name", "")).strip()
-            if not name:
-                continue
-            inspection = catalogue.inspect(tag_id=None, name=name)
-            canonical = inspection.get("canonical")
-            if inspection.get("status") in {"active", "merged"}:
-                candidate_active_duplicates.append(
-                    {
-                        "severity": "warning",
-                        "person_id": target["person_id"],
-                        "display_name": target.get("display_name", ""),
-                        "candidate_index": index,
-                        "proposed_name": name,
-                        "active_tag": {
-                            "id": canonical.id,
-                            "name": canonical.name,
-                        },
-                    }
-                )
-
     sentence_like_names = [
         {
             "severity": "warning",
@@ -219,7 +194,6 @@ def build_tag_governance_diagnostics(
         "near_identical_active_names": near_identical_names,
         "identical_active_cohorts": identical_cohorts,
         "non_active_dossier_references": non_active_references,
-        "candidate_concepts_matching_active_labels": candidate_active_duplicates,
         "sentence_or_transition_style_names": sentence_like_names,
     }
     return {

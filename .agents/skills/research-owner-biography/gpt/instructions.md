@@ -34,11 +34,11 @@ Follow in order:
    independent start from an advantaged one; use broad `self_made` when
    unresolved and `unknown` below confidence 70.
 5. Apply the minimum useful set of durable, material active catalogue tags.
-   Resolve reasonable aliases and apply the click-through cohort test. Never
-   put an unknown or non-active concept in the active assignment list. Record
-   an exceptional concept separately as a **New catalogue candidate**, without
-   a production tag ID, and say tag-catalogue Knowledge needs global review
-   before it can be updated. Use
+   The supplied catalogue is a closed-world whitelist. Resolve aliases to
+   canonical active IDs and apply the click-through cohort test. Never invent,
+   propose or request creation of a tag, and never emit a formal candidate. If
+   no approved tag fits, assign no tag and preserve the fact in ordinary
+   research context. Use
    `Government-owned` only for a documented public owner/entity, not an
    official, contractor, state-company employee, sovereign chair, or royal.
 6. Search personal social profiles, websites, and the relevant official
@@ -74,7 +74,7 @@ Use public sources only.
 ## Optional manual dossier contract
 
 Only when the user explicitly requests JSON or a dossier, produce the
-schema-v9 Knowledge structure:
+schema-v8 Knowledge structure:
 
 - Set `owner.person_id` to `null`.
 - Set `input_snapshot.source_path` to `manual-chat-input`.
@@ -84,10 +84,10 @@ schema-v9 Knowledge structure:
   its active `tag_id`, canonical name, owner-specific summary, relationship
   type, temporal scope, taxonomy-value judgement, confidence of at least 70,
   and direct source IDs.
-- Put exceptional unapproved concepts in `tag_candidates`, with no production
-  tag ID. Explain their cross-owner information value and why no active tag,
-  facet or narrative treatment is sufficient. Confidence never confers active
-  status.
+- Do not add `tag_candidates` or any equivalent formal proposal structure. An
+  important unrepresented characteristic may be noted in plain language under
+  existing research context without a proposed tag name, aliases, facets, ID
+  or lifecycle status.
 - Put supported fields and links in `candidates_requiring_review`; record that
   owner input validation was unavailable and set `review.status=complete`.
 - Never invent IDs, values, inventories, or workflow flags.
@@ -101,11 +101,11 @@ Always complete the human-readable profile with biographies and links.
 Before answering, check that:
 
 - every source ID resolves to one source-ledger item;
-- every non-unknown classification and every candidate scores at least 70;
+- every non-unknown classification scores at least 70;
 - every proposed tag is active, durable, material, source-supported,
   non-duplicated, and uses a canonical name/alias where reasonably equivalent;
-- every new concept is isolated in `tag_candidates` and is genuinely
-  exceptional;
+- no unknown, candidate, inactive or merged tag is assigned, and absence of a
+  suitable tag is accepted without inventing one;
 - biography lengths, sources, and confidence are consistent;
 - all seven editorial scores are 4 or 5;
 - the short/long pair has no semantic restatement or expanded fact bundle;
@@ -119,11 +119,10 @@ Return two sections in this order:
    Industry`); Long Biography; canonical Tags; Social Media Profiles. Include
    verified Forbes there as type/URL. No reasoning, citations or placeholders.
 2. `## Research context`: identity/confidence, Forbes result, evidence,
-   classification/tag reasoning, new candidates and Knowledge-update notice,
-   gaps, limitations, and Markdown source links.
+   classification/tag reasoning, gaps, limitations, and Markdown source links.
 
 If JSON was requested, add it after the profile. Use Code Interpreter for a
 download when available; otherwise return it as a fenced JSON code block.
-Self-check and label it schema-v9-compatible, complete, not
+Self-check and label it schema-v8-compatible, complete, not
 owner-input-validated, and not compilation-ready. Missing tools must never
 block or shorten the profile.

@@ -258,7 +258,7 @@ Owner research is stored as one completed-research dossier per person under
 `output\owner-research`. Compile those dossiers into a new owner document and
 a standalone HTML report without changing the enriched input:
 
-Each schema-v8 or schema-v9 person dossier contains an unordered, source-hidden
+Each schema-v8 person dossier contains an unordered, source-hidden
 `biography_brief` fact pool with multiple opening options, a 50-55 word short
 `biography`, a fact-allocated, complementary two-paragraph `long_biography` of
 90-190 words, the seven-dimension `editorial_assessment`, and independent
@@ -273,26 +273,40 @@ Unresolved-placeholder dossiers contain only the editorial note; their
 biography values remain null and are never applied.
 
 Owner-tag research is governed by
-[`docs/ai/OWNER_TAG_GOVERNANCE.md`](docs/ai/OWNER_TAG_GOVERNANCE.md). Schema v8
-remains readable as the legacy contract. New research emits schema v9, where
-`proposed_tags` contains only approved active catalogue assignments and
-`tag_candidates` separately records exceptional concepts for later global
-review. `config\owner-tags.json` is a status-aware registry: production
-loaders expose active tags, aliases and canonical merge redirects, while
-candidate and inactive names remain non-assignable and discoverable to prevent
-accidental recreation. Confidence establishes factual support, not taxonomy
-approval.
+[`docs/ai/OWNER_TAG_GOVERNANCE.md`](docs/ai/OWNER_TAG_GOVERNANCE.md). New
+research emits schema v8 and is closed-world for literal tags:
+`proposed_tags` contains only approved active catalogue assignments, and no
+owner dossier may create a formal candidate. `config\owner-tags.json` is a
+status-aware registry: production loaders expose active tags, aliases and
+canonical merge redirects, while candidate and inactive names remain non-
+assignable and discoverable to global governance tooling. Confidence
+establishes factual support, not taxonomy approval.
 
 `Government-owned` identifies owner records that are governments or comparable
 public bodies, plus institutions explicitly documented as government- or
 state-owned. It is not inferred from public office, government contracting,
 employment by a state company, sovereign-asset stewardship, or royal status.
 
-The taxonomy remains open to deliberate improvement, but a single dossier can
-never create an active concept. Research first canonicalises reasonable
-aliases, uses the minimum useful literal set, and keeps weaker detail in facets
-or narrative. New concepts stay in `tag_candidates` without production IDs
-until a global review records explicit human approval and promotes them.
+The taxonomy remains open to deliberate improvement, but individual and batch
+owner research may neither invent concepts nor create formal candidates.
+Research first canonicalises reasonable active aliases, uses the minimum useful
+literal set, and keeps unrepresented detail in ordinary narrative or research
+structures. A separate corpus-level review may later register formal
+candidates after cross-owner analysis; promotion still requires explicit human
+global approval.
+
+Use the dry-run-first corpus registration command only with an explicitly
+reviewed multi-dossier taxonomy manifest. It searches every lifecycle state and
+can queue candidates, but never activates them:
+
+```powershell
+.\venv\Scripts\python.exe `
+  .agents\skills\research-owner-biography\scripts\register_corpus_tag_candidates.py `
+  PATH_TO_REVIEWED_CORPUS_MANIFEST
+```
+
+After reviewing that output, queue the candidates only with both `--apply` and
+an explicit `--audit PATH`; registration never promotes them to active.
 
 Completed schema-v7 dossiers can be assigned catalogue tags and migrated to
 v8; existing schema-v8 dossiers can have their tag sets safely refreshed. No
@@ -367,7 +381,7 @@ reviewed dossier directory, catalogue, threshold, and removal set:
   --reviewed-manifest output\audits\reviewed-owner-tag-dry-run.json
 ```
 
-Only usable `person` or `institution` dossiers with schema 8 or 9, usable research,
+Only usable `person` or `institution` dossiers with schema 8, usable research,
 and `review.status=complete` or `approved` are processed. Rejected, unresolved,
 or otherwise unusable dossiers are audited and skipped rather than interpreted
 as an instruction to erase live tags. Add and Delete actions save immediately
@@ -390,10 +404,10 @@ an explicit unknown or ambiguous-tag error rather than inventing an ID.
 
 Schema-v5 and earlier dossiers are intentionally stale under this contract.
 Their source ledgers may be reused, but they must be migrated through the
-schema-v8/v9 unordered fact-pool and cross-owner editorial pass before
+schema-v8 unordered fact-pool and cross-owner editorial pass before
 compilation. Schema-v6 dossiers already satisfy the current editorial
 structure but require a separate classification migration that adds
-`wealth_creation_industry` before schema-v8/v9 compilation.
+`wealth_creation_industry` before schema-v8 compilation.
 
 ```powershell
 .\venv\Scripts\python.exe .\compile_owner_research.py `

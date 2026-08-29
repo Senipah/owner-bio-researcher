@@ -219,3 +219,75 @@ def test_single_dossier_cannot_activate_without_global_approval() -> None:
             facets=["occupation"],
             approval_reference="",
         )
+
+
+def test_formal_candidate_requires_explicit_promotion() -> None:
+    candidate = _tag("tag_0008", "Reviewed concept")
+    candidate.update(
+        {
+            "status": "candidate",
+            "lifecycle": {
+                "reason": "corpus_level_taxonomy_discovery",
+                "review_reference": "corpus review draft",
+            },
+        }
+    )
+    document = {"schema_version": 2, "tags": [candidate]}
+
+    updated, result = ADD_TAG.prepare_promotion(
+        document,
+        tag_id="tag_0008",
+        approval_reference="CEO taxonomy approval 2026-08-29",
+    )
+
+    assert updated is not None
+    assert result == {
+        "id": "tag_0008",
+        "name": "Reviewed concept",
+        "status": "promoted",
+    }
+    assert updated["tags"][0]["status"] == "active"
+    assert updated["tags"][0]["lifecycle"]["promoted_from"] == "candidate"
+    assert updated["tags"][0]["lifecycle"]["approval_reference"] == (
+        "CEO taxonomy approval 2026-08-29"
+    )
+
+
+def test_inactive_tag_cannot_use_candidate_promotion_path() -> None:
+    inactive = _tag("tag_0008", "Rejected concept")
+    inactive.update(
+        {
+            "status": "inactive",
+            "lifecycle": {"reason": "globally_rejected"},
+        }
+    )
+
+    with pytest.raises(ValueError, match="only formal candidates"):
+        ADD_TAG.prepare_promotion(
+            {"schema_version": 2, "tags": [inactive]},
+            tag_id="tag_0008",
+            approval_reference="reviewed",
+        )
+
+
+def test_candidate_promotion_rejects_cross_lifecycle_label_collision() -> None:
+    active = _tag(
+        "tag_0001",
+        "Existing active",
+        aliases=["Reviewed concept"],
+    )
+    active.update({"status": "active", "lifecycle": {}})
+    candidate = _tag("tag_0008", "Reviewed concept")
+    candidate.update(
+        {
+            "status": "candidate",
+            "lifecycle": {"reason": "corpus_level_taxonomy_discovery"},
+        }
+    )
+
+    with pytest.raises(ValueError, match="label collisions are resolved"):
+        ADD_TAG.prepare_promotion(
+            {"schema_version": 2, "tags": [active, candidate]},
+            tag_id="tag_0008",
+            approval_reference="reviewed",
+        )

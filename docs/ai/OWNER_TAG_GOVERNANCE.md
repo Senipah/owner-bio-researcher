@@ -177,49 +177,51 @@ inactive names remain in a separate non-assignable lookup. Merged references
 resolve only when their terminal target is active. Broad consumers must use
 the loader rather than reading and flattening the JSON `tags` array.
 
-The tracked Custom GPT catalogue contains assignable active/merged entries in
-`tags` and reduced candidate/inactive tombstones under
-`reserved_non_assignable_labels`. Instructions explicitly prohibit assigning
-the reserved entries.
+The tracked Custom GPT catalogue is a closed-world assignment whitelist. It
+contains only active canonical tags and their approved aliases. Candidate,
+inactive and merged records remain in the repository registry for global
+governance and collision detection, but stay outside ordinary GPT context.
 
 ## Research dossier contract
 
-Schema v8 remains supported and unchanged as a legacy contract. Its historical
-`proposed_tags` may contain null IDs or references that later became
-non-active. Validators report such references as pending corpus consolidation
-without rewriting the dossier. Compilation and live mutation fail safely when
-an assignment cannot resolve to an active tag.
+Owner research and taxonomy discovery are separate responsibilities. Owner-
+level research is closed-world: it may assign approved active tags but may not
+create formal taxonomy candidates. This applies to one-off Custom GPT work,
+individual dossier execution and every owner within a batch.
 
-Schema v9 is the current researcher output. It makes the lifecycle boundary
-enforceable:
+Schema v8 is the current and sole owner-research output contract. Schema v9 was
+introduced for owner-level `tag_candidates` and also made relationship type,
+temporal scope and taxonomy-value reasoning mandatory on assignments. The
+candidate structure is now obsolete, while those three additive semantic
+fields can remain useful without defining a new dossier version. The v9 fork
+was therefore retired before broad deployment. Stricter assignment semantics
+do not change the JSON shape and do not require a schema bump.
+
+Within schema v8:
 
 - `proposed_tags` contains only approved active ID/name references;
+- aliases resolve to their active canonical ID and name;
 - merged IDs must be replaced by their active canonical target;
+- candidate, inactive, unknown, ambiguous and mismatched references fail
+  validation and cannot compile or reach live reconciliation;
 - each assignment retains its owner-specific summary, evidence confidence and
-  source IDs, plus relationship type, temporal scope and a separate taxonomy-
-  value judgement;
-- `tag_candidates` is a separate required list for exceptional unapproved
-  concepts;
-- a candidate has no production tag ID and cannot become active from an owner
-  dossier;
-- catalogue facets remain metadata and are not promoted automatically to
-  literal assignments.
+  source IDs; relationship type, temporal scope and taxonomy-value reasoning
+  may be retained as additive owner-specific metadata; and
+- owner dossiers must not contain `tag_candidates`.
 
-A candidate records its proposed and normalised name, possible aliases,
-suggested facets, owner evidence, relationship and temporal scope, cross-owner
-information value, review of existing active coverage, likelihood that it is
-dossier metadata instead, confidence and source IDs. Before creating one, ask
-whether an active tag, facet or narrative already preserves the information.
-
-Candidate creation is exceptional. Omit a weak tag and retain the useful fact
-in the biography or evidence rather than researching indefinitely to justify a
-classification. Tag count is not a completeness metric.
+When no active tag represents an important fact, assign no tag. Preserve the
+fact in the biography brief, source ledger, uncertainties,
+`candidates_requiring_review`, or another existing narrative structure. An
+optional plain-language taxonomy-gap note is a research observation, not a
+candidate: it has no proposed name, aliases, facets, ID or lifecycle status.
+Tag count is not a completeness metric.
 
 ## Global review and promotion
 
-Individual owner research must never edit the active catalogue. It may assign
-existing active tags or emit a separate candidate. A global taxonomy review
-then:
+Individual owner research must never edit any catalogue state or emit a formal
+candidate. Formal candidate creation requires either a dedicated corpus-level
+cross-owner analysis or explicit human global curation. A global taxonomy
+review then:
 
 1. searches active names, aliases and semantic equivalents;
 2. checks inactive and candidate tombstones to prevent recreation;
@@ -228,17 +230,70 @@ then:
 4. merges a semantic alias, rejects/retains the candidate, or approves a new
    canonical concept;
 5. records a human/global `approval_reference`;
-6. promotes or creates the active tag through the reviewed catalogue tooling;
+6. may queue a formal candidate through the dry-run-first corpus registration
+   tool, or promote/create an active tag through explicitly approved catalogue
+   tooling;
 7. rebuilds Custom GPT Knowledge and validates all consumers.
 
-No minimum record count promotes a candidate. Existing active singletons stay
-active unless a semantic review retires them. Reactivating an inactive concept
-also requires deliberate global review.
+`register_corpus_tag_candidates.py` requires a reviewed corpus manifest with at
+least two distinct owner dossier records and the policy's relationship,
+cohort, broader-tag, facet, metadata and information-value reasoning. It
+searches active, candidate, inactive and merged labels before allocating an ID,
+and can create only `candidate` records. The two-record structural minimum
+proves that the
+code path is corpus-level; it is not an approval threshold. The 5 to 50 range
+remains a soft prior. No frequency promotes a candidate. Existing active
+singletons stay active unless a semantic review retires them. Reactivating an
+inactive concept also requires deliberate global review.
+
+The corpus manifest uses this reviewed shape:
+
+```json
+{
+  "schema_version": 1,
+  "scope": "corpus_owner_tag_discovery",
+  "review_status": "approved_for_candidate_queue",
+  "review_reference": "human-readable corpus review reference",
+  "concepts": [
+    {
+      "name": "Proposed canonical name",
+      "aliases": [],
+      "facets": ["occupation"],
+      "relationship_contract": "What membership means consistently.",
+      "click_through_expectation": "What a user expects after clicking.",
+      "known_for_basis": "Why the owners are genuinely known for it.",
+      "existing_active_review": "Why active coverage is insufficient.",
+      "broader_tag_review": "Why a broader active concept is weaker.",
+      "facet_review": "Why facet-only treatment is insufficient.",
+      "dossier_metadata_review": "Why this is taxonomy, not dossier detail.",
+      "information_value": "The cross-owner question this cohort answers.",
+      "dossier_records": [
+        {
+          "person_id": 1,
+          "dossier": "path/to/1.research.json",
+          "membership_basis": "Why this record meets the contract."
+        },
+        {
+          "person_id": 2,
+          "dossier": "path/to/2.research.json",
+          "membership_basis": "Why this record meets the same contract."
+        }
+      ]
+    }
+  ]
+}
+```
+
+Run registration without `--apply`, review its lifecycle-collision results,
+then use `--apply --audit PATH` only to enter approved concepts into the
+candidate queue while retaining the global reasoning record. Candidate
+promotion is a later and separate human-approved action through
+`add_catalogue_tag.py --promote-id TAG_ID --approval-reference REFERENCE`.
 
 ## Audit and reconciliation contract
 
 Audit output uses `dossier_record_count` terminology because source duplicates
-remain. It separates active approved assignments, dossier candidates,
+remain. It separates active approved assignments,
 candidate/inactive/merged legacy references, unresolved classifications,
 current live tags where a read occurred, and planned or blocked operations.
 
@@ -260,8 +315,8 @@ Unresolved placeholders and incomplete legacy desired states remain outside
 destructive reconciliation. Diagnostics are warnings and review signals, not
 automatic semantic edits. Useful signals include cohorts below five or above
 fifty records, unusually high per-record tag counts, more than two tags in one
-dimension, sentence-like names, near-identical concepts or cohorts, non-active
-references and dossier candidates duplicating active aliases.
+dimension, sentence-like names, near-identical concepts or cohorts and
+non-active references.
 
 ## Identity safety
 
@@ -300,12 +355,18 @@ An ignored byte-verified backup was created at
 
 ## Handover for the later corpus consolidation
 
-The later long-horizon task should edit the existing dossiers in place, upgrade
-corrected records to schema v9, and treat every first-pass desired tag as an
-untrusted reference. It should consolidate the active taxonomy semantically,
-promote candidates only through explicit global review, and reactivate inactive
-concepts only deliberately. Apply the 5 to 50 heuristic without making it a
-hard rule.
+The later long-horizon task should edit the existing dossiers in place, retain
+schema v8, and treat every first-pass desired tag as an untrusted legacy
+reference. Current catalogue candidates are not presumed valid merely because
+they exist. The task may globally promote, merge, facet, inactivate or reject
+them only through explicit review, and may reactivate inactive concepts only
+deliberately. Apply the 5 to 50 heuristic without making it a hard rule.
+
+The consolidation must not treat future owner-level taxonomy discovery as an
+expected workflow. After it finishes, ordinary owner researchers use only the
+resulting active taxonomy. Later taxonomy growth starts with a separate corpus-
+level discovery manifest, followed by candidate curation and only then by
+assignment reconciliation.
 
 After repository review, compare each production-ready proposed assignment
 with freshly read live state before any application. Keep dossier deduplication

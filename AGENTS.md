@@ -30,6 +30,10 @@ owner records, and applying reviewed JSON changes through the website.
   social enrichment.
 - `compile_owner_research.py`, `src/research_batch.py`: validated AI dossier
   compilation and HTML review reporting.
+- `.agents/skills/research-owner-biography/scripts/register_corpus_tag_candidates.py`,
+  `add_catalogue_tag.py`, `src/tags.py`: separate corpus-level taxonomy
+  candidate registration, explicit global promotion, and lifecycle-aware tag
+  resolution.
 - `update_owners.py`, `src/diffing.py`, `src/browser_update.py`: conflict-aware
   planning, browser writes, and post-save verification.
 - `update_owner_tags.py`, `src/owner_tags.py`, `src/parsers.py`,
@@ -52,9 +56,10 @@ owner records, and applying reviewed JSON changes through the website.
 - Blank clears and social removals require their separate explicit flags.
 - Never overwrite a live value that differs from the immutable export
   baseline; report a conflict instead.
-- Owner dossiers may assign only approved active tags. Unapproved concepts stay
-  in the separate dossier candidate structure and never mutate the active
-  catalogue from a single-owner research run.
+- Owner dossiers may assign only approved active tags. Individual and batch
+  owner research are closed-world: unrepresented facts remain in ordinary
+  research structures and formal candidates may be created only by an explicit
+  corpus-level taxonomy workflow or human global curation.
 - Set `workflow.updated_in_system=true` only after a live save is re-exported
   and verified.
 - Set `review.status=complete` only after a terminal research decision passes

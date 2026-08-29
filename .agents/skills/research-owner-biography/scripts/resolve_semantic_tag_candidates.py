@@ -139,9 +139,9 @@ def _decision_map(document: dict[str, Any]) -> dict[str, dict[str, Any]]:
         action = row.get("action")
         if not isinstance(candidate, str) or not candidate.strip():
             raise ValueError(f"decisions[{index}].candidate must be non-empty")
-        if action not in {"add", "merge", "reject"}:
+        if action not in {"add", "promote", "merge", "reject"}:
             raise ValueError(
-                f"decisions[{index}].action must be add, merge or reject"
+                f"decisions[{index}].action must be add, promote, merge or reject"
             )
         key = normalize_tag_name(candidate)
         if key in result:
@@ -155,6 +155,11 @@ def _decision_map(document: dict[str, Any]) -> dict[str, dict[str, Any]]:
             not isinstance(canonical, str) or not canonical.strip()
         ):
             raise ValueError(f"decisions[{index}].canonical must be non-empty")
+        candidate_id = row.get("candidate_id")
+        if action == "promote" and (
+            not isinstance(candidate_id, str) or not candidate_id.strip()
+        ):
+            raise ValueError(f"decisions[{index}].candidate_id is required")
         reason = row.get("reason")
         if action == "reject" and (
             not isinstance(reason, str) or not reason.strip()
@@ -278,10 +283,9 @@ def prepare_resolution(
 
     for key in sorted(groups):
         decision = decisions[key]
-        if decision["action"] != "add":
+        if decision["action"] not in {"add", "promote"}:
             continue
         group = groups[key]
-        canonical_name = decision.get("canonical") or group["candidate_names"][0]
         aliases = _unique(
             [
                 *group["aliases"],
@@ -289,22 +293,38 @@ def prepare_resolution(
                 *decision.get("aliases", []),
             ]
         )
-        aliases = [
-            alias
-            for alias in aliases
-            if normalize_tag_name(alias) != normalize_tag_name(canonical_name)
-        ]
-        facet_source = (
-            decision["facets"] if "facets" in decision else group["facets"]
-        )
-        facets = sorted(set(facet_source), key=str.casefold)
-        updated, result = ADD_TAG.prepare_addition(
-            updated_catalogue,
-            name=canonical_name,
-            aliases=aliases,
-            facets=facets,
-            approval_reference=decisions_document["approval_reference"],
-        )
+        if decision["action"] == "promote":
+            updated, result = ADD_TAG.prepare_promotion(
+                updated_catalogue,
+                tag_id=decision["candidate_id"],
+                approval_reference=decisions_document["approval_reference"],
+            )
+            canonical_name = result["name"]
+            aliases = [
+                alias
+                for alias in aliases
+                if normalize_tag_name(alias) != normalize_tag_name(canonical_name)
+            ]
+        else:
+            canonical_name = (
+                decision.get("canonical") or group["candidate_names"][0]
+            )
+            aliases = [
+                alias
+                for alias in aliases
+                if normalize_tag_name(alias) != normalize_tag_name(canonical_name)
+            ]
+            facet_source = (
+                decision["facets"] if "facets" in decision else group["facets"]
+            )
+            facets = sorted(set(facet_source), key=str.casefold)
+            updated, result = ADD_TAG.prepare_addition(
+                updated_catalogue,
+                name=canonical_name,
+                aliases=aliases,
+                facets=facets,
+                approval_reference=decisions_document["approval_reference"],
+            )
         if updated is not None:
             updated_catalogue = updated
         updated_catalogue, added_aliases = _add_aliases(
@@ -420,8 +440,9 @@ def main() -> int:
         sys.stdout.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(
         description=(
-            "Centrally resolve semantic-review tag candidates into canonical "
-            "additions, merges or documented rejections."
+            "Centrally resolve legacy pre-closed-world semantic-review "
+            "candidates into approved promotions, additions, merges or "
+            "documented rejections."
         )
     )
     parser.add_argument("decisions", type=Path)

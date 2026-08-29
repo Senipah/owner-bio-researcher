@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import re
 import sys
 from copy import deepcopy
 from pathlib import Path
@@ -18,11 +17,11 @@ from src.tags import (
     DEFAULT_TAG_CATALOGUE_PATH,
     TagCatalogue,
     TagResolutionError,
+    next_tag_id,
     normalize_tag_name,
 )
 
 
-TAG_ID_PATTERN = re.compile(r"^tag_(\d+)$")
 TAG_TYPE_FACETS = {
     "arts",
     "award",
@@ -37,15 +36,6 @@ TAG_TYPE_FACETS = {
     "status",
     "subindustry",
 }
-
-
-def _next_tag_id(document: dict[str, Any]) -> str:
-    numbers = []
-    for tag in document.get("tags", []):
-        match = TAG_ID_PATTERN.fullmatch(str(tag.get("id", "")))
-        if match:
-            numbers.append(int(match.group(1)))
-    return f"tag_{max(numbers, default=0) + 1:04d}"
 
 
 def prepare_addition(
@@ -105,7 +95,7 @@ def prepare_addition(
         }
 
     new_tag = {
-        "id": _next_tag_id(document),
+        "id": next_tag_id(document),
         "name": cleaned_name,
         "normalized_name": normalize_tag_name(cleaned_name),
         "aliases": cleaned_aliases,
@@ -178,13 +168,79 @@ def prepare_alias_addition(
     }
 
 
+def prepare_promotion(
+    document: dict[str, Any],
+    *,
+    tag_id: str,
+    approval_reference: str,
+) -> tuple[dict[str, Any] | None, dict[str, Any]]:
+    """Promote one existing formal candidate after explicit global approval."""
+    catalogue = TagCatalogue(document)
+    cleaned_approval = approval_reference.strip()
+    if not cleaned_approval:
+        raise ValueError("approval_reference must be non-empty")
+    selected = catalogue.all_tags_by_id.get(tag_id)
+    if selected is None:
+        raise ValueError(f"unknown tag ID {tag_id!r}")
+    if selected.status == "active":
+        return None, {
+            "id": selected.id,
+            "name": selected.name,
+            "status": "existing",
+        }
+    if selected.status != "candidate":
+        raise ValueError(
+            f"tag {selected.id} ({selected.name}) has status {selected.status!r}; "
+            "only formal candidates can be promoted by this command"
+        )
+    collisions: set[str] = set()
+    for label in (selected.name, *selected.aliases):
+        collisions.update(
+            catalogue.all_lookup.get(normalize_tag_name(label), set())
+            - {selected.id}
+        )
+    if collisions:
+        detail = ", ".join(
+            f"{other_id} ({catalogue.all_tags_by_id[other_id].name}; "
+            f"{catalogue.all_tags_by_id[other_id].status})"
+            for other_id in sorted(collisions)
+        )
+        raise ValueError(
+            f"candidate {selected.id} cannot be promoted until label "
+            f"collisions are resolved: {detail}"
+        )
+
+    updated = deepcopy(document)
+    target = next(tag for tag in updated["tags"] if tag["id"] == selected.id)
+    lifecycle = target.setdefault("lifecycle", {})
+    lifecycle.update(
+        {
+            "approval_basis": "explicit_global_taxonomy_review",
+            "approval_reference": cleaned_approval,
+            "promoted_from": "candidate",
+        }
+    )
+    target["status"] = "active"
+    TagCatalogue(updated)
+    return updated, {
+        "id": selected.id,
+        "name": selected.name,
+        "status": "promoted",
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
-            "Dry-run or atomically add one semantically reviewed canonical tag."
+            "Dry-run or atomically add one explicitly approved active tag, "
+            "add an approved alias, or promote one reviewed candidate."
         )
     )
-    parser.add_argument("--name", required=True)
+    parser.add_argument("--name")
+    parser.add_argument(
+        "--promote-id",
+        help="Existing candidate ID to promote after explicit global approval.",
+    )
     parser.add_argument("--alias", action="append", default=[])
     parser.add_argument("--facet", action="append", default=[])
     parser.add_argument(
@@ -210,7 +266,20 @@ def main() -> int:
     args = parser.parse_args()
 
     document = json.loads(args.catalogue.read_text(encoding="utf-8"))
-    if args.alias_for:
+    if bool(args.name) == bool(args.promote_id):
+        parser.error("supply exactly one of --name or --promote-id")
+    if args.promote_id:
+        if args.alias_for or args.alias or args.facet:
+            parser.error(
+                "--promote-id cannot be combined with --alias-for, --alias, "
+                "or --facet"
+            )
+        updated, result = prepare_promotion(
+            document,
+            tag_id=args.promote_id,
+            approval_reference=args.approval_reference,
+        )
+    elif args.alias_for:
         if args.alias or args.facet:
             parser.error("--alias-for cannot be combined with --alias or --facet")
         updated, result = prepare_alias_addition(
@@ -237,7 +306,10 @@ def main() -> int:
         print("Dry-run only; rerun with --apply after semantic review.")
         return 0
     atomic_write_json(args.catalogue, updated)
-    action = "Updated" if result["status"] == "alias_added" else "Added"
+    action = {
+        "alias_added": "Updated",
+        "promoted": "Promoted",
+    }.get(result["status"], "Added")
     print(f"{action} {result['id']} ({result['name']}) in {args.catalogue}")
     return 0
 

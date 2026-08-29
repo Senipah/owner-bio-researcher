@@ -34,7 +34,7 @@ DOSSIER_COMPARISON_LABELS = {
     "wealth_origin": "Wealth origin",
     "wealth_relationship": "Relationship to wealth",
 }
-COMPARISON_DOSSIER_SCHEMA_VERSIONS = {6, 7, 8, 9}
+COMPARISON_DOSSIER_SCHEMA_VERSIONS = {6, 7, 8}
 BIOGRAPHY_DETAIL_FIELDS = {"biography", "long_biography"}
 IMPORT_CONFIDENCE_THRESHOLD = 70
 REVIEW_STATUSES = {"pending", "complete", "approved", "rejected"}
@@ -309,7 +309,6 @@ def _build_owner_summary(
         },
         "changes": changes,
         "tags": deepcopy(resolved_tags),
-        "tag_candidates": deepcopy(dossier.get("tag_candidates", [])),
         "unresolved_fields": unresolved_fields,
         "candidates_requiring_review": dossier.get(
             "candidates_requiring_review", []
@@ -405,7 +404,6 @@ def apply_dossier(
             "compiled_at": generated_at,
             "change_count": 0,
             "tags": deepcopy(compiled_tags),
-            "tag_candidates": deepcopy(dossier.get("tag_candidates", [])),
             "biography_brief": deepcopy(dossier.get("biography_brief")),
             "editorial_assessment": deepcopy(
                 dossier.get("editorial_assessment")
@@ -610,7 +608,6 @@ def apply_dossier(
         "compiled_at": generated_at,
         "change_count": len(changes),
         "tags": deepcopy(compiled_tags),
-        "tag_candidates": deepcopy(dossier.get("tag_candidates", [])),
         "biography_brief": deepcopy(dossier.get("biography_brief")),
         "editorial_assessment": deepcopy(dossier.get("editorial_assessment")),
         "biography": deepcopy(biography),
@@ -660,6 +657,19 @@ def compile_research_batch(
     ]
     if missing:
         raise ValueError(f"Missing dossiers for person IDs: {missing}")
+
+    for source_owner in selected:
+        person_id = source_owner["person_id"]
+        dossier = dossiers[person_id]
+        if dossier.get("schema_version") != 8:
+            raise ValueError(
+                f"Owner {person_id} dossier schema_version must be 8"
+            )
+        if "tag_candidates" in dossier:
+            raise ValueError(
+                f"Owner {person_id} dossier contains owner-level "
+                "tag_candidates; batch research is closed-world"
+            )
 
     catalogue = tag_catalogue or load_tag_catalogue()
     resolved_tags_by_owner: dict[int, list[dict[str, Any]]] = {}

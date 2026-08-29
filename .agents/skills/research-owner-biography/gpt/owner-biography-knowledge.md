@@ -16,8 +16,8 @@ Use this file as Custom GPT Knowledge. Behaviour, workflow order, manual-mode ru
 
 | Section | Canonical source | SHA-256 |
 | --- | --- | --- |
-| Owner tag governance | `../../../docs/ai/OWNER_TAG_GOVERNANCE.md` | `38fbd24edb0277357ba2d44d8ae7c5c423ef506dccbc8330115bdb7f9c522950` |
-| Research and dossier contract | `references/research-contract.md` | `6e58a0275ec7b20c5899291758ed07dc5b90c3b21261b6312b40fcc5b5940ee4` |
+| Owner tag governance | `../../../docs/ai/OWNER_TAG_GOVERNANCE.md` | `ad754723188767fee78ceb8f96820ac14c1fe62ef76c3f14ea778cfd4f765f2b` |
+| Research and dossier contract | `references/research-contract.md` | `2f9c7ac778ea8ee152774e700575553f25b2d4f645b020c68be42b4e5a7059f6` |
 | Wealth classification | `references/wealth-classification.md` | `ffd1f3abaa8e80ccd424747b76e2f7a82e3349ac2b87a1e049b6bc0531f93887` |
 | Biography style | `references/biography-style.md` | `0735c58c4d0c75a0a74d7a1bf95afb7f40eafd9e0b103fed3d0304079474caf8` |
 | Editorial calibrations | `references/editorial-calibrations.md` | `b705d5ebe33444a8abfecbc7bb0100478dc88c5a848b8fb4121473853a7dc9dd` |
@@ -203,49 +203,51 @@ inactive names remain in a separate non-assignable lookup. Merged references
 resolve only when their terminal target is active. Broad consumers must use
 the loader rather than reading and flattening the JSON `tags` array.
 
-The tracked Custom GPT catalogue contains assignable active/merged entries in
-`tags` and reduced candidate/inactive tombstones under
-`reserved_non_assignable_labels`. Instructions explicitly prohibit assigning
-the reserved entries.
+The tracked Custom GPT catalogue is a closed-world assignment whitelist. It
+contains only active canonical tags and their approved aliases. Candidate,
+inactive and merged records remain in the repository registry for global
+governance and collision detection, but stay outside ordinary GPT context.
 
 ## Research dossier contract
 
-Schema v8 remains supported and unchanged as a legacy contract. Its historical
-`proposed_tags` may contain null IDs or references that later became
-non-active. Validators report such references as pending corpus consolidation
-without rewriting the dossier. Compilation and live mutation fail safely when
-an assignment cannot resolve to an active tag.
+Owner research and taxonomy discovery are separate responsibilities. Owner-
+level research is closed-world: it may assign approved active tags but may not
+create formal taxonomy candidates. This applies to one-off Custom GPT work,
+individual dossier execution and every owner within a batch.
 
-Schema v9 is the current researcher output. It makes the lifecycle boundary
-enforceable:
+Schema v8 is the current and sole owner-research output contract. Schema v9 was
+introduced for owner-level `tag_candidates` and also made relationship type,
+temporal scope and taxonomy-value reasoning mandatory on assignments. The
+candidate structure is now obsolete, while those three additive semantic
+fields can remain useful without defining a new dossier version. The v9 fork
+was therefore retired before broad deployment. Stricter assignment semantics
+do not change the JSON shape and do not require a schema bump.
+
+Within schema v8:
 
 - `proposed_tags` contains only approved active ID/name references;
+- aliases resolve to their active canonical ID and name;
 - merged IDs must be replaced by their active canonical target;
+- candidate, inactive, unknown, ambiguous and mismatched references fail
+  validation and cannot compile or reach live reconciliation;
 - each assignment retains its owner-specific summary, evidence confidence and
-  source IDs, plus relationship type, temporal scope and a separate taxonomy-
-  value judgement;
-- `tag_candidates` is a separate required list for exceptional unapproved
-  concepts;
-- a candidate has no production tag ID and cannot become active from an owner
-  dossier;
-- catalogue facets remain metadata and are not promoted automatically to
-  literal assignments.
+  source IDs; relationship type, temporal scope and taxonomy-value reasoning
+  may be retained as additive owner-specific metadata; and
+- owner dossiers must not contain `tag_candidates`.
 
-A candidate records its proposed and normalised name, possible aliases,
-suggested facets, owner evidence, relationship and temporal scope, cross-owner
-information value, review of existing active coverage, likelihood that it is
-dossier metadata instead, confidence and source IDs. Before creating one, ask
-whether an active tag, facet or narrative already preserves the information.
-
-Candidate creation is exceptional. Omit a weak tag and retain the useful fact
-in the biography or evidence rather than researching indefinitely to justify a
-classification. Tag count is not a completeness metric.
+When no active tag represents an important fact, assign no tag. Preserve the
+fact in the biography brief, source ledger, uncertainties,
+`candidates_requiring_review`, or another existing narrative structure. An
+optional plain-language taxonomy-gap note is a research observation, not a
+candidate: it has no proposed name, aliases, facets, ID or lifecycle status.
+Tag count is not a completeness metric.
 
 ## Global review and promotion
 
-Individual owner research must never edit the active catalogue. It may assign
-existing active tags or emit a separate candidate. A global taxonomy review
-then:
+Individual owner research must never edit any catalogue state or emit a formal
+candidate. Formal candidate creation requires either a dedicated corpus-level
+cross-owner analysis or explicit human global curation. A global taxonomy
+review then:
 
 1. searches active names, aliases and semantic equivalents;
 2. checks inactive and candidate tombstones to prevent recreation;
@@ -254,17 +256,70 @@ then:
 4. merges a semantic alias, rejects/retains the candidate, or approves a new
    canonical concept;
 5. records a human/global `approval_reference`;
-6. promotes or creates the active tag through the reviewed catalogue tooling;
+6. may queue a formal candidate through the dry-run-first corpus registration
+   tool, or promote/create an active tag through explicitly approved catalogue
+   tooling;
 7. rebuilds Custom GPT Knowledge and validates all consumers.
 
-No minimum record count promotes a candidate. Existing active singletons stay
-active unless a semantic review retires them. Reactivating an inactive concept
-also requires deliberate global review.
+`register_corpus_tag_candidates.py` requires a reviewed corpus manifest with at
+least two distinct owner dossier records and the policy's relationship,
+cohort, broader-tag, facet, metadata and information-value reasoning. It
+searches active, candidate, inactive and merged labels before allocating an ID,
+and can create only `candidate` records. The two-record structural minimum
+proves that the
+code path is corpus-level; it is not an approval threshold. The 5 to 50 range
+remains a soft prior. No frequency promotes a candidate. Existing active
+singletons stay active unless a semantic review retires them. Reactivating an
+inactive concept also requires deliberate global review.
+
+The corpus manifest uses this reviewed shape:
+
+```json
+{
+  "schema_version": 1,
+  "scope": "corpus_owner_tag_discovery",
+  "review_status": "approved_for_candidate_queue",
+  "review_reference": "human-readable corpus review reference",
+  "concepts": [
+    {
+      "name": "Proposed canonical name",
+      "aliases": [],
+      "facets": ["occupation"],
+      "relationship_contract": "What membership means consistently.",
+      "click_through_expectation": "What a user expects after clicking.",
+      "known_for_basis": "Why the owners are genuinely known for it.",
+      "existing_active_review": "Why active coverage is insufficient.",
+      "broader_tag_review": "Why a broader active concept is weaker.",
+      "facet_review": "Why facet-only treatment is insufficient.",
+      "dossier_metadata_review": "Why this is taxonomy, not dossier detail.",
+      "information_value": "The cross-owner question this cohort answers.",
+      "dossier_records": [
+        {
+          "person_id": 1,
+          "dossier": "path/to/1.research.json",
+          "membership_basis": "Why this record meets the contract."
+        },
+        {
+          "person_id": 2,
+          "dossier": "path/to/2.research.json",
+          "membership_basis": "Why this record meets the same contract."
+        }
+      ]
+    }
+  ]
+}
+```
+
+Run registration without `--apply`, review its lifecycle-collision results,
+then use `--apply --audit PATH` only to enter approved concepts into the
+candidate queue while retaining the global reasoning record. Candidate
+promotion is a later and separate human-approved action through
+`add_catalogue_tag.py --promote-id TAG_ID --approval-reference REFERENCE`.
 
 ## Audit and reconciliation contract
 
 Audit output uses `dossier_record_count` terminology because source duplicates
-remain. It separates active approved assignments, dossier candidates,
+remain. It separates active approved assignments,
 candidate/inactive/merged legacy references, unresolved classifications,
 current live tags where a read occurred, and planned or blocked operations.
 
@@ -286,8 +341,8 @@ Unresolved placeholders and incomplete legacy desired states remain outside
 destructive reconciliation. Diagnostics are warnings and review signals, not
 automatic semantic edits. Useful signals include cohorts below five or above
 fifty records, unusually high per-record tag counts, more than two tags in one
-dimension, sentence-like names, near-identical concepts or cohorts, non-active
-references and dossier candidates duplicating active aliases.
+dimension, sentence-like names, near-identical concepts or cohorts and
+non-active references.
 
 ## Identity safety
 
@@ -326,12 +381,18 @@ An ignored byte-verified backup was created at
 
 ## Handover for the later corpus consolidation
 
-The later long-horizon task should edit the existing dossiers in place, upgrade
-corrected records to schema v9, and treat every first-pass desired tag as an
-untrusted reference. It should consolidate the active taxonomy semantically,
-promote candidates only through explicit global review, and reactivate inactive
-concepts only deliberately. Apply the 5 to 50 heuristic without making it a
-hard rule.
+The later long-horizon task should edit the existing dossiers in place, retain
+schema v8, and treat every first-pass desired tag as an untrusted legacy
+reference. Current catalogue candidates are not presumed valid merely because
+they exist. The task may globally promote, merge, facet, inactivate or reject
+them only through explicit review, and may reactivate inactive concepts only
+deliberately. Apply the 5 to 50 heuristic without making it a hard rule.
+
+The consolidation must not treat future owner-level taxonomy discovery as an
+expected workflow. After it finishes, ordinary owner researchers use only the
+resulting active taxonomy. Later taxonomy growth starts with a separate corpus-
+level discovery manifest, followed by candidate curation and only then by
+assignment reconciliation.
 
 After repository review, compare each production-ready proposed assignment
 with freshly read live state before any application. Keep dossier deduplication
@@ -503,7 +564,7 @@ system's vessel data. Independently significant maritime careers or sustained
 competitive, research, or philanthropic work may be described, but the
 biography must focus on that durable activity rather than the transient asset.
 
-The schema-v8/v9 brief is an unordered editorial fact pool, not a paragraph
+The schema-v8 brief is an unordered editorial fact pool, not a paragraph
 outline. It contains:
 
 - `durable_identity`: the clearest durable description of the person;
@@ -674,17 +735,13 @@ before tag research. It defines information value, click-through coherence,
 the 5 to 50 record heuristic, minimum useful literal sets, facets, named
 entities, narrative analysis, temporal roles and the binding examples.
 
-Schema v9 separates the two outputs:
-
-- `proposed_tags` contains only approved active catalogue assignments;
-- `tag_candidates` contains exceptional unapproved concepts for later global
-  review and never contains a production tag ID.
-
-Search active canonical names and aliases first. Use merged labels only through
-their canonical active target. Candidate and inactive catalogue entries are
-non-assignable tombstones; a matching candidate may request deliberate
-reconsideration by recording its existing non-active ID, but research must not
-reactivate or recreate it.
+Owner research is closed-world for literal tags. `proposed_tags` contains only
+approved active catalogue assignments. Use the generated active-only
+`gpt/tag-catalogue.json` as the researcher assignment context. Search active
+canonical names and aliases, emit the canonical active ID, and omit the tag
+when no approved concept fits. Merged, candidate and inactive catalogue
+entries are not owner-research choices and must never be assigned, reactivated
+or recreated.
 
 For each active assignment store:
 
@@ -697,24 +754,18 @@ For each active assignment store:
 - evidence confidence of at least 70; and
 - direct `source_ids`.
 
-For each exceptional candidate store:
+Absence from the active catalogue is not permission to create a formal
+candidate. Preserve the underlying fact in the biography brief, source ledger,
+uncertainties, `candidates_requiring_review`, or another existing narrative
+structure where it naturally belongs. A plain-language note that the active
+taxonomy does not represent a characteristic is an observation only: do not
+give it a proposed tag name, aliases, facets, ID or lifecycle status.
 
-- `proposed_name` and its exact `normalized_name`;
-- optional `possible_aliases` and `suggested_facets`;
-- owner-specific `summary`, `relationship_type` and `temporal_scope`;
-- `information_value` describing the cross-owner question it could answer;
-- `existing_active_tag_review` explaining why no active tag covers it;
-- `metadata_likelihood` as `taxonomy_candidate`, `dossier_metadata`, or
-  `uncertain`;
-- evidence confidence and direct source IDs; and
-- `existing_non_active_tag_id` when deliberately reconsidering a matching
-  candidate or inactive tombstone.
-
-Absence from the active catalogue is not permission to mutate it. Preserve a
-useful fact in the dossier narrative when it does not merit a candidate. A
-single owner dossier, multiple occurrences and high evidence confidence never
-activate a concept. Promotion requires a separate global decision document
-with a human `approval_reference`, followed by dry-run-first catalogue tooling.
+Formal candidate creation occurs only in a separate corpus-level taxonomy
+review, or through explicit human global curation. That process must compare
+multiple owner records, inspect every lifecycle state, and use dry-run-first
+catalogue tooling. Frequency and evidence confidence never create or activate
+taxonomy state.
 
 After an approved catalogue change, rebuild and check the tracked Custom GPT
 Knowledge. The helper requires `--approval-reference`; it allocates IDs only
@@ -727,10 +778,10 @@ Retain the established exclusions for generic philanthropy-domain tags,
 Treat bare gambling-industry `Gaming` as `Gambling`, plus every directly
 supported active granular tag. Use `Video games` only for explicit
 interactive-entertainment evidence. Apply `Government-owned` only to a public
-owner entity under the policy's status contract. Empty `proposed_tags` and
-`tag_candidates` lists are valid when nothing qualifies; unresolved
-placeholders normally require both empty, subject only to the documented sole
-active `Government-owned` exception.
+owner entity under the policy's status contract. An empty `proposed_tags` list
+is valid when nothing qualifies; unresolved placeholders normally require it
+to be empty, subject only to the documented sole active `Government-owned`
+exception.
 
 ## Staff-facing owner-page response
 
@@ -761,8 +812,8 @@ values, `Unknown`, dashes, or copyable placeholders. Render scalar values as
 list canonical tags one per line, and use a two-column `Type` / `URL` table for
 social profiles. Use exact visible dropdown labels for the four wealth fields.
 Keep explanations, confidence, citations, source IDs, verification notes, and
-research narration out of this copy block. New null-ID catalogue candidates do
-not yet belong in its canonical `Tags` list.
+research narration out of this copy block. Unrepresented facts do not belong
+in its canonical `Tags` list.
 
 Do not reproduce fields the research workflow does not populate, including
 `Unknown Name`, sort-name fields, internal notes, calculated ages, net-worth
@@ -771,8 +822,8 @@ metadata.
 
 After the copy block, put supporting material under `## Research context`:
 identity resolution and confidence, the Forbes check, wealth and tag reasoning
-with confidence, strongest evidence, new catalogue candidates and their
-Knowledge-update notice, other verified candidate facts, uncertainties,
+with confidence, strongest evidence, other verified candidate facts,
+plain-language taxonomy-gap observations when useful, uncertainties,
 limitations, and the linked source list. This secondary section may explain
 why a field was omitted, but it must never interrupt the owner-page sequence.
 
@@ -782,7 +833,7 @@ Use this top-level structure:
 
 ```json
 {
-  "schema_version": 9,
+  "schema_version": 8,
   "record_type": "person",
   "owner": {
     "person_id": null,
@@ -927,7 +978,6 @@ Use this top-level structure:
   "proposed_details": [],
   "proposed_socials": [],
   "proposed_tags": [],
-  "tag_candidates": [],
   "candidates_requiring_review": [],
   "sources": [],
   "uncertainties": [],
@@ -943,8 +993,8 @@ contain `id`, `url`, `title`, `publisher`, `tier`, `accessed_at`, and
 `supports`. Proposed detail items must also contain `action`; corrections must
 contain `existing_value`; proposed social items must contain `type_id` copied
 from `input_snapshot.social_type_lookup`. Proposed tag items must also contain
-the active-assignment fields defined above. Candidate items use the separate
-`tag_candidates` contract and never receive an active production tag ID.
+the active-assignment fields defined above. `tag_candidates` is not an
+owner-dossier field.
 
 Research agents emit `review.status=complete` only after the dossier reaches a
 terminal research decision and passes validation. This status is automatic
@@ -960,7 +1010,7 @@ uncertainty, and review objects, with these differences:
 
 ```json
 {
-  "schema_version": 9,
+  "schema_version": 8,
   "record_type": "institution",
   "research_status": "complete",
   "biography_brief": null,
@@ -998,8 +1048,7 @@ uncertainty, and review objects, with these differences:
   },
   "proposed_details": [],
   "proposed_socials": [],
-  "proposed_tags": [],
-  "tag_candidates": []
+  "proposed_tags": []
 }
 ```
 

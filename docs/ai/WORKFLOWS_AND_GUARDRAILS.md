@@ -63,15 +63,16 @@ when terminal research passes strict validation and sets
 the workflow flag for usable complete or legacy-approved dossiers and resets
 `workflow.updated_in_system=false` when a desired change is introduced. Only
 values with confidence 70 or higher are imported.
-Schema-v8 legacy and schema-v9 current tags follow the canonical
+Schema-v8 tags follow the canonical
 [owner-tag governance policy](OWNER_TAG_GOVERNANCE.md). Production resolution
 exposes active assignments and canonical merge redirects only. Candidate,
 inactive, unknown, ambiguous, mismatched, or duplicated references cannot
-compile as active assignments; legacy v8 references remain reportable for the
-later in-place consolidation. Compilation never maps or writes website tag IDs.
+compile as active assignments; legacy references remain reportable for the
+later in-place consolidation. Owner research cannot create formal candidates.
+Compilation never maps or writes website tag IDs.
 
 `update_owner_tags.py` is the separate live reconciliation path for completed
-schema-v8/v9 dossiers. It compares canonical names because catalogue IDs are local
+schema-v8 dossiers. It compares canonical names because catalogue IDs are local
 research identifiers and website row IDs identify owner-tag associations. Keep
 pure tag planning in `src/diffing.py`, HTML parsing in `src/parsers.py`, Selenium
 mechanics in `src/browser_update.py`, and login/auditing in the entrypoint.

@@ -100,42 +100,25 @@ def render_knowledge() -> str:
 def render_tag_catalogue() -> str:
     source = json.loads(TAG_CATALOGUE_SOURCE.read_text(encoding="utf-8"))
     catalogue = TagCatalogue(source, source=str(TAG_CATALOGUE_SOURCE))
-    assignable_ids = set(catalogue.tags_by_id) | set(catalogue.merged_tags_by_id)
-    assignable = [
+    active = [
         {
             "id": item["id"],
             "name": item["name"],
             "normalized_name": item["normalized_name"],
             "aliases": item["aliases"],
             "facets": item["facets"],
-            "status": item["status"],
-            "merged_into": item["merged_into"],
         }
         for item in source["tags"]
-        if item["id"] in assignable_ids
-    ]
-    reserved = [
-        {
-            "id": item["id"],
-            "name": item["name"],
-            "normalized_name": item["normalized_name"],
-            "aliases": item["aliases"],
-            "status": item["status"],
-            "reason": item.get("lifecycle", {}).get("reason"),
-        }
-        for item in source["tags"]
-        if item["id"] in catalogue.non_assignable_tags_by_id
+        if item["id"] in catalogue.tags_by_id
     ]
     output = {
-        "schema_version": 2,
-        "dataset": "owner_tag_assignable_catalogue",
+        "schema_version": 3,
+        "dataset": "owner_tag_active_catalogue",
         "description": (
-            "Only entries in tags are assignable. reserved_non_assignable_labels "
-            "are candidate or inactive tombstones retained to prevent accidental "
-            "recreation and must never be proposed as literal tags."
+            "Closed-world whitelist for individual owner research. Only these "
+            "active approved canonical tags and their aliases may be assigned."
         ),
-        "tags": assignable,
-        "reserved_non_assignable_labels": reserved,
+        "tags": active,
     }
     return json.dumps(output, ensure_ascii=False, indent=2) + "\n"
 
