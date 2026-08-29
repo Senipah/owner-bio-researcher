@@ -158,6 +158,13 @@ AI review or a live system update occurred.
 - `update_owner_tags.py` remains dry-run unless `--apply` is present. Applying
   additions must not imply authority to delete; removals additionally require
   `--replace-tags`.
+- `update_owner_tags.py --offline` must not authenticate or read live owner
+  pages. It may report corpus publication eligibility and singleton suppression,
+  but cannot claim live additions or removals.
+- Live tag additions require support from at least two usable completed owner
+  dossiers by default. Keep singleton tags in the research catalogue for future
+  reuse, but suppress their live additions and audit them. Do not remove an
+  already-live matching singleton solely because it is below the threshold.
 - Keep clearing blanks behind `--allow-clear`.
 - Keep removal of absent socials behind `--replace-socials`.
 - Re-read live state before every planned save. A live-versus-baseline

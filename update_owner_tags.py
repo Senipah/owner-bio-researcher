@@ -39,11 +39,30 @@ def build_parser() -> argparse.ArgumentParser:
         help="Apply additions. Without this flag the command is read-only.",
     )
     parser.add_argument(
+        "--offline",
+        action="store_true",
+        help=(
+            "Build a no-login publication-eligibility manifest only. This "
+            "does not read live owner pages, so additions and removals cannot "
+            "be reconciled against the website."
+        ),
+    )
+    parser.add_argument(
         "--replace-tags",
         action="store_true",
         help=(
             "With --apply, also remove live tags absent from the dossier. "
             "Without this flag apply mode is add-only."
+        ),
+    )
+    parser.add_argument(
+        "--minimum-owner-count",
+        "--min-owner-count",
+        type=int,
+        default=2,
+        help=(
+            "Only add a tag when at least this many usable completed dossiers "
+            "contain it (default: 2). Existing matching live tags are retained."
         ),
     )
     parser.add_argument(
@@ -73,6 +92,87 @@ def _verification_succeeded(
     return not replace_tags or not plan["removals"]
 
 
+def suppress_low_frequency_additions(
+    plan: dict[str, Any],
+    *,
+    owner_counts: Counter[str],
+    minimum_owner_count: int,
+) -> dict[str, Any]:
+    """Suppress new low-frequency tags without removing existing instances."""
+    suppressed_additions = [
+        {**item, "owner_count": owner_counts[item["id"]]}
+        for item in plan["additions"]
+        if owner_counts[item["id"]] < minimum_owner_count
+    ]
+    suppressed_ids = {item["id"] for item in suppressed_additions}
+    if not suppressed_ids:
+        plan["suppressed_additions"] = []
+        return plan
+
+    suppressed_alias_associations = {
+        item["from"]["association_id"]
+        for item in plan["alias_replacements"]
+        if item["to"]["id"] in suppressed_ids
+    }
+    plan["additions"] = [
+        item for item in plan["additions"] if item["id"] not in suppressed_ids
+    ]
+    plan["removals"] = [
+        item
+        for item in plan["removals"]
+        if item["association_id"] not in suppressed_alias_associations
+    ]
+    plan["alias_replacements"] = [
+        item
+        for item in plan["alias_replacements"]
+        if item["to"]["id"] not in suppressed_ids
+    ]
+    plan["suppressed_additions"] = suppressed_additions
+    plan["has_changes"] = bool(plan["additions"] or plan["removals"])
+    plan["is_exact"] = not plan["has_changes"]
+    return plan
+
+
+def build_offline_publication_record(
+    target: dict[str, Any],
+    *,
+    owner_counts: Counter[str],
+    minimum_owner_count: int,
+) -> dict[str, Any]:
+    """Describe publishable dossier tags without reading or writing the website."""
+    publishable = [
+        {**item, "owner_count": owner_counts[item["id"]]}
+        for item in target["desired_tags"]
+        if owner_counts[item["id"]] >= minimum_owner_count
+    ]
+    suppressed = [
+        {**item, "owner_count": owner_counts[item["id"]]}
+        for item in target["desired_tags"]
+        if owner_counts[item["id"]] < minimum_owner_count
+    ]
+    return {
+        **target,
+        "status": "offline_manifest",
+        "live_comparison_performed": False,
+        "operations": [],
+        "plan": {
+            "mode": "offline_publication_eligibility",
+            "publishable_desired_tags": publishable,
+            "suppressed_additions": suppressed,
+            "additions": None,
+            "removals": None,
+            "conflicts": [],
+            "note": (
+                "No live state was read. Publishable tags meet the corpus "
+                "threshold; suppressed additions are low-frequency desired "
+                "tags that must not be newly published. Existing live "
+                "singletons cannot be identified offline and should be "
+                "retained by any later live reconciliation."
+            ),
+        },
+    }
+
+
 def main() -> int:
     parser = build_parser()
     args = parser.parse_args()
@@ -80,6 +180,12 @@ def main() -> int:
         parser.error("--limit must be a positive integer")
     if any(person_id <= 0 for person_id in (args.person_ids or [])):
         parser.error("--person-id must be a positive integer")
+    if args.minimum_owner_count < 1:
+        parser.error("--minimum-owner-count must be a positive integer")
+    if args.offline and args.apply:
+        parser.error("--offline cannot be combined with --apply")
+    if args.offline and args.replace_tags:
+        parser.error("--offline cannot evaluate --replace-tags removals")
 
     try:
         dossier_directory = args.dossier_dir.resolve(strict=True)
@@ -93,6 +199,12 @@ def main() -> int:
             catalogue,
             person_ids=set(args.person_ids or []),
         )
+        all_targets, _ = load_tag_targets(dossier_directory, catalogue)
+        owner_counts: Counter[str] = Counter(
+            item["id"]
+            for target in all_targets
+            for item in target["desired_tags"]
+        )
     except (OSError, ValueError) as exc:
         print(f"Could not prepare tag reconciliation: {exc}", file=sys.stderr)
         return 1
@@ -102,16 +214,22 @@ def main() -> int:
 
     stamp = _stamp()
     args.audit_dir.mkdir(parents=True, exist_ok=True)
-    audit_path = args.audit_dir / (
-        f"owner-tag-update-{'apply' if args.apply else 'dry-run'}-{stamp}.json"
+    mode = "offline-dry-run" if args.offline else (
+        "apply" if args.apply else "dry-run"
     )
+    audit_path = args.audit_dir / f"owner-tag-update-{mode}-{stamp}.json"
     audit: dict[str, Any] = {
         "schema_version": 1,
         "started_at": utc_now(),
-        "mode": "apply" if args.apply else "dry-run",
+        "mode": mode,
         "dossier_directory": str(dossier_directory),
         "tag_catalogue": catalogue.source_reference,
         "replace_tags": bool(args.replace_tags),
+        "minimum_owner_count_for_additions": args.minimum_owner_count,
+        "owner_count_scope": {
+            "usable_completed_dossiers": len(all_targets),
+            "distinct_tags": len(owner_counts),
+        },
         "removals_authorized": bool(args.apply and args.replace_tags),
         "selected_person_ids": sorted(set(args.person_ids or [])),
         "target_count": len(targets),
@@ -126,8 +244,52 @@ def main() -> int:
         audit["failure_count"] = 0
         audit["processed_count"] = 0
         audit["status_counts"] = {}
+        audit["suppressed_addition_count"] = 0
+        audit["suppressed_low_frequency_tags"] = []
         atomic_write_json(audit_path, audit)
         print("No usable completed dossiers matched the selection.")
+        print(f"Audit report: {audit_path}")
+        return 0
+
+    if args.offline:
+        audit["records"] = [
+            build_offline_publication_record(
+                target,
+                owner_counts=owner_counts,
+                minimum_owner_count=args.minimum_owner_count,
+            )
+            for target in targets
+        ]
+        suppressed = [
+            item
+            for record in audit["records"]
+            for item in record["plan"]["suppressed_additions"]
+        ]
+        audit["finished_at"] = utc_now()
+        audit["failure_count"] = 0
+        audit["processed_count"] = len(audit["records"])
+        audit["status_counts"] = {"offline_manifest": len(audit["records"])}
+        audit["operation_counts"] = {}
+        audit["live_read_performed"] = False
+        audit["suppressed_addition_count"] = len(suppressed)
+        audit["suppressed_low_frequency_tags"] = [
+            {
+                "id": tag_id,
+                "name": next(
+                    item["name"] for item in suppressed if item["id"] == tag_id
+                ),
+                "owner_count": owner_counts[tag_id],
+                "suppressed_owner_count": count,
+            }
+            for tag_id, count in sorted(
+                Counter(item["id"] for item in suppressed).items()
+            )
+        ]
+        atomic_write_json(audit_path, audit)
+        print(
+            f"Offline manifest prepared for {len(audit['records'])} owners; "
+            "no login or live website read was performed."
+        )
         print(f"Audit report: {audit_path}")
         return 0
 
@@ -159,6 +321,11 @@ def main() -> int:
                         live_tags=live_tags,
                         catalogue=catalogue,
                     )
+                    suppress_low_frequency_additions(
+                        plan,
+                        owner_counts=owner_counts,
+                        minimum_owner_count=args.minimum_owner_count,
+                    )
                     record["plan"] = plan
                     if plan["conflicts"]:
                         record["status"] = "conflict"
@@ -166,13 +333,25 @@ def main() -> int:
                         print("  Skipped because the tag state is ambiguous.")
                         continue
                     if not plan["has_changes"]:
-                        record["status"] = "no_changes"
+                        if plan["suppressed_additions"]:
+                            record["status"] = (
+                                "low_frequency_additions_suppressed"
+                            )
+                            print(
+                                "  Suppressed "
+                                f"{len(plan['suppressed_additions'])} additions "
+                                "below the owner-count threshold."
+                            )
+                        else:
+                            record["status"] = "no_changes"
                         continue
                     if not args.apply:
                         record["status"] = "planned"
                         print(
                             f"  Planned: {len(plan['additions'])} additions, "
-                            f"{len(plan['removals'])} removals."
+                            f"{len(plan['removals'])} removals, "
+                            f"{len(plan['suppressed_additions'])} "
+                            "low-frequency additions suppressed."
                         )
                         continue
 
@@ -205,6 +384,11 @@ def main() -> int:
                         desired_names=desired_names,
                         live_tags=live_after,
                         catalogue=catalogue,
+                    )
+                    suppress_low_frequency_additions(
+                        verification,
+                        owner_counts=owner_counts,
+                        minimum_owner_count=args.minimum_owner_count,
                     )
                     record["verification"] = verification
                     if not _verification_succeeded(
@@ -255,6 +439,25 @@ def main() -> int:
             ).items()
         )
     )
+    suppressed = [
+        item
+        for record in audit["records"]
+        for item in record.get("plan", {}).get("suppressed_additions", [])
+    ]
+    audit["suppressed_addition_count"] = len(suppressed)
+    audit["suppressed_low_frequency_tags"] = [
+        {
+            "id": tag_id,
+            "name": next(
+                item["name"] for item in suppressed if item["id"] == tag_id
+            ),
+            "owner_count": owner_counts[tag_id],
+            "suppressed_owner_count": count,
+        }
+        for tag_id, count in sorted(
+            Counter(item["id"] for item in suppressed).items()
+        )
+    ]
     atomic_write_json(audit_path, audit)
     print(f"Audit report: {audit_path}")
     return 1 if failures else 0

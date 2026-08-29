@@ -218,11 +218,25 @@
     {
       "tag_id": "tag_0249",
       "name": "Government-owned",
-      "summary": "The dossier identifies Iraq Government as a government or state-owned public institution.",
+      "summary": "The owner record represents the continuing Government of Iraq, a public federal executive institution of the Iraqi state.",
       "confidence": {
-        "score": 86,
-        "band": "high",
-        "reason": "The dossier's durable narrative supports this grouping and the cited narrative fields supply direct source IDs."
+        "score": 100,
+        "band": "very_high",
+        "reason": "Iraq's official government portal and constitution directly establish that the record denotes a national public institution rather than a private person or company."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "tag_id": "tag_0932",
+      "name": "National government",
+      "summary": "The owner is Iraq's continuing national government, allowing sovereign or central-government owners to be distinguished from municipalities, agencies and state-owned companies while retaining the Government-owned umbrella.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The completed semantic review found a durable, material association directly supported by the cited dossier sources."
       },
       "source_ids": [
         "S2",

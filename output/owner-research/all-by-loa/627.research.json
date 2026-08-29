@@ -339,14 +339,44 @@
     {
       "tag_id": "tag_0043",
       "name": "Commercial ship management",
-      "summary": "The dossier supports Commercial ship management as a durable, material grouping for Paris Dragnis.",
+      "summary": "Dragnis established Goldenport Shipmanagement around personally owned vessel companies and developed it into a commercial-shipping platform.",
       "confidence": {
-        "score": 86,
-        "band": "high",
-        "reason": "The dossier's durable narrative supports this grouping and the cited narrative fields supply direct source IDs."
+        "score": 100,
+        "band": "very_high",
+        "reason": "Capital Link and Goldenport regulatory filings directly establish the company, founder role, vessel companies and management activity."
       },
       "source_ids": [
         "S2",
+        "S3",
+        "S4",
+        "S9"
+      ]
+    },
+    {
+      "tag_id": "tag_0276",
+      "name": "Commercial shipowner",
+      "summary": "Dragnis progressed from serving at sea into shipowning partnerships and personally owned vessel companies that underpinned Goldenport.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Capital Link and Goldenport filings directly document his shipowning partnerships, owned vessel companies and beneficial control."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S9"
+      ]
+    },
+    {
+      "tag_id": "tag_0046",
+      "name": "Container shipping",
+      "summary": "Container vessels formed one of Goldenport's two defining commercial fleet segments under Dragnis's ownership and leadership.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Goldenport's annual report and regulatory succession announcement directly identify container shipping as an operating business."
+      },
+      "source_ids": [
         "S3",
         "S4"
       ]
@@ -354,27 +384,28 @@
     {
       "tag_id": "tag_0057",
       "name": "Dragnis family",
-      "summary": "The dossier places Paris Dragnis within the durable business and wealth context of the Dragnis family.",
+      "summary": "Paris Dragnis founded the family's maritime businesses and transferred Goldenport's chief-executive role to his son John while other relatives retained distinct related roles.",
       "confidence": {
-        "score": 92,
-        "band": "high",
-        "reason": "The dossier's durable narrative supports this grouping and the source ledger directly names the association."
+        "score": 100,
+        "band": "very_high",
+        "reason": "Corporate filings and current company sources directly distinguish Paris, John and Vasilis Dragnis and establish the generational business transition."
       },
       "source_ids": [
-        "S2",
         "S3",
         "S4",
-        "S5"
+        "S5",
+        "S8",
+        "S9"
       ]
     },
     {
       "tag_id": "tag_0058",
       "name": "Dry-bulk shipping",
-      "summary": "The dossier supports Dry-bulk shipping as a durable, material grouping for Paris Dragnis.",
+      "summary": "Dry-bulk vessels formed the second defining fleet segment of the Goldenport commercial-shipping business Dragnis founded.",
       "confidence": {
-        "score": 92,
-        "band": "high",
-        "reason": "The dossier's durable narrative supports this grouping and the source ledger directly names the association."
+        "score": 100,
+        "band": "very_high",
+        "reason": "Goldenport regulatory sources directly establish its dry-bulk operations during Dragnis's ownership and leadership."
       },
       "source_ids": [
         "S3",
@@ -382,27 +413,149 @@
       ]
     },
     {
-      "tag_id": "tag_0171",
-      "name": "Sea captain / master mariner",
-      "summary": "The dossier supports sea captain / master mariner as a durable part of Paris Dragnis's career.",
+      "tag_id": "tag_0524",
+      "name": "Golden Yachts",
+      "summary": "Golden Yachts is the specialist Greek construction, refit, charter and management business Dragnis founded and remains actively associated with.",
       "confidence": {
-        "score": 92,
-        "band": "high",
-        "reason": "The dossier's durable narrative supports this grouping and the source ledger directly names the association."
+        "score": 100,
+        "band": "very_high",
+        "reason": "The completed semantic review found a durable, material association directly supported by the cited dossier sources."
       },
       "source_ids": [
         "S2",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "tag_id": "tag_0525",
+      "name": "Goldenport",
+      "summary": "Goldenport is the commercial-shipping group Dragnis founded from his shipowning activities and built around dry-bulk and container fleets.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The completed semantic review found a durable, material association directly supported by the cited dossier sources."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S4",
+        "S5",
         "S9"
+      ]
+    },
+    {
+      "tag_id": "tag_0114",
+      "name": "Marine engineering",
+      "summary": "Dragnis developed in-house engineering and project teams as a defining capability of his specialist Greek large-yacht construction business.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Golden Yachts and the direct shipyard interview establish its engineering capabilities and Dragnis's active role in building those teams."
+      },
+      "source_ids": [
+        "S6",
+        "S8"
+      ]
+    },
+    {
+      "tag_id": "tag_0116",
+      "name": "Maritime tourism",
+      "summary": "Golden Yachts combines large-yacht construction with charter and management services, and charter demand was the decisive signal that created Dragnis's repeatable yacht-business model.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The official yard and direct interview establish charter as a material operating activity and the origin of the business model."
+      },
+      "source_ids": [
+        "S6",
+        "S8"
+      ]
+    },
+    {
+      "tag_id": "tag_0171",
+      "name": "Sea captain / master mariner",
+      "summary": "Dragnis trained at the National Merchant Marine Academy and served at sea as an officer and master before becoming a shipowner.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Capital Link and Goldenport filings directly document his academy training and seagoing career as an officer and master."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S9",
+        "S10"
       ]
     },
     {
       "tag_id": "tag_0172",
       "name": "Shipbuilding",
-      "summary": "The dossier supports Shipbuilding as a durable, material grouping for Paris Dragnis.",
+      "summary": "Dragnis founded Golden Yachts and remains directly involved in its large-vessel construction, engineering and shipyard projects.",
       "confidence": {
-        "score": 92,
-        "band": "high",
-        "reason": "The dossier's durable narrative supports this grouping and the source ledger directly names the association."
+        "score": 100,
+        "band": "very_high",
+        "reason": "Golden Yachts and the direct shipyard interview establish his founder role, active presence and construction capabilities."
+      },
+      "source_ids": [
+        "S2",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "tag_id": "tag_0652",
+      "name": "Shipyard owner",
+      "summary": "Dragnis founded and remains actively involved in the specialist Greek shipyard operating through Golden Yachts.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The completed semantic review found a durable, material association directly supported by the cited dossier sources."
+      },
+      "source_ids": [
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "tag_id": "tag_0673",
+      "name": "Superyacht construction",
+      "summary": "Large-yacht construction is the specific shipbuilding specialism Dragnis developed through progressively larger projects at Golden Yachts.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The completed semantic review found a durable, material association directly supported by the cited dossier sources."
+      },
+      "source_ids": [
+        "S6",
+        "S8"
+      ]
+    },
+    {
+      "tag_id": "tag_0700",
+      "name": "Yacht charter",
+      "summary": "Unexpected charter demand for an early large-vessel project revealed the economics that prompted Dragnis to create a repeatable yacht-construction and charter model.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The completed semantic review found a durable, material association directly supported by the cited dossier sources."
+      },
+      "source_ids": [
+        "S6",
+        "S8"
+      ]
+    },
+    {
+      "tag_id": "tag_0701",
+      "name": "Yacht refit",
+      "summary": "Refit is a continuing specialist capability within the Golden Yachts yard that Dragnis founded and remains directly involved with.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The completed semantic review found a durable, material association directly supported by the cited dossier sources."
       },
       "source_ids": [
         "S6",

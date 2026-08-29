@@ -49,6 +49,26 @@ def _tag(tag_id: str, name: str, *, aliases: list[str] | None = None) -> dict:
     }
 
 
+@pytest.mark.parametrize(
+    "type_facet", ["arts", "award", "cause", "family", "philanthropy"]
+)
+def test_prepare_addition_accepts_open_taxonomy_type_facets(
+    type_facet: str,
+) -> None:
+    document = {"schema_version": 1, "tags": [_tag("tag_0001", "Existing")]}
+
+    updated, result = ADD_TAG.prepare_addition(
+        document,
+        name=f"New {type_facet}",
+        aliases=[],
+        facets=[type_facet, "distinctive"],
+    )
+
+    assert updated is not None
+    assert result["status"] == "new"
+    assert result["facets"] == [type_facet, "distinctive"]
+
+
 def _document() -> dict:
     return {
         "schema_version": 1,

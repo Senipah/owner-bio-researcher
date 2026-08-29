@@ -823,3 +823,61 @@ def test_validator_accepts_institution_biographies_and_note(
     result = _validate(tmp_path, dossier)
 
     assert result.returncode == 0, result.stderr
+
+
+def test_validator_allows_sole_government_owned_tag_for_unresolved_public_label(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["record_type"] = "unresolved_placeholder"
+    dossier["research_status"] = "identity_conflict"
+    dossier["owner"]["identity_confidence"] = {
+        "score": 35,
+        "band": "insufficient",
+        "reason": "The exact historic administration cannot be resolved.",
+    }
+    dossier["biography_brief"] = None
+    dossier["editorial_assessment"] = None
+    dossier["biography"] = None
+    dossier["long_biography"] = None
+    dossier["editorial_note"] = {
+        "plain_text": (
+            "This label is certainly a public government owner, although the "
+            "available evidence cannot identify the exact historic administration. "
+            "No personal biography, private-wealth classification or social-profile "
+            "proposal can therefore be made safely."
+        ),
+        "confidence": {
+            "score": 99,
+            "band": "very_high",
+            "reason": "Every plausible identity is a government body.",
+        },
+        "source_ids": ["S1"],
+    }
+    dossier["proposed_details"] = []
+    dossier["proposed_socials"] = []
+    dossier["proposed_tags"] = [
+        {
+            "tag_id": "tag_0249",
+            "name": "Government-owned",
+            "summary": "Every plausible owner identity is a public government body.",
+            "confidence": {
+                "score": 99,
+                "band": "very_high",
+                "reason": "The unresolved distinction is only between governments.",
+            },
+            "source_ids": ["S1"],
+        }
+    ]
+    for field in (
+        "wealth_creation_industry",
+        "primary_industry",
+        "wealth_origin",
+        "wealth_relationship",
+    ):
+        dossier[field]["classification"] = "unknown"
+        dossier[field]["label"] = "Unknown"
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 0, result.stderr

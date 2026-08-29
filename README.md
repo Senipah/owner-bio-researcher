@@ -318,11 +318,31 @@ After the schema-v8 backfill has been reviewed, reconcile dossier tags with the
 live owner pages using the standalone tag updater. Catalogue IDs are local
 research identifiers, not website IDs, so the updater compares canonical tag
 names and records the live association ID used for any deletion. The default is
-a read-only dry-run:
+a read-only dry-run. It also defaults to a minimum corpus frequency of two:
+tags supported by only one usable completed dossier remain in research data but
+are not newly added to owner pages. An already-live matching singleton is
+retained rather than removed solely because of this threshold.
 
 ```powershell
 .\venv\Scripts\python.exe .\update_owner_tags.py `
   --dossier-dir output\owner-research\all-by-loa
+```
+
+Use `--minimum-owner-count` only when an explicitly reviewed publication rule
+requires a different threshold. Counts always come from the complete usable
+dossier corpus, even when `--person-id` or `--limit` narrows the live run. The
+audit records every suppressed addition and its corpus owner count.
+
+When authentication or any contact with the website is out of scope, use
+`--offline`. This produces a publication-eligibility manifest from the dossier
+corpus, including every singleton that would be suppressed, without logging in
+or reading live owner pages. Because no live state is available, it deliberately
+does not claim which tags need adding or removing:
+
+```powershell
+.\venv\Scripts\python.exe .\update_owner_tags.py `
+  --dossier-dir output\owner-research\all-by-loa `
+  --offline
 ```
 
 Apply missing tags to a small reviewed selection first:

@@ -24,10 +24,15 @@ from src.tags import (
 
 TAG_ID_PATTERN = re.compile(r"^tag_(\d+)$")
 TAG_TYPE_FACETS = {
+    "arts",
+    "award",
     "business model",
+    "cause",
     "company",
+    "family",
     "occupation",
     "organisation",
+    "philanthropy",
     "sport",
     "status",
     "subindustry",

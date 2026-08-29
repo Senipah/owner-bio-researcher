@@ -15,7 +15,7 @@ Use this file as Custom GPT Knowledge. Behaviour, workflow order, manual-mode ru
 
 | Section | Canonical source | SHA-256 |
 | --- | --- | --- |
-| Research and dossier contract | `references/research-contract.md` | `48d2da2363e984c3b6c6414182d4068d3a108be39a87f51ef28fb76da7eef5ac` |
+| Research and dossier contract | `references/research-contract.md` | `8fc4a51f0196d291b217ae90d9d6e599890d869c808582a6a80b04956f3e735f` |
 | Wealth classification | `references/wealth-classification.md` | `ffd1f3abaa8e80ccd424747b76e2f7a82e3349ac2b87a1e049b6bc0531f93887` |
 | Biography style | `references/biography-style.md` | `0735c58c4d0c75a0a74d7a1bf95afb7f40eafd9e0b103fed3d0304079474caf8` |
 | Editorial calibrations | `references/editorial-calibrations.md` | `b705d5ebe33444a8abfecbc7bb0100478dc88c5a848b8fb4121473853a7dc9dd` |
@@ -255,6 +255,13 @@ For `record_type=unresolved_placeholder`, set `biography_brief`,
 20-120 word `editorial_note` explaining the identity limitation. Unresolved
 placeholders must not propose details or social links.
 
+They also normally use an empty `proposed_tags` list. The sole exception is
+`Government-owned` when the unresolved label is institutional and every
+plausible identity remains a public owner entity. In that case it must be the
+only proposed tag, and the semantic-review checkpoint must record an explicit
+`government_owned_basis` explaining why the status survives the identity
+ambiguity.
+
 The compiler always maps `biography.html` to the existing `details.biography`.
 When the source owner exposes `details.long_biography`, it also maps
 `long_biography.html` there. Both biography objects remain available under
@@ -359,7 +366,14 @@ wealth origin or wealth relationship, describes a commonplace billionaire
 attribute, represents a minor portfolio holding, or lacks durable materiality.
 For analytical subindustries, prefer concepts likely to form a useful cohort;
 rare but inherently browse-worthy identities such as actors or professional
-athletes do not require a minimum count.
+athletes do not require a minimum count in the research catalogue.
+
+Keep research capture separate from live publication. A valid tag may remain
+in a dossier and the open catalogue when only one completed owner currently
+qualifies, allowing a later dossier to reuse it. Do not newly publish such a
+singleton to owner pages. The live updater defaults to requiring at least two
+usable completed dossiers for an addition, preserves an already-live matching
+singleton, and audits every suppressed addition and its corpus owner count.
 
 Use `Government-owned` as a status tag when the owner record itself is a
 government, ministry, municipality, state agency, comparable public body, or an

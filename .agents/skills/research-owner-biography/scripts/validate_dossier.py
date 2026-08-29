@@ -889,8 +889,21 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
     if not isinstance(proposed_tags, list):
         errors.append("proposed_tags must be a list")
     else:
-        if record_type == "unresolved_placeholder" and proposed_tags:
-            errors.append("proposed_tags must be empty for unresolved records")
+        unresolved_public_owner_exception = (
+            record_type == "unresolved_placeholder"
+            and len(proposed_tags) == 1
+            and isinstance(proposed_tags[0], dict)
+            and proposed_tags[0].get("name") == "Government-owned"
+        )
+        if (
+            record_type == "unresolved_placeholder"
+            and proposed_tags
+            and not unresolved_public_owner_exception
+        ):
+            errors.append(
+                "proposed_tags must be empty for unresolved records except "
+                "for a sole Government-owned tag"
+            )
         for index, item in enumerate(proposed_tags):
             path = f"proposed_tags[{index}]"
             if not isinstance(item, dict):

@@ -183,6 +183,34 @@ atomically writes only changed dossiers, and verifies every written dossier.
 Independently validate and resolve every refreshed tag before treating the
 backfill as complete.
 
+Do not treat that deterministic backfill as an exhaustive semantic review. For
+an explicitly authorised whole-corpus pass, record one immutable-hash review
+checkpoint per dossier under an ignored working directory. Research subagents
+may review only one owner at a time and must not edit dossiers or the shared
+catalogue. The main agent owns the following checkpoint workflow:
+
+1. Validate progress with `scripts/apply_semantic_tag_reviews.py` in dry-run
+   mode. An empty result requires a documented `zero_tag_reason`.
+2. Draft open-taxonomy decisions with
+   `scripts/draft_semantic_tag_decisions.py`. Its output is deliberately marked
+   `draft` and cannot be applied.
+3. Review every candidate, set the document to `approved`, then use
+   `scripts/resolve_semantic_tag_candidates.py` dry-run first and `--apply`
+   second. Merge semantic aliases, but preserve broader and narrower concepts.
+4. Rebuild and check GPT Knowledge after each catalogue change.
+5. Apply checkpoints to dossiers only after every dossier has a terminal
+   review and every catalogue candidate is resolved. The application helper
+   creates and verifies a complete backup and changes only `proposed_tags`.
+
+This skill stops at reviewed repository data. Live owner-page reconciliation
+remains the separate dry-run-first `update_owner_tags.py` workflow and requires
+explicit authority for `--apply`; removals additionally require
+`--replace-tags`. The research catalogue stays open even when a tag currently
+has one qualifying owner. Live publication is narrower: by default the updater
+must suppress additions for tags supported by fewer than two usable completed
+dossiers, retain an already-live matching singleton, and record every
+suppressed addition in its audit.
+
 # Guardrails
 
 - Use public sources only and minimise collection of irrelevant personal data.
@@ -215,6 +243,10 @@ backfill as complete.
 - Apply `Government-owned` only when the owner record is itself a government or
   public body, or an institution is explicitly government/state-owned. Public
   office, contracting, employment, stewardship, and royalty do not suffice.
+  An unresolved institutional label may receive only this one semantic tag when
+  every plausible identity is still a public owner entity and the checkpoint
+  records an explicit `government_owned_basis`; identity ambiguity alone must
+  not hide an otherwise certain state-ownership grouping.
 - Treat `research_status=complete` as completion of the research decision, not
   proof that every field is known. Preserve supported `Unknown`
   classifications, confidence limits, and uncertainties instead of emitting

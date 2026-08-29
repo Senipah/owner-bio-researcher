@@ -231,6 +231,13 @@ For `record_type=unresolved_placeholder`, set `biography_brief`,
 20-120 word `editorial_note` explaining the identity limitation. Unresolved
 placeholders must not propose details or social links.
 
+They also normally use an empty `proposed_tags` list. The sole exception is
+`Government-owned` when the unresolved label is institutional and every
+plausible identity remains a public owner entity. In that case it must be the
+only proposed tag, and the semantic-review checkpoint must record an explicit
+`government_owned_basis` explaining why the status survives the identity
+ambiguity.
+
 The compiler always maps `biography.html` to the existing `details.biography`.
 When the source owner exposes `details.long_biography`, it also maps
 `long_biography.html` there. Both biography objects remain available under
@@ -335,7 +342,14 @@ wealth origin or wealth relationship, describes a commonplace billionaire
 attribute, represents a minor portfolio holding, or lacks durable materiality.
 For analytical subindustries, prefer concepts likely to form a useful cohort;
 rare but inherently browse-worthy identities such as actors or professional
-athletes do not require a minimum count.
+athletes do not require a minimum count in the research catalogue.
+
+Keep research capture separate from live publication. A valid tag may remain
+in a dossier and the open catalogue when only one completed owner currently
+qualifies, allowing a later dossier to reuse it. Do not newly publish such a
+singleton to owner pages. The live updater defaults to requiring at least two
+usable completed dossiers for an addition, preserves an already-live matching
+singleton, and audits every suppressed addition and its corpus owner count.
 
 Use `Government-owned` as a status tag when the owner record itself is a
 government, ministry, municipality, state agency, comparable public body, or an
