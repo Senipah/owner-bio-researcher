@@ -63,6 +63,7 @@ def prepare_draft(
     return {
         "schema_version": 1,
         "approval_status": "draft",
+        "approval_reference": None,
         "generated_at": datetime.now(UTC).isoformat(),
         "review_file_count": len(reviews),
         "candidate_group_count": len(groups),
@@ -108,7 +109,10 @@ def main() -> int:
         f"Drafted {draft['candidate_group_count']} candidate decisions from "
         f"{draft['review_file_count']} reviews in {args.output}"
     )
-    print("Review every decision and set approval_status to approved before use.")
+    print(
+        "Review every decision, set a human/global approval_reference, and "
+        "set approval_status to approved before use."
+    )
     return 0
 
 

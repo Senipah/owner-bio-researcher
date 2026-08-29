@@ -14,7 +14,7 @@ batch.
 
 Continue until all selected owners have:
 
-1. one schema-v8 dossier beneath `output/owner-research/top-100/`;
+1. one schema-v9 dossier beneath `output/owner-research/top-100/`;
 2. an unordered source-hidden biography fact pool with at least two distinct
    opening options, plus validated short and longer biographies and editorial
    assessment for people, or a non-person editorial note with null
@@ -23,8 +23,8 @@ Continue until all selected owners have:
    `wealth_origin`, and `wealth_relationship` classifications;
 4. an explicit Forbes result;
 5. an inventory of missing details and supported link types;
-6. every durable, material, dossier-supported canonical tag, including the
-   supported long tail, with local ID/name pairs and direct evidence;
+6. a minimal, coherent set of approved active tags, with exceptional
+   unapproved concepts isolated in `tag_candidates`;
 7. only confidence-70-or-higher proposed details, links, and tags;
 8. `review.status=complete` after strict validation.
 
@@ -49,14 +49,12 @@ For every owner:
   wealth-creation or current sector, not merely a later investment;
 - explain where wealth or prominence came from rather than foregrounding net
   worth;
-- populate `proposed_tags` with every durable, material, dossier-supported
-  grouping using canonical names/aliases from `config/owner-tags.json`; keep
-  local ID/name pairs, summaries, confidence, and direct source IDs; treat the
-  catalogue as an evolving registry, resolve semantic aliases first, and have
-  the main agent create a genuinely distinct qualifying tag before final
-  validation rather than omit it or invent an ID; retain the documented
-  exclusions, the gambling/video-game distinction, and additive umbrella plus
-  granular gambling tags;
+- follow `docs/ai/OWNER_TAG_GOVERNANCE.md`; treat current first-pass dossier
+  tags as untrusted recommendations, apply only approved active catalogue tags
+  to `proposed_tags`, and use the minimum literal set that preserves meaningful
+  click-through cohorts; put exceptional unapproved concepts in
+  `tag_candidates` without production IDs; do not promote, reactivate or edit
+  the catalogue from an individual dossier;
 - search supported person-relevant social types, prioritising Instagram,
   LinkedIn, and Personal Website;
 - reject namesake, company, fan, family-member, and uncorroborated accounts;
@@ -65,7 +63,7 @@ For every owner:
 - keep lower-confidence facts and links in review candidates or uncertainties;
 - set `record_type` before drafting; institutions and unresolved placeholders
   receive `editorial_note`, null biographies, and no personal proposals;
-- complete research first, then build the schema-v8 `biography_brief` as an
+- complete research first, then build the schema-v9 `biography_brief` as an
   unordered fact pool containing durable identity, defining work, nullable
   formative context and decisive moment, one to three enduring dimensions,
   optional character detail, at least two fact-level opening options with
@@ -173,7 +171,7 @@ Acceptance criteria:
 - the compiled JSON contains every and only unique current Top-100 owner,
   ordered by minimum current vessel rank;
 - every compiled owner has a validated dossier;
-- every schema-v8 person dossier passes the strict corpus editorial audit;
+- every schema-v9 person dossier passes the strict corpus editorial audit;
 - `_baseline`, `person_id`, `profile_url`, and existing `profile_key` values
   remain unchanged;
 - usable completed output owners have `workflow.ai_enriched=true`, while
@@ -198,6 +196,11 @@ that all dossiers are complete and nothing was applied.
 
 ## After research compilation
 
-Run `update_owners.py` without `--apply`, inspect its audit, and obtain separate
-authorization before any live apply. Legacy dossiers marked `rejected` retain
-the original owner values and remain ineligible for update.
+Run owner and tag update tools as dry runs only. Before any later tag apply,
+compare the corrected assignments with successfully read live state and review
+the exact additions and removals. Promote candidates or reactivate inactive
+concepts only through a separate global decision with a recorded human
+approval reference. Apply the 5–50 dossier-record heuristic as a review signal,
+never a hard acceptance rule. Correct existing dossiers in place, but leave
+source-record deduplication for the separate clerical in-system task. Obtain
+separate authorization before any live apply.

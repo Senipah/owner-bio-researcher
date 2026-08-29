@@ -31,6 +31,12 @@ Do not continue below identity confidence 85. Use `identity_conflict` for
 contradictory matches and `insufficient_evidence` when no match is strong
 enough.
 
+For repository-backed work, the upstream `person_id` is the authoritative
+source-record identity. Never transfer dates, titles, offices, biographies or
+tag evidence between similarly named relatives, especially royal-family
+members. Matching names or dates of birth never merge records. Keep conflicting
+identity facts unresolved and do not use them for automatic tag assignments.
+
 `research_status=complete` means the identity and every proposed conclusion
 have reached a terminal research decision. It does not mean that every desired
 field is publicly knowable. Use supported `Unknown` classifications and record
@@ -155,7 +161,7 @@ system's vessel data. Independently significant maritime careers or sustained
 competitive, research, or philanthropic work may be described, but the
 biography must focus on that durable activity rather than the transient asset.
 
-The schema-v8 brief is an unordered editorial fact pool, not a paragraph
+The schema-v8/v9 brief is an unordered editorial fact pool, not a paragraph
 outline. It contains:
 
 - `durable_identity`: the clearest durable description of the person;
@@ -180,7 +186,7 @@ Before drafting, make a temporary fact-allocation table with no more than two
 shared anchors, at least one short-only fact or dimension, at least two
 substantive long-only facts or dimensions, and explicit short-biography
 material the long version will omit. This table is working editorial material;
-do not add it to the schema-v8 dossier.
+do not add it to the dossier.
 
 Draft without source publishers, confidence language, classification
 deliberation, current-vessel context, or the order of the brief fields. Select
@@ -320,150 +326,69 @@ copy the input value into `existing_value` so stale proposals can be rejected.
 
 ## Tag selection
 
-Populate `proposed_tags` during every new research pass. Apply the agreed test:
-include every durable, material, dossier-supported tag that would create a
-meaningful grouping. Tags are additive research metadata, so they are not
-limited to blank owner fields and may cover industries, sports, royal houses,
-business families, durable roles, distinctive causes, named companies, or
-other catalogued associations.
+Read the canonical
+[owner-tag governance policy](../../../../docs/ai/OWNER_TAG_GOVERNANCE.md)
+before tag research. It defines information value, click-through coherence,
+the 5 to 50 record heuristic, minimum useful literal sets, facets, named
+entities, narrative analysis, temporal roles and the binding examples.
 
-The catalogue is an evolving canonical registry, not a closed whitelist. Only
-part of the owner corpus has completed research, so absence from the current
-catalogue or completed dossiers must never prevent a qualifying tag from being
-proposed or created. A tag qualifies when it does at least one of the following:
+Schema v9 separates the two outputs:
 
-- adds a useful subindustry below a broad industry classification;
-- captures a durable, interesting occupation, sport, status, or public role;
-- creates a meaningful cross-industry grouping; or
-- supports a plausible user question about owner or yacht patterns.
+- `proposed_tags` contains only approved active catalogue assignments;
+- `tag_candidates` contains exceptional unapproved concepts for later global
+  review and never contains a production tag ID.
 
-Reject a candidate that merely renames an industry classification, repeats
-wealth origin or wealth relationship, describes a commonplace billionaire
-attribute, represents a minor portfolio holding, or lacks durable materiality.
-For analytical subindustries, prefer concepts likely to form a useful cohort;
-rare but inherently browse-worthy identities such as actors or professional
-athletes do not require a minimum count in the research catalogue.
+Search active canonical names and aliases first. Use merged labels only through
+their canonical active target. Candidate and inactive catalogue entries are
+non-assignable tombstones; a matching candidate may request deliberate
+reconsideration by recording its existing non-active ID, but research must not
+reactivate or recreate it.
 
-Keep research capture separate from live publication. A valid tag may remain
-in a dossier and the open catalogue when only one completed owner currently
-qualifies, allowing a later dossier to reuse it. Do not newly publish such a
-singleton to owner pages. The live updater defaults to requiring at least two
-usable completed dossiers for an addition, preserves an already-live matching
-singleton, and audits every suppressed addition and its corpus owner count.
+For each active assignment store:
 
-Use `Government-owned` as a status tag when the owner record itself is a
-government, ministry, municipality, state agency, comparable public body, or an
-institution explicitly documented as government- or state-owned. This tag
-describes public ownership of the owner entity and therefore enables analysis
-of the yachts associated with those entities. Do not apply it to a person
-merely because they hold public office, chair or work for a state enterprise,
-manage sovereign assets, or supply a government. `Government contracting`
-remains the separate private-business model tag. Royal or crown-associated
-assets qualify only when reliable evidence establishes public/state ownership
-rather than the ruler's or royal family's private ownership.
+- `tag_id` and canonical `name`;
+- `summary` of the owner-specific defining association;
+- `relationship_type`;
+- `temporal_scope` using `current`, `former_but_defining`, `historical`,
+  `current_only`, `unknown`, or `not_applicable`;
+- `taxonomy_value`, explaining the distinct click-through intelligence;
+- evidence confidence of at least 70; and
+- direct `source_ids`.
 
-Apply this canonicalisation workflow in order:
+For each exceptional candidate store:
 
-1. Normalize the candidate and compare it with every canonical name and alias.
-2. Check semantic equivalence. If it is reasonably the same concept, use the
-   existing canonical tag; in a repo-backed run, add a durable missing alias
-   when that will improve future resolution.
-3. Do not collapse broader and narrower concepts into aliases. `Banking` is not
-   an alias of `Finance & Investments`, and `Luxury goods` is not an alias of
-   `Fashion & Retail`; their extra granularity is the point.
-4. If a distinct candidate passes the taxonomy rule in a repo-backed run,
-   allocate the next unused monotonic local ID, add its canonical name,
-   aliases, and facets to `config/owner-tags.json`, then resolve the dossier to
-   that new ID. Use a type facet such as `subindustry`, `occupation`, `sport`,
-   `company`, `status`, or `business model`; subindustries also use every
-   applicable `parent:<classification>` facet, such as
-   `parent:finance_investments`.
-5. In a batch, research subagents return null-ID candidates. Only the main
-   agent consolidates semantic duplicates, updates the shared catalogue, and
-   replaces candidate null IDs before final validation.
-6. In Custom GPT mode the uploaded Knowledge cannot be mutated. Keep the
-   defensible candidate in `proposed_tags` with `tag_id: null`, identify it
-   separately as a **New catalogue candidate**, and explicitly tell the user
-   that `tag-catalogue.json` Knowledge must be updated before the tag can have
-   a canonical ID or become compilation-ready. Never invent an ID.
+- `proposed_name` and its exact `normalized_name`;
+- optional `possible_aliases` and `suggested_facets`;
+- owner-specific `summary`, `relationship_type` and `temporal_scope`;
+- `information_value` describing the cross-owner question it could answer;
+- `existing_active_tag_review` explaining why no active tag covers it;
+- `metadata_likelihood` as `taxonomy_candidate`, `dossier_metadata`, or
+  `uncertain`;
+- evidence confidence and direct source IDs; and
+- `existing_non_active_tag_id` when deliberately reconsidering a matching
+  candidate or inactive tombstone.
 
-After any repo-backed catalogue change, rebuild the tracked Custom GPT
-Knowledge and tag catalogue with `scripts/build_gpt_knowledge.py`, run its
-`--check` mode, and validate tag resolution. Existing parent-aligned tags such
-as `Cryptocurrency` and the deliberately additive `Gambling` umbrella are not
-precedent for creating new duplicates of industry labels.
+Absence from the active catalogue is not permission to mutate it. Preserve a
+useful fact in the dossier narrative when it does not merit a candidate. A
+single owner dossier, multiple occurrences and high evidence confidence never
+activate a concept. Promotion requires a separate global decision document
+with a human `approval_reference`, followed by dry-run-first catalogue tooling.
 
-Use the dry-run-first helper for repo-backed additions after completing the
-semantic review:
+After an approved catalogue change, rebuild and check the tracked Custom GPT
+Knowledge. The helper requires `--approval-reference`; it allocates IDs only
+for globally approved concepts and rejects collisions with non-active labels.
 
-```powershell
-.\venv\Scripts\python.exe `
-  .agents\skills\research-owner-biography\scripts\add_catalogue_tag.py `
-  --name "Luxury goods" `
-  --alias "Luxury brands" `
-  --facet subindustry `
-  --facet parent:fashion_retail `
-  --facet luxury
-```
+Retain the established exclusions for generic philanthropy-domain tags,
+`Family office`, `Family business` and `Property development`. The separate
+`family_office_principal` wealth-relationship classification remains valid.
 
-Rerun with `--apply` only after inspecting the proposed canonical entry. The
-helper catches normalized name or alias reuse, allocates the next monotonic
-local ID, requires exactly one type facet, requires a parent for subindustries,
-sorts the catalogue, validates it, and writes atomically. It cannot decide
-semantic equivalence; that remains the research agent's responsibility.
-
-When semantic review shows that a new label is an alias of an existing tag,
-teach that alias to the registry instead of creating a tag:
-
-```powershell
-.\venv\Scripts\python.exe `
-  .agents\skills\research-owner-biography\scripts\add_catalogue_tag.py `
-  --name "Luxury sector" `
-  --alias-for "Luxury goods"
-```
-
-Inspect the dry-run and rerun with `--apply`. `--alias-for` accepts a canonical
-name, existing alias, or local ID and rejects labels already owned by another
-canonical tag.
-
-Use `config/owner-tags.json` as the canonical research-layer registry. Store
-both `tag_id` and `name` when the local ID is known. `tag_id` may be `null` for
-a Custom GPT catalogue candidate; never invent an ID. Compilation resolves
-names and aliases, follows `merged_into`, and stops with an explicit unknown or
-ambiguous result instead of silently creating a tag.
-When `tag_id` is present it is authoritative, and `name` must match that tag's
-canonical name or one of its aliases; the name remains a readable snapshot.
-
-Each proposal contains:
-
-- `tag_id`: a catalogue ID or `null`;
-- `name`: the canonical name when known, otherwise the researched name;
-- `summary`: a concise explanation of the durable, material association;
-- confidence of at least 70; and
-- one or more `source_ids` directly supporting the association.
-
-Do not add tangential employers, transient interests, unsupported surname-only
-family links, or tags inferred only from another classification. Do not use
-`Family business`, `Property development`, `Family office`, `Arts & culture
-philanthropy`, `Children & youth philanthropy`, `Education philanthropy`,
-`Health philanthropy`, or `Science philanthropy`. These generic tags are
-deliberately excluded; this does not remove the separate
-`family_office_principal` wealth-relationship classification or distinctive
-cause tags such as `Humanitarian aid` and `Marine / ocean conservation`.
-
-Treat bare `Gaming` as belonging to the casino, betting, and gambling-industry
-`Gambling` family. Whenever that association passes the materiality test,
-apply the umbrella `Gambling` tag and every directly supported granular tag:
-`Bookmaking`, `Casino operations`, `Gaming machines`, `Lotteries`, or `Online
-gambling & betting`. A granular gambling tag always implies `Gambling`; more
-than one granular tag may apply. Do not infer land-based `Casino operations`
-from online-casino evidence alone. Use `Video games` only when evidence
-explicitly concerns video games, game development, game publishing, or an
-equivalent interactive-entertainment business. Do not repeat names that
-normalize to the same casefolded, punctuation-insensitive form; compilation
-also rejects different aliases that resolve to the same canonical tag. An
-empty list is valid only when no supported tag meets the applicability test.
-Unresolved placeholders must use an empty list.
+Treat bare gambling-industry `Gaming` as `Gambling`, plus every directly
+supported active granular tag. Use `Video games` only for explicit
+interactive-entertainment evidence. Apply `Government-owned` only to a public
+owner entity under the policy's status contract. Empty `proposed_tags` and
+`tag_candidates` lists are valid when nothing qualifies; unresolved
+placeholders normally require both empty, subject only to the documented sole
+active `Government-owned` exception.
 
 ## Staff-facing owner-page response
 
@@ -515,7 +440,7 @@ Use this top-level structure:
 
 ```json
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "record_type": "person",
   "owner": {
     "person_id": null,
@@ -660,6 +585,7 @@ Use this top-level structure:
   "proposed_details": [],
   "proposed_socials": [],
   "proposed_tags": [],
+  "tag_candidates": [],
   "candidates_requiring_review": [],
   "sources": [],
   "uncertainties": [],
@@ -675,7 +601,8 @@ contain `id`, `url`, `title`, `publisher`, `tier`, `accessed_at`, and
 `supports`. Proposed detail items must also contain `action`; corrections must
 contain `existing_value`; proposed social items must contain `type_id` copied
 from `input_snapshot.social_type_lookup`. Proposed tag items must also contain
-`tag_id`, `name`, and `summary` as defined above.
+the active-assignment fields defined above. Candidate items use the separate
+`tag_candidates` contract and never receive an active production tag ID.
 
 Research agents emit `review.status=complete` only after the dossier reaches a
 terminal research decision and passes validation. This status is automatic
@@ -691,7 +618,7 @@ uncertainty, and review objects, with these differences:
 
 ```json
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "record_type": "institution",
   "research_status": "complete",
   "biography_brief": null,
@@ -729,7 +656,8 @@ uncertainty, and review objects, with these differences:
   },
   "proposed_details": [],
   "proposed_socials": [],
-  "proposed_tags": []
+  "proposed_tags": [],
+  "tag_candidates": []
 }
 ```
 

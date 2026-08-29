@@ -14,7 +14,9 @@ owner records, and applying reviewed JSON changes through the website.
 3. Read
    [docs/ai/WORKFLOWS_AND_GUARDRAILS.md](docs/ai/WORKFLOWS_AND_GUARDRAILS.md)
    before changing browser automation, persistence, or update behavior.
-4. Inspect the relevant entrypoint and its modules under `src/`.
+4. Read [docs/ai/OWNER_TAG_GOVERNANCE.md](docs/ai/OWNER_TAG_GOVERNANCE.md)
+   before owner-tag research, catalogue, audit, or reconciliation work.
+5. Inspect the relevant entrypoint and its modules under `src/`.
 
 ## Working set
 
@@ -50,6 +52,9 @@ owner records, and applying reviewed JSON changes through the website.
 - Blank clears and social removals require their separate explicit flags.
 - Never overwrite a live value that differs from the immutable export
   baseline; report a conflict instead.
+- Owner dossiers may assign only approved active tags. Unapproved concepts stay
+  in the separate dossier candidate structure and never mutate the active
+  catalogue from a single-owner research run.
 - Set `workflow.updated_in_system=true` only after a live save is re-exported
   and verified.
 - Set `review.status=complete` only after a terminal research decision passes

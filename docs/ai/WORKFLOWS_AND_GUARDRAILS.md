@@ -63,13 +63,15 @@ when terminal research passes strict validation and sets
 the workflow flag for usable complete or legacy-approved dossiers and resets
 `workflow.updated_in_system=false` when a desired change is introduced. Only
 values with confidence 70 or higher are imported.
-Schema-v8 tags are resolved read-only through `config/owner-tags.json` and
-stored under `ai_research.tags`; compilation does not map or write website tag
-IDs. Unknown, ambiguous, mismatched, or canonically duplicated tags fail
-compilation explicitly.
+Schema-v8 legacy and schema-v9 current tags follow the canonical
+[owner-tag governance policy](OWNER_TAG_GOVERNANCE.md). Production resolution
+exposes active assignments and canonical merge redirects only. Candidate,
+inactive, unknown, ambiguous, mismatched, or duplicated references cannot
+compile as active assignments; legacy v8 references remain reportable for the
+later in-place consolidation. Compilation never maps or writes website tag IDs.
 
 `update_owner_tags.py` is the separate live reconciliation path for completed
-schema-v8 dossiers. It compares canonical names because catalogue IDs are local
+schema-v8/v9 dossiers. It compares canonical names because catalogue IDs are local
 research identifiers and website row IDs identify owner-tag associations. Keep
 pure tag planning in `src/diffing.py`, HTML parsing in `src/parsers.py`, Selenium
 mechanics in `src/browser_update.py`, and login/auditing in the entrypoint.
@@ -159,12 +161,16 @@ AI review or a live system update occurred.
   additions must not imply authority to delete; removals additionally require
   `--replace-tags`.
 - `update_owner_tags.py --offline` must not authenticate or read live owner
-  pages. It may report corpus publication eligibility and singleton suppression,
-  but cannot claim live additions or removals.
-- Live tag additions require support from at least two usable completed owner
-  dossiers by default. Keep singleton tags in the research catalogue for future
-  reuse, but suppress their live additions and audit them. Do not remove an
-  already-live matching singleton solely because it is below the threshold.
+  pages. It may report lifecycle and record-frequency diagnostics, but cannot
+  claim live additions or removals.
+- The default two-dossier-record threshold suppresses low-frequency new live
+  additions only. It is neither taxonomy approval nor evidence of unique
+  people. Do not remove an already-live match solely because it is below the
+  threshold.
+- Destructive tag removal requires a successful live read, `--replace-tags`,
+  and an explicitly reviewed dry-run manifest matching the requested removal
+  set. Unresolved and lifecycle-incomplete legacy records cannot authorise
+  removals.
 - Keep clearing blanks behind `--allow-clear`.
 - Keep removal of absent socials behind `--replace-socials`.
 - Re-read live state before every planned save. A live-versus-baseline

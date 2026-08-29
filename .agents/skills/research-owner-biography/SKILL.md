@@ -34,11 +34,13 @@ statistics.
 - Write dossiers beneath `output/owner-research/`; never overwrite owner input.
 - Read [references/research-contract.md](references/research-contract.md) for
   evidence, confidence, social-link, and dossier rules.
-- Use the repo-level `config/owner-tags.json` as the canonical tag catalogue,
-  not a closed whitelist. Apply every durable, material, dossier-supported tag
-  that passes the taxonomy rule. Resolve aliases first; in a repo-backed run,
-  add a genuinely distinct missing tag to the catalogue before using its new
-  ID. Generic philanthropy tags and `Family office` remain excluded.
+- Before any tag work, read the canonical
+  [owner-tag governance policy](../../../docs/ai/OWNER_TAG_GOVERNANCE.md).
+  Use the status-aware `config/owner-tags.json` through `src.tags`; only active
+  tags are assignable and merged references redirect to an active target.
+  Candidate and inactive entries are discovery tombstones, never production
+  choices. Schema v9 is the current output contract; schema v8 remains readable
+  legacy input for later in-place consolidation.
 - Read
   [references/wealth-classification.md](references/wealth-classification.md)
   before classifying industries, wealth origin, or relationship to wealth.
@@ -68,7 +70,10 @@ statistics.
    relationships. A raw blank is not automatically a useful research target.
 2. Resolve identity before enrichment. Require strong agreement among name,
    occupation/company, geography, family, and yacht context. Stop as
-   `identity_conflict` when materially ambiguous.
+   `identity_conflict` when materially ambiguous. Treat the upstream
+   `person_id` as the source-record identity; never transfer facts between
+   similarly named relatives or merge records from matching names or birth
+   dates. Keep conflicting facts unresolved and out of tag evidence.
    Set `record_type` to `person`, `institution`, or `unresolved_placeholder`
    before drafting anything. Institutions receive durable user-facing text in
    the existing biography fields plus an `editorial_note`; unresolved
@@ -87,16 +92,13 @@ statistics.
    was created over its current amount. Within self-made wealth, distinguish
    an evidenced independent start from an advantaged one; do not equate
    founder ownership with a blank-slate upbringing.
-5. Generate all applicable tags after the identity and wealth research, even
-   when the current catalogue lacks one. Apply the taxonomy and
-   canonicalisation workflow in `references/research-contract.md`: resolve a
-   reasonable alias to the existing concept; otherwise create a distinct tag
-   in a repo-backed run, or report a null-ID catalogue candidate in Custom GPT
-   mode. Give every proposal a materiality summary, confidence of at least 70,
-   and direct source IDs. Preserve the documented exclusions and the
-   gambling/video-game distinction. Use `Government-owned` only for a
-   documented public owner/entity, never merely for an official, contractor,
-   state-company employee, sovereign-asset chair, or private royal owner.
+5. Select the minimum useful literal tag set after identity and wealth
+   research. Apply the policy's information-value and click-through-cohort
+   tests, minimise overlap within each semantic dimension, and search active
+   canonical names and aliases first. Put only approved active ID/name pairs in
+   `proposed_tags`. Record an exceptional, genuinely promising unknown concept
+   under `tag_candidates`; never mint an ID or edit the active catalogue from
+   this owner dossier. Preserve useful non-tag facts in narrative or evidence.
 6. Search all person-relevant link types supported by the input lookup,
    prioritising public personal Instagram, LinkedIn, and personal websites.
    A company website may be proposed under its distinct type when the owner
@@ -105,7 +107,7 @@ statistics.
 7. Propose only missing or clearly improvable personal fields. Do not infer
    nationality from birthplace, residence from yacht location, or family facts
    from surname.
-8. For a person, build the schema-v8 `biography_brief` after research as an
+8. For a person, build the schema-v9 `biography_brief` after research as an
    unordered editorial fact pool. Include durable identity, defining work,
    nullable formative context and decisive moment, one to three enduring
    dimensions, optional character detail, at least two distinct opening
@@ -118,7 +120,7 @@ statistics.
    anchors, at least one short-only fact or dimension, at least two substantive
    long-only facts or dimensions, and the short-biography material the long
    version will deliberately omit. Do not store this working table in the
-   schema-v8 dossier.
+   schema-v9 dossier.
 10. Select an opening mode and narrative shape deliberately; never draft in
    brief-field order. Draft a 50-55 word short identity card and a 90-190 word,
    two-paragraph concise profile from their allocated facts. When available,
@@ -164,9 +166,11 @@ For a batch of four or more owners, use subagents when available: give each
 subagent one owner and this skill, allow at most three research agents at once,
 and require one dossier per owner. Keep the main agent responsible for identity
 checks, cross-owner consistency, validation, reviewer feedback, and checkpoint
-tracking. Subagents may return null-ID tag candidates but must not edit the
-shared catalogue; the main agent deduplicates candidates, creates approved
-canonical entries once, refreshes their dossiers, and rebuilds GPT Knowledge.
+tracking. Subagents may return separate tag candidates but must not edit the
+shared catalogue. The main agent deduplicates them for global review; it does
+not activate them unless a separate human-approved taxonomy decision supplies
+an approval reference. Rebuild GPT Knowledge after any approved catalogue
+change.
 Do not let parallel agents edit the shared owner dataset.
 
 ## Existing-dossier tag migration
@@ -191,25 +195,29 @@ catalogue. The main agent owns the following checkpoint workflow:
 
 1. Validate progress with `scripts/apply_semantic_tag_reviews.py` in dry-run
    mode. An empty result requires a documented `zero_tag_reason`.
-2. Draft open-taxonomy decisions with
+2. Draft global-taxonomy decisions with
    `scripts/draft_semantic_tag_decisions.py`. Its output is deliberately marked
    `draft` and cannot be applied.
-3. Review every candidate, set the document to `approved`, then use
+3. Review every candidate globally, add a human `approval_reference`, set the
+   decision document to `approved`, then use
    `scripts/resolve_semantic_tag_candidates.py` dry-run first and `--apply`
    second. Merge semantic aliases, but preserve broader and narrower concepts.
 4. Rebuild and check GPT Knowledge after each catalogue change.
-5. Apply checkpoints to dossiers only after every dossier has a terminal
-   review and every catalogue candidate is resolved. The application helper
-   creates and verifies a complete backup and changes only `proposed_tags`.
+5. The existing `apply_semantic_tag_reviews.py` helper remains a legacy-v8
+   checkpoint and applies only after its catalogue candidates are resolved;
+   it changes only `proposed_tags`. The later authorised corpus consolidation
+   should instead upgrade corrected records to schema v9 so unapproved
+   `tag_candidates` can remain separate without being promoted merely to
+   complete research.
 
 This skill stops at reviewed repository data. Live owner-page reconciliation
 remains the separate dry-run-first `update_owner_tags.py` workflow and requires
 explicit authority for `--apply`; removals additionally require
-`--replace-tags`. The research catalogue stays open even when a tag currently
-has one qualifying owner. Live publication is narrower: by default the updater
-must suppress additions for tags supported by fewer than two usable completed
-dossiers, retain an already-live matching singleton, and record every
-suppressed addition in its audit.
+`--replace-tags` plus a reviewed live dry-run manifest. Active approval is
+independent of frequency. By default the updater suppresses new additions
+supported by fewer than two usable completed dossier records, retains an
+already-live matching low-frequency assignment, and records the operational
+suppression without calling the tag publishable or approved.
 
 # Guardrails
 
@@ -227,13 +235,14 @@ suppressed addition in its audit.
 - Separate citizenship, nationality, birthplace, and residence.
 - Exclude a proposed field or social link below confidence 70.
 - Exclude a proposed tag below confidence 70 or without direct dossier sources.
-- Require `proposed_tags` in every schema-v8 dossier. Include all and only
-  durable, material, dossier-supported tags that create meaningful groupings;
-  unresolved placeholders use an empty list.
-- Never omit a qualifying tag merely because the current catalogue or the
-  completed corpus does not contain it. Do not invent an ID: create the
-  canonical entry first in a repo-backed run, or use a null ID and an explicit
-  Knowledge-update notice in Custom GPT mode.
+- Require `proposed_tags` and `tag_candidates` in every schema-v9 dossier.
+  `proposed_tags` contains only active approved IDs; candidates never appear in
+  that list and never carry a production ID. Unresolved placeholders normally
+  use both lists empty, subject only to the documented active
+  `Government-owned` exception.
+- Omit weak literal tags. Catalogue absence may justify an exceptional
+  `tag_candidates` record, but never direct catalogue mutation or a null ID in
+  `proposed_tags`.
 - Resolve bare `Gaming` to the `Gambling` family, never `Video games`. Apply
   the umbrella `Gambling` tag together with every directly supported granular
   tag: `Bookmaking`, `Casino operations`, `Gaming machines`, `Lotteries`, or
@@ -318,11 +327,12 @@ suppressed addition in its audit.
   `self_made_advantaged` does not conceal a principal asset transfer, and
   broad `self_made` is retained when the distinction is unresolved.
 - Confirm every non-`unknown` wealth classification scores at least 70.
-- Confirm every tag candidate was checked against canonical names, aliases,
-  and semantic equivalents; broader or narrower concepts are not aliases.
-- Confirm every new repo-backed tag has a unique monotonic ID, a canonical
-  name, useful aliases, a type facet, applicable `parent:<classification>`
-  facets, and a rebuilt Custom GPT catalogue.
+- Confirm every active assignment passes the click-through cohort,
+  information-value and minimum-useful-set tests and resolves to an active ID.
+- Confirm every candidate was checked against active names, aliases, semantic
+  equivalents and non-active tombstones, remains separate from
+  `proposed_tags`, and has no production ID. Evidence confidence never counts
+  as taxonomy approval.
 - Confirm casino, betting, bookmaking, lottery, and gambling-industry gaming
   use `Gambling` plus every supported granular gambling tag, and never use
   `Video games` for that evidence.
@@ -351,7 +361,7 @@ suppressed addition in its audit.
 - Confirm the working fact allocation used no more than two shared anchors,
   retained at least one short-only fact or dimension, and supplied at least two
   substantive long-only facts or dimensions.
-- Confirm person dossiers contain a schema-v8 source-hidden, unordered
+- Confirm person dossiers contain a schema-v9 source-hidden, unordered
   `biography_brief` with at least two distinct opening options. Confirm
   institution dossiers contain short and longer biographies plus an
   `editorial_note`, and unresolved-placeholder dossiers contain no biography
@@ -383,12 +393,13 @@ suppressed addition in its audit.
 - For batches, run `scripts/audit_biography_corpus.py --strict` and revise
   repeated opening modes, origin-story leads, narrative shapes, paragraph-two
   transitions, stock phrases, and synthetic conclusions.
-- For skill revisions, validate the schema-v8 Shahid Khan calibration dossier
-  and compare the result against every archetype in the calibration set.
+- For skill revisions, validate the legacy schema-v8 Shahid Khan calibration
+  dossier for compatibility, validate a representative schema-v9 dossier, and
+  compare the result against every archetype in the calibration set.
 
 # Expected output
 
-A schema-v8 JSON dossier matching `references/research-contract.md`, saved
+A schema-v9 JSON dossier matching `references/research-contract.md`, saved
 separately from owner inputs. It contains:
 
 - record type, identity, and research status;
@@ -403,11 +414,11 @@ separately from owner inputs. It contains:
   placeholders;
 - a seven-dimension editorial assessment, selected opening mode, and narrative
   shape, with every person score at least 4;
-- proposed personal fields, verified socials, and every applicable canonical
-  tag with its research ID/name pair, materiality summary, confidence, and
-  source IDs;
-- any canonical tags created during a repo-backed run, or Custom GPT null-ID
-  candidates with an explicit tag-catalogue Knowledge-update notice;
+- proposed personal fields, verified socials, and the minimum useful set of
+  approved active tags with ID/name pair, rationale, relationship, temporal
+  scope, taxonomy value, confidence, and source IDs;
+- exceptional unapproved concepts under `tag_candidates`, with no production
+  ID and an explicit global-review or Knowledge-update notice;
 - per-item confidence and source IDs;
 - source ledger, uncertainties, and completed research state.
 

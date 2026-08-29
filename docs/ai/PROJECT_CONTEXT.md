@@ -71,10 +71,13 @@ Important owner fields:
   fortune and the current principal private interests. These are retained even
   before equivalent editable fields exist on the website. When
   `details.long_biography` is present, compilation maps the longer CKEditor
-  HTML into that field. Schema-v8 dossier `proposed_tags` are resolved through
-  `config/owner-tags.json`; canonical research ID/name pairs, confidence, and
-  source IDs are retained under `ai_research.tags`. These local IDs are not
-  website IDs and are mapped only during a later update stage.
+  HTML into that field. Schema-v8 legacy and schema-v9 current dossier tags are
+  resolved through the lifecycle-aware `config/owner-tags.json`. Schema v9
+  keeps approved active `proposed_tags` separate from unapproved
+  `tag_candidates`; only active canonical ID/name pairs reach
+  `ai_research.tags`. These local IDs are not website IDs and are mapped only
+  during a later update stage. See
+  [OWNER_TAG_GOVERNANCE.md](OWNER_TAG_GOVERNANCE.md) for the binding policy.
 
 Vessel-enriched owner documents may also contain a top-level
 `vessel_specifications` cache keyed by vessel ID and a `vessel_enrichment`

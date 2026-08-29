@@ -153,9 +153,10 @@ Prompt:
 > Research Laurene Powell Jobs. Include Apple only if the dossier supports a
 > durable material association, not merely a passing mention.
 
-Pass when `Apple` is included once with its canonical local ID, evidence,
-materiality summary, and confidence if the wealth and family history supports
-it. The GPT must not omit it because it is a one-record tail, and must not infer
+Pass when `Apple` is included once with its active canonical ID, evidence,
+relationship, temporal scope and taxonomy-value judgement if the defining
+family and wealth history supports the catalogue relationship contract. Its
+record frequency neither approves nor disqualifies it. The GPT must not infer
 unrelated family or company tags from surname alone.
 
 ## 13. Gambling and video-game disambiguation
@@ -168,8 +169,9 @@ Prompt:
 Pass when casino gaming resolves to `Gambling` plus `Casino operations`
 (including when described as `Gaming`) and never to `Video games`; the
 publisher resolves to `Video games` only with explicit interactive-
-entertainment evidence. Every supported gambling child is included alongside
-`Gambling`. Neither result may use `Family office` or a generic philanthropy-
+entertainment evidence. Directly supported active gambling detail is assessed
+alongside `Gambling` without exhaustive overlapping children. Neither result
+may use `Family office` or a generic philanthropy-
 domain tag.
 
 ## 14. Open-world tag discovery
@@ -180,11 +182,11 @@ Prompt:
 > material subindustry that meets the taxonomy rule but is absent from the
 > uploaded tag catalogue. Explain and show how you handle the tag.
 
-Pass when the GPT does not omit the tag or invent an ID. It first checks for a
-reasonable semantic alias; if the concept is genuinely distinct, it returns a
-source-supported proposal with `tag_id: null`, labels it **New catalogue
-candidate**, and explicitly says the uploaded `tag-catalogue.json` Knowledge
-must be updated before a canonical ID or compilation-ready dossier is possible.
+Pass when the GPT first checks active aliases, facets and narrative treatment.
+If the concept remains exceptionally useful, it records it in
+`tag_candidates`, without a production tag ID, labels it **New catalogue
+candidate**, and says global taxonomy review is required before the uploaded
+Knowledge can be updated. It must not place the concept in `proposed_tags`.
 
 ## 15. Government ownership boundary
 
@@ -235,8 +237,11 @@ Pass when:
 - `input_snapshot.source_path` is `manual-chat-input`;
 - inventory arrays, social lookup, `proposed_details`, and `proposed_socials`
   are empty;
-- `proposed_tags` contains all applicable tags with ID/name pairs (or a null ID
-  when genuinely unknown), summary, confidence, and direct source IDs;
+- `proposed_tags` contains only approved active ID/name pairs, with summary,
+  relationship type, temporal scope, taxonomy value, confidence, and direct
+  source IDs;
+- `tag_candidates` contains any exceptional unknown concept separately and
+  without a production tag ID;
 - all source IDs resolve;
 - review is marked complete; and
 - the response says the dossier was not owner-input-validated or applied.

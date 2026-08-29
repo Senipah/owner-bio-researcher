@@ -37,8 +37,8 @@ def _load_people(directory: Path) -> tuple[list[dict[str, Any]], list[str]]:
         except (OSError, json.JSONDecodeError) as exc:
             problems.append(f"{path.name}: cannot read dossier: {exc}")
             continue
-        if dossier.get("schema_version") != 8:
-            problems.append(f"{path.name}: schema_version is not 8")
+        if dossier.get("schema_version") not in {8, 9}:
+            problems.append(f"{path.name}: schema_version is not 8 or 9")
             continue
         if dossier.get("record_type") != "person":
             continue
@@ -162,7 +162,7 @@ def audit(
     people, issues = _load_people(directory)
     observations: list[str] = []
     if not people:
-        issues.append("no schema-v8 person dossiers found")
+        issues.append("no schema-v8/v9 person dossiers found")
         return issues, observations, 0
     repetition_threshold = max(
         minimum_owners,
@@ -350,7 +350,7 @@ def main() -> int:
         args.directory,
         minimum_owners=args.minimum_owners,
     )
-    print(f"Audited {count} schema-v8 person dossiers.")
+    print(f"Audited {count} schema-v8/v9 person dossiers.")
     for observation in observations:
         print(f"INFO: {observation}")
     for issue in issues:

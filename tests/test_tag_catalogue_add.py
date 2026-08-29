@@ -62,6 +62,7 @@ def test_prepare_addition_accepts_open_taxonomy_type_facets(
         name=f"New {type_facet}",
         aliases=[],
         facets=[type_facet, "distinctive"],
+        approval_reference="CEO review 2026-08-29",
     )
 
     assert updated is not None
@@ -85,6 +86,7 @@ def test_existing_alias_is_reused_without_creating_an_id() -> None:
         name="F1",
         aliases=[],
         facets=["sport"],
+        approval_reference="CEO review 2026-08-29",
     )
 
     assert updated is None
@@ -101,6 +103,7 @@ def test_new_tag_gets_next_monotonic_id_and_is_sorted() -> None:
         name="Luxury goods",
         aliases=["Luxury brands"],
         facets=["subindustry", "parent:fashion_retail", "luxury"],
+        approval_reference="CEO review 2026-08-29",
     )
 
     assert updated is not None
@@ -119,6 +122,7 @@ def test_subindustry_requires_parent_classification() -> None:
             name="Luxury goods",
             aliases=[],
             facets=["subindustry", "luxury"],
+            approval_reference="CEO review 2026-08-29",
         )
 
 
@@ -127,6 +131,7 @@ def test_semantic_alias_is_added_to_existing_canonical_tag() -> None:
         _document(),
         canonical_label="Formula 1",
         alias="Grand Prix racing",
+        approval_reference="CEO review 2026-08-29",
     )
 
     assert updated is not None
@@ -145,6 +150,7 @@ def test_semantic_alias_cannot_collide_with_another_tag() -> None:
             _document(),
             canonical_label="Formula 1",
             alias="Tennis",
+            approval_reference="CEO review 2026-08-29",
         )
 
 
@@ -155,6 +161,7 @@ def test_candidate_requires_exactly_one_type_facet() -> None:
             name="Luxury goods",
             aliases=[],
             facets=["subindustry", "occupation", "parent:fashion_retail"],
+            approval_reference="CEO review 2026-08-29",
         )
 
 
@@ -179,6 +186,8 @@ def test_cli_apply_writes_valid_catalogue_atomically(tmp_path: Path) -> None:
             "subindustry",
             "--facet",
             "parent:fashion_retail",
+            "--approval-reference",
+            "CEO review 2026-08-29",
             "--apply",
         ],
         cwd=REPO_ROOT,
@@ -195,3 +204,18 @@ def test_cli_apply_writes_valid_catalogue_atomically(tmp_path: Path) -> None:
         "Tennis",
     ]
     assert updated["tags"][1]["id"] == "tag_0008"
+    assert updated["tags"][1]["status"] == "active"
+    assert updated["tags"][1]["lifecycle"]["approval_reference"] == (
+        "CEO review 2026-08-29"
+    )
+
+
+def test_single_dossier_cannot_activate_without_global_approval() -> None:
+    with pytest.raises(ValueError, match="approval_reference"):
+        ADD_TAG.prepare_addition(
+            _document(),
+            name="One-owner idea",
+            aliases=[],
+            facets=["occupation"],
+            approval_reference="",
+        )

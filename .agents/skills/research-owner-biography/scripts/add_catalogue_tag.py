@@ -54,6 +54,7 @@ def prepare_addition(
     name: str,
     aliases: list[str],
     facets: list[str],
+    approval_reference: str,
 ) -> tuple[dict[str, Any] | None, dict[str, Any]]:
     """Return a validated catalogue addition or the matching existing tag."""
     catalogue = TagCatalogue(document)
@@ -62,6 +63,9 @@ def prepare_addition(
     cleaned_facets = [facet.strip() for facet in facets if facet.strip()]
     if not cleaned_name:
         raise ValueError("name must be non-empty")
+    cleaned_approval = approval_reference.strip()
+    if not cleaned_approval:
+        raise ValueError("approval_reference must be non-empty")
     normalized_labels = [
         normalize_tag_name(label) for label in (cleaned_name, *cleaned_aliases)
     ]
@@ -106,7 +110,12 @@ def prepare_addition(
         "normalized_name": normalize_tag_name(cleaned_name),
         "aliases": cleaned_aliases,
         "facets": cleaned_facets,
+        "status": "active",
         "merged_into": None,
+        "lifecycle": {
+            "approval_basis": "explicit_global_taxonomy_review",
+            "approval_reference": cleaned_approval,
+        },
     }
     updated = deepcopy(document)
     updated["tags"].append(new_tag)
@@ -120,6 +129,7 @@ def prepare_alias_addition(
     *,
     canonical_label: str,
     alias: str,
+    approval_reference: str,
 ) -> tuple[dict[str, Any] | None, dict[str, Any]]:
     """Return a validated alias update for a semantically reviewed concept."""
     catalogue = TagCatalogue(document)
@@ -129,8 +139,11 @@ def prepare_alias_addition(
     else:
         canonical = catalogue.resolve(tag_id=None, name=canonical_label)
     cleaned_alias = alias.strip()
+    cleaned_approval = approval_reference.strip()
     if not cleaned_alias:
         raise ValueError("alias must be non-empty")
+    if not cleaned_approval:
+        raise ValueError("approval_reference must be non-empty")
     try:
         existing = catalogue.resolve(tag_id=None, name=cleaned_alias)
     except TagResolutionError as exc:
@@ -153,6 +166,9 @@ def prepare_alias_addition(
     target = next(tag for tag in updated["tags"] if tag["id"] == canonical.id)
     target["aliases"].append(cleaned_alias)
     target["aliases"].sort(key=str.casefold)
+    target.setdefault("lifecycle", {})["last_alias_approval_reference"] = (
+        cleaned_approval
+    )
     TagCatalogue(updated)
     return updated, {
         "id": canonical.id,
@@ -182,6 +198,14 @@ def main() -> int:
         type=Path,
         default=DEFAULT_TAG_CATALOGUE_PATH,
     )
+    parser.add_argument(
+        "--approval-reference",
+        required=True,
+        help=(
+            "Human/global taxonomy review reference authorising activation or "
+            "alias mutation. A single owner dossier is not sufficient."
+        ),
+    )
     parser.add_argument("--apply", action="store_true")
     args = parser.parse_args()
 
@@ -193,6 +217,7 @@ def main() -> int:
             document,
             canonical_label=args.alias_for,
             alias=args.name,
+            approval_reference=args.approval_reference,
         )
     else:
         updated, result = prepare_addition(
@@ -200,6 +225,7 @@ def main() -> int:
             name=args.name,
             aliases=args.alias,
             facets=args.facet,
+            approval_reference=args.approval_reference,
         )
     if updated is None:
         print(json.dumps(result, ensure_ascii=False, indent=2))

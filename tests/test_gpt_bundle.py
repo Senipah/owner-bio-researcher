@@ -49,6 +49,7 @@ def test_generated_gpt_knowledge_is_current() -> None:
     assert "](biography-style.md)" not in knowledge
     assert "](editorial-calibrations.md)" not in knowledge
     for heading in (
+        "# Owner Tag Governance",
         "# Research and dossier contract",
         "# Wealth classification",
         "# Biography style",
@@ -70,6 +71,21 @@ def test_generated_gpt_knowledge_is_current() -> None:
         assert calibration in knowledge
 
 
+def test_gpt_catalogue_exposes_only_assignable_tags() -> None:
+    catalogue = json.loads(TAG_CATALOGUE.read_text(encoding="utf-8"))
+
+    assert len(catalogue["tags"]) == 244
+    assert {tag["status"] for tag in catalogue["tags"]} <= {
+        "active",
+        "merged",
+    }
+    assert all("lifecycle" not in tag for tag in catalogue["tags"])
+    assert len(catalogue["reserved_non_assignable_labels"]) == 6640
+    assert {
+        tag["status"] for tag in catalogue["reserved_non_assignable_labels"]
+    } == {"candidate", "inactive"}
+
+
 def test_gpt_instructions_are_concise_and_decision_complete() -> None:
     instructions = INSTRUCTIONS.read_text(encoding="utf-8")
 
@@ -77,16 +93,16 @@ def test_gpt_instructions_are_concise_and_decision_complete() -> None:
     for required in (
         "## Intake",
         "A name alone is sufficient",
-        "Perform an initial identity search before asking a question",
+        "Perform an initial identity search before asking a\nquestion",
         "## Research workflow",
         "Search the exact name on Forbes first",
         "A verified result must be a `Forbes` row",
         "other statuses produce no link",
         "`wealth_creation_industry`",
-        "every durable, material, dossier-supported catalogue tag",
-        "Catalogue absence is not a veto",
-        "**New catalogue\n   candidate**",
-        "tag-catalogue Knowledge needs updating",
+        "minimum useful set of durable, material active catalogue tags",
+        "Never\n   put an unknown or non-active concept",
+        "**New catalogue candidate**",
+        "global review",
         "## Biography requirements",
         "distinguish an evidenced\n   independent start from an advantaged one",
         "a broad wealth descriptor such as `billionaire`",
@@ -97,7 +113,8 @@ def test_gpt_instructions_are_concise_and_decision_complete() -> None:
         "Only when the user explicitly requests JSON or a dossier",
         "`owner.person_id` to `null`",
         "`proposed_details` and `proposed_socials` empty",
-        "Populate `proposed_tags` with every applicable tag",
+        "Populate `proposed_tags` only with approved active catalogue tags",
+        "Put exceptional unapproved concepts in `tag_candidates`",
         "## Self-check and delivery",
         "Always complete the human-readable profile",
         "Never refuse, stop, or return partial findings",
@@ -202,7 +219,8 @@ def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
         preview_tests
     )
     assert "## 14. Open-world tag discovery" in preview_tests
-    assert "uploaded `tag-catalogue.json` Knowledge" in preview_tests
+    assert "global taxonomy review is required" in preview_tests
+    assert "must not place the concept in `proposed_tags`" in preview_tests
     assert "## 15. Government ownership boundary" in preview_tests
     assert "only the government record receives `Government-owned`" in (
         preview_tests
@@ -217,7 +235,7 @@ def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
 def test_manual_dossier_example_contract_and_strict_validation() -> None:
     dossier = json.loads(EXAMPLE.read_text(encoding="utf-8"))
 
-    assert dossier["schema_version"] == 8
+    assert dossier["schema_version"] == 9
     assert dossier["owner"]["person_id"] is None
     assert dossier["input_snapshot"] == {
         "source_path": "manual-chat-input",
@@ -232,11 +250,12 @@ def test_manual_dossier_example_contract_and_strict_validation() -> None:
     assert dossier["proposed_details"] == []
     assert dossier["proposed_socials"] == []
     assert dossier["proposed_tags"]
-    assert all(
-        tag["tag_id"] is None or tag["tag_id"].startswith("tag_")
-        for tag in dossier["proposed_tags"]
-    )
+    assert all(tag["tag_id"].startswith("tag_") for tag in dossier["proposed_tags"])
+    assert all(tag["relationship_type"] for tag in dossier["proposed_tags"])
+    assert all(tag["temporal_scope"] for tag in dossier["proposed_tags"])
+    assert all(tag["taxonomy_value"] for tag in dossier["proposed_tags"])
     assert all(tag["source_ids"] for tag in dossier["proposed_tags"])
+    assert dossier["tag_candidates"] == []
     assert dossier["candidates_requiring_review"]
     assert all(
         candidate["confidence"]["score"] >= 70

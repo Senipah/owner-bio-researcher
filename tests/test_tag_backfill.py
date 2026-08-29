@@ -398,6 +398,7 @@ def test_schema_v8_refresh_replaces_only_tags_and_is_idempotent() -> None:
         / "manual-dossier.example.json"
     )
     source = json.loads(example_path.read_text(encoding="utf-8"))
+    source["schema_version"] = 8
     source["owner"]["person_id"] = 1164
     source["proposed_tags"] = [
         {
@@ -440,6 +441,7 @@ def test_schema_v8_refresh_audit_reports_before_and_after_changes(
         / "manual-dossier.example.json"
     )
     source = json.loads(example_path.read_text(encoding="utf-8"))
+    source["schema_version"] = 8
     source["owner"]["person_id"] = 1164
     catalogue = BACKFILL.load_tag_catalogue()
     current, _ = BACKFILL.migrate_dossier(source, catalogue)

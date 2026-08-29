@@ -7,6 +7,7 @@ import pytest
 from src.tags import (
     FORBIDDEN_CANONICAL_TAGS,
     TagCatalogue,
+    TagCatalogueError,
     TagResolutionError,
     load_tag_catalogue,
     normalize_tag_name,
@@ -20,8 +21,9 @@ def _tag(
     *,
     aliases: list[str] | None = None,
     merged_into: str | None = None,
+    status: str | None = None,
 ) -> dict:
-    return {
+    tag = {
         "id": tag_id,
         "name": name,
         "normalized_name": normalize_tag_name(name),
@@ -29,6 +31,12 @@ def _tag(
         "facets": ["test"],
         "merged_into": merged_into,
     }
+    if status is not None:
+        tag["status"] = status
+        tag["lifecycle"] = (
+            {"reason": "Test retirement."} if status == "inactive" else {}
+        )
+    return tag
 
 
 def _proposal(name: str, tag_id: str | None = None) -> dict:
@@ -48,7 +56,14 @@ def _proposal(name: str, tag_id: str | None = None) -> dict:
 def test_seed_catalogue_contains_complete_supported_long_tail() -> None:
     catalogue = load_tag_catalogue()
 
-    assert len(catalogue.tags_by_id) >= 244
+    assert len(catalogue.tags_by_id) == 244
+    assert len(catalogue.all_tags_by_id) == 6884
+    assert catalogue.lifecycle_counts == {
+        "active": 244,
+        "candidate": 1664,
+        "inactive": 4976,
+        "merged": 0,
+    }
     assert sum(
         "business family" in tag.facets
         for tag in catalogue.tags_by_id.values()
@@ -225,6 +240,58 @@ def test_resolution_follows_merged_into_for_id_and_alias() -> None:
 
     assert catalogue.resolve(tag_id="tag_old", name="F1").id == "tag_new"
     assert catalogue.resolve(tag_id=None, name="F1").id == "tag_new"
+
+
+def test_lifecycle_assignability_and_discoverability_are_separate() -> None:
+    catalogue = TagCatalogue(
+        {
+            "schema_version": 2,
+            "tags": [
+                _tag("tag_active", "Active", aliases=["Approved alias"], status="active"),
+                _tag("tag_candidate", "Candidate", aliases=["Reserved idea"], status="candidate"),
+                _tag("tag_inactive", "Inactive", aliases=["Retired idea"], status="inactive"),
+                _tag(
+                    "tag_merged",
+                    "Old active name",
+                    aliases=["Legacy alias"],
+                    merged_into="tag_active",
+                    status="merged",
+                ),
+            ],
+        }
+    )
+
+    assert set(catalogue.tags_by_id) == {"tag_active"}
+    assert catalogue.resolve(tag_id=None, name="Approved alias").id == "tag_active"
+    assert catalogue.resolve(tag_id=None, name="Legacy alias").id == "tag_active"
+    assert catalogue.inspect(tag_id=None, name="Reserved idea")["status"] == (
+        "candidate"
+    )
+    assert catalogue.inspect(tag_id=None, name="Retired idea")["status"] == (
+        "inactive"
+    )
+    with pytest.raises(TagResolutionError, match="non-assignable"):
+        catalogue.resolve(tag_id=None, name="Reserved idea")
+    with pytest.raises(TagResolutionError, match="non-assignable"):
+        catalogue.resolve(tag_id=None, name="Retired idea")
+
+
+def test_merged_tags_must_terminate_at_an_active_tag() -> None:
+    with pytest.raises(TagCatalogueError, match="must terminate at an active"):
+        TagCatalogue(
+            {
+                "schema_version": 2,
+                "tags": [
+                    _tag("tag_candidate", "Candidate", status="candidate"),
+                    _tag(
+                        "tag_merged",
+                        "Old",
+                        merged_into="tag_candidate",
+                        status="merged",
+                    ),
+                ],
+            }
+        )
 
 
 def test_unknown_and_ambiguous_names_are_explicit_errors() -> None:

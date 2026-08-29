@@ -115,6 +115,7 @@ def _validate_dossiers(
     selected_ids: list[int],
     owner_input: Path,
     owner_document: dict[str, Any],
+    tag_catalogue: Any,
 ) -> None:
     validator = _load_dossier_validator()
     for person_id in selected_ids:
@@ -122,7 +123,10 @@ def _validate_dossiers(
         if path is None:
             continue
         dossier = dossiers[person_id]
-        errors, warnings = validator.validate(dossier)
+        errors, warnings = validator.validate(
+            dossier,
+            tag_catalogue=tag_catalogue,
+        )
         errors.extend(
             validator.validate_owner_document(
                 dossier,
@@ -230,6 +234,7 @@ def main() -> int:
             selected_ids,
             args.input,
             document,
+            tag_catalogue,
         )
         derived, report = compile_research_batch(
             document,

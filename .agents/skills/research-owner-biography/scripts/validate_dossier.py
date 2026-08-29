@@ -22,7 +22,15 @@ REPO_ROOT = Path(__file__).resolve().parents[4]
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-from src.tags import FORBIDDEN_CANONICAL_TAGS, normalize_tag_name
+from src.tags import (
+    ASSIGNABLE_TAG_STATUSES,
+    DEFAULT_TAG_CATALOGUE_PATH,
+    FORBIDDEN_CANONICAL_TAGS,
+    TagCatalogue,
+    inspect_dossier_tags,
+    load_tag_catalogue,
+    normalize_tag_name,
+)
 
 
 CONFIDENCE_BANDS = (
@@ -81,6 +89,20 @@ NARRATIVE_SHAPES = {
 }
 FORBES_STATUSES = {"verified", "not_found", "ambiguous", "unavailable"}
 REVIEW_STATUSES = {"pending", "complete", "approved", "rejected"}
+SUPPORTED_DOSSIER_SCHEMA_VERSIONS = {8, 9}
+TAG_TEMPORAL_SCOPES = {
+    "current",
+    "former_but_defining",
+    "historical",
+    "current_only",
+    "unknown",
+    "not_applicable",
+}
+TAG_METADATA_LIKELIHOODS = {
+    "taxonomy_candidate",
+    "dossier_metadata",
+    "uncertain",
+}
 IMPORT_CONFIDENCE_THRESHOLD = 70
 INDUSTRIES = {
     "automotive": "Automotive",
@@ -231,7 +253,21 @@ def _classification(
     )
 
 
-def validate(document: Any) -> tuple[list[str], list[str]]:
+_DEFAULT_TAG_CATALOGUE: TagCatalogue | None = None
+
+
+def _default_tag_catalogue() -> TagCatalogue:
+    global _DEFAULT_TAG_CATALOGUE
+    if _DEFAULT_TAG_CATALOGUE is None:
+        _DEFAULT_TAG_CATALOGUE = load_tag_catalogue()
+    return _DEFAULT_TAG_CATALOGUE
+
+
+def validate(
+    document: Any,
+    *,
+    tag_catalogue: TagCatalogue | None = None,
+) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warnings: list[str] = []
     if not isinstance(document, dict):
@@ -261,12 +297,18 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
         "uncertainties",
         "review",
     }
+    schema_version = document.get("schema_version")
+    if schema_version == 9:
+        required.add("tag_candidates")
     missing = sorted(required - document.keys())
     if missing:
         errors.append(f"missing top-level keys: {missing}")
 
-    if document.get("schema_version") != 8:
-        errors.append("schema_version must be 8")
+    if schema_version not in SUPPORTED_DOSSIER_SCHEMA_VERSIONS:
+        errors.append(
+            "schema_version must be one of "
+            f"{sorted(SUPPORTED_DOSSIER_SCHEMA_VERSIONS)}"
+        )
     record_type = document.get("record_type")
     if record_type not in RECORD_TYPES:
         errors.append("record_type is invalid")
@@ -886,6 +928,7 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
     proposed_tags = document.get("proposed_tags")
     normalized_tag_names: dict[str, int] = {}
     proposed_tag_ids: dict[str, int] = {}
+    catalogue = tag_catalogue or _default_tag_catalogue()
     if not isinstance(proposed_tags, list):
         errors.append("proposed_tags must be a list")
     else:
@@ -912,6 +955,11 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
             if "tag_id" not in item:
                 errors.append(f"{path}.tag_id is required")
             tag_id = item.get("tag_id")
+            if schema_version == 9 and tag_id is None:
+                errors.append(
+                    f"{path}.tag_id must reference an approved active tag in "
+                    "schema v9; put unapproved concepts in tag_candidates"
+                )
             if tag_id is not None and (
                 not isinstance(tag_id, str) or not tag_id.strip()
             ):
@@ -960,6 +1008,149 @@ def validate(document: Any) -> tuple[list[str], list[str]]:
                 known_sources,
                 errors,
             )
+            if schema_version == 9:
+                relationship_type = item.get("relationship_type")
+                if not isinstance(relationship_type, str) or not relationship_type.strip():
+                    errors.append(f"{path}.relationship_type must be non-empty")
+                if item.get("temporal_scope") not in TAG_TEMPORAL_SCOPES:
+                    errors.append(
+                        f"{path}.temporal_scope must be one of "
+                        f"{sorted(TAG_TEMPORAL_SCOPES)}"
+                    )
+                taxonomy_value = item.get("taxonomy_value")
+                if not isinstance(taxonomy_value, str) or not taxonomy_value.strip():
+                    errors.append(f"{path}.taxonomy_value must be non-empty")
+
+        _, references = inspect_dossier_tags(
+            document,
+            catalogue,
+            person_id=(
+                document.get("owner", {}).get("person_id")
+                if isinstance(document.get("owner"), dict)
+                and isinstance(document.get("owner", {}).get("person_id"), int)
+                else 0
+            ),
+        )
+        for reference in references:
+            status = reference.get("status")
+            index = reference.get("index", "?")
+            if status == "active":
+                continue
+            if status == "merged":
+                message = (
+                    f"proposed_tags[{index}] uses a merged reference; replace it "
+                    f"with {reference.get('canonical_id')} "
+                    f"({reference.get('canonical_name')})"
+                )
+                if schema_version == 9:
+                    errors.append(message)
+                else:
+                    warnings.append(f"legacy schema-v8 {message}")
+                continue
+            message = reference.get("message") or f"has status {status!r}"
+            if schema_version == 9:
+                errors.append(
+                    f"proposed_tags[{index}] is not an approved active "
+                    f"assignment: {message}"
+                )
+            else:
+                warnings.append(
+                    f"legacy schema-v8 proposed_tags[{index}] is pending corpus "
+                    f"consolidation: {message}"
+                )
+
+    tag_candidates = document.get("tag_candidates")
+    if tag_candidates is not None or schema_version == 9:
+        if not isinstance(tag_candidates, list):
+            errors.append("tag_candidates must be a list")
+        else:
+            candidate_names: dict[str, int] = {}
+            for index, candidate in enumerate(tag_candidates):
+                path = f"tag_candidates[{index}]"
+                if not isinstance(candidate, dict):
+                    errors.append(f"{path} must be an object")
+                    continue
+                if "tag_id" in candidate:
+                    errors.append(
+                        f"{path}.tag_id is not allowed before global promotion"
+                    )
+                name = candidate.get("proposed_name")
+                if not isinstance(name, str) or not name.strip():
+                    errors.append(f"{path}.proposed_name must be non-empty")
+                    continue
+                normalized = normalize_tag_name(name)
+                if candidate.get("normalized_name") != normalized:
+                    errors.append(
+                        f"{path}.normalized_name must be {normalized!r}"
+                    )
+                if normalized in candidate_names:
+                    errors.append(
+                        f"{path}.proposed_name duplicates tag_candidates"
+                        f"[{candidate_names[normalized]}] after normalization"
+                    )
+                else:
+                    candidate_names[normalized] = index
+                for key in ("possible_aliases", "suggested_facets"):
+                    values = candidate.get(key, [])
+                    if not isinstance(values, list) or any(
+                        not isinstance(value, str) or not value.strip()
+                        for value in values
+                    ):
+                        errors.append(f"{path}.{key} must be a list of strings")
+                for key in (
+                    "summary",
+                    "relationship_type",
+                    "information_value",
+                    "existing_active_tag_review",
+                ):
+                    value = candidate.get(key)
+                    if not isinstance(value, str) or not value.strip():
+                        errors.append(f"{path}.{key} must be non-empty")
+                if candidate.get("temporal_scope") not in TAG_TEMPORAL_SCOPES:
+                    errors.append(
+                        f"{path}.temporal_scope must be one of "
+                        f"{sorted(TAG_TEMPORAL_SCOPES)}"
+                    )
+                if candidate.get("metadata_likelihood") not in (
+                    TAG_METADATA_LIKELIHOODS
+                ):
+                    errors.append(
+                        f"{path}.metadata_likelihood must be one of "
+                        f"{sorted(TAG_METADATA_LIKELIHOODS)}"
+                    )
+                score = _confidence(
+                    candidate.get("confidence"),
+                    f"{path}.confidence",
+                    errors,
+                )
+                if score is not None and score < IMPORT_CONFIDENCE_THRESHOLD:
+                    errors.append(
+                        f"{path} evidence confidence must be at least "
+                        f"{IMPORT_CONFIDENCE_THRESHOLD}"
+                    )
+                _source_ids(
+                    candidate.get("source_ids"),
+                    f"{path}.source_ids",
+                    known_sources,
+                    errors,
+                )
+                resolution = catalogue.inspect(tag_id=None, name=name)
+                if resolution["status"] in ASSIGNABLE_TAG_STATUSES:
+                    canonical = resolution["canonical"]
+                    errors.append(
+                        f"{path} duplicates approved active tag {canonical.id} "
+                        f"({canonical.name}); use proposed_tags"
+                    )
+                elif resolution["status"] in {"candidate", "inactive"}:
+                    expected = resolution.get("tag")
+                    if candidate.get("existing_non_active_tag_id") != getattr(
+                        expected, "id", None
+                    ):
+                        errors.append(
+                            f"{path} matches an existing non-active concept; set "
+                            "existing_non_active_tag_id to request deliberate "
+                            "reconsideration without recreating it"
+                        )
 
     for key in ("candidates_requiring_review", "uncertainties"):
         if not isinstance(document.get(key), list):
@@ -1146,6 +1337,12 @@ def main() -> int:
         action="store_true",
         help="Treat editorial warnings as validation errors.",
     )
+    parser.add_argument(
+        "--tag-catalogue",
+        type=Path,
+        default=DEFAULT_TAG_CATALOGUE_PATH,
+        help="Lifecycle-aware owner-tag catalogue used for assignment checks.",
+    )
     args = parser.parse_args()
 
     try:
@@ -1154,7 +1351,13 @@ def main() -> int:
         print(f"Invalid dossier: {exc}", file=sys.stderr)
         return 1
 
-    errors, warnings = validate(document)
+    try:
+        catalogue = load_tag_catalogue(args.tag_catalogue.resolve(strict=True))
+    except (OSError, ValueError) as exc:
+        print(f"Invalid tag catalogue: {exc}", file=sys.stderr)
+        return 1
+
+    errors, warnings = validate(document, tag_catalogue=catalogue)
     if args.owner_input is not None:
         errors.extend(validate_owner_input(document, args.owner_input))
     if args.strict_editorial and warnings:

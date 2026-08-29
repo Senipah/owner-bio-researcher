@@ -121,6 +121,13 @@ def _decision_map(document: dict[str, Any]) -> dict[str, dict[str, Any]]:
         raise ValueError("decision document schema_version must be 1")
     if document.get("approval_status") != "approved":
         raise ValueError("decision document approval_status must be approved")
+    if not isinstance(document.get("approval_reference"), str) or not document[
+        "approval_reference"
+    ].strip():
+        raise ValueError(
+            "decision document approval_reference must identify the global "
+            "taxonomy review"
+        )
     rows = document.get("decisions")
     if not isinstance(rows, list):
         raise ValueError("decision document decisions must be a list")
@@ -168,6 +175,7 @@ def _add_aliases(
     *,
     canonical: str,
     labels: list[str],
+    approval_reference: str,
 ) -> tuple[dict[str, Any], list[str]]:
     catalogue = TagCatalogue(document)
     target = catalogue.resolve(tag_id=None, name=canonical)
@@ -193,6 +201,9 @@ def _add_aliases(
     raw_target = next(tag for tag in updated["tags"] if tag["id"] == target.id)
     raw_target["aliases"] = _unique([*raw_target["aliases"], *added])
     raw_target["aliases"].sort(key=str.casefold)
+    raw_target.setdefault("lifecycle", {})["last_alias_approval_reference"] = (
+        approval_reference
+    )
     TagCatalogue(updated)
     return updated, added
 
@@ -292,6 +303,7 @@ def prepare_resolution(
             name=canonical_name,
             aliases=aliases,
             facets=facets,
+            approval_reference=decisions_document["approval_reference"],
         )
         if updated is not None:
             updated_catalogue = updated
@@ -299,6 +311,7 @@ def prepare_resolution(
             updated_catalogue,
             canonical=result["name"],
             labels=aliases,
+            approval_reference=decisions_document["approval_reference"],
         )
         resolved[key] = {"id": result["id"], "name": result["name"]}
         added_rows.append(
@@ -325,6 +338,7 @@ def prepare_resolution(
                     *groups[key]["aliases"],
                     *decision.get("aliases", []),
                 ],
+                approval_reference=decisions_document["approval_reference"],
             )
             catalogue = TagCatalogue(updated_catalogue)
             added_rows.append(

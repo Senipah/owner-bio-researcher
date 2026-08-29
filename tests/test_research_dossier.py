@@ -69,6 +69,7 @@ def _validate(
     dossier: dict,
     *,
     strict: bool = False,
+    catalogue: Path | None = None,
 ) -> subprocess.CompletedProcess[str]:
     path = tmp_path / "dossier.json"
     path.write_text(
@@ -78,6 +79,8 @@ def _validate(
     command = [sys.executable, str(VALIDATOR), str(path)]
     if strict:
         command.append("--strict-editorial")
+    if catalogue is not None:
+        command.extend(["--tag-catalogue", str(catalogue)])
     return subprocess.run(
         command,
         cwd=REPO_ROOT,
@@ -346,6 +349,157 @@ def test_validator_accepts_null_id_new_catalogue_candidate(tmp_path: Path) -> No
     result = _validate(tmp_path, dossier)
 
     assert result.returncode == 0, result.stderr
+
+
+def _schema_v9_dossier() -> dict:
+    dossier = deepcopy(_calibration())
+    dossier["schema_version"] = 9
+    dossier["tag_candidates"] = []
+    for proposal in dossier["proposed_tags"]:
+        proposal.update(
+            {
+                "relationship_type": "professional_sports_owner",
+                "temporal_scope": "current",
+                "taxonomy_value": (
+                    "Creates a coherent cohort of owners with defining "
+                    "professional-sports interests."
+                ),
+            }
+        )
+    return dossier
+
+
+def test_schema_v9_routes_unknown_concepts_to_separate_candidates(
+    tmp_path: Path,
+) -> None:
+    dossier = _schema_v9_dossier()
+    dossier["proposed_tags"] = []
+    dossier["tag_candidates"] = [
+        {
+            "proposed_name": "Quantum maritime choreography",
+            "normalized_name": "quantum maritime choreography",
+            "possible_aliases": [],
+            "suggested_facets": ["subindustry", "technology"],
+            "summary": "The owner founded a defining quantum business.",
+            "relationship_type": "founder",
+            "temporal_scope": "current",
+            "information_value": (
+                "Could group founders of commercially significant quantum firms."
+            ),
+            "existing_active_tag_review": (
+                "Technology is broader and does not preserve this distinction."
+            ),
+            "metadata_likelihood": "taxonomy_candidate",
+            "confidence": {
+                "score": 99,
+                "band": "very_high",
+                "reason": "Official evidence establishes the business.",
+            },
+            "source_ids": ["S1"],
+        }
+    ]
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 0, result.stderr
+
+
+def test_schema_v9_confidence_cannot_activate_an_unknown_concept(
+    tmp_path: Path,
+) -> None:
+    dossier = _schema_v9_dossier()
+    dossier["proposed_tags"] = [
+        {
+            "tag_id": None,
+            "name": "Quantum maritime choreography",
+            "summary": "The fact is established beyond doubt.",
+            "relationship_type": "founder",
+            "temporal_scope": "current",
+            "taxonomy_value": "A possible cohort.",
+            "confidence": {
+                "score": 100,
+                "band": "very_high",
+                "reason": "Official evidence establishes the fact.",
+            },
+            "source_ids": ["S1"],
+        }
+    ]
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert "put unapproved concepts in tag_candidates" in result.stderr
+    assert "not an approved active assignment" in result.stderr
+
+
+def test_schema_v9_rejects_inactive_assignment_without_destroying_legacy_v8(
+    tmp_path: Path,
+) -> None:
+    inactive = json.loads(
+        (REPO_ROOT / "config" / "owner-tags.json").read_text(encoding="utf-8")
+    )
+    inactive_tag = next(tag for tag in inactive["tags"] if tag["status"] == "inactive")
+    dossier = _schema_v9_dossier()
+    dossier["proposed_tags"] = [
+        {
+            "tag_id": inactive_tag["id"],
+            "name": inactive_tag["name"],
+            "summary": "Legacy evidence remains in the record.",
+            "relationship_type": "legacy_association",
+            "temporal_scope": "historical",
+            "taxonomy_value": "Requires review.",
+            "confidence": {
+                "score": 99,
+                "band": "very_high",
+                "reason": "The association is factual.",
+            },
+            "source_ids": ["S1"],
+        }
+    ]
+
+    current_result = _validate(tmp_path, dossier)
+    dossier["schema_version"] = 8
+    dossier.pop("tag_candidates")
+    legacy_result = _validate(tmp_path, dossier)
+
+    assert current_result.returncode == 1
+    assert "lifecycle status 'inactive'" in current_result.stderr
+    assert legacy_result.returncode == 0, legacy_result.stderr
+    assert "pending corpus consolidation" in legacy_result.stderr
+
+
+def test_schema_v9_keeps_narrower_facets_as_candidate_metadata(
+    tmp_path: Path,
+) -> None:
+    dossier = _schema_v9_dossier()
+    dossier["proposed_tags"] = [dossier["proposed_tags"][0]]
+    dossier["tag_candidates"] = [
+        {
+            "proposed_name": "Quantum sailing founder",
+            "normalized_name": "quantum sailing founder",
+            "possible_aliases": [],
+            "suggested_facets": ["technology", "sailing"],
+            "summary": "Narrow detail retained for review.",
+            "relationship_type": "founder",
+            "temporal_scope": "current",
+            "information_value": "May be too narrow for a literal cohort.",
+            "existing_active_tag_review": (
+                "The approved broader sports-owner assignment is retained."
+            ),
+            "metadata_likelihood": "dossier_metadata",
+            "confidence": {
+                "score": 99,
+                "band": "very_high",
+                "reason": "Evidence is strong but taxonomy value is uncertain.",
+            },
+            "source_ids": ["S1"],
+        }
+    ]
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 0, result.stderr
+    assert len(dossier["proposed_tags"]) == 1
 
 
 def test_validator_rejects_normalized_duplicate_tags(tmp_path: Path) -> None:

@@ -77,6 +77,7 @@ def test_add_creates_tag_and_updates_review(tmp_path: Path) -> None:
     decisions = {
         "schema_version": 1,
         "approval_status": "approved",
+        "approval_reference": "CEO review 2026-08-29",
         "decisions": [
             {
                 "candidate": "Film producer",
@@ -109,6 +110,7 @@ def test_add_accepts_structured_candidate_confidence(tmp_path: Path) -> None:
     decisions = {
         "schema_version": 1,
         "approval_status": "approved",
+        "approval_reference": "CEO review 2026-08-29",
         "decisions": [
             {
                 "candidate": "Film producer",
@@ -140,6 +142,7 @@ def test_merge_records_alias_and_reject_documents_reason(tmp_path: Path) -> None
     decisions = {
         "schema_version": 1,
         "approval_status": "approved",
+        "approval_reference": "CEO review 2026-08-29",
         "decisions": [
             {
                 "candidate": "Movie director",
@@ -181,6 +184,7 @@ def test_decisions_must_exactly_cover_candidates(tmp_path: Path) -> None:
             {
                 "schema_version": 1,
                 "approval_status": "approved",
+                "approval_reference": "CEO review 2026-08-29",
                 "decisions": [],
             },
         )
@@ -192,6 +196,7 @@ def test_rejection_reason_must_be_non_empty() -> None:
             {
                 "schema_version": 1,
                 "approval_status": "approved",
+                "approval_reference": "CEO review 2026-08-29",
                 "decisions": [
                     {
                         "candidate": "Incidental pastime",
@@ -209,6 +214,7 @@ def test_draft_decisions_cannot_be_applied() -> None:
             {
                 "schema_version": 1,
                 "approval_status": "draft",
+                "approval_reference": None,
                 "decisions": [],
             }
         )

@@ -9,7 +9,7 @@ from .auth import fetch_html
 from .constants import OWNER_DETAIL_URL
 from .io_utils import load_json_unvalidated
 from .parsers import parse_owner_tags
-from .tags import TagCatalogue, TagResolutionError, resolve_dossier_tags
+from .tags import ASSIGNABLE_TAG_STATUSES, TagCatalogue, inspect_dossier_tags
 
 
 USABLE_RECORD_TYPES = {"person", "institution"}
@@ -50,7 +50,7 @@ def load_tag_targets(
     *,
     person_ids: Collection[int] | None = None,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
-    """Load safe, canonical desired tag sets without mutating dossiers."""
+    """Load lifecycle-aware canonical targets without mutating dossiers."""
     paths = sorted(directory.rglob("*.research.json"))
     if not paths:
         raise ValueError(f"No *.research.json dossiers found under {directory}")
@@ -77,11 +77,12 @@ def load_tag_targets(
                 f"{seen[person_id]} and {path}"
             )
         seen[person_id] = path
-        if dossier.get("schema_version") != 8:
+        schema_version = dossier.get("schema_version")
+        if schema_version not in {8, 9}:
             raise ValueError(
                 f"Dossier {path} has schema_version "
-                f"{dossier.get('schema_version')!r}; run the schema-v8 tag "
-                "backfill before reconciling live tags"
+                f"{schema_version!r}; migrate it to schema v8 or v9 before "
+                "auditing owner tags"
             )
 
         display_name = str(owner.get("display_name", "")).strip()
@@ -97,26 +98,41 @@ def load_tag_targets(
             )
             continue
 
-        try:
-            resolved = resolve_dossier_tags(
-                dossier,
-                catalogue,
-                person_id=person_id,
-            )
-        except TagResolutionError as exc:
-            raise ValueError(
-                f"Dossier {path} has stale or unresolved tags; complete and "
-                f"review the tag backfill before live reconciliation: {exc}"
-            ) from exc
+        resolved, references = inspect_dossier_tags(
+            dossier,
+            catalogue,
+            person_id=person_id,
+        )
+        merged_references = [
+            item for item in references if item.get("status") == "merged"
+        ]
+        non_active_references = [
+            item
+            for item in references
+            if item.get("status") not in ASSIGNABLE_TAG_STATUSES
+        ]
+        candidate_concepts = dossier.get("tag_candidates", [])
+        if not isinstance(candidate_concepts, list):
+            candidate_concepts = []
         targets.append(
             {
                 "person_id": person_id,
                 "display_name": display_name,
                 "dossier": str(path.resolve()),
+                "dossier_schema_version": schema_version,
                 "desired_tags": [
                     {"id": item["id"], "name": item["name"]}
                     for item in resolved
                 ],
+                "active_approved_assignments": [
+                    {"id": item["id"], "name": item["name"]}
+                    for item in resolved
+                ],
+                "candidate_concepts": candidate_concepts,
+                "merged_tag_references": merged_references,
+                "non_active_tag_references": non_active_references,
+                "production_ready": not non_active_references,
+                "replacement_safe": not non_active_references,
             }
         )
 

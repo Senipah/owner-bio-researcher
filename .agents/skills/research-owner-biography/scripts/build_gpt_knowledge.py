@@ -2,17 +2,28 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import json
 import sys
 import tempfile
 from pathlib import Path
 
 
+REPO_ROOT = Path(__file__).resolve().parents[4]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from src.tags import TagCatalogue
+
+
 SKILL_ROOT = Path(__file__).resolve().parents[1]
-REPO_ROOT = SKILL_ROOT.parents[2]
 OUTPUT_PATH = SKILL_ROOT / "gpt" / "owner-biography-knowledge.md"
 TAG_CATALOGUE_SOURCE = REPO_ROOT / "config" / "owner-tags.json"
 TAG_CATALOGUE_OUTPUT = SKILL_ROOT / "gpt" / "tag-catalogue.json"
 SOURCES = (
+    (
+        "Owner tag governance",
+        Path("../../../docs/ai/OWNER_TAG_GOVERNANCE.md"),
+    ),
     (
         "Research and dossier contract",
         Path("references/research-contract.md"),
@@ -87,7 +98,46 @@ def render_knowledge() -> str:
 
 
 def render_tag_catalogue() -> str:
-    return TAG_CATALOGUE_SOURCE.read_text(encoding="utf-8").rstrip() + "\n"
+    source = json.loads(TAG_CATALOGUE_SOURCE.read_text(encoding="utf-8"))
+    catalogue = TagCatalogue(source, source=str(TAG_CATALOGUE_SOURCE))
+    assignable_ids = set(catalogue.tags_by_id) | set(catalogue.merged_tags_by_id)
+    assignable = [
+        {
+            "id": item["id"],
+            "name": item["name"],
+            "normalized_name": item["normalized_name"],
+            "aliases": item["aliases"],
+            "facets": item["facets"],
+            "status": item["status"],
+            "merged_into": item["merged_into"],
+        }
+        for item in source["tags"]
+        if item["id"] in assignable_ids
+    ]
+    reserved = [
+        {
+            "id": item["id"],
+            "name": item["name"],
+            "normalized_name": item["normalized_name"],
+            "aliases": item["aliases"],
+            "status": item["status"],
+            "reason": item.get("lifecycle", {}).get("reason"),
+        }
+        for item in source["tags"]
+        if item["id"] in catalogue.non_assignable_tags_by_id
+    ]
+    output = {
+        "schema_version": 2,
+        "dataset": "owner_tag_assignable_catalogue",
+        "description": (
+            "Only entries in tags are assignable. reserved_non_assignable_labels "
+            "are candidate or inactive tombstones retained to prevent accidental "
+            "recreation and must never be proposed as literal tags."
+        ),
+        "tags": assignable,
+        "reserved_non_assignable_labels": reserved,
+    }
+    return json.dumps(output, ensure_ascii=False, indent=2) + "\n"
 
 
 def _write_output(path: Path, content: str) -> None:

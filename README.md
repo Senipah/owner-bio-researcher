@@ -258,7 +258,7 @@ Owner research is stored as one completed-research dossier per person under
 `output\owner-research`. Compile those dossiers into a new owner document and
 a standalone HTML report without changing the enriched input:
 
-Each schema-v8 person dossier contains an unordered, source-hidden
+Each schema-v8 or schema-v9 person dossier contains an unordered, source-hidden
 `biography_brief` fact pool with multiple opening options, a 50-55 word short
 `biography`, a fact-allocated, complementary two-paragraph `long_biography` of
 90-190 words, the seven-dimension `editorial_assessment`, and independent
@@ -272,28 +272,27 @@ also retain an `editorial_note` explaining the non-person classification.
 Unresolved-placeholder dossiers contain only the editorial note; their
 biography values remain null and are never applied.
 
-Schema v8 also requires `proposed_tags`: every durable, material,
-dossier-supported tag that creates a meaningful grouping. The canonical
-research-layer catalogue is `config\owner-tags.json`; it includes aliases,
-hidden facets, merge targets, and the supported long tail while deliberately
-excluding `Family business`, `Property development`, `Family office`, and the
-generic philanthropy-domain tags. Casino, betting, bookmaking, lottery, and
-gambling-industry `Gaming` evidence receives the umbrella `Gambling` tag plus
-every supported granular child; video-game evidence uses the explicit `Video
-games` tag. Each proposal stores the local tag ID when known, its readable
-name, a materiality summary, confidence, and direct source IDs.
+Owner-tag research is governed by
+[`docs/ai/OWNER_TAG_GOVERNANCE.md`](docs/ai/OWNER_TAG_GOVERNANCE.md). Schema v8
+remains readable as the legacy contract. New research emits schema v9, where
+`proposed_tags` contains only approved active catalogue assignments and
+`tag_candidates` separately records exceptional concepts for later global
+review. `config\owner-tags.json` is a status-aware registry: production
+loaders expose active tags, aliases and canonical merge redirects, while
+candidate and inactive names remain non-assignable and discoverable to prevent
+accidental recreation. Confidence establishes factual support, not taxonomy
+approval.
 
 `Government-owned` identifies owner records that are governments or comparable
 public bodies, plus institutions explicitly documented as government- or
 state-owned. It is not inferred from public office, government contracting,
 employment by a state company, sovereign-asset stewardship, or royal status.
 
-The catalogue is deliberately open-world: incomplete corpus coverage is not a
-reason to omit a qualifying tag. Research first canonicalises reasonable
-aliases; a genuinely distinct tag that passes the documented taxonomy rule is
-added to the repo catalogue before compilation. Custom GPT runs cannot mutate
-uploaded Knowledge, so they retain a null-ID candidate and explicitly report
-that the GPT tag catalogue needs updating.
+The taxonomy remains open to deliberate improvement, but a single dossier can
+never create an active concept. Research first canonicalises reasonable
+aliases, uses the minimum useful literal set, and keeps weaker detail in facets
+or narrative. New concepts stay in `tag_candidates` without production IDs
+until a global review records explicit human approval and promotes them.
 
 Completed schema-v7 dossiers can be assigned catalogue tags and migrated to
 v8; existing schema-v8 dossiers can have their tag sets safely refreshed. No
@@ -314,30 +313,30 @@ byte-for-byte backup, writes only changed dossiers, and verifies every write:
   --apply
 ```
 
-After the schema-v8 backfill has been reviewed, reconcile dossier tags with the
+After dossier tags have been reviewed, reconcile active assignments with the
 live owner pages using the standalone tag updater. Catalogue IDs are local
 research identifiers, not website IDs, so the updater compares canonical tag
 names and records the live association ID used for any deletion. The default is
-a read-only dry-run. It also defaults to a minimum corpus frequency of two:
-tags supported by only one usable completed dossier remain in research data but
-are not newly added to owner pages. An already-live matching singleton is
-retained rather than removed solely because of this threshold.
+a read-only dry-run. The default minimum dossier-record frequency of two is an
+addition-suppression diagnostic, not taxonomy approval. An already-live
+matching low-frequency tag is retained rather than removed solely because of
+this threshold.
 
 ```powershell
 .\venv\Scripts\python.exe .\update_owner_tags.py `
   --dossier-dir output\owner-research\all-by-loa
 ```
 
-Use `--minimum-owner-count` only when an explicitly reviewed publication rule
-requires a different threshold. Counts always come from the complete usable
-dossier corpus, even when `--person-id` or `--limit` narrows the live run. The
-audit records every suppressed addition and its corpus owner count.
+Use `--minimum-dossier-record-count` to change this diagnostic threshold. The
+legacy `--minimum-owner-count` spelling remains as a compatibility alias, but
+it counts source dossier records, not unique people, and never implies
+approval. Counts always come from the complete usable dossier corpus even when
+`--person-id` or `--limit` narrows a live dry run.
 
 When authentication or any contact with the website is out of scope, use
-`--offline`. This produces a publication-eligibility manifest from the dossier
-corpus, including every singleton that would be suppressed, without logging in
-or reading live owner pages. Because no live state is available, it deliberately
-does not claim which tags need adding or removing:
+`--offline`. This produces a frequency and lifecycle review report without
+logging in or reading live owner pages. Because no live state is available, it
+sets additions and removals to unknown rather than claiming a reconciliation:
 
 ```powershell
 .\venv\Scripts\python.exe .\update_owner_tags.py `
@@ -355,17 +354,20 @@ Apply missing tags to a small reviewed selection first:
 ```
 
 Live tags absent from the dossier are always shown in the audit but are not
-removed unless both `--apply` and `--replace-tags` are supplied:
+removed unless `--apply`, `--replace-tags`, and a reviewed live-read dry-run
+manifest are supplied. The manifest binds removal authority to the exact
+reviewed dossier directory, catalogue, threshold, and removal set:
 
 ```powershell
 .\venv\Scripts\python.exe .\update_owner_tags.py `
   --dossier-dir output\owner-research\all-by-loa `
   --person-id 2824 `
   --apply `
-  --replace-tags
+  --replace-tags `
+  --reviewed-manifest output\audits\reviewed-owner-tag-dry-run.json
 ```
 
-Only usable `person` or `institution` dossiers with schema 8, usable research,
+Only usable `person` or `institution` dossiers with schema 8 or 9, usable research,
 and `review.status=complete` or `approved` are processed. Rejected, unresolved,
 or otherwise unusable dossiers are audited and skipped rather than interpreted
 as an instruction to erase live tags. Add and Delete actions save immediately
@@ -388,10 +390,10 @@ an explicit unknown or ambiguous-tag error rather than inventing an ID.
 
 Schema-v5 and earlier dossiers are intentionally stale under this contract.
 Their source ledgers may be reused, but they must be migrated through the
-schema-v8 unordered fact-pool and cross-owner editorial pass before
+schema-v8/v9 unordered fact-pool and cross-owner editorial pass before
 compilation. Schema-v6 dossiers already satisfy the current editorial
 structure but require a separate classification migration that adds
-`wealth_creation_industry` before schema-v8 compilation.
+`wealth_creation_industry` before schema-v8/v9 compilation.
 
 ```powershell
 .\venv\Scripts\python.exe .\compile_owner_research.py `
