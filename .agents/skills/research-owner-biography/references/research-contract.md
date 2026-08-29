@@ -338,7 +338,9 @@ approved active catalogue assignments. Use the generated active-only
 canonical names and aliases, emit the canonical active ID, and omit the tag
 when no approved concept fits. Merged, candidate and inactive catalogue
 entries are not owner-research choices and must never be assigned, reactivated
-or recreated.
+or recreated. Every active entry has a binding `semantic_contract`; membership
+must satisfy its inclusion, exclusion, temporal and click-through rules rather
+than merely match the tag's label.
 
 For each active assignment store:
 

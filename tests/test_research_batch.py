@@ -207,9 +207,9 @@ def _dossier(person_id: int, name: str, review_status: str = "complete") -> dict
         ],
         "proposed_tags": [
             {
-                "tag_id": "tag_0014",
-                "name": "Apple",
-                "summary": "The owner has a durable material association with Apple.",
+                "tag_id": "tag_0125",
+                "name": "Microsoft",
+                "summary": "The owner has a durable material association with Microsoft.",
                 "confidence": {
                     "score": 94,
                     "band": "high",
@@ -1039,7 +1039,7 @@ def test_compilation_resolves_and_reports_canonical_tags() -> None:
     document["owners"] = [_owner(10, "First Owner", 1)]
     dossier = _dossier(10, "First Owner")
     dossier["proposed_tags"][0]["tag_id"] = None
-    dossier["proposed_tags"][0]["name"] = "Apple Inc."
+    dossier["proposed_tags"][0]["name"] = "Microsoft Corp"
 
     derived, report = compile_research_batch(
         document,
@@ -1052,11 +1052,11 @@ def test_compilation_resolves_and_reports_canonical_tags() -> None:
     rendered = render_research_report(report)
 
     tag = derived["owners"][0]["ai_research"]["tags"][0]
-    assert tag["id"] == "tag_0014"
-    assert tag["name"] == "Apple"
-    assert report["owners"][0]["tags"][0]["name"] == "Apple"
+    assert tag["id"] == "tag_0125"
+    assert tag["name"] == "Microsoft"
+    assert report["owners"][0]["tags"][0]["name"] == "Microsoft"
     assert "Canonical tags" in rendered
-    assert "tag_0014" in rendered
+    assert "tag_0125" in rendered
 
 
 def test_compilation_reports_unknown_tags_without_inventing_ids() -> None:

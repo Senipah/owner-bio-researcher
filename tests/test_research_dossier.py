@@ -361,9 +361,24 @@ def test_validator_rejects_candidate_and_inactive_assignments(
     catalogue = json.loads(
         (REPO_ROOT / "config" / "owner-tags.json").read_text(encoding="utf-8")
     )
+    assert not [tag for tag in catalogue["tags"] if tag["status"] == "candidate"]
+    inactive = next(
+        item for item in catalogue["tags"] if item["status"] == "inactive"
+    )
     for lifecycle_status in ("candidate", "inactive"):
+        reviewed_catalogue = deepcopy(catalogue)
         tag = next(
-            item for item in catalogue["tags"] if item["status"] == lifecycle_status
+            item
+            for item in reviewed_catalogue["tags"]
+            if item["id"] == inactive["id"]
+        )
+        tag["status"] = lifecycle_status
+        if lifecycle_status == "candidate":
+            tag["lifecycle"] = {}
+        catalogue_path = tmp_path / f"owner-tags-{lifecycle_status}.json"
+        catalogue_path.write_text(
+            json.dumps(reviewed_catalogue, indent=2, ensure_ascii=False),
+            encoding="utf-8",
         )
         dossier = deepcopy(_calibration())
         dossier["proposed_tags"] = [
@@ -380,7 +395,7 @@ def test_validator_rejects_candidate_and_inactive_assignments(
             }
         ]
 
-        result = _validate(tmp_path, dossier)
+        result = _validate(tmp_path, dossier, catalogue=catalogue_path)
 
         assert result.returncode == 1
         assert f"lifecycle status '{lifecycle_status}'" in result.stderr

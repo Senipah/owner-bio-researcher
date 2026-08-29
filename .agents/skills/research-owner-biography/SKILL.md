@@ -41,7 +41,10 @@ statistics.
   `config/owner-tags.json` through `src.tags`; only active tags are assignable
   and merged references redirect internally to an active target. Candidate and
   inactive entries are global-governance tombstones, never owner-research
-  choices. Schema v8 is the current output contract.
+  choices. Every active tag's `semantic_contract` is binding: a matching label
+  or alias is insufficient unless the owner satisfies its dimension,
+  membership, exclusions, temporal scope, and click-through requirements.
+  Schema v8 is the current output contract.
 - Read
   [references/wealth-classification.md](references/wealth-classification.md)
   before classifying industries, wealth origin, or relationship to wealth.
@@ -212,6 +215,19 @@ catalogue. The main agent owns the following checkpoint workflow:
    human `approval_reference`; merge semantic aliases while preserving useful
    broader and narrower concepts.
 5. Rebuild and check GPT Knowledge after each approved catalogue change.
+
+For the explicitly authorised repository-wide consolidation recorded in
+`config/owner-tag-consolidation.json`, use
+`scripts/consolidate_owner_tag_corpus.py`. Repository data is the sole source
+of truth: the script may use the approved historical Git baseline, lifecycle
+catalogue, repository history, dossier corpus, canonical governance policy,
+and reviewed curation configuration. It must never authenticate to, read, or
+compare the live website when deciding taxonomy or dossier assignments. Run it
+without `--apply` first. Application requires a new backup path, byte-verifies
+the complete source corpus, preserves stable catalogue IDs and unresolved
+placeholders, writes atomically, and validates the result. Rerun in dry-run
+mode after application and require zero proposed changes. This is explicit
+global curation tooling, not an ordinary owner-research path.
 
 This skill stops at reviewed repository data. Live owner-page reconciliation
 remains the separate dry-run-first `update_owner_tags.py` workflow and requires

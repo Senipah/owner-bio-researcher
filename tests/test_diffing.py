@@ -183,7 +183,7 @@ def test_rich_text_entities_compare_as_the_same_content() -> None:
 def test_tag_plan_reports_additions_and_guarded_removals() -> None:
     plan = build_tag_change_plan(
         person_id=2824,
-        desired_names=["Microsoft", "Steam", "Valve", "Video games"],
+        desired_names=["Microsoft", "Valve", "Video games"],
         live_tags=[
             {"association_id": "80", "name": "Tech Entrepreneur"},
             {"association_id": "84", "name": "Microsoft"},
@@ -196,10 +196,15 @@ def test_tag_plan_reports_additions_and_guarded_removals() -> None:
     assert plan["additions"] == [{"id": "tag_0193", "name": "Video games"}]
     assert plan["removals"] == [
         {
+            "association_id": "914",
+            "name": "Steam",
+            "reason": "not_in_desired_dossier_tags",
+        },
+        {
             "association_id": "80",
             "name": "Tech Entrepreneur",
             "reason": "not_in_desired_dossier_tags",
-        }
+        },
     ]
     assert not plan["conflicts"]
 
@@ -225,9 +230,9 @@ def test_tag_plan_replaces_live_alias_with_canonical_name() -> None:
 def test_tag_plan_is_order_independent_when_exact() -> None:
     plan = build_tag_change_plan(
         person_id=1,
-        desired_names=["Valve", "Steam"],
+        desired_names=["Valve", "Video games"],
         live_tags=[
-            {"association_id": "2", "name": "Steam"},
+            {"association_id": "2", "name": "Video games"},
             {"association_id": "1", "name": "Valve"},
         ],
         catalogue=load_tag_catalogue(),

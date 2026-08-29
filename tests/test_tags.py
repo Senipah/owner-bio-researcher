@@ -56,12 +56,12 @@ def _proposal(name: str, tag_id: str | None = None) -> dict:
 def test_seed_catalogue_contains_complete_supported_long_tail() -> None:
     catalogue = load_tag_catalogue()
 
-    assert len(catalogue.tags_by_id) == 244
+    assert len(catalogue.tags_by_id) == 391
     assert len(catalogue.all_tags_by_id) == 6884
     assert catalogue.lifecycle_counts == {
-        "active": 244,
-        "candidate": 1664,
-        "inactive": 4976,
+        "active": 391,
+        "candidate": 0,
+        "inactive": 6493,
         "merged": 0,
     }
     assert sum(
@@ -77,7 +77,6 @@ def test_seed_catalogue_contains_complete_supported_long_tail() -> None:
         "Alaouite dynasty",
         "Norwegian royal family",
         "Boxing",
-        "Apple",
         "Murdoch family",
         "Ofer family",
         "Gucci family",
@@ -105,7 +104,6 @@ def test_seed_catalogue_contains_complete_supported_long_tail() -> None:
         "Semiconductors",
         "Singer",
         "Social media",
-        "eBay",
         "Pirelli",
         "easyJet",
         "Valve",
@@ -113,6 +111,10 @@ def test_seed_catalogue_contains_complete_supported_long_tail() -> None:
         "Tod's",
     ):
         assert catalogue.resolve(tag_id=None, name=name).name == name
+    for name in ("Apple", "eBay", "Steam"):
+        assert catalogue.inspect(tag_id=None, name=name)["status"] == "inactive"
+        with pytest.raises(TagResolutionError, match="non-assignable"):
+            catalogue.resolve(tag_id=None, name=name)
     assert not (
         FORBIDDEN_CANONICAL_TAGS
         & {tag.normalized_name for tag in catalogue.tags_by_id.values()}
@@ -124,37 +126,23 @@ def test_seed_catalogue_contains_complete_supported_long_tail() -> None:
     }
 
 
-def test_new_catalogue_entries_are_typed() -> None:
+def test_active_catalogue_entries_have_semantic_contracts() -> None:
     catalogue = load_tag_catalogue()
-    new_tags = [
-        tag
-        for tag in catalogue.tags_by_id.values()
-        if int(tag.id.removeprefix("tag_")) >= 206
-    ]
+    required = {
+        "dimension",
+        "membership",
+        "exclusions",
+        "temporal_scope",
+        "click_through_expectation",
+    }
 
-    new_ids = {int(tag.id.removeprefix("tag_")) for tag in new_tags}
-    assert new_ids == set(range(206, max(new_ids) + 1))
     assert all(
-        len(
-            {
-                "arts",
-                "award",
-                "business model",
-                "cause",
-                "company",
-                "family",
-                "occupation",
-                "organisation",
-                "philanthropy",
-                "sport",
-                "status",
-                "subindustry",
-            }
-            & set(tag.facets)
-        )
-        == 1
-        for tag in new_tags
-        if tag.name != "Professional athlete"
+        set(tag.semantic_contract) == required
+        for tag in catalogue.tags_by_id.values()
+    )
+    assert all(
+        all(value.strip() for value in tag.semantic_contract.values())
+        for tag in catalogue.tags_by_id.values()
     )
     professional_athlete = catalogue.resolve(
         tag_id=None,
@@ -163,11 +151,6 @@ def test_new_catalogue_entries_are_typed() -> None:
     assert {"occupation", "sport"} <= set(professional_athlete.facets)
     government_owned = catalogue.resolve(tag_id=None, name="Government-owned")
     assert "status" in government_owned.facets
-    assert all(
-        any(facet.startswith("parent:") for facet in tag.facets)
-        for tag in new_tags
-        if "subindustry" in tag.facets
-    )
     assert catalogue.resolve(tag_id=None, name="Luxury brands").name == (
         "Luxury goods"
     )
@@ -326,8 +309,8 @@ def test_dossier_resolution_rejects_alias_duplicates_after_canonicalization() ->
 
 def test_tag_id_is_authoritative_and_name_must_match_it() -> None:
     catalogue = load_tag_catalogue()
-    apple = catalogue.resolve(tag_id=None, name="Apple")
-    proposal = _proposal("Microsoft", tag_id=apple.id)
+    microsoft = catalogue.resolve(tag_id=None, name="Microsoft")
+    proposal = _proposal("Disney", tag_id=microsoft.id)
 
     with pytest.raises(TagResolutionError, match="does not match name"):
         resolve_dossier_tags(

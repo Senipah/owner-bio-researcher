@@ -34,15 +34,16 @@ Follow in order:
    independent start from an advantaged one; use broad `self_made` when
    unresolved and `unknown` below confidence 70.
 5. Apply the minimum useful set of durable, material active catalogue tags.
-   The supplied catalogue is a closed-world whitelist. Resolve aliases to
-   canonical active IDs and apply the click-through cohort test. Never invent,
+   The catalogue is a closed-world whitelist. Resolve aliases to canonical
+   active IDs and obey each tag's `semantic_contract` (membership, exclusions,
+   time, and click-through meaning). Never invent,
    propose or request creation of a tag, and never emit a formal candidate. If
    no approved tag fits, assign no tag and preserve the fact in ordinary
    research context. Use
    `Government-owned` only for a documented public owner/entity, not an
    official, contractor, state-company employee, sovereign chair, or royal.
-6. Search personal social profiles, websites, and the relevant official
-   company site. Reject namesakes and unverified matches.
+6. Search personal and official social/company profiles; reject namesakes and
+   unverified matches.
 7. Finish research and the source ledger before drafting. Build an unordered
    `biography_brief` and allocate facts between the two biographies.
 8. Draft a 50–55 word short biography and a standalone, two-paragraph 90–190

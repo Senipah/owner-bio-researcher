@@ -15,6 +15,13 @@ SUPPORTED_TAG_CATALOGUE_SCHEMA_VERSIONS = {1, 2}
 TAG_LIFECYCLE_STATUSES = {"active", "candidate", "inactive", "merged"}
 ASSIGNABLE_TAG_STATUSES = {"active", "merged"}
 TAG_ID_PATTERN = re.compile(r"^tag_(\d+)$")
+SEMANTIC_CONTRACT_FIELDS = {
+    "dimension",
+    "membership",
+    "exclusions",
+    "temporal_scope",
+    "click_through_expectation",
+}
 FORBIDDEN_CANONICAL_TAGS = {
     "arts and culture philanthropy",
     "children and youth philanthropy",
@@ -68,6 +75,7 @@ class CanonicalTag:
     status: str
     merged_into: str | None
     lifecycle: dict[str, Any]
+    semantic_contract: dict[str, Any]
 
     @property
     def is_assignable(self) -> bool:
@@ -134,6 +142,7 @@ class TagCatalogue:
             merged_into = raw.get("merged_into")
             raw_status = raw.get("status")
             lifecycle = raw.get("lifecycle", {})
+            semantic_contract = raw.get("semantic_contract", {})
             if not isinstance(tag_id, str) or not tag_id.strip():
                 raise TagCatalogueError(f"{path}.id must be non-empty")
             if tag_id in self.all_tags_by_id:
@@ -181,6 +190,31 @@ class TagCatalogue:
                     )
                 if not isinstance(lifecycle, dict):
                     raise TagCatalogueError(f"{path}.lifecycle must be an object")
+            if not isinstance(semantic_contract, dict):
+                raise TagCatalogueError(
+                    f"{path}.semantic_contract must be an object"
+                )
+            if (
+                schema_version == 2
+                and self.document.get("consolidation")
+                and status == "active"
+            ):
+                missing_contract_fields = (
+                    SEMANTIC_CONTRACT_FIELDS - semantic_contract.keys()
+                )
+                if missing_contract_fields:
+                    raise TagCatalogueError(
+                        f"{path}.semantic_contract is missing "
+                        f"{sorted(missing_contract_fields)}"
+                    )
+                if any(
+                    not isinstance(semantic_contract[field], str)
+                    or not semantic_contract[field].strip()
+                    for field in SEMANTIC_CONTRACT_FIELDS
+                ):
+                    raise TagCatalogueError(
+                        f"{path}.semantic_contract fields must be non-empty strings"
+                    )
             if status == "merged" and merged_into is None:
                 raise TagCatalogueError(
                     f"{path}.merged_into is required when status is 'merged'"
@@ -205,6 +239,7 @@ class TagCatalogue:
                 status=status,
                 merged_into=merged_into,
                 lifecycle=dict(lifecycle),
+                semantic_contract=dict(semantic_contract),
             )
             self.all_tags_by_id[tag_id] = tag
             canonical_names[normalized_name] = name

@@ -107,6 +107,7 @@ def render_tag_catalogue() -> str:
             "normalized_name": item["normalized_name"],
             "aliases": item["aliases"],
             "facets": item["facets"],
+            "semantic_contract": item["semantic_contract"],
         }
         for item in source["tags"]
         if item["id"] in catalogue.tags_by_id

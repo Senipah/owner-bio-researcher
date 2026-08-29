@@ -80,9 +80,19 @@ def test_gpt_catalogue_exposes_only_active_closed_world_tags() -> None:
 
     assert catalogue["schema_version"] == 3
     assert {tag["id"] for tag in catalogue["tags"]} == active_ids
-    assert len(catalogue["tags"]) == 244
+    assert len(catalogue["tags"]) == len(active_ids)
     assert all("status" not in tag for tag in catalogue["tags"])
     assert all("lifecycle" not in tag for tag in catalogue["tags"])
+    assert all(
+        set(tag["semantic_contract"]) == {
+            "dimension",
+            "membership",
+            "exclusions",
+            "temporal_scope",
+            "click_through_expectation",
+        }
+        for tag in catalogue["tags"]
+    )
     assert "reserved_non_assignable_labels" not in catalogue
 
 

@@ -124,7 +124,8 @@ def test_material_long_tail_associations_are_retained() -> None:
         ),
     )
     names = _names(document)
-    assert {"Apple", "Valve", "Steam", "Video games", "Boxing"} <= names
+    assert {"Valve", "Video games", "Boxing"} <= names
+    assert {"Apple", "Steam"}.isdisjoint(names)
 
 
 def test_gambling_is_distinct_from_video_games() -> None:

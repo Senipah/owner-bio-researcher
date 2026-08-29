@@ -280,7 +280,10 @@ owner dossier may create a formal candidate. `config\owner-tags.json` is a
 status-aware registry: production loaders expose active tags, aliases and
 canonical merge redirects, while candidate and inactive names remain non-
 assignable and discoverable to global governance tooling. Confidence
-establishes factual support, not taxonomy approval.
+establishes factual support, not taxonomy approval. Every active tag has a
+binding `semantic_contract` covering its dimension, membership, exclusions,
+temporal scope, and click-through expectation. A matching name or alias does
+not justify an assignment unless the owner also satisfies that contract.
 
 `Government-owned` identifies owner records that are governments or comparable
 public bodies, plus institutions explicitly documented as government- or
@@ -326,6 +329,31 @@ byte-for-byte backup, writes only changed dossiers, and verifies every write:
   --audit-output output\owner-research\tag-refresh-v8.applied.audit.json `
   --apply
 ```
+
+For an explicitly authorised global taxonomy consolidation, use the separate
+repository-only consolidator. It derives the desired taxonomy and dossier
+assignments from the approved historical Git baseline, lifecycle catalogue,
+repository history, dossier corpus, governance policy, and the reviewed
+curation configuration. It never authenticates to or reads the website, and a
+live tag assignment is never evidence that a concept should exist or belong to
+an owner. Dry-run first; `--apply` requires a distinct backup destination and
+byte-verifies the complete source corpus before writing atomically:
+
+```powershell
+.\venv\Scripts\python.exe `
+  .agents\skills\research-owner-biography\scripts\consolidate_owner_tag_corpus.py `
+  --audit output\audits\owner-tag-consolidation.dry-run.json
+
+.\venv\Scripts\python.exe `
+  .agents\skills\research-owner-biography\scripts\consolidate_owner_tag_corpus.py `
+  --audit output\audits\owner-tag-consolidation.applied.json `
+  --backup output\backups\owner-tag-corpus-pre-consolidation `
+  --apply
+```
+
+After application, rerun without `--apply` and require zero planned catalogue
+or dossier changes. Live reconciliation is a later, separately authorised
+operational task and is not part of semantic consolidation.
 
 After dossier tags have been reviewed, reconcile active assignments with the
 live owner pages using the standalone tag updater. Catalogue IDs are local

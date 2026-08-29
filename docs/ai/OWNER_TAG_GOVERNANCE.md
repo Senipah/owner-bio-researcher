@@ -182,6 +182,11 @@ contains only active canonical tags and their approved aliases. Candidate,
 inactive and merged records remain in the repository registry for global
 governance and collision detection, but stay outside ordinary GPT context.
 
+Every active catalogue entry also carries a `semantic_contract` defining its
+dimension, membership, exclusions, temporal scope and click-through
+expectation. Individual research must satisfy that contract; matching a label
+or alias alone is not enough.
+
 ## Research dossier contract
 
 Owner research and taxonomy discovery are separate responsibilities. Owner-
@@ -326,49 +331,68 @@ similar names. Matching names or dates of birth never merge records. Conflicting
 identity facts remain unresolved and cannot support automatic tag assignments.
 Audit counts never infer unique people.
 
-## Lifecycle migration record
+## Repository corpus consolidation record
 
 The last clearly approved pre-run catalogue is Git commit `6982498`, the parent
-of the runaway `1ccfc30` pass. It contains 244 tags. The offline audit
-`owner-tag-update-offline-dry-run-20260829T175711Z.json` was used only to count
-source dossier references and carries no live-state or approval authority.
+of the runaway `1ccfc30` pass. It contained 244 active tags. The lifecycle
+recovery then preserved all 6,884 stable IDs while placing the 1,664 unapproved
+multi-record concepts in `candidate` and 4,976 other unapproved concepts in
+`inactive`. That recovered repository state, not the website, was the starting
+point for the completed corpus consolidation.
 
-The reversible migration preserved all 6,884 stable IDs and produced:
+The reviewed repository-only consolidation produced:
 
-| Lifecycle state | Tag records | Basis |
-| --- | ---: | --- |
-| Active | 244 | Present in approved baseline `6982498` |
-| Candidate | 1,664 | Added by `1ccfc30`, referenced by at least two dossier records, no explicit approval |
-| Inactive | 4,976 | Added by `1ccfc30`, suppressed singleton concepts |
-| Merged | 0 | No persisted merged entries existed in the source catalogue |
+| Lifecycle state | Before consolidation | Final | Decision |
+| --- | ---: | ---: | --- |
+| Active | 244 | 391 | 137 candidates promoted, 18 inactive concepts reactivated, 8 active concepts retired |
+| Candidate | 1,664 | 0 | Every candidate resolved; 137 promoted and 1,527 inactivated |
+| Inactive | 4,976 | 6,493 | Rejected, redundant, over-specific, incidental, or otherwise weak concepts retained as tombstones |
+| Merged | 0 | 0 | No false-equivalence merges; true lexical equivalents are aliases |
 
-Fourteen approved baseline tags appeared in one audit record and one appeared
-in none; all remain active because the offline audit cannot establish live
-usage and frequency is not approval. Five baseline tags had post-run alias
-changes: Disney, Hidrostroy, Private equity, Restaurant groups and Wine
-production. Approved aliases were restored; the added aliases remain preserved
-as non-resolving `pending_aliases` for later review. No tag was unclassified.
+The curation preserved every stable ID and added a machine-readable
+`semantic_contract` to every active tag. Broader and narrower concepts were
+not merged merely because their cohorts overlap. Specificity and companion
+rules instead control assignment, including `Gambling` with directly supported
+granular gambling tags, and `Video games` with video-game concepts. Casino and
+betting meanings of "gaming" never qualify for `Video games`.
 
-The migration changed no dossier and read or modified no live website state.
-An ignored byte-verified backup was created at
-`output/backups/owner-tags.pre-lifecycle-1ccfc30.json`.
+The alias review made the following explicit decisions:
 
-## Handover for the later corpus consolidation
+- `Disney Plus` and `Disney+` are not aliases of `Disney` because the streaming
+  service is narrower than the parent company.
+- `Hidrostroy AD`, `Hydrostroy`, and `Hydrostroy AD` are accepted aliases of
+  `Hidrostroy`.
+- `Buyout investing`, `Buyout investment`, and `Private-equity buyouts` are not
+  aliases of `Private equity`; they are narrower strategies.
+- `Multi-brand restaurant group`, `Multi-brand restaurant operations`, and
+  `Restaurant brand portfolio` are accepted aliases of `Restaurant groups`.
+- `Winemaking business` is accepted as an alias of `Wine production`; `Wine`
+  is too broad and is rejected as an alias.
 
-The later long-horizon task should edit the existing dossiers in place, retain
-schema v8, and treat every first-pass desired tag as an untrusted legacy
-reference. Current catalogue candidates are not presumed valid merely because
-they exist. The task may globally promote, merge, facet, inactivate or reject
-them only through explicit review, and may reactivate inactive concepts only
-deliberately. Apply the 5 to 50 heuristic without making it a hard rule.
+Eight previously active concepts were retired because their historical
+assignments represented passive holdings, counterparties, predecessor
+employers, products, broad duplicates, or philanthropy noise: `Apple`,
+`Citicorp Venture Capital`, `eBay`, `Filmmaking`, `Jim Moran Foundation`,
+`Marlink`, `Royal Caribbean`, and `Steam`. Facts removed from literal tag sets
+were preserved as internal review context rather than silently discarded.
 
-The consolidation must not treat future owner-level taxonomy discovery as an
-expected workflow. After it finishes, ordinary owner researchers use only the
-resulting active taxonomy. Later taxonomy growth starts with a separate corpus-
-level discovery manifest, followed by candidate curation and only then by
-assignment reconciliation.
+The 989 tracked dossiers contain 950 usable person or institution records and
+39 unresolved placeholders. All 950 usable dossiers were reviewed under the
+final contracts; 941 tracked dossier files changed, while all 39 unresolved
+placeholders were preserved. The runaway proposal set fell from 17,750
+assignments (average 18.684, median 18, maximum 53 per usable dossier) to 3,655
+(average 3.847, median 4, maximum 10). Final cohort diagnostics show 203 active
+tags below five dossier records, 182 between five and fifty, and six above
+fifty. These ranges are review signals, not approval rules. `Composer` remains
+the sole zero-record active concept as a deliberate reusable occupational tag.
 
-After repository review, compare each production-ready proposed assignment
-with freshly read live state before any application. Keep dossier deduplication
-and person-ID repair for the separate clerical in-system task. Do not infer
-unique people from names or dates of birth.
+The consolidation is reproducible from
+`config/owner-tag-consolidation.json` with
+`scripts/consolidate_owner_tag_corpus.py`. Its post-application dry run reports
+zero catalogue or dossier changes. The operation used only the approved Git
+baseline, lifecycle catalogue, repository history, dossier corpus, canonical
+governance rules, and reviewed curation configuration. It did not authenticate
+to, read, compare, or write live website state. Live reconciliation is a
+separate follow-up task after repository approval and may only produce a dry-
+run operational diff unless independently authorised. Dossier deduplication
+and person-ID repair also remain separate clerical work.
