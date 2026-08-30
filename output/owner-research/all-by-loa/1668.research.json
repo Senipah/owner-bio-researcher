@@ -1,0 +1,544 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1668,
+    "display_name": "David Pardo",
+    "identity_confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The authoritative record supplies the uncommon formal name Gérald David Pardo, French nationality, a November 1945 birth and death on 23 September 2020. French company and legal notices independently identify Gérald or Gérald David Pardo as Mistral's manager and record his death on that exact date; INSEE-derived death data gives 6 November 1945 in Alexandria and death in Neuilly-sur-Seine. The historical yacht chronology is also internally coherent: the input's Diam relationship ends in September 2020, the month the former Le Must was publicly sold and renamed Diam, while the exact 38.35-metre, 340-GT O'Neiro I matches the current vessel. No public source located names Pardo as either yacht's owner, so the score remains below very high."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_age",
+      "birth_age_at_date",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Gérald David Pardo was a French national born in Alexandria whose sparse documented business activity includes service as manager and associate of Mistral, a Cannes patrimonial-management civil company.",
+    "defining_work": "Mistral's filings document an asset-management vehicle on the Côte d'Azur but do not reveal the operating business or asset class that originally generated Pardo's wealth.",
+    "formative_context": "Pardo was born in Alexandria in 1945, and documented automobile provenance places him in London in the early 1980s.",
+    "decisive_moment": "In 2015, Pardo became manager and associate of the newly registered Mistral civil company in Cannes.",
+    "enduring_dimensions": [
+      "French national born in Alexandria",
+      "Documented London connection in the early 1980s",
+      "Manager and associate of a Cannes patrimonial-management vehicle"
+    ],
+    "character_detail": null,
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Open with Pardo's French nationality, Alexandria birth and sparse documented business role."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Begin with the Alexandria-to-London chronology before introducing his later Cannes company role."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Lead with Mistral's 2015 formation as the clearest documented business event in his biography."
+      }
+    ],
+    "excluded_transient_context": [
+      "O'Neiro I, Diam, Le Must, yacht ownership, specifications, construction or sale chronology",
+      "Source attribution and identity-resolution reasoning",
+      "Current auction values, the Countach's later ownership and other collectible-market detail",
+      "Personal addresses, telephone numbers and unverified residence claims",
+      "Unverified net worth, company holdings, career history and wealth-source speculation",
+      "Inferences about estate, widow or successor ownership of the yacht project"
+    ],
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 4,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 4,
+    "opening_mode": "present_identity",
+    "narrative_shape": "identity_then_origin",
+    "calibration_archetypes": [
+      "sparse_public_record"
+    ],
+    "notes": "The short biography gives only Pardo's durable civil identity and documented Mistral role. The longer profile uses his Alexandria birth and early London evidence as chronology, then explains the limited company record and its evidentiary boundary. Neither biography identifies a wealth source, mentions a yacht, equates patrimonial management with wealth creation or discusses current asset values."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes.com was searched first for Gérald David Pardo and Gerald David Pardo, both alone and with Monaco, London, Mistral, O'Neiro I and Le Must anchors. No dedicated Forbes person profile or exact-owner result was found, and unrelated David or Gerald Pardo results were excluded."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The public record identifies a patrimonial-management vehicle but not the business, investment or asset that created Pardo's wealth.",
+    "confidence": {
+      "score": 35,
+      "band": "insufficient",
+      "reason": "BODACC identifies Pardo as manager and associate of Mistral, a civil company formed for patrimonial management, but the filing provides no underlying operating activity, ownership portfolio, revenue source or earlier career. Treating the holding vehicle itself as the wealth-creation industry would confuse asset administration with causal wealth formation."
+    },
+    "source_ids": [
+      "S3",
+      "S4"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No reliable source establishes Pardo's principal business sector or investment platform before his death in 2020.",
+    "confidence": {
+      "score": 30,
+      "band": "insufficient",
+      "reason": "Mistral's generic patrimonial-management purpose does not identify a principal industry, and no strong source located in this pass documents an operating company, substantial sector exposure or defining professional mandate. Because Pardo is deceased, no current-industry inference is appropriate."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The evidence does not establish whether Pardo's assets were self-created, inherited, transferred within a family or accumulated through another route.",
+    "confidence": {
+      "score": 25,
+      "band": "insufficient",
+      "reason": "The available company, legal, civil-status and provenance records do not describe the launch, acquisition or transfer of a core wealth platform. Luxury-asset ownership and a later patrimonial-management company cannot support a self-made or inherited classification."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S7",
+      "S8"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Pardo's relationship to the unidentified principal wealth-producing assets cannot be classified as founder, operator, investor, heir or family shareholder.",
+    "confidence": {
+      "score": 30,
+      "band": "insufficient",
+      "reason": "A manager-associate role in Mistral is documented, but the company is described only as a patrimonial-management vehicle and is not established as the source of Pardo's fortune. No strong source identifies his relationship to a causal operating or investment platform."
+    },
+    "source_ids": [
+      "S3",
+      "S4"
+    ]
+  },
+  "biography": {
+    "plain_text": "Gérald David Pardo was a French asset manager born in Alexandria. He managed Mistral, a Cannes civil company organised to administer family assets, and held an ownership interest in the vehicle. His earlier life included residence in London, while his later years centred on the Côte d'Azur until his death in 2020.",
+    "html": "<p>Gérald David Pardo was a French asset manager born in Alexandria. He managed Mistral, a Cannes civil company organised to administer family assets, and held an ownership interest in the vehicle. His earlier life included residence in London, while his later years centred on the Côte d'Azur until his death in 2020.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "INSEE-derived civil-status sources support Pardo's birth and death details, while BODACC and a later legal notice establish his Mistral manager-associate role, the company's Cannes registration, its patrimonial-management purpose and his service until death."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Born in Alexandria on 6 November 1945, Pardo held French nationality. During the early 1980s he lived in London and became the first registered keeper of a Lamborghini Countach, before later centring his activities on the Côte d'Azur.\n\nPardo became manager and associate of Mistral, a Cannes civil company established for patrimonial management. He remained responsible for the vehicle until his death at Neuilly-sur-Seine in September 2020, when his widow succeeded him as manager. The company's purpose was managing property and investment interests rather than operating a commercial enterprise, making asset administration the clearest public aspect of his later business life.",
+    "html": "<p>Born in Alexandria on 6 November 1945, Pardo held French nationality. During the early 1980s he lived in London and became the first registered keeper of a Lamborghini Countach, before later centring his activities on the Côte d'Azur.</p>\r\n<p>Pardo became manager and associate of Mistral, a Cannes civil company established for patrimonial management. He remained responsible for the vehicle until his death at Neuilly-sur-Seine in September 2020, when his widow succeeded him as manager. The company's purpose was managing property and investment interests rather than operating a commercial enterprise, making asset administration the clearest public aspect of his later business life.</p>\r\n",
+    "word_count": 101,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Civil-status, company and legal-notice records support Pardo's birth, death and Mistral role. Bonhams-derived vehicle provenance and independent automotive reporting support the early London episode. The profile explicitly separates the documented holding vehicle from the unknown source of wealth."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "correct_existing",
+      "field": "first_name",
+      "existing_value": "Gérald ",
+      "value": "Gérald",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The proposal removes a trailing space from the stored first name. French legal, company and civil-status sources consistently render Gérald without trailing whitespace."
+      },
+      "source_ids": [
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Alexandria",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The INSEE-derived GénéaFrance record gives Alexandria as Gérald David Pardo's birthplace, and Bonhams vehicle provenance independently describes him as originally from Egypt."
+      },
+      "source_ids": [
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "field": "birth_country",
+      "value": "Egypt",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The civil-status record names Alexandria as the birthplace and the auction provenance independently describes Pardo as originally from Egypt."
+      },
+      "source_ids": [
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "6",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The INSEE-derived death register records Gérald David Pardo's full birth date as 6 November 1945, matching the existing month and year."
+      },
+      "source_ids": [
+        "S5",
+        "S6"
+      ]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Gérald David Pardo was a French asset manager born in Alexandria. He managed Mistral, a Cannes civil company organised to administer family assets, and held an ownership interest in the vehicle. His earlier life included residence in London, while his later years centred on the Côte d'Azur until his death in 2020.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "The proposed biography confines itself to Pardo's supported civil identity, London chronology, Mistral role and death year, while avoiding unsupported yacht and causal-wealth claims."
+      },
+      "source_ids": [
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1668",
+      "title": "David Pardo owner record, person ID 1668",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Immutable person ID and David Pardo display-name baseline",
+        "Formal Gérald David Pardo name fields and Mr title",
+        "French nationality, France residence, male gender and deceased status baseline",
+        "November 1945 birth-month and year baseline",
+        "Death on 23 September 2020 baseline",
+        "Blank biography and social-profile baseline",
+        "Historical Diam relationship from 2012 to September 2020",
+        "Current O'Neiro I relationship from 2016 and vessel ID 58439",
+        "O'Neiro I 38.35-metre length and 340-GT specification baseline",
+        "Social-profile type lookup"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/search/?q=Gerald%20David%20Pardo",
+      "title": "Forbes search for Gerald David Pardo",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "No dedicated Forbes person profile for Gérald or Gerald David Pardo",
+        "No Forbes identity bridge to O'Neiro I, Diam, Le Must or Mistral",
+        "Forbes-first not-found decision"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.bodacc.fr/telechargements/COMMERCIALES/PDF/A/BODACC-A_20150087_0001_p000.pdf",
+      "title": "BODACC A 2015 number 87: Mistral registration",
+      "publisher": "Bulletin officiel des annonces civiles et commerciales",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Mistral civil company registration under RCS Cannes 811 026 186",
+        "Gérald Pardo as manager and associate",
+        "Nili Gilerman as the other named associate",
+        "Company purpose of patrimonial management",
+        "Cannes address, 1,000-euro capital and 14 April 2015 activity start"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.petitesaffiches.fr/IMG/pdf/web_journal_4183.pdf",
+      "title": "Mistral change-of-manager legal notice",
+      "publisher": "Les Petites Affiches des Alpes-Maritimes",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Exact Gérald David Pardo formal name",
+        "Mistral RCS Cannes 811 026 186 continuity",
+        "Pardo as the former manager",
+        "His death on 23 September 2020",
+        "Nili Gillerman as his widow and retroactive successor as manager"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.deces-en-france.fr/annuaires/noms-de-famille/806575-pardo?page=7",
+      "title": "French death register surname index: Pardo",
+      "publisher": "Décès en France",
+      "tier": 3,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "INSEE-derived Gérald David Pardo record",
+        "Birth on 6 November 1945",
+        "Death on 23 September 2020",
+        "Age seventy-four at death",
+        "Collision control against other Pardo death records"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://geneafrance.net/?n=PARDO&p=Gerald+David",
+      "title": "PARDO Gerald David civil-status index",
+      "publisher": "GénéaFrance",
+      "tier": 3,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "INSEE as the underlying source",
+        "Gerald David Pardo born in Alexandria in 1945",
+        "Death in Neuilly-sur-Seine in 2020",
+        "Exact-name bridge to the company and legal-notice record"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://cars.bonhams.com/auction/30973/lot/104/1981-lamborghini-countach-lp400s-coupe-chassis-no-1121412-engine-no-1638115/",
+      "title": "1981 Lamborghini Countach LP400S Coupé, chassis 1121412",
+      "publisher": "Bonhams Cars",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Gerald David Pardo as the Countach's first registered keeper",
+        "Pardo described as originally from Egypt",
+        "London residence in the early 1980s",
+        "Exact full-name and origin corroboration independent of French company records"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.magnetomagazine.com/articles/low-owner-1970s-and-1980s-italian-stallions-lead-bonhams-bond-street-sale-2025/",
+      "title": "Low-owner Italian stallions lead Bonhams Bond Street Sale 2025",
+      "publisher": "Magneto",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Independent automotive reporting on the Bonhams provenance",
+        "Gerald David Pardo of London as the Countach's first keeper",
+        "Early-1980s London chronology"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.yachtbuyer.com/en-gb/fleet/o-neiro-i-125-gianetti-yacht",
+      "title": "O'Neiro I yacht",
+      "publisher": "YachtBuyer",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Exact 38.35-metre and 340-GT match to the authoritative current vessel",
+        "Gianetti Yacht construction and projected 2026 delivery",
+        "Le Must as launch and former name",
+        "No public owner identity"
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.superyachttimes.com/yachts/diam",
+      "title": "Diam yacht overview",
+      "publisher": "SuperYacht Times",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Diam as a 32.68-metre Gulf Craft delivered in 2013",
+        "Le Must as the yacht's previous name",
+        "Current owner identity withheld behind SYT iQ",
+        "Public vessel bridge to the authoritative historical Diam relationship"
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.linkedin.com/pulse/sold-announcement-le-must-majesty-105-superyacht-2013-yachts-invest",
+      "title": "Sold announcement: Le Must, Majesty 105 superyacht",
+      "publisher": "Allied Yachting and Yachts Invest",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "10 September 2020 sale and delivery of the 2013 Le Must",
+        "Renaming of Le Must to Diam after the transaction",
+        "Yachts Invest representation of both buyer and seller",
+        "Fabrizio Gianetti and Gianetti Service participation",
+        "Buyer and seller names not disclosed"
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://www.grabauinternational.com/news/2013-gulf-craft-majesty-105-now-sold/",
+      "title": "2013 Gulf Craft Majesty 105 Le Must now sold",
+      "publisher": "Grabau International",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Independent broker confirmation of Le Must's 2020 sale",
+        "Le Must as a lightly used single-owner yacht before the sale",
+        "2013 Gulf Craft Majesty 105 identity",
+        "No seller identity"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Identity and preferred name",
+      "detail": "The owner record displays David Pardo but stores Gérald as the first name and David as the middle name. Exact-name legal, company and civil-status sources consistently identify Gérald David Pardo, and the full birth and death chronology matches the input. The dossier preserves the immutable display name and proposes only the mechanical removal of trailing whitespace from Gérald."
+    },
+    {
+      "topic": "Person-to-vessel bridge",
+      "detail": "No open yacht, registry, brokerage or news source located in this pass names Gérald David Pardo as owner of O'Neiro I, Le Must or Diam. The exact vessel specifications, repeated Le Must name, September 2020 sale and authoritative relationship dates are strongly coherent with the record, but remain contextual rather than a public named-owner disclosure."
+    },
+    {
+      "topic": "O'Neiro I after Pardo's death",
+      "detail": "The authoritative input records O'Neiro I as current from 2016, yet Pardo died in September 2020 and YachtBuyer describes the 38.35-metre project as due for delivery in 2026. No strong source explains whether the project continued through an estate, widow, company, beneficiary or later owner, so no successor or present beneficial-owner claim is made."
+    },
+    {
+      "topic": "Diam chronology",
+      "detail": "The input relationship is labelled Diam from 2012 to September 2020 because it uses the vessel's current name. Public brokerage records show that the single-owner yacht was called Le Must until its September 2020 sale and was renamed Diam by the buyer. Seller identity was not disclosed."
+    },
+    {
+      "topic": "Wealth mechanism",
+      "detail": "Mistral was registered with 1,000 euros of capital for patrimonial management. That establishes a manager-associate role but neither the underlying assets nor the activity that created Pardo's wealth. All four wealth dimensions therefore remain Unknown, and no industry or occupation tag is proposed."
+    },
+    {
+      "topic": "Residence",
+      "detail": "The source record lists France as Pardo's main residence. A public directory places the exact name at a Monaco address, and the 2023 Mistral notice gives that same address for his widow, but neither is sufficient to correct or add a residence field for Pardo."
+    },
+    {
+      "topic": "Automobile provenance",
+      "detail": "Bonhams provenance and independent automotive reporting support Pardo's early London connection and Egyptian origin. Ownership of a collectible car is used only as biographical chronology; it does not establish net worth, business sector, wealth origin or a continuing automotive occupation."
+    },
+    {
+      "topic": "Birth evidence",
+      "detail": "The full birth date and Alexandria birthplace come from public indexes derived from the French INSEE death file rather than a scanned birth certificate. Exact full name, death date and death place align with the company notice and source record, yielding very-high confidence in the proposed day and birthplace."
+    },
+    {
+      "topic": "Social profiles",
+      "detail": "No collision-safe LinkedIn, Instagram, personal website, Facebook, Twitter or other controlled profile could be tied to Gérald David Pardo through the exact birth, death, Mistral, London or Monaco context. Common-name results were excluded and no social is proposed."
+    },
+    {
+      "topic": "Biography scope",
+      "detail": "The public career record is sparse. The biographies therefore describe only Pardo's civil identity, limited London chronology and documented Mistral role. They do not present Mistral as his wealth source, infer a broader career, identify private assets or mention yacht ownership."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier. Identity confidence is 94 through the exact Gérald David Pardo name, matching November 1945 birth, exact 23 September 2020 death, INSEE-derived 6 November 1945 Alexandria birth record and Mistral legal continuity. The yacht chronology is coherent but not publicly name-linked, preventing a very-high score. All four wealth dimensions remain Unknown because Mistral is only a documented patrimonial-management vehicle. A birth day, birthplace, birth country, first-name whitespace correction and 52-word biography are proposed; no social or approved tag clears the evidence and semantic thresholds. The 101-word, two-paragraph long biography is source-invisible and excludes yacht, current asset value and unsupported causal-wealth context. Nothing has been compiled or applied."
+  }
+}

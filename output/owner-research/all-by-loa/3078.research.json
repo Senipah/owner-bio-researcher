@@ -1,0 +1,373 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 3078,
+    "display_name": "Mr  Richard Attias",
+    "identity_confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The authoritative record's exact name, 19 November 1959 birth date, Moroccan birth country, French nationality and existing Richard Attias Wikipedia link match the Moroccan-born French events entrepreneur. A contemporary report places Richard Attias and his family aboard a yacht named Lady First; the authoritative record also assigns him Five Palms, which independent yacht data identifies as formerly Lady First, and the later 40-metre Riva Lady First. The repeated vessel name, exact predecessor-vessel match, biography anchors and business geography distinguish him from namesakes. The score remains below very high because no public registry or equally direct source independently names him as beneficial owner of the current 2023 yacht."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "biography"],
+    "optional_missing_details": ["name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": ["Wikipedia"],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Moroccan-born French entrepreneur and events producer who founded and chairs the strategic communications firm Richard Attias & Associates.",
+    "defining_work": "Attias built a career designing and producing international forums, brand platforms and live experiences, first within larger organisations and later through his own firm.",
+    "formative_context": "Civil-engineering training and an early technology career preceded his move into communications and large-scale event production.",
+    "decisive_moment": "Founding Richard Attias & Associates in 2008 converted his long operating experience into an entrepreneurial strategic-communications and advisory platform.",
+    "enduring_dimensions": ["strategic communications and brand positioning", "international forum and live-experience production", "institutional advisory and partnership development"],
+    "character_detail": "Attias's engineering background gives his public career an unusual progression from technology systems to the design of large, relationship-driven convening platforms.",
+    "opening_options": [
+      {"angle": "Open with the founder who turned decades of international event production into a strategic-communications firm.", "mode": "present_identity"},
+      {"angle": "Open with the civil engineer whose career moved from technology into global forums and live experiences.", "mode": "formative_episode"}
+    ],
+    "excluded_transient_context": ["Lady First and Five Palms ownership, specifications and chronology", "temporary company valuations, transaction speculation and proposed listings", "unverified personal net-worth estimates", "public-policy and electoral activity", "family members' careers and public roles", "unsupported exact current equity percentage"],
+    "source_ids": ["S1", "S3", "S4", "S5", "S6", "S7", "S8"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": ["founder_operator"],
+    "notes": "The short biography establishes Attias's present identity, technical background and defining communications work. The longer version develops the career sequence and entrepreneurial transition through a complementary two-paragraph structure. Both omit yachts, politics, family roles, valuations, equity speculation and other transient material."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes-first searches using Richard Attias, Richard Attias & Associates, RA&A and Lady First found Forbes articles mentioning or interviewing him but no dedicated exact-person Forbes profile or verified Forbes social page."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "service",
+    "label": "Service",
+    "summary": "Attias built his documented wealth platform through strategic communications, event production, brand positioning and advisory work, culminating in the firm he founded.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "His first-party executive biography documents a three-decade operating career and more than 2,000 events, while RA&A describes the founder-led company's consulting, live-experience and communications services. WPP's formal sale announcement confirms that the firm was a material shareholder-backed business, not merely a personal title."
+    },
+    "source_ids": ["S3", "S4", "S5", "S7"]
+  },
+  "primary_industry": {
+    "classification": "service",
+    "label": "Service",
+    "summary": "Strategic communications and advisory services remain the clearest current industry because Attias continues as founder and chairman of RA&A, whose work spans consulting, live experiences and brand programmes.",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Current first-party company material identifies Attias as founder and chairman and describes RA&A as a strategic-communications business delivering consulting, live experiences, content and related services. Current regulatory disclosure independently confirms his chairman-and-founder role."
+    },
+    "source_ids": ["S3", "S4", "S8"]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Attias progressed from engineering and technology roles through events leadership before founding his own communications firm; the reviewed evidence does not establish an inherited business or family capital platform.",
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "First-party and major-news profiles consistently trace a career from civil-engineering training and IBM through communications leadership to founding RA&A. No strong source reviewed identifies a family company, inheritance or launch-capital transfer, but private starting resources are not fully disclosed, so no narrower independent-start subtype is assigned."
+    },
+    "source_ids": ["S3", "S5"]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Attias founded RA&A and remains its chairman, making founder the durable relationship even though current public filings show the wider group is majority-owned by an external institution.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "RA&A's first-party biography and company pages identify Attias as founder and chairman. Current regulatory disclosure confirms the same role and identifies an external ultimate beneficial owner, so the dossier deliberately describes founder stewardship rather than asserting present control or an exact personal stake."
+    },
+    "source_ids": ["S3", "S4", "S8"]
+  },
+  "biography": {
+    "plain_text": "Richard Attias is a Moroccan-born French entrepreneur and events producer who founded the strategic communications firm Richard Attias & Associates. Trained as a civil engineer, he moved from technology into global event production, later leading Publicis Events Worldwide. His career has centred on designing international forums, brand platforms and live experiences for institutions and companies.",
+    "html": "<p>Richard Attias is a Moroccan-born French entrepreneur and events producer who founded the strategic communications firm Richard Attias &amp; Associates. Trained as a civil engineer, he moved from technology into global event production, later leading Publicis Events Worldwide. His career has centred on designing international forums, brand platforms and live experiences for institutions and companies.</p>\r\n",
+    "word_count": 54,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "First-party RA&A material and a direct major-news interview establish the founder role, engineering and technology background, Publicis events leadership, strategic-communications work and long international production career."
+    },
+    "source_ids": ["S3", "S4", "S5", "S6"]
+  },
+  "long_biography": {
+    "plain_text": "Born in Fez and trained as a civil engineer, Attias began his career in technology before moving into communications and live-event production. He spent a decade at Publicis, ultimately chairing its worldwide events business, and produced major international forums. That combination of technical training, network building and large-scale delivery became the foundation of his entrepreneurial work.\n\nAttias founded Richard Attias & Associates in 2008 as a strategic communications and advisory firm. The company builds forums, live experiences and brand programmes for corporate and institutional clients, with teams across several international cities. He remains founder and chairman, while his work has expanded from event production into broader advisory, content and partnership development. Outside the company, he has continued leading global convening platforms focused on investment and innovation.",
+    "html": "<p>Born in Fez and trained as a civil engineer, Attias began his career in technology before moving into communications and live-event production. He spent a decade at Publicis, ultimately chairing its worldwide events business, and produced major international forums. That combination of technical training, network building and large-scale delivery became the foundation of his entrepreneurial work.</p>\r\n<p>Attias founded Richard Attias &amp; Associates in 2008 as a strategic communications and advisory firm. The company builds forums, live experiences and brand programmes for corporate and institutional clients, with teams across several international cities. He remains founder and chairman, while his work has expanded from event production into broader advisory, content and partnership development. Outside the company, he has continued leading global convening platforms focused on investment and innovation.</p>\r\n",
+    "word_count": 125,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "RA&A's executive biography and company pages support the education, early technology work, Publicis tenure, firm founding, current chairmanship and service mix. TIME independently corroborates Fez, engineering, the 2008 founding and the international-forum career, while current institutional material supports his continuing convening leadership."
+    },
+    "source_ids": ["S3", "S4", "S5", "S6"]
+  },
+  "proposed_details": [
+    {
+      "field": "display_name",
+      "value": "Mr Richard Attias",
+      "action": "correct_existing",
+      "existing_value": "Mr  Richard Attias",
+      "confidence": {"score": 100, "band": "very_high", "reason": "The correction removes an accidental duplicated space while preserving the existing title and the exact name consistently used by first-party and major-news sources."},
+      "source_ids": ["S1", "S3", "S5"]
+    },
+    {
+      "field": "first_name",
+      "value": "Richard",
+      "action": "correct_existing",
+      "existing_value": " Richard",
+      "confidence": {"score": 100, "band": "very_high", "reason": "The upstream first-name field contains a leading space; exact-person first-party and major-news sources consistently use Richard without leading whitespace."},
+      "source_ids": ["S1", "S3", "S5"]
+    },
+    {
+      "field": "sort_last_name",
+      "value": "Attias Richard",
+      "action": "correct_existing",
+      "existing_value": "Attias  Richard",
+      "confidence": {"score": 100, "band": "very_high", "reason": "The surname-first sort value contains the same duplicated whitespace and is normalized without changing name order or components."},
+      "source_ids": ["S1", "S3", "S5"]
+    },
+    {
+      "field": "secondary_nationality",
+      "value": "Moroccan",
+      "action": "fill_missing",
+      "confidence": {"score": 98, "band": "very_high", "reason": "A current United States Department of Justice registration statement identifies Richard Attias as a Moroccan citizen, while the authoritative record already identifies his primary nationality as French."},
+      "source_ids": ["S1", "S8"]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Founder and chairman of Richard Attias & Associates",
+      "action": "fill_missing",
+      "confidence": {"score": 100, "band": "very_high", "reason": "RA&A's official executive biography and company material identify Attias as founder and chairman, and current regulatory disclosure independently confirms both titles."},
+      "source_ids": ["S3", "S4", "S8"]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Fez",
+      "action": "fill_missing",
+      "confidence": {"score": 97, "band": "very_high", "reason": "TIME's direct profile identifies Attias as born in Fez, Morocco, consistent with the authoritative Moroccan birth-country field and exact birth-date match."},
+      "source_ids": ["S1", "S5"]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Richard Attias is a Moroccan-born French entrepreneur and events producer who founded the strategic communications firm Richard Attias &amp; Associates. Trained as a civil engineer, he moved from technology into global event production, later leading Publicis Events Worldwide. His career has centred on designing international forums, brand platforms and live experiences for institutions and companies.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {"score": 98, "band": "very_high", "reason": "The 54-word biography gives a durable, source-invisible account of Attias's exact identity, founder role, formative training and defining career while excluding yacht, political, family, valuation and ownership-speculation material."},
+      "source_ids": ["S3", "S4", "S5", "S6"]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "5",
+      "type": "LinkedIn",
+      "url": "https://www.linkedin.com/in/richard-attias-09139915a",
+      "verification": "The personal profile uses the exact Richard Attias name and identifies Richard Attias & Associates and INSA, matching his first-party founder biography and engineering education.",
+      "confidence": {"score": 98, "band": "very_high", "reason": "Exact name, current eponymous-company affiliation and education cross-match the first-party RA&A biography and independent TIME profile, with no competing profile carrying the same combined anchors."},
+      "source_ids": ["S3", "S5", "S13"]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://richardattiasassociates.com/en/about/executive-team/richard-attias/",
+      "verification": "RA&A's official executive page identifies Richard Attias as the company's founder and chairman and gives the career history used to resolve and describe him.",
+      "confidence": {"score": 100, "band": "very_high", "reason": "This is the first-party executive profile of the eponymous company he founded and continues to chair."},
+      "source_ids": ["S3"]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0207",
+      "name": "Advertising",
+      "summary": "Attias has spent decades in strategic communications, brand positioning and event-led brand experiences, including worldwide events leadership at Publicis and the founding and chairmanship of RA&A; this is a defining operating mandate rather than an incidental client relationship.",
+      "relationship_type": "founder_chairman_and_defining_long_term_operator_in_strategic_communications_branding_and_live_brand_experiences",
+      "temporal_scope": "current",
+      "confidence": {"score": 92, "band": "high", "reason": "First-party sources document a defining career in strategic communications, nation branding and brand experiences, including a decade at Publicis and current founder-chairman leadership of RA&A. Advertising is the catalogue's approved umbrella for that durable brand-communications work; no narrower active communications or events tag exists."},
+      "source_ids": ["S3", "S4", "S5", "S6"],
+      "taxonomy_value": "The owner created material wealth through, controlled substantial operations in, or had a defining long-term operating mandate in Advertising."
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=3078",
+      "title": "Mr  Richard Attias owner record, person ID 3078",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["immutable person ID and double-spaced upstream display name", "French nationality, France residence and Moroccan birth country", "19 November 1959 birth date, male gender, Mr title and Alive status", "existing exact Richard Attias Wikipedia link", "authoritative current Five Palms relationship from June 2018", "authoritative current Lady First relationship from 2021", "40-metre and 299-GT largest-current-vessel context", "absence of biography, known-for title, place of birth and secondary nationality"]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/search/?q=Richard%20Attias",
+      "title": "Forbes search results for Richard Attias",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": ["Forbes-first exact-name, company and vessel search process", "absence of a dedicated exact-person Forbes profile or verified Forbes social page", "distinction between editorial mentions and a person profile"]
+    },
+    {
+      "id": "S3",
+      "url": "https://richardattiasassociates.com/en/about/executive-team/richard-attias/",
+      "title": "Richard Attias",
+      "publisher": "Richard Attias & Associates",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["exact Richard Attias identity", "founder and chairman role", "civil-engineering education", "early IBM and technology-company experience", "decade at Publicis and worldwide events chairmanship", "more than 30 years in event production", "more than 2,000 events developed and produced", "strategic communications and nation-branding expertise"]
+    },
+    {
+      "id": "S4",
+      "url": "https://richardattiasassociates.com/en/about/",
+      "title": "About Richard Attias & Associates",
+      "publisher": "Richard Attias & Associates",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["RA&A founded in 2008", "current strategic-communications positioning", "consulting, live-experience, digital, hospitality and sports capabilities", "international office footprint", "continued founder-led identity"]
+    },
+    {
+      "id": "S5",
+      "url": "https://time.com/7098988/richard-attias-fii-interview/",
+      "title": "Richard Attias on Building Global Convening Platforms",
+      "publisher": "TIME",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["birth in Fez, Morocco", "civil-engineering training", "more than three decades producing international events", "RA&A founding in 2008", "strategic communications and nation-branding work", "continuing leadership of an international investment and innovation forum"]
+    },
+    {
+      "id": "S6",
+      "url": "https://fii-institute.org/wp-content/uploads/2025/11/FII-Institute-Press-Kit-2025.pdf",
+      "title": "FII Institute Press Kit 2025",
+      "publisher": "FII Institute",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["current executive-committee chairmanship and trustee role", "continuing leadership of global convening platforms", "RA&A founder and chairman identity", "career in communications and international event production"]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.wpp.com/en/news/2019/01/wpp-sells-stake-in-richard-attias-and-associates",
+      "title": "WPP sells stake in Richard Attias & Associates",
+      "publisher": "WPP",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["RA&A as a substantive communications and events business", "WPP's former minority investment", "2019 sale of that stake to existing shareholders", "evidence of shareholder value without inferring Attias's current percentage"]
+    },
+    {
+      "id": "S8",
+      "url": "https://efile.fara.gov/docs/7528-Registration-Statement-20250124-1.pdf",
+      "title": "Registration Statement of Richard Attias & Associates USA, Inc.",
+      "publisher": "United States Department of Justice",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["exact Richard Attias name", "Moroccan citizenship", "current chairman and founder role", "RA&A USA ownership through RA&A Group FZC", "external ultimate beneficial ownership of the wider group", "basis for avoiding an unsupported current control claim"]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.closermag.fr/politique/cecilia-attias-ex-premiere-dame-est-toujours-une-lady-first-542435",
+      "title": "Cécilia Attias est toujours une Lady First",
+      "publisher": "Closer",
+      "tier": 3,
+      "accessed_at": "2026-08-30",
+      "supports": ["2015 report placing Richard Attias and his family aboard a yacht named Lady First", "historical exact-name yacht bridge", "family-use context without establishing the later 2023 yacht's legal or beneficial ownership"]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.superyachttimes.com/yachts/lady-first-40m",
+      "title": "Lady First yacht",
+      "publisher": "SuperYacht Times",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["exact 40-metre Lady First identity", "299 gross tonnage", "Riva construction and 2023 delivery", "European-owner description without public beneficial-owner naming", "match to the authoritative largest-current-vessel fields"]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.riva-yacht.com/en-us/News-and-events/Detail/t/Riva-130-Bellissima-the-Riva-fleet-flagship/n/2137",
+      "title": "Riva 130' Bellissima: the Riva fleet flagship makes its official debut",
+      "publisher": "Riva Yacht",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["January 2023 launch of the second Riva 130 Bellissima", "40-metre flagship identity", "construction for a European owner", "order-and-build chronology compatible with the authoritative 2021 relationship start"]
+    },
+    {
+      "id": "S12",
+      "url": "https://www.superyachttimes.com/yachts/five-palms/overview",
+      "title": "Five Palms yacht",
+      "publisher": "SuperYacht Times",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["exact 33.53-metre Five Palms identity", "219 gross tonnage and Riva construction", "2019 delivery", "prior Lady First and Onyx names", "bridge between the authoritative Five Palms relationship and repeated Lady First naming"]
+    },
+    {
+      "id": "S13",
+      "url": "https://www.linkedin.com/in/richard-attias-09139915a",
+      "title": "Richard Attias — Founder and Chairman at Richard Attias & Associates",
+      "publisher": "LinkedIn",
+      "tier": 3,
+      "accessed_at": "2026-08-30",
+      "supports": ["exact Richard Attias personal-profile name", "RA&A founder and chairman affiliation", "INSA education anchor", "cross-match for the proposed personal LinkedIn social"]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Identity and current Lady First bridge",
+      "detail": "The exact upstream name, birth date, Moroccan birth and existing Wikipedia link resolve the famous events entrepreneur. A 2015 report places him aboard an earlier Lady First, and the upstream Five Palms relationship independently connects to a Riva documented as formerly Lady First. The later 40-metre Riva Lady First matches the authoritative record and repeated naming pattern, but no public registry or equally direct source reviewed names Attias as its current beneficial owner; the dossier therefore stops at 94 identity confidence."
+    },
+    {
+      "topic": "Vessel chronology",
+      "detail": "The authoritative Lady First relationship begins in 2021, while Riva and yacht databases date the vessel's launch or delivery to 2023. The timing is compatible with an order or build-stage relationship, but no contract date, purchase price or transfer mechanism is inferred. The 2015 yacht and Five Palms's former Lady First name are treated as separate chronology anchors, not as the same physical vessel."
+    },
+    {
+      "topic": "Name-field whitespace",
+      "detail": "The upstream display name, first name and surname-first sort field contain duplicated or leading whitespace. Exact-person sources consistently use Richard Attias, so only whitespace normalization is proposed; no title or substantive name component is changed."
+    },
+    {
+      "topic": "Nationality and place of birth",
+      "detail": "The upstream record identifies primary nationality as French and birth country as Morocco. Current United States regulatory disclosure identifies Attias as a Moroccan citizen, supporting Moroccan as a secondary nationality, while TIME supports Fez as place of birth. The dossier does not infer when either citizenship was acquired."
+    },
+    {
+      "topic": "Current ownership and wealth relationship",
+      "detail": "Attias founded RA&A and remains chairman, but current regulatory disclosure identifies an external institution as the ultimate beneficial owner of the wider group. Founder therefore captures the durable relationship without asserting present control, a personal majority stake or an exact remaining percentage."
+    },
+    {
+      "topic": "Wealth origin",
+      "detail": "Career histories show progression from engineering and IBM through Publicis leadership to founding RA&A, and no strong reviewed source identifies inheritance or a family business platform. Self-made is used at high rather than very-high confidence because private launch capital and family financial circumstances are not publicly established."
+    },
+    {
+      "topic": "Industry and tag scope",
+      "detail": "Service is the best fit for RA&A's consulting, communications and live-experience model. Advertising is assigned as the catalogue's approved umbrella for Attias's long-term brand communications and positioning work at Publicis and RA&A; it does not imply that conventional media buying or advertising-agency revenue is his sole business. No narrower active events or strategic-communications tag exists."
+    },
+    {
+      "topic": "Social profiles",
+      "detail": "The proposed LinkedIn profile clears the threshold through exact name, RA&A affiliation and INSA education anchors. The RA&A executive profile is proposed as Company Website. No Instagram or personal website was verified strongly enough to propose, and the existing Wikipedia social is left unchanged."
+    },
+    {
+      "topic": "Forbes profile",
+      "detail": "Forbes-first searches found editorial pages that mention or interview Attias but no dedicated Forbes person profile. Editorial mention pages are not treated as Forbes socials, so no Forbes proposal is made."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal research decision. Person 3078 is resolved at 94 confidence to the Moroccan-born French events entrepreneur Richard Attias through exact biographical anchors, a reported 2015 Lady First association, the authoritative Five Palms relationship and that yacht's independently documented former Lady First name. The current 40-metre yacht's beneficial ownership remains non-public and is explicitly qualified. All four wealth dimensions were independently classified as Service, Service, Self-made and Founder. Three whitespace-only name corrections and supported secondary-nationality, place-of-birth, known-for and biography proposals are included. The short biography contains 54 words; the complementary long biography contains 125 words in exactly two paragraphs. LinkedIn and Company Website proposals clear the exact-person threshold. One approved active Advertising tag satisfies its semantic contract with relationship, temporal and taxonomy metadata. No political material is included, and nothing has been compiled or applied."
+  }
+}

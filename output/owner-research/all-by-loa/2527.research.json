@@ -1,0 +1,393 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 2527,
+    "display_name": "Mr Emilio Figueras",
+    "identity_confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The authoritative record identifies a Spanish, Spain-resident Emilio Figueras and assigns him the 40-metre, 177-GT Tenaz from April 2018. A direct first-person maritime account describes the same 40-metre Tenaz as Emilio Cuatrecasas's sailing yacht and records meeting him aboard. Cuatrecasas's official firm history, Spanish regulatory filings and current company material consistently give the full name Emilio Cuatrecasas Figueras, while Pendennis confirms the exact vessel's dimensions, builder and 2019 Barcelona service visit. Cuatrecasas also identifies sailing as his preferred sport. The combined exact vessel, first name, second Spanish surname, nationality, business geography and sailing anchors resolve the upstream truncated name and exclude prior owner Andrew Colin and other Emilio Figueras namesakes."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Spanish lawyer and investor who is honorary chairman of Cuatrecasas and president of the private investment group Emesa.",
+    "defining_work": "Cuatrecasas transformed a small family law practice into an international business-law firm and separately founded a diversified investment platform spanning property and company holdings.",
+    "formative_context": "He entered a third-generation Barcelona legal practice led by his father, benefiting from an established professional name while taking responsibility for its expansion.",
+    "decisive_moment": "Becoming managing partner in 1980 placed him at the centre of the firm's Spanish and international growth, while founding Emesa in 1981 created a separately controlled investment vehicle.",
+    "enduring_dimensions": ["international business-law firm building", "private-company and commercial-property investment", "family-business transition and long-term institutional leadership"],
+    "character_detail": "In a later interview, Cuatrecasas described sailing as the sport he most enjoys, a personal interest consistent with the independently resolved vessel record.",
+    "opening_options": [
+      {"angle": "Open with the lawyer and investor who internationalised a family practice and founded Emesa.", "mode": "present_identity"},
+      {"angle": "Open with the small Barcelona practice he inherited as a professional platform before leading its international expansion.", "mode": "formative_episode"}
+    ],
+    "excluded_transient_context": ["Tenaz ownership, specifications, service visits and sales status", "historical transaction prices and net-worth estimates", "temporary portfolio valuations and ownership percentages", "unsupported exact birth day and month", "legal disputes and unrelated public controversies", "unverified personal Instagram or Facebook accounts"],
+    "source_ids": ["S1", "S3", "S5", "S6", "S7", "S8", "S9", "S10", "S11", "S12"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": ["founder_operator"],
+    "notes": "The short biography efficiently joins the exact full name, legal-firm transformation and current investment leadership. The longer biography uses a chronological career-to-portfolio structure, adding education, succession and current governance without repeating the short biography sentence by sentence. Both omit the yacht, transaction values, net-worth estimates, unsupported exact birthday and transient controversies."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes-first searches for Emilio Figueras, Emilio Cuatrecasas Figueras, Cuatrecasas, Emesa and Tenaz found no dedicated exact-person Forbes profile or verified Forbes social page."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "The strongest documented personal wealth platform is Emesa, the private investment group Cuatrecasas founded and controlled, which built value through company stakes and commercial property alongside his legal career.",
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Emesa's official site identifies Cuatrecasas as its 1981 founder. French regulatory disclosure identifies him as controller, while La Vanguardia documents a substantial multi-sector asset base, material rental income and a large gain from the Áreas-to-Elior transaction. These sources establish investment ownership as the clearest personal wealth-producing mechanism rather than treating professional reputation alone as wealth evidence."
+    },
+    "source_ids": ["S7", "S9", "S10", "S11"]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Emesa's current combination of property development and long-term holdings in operating companies makes private investment the best-supported description of Cuatrecasas's present wealth interests.",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "The current first-party Emesa site presents a private group that develops and manages companies, divides its activity between real estate and investee businesses, and lists Cuatrecasas as president. The official foundation page independently confirms both his Emesa presidency and his non-executive honorary role at the law firm."
+    },
+    "source_ids": ["S6", "S7", "S9"]
+  },
+  "wealth_origin": {
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "Cuatrecasas founded and built Emesa and materially expanded other businesses, but began with the substantial professional platform, reputation and network of his family's established law firm.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The official firm history establishes a third-generation family practice led by his father when he became managing partner. In a direct interview, Cuatrecasas explicitly attributes his legal start to family tradition while distinguishing later projects as his own decisions. Emesa independently identifies him as its founder, supporting a separately created core investment asset without erasing the material family advantage."
+    },
+    "source_ids": ["S5", "S7", "S11"]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Cuatrecasas founded Emesa, remains its president and is publicly identified as controller of the group that holds his principal documented investment assets.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Emesa's first-party site identifies him as founder and current president. French regulatory disclosure identifies Emesa as controlled by Emilio Cuatrecasas Figueras, and Spanish reporting documents his long-term governance of the holding company."
+    },
+    "source_ids": ["S7", "S9", "S10"]
+  },
+  "biography": {
+    "plain_text": "Emilio Cuatrecasas Figueras is a Spanish lawyer and investor who transformed his family's Barcelona practice into an international business-law firm. As managing partner and later executive chairman, he led its expansion across Spain and abroad. He also founded Emesa, a private investment group spanning commercial property and stakes in growing companies, and remains its president.",
+    "html": "<p>Emilio Cuatrecasas Figueras is a Spanish lawyer and investor who transformed his family's Barcelona practice into an international business-law firm. As managing partner and later executive chairman, he led its expansion across Spain and abroad. He also founded Emesa, a private investment group spanning commercial property and stakes in growing companies, and remains its president.</p>\r\n",
+    "word_count": 55,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official firm history documents the family practice, managing-partner role and international expansion. Current Emesa and foundation pages establish the investment group's founding, portfolio and presidency, while regulatory sources establish control."
+    },
+    "source_ids": ["S5", "S6", "S7", "S8", "S9"]
+  },
+  "long_biography": {
+    "plain_text": "Born in Barcelona in 1954, Cuatrecasas entered the family law practice after studying law at the University of Navarra. He became managing partner in 1980, when the firm was still small, and drove its transformation into a multidisciplinary business-law partnership. Under his leadership it expanded across Spain, merged with Portuguese practices and established offices in major international financial centres.\n\nAlongside his legal career, Cuatrecasas founded Emesa as a private investment group. Its portfolio combines commercial property with holdings in industrial and service companies, while he currently serves as president and his daughter Inés as chief executive. He later stepped back from the law firm's executive leadership and continues as honorary chairman, maintaining an institutional role while Emesa provides the centre of his current investment activity.",
+    "html": "<p>Born in Barcelona in 1954, Cuatrecasas entered the family law practice after studying law at the University of Navarra. He became managing partner in 1980, when the firm was still small, and drove its transformation into a multidisciplinary business-law partnership. Under his leadership it expanded across Spain, merged with Portuguese practices and established offices in major international financial centres.</p>\r\n<p>Alongside his legal career, Cuatrecasas founded Emesa as a private investment group. Its portfolio combines commercial property with holdings in industrial and service companies, while he currently serves as president and his daughter Inés as chief executive. He later stepped back from the law firm's executive leadership and continues as honorary chairman, maintaining an institutional role while Emesa provides the centre of his current investment activity.</p>\r\n",
+    "word_count": 125,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "The official firm history and CNMV profile support the education, 1980 management role, family context and international expansion. Current first-party sources support Emesa's founding, portfolio, presidency, chief executive and honorary-chairman roles; independent reporting corroborates the holding-company scale and investment mechanism."
+    },
+    "source_ids": ["S5", "S6", "S7", "S8", "S10", "S12"]
+  },
+  "proposed_details": [
+    {
+      "field": "display_name",
+      "value": "Mr Emilio Cuatrecasas Figueras",
+      "action": "correct_existing",
+      "existing_value": "Mr Emilio Figueras",
+      "confidence": {"score": 96, "band": "very_high", "reason": "The direct Tenaz account identifies Emilio Cuatrecasas, while official firm and regulatory sources consistently give the exact full name Emilio Cuatrecasas Figueras for the same Spanish lawyer and investor. The existing title is preserved."},
+      "source_ids": ["S1", "S3", "S5", "S8"]
+    },
+    {
+      "field": "last_name",
+      "value": "Cuatrecasas Figueras",
+      "action": "correct_existing",
+      "existing_value": "Figueras",
+      "confidence": {"score": 99, "band": "very_high", "reason": "Official Cuatrecasas history and Spanish regulatory records consistently identify the person as Emilio Cuatrecasas Figueras. Cuatrecasas and Figueras are the first and second surnames, not a given-name middle component."},
+      "source_ids": ["S5", "S8", "S9", "S12"]
+    },
+    {
+      "field": "sort_name",
+      "value": "Emilio Cuatrecasas Figueras",
+      "action": "correct_existing",
+      "existing_value": "Emilio Figueras",
+      "confidence": {"score": 99, "band": "very_high", "reason": "The corrected sort name follows the exact full name used by official firm, regulatory and current company sources."},
+      "source_ids": ["S5", "S8", "S12"]
+    },
+    {
+      "field": "sort_first_name",
+      "value": "Emilio Cuatrecasas Figueras",
+      "action": "correct_existing",
+      "existing_value": "Emilio Figueras",
+      "confidence": {"score": 99, "band": "very_high", "reason": "The corrected first-name sort form retains Emilio followed by both documented Spanish surnames."},
+      "source_ids": ["S5", "S8", "S12"]
+    },
+    {
+      "field": "sort_last_name",
+      "value": "Cuatrecasas Figueras Emilio",
+      "action": "correct_existing",
+      "existing_value": "Figueras Emilio",
+      "confidence": {"score": 99, "band": "very_high", "reason": "The corrected surname-first form places both documented Spanish surnames before the given name."},
+      "source_ids": ["S5", "S8", "S12"]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Emesa founder and Cuatrecasas honorary chairman",
+      "action": "fill_missing",
+      "confidence": {"score": 100, "band": "very_high", "reason": "Emesa's official site identifies Cuatrecasas as founder and president, while Fundación Cuatrecasas identifies him as honorary chairman of the law firm."},
+      "source_ids": ["S6", "S7"]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Barcelona",
+      "action": "fill_missing",
+      "confidence": {"score": 97, "band": "very_high", "reason": "El País identifies Cuatrecasas as born in Barcelona, and his later direct interview refers to Barcelona as the city where he was born."},
+      "source_ids": ["S11", "S12"]
+    },
+    {
+      "field": "birth_year",
+      "value": "1954",
+      "action": "fill_missing",
+      "confidence": {"score": 98, "band": "very_high", "reason": "El País's direct executive interview identifies Emilio Cuatrecasas as born in Barcelona in 1954, matching multiple exact-name reference records."},
+      "source_ids": ["S12"]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Emilio Cuatrecasas Figueras is a Spanish lawyer and investor who transformed his family's Barcelona practice into an international business-law firm. As managing partner and later executive chairman, he led its expansion across Spain and abroad. He also founded Emesa, a private investment group spanning commercial property and stakes in growing companies, and remains its president.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {"score": 98, "band": "very_high", "reason": "The 55-word biography provides a durable, source-invisible account of the resolved person's legal-firm transformation, Emesa founding and current presidency while excluding the yacht, valuations and transient events."},
+      "source_ids": ["S5", "S6", "S7", "S8", "S9"]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "5",
+      "type": "LinkedIn",
+      "url": "https://es.linkedin.com/in/emilio-cuatrecasas-806324230",
+      "verification": "The profile uses the exact Emilio Cuatrecasas name and identifies EMESA CORPORACIÓN EMPRESARIAL, matching the current founder and president documented by Emesa and Fundación Cuatrecasas.",
+      "confidence": {"score": 96, "band": "very_high", "reason": "The exact name and current Emesa affiliation cross-match first-party company and law-firm sources. No competing exact-name profile with these anchors was found."},
+      "source_ids": ["S6", "S7", "S13"]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://emesacorp.es/",
+      "verification": "Emesa's official website identifies Emilio Cuatrecasas as its founder and current president and describes the group's real-estate and investee-company activities.",
+      "confidence": {"score": 100, "band": "very_high", "reason": "This is the first-party site of the current investment group he founded, controls and chairs, with an exact-person team entry."},
+      "source_ids": ["S7", "S9"]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0558",
+      "name": "Lawyer",
+      "summary": "Cuatrecasas practised law from 1977, led the family firm as managing partner and executive chairman for decades, and remains its honorary chairman; law is a defining public occupation rather than education or a brief early role.",
+      "relationship_type": "career_lawyer_and_defining_long_term_managing_partner_executive_chairman_and_honorary_chairman",
+      "temporal_scope": "former_but_defining",
+      "confidence": {"score": 100, "band": "very_high", "reason": "Cuatrecasas's official history documents his long-term managing-partner and presidential leadership, while CNMV identifies him as a lawyer specialising in financial and commercial advice. The current foundation page confirms the continuing honorary-chairman role, satisfying the tag's defining-practice contract."},
+      "source_ids": ["S5", "S6", "S8"],
+      "taxonomy_value": "Lawyer is a substantial, recognised, and defining occupation or practiced role in the owner's public identity."
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=2527",
+      "title": "Mr Emilio Figueras owner record, person ID 2527",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["immutable person ID and upstream Mr Emilio Figueras display name", "Spanish nationality, Spain residence and Spain birth country", "male gender, Mr title and Alive status", "authoritative current Tenaz relationship from April 2018", "40-metre length and 177 gross tonnage", "absence of biography, known-for title, socials and detailed birth fields"]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/search/?q=Emilio%20Cuatrecasas%20Figueras",
+      "title": "Forbes search results for Emilio Cuatrecasas Figueras",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": ["Forbes-first exact-full-name and company search process", "absence of a dedicated exact-person Forbes profile or verified Forbes social page"]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.davidruizblog.com/blog-irse/h6dge9pkn6rpj9dx8xdg3wrckbxs29",
+      "title": "Superfollower",
+      "publisher": "David Ruiz Blog",
+      "tier": 3,
+      "accessed_at": "2026-08-30",
+      "supports": ["direct first-person meeting with Emilio Cuatrecasas aboard Tenaz", "Tenaz described as his 40-metre sailing yacht", "exact Emilio Cuatrecasas name and lawyer-businessman identity", "personal sailing and Mediterranean encounter context", "bridge from the truncated upstream name to the exact vessel-linked person"]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.pendennis.com/case-studies/tenaz",
+      "title": "Tenaz",
+      "publisher": "Pendennis",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["39-metre Pendennis sailing-yacht identity matching the rounded 40-metre record", "1996 construction and former Mamamouchi and Desirade 4 names", "8.65-metre beam and aluminium construction", "2019 visit to Pendennis Vilanova near Barcelona", "exact vessel context without independently naming its owner"]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.cuatrecasas.com/en/global/firm/history",
+      "title": "History",
+      "publisher": "Cuatrecasas",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["exact Emilio Cuatrecasas Figueras full name", "third-generation family-firm identity", "managing-partner role from 1980", "expansion from five to 600 lawyers", "Spanish and international office growth", "later presidency and international merger chronology"]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.cuatrecasas.com/es/spain/firma/patronato-fundacion-cuatrecasas",
+      "title": "Organización y gobierno",
+      "publisher": "Fundación Cuatrecasas",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["Emilio Cuatrecasas as Fundación Cuatrecasas president", "current honorary chairmanship of Cuatrecasas", "current presidency of Emesa", "continuing institutional role after executive succession"]
+    },
+    {
+      "id": "S7",
+      "url": "https://emesacorp.es/",
+      "title": "EMESA",
+      "publisher": "Emesa Corporación Empresarial",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["Emesa as a private group founded in 1981 by lawyer and entrepreneur Emilio Cuatrecasas", "current development and management of companies", "real-estate and investee-company activity structure", "diverse current holdings across property, hospitality, consumer, healthcare and publishing", "Emilio Cuatrecasas as president and Inés Cuatrecasas as chief executive"]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=iEHEn5yCrgY3tc6tYz5Df7r%2FbquQu5PdyB6EDB7FXuQDAeVNxCRAwLPil3Xzyzk3",
+      "title": "Corporate-governance profile of Emilio Cuatrecasas Figueras",
+      "publisher": "Comisión Nacional del Mercado de Valores",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["exact full name", "law degree from the University of Navarra", "chairmanship of Cuatrecasas and Áreas", "Fundación Cuatrecasas leadership", "professional legal and corporate governance identity"]
+    },
+    {
+      "id": "S9",
+      "url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/307/8888/01/FC307381141_20210423.pdf",
+      "title": "Elior Group threshold-crossing declaration",
+      "publisher": "Autorité des marchés financiers",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["Emesa Corporación Empresarial controlled by Emilio Cuatrecasas Figueras", "Emesa Private Equity wholly owned by the main Emesa company", "combined 7.66 percent Elior voting-interest disclosure in 2021", "investment-holding and control relationship without attributing the shares personally"]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.lavanguardia.com/economia/20161103/411531039893/plusvalia-record-emesa.html",
+      "title": "Plusvalía récord en Emesa",
+      "publisher": "La Vanguardia",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["Emesa as Emilio Cuatrecasas Figueras's holding company", "historical 38.45 percent Áreas interest and Elior transaction", "2016 assets divided between real estate and industrial holdings", "rental income and commercial-property operations", "Cuatrecasas as Emesa's sole administrator at the time", "portfolio diversification and family advisory structure"]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.mundodeportivo.com/actualidad/20241025/1002339147/emilio-cuatrecasas-referente-dct.html?facet=amp",
+      "title": "Emilio Cuatrecasas, todo un referente",
+      "publisher": "Mundo Deportivo",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": ["exact Emilio Cuatrecasas Figueras full name", "third-generation family-firm platform", "material transformation of Cuatrecasas and Áreas", "current Empordà Golf ownership and presidency", "direct statement that family tradition shaped his legal start", "direct distinction between the family practice and later projects he chose", "sailing as his preferred sport"]
+    },
+    {
+      "id": "S12",
+      "url": "https://elpais.com/diario/2004/11/21/negocio/1101045810_850215.html",
+      "title": "El crecimiento normal sabe a poco después del boom",
+      "publisher": "El País",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["Emilio Cuatrecasas born in Barcelona in 1954", "executive-chairman role", "family law-firm context", "transformation into a leading Spanish multidisciplinary practice", "international expansion and business-law focus"]
+    },
+    {
+      "id": "S13",
+      "url": "https://es.linkedin.com/in/emilio-cuatrecasas-806324230",
+      "title": "Emilio Cuatrecasas — EMESA CORPORACIÓN EMPRESARIAL",
+      "publisher": "LinkedIn",
+      "tier": 3,
+      "accessed_at": "2026-08-30",
+      "supports": ["exact Emilio Cuatrecasas personal-profile name", "EMESA CORPORACIÓN EMPRESARIAL affiliation", "cross-match to the current first-party company identity", "personal LinkedIn proposal rather than a same-name directory result"]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Identity and vessel bridge",
+      "detail": "A first-person account records meeting Emilio Cuatrecasas aboard the 40-metre Tenaz and describes it as his sailing yacht. The authoritative relationship starts in April 2018 and matches the 40-metre, 177-GT Pendennis vessel. Official and regulatory sources expand the same person's full name to Emilio Cuatrecasas Figueras; Spanish nationality, Barcelona business geography and his direct statement that sailing is his preferred sport provide independent consistency."
+    },
+    {
+      "topic": "Name structure and correction",
+      "detail": "The upstream display omits Cuatrecasas and retains only the second Spanish surname, Figueras. Official firm history, CNMV material, French regulatory disclosure and major reporting consistently use Emilio Cuatrecasas Figueras. Cuatrecasas is treated as the first surname, not a middle given name; display, surname and sort-field corrections are proposed while the existing Mr title is retained."
+    },
+    {
+      "topic": "Prior Tenaz owner",
+      "detail": "A 2016 SuperyachtNews interview identifies Andrew Colin as Tenaz's owner before the authoritative Cuatrecasas relationship began in April 2018. Colin's career, family, purchase history and ownership narrative are not transferred. The later direct Cuatrecasas encounter and upstream start date are compatible with a subsequent change of ownership, but no transaction date or price is inferred."
+    },
+    {
+      "topic": "Wealth-creation industry",
+      "detail": "Cuatrecasas is publicly best known as a lawyer, but the strongest documented personal asset platform is Emesa, which he founded, controls and chairs. Finance & Investments therefore describes the evidenced wealth mechanism more directly than Service. The dossier does not claim that legal earnings were immaterial or assign an undisclosed ownership interest in the law partnership."
+    },
+    {
+      "topic": "Current primary industry",
+      "detail": "Emesa holds commercial property and stakes across hospitality, consumer, healthcare, publishing and other businesses. Finance & Investments is selected because the current first-party description centres on developing and managing companies and property through a private investment group. No single operating sector is shown to dominate current personal wealth strongly enough to replace the investment classification."
+    },
+    {
+      "topic": "Origin and family advantage",
+      "detail": "The family law practice supplied a prominent third-generation professional platform, reputation and network, while Cuatrecasas separately founded Emesa and materially developed later projects. Self-made — advantaged start captures both elements without asserting an undocumented inheritance of a specific law-firm stake, estate distribution or launch-capital transfer."
+    },
+    {
+      "topic": "Birth details",
+      "detail": "El País supports Barcelona and 1954, so place and year are proposed. Reference sources give 12 January 1954, but the exact day and month were not established by an equally strong primary or major-news source reviewed here and remain blank. No secondary nationality is supported."
+    },
+    {
+      "topic": "Social profiles",
+      "detail": "The proposed LinkedIn profile matches the exact Emilio Cuatrecasas name and current Emesa affiliation; the first-party Emesa site is proposed as Company Website. No Instagram, Facebook, X or personal website cleared the combined full-name and current-company verification threshold."
+    },
+    {
+      "topic": "Forbes profile",
+      "detail": "Forbes-first searches using the short upstream name, exact full name, Cuatrecasas, Emesa and Tenaz anchors found no dedicated Forbes person profile. No Forbes social is proposed."
+    },
+    {
+      "topic": "Tag scope",
+      "detail": "Lawyer is the minimum useful approved active tag because decades of practice and executive leadership make it a defining occupation under the catalogue contract. Commercial real estate, hospitality, investing and golf-related tags are omitted because the evidence does not show that any narrower specialism alone is his defining personal wealth-creation or operating identity."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal research decision. Person 2527 is resolved at 96 confidence to Emilio Cuatrecasas Figueras through a direct 40-metre Tenaz encounter plus official full-name, Spanish, Barcelona-business and sailing anchors. The upstream dual-surname truncation receives supported display, surname and sort-field corrections. All four wealth dimensions were classified independently as Finance & Investments, Finance & Investments, Self-made — advantaged start, and Founder. The blank biography receives a 55-word short proposal; the complementary long biography contains 125 words in exactly two paragraphs. LinkedIn and first-party Company Website proposals clear the exact-person threshold. One approved active Lawyer tag satisfies its semantic contract with explicit relationship, temporal and taxonomy metadata. No political material is included, and nothing has been compiled or applied."
+  }
+}

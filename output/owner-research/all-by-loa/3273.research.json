@@ -1,0 +1,631 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 3273,
+    "display_name": "Gennady Timchenko",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The immutable record links Gennady Timchenko to Lena. OFAC's current sanctions record identifies the exact yacht name, IMO 9594339 and British Virgin Islands flag as linked to Gennady Nikolayevich Timchenko; a U.S. State Department fact sheet explicitly states that Lena is property in which he has an interest. Forbes, Bloomberg, EU and Novatek records converge on the same 9 November 1952-born Russian energy investor, Volga Group founder, former Gunvor co-owner and Novatek shareholder, excluding namesake or transliteration collision."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "name_suffix",
+      "secondary_nationality",
+      "main_residence_country",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "main_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Russian energy investor, Gunvor co-founder and Volga Group founder with major gas and petrochemical holdings.",
+    "defining_work": "Timchenko built his original fortune through international oil trading at Gunvor, then redeployed capital through Volga Group into Novatek, Sibur and infrastructure assets.",
+    "formative_context": "An electrical engineer by training, he moved from a Leningrad power-equipment plant into Soviet foreign trade and oil-product exports before entering international petroleum trading.",
+    "decisive_moment": "After developing Gunvor into a major commodity trader, he sold his stake and concentrated his capital through the investment platform Volga Group.",
+    "enduring_dimensions": [
+      "Co-founder of oil and commodities trader Gunvor",
+      "Founder and controlling principal of Volga Group",
+      "Major long-term investor in Novatek, Sibur and Russian infrastructure assets"
+    ],
+    "character_detail": "His career moved from technical engineering through commodity operations to concentrated strategic investment.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Begin with the current Volga portfolio and work backward to the Gunvor trading fortune."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Open with the move from electrical engineering into Soviet oil-product exports."
+      },
+      {
+        "mode": "institution_or_asset",
+        "angle": "Lead with Gunvor as the original wealth engine and Volga Group as the reinvestment platform."
+      }
+    ],
+    "excluded_transient_context": [
+      "Lena specifications, value, detention, sanctions status and sale status",
+      "Point-in-time net-worth estimates and public-share prices",
+      "Political relationships, sanctions rationales and unadjudicated allegations",
+      "Transient board and sports-administration posts unrelated to the wealth mechanism",
+      "Family-member assets or transfers not expressly attributed to Timchenko"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "identity_then_origin",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "The short biography identifies the energy-investment arc without valuation or yacht context. The long biography independently develops Timchenko's engineering and export background, Gunvor wealth creation, exit and Volga reinvestment. Political and sanctions context is kept outside the biographies except where necessary for source and identity review."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/gennady-timchenko/",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The current Forbes profile matches the exact name, 1952 birth-year context, Russian citizenship, Moscow residence, Gunvor history and Novatek and Sibur holdings of the resolved Lena-linked person."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "energy",
+    "label": "Energy",
+    "summary": "Timchenko created his original fortune through Russian oil-product exports and co-ownership of Gunvor, an international oil and commodities trader.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Forbes, Bloomberg, government and independent reporting consistently identify oil trading and the Gunvor stake as the original wealth engine, distinct from later reinvestment through Volga Group."
+    },
+    "source_ids": [
+      "S2",
+      "S5",
+      "S7",
+      "S9"
+    ]
+  },
+  "primary_industry": {
+    "classification": "energy",
+    "label": "Energy",
+    "summary": "Natural-gas producer Novatek and petrochemical company Sibur remain the largest identifiable components of Timchenko's current Volga Group investment portfolio.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The current Forbes profile and Bloomberg Billionaires analysis identify Novatek and Sibur as his principal holdings, with Novatek the largest asset. Official Novatek disclosures independently connect Timchenko and Volga Group to the shareholding."
+    },
+    "source_ids": [
+      "S2",
+      "S5",
+      "S6"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Timchenko built the principal fortune through employment in oil exports, international commodity trading and co-founding Gunvor rather than inheriting the core wealth-producing assets; public evidence does not define his starting advantages precisely enough for a narrower subtype.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Forbes and Bloomberg trace a progression from engineering and state foreign-trade roles to international oil trading, Gunvor co-founding and later investment. They identify no inheritance of the principal assets but do not establish enough about access, networks or launch terms to classify the starting position as independent or advantaged."
+    },
+    "source_ids": [
+      "S2",
+      "S5",
+      "S7",
+      "S9"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "investor",
+    "label": "Investor",
+    "summary": "Timchenko now principally holds and allocates capital through Volga Group across Novatek, Sibur and other energy and infrastructure investments, after exiting Gunvor.",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Current Forbes and Bloomberg profiles place the Volga-held investment portfolio at the centre of his identifiable wealth, while official Novatek disclosures confirm Volga Group's ownership relationship. Investor best describes the current asset relationship even though he originally founded an operating trader."
+    },
+    "source_ids": [
+      "S2",
+      "S5",
+      "S6",
+      "S8"
+    ]
+  },
+  "biography": {
+    "plain_text": "Gennady Timchenko is a Russian energy investor who co-founded oil trader Gunvor and later built Volga Group around stakes in gas producer Novatek, petrochemical company Sibur and infrastructure assets. Trained as an electrical engineer, he moved from Soviet industrial and foreign-trade roles into commodity trading, then redeployed proceeds into a concentrated Russian investment portfolio.",
+    "html": "<p>Gennady Timchenko is a Russian energy investor who co-founded oil trader Gunvor and later built Volga Group around stakes in gas producer Novatek, petrochemical company Sibur and infrastructure assets. Trained as an electrical engineer, he moved from Soviet industrial and foreign-trade roles into commodity trading, then redeployed proceeds into a concentrated Russian investment portfolio.</p>\r\n",
+    "word_count": 54,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Current Forbes and Bloomberg profiles and official company disclosures support the Gunvor founding, Volga investment platform, major energy holdings, engineering training and career progression."
+    },
+    "source_ids": [
+      "S2",
+      "S5",
+      "S6",
+      "S7",
+      "S9"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Born in Leninakan, now Gyumri, Timchenko trained as an electrical engineer and began at a Leningrad plant that built power equipment. He later moved into Soviet foreign trade and oil-product exports. After working with a Finnish importer of Russian petroleum, he co-founded Gunvor, developing the commodity trader into the enterprise that first produced his fortune.\n\nTimchenko sold his Gunvor stake in 2014 and concentrated his capital through Volga Group. The investment vehicle holds major interests in natural-gas producer Novatek and petrochemical company Sibur, alongside transport, construction and other assets. Energy therefore remains his primary wealth sector. His present relationship to the assets is principally that of an investor.",
+    "html": "<p>Born in Leninakan, now Gyumri, Timchenko trained as an electrical engineer and began at a Leningrad plant that built power equipment. He later moved into Soviet foreign trade and oil-product exports. After working with a Finnish importer of Russian petroleum, he co-founded Gunvor, developing the commodity trader into the enterprise that first produced his fortune.</p>\r\n<p>Timchenko sold his Gunvor stake in 2014 and concentrated his capital through Volga Group. The investment vehicle holds major interests in natural-gas producer Novatek and petrochemical company Sibur, alongside transport, construction and other assets. Energy therefore remains his primary wealth sector. His present relationship to the assets is principally that of an investor.</p>\r\n",
+    "word_count": 108,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Forbes, Bloomberg, EU and Novatek sources establish the birthplace, training, industrial and foreign-trade career, Gunvor creation and exit, Volga formation and current investment holdings."
+    },
+    "source_ids": [
+      "S2",
+      "S5",
+      "S6",
+      "S7",
+      "S9"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "correct_existing",
+      "field": "first_name",
+      "existing_value": "Gennady ",
+      "value": "Gennady",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Authoritative records consistently spell the given name Gennady without the trailing whitespace present in the immutable structured field."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S7"
+      ]
+    },
+    {
+      "action": "correct_existing",
+      "field": "sort_name",
+      "existing_value": "Gennady  Timchenko",
+      "value": "Timchenko Gennady Nikolayevich",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The immutable first, middle and last-name fields and authoritative full-name records establish the surname-first sort and remove the duplicate whitespace."
+      },
+      "source_ids": [
+        "S1",
+        "S3",
+        "S7"
+      ]
+    },
+    {
+      "action": "correct_existing",
+      "field": "sort_first_name",
+      "existing_value": "Gennady  Timchenko",
+      "value": "Gennady Timchenko",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The exact first and last names establish the first-name sort form and show that the existing duplicate whitespace is erroneous."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "secondary_nationality",
+      "value": "Finnish",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The current EU legal listing identifies Timchenko as a citizen of Russia, Finland and Armenia. Finnish is selected for the single available secondary-nationality field because it is independently and repeatedly documented in public biographies; Armenian citizenship is retained in uncertainties because the schema cannot store a third nationality."
+      },
+      "source_ids": [
+        "S7"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "main_residence_country",
+      "value": "Russian Federation",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The current Forbes profile records Moscow, Russia as Timchenko's residence."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "known_for_title",
+      "value": "Founder of Volga Group and co-founder of Gunvor",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Forbes, Bloomberg and EU records identify the two durable roles that explain Timchenko's current investment platform and original wealth engine."
+      },
+      "source_ids": [
+        "S2",
+        "S5",
+        "S7"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "place_of_birth",
+      "value": "Gyumri",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "EU legal records give Leninakan, USSR, now Gyumri, Armenia, as Timchenko's birthplace; Bloomberg independently records birth in Armenia in 1952."
+      },
+      "source_ids": [
+        "S5",
+        "S7"
+      ]
+    },
+    {
+      "action": "correct_existing",
+      "field": "birth_country",
+      "existing_value": "Russian Federation",
+      "value": "Armenia",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Timchenko was born in Leninakan in the Armenian Soviet Socialist Republic, now Gyumri, Armenia, not in the Russian Federation."
+      },
+      "source_ids": [
+        "S5",
+        "S7"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "biography",
+      "value": "<p>Gennady Timchenko is a Russian energy investor who co-founded oil trader Gunvor and later built Volga Group around stakes in gas producer Novatek, petrochemical company Sibur and infrastructure assets. Trained as an electrical engineer, he moved from Soviet industrial and foreign-trade roles into commodity trading, then redeployed proceeds into a concentrated Russian investment portfolio.</p>\r\n",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The blank biography is filled with a durable, owner-led account of the evidenced wealth mechanism and investment transition, excluding yacht, valuation, political and sanctions material."
+      },
+      "source_ids": [
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S9"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://www.forbes.com/profile/gennady-timchenko/",
+      "verification": "The dedicated current Forbes profile matches Timchenko's name, age, Russian citizenship, Moscow residence, engineering education, Gunvor exit and Novatek and Sibur holdings; type ID 11 is copied from the owner-input lookup.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The exact Forbes identity and wealth profile leaves no material namesake ambiguity."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0234",
+      "name": "Oil & gas",
+      "summary": "Timchenko created material wealth through oil trading and currently holds defining substantial interests in natural-gas producer Novatek and related energy assets.",
+      "relationship_type": "former_oil_trading_co_founder_and_current_major_energy_investor",
+      "temporal_scope": "current",
+      "taxonomy_value": "The owner created material wealth through, controlled substantial operations in, or had a defining long-term operating mandate in Oil & gas.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Forbes, Bloomberg and official Novatek disclosures establish both the original oil-trading wealth mechanism and current substantial gas holdings, directly satisfying the catalogue rule rather than passive incidental exposure."
+      },
+      "source_ids": [
+        "S2",
+        "S5",
+        "S6",
+        "S7"
+      ]
+    },
+    {
+      "tag_id": "tag_0216",
+      "name": "Commodity trading",
+      "summary": "Timchenko co-founded and held a defining long-term ownership and operating role in Gunvor, the commodity trader that created his original fortune.",
+      "relationship_type": "co_founder_and_former_controlling_co_owner_of_gunvor",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "The owner created material wealth through, controlled substantial operations in, or had a defining long-term operating mandate in Commodity trading.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Forbes, Bloomberg and government records directly identify Gunvor co-founding and oil-commodity trading as Timchenko's defining wealth-creation activity, satisfying the catalogue contract rather than a short job or isolated transaction."
+      },
+      "source_ids": [
+        "S2",
+        "S5",
+        "S7",
+        "S9"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=3273",
+      "title": "Gennady Timchenko owner record, person ID 3273",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "immutable person ID and Gennady Timchenko display name",
+        "Russian nationality and 9 November 1952 birth date",
+        "structured name fields and blank researchable details",
+        "Lena owner context used for identity resolution"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/profile/gennady-timchenko/",
+      "title": "Gennady Timchenko",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "verified dedicated Forbes profile",
+        "Moscow residence and Russian citizenship",
+        "oil and gas as source of wealth",
+        "Gunvor stake and exit",
+        "current Novatek and Sibur holdings",
+        "engineering education"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=35963",
+      "title": "OFAC sanctions record for Lena",
+      "publisher": "U.S. Department of the Treasury",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Lena yacht name and IMO 9594339",
+        "British Virgin Islands flag and vessel type",
+        "direct link to Gennady Nikolayevich Timchenko",
+        "exact vessel-to-person identity bridge"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://content.govdelivery.com/attachments/USSTATEBPA/2022/03/24/file_attachments/2112082/FACT%20SHEET%20-%20Targeting%20Elites%20of%20the%20Russian%20Federation.pdf",
+      "title": "Targeting Elites of the Russian Federation",
+      "publisher": "U.S. Department of State",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "official statement that Lena is property in which Gennady Nikolayevich Timchenko has an interest",
+        "direct owner-vessel bridge",
+        "separation of spouse and adult-child records from Timchenko's own assets"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.bloomberg.com/billionaires/profiles/gennady-n-timchenko/",
+      "title": "Bloomberg Billionaires Index: Gennady Timchenko",
+      "publisher": "Bloomberg",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "birth in Armenia in 1952 and electrical-engineering education",
+        "industrial, foreign-trade and oil-export career",
+        "Gunvor co-founding and sale",
+        "Volga Group ownership and investment model",
+        "Novatek and Sibur as major current holdings",
+        "current Moscow-centred Russian business portfolio"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.novatek.ru/en/press/releases/?id_4=1528",
+      "title": "Notification by persons discharging managerial responsibilities",
+      "publisher": "PAO Novatek",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Volga Group as 99.99 percent owned by Novatek director Gennady Timchenko",
+        "direct relationship between Timchenko, Volga Group and Novatek shares",
+        "current-investor relationship corroboration"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32023D1767",
+      "title": "Council Decision concerning restrictive measures",
+      "publisher": "Official Journal of the European Union",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "full name Gennady Nikolayevich Timchenko",
+        "9 November 1952 birth date",
+        "Leninakan, now Gyumri, Armenia birthplace",
+        "Russian, Finnish and Armenian citizenship",
+        "Volga Group founder and shareholder role"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.occrp.org/interactives/russian-asset-tracker/en/person/6/gennady-timchenko/",
+      "title": "Gennady Timchenko",
+      "publisher": "Organized Crime and Corruption Reporting Project",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Lena as an asset linked to Timchenko",
+        "Volga Group investment-portfolio context",
+        "separation of personal, corporate and family-linked assets"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://graphics.thomsonreuters.com/specials/Trading_houses.pdf",
+      "title": "Trading Houses: Gunvor",
+      "publisher": "Reuters",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Timchenko's oil-export and trading career",
+        "Gunvor co-founding and growth",
+        "commodity trading as the defining original wealth mechanism"
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.forbes.com/sites/chasewithorn/2026/03/10/forbes-worlds-billionaires-list-2026-the-top-200/",
+      "title": "Forbes World's Billionaires List 2026: The Top 200",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "current Forbes list inclusion",
+        "Energy industry classification",
+        "Novatek and Sibur stakes as principal present holdings"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Exact identity and Lena bridge",
+      "detail": "OFAC identifies Lena by exact name, IMO and flag as linked to Gennady Nikolayevich Timchenko, and the U.S. State Department expressly states that the yacht is property in which he has an interest. These official records provide a direct vessel-person bridge independent of general yacht reporting. Neither biography includes the vessel or its sanctions status."
+    },
+    {
+      "topic": "Name variants and source-record formatting",
+      "detail": "Authoritative records use Gennady Nikolayevich Timchenko and variants including Gennadiy and Timtchenko. The dossier preserves the upstream display name, proposes removal of a trailing space in first_name and corrects two malformed sort fields. It does not add a suffix or change the established patronymic."
+    },
+    {
+      "topic": "Nationality and birthplace",
+      "detail": "The input incorrectly records Russian Federation as birth country. EU legal records place his birth in Leninakan, Armenian SSR, now Gyumri, Armenia, and list Russian, Finnish and Armenian citizenship. The dossier proposes Armenia as birth country, Gyumri as place, and Finnish as the single available secondary nationality; Armenian citizenship cannot also be represented in the two-nationality website schema."
+    },
+    {
+      "topic": "Residence",
+      "detail": "The current Forbes profile records Moscow, Russia and supports Russian Federation as main residence. Older reporting has associated Timchenko with Finland and Switzerland, but no second current residence is proposed because those reports do not establish present residential primacy."
+    },
+    {
+      "topic": "Wealth origin and state-sector access",
+      "detail": "Timchenko demonstrably built rather than inherited Gunvor and the current investment holdings. His earlier Soviet foreign-trade and oil-export roles supplied relevant industry experience and access, but reviewed sources do not quantify a family platform or launch advantage. The broader Self-made classification avoids forcing an independent or advantaged subtype."
+    },
+    {
+      "topic": "Gunvor exit and current relationship",
+      "detail": "Timchenko sold his Gunvor stake in 2014 and is no longer affiliated with the trader. Commodity trading remains historically defining for wealth creation, while Investor best captures his current relationship to the Volga-held Novatek, Sibur and infrastructure portfolio. The dossier does not treat Gunvor's later activities as his own."
+    },
+    {
+      "topic": "Sanctions and political context",
+      "detail": "Current official records establish sanctions and provide the strongest Lena identity bridge, but sanctions rationales, political relationships, asset restrictions and unadjudicated allegations are excluded from both biographies because they are not necessary to explain the durable wealth mechanism. Their use in the dossier is limited to identity, current-source context and review transparency."
+    },
+    {
+      "topic": "Valuation and ownership percentages",
+      "detail": "Forbes and Bloomberg publish current estimates and identify Novatek as the largest asset, but net worth and percentage stakes are point-in-time. Classifications rely on the relative asset evidence rather than reproducing volatile figures in the biographies."
+    },
+    {
+      "topic": "Social profiles",
+      "detail": "The exact Forbes profile is verified and proposed. No official personal LinkedIn, Instagram or personal website was verified above threshold, and corporate or foundation domains are not substituted for personal profiles."
+    },
+    {
+      "topic": "Taxonomy scope",
+      "detail": "Oil & gas captures the defining historic and current energy exposure; Commodity trading captures the distinct original Gunvor wealth mechanism. Petrochemicals, infrastructure investment, rail transport, construction, sports and philanthropy tags are omitted as overlapping, secondary or outside the minimum useful set."
+    },
+    {
+      "topic": "Scope exclusions",
+      "detail": "The biographies exclude yacht facts, point-in-time valuations, political relationships, sanctions rationales, allegations and family-member assets. Nothing has been compiled, approved or applied to a live system."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Gennady Timchenko is resolved with maximum confidence through official Lena records and convergent Forbes, Bloomberg, EU and company evidence. Energy describes both his original oil-trading fortune and current Novatek and Sibur-centred holdings. Self-made captures the non-inherited creation of Gunvor without guessing the starting-position subtype, while Investor reflects his present Volga Group portfolio relationship. The dossier corrects structured-name spacing, surname-first sorting and birth country; fills Finnish secondary nationality, Russian residence, Gyumri birthplace, known-for title and biography; and proposes the verified Forbes profile. Oil & gas and Commodity trading are the minimum useful approved tags with current and former-but-defining relationships. Sanctions sources are used for identity and review only, not as biography content. No live or compiled change is authorised."
+  }
+}

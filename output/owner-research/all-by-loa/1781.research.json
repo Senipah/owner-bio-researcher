@@ -1,0 +1,215 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1781,
+    "display_name": "Joe Pytka",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The authoritative owner record links person 1781, Joe Pytka, to the 40.78-metre schooner Altair from 2005. Sandeman Yacht Company independently identifies Altair's 2005 buyer as Californian commercials and music-video director Joe Pytka, and Pytka's own professional site describes owning, restoring and racing the same William Fife schooner. Yachting World likewise identified Altair's American owner as the Joe Pytka who made commercials for Nike and McDonald's. DGA, Clio, Los Angeles Times and Pytka's professional site converge on the same Pittsburgh-born advertising filmmaker and production-company founder, eliminating namesake ambiguity. Public yacht history says Altair entered new ownership in 2015, which conflicts with the input's current flag but does not weaken the exact person-vessel-business identity resolution."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": ["Wikipedia"],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "American commercial filmmaker and founder of the independent production company PYTKA.",
+    "defining_work": "Turning documentary-derived direction into a client-funded advertising production business for major international brands.",
+    "formative_context": "Pytka learned filmmaking at WRS Motion Pictures and public television in Pittsburgh before local brewery commercials introduced a paid short-form market.",
+    "decisive_moment": "As international assignments multiplied, he opened his own production company and made commercial direction the core operating platform.",
+    "enduring_dimensions": ["Advertising film direction", "Independent production-company ownership", "Music-video, documentary and feature-film work"],
+    "character_detail": "Pytka remained a hands-on director and camera operator while his production house converted creative assignments into a scalable business.",
+    "opening_options": [
+      {"mode": "present_identity", "angle": "Open with his dual identity as commercial director and production-company founder."},
+      {"mode": "formative_episode", "angle": "Begin with Pittsburgh documentary work and the first brewery commercials."},
+      {"mode": "decisive_event", "angle": "Start with the opening of PYTKA as shoots expanded around the world."}
+    ],
+    "excluded_transient_context": ["Altair ownership status, sale history, specifications and regatta results", "award counts and ceremony details", "changing company revenue, daily fees and production volumes", "private family, property and restaurant information", "unverified social profiles", "source attribution and confidence language"],
+    "source_ids": ["S4", "S5", "S6", "S7", "S8"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": ["creative_industries", "founder_operator"],
+    "notes": "The short biography separates creative reputation from the founder-controlled production mechanism. The long biography opens on Pytka's paid transition from documentary work to commercials, follows the creation of PYTKA and treats later music videos and features as extensions of the advertising platform rather than award-based wealth evidence."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 99, "band": "very_high", "reason": "Forbes-first exact-name searches, including combinations with PYTKA, Altair and Space Jam, found no dedicated Joe Pytka profile or reliable exact-person Forbes feature."}
+  },
+  "wealth_creation_industry": {
+    "classification": "media_entertainment",
+    "label": "Media & Entertainment",
+    "summary": "Pytka's disclosed wealth-producing platform was commercial film production and direction through his own advertising production company.",
+    "confidence": {"score": 99, "band": "very_high", "reason": "Clio states that Pytka opened his own production company as global commercial assignments multiplied. Los Angeles Times reporting identifies Pytka Productions as a commercial-production business and later reports company revenue and paid directing rates, providing a causal business mechanism beyond creative credits or awards."},
+    "source_ids": ["S5", "S6", "S7"]
+  },
+  "primary_industry": {
+    "classification": "media_entertainment",
+    "label": "Media & Entertainment",
+    "summary": "Pytka's continuing professional identity and public portfolio remain centred on commercial filmmaking, production and related screen work.",
+    "confidence": {"score": 95, "band": "very_high", "reason": "Pytka's active professional website presents a broad directing portfolio under his name, while DGA and industry sources consistently identify him with PYTKA and commercial direction. No reliable source establishes a larger current operating sector, though his age and the absence of recent company financial disclosure make the current-business intensity less certain than the historical wealth source."},
+    "source_ids": ["S4", "S8", "S9"]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Pytka progressed from employed documentary work and local commercial assignments to forming and scaling his own production company.",
+    "confidence": {"score": 97, "band": "very_high", "reason": "DGA and ABC trace his career from WRS and WQED documentary work into local brewery commercials. Clio states that the growing volume of international shoots led him to open PYTKA, and Los Angeles Times reporting identifies the brothers' young production company as the operating business. No inherited production company or transferred media asset is documented; sources do not describe starting capital closely enough for an independent-start subtype."},
+    "source_ids": ["S4", "S5", "S6", "S10"]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Pytka founded and directed through the production company that commercialised his advertising-film work.",
+    "confidence": {"score": 99, "band": "very_high", "reason": "Clio directly says he opened his own production company, and contemporaneous Los Angeles Times reporting identifies Joe and John Pytka's Pytka Productions as the company producing client campaigns. This demonstrates founder control of the economic vehicle rather than only salaried directing or royalty participation."},
+    "source_ids": ["S5", "S6", "S7"]
+  },
+  "biography": {
+    "plain_text": "Joe Pytka is an American commercial filmmaker and founder of the production company PYTKA. Beginning with documentaries and local brewery spots, he built a directing business serving major advertisers and produced thousands of commercials. His visual storytelling later extended into music videos and feature films, including Space Jam, while advertising remained his principal commercial platform.",
+    "html": "<p>Joe Pytka is an American commercial filmmaker and founder of the production company PYTKA. Beginning with documentaries and local brewery spots, he built a directing business serving major advertisers and produced thousands of commercials. His visual storytelling later extended into music videos and feature films, including Space Jam, while advertising remained his principal commercial platform.</p>\r\n",
+    "word_count": 55,
+    "confidence": {"score": 99, "band": "very_high", "reason": "DGA, Clio, Los Angeles Times and ABC sources support the documentary origin, local commercials, company formation, large advertising output and extension into music videos and feature films."},
+    "source_ids": ["S4", "S5", "S6", "S7", "S10"]
+  },
+  "long_biography": {
+    "plain_text": "Pytka began behind the camera in Pittsburgh, working at WRS Motion Pictures and making documentaries for public television. Commercials for a local brewery introduced him to short-form advertising and supplied a repeatable paid market for his documentary instincts. As assignments expanded internationally, he opened his own production company, PYTKA, turning directing and production into the business behind his career.\n\nHis company executed campaigns for brands including Pepsi, Nike, McDonald's and Budweiser, combining agency concepts with his own performance-driven filmmaking. Pytka also directed music videos and feature films, most notably Space Jam, which grew from a Nike commercial pairing Michael Jordan with Bugs Bunny. Those projects broadened his cultural reach, but advertising production remained the durable commercial engine: a client-funded directing practice, global shoot network and independently controlled production house.",
+    "html": "<p>Pytka began behind the camera in Pittsburgh, working at WRS Motion Pictures and making documentaries for public television. Commercials for a local brewery introduced him to short-form advertising and supplied a repeatable paid market for his documentary instincts. As assignments expanded internationally, he opened his own production company, PYTKA, turning directing and production into the business behind his career.</p>\r\n<p>His company executed campaigns for brands including Pepsi, Nike, McDonald's and Budweiser, combining agency concepts with his own performance-driven filmmaking. Pytka also directed music videos and feature films, most notably Space Jam, which grew from a Nike commercial pairing Michael Jordan with Bugs Bunny. Those projects broadened his cultural reach, but advertising production remained the durable commercial engine: a client-funded directing practice, global shoot network and independently controlled production house.</p>\r\n",
+    "word_count": 129,
+    "confidence": {"score": 99, "band": "very_high", "reason": "DGA and ABC establish the early career and advertiser work, Clio explains why he opened PYTKA, contemporary Los Angeles Times reporting documents the production-company business, and DGA supports the music-video, commercial and feature-film connections."},
+    "source_ids": ["S4", "S5", "S6", "S7", "S10"]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Founder of PYTKA and commercial film director",
+      "action": "fill_missing",
+      "confidence": {"score": 100, "band": "very_high", "reason": "Clio, DGA and Los Angeles Times reporting establish the production-company founder and defining commercial-director identity."},
+      "source_ids": ["S4", "S5", "S6", "S7"]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {"score": 100, "band": "very_high", "reason": "DGA, Clio, ABC, Los Angeles Times and Pytka's own site consistently identify Joe Pytka and use male pronouns for the exact director and Altair owner."},
+      "source_ids": ["S3", "S4", "S5", "S7", "S10"]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Pittsburgh, Pennsylvania",
+      "action": "fill_missing",
+      "confidence": {"score": 99, "band": "very_high", "reason": "DGA identifies Pytka as Pennsylvania-born and returning to his native Pittsburgh, while Los Angeles Times and IMDb explicitly give Pittsburgh for the exact director."},
+      "source_ids": ["S4", "S7", "S11"]
+    },
+    {
+      "field": "birth_day",
+      "value": "4",
+      "action": "fill_missing",
+      "confidence": {"score": 92, "band": "high", "reason": "IMDb's dedicated exact-person record gives 4 November 1938, consistent with the upstream age-at-date and the 1938 authority form used by multiple biographical sources. No conflicting date was found."},
+      "source_ids": ["S11", "S12"]
+    },
+    {
+      "field": "birth_month",
+      "value": "November",
+      "action": "fill_missing",
+      "confidence": {"score": 92, "band": "high", "reason": "IMDb's dedicated exact-person record gives 4 November 1938, consistent with the upstream age-at-date and the 1938 authority form used by multiple biographical sources. No conflicting date was found."},
+      "source_ids": ["S11", "S12"]
+    },
+    {
+      "field": "birth_year",
+      "value": "1938",
+      "action": "fill_missing",
+      "confidence": {"score": 98, "band": "very_high", "reason": "IMDb gives 4 November 1938; the existing owner record calculated age 81 on 7 May 2020, and Los Angeles Times described him as 59 in September 1997, independently aligning with 1938."},
+      "source_ids": ["S1", "S7", "S11", "S12"]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Joe Pytka is an American commercial filmmaker and founder of the production company PYTKA. Beginning with documentaries and local brewery spots, he built a directing business serving major advertisers and produced thousands of commercials. His visual storytelling later extended into music videos and feature films, including Space Jam, while advertising remained his principal commercial platform.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {"score": 99, "band": "very_high", "reason": "The previously blank biography is filled with a 55-word, owner-led account that makes the advertising-production wealth mechanism explicit and treats film credits as extensions rather than evidence of wealth by themselves."},
+      "source_ids": ["S4", "S5", "S6", "S7", "S10"]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "15",
+      "type": "Personal Website",
+      "url": "https://pytka.com/",
+      "verification": "Joe Pytka's professional site presents his directing portfolio and includes a first-person Altair page that independently matches the owner record; type ID 15 is copied from the owner-input lookup.",
+      "confidence": {"score": 100, "band": "very_high", "reason": "The site joins the exact professional identity, creative portfolio and first-person vessel history and is therefore stronger than an unverified social account."},
+      "source_ids": ["S3", "S8"]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0207",
+      "name": "Advertising",
+      "summary": "Pytka created material wealth and exercised a defining long-term operating mandate through commercial-film direction and his own advertising production company.",
+      "relationship_type": "founder_and_practicing_commercial_director",
+      "temporal_scope": "current",
+      "taxonomy_value": "The owner created material wealth through, controlled substantial operations in, or had a defining long-term operating mandate in Advertising.",
+      "confidence": {"score": 100, "band": "very_high", "reason": "Clio and DGA document thousands of commercial assignments and his independent production company; Los Angeles Times reporting supplies the revenue and paid-services mechanism. This is the central business, not awards or incidental creative exposure."},
+      "source_ids": ["S4", "S5", "S6", "S7"]
+    },
+    {
+      "tag_id": "tag_0224",
+      "name": "Film director",
+      "summary": "Pytka has a sustained and defining practiced role directing commercials, music videos, documentaries and feature films.",
+      "relationship_type": "career_commercial_and_screen_director",
+      "temporal_scope": "current",
+      "taxonomy_value": "Film director is a substantial, recognised, and defining occupation or practiced role in the owner's public identity.",
+      "confidence": {"score": 100, "band": "very_high", "reason": "DGA documents more than four decades of directing across advertising, music videos, documentaries and features, and Pytka's professional site maintains the exact directing portfolio. The tag describes the practiced role, not an award-based inference."},
+      "source_ids": ["S4", "S8", "S9"]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S1", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1781", "title": "Joe Pytka owner record, person ID 1781", "publisher": "Superyacht Network", "tier": 1, "accessed_at": "2026-08-30", "supports": ["immutable person ID and display name", "existing American nationality, United States residence and birth country", "existing calculated age 81 as at 7 May 2020 and Alive status", "authoritative relationship to the 40.78-metre Altair from 2005", "blank biography and most biographical fields"]},
+    {"id": "S2", "url": "https://www.forbes.com/search/?q=Joe%20Pytka", "title": "Forbes search results for Joe Pytka", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-08-30", "supports": ["Forbes-first search process", "no dedicated exact-person profile or reliable feature found"]},
+    {"id": "S3", "url": "https://pytka.com/altair/", "title": "Altair", "publisher": "Joe Pytka", "tier": 1, "accessed_at": "2026-08-30", "supports": ["first-person confirmation that Pytka owned Altair", "restoration of the William Fife schooner", "participation in the Panerai transatlantic race", "exact vessel-person bridge"]},
+    {"id": "S4", "url": "https://www.dga.org/craft/visualhistory/interviews/joe-pytka", "title": "Visual History with Joe Pytka", "publisher": "Directors Guild of America", "tier": 1, "accessed_at": "2026-08-30", "supports": ["exact Joe Pytka professional identity", "Pennsylvania origin and Pittsburgh career", "WRS and WQED documentary work", "transition through local brewery commercials", "sustained commercial, music-video, documentary and feature-film direction", "major advertiser client base", "Space Jam's origin in the Nike Hare Jordan commercial"]},
+    {"id": "S5", "url": "https://clios.com/specialty-oty-awards/the-clio-awards/2011/joe-pytka/", "title": "Joe Pytka", "publisher": "The Clio Awards", "tier": 1, "accessed_at": "2026-08-30", "supports": ["local Pittsburgh brewery commercials", "opening of his own production company PYTKA as global shoots multiplied", "thousands of commercials", "hands-on directing and camera work", "major recurring advertiser clients"]},
+    {"id": "S6", "url": "https://www.latimes.com/archives/la-xpm-1986-06-18-fi-11029-story.html", "title": "Small L.A. Firm Scores Big With TV Ads", "publisher": "Los Angeles Times", "tier": 1, "accessed_at": "2026-08-30", "supports": ["Joe and John Pytka's production-company ownership", "Pytka Productions as a commercial production business", "company role producing advertising campaigns", "young-company operating scale and client work"]},
+    {"id": "S7", "url": "https://www.latimes.com/archives/la-xpm-1997-sep-18-fi-33531-story.html", "title": "The Director Isn't Just Monkeying Around", "publisher": "Los Angeles Times", "tier": 1, "accessed_at": "2026-08-30", "supports": ["Joe Pytka as commercial director and production-company operator", "Pittsburgh birth and documentary origin", "advertising clients and production-company base", "paid directing rate and company revenue as causal business evidence", "Space Jam's development from a Nike commercial", "age 59 in September 1997"]},
+    {"id": "S8", "url": "https://pytka.com/", "title": "Pytka professional portfolio", "publisher": "Joe Pytka", "tier": 1, "accessed_at": "2026-08-30", "supports": ["official professional portfolio", "commercial, film, music-video and personal creative work", "current personal website proposal", "continuing public identity under the Pytka name"]},
+    {"id": "S9", "url": "https://www.oneclub.org/hall-of-fame/-bio/joe-pytka/", "title": "Creative Hall of Fame: Joe Pytka", "publisher": "The One Club for Creativity", "tier": 1, "accessed_at": "2026-08-30", "supports": ["Joe Pytka as a defining commercial director", "sustained career across thousands of advertisements", "major corporate client work", "exact professional identity"]},
+    {"id": "S10", "url": "https://abcnews.com/2020/story?id=124150&page=1", "title": "20/20: Joe Pytka Profile", "publisher": "ABC News", "tier": 1, "accessed_at": "2026-08-30", "supports": ["Joe Pytka as commercial director for major advertisers", "start as a documentary producer", "commercials as his central and preferred filmmaking field", "distinction between commercial work and less central feature films"]},
+    {"id": "S11", "url": "https://www.imdb.com/name/nm0701592/bio/", "title": "Joe Pytka biography", "publisher": "IMDb", "tier": 3, "accessed_at": "2026-08-30", "supports": ["4 November 1938 birth date", "Pittsburgh, Pennsylvania birth place", "exact directing and cinematography identity"]},
+    {"id": "S12", "url": "https://en.wikipedia.org/wiki/Joe_Pytka", "title": "Joe Pytka", "publisher": "Wikipedia", "tier": 3, "accessed_at": "2026-08-30", "supports": ["canonical existing Wikipedia profile", "1938 birth year and Pittsburgh birth place", "discovery-only career consolidation; wealth and biography claims rely on stronger sources"]},
+    {"id": "S13", "url": "https://www.sandemanyachtcompany.co.uk/yacht/718/ALTAIR", "title": "Altair: William Fife III 108 ft Schooner", "publisher": "Sandeman Yacht Company", "tier": 1, "accessed_at": "2026-08-30", "supports": ["Altair purchase in 2005 by Californian commercials and music-video director Joe Pytka", "Pytka's major refit and subsequent sailing programme", "sale into new ownership in 2015", "exact yacht-business-person bridge and current-flag conflict"]},
+    {"id": "S14", "url": "https://www.yachtingworld.com/uncategorized/altair-in-for-surgery-27048", "title": "Altair in for surgery", "publisher": "Yachting World", "tier": 2, "accessed_at": "2026-08-30", "supports": ["American Joe Pytka as Altair's new owner", "identification through Nike and McDonald's commercial work", "planned restoration and sailing programme", "independent yacht-to-business bridge"]}
+  ],
+  "uncertainties": [
+    {"topic": "Identity and vessel bridge", "detail": "Pytka's first-person Altair page and two independent specialist yacht sources directly identify the schooner's owner as the Californian commercial director, making the person resolution conclusive. Sandeman's documented purchase year and the input's 2005 start also align."},
+    {"topic": "Altair ownership status", "detail": "The authoritative input marks Altair current from 2005, but Pytka writes in the past tense that he owned it and Sandeman states that the schooner entered new ownership in 2015. The dossier records this stale-current possibility only as context; it does not alter the immutable owner input or propose a vessel correction."},
+    {"topic": "Wealth mechanism", "detail": "Awards and creative credits establish reputation but not wealth by themselves. The classification instead rests on his independently opened production company, client-funded commercial assignments, reported directing fees and documented company revenue. No current net worth, ownership percentage or royalty stream is inferred."},
+    {"topic": "Current primary industry", "detail": "Pytka's official site remains active and his public identity is still centred on directing, but reviewed sources do not disclose current production volume, company ownership changes or retirement status. Media & Entertainment remains the best-supported current sector at slightly reduced confidence."},
+    {"topic": "Wealth origin", "detail": "Sources trace employed film and television work, local paid commercials and the later creation of PYTKA, with no inherited media asset documented. They do not disclose launch capital or family financial advantages, so the broad Self-made category is used rather than Independent start."},
+    {"topic": "Birth details", "detail": "DGA and Los Angeles Times strongly establish Pittsburgh and the latter's age reference aligns with 1938. IMDb supplies the exact 4 November 1938 date, while multiple discovery sources corroborate 1938. Day and month are proposed at lower confidence than place and year because no first-party date was found."},
+    {"topic": "Social profiles", "detail": "The canonical Wikipedia page is already stored. Pytka's exact first-person professional portfolio is proposed as Personal Website. No dedicated LinkedIn or Instagram profile was verified to the identity threshold."},
+    {"topic": "Taxonomy", "detail": "Advertising captures the material wealth platform and Film director captures the sustained practiced role. Awards, Super Bowl work, music videos and individual brand campaigns do not require separate tags because they are evidence within those two approved semantic groupings."},
+    {"topic": "Scope exclusions", "detail": "The biographies omit Altair details, awards lists, company revenue, directing fees, private assets, family and lifestyle information. No compiled or live change is authorised."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Joe Pytka is resolved conclusively through first-person and specialist Altair evidence tied directly to the commercial director. Media & Entertainment describes both wealth creation and the continuing public professional identity. Self-made reflects the progression from employed documentary work and local commercials to an independent company; Founder captures the economic relationship. The dossier grounds wealth in production-company ownership and paid client work rather than awards. Supported missing gender, birth, known-for and biography fields and the official website are proposed. Advertising and Film director are the minimum useful active tags. The current Altair flag conflicts with a documented 2015 ownership transfer and is left untouched. Nothing has been compiled, approved or applied."
+  }
+}

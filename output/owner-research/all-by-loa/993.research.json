@@ -1,0 +1,386 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 993,
+    "display_name": "Family Hariri",
+    "identity_confidence": {
+      "score": 60,
+      "band": "low",
+      "reason": "The collective label, Lebanese nationality and Saudi Arabia birth-country value are consistent with the family of Rafic Hariri, whose fortune and heirs are extensively documented by Forbes. The vessel context also resolves: Zanzoun's 38.2-metre length, 306-GT volume and vessel identifier match the exact long-held yacht in the authoritative record. However, no open yacht, registry, refit or brokerage source names a Hariri owner, and the source record does not specify one heir, family branch, estate, trust, shipholding company or other legal entity. Person-form values such as male gender and alive status cannot resolve a collective family label, so confidence remains well below the 85-point identity threshold."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "main_residence_country",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "main_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "Family Hariri is a collective label, not a natural person or confirmed legal entity. Forbes documents Rafic Hariri's heirs and differentiated holdings across construction, banking, real estate, media and later investments, but neither those sources nor open yacht records identify which heir, estate vehicle or company stands behind Zanzoun. Person-specific biography and enrichment are therefore withheld.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The source record explicitly uses a family label, while Forbes and yacht sources establish multiple plausible family participants and no named owner-level bridge. Schema v8 has no family record type, making a terminal unresolved placeholder the evidence-safe treatment."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9"
+    ]
+  },
+  "forbes_profile": {
+    "status": "ambiguous",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes-first searches found extensive coverage of the Hariri family and dedicated profiles for individual heirs, including Ayman Hariri, but no dedicated person profile can represent the collective owner label. The family article and individual profiles establish ambiguity rather than a transferable Forbes social URL."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Rafic Hariri's construction enterprise created the best-known family fortune, but the collective yacht-owner label is not resolved to those heirs or to one branch of their assets.",
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Forbes traces the Hariri dynasty's core fortune to Rafic Hariri's Saudi Oger construction group, but person ID 993 contains no independent owner-level identifier linking it to a specified heir, estate or branch. Applying Construction and Engineering to an unidentified collective would overstate the identity evidence."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No single current industry describes an unspecified Hariri family owner spanning differentiated construction, banking, property, media, technology and investment interests.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes documents different post-Rafic roles and asset paths among the heirs, including Saudi Oger, GroupeMed, Arab Bank, real estate, media and venture investing. The collective record does not select one heir or common present-day private platform."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "A collective label spanning a self-made patriarch and inheriting heirs cannot receive one personal wealth-origin classification.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes describes Rafic Hariri as the founder who built Saudi Oger and later family members as heirs who received or sold stakes. Without a specific person or legal owner, both self-made and inherited pathways remain plausible within the label."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No founder, operator, investor, heir, family shareholder or beneficiary relationship can be assigned to an unspecified family collective.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes distinguishes Rafic Hariri's founder role from the inherited stakes, operational responsibilities, sales and investments of individual heirs. The owner record and open yacht sources identify none of those participants or a common holding entity."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=993",
+      "title": "Family Hariri owner record, person ID 993",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Immutable person ID and Family Hariri collective display-name baseline",
+        "Family and Hariri stored in person-name fields",
+        "Lebanese nationality and Saudi Arabia birth-country values",
+        "Male gender and alive-status values attached to a collective label",
+        "Blank biography and social-profile baseline",
+        "Current Zanzoun relationship from 1998 and vessel ID 25198",
+        "Zanzoun 38.2-metre length and 306-GT specification baseline",
+        "Current F22V relationship from February 2005 and vessel ID 47204",
+        "Historical Stella Fiera II relationship from February 2005 to May 2014",
+        "Absence of a named family member, branch, trust, estate or company",
+        "Social-profile type lookup"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/2006/07/21/lebanons-richest-family-cz_ms_0721hariri.html",
+      "title": "Lebanon's Richest Family",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Forbes treatment of the Hariri heirs as a collective family fortune",
+        "Six heirs then listed individually rather than one family profile",
+        "Family investments in Lebanese real estate and banking",
+        "Arab Bank shareholding and differentiated family locations",
+        "Nazek Hariri's separate foundation role"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.forbes.com/forbes/2003/0414/113a.html",
+      "title": "Heir Time",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Rafic Hariri as founder of Saudi Oger",
+        "Saudi Oger construction as the core historical family wealth platform",
+        "Saad Hariri's operating role and telecommunications diversification",
+        "Different founder and successor relationships within the family",
+        "No yacht-owner disclosure"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.forbes.com/profile/ayman-hariri/",
+      "title": "Ayman Hariri",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Dedicated Forbes profile for one individual heir, not the collective label",
+        "Inheritance of a Saudi Oger stake and sale to Saad Hariri",
+        "Separate GroupeMed holding and later sale",
+        "Current venture-investment and technology roles",
+        "Evidence that individual heirs followed different asset paths"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.yachtbuyer.com/en/fleet/zanzoun-125-cantieri-di-pisa",
+      "title": "Zanzoun yacht",
+      "publisher": "YachtBuyer",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Exact 38.2-metre and 306-GT match to the authoritative vessel",
+        "Cantieri di Pisa Akhir 40 delivered in 1984",
+        "Moura, Narana, Longitude Zero and Whispers former names",
+        "2026 refit status",
+        "No owner name or Hariri attribution"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.superyachttimes.com/yachts/zanzoun/overview",
+      "title": "Zanzoun yacht overview",
+      "publisher": "SuperYacht Times",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Zanzoun as a 39.1-metre, 306-GT Cantieri di Pisa yacht",
+        "Matching former-name chain and 1984 build",
+        "Owner identity withheld behind SYT iQ",
+        "No open Hariri family or individual owner bridge"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.vesselfinder.com/vessels/details/1002938",
+      "title": "Zanzoun vessel details, IMO 1002938",
+      "publisher": "VesselFinder",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Zanzoun IMO 1002938 and 306-GT vessel identity",
+        "1985 registry build-year value and approximately 37.4-metre registered length",
+        "Registered-owner field left undisclosed",
+        "No family, individual or company owner name"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.yachtbuyer.com/en-us/news/classic-39m-cantieri-di-pisa-yacht-zanzoun-undergoes-major-refit-at-tersan-shipyard",
+      "title": "Classic 39m Cantieri di Pisa superyacht Zanzoun undergoes major refit",
+      "publisher": "YachtBuyer",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Current major Zanzoun refit in Turkey",
+        "Exact vessel, builder and dimensions",
+        "No beneficial-owner, family or client disclosure"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://tr.linkedin.com/company/alfamarineyachtrefitnewbuilding",
+      "title": "M/Y Zanzoun refit project",
+      "publisher": "ALFA Marine Yacht Refit and New Building",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "First-party account of current Zanzoun structural restoration",
+        "Lloyd's Register and independent wooden-vessel survey involvement",
+        "No client or owner identity"
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://tr.linkedin.com/in/bar%C4%B1%C5%9F-tatar-8428902aa",
+      "title": "Barış Tatar professional profile",
+      "publisher": "LinkedIn",
+      "tier": 4,
+      "accessed_at": "2026-08-30",
+      "supports": [
+        "Employment line associating M/Y Zanzoun with Sentinel Transcontinental Maritime LLC",
+        "Possible current management or employing entity",
+        "No evidence that Sentinel or the profile holder is the beneficial owner",
+        "No Hariri connection"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Record type",
+      "detail": "Family Hariri is explicitly a collective family label rather than a natural person. Schema v8 has no family record type, and no reliable source establishes one continuing legal entity corresponding to the label, so unresolved_placeholder is the appropriate terminal classification rather than person or institution."
+    },
+    {
+      "topic": "Family scope",
+      "detail": "Forbes material strongly suggests the label refers to Rafic Hariri's family, but the owner record does not specify whether it means his widow, all heirs, one child, an estate, a trust, a family office or a shipholding company. The family has multiple branches and individually held assets."
+    },
+    {
+      "topic": "Person-form demographic fields",
+      "detail": "Lebanese nationality and Saudi Arabia birth-country values are broadly compatible with members of the Hariri family, but male gender and Alive mortality status cannot describe a family collective. None of these stored values selects one individual, and no demographic correction or proposal is made."
+    },
+    {
+      "topic": "Zanzoun ownership",
+      "detail": "Zanzoun resolves conclusively through vessel ID 25198, 38.2-metre length, 306-GT volume, build history and current refit. Public directories, registry pages, refit reporting and contractor material omit the owner, and none independently links the yacht to a Hariri family member or entity."
+    },
+    {
+      "topic": "Management company",
+      "detail": "A crew member's LinkedIn employment line associates M/Y Zanzoun with Sentinel Transcontinental Maritime LLC. That may identify an employer, manager or contracting entity, but it neither proves registered or beneficial ownership nor connects the yacht to the Hariri family."
+    },
+    {
+      "topic": "Other vessel relationships",
+      "detail": "The input also links the collective label to F22V and historically to Stella Fiera II. Open sources identify those yachts but do not disclose a Hariri owner. F22V's crew history and current sales material suggest recent transaction activity, while the source still marks it current, adding chronology uncertainty rather than resolving the family identity."
+    },
+    {
+      "topic": "Family wealth",
+      "detail": "Forbes establishes that Rafic Hariri built a construction fortune through Saudi Oger and that heirs later held or sold interests across banking, property, media, telecommunications, technology and investments. Those facts explain the likely family context but cannot support one set of person-level wealth classifications for an unidentified collective."
+    },
+    {
+      "topic": "Forbes profiles",
+      "detail": "Forbes has dedicated profiles for individual Hariri heirs and family-level articles, but no single personal profile represents Family Hariri. Ayman Hariri's verified page is evidence of branch ambiguity and cannot be proposed as the source record's Forbes social link."
+    },
+    {
+      "topic": "Tags and social profiles",
+      "detail": "No approved active tag or social profile can be assigned without selecting a specific natural person or legal entity. Construction, banking, real estate, technology and investment tags would transfer branch-level facts to an unresolved collective, so proposed tags and socials remain empty."
+    },
+    {
+      "topic": "Biography withholding",
+      "detail": "Schema-v8 short and long biographies are intentionally null. A family overview would not be a natural-person biography, while an institutional profile would falsely imply that the label denotes a continuing legal body. The editorial note records the family context without creating importable biography text."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal unresolved-placeholder dossier. The broader Rafic Hariri family context is plausible and well documented, and Zanzoun's vessel identity is exact, but no strong source maps person ID 993 to a particular heir, estate, trust, company or other legal owner. Keep biographies, personal details, socials, tags and all four wealth dimensions unresolved. Reopen only if a registry filing, named brokerage disclosure, family-office document or equivalent strong source identifies the party behind Zanzoun. Nothing has been compiled or applied."
+  }
+}

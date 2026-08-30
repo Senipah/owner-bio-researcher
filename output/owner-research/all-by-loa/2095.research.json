@@ -1,0 +1,337 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 2095,
+    "display_name": "Joan Subirats Berenguer",
+    "identity_confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "The authoritative owner record identifies Spanish Joan Subirats Berenguer and links him to the 37.95-metre Takara One from November 2015. The exact, uncommon full name resolves in official company, Spanish government and commercial-register records to the Catalan founder of Subirats Bureau and SB Hotels, with matching Spain and Tortosa/Tarragona/Barcelona geography. An exact LinkedIn profile independently joins the full name to SB Grup and SB Hotels. Public yacht sources confirm Takara One's name, 37.95-metre length and 314-GT volume, but do not name the natural person behind its registered owning company. The rare full-name and multi-source corporate identity make a namesake collision unlikely, while the absent public vessel-to-person naming limits confidence to high."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Joan Subirats Berenguer is a Catalan entrepreneur who founded the diversified property, hotel and restaurant group now known as Subirats Bureau.",
+    "defining_work": "He began with residential development and construction, then established SB Hotels and later added large-format restaurant ventures in Barcelona.",
+    "formative_context": "Starting in the Ebro region, Subirats used property development as the platform for geographic expansion through Tarragona, Barcelona and Madrid.",
+    "decisive_moment": "Creating the hotel division transformed a regional property developer into a hospitality group whose owned real estate and operating businesses became the portfolio's dominant current strand.",
+    "enduring_dimensions": ["Founder of Subirats Bureau and SB Immobiliària", "Builder of the SB Hotels urban hotel chain", "Property developer who diversified into restaurants and gastronomy"],
+    "character_detail": "Subirats's career is marked by long-horizon diversification: he repeatedly paired property development with the operating businesses housed in those assets, then formalised succession through an honorary presidency.",
+    "opening_options": [
+      {"mode": "present_identity", "angle": "Open with Subirats as the honorary president and founder of a Catalan property and hospitality group."},
+      {"mode": "institution_or_asset", "angle": "Begin with SB Immobiliària as the enterprise from which hotels and restaurant operations developed."},
+      {"mode": "decisive_event", "angle": "Lead with the move from residential development into hotel operations and trace the resulting diversification."}
+    ],
+    "excluded_transient_context": ["Takara One or Jules ownership, specifications, charter activity and private use", "Group assets, revenue or dividends treated as personal net worth", "Current room rates, hotel occupancy and short-term tourism performance", "Private family life or unverified succession mechanics", "Source attribution and identity-resolution discussion"],
+    "source_ids": ["S3", "S4", "S5", "S6", "S7", "S8"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 4,
+    "opening_mode": "present_identity",
+    "narrative_shape": "identity_then_origin",
+    "calibration_archetypes": ["founder_operator"],
+    "notes": "The short biography leads with the founder's durable identity and succession status; the longer biography independently traces the property platform, hotel diversification and later restaurant expansion. Both exclude vessel evidence, corporate finances as personal wealth and unsupported birth details."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Forbes-first searches using Joan Subirats Berenguer, Subirats Bureau, SB Hotels, Takara One and Jules found no exact Forbes personal profile. No result for the unrelated Barcelona politician and academic Joan Subirats was substituted."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "Subirats created his business platform through residential property development and construction, later using the resulting real-estate base to diversify into hotels and restaurants.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Official group histories state that Subirats began in 1975 by creating SB Immobiliària for real-estate development and construction. The group reports more than 3,700 homes developed, while Spanish government agreements identify him as chairman and chief executive representative of the property company. Independent current reporting documents a substantial real-estate asset base and continuing development pipeline, establishing property as the original causal wealth engine."
+    },
+    "source_ids": ["S3", "S4", "S5", "S7"]
+  },
+  "primary_industry": {
+    "classification": "hospitality",
+    "label": "Hospitality",
+    "summary": "Hospitality is the group's dominant current operating industry through SB Hotels' urban hotel network and associated Barcelona restaurant businesses.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Current independent reporting describes SB as a ten-hotel chain with nearly 100 million euros of consolidated revenue in 2023 and also identifies its restaurant operations. The official group history traces the hotel division's creation and later restaurant diversification, while the current commercial register classifies Subirats Bureau's active management structure and confirms Subirats remains a director and honorary president. Real estate remains material, but the operating group's scale and public identity are now led by hospitality."
+    },
+    "source_ids": ["S3", "S4", "S6", "S7"]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Subirats founded SB Immobiliària through his own initiative and expanded it over five decades into a multi-sector property and hospitality group.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Official Subirats Bureau materials describe the enterprise as born from Joan Subirats Berenguer's initiative and leadership and identify him as founder. They trace his start in property development, subsequent hotel creation and restaurant diversification. No strong source indicates an inherited operating company or controlling fortune as the platform for this business."
+    },
+    "source_ids": ["S3", "S4", "S8"]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Founder best captures Subirats's relationship to wealth because he created the original property company and led the group through its hotel and restaurant expansion before moving to an honorary presidency.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Multiple official group publications directly call Joan Subirats Berenguer the founder, while government agreements and commercial-register records document his chair, chief-executive, director and later honorary-president roles. The evidence establishes enterprise formation and long-term operating leadership rather than passive investment or inherited ownership."
+    },
+    "source_ids": ["S3", "S4", "S5", "S6", "S8"]
+  },
+  "biography": {
+    "plain_text": "Joan Subirats Berenguer is a Catalan entrepreneur who founded the group now known as Subirats Bureau. Beginning in property development and construction, he expanded into SB Hotels and restaurant businesses across Catalonia and Madrid. After five decades as chairman, he became honorary president while remaining a director, with the next generation taking executive leadership.",
+    "html": "<p>Joan Subirats Berenguer is a Catalan entrepreneur who founded the group now known as Subirats Bureau. Beginning in property development and construction, he expanded into SB Hotels and restaurant businesses across Catalonia and Madrid. After five decades as chairman, he became honorary president while remaining a director, with the next generation taking executive leadership.</p>\r\n",
+    "word_count": 54,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "The 54-word biography is supported by official group histories, the 2025 Spanish commercial register and independent reporting on the group's property, hotel and restaurant operations. It distinguishes Subirats's honorary presidency from Gerard Subirats Gonfaus's current chairmanship and excludes the yacht and personal-wealth estimates."
+    },
+    "source_ids": ["S3", "S4", "S6", "S7", "S8"]
+  },
+  "long_biography": {
+    "plain_text": "Subirats began building his enterprise in Tortosa in 1975, creating SB Immobiliària for residential development and construction. The company expanded from the Ebro region to Tarragona and Barcelona, ultimately delivering thousands of homes. Thirteen years later he diversified into hotels, developing a chain of urban properties under the SB Hotels name.\n\nRestaurant ventures including El Nacional Barcelona and LomoAlto broadened the portfolio, while the businesses were unified as Subirats Bureau. The group expanded across hotels, property development and gastronomy. In 2025, Subirats moved from chairman to honorary president and remained a director as Gerard Subirats Gonfaus became chairman.",
+    "html": "<p>Subirats began building his enterprise in Tortosa in 1975, creating SB Immobiliària for residential development and construction. The company expanded from the Ebro region to Tarragona and Barcelona, ultimately delivering thousands of homes. Thirteen years later he diversified into hotels, developing a chain of urban properties under the SB Hotels name.</p>\r\n<p>Restaurant ventures including El Nacional Barcelona and LomoAlto broadened the portfolio, while the businesses were unified as Subirats Bureau. The group expanded across hotels, property development and gastronomy. In 2025, Subirats moved from chairman to honorary president and remained a director as Gerard Subirats Gonfaus became chairman.</p>\r\n",
+    "word_count": 98,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "The 98-word, two-paragraph biography follows the official group chronology, government property-company evidence, current commercial-register succession record and independent scale reporting. It uses two years only, keeps the business strands causally distinct and avoids transient operating metrics or private-vessel context."
+    },
+    "source_ids": ["S3", "S4", "S5", "S6", "S7", "S8"]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Subirats Bureau founder and honorary president",
+      "action": "fill_missing",
+      "confidence": {"score": 100, "band": "very_high", "reason": "Official group histories identify Subirats as founder, and the 2025 Spanish commercial register records his current honorary-president and director appointments."},
+      "source_ids": ["S3", "S4", "S6"]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {"score": 100, "band": "very_high", "reason": "Spanish and Catalan government, company and commercial-register records consistently use the male honorific and pronouns for the exact Joan Subirats Berenguer."},
+      "source_ids": ["S3", "S5", "S6"]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Joan Subirats Berenguer is a Catalan entrepreneur who founded the group now known as Subirats Bureau. Beginning in property development and construction, he expanded into SB Hotels and restaurant businesses across Catalonia and Madrid. After five decades as chairman, he became honorary president while remaining a director, with the next generation taking executive leadership.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {"score": 98, "band": "very_high", "reason": "The 54-word biography fills the blank field with a durable, source-invisible account of the founder's property, hotel and restaurant expansion and current succession status while excluding vessel and wealth-valuation details."},
+      "source_ids": ["S3", "S4", "S6", "S7", "S8"]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "5",
+      "type": "LinkedIn",
+      "url": "https://es.linkedin.com/in/joan-subirats-berenguer-613544128",
+      "verification": "The profile uses the exact full name Joan Subirats Berenguer and identifies SB GRUP / SB Hotels Spain at the group's Avenida Pearson address. The uncommon full name, company and location match the official founder record; type ID 5 is copied from the owner-input lookup.",
+      "confidence": {"score": 96, "band": "very_high", "reason": "Exact full-name and defining-company matches make the profile collision-safe despite limited public activity and a Madrid location label."},
+      "source_ids": ["S2", "S3", "S4"]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://subirats.net/en/",
+      "verification": "This is the official website of Subirats Bureau, whose publications directly identify Joan Subirats Berenguer as founder and trace the group he built; type ID 14 is copied from the owner-input lookup.",
+      "confidence": {"score": 100, "band": "very_high", "reason": "The official group site is the authoritative website for Subirats's defining enterprise and contains exact-name founder materials."},
+      "source_ids": ["S3", "S4", "S8"]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0997",
+      "name": "Residential development",
+      "summary": "Residential development is historically and currently defining because Subirats founded SB Immobiliària and built a multi-decade portfolio encompassing thousands of homes and an active land reserve.",
+      "relationship_type": "founder and long-term property-development operator",
+      "temporal_scope": "current",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official group materials trace Subirats's start in residential property and report more than 3,700 homes delivered. Spanish government agreements identify him as the property company's chairman and chief executive representative, while current independent reporting confirms continuing development activity and land inventory."
+      },
+      "source_ids": ["S3", "S5", "S7", "S8"],
+      "taxonomy_value": "The owner created material wealth through, controlled substantial operations in, or had a defining long-term operating mandate in Residential development."
+    },
+    {
+      "tag_id": "tag_0321",
+      "name": "Hotel operations",
+      "summary": "Hotel operations are defining through Subirats's creation and long-term leadership of SB Hotels, now a substantial multi-city operating chain.",
+      "relationship_type": "founder and long-term controller of an urban hotel chain",
+      "temporal_scope": "current",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official histories state that Subirats created the hotel division to diversify the property group. Current independent reporting documents ten operating hotels, significant consolidated revenue and his founder relationship, satisfying the catalogue threshold for substantial, defining hotel operations."
+      },
+      "source_ids": ["S3", "S4", "S7", "S8"],
+      "taxonomy_value": "The owner created material wealth through, controlled substantial operations in, or had a defining long-term operating mandate in Hotel operations."
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=2095",
+      "title": "Joan Subirats Berenguer owner record, person ID 2095",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["immutable person ID and exact upstream display name", "Spanish nationality, Spain residence and Spain birth country", "authoritative current Takara One relationship from November 2015", "current Jules relationship from 2025", "37.95-metre and 314-GT Takara One specification", "blank biography, known-for, gender and birth-date fields", "absence of stored social profiles"]
+    },
+    {
+      "id": "S2",
+      "url": "https://es.linkedin.com/in/joan-subirats-berenguer-613544128",
+      "title": "Joan Subirats Berenguer - SB GRUP SB Hotels Spain",
+      "publisher": "LinkedIn",
+      "tier": 3,
+      "accessed_at": "2026-08-30",
+      "supports": ["exact full name", "SB GRUP and SB Hotels Spain affiliation", "Avenida Pearson group-address reference", "collision-safe LinkedIn proposal", "distinction from the unrelated academic and politician Joan Subirats"]
+    },
+    {
+      "id": "S3",
+      "url": "https://subirats.net/wp-content/uploads/2023/03/SUBIRATS_DOSSIER_2023_ENG_feb23.pdf",
+      "title": "Subirats Bureau professional development",
+      "publisher": "Subirats Bureau",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["Joan Subirats Berenguer as Catalan entrepreneur, founder and then-chairman", "enterprise start in the Ebro area in 1975", "real-estate development and construction origin", "hotel and restaurant diversification", "more than 800 employees", "geographic expansion", "more than 3,700 homes and 565,000 square metres built"]
+    },
+    {
+      "id": "S4",
+      "url": "https://subirats.net/en/subirats-bureau-is-honoured-with-the-best-business-track-record-award/",
+      "title": "Subirats Bureau is honoured with the Best Business Track Record award",
+      "publisher": "Subirats Bureau",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["exact-name founder identity", "2019 business-career recognition", "property development, construction, hotel and restaurant expansion", "Tortosa and Ebro-region origins", "800-person group scale", "operations across Tarragona, Barcelona and Girona"]
+    },
+    {
+      "id": "S5",
+      "url": "https://incasol.gencat.cat/web/.content/01_home_continguts/1-incasol/6-anuncis_convenis/convenis/convenis_no_urbanistics/conveni_vilanova_geltru_s_b_immobiliaria_sa.pdf",
+      "title": "Second addendum to the INCASÒL and SB Immobiliària land agreement",
+      "publisher": "Institut Català del Sòl, Generalitat de Catalunya",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["exact full name and adult male identity", "Tarragona business address", "Joan Subirats Berenguer acting for Subirats Berenguer Immobiliària", "chairman and chief-executive authority", "large property-development holdings in Vilanova i la Geltrú", "official real-estate operating evidence"]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2025-44-08&lang=es",
+      "title": "BORME Barcelona company acts, 5 March 2025",
+      "publisher": "Boletín Oficial del Estado",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["exact full-name Subirats Bureau identity", "end of Joan Subirats Berenguer's president appointment", "new director and honorary-president appointments", "Gerard Subirats Gonfaus as new president", "current succession and governance distinction"]
+    },
+    {
+      "id": "S7",
+      "url": "https://cronicaglobal.elespanol.com/business/confidente-vip/20250224/la-hotelera-sb-de-barcelona-beneficio-millones/926407391_0.html",
+      "title": "La cadena hotelera SB, de Barcelona, alcanza un beneficio récord de 24 millones",
+      "publisher": "Crónica Global",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": ["Joan Subirats Berenguer as founder and then-president", "ten-hotel SB network", "2023 revenue, profit and employee scale", "243 million euros of corporate assets and 189 million euros of equity", "continuing residential development and land reserve", "3,700 homes built", "El Nacional and LomoAlto restaurant operations", "company financial scale without treating assets as personal wealth"]
+    },
+    {
+      "id": "S8",
+      "url": "https://subirats.net/wp-content/uploads/2017/12/De-SB-Grup-to-Subirats-Bureau_ENG.pdf",
+      "title": "From SB Grup to Subirats Bureau",
+      "publisher": "Subirats Bureau",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["group founded through Joan Subirats Berenguer's initiative and leadership", "1975 creation of SB Immobiliària", "1988 creation of SB Hotels", "2013 entry into restaurant operations", "El Nacional and LomoAlto/LomoBajo development", "holding-company rebrand and founder identity"]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.superyachttimes.com/yachts/takara-one/overview",
+      "title": "Takara One yacht overview",
+      "publisher": "SuperYacht Times",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["exact Takara One name", "37.95-metre length and 314-GT volume", "Sanlorenzo build and 2016 delivery", "owner identity available only in subscriber product", "public absence of a named natural-person owner"]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Identity and Takara One bridge",
+      "detail": "The uncommon exact full name, Spanish nationality and residence, exact SB business references, government agreements, official register records and matching LinkedIn profile resolve the public business identity at high confidence. The authoritative owner record links that person to Takara One from November 2015. Public yacht pages confirm the exact 37.95-metre, 314-GT vessel but hide or omit the natural-person owner, so no independent public legal-title or beneficial-owner chain was established."
+    },
+    {
+      "topic": "Jules relationship",
+      "detail": "The authoritative owner input also records Joan Subirats Berenguer as a current owner of the 36.9-metre Jules from 2025. That secondary vessel did not contribute to identity resolution or biography content and was not used to infer family, business or wealth facts."
+    },
+    {
+      "topic": "Namesake control",
+      "detail": "Joan Subirats is also the name of a prominent Barcelona academic and former government minister, alongside numerous other professionals. Only exact Joan Subirats Berenguer results tied to Subirats Bureau, SB Immobiliària or SB Hotels were used; no political, academic or unrelated LinkedIn facts were transferred."
+    },
+    {
+      "topic": "Forbes profile",
+      "detail": "No exact Forbes profile was found after Forbes-first searches across the full name, Subirats Bureau, SB Hotels and both vessels. No namesake or company article is proposed as a profile."
+    },
+    {
+      "topic": "Current role and succession",
+      "detail": "Company materials through 2023 called Subirats current chairman. The March 2025 commercial register supersedes that wording: he ceased as president, remained a director and became honorary president while Gerard Subirats Gonfaus became president. The dossier uses the current official distinction and does not describe Joan as chief executive."
+    },
+    {
+      "topic": "Ownership and personal wealth",
+      "detail": "Independent reporting calls Joan Subirats the proprietor and details company assets, equity, dividends and profits. These establish material enterprise scale but are not personal net-worth figures. The precise current shareholding, ownership split with relatives and succession-transfer mechanics are not public and are not asserted."
+    },
+    {
+      "topic": "Industry classifications",
+      "detail": "Real Estate is wealth creation because Subirats began with residential development and construction and built thousands of homes. Hospitality is current primary because the ten-hotel network dominates present operating scale and public identity, with restaurants a smaller associated business. The group remains diversified, so this classification describes the leading current operating industry rather than an exclusive activity."
+    },
+    {
+      "topic": "Wealth origin",
+      "detail": "Self-made reflects official descriptions of the group arising from Subirats's initiative and leadership and his documented creation of SB Immobiliària. Public sources do not expose his family finances or startup capital, so the classification does not claim an absence of all family advantage; it states that no inherited operating enterprise or fortune is evidenced as the primary platform."
+    },
+    {
+      "topic": "Taxonomy",
+      "detail": "Residential development and Hotel operations are the minimum useful approved active tags. They capture the founder's original wealth platform and the group's dominant current business. Restaurant groups, commercial real estate, hospitality real estate and Property developer are omitted to avoid redundant or less precisely evidenced grouping."
+    },
+    {
+      "topic": "Social profiles",
+      "detail": "The exact-name LinkedIn profile is proposed because it matches SB Grup/SB Hotels and the Avenida Pearson group address despite its Madrid location label. The official Subirats Bureau site is proposed as Company Website. No collision-safe Instagram, Facebook, X/Twitter, TikTok, YouTube, Wikipedia page or personal website was verified."
+    },
+    {
+      "topic": "Birth details",
+      "detail": "Official sources establish that Subirats is a Catalan businessman and repeatedly connect the enterprise to Tortosa, but they do not state that Tortosa was his birthplace or provide a birth date. Place of birth, day, month and year therefore remain unproposed; Spain remains the authoritative birth country."
+    },
+    {
+      "topic": "Biography exclusions",
+      "detail": "The blank upstream biography is filled with a durable account of enterprise formation, diversification and succession. Both vessels, company financial figures, current hotel performance, private family life and identity-resolution language are excluded."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier. Joan Subirats Berenguer is resolved at 90 through the rare exact name, Spanish and Catalan geography, official government and commercial-register records, company founder histories and exact LinkedIn affiliation. Public yacht pages do not name Takara One's natural-person owner, so that gap remains explicit. Real Estate is the wealth-creation industry; Hospitality is current primary; Self-made and Founder reflect the documented enterprise origin. Residential development and Hotel operations are the only minimum useful active tags with catalogue-exact semantic metadata. A known-for title, Male gender, a 54-word biography, exact LinkedIn and official Company Website are proposed. Birth date/place, current ownership percentages and beneficial-vessel title remain bounded. Nothing has been compiled, approved or applied."
+  }
+}

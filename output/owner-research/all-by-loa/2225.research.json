@@ -1,0 +1,341 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 2225,
+    "display_name": "Paul Emile van Es",
+    "identity_confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The authoritative record identifies Dutch Paul Emile van Es and links him to the 37.98-metre Sidarta from September 2014. Dun & Bradstreet independently names the exact Paul Emile van Es as director and key principal of PVE Holding at the present Van Es Group address in Oosterhout. NPM Capital identifies the matching Paul van Es, born in 1950, as Dieseko Holding's founder, while the upstream age field is independently consistent with that year. A public report records the sale of the exact 37.9-metre Sidarta I in the same September 2014 window, although it does not name the buyer. The full-name, company, geography, birth-year and unusually exact vessel-event anchors exclude ordinary namesakes, while the absent public buyer name prevents a very-high score."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["secondary_nationality", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Paul Emile van Es is a Dutch industrial entrepreneur who founded the foundation-equipment business that became Dieseko Holding and developed the wider Van Es Group.",
+    "defining_work": "He built operations spanning hydraulic foundation machinery, crawler cranes, jack-up platforms, offshore support vessels and heavy marine logistics.",
+    "formative_context": "His PVE brand grew from specialist piling and vibratory equipment into an international industrial platform serving construction, mining and offshore markets.",
+    "decisive_moment": "Dieseko's expansion established a commercially valuable equipment group; after NPM Capital acquired a majority stake, van Es returned to its supervisory board as founder and adviser.",
+    "enduring_dimensions": ["Founder of Dieseko Holding and the PVE equipment platform", "Builder of an international offshore and marine-services portfolio", "Engineer-inventor associated with patented high-wall mining machinery"],
+    "character_detail": "Van Es combined company building with hands-on machinery development, including patented conveyor systems and equipment adapted for difficult foundation, mining and offshore work.",
+    "opening_options": [
+      {"mode": "present_identity", "angle": "Open with van Es as the Dutch founder behind an industrial and offshore-services group."},
+      {"mode": "institution_or_asset", "angle": "Begin with the PVE foundation-equipment business and trace its expansion into marine and offshore operations."},
+      {"mode": "defining_achievement", "angle": "Lead with van Es's machinery-development work before connecting it to the wider business portfolio."}
+    ],
+    "excluded_transient_context": ["Sidarta ownership, sale timing, specifications and private use", "Corporate fleet values treated as personal wealth", "Short-term offshore-cycle commentary and current project backlog", "Unverified LinkedIn profiles belonging to other Paul van Es namesakes", "Source attribution and identity-resolution discussion"],
+    "source_ids": ["S3", "S4", "S5", "S6", "S7", "S8", "S9"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 4,
+    "opening_mode": "present_identity",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": ["founder_operator"],
+    "notes": "The short biography establishes the founder, industrial and offshore identity; the longer biography independently develops the equipment origin, technical work and portfolio expansion. Both exclude the private vessel, estimated net worth and unsupported current ownership percentages."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Forbes-first searches using Paul Emile van Es, Paul van Es, PVE Holding, Dieseko, Van Es Group and Sidarta found no exact Forbes personal profile. No namesake or company article is substituted as a profile."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "construction_engineering",
+    "label": "Construction & Engineering",
+    "summary": "Van Es created wealth by founding and developing a specialist foundation-equipment manufacturer and rental platform before extending it into cranes, mining machinery and offshore engineering.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "NPM Capital identifies van Es as Dieseko Holding's founder and describes Dieseko as a manufacturer and world market leader in hydraulic vibratory hammers and power packs. Contemporary industry coverage describes the PVE platform as a foundation-equipment and heavy-machinery business, while patent records document van Es's direct participation in mining-equipment engineering. These sources establish construction equipment and engineering as the original causal wealth engine rather than merely a later holding."
+    },
+    "source_ids": ["S4", "S7", "S8"]
+  },
+  "primary_industry": {
+    "classification": "shipping_maritime",
+    "label": "Shipping & Maritime",
+    "summary": "The current Van Es Group is centred on offshore and marine-service investments, including jack-up platforms, heavy-lift cranes, work barges and maritime logistics.",
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "The current Van Es Group describes its headquarters as a platform for offshore and energy-transition companies and lists businesses in jack-up barges, offshore drilling, marine logistics, heavy-lift cranes and engineering. Its World Wide Equipment business operates a fleet of barges and support vessels across offshore, civil-construction, salvage and decommissioning work. D&B independently links exact-name principal Paul Emile van Es and PVE Holding to the same Oosterhout address and operating website."
+    },
+    "source_ids": ["S3", "S5", "S6", "S9"]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Van Es founded Dieseko Holding and built the PVE industrial platform into a broader international equipment and offshore group.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "NPM Capital directly identifies van Es as the founder who stood at the basis of Dieseko Holding. Independent business and local-industry accounts likewise describe him as the founder and link his initials to the PVE brand. No strong source indicates that he inherited the operating platform or a controlling family fortune."
+    },
+    "source_ids": ["S4", "S7", "S10"]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Founder best describes van Es's relationship to wealth because he established Dieseko's predecessor platform and remained connected through PVE Holding, offshore ventures and later supervisory leadership.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The founding relationship is explicit in NPM Capital's account and corroborated by specialist and local industry histories. D&B identifies the exact Paul Emile van Es as PVE Holding's director and key principal, and offshore trade coverage names Paul van Es Holding in substantial ventures. The evidence is stronger for founder than for passive investor, inheritor or hired executive."
+    },
+    "source_ids": ["S3", "S4", "S7", "S9", "S10"]
+  },
+  "biography": {
+    "plain_text": "Paul Emile van Es is a Dutch industrial entrepreneur who founded Dieseko Holding, a maker of hydraulic foundation equipment, and built a wider offshore-services group. His businesses have spanned heavy cranes, jack-up platforms, work barges and maritime support. He later advised Dieseko after a majority investment, bringing experience in engineering and international markets.",
+    "html": "<p>Paul Emile van Es is a Dutch industrial entrepreneur who founded Dieseko Holding, a maker of hydraulic foundation equipment, and built a wider offshore-services group. His businesses have spanned heavy cranes, jack-up platforms, work barges and maritime support. He later advised Dieseko after a majority investment, bringing experience in engineering and international markets.</p>\r\n",
+    "word_count": 53,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "The 53-word biography is supported by NPM Capital's founder and supervisory-board account, current Van Es Group portfolio descriptions, D&B's exact-name principal record and marine-industry coverage. It omits the private vessel, personal net-worth estimates and unsupported present ownership percentages."
+    },
+    "source_ids": ["S3", "S4", "S5", "S6", "S9"]
+  },
+  "long_biography": {
+    "plain_text": "Van Es established the business that became Dieseko Holding, initially developing and supplying hydraulic vibratory hammers and power packs for foundation work. His initials formed the PVE brand. The company grew around specialist engineering, equipment rental and international operations, while he also worked on patented conveyor systems for high-wall mining and helped adapt heavy machinery for commercial use.\n\nThe wider Van Es Group expanded into crawler cranes, jack-up platforms, offshore drilling, work barges and marine logistics. Its companies have supported energy, civil-construction, salvage and decommissioning projects across international markets. After NPM Capital acquired a majority stake in Dieseko, van Es joined its supervisory board, contributing founder knowledge and experience in product development and diversification.",
+    "html": "<p>Van Es established the business that became Dieseko Holding, initially developing and supplying hydraulic vibratory hammers and power packs for foundation work. His initials formed the PVE brand. The company grew around specialist engineering, equipment rental and international operations, while he also worked on patented conveyor systems for high-wall mining and helped adapt heavy machinery for commercial use.</p>\r\n<p>The wider Van Es Group expanded into crawler cranes, jack-up platforms, offshore drilling, work barges and marine logistics. Its companies have supported energy, civil-construction, salvage and decommissioning projects across international markets. After NPM Capital acquired a majority stake in Dieseko, van Es joined its supervisory board, contributing founder knowledge and experience in product development and diversification.</p>\r\n",
+    "word_count": 114,
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "The 114-word, two-paragraph biography is grounded in founder, company, patent and trade-publication evidence. The industrial origins, PVE brand, mining-system patents, current offshore portfolio and post-investment supervisory role are independently supported; source-facing identity discussion and personal wealth figures are excluded."
+    },
+    "source_ids": ["S4", "S5", "S6", "S7", "S8", "S9", "S10"]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Dieseko founder and Van Es Group entrepreneur",
+      "action": "fill_missing",
+      "confidence": {"score": 99, "band": "very_high", "reason": "NPM Capital directly identifies van Es as Dieseko Holding's founder, while D&B and the current group website connect the exact person and holding to the wider Van Es Group."},
+      "source_ids": ["S3", "S4", "S5"]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {"score": 98, "band": "very_high", "reason": "The exact company founder is consistently described with male pronouns in NPM Capital and industry coverage; the full-name PVE Holding record and matching birth-year evidence resolve that founder to this owner."},
+      "source_ids": ["S3", "S4", "S7"]
+    },
+    {
+      "field": "birth_year",
+      "value": "1950",
+      "action": "fill_missing",
+      "confidence": {"score": 97, "band": "very_high", "reason": "NPM Capital's Dieseko governance announcement identifies founder Paul van Es as born in 1950. The exact-name PVE Holding record connects that founder to Paul Emile van Es, and the immutable upstream age field is independently consistent with 1950 without being used to reverse-engineer a more precise date."},
+      "source_ids": ["S1", "S3", "S4"]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Paul Emile van Es is a Dutch industrial entrepreneur who founded Dieseko Holding, a maker of hydraulic foundation equipment, and built a wider offshore-services group. His businesses have spanned heavy cranes, jack-up platforms, work barges and maritime support. He later advised Dieseko after a majority investment, bringing experience in engineering and international markets.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {"score": 97, "band": "very_high", "reason": "The 53-word biography fills the blank field with a durable account of van Es's founder role, equipment businesses and offshore expansion while excluding the vessel, personal wealth estimates and uncertain current ownership percentages."},
+      "source_ids": ["S3", "S4", "S5", "S6", "S9"]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://vanesgroup.com/about-us",
+      "verification": "Dun & Bradstreet identifies Paul Emile van Es as PVE Holding's director and key principal at Everdenberg 17 in Oosterhout and gives the associated operating website. The official Van Es Group website uses the same Oosterhout address and describes the exact offshore investment group and its companies; type ID 14 is copied from the owner-input lookup.",
+      "confidence": {"score": 94, "band": "high", "reason": "The official website represents the defining group linked to the exact-name holding principal through company name, address, operating website and sector. The page does not present a personal profile, so it is proposed only as a Company Website."},
+      "source_ids": ["S3", "S5", "S6"]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0530",
+      "name": "Heavy equipment",
+      "summary": "Heavy equipment is historically defining because van Es founded a major foundation-machinery company and developed substantial crane, mining and specialist rental operations.",
+      "relationship_type": "founder and long-term controlling industrial operator",
+      "temporal_scope": "former_but_defining",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "NPM Capital identifies van Es as Dieseko Holding's founder and Dieseko as a world-leading hydraulic foundation-equipment manufacturer. Trade and patent sources show substantial, long-duration operations in piling equipment, cranes and mining machinery, satisfying the catalogue's wealth-creation and defining-operating-mandate rule."
+      },
+      "source_ids": ["S4", "S7", "S8"],
+      "taxonomy_value": "The owner created material wealth through, controlled substantial operations in, or had a defining long-term operating mandate in Heavy equipment."
+    },
+    {
+      "tag_id": "tag_0114",
+      "name": "Marine engineering",
+      "summary": "Marine engineering is defining through the Van Es Group's long-running jack-up, heavy-lift, offshore-drilling, barge and marine-support businesses.",
+      "relationship_type": "founder-owner of an offshore and marine-engineering group",
+      "temporal_scope": "current",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Current official group materials document a substantial portfolio in jack-up barges, offshore drilling, heavy-lift cranes, work barges, support vessels and specialist engineering. Independent marine coverage names Paul van Es Holding in a large offshore heavy-lift venture, while D&B connects exact-name Paul Emile van Es to the relevant holding structure."
+      },
+      "source_ids": ["S3", "S5", "S6", "S9"],
+      "taxonomy_value": "The owner created material wealth through, controlled substantial operations in, or had a defining long-term operating mandate in Marine engineering."
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=2225",
+      "title": "Paul Emile van Es owner record, person ID 2225",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["immutable person ID and upstream display name", "Dutch nationality, Netherlands residence and Netherlands birth country", "calculated age 70 at 7 May 2020 retained as a system field", "authoritative current Sidarta relationship from September 2014", "37.98-metre and 307-GT current-vessel specification", "blank biography, known-for, gender and birth-date fields", "absence of stored social profiles"]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.superyachtnews.com/fleet/industry-awaits-outcome-of-busy-mys",
+      "title": "Brokerage market awaits outcome of another busy MYS",
+      "publisher": "SuperyachtNews",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["sale of the exact 37.9-metre Sidarta I in the 23 to 29 September 2014 week", "Haak build and exact vessel-size match", "Seahorse Yachtbrokers representation of an unnamed buyer", "event timing matching the authoritative relationship start", "absence of a publicly named buyer"]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.dnb.com/business-directory/company-profiles.pve_holding_bv.fb83127ed2a94c958e20deffba92395a.html",
+      "title": "PVE Holding B.V. company profile",
+      "publisher": "Dun & Bradstreet",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": ["exact full name Paul Emile van Es", "director and key-principal role at PVE Holding", "PVE Holding classification as a management and holding company", "Everdenberg 17, Oosterhout address", "associated World Wide Equipment website", "exact-person business and geography bridge"]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.npm-capital.com/nl/nieuws/nieuwe-raad-van-commissarissen-voor-dieseko-group",
+      "title": "Nieuwe Raad van Commissarissen voor Dieseko Group",
+      "publisher": "NPM Capital",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["Paul van Es born in 1950", "founder of Dieseko Holding", "Dieseko as manufacturer and global market leader in hydraulic vibratory hammers and power packs", "NPM Capital majority investment in November 2013", "supervisory-board appointment in February 2014", "founder knowledge, entrepreneurial experience, offshore experience and international-market expertise", "product-development and diversification mandate"]
+    },
+    {
+      "id": "S5",
+      "url": "https://vanesgroup.com/about-us",
+      "title": "Van Es Group - Investor in offshore companies",
+      "publisher": "Van Es Group",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["current offshore investment focus", "entrepreneurial history since 1974", "nine current investments", "Oosterhout headquarters at Everdenberg 17", "portfolio support in finance, legal, human resources and marketing", "offshore and energy-transition positioning", "exact Company Website proposal"]
+    },
+    {
+      "id": "S6",
+      "url": "https://vanesgroup.com/groupcompanies/world-wide-equipment",
+      "title": "World Wide Equipment",
+      "publisher": "Van Es Group",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["World Wide Equipment as a Van Es Group company", "maritime and logistics solutions for the offshore industry", "operations across oil and gas, civil construction, salvage and decommissioning", "fleet of cargo barges, work barges, crane barges and support vessels", "Oosterhout group address and vanesholding.com contact domain"]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.nt.nl/wp-content/uploads/2018/11/23409587.pdf",
+      "title": "Vermogend in vervoer",
+      "publisher": "Nieuwsblad Transport",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": ["Paul van Es of Van Es Holding Group as an offshore-sector entrepreneur", "reported 2018 Quote wealth estimate of 155 million euros", "offshore sector as a causal source of wealth", "independent wealth-mechanism corroboration rather than a current net-worth claim"]
+    },
+    {
+      "id": "S8",
+      "url": "https://patents.google.com/patent/US5938289A/en",
+      "title": "US5938289A - High wall mining conveyor system",
+      "publisher": "Google Patents",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["Paul van Es as co-inventor", "1996 filing and 1999 patent grant", "Superior Highwall Miners as original assignee", "mechanical conveyor-system design for high-wall mining", "direct engineering and machinery-development activity"]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.marinelog.com/legal/environment/salvage/crane-ship-nears-end-of-concordia-salvage-role/",
+      "title": "Crane ship nears end of Concordia salvage role",
+      "publisher": "Marine Log",
+      "tier": 1,
+      "accessed_at": "2026-08-30",
+      "supports": ["Paul van Es Holding as a joint-venture partner in Conquest Offshore", "substantial offshore heavy-lift crane-barge operations", "Costa Concordia salvage work", "1,400-ton crane and specialist marine-engineering capability", "independent offshore and maritime-business evidence"]
+    },
+    {
+      "id": "S10",
+      "url": "https://sliedrecht24.nl/sloop-markant-gebouw-op-bedrijventerrein-nijverwaard/",
+      "title": "Sloop markant gebouw op bedrijventerrein Nijverwaard",
+      "publisher": "Sliedrecht24",
+      "tier": 2,
+      "accessed_at": "2026-08-30",
+      "supports": ["Paul van Es as founder of Dieseko Group", "PVE initials derived from Paul van Es", "Dieseko's earlier names and industrial continuity", "former Van Es Holding property in Sliedrecht", "independent local corroboration of founder identity"]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Identity and Sidarta bridge",
+      "detail": "The exact full-name corporate record, matching PVE/Van Es Group address, Dutch geography, 1950 founder biography and upstream age field resolve Paul Emile van Es at high confidence. The authoritative relationship begins in September 2014, exactly when the same 37.9-metre Sidarta I was publicly reported sold to an unnamed buyer. No public source found in this research names van Es as that buyer or establishes direct legal title, so the vessel event is treated as strong corroboration rather than an independently published ownership claim."
+    },
+    {
+      "topic": "Namesake control",
+      "detail": "Search results contain numerous unrelated Paul van Es profiles in medicine, public-sector labour representation, finance, food, landscaping and other fields. None was used. The dossier relies only on the PVE Holding, Dieseko, Van Es Group, Oosterhout or Sliedrecht evidence chain and does not propose an unverified personal social profile."
+    },
+    {
+      "topic": "Forbes profile",
+      "detail": "No exact Forbes personal profile was found after Forbes-first searches across the full name, business groups and vessel. No namesake or generic company result is proposed."
+    },
+    {
+      "topic": "Birth details",
+      "detail": "NPM Capital identifies Dieseko founder Paul van Es as born in 1950, which matches the upstream system-calculated age without requiring reverse calculation. No strong source established an exact birth day, month or place, so only birth_year is proposed. Netherlands remains the authoritative birth country, and no secondary nationality is inferred."
+    },
+    {
+      "topic": "Current control and role",
+      "detail": "D&B identifies the exact person as PVE Holding's director and key principal, and the current Van Es Group site shares the Oosterhout address and relevant offshore portfolio. The public group site does not identify its shareholders, management team or Paul van Es by name. The dossier therefore describes founder and continuing holding-company association without asserting a current ownership percentage, chief-executive title or daily operating control."
+    },
+    {
+      "topic": "Wealth evidence",
+      "detail": "Independent transport-industry coverage reports that van Es became wealthy through the offshore sector and reproduces a historical Quote estimate. That estimate is used only to establish materiality and the causal wealth sector; it is not presented as current net worth. Company fleet, equipment and investment counts are not treated as personal assets."
+    },
+    {
+      "topic": "Industry trajectory",
+      "detail": "Construction & Engineering is the wealth-creation classification because Dieseko's original business manufactured specialist foundation equipment. Shipping & Maritime is the current primary classification because the present group portfolio is dominated by offshore platforms, heavy-lift marine equipment, barges and support vessels. This distinction does not imply that foundation machinery has ceased or that every group asset is personally owned."
+    },
+    {
+      "topic": "Wealth origin and relationship",
+      "detail": "Self-made and Founder are supported by NPM Capital's direct description of van Es as the founder at the basis of Dieseko Holding and by independent corroboration of the PVE origin. No source identified inherited ownership as the primary foundation of the business. The exact capital history across later entities and investments remains private."
+    },
+    {
+      "topic": "Taxonomy",
+      "detail": "Heavy equipment and Marine engineering are the minimum useful approved active tags. The former captures the founder's defining foundation-machinery, crane and mining-equipment activity; the latter captures substantial, long-running jack-up, heavy-lift and marine-support operations. Broader construction, mining, oil-and-gas or energy-transition tags are omitted because the evidence is more precise or does not show each as an independent defining wealth source."
+    },
+    {
+      "topic": "Social profiles",
+      "detail": "The official Van Es Group site is proposed as a Company Website because D&B connects the exact-name PVE Holding principal to the same address and operating group. It is not represented as a personal site. No collision-safe LinkedIn, Facebook, Instagram, X/Twitter, TikTok, YouTube, Wikipedia page or personal website was verified."
+    },
+    {
+      "topic": "Biography exclusions",
+      "detail": "The blank upstream biography is filled with a durable account of company founding, engineering and offshore expansion. Sidarta, the 2014 sale event, historic net-worth estimates, corporate fleet valuations and identity-resolution language are excluded."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier. Paul Emile van Es is resolved at 94 through the exact-name PVE Holding principal record, the Dieseko founder biography, matching Dutch business geography and birth-year corroboration, plus an exact Sidarta sale-event match to the authoritative relationship start. Construction & Engineering is the wealth-creation industry; Shipping & Maritime is current primary; Self-made and Founder reflect the evidence-backed origin and relationship. Heavy equipment and Marine engineering are the only minimum useful active tags, with catalogue-exact semantic metadata. Male gender, 1950 birth year, a known-for title, a 53-word biography and the official group Company Website are proposed. The unnamed public Sidarta buyer, precise current control, birth day/month/place and personal socials remain bounded. Nothing has been compiled, approved or applied."
+  }
+}
