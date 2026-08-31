@@ -48,6 +48,7 @@ def build_owner_change_plan(
     allow_clear: bool = False,
     replace_socials: bool = False,
     detail_fields: Collection[str] | None = None,
+    ignored_detail_fields: Collection[str] | None = None,
     include_socials: bool = True,
 ) -> dict[str, Any]:
     baseline = owner.get("_baseline")
@@ -61,10 +62,12 @@ def build_owner_change_plan(
     detail_changes: list[dict[str, Any]] = []
     conflicts: list[dict[str, Any]] = []
     skipped_blanks: list[str] = []
+    skipped_ignored_fields: list[str] = []
 
     selected_detail_fields = (
         set(detail_fields) if detail_fields is not None else None
     )
+    ignored_fields = set(ignored_detail_fields or ())
     for key, desired_field in desired_details.items():
         if (
             selected_detail_fields is not None
@@ -75,6 +78,9 @@ def build_owner_change_plan(
         baseline_field = baseline_details.get(key)
         baseline_value = field_value(baseline_field)
         if detail_values_equal(key, desired_value, baseline_value):
+            continue
+        if key in ignored_fields:
+            skipped_ignored_fields.append(key)
             continue
         if is_blank(desired_value) and not allow_clear:
             skipped_blanks.append(key)
@@ -196,6 +202,7 @@ def build_owner_change_plan(
         "social_replacements": social_replacements,
         "social_removals": social_removals,
         "skipped_blank_fields": skipped_blanks,
+        "skipped_ignored_fields": skipped_ignored_fields,
         "conflicts": conflicts,
         "has_changes": bool(
             detail_changes

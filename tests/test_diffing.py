@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from copy import deepcopy
 
+from src.constants import BIOGRAPHY_DETAIL_FIELDS
 from src.diffing import build_owner_change_plan, build_tag_change_plan
 from src.tags import load_tag_catalogue
 
@@ -162,6 +163,34 @@ def test_detail_field_scope_ignores_other_details_and_socials() -> None:
     assert not plan["social_additions"]
     assert not plan["social_replacements"]
     assert not plan["social_removals"]
+
+
+def test_ignored_biographies_do_not_block_other_detail_changes() -> None:
+    owner = owner_fixture()
+    for key in BIOGRAPHY_DETAIL_FIELDS:
+        owner["details"][key] = field(
+            f"Generated {key}",
+            kind="rich_text_html",
+        )
+        owner["_baseline"]["details"][key] = field(
+            f"Exported {key}",
+            kind="rich_text_html",
+        )
+    owner["details"]["first_name"]["value"] = "A."
+    live = deepcopy(owner["_baseline"]["details"])
+    live["biography"]["value"] = "Hand-crafted live biography"
+
+    plan = build_owner_change_plan(
+        owner,
+        live_details=live,
+        ignored_detail_fields=BIOGRAPHY_DETAIL_FIELDS,
+    )
+
+    assert [change["field"] for change in plan["detail_changes"]] == [
+        "first_name"
+    ]
+    assert set(plan["skipped_ignored_fields"]) == BIOGRAPHY_DETAIL_FIELDS
+    assert not plan["conflicts"]
 
 
 def test_rich_text_entities_compare_as_the_same_content() -> None:

@@ -51,6 +51,8 @@ owner records, and applying reviewed JSON changes through the website.
 - Top-100 scanning must never submit or save a form.
 - Owner updates are dry-run by default and must re-read live values before
   saving.
+- Owner IDs in `config/biography-update-ignore-ids.json` must never have their
+  short or long biography overwritten by `update_owners.py`.
 - Owner-tag updates are dry-run by default; additions require `--apply`, while
   removals additionally require `--replace-tags`.
 - Blank clears and social removals require their separate explicit flags.

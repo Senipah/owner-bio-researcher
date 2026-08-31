@@ -158,6 +158,9 @@ AI review or a live system update occurred.
 - `compile_owner_research.py` must never overwrite its owner input and must not
   mark pending, rejected, or unusable dossiers AI-enriched.
 - `update_owners.py` remains dry-run unless `--apply` is present.
+- `update_owners.py` must load the biography ignore list before authentication
+  and must never plan or verify writes to `biography` or `long_biography` for
+  a listed person ID. Missing or invalid protection config is a fatal error.
 - `update_owner_tags.py` remains dry-run unless `--apply` is present. Applying
   additions must not imply authority to delete; removals additionally require
   `--replace-tags`.

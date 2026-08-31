@@ -9,17 +9,28 @@ from typing import Any
 
 from src.auth import authenticated_context
 from src.browser_update import OwnerBrowserUpdater
+from src.constants import BIOGRAPHY_DETAIL_FIELDS
 from src.diffing import build_owner_change_plan
 from src.enrichment import (
     fetch_owner_details,
     fetch_owner_enrichment,
     refreshed_owner,
 )
-from src.io_utils import atomic_write_json, load_json, utc_now
+from src.io_utils import (
+    atomic_write_json,
+    load_json,
+    load_json_unvalidated,
+    utc_now,
+)
 from src.workflow import (
     ensure_document_workflow,
     mark_owner_updated_in_system,
     owner_matches_workflow,
+)
+
+PROJECT_ROOT = Path(__file__).resolve().parent
+DEFAULT_BIOGRAPHY_IGNORE_LIST = (
+    PROJECT_ROOT / "config" / "biography-update-ignore-ids.json"
 )
 
 
@@ -54,6 +65,15 @@ def build_parser() -> argparse.ArgumentParser:
         help=(
             "Only reconcile this named details field; may be supplied more "
             "than once. When used, social profiles are not changed."
+        ),
+    )
+    parser.add_argument(
+        "--biography-ignore-list",
+        type=Path,
+        default=DEFAULT_BIOGRAPHY_IGNORE_LIST,
+        help=(
+            "JSON config containing person_ids whose biography and "
+            "long_biography fields must not be written."
         ),
     )
     parser.add_argument(
@@ -93,6 +113,30 @@ def build_parser() -> argparse.ArgumentParser:
     return parser
 
 
+def load_biography_ignore_ids(path: str | Path) -> set[int]:
+    document = load_json_unvalidated(path)
+    if not isinstance(document, dict):
+        raise ValueError("ignore-list JSON must be an object")
+    if document.get("schema_version") != 1:
+        raise ValueError("ignore-list schema_version must be 1")
+    person_ids = document.get("person_ids")
+    if not isinstance(person_ids, list):
+        raise ValueError("ignore-list person_ids must be an array")
+
+    invalid_ids = [
+        person_id
+        for person_id in person_ids
+        if type(person_id) is not int or person_id <= 0
+    ]
+    if invalid_ids:
+        raise ValueError(
+            "ignore-list person_ids must contain only positive integers"
+        )
+    if len(person_ids) != len(set(person_ids)):
+        raise ValueError("ignore-list person_ids must not contain duplicates")
+    return set(person_ids)
+
+
 def _verify_plan(
     owner: dict[str, Any],
     *,
@@ -101,6 +145,7 @@ def _verify_plan(
     allow_clear: bool,
     replace_socials: bool,
     detail_fields: list[str] | None,
+    ignore_biographies: bool,
 ) -> dict[str, Any]:
     return build_owner_change_plan(
         owner,
@@ -109,6 +154,9 @@ def _verify_plan(
         allow_clear=allow_clear,
         replace_socials=replace_socials,
         detail_fields=detail_fields,
+        ignored_detail_fields=(
+            BIOGRAPHY_DETAIL_FIELDS if ignore_biographies else None
+        ),
         include_socials=not detail_fields,
     )
 
@@ -119,6 +167,13 @@ def main() -> int:
         document = load_json(args.input)
     except Exception as exc:
         print(f"Could not load owner data: {exc}", file=sys.stderr)
+        return 1
+    try:
+        biography_ignore_ids = load_biography_ignore_ids(
+            args.biography_ignore_list
+        )
+    except Exception as exc:
+        print(f"Could not load biography ignore list: {exc}", file=sys.stderr)
         return 1
 
     ensure_document_workflow(document)
@@ -139,6 +194,14 @@ def main() -> int:
     if not owners:
         print("No owners matched the selection.")
         return 0
+    protected_selected_ids = sorted(
+        owner["person_id"]
+        for owner in owners
+        if owner["person_id"] in biography_ignore_ids
+    )
+    if protected_selected_ids:
+        protected_text = ", ".join(map(str, protected_selected_ids))
+        print(f"Biography overwrite protection active for: {protected_text}")
 
     stamp = _stamp()
     args.audit_dir.mkdir(parents=True, exist_ok=True)
@@ -156,6 +219,8 @@ def main() -> int:
         "allow_clear": args.allow_clear,
         "replace_socials": args.replace_socials,
         "detail_fields": sorted(set(args.detail_fields or [])),
+        "biography_ignore_list": str(args.biography_ignore_list),
+        "biography_ignored_person_ids": sorted(biography_ignore_ids),
         "records": [],
     }
     failures = 0
@@ -172,6 +237,10 @@ def main() -> int:
                 }
                 audit["records"].append(record)
                 try:
+                    ignore_biographies = person_id in biography_ignore_ids
+                    record["biography_overwrite_protected"] = (
+                        ignore_biographies
+                    )
                     if args.detail_fields:
                         live_details = fetch_owner_details(
                             context.session,
@@ -198,6 +267,7 @@ def main() -> int:
                         allow_clear=args.allow_clear,
                         replace_socials=args.replace_socials,
                         detail_fields=args.detail_fields,
+                        ignore_biographies=ignore_biographies,
                     )
                     record["plan"] = plan
                     if plan["conflicts"]:
@@ -265,6 +335,7 @@ def main() -> int:
                         allow_clear=args.allow_clear,
                         replace_socials=args.replace_socials,
                         detail_fields=args.detail_fields,
+                        ignore_biographies=ignore_biographies,
                     )
                     record["verification"] = verification
                     if verification["conflicts"] or verification["has_changes"]:

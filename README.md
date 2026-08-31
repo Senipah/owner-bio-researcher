@@ -522,6 +522,15 @@ proposals are left unapplied and their owners remain `ai_enriched=false`.
 
 ## 5. Preview and apply updates
 
+`update_owners.py` reads `config\biography-update-ignore-ids.json` on every
+run. Add a person's numeric ID to its `person_ids` array to preserve the live
+`biography` and `long_biography` fields for that owner. Protection applies to
+dry runs, scoped biography runs, and full apply runs; other eligible fields
+for the same owner are still reconciled. The audit records the configured IDs
+and each protected field it skips. Use `--biography-ignore-list PATH` only
+when a different reviewed list is required. A missing or invalid list stops
+the run before login so protection cannot silently disappear.
+
 Always start with a dry-run:
 
 ```powershell

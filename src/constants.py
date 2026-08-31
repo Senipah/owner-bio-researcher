@@ -25,6 +25,5 @@ SCHEMA_VERSION = 1
 DEFAULT_TIMEOUT_SECONDS = 30
 HTTP_TIMEOUT_SECONDS = 45
 
-RICH_TEXT_DETAIL_FIELDS = frozenset(
-    {"internal_notes", "biography", "long_biography"}
-)
+BIOGRAPHY_DETAIL_FIELDS = frozenset({"biography", "long_biography"})
+RICH_TEXT_DETAIL_FIELDS = frozenset({"internal_notes"}) | BIOGRAPHY_DETAIL_FIELDS

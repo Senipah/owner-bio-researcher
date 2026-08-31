@@ -133,6 +133,11 @@ additions and baseline-keyed replacements are normal changes; removals require
 `--replace-socials`. After a save, the updater re-exports the owner and only
 then creates a new baseline and marks the record updated.
 
+Owner IDs in `config/biography-update-ignore-ids.json` are additionally
+protected from writes to both `biography` fields. The pure planner records
+these as ignored fields before live conflict evaluation, while allowing other
+eligible owner changes to proceed.
+
 Workflow transitions are intentionally narrow:
 
 - Top-100 annotation maintains `is_top_100_owner`.
