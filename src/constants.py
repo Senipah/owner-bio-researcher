@@ -20,6 +20,12 @@ TOP_100_REPORT_URL = (
     "?page=1&sort_by=&mode=listings&vessel_builder_id="
     "&length_from=&length_to=&yb_100=t"
 )
+VESSEL_SPECIFICATION_EDIT_URL = (
+    f"{BASE_URL}/vessel/edit/specification_new/edit.htm?id={{vessel_id}}"
+)
+EXTERNAL_RELATIONSHIP_CRUD_URL = (
+    f"{BASE_URL}/yaycontact/relationship/external/crud"
+)
 
 SCHEMA_VERSION = 1
 DEFAULT_TIMEOUT_SECONDS = 30

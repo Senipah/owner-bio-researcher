@@ -25,6 +25,7 @@ The human-facing commands and file lineage are maintained in `README.md`.
 | Owner report | `export_owners.py`, `src/parsers.py` | Requests fetches pages; Beautiful Soup parses rows and pagination. |
 | Top-100 report | `mark_top_100_owners.py`, `src/top_100.py` | Requests exports the report; Selenium clicks the specification edit link and reads the UBO fieldset. |
 | Owner vessel ranking | `enrich_owner_vessels.py`, `src/owner_vessels.py`, `src/parsers.py` | Requests reads owner UBO relationships, caches distinct vessel specifications, normalizes LOA to metres, and ranks a derived owner document. |
+| Vessel owner ordering | `reorder_vessel_owners.py`, `src/vessel_owner_order.py` | Reads candidate XLSX rows, plans the site's stable oldest-first UBO order, and only with `--apply` submits the native relationship-order PATCH and verifies a fresh read. |
 | Owner enrichment | `enrich_owners.py`, `src/enrichment.py`, `src/parsers.py` | Authenticated HTTP reads dynamically discover details controls and social profiles. |
 | AI research compilation | `compile_owner_research.py`, `src/research_batch.py` | Selects owners explicitly by current Top-100 rank, fully ranked largest current-vessel LOA, or the complete owner file prioritised by LOA, validates independent dossiers, compiles high-confidence proposals into a separate JSON, and renders an HTML review report. |
 | Change planning | `src/diffing.py` | Compares baseline, desired JSON, and current live state. |

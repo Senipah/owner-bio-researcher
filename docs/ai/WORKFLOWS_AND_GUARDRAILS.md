@@ -153,6 +153,10 @@ AI review or a live system update occurred.
 - Owner-vessel enrichment is read-only. Preserve raw measurements, cache each
   distinct vessel specification, and do not mark a ranking complete when any
   current-vessel LOA is unavailable.
+- `reorder_vessel_owners.py` is dry-run by default. It may apply only the
+  website's stable oldest-first start-date ordering, must checkpoint an audit
+  after every vessel, and must verify the persisted relationship-ID order from
+  a fresh edit-page read before reporting success.
 - `mark_top_100_owners.py` is read-only: it may click the vessel edit link to
   reveal UBO data, but it must never locate or activate a save/submit control.
 - `compile_owner_research.py` must never overwrite its owner input and must not
@@ -208,7 +212,7 @@ from memory.
 Check syntax and accidental whitespace errors:
 
 ```powershell
-.\venv\Scripts\python.exe -m compileall -q src export_owners.py mark_top_100_owners.py enrich_owner_vessels.py enrich_owners.py compile_owner_research.py update_owners.py update_owner_tags.py test_dummy_account.py
+.\venv\Scripts\python.exe -m compileall -q src export_owners.py mark_top_100_owners.py enrich_owner_vessels.py enrich_owners.py compile_owner_research.py reorder_vessel_owners.py update_owners.py update_owner_tags.py test_dummy_account.py
 git diff --check
 ```
 

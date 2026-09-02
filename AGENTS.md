@@ -26,6 +26,9 @@ owner records, and applying reviewed JSON changes through the website.
 - `enrich_owner_vessels.py`, `src/owner_vessels.py`, `src/parsers.py`:
   read-only owner-to-vessel discovery, specification caching, LOA
   normalization, and descending owner ranking.
+- `reorder_vessel_owners.py`, `src/vessel_owner_order.py`: dry-run-first
+  vessel UBO relationship-order planning, explicit applies, audit
+  checkpoints, and post-write verification.
 - `enrich_owners.py`, `src/enrichment.py`, `src/parsers.py`: details and
   social enrichment.
 - `compile_owner_research.py`, `src/research_batch.py`: validated AI dossier
@@ -55,6 +58,9 @@ owner records, and applying reviewed JSON changes through the website.
   short or long biography overwritten by `update_owners.py`.
 - Owner-tag updates are dry-run by default; additions require `--apply`, while
   removals additionally require `--replace-tags`.
+- Vessel-owner reordering is dry-run by default, must reproduce the site's
+  stable oldest-first date ordering, and must re-read the relationship IDs
+  after every applied PATCH before reporting success.
 - Blank clears and social removals require their separate explicit flags.
 - Never overwrite a live value that differs from the immutable export
   baseline; report a conflict instead.
@@ -74,7 +80,7 @@ owner records, and applying reviewed JSON changes through the website.
 
 ```powershell
 .\venv\Scripts\python.exe -m pytest -q
-.\venv\Scripts\python.exe -m compileall -q src export_owners.py mark_top_100_owners.py enrich_owner_vessels.py enrich_owners.py compile_owner_research.py update_owners.py update_owner_tags.py test_dummy_account.py
+.\venv\Scripts\python.exe -m compileall -q src export_owners.py mark_top_100_owners.py enrich_owner_vessels.py enrich_owners.py compile_owner_research.py reorder_vessel_owners.py update_owners.py update_owner_tags.py test_dummy_account.py
 git diff --check
 ```
 

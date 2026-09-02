@@ -171,6 +171,48 @@ Resume partial owner and vessel checkpoints:
 Use `--workers` to adjust the bounded HTTP concurrency, or `--person-id` and
 `--limit` for smoke tests. The default is four workers.
 
+## Optional: repair vessel owner table order
+
+`reorder_vessel_owners.py` reads an XLSX candidate list with `priority`,
+`vessel_id`, and `vessel_name` columns. A `Link` column is validated when
+present, and a row whose `case` is `DELETED` is recorded but skipped. The
+workbook is never modified.
+
+Start with a dry-run of one vessel or a priority group:
+
+```powershell
+.\venv\Scripts\python.exe .\reorder_vessel_owners.py `
+  --input examples\out-of-order\vessels-with-owners-in-wrong-order.xlsx `
+  --vessel-id 47984 `
+  --headless
+
+.\venv\Scripts\python.exe .\reorder_vessel_owners.py `
+  --input examples\out-of-order\vessels-with-owners-in-wrong-order.xlsx `
+  --priority 1 `
+  --headless
+```
+
+The dry-run re-reads the live **[NEW] Ultimate Beneficial Owners** table and
+records the current relationship IDs, exact proposed order, and row moves in
+a timestamped JSON audit under `output\audits`. The plan matches the site's
+**Re-order by dates** control: oldest start date first, missing month/day as
+zero, undated rows last, and existing order retained for equal dates.
+
+After reviewing the dry-run, apply a one-vessel smoke test before a batch:
+
+```powershell
+.\venv\Scripts\python.exe .\reorder_vessel_owners.py `
+  --input examples\out-of-order\vessels-with-owners-in-wrong-order.xlsx `
+  --vessel-id 47984 `
+  --apply `
+  --headless
+```
+
+`--apply` uses the same relationship-order PATCH as the website control,
+checkpoints the audit after each vessel, and immediately re-reads the edit page
+to verify the persisted relationship-ID order. Already-correct vessels do not
+produce a write. Use `--limit` for a bounded batch.
+
 ## 3. Enrich owner details and social profiles
 
 ```powershell
