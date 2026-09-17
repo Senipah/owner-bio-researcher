@@ -1,0 +1,364 @@
+{
+  "schema_version": 8,
+  "record_type": "institution",
+  "owner": {
+    "person_id": 2273,
+    "display_name": "Obitelj Volmut",
+    "identity_confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Obitelj is the Croatian word for family, making the source display name explicitly collective. The source AKA names Radovan Volmut, while Croatian reporting independently uses Obitelj Volmut for the family and distinguishes the late Radovan from his son Danilo. The record is therefore resolved as the Croatian Volmut family, not as Radovan, Danilo or another individual. Private-asset context was used only for identity disambiguation and is excluded from the biographies and classifications."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This record represents the Volmut family collectively. It does not represent Radovan Volmut, Danilo Volmut or another individual relative. Birth, gender, mortality and person-specific social fields are therefore inapplicable. The biographies describe only the family's well-supported public professional history across two generations and do not transfer any one relative's personal attributes or private assets to the family as a whole.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The Croatian source label is explicitly collective, and independent Croatian reporting distinguishes the Volmut family from named individual members. Institution treatment prevents an unsupported conversion into a person record."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Forbes-first exact-family, Radovan Volmut, Danilo Volmut and IstriaSelect searches found no dedicated Forbes profile for the family or either documented family member. Unrelated results and general search mentions were excluded."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Radovan Volmut's documented career moved from engineering and cultural-venue management into project consulting, tourism investment and real-estate advisory. Danilo later worked in investment banking before building a tourism-booking business. The collective family record cannot receive one personal wealth-creation industry under schema v8.",
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Direct and institutional sources establish the two generations' different professional paths. Unknown records the institutional restriction rather than a lack of evidence about those activities."
+    },
+    "source_ids": [
+      "S4",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The family's most visible current public operating activity is Danilo Volmut's IstriaSelect villa-rental platform through Exacto Nova, while Radovan's earlier work spanned project advisory, tourism and real estate. No single current principal industry can be assigned to the family collectively.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Croatian Chamber of Economy material and current professional sources support the tourism platform, but public evidence does not establish the family's consolidated holdings or each relative's economic exposure."
+    },
+    "source_ids": [
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Radovan built a managerial, consulting and investment career, while later family members inherited family continuity and pursued their own operating work. A collective family record spanning founder-like activity and succession cannot be classified as wholly self-made, inherited or mixed under the person-level taxonomy.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The evidence distinguishes Radovan's career from Danilo's later work and confirms their relationship. Unknown avoids collapsing different generations into one personal wealth-origin label."
+    },
+    "source_ids": [
+      "S4",
+      "S5",
+      "S6",
+      "S8"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Radovan acted as a manager, adviser and investor, whereas Danilo became an investment banker, consultant and tourism-platform owner-operator. The family therefore combines distinct operator, investor and successor relationships that cannot be reduced to one person-level classification.",
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "The sources document materially different roles for Radovan and Danilo. Unknown preserves those generational distinctions instead of attributing one member's relationship to the family institution."
+    },
+    "source_ids": [
+      "S4",
+      "S5",
+      "S6",
+      "S8"
+    ]
+  },
+  "biography": {
+    "plain_text": "The Volmut family is a Croatian business family active across investment consulting and tourism. Radovan Volmut moved from engineering and cultural-venue management into major tourism and real-estate projects. His son Danilo later shifted from investment banking and mergers advisory into villa rentals, building the specialist IstriaSelect travel platform in Croatia.",
+    "html": "<p>The Volmut family is a Croatian business family active across investment consulting and tourism. Radovan Volmut moved from engineering and cultural-venue management into major tourism and real-estate projects. His son Danilo later shifted from investment banking and mergers advisory into villa rentals, building the specialist IstriaSelect travel platform in Croatia.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "A direct Croatian profile documents Radovan's engineering, venue-management, project-advisory and tourism-investment career, while independent media, chamber material and professional biographies establish Danilo's lineage, banking background and IstriaSelect role."
+    },
+    "source_ids": [
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Radovan Volmut trained in electrical engineering and became the first technical director of Zagreb's Vatroslav Lisinski Concert Hall shortly before it opened. He moved from congress organisation and major-project management into advising Eastern European investors on Croatian tourism and real estate, while also investing in Istrian tourism.\n\nThe next generation retained that interest in travel and property-based hospitality. Danilo Volmut worked in investment banking and consulting in Vienna and Zagreb, including privatisation and mergers work across southeastern Europe. He later built and led IstriaSelect through Exacto Nova, creating a booking platform focused on holiday homes and pool villas in Istria.",
+    "html": "<p>Radovan Volmut trained in electrical engineering and became the first technical director of Zagreb's Vatroslav Lisinski Concert Hall shortly before it opened. He moved from congress organisation and major-project management into advising Eastern European investors on Croatian tourism and real estate, while also investing in Istrian tourism.</p>\r\n<p>The next generation retained that interest in travel and property-based hospitality. Danilo Volmut worked in investment banking and consulting in Vienna and Zagreb, including privatisation and mergers work across southeastern Europe. He later built and led IstriaSelect through Exacto Nova, creating a booking platform focused on holiday homes and pool villas in Istria.</p>\r\n",
+    "word_count": 100,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "The career chronology is supported by a contemporaneous direct profile of Radovan and by independent and institutional descriptions of Danilo's education, banking, consulting and tourism work. Volatile company metrics and private-property details are omitted."
+    },
+    "source_ids": [
+      "S4",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=2273",
+      "title": "Obitelj Volmut owner record, person ID 2273",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Immutable person ID and exact collective source-record display name",
+        "Radovan Volmut AKA",
+        "Croatian nationality and Croatia residence metadata",
+        "Blank biography and researchable missing fields",
+        "No existing social profiles",
+        "Placeholder rather than substantive source image",
+        "Private-asset relationship used only for identity disambiguation"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/search/?q=%22Volmut%20family%22",
+      "title": "Forbes search for Volmut family",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "No dedicated Forbes family profile",
+        "No dedicated Radovan Volmut or Danilo Volmut profile",
+        "Forbes-first not-found decision"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.b92.net/o/putovanja/vesti?nav_id=369666",
+      "title": "Le Mirage following Radovan Volmut's death",
+      "publisher": "B92",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Explicit use of the Volmut family as a collective owner label",
+        "Radovan Volmut as a deceased individual family member",
+        "Radovan's project-consulting background",
+        "Identity disambiguation only for private-asset context"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://arhiva.nacional.hr/clanak/26616/moj-brod-je-hotel-sa-sest-zvijezdica",
+      "title": "Moj brod je hotel sa šest zvijezdica",
+      "publisher": "Nacional",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Direct profile of Croatian businessman Radovan Volmut",
+        "Electrical-engineering training",
+        "First technical directorship of Vatroslav Lisinski Concert Hall",
+        "Congress and major-project management",
+        "Real-estate and tourism advisory for Eastern European investors",
+        "Investment in Istrian tourism",
+        "Private-asset material excluded from biography"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://arhiva.nacional.hr/clanak/37079/prva-dama-ljetnog-jet-seta",
+      "title": "Prva dama ljetnog jet-seta",
+      "publisher": "Nacional",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Radovan Volmut's death before 2007",
+        "Danilo Volmut as Radovan's son",
+        "Family succession evidence",
+        "Identity disambiguation only for private-asset context"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.jutarnji.hr/vijesti/danilo-volmut-u-timu-neprocjenjive-hrvatske-investicijski-bankar-u-turizmu-turisti-zele-originalan-dozivljaj-koji-ce-pamtiti-i-sherati-7682934",
+      "title": "Danilo Volmut, investicijski bankar u turizmu",
+      "publisher": "Jutarnji list",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Danilo Volmut as a Croatian entrepreneur",
+        "Investment-banking and consulting background",
+        "Education in Vienna and Zagreb",
+        "Transition into tourism",
+        "Creation of the IstriaSelect villa-rental platform"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.hgk.hr/documents/pregled-usluga-putnickih-agencija-iz60af664310618.pdf",
+      "title": "Pregled usluga putničkih agencija",
+      "publisher": "Croatian Chamber of Economy",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Danilo Volmut as representative of Exacto Nova",
+        "IstriaSelect as a travel platform specialising in Istrian holiday homes and villas with pools",
+        "Travel-agency operating context"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://vrmdays.com/speaker/danilo-volmut/",
+      "title": "Danilo Volmut speaker profile",
+      "publisher": "VRM Days",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Danilo Volmut's investment-banking and consulting background",
+        "Merger, acquisition and privatisation work in southeastern Europe",
+        "Ownership and leadership of IstriaSelect",
+        "Current professional focus on holiday rentals"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://komarch.sk/en/architekt/2067-ingarch-radovan-volmut",
+      "title": "Ing. arch. Radovan Volmut",
+      "publisher": "Slovak Chamber of Architects",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "A living Slovak architect with the same name exists",
+        "Namesake exclusion from the Croatian family record",
+        "Prevention of cross-person biography contamination"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Identity is resolved as an institution at 98. The Croatian word Obitelj means family, the source supplies Radovan Volmut as an AKA, and Croatian reporting explicitly uses the Volmut family label while distinguishing Radovan and Danilo as separate people. The source record is not normalized into either individual.",
+    "Radovan Volmut died before a 2007 Nacional report, so the source's Alive value is person-oriented metadata that cannot describe this collective record. No mortality field is proposed for the family.",
+    "A living Slovak architect named Radovan Volmut is a different person. His education, professional registrations and projects are excluded from the Croatian family's dossier.",
+    "All four classification objects are populated independently. Radovan's career spanned engineering, project consulting, tourism investment and real-estate advisory; Danilo later combined investment banking with a tourism-platform operating role. Schema v8 requires Unknown machine labels for an institution, so the verified distinctions remain in the summaries without inventing a single personal classification.",
+    "No dedicated Forbes profile was found for the family, Radovan, Danilo or IstriaSelect. No reliable public net-worth estimate, consolidated family holding structure or ownership allocation among relatives was found.",
+    "The biographies use a contemporaneous direct profile for Radovan and independent and institutional material for Danilo. They omit private addresses, inherited properties, unproven allegations, volatile financial metrics and private-asset details.",
+    "No social profile is proposed. Institution records do not accept person-specific socials, and no exact family-controlled public account was independently verified. Danilo's business pages remain research evidence rather than family social links.",
+    "No tag is proposed. The active catalogue's hospitality-real-estate and luxury-hospitality concepts require a defining, substantial family-level operating or wealth relationship; the available evidence establishes Danilo's specialist booking platform but not a consolidated family-controlled hospitality-property business.",
+    "The short biography contains 50 words and the long biography contains 100 words in two paragraphs. Both are independent of private-asset material and focus on the family's public professional history.",
+    "Private-vessel context was used only for identity disambiguation. Both biographies omit vessel names, ownership, specifications, use and ranking information."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal institutional dossier. Obitelj Volmut is resolved as the Volmut family without forcing an individual identity. Four Unknown wealth labels follow schema v8 while their summaries preserve independently researched generational distinctions. No person-only details, socials or weak family-level tags are proposed. Nothing has been compiled or applied."
+  }
+}

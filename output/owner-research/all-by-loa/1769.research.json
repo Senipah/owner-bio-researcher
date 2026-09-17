@@ -1,0 +1,476 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1769,
+    "display_name": "Yevgeny Prigozhin",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The EU record matches the saved full name, Russian nationality, sex and exact birth date. Treasury independently ties this person to St Vitamin through a company acquisition in 2014, matching the saved relationship year."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Russian businessman associated with large-scale catering and the Wagner Group.",
+    "defining_work": "Built Concord into a government catering contractor, supplying public institutions and the armed forces.",
+    "formative_context": "Sold hot dogs with his stepfather as private enterprise expanded, before acquiring a stake in a supermarket chain.",
+    "decisive_moment": "Publicly acknowledged founding Wagner eight years after creating it.",
+    "enduring_dimensions": [
+      "St Petersburg restaurant businesses and connections with Vladimir Putin",
+      "Wagner’s international operations and his brief rebellion against Russia’s military leadership",
+      "Death in a plane crash in 2023"
+    ],
+    "character_detail": null,
+    "opening_options": [
+      {
+        "mode": "formative_episode",
+        "angle": "A street-food venture with his stepfather preceded larger commercial operations."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Acknowledging Wagner publicly preceded his open dispute with Russia’s military leadership."
+      }
+    ],
+    "excluded_transient_context": [
+      "Personally owned vessels",
+      "Speculative personal net worth",
+      "Current company offices and posthumous estate control",
+      "Financial totals attributed to government officials"
+    ],
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "The shared anchors are St Petersburg and Wagner leadership. The short alone carries Concord, the institutional catering business and Putin connection. The long adds the stepfather’s street-food partnership, grocery equity, the timing and public acknowledgement of Wagner’s establishment, its international operations and the final rebellion and death. It omits the short’s catering-contract mechanism. Reducing it to the short would lose those formative and public-life dimensions; no sentence restates the short’s complete bundle."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Forbes-first exact-name searches found articles but no personal Forbes profile. An attempted Forbes article read redirected to restricted access, so its contents were not adopted."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "food_beverage",
+    "label": "Food & Beverage",
+    "summary": "The principal early commercial fortune came from restaurants and Concord’s institutional catering contracts. Payments for meals were company trading revenue; the government’s assets were not his personal property.",
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "Independent accounts identify the expanding food business and the contracts that drove its scale."
+    },
+    "source_ids": [
+      "S3",
+      "S4"
+    ]
+  },
+  "primary_industry": {
+    "classification": "food_beverage",
+    "label": "Food & Beverage",
+    "summary": "On a final-active basis before his death, the evidence does not establish a dominant sector among his private catering, media, mineral and military-related interests. Wagner’s public prominence and state financing do not establish the relative value of his personal holdings. As the current principal private sector cannot be established, Food & Beverage is carried forward from the documented wealth-creation sector solely as a reporting fallback; this does not verify today's dominant holdings.",
+    "confidence": {
+      "score": 70,
+      "band": "medium",
+      "reason": "No dependable comparative private-asset valuation was established. Attributed company payments and organisational funding cannot substitute for personal net assets. The cited wealth-creation evidence supports Food & Beverage at 93 confidence. The primary-industry score of 70 reflects only an origin-sector reporting fallback, not independently verified current dominance."
+    },
+    "source_ids": [
+      "S3",
+      "S4"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "His core operating wealth arose through businesses he developed, progressing from food trading and retail equity into restaurants and catering. Family participation and later political connections are documented, but the evidence does not securely distinguish an independent from an advantaged starting position.",
+    "confidence": {
+      "score": 89,
+      "band": "high",
+      "reason": "The positive operating-ownership sequence supports the broad category. It does not justify a claim that he began without assistance or privilege."
+    },
+    "source_ids": [
+      "S3",
+      "S4"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "He established the catering business and subsequently founded Wagner, retaining a defining role in their development. This describes his relationship to the enterprises during his lifetime.",
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Reuters explicitly identifies his creation of the catering company and Wagner."
+    },
+    "source_ids": [
+      "S3"
+    ]
+  },
+  "biography": {
+    "plain_text": "Yevgeny Prigozhin was a Russian businessman who built Concord into a major catering contractor, supplying schools and the armed forces. His rise from St Petersburg’s restaurant trade depended on lucrative government contracts and connections with Vladimir Putin. He later became internationally known as the founder and leader of the Wagner Group.",
+    "html": "<p>Yevgeny Prigozhin was a Russian businessman who built Concord into a major catering contractor, supplying schools and the armed forces. His rise from St Petersburg’s restaurant trade depended on lucrative government contracts and connections with Vladimir Putin. He later became internationally known as the founder and leader of the Wagner Group.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "The direct reporting supports his commercial identity and the material relationship between restaurant activity, political connections and catering contracts."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S6"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Yevgeny Prigozhin began selling hot dogs with his stepfather in St Petersburg as the Soviet economy opened to private enterprise. He subsequently acquired a stake in a supermarket chain, moving from street trading into ownership of a larger retail business.\n\nThe Wagner Group became the focus of his later public life. He established the private military organisation in 2014 and publicly acknowledged founding it eight years later. Its operations extended to Ukraine, Syria and several African countries. In June 2023, he led its brief rebellion against Russia’s military leadership. He died in a plane crash that August, aged 62.",
+    "html": "<p>Yevgeny Prigozhin began selling hot dogs with his stepfather in St Petersburg as the Soviet economy opened to private enterprise. He subsequently acquired a stake in a supermarket chain, moving from street trading into ownership of a larger retail business.</p>\r\n<p>The Wagner Group became the focus of his later public life. He established the private military organisation in 2014 and publicly acknowledged founding it eight years later. Its operations extended to Ukraine, Syria and several African countries. In June 2023, he led its brief rebellion against Russia’s military leadership. He died in a plane crash that August, aged 62.</p>\r\n",
+    "word_count": 99,
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "The family venture and grocery stake are corroborated in direct reporting; Reuters establishes Wagner’s founding and public acknowledgement, operations, rebellion and confirmed death."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "action": "fill_missing",
+      "value": "Concord founder and Wagner Group leader",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "His creation of the catering business and leadership of Wagner are explicit in Reuters reporting."
+      },
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "action": "fill_missing",
+      "value": "Leningrad (now St Petersburg)",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The EU record gives the historical city name and its present name alongside his exact birth date."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "action": "correct_existing",
+      "existing_value": "Alive",
+      "value": "Dead",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Reuters reported confirmation by genetic testing after the August 2023 crash."
+      },
+      "source_ids": [
+        "S5"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yevgeny_Prigozhin",
+      "verification": "The exact personal reference article matches the full patronymic, birth date, birthplace and Concord/Wagner identity independently established by the EU record and Reuters. This is a reference article, not a personally controlled account.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Multiple distinctive identity facts match the primary record and independent reporting."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S8"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0241",
+      "name": "Restaurant groups",
+      "summary": "His St Petersburg restaurant operations were a defining commercial business preceding large-scale catering.",
+      "relationship_type": "founder",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Groups owners whose substantial restaurant operations materially shaped their wealth; his documented plurality of eateries satisfies the operating criterion.",
+      "confidence": {
+        "score": 88,
+        "band": "high",
+        "reason": "Direct reporting describes his own restaurant business and multiple luxury eateries, with their place in his commercial development."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "candidate_type": "personal_detail",
+      "field": "death_day",
+      "value": "23",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The obituary specifies the date, consistent with Reuters’ report of the Wednesday crash."
+      },
+      "source_ids": [
+        "S5",
+        "S7"
+      ],
+      "reason": "Verified fact retained for a later applicable inventory. The immutable source still says Alive, so death components are inapplicable in this dossier’s fill-missing inventory; the proposed mortality correction does not mutate that baseline."
+    },
+    {
+      "candidate_type": "personal_detail",
+      "field": "death_month",
+      "value": "August",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The exact death month is independently consistent with the confirmed crash reporting."
+      },
+      "source_ids": [
+        "S5",
+        "S7"
+      ],
+      "reason": "Review with the mortality correction; the source inventory classifies death fields as inapplicable while Alive."
+    },
+    {
+      "candidate_type": "personal_detail",
+      "field": "death_year",
+      "value": "2023",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The exact death year is independently consistent with the confirmed crash reporting."
+      },
+      "source_ids": [
+        "S5",
+        "S7"
+      ],
+      "reason": "Review with the mortality correction; the source inventory classifies death fields as inapplicable while Alive."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1769",
+      "title": "Immutable owner input 1769",
+      "publisher": "Superyacht Network; saved owner input",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Saved display name and full name, Russian nationality and 1 June 1961 birth date. St Vitamin relationship starts in July 2014. Mortality incorrectly remains Alive; biography and socials are blank."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://home.treasury.gov/news/press-releases/sm787",
+      "title": "Treasury Targets Assets of Russian Financier who Attempted to Influence 2018 U.S. Elections",
+      "publisher": "US Department of the Treasury",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "The September 2019 statement identifies Prigozhin’s personal-property arrangements and Beratex’s acquisition of St Vitamin in 2014. This establishes the exact person-to-vessel bridge through the registered company; vessel details are excluded from biographies."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32022D1315",
+      "title": "Council Implementing Decision (CFSP) 2022/1315",
+      "publisher": "Council of the European Union",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Yevgeniy Viktorovich Prigozhin: male, Russian, born 1 June 1961 in Leningrad, now St Petersburg. Exact identity and birthplace support."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.voanews.com/a/who-is-russian-mercenary-chief-yevgeny-prigozhin-/7151158.html",
+      "title": "Who Is Russian Mercenary Chief Yevgeny Prigozhin?",
+      "publisher": "Reuters, carried by Voice of America",
+      "tier": 2,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Commercial sequence from hot dogs to supermarket equity and his own restaurant and catering company; government supply contracts expanded Concord. Putin frequented the restaurant. Wagner’s 2014 founding, acknowledgement in September 2022 and international deployments."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.rferl.org/a/russia-ukraine-wagner-mercenaries-prigozhin/32473756.html",
+      "title": "Who Is Yevgeny Prigozhin?",
+      "publisher": "Radio Free Europe/Radio Liberty; Mike Eckel",
+      "tier": 2,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "The early hot-dog venture involved his stepfather; multiple St Petersburg eateries preceded institutional catering. The wider network included media and mineral interests. Only directly relevant commercial and public-identity facts are adopted."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.investing.com/news/world-news/russias-investigators-confirm-wagner-mercenary-chief-prigozhin-died-in-plane-crash-3162006",
+      "title": "Russia says genetic tests confirm Wagner chief Prigozhin died in plane crash",
+      "publisher": "Reuters, carried by Investing.com",
+      "tier": 2,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "On 27 August 2023, Reuters reported that genetic testing confirmed his death in the preceding Wednesday’s crash. The report also recounts the brief 23–24 June rebellion and its reversal."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.marketscreener.com/quote/currency/US-DOLLAR-RUSSIAN-ROUBLE--2370597/news/Prigozhin-to-be-investigated-after-being-paid-2-billion-in-a-year-Putin-44204133/",
+      "title": "Prigozhin to be investigated after being paid $2 billion in a year - Putin",
+      "publisher": "Reuters, carried by MarketScreener",
+      "tier": 2,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Putin attributed substantial state payments to Wagner and Concord’s army-food contracts in June 2023. These are attributed organisational and company totals, not independently valued personal wealth or evidence of ownership of state assets."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.theguardian.com/world/2023/aug/25/yevgeny-prigozhin-obituary",
+      "title": "Yevgeny Prigozhin obituary",
+      "publisher": "The Guardian; Jonathan Steele",
+      "tier": 2,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Confirms death on 23 August 2023."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://en.wikipedia.org/wiki/Yevgeny_Prigozhin",
+      "title": "Yevgeny Prigozhin",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Directly inspected personal reference article matches the full name, exact birth date and business identity. Used to verify the reference link, not as sole support for personal or wealth claims."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://home.treasury.gov/news/press-releases/jy0628",
+      "title": "Treasury Sanctions Russians Bankrolling Putin and Russia-Backed Influence Actors",
+      "publisher": "US Department of the Treasury",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "The March 2022 statement distinguishes roles and business interests held by Prigozhin and family members. It does not provide a comparative personal-asset valuation; relatives’ interests are not automatically transferred to him."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Identity is resolved above the 85 gate through exact full-name and birth-date agreement plus the primary St Vitamin acquisition bridge. Yevgeny and Yevgeniy are transliteration variants; the saved display name and identifiers are preserved.",
+    "The saved current-owner relationship and Alive status are stale in light of confirmed death. Only mortality is proposed for correction. The verified 23 August 2023 death components remain review candidates because the source inventory makes them inapplicable while Alive. No calculated age field is proposed.",
+    "Forbes was checked first with site:forbes.com/profile \"Yevgeny Prigozhin\" and site:forbes.ru Пригожин Евгений состояние Конкорд; a further query was site:forbes.ru \"Евгений Пригожин\" \"Конкорд\" бизнес. Results were reporting, not an exact personal profile. The Forbes article at https://www.forbes.com/sites/tylerroush/2023/08/23/who-is-yevgeny-prigozhin-putins-chef-turned-chief-rival-reportedly-in-fatal-plane-crash/ redirected to restricted access; no article facts were adopted.",
+    "Personal social searches covered all seven person-relevant supported types. Queries included \"Yevgeny Prigozhin\" site:linkedin.com/in/; \"Yevgeny Prigozhin\" site:instagram.com official; \"Yevgeny Prigozhin\" site:facebook.com official; \"Yevgeny Prigozhin\" site:x.com official; \"Yevgeny Prigozhin\" site:youtube.com official; \"Yevgeny Prigozhin\" site:tiktok.com; \"Yevgeny Prigozhin\" \"personal website\"; \"Евгений Пригожин\" \"официальный сайт\"; and \"Евгений Пригожин\" Instagram Facebook Twitter официальный. No personally controlled account met the verification rule. News videos, other people’s reactions, fan material and unsupported handles were excluded; TikTok access was also restricted.",
+    "Reporting links to Concord press-service channels on Telegram and VK. These company communications are not verified personal profiles and neither platform appears as a supported personal type in this input. They are not relabelled as another platform.",
+    "The Company Website search \"Concord Catering\" official website Prigozhin produced concord-catering.ru through secondary directories, but the direct site read failed. No unverified company URL is proposed. The Wikipedia personal article is the only verified reference-profile addition.",
+    "Secondary nationality and a secondary residence country were not established. Historical Leningrad is proposed as birthplace; existing modern-country labels are preserved. The record’s historical residence information is not repurposed as a current residence after death.",
+    "Food and catering created the early commercial fortune. Final-active primary industry remains Unknown because company revenue, military-group state financing and politically linked concessions do not establish the dominant component of his personal assets. No diversified-investments label is inferred from opacity.",
+    "The broad Self-made category records positive business formation and ownership. The evidence does not settle the starting-position subtype: the stepfather’s participation and later political connections are acknowledged without inventing initial capital amounts or treating public procurement as inherited state wealth.",
+    "The minimum active literal set is Restaurant groups. Catering and Wagner’s private military leadership have no securely fitting additional active literal assignment here. Defence is not inferred from supplying food to the army, Military officer is not inferred from leading Wagner, and Government-owned is inapplicable to this natural person. Incidental or insufficiently specified mineral, media and family-company interests are left untagged.",
+    "The prose omits unrelated allegations, sanctions and criminal detail. It includes the brief rebellion only as a directly relevant, strongly reported part of his final public leadership, without speculation about the cause of the subsequent crash."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal completed research decision. Identity, mortality correction and proposed values exceed their thresholds. Final-active dominant industry and the starting-position subtype remain conservatively unresolved. No source inputs, catalogue or live records were changed."
+  }
+}

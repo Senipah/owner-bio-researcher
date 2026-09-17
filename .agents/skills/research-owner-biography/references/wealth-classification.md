@@ -12,7 +12,8 @@ Describe four separate aspects of an owner's wealth:
 - `wealth_relationship`: the person's principal relationship to the
   wealth-producing assets.
 
-Do not compress these into one label. A technology founder who now principally
+Assess the industries separately, then use the origin-sector fallback below if
+current interests cannot be classified. A technology founder who now principally
 manages a diversified investment portfolio can have `Technology` as a wealth
 creation industry, `Finance & Investments` as a primary industry, `Self-made`
 as an origin, and `Family office principal` as a relationship.
@@ -162,6 +163,17 @@ identifiable private business or wealth-producing interests:
    operating interests can change.
 3. It may differ from `wealth_creation_industry` after a sale, reinvestment,
    or diversification.
+4. If the current principal sector remains unknown after research but
+   `wealth_creation_industry` is known, use that same sector and label for
+   `primary_industry`. This is a reporting fallback, not evidence that the
+   original business or industry still dominates current private wealth.
+   Explain the missing current evidence and the fallback explicitly in the
+   primary summary and confidence reason. Cite the origin-sector sources,
+   score the fallback conservatively (at least 70 and no higher than the
+   origin-sector score), and leave `wealth_origin` and `wealth_relationship`
+   to their separately evidenced classifications. If the origin sector is
+   also unknown, retain `primary_industry=unknown`; never turn a known
+   `wealth_origin` mechanism such as inheritance into an industry label.
 
 ## Wealth-origin values
 
@@ -248,12 +260,13 @@ and office-held assets:
 4. Use the evidenced private sector for each industry field, such as
    `real_estate`, `hospitality`, `finance_investments`, or `diversified`.
    `wealth_creation_industry` requires evidence for the sector that created
-   the relevant private family fortune; `primary_industry` requires evidence
-   for the current principal private interests.
+   the relevant private family fortune. For `primary_industry`, use evidence
+   of current private interests when available; otherwise use that verified
+   private origin sector as the disclosed fallback.
 5. Use `energy` only when private oil, gas, power, or related holdings
    demonstrably underpin the person's private wealth.
-6. When private wealth cannot be separated reliably from state or royal
-   assets, use `unknown` for either industry and explain the opacity. Do not
+6. When no private sector can be separated reliably from state or royal
+   assets, use `unknown` for both industries and explain the opacity. Do not
    substitute `diversified` or `energy` as a guess.
 7. Use `trustee_custodian` when the evidence establishes stewardship without
    personal ownership; use `royal_beneficiary` when personal benefit follows
@@ -264,6 +277,7 @@ and office-held assets:
 | Case | Wealth creation industry | Primary industry | Wealth origin | Wealth relationship |
 | --- | --- | --- | --- | --- |
 | Marijke Mars | Food & Beverage | Food & Beverage | Inherited | Heir / family shareholder |
+| Manufacturer whose original fortune is documented but whose current private holdings cannot be ranked; disclose the primary fallback in its reasoning | Manufacturing | Manufacturing | Self-made | Unknown |
 | Early Bitcoin investor whose current holdings span unrelated sectors and whose starting position is unclear | Cryptocurrency | Diversified | Self-made | Investor |
 | Traditional financier who later becomes active in crypto and built the career without a material family platform | Finance & Investments | Cryptocurrency or Finance & Investments, according to current evidence | Self-made — independent start | Investor |
 | Shahid Khan, who built an automotive supplier after arriving in the United States as a student | Automotive | Automotive | Self-made — independent start | Founder |

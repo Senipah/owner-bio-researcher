@@ -141,17 +141,24 @@ For every target owner:
 
 1. Run `inventory_owner.py` against the exact owner input and person ID.
 2. Resolve identity before enrichment using the name, business or public role,
-   geography, family context and yacht context.
+   geography, family context and yacht context. Require identity confidence
+   of at least 75 for a resolved owner.
 3. Search Forbes first and record `verified`, `not_found`, `ambiguous`, or
    `unavailable`.
 4. Research the origin of wealth or prominence and the principal current
    private interests using strong public sources.
-5. Populate independently:
+5. Research separately, then populate:
 
    - `wealth_creation_industry`;
    - `primary_industry`;
    - `wealth_origin`; and
    - `wealth_relationship`.
+
+   If current `primary_industry` cannot be established but
+   `wealth_creation_industry` is known, use the creation sector for both
+   industry fields. Explain in the primary summary and confidence reason that
+   this is an origin-sector fallback, without claiming verified current
+   holdings. Keep `wealth_origin` as a separate acquisition mechanism.
 
 6. Apply the current self-made starting-position distinctions:
 

@@ -728,6 +728,35 @@ def test_compiles_pending_preview_without_changing_baseline() -> None:
     assert document["owners"][0]["details"]["middle_names"]["value"] == ""
 
 
+@pytest.mark.parametrize(("score", "accepted"), [(74, False), (75, True)])
+def test_resolved_identity_threshold_is_75(score: int, accepted: bool) -> None:
+    document = new_document()
+    document["owners"] = [_owner(10, "First Owner", 1)]
+    dossier = _dossier(10, "First Owner")
+    dossier["owner"]["identity_confidence"] = {
+        "score": score,
+        "band": "medium",
+        "reason": "The identity is supported by the available sources.",
+    }
+
+    def compile_one() -> tuple[dict, dict]:
+        return compile_research_batch(
+            document,
+            {10: dossier},
+            {10: Path("output/10.research.json")},
+            source_path="output/source.json",
+            limit=1,
+            mark_ai_enriched=True,
+        )
+
+    if accepted:
+        derived, _ = compile_one()
+        assert derived["owners"][0]["workflow"]["ai_enriched"] is True
+    else:
+        with pytest.raises(ValueError, match="identity"):
+            compile_one()
+
+
 def test_batch_compiler_rejects_owner_level_candidate_output() -> None:
     document = new_document()
     document["owners"] = [_owner(10, "First Owner", 1)]

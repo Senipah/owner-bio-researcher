@@ -6,6 +6,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
+from .constants import IDENTITY_CONFIDENCE_THRESHOLD
 from .tags import (
     TagCatalogue,
     TagResolutionError,
@@ -344,7 +345,7 @@ def apply_dossier(
     identity_score = _confidence_score(
         {"confidence": dossier.get("owner", {}).get("identity_confidence", {})},
         f"owner {person_id} identity",
-        minimum=0 if unusable_research else 85,
+        minimum=0 if unusable_research else IDENTITY_CONFIDENCE_THRESHOLD,
     )
 
     review_status = dossier.get("review", {}).get("status")

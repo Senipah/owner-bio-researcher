@@ -1,0 +1,563 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 3011,
+    "display_name": "Mr Costas Spiliadis",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The source record separates Mr as the title and Costas and Spiliadis as the first and last names, identifies Greek nationality and Canadian residence, and supplies an exact LinkedIn profile. Forbes, the official Estiatorio Milos biography and multiple direct interviews independently identify the same Greek-born, Montreal-based founder, while the LinkedIn page matches Milos, Montreal and Concordia University. This exact name, geography, education and company convergence resolves the identity."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "LinkedIn"
+    ],
+    "missing_priority_social_types": [
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Greek-born restaurateur, chef and founder of the family-owned Estiatorio Milos restaurant group.",
+    "defining_work": "Reframing Greek cuisine as international fine dining through pristine seafood, ingredient-led cooking, open fish displays and family-controlled expansion.",
+    "formative_context": "After leaving Patras for university in North America, he studied sociology, helped establish a Montreal community radio station and missed the Greek food culture of his childhood.",
+    "decisive_moment": "He used a bank loan to open the first Milos in Montreal in 1979 despite having no professional restaurant or cooking experience.",
+    "enduring_dimensions": [
+      "Founder-led international restaurant growth",
+      "Greek seafood, sourcing and ingredient-centred fine dining",
+      "Independent family ownership and measured hospitality diversification"
+    ],
+    "character_detail": "Spiliadis treats the preservation of each restaurant's character as more important than rapid expansion, favouring operating cash flow and family control over franchising or outside capital.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Introduce Spiliadis as the Greek-born founder guiding the international Milos restaurant group."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Begin with the immigrant community broadcaster who opened a restaurant to correct North America's narrow image of Greek food."
+      },
+      {
+        "mode": "defining_achievement",
+        "angle": "Lead with his transformation of market-fresh Greek seafood into a globally recognised fine-dining language."
+      }
+    ],
+    "excluded_transient_context": [
+      "Current and historical private-vessel names, specifications, ownership and cohort ranking",
+      "Point-in-time restaurant counts, opening pipelines, revenue, valuations and employee totals",
+      "Celebrity clientele, menu prices and individual property details",
+      "Private family details beyond the documented family-control model",
+      "Unverified exact birth date, secondary citizenship and net-worth estimates"
+    ],
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "The short biography gives the current founder identity, culinary thesis and family-control model. The long biography instead follows migration, community broadcasting, the original bank-financed restaurant, the operating philosophy behind measured growth and the later hospitality extension. Both omit private-asset material and volatile figures."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes-first research found a substantial exact-person Forbes staff feature about Costas Spiliadis and Milos, but no dedicated /profile/ person page. The feature is used as a high-quality reporting source, not misclassified as a staff-facing Forbes profile link."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "food_beverage",
+    "label": "Food & Beverage",
+    "summary": "Spiliadis created wealth by founding and internationally expanding the Estiatorio Milos fine-dining restaurant group.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes identifies the family-owned Milos restaurant business as Spiliadis' core commercial platform, while official company biographies and direct interviews trace its growth from the original Montreal restaurant. Hotels and other hospitality ventures came later and remain extensions of the restaurant brand."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S7",
+      "S8"
+    ]
+  },
+  "primary_industry": {
+    "classification": "food_beverage",
+    "label": "Food & Beverage",
+    "summary": "His principal current business remains the family-controlled Milos restaurant group, centred on Greek seafood and international fine dining.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The current Milos site, Forbes reporting, a recent public-broadcaster profile and venue partners all identify Spiliadis primarily as the founder and guiding chef of an active international restaurant group. His boutique hotel and experiential ventures support a hospitality classification but do not outweigh restaurants as the principal sector."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S6",
+      "S10"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made_independent",
+    "label": "Self-made — independent start",
+    "summary": "Spiliadis started Milos without a family restaurant platform, professional culinary training or substantial personal capital and financed early growth through a bank loan and later operating cash flow.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes' direct reporting records his arrival with little money, lack of cooking and restaurant experience, original bank loan and later cash-flow financing. Direct interviews independently describe his transition from sociology and community radio into a two-person restaurant operation built from scratch."
+    },
+    "source_ids": [
+      "S2",
+      "S7",
+      "S8",
+      "S9"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Spiliadis founded Estiatorio Milos and remains its guiding chef and controlling family principal.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The official Milos biography, Forbes reporting, current venue factsheets and Spiliadis' LinkedIn identity consistently identify him as founder. Forbes further establishes continuing complete ownership by Spiliadis and his family and his active role in expansion and standards."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S5",
+      "S6"
+    ]
+  },
+  "biography": {
+    "plain_text": "Costas Spiliadis is a Greek-born restaurateur and founder of Estiatorio Milos, the family-owned fine-dining group he began in Montreal. Drawing on his mother’s cooking and uncompromising seafood sourcing, he elevated Greek cuisine in North America before expanding internationally. He remains the brand’s guiding chef, preserving direct family control while adding hotels and broader luxury-hospitality ventures.",
+    "html": "<p>Costas Spiliadis is a Greek-born restaurateur and founder of Estiatorio Milos, the family-owned fine-dining group he began in Montreal. Drawing on his mother’s cooking and uncompromising seafood sourcing, he elevated Greek cuisine in North America before expanding internationally. He remains the brand’s guiding chef, preserving direct family control while adding hotels and broader luxury-hospitality ventures.</p>\r\n",
+    "word_count": 55,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Official Milos biographies, Forbes' direct feature, current venue material and multiple interviews support Spiliadis' founder identity, Greek origin, Montreal launch, family influence, seafood-sourcing method, international expansion, continuing creative control and later hospitality ventures."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S6",
+      "S7",
+      "S10"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Spiliadis left Patras as a young student, continued sociology studies in Montreal and helped establish Radio Centre-Ville for immigrant communities. Frustrated that local restaurants reduced Greece’s culinary tradition to familiar stereotypes, he used a bank loan to open his first dining room in 1979. The idea centred on pristine ingredients, simple preparation, shared plates and a visible fish market.\n\nRather than franchise or depend on outside capital, Spiliadis financed measured growth from operating cash flow and retained ownership with his family. That discipline carried Milos into major cities across Europe, North America, Asia and the Middle East. His hospitality platform later extended to an Athens boutique hotel and other Greek experiences. Spiliadis continues to shape Milos through its ingredient networks, restaurant craft and deliberate presentation of Greek culture.",
+    "html": "<p>Spiliadis left Patras as a young student, continued sociology studies in Montreal and helped establish Radio Centre-Ville for immigrant communities. Frustrated that local restaurants reduced Greece’s culinary tradition to familiar stereotypes, he used a bank loan to open his first dining room in 1979. The idea centred on pristine ingredients, simple preparation, shared plates and a visible fish market.</p>\r\n<p>Rather than franchise or depend on outside capital, Spiliadis financed measured growth from operating cash flow and retained ownership with his family. That discipline carried Milos into major cities across Europe, North America, Asia and the Middle East. His hospitality platform later extended to an Athens boutique hotel and other Greek experiences. Spiliadis continues to shape Milos through its ingredient networks, restaurant craft and deliberate presentation of Greek culture.</p>\r\n",
+    "word_count": 128,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Direct interviews, Forbes reporting, official Milos material and venue factsheets support the migration and education sequence, community-radio role, bank-financed Montreal opening, culinary format, family-controlled cash-flow model, international reach and hotel extension."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S6",
+      "S7",
+      "S8",
+      "S9"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "correct_existing",
+      "field": "display_name",
+      "existing_value": "Mr Costas Spiliadis",
+      "value": "Costas Spiliadis",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Mr is already stored in the dedicated title field and should not be duplicated in the display name. Forbes, the official Milos biography and his verified LinkedIn profile consistently present the professional name as Costas Spiliadis."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S5"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "known_for_title",
+      "value": "Founder of Estiatorio Milos",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The official Milos biography, Forbes staff feature, venue factsheet and verified LinkedIn identity all identify Spiliadis as the founder of Estiatorio Milos."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S5",
+        "S6"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "place_of_birth",
+      "value": "Patras",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The current official Milos biography says Spiliadis was born in Patras, and he gives Patras as his birthplace in direct interviews."
+      },
+      "source_ids": [
+        "S3",
+        "S8",
+        "S9"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "birth_year",
+      "value": "1946",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "In a first-person Greek interview Spiliadis states that he was born in Patras in 1946. Forbes' reported age of 78 in August 2024 is consistent with 1946, although some secondary biographical pages give 1947."
+      },
+      "source_ids": [
+        "S2",
+        "S9"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "biography",
+      "value": "<p>Costas Spiliadis is a Greek-born restaurateur and founder of Estiatorio Milos, the family-owned fine-dining group he began in Montreal. Drawing on his mother’s cooking and uncompromising seafood sourcing, he elevated Greek cuisine in North America before expanding internationally. He remains the brand’s guiding chef, preserving direct family control while adding hotels and broader luxury-hospitality ventures.</p>\r\n",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The blank biography is filled with a durable exact-person profile covering the verified founder identity, culinary method, international expansion and family-controlled operating model while excluding private-asset facts and volatile figures."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S4",
+        "S6",
+        "S7"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.estiatoriomilos.com/costas-spiliadis/",
+      "verification": "The official Estiatorio Milos biography is dedicated to founder Costas Spiliadis and matches his Patras origin, North American education, Montreal launch and current culinary role.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "This is the exact founder biography on the current official website of the restaurant group he created and continues to guide."
+      },
+      "source_ids": [
+        "S3",
+        "S5",
+        "S6"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0241",
+      "name": "Restaurant groups",
+      "summary": "Spiliadis founded and controls the international Estiatorio Milos restaurant group, his defining operating and wealth-creation platform.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Forbes, official Milos biographies, venue factsheets and direct interviews consistently establish an international, family-owned group of Milos restaurants under Spiliadis' continuing control."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S4",
+        "S6"
+      ]
+    },
+    {
+      "tag_id": "tag_0111",
+      "name": "Luxury hospitality",
+      "summary": "Milos combines international fine dining with a boutique hotel and other high-end Greek hospitality experiences developed under Spiliadis' family-controlled platform.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Forbes characterises Milos as a major family-owned luxury-hospitality company and documents restaurants, an Athens boutique hotel and related ventures; current official sources confirm the hotel and fine-dining positioning."
+      },
+      "source_ids": [
+        "S2",
+        "S4",
+        "S6"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=3011",
+      "title": "Mr Costas Spiliadis owner record, person ID 3011",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Immutable person ID and source-record display name",
+        "Mr stored separately as title and Costas Spiliadis parsed as first and last names",
+        "Greek nationality, Canada residence and Greece birth country",
+        "Male gender and saved Alive status",
+        "Existing exact LinkedIn profile",
+        "Private-asset relationship used only for identity disambiguation"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/sites/chloesorvino/2024/08/01/costas-spiladias-milos-100-million-family-owned-greek-restaurant-empire/",
+      "title": "The $100 Million Family-Owned Greek Restaurant Empire Taking On Nobu And Carbone",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Exact identity as Costas Spiliadis, Milos founder and restaurateur",
+        "Self-made start, original bank loan and absence of professional cooking experience",
+        "Family's complete ownership of the business",
+        "Cash-flow-funded international restaurant expansion",
+        "Later diversification into boutique-hotel and wider hospitality ventures",
+        "Reported age consistent with a 1946 birth year"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.estiatoriomilos.com/costas-spiliadis/",
+      "title": "Costas Spiliadis",
+      "publisher": "Estiatorio Milos",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Current official founder biography",
+        "Birth in Patras",
+        "NYU, Montreal and Concordia education sequence",
+        "Original Montreal restaurant opening",
+        "Ingredient-led Greek fine-dining philosophy",
+        "Continuing status as Milos' guiding culinary figure"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://xenodocheiomilos.com/About",
+      "title": "About Xenodocheio Milos",
+      "publisher": "Xenodocheio Milos",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Costas Spiliadis as executive chef and founder",
+        "Patras origin and influence of his mother's cooking",
+        "North American university study",
+        "Montreal launch and international expansion chronology",
+        "Athens hotel extension of the Milos hospitality platform"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://ca.linkedin.com/in/costas-spiliadis-a714a0b2",
+      "title": "Costas Spiliadis - Estiatorio Milos",
+      "publisher": "LinkedIn",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Exact existing personal-profile URL",
+        "Montreal, Quebec geography",
+        "Estiatorio Milos professional identity",
+        "Concordia University education",
+        "Direct owner and group-management activity"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.marinabaysands.com/content/dam/singapore/marinabaysands/master/main/home/company-information/media-centre/factsheets/restaurants/estiatorio-milos.pdf",
+      "title": "Estiatorio Milos fact sheet",
+      "publisher": "Marina Bay Sands",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Costas Spiliadis as Milos founder",
+        "Patras origin, North American study and Concordia degree",
+        "Montreal opening and family-run structure",
+        "Shared plates, open kitchens and visible fish-market innovations",
+        "Continuing international restaurant operations"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.estiator.com/how-costas-spiliadis-conquered-the-world/",
+      "title": "How Costas Spiliadis Conquered the World",
+      "publisher": "Estiator",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Direct interview with Costas Spiliadis",
+        "Family culinary influence and rejection of Greek-food stereotypes",
+        "Move from the United States to Montreal",
+        "Sociology studies and Radio Centre-Ville co-founding",
+        "Founder mission and early Montreal restaurant development"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://totalfood.com/costas-spiliadis-chef-owner-estiatorio-milos-new-york-ny/",
+      "title": "Costas Spiliadis, Chef/Owner, Estiatorio Milos",
+      "publisher": "Total Food Service",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "First-person statement that he was born in Patras",
+        "Arrival in New York as a student",
+        "Sociology study in the United States and Canada",
+        "Community-radio programming role",
+        "Opening the first Milos to offer a different model of Greek dining"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.huffingtonpost.gr/life/kostas-spiliadis-apo-tin-patra-ston-kosmo-ki-apo-ton-kosmo-sta-kithira/",
+      "title": "Costas Spiliadis: From Patras to the world and from the world to Kythira",
+      "publisher": "HuffPost Greece",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "First-person statement that he was born in Patras in 1946",
+        "Independent North American student migration",
+        "Concordia sociology degree",
+        "Radio Centre-Ville co-founding and immigrant-community work",
+        "Transition from community activity to founding Milos"
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://vog.ert.gr/article/costas-spiliadis-in-a-rare-radio-interview-on-the-sweet-life-08-aug-2025-17-00/?lang=en",
+      "title": "Costas Spiliadis in a rare radio interview on The Sweet Life",
+      "publisher": "Voice of Greece - ERT",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Current public profile and continuing activity",
+        "Birth and upbringing in Patras",
+        "Montreal restaurant opening",
+        "Transformation of perceptions of Greek cuisine abroad",
+        "Active cultural connection between Greece and Canada"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Identity is resolved at 100 through the exact name, Greek origin, Canadian residence, Estiatorio Milos founder role, Montreal and Concordia links across the source record, verified LinkedIn, Forbes, official company pages and direct interviews.",
+    "Mr is a courtesy title stored correctly in the separate title field. The display name is proposed as Costas Spiliadis so the honorific is not duplicated, while the title field remains unchanged. The report projection that repeats the full display string in its last-name slot is treated as source-export noise rather than a different identity.",
+    "Forbes published a substantial staff-written exact-person feature but no dedicated /profile/ person page was found. The article supports identity and all wealth questions, while forbes_profile remains not_found and no Forbes social link is proposed.",
+    "Spiliadis states in a first-person Greek interview that he was born in Patras in 1946, consistent with Forbes' reported age in August 2024. Some weaker secondary pages give 1947, so birth year confidence is 95 and no exact day or month is proposed.",
+    "Self-made — independent start is supported by Forbes' account of limited arrival resources, no restaurant experience, an original bank loan and cash-flow-funded growth, together with direct interviews describing his move from community radio into a two-person restaurant operation.",
+    "Food & Beverage is used for both wealth creation and current primary industry because restaurants remain the central business despite later hotel and experiential diversification. Luxury hospitality is captured separately as a supported tag.",
+    "Founder is the wealth relationship because Spiliadis created Milos and remains its guiding chef and family principal. His children now participate in the group, but no succession has displaced his documented active role.",
+    "Forbes reports that Spiliadis and his family completely own the private business, but no independently audited current personal net-worth estimate or exact intrafamily allocation is public. No valuation claim is made.",
+    "The private-vessel context was used only for identity disambiguation. Both biographies exclude vessel names, charter details, dimensions, legal ownership and cohort information.",
+    "The existing LinkedIn is verified by matching Milos, Montreal and Concordia and is not duplicated in proposed_socials. The current official founder biography is proposed as a Company Website; no collision-safe personal Instagram, Facebook, X, YouTube, TikTok or personal website met the verification threshold.",
+    "No strong reviewed source establishes a middle name or secondary nationality. Although Spiliadis has lived in Canada for decades and is widely described as Greek-Canadian, citizenship evidence was not strong enough to fill the secondary-nationality field."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier. Identity confidence is 100 through the exact Milos founder identity, Greek and Canadian geography, official biography, Forbes feature, direct interviews and verified LinkedIn. The honorific is retained in its title field but removed from the proposed display name; birthplace, birth year, known-for title and biography are filled; all four wealth questions are independently classified; and only supported active socials and tags are included. Nothing has been compiled or applied."
+  }
+}

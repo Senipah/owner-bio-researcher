@@ -86,6 +86,11 @@ def _load_people(directory: Path) -> tuple[list[dict[str, Any]], list[str]]:
                 **classifications,
                 "opening_mode": assessment.get("opening_mode"),
                 "narrative_shape": assessment.get("narrative_shape"),
+                "reviewed_commercial_yacht_phrases": tuple(
+                    item["phrase"] for item in assessment.get("reviewed_phrase_exceptions", [])
+                    if isinstance(item, dict) and item.get("kind") == "commercial_maritime"
+                    and isinstance(item.get("phrase"), str)
+                ),
             }
         )
     return people, problems
@@ -179,6 +184,7 @@ def audit(
                     if section == "short"
                     else "long_biography"
                 ),
+                reviewed_commercial_yacht_phrases=person["reviewed_commercial_yacht_phrases"],
             )
             issues.extend(
                 f"{person['name']} {section}: {finding}"

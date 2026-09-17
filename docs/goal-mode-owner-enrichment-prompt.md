@@ -130,8 +130,12 @@ After all dossiers validate, perform a main-agent consistency review:
   origin classifications are applied consistently;
 - wealth-creation industry follows the sector that principally created the
   original fortune, current primary industry follows the principal
-  identifiable private interests as of research, and relationship
-  distinguishes founders, operators, investors, heirs, family office
+  identifiable private interests as of research; when current primary industry
+  is unknown but the wealth-creation sector is known, use that origin sector
+  for both industry fields and disclose the fallback without asserting
+  current holdings;
+- identity confidence must reach 75 for a resolved owner;
+- wealth relationship distinguishes founders, operators, investors, heirs, family office
   principals, royal beneficiaries, custodians, and passive owners;
 - proposed select values use labels supported by the owner form;
 - social type IDs match the input lookup;

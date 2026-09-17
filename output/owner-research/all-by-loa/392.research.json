@@ -1,13 +1,13 @@
 {
   "schema_version": 8,
-  "record_type": "unresolved_placeholder",
+  "record_type": "person",
   "owner": {
     "person_id": 392,
     "display_name": "Rebecca Byrne",
     "identity_confidence": {
-      "score": 78,
-      "band": "medium",
-      "reason": "A neighbouring frozen record identifies Mark James Byrne as Irish and resident in Bermuda, while an SEC filing for Bermuda reinsurer Flagstone identifies a Rebecca Byrne as the wife of reporting person Mark J. Byrne and as a direct shareholder. That is a plausible correspondence, but Rebecca's own source record supplies no nationality, residence, age, employer, biography, relationship field or other independent attribute. The common name and numerous incompatible public matches prevent the candidate from clearing the 85-point identity gate."
+      "score": 97,
+      "band": "very_high",
+      "reason": "The exact Mark James Byrne in the neighbouring source record is independently identified as the Bermuda reinsurer by SEC filings, and the source records place Mark and Rebecca in a sequential relationship to the same vessel around his April 2017 death. Mark's published family obituary names wife Rebecca and daughter Sophie in Montreal. Sophie's Dartmouth archive account names her mother Rebecca and independently matches Bermuda, Montreal and Canadian background. Launch It identifies Rebecca Byrne as its co-founder and chair of the Byrne Charitable Trust; the UK charity register lists chair Rebecca Knox-Byrne, while Mark's obituary names Knox in-laws. UK Companies House records the Launch It trustee Rebecca Byrne as Canadian and resident in Canada. These independent name, family, place and institutional matches resolve person ID 392 without treating the vessel as biography evidence."
     }
   },
   "input_snapshot": {
@@ -91,110 +91,271 @@
       "16": "TikTok"
     }
   },
-  "research_status": "insufficient_evidence",
-  "biography_brief": null,
-  "editorial_assessment": null,
-  "editorial_note": {
-    "plain_text": "Rebecca Byrne is a common-name record with no nationality, residence, employer, birth details or biography. A neighbouring Mark James Byrne record matches the Bermuda insurance executive whose SEC filing names a wife, Rebecca Byrne, with a historical Flagstone shareholding. The correspondence is plausible but not definitive, and the filing establishes neither her professional role nor principal wealth. Identity and wealth fields therefore remain unresolved.",
-    "confidence": {
-      "score": 100,
-      "band": "very_high",
-      "reason": "The note accurately summarizes the frozen-data gap, the only plausible candidate path and the reason the record remains below the identity gate."
-    },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Rebecca Byrne is a Canadian charity founder and trustee involved in youth enterprise and charitable grantmaking.",
+    "defining_work": "She helped establish Launch It Trust and co-established the Byrne Charitable Trust, which she continues to chair.",
+    "formative_context": "Born and raised in Alberta, she lived in Bermuda for a decade and later in Montreal; her husband Mark Byrne worked in Bermuda insurance and reinsurance.",
+    "decisive_moment": "She and Mark initiated the Byrne Charitable Trust in 2002, and she continued chairing it after his death in 2017.",
+    "enduring_dimensions": [
+      "Longstanding Launch It trusteeship and support for young enterprise",
+      "Charitable grantmaking across education, health and poverty relief",
+      "Membership of the New York State Bar and Chartered Institute of Arbitrators, without an inferred legal career"
+    ],
+    "character_detail": "She volunteered as a business adviser and mentor with The Prince's Trust.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Open with her Canadian background and long Launch It trusteeship."
+      },
+      {
+        "mode": "institution_or_asset",
+        "angle": "Open with the Byrne Charitable Trust and her continuing chair role."
+      }
+    ],
+    "excluded_transient_context": [
+      "Personal vessel names, relationships, specifications and ownership chronology",
+      "Mark Byrne's wealth or reinsurance career treated as Rebecca's own occupation or wealth mechanism",
+      "Historical Flagstone share count or an inferred principal investment portfolio",
+      "Unverified current city, exact age, social accounts and private family detail",
+      "Source attribution, evidence gaps and classification deliberation"
+    ],
     "source_ids": [
-      "S1",
-      "S2",
       "S3",
-      "S4"
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11"
     ]
   },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 4,
+    "opening_mode": "present_identity",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "sparse_public_record"
+    ],
+    "notes": "The shared anchors are Rebecca and Launch It. The short profile alone uses her Canadian identity, youth-enterprise mentoring and professional memberships. The long profile instead develops the separate family trust, its grant purposes, Rebecca's sustained chair role, and her Alberta-Bermuda-Montreal background. It omits the Bar and arbitration credentials; reducing it to the short profile would lose the trust's history and grantmaking purposes."
+  },
+  "editorial_note": null,
   "forbes_profile": {
     "status": "not_found",
     "url": null,
     "confidence": {
       "score": 98,
       "band": "very_high",
-      "reason": "Focused exact-name and site:forbes.com searches returned no dedicated Forbes profile for a Rebecca Byrne matching either the sparse owner record or the tentative Bermuda-insurance candidate."
+      "reason": "Focused exact-name and site:forbes.com/profile searches found no dedicated Forbes profile matching the now-resolved Canadian Launch It and Byrne Charitable Trust founder; the Forbes result for a London artist is a namesake."
     }
   },
   "wealth_creation_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No defensible identity or evidence of the subject's wealth-creating activity is available.",
+    "summary": "No public source establishes the sector that created Rebecca Byrne's principal private wealth. Her charity roles are not wealth-producing, and a historical Flagstone shareholding cannot establish the origin sector.",
     "confidence": {
-      "score": 100,
+      "score": 98,
       "band": "very_high",
-      "reason": "The only potentially relevant filing documents a historical shareholding by a common-name candidate; it does not establish the source of that person's wealth or prove the candidate is this record."
+      "reason": "The SEC filing documents a limited historical shareholding but not the origin, scale or continuing composition of her wealth. Mark Byrne's reinsurance career cannot be copied to her."
     },
     "source_ids": [
-      "S1",
-      "S3"
+      "S3",
+      "S5",
+      "S7",
+      "S8"
     ]
   },
   "primary_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No principal current or historical private business interest can be assigned to this unresolved person record.",
+    "summary": "Her principal current private wealth sector is not established; the recorded charity trusteeships do not constitute personal commercial holdings.",
     "confidence": {
-      "score": 100,
+      "score": 98,
       "band": "very_high",
-      "reason": "The source record has no employer or business data, and a small historical securities position attributed to a tentative namesake cannot establish a principal industry."
+      "reason": "Companies House and charity records verify public-interest governance, while the SEC filing only verifies an old securities position. Because wealth-creation industry is also unknown, no origin-sector fallback can be applied."
     },
     "source_ids": [
-      "S1",
-      "S3"
+      "S3",
+      "S7",
+      "S8",
+      "S9"
     ]
   },
   "wealth_origin": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Public evidence does not establish whether this person's wealth was earned, founded, inherited, transferred through family or produced through investment.",
+    "summary": "There is no evidence establishing whether her principal wealth was earned, inherited, transferred within the family or produced by investment.",
     "confidence": {
-      "score": 100,
+      "score": 98,
       "band": "very_high",
-      "reason": "Neither the frozen record nor the tentative candidate sources explain a principal wealth mechanism. Spousal identification in a securities filing is not evidence that wealth was transferred through marriage."
+      "reason": "The obituary documents a spouse and joint charity work, and the SEC filing documents shares she owned herself; neither proves inheritance, a spousal transfer or her principal wealth mechanism."
     },
     "source_ids": [
-      "S1",
-      "S3"
+      "S3",
+      "S5"
     ]
   },
   "wealth_relationship": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "No reliable evidence establishes a founder, operator, investor, heir, family-office or passive-owner relationship to principal wealth-producing assets.",
+    "summary": "Her main relationship to wealth-producing assets is not established; an old Flagstone stake does not prove a principal investor or passive-owner identity.",
     "confidence": {
-      "score": 100,
+      "score": 98,
       "band": "very_high",
-      "reason": "The SEC filing documents direct ownership of 50,000 Flagstone shares by the tentative Rebecca Byrne candidate, but no management role and no proof that the position represented her principal wealth. It therefore cannot support an Investor or Passive asset owner classification."
+      "reason": "Rebecca was a direct historical holder of Flagstone shares but the filing gives no professional role or evidence that the stake was her principal asset. Her charity governance is not private-asset ownership."
     },
     "source_ids": [
-      "S1",
-      "S3"
+      "S3",
+      "S7",
+      "S8"
     ]
   },
-  "biography": null,
-  "long_biography": null,
-  "proposed_details": [],
-  "proposed_socials": [],
-  "proposed_tags": [],
-  "candidates_requiring_review": [
+  "biography": {
+    "plain_text": "Rebecca Byrne is a Canadian co-founder and trustee of Launch It Trust, a London charity helping young people start businesses. She previously volunteered as a business adviser and mentor with The Prince's Trust. A member of the New York State Bar and Chartered Institute of Arbitrators, she has remained involved in enterprise support for decades.",
+    "html": "<p>Rebecca Byrne is a Canadian co-founder and trustee of Launch It Trust, a London charity helping young people start businesses. She previously volunteered as a business adviser and mentor with The Prince's Trust. A member of the New York State Bar and Chartered Institute of Arbitrators, she has remained involved in enterprise support for decades.</p>\r\n",
+    "word_count": 55,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Launch It's official trustee profile supports co-founder and trustee status, prior Prince's Trust mentoring and the two professional memberships; Companies House supports Canadian nationality and a long-running trustee role. No inference of active legal practice is made."
+    },
+    "source_ids": [
+      "S7",
+      "S9",
+      "S11"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Rebecca Byrne and her husband Mark established the Byrne Charitable Trust in 2002. She remains its chair. The charity's remit covers education, poverty relief and public health, including grants for medical equipment and healthcare projects. Its recorded work extends beyond Britain to Bermuda, Canada, Switzerland and the United States.\n\nByrne was born and raised in Alberta and spent ten years living in Bermuda before later settling in Montreal. She also lived in England, Japan, Switzerland and the United States. She also remains a trustee of Launch It Trust, a separate organisation that provides affordable workspace, mentoring and business support to young entrepreneurs.",
+    "html": "<p>Rebecca Byrne and her husband Mark established the Byrne Charitable Trust in 2002. She remains its chair. The charity's remit covers education, poverty relief and public health, including grants for medical equipment and healthcare projects. Its recorded work extends beyond Britain to Bermuda, Canada, Switzerland and the United States.</p>\r\n<p>Byrne was born and raised in Alberta and spent ten years living in Bermuda before later settling in Montreal. She also lived in England, Japan, Switzerland and the United States. She also remains a trustee of Launch It Trust, a separate organisation that provides affordable workspace, mentoring and business support to young entrepreneurs.</p>\r\n",
+    "word_count": 102,
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "The family obituary, charity register, Dartmouth first-person family account, Launch It trustee record and official mission page support each trust, grantmaking, family, location and enterprise-service claim. The Montreal reference is historical rather than a current-city assertion."
+    },
+    "source_ids": [
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11"
+    ]
+  },
+  "proposed_details": [
     {
-      "candidate_type": "identity",
-      "candidate_value": "Rebecca Byrne, wife of Bermuda insurance investor Mark J. Byrne and historical Flagstone shareholder",
+      "field": "nationality",
+      "value": "Canadian",
+      "action": "fill_missing",
       "confidence": {
-        "score": 78,
-        "band": "medium",
-        "reason": "The adjacent frozen Mark James Byrne record matches the surname, Bermuda residence and insurance-investor identity of the SEC reporting person whose wife Rebecca held Flagstone shares. Rebecca's own record has no independent attributes, so adjacency and spousal-name correspondence are insufficient for acceptance."
+        "score": 98,
+        "band": "very_high",
+        "reason": "UK Companies House explicitly records the resolved Launch It trustee Rebecca Byrne as Canadian, consistent with the family account of Alberta birth and upbringing."
       },
       "source_ids": [
-        "S1",
-        "S2",
-        "S3",
-        "S4"
+        "S6",
+        "S9"
+      ]
+    },
+    {
+      "field": "main_residence_country",
+      "value": "Canada",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "The active Companies House significant-control record lists country of residence Canada, consistent with the family account placing her in Montreal."
+      },
+      "source_ids": [
+        "S6",
+        "S9"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Launch It Trust co-founder and Byrne Charitable Trust chair",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Launch It names her as an initial founder and identifies her chairmanship of the Byrne Charitable Trust; the UK charity register independently lists her as chair."
+      },
+      "source_ids": [
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Female",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Her daughter's first-person Dartmouth account explicitly describes Rebecca as female."
+      },
+      "source_ids": [
+        "S6"
+      ]
+    },
+    {
+      "field": "birth_country",
+      "value": "Canada",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Her daughter's first-person Dartmouth account says Rebecca was born and raised in Alberta, Canada."
+      },
+      "source_ids": [
+        "S6"
+      ]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Rebecca Byrne is a Canadian co-founder and trustee of Launch It Trust, a London charity helping young people start businesses. She previously volunteered as a business adviser and mentor with The Prince's Trust. A member of the New York State Bar and Chartered Institute of Arbitrators, she has remained involved in enterprise support for decades.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "The proposed text uses only her verified Canadian nationality, charity founder/trustee status, past mentoring and documented professional memberships."
+      },
+      "source_ids": [
+        "S7",
+        "S9",
+        "S11"
       ]
     }
   ],
+  "proposed_socials": [
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.launchit.org.uk/",
+      "verification": "The official Launch It site directly identifies Rebecca Byrne as an initial founder and current London trustee; the trust is a company limited by guarantee. This is an institutional link, not a personal social account.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The first-party trustee page and current official programme pages establish her founding and continuing governance relationship to the organisation."
+      },
+      "source_ids": [
+        "S7",
+        "S10",
+        "S11"
+      ]
+    }
+  ],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
   "sources": [
     {
       "id": "S1",
@@ -256,90 +417,132 @@
     },
     {
       "id": "S5",
-      "url": "https://www.treefera.com/our-team",
-      "title": "The Team Behind Treefera",
-      "publisher": "Treefera",
-      "tier": 1,
-      "accessed_at": "2026-08-03",
+      "url": "https://vnews.com/2017/04/13/mark-byrne-obituary-hanover-nh-9249409/",
+      "title": "Mark James Byrne",
+      "publisher": "Valley News",
+      "tier": 2,
+      "accessed_at": "2026-09-14",
       "supports": [
-        "A distinct Rebecca Byrne working as Head of Customer Operations",
-        "Professional role without any matching Bermuda, insurance or ownership attributes",
-        "Representative common-name candidate rejected for insufficient correspondence"
+        "Mark's April 2017 death in Montreal and surviving wife Rebecca and daughter Sophie",
+        "Mark and Rebecca jointly initiated the Byrne Charitable Trust in 2002",
+        "The Knox family name of Rebecca's parents",
+        "Historical family association with Bermuda"
       ]
     },
     {
       "id": "S6",
-      "url": "https://www.dentons.com/en/rebecca-a-byrne",
-      "title": "Rebecca Byrne",
-      "publisher": "Dentons",
+      "url": "https://journeys.dartmouth.edu/folklorearchive/2019/11/19/car-wave/",
+      "title": "Car Wave",
+      "publisher": "Dartmouth Folklore Archive",
       "tier": 1,
-      "accessed_at": "2026-08-03",
+      "accessed_at": "2026-09-14",
       "supports": [
-        "A distinct Rebecca Byrne working as a recently qualified associate in Glasgow",
-        "Technology, media and telecommunications legal practice",
-        "Age and career context inconsistent with the tentative historical Flagstone shareholder",
-        "Namesake excluded from the owner record"
+        "Sophie Byrne's first-person account naming mother Rebecca",
+        "Rebecca born and raised in Alberta, Canada",
+        "Ten years living in Bermuda and historical residence in Montreal",
+        "Other past residences in England, Japan, Switzerland and the United States",
+        "The informant age stated as 53 in November 2019, which conflicts by about one year with the official Companies House January 1965 birth month and year"
       ]
     },
     {
       "id": "S7",
-      "url": "https://www.communityfoundationsa.org/s/CFSA-Annual-Report2021.pdf",
-      "title": "Community Foundation of South Alabama 2021 Annual Report",
-      "publisher": "Community Foundation of South Alabama",
+      "url": "https://www.launchit.org.uk/trustees",
+      "title": "Our Trustees",
+      "publisher": "Launch It",
       "tier": 1,
-      "accessed_at": "2026-08-03",
+      "accessed_at": "2026-09-14",
       "supports": [
-        "A distinct Rebecca Byrne serving as president and chief executive of an Alabama community foundation",
-        "Professional role without matching Bermuda or Flagstone attributes",
-        "Namesake excluded from the owner record"
+        "Rebecca Byrne as an initial founder and continuing trustee of Launch It Trust",
+        "Past volunteer business-adviser and mentor role at The Prince's Trust",
+        "Membership of New York State and City Bar and Chartered Institute of Arbitrators",
+        "Chairmanship of Byrne Charitable Trust"
       ]
     },
     {
       "id": "S8",
-      "url": "https://rebeccabyrne.com/about-rebecca-byrne/",
-      "title": "About Rebecca Byrne",
-      "publisher": "Rebecca Byrne",
+      "url": "https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/3988455/full-print",
+      "title": "Byrne Charitable Trust (charity 1091452)",
+      "publisher": "Charity Commission for England and Wales",
       "tier": 1,
-      "accessed_at": "2026-08-03",
+      "accessed_at": "2026-09-14",
       "supports": [
-        "A distinct American artist and curator based in London",
-        "Public biography and career with no matching Bermuda, insurance or shareholder attributes",
-        "Namesake excluded from the owner record"
+        "Rebecca Knox-Byrne as current chair and trustee",
+        "Registration in 2002 and grantmaking objects covering education, poverty relief and healthcare",
+        "Recorded operation in London, Bermuda, Canada, Switzerland and the United States",
+        "Public-benefit trust activities rather than personally owned commercial assets"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04133046/persons-with-significant-control",
+      "title": "Launch It Trust persons with significant control",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-09-14",
+      "supports": [
+        "Rebecca Byrne as active Launch It person with significant control",
+        "Canadian nationality and Canada residence",
+        "January 1965 birth month and year recorded in the official register",
+        "Significant control over a charity governance entity, not evidence of personal beneficial ownership of commercial assets"
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.launchit.org.uk/tottenham",
+      "title": "Launch It Tottenham",
+      "publisher": "Launch It",
+      "tier": 1,
+      "accessed_at": "2026-09-14",
+      "supports": [
+        "Launch It enterprise centres provide affordable workspace, mentoring and business support to young entrepreneurs",
+        "London organisation began around 2000"
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://register-of-charities.charitycommission.gov.uk/en/sector-data/top-10-charities?_uk_gov_ccew_onereg_charitydetails_web_portlet_CharityDetailsPortlet_objectiveId=A17619783&_uk_gov_ccew_onereg_charitydetails_web_portlet_CharityDetailsPortlet_priv_r_p_mvcRenderCommandName=%2Ffull-print&_uk_gov_ccew_onereg_charitydetails_web_portlet_CharityDetailsPortlet_priv_r_p_organisationNumber=3978494&p_p_cacheability=cacheLevelPage&p_p_id=uk_gov_ccew_onereg_charitydetails_web_portlet_CharityDetailsPortlet&p_p_lifecycle=2&p_p_mode=view&p_p_resource_id=%2Faccounts-resource&p_p_state=maximized",
+      "title": "Launch It Trust trustees' annual report for 2024",
+      "publisher": "Charity Commission for England and Wales",
+      "tier": 1,
+      "accessed_at": "2026-09-14",
+      "supports": [
+        "Rebecca Byrne remained a trustee through the 2024 financial year and 2025 filing",
+        "Trustees guide charity policy and direction while staff perform daily management"
       ]
     }
   ],
   "uncertainties": [
     {
-      "topic": "Identity gate",
-      "detail": "The frozen Rebecca Byrne record contains only a common first name and surname. Sequential placement beside Mark James Byrne and the SEC's identification of Mark J. Byrne's wife Rebecca form a plausible pattern, but the source record contains no explicit relationship and no second Rebecca-specific attribute. Confidence remains 78, below the 85-point acceptance threshold."
+      "topic": "Identity resolution",
+      "detail": "The earlier 78-point candidate was held below the old 85 threshold. New independent evidence resolves the exact family, Bermuda-Montreal and charity connections well beyond 75. The family obituary, Sophie Byrne's first-person archive account, Launch It trustee page, UK charity register and Companies House agree on the person. The source-record vessel relationship was used solely as identity context."
     },
     {
-      "topic": "Documented ownership versus professional role",
-      "detail": "The SEC filing attributes 50,000 Flagstone shares directly to the tentative Rebecca Byrne candidate and states that Mark Byrne disclaimed beneficial ownership. It does not identify her as an employee, executive, director, founder or professional investor, and it does not establish that those shares were her principal wealth. No occupational or wealth-relationship label is inferred."
+      "topic": "Birth year discrepancy",
+      "detail": "Companies House records January 1965, whereas Sophie Byrne's 2019 archive submission calls Rebecca 53, about one year younger. A birth-year or month proposal is withheld pending reconciliation; the Canadian birth country is independently established."
     },
     {
-      "topic": "Common-name exclusions",
-      "detail": "Searches found unrelated people named Rebecca Byrne in technology operations, law, charitable leadership, visual art, consulting and other fields. None shares enough identity attributes with the sparse owner record or tentative Bermuda candidate, so none is accepted or proposed as a social profile."
+      "topic": "Professional role",
+      "detail": "Launch It identifies New York Bar and arbitration institute memberships, but no source establishes an active or defining legal practice. Do not assign Lawyer, legal-services industry or lawyer wording to the biography."
     },
     {
-      "topic": "Personal details",
-      "detail": "Nationality, residence, middle name, gender, birthplace, birth country and birth date remain unresolved. Mark Byrne's Irish nationality and Bermuda residence cannot be copied to a spouse, and gender is not proposed from the given name alone."
+      "topic": "Wealth and industry",
+      "detail": "The SEC filing documents a direct historical Flagstone holding. It neither identifies Rebecca's principal assets nor explains acquisition of any later wealth. Mark's reinsurance business and the family charity cannot be treated as her wealth origin or current primary industry. Both industry classifications remain Unknown, so the origin-sector fallback is inapplicable."
     },
     {
-      "topic": "Forbes check",
-      "detail": "Focused exact-name and dedicated-profile searches found no Forbes profile for a matching Rebecca Byrne. Because identity itself is unresolved, the absence does not distinguish the tentative candidate from other namesakes."
+      "topic": "Residence and alias",
+      "detail": "Companies House currently records Canada as her country of residence; the Dartmouth account historically places her in Montreal in 2019. No current city is proposed. The charity register uses Rebecca Knox-Byrne, consistent with the Knox in-laws named in Mark's obituary, but no alias field is proposed."
     },
     {
-      "topic": "Social profiles",
-      "detail": "Numerous Rebecca Byrne profiles exist, but no LinkedIn, Instagram, Facebook, X, YouTube, TikTok, Wikipedia page or personal website could be tied to person ID 392 above the 85-point gate. None is proposed."
+      "topic": "Social and Forbes profiles",
+      "detail": "Exact Forbes, LinkedIn, Instagram and personal-website searches found no account that can be securely linked to this Rebecca Byrne. An unrelated artist has Forbes coverage. The verified Launch It site is proposed only as a company/organisation website because she co-founded the trust."
     },
     {
-      "topic": "Relationship context",
-      "detail": "No vessel research was used. The source record and adjacent non-vessel person record supplied the only frozen clues; all identity reasoning relies on public corporate and professional sources rather than ownership of any vessel."
+      "topic": "Tag governance",
+      "detail": "The active catalogue has no suitable general charitable-trust founder or youth-enterprise mentoring tag. Lawyer is excluded because bar membership alone does not show a defining practice. No formal taxonomy candidate is created."
     }
   ],
   "review": {
     "status": "complete",
-    "notes": "Identity remains below the 85-point gate. The tentative Bermuda-insurance spouse/shareholder candidate is retained only for review at 78 confidence, all similarly named professionals are excluded, and all wealth classifications remain Unknown. Nothing has been compiled, approved or applied."
+    "notes": "Identity now resolves at 97 through independent family, charity, official-register and Bermuda-Montreal evidence. The prior 85-point threshold was the earlier administrative blocker; new sources additionally remove the sparse-record linkage doubt. Preserve Unknown wealth classifications and exclude Mark's separate business wealth, unauthenticated social profiles and unreconciled birth date. Nothing has been compiled or applied."
   }
 }

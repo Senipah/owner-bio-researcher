@@ -1,0 +1,128 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 887,
+    "display_name": "Robert Dunbar Goodrich II",
+    "identity_confidence": {
+      "score": 60,
+      "band": "low",
+      "reason": "The source supplies the full name and a Blu association. A marine survey names Robert Goodrich against the corresponding Ariadne hull, but supplies no middle name, suffix or occupation. No public profile securely connects the exact named person, vessel and business identity."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["secondary_nationality", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This record identifies Robert Dunbar Goodrich II, but the public evidence does not securely establish his professional identity. A survey names Robert Goodrich in connection with Ariadne, whose specifications and former-name material correspond to Blu, without confirming the middle name or suffix. The similarly named Wendy’s operator Robert Dudley Goodrich II is excluded. Personal fields, wealth classifications, biographies and social accounts remain unassigned pending stronger identity evidence.",
+    "confidence": {"score": 90, "band": "high", "reason": "The source record, yacht material and excluded namesake support withholding enrichment; this score measures the research decision, not a resolved person identity."},
+    "source_ids": ["S0", "S1", "S2", "S3"]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 85, "band": "high", "reason": "Forbes was checked first using exact-name and site:forbes.com/profile searches. No matching profile was found; unrelated company and similarly named results were rejected."}
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown", "label": "Unknown",
+    "summary": "The original wealth-producing business cannot be attributed to this exact identity. Yacht ownership and a namesake’s restaurant business do not establish an industry.",
+    "confidence": {"score": 15, "band": "insufficient", "reason": "Identity is unresolved and the reviewed evidence does not establish attributable private wealth."},
+    "source_ids": ["S0", "S1"]
+  },
+  "primary_industry": {
+    "classification": "unknown", "label": "Unknown",
+    "summary": "No principal current private business or investment interest is securely linked to this exact person.",
+    "confidence": {"score": 15, "band": "insufficient", "reason": "Identity is unresolved and the reviewed evidence does not establish attributable private wealth."},
+    "source_ids": ["S0", "S1"]
+  },
+  "wealth_origin": {
+    "classification": "unknown", "label": "Unknown",
+    "summary": "No reliable source establishes whether the exact person created, inherited or otherwise received the principal assets.",
+    "confidence": {"score": 15, "band": "insufficient", "reason": "Identity is unresolved and the reviewed evidence does not establish attributable private wealth."},
+    "source_ids": ["S0", "S1"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown", "label": "Unknown",
+    "summary": "No attributable evidence establishes founder, operator, investor, heir or another relationship to principal wealth-producing assets.",
+    "confidence": {"score": 15, "band": "insufficient", "reason": "Identity is unresolved and the reviewed evidence does not establish attributable private wealth."},
+    "source_ids": ["S0", "S1"]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=887",
+      "title": "Immutable source owner record 887",
+      "publisher": "Superyacht Network; saved owner input",
+      "tier": 1,
+      "accessed_at": "2026-09-12",
+      "supports": ["Source identity is Robert Dunbar Goodrich II; the input gives American nationality, United States residence and age 75 dated 2020-05-07. These input values are not independently verified.", "The saved relationship is Blu, vessel ID 24653, 37.8 m and 213 GT, recorded from March 2017; there are no existing social profiles or biography."]
+    },
+    {
+      "id": "S1",
+      "url": "https://cdn.boathouseauctions.com/uploads/Survey-Jan-2024-2-1.pdf",
+      "title": "Ariadne pre-purchase survey, file 13560-24",
+      "publisher": "Patton Marine Surveyors and Consultants; published by Boathouse Auctions",
+      "tier": 1,
+      "accessed_at": "2026-09-12",
+      "supports": ["Page 1 addresses Robert Goodrich and states that he requested the inspection through Jeff Shaffer; Ariadne is a 1979 124-foot Breaux Bay Craft yacht.", "Pages 3-4 identify hull 1461 and 213 GT, consistent with the saved vessel context. The survey supplies no middle name, suffix, professional role or personal wealth; it does not prove the natural-person beneficial owner."]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.worldwideboat.com/yachts/blu/",
+      "title": "Yacht Blu: 124-foot Breaux Bay Craft motor yacht",
+      "publisher": "Worldwide Boat",
+      "tier": 3,
+      "accessed_at": "2026-09-12",
+      "supports": ["The charter page identifies Blu as a 1979 124-foot Breaux Bay Craft yacht and retains Ariadne image captions, corroborating the vessel correspondence as an inference. No natural-person owner is identified."]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.bolin-dierkesfuneralhome.com/obituaries/robert-goodrichii",
+      "title": "Robert Dudley Goodrich II obituary",
+      "publisher": "Bolin-Dierkes Funeral Home and Crematory",
+      "tier": 1,
+      "accessed_at": "2026-09-12",
+      "supports": ["The Wendy’s Management Group co-founder is Robert Dudley Goodrich II, born 11 April 1946 and deceased 5 July 2022, associated with Zanesville. His middle name differs from Dunbar and he would have been 74 at the input’s dated age entry. Used only to exclude a namesake, never to enrich owner 887."]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.washingtonpost.com/archive/local/2004/06/17/lawyer-nathaniel-goodrich-dies/5a072438-e18d-4257-8a99-642dc6bdba82/",
+      "title": "Lawyer Nathaniel Goodrich Dies",
+      "publisher": "The Washington Post",
+      "tier": 2,
+      "accessed_at": "2026-09-12",
+      "supports": ["Names a Robert Dunbar Goodrich of Washington; no suffix or yacht identification."]
+    }
+  ],
+  "uncertainties": [
+    "Identity gate: the public Robert Goodrich yacht association does not establish a particular occupational profile at confidence 85. The exact middle name Dunbar and suffix II remain authoritative input values and have not been corrected.",
+    "Excluded namesake: Robert Dudley Goodrich II of Wendy’s Management Group has a different middle name and an inconsistent birth-year implication. No restaurant, philanthropy, birth or death facts from that person have been transferred.",
+    "S4 is a possible match only; no independent bridge establishes owner 887.",
+    "Ariadne/Blu correspondence is inferred from builder, year, 124-foot length, 213 GT and retained Ariadne captions. The survey’s private contact details have not been retained.",
+    "Initial Forbes searches: site:forbes.com/profile Robert Goodrich; exact Robert Dunbar Goodrich II Forbes. Follow-up: exact Robert Dunbar Goodrich site:forbes.com/profile. No matching profile was found.",
+    "Identity searches included exact Robert Dunbar Goodrich II; Robert Goodrich yacht Blu; exact Robert Dunbar Goodrich; Dunbar Goodrich; Robert Goodrich II; Goodrich Dunbar Robert Washington; Robert Goodrich Washington architect; Goodrich Ariadne; Goodrich Blu Breaux; Robert Goodrich Washington businessman; Robert Goodrich Dunbar Tilden. Business-directory, historical and genealogical matches were not adopted.",
+    "Priority social search: exact Robert Dunbar Goodrich LinkedIn Instagram website. Other person-relevant types: exact Robert Dunbar Goodrich Facebook Twitter YouTube TikTok. No identity-verified personal account or official personal website was found. Broad Robert Goodrich LinkedIn directories contain unrelated people and fail verification.",
+    "Birth details, secondary nationality and known-for title remain unfilled. Calculated age is not converted into a speculative birth date; mortality status has not been changed from a namesake obituary.",
+    "No tags qualify because identity and defining public associations are unresolved. Biography-pair allocation and editorial scoring are inapplicable to the unresolved-placeholder outcome."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal decision: insufficient_evidence. Inventory preceded Forbes-first research. Exact source identifiers are retained and all proposed changes are empty. Nothing was applied to the website."
+  }
+}

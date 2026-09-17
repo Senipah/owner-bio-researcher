@@ -1,0 +1,307 @@
+{
+  "schema_version": 8,
+  "record_type": "institution",
+  "owner": {
+    "person_id": 895,
+    "display_name": "USA Government",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The source record literally names USA Government, stores USA and Government as pseudo-person name fields, and uses American nationality and United States residence and birth-country placeholders. USAGov and the White House independently define the federal government as a continuing public institution composed of legislative, executive and judicial branches, not a natural person."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This record represents the continuing federal government of the United States rather than a natural person. The biography fields describe the institution itself. Person-specific birth, mortality, private-wealth and personal-social fields do not apply, and no president, legislator, judge, cabinet member, civil servant or other officeholder should be substituted for the institutional identity.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The explicit source name, pseudo-person fields and two official federal-government sources directly establish the non-person identity."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Forbes-first exact-name and site-restricted searches found commentary about United States government policy and public finances, but no dedicated profile for USA Government. An institutional government record is not a Forbes person-profile candidate."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "A private wealth-creation industry is not applicable because this record represents the United States federal government rather than a natural person or private family enterprise.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Official federal sources establish a constitutional public institution, so assigning a private fortune-creation sector would be a category error."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "A principal private-wealth industry is not applicable to the federal government as a public constitutional institution.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Government functions, public services and state assets cannot be recast as a natural person's privately held wealth-producing sector."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Personal wealth origin is not applicable because USA Government is an institutional state record rather than a natural person with a private fortune.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The constitutional federal government has no personal inheritance, founder-built fortune or other private acquisition mechanism to classify."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No personal founder, operator, investor, heir, beneficiary or custodian relationship to wealth-producing assets applies to a government institution.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The record denotes the public federal system collectively, not a natural person or private-asset holder within the personal-wealth taxonomy."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "biography": {
+    "plain_text": "The Government of the United States is the federal public authority established under the Constitution. Its legislative, executive and judicial branches divide responsibility among Congress, the presidency and federal courts. The name represents the continuing federal government as an institution, not a president, cabinet member, legislator, judge, agency employee or other individual officeholder.",
+    "html": "<p>The Government of the United States is the federal public authority established under the Constitution. Its legislative, executive and judicial branches divide responsibility among Congress, the presidency and federal courts. The name represents the continuing federal government as an institution, not a president, cabinet member, legislator, judge, agency employee or other individual officeholder.</p>\r\n",
+    "word_count": 53,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "USAGov and the White House directly establish the federal government's constitutional three-branch structure and continuing institutional identity."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "The Constitution divides the U.S. federal government into legislative, executive and judicial branches. Congress drafts legislation and oversees federal spending; the executive branch implements and enforces federal law through the presidency, departments and agencies; federal courts interpret and apply law. Checks and balances allow each branch to limit actions by the others.\n\nThe institution continues even as presidents, legislators, judges and civil servants change. It administers national policy and public services within powers granted by the Constitution, while powers not assigned to the federal government remain with states or the people. The label USA Government therefore denotes the federal governmental system collectively, not any officeholder, department, agency or employee.",
+    "html": "<p>The Constitution divides the U.S. federal government into legislative, executive and judicial branches. Congress drafts legislation and oversees federal spending; the executive branch implements and enforces federal law through the presidency, departments and agencies; federal courts interpret and apply law. Checks and balances allow each branch to limit actions by the others.</p>\r\n<p>The institution continues even as presidents, legislators, judges and civil servants change. It administers national policy and public services within powers granted by the Constitution, while powers not assigned to the federal government remain with states or the people. The label USA Government therefore denotes the federal governmental system collectively, not any officeholder, department, agency or employee.</p>\r\n",
+    "word_count": 110,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The two official federal sources support the three branches, their durable functions, checks and balances, federalism and the distinction between the continuing institution and changing officeholders."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "biography",
+      "value": "<p>The Government of the United States is the federal public authority established under the Constitution. Its legislative, executive and judicial branches divide responsibility among Congress, the presidency and federal courts. The name represents the continuing federal government as an institution, not a president, cabinet member, legislator, judge, agency employee or other individual officeholder.</p>\r\n",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Official federal sources establish the institution, its constitutional structure and its continuing identity without substituting an officeholder."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0249",
+      "name": "Government-owned",
+      "summary": "The owner record represents the continuing federal government of the United States, a public constitutional institution rather than a natural person or private company.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The source record and two official federal-government portals directly establish the institutional public-owner identity."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.usa.gov/branches-of-government",
+      "title": "Branches of the U.S. government",
+      "publisher": "USAGov",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "The Constitution divides the federal government into legislative, judicial and executive branches.",
+        "Congressional, presidential, departmental, agency and federal-court functions.",
+        "Checks and balances among the three branches.",
+        "Institutional government structure rather than a single officeholder."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.whitehouse.gov/government/",
+      "title": "Our Government",
+      "publisher": "The White House",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Federal government composed of legislative, executive and judicial branches.",
+        "Constitutional allocation of powers to Congress, the presidency and federal courts.",
+        "Powers not granted to the federal government reserved to states and the people.",
+        "Continuing constitutional framework rather than a natural-person identity."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=895",
+      "title": "USA Government owner record, person ID 895",
+      "publisher": "Superyacht Network; saved authoritative owner export",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Exact source-record name and person ID.",
+        "USA and Government stored as pseudo-person first and last names.",
+        "American nationality plus United States residence and birth-country placeholders.",
+        "Blank person-specific biography, birth-date, gender and social fields.",
+        "Institution-associated private-asset relationships retained outside biography research and not used as wealth evidence."
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Institutional scope",
+      "detail": "USA Government is a broad database label rather than the formal name of one department or legal entity. The biography therefore describes the United States federal government collectively and does not assign the record to the president, Congress, the federal courts, a department, an agency or an employee."
+    },
+    {
+      "topic": "Federal versus wider public sector",
+      "detail": "Official sources distinguish the federal government from state and local governments. Because the source label is USA Government and its stored country is United States, the dossier uses the federal institutional meaning while avoiding claims about a specific subordinate public body."
+    },
+    {
+      "topic": "Person fields",
+      "detail": "American nationality, United States birth country, Alive mortality and similar upstream values are structural placeholders for a pseudo-person record. They are not evidence that the institution has a human citizenship, birthplace, age, gender or mortality state."
+    },
+    {
+      "topic": "Forbes and socials",
+      "detail": "Forbes search results concern policy, public finance and officeholders rather than a dedicated institutional profile. Personal LinkedIn, Instagram, Facebook, X, YouTube, TikTok and website proposals are inapplicable, and changing official accounts are not substituted for a human social identity."
+    },
+    {
+      "topic": "Private-asset separation",
+      "detail": "Historical and current private-asset relationships in the authoritative input were excluded from both biographies, all four wealth decisions and the tag rationale. State custody, requisition, registration or ownership does not create a personal fortune or identify an individual officeholder."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Person ID 895 is terminally classified as an institution, not a natural person. The institutional biography describes the federal government's constitutional structure; person-only details and all personal wealth fields remain intentionally unknown. Government-owned is the sole active tag. No officeholder, agency, private-asset fact or personal social profile is substituted, and nothing has been compiled, approved or applied."
+  }
+}

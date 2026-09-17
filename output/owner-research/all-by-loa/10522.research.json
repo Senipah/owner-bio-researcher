@@ -1,0 +1,630 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 10522,
+    "display_name": "Jean-Jacques  Laurent",
+    "identity_confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The saved 1964 birth year and French nationality match the exact full name and birth particulars in two primary company filings. PRB legal notices identify Jean-Jacques Louis Léon Laurent, connecting that identity with the saved business biography; Cecillou and CMM also match. The source’s double space is preserved."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "French industrialist from Vendée; former PRB leader.",
+    "defining_work": "Expanded a manufacturer of building coatings, adhesives and insulation; the family business was sold to Holcim.",
+    "formative_context": "His father Jacques established PRB. Early work at its Marcoussis depot preceded learning management alongside his father.",
+    "decisive_moment": "Chose to expand capacity during an economic downturn, preparing for recovery.",
+    "enduring_dimensions": [
+      "Production and distribution investment",
+      "Solar lighting venture with his daughter Cécilia Segarra and Denis Grit",
+      "Direction of family holding company Cecillou"
+    ],
+    "character_detail": null,
+    "opening_options": [
+      {
+        "mode": "decisive_event",
+        "angle": "Investment during the downturn reveals his operating judgement."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Running a depot preceded learning to lead the family company."
+      }
+    ],
+    "excluded_transient_context": [
+      "Personally owned vessels",
+      "Net-worth and share-capital figures",
+      "Unfulfilled factory proposals",
+      "Disputed succession dates"
+    ],
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "decision_then_consequence",
+    "calibration_archetypes": [
+      "inherited_operator"
+    ],
+    "notes": "The shared anchors are Laurent’s PRB leadership and its construction materials business. The short alone gives French and Vendée background, his father and the founding year, and the completed Holcim disposal. The long opens with his downturn investment decision and explains its recovery rationale and concrete capacity additions, then develops the Solarem collaboration and the school-bus lighting problem. It omits the short’s founding and sale bundle. The public-facing pair neither implies that he founded PRB nor assigns an unproved inheritance mechanism. Revision removed a formulaic later-chapter transition. The family-successor calibration informs the writing without asserting an inheritance classification. Main review replaced vague backing/support language with the explicitly named co-founder role and industrial contribution; no funding form is invented."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Forbes-first exact-name/profile searches and the later PRB-qualified profile search did not locate an exact personal Forbes profile. Unrelated Laurent names were excluded."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "PRB’s manufacture of construction coatings, mortars, adhesives and insulation created the principal identifiable family-business wealth.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The operating history, acquisition announcement and family holding records connect this manufacturing business to Laurent’s wealth; supplying builders does not make it a construction contractor."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "primary_industry": {
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "PRB was sold in 2022. Current holdings and new ventures are identifiable, but no reliable allocation establishes which sector principally underpins his remaining private wealth. As the current principal private sector cannot be established, Manufacturing is carried forward from the documented wealth-creation sector solely as a reporting fallback; this does not verify today's dominant holdings.",
+    "confidence": {
+      "score": 70,
+      "band": "medium",
+      "reason": "The family structures hold investments and property interests, with later manufacturing-related ventures. Neither legal objects nor share capital establishes asset weights, so Finance & Investments, Manufacturing and Diversified are not selected. The cited wealth-creation evidence supports Manufacturing at 94 confidence. The primary-industry score of 70 reflects only an origin-sector reporting fallback, not independently verified current dominance."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "He expanded his father’s business and held substantial family-company interests. The acquisition mechanism of the original principal stake remains unclear.",
+    "confidence": {
+      "score": 60,
+      "band": "low",
+      "reason": "Operating succession does not itself prove inheritance. The reviewed filings establish later ownership and contributions, but do not distinguish inheritance from a lifetime family transfer or another acquisition mechanism."
+    },
+    "source_ids": [
+      "S3",
+      "S6",
+      "S7",
+      "S8",
+      "S13"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "family_office_principal",
+    "label": "Family office principal",
+    "summary": "He now directs Cecillou, a family holding structure in which he retains substantial personal share rights. His earlier defining role was operating PRB.",
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Current presidency, the primary share schedule and the holding’s direction and investment mandate support this relationship after the PRB sale. This does not establish the underlying portfolio’s dominant sector."
+    },
+    "source_ids": [
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "biography": {
+    "plain_text": "Jean-Jacques Laurent is a French industrialist from Vendée and the former head of PRB. He expanded the specialist building materials company founded by his father, Jacques, in 1975, developing its range of coatings, adhesives and insulation products. The family sold PRB to Holcim in 2022, ending decades of independent ownership.",
+    "html": "<p>Jean-Jacques Laurent is a French industrialist from Vendée and the former head of PRB. He expanded the specialist building materials company founded by his father, Jacques, in 1975, developing its range of coatings, adhesives and insulation products. The family sold PRB to Holcim in 2022, ending decades of independent ownership.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "Primary nationality evidence, the family-business history and Holcim’s completed acquisition support the profile."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "During an economic downturn, Jean-Jacques Laurent expanded capacity at PRB, the building materials manufacturer he led, to prepare for the recovery. The programme added nine logistics platforms and factories for tile adhesive and polystyrene insulation. It also broadened the company’s product offering beyond the façade coatings on which its reputation rested.\n\nWith his daughter, Cécilia Segarra, Laurent co-founded Solarem, joining Denis Grit’s solar lighting project. Grit had begun developing lights for rural school bus stops, where children could be left waiting in darkness. Laurent brought his industrial experience to developing outdoor lighting that could be installed without trenches or connection to the electricity grid.",
+    "html": "<p>During an economic downturn, Jean-Jacques Laurent expanded capacity at PRB, the building materials manufacturer he led, to prepare for the recovery. The programme added nine logistics platforms and factories for tile adhesive and polystyrene insulation. It also broadened the company’s product offering beyond the façade coatings on which its reputation rested.</p>\r\n<p>With his daughter, Cécilia Segarra, Laurent co-founded Solarem, joining Denis Grit’s solar lighting project. Grit had begun developing lights for rural school bus stops, where children could be left waiting in darkness. Laurent brought his industrial experience to developing outdoor lighting that could be installed without trenches or connection to the electricity grid.</p>\r\n",
+    "word_count": 104,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "The direct operating interview supports the capacity decision; Solarem’s announcement and current history support the later collaboration and lighting purpose."
+    },
+    "source_ids": [
+      "S3",
+      "S9",
+      "S10"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "middle_names",
+      "action": "fill_missing",
+      "value": "Louis Léon",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The exact middle names are explicit in both primary filings and the PRB administration notices."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S8"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "action": "fill_missing",
+      "value": "Former president of PRB",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Holcim identifies him as president at the transaction; the later Solarem announcement identifies him as the former PRB leader."
+      },
+      "source_ids": [
+        "S4",
+        "S9"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "action": "fill_missing",
+      "value": "Nieul-le-Dolent",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The company statutes and contribution agreement explicitly give this Vendée birthplace."
+      },
+      "source_ids": [
+        "S1",
+        "S8"
+      ]
+    },
+    {
+      "field": "birth_country",
+      "action": "fill_missing",
+      "value": "France",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "The two primary filings place his birth in Nieul-le-Dolent, Vendée, France."
+      },
+      "source_ids": [
+        "S1",
+        "S8"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "action": "fill_missing",
+      "value": "7",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Both primary documents explicitly state 7 June 1964."
+      },
+      "source_ids": [
+        "S1",
+        "S8"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "action": "fill_missing",
+      "value": "June",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Both primary documents explicitly state 7 June 1964, matching the saved year."
+      },
+      "source_ids": [
+        "S1",
+        "S8"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.solarem.net/",
+      "verification": "The company’s public launch announcement names Laurent as a co-founder and directly links this exact domain. Its current history and legal notice identify the same Solarem business, with Cécilia Segarra as publication director.",
+      "confidence": {
+        "score": 91,
+        "band": "high",
+        "reason": "Explicit company-issued identification and domain cross-link meet the allowed Company Website rule; the site was directly read."
+      },
+      "source_ids": [
+        "S9",
+        "S10",
+        "S15"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0475",
+      "name": "Construction materials",
+      "summary": "Led substantial construction-materials manufacturing operations at PRB for a defining part of his career.",
+      "relationship_type": "operator",
+      "temporal_scope": "historical",
+      "taxonomy_value": "Satisfies the active contract’s substantial operating control and defining long-term mandate; it is not based on incidental portfolio exposure.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Holcim’s named presidency and operating description establish the direct, sustained business connection."
+      },
+      "source_ids": [
+        "S2",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "type": "classification",
+      "field": "wealth_origin",
+      "value": "Inherited and expanded",
+      "confidence": {
+        "score": 60,
+        "band": "low",
+        "reason": "Personal expansion is well documented, but inheritance of the core stake is not. Lifetime family transfer remains a competing mechanism."
+      },
+      "source_ids": [
+        "S3",
+        "S6",
+        "S8",
+        "S13"
+      ]
+    },
+    {
+      "type": "classification",
+      "field": "primary_industry",
+      "value": "Finance & Investments",
+      "confidence": {
+        "score": 58,
+        "band": "low",
+        "reason": "He directs a family holding company after the PRB disposal, but reliable portfolio weights and the share attributable to investment activity are unavailable."
+      },
+      "source_ids": [
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "type": "social",
+      "type_id": "5",
+      "social_type": "LinkedIn",
+      "url": "https://www.linkedin.com/in/jean-jacques-laurent-315b14178/",
+      "confidence": {
+        "score": 68,
+        "band": "low",
+        "reason": "Sailorz links this exact profile from its PRB interview, but the profile body could not be accessed and neither an official cross-link nor a second independent confirmation of control was found."
+      },
+      "source_ids": [
+        "S11",
+        "S16"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=10522",
+      "title": "Immutable owner input 10522",
+      "publisher": "Superyacht Network; saved owner input",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Jean-Jacques  Laurent; French, resident in France, born 1964, Male and Alive. Saved biography identifies PRB, founder father Jacques, Cecillou and CMM. Rocket ONE is the saved 37.07 m current vessel. No saved socials."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.pappers.fr/entreprise/cecilou-invest-830696399/documents/CECILOU%20INVEST%20-%20Statuts%20mis%20%C3%A0%20jour%2014-06-2022.pdf",
+      "title": "Cecilou Invest: filed statutes and May 2022 decisions",
+      "publisher": "Cecilou Invest; public corporate filing hosted by Pappers",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "PDF page 25, article 38: first president Jean-Jacques Louis Léon Laurent, born 7 June 1964 at Nieul-le-Dolent in Vendée, French. The accompanying 2022 decisions replace him, so the historic appointment is used for identity rather than a current title. No private address retained."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.pappers.fr/entreprise/prb-produits-de-revetement-du-batiment-303789127",
+      "title": "PRB: corporate history and reproduced BODACC administration notices",
+      "publisher": "Pappers; reproduced public company notices",
+      "tier": 3,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "The 2009, 2010, 2012 and 2016 administration notices explicitly name Jean-Jacques Louis Léon Laurent as president of the management board. This supplies the exact-name bridge from personal filings to PRB."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://ffb-upmf-app.fr/refletsnuances/pdf/RN%20177.pdf",
+      "title": "PRB, un succès de famille, printed pages 24–27, October 2018",
+      "publisher": "UPMF–FFB; Reflets & Nuances",
+      "tier": 2,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Direct interview and history establish the father-founded business, formative depot work and Laurent’s decision to expand capacity through the downturn, adding logistics facilities and production lines."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.holcim.com/media/media-releases/holcim-to-acquire-prb-group",
+      "title": "Holcim to acquire PRB Group expanding Solutions & Products",
+      "publisher": "Holcim",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "January 2022 announcement names Laurent as PRB president and recognises the Laurent family. Describes coatings, insulation, adhesives and flooring products, manufacturing sites and distribution operations. The stated EUR340m is estimated 2022 sales, not a verified actual result."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.holcim.com/media/media-releases/holcim-completes-acquisition-prb",
+      "title": "Holcim completes acquisition of PRB",
+      "publisher": "Holcim",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "May 2022 release confirms the completed purchase of the previously independent French façade-coatings and dry-mortar manufacturer."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.pappers.fr/entreprise/cecillou-812249597/documents/CECILLOU%20-%20Copie%20des%20statuts%20mis%20%C3%A0%20jour%2029-07-2026.pdf",
+      "title": "Cecillou: statutes updated 1 July 2026 and filed 29 July",
+      "publisher": "Cecillou; public corporate filing hosted by Pappers",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "The share schedule retains substantial bare-ownership and full-ownership preference-share rights for Laurent; Marie-Luce holds corresponding usufruct rights. The objects provide for active group direction, investment holdings and property. It records the 2025 contribution to Mersea. Capital is not treated as net worth."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.pappers.fr/entreprise/cecillou-812249597",
+      "title": "Cecillou: current officers and filing history",
+      "publisher": "Pappers; French corporate register data",
+      "tier": 3,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Current president Jean-Jacques Laurent, June 1964; general director Sendrine Laurent. The holding’s declared objects and filing history include a 2015 contribution of PRB and PCB securities. The 2015 valuation-report bodies were not obtained."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.pappers.fr/entreprise/mersea-911597979/documents/MERSEA%20-%20Copie%20des%20statuts%20mis%20%C3%A0%20jour%2002-04-2025.pdf",
+      "title": "Mersea: February 2025 statutes and contribution agreement",
+      "publisher": "Mersea; public corporate filing hosted by Pappers",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "PDF page 23 repeats the exact full name, French nationality and 7 June 1964 birth at Nieul-le-Dolent. Pages 23–26 document his own Cecillou shares, the family holding structure and his further contribution to Mersea. These are legal share rights and transaction valuations, not a personal wealth estimate. No private address retained."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.relations-publiques.pro/310294/la-nouvelle-aventure-solaire-de-jean-jacques-laurent-ancien-dirigeant-de-prb-avec-sa-fille-cecilia-segarra.html",
+      "title": "La nouvelle aventure solaire de Jean-Jacques Laurent, avec sa fille Cécilia Segarra",
+      "publisher": "Solarem; company announcement distributed by Relations-Publiques.Pro",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Names the former PRB head and his daughter as participants alongside Denis Grit, calls Laurent a co-founder, and describes his support for growth. Grit originated the response to unlit rural bus stops. Explains autonomous lighting without trenches or grid cabling and directly links solarem.net. Planned 2025 factory is not treated as completed."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.solarem.net/histoire",
+      "title": "L’histoire de Solarem",
+      "publisher": "Solarem",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Current official history describes development and distribution of solar lighting, origins in unlit rural school-bus stops, 2023 financing, and the later Talmont-Saint-Hilaire building and showroom. This corroborates the project’s purpose without assigning original invention to Laurent."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://sailorz.com/vendee-globe/jean-jacques-laurent-prb/",
+      "title": "Jean-Jacques Laurent: Le Vendée Globe fait un peu partie de l’ADN de PRB",
+      "publisher": "Sailorz / Tip & Shaft; 3 November 2020 interview",
+      "tier": 2,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Direct interview with the PRB president about company sponsorship and communication. His linked name points to the exact LinkedIn identifier 315b14178. This is one publisher cross-link, not full account-control verification."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://entreprises.lefigaro.fr/construit-ma-maison-cmm-85/entreprise-915204788",
+      "title": "Construit Ma Maison: reproduced legal notices",
+      "publisher": "Le Figaro Entreprises; Ouest-France and BODACC notices",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "The 1 August 2024 transformation notice ends the individual manager roles of Jean-Jacques Laurent and Cécilia Segarra and appoints Mersea president. Earlier notices give his full names and the original 2022 management role. The saved current managing-partner claim is therefore not reused."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://www.constructionbtp.com/batiment/article/2009/06/09/30473/disparition-jacques-laurent-fondateur-prb",
+      "title": "Disparition de Jacques Laurent, fondateur de PRB",
+      "publisher": "ConstructionBTP; 9 June 2009",
+      "tier": 2,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Contemporary obituary dates founder Jacques Laurent’s death to 7 June 2009 and states that Jean-Jacques had succeeded him in 2003. It reports operational succession, not transfer of specific shares."
+      ]
+    },
+    {
+      "id": "S14",
+      "url": "https://www.prbsystems.co.uk/wp-content/uploads/2022/09/PRB-ECO-Friendly-Range.pdf",
+      "title": "PRB eco-friendly product brochure: historical timeline",
+      "publisher": "PRB Systems",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Read from the public PDF body in memory. The timeline prints 1998 alongside takeover after the founder’s death; this conflicts with the contemporary 2009 obituary. That chronology and any inference of inheritance from it are excluded."
+      ]
+    },
+    {
+      "id": "S15",
+      "url": "https://www.solarem.net/mentions-legales",
+      "title": "Solarem: legal notice",
+      "publisher": "Solarem",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "The current domain’s legal notice identifies Solarem SAS, SIREN 953820016 and publication director Cécilia Segarra, confirming the company website connected by the announcement."
+      ]
+    },
+    {
+      "id": "S16",
+      "url": "https://www.linkedin.com/in/jean-jacques-laurent-315b14178/",
+      "title": "LinkedIn candidate directly linked from Sailorz",
+      "publisher": "LinkedIn; attempted read",
+      "tier": 4,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Direct access returned an error. No profile-body facts were adopted. Exact-identifier searches found no additional corroboration."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Inventory was run against the exact authoritative input before browsing. Identity is resolved by the saved birth year and nationality plus exact corporate and career matches; no standalone public proof of the precise Rocket ONE vessel association was found. Vessel selection context is retained only in metadata.",
+    "The source’s double space in Jean-Jacques  Laurent is preserved. The legally documented full name is Jean-Jacques Louis Léon Laurent. Namesakes in industrial fasteners, restaurant consulting, insurance, art and authorship are excluded; no accounts or life details from those people are transferred.",
+    "Forbes-first searches were site:forbes.com/profile \"Jean-Jacques Laurent\" and \"Jean-Jacques Laurent\" Forbes. The later \"Jean-Jacques Laurent\" PRB site:forbes.com/profile search also found no exact profile. No Forbes wealth descriptor or net-worth amount is proposed.",
+    "Personal social searches covered LinkedIn, Instagram, Facebook, Twitter/X, YouTube, TikTok and Personal Website using exact name with PRB or Solarem and platform filters. Additional queries used \"site personnel\" and Cecillou. TikTok access was robots-restricted. No personal account met the verification rule; corporate accounts, share buttons and interview videos were excluded.",
+    "The only specific LinkedIn lead is https://www.linkedin.com/in/jean-jacques-laurent-315b14178/, discovered as an actual link in the Sailorz interview. Direct access failed, and exact-identifier searches provided no second confirmation. It is a review candidate only. Unrelated restaurant, insurance and André Laurent company profiles were rejected.",
+    "Wikipedia searches found company/team pages and namesakes, not a verified personal page. There was no evidence suggesting personally relevant Trip Advisor, Vimeo, Flickr or Zillow accounts. Solarem is proposed only as Company Website, using the permitted co-founder connection and explicit official domain link.",
+    "The missing middle names, birth day, birth month, birthplace and birth country are resolved by primary filings. Searches combining the exact name, PRB, nationality and birth found no reliable second nationality. Optional title, suffix and secondary residence remain blank. No precise home address or private contact detail is retained.",
+    "The exact family stake acquisition mechanism remains unresolved. Searches included \"Jean-Jacques Laurent\" PRB donation succession actions and Cecillou héritage. Mersea’s 2025 filing contains no donation or succession explanation for the original holdings. Cecillou lists 2015 PRB/PCB contribution valuation reports, but their bodies were unavailable. Later contribution of already-owned shares is not proof of how he first acquired them.",
+    "Sources differ on leadership chronology: the saved biography and contemporary obituary give 2003, the 2018 trade profile gives 2004 for general management, and the PRB Systems brochure prints an inconsistent 1998 takeover-after-death timeline although the founder died in 2009. The biographies omit an exact succession date, and none of these leadership statements is treated as proof of inheritance.",
+    "PRB’s completed disposal is certain; the relative value of remaining investments is not. Current industry is independently Unknown. Cecillou’s legal objects and share capital do not prove Finance & Investments dominance or a diversified personal portfolio. Family office principal instead describes the evidenced current holding-company role.",
+    "The source biography’s 2022 sales figure derives from Holcim’s estimate, not a verified final result. Its description of an ongoing CMM managing-partner role is superseded by the 2024 legal transformation and departure notice. Neither stale assertion appears in the new biographies.",
+    "Solarem’s release calls Laurent a co-founder while its history traces the lighting idea and prototypes to Grit before Laurent’s involvement. The long biography therefore says backed and explicitly credits Grit’s prior work. A planned factory is not presented as an accomplished manufacturing plant; the current site confirms a building and showroom.",
+    "Construction materials is the minimum literal active tag and satisfies the substantial operations/long-term mandate contract. Competitive sailing expressly excludes sponsorship, so PRB’s sponsorship does not justify that tag. No unsupported new taxonomy candidate or incidental solar-investment tag is created.",
+    "All adopted material was read in direct source bodies. Public corporate filings are preferred to inferred corporate-network relationships. The low-quality fortune-and-salary biography conflates father, son and racing achievements and is not used."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal completed research decision with identity resolved, six missing-detail fills, one company website and one active semantic tag. Four wealth classifications were assessed independently; current industry and original acquisition mechanism remain Unknown. The independently allocated 50-word short and 104-word two-paragraph long have all rubric scores at least 4. Strict editorial validation against the exact authoritative owner input passed; parent acceptance remains separate. No input, code, catalogue, shared progress or live changes."
+  }
+}

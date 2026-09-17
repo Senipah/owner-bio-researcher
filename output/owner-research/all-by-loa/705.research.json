@@ -1,0 +1,433 @@
+{
+  "schema_version": 8,
+  "record_type": "institution",
+  "owner": {
+    "person_id": 705,
+    "display_name": "Saltchuk Family of Companies",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The exact institutional label matches Saltchuk's official company structure and Seattle location. A directly read article on Saltchuk's official site explicitly identifies Thea Foss as owned by Saltchuk, supplying a specific bridge to the saved vessel association. Forbes independently identifies the same private group. This record represents the enterprise, not any individual shareholder or employee."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "nationality",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "nationality",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This record represents Saltchuk, a privately owned group of transportation, marine-service and energy-distribution businesses. Its descriptions concern the continuing enterprise. Personal birth, nationality, gender, mortality and family-wealth fields do not apply, and no shareholder's biography or assets are substituted. Corporate history, services and verified company links are retained in the research context; person-specific classifications and social proposals follow the institutional schema restrictions.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Official corporate identity and the explicit vessel association establish a private institution. Personal-schema limitations are recorded without obscuring verified corporate facts."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/companies/saltchuk/",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Forbes-first searches site:forbes.com/profile/ \"Saltchuk\" and site:forbes.com \"Saltchuk Family of Companies\" located the exact corporate profile. Its body was directly read using ordinary public HTTP with a browser User-Agent after the web reader redirected to Tollbit. Seattle headquarters, private ownership, transportation activities and 1982 founding align with primary sources. This is an institutional company profile, not a personal billionaire profile."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The corporate history is clear: Saltchuk was formed around the 1982 acquisition of Totem Ocean Trailer Express, an Alaska ocean-transport business. Shipping and maritime activity therefore underpinned the enterprise's original operating platform. The machine label is Unknown because schema v8 requires that value for institutions; this is not a claim that the company's industry is unidentified.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The institution restriction is certain. The founders' personal fortunes and financing histories are not assigned to the corporate owner record."
+    },
+    "source_ids": [
+      "S3",
+      "S4"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Current corporate interests encompass freight transportation, marine services and energy distribution, including shipping, air cargo, petroleum distribution and dredging. These are verified group operations. No personal principal-wealth sector is assigned to an institution, and the public sources do not establish comparable segment asset values for a dominance calculation.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The schema requires Unknown for non-person records. Current corporate activities are retained separately from a personal wealth classification."
+    },
+    "source_ids": [
+      "S1",
+      "S7",
+      "S8",
+      "S9",
+      "S10"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Saltchuk's corporate platform developed through acquisition and reinvestment, beginning with the TOTE purchase. Shareholders describe continued family ownership, but the company itself is not a person who inherited, married into or independently earned a fortune. No shareholder's transfer mechanism is substituted for the entity's history.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Unknown records the inapplicability of the personal origin taxonomy to this institutional record, not an unresolved company identity."
+    },
+    "source_ids": [
+      "S4",
+      "S5"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Saltchuk is the owning parent and provider of capital and shared resources to separately managed operating businesses. Its corporate office does not directly manage daily operations. That corporate relationship is documented, but the schema's personal founder/operator/investor labels remain Unknown for institutions.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The parent-company role is directly described; no individual founder, executive or family-shareholder role is transferred to the entity."
+    },
+    "source_ids": [
+      "S1",
+      "S5",
+      "S9",
+      "S10"
+    ]
+  },
+  "biography": {
+    "plain_text": "Saltchuk is a privately owned transportation group headquartered in Seattle. Established in 1982 through the purchase of Totem Ocean Trailer Express, it expanded into freight transport, marine services and energy distribution. Its companies serve Alaska, Hawaii, the continental United States and the Caribbean, connecting remote communities with essential goods and supplies.",
+    "html": "<p>Saltchuk is a privately owned transportation group headquartered in Seattle. Established in 1982 through the purchase of Totem Ocean Trailer Express, it expanded into freight transport, marine services and energy distribution. Its companies serve Alaska, Hawaii, the continental United States and the Caribbean, connecting remote communities with essential goods and supplies.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Primary corporate history supports the acquisition and expansion; current official pages and Forbes corroborate private ownership, Seattle base, activities and geographical scope."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S7",
+      "S8"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Saltchuk gives its operating companies local decision-making authority while its corporate office supplies leadership, capital and shared resources. Individual brands retain their identities, and managers close to customers direct daily operations. The group invests in equipment and infrastructure for businesses where reliable service depends on costly, specialised assets.\n\nIts community programmes also draw on that transport network. Returning ships, aircraft and trucks carry recyclables and hazardous waste from remote communities to facilities equipped to handle them. Regional giving committees pool part of the group's charitable budget for youth development and post-secondary education, while operating companies support local organisations directly.",
+    "html": "<p>Saltchuk gives its operating companies local decision-making authority while its corporate office supplies leadership, capital and shared resources. Individual brands retain their identities, and managers close to customers direct daily operations. The group invests in equipment and infrastructure for businesses where reliable service depends on costly, specialised assets.</p>\r\n<p>Its community programmes also draw on that transport network. Returning ships, aircraft and trucks carry recyclables and hazardous waste from remote communities to facilities equipped to handle them. Regional giving committees pool part of the group's charitable budget for youth development and post-secondary education, while operating companies support local organisations directly.</p>\r\n",
+    "word_count": 99,
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Direct corporate governance and growth pages establish autonomy, capital and reinvestment; the giving page describes recycling backhaul and regional versus company grant allocation. Descriptive facts are used without adopting promotional superlatives."
+    },
+    "source_ids": [
+      "S1",
+      "S5",
+      "S6"
+    ]
+  },
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0046",
+      "name": "Container shipping",
+      "summary": "Saltchuk controls substantial container-shipping operations through TOTE Maritime Puerto Rico and Tropical Shipping. This is an operating-company ownership relationship, not passive investment or use of a carrier.",
+      "relationship_type": "controlling corporate parent of operating carriers",
+      "temporal_scope": "current",
+      "taxonomy_value": "Groups owners controlling substantial container-freight businesses. This is distinct from liquid-bulk tankers and air-cargo carriers, with no broader shipping synonym added.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "The current corporate structure and freight-services pages place the named container carriers within Saltchuk and describe their actual services."
+      },
+      "source_ids": [
+        "S1",
+        "S7"
+      ]
+    },
+    {
+      "tag_id": "tag_1551",
+      "name": "Air cargo",
+      "summary": "Saltchuk controls dedicated air-freight businesses including Northern Air Cargo, Aloha Air Cargo and Ryan Air. The group's sustained cargo-airline platform meets the substantial-operations contract.",
+      "relationship_type": "controlling corporate parent of cargo airlines",
+      "temporal_scope": "current",
+      "taxonomy_value": "Identifies owners with a substantial aviation-freight platform, a distinct operating mode from the two maritime carrier cohorts.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Current official service and structure pages identify the operating airlines; corporate history dates the first air-cargo acquisition to 2006."
+      },
+      "source_ids": [
+        "S1",
+        "S4",
+        "S7"
+      ]
+    },
+    {
+      "tag_id": "tag_0182",
+      "name": "Tanker shipping",
+      "summary": "Saltchuk wholly owns Overseas Shipholding Group, whose operating fleet transports crude oil and petroleum products. The completed acquisition and current group structure establish substantial control of a dedicated tanker business.",
+      "relationship_type": "controlling corporate parent of tanker operator",
+      "temporal_scope": "current",
+      "taxonomy_value": "Identifies control of liquid-bulk shipping operations, rather than container carriage, air freight or merely selling fuel to carriers.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The completed OSG transaction explicitly makes it a wholly owned subsidiary and describes its tanker fleet; the current group structure corroborates continuing membership."
+      },
+      "source_ids": [
+        "S1",
+        "S9"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=705",
+      "title": "Immutable owner input 705",
+      "publisher": "Superyacht Network; saved owner input",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Source display name Saltchuk Family of Companies, United States residence field and Alive status. Personal biography, nationality, gender, birth components and social links are blank. The record is stored in a person-oriented form despite its institutional name.",
+        "Current association: Thea Foss, vessel ID 51054, 36.58 m, relationship start 1950. The date is retained unchanged as source data, not accepted as Saltchuk's own acquisition date."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.saltchuk.com/who-we-are/corporate-structure/",
+      "title": "Corporate Structure",
+      "publisher": "Saltchuk",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Direct body identifies Saltchuk as a privately owned Seattle group covering freight transport, marine services and energy distribution. Its corporate office supplies leadership and resources without directly managing operations; local businesses retain their brands and decision-making.",
+        "Current structure includes TOTE, Tropical Shipping, OSG, NorthStar Energy, Saltchuk Marine and cargo-airline businesses. The page describes container services, tanker operations, dedicated air cargo and substantial fuel distribution. These are group-company roles, not personal shareholder biographies."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.saltchuk.com/thea-foss-chef-dedicated-to-preserving-sca-sma-for-future-generations/",
+      "title": "Thea Foss chef dedicated to preserving SCA, SMA for future generations",
+      "publisher": "Saltchuk; Hilary Reeves, 10 May 2022",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "The directly read company interview explicitly calls Thea Foss a vessel owned by Saltchuk. This supplies the specific entity-to-vessel bridge.",
+        "The employee's personal history and advocacy are not treated as Saltchuk's biography, personal facts or tag evidence."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.forbes.com/companies/saltchuk/",
+      "title": "Saltchuk: Company Overview & News",
+      "publisher": "Forbes; profile updated 13 May 2026",
+      "tier": 2,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "The complete corporate-profile body was read through ordinary urllib HTTP retrieval and BeautifulSoup. It identifies Saltchuk as privately owned, headquartered in Seattle, founded in 1982, with transportation, marine-service and energy-distribution activities.",
+        "The exact canonical URL is a verified corporate Forbes profile. Revenue and headcount are corporate figures, not personal wealth, and are omitted from the biographies."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.saltchuk.com/region/western/",
+      "title": "Western U.S.: Our History in the Region",
+      "publisher": "Saltchuk",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Direct body states that Saltchuk's founders acquired Totem Ocean Trailer Express in 1982, establishing the platform now associated with TOTE Maritime Alaska. It describes subsequent expansion beyond the original maritime businesses.",
+        "It dates Northern Air Cargo joining to 2006 and describes the later logistics and fuel-distribution additions. These corporate acquisitions are not inheritance evidence for any individual."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.saltchuk.com/who-we-are/growth/",
+      "title": "Growth",
+      "publisher": "Saltchuk",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "The directly read page describes Saltchuk as a private investor with a continuing acquisition and reinvestment approach. It supplies leadership and resources while leaving operational decisions with local management.",
+        "It specifically discusses funding capital-intensive businesses and maintaining their equipment and infrastructure. The biographies describe this model without claims that every acquisition succeeds or that the parent directs daily operations."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.saltchuk.com/who-we-are/charitable-giving/",
+      "title": "Giving Back",
+      "publisher": "Saltchuk",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Direct body describes using returning ships, aircraft and trucks for recycling backhaul, addressing the difficulty of moving recyclables and hazardous waste out of remote communities.",
+        "It says part of the cash-grant allocation is pooled through regional committees for youth development and post-secondary education, while operating companies distribute the remainder to local initiatives. The long description omits changing annual amounts and beneficiary counts."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.saltchuk.com/key-service/freight-transportation/",
+      "title": "Freight Transportation",
+      "publisher": "Saltchuk",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "The directly read service page describes regular cargo flights, charter work, domestic shipping and logistics, and international shipping. It identifies Northern Air Cargo, Aloha Air Cargo, Ryan Air, TOTE and Tropical Shipping within the group.",
+        "These are actual recurring freight operations, including container and air-cargo services; they are not incidental investments or customer relationships."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.saltchuk.com/key-service/energy-distribution/",
+      "title": "Energy Distribution",
+      "publisher": "Saltchuk",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Directly read page identifies NorthStar Energy's operating network and the distribution of fuels and lubricants through terminals, barges, wholesale supply and retail sites.",
+        "This supports energy distribution as a group activity. It does not establish ownership of oil production reserves or justify an upstream oil-and-gas tag."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.saltchuk.com/saltchuk-welcomes-overseas-shipholding-group-to-its-family-of-companies/",
+      "title": "Saltchuk Welcomes Overseas Shipholding Group to Its Family of Companies",
+      "publisher": "Saltchuk; 10 July 2024",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "The full announcement states that the acquisition closed and OSG became a wholly owned Saltchuk subsidiary, continuing as a separately managed business.",
+        "It describes OSG's liquid-bulk transport business and tanker fleet serving crude-oil and petroleum-product markets. This is completed ownership evidence, not an announced future transaction."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.saltchuk.com/saltchuk-welcomes-great-lakes-dredge-dock-to-our-family-of-companies/",
+      "title": "Saltchuk Welcomes Great Lakes Dredge & Dock to Our Family of Companies",
+      "publisher": "Saltchuk; 1 April 2026",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Directly read completion announcement identifies Great Lakes Dredge & Dock as a new wholly owned subsidiary, independently managed within Saltchuk, adding dredging services.",
+        "Its closing date is distinguished from earlier offer announcements. The corporate transaction does not establish a personal fortune or government ownership."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.saltchuk.com/thea-foss-deckhand-dedicated-making-every-trip-memorable/",
+      "title": "Thea Foss deckhand dedicated to making every trip memorable",
+      "publisher": "Saltchuk; 29 September 2016",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "The directly read article says Henry Foss acquired the yacht in 1950. It separately describes Saltchuk's later ownership context and refurbishment beginning in 1999.",
+        "This explains why the saved 1950 relationship start must not be described as Saltchuk's own acquisition. It does not establish a replacement start date for the source relationship."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Identity is resolved as an institution at 99. Saltchuk Family of Companies is the source label for the privately owned Saltchuk group, also identified in corporate announcements as Saltchuk Resources, Inc. No shareholder, director, employee or subsidiary is substituted as the owner-record subject.",
+    "The saved relationship begins in 1950. The official historical article attributes the 1950 purchase to Henry Foss, whereas Saltchuk's own history begins in 1982. The relationship may carry predecessor ownership history; the exact appropriate replacement start date is not established here. No vessel field is changed and no acquisition date is proposed.",
+    "All four classification objects are populated independently. The original corporate platform is documented ocean transport; present activities span several freight modes, marine services and energy distribution; acquisitions and reinvestment describe the enterprise's growth; the parent owns businesses and supplies capital while local managers operate them. Validator rules require Unknown machine labels for every institution, so these corporate findings remain in summaries without inventing personal wealth classifications.",
+    "Private family ownership is explicit. Government contracts, regulated maritime work and provision of essential services do not make the group state-owned. Government-owned is therefore excluded under its binding owner-entity contract.",
+    "The institutional schema requires proposed_socials to be empty. Verified Company Website for review: https://www.saltchuk.com/ (confidence 99, official site and direct corporate identity). Verified Forbes company profile: https://www.forbes.com/companies/saltchuk/ (confidence 99, body read and identity matched). These links are preserved here and in the ledger instead of being mislabelled personal accounts or silently omitted.",
+    "Personal Instagram, LinkedIn, Facebook, Twitter/X, YouTube, TikTok and Personal Website fields are not applicable to this corporate record. A bounded organisational search covered Saltchuk with these platform names and exact Saltchuk restrictions to Instagram, Facebook, Twitter/X, YouTube and TikTok. A corporate LinkedIn discovery result at https://ch.linkedin.com/company/saltchuk-resources-inc- was not independently verified or proposed. No shareholder's personal accounts were pursued or assigned.",
+    "Forbes was searched before other public research. The web reader's redirect did not expose the corporate-profile body, but a normal public HTTP request returned it successfully. No account, subscription, authenticated access or bypass was used. Some Saltchuk pages returned 403 through direct HTTP but their actual bodies were successfully read with the web reader.",
+    "The active literal set covers three distinct substantial freight operations: container shipping, air cargo and tanker shipping. They are separately useful carrier cohorts, not near-synonyms for one shipping role. Fuel distribution, dredging, towage, organisational governance and community work remain in ordinary narrative and evidence; no tag is added for every subsidiary or activity, no generic philanthropy or family-business tag is used, and no formal taxonomy candidate is created.",
+    "Current OSG and Great Lakes ownership was checked through completed-transaction bodies and the current group structure. Historical company counts, headcounts and annual revenue vary across pages and dates; they are not harmonised by guesswork and are omitted from published descriptions. No public segment valuation was found that would support a precise ranking of corporate asset contributions.",
+    "The source inventory is preserved exactly even where a person-oriented raw gap is inapplicable to a company. Birth date, gender, nationality, mortality and personal family facts are not filled; 1982 is a corporate foundation year, not a person's birth year. Source Alive and United States residence fields are left untouched.",
+    "Institutional descriptions were drafted through a separate allocation pass. Shared anchors are Saltchuk and its transport network. The short alone carries Seattle/private identity, the 1982 purchase, service categories and geographical scope. The long omits that sequence and adds local management autonomy, capital support, recycling backhaul and regional grant allocation. Its second paragraph describes specific continuing programmes rather than a list of charities. Both texts remain complete without the saved yacht relationship.",
+    "The schema's person-only biography_brief and editorial_assessment are null. The institution receives a 51-word one-paragraph short description, a 99-word two-paragraph long description and an editorial note. The internal pair review found concrete causal references, source-invisible prose, independent content and no personally owned vessel facts.",
+    "Exact-input inventory was run before Forbes-first research. The target was absent at first inspection and immediately before writing, so no partial backup was required. Only the assigned dossier was written; no input, code, catalogue, shared progress, other dossier or live record was modified."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal institutional research decision. Exact company identity and vessel association are supported; source-date caveat is explicit. Verified corporate links are retained for review under the institutional prohibition on social proposals. Four Unknown labels follow the non-person schema while summaries preserve independently researched corporate evidence. Three active semantic-contract tags and complementary institutional descriptions are proposed; no personal facts or taxonomy candidates."
+  }
+}

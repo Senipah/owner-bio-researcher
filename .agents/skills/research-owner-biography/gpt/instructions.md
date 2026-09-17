@@ -23,15 +23,16 @@ question; ask once only if several plausible people remain.
 Follow in order:
 
 1. Resolve identity from name, role, geography, family, and supplied context.
-   Require confidence of at least 85.
+   Require confidence of at least 75.
 2. Search the exact name on Forbes first. Record `verified`, `not_found`,
    `ambiguous`, or `unavailable`. A verified result must be a `Forbes` row with
    its exact URL in Social Media Profiles; other statuses produce no link.
 3. Research how the fortune or prominence arose and its current private basis.
 4. Classify `wealth_creation_industry`, `primary_industry`, `wealth_origin`,
-   and `wealth_relationship` independently using the exact mappings and
-   distinguish an evidenced
-   independent start from an advantaged one; use broad `self_made` when
+   and `wealth_relationship`. If current industry is unknown, use a known
+   creation sector for both; disclose the fallback, not current holdings.
+   Also distinguish an evidenced
+   independent start from an advantaged one; use `self_made` when
    unresolved and `unknown` below confidence 70.
 5. Apply the minimum useful set of durable, material active catalogue tags.
    The catalogue is a closed-world whitelist. Resolve aliases to canonical

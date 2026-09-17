@@ -1,0 +1,202 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 2059,
+    "display_name": "Siegfried Steiner",
+    "identity_confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "The source name is Siegfried Herbert Steiner, but its old biography names and links SANUS founder Siegfried Herbert Nehls. SANUS primary material verifies Nehls and a matching 1963 birth year, yet no independent evidence establishes Steiner as a surname or alias. The 82 score clears the revised 75 numeric threshold; the conflicting surname and incompatible source gender remain an unresolved person-identity conflict."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "identity_conflict",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This record requires an identity correction decision. Its name fields identify Siegfried Herbert Steiner, while its existing biography identifies Siegfried Nehls, founder of the Berlin property developer SANUS. The company's own history confirms Nehls's career and 1963 birth year, but does not connect him with the surname Steiner. Nehls is the strongest candidate; the available evidence does not establish whether the name fields or the attached biography belong to this record.",
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "The source record directly contains the conflicting surnames. The SANUS annual report and current company website independently identify the developer as Siegfried Nehls; neither resolves the relationship to the source name Steiner."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Forbes-first searches under both Siegfried Steiner and Siegfried Nehls found no dedicated profile securely attributable to the source record. This is a search outcome, not a claim about inclusion on any wealth list."
+    }
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://sanus-ag.de/wp-content/uploads/SANUS_GB_2016-2017_DE.pdf",
+      "title": "SANUS Geschäftsbericht 2016–2017 — Siegfried Nehls",
+      "publisher": "SANUS AG",
+      "tier": 1,
+      "accessed_at": "2026-09-14",
+      "supports": [
+        "Main agent read the actual PDF biography spread, PDF page 11 (printed pages 20–21). It identifies Siegfried Nehls, born in Fulda in 1963, the eldest of three children.",
+        "The biography describes his parents' property development, the family's move to Berlin in 1974, business studies from 1983 to 1988, work as a managing shareholder in property development, and founding SANUS in 1996.",
+        "The source establishes a substantial candidate biography but provides no Steiner surname or alias. These facts are not transferred to the unresolved record."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://sanus-ag.de/",
+      "title": "SANUS — Immobilienentwicklung",
+      "publisher": "SANUS AG",
+      "tier": 1,
+      "accessed_at": "2026-09-14",
+      "supports": [
+        "The directly read company website attributes its statement to Siegfried Nehls of SANUS and presents the property-development business.",
+        "This current company naming corroborates the Nehls candidate, without independently identifying Siegfried Steiner as the same person."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The input preserves person ID 2059 and display name Siegfried Steiner. First name Siegfried, middle name Herbert and surname Steiner conflict with the biography's explicit Siegfried Nehls name and linked siegfried-herbert-nehls profile. No source record, relative or namesake has been merged.",
+    "The source says female and born 30 November 1963. The primary candidate biography confirms only the 1963 birth year and describes Siegfried Nehls as a man. Neither the full birth date nor a gender correction is imported across the unresolved identity link.",
+    "The SANUS founder is the strongest candidate, and an upstream clerical error is plausible, but no verified alias, surname change or independent record bridges Steiner to Nehls. The source biography alone cannot resolve which source fields are wrong.",
+    "Wealth creation research found candidate-specific property development and parental business advantage in the SANUS report. That is useful retained evidence for Nehls, not proof of the source person's wealth; it does not support automatic classifications or tags for Steiner.",
+    "Current SANUS branding is not sufficient to establish Nehls's current principal personal holdings or exact executive role. Those questions would require further current ownership research after identity resolution.",
+    "Public searches covered Forbes first, then LinkedIn, Instagram, personal websites, Facebook, Twitter/X, YouTube and TikTok under both surnames. A Berlin/Freie Universität LinkedIn candidate at https://de.linkedin.com/in/siegfried-nehls-7a321843 could be Nehls, but direct access returned 999 and the source-record surname remains unresolved. No personal account is proposed.",
+    "The name-only LinkedIn result https://de.linkedin.com/in/siegfriedsteiner instead describes a Munich software architect. Other discovery results concerned an Austrian property-company manager, pool-industry consultant, actor or entomologist. None supplied a documented Steiner–Nehls bridge, and none was adopted.",
+    "A French SCI SIGI legal-notice result at https://entreprises.lefigaro.fr/sci-sigi-06/entreprise-888289014 names Siegfried Herbert Nehls, but direct retrieval failed. It remains a discovery lead, not verified evidence for a proposal.",
+    "Vessel context was used only to investigate identity. No personally owned vessel facts, allegations, private contact details or unsupported wealth estimates are proposed."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Retrospective 2026-09-14: the 82 numeric score does not justify transferring SANUS founder facts across the Steiner/Nehls surname and gender discrepancy. Retain identity_conflict, with no biographies, classifications, tags or personal corrections until a verified alias or upstream correction resolves the source record."
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The candidate biography documents Nehls's property-development career, but the source person's identity has not been resolved sufficiently to attribute the original wealth sector.",
+    "confidence": {
+      "score": 64,
+      "band": "low",
+      "reason": "No independent evidence links the source name Steiner to the SANUS founder. A candidate-specific sector cannot safely be assigned to this record."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No current principal private-interest sector is established for the unresolved source person.",
+    "confidence": {
+      "score": 60,
+      "band": "low",
+      "reason": "Current company branding identifies Nehls, while both the source identity and the candidate's current personal asset weighting remain unresolved."
+    },
+    "source_ids": [
+      "S2"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The candidate's parental property platform and later business founding cannot establish the source person's origin of wealth.",
+    "confidence": {
+      "score": 63,
+      "band": "low",
+      "reason": "The annual report supplies material parental-business evidence for Nehls, but there is no verified basis to transfer that advantaged-start history to Steiner."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "A founder or operator relationship cannot be assigned across the unexplained surname conflict.",
+    "confidence": {
+      "score": 64,
+      "band": "low",
+      "reason": "SANUS identifies Nehls as its founder and historical executive. It does not establish that the source person named Steiner holds that relationship."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  }
+}

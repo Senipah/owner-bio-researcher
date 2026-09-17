@@ -1,0 +1,365 @@
+{
+  "schema_version": 8,
+  "record_type": "institution",
+  "owner": {
+    "person_id": 915,
+    "display_name": "Taiwan Government",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The display name explicitly denotes a government rather than a natural person, and the source record's Taiwanese nationality and Taiwan location fields reinforce the institutional geography. Official Republic of China (Taiwan) sources document the constitutional government, its five-Yuan central structure and its local administrations. The score remains one point below conclusive because the broad source label does not identify one specific ministry, branch or legal office within that public system."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This source entry is a broad institutional label for the government of the Republic of China (Taiwan), not a person and not one uniquely identified ministry or agency. Official constitutional and government-organisation pages support durable public-facing text about the five-Yuan central system and local self-government. Person-only attributes, wealth origins and personal socials must not be inferred from the source's person-shaped fields.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The institutional classification follows directly from the display name and is corroborated by official government sources; only the exact branch or agency represented by the broad label remains unspecified."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The mandatory Forbes-first exact-label and site-specific searches found no dedicated Forbes profile for Taiwan Government or the government of the Republic of China (Taiwan). News and contributor pages were not treated as an institutional profile."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Wealth-creation industry is a person-level ownership classification and is not assigned to this government institution record.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Schema v8 requires Unknown wealth classifications for institutions; governmental responsibilities do not establish an individual wealth creator."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Primary industry is not imported as a person classification for a sovereign public-administration record.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Schema v8 requires Unknown for institutions, and the government's constitutional remit cannot be converted into a natural person's principal wealth sector."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No natural person is resolved, so self-made, inherited or family-transfer origin cannot be assigned.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The source record represents a constitutional government rather than a person whose financial starting position could be classified."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Founder, operator, investor and heir relationships do not apply to this institutional government record.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Official sources establish a public constitutional system, not a natural owner or beneficiary with a classifiable relationship to private wealth."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "biography": {
+    "plain_text": "The government of the Republic of China (Taiwan) is the public authority responsible for national administration and local self-government in Taiwan. Rooted in a democratic constitution, it delivers public policy through central institutions and elected territorial governments. Its enduring remit spans legislation, administration, courts, civil service, public accountability and local services.",
+    "html": "<p>The government of the Republic of China (Taiwan) is the public authority responsible for national administration and local self-government in Taiwan. Rooted in a democratic constitution, it delivers public policy through central institutions and elected territorial governments. Its enduring remit spans legislation, administration, courts, civil service, public accountability and local services.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The Office of the President's constitutional and government-organisation pages and the Executive Yuan's local-government directory support the institutional identity, democratic presidency, five-Yuan structure and local administrative framework."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Taiwan’s constitutional order rests on popular sovereignty and a division of responsibilities between central and local government. The president serves as head of state, while the Executive Yuan is the highest administrative body and works with the Legislative Yuan on laws, budgets and national policy. Separate Judicial, Examination and Control Yuans oversee courts, the civil service, impeachment and public audit.\n\nBelow the central level, the Local Government Act structures special municipalities, counties and cities as self-governing bodies. Councils exercise local legislative authority, while elected mayors and magistrates lead administration. This framework makes the government a system of constitutional institutions rather than a single agency or officeholder.",
+    "html": "<p>Taiwan’s constitutional order rests on popular sovereignty and a division of responsibilities between central and local government. The president serves as head of state, while the Executive Yuan is the highest administrative body and works with the Legislative Yuan on laws, budgets and national policy. Separate Judicial, Examination and Control Yuans oversee courts, the civil service, impeachment and public audit.</p>\r\n<p>Below the central level, the Local Government Act structures special municipalities, counties and cities as self-governing bodies. Councils exercise local legislative authority, while elected mayors and magistrates lead administration. This framework makes the government a system of constitutional institutions rather than a single agency or officeholder.</p>\r\n",
+    "word_count": 106,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The ROC Constitution, Office of the President's central and local organisation pages and the Executive Yuan's structure page support the sovereignty, head-of-state, five-Yuan, executive and local-government descriptions."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "biography",
+      "value": "<p>The government of the Republic of China (Taiwan) is the public authority responsible for national administration and local self-government in Taiwan. Rooted in a democratic constitution, it delivers public policy through central institutions and elected territorial governments. Its enduring remit spans legislation, administration, courts, civil service, public accountability and local services.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The biography supplies durable, official-source-backed institutional context while explicitly preventing person-level interpretation and avoiding any private-asset material."
+      },
+      "source_ids": [
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0249",
+      "name": "Government-owned",
+      "summary": "The record is itself the government of the Republic of China (Taiwan), represented as a sovereign public institution rather than a natural person or private company.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The exact display label and official constitutional and government-organisation sources establish that this is a government record, matching the catalogue's explicit rule for sovereign and governmental entities."
+      },
+      "source_ids": [
+        "S1",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=915",
+      "title": "Taiwan Government owner record, person ID 915",
+      "publisher": "Superyacht Network Agent",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Immutable Taiwan Government display label and person ID",
+        "Taiwanese nationality and Taiwan location baselines stored in a person-shaped schema",
+        "Blank biography and social profiles",
+        "Institutional rather than human wording of the record"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/search/?q=%22Taiwan%20Government%22",
+      "title": "Forbes search for Taiwan Government",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Mandatory Forbes-first profile check",
+        "No dedicated Forbes institutional profile located"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://english.president.gov.tw/Page/94",
+      "title": "Constitution of the Republic of China (Taiwan) — Main Text",
+      "publisher": "Office of the President, Republic of China (Taiwan)",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Republic of China as a democratic republic",
+        "Sovereignty residing in the citizen body",
+        "President as head of state",
+        "Constitutional powers of central government"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://english.president.gov.tw/Page/52",
+      "title": "Government Organizations — Central Government",
+      "publisher": "Office of the President, Republic of China (Taiwan)",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Directly elected president and head-of-state role",
+        "Five-Yuan central-government system",
+        "Executive, legislative, judicial, examination and control functions",
+        "Distinction among central government bodies"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://english.ey.gov.tw/Page/E43650B2CB14861B",
+      "title": "Structure and Functions",
+      "publisher": "Executive Yuan, Republic of China (Taiwan)",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Executive Yuan as the executive branch",
+        "Premier-led cabinet structure",
+        "Relationship between executive and legislative functions",
+        "Administrative rather than personal nature of the record"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://english.president.gov.tw/Page/106",
+      "title": "Government Organizations — Local Governments",
+      "publisher": "Office of the President, Republic of China (Taiwan)",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Local-government structure under the Local Government Act",
+        "Special municipalities, counties and cities",
+        "Elected local councils, mayors and magistrates",
+        "Central and local scope of the broad institutional label"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Institutional scope",
+      "detail": "Taiwan Government is a broad umbrella label, not the formal name of one uniquely identified ministry, branch or public corporation. The biography therefore describes the Republic of China (Taiwan)'s central and local public-administration system without narrowing the record to the Executive Yuan or another specific organ."
+    },
+    {
+      "topic": "Record type",
+      "detail": "The source stores Taiwan and Government in first-name and surname fields and assigns nationality, residence, birth-country and mortality values, but these are artefacts of a person-shaped database. No middle name, gender, birth detail, personal title or mortality correction is proposed for the institution."
+    },
+    {
+      "topic": "Naming",
+      "detail": "Official sources use Republic of China (Taiwan), while the immutable display label says Taiwan Government. The dossier preserves the source label and uses the official formulation in explanatory text without proposing a display-name change that might imply a more specific legal entity than the evidence supports."
+    },
+    {
+      "topic": "Ownership attribution",
+      "detail": "The institutional classification does not identify a natural owner, officeholder, ministry, agency or ultimate decision-maker behind the source entry. Current political leaders are intentionally omitted so the text remains durable and does not convert a public institution into a personal record."
+    },
+    {
+      "topic": "Classifications and socials",
+      "detail": "Schema v8 requires all four wealth labels to remain Unknown for institutions. Institution records cannot propose personal or organisational socials, so official government domains are preserved as sources rather than imported as Company Website or personal-social records."
+    },
+    {
+      "topic": "Tag scope",
+      "detail": "Government-owned is the only minimum useful active tag whose catalogue contract explicitly includes a record that is itself a government or sovereign public entity. Public-office and government-contracting tags describe people or business models and are not proposed."
+    },
+    {
+      "topic": "Excluded material",
+      "detail": "Private assets, registries, travel, residences, security-sensitive detail, changing officeholders, political advocacy, sovereignty disputes and transient policy claims are excluded from the biography, classifications, tag and proposal."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal institutional dossier. Taiwan Government is resolved at 99 as a broad public institution rather than a person or one uniquely identified branch. Durable biography text explains the Republic of China (Taiwan)'s five-Yuan central system and local administration. All four wealth labels are Unknown, no person fields or socials are proposed, and Government-owned is the sole supported active tag. No private-asset material appears in biography, wealth, tags or proposals."
+  }
+}

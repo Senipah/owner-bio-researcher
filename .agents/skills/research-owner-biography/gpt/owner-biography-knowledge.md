@@ -17,8 +17,8 @@ Use this file as Custom GPT Knowledge. Behaviour, workflow order, manual-mode ru
 | Section | Canonical source | SHA-256 |
 | --- | --- | --- |
 | Owner tag governance | `../../../docs/ai/OWNER_TAG_GOVERNANCE.md` | `85195e2f94dc62134d614fb3a134498b6ecb57f9c57ad38db04f2c8e26878cdd` |
-| Research and dossier contract | `references/research-contract.md` | `700bfb5d01e748d6aee1f3375e22c3e1e73f6088186a87238899d162b6717f3d` |
-| Wealth classification | `references/wealth-classification.md` | `ffd1f3abaa8e80ccd424747b76e2f7a82e3349ac2b87a1e049b6bc0531f93887` |
+| Research and dossier contract | `references/research-contract.md` | `fc2cac3913e8721048bbfac0599a10f302e51ccfb2f614eb33f6d48b3a926d6f` |
+| Wealth classification | `references/wealth-classification.md` | `2082592e66336d48bdc29fe51b9c9c5c6548ef2483e333a632fcfbd769a8b860` |
 | Biography style | `references/biography-style.md` | `0735c58c4d0c75a0a74d7a1bf95afb7f40eafd9e0b103fed3d0304079474caf8` |
 | Editorial calibrations | `references/editorial-calibrations.md` | `b705d5ebe33444a8abfecbc7bb0100478dc88c5a848b8fb4121473853a7dc9dd` |
 
@@ -454,7 +454,7 @@ available:
 - spouse, child, or associate names;
 - official profile cross-links.
 
-Do not continue below identity confidence 85. Use `identity_conflict` for
+Do not continue below identity confidence 75. Use `identity_conflict` for
 contradictory matches and `insufficient_evidence` when no match is strong
 enough.
 
@@ -507,6 +507,13 @@ its four independent objects:
 - `wealth_relationship`: the person's principal relationship to the
   wealth-producing assets.
 
+Assess the two industry fields separately first. If the current principal
+industry is still unknown but `wealth_creation_industry` is established, use
+the creation sector for both industry classifications. Identify
+`primary_industry` as an origin-sector fallback in its summary and confidence
+reason; do not present it as verified current holdings. `wealth_origin` is the
+acquisition mechanism, not the industry to copy.
+
 Each object must contain a valid `classification`, its exact mapped `label`, a
 concrete `summary`, `confidence`, and `source_ids`. Non-`unknown`
 classifications require confidence 70 or higher. Inherited and royal status
@@ -538,7 +545,7 @@ Bands are deterministic:
 | --- | --- | --- |
 | 95-100 | `very_high` | Direct primary evidence or an exact official profile |
 | 85-94 | `high` | Strong source with independent corroboration |
-| 70-84 | `medium` | Plausible but needs human review |
+| 70-84 | `medium` | Moderate evidence; record uncertainty and verify each claim separately |
 | 50-69 | `low` | Weak or incomplete evidence |
 | 0-49 | `insufficient` | Do not use |
 
@@ -1104,7 +1111,8 @@ Describe four separate aspects of an owner's wealth:
 - `wealth_relationship`: the person's principal relationship to the
   wealth-producing assets.
 
-Do not compress these into one label. A technology founder who now principally
+Assess the industries separately, then use the origin-sector fallback below if
+current interests cannot be classified. A technology founder who now principally
 manages a diversified investment portfolio can have `Technology` as a wealth
 creation industry, `Finance & Investments` as a primary industry, `Self-made`
 as an origin, and `Family office principal` as a relationship.
@@ -1254,6 +1262,17 @@ identifiable private business or wealth-producing interests:
    operating interests can change.
 3. It may differ from `wealth_creation_industry` after a sale, reinvestment,
    or diversification.
+4. If the current principal sector remains unknown after research but
+   `wealth_creation_industry` is known, use that same sector and label for
+   `primary_industry`. This is a reporting fallback, not evidence that the
+   original business or industry still dominates current private wealth.
+   Explain the missing current evidence and the fallback explicitly in the
+   primary summary and confidence reason. Cite the origin-sector sources,
+   score the fallback conservatively (at least 70 and no higher than the
+   origin-sector score), and leave `wealth_origin` and `wealth_relationship`
+   to their separately evidenced classifications. If the origin sector is
+   also unknown, retain `primary_industry=unknown`; never turn a known
+   `wealth_origin` mechanism such as inheritance into an industry label.
 
 ## Wealth-origin values
 
@@ -1340,12 +1359,13 @@ and office-held assets:
 4. Use the evidenced private sector for each industry field, such as
    `real_estate`, `hospitality`, `finance_investments`, or `diversified`.
    `wealth_creation_industry` requires evidence for the sector that created
-   the relevant private family fortune; `primary_industry` requires evidence
-   for the current principal private interests.
+   the relevant private family fortune. For `primary_industry`, use evidence
+   of current private interests when available; otherwise use that verified
+   private origin sector as the disclosed fallback.
 5. Use `energy` only when private oil, gas, power, or related holdings
    demonstrably underpin the person's private wealth.
-6. When private wealth cannot be separated reliably from state or royal
-   assets, use `unknown` for either industry and explain the opacity. Do not
+6. When no private sector can be separated reliably from state or royal
+   assets, use `unknown` for both industries and explain the opacity. Do not
    substitute `diversified` or `energy` as a guess.
 7. Use `trustee_custodian` when the evidence establishes stewardship without
    personal ownership; use `royal_beneficiary` when personal benefit follows
@@ -1356,6 +1376,7 @@ and office-held assets:
 | Case | Wealth creation industry | Primary industry | Wealth origin | Wealth relationship |
 | --- | --- | --- | --- | --- |
 | Marijke Mars | Food & Beverage | Food & Beverage | Inherited | Heir / family shareholder |
+| Manufacturer whose original fortune is documented but whose current private holdings cannot be ranked; disclose the primary fallback in its reasoning | Manufacturing | Manufacturing | Self-made | Unknown |
 | Early Bitcoin investor whose current holdings span unrelated sectors and whose starting position is unclear | Cryptocurrency | Diversified | Self-made | Investor |
 | Traditional financier who later becomes active in crypto and built the career without a material family platform | Finance & Investments | Cryptocurrency or Finance & Investments, according to current evidence | Self-made — independent start | Investor |
 | Shahid Khan, who built an automotive supplier after arriving in the United States as a student | Automotive | Automotive | Self-made — independent start | Founder |

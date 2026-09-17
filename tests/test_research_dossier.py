@@ -90,15 +90,120 @@ def _validate(
     )
 
 
-def _vessel_name_mention(text: str, vessel_name: str) -> bool:
+def _vessel_name_mention(
+    text: str, vessel_name: str, reviewed_phrases: tuple[str, ...] = (),
+) -> bool:
     scripts_path = str(SKILL_ROOT / "scripts")
     sys.path.insert(0, scripts_path)
     try:
         from validate_dossier import _mentions_vessel_name
 
-        return _mentions_vessel_name(text, vessel_name)
+        return _mentions_vessel_name(text, vessel_name, reviewed_phrases)
     finally:
         sys.path.remove(scripts_path)
+
+
+@pytest.mark.parametrize(
+    ("vessel", "phrase", "text"),
+    [
+        ("Athina", "Athina Kyriakou", "Athina Kyriakou bought shares"),
+        ("Azizi", "Mirwais Azizi", "Mirwais Azizi's property firm"),
+        ("Azizi", "Azizi used his resources", "Azizi used his resources"),
+        ("Azizi", "Azizi Bank", "Azizi Bank grew"),
+        ("Azizi", "Azizi Town", "The settlement is Azizi Town"),
+        ("Lafayette", "Pharmacie Lafayette", "Pharmacie Lafayette grew"),
+    ],
+)
+def test_reviewed_vessel_collision_masks_only_exact_span(
+    vessel: str, phrase: str, text: str,
+) -> None:
+    assert not _vessel_name_mention(text, vessel, (phrase,))
+    assert _vessel_name_mention(f"{text}. He boarded {vessel}.", vessel, (phrase,))
+
+
+def test_reviewed_commercial_yacht_terms_preserve_personal_asset_warning() -> None:
+    scripts_path = str(SKILL_ROOT / "scripts")
+    sys.path.insert(0, scripts_path)
+    try:
+        from editorial_rules import editorial_findings
+
+        phrases = ("FantaSea Yachts", "private yacht hire")
+        _, warnings = editorial_findings(
+            "FantaSea Yachts offers private yacht hire.",
+            section="biography",
+            reviewed_commercial_yacht_phrases=phrases,
+        )
+        assert not warnings
+        _, warnings = editorial_findings(
+            "FantaSea Yachts offers private yacht hire. He keeps a personal yacht.",
+            section="biography",
+            reviewed_commercial_yacht_phrases=phrases,
+        )
+        assert any("yacht terminology" in warning for warning in warnings)
+    finally:
+        sys.path.remove(scripts_path)
+
+
+def test_phrase_exception_requires_specific_sourced_review() -> None:
+    scripts_path = str(SKILL_ROOT / "scripts")
+    sys.path.insert(0, scripts_path)
+    try:
+        from validate_dossier import _reviewed_phrase_exceptions
+
+        item = {
+            "kind": "person_name", "phrase": "Athina Kyriakou",
+            "vessel_name": "Athina", "source_ids": ["S1"],
+            "reason": "The verified full personal name.",
+        }
+        document = {
+            "editorial_assessment": {"reviewed_phrase_exceptions": [item]},
+            "biography": {"plain_text": "Athina Kyriakou holds shares."},
+        }
+        errors: list[str] = []
+        assert _reviewed_phrase_exceptions(document, {"S1"}, errors) == [item]
+        assert not errors
+        document["editorial_assessment"]["reviewed_phrase_exceptions"] = [
+            {**item, "source_ids": ["missing"]}
+        ]
+        assert not _reviewed_phrase_exceptions(document, {"S1"}, errors)
+        assert any("source_ids" in error for error in errors)
+    finally:
+        sys.path.remove(scripts_path)
+
+
+def test_duplicate_company_website_proposals_fail_before_compilation(
+    tmp_path: Path,
+) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["proposed_socials"].append({
+        **dossier["proposed_socials"][0],
+        "url": "https://another-owned-company.example/",
+    })
+
+    result = _validate(tmp_path, dossier, strict=True)
+
+    assert result.returncode == 1
+    assert "proposed_socials[1].type_id duplicates proposed_socials[0].type_id" in result.stderr
+
+
+@pytest.mark.parametrize(("score", "accepted"), [(74, False), (75, True)])
+def test_validator_resolved_identity_threshold_is_75(
+    tmp_path: Path, score: int, accepted: bool,
+) -> None:
+    dossier = deepcopy(_calibration())
+    dossier["owner"]["identity_confidence"] = {
+        "score": score,
+        "band": "medium",
+        "reason": "The linked company and personal context support this identity.",
+    }
+
+    result = _validate(tmp_path, dossier, strict=True)
+
+    if accepted:
+        assert result.returncode == 0, result.stderr
+    else:
+        assert result.returncode == 1
+        assert "owner.identity_confidence.score must be at least 75" in result.stderr
 
 
 def test_calibration_dossier_matches_wealth_classification_contract(

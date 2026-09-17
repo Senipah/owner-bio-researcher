@@ -490,6 +490,7 @@ def editorial_findings(
     text: str,
     *,
     section: str,
+    reviewed_commercial_yacht_phrases: tuple[str, ...] = (),
 ) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warnings: list[str] = []
@@ -552,10 +553,22 @@ def editorial_findings(
             f"{long_sentences}"
         )
 
-    if PERSONAL_YACHT_PATTERN.search(text):
+    yacht_text = mask_reviewed_phrases(
+        text, reviewed_commercial_yacht_phrases,
+    )
+    if PERSONAL_YACHT_PATTERN.search(yacht_text):
         warnings.append(
             f"{section} mentions yacht terminology; confirm it is durable "
             "maritime work and not personal asset ownership"
         )
 
     return errors, warnings
+
+
+def mask_reviewed_phrases(text: str, phrases: tuple[str, ...]) -> str:
+    """Mask only complete, exact reviewed spans; leave other occurrences visible."""
+    for phrase in sorted(set(phrases), key=len, reverse=True):
+        if phrase:
+            pattern = re.compile(rf"(?<!\w){re.escape(phrase)}(?!\w)", re.I)
+            text = pattern.sub(lambda match: " " * len(match.group()), text)
+    return text

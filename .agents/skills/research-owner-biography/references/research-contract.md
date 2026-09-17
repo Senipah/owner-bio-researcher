@@ -27,7 +27,7 @@ available:
 - spouse, child, or associate names;
 - official profile cross-links.
 
-Do not continue below identity confidence 85. Use `identity_conflict` for
+Do not continue below identity confidence 75. Use `identity_conflict` for
 contradictory matches and `insufficient_evidence` when no match is strong
 enough.
 
@@ -80,6 +80,13 @@ its four independent objects:
 - `wealth_relationship`: the person's principal relationship to the
   wealth-producing assets.
 
+Assess the two industry fields separately first. If the current principal
+industry is still unknown but `wealth_creation_industry` is established, use
+the creation sector for both industry classifications. Identify
+`primary_industry` as an origin-sector fallback in its summary and confidence
+reason; do not present it as verified current holdings. `wealth_origin` is the
+acquisition mechanism, not the industry to copy.
+
 Each object must contain a valid `classification`, its exact mapped `label`, a
 concrete `summary`, `confidence`, and `source_ids`. Non-`unknown`
 classifications require confidence 70 or higher. Inherited and royal status
@@ -111,7 +118,7 @@ Bands are deterministic:
 | --- | --- | --- |
 | 95-100 | `very_high` | Direct primary evidence or an exact official profile |
 | 85-94 | `high` | Strong source with independent corroboration |
-| 70-84 | `medium` | Plausible but needs human review |
+| 70-84 | `medium` | Moderate evidence; record uncertainty and verify each claim separately |
 | 50-69 | `low` | Weak or incomplete evidence |
 | 0-49 | `insufficient` | Do not use |
 

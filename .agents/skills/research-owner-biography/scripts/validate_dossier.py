@@ -14,6 +14,7 @@ from editorial_rules import (
     WORD_PATTERN as EDITORIAL_WORD_PATTERN,
     biography_pair_findings,
     editorial_findings,
+    mask_reviewed_phrases,
 )
 from inventory_owner import _find_owner, build_inventory
 
@@ -22,6 +23,7 @@ REPO_ROOT = Path(__file__).resolve().parents[4]
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
+from src.constants import IDENTITY_CONFIDENCE_THRESHOLD
 from src.tags import (
     ASSIGNABLE_TAG_STATUSES,
     DEFAULT_TAG_CATALOGUE_PATH,
@@ -209,6 +211,65 @@ def _source_ids(
         errors.append(f"{path} contains unknown source IDs: {unknown}")
 
 
+def _reviewed_phrase_exceptions(
+    document: dict[str, Any], known_sources: set[str], errors: list[str],
+) -> list[dict[str, str]]:
+    assessment = document.get("editorial_assessment")
+    value = assessment.get("reviewed_phrase_exceptions", []) if isinstance(assessment, dict) else []
+    if not isinstance(value, list):
+        errors.append("editorial_assessment.reviewed_phrase_exceptions must be a list")
+        return []
+    biographies = " ".join(
+        part.get("plain_text", "") for part in
+        (document.get("biography"), document.get("long_biography"))
+        if isinstance(part, dict) and isinstance(part.get("plain_text"), str)
+    )
+    reviewed: list[dict[str, str]] = []
+    seen: set[tuple[str, str, str]] = set()
+    for index, item in enumerate(value):
+        path = f"editorial_assessment.reviewed_phrase_exceptions[{index}]"
+        if not isinstance(item, dict):
+            errors.append(f"{path} must be an object")
+            continue
+        kind, phrase, vessel = (
+            item.get("kind"), item.get("phrase"), item.get("vessel_name")
+        )
+        if kind not in {"person_name", "organisation", "place", "commercial_maritime"}:
+            errors.append(f"{path}.kind is invalid")
+            continue
+        if not isinstance(phrase, str) or len(phrase.strip()) < 6 or phrase != phrase.strip():
+            errors.append(f"{path}.phrase must be a specific exact phrase")
+            continue
+        if not re.search(rf"(?<!\w){re.escape(phrase)}(?!\w)", biographies, re.I):
+            errors.append(f"{path}.phrase does not occur in the biographies")
+            continue
+        if kind == "commercial_maritime":
+            if vessel is not None or not re.search(r"\byachts?\b", phrase, re.I) or re.search(r"\b(?:personal|owned|aboard)\b", phrase, re.I):
+                errors.append(f"{path} must identify a commercial yacht phrase, not a personal asset")
+                continue
+        elif (not isinstance(vessel, str) or len(vessel) < 3
+              or len(phrase) <= len(vessel)
+              or not re.search(rf"(?<!\w){re.escape(vessel)}(?!\w)", phrase, re.I)):
+            errors.append(f"{path} must identify a vessel-name span inside a longer phrase")
+            continue
+        ids = item.get("source_ids")
+        if not isinstance(ids, list) or not ids or any(
+            not isinstance(source, str) or source not in known_sources for source in ids
+        ):
+            errors.append(f"{path}.source_ids must cite known sources")
+            continue
+        if not isinstance(item.get("reason"), str) or not item["reason"].strip():
+            errors.append(f"{path}.reason must explain the reviewed non-vessel meaning")
+            continue
+        key = (kind, phrase.casefold(), (vessel or "").casefold())
+        if key in seen:
+            errors.append(f"{path} duplicates an earlier phrase")
+            continue
+        seen.add(key)
+        reviewed.append(item)
+    return reviewed
+
+
 def _classification(
     value: Any,
     path: str,
@@ -340,11 +401,20 @@ def validate(
     else:
         if not isinstance(owner.get("display_name"), str) or not owner["display_name"].strip():
             errors.append("owner.display_name must be non-empty")
-        _confidence(
+        identity_score = _confidence(
             owner.get("identity_confidence"),
             "owner.identity_confidence",
             errors,
         )
+        if (
+            record_type in {"person", "institution"}
+            and identity_score is not None
+            and identity_score < IDENTITY_CONFIDENCE_THRESHOLD
+        ):
+            errors.append(
+                "owner.identity_confidence.score must be at least "
+                f"{IDENTITY_CONFIDENCE_THRESHOLD} for a resolved owner"
+            )
 
     snapshot = document.get("input_snapshot")
     researchable_missing: set[str] = set()
@@ -416,6 +486,12 @@ def validate(
                 errors.append(f"{path}.{key} must be non-empty")
         if not isinstance(source.get("supports"), list) or not source["supports"]:
             errors.append(f"{path}.supports must be a non-empty list")
+
+    reviewed_exceptions = _reviewed_phrase_exceptions(document, known_sources, errors)
+    commercial_phrases = tuple(
+        item["phrase"] for item in reviewed_exceptions
+        if item["kind"] == "commercial_maritime"
+    )
 
     forbes = document.get("forbes_profile")
     if not isinstance(forbes, dict):
@@ -588,6 +664,7 @@ def validate(
             editorial_errors, editorial_warnings = editorial_findings(
                 brief_text,
                 section="biography_brief",
+                reviewed_commercial_yacht_phrases=commercial_phrases,
             )
             errors.extend(editorial_errors)
             warnings.extend(editorial_warnings)
@@ -710,6 +787,7 @@ def validate(
             editorial_errors, editorial_warnings = editorial_findings(
                 plain,
                 section="biography",
+                reviewed_commercial_yacht_phrases=commercial_phrases,
             )
             errors.extend(editorial_errors)
             warnings.extend(editorial_warnings)
@@ -782,6 +860,7 @@ def validate(
             editorial_errors, editorial_warnings = editorial_findings(
                 long_plain,
                 section="long_biography",
+                reviewed_commercial_yacht_phrases=commercial_phrases,
             )
             errors.extend(editorial_errors)
             warnings.extend(editorial_warnings)
@@ -822,6 +901,7 @@ def validate(
 
     for collection in ("proposed_details", "proposed_socials"):
         items = document.get(collection)
+        proposed_social_type_ids: dict[str, int] = {}
         if not isinstance(items, list):
             errors.append(f"{collection} must be a list")
             continue
@@ -912,6 +992,13 @@ def validate(
                     errors.append(f"{path}.type_id must be non-empty")
                 elif social_lookup.get(type_id) != item.get("type"):
                     errors.append(f"{path}.type_id does not match the input lookup")
+                elif type_id in proposed_social_type_ids:
+                    errors.append(
+                        f"{path}.type_id duplicates proposed_socials"
+                        f"[{proposed_social_type_ids[type_id]}].type_id"
+                    )
+                else:
+                    proposed_social_type_ids[type_id] = index
                 if (
                     isinstance(item.get("type"), str)
                     and item["type"].casefold() in existing_social_types
@@ -1128,8 +1215,10 @@ def _current_vessel_names(owner: dict[str, Any]) -> set[str]:
     return {name for name in names if name}
 
 
-def _mentions_vessel_name(text: str, vessel_name: str) -> bool:
-    folded_text = text.casefold()
+def _mentions_vessel_name(
+    text: str, vessel_name: str, reviewed_phrases: tuple[str, ...] = (),
+) -> bool:
+    folded_text = mask_reviewed_phrases(text, reviewed_phrases).casefold()
     vessel_pattern = re.compile(
         rf"(?<!\w){re.escape(vessel_name.casefold())}(?!\w)"
     )
@@ -1205,6 +1294,13 @@ def validate_owner_document(
     if owner_summary.get("display_name") != actual["owner"]["display_name"]:
         errors.append("owner.display_name does not match --owner-input")
     if document.get("record_type") == "person":
+        exception_errors: list[str] = []
+        reviewed_exceptions = _reviewed_phrase_exceptions(
+            document,
+            {source["id"] for source in document.get("sources", [])
+             if isinstance(source, dict) and isinstance(source.get("id"), str)},
+            exception_errors,
+        )
         biography_text = " ".join(
             value.get("plain_text", "")
             for value in (
@@ -1213,10 +1309,19 @@ def validate_owner_document(
             )
             if isinstance(value, dict)
         ).casefold()
-        for vessel_name in sorted(_current_vessel_names(source_owner)):
+        current_vessels = _current_vessel_names(source_owner)
+        for exception in reviewed_exceptions:
+            if exception["kind"] != "commercial_maritime" and exception["vessel_name"].casefold() not in {name.casefold() for name in current_vessels}:
+                errors.append("reviewed vessel-name exception does not match a current vessel")
+        for vessel_name in sorted(current_vessels):
+            phrases = tuple(
+                exception["phrase"] for exception in reviewed_exceptions
+                if exception["kind"] != "commercial_maritime"
+                and exception["vessel_name"].casefold() == vessel_name.casefold()
+            )
             if (
                 len(vessel_name) >= 3
-                and _mentions_vessel_name(biography_text, vessel_name)
+                and _mentions_vessel_name(biography_text, vessel_name, phrases)
             ):
                 errors.append(
                     "biographies mention current vessel name "

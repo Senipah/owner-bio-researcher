@@ -1,0 +1,273 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 784,
+    "display_name": "Wheaton Frank",
+    "identity_confidence": {
+      "score": 55,
+      "band": "low",
+      "reason": "The source may invert Frank and Wheaton, but has no suffix, company, age or verified alias. A New Jersey glass executive and shipyard owner is a plausible candidate; no independent source connects him to the exact Breaux hull. The 85 identity threshold is not met."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "The record names Wheaton Frank and supplies a historical yacht relationship, but no company or age. Frank H. Wheaton Jr., the New Jersey glass executive and shipyard owner, is a plausible inverted-name match. Public vessel histories do not establish that connection or distinguish him from similarly named relatives. Personal facts, name corrections and biographies are withheld until an independent owner-to-vessel link resolves the record.",
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Source inventory and direct public sources establish the unresolved identity limitation."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Forbes was checked first using the source name and site:forbes.com/profile searches for Wheaton Frank and Frank Wheaton; no credible matching profile was found. This is a search result, not evidence of absence from all Forbes coverage."
+    }
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [
+    {
+      "field": "identity",
+      "value": "Frank H. Wheaton Jr.",
+      "summary": "Possible inverted-name match: a documented New Jersey glass-family executive and Dorchester shipyard owner. The source has insufficient identifying detail and no retrieved source connects this candidate to Blu / Framar. Do not transfer his personal or business facts to owner 784.",
+      "confidence": {
+        "score": 55,
+        "band": "low",
+        "reason": "Plausible name and American maritime context, without the essential exact-vessel bridge."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.yachtbuyer.com/en-gb/fleet/blu-124-breaux-baycraft",
+      "title": "Blu Yacht — 37.8m Breaux Baycraft 1979",
+      "publisher": "YachtBuyer",
+      "tier": 3,
+      "accessed_at": "2026-09-12",
+      "supports": [
+        "Matches the saved vessel Blu by length 37.8 m, 1979 build and 213 GT; lists earlier names including Artemis, Grand Pond, Bayou and Ariadne. The public page does not identify a Wheaton owner. Vessel context only, not biographical evidence."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://megayachtnews.com/2024/01/yacht-ariadne-auction/",
+      "title": "Classic Yacht Ariadne Hitting the Auction Block",
+      "publisher": "Megayacht News",
+      "tier": 3,
+      "accessed_at": "2026-09-12",
+      "supports": [
+        "Identifies the 37.8 m Breaux yacht launched in 1979 as originally named Framar; describes several changes of ownership without naming the original owner. Confirms historical vessel aliases but cannot resolve the source person."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.superyachttimes.com/yacht-news/motor-yacht-bayou-arriving-in-fort-lauderdale",
+      "title": "Motor yacht Bayou arriving in Fort Lauderdale",
+      "publisher": "SuperYacht Times",
+      "tier": 3,
+      "accessed_at": "2026-09-12",
+      "supports": [
+        "Article body obtained from the public page HTML confirms the 1979 Breaux yacht was launched as MV Framar and links http://mvframar.tripod.com/ as its history website. That linked website could not be retrieved. No owner identity appears in the accessible article."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.wheatonarts.org/programs/12025-2/people-place-process/people/",
+      "title": "People — People, Place, Process exhibition",
+      "publisher": "Wheaton Arts and Cultural Center",
+      "tier": 1,
+      "accessed_at": "2026-09-12",
+      "supports": [
+        "Documents a possible namesake, Frank Wheaton Jr., as grandson of glass-company founder T.C. Wheaton and founder of WheatonArts. Does not identify this person as the source owner or establish any link to the specified yacht. These facts are retained solely for candidate disambiguation."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://openjurist.org/108/tc/320/dorchester-indus-v-comm-r-4695348",
+      "title": "Dorchester Industries v. Commissioner, 108 T.C. 320 (1997)",
+      "publisher": "United States Tax Court, reproduced by OpenJurist",
+      "tier": 1,
+      "accessed_at": "2026-09-12",
+      "supports": [
+        "Findings of fact identify Frank H. Wheaton Jr. of Millville, New Jersey as the sole shareholder and president of Dorchester, engaged in shipbuilding and repair. This establishes a plausible business candidate but no connection to the specific 1979 Breaux hull. No legal controversy is used as profile material."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The source stores first_name=Wheaton, last_name=Frank and display_name=Wheaton Frank. Inversion is plausible but remains unproved, so source names and person_id are preserved.",
+    "The saved relationship begins in 1979 and has no end date. Public reports describe later sales and aliases; the source current flag cannot prove continuity of personal ownership. No vessel data was edited.",
+    "Glass-industry sources distinguish Frank H. Wheaton Sr., Frank H. Wheaton Jr. and Frank H. Wheaton III. A missing suffix prevents safe transfer of dates, titles or family facts. The unrelated attorney Frank K. Wheaton also appears in searches.",
+    "The yacht history site http://mvframar.tripod.com/, linked by SuperYacht Times, failed through web retrieval and direct DNS resolution. Wayback retrieval failed and the archive availability endpoint returned HTTP 429. Its contents were not treated as evidence.",
+    "Focused searches covered Instagram, LinkedIn and personal websites, plus Facebook, Twitter, Youtube and TikTok under both name orders and the likely middle-initial variant. No identity-verified personal profile was found. LinkedIn surfaced an entertainment-business namesake in Compton, with direct retrieval blocked by robots; no account or company URL was proposed. Scraped social aggregators were not used as evidence.",
+    "No personal wealth classification or literal tag can be supported until source identity is resolved. The possible glass-industry and shipyard associations remain candidate facts only."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal research decision: insufficient evidence to identify the source person at confidence 85. No biography pair is drafted for this unresolved placeholder; pair allocation and editorial rubric are not applicable. Source input and all other dossiers are unchanged. Nothing was applied to the live website."
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Identity is unresolved, so the sector that created the original fortune cannot safely be established. The candidate glass and shipbuilding connections are not attributed to owner 784.",
+    "confidence": {
+      "score": 40,
+      "band": "insufficient",
+      "reason": "No defensible identity-to-asset link supports a non-unknown conclusion."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4",
+      "S5"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Identity is unresolved, so the sector underpinning current principal private interests cannot safely be established. The candidate glass and shipbuilding connections are not attributed to owner 784.",
+    "confidence": {
+      "score": 40,
+      "band": "insufficient",
+      "reason": "No defensible identity-to-asset link supports a non-unknown conclusion."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4",
+      "S5"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Identity is unresolved, so how this person acquired the principal assets cannot safely be established. The candidate glass and shipbuilding connections are not attributed to owner 784.",
+    "confidence": {
+      "score": 40,
+      "band": "insufficient",
+      "reason": "No defensible identity-to-asset link supports a non-unknown conclusion."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4",
+      "S5"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Identity is unresolved, so the person's relationship to wealth-producing assets cannot safely be established. The candidate glass and shipbuilding connections are not attributed to owner 784.",
+    "confidence": {
+      "score": 40,
+      "band": "insufficient",
+      "reason": "No defensible identity-to-asset link supports a non-unknown conclusion."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4",
+      "S5"
+    ]
+  }
+}

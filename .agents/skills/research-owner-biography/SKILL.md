@@ -73,8 +73,10 @@ statistics.
    researchable gaps, existing links, missing priority link types, and yacht
    relationships. A raw blank is not automatically a useful research target.
 2. Resolve identity before enrichment. Require strong agreement among name,
-   occupation/company, geography, family, and yacht context. Stop as
-   `identity_conflict` when materially ambiguous. Treat the upstream
+   occupation/company, geography, family, and yacht context. Require identity
+   confidence of at least 75 for a resolved owner. Use `identity_conflict`
+   for contradictory matches and `insufficient_evidence` when no match is
+   strong enough. Treat the upstream
    `person_id` as the source-record identity; never transfer facts between
    similarly named relatives or merge records from matching names or birth
    dates. Keep conflicting facts unresolved and out of tag evidence.
@@ -90,9 +92,13 @@ statistics.
    first-party sources, Forbes, reputable business reporting, and well-cited
    reference sources. Populate `wealth_creation_industry`,
    `primary_industry`, `wealth_origin`, and `wealth_relationship`
-   independently under the wealth-classification reference. Distinguish the
-   sector that created the fortune from the sector that currently best
-   describes its principal private interests. Prefer how wealth or prominence
+   under the wealth-classification reference. Distinguish the sector that
+   created the fortune from the sector that currently best describes its
+   principal private interests. If the current sector cannot be established
+   but `wealth_creation_industry` is known, use that origin sector for both
+   industry fields and explicitly label `primary_industry` as an origin-sector
+   fallback in its summary and confidence reason. Do not imply that current
+   holdings were verified. Prefer how wealth or prominence
    was created over its current amount. Within self-made wealth, distinguish
    an evidenced independent start from an advantaged one; do not equate
    founder ownership with a blank-slate upbringing.
@@ -339,7 +345,10 @@ suppression without calling the tag publishable or approved.
 - Confirm Forbes was explicitly checked and that a verified result appears as
   a `Forbes` type/URL row in the staff-facing Social Media Profiles table.
 - Confirm all four wealth classifications are populated, use exact
-  classification-to-label mappings, and are supported by source IDs.
+  classification-to-label mappings, and are supported by source IDs. Where
+  current primary industry cannot be established but wealth-creation industry
+  is known, confirm that both industry labels match and the primary-field
+  reasoning discloses the fallback.
 - Confirm self-made starting-position subtypes follow positive evidence:
   `self_made_independent` is not inferred from missing inheritance evidence,
   `self_made_advantaged` does not conceal a principal asset transfer, and

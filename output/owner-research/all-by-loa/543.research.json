@@ -1,0 +1,288 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 543,
+    "display_name": "Jim Davis",
+    "identity_confidence": {
+      "score": 55,
+      "band": "low",
+      "reason": "The source has a common name, American nationality and Andrea Cay association but no employer, age, city, family or verified profile. Direct sources distinguish multiple prominent Jim Davis identities without connecting one to the saved vessel relationship. Identity does not reach 85."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ]
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "The record identifies Jim Davis through a vessel association but supplies no employer, age or personal profile. Public sources distinguish the Allegis cofounder from the New Balance chairman; neither is securely linked to this record. An older charity newsletter names different owners of the vessel, without establishing who held it during the saved relationship. A verified company, age or owner-to-vessel link is needed before assigning a biography or personal details.",
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "The exact input inventory, distinct Forbes profiles, official business history and directly read vessel and charity records establish the identity limitation."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "forbes_profile": {
+    "status": "ambiguous",
+    "url": null,
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Forbes-first searches located separate profiles for the Allegis cofounder and New Balance chairman. Both bodies were read; neither matches the sparse source identity through an independent decisive anchor. No Forbes link is assigned."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No original wealth-producing business can be attributed to source owner 543 at the required identity confidence. Staffing and footwear belong to distinct possible namesakes and are not this record's established origin sector.",
+    "confidence": {
+      "score": 40,
+      "band": "insufficient",
+      "reason": "A business biography for a candidate cannot establish the source person's original assets."
+    },
+    "source_ids": [
+      "S2",
+      "S4",
+      "S5"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The current private assets of the source individual are unidentified. Neither a namesake's company nor ownership of a leisure vessel demonstrates this person's principal current economic sector.",
+    "confidence": {
+      "score": 40,
+      "band": "insufficient",
+      "reason": "No verified identity-to-current-assets link or principal portfolio allocation is available."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The available sources do not establish how this particular person acquired the principal fortune. The candidate profiles describe separate entrepreneurial mechanisms, but the source identity remains unresolved.",
+    "confidence": {
+      "score": 40,
+      "band": "insufficient",
+      "reason": "Self-made descriptions on namesake profiles cannot be transferred from matching names or nationality."
+    },
+    "source_ids": [
+      "S2",
+      "S4"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The source record does not establish whether this person founded, ran, invested in or passively held the assets producing their wealth. Candidate founder and chairman roles remain unassigned.",
+    "confidence": {
+      "score": 40,
+      "band": "insufficient",
+      "reason": "A vessel association alone cannot determine an operating or ownership relationship to business assets."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4",
+      "S5"
+    ]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [
+    {
+      "field": "identity",
+      "value": "Jim Davis, Allegis Group cofounder",
+      "summary": "A distinct American businessman whose official company history and Forbes profile establish the staffing business. No directly read source connects him to owner 543's exact Andrea Cay relationship; retain only as an identity lead.",
+      "confidence": {
+        "score": 55,
+        "band": "low",
+        "reason": "Matching common name and nationality, without employer, age, city or exact-vessel corroboration in the source."
+      },
+      "source_ids": [
+        "S2",
+        "S5"
+      ]
+    },
+    {
+      "field": "identity",
+      "value": "Jim Davis, New Balance chairman",
+      "summary": "A different American businessman with a separate Forbes profile and footwear enterprise. No independent evidence ties him to the saved record or vessel.",
+      "confidence": {
+        "score": 45,
+        "band": "insufficient",
+        "reason": "The source lacks the company, family, age or geography needed to select this namesake."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.fraseryachts.com/en/yacht/andrea-cay/",
+      "title": "Andrea Cay",
+      "publisher": "Fraser",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Official broker page confirms the exact 36.58m ABD Aluminum vessel built in 2002.",
+        "The directly read page does not identify its beneficial owner or the buyer at the source's August 2011 relationship start; no personal identity is established."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/profile/jim-davis-1/",
+      "title": "Jim Davis: Allegis Group cofounder",
+      "publisher": "Forbes",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Personal profile identifies the staffing-company cofounder and distinguishes this businessman through company and Maryland context.",
+        "No reference connects the profile to Andrea Cay or source person_id 543; used only for candidate differentiation, not imported wealth or personal facts."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://scholarshipfund.org/wp-content/uploads/2014/06/Fall06Newsletter.pdf",
+      "title": "Children's Scholarship Fund newsletter, Fall 2006",
+      "publisher": "Children's Scholarship Fund",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Page 3 names John and Nancy Erickson as hosts aboard their Andrea Cay for the Baltimore programme.",
+        "This historical ownership context predates the source relationship. It neither identifies a later Jim Davis owner nor disproves a later transfer."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.forbes.com/profile/jim-davis/",
+      "title": "Jim Davis & family: New Balance chairman",
+      "publisher": "Forbes",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Separate personal profile identifies the New Balance chairman and Massachusetts setting.",
+        "This is distinct from the Allegis cofounder. The record supplies no evidence selecting this person."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.allegissolutions.com/en/about/history/index.html",
+      "title": "Our History",
+      "publisher": "Allegis Global Solutions",
+      "tier": 1,
+      "accessed_at": "2026-09-13",
+      "supports": [
+        "Official history names cousins Stephen Bisciotti and Jim Davis as founders of Aerotek in Maryland, later expanded into Allegis businesses.",
+        "Supports the candidate's independently documented business identity only; supplies no link to the source vessel relationship."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Inventory preceded Forbes-first searches. The immutable record is Jim Davis, person_id 543, American, with United States residence and birth country, one saved Andrea Cay relationship from August 2011, and no employer, age, birth date, city, middle name, alias or social link. No source value or relationship is corrected.",
+    "Focused queries covered exact Jim and James variants with Andrea Cay, owner, Davis, 2011 sale, LLC, Allegis, New Balance and Redwood. The exact vessel and historical host evidence were directly read; no decisive connection to a particular Jim Davis was established. The absence of a search match is not evidence of non-ownership.",
+    "The 2006 charity source names John and Nancy Erickson, well before the saved relationship. It is not evidence that the later input is false, nor permission to replace Jim Davis with either historical owner or attach Erickson family facts.",
+    "Vessel-data discrepancy: Fraser gives 373 GT while the source records 213 GT. The name, builder and exact length identify the vessel context; no specification or live value is edited, and no vessel fact is drafted into a personal biography.",
+    "Two distinct Forbes identities remain plausible leads rather than verified owner profiles. Search also surfaced a Chicago financial adviser, a cartoonist, a university administrator and other Jim Davis professionals; their records lack the required connection. Nationality and a common name cannot select a candidate.",
+    "Personal Instagram, LinkedIn and website searches used the exact name and vessel, followed by Facebook, Twitter/X, YouTube and TikTok combinations. No account had an independently verified bridge to this source identity. Organisation pages are evidence about possible namesakes, not the owner's personal accounts. No company URL is proposed without a resolved relationship.",
+    "Birth day, month, year, birthplace, gender, middle names, secondary nationality and known-for role remain unproposed. Optional title, suffix and secondary residence are not inferred. No candidate's family, education, age or net worth is transferred.",
+    "All four wealth fields were evaluated independently. None has an owner-to-asset bridge; the candidate staffing and footwear sectors, self-made mechanisms and leadership titles remain outside owner facts. No speculative Diversified label is used.",
+    "Active-tag governance was reviewed. With identity unresolved, there is no supported occupation, industry, interest or owner-entity status qualifying an assignment; proposed_tags is empty. The record is not a government entity.",
+    "Source access: both Forbes bodies were read through the public tollbit redirect. Fraser was read in web and direct HTTP. CharterWorld retrieval failed via web and TLS; its search snippet is not final evidence. A Massachusetts disclosure PDF and an Erickson employee story were not readable in attempted requests and are not evidence for this dossier. Irrelevant people-search and property results were excluded.",
+    "Terminal decision is insufficient_evidence, not an assertion that the named person does not exist. A verified employer, age, city or direct person-to-vessel document could allow later resolution."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Main-agent terminal identity review. Exact inventory, Forbes-first differentiation, focused vessel and corporate checks, public source-body reads and personal-profile searches completed. No biography pair is warranted below identity85; source-hidden brief, fact allocation and editorial scoring are inapplicable to this unresolved placeholder. No source, catalogue, shared owner data, workflow flag or live change. Strict exact-input validation is required before checkpoint acceptance."
+  }
+}
