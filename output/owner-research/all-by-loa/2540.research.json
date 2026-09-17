@@ -164,15 +164,19 @@
     ]
   },
   "primary_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "No current private business or wealth-producing industry can be assigned after his permanent FDA debarment and Woodfield Distribution's 2025 dissolution.",
+    "classification": "healthcare",
+    "label": "Healthcare",
+    "summary": "No current private business can be established after Runsdorf's permanent FDA debarment and Woodfield Distribution's dissolution, so Healthcare is used as the disclosed origin-sector fallback.",
     "confidence": {
-      "score": 96,
-      "band": "very_high",
-      "reason": "The FDA permanently barred Runsdorf from serving businesses with approved or pending drug applications, and Florida records show the distribution company dissolved in July 2025. No strong current source identifies another principal operating or investment field."
+      "score": 80,
+      "band": "medium",
+      "reason": "Sources S4 through S7 establish Healthcare as the wealth-creation sector, while S8 and S9 establish the debarment and dissolution with no documented replacement field. The label is an explicit origin-sector reporting fallback and does not assert a current healthcare business."
     },
     "source_ids": [
+      "S4",
+      "S5",
+      "S6",
+      "S7",
       "S8",
       "S9"
     ]
@@ -486,7 +490,7 @@
     },
     {
       "topic": "Current industry",
-      "detail": "Runsdorf is permanently debarred from regulated drug-product service, and Woodfield Distribution dissolved in 2025. No strong source identifies a current principal business or wealth-producing field, so Primary industry remains Unknown rather than carrying forward his former healthcare role."
+      "detail": "Runsdorf is permanently debarred from regulated drug-product service, and Woodfield Distribution dissolved in 2025. No strong source identifies a current principal business or wealth-producing field, so Primary Industry uses Healthcare as the disclosed origin-sector fallback rather than claiming that his former role remains current."
     },
     {
       "topic": "Wealth origin",
@@ -507,6 +511,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Exact identity, partial birth date, company-building chronology, completed criminal and regulatory outcomes, corporate dissolution, four independent wealth classifications, existing exact social accounts and personal-site proposal were reviewed. No active tag is justified after permanent debarment and company dissolution. Biography, wealth, proposals and review contain no vessel or other private-asset facts. Strict exact-input and editorial validation is required before completion; nothing was applied live."
+    "notes": "Exact identity, partial birth date, company-building chronology, completed criminal and regulatory outcomes, corporate dissolution, four independent wealth classifications, existing exact social accounts and personal-site proposal were reviewed. Healthcare is the wealth-creation industry and the disclosed Primary Industry origin-sector fallback; no current healthcare business is asserted. No active tag is justified after permanent debarment and company dissolution. Biography, wealth, proposals and review contain no vessel or other private-asset facts. Strict exact-input and editorial validation is required before completion; nothing was applied live."
   }
 }

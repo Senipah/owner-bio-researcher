@@ -177,19 +177,19 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Nomikos leads and holds a documented interest in a family-owned shipping enterprise, but the public evidence does not state how she acquired her economic stake.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Nomikos's principal shipping interest arose through succession within the business founded by her parents. She entered the established company, led it for decades and now holds a significant stake in its UK affiliate; the precise transfer instrument is not public.",
     "confidence": {
-      "score": 96,
-      "band": "very_high",
-      "reason": "A.M. Nomikos states that Anastasios and Angele Nomikos founded the company in 1958, and current records establish Calypso Nomikos's leadership and significant control in its UK affiliate. The reviewed sources do not identify inheritance, a gift, a purchase, founder allocation or another transfer mechanism for her interest. Family ownership and a shared surname cannot substitute for evidence of wealth origin."
+      "score": 84,
+      "band": "medium",
+      "reason": "A.M. Nomikos states that Anastasios and Angele Nomikos founded the company in 1958. The scholarly history Leadership in World Shipping explicitly identifies Calypso as one of Anastasios's three children, says all entered the business and records the fourth generation continuing after his 1993 death. Her presidency from 1976 and current Companies House significant-control filing connect that documented succession to sustained leadership and present economic interest. The exact transfer route is not public, so confidence is capped and inheritance is not claimed."
     },
     "source_ids": [
       "S3",
-      "S5",
       "S6",
-      "S8"
+      "S8",
+      "S12"
     ]
   },
   "wealth_relationship": {
@@ -375,23 +375,7 @@
       ]
     }
   ],
-  "candidates_requiring_review": [
-    {
-      "candidate_type": "wealth_classification",
-      "field": "wealth_origin",
-      "candidate_value": "Inherited and expanded",
-      "confidence": {
-        "score": 78,
-        "band": "medium",
-        "reason": "The company predates Nomikos's leadership and is described as family-owned, making family succession plausible. No reviewed source directly states that she inherited or received a stake, identifies the founders as her parents, or separates inherited value from wealth created through her own long operating tenure."
-      },
-      "source_ids": [
-        "S5",
-        "S6",
-        "S8"
-      ]
-    }
-  ],
+  "candidates_requiring_review": [],
   "sources": [
     {
       "id": "S1",
@@ -549,6 +533,20 @@
         "Greece location and A.M. Nomikos affiliation",
         "separation from other same-surname profiles"
       ]
+    },
+    {
+      "id": "S12",
+      "url": "https://ndl.ethernet.edu.et/bitstream/123456789/35643/1/95.I.%20Theotokas%20%28Author%29%2C%E2%80%8E%20G.%20Harlaftis.pdf",
+      "title": "Leadership in World Shipping: Greek Family Firms in International Business",
+      "publisher": "Palgrave Macmillan",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Calypso as one of Anastasios M. Nomikos's three children",
+        "Calypso and her siblings as economics graduates who entered the family shipping business",
+        "Anastasios M. Nomikos's death in 1993 and continuation of the company by the family's fourth generation",
+        "Fleet expansion under the successor generation through 2000"
+      ]
     }
   ],
   "uncertainties": [
@@ -562,7 +560,7 @@
     },
     {
       "topic": "Wealth origin and family relationship",
-      "detail": "A.M. Nomikos says Anastasios and Angele Nomikos founded the company, while corporate profiles call the group family-owned. No reviewed source explicitly identifies either founder's relationship to Calypso Nomikos or states how she acquired her interests. Wealth origin therefore remains Unknown; the dossier does not infer inheritance from surname, patronymic or age."
+      "detail": "A scholarly history explicitly identifies Calypso as a child of founder Anastasios M. Nomikos, says she and her siblings entered the business, and records the next generation continuing after his death. Her presidency from 1976 and current significant control connect that family succession to both operating contribution and present economic interest. Marriage / family transfer is therefore supported at medium confidence. No reviewed source states that she inherited the stake or discloses the transfer instrument, so Inherited and Inherited and expanded are rejected; Founder and Self-made are rejected because the company was established before her entry."
     },
     {
       "topic": "Operator classification",
@@ -591,6 +589,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Person 7713 is resolved with very high confidence as Calypso Maria Anastasios Nomikos. The identity-verified Companies House record justifies correcting the malformed Anasta Sios spacing, while the Asteri-Ziggy Navigation-Kalypso Maria Nomikou chain independently anchors the exact yacht owner. Shipping & Maritime is supported for both industry dimensions; wealth origin remains Unknown because family ownership does not prove a transfer mechanism, and Operator reflects her decades of leadership plus documented significant control. A canonical-name correction, known-for title, 53-word owner-led biography, official company website and two active tags are proposed. The 115-word long biography uses exactly two paragraphs. Nothing has been compiled, approved or applied."
+    "notes": "Person 7713 is resolved with very high confidence as Calypso Maria Anastasios Nomikos. The identity-verified Companies House record justifies correcting the malformed Anasta Sios spacing, while the Asteri-Ziggy Navigation-Kalypso Maria Nomikou chain independently anchors the exact yacht owner. Shipping & Maritime is supported for both industry dimensions. The amended wealth-origin audit resolves the prior Unknown as Marriage / family transfer at medium confidence: a scholarly shipping history explicitly identifies Calypso as founder Anastasios Nomikos's child and a successor who entered the business, while her long presidency and current significant control establish operating contribution and present economic interest. The undisclosed legal transfer route precludes an inherited label. Operator reflects her decades of leadership plus documented significant control. A canonical-name correction, known-for title, 53-word owner-led biography, official company website and two active tags are proposed. The 115-word long biography uses exactly two paragraphs. Nothing has been compiled, approved or applied."
   }
 }

@@ -133,34 +133,36 @@
     }
   },
   "wealth_creation_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Inherited private bloodstock and later private commercial activity are documented, but they do not establish the sector that principally created the wider family fortune. Neither religious office nor AKDN's institutional portfolio supplies that missing private-wealth attribution.",
+    "classification": "diversified",
+    "label": "Diversified",
+    "summary": "Diversified is supported by reliable reporting that attributes his personal wealth to family inheritance, the private horse-breeding business, and personal investments in tourism and real estate. Several unrelated private sectors therefore contributed materially, with no single one established as dominant; AKDN's institutional portfolio is excluded.",
     "confidence": {
-      "score": 65,
-      "band": "low",
-      "reason": "The inherited business is concrete, while its relative contribution to the original family fortune is not. No sector is inferred from the development network's operations."
+      "score": 82,
+      "band": "medium",
+      "reason": "Reuters directly identifies inheritance, horse breeding and personal tourism and real-estate investments as sources of his money, while the official stud history independently establishes the inherited and expanded racing operation. This positively supports multiple material private sectors rather than using Diversified to fill an evidence gap; confidence is capped because exact sector weights and the inherited cash's earlier sector are unavailable."
     },
     "source_ids": [
       "S1",
       "S3",
       "S4",
-      "S6"
+      "S6",
+      "S8"
     ]
   },
   "primary_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "At his death in February 2025, the stud operation and bloodstock-auction shareholdings were identifiable private interests. Public material does not value their weight against his other private assets. His former personal Nation Media shares had been transferred to AKFED, so the network's current banking, tourism and media portfolio is not classified as his personal wealth.",
+    "classification": "diversified",
+    "label": "Diversified",
+    "summary": "At his death in February2025, his identifiable private wealth spanned the stud and racing business plus personal tourism and real-estate investments, with no sector shown to dominate. Diversified therefore describes the positive private-asset evidence; the former personal Nation Media shares transferred to AKFED and the development network's wider holdings are excluded.",
     "confidence": {
-      "score": 66,
-      "band": "low",
-      "reason": "End-of-life private involvement is clear, but principal sector weighting is not. Descendants' current assets and development-agency holdings are excluded."
+      "score": 80,
+      "band": "medium",
+      "reason": "A contemporaneous Reuters obituary attributes his money to the private breeding business and personal tourism and real-estate investments, and official sources establish the continuing stud operation and transfer of his former media shares to AKFED. Multiple private sectors are positively material, while unavailable weights prevent selecting one as dominant."
     },
     "source_ids": [
       "S2",
       "S3",
-      "S6"
+      "S6",
+      "S8"
     ]
   },
   "wealth_origin": {
@@ -462,12 +464,24 @@
       "supports": [
         "Web full body lines 20–30 read; ordinary HTTP returned 403. The programme professor identifies the 1979 Harvard/MIT architecture endowment, academic beneficiaries and publication of Muqarnas; also confirms 1959 Harvard graduation."
       ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.investing.com/news/world-news/the-aga-khan-spiritual-leader-whose-riches-enabled-horse-racing-glory-dies-at-88-3849291",
+      "title": "The Aga Khan, spiritual leader whose riches enabled horse racing glory, dies at 88",
+      "publisher": "Reuters",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Contemporaneous obituary explicitly attributes his money to family inheritance, his horse-breeding business and his personal investments in tourism and real estate.",
+        "Separately identifies the inherited racing tradition and continued private breeding operation. Its wealth-source statement is used only for his named personal business and investments; AKDN agencies or their companies are not converted into personal assets."
+      ]
     }
   ],
   "uncertainties": [
     "Source record names and IDs remain unchanged. Son Rahim Aga Khan V became the successor; his present duties and property are not transferred to his father.",
     "Personal birth details and death-month correction are well supported. The stored age and age-at-date are system-managed fields and are not proposed. Saved Swiss nationality and France residence are preserved; Geneva birth does not itself prove nationality, and Lisbon death or headquarters does not establish final personal residence.",
-    "Four wealth dimensions were researched separately. Inherited expansion and operating stewardship describe the concrete private family business. Neither original fortune nor final estate sector weights are established; current institutional budgets and companies are not personal net worth.",
+    "Four wealth dimensions were researched separately. Inherited expansion and operating stewardship describe the concrete private family business. Reuters positively attributes his money to inheritance, horse breeding and personal tourism and real-estate investments, resolving both industry fields to Diversified despite unavailable exact weights. The conclusion excludes current institutional budgets and companies, which are not treated as personal net worth.",
     "Forbes-first queries included site:forbes.com/profile/ Aga Khan, Aga Khan IV fortune and richest royals searches; repeated after identity research. Relevant Forbes cultural and property articles were discovered, but no exact personal profile was verified.",
     "Personal Instagram, LinkedIn/in, personal website, Facebook, Twitter/X and YouTube searches returned institutional accounts, memorials, media and unrelated people rather than an identity-verified personal account. The existing Wikipedia URL is already present. Company and foundation socials are not proposed as personal profiles.",
     "TikTok search was blocked by robots.txt; no verified personal account was available. Supplemental Vimeo, Flickr, Trip Advisor and Zillow types have no evidenced personal purpose for this deceased subject. No standalone personal domain was verified. The official private stud business website is proposed under its distinct supported type.",
@@ -477,6 +491,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Terminal resolved-person research decision, all proposed facts and links above threshold. Primary source-hidden brief and a separate fact allocation produced complementary 53/126-word profiles. End-of-life operator and inherited expansion are distinguished from unidentified overall wealth-sector weighting. Exact immutable inventory retained; strict editorial validation is required before checkpoint acceptance. Nothing applied live."
+    "notes": "Terminal resolved-person research decision, all proposed facts and links above threshold. Amended-policy audit resolves wealth creation and primary industry to Diversified82/80 from positively identified private horse-breeding, tourism and real-estate wealth sources, while excluding AKDN and transferred AKFED assets from personal wealth. Existing inherited-and-expanded origin and operator relationship are preserved. Primary source-hidden brief and a separate fact allocation produced complementary 53/126-word profiles. Exact immutable inventory retained; strict editorial validation is required before checkpoint acceptance. Nothing applied live."
   }
 }

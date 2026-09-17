@@ -149,18 +149,22 @@
     }
   },
   "wealth_creation_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Kompass traces its capital base to earlier healthcare-staffing and technology businesses, but the evidence does not identify which sector principally created Kuti's personal wealth or establish his ownership of those founding assets.",
+    "classification": "service",
+    "label": "Service",
+    "summary": "Service is inferred as the principal original wealth-creation sector through Favorite Healthcare Staffing, the family-owned business that operated for four decades, reached national scale and was sold before the Kompass family office expanded into a broader investment portfolio. Technology was another early root, but its contribution is not comparably documented.",
     "confidence": {
-      "score": 100,
-      "band": "very_high",
-      "reason": "The official history names multiple early sectors and places their beginnings before Kuti's documented leadership. Current portfolio breadth cannot substitute for evidence of the original person-specific wealth source, so no sector clears the acceptance threshold."
+      "score": 82,
+      "band": "medium",
+      "reason": "Kompass identifies healthcare staffing among the operating roots of its family capital. Favorite's official history and independent contemporaneous material establish a long-running, nationally scaled staffing business owned by the Kuti family, while Acacium documents its acquisition. Florida filings connect Jayson Kuti to the business as chief executive before the sale. These positive facts make Service the least-specific supported original sector, but the private sale value and the separate technology root are not disclosed, so the material-link inference is capped below 85."
     },
     "source_ids": [
+      "S1",
       "S2",
-      "S3",
-      "S4"
+      "S8",
+      "S9",
+      "S10",
+      "S11",
+      "S12"
     ]
   },
   "primary_industry": {
@@ -180,18 +184,22 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "The investment office grew from operating interests that predate Kuti's documented leadership, but reliable sources do not establish whether his stake arose through inheritance, another family transfer or independently created ventures.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Family transfer is inferred from succession within the established Kuti-family staffing platform: Favorite Healthcare Staffing was family-owned before Jayson Kuti became its chief executive, and the family's operating interests were centralised in Kompass, where he is now co-founding partner. The precise legal route, including whether any transfer occurred by inheritance, is not public.",
     "confidence": {
-      "score": 100,
-      "band": "very_high",
-      "reason": "The official Kompass timeline describes family-office roots rather than Kuti's personal acquisition mechanism. His co-founding title and current control of LightSpeed do not prove how the principal capital was first obtained, and no origin classification can be promoted safely."
+      "score": 83,
+      "band": "medium",
+      "reason": "Favorite was founded during Kuti's childhood and before his business career, a contemporaneous report explicitly identifies the Kuti family as its owners, and Florida corporate filings show Gerhard Kuti as chief executive in 2015 and Jayson Kuti in that role by 2021. Kompass then identifies the predecessor healthcare-staffing interests as roots of the single-family office that Jayson Kuti co-founded and now directs, with his personal LightSpeed control independently documented. Succession, family ownership and current economic control converge, but no transfer instrument or inheritance evidence is public, so broad family transfer is used at medium confidence rather than an inherited value."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S4"
+      "S4",
+      "S9",
+      "S10",
+      "S11",
+      "S12"
     ]
   },
   "wealth_relationship": {
@@ -473,16 +481,81 @@
         "Matching Overland Park address",
         "Financial-management business category"
       ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.favoritestaffing.com/about",
+      "title": "About Us",
+      "publisher": "Favorite Healthcare Staffing",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Favorite Healthcare Staffing's establishment in 1981",
+        "Four decades of healthcare-staffing operations",
+        "National scale and ranking among major US healthcare staffing firms",
+        "Favorite's 2022 combination with Acacium Group"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://static1.squarespace.com/static/57ec4a25e58c6249da66c22f/t/5801008e15d5db97eb4a0c8a/1476460699460/2015%2BAnnual%2BReport%2B.pdf",
+      "title": "Hopecam 2015 Annual Report",
+      "publisher": "Hopecam",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Contemporaneous identification of the Kuti family as Favorite Healthcare Staffing's owners",
+        "Favorite's private ownership and 1981 founding",
+        "Favorite's national healthcare-staffing business"
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://search.sunbiz.org/Inquiry/CorporationSearch/GetDocument?aggregateId=forp-p18890-4afc8cc7-9e8a-4c2e-b8c2-afc68c99aba2&formatType=PDF&transactionId=p18890-c3622307-9a49-4f9e-8896-e39d48ac6259",
+      "title": "Favorite Healthcare Staffing 2015 foreign corporation annual report",
+      "publisher": "Florida Department of State, Division of Corporations",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Gerhard J. Kuti as Favorite Healthcare Staffing chief executive in 2015",
+        "Favorite's matching Kansas corporate identity and address"
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://search.sunbiz.org/Inquiry/CorporationSearch/GetDocument?aggregateId=forp-p18890-4afc8cc7-9e8a-4c2e-b8c2-afc68c99aba2&formatType=PDF&transactionId=p18890-5cd8dae9-df4c-499b-9b3b-f52a4dc08559",
+      "title": "Favorite Healthcare Staffing 2021 foreign corporation annual report",
+      "publisher": "Florida Department of State, Division of Corporations",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Jayson Kuti as Favorite Healthcare Staffing chief executive in 2021",
+        "Executive succession after Gerhard Kuti's earlier chief-executive role",
+        "Favorite's matching Kansas corporate identity and address"
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://acaciumgroup.com/news/acacium-group-acquires-us-based-healthcare-staffing-company-favorite-healthcare-staffing/",
+      "title": "Acacium Group acquires US-based healthcare staffing company Favorite Healthcare Staffing",
+      "publisher": "Acacium Group",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Acacium Group's acquisition of Favorite Healthcare Staffing in 2022",
+        "Favorite as a material US healthcare-staffing business",
+        "Monetisation of the predecessor family operating platform"
+      ]
     }
   ],
   "uncertainties": [
     {
       "topic": "Wealth creation industry",
-      "detail": "Kompass identifies healthcare staffing and technology as early roots but does not disclose the sector contribution to Kuti's personal wealth. The current diversified portfolio cannot identify the original wealth-creation sector, so the classification remains Unknown."
+      "detail": "Service is used as a medium-confidence inference from Favorite Healthcare Staffing, the Kuti-family-owned operating business that ran for four decades, reached national scale and was acquired before Kompass broadened its portfolio. Kompass also names technology as an early root, but no source establishes that contribution at comparable scale; the private transaction value and complete original capital mix remain undisclosed."
     },
     {
       "topic": "Wealth origin",
-      "detail": "The family-office timeline begins before Kuti's documented career and does not specify whether his principal interest arose by inheritance, an inter vivos family transfer, independent ventures or a mixture. His current co-founding-partner title is not treated as proof that he personally founded each predecessor business."
+      "detail": "Marriage / family transfer is inferred from Favorite's explicit Kuti-family ownership, the documented transition from Gerhard Kuti as chief executive to Jayson Kuti, and Jayson Kuti's current direction of the family office built from those predecessor interests. No deed, share-transfer instrument or probate evidence is public, so the classification does not claim inheritance or identify the precise legal route."
     },
     {
       "topic": "Portfolio ownership boundary",
@@ -507,6 +580,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "The exact identity, current Kompass role, family-office relationship and LightSpeed control are strongly supported. Review should retain Unknown for both wealth-creation industry and origin because neither the early sector mix nor the mechanism by which Kuti obtained the principal capital is established. Firm-level assets and portfolio-company property must remain separate from personal wealth. Nothing has been compiled, approved or applied.\n\nOwner-tag consolidation research context: [1] Active-and-passive portfolio investing: Kompass deliberately combines active operating-company investments with passive positions in one family-capital portfolio. [2] Aviation investing: Kuti's Kompass role includes allocating family capital to private-aviation businesses. [3] Controlling investor: Kuti holds at least three quarters of LightSpeed Fibre Holdings' shares and voting rights and can appoint or remove directors. [4] Direct investing: Kompass uses direct portfolio-company ownership alongside passive investments, and Kuti separately holds documented control of LightSpeed Fibre Holdings. [5] Diversified investing: The Kompass portfolio spans private aviation, broadband, home services, freight logistics and managed technology services. [6] Family-and-institutional co-investing: Kompass invests its own capital while also co-investing with other families and institutional partners. [7] Fibre-infrastructure investing: Kuti's controlling interest in LightSpeed gives him a direct, durable investment association with fibre-broadband infrastructure. [8] Freight-logistics investing: Freight logistics is an explicitly identified operating-company segment within the Kompass investment portfolio Kuti helps direct. [9] Home-services investing: Residential and home-service businesses are an explicitly identified sector within Kompass's diversified private-investment portfolio. [10] Kompass Kapital: Kompass Kapital is the Kansas City private investment platform and single-family office of which Kuti is a co-founding partner. [11] LightSpeed Fibre Holdings: LightSpeed Fibre Holdings is the British broadband holding in which Kuti has documented share, voting and board-appointment control. [12] Private aviation services: Kompass has a specific private-aviation platform within its wider portfolio. [13] Private-market investing: Kuti's current work centres on privately held operating-company and infrastructure investments through Kompass. [14] Proprietary-capital investing: Kompass invests its own family capital directly and alongside outside co-investors rather than operating as a conventional third-party fund manager. [15] Technology investing: Technology and managed IT services are established parts of Kompass's current investment portfolio under Kuti's stewardship."
+    "notes": "The amended-policy audit resolves Wealth Creation Industry to Service at medium confidence and Wealth Origin to Marriage / family transfer at medium confidence. Favorite Healthcare Staffing was a long-running, nationally scaled Kuti-family service business; corporate filings document executive succession from Gerhard Kuti to Jayson Kuti before its acquisition, and Kompass identifies healthcare staffing among the roots of the single-family office Jayson Kuti now directs. The private sale value, full early-sector mix and precise transfer instrument remain undisclosed, so both reasoned inferences are capped below 85 and no inheritance mechanism is claimed. Finance & Investments primary industry and Family office principal relationship remain unchanged; biography prose and unrelated fields are preserved. Firm-level assets and portfolio-company property remain separate from personal wealth. Nothing has been compiled, approved or applied.\n\nOwner-tag consolidation research context: [1] Active-and-passive portfolio investing: Kompass deliberately combines active operating-company investments with passive positions in one family-capital portfolio. [2] Aviation investing: Kuti's Kompass role includes allocating family capital to private-aviation businesses. [3] Controlling investor: Kuti holds at least three quarters of LightSpeed Fibre Holdings' shares and voting rights and can appoint or remove directors. [4] Direct investing: Kompass uses direct portfolio-company ownership alongside passive investments, and Kuti separately holds documented control of LightSpeed Fibre Holdings. [5] Diversified investing: The Kompass portfolio spans private aviation, broadband, home services, freight logistics and managed technology services. [6] Family-and-institutional co-investing: Kompass invests its own capital while also co-investing with other families and institutional partners. [7] Fibre-infrastructure investing: Kuti's controlling interest in LightSpeed gives him a direct, durable investment association with fibre-broadband infrastructure. [8] Freight-logistics investing: Freight logistics is an explicitly identified operating-company segment within the Kompass investment portfolio Kuti helps direct. [9] Home-services investing: Residential and home-service businesses are an explicitly identified sector within Kompass's diversified private-investment portfolio. [10] Kompass Kapital: Kompass Kapital is the Kansas City private investment platform and single-family office of which Kuti is a co-founding partner. [11] LightSpeed Fibre Holdings: LightSpeed Fibre Holdings is the British broadband holding in which Kuti has documented share, voting and board-appointment control. [12] Private aviation services: Kompass has a specific private-aviation platform within its wider portfolio. [13] Private-market investing: Kuti's current work centres on privately held operating-company and infrastructure investments through Kompass. [14] Proprietary-capital investing: Kompass invests its own family capital directly and alongside outside co-investors rather than operating as a conventional third-party fund manager. [15] Technology investing: Technology and managed IT services are established parts of Kompass's current investment portfolio under Kuti's stewardship."
   }
 }

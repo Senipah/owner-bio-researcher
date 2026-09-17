@@ -183,18 +183,19 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Johananoff materially operated family-founded and later namesake businesses, but public evidence does not establish whether his principal capital was personally created, inherited or transferred through the family.",
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Broad Self-made is inferred from Johananoff's co-founding and operation of Gadot with his brother and his later leadership of a large namesake chemical-logistics group; the starting capital and family platform are not public.",
     "confidence": {
-      "score": 100,
-      "band": "very_high",
-      "reason": "Gadot is described as family-founded and jointly run by Samuel and Moshe, while the later Johananoff Group was led by Samuel. The sources do not disclose original capitalization, ownership transfers or inheritance. That supports a substantial operating role but not a defensible self-made, inherited or mixed wealth-origin classification."
+      "score": 84,
+      "band": "medium",
+      "reason": "Gadot's official sustainability history identifies its 1959 establishment by the Johananoff brothers; Haaretz identifies those brothers as Samuel and Moshe and says they jointly ran the business; and contemporaneous trade reporting documents Samuel as chief executive of a subsequent fourteen-company namesake group with eight chemical tankers and ten terminals. This positively establishes founder-built and later expanded operating platforms substantial enough to support broad Self-made, with the material wealth link inferred. Exact equity, launch capital and family advantages remain undisclosed, so neither self-made subtype is assigned. No source supports inheritance, family transfer or a second material origin mechanism."
     },
     "source_ids": [
       "S3",
       "S4",
-      "S5"
+      "S5",
+      "S10"
     ]
   },
   "wealth_relationship": {
@@ -351,19 +352,20 @@
       ]
     },
     {
-      "candidate_type": "wealth_origin",
+      "candidate_type": "wealth_origin_subtype",
       "field": "wealth_origin",
       "value": null,
-      "reason": "Samuel and Moshe jointly operated a family-founded business, and Samuel later led a namesake international group. Public sources do not reveal whether the principal capital was inherited, transferred within the family or created in his own generation, so no non-Unknown origin can be assigned.",
+      "reason": "Broad Self-made is supported, but public sources do not establish whether Johananoff began independently or received a material advantage through pre-existing family wealth, capital, networks or another business platform. Neither Self-made — independent start nor Self-made — advantaged start can be selected without that positive evidence.",
       "confidence": {
         "score": 100,
         "band": "very_high",
-        "reason": "The operating history is documented, while the ownership-transfer and capitalization mechanism is not."
+        "reason": "The founder-built operating history is documented, while the brothers' launch capital and wider starting circumstances are not."
       },
       "source_ids": [
         "S3",
         "S4",
-        "S5"
+        "S5",
+        "S10"
       ]
     },
     {
@@ -517,6 +519,19 @@
         "former Eretria and Ottelia names",
         "independent hull match across the owner record and historical yacht article"
       ]
+    },
+    {
+      "id": "S10",
+      "url": "https://gadot.com/wp-content/uploads/2025/12/Gadot-Group-ESG-Report.pdf",
+      "title": "Gadot Group 2023–2024 Sustainability Report",
+      "publisher": "Gadot Group",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "official company-history timeline identifying Gadot's 1959 establishment by the Johananoff brothers",
+        "founder-built origin of the core family chemical-logistics platform",
+        "company history independently converging with Haaretz's identification of Samuel and Moshe as the operating brothers"
+      ]
     }
   ],
   "uncertainties": [
@@ -542,7 +557,7 @@
     },
     {
       "topic": "Wealth origin and relationship",
-      "detail": "Sources describe Gadot as family-founded and say Samuel and Moshe ran it jointly; they do not identify who supplied the capital or whether Samuel inherited or received a stake. Operator is supported by his direct management roles, while wealth origin remains Unknown and no Founder relationship is inferred from the family name or the later namesake group."
+      "detail": "The amended-policy audit classifies origin as broad Self-made at 84. Gadot's official sustainability history says the Johananoff brothers established the company in 1959; Haaretz identifies Samuel and Moshe as the brothers who jointly ran it; and contemporaneous reporting documents Samuel's subsequent leadership of a large namesake chemical-logistics group. The material wealth link is inferred from the scale and continuity of these founder-built and later operations. Self-made — independent start and Self-made — advantaged start remain unresolved because launch capital and the wider family platform are not documented. Inherited and Marriage / family transfer lack evidence of an actual transfer, and Mixed lacks a second independently material mechanism. Operator remains the accepted relationship because the dossier does not establish a current founder relationship to a principal asset."
     },
     {
       "topic": "Forbes and social profiles",
@@ -559,6 +574,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Person 1101 is resolved at 94 confidence to Samuel Cohen Johananoff through the uncommon name, the Uthingo/Eretria hull bridge, a contemporaneous chemical-tanker executive record and supporting full-name sources. Wealth creation is Logistics; current primary industry and wealth origin are Unknown because current holdings and the family-capital mechanism are not public; Operator reflects his direct leadership. Chemicals and Tanker shipping are the minimum useful approved active tags with complete semantic metadata. Middle name, known-for title and biography proposals are supported. The biographies contain 50 words and 133 words in exactly two paragraphs. Nothing has been compiled, approved or applied."
+    "notes": "Person 1101 is resolved at 94 confidence to Samuel Cohen Johananoff through the uncommon name, the Uthingo/Eretria hull bridge, a contemporaneous chemical-tanker executive record and supporting full-name sources. Wealth creation is Logistics and primary industry remains the Logistics reporting fallback. The amended-policy audit changes Wealth Origin from Unknown to broad Self-made at inference-capped confidence 84 because official company history identifies establishment by the Johananoff brothers, Haaretz identifies Samuel and Moshe as those joint operators, and contemporaneous reporting documents Samuel's later large namesake group. The starting-capital evidence is insufficient for an independent or advantaged subtype; transfer, inheritance and mixed alternatives lack positive material premises. Operator remains the relationship classification. Biography prose, tags and proposals were preserved, and nothing has been compiled, approved or applied."
   }
 }

@@ -151,13 +151,13 @@
     }
   },
   "wealth_creation_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Public coverage associates Jenkins with Traxxas, but available evidence does not establish whether that business created or principally supplied her wealth.",
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "Manufacturing is inferred as the sector that created Jenkins's identifiable wealth because reputable coverage called her a Traxxas owner and the company designs and manufactures radio-control products.",
     "confidence": {
-      "score": 93,
-      "band": "high",
-      "reason": "NBC Sports identified Mike and Keli Jenkins as Traxxas owners, but no accepted source documents her stake, acquisition mechanism, principal wealth source or wider assets. Company ownership and employment alone do not establish the sector that created her wealth."
+      "score": 82,
+      "band": "medium",
+      "reason": "NBC Sports directly identified Keli Jenkins as one of Traxxas's owners, while Traxxas describes its in-house product engineering and manufacturing. Their convergence supports Manufacturing as the least-specific creation sector, although her stake size and complete balance sheet are not public."
     },
     "source_ids": [
       "S5",
@@ -165,41 +165,43 @@
     ]
   },
   "primary_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Jenkins remains publicly associated with Traxxas, but no current ownership disclosure establishes that manufacturing is the principal sector underlying her present private wealth.",
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "Manufacturing is used as the origin-sector fallback because Jenkins remains professionally attached to Traxxas, while no reliable source ranks her current private holdings by value.",
     "confidence": {
-      "score": 88,
-      "band": "high",
-      "reason": "Her accepted LinkedIn profile gives Traxxas as her current company and older reputable coverage identifies her as an owner, but the private company's current equity structure and Jenkins's other assets are not public. Historic ownership and current employment are insufficient to identify her dominant present wealth sector."
+      "score": 78,
+      "band": "medium",
+      "reason": "The creation sector is Manufacturing, and Jenkins's accepted professional profile continues to identify Traxxas as her company. Because current ownership percentages and competing holdings are undisclosed, this is explicitly the permitted origin-sector fallback rather than a claim that Traxxas is proven to dominate her present balance sheet."
     },
     "source_ids": [
       "S2",
-      "S5"
+      "S5",
+      "S8"
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Public evidence identifies a Traxxas ownership association but does not show whether Jenkins received, purchased, earned or otherwise acquired a principal stake.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "A marriage-linked family transfer is inferred: Mike Jenkins owned the established Traxxas platform before Keli Snyder married him, and later reputable coverage identified Mike and Keli Jenkins jointly as owners; the precise legal transfer route is not public.",
     "confidence": {
-      "score": 92,
-      "band": "high",
-      "reason": "No accepted source reviewed documents the acquisition mechanism, timing or economic terms of Keli Jenkins's ownership. A shared surname and paired ownership reference do not establish marriage or family transfer as the source of wealth."
+      "score": 82,
+      "band": "medium",
+      "reason": "Air Age Media reports that Mike Jenkins purchased Traxxas in 2003, IMDb records Keli Snyder's 2014 marriage to Mike Jenkins, and NBC Sports called the couple Traxxas owners in 2016. This positive chronology supports the broad family-transfer mechanism, capped below high confidence because no share-transfer instrument, consideration or percentage is public."
     },
     "source_ids": [
       "S5",
-      "S6"
+      "S10",
+      "S11"
     ]
   },
   "wealth_relationship": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Jenkins has worked in Traxxas communications and has been publicly called an owner, but the available record does not establish whether she materially operates the core business, holds a passive stake or has another ownership relationship.",
+    "classification": "operator",
+    "label": "Operator",
+    "summary": "Operator is inferred from Jenkins's sustained communications-director role at Traxxas combined with reputable coverage identifying her as an owner of the same operating company.",
     "confidence": {
-      "score": 87,
-      "band": "high",
-      "reason": "NBC Sports supports ownership and Jenkins's accepted professional profile supports company employment, yet neither evidence shows day-to-day control, board authority, equity percentage or the form of her interest. Communications leadership alone does not satisfy the Operator definition."
+      "score": 78,
+      "band": "medium",
+      "reason": "Jenkins's accepted professional profile documents her continuing Traxxas role and NBC Sports directly identifies her as an owner. Together they support active operation rather than a purely passive relationship, while undisclosed governance powers and equity percentage cap confidence."
     },
     "source_ids": [
       "S2",
@@ -433,14 +435,39 @@
         "contemporaneous description as the public face of Traxxas",
         "continuity between off-road reporting and company representation"
       ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.imdb.com/name/nm5604757/",
+      "title": "Keli Snyder",
+      "publisher": "IMDb",
+      "tier": 3,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Keli Snyder's marriage to Mike Jenkins in October 2014",
+        "continuity between the maiden and married identities"
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.airage.com/blog/2013/07/02/exclusive-car-action-drives-new-latrax-rally/",
+      "title": "EXCLUSIVE! Car Action Drives New LaTrax Rally!",
+      "publisher": "Air Age Media",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Mike Jenkins purchased Traxxas in 2003",
+        "the Traxxas ownership platform predated Keli Snyder's marriage",
+        "Traxxas as an established radio-control products business"
+      ]
     }
   ],
   "uncertainties": [
     "The upstream identity is resolved to former motorsport reporter Keli Snyder, now styled Keli Jenkins or Keli Snyder Jenkins. Her accepted LinkedIn URL, exact name variants, career, geography and Traxxas association align across first-party and reputable specialist sources.",
     "No dedicated personal Forbes profile or credible Forbes identity match was found after exact-name, maiden-name, married-name and company-qualified searches.",
-    "NBC Sports identified Mike and Keli Jenkins as Traxxas owners in 2016. No accepted current filing or company disclosure provides Keli Jenkins's equity percentage, acquisition date, consideration, voting rights or present ownership status.",
-    "Marriage / family transfer is not selected for wealth origin. Public pairing, shared surname and a joint ownership reference do not establish that a principal stake was transferred through marriage.",
-    "Primary Industry remains Unknown because current Traxxas employment and historical ownership coverage do not establish which sector now principally underpins Jenkins's private wealth. Wealth Relationship remains Unknown because communications work does not by itself prove material operation of the core business.",
+    "NBC Sports identified Mike and Keli Jenkins as Traxxas owners in 2016. No current filing or company disclosure provides Keli Jenkins's equity percentage, consideration, voting rights or present ownership status, so the manufacturing classifications and operator relationship are reasoned inferences capped at medium confidence.",
+    "Marriage / family transfer is inferred from a positive chronology: Mike Jenkins purchased Traxxas in 2003, Keli Snyder married him in 2014, and NBC Sports identified them jointly as owners in 2016. The precise legal route and economic terms remain private, so the classification does not assert inheritance or a specific marital-property instrument.",
+    "Primary Industry uses the amended policy's origin-sector fallback. Jenkins's current professional association remains Traxxas, but no reliable source ranks her current holdings; Manufacturing therefore carries forward conservatively rather than claiming a verified current balance-sheet concentration.",
     "The old personal WordPress portfolio supports the middle name Lyn, education and early reporting career. It is not proposed as a Personal Website social because it is a dated portfolio and is not the personal-site URL currently listed on her accepted LinkedIn profile.",
     "The LinkedIn-listed Weebly personal-site URL could not be independently accessed during research, so no Personal Website proposal is made.",
     "The owner input contains a second Instagram URL belonging to Mike Jenkins. It is not treated as Keli Jenkins's social profile, cited as her evidence or proposed for reuse; removal is outside this review-only dossier's supported additions workflow.",
@@ -450,6 +477,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Terminal research decision. Identity and the public career are resolved at high confidence. Wealth Creation Industry, Primary Industry, Wealth Origin and Wealth Relationship remain Unknown because the private company's ownership mechanics, Jenkins's principal wealth source and her wider assets are not disclosed. The minimum useful active tag is Motorsport; no Journalist tag or unverified personal website is proposed. No source record, other dossier, shared catalogue, compiled output or live website state was changed."
+    "notes": "Amended-policy HNWI audit complete. Manufacturing now records the inferred creation sector and the permitted origin-sector fallback for Primary Industry. Marriage / family transfer is inferred from Mike Jenkins's pre-marriage ownership, the documented marriage and later joint ownership attribution. Operator reflects Keli Jenkins's sustained Traxxas director role plus ownership attribution. Each inference is capped at medium confidence because equity percentages, governance rights, transfer documentation and a current holdings breakdown remain private. Biography prose, tags and unrelated proposals were preserved."
   }
 }

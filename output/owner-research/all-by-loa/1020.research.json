@@ -178,15 +178,16 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Hermansson is a second-generation family-company owner and operator, but the public ownership history does not state whether his interests were inherited, gifted, purchased or accumulated through another transfer mechanism.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "A family transfer is inferred from Tarbit's ownership and succession history: the Hermansson and Svanström families established the business, the founders prepared their sons to succeed them, and Hermansson now beneficially controls Tarbit through Orion Shipping. The precise legal transfer instrument is not public.",
     "confidence": {
-      "score": 84,
+      "score": 83,
       "band": "medium",
-      "reason": "The company history establishes a founder generation and later responsibility for their sons, while current records establish Anders's beneficial control. Neither source set identifies the legal or financial mechanism by which his stake was acquired, so Inherited and expanded cannot clear the 85-point threshold."
+      "reason": "Tarbit's first-party history establishes family ownership before succession and the founders' preparation of their sons for responsibility; current beneficial-owner records establish Hermansson's economic and control interest in the same business. These positive premises satisfy the family-succession inference rule, but no reviewed source identifies inheritance, gift, purchase or another precise legal mechanism."
     },
     "source_ids": [
+      "S2",
       "S3",
       "S4",
       "S5"
@@ -364,23 +365,7 @@
       ]
     }
   ],
-  "candidates_requiring_review": [
-    {
-      "candidate_type": "wealth_classification",
-      "field": "wealth_origin",
-      "candidate_value": "Inherited and expanded",
-      "confidence": {
-        "score": 82,
-        "band": "medium",
-        "reason": "The founder-to-sons succession and Anders's active management make this plausible, but neither the company history nor beneficial-owner records state inheritance or quantify expansion attributable to him."
-      },
-      "source_ids": [
-        "S3",
-        "S4",
-        "S5"
-      ]
-    }
-  ],
+  "candidates_requiring_review": [],
   "sources": [
     {
       "id": "S1",
@@ -499,7 +484,7 @@
     },
     {
       "topic": "Wealth origin",
-      "detail": "The company history describes a founder generation and sons assuming responsibility, while current records establish Anders's ownership and management. It does not disclose inheritance, gift, purchase consideration or retained-equity mechanics, so wealth origin remains Unknown."
+      "detail": "Marriage / family transfer is inferred at medium confidence because Tarbit was owned by the two founding families before their sons succeeded them, and current records establish Anders's beneficial control through Orion Shipping. The precise legal route is not public, so the dossier does not claim inheritance, gift or purchase and does not use Inherited and expanded."
     },
     {
       "topic": "Asset boundary",
@@ -516,6 +501,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Exact identity, current deputy managing-director role, maritime industries, operator relationship and beneficial ownership through Orion Shipping are strongly supported. Wealth origin remains Unknown because the transfer mechanism is undisclosed. Nothing has been compiled, approved or applied.\n\nOwner-tag consolidation research context: [1] Hermansson family: Hermansson belongs to one of the two founding families that created Tarbit and prepared the next generation for operational responsibility. [2] Orion Shipping: Orion Shipping is the holding company Hermansson chairs and through which his beneficial ownership of Tarbit is registered. [3] Shipping executive: Hermansson has current executive and director roles across Tarbit's Swedish and Dutch operating companies. [4] Tarbit Shipping: Tarbit Shipping is the two-family tanker group Hermansson beneficially owns and serves as deputy managing director. [5] Two-family business partnership: Tarbit was created and remains owned by the Hermansson and Svanström families, with both founders preparing their sons to assume responsibility."
+    "notes": "Amended wealth-policy audit completed. The four classifications are Shipping & Maritime, Shipping & Maritime, Marriage / family transfer and Operator. The origin value is a medium-confidence inference from pre-existing family ownership, founder-to-sons succession and Anders's current beneficial control; it does not claim a specific inheritance, gift or purchase instrument. The other three classifications remain strongly supported and unchanged. Nothing has been compiled, approved or applied.\n\nOwner-tag consolidation research context: [1] Hermansson family: Hermansson belongs to one of the two founding families that created Tarbit and prepared the next generation for operational responsibility. [2] Orion Shipping: Orion Shipping is the holding company Hermansson chairs and through which his beneficial ownership of Tarbit is registered. [3] Shipping executive: Hermansson has current executive and director roles across Tarbit's Swedish and Dutch operating companies. [4] Tarbit Shipping: Tarbit Shipping is the two-family tanker group Hermansson beneficially owns and serves as deputy managing director. [5] Two-family business partnership: Tarbit was created and remains owned by the Hermansson and Svanström families, with both founders preparing their sons to assume responsibility."
   }
 }

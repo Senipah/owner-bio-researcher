@@ -146,21 +146,22 @@
     }
   },
   "wealth_creation_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Public sources establish a multifamily real-estate career and direct property investment but do not show which asset, business or family transfer principally created Kool's wealth.",
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "Real Estate is inferred as Kool's wealth-creation sector from his personally attributable multifamily acquisitions, ownership and management of apartment-holding entities, and the material acquisition-and-renovation activity of RJC Legacy Investments. Public evidence does not disclose his complete balance sheet, but the repeated operating assets establish more than isolated employment or investment.",
     "confidence": {
-      "score": 90,
-      "band": "high",
-      "reason": "Strong sources document his employment, apartment transactions and family background, yet none identifies the original source of his principal wealth. Classifying the family equipment business or his later property activity as the creation sector would require an unsupported ownership or inheritance assumption."
+      "score": 82,
+      "band": "medium",
+      "reason": "A capital-markets report names Kool personally as buyer of a38-unit property, independent reporting and state records establish his ownership/management of a second apartment company, and official state and lender records connect him to RJC's55-unit acquisition and value-add program. These convergent, material assets support Real Estate as the least-specific creation sector; confidence is capped because private portfolio weights are unavailable."
     },
     "source_ids": [
       "S1",
-      "S2",
       "S3",
+      "S4",
       "S5",
-      "S7",
-      "S8"
+      "S9",
+      "S10",
+      "S11"
     ]
   },
   "primary_industry": {
@@ -181,21 +182,22 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "The evidence does not establish whether Kool's principal wealth arose from earnings, independently financed investments, inheritance, family transfer or a mixture of those mechanisms.",
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Broad Self-made is inferred from Kool's progression from multifamily financial analysis to personally attributable apartment acquisitions and management of the RJC investment entities holding those assets. The evidence positively establishes that he bought and built a material real-estate platform, while leaving seed capital and the degree of family advantage unresolved.",
     "confidence": {
-      "score": 90,
-      "band": "high",
-      "reason": "The public record documents a wealthy family background and Kool's own real-estate work, but it does not identify a transferred stake, investment capital source or the relative contribution of either. An origin classification would therefore overstate the evidence."
+      "score": 78,
+      "band": "medium",
+      "reason": "Multiple transactions and company records establish personally owned or managed apartment assets acquired through Kool's own real-estate platform, providing a positive material link rather than relying on the absence of inheritance reporting. No source documents a transfer from Vermeer Midwest or identifies his launch capital, so broad Self-made is supported while the independent-start and advantaged-start subtypes, family transfer and mixed remain unproved."
     },
     "source_ids": [
       "S1",
-      "S2",
       "S3",
+      "S4",
       "S5",
-      "S7",
-      "S8"
+      "S9",
+      "S10",
+      "S11"
     ]
   },
   "wealth_relationship": {
@@ -449,12 +451,48 @@
         "Expansion across Illinois, Indiana, Michigan and Missouri",
         "Continuing Kool-family ownership"
       ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.rjcinvestments.com/",
+      "title": "RJC Legacy Investments: Creating Opportunity",
+      "publisher": "RJC Legacy Investments",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "RJC Legacy Investments describes itself as a family-owned and operated private-equity investment firm focused on value-add commercial real estate.",
+        "The firm's stated strategy is acquisition and turnaround of distressed or underperforming real-estate assets in secondary United States markets; its published Tampa contact details match the independently identified Chris Kool business contact."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://keybank-stage4.adobecqms.net/businesses-institutions/our-transactions/deals/briarwood-apartments.html",
+      "title": "Briarwood Apartments",
+      "publisher": "KeyBank",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "KeyBank identifies RJC Legacy Investments as sponsor of the May2023acquisition of the55-unit Briarwood Apartments in Ocala and records a$4.6million acquisition loan.",
+        "The sponsor allocated substantial resources to an active capital-improvement program intended to modernize the property, directly supporting value-add real-estate investment rather than passive nominal ownership."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?aggregateId=forl-m23000003884-e131b40b-1a4b-4caa-a790-7987a7202f42&directionType=Initial&inquirytype=OfficerRegisteredAgentName&listNameOrder=KOOLBLAZEHOLDINGCOMPANYLLC+L140000310451&searchNameOrder=KOOLCHRIS+M230000038841&searchTerm=Kool+Blaze+Holding+Company%2C+Llc",
+      "title": "RJC Briarwood, LLC",
+      "publisher": "Florida Department of State, Division of Corporations",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Official Florida corporate record identifies Chris Kool as manager of active RJC Briarwood, LLC from its2023registration through current annual reports.",
+        "The RJC entity name, timing and address connect Kool directly to the RJC-sponsored Briarwood acquisition documented by KeyBank; the filing establishes management, not an undisclosed ownership percentage."
+      ]
     }
   ],
   "uncertainties": [
     {
       "topic": "Wealth creation and origin",
-      "detail": "No reliable source establishes whether Kool's principal wealth came from employment earnings, his own property investments, inheritance, family transfer or a mixture. The dossier therefore retains Unknown for both wealth creation industry and wealth origin rather than treating his family background as proof of a transferred stake."
+      "detail": "The amended-policy audit resolves Real Estate as the wealth-creation sector and broad Self-made as origin. Kool is personally named as a multifamily buyer and owner/manager of apartment entities, while lender and official corporate records connect him to a further material RJC acquisition and value-add program. His seed capital and any material family advantage remain undisclosed, so neither self-made subtype is used; no transfer from Vermeer Midwest supports family transfer, inherited or mixed."
     },
     {
       "topic": "Family-company ownership",
@@ -479,6 +517,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Identity is resolved above the required threshold, Forbes was checked first, all four wealth decisions are terminal, and all proposals exceed the import threshold. Real Estate and Investor are supported; wealth creation and origin remain Unknown because no reliable source establishes the principal fortune mechanism. The biography pair is vessel-independent and intentionally separates the Marcus & Millichap analyst identity card from the longer family, college and direct-investment profile. Nothing has been compiled, applied or committed.\n\nOwner-tag consolidation research context: [1] Analyst-to-property-investor transition: Kool moved from a documented multifamily financial-analysis role into directly attributable apartment acquisitions and holding-company management. [2] Apartment brokerage: Kool's analyst career supported a Florida-focused brokerage team advising apartment buyers and sellers rather than a general residential agency. [3] College athlete: Kool was a varsity college athlete on Elmhurst College's American-football team rather than merely a recreational participant. [4] College football: Kool played varsity American football at Elmhurst College and made documented starts on the offensive line. [5] Direct investing: Beyond transaction analysis, Kool is named personally as an apartment buyer and as manager of the holding company that acquired an Ocala apartment community. [6] Florida multifamily real estate: Kool's analyst work and documented property investments consistently centre on Florida apartment markets, including Tampa and Ocala transactions. [7] Kool family (Vermeer Midwest): Kool is a grandson of Junior and Beverly Kool, founders of the family-owned Vermeer Midwest equipment-dealership network. [8] Offensive tackle: Elmhurst's official roster identifies Kool specifically as an offensive tackle and records five starts on the offensive line. [9] Property investment advisory: As senior financial analyst for a statewide apartment-brokerage team, Kool supported specialists advising buyers and sellers on Florida multifamily transactions. [10] Real estate financial analyst: Kool served as senior financial analyst for a Florida apartment-investment sales team, making real-estate transaction analysis a durable specialist occupation. [11] Commercial real estate: Kool's documented career and investment activity centre on apartment transactions, brokerage analysis and direct acquisition of income-producing multifamily property."
+    "notes": "Identity is resolved above the required threshold, Forbes was checked first, all four wealth decisions are terminal, and all proposals exceed the import threshold. The amended-policy audit resolves wealth creation to Real Estate82 and origin to broad Self-made78 from Kool's personally attributable apartment acquisitions and RJC management, supported by official company and lender records. Launch capital remains unresolved; independent-start, advantaged-start, family-transfer, inherited and mixed alternatives do not reach threshold. Existing Real Estate primary industry and Investor relationship are preserved. The biography pair is vessel-independent and intentionally separates the Marcus & Millichap analyst identity card from the longer family, college and direct-investment profile. Nothing has been compiled, applied or committed.\n\nOwner-tag consolidation research context: [1] Analyst-to-property-investor transition: Kool moved from a documented multifamily financial-analysis role into directly attributable apartment acquisitions and holding-company management. [2] Apartment brokerage: Kool's analyst career supported a Florida-focused brokerage team advising apartment buyers and sellers rather than a general residential agency. [3] College athlete: Kool was a varsity college athlete on Elmhurst College's American-football team rather than merely a recreational participant. [4] College football: Kool played varsity American football at Elmhurst College and made documented starts on the offensive line. [5] Direct investing: Beyond transaction analysis, Kool is named personally as an apartment buyer and as manager of the holding company that acquired an Ocala apartment community. [6] Florida multifamily real estate: Kool's analyst work and documented property investments consistently centre on Florida apartment markets, including Tampa and Ocala transactions. [7] Kool family (Vermeer Midwest): Kool is a grandson of Junior and Beverly Kool, founders of the family-owned Vermeer Midwest equipment-dealership network. [8] Offensive tackle: Elmhurst's official roster identifies Kool specifically as an offensive tackle and records five starts on the offensive line. [9] Property investment advisory: As senior financial analyst for a statewide apartment-brokerage team, Kool supported specialists advising buyers and sellers on Florida multifamily transactions. [10] Real estate financial analyst: Kool served as senior financial analyst for a Florida apartment-investment sales team, making real-estate transaction analysis a durable specialist occupation. [11] Commercial real estate: Kool's documented career and investment activity centre on apartment transactions, brokerage analysis and direct acquisition of income-producing multifamily property."
   }
 }

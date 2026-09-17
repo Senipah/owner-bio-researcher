@@ -146,18 +146,20 @@
     }
   },
   "wealth_creation_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Herting's long operating role in a construction-products distributor is documented, but public sources do not establish that this company created her principal personal wealth.",
+    "classification": "construction_engineering",
+    "label": "Construction & Engineering",
+    "summary": "Herting's documented personal shareholding and long operating role in F.P. Herting & Son support construction-products distribution as the sector that created her identified wealth.",
     "confidence": {
-      "score": 91,
-      "band": "high",
-      "reason": "Companies House establishes a decades-long directorship but attributes historical and current controlling stakes to John Paul and Neil Herting, not Janet. A board role alone cannot prove her principal wealth-creation mechanism."
+      "score": 84,
+      "band": "medium",
+      "reason": "This is not inferred from occupation alone. The 2025 confirmation statement records Janet as the direct holder of 2,500 of the company's 50,000 ordinary shares, while Companies House and the first-party site establish her decades-long operating role and the substantial national construction-products distribution business. The share is below significant-control thresholds and no wider personal balance sheet is public, so the materiality inference is capped."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S3"
+      "S4",
+      "S5",
+      "S8"
     ]
   },
   "primary_industry": {
@@ -177,18 +179,20 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "The public record does not show whether Herting acquired any principal wealth through inheritance, family transfer, marriage, personal investment or compensation from her corporate role.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Herting's identified wealth is tied to a personal minority stake in a pre-existing Herting family enterprise; the precise transfer or acquisition mechanism is not public.",
     "confidence": {
-      "score": 95,
-      "band": "very_high",
-      "reason": "Official filings establish officeholding but disclose no Janet Herting control stake or transfer mechanism. The adjacent John Paul record and shared company address cannot be used to infer her wealth origin."
+      "score": 74,
+      "band": "medium",
+      "reason": "The company predates Janet's documented board tenure by decades, and its 2025 confirmation statement shows her holding 5% alongside John Paul, Paul and Neil Herting, with John Paul and Neil successively holding majority control. Shared long-term governance, concentrated family-name ownership and Janet's verified personal stake converge on broad family transfer rather than surname or occupation alone. The exact kinship, acquisition date and legal route remain unproved, so Inherited and any spouse-specific mechanism are not claimed."
     },
     "source_ids": [
+      "S1",
       "S2",
       "S3",
-      "S6"
+      "S6",
+      "S8"
     ]
   },
   "wealth_relationship": {
@@ -472,6 +476,21 @@
         "Shareholder record for Regal III Limited in Malta registry data",
         "No inference of wrongdoing from database inclusion"
       ]
+    },
+    {
+      "id": "S8",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00709812/filing-history/MzQ1ODY3NDY2MmFkaXF6a2N4/document?download=1",
+      "title": "F.P. Herting & Son plc confirmation statement made on 6 March 2025",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Janet Herting as holder of 2,500 ordinary shares at the confirmation date",
+        "50,000 total ordinary shares with voting, dividend and winding-up rights",
+        "John Paul Herting, Paul Herting and Neil Herting as the other named shareholders",
+        "Transfer of 40,000 shares from John Paul Herting and Neil Herting's resulting 42,500-share holding",
+        "Direct personal economic interest rather than officeholding alone"
+      ]
     }
   ],
   "uncertainties": [
@@ -485,11 +504,11 @@
     },
     {
       "topic": "Relationship to John Paul Herting",
-      "detail": "Janet and John Paul are long-serving directors of the same company and appear at one address in ICIJ data. No source reviewed explicitly states their marital relationship, so the dossier does not call them spouses or transfer his ownership history to her."
+      "detail": "Janet and John Paul are long-serving directors and shareholders of the same company and appear at one private address in ICIJ data. No source reviewed explicitly states their marital relationship, so the dossier does not call them spouses or assign a spouse-specific transfer mechanism."
     },
     {
       "topic": "Private wealth and control",
-      "detail": "Companies House records John Paul and then Neil Herting as majority controllers. Janet's director and former secretary roles support an Operator classification, but not a personal controlling stake or a documented wealth-origin mechanism."
+      "detail": "The 2025 confirmation statement establishes Janet's direct 5% holding, while Companies House records John Paul and then Neil Herting as majority controllers. That stake plus her long operating tenure supports Construction & Engineering as wealth-creation sector and broad Marriage / family transfer at capped confidence. It does not establish control, inheritance, exact kinship, acquisition terms or her wider balance sheet."
     },
     {
       "topic": "Birth and mortality details",
@@ -514,6 +533,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Identity is resolved above threshold as Janet Herting, with explicit source corrections proposed for the one-letter surname error and current mortality status. Her own public record supports a long-term Operator role in construction-materials distribution, but wealth creation and origin remain Unknown rather than borrowing John Paul or Neil Herting's disclosed control. One supported company website and one active construction-materials tag form the minimum useful set."
+    "notes": "Identity is resolved above threshold as Janet Herting, with explicit source corrections proposed for the one-letter surname error and current mortality status. The amended-policy audit adds the 2025 Companies House confirmation statement, which establishes her direct 5% economic interest rather than officeholding alone. Construction & Engineering is therefore supported as wealth-creation sector at 84, and the pre-existing concentrated Herting ownership and succession pattern supports broad Marriage / family transfer at 74. Inherited, spouse-specific transfer and controlling-owner claims remain unsupported. Her current wealth relationship remains Operator. One supported company website and one active construction-materials tag form the minimum useful set."
   }
 }

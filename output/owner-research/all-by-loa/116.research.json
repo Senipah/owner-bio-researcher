@@ -147,17 +147,18 @@
   "wealth_creation_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Public records establish commercial development, a corporate investment and a later hospitality property, but do not show which sector created Al Remaizan's principal fortune.",
+    "summary": "Real estate is the strongest candidate because an exact-name commercial-development establishment is listed in property sales and rentals and he later developed a hotel property, but the record does not establish that this sector principally created his fortune.",
     "confidence": {
       "score": 95,
       "band": "very_high",
-      "reason": "The evidence reliably shows activity in several sectors but provides no asset history or relative values capable of identifying the original dominant wealth source."
+      "reason": "The property evidence does not establish a sufficiently strong original-wealth materiality link, while the record also documents a petrochemicals investment and a later hospitality asset. Diversified is likewise unsupported because the relative materiality of those interests is unknown."
     },
     "source_ids": [
       "S2",
       "S4",
       "S5",
-      "S6"
+      "S6",
+      "S7"
     ]
   },
   "primary_industry": {
@@ -176,18 +177,19 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "No strong public source establishes whether his principal assets were founded independently, inherited or transferred within a family structure.",
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Public records support a broad self-made origin through an exact-name sole proprietorship established in 1971, followed by personally held corporate investment and owner-side property development; his starting capital and any family advantage remain undocumented.",
     "confidence": {
-      "score": 95,
-      "band": "very_high",
-      "reason": "An old individual establishment, a corporate shareholding and a hotel ownership role do not disclose his starting capital, succession history or the origin of the principal assets."
+      "score": 74,
+      "band": "medium",
+      "reason": "The exact-name individual establishment and subsequent personally documented investment and development roles provide positive evidence of business building. The score is capped because the registry evidence is secondary and public sources do not identify the launch capital, starting platform or relative value of the assets."
     },
     "source_ids": [
       "S2",
       "S4",
-      "S5"
+      "S5",
+      "S6"
     ]
   },
   "wealth_relationship": {
@@ -330,7 +332,24 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "candidate_type": "wealth_creation_industry",
+      "field": "wealth_creation_industry",
+      "candidate_value": "real_estate",
+      "confidence": {
+        "score": 68,
+        "band": "low",
+        "reason": "An exact-name directory entry classifies the longstanding commercial-development establishment under property sales and rental services, and later sources document a substantial hotel-property development. The directory evidence is weak and no source establishes real estate as the original dominant wealth source."
+      },
+      "source_ids": [
+        "S2",
+        "S5",
+        "S6",
+        "S7"
+      ]
+    }
+  ],
   "sources": [
     {
       "id": "S1",
@@ -416,16 +435,28 @@
         "Al Remaizan's direct statement about the planned hotel",
         "Riyadh development geography"
       ]
+    },
+    {
+      "id": "S7",
+      "url": "https://arablocal.com/ar/business/view/saleh-al-rmaizan-trading-development-est",
+      "title": "Saleh Al Rmaizan Trading Development Establishment",
+      "publisher": "Arab Local",
+      "tier": 3,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Exact-name Riyadh commercial-development establishment",
+        "Directory classification under real-estate sales and rental services"
+      ]
     }
   ],
   "uncertainties": [
     {
       "topic": "Wealth creation",
-      "detail": "The public record shows a long-established commercial entity, a historical corporate investment and a later hotel asset but does not establish which activity created his principal fortune."
+      "detail": "Real estate is the strongest candidate because a directory classifies his exact-name establishment under property sales and rentals and he later developed a hotel asset. The directory is weak evidence, however, and the record also documents a petrochemicals investment without relative values, so the original dominant sector remains Unknown."
     },
     {
       "topic": "Wealth origin",
-      "detail": "No source establishes whether the principal assets were independently built, inherited or transferred, so no self-made, inherited or family-transfer classification is assigned."
+      "detail": "Broad Self-made is inferred at medium confidence from the exact-name sole proprietorship established in 1971 and his later personally documented investment and development roles. Independent start and advantaged start are not assigned because the launch capital and family platform are not public; inherited and family-transfer variants lack positive transfer evidence."
     },
     {
       "topic": "Family and jewellery group",
@@ -450,6 +481,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Resolved exact-name Saudi hospitality-property owner. Import only the biography, known-for title and gender proposals at confidence 70 or higher. Keep wealth creation and origin Unknown, and do not attribute Al Romaizan jewellery-group or wider family assets without direct evidence. No research has been compiled or applied.\n\nOwner-tag consolidation research context: [1] Mansard Riyadh: Mansard Riyadh is the named luxury hospitality property for which Al Remaizan is directly documented as owner-side development partner. [2] Serviced apartments: Serviced apartments are a material component of the Mansard Riyadh complex alongside the hotel and duplex villas. [3] Third-party hotel management: Mansard Riyadh separates Al Remaizan's ownership and development role from Radisson's hotel-brand and operating-management platform."
+    "notes": "Resolved exact-name Saudi hospitality-property owner. Under the amended reasonable-inference policy, broad Self-made is supported at medium confidence by an exact-name sole proprietorship established in 1971 and later personally documented investment and development roles; do not narrow it to an independent or advantaged start. Keep wealth creation industry Unknown because Real Estate remains below threshold and the materiality of other exact-name industrial and investment interests is undisclosed. Do not attribute Al Romaizan jewellery-group or wider family assets without direct evidence. No research has been compiled or applied.\n\nOwner-tag consolidation research context: [1] Mansard Riyadh: Mansard Riyadh is the named luxury hospitality property for which Al Remaizan is directly documented as owner-side development partner. [2] Serviced apartments: Serviced apartments are a material component of the Mansard Riyadh complex alongside the hotel and duplex villas. [3] Third-party hotel management: Mansard Riyadh separates Al Remaizan's ownership and development role from Radisson's hotel-brand and operating-management platform."
   }
 }

@@ -146,11 +146,11 @@
   "wealth_creation_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Public records establish investment and company roles but do not identify the business or asset that principally created her personal wealth.",
+    "summary": "Public records establish controlling interests in Bagpad and Kirtlington Park plus several board roles, but do not identify the sector that originally generated the capital behind her material assets.",
     "confidence": {
-      "score": 96,
-      "band": "very_high",
-      "reason": "Companies House and Finnish company records document current roles, while family reporting does not establish a personal transfer or ownership interest in the Roemmers pharmaceutical group."
+      "score": 66,
+      "band": "low",
+      "reason": "The strongest alternatives are Healthcare through the Roemmers family platform and Real Estate through current joint control of Kirtlington Park Limited. Neither reaches 70: no source gives Cathrine a pharmaceutical interest, while the 2026 Kirtlington acquisition identifies a current asset rather than the source of the capital used to acquire it. Bagpad is directly controlled but its public scale does not establish it as the original wealth engine."
     },
     "source_ids": [
       "S2",
@@ -158,40 +158,42 @@
       "S4",
       "S5",
       "S7",
-      "S9"
+      "S9",
+      "S10",
+      "S11"
     ]
   },
   "primary_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Her identifiable interests span consumer retail, financial services and wine distribution, with no evidence that one sector principally underpins her private wealth.",
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "De Roemmers now jointly controls Kirtlington Park Limited with her husband, linking her to the materially larger heritage-estate and venue asset as her strongest identifiable current holding.",
     "confidence": {
-      "score": 94,
-      "band": "high",
-      "reason": "Current filings and company records support several cross-sector roles but provide no reliable valuation or ownership evidence establishing a dominant private-wealth sector."
+      "score": 81,
+      "band": "medium",
+      "reason": "Companies House records Cathrine and Alfredo Pablo Roemmers each holding more than 25% but no more than 50% of Kirtlington Park Limited and serving as directors from 21 August 2026. Independent property reporting shortly before that control change marketed the associated 29-acre, 37,000-square-foot estate at a £12 million guide price, materially exceeding the scale established for her other disclosed companies. Real Estate is therefore the least-specific supported current primary sector, with the score capped because the transaction price and complete portfolio are private."
     },
     "source_ids": [
-      "S2",
-      "S3",
-      "S4",
-      "S5",
-      "S6"
+      "S7",
+      "S8",
+      "S10",
+      "S11"
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "No reliable source establishes whether her principal assets were earned, founded, inherited or transferred through marriage or another family mechanism.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "De Roemmers's identified material asset position is held jointly with Alfredo Pablo Roemmers, a member and prospective heir of the long-established Roemmers pharmaceutical family; the precise funding or transfer route is not public.",
     "confidence": {
-      "score": 97,
-      "band": "very_high",
-      "reason": "Her marriage and company roles are public, but no strong source documents the acquisition mechanism for her principal wealth. Marriage alone cannot support a transfer classification."
+      "score": 79,
+      "band": "medium",
+      "reason": "This is not inferred from marriage alone. Forbes Argentina documents Alfredo Pablo Roemmers within the pharmaceutical-family fortune and identifies Cathrine as his spouse, while Companies House now records both spouses as verified directors and equal control-band owners of Kirtlington Park Limited immediately after the marketed estate changed control. The marriage link, material joint asset and family-wealth platform converge on broad marriage/family transfer; the score is capped because purchase funding, settlement terms and any direct pharmaceutical transfer remain undisclosed."
     },
     "source_ids": [
-      "S2",
-      "S3",
       "S7",
-      "S8"
+      "S8",
+      "S9",
+      "S10",
+      "S11"
     ]
   },
   "wealth_relationship": {
@@ -487,6 +489,36 @@
         "pharmaceutical manufacturing and medicine-development identity",
         "durable context for the Roemmers pharmaceutical family reference"
       ]
+    },
+    {
+      "id": "S10",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/06638098/persons-with-significant-control",
+      "title": "Kirtlington Park Limited persons with significant control",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Cathrine Maria Bosdotter De Roemmers as an active verified beneficial owner from 21 August 2026",
+        "Cathrine's ownership of more than 25 percent but no more than 50 percent of shares and voting rights",
+        "Alfredo Pablo Roemmers as the other active owner in the same control band",
+        "Both spouses' active directorships beginning on the control-change date",
+        "Current joint economic control of a material non-pharmaceutical asset"
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.countrylife.co.uk/property/one-of-britains-greatest-mansions-is-on-the-market-with-36ft-ceilings-17-bedrooms-37-000sq-ft-and-gardens-landscaped-by-capability-brown",
+      "title": "One of Britain's greatest mansions is on the market",
+      "publisher": "Country Life",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Kirtlington Park House marketed in June 2026 at a guide price of £12 million",
+        "29-acre estate and approximately 37,000-square-foot house",
+        "Seventeen bedrooms and extensive heritage-property improvements",
+        "Existing exclusive wedding and events business attached to the property",
+        "Materiality context for the subsequent company-control change without asserting the actual transaction price"
+      ]
     }
   ],
   "uncertainties": [
@@ -496,7 +528,7 @@
     },
     {
       "topic": "Personal wealth mechanism",
-      "detail": "Her investor occupation, Bagpad control and Finnish board roles are public. No strong source establishes which asset created or principally underpins her personal wealth, and no ownership in the Roemmers pharmaceutical group is inferred from marriage."
+      "detail": "Her investor occupation, Bagpad control and Finnish board roles are public. August 2026 filings now establish joint control with her husband of Kirtlington Park Limited, shortly after the associated estate was marketed at a £12 million guide price. This supports Real Estate as current primary industry and broad Marriage / family transfer at capped confidence, but no pharmaceutical ownership or precise acquisition funding is inferred. Wealth-creation industry remains Unknown because neither the joint property acquisition nor the Roemmers family relationship identifies which sector originally generated her capital."
     },
     {
       "topic": "Residence",
@@ -517,6 +549,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Resolved-person dossier with an explicit name-variant and wealth-evidence boundary. Import only the confidence-qualified title, partial birth date, replacement biography and official Bagpad company website. Do not infer a pharmaceutical holding, marriage transfer, Monaco residence or personal social profile. Nothing has been compiled or applied.\n\nOwner-tag consolidation research context: [1] Bagpad: Bagpad is the London-based fitted handbag-shaper company controlled and directed by Cathrine De Roemmers since its 2018 incorporation. [2] Beverage distribution: De Roemmers chairs Primas Wines, a Finnish company registered as an agent for food, drink and tobacco products. [3] Consumer-products entrepreneur: De Roemmers has controlled and directed Bagpad from its 2018 incorporation as it developed fitted handbag-preservation products. [4] Consumer-products executive: De Roemmers is an active director and controlling shareholder of Bagpad, the branded consumer-products company behind fitted handbag shapers. [5] Controlling investor: Companies House records De Roemmers as an investor who controls at least three quarters of Bagpad Limited's shares. [6] Executive equity ownership: De Roemmers combines an active Bagpad directorship with a government-recorded controlling shareholding of at least 75 per cent. [7] Fashion accessories: Bagpad's fitted inserts are accessories designed specifically to preserve the shape of luxury handbags. [8] Food-industry executive: De Roemmers chairs Primas Wines, whose registered activity covers food and drink agency work. [9] Handbag preservation accessories: Bagpad specialises in fitted inserts intended to retain the shape of luxury handbags. [10] Handbags: De Roemmers's controlled Bagpad business serves the handbag sector with bespoke fitted inserts that preserve bag shape. [11] Luxury-goods board director: De Roemmers is an active director of the company producing fitted preservation accessories for luxury handbags. [12] Patient majority ownership: De Roemmers has retained controlling ownership and an active board role at Bagpad from its 2018 incorporation through the current filing. [13] Primas Wines: Primas Wines is the Turku food-and-drink agency chaired by Cathrine Maria Bosdotter De Roemmers. [14] VenCo Partners: VenCo Partners is the Turku finance company on whose board De Roemmers serves. [15] Wine agency and representation: Primas Wines operates as an agent and representative for food and drink products under De Roemmers's chairmanship. [16] Wine executive: De Roemmers chairs the Finnish wine and beverage agency Primas Wines."
+    "notes": "Resolved-person dossier with an explicit name-variant and wealth-evidence boundary. The amended-policy audit adds August 2026 Companies House evidence that Cathrine and Alfredo Pablo Roemmers each control more than 25% but no more than 50% of Kirtlington Park Limited, following the associated estate's public marketing at a £12 million guide price. This supports Real Estate as current primary industry at 81 and broad Marriage / family transfer at 79 when combined with the documented marriage and Roemmers family-fortune platform. It does not establish a pharmaceutical holding, exact purchase funding, inheritance or transaction price. Wealth-creation industry remains Unknown at 66 because current property acquisition does not identify the sector that generated the purchase capital. Import only the confidence-qualified title, partial birth date, replacement biography and official Bagpad company website. Nothing has been compiled or applied.\n\nOwner-tag consolidation research context: [1] Bagpad: Bagpad is the London-based fitted handbag-shaper company controlled and directed by Cathrine De Roemmers since its 2018 incorporation. [2] Beverage distribution: De Roemmers chairs Primas Wines, a Finnish company registered as an agent for food, drink and tobacco products. [3] Consumer-products entrepreneur: De Roemmers has controlled and directed Bagpad from its 2018 incorporation as it developed fitted handbag-preservation products. [4] Consumer-products executive: De Roemmers is an active director and controlling shareholder of Bagpad, the branded consumer-products company behind fitted handbag shapers. [5] Controlling investor: Companies House records De Roemmers as an investor who controls at least three quarters of Bagpad Limited's shares. [6] Executive equity ownership: De Roemmers combines an active Bagpad directorship with a government-recorded controlling shareholding of at least 75 per cent. [7] Fashion accessories: Bagpad's fitted inserts are accessories designed specifically to preserve the shape of luxury handbags. [8] Food-industry executive: De Roemmers chairs Primas Wines, whose registered activity covers food and drink agency work. [9] Handbag preservation accessories: Bagpad specialises in fitted inserts intended to retain the shape of luxury handbags. [10] Handbags: De Roemmers's controlled Bagpad business serves the handbag sector with bespoke fitted inserts that preserve bag shape. [11] Luxury-goods board director: De Roemmers is an active director of the company producing fitted preservation accessories for luxury handbags. [12] Patient majority ownership: De Roemmers has retained controlling ownership and an active board role at Bagpad from its 2018 incorporation through the current filing. [13] Primas Wines: Primas Wines is the Turku food-and-drink agency chaired by Cathrine Maria Bosdotter De Roemmers. [14] VenCo Partners: VenCo Partners is the Turku finance company on whose board De Roemmers serves. [15] Wine agency and representation: Primas Wines operates as an agent and representative for food and drink products under De Roemmers's chairmanship. [16] Wine executive: De Roemmers chairs the Finnish wine and beverage agency Primas Wines."
   }
 }

@@ -192,21 +192,20 @@
     ]
   },
   "wealth_relationship": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Personal park ownership and continuing corporate titles are verified. The 2026 register calls him director/president of Rickert Properties and manager of Mid Florida Mobile Home Sales, but the sources do not establish his present hands-on responsibilities or whether another family member now directs operations. The business's 1967 founding is not personally attributed. The available evidence cannot reliably choose Founder, Operator, Investor or Passive asset owner as the principal current relationship.",
+    "classification": "passive_asset_owner",
+    "label": "Passive asset owner",
+    "summary": "Rickert personally owns Crystal Lake Village, while the property platform advertises on-site management and the current Lincolnshire team identifies separate community, sales and regional operations managers. His current company-record titles as president and manager establish continuing formal authority but do not establish day-to-day operating control. The most specific supported current relationship is therefore ownership with delegated operations rather than Operator or Founder.",
     "confidence": {
-      "score": 65,
-      "band": "low",
-      "reason": "Corporate titles, landlord ownership and historical development partnerships establish substantial involvement but do not resolve the present operating allocation. A retirement/son-as-CEO newsletter lead was inaccessible and is not treated as verified evidence."
+      "score": 78,
+      "band": "medium",
+      "reason": "A current court decision directly establishes personal ownership, while the official platform and community team pages document delegated on-site and regional operations. Confidence is capped because formal records still list Rickert as president and manager and do not describe his remaining strategic responsibilities."
     },
     "source_ids": [
       "S2",
       "S3",
       "S6",
-      "S8",
-      "S9",
-      "S10"
+      "S10",
+      "S13"
     ]
   },
   "biography": {
@@ -473,6 +472,18 @@
         "Actual official body read. Wayne C. Rickert Fund of the MCF is listed among supporting foundations and organisations.",
         "The charity describes assistance for children in state care, including emergency essentials and continuing practical support. No individual grant amount, funding chronology or separate operating role is inferred."
       ]
+    },
+    {
+      "id": "S13",
+      "url": "https://lincolnshire-estates.com/meet-our-team/",
+      "title": "Meet our Team",
+      "publisher": "Lincolnshire Estates / Rickert Properties",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Actual official page body read. Lincolnshire Estates identifies Paul DiLella as community manager, Randall Cramer as community sales manager and Chuck Valenti as regional operations manager.",
+        "The page identifies the community with Rickert Properties and describes the platform as family owned and operated since 1967. It supports delegated operating roles, but does not establish Rickert's exact equity percentage or eliminate every strategic responsibility."
+      ]
     }
   ],
   "uncertainties": [
@@ -484,17 +495,17 @@
     "Personal-account searches covered Wayne Rickert and Wayne Clyde Rickert with Bradenton, Sarasota and Rickert Properties qualifiers across Instagram, LinkedIn, Facebook, Twitter/X, Youtube, TikTok and personal websites. Explicit queries included \"Wayne Rickert\" site:linkedin.com/in; \"Wayne Rickert\" site:instagram.com; \"Wayne Rickert\" site:facebook.com; \"Wayne Rickert\" (site:twitter.com OR site:x.com OR site:tiktok.com OR site:youtube.com); and \"Wayne Rickert\" \"personal website\". No personal account met the verification standard. TikTok was robots-blocked.",
     "Trip Advisor, Zillow, Vimeo and Flickr did not become material personal-profile types from the identified business and public work. No personal Wikipedia page was verified. The corporate site is proposed under Company Website only; company, relative and namesake accounts are not substituted.",
     "The primary 2025 annual report gives full middle name Clyde, while the 2026 live record has Scott as registered agent. The report was actually read through web; requests subsequently returned 403. The dossier dates these facts correctly rather than treating an old agent appointment as current.",
-    "The 2025 Lincolnshire Voice PDF at https://monthly-media.com/newsletters/1747414030-Lincolnshire%20-%20June%202025%20-%20web.pdf was discovered with a possible retirement and father-son management distinction, but direct download returned 404 and web open failed. The publisher's current newsletter page leads to read-login links. Its indexed text is not final evidence, and no retirement, CEO succession or parent-child fact is proposed.",
+    "The 2025 Lincolnshire Voice PDF at https://monthly-media.com/newsletters/1747414030-Lincolnshire%20-%20June%202025%20-%20web.pdf was discovered with a possible retirement and father-son management distinction, but direct download returned 404 and web open failed. The publisher's current newsletter page leads to read-login links. Its indexed text is not final evidence, and no retirement, CEO succession or parent-child fact is proposed. The current official Lincolnshire team page independently documents delegated community, sales and regional operations roles and is the usable evidence for relationship classification.",
     "The Sarasota Magazine Southern Comfort article of 1 October 2006 returned a Cloudflare 403 through requests and no readable relevant body on subsequent web opens. Its indexed description of family and domestic interests is excluded. A Costa Rican notice with an exact full name supplies no necessary business bridge and was not used; private identifiers and family litigation were not retained.",
     "The family business says it began in 1967, while the present corporation was incorporated in 1982. These dates can describe a trading history and a later legal entity; neither establishes that Wayne personally founded the enterprise. No founder title is proposed.",
     "Original and current Real Estate are investigated independently. The original classification rests on a named personal acquisition/sale and development record; the current classification rests on ongoing personal park ownership and the current property platform. No present net worth, group-asset total, stake percentage or exact sale proceeds is asserted.",
     "Broad Self-made remains bounded because the starting capital and family platform are unknown. The positive bought-and-held property mechanism supports the broad category, but absence of an inheritance report does not prove an independent start.",
-    "The current wealth relationship remains Unknown because the precise practical division of management cannot be distinguished from the formal legal titles. Historical ownership, development and the present presidency may all be stated at their supported level without inventing a founding role or ignoring possible operational retirement.",
+    "The current wealth relationship is resolved as Passive asset owner at bounded confidence. Current personal park ownership and the official platform's delegated on-site and regional management structure converge on ownership rather than principal day-to-day operation. Operator was rejected because the remaining evidence is formal corporate title rather than demonstrated current operating control; Founder was rejected because the 1967 platform origin is not attributed to Wayne; Heir / family shareholder was rejected because no inherited or transferred family stake is documented.",
     "The single active Property developer tag was checked against its profession contract: multiple project histories and substantive amendments support a defining development role. The prose's charitable contributions do not justify generic philanthropy or foundation-affiliation tags. Rental parks do not establish luxury, office or retail property specialisms, and no catalogue candidate was created.",
     "The short-long pair is complementary: current business identity and rental platform versus a specific acquisition/buyout, partnerships and local charitable uses of funds. Both pass sale independence and contain no personal-vessel material. Only applicable missing fields are proposed."
   ],
   "review": {
     "status": "complete",
-    "notes": "Terminal resolved-person decision passed validate_dossier.py with --owner-input output/owners-list.vessel-enriched.enriched.json --strict-editorial on 2026-09-14 without errors or warnings. No live changes; main acceptance remains separate."
+    "notes": "Amended-policy audit on 2026-09-17 resolved wealth_relationship from Unknown to Passive asset owner using current personal park ownership plus official evidence of delegated community and regional operations. The other three HNWI classifications were preserved. Strict validation passed without errors or warnings; no live changes were applied."
   }
 }

@@ -191,20 +191,22 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "The public record establishes ownership of an older family property platform but does not show whether Andresen acquired the principal assets through inheritance, a lifetime family transfer, purchase or another mechanism.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "A family transfer is inferred from the established Andresen owner-family property platform and Klaus Andresen's succession to sole ownership. GVG was founded while he was still a teenager; Karl Heinz Andresen founded and controlled related property entities, the two men later jointly held and developed assets from the same Hamburg office, and registry records show Karl's authority ending as Klaus's capital interest and control increased. Their exact kinship and the legal transfer route are not public.",
     "confidence": {
-      "score": 99,
-      "band": "very_high",
-      "reason": "GVG was founded before Andresen entered adulthood, calls itself a family office and appears beside entities bearing Karl Heinz Andresen's name, but none of the strong sources explicitly identifies a parent-child relationship, an inheritance event, a transfer instrument or separately created principal fortune. Unknown is therefore more defensible than inferring inheritance or self-made origin."
+      "score": 82,
+      "band": "medium",
+      "reason": "Positive convergent evidence goes beyond a shared surname: GVG identifies the assets as an owner-family portfolio; Karl Heinz independently appears as founder of a related Andresen property business; Karl and Klaus were joint property principals at the same office; and 2021 corporate changes increased Klaus's registered capital interest while Karl's management authority ended. The family-platform succession and current sole ownership support the broad family-transfer value under the amended policy. Confidence is capped because no source states the exact kinship or transfer instrument; inheritance and arm's-length purchase are therefore not asserted."
     },
     "source_ids": [
       "S3",
       "S5",
       "S6",
       "S15",
-      "S16"
+      "S16",
+      "S17",
+      "S18"
     ]
   },
   "wealth_relationship": {
@@ -640,6 +642,33 @@
         "Specific supermarket-centre property development",
         "Material retail-real-estate operating history"
       ]
+    },
+    {
+      "id": "S17",
+      "url": "https://www.companyhouse.de/Karl-Heinz-Andresen-Grundstuecksverwaltungs-GmbH-Co-KG-Hamburg",
+      "title": "Karl Heinz Andresen Grundstücksverwaltungs GmbH & Co. KG corporate record",
+      "publisher": "CompanyHouse",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Klaus Andresen as a partner in the Karl Heinz Andresen property company from January 1998",
+        "Klaus's registered capital interest of EUR 127,822.96 in 2016 increasing to EUR 255,645.94 in September 2021",
+        "Karl Heinz Andresen and Klaus Andresen appearing together in the management history until September 2021",
+        "The same Mittelweg 157 address and real-estate activity as the wider Andresen property platform"
+      ]
+    },
+    {
+      "id": "S18",
+      "url": "https://therealdeal.com/miami/2017/11/16/entity-tied-to-liechtenstein-based-firm-buys-waterfront-palm-beach-home/",
+      "title": "Entity tied to Liechtenstein firm buys waterfront Palm Beach home",
+      "publisher": "The Real Deal, 16 November 2017",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Independently identifies Karl Heinz Andresen as founder of a Hamburg property-management company bearing his name",
+        "Identifies Karl Heinz and Marianne Andresen as a married couple, but does not state Klaus Andresen's exact relationship to either person",
+        "Corroborates Karl Heinz's role in the pre-existing Andresen property platform without establishing an inheritance event"
+      ]
     }
   ],
   "uncertainties": [
@@ -653,7 +682,7 @@
     },
     {
       "topic": "Wealth origin",
-      "detail": "GVG was founded in 1978 while Andresen was still a teenager and is explicitly described as an owner-family office. Joint entities with Karl Heinz Andresen establish a prior family platform, but sources do not explicitly identify their relationship or document inheritance, a lifetime transfer or Andresen's own purchase. Wealth origin remains Unknown rather than inferred."
+      "detail": "Marriage / family transfer is inferred under the amended policy from an established owner-family platform plus succession to current ownership, not from surname alone. GVG was founded while Klaus was still a teenager and describes itself as managing the owner family's assets; Karl Heinz independently founded a related property business; the two men jointly held and developed property from the same office; and Klaus's registered interest and control increased as Karl's authority ended in 2021. Exact kinship and legal route remain unpublished, so inheritance is not claimed. No evidence supports an arm's-length purchase or a separately created principal fortune."
     },
     {
       "topic": "Current operating role",
@@ -682,6 +711,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "The exact Zurich-based GVG owner is resolved above the identity threshold through company, residence, birth-date and Immohome/Palm Beach anchors. Real estate is independently supported for both industry fields; the current relationship is Family office principal, and origin remains Unknown because no transfer mechanism is public. Two approved tags satisfy their semantic contracts, exact LinkedIn and company-website socials are proposed, and the existing source-visible yacht-led biography is replaced. No dossier was compiled or applied and no live state was changed."
+    "notes": "The exact Zurich-based GVG owner is resolved above the identity threshold through company, residence, birth-date and Immohome/Palm Beach anchors. Real estate is independently supported for both industry fields; the current relationship is Family office principal. Under the amended reasonable-inference policy, origin is Marriage / family transfer at 82 confidence from the convergent owner-family platform, joint Karl-and-Klaus ownership history and Klaus's later sole control; exact kinship and transfer instrument remain unresolved, so inheritance and purchase/self-made are rejected. Two approved tags satisfy their semantic contracts, exact LinkedIn and company-website socials are proposed, and the existing source-visible yacht-led biography is replaced. No dossier was compiled or applied and no live state was changed."
   }
 }

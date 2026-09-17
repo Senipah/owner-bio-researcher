@@ -178,13 +178,13 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "The fortune came from selling a company founded by Espinosa's father and later owned by the brothers, but public sources do not establish whether the principal stake passed by inheritance, lifetime transfer or another family arrangement.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "A family transfer is inferred because Espinosa's father founded Rimsa, Leopoldo and his brother later owned the company, and Leopoldo operated it as executive president through the sale that created their fortunes. The precise route by which his stake passed within the family is not public.",
     "confidence": {
-      "score": 94,
-      "band": "high",
-      "reason": "Forbes establishes the father's founding role, Leopoldo's executive presidency and the brothers' ownership at sale. It does not document the legal or financial mechanism by which Leopoldo acquired his stake, so a specific inherited, transferred or self-made origin would be inference."
+      "score": 83,
+      "band": "medium",
+      "reason": "Forbes and court records converge on the material premises: the father founded the core pharmaceutical business, Leopoldo and Fernando subsequently owned it, Leopoldo served as executive president, and the brothers sold it in the transaction that principally created their reported fortunes. This supports a family-succession inference under the amended policy. The sources do not disclose whether Leopoldo's stake passed by inheritance, lifetime transfer, purchase within the family or another route, so the broader family-transfer label is used instead of an inherited subtype."
     },
     "source_ids": [
       "S1",
@@ -446,7 +446,7 @@
     },
     {
       "topic": "Wealth origin",
-      "detail": "The father-founded company, the brothers' ownership at sale and Leopoldo's executive presidency are well established. The stake-transfer mechanism is not: sources do not say whether Leopoldo inherited it, received it during his father's lifetime, purchased it or acquired it another way. Wealth origin therefore remains Unknown."
+      "detail": "The father-founded company, the brothers' ownership at sale and Leopoldo's executive presidency establish succession to the family business and support marriage_family_transfer at medium inference confidence. The stake-transfer mechanism remains undisclosed: sources do not say whether Leopoldo inherited it, received it during his father's lifetime, purchased it within the family or acquired it another way. Inherited and inherited_and_expanded are therefore not assigned, while self-made and mixed would mischaracterize the family-derived core asset."
     },
     {
       "topic": "Current industry",
@@ -467,6 +467,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Verified Forbes identity, full legal name, former Rimsa executive and ownership role, company and sale chronology, completed litigation outcome, four independent wealth classifications, exact Forbes profile and one active tag were reviewed. Biography, wealth, proposals, tag and review contain no source-record vessel or other private-asset facts. Strict exact-input and editorial validation is required before completion; nothing was applied live."
+    "notes": "Verified Forbes identity, full legal name, former Rimsa executive and ownership role, company and sale chronology, completed litigation outcome, four independent wealth classifications, exact Forbes profile and one active tag were reviewed. Wealth origin is marriage_family_transfer at medium inference confidence because the father-founded company passed into the brothers' ownership before the wealth-defining sale; the precise legal transfer route remains undisclosed and no inherited subtype is claimed. Biography, wealth, proposals, tag and review contain no source-record vessel or other private-asset facts. Strict exact-input and editorial validation completed; nothing was applied live."
   }
 }

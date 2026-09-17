@@ -150,19 +150,21 @@
     }
   },
   "wealth_creation_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Theoklitos's banking career and later purchase of a material The Mart stake are documented, but public sources do not establish which activity principally created the capital behind his fortune.",
+    "classification": "food_beverage",
+    "label": "Food & Beverage",
+    "summary": "Food & Beverage is inferred as the sector that created Theoklitos's principal disclosed wealth: he purchased 21% of food wholesaler The Mart in 2017, remains the reported holder of that material stake and operates the business as chief executive. His banking career preceded the purchase, but no source establishes bank ownership, investment gains or executive compensation as the principal fortune-producing asset.",
     "confidence": {
-      "score": 96,
-      "band": "very_high",
-      "reason": "Bank, company and business-press sources provide a detailed executive chronology and current ownership evidence but do not trace the original wealth-creation mechanism. Assigning Finance or Food & Beverage would therefore overstate what is known."
+      "score": 84,
+      "band": "medium",
+      "reason": "Contemporaneous reporting documents Theoklitos's purchase of a 21% stake, current reporting confirms that he still owns it, and company material establishes The Mart's food-and-beverage wholesale activity. Under the amended policy, an acquired principal asset can establish its creation sector even when the purchase capital is undisclosed. The materiality link is inferred, so the score is capped at 84; Finance & Investments is rejected because the record establishes employment in banking rather than a principal owned financial asset or investment fortune."
     },
     "source_ids": [
       "S3",
       "S4",
+      "S6",
       "S7",
-      "S8"
+      "S8",
+      "S9"
     ]
   },
   "primary_industry": {
@@ -191,7 +193,8 @@
     },
     "source_ids": [
       "S7",
-      "S8"
+      "S8",
+      "S9"
     ]
   },
   "wealth_relationship": {
@@ -469,6 +472,19 @@
         "Current personal ownership supporting Food & Beverage primary industry",
         "Operator relationship alongside the company-register chief-executive role"
       ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.insider.gr/epiheiriseis/71625/sklabenitis-i-exagora-toy-21-tis-mart-kai-ta-erotimata",
+      "title": "Sklavenitis: The acquisition of 21% of The Mart and the questions",
+      "publisher": "Insider Greece, 3 January 2018",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Reports that Leonidas Theoklitos acquired 21% of The Mart in a transaction completed in May 2017",
+        "Identifies Theoklitos as The Mart's chief executive and a Sklavenitis board member at the time of the acquisition",
+        "States that the consideration paid was not publicly disclosed, preserving the limit on financing and starting-capital conclusions"
+      ]
     }
   ],
   "uncertainties": [
@@ -476,7 +492,7 @@
     "Greek sources style the ELGEKA appointment as Λεωνίδας Θεόκλητος του Θεοδώρου, and some English filings render the name Leonidas Theodoros Theoklitos. Because Theodoros may be a patronymic rather than a legal middle name, no middle_names or display-name expansion is proposed.",
     "The source's sort_name is given-name-first even though the structured fields and sort_last_name identify Theoklitos as the surname. Only sort_name is corrected; the existing display name, sort_first_name and sort_last_name remain appropriate.",
     "Companies House and ELGEKA material support March 1961, but no reliable exact birth day or place of birth was found. Those fields remain blank, and no secondary nationality or residence is inferred.",
-    "The wealth-creation industry remains Unknown. A distinguished banking career and a later food-wholesale stake are public, but reviewed sources do not identify which economic activity generated the original capital.",
+    "Food & Beverage is inferred as wealth creation industry from Theoklitos's documented 2017 purchase and continuing ownership of a material 21% The Mart stake. The amended policy permits an acquired principal asset to establish its creation sector even when its purchase capital is undisclosed. Finance & Investments was considered but rejected: the record documents a distinguished banking employment career, not bank ownership, investment gains or another financial asset shown to have produced the principal fortune.",
     "Food & Beverage is used for primary industry because recent reporting still attributes a 21% stake in The Mart to Theoklitos, while official company material describes a wholesale food-and-beverage business and the current registry confirms his operating mandate.",
     "Self-made reflects a documented purchase of the current principal disclosed stake rather than inheritance or family transfer. The broader value is used because public sources do not establish the financing, family capital or starting platform needed for either self-made subtype.",
     "Operator reflects Theoklitos's continuing chief-executive mandate and active shareholder role. It does not imply that every element of his private wealth is tied to The Mart.",
@@ -487,6 +503,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Terminal resolved-person dossier. Strong corporate and banking sources resolve Leonidas Theoklitos at 96, support March 1961, establish the current The Mart chief-executive role and supply a durable 51-word biography plus an independent 111-word long profile. Wealth classifies as Unknown, Food & Beverage, Self-made and Operator; Banking is the single useful active tag, and no personal social is proposed. Nothing has been compiled or applied."
+    "notes": "Terminal resolved-person dossier. Strong corporate and banking sources resolve Leonidas Theoklitos at 96, support March 1961, establish the current The Mart chief-executive role and supply a durable 51-word biography plus an independent 111-word long profile. Under the amended reasonable-inference policy, wealth classifies as Food & Beverage for both creation and current industry, Self-made and Operator; the creation-sector materiality inference is capped at 84 because acquisition financing remains undisclosed. Banking is the single useful active tag, and no personal social is proposed. Nothing has been compiled or applied."
   }
 }

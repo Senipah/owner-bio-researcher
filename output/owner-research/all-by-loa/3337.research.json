@@ -155,19 +155,20 @@
     }
   },
   "wealth_creation_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Patricia has documented interests in both family banking and real estate, but the public record reviewed does not establish which sector created the principal family wealth transferred to or accumulated by her.",
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "Real estate is the best-supported creation sector because the family property platform dates to 1968, Patricia holds a documented beneficial interest in its parent and the family's acquisition of bank control occurred later, in 2000.",
     "confidence": {
-      "score": 82,
+      "score": 80,
       "band": "medium",
-      "reason": "Regulatory and ownership records establish Patricia's separate connections to both sectors. They do not trace the original fortune, quantify the relative contributions or show which interest principally funded the other, so Diversified would overstate incomplete evidence."
+      "reason": "The official company history and municipal ownership disclosure converge on a longstanding property platform tied to Patricia's current beneficial interest, while the bank-control record is later. Confidence is capped because neither a family balance sheet nor the original capitalization of the property business is public."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S6"
+      "S6",
+      "S10"
     ]
   },
   "primary_industry": {
@@ -187,18 +188,20 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "A family trust and joint bank-control records establish access to family-business wealth, but not whether Patricia's principal interests were inherited, purchased, gifted or otherwise transferred.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Family transfer is inferred from Patricia's beneficial interest through a family trust in a pre-existing family property platform, combined with her current operating role in the same businesses. The precise legal route is not public and inheritance is not asserted.",
     "confidence": {
-      "score": 84,
+      "score": 82,
       "band": "medium",
-      "reason": "The records identify Patricia as beneficiary of a distinct family trust and as an approved bank co-controller, but none reviewed states how she acquired the underlying interests. Her long operating career does not by itself prove inheritance or material expansion of inherited assets."
+      "reason": "A municipal disclosure directly identifies a Patricia Halikias family trust, Patricia as its beneficiary and a 13.59 percent interest in the property group's parent; corporate and independent records establish the pre-existing family platform and her continuing operating role. The score is capped because the trust instrument and transfer mechanism are not public."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S3"
+      "S3",
+      "S6",
+      "S10"
     ]
   },
   "wealth_relationship": {
@@ -347,37 +350,7 @@
       ]
     }
   ],
-  "candidates_requiring_review": [
-    {
-      "candidate_type": "wealth_classification",
-      "field": "wealth_creation_industry",
-      "candidate_value": "Diversified",
-      "confidence": {
-        "score": 78,
-        "band": "high",
-        "reason": "Patricia has documented family ownership in both banking and real estate, but the evidence does not establish that both sectors materially created her principal wealth or that neither dominates."
-      },
-      "source_ids": [
-        "S1",
-        "S2",
-        "S3"
-      ]
-    },
-    {
-      "candidate_type": "wealth_classification",
-      "field": "wealth_origin",
-      "candidate_value": "Inherited and expanded",
-      "confidence": {
-        "score": 68,
-        "band": "medium",
-        "reason": "A distinct family trust and a long operating career make this plausible, but no reviewed source establishes inheritance or measures a material expansion attributable to Patricia."
-      },
-      "source_ids": [
-        "S2",
-        "S3"
-      ]
-    }
-  ],
+  "candidates_requiring_review": [],
   "sources": [
     {
       "id": "S1",
@@ -498,6 +471,19 @@
         "Inter-Continental Real Estate & Development affiliation",
         "Candidate LinkedIn social profile"
       ]
+    },
+    {
+      "id": "S10",
+      "url": "https://icred.com/component/content/?view=featured",
+      "title": "About Us",
+      "publisher": "Inter-Continental Real Estate & Development Corporation",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "The family company platform was founded in 1968",
+        "Real estate and development as a principal longstanding activity",
+        "The family-company platform also includes banking and financial services"
+      ]
     }
   ],
   "uncertainties": [
@@ -519,7 +505,11 @@
     },
     {
       "topic": "Wealth origin",
-      "detail": "The family trust and joint-control record show a family-business wealth platform, but not whether Patricia's interests were inherited, purchased, gifted or settled during life. Wealth origin remains Unknown, and her operating roles are not treated as proof of inherited-and-expanded wealth."
+      "detail": "Marriage / family transfer is inferred at medium confidence because Patricia is the named beneficiary of a family trust holding 13.59% of the pre-existing property group's parent and she continues to operate within that family platform. The precise transfer instrument is not public, so the dossier does not claim inheritance; Inherited and expanded is rejected because neither inheritance nor Patricia's material expansion of an inherited core is established."
+    },
+    {
+      "topic": "Wealth creation industry",
+      "detail": "Real Estate is supported as the originating sector by the property company's 1968 inception, Patricia's beneficial interest in its parent and the later 2000 acquisition of family bank control. Diversified is rejected because the record does not show banking and real estate making comparably material contributions to the transferred wealth."
     },
     {
       "topic": "Current primary industry",
@@ -540,6 +530,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Identity, current real-estate focus, operator relationship and the boundaries among Patricia's interest, Aristotle's roles and entity assets are well supported. Wealth creation industry and origin remain Unknown because the reviewed sources do not establish a dominant originating sector or acquisition mechanism. Nothing has been compiled, approved or applied.\n\nOwner-tag consolidation research context: [1] Architecture-services executive: Halikias-Denos heads Tech Metra's architectural business without the dossier establishing that she personally practises as a licensed architect. [2] Bank director: Halikias-Denos has held a board seat at Republic Bank of Chicago alongside her ownership role. [3] Bank vice-chair: Independent reporting identifies Halikias-Denos as vice chairwoman of Republic Bank of Chicago. [4] Bank-and-real-estate dual career: Halikias-Denos has maintained parallel ownership and governance responsibility in banking and operating leadership in real estate. [5] Family trust ownership: A separately named family trust for Halikias-Denos's benefit holds an interest in Odyssey Holdings, the property company's parent. [6] ICRED: ICRED is the family property-development business in which Halikias-Denos has served as vice president and operator. [7] Intercontinental International REIC: Halikias-Denos served as board vice chairman and investment-committee member of Intercontinental International REIC. [8] Joint family bank control: Patricia, Aristotle and Terry Halikias jointly received regulatory approval to acquire control of Republic Bank of Chicago. [9] Listed real-estate company vice-chair: Halikias-Denos held the board vice-chair role at listed Intercontinental International REIC. [10] Odyssey Holdings: Odyssey Holdings is the parent of the family property company in which a trust for Halikias-Denos's benefit holds a disclosed interest. [11] Property management: Halikias-Denos remains a manager of family-related property entities in addition to her development-company offices. [12] Real estate company director: Halikias-Denos has served as board vice chairman and investment-committee member of a listed real-estate investment company. [13] Real estate executive: Halikias-Denos combines presidency of Tech Metra with vice-presidential and management roles across family property companies. [14] Real estate investing: Property investment and investment review are durable parts of Halikias-Denos's business record alongside development and management. [15] Real estate investor: Halikias-Denos combines investment review with a separately documented beneficial interest in the family property holding structure. [16] Real-estate investment committee member: Halikias-Denos participated in formal property-investment review as a member of Intercontinental International REIC's investment committee. [17] Real-estate owner-operator: Halikias-Denos holds a beneficial property-group interest while actively managing related development and property entities. [18] Republic Bank of Chicago: Republic Bank of Chicago is the family-owned bank in which Halikias-Denos has held control and board responsibility. [19] Tech Metra: Tech Metra is the architecture and development business Halikias-Denos has led as president. [20] Trust beneficiary: A municipal ownership disclosure directly names Halikias-Denos as beneficiary of a distinct family trust holding an Odyssey interest. [21] Trust-held beneficial ownership: Halikias-Denos's property-group interest is documented as beneficial ownership held through a trust rather than direct title to company assets."
+    "notes": "Under the amended reasonable-inference policy, the previously Unknown fields are resolved as Real Estate and Marriage / family transfer. The property platform predates Patricia's career and the family's later bank-control acquisition, while a municipal disclosure directly identifies her as beneficiary of a trust holding 13.59% of the property group's parent. The classification records supported family transfer without asserting inheritance or a precise legal instrument. Identity, current real-estate focus, operator relationship and the boundaries among Patricia's interest, Aristotle's roles and entity assets remain well supported. Nothing has been compiled, approved or applied.\n\nOwner-tag consolidation research context: [1] Architecture-services executive: Halikias-Denos heads Tech Metra's architectural business without the dossier establishing that she personally practises as a licensed architect. [2] Bank director: Halikias-Denos has held a board seat at Republic Bank of Chicago alongside her ownership role. [3] Bank vice-chair: Independent reporting identifies Halikias-Denos as vice chairwoman of Republic Bank of Chicago. [4] Bank-and-real-estate dual career: Halikias-Denos has maintained parallel ownership and governance responsibility in banking and operating leadership in real estate. [5] Family trust ownership: A separately named family trust for Halikias-Denos's benefit holds an interest in Odyssey Holdings, the property company's parent. [6] ICRED: ICRED is the family property-development business in which Halikias-Denos has served as vice president and operator. [7] Intercontinental International REIC: Halikias-Denos served as board vice chairman and investment-committee member of Intercontinental International REIC. [8] Joint family bank control: Patricia, Aristotle and Terry Halikias jointly received regulatory approval to acquire control of Republic Bank of Chicago. [9] Listed real-estate company vice-chair: Halikias-Denos held the board vice-chair role at listed Intercontinental International REIC. [10] Odyssey Holdings: Odyssey Holdings is the parent of the family property company in which a trust for Halikias-Denos's benefit holds a disclosed interest. [11] Property management: Halikias-Denos remains a manager of family-related property entities in addition to her development-company offices. [12] Real estate company director: Halikias-Denos has served as board vice chairman and investment-committee member of a listed real-estate investment company. [13] Real estate executive: Halikias-Denos combines presidency of Tech Metra with vice-presidential and management roles across family property companies. [14] Real estate investing: Property investment and investment review are durable parts of Halikias-Denos's business record alongside development and management. [15] Real estate investor: Halikias-Denos combines investment review with a separately documented beneficial interest in the family property holding structure. [16] Real-estate investment committee member: Halikias-Denos participated in formal property-investment review as a member of Intercontinental International REIC's investment committee. [17] Real-estate owner-operator: Halikias-Denos holds a beneficial property-group interest while actively managing related development and property entities. [18] Republic Bank of Chicago: Republic Bank of Chicago is the family-owned bank in which Halikias-Denos has held control and board responsibility. [19] Tech Metra: Tech Metra is the architecture and development business Halikias-Denos has led as president. [20] Trust beneficiary: A municipal ownership disclosure directly names Halikias-Denos as beneficiary of a distinct family trust holding an Odyssey interest. [21] Trust-held beneficial ownership: Halikias-Denos's property-group interest is documented as beneficial ownership held through a trust rather than direct title to company assets."
   }
 }

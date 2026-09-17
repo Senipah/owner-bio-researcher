@@ -156,65 +156,75 @@
   "wealth_creation_industry": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Public records establish roles across design, communications, investment, property and hospitality, but do not identify which personally owned asset, if any, created Vargas's wealth.",
+    "summary": "Real estate is the strongest alternative because Vargas has managed an Austrian property company since 2009 and was documented as a shareholder of its holding company in 2021, but the record does not establish that this platform created his original fortune.",
     "confidence": {
-      "score": 98,
-      "band": "very_high",
-      "reason": "The records show a majority interest in a small earlier consultancy and later management or board roles, but they provide no personal wealth breakdown or evidence that one documented business produced his principal capital. Professional activity cannot substitute for a personal wealth mechanism."
+      "score": 92,
+      "band": "high",
+      "reason": "The ownership-and-management chain supports a material current real-estate interest, while earlier records show a family-company stake and a majority-owned consultancy. No reliable evidence identifies which activity generated the principal capital or connects sale proceeds, distributions or asset appreciation to Vargas personally, so no creation sector reaches 70."
     },
     "source_ids": [
       "S1",
       "S2",
       "S5",
-      "S6"
+      "S6",
+      "S7",
+      "S8",
+      "S10"
     ]
   },
   "primary_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Real estate is Vargas's strongest current operating field, but the industry underpinning his present personal wealth is not publicly established.",
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "Real estate is inferred as Vargas's current primary industry from his documented shareholding in Lusitanahof and that company's current ownership of Hinterthal Development, the Austrian property business he has managed since 2009.",
     "confidence": {
-      "score": 98,
-      "band": "very_high",
-      "reason": "Austrian records establish current management of a property company and show links among property and hospitality entities. They identify Lusitanahof Limited, not Vargas personally, as Hinterthal Development's shareholder and do not disclose his personal holdings or dominant private asset."
+      "score": 74,
+      "band": "medium",
+      "reason": "The Malta record supplies the missing personal link by naming Vargas as Lusitanahof's shareholder, and current Austrian records show Lusitanahof owning Hinterthal Development and participating in related property and hospitality entities. Confidence is capped because the personal shareholding evidence dates from 2021 and no current beneficial-ownership percentage or wider portfolio breakdown is public."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S4"
+      "S4",
+      "S7",
+      "S9"
     ]
   },
   "wealth_origin": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Reliable public evidence does not establish whether Vargas's personal capital was self-created, inherited, transferred or obtained through another mechanism.",
+    "summary": "Family transfer and self-made activity are both plausible: Vargas held a stake in his father's family company while young and later owned and managed separate businesses, but neither mechanism is shown to be the material source of his principal wealth.",
     "confidence": {
-      "score": 99,
-      "band": "very_high",
-      "reason": "The reviewed records document individual company roles but no family transfer, inheritance, founding economics, sale proceeds or other traceable origin for a principal personal fortune. No relationship or wealth transfer is inferred from surnames."
+      "score": 94,
+      "band": "high",
+      "reason": "An official 1989 record shows Vargas already held a quota in Domotel, founded by his father with his children, while later records establish a majority-owned consultancy and a personal holding-company interest. They do not establish that the family stake was transferred rather than subscribed, remained valuable, funded later ventures or materially contributed to his present wealth; nor do they prove a founder-built principal fortune."
     },
     "source_ids": [
       "S1",
       "S2",
       "S5",
-      "S6"
+      "S6",
+      "S7",
+      "S8",
+      "S10"
     ]
   },
   "wealth_relationship": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Vargas is a documented manager, director and former majority shareholder, but his relationship to any principal personal wealth-producing asset is not established.",
+    "classification": "operator",
+    "label": "Operator",
+    "summary": "Vargas is the long-serving operator of Hinterthal Development, the Austrian property company currently owned by Lusitanahof, in which he was documented as a shareholder in 2021.",
     "confidence": {
-      "score": 98,
-      "band": "very_high",
-      "reason": "The Austrian company is currently held by another legal entity, the Luxembourg record establishes a directorship rather than ownership, and the earlier Portuguese majority interest is not shown to be his main wealth source. Assigning founder, operator, investor or heir would therefore exceed the evidence."
+      "score": 76,
+      "band": "medium",
+      "reason": "Official Austrian records directly establish Vargas's continuous management and representation of the core property company since 2009, while the Malta record links him economically to its current holding company. Operator is better supported than Investor, Founder or Heir; confidence remains capped because the personal shareholding record is not current and the full asset structure is undisclosed."
     },
     "source_ids": [
       "S1",
       "S2",
-      "S5",
-      "S6"
+      "S3",
+      "S4",
+      "S7",
+      "S9"
     ]
   },
   "biography": {
@@ -550,16 +560,74 @@
         "Design and communications consultancy business",
         "Advertising, marketing and image-development activities"
       ]
+    },
+    {
+      "id": "S7",
+      "url": "https://mlt.databasesets.com/company-all/company/102262",
+      "title": "Lusitanahof Limited company record",
+      "publisher": "Malta Company Directory",
+      "tier": 3,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Lusitanahof Limited as Malta company C 99116",
+        "Joao Miguel Cunha de Brito Vargas as documented shareholder in 2021",
+        "Marijke Elizabeth Mars as documented director in 2021",
+        "Personal economic link between Vargas and the holding company named in current Austrian records"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://files.diariodarepublica.pt/gratuitos/3s/1989/09/1989d210s000.pdf",
+      "title": "DOMOTEL — Máquinas e Produtos de Limpeza, Lda capital increase",
+      "publisher": "Diário da República",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "João Miguel Cunha Brito Vargas as an existing shareholder of Domotel in 1989",
+        "Domotel's 1986 establishment with shares held by João de Brito Vargas and his children",
+        "Family-company platform predating Vargas's later independent business roles",
+        "No disclosed transfer instrument or evidence that the family-company stake became his principal wealth source"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://lei.bloomberg.com/leis/view/529900S0WY0CVPF04M50",
+      "title": "Lusitanahof Ltd. legal-entity record",
+      "publisher": "Bloomberg LEI",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Lusitanahof Ltd. as an active Malta private limited company",
+        "Malta Business Registry entity number C 99116 matching the shareholder record",
+        "Current registry validation of the holding company's legal identity"
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_de_Brito_Vargas",
+      "title": "João de Brito Vargas",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "João de Brito Vargas as founder of Domotel with his children",
+        "Family relationship context corroborating the official Domotel shareholder record",
+        "Orientation only; no claim that Domotel materially created João Miguel Vargas's present wealth"
+      ]
     }
   ],
   "uncertainties": [
     {
       "topic": "Personal wealth mechanism",
-      "detail": "The public record documents business ownership, directorship and management but does not identify a principal personal wealth-producing asset, disclose the economic value of his interests or trace the origin of his capital. All four wealth classifications therefore remain Unknown."
+      "detail": "The amended-policy review resolves Primary Industry to Real Estate and Wealth Relationship to Operator from Vargas's holding-company shareholding and long-running management of the downstream property platform. Wealth Creation Industry and Wealth Origin remain Unknown because the evidence does not identify the activity that produced his original capital or establish whether the early family-company stake materially contributed to later wealth."
     },
     {
       "topic": "Hinterthal and Lusitanahof ownership",
-      "detail": "Vargas manages Hinterthal Development, while the Austrian register names Lusitanahof Limited as the company's shareholder. Other records show Lusitanahof participating in local property and hospitality businesses, but no reviewed public source establishes Vargas's beneficial ownership of Lusitanahof. Company assets are not treated as his personal property."
+      "detail": "Vargas manages Hinterthal Development, while the current Austrian register names Lusitanahof Limited as its shareholder. A Malta company-directory record names Vargas as a Lusitanahof shareholder in 2021, creating a positive personal economic link to the property platform. Because no current percentage or beneficial-owner filing was available, the Real Estate and Operator classifications are capped at medium confidence and company assets are not attributed directly to him."
+    },
+    {
+      "topic": "Family-company origin",
+      "detail": "An official 1989 record shows Vargas as one of the children already holding a quota in Domotel, established in 1986 with their father as the largest family shareholder. That family platform makes Marriage / family transfer the strongest origin alternative, but the precise acquisition route, later ownership, value and material connection to Vargas's current wealth are all unestablished, so Wealth Origin remains Unknown rather than asserting a transfer."
     },
     {
       "topic": "Name structure",
@@ -584,6 +652,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Identity is resolved at 98 through exact-name, birth-date and Portuguese-geography matches across state and current company records. Canonical name, birth details, professional title and biographies clear the 70 acceptance threshold. The dossier preserves all four wealth classifications as Unknown because management, directorship and earlier company ownership do not establish a principal personal wealth asset or its origin. No social is proposed, and nothing has been compiled or applied.\n\nOwner-tag consolidation research context: [1] Advertising entrepreneur: Vargas was the majority owner of a private Lisbon design, communications, advertising and marketing consultancy. [2] Alpine real estate: Vargas's most durable current public role is managing an Austrian company whose assets and interests centre on Alpine property and hospitality. [3] Cross-border private-company director: Vargas's documented career combines representation, accounts responsibility and board administration across private companies in Portugal, Austria and Luxembourg. [4] Design and communications consultancy: Vargas's earlier majority-owned Lisbon company combined design, communications, advertising, marketing and image-development services. [5] Hinterthal Development: Hinterthal Development is the Austrian Alpine property company that Vargas has jointly managed and represented since 2009. [6] Private-company controlling shareholder: Vargas held a documented majority interest in the privately held SCROLL design and communications consultancy in 2004. [7] Property management: Vargas has jointly managed Hinterthal Development's Alpine real-estate interests since 2009 and signs its annual financial statements. [8] Real estate company director: Vargas has served as managing director and legal representative of Hinterthal Development since January 2009."
+    "notes": "Amended HNWI audit: a 2021 Malta company record identifies Vargas as a shareholder of Lusitanahof, while current Austrian records identify Lusitanahof as owner of Hinterthal Development and Vargas as its manager since 2009. This positive ownership-and-operation chain resolves Primary Industry to Real Estate and Wealth Relationship to Operator at medium confidence. Wealth Creation Industry remains Unknown because no evidence shows which documented activity generated his original capital. Wealth Origin remains Unknown because an early stake in his father's family company is documented but its transfer route, later value and material connection to his current wealth are not. Identity remains resolved at 98, biographies and unrelated proposals are preserved, no social is newly proposed, and nothing has been compiled or applied.\n\nOwner-tag consolidation research context: [1] Advertising entrepreneur: Vargas was the majority owner of a private Lisbon design, communications, advertising and marketing consultancy. [2] Alpine real estate: Vargas's most durable current public role is managing an Austrian company whose assets and interests centre on Alpine property and hospitality. [3] Cross-border private-company director: Vargas's documented career combines representation, accounts responsibility and board administration across private companies in Portugal, Austria and Luxembourg. [4] Design and communications consultancy: Vargas's earlier majority-owned Lisbon company combined design, communications, advertising, marketing and image-development services. [5] Hinterthal Development: Hinterthal Development is the Austrian Alpine property company that Vargas has jointly managed and represented since 2009. [6] Private-company controlling shareholder: Vargas held a documented majority interest in the privately held SCROLL design and communications consultancy in 2004. [7] Property management: Vargas has jointly managed Hinterthal Development's Alpine real-estate interests since 2009 and signs its annual financial statements. [8] Real estate company director: Vargas has served as managing director and legal representative of Hinterthal Development since January 2009."
   }
 }

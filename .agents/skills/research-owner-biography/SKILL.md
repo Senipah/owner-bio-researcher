@@ -195,6 +195,60 @@ corpus as a separate operation. Rebuild GPT Knowledge after any approved
 catalogue change.
 Do not let parallel agents edit the shared owner dataset.
 
+## Existing-dossier wealth-classification audit
+
+For an explicitly authorised whole-corpus HNWI backfill, initialise the
+resumable review queue with:
+
+```powershell
+.\venv\Scripts\python.exe `
+  .agents\skills\research-owner-biography\scripts\audit_wealth_classification_corpus.py `
+  --bootstrap
+```
+
+The generated working state is ignored under
+`output/owner-research/wealth-classification-audit/`. It inventories every
+current dossier, automatically closes records with no `Unknown` and treats
+non-person records as not applicable to personal HNWI inference. Each person
+dossier that retains one or more `Unknown` fields requires a `reviewed`,
+SHA-256-bound checkpoint covering exactly those current fields. For every
+retained `Unknown`, record the strongest alternative, direct-evidence check,
+permitted-inference check, less-specific-value check, silence guardrail,
+substantive reason and existing dossier source IDs.
+
+Use one owner per research agent and one dossier per edit. Agents may change
+only that dossier's four HNWI objects and directly related uncertainty,
+candidate, proposal or review-note material. The main agent validates every
+changed dossier against the immutable owner input, checks cross-owner
+consistency, owns checkpoints and reruns the audit after each tranche. A stale
+dossier hash invalidates the checkpoint. The auditor flags the mandatory
+primary-industry origin-sector fallback and prioritises founder-built, family
+shareholder and all-four-unknown cases; priority is not itself a decision.
+
+After the main agent has manually reviewed and accepted a dossier that still
+retains `Unknown`, record that completed judgment without hand-editing the
+working-state JSON. Repeat the flag once per audited person; this command does
+not perform research or decide that `Unknown` should be retained:
+
+```powershell
+.\venv\Scripts\python.exe `
+  .agents\skills\research-owner-biography\scripts\audit_wealth_classification_corpus.py `
+  --review-retained 123 --review-retained 456
+```
+
+Completion requires a clean strict report:
+
+```powershell
+.\venv\Scripts\python.exe `
+  .agents\skills\research-owner-biography\scripts\audit_wealth_classification_corpus.py `
+  --strict
+```
+
+Do not treat zero remaining `Unknown` values as the goal. Retain `Unknown`
+when the amended policy still cannot support another value at confidence 70,
+but require the terminal checkpoint to prove that direct evidence, permitted
+inference and a less-specific classification were all considered.
+
 ## Existing-dossier tag migration
 
 For an explicitly authorised tag-only migration or refresh of a completed
@@ -461,6 +515,9 @@ suppression without calling the tag publishable or approved.
 - For batches, run `scripts/audit_biography_corpus.py --strict` and revise
   repeated opening modes, origin-story leads, narrative shapes, paragraph-two
   transitions, stock phrases, and synthetic conclusions.
+- For a whole-corpus HNWI backfill, require
+  `scripts/audit_wealth_classification_corpus.py --strict` to report no pending,
+  invalid or stale person reviews and no unapplied origin-sector fallback.
 - For skill revisions, validate the schema-v8 Shahid Khan calibration dossier,
   confirm schema v9 and owner-level `tag_candidates` are rejected, and compare
   the result against every archetype in the calibration set.

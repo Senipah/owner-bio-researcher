@@ -182,13 +182,13 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Schwarz-Schütte held a material ownership position in the pharmaceutical company founded by his father and grandfather and expanded it through leadership and a public listing, but the acquisition mechanism for those shares is not documented.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Schwarz-Schütte succeeded into leadership of the pharmaceutical company founded and controlled by his father and grandfather, and he personally held a material stake alongside his father, sister and cousins when the family sold its controlling block. This supports a family transfer of the core wealth-producing interest. The precise legal route is not public, so the classification does not assert inheritance.",
     "confidence": {
-      "score": 93,
-      "band": "high",
-      "reason": "The family-business interview states that the essential shares were held by Schwarz-Schütte, his sister, father and cousins, while his father remained alive until years after the sale. It does not establish whether Patrick acquired the stake by gift, purchase, subscription or another mechanism. Family membership plus a documented stake and succession is not sufficient to infer an inter vivos transfer."
+      "score": 84,
+      "band": "medium",
+      "reason": "Reliable sources converge on the established family platform, Patrick's succession from his father into executive control and his personal material shareholding in the family sale. The amended family-succession rule permits a bounded family-transfer inference when the instrument is undisclosed; confidence remains below high because gift, purchase, subscription and inheritance are not distinguished."
     },
     "source_ids": [
       "S2",
@@ -748,7 +748,7 @@
     },
     {
       "topic": "Wealth origin",
-      "detail": "The pharmaceutical company was founded by Schwarz-Schütte's father and grandfather, and a detailed family-business interview states that Patrick held essential shares alongside his father, sister and cousins. It does not document how he obtained those shares, so wealth origin remains Unknown; his substantial operating expansion is preserved in the summary and biography."
+      "detail": "The pharmaceutical company was founded and controlled by Schwarz-Schütte's father and grandfather; Patrick succeeded into executive control and held essential shares alongside his father, sister and cousins when the family sold its controlling block. Under the amended succession rule, this convergent evidence supports Marriage / family transfer at medium confidence even though the legal instrument is undisclosed. Inherited and Inherited and expanded are rejected because inheritance itself is not documented. Mixed is rejected because Black Horse redeployed the same sale proceeds rather than establishing an independently material second origin mechanism."
     },
     {
       "topic": "Current industry",
@@ -777,6 +777,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Terminal resolved-person dossier. Patrick Schwarz Schutte is resolved at 100 to Patrick Anton Walther Schwarz-Schütte, the German former Schwarz Pharma chief executive and Black Horse family-office principal born in 1956. The dossier corrects the compound surname and middle-name parsing, updates residence country from Germany to Switzerland based on a 2026 registry filing, and fills nationality, gender, birthplace, birth date, known-for and biography fields. Wealth is classified Healthcare, Real Estate, Unknown and Family office principal because the family-share acquisition mechanism is not documented. It proposes the exact Wikipedia social and only Pharmaceuticals and Property developer tags."
+    "notes": "Amended-policy audit on 2026-09-17 resolved wealth_origin from Unknown to Marriage / family transfer at medium confidence. The established family platform, succession from his father into executive control and documented personal stake in the family sale satisfy the reasonable-inference rule; the classification does not claim inheritance because the legal transfer instrument is not public. Healthcare, Real Estate and Family office principal were preserved, as were all biography and unrelated fields. Strict validation passed without errors or warnings; no live changes were applied."
   }
 }

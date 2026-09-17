@@ -178,15 +178,17 @@
   "wealth_origin": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Public records establish Cesan's current control but do not show whether she founded, purchased, inherited or otherwise received the Sonomatic interest.",
+    "summary": "Public records establish Cesan's current control and a coordinated same-date change from Raul Elbio Cesan, but they do not document a family relationship, consideration, inheritance, gift or other mechanism for her interest.",
     "confidence": {
-      "score": 99,
+      "score": 96,
       "band": "very_high",
-      "reason": "The register shows a prior controller ceasing and Cesan becoming the controller on the same date in March 2024, but it does not state the legal consideration, family relationship, inheritance, gift or other transfer mechanism. No strong source reviewed supplies the missing origin evidence, so Unknown is the only supported classification."
+      "reason": "Companies House records Raul Elbio Cesan's cessation and Beatriz Cesan's notification and control-detail change on 14 March 2024, establishing a coordinated change in control and Beatriz's material 75% or greater economic interest. The filings do not identify their relationship or the transaction mechanism. Independent public biographical evidence names Liliana, not Beatriz, as Raul's spouse, and no reliable source establishes another family relationship. Marriage or family transfer is therefore the strongest alternative but remains below the 70-point acceptance threshold."
     },
     "source_ids": [
       "S4",
-      "S6"
+      "S6",
+      "S8",
+      "S9"
     ]
   },
   "wealth_relationship": {
@@ -380,6 +382,32 @@
         "in-house development of equipment, software and robotics",
         "official website and Warrington contact address"
       ]
+    },
+    {
+      "id": "S8",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04900658/filing-history",
+      "title": "Sonomatic Limited filing history",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "same-date 14 March 2024 filing of Raul Elbio Cesan's control cessation",
+        "same-date notification and control-detail change for Beatriz Cesan",
+        "absence of a stated relationship, consideration, inheritance, gift or other transfer mechanism in the filing descriptions"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://goprincetontigers.com/sports/field-hockey/roster/michelle-cesan/8783",
+      "title": "Michelle Cesan - Field Hockey",
+      "publisher": "Princeton University Athletics",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Michelle Cesan is identified as the daughter of Liliana and Raul Cesan",
+        "Alex and Esteban are identified among their children",
+        "public biographical evidence names Liliana rather than Beatriz as Raul's spouse and co-parent"
+      ]
     }
   ],
   "uncertainties": [
@@ -393,7 +421,7 @@
     },
     {
       "topic": "Wealth origin and related people",
-      "detail": "Raul Elbio Cesan ceased as Sonomatic's controller on the same date that Beatriz Cesan became controller, and several active directors share the Cesan surname. Reviewed strong sources do not establish marriage, parentage, inheritance, consideration or another transfer mechanism. No relationship is inferred, no other person's career is transferred to Beatriz, and wealth origin remains Unknown."
+      "detail": "Companies House records Raul Elbio Cesan's cessation and Beatriz Cesan's notification and control-detail change on 14 March 2024, supporting a coordinated control transition but not its legal or economic mechanism. Princeton's biography of Michelle Cesan identifies Liliana and Raul as her parents and names Alex and Esteban as siblings, which weighs against treating Beatriz as Raul's spouse but does not establish what other relationship, if any, exists. Shared surname, same-date filings and Cesan-named directors are insufficient to prove kinship. Marriage or family transfer is the strongest alternative but stays below threshold; wealth origin remains Unknown."
     },
     {
       "topic": "Industry and current asset mix",
@@ -418,6 +446,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Person 3213 is resolved with very high confidence as Argentine Sonomatic controller Beatriz Yolanda Cesan through an independently verified exact-name corporate record matching nationality, residence and May 1952 birth details. Service is supported for both industry dimensions. Wealth origin remains Unknown because the 2024 control transition has no disclosed mechanism, and Passive asset owner reflects decisive ownership without a documented operating office. Known-for title, a 54-word biography and Sonomatic's official Company Website are proposed. No active approved tag satisfies its semantic contract on the available passive-owner evidence. The 117-word long biography uses exactly two paragraphs. Nothing has been compiled, approved or applied."
+    "notes": "Person 3213 is resolved with very high confidence as Argentine Sonomatic controller Beatriz Yolanda Cesan through an independently verified exact-name corporate record matching nationality, residence and May 1952 birth details. Service is supported for both industry dimensions. The amended origin audit retains Unknown: the 2024 filings establish a coordinated control change and her material ownership, but no reliable source documents a family relationship with Raul Elbio Cesan or the transfer mechanism. Public biographical evidence identifies Liliana as Raul's spouse; it does not establish Beatriz's relationship to him. Marriage or family transfer is the strongest alternative but remains below the 70-point threshold. Passive asset owner reflects decisive ownership without a documented operating office. Known-for title, a 54-word biography and Sonomatic's official Company Website are proposed. No active approved tag satisfies its semantic contract on the available passive-owner evidence. The 117-word long biography uses exactly two paragraphs. Nothing has been compiled, approved or applied."
   }
 }

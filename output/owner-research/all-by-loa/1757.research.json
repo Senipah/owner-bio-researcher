@@ -179,18 +179,19 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Public records establish Poullain's property-company roles but not whether the underlying capital was self-created, inherited or transferred through a family mechanism.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Family transfer is inferred from Poullain's succession to his father Yvon in established property companies and his continuing manager-partner interests in the same network. The succession followed Yvon's death, but the public record does not identify the legal transfer instrument, so the classification does not assert inheritance.",
     "confidence": {
-      "score": 96,
-      "band": "very_high",
-      "reason": "Commercial notices show that Poullain assumed management of several pre-existing property companies after Yvon Poullain's death and shares other companies with Danielle Schoenlaub, known as Poullain. They do not prove the family relationships, ownership percentages, inheritance terms, financing or source of the principal capital. Choosing self-made, inherited or family-transfer status would therefore require an unsupported inference."
+      "score": 81,
+      "band": "medium",
+      "reason": "A Musée des Arts Décoratifs report explicitly identifies Yvon Poullain as Edouard's father. Registry and BODACC records show Edouard becoming manager and partner of pre-existing property vehicles after Yvon's 2011 death, while current records identify him as manager or unlimited-liability partner across the same property network. Those facts satisfy the amended family-platform, succession and current-economic-interest premises. The precise legal route and ownership percentages remain undisclosed, capping confidence below 85 and precluding an inherited label."
     },
     "source_ids": [
       "S3",
       "S5",
-      "S6"
+      "S6",
+      "S13"
     ]
   },
   "wealth_relationship": {
@@ -561,6 +562,19 @@
         "Edouard Poullain as publication manager",
         "Official Company Website verification"
       ]
+    },
+    {
+      "id": "S13",
+      "url": "https://madparis.fr/IMG/pdf/ra_ad_26-06.pdf",
+      "title": "Musée des Arts Décoratifs activity report",
+      "publisher": "Musée des Arts Décoratifs",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Edouard Poullain's gift of a sculpture in memory of his father Yvon Poullain",
+        "Explicit father-son relationship between Edouard and Yvon Poullain",
+        "Yvon Poullain's 1943-2011 life dates, aligning the 2011 company-succession chronology"
+      ]
     }
   ],
   "uncertainties": [
@@ -570,7 +584,7 @@
     "October 1966 is reported in multiple French registry-derived executive profiles and independently fits the input age of 53 on 7 May 2020. The public registry suppresses the exact day, so birth_day remains unproposed.",
     "The yacht-company legal notice and official company records provide an exact address and direct contact details, but these are used only as collision anchors and are excluded from biographies and proposals. No private residential address is reproduced.",
     "Real Estate is both the wealth-creation and primary industry because the sustained business record is dominated by property acquisition, holding, rental, management and trading companies. The creation classification is lower-confidence than the primary classification because public records do not disclose personal asset values or the original capital source.",
-    "Wealth origin is Unknown. Edouard succeeded a deceased Yvon Poullain at several property companies and shares mandates with Danielle Schoenlaub, known as Poullain, but company records do not prove the family relationships, inheritance, equity transfers or financing. No inherited, family-transfer or self-made classification is inferred from surnames and chronology alone.",
+    "The amended reasonable-inference audit resolves Wealth Origin to Marriage / family transfer at medium confidence. A Musée des Arts Décoratifs report explicitly identifies Yvon Poullain as Edouard's father; commercial records show Edouard succeeding the deceased Yvon as manager and partner of pre-existing property companies and retaining current manager-partner interests across the same network. This positive convergence supplies the family-platform, succession and current-economic-interest premises. Because the precise legal transfer instrument and ownership percentages are not public, the classification records inferred family succession rather than inheritance. Inherited variants lack an explicit inheritance; broad Self-made would disregard the transferred family platform; Mixed lacks a separately built origin mechanism shown to be independently material.",
     "Operator is supported by recurring gérant, associé-gérant and president roles across the current property network. Founder is not used because several core companies pre-date his management and the evidence does not show that he created the original platform.",
     "Competitive sailing is the only approved active tag proposed. Multi-year official results and current owner-restorer evidence satisfy the catalogue's sustained ownership and competitive-identity rule. Property developer and real-estate specialist tags are not used because the records establish property management and holding, not a sufficiently specific development or institutional-investment mandate.",
     "The Black Swan 1899 site is proposed as Company Website because its legal notice identifies Poullain as publication manager and matches the exact registered company. It is not treated as a personal website or as evidence that yacht chartering created his principal wealth.",
@@ -580,6 +594,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Terminal resolved-person dossier. Identity confidence is 100 through the official Black Swan owner statement, exact 40.2-metre match, BLACK SWAN 1899 SIRET, shared Paris company address, French registry profile and October 2017 company/relationship timing. The proposed full name is Edouard Romuald Yvon Poullain; official sources consistently leave Edouard unaccented. Wealth is classified Real Estate, Real Estate, Unknown and Operator. October 1966 birth details, manager title, 52-word biography and official company website are proposed. Competitive sailing is the minimum useful approved active tag with complete semantic metadata. The two-paragraph long biography describes the property-company platform without personal-asset context. Nothing has been compiled or applied."
+    "notes": "Terminal resolved-person dossier. Identity confidence is 100 through the official Black Swan owner statement, exact 40.2-metre match, BLACK SWAN 1899 SIRET, shared Paris company address, French registry profile and October 2017 company/relationship timing. The proposed full name is Edouard Romuald Yvon Poullain; official sources consistently leave Edouard unaccented. The amended-policy audit resolves Wealth Origin to Marriage / family transfer at 81: a Musée des Arts Décoratifs report establishes Yvon as Edouard's father, and registry records show Edouard succeeding him after death as manager-partner while retaining current economic interests across the same property network. The transfer instrument is unpublished, so this is a capped succession inference rather than an inheritance claim. Inherited variants lack explicit inheritance; Self-made would understate the family-derived core; Mixed lacks a second independently material mechanism. Wealth is now classified Real Estate, Real Estate, Marriage / family transfer and Operator. Biography facts and prose are preserved. October 1966 birth details, manager title, 52-word biography and official company website are proposed. Competitive sailing is the minimum useful approved active tag with complete semantic metadata. The two-paragraph long biography describes the property-company platform without personal-asset context. Nothing has been compiled or applied."
   }
 }

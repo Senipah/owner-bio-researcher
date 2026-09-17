@@ -181,18 +181,19 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Reliable sources establish Trulaske as a second-generation owner of the company founded by his family, but they do not establish whether his principal ownership arrived through inheritance, a lifetime family transfer, purchase or another mechanism.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "A family transfer is inferred from Trulaske's succession and ownership: True Manufacturing was founded by his father and relatives, the company identifies Steve as its second-generation owner, and current official material names him as owner and chief executive. The precise legal transfer instrument is not public.",
     "confidence": {
-      "score": 93,
-      "band": "high",
-      "reason": "True and University of Missouri sources establish the family succession and current ownership, but none of the strong sources reviewed documents an actual inheritance or another specific transfer mechanism. Family relationship alone is not converted into an inherited-wealth classification."
+      "score": 84,
+      "band": "medium",
+      "reason": "University of Missouri documents the pre-existing founder-controlled family company and Steve's succession into its leadership; True identifies him as second-generation owner and current official company material confirms his owner and chief-executive roles. These positive premises satisfy the amended family-succession inference rule. No reviewed source identifies inheritance, gift, purchase or another exact legal mechanism, so the dossier does not use an inherited value."
     },
     "source_ids": [
       "S3",
       "S5",
-      "S6"
+      "S6",
+      "S12"
     ]
   },
   "wealth_relationship": {
@@ -524,7 +525,7 @@
     },
     {
       "topic": "Wealth origin",
-      "detail": "Public sources call Trulaske a second-generation owner and show that he leads the company founded by his father and relatives, but they do not document the legal transfer mechanism. Wealth origin remains Unknown rather than inferring inheritance from kinship and succession."
+      "detail": "Marriage / family transfer is inferred at medium confidence because True was founded by Trulaske's father and relatives, the company calls Steve its second-generation owner, and current official material identifies him as owner and chief executive. The legal route is not public, so the dossier does not claim inheritance, gift or purchase and does not use Inherited and expanded."
     },
     {
       "topic": "Birth details and residence",
@@ -545,6 +546,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Resolved at 93 confidence as Steve Trulaske, the senior second-generation owner and chief executive of True Manufacturing, distinct from his son Steven Trulaske Jr. The dossier normalises the display name by removing the embedded Mr while preserving the separate title field, corrects the malformed sort name, proposes the supported Lee middle name, classifies manufacturing as both wealth-creation and current primary industry, leaves wealth origin Unknown because the transfer mechanism is undocumented, and classifies his relationship as Operator. No exact personal social or semantically suitable active tag is proposed. Nothing has been compiled, applied, committed or pushed."
+    "notes": "Amended wealth-policy audit completed. The four classifications are Manufacturing, Manufacturing, Marriage / family transfer and Operator. The origin value is a medium-confidence inference from the father-founded family platform, explicit second-generation ownership and Steve's current owner and chief-executive roles; it does not claim a specific inheritance, gift or purchase instrument. The other three classifications remain strongly supported and unchanged. Existing identity, biography, social, tag and proposed-detail content was preserved. Nothing has been compiled, applied, committed or pushed."
   }
 }

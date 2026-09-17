@@ -158,17 +158,19 @@
     ]
   },
   "primary_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Hadjieleftheriadis retired from Eletson in 2006, and reliable public sources do not establish a current operating business or a continuing Eletson ownership interest.",
+    "classification": "shipping_maritime",
+    "label": "Shipping & Maritime",
+    "summary": "Hadjieleftheriadis retired from Eletson in 2006 and no current operating platform is established, so Shipping & Maritime is used as the disclosed origin-sector fallback.",
     "confidence": {
-      "score": 96,
-      "band": "very_high",
-      "reason": "Lloyd's List explicitly dates his retirement. A current private company used for identity resolution is excluded from this classification because it is tied to private-asset context, and no independent current sector comparison is public."
+      "score": 80,
+      "band": "medium",
+      "reason": "Sources S3, S4, S5 and S7 establish Shipping & Maritime as the wealth-creation sector, while S4 and S5 establish retirement and no independently verified replacement sector. The label is an explicit origin-sector reporting fallback and does not assert a current Eletson interest or operating role."
     },
     "source_ids": [
+      "S3",
       "S4",
-      "S5"
+      "S5",
+      "S7"
     ]
   },
   "wealth_origin": {
@@ -460,7 +462,7 @@
     },
     {
       "topic": "Current primary industry",
-      "detail": "His shipping career remains defining, but he retired from Eletson in 2006. No sufficiently complete public evidence establishes a current operating platform or comparative current holdings, so Primary Industry is Unknown."
+      "detail": "His shipping career remains defining, but he retired from Eletson in 2006. No sufficiently complete public evidence establishes a current operating platform or comparative current holdings, so Primary Industry uses Shipping & Maritime as the disclosed origin-sector fallback without asserting a current Eletson interest."
     },
     {
       "topic": "Private-company exclusion",
@@ -477,6 +479,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Exact legal identity, Gregory professional-name use, October 1938 date fragment, Piraeus birthplace, 2026 alive status, Eletson career, four independent wealth classifications, active tanker tag and social negatives were reviewed. Public narrative and classification fields contain no vessel or private-asset facts. Strict exact-input and editorial validation is required before completion; nothing was applied live."
+    "notes": "Exact legal identity, Gregory professional-name use, October 1938 date fragment, Piraeus birthplace, 2026 alive status, Eletson career, four independent wealth classifications, active tanker tag and social negatives were reviewed. Shipping & Maritime is the wealth-creation industry and the disclosed Primary Industry origin-sector fallback; no current Eletson interest is asserted. Public narrative and classification fields contain no vessel or private-asset facts. Strict exact-input and editorial validation is required before completion; nothing was applied live."
   }
 }

@@ -186,15 +186,16 @@
   "wealth_origin": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Public sources establish Pope's long operating career and current ownership of SunChase entities but do not reliably explain the original capital, ownership transition or transfer mechanism behind his principal private wealth.",
+    "summary": "Public sources establish Pope's long operating career and later ownership of SunChase entities, but they do not explain the transition from the unrelated Yaw family's control of SunChase to Pope's ownership. Broad self-made is the strongest alternative, but no source establishes a purchase, compensation transfer, founder-built core asset or another qualifying mechanism.",
     "confidence": {
-      "score": 94,
-      "band": "high",
-      "reason": "Contemporaneous SEC records show Pope first as a senior operator in a company then principally owned through another shareholder structure, while later filings establish him as the sole member directing SunChase Investments. No strong public source explains the intervening ownership or capital mechanism, so a self-made, inherited or transferred label would overstate the evidence."
+      "score": 96,
+      "band": "very_high",
+      "reason": "A 2001 SEC filing directly identifies the Yaw family as controller of SunChase Holdings' principal shareholder while Pope served as president and director. Later official and institutional sources identify Pope as owner and sole member of SunChase entities, but no reviewed source documents how he acquired that ownership or whether it principally created his private wealth. The missing acquisition mechanism prevents even broad self-made from reaching 70."
     },
     "source_ids": [
       "S2",
-      "S3"
+      "S3",
+      "S8"
     ]
   },
   "wealth_relationship": {
@@ -349,7 +350,24 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "candidate_type": "wealth_origin",
+      "field": "wealth_origin",
+      "candidate_value": "self_made",
+      "confidence": {
+        "score": 68,
+        "band": "low",
+        "reason": "Pope's decades-long operating career and later documented ownership make broad self-made the strongest alternative. However, contemporaneous SEC evidence shows that an unrelated family controlled SunChase during his earlier leadership, and no source establishes that Pope bought, earned or otherwise created the ownership interest that now underpins his position."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S5",
+        "S8"
+      ]
+    }
+  ],
   "sources": [
     {
       "id": "S1",
@@ -448,12 +466,25 @@
         "Connection between the yacht owner and SunChase Holdings",
         "American geography used only for identity disambiguation"
       ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.sec.gov/Archives/edgar/data/71478/000095015301500778/p65334sc13da.htm",
+      "title": "Schedule 13D/A: NZ Corporation",
+      "publisher": "US Securities and Exchange Commission",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "William A. Pope's president and director roles within the SunChase structure in 2001",
+        "Universe Ltd. as SunChase Holdings' principal shareholder at that time",
+        "Control of Universe Ltd. by the unrelated Yaw family rather than Pope"
+      ]
     }
   ],
   "uncertainties": [
     {
       "topic": "Wealth origin and starting position",
-      "detail": "Strong public sources establish Pope's long SunChase operating career and later sole-member ownership of SunChase Investments, but they do not explain the original capital, ownership transition or whether the principal wealth was built independently, transferred or acquired through another mechanism. Wealth origin therefore remains Unknown."
+      "detail": "Wealth origin intentionally remains Unknown at 96. A 2001 SEC filing identifies the unrelated Yaw family as controller of SunChase Holdings' principal shareholder while Pope served as president and director; later sources identify Pope as owner and sole member of SunChase entities. Broad Self-made is the strongest alternative at 68, but no source establishes a purchase, compensation transfer, founder-built core asset or other mechanism connecting the ownership transition to Pope's principal wealth. Inherited and family-transfer values are not supported because the earlier controllers were unrelated."
     },
     {
       "topic": "Current primary-industry boundary",
@@ -478,6 +509,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "The exact William A. ‘Bill’ Pope identity, real-estate wealth-creation sector, current investment industry, family-office relationship, active-tag minimum set and importable biography are terminally resolved. The wealth-origin mechanism remains explicitly Unknown because strong public evidence does not establish it. Nothing has been compiled, merged into the owner input or applied to the live system."
+    "notes": "The exact William A. ‘Bill’ Pope identity, real-estate wealth-creation sector, current investment industry, family-office relationship, active-tag minimum set and importable biography are terminally resolved. Wealth origin intentionally remains Unknown at 96 after the amended-policy audit. Broad Self-made is the strongest alternative at 68: Pope's long operating career and later ownership are documented, but the mechanism by which ownership passed from the unrelated Yaw-controlled shareholder structure to Pope is not. Nothing has been compiled, merged into the owner input or applied to the live system."
   }
 }

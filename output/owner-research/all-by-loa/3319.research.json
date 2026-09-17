@@ -180,19 +180,23 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Palico existed before Grewal joined as a director and he later became its controlling shareholder, but reliable public evidence does not establish whether he bought, inherited or received the core stake through another transfer mechanism.",
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Grewal did not inherit an operating 1993 Palico platform. After joining and renaming the dormant company, he received 198 of its 200 shares in exchange for transferring his stakes in Hertford Heath and Hertford Heath Realty. A formation-era Hertford Heath filing separately records a substantial share allotment to him alongside other investors. This documents an acquired and assembled restaurant platform, supporting broad Self-made while leaving his starting resources unresolved.",
     "confidence": {
-      "score": 100,
-      "band": "very_high",
-      "reason": "Companies House establishes that the company was incorporated while Grewal was a child, that he joined later as director and that he now controls at least 75% of the shares and voting rights. The reviewed sources do not document the acquisition mechanism or an exact family relationship to earlier participants. Unknown is therefore required rather than inferring self-made, inheritance or family transfer."
+      "score": 84,
+      "band": "medium",
+      "reason": "Official allotment returns positively document how Grewal assembled control: Palico issued him 98 shares for Hertford Heath shares and 100 shares for Hertford Heath Realty shares, while Hertford Heath had allotted him 24,999 shares near its formation. Palico's filings show it remained dormant before this restructuring, and its prior nominal shareholders were replaced. These are acquisition-and-building facts rather than an inference from absent inheritance reporting. Because the filings do not identify the source of his initial capital or establish whether family advantage helped him, the broader Self-made label is used instead of an independent-start subtype."
     },
     "source_ids": [
       "S3",
       "S4",
       "S5",
-      "S6"
+      "S6",
+      "S14",
+      "S15",
+      "S16",
+      "S17"
     ]
   },
   "wealth_relationship": {
@@ -500,6 +504,58 @@
         "separation from Harpal's August 1979 identity",
         "Moonpal-specific appointments not transferred to Harpal"
       ]
+    },
+    {
+      "id": "S14",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02832113/filing-history/ODAzMTE1MTJhZGlxemtjeA/document?download=1&format=pdf",
+      "title": "Palico return of allotment: 98 ordinary shares",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Palico allotted 98 ordinary shares to Harpal Singh Grewal on 2 January 2004",
+        "the shares were treated as fully paid in consideration for his transfer of shares in Hertford Heath Limited",
+        "direct non-cash acquisition of a material Palico stake rather than an inferred family transfer"
+      ]
+    },
+    {
+      "id": "S15",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02832113/filing-history/MTQ1MTA0NTE4YWRpcXprY3g/document?download=1&format=pdf",
+      "title": "Palico return of allotment: 100 ordinary shares",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Palico allotted 100 ordinary shares to Harpal Singh Grewal on 2 January 2004",
+        "the shares were treated as fully paid in consideration for his transfer of shares in Hertford Heath Realty Limited",
+        "the two 2004 allotments together account for 198 of Palico's 200 ordinary shares"
+      ]
+    },
+    {
+      "id": "S16",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03948063/filing-history/MTA2OTQ1ODUwYWRpcXprY3g/document?download=1&format=pdf",
+      "title": "Hertford Heath return of allotment of shares",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Hertford Heath allotted 24,999 ordinary shares to Harpal Singh Grewal in its formation period",
+        "the same allotment distributed the remaining shares among two other named investors",
+        "positive evidence that Grewal acquired a substantial underlying operating-company stake by allotment"
+      ]
+    },
+    {
+      "id": "S17",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02832113/filing-history?page=3",
+      "title": "Palico filing history, 1998–2006",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "accounts describe the company as dormant through 31 March 2003",
+        "the company changed its name from MSG Holdings to Palico in October 2002",
+        "the 2004 filings record the two non-cash share allotments that placed the business under Grewal's ownership"
+      ]
     }
   ],
   "uncertainties": [
@@ -513,7 +569,7 @@
     },
     {
       "topic": "Wealth origin",
-      "detail": "Palico was incorporated as MSG Holdings in 1993, when Harpal was a child, and he became a director in 2002 before later appearing as controlling shareholder. Public filings do not reveal whether the stake was purchased, inherited or transferred within a family or business arrangement. Wealth origin is therefore Unknown, with no founder or family-transfer inference."
+      "detail": "Palico was incorporated as MSG Holdings in 1993 but remained dormant through March 2003. After Harpal became a director and the company was renamed, 2004 allotment returns issued him 198 of its 200 shares in exchange for his Hertford Heath and Hertford Heath Realty stakes; a separate formation-era filing shows Hertford Heath allotting him 24,999 shares alongside two other investors. This positive acquisition-and-building chronology supports broad Self-made. The source of his launch capital and any exact relationship to Moonpal remain unproved, so Self-made — independent start is withheld. Shared surnames and addresses are not treated as family-transfer evidence, and no public filing records inheritance or a family gift."
     },
     {
       "topic": "Founder versus operator",
@@ -542,6 +598,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Terminal resolved-person dossier. Identity confidence is 92 through the authoritative Arionas record's British nationality and August 1979 birth details plus an exact identity-verified Companies House match; public yacht sources confirm the 2021 sale timing but withhold the buyer. Moonpal Singh Grewal is explicitly separated by his July 1969 birth record and no Moonpal-specific facts are transferred. Wealth creation and current primary industry are Food & Beverage; origin is Unknown because Palico pre-dates Harpal and the acquisition mechanism is undisclosed; relationship is Operator. Proposals add the owner-director known-for title and a 52-word biography. Restaurant franchising is the sole approved active tag with complete semantic metadata. Exact birthplace, birth day, mortality, acquisition mechanism, personal socials and a public beneficial-ownership bridge remain unresolved. No shared input, other dossier, compilation or live state was changed."
+    "notes": "Terminal resolved-person dossier. Identity confidence is 92 through the authoritative Arionas record's British nationality and August 1979 birth details plus an exact identity-verified Companies House match; public yacht sources confirm the 2021 sale timing but withhold the buyer. Moonpal Singh Grewal is explicitly separated by his July 1969 birth record and no Moonpal-specific facts are transferred. Wealth creation and current primary industry are Food & Beverage; origin is broad Self-made because official allotment filings show Harpal assembling Palico control through contribution of his two underlying company stakes, while launch capital and any family advantage remain unresolved; relationship is Operator. Proposals add the owner-director known-for title and a 52-word biography. Restaurant franchising is the sole approved active tag with complete semantic metadata. Exact birthplace, birth day, mortality, personal socials and a public beneficial-ownership bridge remain unresolved. No shared input, other dossier, compilation or live state was changed."
   }
 }

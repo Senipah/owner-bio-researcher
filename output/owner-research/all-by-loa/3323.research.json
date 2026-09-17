@@ -149,19 +149,20 @@
     }
   },
   "wealth_creation_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Public records establish investment holdings and voting-group participation but do not identify the business or asset that originally created Gual-Aspe's personal fortune.",
+    "classification": "diversified",
+    "label": "Diversified",
+    "summary": "Diversified is inferred as the creation sector of the family wealth that reached Gual-Aspe through marriage and family succession. Alberto Baillères's fortune rested on Grupo BAL's material mining, retail, insurance and financial businesses, while her own long-running FEMSA investment interest reinforces a multi-sector rather than single-industry origin.",
     "confidence": {
       "score": 78,
       "band": "medium",
-      "reason": "Strong filings document her investment position, but none establishes the origin sector of her personal wealth; the broader Baillères family history cannot safely be substituted."
+      "reason": "Established reporting identifies Gual-Aspe as one of Alberto Baillères's heirs and describes the transferred family fortune's operating base across several unrelated sectors. SEC and regulatory records independently establish her own continuing investment interests. Diversified is therefore the least-specific supported origin sector, with confidence capped because no public allocation identifies the weight of each asset in her personal wealth."
     },
     "source_ids": [
       "S1",
       "S2",
       "S3",
-      "S6"
+      "S6",
+      "S8"
     ]
   },
   "primary_industry": {
@@ -180,13 +181,13 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Her marriage and participation in family-linked investment structures are documented, but reliable public evidence does not show whether her principal assets were inherited, transferred through marriage or accumulated independently.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Broad family transfer is inferred from Gual-Aspe's marriage to Alberto Baillères, established reporting that names her among his heirs, and her continuing personal participation alongside their children and family-controlled vehicles in investment structures after his death. The exact legal route and allocation are not public, so this does not claim a documented inheritance.",
     "confidence": {
-      "score": 80,
+      "score": 81,
       "band": "medium",
-      "reason": "The available records establish identity, marriage and investment participation but do not disclose the acquisition mechanism for her principal personal wealth."
+      "reason": "A contemporaneous established report identifies the widow and six surviving children as heirs; SEC filings show Gual-Aspe contributing personally held FEMSA shares to the same Baillères family voting group and remaining a participant after her husband's death; and Mexican regulation documents her personal fund-company share entering a family company and trust arrangement. These convergent material links support the broad family-transfer label. The absence of a probate instrument and current Forbes attribution centred on the children cap confidence and rule out inherited variants."
     },
     "source_ids": [
       "S1",
@@ -194,7 +195,8 @@
       "S3",
       "S5",
       "S6",
-      "S7"
+      "S7",
+      "S8"
     ]
   },
   "wealth_relationship": {
@@ -403,12 +405,24 @@
         "José Gual Aspe as her brother",
         "Concepción and Rosalía Gual Aspe as her sisters"
       ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.radioformula.com.mx/nacional/Alberto-Baillres-quienes-son-los-herederos-de-su-fortuna-y-empresas-20220203-0425.html",
+      "title": "Alberto Baillères: ¿quiénes son los herederos de su fortuna y empresas?",
+      "publisher": "Radio Fórmula",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Contemporaneous report after Alberto Baillères's death names his widow María Teresa Gual and six surviving children as seven heirs to his fortune.",
+        "Identifies the family fortune's operating base as Grupo BAL businesses spanning department-store retail, mining, brokerage and insurance, while placing operating succession with son Alejandro rather than María Teresa."
+      ]
     }
   ],
   "uncertainties": [
     {
       "topic": "Wealth creation and origin",
-      "detail": "The public record establishes investment holdings but not the source that created her personal fortune or the mechanism by which she acquired its principal assets. Marriage to Alberto Baillères is not treated as evidence of a marital transfer or inheritance."
+      "detail": "The amended-policy audit resolves creation industry to Diversified and origin to broad Marriage / family transfer. Marriage alone is not the basis: reporting identifies Gual-Aspe among Alberto Baillères's heirs, SEC filings show her own long-running participation in the Baillères family voting group, and a current regulatory record places her fund-company share into a family company/trust arrangement. No probate instrument or personal allocation is public, so inherited variants are rejected; self-made lacks an independently built principal asset."
     },
     {
       "topic": "Family attribution",
@@ -441,6 +455,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Identity and the gender correction are strongly supported. Review the Finance & Investments classification against the deliberately conservative Unknown wealth-creation and wealth-origin findings; do not infer personal ownership of the wider Baillères fortune or add unverified social profiles.\n\nOwner-tag consolidation research context: [1] Baillères family: Gual-Aspe was Alberto Baillères's wife, participates in a Baillères-linked voting arrangement and is the mother of the current family-group leader, establishing a durable family association without attributing the wider fortune to her personally. [2] FEMSA: Gual-Aspe has a long-running, directly documented investment association with FEMSA through a shareholder voting group that continues to name her. [3] Gilberto A.C.: Gilberto A.C. is the Mexican housing and livelihoods charity in which Gual-Aspe has held national vice-presidential, fundraising and Mexico City co-ordination responsibilities. [4] Housing support: Gual-Aspe's senior work with Gilberto A.C. supports housing and livelihoods for vulnerable families, making housing assistance a sustained cause rather than a one-off donation. [5] Nonprofit leadership: Gual-Aspe has held several substantive leadership responsibilities at Gilberto A.C., including national vice-president, director of fundraising and Mexico City co-ordinator. [6] Voting trust: Gual-Aspe has participated for years in the FEMSA voting trust, a durable shareholder-control arrangement involving shared voting and dispositive power."
+    "notes": "Identity and the gender correction are strongly supported. The amended-policy audit resolves wealth creation to Diversified78 and origin to broad Marriage / family transfer81 from explicit heir reporting plus personal participation in Baillères-linked investment structures. Exact legal transfer and allocation remain private, so inherited variants are not asserted; operating control remains with Alejandro, and no wider Grupo BAL asset is silently attributed to Gual-Aspe personally. Existing Finance & Investments primary industry and Investor relationship are preserved; no unverified social profiles are added.\n\nOwner-tag consolidation research context: [1] Baillères family: Gual-Aspe was Alberto Baillères's wife, participates in a Baillères-linked voting arrangement and is the mother of the current family-group leader, establishing a durable family association without attributing the wider fortune to her personally. [2] FEMSA: Gual-Aspe has a long-running, directly documented investment association with FEMSA through a shareholder voting group that continues to name her. [3] Gilberto A.C.: Gilberto A.C. is the Mexican housing and livelihoods charity in which Gual-Aspe has held national vice-presidential, fundraising and Mexico City co-ordination responsibilities. [4] Housing support: Gual-Aspe's senior work with Gilberto A.C. supports housing and livelihoods for vulnerable families, making housing assistance a sustained cause rather than a one-off donation. [5] Nonprofit leadership: Gual-Aspe has held several substantive leadership responsibilities at Gilberto A.C., including national vice-president, director of fundraising and Mexico City co-ordinator. [6] Voting trust: Gual-Aspe has participated for years in the FEMSA voting trust, a durable shareholder-control arrangement involving shared voting and dispositive power."
   }
 }

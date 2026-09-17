@@ -176,13 +176,13 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Pilkington succeeded his father as the operator of the family-founded company, but public sources do not state whether his economic interest was inherited, transferred during life, purchased or assembled through another mechanism.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Pilkington succeeded his father as the operator of the family-founded company and remains connected to the trusts controlling its holding company, supporting broad family transfer without specifying the private legal mechanism.",
     "confidence": {
-      "score": 94,
-      "band": "high",
-      "reason": "Vp and trade reporting establish that Geoffrey Pilkington founded the company, Jeremy entered it after Geoffrey's death and family-connected trusts now control the holding company. They do not document the legal or financial transfer of the principal stake, so an inheritance classification cannot be made from family succession alone."
+      "score": 83,
+      "band": "medium",
+      "reason": "Vp and trade reporting establish that Geoffrey Pilkington founded the company, Jeremy entered after Geoffrey's death, later transformed the business and remains connected to the family trusts controlling its holding company. This supports the broad family-transfer category; inheritance is not claimed because no estate or transfer instrument is public."
     },
     "source_ids": [
       "S4",
@@ -344,21 +344,6 @@
   ],
   "candidates_requiring_review": [
     {
-      "candidate_type": "wealth_classification",
-      "field": "wealth_origin",
-      "candidate_value": "Inherited and expanded",
-      "confidence": {
-        "score": 68,
-        "band": "low",
-        "reason": "Pilkington entered the founder-built company immediately after his father's death, later led a substantial transformation and is connected to the trusts controlling its holding company. This sequence makes inheritance plausible, but no reviewed source documents an actual inherited stake or transfer mechanism."
-      },
-      "source_ids": [
-        "S4",
-        "S5",
-        "S6"
-      ]
-    },
-    {
       "candidate_type": "source_record_conflict",
       "field": "main_residence_country",
       "value": "England",
@@ -496,7 +481,7 @@
     "The source record lists Switzerland as main residence, while the active Companies House record lists England and was identity-verified in November 2025. Because residence can change and neither record proves the other is stale, the discrepancy is flagged for review rather than corrected.",
     "No reliable source established Pilkington's birth day, birthplace, birth country, secondary nationality or secondary residence, so none is proposed.",
     "Construction & Engineering is used for both industry fields because the family business was built in plant and equipment hire and currently rents specialist equipment principally into infrastructure, construction and housebuilding. Energy is a material end market but not the dominant documented platform.",
-    "Wealth origin remains Unknown. Sources establish a father-founded company, entry after the founder's death, later transformation and current family-trust control, but they do not document whether Jeremy inherited a stake, received an inter vivos transfer, purchased shares or reached control through another mechanism. Family succession alone is not treated as inheritance evidence.",
+    "A father-founded company, Jeremy's entry after the founder's death, later transformation and current family-trust control support broad Marriage / family transfer. The evidence does not show whether he inherited a stake, received an inter vivos transfer, purchased shares or reached control another way, so no inheritance claim is made.",
     "Operator reflects Pilkington's 23 years as chair and chief executive and his continuing strategic chairmanship. It does not imply that he personally owns assets held by Vp, Ackers P or the family-connected trusts.",
     "Heavy equipment is the minimum-useful active tag. Separate Construction, Infrastructure and Energy tags were not found as narrower governed occupational concepts, and the one tag avoids multiplying Vp's customer markets into overlapping personal identities.",
     "No exact-person LinkedIn, Instagram, personal website, Facebook, Twitter, YouTube or TikTok profile met the evidence threshold. Search results for Jeremy Pilkington led to unrelated namesakes. Vp's current board page qualifies as an exact employer profile; no dedicated Forbes profile was found.",
@@ -505,6 +490,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Terminal resolved-person dossier. Jeremy Pilkington resolves at 100 as Vp's current chair and former chief executive. Wealth classifies as Construction & Engineering, Construction & Engineering, Unknown and Operator; Inherited and expanded remains a below-threshold review candidate because no transfer mechanism is documented. Frederic name corrections, a chair title, the 53-word biography, one exact company profile and one minimum-useful active tag are proposed. Nothing has been compiled, approved or applied."
+    "notes": "Terminal resolved-person dossier. Jeremy Pilkington resolves at 100 as Vp's current chair and former chief executive. Wealth classifies as Construction & Engineering, Construction & Engineering, Marriage / family transfer and Operator; the broad origin follows the father-founded platform, succession and family-trust control without asserting inheritance. Frederic name corrections, a chair title, the 53-word biography, one exact company profile and one minimum-useful active tag are proposed. Nothing has been compiled, approved or applied."
   }
 }

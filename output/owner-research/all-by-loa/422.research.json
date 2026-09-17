@@ -189,11 +189,11 @@
   "wealth_origin": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Public evidence does not establish whether Casiraghi's personal fortune was self-created, inherited, transferred within the family or built through multiple mechanisms.",
+    "summary": "Family transfer is the strongest plausible origin, but public evidence does not establish Marco Casiraghi's present ownership or economic interest in the family platform.",
     "confidence": {
       "score": 99,
       "band": "very_high",
-      "reason": "Sources establish that Stefano Casiraghi founded ENGECO, that Pierre Casiraghi later acquired a majority stake and that Marco remained president. They do not disclose Marco's personal ownership, transfer mechanics, inheritance, remuneration or the relative contribution of earlier family wealth. A family relationship and executive title are insufficient to select Self-made, Inherited, Inherited and expanded or Mixed."
+      "reason": "The amended family-transfer test is not met. Sources establish that Marco's brother Stefano founded ENGECO, Marco became its long-serving operator and nephew Pierre later acquired the majority stake, but they do not identify Marco as an owner, shareholder or economic beneficiary of that business or another principal family asset. Inheritance is not stated; Marco did not found the evidenced core company; and no separately built material fortune supports Self-made or Mixed."
     },
     "source_ids": [
       "S8",
@@ -337,7 +337,22 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "candidate_type": "wealth_origin",
+      "field": "wealth_origin",
+      "candidate_value": "marriage_family_transfer",
+      "confidence": {
+        "score": 68,
+        "band": "low",
+        "reason": "Stefano Casiraghi founded the family construction platform and Marco later held sustained executive leadership, making family succession plausible. The evidence instead identifies Pierre as the majority shareholder and does not establish Marco's present ownership, control, shareholder status or beneficial interest, so the amended family-transfer rule's current-economic-interest premise is missing."
+      },
+      "source_ids": [
+        "S8",
+        "S9"
+      ]
+    }
+  ],
   "sources": [
     {
       "id": "S1",
@@ -490,7 +505,7 @@
     },
     {
       "topic": "Wealth origin",
-      "detail": "The family-company history establishes context but does not disclose Marco's personal equity, inheritance, gifts, compensation or outside holdings. Unknown is therefore the terminal classification for origin rather than an inference from surname, family membership or presidency."
+      "detail": "The amended-policy audit retains Unknown. Stefano's founding and Marco's long operating leadership establish an existing family platform and make Marriage / family transfer the leading alternative, but current ownership or economic-beneficiary evidence for Marco is absent; the cited acquisition evidence names Pierre as majority shareholder. No source establishes inheritance, a founder-built principal asset for Marco, or two independently material mechanisms, so Inherited, Inherited and expanded, Self-made variants and Mixed are rejected."
     },
     {
       "topic": "Wealth creation and primary industry",
@@ -527,6 +542,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Person 422 is resolved at 92 confidence to Marco Casiraghi, the Italian Monaco-based engineer and president of ENGECO and FPMC. Forbes-first research found no dedicated profile. Wealth Creation Industry and Primary Industry are Construction & Engineering; Wealth Origin is Unknown; Wealth Relationship is Operator. Heavy civil construction and Engineer are the minimum useful approved active tags with complete semantic metadata. Supported proposals fill known-for title, gender and the blank biography. The short biography is 50 words and the 115-word long biography has exactly two paragraphs. No unverified social, birth fact, ownership percentage, princely title or relative-specific fact is included. Nothing has been compiled, approved or applied."
+    "notes": "Person 422 is resolved at 92 confidence to Marco Casiraghi, the Italian Monaco-based engineer and president of ENGECO and FPMC. Forbes-first research found no dedicated profile. Wealth Creation Industry and Primary Industry remain Construction & Engineering; Wealth Relationship remains Operator. The amended-policy audit retains Wealth Origin as Unknown because family-platform and operating-succession evidence converges, but no reviewed source establishes Marco's current ownership, shareholder status or economic-beneficiary interest, while Pierre is identified as majority shareholder. Marriage / family transfer remains a below-threshold candidate; inherited, self-made and mixed alternatives lack their necessary positive premises. Heavy civil construction and Engineer remain the minimum useful approved active tags. Biography prose and proposals were preserved, and nothing has been compiled, approved or applied."
   }
 }

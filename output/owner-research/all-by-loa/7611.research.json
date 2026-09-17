@@ -175,17 +175,19 @@
   "wealth_origin": {
     "classification": "unknown",
     "label": "Unknown",
-    "summary": "Public sources establish ownership and substantial operating development but do not document how Bamford acquired his original Labelmakers stake or financed that acquisition.",
+    "summary": "Unknown is retained because public evidence does not establish whether Bamford founded Labelmakers, bought into it or succeeded a relative. Broad self-made is the strongest alternative, based on his long ownership and business-building record, but the original stake mechanism remains unsupported.",
     "confidence": {
-      "score": 45,
-      "band": "insufficient",
-      "reason": "The official history calls the business family-founded in 1987 without naming the individual founders. Long-term ownership, a strategy contribution and a family-owned company do not independently resolve founding, purchase, inheritance, gift or launch financing. No self-made or inherited subtype can be selected confidently."
+      "score": 92,
+      "band": "high",
+      "reason": "Positive evidence fixes Labelmakers' start in 1987, Bamford's earliest located exact-company directorship in 1997, his later ownership and his material operating development. It does not identify the 1987 founder, connect that founder to Bamford, or document a purchase, succession, gift or inheritance. The ten-year chronology gap prevents broad self-made from reaching 70, while the absence of a named relative and succession event prevents family transfer."
     },
     "source_ids": [
       "S2",
       "S3",
       "S4",
-      "S7"
+      "S7",
+      "S9",
+      "S10"
     ]
   },
   "wealth_relationship": {
@@ -310,7 +312,24 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "type": "classification",
+      "field": "wealth_origin",
+      "value": "Self-made",
+      "confidence": {
+        "score": 66,
+        "band": "low",
+        "reason": "Bamford is directly identified as owner and is credited with major long-term business-building decisions, making broad self-made the strongest alternative. It remains below threshold because the company predates his earliest located exact-company directorship by ten years and no reliable source identifies him as founder or purchaser of the original stake."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S4",
+        "S9"
+      ]
+    }
+  ],
   "sources": [
     {
       "id": "S1",
@@ -406,13 +425,37 @@
       "supports": [
         "PDF body directly read. Names Kevin Bamford as chairman, describes design, printing and manufacture of self-adhesive labels, sleeves and cartons and identifies controlled group operations in Victoria, New South Wales and Western Australia."
       ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.companyhub.nz/dirshrSearch.cfm?name=Kevin&page=136",
+      "title": "Kevin Leslie Bamford — New Zealand company-role search",
+      "publisher": "Company Hub, reproducing New Zealand Companies Office records",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "The exact-name search records Kevin Leslie Bamford as a historic director of the overseas company Labelmakers (Aust.) Pty Limited from 17 February 1997 and of LM Group (Aust) Pty Ltd from 1 July 2005.",
+        "The entries establish a public company-role floor, not his first involvement, original ownership date or founder status. They leave a ten-year gap after Labelmakers' documented 1987 start."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://abr.business.gov.au/AbnHistory/View/41114717814",
+      "title": "Historical details for ABN 41 114 717 814",
+      "publisher": "Australian Business Register, Australian Government",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "The official register shows that the current LM Group (Aust) Pty Ltd entity began in June 2005 under the name Labelmakers Group Pty Ltd and adopted its current name in June 2016.",
+        "The record distinguishes the later holding entity from the operating business's documented 1987 start; it does not identify the original founder, purchaser or transfer mechanism."
+      ]
     }
   ],
   "uncertainties": [
     "The source owner's specific Labelmakers company bridge supports resolution despite the common public name. No independently readable Willpower company-director record was found, and the saved 9 January 1945 birth date and middle name Leslie are not independently reconfirmed. No birth-date correction or unsupported birthplace is proposed.",
     "Place of birth and secondary nationality remain unverified after focused searches. Melbourne is the verified company base, not an inferred birthplace or residence. Optional honorifics, suffix and secondary residence remain blank; calculated and inapplicable death fields are not research proposals.",
     "The original source biography includes extensive information about Rhonda Wyllie and the Wyllie Group. Neither her family's ownership, inheritance nor investment activities supply Bamford's personal wealth classifications or prose. The UK JCB Bamford family, Calgary realtor, UK BOFA executive, US banking professional and unrelated namesakes are excluded.",
-    "The public record supports manufacturing ownership and operating development, but not Bamford's original stake acquisition, individual founding or launch funding. A family-founded company description does not establish a personal inherited or self-made origin. Unknown45 is retained instead of treating absent inheritance evidence as an independent start.",
+    "The public record supports manufacturing ownership and material operating development, but not Bamford's original stake acquisition. Labelmakers documents a 1987 start; the earliest exact-company registry trace located for him is a 1997 directorship, and the current Australian holding entity began in 2005. No reliable source identifies the 1987 founder, documents a purchase by Bamford or establishes that he succeeded a relative. Broad Self-made is therefore the strongest alternative at 66, but Unknown is retained; family transfer is rejected because neither a predecessor-relative nor a succession event is evidenced, and inheritance is not asserted.",
     "Manufacturing is the strongest evidenced sector for both long-term wealth creation and continuing private interests. Exact personal shares, current valuations and comparative investment weights remain unknown. Neither the racing hobby/business nor the sectors of packaging customers replace the underlying manufacturing classification.",
     "Technical manager Graeme Lang established the coatings division and holds the described patents. Bamford receives credit only for his supported owner-level decision and business strategy. Adam Bamford is managing director in the corporate statement; Kevin's title is chairman.",
     "Forbes-first exact-name and profile searches found no matching personal Forbes page. No Forbes link or personal net-worth estimate is proposed.",
@@ -424,6 +467,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Terminal resolved-person dossier with independent industry decisions, Unknown wealth-acquisition origin, an evidenced operator relationship, one missing-title proposal, one company website and two active canonical tags. Complementary 50/90-word biographies, with exactly two long paragraphs. Personal dates, origin mechanics and missing personal social profiles remain unresolved. No existing target was present to preserve. Only this dossier is written; main acceptance and live application remain separate."
+    "notes": "Terminal resolved-person dossier with independent industry decisions, an evidenced operator relationship, one missing-title proposal, one company website and two active canonical tags. The amended wealth-policy audit retains Unknown for origin at high confidence: 1987 formation, a 1997 exact-company directorship and later ownership/building activity do not reveal whether Bamford founded, purchased or received the original stake. Broad Self-made is the strongest sub-threshold alternative; family transfer and inherited variants lack a predecessor-relative or transfer event. Biography prose and unrelated fields were preserved."
   }
 }

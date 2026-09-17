@@ -105,19 +105,19 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Stefano entered and operates an established family shipping enterprise. The sources establish the family platform and branch ownership, but do not say whether his own principal interest was inherited, gifted during a relative's lifetime, purchased or otherwise allocated. A transfer mechanism cannot be inferred from executive succession or the word heritage.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Family transfer is inferred from Messina's succession into a shipping enterprise established by earlier generations, the founder-descendant branch ownership structure and his documented personal interests in holding vehicles; the precise legal transfer route is not public.",
     "confidence": {
-      "score": 65,
-      "band": "low",
-      "reason": "The2013 reorganisation left family capital unchanged while reallocating operational posts; it did not document a personal inheritance or gift. Founder-built, inherited-and-expanded and inter vivos transfer classifications therefore remain unassigned."
+      "score": 84,
+      "band": "medium",
+      "reason": "Official history shows that the shipping platform was established generations before Stefano joined it and identifies him as a later-generation successor. La Repubblica reports that the unchanged family capital was held by founder-descendant branches through their respective financial companies while Stefano and the other latest-generation descendants assumed leadership. A 2018 listed-company filing separately records Stefano's personal full and bare-ownership interests in Stefem and his 80% interest in Tremex, alongside his Gruppo Messina chairmanship. Current 2026 reporting identifies Gruppo Messina as the Messina and Gais families' holding company, and current company history confirms its 51% core operating stake. Together these facts support an inferred family transfer and continuing economic interest. The precise instrument is not public, so inheritance is not asserted and confidence is capped."
     },
     "source_ids": [
       "S1",
       "S4",
-      "S6",
-      "S7"
+      "S7",
+      "S10"
     ]
   },
   "wealth_relationship": {
@@ -327,7 +327,22 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "candidate_type": "wealth_origin",
+      "field": "wealth_origin",
+      "candidate_value": "inherited",
+      "confidence": {
+        "score": 66,
+        "band": "low",
+        "reason": "The family capital descends from the founder's branches and corporate history uses succession language, making inheritance plausible. No reviewed source states that Stefano inherited his interest or identifies a testamentary transfer, so the narrower legal mechanism remains below the acceptance threshold."
+      },
+      "source_ids": [
+        "S4",
+        "S7"
+      ]
+    }
+  ],
   "sources": [
     {
       "id": "S0",
@@ -350,6 +365,7 @@
       "accessed_at": "2026-09-14",
       "supports": [
         "Actual175-page PDF retrieved and read with pypdf; printedp103/PDFp110 gives Stefano Messina, Genoa,17March1968. Biography records joining the family group in1994, planning/administration/finance/control, group chairman and shipping executive roles, and historical Yarpa chairmanship.",
+        "The 2018 outside-appointments and interests table records Stefano's 20% full-ownership and 13.333% bare-ownership interests in Stefem S.r.l. and his 80% interest in Tremex S.r.l., alongside his Gruppo Messina chairmanship and Ignazio Messina & C. vice-chairmanship.",
         "This is Stefano's biography, distinct from nearby Luca Abatello and Alexio Picco; their degrees and founding roles were not transferred."
       ]
     },
@@ -444,6 +460,19 @@
       "supports": [
         "Actual live page and legal footer identify the Genoa company and its shipping, terminal, multimodal and maintenance businesses; supports the verified Company Website link."
       ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.shippingitaly.it/2026/08/26/la-holding-gruppo-messina-manda-in-archivio-lultimo-bilancio-con-un-utile-di-quasi-15-milioni/?amp=1",
+      "title": "Gruppo Messina holding closes 2025 with a profit",
+      "publisher": "Shipping Italy; 26 August 2026",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "current identification of Gruppo Messina as the parent holding of the Messina and Gais families, with a minority Calì family interest",
+        "current 51% Gruppo Messina interest in Ignazio Messina & C. and receipt of its proportionate dividend",
+        "continuing insertion of later Messina and Gais generations into the operating company"
+      ]
     }
   ],
   "uncertainties": [
@@ -451,7 +480,7 @@
     "Xargo ownership is not independently verified. Searches for exact person/vessel and name plus yacht found no public bridge; unrelated Xargo III racing and Spanish Xargo company records were not transferred. Source relationship date1988 is preserved, not treated as yacht delivery or a verified personal purchase.",
     "The source's52 years on7May2020 is consistent with17March1968 in a primary listed-company document and age53 in the2021 Chamber CV. Full date proposals come from that explicit primary table, never arithmetic from source age alone.",
     "Creation and current sectors were researched separately. The family shipping fortune and continuing majority corporate holding are identified, but the personal look-through percentage and wider portfolio are not quantified. Past industrial/private-equity interests and current directorships do not automatically establish Diversified or Finance & Investments.",
-    "Wealth origin remains Unknown: entry into a family firm, a multigenerational history and transfer of executive authority do not establish the legal acquisition of his own core assets. No invented inheritance, inter vivos gift, independent start or claim of individually achieved family-wide expansion.",
+    "The amended-policy audit classifies wealth origin as Marriage / family transfer at84. The family created the shipping platform before Stefano's succession; the2013 capital account places unchanged ownership with founder-descendant branches through their financial companies; the2018 listed-company filing records Stefano's personal interests in Stefem and Tremex; and current2026 reporting identifies Gruppo Messina as the Messina and Gais families' holding company with a continuing51% interest in the core operator. The conclusion is an inference from succession plus present economic interest, not a claim about the precise transfer instrument. Inherited and Inherited and expanded remain unassigned because no source states an inheritance; broad Self-made and advantaged start fail because Stefano did not build a separate principal asset; Mixed lacks a second independently material mechanism.",
     "Yarpa's current official profile calls him a director; older primary CVs call him chairman. The long uses the historical past tense. The generic present title is limited to the well-supported Gruppo Messina chairmanship.",
     "Forbes was explicitly checked first. No exact personal profile verified; a secondary source's Walgreens billionaire claim appears to confuse this man with Stefano Pessina and is not evidence for Messina's wealth or birth year.",
     "Personal social searches covered Instagram, LinkedIn, Facebook, Twitter/X, YouTube, TikTok and personal sites, including shipping/Assarmatori qualifiers. No account had an official cross-link or sufficient independent corroboration. TikTok returned a non-retryable robots block. Publisher videos, association accounts, corporate links and unrelated musicians' websites are not personal profiles.",
@@ -461,7 +490,7 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Main identity, evidence and editorial review passed strict exact-input validation without errors or warnings; short/long words 51/95. Four independently researched classifications, seven details, one social and two semantic-contract-checked tags. Nothing applied live."
+    "notes": "Main identity, evidence and editorial review passed. The amended-policy audit changes Wealth Origin from Unknown to Marriage / family transfer at inference-capped confidence84: an established multigenerational shipping platform, founder-descendant branch ownership, Stefano's personal holding-company interests and continuing family-group control converge even though the precise transfer instrument is not public. Inherited variants, Self-made variants and Mixed remain unsupported. Biography prose, the other three wealth classifications, details, social and tags were preserved. Nothing applied live."
   },
   "input_snapshot": {
     "source_path": "output/owners-list.vessel-enriched.enriched.json",

@@ -169,28 +169,31 @@
     ]
   },
   "primary_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "No reliable public source reviewed establishes a post-sale operating business or investment platform that should replace manufacturing as Sorenson's historical wealth-creation sector.",
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "No reliable public source establishes Sorenson's post-sale operating business or investment platform, so Manufacturing is used as the disclosed origin-sector fallback from Carling Technologies.",
     "confidence": {
-      "score": 96,
-      "band": "very_high",
-      "reason": "The SEC confirms that Littelfuse completed the Carling acquisition in November 2021, and Companies House records the corresponding end of Sorenson-family directorships. Current foundation filings establish philanthropy but not a principal commercial industry, so a present primary industry cannot be assigned defensibly."
+      "score": 80,
+      "band": "medium",
+      "reason": "Sources S3, S4, S5 and S11 establish Manufacturing as the wealth-creation sector; S5, S6 and S10 establish the sale and no replacement principal commercial platform. The label is an explicit origin-sector reporting fallback and does not assert current manufacturing ownership."
     },
     "source_ids": [
+      "S3",
+      "S4",
       "S5",
       "S6",
-      "S10"
+      "S10",
+      "S11"
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Sorenson succeeded his father inside a family-owned company, but public sources reviewed do not disclose whether his economic stake was inherited, gifted, purchased or earned through another arrangement.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Sorenson gained control of the principal family-owned manufacturing business through intergenerational succession, then led and expanded it through its 2021 sale; the precise legal transfer mechanism and his individual stake are not public.",
     "confidence": {
-      "score": 95,
-      "band": "very_high",
-      "reason": "Carling establishes the father-son executive succession and transaction sources establish family ownership, but none reviewed documents the legal or economic mechanism by which Sorenson acquired his stake. Classifying the fortune as inherited would therefore exceed the evidence."
+      "score": 79,
+      "band": "medium",
+      "reason": "Carling documents that Sorenson joined the established family company and succeeded his father as president. Littelfuse and the family's transaction adviser identify him as president and chief executive through the sale, describe Carling as a fourth-generation family-owned company and describe a sale process conducted for the Sorenson family. These convergent facts support a family-succession transfer of control over the principal wealth-producing asset, but the score is capped because Sorenson's individual stake and the legal transfer instrument are not disclosed."
     },
     "source_ids": [
       "S3",
@@ -596,12 +599,12 @@
       "detail": "Companies House gives June 1944 for the older American Carling director Richard W Sorenson and distinguishes the younger October 1972 director. No strong source reviewed gives an exact day or place of birth, so those fields remain unproposed."
     },
     {
-      "topic": "Wealth origin",
-      "detail": "Family succession and family ownership are documented, but the transfer mechanism and Sorenson's percentage stake are not. The origin remains Unknown rather than assuming inheritance, gifting, purchase or a specific share of the company sale."
+      "topic": "Wealth-origin calibration",
+      "detail": "Marriage / family transfer is inferred at 79 because Carling was an established multigenerational family-owned manufacturer, Sorenson succeeded his father as president, and he controlled it as president and chief executive through a sale managed for the Sorenson family. The exact transfer instrument, individual ownership percentage and personal sale proceeds remain undisclosed. Inherited and Inherited and expanded are rejected because inheritance itself is not documented; Self-made variants are rejected because the transferred family company remained the principal wealth-producing asset; Mixed lacks an independently supported second material origin mechanism."
     },
     {
       "topic": "Post-sale industry",
-      "detail": "Littelfuse completed the Carling purchase in 2021. A current family-foundation role is documented, but no reliable public evidence identifies a subsequent principal commercial platform, so current primary industry remains Unknown while Manufacturing is retained only as the wealth-creation industry."
+      "detail": "Littelfuse completed the Carling purchase in 2021. A current family-foundation role is documented, but no reliable public evidence identifies a subsequent principal commercial platform. Primary Industry therefore uses Manufacturing as the disclosed origin-sector fallback without asserting a current manufacturing holding."
     },
     {
       "topic": "Transaction value",
@@ -618,6 +621,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Terminal resolved-person dossier. Richard W. Sorenson Sr. is resolved as Richard Wesley Sorenson Sr., the older Carling Technologies president and chief executive, at confidence 99. The Sr. suffix is retained with direct support and malformed structured name fields are proposed for correction. Manufacturing is the wealth-creation industry; current industry and precise wealth origin remain Unknown; relationship is Operator. The dossier proposes a 55-word biography, 128-word two-paragraph long biography, one exact official company link and three active-catalogue tags. Nothing has been compiled, approved or applied."
+    "notes": "Terminal resolved-person dossier. Richard W. Sorenson Sr. is resolved as Richard Wesley Sorenson Sr., the older Carling Technologies president and chief executive, at confidence 99. The Sr. suffix is retained with direct support and malformed structured name fields are proposed for correction. Manufacturing is the wealth-creation industry and the disclosed Primary Industry origin-sector fallback; under the amended reasonable-inference policy, origin is Marriage / family transfer based on father-son succession plus control of the family-owned company through its sale; relationship is Operator. The dossier proposes a 55-word biography, 128-word two-paragraph long biography, one exact official company link and three active-catalogue tags. Nothing has been compiled, approved or applied."
   }
 }

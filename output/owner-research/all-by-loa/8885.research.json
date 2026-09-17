@@ -146,17 +146,19 @@
     }
   },
   "wealth_creation_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Public materials document both earlier property-and-resort entrepreneurship and a later maritime-management career, but do not establish which activity created his personal wealth or whether either was its principal source.",
+    "classification": "shipping_maritime",
+    "label": "Shipping & Maritime",
+    "summary": "Shipping & Maritime is inferred as the principal identifiable wealth-creation sector because Lauro earned Scorpio Tankers equity through services, monetised part of that holding and retained a substantial personal share position alongside his long-running maritime-management role. Earlier property-and-resort ventures are documented but lack comparable evidence of material wealth contribution.",
     "confidence": {
-      "score": 96,
-      "band": "very_high",
-      "reason": "Official biographies describe the sectors in which Lauro founded companies and later worked, but they do not trace his personal capital formation, quantify proceeds or identify a dominant wealth-producing business."
+      "score": 84,
+      "band": "medium",
+      "reason": "Scorpio's official and SEC materials establish Lauro's sustained operating role in shipping. His Form 144 directly states that shares sold were fully vested restricted stock issued under an equity incentive plan for services rendered, while his Form 3 records a substantial remaining personal holding. That direct earned-equity mechanism and realised liquidity establish materiality without using occupation alone. The relative value of his earlier private property ventures remains undisclosed, so shipping dominance is a reasoned inference capped at 84."
     },
     "source_ids": [
       "S2",
-      "S4"
+      "S4",
+      "S5",
+      "S7"
     ]
   },
   "primary_industry": {
@@ -175,17 +177,19 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Lauro founded private businesses before entering the family-controlled Scorpio group, but the public record does not establish the source of his starting capital, any actual inherited transfer or the relative contribution of each phase to his wealth.",
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "Lauro founded private property-and-resort businesses and later earned material Scorpio Tankers equity for services rendered, while benefiting from the established Lolli-Ghetti shipping platform controlled by his family and led by his brother. The classification recognises both the separately created or earned assets and the substantial family-business advantage without asserting inheritance.",
     "confidence": {
-      "score": 95,
-      "band": "very_high",
-      "reason": "Entrepreneurship is positively documented, as is membership in the family that controls Scorpio. Neither fact alone proves self-made wealth or inheritance, and no reliable source documents an actual transfer of family wealth."
+      "score": 84,
+      "band": "medium",
+      "reason": "Official biographies directly document Lauro's founding of earlier private ventures, and the SEC Form 144 identifies Scorpio shares acquired as compensation for services rather than by gift or inheritance. His substantial retained stake establishes the material wealth link. Scorpio filings also document that his family owns and controls the group and that his brother is chairman and chief executive, a substantial platform of access and opportunity. Starting capital for the earlier ventures is unknown and private-family-company equity is not individually allocated, so this is a capped reasoned inference rather than an independent-start or transfer classification."
     },
     "source_ids": [
       "S2",
-      "S4"
+      "S4",
+      "S5",
+      "S7"
     ]
   },
   "wealth_relationship": {
@@ -391,7 +395,8 @@
       "accessed_at": "2026-09-17",
       "supports": [
         "The current officer filing names Lauro Filippo at Scorpio Tankers' Monaco address and identifies his issuer relationship as officer with the title Vice President.",
-        "The filing corroborates the continuing executive role after the latest annual-report period."
+        "The filing corroborates the continuing executive role after the latest annual-report period.",
+        "Direct beneficial ownership of 474,250 Scorpio Tankers common shares."
       ]
     },
     {
@@ -405,6 +410,20 @@
         "The filing identifies Filippo Lauro as director and vice president of Scorpio Holdings, Scorpio Services Holding and other Scorpio entities, as well as vice president of Eneti and Scorpio Tankers.",
         "It gives Italian citizenship and the Scorpio business address in Monaco, strengthening both identity resolution and the long-running group-management record."
       ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.sec.gov/Archives/edgar/data/1483934/000197858926000003/xsl144X01/primary_doc.xml",
+      "title": "Form 144 — Filippo Lauro",
+      "publisher": "U.S. Securities and Exchange Commission, 5 March 2026",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Filippo Lauro's proposed sale of Scorpio Tankers common shares",
+        "Acquisition of 90,099 shares as fully vested restricted stock under an equity incentive plan",
+        "Services rendered to the issuer as the consideration for those shares",
+        "Personal monetisation of a portion of his shipping-company equity"
+      ]
     }
   ],
   "uncertainties": [
@@ -414,11 +433,11 @@
     },
     {
       "topic": "Wealth creation industry",
-      "detail": "Official biographies document private property-and-resort ventures followed by shipping management, but do not trace Lauro's personal capital formation or show which sector created most of his wealth. Wealth Creation Industry therefore remains Unknown."
+      "detail": "Shipping & Maritime is used at medium confidence because SEC filings directly document a substantial personal Scorpio Tankers holding and show that shares he monetised were awarded for services rendered. Earlier private property-and-resort ventures remain a plausible contributor, but their ownership value and proceeds are not public, so shipping's dominance is inferred and capped at 84."
     },
     {
       "topic": "Wealth origin and family ownership",
-      "detail": "Lauro is documented as a founder of earlier private businesses and a member of the family that controls Scorpio. Public sources do not establish starting capital, an actual inheritance transfer or the relative contribution of family and independent activity, so Wealth Origin remains Unknown rather than inherited or self-made."
+      "detail": "Self-made — advantaged start reflects Lauro's directly documented founding of private ventures and Scorpio equity earned for services, together with the material advantage of entering a shipping group controlled by his family and led by his brother. The starting capital for his early ventures and individual interests in private family entities remain undisclosed; no source establishes inheritance or another transfer of the principal assets."
     },
     {
       "topic": "Current role and former Eneti service",
@@ -439,6 +458,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Identity is resolved at very high confidence through matching registry demographics and current official-company evidence. The dossier records durable executive and entrepreneurial facts, keeps wealth origin and creation sector Unknown where the public record is insufficient, and excludes all private-asset material from publishable content."
+    "notes": "The amended-policy audit resolves Wealth Creation Industry to Shipping & Maritime and Wealth Origin to Self-made — advantaged start, both at 84 confidence. SEC filings provide the material link that was previously missing: Lauro received Scorpio Tankers restricted stock for services rendered, monetised part of it and retained a substantial personal holding. His earlier founder activity supports personal asset creation, while the Lolli-Ghetti family's control of Scorpio and his brother's chief-executive role establish a substantial family-platform advantage. Earlier venture values and private family-company interests remain undisclosed, so both reasoned classifications are capped at 84 and no inheritance is asserted. Primary industry, Operator relationship, biography prose and unrelated fields are unchanged."
   }
 }

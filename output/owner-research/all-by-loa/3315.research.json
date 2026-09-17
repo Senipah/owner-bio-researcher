@@ -173,18 +173,19 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "The evidence does not establish whether Bailey acquired the family auction business through inheritance or transfer, built his principal wealth through operating earnings, or combined those mechanisms.",
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "Bailey built and acquired material automotive interests through his own operating and investment activity after entering the established Bailey-family auction business, which supplied a substantial industry platform. The evidence does not show that he inherited or received the family company's equity.",
     "confidence": {
-      "score": 96,
-      "band": "very_high",
-      "reason": "Cox says Bailey headed his family business for fifteen years and started other ventures, but does not disclose ownership, succession, inheritance, purchase terms or the relative value of career earnings. A self-made, advantaged-start, inherited or family-transfer label would require mechanics not in the public record."
+      "score": 84,
+      "band": "medium",
+      "reason": "Cox identifies an established family business that Bailey led for fifteen years, while Manheim documents his AuctionVision innovation, acquisition-led expansion and creation of the UK Manheim platform. A 2026 High Court judgment independently records that Bailey personally paid £10 million for 12% of Big Motoring World in 2016 or 2017 and later co-founded and equally owned Carzam. These facts establish material personally acquired and founder-built interests alongside a substantial family-business advantage. The inference is capped because the sources do not disclose his ICA ownership, launch capital or the relative contribution of executive compensation and later investments."
     },
     "source_ids": [
       "S3",
       "S4",
-      "S5"
+      "S5",
+      "S9"
     ]
   },
   "wealth_relationship": {
@@ -400,6 +401,19 @@
         "June 2022 administration and cessation of trading",
         "Absence of Carzam as a continuing current operating interest"
       ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.bailii.org/ew/cases/EWHC/Ch/2026/2028.html",
+      "title": "Peter Waddell Holdco Ltd v Bluebell Cars Holding Ltd & Ors [2026] EWHC 2028 (Ch)",
+      "publisher": "England and Wales High Court (Chancery Division), via BAILII",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "John Bailey's personal purchase of a 12% Big Motoring World interest for £10 million in 2016 or 2017",
+        "Bailey's 50% ownership of Carzam, which he co-founded with Peter Waddell in 2019",
+        "Material personal economic interests acquired and built after Bailey's ICA-Manheim career"
+      ]
     }
   ],
   "uncertainties": [
@@ -413,7 +427,7 @@
     },
     {
       "topic": "Wealth origin",
-      "detail": "Independent Car Auctions is described as Bailey's family business, but no accepted source says whether he inherited shares, received an inter vivos transfer, purchased an interest or merely operated it. His entrepreneurial and executive record is clear, but the origin mechanism remains Unknown."
+      "detail": "Independent Car Auctions was an established Bailey-family business before John Bailey became its managing director, providing a material platform and preventing an independent-start label. His later personal £10 million purchase of 12% of Big Motoring World and equal co-founding ownership of Carzam, together with his documented creation and expansion work, support Self-made — advantaged start. No accepted source shows inherited or transferred ICA equity, so family transfer, inherited and Mixed remain unsupported; the precise sources of his investment capital are not public."
     },
     {
       "topic": "Current primary wealth",
@@ -438,6 +452,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Identity resolves at 99 through the exact full name, birth month and year, Top Yachts, Cox-Manheim and Bristol chain. Review the known-for title, birthplace and correction of the existing biography. Wealth creation is Automotive, primary industry and origin remain Unknown, and the relationship is Operator. No tag satisfies an approved active semantic contract. Nothing has been compiled or applied live."
+    "notes": "Identity resolves at 99 through the exact full name, birth month and year, Top Yachts, Cox-Manheim and Bristol chain. Review the known-for title, birthplace and correction of the existing biography. Wealth creation is Automotive; primary industry is Automotive only as a documented-sector fallback; wealth origin is Self-made — advantaged start at 84 because Bailey separately acquired and built material automotive interests after entering an established family platform; and the relationship is Operator. Family transfer and Mixed are rejected because no accepted source establishes inherited or transferred ICA equity. No tag satisfies an approved active semantic contract. Nothing has been compiled or applied live."
   }
 }

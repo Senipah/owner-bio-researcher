@@ -82,15 +82,15 @@
     "source_ids": ["S2", "S3", "S4"]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Goff is a fourth-generation leader of a family-owned enterprise, but public evidence does not establish whether his principal interest arose by inheritance, an inter vivos family transfer, purchase, earned ownership or a combination of mechanisms.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Goff's principal documented business interest is in the family enterprise founded by his great-grandfather, where he is fourth-generation chairman and a current person with significant control.",
     "confidence": {
-      "score": 95,
-      "band": "very_high",
-      "reason": "The official history proves family continuity and his chairmanship, not the legal or economic mechanism by which he obtained any personal stake. Companies House establishes directorships but does not disclose an exact personal shareholding or transfer history. Choosing Unknown avoids converting a family succession narrative into an unsupported inheritance claim."
+      "score": 84,
+      "band": "medium",
+      "reason": "The official company history identifies Goff as fourth-generation chairman of the independent family business founded by his great-grandfather. Companies House now supplies the material personal-interest link: Goff is an active person with significant control of the core company through ownership of more than 25% but no more than 50% of its shares, with control over the trustees of a trust. The pre-existing family platform, direct lineage and current economic interest support broad family transfer under the amended policy. Confidence is capped because no transfer instrument or acquisition chronology is public. The evidence does not establish inheritance, and it provides no positive basis for an independent purchase, earned-ownership or founder-built self-made classification."
     },
-    "source_ids": ["S2", "S3", "S4"]
+    "source_ids": ["S2", "S3", "S6"]
   },
   "wealth_relationship": {
     "classification": "operator",
@@ -214,6 +214,15 @@
       "tier": 2,
       "accessed_at": "2026-08-30",
       "supports": ["38-metre Atlas identity", "28 July 2022 sale announcement", "buyer represented by Burgess but not publicly named", "July 2022 event match to the authoritative relationship start", "2000 construction and 2021 refit", "no independent public owner identification"]
+    },
+    {
+      "id": "S6",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00544115/persons-with-significant-control",
+      "title": "George J. Goff, Limited persons with significant control",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": ["Michael Lee Johnson Goff as an active person with significant control of the core family company", "personal ownership of more than 25% but no more than 50% of shares with control over the trustees of a trust", "January 1955 birth month and year, British nationality and England residence matching the resolved owner"]
     }
   ],
   "uncertainties": [
@@ -227,7 +236,7 @@
     },
     {
       "topic": "Wealth origin",
-      "detail": "The official business history establishes that Goff is the fourth generation of the founding family and the current chairman, but it does not document whether he inherited shares, received them during an older relative's lifetime, bought them, earned them through service or combines several mechanisms. Wealth origin remains Unknown; the family lineage is not converted into an inheritance claim."
+      "detail": "The official history identifies Goff as fourth-generation chairman of the enterprise founded by his great-grandfather, while Companies House records him as an active person with significant control through a greater-than-25%-but-no-more-than-50% share interest with control over trust trustees. That combination supports broad Marriage / family transfer at the amended policy's 84-point inference cap. It does not establish whether shares were inherited or transferred during a relative's lifetime, so Inherited is rejected. Independent purchase, earned ownership and Self-made are also rejected because no source documents those mechanisms."
     },
     {
       "topic": "Personal ownership and wealth scale",
@@ -256,6 +265,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Terminal resolved-person dossier. Michael Lee Johnson Goff is resolved at 96 through an exact verified Companies House record, the official fourth-generation-chairman history and a July 2022 vessel-event alignment. Energy is both wealth-creation and current primary industry; Operator captures his decades of documented leadership, while wealth origin remains Unknown because no reliable public transfer mechanism was found. Oil & gas is the sole minimum useful active tag with catalogue-exact semantic metadata. A known-for title, corrected 54-word biography and official Company Website are proposed. Exact personal ownership, wealth scale, birth day and place, and legal vessel title remain bounded. Nothing has been compiled, approved or applied."
+    "notes": "Terminal resolved-person dossier. Michael Lee Johnson Goff is resolved at 96 through an exact verified Companies House record, the official fourth-generation-chairman history and a July 2022 vessel-event alignment. Energy is both wealth-creation and current primary industry; Operator captures his decades of documented leadership. Wealth origin is Marriage / family transfer at 84 because the pre-existing great-grandfather-founded platform and fourth-generation succession converge with a current Companies House-recorded greater-than-25% share interest and trust control; no inheritance mechanism is claimed. Oil & gas is the sole minimum useful active tag with catalogue-exact semantic metadata. A known-for title, corrected 54-word biography and official Company Website are proposed. Exact wealth scale, birth day and place, and legal vessel title remain bounded. Nothing has been compiled, approved or applied."
   }
 }

@@ -182,16 +182,17 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Public evidence confirms direct jointly held investments but does not establish whether Kolenda built the underlying capital independently, through shared marital enterprise or through a transfer from her spouse.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Kolenda's principal documented financial interest was held through an equal spousal investment vehicle connected to her husband's founder-built finance business and the Kolenda Family Trust. A marriage or family transfer is inferred from that structure, although the precise legal route and original capital contributions are not public.",
     "confidence": {
-      "score": 91,
-      "band": "high",
-      "reason": "Regulatory filings prove ownership, while family reporting describes both spouses as business people. Neither source identifies the capital's origin or a transfer mechanism, so Self-made, Inherited and Marriage / Family Transfer would each overstate the evidence."
+      "score": 78,
+      "band": "medium",
+      "reason": "ASX filings establish that Milenka and John Kolenda each owned 50% of Daring Investments, that John controlled the Daring entity receiving consideration shares for the founder-built Finsure business, and that a related holding used the Kolenda Family Trust. Exact-person family reporting independently establishes the marriage. Together these facts support the least-specific family-transfer label, but no public instrument identifies when or how Milenka acquired her interest."
     },
     "source_ids": [
       "S3",
+      "S4",
       "S5",
       "S6"
     ]
@@ -366,6 +367,8 @@
       "supports": [
         "Milenka Kolenda as spouse and associate of John Kolenda",
         "Her inclusion with the Kolenda-associated parties acquiring relevant interests",
+        "Daring Investments as a John-controlled entity receiving consideration shares for the Finsure transaction",
+        "Use of the Kolenda Family Trust in the transaction structure",
         "Listed financial-services transaction exposure without attributing John's founder role to her"
       ]
     },
@@ -470,7 +473,7 @@
     },
     {
       "topic": "Wealth origin",
-      "detail": "Milenka and John each held half of Daring Investments, but the sources do not establish who supplied the capital or whether Milenka's stake arose from her own earnings, shared marital enterprise or a transfer. Wealth origin therefore remains Unknown."
+      "detail": "Milenka and John each held half of Daring Investments, while transaction documents identify John as controlling the Daring entity that received consideration shares for Finsure and connect related holdings to the Kolenda Family Trust. Their marriage, the equal spousal vehicle and the founder-built asset support Marriage / Family Transfer at medium confidence, but the precise legal instrument, acquisition date and each spouse's original capital contribution remain undisclosed."
     },
     {
       "topic": "Current primary industry",
@@ -499,6 +502,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Milenka Kolenda is resolved above the identity threshold through an uncommon exact name, matching Croatian-Australian and Sydney context, spouse and child bridges, regulatory holdings, design credits and the existing LinkedIn profile. Finance & Investments is the evidenced wealth-creation sector, current primary industry and wealth origin remain Unknown, and her wealth relationship is Investor. Four detail proposals are supported; no new social or closed-taxonomy tag met the threshold. Silent World's exact current vessel identity is corroborated, while the undisclosed buyer and the unrelated older Silentworld history are explicitly quarantined. No dossier was compiled or applied and no live state was changed."
+    "notes": "Milenka Kolenda is resolved above the identity threshold through an uncommon exact name, matching Croatian-Australian and Sydney context, spouse and child bridges, regulatory holdings, design credits and the existing LinkedIn profile. Finance & Investments is the evidenced wealth-creation sector and origin-sector fallback for primary industry; Marriage / Family Transfer is the least-specific supported origin because her material interest was held through an equal spousal vehicle tied to her husband's founder-built finance business and a family trust, although the legal transfer route is not public. Her wealth relationship is Investor. Four detail proposals are supported; no new social or closed-taxonomy tag met the threshold. Silent World's exact current vessel identity is corroborated, while the undisclosed buyer and the unrelated older Silentworld history are explicitly quarantined. No dossier was compiled or applied and no live state was changed."
   }
 }

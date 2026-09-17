@@ -170,19 +170,18 @@
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "The wealth is clearly derived from her father's established family enterprise. Public evidence confirms personal family-business interests before his death and controlling-shareholder status afterwards, but does not establish how the principal present stake was divided between lifetime transfer and inheritance.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "A family transfer is inferred from Vitelli's succession and present ownership: Paolo Vitelli founded and remained the main shareholder of the family enterprise, Giovanna succeeded into its chair role, and later reporting identifies her as controlling shareholder. The public record does not distinguish lifetime transfer from inheritance or disclose the precise legal instrument.",
     "confidence": {
-      "score": 64,
-      "band": "low",
-      "reason": "Her 2022 statement that she had inherited the company was made while her father was alive; the 2023 company release still called him the main shareholder. Historical Fraser share ownership is a separate, subsequently sold interest. Neither that language nor management succession proves the legal timing of the principal stake's acquisition."
+      "score": 84,
+      "band": "medium",
+      "reason": "First-party history establishes Paolo's founder-controlled family platform and Giovanna's succession into leadership; the 2023 shareholder release still names Paolo as main shareholder, while 2025 reporting identifies Giovanna personally as controlling shareholder after his death. Those positive premises satisfy the amended family-succession inference rule. Her earlier colloquial inheritance wording does not establish the legal route, so the dossier does not use Inherited or Inherited and expanded."
     },
     "source_ids": [
       "S2",
       "S5",
       "S6",
-      "S7",
       "S8"
     ]
   },
@@ -308,40 +307,7 @@
       ]
     }
   ],
-  "candidates_requiring_review": [
-    {
-      "candidate_type": "wealth_classification",
-      "field": "wealth_origin",
-      "value": "Marriage / family transfer",
-      "summary": "Lifetime family transfer may describe her original access to the principal company assets; her pre-death language and historical separate share ownership support it, but the exact Azimut Benetti stake and timing remain unverified.",
-      "confidence": {
-        "score": 68,
-        "band": "low",
-        "reason": "Family-derived assets are established; the principal stake's lifetime transfer is not directly documented."
-      },
-      "source_ids": [
-        "S2",
-        "S6",
-        "S7"
-      ]
-    },
-    {
-      "candidate_type": "wealth_classification",
-      "field": "wealth_origin",
-      "value": "Inherited and expanded",
-      "summary": "She has materially developed the family enterprise, and later succession may have included inheritance after Paolo's death. The receipt and scale of any inherited principal stake are not established by the available sources.",
-      "confidence": {
-        "score": 68,
-        "band": "low",
-        "reason": "Operating transformation is supported, but management handover and family continuity do not by themselves prove an inheritance transaction."
-      },
-      "source_ids": [
-        "S5",
-        "S6",
-        "S8"
-      ]
-    }
-  ],
+  "candidates_requiring_review": [],
   "sources": [
     {
       "id": "S1",
@@ -470,7 +436,7 @@
     "Immutable identity: source person_id 8953 and display name retained. Saved Italian nationality, Italy residence and 29 April 1975 birth details remain unchanged. Public text, including her direct interview as a woman and daughter, clearly contradicts the saved Male field; a correction is proposed.",
     "Personal gaps: no additional middle names or secondary nationality established. Optional title, suffix and secondary residence are not invented; calculated and inapplicable death fields are not research targets.",
     "Shipbuilding is mapped to Manufacturing by the wealth-classification reference. A maritime tag facet does not override this explicit industry mapping.",
-    "Family control and active operation are well established. The precise acquisition route of the principal personal stake remains unresolved: pre-death references to inheriting the business can describe family succession colloquially, while 2023 primary material still calls Paolo the main shareholder. Do not equate management appointment, fatherhood or death with a verified legal transfer.",
+    "Marriage / family transfer is inferred at medium confidence from Paolo's founder-controlled family platform, Giovanna's succession into the chair role and later reporting that identifies her personally as controlling shareholder. The precise acquisition route remains unresolved: pre-death references to inheriting the business can describe family succession colloquially, while 2023 primary material still calls Paolo the main shareholder. The dossier therefore does not claim a verified inheritance, lifetime gift or mixed origin.",
     "Family hotel interests and outside boards do not justify Diversified. Historical Fraser holdings ceased in 2019 and are not current personal ownership. A minority sovereign investor in the private company does not make this individual or family enterprise Government-owned.",
     "Forbes-first exact-profile and name searches found editorial articles and interviews, without a verified /profile/ page. The interview superlative is not adopted as a current ranking or personal net-worth estimate.",
     "Social searches covered exact-name personal Instagram, LinkedIn and website queries, plus Facebook, Twitter/X, YouTube, TikTok, Vimeo, Flickr and Wikipedia. Returned organisation posts or namesake profiles do not establish personal accounts. TikTok retrieval was blocked by robots. Trip Advisor and Zillow are not relevant to the established public identity. No verified personal social account is proposed.",
@@ -483,6 +449,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Terminal resolved-person research decision. Main inventory preceded Forbes-first research. Three personal-field proposals, one company website and one precise active tag; four wealth fields independently considered, with origin Unknown and two alternatives. Source-hidden brief and separate allocation produced complementary biographies, reverse-checked against directly read sources. No shared input, live website, source code, catalogue or workflow flags changed. The revised pair contains 50 and 102 words. Ordinary business wording preserves the shipbuilding facts without ambiguous standalone yacht terminology; strict exact-input validation is rerun before acceptance."
+    "notes": "Amended wealth-policy audit completed. The four classifications are Manufacturing, Manufacturing, Marriage / family transfer and Operator. The origin value is a medium-confidence inference from Paolo's founder-controlled business, Giovanna's succession into the chair role and her later reported controlling-shareholder status; it does not claim a specific lifetime transfer, inheritance or mixed mechanism. The other three classifications remain strongly supported and unchanged. The obsolete family-transfer and inherited-and-expanded review candidates were removed. Existing biographies, tags, socials and proposed details were preserved. No shared input, live website, source code, catalogue or workflow flags changed."
   }
 }

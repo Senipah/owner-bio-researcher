@@ -168,26 +168,28 @@
     ]
   },
   "primary_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "The documented tourism operation ceased in March 2019, and no reliable current business role has been verified for Nazor.",
+    "classification": "shipping_maritime",
+    "label": "Shipping & Maritime",
+    "summary": "The documented coastal-cruise operation ceased in March 2019 and no later business role is verified, so Shipping & Maritime is used as the disclosed origin-sector fallback.",
     "confidence": {
-      "score": 95,
-      "band": "very_high",
-      "reason": "Croatian business data reports that Nazor's sole-trader operation is no longer active and gives March 2019 as the cessation date. Targeted searches did not establish a later operating company or present professional role, so a current industry cannot be assigned safely."
+      "score": 80,
+      "band": "medium",
+      "reason": "Sources S3, S4 and S5 establish Shipping & Maritime as the wealth-creation sector, while S3 records the operation's cessation and no later platform is established. The label is an explicit origin-sector reporting fallback and does not assert a current maritime holding."
     },
     "source_ids": [
-      "S3"
+      "S3",
+      "S4",
+      "S5"
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Nazor owned and operated the tourism business, but reviewed sources do not establish whether she founded it, acquired it or received family capital or assets.",
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Broad Self-made is inferred from Nazor's ownership and direct operation of an owner-named Croatian sole-trader tourism business established in 2006 and sustained for more than a decade. The public record does not reveal its startup capital or whether family resources materially assisted the launch, so no narrower starting-position subtype is assigned.",
     "confidence": {
-      "score": 95,
-      "band": "very_high",
-      "reason": "Business and agency records consistently identify Nazor as owner, yet none documents the formation, acquisition or financing mechanism. Ownership alone cannot distinguish self-made, inherited or mixed wealth origin."
+      "score": 78,
+      "band": "medium",
+      "reason": "Croatian business data identifies the owner-branded sole-trader enterprise, names Laura Nazor as its owner and dates its establishment to 2006. Historical agency materials and an independent specialist directory connect her directly to the business and its operating services over time. Together those facts support the ordinary inference that she built or earned the principal documented business position. The exact formation act, startup finance and family background remain unavailable, capping the inference and precluding independent-start or advantaged-start subtypes."
     },
     "source_ids": [
       "S3",
@@ -383,11 +385,11 @@
     },
     {
       "topic": "Current occupation and primary industry",
-      "detail": "Croatian business data reports that Nazor's sole-trader tourism operation ceased in March 2019. No reliable later company or executive role was found, so Primary Industry remains Unknown rather than carrying a historical activity forward as current."
+      "detail": "Croatian business data reports that Nazor's sole-trader tourism operation ceased in March 2019. No reliable later company or executive role was found, so Primary Industry uses Shipping & Maritime as the disclosed origin-sector fallback rather than claiming that the historical activity remains current."
     },
     {
       "topic": "Wealth origin",
-      "detail": "The reviewed sources identify Nazor as owner and direct operator but do not state whether she founded, purchased or inherited the business or received material family capital. Wealth Origin therefore remains Unknown."
+      "detail": "The amended reasonable-inference audit resolves Wealth Origin to broad Self-made at medium confidence. Croatian business data records the owner-branded sole-trader operation as established in 2006 and identifies Laura Nazor as its owner; historical agency materials and an independent directory show her direct operation of the same platform over time. That positive convergence supports an inferred built-or-earned origin for the principal documented business position. The precise formation act, startup capital and family background are not public, so Self-made — independent start and Self-made — advantaged start cannot be distinguished. No family predecessor, inheritance or transfer is documented to support inherited variants or Marriage / family transfer, and Mixed lacks a second independently material mechanism."
     },
     {
       "topic": "Business scale and personal wealth",
@@ -408,6 +410,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Person 1575 is resolved at 100 confidence to Croatian tourism entrepreneur Laura Nazor. An official Croatian ministry document supplies the exact identity bridge, while Croatian business data, a historical agency brochure and an independent directory establish her former ownership and operation of Lion Queen Charter. Wealth Creation Industry is Shipping & Maritime, Primary Industry and Wealth Origin are Unknown, and Wealth Relationship is Operator. The dossier fills a durable known-for title and 52-word independent biography, provides a 108-word two-paragraph long profile, proposes the active Maritime tourism tag and rejects an Australian LinkedIn namesake. No current personal social profile met the publication threshold. Private-asset facts are confined to identity disambiguation, and no research has been compiled or applied.\n\nOwner-tag consolidation research context: [1] Maritime tourism: Nazor's defining business was a specialist Croatian coastal-cruise agency. [2] Tour operator: Croatian business data identifies the registered activity directly. [3] Charter tourism: Historical agency materials and an independent directory establish sustained specialisation. [4] Travel services: The agency coordinated reservations, itineraries, transfers and guest logistics. [5] Croatian tourism: The business was based in Jesenice and marketed Adriatic holidays. [6] Small-group cruising: Agency materials describe tailored coastal itineraries. [7] Hospitality logistics: The owner-led model combined booking with practical guest support. [8] Former business operator: Public records report cessation in March 2019."
+    "notes": "Person 1575 is resolved at 100 confidence to Croatian tourism entrepreneur Laura Nazor. An official Croatian ministry document supplies the exact identity bridge, while Croatian business data, a historical agency brochure and an independent directory establish her former ownership and operation of Lion Queen Charter. The amended-policy audit resolves Wealth Origin to broad Self-made at 78: records identify the owner-branded sole-trader business as established in 2006, name Nazor as its owner and show her directly operating the same platform over time, supporting an inferred built-or-earned origin. Startup capital and family background remain unavailable, so independent-start and advantaged-start subtypes are not assigned; inherited, family-transfer and Mixed alternatives lack positive mechanisms. Wealth Creation Industry remains Shipping & Maritime, Primary Industry uses Shipping & Maritime as the disclosed origin-sector fallback, and Wealth Relationship remains Operator. Biography facts, prose and the separate owner-tag consolidation backfill are preserved. The dossier fills a durable known-for title and 52-word independent biography, provides a 108-word two-paragraph long profile, proposes the active Maritime tourism tag and rejects an Australian LinkedIn namesake. No current personal social profile met the publication threshold. Private-asset facts are confined to identity disambiguation, and no research has been compiled or applied.\n\nOwner-tag consolidation research context: [1] Maritime tourism: Nazor's defining business was a specialist Croatian coastal-cruise agency. [2] Tour operator: Croatian business data identifies the registered activity directly. [3] Charter tourism: Historical agency materials and an independent directory establish sustained specialisation. [4] Travel services: The agency coordinated reservations, itineraries, transfers and guest logistics. [5] Croatian tourism: The business was based in Jesenice and marketed Adriatic holidays. [6] Small-group cruising: Agency materials describe tailored coastal itineraries. [7] Hospitality logistics: The owner-led model combined booking with practical guest support. [8] Former business operator: Public records report cessation in March 2019."
   }
 }

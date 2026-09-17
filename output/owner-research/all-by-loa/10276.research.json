@@ -157,31 +157,35 @@
     ]
   },
   "primary_industry": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "No reliable public source establishes Wachob's principal current holding or operating platform after Paragon's operating assets were sold and he was described as its former chief executive.",
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "No reliable public source establishes Wachob's principal current holding after Paragon's operating assets were sold, so Manufacturing is used as the disclosed origin-sector fallback from his documented steel-pipe business.",
     "confidence": {
-      "score": 100,
-      "band": "very_high",
-      "reason": "Current local reporting establishes the end of the Paragon tenure and sale of operating assets, but not a replacement principal business. Manufacturing remains his documented historical wealth-creation sector and is not silently carried forward as a current holding."
+      "score": 80,
+      "band": "medium",
+      "reason": "Sources S2, S3 and S5 establish Manufacturing as the wealth-creation sector, while S6 and S7 establish the sale and the absence of a documented replacement business. The label is an explicit origin-sector reporting fallback and does not assert verified current manufacturing holdings."
     },
     "source_ids": [
+      "S2",
+      "S3",
+      "S5",
       "S6",
       "S7"
     ]
   },
   "wealth_origin": {
-    "classification": "unknown",
-    "label": "Unknown",
-    "summary": "Family-business succession is documented, but the public evidence does not establish an inheritance, transfer of ownership, founder-created enterprise or independently financed start for Wachob personally.",
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Wachob gained ownership and control of the steel-pipe business founded and built by his parents through family succession; the timing and precise legal transfer mechanism are not public.",
     "confidence": {
-      "score": 100,
-      "band": "very_high",
-      "reason": "Sources establish that Jack and Linda Wachob built the business and prepared Derek for leadership, but they do not document when or how Derek acquired any economic stake. Management succession alone cannot establish inherited wealth or an ownership transfer."
+      "score": 82,
+      "band": "medium",
+      "reason": "Sources establish that Jack and Linda Wachob created and built Paragon, that Jack prepared Derek to run it, and that Derek became chief executive. Independent local reporting subsequently identifies Derek as Paragon's owner. Those convergent premises satisfy the family-transfer inference by linking parental creation, succession and present ownership of the same principal business, but the confidence is capped because the transfer timing and legal instrument are not disclosed."
     },
     "source_ids": [
       "S2",
-      "S3"
+      "S3",
+      "S8"
     ]
   },
   "wealth_relationship": {
@@ -448,14 +452,26 @@
         "absence of an identified replacement principal operating company",
         "current role and primary-industry uncertainty only; property details are excluded"
       ]
+    },
+    {
+      "id": "S8",
+      "url": "https://sapulpatimes.com/sapulpa-times-responds-to-allegations-related-to-paragon-industries-and-the-sapulpa-herald/",
+      "title": "Sapulpa Times responds to allegations related to Paragon Industries and the Sapulpa Herald",
+      "publisher": "Sapulpa Times",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Direct identification of Derek Wachob as Paragon Industries' owner in December 2024.",
+        "Ownership evidence used only to complete the documented family-succession chain; allegations and unrelated property details are excluded."
+      ]
     }
   ],
   "uncertainties": [
     "Identity is resolved at 100 through the exact uncommon name, Paragon chief-executive role, Sapulpa geography, Jack Wachob family relationship and independently documented middle initial. No private-asset assertion is used as a public identity bridge.",
     "The source display name contains a doubled space and its parsed first-name field has trailing whitespace. Exact-person public records support the apply-ready normalizations Derek Wachob and Derek.",
     "City records support only the middle initial E.; no authoritative source found in this research expands it to a full middle name, so the proposal preserves the initial rather than adopting an unverified expansion.",
-    "Jack and Linda Wachob built the underlying company and Jack prepared Derek for leadership, establishing family-business succession. The available evidence does not document an inheritance, purchase, gift or other transfer of Derek's economic stake, so wealth origin remains Unknown.",
-    "Manufacturing is the documented wealth-creation sector and Operator is the documented relationship because Wachob led Paragon but did not found it. Primary industry remains Unknown because the operating assets were sold and no reliable source establishes a replacement principal holding or current operating platform.",
+    "Jack and Linda Wachob built the underlying company, Jack prepared Derek for leadership, and independent local reporting later identifies Derek as Paragon's owner. Marriage / family transfer is therefore inferred at 82 from parental creation, succession and present ownership of the same core business. Inherited and Inherited and expanded are rejected because inheritance itself is not documented; Self-made — advantaged start is rejected because the family company remained the principal wealth-producing asset; Mixed lacks a separately supported second material origin mechanism.",
+    "Manufacturing is the documented wealth-creation sector and Operator is the documented relationship because Wachob led Paragon but did not found it. Primary Industry uses Manufacturing as the disclosed origin-sector fallback because the operating assets were sold and no reliable source establishes a replacement principal holding or current operating platform; it does not assert current manufacturing ownership.",
     "The federal indictment is used only as a primary identity and historical-role source. Its allegations, any anticipated plea, civil claims and related private property details are excluded from biographies, wealth classifications, tags and proposals unless and until a durable adjudicated outcome becomes relevant.",
     "No strong public source establishes a place of birth, secondary nationality or secondary residence, so those fields remain unproposed.",
     "Steel is the sole minimum-useful active tag. Broader energy, oilfield-services and industrial labels would describe Paragon's customers or market rather than a separately evidenced defining operating platform for Wachob.",
@@ -465,6 +481,6 @@
   ],
   "review": {
     "status": "complete",
-    "notes": "Terminal resolved-person dossier. Identity confidence is 100. Wealth is classified Manufacturing, Unknown current primary industry, Unknown origin and Operator. Steel is the single minimum-useful active tag. No exact personal socials were proposed, and nothing has been compiled, approved or applied."
+    "notes": "Terminal resolved-person dossier. Identity confidence is 100. Wealth creation is Manufacturing; Primary Industry uses Manufacturing as the disclosed origin-sector fallback; under the amended reasonable-inference policy, origin is Marriage / family transfer based on parental creation, father-son succession and Derek's independently reported ownership of Paragon; and relationship is Operator. The precise transfer instrument and inheritance status remain unresolved. Steel is the single minimum-useful active tag. No exact personal socials were proposed, and nothing has been compiled, approved or applied."
   }
 }
