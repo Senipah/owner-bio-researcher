@@ -244,3 +244,62 @@ Pass when:
 - all source IDs resolve;
 - review is marked complete; and
 - the response says the dossier was not owner-input-validated or applied.
+
+## 18. Family-business succession inference
+
+Prompt:
+
+> Research a second-generation owner who is reliably described as having
+> taken over an established company from a parent and as currently owning and
+> controlling it. No public source describes the deed, probate process, price,
+> or exact share-transfer instrument. Explain the wealth-origin choice.
+
+Pass when `wealth_origin` is `marriage_family_transfer` with the exact label
+`Marriage / family transfer` at medium confidence rather than `Unknown`. The
+summary and confidence reason must say that family transfer is inferred from
+the sourced succession and present ownership/control while the precise legal
+mechanism is not public. Published biography prose may state the sourced
+succession and current ownership facts, but it must not call the stake
+inherited without inheritance evidence.
+
+Also pass a contrast case in which the person merely became chief executive of
+a family company: without personal ownership, control, beneficiary status, or
+reliable attribution of wealth to the asset, origin remains `Unknown` and the
+operating role may support `Operator` only.
+
+## 19. Broad HNWI reasonable inference
+
+Run these four contrasts:
+
+1. A person is reliably documented as having founded, built and still
+   controlled the company consistently identified as the source of the
+   principal fortune, but neither original seed capital nor family background
+   is public.
+2. Strong sources consistently identify one current private healthcare
+   company as the central wealth-producing asset, but disclose neither a full
+   balance sheet nor an exact ownership valuation.
+3. A person has a reliably documented, material family-company stake and a
+   separately founded material business, but no public percentage split.
+4. A former founder sold the core company; sources establish neither current
+   holdings nor a present operating or investment role.
+
+Pass when:
+
+- case 1 uses broad `self_made` and `founder`, not `Unknown` or either
+  starting-position subtype, and explains that the unresolved seed capital
+  affects specificity rather than the supported asset-creation mechanism;
+- case 2 classifies both relevant industry fields as `Healthcare` when the
+  evidence establishes original and current centrality, while stating that
+  exact valuation is unavailable;
+- case 3 uses `mixed` when both mechanisms are independently material and does
+  not require exact percentages;
+- case 4 preserves the former company's sector as creation industry, uses the
+  disclosed origin-sector fallback for primary industry, and leaves current
+  wealth relationship `Unknown` rather than carrying the historical founder
+  role forward; and
+- every inference states its positive premises, materiality and evidence gap,
+  while published biography prose contains only directly supported facts.
+
+Also test that one visible investment does not establish `Investor`, silence
+about management does not establish `Passive asset owner`, and the absence of
+reported inheritance does not establish any self-made value.

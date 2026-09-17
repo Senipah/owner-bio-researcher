@@ -98,8 +98,18 @@ statistics.
    but `wealth_creation_industry` is known, use that origin sector for both
    industry fields and explicitly label `primary_industry` as an origin-sector
    fallback in its summary and confidence reason. Do not imply that current
-   holdings were verified. Prefer how wealth or prominence
-   was created over its current amount. Within self-made wealth, distinguish
+   holdings were verified. For every HNWI field, choose the best-supported
+   value that reaches 70 from direct evidence or a transparent reasoned
+   inference. Require positive, convergent evidence for every material premise
+   and for the asset or role's importance to the principal wealth; do not
+   require the source to use the database label or publish an exact valuation.
+   Step back to the least-specific supported value before `unknown`: this can
+   mean broad `self_made`, `mixed`, a documented core-business sector, a
+   current asset relationship, the disclosed origin-sector fallback, or
+   medium-confidence family transfer when their field-specific tests pass.
+   Never reason from silence or bootstrap one inferred classification from
+   another. Prefer how wealth or prominence was created over its current
+   amount. Within self-made wealth, distinguish
    an evidenced independent start from an advantaged one; do not equate
    founder ownership with a blank-slate upbringing.
 5. Select the minimum useful literal tag set after identity and wealth
@@ -324,6 +334,22 @@ suppression without calling the tag publishable or approved.
   person lacked privilege or assistance. When a substantial family or social
   platform materially shaped the start, classify and describe it neutrally
   while preserving the person's separately evidenced achievement.
+- Treat the HNWI fields as evidence-based editorial classifications rather
+  than legal findings. Use transparent reasoned inference when positive,
+  convergent facts establish every material premise and the asset or role's
+  importance to the principal wealth. Do not use `Unknown` merely because a
+  deed, probate record, valuation, cap table, complete holdings schedule, or
+  explicit wealth-source statement is unavailable. Use the least-specific
+  supported value when a narrower subtype cannot be justified. Record the
+  inference and missing evidence in classification metadata; phrase published
+  prose only as strongly as the directly sourced facts allow.
+- Never reason from silence: no reported inheritance does not prove self-made
+  status, no reported operating role does not prove passive ownership, and no
+  reported competing sector does not prove dominance. A surname, title, board
+  seat, isolated investment, family association, or historical role alone is
+  insufficient. Apply the positive-premise tests for founder-built wealth,
+  mixed origins, industries, current asset relationships, and family
+  succession in `references/wealth-classification.md`.
 - Do not make an institution the grammatical object of family funding when the
   supported fact concerns education costs, trading capital, or another
   specific purpose. Replace vague causal references such as "those results"
@@ -370,6 +396,21 @@ suppression without calling the tag publishable or approved.
   the separate `family_office_principal` wealth relationship remains valid.
 - Confirm inherited wealth follows its underlying industries, and royal or
   dynastic records do not assume `Energy` from an oil-producing state.
+- Confirm `Unknown` is used only after direct evidence, field-specific
+  inference, and a less-specific supported value all fail to reach 70. Every
+  inference must name its sourced positive premises, materiality, conclusion,
+  and evidence gap without circular support from another classification.
+- Confirm broad `self_made` is used for a demonstrably founder-built principal
+  asset when only the starting platform is unresolved; `mixed` requires two
+  independently material mechanisms; industry dominance requires a clearly
+  central wealth-producing business or the disclosed origin-sector fallback;
+  and relationship labels describe the principal current asset role rather
+  than an isolated, honorary, or merely historical role.
+- For family-business succession, confirm medium-confidence
+  `marriage_family_transfer` when succession and present economic
+  ownership/control are supported but the legal route is not public;
+  management succession alone remains insufficient, and `inherited` or
+  `inherited_and_expanded` requires evidence of inheritance.
 - Confirm proposed facts and socials score at least 70.
 - Confirm the short biography is one paragraph and 50-55 words.
 - Confirm the short biography uses every useful, strongly sourced identity

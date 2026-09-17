@@ -69,6 +69,18 @@ def test_generated_gpt_knowledge_is_current() -> None:
         "## Inherited operator: Stephen Orenstein",
     ):
         assert calibration in knowledge
+    assert (
+        "### Best-supported classification, specificity and reasoned inference"
+        in knowledge
+    )
+    assert "### Family-business succession without transfer documents" in knowledge
+    assert "### Other wealth-origin inferences" in knowledge
+    assert "The absence of one of those documents is not, by itself" in knowledge
+    assert "step back to the least-specific" in knowledge
+    assert "supported value before using `unknown`" in knowledge
+    assert "Apply these relationship inference rules" in knowledge
+    assert "Silence about management is not enough" in knowledge
+    assert "`marriage_family_transfer` at medium confidence" in knowledge
 
 
 def test_gpt_catalogue_exposes_only_active_closed_world_tags() -> None:
@@ -99,7 +111,7 @@ def test_gpt_catalogue_exposes_only_active_closed_world_tags() -> None:
 def test_gpt_instructions_are_concise_and_decision_complete() -> None:
     instructions = INSTRUCTIONS.read_text(encoding="utf-8")
 
-    assert len(instructions) <= 6_500
+    assert len(instructions) <= 7_000
     for required in (
         "## Intake",
         "A name alone is sufficient",
@@ -113,7 +125,11 @@ def test_gpt_instructions_are_concise_and_decision_complete() -> None:
         "closed-world whitelist",
         "Never invent,\n   propose or request creation of a tag",
         "## Biography requirements",
-        "distinguish an evidenced\n   independent start from an advantaged one",
+        "broad `self_made` for a founder-built",
+        "For every field use the best-supported value at confidence 70+",
+        "Prefer a broader\n   supported value to `unknown`",
+        "Never infer from silence",
+        "Follow\n   Knowledge's separate tests for sectors, `mixed`, and current relationships",
         "a broad wealth descriptor such as `billionaire`",
         "Silently omit anything unavailable",
         "For `self_made_advantaged`",
@@ -239,6 +255,16 @@ def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
     assert "mandatory `Forbes` type/URL pair" in preview_tests
     assert "no Forbes link is invented" in preview_tests
     assert "## 17. Download and structural checks" in preview_tests
+    assert "## 18. Family-business succession inference" in preview_tests
+    assert "`marriage_family_transfer`" in preview_tests
+    assert "merely became chief executive" in preview_tests
+    assert "## 19. Broad HNWI reasonable inference" in preview_tests
+    assert "case 1 uses broad `self_made` and `founder`" in preview_tests
+    assert "case 3 uses `mixed`" in preview_tests
+    assert "leaves current\n  wealth relationship `Unknown`" in preview_tests
+    assert "silence\nabout management does not establish `Passive asset owner`" in (
+        preview_tests
+    )
 
 
 def test_manual_dossier_example_contract_and_strict_validation() -> None:

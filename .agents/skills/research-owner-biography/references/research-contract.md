@@ -93,6 +93,44 @@ classifications require confidence 70 or higher. Inherited and royal status
 describe origin, not either industry. Do not treat state, crown, sovereign, or
 office-held assets as personal property without strong evidence.
 
+Use the best-supported classification that reaches 70 from direct evidence or
+a transparent reasoned inference. Apply that principle independently to all
+four HNWI fields. Reliable sources must establish every material premise and
+show that the business, asset, transfer, or role is material to the principal
+wealth; the sources need not use the database's exact label or publish an
+exact valuation. When a narrow subtype is unresolved, use the least-specific
+supported value before `unknown`, such as broad `self_made` for a demonstrably
+founder-built principal asset whose starting platform is unclear.
+
+Record the positive premises, the inference, and the important evidence gap in
+the classification summary and confidence reason. Score 70-84 when a material
+link is inferred; a higher score requires direct support or a definitional
+mapping from directly supported facts. Do not use one classification as
+circular evidence for another. Keep published biography prose to the directly
+supported facts rather than presenting an inferred mechanism as fact.
+
+A missing deed, probate record, cap table, transaction value, complete asset
+schedule, or express wealth-source statement does not itself require
+`unknown`. Examples of permitted inference include a principal founder-built
+business supporting broad `self_made`; a clearly central wealth-producing
+business supporting its industry; sustained direction of the core asset
+supporting `operator`; sustained capital allocation supporting `investor`; two
+independently material origin mechanisms supporting `mixed`; and succession to
+an established family business plus present personal ownership, control,
+shareholding, beneficiary status, or wealth attribution supporting
+medium-confidence `marriage_family_transfer` when the legal route is not
+public.
+
+Do not reason from silence. A family surname, employment, board seat, isolated
+investment, management title, or historical founder role is not enough; nor
+does the absence of reported inheritance prove self-made status or the absence
+of an operating role prove passive ownership. Use `inherited` only when
+inheritance is supported, and `inherited_and_expanded` only when both
+inheritance and material personal expansion are supported. Use `unknown` when
+a necessary premise remains unsupported, evidence materially conflicts, or no
+available value reaches 70, and state the missing premise and strongest
+alternative considered.
+
 Within self-made wealth, distinguish a materially independent start from an
 advantaged one when strong sources establish the person's family and starting
 platform. Retain broad `self_made` when the person demonstrably created the

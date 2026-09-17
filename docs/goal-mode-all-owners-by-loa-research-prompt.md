@@ -160,6 +160,45 @@ For every target owner:
    this is an origin-sector fallback, without claiming verified current
    holdings. Keep `wealth_origin` as a separate acquisition mechanism.
 
+   For every HNWI field, choose the best-supported classification that reaches
+   confidence 70 from direct evidence or a transparent reasoned inference.
+   Require positive, convergent evidence for every material premise and for
+   the business, asset, transfer, or role's importance to the principal
+   wealth. The source need not use the database's exact label or publish a
+   full balance sheet, exact valuation, ownership percentage, deed, probate
+   record, cap table, or transaction price. When a narrow subtype is
+   unresolved, step back to the least-specific supported value before using
+   `Unknown`.
+
+   Apply the field-specific rules in `wealth-classification.md`, including:
+
+   - use broad `self_made` when a founder-built, acquired, or career-earned
+     principal asset is established but seed capital or starting advantage is
+     unresolved;
+   - use `mixed` when two or more origin mechanisms are independently
+     supported and material, without requiring exact percentages;
+   - infer an industry from a clearly central wealth-producing business even
+     without an exact asset valuation, while using `diversified` only when
+     several unrelated sectors are positively material and none dominates;
+   - infer `founder`, `operator`, `investor`, `heir_family_shareholder`, or
+     `family_office_principal` from the documented principal current asset
+     relationship, not an isolated, honorary, or historical role;
+   - use `passive_asset_owner` only when both ownership and passive or
+     delegated stewardship are positively supported; and
+   - use medium-confidence `marriage_family_transfer` when sources establish a
+     pre-existing family asset, succession from a relative, and present
+     personal ownership, control, shareholding, beneficiary status, or
+     reliable attribution of wealth to that asset, even though the precise
+     legal route is not public.
+
+   Record the positive premises, materiality, inference, and important gap in
+   the classification summary and confidence reason. Never reason from
+   silence or use one inferred field as circular support for another. A
+   surname, family association, title, board seat, one investment, or absent
+   contrary evidence is insufficient. Use `inherited` only when inheritance
+   is supported and `inherited_and_expanded` only when both inheritance and
+   material expansion are supported.
+
 6. Apply the current self-made starting-position distinctions:
 
    - use `self_made_independent` only with positive evidence of a materially

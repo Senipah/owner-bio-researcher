@@ -128,6 +128,35 @@ After all dossiers validate, perform a main-agent consistency review:
   oil-producing state is not treated as evidence of personal `Energy` wealth;
 - inherited, self-made, dynastic/royal, family-transfer, mixed, and unknown
   origin classifications are applied consistently;
+- HNWI fields use the best-supported confidence-70-or-higher value from direct
+  evidence or a disclosed reasoned inference, with every material premise and
+  the asset or role's importance positively sourced; a missing exact label,
+  valuation, ownership percentage, holdings schedule, or transfer instrument
+  does not by itself require `Unknown`;
+- the least-specific supported value is used before `Unknown`: broad
+  `self_made` for a demonstrably founder-built principal asset with unresolved
+  starting position, and `mixed` when multiple independently evidenced origin
+  mechanisms are material without a reliable percentage split;
+- industries may follow a clearly central wealth-producing business without
+  an exact balance sheet; `diversified` requires several positively material
+  sectors, not merely incomplete research;
+- wealth relationships describe the principal current asset role:
+  `founder`, `operator`, `investor`, `heir_family_shareholder`, and
+  `family_office_principal` may follow their documented positive premises,
+  while a historical role, title, board seat, isolated investment, or silence
+  about management is insufficient; `passive_asset_owner` requires positive
+  support for both ownership and passive or delegated stewardship;
+- family-business succession plus present personal ownership, control,
+  shareholding, beneficiary status, or reliable wealth attribution is treated
+  as a medium-confidence family transfer when the exact route is not public;
+  family association or a management title alone is not;
+- every inference summary and confidence reason records its positive premises,
+  materiality, conclusion, and important gap; no inferred field is used as
+  circular support for another and no conclusion rests on absent contrary
+  evidence;
+- `inherited` requires supported inheritance, while
+  `inherited_and_expanded` additionally requires a material, evidenced
+  personal expansion or transformation;
 - wealth-creation industry follows the sector that principally created the
   original fortune, current primary industry follows the principal
   identifiable private interests as of research; when current primary industry
