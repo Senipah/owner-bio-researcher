@@ -1,0 +1,333 @@
+{
+  "schema_version": 8,
+  "record_type": "institution",
+  "owner": {
+    "person_id": 1636,
+    "display_name": "Russian Orthodox Church",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The source record names the Russian Orthodox Church exactly and associates it with Pallada from 2005. The church's official statute identifies the Russian Orthodox Church as a multinational autocephalous church and centralised religious organisation comprising the Moscow Patriarchate. Radio Free Europe/Radio Liberty and Kommersant independently report that Pallada was transferred to the church in 2005 and held on the Moscow Patriarchate's balance, providing a rare exact entity-to-record bridge. The record is therefore resolved as the institution, not Patriarch Kirill or another officeholder."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This owner record represents the Russian Orthodox Church, a centralised religious organisation and autocephalous church, rather than a natural person. The person-shaped first-name, surname, nationality, residence and mortality fields are source-schema artefacts and must not be treated as biographical facts. Person-specific wealth, birth and social-profile proposals are therefore inapplicable; the website biography fields instead describe the continuing institution.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The exact institutional name, legal form, ecclesiastical structure and source-record relationship are established by the source record, the church's official statute and independent reporting."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S6",
+      "S7"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Mandatory Forbes-first exact-name and site:forbes.com/profile searches found commentary and reporting about the Russian Orthodox Church but no dedicated Forbes profile for the institution. No Forbes social link is proposed."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Wealth-creation industry is a person-level private-wealth classification and is not assigned to this religious institution record.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The official statute establishes a centralised religious organisation rather than a natural person. No individual's private fortune can be transferred to the institution, so Unknown is the applicable institutional classification."
+    },
+    "source_ids": [
+      "S1",
+      "S3"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "A principal private-wealth sector does not apply to the Russian Orthodox Church as an ecclesiastical institution.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The record resolves to a religious organisation with canonical and legal structures, not a person whose current private holdings can be classified by industry."
+    },
+    "source_ids": [
+      "S1",
+      "S3"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Self-made, inherited, family-transfer and dynastic origin labels do not apply to a continuing church institution.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Official evidence establishes an institution rather than a natural person. Its history and religious assets cannot be converted into a personal acquisition mechanism."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Founder, operator, investor, heir and custodian labels describe a person's relationship to private wealth-producing assets and do not represent the church institution.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The source and official statute identify a religious body governed through councils, the Holy Synod and canonical units. No natural-person wealth relationship can be assigned to that entity."
+    },
+    "source_ids": [
+      "S1",
+      "S3"
+    ]
+  },
+  "biography": {
+    "plain_text": "The Russian Orthodox Church, also known as the Moscow Patriarchate, is a multinational autocephalous Eastern Orthodox church. Its structure encompasses self-governing churches, exarchates, dioceses, parishes, monasteries, missions and theological schools. Its highest governing bodies are the Local Council, Bishops’ Council and Holy Synod, headed by the Patriarch of Moscow and All Russia.",
+    "html": "<p>The Russian Orthodox Church, also known as the Moscow Patriarchate, is a multinational autocephalous Eastern Orthodox church. Its structure encompasses self-governing churches, exarchates, dioceses, parishes, monasteries, missions and theological schools. Its highest governing bodies are the Local Council, Bishops’ Council and Holy Synod, headed by the Patriarch of Moscow and All Russia.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The church's official statute directly establishes its canonical identity, constituent units, hierarchical governance and supreme governing bodies."
+    },
+    "source_ids": [
+      "S3"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "The Russian Orthodox Church traces its institutional history to the Christianisation of Rus' in 988. Its ecclesiastical centre moved from Kyiv to Vladimir and then Moscow, and it became effectively independent in 1448. The Moscow Patriarchate was established in 1589, formalising a patriarchal leadership recognised by the other Eastern patriarchs.\n\nIts governing structure combines councils, the Holy Synod and a network of canonical units that includes dioceses, parishes, monasteries, theological institutions and missions. Alongside worship and pastoral care, its formal social teaching addresses charity, education, public morality, culture and cooperation with civic institutions. These functions are carried through church bodies rather than centred on any single officeholder.",
+    "html": "<p>The Russian Orthodox Church traces its institutional history to the Christianisation of Rus' in 988. Its ecclesiastical centre moved from Kyiv to Vladimir and then Moscow, and it became effectively independent in 1448. The Moscow Patriarchate was established in 1589, formalising a patriarchal leadership recognised by the other Eastern patriarchs.</p>\r\n<p>Its governing structure combines councils, the Holy Synod and a network of canonical units that includes dioceses, parishes, monasteries, theological institutions and missions. Alongside worship and pastoral care, its formal social teaching addresses charity, education, public morality, culture and cooperation with civic institutions. These functions are carried through church bodies rather than centred on any single officeholder.</p>\r\n",
+    "word_count": 107,
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Official church documents support the historical milestones, governing structures and durable areas of social teaching. The profile avoids current personnel, disputed jurisdictional detail and transient statistics."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "biography",
+      "value": "<p>The Russian Orthodox Church, also known as the Moscow Patriarchate, is a multinational autocephalous Eastern Orthodox church. Its structure encompasses self-governing churches, exarchates, dioceses, parishes, monasteries, missions and theological schools. Its highest governing bodies are the Local Council, Bishops’ Council and Holy Synod, headed by the Patriarch of Moscow and All Russia.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The biography accurately describes the institutional record from the church's official statute and does not force person-specific attributes."
+      },
+      "source_ids": [
+        "S3"
+      ]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1636",
+      "title": "Russian Orthodox Church owner record, person ID 1636",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Immutable person ID and exact institutional display name",
+        "Person-shaped source fields and blank biography",
+        "No existing social profiles",
+        "Pallada relationship beginning in 2005 used only for identity disambiguation"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/search/?q=%22Russian%20Orthodox%20Church%22",
+      "title": "Forbes search for Russian Orthodox Church",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Mandatory exact-name Forbes-first search",
+        "No dedicated Forbes profile for the institution",
+        "Forbes not-found decision"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://mospat.ru/en/documents/92086-i-general-provisions/",
+      "title": "I. General provisions",
+      "publisher": "Russian Orthodox Church Department for External Church Relations",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Russian Orthodox Church as a multinational local autocephalous church",
+        "Moscow Patriarchate as the body comprising its canonical units",
+        "Legal registration as a centralised religious organisation",
+        "Self-governing churches, exarchates, dioceses, parishes, monasteries, missions and theological institutions",
+        "Local Council, Bishops' Council and Holy Synod as supreme governing bodies",
+        "Hierarchical governance headed by the office of Patriarch"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://mospat.ru/en/documents/92111-the-distortion-of-the-orthodox-doctrine-of-the-church-in-the-actions-and-words-of-the-hierarchy-of-t/",
+      "title": "The Distortion of the Orthodox Doctrine of the Church in the Actions and Words of the Hierarchy of the Patriarchate of Constantinople",
+      "publisher": "Russian Orthodox Church Department for External Church Relations",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Institutional history traced to the Christianisation of Rus' in 988",
+        "Movement of the ecclesiastical centre from Kyiv to Vladimir and Moscow",
+        "Effective independence in 1448",
+        "Establishment and recognition of the Moscow Patriarchate from 1589"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://old.mospat.ru/en/documents/social-concepts/",
+      "title": "The Basis of the Social Concept",
+      "publisher": "Russian Orthodox Church Department for External Church Relations",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Formal church teaching on charity and social ministry",
+        "Education, culture and public morality as durable areas of church concern",
+        "Cooperation with civic and state institutions",
+        "Institutional functions beyond worship and pastoral care"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.radiosvoboda.org/a/29746485.html",
+      "title": "Kirill has led the Russian Orthodox Church since 2009",
+      "publisher": "Radio Free Europe/Radio Liberty",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Pallada held on the Russian Orthodox Church or Moscow Patriarchate balance",
+        "Church funding of the vessel's maintenance",
+        "Transfer of the vessel to the church in 2005",
+        "Entity-to-record identity corroboration only"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.kommersant.ru/doc/4031853",
+      "title": "The yacht Pallada ran into a dubious story",
+      "publisher": "Kommersant",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Pallada associated with the Russian Orthodox Church and Moscow Patriarchate",
+        "Transfer from the presidential administration through Lukoil to the church",
+        "Independent corroboration of the source-record entity bridge"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The record is resolved as an institution at confidence 99. Its exact display name matches the church's official legal and canonical identity, while independent reporting connects the exact vessel and 2005 relationship in the source record to the Russian Orthodox Church and Moscow Patriarchate.",
+    "The source stores Russian as a first name and Orthodox Church as a last name, and also carries nationality, residence and Alive values. These are person-schema artefacts, not evidence that the church is a natural person; no officeholder's biography or personal details are substituted.",
+    "The institutional schema keeps all four private-wealth classifications at Unknown. This is an applicability decision, not an evidence gap: ecclesiastical history, donations, property and institutional assets are not converted into a person's industry, wealth origin or asset relationship.",
+    "No dedicated Forbes profile was found. Forbes commentary and news pages mentioning the church were not mistaken for a profile, and no Forbes social link is proposed.",
+    "The active tag catalogue contains no approved religious-institution concept meeting the record's identity. Government-owned is excluded because the official statute identifies the church as a religious organisation, not a government or explicitly state-owned body. No catalogue candidate is created.",
+    "Institution records cannot propose social links. Official church websites are retained as research sources rather than mislabelled as personal social profiles or a Company Website proposal.",
+    "Pallada is used only to disambiguate the source record. Both biographies omit the vessel, ownership details, dimensions, builder, valuation, rank and any current officeholder, so the text remains accurate after a vessel sale or leadership change.",
+    "The short description establishes the institution's present identity and governance. The long description instead develops its historical formation and durable ecclesiastical, pastoral, educational, charitable and civic functions."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal institutional dossier. The exact Russian Orthodox Church record is resolved without forcing a person identity. All person-level wealth fields remain Unknown by applicability; only the missing short biography is proposed, with no socials or tags. The paired institutional descriptions are durable, vessel-independent and officeholder-independent. Nothing has been compiled or applied."
+  }
+}

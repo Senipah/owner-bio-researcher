@@ -1,0 +1,330 @@
+{
+  "schema_version": 8,
+  "record_type": "institution",
+  "owner": {
+    "person_id": 7022,
+    "display_name": "Limited Liability Corporation Gelios",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The source display name exactly matches the English legal-entity name on the U.S. Office of Foreign Assets Control list. The official listing supplies the matching Russian legal name, Saint Petersburg address, establishment date and tax number 7801602842, while the Treasury designation links that entity to Nega, the same vessel in the immutable owner record. Russian corporate-register reporting independently matches tax number 7801602842 and registration number 1137847201667."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "main_residence_country",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "main_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "This source record resolves to a Russian limited-liability company rather than a natural person. The exact English and Russian legal names, establishment date, tax number, parent association and Nega link converge across official United States records and the immutable owner record. Person-specific details, personal social profiles and private-wealth classifications are therefore inapplicable; only an institutional biography is proposed.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Official entity and sanctions records establish the institutional identity and reproduce the same vessel link as the source record."
+    },
+    "source_ids": [
+      "S0",
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes-first exact-name and profile-domain searches found contextual reporting about Gelios and Nega but no dedicated Forbes profile for the institution."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Wealth-creation industry is a person-level classification and is not assigned to this Russian limited-liability company record.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The evidence resolves a legal institution, not a natural person whose original fortune can be classified."
+    },
+    "source_ids": [
+      "S0",
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No person-level primary wealth industry is assigned to this institutional record, despite the company's registered marine-passenger-transport activity.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "An institution's filed activity is not translated into a natural person's current private-wealth classification."
+    },
+    "source_ids": [
+      "S0",
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Self-made, inherited, family-transfer, mixed or dynastic wealth origin is not meaningful for this company record.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The record is a documented legal entity rather than a human owner with a personal starting position or transfer mechanism."
+    },
+    "source_ids": [
+      "S0",
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Founder, operator, investor, heir and other personal relationships to wealth-producing assets do not apply to this institutional record.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The evidence identifies a company and its parent relationship, not a natural person whose relationship to private wealth can be classified."
+    },
+    "source_ids": [
+      "S0",
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "biography": {
+    "plain_text": "Limited Liability Corporation Gelios is a Saint Petersburg company established in 2013 and a subsidiary of Revival of Maritime Traditions. It carries Russian tax number 7801602842. The company was placed under United States sanctions in 2022 after authorities determined it was owned or controlled by, or acting for, the parent association.",
+    "html": "<p>Limited Liability Corporation Gelios is a Saint Petersburg company established in 2013 and a subsidiary of Revival of Maritime Traditions. It carries Russian tax number 7801602842. The company was placed under United States sanctions in 2022 after authorities determined it was owned or controlled by, or acting for, the parent association.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Official OFAC entity data and a Treasury designation statement directly establish the company, date, location, tax identifier, parent relationship and designation basis."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "OOO Gelios is the Russian limited-liability company whose English name is Limited Liability Corporation Gelios. Its registration number is 1137847201667, and the enterprise remains listed as active. Marine passenger transport is its principal registered activity.\n\nThe company's additional registered scope spans marine freight, inland-water passenger and freight transport, securities investment, venture capital, property ownership and letting, and management consulting. These filed activities place transport beside investment, property and advisory functions within one corporate entity. Its property registrations include buying and selling owned real estate and managing owned or rented premises.",
+    "html": "<p>OOO Gelios is the Russian limited-liability company whose English name is Limited Liability Corporation Gelios. Its registration number is 1137847201667, and the enterprise remains listed as active. Marine passenger transport is its principal registered activity.</p>\r\n<p>The company's additional registered scope spans marine freight, inland-water passenger and freight transport, securities investment, venture capital, property ownership and letting, and management consulting. These filed activities place transport beside investment, property and advisory functions within one corporate entity. Its property registrations include buying and selling owned real estate and managing owned or rented premises.</p>\r\n",
+    "word_count": 90,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Russian corporate-register-derived reporting directly supplies the legal name, registration number, active status, principal activity and additional registered activity codes."
+    },
+    "source_ids": [
+      "S3"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "biography",
+      "value": "<p>Limited Liability Corporation Gelios is a Saint Petersburg company established in 2013 and a subsidiary of Revival of Maritime Traditions. It carries Russian tax number 7801602842. The company was placed under United States sanctions in 2022 after authorities determined it was owned or controlled by, or acting for, the parent association.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The biography describes the documented institution with exact official identifiers and avoids person-specific attributes."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=7022",
+      "title": "Immutable saved owner input 7022",
+      "publisher": "Superyacht Network; saved owner input",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Records the institutional display name Limited Liability Corporation Gelios and Russian nationality in a person-shaped owner record, with no biography or social profiles.",
+        "Records current relationship 4911 with Nega, vessel 53806, from 2013. The saved vessel specification is 32 metres and 196 gross tonnes. These immutable details support exact identity disambiguation but are not used as user-facing vessel biography material."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://ofac.treasury.gov/recent-actions/20220602",
+      "title": "Russia-related designations and update, 2 June 2022",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Lists Limited Liability Corporation Gelios as an entity, provides its Russian legal name and weak alias Helios, and records its Saint Petersburg address, establishment date of 23 May 2013 and Russian tax number 7801602842.",
+        "Links the company to Non-Profit Partnership Revival of Maritime Traditions and separately links the Russian-flagged Nega to Limited Liability Corporation Gelios."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://home.treasury.gov/news/press-releases/jy0802",
+      "title": "U.S. Treasury Severs More Networks Providing Support for Putin and Russia's Elites",
+      "publisher": "U.S. Department of the Treasury",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Identifies LLC Gelios as the Russian subsidiary of Revival of Maritime Traditions and states that Nega is the yacht in which Gelios has an interest.",
+        "States that OFAC designated Gelios under Executive Order 14024 for being owned or controlled by, or acting or purporting to act for or on behalf of, directly or indirectly, Revival of Maritime Traditions."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://companies.rbc.ru/id/1137847201667-ooo-gelios/",
+      "title": "OOO Gelios — OGRN 1137847201667, INN 7801602842",
+      "publisher": "RBC Companies",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Corporate-register-derived reporting matches the Russian legal name OOO Gelios, Saint Petersburg address, registration date, tax number 7801602842 and registration number 1137847201667.",
+        "Lists marine passenger transport as the principal registered activity, reports the company as active, and identifies Revival of Maritime Traditions as the corporate founder and controlling parent."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.forbes.com/sites/giacomotognini/2022/10/04/vladimir-putins-superyacht-graceful-has-a-new-name-killer-whale/",
+      "title": "Vladimir Putin's Superyacht Graceful Has A New Name: Killer Whale",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Independently reports that Nega is owned through Revival of Maritime Traditions and its subsidiary LLC Gelios and that both entities were designated in June 2022.",
+        "This is contextual reporting rather than a dedicated Forbes entity profile, so no Forbes social URL is proposed."
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Record type",
+      "detail": "The immutable source stores the company in a person-shaped record, but its display name exactly matches an official legal-entity listing. The Russian name, address, tax number, establishment date, parent and Nega link resolve record_type institution at confidence 100."
+    },
+    {
+      "topic": "English rendering",
+      "detail": "Official U.S. sources use Limited Liability Corporation Gelios and LLC Gelios; Russian corporate-register reporting uses OOO Gelios. The OFAC alias Helios is classified there as weak, so the saved display name is retained unchanged."
+    },
+    {
+      "topic": "Ownership wording",
+      "detail": "Official U.S. material describes Gelios as a subsidiary of Revival of Maritime Traditions. Registry-derived services differ only in rounding a residual individual interest, so the biographies use parent or subsidiary language rather than an exact ownership percentage."
+    },
+    {
+      "topic": "Government-owned tag",
+      "detail": "No proposed tag is assigned. Gelios is documented as a subsidiary of a Russian non-profit partnership, not as a government or public body; links to a public officeholder or a sanctioned asset network do not satisfy the Government-owned semantic contract."
+    },
+    {
+      "topic": "Maritime tag restraint",
+      "detail": "The filed marine-transport activity and documented maritime asset interest are preserved in institutional narrative. A corporate vehicle's registered activity and yacht interest do not establish that it created material wealth through, controlled substantial operations in, or held a defining long-term operating mandate in an active maritime tag cohort."
+    },
+    {
+      "topic": "Social and website review",
+      "detail": "Exact-name, tax-number, LinkedIn and website searches found official sanctions records and corporate directories but no identity-verified official company website or social channel. Several unrelated Gelios and Helios businesses were rejected because their addresses, legal forms or tax identifiers did not match."
+    },
+    {
+      "topic": "Person fields and wealth classifications",
+      "detail": "The input's Russian nationality is retained as source data but is not treated as a human citizenship claim. Person-specific identity fields, personal social profiles and private-wealth classifications remain unproposed and all four required wealth objects are Unknown as institution-inapplicable."
+    },
+    {
+      "topic": "Sensitive context",
+      "detail": "The sanctions status and parent relationship are included because they are central to the exact institutional identity and are stated directly by official authorities. No unsupported beneficial-owner allegation or private-person inference is made."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal institutional research completed. Exact official identifiers and the matching Nega relationship resolve Limited Liability Corporation Gelios as a Russian company rather than a natural person. Only the missing institutional biography is proposed; personal details, socials, wealth classifications and tags remain unproposed. Strict exact-input validation required and no website changes."
+  }
+}

@@ -1,0 +1,595 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 351,
+    "display_name": "Rory Brooks",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The upstream Rory Brooks is resolved to British private-equity founder Roderick Hilary Brooks through the exact legal name, British nationality, United Kingdom residence, January 1954 birth record and matching portrait. The asset bridge is direct: a SuperyachtNews interview names Rory and Elizabeth Brooks as Heavenly Daze's owners from 2002, matching the exact vessel, date and couple in the upstream record. Companies House, GOV.UK and MML records independently converge on the same MML Capital founder."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Rory Brooks CBE is a British private-equity founder, retired chair of MML Capital, philanthropist and Charity Commission board member.",
+    "defining_work": "He founded MML after thirteen years at Bank of Boston and developed it into an international mid-market private-equity and structured-capital firm.",
+    "formative_context": "The first member of his family to attend university, Brooks studied management sciences at Manchester before spending nine of his thirteen banking years in Boston and New York.",
+    "decisive_moment": "Returning to London to establish MML in 1988 converted his corporate-lending and mezzanine-finance experience into a founder-owned investment platform.",
+    "enduring_dimensions": [
+      "Founder ownership and leadership in international private equity",
+      "Institution-building philanthropy in education and social disadvantage",
+      "Current charity-sector governance and public service"
+    ],
+    "character_detail": "Brooks describes philanthropy as catalytic funding for bold work that traditional channels may overlook.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Establish Brooks as the retired MML founder now focused on philanthropy and charity governance."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Use his first-generation university path and transatlantic banking apprenticeship to explain MML's creation."
+      },
+      {
+        "mode": "defining_achievement",
+        "angle": "Open with the private-equity firm he built and then move to the public-service chapter it funded."
+      }
+    ],
+    "excluded_transient_context": [
+      "Private-yacht ownership, vessel use, specifications and LOA ranking",
+      "Identity-search narrative and Forbes-search mechanics",
+      "Current fund AUM and other transient firm-scale figures",
+      "Unverified personal net worth, birthplace, birth day and social accounts"
+    ],
+    "source_ids": [
+      "S0",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S13"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "identity_then_origin",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "The short biography functions as a current identity card, linking Brooks's banking apprenticeship, MML founder role and present philanthropy focus. The long biography adds his first-generation university background, transatlantic corporate-lending work, mezzanine-finance origins, retirement transaction and sustained Manchester giving, while omitting the short version's compact international-firm framing. Both versions exclude yacht ownership, source narration, unsupported net worth and transient firm metrics."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The mandatory exact-name site:forbes.com/profile search was completed immediately after inventory and before broader research, followed by exact-name Forbes-domain queries tied to MML Capital and Heavenly Daze. No dedicated Forbes personal profile for the British private-equity founder was found; returned results concerned golfers whose names contain Rory or Brooks."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Brooks created his documented wealth platform by founding MML Capital, building it as an international private-equity manager and participating as the represented founder in a minority GP-stake transaction that facilitated his retirement.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "GOV.UK, MML and university sources identify Brooks as MML's founder after a thirteen-year banking career. Companies House records his substantial rights to the partnership's surplus assets, while Houlihan Lokey and Campbell Lutyens document a minority investment in MML tied specifically to Brooks and his retirement. Together these establish an owned and monetised finance platform rather than inferring wealth from employment alone."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Finance remains Brooks's current primary private-asset sector because Companies House continues to record him as an active person with significant control over MML Capital Partners LLP through rights to more than a quarter of its surplus assets.",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "The current official register gives Brooks active rights to more than 25% but no more than 50% of MML Capital Partners LLP's surplus assets. That direct holding outweighs his retirement from paid work when classifying current principal private interests; MML's current site confirms that the platform remains an active private-equity and structured-capital manager."
+    },
+    "source_ids": [
+      "S3",
+      "S6",
+      "S13"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Brooks built the MML platform after a salaried banking career and later participated in a transaction involving the founder-owned GP stake, supporting broad Self-made without claiming an undocumented independent start.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The positive sequence is well documented: Brooks was the first in his family to attend university, worked thirteen years at Bank of Boston, founded MML on returning to London, retained substantial economic rights and was represented in a minority GP-stake transaction that facilitated retirement. His family capital and MML's initial financing are not disclosed, so Self-made (independent) is not supported. No pre-existing family asset, inheritance, succession event, spouse transfer or other family-transfer mechanism was found."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S7"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Brooks founded MML Capital, chaired it until retirement and remains recorded with substantial rights to the partnership's surplus assets.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Government, company and university sources consistently call Brooks MML's founder or co-founder, and the current Companies House register records an active significant-control interest. The role is defining and economically substantive even though he has retired from the chair."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S5",
+      "S8",
+      "S9"
+    ]
+  },
+  "biography": {
+    "plain_text": "Rory Brooks CBE is a British private-equity founder and philanthropist. After thirteen years with Bank of Boston, he established MML Capital in London and built it into an international mid-market investment firm. He retired from MML's chair in 2023 and now focuses on philanthropy and public service through his foundation and the Charity Commission.",
+    "html": "<p>Rory Brooks CBE is a British private-equity founder and philanthropist. After thirteen years with Bank of Boston, he established MML Capital in London and built it into an international mid-market investment firm. He retired from MML's chair in 2023 and now focuses on philanthropy and public service through his foundation and the Charity Commission.</p>\r\n",
+    "word_count": 54,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The current GOV.UK biography supports the banking tenure, MML founding, 2023 step-down, foundation and Charity Commission role. MML, university, transaction and foundation sources independently corroborate the founder and philanthropy identities."
+    },
+    "source_ids": [
+      "S2",
+      "S4",
+      "S5",
+      "S8",
+      "S9",
+      "S10",
+      "S13"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Brooks was the first in his family to attend university, graduating in management sciences from Manchester. His early banking career included nine years in Boston and New York, where he led corporate lending, before returning to London to build a new mezzanine-finance business.\n\nThat venture became MML Capital, now a multi-office private-equity manager. A strategic minority investment supported Brooks's retirement from the firm in 2023, freeing him to concentrate on giving and public service. The foundation he created with his wife, Elizabeth, supports education, social disadvantage and the arts; its work includes sustained backing for global-development research at Manchester. Brooks also serves on the Charity Commission board and was appointed CBE for charitable service.",
+    "html": "<p>Brooks was the first in his family to attend university, graduating in management sciences from Manchester. His early banking career included nine years in Boston and New York, where he led corporate lending, before returning to London to build a new mezzanine-finance business.</p>\r\n<p>That venture became MML Capital, now a multi-office private-equity manager. A strategic minority investment supported Brooks's retirement from the firm in 2023, freeing him to concentrate on giving and public service. The foundation he created with his wife, Elizabeth, supports education, social disadvantage and the arts; its work includes sustained backing for global-development research at Manchester. Brooks also serves on the Charity Commission board and was appointed CBE for charitable service.</p>\r\n",
+    "word_count": 114,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Government and first-party foundation material supports the formative background and public-service chapter; MML and transaction sources support the firm's investment model and retirement transition; University of Manchester records independently support the sustained global-development philanthropy and CBE."
+    },
+    "source_ids": [
+      "S2",
+      "S4",
+      "S5",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S13"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Founder of MML Capital and philanthropist",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "GOV.UK, MML, the University of Manchester and the family foundation consistently identify Brooks as MML's founder and a defining philanthropist; the CBE specifically recognised his charitable service."
+      },
+      "source_ids": [
+        "S2",
+        "S5",
+        "S8",
+        "S9"
+      ]
+    },
+    {
+      "field": "biography",
+      "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Rory_Brooks\">Rory (Roderick) Brooks</a> CBE is a British businessman and philanthropist who founded the <a href=\"https://en.wikipedia.org/wiki/Rory_and_Elizabeth_Brooks_Foundation\">Rory and Elizabeth Brooks Foundation</a> in 1975 and financed the <a href=\"https://en.wikipedia.org/wiki/Brooks_World_Poverty_Institute\">Brooks World Poverty Institute</a> at Manchester University in 2005. In 1989, he co-founded <a href=\"https://en.wikipedia.org/wiki/MML_Capital_Partners\">MML Capital Partners</a>, an international private equity firm. MML is a private equity business that focuses on direct and indirect investments. It is <a href=\"https://en.wikipedia.org/wiki/Vanguard_Healthcare\">Vanguard Healthcare&#39;s</a> financial backer.</p>\r\n",
+      "value": "<p>Rory Brooks CBE is a British private-equity founder and philanthropist. After thirteen years with Bank of Boston, he established MML Capital in London and built it into an international mid-market investment firm. He retired from MML's chair in 2023 and now focuses on philanthropy and public service through his foundation and the Charity Commission.</p>\r\n",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The existing biography incorrectly says the family foundation began in 1975 and dates MML's founding to 1989; official sources place the foundation in 2005 and MML in 1988. The replacement corrects those errors, removes unsupported portfolio-company detail and reflects Brooks's retirement and current public-service focus."
+      },
+      "source_ids": [
+        "S2",
+        "S4",
+        "S5",
+        "S8",
+        "S9",
+        "S10",
+        "S13"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "5",
+      "type": "LinkedIn",
+      "url": "https://uk.linkedin.com/in/rory-brooks-01201112",
+      "verification": "The profile identifies Rory Brooks in London at the Charity Commission, educated at the University of Manchester, and focused on philanthropy. Its activity includes MML and charity-sector content matching the resolved founder's current official biography.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The exact London location, Charity Commission role, Manchester education, philanthropy mission and MML activity converge with current government and company sources and distinguish the account from numerous namesakes."
+      },
+      "source_ids": [
+        "S2",
+        "S11",
+        "S13"
+      ]
+    },
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rory_Brooks",
+      "verification": "The page describes the British MML Capital co-founder, Manchester alumnus, foundation co-founder and CBE. Those defining facts match government, company, university and foundation sources and the exact page was already linked in the upstream biography.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The page is identity-specific and cross-corroborated across primary sources; it is proposed as a social/profile link only and is not relied upon as final evidence."
+      },
+      "source_ids": [
+        "S0",
+        "S2",
+        "S5",
+        "S8",
+        "S9"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://mmlcapital.com/",
+      "verification": "This is MML Capital's active official website. Government, company and university sources identify Brooks as the firm's founder, and Companies House records his continuing significant-control interest in MML Capital Partners LLP.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The website is the current official presence of Brooks's defining founder-built company, independently tied to him by GOV.UK, MML's own history and Companies House."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S5",
+        "S6"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0152",
+      "name": "Private equity",
+      "summary": "Brooks founded, chaired and retains a substantial economic interest in MML Capital, an international private-equity and structured-capital manager that became his defining wealth platform.",
+      "relationship_type": "founder, former chair and continuing person with significant control of an international private-equity manager",
+      "temporal_scope": "current",
+      "taxonomy_value": "The owner created material wealth through, controlled substantial operations in, or had a defining long-term operating mandate in Private equity.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official government, MML and university sources establish Brooks's founder and chair roles; current Companies House evidence records rights to more than a quarter of MML Capital Partners LLP's surplus assets; the GP-stake transaction confirms a substantive founder-owned interest rather than passive or incidental exposure."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S9"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=351",
+      "title": "Rory Brooks owner record, person ID 351",
+      "publisher": "Superyacht Network; saved authoritative owner export",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Immutable person ID and upstream display name Rory Brooks",
+        "Full name Roderick Hilary Brooks, British nationality, United Kingdom residence, male gender and January 1954 birth record",
+        "Current Heavenly Daze relationship from 2002 and upstream portrait used for identity resolution",
+        "Existing biography, blank-field inventory and absence of social profiles"
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/search/?q=%22Rory%20Brooks%22",
+      "title": "Forbes search for Rory Brooks",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "No dedicated Forbes personal profile matching the British MML Capital founder was found during the mandatory Forbes-first audit"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.gov.uk/government/people/rory-brooks",
+      "title": "Rory Brooks CBE",
+      "publisher": "GOV.UK; Charity Commission for England and Wales",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "First member of his family to attend university and Manchester management-sciences graduation in 1975",
+        "Thirteen years at Bank of Boston, including nine years in Boston and New York",
+        "MML founding in London in 1988 and step-down as chair in 2023",
+        "Foundation creation in 2005, philanthropy focus, CBE and Charity Commission board role"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/OC333488/persons-with-significant-control",
+      "title": "MML Capital Partners LLP persons with significant control",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Exact legal name Roderick Hilary Brooks, January 1954 birth, British nationality and England residence",
+        "Current active person-with-significant-control status",
+        "Right to more than 25% but no more than 50% of MML Capital Partners LLP's surplus assets"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://hl.com/about-us/transactions/mml-investcorp/",
+      "title": "Houlihan Lokey Advises MML",
+      "publisher": "Houlihan Lokey",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Passive minority GP-stake investments in MML from Investcorp and Wafra's Capital Constellation",
+        "Transaction facilitating co-founder Rory Brooks's retirement to focus on philanthropy and public service",
+        "MML as an international alternatives and private-equity investment firm"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://mmlcapital.com/wp-content/uploads/2025/10/MML-ESG-Impact-Report-2024.pdf",
+      "title": "MML ESG & Impact Report 2024",
+      "publisher": "MML Capital",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "MML founded in London by Rory Brooks CBE and Jim Read in 1988",
+        "Subsequent international expansion and private-equity investment activity",
+        "First-party corroboration of Brooks's defining founder relationship"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://mmlcapital.com/",
+      "title": "MML Capital",
+      "publisher": "MML Capital",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Current official company website",
+        "Active private-equity, partnership-capital and asset-backed investment strategies",
+        "International operations and continuing investment activity"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.thirdsector.co.uk/big-giver-rory-brooks-rory-elizabeth-brooks-foundation/fundraising/article/1060671",
+      "title": "Big Giver: Rory Brooks, Rory and Elizabeth Brooks Foundation",
+      "publisher": "Third Sector",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Direct interview with Brooks about his United States experience and philanthropy",
+        "MML as the successful private-equity business he established on returning to the United Kingdom",
+        "Creation and focused approach of the Rory and Elizabeth Brooks Foundation"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.rebrooksfoundation.org.uk/who-we-are",
+      "title": "Who we are",
+      "publisher": "Rory and Elizabeth Brooks Foundation",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Rory Brooks as foundation co-founder and trustee and MML co-founder",
+        "Manchester graduation and foundation support for the Brooks World Poverty Institute and Global Development Institute",
+        "University advisory work, charity governance, public-service roles and CBE"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://gdi.manchester.ac.uk/about/people/international-advisory-board/",
+      "title": "International Advisory Board",
+      "publisher": "University of Manchester Global Development Institute",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "MML co-founder and Manchester alumnus identity",
+        "Current inaugural chair of the institute's International Advisory Board",
+        "Longstanding foundation support, university leadership, charitable roles and CBE"
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.manchester.ac.uk/about/news/transformational-gift-set-to-redefine-global-development-research-for-the-21st-century-at-university-of-manchester/",
+      "title": "Transformational gift set to redefine global development research for the 21st century at University of Manchester",
+      "publisher": "University of Manchester",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Sustained Brooks family support for global-development research",
+        "Rory Brooks as MML co-founder, Manchester alumnus and Charity Commission member",
+        "Brooks's stated catalytic approach to philanthropy"
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://uk.linkedin.com/in/rory-brooks-01201112",
+      "title": "Rory Brooks",
+      "publisher": "LinkedIn",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Exact London-based Charity Commission profile",
+        "University of Manchester education and current philanthropy focus",
+        "Public MML and charity-sector activity",
+        "LinkedIn social proposal"
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://www.superyachtnews.com/owner/on-board-heavenly-daze",
+      "title": "On board MY Heavenly Daze",
+      "publisher": "SuperyachtNews",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Elizabeth and Rory Brooks as owners of the exact 32-metre Heavenly Daze from 2002",
+        "Direct owner quotations and family context providing the decisive asset identity bridge",
+        "Vessel material used only for identity resolution and excluded from biography and wealth classifications"
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://www.gov.uk/government/organisations/charity-commission/about/our-governance",
+      "title": "Charity Commission governance and register of board members' interests 2026",
+      "publisher": "GOV.UK; Charity Commission for England and Wales",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Rory Brooks CBE as a current Charity Commission board member",
+        "Retired current-work status and recent founder-chair role at MML Capital Partners",
+        "Current trusteeships at the family foundation and IntoUniversity",
+        "Current University of Manchester advisory-board and philanthropy-reference-group roles"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Identity and yacht bridge",
+      "detail": "Rory Brooks has numerous namesakes, but Companies House supplies the upstream full legal name Roderick Hilary Brooks and exact January 1954 British identity. SuperyachtNews directly names Rory and Elizabeth Brooks as Heavenly Daze's owners from 2002, matching the upstream vessel and relationship date. That unusually direct asset bridge resolves the MML founder to person_id 351; yacht material is excluded from biography and classification prose."
+    },
+    {
+      "topic": "Birth details",
+      "detail": "Companies House independently confirms January 1954, British nationality and residence in England, matching the upstream record. No reliable public source established the exact birth day or place, so neither blank receives a proposal."
+    },
+    {
+      "topic": "Existing biography corrections",
+      "detail": "The upstream biography says the Rory and Elizabeth Brooks Foundation began in 1975 and dates MML's co-founding to 1989. Current government, MML, university and foundation records place the foundation in 2005 and MML in 1988. The proposed replacement corrects those errors and removes the unsupported claim that MML was Vanguard Healthcare's financial backer as a defining personal fact."
+    },
+    {
+      "topic": "Retirement chronology",
+      "detail": "Current official descriptions vary slightly: Brooks's GOV.UK biography says he stepped down as chair in 2023, the 2026 Charity Commission interests register records the paid founder-chair role as ceased in 2022, and Houlihan Lokey says a GP-stake transaction closed in 2024 and facilitated retirement. The biography uses the government's 2023 step-down date and describes the transaction without assigning it a conflicting year."
+    },
+    {
+      "topic": "Current MML interest and personal wealth",
+      "detail": "Brooks is retired from paid work, but Companies House still records him as an active person with significant control through rights to more than 25% and no more than 50% of MML Capital Partners LLP's surplus assets. That direct current holding supports Finance as primary industry and Founder as relationship. No transaction value, personal net worth or exact post-transaction ownership percentage beyond the filed control band is asserted."
+    },
+    {
+      "topic": "Wealth origin and family succession",
+      "detail": "Brooks's first-generation university attendance, thirteen-year banking apprenticeship, MML founding, substantial economic rights and founder-linked GP-stake transaction support broad Self-made through positive evidence. Sources do not disclose his initial capital or full family financial background, so Self-made (independent) is withheld. No inherited enterprise, pre-existing family asset, succession event, spouse transfer or other family-transfer mechanism was found."
+    },
+    {
+      "topic": "Social profiles",
+      "detail": "The exact LinkedIn profile, Wikipedia page and MML company website are identity-secure and proposed. No verified public personal Instagram, Facebook, X, YouTube, TikTok or personal website was found. The family foundation site is an organisational website and is retained as evidence rather than misclassified as Brooks's personal website."
+    },
+    {
+      "topic": "Forbes profile",
+      "detail": "The mandatory exact-profile and exact-name Forbes searches were performed first and found no dedicated Forbes personal profile for the resolved MML Capital founder. Results dominated by golfers whose names contain Rory or Brooks were rejected as unrelated."
+    },
+    {
+      "topic": "Tag minimum and exclusions",
+      "detail": "Private equity is the single minimum useful active tag because it captures the industry through which Brooks founded, controlled and monetised a substantial platform. Banking is excluded because Bank of Boston was a formative employed stage rather than his defining wealth platform. No broad philanthropy tag exists in the active catalogue, and narrower cause tags do not cleanly cover his multi-field giving."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier. Rory Brooks is Roderick Hilary Brooks, the British MML Capital founder, with exact legal and birth-month identity evidence plus a direct Heavenly Daze owner interview. Finance is supported for wealth creation and current primary industry by his founder-built private-equity platform, the GP-stake transaction linked to his retirement and his current significant-control rights; broad Self-made is supported without an independent-start subtype, and Founder remains the defining relationship. The dossier fills known-for title, corrects a materially inaccurate existing biography, proposes identity-secure LinkedIn, Wikipedia and company links, and assigns only the active Private equity tag with complete additive semantic fields. Birth day and place, personal net worth, additional socials and a Forbes profile remain unsupported, and nothing has been applied to the live owner record."
+  }
+}

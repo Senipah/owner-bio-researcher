@@ -1,0 +1,560 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1110,
+    "display_name": "William Demarest Johnson",
+    "identity_confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "The exact full name is paired with Demarest Media and Demarest Clinic across Johnson's personal LinkedIn profile, a first-person Yacht Style article and entertainment-industry records. Those sources also align on his American background, investment career, film production, Phuket business and relationship to Charles B. Johnson. The owner record's Demarest Media Facebook link and same-name vessel provide secondary context without supplying biography facts."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Facebook"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "American investor and producer who founded entertainment-finance and regenerative-medicine businesses.",
+    "defining_work": "Demarest Media financed and produced films and television, followed by Demarest Clinic, his Phuket regenerative-medicine venture.",
+    "formative_context": "Johnson is the youngest son of asset-management billionaire Charles B. Johnson and spent a quarter-century as a retail broker and money manager before entering entertainment.",
+    "decisive_moment": "A serious heart illness and his subsequent stem-cell treatment prompted Johnson to change direction, first into feature films and later into regenerative-medicine services.",
+    "enduring_dimensions": [
+      "Sustained experience in brokerage, money management and venture investment",
+      "Founder-led film and television financing through Demarest",
+      "Founder and chief executive responsibility at Demarest Clinic in Phuket"
+    ],
+    "character_detail": "Johnson described applying asset-management discipline to film finance and drawing on his own treatment experience when developing the clinic.",
+    "opening_options": [
+      {
+        "mode": "formative_episode",
+        "angle": "Open with the serious illness that led Johnson from investment work towards film production and regenerative medicine."
+      },
+      {
+        "mode": "defining_achievement",
+        "angle": "Lead with the film and television projects financed and produced through Demarest."
+      },
+      {
+        "mode": "present_identity",
+        "angle": "Establish Johnson as the founder and chief executive of a Phuket regenerative-medicine clinic."
+      }
+    ],
+    "excluded_transient_context": [
+      "Current vessel ownership, vessel specifications and cohort ranking",
+      "Current net-worth estimates and rankings",
+      "Unverified claims about the clinical efficacy of regenerative treatments",
+      "A current holding-by-holding estimate of Johnson's private wealth"
+    ],
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": [
+      "investor_philanthropist",
+      "creative_industries"
+    ],
+    "reviewed_phrase_exceptions": [
+      {
+        "kind": "person_name",
+        "phrase": "William Demarest Johnson",
+        "vessel_name": "Demarest",
+        "source_ids": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "reason": "Demarest is Johnson's verified middle name in this exact personal-name phrase, not a reference to the current vessel."
+      },
+      {
+        "kind": "organisation",
+        "phrase": "Demarest Media",
+        "vessel_name": "Demarest",
+        "source_ids": [
+          "S2",
+          "S3",
+          "S5",
+          "S7"
+        ],
+        "reason": "Demarest Media is Johnson's verified entertainment and investment company, not the current vessel."
+      },
+      {
+        "kind": "organisation",
+        "phrase": "Demarest Films",
+        "vessel_name": "Demarest",
+        "source_ids": [
+          "S3",
+          "S4"
+        ],
+        "reason": "Demarest Films is Johnson's verified film-financing and production company, not the current vessel."
+      },
+      {
+        "kind": "organisation",
+        "phrase": "Demarest Clinic",
+        "vessel_name": "Demarest",
+        "source_ids": [
+          "S2",
+          "S3",
+          "S9"
+        ],
+        "reason": "Demarest Clinic is Johnson's verified Phuket healthcare business, not the current vessel."
+      }
+    ],
+    "notes": "The shared anchor is Johnson's founder identity. The short biography alone carries his family background and quarter-century investment career. The long profile adds the illness-driven change of direction, specific production work and the operating purpose of the Phuket clinic, so reducing it to the short version would discard meaningful narrative material."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Exact-name Forbes searches, including site-restricted profile searches and combinations with Demarest Media and Demarest Clinic, found no dedicated William Demarest Johnson profile. The matching Forbes result is for his father, Charles B. Johnson, and was not transferred to William."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Johnson's most clearly evidenced durable wealth base is finance: a quarter-century as a retail broker and money manager, followed by film financing and full-time venture investment, alongside published identification as an heir to the Franklin Templeton family fortune.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "A film press biography and Johnson's first-person profile directly establish his long investment career and later venture-capital work. An academic study independently identifies him as an heir to the Franklin Templeton fortune, whose asset-management basis is documented by Forbes. The relative contribution of career earnings and family resources is not public, so the sector is supported more strongly than the acquisition mechanism."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S7",
+      "S8"
+    ]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "No public source establishes which current holding contributes most to Johnson's private wealth. Finance & Investments is therefore used as an origin-sector fallback; it does not assert that family asset-management wealth or venture investments still dominate, while Demarest Clinic remains a visible current operating interest.",
+    "confidence": {
+      "score": 76,
+      "band": "medium",
+      "reason": "Current public material establishes both a clinic operating role and continued association with Demarest Media but does not rank their economic materiality. Under the required origin-sector fallback, the evidenced Finance & Investments creation sector is retained conservatively rather than presenting Healthcare as a verified principal current holding."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S7",
+      "S8"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Sources establish a wealthy asset-management family, a long personal investment career and separately founded businesses, but do not establish a completed transfer of family assets or the relative materiality of those mechanisms. Marriage / family transfer and Self-made — advantaged start are the strongest alternatives, and neither reaches the acceptance threshold.",
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Direct evidence does not identify an inheritance, inter vivos transfer, personal Franklin holding or family-succession transaction. The published heir description and family background cannot alone satisfy the family-transfer test, while founder and investment roles do not show that the resulting assets created his principal wealth. A less-specific self-made label would still rely on an unsupported materiality premise, so Unknown is the terminal classification."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S7",
+      "S8"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "investor",
+    "label": "Investor",
+    "summary": "Johnson's sustained capital-allocation work spans a quarter-century in brokerage and money management, film and television financing through Demarest, and later full-time venture investment.",
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Direct career biographies establish sustained money-management work, a film-financing company built around an asset-management approach and a later full-time venture-capital role. This recurring capital-allocation activity is more durable and better evidenced than treating the current clinic role as the relationship to his principal wealth-producing assets."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S6"
+    ]
+  },
+  "biography": {
+    "plain_text": "William Demarest Johnson is an American investor, film producer and founder of Demarest Clinic in Phuket. The youngest son of asset-management billionaire Charles B. Johnson, he spent a quarter-century as a retail broker and money manager before founding Demarest Media, which financed and produced film and television projects for international audiences.",
+    "html": "<p>William Demarest Johnson is an American investor, film producer and founder of Demarest Clinic in Phuket. The youngest son of asset-management billionaire Charles B. Johnson, he spent a quarter-century as a retail broker and money manager before founding Demarest Media, which financed and produced film and television projects for international audiences.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "The exact identity, nationality, family relationship, investment career and Demarest founder roles are established through direct profiles and corroborating entertainment records. The prose avoids a current wealth figure and makes no claim about a completed inheritance."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S8"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "A serious heart illness redirected William Demarest Johnson from investment management into film production and regenerative medicine. After receiving experimental stem-cell treatment, he founded Demarest Films, bringing an asset-management discipline to screen financing. He produced or financed more than twenty features, including Hacksaw Ridge, and served as an executive producer of the television miniseries The Night Manager.\n\nIn Thailand, Johnson immersed himself in regenerative-medicine services. He established RenewyouAsia and Demarest Clinic in Phuket, assembling an international medical advisory board around cellular therapies and treatments for age-related conditions. His ownership and chief-executive role placed him at the operational centre of the business, while his public writing explained how his own treatment experience shaped its purpose. He continues to represent the clinic as its founder.",
+    "html": "<p>A serious heart illness redirected William Demarest Johnson from investment management into film production and regenerative medicine. After receiving experimental stem-cell treatment, he founded Demarest Films, bringing an asset-management discipline to screen financing. He produced or financed more than twenty features, including Hacksaw Ridge, and served as an executive producer of the television miniseries The Night Manager.</p>\r\n<p>In Thailand, Johnson immersed himself in regenerative-medicine services. He established RenewyouAsia and Demarest Clinic in Phuket, assembling an international medical advisory board around cellular therapies and treatments for age-related conditions. His ownership and chief-executive role placed him at the operational centre of the business, while his public writing explained how his own treatment experience shaped its purpose. He continues to represent the clinic as its founder.</p>\r\n",
+    "word_count": 123,
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Johnson's first-person account supports the illness, treatment and career change, while independent entertainment and awards records corroborate his producer roles and the named projects. His LinkedIn profile, the clinic's official site and contemporary coverage support the Phuket founder and chief-executive role; no claim is made about treatment efficacy."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S9"
+    ]
+  },
+  "proposed_details": [
+    {
+      "action": "fill_missing",
+      "field": "known_for_title",
+      "value": "Investor, film producer and founder of Demarest Clinic",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Direct profiles establish Johnson's sustained investment career, producer identity and current clinic founder role."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ]
+    },
+    {
+      "action": "fill_missing",
+      "field": "biography",
+      "value": "<p>William Demarest Johnson is an American investor, film producer and founder of Demarest Clinic in Phuket. The youngest son of asset-management billionaire Charles B. Johnson, he spent a quarter-century as a retail broker and money manager before founding Demarest Media, which financed and produced film and television projects for international audiences.</p>\r\n",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "The exact identity, family context, investment career and Demarest founder roles are established by direct and corroborating sources."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S8"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "5",
+      "type": "LinkedIn",
+      "url": "https://www.linkedin.com/in/william-d-johnson-87b075103",
+      "verification": "The profile uses Johnson's full name, places him in Phuket, identifies Demarest Clinic and describes founding RenewyouAsia and Demarest Clinic. Its activity also identifies Franklin Templeton chief executive Jenny Johnson as his sister, independently matching the documented family.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The full name, location, businesses, career narrative and family cross-reference converge on the researched owner. Type ID 5 is copied from the owner-input lookup."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S8"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.demarestclinic.com/",
+      "verification": "Demarest Clinic's official website describes the Phuket regenerative-medicine business, while Johnson's profile and contemporary coverage identify him as its founder, owner and chief executive.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "The official domain and independent founder-role evidence establish the company relationship. Type ID 14 is copied from the owner-input lookup."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S9"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0300",
+      "name": "Film producer",
+      "summary": "Johnson founded and chaired Demarest's film-financing business, produced or financed more than twenty features and received an executive-producer credit on The Night Manager.",
+      "relationship_type": "founder_and_practising_producer",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "This groups Johnson with owners whose substantial, recognised public work includes producing films, rather than with passive media investors or people linked to a single project.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Official press material, contemporary entertainment reporting and the Television Academy directly document a sustained producer role across numerous film and television projects."
+      },
+      "source_ids": [
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "candidate_type": "personal_detail",
+      "field": "main_residence_country",
+      "candidate_value": "Thailand",
+      "confidence": {
+        "score": 68,
+        "band": "low",
+        "reason": "Johnson's first-person article says he moved to Thailand and his current LinkedIn location is Phuket, but the public record does not establish that Thailand has replaced the United States as his main legal or habitual residence."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1110",
+      "title": "William Demarest Johnson owner record, person ID 1110",
+      "publisher": "Superyacht Network",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "source-record identity and person ID",
+        "William Demarest Johnson display name",
+        "American nationality, United States residence and birth country",
+        "male gender and alive status",
+        "existing Demarest Media Facebook link",
+        "blank known-for title, biography, birth date and priority personal social types"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.linkedin.com/in/william-d-johnson-87b075103",
+      "title": "William D Johnson - Demarest Clinic",
+      "publisher": "LinkedIn",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "full-name identity as William Demarest Johnson",
+        "Phuket location and Demarest Clinic affiliation",
+        "founding of RenewyouAsia and Demarest Clinic",
+        "continued Demarest Media role",
+        "personal LinkedIn URL",
+        "family cross-reference to Jenny Johnson"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://yachtstyle.co/investing-in-health-waterfront-stem-cell-therapy-in-thailand/",
+      "title": "Investing in Health: Waterfront stem-cell therapy in Thailand",
+      "publisher": "Yacht Style",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "first-person account of serious heart illness and experimental stem-cell treatment",
+        "career change into feature-film production",
+        "move to Thailand and development of regenerative-medicine interests",
+        "chief executive and founder roles at RenewyouAsia and Demarest Clinic",
+        "youngest-son relationship to Charles B. Johnson",
+        "UC Berkeley education and quarter-century retail-broker career",
+        "founder and chairman role at Demarest Films",
+        "later full-time venture-capital work under Demarest Media"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://s3.amazonaws.com/cdn.filmtrackonline.com/mongrelmedia/starcm_vault_root/images%2Ffiles%2Fd0%2Fd05fcb22-115e-4f8b-ab4c-65c58e3a9acb.pdf",
+      "title": "Byzantium press kit",
+      "publisher": "Mongrel Media",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "William D. Johnson producer identity",
+        "UC Berkeley graduation",
+        "father Charles Johnson's Franklin Templeton role",
+        "quarter-century as a retail broker and money manager",
+        "formation of Demarest Films with Sam Englebardt and Michael Lambert",
+        "asset-management approach to film financing",
+        "multiple film production and financing credits"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.yahoo.com/entertainment/mel-gibson-hacksaw-ridge-gets-174249514.html",
+      "title": "Mel Gibson's Hacksaw Ridge Gets Funding Infusion From Demarest Media & Kilburn Media",
+      "publisher": "Deadline via Yahoo Entertainment",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Demarest founder and chief executive role",
+        "producer credit on Hacksaw Ridge",
+        "Demarest Media's film production and financing activity",
+        "Johnson's stated editorial direction for the company"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.televisionacademy.com/shows/night-manager",
+      "title": "The Night Manager - Emmy Awards and Nominations",
+      "publisher": "Television Academy",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "William D. Johnson executive-producer credit",
+        "The Night Manager limited-series identity",
+        "Outstanding Limited Series nomination"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://uplopen.com/en/books/2238/files/bdafba77-00c9-4520-96fd-65c3a0213c8a.pdf",
+      "title": "Derivative Media: How Wall Street Devours Culture",
+      "publisher": "University of California Press",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Demarest Media identification",
+        "William D. Johnson identification as an heir to the Franklin Templeton Investments fortune",
+        "family-capital context for Demarest's place in independent film finance"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.forbes.com/profile/charles-b-johnson/",
+      "title": "Charles B. Johnson",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "Charles B. Johnson's billionaire status",
+        "Franklin Resources and Franklin Templeton as the source of Charles Johnson's wealth",
+        "asset-management basis of the documented family fortune",
+        "distinction between Charles B. Johnson's verified Forbes profile and the absence of one for William"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.demarestclinic.com/",
+      "title": "Demarest Clinic",
+      "publisher": "Demarest Clinic",
+      "tier": 1,
+      "accessed_at": "2026-09-17",
+      "supports": [
+        "official Demarest Clinic domain",
+        "Phuket clinic identity",
+        "regenerative-medicine and cellular-therapy service focus",
+        "international medical advisory-board structure"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Focused exact-name and site-restricted Forbes searches found no dedicated profile for William Demarest Johnson. The verified Charles B. Johnson profile belongs to his father and is used only for family and industry context.",
+    "An academic source calls Johnson an heir to the Franklin Templeton fortune, but no source establishes a completed inheritance, inter vivos transfer, personal Franklin stake or family-succession transaction. Wealth Origin therefore remains Unknown after family transfer, both self-made subtypes, broad Self-made and Mixed were considered.",
+    "Current public material establishes Johnson's Demarest Clinic operating role and continued Demarest Media association but does not show which current holding principally underpins his private wealth. Primary Industry therefore uses the disclosed Finance & Investments origin-sector fallback rather than presenting Healthcare as verified.",
+    "Johnson's 2021 first-person account says that he moved to Thailand, and his LinkedIn location is Phuket. This supports business geography but does not conclusively prove that Thailand has replaced the United States as his main legal or habitual residence, so no correction is proposed.",
+    "The first-person article described Johnson as 58 in August 2021, which implies a possible 1962 or 1963 birth year but does not establish an exact date. No birth field is proposed.",
+    "The illness and stem-cell treatment are retained only as Johnson's documented personal account and a career-changing experience. The dossier makes no medical-efficacy claim about the treatment or Demarest Clinic's services.",
+    "No identity-verified personal Instagram, X, YouTube, TikTok or personal website was found. The exact LinkedIn profile and official Demarest Clinic company website meet the proposal threshold.",
+    "The existing Facebook URL is branded for Demarest Media rather than a personal account. It is preserved in the input snapshot but not used as a personal-social source or proposed for alteration.",
+    "Current vessel data was used only as secondary identity context and cohort selection evidence. Neither biography contains a vessel name, specification or ownership history."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Identity is resolved as the American investor, Demarest founder and Phuket clinic executive. Review the Finance & Investments origin-sector classification, the deliberately retained Unknown wealth origin, Investor relationship, verified LinkedIn and company website, and the single minimum-useful Film producer tag. No live owner record, shared dataset or catalogue was changed."
+  }
+}
