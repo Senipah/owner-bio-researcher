@@ -53950,6 +53950,39 @@
       }
     },
     {
+      "id": "tag_6892",
+      "name": "Education & training providers",
+      "normalized_name": "education and training providers",
+      "aliases": [
+        "Private education providers",
+        "Commercial education providers"
+      ],
+      "facets": [
+        "education",
+        "parent:education",
+        "parent:service",
+        "subindustry",
+        "training"
+      ],
+      "status": "active",
+      "merged_into": null,
+      "lifecycle": {
+        "reason": "corpus_level_taxonomy_discovery",
+        "review_reference": "2026-09-18 halfway-corpus owner-tag review: user-approved four-concept candidate manifest",
+        "dossier_record_count": 9,
+        "approval_basis": "explicit_global_taxonomy_review",
+        "approval_reference": "2026-09-18 user-authorised four-concept tag backfill",
+        "promoted_from": "candidate"
+      },
+      "semantic_contract": {
+        "dimension": "industry_or_investment_specialism",
+        "membership": "The owner founded, controlled, principally owned or held a defining long-term operating mandate in a commercial school, higher-education institution, continuing-education centre, vocational academy or professional-training provider. Former businesses qualify when they were a substantial wealth platform or defining operating mandate.",
+        "exclusions": "Exclude donors, trustees and school-board members without ownership or operating responsibility; teachers, professors and coaches whose role does not control a provider; employers' internal training; short courses; creator-led membership communities; and software products that enable education without operating an education or training service.",
+        "temporal_scope": "current_or_historically_defining",
+        "click_through_expectation": "A user clicking Education & training providers should see owners who built, own or run organisations whose product is structured education or professional training, across schools, higher education and vocational provision."
+      }
+    },
+    {
       "id": "tag_4374",
       "name": "Education access in The Gambia",
       "normalized_name": "education access in the gambia",
@@ -68469,6 +68502,39 @@
           "review_reference": "2026-08-29 corpus-wide owner-tag consolidation Goal",
           "outcome": "removed_from_literal_taxonomy_and_preserved_as_context"
         }
+      }
+    },
+    {
+      "id": "tag_6893",
+      "name": "Footwear",
+      "normalized_name": "footwear",
+      "aliases": [
+        "Footwear industry",
+        "Shoe industry"
+      ],
+      "facets": [
+        "consumer goods",
+        "fashion",
+        "manufacturing",
+        "retail",
+        "subindustry"
+      ],
+      "status": "active",
+      "merged_into": null,
+      "lifecycle": {
+        "reason": "corpus_level_taxonomy_discovery",
+        "review_reference": "2026-09-18 halfway-corpus owner-tag review: user-approved four-concept candidate manifest",
+        "dossier_record_count": 12,
+        "approval_basis": "explicit_global_taxonomy_review",
+        "approval_reference": "2026-09-18 user-authorised four-concept tag backfill",
+        "promoted_from": "candidate"
+      },
+      "semantic_contract": {
+        "dimension": "industry_or_investment_specialism",
+        "membership": "The owner founded, controlled, principally owned or held a defining long-term operating mandate in a substantial business centred on footwear brands, footwear manufacturing, footwear design-and-distribution or specialist footwear retail. Former relationships qualify when the footwear business remains a defining source of wealth or public identity.",
+        "exclusions": "Exclude fashion owners whose footwear activity is incidental, retailers that merely stock shoes among unrelated categories, materials or component suppliers, short executive appointments, endorsements, one-off investments and family associations without economic ownership or a defining operating role.",
+        "temporal_scope": "current_or_historically_defining",
+        "click_through_expectation": "A user clicking Footwear should see owners known for creating, controlling or substantially operating footwear brands and businesses, regardless of whether value is captured through manufacturing, design, distribution or specialist retail."
       }
     },
     {
@@ -109153,17 +109219,28 @@
         "subindustry"
       ],
       "merged_into": null,
-      "status": "inactive",
+      "status": "active",
       "lifecycle": {
-        "reason": "industry_concept_is_overlapping_over_granular_or_incidental",
         "source_run": "1ccfc30",
         "dossier_record_count": 6,
-        "consolidation_decision": "retained_inactive",
+        "consolidation_decision": "reactivated_active",
         "consolidation_review_reference": "2026-08-29 corpus-wide owner-tag consolidation Goal",
         "referenced_assignment_review": {
           "review_reference": "2026-08-29 corpus-wide owner-tag consolidation Goal",
           "outcome": "removed_from_literal_taxonomy_and_preserved_as_context"
-        }
+        },
+        "approval_basis": "explicit_global_taxonomy_review",
+        "approval_reference": "2026-09-18 user-authorised four-concept tag backfill",
+        "previous_inactive_reason": "industry_concept_is_overlapping_over_granular_or_incidental",
+        "previous_consolidation_decision": "retained_inactive",
+        "reactivated_from": "inactive"
+      },
+      "semantic_contract": {
+        "dimension": "industry_or_investment_specialism",
+        "membership": "The owner founded, controlled, principally owned, developed or held a defining long-term operating mandate in a commercial recreational marina or marina-centred operating group. Former relationships qualify only when marina ownership or operation remains a defining source of wealth or public identity.",
+        "exclusions": "Exclude yacht owners and berth users, yacht-club members, marina-industry advocates without an operating business, suppliers and tenants, one-off investors, shipyards without a marina business, and waterfront developments where a marina is merely an incidental amenity.",
+        "temporal_scope": "current_or_historically_defining",
+        "click_through_expectation": "A user clicking Marina operations should see owners whose business identity includes creating, controlling or operating marinas, not a general collection of people associated with yachts, waterfront property or marine tourism."
       }
     },
     {
@@ -144983,6 +145060,40 @@
           "review_reference": "2026-08-29 corpus-wide owner-tag consolidation Goal",
           "outcome": "removed_from_literal_taxonomy_and_preserved_as_context"
         }
+      }
+    },
+    {
+      "id": "tag_6891",
+      "name": "Private healthcare providers",
+      "normalized_name": "private healthcare providers",
+      "aliases": [
+        "Private healthcare operators",
+        "Direct healthcare providers"
+      ],
+      "facets": [
+        "clinics",
+        "healthcare services",
+        "hospitals",
+        "parent:healthcare",
+        "senior care",
+        "subindustry"
+      ],
+      "status": "active",
+      "merged_into": null,
+      "lifecycle": {
+        "reason": "corpus_level_taxonomy_discovery",
+        "review_reference": "2026-09-18 halfway-corpus owner-tag review: user-approved four-concept candidate manifest",
+        "dossier_record_count": 23,
+        "approval_basis": "explicit_global_taxonomy_review",
+        "approval_reference": "2026-09-18 user-authorised four-concept tag backfill",
+        "promoted_from": "candidate"
+      },
+      "semantic_contract": {
+        "dimension": "industry_or_investment_specialism",
+        "membership": "The owner founded, controlled, principally owned or held a defining long-term operating mandate in a business that directly delivers patient or residential care through hospitals, clinics, medical centres, home-health services, nursing facilities, assisted living or senior-care networks. Former businesses qualify only when they remain a defining wealth platform.",
+        "exclusions": "Exclude pharmaceutical, biotechnology and medical-device manufacturers; insurers or managed-care businesses without material provider operations; healthcare software; pure investors; property-only senior housing; charitable involvement; hospital-board service; and clinicians whose evidence establishes practice but not a provider business.",
+        "temporal_scope": "current_or_historically_defining",
+        "click_through_expectation": "A user clicking Private healthcare providers should see owners who built, control or operate organisations delivering direct medical, nursing, home-health or residential care, rather than the entire healthcare industry or every physician in the corpus."
       }
     },
     {

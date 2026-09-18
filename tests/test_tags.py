@@ -56,12 +56,12 @@ def _proposal(name: str, tag_id: str | None = None) -> dict:
 def test_seed_catalogue_contains_complete_supported_long_tail() -> None:
     catalogue = load_tag_catalogue()
 
-    assert len(catalogue.tags_by_id) == 391
-    assert len(catalogue.all_tags_by_id) == 6884
+    assert len(catalogue.tags_by_id) == 395
+    assert len(catalogue.all_tags_by_id) == 6887
     assert catalogue.lifecycle_counts == {
-        "active": 391,
+        "active": 395,
         "candidate": 0,
-        "inactive": 6493,
+        "inactive": 6492,
         "merged": 0,
     }
     assert sum(
@@ -95,9 +95,13 @@ def test_seed_catalogue_contains_complete_supported_long_tail() -> None:
         "Insurance",
         "Jewellery & watches",
         "Luxury goods",
+        "Marina operations",
         "Lotteries",
         "Oil & gas",
         "Online marketplaces",
+        "Private healthcare providers",
+        "Education & training providers",
+        "Footwear",
         "Pharmaceuticals",
         "Professional athlete",
         "Publishing",

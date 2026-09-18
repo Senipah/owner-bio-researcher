@@ -34,9 +34,10 @@ owner records, and applying reviewed JSON changes through the website.
 - `compile_owner_research.py`, `src/research_batch.py`: validated AI dossier
   compilation and HTML review reporting.
 - `.agents/skills/research-owner-biography/scripts/register_corpus_tag_candidates.py`,
+  `activate_corpus_tag_manifest.py`, `backfill_corpus_tag_manifest.py`,
   `add_catalogue_tag.py`, `src/tags.py`: separate corpus-level taxonomy
-  candidate registration, explicit global promotion, and lifecycle-aware tag
-  resolution.
+  candidate registration, explicit global activation, exact reviewed-manifest
+  dossier backfill, and lifecycle-aware tag resolution.
 - `update_owners.py`, `src/diffing.py`, `src/browser_update.py`: conflict-aware
   planning, browser writes, and post-save verification.
 - `update_owner_tags.py`, `src/owner_tags.py`, `src/parsers.py`,

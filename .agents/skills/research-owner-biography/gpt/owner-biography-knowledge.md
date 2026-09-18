@@ -16,7 +16,7 @@ Use this file as Custom GPT Knowledge. Behaviour, workflow order, manual-mode ru
 
 | Section | Canonical source | SHA-256 |
 | --- | --- | --- |
-| Owner tag governance | `../../../docs/ai/OWNER_TAG_GOVERNANCE.md` | `85195e2f94dc62134d614fb3a134498b6ecb57f9c57ad38db04f2c8e26878cdd` |
+| Owner tag governance | `../../../docs/ai/OWNER_TAG_GOVERNANCE.md` | `9b03cd882db56eac9cb29899d684acfa04e5ce3be50c62cc66f8861134a11f2a` |
 | Research and dossier contract | `references/research-contract.md` | `d29875c1251b118f5a79d93d86bce9601307ef1f634ece47007aabfa5732f920` |
 | Wealth classification | `references/wealth-classification.md` | `e95ce67d9f5f239e2015b3d283a174917075aed8052ced7579a0276970f0f1f5` |
 | Biography style | `references/biography-style.md` | `0735c58c4d0c75a0a74d7a1bf95afb7f40eafd9e0b103fed3d0304079474caf8` |
@@ -291,6 +291,13 @@ The corpus manifest uses this reviewed shape:
       "aliases": [],
       "facets": ["occupation"],
       "relationship_contract": "What membership means consistently.",
+      "semantic_contract": {
+        "dimension": "profession_or_role",
+        "membership": "The exact inclusion rule for active assignment.",
+        "exclusions": "The exact exclusion rule for active assignment.",
+        "temporal_scope": "current_or_historically_defining",
+        "click_through_expectation": "What a user expects after clicking."
+      },
       "click_through_expectation": "What a user expects after clicking.",
       "known_for_basis": "Why the owners are genuinely known for it.",
       "existing_active_review": "Why active coverage is insufficient.",
@@ -318,8 +325,20 @@ The corpus manifest uses this reviewed shape:
 Run registration without `--apply`, review its lifecycle-collision results,
 then use `--apply --audit PATH` only to enter approved concepts into the
 candidate queue while retaining the global reasoning record. Candidate
-promotion is a later and separate human-approved action through
-`add_catalogue_tag.py --promote-id TAG_ID --approval-reference REFERENCE`.
+promotion is a later and separate human-approved action. Use
+`activate_corpus_tag_manifest.py MANIFEST --approval-reference REFERENCE`
+when one approval covers every registered manifest concept, including a
+deliberately reviewed inactive reactivation; use
+`add_catalogue_tag.py --promote-id TAG_ID --approval-reference REFERENCE` for
+an isolated candidate. Applying manifest activation requires an audit path.
+
+After activation and GPT Knowledge rebuild, use
+`backfill_corpus_tag_manifest.py MANIFEST` without `--apply` and inspect the
+exact owner rows and selected existing dossier sources. Application requires
+both `--audit` and a new `--backup` path. It adds only the reviewed manifest
+assignment to each listed dossier, preserves existing assignments and all
+other fields, refuses target-tag assignments outside the manifest, verifies
+every write, and must report every row as unchanged on a post-apply dry run.
 
 ## Audit and reconciliation contract
 
@@ -374,6 +393,12 @@ The reviewed repository-only consolidation produced:
 | Candidate | 1,664 | 0 | Every candidate resolved; 137 promoted and 1,527 inactivated |
 | Inactive | 4,976 | 6,493 | Rejected, redundant, over-specific, incidental, or otherwise weak concepts retained as tombstones |
 | Merged | 0 | 0 | No false-equivalence merges; true lexical equivalents are aliases |
+
+A separate user-approved corpus review on 2026-09-18 added three stable IDs
+and reactivated one inactive concept: `Marina operations`, `Private healthcare
+providers`, `Education & training providers`, and `Footwear`. The current
+catalogue therefore has 395 active, 6,492 inactive, zero candidate, and zero
+merged records across 6,887 stable IDs.
 
 The curation preserved every stable ID and added a machine-readable
 `semantic_contract` to every active tag. Broader and narrower concepts were

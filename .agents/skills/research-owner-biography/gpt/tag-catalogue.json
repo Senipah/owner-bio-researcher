@@ -2425,6 +2425,29 @@
       }
     },
     {
+      "id": "tag_6892",
+      "name": "Education & training providers",
+      "normalized_name": "education and training providers",
+      "aliases": [
+        "Private education providers",
+        "Commercial education providers"
+      ],
+      "facets": [
+        "education",
+        "parent:education",
+        "parent:service",
+        "subindustry",
+        "training"
+      ],
+      "semantic_contract": {
+        "dimension": "industry_or_investment_specialism",
+        "membership": "The owner founded, controlled, principally owned or held a defining long-term operating mandate in a commercial school, higher-education institution, continuing-education centre, vocational academy or professional-training provider. Former businesses qualify when they were a substantial wealth platform or defining operating mandate.",
+        "exclusions": "Exclude donors, trustees and school-board members without ownership or operating responsibility; teachers, professors and coaches whose role does not control a provider; employers' internal training; short courses; creator-led membership communities; and software products that enable education without operating an education or training service.",
+        "temporal_scope": "current_or_historically_defining",
+        "click_through_expectation": "A user clicking Education & training providers should see owners who built, own or run organisations whose product is structured education or professional training, across schools, higher education and vocational provision."
+      }
+    },
+    {
       "id": "tag_0068",
       "name": "Electronic dance music",
       "normalized_name": "electronic dance music",
@@ -2830,6 +2853,29 @@
         "exclusions": "Exclude fandom, recreation, sponsorship, attendance, a one-off event, and casual participation.",
         "temporal_scope": "current_or_historically_defining",
         "click_through_expectation": "Owners grouped under Football satisfy this same membership rule for a defining, evidence-backed reason."
+      }
+    },
+    {
+      "id": "tag_6893",
+      "name": "Footwear",
+      "normalized_name": "footwear",
+      "aliases": [
+        "Footwear industry",
+        "Shoe industry"
+      ],
+      "facets": [
+        "consumer goods",
+        "fashion",
+        "manufacturing",
+        "retail",
+        "subindustry"
+      ],
+      "semantic_contract": {
+        "dimension": "industry_or_investment_specialism",
+        "membership": "The owner founded, controlled, principally owned or held a defining long-term operating mandate in a substantial business centred on footwear brands, footwear manufacturing, footwear design-and-distribution or specialist footwear retail. Former relationships qualify when the footwear business remains a defining source of wealth or public identity.",
+        "exclusions": "Exclude fashion owners whose footwear activity is incidental, retailers that merely stock shoes among unrelated categories, materials or component suppliers, short executive appointments, endorsements, one-off investments and family associations without economic ownership or a defining operating role.",
+        "temporal_scope": "current_or_historically_defining",
+        "click_through_expectation": "A user clicking Footwear should see owners known for creating, controlling or substantially operating footwear brands and businesses, regardless of whether value is captured through manufacturing, design, distribution or specialist retail."
       }
     },
     {
@@ -4283,6 +4329,29 @@
         "exclusions": "Exclude one transaction, a generic strategy description, an analytical inference, or a model common to wealthy owners generally.",
         "temporal_scope": "current_or_historically_defining",
         "click_through_expectation": "Owners grouped under Manufacturing automation satisfy this same membership rule for a defining, evidence-backed reason."
+      }
+    },
+    {
+      "id": "tag_3493",
+      "name": "Marina operations",
+      "normalized_name": "marina operations",
+      "aliases": [
+        "Marina management",
+        "Recreational marina operations"
+      ],
+      "facets": [
+        "marine services",
+        "parent:shipping_maritime",
+        "parent:travel_hospitality",
+        "recreational boating",
+        "subindustry"
+      ],
+      "semantic_contract": {
+        "dimension": "industry_or_investment_specialism",
+        "membership": "The owner founded, controlled, principally owned, developed or held a defining long-term operating mandate in a commercial recreational marina or marina-centred operating group. Former relationships qualify only when marina ownership or operation remains a defining source of wealth or public identity.",
+        "exclusions": "Exclude yacht owners and berth users, yacht-club members, marina-industry advocates without an operating business, suppliers and tenants, one-off investors, shipyards without a marina business, and waterfront developments where a marina is merely an incidental amenity.",
+        "temporal_scope": "current_or_historically_defining",
+        "click_through_expectation": "A user clicking Marina operations should see owners whose business identity includes creating, controlling or operating marinas, not a general collection of people associated with yachts, waterfront property or marine tourism."
       }
     },
     {
@@ -5955,6 +6024,30 @@
         "exclusions": "Exclude passive holdings, one deals or projects, customers and suppliers, short earlier jobs, and incidental portfolio exposure.",
         "temporal_scope": "current_or_historically_defining",
         "click_through_expectation": "Owners grouped under Private equity satisfy this same membership rule for a defining, evidence-backed reason."
+      }
+    },
+    {
+      "id": "tag_6891",
+      "name": "Private healthcare providers",
+      "normalized_name": "private healthcare providers",
+      "aliases": [
+        "Private healthcare operators",
+        "Direct healthcare providers"
+      ],
+      "facets": [
+        "clinics",
+        "healthcare services",
+        "hospitals",
+        "parent:healthcare",
+        "senior care",
+        "subindustry"
+      ],
+      "semantic_contract": {
+        "dimension": "industry_or_investment_specialism",
+        "membership": "The owner founded, controlled, principally owned or held a defining long-term operating mandate in a business that directly delivers patient or residential care through hospitals, clinics, medical centres, home-health services, nursing facilities, assisted living or senior-care networks. Former businesses qualify only when they remain a defining wealth platform.",
+        "exclusions": "Exclude pharmaceutical, biotechnology and medical-device manufacturers; insurers or managed-care businesses without material provider operations; healthcare software; pure investors; property-only senior housing; charitable involvement; hospital-board service; and clinicians whose evidence establishes practice but not a provider business.",
+        "temporal_scope": "current_or_historically_defining",
+        "click_through_expectation": "A user clicking Private healthcare providers should see owners who built, control or operate organisations delivering direct medical, nursing, home-health or residential care, rather than the entire healthcare industry or every physician in the corpus."
       }
     },
     {

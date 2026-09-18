@@ -282,9 +282,17 @@ catalogue. The main agent owns the following checkpoint workflow:
    Validate and dry-run it with `scripts/register_corpus_tag_candidates.py`.
    This command can queue a formal `candidate` but can never activate one.
 4. Promote a reviewed candidate only through explicit global curation with a
-   human `approval_reference`; merge semantic aliases while preserving useful
-   broader and narrower concepts.
+   human `approval_reference`; use `scripts/activate_corpus_tag_manifest.py`
+   when the approval covers every registered concept in one reviewed manifest,
+   or the single-tag catalogue tool for an isolated promotion. Merge semantic
+   aliases while preserving useful broader and narrower concepts.
 5. Rebuild and check GPT Knowledge after each approved catalogue change.
+6. For an explicitly approved manifest backfill, dry-run
+   `scripts/backfill_corpus_tag_manifest.py`, inspect all evidence-source
+   selections, and apply only with unique audit and backup paths. The command
+   is additive: it must preserve every existing assignment, reject any target
+   tag found outside the manifest, and become fully unchanged on its post-apply
+   dry run.
 
 For the explicitly authorised repository-wide consolidation recorded in
 `config/owner-tag-consolidation.json`, use
