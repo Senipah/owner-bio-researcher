@@ -28,6 +28,7 @@ The human-facing commands and file lineage are maintained in `README.md`.
 | Vessel owner ordering | `reorder_vessel_owners.py`, `src/vessel_owner_order.py` | Reads candidate XLSX rows, plans the site's stable oldest-first UBO order, and only with `--apply` submits the native relationship-order PATCH and verifies a fresh read. |
 | Owner enrichment | `enrich_owners.py`, `src/enrichment.py`, `src/parsers.py` | Authenticated HTTP reads dynamically discover details controls and social profiles. |
 | AI research compilation | `compile_owner_research.py`, `src/research_batch.py` | Selects owners explicitly by current Top-100 rank, fully ranked largest current-vessel LOA, or the complete owner file prioritised by LOA, validates independent dossiers, compiles high-confidence proposals into a separate JSON, and renders an HTML review report. |
+| Cohort status | `sync_owner_cohort_status.py`, `src/cohort_status.py` | Derives researched state from terminal production dossiers and imports verified live-update state into the tracked all-by-LOA cohort through a dry-run-first apply with optional audit output. |
 | Change planning | `src/diffing.py` | Compares baseline, desired JSON, and current live state. |
 | Live writes | `update_owners.py`, `src/browser_update.py` | Selenium opens edit overlays, waits for the iframe/form, writes selected fields, saves, and verifies by re-export. |
 | Persistence | `src/io_utils.py` | Versioned JSON and atomic replacement checkpoints. |
@@ -150,10 +151,22 @@ Workflow transitions are intentionally narrow:
   values with confidence 70 or higher are imported.
 - Only a verified live apply sets `updated_in_system=true`.
 
+The canonical all-by-LOA cohort is a separate, tracked status ledger. Its owner
+identity and ranking fields are immutable, while each entry's
+`workflow.researched` and `workflow.updated_in_system` booleans are maintained
+by `sync_owner_cohort_status.py`. The first is an exact reflection of terminal
+production dossiers. The second is monotonic when imported from verified owner
+documents and can be cleared only with an explicit per-owner reset. A top-level
+`workflow_summary` makes the contiguous completed prefix, next unresearched
+owner, researched count, updated count and remaining count visible in Git. It
+is the sole progress authority; ignored progress markers and numbered compiled
+checkpoints are not retained.
+
 ## Storage and sensitive data
 
 - Generated data, audits, screenshots, and dummy-test artifacts belong under
-  `output/`, which is ignored by Git.
+  `output/`, which is ignored by Git except for the explicitly allowlisted
+  reviewed owner inputs, canonical cohort and production dossiers.
 - `src/user_secrets.py` loads `SYN_USER` and `SYN_PASS`; credentials must not
   appear in JSON, logs, tests, or documentation.
 - Saved HTML in `examples/` is intentionally ignored and can contain real

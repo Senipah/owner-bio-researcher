@@ -294,6 +294,39 @@ legacy `approved`) when compilation uses `--mark-ai-enriched`. It resets
 `updated_in_system=false` whenever it creates a new desired change. A verified
 live apply sets `updated_in_system=true`.
 
+The tracked all-by-LOA cohort at
+`output\owner-research\all-by-loa\cohort.json` is the durable corpus progress
+ledger. Each of its 4,197 ranked entries has a smaller `workflow` object:
+
+```json
+{
+  "researched": true,
+  "updated_in_system": false
+}
+```
+
+`researched` is derived from terminal (`complete` or legacy `approved`)
+production dossiers. `updated_in_system` is imported only from owner documents
+whose live save was already re-exported and verified. Cohort identity, order,
+vessel and LOA fields remain immutable; only these status booleans and the
+top-level `workflow_summary` are synchronized. The summary records the
+contiguous `completed_prefix` and the exact `next_unresearched_owner`; no
+separate all-by-LOA progress marker is used.
+
+Preview a synchronization before writing it:
+
+```powershell
+.\venv\Scripts\python.exe .\sync_owner_cohort_status.py
+```
+
+After reviewing the counts, next owner and changed IDs, repeat with `--apply`.
+An optional `--audit PATH` may retain a report when a migration or live-update
+checkpoint warrants one; ordinary research does not create another state
+file. Imported true update flags are monotonic, so a smaller or older source
+cannot silently clear them. Use `--updated-owner-input` only to import a
+verified update snapshot, and use `--mark-not-updated PERSON_ID` only when new
+desired changes deliberately invalidate that owner's prior applied state.
+
 ## 4. Compile completed owner research
 
 Owner research is stored as one completed-research dossier per person under
@@ -515,10 +548,13 @@ exist for every selected owner before compilation succeeds.
 For a resumable Goal Mode research run over the complete owner file, paste the
 prompt in
 [`docs/goal-mode-all-owners-by-loa-research-prompt.md`](docs/goal-mode-all-owners-by-loa-research-prompt.md).
-The prompt derives the next fixed 50-owner window from the last verified
-cumulative checkpoint, resumes partial work within that window, and freezes
-every earlier completed tranche. It also preserves the explicitly authorised
-first-50 editorial exception without extending that exception to later owners.
+The prompt first reconciles terminal dossiers, then derives the next fixed
+50-owner window solely from the tracked cohort's contiguous researched prefix.
+Interrupted work is recovered by the same reconciliation; no separate progress
+marker, tranche summary or numbered cumulative checkpoint is retained. A
+fixed ignored `tmp` compilation is used only for validation and then removed.
+The prompt also preserves the explicitly authorised first-50 editorial
+exception without extending that exception to later owners.
 
 The JSON retains each owner's immutable `_baseline`, contains only the selected
 owners, and applies only dossier proposals with confidence 70 or higher.

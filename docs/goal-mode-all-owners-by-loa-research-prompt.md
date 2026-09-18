@@ -1,26 +1,28 @@
 # Goal Mode prompt: next 50 LOA-prioritised owners
 
 Paste the prompt below from the repository root each time another tranche
-should be researched. It reads the shared progress marker, resumes an
-interrupted tranche when necessary, or selects the next contiguous 50 owners.
-No positions, filenames, or prefix values need to be edited between runs.
+should be researched. It reconciles terminal production dossiers into the
+tracked cohort and selects the next contiguous 50 unresearched owners. No
+positions, filenames, prefix values, or separate progress file need to be
+maintained between runs.
 
-The progress marker is the authority for tranche selection. Earlier production
-dossiers are frozen, new dossiers are marked complete after strict validation,
-and nothing is applied to the live website.
+The cohort is the sole authority for LOA order and workflow progress. Earlier
+production dossiers are frozen, new dossiers are marked complete after strict
+validation, and nothing is applied to the live website.
 
 ## Prompt
 
 ```text
 Use `$research-owner-biography`.
 
-Goal: resume the active LOA-prioritised research tranche, or research the next
-contiguous batch of 50 owners after the completed production prefix, then
-compile cumulative completed-research artifacts through the end of that tranche.
+Goal: research the next contiguous batch of up to 50 unresearched owners in
+the canonical LOA-prioritised cohort, then validate a transient cumulative
+compilation through the end of that tranche.
 
 This prompt is intentionally reusable without editing. Never choose a tranche
-from filenames, scattered missing dossiers, or the highest dossier position.
-Use the progress marker only.
+from filenames, a compiled artifact, or an ignored progress file. Reconcile
+terminal dossiers through `sync_owner_cohort_status.py`, then use only the
+cohort's workflow flags and summary.
 
 Do not mark this goal complete until the selected tranche and every acceptance
 criterion below are complete. An individual sparse or difficult owner is not a
@@ -30,12 +32,11 @@ reason to skip forward or mark the goal blocked.
 
 - Owner input:
   `output/owners-list.vessel-enriched.enriched.json`
-- Immutable LOA-sorted cohort:
+- Canonical LOA-sorted cohort (identity and ranking fields are immutable;
+  `workflow` status is mutable and tracked):
   `output/owner-research/all-by-loa/cohort.json`
 - Production dossiers:
   `output/owner-research/all-by-loa/`
-- Progress marker:
-  `output/owner-research/all-by-loa-progress.json`
 - Tranche size: 50
 
 Read `AGENTS.md`, the relevant repository documentation, and the complete
@@ -46,58 +47,46 @@ apply website changes, stage files, commit, or push.
 
 ## Read and verify progress
 
-1. Load the cohort and progress marker. If the progress marker is missing,
-   malformed, or incompatible, stop for user direction. Do not reconstruct
-   progress from dossier filenames.
-2. Verify:
+1. Reconcile terminal production dossiers into the tracked cohort:
+
+   `.\venv\Scripts\python.exe .\sync_owner_cohort_status.py`
+
+   Review the dry-run, then run:
+
+   `.\venv\Scripts\python.exe .\sync_owner_cohort_status.py --apply`
+
+   Do not pass `--updated-owner-input` during ordinary research. Existing true
+   update flags are monotonic and remain in the cohort.
+2. Load the updated cohort and verify:
 
    - `selection` is `all-by-loa`;
-   - the recorded owner-input, cohort, and dossier paths are the authoritative
-     paths above;
    - `cohort_size` equals the number of cohort entries;
-   - `tranche_size` is 50;
-   - `completed_prefix` is between 0 and `cohort_size`;
-   - when `completed_prefix > 0`, `completed_through.person_id` matches the
-     person at that cohort position; and
-   - when owners remain, `next_owner` matches the cohort entry immediately
-     after `completed_prefix`.
+   - every owner has boolean `workflow.researched` and
+     `workflow.updated_in_system` fields;
+   - researched owners form one contiguous prefix with no researched owner
+     after the first false flag;
+   - `workflow_summary` exactly matches the per-owner flags;
+   - `workflow_summary.completed_prefix` equals `researched_count`; and
+   - `workflow_summary.next_unresearched_owner` matches the first false entry,
+     or is null when none remain.
 
-3. Do not modify dossiers at positions `1..completed_prefix`.
-4. If `completed_prefix == cohort_size`, report that the cohort is complete
+3. Do not modify any dossier whose cohort `workflow.researched` flag is true.
+4. If `remaining_research_count == 0`, report that the cohort is complete
    and do not start another tranche.
 
-## Select or resume the tranche
-
-If `active_tranche` is not null:
-
-- resume its exact `start_position` and `end_position`;
-- require `start_position == completed_prefix + 1`;
-- require `end_position` to equal
-  `min(completed_prefix + tranche_size, cohort_size)`;
-- verify every recorded owner ID against the cohort; and
-- preserve its `completed_person_ids`.
-
-If `active_tranche` is null:
+## Select the tranche
 
 1. Set:
 
-   - `TRANCHE_START = completed_prefix + 1`
-   - `TRANCHE_END = min(completed_prefix + tranche_size, cohort_size)`
-   - `CURRENT_LIMIT = TRANCHE_END`
-   - `TRANCHE_SUMMARY = output/owner-research/all-by-loa-tranche-{TRANCHE_START}-{TRANCHE_END}-summary.json`
-   - `CURRENT_JSON = output/research-enriched-owners-list.all-by-loa.first-{TRANCHE_END}.json`
-   - `CURRENT_HTML = output/research-enriched-owners-list.all-by-loa.first-{TRANCHE_END}.html`
+   - `COMPLETED_PREFIX = workflow_summary.completed_prefix`
+   - `TRANCHE_START = COMPLETED_PREFIX + 1`
+   - `TRANCHE_END = min(COMPLETED_PREFIX + 50, cohort_size)`
+   - `CURRENT_JSON = tmp/all-by-loa-current.json`
+   - `CURRENT_HTML = tmp/all-by-loa-current.html`
 
-2. Atomically set `active_tranche` in the progress marker with:
-
-   - start and end positions;
-   - the ordered target person IDs and display names;
-   - `completed_person_ids=[]`;
-   - start timestamp;
-   - tranche summary path; and
-   - cumulative JSON and HTML paths.
-
-Use `src.io_utils.atomic_write_json` for every progress-marker update.
+2. Select exactly the cohort entries at
+   `TRANCHE_START..TRANCHE_END`. Require every selected owner to have
+   `workflow.researched=false`.
 
 Print the selected range and the cohort position, person ID, display name,
 largest current vessel and LOA at both boundaries.
@@ -109,16 +98,14 @@ Never substitute another owner for a target owner and never move beyond
 
 For each target owner:
 
-- if the person ID appears in `active_tranche.completed_person_ids`, reuse the
-  production dossier only when it still matches the target identity and passes
-  strict validation against the current owner input;
-- if that recorded completed dossier is missing, stale, mismatched, or invalid,
-  remove its ID from the completed list atomically and research it again;
-- if a target dossier exists but its ID is not recorded as completed, treat it
-  as interrupted partial work; preserve a copy beneath
+- if a terminal dossier existed at startup, the reconciliation step should
+  already have marked it researched and it must not be in the selected range;
+- if a selected owner's dossier exists, treat it as interrupted partial work;
+  preserve a copy beneath
   `output/owner-research/all-by-loa-partials/tranche-{TRANCHE_START}-{TRANCHE_END}/`
   before replacing it when necessary;
-- never treat mere file existence as completion; and
+- never treat mere file existence as completion; only a terminal dossier
+  reconciled into the cohort changes progress; and
 - never inspect later dossiers as a reason to advance the tranche.
 
 ## Research the target owners
@@ -130,9 +117,8 @@ Use at most three research subagents concurrently. Give each subagent exactly
 one owner at a time and `$research-owner-biography`.
 
 Subagents may edit only their assigned production dossier. They must not edit
-the owner input, cohort, progress marker, source code, documentation, tests,
-compiled artifacts, tranche summary, earlier dossiers, later dossiers, or
-another owner's dossier.
+the owner input, cohort, source code, documentation, tests, transient compiled
+artifacts, earlier dossiers, later dossiers, or another owner's dossier.
 
 The main agent owns tranche selection, identity review, dossier validation,
 progress updates, cross-owner consistency, corpus auditing and compilation.
@@ -263,11 +249,13 @@ For every target owner:
     `.\venv\Scripts\python.exe .agents\skills\research-owner-biography\scripts\validate_dossier.py DOSSIER_PATH --owner-input output\owners-list.vessel-enriched.enriched.json --strict-editorial`
 
 20. Fix every validation error and warning.
-21. After the dossier passes, atomically append its person ID to
-    `active_tranche.completed_person_ids`.
+21. Do not hand-edit the cohort flag. The terminal validated dossier will be
+    reconciled into the cohort by `sync_owner_cohort_status.py`.
 
 Give the user a concise checkpoint after each group of ten newly completed
-owners. A completed ID in the progress marker makes the run safely resumable.
+owners. If the run is interrupted, its next invocation begins by reconciling
+all terminal dossiers, so completed work is recovered without another state
+file.
 
 For an institution, government, municipality or unresolved placeholder, do not
 invent a human identity or personal wealth story. Use the appropriate
@@ -276,7 +264,7 @@ it as completed.
 
 ## Tranche and cumulative editorial review
 
-After every target person ID is recorded as completed:
+After every target dossier is terminal and strictly validated:
 
 1. Re-run strict validation for every dossier in the target tranche.
 2. Perform a main-agent consistency review across the target tranche:
@@ -305,14 +293,16 @@ After every target person ID is recorded as completed:
    direction.
 6. Require zero unresolved actionable issues before compilation.
 
-## Compile cumulative review artifacts
+## Compile a transient cumulative review
 
 Run the normal compiler:
 
 `.\venv\Scripts\python.exe .\compile_owner_research.py --input output\owners-list.vessel-enriched.enriched.json --dossier-dir output\owner-research\all-by-loa --selection all-by-loa --limit TRANCHE_END --output CURRENT_JSON --report CURRENT_HTML --mark-ai-enriched`
 
 Pass `--mark-ai-enriched` so usable completed dossiers are accepted into the
-derived owner document.
+derived owner document. `CURRENT_JSON` and `CURRENT_HTML` are disposable
+validation artifacts under ignored `tmp/`; they are not progress authorities
+and must not be retained as numbered checkpoints.
 
 Verify:
 
@@ -326,49 +316,25 @@ Verify:
   unchanged; and
 - the first and last compiled IDs match cohort positions 1 and `TRANCHE_END`.
 
-## Write the tranche summary
-
-Atomically write `TRANCHE_SUMMARY` with:
-
-- schema version and timestamps;
-- tranche start and end positions;
-- ordered target owner list;
-- newly researched, resumed and reused counts;
-- per-owner validation results;
-- research-status and record-type counts;
-- classification counts and self-made subtype counts;
-- biography and proposal counts;
-- corpus-audit result;
-- cumulative JSON and HTML paths;
-- compiled owner count;
-- confirmation that earlier positions were not modified;
-- confirmation that all target dossiers are complete;
-- test and validation results; and
-- the next cohort position and owner, when one remains.
-
-The tranche summary is an audit record, not the authority for selecting the
-next tranche.
-
 ## Advance progress only after success
 
-Do not advance `completed_prefix` until every acceptance criterion passes.
+After successful research, validation, corpus audit and transient compilation,
+run `sync_owner_cohort_status.py` in dry-run mode and then with `--apply`.
+Do not pass an unverified owner document as `--updated-owner-input`.
 
-After successful research, validation, audit, compilation and summary writing,
-atomically update the progress marker:
+Confirm that:
 
-- set `completed_prefix = TRANCHE_END`;
-- set `completed_through` to the final target cohort position, person ID and
-  display name;
-- set `next_owner` to the next cohort entry, or null when the cohort is
-  complete;
-- set `last_completed_tranche` to its range, completion timestamp and summary
-  path;
-- set `last_artifacts` to `CURRENT_JSON` and `CURRENT_HTML`;
-- set `active_tranche = null`; and
-- update `updated_at`.
+- `workflow_summary.completed_prefix == TRANCHE_END`;
+- `researched_count == TRANCHE_END`;
+- `remaining_research_count == cohort_size - TRANCHE_END`;
+- every target owner now has `workflow.researched=true`; and
+- `next_unresearched_owner` is the cohort entry at `TRANCHE_END + 1`, or null
+  when complete.
 
-If the run stops before completion, leave `active_tranche` in place so the next
-paste of this same prompt resumes it.
+This status-only cohort change does not authorize editing any identity or
+ranking field. Remove `CURRENT_JSON` and `CURRENT_HTML` after their validation;
+they can always be regenerated from the enriched owner input and production
+dossiers.
 
 ## Final acceptance criteria
 
@@ -377,12 +343,13 @@ paste of this same prompt resumes it.
 - Every target dossier passes strict validation.
 - The production corpus audit has zero unresolved actionable issues.
 - Earlier production positions were not modified.
-- Cumulative JSON and HTML exist through `TRANCHE_END`.
 - All usable compiled owners have `workflow.ai_enriched=true`; unresolved
   placeholders remain false.
 - Every target dossier has `review.status=complete`.
-- The tranche summary exists.
-- The progress marker advanced atomically and has `active_tranche=null`.
+- Cohort research flags and `workflow_summary` match `TRANCHE_END`.
+- No progress marker, tranche summary, or numbered cumulative artifact was
+  created or retained.
+- The transient compilation artifacts were removed after validation.
 - The offline test suite passes.
 - Python compilation passes.
 - Custom GPT Knowledge is current.
@@ -391,7 +358,6 @@ paste of this same prompt resumes it.
 
 When complete, return the tranche range, owner count, new/resumed/reused
 counts, dossier and corpus validation results, classification counts,
-unresolved or limited owner count, cumulative JSON and HTML paths, tranche
-summary path, next owner position, and an explicit statement that all target
-dossiers are complete and nothing was applied.
+unresolved or limited owner count, next owner position, and an explicit
+statement that all target dossiers are complete and nothing was applied.
 ```

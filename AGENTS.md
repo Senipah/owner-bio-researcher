@@ -33,6 +33,9 @@ owner records, and applying reviewed JSON changes through the website.
   social enrichment.
 - `compile_owner_research.py`, `src/research_batch.py`: validated AI dossier
   compilation and HTML review reporting.
+- `sync_owner_cohort_status.py`, `src/cohort_status.py`: dry-run-first
+  synchronization of tracked research and verified live-update status in the
+  canonical all-by-LOA cohort.
 - `.agents/skills/research-owner-biography/scripts/register_corpus_tag_candidates.py`,
   `activate_corpus_tag_manifest.py`, `backfill_corpus_tag_manifest.py`,
   `add_catalogue_tag.py`, `src/tags.py`: separate corpus-level taxonomy
@@ -71,6 +74,11 @@ owner records, and applying reviewed JSON changes through the website.
   corpus-level taxonomy workflow or human global curation.
 - Set `workflow.updated_in_system=true` only after a live save is re-exported
   and verified.
+- The all-by-LOA cohort's identity and ranking fields are immutable. Its
+  `workflow.researched` and `workflow.updated_in_system` flags may change only
+  through the dry-run-first cohort-status synchronizer; verified-update imports
+  are monotonic unless an owner is explicitly marked not updated. Its summary
+  is the sole progress authority; do not maintain a parallel progress marker.
 - Set `review.status=complete` only after a terminal research decision passes
   strict validation. Compilation may set `workflow.ai_enriched=true` for
   complete or legacy-approved usable dossiers, and may import only values with

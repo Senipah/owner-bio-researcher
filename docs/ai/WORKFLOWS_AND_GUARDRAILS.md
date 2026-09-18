@@ -63,6 +63,19 @@ when terminal research passes strict validation and sets
 the workflow flag for usable complete or legacy-approved dossiers and resets
 `workflow.updated_in_system=false` when a desired change is introduced. Only
 values with confidence 70 or higher are imported.
+
+`output/owner-research/all-by-loa/cohort.json` is the tracked corpus status
+ledger. Its identity, order, vessel and LOA fields are immutable. Use
+`sync_owner_cohort_status.py` to derive `workflow.researched` from terminal
+production dossiers and to import only already-verified
+`workflow.updated_in_system=true` states. The synchronizer is dry-run-first,
+preserves imported true update flags, and requires an explicit
+`--mark-not-updated` to clear one. Its optional `--audit` output is for a
+deliberately retained migration or update record, not ordinary progress. The
+cohort requires researched owners to form a contiguous prefix, and its root
+`workflow_summary` is the sole progress authority, including the completed
+prefix and next unresearched owner. Do not retain ignored progress markers,
+tranche summaries, or numbered cumulative compilations as parallel state.
 Schema-v8 tags follow the canonical
 [owner-tag governance policy](OWNER_TAG_GOVERNANCE.md). Production resolution
 exposes active assignments and canonical merge redirects only. Candidate,
@@ -185,6 +198,9 @@ AI review or a live system update occurred.
   difference is a conflict, not authorization to overwrite.
 - Re-export after saving and require a clean verification plan before setting
   `workflow.updated_in_system=true`.
+- Do not infer a cohort update flag from compilation, tag-only work, or an
+  unverified apply. Import it only from a verified refreshed owner document or
+  set it explicitly after equivalent verification.
 - Tag Add and Delete controls write immediately rather than at the overlay's
   Done action. Re-read the overlay before the first mutation, add canonical
   replacements before deleting old names, checkpoint every successful CRUD
