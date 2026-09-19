@@ -1,0 +1,208 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 214,
+    "display_name": "Aidan Barclay",
+    "identity_confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "The saved British name, United Kingdom residence, age metadata and 2004-2017 Zeus relationship converge on Aidan Stuart Barclay, eldest son of Sir David Barclay and former Telegraph Media Group chairman. Companies House supplies his full name, January 1956 birth month and long company history, while specialist yacht reporting states that Aidan Barclay bought the same yacht in 2004 and sold it in 2017."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "gender", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "gender", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "British businessman, second-generation Barclay family principal and former chairman of Telegraph Media Group and Ellerman Investments.",
+    "defining_work": "He directed substantial family operations across newspapers, property, retail and hotels, most visibly overseeing Telegraph Media Group after its 2004 acquisition.",
+    "formative_context": "As Sir David Barclay's eldest son, he learned within his father and uncle's property and hotel group before receiving an economic interest through intergenerational family trust arrangements.",
+    "decisive_moment": "His father and uncle's purchase of the Telegraph titles placed him in executive charge of a national newspaper group.",
+    "enduring_dimensions": [
+      "Long-term strategic and financial control of newspaper publishing rather than routine editorial work",
+      "Executive experience across Ellerman property, Scottish newspapers, the Ritz hotel and family retail interests",
+      "A family-transferred economic stake distinct from his own sustained operating contribution"
+    ],
+    "character_detail": "Contemporary colleagues described a cautious, numbers-focused backroom operator who set targets, examined accounts and preserved successful front-of-house traditions.",
+    "opening_options": [
+      {"mode": "decisive_event", "angle": "Use the 2004 Telegraph acquisition to introduce the moment Barclay became the family's visible newspaper executive."},
+      {"mode": "present_identity", "angle": "Establish him as a former Telegraph chairman and second-generation director of the Barclay family's diverse private businesses."}
+    ],
+    "excluded_transient_context": [
+      "Personal vessel ownership and sale history",
+      "Current debt balances, bankruptcy proceedings and individual voluntary arrangement terms",
+      "Current valuations, rankings and transaction prices",
+      "Unresolved current beneficial interests after receivership and recent asset disposals"
+    ],
+    "source_ids": ["S2", "S3", "S4", "S5", "S6", "S7", "S9", "S10"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "decision_then_consequence",
+    "calibration_archetypes": ["inherited_operator"],
+    "notes": "The pair shares only Barclay's family-business and Telegraph identity anchors. The short biography uniquely states the trust-based family transfer and broad sector span; the long profile omits that mechanism and instead develops the acquisition, publishing method, Scottish newspaper experience, Ritz role and operating character. Reducing the long profile would discard its account of how he worked and what distinguished his management."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 96, "band": "very_high", "reason": "Mandatory exact-name, site:forbes.com/profile and Telegraph-qualified searches found Forbes reporting about Aidan Barclay and a profile for his father, Sir David Barclay, but no dedicated Forbes profile for Aidan. The father's profile and a family article were used only as reporting sources and do not justify a Forbes social proposal for Aidan."}
+  },
+  "wealth_creation_industry": {
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "The transferred Barclay family fortune was originally created through property development and a hotel portfolio before expanding into media, retail and logistics.",
+    "confidence": {"score": 90, "band": "high", "reason": "Forbes and a detailed Independent profile consistently identify property development, house flipping and hotels as the businesses through which Sir David and Sir Frederick first amassed the family fortune. The later diversified portfolio is well documented, but those later sectors did not precede the property foundation."},
+    "source_ids": ["S3", "S9"]
+  },
+  "primary_industry": {
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "Real Estate is used as an origin-sector fallback because no current private sector can be shown to dominate Barclay's wealth after recent disposals, receiverships and creditor-led restructurings.",
+    "confidence": {"score": 80, "band": "medium", "reason": "The origin sector is strongly evidenced, but current materiality is not. The family lost the Telegraph and Very Group, a creditor took control of Trenport Property Holdings, and current filings show a mixture of active, dissolved, liquidating and administrated entities. Under the required origin-sector fallback, Real Estate is retained without claiming it has been verified as the largest present holding."},
+    "source_ids": ["S2", "S3", "S7", "S9"]
+  },
+  "wealth_origin": {
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Aidan Barclay received his principal economic interest through an inter vivos division of the family fortune among the founders' children, implemented through trust structures.",
+    "confidence": {"score": 97, "band": "very_high", "reason": "An approved High Court judgment states that Sir David and Sir Frederick divided their fortune equally among three of Sir David's sons and Sir Frederick's daughter using complex overseas trusts. This was a family transfer made from 2014, not an inference from surname, executive succession or Sir David's later death."},
+    "source_ids": ["S5", "S6"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Family shareholder and Operator are the strongest historical alternatives, but Barclay's current relationship to a principal remaining wealth-producing asset is not established after creditor control, asset sales and receivership.",
+    "confidence": {"score": 45, "band": "insufficient", "reason": "The family transfer, Barclay's former status as its largest business shareholder and decades of operating control are well documented. Those facts do not establish a present primary relationship: he left Ellerman and Telegraph directorships in 2023, Very Group control ended in 2025, property and logistics entities entered administration, and 2026 reporting says administrators replaced him and his brother. Current Companies House appointments remain, but their economic importance is unproved."},
+    "source_ids": ["S2", "S5", "S6", "S7", "S10"]
+  },
+  "biography": {
+    "plain_text": "Aidan Stuart Barclay is a British businessman and former chairman of Telegraph Media Group. The eldest son of Sir David Barclay, he spent decades directing the family's newspaper, property and retail interests through Ellerman Investments. His economic stake arose through intergenerational trust arrangements that divided the Barclay fortune among the founders' children.",
+    "html": "<p>Aidan Stuart Barclay is a British businessman and former chairman of Telegraph Media Group. The eldest son of Sir David Barclay, he spent decades directing the family's newspaper, property and retail interests through Ellerman Investments. His economic stake arose through intergenerational trust arrangements that divided the Barclay fortune among the founders' children.</p>\r\n",
+    "word_count": 52,
+    "confidence": {"score": 93, "band": "high", "reason": "Companies House, the High Court judgment and established reporting support Barclay's identity, family relationship, executive roles, sector span and family-transfer mechanism. The text uses durable historical facts and excludes all vessel, valuation and unresolved current-control material."},
+    "source_ids": ["S2", "S4", "S5", "S6", "S10"]
+  },
+  "long_biography": {
+    "plain_text": "When his father and uncle bought the Telegraph titles in 2004, Aidan Barclay became the newspaper group's executive chairman and the family's most visible business representative. He concentrated on budgets, strategy and digital expansion rather than editorial work, overseeing the titles' move to new London offices and a return to profit.\n\nBarclay had previously managed Ellerman's property interests and chaired the family's Scottish newspapers and the Ritz hotel. Colleagues described a cautious operator who focused on targets, accounts and margins while leaving front-of-house traditions intact. That approach placed him at the centre of a private portfolio spanning media, retail, hotels and property.",
+    "html": "<p>When his father and uncle bought the Telegraph titles in 2004, Aidan Barclay became the newspaper group's executive chairman and the family's most visible business representative. He concentrated on budgets, strategy and digital expansion rather than editorial work, overseeing the titles' move to new London offices and a return to profit.</p>\r\n<p>Barclay had previously managed Ellerman's property interests and chaired the family's Scottish newspapers and the Ritz hotel. Colleagues described a cautious operator who focused on targets, accounts and margins while leaving front-of-house traditions intact. That approach placed him at the centre of a private portfolio spanning media, retail, hotels and property.</p>\r\n",
+    "word_count": 102,
+    "confidence": {"score": 90, "band": "high", "reason": "Contemporary profiles directly support the Telegraph appointment, strategic and financial focus, digital and office changes, profitability, property work, Scottish publishing and Ritz chairmanship. Character language is conservative and tied to reported working methods."},
+    "source_ids": ["S3", "S4"]
+  },
+  "proposed_details": [
+    {
+      "field": "middle_names",
+      "value": "Stuart",
+      "action": "fill_missing",
+      "confidence": {"score": 99, "band": "very_high", "reason": "The identity-verified Companies House officer record gives the full name Aidan Stuart Barclay."},
+      "source_ids": ["S2"]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Former Telegraph Media Group chairman",
+      "action": "fill_missing",
+      "confidence": {"score": 97, "band": "very_high", "reason": "Contemporary profiles identify Barclay as Telegraph Media Group chairman, and official filings plus later reporting establish that the role ended."},
+      "source_ids": ["S2", "S4", "S6"]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {"score": 98, "band": "very_high", "reason": "Companies House and multiple exact-identity profiles identify Aidan Stuart Barclay as male."},
+      "source_ids": ["S2", "S3", "S4"]
+    },
+    {
+      "field": "birth_month",
+      "value": "January",
+      "action": "fill_missing",
+      "confidence": {"score": 99, "band": "very_high", "reason": "The identity-verified Companies House officer record gives January 1956 as his birth month and year."},
+      "source_ids": ["S2"]
+    },
+    {
+      "field": "birth_year",
+      "value": "1956",
+      "action": "fill_missing",
+      "confidence": {"score": 99, "band": "very_high", "reason": "The identity-verified Companies House officer record gives January 1956, consistent with contemporary age reporting and the saved age metadata."},
+      "source_ids": ["S0", "S2", "S4"]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Aidan Stuart Barclay is a British businessman and former chairman of Telegraph Media Group. The eldest son of Sir David Barclay, he spent decades directing the family's newspaper, property and retail interests through Ellerman Investments. His economic stake arose through intergenerational trust arrangements that divided the Barclay fortune among the founders' children.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {"score": 93, "band": "high", "reason": "Companies House, the High Court judgment and established reporting support every claim; the biography is public-safe, durable and independent of vessel ownership."},
+      "source_ids": ["S2", "S4", "S5", "S6", "S10"]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0936",
+      "name": "Newspaper publishing",
+      "summary": "Barclay held a defining, long-term operating mandate across the Telegraph titles, the Spectator and earlier Scottish newspapers.",
+      "relationship_type": "former long-term controlling operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "The tag creates a coherent cohort of owners who controlled substantial newspaper-publishing operations; Barclay's multi-decade chairmanship and day-to-day oversight exceed a passive holding or short executive post.",
+      "confidence": {"score": 97, "band": "very_high", "reason": "Contemporary profiles directly identify his chairmanship, day-to-day control and earlier publishing mandate across several newspaper groups."},
+      "source_ids": ["S3", "S4", "S6"]
+    },
+    {
+      "tag_id": "tag_0583",
+      "name": "Media owner",
+      "summary": "As a family shareholder and Telegraph chairman, Barclay was publicly identified for years as a newspaper proprietor with strategic and operational authority.",
+      "relationship_type": "former family owner-operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "This separate role tag distinguishes recognised media proprietors from publishing executives without an ownership stake; Barclay combined a family economic interest with operating control.",
+      "confidence": {"score": 93, "band": "high", "reason": "The Independent described him as the Telegraph's new proprietor, later reporting documents his family shareholding, and the High Court confirms the transferred family economic interest. The role ended but remains defining."},
+      "source_ids": ["S3", "S5", "S6"]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "candidate_type": "wealth_relationship",
+      "field": "wealth_relationship",
+      "candidate_value": "heir_family_shareholder",
+      "confidence": {"score": 66, "band": "low", "reason": "The family transfer and Barclay's former largest-shareholder status make Heir / family shareholder the strongest alternative. Current receivership, disposals, creditor control and an undisclosed debt settlement prevent confirmation that a surviving family stake is still his principal wealth-producing asset."},
+      "source_ids": ["S5", "S6", "S7"]
+    }
+  ],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=214", "title": "Aidan Barclay saved owner record, person ID 214", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The exact saved display name is Aidan Barclay; British nationality, United Kingdom residence, Alive mortality status and age 64 as at 7 May 2020 are populated, while middle name, birth details, known-for, gender, biography, employer and socials are blank.", "The export records a historical relationship to Zeus, vessel ID 23649, from June 2004 to June 2017. This is source-record selection context rather than biography or wealth evidence."]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Aidan%20Barclay", "title": "Forbes exact-name and profile searches", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Exact-name, profile-path, Telegraph-qualified and yacht-qualified searches found reporting about Aidan Barclay but no dedicated Forbes person profile for him.", "Forbes maintains a separate profile for his father, Sir David Barclay; it is not attributable to Aidan and is not proposed as his social link."]},
+    {"id": "S2", "url": "https://find-and-update.company-information.service.gov.uk/officers/XCaksH_3N5lQjUcbsMOrPO9V0tQ/appointments", "title": "Aidan Stuart Barclay personal appointments", "publisher": "UK Companies House", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The official officer record gives the full name Aidan Stuart Barclay, birth month January 1956, British nationality and residence in England; identity verification was completed in December 2025.", "It records 91 appointments, including historical Ellerman, Telegraph, hotel, retail and logistics roles and a smaller set of current or administrated directorships. Ellerman ended in June 2023, most Very-related roles ended in late 2025 or early 2026, and several remaining entities are in administration or liquidation."]},
+    {"id": "S3", "url": "https://www.the-independent.com/news/people/profiles/aidan-barclay-rising-son-44784.html", "title": "Aidan Barclay: Rising son", "publisher": "The Independent", "tier": 2, "accessed_at": "2026-09-19", "supports": ["The profile identifies Aidan as Sir David Barclay's eldest son, his father's business frontman, Ellerman property executive, Ritz chairman and prospective executive chairman of the Telegraph after the 2004 purchase.", "It describes his management as backroom, cautious and focused on targets, accounts and margins, and traces the family fortune's early creation to London property development and hotels before later diversification."]},
+    {"id": "S4", "url": "https://www.theguardian.com/media/2010/jul/19/aidan-barclay-mediaguardian-100-2010", "title": "MediaGuardian 100: Aidan Barclay", "publisher": "The Guardian", "tier": 2, "accessed_at": "2026-09-19", "supports": ["The profile identifies Barclay as Telegraph Media Group chairman, in charge of day-to-day newspaper operations and the Spectator, after earlier chairing Press Holdings and its Scottish titles.", "It credits him with the group's transformation, move to new London offices, digital push and return to profit, while recording his age as 54 in 2010, consistent with a 1956 birth year."]},
+    {"id": "S5", "url": "https://www.judiciary.uk/wp-content/uploads/2022/09/Barclay-v-Barclay-judgment.pdf", "title": "Barclay v Barclay approved judgment", "publisher": "High Court of Justice, Family Division", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The judgment states that Sir David and Sir Frederick Barclay began dividing their fortune for the next generation in 2014 through complex overseas trust arrangements.", "It says the family fortune was divided equally among three of Sir David's sons and Sir Frederick's daughter, leaving Sir David's branch with 75% and Sir Frederick's with 25%. This directly supports family transfer rather than an assumed inheritance mechanism."]},
+    {"id": "S6", "url": "https://www.theguardian.com/media/2023/jun/08/how-the-barclay-empire-lost-its-grip-on-the-daily-telegraph", "title": "How the Barclay empire lost its grip on the Daily Telegraph", "publisher": "The Guardian", "tier": 2, "accessed_at": "2026-09-19", "supports": ["The report identified Aidan Barclay as the family business's largest shareholder and chair of the Telegraph and numerous other companies before creditor intervention.", "Receivers removed Aidan and Howard Barclay from the newspaper board in June 2023, ending the operating and ownership relationship that had defined Aidan's public identity."]},
+    {"id": "S7", "url": "https://www.theguardian.com/business/2026/apr/29/barclay-brothers-hsbc-settlement-high-court", "title": "Barclay family avoids bankruptcy after HSBC debt agreement", "publisher": "The Guardian", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Aidan and Howard Barclay reached an individual voluntary arrangement in April 2026 after providing personal guarantees connected with the failed Logistics Group.", "The family had lost the Telegraph and Spectator, Very Group and control of Trenport Property Holdings; administrators had replaced the brothers, while the family still owned Brecqhou and property on Sark. The report does not identify Aidan's current principal economic stake or operating mandate."]},
+    {"id": "S8", "url": "https://www.denisonyachtsales.com/news/boat-internationals-top-200-largest-yachts-140-121", "title": "Boat International's Top 200 Largest Yachts: Zeus", "publisher": "Denison Yachting", "tier": 3, "accessed_at": "2026-09-19", "supports": ["The specialist yacht account says British entrepreneur Aidan Barclay acquired the yacht in 2004, renamed it Enigma and sold it in 2017, when it became Zeus.", "Those dates and the identity match the saved Zeus relationship closely and provide a collision-resistant selection bridge; no vessel fact is used in biography or wealth classification."]},
+    {"id": "S9", "url": "https://www.forbes.com/profile/david-barclay/", "title": "David Barclay", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Forbes states that Sir David Barclay built a valuable real-estate and hotel portfolio with his twin Sir Frederick, beginning with house flipping before their first hotel acquisition.", "It says Sir David and his children owned an estimated 75% of the empire and lists the Telegraph and Very Group among later assets. The page profiles Aidan's father, not Aidan, and is used only for family-wealth origin evidence."]},
+    {"id": "S10", "url": "https://www.theguardian.com/media/2020/may/22/aidan-and-howard-barclay-break-silence-over-family-feud", "title": "Aidan and Howard Barclay break silence over family feud", "publisher": "The Guardian", "tier": 2, "accessed_at": "2026-09-19", "supports": ["In 2020 Aidan was Telegraph publisher chairman, while he and Howard ran and controlled Ellerman, then encompassing the newspaper group, Very and Yodel.", "The report supports a former broad operating mandate but predates the subsequent creditor intervention and asset disposals, so it cannot establish Aidan's current principal relationship."]},
+    {"id": "S11", "url": "https://uk.linkedin.com/in/aidan-barclay-7097251ba", "title": "Aidan Barclay at British Airways", "publisher": "LinkedIn", "tier": 2, "accessed_at": "2026-09-19", "supports": ["The prominent exact-name LinkedIn result belongs to an airline pilot educated between 2016 and 2021, not the 1956-born former Telegraph chairman.", "No identity-verified LinkedIn, Instagram, personal website, Facebook, X, YouTube or TikTok account was found for the target; the namesake profile is excluded."]}
+  ],
+  "uncertainties": [
+    {"topic": "Current principal asset and relationship", "detail": "Aidan's family-transfer stake and long operating history are strongly established, but the relevant businesses changed control rapidly. Telegraph and Spectator left the family, Carlyle took Very Group, IMI took Trenport, logistics entities failed and administrators replaced Aidan and Howard. Companies House still shows some active appointments, but no source establishes their value or importance to his remaining wealth. Wealth relationship therefore remains Unknown rather than carrying forward Operator or Heir / family shareholder."},
+    {"topic": "Primary industry fallback", "detail": "Property and hotels created the family fortune, while later assets spanned media, retail and logistics. Current reporting does not provide a reliable surviving-asset schedule after the recent disposals and creditor actions. Real Estate is used only as the required origin-sector fallback, not as a claim that property currently dominates Aidan's private holdings."},
+    {"topic": "Birth details and personal fields", "detail": "Companies House verifies January 1956, the middle name Stuart, British nationality and residence in England. No reliable source reviewed gives an exact birth day or birthplace, so those blanks remain untouched. The saved nationality and residence require no change."},
+    {"topic": "Profiles and tags", "detail": "Forbes has reporting about the family and a profile for Sir David, but no personal Aidan profile. The leading LinkedIn result is a younger British Airways pilot. No personal social is proposed. Newspaper publishing and Media owner are retained as separate approved, former-but-defining industry and role cohorts; broader Publishing and Digital media would add overlap without enough distinct value."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier. Identity is secured by the exact official full name and birth month/year plus the saved vessel chronology. Forbes-first and priority social checks were completed. Real Estate records the family fortune's creation sector and is transparently reused as the primary origin-sector fallback; family transfer is directly documented. Current wealth relationship remains Unknown after testing historical Operator and family-shareholder alternatives against the 2023-2026 loss of control. The blank biography receives a fill_missing proposal. Only two active, non-overlapping former-but-defining media tags are assigned. No other dossier, shared file or live site was changed."
+  }
+}

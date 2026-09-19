@@ -1,0 +1,416 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 222,
+    "display_name": "J. Percy Bartram",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The saved record's exact historical relationship to Caritas from 1922 to 1941 converges with Mystic Seaport Museum's archive, which says Caritas was built for Joseph Percy Bartram and sailed from Stamford and New York. Contemporary business directories then connect that full name to Bartram Brothers, while yacht and obituary records independently use the same identity. This direct vessel-to-person-to-company bridge excludes unrelated Percy or J. Bartram namesakes."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "name_suffix", "secondary_nationality", "main_residence_country", "secondary_residence_country", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["secondary_nationality", "main_residence_country", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "death_day", "death_month", "death_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "American sugar merchant and president of the family-established New York shipping and commission house Bartram Brothers.",
+    "defining_work": "He helped direct a business built around importing and marketing Caribbean raw sugar for American refiners, later leading the firm as president.",
+    "formative_context": "His father and uncle had founded Bartram Brothers before his father admitted him to the partnership in 1894.",
+    "decisive_moment": "Entry into the family partnership gave Bartram an ownership and operating position in an established sugar-import platform that he later headed.",
+    "enduring_dimensions": [
+      "Leadership of Bartram Brothers during its Caribbean raw-sugar trade",
+      "A family-business stake that remained represented by shares held in his estate after his death",
+      "The family's later transition from operating sugar interests to an investment-holding structure"
+    ],
+    "character_detail": "His career connected a New York commission house with producers and mills across the Caribbean sugar economy.",
+    "opening_options": [
+      {"mode": "institution_or_asset", "angle": "Open with Bartram Brothers as the established family sugar house that shaped both his career and wealth."},
+      {"mode": "formative_episode", "angle": "Use his father's admission of him to the partnership in 1894 to explain the family-business platform he later led."}
+    ],
+    "excluded_transient_context": [
+      "Historical asset specifications and later ownership or physical condition",
+      "Modern estimates of historical wealth or asset values",
+      "Unsupported assumptions about the precise legal route by which the partnership interest passed to Bartram",
+      "Current status of Bartram family assets after his death"
+    ],
+    "source_ids": ["S3", "S4", "S5", "S6", "S7", "S8"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "institution_then_person",
+    "calibration_archetypes": ["inherited_operator", "sparse_public_record"],
+    "notes": "The short biography explains the family-business mechanism, sugar trade and surviving estate stake. The longer profile instead develops the trading geography, disposal of the Dominican holdings and transition to an investment structure. It does not repeat the estate-share conclusion, while the short version omits the operating geography and corporate transition developed in the long profile."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Mandatory exact-name, profile-path, Bartram Brothers-qualified and Caritas-qualified Forbes searches found no dedicated person profile for J. Percy or Joseph Percy Bartram. No Forbes social is proposed."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "food_beverage",
+    "label": "Food & Beverage",
+    "summary": "Bartram's wealth was created through Bartram Brothers' Caribbean raw-sugar importing, commission trade and related sugar interests serving American refiners.",
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Contemporary biographical and directory records establish Bartram Brothers as a large sugar-importing shipping and commission house and place Joseph Percy Bartram in its partnership. Historical business research identifies raw sugar as its defining commodity and records Bartram's later presidency. The maritime functions supported the trade, but sugar rather than shipping was the documented principal commercial engine."
+    },
+    "source_ids": ["S3", "S4", "S5", "S6"]
+  },
+  "primary_industry": {
+    "classification": "food_beverage",
+    "label": "Food & Beverage",
+    "summary": "Food & Beverage is used as the disclosed origin-sector fallback because Bartram died in 1948 and no present private asset portfolio can be attributed to him.",
+    "confidence": {
+      "score": 80,
+      "band": "medium",
+      "reason": "The sugar-trade origin sector is strongly evidenced, but a deceased person has no current principal holding. The 1957 federal case shows that Bartram's estate retained shares in a family investment company after his death, without disclosing a present operating sector for him. Food & Beverage therefore records the required origin-sector fallback, not a claim of current asset control."
+    },
+    "source_ids": ["S3", "S6", "S7", "S8"]
+  },
+  "wealth_origin": {
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Bartram entered and later led the established firm founded by his father and uncle, making a family-supplied business position the principal documented mechanism of his wealth.",
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "A contemporary biography states that Joseph Burr Bartram and his brother founded Bartram Brothers, and that the father admitted his son Joseph Percy Bartram to the partnership in 1894. Later directories identify the son as president, while the federal tax case records Bartram Brothers shares held by his estate. Together these facts establish a material family transfer of an established business platform and economic interest; the exact partnership deed and any separate inheritance are not public, so the classification does not assert a particular legal instrument."
+    },
+    "source_ids": ["S3", "S4", "S5", "S7"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Operator is Bartram's strongest historical relationship, but his 1948 death prevents a current relationship to principal wealth-producing assets from being assigned.",
+    "confidence": {
+      "score": 46,
+      "band": "insufficient",
+      "reason": "Partnership and presidency records establish that Bartram historically operated the family sugar business, and estate records establish a historical economic stake. Under the current-relationship contract, neither a former operating role nor shares held by an estate after death can be carried forward as his present relationship. Operator is therefore retained only as the strongest historical alternative, while Heir and Passive asset owner also fail the current threshold."
+    },
+    "source_ids": ["S3", "S4", "S5", "S7", "S8"]
+  },
+  "biography": {
+    "plain_text": "Joseph Percy Bartram was an American sugar merchant and president of Bartram Brothers, his family's New York shipping and commission house. His father admitted him to the partnership in 1894, giving him a role in its Caribbean raw-sugar trade. By his death in 1948, his estate still held shares in the family's investment company.",
+    "html": "<p>Joseph Percy Bartram was an American sugar merchant and president of Bartram Brothers, his family's New York shipping and commission house. His father admitted him to the partnership in 1894, giving him a role in its Caribbean raw-sugar trade. By his death in 1948, his estate still held shares in the family's investment company.</p>\r\n",
+    "word_count": 54,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Contemporary biographical and directory records support Bartram's partnership, presidency and the firm's sugar-import business; the federal tax case supports the estate-held shares; and the contemporary obituary fixes the death year. The prose avoids unsupported valuation and vessel detail."
+    },
+    "source_ids": ["S3", "S4", "S5", "S6", "S7", "S8"]
+  },
+  "long_biography": {
+    "plain_text": "Bartram Brothers placed Joseph Percy Bartram at the centre of a trade connecting Caribbean sugar producers with New York refiners. He entered the family partnership in 1894 and later became president of the importing and exporting firm. Its sugar business combined commission trading with interests in mills and estates in St Croix and the Dominican Republic.\n\nAfter the First World War, the company sold its Dominican sugar holdings near the end of the wartime sugar-price boom. The family's wealth was subsequently consolidated in Bartram Brothers Corporation, which became an investment holding company rather than an operating sugar concern. Bartram's career therefore spanned both the commodity enterprise built by his father and uncle and the preservation of its proceeds in a family investment structure. He lived at Stamford, Connecticut, and died at home in 1948 after a long illness.",
+    "html": "<p>Bartram Brothers placed Joseph Percy Bartram at the centre of a trade connecting Caribbean sugar producers with New York refiners. He entered the family partnership in 1894 and later became president of the importing and exporting firm. Its sugar business combined commission trading with interests in mills and estates in St Croix and the Dominican Republic.</p>\r\n<p>After the First World War, the company sold its Dominican sugar holdings near the end of the wartime sugar-price boom. The family's wealth was subsequently consolidated in Bartram Brothers Corporation, which became an investment holding company rather than an operating sugar concern. Bartram's career therefore spanned both the commodity enterprise built by his father and uncle and the preservation of its proceeds in a family investment structure. He lived at Stamford, Connecticut, and died at home in 1948 after a long illness.</p>\r\n",
+    "word_count": 138,
+    "confidence": {
+      "score": 89,
+      "band": "high",
+      "reason": "Historical directories, business research, the federal tax decision and a contemporary obituary support the trade geography, presidency, disposal of sugar holdings, later investment structure, Stamford residence and death circumstances. Lower-confidence birth claims and unrelated asset history are excluded."
+    },
+    "source_ids": ["S3", "S4", "S5", "S6", "S7", "S8"]
+  },
+  "proposed_details": [
+    {
+      "field": "main_residence_country",
+      "value": "United States",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Mystic Seaport Museum, National Park Service research notes and the contemporary obituary place Bartram's home at Stamford, Connecticut. United States is the exact country label already used by the owner input for birth country."
+      },
+      "source_ids": ["S2", "S8", "S9"]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Bartram Brothers president",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "The 1922-1923 New York directory lists J. Percy Bartram as president of Bartram Brothers, and independent business history identifies the same leadership role."
+      },
+      "source_ids": ["S5", "S6"]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Contemporary biographical, directory, yacht and obituary records consistently identify Joseph Percy Bartram with male terms and pronouns."
+      },
+      "source_ids": ["S2", "S3", "S8"]
+    },
+    {
+      "field": "death_day",
+      "value": "9",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The Manchester Evening Herald dated 10 March 1948 reported from Stamford that Bartram died 'yesterday', establishing 9 March 1948."
+      },
+      "source_ids": ["S8"]
+    },
+    {
+      "field": "death_month",
+      "value": "March",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The dated contemporary obituary establishes 9 March 1948; March is the exact input select label."
+      },
+      "source_ids": ["S8"]
+    },
+    {
+      "field": "death_year",
+      "value": "1948",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The contemporary obituary and independent historical business research agree that Joseph Percy Bartram died in 1948."
+      },
+      "source_ids": ["S6", "S8"]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Joseph Percy Bartram was an American sugar merchant and president of Bartram Brothers, his family's New York shipping and commission house. His father admitted him to the partnership in 1894, giving him a role in its Caribbean raw-sugar trade. By his death in 1948, his estate still held shares in the family's investment company.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "The source biography is blank, and contemporary business records, the federal tax case and the obituary support every material claim in the proposed text."
+      },
+      "source_ids": ["S3", "S4", "S5", "S6", "S7", "S8"]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0216",
+      "name": "Commodity trading",
+      "summary": "Bartram's defining commercial mandate was the family firm's sustained importing and commission trade in Caribbean raw sugar for American refiners.",
+      "relationship_type": "family partner, president and historical operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "The tag groups Bartram with owners whose wealth and long-term operating identity arose from substantial commodity trading. Raw-sugar importing and commission activity were central to Bartram Brothers rather than an incidental transaction or passive exposure.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Contemporary biographical and directory evidence establishes both the firm's extensive sugar imports and Bartram's partnership, while later historical evidence identifies his presidency and the Caribbean-to-New York trading model."
+      },
+      "source_ids": ["S3", "S4", "S5", "S6"]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=222",
+      "title": "J. Percy Bartram saved owner record, person ID 222",
+      "publisher": "Superyacht Network; saved authoritative owner export",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "The exact saved display name is J. Percy Bartram; American nationality, United States birth country and Dead mortality status are populated, while residence, known-for, gender, birth details, death details, biography and socials are blank.",
+        "The export records a historical relationship to Caritas, vessel ID 48930, from 1922 to December 1941. This is used only to resolve identity and not as evidence for wealth classification."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/search/?q=Joseph%20Percy%20Bartram",
+      "title": "Forbes exact-name and qualified searches for Joseph Percy Bartram",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "Exact-name, profile-path, Bartram Brothers-qualified and Caritas-qualified searches found no dedicated Forbes person profile for J. Percy or Joseph Percy Bartram.",
+        "No Forbes URL is proposed; the absence does not affect identity because the direct archive, directory and vessel bridges are independently strong."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://archivesspace.mysticseaport.org/repositories/2/resources/169",
+      "title": "Records of the yacht Caritas",
+      "publisher": "Mystic Seaport Museum",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "The museum archive states that Caritas was built at Kiel for Joseph Percy Bartram in 1925 and chiefly sailed from Stamford and New York after her maiden voyage.",
+        "The exact saved vessel and the full historical name create the direct identity bridge to person ID 222."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/America%27s_successful_men_of_affairs._An_encyclopedia_of_contemporaneous_biography_%28IA_cu31924072688090%29.pdf",
+      "title": "America's Successful Men of Affairs: Joseph Burr Bartram",
+      "publisher": "New York Tribune; digitised historical volume",
+      "tier": 2,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "The contemporary account says Joseph Burr Bartram and his brother founded Bartram Brothers in 1864 as shipping and commission merchants, using capital supplied by their father.",
+        "It says Joseph Burr Bartram admitted his son Joseph Percy Bartram to the partnership on 1 January 1894 and describes the firm's extensive sugar importing business.",
+        "The record establishes the family-created platform, direct admission to partnership and sugar-trade mechanism without requiring an inference from surname alone."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.columbia.edu/cu/lweb/digital/collections/cul/texts/ldpd_6943151_000/pages/ldpd_6943151_000_00000043.html",
+      "title": "Polk's New York copartnership and corporation directory: Bartram Brothers",
+      "publisher": "Columbia University Libraries",
+      "tier": 2,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "The historical business directory lists Joseph Percy Bartram as a partner of Bartram Brothers with Joseph B. Bartram and Seth W. Fox.",
+        "The contemporary listing corroborates his direct economic and operating relationship to the family firm."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://ldsgenealogy.com/NY/books/Trows-general-directory-of-the-boroughs-of-Manhattan-and-Bronx-city-of-New-York-1922-1923-part-100.htm",
+      "title": "Trow's General Directory of Manhattan and Bronx, 1922-1923: Bartram Brothers",
+      "publisher": "Trow Directory; digitised by LDSGenealogy",
+      "tier": 2,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "The directory lists Bartram Brothers Inc as importers and exporters and names J. Percy Bartram as president.",
+        "It records his home at Stamford, Connecticut, and connects the abbreviated saved name to the same firm and full historical identity."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.jaimemontilla.com/bartram-brothers",
+      "title": "Bartram Brothers",
+      "publisher": "Jaime Montilla historical research",
+      "tier": 3,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "The researched history identifies Joseph Percy Bartram as a family-firm partner who later became president and links the firm to Caribbean raw-sugar imports for New York refiners.",
+        "It describes sugar interests in St Croix and the Dominican Republic and the later placement of family wealth into Bartram Brothers Corporation as an investment holding company.",
+        "Its 1870 birth year conflicts with the age in the contemporary obituary and is therefore not proposed as a detail."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://law.justia.com/cases/federal/district-courts/FSupp/157/757/1470012/",
+      "title": "Bartram v. Graham, 157 F. Supp. 757",
+      "publisher": "United States District Court for the District of Connecticut; reproduced by Justia",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "The federal tax decision says Bartram Brothers Corporation was a family-controlled personal holding company whose business consisted of managing its securities portfolio.",
+        "Its December 1950 shareholder schedule records 7,200 common shares held by the Estate of Joseph Percy Bartram, directly supporting his historical economic stake without proving a current relationship."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://cdn.manchesterhistory.org/News/Manchester%20Evening%20Hearld_1948-03-10.pdf",
+      "title": "Death Takes Yachtsman",
+      "publisher": "Manchester Evening Herald",
+      "tier": 2,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "The 10 March 1948 newspaper reports from Stamford that Joseph Percy Bartram, 76, died the previous day after a long illness at his home.",
+        "It describes him as a widely known yachtsman, supporting 9 March 1948 as the death date and yachting as a durable public identity.",
+        "The reported age conflicts with the secondary-source 1870 birth year, so no birth date is proposed."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.nps.gov/frla/learn/photosmultimedia/upload/Research-notes-for-Olmsted-GIS-April2016.pdf",
+      "title": "Research Notes for the Olmsted GIS: Joseph Percy Bartram island estate",
+      "publisher": "United States National Park Service",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "The research notes identify the Island Estate of Joseph Percy Bartram at Stamford, Connecticut, also called Caritas Island.",
+        "This corroborates United States residence and the island setting used in the longer biography."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://classicsailboats.org/wp-content/uploads/2019/02/Pages-from-Rudder-1-452_reduced.pdf",
+      "title": "The Rudder: yacht designed for Joseph Percy Bartram",
+      "publisher": "The Rudder; archived by Classic Sailboats",
+      "tier": 2,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "The historical yachting publication identifies Joseph Percy Bartram of the New York Yacht Club as the client for a Cox and Stevens yacht design.",
+        "Together with the Mystic archive, it supports a sustained commissioning and club identity rather than a one-off incidental association."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.linkedin.com/search/results/people/?keywords=Joseph%20Percy%20Bartram",
+      "title": "Joseph Percy Bartram priority social searches",
+      "publisher": "LinkedIn and public web search",
+      "tier": 3,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "Exact-name searches across LinkedIn, Instagram and personal-website results found no authentic personal profile for the historical subject.",
+        "No priority social or personal website is proposed; modern pages about Caritas and Bartram Brothers are research sources rather than the subject's own profiles."
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Birth year and age conflict",
+      "detail": "A modern historical research page gives 1870 as Bartram's birth year, while the contemporary 10 March 1948 obituary reports his age as 76. Those facts cannot both be exact without further birth-date evidence, so birth day, month, year and place remain unproposed."
+    },
+    {
+      "topic": "Family-transfer mechanism",
+      "detail": "The father-to-son admission to partnership, later presidency and estate-held shares establish a material family-supplied business platform and economic interest. The surviving public record reviewed here does not disclose the partnership deed, consideration paid or a later inheritance instrument, so Marriage / family transfer is used without asserting a specific legal route or excluding Bartram's own operating contribution."
+    },
+    {
+      "topic": "Current wealth relationship",
+      "detail": "Bartram died in 1948. His historical partnership and presidency make Operator the strongest historical alternative, while the post-death estate shares show an economic stake but not a current relationship attributable to him. The present-tense classification is therefore Unknown rather than Operator, Heir or Passive asset owner."
+    },
+    {
+      "topic": "Primary-industry fallback",
+      "detail": "Food & Beverage clearly describes the sugar-trade origin of Bartram's wealth. Because he is deceased and the public record provides no current personal asset schedule, the same value is retained only as the disclosed origin-sector fallback and not as a current-holdings claim."
+    },
+    {
+      "topic": "Name form",
+      "detail": "Museum, legal, business and obituary sources establish that the initial J. expands to Joseph, but J. Percy Bartram is a valid and widely used abbreviated form rather than a demonstrably wrong saved display name. No name correction is proposed."
+    },
+    {
+      "topic": "Vessel chronology",
+      "detail": "The saved record begins its Caritas relationship in 1922, while the Mystic archive says the German-built Caritas was completed in 1925, and another historical yachting source describes an earlier commissioned yacht. The exact Caritas name and owner still provide a strong identity bridge, but vessel dates and specifications are excluded from both biographies and classification reasoning."
+    },
+    {
+      "topic": "Socials and tag scope",
+      "detail": "No authentic personal social profile or dedicated Forbes profile exists for the historical subject. Commodity trading is the minimum active closed-world tag supported by Bartram Brothers' defining raw-sugar commission trade. Competitive sailing is not assigned because the evidence establishes club membership and a durable yachting identity but not the sustained competitive, professional or governance identity required by that tag's contract."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier. The exact Caritas bridge, full-name museum archive and contemporary business records resolve J. Percy Bartram as Joseph Percy Bartram at very high confidence. Forbes-first and priority-social searches are complete. Food & Beverage records the sugar-trade wealth-creation sector and is transparently reused as the primary origin-sector fallback; Marriage / family transfer records his admission to and later leadership of the established family firm. Current wealth relationship remains Unknown because he died in 1948, with Operator preserved only as the strongest historical alternative. The blank biography receives a fill_missing proposal, five other missing details are filled from strong sources, and only the active Commodity trading tag is assigned. No tag candidate, live change, catalogue edit or other dossier change was made."
+  }
+}

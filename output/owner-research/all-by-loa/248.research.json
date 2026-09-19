@@ -1,0 +1,84 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 248,
+    "display_name": "Douglas H. Bennett",
+    "identity_confidence": {
+      "score": 35,
+      "band": "insufficient",
+      "reason": "The saved record supplies an exact name, American nationality, United States residence, an age snapshot and a historical relationship to a vessel named Magic. Current public searches do not connect that fact bundle to one identifiable Douglas H. Bennett. The name collides with several unrelated professional and historical records, while public pages for a yacht named Magic do not name an owner."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["secondary_nationality", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "The saved record identifies an American Douglas H. Bennett and links him historically to a vessel named Magic, but it gives no employer, occupation or company. Exact-name, age-qualified and vessel-qualified searches returned multiple unrelated namesakes and no independent source joining this record to one economic identity. Public pages for a 130-foot yacht named Magic describe the vessel but do not identify its owner. Publishing a career biography would therefore risk conflation.",
+    "confidence": {"score": 92, "band": "high", "reason": "The note reflects the limited saved-record evidence and the absence of a collision-safe bridge across Forbes, yacht, business and priority-social searches."},
+    "source_ids": ["S0", "S1", "S2", "S3", "S4"]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 97, "band": "very_high", "reason": "Forbes-first exact-name, middle-initial and vessel-qualified searches found no dedicated Forbes profile that could be linked to the saved owner. Unrelated Bennett results were discarded."}
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No principal wealth-creating business, profession or asset has been established for the saved owner.",
+    "confidence": {"score": 8, "band": "insufficient", "reason": "The owner input contains no occupation or employer, and no public source safely links the saved fact bundle to an economic career."},
+    "source_ids": ["S0", "S1", "S2", "S3", "S4"]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The person's current principal industry and underlying private interests remain unidentified.",
+    "confidence": {"score": 7, "band": "insufficient", "reason": "No current company, operating role, investment platform or controlling asset can be attributed to the saved record. A historical yacht relationship is not an industry classification."},
+    "source_ids": ["S0", "S2", "S3", "S4"]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The source of capital and whether it was built, earned, inherited or transferred are not documented.",
+    "confidence": {"score": 5, "band": "insufficient", "reason": "Neither the saved owner record nor the public yacht pages provide a business history, inheritance trail, transaction or financing evidence."},
+    "source_ids": ["S0", "S2", "S3", "S4"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No current founder, operator, investor or family-shareholder relationship to a principal wealth-producing asset is proven.",
+    "confidence": {"score": 5, "band": "insufficient", "reason": "The record shows only a historical yacht relationship ending in 2019. It does not identify a current principal wealth asset or the person's relationship to one."},
+    "source_ids": ["S0", "S2", "S3", "S4"]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=248", "title": "Douglas H. Bennett saved owner record, person ID 248", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Saved display name Douglas H. Bennett, American nationality, United States residence and an age snapshot of 63 at 7 May 2020", "Historical relationship to the vessel Magic from December 2016 to November 2019", "No saved occupation, employer, biography or social profile; selection context rather than independent economic evidence"]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Douglas%20H.%20Bennett", "title": "Forbes exact-name search", "publisher": "Forbes search", "tier": 3, "accessed_at": "2026-09-19", "supports": ["Forbes-first searches found no dedicated profile connected to the saved owner or vessel"]},
+    {"id": "S2", "url": "https://frontstreetshipyard.com/magic/", "title": "Magic", "publisher": "Safe Harbor Front Street", "tier": 2, "accessed_at": "2026-09-19", "supports": ["A shipyard page describes a 130-foot tri-deck motor yacht named Magic and its refit history", "The page does not identify Douglas H. Bennett or any owner"]},
+    {"id": "S3", "url": "https://www.rjcyachts.com/featured-yachts-for-sale/2005-northern-marine-130-tri-deck-magic_636", "title": "2005 Northern Marine 130 Tri-Deck Magic", "publisher": "RJC Yachts", "tier": 2, "accessed_at": "2026-09-19", "supports": ["A brokerage listing records a Northern Marine yacht named Magic", "The public listing provides no identity bridge to Douglas H. Bennett"]},
+    {"id": "S4", "url": "https://www.moranyachts.com/yachts-sold/magic/", "title": "Magic yacht sold", "publisher": "Moran Yacht & Ship", "tier": 2, "accessed_at": "2026-09-19", "supports": ["A brokerage sale page documents a yacht named Magic", "The page does not establish that Douglas H. Bennett was its owner or identify his occupation, company or wealth source"]}
+  ],
+  "uncertainties": [
+    {"topic": "Identity bridge", "detail": "The saved first name, middle initial and surname are not joined by an independent source to the recorded nationality, residence, age snapshot and historical Magic relationship. The record therefore remains below the 75-point identity threshold."},
+    {"topic": "Namesake collisions", "detail": "Searches surfaced unrelated people and records sharing Douglas Bennett or Douglas H. Bennett, including academic, medical, author and public-record entries. None is transferred to this dossier without a company, geography or vessel bridge."},
+    {"topic": "Vessel ambiguity", "detail": "Public shipyard and brokerage pages describe a 130-foot Northern Marine yacht named Magic, but they do not name the owner. Because Magic is not a unique vessel name and the saved record supplies only the internal vessel identifier, those pages cannot independently resolve the person."},
+    {"topic": "Demographics, socials and publication", "detail": "The input's age snapshot implies only an approximate birth year and does not prove a full date or specific identity. LinkedIn, Instagram and personal-website searches did not yield an account tied to the entire saved fact bundle. No biography, detail correction, social profile, wealth tag or other active tag is proposed."}
+  ],
+  "review": {"status": "complete", "notes": "Terminal insufficient-evidence decision after Forbes-first, exact-name, age-qualified, vessel-qualified, business and priority-social searches. The saved owner cannot be resolved collision-safely to a public economic identity. All four wealth classifications remain Unknown; no biography, details, socials, active tags or taxonomy candidates are proposed. Only this dossier was created."}
+}
