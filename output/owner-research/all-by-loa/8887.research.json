@@ -1,0 +1,116 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 8887,
+    "display_name": "Daniele Cammarone",
+    "identity_confidence": {"score": 95, "band": "very_high", "reason": "The source record names Daniele Cammarone with the distinctive Ocean Delta 11 vessel. A public personal LinkedIn profile identifies the Rome entrepreneur with OceanDelta11 - Luxury Yacht Charter, and his CammaRent company page and official company website market the exact named charter. Contemporary reporting independently connects the same name to his Rome mobility business and entrepreneurial book. The sources identify a coherent person and venture, although they do not independently establish his legal title to the charter yacht."}
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "nationality", "secondary_nationality", "main_residence_country", "secondary_residence_country", "known_for_title", "gender", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "nationality", "secondary_nationality", "main_residence_country", "known_for_title", "gender", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "death_day", "death_month", "death_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Rome-based entrepreneur Daniele Cammarone founded the travel and mobility-services company CammaRent.",
+    "defining_work": "He built a vehicle-hire and chauffeured-transport service that later incorporated maritime charter travel.",
+    "formative_context": "A former Warner Village Cinemas IT project manager, he reportedly used personal savings rather than bank loans to launch the business.",
+    "decisive_moment": "He left salaried technology work in his mid-twenties to operate a customer-facing mobility business.",
+    "enduring_dimensions": ["Road-transport hire, with and without drivers, for travel and business clients", "Expansion into premium tourism and charter services", "Coaching and a published book about the transition from employment to entrepreneurship"],
+    "character_detail": "A training profile says he completed five marathons in twelve months while developing his entrepreneurial coaching work.",
+    "opening_options": [{"mode": "present_identity", "angle": "Name the Rome mobility-services founder and his self-funded transition."}, {"mode": "decisive_event", "angle": "Begin with the departure from cinema-sector technology work that preceded the rental company."}],
+    "excluded_transient_context": ["Personal vessel specifications or assumed legal ownership", "Exact revenue, claimed growth percentage, fleet size or self-reported online-book rankings", "Unsupported present shareholding percentage or any wealth estimate", "Related but unverified Primerent corporate affiliation"],
+    "source_ids": ["S2", "S3", "S4", "S5", "S6"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 4,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "decision_then_consequence",
+    "calibration_archetypes": ["founder_operator"],
+    "notes": "The short card states the founder's identity, self-financed establishment and separate published guide. The longer narrative opens at his employment decision, develops distinct transport and coaching work and adds the self-reported marathon detail without repeating the short card's entire fact bundle. Neither biography depends on the source owner vessel remaining in his ownership."
+  },
+  "editorial_note": null,
+  "forbes_profile": {"status": "not_found", "url": null, "confidence": {"score": 94, "band": "high", "reason": "Forbes-first exact-full-name and site:forbes.com/profile searches found no dedicated Daniele Cammarone profile; similarly named people and non-profile results were not adopted."}},
+  "wealth_creation_industry": {
+    "classification": "service", "label": "Service",
+    "summary": "His documented core business is CammaRent, a vehicle-hire and customer transport-services company established with his own savings; coaching and book writing are later, separately evidenced activities.",
+    "confidence": {"score": 82, "band": "medium", "reason": "Contemporary reporting directly identifies Cammarone's self-funded mobility start, a separate customer names him as the CammaRent owner, and current company material shows continuing car/minivan rental and chauffeured transport. These positive premises establish the enterprise's centrality to his identified economic work, without a net-worth or equity calculation. Service best covers consumer/business mobility hire; neither vehicle manufacturing nor freight logistics is supported."},
+    "source_ids": ["S2", "S3", "S4", "S5"]
+  },
+  "primary_industry": {
+    "classification": "service", "label": "Service",
+    "summary": "CammaRent remains an operating vehicle-hire, chauffeured-travel and charter-service business; no other current personally held asset sector is established as more material.",
+    "confidence": {"score": 78, "band": "medium", "reason": "The active official company site and its first-party LinkedIn channel document current service operations, while the personal profile and a customer testimonial connect him to this business. Current exact shareholding, other ventures and asset values are not disclosed, so this is a reasoned present service-platform judgment rather than an assumption based only on his earlier job or the yacht."},
+    "source_ids": ["S3", "S4", "S5", "S6"]
+  },
+  "wealth_origin": {
+    "classification": "self_made", "label": "Self-made",
+    "summary": "He left salaried employment and started the transport-services company using savings rather than bank financing; family circumstances and other possible assistance are not documented.",
+    "confidence": {"score": 85, "band": "high", "reason": "The contemporary report identifies his prior salaried work and personal savings as launch funding; independent customer and current company sources establish the founder's surviving business. These are positive premises for founder-built wealth. The account does not describe family background sufficiently to justify the independent-start subtype or rule out all support, so broad Self-made is retained."},
+    "source_ids": ["S2", "S3", "S4", "S5"]
+  },
+  "wealth_relationship": {
+    "classification": "founder", "label": "Founder",
+    "summary": "Cammarone established the Rome mobility-service business that remains his defining operating platform and has publicly been identified as its owner.",
+    "confidence": {"score": 86, "band": "high", "reason": "A contemporary account details his personal establishment of the company, an independent customer identifies him as its owner and first-party company channels demonstrate continuing operations and list his employment. The exact current shareholding and day-to-day executive mandate are not published, so Founder describes the enduring creator relationship rather than an asserted sole or majority stake."},
+    "source_ids": ["S2", "S3", "S4", "S5"]
+  },
+  "biography": {
+    "plain_text": "Daniele Cammarone is a Rome-based entrepreneur who founded CammaRent, a vehicle-hire business serving private, corporate and tourism clients. He financed its launch from savings after leaving a cinema-industry technology role and later expanded into chauffeured travel. He has also written a practical book about moving from salaried employment into entrepreneurship.",
+    "html": "<p>Daniele Cammarone is a Rome-based entrepreneur who founded CammaRent, a vehicle-hire business serving private, corporate and tourism clients. He financed its launch from savings after leaving a cinema-industry technology role and later expanded into chauffeured travel. He has also written a practical book about moving from salaried employment into entrepreneurship.</p>\r\n",
+    "word_count": 50,
+    "confidence": {"score": 88, "band": "high", "reason": "Contemporary independent reporting documents his launch and personal savings; the operating company's site and first-party page document the current services; a national-library catalogue independently records his entrepreneurship book."},
+    "source_ids": ["S2", "S4", "S5", "S8"]
+  },
+  "long_biography": {
+    "plain_text": "Daniele Cammarone left his IT project-management work at Warner Village Cinemas to build a mobility-services company in Rome. CammaRent developed an offer of cars and minivans, both self-drive and chauffeured, for travellers and corporate clients. The enterprise later added tailored transport for events and premium travel.\n\nThe company also operates a Mediterranean charter division, bringing maritime travel into its wider service portfolio. Separately, Cammarone trained as a coach and began teaching entrepreneurship after his business venture was established. He also completed five marathons within twelve months while learning to speak before classroom audiences.",
+    "html": "<p>Daniele Cammarone left his IT project-management work at Warner Village Cinemas to build a mobility-services company in Rome. CammaRent developed an offer of cars and minivans, both self-drive and chauffeured, for travellers and corporate clients. The enterprise later added tailored transport for events and premium travel.</p>\r\n<p>The company also operates a Mediterranean charter division, bringing maritime travel into its wider service portfolio. Separately, Cammarone trained as a coach and began teaching entrepreneurship after his business venture was established. He also completed five marathons within twelve months while learning to speak before classroom audiences.</p>\r\n",
+    "word_count": 93,
+    "confidence": {"score": 83, "band": "medium", "reason": "The early Warner-to-mobility transition is reported contemporaneously; the official business site and first-party company page detail the road and charter services. The coaching and marathon account is his direct testimonial on his training provider's site; it is described without adopting claimed business growth or rankings."},
+    "source_ids": ["S2", "S4", "S5", "S7"]
+  },
+  "proposed_details": [
+    {"field": "birth_year", "value": "1985", "action": "fill_missing", "confidence": {"score": 84, "band": "medium", "reason": "A contemporary 2015 Italian business-book feature identifies the Rome-based CammaRent founder as born in 1985 and describes the same company and book. No birth day or month is supplied."}, "source_ids": ["S2"]},
+    {"field": "main_residence_country", "value": "Italy", "action": "fill_missing", "confidence": {"score": 81, "band": "medium", "reason": "The exact person identifies his current base as Rome, Lazio in the personal LinkedIn profile, corroborated by the Rome business and contemporary local account. This supports Italian residence, not nationality or birthplace."}, "source_ids": ["S2", "S3", "S5"]},
+    {"field": "known_for_title", "value": "CammaRent founder", "action": "fill_missing", "confidence": {"score": 88, "band": "high", "reason": "Contemporary reporting describes his launch of the Rome vehicle-hire company, and a customer independently identifies him as its owner; the official site shows continued operation."}, "source_ids": ["S2", "S3", "S5"]},
+    {"field": "biography", "value": "<p>Daniele Cammarone is a Rome-based entrepreneur who founded CammaRent, a vehicle-hire business serving private, corporate and tourism clients. He financed its launch from savings after leaving a cinema-industry technology role and later expanded into chauffeured travel. He has also written a practical book about moving from salaried employment into entrepreneurship.</p>\r\n", "action": "fill_missing", "confidence": {"score": 88, "band": "high", "reason": "The 50-word vessel-free copy follows contemporary launch reporting, current business services and the independently catalogued book without inferring ownership of the ranked yacht."}, "source_ids": ["S2", "S4", "S5", "S8"]}
+  ],
+  "proposed_socials": [
+    {"type_id": "5", "type": "LinkedIn", "url": "https://it.linkedin.com/in/danielecammarone", "verification": "The exact-name Rome profile links the owner's distinctive OceanDelta11 charter venture, identifies his entrepreneur/coaching/book identity and shares CammaRent-related activity. The company's LinkedIn page names him as staff and describes the same charter division. It is the personal account, not an unrelated surname match.", "confidence": {"score": 92, "band": "high", "reason": "A personally named profile with the precise charter-venture bridge plus independent company account and contemporary book evidence authenticates the link."}, "source_ids": ["S2", "S4", "S6"]},
+    {"type_id": "14", "type": "Company Website", "url": "https://www.cammarent.it/", "verification": "The current first-party CammaRent domain sells Rome vehicle rental, chauffeur transport and a charter division bearing the source vessel's name. Contemporary reporting and a customer testimonial identify Daniele Cammarone as its founder and owner. This is linked strictly as Company Website.", "confidence": {"score": 90, "band": "high", "reason": "The live official domain and independent person-company sources establish the business link; no claim of personal yacht title follows from its charter advertisement."}, "source_ids": ["S2", "S3", "S5"]}
+  ],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=8887", "title": "Daniele Cammarone owner record, ID 8887", "publisher": "Superyacht Network; saved canonical export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Exact name and current Ocean Delta 11 relationship, with nationality, residence, biography and social fields blank", "The vessel relation is identity context, not proof of legal yacht title or economic wealth creation"]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Daniele%20Cammarone", "title": "Forbes exact-name and profile search", "publisher": "Forbes", "tier": 3, "accessed_at": "2026-09-19", "supports": ["Forbes-first exact-name and profile-format checks did not locate a dedicated matching person profile"]},
+    {"id": "S2", "url": "https://www.affaritaliani.it/libri-editori/metterti-in-proprio-ma-sei-pazzo-il-libro-374359.html", "title": "Metterti in proprio? Ma sei pazzo? Il libro", "publisher": "Affaritaliani, 8 July 2015", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Daniele Cammarone described as Rome-born in 1985, former Warner Village Cinemas IT project manager", "He left salaried employment to establish a mobility-services company with savings rather than bank credit", "Identifies subsequent coaching study and entrepreneurship-book publication"]},
+    {"id": "S3", "url": "https://www.upmarketing.it/", "title": "CammaRent customer testimonial", "publisher": "UP Marketing", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Daniele Cammarone directly identified as owner of CammaRent in a customer quotation", "Independent person-business link separate from the vessel and his own profile"]},
+    {"id": "S4", "url": "https://it.linkedin.com/company/cammarent", "title": "CammaRent first-party company profile", "publisher": "CammaRent on LinkedIn", "tier": 1, "accessed_at": "2026-09-19", "supports": ["2012 start, road vehicle hire and chauffeur services for private, business and travel clients", "Names Daniele Cammarone among personnel and identifies OceanDelta11 as its charter division"]},
+    {"id": "S5", "url": "https://www.cammarent.it/", "title": "CammaRent official site", "publisher": "CammaRent", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Current Rome vehicle hire, self-drive and chauffeur options for travel, business and tourism", "Distinct Mediterranean charter service marketed under the same named operation as the owner-record vessel", "Official company domain used for the proposed Company Website"]},
+    {"id": "S6", "url": "https://it.linkedin.com/in/danielecammarone", "title": "Daniele Cammarone personal profile", "publisher": "LinkedIn", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Exact personal profile based in Rome identifies entrepreneur, coach and entrepreneurship-book author", "Public directory and profile connect this person to OceanDelta11 charter and CammaRent-related work; no legal yacht title is asserted"]},
+    {"id": "S7", "url": "https://micap.academy/testimonianze/", "title": "Daniele Cammarone training testimonial", "publisher": "MICAP; first-person participant account", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Cammarone describes training as a coach, writing an entrepreneurship book and starting classroom courses", "Direct self-report of completing five marathons in twelve months; numerical business growth and sales-rank claims not adopted"]},
+    {"id": "S8", "url": "https://opac.bibliotecabraidense.org/opac_braidense/opaclib?db=solr_braidense&do_cmd=search_show_cmd&fname=none&format=unimarc&from=24&nentries=1&resultForward=opac%2Fbraidense%2Ffull_simili.jsp&rpnlabel=+Codice+Classificazione+Dewey+%3D+338.04092+&rpnquery=%40attrset+bib-1++%40attr+1%3D13++%40attr+4%3D1+%22338.04092%22&searchForm=opac%2Fbraidense%2Ferror.jsp&select_db=solr_braidense&simili_id=TSA1884634&totalResult=84", "title": "Da dipendente a imprenditore library catalogue", "publisher": "Biblioteca Nazionale Braidense", "tier": 1, "accessed_at": "2026-09-19", "supports": ["National-library catalogue identifies Daniele Cammarone as author of the 2015 book Da dipendente a imprenditore: la tua nuova vita in 4 semplici passi", "This is an enduring writing activity, not evidence that book royalties dominate his private wealth"]}
+  ],
+  "uncertainties": [
+    "The exact name plus an unusual charter-operation name links the Rome mobility entrepreneur to person ID 8887 at high confidence. His personal profile and first-party company site demonstrate involvement in chartering the ranked vessel but do not establish personally registered or beneficial yacht ownership. The current yacht relationship is preserved as source-record context only.",
+    "A 2015 Italian feature calls him Rome-born in 1985 and describes the self-financed mobility venture; birth_year is proposed, but birthplace and nationality are not inferred from an Italian address, surname or residence. The current personal profile independently supports residence in Rome, Italy; source mortality Unknown is not changed.",
+    "The contemporary account specifically says he used savings rather than bank credit to establish the company. This supports a founder-built broad Self-made origin, but neither absence of family assistance nor a materially independent upbringing is established; no narrower subtype is assigned. His exact 2026 ownership percentage and other holdings are unavailable.",
+    "CammaRent continues in road hire and chauffeur service with an adjacent charter division. Coaching and book authorship are documented but not shown to surpass the mobility platform economically. Service is the evidenced origin and current sector; neither Freight/Logistics nor Automotive manufacturing or yacht ownership is used as a proxy.",
+    "Forbes-first checks yielded no dedicated profile. The exact LinkedIn profile is authenticated by the unusual charter name, Rome location, company association and entrepreneurship-book identity. A linked personal domain danielecammarone.com timed out, and no personal Instagram, Facebook, X/Twitter, YouTube or TikTok identity met the same verification rule. The accessible CammaRent site is a Company Website only.",
+    "Vehicle rental and leasing, ground transportation services and Yacht charter literal tags are inactive in the approved catalogue. The latter is additionally a side offering and source-vessel context. No broader active tag met the minimum-useful-set membership and click-through rule; no taxonomy candidate is proposed."
+  ],
+  "review": {"status": "complete", "notes": "Terminal resolved-person dossier. A distinctive first-party charter bridge and independent owner testimony anchor the entrepreneur; current legal yacht title remains unproven. The 50-word short and distinct two-paragraph longer profile are vessel-name-free. Service/Service, broad Self-made and Founder reflect the self-funded ongoing mobility company. A verified personal LinkedIn and official Company Website are proposed, with no unsupported or inactive tags."}
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 10013,
+    "display_name": "Mr Richard Wilson",
+    "identity_confidence": {
+      "score": 29,
+      "band": "insufficient",
+      "reason": "The source record supplies only a common name, British nationality, UK residence and a Julie M relationship. Public specifications match the selected Ferretti hull, but neither yacht nor charter pages identify a natural-person owner. A vessel-data service lists a corporate registered owner; a similarly named UK company has no publicly named Richard Wilson officer or controller, and its connection to the yacht corporation is unproved. Numerous British and foreign namesakes have no collision-resistant bridge to person ID 10013."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "gender", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "gender", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "death_day", "death_month", "death_year", "biography"],
+    "optional_missing_details": ["name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "The saved British owner is recorded only as Mr Richard Wilson, with no biography, employer, birth details or social profiles. Public listings identify a vessel matching the saved Julie M specifications but do not name him. A shipping-data listing gives a corporate registered owner, while available company records do not establish Richard's connection to it. Searches return several unrelated Richard Wilsons with different professions and locations. No biography or wealth classification can safely be transferred to this source person.",
+    "confidence": {"score": 96, "band": "very_high", "reason": "The note accurately states the sparse source inventory, confirmed hull match, unbridged corporate owner and collision problem without claiming that any candidate is the saved person."},
+    "source_ids": ["S0", "S1", "S2", "S3", "S4", "S5", "S6"]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 94, "band": "high", "reason": "Mandatory Forbes-first exact-name, site:forbes.com/profile and Julie M qualifier searches found a Richard Wilson wealth-adviser profile in Arizona and coverage of other namesakes, including a British games-industry executive. No Forbes person profile is securely attributable to owner ID 10013."}
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No originating wealth-producing business or sector is securely attributable to the saved Richard Wilson.",
+    "confidence": {"score": 13, "band": "insufficient", "reason": "The selected yacht is only an identity clue. Games, marine design, finance and other occupations surfaced under the common name, but none is bridged to this owner. There is no material business premise from which to infer a narrower sector."},
+    "source_ids": ["S0", "S1", "S2", "S5", "S6"]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The owner's current principal private interests and their sector cannot be identified from the public record.",
+    "confidence": {"score": 12, "band": "insufficient", "reason": "No collision-safe company or holding is connected to the saved person. The corporate yacht-owner lead is not established as his business, and no creation-sector fallback is possible because the originating sector is also unknown."},
+    "source_ids": ["S0", "S2", "S3", "S4"]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No founder-built, earned, acquired, inherited or transferred principal asset can be assigned to this owner.",
+    "confidence": {"score": 9, "band": "insufficient", "reason": "The identity remains below the resolution floor. The source record and yacht listings contain no career, family-capital, business-formation or succession evidence, and name-only professional results cannot support a self-made or family-origin inference."},
+    "source_ids": ["S0", "S2", "S3", "S5", "S6"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No relationship to a principal wealth-producing asset is publicly established for the saved person.",
+    "confidence": {"score": 9, "band": "insufficient", "reason": "There is no verified principal asset or personal company bridge. Corporate yacht registration does not establish founder, operator, investor, heir or passive ownership status; public namesake roles cannot be transferred."},
+    "source_ids": ["S0", "S3", "S4", "S5", "S6"]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=10013", "title": "Mr Richard Wilson saved owner record, person ID 10013", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The exact saved display name is Mr Richard Wilson; Richard/Wilson, British nationality and UK residence are populated, while gender, mortality confirmation, birth details, known-for, biography, employer and socials are absent or unknown.", "The owner export links him to Julie M, vessel ID 49717, from 2022 and gives 26.02 metres. This is source-record selection context, not independent person identification or wealth evidence."]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Richard%20Wilson", "title": "Forbes exact-name and profile searches", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Focused exact-name, /profile/ and yacht-qualified searches yielded multiple Richard Wilson references but no dedicated profile securely matched to owner ID 10013.", "The similarly named Forbes advisor profile is based in Scottsdale, Arizona and cannot be assigned from a name match to the British source owner."]},
+    {"id": "S2", "url": "https://www.yachtbuyer.com/en-gb/fleet/julie-m-85-ferretti-yachts", "title": "Julie M, 26.02-metre Ferretti 830", "publisher": "YachtBuyer", "tier": 2, "accessed_at": "2026-09-19", "supports": ["The public listing matches the selected Julie M name and precise 26.02-metre length and identifies the Ferretti 830 model and 2008 build.", "The yacht page does not name Richard Wilson, any beneficial owner or an owner occupation; matching hull particulars do not resolve the common person name."]},
+    {"id": "S3", "url": "https://magicport.ai/vessels/pleasure-craft/julie-m-mmsi-239976700", "title": "Julie M IMO 8790106 registered owner and manager", "publisher": "MagicPort maritime-data service", "tier": 3, "accessed_at": "2026-09-19", "supports": ["The publicly indexed vessel-data entry names Aqua Nepa Ltd as registered owner of a Greek-flag Julie M and Exantas EPE as commercial manager.", "The data service does not identify Richard Wilson as beneficial owner and its corporate entry is not proof that he owns or controls the company."]},
+    {"id": "S4", "url": "https://find-and-update.company-information.service.gov.uk/company/05772283/persons-with-significant-control", "title": "Aqua Nepa Limited UK persons with significant control", "publisher": "UK Companies House", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The similarly named UK company's current public control page names Donald Emmanuel McTaggart, not Richard Wilson, as the active individual with significant influence over trust trustees.", "The legal equivalence of the UK company and the maritime database's registered owner is not independently established; the filing does not disprove a historical or indirect Richard Wilson relationship."]},
+    {"id": "S5", "url": "https://tiga.org/wp-content/uploads/2024/08/TIGA-Annual-Report-2024.pdf", "title": "TIGA annual report identifying Dr Richard Wilson OBE", "publisher": "TIGA, UK games-industry association", "tier": 1, "accessed_at": "2026-09-19", "supports": ["A real British Richard Wilson is documented as chief executive of the UK video-games trade association.", "No company, personal or Julie M yacht connection links this namesake to the saved Mr Richard Wilson record; his professional facts are excluded from enrichment."]},
+    {"id": "S6", "url": "https://uk.linkedin.com/in/richard-wilson-620669182", "title": "Richard Wilson at Vectis Marine Design", "publisher": "LinkedIn", "tier": 2, "accessed_at": "2026-09-19", "supports": ["A second British Richard Wilson profile works in marine engineering, illustrating that even a seemingly relevant maritime industry result is not distinctive under this common name.", "No independently verified Julie M, company-owner or source-record bridge authenticates this profile as the saved person's social account."]}
+  ],
+  "uncertainties": [
+    {"topic": "Identity and yacht bridge", "detail": "YachtBuyer confirms the exact Julie M name and 26.02-metre measurement, but does not identify a person. A maritime listing gives Aqua Nepa Ltd as the registered owner; public material reviewed does not name Richard Wilson behind that entity. The source-record relationship remains uncorroborated as a public person-to-hull link."},
+    {"topic": "Corporate lead", "detail": "The UK-registered Aqua Nepa Limited has a different named current controller and no Richard Wilson among its public officers. It may or may not be the same legal entity reported in the maritime data, and a current PSC filing cannot by itself resolve historical ownership from 2022. No economic inference is made from this lead."},
+    {"topic": "Namesakes and profiles", "detail": "Forbes lists an Arizona wealth adviser under the exact name. UK searches also surface the TIGA executive, actor, artist and several marine and other professionals. None has the needed independent yacht, employer, family or geographic bridge. LinkedIn, Instagram, Facebook, X, TikTok and personal-site checks produced no attributable personal account; no social is proposed."},
+    {"topic": "Wealth and publication decision", "detail": "Without a resolved person or material asset, direct evidence, a reasoned inference and less-specific labels all fail for the four independent wealth fields. All remain Unknown; no industry, personal detail, approved tag or biography is proposed. No yacht fact is used as wealth evidence or owner-facing prose."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal insufficient-evidence decision for one source owner. The selected Julie M hull is identifiable, but public pages do not identify the saved British Mr Richard Wilson, and a registered-owner company lead and numerous same-name professionals cannot supply a collision-resistant person-to-business bridge. Forbes-first and priority social searches were completed. All four wealth fields remain Unknown; no biography, detail, profile or tag is proposed. No other dossier, shared file or live site was changed."
+  }
+}

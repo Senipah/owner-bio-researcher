@@ -1,0 +1,212 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 10455,
+    "display_name": "Robert Allan Powers Jr.",
+    "identity_confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "SEC beneficial-ownership filings use the exact full name Robert Allan Powers Jr. for a major OneStream co-founder shareholder. OneStream's current official leadership page calls the same executive Bob Powers and chief technology officer, and the saved owner's selected vessel carries the unusual OneStream name. An official company history independently describes Bob's longstanding boating connection, although a public title record for this particular vessel is unavailable."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["secondary_nationality", "known_for_title", "place_of_birth", "birth_day", "birth_month", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Robert Allan 'Bob' Powers Jr. is an American software entrepreneur, OneStream Software co-founder and continuing chief technology officer.",
+    "defining_work": "He co-created a unified enterprise platform for corporate financial close, consolidation, planning and reporting and held a substantial founder stake before a subsequent acquisition.",
+    "formative_context": "At Hyperion he invented and architected Hyperion Financial Management, gaining experience with complex corporate finance applications and the difficulty of integrating separate products.",
+    "decisive_moment": "Powers and Tom Shea chose to build a single extensible finance system after working on earlier, fragmented Hyperion-era products.",
+    "enduring_dimensions": [
+      "Architect of both Hyperion Financial Management and the later unified OneStream platform.",
+      "Founder-financed early development with Shea and Craig Colby before outside investment.",
+      "Continuing technology leadership after the company's public-listing and private-acquisition phases."
+    ],
+    "character_detail": "Powers and Shea initially collaborated from different states and met in person only occasionally while the software took shape.",
+    "opening_options": [
+      {"mode": "formative_episode", "angle": "Open with Powers and Shea designing the platform across different states, then show how their earlier financial-software work informed it."},
+      {"mode": "defining_achievement", "angle": "Establish Powers as the architect and co-founder of a unified corporate-finance software platform."}
+    ],
+    "excluded_transient_context": [
+      "Private-vessel identity and specifications; the company name is independently established and is not used to describe a vessel.",
+      "Current share counts, acquisition price, stock-sale totals and individual wealth estimates.",
+      "Customer counts, annual revenue, executive remuneration and ownership percentages that could quickly date.",
+      "Unverified family financial background or precise post-acquisition equity rollover."
+    ],
+    "source_ids": ["S3", "S4", "S5", "S6", "S7", "S8", "S9"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": ["founder_operator"],
+    "reviewed_phrase_exceptions": [
+      {
+        "kind": "organisation",
+        "phrase": "OneStream Software",
+        "vessel_name": "OneStream",
+        "source_ids": ["S3", "S4", "S5"],
+        "reason": "OneStream Software is the independently documented corporate name and founder-built enterprise, not a reference to the selected vessel that shares its first word. Both biography uses identify the commercial software company."
+      }
+    ],
+    "notes": "The 53-word short profile answers who Powers is, what he built and why his Hyperion experience mattered. The 112-word long profile opens with a distinct remote-development episode and adds the founders' self-financing, controlled sales expansion and eventual change of ownership; it omits the short profile's American identity signal and does not simply restate its three-sentence bundle."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Mandatory Forbes-first searches for Robert Allan Powers Jr., Bob Powers with OneStream and profile-restricted variants found no dedicated Forbes person profile. Similarly named Robert Powers results were not treated as this executive."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "technology",
+    "label": "Technology",
+    "summary": "Powers' material founder equity arose from the OneStream enterprise-software company he co-created to combine corporate finance planning, consolidation, close and reporting in one platform.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Current official company materials and SEC filings establish Powers' co-founding and technology leadership; SEC share disclosures show substantial founder ownership before the cash acquisition. Enterprise finance software is the direct wealth-producing business, not a finance or investment institution merely because its customers are finance departments."
+    },
+    "source_ids": ["S3", "S4", "S5", "S7", "S8", "S9"]
+  },
+  "primary_industry": {
+    "classification": "technology",
+    "label": "Technology",
+    "summary": "Technology is retained as an explicit origin-sector fallback: OneStream's founder equity and its sale are the identifiable principal wealth source, while the sector of Powers' post-acquisition private holdings is not disclosed. He remains the software company's chief technology officer.",
+    "confidence": {
+      "score": 83,
+      "band": "medium",
+      "reason": "The SEC documents a substantial OneStream stake immediately before Hg completed an all-cash acquisition, and the company's current leadership page retains Powers as CTO. No source establishes the composition or dominance of his resulting private assets, so Technology describes the documented origin sector as the required fallback rather than asserting continued founder equity or new investments."
+    },
+    "source_ids": ["S4", "S7", "S8", "S9"]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Powers co-founded and helped finance the enterprise-software company from which his significant equity arose; his starting family resources are not established closely enough for a subtype.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "OneStream's company history identifies Powers among the founders and says they initially funded the venture; SEC filings document his subsequent significant equity. These positive creation-and-ownership premises support broad Self-made. Neither a lack of inherited wealth nor a fully independent start is inferred from silence, and prior professional success is not equated with a family platform."
+    },
+    "source_ids": ["S3", "S5", "S7", "S8"]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Powers created the company that produced his founder equity and remains its technology chief after Hg's acquisition; his exact continuing equity interest is not public.",
+    "confidence": {
+      "score": 83,
+      "band": "medium",
+      "reason": "The company and SEC records directly establish both co-founding and a previously material shareholder interest. The acquisition extinguished the public-company ownership structure, but the present official leadership page still identifies him as co-founder and CTO, so Founder remains the best relationship to the demonstrated principal wealth-producing platform. Any post-sale ownership rollover is unverified and not claimed."
+    },
+    "source_ids": ["S3", "S4", "S7", "S8", "S9"]
+  },
+  "biography": {
+    "plain_text": "Robert Allan “Bob” Powers Jr. is an American software entrepreneur who co-founded OneStream Software, the corporate-finance platform for planning, reporting and financial close. Previously an architect of Hyperion Financial Management, he brought that experience to its unified system. He remains chief technology officer, overseeing the design of software used by corporate finance teams.",
+    "html": "<p>Robert Allan “Bob” Powers Jr. is an American software entrepreneur who co-founded OneStream Software, the corporate-finance platform for planning, reporting and financial close. Previously an architect of Hyperion Financial Management, he brought that experience to its unified system. He remains chief technology officer, overseeing the design of software used by corporate finance teams.</p>\r\n",
+    "word_count": 53,
+    "confidence": {"score": 98, "band": "very_high", "reason": "Exact-name SEC filings and current first-party company materials support Powers' legal identity, co-founding, Hyperion technical history and continuing technology-leadership role; the text contains no vessel or net-worth inference."},
+    "source_ids": ["S1", "S3", "S4", "S6", "S10"]
+  },
+  "long_biography": {
+    "plain_text": "Robert Allan “Bob” Powers Jr. helped design a unified finance platform with Tom Shea while they worked in different states, sometimes meeting only once or twice a year. Powers had previously created Hyperion Financial Management, a corporate consolidation product. His experience integrating separate finance tools persuaded him that companies needed one adaptable system rather than another collection of applications.\n\nPowers, Shea and Craig Colby formed OneStream Software and funded its early development themselves. They tested the product with initial customers before widening sales; Powers directed its architecture as the business grew. After KKR invested and the company went public, software investor Hg acquired it in 2026. Powers remains its chief technology officer.",
+    "html": "<p>Robert Allan “Bob” Powers Jr. helped design a unified finance platform with Tom Shea while they worked in different states, sometimes meeting only once or twice a year. Powers had previously created Hyperion Financial Management, a corporate consolidation product. His experience integrating separate finance tools persuaded him that companies needed one adaptable system rather than another collection of applications.</p>\r\n<p>Powers, Shea and Craig Colby formed OneStream Software and funded its early development themselves. They tested the product with initial customers before widening sales; Powers directed its architecture as the business grew. After KKR invested and the company went public, software investor Hg acquired it in 2026. Powers remains its chief technology officer.</p>\r\n",
+    "word_count": 112,
+    "confidence": {"score": 96, "band": "very_high", "reason": "Official company histories describe the remote collaboration, founder financing, staged early sales and Powers' architecture work; SEC and company documents establish the public listing, Hg's completed acquisition and his current CTO title."},
+    "source_ids": ["S3", "S4", "S5", "S6", "S8", "S9", "S10"]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Co-founder and Chief Technology Officer of OneStream Software",
+      "action": "fill_missing",
+      "confidence": {"score": 99, "band": "very_high", "reason": "The current official OneStream leadership page lists Bob Powers as co-founder and chief technology officer; exact-name SEC ownership filings confirm the legal identity behind the familiar name."},
+      "source_ids": ["S3", "S4"]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Robert Allan “Bob” Powers Jr. is an American software entrepreneur who co-founded OneStream Software, the corporate-finance platform for planning, reporting and financial close. Previously an architect of Hyperion Financial Management, he brought that experience to its unified system. He remains chief technology officer, overseeing the design of software used by corporate finance teams.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {"score": 98, "band": "very_high", "reason": "The source biography is blank; the proposed one uses verified legal identity, company history and current office, with no private-vessel or transitory wealth claim."},
+      "source_ids": ["S1", "S3", "S4", "S6", "S10"]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "5",
+      "type": "LinkedIn",
+      "url": "https://www.linkedin.com/in/powerspective/",
+      "verification": "LinkedIn's public profile names Robert Powers at OneStream and the University of Massachusetts Amherst; an independent executive directory explicitly links the same URL to OneStream co-founder and CTO Bob Powers.",
+      "confidence": {"score": 86, "band": "high", "reason": "The unusual powerspective handle is directly linked from the Bob Powers CTO entry in Craft's OneStream executive directory and a second company-staff index; the public LinkedIn result matches employer and education. Search-result activity mentions a different employee's vice-presidency and is not imported as Powers' role."},
+      "source_ids": ["S4", "S11", "S12"]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.onestream.com/",
+      "verification": "Official active OneStream site identifies Powers as co-founder and chief technology officer of the enterprise-software business he helped build.",
+      "confidence": {"score": 99, "band": "very_high", "reason": "The controlled domain contains a current leadership entry for Bob Powers and describes the platform's continuing financial-software operations; SEC filings bridge Bob to Robert Allan Powers Jr."},
+      "source_ids": ["S3", "S4"]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0069",
+      "name": "Enterprise software",
+      "summary": "Powers co-founded, substantially owned and still serves as technology chief of a significant enterprise platform for financial consolidation, planning, close and reporting.",
+      "relationship_type": "co-founder, former substantial shareholder and continuing chief technology officer",
+      "temporal_scope": "current",
+      "taxonomy_value": "Enterprise software is the precise repeated operating specialism behind his founder equity and public professional identity, with a coherent click-through cohort of other business-software principals.",
+      "confidence": {"score": 99, "band": "very_high", "reason": "Company descriptions and SEC filings directly document founder status, material equity, the enterprise customer base and continuing CTO role. This is neither an incidental software investment nor a customer relationship; the overlapping Fintech label adds less precision and is omitted."},
+      "source_ids": ["S3", "S4", "S5", "S7", "S8"]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S1", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=10455", "title": "Robert Allan Powers Jr. owner record, person ID 10455", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Immutable person ID, exact stored name, American nationality, US residence, male gender, 1962 birth year and Alive status.", "Blank biography/social baseline and the suffix currently included in the last_name field.", "Private current OneStream vessel relationship used only for identity, not wealth or biography claims."]},
+    {"id": "S2", "url": "https://www.forbes.com/search/?q=Robert%20Allan%20Powers%20Jr", "title": "Forbes-first search for Robert Allan Powers Jr. and Bob Powers", "publisher": "Forbes", "tier": 3, "accessed_at": "2026-09-19", "supports": ["Exact and company-qualified Forbes searches found no dedicated person profile for this OneStream founder."]},
+    {"id": "S3", "url": "https://www.sec.gov/Archives/edgar/data/1889956/000141588924020079/xslF345X02/form3-07252024_120710.xml", "title": "Robert Allan Powers Jr. initial OneStream beneficial-ownership filing", "publisher": "US Securities and Exchange Commission", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Exact legal name and generational suffix, director and substantial shareholder status at the company's public listing.", "Beneficial interest through named holdings and trust structures; these are not treated as private-family biography material."]},
+    {"id": "S4", "url": "https://www.onestream.com/about-us/", "title": "OneStream current leadership and business", "publisher": "OneStream", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Current official listing of Bob Powers as co-founder and chief technology officer.", "Enterprise platform for corporate finance planning, financial close, consolidation and reporting.", "Official company website and supported organisation-name exception for the vessel-name collision."]},
+    {"id": "S5", "url": "https://www.onestream.com/blog/onestream-celebrates-10-year-anniversary-and-key-milestones-reached/", "title": "OneStream's founder-era company history", "publisher": "OneStream", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Powers, Tom Shea and Craig Colby worked across different US states during the early platform-development period; Powers and Shea met in person infrequently.", "The founders financed early development themselves and initially delayed wider sales until customers had validated the platform.", "Company formation, subsequent outside investment and growth chronology; an old boating anecdote is identity context only and omitted from biographies."]},
+    {"id": "S6", "url": "https://www.onestream.com/blog/financial-aggregation-vs-straight-aggregation/", "title": "Financial Aggregation vs. Straight Aggregation", "publisher": "OneStream, by Bob Powers", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Powers was the original architect of Hyperion Financial Management and later responsible for integrating disparate finance applications.", "His conclusion that businesses needed a unified, fully capable finance platform and his role as an original OneStream architect."]},
+    {"id": "S7", "url": "https://investor.onestream.com/static-files/0a9b8336-00ce-401e-b62a-69dbcfe68c18", "title": "OneStream 2025 definitive proxy statement", "publisher": "OneStream filing with the US Securities and Exchange Commission", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Robert Powers' substantial Class D founder stake in the public company and his chief-technology-officer role.", "Material ownership corroboration for wealth origin; frozen share counts and executive compensation are excluded from biography."]},
+    {"id": "S8", "url": "https://www.sec.gov/Archives/edgar/data/1889956/000119312526134545/ck0001889956-20251231.htm", "title": "OneStream amended 2025 annual report, filed March 2026", "publisher": "OneStream filing with the US Securities and Exchange Commission", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Powers' continuing chief technology officer role and substantial beneficial stockholding immediately before the acquisition closed.", "The shareholding establishes materiality but does not itself define the post-acquisition investment portfolio."]},
+    {"id": "S9", "url": "https://www.sec.gov/Archives/edgar/data/1889956/000119312526136043/d137705dex991.htm", "title": "OneStream announces completion of acquisition by Hg", "publisher": "OneStream filing with the US Securities and Exchange Commission", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Hg's all-cash acquisition completed in April 2026 and OneStream ceased public trading.", "Company said its existing leadership team remained in place; Powers' exact continuing title is corroborated by the live official leadership page."]},
+    {"id": "S10", "url": "https://www.onestream.com/blog/in-case-you-havent-heard-a-proper-introduction-to-onestream/", "title": "A proper introduction to OneStream", "publisher": "OneStream", "tier": 1, "accessed_at": "2026-09-19", "supports": ["OneStream's financial performance-management product was created by Bob Powers and Tom Shea.", "Powers' prior invention of Hyperion Financial Management and directly relevant software architecture background."]},
+    {"id": "S11", "url": "https://www.linkedin.com/in/powerspective/", "title": "Robert Powers LinkedIn public profile", "publisher": "LinkedIn", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Public profile identifies Robert Powers at OneStream and the University of Massachusetts Amherst.", "This social is supported by a separate executive-directory link; unrelated activity-feed posts are not ascribed to him."]},
+    {"id": "S12", "url": "https://craft.co/onestream-software", "title": "OneStream Software executive directory", "publisher": "Craft", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Bob Powers appears as co-founder and chief technology officer.", "Its Bob Powers executive entry links directly to the distinctive powerspective LinkedIn profile, authenticating that URL beyond name and employer alone."]}
+  ],
+  "uncertainties": [
+    "The SEC uses the exact Robert Allan Powers Jr. legal name for the OneStream founder-shareholder whom the company calls Bob Powers. The distinctive company/vessel name and company history of Powers' boating support the source-owner identity. Public yacht directories identify the selected craft but gate its owner, so no direct public title record is claimed and no vessel fact appears in biographies, wealth fields or tag evidence.",
+    "The company blog says the founders financed early operations themselves. It does not reveal the source of Powers' prior resources or rule out a substantial family advantage; broad Self-made is supported by founder creation and material equity, but no independent-start or advantaged-start subtype is asserted.",
+    "The 2026 Hg transaction was all cash to public shareholders. The company's announcement explicitly mentions a potential CEO rollover but does not settle whether Powers retained any private equity after closing; his current personal investments and post-sale asset allocation are unavailable. Current primary Technology is disclosed as an origin-sector fallback, not a verified holdings mix.",
+    "Founder remains the best medium-confidence relationship because Powers created the principal wealth-producing software platform, held a material stake before the transaction and continues its technology leadership. The term does not assert a continuing ownership percentage after acquisition.",
+    "The selected craft and company share the exact word OneStream. The two published occurrences are the independently evidenced legal/commercial organisation phrase 'OneStream Software', recorded as a reviewed organisation-name exception; the text nowhere describes the craft.",
+    "The powerspective LinkedIn address is corroborated by a Bob Powers CTO executive-directory link and a public profile matching his employer and education. Its activity feed also displays posts made by other OneStream employees, including a vice-president announcement, and those are not treated as Powers' own job changes. No equally collision-safe Instagram, Facebook, X/Twitter, YouTube, TikTok or personal website was found.",
+    "No independently reliable day, month or place of birth was found; the authoritative 1962 birth year and US birth-country field are retained without embellishment. Exact signed SEC filings distinguish Powers from the Jr. suffix, but the input's optional name_suffix field cannot be proposed through the researchable-gap contract, so the existing structured-name fields are left unchanged together.",
+    "Only the active Enterprise software tag is assigned. Fintech would make his enterprise-CFO software business sound like a payments or financial-services platform and adds little click-through precision; no overlapping second tag is forced."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person decision at identity confidence 98. Technology creation / Technology origin-sector fallback / broad Self-made / Founder follow the official founding history, material SEC-documented pre-acquisition equity and current CTO role. Proposals add a known-for title and biography, plus authenticated LinkedIn and company website. One exact Enterprise software tag is assigned; no live, cohort or catalogue write occurs."
+  }
+}

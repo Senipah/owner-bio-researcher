@@ -1,0 +1,255 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 12446,
+    "display_name": "Zoe Wiltshire",
+    "identity_confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "The authoritative record contains an exact LinkedIn URL that publicly identifies Zoe Wiltshire with JSM Group. A company-supplied executive biography and JSM recruitment profile independently identify her legal-director work. The source record also associates Zoe and adjacent JSM founder Stuart Wiltshire with the same vessel, forming a compound identity bridge. No public person-vessel declaration was found, so identity confidence remains medium and no family or equity relationship is inferred."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "birth_day", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": ["LinkedIn", "Instagram"],
+    "missing_priority_social_types": ["Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "British legal executive Zoe Wiltshire, known for her group legal-director work at utility-infrastructure contractor JSM Group.",
+    "defining_work": "Negotiation and drafting of construction and engineering contracts for JSM's power and communications infrastructure projects.",
+    "formative_context": "Wiltshire joined JSM in 2008.",
+    "decisive_moment": null,
+    "enduring_dimensions": [
+      "Contractual advice beginning at project inception.",
+      "Use of both industry-standard forms and bespoke agreements.",
+      "Attention to client requirements, legal risk and the delivery timetable."
+    ],
+    "character_detail": "Her documented remit placed legal review early in the commercial process rather than only at the end of a project.",
+    "opening_options": [
+      {"mode": "present_identity", "angle": "Identify Wiltshire through her JSM legal-director role and the company's infrastructure work."},
+      {"mode": "defining_achievement", "angle": "Open with the contracts that framed JSM's utility projects and Wiltshire's role in negotiating them."}
+    ],
+    "excluded_transient_context": [
+      "Private-vessel identity clues and specifications.",
+      "Any presumed marriage, shared equity or transfer involving another Wiltshire record.",
+      "Unverified current employment or present ownership after the change in JSM leadership.",
+      "Company growth figures and transaction terms that cannot be attributed to Zoe personally."
+    ],
+    "source_ids": ["S3", "S4", "S6"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 4,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 4,
+    "opening_mode": "defining_achievement",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": ["sparse_public_record"],
+    "notes": "The short biography supplies the British identity, 2008 arrival and utility-sector context. The long profile opens on her contractual function, then develops project inception, legal risk, standard and bespoke forms, ancillary documents and client requirements. It omits the short version's arrival year and avoids implying equity, family transfer or a current title."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Exact-name and Forbes-profile searches found no credible dedicated Forbes person profile for the JSM legal executive."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No source identifies a material business, investment or career-earnings mechanism that created Wiltshire's principal wealth; JSM's construction and engineering sector is an occupational association, not a proven personal wealth source.",
+    "confidence": {
+      "score": 42,
+      "band": "insufficient",
+      "reason": "Her JSM legal role is well documented, but neither personal equity nor a sufficiently evidenced career-derived fortune is established. Construction & Engineering was considered as an alternative and rejected because the necessary material-wealth link is missing."
+    },
+    "source_ids": ["S3", "S4", "S6", "S7"]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The principal sector currently underpinning Wiltshire's private wealth is not publicly established.",
+    "confidence": {
+      "score": 39,
+      "band": "insufficient",
+      "reason": "A historical legal-director role and a stale recruitment page do not establish present private holdings. The current JSM corporate filings identify other directors and a holding-company controller, while no source names Wiltshire's current material economic interest."
+    },
+    "source_ids": ["S3", "S4", "S6", "S7"]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The available record does not show whether Wiltshire's principal assets came from career earnings, personal investment, a family transfer or another mechanism.",
+    "confidence": {
+      "score": 37,
+      "band": "insufficient",
+      "reason": "Her surname and professional proximity to JSM founder Stuart Wiltshire do not establish a marriage, inherited stake or inter vivos transfer. Nor does employment alone prove that career earnings created principal wealth."
+    },
+    "source_ids": ["S1", "S3", "S4", "S6"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Wiltshire's relationship to a principal wealth-producing asset cannot be determined from her documented legal executive role.",
+    "confidence": {
+      "score": 38,
+      "band": "insufficient",
+      "reason": "The record establishes a former specialist legal position, not founder status, ownership, operating control of the core business, investment stewardship or family shareholding. An executive title alone is insufficient for Operator without a supported material wealth asset."
+    },
+    "source_ids": ["S3", "S4", "S6", "S7"]
+  },
+  "biography": {
+    "plain_text": "Zoe Wiltshire is a British legal executive associated with JSM Group, the contractor behind power and communications networks. She joined the business in 2008 and served as group legal director. She specialised in negotiating and drafting construction and engineering agreements, including bespoke terms, for the company's utility infrastructure projects from planning through delivery.",
+    "html": "<p>Zoe Wiltshire is a British legal executive associated with JSM Group, the contractor behind power and communications networks. She joined the business in 2008 and served as group legal director. She specialised in negotiating and drafting construction and engineering agreements, including bespoke terms, for the company's utility infrastructure projects from planning through delivery.</p>\r\n",
+    "word_count": 53,
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "The company-supplied profile establishes Wiltshire's 2008 arrival, legal-director position and contract work. The JSM recruitment profile corroborates her title, Companies House verifies the company's utility-project sector, and the authoritative owner record supplies British nationality. The text does not claim present office or ownership."
+    },
+    "source_ids": ["S1", "S3", "S4", "S6"]
+  },
+  "long_biography": {
+    "plain_text": "Zoe Wiltshire dealt with the contracts that framed JSM Group's utility infrastructure projects. As group legal director, she advised at the outset of a job, when scope, client requirements and risk still had to be translated into workable terms. Her involvement began with negotiation rather than a final review after decisions had already been made.\n\nHer work covered standard construction and engineering forms alongside agreements written for individual transactions. She drafted ancillary documents and managed contractual matters as projects progressed towards delivery. The role placed legal advice inside JSM's commercial process, with attention to both the client's requirements and the practical timetable for completing each assignment.",
+    "html": "<p>Zoe Wiltshire dealt with the contracts that framed JSM Group's utility infrastructure projects. As group legal director, she advised at the outset of a job, when scope, client requirements and risk still had to be translated into workable terms. Her involvement began with negotiation rather than a final review after decisions had already been made.</p>\r\n<p>Her work covered standard construction and engineering forms alongside agreements written for individual transactions. She drafted ancillary documents and managed contractual matters as projects progressed towards delivery. The role placed legal advice inside JSM's commercial process, with attention to both the client's requirements and the practical timetable for completing each assignment.</p>\r\n",
+    "word_count": 106,
+    "confidence": {
+      "score": 79,
+      "band": "medium",
+      "reason": "JSM's company-supplied biography provides the project-inception, client-requirements, legal-risk, standard-form, bespoke-agreement and ancillary-document details. The recruitment profile corroborates the group legal-director title, and Companies House establishes the utility-infrastructure context. The prose does not assert a current role or economic ownership."
+    },
+    "source_ids": ["S3", "S4", "S6"]
+  },
+  "proposed_details": [
+    {
+      "field": "biography",
+      "value": "<p>Zoe Wiltshire is a British legal executive associated with JSM Group, the contractor behind power and communications networks. She joined the business in 2008 and served as group legal director. She specialised in negotiating and drafting construction and engineering agreements, including bespoke terms, for the company's utility infrastructure projects from planning through delivery.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 82,
+        "band": "medium",
+        "reason": "The company-supplied profile establishes Wiltshire's 2008 arrival, legal-director position and contract work. The JSM recruitment profile corroborates her title, Companies House verifies the company's utility-project sector, and the authoritative owner record supplies British nationality. The text does not claim present office or ownership."
+      },
+      "source_ids": ["S1", "S3", "S4", "S6"]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=12446",
+      "title": "Zoe Wiltshire owner record, person ID 12446",
+      "publisher": "Superyacht Network; saved authoritative owner export",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "Exact owner ID, British nationality, United Kingdom residence and birth country, female gender, November 1974 birth entry and Alive status.",
+        "Exact existing LinkedIn URL and second LinkedIn URL incorrectly stored under Instagram type ID 9.",
+        "Private Zozo relationship used only for identity analysis, not for biography, industry, origin, relationship or tags."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/search/?q=Zoe%20Wiltshire",
+      "title": "Forbes exact-name and profile search for Zoe Wiltshire",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-19",
+      "supports": ["Mandatory Forbes-first check under exact name and site:forbes.com/profile search.", "No credible dedicated Forbes person profile for the collision-resolved owner was found."]
+    },
+    {
+      "id": "S3",
+      "url": "https://iarecruitment.co.uk/client-page/jsm/",
+      "title": "JSM recruitment profile and executive roster",
+      "publisher": "IA Recruitment on behalf of JSM Group",
+      "tier": 3,
+      "accessed_at": "2026-09-19",
+      "supports": ["Names Zoe Wiltshire as group legal director alongside Stuart Wiltshire in a historical executive roster.", "Describes JSM's power, communications, gas and multi-utility infrastructure work.", "The roster still names Stuart as CEO, although JSM says he stepped down in 2025, so it cannot establish Zoe's current role."]
+    },
+    {
+      "id": "S4",
+      "url": "https://people.equilar.com/bio/person/zoe-wiltshire-jsm-group-ltd/59340339",
+      "title": "Zoe Wiltshire executive biography and work history",
+      "publisher": "Equilar ExecAtlas; biography attributed to JSM Group",
+      "tier": 3,
+      "accessed_at": "2026-09-19",
+      "supports": ["JSM-supplied biography says Wiltshire joined in 2008 and served as legal director.", "Describes her contract work from project inception, negotiation and drafting of standard and bespoke construction and engineering agreements, ancillary documentation, client requirements and risk mitigation.", "An indexed role label does not independently establish her present employment or personal economic interest."]
+    },
+    {
+      "id": "S5",
+      "url": "https://uk.linkedin.com/in/zoe-wiltshire-139709309",
+      "title": "Zoe Wiltshire, JSM Group",
+      "publisher": "LinkedIn",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": ["Exact personal URL already saved in the owner record resolves to Zoe Wiltshire with JSM Group in the London area.", "The distinct Muse, healthcare and other same-name LinkedIn profiles are not transferred to this owner."]
+    },
+    {
+      "id": "S6",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03591105",
+      "title": "JSM Group Services Limited company overview",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": ["The active company was incorporated in 1998 and reports construction of utility projects for electricity and telecommunications as its nature of business.", "Corporate-sector context only, not evidence of Wiltshire's personal stake or wealth source."]
+    },
+    {
+      "id": "S7",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03591105/persons-with-significant-control",
+      "title": "JSM Group Services Limited persons with significant control",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": ["Shows JSM Group Holdings Limited as the company's reported active controlling person.", "Does not establish Zoe Wiltshire's beneficial ownership; absence of a personal PSC filing is not treated as evidence that she holds no stake."]
+    },
+    {
+      "id": "S8",
+      "url": "https://jsmgroup.com/about-jsm/",
+      "title": "About JSM Group and company chronology",
+      "publisher": "JSM Group",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": ["Company identifies Stuart Wiltshire as a founder who retired in 2025 and describes its current infrastructure business.", "Confirms that older executive rosters naming Stuart as current CEO are stale, but does not specify Zoe's current status."]
+    },
+    {
+      "id": "S9",
+      "url": "https://uk.linkedin.com/in/zoe-wiltshire-45a29912a",
+      "title": "Zoe Wiltshire at Muse",
+      "publisher": "LinkedIn",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": ["A separate same-name British professional works at Muse and studied at the University of Derby in 2011–14.", "Excluded as a collision because the owner's exact saved LinkedIn URL identifies JSM Group instead."]
+    }
+  ],
+  "uncertainties": [
+    "Identity rests on the source record's exact JSM LinkedIn URL, the public JSM-linked professional profile and a compound association with the adjacent Stuart Wiltshire/Zozo record. No public article or filing directly names Zoe as the private vessel's owner, so the yacht bridge is not claimed as independently proved.",
+    "No source establishes that Zoe and Stuart Wiltshire are spouses or that she holds an economic interest in JSM. The company's founding, sale and leadership history belongs to Stuart and other principals unless Zoe's personal stake is separately documented.",
+    "JSM-linked material verifies a group legal-director role and a 2008 joining date. The recruitment roster is stale, and the Equilar role label has appeared as both current and former in crawls; her current occupation is therefore not asserted.",
+    "All four wealth classifications remain Unknown: the public material documents an executive legal role but not a personally material business, portfolio, transfer mechanism or relationship to wealth-producing assets.",
+    "The source birth entry of November 1974 is preserved, but no independent birth record verified the date or a day of birth; none is proposed.",
+    "The existing LinkedIn type ID 5 URL resolves to the JSM-linked Zoe Wiltshire and is not duplicated. A second LinkedIn URL is incorrectly labelled Instagram type ID 9. No Instagram account was authenticated, and this dossier makes no removal or replacement proposal under the limited social-reconciliation contract.",
+    "Searches found no collision-safe personal website, Instagram, Facebook, X/Twitter, YouTube or TikTok account beyond the saved LinkedIn profile. No personal social or company-site link is proposed.",
+    "The unrelated ZOE JSM GROUP LIMITED is a Liverpool property company with different officers and is not evidence of Zoe Wiltshire's ownership or JSM Group Services affiliation.",
+    "No active tag has a sufficiently evidenced substantial personal economic or professional mandate here. The JSM occupation is retained in biography, not converted into a construction, telecom or family-business tag.",
+    "Mandatory Forbes-first searches found no exact dedicated profile. Private-vessel facts are confined to identity analysis and omitted from both biographies and all wealth and tag decisions."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier with identity confidence 82. One evidence-backed biography proposal is supplied. Four economic fields remain Unknown, and there are no social or tag proposals. The malformed Instagram-labelled LinkedIn URL is documented for separate review rather than silently changed."
+  }
+}

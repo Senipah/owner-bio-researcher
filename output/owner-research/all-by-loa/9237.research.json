@@ -1,0 +1,198 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 9237,
+    "display_name": "Jens Erik Hilgerloh",
+    "identity_confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "The distinctive full name, German source geography, exact saved LinkedIn URL and first-party rental-group and trade-association records converge on the same executive. Filed Charly Autovermietung accounts and German registry notices identify his ownership and birth details. No public page naming him as the selected vessel's owner was found, so the source-record vessel association remains an identity clue rather than an independently verified personal asset."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["secondary_nationality", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": ["LinkedIn"],
+    "missing_priority_social_types": ["Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Jens Erik Hilgerloh is a German car-rental entrepreneur and former chief executive of the Starcar Europa Service Group.",
+    "defining_work": "He directed a network providing fleet purchasing, licensing and mobility services to independent rental firms, and his personally owned holding company controlled the enlarged group.",
+    "formative_context": "He studied economics at the University of Bremen and managed a Sixt rental branch before joining the Europa Service business.",
+    "decisive_moment": "Europa Service acquired a majority of Starcar in 2018, combining a business-client network with a consumer-facing rental brand; the enlarged group's expansion ended in corporate insolvency in 2025.",
+    "enduring_dimensions": [
+      "Sustained direction of independent car-rental networks and fleet services",
+      "Personal ownership of Charly Autovermietung, the holding company above the group's controlling stake",
+      "Former presidency of Germany's car-rental trade association"
+    ],
+    "character_detail": null,
+    "opening_options": [
+      {"mode": "present_identity", "angle": "Begin with Hilgerloh as a German car-rental entrepreneur and former group chief executive."},
+      {"mode": "institution_or_asset", "angle": "Open on the independent rental network and the holding structure he owned."},
+      {"mode": "decisive_event", "angle": "Lead with Europa Service's acquisition of Starcar and its consequences for the rental network."}
+    ],
+    "excluded_transient_context": [
+      "Private-vessel name, builder, dimensions, charter status and ownership chronology",
+      "Volatile group turnover, fleet, station and valuation figures",
+      "Unverified present wealth and unsupported personal insolvency conclusions",
+      "Source attribution, confidence language and classification deliberation"
+    ],
+    "source_ids": ["S0", "S1", "S2", "S3", "S4", "S5", "S8", "S9"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 4,
+    "opening_mode": "present_identity",
+    "narrative_shape": "institution_then_person",
+    "calibration_archetypes": ["founder_operator"],
+    "notes": "The short identity card foregrounds holding-company ownership, the independent-rental service model and a trade-association role. The long profile shares only the rental-group and ownership anchors, adding the Sixt entry, cooperative model, Starcar combination and subsequent insolvency while omitting the association presidency. Neither biography uses vessel context, personal wealth estimates or source narration."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Forbes was searched first for Jens Erik Hilgerloh by exact name, surname plus Europa Service or Starcar and a dedicated site:forbes.com/profile restriction. No matching Forbes personal profile or exact-person article was found."
+    },
+    "source_ids": []
+  },
+  "wealth_creation_industry": {
+    "classification": "automotive",
+    "label": "Automotive",
+    "summary": "Automotive is inferred as the principal wealth-creation sector from his 100% ownership of Charly Autovermietung, its majority control of the sizeable Starcar Europa Service car-rental group, and his sustained executive direction of that vehicle-rental platform.",
+    "confidence": {
+      "score": 83,
+      "band": "medium",
+      "reason": "The filed group accounts reproduced from Germany's commercial register establish the ownership chain and substantial scale, while the corporate and transaction sources document the underlying rental and fleet-services operations. Personal proceeds and the value of the holding have not been published, so materiality is inferred from control of the dominant operating group rather than an exact valuation."
+    },
+    "source_ids": ["S1", "S2", "S5"]
+  },
+  "primary_industry": {
+    "classification": "automotive",
+    "label": "Automotive",
+    "summary": "Automotive is used as an origin-sector fallback: the car-rental group that historically dominated his holding entered insolvency, and no reliable comparison of his remaining private property, company and investment interests establishes a different principal current sector.",
+    "confidence": {
+      "score": 72,
+      "band": "medium",
+      "reason": "The creation sector is supported by his documented controlling rental holding, but the 2025-26 group insolvencies materially changed its value. A new Spanish property company is registered in his name, yet its scale is not established; the Automotive label is explicitly a reporting fallback, not a verified present asset ranking."
+    },
+    "source_ids": ["S3", "S4", "S5", "S7"]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Broad Self-made is inferred from his creation and sole ownership of Charly Autovermietung as the controlling holding above the rental group he long directed; the initial funding and family starting platform are not public.",
+    "confidence": {
+      "score": 76,
+      "band": "medium",
+      "reason": "Commercial-register data place him at Charly's creation and as its sole shareholder, and its filed accounts show control of the principal rental group. This is positive evidence of a personally built holding rather than an inference from silence about inheritance. Sources do not establish whether his launch was independent or advantaged, so no narrower subtype is claimed."
+    },
+    "source_ids": ["S2", "S5", "S6"]
+  },
+  "wealth_relationship": {
+    "classification": "operator",
+    "label": "Operator",
+    "summary": "Hilgerloh is the documented sole owner and long-serving operating chief of the Charly holding and rental group; the underlying Starcar and Europa Service businesses preceded him, making Operator more precise than Founder.",
+    "confidence": {
+      "score": 78,
+      "band": "medium",
+      "reason": "Commercial-register data still list him as Charly's shareholder and managing director, and its filed accounts establish controlling interest in the group he ran for decades. Insolvency administrators now control the failed rental operations, so this classification describes his continuing holding-company role and defining operating relationship, not current management of a solvent Starcar fleet."
+    },
+    "source_ids": ["S1", "S2", "S3", "S4", "S5"]
+  },
+  "biography": {
+    "plain_text": "Jens Erik Hilgerloh is a German car-rental entrepreneur who owned the holding company behind Europa Service and Starcar while leading the enlarged group. His work centred on fleet purchasing, licensing and services for independent rental firms. A former president of Germany's car-rental association, he became a prominent voice for the sector.",
+    "html": "<p>Jens Erik Hilgerloh is a German car-rental entrepreneur who owned the holding company behind Europa Service and Starcar while leading the enlarged group. His work centred on fleet purchasing, licensing and services for independent rental firms. A former president of Germany's car-rental association, he became a prominent voice for the sector.</p>\r\n",
+    "word_count": 51,
+    "confidence": {"score": 88, "band": "high", "reason": "The filed Charly group accounts establish holding ownership, first-party company and transaction material explain the rental network, and the association's own announcement documents his former presidency."},
+    "source_ids": ["S1", "S2", "S3", "S5"]
+  },
+  "long_biography": {
+    "plain_text": "Europa Service's network of independent rental firms was the setting for much of Jens Erik Hilgerloh's career. After managing a Sixt branch, he joined the rental business and took senior responsibility for its purchasing and mobility services. He later owned Charly Autovermietung, the holding company that controlled the group.\n\nEuropa Service acquired a majority of Starcar in 2018, pairing its established business-client network with a consumer rental brand. Hilgerloh guided the enlarged group into new locations and services. The expansion ended in corporate insolvency in 2025, and the rental business closed after administrators could not secure a buyer for the whole group.",
+    "html": "<p>Europa Service's network of independent rental firms was the setting for much of Jens Erik Hilgerloh's career. After managing a Sixt branch, he joined the rental business and took senior responsibility for its purchasing and mobility services. He later owned Charly Autovermietung, the holding company that controlled the group.</p>\r\n<p>Europa Service acquired a majority of Starcar in 2018, pairing its established business-client network with a consumer rental brand. Hilgerloh guided the enlarged group into new locations and services. The expansion ended in corporate insolvency in 2025, and the rental business closed after administrators could not secure a buyer for the whole group.</p>\r\n",
+    "word_count": 102,
+    "confidence": {"score": 86, "band": "high", "reason": "His documented Sixt career, first-party rental-group history, adviser transaction announcement, filed Charly accounts and manager magazin's 2026 reporting support the biography's full chronology and the ended group operation."},
+    "source_ids": ["S1", "S2", "S4", "S5", "S8", "S10"]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Former Starcar Europa Service Group chief executive",
+      "action": "fill_missing",
+      "confidence": {"score": 91, "band": "high", "reason": "The group identified Hilgerloh as its chief executive, and current reporting identifies him as its former chief after the rental business closed."},
+      "source_ids": ["S1", "S4"]
+    },
+    {
+      "field": "birth_day",
+      "value": "8",
+      "action": "fill_missing",
+      "confidence": {"score": 86, "band": "high", "reason": "A German commercial-register change reproduced by CompanyHouse identifies Jens Erik Hilgerloh as born 8 February 1963; separate registry-derived records corroborate the year and corporate identity."},
+      "source_ids": ["S6"]
+    },
+    {
+      "field": "birth_month",
+      "value": "February",
+      "action": "fill_missing",
+      "confidence": {"score": 86, "band": "high", "reason": "A German commercial-register change reproduced by CompanyHouse identifies Jens Erik Hilgerloh as born 8 February 1963."},
+      "source_ids": ["S6"]
+    },
+    {
+      "field": "birth_year",
+      "value": "1963",
+      "action": "fill_missing",
+      "confidence": {"score": 90, "band": "high", "reason": "The exact date in a commercial-register change is independently consistent with registry-derived person and company listings giving the same 1963 year."},
+      "source_ids": ["S6", "S5"]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Jens Erik Hilgerloh is a German car-rental entrepreneur who owned the holding company behind Europa Service and Starcar while leading the enlarged group. His work centred on fleet purchasing, licensing and services for independent rental firms. A former president of Germany's car-rental association, he became a prominent voice for the sector.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {"score": 88, "band": "high", "reason": "The proposed short biography is the source-backed 51-word identity card and the source biography is blank."},
+      "source_ids": ["S1", "S2", "S3", "S5"]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=9237", "title": "Jens Erik Hilgerloh owner record, person ID 9237", "publisher": "Superyacht Network Agent export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Immutable exact name and German nationality/residence", "Saved exact-name personal LinkedIn", "Private-vessel context used only for identity research"]},
+    {"id": "S1", "url": "https://gb2021.sces-group.de/", "title": "SCES Group annual report 2021", "publisher": "Starcar Europa Service Group", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Hilgerloh's over 25 years of leadership", "His enlarged-group chief executive role", "Rental-network and fleet-services operating model"]},
+    {"id": "S2", "url": "https://www.belgrano-co.com/wAssets/docs/de/referenzen/20181206_STAR-CAR_D.pdf", "title": "Europa Service majority acquisition of Starcar", "publisher": "Belgrano & Co / Starcar transaction announcement", "tier": 1, "accessed_at": "2026-09-19", "supports": ["2018 majority acquisition and combination of the two rental groups", "Hilgerloh as Europa Service chief executive", "Starcar founders were Maik Grabow and Tobias Höpfner, not Hilgerloh", "Business-client, consumer-rental, licensing and fleet-service activities"]},
+    {"id": "S3", "url": "https://www.bav.de/service/oeffentlich/presseinformation/", "title": "Rücktritt BAV-Präsident Jens Erik Hilgerloh", "publisher": "Bundesverband der Autovermieter Deutschlands", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Hilgerloh served as association president from 2017 and resigned in October 2025", "Star Car's October 2025 insolvency filing", "Association's assessment of his industry service"]},
+    {"id": "S4", "url": "https://www.bav.de/wp-content/uploads/2026/01/Sixt-Europcar-Hertz-Starcar_-Autovermieter-in-Not-%E2%80%93-mit-einer-Ausnahme-manager-magazin.pdf", "title": "Pleiten, Zombies und Elektroschocks – das Fiasko der Autovermieter", "publisher": "manager magazin", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Hilgerloh identified as former Starcar chief executive", "His prior Sixt career and expansion of the combined group", "Rental operation closed in December 2025 after no buyer preserved the group", "Insolvency is corporate, not evidence of a personal bankruptcy"]},
+    {"id": "S5", "url": "https://handelsregister.ai/de/organizations/solingen/vermietung-verpachtung-von-eigenen-oder-geleasten-gewerbegrundstuecken-und-nichtwohngebaeuden/charly-autovermietung-gmbh-b954d2acb43a7a6fa093fb853ea53f4e", "title": "Charly Autovermietung GmbH register data and reproduced audited group accounts", "publisher": "German commercial-register filings via handelsregister.ai", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Hilgerloh listed as Charly's sole shareholder and continuing managing director", "Charly registered in 2007 and operated from 2008", "Reproduced audited 2023 accounts show Charly's 74.01% voting control of Starcar Europa Service Group", "The group was principally an automotive rental, fleet-service and vehicle-trading platform", "Property activities are visible but not shown to dominate personal wealth"]},
+    {"id": "S6", "url": "https://www.companyhouse.de/Your-Look-GmbH-Solingen", "title": "Your Look GmbH commercial-register change, July 2020", "publisher": "German commercial-register publication via CompanyHouse", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Official notice names Hilgerloh, Jens Erik, born 8 February 1963", "Exact corporate identity linked to the rental group"]},
+    {"id": "S7", "url": "https://www.boe.es/borme/dias/2026/08/27/pdfs/BORME-A-2026-165-07.pdf", "title": "BORME Illes Balears, 27 August 2026", "publisher": "Boletín Oficial del Estado", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Jens Erik Hilgerloh registered as sole shareholder of HIRE IMMOBILIEN SL", "New property company's capital and purpose are disclosed but its economic materiality is not"]},
+    {"id": "S8", "url": "https://de.linkedin.com/in/jens-erik-hilgerloh-243aa3145", "title": "Jens Erik Hilgerloh LinkedIn profile", "publisher": "LinkedIn", "tier": 3, "accessed_at": "2026-09-19", "supports": ["Exact saved personal-profile URL matches full name, Solingen, Bremen University and Starcar career", "Profile's historical role dates may be stale after insolvency and were not relied on for current status"]},
+    {"id": "S9", "url": "https://www.superyachttimes.com/yachts/pearly-spencer", "title": "Pearly Spencer vessel profile", "publisher": "SuperYacht Times", "tier": 3, "accessed_at": "2026-09-19", "supports": ["Independent public vessel specification agrees with source context", "Named owner is subscriber-only and no public Hilgerloh-vessel bridge was established"]},
+    {"id": "S10", "url": "https://www.xing.com/profile/JensErik_Hilgerloh", "title": "Jens Erik Hilgerloh XING professional profile", "publisher": "XING", "tier": 3, "accessed_at": "2026-09-19", "supports": ["Self-reported University of Bremen economics study and Sixt branch-management role", "Historical roles corroborate his Europa Service career but are stale for current office status"]}
+  ],
+  "uncertainties": [
+    "The exact-ID inventory matches the canonical enriched owner input. The selected private-vessel relationship was treated only as a source-record identity clue; no public source names Hilgerloh as its beneficial owner, and vessel details are absent from biographies, wealth fields and tags.",
+    "Forbes-first searches found no matching dedicated profile. The saved LinkedIn URL resolves to an exact-name Solingen rental executive and is corroborated by first-party group material, so it is retained without a duplicate proposal. No personal Instagram, Facebook, X, YouTube, TikTok or personal website cleared authentication; company accounts were not substituted.",
+    "A German commercial-register change gives 8 February 1963 and supports the three missing birth components. Bremen as a birthplace appears on Wikipedia but was not independently established by a sufficiently strong source, so no place-of-birth proposal is made.",
+    "Charly's reproduced audited 2023 accounts and current register listing establish Hilgerloh's sole ownership of the holding and its historical majority control of the Starcar Europa Service Group. The 2025-26 insolvencies mean those historic control and financial figures must not be treated as current group value or an ongoing operating fleet.",
+    "The new Spanish HIRE IMMOBILIEN SL is registered as his wholly owned property company in August 2026. Its small initial capital and absence of operations or asset data do not establish that real estate now outweighs car-rental-derived interests. Primary industry therefore uses the required explicit origin-sector fallback.",
+    "Self-made is broad: his personally owned holding and long operating record support a built-asset inference, but sources do not establish the original funding, family platform or exact proceeds. No independent-start or advantaged-start subtype is claimed.",
+    "Operator is selected over Founder because Europa Service began before Hilgerloh and Starcar's named founders were Maik Grabow and Tobias Höpfner. His continuing Charly shareholding and directorship, not management of the failed rental operation, support the current relationship label.",
+    "The active tag catalogue contains no approved car-rental or vehicle-rental concept. Automotive dealerships, automotive distribution and automotive components have distinct membership contracts not met by a rental-network operator; no literal tag or candidate is invented.",
+    "The association presidency ended in October 2025. The known-for proposal and both biographies identify him as a former group chief executive and do not carry forward stale LinkedIn or register-derived executive titles as proof of current control over a solvent group."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal person dossier. Exact distinctive identity and saved LinkedIn are supported by corporate, association and register records. Charly's filed accounts establish a material historical rental holding; corporate insolvency requires a qualified Automotive origin-sector fallback rather than an unsupported current valuation. Broad Self-made and Operator are reasoned from sole holding ownership and sustained direction, without founder or independent-start overclaims. Three birth fields and a former-chief known-for title are supported. No active tag fits the rental specialism, no new social is proposed, and biographies remain vessel-independent. Nothing was compiled, synchronised or applied live."
+  }
+}

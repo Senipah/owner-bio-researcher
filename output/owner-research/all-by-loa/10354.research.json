@@ -1,0 +1,85 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 10354,
+    "display_name": "Mr Mark Cohen",
+    "identity_confidence": {
+      "score": 74,
+      "band": "medium",
+      "reason": "A direct SuperYacht Times interview names Mark Cohen as owner of a 24.38-metre Dare to Dream, matching the saved vessel exactly. It also describes him as a Boston native in his mid-seventies. However, the very common name and absence of any named occupation, company, full name or externally verifiable personal profile leave no collision-safe bridge from that yacht owner to a researchable professional identity."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["middle_names", "name_suffix", "nationality", "secondary_nationality", "main_residence_country", "secondary_residence_country", "known_for_title", "gender", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "nationality", "secondary_nationality", "main_residence_country", "known_for_title", "gender", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "death_day", "death_month", "death_year", "biography"],
+    "optional_missing_details": ["name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "A direct owner interview links a Mark Cohen to the exact Dare to Dream in the saved record and describes an older Boston native. It does not identify his profession, company, wealth source or a personal account. Several unrelated public figures share the name, and one search result misleadingly places another Mark Cohen near an unrelated Dare to Dream charity project. Without a second bridge to a specific economic identity, publishing a career biography or assigning a wealth sector would risk conflation.",
+    "confidence": {"score": 95, "band": "very_high", "reason": "The note follows the direct named-vessel interview while distinguishing its limited biographical content from unlinked same-name professional profiles and a misleading search-result adjacency."},
+    "source_ids": ["S0", "S2", "S3", "S4", "S5"]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 93, "band": "high", "reason": "Forbes-first exact-name, profile-path and vessel-qualified searches found no dedicated Forbes profile linked to the Dare to Dream owner. The prominent Mark A. Cohen contributor page describes a legal-industry writer, not a verified match."}
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No business, profession or other principal wealth-creating activity has been established for the interviewed yacht owner.",
+    "confidence": {"score": 12, "band": "insufficient", "reason": "The interview confirms a name and yacht but supplies no economic history. Public careers of same-name figures cannot be attributed to him without an independent identifying bridge."},
+    "source_ids": ["S0", "S2", "S3", "S4", "S5"]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The person's principal current industry and asset mix are not identifiable from the available public record.",
+    "confidence": {"score": 10, "band": "insufficient", "reason": "The yacht-owner interview gives no current business, investment platform or occupational role. Vessel ownership alone is not an industry classification."},
+    "source_ids": ["S0", "S2", "S3"]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The source of capital and whether it was earned, built, inherited or transferred remain undocumented.",
+    "confidence": {"score": 8, "band": "insufficient", "reason": "Neither the saved owner record nor the named yacht interview describes an enterprise, transaction, inheritance, family platform or financing history."},
+    "source_ids": ["S0", "S2", "S3"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No founder, operating, investment or family-shareholder relationship to a principal wealth asset is proven.",
+    "confidence": {"score": 8, "band": "insufficient", "reason": "The person is directly associated with a yacht, but no underlying economic enterprise or holding is identified; yacht ownership does not establish a wealth relationship archetype."},
+    "source_ids": ["S0", "S2", "S3"]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=10354", "title": "Mr Mark Cohen saved owner record, person ID 10354", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Saved display name Mr Mark Cohen and relationship to the 24.38-metre Dare to Dream", "No saved nationality, age, occupation, biography or social account; selection context, not independent economic evidence"]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Mark%20Cohen", "title": "Forbes exact-name search", "publisher": "Forbes search", "tier": 3, "accessed_at": "2026-09-19", "supports": ["Forbes-first search found no dedicated person profile connected to the saved Dare to Dream owner"]},
+    {"id": "S2", "url": "https://www.superyachttimes.com/yacht-news/mark-cohen-owns-floating-museum-dare-to-dream", "title": "Mark Cohen on owning his floating museum Dare to Dream", "publisher": "SuperYacht Times", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Direct published interview names Mark Cohen as owner of the 24.38-metre Lazzara Dare to Dream", "The article's indexed opening describes him as a Boston native in his mid-seventies, but does not identify a company or profession"]},
+    {"id": "S3", "url": "https://www.linkedin.com/posts/superyachttimes_mark-cohen-on-owning-his-floating-museum-activity-7396219308705685504-58f6", "title": "SuperYacht Times interview announcement", "publisher": "SuperYacht Times on LinkedIn", "tier": 2, "accessed_at": "2026-09-19", "supports": ["The publisher independently repeats the exact name, yacht and 24.38-metre dimension", "The post belongs to the publisher rather than the owner's personal social account"]},
+    {"id": "S4", "url": "https://www.forbes.com/sites/markcohen1/", "title": "Mark A. Cohen Forbes contributor", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-19", "supports": ["A same-name legal-industry writer exists on Forbes", "No evidence on that profile connects the writer to the saved yacht; it is not a verified owner profile"]},
+    {"id": "S5", "url": "https://esango.un.org/civilsociety/showProfileDetail.do?method=showProfileDetails&profileCode=673765&tab=3", "title": "Civil-society organisation profile with separate biographies", "publisher": "United Nations Civil Society Participation", "tier": 3, "accessed_at": "2026-09-19", "supports": ["The Dare to Dream charity project is attributed to Robert Lubell, whereas an adjacent entry names a Mark Cohen in investment advice", "Search-result adjacency is not evidence that the investment adviser owns the yacht"]}
+  ],
+  "uncertainties": [
+    {"topic": "Direct vessel bridge versus economic identity", "detail": "The SuperYacht Times interview resolves that a Mark Cohen owns a 24.38-metre Dare to Dream matching the saved vessel. However, it provides no full name, employer, business history or corroborated personal account; that insufficient external identity detail prevents a collision-safe career attribution."},
+    {"topic": "Common-name collisions", "detail": "Mark A. Cohen the Forbes legal commentator and a Mark Cohen listed by a UN-hosted organisation as an investment strategist have no proved link to this hull. The UN page assigns the unrelated Dare to Dream charity project to another person, not to that adviser. No professional history from either namesake is transferred."},
+    {"topic": "Demographics and social accounts", "detail": "An approximate age and Boston association in the interview do not establish an exact birth date, birthplace, citizenship or current residence. Exact-name searches of LinkedIn, Instagram and Facebook did not yield a personal account tied to both the interviewed owner and vessel, so no social URL is proposed."},
+    {"topic": "Publication decision", "detail": "A yacht-only biography would breach the person-led, vessel-independent editorial requirement. With no independently verified enterprise, no wealth classification, business tag, biography or demographic correction is proposed."}
+  ],
+  "review": {"status": "complete", "notes": "Terminal insufficient-evidence decision after mandatory Forbes-first, exact vessel interview, priority-social and collision checks. Direct name-to-vessel evidence exists, but the owner's economic/professional identity remains below the publication threshold. Four wealth fields Unknown; no biographies, details, socials, tags or taxonomy candidates. Only this dossier was created."}
+}

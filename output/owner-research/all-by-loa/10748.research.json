@@ -1,0 +1,142 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 10748,
+    "display_name": "Carlos Alcaraz",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The saved Spanish owner record's exact date and place of birth match the ATP player profile. Sunreef Yachts directly names the Spanish tennis champion Carlos Alcaraz as the customer for a customised Sunreef Ultima 88, matching the selected model and March 2026 timing. This is an order/construction bridge, not evidence of delivery."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "main_residence_country", "secondary_residence_country", "known_for_title", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "main_residence_country", "known_for_title"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2":"Facebook","3":"Twitter","4":"Youtube","5":"LinkedIn","6":"Trip Advisor","7":"Vimeo","8":"Flickr","9":"Instagram","10":"Wikipedia","11":"Forbes","12":"Zillow","14":"Company Website","15":"Personal Website","16":"TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Carlos Alcaraz is a Spanish professional tennis player from El Palmar, Murcia.",
+    "defining_work": "He became the youngest men's world No. 1 after his first US Open title and completed the career Grand Slam at the 2026 Australian Open.",
+    "formative_context": "His father coached and administered tennis at the El Palmar club, giving Carlos early instruction; a local confectionery sponsor paid for junior travel the family could not afford.",
+    "decisive_moment": "Winning the 2022 US Open made him the youngest ATP men's world No. 1.",
+    "enduring_dimensions": ["Grand Slam titles on hard, clay and grass courts", "Prize money from elite tennis competition and substantial sponsorship income", "A varied attacking style with movement, drop shots and net play"],
+    "character_detail": "His family had a strong tennis-club connection but not the means to fund extensive junior travel; outside sponsorship enabled those early trips.",
+    "opening_options": [
+      {"mode":"present_identity","angle":"Identify the Spanish tennis champion through his defining major victories and sporting income."},
+      {"mode":"formative_episode","angle":"Open with the El Palmar club training and the junior-travel sponsor that made international competition possible."},
+      {"mode":"defining_achievement","angle":"Lead with the teenage US Open victory and its immediate world-ranking consequence."}
+    ],
+    "excluded_transient_context": ["Private-vessel order, model, dimensions, construction and delivery status", "Changing title counts, ranking positions, earnings estimates and sponsor rosters", "Wrist-injury episode and short-term tournament schedule", "Source names and wealth-taxonomy deliberation"],
+    "source_ids": ["S2", "S3", "S4", "S5", "S6"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": ["sparse_public_record"],
+    "notes": "The short identity card pairs the teenage ranking breakthrough, career-wide major success and sponsorship-based earnings with his father's tennis-school role. The long version shares only the tennis identity and first-US-Open ranking anchor, adding playing style, the family's inability to pay for junior travel, local sponsorship, Ferrero's academy, the career Grand Slam and Olympic silver. It deliberately omits the short version's income summary. Neither profile uses the vessel, current rankings or changing title counts."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 98, "band": "very_high", "reason": "Focused exact-name and site:forbes.com/profile/ searches found Forbes tennis earnings articles about Alcaraz but no dedicated verified Forbes personal profile. An article is not proposed as a Forbes social profile."}
+  },
+  "wealth_creation_industry": {
+    "classification": "sports",
+    "label": "Sports",
+    "summary": "Elite tennis created the public-performance platform for substantial tournament winnings and sponsorship and appearance income; both revenue streams arise from his playing career.",
+    "confidence": {"score": 96, "band": "very_high", "reason": "ATP documents his professional achievements and prize-money career, while Forbes directly separates substantial on-court and off-court tennis-linked earnings in 2026. No unrelated principal wealth-creation mechanism is evidenced."},
+    "source_ids": ["S3", "S4", "S2"]
+  },
+  "primary_industry": {
+    "classification": "sports",
+    "label": "Sports",
+    "summary": "Current identifiable income remains principally tied to tennis performance, endorsements, appearances and exhibitions, with off-court income larger than recent prize income; there is no evidence that a separate sector dominates his private assets.",
+    "confidence": {"score": 94, "band": "high", "reason": "Forbes's August 2026 earnings analysis directly identifies sports-linked on-court and off-court income, and ATP confirms continuing professional competition. The exact composition of accumulated private investments is not public, but the central identifiable current economic activity is sports."},
+    "source_ids": ["S2", "S3", "S4"]
+  },
+  "wealth_origin": {
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "Alcaraz earned his principal documented wealth through his own professional play and related commercial appeal, without a transferred family fortune. His father coached and administered the local tennis club, supplying early sport-specific instruction and access; a separate local sponsor financed junior travel the family could not afford. This is an advantaged tennis starting platform, not inherited capital.",
+    "confidence": {"score": 82, "band": "medium", "reason": "ATP and detailed interviews with early coaches establish the father-led training and club access; Forbes establishes career-generated earnings. The materiality of family industry access is inferred from those positive premises, while junior-trip finance came from an independent sponsor rather than family wealth. No personal balance sheet or full financing history is public."},
+    "source_ids": ["S2", "S3", "S5", "S6"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The documented principal mechanism is athlete earnings and endorsements, but the relationship taxonomy has no career-earner or athlete value. No founder, operator, investor, heir or passive-owner relationship to a principal wealth-producing asset is established.",
+    "confidence": {"score": 95, "band": "very_high", "reason": "Forbes and ATP establish sporting earnings and sponsorships. Individual endorsement agreements do not make him an operator or investor, and no reliable evidence identifies a dominant personally controlled enterprise or portfolio. Founder was considered for personal branding activity but does not describe an evidenced principal asset."},
+    "source_ids": ["S2", "S3"]
+  },
+  "biography": {
+    "plain_text": "Carlos Alcaraz is a Spanish tennis player from El Palmar who became the youngest men's world No. 1 after winning the 2022 US Open. His victories across all four Grand Slam tournaments and endorsements have made competition and sponsorships the basis of his earnings. His father ran the tennis school where he learned the sport.",
+    "html": "<p>Carlos Alcaraz is a Spanish tennis player from El Palmar who became the youngest men's world No. 1 after winning the 2022 US Open. His victories across all four Grand Slam tournaments and endorsements have made competition and sponsorships the basis of his earnings. His father ran the tennis school where he learned the sport.</p>\r\n",
+    "word_count": 55,
+    "confidence": {"score": 96, "band": "very_high", "reason": "ATP confirms his identity, world-ranking breakthrough and career Grand Slam; Forbes documents sporting and commercial earnings, and direct early-coach interviews substantiate his father's tennis-school role."},
+    "source_ids": ["S2", "S3", "S4", "S5"]
+  },
+  "long_biography": {
+    "plain_text": "From the courts of El Palmar, Carlos Alcaraz developed a game built on explosive movement, varied shots and frequent advances to the net. His father, a tennis coach and club administrator, gave him early instruction, while a local confectionery company helped pay for junior travel that his family could not afford. Former world No. 1 Juan Carlos Ferrero later coached him at his academy in Villena.\n\nAlcaraz's first major victory at the US Open carried him to the top of the men's rankings while still a teenager. He went on to win on clay, grass and hard courts, completing a career sweep of the four majors at the 2026 Australian Open. He also represented Spain at the Paris Olympics, winning the men's singles silver medal.",
+    "html": "<p>From the courts of El Palmar, Carlos Alcaraz developed a game built on explosive movement, varied shots and frequent advances to the net. His father, a tennis coach and club administrator, gave him early instruction, while a local confectionery company helped pay for junior travel that his family could not afford. Former world No. 1 Juan Carlos Ferrero later coached him at his academy in Villena.</p>\r\n<p>Alcaraz's first major victory at the US Open carried him to the top of the men's rankings while still a teenager. He went on to win on clay, grass and hard courts, completing a career sweep of the four majors at the 2026 Australian Open. He also represented Spain at the Paris Olympics, winning the men's singles silver medal.</p>\r\n",
+    "word_count": 125,
+    "confidence": {"score": 94, "band": "high", "reason": "Early coaches and family interviews substantiate his development, playing style, junior travel funding and move to Ferrero's academy; ATP confirms the teenage ranking breakthrough, career Grand Slam and Paris Olympic silver medal."},
+    "source_ids": ["S3", "S4", "S5", "S6", "S13"]
+  },
+  "proposed_details": [
+    {"field":"known_for_title","value":"Professional tennis player","action":"fill_missing","confidence":{"score":100,"band":"very_high","reason":"ATP directly identifies Alcaraz's defining professional sporting role."},"source_ids":["S3"]},
+    {"field":"biography","existing_value":"<p>Carlos Alcaraz (born 5 May 2003) is a Spanish professional tennis player and former world No. 1 in men&rsquo;s singles. He finished as year-end No. 1 in 2022 and 2025, and has won 26 ATP singles titles, including seven Grand Slams and eight Masters titles. He is the youngest man to complete a Career Grand Slam.</p>\r\n\r\n<p>Alcaraz turned professional in 2018 and broke into the top 100 in 2021, reaching the US Open quarterfinals that year. In 2022, he won his first major at the US Open and became the youngest world No. 1 in ATP history at age 19.</p>\r\n\r\n<p>He won Wimbledon in 2023, defeating Novak Djokovic, and in 2024 became the youngest man in the Open Era to win both the French Open and Wimbledon in the same season. In 2025, he added French Open and US Open titles, and in 2026 won the Australian Open to complete the Career Grand Slam at age 22.</p>\r\n","value":"<p>Carlos Alcaraz is a Spanish tennis player from El Palmar who became the youngest men's world No. 1 after winning the 2022 US Open. His victories across all four Grand Slam tournaments and endorsements have made competition and sponsorships the basis of his earnings. His father ran the tennis school where he learned the sport.</p>\r\n","action":"correct_existing","confidence":{"score":96,"band":"very_high","reason":"The existing three-paragraph Biography is a count-heavy extended profile rather than the required concise, durable short field. ATP, Forbes and early-career reporting support a distinct person-led replacement without changing authoritative biographical facts."},"source_ids":["S2","S3","S4","S5"]}
+  ],
+  "proposed_socials": [
+    {"type_id":"9","type":"Instagram","url":"https://www.instagram.com/carlitosalcarazz/","verification":"ATP embeds Alcaraz's first-person announcement and labels the account Carlos Alcaraz Garfia; the linked profile matches the ATP athlete identity.","confidence":{"score":99,"band":"very_high","reason":"Direct ATP editorial embedding of his own announcement authenticates the exact personal handle."},"source_ids":["S7"]},
+    {"type_id":"3","type":"Twitter","url":"https://x.com/carlosalcaraz","verification":"ATP attributes first-person tournament announcements to Carlos Alcaraz and embeds @carlosalcaraz as his account.","confidence":{"score":99,"band":"very_high","reason":"Multiple ATP reports directly identify and embed Alcaraz's own X account."},"source_ids":["S8"]},
+    {"type_id":"16","type":"TikTok","url":"https://www.tiktok.com/@carlosalcaraz","verification":"An ATP and TikTok joint announcement explicitly names Carlos Alcaraz and his TikTok handle @carlosalcaraz.","confidence":{"score":99,"band":"very_high","reason":"Both platform and governing tour directly authenticate the athlete-handle pairing."},"source_ids":["S9","S10"]}
+  ],
+  "proposed_tags": [
+    {"tag_id":"tag_0185","name":"Tennis","summary":"Alcaraz's sustained professional tennis career, world No. 1 ranking and Grand Slam titles define his public identity.","relationship_type":"professional_competitor","temporal_scope":"current","taxonomy_value":"Forms a coherent cohort of owners whose defining professional sporting identity is tennis, rather than recreational play or a sponsorship link.","confidence":{"score":100,"band":"very_high","reason":"ATP establishes a sustained elite professional career and multiple major championships, directly meeting the active Tennis sporting-identity contract."},"source_ids":["S3","S4"]},
+    {"tag_id":"tag_3296","name":"Olympian","summary":"Alcaraz represented Spain in men's tennis at the Paris 2024 Olympic Games and won the singles silver medal.","relationship_type":"olympic_competitor","temporal_scope":"former_but_defining","taxonomy_value":"Adds a distinct durable Olympic-participation status beyond the sport-specific Tennis cohort.","confidence":{"score":98,"band":"very_high","reason":"Official ATP coverage directly documents his Olympic final and silver medal, satisfying the active Olympian status contract."},"source_ids":["S13"]}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id":"S0","url":"https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=10748","title":"Carlos Alcaraz owner record, ID 10748","publisher":"Superyacht Network; saved immutable export only","tier":1,"accessed_at":"2026-09-19","supports":["Authoritative person ID and saved personal fields, including 5 May 2003 El Palmar birth and existing three-paragraph Biography","Saved Sunreef 88 Ultima/03 relationship used only as identity-search context; no live website access"]},
+    {"id":"S1","url":"https://www.forbes.com/search/?q=Carlos%20Alcaraz","title":"Forbes exact-name and dedicated-profile search","publisher":"Forbes","tier":2,"accessed_at":"2026-09-19","supports":["Mandatory Forbes-first search; Forbes earnings coverage found but no exact matching dedicated personal profile"]},
+    {"id":"S2","url":"https://www.forbes.com.au/news/sport/the-worlds-highest-paid-tennis-players-2026/","title":"The World's Highest-Paid Tennis Players 2026","publisher":"Forbes Australia","tier":2,"accessed_at":"2026-09-19","supports":["Alcaraz's material professional-tennis income and distinct on-court and off-court components in the 12 months to August 2026","Off-court endorsements, appearances, exhibitions and other business income exceed on-court earnings","No separate non-sport principal wealth mechanism established by this earnings analysis"]},
+    {"id":"S3","url":"https://www.atptour.com/en/players/carlos-alcaraz/a0e2/overview","title":"Carlos Alcaraz ATP player overview","publisher":"ATP Tour","tier":1,"accessed_at":"2026-09-19","supports":["Spanish professional tennis identity and 5 May 2003 El Palmar birth","ATP world No. 1 career high, professional record and prize-money career","Professional tennis player known-for-title proposal"]},
+    {"id":"S4","url":"https://www.atptour.com/en/news/alcaraz-australian-open-2026-final-reaction","title":"Alcaraz on Career Grand Slam: 'It is a dream come true'","publisher":"ATP Tour","tier":1,"accessed_at":"2026-09-19","supports":["Australian Open victory in 2026 and completion of titles at all four Grand Slam tournaments","Youngest man to complete a career Grand Slam","Durable multi-surface championship record without relying on changing title tallies"]},
+    {"id":"S5","url":"https://www.theguardian.com/sport/2023/may/26/born-to-be-no-1-tennis-the-making-of-carlos-alcaraz","title":"The making of Carlos Alcaraz","publisher":"The Guardian","tier":2,"accessed_at":"2026-09-19","supports":["Grandfather's El Palmar tennis-club involvement and father's coaching and administration","Family could not afford international junior travel; Postres Reina sponsor financed it","Early all-court style, first instruction and later move to Juan Carlos Ferrero's academy"]},
+    {"id":"S6","url":"https://www.atptour.com/en/news/how-carlos-alcaraz-has-built-a-winning-team","title":"How Carlos Alcaraz built a winning team","publisher":"ATP Tour","tier":1,"accessed_at":"2026-09-19","supports":["Early racquet and clothing sponsorships, manager support and move to Ferrero's Villena training academy","Corroboration of professionally organised junior-to-tour development"]},
+    {"id":"S7","url":"https://www.atptour.com/es/news/copa-davis-2025-martes-baja-carlos-alcaraz","title":"Alcaraz es baja en la Davis","publisher":"ATP Tour","tier":1,"accessed_at":"2026-09-19","supports":["Directly embedded first-person Instagram announcement from Carlos Alcaraz Garfia @carlitosalcarazz","Exact Instagram authentication"]},
+    {"id":"S8","url":"https://www.atptour.com/en/news/alcaraz-toronto-2025-withdrawal","title":"Alcaraz withdraws from Toronto","publisher":"ATP Tour","tier":1,"accessed_at":"2026-09-19","supports":["Direct ATP attribution and embedded first-person X post by Carlos Alcaraz @carlosalcaraz","Exact X account authentication"]},
+    {"id":"S9","url":"https://www.atptour.com/en/news/atp-tiktok-partnership-expansion-press-release-june-2026","title":"ATP and TikTok expand partnership","publisher":"ATP Tour","tier":1,"accessed_at":"2026-09-19","supports":["ATP identifies Carlos Alcaraz as @carlosalcaraz on TikTok","Current athlete TikTok account authentication"]},
+    {"id":"S10","url":"https://newsroom.tiktok.com/tiktok-atp-expand-partnership-to-attract-the-next-generation-of-global-tennis-fans?lang=en","title":"TikTok and ATP expand partnership","publisher":"TikTok Newsroom","tier":1,"accessed_at":"2026-09-19","supports":["Independent platform-side confirmation of Carlos Alcaraz's TikTok @carlosalcaraz"]},
+    {"id":"S11","url":"https://sunreef-yachts.com/en/news/carlos-alcaraz-sunreef-ultima-88/","title":"Carlos Alcaraz signs a Sunreef Ultima 88","publisher":"Sunreef Yachts","tier":1,"accessed_at":"2026-09-19","supports":["Direct tennis-player-to-selected-model identity bridge from March 2026","Signed contract and custom construction commission, not a completed delivery or verified current possession","Identity context only; excluded from biographies, wealth and tags"]},
+    {"id":"S12","url":"https://www.atptour.com/en/news/alcaraz-us-open-2026-return","title":"Alcaraz announces he is set to return at US Open","publisher":"ATP Tour","tier":1,"accessed_at":"2026-09-19","supports":["Professional tennis activity remains current in 2026","Temporary injury and schedule are excluded from durable biographies"]},
+    {"id":"S13","url":"https://www.atptour.com/en/news/q3-in-review--2024","title":"2024 third quarter in review: Olympic tennis","publisher":"ATP Tour","tier":1,"accessed_at":"2026-09-19","supports":["Carlos Alcaraz represented Spain and won men's singles silver at the Paris 2024 Olympic Games","Distinct enduring Olympian status and long-biography Olympic detail"]}
+  ],
+  "uncertainties": [
+    {"topic":"Construction versus delivery","detail":"The first-party Sunreef announcement establishes that Alcaraz ordered a customised Ultima 88 in March 2026. It does not establish that the yacht was delivered or in his possession by the saved owner-record relationship date. The vessel is used only as an identity bridge and excluded from all public-facing prose and wealth classifications."},
+    {"topic":"Current asset mix and wealth relationship","detail":"Forbes documents tennis prize money and larger off-court income from endorsements, appearances and related business activity. It does not disclose a complete private balance sheet or a dominant controlled enterprise. Sports is the defensible current identifiable industry; relationship to principal wealth-producing assets remains Unknown because career income is not represented by the available founder/operator/investor taxonomy."},
+    {"topic":"Starting advantage","detail":"The self-made advantaged-start classification rests specifically on the father's tennis coaching and club administration, which supplied early sport-specific training and access. The family could not afford extended junior travel, financed by an outside local sponsor; no inherited fortune or family seed capital is claimed. The materiality of family industry access is a medium-confidence inference."},
+    {"topic":"Names and residence","detail":"ATP Spanish materials use the fuller name Carlos Alcaraz Garfia, but the established public and authoritative display name is Carlos Alcaraz. No surname correction is proposed. An old ATP guide gives El Palmar residence; it is insufficient to fill the current main-residence field in 2026. No collision-safe personal LinkedIn or personal website was found."},
+    {"topic":"Changing sporting statistics","detail":"The saved Biography's seven majors and 26 titles reflected a dated snapshot. Official ATP sources confirm the 2026 Australian Open career Grand Slam, but exact rankings and title counts can change quickly; both replacement biographies avoid such tallies. The Forbes 2026 income split informs classification only, not published prose figures."},
+    {"topic":"Tag minimum set","detail":"Tennis identifies the defining sporting discipline, while Olympian adds a distinct durable status verified by the Paris 2024 silver medal. The broader Professional athlete tag is omitted as overlapping Tennis; no sponsor brands, yacht model or one-off interests are assigned tags."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier. ATP demographics and Sunreef's direct construction-order announcement identify the exact owner at 99 confidence without implying delivery. Forbes 2026 separates prize income from larger off-court earnings. Sports is the creation and current identifiable industry; self-made advantaged start is a medium-confidence inference from his father's tennis-club platform; wealth relationship is Unknown because the taxonomy lacks career athlete income. Two active tags and three directly authenticated socials are proposed. The 55-word short and 125-word two-paragraph long biographies exclude vessel facts and changing figures."
+  }
+}

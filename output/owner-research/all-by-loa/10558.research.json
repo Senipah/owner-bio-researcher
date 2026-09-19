@@ -1,0 +1,139 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 10558,
+    "display_name": "Robert Lewandowski",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The source record's exact name, Polish nationality and 21 August 1988 birth date match the Chicago Fire and Forbes footballer profiles. Sunreef Yachts independently names footballer Robert Lewandowski as the customer ordering the exact 80 Sunreef Power NEXT model selected in the source record. The first-party model-and-person bridge separates him from same-name lawyers, engineers and hospitality professionals; an order does not establish delivery or legal title."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": ["Wikipedia"],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2":"Facebook","3":"Twitter","4":"Youtube","5":"LinkedIn","6":"Trip Advisor","7":"Vimeo","8":"Flickr","9":"Instagram","10":"Wikipedia","11":"Forbes","12":"Zillow","14":"Company Website","15":"Personal Website","16":"TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Robert Lewandowski is a Polish professional footballer and long-serving Poland captain.",
+    "defining_work": "A prolific club career across Poland, Germany, Spain and the United States produced substantial playing and endorsement income.",
+    "formative_context": "His father played football and taught physical education, while his mother played volleyball. After a knee injury and release by Legia Warsaw's reserves, he rebuilt his career at Znicz Pruszków.",
+    "decisive_moment": "His progression from Znicz to Lech Poznań and Borussia Dortmund opened the elite European career that built his earnings and public profile.",
+    "enduring_dimensions": ["Two Best FIFA Men's Player awards and a Champions League title with Bayern Munich", "Professional football and Poland national-team captaincy", "Football earnings extended into endorsements and a diversified portfolio of private investments"],
+    "character_detail": "He continued through the lower Polish leagues after a knee injury and rejection by Legia's reserve side, then became one of the sport's most durable goalscorers.",
+    "opening_options": [
+      {"mode":"formative_episode","angle":"Open with the rejection and injury that preceded a rebuild at Znicz Pruszków."},
+      {"mode":"defining_achievement","angle":"Open with the Polish striker whose club achievements and national captaincy created an enduring sporting career."}
+    ],
+    "excluded_transient_context": ["Private-vessel order, model, dimensions, value and delivery assumptions", "Current earnings estimates, investment valuations, follower counts and changing goal totals", "Current residence speculation after his move from Barcelona to Chicago", "Source names, citations and wealth-classification language in the biographies"],
+    "source_ids": ["S2", "S3", "S4", "S6", "S7", "S8"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": ["creative_industries"],
+    "notes": "The short profile presents the football income mechanism and enduring achievements. The two-paragraph long profile independently follows his Legia setback, Polish-club rebuild, European progression and later investment interests. Both exclude vessel material, changing statistics and net-worth figures."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/robert-lewandowski/",
+    "confidence": {"score":100,"band":"very_high","reason":"The dedicated Forbes athlete profile identifies a Polish striker, names Soccer as his source of wealth and records playing and endorsement income; these identity and career facts match Chicago Fire and UEFA. Its 2021 club and compensation details are treated as historical, not current."}
+  },
+  "wealth_creation_industry": {
+    "classification": "sports",
+    "label": "Sports",
+    "summary": "Professional football contracts and football-linked endorsement income created Lewandowski's principal documented wealth; diversified investments followed his playing success.",
+    "confidence": {"score":98,"band":"very_high","reason":"Forbes directly assigns Soccer as the source of wealth and separates on-pitch from off-pitch earnings; Chicago Fire and UEFA establish the sustained elite football career. A direct Forbes interview describes later business investment, not a separate proven principal creation mechanism."},
+    "source_ids": ["S2", "S3", "S4", "S7"]
+  },
+  "primary_industry": {
+    "classification": "sports",
+    "label": "Sports",
+    "summary": "His current identifiable commercial activity remains professional football with Chicago Fire and Poland, alongside football-enabled endorsements and a diversified investment portfolio whose relative private asset values are not disclosed.",
+    "confidence": {"score":91,"band":"high","reason":"Chicago Fire's June 2026 acquisition announcement, current roster and September national-team call-up establish continuing professional play. Forbes documents the football earnings platform. Reported property, hospitality and biotechnology interests are not transparently valued enough to displace Sports as his current primary industry."},
+    "source_ids": ["S2", "S3", "S4", "S5"]
+  },
+  "wealth_origin": {
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "Lewandowski earned his core wealth through his own football performance, supported early by a sports-connected family: his father played football, taught physical education and regularly took him to training. This is a formative sporting platform, not an inherited football club or transferred fortune.",
+    "confidence": {"score":82,"band":"medium","reason":"Forbes's first-person interview and FIFA's profile establish his father's football, physical-education and practical training support and both parents' athletic background. UEFA traces Lewandowski's own progression from the lower Polish leagues. Family sporting access is a positive, material early advantage, but no inherited capital or complete family balance sheet is documented."},
+    "source_ids": ["S2", "S3", "S7", "S8"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The central documented wealth mechanism is compensation and endorsements earned as a professional player. The relationship taxonomy has no professional-earner category, and the public record does not establish that a founded enterprise, operating company or managed portfolio is now the principal asset relationship.",
+    "confidence": {"score":87,"band":"high","reason":"Forbes identifies Soccer as the wealth source; Chicago Fire confirms continuing professional employment. Forbes documents several co-owned or invested businesses, but not their comparative contribution to his fortune or a sustained principal operating mandate. Founder, Operator and Investor would therefore each overstate the available evidence."},
+    "source_ids": ["S2", "S3", "S4"]
+  },
+  "biography": {
+    "plain_text": "Robert Lewandowski is a Polish footballer whose goalscoring career at Borussia Dortmund, Bayern Munich, Barcelona and Chicago Fire built his fortune through playing contracts and endorsements. A long-serving Poland captain, he twice won FIFA's men's player award and helped Bayern win the Champions League. He also invests in businesses beyond football.",
+    "html": "<p>Robert Lewandowski is a Polish footballer whose goalscoring career at Borussia Dortmund, Bayern Munich, Barcelona and Chicago Fire built his fortune through playing contracts and endorsements. A long-serving Poland captain, he twice won FIFA's men's player award and helped Bayern win the Champions League. He also invests in businesses beyond football.</p>\r\n",
+    "word_count": 51,
+    "confidence": {"score":97,"band":"very_high","reason":"Forbes identifies football pay and endorsements as the wealth source and describes investment interests; Chicago Fire confirms the club sequence, Poland captaincy, FIFA awards and Bayern Champions League win."},
+    "source_ids": ["S2", "S3", "S4"]
+  },
+  "long_biography": {
+    "plain_text": "Released by Legia Warsaw's reserves after a knee injury, Lewandowski rebuilt his career with Znicz Pruszków before reaching Poland's top flight at Lech Poznań. The Warsaw-born striker then moved to Borussia Dortmund and Bayern Munich, where his precision and movement made him one of European football's most prolific forwards. He later played for Barcelona before joining Chicago Fire and has captained Poland for much of his international career.\n\nProfessional contracts and endorsements underpin Lewandowski's wealth. He has also put earnings into ventures spanning property, hospitality and agricultural biotechnology, describing his approach as focused on the people behind an investment. Although these interests broaden his business profile, active football remains his defining occupation.",
+    "html": "<p>Released by Legia Warsaw's reserves after a knee injury, Lewandowski rebuilt his career with Znicz Pruszków before reaching Poland's top flight at Lech Poznań. The Warsaw-born striker then moved to Borussia Dortmund and Bayern Munich, where his precision and movement made him one of European football's most prolific forwards. He later played for Barcelona before joining Chicago Fire and has captained Poland for much of his international career.</p>\r\n<p>Professional contracts and endorsements underpin Lewandowski's wealth. He has also put earnings into ventures spanning property, hospitality and agricultural biotechnology, describing his approach as focused on the people behind an investment. Although these interests broaden his business profile, active football remains his defining occupation.</p>\r\n",
+    "word_count": 112,
+    "confidence": {"score":94,"band":"high","reason":"Forbes's interview and UEFA cover the Legia setback, Znicz and Lech progression and investment examples; Chicago Fire establishes the later club chronology and national leadership. The investment portfolio is presented as secondary and without valuation or title inflation."},
+    "source_ids": ["S3", "S4", "S7"]
+  },
+  "proposed_details": [
+    {"field":"known_for_title","value":"Professional footballer and Poland captain","action":"fill_missing","confidence":{"score":99,"band":"very_high","reason":"Chicago Fire's current first-party player profile and September 2026 national-team call-up identify Lewandowski as an active professional forward and long-serving Poland captain."},"source_ids":["S4","S5"]},
+    {"field":"place_of_birth","value":"Warsaw","action":"fill_missing","confidence":{"score":100,"band":"very_high","reason":"Chicago Fire's player acquisition release and FC Barcelona's official player profile both give Warsaw as Lewandowski's birthplace."},"source_ids":["S4","S9"]},
+    {"field":"biography","value":"<p>Robert Lewandowski is a Polish footballer whose goalscoring career at Borussia Dortmund, Bayern Munich, Barcelona and Chicago Fire built his fortune through playing contracts and endorsements. A long-serving Poland captain, he twice won FIFA's men's player award and helped Bayern win the Champions League. He also invests in businesses beyond football.</p>\r\n","action":"fill_missing","confidence":{"score":97,"band":"very_high","reason":"The blank source biography can be filled with the independently verified career, football wealth mechanism and secondary business interests, without any private-vessel facts."},"source_ids":["S2","S3","S4"]}
+  ],
+  "proposed_socials": [
+    {"type_id":"9","type":"Instagram","url":"https://www.instagram.com/_rl9/","verification":"An academic study identifies @_rl9 as Lewandowski's verified official Instagram profile; FBref lists the same handle on his exact-date football player record. Type ID 9 follows the source owner's social lookup.","confidence":{"score":97,"band":"very_high","reason":"The handle is independently tied to the exact professional footballer and his biographical record, not a same-name professional or fan page."},"source_ids":["S10","S11"]},
+    {"type_id":"11","type":"Forbes","url":"https://www.forbes.com/profile/robert-lewandowski/","verification":"The dedicated Forbes athlete profile names the Polish striker and Soccer wealth source, matching the first-party Chicago Fire profile. Type ID 11 follows the source owner lookup.","confidence":{"score":100,"band":"very_high","reason":"Exact personal profile and professional identity align across Forbes, Chicago Fire and UEFA."},"source_ids":["S2","S4"]}
+  ],
+  "proposed_tags": [
+    {"tag_id":"tag_0076","name":"Football","summary":"Lewandowski's sustained elite club career and Poland national-team leadership define both his public identity and the source of his income.","relationship_type":"professional_footballer_and_national_captain","temporal_scope":"current","taxonomy_value":"The owner has a sustained, defining professional, competitive, ownership, or senior-governance identity in Football.","confidence":{"score":100,"band":"very_high","reason":"Chicago Fire, UEFA and Forbes document a continuing elite professional football career; the exact Football tag is approved and active."},"source_ids":["S2","S4","S5","S7"]},
+    {"tag_id":"tag_0239","name":"Professional athlete","summary":"His long-running paid football performance is the causal source of his sporting earnings and associated endorsements.","relationship_type":"active_professional_athlete","temporal_scope":"current","taxonomy_value":"The owner has a sustained, defining professional, competitive, ownership, or senior-governance identity in Professional athlete.","confidence":{"score":99,"band":"very_high","reason":"The Chicago Fire roster and Forbes athlete profile establish sustained professional athletic work; the exact Professional athlete tag is approved and active."},"source_ids":["S2","S4","S5"]}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id":"S1","url":"https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=10558","title":"Robert Lewandowski owner record, person ID 10558","publisher":"Superyacht Network; immutable export only","tier":1,"accessed_at":"2026-09-19","supports":["Person ID, exact saved name, Polish nationality, Spanish residence and 21 August 1988 birth date","Blank biography and existing Wikipedia social","Saved 80 Power Next / 01 selection used solely for identity research; no live site accessed"]},
+    {"id":"S2","url":"https://www.forbes.com/profile/robert-lewandowski/","title":"Robert Lewandowski","publisher":"Forbes","tier":2,"accessed_at":"2026-09-19","supports":["Dedicated exact-person Forbes athlete profile","Soccer as source of wealth","Historical player compensation, endorsement sponsors and Polish citizenship","2021 club details are historical rather than current"]},
+    {"id":"S3","url":"https://www.forbes.com/sites/robertkidd/2024/11/19/fc-barcelonas-robert-lewandowski-every-goal-gives-me-more-power/","title":"FC Barcelona's Robert Lewandowski: Every Goal Gives Me More Power","publisher":"Forbes","tier":2,"accessed_at":"2026-09-19","supports":["First-person childhood, sports-family and Legia injury/release account","Rebuilding through Znicz Pruszków","Diversified property, hospitality, creative and agricultural biotechnology interests","Co-owner of Bio-Lider and investment decision approach"]},
+    {"id":"S4","url":"https://www.chicagofirefc.com/news/a-defining-moment-in-chicago-sports-chicago-fire-fc-acquires-global-football-icon-robert-lewandowski","title":"Chicago Fire FC acquires Robert Lewandowski","publisher":"Chicago Fire FC","tier":1,"accessed_at":"2026-09-19","supports":["June 2026 transfer from Barcelona to Chicago Fire and Designated Player status","Birth on 21 August 1988 in Warsaw and Polish citizenship","Dortmund, Bayern and Barcelona club chronology","Poland captaincy, FIFA player awards and Champions League achievements"]},
+    {"id":"S5","url":"https://www.chicagofirefc.com/news/latest/","title":"Chicago Fire FC latest news","publisher":"Chicago Fire FC","tier":1,"accessed_at":"2026-09-19","supports":["18 September 2026 Poland national-team call-up identifies Lewandowski as a current Chicago Fire forward","Continuing professional football activity at the research date"]},
+    {"id":"S6","url":"https://sunreef-yachts.com/en/","title":"Sunreef Yachts ambassadors","publisher":"Sunreef Yachts","tier":1,"accessed_at":"2026-09-19","supports":["First-party exact footballer and 80 Sunreef Power NEXT order bridge","January 2026 brand-ambassador timing","Order only, not delivery, legal title, final vessel specification or source of wealth"]},
+    {"id":"S7","url":"https://www.uefa.com/uefachampionsleague/news/0208-0e84764b8b67-ea2b7f6ac121-1000--the-making-of-dortmund-ace-lewandowski/","title":"The making of Dortmund ace Lewandowski","publisher":"UEFA","tier":1,"accessed_at":"2026-09-19","supports":["Father's judo and football and mother's volleyball backgrounds","Polish lower-league, Lech Poznań and Dortmund development","Legia reserve-team period and distinctive career progression"]},
+    {"id":"S8","url":"https://inside.fifa.com/tournaments/mens/clubworldcup/qatar2020/news/gignac-v-lewandowski-a-shootout-between-legends","title":"Gignac v Lewandowski: A shootout between legends","publisher":"FIFA","tier":1,"accessed_at":"2026-09-19","supports":["Father played Polish second-flight football and was a champion judoka","Mother was a volleyball player","Family sport background used only to assess starting position"]},
+    {"id":"S9","url":"https://www.fcbarcelona.com/en/players/5109","title":"Robert Lewandowski player profile","publisher":"FC Barcelona","tier":1,"accessed_at":"2026-09-19","supports":["21 August 1988 birth date and Warsaw birthplace","Historical Barcelona football career; current employer superseded by Chicago Fire's 2026 announcement"]},
+    {"id":"S10","url":"https://kmt.uksw.edu.pl/media/pdf/kmt48.pdf","title":"Robert Lewandowski's official social-media profiles","publisher":"Kultura – Media – Teologia / Cardinal Stefan Wyszyński University","tier":2,"accessed_at":"2026-09-19","supports":["Exact footballer @_rl9 Instagram handle identified as verified official account","Distinction from impersonator accounts"]},
+    {"id":"S11","url":"https://fbref.com/en/players/8d78e732/","title":"Robert Lewandowski football profile","publisher":"FBref","tier":2,"accessed_at":"2026-09-19","supports":["Chicago Fire current club corroboration","Exact August 1988 Warsaw birth and Poland player identity","Instagram @_rl9 handle corroboration"]}
+  ],
+  "uncertainties": [
+    {"topic":"Identity and vessel status","detail":"Sunreef Yachts directly connects the exact named footballer to an order for the 80 Sunreef Power NEXT matching the source selection. It does not establish delivery, possession, legal title or a final length. The vessel is identity context only and appears nowhere in biographies or wealth classifications."},
+    {"topic":"Current residence","detail":"The immutable record lists Spain, but Chicago Fire confirms a June 2026 transfer to the United States. Employment location is not proof of a new primary residence; the dossier preserves the saved residence and proposes no correction."},
+    {"topic":"Wealth origin starting platform","detail":"Self-made — advantaged start reflects his own football-earned fortune combined with documented sport-specific parental exposure and his father's football and physical-education support. The inference concerns early access and guidance, not inherited capital or a transferred club; exact family finances are unknown."},
+    {"topic":"Wealth relationship","detail":"The principal evidenced mechanism is an athlete's playing and endorsement income. The closed relationship taxonomy has no professional-earner value, while Forbes's reported investments lack comparative valuations and proof that he primarily founded or operated a business or managed investment portfolio. Unknown avoids forcing Founder, Operator or Investor."},
+    {"topic":"Forbes and social verification","detail":"A dedicated Forbes athlete profile is verified, though its Bayern-era compensation description is stale. Instagram @_rl9 is supported by a study explicitly identifying the verified account and by FBref. LinkedIn search results largely belong to unrelated same-name professionals; no personal LinkedIn or personal website is proposed. The tempting robertlewandowski.com URL belongs to a Poznań industrial professional, not the striker."},
+    {"topic":"Tag minimum set","detail":"Only approved active Football and Professional athlete are proposed. Professional footballer, Athlete endorsements and Athlete-income investing are inactive and excluded. Private yacht, sponsor and individual investment interests are not tags."},
+    {"topic":"Scope and durability","detail":"The 51-word short biography and 112-word two-paragraph long biography exclude private-vessel facts, annual pay and changing goal or follower counts. Chicago Fire is stated as a career step, not an indefinite residence claim."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier. First-party Sunreef order and exact football demographics establish identity at 100 confidence. Forbes identifies Soccer as the wealth source; Chicago Fire establishes current play. Classifications: Sports, Sports, Self-made — advantaged start, Unknown relationship. Only two active sporting-identity tags and verified Forbes/Instagram socials are proposed. No dossier was compiled, approved or applied."
+  }
+}

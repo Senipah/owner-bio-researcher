@@ -1,0 +1,89 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 9145,
+    "display_name": "Maarten Franken",
+    "identity_confidence": {
+      "score": 45,
+      "band": "insufficient",
+      "reason": "The saved record describes a Belgian resident and links Apollo 99 and a LinkedIn URL. Posts under that exact LinkedIn slug identify the Dutch-based GoodHabitz founder, who has a documented sailing history, but no public source examined connects him personally to Apollo 99. The yacht's public owner interview is anonymous and a Balearic register names a Malta vessel company, not its natural-person controller. Distinct same-name Dutch professionals add collision risk, so the candidate cannot clear the identity-resolution floor."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": ["LinkedIn"],
+    "missing_priority_social_types": ["Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "The saved Belgian owner record names Maarten Franken, Apollo 99 and a LinkedIn account. That account belongs to a GoodHabitz founder with a documented sailing history, but the yacht's public owner interview does not name him, and a maritime register names only a vessel company. Other professionals share the name. Neither the saved social link nor sailing background establishes the yacht-person-business connection, especially alongside the unresolved residence and nationality discrepancy. His identity and wealth cannot be safely published as the GoodHabitz founder.",
+    "confidence": {"score": 94, "band": "high", "reason": "The note distinguishes the authoritative saved fields, authenticated GoodHabitz social candidate, independent but anonymous yacht sources and missing person-to-vessel bridge without transferring the candidate's business history."},
+    "source_ids": ["S0", "S2", "S3", "S4", "S5", "S6", "S7", "S8"]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 95, "band": "very_high", "reason": "Forbes-first exact-name, profile-path, GoodHabitz and Apollo 99 searches found no dedicated Forbes person profile that could be linked to source owner 9145."}
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No wealth-creating industry can be securely assigned to the saved Maarten Franken owner record.",
+    "confidence": {"score": 18, "band": "insufficient", "reason": "GoodHabitz is a material e-learning business, but its founder has not been linked to the saved Apollo 99 owner by an independent person-vessel or equivalent compound bridge. A saved name-matched LinkedIn URL is not sufficient to transfer the company's history."},
+    "source_ids": ["S0", "S2", "S3", "S4", "S6"]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The saved owner's principal present business and asset mix remain unidentified.",
+    "confidence": {"score": 15, "band": "insufficient", "reason": "The named GoodHabitz chairman is an unbridged candidate, and neither the Apollo 99 press material nor the Malta company listing discloses a natural-person controller or other current business. No secure creation-sector fallback is available."},
+    "source_ids": ["S0", "S3", "S5", "S6", "S7"]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No founder-built, earned, acquired, inherited or transferred principal asset is attributable to this unresolved owner.",
+    "confidence": {"score": 13, "band": "insufficient", "reason": "The GoodHabitz founder's career and majority-investment history cannot be imported without resolving the yacht-owner identity. The saved Belgian record itself provides no business formation, family-resource, financing or inheritance evidence."},
+    "source_ids": ["S0", "S2", "S3", "S6"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No relation to a verified principal wealth-producing enterprise or holding is established for the saved person.",
+    "confidence": {"score": 13, "band": "insufficient", "reason": "The exact-name LinkedIn candidate is a GoodHabitz founder, but the source owner may be another person. Anonymous yacht ownership and a vessel-named company do not establish founder, operator, investor or family-shareholder status for person ID 9145."},
+    "source_ids": ["S0", "S2", "S3", "S5", "S6"]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=9145", "title": "Maarten Franken saved owner record, person ID 9145", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The saved display name Maarten Franken, Belgian nationality, Belgium residence, male gender and Alive status", "Existing LinkedIn slug maarten-franken-1b82991, no biography or employer, and blank birth information", "Saved Apollo 99 relationship, 24.4 metres and 155 GT; selection context only, not an independent owner confirmation"]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Maarten%20Franken", "title": "Forbes exact-name and profile search", "publisher": "Forbes search", "tier": 3, "accessed_at": "2026-09-19", "supports": ["No dedicated Forbes profile securely matched to the saved owner after exact-name, GoodHabitz and vessel-qualified searches"]},
+    {"id": "S2", "url": "https://www.linkedin.com/posts/maarten-franken-1b82991_movingforward-activity-7200752646947749888-HPVo", "title": "Maarten Franken post on learning and a family sailing trip", "publisher": "LinkedIn; public post under the exact saved account slug", "tier": 3, "accessed_at": "2026-09-19", "supports": ["The saved LinkedIn account belongs to a Maarten Franken who explicitly identifies with GoodHabitz and family sailing", "The post does not mention Apollo 99 or resolve the saved Belgian yacht-owner record"]},
+    {"id": "S3", "url": "https://goodhabitz.com/en-gb/resources/news/executive-transition-en/", "title": "Annabelle Vultee succeeds Maarten Franken as CEO", "publisher": "GoodHabitz", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The candidate Maarten Franken co-founded GoodHabitz and moved from CEO to supervisory-board chairman in 2024", "Candidate career evidence only; the company's announcement does not identify the saved owner or Apollo 99"]},
+    {"id": "S4", "url": "https://www.yachtingworld.com/catamaran-sailing/why-multihulls-are-becoming-ever-more-popular-for-cruising-68341/2", "title": "Why are multihulls so popular for cruising?", "publisher": "Yachting World", "tier": 2, "accessed_at": "2026-09-19", "supports": ["A Maarten Franken of the Netherlands discussed sailing the family catamaran 99 Bottles", "This older vessel and sailing history make the GoodHabitz founder a plausible candidate but do not identify Apollo 99's natural-person owner"]},
+    {"id": "S5", "url": "https://www.superyachttimes.com/yacht-news/onboard-sunreef-80-eco-yacht-apollo-99", "title": "Apollo 99: A closer look with her owner and designers", "publisher": "SuperYacht Times", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Public owner interview concerning a 24.4-metre Sunreef catamaran named Apollo 99", "The interviewed owner is not named in the public article, so it cannot link Maarten Franken to the vessel"]},
+    {"id": "S6", "url": "https://www.caib.es/sites/transportmaritim/f/545826", "title": "Balearic maritime-transport register entry for Apollo 99", "publisher": "Govern de les Illes Balears", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The public register names Apollo 99 Yacht Management Limited next to Apollo 99 and IMO 1022419", "No Maarten Franken or beneficial natural-person owner is identified behind the Malta company"]},
+    {"id": "S7", "url": "https://sunreef-yachts.com/en/launched/sunreef-80-eco-apollo-99/", "title": "Sunreef 80 Eco Apollo 99", "publisher": "Sunreef Yachts", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Builder confirms Apollo 99 is a 2023 24.4-metre sailing catamaran, matching the saved vessel dimensions", "The first-party build page gives no natural-person owner"]},
+    {"id": "S8", "url": "https://nl.linkedin.com/in/maartenfranken/nl", "title": "Maarten Franken at IMPROVEN", "publisher": "LinkedIn", "tier": 3, "accessed_at": "2026-09-19", "supports": ["A different exact-name Dutch professional in finance and consulting demonstrates namesake collision risk", "This profile does not match the saved LinkedIn slug and has no Apollo 99 association"]},
+    {"id": "S9", "url": "https://www.berkenhoutfinance.nl/ons-team/maarten-franken", "title": "Maarten Franken, financial planner", "publisher": "Berkenhout Finance", "tier": 1, "accessed_at": "2026-09-19", "supports": ["A separate Maarten Franken presents as the founder of a Dutch financial-planning practice", "The company page does not connect that namesake to Apollo 99 or the saved account"]}
+  ],
+  "uncertainties": [
+    {"topic": "Candidate LinkedIn account and nationality", "detail": "The saved LinkedIn slug is demonstrably used by the GoodHabitz founder. However, that founder's public biography and family-sailing coverage centre on the Netherlands, whereas the source owner is explicitly Belgian and Belgium-resident. A Belgian GoodHabitz subsidiary does not establish his nationality or residence, and the discrepancy cannot be corrected or explained from the material reviewed. The existing social is preserved in the immutable snapshot but not authenticated as belonging to this owner."},
+    {"topic": "Apollo 99 identity bridge", "detail": "Builder and yacht press material confirm the selected 2023 Sunreef catamaran; an owner interview does not name the owner. A Balearic register lists Apollo 99 Yacht Management Limited as the relevant vessel company but reveals no beneficial controller. No public source reviewed combines Maarten Franken with this exact vessel or its company."},
+    {"topic": "Sailing pattern is insufficient", "detail": "The GoodHabitz-linked Maarten Franken has publicly discussed family cruising and a previous catamaran called 99 Bottles. This raises plausibility but is not a distinctive transfer trail to Apollo 99: the earlier vessel is separate, the newer boat's owner is anonymous in press, and a shared '99' motif cannot identify a person."},
+    {"topic": "Namesake and publication decision", "detail": "Other exact-name Dutch professionals work in consulting and financial planning. No identity threshold is met for any candidate; no GoodHabitz founder career, Dutch birth details, company website, social proposal, approved tag or biography is transferred to the saved Belgian owner. All four wealth fields stay Unknown until a direct vessel/person or equivalent company-controller bridge is found."}
+  ],
+  "review": {"status": "complete", "notes": "Terminal insufficient-evidence dossier after Forbes-first, direct Apollo 99 source, Malta company, saved LinkedIn, candidate-founder and same-name searches. The GoodHabitz founder is a plausible sailing candidate, not a collision-safe identification of the Belgian Apollo 99 owner. Identity remains below 75; four wealth fields Unknown, no biographies, proposed details, socials, tags or taxonomy candidates. Only this dossier was created."}
+}

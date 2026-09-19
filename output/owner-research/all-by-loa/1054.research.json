@@ -1,0 +1,132 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1054,
+    "display_name": "Helmut Horten",
+    "identity_confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The saved 8 January 1909–30 November 1987 dates and Swiss residence match the scholarly German national biography exactly. The saved historical Carinthia VI association is independently corroborated by the Heidi Horten Collection's catalogue. The source record's still-current Venezuela and posthumous Carinthia VII relationships are chronology errors, not grounds to reidentify this person."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "nationality", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "nationality", "secondary_nationality", "known_for_title", "place_of_birth", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "German department-store entrepreneur, born in Bonn in 1909 and deceased in Switzerland in 1987.",
+    "defining_work": "Built and controlled a major West German department-store group, then sold all his shares and left retail management.",
+    "formative_context": "Trained in a Düsseldorf department store and entered ownership through bank-brokered acquisitions of Jewish-owned stores during Nazi persecution.",
+    "decisive_moment": "The 1936 Duisburg Alsberg transaction created his first store-company platform; substantial postwar rebuilding and chain purchases enlarged it.",
+    "enduring_dimensions": ["Coercive conditions behind early store acquisitions", "Postwar rebuilding and department-store consolidation", "Sale of the retail group, Swiss retirement and medical-research foundation"],
+    "character_detail": "His postwar stores adopted a broad-assortment model influenced by American retailing.",
+    "opening_options": [
+      {"mode": "present_identity", "angle": "Introduce the historical department-store magnate and the origins of his fortune."},
+      {"mode": "formative_episode", "angle": "Open with his retail apprenticeship and the first bank-brokered store takeover."}
+    ],
+    "excluded_transient_context": ["The saved Venezuela vessel still marked current after his death", "Carinthia VII, commissioned by Heidi after Helmut's death", "Heidi's later art holdings, auctions and foundation governance as though they were Helmut's continuing assets", "Volatile net-worth estimates and detailed sale proceeds", "His religious or political affiliations and unrelated allegations"],
+    "source_ids": ["S1", "S2", "S3", "S4", "S5", "S6"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": ["acquirer_consolidator"],
+    "notes": "The short gives the historical identity, the Nazi-era ownership advantage, the sale and the bequest to Heidi. The longer profile instead follows apprenticeship, a specifically bank-brokered acquisition, postwar retail consolidation and a medical-research foundation; it omits the short's widow-and-estate detail. Both acknowledge the coercive starting context without claiming the entire later fortune was earned before 1945."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 94, "band": "high", "reason": "Forbes-first exact-name and dedicated-profile searches found a profile for his widow Heidi Horten and articles about Helmut, but no dedicated Helmut Horten person profile. Heidi's profile is not assigned to him."},
+    "source_ids": ["S6"]
+  },
+  "wealth_creation_industry": {
+    "classification": "fashion_retail",
+    "label": "Fashion & Retail",
+    "summary": "Horten's fortune came from personal control, expansion and eventual sale of a large German department-store group. Early acquisitions from persecuted Jewish proprietors provided an advantageous operating base; the business was subsequently rebuilt and enlarged through postwar chain purchases.",
+    "confidence": {"score": 96, "band": "very_high", "reason": "The scholarly national biography details his ownership, postwar acquisitions and share sale; the commissioned historical investigation and independent regional history distinguish the Nazi-era platform from the much larger postwar operation. Forbes identifies department stores as the source of the wealth subsequently inherited by Heidi."},
+    "source_ids": ["S1", "S2", "S3", "S4", "S6"]
+  },
+  "primary_industry": {
+    "classification": "fashion_retail",
+    "label": "Fashion & Retail",
+    "summary": "Retail is an origin-sector fallback for Horten's last economically meaningful position. He sold his entire Horten AG holding years before his death and lived in Switzerland with the proceeds, but no reliable public inventory ranks his later private investments or identifies a different dominant sector.",
+    "confidence": {"score": 76, "band": "medium", "reason": "The national biography documents complete withdrawal from Horten AG by 1971 and later estate transfer; the regional history describes private retirement. Finance & Investments cannot be assigned merely from wealth held after a sale without a documented principal investment activity or holdings composition, so the known creation sector is used explicitly as a fallback."},
+    "source_ids": ["S1", "S4", "S6"]
+  },
+  "wealth_origin": {
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "Horten built and later sold his own retail group rather than inheriting its core business. His entry into ownership was materially advantaged by banker-arranged acquisition of stores whose Jewish proprietors were subjected to Nazi persecution; postwar rebuilding and further purchases subsequently expanded the enterprise. The label describes asset construction, not moral independence from coercive state conditions.",
+    "confidence": {"score": 84, "band": "medium", "reason": "Deutsche Biographie identifies his early partnership and minority stake in the Duisburg takeover, his dominant Wattenscheid interest, and later controlling retail group; the peer-reviewed historical work and museum statement document the regime-created distress he consciously exploited. No inherited core retail asset is reported, but independent-start framing would conceal a positively evidenced structural advantage. The historians also caution that the whole postwar fortune cannot simply be equated with assets retained from 1936–45."},
+    "source_ids": ["S1", "S2", "S3", "S4"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Horten founded and ran the department-store group that created his wealth, but sold his entire shareholding before death. His later principal assets and active or passive management role are not sufficiently described to assign a current founder, investor or passive-owner relationship to the post-sale fortune.",
+    "confidence": {"score": 62, "band": "low", "reason": "The retail founding and sale are certain, but the relationship taxonomy asks for the principal last asset relationship. A historical founder role does not establish that relationship after complete exit; neither an investment mandate, family-office structure nor a documented delegated passive portfolio reaches threshold. Estate and foundation arrangements do not become his personal current role after death."},
+    "source_ids": ["S1", "S4", "S6"]
+  },
+  "biography": {
+    "plain_text": "Helmut Horten (1909–1987) built one of West Germany's largest department-store groups. Its beginnings included stores acquired from Jewish owners under Nazi persecution, an advantage that shaped his early expansion. He later rebuilt and enlarged the chain before selling his shares and moving to Switzerland. His wife Heidi inherited the fortune derived from the business.",
+    "html": "<p>Helmut Horten (1909–1987) built one of West Germany's largest department-store groups. Its beginnings included stores acquired from Jewish owners under Nazi persecution, an advantage that shaped his early expansion. He later rebuilt and enlarged the chain before selling his shares and moving to Switzerland. His wife Heidi inherited the fortune derived from the business.</p>\r\n",
+    "word_count": 55,
+    "confidence": {"score": 90, "band": "high", "reason": "The national scholarly biography and historical-responsibility research directly support the business chronology and coercive founding context; Forbes and the biography document Heidi's inheritance. The wording does not attribute later family assets or yachts to Helmut."},
+    "source_ids": ["S1", "S2", "S3", "S4", "S6"]
+  },
+  "long_biography": {
+    "plain_text": "Helmut Horten learned retailing as an apprentice at a Düsseldorf department store. In 1936 a Duisburg banker helped him establish a company that took over the Alsberg store from Jewish owners under Nazi persecution. Other such acquisitions followed. These transactions gave him an early platform, although much of the chain's later scale came from postwar rebuilding and further purchases.\n\nHorten rebuilt his Duisburg operation and acquired the Merkur and DeFaKa chains, bringing dozens of stores under his control. He broadened their merchandise and grouped the businesses under his own name. After selling his company shares, he settled in Switzerland and established a foundation for medical research. He died there in 1987.",
+    "html": "<p>Helmut Horten learned retailing as an apprentice at a Düsseldorf department store. In 1936 a Duisburg banker helped him establish a company that took over the Alsberg store from Jewish owners under Nazi persecution. Other such acquisitions followed. These transactions gave him an early platform, although much of the chain's later scale came from postwar rebuilding and further purchases.</p>\r\n<p>Horten rebuilt his Duisburg operation and acquired the Merkur and DeFaKa chains, bringing dozens of stores under his control. He broadened their merchandise and grouped the businesses under his own name. After selling his company shares, he settled in Switzerland and established a foundation for medical research. He died there in 1987.</p>\r\n",
+    "word_count": 111,
+    "confidence": {"score": 89, "band": "high", "reason": "Deutsche Biographie supplies the apprenticeship, banker-facilitated Alsberg takeover, postwar acquisitions, company sale, relocation, foundation and death; the independent historical investigation and museum acknowledgment corroborate the persecution context. No current estate or family possession is implied."},
+    "source_ids": ["S1", "S2", "S3", "S4"]
+  },
+  "proposed_details": [
+    {"field": "middle_names", "value": "Eugen Franz", "action": "fill_missing", "confidence": {"score": 96, "band": "very_high", "reason": "Deutsche Biographie's authority-backed full-name heading is Helmut Eugen Franz Horten and matches the saved birth and death dates."}, "source_ids": ["S1"]},
+    {"field": "nationality", "value": "German", "action": "fill_missing", "confidence": {"score": 94, "band": "high", "reason": "German scholarly and regional biographies identify him as a German department-store entrepreneur; Swiss residence is separately documented and does not become Swiss nationality."}, "source_ids": ["S1", "S4"]},
+    {"field": "known_for_title", "value": "Founder of Horten department stores", "action": "fill_missing", "confidence": {"score": 93, "band": "high", "reason": "The national biography documents his creation and ownership of the eponymous department-store group and its later share sale."}, "source_ids": ["S1", "S4"]},
+    {"field": "place_of_birth", "value": "Bonn", "action": "fill_missing", "confidence": {"score": 96, "band": "very_high", "reason": "The national biography gives Bonn with the exact saved birth date."}, "source_ids": ["S1"]},
+    {"field": "biography", "value": "<p>Helmut Horten (1909–1987) built one of West Germany's largest department-store groups. Its beginnings included stores acquired from Jewish owners under Nazi persecution, an advantage that shaped his early expansion. He later rebuilt and enlarged the chain before selling his shares and moving to Switzerland. His wife Heidi inherited the fortune derived from the business.</p>\r\n", "action": "fill_missing", "confidence": {"score": 90, "band": "high", "reason": "The saved biography is blank, and academic and institutional sources support this concise historical account without importing later assets into his lifetime."}, "source_ids": ["S1", "S2", "S3", "S4", "S6"]}
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [
+    {"tag_id": "tag_0793", "name": "Department stores", "summary": "Horten built, controlled and sold a major German department-store group; the retail model was the defining source of his personal wealth.", "relationship_type": "historical_founder_and_operator", "temporal_scope": "historical", "taxonomy_value": "Department stores groups owners whose material wealth or defining sustained operation came from this retail subindustry, not later estate beneficiaries or incidental investments.", "confidence": {"score": 96, "band": "very_high", "reason": "The scholarly biography, independent regional history and Forbes coverage establish sustained control and wealth creation in department stores, meeting the exact active tag contract."}, "source_ids": ["S1", "S4", "S6"]}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1054", "title": "Helmut Horten saved owner record, person ID 1054", "publisher": "Superyacht Network; authoritative saved owner export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Saved birth and death dates, Swiss residence, blank nationality and biography, and historical Carinthia VI association.", "The source incorrectly marks Venezuela as a current vessel decades after his death and assigns a Carinthia VII relationship extending long after 1987; neither is accepted as personal present ownership."]},
+    {"id": "S1", "url": "https://www.deutsche-biographie.de/dbo071389.html", "title": "Horten, Helmut Eugen Franz", "publisher": "Deutsche Biographie / NDB-online, Maximilian Kutzner", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Exact full name, Bonn birth, 8 January 1909–30 November 1987 life dates and death in Croglio, Switzerland.", "Department-store apprenticeship, bank-brokered 1936 Alsberg acquisition from Jewish owners under persecution, further prewar holdings, postwar rebuilding and Merkur/DeFaKa purchases, complete share exit by 1971, Swiss move, foundation and bequest to Heidi.", "The scholarly account distinguishes Nazi-era asset gains from the substantially expanded postwar fortune."]},
+    {"id": "S2", "url": "https://hortencollection.com/en/about/historical-responsibility", "title": "Historical Responsibility", "publisher": "Heidi Horten Collection", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The museum acknowledges historian-led research finding that Horten consciously exploited the distress of Jewish department-store owners under Nazi rule and gained financially from these conditions.", "It states that those businesses formed a foundation for later postwar growth and distinguishes Heidi's subsequently assembled art collection from Helmut's lifetime assets."]},
+    {"id": "S3", "url": "https://www.helmut-horten-stiftung.org/fileadmin/user_upload/Dokumente/Helmut-Horten-Stiftung_Gutachten_Horten.pdf", "title": "Gutachten über den Vermögens- und Geschäftsaufbau von Helmut Horten im Kontext der Arisierung", "publisher": "Peter Hoeres and Maximilian Kutzner; Helmut Horten Foundation", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Archive-based historical investigation confirms the persecution-linked acquisitions and economic advantages in 1936–45.", "The report also explains war losses, restitution and later rebuilding; it cautions against treating the entirety of the postwar fortune as unchanged pre-1945 assets."]},
+    {"id": "S4", "url": "https://www.rheinische-geschichte.lvr.de/Persoenlichkeiten/helmut-horten/DE-2086/lido/57c8342d34f841.10221268", "title": "Helmut Horten", "publisher": "Portal Rheinische Geschichte, Landschaftsverband Rheinland", "tier": 2, "accessed_at": "2026-09-19", "supports": ["German regional historical account describes full-assortment retailing, expansion, sale of all company shares, relocation to Croglio, foundation creation and death in 1987.", "It identifies the estate's succession to his wife rather than treating his former company or widow's later assets as his current holdings."]},
+    {"id": "S5", "url": "https://hortencollection.com/media/1278/download/Katalog_Rendez-vous_final_DE-EN.pdf?v=1", "title": "Life on the Côte d’Azur, bilingual exhibition catalogue", "publisher": "Heidi Horten Collection", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The catalogue states that Helmut and Heidi used Carinthia VI until his death in 1987.", "Heidi alone commissioned Carinthia VII around 2000; therefore that later vessel cannot have been Helmut's 1973–2018 personal relationship."]},
+    {"id": "S6", "url": "https://www.forbes.com/profile/heidi-horten/", "title": "Heidi Horten", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Forbes has a profile of Heidi Horten, not Helmut; it identifies department stores as the source of the fortune inherited from him after his 1987 death.", "The profile's later art and net-worth information pertains to Heidi and is not transferred to Helmut."]}
+  ],
+  "uncertainties": [
+    "This is the historical German retailer, securely matched by exact life dates and Carinthia VI evidence. The saved Venezuela vessel is still marked current despite his 1987 death. The saved Carinthia VII relationship is impossible: Heidi commissioned that later vessel around 2000. Neither error is corrected in the immutable owner or vessel input under this research-only assignment.",
+    "Deutsche Biographie, the archive-based historian's report and the Heidi Horten Collection agree that early store acquisitions exploited the persecution of Jewish owners. The detailed investigation also documents wartime losses and major postwar rebuilding, so the dossier neither erases the coercive starting advantage nor assigns the entire later wealth to unchanged prewar assets.",
+    "The core retail shares were fully sold years before his death. His last private holdings are not sufficiently itemised to classify a new dominant primary sector or an investment role; Retail is expressly an origin-sector fallback and wealth relationship remains Unknown after the sale. Founder describes the historical business, not a retained current stake.",
+    "Forbes-first checks identified only Heidi's dedicated person profile. Searches found no authentic personal LinkedIn, Instagram, website, Facebook, X, YouTube or TikTok account for a man who died in 1987; no social profile is proposed. The foundation and widow's museum are separate posthumous organisations, not Helmut's personal accounts.",
+    "The German nationality, full middle names and Bonn birthplace are proposed from the scholarly national biography. Existing Switzerland residence and birth/death dates are preserved; no nationality is inferred merely from that residence."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved historical-person dossier. Retail creation and sole Department stores tag are well established. Self-made — advantaged start explicitly records the coercive, regime-enabled early acquisitions without obscuring substantial postwar expansion. The last portfolio is not transparent, so Retail primary is an origin-sector fallback and the present/last asset relationship is Unknown. Saved posthumous vessel associations are documented as input chronology conflicts; no shared data is changed."
+  }
+}

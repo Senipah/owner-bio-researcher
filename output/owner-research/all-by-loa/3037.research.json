@@ -1,0 +1,135 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 3037,
+    "display_name": "Mr Jeffrey Altman",
+    "identity_confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Florida's official register names Jeffrey Altman as both manager and member of Owl's Nest (2018 Merritt) Holdings LLC. The selected Owl's Nest is the 2018, 26.21-metre Merritt hull. A related Florida Owl's Nest entity gives the same 640 Fifth Avenue address as Owl Creek's official site and Altman's SEC filings, linking the vessel-company and investment-manager identities without relying on the name alone."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Jeffrey Alan Altman is an American investment manager and founder of New York-based Owl Creek Asset Management.",
+    "defining_work": "He built a hedge-fund manager specialising in event-driven value and distressed investing, and remains its chief portfolio manager.",
+    "formative_context": "After graduating from Tulane, he spent 13 years at Franklin Mutual and Heine Securities as an analyst, trader and portfolio manager, including in distressed securities.",
+    "decisive_moment": "He founded Owl Creek and launched its flagship funds, applying distressed and special-situations experience to his own investment platform.",
+    "enduring_dimensions": ["Founder-led hedge-fund management and fee-generating investment performance", "Corporate restructuring, credit and equity expertise that informed an Anterix board role", "A foundation gift established Tulane's business and international-studies dual-degree programme"],
+    "character_detail": null,
+    "opening_options": [{"mode": "present_identity", "angle": "Lead with the hedge-fund founder and the New York investment platform he still directs."}, {"mode": "institution_or_asset", "angle": "Open with Owl Creek's focus on corporate dislocation before explaining Altman's investment background."}, {"mode": "decisive_event", "angle": "Begin at the creation of Owl Creek following his Franklin Mutual investment career."}],
+    "excluded_transient_context": ["Owl's Nest and its holding-company chain, used only to resolve identity", "Fund assets, annual returns, fees, and current shareholding percentages", "Forbes interview, source attribution and classification reasoning", "Unverified birth date and family starting position"],
+    "source_ids": ["S3", "S4", "S5", "S6", "S7", "S8"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "institution_then_person",
+    "calibration_archetypes": ["founder_operator", "investor_philanthropist"],
+    "reviewed_phrase_exceptions": [],
+    "notes": "The pair shares Owl Creek and distressed investing. The short biography supplies American identity, founder-built fee mechanism and continuing chief portfolio-manager role. The long profile omits the short's wealth description and instead explains his investment method, earlier responsibilities, Anterix governance and Tulane programme; it would lose substantive material if collapsed into the short."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 91, "band": "high", "reason": "Forbes-first exact-name and site-profile searches found a 2018 interview with Owl Creek's Jeffrey Altman and a conference listing, but no dedicated Forbes person profile. The Forbes Coaches Council profile belongs to a same-name career coach, not this investment manager."}
+  },
+  "wealth_creation_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Altman's principal wealth-producing enterprise is the hedge-fund and investment-management platform he founded, not the underlying portfolio companies in which its funds invest.",
+    "confidence": {"score": 92, "band": "high", "reason": "Owl Creek and Anterix identify him as founder and chief portfolio manager; 2026 SEC filings establish his managing-member and fund-control position. Contemporary Bloomberg reporting described substantial fund performance fees, while a philanthropy profile expressly identifies Owl Creek as his source of wealth. This supports a material investment-management mechanism without treating fund assets as his personal fortune."},
+    "source_ids": ["S3", "S4", "S5", "S10", "S11"]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "He continues to direct Owl Creek's investment strategy as founding partner and chief portfolio manager; a corporate directorship is secondary to that asset-management role.",
+    "confidence": {"score": 94, "band": "high", "reason": "The firm's current website and Anterix's current board biography identify ongoing Owl Creek management. His August 2026 SEC filing is signed as managing member of the investment manager's general partner and distinguishes Owl Creek fund holdings from his direct personal securities."},
+    "source_ids": ["S3", "S4", "S5"]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Altman created the investment-management enterprise after a long professional investment career. Available sources do not establish either an independent launch without substantial advantages or a material family platform, so the broad category is used.",
+    "confidence": {"score": 85, "band": "high", "reason": "The firm's own history and Anterix biography directly document a founded business following 13 years of salaried investment work; contemporary reporting documents wealth-generating fund performance. This is positive evidence for a founder-built principal asset. It is not an inference that he lacked family resources or other launch advantages."},
+    "source_ids": ["S3", "S4", "S6", "S10"]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Altman established the Owl Creek platform that produced his wealth and continues to direct its investments and general-partner structure.",
+    "confidence": {"score": 94, "band": "high", "reason": "Owl Creek's official site names him its founder, Anterix identifies his ongoing chief portfolio-manager mandate, and the 2026 SEC filing identifies him as managing member of the general partner. Founder captures the enduring principal-asset relationship more accurately than a passive investor or an unrelated board role."},
+    "source_ids": ["S3", "S4", "S5"]
+  },
+  "biography": {
+    "plain_text": "Jeffrey Altman is an American hedge-fund founder whose New York firm, Owl Creek Asset Management, invests in undervalued and distressed securities. He established the business after more than a decade at Franklin Mutual and built his fortune through management and performance fees. He remains its chief portfolio manager and a corporate director.",
+    "html": "<p>Jeffrey Altman is an American hedge-fund founder whose New York firm, Owl Creek Asset Management, invests in undervalued and distressed securities. He established the business after more than a decade at Franklin Mutual and built his fortune through management and performance fees. He remains its chief portfolio manager and a corporate director.</p>\r\n",
+    "word_count": 52,
+    "confidence": {"score": 87, "band": "high", "reason": "Owl Creek, Anterix and SEC sources establish the founding, current management and investment specialism; reputable financial reporting identifies the fee mechanism. The text does not equate assets under management with personal wealth."},
+    "source_ids": ["S3", "S4", "S5", "S6", "S10", "S11"]
+  },
+  "long_biography": {
+    "plain_text": "At Owl Creek, Jeffrey Altman has made complex corporate change his investment terrain. The firm takes positions across credit and equities when restructurings, spin-offs or other dislocations create a gap between market price and underlying value. Its strategy reflects experience he acquired at Franklin Mutual, where he worked as an analyst, trader and portfolio manager in distressed securities. His own funds extended that approach across international markets and specialised credit opportunities.\n\nAltman also serves on the board of Anterix, a communications company in which Owl Creek has been a significant investor. His Tulane education has had a lasting philanthropic counterpart: through his foundation he helped establish a dual-degree programme combining business, international studies and language learning. The programme supports overseas study and practical experience for students pursuing a global perspective.",
+    "html": "<p>At Owl Creek, Jeffrey Altman has made complex corporate change his investment terrain. The firm takes positions across credit and equities when restructurings, spin-offs or other dislocations create a gap between market price and underlying value. Its strategy reflects experience he acquired at Franklin Mutual, where he worked as an analyst, trader and portfolio manager in distressed securities. His own funds extended that approach across international markets and specialised credit opportunities.</p>\r\n<p>Altman also serves on the board of Anterix, a communications company in which Owl Creek has been a significant investor. His Tulane education has had a lasting philanthropic counterpart: through his foundation he helped establish a dual-degree programme combining business, international studies and language learning. The programme supports overseas study and practical experience for students pursuing a global perspective.</p>\r\n",
+    "word_count": 130,
+    "confidence": {"score": 90, "band": "high", "reason": "The firm's strategy and current role are first-party; Anterix details his earlier distressed-investing career and board service; Tulane documents the foundation-supported programme. No fund holding, board seat or foundation grant is misrepresented as a separately dominant wealth source."},
+    "source_ids": ["S3", "S4", "S6", "S8"]
+  },
+  "proposed_details": [
+    {"field": "middle_names", "value": "Alan", "action": "fill_missing", "confidence": {"score": 80, "band": "medium", "reason": "Bloomberg's exact Owl Creek founder profile spells his name Jeffrey Alan Altman; current SEC reports independently give Jeffrey A. Altman at Owl Creek. No competing full-middle-name record was found."}, "source_ids": ["S5", "S12"]},
+    {"field": "known_for_title", "value": "Owl Creek Asset Management founder", "action": "fill_missing", "confidence": {"score": 96, "band": "very_high", "reason": "The firm's own site and Anterix's current profile directly identify Altman as founder of the New York investment manager."}, "source_ids": ["S3", "S4"]},
+    {"field": "biography", "value": "<p>Jeffrey Altman is an American hedge-fund founder whose New York firm, Owl Creek Asset Management, invests in undervalued and distressed securities. He established the business after more than a decade at Franklin Mutual and built his fortune through management and performance fees. He remains its chief portfolio manager and a corporate director.</p>\r\n", "action": "fill_missing", "confidence": {"score": 87, "band": "high", "reason": "The source owner has a blank short biography; the new 52-word text is grounded in company, board, SEC and financial-reporting evidence."}, "source_ids": ["S0", "S3", "S4", "S5", "S10", "S11"]}
+  ],
+  "proposed_socials": [
+    {"type_id": "5", "type": "LinkedIn", "url": "https://www.linkedin.com/in/jeffrey-altman-3220537", "verification": "The public individual profile names Owl Creek Asset Management in New York and Tulane's A.B. Freeman School, matching the current Anterix biography and university account; unrelated same-name LinkedIn profiles were excluded.", "confidence": {"score": 85, "band": "high", "reason": "The uncommon employer-plus-university combination is independently corroborated, although no first-party backlink from Owl Creek was found."}, "source_ids": ["S4", "S8", "S9"]},
+    {"type_id": "14", "type": "Company Website", "url": "https://www.owlcreeklp.com/", "verification": "The official Owl Creek site directly names Jeffrey Altman as founder; Anterix and SEC filings corroborate his current chief-investment and managing-member roles.", "confidence": {"score": 97, "band": "very_high", "reason": "This is the operating company's official site with an explicit founder relationship, not a personal website."}, "source_ids": ["S3", "S4", "S5"]}
+  ],
+  "proposed_tags": [
+    {"tag_id": "tag_0093", "name": "Hedge funds", "summary": "Altman founded and continues to manage Owl Creek's hedge-fund investment platform, the documented source of his wealth and defining work.", "relationship_type": "founder_and_chief_portfolio_manager", "temporal_scope": "current", "taxonomy_value": "Groups long-term principals of hedge-fund management firms; Altman's founder and portfolio-manager mandate far exceeds an incidental holding.", "confidence": {"score": 95, "band": "very_high", "reason": "First-party company and board biographies establish the founder-manager role, while Forbes and financial reporting identify the funds and their investment performance. This meets the active Hedge funds contract."}, "source_ids": ["S3", "S4", "S6", "S10"]},
+    {"tag_id": "tag_0495", "name": "Distressed investing", "summary": "Altman's long-term specialism spans Franklin Mutual's bankruptcy and distressed group and Owl Creek's event-driven, distressed-credit investment programme.", "relationship_type": "founder_portfolio_manager_and_distressed_investment_specialist", "temporal_scope": "current", "taxonomy_value": "Distinguishes his defining distressed and special-situations strategy from hedge-fund ownership generally; the tag is supported by sustained direct operating responsibility.", "confidence": {"score": 93, "band": "high", "reason": "The official Owl Creek site describes its distressed mandate and Anterix details Altman's earlier distressed-group trading and ongoing portfolio-management authority."}, "source_ids": ["S3", "S4"]}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=3037", "title": "Jeffrey Altman owner record, person ID 3037", "publisher": "Superyacht Network; saved authoritative export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Immutable American/US, male and Alive fields; selected 26.21-metre Owl's Nest relationship", "Empty birth, biography and social fields; title Mr and saved display name"]},
+    {"id": "S1", "url": "https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?aggregateId=forl-m22000009263-37e4e66d-d551-4d7f-8dc3-4c3133199f3d&directionType=ForwardList&inquirytype=EntityName&listNameOrder=OWLSLANDING+L190002159450&searchNameOrder=OWLSNEST2018MERRITTHOLDINGS+M220000092630&searchTerm=OWLS+HEAD+FARMS%2C+LLC", "title": "Owl's Nest (2018 Merritt) Holdings LLC entity record", "publisher": "Florida Department of State, Division of Corporations", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Jeffrey Altman named manager and member of entity named for 2018 Merritt Owl's Nest", "Vessel-holding entity later became inactive in the Florida foreign-company register; not proof that ownership ended"]},
+    {"id": "S2", "url": "https://www.superyachttimes.com/yachts/owl-s-nest/overview", "title": "Owl's Nest yacht overview", "publisher": "SuperYacht Times", "tier": 2, "accessed_at": "2026-09-19", "supports": ["The 2018 Merritt-built Owl's Nest has 26.21-metre length and 114 GT, matching the source-record vessel rather than similarly named hulls"]},
+    {"id": "S3", "url": "https://www.owlcreeklp.com/", "title": "Owl Creek Asset Management official site", "publisher": "Owl Creek Asset Management", "tier": 1, "accessed_at": "2026-09-19", "supports": ["New York investment manager founded by Jeffrey Altman and based at 640 Fifth Avenue", "Global event-driven and distressed value-investing mandate"]},
+    {"id": "S4", "url": "https://anterix.com/leadership/jeffrey-altman/", "title": "Jeffrey Altman board biography", "publisher": "Anterix", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Current Owl Creek founding partner and chief portfolio manager; Anterix independent director", "Thirteen years at Franklin Mutual/Heine Securities including distressed trading and portfolio management", "Tulane A.B. Freeman School of Business degree and fund chronology"]},
+    {"id": "S5", "url": "https://www.sec.gov/Archives/edgar/data/1304492/000090266426003332/xslF345X06/ownership.xml", "title": "Jeffrey A. Altman and Owl Creek 2026 Form 4", "publisher": "US Securities and Exchange Commission", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Altman remains Anterix director and managing member of Owl Creek investment manager's general partner", "Separates direct personal securities from fund-held securities and disclaims blanket personal beneficial ownership", "Owl Creek office address matches Florida vessel-holding-company address"]},
+    {"id": "S6", "url": "https://www.forbes.com/sites/antoinegara/2018/03/01/exclusive-how-jeffrey-altman-gained-21-by-avoiding-fang-stocks-and-betting-against-bill-ackman/", "title": "Forbes interview with Jeffrey Altman", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Mandatory Forbes-first search found a substantive interview but no dedicated Forbes person profile", "Owl Creek founder's distressed and event-driven investment work and prior Mutual Shares/Franklin career"]},
+    {"id": "S7", "url": "https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?aggregateId=flal-l04000001400-e49cb91f-bd74-4ef6-8282-7b03c2d49c51&directionType=ForwardList&inquirytype=EntityName&listNameOrder=OWLSLANDING+L190002159450&searchNameOrder=OWLSNESTHOLDINGS+L040000014001&searchTerm=OWLS+HEAD+FARMS%2C+LLC", "title": "Owl's Nest Holdings LLC current entity record", "publisher": "Florida Department of State, Division of Corporations", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Jeffrey Altman is current manager of a second Owl's Nest entity", "Its New York mailing address is 640 Fifth Avenue, the Owl Creek office, completing the person-vessel-business address bridge"]},
+    {"id": "S8", "url": "https://altman.tulane.edu/content/altman-program-83-million-gift-funds-new-dual-degree", "title": "Altman Foundation gift established business and international-studies programme", "publisher": "Tulane University", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Altman is a Tulane business alumnus, Owl Creek founder and director of the Jeffrey A. Altman Foundation", "His foundation funded a dual-degree programme in business, international studies and language learning"]},
+    {"id": "S9", "url": "https://www.linkedin.com/in/jeffrey-altman-3220537", "title": "Jeffrey Altman individual LinkedIn profile", "publisher": "LinkedIn", "tier": 3, "accessed_at": "2026-09-19", "supports": ["Public profile lists New York Owl Creek Asset Management and Tulane A.B. Freeman School", "The employer-plus-university combination matches two independent institutional biographies; no Instagram or personal-site identity was verified"]},
+    {"id": "S10", "url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/jeffrey-a-altman", "title": "Jeffrey A. Altman donor background", "publisher": "Inside Philanthropy", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Identifies Owl Creek as his source of wealth", "Corroborates Tulane business education, Franklin Mutual tenure and foundation giving"]},
+    {"id": "S11", "url": "https://www.anthonyeffinger.com/wp-content/uploads/2020/07/Paulson-PDF.pdf", "title": "The Richest Hedge Funds, Bloomberg Markets 2008 reprint", "publisher": "Bloomberg Markets; journalist-hosted reprint", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Contemporary reporting identifies Altman as Owl Creek founder and describes substantial performance-fee receipts", "Investor fees, not the full value of assets under management, support the personal wealth mechanism"]},
+    {"id": "S12", "url": "https://www.bloomberg.com/profile/person/1550637", "title": "Jeffrey Alan Altman biography", "publisher": "Bloomberg", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Full middle name Alan for the managing partner and founder of Owl Creek Asset Management"]},
+    {"id": "S13", "url": "https://councils.forbes.com/profile/Jeff-Altman-Big-Game-Hunter-The-Big-Game-Hunter/3dccd5f0-10ed-4834-b3b3-0e43cd79203e", "title": "Different Jeff Altman Forbes Coaches Council profile", "publisher": "Forbes Councils", "tier": 3, "accessed_at": "2026-09-19", "supports": ["This profile belongs to a career coach, not the Owl Creek founder, and was excluded from Forbes social proposals"]}
+  ],
+  "uncertainties": [
+    {"topic": "Forbes and social profiles", "detail": "Forbes publishes an exact-person interview and conference listing, not a dedicated profile. A Coaches Council result is an unrelated same-name career coach. The proposed individual LinkedIn matches Owl Creek and Tulane; searches did not verify a personal Instagram, personal site, Facebook, X, YouTube or TikTok account. The company site is correctly typed as Company Website."},
+    {"topic": "Founding chronology and wealth mechanism", "detail": "Sources variously date Owl Creek's creation to 2001 or 2002; the firm says founded in 2002 and Anterix dates the flagship launch to February 2002. Biographies omit a single disputed founding year. Reported performance fees and the continuing manager position support self-created investment wealth, but fund assets are not treated as Altman's personal assets and no net-worth estimate is used."},
+    {"topic": "Starting-position and birth details", "detail": "No reliable evidence establishes a material family launch platform or an independent start without one. Broad Self-made is therefore retained. Bloomberg supports middle name Alan; no precise birth date, birthplace, birth country or second nationality is proposed."},
+    {"topic": "Identity bridge scope", "detail": "The Florida register's Owl's Nest (2018 Merritt) entity and the exact hull dimensions yield a strong identity bridge. Its Florida registration is inactive, while a separate Owl's Nest entity remains active; neither fact alone proves current beneficial ownership of the vessel. Yacht details are excluded from the public biographies and wealth classifications."},
+    {"topic": "Tag minimality", "detail": "Hedge funds captures his founder-led investment platform; Distressed investing adds its defining strategy and his earlier specialist work. Generic Asset management would overlap these more informative active tags. Anterix securities exposure does not warrant a telecommunications tag."}
+  ],
+  "review": {"status": "complete", "notes": "Exact 2018 Merritt holding-company record, Owl Creek address and current SEC signature resolve the owner as Jeffrey Alan Altman at 97 confidence. Finance & Investments is both origin and current sector; broad Self-made and Founder are supported by the founded, continuing fee-generating hedge-fund platform. Forbes has no dedicated profile. Distinct 52/130-word vessel-free biographies and two active specialist tags are ready for review."}
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 269,
+    "display_name": "Pedro Bethencourt",
+    "identity_confidence": {
+      "score": 29,
+      "band": "insufficient",
+      "reason": "The source record supplies only a common two-part name and a private Nefertiti relationship, without nationality, residence, age, employer or social profile. A public yacht page confirms a 25.07-metre Nefertiti but does not identify its owner. Searches return distinct Spanish and Brazilian people named Pedro Bethencourt, none linked independently to this hull or source record. Their business and biographical facts cannot safely be transferred to person_id 269."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "nationality", "secondary_nationality", "main_residence_country", "secondary_residence_country", "known_for_title", "gender", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "nationality", "secondary_nationality", "main_residence_country", "known_for_title", "gender", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "Pedro Bethencourt cannot be resolved from the saved name and vessel relationship. A public page matches Nefertiti's recorded length but does not name its owner. The same name appears among a Spanish performer, Spanish company officers and Brazilian professionals, with no reliable person-to-vessel or person-to-business bridge. Assigning a biography, personal social profile or economic classification from any of them would be speculative.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The note accurately separates the source owner's sparse identifiers from a public hull match and demonstrably distinct name matches, without asserting which candidate owns the vessel."
+    },
+    "source_ids": ["S0", "S1", "S2", "S3", "S4", "S5"]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Mandatory Forbes-first searches tested the exact name, site:forbes.com/profile and Nefertiti/yacht qualifiers. No dedicated Forbes person profile for a collision-resolved match appeared; no similarly named person was substituted."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No originating business or wealth-producing sector is securely attributable to the selected Pedro Bethencourt. Spanish entertainment, company-office and Brazilian marketing candidates lack a bridge to this owner.",
+    "confidence": {
+      "score": 12,
+      "band": "insufficient",
+      "reason": "Neither the saved vessel relationship nor public yacht specifications identify an economic platform. The apparent sector alternatives arise from unbridged namesakes, not positive evidence about person_id 269."
+    },
+    "source_ids": ["S0", "S1", "S3", "S4", "S5"]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The source owner's current principal private interests cannot be identified. No public person-to-company link clears the identity threshold.",
+    "confidence": {
+      "score": 10,
+      "band": "insufficient",
+      "reason": "The current yacht selection cannot establish a sector, and the different same-name professional and company records cannot support a current private-asset conclusion."
+    },
+    "source_ids": ["S0", "S1", "S3", "S4", "S5"]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No founded, earned, purchased, inherited or transferred principal asset is tied to the source owner.",
+    "confidence": {
+      "score": 8,
+      "band": "insufficient",
+      "reason": "The person remains unresolved and no material business or family-asset mechanism can be connected to the saved record. A name-only company appointment does not establish how this owner's wealth arose."
+    },
+    "source_ids": ["S0", "S1", "S5"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The owner's relationship to any principal wealth-producing asset is unestablished.",
+    "confidence": {
+      "score": 8,
+      "band": "insufficient",
+      "reason": "Without a collision-safe person-to-asset bridge, founder, operator, investor and other relationships would be borrowed from unrelated or unverified candidates."
+    },
+    "source_ids": ["S0", "S1", "S3", "S4", "S5"]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=269", "title": "Pedro Bethencourt owner record, person ID 269", "publisher": "Superyacht Network; saved authoritative export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Exact saved display name and ID; no nationality, residence, employer, gender, age, biography or personal social anchor", "Selected Nefertiti, 25.07 metres, used only for identity investigation", "Saved Alive status is a source baseline, not independently verified"]},
+    {"id": "S1", "url": "https://www.yachtbuyer.com/en-us/fleet/nefertiti-82-mangusta", "title": "Nefertiti yacht", "publisher": "YachtBuyer", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Public 25.07-metre Nefertiti built by Mangusta in 2003 matches the saved hull specifications", "The public page does not identify an owner or link Pedro Bethencourt to the vessel", "The hull is selection context only and provides no biography or wealth evidence"]},
+    {"id": "S2", "url": "https://www.superyachttimes.com/yachts/nefertiti-24m", "title": "Nefertiti yacht overview", "publisher": "SuperYacht Times", "tier": 2, "accessed_at": "2026-09-19", "supports": ["A Mangusta yacht named Nefertiti was built in 2003, but this publisher reports a different 24.38-metre length", "The public page says owner information is subscriber-only and does not publish Pedro Bethencourt's name", "The differing measurement reinforces caution about public-hull matching"]},
+    {"id": "S3", "url": "https://lpacarnaval.com/chuchi-drag-queen-del-carnaval-de-las-palmas-de-gran-canaria-2019/", "title": "Chuchi, Drag Queen del Carnaval de Las Palmas de Gran Canaria 2019", "publisher": "Las Palmas Carnaval", "tier": 1, "accessed_at": "2026-09-19", "supports": ["An official event account identifies performer Pedro Bethencourt Guerra", "The performer has a distinct full name and public context but no evidenced link to the selected Nefertiti record", "His entertainment career is excluded from person_id 269"]},
+    {"id": "S4", "url": "https://br.linkedin.com/in/pedro-bethencourt-41795a14a", "title": "Pedro Bethencourt professional LinkedIn profile", "publisher": "LinkedIn", "tier": 2, "accessed_at": "2026-09-19", "supports": ["A Rio de Janeiro Pedro Bethencourt describes CRM and marketing work with Flexge and Liga Ventures", "The profile has no Nefertiti, vessel-company, saved-geography or other collision-resistant bridge", "It is not proposed as this owner's personal LinkedIn"]},
+    {"id": "S5", "url": "https://www.empresia.es/persona/bethencourt-hernandez-pedro/", "title": "Pedro Bethencourt Hernandez company appointments", "publisher": "Empresia; reporting Spanish commercial-register notices", "tier": 3, "accessed_at": "2026-09-19", "supports": ["A Pedro Bethencourt Hernández was appointed joint administrator of Abramalda SL in 2024", "The extra surname and company role offer a candidate but no independent Nefertiti or saved-person bridge", "The appointment cannot be assigned to the source owner"]}
+  ],
+  "uncertainties": [
+    "This is a terminal insufficient_evidence decision, not a name correction. The immutable source supplies no full surname, employer, birth data, nationality, residence or social link that would distinguish one Pedro Bethencourt from the public namesakes.",
+    "The 25.07-metre Nefertiti public page matches the saved hull name and length, but names no owner. Another yacht database reports a different overall length for a same-named 2003 Mangusta and puts ownership behind a subscription. Neither page independently ties a Pedro Bethencourt to the yacht.",
+    "Forbes-first searches tested exact name, dedicated Forbes-profile syntax and vessel qualifiers without finding an attributable personal profile. No Forbes proposal is made.",
+    "Priority searches tested LinkedIn, Instagram and personal websites; Facebook, X/Twitter, YouTube and TikTok were also considered. Several same-name LinkedIn profiles exist in Spain and Brazil, but none has a verified bridge to the selected record. No personal or company link is proposed.",
+    "An official Las Palmas event page names Pedro Bethencourt Guerra as a performer. A separate LinkedIn profile describes a Rio-based CRM marketer, and a Spanish commercial-directory record names Pedro Bethencourt Hernández as a company administrator. The source record cannot distinguish among these or other same-name people, so none of their roles, places, birth details or social accounts is transferred.",
+    "All four wealth dimensions remain Unknown after direct-evidence and permitted-inference checks. Entertainment, technology/service and Spanish company-administration alternatives lack evidence of identity or materiality; a lower-specificity value would still be speculative. The vessel cannot supply a wealth sector, origin or relationship.",
+    "No approved active tag is safely assignable across the unresolved person identity. No biography pair, known-for title, nationality, gender, dates or social proposals are drafted; the editorial note is the only owner-facing research text.",
+    "Only the assigned 269 dossier was created. The canonical owner input, cohort, catalogue, compiled outputs, live site and other dossiers were not changed."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal insufficient_evidence outcome after exact-ID inventory, mandatory Forbes-first search, yacht specification matching, English and Spanish identity searches, namesake comparison and priority-social checks. No public source securely links the selected Nefertiti owner to a business or individual professional profile. All four wealth fields are Unknown, and biographies, personal details, socials and tags are withheld."
+  }
+}

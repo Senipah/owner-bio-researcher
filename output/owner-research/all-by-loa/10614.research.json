@@ -1,0 +1,87 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 10614,
+    "display_name": "Unknown Swedish",
+    "identity_confidence": {
+      "score": 19,
+      "band": "insufficient",
+      "reason": "The saved record explicitly marks the name as unknown and supplies only a Swedish nationality label plus a selected yacht. A public 24.63-metre, 90-GT Azimut listing matches the selected No Time To Die hull and says it was reportedly built for a Swedish owner, but neither it nor accessible broker material names a natural person or legal owner. A different yacht of the same name and numerous film-related search results make name-based attribution unsafe."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "main_residence_country", "secondary_residence_country", "known_for_title", "gender", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "main_residence_country", "known_for_title", "gender", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "death_day", "death_month", "death_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_age", "death_age_at_date", "internal_notes"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "The saved owner record is an explicit unknown-name placeholder labelled Swedish. Public specifications identify a matching 24.63-metre Azimut named No Time To Die, and one yacht listing describes its original owner only as Swedish. Neither that listing nor accessible sales material names the person or an ownership company. Another yacht carried the same name, while searches also return unrelated film material. Without a personal or corporate identity bridge, no career, family, social profile or wealth-producing asset can be assigned to this record.",
+    "confidence": {"score": 96, "band": "very_high", "reason": "The note accurately separates the saved unknown-name field, exact hull match, anonymous Swedish-owner description and same-name yacht collision. It makes no claim about a natural person's identity, wealth or profession."},
+    "source_ids": ["S0", "S1", "S2", "S3", "S4"]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 95, "band": "very_high", "reason": "The mandatory Forbes-first exact placeholder, /profile/, yacht-qualified and Swedish-owner searches produced no dedicated person profile. Forbes results for the James Bond film, its creators or unrelated Swedish figures cannot identify the unnamed yacht owner."}
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No named person, originating wealth-producing enterprise or business sector is connected to this owner placeholder.",
+    "confidence": {"score": 7, "band": "insufficient", "reason": "The yacht match and reported owner nationality provide only vessel context. No person or company is named, and the film title is not an entertainment-industry premise. Direct evidence, industry inference and a less-specific sector label all fail."},
+    "source_ids": ["S0", "S1", "S2", "S3"]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No current private operating company, investment holding or principal asset sector can be assigned to an unidentified owner.",
+    "confidence": {"score": 7, "band": "insufficient", "reason": "Accessible yacht pages do not name a beneficial owner or business. Neither a current-sector conclusion nor an origin-sector fallback is available, because the person and originating sector are both unresolved."},
+    "source_ids": ["S0", "S1", "S2", "S4"]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The means by which the unidentified party acquired any principal wealth-producing assets is not publicly established.",
+    "confidence": {"score": 5, "band": "insufficient", "reason": "No named subject, founder activity, earned asset, family transfer or inheritance is evidenced. The vessel's existence and a nationality descriptor cannot support even broad self-made or family-origin inference."},
+    "source_ids": ["S0", "S1", "S2"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No relationship between the unnamed source owner and a principal wealth-producing business or asset has been demonstrated.",
+    "confidence": {"score": 5, "band": "insufficient", "reason": "There is no identified person or institution and no demonstrated principal asset beyond the selected yacht context. Founder, operator, investor, heir and passive-owner labels would all be unsupported; the yacht-owner descriptor is not a wealth-relationship classification."},
+    "source_ids": ["S0", "S1", "S2", "S4"]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=10614", "title": "Unknown Swedish saved owner record, person ID 10614", "publisher": "Superyacht Network immutable owner export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Display and stored name fields read Unknown Swedish; unknown_name is explicitly Yes, Swedish nationality is populated, and residence, gender, mortality, biography and social profiles are not established", "A current source-record relationship names No Time To Die, vessel ID 59419, from 2023 with 24.63 metres and 90 GT", "The export is selection context only; it does not reveal a personal or corporate identity"]},
+    {"id": "S1", "url": "https://www.yachtbuyer.com/en/fleet/no-time-to-die-80-azimut", "title": "No Time To Die 24.63-metre Azimut S8", "publisher": "YachtBuyer", "tier": 2, "accessed_at": "2026-09-19", "supports": ["The yacht name, 24.63-metre length and 90-GT volume match the selected hull, and the listing says it was reportedly built for a Swedish owner", "The description does not supply that owner's name, corporate vehicle, profession or private holdings", "The reported nationality is yacht-listing context, not independent proof of the saved source person's identity"]},
+    {"id": "S2", "url": "https://www.superyachttimes.com/yachts/no-time-to-die-25m/overview", "title": "No Time To Die yacht overview", "publisher": "SuperYacht Times", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Confirms the 24.63-metre and 90-GT Azimut hull matching the owner export", "The publicly accessible page places owner information behind its subscription service and names no individual", "The sale listing is not evidence of the beneficial owner's identity or wealth source"]},
+    {"id": "S3", "url": "https://www.superyacht24.it/en/2023/09/15/cambia-armatore-e-nome-il-27-metri-sanlorenzo-no-time-to-die/", "title": "Different 27-metre Sanlorenzo formerly named No Time To Die", "publisher": "SuperYacht24", "tier": 3, "accessed_at": "2026-09-19", "supports": ["Reports a separate 26.7-metre Sanlorenzo of the same name that changed owner and became Mave", "Its builder and length differ from the selected 24.63-metre Azimut; same-name yacht results cannot be conflated"]},
+    {"id": "S4", "url": "https://www.northropandjohnson.com/yachts-for-sale/no-time-to-die-80-azimut-yachts", "title": "No Time To Die Azimut S8 sale listing", "publisher": "Northrop & Johnson", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Broker listing describes an original owner but does not name that person", "The public sale description yields no independent person, company or profession bridge"]},
+    {"id": "S5", "url": "https://www.forbes.com/search/?q=Unknown%20Swedish", "title": "Forbes placeholder and yacht-qualified profile checks", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Focused Forbes-first searches for the literal placeholder and exact selected yacht returned no attributable dedicated person profile", "Film and other Swedish-name results do not identify the source owner"]}
+  ],
+  "uncertainties": [
+    {"topic": "Identity and record type", "detail": "The input's unknown_name=Yes and literal Unknown Swedish name establish an unresolved owner placeholder, not a named person or institution. YachtBuyer independently repeats an anonymous Swedish-owner account, but it does not establish a surname, gender, residence, company or other identifier. The source nationality is preserved without extending it to any newly selected person."},
+    {"topic": "Hull and name collisions", "detail": "YachtBuyer and SuperYacht Times match the saved No Time To Die by exact 24.63-metre length and 90-GT volume. A separate Sanlorenzo of approximately 26.7 metres also used No Time To Die and later became Mave. Neither that namesake hull nor the James Bond film is an identity, occupation, wealth or industry bridge for this record."},
+    {"topic": "Profiles and wealth", "detail": "Without a personal name, exact-account searches on LinkedIn, Instagram, personal websites, Facebook, X, YouTube and TikTok cannot authenticate a profile. Forbes-first checks found no attributable dedicated profile. Direct evidence, permissible inference and less-specific alternatives for all four wealth fields remain below 70; no biography, personal correction, social URL or tag is proposed."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal insufficient-evidence dossier for one explicitly unknown-name owner record. The selected 24.63-metre Azimut hull and an anonymous Swedish-owner report are corroborated, but no natural-person or institutional owner is identified. All four wealth classifications remain Unknown, with no biography, personal/social proposals or tags. No film association or other same-name yacht was imported. No owner input, cohort, catalogue, other dossier or live site was changed."
+  }
+}

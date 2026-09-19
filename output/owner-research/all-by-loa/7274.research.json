@@ -1,0 +1,139 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 7274,
+    "display_name": "Wayne Holman",
+    "identity_confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "The authoritative owner record contains the exact personal LinkedIn URL for Wayne Holman of Ridgeback Capital. The public profile's Miami and Ridgeback activity matches the firm's current first-party founder biography and Ridgeback-named SEC filings for Wayne George Holman. A yacht page independently matches the selected H and H vessel's dimensions and tonnage but does not name its owner, so the person-vessel relationship remains an authoritative-input fact rather than a separately published attribution. Other Wayne Holman professionals were excluded."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "main_residence_country", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "main_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": ["LinkedIn"],
+    "missing_priority_social_types": ["Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "American physician and healthcare investor Wayne G. Holman, founder of Ridgeback Capital and co-founder of Ridgeback Biotherapeutics.",
+    "defining_work": "Building a healthcare-focused investment company that funds public and private biopharmaceutical developers, then helping establish an infectious-disease biotechnology company.",
+    "formative_context": "He studied economics at Yale, trained as a physician at New York University and founded Ridgeback Capital in 2006 after pursuing healthcare investment.",
+    "decisive_moment": "The founding of Ridgeback Capital converted medical and investment experience into a durable healthcare-investment platform; Ridgeback Biotherapeutics subsequently added a drug-development venture.",
+    "enduring_dimensions": ["Long-term funding of emerging biopharmaceutical companies alongside securities investing.", "Co-founding and participating in the development programme of Ridgeback Biotherapeutics.", "Continuing medical teaching and trustee work at NYU Langone."],
+    "character_detail": "His medical training informs an investment career concentrated on drug development.",
+    "opening_options": [
+      {"mode": "defining_achievement", "angle": "Open with Holman's founding of Ridgeback Capital and its healthcare-investment mandate."},
+      {"mode": "formative_episode", "angle": "Begin with medical training and economics study before the transition into healthcare investing."}
+    ],
+    "excluded_transient_context": ["Private-vessel details, name variants, relationship dates and ownership assertions.", "Speculative personal net-worth, fund returns and acquisition proceeds.", "Home address, family details and disputed accounts of the antiviral transaction.", "Volatile company counts and short-lived market conditions."],
+    "source_ids": ["S2", "S3", "S4", "S5", "S6", "S7"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": ["founder_operator"],
+    "notes": "The short identity card foregrounds the investment platform and biotech co-founding. The longer account uses education and medical training as an independent route into healthcare investing, then develops the Merck collaboration and continuing academic role. Private-vessel context and transient wealth claims remain outside both biographies."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 96, "band": "very_high", "reason": "Mandatory exact-name, Ridgeback-context and site:forbes.com/profile searches found no dedicated Forbes profile attributable to Wayne G. Holman. Search results for similarly named people were excluded."}
+  },
+  "wealth_creation_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Holman founded Ridgeback Capital in 2006 as a healthcare-focused investment firm, with a documented securities-investment and longer-term private-capital platform. His later biotechnology venture is material, but the established investing business is the clearest original wealth mechanism.",
+    "confidence": {"score": 87, "band": "high", "reason": "Ridgeback's first-party history identifies Holman as founder and describes the firm's public/private healthcare investment mandate; early SEC filings show his control of Ridgeback Capital Management. Independent contemporaneous reporting calls it a healthcare hedge fund. No personal return or net-worth figure is inferred."},
+    "source_ids": ["S2", "S3", "S5", "S6"]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Current Ridgeback Capital materials continue to name Holman founder and CEO and describe an active investment mandate focused on biopharmaceutical companies. His separate Ridgeback Biotherapeutics co-founder role adds biotechnology exposure without displacing the long-standing investment platform.",
+    "confidence": {"score": 91, "band": "high", "reason": "The current first-party Ridgeback Capital site names Holman CEO and founder and distinguishes public securities from long-term private investment. Ridgeback Biotherapeutics also confirms his co-founder role, but its CEO is Wendy Holman, so his own present primary mandate is best described as investment leadership."},
+    "source_ids": ["S3", "S4", "S5"]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "A trained physician and professional healthcare investor, Holman established his own investment firm and subsequently co-founded a biotechnology company. His documented route is founder-built rather than a reported family-company succession.",
+    "confidence": {"score": 78, "band": "medium", "reason": "Education, professional investment activity and formation of Ridgeback Capital in 2006 are positively documented. The record does not establish family capital, initial funding or socioeconomic starting conditions, so neither independent-start nor advantaged-start subtype is justified."},
+    "source_ids": ["S3", "S5", "S6", "S7"]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Holman founded and continues to lead Ridgeback Capital, the documented principal investment platform, and co-founded Ridgeback Biotherapeutics.",
+    "confidence": {"score": 94, "band": "high", "reason": "Both current Ridgeback companies explicitly identify him as founder or co-founder, while the investment firm names him CEO and early securities filings document control of its management entity. Founder captures the creation and continuing leadership relationship more precisely than a passive investor label."},
+    "source_ids": ["S3", "S4", "S5", "S6"]
+  },
+  "biography": {
+    "plain_text": "Wayne G. Holman is an American physician and healthcare investor who founded Ridgeback Capital in 2006. The firm backs public and private biopharmaceutical companies, combining securities investment with longer-term funding for drug development. He also co-founded Ridgeback Biotherapeutics, which partnered with Merck to develop an oral antiviral medicine for COVID-19.",
+    "html": "<p>Wayne G. Holman is an American physician and healthcare investor who founded Ridgeback Capital in 2006. The firm backs public and private biopharmaceutical companies, combining securities investment with longer-term funding for drug development. He also co-founded Ridgeback Biotherapeutics, which partnered with Merck to develop an oral antiviral medicine for COVID-19.</p>\r\n",
+    "word_count": 50,
+    "confidence": {"score": 92, "band": "high", "reason": "First-party investment and biotechnology profiles establish Holman's founder roles and mandate, with corporate filings and Merck material corroborating the enterprise and drug-development collaboration."},
+    "source_ids": ["S3", "S4", "S5", "S6"]
+  },
+  "long_biography": {
+    "plain_text": "Trained as a physician at New York University after studying economics at Yale, Wayne G. Holman built an investment career focused on biomedical research. He founded Ridgeback Capital in 2006 and used the firm to support public and private companies developing medicines. The firm invests in listed drugmakers and makes longer-term commitments to private developers.\n\nHolman co-founded Ridgeback Biotherapeutics with Wendy Holman. The company worked with Merck on the antiviral molnupiravir, while Holman served on the partnership's joint steering committee. Alongside his investment and biotechnology work, he is a clinical professor of medicine at NYU Langone and serves on the university's board of trustees.",
+    "html": "<p>Trained as a physician at New York University after studying economics at Yale, Wayne G. Holman built an investment career focused on biomedical research. He founded Ridgeback Capital in 2006 and used the firm to support public and private companies developing medicines. The firm invests in listed drugmakers and makes longer-term commitments to private developers.</p>\r\n<p>Holman co-founded Ridgeback Biotherapeutics with Wendy Holman. The company worked with Merck on the antiviral molnupiravir, while Holman served on the partnership's joint steering committee. Alongside his investment and biotechnology work, he is a clinical professor of medicine at NYU Langone and serves on the university's board of trustees.</p>\r\n",
+    "word_count": 104,
+    "confidence": {"score": 90, "band": "high", "reason": "Ridgeback's current first-party biographies, a Merck release and NYU's faculty page support the medical education, investment mandate, biotechnology partnership and academic role."},
+    "source_ids": ["S3", "S4", "S5", "S7"]
+  },
+  "proposed_details": [
+    {"field": "middle_names", "value": "George", "action": "fill_missing", "confidence": {"score": 88, "band": "high", "reason": "Early SEC filing records Wayne George Holman with Ridgeback Capital entities, and the Florida medical licence lists the same full name; Ridgeback's current biographies use Wayne G. Holman."}, "source_ids": ["S3", "S5", "S10"]},
+    {"field": "main_residence_country", "value": "United States", "action": "fill_missing", "confidence": {"score": 90, "band": "high", "reason": "Current first-party Ridgeback biography says Holman lives in Miami, consistent with his public LinkedIn geography; no more specific private residential detail is proposed."}, "source_ids": ["S2", "S3"]},
+    {"field": "known_for_title", "value": "Founder and CEO of Ridgeback Capital", "action": "fill_missing", "confidence": {"score": 99, "band": "very_high", "reason": "Ridgeback Capital's current official pages explicitly identify Wayne Holman as its founder and CEO."}, "source_ids": ["S3"]},
+    {"field": "biography", "value": "<p>Wayne G. Holman is an American physician and healthcare investor who founded Ridgeback Capital in 2006. The firm backs public and private biopharmaceutical companies, combining securities investment with longer-term funding for drug development. He also co-founded Ridgeback Biotherapeutics, which partnered with Merck to develop an oral antiviral medicine for COVID-19.</p>\r\n", "action": "fill_missing", "confidence": {"score": 92, "band": "high", "reason": "The canonical biography is blank and the proposed person-led text is supported by first-party investment and biotechnology sources and independent filings."}, "source_ids": ["S3", "S4", "S5", "S6"]}
+  ],
+  "proposed_socials": [
+    {"type_id": "14", "type": "Company Website", "url": "https://www.ridgebackcap.com/", "verification": "Ridgeback Capital's official site names Wayne Holman founder and CEO and documents its continuing healthcare-investment activity.", "confidence": {"score": 99, "band": "very_high", "reason": "The first-party site directly connects Holman with the active firm and its defining work."}, "source_ids": ["S3"]}
+  ],
+  "proposed_tags": [
+    {"tag_id": "tag_0093", "name": "Hedge funds", "summary": "Holman founded and controlled Ridgeback Capital, described contemporaneously as a healthcare hedge fund; its official site continues to describe a securities-investment platform.", "relationship_type": "founder and investment manager", "temporal_scope": "former_but_defining", "confidence": {"score": 85, "band": "high", "reason": "Contemporaneous independent reporting and SEC filings establish the defining fund-management business, while current Ridgeback materials document continuing public-securities investing. The label is not inferred from a single portfolio investment."}, "source_ids": ["S3", "S5", "S6"], "taxonomy_value": "Groups owners whose defining wealth platform includes founding and managing a hedge-fund investment business."},
+    {"tag_id": "tag_0029", "name": "Biotechnology", "summary": "Holman co-founded Ridgeback Biotherapeutics and serves on its antiviral-development partnership steering committee, a substantial operating mandate beyond incidental portfolio exposure.", "relationship_type": "co-founder and development steering-committee co-chair", "temporal_scope": "current", "confidence": {"score": 86, "band": "high", "reason": "The company's current first-party biography identifies his co-founder and steering-committee roles, and Merck's release corroborates the drug-development partnership. This is a defining secondary biotechnology venture, not merely a passive holding."}, "source_ids": ["S4", "S7"], "taxonomy_value": "Includes owners with a sustained, material founder role in biotechnology development."}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=7274", "title": "Wayne Holman owner record, person ID 7274", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Exact person ID, name, American nationality, male and Alive source values, blank biography and personal details.", "An exact LinkedIn URL is attached to this person record. It provides an identity-specific lead that is independently checked against public account and company material.", "H and H, vessel ID 60575, is the selected relationship with recorded dimensions 26.3 metres and 128 GT; this private relationship is used only for identity gating, never for biography or economic inference."]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Wayne%20Holman", "title": "Forbes search for Wayne Holman", "publisher": "Forbes", "tier": 3, "accessed_at": "2026-09-19", "supports": ["Mandatory Forbes-first search and profile-restricted searches revealed no dedicated Wayne G. Holman Forbes profile."]},
+    {"id": "S2", "url": "https://www.linkedin.com/in/wayne-holman-1a3221185", "title": "Wayne Holman LinkedIn profile", "publisher": "LinkedIn", "tier": 2, "accessed_at": "2026-09-19", "supports": ["The exact saved social URL publicly identifies Wayne Holman in the Miami-Fort Lauderdale area with Ridgeback Capital Management.", "First-person activity discusses Ridgeback Bio and its Merck partnership, authenticating the account against first-party company sources."]},
+    {"id": "S3", "url": "https://www.ridgebackcap.com/about", "title": "About Ridgeback Capital", "publisher": "Ridgeback Capital Management", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Names Wayne Holman, MD as founder and CEO; says the firm was founded in 2006.", "Describes investment in public and private healthcare companies developing medicines, distinguishing securities trading from patient private capital.", "Gives Yale economics and NYU School of Medicine education, co-founding Ridgeback Biotherapeutics, and Miami residence."]},
+    {"id": "S4", "url": "https://ridgebackbio.com/about/development-advisory-board/wayne-holman-md/", "title": "Wayne Holman, MD", "publisher": "Ridgeback Biotherapeutics", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Confirms Holman as Ridgeback Capital founder/CEO and Ridgeback Biotherapeutics co-founder.", "Lists his co-chair role on the Ridgeback-Merck molnupiravir steering committee and NYU Langone clinical-professor and trustee positions."]},
+    {"id": "S5", "url": "https://www.sec.gov/Archives/edgar/data/1008848/000093244006000469/0000932440-06-000469-index.html", "title": "2006 Ridgeback Capital ownership filing index", "publisher": "US Securities and Exchange Commission", "tier": 1, "accessed_at": "2026-09-19", "supports": ["An early public securities filing connects Wayne George Holman with Ridgeback Capital Investments and Ridgeback Capital Management.", "Supports the investment-platform identity and full middle name, not a personal net-worth calculation."]},
+    {"id": "S6", "url": "https://www.sbs.com.au/news/article/us-hedge-funds-15m-injection-for-prima/zh5j60ptd", "title": "US hedge fund's investment in Prima", "publisher": "SBS News", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Independent 2015 reporting identifies Holman as running a US healthcare hedge fund and describes a material biopharmaceutical investment.", "Supports the historically defining fund specialism without treating the transaction amount as Holman's personal wealth."]},
+    {"id": "S7", "url": "https://s2.q4cdn.com/584635680/files/doc_news/Merck-and-Ridgebacks-Molnupiravir-an-Oral-COVID-19-Antiviral-Medicine-Receives-First-Authorization-in-the-World-2021.pdf", "title": "Merck and Ridgeback antiviral authorisation release", "publisher": "Merck and Ridgeback Biotherapeutics", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Confirms the Merck-Ridgeback partnership on molnupiravir and the Holmans' funding contribution.", "Does not establish the value of Holman's personal stake or profits."]},
+    {"id": "S8", "url": "https://www.yachtbuyer.com/en-us/fleet/h-and-h-86-sunseeker", "title": "H and H yacht profile", "publisher": "YachtBuyer", "tier": 3, "accessed_at": "2026-09-19", "supports": ["Matches the selected H and H vessel by 26.3-metre length and 128-GT tonnage, and records its earlier Two Heroes name.", "Does not identify an individual owner or establish a public Wayne Holman-vessel attribution."]},
+    {"id": "S9", "url": "https://www.linkedin.com/in/wayne-holman-b909084b", "title": "Wayne Holman, Texas Global Partners profile", "publisher": "LinkedIn", "tier": 2, "accessed_at": "2026-09-19", "supports": ["A separate same-name Texas energy and restaurant executive with a different LinkedIn URL and professional history exists.", "The profile is excluded; its career is not imported into person ID 7274."]},
+    {"id": "S10", "url": "https://mqa-internet.doh.state.fl.us/MQASearchServices/HealthCareProviders/Details?LicInd=126242&ProCde=1501", "title": "Wayne George Holman practitioner profile", "publisher": "Florida Department of Health", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Official Florida medical-licensing record gives the full name Wayne George Holman.", "The full name converges with Ridgeback's Wayne G. Holman and its Miami medical-investor biography; no private licence details are proposed."]}
+  ],
+  "uncertainties": [
+    "The exact LinkedIn URL attached to the canonical owner record is a direct identity-specific bridge to the Miami Ridgeback executive and is corroborated by first-party company pages and Ridgeback-named SEC filings. Public yacht pages identify the matching H and H vessel but do not name Holman. The vessel relationship remains an authoritative-input claim, not an independently verified beneficial-ownership finding.",
+    "Other Wayne Holmans include a Texas energy and restaurant executive and a California construction/water-district figure. Neither has the saved LinkedIn URL or Ridgeback career; their facts and socials are excluded.",
+    "Finance & Investments is the original and continuing dominant documented platform. Ridgeback Biotherapeutics is a substantive second venture, but public sources do not establish whether biotechnology equity has overtaken the investment firm as Holman's largest current wealth asset. No personal return, royalties or net-worth figure is calculated from securities filings or the Merck collaboration.",
+    "Broad Self-made is supported by documented professional and founder-building chronology, not by an absence of inheritance claims. Reliable sources do not establish launch capital or family socioeconomic circumstances, so a narrower starting-position subtype is withheld.",
+    "The middle name George is supported by SEC and Florida medical records; main residence country is supported by a current company biography stating Miami. Exact birth date and birthplace remain unverified. The authoritative Alive status is preserved without a separate mortality proposal.",
+    "The saved LinkedIn URL is authenticated but not reproposed because it already exists. No collision-safe personal Instagram, Facebook, X, YouTube, TikTok or personal website was confirmed; a corporate website is separately proposed under its correct type. Mandatory Forbes-first searches found no dedicated attributable profile.",
+    "Only the active Hedge funds and Biotechnology tags are proposed. Neither Private equity nor every biopharma portfolio company's specialty is treated as an automatic tag. The source-owned vessel is excluded from biography, economic classifications and tags."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier for person ID 7274, subject to disclosed lack of independent public yacht-owner attribution. The canonical personal LinkedIn URL, first-party Ridgeback biographies and SEC filings support the Wayne G. Holman identity. Finance & Investments is the wealth-creation and current sector, broad Self-made and Founder are supported, and two active historically defining/current tags are applied conservatively."
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1448,
+    "display_name": "John McMonigall",
+    "identity_confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The race organiser directly identifies John McMonigall with the matching Oyster 82 Zig Zag. Companies House identifies John Phillips McMonigall, born July 1943, as a British investment director, matching the saved 1943 year; contemporaneous SEC filings identify the same-aged Apax and British Telecom executive. The shared full name of a younger Deontics director is separated by month and year of birth."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "main_residence_country", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "main_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "British venture and private-equity investor with an earlier senior career at British Telecom.",
+    "defining_work": "Led Apax Partners' telecommunications and software investment work and served on boards of technology businesses it backed.",
+    "formative_context": "Managed British Telecom's customer-service division before Sir Ronald Cohen recruited him to Apax in 1990.",
+    "decisive_moment": "Changed from telecoms operating leadership to venture investment as technology valuations weakened in 1990.",
+    "enduring_dimensions": ["Operating experience applied to technology-investment decisions", "Board service in technology businesses", "Personal private-company and property interests after Apax"],
+    "character_detail": "He described the 1990 move as worrying amid weak markets while recognising an opportunity to invest at lower valuations.",
+    "opening_options": [
+      {"mode": "present_identity", "angle": "Introduce the British investor through the unusual combination of telecoms operations and Apax investment leadership."},
+      {"mode": "decisive_event", "angle": "Open on the risky 1990 shift from British Telecom to venture investing."}
+    ],
+    "excluded_transient_context": ["The selected Zig Zag vessel and regatta results", "Fund valuations, private-company account values and assumed personal proceeds", "An unsupported current Apax title", "The younger same-name Deontics director born May 1971"],
+    "source_ids": ["S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": ["investor_philanthropist"],
+    "notes": "The short identity card names the public board examples and technology specialism. The longer profile instead develops the career decision, market setting and present private interests; it does not repeat the board examples or suggest he remains an Apax partner."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 92, "band": "high", "reason": "Forbes-first exact-name and dedicated-profile searches found Forbes articles mentioning McMonigall as Apax's telecoms specialist but no dedicated Forbes person profile. An article mention is not a Forbes profile link."},
+    "source_ids": ["S2"]
+  },
+  "wealth_creation_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "McMonigall's defining economic career was as an Apax equity partner directing venture and private-equity investments in telecommunications and software. Public partnership notices also document his personal limited-partner interests, linking the investment profession to his own capital rather than merely board employment.",
+    "confidence": {"score": 84, "band": "medium", "reason": "Forbes, SEC company filings, Autonomy's annual report and public limited-partnership notices converge on a two-decade equity-partner and investor career. The records establish a material investment mechanism without publishing his individual carry, fund stake or overall fortune."},
+    "source_ids": ["S2", "S3", "S4", "S5", "S10", "S11"]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Finance & Investments is the origin-sector fallback. Current filings show personal investment and property-company control and an active technology-company stake, but do not establish which present holding is principal by value.",
+    "confidence": {"score": 74, "band": "medium", "reason": "The Apax investment career is the clearest demonstrated wealth-producing sector. Active Companies House control filings and a later personal limited-partner transfer support continuing investment activity, while neither the property nor Deontics position is shown to supersede that capital. The current asset mix remains uncertain, so the sector is explicitly a fallback."},
+    "source_ids": ["S4", "S6", "S7", "S8", "S10"]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "His documented route was a senior telecoms career followed by a long equity partnership and personal fund investments, not succession to an identified inherited operating asset. Broad Self-made describes career-earned and invested capital; the starting family and financing position is not evidenced enough for a subtype.",
+    "confidence": {"score": 73, "band": "medium", "reason": "SEC career records, an Apax partnership history and Gazette evidence of personally held fund interests supply positive premises for a career-built investment asset. They do not quantify inheritance, initial family resources or individual partnership proceeds, so neither independent-start nor advantaged-start is asserted."},
+    "source_ids": ["S3", "S4", "S5", "S10", "S11"]
+  },
+  "wealth_relationship": {
+    "classification": "investor",
+    "label": "Investor",
+    "summary": "After leaving Apax, McMonigall has held personal limited-partner interests and continues to exercise significant control through a property company and an active shareholding in Deontics. His role is best described as an investor, not founder of the healthcare technology venture or current Apax operator.",
+    "confidence": {"score": 72, "band": "medium", "reason": "Official Gazette transfers document a personal fund interest, while Companies House currently records his 75%-plus voting control of McMonigall FIC and 25–50% ownership of Deontics. These positive, repeated ownership premises support the broad Investor relationship; the precise allocation and relative value of his current assets remain unavailable."},
+    "source_ids": ["S6", "S7", "S8", "S10"]
+  },
+  "biography": {
+    "plain_text": "John McMonigall is a British investor whose career joined senior work at British Telecom with two decades at Apax Partners. He led the firm's telecommunications and software investments, drawing on his operating background to assess and guide emerging companies. Board roles at Autonomy and Dialog Semiconductor accompanied that investment work across European technology markets.",
+    "html": "<p>John McMonigall is a British investor whose career joined senior work at British Telecom with two decades at Apax Partners. He led the firm's telecommunications and software investments, drawing on his operating background to assess and guide emerging companies. Board roles at Autonomy and Dialog Semiconductor accompanied that investment work across European technology markets.</p>\r\n",
+    "word_count": 54,
+    "confidence": {"score": 88, "band": "high", "reason": "SEC and company annual-report biographies directly document the BT, Apax and board roles; Forbes and independent reporting corroborate his investment specialism."},
+    "source_ids": ["S2", "S3", "S4", "S5"]
+  },
+  "long_biography": {
+    "plain_text": "John McMonigall joined Apax Partners in 1990 after managing customer-service operations at British Telecom. His move into venture investing came during a downturn in technology valuations, a setting he later recalled as both risky and full of opportunity. At Apax he came to lead telecommunications investments, bringing an operator's understanding to companies developing communications and software products.\n\nHis work carried into the boardrooms of listed and private technology companies. After two decades with Apax, McMonigall continued holding directorships and personal investments. He is a shareholder and director of Deontics, a clinical decision-support software business, and controls voting rights in a property company carrying his name.",
+    "html": "<p>John McMonigall joined Apax Partners in 1990 after managing customer-service operations at British Telecom. His move into venture investing came during a downturn in technology valuations, a setting he later recalled as both risky and full of opportunity. At Apax he came to lead telecommunications investments, bringing an operator's understanding to companies developing communications and software products.</p>\r\n<p>His work carried into the boardrooms of listed and private technology companies. After two decades with Apax, McMonigall continued holding directorships and personal investments. He is a shareholder and director of Deontics, a clinical decision-support software business, and controls voting rights in a property company carrying his name.</p>\r\n",
+    "word_count": 105,
+    "confidence": {"score": 82, "band": "medium", "reason": "The direct interview, SEC career records, Apax departure chronology and current Companies House filings support each distinct career and current-investment element without claiming a ranking of his holdings."},
+    "source_ids": ["S3", "S4", "S5", "S6", "S7", "S8", "S9", "S11"]
+  },
+  "proposed_details": [
+    {"field": "middle_names", "value": "Phillips", "action": "fill_missing", "confidence": {"score": 89, "band": "high", "reason": "The July 1943 Companies House officer identity repeatedly uses John Phillips McMonigall, matches the saved year, and is separable from a younger full-name namesake by birth month and year."}, "source_ids": ["S6", "S7", "S8"]},
+    {"field": "main_residence_country", "value": "United Kingdom", "action": "fill_missing", "confidence": {"score": 88, "band": "high", "reason": "Current Companies House identity-verified officer and control filings list United Kingdom or England as his country of residence; the proposed page option is United Kingdom."}, "source_ids": ["S6", "S7", "S8"]},
+    {"field": "birth_month", "value": "July", "action": "fill_missing", "confidence": {"score": 90, "band": "high", "reason": "Current Companies House filings give July 1943, independently consistent with the saved 1943 year and a contemporary SEC filing reporting age 62 in 2006."}, "source_ids": ["S3", "S6", "S7"]},
+    {"field": "known_for_title", "value": "Former Apax telecommunications investment partner", "action": "fill_missing", "confidence": {"score": 91, "band": "high", "reason": "SEC filings, Autonomy's annual report and Forbes directly identify the long Apax investment partnership; 'former' avoids a stale current title."}, "source_ids": ["S2", "S3", "S4"]},
+    {"field": "biography", "value": "<p>John McMonigall is a British investor whose career joined senior work at British Telecom with two decades at Apax Partners. He led the firm's telecommunications and software investments, drawing on his operating background to assess and guide emerging companies. Board roles at Autonomy and Dialog Semiconductor accompanied that investment work across European technology markets.</p>\r\n", "action": "fill_missing", "confidence": {"score": 88, "band": "high", "reason": "The original biography is blank; the proposed account uses independently documented business work and omits vessel content."}, "source_ids": ["S2", "S3", "S4", "S5"]}
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [
+    {"tag_id": "tag_0192", "name": "Venture capital", "summary": "McMonigall spent two decades as an Apax equity partner directing venture investment in telecommunications and software, with personal investment interests documented in partnership notices.", "relationship_type": "long_term_investment_partner", "temporal_scope": "former_but_defining", "taxonomy_value": "Groups principals whose defining and material work was backing and developing young companies with venture capital, not a short advisory job or incidental board seat.", "confidence": {"score": 86, "band": "high", "reason": "Forbes, a direct interview, SEC filings and the investment partnership record establish a long, principal venture-capital specialism that meets the active tag's historical-defining rule."}, "source_ids": ["S2", "S3", "S5", "S10"]}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1448", "title": "John McMonigall saved owner record, person ID 1448", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Canonical British nationality, UK birth country, male gender, 1943 birth year and Alive status; residence, biography and socials are blank.", "The selected Zig Zag vessel is an identity clue only and supplies no wealth, profession or tag evidence."]},
+    {"id": "S1", "url": "https://superyachtchallengeantigua.com/zig-zag-awarded-the-gosnell-trophy", "title": "Zig Zag awarded the Gosnell Trophy", "publisher": "Superyacht Challenge Antigua", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The race organiser directly calls the matching Oyster 82 Zig Zag John McMonigall's boat in 2020.", "This public matching name and vessel forms an independent identity bridge, not an economic classification basis."]},
+    {"id": "S2", "url": "https://www.forbes.com/forbes/2000/0417/6509128a.html", "title": "Globetrotter", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-19", "supports": ["A Forbes investment-firm article identifies John McMonigall as the former British Telecom manager heading Apax's telecoms group, but is not his dedicated person profile.", "It describes venture-fund economics and the firm's technology investments, not an individual McMonigall net worth or payout."]},
+    {"id": "S3", "url": "https://www.sec.gov/Archives/edgar/data/1116581/000111658106000013/form_20-f.htm", "title": "Dialog Semiconductor annual filing, director biography", "publisher": "Dialog Semiconductor filing with the U.S. Securities and Exchange Commission", "tier": 1, "accessed_at": "2026-09-19", "supports": ["John McMonigall, aged 62 in the 2006 filing, had led BT customer service and joined Apax as an investment director in 1990.", "The filing identifies his software and telecommunications investment role and board positions including Autonomy and Dialog."]},
+    {"id": "S4", "url": "https://www.annualreports.com/HostedData/AnnualReports/PDF/autn2010.pdf", "title": "Autonomy annual report 2010, director biography", "publisher": "Autonomy Corporation", "tier": 1, "accessed_at": "2026-09-19", "supports": ["McMonigall was an Apax partner from April 1990 to April 2010, focused on telecoms, software and related fields.", "The company report confirms a longstanding non-executive directorship and distinguishes a past Apax role from present ones."]},
+    {"id": "S5", "url": "https://en.globes.co.il/en/article-836665", "title": "Time for VC to consolidate", "publisher": "Globes", "tier": 2, "accessed_at": "2026-09-19", "supports": ["A direct 2004 McMonigall interview describes Sir Ronald Cohen's recruitment, the risky 1990 market, lower technology valuations and his venture-capital leadership.", "This supplies a career decision and context without proving personal transaction returns."]},
+    {"id": "S6", "url": "https://find-and-update.company-information.service.gov.uk/officers/Io-YLfMGP4mWXt6UsjTckGal1N0/appointments", "title": "John Phillips McMonigall personal appointments", "publisher": "UK Companies House", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The official officer record gives July 1943, British nationality, United Kingdom residence and current directorships including Deontics and McMonigall FIC.", "Current registrations do not establish which asset supplies his principal private wealth."]},
+    {"id": "S7", "url": "https://find-and-update.company-information.service.gov.uk/company/09869875/persons-with-significant-control", "title": "McMonigall FIC persons with significant control", "publisher": "UK Companies House", "tier": 1, "accessed_at": "2026-09-19", "supports": ["John Phillips McMonigall, born July 1943, currently controls 75% or more voting rights in this active company; another McMonigall controls a majority shareholding.", "Its official overview lists letting and operation of real estate, but neither value nor personal economic stake is determined by voting control alone."]},
+    {"id": "S8", "url": "https://find-and-update.company-information.service.gov.uk/company/08782234/persons-with-significant-control", "title": "Deontics persons with significant control", "publisher": "UK Companies House", "tier": 1, "accessed_at": "2026-09-19", "supports": ["John Phillips McMonigall, born July 1943, actively owns more than 25% but no more than 50% of Deontics shares and voting rights.", "A younger director of the same full name is listed separately with a May 1971 birth date in Deontics' officer register."]},
+    {"id": "S9", "url": "https://deontics.com/about/", "title": "About Deontics", "publisher": "Deontics", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Deontics describes its clinical AI and decision-support software business.", "The company names its scientific and operating founders, so McMonigall's shareholder role is not mistaken for founding its technology."]},
+    {"id": "S10", "url": "https://www.thegazette.co.uk/notice/3446079", "title": "Transfer of Oxford Technology Enterprise Capital Fund limited-partnership interest", "publisher": "The Gazette", "tier": 1, "accessed_at": "2026-09-19", "supports": ["An official 2019 notice transfers an interest from trustees of McMonigall's retirement benefits scheme to John P. McMonigall personally.", "This establishes a personal fund interest but gives no current balance or proceeds."]},
+    {"id": "S11", "url": "https://find-and-update.company-information.service.gov.uk/company/OC303117/filing-history?page=9", "title": "Apax Partners LLP filing history", "publisher": "UK Companies House", "tier": 1, "accessed_at": "2026-09-19", "supports": ["A filing records termination of John McMonigall's LLP membership in 2011, consistent with Autonomy's report that he left the firm after the 2010 partner period.", "The date prevents his historical Apax title being presented as current."]}
+  ],
+  "uncertainties": [
+    "The regatta organiser directly links the name to the matching Zig Zag hull. The saved 1943 birth year and UK identity align with Companies House's July 1943 investment director and SEC age 62 in 2006. No vessel fact informs the biographies, classifications or tag.",
+    "Deontics also has a John Phillips McMonigall born May 1971. Only the July 1943 director and shareholder is joined to the Apax veteran; the two officer records are not merged. The exact birth day, birth place and any additional nationality are not supported.",
+    "Forbes-first search found an article mentioning his Apax role but no dedicated Forbes person profile. Priority LinkedIn, Instagram and personal-site searches yielded no collision-safe personal account; company and regatta sites are not personal socials.",
+    "His Apax partnership, fund economics and personally held limited-partner interests support Finance & Investments and broad Self-made by reasoned inference. Individual carried interest, fund value, family starting circumstances and any inherited resources remain undisclosed; no independent or advantaged subtype is asserted.",
+    "Current Deontics ownership and McMonigall FIC voting control show an Investor relationship, while the principal present asset mix cannot be ranked. Finance & Investments is therefore an explicitly disclosed origin-sector fallback, not an assertion that he still works for Apax or that Deontics or property now dominates his holdings.",
+    "The active Venture capital tag captures his defining specialist investment career. Private equity would overlap in the same semantic dimension, while current technology-company and property interests lack evidence of greater personal materiality."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier. Independent race evidence matches the selected hull; birth-year, SEC and Companies House chronology identify the 1943 Apax partner and exclude a younger same-full-name director. Finance & Investments is creation sector and disclosed current-sector fallback, broad Self-made reflects career-earned investment interests, and present relationship is Investor. Only approved Venture capital is tagged. No shared input, catalogue, cohort or live owner record was modified."
+  }
+}

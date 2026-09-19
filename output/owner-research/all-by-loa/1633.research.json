@@ -1,0 +1,142 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1633,
+    "display_name": "Fikret Orman",
+    "identity_confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Contemporary reporting directly identifies Beşiktaş chairman Fikret Orman with the yacht La Paradiso, which the matching Paradiso hull history lists as its launch name. The club, Orsan and UK corporate filings independently join the same full name, November 1967 birth, Turkish residence and industrial role."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": ["Wikipedia"],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Turkish automotive-component industrialist and former president of Beşiktaş JK.",
+    "defining_work": "Chairs the father-founded Orsan commercial-vehicle braking-equipment manufacturer and led its expansion through the Edbro acquisition.",
+    "formative_context": "His father Abdülkadir founded Orsan in the early 1970s, and his brother describes it as the family's company.",
+    "decisive_moment": "Orsan's move into British hydraulic-equipment manufacturing extended the family industrial platform internationally.",
+    "enduring_dimensions": ["Family-controlled industrial leadership", "Commercial-vehicle component manufacturing", "Former leadership of a prominent Istanbul football club"],
+    "character_detail": "His industrial career and his Beşiktaş presidency are distinct public roles; the latter is not treated as the source of his company wealth.",
+    "opening_options": [
+      {"mode": "present_identity", "angle": "Introduce his current Orsan industrial role alongside the former Beşiktaş presidency."},
+      {"mode": "institution_or_asset", "angle": "Open with the family manufacturer and trace its transition from his father's machine-parts workshop."}
+    ],
+    "excluded_transient_context": ["The Paradiso yacht and the reported theft episode", "Personal wealth estimates and acquisition valuation", "Unverified allegations and private-family reporting", "Any suggestion that he still presides over Beşiktaş"],
+    "source_ids": ["S3", "S4", "S5", "S6", "S8", "S9", "S10", "S11"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "identity_then_origin",
+    "calibration_archetypes": ["inherited_operator"],
+    "notes": "The short card gives his present industrial identity and former sports leadership. The longer profile follows the family firm's origins and product evolution, then distinguishes the later club presidency from the Edbro-led expansion; it avoids treating sporting office as a wealth source."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 91, "band": "high", "reason": "Mandatory Forbes-first dedicated-profile and exact-name searches did not find a Forbes person profile for the Turkish Orsan chairman and former Beşiktaş president."},
+    "source_ids": []
+  },
+  "wealth_creation_industry": {
+    "classification": "automotive",
+    "label": "Automotive",
+    "summary": "The documented family-derived economic asset is Orsan, a manufacturer of commercial-vehicle brake equipment. Orman now chairs the company and is described as its owner in reporting on its acquisition of a British vehicle-hydraulics producer. His Beşiktaş presidency is a separate sporting office, not the demonstrated wealth mechanism.",
+    "confidence": {"score": 88, "band": "high", "reason": "Orsan's own company history documents the father-founded, specialised automotive manufacturing platform and Orman's chairmanship. A direct family interview confirms the relationship and family-company character; business reporting names him owner. Individual stake percentages and total wealth remain unpublished."},
+    "source_ids": ["S3", "S4", "S5", "S6", "S8"]
+  },
+  "primary_industry": {
+    "classification": "automotive",
+    "label": "Automotive",
+    "summary": "He remains chairman of Orsan's commercial-vehicle component business. UK filings identify him as an active director of Orsan Automotive and Edbro Hydraulics after the Orsan group acquired the latter, supporting Automotive as the principal current industry rather than his former football role.",
+    "confidence": {"score": 94, "band": "high", "reason": "The current Orsan page, 2025–26 Companies House officer and control records, and acquisition reporting converge on active leadership in vehicle-component manufacturing. Other property and tourism interests are documented historically but not shown to supersede this operation."},
+    "source_ids": ["S3", "S6", "S7", "S8", "S9", "S10"]
+  },
+  "wealth_origin": {
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "His father founded Orsan before Fikret's leadership, and a first-person account from his brother identifies it as their family company. Orman is now its chairman and is described as its owner. This supports family succession of the core asset, although the legal transfer route and his precise stake are not public.",
+    "confidence": {"score": 81, "band": "medium", "reason": "The founder-predecessor, father–son relationship, family-business continuity and current owner/operator position are positively documented. No source establishes inheritance specifically or its timing, so the broader family-transfer classification is preferred over either inherited subtype."},
+    "source_ids": ["S3", "S4", "S5", "S6"]
+  },
+  "wealth_relationship": {
+    "classification": "operator",
+    "label": "Operator",
+    "summary": "Orman is an active successor and chairman of the father-founded Orsan manufacturing group. He took part in its international expansion and holds directorships in its British subsidiaries, making Operator more precise than Founder or passive family shareholder.",
+    "confidence": {"score": 93, "band": "high", "reason": "Orsan identifies him as chairman, his quoted acquisition statement describes group strategy, and official UK records show current directorships. His father's founding role excludes treating Fikret as Orsan's founder."},
+    "source_ids": ["S3", "S6", "S7", "S8", "S9"]
+  },
+  "biography": {
+    "plain_text": "Fikret Orman is a Turkish industrialist and former president of Beşiktaş JK. He chairs Orsan, the family-founded manufacturer of braking equipment for commercial vehicles, and has overseen its expansion beyond Turkey. His business role continues alongside the public profile he gained leading the Istanbul football club from 2012 to 2019.",
+    "html": "<p>Fikret Orman is a Turkish industrialist and former president of Beşiktaş JK. He chairs Orsan, the family-founded manufacturer of braking equipment for commercial vehicles, and has overseen its expansion beyond Turkey. His business role continues alongside the public profile he gained leading the Istanbul football club from 2012 to 2019.</p>\r\n",
+    "word_count": 50,
+    "confidence": {"score": 91, "band": "high", "reason": "The company, UK directorship and football-club records independently establish the present industrial chairmanship and concluded club presidency."},
+    "source_ids": ["S3", "S6", "S7", "S8", "S11"]
+  },
+  "long_biography": {
+    "plain_text": "Fikret Orman grew up around Orsan, the engineering business established by his father Abdülkadir in the early 1970s. The company developed from machine parts into braking equipment for commercial vehicles. Orman later took a leading role in the family enterprise and became its chairman, while also pursuing interests in construction and tourism.\n\nHe became widely known outside industry as president of Beşiktaş JK between 2012 and 2019. After leaving the football club, he remained active in manufacturing. Orsan expanded its international reach by bringing British hydraulic-equipment maker Edbro into the group, complementing its existing vehicle-braking products. His public sporting career and his industrial ownership are distinct parts of his record.",
+    "html": "<p>Fikret Orman grew up around Orsan, the engineering business established by his father Abdülkadir in the early 1970s. The company developed from machine parts into braking equipment for commercial vehicles. Orman later took a leading role in the family enterprise and became its chairman, while also pursuing interests in construction and tourism.</p>\r\n<p>He became widely known outside industry as president of Beşiktaş JK between 2012 and 2019. After leaving the football club, he remained active in manufacturing. Orsan expanded its international reach by bringing British hydraulic-equipment maker Edbro into the group, complementing its existing vehicle-braking products. His public sporting career and his industrial ownership are distinct parts of his record.</p>\r\n",
+    "word_count": 110,
+    "confidence": {"score": 87, "band": "high", "reason": "Orsan, the sibling interview, Beşiktaş records, listed-company disclosure, business reporting and UK control filings support the succession, ventures, club dates and industrial expansion without asserting an individual transaction value."},
+    "source_ids": ["S3", "S4", "S5", "S6", "S7", "S8", "S9", "S10", "S11"]
+  },
+  "proposed_details": [
+    {"field": "known_for_title", "value": "Orsan chairman and former Beşiktaş president", "action": "fill_missing", "confidence": {"score": 95, "band": "very_high", "reason": "Current Orsan and UK filings document his industrial chairmanship, and the club dates its presidency to 2012–2019."}, "source_ids": ["S3", "S7", "S11"]},
+    {"field": "gender", "value": "Male", "action": "fill_missing", "confidence": {"score": 96, "band": "very_high", "reason": "Beşiktaş and UK official records consistently identify the exact person as a man using male titles and pronouns."}, "source_ids": ["S7", "S11"]},
+    {"field": "place_of_birth", "value": "Istanbul", "action": "fill_missing", "confidence": {"score": 92, "band": "high", "reason": "Beşiktaş's official 2016 board biography states that Fikret Orman was born in Istanbul in 1967."}, "source_ids": ["S10"]},
+    {"field": "birth_day", "value": "4", "action": "fill_missing", "confidence": {"score": 95, "band": "very_high", "reason": "Beşiktaş's official birthday report expressly gives 4 November 1967 for its then-president, matching his UK officer birth month and year."}, "source_ids": ["S7", "S12"]},
+    {"field": "birth_month", "value": "November", "action": "fill_missing", "confidence": {"score": 96, "band": "very_high", "reason": "Both Beşiktaş's official birthday report and two UK officer records give November 1967."}, "source_ids": ["S7", "S8", "S12"]},
+    {"field": "birth_year", "value": "1967", "action": "fill_missing", "confidence": {"score": 96, "band": "very_high", "reason": "Beşiktaş's official biography and birthday report independently align with Companies House's November 1967 date."}, "source_ids": ["S7", "S8", "S10", "S12"]},
+    {"field": "biography", "value": "<p>Fikret Orman is a Turkish industrialist and former president of Beşiktaş JK. He chairs Orsan, the family-founded manufacturer of braking equipment for commercial vehicles, and has overseen its expansion beyond Turkey. His business role continues alongside the public profile he gained leading the Istanbul football club from 2012 to 2019.</p>\r\n", "action": "fill_missing", "confidence": {"score": 91, "band": "high", "reason": "The saved biography is blank; the proposed person-led summary uses independent business and club evidence and no vessel facts."}, "source_ids": ["S3", "S6", "S7", "S11"]}
+  ],
+  "proposed_socials": [
+    {"type_id": "14", "type": "Company Website", "url": "https://www.orsantr.com/", "verification": "Orsan's official site identifies Fikret Orman by name as its chairman and describes the automotive-components enterprise. The UK Edbro director correspondence address matches the Orsan commercial-vehicle company in Çorlu, confirming the exact company/person association. This is a company site, not a personal website.", "confidence": {"score": 96, "band": "very_high", "reason": "First-party company history and official UK officer filings align on exact person, business and address."}, "source_ids": ["S3", "S7", "S8"]}
+  ],
+  "proposed_tags": [
+    {"tag_id": "tag_0259", "name": "Automotive components", "summary": "Orman chairs and is publicly described as owner of Orsan, the family-founded commercial-vehicle brake-component manufacturer, and participated in its Edbro hydraulic-components expansion.", "relationship_type": "family_successor_owner_and_chairman", "temporal_scope": "current", "taxonomy_value": "Automotive components distinguishes his defining, substantial vehicle-parts manufacturing operation from football-club office, unrelated automotive dealerships and incidental property interests.", "confidence": {"score": 93, "band": "high", "reason": "The official Orsan product and chairmanship record, current UK group filings and independent acquisition coverage satisfy the active tag's substantial-control or long-term-mandate rule."}, "source_ids": ["S3", "S6", "S7", "S8", "S9"]}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1633", "title": "Fikret Orman saved owner record, person ID 1633", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Canonical Turkish nationality and residence, Alive status, blank biography and existing Wikipedia URL.", "The selected Paradiso relationship is an identity clue only, not evidence of occupation, wealth or tags."]},
+    {"id": "S1", "url": "https://www.dailysabah.com/investigations/2019/09/04/human-traffickers-steal-yachts-for-aegean-crossings", "title": "Human traffickers steal yachts for Aegean crossings", "publisher": "Daily Sabah", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Contemporary reporting directly names Beşiktaş chairman Fikret Orman and calls La Paradiso his yacht.", "The theft episode is used strictly for identity resolution and is excluded from biographies and wealth classification."]},
+    {"id": "S2", "url": "https://www.yachtbuyer.com/en/fleet/paradiso-81-kong-and-halvorsen", "title": "Paradiso yacht, 1980 Kong & Halvorsen", "publisher": "YachtBuyer", "tier": 2, "accessed_at": "2026-09-19", "supports": ["The selected 1980 Paradiso hull's launch name was La Paradiso, linking the reported historical name to the saved vessel.", "No vessel specification is used to infer Orman's business or personal wealth."]},
+    {"id": "S3", "url": "https://www.orsantr.com/index.php/about/", "title": "About Orsan", "publisher": "Orsan Ticari Araç Fren Sistemleri", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Abdülkadir Orman founded Orsan in the early 1970s to make machine parts; it later specialised in commercial-vehicle brake equipment.", "The current company page names Fikret Orman chairman and Ümit and Kısmet Orman board members."]},
+    {"id": "S4", "url": "https://bjk.com.tr/tr/haber/64308/baskanimiz_fikret_orman_babasi_abdulkadir_orman_anisina_yapilan_sinifin_acilis_torenine_katildi.html", "title": "Fikret Orman attends a memorial event for his father Abdülkadir", "publisher": "Beşiktaş JK", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The club directly identifies Abdülkadir Orman as Fikret Orman's father.", "This establishes the relationship to the documented Orsan founder, not the legal terms of any business transfer."]},
+    {"id": "S5", "url": "https://www.taysadmag.com/uploads/is-ve-yasam-dengesi19082019173742.pdf", "title": "Work-life balance interview with Ümit Orman", "publisher": "TAYSAD Magazine, issue 109", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Ümit Orman identifies Abdülkadir as the founder of their family company Orsan and Fikret as his brother.", "He recounts growing up in a financially comfortable family, supporting family-platform context without asserting Fikret's exact stake or legal inheritance."]},
+    {"id": "S6", "url": "https://www.dunya.com/kose-yazisi/fikret-orman-ingiliz-devini-satin-aldi/769448", "title": "Fikret Orman acquires British Edbro business", "publisher": "Dünya, Kerim Ülker", "tier": 2, "accessed_at": "2026-09-19", "supports": ["The March 2025 article calls Fikret Orman owner of Orsan Endüstri and quotes him on Orsan Group's Edbro acquisition strategy.", "It describes both Orsan's auto-component manufacturing and the Edbro hydraulic-equipment fit; no individual acquisition price is published."]},
+    {"id": "S7", "url": "https://find-and-update.company-information.service.gov.uk/officers/NqZLKqWMCu-hQKrSyoTxW_kOc2o/appointments", "title": "Fikret Orman appointments at Orsan Automotive Ltd", "publisher": "UK Companies House", "tier": 1, "accessed_at": "2026-09-19", "supports": ["An identity-verified Fikret Orman, born November 1967 and resident in Turkey, is an active Orsan Automotive director from January 2025.", "The officer record independently links his name to the British Orsan vehicle-components group."]},
+    {"id": "S8", "url": "https://find-and-update.company-information.service.gov.uk/officers/aJNd_lCv8I6ddkItZfS4mStutRQ/appointments", "title": "Fikret Orman appointments at Edbro Hydraulics", "publisher": "UK Companies House", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Fikret Orman, born November 1967 and resident in Turkey, is an active Edbro director from April 2025.", "The correspondence address is Orsan's commercial-vehicle brake-equipment company in Çorlu."]},
+    {"id": "S9", "url": "https://find-and-update.company-information.service.gov.uk/company/00283933/persons-with-significant-control", "title": "Edbro Hydraulics persons with significant control", "publisher": "UK Companies House", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Orsan Automotive Ltd has controlled at least 75% of Edbro shares and voting rights since March 2025.", "This is corporate control and does not disclose Fikret Orman's own percentage interest."]},
+    {"id": "S10", "url": "https://bjk.com.tr/tr/mobil/haber?news_id=66473", "title": "Beşiktaş 2016 board election biographies", "publisher": "Beşiktaş JK", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The club's biography says Fikret Orman was born in Istanbul in 1967 and served as a board chair or member in industry, tourism and construction.", "The brief supports birthplace and secondary interests without ranking their personal economic values."]},
+    {"id": "S11", "url": "https://bjk.com.tr/tr/mobil/haber?news_id=84416", "title": "Beşiktaş remembers its former president Fikret Orman", "publisher": "Beşiktaş JK", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Beşiktaş states that Fikret Orman held its presidency between 2012 and 2019.", "The office is historical and is not treated as Orsan wealth origin."]},
+    {"id": "S12", "url": "https://bjk.com.tr/tr/haber/53673/baskanimizin_dogum_gunu_kutlandi.html", "title": "Birthday celebrated for Beşiktaş president Fikret Orman", "publisher": "Beşiktaş JK", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The club explicitly gives 4 November 1967 as Fikret Orman's birth date.", "The day, month and year align with Companies House's November 1967 records."]}
+  ],
+  "uncertainties": [
+    "A contemporary source calls his boat La Paradiso and the matching 1980 hull's published history gives La Paradiso as Paradiso's launch name. This compound bridge identifies the owner; yacht facts are excluded from biographies, classifications and tags.",
+    "Forbes-first searches found no dedicated Forbes person profile. The saved Wikipedia page is about the resolved Beşiktaş president, but neither the Mynet-linked same-name LinkedIn nor an unverified Instagram handle was proposed as his personal account. Orsan is proposed solely as a company website.",
+    "Orsan's founder, Fikret's father, family-company continuity and Fikret's present ownership description support family transfer. The inheritance or inter vivos legal route, individual share percentage, valuation and relative weight of his property or tourism interests are not public; the inherited subtypes and Mixed origin are therefore avoided.",
+    "His Beşiktaş presidency ended in 2019 and is a public-profile chapter, not a demonstrated source of private industrial wealth. Current UK director and company-control filings make the automotive operation the stronger present-industry evidence.",
+    "The primary active Automotive components tag captures the distinct vehicle-parts operation. Football, property, tourism and general manufacturing tags would either confuse public office with material wealth or overlap without sufficient evidence."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person review. A public La Paradiso/Paradiso identity bridge, first-party family-manufacturer history, club birth and presidency records, current UK directorships and reported Orsan ownership establish the profile. Automotive is creation/current industry; Marriage / family transfer records the supported succession without claiming inheritance; Operator captures active chairmanship. Only approved Automotive components is assigned."
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 7396,
+    "display_name": "Greg Landis",
+    "identity_confidence": {
+      "score": 46,
+      "band": "insufficient",
+      "reason": "The saved Chicago biography and selected Plane To Sea relationship are compatible with public Chicago boating records, but a Chicago Yacht Club notice explicitly identifies both a son and his father as Gregory Landis among co-owners of an earlier, different Plane to Sea. The current harbour record gives Gregory J. Landis without disambiguating which family member or linking either to the saved Logic One and InContext roles. The exact person and wealth-bearing business are below the resolution threshold."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "The saved record describes Greg Landis as a Chicago smart-home business owner and real-estate asset manager and associates him with Plane To Sea. A yacht-club membership notice, however, names two Chicago relatives both called Gregory Landis as co-owners of an earlier boat with that name. A later harbour record links Gregory J. Landis to a larger Plane To Sea but does not resolve the father-son identity or either man's career. Public business and social results do not independently join the saved occupations to one identified person. The existing biography is left untouched, but no new biography, wealth classification, personal detail, social profile or tag can safely be proposed.",
+    "confidence": {"score": 94, "band": "high", "reason": "The note distinguishes the authoritative saved claims from an independent two-person yacht-club collision, the later harbour entry and unbridged business-profile results."},
+    "source_ids": ["S0", "S2", "S3", "S4", "S5", "S6"]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 94, "band": "high", "reason": "Mandatory Forbes-first exact-name, profile-path and Logic One-qualified searches found no dedicated Forbes person profile attributable to the saved Greg Landis. No name-only Forbes hit is proposed."}
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No principal wealth-producing sector is securely established for the particular Greg Landis in the source record.",
+    "confidence": {"score": 24, "band": "insufficient", "reason": "The saved biography names smart-home services and real-estate asset management, but neither public occupational trail is tied decisively to the present yacht-associated Gregory Landis or shown to be a material personal wealth mechanism."},
+    "source_ids": ["S0", "S2", "S3", "S5", "S6"]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The saved owner's current principal economic activity cannot be assigned collision-safely.",
+    "confidence": {"score": 21, "band": "insufficient", "reason": "The public InContext profile establishes a Chicago same-name professional, while a directory separately surfaces a Chicago Logic One profile. Neither is independently linked to the harbour registrant or establishes which venture, if any, is his principal current interest."},
+    "source_ids": ["S0", "S3", "S5", "S6"]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No founder-built, earned, acquired or family-transferred principal asset is evidenced for this specific owner.",
+    "confidence": {"score": 14, "band": "insufficient", "reason": "The source biography's owner title is uncorroborated as to the exact person and gives no start-capital or ownership-history evidence. The father-son yacht relationship cannot be used as proof of inheritance or an advantaged commercial start."},
+    "source_ids": ["S0", "S2", "S3", "S5", "S6"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No personal founder, operator, investor or family-shareholder relationship to a principal wealth asset is established.",
+    "confidence": {"score": 17, "band": "insufficient", "reason": "The saved company-role claim lacks an independent exact-person bridge. A harbour berth and an older shared boat identify boating participation, not a principal wealth asset or business-control relationship."},
+    "source_ids": ["S0", "S2", "S3", "S5", "S6"]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=7396", "title": "Greg Landis saved owner record, person ID 7396", "publisher": "Superyacht Network; immutable owner export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The saved record identifies Greg Landis as American, US-resident, male and alive; birth details and social profiles are blank.", "Its existing biography describes Chicago residence, ownership and presidency of Logic One Solutions, and a real-estate asset-management role at InContext Advisors. These are unverified baseline claims, not independent proof.", "The source relationship selects a 25.9-metre, 117-GT Plane To Sea from April 2022. This is identity context, not evidence of occupation or wealth."]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Greg%20Landis", "title": "Forbes exact-name and profile searches", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Forbes-first searches for the exact name, Forbes profile path and Logic One combination found no dedicated Forbes person profile securely attributable to this owner."]},
+    {"id": "S2", "url": "https://www.yachtbuyer.com/en-us/fleet/plane-to-sea-84-westport-yachts", "title": "Plane To Sea, 2012 Westport Pacific Mariner 85", "publisher": "YachtBuyer", "tier": 2, "accessed_at": "2026-09-19", "supports": ["The public vessel listing matches the selected 25.9-metre length and 117 GT and identifies a 2012 Westport/Pacific Mariner hull, formerly Northern Answer and BossMan.", "The page does not identify Greg or Gregory Landis as owner, so the exact hull match does not settle the person collision."]},
+    {"id": "S3", "url": "https://www.chicagoyachtclub.org/files/2006-Spring%20Blinker.pdf", "title": "Spring 2006 Blinker membership notice", "publisher": "Chicago Yacht Club", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The club separately describes brothers Daniel and Gregory Landis as co-owners of a 57-foot Carver named Plane to Sea alongside their father, also Gregory Landis.", "The younger Gregory is described as a Chicago Keller Williams real-estate agent with wife Wendy; the notice does not state the father's occupation or either man's middle name.", "This earlier Carver is not the selected 2012-built 25.9-metre Westport/Pacific Mariner hull."]},
+    {"id": "S4", "url": "https://www.chicagoharbors.info/wp-content/uploads/2026/05/Transfer-List-20260522.pdf", "title": "Chicago Park District transfer list, May 2026", "publisher": "Chicago Park District / Chicago Harbors", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The current harbour list associates Gregory J. Landis with the powerboat Plane To Sea at Burnham Harbor and an 80-foot berth request.", "It does not name his occupation, family relationship or the hull's identifying build particulars; it cannot establish whether the registrant is the father or son in the 2006 club notice."]},
+    {"id": "S5", "url": "https://www.linkedin.com/in/greg-landis-76985425", "title": "Greg Landis at InContext Advisors", "publisher": "LinkedIn", "tier": 3, "accessed_at": "2026-09-19", "supports": ["A public Greg Landis profile lists InContext Advisors and the Greater Chicago Area, consistent with one role in the saved biography.", "The public profile provides no verified boat, family or Logic One link that would authenticate it as the exact saved owner; it is not proposed as a personal social."]},
+    {"id": "S6", "url": "https://www.linkedin.com/pub/dir/Greg/Landis", "title": "Greg Landis public profile directory", "publisher": "LinkedIn", "tier": 3, "accessed_at": "2026-09-19", "supports": ["The directory displays separate Greater Chicago Area same-name profiles for InContext Advisors and Logic One Solutions, illustrating that the two company names are not by themselves an authenticated single career.", "The directory does not settle whether the profiles are duplicates or different people and supplies no yacht bridge; no social is proposed."]}
+  ],
+  "uncertainties": [
+    {"topic": "Father-son collision", "detail": "The Chicago Yacht Club explicitly identifies two living Gregory Landises in one boating family, both associated with an older Plane to Sea. It gives an occupation only for the son. The later Gregory J. Landis harbour entry is a useful vessel-name bridge, but neither the club nor harbour document disambiguates the current source owner or proves that he is the saved smart-home executive."},
+    {"topic": "Different hulls", "detail": "The 2006 family boat was a 57-foot Carver. The source-selected vessel matches a 2012-built 25.9-metre, 117-GT Westport/Pacific Mariner listed publicly under the same name. Continuity of a boat name or family boating activity does not prove ownership of this specific hull by a particular Gregory Landis."},
+    {"topic": "Business and wealth", "detail": "The owner export already contains a Logic One/InContext biography. Public LinkedIn results substantiate namesake company associations but neither a confirmed cross-company career nor a material personal equity, income or transfer mechanism tied to the current yacht owner. All four wealth fields remain Unknown; the saved biography is not replaced."},
+    {"topic": "Forbes and personal profiles", "detail": "No qualifying Forbes profile was found. LinkedIn, Instagram, Facebook, X, TikTok and personal-site searches did not authenticate a collision-safe account for the source person. The Chicago InContext LinkedIn candidate remains excluded; no social or demographic correction is proposed."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal insufficient-evidence decision. The exact selected hull is publicly identifiable and the Chicago boating trail is real, but the two same-name family members and unbridged business profiles prevent a reliable person-to-wealth classification. Existing source biography remains untouched. Forbes-first and priority-social checks are complete. No biography, personal detail, social, tag or taxonomy candidate is proposed. No other file or live system was altered."
+  }
+}

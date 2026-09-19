@@ -1,0 +1,89 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 3169,
+    "display_name": "Bruce Jeffery",
+    "identity_confidence": {
+      "score": 38,
+      "band": "insufficient",
+      "reason": "The source record identifies an American Bruce J. Jeffery born in 1954, but its existing biography was copied from an Australian Bruce Leslie Jeffery born in 1944. Public sources verify the exact 25.78-metre Horizon Journey without naming its owner. A New Jersey property broker called Bruce Jeffery, several American same-name professionals and an Australian politician remain unbridged to the canonical person and vessel. No external occupational identity reaches the 75-point threshold."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "researchable_missing_details": ["secondary_nationality", "known_for_title", "place_of_birth", "birth_day", "birth_month"],
+    "optional_missing_details": ["name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "identity_conflict",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "The saved biography describes Bruce Leslie Jeffery, an Australian politician whose public parliamentary record conflicts with this American Bruce J. Jeffery's stored birth year and middle initial. Public yacht records identify the 25.78-metre Horizon Journey but do not identify its owner. A similarly named New Jersey property broker and other professionals have no collision-resistant connection to this person record. The politician's biography should be quarantined for human correction; no replacement life story or social profile can yet be supported.",
+    "confidence": {"score": 96, "band": "very_high", "reason": "The exact source record, official New South Wales parliamentary profile and independent vessel specifications establish the biography contamination and current absence of a safe external identity bridge without assigning any namesake's career."},
+    "source_ids": ["S1", "S3", "S4", "S5", "S6", "S7"]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 97, "band": "very_high", "reason": "Mandatory exact-name, Bruce J. Jeffery and site:forbes.com/profile searches found no dedicated Forbes profile that matches this American owner record or its Horizon Journey context."}
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No principal wealth-producing business or sector can be securely attached to the American Bruce J. Jeffery in the source record.",
+    "confidence": {"score": 95, "band": "very_high", "reason": "The New Jersey property broker is the strongest commercial name match, but neither the yacht coverage nor an exact personal identifier ties him to the source record. The Australian politician is positively excluded by nationality, birthplace, middle name and birth-year conflicts. Real Estate, public office and other same-name occupations cannot supply a wealth-creation sector, and vessel ownership is not economic evidence."},
+    "source_ids": ["S1", "S3", "S4", "S6", "S7"]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The current principal private business or holding is unestablished; there is no known creation sector available for an origin-sector fallback.",
+    "confidence": {"score": 95, "band": "very_high", "reason": "Public Horizon and brokerage descriptions do not name the vessel's owner or a business interest. A New Jersey realty firm's president shares the name, and an unrelated Australian political record appears in the stored biography, but neither is verified as this person. No current sector or less-specific supported industry reaches the threshold."},
+    "source_ids": ["S1", "S3", "S4", "S5", "S6", "S7"]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No founder-built, inherited, transferred, purchased or career-earned principal wealth mechanism is attributable to this unresolved owner identity.",
+    "confidence": {"score": 96, "band": "very_high", "reason": "The saved record gives no occupational history, and public yacht sources disclose no ownership structure or source of funds. A same-name broker's executive role would not establish this person's founder-built wealth even if identity were proved. Self-made, family transfer and mixed origin have no positive personal-asset premises."},
+    "source_ids": ["S1", "S4", "S5", "S6"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No founder, operator, investor, heir or other present asset relationship can be identified for the source-record person.",
+    "confidence": {"score": 96, "band": "very_high", "reason": "The public Journey entries withhold owner names and do not identify any business platform. The realty president and other same-name professionals cannot be transferred to this record, and the politician biography belongs to a different person. Neither a current operating mandate nor an investment or family-shareholder role is evidenced."},
+    "source_ids": ["S1", "S3", "S4", "S5", "S6", "S7"]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S1", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=3169", "title": "Bruce Jeffery owner record, person ID 3169", "publisher": "Superyacht Network; saved authoritative export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Immutable record gives American nationality, US residence and birth country, middle initial J., birth year 1954, male and Alive source values, with no socials.", "Existing biography reproduces the Australian Bruce Leslie Jeffery political account despite those conflicting identifiers.", "Current source relationship names Journey at 25.78 metres and 79 GT; vessel data are identity context only."]},
+    {"id": "S2", "url": "https://www.forbes.com/search/?q=Bruce%20Jeffery", "title": "Forbes search for Bruce Jeffery", "publisher": "Forbes", "tier": 3, "accessed_at": "2026-09-19", "supports": ["Forbes-first exact-name, middle-initial and profile-restricted searches produced no securely matching dedicated profile."]},
+    {"id": "S3", "url": "https://www.parliament.nsw.gov.au/members-and-electorates/members-and-ministers/members-details?memberId=2010&ref=1845", "title": "Mr Bruce Leslie Jeffery parliamentary biography", "publisher": "Parliament of New South Wales", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Official profile identifies the saved biography's subject as Bruce Leslie Jeffery, born in Shepparton, Victoria, Australia and a former NSW legislator.", "His middle name, Australian birthplace and political life conflict with the source-record American Bruce J. Jeffery born in 1954; no link to Journey is given."]},
+    {"id": "S4", "url": "https://www.yachtbuyer.com/en/fleet/journey-84-horizon", "title": "Journey yacht overview", "publisher": "YachtBuyer", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Public entry matches the 25.78-metre, 79-GT Horizon Journey delivered in 2021 and flagged in the United States.", "The page describes an American owner but does not identify Bruce Jeffery or another individual."]},
+    {"id": "S5", "url": "https://www.galatiyachts.com/yachts/details/2834530/2021/horizon/e81/", "title": "Journey Horizon E81 sale listing", "publisher": "Galati Yacht Sales", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Broker listing matches the 2021 Journey hull and refers to an experienced original owner without naming that person or a beneficial-owner entity.", "Listing does not connect the yacht to the New Jersey realty professional or establish an economic sector."]},
+    {"id": "S6", "url": "https://jefferyrealty.com/agent/brucejeffery/", "title": "Bruce Jeffery, president of Jeffery Realty", "publisher": "Jeffery Realty", "tier": 1, "accessed_at": "2026-09-19", "supports": ["A first-party New Jersey business page identifies a same-name retail-property brokerage president.", "It provides no middle initial, birth-year or Journey connection, so the occupation and company website are not assigned to the source owner."]},
+    {"id": "S7", "url": "https://www.linkedin.com/pub/dir/Bruce/Jeffery", "title": "Bruce Jeffery LinkedIn directory", "publisher": "LinkedIn", "tier": 3, "accessed_at": "2026-09-19", "supports": ["Directory displays numerous same-name profiles in the United States and other countries across unrelated occupations.", "No account is linked from an authenticated owner-specific website or directly to Journey; name-only LinkedIn results are not proposed."]},
+    {"id": "S8", "url": "https://southernboating.com/boats/an-in-depth-journey-upgrading-to-the-horizon-e81-luxury-yacht/", "title": "An in-depth Journey: upgrading to the Horizon E81", "publisher": "Southern Boating", "tier": 3, "accessed_at": "2026-09-19", "supports": ["Specialist boat feature profiles an unnamed retiring owner couple and Horizon E81 construction choices.", "Names and commercial backgrounds are withheld; the model description cannot establish that the couple are this source-record person's household or provide his wealth mechanism."]}
+  ],
+  "uncertainties": [
+    "The existing biography is demonstrably cross-person contamination: its linked Bruce Leslie Jeffery is an Australian former legislator, whereas this source entry records American nationality, United States birthplace, middle initial J. and birth year 1954. The politician's career and 1944 birth date must not be reused. Because identity remains unresolved, no replacement biography is proposed; human review should address removal of the wrong live text separately.",
+    "YachtBuyer matches the saved Journey's unusually exact 25.78-metre length, 79-GT volume and Horizon build; the public profile says only that an American commissioned it. The broker and magazine items name no owner. The source's relationship begins in 2020 although public delivery is recorded in 2021, a timing difference that cannot identify a person.",
+    "Bruce Jeffery of New Jersey's Jeffery Realty is a plausible name and US-geography match, but there is no public middle-initial, birth-year, company-vessel or owner-source bridge. The vessel's sale listing and New Jersey property activity cannot establish that he is the canonical owner or that his brokerage is a principal wealth platform.",
+    "Priority LinkedIn, Instagram and personal-website searches, followed by Facebook, X, YouTube and TikTok, surfaced no collision-safe personal profile. The first-party Jeffery Realty site belongs to an unbridged same-name professional and is not proposed as the owner's Company Website.",
+    "All four wealth fields remain Unknown, with no active tags. Public vessel ownership alone cannot establish sector, asset origin or economic role; the wrongly attached politician profile and unbridged same-name broker cannot be used as substitutes.",
+    "A direct owner interview, registry record or verified person-specific profile linking Bruce J. Jeffery to the exact Horizon Journey and an identifiable business would permit renewed identity and wealth research."
+  ],
+  "review": {"status": "complete", "notes": "Terminal identity_conflict decision. Forbes-first search, exact source inventory, official Australian politician comparison, Journey hull matching, US business namesake checks and priority-social searches were completed. The live-source biography is misattributed to a different person, while no public bridge securely identifies this American Bruce J. Jeffery. No biography, field, social, tag or wealth conclusion is proposed; nothing was compiled or applied."}
+}

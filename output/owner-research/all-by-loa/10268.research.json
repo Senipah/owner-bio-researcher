@@ -1,0 +1,139 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 10268,
+    "display_name": "Jean-Jack Bertrand",
+    "identity_confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The authoritative French owner record saves the exact LinkedIn URL, which identifies a Courchevel Le Tremplin restaurateur. The restaurant's first-party history, a direct interview, contemporaneous transaction reporting and French company registers identify the same Jean-Jack Bertrand; the register gives December 1956, matching the source birth month and year. His yacht-related company offers additional context but does not document title to the selected Getaway hull. Other Jean-Jacques Bertrand namesakes are excluded."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_country", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "birth_country", "death_day", "death_month", "death_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": ["LinkedIn"],
+    "missing_priority_social_types": ["Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Jean-Jack Bertrand is a former French champion skier and a Courchevel restaurateur who succeeded his father at Le Tremplin.",
+    "defining_work": "He ran and developed the family's high-end Le Tremplin restaurant for decades, before the restaurant business and associated property interests were sold in 2025.",
+    "formative_context": "His father founded Le Tremplin; Jean-Jack entered the family business after a competitive skiing career and assumed charge in 1998.",
+    "decisive_moment": "Bertrand broadened the restaurant's offer after succession and later acquired L'Auberge de Savoie in Moûtiers.",
+    "enduring_dimensions": ["National downhill skiing success before hospitality", "Long-running leadership of a family-founded Courchevel restaurant", "Continuing hotel and restaurant operations through L'Auberge de Savoie"],
+    "character_detail": "He has described bringing foods he found on his travels to the restaurant's Courchevel clientele.",
+    "opening_options": [
+      {"mode": "present_identity", "angle": "Orient readers to the former skier's move into family hospitality and his continuing hotel business."},
+      {"mode": "formative_episode", "angle": "Begin with his father's urging him to work at Le Tremplin despite his skiing career."},
+      {"mode": "decisive_event", "angle": "Begin with the transfer of the Courchevel restaurant and then show his stewardship of it."}
+    ],
+    "excluded_transient_context": ["The selected Getaway vessel and speculative legal yacht title", "Stale Le Tremplin website text implying he still owns the restaurant after the 2025 sale", "Transaction value and changing hotel financial figures", "Unverified exact inheritance instrument, present real-estate portfolio value and personal wealth", "An unverified place of birth or second nationality", "Restaurant menus, promotional superlatives and age"],
+    "source_ids": ["S0", "S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": ["inherited_operator"],
+    "notes": "The 53-word short biography identifies the skiing-to-hospitality transition, family succession, sale and retained hotel role. The two-paragraph long biography starts with his ski career, supplies first-person formative detail, describes how he changed Le Tremplin and independently develops his ongoing Moûtiers business. Both are person-led, source-invisible and free of yacht or valuation claims."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 95, "band": "very_high", "reason": "Mandatory Forbes-first exact-name, skiing and Le Tremplin searches, including site:forbes.com/profile/, found no dedicated Jean-Jack Bertrand person profile. No coverage or namesake page is presented as one."}
+  },
+  "wealth_creation_industry": {
+    "classification": "hospitality",
+    "label": "Hospitality",
+    "summary": "His documented core economic asset was the family-founded Le Tremplin restaurant in Courchevel, which he succeeded to, operated and developed before its sale.",
+    "confidence": {"score": 96, "band": "very_high", "reason": "Le Tremplin's first-party history and Bertrand's direct account establish his decades of restaurant leadership. A European Parliament beneficial-ownership study attributed 100% of Le Tremplin to him, while transaction reporting and French registry changes establish the later sale. These facts identify hospitality, not competitive skiing or private yachting, as the core wealth-creation sector."},
+    "source_ids": ["S2", "S3", "S4", "S5", "S6"]
+  },
+  "primary_industry": {
+    "classification": "hospitality",
+    "label": "Hospitality",
+    "summary": "After the Le Tremplin sale, he remains president of a holding company that directs the active L'Auberge de Savoie hotel and restaurant. Its relative value against recent property ventures and sale proceeds is undisclosed, so Hospitality is also the best-supported origin-sector fallback.",
+    "confidence": {"score": 76, "band": "medium", "reason": "The official Auberge website and current French company records show the hotel remains active, name Bertrand as publication responsible and trace its presidency through his R.T.C. holding company. The 2025 Le Tremplin exit and 2026 property-entity formations make the present asset weighting opaque; there is insufficient evidence to reclassify his primary wealth as Real Estate or Finance & Investments. Hospitality remains the verified active sector and causal origin-sector fallback."},
+    "source_ids": ["S5", "S6", "S7", "S8", "S10"]
+  },
+  "wealth_origin": {
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "His father founded Le Tremplin, Bertrand succeeded him in running the family restaurant and was later independently identified as its sole beneficial owner. The legal succession instrument is not public, while his later operating expansion is separately recognised.",
+    "confidence": {"score": 81, "band": "medium", "reason": "The restaurant's own history and a direct Bertrand interview show the father-founded enterprise and Jean-Jack's 1998 succession. The European Parliament study attributed 100% of Le Tremplin to Jean-Jack before its sale. This meets the family-succession rule through prior family control, his succession and documented personal economic interest. No source establishes that the stake was legally inherited, so an inherited subtype would overstate the evidence; his later work does not make the transferred core asset self-made."},
+    "source_ids": ["S2", "S3", "S4", "S5"]
+  },
+  "wealth_relationship": {
+    "classification": "operator",
+    "label": "Operator",
+    "summary": "He operated the family restaurant for decades and remains president of the holding company directing the active Auberge de Savoie hospitality business; he did not found the original restaurant.",
+    "confidence": {"score": 74, "band": "medium", "reason": "Long-running direct management of Le Tremplin is first-party documented. Current registers name Bertrand president of R.T.C. and R.T.C. president of the operating hotel company, while the hotel's official legal page names him personally. This supports a continuing operating relationship, although the restaurant sale and undisclosed value of new property vehicles limit certainty about which present asset dominates his wealth."},
+    "source_ids": ["S2", "S5", "S6", "S7", "S8"]
+  },
+  "biography": {
+    "plain_text": "Jean-Jack Bertrand is a former French champion skier who turned to hospitality in Courchevel. He succeeded his father at Le Tremplin and developed the family restaurant into a high-end dining destination. After selling his interest in the restaurant, he retained L’Auberge de Savoie in Moûtiers, operated by a company under his holding group.",
+    "html": "<p>Jean-Jack Bertrand is a former French champion skier who turned to hospitality in Courchevel. He succeeded his father at Le Tremplin and developed the family restaurant into a high-end dining destination. After selling his interest in the restaurant, he retained L’Auberge de Savoie in Moûtiers, operated by a company under his holding group.</p>\r\n",
+    "word_count": 53,
+    "confidence": {"score": 93, "band": "high", "reason": "First-party restaurant history, contemporary skiing coverage, an EU beneficial-ownership study, 2025 sale reporting and current hotel/holding registers support each concise claim. The biography distinguishes the former restaurant from a still-active hotel and omits the yacht and unverified wealth figures."},
+    "source_ids": ["S2", "S4", "S5", "S6", "S7", "S8", "S9"]
+  },
+  "long_biography": {
+    "plain_text": "Before becoming a restaurateur, Jean-Jack Bertrand represented France in skiing and won national downhill titles. He initially helped at Le Tremplin at his father’s urging, then took charge of the Courchevel restaurant in 1998. Bertrand broadened its dining offer with a crêperie and introduced products encountered while travelling. The family enterprise remained central to his career until its restaurant business and associated property interests were sold to an LVMH subsidiary in 2025.\n\nBertrand also acquired L’Auberge de Savoie in Moûtiers, a hotel and restaurant operated through a company directed by his holding business. He remains president of that holding company, which continues to direct the hotel business. His career bridges competitive skiing and the hospitality trade in the French Alps.",
+    "html": "<p>Before becoming a restaurateur, Jean-Jack Bertrand represented France in skiing and won national downhill titles. He initially helped at Le Tremplin at his father’s urging, then took charge of the Courchevel restaurant in 1998. Bertrand broadened its dining offer with a crêperie and introduced products encountered while travelling. The family enterprise remained central to his career until its restaurant business and associated property interests were sold to an LVMH subsidiary in 2025.</p>\r\n<p>Bertrand also acquired L’Auberge de Savoie in Moûtiers, a hotel and restaurant operated through a company directed by his holding business. He remains president of that holding company, which continues to direct the hotel business. His career bridges competitive skiing and the hospitality trade in the French Alps.</p>\r\n",
+    "word_count": 120,
+    "confidence": {"score": 92, "band": "high", "reason": "Le Monde and the direct Bertrand account support the skiing and restaurant transition, while the first-party business history describes the crêperie and later Auberge acquisition. CFNEWS and registry changes support the 2025 exit, and current R.T.C./H.R.D.S. filings support the retained hotel role. No sentence treats the yacht as a business premise."},
+    "source_ids": ["S2", "S3", "S5", "S6", "S7", "S8", "S9"]
+  },
+  "proposed_details": [
+    {"field": "known_for_title", "value": "Former Le Tremplin proprietor and hotel operator", "action": "fill_missing", "confidence": {"score": 92, "band": "high", "reason": "Le Tremplin's first-party history, an independent ownership study and the documented 2025 exit justify former proprietor; current Auberge and holding-company records support hotel operator."}, "source_ids": ["S2", "S4", "S5", "S6", "S7", "S8"]},
+    {"field": "mortality_status", "existing_value": "Unknown", "value": "Alive", "action": "correct_existing", "confidence": {"score": 91, "band": "high", "reason": "French company-register updates in 2026 list him as current president of R.T.C. and its new controlled entities, while the hotel continues operating and names him as site publication responsible."}, "source_ids": ["S6", "S7", "S8", "S10"]},
+    {"field": "biography", "value": "<p>Jean-Jack Bertrand is a former French champion skier who turned to hospitality in Courchevel. He succeeded his father at Le Tremplin and developed the family restaurant into a high-end dining destination. After selling his interest in the restaurant, he retained L’Auberge de Savoie in Moûtiers, operated by a company under his holding group.</p>\r\n", "action": "fill_missing", "confidence": {"score": 93, "band": "high", "reason": "The concise biography is supported by direct, first-party, registry and transaction sources and corrects the temptation to describe Le Tremplin as still personally owned after its sale."}, "source_ids": ["S2", "S4", "S5", "S6", "S7", "S8", "S9"]}
+  ],
+  "proposed_socials": [
+    {"type_id": "14", "type": "Company Website", "url": "https://www.aubergedesavoie.com/", "verification": "The active Auberge de Savoie website's legal page names Jean-Jack Bertrand as responsible, while current company registers show its operator H.R.D.S. is directed by his R.T.C. holding company.", "confidence": {"score": 94, "band": "high", "reason": "This is a verified current company website, not a personal profile. The saved LinkedIn already resolves to him and is not duplicated; the former Le Tremplin website is not proposed after the ownership transfer."}, "source_ids": ["S6", "S7", "S8"]}
+  ],
+  "proposed_tags": [
+    {"tag_id": "tag_0111", "name": "Luxury hospitality", "summary": "He personally owned and operated Le Tremplin, a high-end Courchevel dining institution, for decades and expanded within Alpine hospitality.", "relationship_type": "former_owner_operator", "temporal_scope": "former_but_defining", "taxonomy_value": "This active tag captures a material long-term luxury-dining enterprise; it is not assigned merely because he visited or owned a holiday property in a resort.", "confidence": {"score": 90, "band": "high", "reason": "The restaurant's first-party history, an independent ownership study and the sale reporting establish direct ownership and sustained operation. The Courchevel location, luxury dining offer and substantial restaurant transaction make the luxury-hospitality specialism defining. The current Auberge hotel supports wider hospitality continuity but is not presumed to be a luxury hotel."}, "source_ids": ["S2", "S3", "S4", "S5"]}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=10268", "title": "Immutable saved owner input 10268", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Stores exact Jean-Jack Bertrand name, French nationality and residence, male gender, 20 December 1956 birth date and Unknown mortality.", "Saves an exact LinkedIn URL that can be checked against the public restaurateur and a selected Getaway relationship from 2024.", "The source yacht record is selection context, not proof of wealth, legal title or a biography premise."]},
+    {"id": "S1", "url": "https://fr.linkedin.com/in/jean-jack-bertrand-8232a263", "title": "Jean Jack Bertrand — restaurant Le Tremplin", "publisher": "LinkedIn; existing exact source-record URL", "tier": 3, "accessed_at": "2026-09-19", "supports": ["The saved LinkedIn URL resolves to a Jean Jack Bertrand in the Chambéry/Courchevel area whose workplace is restaurant Le Tremplin.", "The occupation and location match independent first-party and company-register material; it is an authenticated existing link, not a new social proposal."]},
+    {"id": "S2", "url": "https://www.tremplin-courchevel.com/", "title": "Le Tremplin — history and team", "publisher": "Le Tremplin Courchevel", "tier": 1, "accessed_at": "2026-09-19", "supports": ["First-party history says the restaurant was in Jean-Jack Bertrand's family for decades and that his father pressed him to work there before he took over in 1998.", "Describes his French skiing career, changes to the menu, the crêperie and his subsequent acquisition of Auberge de Savoie.", "Its present-tense ownership language conflicts with documented 2025 share/business transfer and is treated as stale for current ownership."]},
+    {"id": "S3", "url": "https://www.clemi.fr/sites/default/files/clemi/SPME/Partenaires/pdf2025/capital_402.pdf", "title": "Le Tremplin, dirigé par Jean-Jack Bertrand", "publisher": "Capital; direct proprietor interview reproduced by CLEMI", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Names his father as Le Tremplin founder and Jean-Jack's succession to it; details material changes to the restaurant and crêperie.", "Records his French national downhill titles and later speed-skiing title.", "The account is from before the sale, so it does not establish continuing ownership."]},
+    {"id": "S4", "url": "https://www.europarl.europa.eu/RegData/etudes/STUD/2021/679107/IPOL_STU%282021%29679107%28ANN03%29_EN.pdf", "title": "Annex 9: Largest ultimate beneficiaries of EU funds", "publisher": "European Parliament study", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The historical beneficiary table names Jean-Jack Bertrand and attributes Le Tremplin 100% to him.", "Supports personal economic ownership of the family business before its later transfer; the listed public-funding amount is not a personal wealth figure and is excluded from prose."]},
+    {"id": "S5", "url": "https://www.cfnewsimmo.net/L-actualite/Transactions/Courchevel-historique-share-deal-sur-le-Tremplin-488508", "title": "Courchevel: historique share-deal sur le Tremplin", "publisher": "CFNEWS IMMO", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Reports that LVMH subsidiary Ufipar acquired Jean-Jack Bertrand's interests in SCI de la Vallée Courchevel in 2025.", "Describes the transaction as covering the restaurant business and some associated property interests.", "Transaction value, if reported elsewhere, is not treated as the subject's proceeds or net worth."]},
+    {"id": "S6", "url": "https://www.pappers.fr/entreprise/rtc-421098914", "title": "R.T.C. company record", "publisher": "Pappers; French RCS/RNE/BODACC registry documents", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Lists Jean-Jack Bertrand born December 1956 as current president of the active R.T.C. holding company.", "Shows R.T.C.'s former Le Tremplin presidency ended in 2025, while it remains president of H.R.D.S. and newer Bertrus entities.", "The holding company's activities do not by themselves reveal the value of his remaining portfolio."]},
+    {"id": "S7", "url": "https://www.pappers.fr/entreprise/hrds-820340503", "title": "H.R.D.S. / Auberge de Savoie company record", "publisher": "Pappers; French RCS/RNE/BODACC registry documents", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Identifies active Auberge de Savoie hotel, bar and restaurant operator H.R.D.S. in Moûtiers.", "Names R.T.C. as its current president and records recently deposited accounts; R.T.C. is directed by Jean-Jack Bertrand.", "Does not disclose a personal share percentage in the hotel company or establish its rank among all current assets."]},
+    {"id": "S8", "url": "https://www.aubergedesavoie.com/mentions-legales/", "title": "Auberge de Savoie legal notice", "publisher": "Auberge de Savoie / H.R.D.S.", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The operating hotel's official website names H.R.D.S. and Jean-Jack Bertrand as the responsible person.", "Supports the current company-website proposal and direct link to a continuing hospitality operation."]},
+    {"id": "S9", "url": "https://www.lemonde.fr/archives-du-monde/11-02-1975/3/", "title": "French downhill championship report", "publisher": "Le Monde", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Contemporaneous report identifies Jean-Jack Bertrand as the 1975 French downhill champion.", "Supports the durable former champion-skier identity independently of restaurant marketing."]},
+    {"id": "S10", "url": "https://www.pappers.fr/entreprise/bertrus-immo-100697911", "title": "Bertrus Immo company record", "publisher": "Pappers; French RCS/RNE/BODACC registry documents", "tier": 1, "accessed_at": "2026-09-19", "supports": ["A newly registered property and tourist-accommodation vehicle has R.T.C. as president.", "Its registered purpose and modest initial capital do not establish realised assets or make Real Estate the owner's proven dominant current industry."]},
+    {"id": "S11", "url": "https://www.yachtcharterfleet.com/luxury-charter-yacht-63172/Getaway.htm", "title": "Getaway yacht particulars", "publisher": "Yacht Charter Fleet", "tier": 3, "accessed_at": "2026-09-19", "supports": ["The public Getaway page matches the selected source yacht ID and approximately 25.85m Azimut hull.", "It does not name Jean-Jack Bertrand or prove legal title; it is not used as a wealth, industry or biography premise."]}
+  ],
+  "uncertainties": [
+    {"topic": "Restaurant sale versus stale website", "detail": "Le Tremplin's live website still describes Bertrand as proprietor and asks customers to return in December 2026, but contains older seasonal text. A 2025 specialised transaction report says an LVMH subsidiary acquired his restaurant and property interests, and French records show R.T.C. relinquished the restaurant presidency. The dossier therefore uses former owner for Le Tremplin; no present restaurant title is asserted."},
+    {"topic": "Family succession route", "detail": "His father founded Le Tremplin, Jean-Jack took over in 1998 and independent historical research attributes 100% of the company to him before the sale. These support a family-transfer mechanism, but no will, share-transfer instrument or inherited percentage was located. The inherited-and-expanded subtype is withheld despite documented operating development."},
+    {"topic": "Current asset mix", "detail": "The active Auberge operator and R.T.C. holding presidency establish ongoing hospitality work. Several new property vehicles are also registered, but their realised assets and the allocation of Le Tremplin sale proceeds are not public. Hospitality is the supported active sector and origin fallback; an unproven shift to Real Estate or Finance & Investments is not made. Operator is medium confidence because present principal-asset weighting remains uncertain."},
+    {"topic": "Yacht bridge and namesakes", "detail": "The saved exact LinkedIn, rare compound name, Courchevel occupation and matching December 1956 register birth provide a collision-resistant person identity. The selected Getaway hull is independently matched by vessel ID and size, but no public record directly names him as its legal owner. BERTRUS YACHT is context only; unrelated Jean-Jacques Bertrand namesakes are excluded."},
+    {"topic": "Social checks and missing details", "detail": "Forbes-first searches found no dedicated profile. The saved LinkedIn is authenticated. Instagram, Facebook, X, YouTube, TikTok and a personal website yielded no collision-safe personal profile; none is proposed. The verified current Auberge domain is typed Company Website. No unsupported birthplace, second nationality or death date is filled."},
+    {"topic": "Minimal taxonomy", "detail": "The active Luxury hospitality tag captures his defining high-end restaurant stewardship. Restaurant groups is too broad for an establishment with a related crêperie, and the smaller hotel does not independently justify Hotel operations as a second tag. His sporting record is a biographical dimension, not a wealth industry or unsupported tag."},
+    {"topic": "Editorial and repository scope", "detail": "The short biography is 53 words; the independent long profile is 120 words in two paragraphs. Both use British English and exclude yachts, valuations, age and source narration. Only this exact dossier is created; no canonical input, cohort, catalogue, compilation or live system is altered."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier. Hospitality created the documented wealth and remains the best-supported active sector/origin fallback after the Le Tremplin sale. Family transfer is supported by succession and documented former 100% economic ownership without claiming a proved inheritance instrument. Operator is assigned at medium confidence through his continuing R.T.C.-directed Auberge business, subject to unknown present portfolio weights. The blank biography is filled with a 53-word owner-led account; the long 120-word profile adds skiing, family transition, business development and retained hotel work. Proposals are limited to a current company site and one approved active tag; no updates are applied live."
+  }
+}

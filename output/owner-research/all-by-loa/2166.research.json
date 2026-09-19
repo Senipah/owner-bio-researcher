@@ -1,0 +1,142 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 2166,
+    "display_name": "Per Thrane",
+    "identity_confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "The Danish source-record name matches the co-founder named in Thrane & Thrane annual reports, his current DBC Marine profile, Danish holding-company records and the ship designer's account of the brothers' related yacht project. There is a material vessel attribution conflict: contemporary Danish reporting assigns Poseidon to his twin Lars and Arizona to Per, while the saved owner record assigns Poseidon to Per. Public specifications match the saved 26.05-metre Poseidon, but another yacht report describes both sister vessels as having one owner. The person/business identity is strong; the particular yacht relationship is unconfirmed."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2":"Facebook","3":"Twitter","4":"Youtube","5":"LinkedIn","6":"Trip Advisor","7":"Vimeo","8":"Flickr","9":"Instagram","10":"Wikipedia","11":"Forbes","12":"Zillow","14":"Company Website","15":"Personal Website","16":"TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Per Thrane is a Danish engineer, former satellite-communications company co-founder and private investor.",
+    "defining_work": "With twin brother Lars, he built Thrane & Thrane from an early maritime radio-telex product into an international satellite-communications equipment business.",
+    "formative_context": "Their father Erland, an experienced industrial executive, chaired the brothers' company from its foundation; both brothers trained as engineers.",
+    "decisive_moment": "The sale of the company to Cobham separated the original technology enterprise from Per's subsequent investments and maritime brokerage activity.",
+    "enduring_dimensions": ["Satellite-communications engineering", "Private investment through Danish holding companies", "Boat sales and brokerage through DBC Marine"],
+    "character_detail": "The brothers' first commercially important equipment solved the problem of reliable text communication from ships.",
+    "opening_options": [
+      {"mode":"defining_achievement","angle":"Use the early maritime radio-telex product to establish the brothers' technical contribution."},
+      {"mode":"present_identity","angle":"Lead with Per's current investment and marine-trading work after the satellite-business sale."}
+    ],
+    "excluded_transient_context": ["Poseidon and Arizona ownership claims and hull specifications", "Sale proceeds, current balance-sheet amounts and wealth rankings", "Unverified exact shareholding at the Cobham transaction"],
+    "source_ids": ["S2", "S3", "S4", "S5", "S7", "S8", "S9", "S13"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "defining_achievement",
+    "narrative_shape": "achievement_then_backstory",
+    "calibration_archetypes": ["founder_operator", "investor_philanthropist"],
+    "notes": "The short card identifies the brothers' company, their father's founding-era leadership, its exit and Per's investment holding. The longer profile develops the radio-telex product, Per's engineering and managing-director work, then his later solar, electronics and DBC Marine interests. The Cobham sale is short-only; the product mechanism, executive departure and marine brokerage are long-only. The yacht attribution conflict remains research context, not biography material."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 91, "band": "high", "reason": "Exact-name and site:forbes.com/profile searches for Per Thrane and Per Blinkenberg-Thrane found no dedicated Forbes person profile. No Forbes social link is warranted."}
+  },
+  "wealth_creation_industry": {
+    "classification": "telecom",
+    "label": "Telecom",
+    "summary": "His principal original business value came from co-founding and building Thrane & Thrane, which designed and manufactured mobile satellite-communications equipment before the Cobham acquisition.",
+    "confidence": {"score": 93, "band": "high", "reason": "The company's annual report and later release directly identify Per as co-founder and describe its mobile satellite and radio communications equipment; Nordic Solar's corporate biography confirms his former managing-director role. The published acquisition and longstanding founder ownership establish this as the material wealth-producing enterprise. Telecom denotes the communications-equipment market rather than a claim that he operated a satellite network."},
+    "source_ids": ["S2", "S3", "S4", "S6", "S13"]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "His current identifiable private assets are principally held in a personally controlled Danish holding structure whose latest accounts show securities and company stakes dominating its assets; DBC Marine is a smaller active operating interest.",
+    "confidence": {"score": 83, "band": "medium", "reason": "Current registry-derived accounts identify substantial securities and equity investments in Per Thrane Holding ApS, and company records show Per directs the owner structure. The holding company's asset mix greatly exceeds that of his yacht brokerage and small shipbuilding company. This is an inference about his identifiable private portfolio, not a complete personal net-worth assessment; exact underlying securities are undisclosed."},
+    "source_ids": ["S8", "S9", "S10", "S14"]
+  },
+  "wealth_origin": {
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "Per and Lars created the satellite-equipment enterprise through their own engineering and management, while their father Erland's founding-era chairmanship and established executive background supplied a material family business platform. No transfer of the principal company stake is established.",
+    "confidence": {"score": 77, "band": "medium", "reason": "Company publications directly name the brothers as founders and their father as chairman from inception; historical material establishes Erland's prior senior executive career. Together these positive premises support experienced family governance and access at launch, without specifying any seed gift or inheritance. The exact capital contributions and original share allocations remain unavailable, so the subtype is reasoned at medium confidence."},
+    "source_ids": ["S2", "S3", "S5", "S13"]
+  },
+  "wealth_relationship": {
+    "classification": "investor",
+    "label": "Investor",
+    "summary": "After exiting the co-founded satellite company, he has directed a personally controlled holding structure centred on securities and company stakes, alongside smaller operating interests. Investor best describes his current principal asset relationship, while Founder remains his historical relationship to Thrane & Thrane.",
+    "confidence": {"score": 82, "band": "medium", "reason": "Corporate records identify him as director and beneficial owner in his holding chain, and its latest accounts show financial assets and investment income, not operating revenue, as the predominant identifiable assets and return. Nordic Solar formerly identified him as an early continuing investor. DBC Marine remains active but smaller; the precise present stock portfolio is not public."},
+    "source_ids": ["S7", "S8", "S9", "S10", "S14"]
+  },
+  "biography": {
+    "plain_text": "Per Thrane is a Danish engineer and investor who co-founded satellite-communications manufacturer Thrane & Thrane with his twin brother Lars. The family venture grew into an international equipment supplier before its sale to Cobham. Their father, an experienced company director, chaired the business from its founding. Thrane now directs a substantial private investment holding company.",
+    "html": "<p>Per Thrane is a Danish engineer and investor who co-founded satellite-communications manufacturer Thrane &amp; Thrane with his twin brother Lars. The family venture grew into an international equipment supplier before its sale to Cobham. Their father, an experienced company director, chaired the business from its founding. Thrane now directs a substantial private investment holding company.</p>\r\n",
+    "word_count": 54,
+    "confidence": {"score": 83, "band": "medium", "reason": "The founding, brotherhood, sale and father's chairmanship are directly established by company sources; Per's engineering education and current holding direction come from corporate profiles and accounts."},
+    "source_ids": ["S2", "S3", "S4", "S6", "S9", "S13"]
+  },
+  "long_biography": {
+    "plain_text": "An early maritime radio-telex modem gave Per Thrane and his twin brother Lars a practical first product for their communications company. Both were engineers; they developed equipment that enabled reliable text transmissions from ships before broadening the business into satellite terminals for sea, land and aircraft. Their father Erland served as chairman from the outset, bringing senior business experience to the enterprise.\n\nThrane ran the company as managing director before stepping back ahead of its stock-market listing. He later invested in solar power and electronics manufacturing. His continuing business interests include DBC Marine, which sells and brokers boats from Denmark, as well as the Danish holding companies that manage his investments.",
+    "html": "<p>An early maritime radio-telex modem gave Per Thrane and his twin brother Lars a practical first product for their communications company. Both were engineers; they developed equipment that enabled reliable text transmissions from ships before broadening the business into satellite terminals for sea, land and aircraft. Their father Erland served as chairman from the outset, bringing senior business experience to the enterprise.</p>\r\n<p>Thrane ran the company as managing director before stepping back ahead of its stock-market listing. He later invested in solar power and electronics manufacturing. His continuing business interests include DBC Marine, which sells and brokers boats from Denmark, as well as the Danish holding companies that manage his investments.</p>\r\n",
+    "word_count": 111,
+    "confidence": {"score": 86, "band": "high", "reason": "Independent Monocle reporting describes the first modem and Per's departure; company materials document the father, education and managing-director role; Axcel, Nordic Solar, DBC Marine and holding-company sources establish his later activities."},
+    "source_ids": ["S3", "S4", "S5", "S7", "S8", "S9", "S10", "S13"]
+  },
+  "proposed_details": [
+    {"field":"known_for_title","value":"Co-founder of Thrane & Thrane","action":"fill_missing","confidence":{"score":97,"band":"very_high","reason":"The company's annual report and corporate release identify him as co-founder with Lars Thrane."},"source_ids":["S2","S3"]},
+    {"field":"gender","value":"Male","action":"fill_missing","confidence":{"score":96,"band":"very_high","reason":"Independent interview reporting and company biographies consistently refer to Per as Lars's twin brother using male pronouns."},"source_ids":["S3","S5"]},
+    {"field":"birth_year","value":"1948","action":"fill_missing","confidence":{"score":96,"band":"very_high","reason":"Nordic Solar's filed annual report explicitly says Per Blinkenberg-Thrane was born in 1948 and identifies the same founder and engineering education; the company release independently describes Per and Lars as twins and gives Lars's birth year as 1948."},"source_ids":["S3","S4"]},
+    {"field":"biography","value":"<p>Per Thrane is a Danish engineer and investor who co-founded satellite-communications manufacturer Thrane &amp; Thrane with his twin brother Lars. The family venture grew into an international equipment supplier before its sale to Cobham. Their father, an experienced company director, chaired the business from its founding. Thrane now directs a substantial private investment holding company.</p>\r\n","action":"fill_missing","confidence":{"score":83,"band":"medium","reason":"Founding, sale, family governance and current investment direction are established by company, acquisition and holding-company evidence."},"source_ids":["S2","S3","S4","S6","S9","S13"]}
+  ],
+  "proposed_socials": [
+    {"type_id":"14","type":"Company Website","url":"https://www.dbcmarine.dk/","verification":"DBC Marine's official About page identifies Per Thrane by name as one of the people currently running the yacht sales and brokerage business.","confidence":{"score":96,"band":"very_high","reason":"The company's own current site links the exact person to the operating business, corroborated by its filed director information."},"source_ids":["S8","S14"]}
+  ],
+  "proposed_tags": [
+    {"tag_id":"tag_0167","name":"Satellite technology","summary":"Per co-founded and formerly managed a substantial producer of mobile satellite-communications equipment, the defining enterprise behind his original business wealth.","relationship_type":"co_founder_operator","temporal_scope":"former_but_defining","taxonomy_value":"Groups principals who materially built satellite systems or communications equipment rather than customers, minor shareholders or incidental technology investors.","confidence":{"score":94,"band":"high","reason":"First-party company history and annual report identify the co-founder role and satellite-equipment business at material international scale, satisfying the active tag's defining-industry contract."},"source_ids":["S2","S3","S4"]}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id":"S0","url":"https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=2166","title":"Per Thrane saved owner record, ID 2166","publisher":"Superyacht Network immutable export only","tier":1,"accessed_at":"2026-09-19","supports":["Authoritative source-record person ID, Danish nationality, Denmark residence and 26.05-metre Poseidon relationship from 2015","No live owner page accessed; vessel relationship is a selection clue and is materially contested by public yacht reporting"]},
+    {"id":"S1","url":"https://www.forbes.com/search/?q=Per%20Thrane","title":"Forbes exact-name and profile search","publisher":"Forbes","tier":2,"accessed_at":"2026-09-19","supports":["Mandatory Forbes-first checks for Per Thrane and Per Blinkenberg-Thrane found no matching dedicated person profile"]},
+    {"id":"S2","url":"https://www.globenewswire.com/news-release/2009/06/17/126568/0/en/files/114713/0/tt_aarsrapport_uk_final.pdf","title":"Thrane & Thrane annual report 2008/09","publisher":"Thrane & Thrane A/S","tier":1,"accessed_at":"2026-09-19","supports":["Identifies Lars and Per Thrane as 1981 co-founders","Describes international manufacture of mobile satellite and radio communications equipment across maritime, land and aviation markets"]},
+    {"id":"S3","url":"https://www.globenewswire.com/news-release/2012/11/19/506071/0/en/lars-thrane-stepping-down.html","title":"Lars Thrane stepping down after Cobham acquisition","publisher":"Thrane & Thrane A/S","tier":1,"accessed_at":"2026-09-19","supports":["Confirms Per and Lars are twins who co-founded the company, which Cobham acquired in 2012","Their father Erland chaired the company from foundation until the 2001 listing; Per had left the board by listing","Gives Lars's birth year as 1948, corroborating the twin Per's direct birth-year record"]},
+    {"id":"S4","url":"https://regnskaber.cvrapi.dk/32076333/eGJybHN0b3JlOi8vWC03RENCRUIxMi0yMDEzMDUwNl8wNzU1NDFfNzQyL3BkZg.pdf","title":"Nordic Solar Energy annual report 2012","publisher":"Nordic Solar Energy A/S; Danish filed annual report","tier":1,"accessed_at":"2026-09-19","supports":["Names Per Blinkenberg-Thrane as 1948-born board member, engineering graduate and former founder/managing director of the satellite-equipment company","Links the fuller public name to the same DBC Marine and BB Electronics roles"]},
+    {"id":"S5","url":"https://monocle.com/business/manufacturing/thrane-thrane-denmark-satellite-communications/","title":"The man of modem","publisher":"Monocle","tier":2,"accessed_at":"2026-09-19","supports":["Independent interview describes both brothers' electronics interest, engineering training and initial maritime radio-telex modem","Reports Per's late-1990s exit before the Copenhagen listing and subsequent satellite-terminal expansion"]},
+    {"id":"S6","url":"https://www.globenewswire.com/news-release/2012/06/19/267771/0/en/files/2733/0/Recommended%20Offer%20for%20Thrane%20%20Thrane%20Successfully%20Completed.pdf","title":"Cobham's recommended offer successfully completed","publisher":"Cobham plc","tier":1,"accessed_at":"2026-09-19","supports":["Acquisition of more than 90% of Thrane & Thrane shares and subsequent delisting","Confirms material exit of the founder-built company without specifying Per's personal proceeds"]},
+    {"id":"S7","url":"https://axcel.com/electronics-company-bb-electronics-sold-to-management/","title":"Electronics company BB Electronics sold to management","publisher":"Axcel","tier":1,"accessed_at":"2026-09-19","supports":["Names Per Blinkenberg-Thrane as a 2016 member of the investor group acquiring BB Electronics and as co-founder of Thrane & Thrane","Supports sustained post-exit investment in electronics manufacturing, not continued current ownership after BB Electronics' later sale"]},
+    {"id":"S8","url":"https://www.dbcmarine.dk/om/","title":"About DBC Marine","publisher":"DBC Marine","tier":1,"accessed_at":"2026-09-19","supports":["Identifies Per Thrane and Henrik Petersen as current operators of its Skovshoved boat sales and brokerage business","Authenticates the company website but does not turn the business into his principal current wealth asset"]},
+    {"id":"S9","url":"https://www.proff.dk/regnskab/per-thrane-holding-aps/charlottenlund/virksomhedsr%C3%A5dgivning/0CAVH3I043Z","title":"Per Thrane Holding ApS 2025 accounts","publisher":"Proff, from Danish CVR/Virk annual accounts","tier":2,"accessed_at":"2026-09-19","supports":["Latest available holding-company accounts show securities and company-equity interests dominating identifiable assets and financial income dominating earnings","Supports Finance & Investments as present primary industry, without identifying every underlying security or personal balance-sheet item"]},
+    {"id":"S10","url":"https://www.nordicsolar.eu/pdf/aarsrapport-2019---nordic-solar-global-as/cc8119e063edd1aabc72c3f27ba8bdc47aad847f","title":"Nordic Solar Global annual report 2018/19","publisher":"Nordic Solar Global A/S","tier":1,"accessed_at":"2026-09-19","supports":["Identifies Per as an early investor in Nordic Solar Energy and investor in Nordic Solar Global, with historical board responsibilities","Corroborates a sustained investing role after the original communications business"]},
+    {"id":"S11","url":"https://www.knudehansen.com/news/thrane-brodre-skyder-penge-i-gronne-yachter/","title":"Thrane brothers' two-yacht design project","publisher":"KNUD E. HANSEN, reprinting Børsen interview","tier":1,"accessed_at":"2026-09-19","supports":["Identifies Lars Thrane and Per Blinkenberg-Thrane as the two brothers commissioning related designs and participating in Poseidon Shipbuilding","Supports the person and maritime-business context only; does not assign either named yacht to a particular brother"]},
+    {"id":"S12","url":"https://motorbaadsnyt.dk/nyhed/archive/2019/11/may/article/hrane-brdrenes-bde-faar-sauna-ombord-i-aeroskobing/","title":"Thrane brothers' yachts in Ærøskøbing","publisher":"Motorbådsnyt, citing Fyns Amts Avis","tier":3,"accessed_at":"2026-09-19","supports":["Explicitly assigns Poseidon to Lars and Arizona to Per, conflicting with the saved Per-to-Poseidon relationship","Yacht evidence is not used in the biographies or four wealth classifications"]},
+    {"id":"S13","url":"https://www.eacclub.dk/uploads/9/8/8/6/98869018/%C3%98k_bladet_5_oktober_1961_lille.pdf","title":"Erland Thrane executive listing","publisher":"The East Asiatic Company magazine archive","tier":2,"accessed_at":"2026-09-19","supports":["Contemporaneous listing identifies Erland Thrane as a Unilever director before the sons' enterprise was formed","Combined with the company account of his founding-era chairmanship, supports an experienced family business platform without proving a capital transfer"]},
+    {"id":"S14","url":"https://www.proff.dk/rolle/per-thrane/-/4003839288","title":"Per Thrane current registered roles","publisher":"Proff, from Danish CVR/Virk records","tier":2,"accessed_at":"2026-09-19","supports":["Identifies Per as current director of his two holding companies and DBC Marine and Poseidon Shipbuilding","Corroborates ongoing management of the holding structure and DBC Marine alongside their differing financial materiality"]},
+    {"id":"S15","url":"https://www.superyachttimes.com/yachts/poseidon-26m","title":"Poseidon 26.05-metre yacht specifications","publisher":"SuperYacht Times","tier":3,"accessed_at":"2026-09-19","supports":["The public Poseidon yacht listing matches the saved 26.05-metre length, identifies Holland Jachtbouw and KNUD E. HANSEN, and dates the build to 2018","Does not itself publish an owner name; the saved 2015 relationship predates delivery"]},
+    {"id":"S16","url":"https://www.yachtforums.com/threads/news-holland-jachtbouw-delivers-two-26-05m-motoryachts.30658/","title":"Holland Jachtbouw delivers Poseidon and Arizona","publisher":"YachtForums","tier":3,"accessed_at":"2026-09-19","supports":["Contemporaneous reporting identifies Poseidon and Arizona as sister 26.05-metre Holland Jachtbouw vessels delivered in 2018","Its account that both vessels were for one owner conflicts with the separate-brother assignment in Motorbådsnyt; ownership remains unresolved"]}
+  ],
+  "uncertainties": [
+    {"topic":"Poseidon ownership attribution","detail":"The saved source owner record assigns the current 26.05-metre Poseidon to Per from 2015. Public yacht specifications identify the same-length Holland Jachtbouw/KNUD E. HANSEN Poseidon as a 2018 build, while 2019 Danish reporting says Lars owns Poseidon and Per owns Arizona. A separate contemporary yacht report describes both sister vessels as having one owner, without naming that person. The architect confirms both brothers' project but does not assign the named hulls. No authoritative owner registry resolves the discrepancy; neither yacht is a biography, wealth or tag premise."},
+    {"topic":"Starting family support","detail":"The brothers founded and built Thrane & Thrane, and the company states that their father Erland chaired it from formation. Contemporaneous archival material establishes he was already a senior company director. This supports an advantaged family governance and business-network platform, but the record does not establish a family gift, inheritance, exact seed financing or original share allocations. No family transfer of the core stake is asserted."},
+    {"topic":"Current private portfolio","detail":"Per's 2025 holding-company accounts identify substantial securities and equity stakes, making Finance & Investments the best-supported present primary sector and Investor the present asset relationship. The underlying securities and his entire personal balance sheet are not public. DBC Marine is still actively run by Per but the available accounts do not make it the dominant asset."},
+    {"topic":"Public name and social profiles","detail":"Filed company biographies and the yacht designer use Per Blinkenberg-Thrane, while his current Danish companies use Per Thrane; the shorter authoritative display name is retained rather than treating a public variant as a demonstrated error. A LinkedIn result at /in/per-thrane-aba46987 matches several career and education facts but is not linked from an official personal or company page, so no personal social profile is proposed. No authenticated personal Instagram or website was found."},
+    {"topic":"Original sale proceeds","detail":"The 2012 Cobham takeover and historical founder/ownership role support Thrane & Thrane as the original fortune platform, and later reporting describes wealth flowing to the brothers. The public tender material highlights Lars's block rather than stating Per's exact shares or payout, which is therefore not inferred or quoted."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal person dossier based on Danish company, acquisition, investment and brokerage evidence. All four wealth fields are independently evaluated: Telecom origin, Finance & Investments current, Self-made — advantaged start and Investor current relationship. One active Satellite technology tag; no personal social link without robust authentication. Short/long biographies are 54/111 words. The source-record Poseidon attribution conflicts with published Lars/Per yacht mapping and remains a documented non-biographical uncertainty."
+  }
+}

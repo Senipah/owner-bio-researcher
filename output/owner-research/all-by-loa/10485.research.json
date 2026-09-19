@@ -1,0 +1,137 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 10485,
+    "display_name": "Elena Del Toro",
+    "identity_confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "The saved Elena Del Toro record shares the Sea Bull relationship with Angel Del Toro. First-party company history independently identifies the pair as insurance-business founders, current Florida filings identify both as officers of the agency and managers of a vessel-named entity, and an insurance partner identifies them as owners. The vessel-named company is a strong compound identity clue, not proof of legal title to the yacht."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Miami insurance entrepreneur, co-founder and co-owner of Del Toro Insurance.",
+    "defining_work": "Built a Florida insurance-agency and franchise network with Angel Del Toro and remains a vice president of its agency and franchising companies.",
+    "formative_context": "She and Angel first worked in insurance after arriving in the United States, then began their own small office in western Miami-Dade.",
+    "decisive_moment": "Moving from employed insurance work to their own agency established the platform subsequently expanded through franchising.",
+    "enduring_dimensions": ["Co-founding and ownership of a Florida insurance distribution business", "Vice-presidential roles in the agency and franchising company", "Support for newly developing agency franchisees"],
+    "character_detail": "Her professional posts speak directly to new franchisees and the work of building their agencies.",
+    "opening_options": [
+      {"mode": "present_identity", "angle": "Identify Elena as a co-founder and current vice president of the Florida insurance business."},
+      {"mode": "institution_or_asset", "angle": "Open on the agency-to-franchise model she helped build, then document her distinct operating role."},
+      {"mode": "decisive_event", "angle": "Start with the founders' move from insurance employment to their own Miami-Dade office."}
+    ],
+    "excluded_transient_context": ["The selected Sea Bull vessel, its dimensions, ownership inference and vessel-named company", "Angel Del Toro's separate CEO and president titles", "House purchases, addresses, transaction prices and live franchise counts", "An unsupported individual equity percentage, net worth or birthplace", "Forbes or source attributions and wealth-classification reasoning in biography prose"],
+    "source_ids": ["S4", "S5", "S6", "S7", "S8", "S9", "S10"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 4,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "institution_then_person",
+    "calibration_archetypes": ["founder_operator"],
+    "notes": "The 55-word short card establishes Elena's own co-founding, ownership and current office. The 125-word longer profile leads with the operating franchise model, distinguishes the agency and franchising corporations and adds her work with new agents and a community project. It is not a sentence-by-sentence expansion of the card. Both are vessel-free and avoid Angel's separate president or CEO title, uncertain equity shares and volatile business metrics."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 92, "band": "high", "reason": "Mandatory Forbes-first exact-name and /profile/ searches found no dedicated Elena Del Toro person profile. General mentions or unrelated namesakes were not treated as an attributable Forbes profile."}
+  },
+  "wealth_creation_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Elena co-founded and co-owns an insurance distribution agency that expanded into a Florida franchise network; insurance services are the documented wealth-creating business.",
+    "confidence": {"score": 92, "band": "high", "reason": "The company's founder history expressly names Elena, an insurance carrier calls both founders owners, Florida filings establish continuing agency and franchising offices, and independent business reporting calls her senior vice president. The business distributes insurance rather than underwriting risk; her precise personal proceeds are not public."},
+    "source_ids": ["S4", "S5", "S6", "S7", "S8", "S9"]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Her current owned and managed business remains the Del Toro insurance-agency and franchising platform, rather than an unrelated sector inferred from property or vessel records.",
+    "confidence": {"score": 93, "band": "high", "reason": "The agency and separate franchising corporation are active with 2026 Florida annual reports naming Elena vice president. Current company material and her professional profile show continuing franchise involvement; an insurance partner identifies her as an owner. No evidence establishes a more material current personal business in another industry."},
+    "source_ids": ["S5", "S6", "S7", "S9", "S10", "S11"]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "She built the insurance business with Angel after both learned the trade through employment and opened their own small office; no inherited business or family-capital transfer is evidenced.",
+    "confidence": {"score": 86, "band": "high", "reason": "The company's founder account positively describes her transition from first US insurance jobs to co-founding a small agency, and independent reporting and a carrier partner verify her executive and ownership roles. The evidence supports the broad self-made category, but not the independent-start subtype because initial financing, family assistance and premarital resources are not documented."},
+    "source_ids": ["S4", "S7", "S8"]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Elena is an expressly named co-founder and co-owner of the insurance enterprise and continues to hold a vice-presidential operating role.",
+    "confidence": {"score": 95, "band": "very_high", "reason": "First-party history and a current company event identify Elena alongside Angel as a founder. A carrier partner calls them owners, official 2026 company filings name her vice president, and independent reporting identifies her as senior vice president. Founder describes her distinct business relationship without claiming sole founding or title to every asset."},
+    "source_ids": ["S4", "S5", "S6", "S7", "S8", "S9"]
+  },
+  "biography": {
+    "plain_text": "Elena Del Toro is a Miami insurance entrepreneur who co-founded Del Toro Insurance with Angel Del Toro. After learning the trade through their first jobs in the United States, they opened a small agency in western Miami-Dade. She remains an owner and vice president as the business supports a network of independently run insurance franchises.",
+    "html": "<p>Elena Del Toro is a Miami insurance entrepreneur who co-founded Del Toro Insurance with Angel Del Toro. After learning the trade through their first jobs in the United States, they opened a small agency in western Miami-Dade. She remains an owner and vice president as the business supports a network of independently run insurance franchises.</p>\r\n",
+    "word_count": 55,
+    "confidence": {"score": 92, "band": "high", "reason": "The company's founder history supports the shared insurance-work and small-office trajectory; a carrier partner identifies Elena as owner, Florida filings confirm the current vice-presidential office, and first-party company material documents the franchise structure. No yacht or private-property fact appears."},
+    "source_ids": ["S4", "S5", "S6", "S7", "S9"]
+  },
+  "long_biography": {
+    "plain_text": "Elena Del Toro helped turn a Miami insurance agency into a franchise platform for other agents. She works with new agency owners, a subject she discusses in her professional posts. Florida filings list her as vice president of both Del Toro Insurance Agency and Del Toro Franchising. An insurance-company partner identifies her and Angel Del Toro as owners.\n\nThe couple learned the trade through their first jobs in the United States. They opened their office in western Miami-Dade and built a business focused on insurance access for customers. Its franchise structure gave other entrepreneurs a route to operate agencies under the Del Toro name. Elena also joined a Miami community-art initiative with an insurance partner, reflecting her ties to the city where the venture began.",
+    "html": "<p>Elena Del Toro helped turn a Miami insurance agency into a franchise platform for other agents. She works with new agency owners, a subject she discusses in her professional posts. Florida filings list her as vice president of both Del Toro Insurance Agency and Del Toro Franchising. An insurance-company partner identifies her and Angel Del Toro as owners.</p>\r\n<p>The couple learned the trade through their first jobs in the United States. They opened their office in western Miami-Dade and built a business focused on insurance access for customers. Its franchise structure gave other entrepreneurs a route to operate agencies under the Del Toro name. Elena also joined a Miami community-art initiative with an insurance partner, reflecting her ties to the city where the venture began.</p>\r\n",
+    "word_count": 125,
+    "confidence": {"score": 90, "band": "high", "reason": "Current Florida officer filings substantiate both corporate roles, Kemper names the owners and documents the community initiative, the company's founder account gives the US-employment and Miami-Dade origin, and Elena's matching professional profile shows franchisee support. The text distinguishes her work from Angel's offices and does not infer share percentages."},
+    "source_ids": ["S4", "S5", "S6", "S7", "S10"]
+  },
+  "proposed_details": [
+    {"field": "known_for_title", "value": "Co-founder and vice president, Del Toro Insurance", "action": "fill_missing", "confidence": {"score": 95, "band": "very_high", "reason": "First-party company history names her co-founder; active Florida agency and franchising filings name her vice president. This avoids assigning Angel's separate president title or relying on a promotional plural CEO description."}, "source_ids": ["S4", "S5", "S6", "S9"]},
+    {"field": "biography", "value": "<p>Elena Del Toro is a Miami insurance entrepreneur who co-founded Del Toro Insurance with Angel Del Toro. After learning the trade through their first jobs in the United States, they opened a small agency in western Miami-Dade. She remains an owner and vice president as the business supports a network of independently run insurance franchises.</p>\r\n", "action": "fill_missing", "confidence": {"score": 92, "band": "high", "reason": "The saved biography is blank. This 55-word replacement states her independently documented co-founder, owner and current officer roles, the founder account's trade-to-agency trajectory and the franchise model without vessel or transient financial material."}, "source_ids": ["S0", "S4", "S5", "S6", "S7", "S9"]}
+  ],
+  "proposed_socials": [
+    {"type_id": "5", "type": "LinkedIn", "url": "https://www.linkedin.com/in/elena-del-toro-4051087b", "verification": "The exact-name personal profile names Del Toro Insurance, Miami and her work with agency franchisees. The company founder account and active Florida filings independently identify the same Elena as co-founder and vice president; this is not a similarly named account.", "confidence": {"score": 91, "band": "high", "reason": "Exact name, employer, Miami geography and first-person franchisee work form a collision-resistant match to the independently verified company officer and founder."}, "source_ids": ["S4", "S5", "S6", "S10"]},
+    {"type_id": "14", "type": "Company Website", "url": "https://www.deltoroinsurance.com/", "verification": "The official company site names Elena as a founder and describes the same active insurance agency/franchise business; Florida filings and a carrier partner independently establish her continuing officer and ownership roles.", "confidence": {"score": 95, "band": "very_high", "reason": "This is the first-party website of the business she co-founded and co-owns, not a generic third-party directory or another person's personal page."}, "source_ids": ["S4", "S5", "S6", "S7"]}
+  ],
+  "proposed_tags": [
+    {"tag_id": "tag_0228", "name": "Insurance", "summary": "Del Toro co-founded and co-owns an insurance-agency platform, remains vice president of its agency and franchising entities, and has a sustained operating mandate in insurance distribution.", "relationship_type": "cofounder_owner_operator", "temporal_scope": "current", "taxonomy_value": "Identifies a defining insurance business rather than incidental insurance employment, property ownership or a passive financial holding.", "confidence": {"score": 93, "band": "high", "reason": "The active catalogue's Insurance contract covers material wealth created through or substantial operations controlled in insurance. First-party history, carrier ownership identification and 2026 official filings satisfy that contract for Elena personally. The agency sells insurance; no underwriting claim is made."}, "source_ids": ["S4", "S5", "S6", "S7", "S11"]}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=10485", "title": "Elena Del Toro saved owner record, person ID 10485", "publisher": "Superyacht Network; authoritative saved owner export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Saved Elena Del Toro is American, US-resident, female and Alive, with blank biography, known-for, birth details and socials.", "The selected Sea Bull relationship began in 2024 and is shared with adjacent Angel Del Toro. It is an identity clue only and does not establish an economic mechanism."]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Elena%20Del%20Toro", "title": "Forbes exact-name and person-profile search", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Forbes-first exact-name and site-specific profile searches found no dedicated matching Elena Del Toro person page."]},
+    {"id": "S2", "url": "https://www.superyachttimes.com/yachts/sea-bull/overview", "title": "Sea Bull yacht particulars", "publisher": "SuperYacht Times", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Public hull particulars identify the selected Sea Bull as the 26.14-metre, 118-GT yacht in the saved owner record.", "The public page does not itself identify Elena or supply registered-owner title; yacht material is not used for her biography, wealth or tags."]},
+    {"id": "S3", "url": "https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResults?Detail=FL.DOS.Corporations.Shared.Contracts.FilingRecord&InquiryDirectionType=ForwardRecord&InquiryType=EntityName&ListNameOrder=BULLSBORO+L110000015900&SearchNameOrder=BULLSDIXONEQUITYPARTNERS+L160001665870&SearchTerm=BULL+RUN+EQUITIES+GROUP%2C+LLC", "title": "Bull of the Sea LLC Florida corporation record", "publisher": "Florida Division of Corporations", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The vessel-named Florida LLC was formed in 2024, is active and lists Angel and Elena Del Toro as managers in current filings.", "The same pair, formation year and nautical company name strengthen owner-record identity resolution but do not prove that the LLC holds legal title to Sea Bull."]},
+    {"id": "S4", "url": "https://www.deltoroinsurance.com/the-history-of-del-toro-insurance/", "title": "The history of Del Toro Insurance", "publisher": "Del Toro Insurance", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The first-party history explicitly names Angel and Elena Del Toro as founders, says their first jobs in the United States were in insurance and describes their initial small western Miami-Dade office.", "It describes the resulting family insurance agency and Florida franchise network, establishing Elena's personal founder contribution rather than deriving it from Angel alone."]},
+    {"id": "S5", "url": "https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?aggregateId=domp-p97000088923-6e4ee37d-3ba3-4f76-9fad-5d2bb3f4a23e&directionType=Initial&inquirytype=EntityName&searchNameOrder=DELTOROINSURANCEAGENCY+P970000889230", "title": "Del Toro Insurance Agency Inc corporate record and 2026 annual report", "publisher": "Florida Division of Corporations", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The active agency corporation was filed in October 1997 and its 2026 report lists Elena Del Toro as vice president, treasurer and director, with Angel in different president/secretary offices.", "Officer status alone is not an individual share-percentage record."]},
+    {"id": "S6", "url": "https://search.sunbiz.org/Inquiry/corporationsearch/SearchResultDetail?aggregateId=domp-p21000091597-958977c5-7c4d-4c09-926a-f0d2adc821cf&directionType=Initial&inquirytype=EntityName&listNameOrder=DELTOROELECTRICAL+P180000322490&searchNameOrder=DELTOROFRANCHISING+P210000915970&searchTerm=DEL+TORO+ELECTRICAL+CORP", "title": "Del Toro Franchising Corp record and 2026 annual report", "publisher": "Florida Division of Corporations", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The separate active franchising corporation lists Elena Del Toro as vice president and Angel Del Toro as president in its 2026 report.", "The filing supports a continuing agency-franchise role, not an assumed individual franchise count or sole ownership."]},
+    {"id": "S7", "url": "https://cloud.kemper.com/ka-mural-project/explore/miami", "title": "Kemper Auto Miami mural project and Del Toro Insurance owners", "publisher": "Kemper Auto", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The insurance carrier explicitly calls Angel and Elena Del Toro the owners of Del Toro Insurance.", "It describes their participation in a Miami community-art initiative and local immigrant story; this is community context, not evidence of private wealth amount."]},
+    {"id": "S8", "url": "https://therealdeal.com/miami/2021/06/14/del-toro-insurance-tycoons-buy-waterfront-mansion-in-coral-gables-for-6m/", "title": "Del Toro Insurance couple and executive roles", "publisher": "The Real Deal, 14 June 2021", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Independent reporting identifies Elena Del Toro as Del Toro Insurance senior vice president and Angel as chief executive and places both at the Florida insurance business.", "Property purchase details are not treated as Elena's wealth mechanism and are excluded from biography."]},
+    {"id": "S9", "url": "https://www.deltoroinsurance.com/business-forum-may-22-2025/", "title": "Del Toro Insurance business forum and founders", "publisher": "Del Toro Insurance", "tier": 1, "accessed_at": "2026-09-19", "supports": ["A current first-party event page names Angel and Elena Del Toro as founders of the insurance business.", "Its promotional plural CEO description is reconciled with more precise Florida officer filings, which identify Elena as vice president."]},
+    {"id": "S10", "url": "https://www.linkedin.com/in/elena-del-toro-4051087b", "title": "Elena Del Toro professional profile", "publisher": "LinkedIn", "tier": 2, "accessed_at": "2026-09-19", "supports": ["The indexed exact-name Miami profile identifies Del Toro Insurance and contains first-person posts about agency franchisees and their development.", "The employer, region and operating subject match the independently verified founder and current officer; no birth details are taken from the profile."]},
+    {"id": "S11", "url": "https://licenseesearch.fldfs.com/Licensee/853850", "title": "Del Toro Insurance Agency Inc licence lookup", "publisher": "Florida Department of Financial Services", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The state regulator lists the agency as an insurance licensee, confirming insurance distribution as the operating activity.", "An agency licence does not imply that Elena is personally an insurance underwriter or disclose her equity percentage."]}
+  ],
+  "uncertainties": [
+    {"topic": "Vessel identity and legal title", "detail": "The saved Sea Bull relationship includes both Angel and Elena; public hull particulars match the selected 26.14-metre yacht, while active Bull of the Sea LLC filings list them both as managers from 2024. This is a strong compound identity bridge, not a public vessel-title document. No yacht fact enters biography or wealth classification."},
+    {"topic": "Distinct co-founder role and ownership", "detail": "The official history explicitly names Elena alongside Angel as founder, and an insurance carrier calls both owners. State filings show her own agency and franchising vice-presidential offices, while independent reporting used senior vice president. Neither sole control nor an exact share percentage is public, and Angel's president/CEO functions are not transferred to her."},
+    {"topic": "Wealth origin and industry", "detail": "Her insured-services entrepreneurship after employed insurance work supports broad Self-made and insurance within Finance & Investments. The seed capital, any family help and her individual fortune are unknown; no narrower independent-start subtype or underwriting business is asserted. No property or vessel record changes the main sector."},
+    {"topic": "Personal dates and social accounts", "detail": "Company history establishes an immigration context but not a safe birth country, birthplace, date of birth or secondary nationality. Her exact-name Miami/Del Toro Insurance LinkedIn is proposed. Searches did not authenticate a personal Instagram, Facebook, X, TikTok or website; the company site is identified as a company, not personal, URL. Same-name non-US professionals were excluded."},
+    {"topic": "Editorial and taxonomy", "detail": "The 55- and 125-word biographies are independently structured, person-led and source-invisible. The single approved active Insurance tag fits her defining co-owned operating business; no generic franchise, family-business or yacht tag is proposed. No owner source, cohort, catalogue or live-site value was changed."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved owner dossier. Founder history, carrier ownership language, 2026 Florida agency/franchising filings, independent reporting and a matching professional profile establish Elena's own insurance career. A same-pair vessel-named LLC helps reconcile the selected record without proving yacht title. Finance & Investments / Finance & Investments / Self-made / Founder and one active Insurance tag are evidence-bounded. Blank biography and known-for are filled; LinkedIn and the official company URL are proposed. No other file or live record was altered."
+  }
+}

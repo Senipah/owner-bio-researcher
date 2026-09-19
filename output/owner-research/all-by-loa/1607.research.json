@@ -1,0 +1,161 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 1607,
+    "display_name": "Joe O'Brien",
+    "identity_confidence": {
+      "score": 32,
+      "band": "insufficient",
+      "reason": "The saved US owner record gives only the common name Joe O'Brien, without an employer, city, birth date, biography or personal account. A public listing matches the dimensions and name of the selected Feadship City but does not identify its owner. Distinct US-based same-name business and professional profiles cannot be linked to this source person or the vessel."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names", "secondary_nationality", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "biography"
+    ],
+    "optional_missing_details": [
+      "title", "name_suffix", "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {
+      "2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"
+    }
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "The saved owner entry names Joe O'Brien but supplies no occupation, location within the United States, birth detail or social account. A public listing confirms the selected vessel's distinctive dimensions yet gives no personal owner name. Public sources identify several US-based people called Joe O'Brien in unrelated businesses and professions. None is securely connected to this owner entry, so a personal biography and enrichment would be speculative.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The note describes the exact source-record gaps, the limited vessel match and documented same-name collision without transferring any candidate's facts."
+    },
+    "source_ids": ["S0", "S1", "S2", "S3"]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Forbes-first searches used Joe O'Brien and Joseph O'Brien with site:forbes.com/profile, yacht and City qualifiers. No dedicated profile attributable to this source owner was verified; a Forbes article about an unrelated young singer is not a person profile for this record."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The industry responsible for this owner's principal wealth cannot be identified. Same-name business profiles remain unbridged candidates.",
+    "confidence": {
+      "score": 16,
+      "band": "insufficient",
+      "reason": "Neither the source entry nor the public City yacht listing establishes a business identity or wealth-producing activity. A restaurant owner and real-estate participant with the same name cannot be assigned to this person."
+    },
+    "source_ids": ["S0", "S1", "S2", "S3"]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No present principal business or private asset sector is securely attributable to the unresolved owner.",
+    "confidence": {
+      "score": 16,
+      "band": "insufficient",
+      "reason": "There is no verified current holding or career, and no established creation sector that could support the permitted origin-sector fallback. Vessel ownership does not determine industry."
+    },
+    "source_ids": ["S0", "S1", "S2", "S3"]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No founder-built, earned, inherited, family-transferred or mixed wealth mechanism is documented for this source owner.",
+    "confidence": {
+      "score": 15,
+      "band": "insufficient",
+      "reason": "The record contains no career or asset-acquisition evidence, and no candidate business identity reaches the threshold for attributing a starting position or transfer mechanism."
+    },
+    "source_ids": ["S0", "S1", "S2", "S3"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No founder, operator, investor, heir or other role in a principal wealth-producing asset is established.",
+    "confidence": {
+      "score": 15,
+      "band": "insufficient",
+      "reason": "Roles attached to same-name public profiles cannot be transferred without a collision-resistant identity bridge. The source vessel relationship establishes no business role."
+    },
+    "source_ids": ["S0", "S1", "S2", "S3"]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1607",
+      "title": "Saved Joe O'Brien owner record, person ID 1607",
+      "publisher": "Superyacht Network; immutable saved owner export",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "Exact saved display name Joe O'Brien, American nationality, United States residence and birth country, saved Alive status, no employer, birth detail, biography or social URL. Current relationship to City, vessel ID 22630, 26.21 metres and 118 GT is selection and disambiguation context only. Exact-ID inventory ran before web research."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.yachtbuyer.com/en/fleet/city-85-feadship",
+      "title": "City yacht — Feadship custom",
+      "publisher": "YachtBuyer",
+      "tier": 2,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "Public vessel page directly read; City is a 26.21-metre, 118-GT Feadship built in 1964, matching the saved vessel specification. The page does not name Joe O'Brien or another personal owner. Former names were also tested in owner-name searches without a bridge."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.bbb.org/us/mo/brentwood/profile/restaurants/o-b-clarks-0734-310415750",
+      "title": "O B Clarks business profile",
+      "publisher": "Better Business Bureau",
+      "tier": 2,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "Public page names Joe O'Brien as owner of a Missouri restaurant. It supplies no connection to the saved City vessel or source-record person, and is evidence of an unbridged same-name candidate only."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.linkedin.com/posts/joeobrien_proud-to-have-our-organization-collaborate-activity-7156030013740343296-hxSQ",
+      "title": "Joe O'Brien public LinkedIn post about a Dallas property project",
+      "publisher": "LinkedIn",
+      "tier": 2,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "Public post directly read; a same-name professional discusses a Dallas property development collaboration. There is no link from this account or project to the selected City vessel or the saved owner identity; no LinkedIn URL is proposed."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Research terminal decision is insufficient_evidence: the same-name candidates are neither proved to be this owner nor conclusively excluded. A professional or vessel-owner source naming both the person and an independent source-record anchor would be needed to resolve the collision.",
+    "Forbes was checked first under Joe O'Brien and Joseph O'Brien with dedicated-profile and City/yacht qualifiers. No verified attributable Forbes person profile emerged.",
+    "Priority LinkedIn, Instagram and personal-website searches, followed by Facebook and other person-relevant channel checks, did not yield an authenticated source-owner account. Numerous exact-name LinkedIn profiles span unrelated US occupations; the Dallas profile and restaurant-owner listing are not assigned. No source-record social baseline exists to distinguish them.",
+    "Searches combining Joe or Joseph O'Brien with City, Feadship, motor yacht, the exact dimensions and former vessel names produced no public person-vessel bridge. The public listing identifies the hull only; its absence of an owner name is not proof that any candidate is wrong.",
+    "No birth, gender, title, professional fact, company site, biography, active tag or wealth classification is proposed from name similarity, the source yacht relationship or presumed wealth level. No live-system, owner-input, catalogue, cohort or other-dossier changes were made."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal unresolved-placeholder decision after exact-ID inventory, Forbes-first search, vessel specification and former-name checks, same-name collision review and priority personal-social searches. All four wealth fields remain Unknown. No biography, detail, social or tag proposal is safe without a public identity bridge."
+  }
+}

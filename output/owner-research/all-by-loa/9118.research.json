@@ -1,0 +1,153 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 9118,
+    "display_name": "Vasily Pavlov",
+    "identity_confidence": {
+      "score": 28,
+      "band": "insufficient",
+      "reason": "The source record gives a common Russian name without birth details, career, employer or social profile. Public specifications identify the selected 25.2-metre My Way hull but do not name its owner. Search results identify several different Vasily Pavlovs in business, diplomacy and pharmaceuticals; none is independently connected to this hull or source person ID."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "The saved record names a Russian owner, Vasily Pavlov, but supplies no occupation, birth details, biography or personal profile. Public listings match the selected My Way yacht by its 25.2-metre length and 95 GT volume, yet do not name a natural-person owner. Independent searches reveal several same-name professionals and businesspeople, including a German-company director and a Belarusian diplomat. None has a verified connection to this yacht or source record. A personal biography or wealth attribution would therefore risk merging different people.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The note distinguishes the saved owner clue and matched hull from unrelated name matches, and makes no positive identification or economic claim."
+    },
+    "source_ids": ["S0", "S1", "S2", "S3", "S4"]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Forbes-first exact-name, dedicated-profile and My Way yacht-qualified searches found no Forbes person profile that could be authenticated to source owner ID 9118."
+    },
+    "source_ids": []
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No wealth-creating business or career can be securely assigned to the saved owner.",
+    "confidence": {
+      "score": 12,
+      "band": "insufficient",
+      "reason": "The person-to-business bridge is absent. German trading-company, pharmaceutical and other same-name careers cannot be assigned from name and nationality alone; a yacht relationship does not establish a wealth sector."
+    },
+    "source_ids": ["S0", "S1", "S2", "S4"]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The owner's current principal economic activity is not established.",
+    "confidence": {
+      "score": 11,
+      "band": "insufficient",
+      "reason": "No current enterprise or holding is linked securely to this person ID, and there is no verified wealth-creation sector to use as an origin-sector fallback."
+    },
+    "source_ids": ["S0", "S1", "S2", "S3", "S4"]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No independent, advantaged, inherited or transferred wealth origin is evidenced for the saved owner.",
+    "confidence": {
+      "score": 9,
+      "band": "insufficient",
+      "reason": "There is no verified career, family-capital or acquisition history for the source person; the yacht and namesake results provide no origin mechanism."
+    },
+    "source_ids": ["S0", "S1", "S2", "S3"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "A founder, operator, investor, executive or family-shareholder relationship to a principal asset is unproved.",
+    "confidence": {
+      "score": 9,
+      "band": "insufficient",
+      "reason": "No collision-safe economic asset or professional role is attributable to the saved person, and vessel context is not evidence of a wealth relationship."
+    },
+    "source_ids": ["S0", "S1", "S2", "S3", "S4"]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=9118",
+      "title": "Vasily Pavlov saved owner record, person ID 9118",
+      "publisher": "Superyacht Network; saved authoritative owner export",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": ["The source identity is Vasily Pavlov, Russian nationality, Russian Federation residence, male and recorded Alive, without birth details, occupation, biography or socials.", "The export associates this person ID with My Way, vessel ID 35341, 25.2 metres and 95 GT; the relationship is selection context, not independent public identity or wealth evidence."]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.yachtbuyer.com/en/fleet/my-way-82-moonen",
+      "title": "My Way, 25.2-metre Moonen 82 Alu",
+      "publisher": "YachtBuyer",
+      "tier": 2,
+      "accessed_at": "2026-09-19",
+      "supports": ["The public yacht profile matches the selected My Way name, exact 25.2-metre length and 95 GT volume.", "It gives yacht specifications but no natural-person owner or Vasily Pavlov association; its 2012 delivery date also does not independently substantiate the export's 2011 relationship start."]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.companyhouse.de/Crysdorf-GmbH-Ronnenberg",
+      "title": "Crysdorf GmbH management filings",
+      "publisher": "CompanyHouse Germany, reproducing commercial-register notices",
+      "tier": 2,
+      "accessed_at": "2026-09-19",
+      "supports": ["A Vasily Pavlov is listed as manager of a German trading and leasing company, with a 2020 register notice placing him in St Petersburg, Russian Federation.", "The corporate listing contains no My Way yacht or source-record person ID bridge; this business career is excluded from the dossier classifications."]
+    },
+    {
+      "id": "S3",
+      "url": "https://documents.unoda.org/wp-content/uploads/2021/09/20210906CD-INF.81-Rev.1.pdf",
+      "title": "Conference on Disarmament delegation list",
+      "publisher": "United Nations Office for Disarmament Affairs",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": ["A different Vasily Pavlov is identified in the Belarus delegation as a foreign-ministry international-security official.", "The Belarusian diplomatic identity conflicts with a simple Russian-nationality assumption and has no yacht bridge; its career is not assigned to this owner."]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.linkedin.com/pub/dir/Vasily/Pavlov",
+      "title": "Vasily Pavlov public profile directory",
+      "publisher": "LinkedIn",
+      "tier": 3,
+      "accessed_at": "2026-09-19",
+      "supports": ["Multiple exact-name personal profiles appear in different occupations and locations, including pharmaceuticals, engineering, environmental work and Estonia.", "No profile in the public directory is linked to the selected hull, an independently identified company or another distinctive source-record attribute, so none is authenticated as the owner's social account."]
+    }
+  ],
+  "uncertainties": [
+    "Exact-ID inventory was run against the authoritative enriched input. Its name, nationality, residence, gender and vessel relationship are preserved as source-record attributes, but not treated as independent public identification.",
+    "The public My Way listing matches both the exact length and volume. Neither YachtBuyer nor the current yacht sale listing names Vasily Pavlov; a match of hull particulars does not distinguish people who share this common name.",
+    "The German trading-company manager is a Russian-associated candidate, while UN material identifies a Belarusian diplomat of the same name. Public search also surfaced pharmaceutical and other profiles; none supplies a person-to-vessel or source-record bridge. Candidate careers and personal details are not merged.",
+    "Forbes-first searches found no dedicated authenticated person profile. LinkedIn, Instagram, Facebook and personal-site searches found no collision-safe personal account; no profile or social correction is proposed.",
+    "All four wealth fields remain Unknown because neither the saved yacht relationship nor unbridged namesake occupations supports the principal wealth mechanism, current industry, origin or relationship. No biography, personal field or active tag is proposed."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal insufficient-evidence decision. Public hull data corroborates the selected vessel's specifications but not the named owner's identity, and several exact-name people have unrelated careers. Forbes-first and priority social checks were completed; no career or wealth facts cross the identity threshold. The dossier withholds biography, fields, socials, tags and all four wealth classifications. No shared file or live record was changed."
+  }
+}

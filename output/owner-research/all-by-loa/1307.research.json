@@ -1,0 +1,172 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 1307,
+    "display_name": "David W. Levinson",
+    "identity_confidence": {
+      "score": 41,
+      "band": "insufficient",
+      "reason": "The source record supplies an exact name, American geography, a 1949 birth year and a Pronto vessel relationship, but no employer or public profile. A prominent exact-name real-estate executive is documented independently, yet no public source connects him or his birth year to the selected yacht or otherwise identifies him as person_id 1307."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["secondary_nationality", "known_for_title", "place_of_birth", "birth_day", "birth_month", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "Public sources identify a 26.82-metre yacht named Pronto and a separate federal filing for a similarly sized Pronto, but neither names its owner. L&L's chairman and founder David W. Levinson is a plausible exact-name candidate; no reliable source connects his business, birth year or profile to the selected owner record. Career and wealth enrichment is therefore withheld.",
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "The note separates the saved vessel association and public vessel descriptions from the unbridged real-estate candidate, without assigning candidate-specific facts to this owner."
+    },
+    "source_ids": ["S0", "S1", "S2", "S3"]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Mandatory Forbes-first searches used the exact name with site:forbes.com/profile, the Pronto yacht name and business qualifiers. They found no dedicated profile attributable to person_id 1307; unrelated or unbridged coverage was not treated as a profile."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No wealth-producing business or originating industry is securely attributable to the source owner.",
+    "confidence": {
+      "score": 18,
+      "band": "insufficient",
+      "reason": "Real estate is documented for an exact-name candidate, not for the owner record; the vessel relationship supplies no economic mechanism."
+    },
+    "source_ids": ["S0", "S1", "S3"]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The owner's current principal holdings and operating activities have not been identified.",
+    "confidence": {
+      "score": 16,
+      "band": "insufficient",
+      "reason": "No public company or profile is independently bridged to the selected owner, so current asset weighting cannot be assessed."
+    },
+    "source_ids": ["S0", "S1", "S3"]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No independently established founder-built, earned, inherited or transferred route to the owner's wealth exists.",
+    "confidence": {
+      "score": 13,
+      "band": "insufficient",
+      "reason": "The exact-name real-estate candidate's founding history cannot be transferred to an unresolved owner identity, and no source describes the source owner's starting capital or transfer path."
+    },
+    "source_ids": ["S0", "S3"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No founder, operator, investor or heir relationship to a principal wealth asset can be assigned.",
+    "confidence": {
+      "score": 14,
+      "band": "insufficient",
+      "reason": "A company role is known only for an unbridged namesake, while the source record establishes no principal wealth asset."
+    },
+    "source_ids": ["S0", "S3"]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1307",
+      "title": "David W. Levinson owner record, person ID 1307",
+      "publisher": "Superyacht Network; saved authoritative owner export",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "The immutable export gives the exact display name, American nationality, United States residence and birth country, male gender, 1949 birth year and Alive status.",
+        "Biography, known-for title and social accounts are blank; Pronto is a saved private vessel relationship used solely as an identity-search clue.",
+        "The source record does not identify a company, wealth-producing asset or economic relationship."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.superyachttimes.com/yachts/pronto/overview",
+      "title": "Pronto yacht overview",
+      "publisher": "SuperYacht Times",
+      "tier": 2,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "A public yacht listing describes a Princess Yachts vessel named Pronto at 26.82 metres, built in 2016, consistent with the selected vessel clue.",
+        "The public overview does not name David W. Levinson or otherwise identify the beneficial owner."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2020-03-18/pdf/2020-05544.pdf",
+      "title": "Requested Administrative Waiver: vessel Pronto",
+      "publisher": "United States Maritime Administration; Federal Register",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "An official notice describes an 88-foot motor vessel Pronto with Sag Harbor, New York, as base of operations and a proposed Florida-to-Northeast cruising region.",
+        "The notice does not name the applicant or owner and does not itself prove that this is the identical Pronto hull in the source owner export.",
+        "The underlying regulations.gov application attachments were identified but unavailable to inspect through the accessible public download endpoint."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.llgroup.com/our-people/david-w-levinson/",
+      "title": "David W. Levinson",
+      "publisher": "L&L Development Group",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "A current company biography identifies an exact-name real-estate executive who founded L&L Holding Company and chairs L&L Development Group.",
+        "The biography offers no birth-year, Pronto, maritime or other independent bridge to person_id 1307, so its career facts are not assigned to the source owner."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.linkedin.com/pub/dir/David/Levinson",
+      "title": "David Levinson LinkedIn directory",
+      "publisher": "LinkedIn",
+      "tier": 3,
+      "accessed_at": "2026-09-19",
+      "supports": [
+        "The public directory contains a David W Levinson at L&L Holding Company alongside many other David Levinson profiles in finance, technology, education and other fields.",
+        "Neither the directory nor a candidate LinkedIn profile provides a collision-safe link to the selected Pronto owner; no social account is proposed."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Terminal status is insufficient_evidence, not an asserted misidentification: no source disproves the saved name, but no collision-resistant public bridge identifies which David W. Levinson is the selected owner.",
+    "The L&L real-estate executive is the strongest exact-name candidate. His documented New York and Florida activity is only circumstantial relative to the yacht's apparent East Coast geography; no reliable source matches his birth year to 1949 or links him to the selected vessel.",
+    "The federal Pronto waiver notice lacks an applicant name. Its 88-foot length and Sag Harbor base are context, not proof of the particular Princess yacht's ownership or the owner's business.",
+    "Mandatory Forbes-first searches covered exact-name profile, exact-name yacht and real-estate variants. No dedicated Forbes person profile securely attributable to this record was found.",
+    "Priority LinkedIn, Instagram and Personal Website searches, plus Facebook, Twitter/X, YouTube and TikTok checks, found no personally authenticated profile bridged to the source owner. A candidate L&L LinkedIn profile is withheld.",
+    "All four wealth classifications were considered independently. The source owner has no verified wealth platform, present asset weighting, starting-capital mechanism or relationship to wealth. Real Estate is not assigned from the unbridged L&L candidate.",
+    "No biography, known-for title, social URL or active semantic tag is proposed. No taxonomy candidate is created.",
+    "The unresolved-placeholder contract makes biography planning, editorial rubric, pair allocation and word counts inapplicable; the editorial note records the research decision without speculative owner-facing prose."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal insufficient_evidence decision after exact-ID inventory, Forbes-first research, public Pronto and maritime-document checks, exact-name candidate analysis and priority-social searches. Identity remains below the resolution floor; enrichment is withheld."
+  }
+}

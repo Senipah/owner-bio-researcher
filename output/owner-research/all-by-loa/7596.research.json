@@ -1,0 +1,139 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 7596,
+    "display_name": "Alberto De la Cruz",
+    "identity_confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The source record names Puerto Rican-American Alberto de la Cruz, links him to his father Carlos and Coca-Cola Puerto Rico Bottlers, and saves a LinkedIn URL. That exact URL resolves to the Bottlers executive; Georgetown independently identifies him as Alberto E. de la Cruz, and current Puerto Rican reporting identifies him as CC1 president and chief executive. The source biography's former Tau yacht name matches the selected Jule hull's documented former name, dimensions and tonnage. This is a compound identity bridge, not proof of present legal yacht title. The subject is distinct from his son Alberto G. and unrelated same-name professionals."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": ["LinkedIn"],
+    "missing_priority_social_types": ["Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Alberto E. de la Cruz is a Puerto Rican-American executive and current president and chief executive of CC1 Companies, whose core is food and beverage production and distribution in Puerto Rico.",
+    "defining_work": "He has run the family's Coca-Cola bottling platform and expanded branded drinks and foods through operating subsidiaries and acquisitions.",
+    "formative_context": "His father Carlos founded and chaired the family-owned CC1 group after earlier distribution and dealership ventures; the exact legal route of Alberto's stake is not public.",
+    "decisive_moment": "As chairman and principal shareholder of Puerto Rico Coffee Roasters, Alberto was part of the purchase of the Yaucono coffee business.",
+    "enduring_dimensions": ["Beverage manufacture, bottling and distribution in Puerto Rico", "Expansion into coffee roasting and prepared-food brands", "Operating responsibilities extending to Trinidad and later dairy products"],
+    "character_detail": "He and Maria were lead donors to an art gallery at their alma mater, Georgetown University.",
+    "opening_options": [
+      {"mode": "institution_or_asset", "angle": "Open with the family-owned CC1 food-and-drink group that he runs."},
+      {"mode": "defining_achievement", "angle": "Begin with the Yaucono coffee purchase and explain his broader operating role."},
+      {"mode": "public_contribution", "angle": "Open with the Georgetown art gallery, then orient the reader to his business identity."}
+    ],
+    "excluded_transient_context": ["The selected vessel and its former Tau name", "An outdated and vessel-centred source biography", "Changing revenue, employment, brand counts and acquisition prices", "An uncorroborated birth date or expansion of the middle initial", "A Georgetown biography's inconsistent 1985 appointment date", "Unresolved exact share percentages, succession instrument and personal net worth", "Unadjudicated allegations unrelated to the durable business profile"],
+    "source_ids": ["S0", "S1", "S2", "S3", "S4", "S5", "S8", "S9"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "defining_achievement",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": ["inherited_operator", "acquirer_consolidator"],
+    "notes": "The short profile identifies his father-founded family platform, Puerto Rican bottling leadership and business model. The long profile begins instead with his own coffee-shareholder role and Yaucono purchase, adds dairy and Trinidad operations, and closes on the Georgetown gallery. CC1 and food-and-drink work are the only shared anchors; the long version omits the short's explicit family-origin fact and manufacturing/distribution summary. Neither version contains yacht or source narration."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 96, "band": "very_high", "reason": "Mandatory Forbes-first exact-name searches with CC1, Coca-Cola Puerto Rico Bottlers and site:forbes.com/profile/ found no dedicated Alberto E. de la Cruz person profile. Coverage or profiles of other de la Cruz family members were not assigned to him."}
+  },
+  "wealth_creation_industry": {
+    "classification": "food_beverage",
+    "label": "Food & Beverage",
+    "summary": "The identifiable family and personal business wealth is rooted in CC1's Coca-Cola bottling and wider beverage group, alongside Alberto's principal shareholding in the Puerto Rico Coffee Roasters platform.",
+    "confidence": {"score": 93, "band": "high", "reason": "Carlos's first-party biography calls CC1 a family-owned beverage group that he founded; CC1's official history identifies the bottling acquisition and continuing beverage production, and Georgetown names Alberto as its CEO and an owner of other businesses. Transaction counsel directly calls Alberto the principal shareholder and chair of Puerto Rico Coffee Roasters. These sources make food and beverages the central causal asset sector without converting a group revenue estimate into his personal wealth."},
+    "source_ids": ["S1", "S2", "S3", "S5"]
+  },
+  "primary_industry": {
+    "classification": "food_beverage",
+    "label": "Food & Beverage",
+    "summary": "He remains CC1 president and chief executive, directing a Puerto Rican group of beverage, coffee, dairy and prepared-food operations; this is a verified current sector, not an origin-sector fallback.",
+    "confidence": {"score": 97, "band": "very_high", "reason": "The 2026 direct interview identifies Alberto as CC1 president and chief executive and describes current subsidiaries. Recent reporting documents its Suiza dairy acquisition and the official CC1 and bottler sites show continuing production and distribution. The current material operating sector is food and beverage, not yacht-related or derived solely from family status."},
+    "source_ids": ["S3", "S4", "S8", "S9", "S10"]
+  },
+  "wealth_origin": {
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "The principal CC1 platform was founded and capitalised by his father as a family-owned group, while Alberto became its long-running operating leader and is directly documented as the principal shareholder of a substantial group-linked coffee business. The precise family transfer instrument is not public.",
+    "confidence": {"score": 73, "band": "medium", "reason": "Carlos's first-party account says he founded family-owned CC1 with resources from his earlier businesses; the saved record and independent corporate-role evidence identify Alberto as his son and current successor-operator. Transaction counsel identifies Alberto personally as chair and main shareholder of Puerto Rico Coffee Roasters, a material group business, while later reporting calls him CC1 president and CEO. These convergent positive premises support a medium-confidence family-succession mechanism for a principal food-and-beverage platform. The exact CC1 equity allocation, legal route of Alberto's coffee stake and relative contribution of his own acquisitions are unknown; this is not a claim that he inherited a specific percentage or founded CC1 alone."},
+    "source_ids": ["S0", "S1", "S2", "S4", "S5"]
+  },
+  "wealth_relationship": {
+    "classification": "operator",
+    "label": "Operator",
+    "summary": "He is the continuing president and chief executive of the food-and-beverage group and personally held the chair and principal shareholding of its coffee acquisition vehicle, but his father founded CC1.",
+    "confidence": {"score": 96, "band": "very_high", "reason": "A current 2026 interview and industry material name him CC1 president and CEO; the official Bottlers site documents active operations and the transaction counsel establishes direct operating and economic involvement in coffee. Carlos's biography clearly identifies the father as CC1 founder. Operator therefore captures the principal current role without wrongly giving Alberto a founder title or treating him as passive."},
+    "source_ids": ["S2", "S3", "S4", "S5", "S11"]
+  },
+  "biography": {
+    "plain_text": "Alberto E. de la Cruz is a Puerto Rican beverage executive and president of CC1 Companies, the food-and-drink group founded by his father, Carlos. He leads the family platform's Coca-Cola bottling operations and has helped broaden it into coffee and other consumer brands. The business combines manufacturing, brand ownership and distribution across Puerto Rico.",
+    "html": "<p>Alberto E. de la Cruz is a Puerto Rican beverage executive and president of CC1 Companies, the food-and-drink group founded by his father, Carlos. He leads the family platform's Coca-Cola bottling operations and has helped broaden it into coffee and other consumer brands. The business combines manufacturing, brand ownership and distribution across Puerto Rico.</p>\r\n",
+    "word_count": 54,
+    "confidence": {"score": 94, "band": "high", "reason": "The source record and father's first-party biography establish the family link and family-owned CC1 foundation; current reporting and company materials support Alberto's executive role and beverage, coffee and food-brand breadth. The compact biography retains his material family-business starting platform while omitting disputed transfer details and yacht context."},
+    "source_ids": ["S0", "S2", "S3", "S4", "S8", "S10"]
+  },
+  "long_biography": {
+    "plain_text": "Puerto Rico Coffee Roasters became a vehicle for Alberto E. de la Cruz's expansion beyond soft drinks. As its chairman and principal shareholder, he was central to the purchase of the Yaucono coffee business. The group subsequently built a portfolio spanning roasted coffee, prepared foods and other everyday products. His current CC1 responsibilities include beverage bottling and a dairy operation added through the acquisition of Suiza's plant and brand.\n\nA Georgetown graduate, de la Cruz and his wife Maria were lead donors to an art gallery at their alma mater. Their gift opened a space for contemporary art exhibitions accessible to students and the wider public. He has also served as president of Coca-Cola Bottling of Trinidad, extending his operating work across the Caribbean.",
+    "html": "<p>Puerto Rico Coffee Roasters became a vehicle for Alberto E. de la Cruz's expansion beyond soft drinks. As its chairman and principal shareholder, he was central to the purchase of the Yaucono coffee business. The group subsequently built a portfolio spanning roasted coffee, prepared foods and other everyday products. His current CC1 responsibilities include beverage bottling and a dairy operation added through the acquisition of Suiza's plant and brand.</p>\r\n<p>A Georgetown graduate, de la Cruz and his wife Maria were lead donors to an art gallery at their alma mater. Their gift opened a space for contemporary art exhibitions accessible to students and the wider public. He has also served as president of Coca-Cola Bottling of Trinidad, extending his operating work across the Caribbean.</p>\r\n",
+    "word_count": 124,
+    "confidence": {"score": 91, "band": "high", "reason": "Transaction counsel supports his coffee chairmanship and principal shareholding and the Yaucono purchase; company materials and recent business reporting support current CC1 production and Suiza expansion; Georgetown directly identifies the couple's gallery gift, his degree and Trinidad presidency. The two-paragraph profile centres on substantive achievements absent from the short biography and contains no private-vessel, litigation, valuation or changing-scale material."},
+    "source_ids": ["S1", "S3", "S4", "S5", "S8", "S9", "S10"]
+  },
+  "proposed_details": [
+    {"field": "known_for_title", "value": "President and CEO of CC1 Companies", "action": "fill_missing", "confidence": {"score": 97, "band": "very_high", "reason": "The 2026 direct interview and recent Suiza acquisition coverage both identify the exact Alberto de la Cruz as CC1 president and chief executive."}, "source_ids": ["S4", "S9"]},
+    {"field": "biography", "existing_value": "<p>As per the Federal Communications Commission (FCC), Alberto De la Cruz is listed as the designated point of contact for the yacht Tau. Mr. De la Cruz lives in Miami and is the son of Carlos M. de la Cruz Sr., an American businessman of Cuban origin. Carlos de la Cruz Sr. holds the position of chairman in CC1 Companies, Inc., a conglomerate that encompasses Coca-Cola Puerto Rico Bottlers, CC1 Beer Distributors, Inc., Coca-Cola Bottlers Trinidad &amp; Tobago, and Florida Caribbean Distillers, LLC. These companies collectively employ 2,500 individuals and generate annual sales of $1 billion.</p>\r\n", "value": "<p>Alberto E. de la Cruz is a Puerto Rican beverage executive and president of CC1 Companies, the food-and-drink group founded by his father, Carlos. He leads the family platform's Coca-Cola bottling operations and has helped broaden it into coffee and other consumer brands. The business combines manufacturing, brand ownership and distribution across Puerto Rico.</p>\r\n", "action": "correct_existing", "confidence": {"score": 94, "band": "high", "reason": "The replacement corrects the vessel-centred legacy text, which described the father's business more than Alberto's own role and used volatile group-scale figures. The 54-word version gives his durable operating identity, family foundation and personal product expansion without importing yacht facts."}, "source_ids": ["S0", "S2", "S3", "S4", "S5"]}
+  ],
+  "proposed_socials": [
+    {"type_id": "14", "type": "Company Website", "url": "https://cc1companies.net/inicio/", "verification": "The official CC1 Companies site identifies the group's current consumer-brand and operating portfolio; the subject's presidency and chief executive role are independently established by current direct reporting.", "confidence": {"score": 94, "band": "high", "reason": "This is the group's official company domain, not an invented personal website. Its link to the owner rests on independent current president-and-CEO reporting. The already-saved LinkedIn URL is separately authenticated and is not duplicated."}, "source_ids": ["S4", "S7", "S8"]}
+  ],
+  "proposed_tags": [
+    {"tag_id": "tag_1110", "name": "Beverage manufacturing", "summary": "He has a defining and continuing operating mandate over CC1's substantial Coca-Cola bottling and wider beverage-production business.", "relationship_type": "current_family_group_operator", "temporal_scope": "current", "taxonomy_value": "The tag groups owners with a material beverage-production enterprise, rather than all food distributors or people linked to a beverage brand.", "confidence": {"score": 96, "band": "very_high", "reason": "First-party Bottlers history documents manufacturing and bottling operations; recent direct reporting names Alberto CC1 president and CEO; his work with the bottler extends across decades. This meets the active industry-specialism contract through a substantial current mandate, not a short job or incidental holding."}, "source_ids": ["S1", "S3", "S4", "S11"]},
+    {"tag_id": "tag_0468", "name": "Coffee industry", "summary": "He was chairman and main shareholder of Puerto Rico Coffee Roasters in the Yaucono purchase, and coffee brands remain a material CC1 product line.", "relationship_type": "principal_shareholder_and_current_group_operator", "temporal_scope": "current", "taxonomy_value": "The tag isolates a substantive coffee-roasting and brand-ownership specialism that is not conveyed by Beverage manufacturing alone.", "confidence": {"score": 89, "band": "high", "reason": "Transaction counsel explicitly calls him the coffee company's chairman and principal shareholder at the major brand acquisition, and recent reporting identifies CC1 as owner of numerous coffee brands. His current CC1 leadership supports continued materiality, although the current personal percentage in the subsidiary is unreported."}, "source_ids": ["S4", "S5", "S10"]}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=7596", "title": "Immutable saved owner input 7596", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Stored Alberto De la Cruz identity, Puerto Rican and American nationality, Puerto Rico birth country, US residence and male/living status.", "Saved LinkedIn and legacy biography identify the Coca-Cola bottling executive and his father Carlos; the legacy biography mentions a former yacht name, but is not relied on for wealth classification.", "Current Jule relationship from 2018 has 25.9m length and 116 GT; vessel context is excluded from user-facing prose and taxonomy."]},
+    {"id": "S1", "url": "https://college.georgetown.edu/news-story/new-art-gallery-nearing-completion-miner-appointed-director/", "title": "New Art Gallery Nearing Completion; Al Miner Appointed Director", "publisher": "Georgetown University", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Identifies Alberto E. de la Cruz as Coca-Cola Puerto Rico Bottlers president and chief executive, Trinidad bottling president and owner of other businesses.", "Names him and wife Maria as Georgetown graduates and lead art-gallery donors; distinguishes their son Alberto G.", "Its 1985 CEO-start claim predates CC1's documented 1995 bottling acquisition, so the appointment year is not adopted."]},
+    {"id": "S2", "url": "https://d3n8a8pro7vhmx.cloudfront.net/whartonsouthfla/pages/1151/attachments/original/1514912857/Carlos_de_la_Cruz_-_Bio.pdf?1514912857=", "title": "Carlos M. de la Cruz Sr. business biography", "publisher": "Wharton South Florida alumni material; first-person family-business account", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Carlos founded and chaired family-owned CC1 Companies in 1995 and identified the bottler and beer distributor as core businesses.", "His earlier acquired distribution and dealership businesses supplied resources for Caribbean investment.", "Establishes the family-enterprise origin, not an exact transfer or inheritance to Alberto."]},
+    {"id": "S3", "url": "https://ccprb.com/es/our-history/", "title": "Nuestra Historia", "publisher": "Coca-Cola Puerto Rico Bottlers", "tier": 1, "accessed_at": "2026-09-19", "supports": ["CC1 acquired the bottler and Puerto Rico manufacturing operations in 1995.", "Documents ongoing beverage manufacture, bottling, distribution and vertical integration across the island.", "Corroborates Food & Beverage and Beverage manufacturing rather than interpreting the yacht as an economic asset."]},
+    {"id": "S4", "url": "https://sintesisnoticiosa.com/soy-el-mas-pequeno-del-mercado-local-pero-el-mas-divertido/", "title": "Alberto De La Cruz: Soy el más pequeño del mercado local, pero el más divertido", "publisher": "Síntesis Noticiosa; direct interview by Miguel Díaz Román", "tier": 2, "accessed_at": "2026-09-19", "supports": ["January 2026 interview directly identifies Alberto as CC1 Companies president and chief executive.", "Names current beverage, distilling, prepared-food, coffee, packaging and dairy businesses within the group.", "Shows continuing operating involvement in the acquired Suiza dairy operation."]},
+    {"id": "S5", "url": "https://cglawpr.com/the-firm/high-profile-cases/yaucono-sale/", "title": "Yaucono sale", "publisher": "Castellanos Group; counsel to the transaction", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Puerto Rico Coffee Roasters purchased the Yaucono coffee business.", "Transaction counsel identifies Alberto de la Cruz as the coffee company's chairman and main shareholder and also a bottler chair.", "Supports a material personal coffee-sector economic interest but not an exact current group-wide share percentage."]},
+    {"id": "S6", "url": "https://www.yachtbuyer.com/en-gb/fleet/jule-84-westport-yachts", "title": "Jule yacht specifications and former names", "publisher": "YachtBuyer", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Jule's former name Tau and its 25.9m/116-GT specification match the selected source relationship and the source biography's Tau clue.", "The source does not name an owner; this is a hull-continuity bridge only and does not prove legal ownership or wealth."]},
+    {"id": "S7", "url": "https://www.linkedin.com/in/alberto-de-la-cruz-38036922/", "title": "Alberto De la Cruz — Coca-Cola Puerto Rico Bottlers", "publisher": "LinkedIn; exact existing source-record social", "tier": 3, "accessed_at": "2026-09-19", "supports": ["The saved URL resolves to Alberto De la Cruz of Coca-Cola Puerto Rico Bottlers with US and Puerto Rico career geography.", "This matches the independent Georgetown and current CC1 sources and excludes unrelated same-name technology or media professionals.", "The existing link remains in authoritative input and is not reproposed."]},
+    {"id": "S8", "url": "https://cc1companies.net/inicio/", "title": "CC1 Companies", "publisher": "CC1 Companies", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Official current company website and operating-brand portfolio.", "Supports the correctly typed Company Website proposal when combined with current named-president reporting."]},
+    {"id": "S9", "url": "https://www.primerahora.com/noticias/consumo/notas/los-productos-suiza-regresaran-al-mercado-bajo-la-empresa-matriz-que-opera-coca-cola-y-salchichas-carmela/", "title": "Los productos Suiza regresarán al mercado bajo la empresa matriz que opera Coca Cola y Salchichas Carmela", "publisher": "Primera Hora", "tier": 2, "accessed_at": "2026-09-19", "supports": ["CC1 acquired the Suiza dairy plant and brand and named Alberto its president and chief executive.", "Lists bottling, coffee roasting, prepared foods and rice among the continuing group operations."]},
+    {"id": "S10", "url": "https://www.elnuevodia.com/negocios/empresas-comercios/notas/asi-evoluciono-la-planta-de-coca-cola-hasta-convertirse-en-lider-de-la-industria/", "title": "Coca-Cola esparce su chispa por el Caribe", "publisher": "El Nuevo Día", "tier": 2, "accessed_at": "2026-09-19", "supports": ["April 2025 business report identifies Alberto as CC1 president.", "Documents group ownership of multiple coffee and other food-and-drink brands without relying on volatile brand counts."]},
+    {"id": "S11", "url": "https://puertoricomanufacturersassociation.growthzoneapp.com/ap/CloudFile/Download/P3Y1Kqmr", "title": "Industriales Conv2026 programme", "publisher": "Puerto Rico Manufacturers Association", "tier": 1, "accessed_at": "2026-09-19", "supports": ["2026 industry programme identifies Alberto de la Cruz as president of CC1 Companies and Suiza Caribe.", "Current role cross-check independent of the media interview."]}
+  ],
+  "uncertainties": [
+    {"topic": "Family wealth route", "detail": "Carlos's first-party account calls CC1 family-owned and identifies him as founder. Alberto is the saved-record son, current CC1 operator, and personally documented principal shareholder of Puerto Rico Coffee Roasters. This supports medium-confidence family transfer/succession but not a proved inheritance, precise CC1 cap table or the legal instrument behind the coffee stake. His own brand acquisitions are separately recognised; their share of his private wealth is unknown."},
+    {"topic": "Yacht continuity versus ownership", "detail": "The selected source record lists Jule at 25.9m/116 GT, and the source biography associates Alberto with former yacht name Tau. YachtBuyer documents Tau as a former name of that exact hull. The current independent page does not name Alberto or certify ownership, so the combination serves identity disambiguation only and is absent from biographies and wealth/tag evidence."},
+    {"topic": "Namesakes and middle initial", "detail": "Georgetown and chamber material give Alberto E. de la Cruz, while the saved input omits the middle initial; neither source expands E. into a name. Son Alberto G. de la Cruz and same-name software, design and podcast professionals are excluded. No name correction or birth date is proposed."},
+    {"topic": "Chronology discrepancy", "detail": "Georgetown says Alberto became bottler president/CEO in 1985, whereas both the official bottler history and Carlos's first-party biography date the family CC1 acquisition/foundation to 1995. The dossier uses the longstanding role, not the apparently inconsistent start year."},
+    {"topic": "Social profile boundaries", "detail": "The exact stored LinkedIn URL matches Bottlers and remains unchanged. Forbes-first search found no dedicated profile. Searches for Instagram, Facebook, X, YouTube, TikTok and a personal website surfaced namesakes, family or company accounts without sufficient direct authentication; none is proposed. The CC1 URL is specifically a company website."},
+    {"topic": "Tag scope", "detail": "Beverage manufacturing is the group's defining core, and Alberto's principal coffee-company stake creates a distinct useful Coffee industry cohort. Branded foods, food manufacturing and spirits tags would overlap the minimal set or exaggerate his individual role in subsidiary lines, so they are not proposed."},
+    {"topic": "Editorial and repository scope", "detail": "The short profile has 54 words; the complementary long profile has 124 words in two paragraphs. Both use source-invisible British English, avoid vessel facts and financial figures, and remain meaningful if every vessel is sold. Only this exact dossier is created; no cohort, input, taxonomy, compiled or live state is changed."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person decision. Review Food & Beverage for creation and current principal industry, medium-confidence Marriage / family transfer, and Operator relationship. The direct family-company and coffee-shareholder evidence supports the mechanism without claiming inheritance or sole ownership. The existing biography is replaced by a 54-word owner-led account; the 124-word long profile adds coffee acquisition, dairy, Trinidad and an art-gallery gift. Proposed links and tags are restricted to one official company URL, Beverage manufacturing and Coffee industry. Nothing is synchronised, compiled or applied live."
+  }
+}

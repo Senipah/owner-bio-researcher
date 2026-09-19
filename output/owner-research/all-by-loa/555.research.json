@@ -1,0 +1,149 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 555,
+    "display_name": "Prince Charles de Bourbon des Deux-Siciles",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The source owner is a French-born, Monaco-resident Prince Charles linked to the 24-metre Genie. His official royal-house biography identifies the Saint-Raphaël-born 1963 Duke of Castro, while Gustavia Yacht Club names that Monaco-based prince with sailing yacht Genie. A public charter document uses the selected vessel ID 26317 for the 24-metre Wally Genie, and contemporaneous specialist reporting calls him owner of Genie of the Lamp. This excludes the distinct Spanish-branch Prince Charles who died in 2015."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["secondary_nationality", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Prince Charles de Bourbon des Deux-Siciles is the Duke of Castro and heads the Castro branch of the former royal house of the Two Sicilies.",
+    "defining_work": "He directs the Castro branch's dynastic orders, including the Sacred Military Constantinian Order of Saint George, and its charitable and cultural activity.",
+    "formative_context": "Born at Saint-Raphaël in France to Prince Ferdinand and Princess Chantal, he studied in Toulon, Nice and Paris; the family lives between Rome, Monaco and Paris.",
+    "decisive_moment": "He succeeded his father as Duke of Castro and Grand Master after Ferdinand's death in 2008, then changed his branch's succession rules to absolute primogeniture.",
+    "enduring_dimensions": [
+      "Earlier management of a public-relations firm in New York and executive work with Italian companies",
+      "Sustained Mediterranean competitive sailing, repeated Smeralda 888 class wins and leadership of that class",
+      "Charitable, welfare and cultural coordination through the Constantinian Order"
+    ],
+    "character_detail": "His long-running sailing work extends from helming in regattas to organising a Mediterranean one-design class.",
+    "opening_options": [
+      {"mode": "present_identity", "angle": "Identify the Duke of Castro, his branch and his durable royal-house role."},
+      {"mode": "public_contribution", "angle": "Lead with the order's charitable and cultural activity under his Grand Mastership."},
+      {"mode": "defining_achievement", "angle": "Begin with the branch's succession reform and his daughter's position."}
+    ],
+    "excluded_transient_context": [
+      "The selected yacht's name, dimensions and ownership chronology",
+      "Dynastic-claim litigation, partisan politics and private family disputes",
+      "His wife's industrial-family fortune presented as Charles's personal shareholding",
+      "Current age, yacht purchase price and unverified net-worth estimates"
+    ],
+    "source_ids": ["S2", "S3", "S4", "S5", "S6", "S7", "S8"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "public_role_then_foundation",
+    "calibration_archetypes": ["royal_public_office"],
+    "notes": "The two biographies share only his Castro-branch leadership. The short identity card alone places him between southern France and Monaco and covers his sustained sailing-class record. The longer profile instead develops education, New York and Italian work, Constantinian Order activity and his branch's succession reform. It would lose substantial material if reduced to the short text; neither version attributes household assets to him or depends on the vessel record."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 95, "band": "very_high", "reason": "Forbes-first exact-name and dedicated /profile/ searches found an article mentioning the Crociani family dispute but no dedicated, collision-safe Prince Charles person profile. No Forbes link is proposed."}
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No principal private wealth-producing sector can be assigned to Charles personally; his earlier public-relations and Italian executive work is not shown to have created a material fortune, and the industrial assets discussed in reporting belong to his wife's family.",
+    "confidence": {"score": 93, "band": "high", "reason": "The official biography establishes employment but no ownership, equity or material earning mechanism. Le Monde attributes the household's substantial wealth to Camilla Crociani's industrial-family trusts, without identifying Charles as a beneficial owner. Finance & Investments, Service and Manufacturing were considered, but each lacks a personally attributable principal-wealth premise; royal descent identifies public status, not an industry."},
+    "source_ids": ["S3", "S9"]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The sector underpinning Charles's current identifiable private assets is not established; royal-house activity, order stewardship and use of family property do not identify a principal personally held commercial asset.",
+    "confidence": {"score": 92, "band": "high", "reason": "Current official pages document dynastic and sailing roles, while major reporting describes his wife's family trusts and household property without a current personally attributable business stake or ranking of Charles's assets. Real Estate, Manufacturing and a broad diversified label fail the private-ownership and dominance tests. No verified creation sector is available for an origin-sector fallback."},
+    "source_ids": ["S3", "S5", "S8", "S9"]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Charles's Bourbon lineage explains his title and dynastic position, while reporting links household affluence to his wife's industrial-family trusts; neither establishes how he personally acquired a principal private asset.",
+    "confidence": {"score": 89, "band": "high", "reason": "The Royal House directly documents paternal succession, but no material personally held royal property or allowance is identified. Le Monde reports Camilla Crociani's separate inherited-family wealth and its household effect, not a transferred stake to Charles. Dynastic / royal and Marriage / family transfer were both considered; the necessary personal wealth-access or asset-transfer premise for either is not proven at 70."},
+    "source_ids": ["S3", "S8", "S9"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "His current role in any principal personally wealth-producing assets is unknown; he is a dynastic-order leader and competitive sailor, but neither role establishes private economic control.",
+    "confidence": {"score": 87, "band": "high", "reason": "The Grand Mastership is an order's institutional role. Reporting identifies the Crociani trusts as his wife's family wealth and does not document Charles as beneficiary, trustee, operator or shareholder of those assets. Royal beneficiary, family shareholder and operator were tested; none has a supported personal principal-asset relationship."},
+    "source_ids": ["S3", "S8", "S9"]
+  },
+  "biography": {
+    "plain_text": "Prince Charles de Bourbon des Deux-Siciles is Duke of Castro and heads the Castro branch of the former royal house of the Two Sicilies. Born in southern France and based partly in Monaco, he is also a competitive sailor. He has led the Smeralda 888 class and won multiple class championships on the Mediterranean circuit.",
+    "html": "<p>Prince Charles de Bourbon des Deux-Siciles is Duke of Castro and heads the Castro branch of the former royal house of the Two Sicilies. Born in southern France and based partly in Monaco, he is also a competitive sailor. He has led the Smeralda 888 class and won multiple class championships on the Mediterranean circuit.</p>\r\n",
+    "word_count": 55,
+    "confidence": {"score": 94, "band": "high", "reason": "The official royal-house biography establishes title, lineage and residence, while first-party yacht-club accounts document sustained Smeralda 888 leadership and repeated class championships. The branch qualifier avoids equating a contested dynastic claim with a state office."},
+    "source_ids": ["S2", "S3", "S5", "S7"]
+  },
+  "long_biography": {
+    "plain_text": "Charles de Bourbon des Deux-Siciles succeeded his father as Duke of Castro and head of his branch of the former royal house. His education took him from Toulon and Nice to Paris. Before assuming dynastic leadership, he managed a public-relations firm in New York and held executive posts with Italian businesses.\n\nAs Grand Master of the Sacred Military Constantinian Order of Saint George, Charles coordinates charitable, welfare and cultural activities. He changed his branch's succession rules to allow absolute primogeniture, placing his eldest daughter, Maria Carolina, next in line. Through the royal house, he continues to promote the cultural heritage of the former kingdom in southern Italy.",
+    "html": "<p>Charles de Bourbon des Deux-Siciles succeeded his father as Duke of Castro and head of his branch of the former royal house. His education took him from Toulon and Nice to Paris. Before assuming dynastic leadership, he managed a public-relations firm in New York and held executive posts with Italian businesses.</p>\r\n<p>As Grand Master of the Sacred Military Constantinian Order of Saint George, Charles coordinates charitable, welfare and cultural activities. He changed his branch's succession rules to allow absolute primogeniture, placing his eldest daughter, Maria Carolina, next in line. Through the royal house, he continues to promote the cultural heritage of the former kingdom in southern Italy.</p>\r\n",
+    "word_count": 107,
+    "confidence": {"score": 92, "band": "high", "reason": "Official royal-house and Constantinian Order biographies support the education, work, succession and Grand Master role; the royal house's Maria Carolina page directly documents the change to absolute primogeniture. The prose assigns only his branch's decisions and work to him."},
+    "source_ids": ["S3", "S6", "S8"]
+  },
+  "proposed_details": [
+    {"field": "known_for_title", "value": "Duke of Castro; head of the Bourbon-Two Sicilies Castro branch", "action": "fill_missing", "confidence": {"score": 98, "band": "very_high", "reason": "The official royal-house biography identifies Charles as Duke of Castro and its head; independent reporting confirms that this is the Castro branch amid a separate Spanish-branch claim."}, "source_ids": ["S3", "S9"]},
+    {"field": "gender", "value": "Male", "action": "fill_missing", "confidence": {"score": 98, "band": "very_high", "reason": "The official royal-house biography identifies him as the son of Ferdinand and Chantal and consistently styles him prince and father."}, "source_ids": ["S3"]},
+    {"field": "place_of_birth", "value": "Saint-Raphaël", "action": "fill_missing", "confidence": {"score": 99, "band": "very_high", "reason": "The official royal-house biography states that Charles was born in Saint-Raphaël, France."}, "source_ids": ["S3"]},
+    {"field": "birth_day", "value": "24", "action": "fill_missing", "confidence": {"score": 99, "band": "very_high", "reason": "The official royal-house biography gives 24 February 1963, consistent with the saved approximate age 57 in May 2020."}, "source_ids": ["S0", "S3"]},
+    {"field": "birth_month", "value": "February", "action": "fill_missing", "confidence": {"score": 99, "band": "very_high", "reason": "The official royal-house biography gives 24 February 1963."}, "source_ids": ["S3"]},
+    {"field": "birth_year", "value": "1963", "action": "fill_missing", "confidence": {"score": 99, "band": "very_high", "reason": "The official royal-house biography gives 24 February 1963, consistent with the source's historical age."}, "source_ids": ["S0", "S3"]},
+    {"field": "biography", "value": "<p>Prince Charles de Bourbon des Deux-Siciles is Duke of Castro and heads the Castro branch of the former royal house of the Two Sicilies. Born in southern France and based partly in Monaco, he is also a competitive sailor. He has led the Smeralda 888 class and won multiple class championships on the Mediterranean circuit.</p>\r\n", "action": "fill_missing", "confidence": {"score": 94, "band": "high", "reason": "The source biography is blank; this durable, vessel-independent profile reflects official royal-house and yacht-club evidence and qualifies the contested house leadership by branch."}, "source_ids": ["S0", "S3", "S5", "S7"]}
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [
+    {"tag_id": "tag_0165", "name": "Royalty", "summary": "Charles is a Bourbon-Two Sicilies prince, Duke of Castro and head of his dynastic branch; the status is central to his public identity.", "relationship_type": "dynastic_member_and_branch_head", "temporal_scope": "current", "taxonomy_value": "Identifies a member of a former European royal house whose personal royal status, not mere family association, defines the record; Monarch would wrongly imply reigning sovereignty.", "confidence": {"score": 98, "band": "very_high", "reason": "The official royal-house biography documents parentage, title and continuing dynastic position. The active Royalty contract is directly met, while no distinct active Bourbon-Two Sicilies family tag exists."}, "source_ids": ["S3", "S8"]},
+    {"tag_id": "tag_0044", "name": "Competitive sailing", "summary": "Charles has repeatedly won Smeralda 888 class competitions, helmed at major regattas and led the class as president.", "relationship_type": "competitor_and_class_leader", "temporal_scope": "current", "taxonomy_value": "Groups sustained competitive sailors and class leaders, a distinct sporting identity beyond his royal title or recreational yacht ownership.", "confidence": {"score": 94, "band": "high", "reason": "Gustavia Yacht Club documents multi-year class victories and presidency, while Yacht Club de Monaco names him in current class leadership and 2026 race results. This meets sustained sporting-identity membership; it is not inferred from the selected vessel."}, "source_ids": ["S2", "S5", "S7"]}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=555", "title": "Prince Charles de Bourbon des Deux-Siciles saved owner record, person ID 555", "publisher": "Superyacht Network immutable owner export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Saved French nationality, Monaco residence, France birth country, Alive status and historical age 57 as at 7 May 2020", "Selected current relationship is Genie, vessel ID 26317, recorded as 24 metres and 35 GT from 2007; selection and identity context only"]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Charles%20de%20Bourbon%20des%20Deux-Siciles", "title": "Forbes exact-name and dedicated-profile search", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Forbes-first exact-name and /profile/ searches found discussion of the Crociani family but no dedicated Prince Charles Forbes profile"]},
+    {"id": "S2", "url": "https://gustaviayachtclub.org/news/honorary-membership-hrh-charles-de-bourbon-des-deux-siciles/", "title": "Honorary membership for Prince Charles de Bourbon des Deux-Siciles", "publisher": "Gustavia Yacht Club, 27 September 2019", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Names the Monaco-resident prince with his sailing yacht Genie and a Wally-class regatta victory, directly linking the person to the selected vessel name", "Documents long-running presidency of the Smeralda 888 class and multiple class championships"]},
+    {"id": "S3", "url": "https://realcasadiborbone.it/en/his-royal-highness-prince-charles-of-bourbon-two-sicilies-duke-of-castro/", "title": "Prince Charles of Bourbon Two Sicilies, Duke of Castro", "publisher": "Royal House of Bourbon-Two Sicilies, Castro branch", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Official biography states Saint-Raphaël birth on 24 February 1963 to Ferdinand and Chantal, and identifies Charles as Duke of Castro and head of its royal-house branch", "Documents education in Toulon, Nice and Paris, public-relations management in New York, Italian executive work, family residence between Rome, Monaco and Paris, and Grand Mastership of the Constantinian Order"]},
+    {"id": "S4", "url": "https://www.yachtcharterfleet.com/luxury-charter-yacht-26317/genie-yacht-charter-printable.pdf", "title": "Genie sailing-yacht details", "publisher": "Yacht Charter Fleet", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Public yacht document uses the exact saved vessel ID 26317 and lists Genie as a 24-metre Wally sailing yacht", "Identifies the public hull but does not itself name Prince Charles; the person link comes from yacht-club and specialist accounts"]},
+    {"id": "S5", "url": "https://yacht-club-monaco.mc/evenements/sportifs/smeraldachampionship/", "title": "Smeralda 888 championship", "publisher": "Yacht Club de Monaco", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Current club page identifies Charles de Bourbon des Deux-Siciles as president who helped develop the Smeralda 888 class", "This establishes sustained sporting governance rather than mere yacht recreation"]},
+    {"id": "S6", "url": "https://realcasadiborbone.it/en/her-royal-highness-princess-maria-carolina-of-bourbon-two-sicilies-duchess-of-calabria-and-of-palermo/", "title": "Princess Maria Carolina of Bourbon Two Sicilies", "publisher": "Royal House of Bourbon-Two Sicilies, Castro branch", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The official branch biography states Charles changed its succession rule to absolute primogeniture in 2016, positioning eldest daughter Maria Carolina in that branch's succession"]},
+    {"id": "S7", "url": "https://yacht-club-monaco.mc/en/all-of-honours/", "title": "Yacht Club de Monaco honours and race results", "publisher": "Yacht Club de Monaco", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The club's current results identify Charles de Bourbon des Deux Siciles competing in Smeralda 888 in 2026", "Together with older club championships, this shows a continuing competitive-sailing identity"]},
+    {"id": "S8", "url": "https://constantinianorder.com/en/historical-survey/", "title": "Historical survey of the Constantinian Order", "publisher": "Sacred Military Constantinian Order of Saint George", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The order identifies Charles as successor to his father Ferdinand in its Grand Mastership after 2008", "Order stewardship is dynastic and charitable, not evidence that he privately owns the institution's assets"]},
+    {"id": "S9", "url": "https://www.lemonde.fr/en/politics/article/2026/01/18/by-appearing-with-a-royal-heiress-jordan-bardella-risks-blurring-his-image_6749539_5.html", "title": "Reporting on the Bourbon-Two Sicilies and Crociani family fortunes", "publisher": "Le Monde, 18 January 2026", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Independent reporting distinguishes the Castro branch's royal claim from the separate Spanish-branch claim", "Attributes substantial household affluence to Charles's wife Camilla Crociani and her industrial-family trusts, without documenting a personal equity or trust interest held by Charles", "The industrial-family wealth is relevant to classification caution, not to owner-facing biography or an allegation narrative"]},
+    {"id": "S10", "url": "https://www.realcasadiborbone.it/wp-content/uploads/FIGARONAUTISME_1-octobre-2015.pdf", "title": "Genie of the Lamp sailing report", "publisher": "Figaro Nautisme, hosted by Royal House of Bourbon-Two Sicilies", "tier": 2, "accessed_at": "2026-09-19", "supports": ["The contemporaneous sailing report calls Charles de Bourbon des Deux-Siciles owner of the Wally 77 Genie of the Lamp", "Confirms the club's personal yacht bridge independently of the saved relationship"]}
+  ],
+  "uncertainties": [
+    "The person-to-vessel chain is strong: exact saved ID 26317 resolves to a 24-metre Wally Genie, and yacht-club and specialist sailing reports identify the Monaco-based Duke of Castro with that boat. The name Genie of the Lamp is an expanded name/alias, not a different royal claimant. Hull measurements vary slightly among public sources and are not used in biography.",
+    "Charles, born in 1963, heads the Castro branch and is Duke of Castro. The Spanish-branch Charles, born in 1938 and deceased in 2015, is a different relative. The source's title and approximate age agree with the younger man; no Spanish-branch title, biography or death fact is transferred.",
+    "The Bourbon lineage and Grand Mastership establish a dynastic public identity. They do not by themselves establish personal ownership of a former kingdom's property, an order's assets or a material dynastic private fortune. Major reporting instead associates the household's affluence with Camilla Crociani's separate industrial-family trusts. It gives no current personally held Crociani stake or transfer to Charles. Both Dynastic / royal and Marriage / family transfer were tested, but neither reaches the personal-asset premise, so wealth origin and relationship remain Unknown.",
+    "The royal-house biography describes prior public-relations and Italian industry employment without named employers, holdings, compensation or continuing economic stakes. Neither his own career nor his wife's family's industrial business can be assigned as the principal wealth-creation or current private industry. The two industry fields therefore remain Unknown without an origin-sector fallback.",
+    "Forbes-first searches found an article about the extended family but no dedicated Charles profile. LinkedIn, Instagram, Personal Website, Facebook, X, YouTube and TikTok searches did not authenticate a public personal account. Royal-house and yacht-club sites are institutional, not his personal social or company website.",
+    "Royalty and Competitive sailing satisfy separate active tag contracts: the former reflects his personal dynastic title, and the latter his sustained competitive and class-leadership record. He is not a reigning Monarch, and his private person record cannot receive Government-owned. No specific active Bourbon-Two Sicilies family tag exists."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Resolved Castro-branch royal person after Forbes-first research, exact-ID yacht bridge, official birth and dynastic review, current sailing verification and conservative private-wealth testing. Short and long profiles stand alone without vessel facts or family-asset attribution. All four wealth fields remain Unknown because no principal private asset can be assigned to Charles individually. Two distinct active tags are supported; no live or shared files were changed."
+  }
+}

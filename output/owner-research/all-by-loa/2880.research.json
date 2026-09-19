@@ -1,0 +1,375 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 2880,
+    "display_name": "Valentino Rossi",
+    "identity_confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "The exact-name Italian source record's age 42 on 17 February 2021 matches MotoGP's 16 February 1979 birth date, and its saved valeyellow46 Instagram is embedded by MotoGP as the rider's account. The 26.82-metre, 115-GT Bluesmobile in the saved relationship matches a public yacht listing that explicitly names motorcycle champion Valentino Rossi as owner."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": ["Instagram", "Wikipedia"],
+    "missing_priority_social_types": ["LinkedIn", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Italian motorcycle Grand Prix champion and continuing professional racing driver.",
+    "defining_work": "Nine motorcycle world championships, followed by a MotoGP team and VR46 rider-development platform.",
+    "formative_context": "His father Graziano was a Grand Prix rider whose motorcycle-industry contacts helped Valentino obtain bikes and sponsors when kart racing was unaffordable.",
+    "decisive_moment": "He switched from Honda to Yamaha and won premier-class championships with the second manufacturer.",
+    "enduring_dimensions": [
+      "His earned racing and sponsorship income preceded the VR46 businesses.",
+      "He founded a rider academy and a team that progressed from junior classes to MotoGP.",
+      "He continued competitive racing in BMW endurance cars after his motorcycle career."
+    ],
+    "character_detail": "The academy grew from sharing training with younger Italian riders near Tavullia.",
+    "opening_options": [
+      {"mode": "present_identity", "angle": "Introduce the champion as a racer who remains active in motorsport through driving and team ownership."},
+      {"mode": "decisive_event", "angle": "Use the Honda-to-Yamaha switch to explain how his competitive legacy extended beyond one manufacturer."},
+      {"mode": "defining_achievement", "angle": "Open with his titles across the four grand prix classes, then develop the manufacturer switch and later team ownership."}
+    ],
+    "excluded_transient_context": ["Current yacht relationship", "Current sponsor terms and annual team revenue", "Current net-worth estimates and rankings"],
+    "source_ids": ["S3", "S4", "S5", "S6", "S7", "S8", "S9", "S10", "S11"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "defining_achievement",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": ["founder_operator"],
+    "notes": "The short card carries racing-derived wealth and his father's material industry access; the long profile omits both, instead developing the manufacturer switch, class-spanning titles, endurance-car racing and the academy-to-premier-class team. The shared anchors are his racing identity and VR46 platform."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/valentino-rossi/",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The dedicated Forbes /profile/ page names the Italian MotoGP racer, Yamaha and Ducati, motorcycle source of wealth, and sponsors. Its editor text is old, so it is used for historical wealth creation rather than current roles or net worth."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "sports",
+    "label": "Sports",
+    "summary": "His original personal fortune was earned through championship motorcycle racing and the resulting salaries, bonuses and sponsorships; VR46 commercial activities followed his sporting prominence.",
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Forbes explicitly identifies motorcycle racing as his source of wealth and documents a Yamaha bonus and sponsorship income. MotoGP independently confirms the long elite career and titles; the later merchandise and team businesses are not treated as the original fortune."
+    },
+    "source_ids": ["S3", "S4", "S5"]
+  },
+  "primary_industry": {
+    "classification": "sports",
+    "label": "Sports",
+    "summary": "Sports is the best-supported current sector: Rossi owns the active VR46 MotoGP team and runs a rider-development platform, while VR46 merchandise monetises the same racing identity. The precise value of each current holding is not public.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "Ducati and current CUPRA material directly establish the founded, continuing MotoGP team and owner role; the academy and racing-merchandise company are likewise tied to his sporting platform. Sports is inferred as the principal identifiable private sector, but no complete asset weighting is published and merchandise could contribute materially."
+    },
+    "source_ids": ["S7", "S8", "S9", "S12"]
+  },
+  "wealth_origin": {
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "He personally earned the principal fortune through racing and related sponsorships, after his father Graziano's Grand Prix career and contacts helped him obtain early bikes and sponsors. The record supports a material industry-access advantage, not a transfer of the later fortune.",
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Rossi's direct interview describes karting's unaffordable budget and how his racing father's motorcycle network made bikes and sponsors attainable. Forbes documents later career income and MotoGP documents the independent competitive achievement; neither source establishes inherited core assets."
+    },
+    "source_ids": ["S3", "S4", "S5", "S6"]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "He founded the VR46 team and rider academy and remains the named owner of the current MotoGP operation. Founder is the best available relationship to his continuing, material sports-business platform, alongside his earlier athlete-earned income.",
+    "confidence": {
+      "score": 80,
+      "band": "medium",
+      "reason": "Ducati directly attributes the team's founding to Rossi; current CUPRA material calls him team owner, and first-party academy history attributes its launch to him. Founder describes the active enterprise relationship, while the relative value of his accumulated athlete earnings and all private holdings remains undisclosed."
+    },
+    "source_ids": ["S7", "S8", "S9"]
+  },
+  "biography": {
+    "plain_text": "Valentino Rossi is an Italian racing driver and nine-time motorcycle world champion whose race salaries and sponsorships built substantial personal wealth. His father Graziano, a former Grand Prix rider, helped him enter motorcycle racing through industry contacts. Rossi turned his sporting profile into the VR46 racing and rider-development businesses, which remain active in MotoGP.",
+    "html": "<p>Valentino Rossi is an Italian racing driver and nine-time motorcycle world champion whose race salaries and sponsorships built substantial personal wealth. His father Graziano, a former Grand Prix rider, helped him enter motorcycle racing through industry contacts. Rossi turned his sporting profile into the VR46 racing and rider-development businesses, which remain active in MotoGP.</p>\r\n",
+    "word_count": 54,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "MotoGP, Forbes and Rossi's interview establish the championship, earned racing income and material paternal industry access; Ducati and CUPRA establish the continuing team platform."
+    },
+    "source_ids": ["S3", "S4", "S5", "S6", "S7", "S8", "S9"]
+  },
+  "long_biography": {
+    "plain_text": "Valentino Rossi won world titles across the 125cc, 250cc, 500cc and MotoGP classes. His move from Honda to Yamaha became a defining competitive decision: he won again with a different manufacturer and remained a leading figure in the championship for many more seasons.\n\nAfter leaving full-time motorcycle racing, Rossi moved into endurance car competition. In Tavullia, he established a training academy where young Italian riders could develop alongside experienced racers. His MotoGP team grew from a junior-class project into a premier-class operation, giving him a continuing role in the sport as a team owner.",
+    "html": "<p>Valentino Rossi won world titles across the 125cc, 250cc, 500cc and MotoGP classes. His move from Honda to Yamaha became a defining competitive decision: he won again with a different manufacturer and remained a leading figure in the championship for many more seasons.</p>\r\n<p>After leaving full-time motorcycle racing, Rossi moved into endurance car competition. In Tavullia, he established a training academy where young Italian riders could develop alongside experienced racers. His MotoGP team grew from a junior-class project into a premier-class operation, giving him a continuing role in the sport as a team owner.</p>\r\n",
+    "word_count": 94,
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "MotoGP confirms the classes and manufacturer switch, BMW confirms endurance-car competition, and first-party academy and Ducati sources establish the training and team progression."
+    },
+    "source_ids": ["S3", "S7", "S9", "S10"]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Nine-time Grand Prix motorcycle world champion",
+      "action": "fill_missing",
+      "confidence": {"score": 99, "band": "very_high", "reason": "MotoGP's official rider biography records nine world championships across multiple motorcycle classes."},
+      "source_ids": ["S3"]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {"score": 95, "band": "very_high", "reason": "The exact rider is consistently described with masculine pronouns by MotoGP, BMW and in direct interviews."},
+      "source_ids": ["S3", "S6", "S10"]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Urbino",
+      "action": "fill_missing",
+      "confidence": {"score": 99, "band": "very_high", "reason": "MotoGP's official rider entry gives Urbino, Italy, as his birthplace."},
+      "source_ids": ["S3"]
+    },
+    {
+      "field": "birth_day",
+      "value": "16",
+      "action": "fill_missing",
+      "confidence": {"score": 99, "band": "very_high", "reason": "MotoGP and BMW independently give his full birth date as 16 February 1979."},
+      "source_ids": ["S3", "S10"]
+    },
+    {
+      "field": "birth_month",
+      "value": "February",
+      "action": "fill_missing",
+      "confidence": {"score": 99, "band": "very_high", "reason": "MotoGP and BMW independently give his full birth date as 16 February 1979."},
+      "source_ids": ["S3", "S10"]
+    },
+    {
+      "field": "birth_year",
+      "value": "1979",
+      "action": "fill_missing",
+      "confidence": {"score": 99, "band": "very_high", "reason": "MotoGP and BMW independently give his full birth date as 16 February 1979; the source record's age 42 on 17 February 2021 agrees."},
+      "source_ids": ["S0", "S3", "S10"]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Valentino Rossi is an Italian racing driver and nine-time motorcycle world champion whose race salaries and sponsorships built substantial personal wealth. His father Graziano, a former Grand Prix rider, helped him enter motorcycle racing through industry contacts. Rossi turned his sporting profile into the VR46 racing and rider-development businesses, which remain active in MotoGP.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {"score": 90, "band": "high", "reason": "This 54-word, vessel-independent biography replaces a blank with directly supported racing, origin, formative and continuing-business facts."},
+      "source_ids": ["S3", "S4", "S5", "S6", "S7", "S8", "S9"]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://www.forbes.com/profile/valentino-rossi/",
+      "verification": "Dedicated Forbes profile names the Italian MotoGP rider, Yamaha and Ducati and motorcycle-based earnings; no Forbes type is stored in the source record.",
+      "confidence": {"score": 99, "band": "very_high", "reason": "Exact Forbes person-profile URL and business details match the official MotoGP rider and source owner identity."},
+      "source_ids": ["S3", "S4"]
+    },
+    {
+      "type_id": "15",
+      "type": "Personal Website",
+      "url": "https://www.valentinorossi.com/en/",
+      "verification": "Self-described Valentino Rossi official site covers his motorcycle career and subsequent four-wheel racing; the owner record lacks a personal website.",
+      "confidence": {"score": 97, "band": "very_high", "reason": "The official site is exact-name and career-matched to the rider independently verified by MotoGP and BMW."},
+      "source_ids": ["S3", "S10", "S11"]
+    },
+    {
+      "type_id": "3",
+      "type": "Twitter",
+      "url": "https://x.com/ValeYellow46",
+      "verification": "MotoGP directly embeds posts from Valentino Rossi at @ValeYellow46; an independent account-introduction article cross-links that handle, his official site and the saved Instagram.",
+      "confidence": {"score": 90, "band": "high", "reason": "The official championship's exact-person embedded account and independent cross-linking establish the personal account despite direct X page access restrictions."},
+      "source_ids": ["S13", "S14"]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0129",
+      "name": "Motorsport",
+      "summary": "Rossi's world-championship motorcycle career, current car-racing work and ownership of a MotoGP team make motorsport his defining professional and business identity.",
+      "relationship_type": "champion_racer_and_team_founder_owner",
+      "temporal_scope": "current",
+      "taxonomy_value": "Connects owners for whom sustained competitive racing or ownership of a professional motor-racing enterprise is defining, excluding recreational drivers and incidental sponsors.",
+      "confidence": {"score": 99, "band": "very_high", "reason": "Official MotoGP records establish an exceptional professional racing career; Ducati, CUPRA and BMW establish continuing team ownership and competitive activity. The active Motorsport contract expressly includes defining professional, competitive and ownership roles."},
+      "source_ids": ["S3", "S7", "S8", "S10"]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=2880",
+      "title": "Valentino Rossi owner record, person ID 2880",
+      "publisher": "Superyacht Network; saved authoritative owner export",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": ["Exact source name, Italian nationality and residence, Italy birth country, Alive status and an age of 42 on 17 February 2021.", "Saved Instagram valeyellow46 and malformed Wikipedia URL are baseline links, not independently sufficient person proof.", "The selected current relationship is Bluesmobile, 26.82 metres and 115 GT, used only for public identity disambiguation and not for biography or wealth classification."]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.superyachtfan.com/yacht/bluesmobile/",
+      "title": "Bluesmobile yacht and named owner",
+      "publisher": "SuperYacht Fan",
+      "tier": 3,
+      "accessed_at": "2026-09-19",
+      "supports": ["Explicitly identifies Bluesmobile's owner as motorcycle champion Valentino Rossi.", "Its approximate 27-metre length and 115-tonne volume align with the 26.82-metre, 115-GT saved relationship; identification only, not wealth evidence."]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.yachtbuyer.com/en/fleet/bluesmobile-87-sanlorenzo",
+      "title": "Bluesmobile yacht overview",
+      "publisher": "YachtBuyer",
+      "tier": 3,
+      "accessed_at": "2026-09-19",
+      "supports": ["Independent vessel overview confirms the Bluesmobile name, exact 26.82-metre length and 115 GT, matching the saved hull.", "YachtBuyer does not independently name Rossi; the exact hull specification strengthens the public owner link from S1 only as identity context."]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.motogp.com/en/riders/valentino-rossi-undefined/d6f009a8-5a57-49b1-8c68-a9c78349d500",
+      "title": "Valentino Rossi official rider profile",
+      "publisher": "MotoGP",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": ["Official rider profile gives Italian nationality, birth on 16 February 1979 at Urbino, nine world championships and titles across 125cc, 250cc, 500cc and MotoGP machinery.", "Describes the Honda-to-Yamaha switch, subsequent Ducati stint and return to Yamaha.", "The full birth date matches the source record's age 42 as at 17 February 2021."]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.forbes.com/profile/valentino-rossi/",
+      "title": "Valentino Rossi profile",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-19",
+      "supports": ["Dedicated person profile identifies Italian motorcycle racer Valentino Rossi, Yamaha and Ducati, sponsors and motorcycles as his source of wealth.", "The profile's editor text was last updated in 2013 and is used only for historical creation-sector evidence, not current holdings, roles, age or net worth."]
+    },
+    {
+      "id": "S5",
+      "url": "https://images.forbes.com/lists/2005/53/QN4Y.html",
+      "title": "Valentino Rossi, Forbes Top Celebrities",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-19",
+      "supports": ["Contemporaneous Forbes income reporting attributes a Yamaha performance bonus and sponsor payments to Rossi's sporting earnings.", "Historical pay figures are not repeated in owner-facing prose or treated as current income."]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.motorsportmagazine.com/archive/article/december-2008/35/motor-sport-corners-rubber-ground-mechanics-dirt-under-their/",
+      "title": "Valentino Rossi interviewed about his early racing",
+      "publisher": "Motor Sport Magazine",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": ["Rossi says kart-racing costs were prohibitive while his father Graziano's motorcycle-world contacts helped find bikes and sponsors.", "The direct interview supports a material industry-access advantage at the launch stage, separate from Rossi's later personally earned championships and income."]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.ducati.com/us/en/news/vr46-racing-team-set-to-become-ducati-s-motogp-factory-supported-team-from-2025",
+      "title": "VR46 Racing Team and Ducati partnership",
+      "publisher": "Ducati",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": ["Ducati states Rossi founded VR46 Racing Team in Tavullia in 2014 and that it progressed through Moto3 and Moto2 to MotoGP.", "A continuing manufacturer partnership establishes the team's material professional-racing operation rather than an honorary association."]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.cupraofficial.it/partnerships/cupra-x-vr46-news/cupra-e-vr46-rinnovo-2026",
+      "title": "CUPRA and VR46 renew partnership",
+      "publisher": "CUPRA",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": ["The current 2026 official partner account expressly calls Rossi Team Owner while separately naming the team director, manager and VR46 Agency chief executive.", "The role distinction supports founder-owner, not an invented claim that Rossi manages every daily team operation."]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.valentinorossi.com/en/31-news/2014/391-vr46-riders-academy.html",
+      "title": "VR46 Riders Academy launch",
+      "publisher": "Valentino Rossi official website",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": ["Rossi publicly established the VR46 Riders Academy at Tavullia to use his racing experience in training and developing young Italian riders.", "The academy is a distinct, enduring sports-business and training dimension of his public role."]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.bmw-m.com/en/topics/about-bmw-m-gmbh/people.html",
+      "title": "BMW M People: Valentino Rossi",
+      "publisher": "BMW M",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": ["BMW describes Rossi as a works driver in car racing after motorcycle competition, including GT World Challenge and endurance races.", "Its exact professional profile corroborates the official MotoGP identity and ongoing motorsport career."]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.valentinorossi.com/en/",
+      "title": "Valentino Rossi official website",
+      "publisher": "Valentino Rossi",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": ["Self-described official personal site for the exact racing figure, with motorcycle history and four-wheel competition.", "Supports a Personal Website proposal, distinct from the VR46 e-commerce company site."]
+    },
+    {
+      "id": "S12",
+      "url": "https://vr46.com/pages/code-of-ethics",
+      "title": "VR46 Racing Apparel code of ethics",
+      "publisher": "VR46 Racing Apparel",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": ["The official company statement identifies an operating business that designs, produces and markets Valentino Rossi and other riders' licensed racing merchandise.", "Merchandising is a current related business, but the document supplies no basis to make retail the principal industry over Rossi's sports platform."]
+    },
+    {
+      "id": "S13",
+      "url": "https://www.motogp.com/en/news/2020/10/15/jarvis-rossi-team-members-excluded-from-direct-risk/162959",
+      "title": "MotoGP embeds Valentino Rossi's @ValeYellow46 account",
+      "publisher": "MotoGP",
+      "tier": 1,
+      "accessed_at": "2026-09-19",
+      "supports": ["Official MotoGP reporting directly embeds a post attributed to Valentino Rossi at @ValeYellow46.", "The attribution provides an official exact-person cross-link to the proposed X/Twitter account."]
+    },
+    {
+      "id": "S14",
+      "url": "https://www.motoblog.it/post/129517/valentino-rossi-arriva-il-nuovo-sito-ufficiale-per-vr46",
+      "title": "Valentino Rossi's official site and social channels",
+      "publisher": "Motoblog",
+      "tier": 3,
+      "accessed_at": "2026-09-19",
+      "supports": ["Independent coverage of the official personal website's launch cross-links Rossi's Twitter, Instagram and official Facebook page, distinguishing them from impersonators.", "MotoGP's own posts independently authenticate the saved Instagram valeyellow46 and X handle ValeYellow46; no LinkedIn profile was securely verified."]
+    }
+  ],
+  "uncertainties": [
+    "Public yacht reporting names Rossi as Bluesmobile's owner and independent yacht specifications match the source hull. The vessel is used only to resolve identity and appears in neither biography nor any wealth premise.",
+    "The source relationship begins in 2020 whereas public Bluesmobile specifications describe a 2021 Sanlorenzo completion. The acquisition or registration timing is not resolved and is not used in person or wealth classification.",
+    "Forbes' exact person profile is verified, but its editor's note dates to 2013. It supports the original motorcycle-racing wealth mechanism and is not used for current residence, age, holdings or net worth.",
+    "The primary-industry Sports decision is an 82-point inference from a continuing founder-owned MotoGP team, academy and racing-linked merchandise operation. A complete personal asset schedule is unavailable; retail or other investment holdings could be material, but there is no evidence that they dominate.",
+    "Founder describes Rossi's continuing VR46 sports-business platform. His original personal income came through racing and sponsorship, so the relationship label does not claim that team founding preceded all of his wealth.",
+    "Graziano Rossi's professional racing background and contacts materially helped early access to bikes and sponsors, supporting an advantaged start; no source indicates an inherited principal business or transferred core asset.",
+    "The existing Instagram account is independently authenticated by MotoGP embeds. The existing Wikipedia URL contains spaces and likely needs clerical normalisation, but no duplicate link is proposed through the social-addition workflow.",
+    "Priority LinkedIn and Personal Website searches were performed. The exact official personal site is proposed; no collision-safe personal LinkedIn was found. X is separately authenticated through MotoGP and independent cross-linking; other platform or fan accounts were not imported.",
+    "The single active Motorsport tag is a deliberate minimum useful set. Professional athlete and Racing driver were considered, but would add substantial overlap to Rossi's defining racing-and-team-owner identity for this dossier.",
+    "The 54-word short biography and 94-word two-paragraph long biography share only the essential racing and VR46 anchors. The long version omits wealth and paternal-access material while adding the manufacturer switch, cross-class titles, car racing, training model and team progression."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Resolved exact source owner through name, matching official birth date, existing Instagram and exact Bluesmobile hull/person bridge. Forbes profile verified; all four wealth fields classified independently. Vessel facts remain identity-only."
+  }
+}

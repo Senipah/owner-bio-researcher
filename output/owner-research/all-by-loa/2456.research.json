@@ -1,0 +1,319 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 2456,
+    "display_name": "Mr Martin Lynch",
+    "identity_confidence": {
+      "score": 68,
+      "band": "low",
+      "reason": "The immutable record and public marine material consistently identify a British owner named Martin Lynch, but they do not supply a middle name, employer, address or other collision-resistant identifier. Companies House independently documents Martin Joseph Lynch and Martin John Lynch as different British businesspeople, both born in May 1966 and resident in the United Kingdom or England. Each therefore matches every saved biographical attribute, and neither can be selected safely."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "identity_conflict",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "Martin Lynch cannot be safely matched to a public business biography. Official company records contain two different British residents born in May 1966: Martin Joseph Lynch, formerly a director and controlling shareholder of Pure Data Centres Group, and Martin John Lynch, formerly a Clymac director and significant shareholder. Public marine and company records connect the asset context only to the unqualified name Martin Lynch, without a middle name, address or employer. Since both candidates fit every stored biographical attribute, assigning either career would risk combining two natural people. Biography and personal enrichment are therefore withheld.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Companies House distinguishes the two same-month, same-year British candidates by different middle names and business histories, while every public source tied to the target context uses only Martin Lynch. The note reports that exact unresolved collision without transferring either candidate's career."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Forbes was searched first using Martin Lynch, Martin Joseph Lynch, Martin John Lynch, the saved 1966 birth year and both candidate companies with site:forbes.com/profile and broader site:forbes.com restrictions. No dedicated Forbes profile or article could be tied safely to this owner record."
+    },
+    "source_ids": []
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The two unresolved candidates are associated with different operating sectors, so the industry that created the relevant wealth cannot be attributed safely.",
+    "confidence": {
+      "score": 35,
+      "band": "insufficient",
+      "reason": "One candidate controlled a data-centre group, while the other held a substantial interest in a fire-alarm installation and maintenance business. The owner-context sources do not identify which candidate they concern."
+    },
+    "source_ids": [
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No current principal commercial interest can be established for the unresolved person represented by the source record.",
+    "confidence": {
+      "score": 30,
+      "band": "insufficient",
+      "reason": "Both identified candidates left the documented directorships in April 2023, and the marine ownership company supplies no evidence of the natural person's current operating focus."
+    },
+    "source_ids": [
+      "S4",
+      "S5",
+      "S7"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The available evidence does not establish whether the relevant wealth was self-made, inherited, family-transferred or created through another mechanism.",
+    "confidence": {
+      "score": 32,
+      "band": "insufficient",
+      "reason": "Company-control records describe historical ownership but do not resolve the target identity or document the relevant person's starting capital, inheritance or family contribution."
+    },
+    "source_ids": [
+      "S6",
+      "S8"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "A founder, operator, investor, heir or family-shareholder relationship cannot be assigned without selecting between the two matching candidates.",
+    "confidence": {
+      "score": 36,
+      "band": "insufficient",
+      "reason": "Both candidates have documented ownership or directorship evidence, but those candidate-specific relationships cannot be transferred across an unresolved same-name collision."
+    },
+    "source_ids": [
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=2456",
+      "title": "Mr Martin Lynch owner record, person ID 2456",
+      "publisher": "Superyacht Network Agent",
+      "tier": 1,
+      "accessed_at": "2026-09-18",
+      "supports": [
+        "Immutable person ID and source display name",
+        "Saved British nationality, United Kingdom residence, male gender and United Kingdom birth country",
+        "Saved May 1966 birth month and year with no middle name, known-for title, biography or social profiles",
+        "Private-asset context used only for identity investigation"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.yccs.it/en/regattas-2023/giorgio_armani_superyacht_regatta-3301/iscritti-238/provisional_entry_list",
+      "title": "Giorgio Armani Superyacht Regatta 2023 provisional entry list",
+      "publisher": "Yacht Club Costa Smeralda",
+      "tier": 1,
+      "accessed_at": "2026-09-18",
+      "supports": [
+        "Public event entry identifying Martin Lynch in the exact vessel context",
+        "Name-only identity support without a middle name, nationality, date of birth, employer or address",
+        "Marine context used for identity resolution only and excluded from biography and wealth classification"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.yccs.it/resarea/files/regate/iscritti/Giorgio_Armani_Superyacht_Regatta_2025_preliminary_entry_list_17.03h.pdf",
+      "title": "Giorgio Armani Superyacht Regatta 2025 preliminary entry list",
+      "publisher": "Yacht Club Costa Smeralda",
+      "tier": 1,
+      "accessed_at": "2026-09-18",
+      "supports": [
+        "Public event entry identifying Now or Never Ltd in the exact vessel context",
+        "Company-level ownership clue without identifying the natural shareholder beyond the separate company-directory source",
+        "Marine context used only to test identity and not treated as evidence of wealth sector"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.996co.com/mlt/company/C%2092133",
+      "title": "Now Or Never Ltd, Malta company C 92133",
+      "publisher": "996CO Malta Companies Directory",
+      "tier": 3,
+      "accessed_at": "2026-09-18",
+      "supports": [
+        "Now Or Never Ltd incorporated in Malta on 11 June 2019",
+        "Martin Lynch listed as shareholder",
+        "The listing omits a middle name, date of birth, nationality, residence and business-employer bridge",
+        "Lower-tier directory evidence retained as a company clue rather than a natural-person resolution"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://find-and-update.company-information.service.gov.uk/officers/ToBWazueoShZaKzwVat-DXZ6IHc/appointments",
+      "title": "Martin Joseph Lynch personal appointments",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-09-18",
+      "supports": [
+        "Distinct candidate full name Martin Joseph Lynch",
+        "May 1966 birth month and year, British nationality and residence in England",
+        "Pure Data Centres Group directorship from February 2013 to April 2023",
+        "Candidate matches every saved biographical attribute but lacks a bridge to the public owner context"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/08413665/persons-with-significant-control",
+      "title": "Pure Data Centres Group Limited persons with significant control",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-09-18",
+      "supports": [
+        "Martin Lynch, born May 1966, British and resident in England",
+        "Ownership of more than 75 percent of Pure Data Centres Group shares until 4 October 2020",
+        "Candidate-specific historical control evidence, not proof that this is the owner record"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03019000/officers",
+      "title": "Clymac Limited officers",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-09-18",
+      "supports": [
+        "Distinct candidate full name Martin John Lynch",
+        "May 1966 birth month and year, British nationality and United Kingdom residence",
+        "Clymac directorship from February 1995 to April 2023",
+        "Candidate matches every saved biographical attribute but lacks a bridge to the public owner context"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03019000/persons-with-significant-control",
+      "title": "Clymac Limited persons with significant control",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-09-18",
+      "supports": [
+        "Martin Lynch, born May 1966, British and resident in the United Kingdom",
+        "Ownership of more than 25 percent but not more than 50 percent of Clymac shares and voting rights until 13 April 2023",
+        "Candidate-specific historical control evidence, not proof that this is the owner record"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/m/LSE_MRL_2023.pdf",
+      "title": "Marlowe plc Annual Report and Financial Statements 2023",
+      "publisher": "Marlowe plc",
+      "tier": 1,
+      "accessed_at": "2026-09-18",
+      "supports": [
+        "Clymac described as a UK provider of fire-alarm installation and maintenance services",
+        "Clymac acquired by a Marlowe subsidiary on 13 April 2023",
+        "Business-sector context for the Martin John Lynch candidate without resolving the source identity"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Inventory was run against the exact authoritative owner input before web research. The source record supplies only Martin Lynch, British nationality, United Kingdom residence and a May 1966 birth month and year; it has no middle name, known-for title, biography or social profile.",
+    "Forbes-first searches covered Martin Lynch, Martin Joseph Lynch, Martin John Lynch, the saved birth year and both candidate companies with profile and broader site restrictions. No dedicated Forbes page could be tied safely to person 2456, so Forbes status is Not found and no Forbes social is proposed.",
+    "Yacht Club Costa Smeralda publicly names Martin Lynch in the exact 2023 context and names Now or Never Ltd in the same context in 2025. The Malta directory lists Martin Lynch as that company's shareholder, but none of those sources supplies a middle name, birth detail, address or employer capable of selecting a natural person.",
+    "Companies House identifies Martin Joseph Lynch as a separate British resident born in May 1966 and documents his former Pure Data Centres Group role and control. His middle name Joseph is not added to the source record because no public owner-context source supplies it.",
+    "Companies House independently identifies Martin John Lynch as a British resident born in May 1966 and documents his former Clymac role and substantial shareholding. His middle name John is likewise not added because no public owner-context source connects him to person 2456.",
+    "The matching name, nationality, residence and birth month/year do not distinguish the two candidates. Business scale, transaction timing, apparent means, geography, photographs and lifestyle plausibility are not treated as identity bridges.",
+    "All four wealth questions were investigated separately. Pure Data Centres and Clymac point to different sectors and different ownership histories, while the target-linked company supplies no operating-business evidence. Each classification therefore remains Unknown rather than borrowing one candidate's facts.",
+    "Candidate-specific LinkedIn and company pages were reviewed during discovery. No profile contained an exact public owner-company or event link, so no LinkedIn, Instagram, company website or personal website is proposed.",
+    "No approved active tag can be assigned safely. Data-centre, digital-infrastructure, fire-safety or security tags would all depend on selecting a candidate without collision-resistant evidence.",
+    "Because identity remains below the 75 threshold, biography, long biography, biography brief and editorial assessment are null. The editorial note records the conflict without publishing private-asset history as biography.",
+    "Only the assigned dossier was created. No cohort flag, catalogue, shared input, source code, compiled artifact, live record or other owner dossier was edited."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal identity_conflict dossier. Person 2456 remains unresolved at 68 confidence because Martin Joseph Lynch and Martin John Lynch are distinct British businesspeople who both match the source record's May 1966 birth month/year and United Kingdom residence. Public owner-context sources use only Martin Lynch and provide no business or middle-name bridge. All four wealth classifications remain Unknown; biographies, personal details, socials and tags are withheld. Nothing has been compiled, synchronized or applied."
+  }
+}

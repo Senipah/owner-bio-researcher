@@ -1,0 +1,147 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 2737,
+    "display_name": "Martha Robinson Rivers Ingram",
+    "identity_confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "The canonical uncommon full name, existing Wikipedia subject, US/Nashville context and age align with the exact-person Forbes profile, Vanderbilt death notice and family obituary. The selected Patsea VII matches a 26.21-metre public yacht listing; older Patsea vessels are linked to the Ingram family, although a public source naming Martha as owner of this particular VII hull was not found."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "researchable_missing_details": ["secondary_nationality", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": ["Wikipedia"],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "American billionaire businesswoman and Nashville arts patron Martha Rivers Ingram, former chair of the family-owned Ingram Industries.",
+    "defining_work": "Stewardship of the family's distribution-and-transport group after her husband's death, alongside founding and supporting Nashville performing-arts institutions.",
+    "formative_context": "Born in Charleston, she studied history at Vassar and worked in her father's radio and television business, including classical-music broadcasting; her husband Bronson had built on an inherited Ingram enterprise.",
+    "decisive_moment": "After Bronson's death in 1995, she became Ingram Industries chair; the family separated computer distribution through Ingram Micro's public offering while keeping book distribution and inland marine transport.",
+    "enduring_dimensions": ["Helped establish the Tennessee Performing Arts Center and sustained Nashville's symphony, opera and theatre.", "Chaired Vanderbilt University's trustees and helped develop the university's residential-college approach.", "Family-company assets remained concentrated in book distribution and inland marine transport after the computer-distribution separation."],
+    "character_detail": "Her early work presenting classical music preceded decades of institution-building for the performing arts.",
+    "opening_options": [
+      {"mode": "public_contribution", "angle": "Lead with her work creating lasting Nashville performing-arts institutions."},
+      {"mode": "inherited_responsibility", "angle": "Lead with succession to the family group following Bronson Ingram's death."}
+    ],
+    "excluded_transient_context": ["Private-vessel names, dimensions and ownership history, used only to test the source record.", "Current billionaire ranking, net-worth amount, fleet size and specific ownership percentages.", "Unsupported personal ownership of the adult children's separately controlled businesses and unverified estate allocations.", "The malformed existing Wikipedia URL, source attributions and mortality-reconciliation mechanics."],
+    "source_ids": ["S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "public_contribution",
+    "narrative_shape": "public_role_then_foundation",
+    "calibration_archetypes": ["inherited_operator", "heir_custodian"],
+    "notes": "The short identity card gives the inherited Ingram stake, distribution-and-transport wealth platform and civic stature. The long profile opens independently with arts institution-building and adds Charleston broadcasting, the corporate separation and Vanderbilt residential-college work. The long omits the short's billionaire descriptor and does not simply expand its fact order."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/martha-ingram/",
+    "confidence": {"score": 99, "band": "very_high", "reason": "The dedicated Forbes Martha Ingram & family profile explicitly identifies her as former Ingram Industries chair, gives the same family business and Vanderbilt role, and reports her August 2026 death; it matches the canonical full-name record and primary university notice."}
+  },
+  "wealth_creation_industry": {
+    "classification": "logistics",
+    "label": "Logistics",
+    "summary": "The transferred Ingram family fortune arose from an oil-and-barge enterprise expanded into wholesale distribution of books and computers. Ingram Micro was the largest division near the 1995 succession; the causal commonality across the fortune-building businesses was distribution and transportation, not software development or book publishing.",
+    "confidence": {"score": 84, "band": "medium", "reason": "Forbes and the contemporaneous Los Angeles Times trace the inherited barge platform and Bronson Ingram's material book and computer-distribution businesses; the 1995 report said Ingram Micro supplied most group revenue. The Logistics label is a reasoned mapping of the evidenced freight, wholesale and supply-chain mechanisms, with no exact asset-value breakdown."},
+    "source_ids": ["S1", "S4", "S5", "S6"]
+  },
+  "primary_industry": {
+    "classification": "logistics",
+    "label": "Logistics",
+    "summary": "At Ingram's death, the family's principal reported private company combined book distribution with inland marine transportation. Forbes described both as the sources of the family fortune, and Ingram's current operating units continued publishing-supply and barge-transport work.",
+    "confidence": {"score": 87, "band": "high", "reason": "The current Forbes profile directly identifies the family-owned book-distribution and marine firm as the wealth source; company materials document active book-supply and inland-barge operations. Computer distribution had been separated and later acquired, so the present classification follows the continuing distribution/transport group rather than her former Ingram Micro board role."},
+    "source_ids": ["S1", "S6", "S7", "S8"]
+  },
+  "wealth_origin": {
+    "classification": "inherited",
+    "label": "Inherited",
+    "summary": "Following Bronson Ingram's death in 1995, Martha received a family-company interest and succeeded to its chairmanship. She had worked in public affairs and served on its board before the transfer; her later leadership and restructuring do not make her the founder of the existing fortune.",
+    "confidence": {"score": 92, "band": "high", "reason": "Forbes explicitly calls the transfer an inheritance, and a contemporaneous Los Angeles Times report confirms Martha and the children owned most of the parent company immediately after Bronson's death. Harvard and Ingram histories support substantial post-succession decisions, but do not isolate enough personal expansion of the inherited asset to assert the narrower Inherited and expanded subtype."},
+    "source_ids": ["S4", "S5", "S6", "S9"]
+  },
+  "wealth_relationship": {
+    "classification": "heir_family_shareholder",
+    "label": "Heir / family shareholder",
+    "summary": "Her last documented economic relationship was as a member of the family ownership group behind Ingram Industries. She chaired and helped reorganise the business after succession, then stepped away from its chairmanship in 2008 while the family retained the distribution and marine operations.",
+    "confidence": {"score": 79, "band": "medium", "reason": "Forbes identifies Martha and the children as family owners and records her 2008 retirement as chair; the 1995 ownership reporting is direct. Heir / family shareholder best captures the last documented lifetime asset relationship rather than treating a decades-old executive title as current. Estate distribution after her August 2026 death is not established."},
+    "source_ids": ["S1", "S5", "S6"]
+  },
+  "biography": {
+    "plain_text": "Martha Rivers Ingram was an American billionaire businesswoman and arts patron. She inherited an interest in Nashville-based Ingram Industries after her husband Bronson died, then chaired the family's book-distribution and inland-transport businesses. She helped bring Ingram Micro to the public market and played a central role in developing Nashville's performing-arts institutions.",
+    "html": "<p>Martha Rivers Ingram was an American billionaire businesswoman and arts patron. She inherited an interest in Nashville-based Ingram Industries after her husband Bronson died, then chaired the family's book-distribution and inland-transport businesses. She helped bring Ingram Micro to the public market and played a central role in developing Nashville's performing-arts institutions.</p>\r\n",
+    "word_count": 51,
+    "confidence": {"score": 92, "band": "high", "reason": "Forbes directly documents billionaire family stature, the inherited business and Ingram Micro separation; Vanderbilt and the family obituary establish her leadership in Nashville's performing arts. The wording attributes the family enterprise and its assets without assigning every holding to Martha personally."},
+    "source_ids": ["S1", "S2", "S3", "S4"]
+  },
+  "long_biography": {
+    "plain_text": "Martha Rivers Ingram's involvement in Nashville's cultural life began well before she led her family's distribution businesses. Raised in Charleston, South Carolina, she studied history at Vassar and worked in her father's radio and television company, including a classical-music programme. In Nashville she helped establish the Tennessee Performing Arts Center and remained a sustained supporter of the symphony, opera and repertory theatre.\n\nShe joined Ingram Industries in public affairs and succeeded her husband Bronson as chair after his death. The family separated its computer-distribution arm as Ingram Micro, while retaining book distribution and inland marine transport within the group. As chair of Vanderbilt University's trustees, she helped shape its residential-college plans and supported the Blair School of Music.",
+    "html": "<p>Martha Rivers Ingram's involvement in Nashville's cultural life began well before she led her family's distribution businesses. Raised in Charleston, South Carolina, she studied history at Vassar and worked in her father's radio and television company, including a classical-music programme. In Nashville she helped establish the Tennessee Performing Arts Center and remained a sustained supporter of the symphony, opera and repertory theatre.</p>\r\n<p>She joined Ingram Industries in public affairs and succeeded her husband Bronson as chair after his death. The family separated its computer-distribution arm as Ingram Micro, while retaining book distribution and inland marine transport within the group. As chair of Vanderbilt University's trustees, she helped shape its residential-college plans and supported the Blair School of Music.</p>\r\n",
+    "word_count": 118,
+    "confidence": {"score": 89, "band": "high", "reason": "The family obituary establishes Charleston, Vassar, broadcasting and arts institutions; Vanderbilt documents business succession, the family fund and university role; Ingram company history and Forbes support the distribution-and-marine structure."},
+    "source_ids": ["S1", "S2", "S3", "S4", "S6"]
+  },
+  "proposed_details": [
+    {"field": "known_for_title", "value": "Former chair of Ingram Industries and Nashville arts patron", "action": "fill_missing", "confidence": {"score": 98, "band": "very_high", "reason": "Forbes identifies her former Ingram Industries chairmanship, while Vanderbilt's obituary details her long arts patronage."}, "source_ids": ["S1", "S2"]},
+    {"field": "place_of_birth", "value": "Charleston, South Carolina", "action": "fill_missing", "confidence": {"score": 98, "band": "very_high", "reason": "The family funeral-home obituary explicitly records Charleston, South Carolina as her birthplace."}, "source_ids": ["S3"]},
+    {"field": "birth_day", "value": "20", "action": "fill_missing", "confidence": {"score": 99, "band": "very_high", "reason": "The exact-person family obituary directly states 20 August 1935."}, "source_ids": ["S3"]},
+    {"field": "birth_month", "value": "August", "action": "fill_missing", "confidence": {"score": 99, "band": "very_high", "reason": "The exact-person family obituary directly states 20 August 1935."}, "source_ids": ["S3"]},
+    {"field": "birth_year", "value": "1935", "action": "fill_missing", "confidence": {"score": 99, "band": "very_high", "reason": "The exact-person family obituary directly states 20 August 1935; the existing age snapshot is consistent."}, "source_ids": ["S3", "S0"]},
+    {"field": "mortality_status", "existing_value": "Alive", "value": "Deceased", "action": "correct_existing", "confidence": {"score": 100, "band": "very_high", "reason": "Vanderbilt University and the family funeral-home obituary independently record Martha Rivers Ingram's death on 6 August 2026, and Forbes now marks the exact profile Deceased."}, "source_ids": ["S1", "S2", "S3"]},
+    {"field": "biography", "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Martha_Rivers_Ingram\">Martha Robinson Rivers</a> Ingram is an American philanthropist and millionaire businesswoman.</p>\r\n", "value": "<p>Martha Rivers Ingram was an American billionaire businesswoman and arts patron. She inherited an interest in Nashville-based Ingram Industries after her husband Bronson died, then chaired the family's book-distribution and inland-transport businesses. She helped bring Ingram Micro to the public market and played a central role in developing Nashville's performing-arts institutions.</p>\r\n", "action": "correct_existing", "confidence": {"score": 95, "band": "very_high", "reason": "The existing one-sentence biography is source-visible, generic, understates Forbes-verified stature and uses present tense after her confirmed death. The replacement is person-led, vessel-independent and directly supported by Forbes and Vanderbilt."}, "source_ids": ["S1", "S2", "S3", "S4"]}
+  ],
+  "proposed_socials": [
+    {"type_id": "11", "type": "Forbes", "url": "https://www.forbes.com/profile/martha-ingram/", "verification": "The dedicated Forbes Martha Ingram & family profile names the former Ingram Industries chair and matches her family enterprise and death notice.", "confidence": {"score": 99, "band": "very_high", "reason": "Forbes directly identifies the same person, company, family wealth source and deceased status; its URL is distinct from the existing malformed Wikipedia row."}, "source_ids": ["S1", "S2"]}
+  ],
+  "proposed_tags": [],
+  "candidates_requiring_review": [
+    {"candidate_type": "dependent_detail_after_mortality_correction", "field": "death_day", "value": "6", "reason": "The immutable owner input currently classifies death fields as inapplicable while mortality is Alive. Review the precise date after accepting the mortality correction.", "confidence": {"score": 100, "band": "very_high", "reason": "Vanderbilt University and the family obituary identify 6 August 2026."}, "source_ids": ["S2", "S3"]},
+    {"candidate_type": "dependent_detail_after_mortality_correction", "field": "death_month", "value": "August", "reason": "The immutable owner input currently classifies death fields as inapplicable while mortality is Alive. Review the precise date after accepting the mortality correction.", "confidence": {"score": 100, "band": "very_high", "reason": "Vanderbilt University and the family obituary identify 6 August 2026."}, "source_ids": ["S2", "S3"]},
+    {"candidate_type": "dependent_detail_after_mortality_correction", "field": "death_year", "value": "2026", "reason": "The immutable owner input currently classifies death fields as inapplicable while mortality is Alive. Review the precise date after accepting the mortality correction.", "confidence": {"score": 100, "band": "very_high", "reason": "Vanderbilt University and the family obituary identify 6 August 2026."}, "source_ids": ["S2", "S3"]},
+    {"candidate_type": "dependent_detail_after_mortality_correction", "field": "death_age", "value": "90", "reason": "The immutable owner input currently classifies death fields as inapplicable while mortality is Alive. Review calculated age after accepting the mortality correction.", "confidence": {"score": 100, "band": "very_high", "reason": "She was born 20 August 1935 and died 6 August 2026, before her 91st birthday; Vanderbilt states she was 90."}, "source_ids": ["S2", "S3"]}
+  ],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=2737", "title": "Martha Robinson Rivers Ingram owner record, person ID 2737", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Records the exact full display name, American nationality, female gender, United States residence/birth country and stale Alive status.", "The saved biography is a brief Wikipedia-linked sentence; the saved Wikipedia social URL contains an embedded space.", "Patsea VII, vessel ID 46593, is the selected 26.21-metre relationship, used only as identity context."]},
+    {"id": "S1", "url": "https://www.forbes.com/profile/martha-ingram/", "title": "Martha Ingram & family", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Dedicated matching profile identifies Martha Ingram as deceased former Ingram Industries chairman and describes the family's book-distribution and inland-marine wealth source.", "It says she succeeded after husband Bronson's death, stepped down as chair in 2008, and that the adult children retained ownership; the 1996 Ingram Micro separation is also described.", "Forbes dates the death to August 2026 but its profile header retains a pre-death 2026 valuation, which is not repeated as personal current wealth."]},
+    {"id": "S2", "url": "https://news.vanderbilt.edu/2026/08/06/vanderbilt-mourns-the-loss-of-leader-benefactor-and-friend-martha-rivers-ingram/", "title": "Vanderbilt mourns Martha Rivers Ingram", "publisher": "Vanderbilt University", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The university states its chairman emerita died on 6 August 2026 in Nashville at age 90.", "It records that she succeeded her husband as Ingram Industries chair and CEO after his 1995 death, having served in public affairs, and details her university, charitable-fund and arts leadership."]},
+    {"id": "S3", "url": "https://www.dignitymemorial.com/obituaries/nashville-tn/martha-ingram-12994255", "title": "Martha Rivers Ingram family obituary", "publisher": "Mount Olivet Funeral Home & Cemetery / Ingram family", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Gives exact birth on 20 August 1935 in Charleston, South Carolina and death on 6 August 2026.", "Describes Vassar history studies, work in her father's broadcasting business, establishment and support of Tennessee and Nashville performing-arts institutions.", "Its account of boating is not used as a wealth or biography fact."]},
+    {"id": "S4", "url": "https://www.forbes.com/global/1999/1011/118_01.html", "title": "Wives Club: Martha Ingram", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Contemporaneous Forbes coverage explicitly says Martha inherited the family business after Bronson's death in 1995.", "It traces Bronson's own family barge inheritance and the family's book and computer-distribution expansion, while describing her post-succession role."]},
+    {"id": "S5", "url": "https://www.latimes.com/archives/la-xpm-1995-06-23-fi-16426-story.html", "title": "Ingram leadership changes after Bronson Ingram's death", "publisher": "Los Angeles Times", "tier": 2, "accessed_at": "2026-09-19", "supports": ["A June 1995 report says Martha and her children, with other relatives, owned most of Ingram Industries after Bronson's death, and Martha was elected chair.", "It identifies computer products distribution as then the largest revenue-producing division, with barge transportation and book distribution also major businesses."]},
+    {"id": "S6", "url": "https://ingrambarge.com/who-we-are/our-story/", "title": "Ingram marine history", "publisher": "Ingram Marine Group", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The company traces the inherited and expanded family barge business and states Martha became chair of Ingram Industries after Bronson's death.", "It distinguishes Orrin and John Ingram's subsequent executive roles and documents continued inland marine operations."]},
+    {"id": "S7", "url": "https://www.ingramcontent.com/news/ingram-library-services-and-penguin-random-house-expand-access-for-libraries-through-new-print-on-demand-program", "title": "Ingram Content Group 2026 distribution operations", "publisher": "Ingram Content Group", "tier": 1, "accessed_at": "2026-09-19", "supports": ["A June 2026 first-party release says Ingram Content Group remains part of Ingram Industries and operates physical/digital book distribution and print-on-demand services.", "The continuing business supports the current portfolio sector without attributing day-to-day management to Martha."]},
+    {"id": "S8", "url": "https://www.hbs.edu/leadership/20th-century-leaders/details?profile=martha_r_ingram", "title": "Martha R. Ingram leadership profile", "publisher": "Harvard Business School", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Profiles Martha's leadership after Bronson's death, including the Ingram Micro spin-off and public offering.", "Its broad statement that the company flourished does not quantify Martha's individual post-inheritance wealth expansion."]},
+    {"id": "S9", "url": "https://www.businesshalloffame.org/martha-rivers-ingram", "title": "Martha Rivers Ingram laureate profile", "publisher": "Global Business Hall of Fame / Junior Achievement", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Records her 1979 public-affairs role, 1981 company board seat, succession to CEO and 1996 Ingram Micro separation.", "Supports long operating stewardship but not a current role after she stepped down in 2008."]},
+    {"id": "S10", "url": "https://www.superyachttimes.com/yachts/patsea-vii/overview", "title": "Patsea VII vessel profile", "publisher": "SuperYacht Times", "tier": 3, "accessed_at": "2026-09-19", "supports": ["Matches the selected Patsea VII at 26.21 metres and names its 2008 builder.", "Does not publicly name Martha or establish independent personal ownership."]},
+    {"id": "S11", "url": "https://www.denisonyachtsales.com/yachts-for-sale/miss-phebe-ii-62-whiticar-I", "title": "Patsea V yacht provenance", "publisher": "Denison Yacht Sales", "tier": 3, "accessed_at": "2026-09-19", "supports": ["A separate historical Patsea V was commissioned by E. Bronson Ingram II, establishing family use of the vessel-name series.", "It does not establish Martha's ownership of the distinct Patsea VII hull."]},
+    {"id": "S12", "url": "https://www.jimsmithboats.com/copy-of-review-86", "title": "Patsea VII review", "publisher": "Yachting magazine, reproduced by builder Jim Smith Boats", "tier": 3, "accessed_at": "2026-09-19", "supports": ["A 2008 builder-hosted Yachting review says the new 86-foot Patsea VII was delivered to an experienced woman angler.", "It does not name Martha Ingram and is only a non-exclusive identity clue."]}
+  ],
+  "uncertainties": [
+    "Forbes, Vanderbilt and the family obituary resolve the uncommon exact-person identity. Patsea VII matches the canonical 26.21-metre yacht; a different earlier Patsea V is documented as Bronson Ingram's, and a builder-hosted VII account refers only to a woman angler. These are corroborative family/series clues, not proof of Martha's beneficial ownership of VII; the selected relationship remains a source-record claim.",
+    "The source record still says Alive. Vanderbilt and the family obituary establish death on 6 August 2026, so mortality_status is proposed as a correction. Day, month, year and calculated death age are held for dependent review because the immutable input categorises them as inapplicable while Alive; no live field is changed.",
+    "Ingram's inherited interest and chairmanship are positively documented. Ingram Micro's flotation and later business stewardship are meaningful, but the sources do not isolate a sufficiently measurable personal post-inheritance expansion to replace Inherited with Inherited and expanded. Her last documented relationship is family shareholder after leaving the chair; probate and estate allocation are unverified.",
+    "Vanderbilt's retrospective describes her as both chairman and CEO after Bronson's 1995 death, but a contemporaneous Los Angeles Times report names Linwood Lacy as the newly appointed group CEO and Martha as chair. The biographies and title proposal therefore use only the uncontested chairmanship.",
+    "Logistics captures the family's causal wholesale-distribution and inland-transport businesses, including computer distribution during the original fortune-building period and books/barges at death. It does not imply she published books, wrote software or personally operated vessels; the business spans multiple operations and no exact private asset breakdown is published.",
+    "The existing Wikipedia social URL contains an embedded space and was not used as a working citation or silently repaired in the owner input. A verified Forbes profile is separately proposed. No personally authenticated LinkedIn, Instagram, Facebook, X, YouTube, TikTok or personal website was found.",
+    "The active literal catalogue has no exact book-distribution, inland-barge or arts-patron concept. Publishing, commercial shipowner and generic philanthropy labels would overstate or misdescribe her role, so no tag or taxonomy candidate is proposed.",
+    "The existing linked biography is generic, states only 'millionaire', and uses present tense after her death. The replacement is a source-backed person profile without a current net-worth estimate, yacht context or claims about holdings held by individual children."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal exact-person dossier: corrected mortality proposed with dependent death-date review, Forbes profile verified, Logistics creation/current sectors, Inherited origin and Heir / family shareholder lifetime asset relationship. Short and long biographies independently describe business stewardship and arts institution-building; no live or shared-state change is authorised."
+  }
+}

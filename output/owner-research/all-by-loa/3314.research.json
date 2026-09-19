@@ -1,0 +1,134 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 3314,
+    "display_name": "Alexey Kuzmichev",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The saved Alexey Viktorovich Kuzmichev identity, 15 October 1962 Kirov birth and Russian nationality match the French Treasury and US OFAC records. A Paris Court of Appeal judgment names the same full-name and birth-date person as beneficial owner of the Malta company holding La Petite Ourse, directly bridging the saved vessel. Forbes independently identifies the Alfa Group and LetterOne co-founder under the Alexei transliteration."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "researchable_missing_details": ["secondary_nationality", "known_for_title"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Alexey Kuzmichev is a Russian billionaire and co-founder of the Alfa Group and LetterOne investment businesses.",
+    "defining_work": "With university associates Mikhail Fridman and German Khan, he developed a trading enterprise into holdings in oil, banking and telecommunications; their TNK-BP interest produced a major realised return.",
+    "formative_context": "He studied at the Moscow Institute of Steel and Alloys, met his future partners there, and worked in Alfa-Eco's international commodities business.",
+    "decisive_moment": "The partners sold their TNK-BP interest and subsequently established LetterOne as an international investment vehicle.",
+    "enduring_dimensions": ["Co-founder of a Russian investment and operating-company group", "Early international oil and commodities trading responsibility", "Historical governance work at LetterOne, including audit and compliance oversight"],
+    "character_detail": null,
+    "opening_options": [{"mode": "present_identity", "angle": "Identify Kuzmichev through the Russian group he co-founded and its cross-sector scale."}, {"mode": "institution_or_asset", "angle": "Begin with Alfa's oil-and-commodities arm as the business in which he worked directly."}, {"mode": "decisive_event", "angle": "Open with the TNK-BP sale that supplied capital for a new investment platform."}],
+    "excluded_transient_context": ["La Petite Ourse, its corporate title chain, sanctions-related immobilisation and specifications", "Current net-worth estimates, Forbes ranking and ownership percentages", "Unadjudicated allegations and legal disputes", "The source record's outdated present-tense Alfa-Bank and LetterOne shareholding implication", "Source attribution and classification uncertainty in published biography text"],
+    "source_ids": ["S2", "S3", "S4", "S5", "S6", "S7", "S8"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "institution_then_person",
+    "calibration_archetypes": ["founder_operator", "investor_philanthropist"],
+    "reviewed_phrase_exceptions": [],
+    "notes": "The shared anchors are Kuzmichev's Alfa connection and the material oil venture. The short biography supplies billionaire status and the broad oil-banking-telecom portfolio; the long profile instead develops his trading responsibilities, Crown Resources and LetterOne governance. Current sanctions and uncertain present holdings remain outside publication prose."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/alexei-kuzmichev/",
+    "confidence": {"score": 99, "band": "very_high", "reason": "The dedicated Forbes person profile matches the Alfa Group and LetterOne co-founder, the TNK-BP sale, Russian nationality, age and education. Alexei is a transliteration variant of the saved Alexey name, corroborated by French and US official identity records."}
+  },
+  "wealth_creation_industry": {
+    "classification": "diversified",
+    "label": "Diversified",
+    "summary": "The original Alfa fortune arose from materially important stakes across oil and commodities, banking and telecommunications. The TNK-BP realisation was a major component, but sources also identify substantial bank and telecom holdings; no one sector is established as the dominant source of his original fortune.",
+    "confidence": {"score": 86, "band": "high", "reason": "Forbes's dedicated 2026 profile explicitly describes oil, banking and telecom as sources of wealth and identifies the large TNK-BP sale. Its 2007 profile records his early oil trading and banking wealth before that exit. Official LetterOne and historical bank documents independently establish the multi-sector group and its material banking and investment scale. Exact personal proceeds and cross-sector weights are not public."},
+    "source_ids": ["S2", "S3", "S4", "S5", "S7"]
+  },
+  "primary_industry": {
+    "classification": "diversified",
+    "label": "Diversified",
+    "summary": "This is an explicit origin-sector fallback, not a claim that a current Alfa or LetterOne portfolio has been verified as his principal personal holding. Recent transfers, his LetterOne exit and conflicting descriptions of other Alfa-linked interests prevent a reliable ranking of present assets.",
+    "confidence": {"score": 72, "band": "medium", "reason": "The diversified wealth-creation sector is well supported by Forbes and company history. LetterOne confirms his departure from all positions, later VEON filings say he is no longer a LetterOne shareholder, and reporting describes transfers of Alfa-Bank interests; the French Treasury's current sanctions entry still attributes other Alfa-linked holdings. Because present holdings cannot be weighted independently, the contract's disclosed origin-sector fallback is used at reduced confidence."},
+    "source_ids": ["S2", "S3", "S6", "S9", "S10"]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "He and university associates co-founded the trading and investment businesses whose oil, banking and telecom stakes produced the fortune. The public record does not establish whether family wealth or other launch advantages materially shaped their start.",
+    "confidence": {"score": 88, "band": "high", "reason": "Forbes expressly labels his fortune self-made and traces the 1989 Alfa-Eco founding, while its current profile identifies the partners and subsequent material assets. The founded-company mechanism is positive evidence, not an inference from silence; the independent-versus-advantaged starting position is not resolved."},
+    "source_ids": ["S2", "S3", "S4"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Founder describes Kuzmichev's historical relation to Alfa and LetterOne, but his principal present asset relationship cannot be fixed after documented board departure and reported stake transfers. Continued founder-linked ownership of some Alfa interests is the strongest alternative; the precise assets and control rights remain contested or undisclosed.",
+    "confidence": {"score": 77, "band": "medium", "reason": "Forbes and LetterOne directly establish founding and historical governance. LetterOne confirms his exit from all positions, VEON's later filing says he is no longer its shareholder, and reports describe Alfa-Bank transfers. The French Treasury still describes him as a significant Alfa Group shareholder and questions one A1 transfer. These positive but conflicting current premises do not establish Founder, Investor, Operator or passive owner for the principal present assets at 70."},
+    "source_ids": ["S2", "S6", "S9", "S10", "S11"]
+  },
+  "biography": {
+    "plain_text": "Alexey Kuzmichev is a Russian billionaire who co-founded Alfa Group with university friends Mikhail Fridman and German Khan. The partners built substantial businesses in oil, banking and telecommunications, including a stake in TNK-BP whose sale helped establish their fortunes. He also helped found LetterOne, an international investment group formed after the oil exit.",
+    "html": "<p>Alexey Kuzmichev is a Russian billionaire who co-founded Alfa Group with university friends Mikhail Fridman and German Khan. The partners built substantial businesses in oil, banking and telecommunications, including a stake in TNK-BP whose sale helped establish their fortunes. He also helped found LetterOne, an international investment group formed after the oil exit.</p>\r\n",
+    "word_count": 53,
+    "confidence": {"score": 92, "band": "high", "reason": "Forbes's dedicated profile and historical reporting support the founding partners, material sectors and TNK-BP proceeds; LetterOne identifies him as a founder. No claim is made about a present shareholding or role."},
+    "source_ids": ["S2", "S3", "S4", "S6"]
+  },
+  "long_biography": {
+    "plain_text": "Oil and commodities trading defined Alexey Kuzmichev's early work in Alfa Group. He met future partners Mikhail Fridman and German Khan at the Moscow Institute of Steel and Alloys, then joined the Alfa-Eco trading venture. He directed international sales and later worked through Crown Resources, the group's oil-trading arm. The partners' interest in TNK-BP became a major source of capital when the oil venture was sold.\n\nAlfa's expansion also placed Kuzmichev in the governance of a wider investment group. He was among the founders and directors of LetterOne, formed after the TNK-BP exit to invest across industries. Its audit and compliance committee included him during his board tenure. He left all LetterOne positions in 2022 as the company's governance changed.",
+    "html": "<p>Oil and commodities trading defined Alexey Kuzmichev's early work in Alfa Group. He met future partners Mikhail Fridman and German Khan at the Moscow Institute of Steel and Alloys, then joined the Alfa-Eco trading venture. He directed international sales and later worked through Crown Resources, the group's oil-trading arm. The partners' interest in TNK-BP became a major source of capital when the oil venture was sold.</p>\r\n<p>Alfa's expansion also placed Kuzmichev in the governance of a wider investment group. He was among the founders and directors of LetterOne, formed after the TNK-BP exit to invest across industries. Its audit and compliance committee included him during his board tenure. He left all LetterOne positions in 2022 as the company's governance changed.</p>\r\n",
+    "word_count": 120,
+    "confidence": {"score": 88, "band": "high", "reason": "The Forbes historical profile supports his education, Alfa-Eco international-sales and Crown Resources work; current Forbes and LetterOne sources document the TNK-BP exit, founding and subsequent board resignation. A first-party annual report identifies his audit and compliance role."},
+    "source_ids": ["S2", "S3", "S4", "S5", "S6", "S7"]
+  },
+  "proposed_details": [
+    {"field": "known_for_title", "value": "Alfa Group and LetterOne co-founder", "action": "fill_missing", "confidence": {"score": 94, "band": "high", "reason": "Forbes's dedicated profile identifies him as a co-founder of both groups and LetterOne's own review confirms his founder status; the text makes no claim to current shareholding or board membership."}, "source_ids": ["S2", "S6"]},
+    {"field": "biography", "value": "<p>Alexey Kuzmichev is a Russian billionaire who co-founded Alfa Group with university friends Mikhail Fridman and German Khan. The partners built substantial businesses in oil, banking and telecommunications, including a stake in TNK-BP whose sale helped establish their fortunes. He also helped found LetterOne, an international investment group formed after the oil exit.</p>\r\n", "action": "correct_existing", "existing_value": "<p>Alexey Viktorovich Kuzmichev or Kousmichoff is a Russian businessman. He is one of the founders of the LetterOne Group and the Alfa Group. Kuzmichev is a stakeholder in VimpelCom, Alfa-Bank, and X5 Retail Group.&nbsp;<a href=\"https://en.wikipedia.org/wiki/Alexey_Kuzmichev\">Wikipedia</a></p>\r\n", "confidence": {"score": 91, "band": "high", "reason": "The saved source biography presents historical bank and telecom stakes in the present tense and contains a visible Wikipedia link. The new source-hidden biography retains durable founding and fortune-mechanism facts without asserting a current stake that later ownership records contest."}, "source_ids": ["S0", "S2", "S3", "S6", "S9"]}
+  ],
+  "proposed_socials": [
+    {"type_id": "11", "type": "Forbes", "url": "https://www.forbes.com/profile/alexei-kuzmichev/", "verification": "Forbes's dedicated person profile matches Alfa Group, LetterOne, TNK-BP, Russian nationality and university ties; the spelling Alexei is an established transliteration variant of the saved Alexey identity.", "confidence": {"score": 99, "band": "very_high", "reason": "The profile is an exact identity match corroborated by official full-name, birth-date and company records, and the source owner has no existing Forbes social link."}, "source_ids": ["S0", "S2", "S8"]}
+  ],
+  "proposed_tags": [
+    {"tag_id": "tag_0234", "name": "Oil & gas", "summary": "Kuzmichev directed the group's oil-trading activity and shared a material TNK-BP interest whose sale was a major source of the partners' fortune.", "relationship_type": "historical_oil_business_leader_and_principal_shareholder", "temporal_scope": "former_but_defining", "taxonomy_value": "Groups owners with a defining oil-and-gas business or wealth mechanism; his association goes beyond passive exposure to one energy security.", "confidence": {"score": 91, "band": "high", "reason": "Forbes's historical profile documents his oil-trading mandate, and its current person profile directly cites the substantial TNK-BP exit. This meets the active Oil & gas contract independently of vessel ownership."}, "source_ids": ["S2", "S3"]},
+    {"tag_id": "tag_0211", "name": "Banking", "summary": "As an Alfa Group co-founder, Kuzmichev participated in the growth of its material Alfa-Bank holding, identified by Forbes as a separate source of his fortune.", "relationship_type": "historical_group_founder_and_bank_shareholder", "temporal_scope": "former_but_defining", "taxonomy_value": "Banking captures a second independently material source of his long-term business identity, distinct from his direct oil-trading work and TNK-BP interest.", "confidence": {"score": 85, "band": "high", "reason": "Forbes explicitly names Alfa-Bank and banking as components of Kuzmichev's wealth, while official sanctions and historical bank records document substantial ownership. It is not treated as a verified current shareholding after subsequent transfer reports."}, "source_ids": ["S2", "S3", "S10", "S12"]}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=3314", "title": "Alexey Kuzmichev owner record, person ID 3314", "publisher": "Superyacht Network; saved authoritative export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Immutable name, Russian nationality/residence, birth date, Kirov birthplace, male and Alive fields", "La Petite Ourse saved vessel relationship from 2014", "Existing Wikipedia-linked biography and empty social-profile list"]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Alexei%20Kuzmichev", "title": "Forbes-first exact-name and profile search", "publisher": "Forbes", "tier": 3, "accessed_at": "2026-09-19", "supports": ["Mandatory search located a dedicated Alexei Kuzmichev Forbes person profile", "Spelling variant was collision-tested against Alfa and TNK-BP history"]},
+    {"id": "S2", "url": "https://www.forbes.com/profile/alexei-kuzmichev/", "title": "Alexei Kuzmichev billionaire profile", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Dedicated exact-person profile: Alfa Group and LetterOne co-founder with Fridman and Khan", "Oil, banking and telecom wealth sources and material TNK-BP exit", "Self-made designation, Russian citizenship and Moscow residence", "Historic board exit and sanctions information that requires current corroboration"]},
+    {"id": "S3", "url": "https://images.forbes.com/lists/2007/10/07billionaires_Alexei-Kuzmichov_N0PL.html", "title": "Alexei Kuzmichov historical Forbes profile", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Born in Kirov, studied with Fridman at the Moscow Institute of Steel and Alloys", "Early Alfa-Eco partnership, international sales and Crown Resources oil trading", "Oil and banking identified as significant wealth sources before the TNK-BP sale"]},
+    {"id": "S4", "url": "https://www.cbsnews.com/news/meet-the-russian-billionaires-that-took-on-bp-and-won/", "title": "Meet the Russian billionaires that took on BP", "publisher": "CBS News", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Fridman, Khan and Kuzmichev shared control of the Alfa investment group", "Alfa-Eco commodities operation preceded Alfa-Bank and TNK-BP business expansion"]},
+    {"id": "S5", "url": "https://letterone.com/wp-content/uploads/2024/03/68729_letterone_ar2016_final-low.pdf", "title": "LetterOne 2016 annual review", "publisher": "LetterOne", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Kuzmichev served on the LetterOne board and audit and compliance committee", "Governance of a diversified energy, technology, health and retail investment platform at that time", "Historical role only, not evidence of present control"]},
+    {"id": "S6", "url": "https://letterone.com/news-and-insights/changes-to-l1-board-and-major-charity-initiative/", "title": "LetterOne board changes", "publisher": "LetterOne", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Kuzmichev and other partners resigned from all LetterOne positions, including its board, in 2022", "Subsequent governance cannot be attributed to him solely because he helped found LetterOne"]},
+    {"id": "S7", "url": "https://letterone.com/news-and-insights/chair-s-review-2021/", "title": "LetterOne chairman's 2021 review", "publisher": "LetterOne", "tier": 1, "accessed_at": "2026-09-19", "supports": ["LetterOne names Kuzmichev among its founders", "Investment platform spans multiple sectors", "The later sanctions-era introductory text is not used as a claim of current ownership"]},
+    {"id": "S8", "url": "https://www.europeansanctions.com/wp-content/uploads/2022/10/Kuzmichev-Cour-dappel-de-Paris-chambre-5-15-5-octobre-2022-2205931.pdf", "title": "Paris Court of Appeal order RG 22/05931", "publisher": "Paris Court of Appeal; judgment reproduced by European Sanctions", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Alexey Victorovich Kuzmichev, born 15 October 1962 in Kirov, was named in the La Petite Ourse proceedings", "Malta corporate records identified him as beneficial owner of the vessel-holding company Orangery Marine Limited", "Direct person-vessel bridge; judicial review of customs action is not a finding that current restrictions ended"]},
+    {"id": "S9", "url": "https://www.veon.com/fileadmin/user_upload/investors/reports/2026/2025-veon-iar.pdf", "title": "VEON integrated annual report 2025", "publisher": "VEON", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Later ownership disclosure says Kuzmichev and Khan are no longer LetterOne shareholders", "A historical sanctioned-founder description must not be read as an unchanged present shareholding", "The annual report is an ownership-source check, not a complete schedule of his other assets"]},
+    {"id": "S10", "url": "https://gels-avoirs.dgtresor.gouv.fr/Gels/RegistreDetail?idRegistre=4496", "title": "Alexey Kuzmichev French asset-freeze register entry", "publisher": "French Treasury", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Exact full name, 15 October 1962 date, Kirov birthplace and Russian nationality", "Current French/EU sanctions listing", "The register attributes a major Alfa Group interest and other business links but conflicts with reports of some post-2022 transfers; no precise current asset schedule is supplied"]},
+    {"id": "S11", "url": "https://ofac.treasury.gov/recent-actions/20230811", "title": "US OFAC Russia-related designation update", "publisher": "US Treasury Office of Foreign Assets Control", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Exact Alexey Viktorovich Kuzmichev identity, date and birthplace", "US sanctions designation announced in 2023", "US sanctions are not evidence of a current operating-company stake"]},
+    {"id": "S12", "url": "https://alfabank.st/files/about/awards/ratings/Issuer_Profile-Alfa-Bank-26Oct21.pdf", "title": "Alfa-Bank historical issuer profile", "publisher": "Alfa-Bank and rating-agency profile", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Historical disclosed Kuzmichev shareholding in the bank before later transfers", "Corroborates banking materiality without establishing present ownership"]},
+    {"id": "S13", "url": "https://ru.linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9-%D0%B2%D0%B8%D0%BA%D1%82%D0%BE%D1%80%D0%BE%D0%B2%D0%B8%D1%87-%D0%BA%D1%83%D0%B7%D1%8C%D0%BC%D0%B8%D1%87%D1%91%D0%B2-aa932aa8", "title": "Full-name Alfa-linked LinkedIn candidate", "publisher": "LinkedIn", "tier": 3, "accessed_at": "2026-09-19", "supports": ["A same-full-name account repeats Alfa Group history", "No official-domain backlink or independent personal authentication; no LinkedIn proposal is made"]}
+  ],
+  "uncertainties": [
+    {"topic": "Present private assets and role", "detail": "Forbes establishes historic Alfa oil, banking and telecom stakes, while LetterOne and later VEON disclosures establish board departure and no continuing LetterOne shareholding. The French Treasury still attributes a significant Alfa Group interest and questions an A1 transfer. Current holdings outside LetterOne, beneficial ownership and economic access are not reliably reconciled, so Diversified is expressly an origin-sector fallback and wealth relationship remains Unknown rather than an invented present Founder, Investor or passive-owner role."},
+    {"topic": "Sanctions and vessel proceedings", "detail": "French and US official registers identify current or continuing sanctions designations; a Paris Court of Appeal order provides the exact La Petite Ourse beneficial-owner bridge. Procedural rulings over a customs visit or immobilisation must not be mistaken for termination of the sanctions. Legal allegations, yacht facts and dynamic restrictions are excluded from the durable public biographies."},
+    {"topic": "Source-record biography correction", "detail": "The saved biography refers to Kuzmichev as a current stakeholder in VimpelCom, Alfa-Bank and X5 and appends a Wikipedia link. That unqualified present-tense list is stale or at least not established after share transfers. The correction retains the well-sourced founding and cross-sector origin story without guessing present stakes."},
+    {"topic": "Forbes and social profiles", "detail": "The dedicated Forbes profile is verified under the Alexei spelling and proposed with the exact Forbes social type. A same-full-name Alfa-linked LinkedIn page is not authenticated by an official link or two independent sources. Other LinkedIn namesakes work in unrelated Kazakh marketing and US healthcare services; no personal Instagram, site, Facebook, X, YouTube or TikTok account clears verification."},
+    {"topic": "Tag minimality", "detail": "Oil & gas and Banking are both active and capture different independently material parts of the group: his direct oil-trading/TNK-BP association and the founding-era Alfa-Bank stake. More specific oil-trading and corporate-name concepts are inactive or not approved, and telecom exposure is retained as source-backed context rather than another overlapping sector tag."},
+    {"topic": "Repository scope", "detail": "The target was confirmed absent. This one completed dossier is the only output created; no canonical input, cohort, active-tag catalogue, other dossier, compiled output, live site or git staging was changed."}
+  ],
+  "review": {"status": "complete", "notes": "Forbes profile and French judicial records establish a 99-confidence identity and direct vessel bridge. Diversified founding-era wealth, broad Self-made origin and the LetterOne governance exit are well supported; current portfolio classification uses the disclosed origin-sector fallback and current asset relationship remains Unknown because later transfer evidence conflicts. Correct the stale Wikipedia-linked short biography, add the exact Forbes profile, and retain only active Oil & gas and Banking tags. Independent 53/120-word vessel-free biographies are complete."}
+}

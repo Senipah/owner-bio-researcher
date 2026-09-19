@@ -1,0 +1,148 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 360,
+    "display_name": "Vernon Gale Buchanan",
+    "identity_confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "The saved full legal name, American/Florida identity and congressman Wikipedia URL match the House's Vernon G. Buchanan and its current Vern Buchanan biography. Contemporary reporting documents his late-2017 Ocean Alexander yacht Entrepreneur; the selected 26.14-metre Fortissimo was launched as Entrepreneur and delivered in December 2017. The reported 73-foot registered length differs from the published overall length, so the public hull bridge is strong but not conclusive by measurement alone."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["secondary_nationality", "known_for_title", "gender", "place_of_birth", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": ["Wikipedia"],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2":"Facebook","3":"Twitter","4":"Youtube","5":"LinkedIn","6":"Trip Advisor","7":"Vimeo","8":"Flickr","9":"Instagram","10":"Wikipedia","11":"Forbes","12":"Zillow","14":"Company Website","15":"Personal Website","16":"TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Vernon Gale Buchanan, publicly known as Vern Buchanan, is a Florida congressman and automotive entrepreneur.",
+    "defining_work": "He built a printing-franchise venture and then a group of automotive dealerships before entering Congress; he continues to hold substantial dealership interests.",
+    "formative_context": "He grew up with five siblings in a blue-collar household near Detroit and worked through college after Air National Guard service.",
+    "decisive_moment": "Acquiring Florida dealerships turned an earlier printing-franchise success into his enduring automotive wealth platform.",
+    "enduring_dimensions": ["Automotive dealership ownership", "House Ways and Means leadership", "Earlier printing-franchise development"],
+    "character_detail": "His congressional work followed three decades of business building rather than creating the dealership fortune.",
+    "opening_options": [
+      {"mode":"present_identity","angle":"Lead with the combination of Florida public office and continued ownership of automobile dealerships."},
+      {"mode":"institution_or_asset","angle":"Open on the dealership group whose income and ownership remain documented in his disclosure."},
+      {"mode":"formative_episode","angle":"Open with his blue-collar Michigan upbringing and later business formation."}
+    ],
+    "excluded_transient_context": ["Fortissimo, Entrepreneur and all private-vessel purchase or financing details", "Wealth rankings and current balance-sheet amounts", "Partisan campaigns or unadjudicated allegations", "Source names and taxonomy reasoning"],
+    "source_ids": ["S2", "S3", "S4", "S5", "S6"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "public_role_then_foundation",
+    "calibration_archetypes": ["founder_operator", "royal_public_office"],
+    "notes": "The short card joins business identity, blue-collar origin, the printing precursor and congressional leadership. The longer profile opens on how the car-dealership group was built and retained, then adds military service, education, committee work and his retirement announcement. Its local-operator equity and current-asset details are absent from the short card; the short's printing precursor is omitted from the long. Neither version includes vessel or controversy material."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 95, "band": "very_high", "reason": "Forbes-first searches for the exact full name and Vern Buchanan found a 2017 interview and later congressional coverage, but no dedicated Forbes personal profile. An interview article is not proposed as a Forbes social link."}
+  },
+  "wealth_creation_industry": {
+    "classification": "automotive",
+    "label": "Automotive",
+    "summary": "Although he earlier developed a printing-franchise company, his principal enduring fortune was built by acquiring and expanding Florida automobile dealerships.",
+    "confidence": {"score": 96, "band": "very_high", "reason": "The contemporary Forbes interview describes the printing-to-dealership transition and large dealer network; independent regional business reporting traces the automotive expansion. His latest House disclosure identifies dealership holdings and income as a central material asset and revenue stream."},
+    "source_ids": ["S3", "S4", "S5"]
+  },
+  "primary_industry": {
+    "classification": "automotive",
+    "label": "Automotive",
+    "summary": "Despite a diversified disclosed portfolio and full-time elected office, his currently disclosed principal private business interests and largest identified business income stream remain automotive dealerships.",
+    "confidence": {"score": 91, "band": "high", "reason": "His 2025 annual House financial disclosure, filed in May 2026, lists a major Sarasota Ford holding, other dealer entities, substantial dealer income and continuing partner roles. Real estate, aircraft and investment assets are material but do not displace the identified automotive core; office-holding is not itself an industry for private wealth."},
+    "source_ids": ["S5", "S6"]
+  },
+  "wealth_origin": {
+    "classification": "self_made_independent",
+    "label": "Self-made — independent start",
+    "summary": "Buchanan built his first printing venture with a business partner from modest personal capital and later acquired the dealerships that became his principal wealth platform. His documented blue-collar upbringing and work through college indicate no inherited family enterprise or substantial family financial launch platform.",
+    "confidence": {"score": 84, "band": "medium", "reason": "The House biography and retirement statement describe a blue-collar childhood and self-funded education; a detailed independent early profile reports formation of the printing venture with roughly $1,500 and later dealer acquisitions. These are positive premises for an independent start, not merely an absence of inheritance reporting. Commercial partnership is not concealed."},
+    "source_ids": ["S3", "S4", "S6"]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "He founded the automotive group that produced the core fortune and retains disclosed ownership and partner interests, although his congressional work and his son's dealership leadership separate economic ownership from day-to-day retail operation.",
+    "confidence": {"score": 92, "band": "high", "reason": "Official Congressional Directory material identifies him as founder of Buchanan Automotive Group; his latest House disclosure lists partner/member positions and dealer assets. Current reporting identifies Matt Buchanan as Sarasota Ford's president and operating manager. Founder best captures the durable relationship to the principal created asset."},
+    "source_ids": ["S5", "S7", "S8"]
+  },
+  "biography": {
+    "plain_text": "Vern Buchanan is an American businessman and Florida congressman with substantial car dealership interests. Raised in a working-class Michigan household, he first built a printing-franchise venture before expanding into automotive retail. His business success preceded his election to Congress, where he became vice-chair of the House Ways and Means Committee.",
+    "html": "<p>Vern Buchanan is an American businessman and Florida congressman with substantial car dealership interests. Raised in a working-class Michigan household, he first built a printing-franchise venture before expanding into automotive retail. His business success preceded his election to Congress, where he became vice-chair of the House Ways and Means Committee.</p>\r\n",
+    "word_count": 50,
+    "confidence": {"score": 94, "band": "high", "reason": "The House biography establishes his background and office, Forbes and business reporting document the printing and dealership progression, and the latest official disclosure establishes substantial current dealer interests."},
+    "source_ids": ["S3", "S4", "S5", "S6"]
+  },
+  "long_biography": {
+    "plain_text": "Vern Buchanan built his Florida automotive group by acquiring dealerships and giving local operators equity stakes. His holdings include Sarasota Ford and other dealerships, held through several companies, alongside real estate and other investments. His son Matt manages Sarasota Ford, separating Buchanan's continuing economic interest from its day-to-day operation.\n\nBuchanan grew up near Detroit in a blue-collar household, served in the Air National Guard and worked through college. Elected to the House in 2006, he became vice-chair of the Ways and Means Committee and chair of its Health Subcommittee. His work there concentrated on tax, trade and health policy. In 2026 he announced that he would leave Congress at the end of his current term.",
+    "html": "<p>Vern Buchanan built his Florida automotive group by acquiring dealerships and giving local operators equity stakes. His holdings include Sarasota Ford and other dealerships, held through several companies, alongside real estate and other investments. His son Matt manages Sarasota Ford, separating Buchanan's continuing economic interest from its day-to-day operation.</p>\r\n<p>Buchanan grew up near Detroit in a blue-collar household, served in the Air National Guard and worked through college. Elected to the House in 2006, he became vice-chair of the Ways and Means Committee and chair of its Health Subcommittee. His work there concentrated on tax, trade and health policy. In 2026 he announced that he would leave Congress at the end of his current term.</p>\r\n",
+    "word_count": 115,
+    "confidence": {"score": 89, "band": "high", "reason": "Forbes describes the operator-equity policy; his signed financial disclosure documents dealer and other interests; House records establish the military, education, election and committee details, while current reporting describes his son's retail leadership."},
+    "source_ids": ["S2", "S3", "S5", "S6", "S8"]
+  },
+  "proposed_details": [
+    {"field":"known_for_title","value":"Automotive entrepreneur and US congressman","action":"fill_missing","confidence":{"score":98,"band":"very_high","reason":"Official House records and financial disclosures establish both the defining public role and material automotive business identity."},"source_ids":["S2","S5","S6"]},
+    {"field":"gender","value":"Male","action":"fill_missing","confidence":{"score":99,"band":"very_high","reason":"Official House biography and first-person public materials consistently identify Buchanan as a man."},"source_ids":["S2","S6"]},
+    {"field":"place_of_birth","value":"Detroit","action":"fill_missing","confidence":{"score":99,"band":"very_high","reason":"The official House historical biography explicitly identifies Detroit, Michigan as his birthplace."},"source_ids":["S2"]},
+    {"field":"birth_day","value":"8","action":"fill_missing","confidence":{"score":99,"band":"very_high","reason":"The official House historical biography gives 8 May 1951."},"source_ids":["S2"]},
+    {"field":"birth_month","value":"May","action":"fill_missing","confidence":{"score":99,"band":"very_high","reason":"The official House historical biography gives 8 May 1951."},"source_ids":["S2"]},
+    {"field":"birth_year","value":"1951","action":"fill_missing","confidence":{"score":99,"band":"very_high","reason":"The official House historical biography gives 8 May 1951; this is also consistent with the saved derived age of 68 at 7 May 2020."},"source_ids":["S2","S0"]},
+    {"field":"biography","value":"<p>Vern Buchanan is an American businessman and Florida congressman with substantial car dealership interests. Raised in a working-class Michigan household, he first built a printing-franchise venture before expanding into automotive retail. His business success preceded his election to Congress, where he became vice-chair of the House Ways and Means Committee.</p>\r\n","action":"fill_missing","confidence":{"score":94,"band":"high","reason":"House, business-reporting and official-disclosure sources support the concise account of his business formation, current interests and congressional role."},"source_ids":["S3","S4","S5","S6"]}
+  ],
+  "proposed_socials": [
+    {"type_id":"5","type":"LinkedIn","url":"https://www.linkedin.com/in/vern-buchanan","verification":"The profile lists U.S. House service, Longboat Key and the University of Detroit and carries first-person current posts about his Ways and Means work and retirement decision.","confidence":{"score":95,"band":"very_high","reason":"Multiple role, geography and education anchors plus first-person posts match the official House profile and retirement announcement; a sparse same-name LinkedIn account was rejected."},"source_ids":["S2","S6","S9"]},
+    {"type_id":"3","type":"Twitter","url":"https://x.com/VernBuchanan","verification":"The U.S. House Press Gallery lists @VernBuchanan as his official X handle, and current profile content identifies the Florida representative and Ways and Means vice-chair.","confidence":{"score":98,"band":"very_high","reason":"Official congressional social-handle directory authenticates the exact account."},"source_ids":["S10","S11"]},
+    {"type_id":"2","type":"Facebook","url":"https://www.facebook.com/CongressmanBuchanan","verification":"The official Congressional Directory lists this exact Facebook URL with Buchanan's office website and X handle.","confidence":{"score":96,"band":"very_high","reason":"U.S. Government Publishing Office congressional directory directly ties the account to the same office-holder."},"source_ids":["S12"]}
+  ],
+  "proposed_tags": [
+    {"tag_id":"tag_0437","name":"Automotive dealerships","summary":"Buchanan founded and retained material ownership interests in multiple automobile dealerships, the central operating business behind his disclosed wealth.","relationship_type":"founder_owner","temporal_scope":"current","taxonomy_value":"Groups principals whose defining wealth or sustained operating mandate lies in automobile dealerships, not incidental vehicle retail exposure.","confidence":{"score":97,"band":"very_high","reason":"His official disclosure and Congressional Directory founder biography meet the active tag's material-control and defining-industry contract."},"source_ids":["S5","S7"]}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id":"S0","url":"https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=360","title":"Vernon Gale Buchanan owner record, ID 360","publisher":"Superyacht Network; saved immutable export only","tier":1,"accessed_at":"2026-09-19","supports":["Authoritative person ID, full saved name, American/United States baseline, derived age and Vern Buchanan Wikipedia link","Fortissimo 26.14-metre relationship from November 2017 is identity-search context only; no live owner page accessed"]},
+    {"id":"S1","url":"https://www.forbes.com/search/?q=Vern%20Buchanan","title":"Forbes exact-name and profile search","publisher":"Forbes","tier":2,"accessed_at":"2026-09-19","supports":["Mandatory Forbes-first check located a 2017 business and congressional interview but no dedicated person profile"]},
+    {"id":"S2","url":"https://history.house.gov/People/Detail/10419","title":"Vernon G. Buchanan official House biography","publisher":"U.S. House of Representatives, Office of the Historian","tier":1,"accessed_at":"2026-09-19","supports":["Vernon G. Buchanan born 8 May 1951 in Detroit","Air National Guard service, university degrees and House service beginning in 2007"]},
+    {"id":"S3","url":"https://buchanan.house.gov/about/","title":"About Vern Buchanan","publisher":"Office of Representative Vern Buchanan","tier":1,"accessed_at":"2026-09-19","supports":["Current Florida House role and vice-chairmanship of Ways and Means with Health Subcommittee chairmanship","Blue-collar Michigan upbringing, work through college and current Florida residence","Public-service focus on tax, trade and health policy"]},
+    {"id":"S4","url":"https://www.forbes.com/sites/ryanellis/2017/03/01/congressman-vern-buchanan-sees-tax-reform-through-the-lens-of-small-businesses-and-economic-growth/","title":"Congressman Vern Buchanan on small businesses","publisher":"Forbes","tier":2,"accessed_at":"2026-09-19","supports":["Formation and growth of Speedy Printing followed by purchase and expansion of Florida car dealerships","His own description of local dealer operators holding equity stakes","Family businesses remained material after his election"]},
+    {"id":"S5","url":"https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/10078132.pdf","title":"Vern Buchanan annual financial disclosure for 2025, filed May 2026","publisher":"Clerk of the U.S. House of Representatives","tier":1,"accessed_at":"2026-09-19","supports":["Signed report lists Buchanan Automotive Holdings and Sarasota Ford as a major disclosed asset and income stream","Additional Space Coast Honda and Nissan of Elizabeth City dealership interests and partner positions","Material but secondary real-estate, aircraft and investment assets; partner/member roles do not by themselves establish daily dealership management"]},
+    {"id":"S6","url":"https://buchanan.house.gov/2026/1/buchanan-announces-retirement","title":"Buchanan announces retirement at end of current term","publisher":"Office of Representative Vern Buchanan","tier":1,"accessed_at":"2026-09-19","supports":["Still serving during current term and retiring at its conclusion, not already retired in September 2026","Blue-collar childhood and pre-Congress entrepreneurial background","Current Ways and Means vice-chair role"]},
+    {"id":"S7","url":"https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/pdf/CDIR-2011-12-01-FL-H-14.pdf","title":"Congressional Directory entry for Vern Buchanan","publisher":"U.S. Government Publishing Office","tier":1,"accessed_at":"2026-09-19","supports":["Identifies Buchanan as founder and chairman of Buchanan Automotive Group and Buchanan Enterprises","Documents dealership operations and earlier real-estate interests"]},
+    {"id":"S8","url":"https://www.srqmagazine.com/articles/2318/One-Random-Act-of-Kindness","title":"Matt Buchanan's Sarasota Ford management","publisher":"SRQ Magazine","tier":2,"accessed_at":"2026-09-19","supports":["January 2026 first-person account describes Matt Buchanan as Sarasota Ford president and managing partner since 2010","Clarifies that Vern's disclosed economic interests should not be equated to present day-to-day store management"]},
+    {"id":"S9","url":"https://www.linkedin.com/in/vern-buchanan","title":"Vern Buchanan LinkedIn profile","publisher":"LinkedIn","tier":3,"accessed_at":"2026-09-19","supports":["Longboat Key and U.S. House role; self-authored posts about Ways and Means and his own retirement","Exact LinkedIn personal-profile authentication"]},
+    {"id":"S10","url":"https://pressgallery.house.gov/member-data/members-official-x-handles-118th-congress","title":"Members' official X handles","publisher":"U.S. House Press Gallery","tier":1,"accessed_at":"2026-09-19","supports":["Direct official assignment of @VernBuchanan to Representative Vern Buchanan"]},
+    {"id":"S11","url":"https://x.com/VernBuchanan","title":"Rep. Vern Buchanan X account","publisher":"X","tier":3,"accessed_at":"2026-09-19","supports":["Current profile content names Florida 16th district and Ways and Means vice-chair","Cross-checked against official House Press Gallery handle"]},
+    {"id":"S12","url":"https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/pdf/CDIR-2020-07-22-FL-H-16.pdf","title":"Congressional Directory office and social contacts","publisher":"U.S. Government Publishing Office","tier":1,"accessed_at":"2026-09-19","supports":["Official directory names facebook.com/CongressmanBuchanan and @VernBuchanan alongside office site"]},
+    {"id":"S13","url":"https://www.floridatrend.com/article/11487/thinking-big/","title":"Thinking Big: Vern Buchanan profile","publisher":"Florida Trend","tier":2,"accessed_at":"2026-09-19","supports":["Reports full Vernon Gale Buchanan name and early yacht Entrepreneur; background identity context only"]},
+    {"id":"S14","url":"https://fcir.org/2018/08/21/vern-buchanan-yacht-loan-tax-bill/","title":"2017 Ocean Alexander Entrepreneur registration reporting","publisher":"Florida Center for Investigative Reporting","tier":2,"accessed_at":"2026-09-19","supports":["Contemporaneous Coast Guard-record based reporting identifies Vern Buchanan and his Ocean Alexander named Entrepreneur registered after the November 2017 purchase","Reported 73-foot registered length is not equated uncritically with LOA; vessel context only, no allegations imported"]},
+    {"id":"S15","url":"https://www.yachtbuyer.com/en-us/fleet/fortissimo-85-ocean-alexander","title":"Fortissimo Ocean Alexander hull particulars","publisher":"YachtBuyer","tier":3,"accessed_at":"2026-09-19","supports":["26.14-metre Fortissimo delivered in December 2017 under the launch name Entrepreneur","Alias, builder and delivery timing support a compound identity bridge but do not independently name a beneficial owner"]},
+    {"id":"S16","url":"https://www.sarasotamagazine.com/news-and-profiles/2005/10/the-buchanan-franchise","title":"The Buchanan Franchise","publisher":"Sarasota Magazine","tier":2,"accessed_at":"2026-09-19","supports":["Describes modest initial printing-business stake with partner and independent expansion into automotive sales","Context for the positive independent-start inference without relying only on self-description"]}
+  ],
+  "uncertainties": [
+    {"topic":"Fortissimo hull measurement","detail":"The owner export lists Fortissimo at 26.14 metres from November 2017. YachtBuyer says that hull launched as Entrepreneur and was delivered in December 2017; reporting from Coast Guard records names Buchanan's late-2017 Ocean Alexander Entrepreneur but describes a 73-foot registered length, not Fortissimo's roughly 86-foot LOA. Different measurement conventions may explain the gap, but an exact Coast Guard documentation-number or build-number crosswalk was not found. The yacht is used only in identity reasoning."},
+    {"topic":"Sarasota Ford ownership language","detail":"Some 2023 local reporting says Vern no longer had a direct Sarasota Ford stake, while his signed 2025 House disclosure identifies a substantial Sarasota Ford operating interest through Buchanan Automotive Holdings and lists Vern as a partner. The later primary disclosure governs the economic classification; it does not quantify his precise beneficial percentage. Matt Buchanan's documented presidency and managing-partner role should not be assigned to Vern."},
+    {"topic":"Current office versus wealth sector","detail":"Buchanan remained a sitting representative and Ways and Means vice-chair in September 2026 despite announcing retirement at the end of the term. Elected office and committee jurisdiction are biography facts, not wealth-producing industry or Government-owned tag evidence. The disclosed private dealership interests support Automotive for both industry fields."},
+    {"topic":"Social profile scope","detail":"The LinkedIn account is person-specific and current, while X and Facebook are official politician-specific accounts authenticated by House directories. Instagram @repvern appears in older congressional social lists but could not be independently checked for current ownership or activity, so it is not proposed. vernbuchanan.com was inaccessible and is not proposed as a current personal website."},
+    {"topic":"Starting platform","detail":"Independent-start inference uses the positive blue-collar childhood, work-through-college, modest partner-financed printing start and later dealer acquisitions. The partner is a normal commercial co-founder, not evidence of inherited family capital. The exact later source of acquisition finance is not fully public."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Resolved Vernon Gale/Vern Buchanan from legal name, age, House biography and compound Entrepreneur-to-Fortissimo vessel trail with a documented length discrepancy. Latest signed disclosure supports Automotive creation/current, Self-made — independent start and Founder relation to the retained dealership group; his congressional roles are separate. One active Automotive dealerships tag and three authenticated public social links are proposed. Short/long biographies have 50/115 words, use no vessel material and remain independent of current fortune estimates."
+  }
+}

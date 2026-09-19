@@ -1,0 +1,56 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 8941,
+    "display_name": "Matthijs Blankers",
+    "identity_confidence": {"score": 27, "band": "insufficient", "reason": "The saved Dutch/Netherlands owner record names Matthijs Blankers and White Fang, but its existing LinkedIn URL resolves to Anthonie Blankers, a different first name and documented transport-company principal. Other contemporary Dutch Matthijs Blankers profiles belong to a mental-health researcher and flooring business, while a historical family transport figure of that name was born in 1897. The public 26-metre yacht listing names no owner. No candidate is collision-safely tied to person ID 8941."}
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": ["LinkedIn"],
+    "missing_priority_social_types": ["Instagram", "Personal Website"],
+    "social_type_lookup": {"2":"Facebook","3":"Twitter","4":"Youtube","5":"LinkedIn","6":"Trip Advisor","7":"Vimeo","8":"Flickr","9":"Instagram","10":"Wikipedia","11":"Forbes","12":"Zillow","14":"Company Website","15":"Personal Website","16":"TikTok"}
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "The saved Matthijs Blankers is Dutch, resident in the Netherlands and linked to a 26-metre White Fang, but has no biography or occupation. The record's LinkedIn URL identifies Anthonie Blankers of Blankers Transport, not Matthijs. Public yacht listings match the hull but do not identify its person-owner. An academic, flooring-business principal and historical family transport figure share the name Matthijs Blankers without a vessel bridge. None of their careers or family positions can safely be assigned to this owner record, so the four wealth fields and public biography remain unresolved.",
+    "confidence":{"score":97,"band":"very_high","reason":"The saved link's first-name mismatch is independently established by its destination and transport-company materials; public hull and namesake sources do not supply a contrary identity bridge."},
+    "source_ids":["S0","S1","S2","S3","S4","S5","S6"]
+  },
+  "forbes_profile": {"status":"not_found","url":null,"confidence":{"score":94,"band":"high","reason":"Forbes-first exact-name, profile and White Fang-qualified searches found no dedicated Forbes person/wealth profile attributable to the saved Dutch owner."}},
+  "wealth_creation_industry": {"classification":"unknown","label":"Unknown","summary":"No principal wealth-generating career or venture can be assigned to the saved yacht person.","confidence":{"score":12,"band":"insufficient","reason":"Transport belongs to the separately named Anthonie, while addiction research and flooring belong to other same-name candidates unbridged to White Fang. Yacht presence cannot select among them."},"source_ids":["S0","S2","S4","S5","S6"]},
+  "primary_industry": {"classification":"unknown","label":"Unknown","summary":"Current primary industry cannot be identified without a resolved personal business bridge.","confidence":{"score":11,"band":"insufficient","reason":"The saved LinkedIn link is a mismatched identity and public yacht pages name no beneficial owner; choosing logistics, healthcare research or interiors would transfer another person's work."},"source_ids":["S0","S2","S3","S4","S5"]},
+  "wealth_origin": {"classification":"unknown","label":"Unknown","summary":"No self-built or family-transfer wealth narrative is established for this person.","confidence":{"score":9,"band":"insufficient","reason":"The historical family transport story belongs to a 19th-century-born Matthijs and contemporary Anthonie, neither linked to this source yacht person. No founder or inherited-asset chain may be imported."},"source_ids":["S0","S3","S6"]},
+  "wealth_relationship": {"classification":"unknown","label":"Unknown","summary":"No role in a principal wealth-producing asset is verified for the saved Matthijs Blankers.","confidence":{"score":8,"band":"insufficient","reason":"No candidate enterprise is tied to the hull or source ID, and an owner relationship in the export alone does not establish founder, operator, heir or investor status."},"source_ids":["S0","S2","S3","S4","S5","S6"]},
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id":"S0","url":"https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=8941","title":"Matthijs Blankers saved owner record, ID 8941","publisher":"Superyacht Network; immutable export","tier":1,"accessed_at":"2026-09-19","supports":["Saved Dutch/Netherlands, Male/Alive person record, White Fang 26-metre relationship with no start date, blank profession and biography.","Saved LinkedIn points to linkedin.com/in/anthonie-blankers-4b6922122, a cross-name concern rather than a verified profile for Matthijs."]},
+    {"id":"S1","url":"https://www.forbes.com/search/?q=Matthijs%20Blankers","title":"Forbes-first exact-person/profile search","publisher":"Forbes","tier":2,"accessed_at":"2026-09-19","supports":["No dedicated person/wealth profile safely attributable to the saved White Fang owner identified."]},
+    {"id":"S2","url":"https://www.devalk.nl/de/jachtmakler/85074/MOCHI-25.html","title":"White Fang Mochi 25 yacht specifications","publisher":"De Valk yacht brokers","tier":2,"accessed_at":"2026-09-19","supports":["The named 1996 Mochi Craft White Fang is listed at exactly 26.00 metres, a plausible match to the saved hull.","The public brokerage description does not identify Matthijs Blankers as personal owner."]},
+    {"id":"S3","url":"https://se.yachtworld.com/yacht/1996-mochi-craft-25-mega-9178844/","title":"White Fang sales listing","publisher":"YachtWorld / Sunseeker Benelux","tier":2,"accessed_at":"2026-09-19","supports":["Dutch-language listing describes White Fang as sold to its present owner in 2005 and held for about twenty years, without naming the owner.","This timeline is not a bridge to any specific Blankers identity and may not describe a later transfer."]},
+    {"id":"S4","url":"https://nl.linkedin.com/in/anthonie-blankers-4b6922122","title":"Anthonie Blankers profile at saved LinkedIn URL","publisher":"LinkedIn","tier":2,"accessed_at":"2026-09-19","supports":["The saved account itself names Anthonie Blankers and describes Blankers Transport work, not a profile named Matthijs Blankers.","The mismatch is flagged for human data review; the research dossier neither deletes nor rewrites the source profile."]},
+    {"id":"S5","url":"https://www.trimbos.nl/over-trimbos/medewerkers/matthijs-blankers/","title":"Matthijs Blankers mental-health research profile","publisher":"Trimbos Institute","tier":1,"accessed_at":"2026-09-19","supports":["An active Dutch same-name researcher works in addiction and mental-health epidemiology; no White Fang or saved-profile link is provided.","His public career cannot be assigned on name/nationality alone."]},
+    {"id":"S6","url":"https://www.blankerstransport.com/nl/bedrijf/","title":"Blankers Transport family/company history","publisher":"Blankers Transport","tier":1,"accessed_at":"2026-09-19","supports":["Company history says an earlier Matthijs Blankers, son of founder Arie, shifted the family's 19th-century transport business to motor vehicles.","This historical namesake cannot be the saved Alive contemporary owner merely because the record's LinkedIn points to a later Anthonie Blankers."]},
+    {"id":"S7","url":"https://nl.linkedin.com/in/matthijsblankers","title":"Matthijs Blankers of Blankers Vloeren","publisher":"LinkedIn","tier":2,"accessed_at":"2026-09-19","supports":["Another current Dutch same-name person operates or works at a flooring/interior business in Ede, but no vessel or other unique anchor joins him to this record."]},
+    {"id":"S8","url":"https://www.openarchieven.nl/gld%3A3CEA7631-7942-4B0E-81D7-E2A9E1D35142","title":"1897 Matthijs Blankers birth registration","publisher":"Gelders Archief via Open Archieven","tier":1,"accessed_at":"2026-09-19","supports":["Historical Matthijs Blankers was born in Ophemert in 1897 to Arie Blankers and Geertje van Toor.","His archival identity cannot be imported into a contemporary record marked Alive."]}
+  ],
+  "uncertainties": [
+    {"topic":"Saved social mismatch","detail":"The current LinkedIn URL in the source record resolves to Anthonie Blankers, an independently documented Blankers Transport representative, while the owner is Matthijs Blankers. A family relation or record mix-up is possible but unverified. The profile must not authenticate a Matthijs career, nor is it removed in this research-only workflow; it warrants separate human/live reconciliation."},
+    {"topic":"Multiple Matthijs candidates","detail":"A Trimbos/Tilburg addiction researcher, an Ede flooring-business profile and the historical transport founder's son share the name. The historical man was born in 1897 and conflicts with the source Alive status. No candidate is linked by published hull ownership, address, company or date. Even a family-wealth classification would be an unsupported transfer."},
+    {"topic":"White Fang's sale history","detail":"Public broker listings identify a 26-metre Mochi Craft White Fang and report a long-term owner after a 2005 sale, but omit the individual's name. They do not validate the source record's undated current relationship or the identity behind it. No yacht value or potential charter receipts are used as personal wealth evidence."},
+    {"topic":"Terminal decision","detail":"Neither direct evidence, an independent family/corporate bridge nor a safe less-specific economic label survives the identity collision. All four wealth fields remain Unknown. The source-linked social is preserved as a flagged anomaly, and no biography, new social, tag or personal detail is proposed."}
+  ],
+  "review": {"status":"complete","notes":"Terminal insufficient-evidence dossier with explicit saved LinkedIn mismatch. The White Fang hull is matched by length, but current owner identity remains unpublished; Anthonie Blankers and three same-name Matthijs candidates must not be conflated. Forbes-first and priority-social review completed. Four wealth fields Unknown, no publication or live changes."}
+}

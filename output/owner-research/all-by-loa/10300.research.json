@@ -1,0 +1,159 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 10300,
+    "display_name": "Alessandro Del Bono",
+    "identity_confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The exact saved name, Italian nationality and 24.98-metre Capricorno relationship match the yacht club's entry list and its express 2026 owner identification. The same name is independently tied to Mediolanum Farmaceutici and Neopharmed Gentili by official company, investment-partner and Italian competition-authority records. No material conflicting identity appears; LinkedIn results for a lawyer and an aerospace engineer are separate namesakes."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Alessandro Del Bono is an Italian pharmaceutical executive associated with the Milan-based Mediolanum Farmaceutici family group and Neopharmed Gentili.",
+    "defining_work": "He directed Mediolanum's acquisition-led expansion, including the businesses later combined as Neopharmed Gentili, and continues to lead the family group.",
+    "formative_context": "His father Rinaldo founded Mediolanum Farmaceutici; the records show a subsequent executive and economic succession but not the legal route of any share transfer.",
+    "decisive_moment": "The acquisition and combination of Istituto Gentili and Neopharmed built a larger medicines platform; a later carve-out brought in outside investors while preserving a family interest.",
+    "enduring_dimensions": [
+      "Direct personal equity in Neopharmed Gentili was recorded by the Italian competition authority before the outside-investor transaction",
+      "Mediolanum retained oncology and rare-disease activities after the Neopharmed reorganisation",
+      "He has continued to chair Neopharmed through changes in its chief executive role"
+    ],
+    "character_detail": "A Milan civic honour recognised his long business and community contribution, but the award is secondary to the pharmaceutical work.",
+    "opening_options": [
+      {"mode": "inherited_responsibility", "angle": "Introduce the family pharmaceutical group and his distinct acquisition-led stewardship."},
+      {"mode": "defining_achievement", "angle": "Open with the combination of acquired medicines businesses into Neopharmed Gentili."},
+      {"mode": "present_identity", "angle": "Identify the active pharmaceutical executive and distinguish Mediolanum from its investor-backed affiliate."}
+    ],
+    "excluded_transient_context": ["Capricorno, Nice R and other selected-vessel details", "Current sales and employee counts, transaction valuations and personal net-worth estimates", "An unverified birth date or expanded middle names from a secondary corporate profile", "A claim that he founded the company his father established", "A stale assumption that the affiliate's 2023 successor remains chief executive"],
+    "source_ids": ["S0", "S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "inherited_responsibility",
+    "narrative_shape": "inheritance_then_stewardship",
+    "calibration_archetypes": ["inherited_operator"],
+    "notes": "The 54-word short card identifies the Milan pharmaceutical leader, father-founded platform, personal stake and continued family interest. The 103-word long profile shares only the family platform and expansion; it adds the acquired companies, therapeutic areas, carve-out, investment partnership and retained oncology direction. The long version omits the short's Milan base and explicit personal-stake detail, and would lose substantive corporate development if reduced to the short. No funding sentence leaves the investor or purpose ambiguous."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "Forbes-first exact-name, site:forbes.com/profile, broader Forbes and Forbes Italia searches found no dedicated personal profile for the Mediolanum executive. Name-only coverage or an unrelated profile would not qualify."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "healthcare",
+    "label": "Healthcare",
+    "summary": "The principal evidenced family asset and Alessandro's own significant equity arose in the pharmaceutical group founded by Rinaldo Del Bono and expanded through Mediolanum and Neopharmed Gentili.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "First-party company history identifies the pharmaceutical origin and subsequent acquisitions; the Italian competition authority directly records Alessandro's substantial Neopharmed stake. Pharmaceutical product development and commercialisation are the wealth-producing mechanism, not the sailing activity or the unrelated Banca Mediolanum."
+    },
+    "source_ids": ["S3", "S4", "S5", "S8"]
+  },
+  "primary_industry": {
+    "classification": "healthcare",
+    "label": "Healthcare",
+    "summary": "His continuing leadership of Mediolanum Farmaceutici and investor-backed Neopharmed Gentili, together with the retained family economic interest, keeps pharmaceuticals the clearest current principal private sector.",
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Current company material names him in executive leadership; the 2022 investment agreement documents the family group's retained significant stake, and 2025 reporting confirms his Mediolanum chief executive role. A full contemporary personal holdings schedule is not public, but the sustained operating platform and material family interest support Healthcare independently of the origin-sector fallback."
+    },
+    "source_ids": ["S5", "S6", "S7", "S9"]
+  },
+  "wealth_origin": {
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "His principal pharmaceutical platform was established by his father before Alessandro succeeded to executive leadership and held substantial direct equity. Family succession plus his economic interest supports a family-transfer inference, while the exact route of share acquisition is not public. His own acquisition-led expansion remains material.",
+    "confidence": {
+      "score": 80,
+      "band": "medium",
+      "reason": "First-party history names Rinaldo as founder; an official 1991 notice calls Rinaldo managing director, later official notices name Alessandro, and the competition authority documents Alessandro's direct personal Neopharmed stake alongside the family group. The 2022 partnership preserves a significant family interest. This supports succession and economic participation, not a claim of legal inheritance; the transfer instrument and current personal ownership percentages are unverified."
+    },
+    "source_ids": ["S3", "S4", "S5", "S10"]
+  },
+  "wealth_relationship": {
+    "classification": "operator",
+    "label": "Operator",
+    "summary": "He actively directed acquisition-led development of the family pharmaceutical group and continues to hold executive responsibility at Mediolanum and Neopharmed Gentili rather than being solely a passive family shareholder.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The subsidiary's first-party history attributes the expansion to Alessandro; current Neopharmed leadership lists A. Del Bono as executive chairman and CEO, while 2025 reporting calls him Mediolanum's chief executive. He did not found his father's original company, so Operator is more accurate than Founder or passive family shareholder."
+    },
+    "source_ids": ["S3", "S6", "S7", "S9"]
+  },
+  "biography": {
+    "plain_text": "Alessandro Del Bono is a Milan-based pharmaceutical executive who leads Mediolanum Farmaceutici, founded by his father Rinaldo. He expanded the family business through acquisitions and held a substantial personal stake in its Neopharmed Gentili affiliate. The Del Bono family retained an interest after outside investors took control, while he continued to chair the affiliate.",
+    "html": "<p>Alessandro Del Bono is a Milan-based pharmaceutical executive who leads Mediolanum Farmaceutici, founded by his father Rinaldo. He expanded the family business through acquisitions and held a substantial personal stake in its Neopharmed Gentili affiliate. The Del Bono family retained an interest after outside investors took control, while he continued to chair the affiliate.</p>\r\n",
+    "word_count": 54,
+    "confidence": {"score": 94, "band": "high", "reason": "First-party group history establishes the father-founded platform and Alessandro's acquisition leadership; the regulator documents his direct stake and Ardian the retained family interest. Current company material and recent reporting corroborate continuing executive responsibility."},
+    "source_ids": ["S3", "S4", "S5", "S6", "S7", "S9"]
+  },
+  "long_biography": {
+    "plain_text": "Alessandro Del Bono guided Mediolanum Farmaceutici through an expansion that changed the scale of the pharmaceutical business established by his father, Rinaldo. Under his leadership, the group created a herbal-products subsidiary and acquired Istituto Gentili and Neopharmed from Merck. The two acquired businesses were combined into Neopharmed Gentili, a medicines company with a strong presence in cardiovascular and neurological treatments.\n\nThe group separated part of its pharmaceutical portfolio and brought private-equity partners into Neopharmed Gentili. Del Bono remained a senior leader of the affiliate while the family kept a significant investment. He continued to run Mediolanum, which retained its oncology and rare-disease activities.",
+    "html": "<p>Alessandro Del Bono guided Mediolanum Farmaceutici through an expansion that changed the scale of the pharmaceutical business established by his father, Rinaldo. Under his leadership, the group created a herbal-products subsidiary and acquired Istituto Gentili and Neopharmed from Merck. The two acquired businesses were combined into Neopharmed Gentili, a medicines company with a strong presence in cardiovascular and neurological treatments.</p>\r\n<p>The group separated part of its pharmaceutical portfolio and brought private-equity partners into Neopharmed Gentili. Del Bono remained a senior leader of the affiliate while the family kept a significant investment. He continued to run Mediolanum, which retained its oncology and rare-disease activities.</p>\r\n",
+    "word_count": 103,
+    "confidence": {"score": 92, "band": "high", "reason": "First-party history and regulatory records document the acquired companies, combination, restructuring and retained treatment areas; Ardian and current company sources support family investment and continued executive work. The text does not assert a legal inheritance route or exact contemporary share percentage."},
+    "source_ids": ["S3", "S4", "S5", "S6", "S7", "S8", "S9"]
+  },
+  "proposed_details": [
+    {"field": "known_for_title", "value": "Mediolanum Farmaceutici chief executive", "action": "fill_missing", "confidence": {"score": 95, "band": "very_high", "reason": "Official company history and recent reporting identify him as the family pharmaceutical group's chief executive; the phrasing does not confuse it with the unrelated bank or rely on the changing Neopharmed CEO title."}, "source_ids": ["S3", "S9"]},
+    {"field": "biography", "value": "<p>Alessandro Del Bono is a Milan-based pharmaceutical executive who leads Mediolanum Farmaceutici, founded by his father Rinaldo. He expanded the family business through acquisitions and held a substantial personal stake in its Neopharmed Gentili affiliate. The Del Bono family retained an interest after outside investors took control, while he continued to chair the affiliate.</p>\r\n", "action": "fill_missing", "confidence": {"score": 94, "band": "high", "reason": "The 54-word biography fills the blank with documented professional, family and economic context without vessel or volatile figures."}, "source_ids": ["S3", "S4", "S5", "S6", "S7", "S9"]}
+  ],
+  "proposed_socials": [
+    {"type_id": "14", "type": "Company Website", "url": "https://www.mediolanum-farma.it/en/index.html", "verification": "Mediolanum Farmaceutici is the official site of the company Alessandro Del Bono leads; it is a company website, not his personal profile and not the unrelated Banca Mediolanum.", "confidence": {"score": 96, "band": "very_high", "reason": "The official site identifies its pharmaceutical group, and first-party subsidiary history and current reporting identify Del Bono's chief executive connection."}, "source_ids": ["S3", "S8", "S9"]}
+  ],
+  "proposed_tags": [
+    {"tag_id": "tag_0237", "name": "Pharmaceuticals", "summary": "Del Bono holds a defining long-term executive and ownership role in the Mediolanum and Neopharmed pharmaceutical businesses, including medicines acquisitions and product development.", "relationship_type": "family-business operator and shareholder", "temporal_scope": "current", "taxonomy_value": "Groups owners whose principal wealth or defining sustained business activity is in pharmaceutical products and companies, rather than general healthcare provision or incidental investments.", "confidence": {"score": 96, "band": "very_high", "reason": "The regulator records substantial personal pharmaceutical-company equity, and company and investor sources establish decades of operating leadership. This meets the active Pharmaceuticals semantic contract and adds a useful precise sector grouping without overlap."}, "source_ids": ["S3", "S4", "S5", "S7", "S8"]}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=10300", "title": "Alessandro Del Bono saved owner record, person ID 10300", "publisher": "Superyacht Network immutable export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Saved Italian nationality, Italy residence, male and Alive fields; blank biography and social links", "Selected current Capricorno relationship records 24.98 metres and a 2022 start; these are identity context only", "Former Nice R relationship is not a biography or wealth premise"]},
+    {"id": "S1", "url": "https://www.yccs.it/en/regattas-2024/maxi_yacht_rolex_cup__rolex_ima_maxi_1_world_championship-3314/iscritti-248/provisionale_entry_list", "title": "Maxi Yacht Rolex Cup 2024 provisional entry list", "publisher": "Yacht Club Costa Smeralda", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Lists Alessandro Del Bono with Capricorno at 24.98 metres, matching the selected current hull", "Sailing entry data establishes identity context, not wealth source"]},
+    {"id": "S2", "url": "https://www.yachtclubitaliano.it/en/news/IMA%20Maxi%20European%20Championship%202026", "title": "IMA Maxi European Championship 2026", "publisher": "Yacht Club Italiano", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Expressly identifies Alessandro Del Bono as Capricorno's owner and a Yacht Club Italiano member", "A public person-vessel bridge, not an industry or fortune premise"]},
+    {"id": "S3", "url": "https://leurquin-mediolanum.fr/qui-sommes-nous/", "title": "Mediolanum family and expansion history", "publisher": "Laboratoires Leurquin Mediolanum", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Rinaldo Del Bono founded Mediolanum Farmaceutici in Milan in 1972", "Alessandro Del Bono as CEO drove expansion, creation of Cristalfarma and acquisition of Istituto Gentili and Neopharmed", "The acquired businesses were combined as Neopharmed Gentili"]},
+    {"id": "S4", "url": "https://www.agcm.it/dotcmsdoc/bollettini/2018/43-18.pdf", "title": "Decision C12197, Albolu–Neopharmed Gentili", "publisher": "Italian Competition Authority", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Before restructuring, Neopharmed Gentili was owned 59% by Mediolanum, 25% directly by Alessandro Del Bono, 15% by Maria Cristina Del Bono and 1% by MSD Italia", "The pharmaceutical operations and oncology or rare-disease activities were separated in a proposed reorganisation and Ardian obtained control", "The decision establishes material personal equity historically but not the legal origin or present percentage of Alessandro's stake"]},
+    {"id": "S5", "url": "https://www.ardian.com/news-insights/press-releases/ardian-and-del-bono-family-renew-their-partnership-neopharmed-gentili", "title": "Ardian and Del Bono family renew Neopharmed partnership", "publisher": "Ardian", "tier": 1, "accessed_at": "2026-09-19", "supports": ["In 2022, Mediolanum was to maintain a significant stake while Ardian and NB Renaissance held a joint majority", "Alessandro was Neopharmed chairman and CEO then and had directed acquisition-led growth", "The family company, investor partnership and pharmaceutical activity are material, without implying current majority family control"]},
+    {"id": "S6", "url": "https://neogen.it/en/news-and-communications/eric-falcand-is-the-new-ceo-of-neopharmed-gentili/", "title": "Eric Falcand named Neopharmed CEO", "publisher": "Neopharmed Gentili", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Eric Falcand replaced Alessandro Del Bono as CEO in October 2023", "Del Bono remained executive chairman and the Del Bono family remained an investment partner", "The role transition prevents treating the old chairman-and-CEO release as current without checking later evidence"]},
+    {"id": "S7", "url": "https://neogen.it/it/corporate/", "title": "Neopharmed Gentili corporate leadership", "publisher": "Neopharmed Gentili", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The currently published corporate chart identifies A. Del Bono as executive chairman and CEO", "This supersedes the 2023 Falcand appointment, consistent with the 2024 CEO-transition announcement", "The chart proves operating responsibility, not sole ownership"]},
+    {"id": "S8", "url": "https://www.mediolanum-farma.it/it/la-nostra-storia.html", "title": "Mediolanum Farmaceutici company history", "publisher": "Mediolanum Farmaceutici", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Official chronology confirms founding and the acquisition of Istituto Gentili, Neopharmed and other drug businesses", "The 2018 majority sale of Neopharmed and retained focus on oncology, rare diseases and pharmaceutical research", "A small property vehicle is not evidence that real estate became Alessandro's principal asset"]},
+    {"id": "S9", "url": "https://agensalute.it/2025/12/07/alessandro-del-bono-insignito-dellambrogino-doro-2025/", "title": "Alessandro Del Bono receives Milan civic honour", "publisher": "AgenSalute", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Identifies Alessandro as chief executive of Mediolanum Farmaceutici in December 2025", "He describes Milan as his city; the award and community role are secondary context", "Does not establish birth date, birthplace, legal share-transfer route or personal net worth"]},
+    {"id": "S10", "url": "https://www.gazzettaufficiale.it/atto/parte_seconda/caricaDettaglioAtto/originario?atto.codiceRedazionale=M-1246&atto.dataPubblicazioneGazzetta=1991-03-19", "title": "Mediolanum Farmaceutici shareholder meeting notice", "publisher": "Gazzetta Ufficiale della Repubblica Italiana", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Rinaldo Del Bono was Mediolanum managing director in 1991", "Together with later official company and regulatory records this helps establish father-to-son executive succession, but not inheritance"]}
+  ],
+  "uncertainties": [
+    {"topic": "Identity and selected vessel", "detail": "The saved 24.98-metre Capricorno record matches Yacht Club Costa Smeralda's exact-length entry and Yacht Club Italiano explicitly calls Alessandro Del Bono its owner. That direct sailing bridge aligns with a distinctive Italian pharmaceutical executive, while same-name LinkedIn results belong to a lawyer, aerospace engineer and other professionals. No vessel premise enters wealth, tags or either biography."},
+    {"topic": "Family succession and wealth origin", "detail": "Rinaldo founded Mediolanum and served as managing director before Alessandro's documented chief executive succession. The regulator records Alessandro's direct 25% Neopharmed stake before the Ardian transaction, while the later investor announcement preserves a significant Del Bono family stake. These positive premises justify medium-confidence family transfer; no source identifies a deed, gift, inheritance or contemporary personal percentage, and inheritance is not asserted."},
+    {"topic": "Current roles and assets", "detail": "A 2023 first-party announcement made Eric Falcand Neopharmed CEO and Del Bono executive chairman. A later 2024 CEO-transition announcement says Falcand departed; Neopharmed's currently published chart again labels A. Del Bono executive chairman and CEO. The biography uses the durable chair/senior-leadership role and separately identifies Mediolanum leadership, avoiding a stale succession claim. The current family stake is significant but minority according to the last explicit investor agreement; full current beneficial holdings are not published."},
+    {"topic": "Personal details and social profiles", "detail": "The source record has no birth date or birthplace. A secondary Dun & Bradstreet entry expands the name to Alessandro Maria Antonio Del Bono, but the expansion was not independently verified through a suitable primary identity chain and is not proposed. Priority LinkedIn, Instagram and personal-website checks, plus Facebook, X, YouTube and TikTok searches, found no authenticated personal account; several LinkedIn exact-name profiles demonstrably describe different occupations. The official Mediolanum domain is proposed solely as a Company Website."},
+    {"topic": "Forbes and taxonomy", "detail": "Dedicated Forbes profile checks found none. One active Pharmaceuticals tag is the minimum distinct, useful sector assignment; neither a general healthcare-provider tag nor a Private equity tag fits his own principal operating role. The separate Banca Mediolanum financial group is not this pharmaceutical company."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Resolved person: exact 24.98-metre Capricorno owner identity is independently supported; father-founded Mediolanum, direct Neopharmed stake, family-investor partnership and ongoing pharmaceutical leadership are documented. Healthcare / Healthcare / Marriage-family transfer / Operator; one active Pharmaceuticals tag. Biography pair is 54 and 103 words; no vessel prose, unverified personal social, birthday or legal inheritance claim. No live site, cohort, catalogue or other owner dossier was changed."
+  }
+}

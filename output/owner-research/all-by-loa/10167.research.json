@@ -1,0 +1,88 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 10167,
+    "display_name": "Michael Messaglia",
+    "identity_confidence": {
+      "score": 42,
+      "band": "insufficient",
+      "reason": "The source names Michael Messaglia and relates him to the 24.38-metre Irresistible. A public yacht profile identifies that exact Monte Fino hull but not its owner. An Indianapolis lawyer and managing partner of Krieg DeVault has the same uncommon name and matching American nationality, yet no public source links him, his firm or a unique biographical fact to this yacht. Name and nationality alone do not meet the collision-safe threshold."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "A public yacht listing identifies the selected Irresistible by its Monte Fino builder and exact length, but gives no personal owner. Michael J. Messaglia is a well-documented Indianapolis lawyer and law-firm leader; his public biography does not connect him to this hull. The source record has no middle name, age, occupation, employer or social profile to test that candidate. Assigning his legal career or a wealth origin to this owner would therefore be speculative.",
+    "confidence": {"score": 96, "band": "very_high", "reason": "The note accurately separates the independently matched hull from the unbridged legal-professional candidate and withholds candidate facts from owner-facing enrichment."},
+    "source_ids": ["S0", "S2", "S3", "S4"]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 92, "band": "high", "reason": "Forbes-first exact-name, /profile/ and yacht-qualified searches found no dedicated, securely matching Forbes person profile. None is proposed."}
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No wealth-producing enterprise or career can be assigned securely to source person ID 10167; the legal-services candidate is unbridged.",
+    "confidence": {"score": 20, "band": "insufficient", "reason": "The only substantial exact-name career record concerns Michael J. Messaglia of Krieg DeVault. Neither the saved owner entry nor the public Irresistible listing connects that attorney to the selected hull. Even if the identity matched, law-firm partnership and wealth materiality would require independent assessment rather than inference from title."},
+    "source_ids": ["S0", "S2", "S3", "S4"]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The current principal business or investment sector of the selected source owner is not established.",
+    "confidence": {"score": 17, "band": "insufficient", "reason": "The source entry has no employer, occupation or holdings; the public hull description has no owner name. The active law-firm management role is real for an exact-name candidate but cannot be transferred to person ID 10167. No known origin sector permits the origin-sector fallback."},
+    "source_ids": ["S0", "S2", "S3"]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No supported founder-built, earned, family-transferred or other principal asset-origin mechanism is known for the selected owner.",
+    "confidence": {"score": 15, "band": "insufficient", "reason": "Neither the yacht record nor candidate legal biography proves a principal wealth-producing asset, equity interest, familial transfer or starting platform for this source person. An American professional match cannot establish a self-made or inherited origin."},
+    "source_ids": ["S0", "S2", "S3", "S4"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The selected person's role in any principal wealth-producing asset cannot be determined.",
+    "confidence": {"score": 15, "band": "insufficient", "reason": "Krieg DeVault's managing partner is not a confirmed identity match, and its title alone would not establish the selected person's equity or principal asset relationship. Vessel ownership is not a Founder, Operator or Investor classification."},
+    "source_ids": ["S0", "S2", "S3"]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=10167", "title": "Michael Messaglia saved owner record, person ID 10167", "publisher": "Superyacht Network immutable owner export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Saved Michael Messaglia is American, United States-resident, male and marked Alive, but has no age, birth detail, biography, employer or social account", "The saved current Irresistible relationship dates from 2015 and the hull is recorded at 24.38 metres and 69 GT; this is identity context only"]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Michael%20Messaglia", "title": "Forbes exact-name and dedicated-profile search", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Forbes-first exact-name and dedicated /profile/ searches found no secure personal profile for Michael Messaglia"]},
+    {"id": "S2", "url": "https://www.yachtbuyer.com/en/fleet/irresistible-79-monte-fino", "title": "Irresistible, Monte Fino 80 motor yacht", "publisher": "YachtBuyer", "tier": 3, "accessed_at": "2026-09-19", "supports": ["The public page identifies a Monte Fino Irresistible delivered in 2015 and measuring exactly 24.38 metres, matching the selected hull", "It does not identify Michael Messaglia or another personal owner; other Irresistible-named vessels have different dimensions and builders"]},
+    {"id": "S3", "url": "https://www.kriegdevault.com/professionals/michael-messaglia", "title": "Michael J. Messaglia professional biography", "publisher": "Krieg DeVault LLP", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Identifies Michael J. Messaglia as current managing partner in Indianapolis and a banking, corporate and mergers-and-acquisitions attorney", "The official profile contains no yacht or unique selected-record bridge; these career facts are candidate-only"]},
+    {"id": "S4", "url": "https://law.nd.edu/news-events/news/michael-j-messaglia-90-ba-93-j-d/", "title": "Michael J. Messaglia, Notre Dame law alumnus", "publisher": "University of Notre Dame Law School", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Independently confirms the legal-professional candidate's 1990 undergraduate and 1993 law degrees and later Krieg DeVault managing-partner appointment", "It contains no Irresistible link or source-owner birth clue"]},
+    {"id": "S5", "url": "https://www.inbar.org/members/?id=29040189", "title": "Michael J. Messaglia active attorney record", "publisher": "Indiana State Bar Association", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The attorney candidate was listed as active and in good standing in 2026", "This confirms only the candidate's continuing profession, not the selected owner's identity"]}
+  ],
+  "uncertainties": [
+    {"topic": "Selected hull and identity", "detail": "The 24.38-metre Monte Fino Irresistible appears in a public yacht listing matching the selected source hull, but no person is named there. The exact-name Krieg DeVault lawyer is plausible, not verified, because the source owner entry offers no middle initial, geography beyond the United States, birth detail, employer or linked account. Generic yacht-name searches also surface unrelated vessels."},
+    {"topic": "Unbridged legal-career candidate", "detail": "Krieg DeVault, Notre Dame and the Indiana Bar establish an Indianapolis Michael J. Messaglia and his continuing law-firm role. None ties him to the selected Irresistible, and a legal managing-partner title alone would not prove a material personal wealth source or stake. No middle-name or career proposal is made."},
+    {"topic": "Forbes and socials", "detail": "The Forbes-first check found no dedicated matching profile. Searches across LinkedIn, Instagram, Facebook, X, YouTube, TikTok and personal websites did not authenticate a personal account to the source owner; firm posts mentioning the lawyer are not his own social profile. No company website is proposed for an unresolved identity."},
+    {"topic": "Terminal classifications and taxonomy", "detail": "Direct evidence, permissible inference and less-specific values all fail the identity and materiality tests for each wealth field. Service would merely borrow the unbridged lawyer candidate, and the vessel itself reveals no wealth industry or origin. All four fields remain Unknown and no active tag is proposed."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal insufficient-evidence decision after exact-ID inventory, Forbes-first and priority-social searches, exact-hull comparison and review of the prominent lawyer candidate. The owner record has no independent person-to-hull or career bridge. No biography, personal correction, social profile or tag is proposed; other files and live state remain untouched."
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 3062,
+    "display_name": "Mr Steve Mogford",
+    "identity_confidence": {
+      "score": 43,
+      "band": "insufficient",
+      "reason": "The saved record names a British Steve Mogford and contains birth fields that appear to transpose the day and year of prominent executive Steven Lewis Mogford. Official company records establish that executive's June 1956 birth month and career, but no public source connects him to the selected 24.37-metre Sea Samphire. Search results for the vessel name concern a distinct much smaller craft. The record's Wikipedia link and apparent date copying are clues, not independent owner-to-person verification."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "biography"],
+    "optional_missing_details": ["name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": ["Wikipedia"],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "The saved Wikipedia link and anomalous birth fields point towards Steven Lewis Mogford, the former United Utilities chief executive and current Intertek chairman. Companies House confirms that candidate was born in June 1956, while the source record puts 1956 in the day field and 27 in the year field. Neither official career source nor yacht search independently links him to the selected Sea Samphire. An indexed vessel of that name is only 25.6 feet long, not the selected 24.37 metres. The executive's biography, corrected birth details and wealth characteristics are withheld pending a collision-safe bridge.",
+    "confidence": {"score": 96, "band": "very_high", "reason": "The note distinguishes the source-record candidate clues, verified executive facts and incompatible public boat listing without claiming that either public subject is the selected owner."},
+    "source_ids": ["S0", "S2", "S3", "S4", "S5"]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 92, "band": "high", "reason": "Forbes-first exact-name and /profile/ searches found no dedicated, collision-safe Forbes person profile for this source owner. None is proposed."}
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No principal wealth-generating industry is securely attributable to source person ID 3062.",
+    "confidence": {"score": 22, "band": "insufficient", "reason": "The public aerospace, water-utility and testing-services career belongs to a plausible executive candidate, but no independent selected-vessel or other source-record bridge establishes that candidate as this owner. Even if matched, the principal wealth-producing portion of that multi-sector career would need separate causal assessment."},
+    "source_ids": ["S0", "S3", "S4"]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The selected owner's current principal business or asset sector is unverified.",
+    "confidence": {"score": 20, "band": "insufficient", "reason": "Intertek's chairmanship is current for the prominent same-name executive, not yet securely assigned to the source owner. No independent current holding or origin-sector fallback is established for person ID 3062."},
+    "source_ids": ["S0", "S3", "S4"]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The selected owner's principal wealth origin cannot be determined from verified evidence.",
+    "confidence": {"score": 17, "band": "insufficient", "reason": "The owner-to-executive identity bridge is absent, and a candidate's professional appointments alone would not prove an earned, inherited or mixed principal asset origin. Vessel association does not establish a wealth mechanism."},
+    "source_ids": ["S0", "S3", "S4"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The selected person's relationship to any principal wealth-generating enterprise or asset is unestablished.",
+    "confidence": {"score": 17, "band": "insufficient", "reason": "A current board chair and former chief executive are documented for Steven Lewis Mogford, but the selected owner has not been independently identified as that executive. Neither the saved yacht relation nor an unbridged board title proves an Operator or other wealth relationship."},
+    "source_ids": ["S0", "S3", "S4"]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=3062", "title": "Mr Steve Mogford saved owner record, person ID 3062", "publisher": "Superyacht Network immutable owner export", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Saved Mr Steve Mogford is English, United Kingdom-resident, male and marked Alive, with a Wikipedia URL but no occupation, biography or personal business bridge", "The stored birth fields show day 1956, month June and year 27, an apparent transposition requiring verification rather than silent correction", "The selected current Sea Samphire is recorded at 24.37 metres from 2016; this is identity context only"]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Steve%20Mogford", "title": "Forbes exact-name and dedicated-profile search", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Forbes-first exact-name, /profile/ and yacht-qualified searches did not identify a dedicated secure Forbes person profile"]},
+    {"id": "S2", "url": "https://en.wikipedia.org/wiki/Steve_Mogford", "title": "Steve Mogford public biography", "publisher": "Wikipedia", "tier": 3, "accessed_at": "2026-09-19", "supports": ["The saved URL is about Steven Lewis Mogford and reports 27 June 1956, suggestive of a day/year transposition in the source fields", "The page identifies a United Utilities executive but does not connect him to Sea Samphire; Wikipedia is a candidate clue, not independent vessel ownership proof"]},
+    {"id": "S3", "url": "https://find-and-update.company-information.service.gov.uk/officers/XxG22idbtxgStVa3HDg8sUMUIFg/appointments", "title": "Steven Lewis Mogford director appointments", "publisher": "UK Companies House", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Official filing identifies Steven Lewis Mogford as British, United Kingdom-resident and born June 1956", "Shows an active Intertek Group plc directorship, but no yacht or unique bridge to the selected owner record"]},
+    {"id": "S4", "url": "https://www.investegate.co.uk/index.php/announcement/rns/intertek-group--itrk/directorate-change/9580566", "title": "Intertek directorate change, 21 May 2026", "publisher": "Intertek Group plc via RNS", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Intertek states that Steve Mogford became its chairman effective 20 May 2026", "This current executive role is candidate-only because the announcement supplies no Sea Samphire connection"]},
+    {"id": "S5", "url": "https://www.maritimeheritageeast.org.uk/ux/file/ref%3D52%26ty%3DDOCS", "title": "Ships registered at Maldon, 1975 to 1994", "publisher": "Maritime Heritage East", "tier": 2, "accessed_at": "2026-09-19", "supports": ["A vessel named Sea Samphire is documented as a 25.6-foot, 4.50-GT auxiliary sloop registered in 1977", "This craft is far smaller than the selected 24.37-metre vessel and does not bridge Steve Mogford to it"]},
+    {"id": "S6", "url": "https://www.linkedin.com/pub/dir/Steve/Mogford", "title": "LinkedIn directory for Steve Mogford", "publisher": "LinkedIn", "tier": 3, "accessed_at": "2026-09-19", "supports": ["Search surfaced multiple Steve or Steven Mogford accounts in differing locations and professions", "No personal account could be authenticated to the selected yacht owner"]}
+  ],
+  "uncertainties": [
+    {"topic": "Owner identity and vessel bridge", "detail": "The source links Mr Steve Mogford to a 24.37-metre Sea Samphire, but exact-name, yacht-qualified and vessel-specification searches found no independent public page naming a person for that hull. A historical boat of the same name is only 25.6 feet long and must not be conflated with the selected vessel. The prominent executive remains a plausible, unconfirmed candidate."},
+    {"topic": "Birth-field inversion and existing Wikipedia", "detail": "The stored day 1956 and year 27 are invalid as entered. The saved Wikipedia page says Steven Lewis Mogford was born 27 June 1956, and Companies House confirms the executive candidate's June 1956 birth month and year. This strongly suggests a source-record transposition, yet neither source independently authenticates the yacht owner; no personal correction is proposed in an unresolved dossier."},
+    {"topic": "Candidate career and social collision", "detail": "Current official records show Steven Lewis Mogford's Intertek role, and the saved Wikipedia page recounts his United Utilities career. LinkedIn returns multiple same-name professionals, including an industrial-automation account unrelated to those corporate filings. Searches across priority LinkedIn, Instagram and personal-site types, plus Facebook, X, YouTube and TikTok, produced no collision-safe owner account. Candidate career and profiles are withheld."},
+    {"topic": "Wealth and taxonomy", "detail": "The executive candidate's aerospace, water and testing roles do not by themselves establish the selected person's principal wealth industry, asset origin or economic relationship. No origin-sector fallback can be used until identity and wealth mechanism are verified. All four wealth classifications remain Unknown and no approved tag is assigned."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal insufficient-evidence decision after exact-ID inventory, Forbes-first and priority-social searches, official executive-source review and unsuccessful direct Sea Samphire bridge search. A likely copied/transposed birth date does not overcome the yacht/person gap. No biography, detail correction, social profile, wealth classification or tag is proposed."
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 7132,
+    "display_name": "Allison P. Weinstein",
+    "identity_confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The saved exact-name LinkedIn identifies Allison Weinstein at Weinstein Properties in Richmond. The company's own biography identifies her as Marcus Weinstein's daughter and Ivan Jecklin's wife; the Washington University alumni record and independent Richmond reporting corroborate the pair and family business. Florida's KNOT ZEN LLC filing links that vessel name to Ivan at the Weinstein Properties business address, reinforcing the saved joint relationship without establishing Allison's legal title to the vessel. Other Allison Weinstein profiles in different industries and states are excluded."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_country", "birth_day", "birth_month", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["secondary_nationality", "known_for_title", "place_of_birth", "birth_country", "birth_day", "birth_month", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": ["LinkedIn"],
+    "missing_priority_social_types": ["Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Allison P. Weinstein is the co-president and chief executive of Virginia-based Weinstein Properties, a family-owned multifamily real-estate enterprise.",
+    "defining_work": "She oversees daily operations of the apartment ownership and management platform and participated in its expansion after joining in 1994.",
+    "formative_context": "Her father Marcus founded the family property business; she earned a law degree and worked in personnel and recruiting at a Chicago law firm before joining it.",
+    "decisive_moment": "She and Ivan Jecklin moved to Richmond to join the already established family real-estate business in 1994.",
+    "enduring_dimensions": [
+      "Weinstein Properties owns and manages apartment communities across multiple US states.",
+      "Her role developed from company president and chief operating officer to co-president and chief executive.",
+      "She served on the University of Richmond board of trustees and other civic boards."
+    ],
+    "character_detail": "In a first-person interview she credited the shared management team, including her husband and financial leadership, with the family firm's growth rather than claiming sole credit.",
+    "opening_options": [
+      {"mode": "formative_episode", "angle": "Begin with the trained lawyer's move from Chicago personnel work into her father's established Richmond apartment business."},
+      {"mode": "present_identity", "angle": "Introduce her current leadership of a multistate family apartment platform and then explain the inherited starting context without asserting an equity transfer."}
+    ],
+    "excluded_transient_context": [
+      "Knot Zen, its specifications, the Florida holding company, private addresses and personal yacht title; these are identity clues only.",
+      "Changing apartment counts, estimated family fortune, property transaction values and speculative individual equity percentages.",
+      "Unverified namesake social accounts and any claim that company management alone establishes an inheritance or personal ownership transfer."
+    ],
+    "source_ids": ["S3", "S4", "S5", "S6", "S7", "S8"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 4,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": ["inherited_operator"],
+    "notes": "The short profile presents the current role and commercial platform; the longer version develops her formative move, memory of business adversity, leadership sequence and civic dimension. Neither suggests a documented inheritance or personal equity stake."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 95, "band": "very_high", "reason": "Forbes-first exact-name and site:forbes.com/profile searches did not produce a dedicated Forbes person profile for the Richmond apartment executive; broad namesakes were not conflated."}
+  },
+  "wealth_creation_industry": {
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "The substantial family business her father founded owns and manages multifamily rental property; Allison's long-term operating work helped expand that established property portfolio.",
+    "confidence": {"score": 87, "band": "high", "reason": "The company identifies its current multifamily operations, while her first-person account describes the father-founded business and her team's portfolio expansion; independent Virginia Business reporting verifies substantial family-owned apartments. Her individual economics are not disclosed, so the industry inference concerns the defining business platform, not an estimated fortune."},
+    "source_ids": ["S3", "S4", "S5", "S6"]
+  },
+  "primary_industry": {
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "Her present principal operating mandate is as co-president and chief executive of Weinstein Properties, the continuing owner and manager of multifamily rental communities.",
+    "confidence": {"score": 92, "band": "high", "reason": "The current official team and personal pages directly identify her chief executive responsibility and day-to-day duties, and the company's public business description confirms multifamily property ownership and management. This is a present role, not a historical-sector fallback."},
+    "source_ids": ["S3", "S4", "S9"]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "She joined and later led her father's already successful property business, but public sources do not establish whether she personally received a principal stake, purchased one, inherited assets, or built a separate material fortune.",
+    "confidence": {"score": 82, "band": "medium", "reason": "Her own account and the official biography prove the family starting platform and management succession; the company says it remains family owned. Neither identifies Allison's individual economic interest or transfer mechanism. Chief executive authority alone fails the family-succession ownership test, so a family-transfer subtype is not asserted."},
+    "source_ids": ["S3", "S4", "S5", "S6", "S9"]
+  },
+  "wealth_relationship": {
+    "classification": "operator",
+    "label": "Operator",
+    "summary": "As co-president and chief executive she directs day-to-day operations of the established family multifamily-property business rather than having founded its core asset.",
+    "confidence": {"score": 94, "band": "high", "reason": "Current company biography states her daily executive responsibility; Marcus is identified as founder, and the first-person interview credits family predecessors and a management team. No individual equity claim is needed to classify her operating relationship."},
+    "source_ids": ["S3", "S4", "S5", "S6"]
+  },
+  "biography": {
+    "plain_text": "Allison P. Weinstein leads Weinstein Properties as co-president and chief executive. The Virginia company, established by her father Marcus, owns and manages rental apartments across several US states. She joined the family enterprise in 1994 and helped broaden its holdings through a collaborative leadership team, bringing a legal education and personnel experience to the role.",
+    "html": "<p>Allison P. Weinstein leads Weinstein Properties as co-president and chief executive. The Virginia company, established by her father Marcus, owns and manages rental apartments across several US states. She joined the family enterprise in 1994 and helped broaden its holdings through a collaborative leadership team, bringing a legal education and personnel experience to the role.</p>\r\n",
+    "word_count": 55,
+    "confidence": {"score": 91, "band": "high", "reason": "The official biography and team page establish family context, chronology and current duties; the first-person interview supports team-led portfolio expansion and the company confirms the continuing apartment platform."},
+    "source_ids": ["S3", "S4", "S5", "S9"]
+  },
+  "long_biography": {
+    "plain_text": "A law graduate of Washington University in St Louis, Allison P. Weinstein spent her early career in recruiting at a Chicago legal practice. She relocated to Richmond in 1994 with Ivan Jecklin and entered the property concern that her parents had built. In a later interview, she recalled the business's difficult years in the 1970s and the example of her parents' persistence. Its scale was already established when she arrived.\n\nWeinstein eventually became president and chief operating officer, and later chief executive. She credits colleagues, including Jecklin and finance leadership, with enlarging the apartment portfolio rather than claiming the achievement alone. The current management structure has three co-presidents, with Allison overseeing operations. Her public service has included trusteeships at the University of Richmond and local civic organisations.",
+    "html": "<p>A law graduate of Washington University in St Louis, Allison P. Weinstein spent her early career in recruiting at a Chicago legal practice. She relocated to Richmond in 1994 with Ivan Jecklin and entered the property concern that her parents had built. In a later interview, she recalled the business's difficult years in the 1970s and the example of her parents' persistence. Its scale was already established when she arrived.</p>\r\n<p>Weinstein eventually became president and chief operating officer, and later chief executive. She credits colleagues, including Jecklin and finance leadership, with enlarging the apartment portfolio rather than claiming the achievement alone. The current management structure has three co-presidents, with Allison overseeing operations. Her public service has included trusteeships at the University of Richmond and local civic organisations.</p>\r\n",
+    "word_count": 127,
+    "confidence": {"score": 91, "band": "high", "reason": "The company biography supplies education, prior work, family relationship and current duties; official current team and historical Virginia Business titles show the leadership sequence. Her first-person interview describes shared expansion, and independent coverage records her trusteeship."},
+    "source_ids": ["S3", "S4", "S5", "S6", "S7", "S8", "S9"]
+  },
+  "proposed_details": [
+    {"field": "known_for_title", "value": "Real Estate Executive", "action": "fill_missing", "confidence": {"score": 93, "band": "high", "reason": "The official current biography names her co-president and CEO of a substantial apartment property company, consistent with her independently documented long career."}, "source_ids": ["S3", "S4", "S5"]},
+    {"field": "biography", "value": "<p>Allison P. Weinstein leads Weinstein Properties as co-president and chief executive. The Virginia company, established by her father Marcus, owns and manages rental apartments across several US states. She joined the family enterprise in 1994 and helped broaden its holdings through a collaborative leadership team, bringing a legal education and personnel experience to the role.</p>\r\n", "action": "fill_missing", "confidence": {"score": 91, "band": "high", "reason": "The blank biography is filled with the durable family-company leadership, chronology and material property work verified by official and independent sources, excluding vessel/private details."}, "source_ids": ["S3", "S4", "S5", "S6", "S9"]}
+  ],
+  "proposed_socials": [
+    {"type_id": "14", "type": "Company Website", "url": "https://www.weinsteinproperties.com/", "verification": "Official business site links directly to Allison Weinstein's current executive biography and team entry; this is the company site, not a personal account.", "confidence": {"score": 97, "band": "very_high", "reason": "The official company domain identifies Allison as co-president and CEO and provides a matching biography, with external reporting independently corroborating her leadership."}, "source_ids": ["S3", "S4", "S9"]}
+  ],
+  "proposed_tags": [
+    {"tag_id": "tag_0926", "name": "Multifamily housing", "summary": "Weinstein has a defining long-term executive mandate in the family company's substantial apartment ownership and management platform.", "relationship_type": "current co-president and chief executive of a substantial multifamily-property operator", "temporal_scope": "current", "taxonomy_value": "This literal active tag groups principals with sustained, material operating mandates in apartment property, providing a more exact click-through cohort than a generic real-estate label; it does not imply an unverified individual stake.", "confidence": {"score": 92, "band": "high", "reason": "The official site and her first-person interview establish extensive multifamily operations and her long-running executive direction. It satisfies the active membership test for a defining operating mandate without requiring proof of direct personal equity."}, "source_ids": ["S3", "S4", "S5", "S9"]}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S1", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=7132", "title": "Allison P. Weinstein owner record, ID 7132", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 4, "accessed_at": "2026-09-19", "supports": ["Immutable identity and US nationality/residence, female/Alive status, birth year 1963, saved LinkedIn and blank biography.", "The current Knot Zen relationship jointly saved with Ivan Jecklin is selection and identity context only, not evidence of personal wealth or legal yacht title."]},
+    {"id": "S2", "url": "https://www.forbes.com/search/?q=Allison%20P.%20Weinstein", "title": "Forbes-first exact-name profile search", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Exact-name and Forbes-profile-restricted searches produced no dedicated profile securely matching the Richmond real-estate executive."]},
+    {"id": "S3", "url": "https://www.weinsteinproperties.com/bio-allison-weinstein", "title": "Allison Weinstein executive biography", "publisher": "Weinstein Properties", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Co-president and CEO responsible for day-to-day operations; daughter of Marcus Weinstein and wife of Ivan Jecklin.", "Joined Weinstein Management in 1994 after Chicago law-firm recruiting/personnel work; Washington University in St Louis BA 1984 and JD 1987."]},
+    {"id": "S4", "url": "https://www.weinsteinproperties.com/team", "title": "Current Weinstein Properties leadership", "publisher": "Weinstein Properties", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Current team identifies Marcus chairman, Allison co-president and CEO, Ivan Jecklin co-president, and John Lancaster co-president/CFO.", "The separate co-owner title on other team entries is not attributed to Allison and cannot establish her individual stake."]},
+    {"id": "S5", "url": "https://valawyersweekly.com/2010/05/09/allison-p-weinstein/", "title": "Allison P. Weinstein first-person career interview", "publisher": "Virginia Lawyers Weekly", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Exact full name, Washington University law education and Weinstein Properties employer.", "She says her father founded the family real-estate business in the 1950s, her mother later worked there, and she was given the chance to grow an already successful firm.", "She credited a team with materially expanding its portfolio and described her husband as another business leader; she listed University of Richmond trusteeship."]},
+    {"id": "S6", "url": "https://dockets.alexandriava.gov/fy11/012112ph/di4f.pdf", "title": "Virginia 100 account of Weinstein Properties", "publisher": "Virginia Business", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Historical family-owned apartment platform, Marcus as then chairman/CEO, Allison as president/COO and Ivan as general counsel and EVP.", "Its dated family net-worth estimate is not applied to Allison individually or repeated in the biographies."]},
+    {"id": "S7", "url": "https://becker.wustl.edu/static-files/arb/007-RG031-S25-WUmagazine/RG031-S25-V64-N02-Summer-1994.pdf", "title": "Washington University alumni news, summer 1994", "publisher": "Washington University in St Louis", "tier": 1, "accessed_at": "2026-09-19", "supports": ["An independent contemporaneous record identifies Allison Weinstein-Jecklin and husband Ivan Jecklin moving to Richmond to work in a family real-estate business, reinforcing the precise couple and career chronology."]},
+    {"id": "S8", "url": "https://www.styleweekly.com/the-power-list/", "title": "The Weinstein family and Richmond civic leadership", "publisher": "Style Weekly", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Historical coverage calls Allison president of her family's apartment-management firm and names husband Ivan, parents Marcus and Carole, and her University of Richmond trusteeship."]},
+    {"id": "S9", "url": "https://www.weinsteinproperties.com/", "title": "Weinstein Properties official home", "publisher": "Weinstein Properties", "tier": 1, "accessed_at": "2026-09-19", "supports": ["The privately held, family-owned and operated company owns and manages multifamily rental communities across multiple states; current site links to Allison's biography and team.", "Company ownership by a family does not disclose Allison's individual equity interest or a family transfer instrument."]},
+    {"id": "S10", "url": "https://www.linkedin.com/in/allison-weinstein-4b0873a/", "title": "Allison Weinstein LinkedIn profile", "publisher": "LinkedIn", "tier": 4, "accessed_at": "2026-09-19", "supports": ["The saved exact account publicly displays Allison Weinstein at Weinstein Properties in Richmond, verifying rather than duplicating the existing social link."]},
+    {"id": "S11", "url": "https://search.sunbiz.org/Inquiry/corporationsearch/SearchResultDetail?aggregateId=flal-l18000269575-f5dd6145-a02a-45fd-8cd7-759f342efb71&directionType=ForwardList&inquirytype=EntityName&listNameOrder=KNOTYOURAVERAGEPARTY+L160000400330&searchNameOrder=KNOTZEN+L180002695750&searchTerm=KNOTWORK,+LLC", "title": "KNOT ZEN LLC public corporate record", "publisher": "Florida Department of State, Division of Corporations", "tier": 1, "accessed_at": "2026-09-19", "supports": ["Active same-name entity uses the Weinstein Properties office address and lists Ivan P. Jecklin as manager, adding a vessel-name/business/spouse bridge.", "This entity filing does not identify Allison as its member or prove her personal yacht title."]},
+    {"id": "S12", "url": "https://www.superyachttimes.com/yachts/knot-zen/overview", "title": "Knot Zen vessel overview", "publisher": "SuperYacht Times", "tier": 2, "accessed_at": "2026-09-19", "supports": ["Confirms the vessel name and specifications in the saved relationship but gates the owner's identity; no ownership claim for Allison is imported from it."]}
+  ],
+  "uncertainties": [
+    {"topic": "Individual economic ownership and origin", "detail": "Marcus founded the family business, Allison entered it in 1994 and later became CEO, and the firm remains family-owned. No source names Allison's individual company share, purchase, inheritance, gift, beneficiary right or transfer document. Under the family-succession rule, wealth origin remains Unknown rather than silently assigning her father's holdings to her."},
+    {"topic": "Knot Zen identity and legal title", "detail": "The saved record associates Allison and Ivan with Knot Zen, and the Florida same-name entity is managed by Ivan at their business address. Public vessel data gates the owner; the entity filing does not identify Allison as a member. Yacht title is not inferred, and no vessel details appear in biographies or wealth/tag assignments."},
+    {"topic": "Social and demographic gaps", "detail": "The saved LinkedIn account independently matches her employer and Richmond location; no duplicate proposal is made. Searches of Instagram, Facebook, X, YouTube, TikTok and personal sites did not authenticate an additional personal account. No primary exact birth day/month or birthplace was found; a people-search claim of July is not adequate for a proposal. Saved birth year and residence are preserved."},
+    {"topic": "Forbes and namesakes", "detail": "No dedicated Forbes profile was verified. Search results for other Allison Weinstein professionals, including New York commercial-market and consumer-brand roles, lack the Marcus/Weinstein Properties/Ivan bridge and were excluded."}
+  ],
+  "review": {"status": "complete", "notes": "Terminal identity-resolved dossier. The 55-word short and 127-word two-paragraph long biographies use distinct narrative structures; one active multifamily tag, verified existing LinkedIn, and conservative Unknown origin. No live or shared-state update is authorised."}
+}
