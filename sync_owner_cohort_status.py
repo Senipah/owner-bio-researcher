@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
 
 from src.cohort_status import (
@@ -10,6 +11,12 @@ from src.cohort_status import (
     prepare_cohort_status_sync,
 )
 from src.io_utils import atomic_write_json, load_json_unvalidated
+from src.owner_identity import (
+    DEFAULT_OWNER_IDENTITY_RESOLUTIONS_PATH,
+    load_owner_identity_resolutions,
+    owner_identity_redirects,
+    validate_owner_identity_archives,
+)
 
 
 DEFAULT_COHORT = Path("output/owner-research/all-by-loa/cohort.json")
@@ -26,6 +33,15 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--cohort", type=Path, default=DEFAULT_COHORT)
     parser.add_argument(
         "--dossier-dir", type=Path, default=DEFAULT_DOSSIER_DIRECTORY
+    )
+    parser.add_argument(
+        "--identity-resolutions",
+        type=Path,
+        default=DEFAULT_OWNER_IDENTITY_RESOLUTIONS_PATH,
+        help=(
+            "Reviewed duplicate-owner redirects whose retired IDs are "
+            "excluded from future research."
+        ),
     )
     parser.add_argument(
         "--updated-owner-input",
@@ -56,11 +72,17 @@ def main() -> int:
     try:
         cohort = load_json_unvalidated(args.cohort)
         researched = load_researched_owner_ids(args.dossier_dir)
+        identity_resolutions = load_owner_identity_resolutions(
+            args.identity_resolutions
+        )
+        validate_owner_identity_archives(identity_resolutions)
+        retired_redirects = owner_identity_redirects(identity_resolutions)
         imported_updated = load_updated_owner_ids(args.updated_owner_input)
         updated, report = prepare_cohort_status_sync(
             cohort,
             researched_owner_ids=researched,
             imported_updated_owner_ids=imported_updated,
+            retired_owner_redirects=retired_redirects,
             mark_updated_owner_ids=set(args.mark_updated),
             mark_not_updated_owner_ids=set(args.mark_not_updated),
         )
@@ -73,6 +95,9 @@ def main() -> int:
             "mode": "apply" if args.apply else "dry-run",
             "cohort": str(args.cohort.resolve()),
             "dossier_directory": str(args.dossier_dir.resolve()),
+            "identity_resolutions": str(
+                args.identity_resolutions.resolve()
+            ),
             "updated_owner_inputs": [
                 str(path.resolve()) for path in args.updated_owner_input
             ],

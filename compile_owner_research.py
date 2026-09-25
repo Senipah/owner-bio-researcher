@@ -9,6 +9,11 @@ from types import ModuleType
 from typing import Any
 
 from src.io_utils import atomic_write_json, atomic_write_text, load_json
+from src.owner_identity import (
+    DEFAULT_OWNER_IDENTITY_RESOLUTIONS_PATH,
+    load_owner_identity_resolutions,
+    validate_owner_identity_archives,
+)
 from src.research_batch import (
     RESEARCH_SELECTIONS,
     attach_biography_comparisons,
@@ -47,6 +52,15 @@ def build_parser() -> argparse.ArgumentParser:
         help=(
             "Canonical research-layer tag catalogue used to resolve dossier "
             "tag IDs, names, aliases, and merges."
+        ),
+    )
+    parser.add_argument(
+        "--identity-resolutions",
+        type=Path,
+        default=DEFAULT_OWNER_IDENTITY_RESOLUTIONS_PATH,
+        help=(
+            "Reviewed duplicate-owner redirects whose retired IDs must be "
+            "excluded from research selection and dossier requirements."
         ),
     )
     parser.add_argument(
@@ -221,11 +235,17 @@ def main() -> int:
             raise ValueError("Output must not overwrite the input owner document")
         document = load_json(args.input)
         tag_catalogue = load_tag_catalogue(args.tag_catalogue)
+        identity_resolutions = load_owner_identity_resolutions(
+            args.identity_resolutions
+        )
+        validate_owner_identity_archives(identity_resolutions)
+        retired_owner_ids = set(identity_resolutions)
         dossiers, paths = load_dossiers(args.dossier_dir)
         selected = select_research_owners(
             document,
             args.selection,
             args.limit,
+            retired_owner_ids=retired_owner_ids,
         )
         selected_ids = [owner["person_id"] for owner in selected]
         _validate_dossiers(
@@ -244,6 +264,7 @@ def main() -> int:
             limit=args.limit,
             mark_ai_enriched=args.mark_ai_enriched,
             selection=args.selection,
+            retired_owner_ids=retired_owner_ids,
             tag_catalogue=tag_catalogue,
         )
         if args.live_biography_baseline is not None:

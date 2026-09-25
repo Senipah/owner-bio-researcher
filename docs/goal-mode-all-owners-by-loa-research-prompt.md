@@ -67,10 +67,15 @@ apply website changes, stage files, commit, or push.
      after the first false flag;
    - `workflow_summary` exactly matches the per-owner flags;
    - `workflow_summary.completed_prefix` equals `researched_count`; and
+   - `workflow_summary.terminal_dossier_count` plus
+     `workflow_summary.retired_duplicate_count` equals `researched_count`;
    - `workflow_summary.next_unresearched_owner` matches the first false entry,
      or is null when none remain.
 
 3. Do not modify any dossier whose cohort `workflow.researched` flag is true.
+   Retired duplicate IDs in `config/owner-identity-resolutions.json` have no
+   production dossier and must never be selected for research; their preserved
+   dossiers live under `output/owner-research/archived-duplicates`.
 4. If `remaining_research_count == 0`, report that the cohort is complete
    and do not start another tranche.
 
@@ -81,6 +86,10 @@ apply website changes, stage files, commit, or push.
    - `COMPLETED_PREFIX = workflow_summary.completed_prefix`
    - `TRANCHE_START = COMPLETED_PREFIX + 1`
    - `TRANCHE_END = min(COMPLETED_PREFIX + 50, cohort_size)`
+   - `RETIRED_PREFIX_COUNT =` the number of IDs from
+     `config/owner-identity-resolutions.json` whose cohort position is at or
+     before `TRANCHE_END`
+   - `ACTIVE_PREFIX_COUNT = TRANCHE_END - RETIRED_PREFIX_COUNT`
    - `CURRENT_JSON = tmp/all-by-loa-current.json`
    - `CURRENT_HTML = tmp/all-by-loa-current.html`
 
@@ -297,7 +306,7 @@ After every target dossier is terminal and strictly validated:
 
 Run the normal compiler:
 
-`.\venv\Scripts\python.exe .\compile_owner_research.py --input output\owners-list.vessel-enriched.enriched.json --dossier-dir output\owner-research\all-by-loa --selection all-by-loa --limit TRANCHE_END --output CURRENT_JSON --report CURRENT_HTML --mark-ai-enriched`
+`.\venv\Scripts\python.exe .\compile_owner_research.py --input output\owners-list.vessel-enriched.enriched.json --dossier-dir output\owner-research\all-by-loa --selection all-by-loa --limit ACTIVE_PREFIX_COUNT --output CURRENT_JSON --report CURRENT_HTML --mark-ai-enriched`
 
 Pass `--mark-ai-enriched` so usable completed dossiers are accepted into the
 derived owner document. `CURRENT_JSON` and `CURRENT_HTML` are disposable
@@ -306,7 +315,8 @@ and must not be retained as numbered checkpoints.
 
 Verify:
 
-- exactly `TRANCHE_END` owners were compiled in cohort order;
+- exactly `ACTIVE_PREFIX_COUNT` owners were compiled in cohort order, with
+  every reviewed retired duplicate omitted;
 - every selected owner has a validated production dossier;
 - every usable compiled owner has `workflow.ai_enriched=true`, while unresolved
   placeholders remain false;
@@ -314,7 +324,8 @@ Verify:
   object;
 - `_baseline`, person IDs, profile URLs, profile keys and vessel data remain
   unchanged; and
-- the first and last compiled IDs match cohort positions 1 and `TRANCHE_END`.
+- the first and last compiled IDs match the first and last non-retired owners
+  within cohort positions 1 through `TRANCHE_END`.
 
 ## Advance progress only after success
 

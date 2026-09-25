@@ -17,6 +17,7 @@ from src.research_batch import (
     select_all_owners_by_loa,
     select_current_top_100_owners,
     select_largest_loa_owners,
+    select_research_owners,
 )
 from src.tags import TagCatalogue
 
@@ -365,6 +366,46 @@ def test_compiler_parser_accepts_all_by_loa_selection() -> None:
     )
 
     assert args.selection == "all-by-loa"
+
+
+def test_research_selection_excludes_retired_owner_before_limit() -> None:
+    document = new_document()
+    document["owners"] = [
+        _owner(10, "Retired Owner", 1),
+        _owner(20, "First Active Owner", 2),
+        _owner(30, "Second Active Owner", 3),
+    ]
+
+    selected = select_research_owners(
+        document,
+        "top-100",
+        2,
+        retired_owner_ids={10},
+    )
+
+    assert [owner["person_id"] for owner in selected] == [20, 30]
+
+
+def test_compiler_does_not_require_retired_owner_dossier() -> None:
+    document = new_document()
+    document["owners"] = [
+        _owner(10, "Retired Owner", 1),
+        _owner(20, "Canonical Owner", 2),
+    ]
+
+    derived, report = compile_research_batch(
+        document,
+        {20: _dossier(20, "Canonical Owner")},
+        {20: Path("dossiers/20.research.json")},
+        source_path="owners.json",
+        limit=1,
+        mark_ai_enriched=False,
+        retired_owner_ids={10},
+    )
+
+    assert [owner["person_id"] for owner in derived["owners"]] == [20]
+    assert derived["research_batch"]["retired_owner_ids_excluded"] == [10]
+    assert report["retired_owner_ids_excluded"] == [10]
 
 
 def test_compiler_parser_accepts_comparison_dossier_directory() -> None:

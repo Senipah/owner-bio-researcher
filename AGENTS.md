@@ -36,6 +36,10 @@ owner records, and applying reviewed JSON changes through the website.
 - `sync_owner_cohort_status.py`, `src/cohort_status.py`: dry-run-first
   synchronization of tracked research and verified live-update status in the
   canonical all-by-LOA cohort.
+- `config/owner-identity-resolutions.json`, `src/owner_identity.py`:
+  reviewed redirects from retired duplicate owner IDs to the canonical system
+  record; compilation excludes retired IDs and archived dossiers remain
+  outside the production dossier directory.
 - `.agents/skills/research-owner-biography/scripts/register_corpus_tag_candidates.py`,
   `activate_corpus_tag_manifest.py`, `backfill_corpus_tag_manifest.py`,
   `add_catalogue_tag.py`, `src/tags.py`: separate corpus-level taxonomy
@@ -79,6 +83,11 @@ owner records, and applying reviewed JSON changes through the website.
   through the dry-run-first cohort-status synchronizer; verified-update imports
   are monotonic unless an owner is explicitly marked not updated. Its summary
   is the sole progress authority; do not maintain a parallel progress marker.
+- A duplicate owner merged in the live system must be recorded in
+  `config/owner-identity-resolutions.json`, have its dossier moved to the
+  tracked duplicate archive, and be excluded by the cohort synchronizer and
+  research compiler. Never delete its research history or silently retarget
+  the dossier to the surviving person ID.
 - Set `review.status=complete` only after a terminal research decision passes
   strict validation. Compilation may set `workflow.ai_enriched=true` for
   complete or legacy-approved usable dossiers, and may import only values with

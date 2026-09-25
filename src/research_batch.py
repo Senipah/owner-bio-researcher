@@ -170,17 +170,25 @@ def select_research_owners(
     document: dict[str, Any],
     selection: str,
     limit: int | None,
+    *,
+    retired_owner_ids: set[int] | None = None,
 ) -> list[dict[str, Any]]:
     if selection == "top-100":
-        return select_current_top_100_owners(document, limit)
-    if selection == "largest-loa":
-        return select_largest_loa_owners(document, limit)
-    if selection == "all-by-loa":
-        return select_all_owners_by_loa(document, limit)
-    raise ValueError(
-        f"Unsupported research selection {selection!r}; "
-        f"expected one of {sorted(RESEARCH_SELECTIONS)}"
-    )
+        selected = select_current_top_100_owners(document, None)
+    elif selection == "largest-loa":
+        selected = select_largest_loa_owners(document, None)
+    elif selection == "all-by-loa":
+        selected = select_all_owners_by_loa(document, None)
+    else:
+        raise ValueError(
+            f"Unsupported research selection {selection!r}; "
+            f"expected one of {sorted(RESEARCH_SELECTIONS)}"
+        )
+    retired = set(retired_owner_ids or set())
+    selected = [
+        owner for owner in selected if owner.get("person_id") not in retired
+    ]
+    return selected if limit is None else selected[:limit]
 
 
 def load_dossiers(directory: Path) -> tuple[dict[int, dict[str, Any]], dict[int, Path]]:
@@ -660,11 +668,18 @@ def compile_research_batch(
     limit: int | None,
     mark_ai_enriched: bool,
     selection: str = "top-100",
+    retired_owner_ids: set[int] | None = None,
     generated_at: str | None = None,
     tag_catalogue: TagCatalogue | None = None,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
     timestamp = generated_at or datetime.now(UTC).isoformat()
-    selected = select_research_owners(source_document, selection, limit)
+    retired = set(retired_owner_ids or set())
+    selected = select_research_owners(
+        source_document,
+        selection,
+        limit,
+        retired_owner_ids=retired,
+    )
     if not selected:
         raise ValueError(
             f"No owners matched research selection {selection!r}"
@@ -744,6 +759,7 @@ def compile_research_batch(
             "complete" if mark_ai_enriched else "not_marked_ai_enriched"
         ),
         "owner_count": len(compiled_owners),
+        "retired_owner_ids_excluded": sorted(retired),
         "tag_catalogue": {
             "schema_version": catalogue.document.get("schema_version"),
             "source_path": catalogue.source_reference,
@@ -755,6 +771,7 @@ def compile_research_batch(
         "mark_ai_enriched": mark_ai_enriched,
         "selection": selection,
         "selection_description": RESEARCH_SELECTION_DESCRIPTIONS[selection],
+        "retired_owner_ids_excluded": sorted(retired),
         "tag_catalogue": {
             "schema_version": catalogue.document.get("schema_version"),
             "source_path": catalogue.source_reference,

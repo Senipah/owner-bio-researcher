@@ -40,6 +40,8 @@ def test_prepare_sync_adds_exact_status_and_summary() -> None:
     assert updated["workflow_summary"] == {
         "completed_prefix": 2,
         "researched_count": 2,
+        "terminal_dossier_count": 2,
+        "retired_duplicate_count": 0,
         "updated_in_system_count": 1,
         "remaining_research_count": 1,
         "next_unresearched_owner": {
@@ -140,6 +142,52 @@ def test_completed_cohort_has_no_next_owner() -> None:
     assert updated["workflow_summary"]["remaining_research_count"] == 0
     assert updated["workflow_summary"]["next_unresearched_owner"] is None
     assert report["next_unresearched_owner"] is None
+
+
+def test_retired_duplicate_counts_as_resolved_without_production_dossier() -> None:
+    updated, report = prepare_cohort_status_sync(
+        _cohort(),
+        researched_owner_ids={10, 30},
+        imported_updated_owner_ids=set(),
+        retired_owner_redirects={20: 10},
+    )
+
+    assert [
+        owner["workflow"]["researched"] for owner in updated["owners"]
+    ] == [True, True, True]
+    assert updated["workflow_summary"] == {
+        "completed_prefix": 3,
+        "researched_count": 3,
+        "terminal_dossier_count": 2,
+        "retired_duplicate_count": 1,
+        "updated_in_system_count": 0,
+        "remaining_research_count": 0,
+        "next_unresearched_owner": None,
+    }
+    assert report["retired_duplicate_count"] == 1
+
+
+def test_retired_duplicate_must_not_keep_production_dossier() -> None:
+    with pytest.raises(
+        ValueError,
+        match="must not retain production dossiers",
+    ):
+        prepare_cohort_status_sync(
+            _cohort(),
+            researched_owner_ids={10, 20},
+            imported_updated_owner_ids=set(),
+            retired_owner_redirects={20: 10},
+        )
+
+
+def test_retired_duplicate_target_must_exist_in_cohort() -> None:
+    with pytest.raises(ValueError, match="canonical duplicate targets"):
+        prepare_cohort_status_sync(
+            _cohort(),
+            researched_owner_ids={10},
+            imported_updated_owner_ids=set(),
+            retired_owner_redirects={20: 999},
+        )
 
 
 def test_load_status_sources(tmp_path: Path) -> None:

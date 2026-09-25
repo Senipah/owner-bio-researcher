@@ -67,7 +67,8 @@ values with confidence 70 or higher are imported.
 `output/owner-research/all-by-loa/cohort.json` is the tracked corpus status
 ledger. Its identity, order, vessel and LOA fields are immutable. Use
 `sync_owner_cohort_status.py` to derive `workflow.researched` from terminal
-production dossiers and to import only already-verified
+production dossiers plus reviewed retired-duplicate redirects in
+`config/owner-identity-resolutions.json`, and to import only already-verified
 `workflow.updated_in_system=true` states. The synchronizer is dry-run-first,
 preserves imported true update flags, and requires an explicit
 `--mark-not-updated` to clear one. Its optional `--audit` output is for a
@@ -76,6 +77,10 @@ cohort requires researched owners to form a contiguous prefix, and its root
 `workflow_summary` is the sole progress authority, including the completed
 prefix and next unresearched owner. Do not retain ignored progress markers,
 tranche summaries, or numbered cumulative compilations as parallel state.
+Retired duplicates must have no production dossier: preserve their original
+research under `output/owner-research/archived-duplicates`, point the registry
+directly to the surviving canonical ID, and let synchronization keep the old
+cohort position resolved without making it future research work.
 Schema-v8 tags follow the canonical
 [owner-tag governance policy](OWNER_TAG_GOVERNANCE.md). Production resolution
 exposes active assignments and canonical merge redirects only. Candidate,
@@ -174,6 +179,8 @@ AI review or a live system update occurred.
   reveal UBO data, but it must never locate or activate a save/submit control.
 - `compile_owner_research.py` must never overwrite its owner input and must not
   mark pending, rejected, or unusable dossiers AI-enriched.
+- `compile_owner_research.py` must exclude reviewed retired duplicate IDs
+  before applying a selection limit or checking for missing dossiers.
 - `update_owners.py` remains dry-run unless `--apply` is present.
 - `update_owners.py` must load the biography ignore list before authentication
   and must never plan or verify writes to `biography` or `long_biography` for

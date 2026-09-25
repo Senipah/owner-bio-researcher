@@ -309,12 +309,17 @@ ledger. Each of its 4,197 ranked entries has a smaller `workflow` object:
 ```
 
 `researched` is derived from terminal (`complete` or legacy `approved`)
-production dossiers. `updated_in_system` is imported only from owner documents
-whose live save was already re-exported and verified. Cohort identity, order,
-vessel and LOA fields remain immutable; only these status booleans and the
-top-level `workflow_summary` are synchronized. The summary records the
-contiguous `completed_prefix` and the exact `next_unresearched_owner`; no
-separate all-by-LOA progress marker is used.
+production dossiers plus reviewed retired-duplicate resolutions in
+`config\owner-identity-resolutions.json`. A retired duplicate's full dossier
+is retained under `output\owner-research\archived-duplicates`, while its
+canonical redirect prevents the old ID from becoming missing research.
+`updated_in_system` is imported only from owner documents whose live save was
+already re-exported and verified. Cohort identity, order, vessel and LOA fields
+remain immutable; only these status booleans and the top-level
+`workflow_summary` are synchronized. The summary records terminal dossier and
+retired-duplicate counts alongside the contiguous `completed_prefix` and the
+exact `next_unresearched_owner`; no separate all-by-LOA progress marker is
+used.
 
 Preview a synchronization before writing it:
 
@@ -546,7 +551,10 @@ This mode uses `vessel_ownership.loa_rank` and
 `vessel_ownership.largest_current_loa_m`, takes exactly the first 50 owners,
 and excludes owners whose vessel scan is missing or `incomplete`. Its default
 outputs include `.largest-loa.first-50` in their filenames. Dossiers must
-exist for every selected owner before compilation succeeds.
+exist for every selected owner before compilation succeeds. Reviewed retired
+duplicates from `config\owner-identity-resolutions.json` are removed from the
+selection before `--limit` is applied and are therefore never reported as
+missing dossiers.
 
 For a resumable Goal Mode research run over the complete owner file, paste the
 prompt in

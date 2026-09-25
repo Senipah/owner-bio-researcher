@@ -115,6 +115,7 @@ def prepare_cohort_status_sync(
     *,
     researched_owner_ids: set[int],
     imported_updated_owner_ids: set[int],
+    retired_owner_redirects: dict[int, int] | None = None,
     mark_updated_owner_ids: set[int] | None = None,
     mark_not_updated_owner_ids: set[int] | None = None,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
@@ -123,6 +124,15 @@ def prepare_cohort_status_sync(
     cohort_ids = set(owners_by_id)
     mark_updated = set(mark_updated_owner_ids or set())
     mark_not_updated = set(mark_not_updated_owner_ids or set())
+    retired_redirects = dict(retired_owner_redirects or {})
+    retired_owner_ids = set(retired_redirects)
+    canonical_owner_ids = set(retired_redirects.values())
+    production_overlap = researched_owner_ids & retired_owner_ids
+    if production_overlap:
+        raise ValueError(
+            "retired duplicate owners must not retain production dossiers: "
+            + ", ".join(map(str, sorted(production_overlap)))
+        )
     overlap = mark_updated & mark_not_updated
     if overlap:
         raise ValueError(
@@ -131,6 +141,8 @@ def prepare_cohort_status_sync(
         )
     for label, owner_ids in (
         ("researched dossiers", researched_owner_ids),
+        ("retired duplicate owners", retired_owner_ids),
+        ("canonical duplicate targets", canonical_owner_ids),
         ("imported updated owners", imported_updated_owner_ids),
         ("explicit updated owners", mark_updated),
         ("explicit not-updated owners", mark_not_updated),
@@ -142,11 +154,13 @@ def prepare_cohort_status_sync(
                 + ", ".join(map(str, sorted(missing)))
             )
 
+    resolved_owner_ids = researched_owner_ids | retired_owner_ids
+
     changed_ids: list[int] = []
     for person_id, owner in owners_by_id.items():
         before = deepcopy(owner.get("workflow"))
         workflow = ensure_cohort_owner_workflow(owner)
-        workflow["researched"] = person_id in researched_owner_ids
+        workflow["researched"] = person_id in resolved_owner_ids
         workflow["updated_in_system"] = (
             workflow["updated_in_system"]
             or person_id in imported_updated_owner_ids
@@ -221,6 +235,8 @@ def prepare_cohort_status_sync(
     workflow_summary = {
         "completed_prefix": completed_prefix,
         "researched_count": researched_count,
+        "terminal_dossier_count": len(researched_owner_ids),
+        "retired_duplicate_count": len(retired_owner_ids),
         "updated_in_system_count": updated_count,
         "remaining_research_count": len(updated["owners"]) - researched_count,
         "next_unresearched_owner": next_unresearched_owner,
@@ -231,6 +247,8 @@ def prepare_cohort_status_sync(
     return updated, {
         "cohort_size": len(updated["owners"]),
         "researched_count": researched_count,
+        "terminal_dossier_count": len(researched_owner_ids),
+        "retired_duplicate_count": len(retired_owner_ids),
         "updated_in_system_count": updated_count,
         "remaining_research_count": len(updated["owners"]) - researched_count,
         "completed_prefix": completed_prefix,
