@@ -8,6 +8,13 @@ from pathlib import Path
 from typing import Any
 
 
+REPO_ROOT = Path(__file__).resolve().parents[4]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from src.detail_selects import copy_relevant_detail_select_option_lookups
+
+
 DEFAULT_PRIORITY_SOCIALS = ("Instagram", "LinkedIn", "Personal Website")
 PERSON_RELEVANT_SOCIALS = {
     "Facebook",
@@ -126,6 +133,10 @@ def build_inventory(
     details = owner.get("details")
     if not isinstance(details, dict):
         raise ValueError("matched owner has no details object")
+    detail_select_option_lookups = copy_relevant_detail_select_option_lookups(
+        document,
+        details,
+    )
 
     mortality = str(_detail_value(owner, "mortality_status") or "").casefold()
     blank_details: list[dict[str, Any]] = []
@@ -203,6 +214,7 @@ def build_inventory(
         ],
         "missing_supported_social_types": missing_supported,
         "social_type_lookup": lookup,
+        "detail_select_option_lookups": detail_select_option_lookups,
     }
 
 

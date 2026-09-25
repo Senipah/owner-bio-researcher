@@ -1067,6 +1067,33 @@ def test_validator_accepts_institution_biographies_and_note(
     assert result.returncode == 0, result.stderr
 
 
+def test_validator_rejects_non_system_select_label(tmp_path: Path) -> None:
+    dossier = deepcopy(_calibration())
+    for field in ("raw_blank_details", "researchable_missing_details"):
+        dossier["input_snapshot"][field].append("nationality")
+    dossier["input_snapshot"]["detail_select_option_lookups"] = {
+        "nationality": {"29": "Canadian"}
+    }
+    dossier["proposed_details"].append(
+        {
+            "action": "fill_missing",
+            "field": "nationality",
+            "value": "Canada",
+            "confidence": {
+                "score": 95,
+                "band": "very_high",
+                "reason": "Official evidence establishes citizenship.",
+            },
+            "source_ids": ["S1"],
+        }
+    )
+
+    result = _validate(tmp_path, dossier)
+
+    assert result.returncode == 1
+    assert "not a valid system option" in result.stderr
+
+
 def test_validator_allows_sole_government_owned_tag_for_unresolved_public_label(
     tmp_path: Path,
 ) -> None:

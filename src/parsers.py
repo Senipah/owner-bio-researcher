@@ -168,6 +168,13 @@ def parse_details_form(html: str) -> dict[str, dict[str, Any]]:
 
         label = _field_label(soup, element, key)
         if element.name == "select":
+            options = [
+                {
+                    "value": str(option.get("value", "")),
+                    "label": option.get_text(" ", strip=True),
+                }
+                for option in element.find_all("option")
+            ]
             selected = element.find("option", selected=True)
             if selected is None:
                 selected = element.find("option", value="")
@@ -179,6 +186,7 @@ def parse_details_form(html: str) -> dict[str, dict[str, Any]]:
                 "value": option_label if option_id else "",
                 "option_id": option_id,
                 "option_label": option_label,
+                "options": options,
             }
         elif element.name == "textarea":
             element_id = element.get("id", "")

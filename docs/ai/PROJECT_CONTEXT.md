@@ -45,6 +45,10 @@ Owner files use `schema_version: 1`. The top-level object contains:
 - `exported_at`: UTC timestamp.
 - `source`: report URL, pagination/count metadata, and warnings.
 - `lookups.social_media_types`: social type ID-to-label mapping.
+- `lookups.detail_select_options`: system-derived option ID-to-label mappings
+  for editable select fields. New enrichments capture the complete form
+  vocabularies once at document level; legacy documents can recover observed
+  mappings from selected values until refreshed.
 - `owners`: owner records keyed operationally by integer `person_id`.
 
 Important owner fields:

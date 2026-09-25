@@ -268,8 +268,11 @@ Edit only:
 
 Do not edit `person_id`, `profile_url`, `profile_key`, or `_baseline`.
 
-For selects, change the human-readable `value`. The updater selects by visible
-text and uses `option_id` only as a fallback. For a new social profile, provide
+For selects, change the human-readable `value` to an exact label from
+`lookups.detail_select_options`. Research validation rejects labels outside
+that system-derived lookup, and compilation writes the matching `option_id`.
+The updater selects by visible text and uses `option_id` only after verifying
+that the live option still has the same label. For a new social profile, provide
 `type_id`, `type`, and `url`; `profile_key` may be omitted. Retain the existing
 `profile_key` when changing an exported social URL so the updater can recognize
 it as a replacement.

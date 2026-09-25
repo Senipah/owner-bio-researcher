@@ -17,7 +17,7 @@ Use this file as Custom GPT Knowledge. Behaviour, workflow order, manual-mode ru
 | Section | Canonical source | SHA-256 |
 | --- | --- | --- |
 | Owner tag governance | `../../../docs/ai/OWNER_TAG_GOVERNANCE.md` | `9b03cd882db56eac9cb29899d684acfa04e5ce3be50c62cc66f8861134a11f2a` |
-| Research and dossier contract | `references/research-contract.md` | `d29875c1251b118f5a79d93d86bce9601307ef1f634ece47007aabfa5732f920` |
+| Research and dossier contract | `references/research-contract.md` | `83cb5a703176772dd1da4eb8e3126c8e279d4b5835339d7228c1848b6d25c5a0` |
 | Wealth classification | `references/wealth-classification.md` | `e95ce67d9f5f239e2015b3d283a174917075aed8052ced7579a0276970f0f1f5` |
 | Biography style | `references/biography-style.md` | `0735c58c4d0c75a0a74d7a1bf95afb7f40eafd9e0b103fed3d0304079474caf8` |
 | Editorial calibrations | `references/editorial-calibrations.md` | `b705d5ebe33444a8abfecbc7bb0100478dc88c5a848b8fb4121473853a7dc9dd` |
@@ -797,13 +797,17 @@ Common proposal fields include:
 Propose only fields that are missing or demonstrably wrong in the supplied
 record. Do not propose calculated age fields. Preserve the site's visible
 select labels and existing field structure when later integration is approved.
+For every select proposal, copy an exact label from
+`input_snapshot.detail_select_option_lookups`. Nationality controls use
+nationality labels such as `Canadian`, while country controls use country names
+such as `Canada`; the values are not interchangeable.
 
 ## Input gap inventory
 
 Run `scripts/inventory_owner.py` against the exact source record before
 research. Preserve its `source_path`, raw blanks, researchable blanks, existing
-social types, missing priority social types, and social lookup in
-`input_snapshot`.
+social types, missing priority social types, social lookup, and system-derived
+detail-select option lookups in `input_snapshot`.
 
 Pass that same source document to `scripts/validate_dossier.py --owner-input`
 so the validator can reject stale or invented snapshots.
@@ -953,6 +957,16 @@ Use this top-level structure:
       "9": "Instagram",
       "14": "Company Website",
       "15": "Personal Website"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "29": "Canadian",
+        "41": "Dutch"
+      },
+      "birth_country": {
+        "35": "Canada",
+        "157": "Netherlands"
+      }
     }
   },
   "research_status": "complete",

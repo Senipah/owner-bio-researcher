@@ -53,6 +53,12 @@ def test_details_fixture_includes_every_field_and_blanks() -> None:
     assert details["secondary_nationality"]["option_id"] == ""
     assert details["nationality"]["value"] == "Australian"
     assert details["nationality"]["option_id"] == "8"
+    assert {"value": "29", "label": "Canadian"} in details[
+        "nationality"
+    ]["options"]
+    assert {"value": "41", "label": "Dutch"} in details[
+        "nationality"
+    ]["options"]
     assert details["unknown_name"]["kind"] == "radio"
     assert details["unknown_name"]["value"] == ""
     assert details["unknown_name"]["options"] == [

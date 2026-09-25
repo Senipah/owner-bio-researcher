@@ -6,7 +6,8 @@ from selenium.common.exceptions import (
     StaleElementReferenceException,
 )
 
-from src.browser_update import OwnerBrowserUpdater
+from src import browser_update
+from src.browser_update import BrowserUpdateError, OwnerBrowserUpdater
 
 
 class _FakeElement:
@@ -64,6 +65,64 @@ def test_ckeditor_html_entities_are_accepted_as_equivalent() -> None:
         "biography",
         {"kind": "rich_text_html", "value": "<p>Jørn Updated</p>"},
     )
+
+
+class _SelectOption:
+    def __init__(self, value: str, text: str) -> None:
+        self.value = value
+        self.text = text
+
+    def get_attribute(self, name: str) -> str | None:
+        return self.value if name == "value" else None
+
+
+class _FallbackSelect:
+    def __init__(self, options: list[_SelectOption]) -> None:
+        self.options = options
+        self.selected_value: str | None = None
+
+    def select_by_visible_text(self, _value: str) -> None:
+        raise NoSuchElementException()
+
+    def select_by_value(self, value: str) -> None:
+        self.selected_value = value
+
+
+def test_select_fallback_rejects_stale_option_id(monkeypatch) -> None:
+    driver = _FakeDriver()
+    selector = _FallbackSelect([_SelectOption("", "Select")])
+    monkeypatch.setattr(browser_update, "Select", lambda _element: selector)
+    updater = OwnerBrowserUpdater(driver)
+
+    with pytest.raises(BrowserUpdateError, match="maps to 'Select'"):
+        updater._set_detail_field(
+            "nationality",
+            {
+                "kind": "select",
+                "value": "Canada",
+                "option_id": "",
+            },
+        )
+
+    assert selector.selected_value is None
+
+
+def test_select_fallback_accepts_matching_option_id(monkeypatch) -> None:
+    driver = _FakeDriver()
+    selector = _FallbackSelect([_SelectOption("29", "Canadian")])
+    monkeypatch.setattr(browser_update, "Select", lambda _element: selector)
+    updater = OwnerBrowserUpdater(driver)
+
+    updater._set_detail_field(
+        "nationality",
+        {
+            "kind": "select",
+            "value": "Canadian",
+            "option_id": "29",
+        },
+    )
+
+    assert selector.selected_value == "29"
 
 
 class _ElementState:

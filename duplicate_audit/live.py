@@ -9,6 +9,7 @@ import requests
 
 from src.auth import authenticated_context, fetch_html
 from src.constants import OWNER_REPORT_URL
+from src.detail_selects import merge_document_detail_select_options
 from src.enrichment import enrich_owner
 from src.io_utils import atomic_write_json, new_document, new_owner, utc_now
 from src.parsers import parse_owner_list
@@ -136,10 +137,14 @@ def enrich_owner_ids(
             f"{person_id} {name}".rstrip()
         )
         try:
-            type_lookup = enrich_owner(session, owner)
+            type_lookup, detail_select_options = enrich_owner(session, owner)
             document.setdefault("lookups", {}).setdefault(
                 "social_media_types", {}
             ).update(type_lookup)
+            merge_document_detail_select_options(
+                document,
+                detail_select_options,
+            )
         except Exception as exc:
             owner["enrichment"] = {
                 "status": "error",

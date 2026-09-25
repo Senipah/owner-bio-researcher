@@ -24,6 +24,11 @@ if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
 from src.constants import IDENTITY_CONFIDENCE_THRESHOLD
+from src.detail_selects import (
+    DETAIL_SELECT_OPTIONS_LOOKUP,
+    merge_detail_select_option_lookups,
+    resolve_detail_select_option_id,
+)
 from src.tags import (
     ASSIGNABLE_TAG_STATUSES,
     DEFAULT_TAG_CATALOGUE_PATH,
@@ -421,6 +426,7 @@ def validate(
     raw_blank: set[str] = set()
     existing_social_types: set[str] = set()
     social_lookup: dict[str, str] = {}
+    detail_select_option_lookups: dict[str, dict[str, str]] = {}
     if not isinstance(snapshot, dict):
         errors.append("input_snapshot must be an object")
     else:
@@ -456,6 +462,20 @@ def validate(
             errors.append("input_snapshot.social_type_lookup must map IDs to labels")
         else:
             social_lookup = lookup
+        raw_detail_select_options = snapshot.get(
+            "detail_select_option_lookups"
+        )
+        if raw_detail_select_options is not None:
+            try:
+                merge_detail_select_option_lookups(
+                    detail_select_option_lookups,
+                    raw_detail_select_options,
+                )
+            except ValueError as exc:
+                errors.append(
+                    "input_snapshot.detail_select_option_lookups is invalid: "
+                    f"{exc}"
+                )
         if not researchable_missing <= raw_blank:
             errors.append(
                 "input_snapshot.researchable_missing_details must be raw blanks"
@@ -944,6 +964,15 @@ def validate(
                     )
                 if "value" not in item:
                     errors.append(f"{path}.value is required")
+                elif item.get("field") in detail_select_option_lookups:
+                    try:
+                        resolve_detail_select_option_id(
+                            detail_select_option_lookups,
+                            item["field"],
+                            item.get("value"),
+                        )
+                    except ValueError as exc:
+                        errors.append(f"{path}.value is invalid: {exc}")
                 action = item.get("action")
                 if action not in {"fill_missing", "correct_existing"}:
                     errors.append(
@@ -1287,6 +1316,16 @@ def validate_owner_document(
         ],
         "social_type_lookup": actual["social_type_lookup"],
     }
+    owner_lookups = owner_document.get("lookups")
+    stored_select_options = (
+        owner_lookups.get(DETAIL_SELECT_OPTIONS_LOOKUP)
+        if isinstance(owner_lookups, dict)
+        else None
+    )
+    if stored_select_options or "detail_select_option_lookups" in snapshot:
+        expected["detail_select_option_lookups"] = actual[
+            "detail_select_option_lookups"
+        ]
     for key, actual_value in expected.items():
         if snapshot.get(key) != actual_value:
             errors.append(f"input_snapshot.{key} does not match --owner-input")
@@ -1330,10 +1369,21 @@ def validate_owner_document(
     for index, proposal in enumerate(document.get("proposed_details", [])):
         if not isinstance(proposal, dict):
             continue
-        if proposal.get("action") != "correct_existing":
-            continue
         field = proposal.get("field")
         detail = source_owner.get("details", {}).get(field)
+        if isinstance(detail, dict) and detail.get("kind") == "select":
+            try:
+                resolve_detail_select_option_id(
+                    actual["detail_select_option_lookups"],
+                    field,
+                    proposal.get("value"),
+                )
+            except ValueError as exc:
+                errors.append(
+                    f"proposed_details[{index}].value is invalid: {exc}"
+                )
+        if proposal.get("action") != "correct_existing":
+            continue
         current_value = detail.get("value") if isinstance(detail, dict) else detail
         if proposal.get("existing_value") != current_value:
             errors.append(

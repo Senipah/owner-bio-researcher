@@ -71,7 +71,10 @@ statistics.
 
    Record its immutable identifiers, every raw blank, the smaller set of
    researchable gaps, existing links, missing priority link types, and yacht
-   relationships. A raw blank is not automatically a useful research target.
+   relationships. For every proposed select field, use an exact visible label
+   from `detail_select_option_lookups`; country names and nationality labels
+   are distinct vocabularies. A raw blank is not automatically a useful
+   research target.
 2. Resolve identity before enrichment. Require strong agreement among name,
    occupation/company, geography, family, and yacht context. Require identity
    confidence of at least 75 for a resolved owner. Use `identity_conflict`
@@ -474,6 +477,9 @@ suppression without calling the tag publishable or approved.
   management succession alone remains insufficient, and `inherited` or
   `inherited_and_expanded` requires evidence of inheritance.
 - Confirm proposed facts and socials score at least 70.
+- Confirm every proposed select value is an exact label in the supplied
+  `input_snapshot.detail_select_option_lookups`; never substitute a country
+  name for a nationality label.
 - Confirm the short biography is one paragraph and 50-55 words.
 - Confirm the short biography uses every useful, strongly sourced identity
   signal that fits naturally—background, work, base, broad wealth stature,

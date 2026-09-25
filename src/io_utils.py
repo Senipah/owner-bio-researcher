@@ -100,7 +100,10 @@ def new_document() -> dict[str, Any]:
         "schema_version": SCHEMA_VERSION,
         "exported_at": utc_now(),
         "source": {},
-        "lookups": {"social_media_types": {}},
+        "lookups": {
+            "social_media_types": {},
+            "detail_select_options": {},
+        },
         "owners": [],
     }
 

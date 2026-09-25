@@ -6,6 +6,7 @@ from copy import deepcopy
 from pathlib import Path
 
 from src.auth import authenticated_context
+from src.detail_selects import merge_document_detail_select_options
 from src.enrichment import enrich_owner
 from src.io_utils import (
     atomic_write_json,
@@ -114,10 +115,17 @@ def main() -> int:
                 )
                 print(f"[{index}/{total}] Enriching {person_id} {name}".rstrip())
                 try:
-                    type_lookup = enrich_owner(context.session, owner)
+                    type_lookup, detail_select_options = enrich_owner(
+                        context.session,
+                        owner,
+                    )
                     document.setdefault("lookups", {}).setdefault(
                         "social_media_types", {}
                     ).update(type_lookup)
+                    merge_document_detail_select_options(
+                        document,
+                        detail_select_options,
+                    )
                 except Exception as exc:
                     errors += 1
                     owner["enrichment"] = {

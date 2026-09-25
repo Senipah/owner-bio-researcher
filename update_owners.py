@@ -10,6 +10,10 @@ from typing import Any
 from src.auth import authenticated_context
 from src.browser_update import OwnerBrowserUpdater
 from src.constants import BIOGRAPHY_DETAIL_FIELDS
+from src.detail_selects import (
+    extract_detail_select_option_lookups,
+    merge_document_detail_select_options,
+)
 from src.diffing import build_owner_change_plan
 from src.enrichment import (
     fetch_owner_details,
@@ -278,6 +282,12 @@ def main() -> int:
                     if not plan["has_changes"]:
                         record["status"] = "no_changes"
                         if args.apply:
+                            merge_document_detail_select_options(
+                                refreshed_document,
+                                extract_detail_select_option_lookups(
+                                    live_details
+                                ),
+                            )
                             refreshed_by_id[person_id].clear()
                             refreshed_by_id[person_id].update(
                                 refreshed_owner(
@@ -343,6 +353,10 @@ def main() -> int:
                             "Saved values did not match the requested update"
                         )
                     record["status"] = "applied_and_verified"
+                    merge_document_detail_select_options(
+                        refreshed_document,
+                        extract_detail_select_option_lookups(after_details),
+                    )
                     refreshed_by_id[person_id].clear()
                     refreshed = refreshed_owner(
                         owner,

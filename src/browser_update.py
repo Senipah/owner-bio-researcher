@@ -121,10 +121,32 @@ class OwnerBrowserUpdater:
             else:
                 try:
                     selector.select_by_visible_text(str(value))
-                except Exception:
+                except NoSuchElementException as exc:
                     option_id = desired_field.get("option_id")
                     if option_id is None:
-                        raise
+                        raise BrowserUpdateError(
+                            f"Select option {value!r} was not found for {name}"
+                        ) from exc
+                    fallback = next(
+                        (
+                            option
+                            for option in selector.options
+                            if str(option.get_attribute("value"))
+                            == str(option_id)
+                        ),
+                        None,
+                    )
+                    if fallback is None:
+                        raise BrowserUpdateError(
+                            f"Select option {value!r} and fallback ID "
+                            f"{option_id!r} were not found for {name}"
+                        ) from exc
+                    fallback_label = str(fallback.text).strip()
+                    if fallback_label != str(value).strip():
+                        raise BrowserUpdateError(
+                            f"Select fallback ID {option_id!r} maps to "
+                            f"{fallback_label!r}, not {value!r}, for {name}"
+                        ) from exc
                     selector.select_by_value(str(option_id))
             self._dispatch_change(element)
             return

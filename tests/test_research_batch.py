@@ -928,6 +928,88 @@ def test_import_confidence_threshold_is_70() -> None:
         )
 
 
+def test_compiler_maps_valid_system_select_label_to_option_id() -> None:
+    document = new_document()
+    document["lookups"]["detail_select_options"] = {
+        "nationality": {"29": "Canadian"}
+    }
+    owner = _owner(10, "First Owner", 1)
+    owner["details"]["nationality"] = {
+        "label": "Nationality",
+        "kind": "select",
+        "value": "",
+        "option_id": "",
+        "option_label": "Select",
+    }
+    owner["_baseline"]["details"]["nationality"] = deepcopy(
+        owner["details"]["nationality"]
+    )
+    document["owners"] = [owner]
+    dossier = _dossier(10, "First Owner")
+    dossier["proposed_details"].append(
+        {
+            "action": "fill_missing",
+            "field": "nationality",
+            "value": "Canadian",
+            "confidence": {"score": 95},
+            "source_ids": ["S1"],
+        }
+    )
+
+    derived, _ = compile_research_batch(
+        document,
+        {10: dossier},
+        {10: Path("output/10.research.json")},
+        source_path="output/source.json",
+        limit=1,
+        mark_ai_enriched=True,
+    )
+
+    nationality = derived["owners"][0]["details"]["nationality"]
+    assert nationality["value"] == "Canadian"
+    assert nationality["option_id"] == "29"
+    assert nationality["option_label"] == "Canadian"
+
+
+def test_compiler_rejects_country_label_for_nationality_select() -> None:
+    document = new_document()
+    document["lookups"]["detail_select_options"] = {
+        "nationality": {"29": "Canadian"}
+    }
+    owner = _owner(10, "First Owner", 1)
+    owner["details"]["nationality"] = {
+        "label": "Nationality",
+        "kind": "select",
+        "value": "",
+        "option_id": "",
+        "option_label": "Select",
+    }
+    owner["_baseline"]["details"]["nationality"] = deepcopy(
+        owner["details"]["nationality"]
+    )
+    document["owners"] = [owner]
+    dossier = _dossier(10, "First Owner")
+    dossier["proposed_details"].append(
+        {
+            "action": "fill_missing",
+            "field": "nationality",
+            "value": "Canada",
+            "confidence": {"score": 95},
+            "source_ids": ["S1"],
+        }
+    )
+
+    with pytest.raises(ValueError, match="not a valid system option"):
+        compile_research_batch(
+            document,
+            {10: dossier},
+            {10: Path("output/10.research.json")},
+            source_path="output/source.json",
+            limit=1,
+            mark_ai_enriched=True,
+        )
+
+
 def test_rejected_dossier_keeps_owner_unchanged() -> None:
     document = new_document()
     source_owner = _owner(10, "First Owner", 1)

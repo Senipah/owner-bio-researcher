@@ -345,13 +345,17 @@ Common proposal fields include:
 Propose only fields that are missing or demonstrably wrong in the supplied
 record. Do not propose calculated age fields. Preserve the site's visible
 select labels and existing field structure when later integration is approved.
+For every select proposal, copy an exact label from
+`input_snapshot.detail_select_option_lookups`. Nationality controls use
+nationality labels such as `Canadian`, while country controls use country names
+such as `Canada`; the values are not interchangeable.
 
 ## Input gap inventory
 
 Run `scripts/inventory_owner.py` against the exact source record before
 research. Preserve its `source_path`, raw blanks, researchable blanks, existing
-social types, missing priority social types, and social lookup in
-`input_snapshot`.
+social types, missing priority social types, social lookup, and system-derived
+detail-select option lookups in `input_snapshot`.
 
 Pass that same source document to `scripts/validate_dossier.py --owner-input`
 so the validator can reject stale or invented snapshots.
@@ -501,6 +505,16 @@ Use this top-level structure:
       "9": "Instagram",
       "14": "Company Website",
       "15": "Personal Website"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "29": "Canadian",
+        "41": "Dutch"
+      },
+      "birth_country": {
+        "35": "Canada",
+        "157": "Netherlands"
+      }
     }
   },
   "research_status": "complete",

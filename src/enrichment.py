@@ -7,6 +7,10 @@ import requests
 
 from .auth import fetch_html
 from .constants import OWNER_DETAILS_EDIT_URL, OWNER_SOCIAL_EDIT_URL
+from .detail_selects import (
+    extract_detail_select_option_lookups,
+    strip_detail_select_options,
+)
 from .io_utils import set_baseline, utc_now
 from .parsers import parse_details_form, parse_social_form
 from .workflow import mark_owner_details_enriched
@@ -46,10 +50,12 @@ def fetch_owner_enrichment(
 def enrich_owner(
     session: requests.Session,
     owner: dict[str, Any],
-) -> dict[str, str]:
+) -> tuple[dict[str, str], dict[str, dict[str, str]]]:
     details, socials, type_lookup = fetch_owner_enrichment(
         session, int(owner["person_id"])
     )
+    detail_select_options = extract_detail_select_option_lookups(details)
+    strip_detail_select_options(details)
     owner["details"] = details
     owner["social_media_profiles"] = socials
     set_baseline(owner)
@@ -59,7 +65,7 @@ def enrich_owner(
         "error": None,
     }
     mark_owner_details_enriched(owner)
-    return type_lookup
+    return type_lookup, detail_select_options
 
 
 def refreshed_owner(
@@ -69,7 +75,9 @@ def refreshed_owner(
     socials: list[dict[str, str]],
 ) -> dict[str, Any]:
     result = deepcopy(original)
-    result["details"] = deepcopy(details)
+    persisted_details = deepcopy(details)
+    strip_detail_select_options(persisted_details)
+    result["details"] = persisted_details
     result["social_media_profiles"] = deepcopy(socials)
     set_baseline(result)
     result["enrichment"] = {

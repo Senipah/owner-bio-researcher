@@ -7,6 +7,10 @@ from pathlib import Path
 from typing import Any
 
 from .constants import IDENTITY_CONFIDENCE_THRESHOLD
+from .detail_selects import (
+    build_detail_select_option_lookups,
+    resolve_detail_select_option_id,
+)
 from .tags import (
     TagCatalogue,
     TagResolutionError,
@@ -327,6 +331,7 @@ def apply_dossier(
     mark_ai_enriched: bool,
     generated_at: str,
     resolved_tags: list[dict[str, Any]],
+    detail_select_option_lookups: dict[str, dict[str, str]],
 ) -> dict[str, Any]:
     person_id = owner["person_id"]
     if dossier.get("owner", {}).get("person_id") != person_id:
@@ -545,6 +550,19 @@ def apply_dossier(
                 "the correction baseline"
             )
         after = proposal.get("value")
+        if detail.get("kind") == "select":
+            try:
+                option_id = resolve_detail_select_option_id(
+                    detail_select_option_lookups,
+                    field,
+                    after,
+                )
+            except ValueError as exc:
+                raise ValueError(
+                    f"Owner {person_id} proposal {index}: {exc}"
+                ) from exc
+            detail["option_id"] = option_id
+            detail["option_label"] = after
         detail["value"] = after
         changes.append(
             {
@@ -673,6 +691,9 @@ def compile_research_batch(
             )
 
     catalogue = tag_catalogue or load_tag_catalogue()
+    detail_select_option_lookups = build_detail_select_option_lookups(
+        source_document
+    )
     resolved_tags_by_owner: dict[int, list[dict[str, Any]]] = {}
     resolution_issues: list[str] = []
     for source_owner in selected:
@@ -702,6 +723,7 @@ def compile_research_batch(
             mark_ai_enriched=mark_ai_enriched,
             generated_at=timestamp,
             resolved_tags=resolved_tags_by_owner[person_id],
+            detail_select_option_lookups=detail_select_option_lookups,
         )
         compiled_owners.append(owner)
         summaries.append(summary)
