@@ -1,0 +1,1203 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 451,
+    "display_name": "Vikram Chatwal",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Exact name, American nationality, Ethiopia birth and compatible 1971 birth year align with the Lotus ownership bridge and established hotelier identity."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "owner": {
+      "person_id": 451,
+      "display_name": "Vikram Chatwal",
+      "profile_url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=451",
+      "top_100": {
+        "current_owner": false,
+        "historical_owner": false,
+        "relationships": []
+      }
+    },
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "biography_present": false,
+    "existing_socials": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "missing_person_relevant_social_types": [
+      {
+        "type_id": "2",
+        "type": "Facebook"
+      },
+      {
+        "type_id": "3",
+        "type": "Twitter"
+      },
+      {
+        "type_id": "4",
+        "type": "Youtube"
+      },
+      {
+        "type_id": "5",
+        "type": "LinkedIn"
+      },
+      {
+        "type_id": "9",
+        "type": "Instagram"
+      },
+      {
+        "type_id": "15",
+        "type": "Personal Website"
+      },
+      {
+        "type_id": "16",
+        "type": "TikTok"
+      }
+    ],
+    "missing_supported_social_types": [
+      {
+        "type_id": "2",
+        "type": "Facebook"
+      },
+      {
+        "type_id": "3",
+        "type": "Twitter"
+      },
+      {
+        "type_id": "4",
+        "type": "Youtube"
+      },
+      {
+        "type_id": "5",
+        "type": "LinkedIn"
+      },
+      {
+        "type_id": "6",
+        "type": "Trip Advisor"
+      },
+      {
+        "type_id": "7",
+        "type": "Vimeo"
+      },
+      {
+        "type_id": "8",
+        "type": "Flickr"
+      },
+      {
+        "type_id": "9",
+        "type": "Instagram"
+      },
+      {
+        "type_id": "10",
+        "type": "Wikipedia"
+      },
+      {
+        "type_id": "11",
+        "type": "Forbes"
+      },
+      {
+        "type_id": "12",
+        "type": "Zillow"
+      },
+      {
+        "type_id": "14",
+        "type": "Company Website"
+      },
+      {
+        "type_id": "15",
+        "type": "Personal Website"
+      },
+      {
+        "type_id": "16",
+        "type": "TikTok"
+      }
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "116": "Russian",
+        "4": "American",
+        "118": "Saudi Arabian",
+        "43": "Egyptian",
+        "52": "French",
+        "145": "Ukrainian",
+        "143": "Turkish",
+        "32": "Chinese",
+        "114": "Qatari",
+        "102": "Nigerian",
+        "133": "Swedish",
+        "65": "Indonesian",
+        "29": "Canadian",
+        "36": "Croatian",
+        "57": "Greek",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "22": "British",
+        "8": "Australian",
+        "92": "Mexican",
+        "100": "New Zealander",
+        "75": "Kazakhstanian",
+        "134": "Swiss",
+        "128": "Spanish",
+        "69": "Israeli",
+        "62": "Hungarian",
+        "122": "Singaporean",
+        "89": "Malaysian",
+        "70": "Italian",
+        "105": "Pakistani",
+        "55": "German",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "68": "Irish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "81": "Lebanese",
+        "25": "Bulgarian",
+        "9": "Austrian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "111": "Polish",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "16": "Belgian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "41": "Dutch",
+        "7": "Armenian",
+        "38": "Cypriot",
+        "135": "Syrian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "85": "Luxembourgish",
+        "120": "Serbian",
+        "3": "Algerian",
+        "107": "Panamamian",
+        "11": "Bahamanian",
+        "37": "Cuban",
+        "112": "Portuguese",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "113": "Puerto Rican",
+        "1": "Afghan",
+        "90": "Maltese",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "126": "South African",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "142": "Tunisian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "2": "Albanian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "66": "Iranian",
+        "15": "Belarussian",
+        "147": "Uzbekistanian",
+        "146": "Uruguayan",
+        "58": "Grenadian"
+      },
+      "secondary_nationality": {
+        "112": "Portuguese",
+        "147": "Uzbekistanian",
+        "75": "Kazakhstanian",
+        "135": "Syrian",
+        "55": "German",
+        "69": "Israeli",
+        "4": "American",
+        "22": "British",
+        "66": "Iranian",
+        "145": "Ukrainian",
+        "120": "Serbian",
+        "29": "Canadian",
+        "38": "Cypriot",
+        "52": "French",
+        "126": "South African",
+        "122": "Singaporean",
+        "128": "Spanish",
+        "90": "Maltese",
+        "134": "Swiss",
+        "8": "Australian",
+        "100": "New Zealander",
+        "11": "Bahamanian",
+        "113": "Puerto Rican",
+        "118": "Saudi Arabian",
+        "143": "Turkish",
+        "57": "Greek",
+        "146": "Uruguayan",
+        "116": "Russian",
+        "102": "Nigerian",
+        "107": "Panamamian",
+        "68": "Irish",
+        "9": "Austrian",
+        "70": "Italian",
+        "58": "Grenadian",
+        "142": "Tunisian",
+        "133": "Swedish",
+        "41": "Dutch",
+        "85": "Luxembourgish",
+        "62": "Hungarian",
+        "16": "Belgian",
+        "81": "Lebanese",
+        "2": "Albanian",
+        "111": "Polish",
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "43": "Egyptian",
+        "32": "Chinese",
+        "114": "Qatari",
+        "65": "Indonesian",
+        "36": "Croatian",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "92": "Mexican",
+        "89": "Malaysian",
+        "105": "Pakistani",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "25": "Bulgarian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "7": "Armenian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "3": "Algerian",
+        "37": "Cuban",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "1": "Afghan",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "15": "Belarussian"
+      },
+      "main_residence_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "98": "Israel",
+        "221": "United States",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "213": "Turkey",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "73": "United Kingdom",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "29": "Bahamas",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "131": "Monaco",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "157": "Netherlands",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "66": "Finland",
+        "180": "Romania",
+        "192": "Slovakia",
+        "187": "Sweden",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "secondary_residence_country": {
+        "131": "Monaco",
+        "221": "United States",
+        "187": "Sweden",
+        "73": "United Kingdom",
+        "148": "Mexico",
+        "2": "United Arab Emirates",
+        "157": "Netherlands",
+        "213": "Turkey",
+        "84": "Greece",
+        "53": "Germany",
+        "29": "Bahamas",
+        "66": "Finland",
+        "158": "Norway",
+        "163": "Oman",
+        "98": "Israel",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "93": "Croatia",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "180": "Romania",
+        "192": "Slovakia",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "181": "Russian Federation",
+        "221": "United States",
+        "223": "Uzbekistan",
+        "61": "Egypt",
+        "71": "France",
+        "118": "Kazakhstan",
+        "183": "Saudi Arabia",
+        "213": "Turkey",
+        "45": "China",
+        "178": "Qatar",
+        "200": "Syrian Arab Republic",
+        "187": "Sweden",
+        "169": "Pakistan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "90": "Hong Kong",
+        "241": "Azerbaijan",
+        "107": "Japan",
+        "99": "India",
+        "22": "Bahrain",
+        "73": "United Kingdom",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "102": "Iran",
+        "104": "Italy",
+        "64": "Spain",
+        "98": "Israel",
+        "83": "Equatorial Guinea",
+        "95": "Hungary",
+        "149": "Malaysia",
+        "19": "Belgium",
+        "236": "South Africa",
+        "52": "Czech Republic",
+        "188": "Singapore",
+        "55": "Denmark",
+        "101": "Iraq",
+        "192": "Slovakia",
+        "216": "Taiwan",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "40": "Switzerland",
+        "130": "Morocco",
+        "39": "Congo",
+        "157": "Netherlands",
+        "7": "Armenia",
+        "28": "Brazil",
+        "33": "Belarus",
+        "51": "Cyprus",
+        "129": "Libyan Arab Jamahiriya",
+        "210": "Turkmenistan",
+        "206": "Thailand",
+        "66": "Finland",
+        "180": "Romania",
+        "106": "Jordan",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "97": "Ireland",
+        "186": "Sudan",
+        "155": "Nigeria",
+        "48": "Cuba",
+        "246": "Serbia",
+        "175": "Portugal",
+        "131": "Monaco",
+        "190": "Slovenia",
+        "126": "Lithuania",
+        "211": "Tunisia",
+        "43": "Chile",
+        "173": "Puerto Rico",
+        "219": "Uganda",
+        "86": "Guatemala",
+        "60": "Estonia",
+        "144": "Malta",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "16": "Bosnia and Herzegovina",
+        "127": "Luxembourg",
+        "165": "Peru",
+        "164": "Panama",
+        "54": "Djibouti",
+        "41": "Cote d'Ivoire",
+        "75": "Georgia",
+        "233": "Yemen",
+        "57": "Dominican Republic",
+        "29": "Bahamas",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "128": "Latvia",
+        "123": "Sri Lanka",
+        "6": "Albania",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia",
+        "243": "Isle Of Man",
+        "17": "Barbados",
+        "222": "Uruguay",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "225": "Saint Vincent and the Grenadines",
+        "146": "Maldives",
+        "201": "Swaziland",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia"
+      },
+      "birth_month": {
+        "10": "October",
+        "7": "July",
+        "11": "November",
+        "12": "December",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "6": "June",
+        "1": "January",
+        "5": "May",
+        "4": "April",
+        "2": "February"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "4": "Unknown",
+        "2": "Dead",
+        "3": "Missing"
+      },
+      "death_month": {
+        "5": "May",
+        "6": "June",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "10": "October",
+        "7": "July",
+        "1": "January",
+        "2": "February",
+        "11": "November",
+        "12": "December",
+        "4": "April"
+      }
+    },
+    "existing_social_types": []
+  },
+  "research_status": "complete",
+  "editorial_note": null,
+  "biography_brief": {
+    "durable_identity": "Ethiopian-born American hotelier who developed the Time, Dream and Night boutique-hotel concepts.",
+    "defining_work": "Created a design-led hospitality division within his father’s hotel platform and held personal hotel-company interests.",
+    "formative_context": "Wharton education and Morgan Stanley work preceded his return to the family hotel business.",
+    "decisive_moment": "His father offered an existing Manhattan tourist hotel for him to transform into The Time.",
+    "enduring_dimensions": [
+      "Family-backed asset transformation",
+      "Distinctive hotel design and local dining/nightlife",
+      "Collaboration with architects and hospitality partners"
+    ],
+    "character_detail": null,
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Hotelier with finance training and a creative hotel-development career."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "A supplied hotel became the test bed for a new hospitality concept."
+      }
+    ],
+    "excluded_transient_context": [
+      "Named private vessels",
+      "Personal relationships and family disputes",
+      "Health and legal controversies",
+      "Net-worth estimates",
+      "Unverified current holdings"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "decision_then_consequence",
+    "calibration_archetypes": [
+      "inherited_operator"
+    ],
+    "notes": "Shared anchors are Chatwal and the boutique-hotel work. Short alone gives Ethiopian-American identity, Wharton/Morgan Stanley and the international brand range. Long follows the supplied Time property into specific renovation choices, then deepens Dream Downtown through architecture, the pool and local dining partnerships. The long biography does not repeat the career introduction. Parent review replaced the short design/dining/nightlife summary with concrete geographic reach, leaving project decisions to the long biography. Removed the long concluding generalisation; the pair ends on specific work and customer appeal."
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Exact-name dedicated Forbes-profile search yielded unrelated Vikram profiles and reporting about his father. Magazine cover appearances and articles are not personal profile pages."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "hospitality",
+    "label": "Hospitality",
+    "summary": "Hotel ownership, redevelopment and management are the documented wealth-producing activities. Contemporary reporting identifies Vikram’s own hotel interests and founder-led lifestyle division; the public licensing packet separately records his personal interests in hotel operating entities.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Independent career reporting plus explicit personal equity in the public packet support the mechanism beyond a family surname or executive title. Hospitality, not a short banking job or acting, is the evidenced origin sector."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "primary_industry": {
+    "classification": "hospitality",
+    "label": "Hospitality",
+    "summary": "Origin-sector fallback: hospitality is the established wealth sector, but a sufficiently current breakdown of Vikram’s retained assets is unavailable. Hyatt acquired the Dream brand and management platform in 2023; its statement names Sant Singh’s retained hotel ownership, not Vikram’s. Later property disposals also prevent treating the historical portfolio as unchanged.",
+    "confidence": {
+      "score": 78,
+      "band": "medium",
+      "reason": "Explicit origin-sector fallback capped below the origin score. The asset-light brand acquisition is distinguished from individual hotel real estate, and his father’s retained ownership cannot establish the son’s current portfolio."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "The principal documented platform began with an existing hotel supplied by his father, followed by Vikram’s redevelopment and expansion of a family hospitality division. His own economic participation is positively evidenced by the hotel-company interests in the public licensing packet. The exact legal transfer instrument is not public.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "A supported family-transfer inference combines a supplied core property with personal economic interests. Expansion of that platform is not a separate origin mechanism. Neither inheritance nor an independent launch is established."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Vikram’s historical founding and operating role is clear, but his present relationship to the principal retained wealth-producing assets is unresolved after brand and property transactions. The reviewed sources do not establish a current personal stake, operating mandate, investment portfolio or passive family-beneficiary position at sufficient confidence.",
+    "confidence": {
+      "score": 60,
+      "band": "low",
+      "reason": "Founder, Operator, Investor and family-shareholder alternatives were considered. None has a sufficiently current retained-asset premise; historical ownership and his father’s continued role are not substituted for that missing link."
+    },
+    "source_ids": [
+      "S1",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "biography": {
+    "plain_text": "Vikram Chatwal is an Ethiopian-born American hotelier known for developing boutique hotels under the Time, Dream and Night names. A Wharton graduate, he worked at Morgan Stanley before entering hospitality. He established his hotel collection within the family’s Hampshire Hotels, with properties extending beyond New York to Miami and Bangkok.",
+    "html": "<p>Vikram Chatwal is an Ethiopian-born American hotelier known for developing boutique hotels under the Time, Dream and Night names. A Wharton graduate, he worked at Morgan Stanley before entering hospitality. He established his hotel collection within the family’s Hampshire Hotels, with properties extending beyond New York to Miami and Bangkok.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Opened interviews and contemporary hospitality reporting support the allocated facts; no present ownership claim is implied."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "An existing Manhattan hotel gave Vikram Chatwal the opportunity to test a different approach to hospitality. His father, Sant Singh Chatwal, offered him a tourist-class property, which he transformed into The Time. Its design-led approach provided the basis for a broader collection within the family’s hotel business.\n\nAt Dream Downtown, Chatwal commissioned Handel Architects to rework an unusual wedge-shaped building. The renovation placed a glass-bottomed swimming pool above the lobby and created a beach-like courtyard. Restaurants and nightlife were central to the project: partnerships with specialist operators helped attract local New Yorkers as well as overnight guests.",
+    "html": "<p>An existing Manhattan hotel gave Vikram Chatwal the opportunity to test a different approach to hospitality. His father, Sant Singh Chatwal, offered him a tourist-class property, which he transformed into The Time. Its design-led approach provided the basis for a broader collection within the family’s hotel business.</p>\r\n<p>At Dream Downtown, Chatwal commissioned Handel Architects to rework an unusual wedge-shaped building. The renovation placed a glass-bottomed swimming pool above the lobby and created a beach-like courtyard. Restaurants and nightlife were central to the project: partnerships with specialist operators helped attract local New Yorkers as well as overnight guests.</p>\r\n",
+    "word_count": 97,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Opened interviews and contemporary hospitality reporting support the allocated facts; no present ownership claim is implied."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Hotelier and founder of Vikram Chatwal Hotels",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact-person biography and contemporary hospitality profiles; full birth date is reference-supported and compatible with the immutable age."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Exact-person biography and contemporary hospitality profiles; full birth date is reference-supported and compatible with the immutable age."
+      },
+      "source_ids": [
+        "S1",
+        "S7"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Addis Ababa",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Exact-person biography and contemporary hospitality profiles; full birth date is reference-supported and compatible with the immutable age."
+      },
+      "source_ids": [
+        "S3",
+        "S7"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "1",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 84,
+        "band": "medium",
+        "reason": "Exact-person biography and contemporary hospitality profiles; full birth date is reference-supported and compatible with the immutable age."
+      },
+      "source_ids": [
+        "S7"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "November",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 84,
+        "band": "medium",
+        "reason": "Exact-person biography and contemporary hospitality profiles; full birth date is reference-supported and compatible with the immutable age."
+      },
+      "source_ids": [
+        "S7"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1971",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 84,
+        "band": "medium",
+        "reason": "Exact-person biography and contemporary hospitality profiles; full birth date is reference-supported and compatible with the immutable age."
+      },
+      "source_ids": [
+        "S7"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type": "Wikipedia",
+      "type_id": "10",
+      "url": "https://en.wikipedia.org/wiki/Vikram_Chatwal",
+      "verification": "Opened exact American hotelier article; Ethiopia birth, age and family/business history match independent reporting and input.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Exact identity corroborated independently; not the Indian healthcare executive Vikram Jit Singh Chhatwal."
+      },
+      "source_ids": [
+        "S7",
+        "S1",
+        "S8"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0321",
+      "name": "Hotel operations",
+      "summary": "Defining development and leadership of a boutique-hotel operating collection, including Time, Dream and Night.",
+      "relationship_type": "founder and operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Long-term material hotel operating activity satisfies the active industry contract; no unsupported current ownership is asserted.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Contemporary hospitality profiles document repeated projects and direct operational leadership."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.leadersmag.com/issues/2013.1_Jan/Hospitality/LEADERS-Vikram-Chatwal-Vikram-Chatwal-Hotels.html",
+      "title": "One Man’s Dream is Another’s Hotel",
+      "publisher": "LEADERS",
+      "tier": 2,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Founder and president of hotel division; Wharton and Morgan Stanley.",
+        "Father supplied existing hotel; conversion to Time.",
+        "Handel Architects and Dream Downtown pool, courtyard and dining partnerships."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://dujour.com/culture/vikram-chatwal-interview/",
+      "title": "The Rebirth of Vikram Chatwal",
+      "publisher": "DuJour",
+      "tier": 2,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Interview on family restaurants, finance work and joining family hospitality.",
+        "Personally described hotel ownership and lifestyle-division development."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.hotel-online.com/news/archive-37542",
+      "title": "Vikram Chatwal Brings Dream Hotel to South Beach",
+      "publisher": "Hotel Online / Miami Herald",
+      "tier": 2,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Contemporary interview: Ethiopia birth, family platform, hotel division and international operations."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.nyc.gov/html/mancb4/downloads/pdf/finalresosmay18/4%20BLP%20Letter%20to%20SLA%20re%20Electric%20Roon%20(Dream%20Downtown%20Hotel)%20-%20355%20W%2016th%20Street.pdf",
+      "title": "Electric Room licensing packet: interests of Vikram Chatwal",
+      "publisher": "Manhattan Community Board 4 / NYC",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Scanned page 8 visually read: Vikram named principal; 24.5% interests in 130 West44th Hotel Associates and Northquay Properties/Dream Downtown, alongside restaurant entities.",
+        "Historical personal economic interests only; not evidence that these stakes survive current transactions."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://investors.hyatt.com/news/investor-news/news-details/2023/Hyatt-Completes-Dream-Hotel-Group-Acquisition-02-02-2023/default.aspx",
+      "title": "Hyatt Completes Dream Hotel Group Acquisition",
+      "publisher": "Hyatt",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Completed 2023 brand and management-platform acquisition.",
+        "Specifically identifies Sant Singh as retained hotel owner; no equivalent personal Vikram statement."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://commercialobserver.com/2025/10/leasehold-manhattans-chatwal-hotel-sells-ben-josef-group-53m/",
+      "title": "Leasehold for Manhattan’s Chatwal Hotel Sells to Ben-Josef Group",
+      "publisher": "Commercial Observer",
+      "tier": 2,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "2025 leasehold sale; historical assets cannot be treated as unchanged current personal holdings."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://en.wikipedia.org/wiki/Vikram_Chatwal",
+      "title": "Vikram Chatwal",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Exact person, American nationality, Addis Ababa birth, 1November1971 and historical hotel/film career."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.superyachtfan.com/yacht/slo-mo-shun/",
+      "title": "LOTUS: former owner Vikram Chatwal",
+      "publisher": "SuperYachtFan",
+      "tier": 3,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Lotus former-owner bridge only; net-worth claims not used."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://about.me/vikramchatwal",
+      "title": "Vikram Chatwal",
+      "publisher": "about.me",
+      "tier": 3,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Personal-site candidate uses matching career details but lacks independent authentication; withheld."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Present personal holdings and roles are unverified. Sant Singh’s retained hotel ownership in Hyatt’s announcement is not attributed to Vikram. The licensing packet is historical evidence of personal equity, not proof of unchanged current stakes.",
+    "Family-supplied property and personal hotel-company interests support family transfer at medium confidence. Transfer terms, exact personal sale proceeds and subsequent investment allocation remain unavailable. Acting/modeling does not establish a second material wealth stream.",
+    "Forbes profile was explicitly searched; cover appearances and father-related articles are not verified personal profiles. LinkedIn candidate vikram-chatwal-91358920a has only N/A and no corroborating career details; opening returned999. Instagram vikramchatwal could not be verified and opening was throttled. Facebook, X/Twitter, YouTube, TikTok, Vimeo, Flickr and personal-site searches produced no independently verified personal account.",
+    "The about.me profile and a second underscored version are not independently authenticated. Former company domain vikramchatwalhotels.com did not open. Only the exact Wikipedia page is proposed; Hyatt’s current company website is not presented as Vikram’s business.",
+    "Vikram Jit Singh Chhatwal of Medi Assist and Indian healthcare investing is a different person and is excluded. Full date of birth relies on the exact reference page at84; dated input age48 is compatible.",
+    "The NYC PDF was opened but its scanned pages were not text-extractable. A public download with a normal browser user agent succeeded; page8 was visually inspected to verify the personal-interest table. The file’s directory is not used as a publication-date assertion.",
+    "No private addresses, personal disputes, health information, allegations, wealth estimates or vessel facts appear in either biography. The father’s hotel assets and group valuation are not presented as the son’s personal fortune."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal research-only dossier with historical personal economics verified, retained-asset uncertainty explicit and complementary biographies. No cohort, catalogue or live edits."
+  }
+}

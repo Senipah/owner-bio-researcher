@@ -1,0 +1,1214 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 326,
+    "display_name": "Wim Bosman",
+    "identity_confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Dutch transport founder, Belgian residence, age 76 and November 2017 death agree with the historical source record and relationship end. Bonita family organisation independently names the same founder; artist, musician and banker namesakes rejected."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "116": "Russian",
+        "4": "American",
+        "118": "Saudi Arabian",
+        "43": "Egyptian",
+        "52": "French",
+        "145": "Ukrainian",
+        "143": "Turkish",
+        "32": "Chinese",
+        "114": "Qatari",
+        "102": "Nigerian",
+        "133": "Swedish",
+        "65": "Indonesian",
+        "29": "Canadian",
+        "36": "Croatian",
+        "57": "Greek",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "22": "British",
+        "8": "Australian",
+        "92": "Mexican",
+        "100": "New Zealander",
+        "75": "Kazakhstanian",
+        "134": "Swiss",
+        "128": "Spanish",
+        "69": "Israeli",
+        "62": "Hungarian",
+        "122": "Singaporean",
+        "89": "Malaysian",
+        "70": "Italian",
+        "105": "Pakistani",
+        "55": "German",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "68": "Irish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "81": "Lebanese",
+        "25": "Bulgarian",
+        "9": "Austrian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "111": "Polish",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "16": "Belgian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "41": "Dutch",
+        "7": "Armenian",
+        "38": "Cypriot",
+        "135": "Syrian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "85": "Luxembourgish",
+        "120": "Serbian",
+        "3": "Algerian",
+        "107": "Panamamian",
+        "11": "Bahamanian",
+        "37": "Cuban",
+        "112": "Portuguese",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "113": "Puerto Rican",
+        "1": "Afghan",
+        "90": "Maltese",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "126": "South African",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "142": "Tunisian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "2": "Albanian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "66": "Iranian",
+        "15": "Belarussian",
+        "147": "Uzbekistanian",
+        "146": "Uruguayan",
+        "58": "Grenadian"
+      },
+      "secondary_nationality": {
+        "112": "Portuguese",
+        "147": "Uzbekistanian",
+        "75": "Kazakhstanian",
+        "135": "Syrian",
+        "55": "German",
+        "69": "Israeli",
+        "4": "American",
+        "22": "British",
+        "66": "Iranian",
+        "145": "Ukrainian",
+        "120": "Serbian",
+        "29": "Canadian",
+        "38": "Cypriot",
+        "52": "French",
+        "126": "South African",
+        "122": "Singaporean",
+        "128": "Spanish",
+        "90": "Maltese",
+        "134": "Swiss",
+        "8": "Australian",
+        "100": "New Zealander",
+        "11": "Bahamanian",
+        "113": "Puerto Rican",
+        "118": "Saudi Arabian",
+        "143": "Turkish",
+        "57": "Greek",
+        "146": "Uruguayan",
+        "116": "Russian",
+        "102": "Nigerian",
+        "107": "Panamamian",
+        "68": "Irish",
+        "9": "Austrian",
+        "70": "Italian",
+        "58": "Grenadian",
+        "142": "Tunisian",
+        "133": "Swedish",
+        "41": "Dutch",
+        "85": "Luxembourgish",
+        "62": "Hungarian",
+        "16": "Belgian",
+        "81": "Lebanese",
+        "2": "Albanian",
+        "111": "Polish",
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "43": "Egyptian",
+        "32": "Chinese",
+        "114": "Qatari",
+        "65": "Indonesian",
+        "36": "Croatian",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "92": "Mexican",
+        "89": "Malaysian",
+        "105": "Pakistani",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "25": "Bulgarian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "7": "Armenian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "3": "Algerian",
+        "37": "Cuban",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "1": "Afghan",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "15": "Belarussian"
+      },
+      "main_residence_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "98": "Israel",
+        "221": "United States",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "213": "Turkey",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "73": "United Kingdom",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "29": "Bahamas",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "131": "Monaco",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "157": "Netherlands",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "66": "Finland",
+        "180": "Romania",
+        "192": "Slovakia",
+        "187": "Sweden",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "secondary_residence_country": {
+        "131": "Monaco",
+        "221": "United States",
+        "187": "Sweden",
+        "73": "United Kingdom",
+        "148": "Mexico",
+        "2": "United Arab Emirates",
+        "157": "Netherlands",
+        "213": "Turkey",
+        "84": "Greece",
+        "53": "Germany",
+        "29": "Bahamas",
+        "66": "Finland",
+        "158": "Norway",
+        "163": "Oman",
+        "98": "Israel",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "93": "Croatia",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "180": "Romania",
+        "192": "Slovakia",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "181": "Russian Federation",
+        "221": "United States",
+        "223": "Uzbekistan",
+        "61": "Egypt",
+        "71": "France",
+        "118": "Kazakhstan",
+        "183": "Saudi Arabia",
+        "213": "Turkey",
+        "45": "China",
+        "178": "Qatar",
+        "200": "Syrian Arab Republic",
+        "187": "Sweden",
+        "169": "Pakistan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "90": "Hong Kong",
+        "241": "Azerbaijan",
+        "107": "Japan",
+        "99": "India",
+        "22": "Bahrain",
+        "73": "United Kingdom",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "102": "Iran",
+        "104": "Italy",
+        "64": "Spain",
+        "98": "Israel",
+        "83": "Equatorial Guinea",
+        "95": "Hungary",
+        "149": "Malaysia",
+        "19": "Belgium",
+        "236": "South Africa",
+        "52": "Czech Republic",
+        "188": "Singapore",
+        "55": "Denmark",
+        "101": "Iraq",
+        "192": "Slovakia",
+        "216": "Taiwan",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "40": "Switzerland",
+        "130": "Morocco",
+        "39": "Congo",
+        "157": "Netherlands",
+        "7": "Armenia",
+        "28": "Brazil",
+        "33": "Belarus",
+        "51": "Cyprus",
+        "129": "Libyan Arab Jamahiriya",
+        "210": "Turkmenistan",
+        "206": "Thailand",
+        "66": "Finland",
+        "180": "Romania",
+        "106": "Jordan",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "97": "Ireland",
+        "186": "Sudan",
+        "155": "Nigeria",
+        "48": "Cuba",
+        "246": "Serbia",
+        "175": "Portugal",
+        "131": "Monaco",
+        "190": "Slovenia",
+        "126": "Lithuania",
+        "211": "Tunisia",
+        "43": "Chile",
+        "173": "Puerto Rico",
+        "219": "Uganda",
+        "86": "Guatemala",
+        "60": "Estonia",
+        "144": "Malta",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "16": "Bosnia and Herzegovina",
+        "127": "Luxembourg",
+        "165": "Peru",
+        "164": "Panama",
+        "54": "Djibouti",
+        "41": "Cote d'Ivoire",
+        "75": "Georgia",
+        "233": "Yemen",
+        "57": "Dominican Republic",
+        "29": "Bahamas",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "128": "Latvia",
+        "123": "Sri Lanka",
+        "6": "Albania",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia",
+        "243": "Isle Of Man",
+        "17": "Barbados",
+        "222": "Uruguay",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "225": "Saint Vincent and the Grenadines",
+        "146": "Maldives",
+        "201": "Swaziland",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia"
+      },
+      "birth_month": {
+        "10": "October",
+        "7": "July",
+        "11": "November",
+        "12": "December",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "6": "June",
+        "1": "January",
+        "5": "May",
+        "4": "April",
+        "2": "February"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "4": "Unknown",
+        "2": "Dead",
+        "3": "Missing"
+      },
+      "death_month": {
+        "5": "May",
+        "6": "June",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "10": "October",
+        "7": "July",
+        "1": "January",
+        "2": "February",
+        "11": "November",
+        "12": "December",
+        "4": "April"
+      }
+    },
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ]
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Wim Bosman was a Dutch logistics entrepreneur and chairman of the Bonita family investment organisation.",
+    "defining_work": "Created a transport group that expanded internationally before its sale to Mainfreight.",
+    "formative_context": "His father operated a haulage company; Wim established a separate business with one truck.",
+    "decisive_moment": "Encountered a container-unloading prototype and financed its development through Copal.",
+    "enduring_dimensions": [
+      "Investment and technical guidance for logistics automation.",
+      "Interest in reducing physical strain on warehouse workers."
+    ],
+    "character_detail": "Applied practical transport experience to the development of machinery.",
+    "opening_options": [
+      {
+        "mode": "decisive_event",
+        "angle": "A container-unloading prototype prompted a new investment."
+      },
+      {
+        "mode": "present_identity",
+        "angle": "Transport founder who became a family investment chairman."
+      }
+    ],
+    "excluded_transient_context": [
+      "Personal vessel ownership",
+      "Net-worth rankings",
+      "Investment activities after his death",
+      "Unrequested commercial disputes"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S5",
+      "S6"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "decision_then_consequence",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "Only shared anchor is his logistics-business experience. Short-only facts are family trade background, group expansion, Mainfreight sale and Bonita chairmanship. Long-only material explains the Copal prototype, his specific financial/technical/network contribution and the machinery’s effect on physical work and older employees. The long omits the entire short economic chronology and would lose meaningful industrial and human detail if reduced to the short. Provider, form, recipient and purpose of support are all explicit."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Exact Wim Bosman and Forbes/profile searches returned no matching individual profile; no URL fabricated."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "logistics",
+    "label": "Logistics",
+    "summary": "Founder-owned freight and warehousing group was the principal wealth-producing asset, evidenced by the purchaser’s memorandum and subsequent sale proceeds in the family investment organisation.",
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Founder-owned freight and warehousing group was the principal wealth-producing asset, evidenced by the purchaser’s memorandum and subsequent sale proceeds in the family investment organisation."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Late-life principal interests were organised through Bonita after the transport-group sale. The family investment organisation pooled the sale proceeds and held property, investments and business participations; this is a portfolio sector, not a claim that one holding dominated.",
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Late-life principal interests were organised through Bonita after the transport-group sale. The family investment organisation pooled the sale proceeds and held property, investments and business participations; this is a portfolio sector, not a claim that one holding dominated."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S7",
+      "S9"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Bosman created and sold a separate transport group, rather than succeeding to the father’s business. His family industry exposure is documented, but the size and materiality of any starting support are not; broad self-made is the supported level.",
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Bosman created and sold a separate transport group, rather than succeeding to the father’s business. His family industry exposure is documented, but the size and materiality of any starting support are not; broad self-made is the supported level."
+    },
+    "source_ids": [
+      "S2",
+      "S3"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "family_office_principal",
+    "label": "Family office principal",
+    "summary": "Bonita explicitly identifies him as its chairman following the sale and identifies the organisation as the family wealth-management structure. This describes his terminal lifetime role; later family activity is not attributed to him.",
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Bonita explicitly identifies him as its chairman following the sale and identifies the organisation as the family wealth-management structure. This describes his terminal lifetime role; later family activity is not attributed to him."
+    },
+    "source_ids": [
+      "S1",
+      "S7",
+      "S9"
+    ]
+  },
+  "biography": {
+    "plain_text": "Wim Bosman was a Dutch logistics entrepreneur who built the transport group bearing his name. The son of a haulier, he established his own business and expanded it across Europe. After selling the group to Mainfreight in 2011, he chaired Bonita, the family investment organisation that managed the proceeds of his work.",
+    "html": "<p>Wim Bosman was a Dutch logistics entrepreneur who built the transport group bearing his name. The son of a haulier, he established his own business and expanded it across Europe. After selling the group to Mainfreight in 2011, he chaired Bonita, the family investment organisation that managed the proceeds of his work.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Direct company histories and contemporary specialist reporting support every material claim."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S7",
+      "S9"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "A prototype for unloading freight containers caught Wim Bosman’s attention after decades running a logistics business. He invested in Copal, supplying finance and technical experience to help develop its machinery. His contribution also included introducing the company’s entrepreneurs to contacts in the transport industry, giving the venture access to his professional network.\n\nThe appeal lay in a familiar workplace problem: unloading containers still involved heavy manual labour. Copal’s machines could remove cargo and place it on pallets, reducing the physical demands on warehouse staff. Bosman supported technology that could make this work easier for older employees and help them remain in employment longer.",
+    "html": "<p>A prototype for unloading freight containers caught Wim Bosman’s attention after decades running a logistics business. He invested in Copal, supplying finance and technical experience to help develop its machinery. His contribution also included introducing the company’s entrepreneurs to contacts in the transport industry, giving the venture access to his professional network.</p>\r\n<p>The appeal lay in a familiar workplace problem: unloading containers still involved heavy manual labour. Copal’s machines could remove cargo and place it on pallets, reducing the physical demands on warehouse staff. Bosman supported technology that could make this work easier for older employees and help them remain in employment longer.</p>\r\n",
+    "word_count": 103,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Direct company histories and contemporary specialist reporting support every material claim."
+    },
+    "source_ids": [
+      "S5",
+      "S6"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "first_name",
+      "value": "Willem",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Exact historical identity supported by family organisation, obituary or cited historical profile."
+      },
+      "source_ids": [
+        "S3",
+        "S8"
+      ],
+      "existing_value": "Wim"
+    },
+    {
+      "field": "middle_names",
+      "value": "Petrus",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Exact historical identity supported by family organisation, obituary or cited historical profile."
+      },
+      "source_ids": [
+        "S3",
+        "S8"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Founder of Wim Bosman Group",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact historical identity supported by family organisation, obituary or cited historical profile."
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact historical identity supported by family organisation, obituary or cited historical profile."
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "'s-Heerenberg",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Exact historical identity supported by family organisation, obituary or cited historical profile."
+      },
+      "source_ids": [
+        "S3",
+        "S8"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "29",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Exact historical identity supported by family organisation, obituary or cited historical profile."
+      },
+      "source_ids": [
+        "S3",
+        "S8"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "October",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Exact historical identity supported by family organisation, obituary or cited historical profile."
+      },
+      "source_ids": [
+        "S3",
+        "S8"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1941",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact historical identity supported by family organisation, obituary or cited historical profile."
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "10",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact historical identity supported by family organisation, obituary or cited historical profile."
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "November",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact historical identity supported by family organisation, obituary or cited historical profile."
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "2017",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact historical identity supported by family organisation, obituary or cited historical profile."
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact historical identity supported by family organisation, obituary or cited historical profile."
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ],
+      "existing_value": "Unknown"
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type": "Wikipedia",
+      "type_id": "10",
+      "url": "https://nl.wikipedia.org/wiki/Wim_Bosman_(zakenman)",
+      "verification": "Exact historical person corroborated by official company history; company site represents his former family investment organisation.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official company and exact personal encyclopedia identity verified."
+      },
+      "source_ids": [
+        "S1",
+        "S8"
+      ]
+    },
+    {
+      "type": "Company Website",
+      "type_id": "14",
+      "url": "https://bonitagroep.nl/",
+      "verification": "Exact historical person corroborated by official company history; company site represents his former family investment organisation.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official company and exact personal encyclopedia identity verified."
+      },
+      "source_ids": [
+        "S1",
+        "S7"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_2461",
+      "name": "Road freight",
+      "summary": "Founder and long-term owner of major European road freight group.",
+      "relationship_type": "founder",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Core freight business created his fortune; sustained industry identity.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Purchaser memorandum details founding ownership and road-freight dominance."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://bonitagroep.nl/over-bonita-groep",
+      "title": "Over Bonita Groep",
+      "publisher": "Bonita Groep",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "W.P. Wim Bosman 1941–2017, transport founder and post-sale Bonita chairman.",
+        "Family wealth-management organisation; historical founder identity."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.interest.co.nz/sites/default/files/Mainfreight%20notice%20of%20special%20meeting.pdf",
+      "title": "Notice of Special Meeting and Explanatory Memorandum, March 2011",
+      "publisher": "Mainfreight via interest.co.nz",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Founder-owned group started with one truck in 1963; European freight and warehousing network; sale by Wim Bosman and related sellers.",
+        "Road freight dominant; property excluded from sale."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.berghapedia.nl/index.php?title=Bosman,_Willem_Petrus",
+      "title": "Bosman, Willem Petrus",
+      "publisher": "Berghapedia",
+      "tier": 3,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Full name, 29 October 1941 birth in s-Heerenberg; father’s haulage business and separate start.",
+        "Transport group expansion, family succession context and death."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://transportmedia.be/2017/11/wim-bosman-is-overleden/",
+      "title": "Wim Bosman is overleden",
+      "publisher": "Transportmedia",
+      "tier": 3,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Died 10 November 2017 aged 76; transport founder, sale to Mainfreight."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.copalhandlingsystems.com/about-us",
+      "title": "About us",
+      "publisher": "Copal Handling Systems",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Saw prototype in 2011; provided essential finance, vision and technical knowledge for systems development.",
+        "Machines designed to reduce manual container unloading."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.logistiek.be/video-wim-bosman-stelt-de-copal-container-strippers-voor/",
+      "title": "Wim Bosman stelt de Copal container strippers voor",
+      "publisher": "Logistiek.be",
+      "tier": 3,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Sale proceeds invested in Copal; active professional introductions; less arduous unloading helps older staff work longer."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://bonitagroep.nl/",
+      "title": "Welkom bij de Bonita Groep",
+      "publisher": "Bonita Groep",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Official Bonita investment-company website and public business identity."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://nl.wikipedia.org/wiki/Wim_Bosman_(zakenman)",
+      "title": "Wim Bosman (zakenman)",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Exact personal profile, full name and life dates; citations to trade and financial press."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://puc.overheid.nl/PUC/Handlers/DownloadBijlage.ashx?bestand=Aanvraag_goedkeuring_concentratie_Bonita_Holding_B.V._%E2%80%93_Leyhoeve_Groep_B.V..pdf&bestandsnaam=Aanvraag+tot+goedkeuring+concentratie.pdf&pucid=PUC_248434_22_1",
+      "title": "Public concentration application: Bonita Holding and Leyhoeve Groep, 16 July 2018",
+      "publisher": "Dutch Healthcare Authority public disclosure",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Retrospectively confirms 2011 sale proceeds placed in family office; describes property, participations and financial investments.",
+        "Used for origin of post-sale structure, not to attribute 2018 acquisitions to deceased founder."
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Temporal scope",
+      "detail": "Bosman died in 2017. Primary industry and wealth relationship describe his late-life interests, not a living role. Bonita’s present property list is not backdated; Copal participation and Bonita chairmanship are independently tied to his lifetime."
+    },
+    {
+      "topic": "Starting platform",
+      "detail": "Father’s transport business supplied family industry context, but inheritance, seed capital, substantial mentoring or other materially decisive support are not established. Broad self-made rests on separate founder ownership and sale, not absence of inheritance. An advantaged-start subtype was considered but not assigned merely from parental occupation."
+    },
+    {
+      "topic": "Identity and fields",
+      "detail": "The source age 76 with a 2020 timestamp is stale, matching age at death in 2017. System-calculated age fields are not proposed. Full name and birth date come from local historical scholarship corroborated by the exact Dutch encyclopedia and company life years; no additional nationality found."
+    },
+    {
+      "topic": "Forbes and social checks",
+      "detail": "Searched exact name and company context across Forbes, Instagram, LinkedIn, Facebook, Twitter, YouTube, TikTok, Vimeo, Flickr, Wikipedia, personal and company websites. Verified Wikipedia and Bonita company website. LinkedIn banker/insurance/construction namesakes rejected; videos about Bosman are not his own accounts. No verified personal website or social handle. Trip Advisor and Zillow immaterial."
+    },
+    {
+      "topic": "Tag selection",
+      "detail": "Road freight is the minimum useful enduring industry tag. Family-office principal is represented in the wealth relationship, with no generic family-office tag. A single machinery investment does not establish a separate industrial specialism tag."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Resolved historical founder; mortality correction proposed. Pair allocated and reviewed, reverse-checked against sources; strict validation passed. Nothing applied to live or shared owner data."
+  }
+}

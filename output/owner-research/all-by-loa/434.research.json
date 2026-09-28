@@ -1,0 +1,1233 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 434,
+    "display_name": "Charles J. Cella",
+    "identity_confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "The existing Wikipedia link explicitly identifies this Oaklawn owner. Exact name, American nationality and age 81 match the independent terminal obituary, although the export attaches that stale age to 2020. Official history and family release corroborate identity. Earlier namesake grandfather and current sons are distinguished; no separate Sirma III bridge is required to override the direct existing identity link."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "main_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "116": "Russian",
+        "4": "American",
+        "118": "Saudi Arabian",
+        "43": "Egyptian",
+        "52": "French",
+        "145": "Ukrainian",
+        "143": "Turkish",
+        "32": "Chinese",
+        "114": "Qatari",
+        "102": "Nigerian",
+        "133": "Swedish",
+        "65": "Indonesian",
+        "29": "Canadian",
+        "36": "Croatian",
+        "57": "Greek",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "22": "British",
+        "8": "Australian",
+        "92": "Mexican",
+        "100": "New Zealander",
+        "75": "Kazakhstanian",
+        "134": "Swiss",
+        "128": "Spanish",
+        "69": "Israeli",
+        "62": "Hungarian",
+        "122": "Singaporean",
+        "89": "Malaysian",
+        "70": "Italian",
+        "105": "Pakistani",
+        "55": "German",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "68": "Irish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "81": "Lebanese",
+        "25": "Bulgarian",
+        "9": "Austrian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "111": "Polish",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "16": "Belgian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "41": "Dutch",
+        "7": "Armenian",
+        "38": "Cypriot",
+        "135": "Syrian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "85": "Luxembourgish",
+        "120": "Serbian",
+        "3": "Algerian",
+        "107": "Panamamian",
+        "11": "Bahamanian",
+        "37": "Cuban",
+        "112": "Portuguese",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "113": "Puerto Rican",
+        "1": "Afghan",
+        "90": "Maltese",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "126": "South African",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "142": "Tunisian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "2": "Albanian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "66": "Iranian",
+        "15": "Belarussian",
+        "147": "Uzbekistanian",
+        "146": "Uruguayan",
+        "58": "Grenadian"
+      },
+      "secondary_nationality": {
+        "112": "Portuguese",
+        "147": "Uzbekistanian",
+        "75": "Kazakhstanian",
+        "135": "Syrian",
+        "55": "German",
+        "69": "Israeli",
+        "4": "American",
+        "22": "British",
+        "66": "Iranian",
+        "145": "Ukrainian",
+        "120": "Serbian",
+        "29": "Canadian",
+        "38": "Cypriot",
+        "52": "French",
+        "126": "South African",
+        "122": "Singaporean",
+        "128": "Spanish",
+        "90": "Maltese",
+        "134": "Swiss",
+        "8": "Australian",
+        "100": "New Zealander",
+        "11": "Bahamanian",
+        "113": "Puerto Rican",
+        "118": "Saudi Arabian",
+        "143": "Turkish",
+        "57": "Greek",
+        "146": "Uruguayan",
+        "116": "Russian",
+        "102": "Nigerian",
+        "107": "Panamamian",
+        "68": "Irish",
+        "9": "Austrian",
+        "70": "Italian",
+        "58": "Grenadian",
+        "142": "Tunisian",
+        "133": "Swedish",
+        "41": "Dutch",
+        "85": "Luxembourgish",
+        "62": "Hungarian",
+        "16": "Belgian",
+        "81": "Lebanese",
+        "2": "Albanian",
+        "111": "Polish",
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "43": "Egyptian",
+        "32": "Chinese",
+        "114": "Qatari",
+        "65": "Indonesian",
+        "36": "Croatian",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "92": "Mexican",
+        "89": "Malaysian",
+        "105": "Pakistani",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "25": "Bulgarian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "7": "Armenian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "3": "Algerian",
+        "37": "Cuban",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "1": "Afghan",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "15": "Belarussian"
+      },
+      "main_residence_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "98": "Israel",
+        "221": "United States",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "213": "Turkey",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "73": "United Kingdom",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "29": "Bahamas",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "131": "Monaco",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "157": "Netherlands",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "66": "Finland",
+        "180": "Romania",
+        "192": "Slovakia",
+        "187": "Sweden",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "secondary_residence_country": {
+        "131": "Monaco",
+        "221": "United States",
+        "187": "Sweden",
+        "73": "United Kingdom",
+        "148": "Mexico",
+        "2": "United Arab Emirates",
+        "157": "Netherlands",
+        "213": "Turkey",
+        "84": "Greece",
+        "53": "Germany",
+        "29": "Bahamas",
+        "66": "Finland",
+        "158": "Norway",
+        "163": "Oman",
+        "98": "Israel",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "93": "Croatia",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "180": "Romania",
+        "192": "Slovakia",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "181": "Russian Federation",
+        "221": "United States",
+        "223": "Uzbekistan",
+        "61": "Egypt",
+        "71": "France",
+        "118": "Kazakhstan",
+        "183": "Saudi Arabia",
+        "213": "Turkey",
+        "45": "China",
+        "178": "Qatar",
+        "200": "Syrian Arab Republic",
+        "187": "Sweden",
+        "169": "Pakistan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "90": "Hong Kong",
+        "241": "Azerbaijan",
+        "107": "Japan",
+        "99": "India",
+        "22": "Bahrain",
+        "73": "United Kingdom",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "102": "Iran",
+        "104": "Italy",
+        "64": "Spain",
+        "98": "Israel",
+        "83": "Equatorial Guinea",
+        "95": "Hungary",
+        "149": "Malaysia",
+        "19": "Belgium",
+        "236": "South Africa",
+        "52": "Czech Republic",
+        "188": "Singapore",
+        "55": "Denmark",
+        "101": "Iraq",
+        "192": "Slovakia",
+        "216": "Taiwan",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "40": "Switzerland",
+        "130": "Morocco",
+        "39": "Congo",
+        "157": "Netherlands",
+        "7": "Armenia",
+        "28": "Brazil",
+        "33": "Belarus",
+        "51": "Cyprus",
+        "129": "Libyan Arab Jamahiriya",
+        "210": "Turkmenistan",
+        "206": "Thailand",
+        "66": "Finland",
+        "180": "Romania",
+        "106": "Jordan",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "97": "Ireland",
+        "186": "Sudan",
+        "155": "Nigeria",
+        "48": "Cuba",
+        "246": "Serbia",
+        "175": "Portugal",
+        "131": "Monaco",
+        "190": "Slovenia",
+        "126": "Lithuania",
+        "211": "Tunisia",
+        "43": "Chile",
+        "173": "Puerto Rico",
+        "219": "Uganda",
+        "86": "Guatemala",
+        "60": "Estonia",
+        "144": "Malta",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "16": "Bosnia and Herzegovina",
+        "127": "Luxembourg",
+        "165": "Peru",
+        "164": "Panama",
+        "54": "Djibouti",
+        "41": "Cote d'Ivoire",
+        "75": "Georgia",
+        "233": "Yemen",
+        "57": "Dominican Republic",
+        "29": "Bahamas",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "128": "Latvia",
+        "123": "Sri Lanka",
+        "6": "Albania",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia",
+        "243": "Isle Of Man",
+        "17": "Barbados",
+        "222": "Uruguay",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "225": "Saint Vincent and the Grenadines",
+        "146": "Maldives",
+        "201": "Swaziland",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia"
+      },
+      "birth_month": {
+        "10": "October",
+        "7": "July",
+        "11": "November",
+        "12": "December",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "6": "June",
+        "1": "January",
+        "5": "May",
+        "4": "April",
+        "2": "February"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "4": "Unknown",
+        "2": "Dead",
+        "3": "Missing"
+      },
+      "death_month": {
+        "5": "May",
+        "6": "June",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "10": "October",
+        "7": "July",
+        "1": "January",
+        "2": "February",
+        "11": "November",
+        "12": "December",
+        "4": "April"
+      }
+    },
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "secondary_nationality",
+      "main_residence_country",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ]
+  },
+  "research_status": "complete",
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Exact Charles J. Cella and Charles Cella searches, including site:forbes.com/profile, found no verified individual profile. Forbes reporting about a patent lawyer concerns a different Charles Cella."
+    }
+  },
+  "proposed_details": [
+    {
+      "field": "middle_names",
+      "value": "Joshua",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Expands the existing initial using the full name in the researched historical reference."
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "existing_value": "J."
+    },
+    {
+      "field": "known_for_title",
+      "value": "Owner and president of Oaklawn Park",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official history identifies ownership and family announcement confirms terminal presidency."
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Explicit father and son identification across official and independent profiles."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "main_residence_country",
+      "value": "United States",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Final-lifetime residence: family and AP identify his home in St. Louis, where he died."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "St. Louis, Missouri",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "AP obituary and historical reference agree on birthplace."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "27",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "AP obituary explicitly states 27 August 1936, corroborated by historical reference."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "August",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "AP obituary explicitly states 27 August 1936, corroborated by historical reference."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1936",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "AP obituary explicitly states 27 August 1936, corroborated by historical reference."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Family death announcement and independent AP obituary establish death on 6 December 2017."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "existing_value": "Unknown"
+    },
+    {
+      "field": "death_day",
+      "value": "6",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Dated family announcement and AP report agree."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "December",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Dated family announcement and AP report agree."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "2017",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Dated family announcement and AP report agree."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type": "Company Website",
+      "type_id": "14",
+      "url": "https://www.oaklawn.com/",
+      "verification": "Opened official homepage and history. Historical owner and terminal president verified; link represents his enduring company association, not a present living role.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Company domain and historical ownership directly verified on official pages."
+      },
+      "source_ids": [
+        "S4",
+        "S9"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0205",
+      "name": "Gambling",
+      "summary": "Owned and ran Oaklawn’s pari-mutuel wagering and electronic gaming business for decades.",
+      "relationship_type": "owner_operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Required umbrella for the sustained wagering enterprise; not inferred from personal betting or horse ownership alone.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Official owner history and detailed operating report directly document substantial long-term gambling operations."
+      },
+      "source_ids": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "tag_id": "tag_0213",
+      "name": "Casino operations",
+      "summary": "Oaklawn developed a substantial electronic gaming operation during his presidency, alongside pari-mutuel racing.",
+      "relationship_type": "owner_operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Adds the supported electronic-casino operating specialism under required Gambling umbrella. Contemporary reporting calls the revenues casino gambling; this does not attribute the later full casino licence or hotel to him.",
+      "confidence": {
+        "score": 88,
+        "band": "high",
+        "reason": "Detailed 2015 report describes the large electronic blackjack and poker operation; 2017 specialist obituary explicitly identifies casino-gambling revenue during his tenure."
+      },
+      "source_ids": [
+        "S5",
+        "S7"
+      ]
+    },
+    {
+      "tag_id": "tag_0096",
+      "name": "Horse racing",
+      "summary": "Longstanding racecourse owner and operator who also raced major winning thoroughbreds, including Northern Spur.",
+      "relationship_type": "owner_operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Independent sporting identity: sustained racehorse ownership and racing governance, beyond the commercial gambling dimension.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Family announcement and contemporary racing reporting establish defining ownership and sporting activity."
+      },
+      "source_ids": [
+        "S1",
+        "S7"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://paulickreport.com/news/the-biz/longtime-oaklawn-president-charles-cella-dies-81",
+      "title": "Longtime Oaklawn President Charles Cella Dies At 81, 6 December 2017",
+      "publisher": "Cella family release / Paulick Report",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened family announcement: death at home in St. Louis, age 81, terminal Oaklawn chairman and president, Southwestern Enterprises and Southern Real Estate presidencies, Northern Spur ownership."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.dailyherald.com/20171206/news/longtime-horse-racing-figure-charles-j-cella-dies-at-81/",
+      "title": "Longtime horse racing figure Charles J. Cella dies at 81",
+      "publisher": "Associated Press / Daily Herald",
+      "tier": 2,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened full AP obituary: birth 27 August 1936 in St. Louis; death 6 December 2017; father succession; property-company shopping centres and commercial holdings; Northern Spur and track innovations."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://encyclopediaofarkansas.net/entries/charles-cella-4685/",
+      "title": "Charles Cella (1936–2017)",
+      "publisher": "Encyclopedia of Arkansas / Garland County Historical Society",
+      "tier": 3,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened researched historical profile: full name Charles Joshua, parent succession, personal Oaklawn ownership, St. Louis birth, racing and property operating roles."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.oaklawn.com/about/history/",
+      "title": "History",
+      "publisher": "Oaklawn",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened official history identifies Charles J. Cella as owner since 1968 and distinguishes grandfather and great-uncle. The underlying family enterprise predates his succession."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://talkbusiness.net/2015/03/renewing-oaklawn-theres-more-than-one-way-to-race/",
+      "title": "Renewing Oaklawn: There’s more than one way to race, 1 March 2015",
+      "publisher": "Talk Business & Politics",
+      "tier": 2,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened detailed operating history: casino competition, Eric Jackson devised Instant Racing, management and AmTote development, 2000 launch, electronic gaming expansion and larger purses. Son Louis commercialised the product elsewhere; no attribution of that separate work to Charles."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://paulickreport.com/news/the-biz/arci-kickoff-luncheon-honors-oaklawn-heroes-charles-cella-cecil-alexander",
+      "title": "ARCI Kickoff Luncheon Honors Oaklawn Heroes Charles Cella, Cecil Alexander, 6 April 2018",
+      "publisher": "ARCI release / Paulick Report",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened retrospective with son Louis identifying his father’s operating leadership and collaborative turnaround; calls Charles influential owner. Supports importance of the core operating asset."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.thoroughbreddailynews.com/charles-cella-longtime-oaklawn-president-passes-away/",
+      "title": "Charles Cella, Longtime Oaklawn President, Passes Away, 6 December 2017",
+      "publisher": "Thoroughbred Daily News",
+      "tier": 3,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened contemporary report: operating succession, gaming-derived purses, personal Northern Spur ownership and 1995 Breeders’ Cup Turf win; remained owner of racehorses until death."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://cms.equibase.com/node/65218",
+      "title": "Louis Cella New President of Oaklawn Park, 20 December 2017",
+      "publisher": "BloodHorse / Equibase",
+      "tier": 3,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened successor announcement: Louis succeeds Charles at Oaklawn and its parent Southwestern Enterprises; John succeeds Charles at the family property company. Establishes final-lifetime corporate roles and distinguishes both sons."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.oaklawn.com/",
+      "title": "Oaklawn Hot Springs",
+      "publisher": "Oaklawn",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened official operating-company homepage. Current hotel/casino expansion belongs to the subsequent period and is not attributed to Charles."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://en.wikipedia.org/wiki/Charles_J._Cella",
+      "title": "Charles J. Cella",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened existing source-record identity link. Corroborates exact person; independent AP and official sources carry proposed dates and business claims."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Existing age 81 dated May 2020 is stale: he died aged 81 in December 2017. The exact existing Wikipedia link, official history and terminal obituary resolve identity despite the export inconsistency. Mortality correction proposed; calculated age fields left untouched.",
+    "Property-company holdings are significant, but their share of the overall fortune is not established. Gambling sector conclusions are medium-confidence core-business inferences; no net-worth estimate or billion-dollar claim is used.",
+    "Father succession plus economic ownership supports family transfer. The precise transfer instrument is not public in opened sources, so neither an inheritance deed nor a separately self-made core is claimed.",
+    "Exact Forbes profile check found none. Contextual searches covered Instagram, LinkedIn, personal websites, Facebook, Twitter, Youtube, TikTok, Vimeo and Flickr. LinkedIn results include a living Massachusetts patent investor, Brazilian banker and Atlanta mechanical professional; all excluded. No verified personal account found. Existing Wikipedia retained without duplicate; official company website proposed. Trip Advisor and Zillow are inapplicable.",
+    "Electronic games and historical-race wagering under Charles are not conflated with his sons’ full casino and hotel expansion after his death. Casino operations describes the substantial electronic gaming business documented before 2017, not the later licence or resort. Online betting was found as a supporting track product, but no defining separate personal online-gambling mandate was established.",
+    "Secondary nationality remains unverified. Prabook’s isolated 26 August birth date conflicts with AP and the researched historical reference; stronger convergent sources support 27 August."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Inventory, identity, public research, four separate wealth decisions, active-tag contract review, Forbes and social checks, source-hidden drafting, pair review and reverse-source review completed. Strict validation passed without warnings. Only owner 434 dossier written; no shared or live changes."
+  },
+  "wealth_creation_industry": {
+    "classification": "gambling_casinos",
+    "label": "Gambling & Casinos",
+    "summary": "Reasoned core-business inference: the family controlled racetracks before his succession and official history identifies his personal ownership of Oaklawn from 1968. Longstanding wagering operations, successive expansion and the enterprise’s scale establish a material principal asset, not merely a sporting hobby. Family commercial property holdings are also documented, but their relative contribution is not quantified; the repeatedly identified central racing and wagering business provides the best-supported sector.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "Reasoned core-business inference: the family controlled racetracks before his succession and official history identifies his personal ownership of Oaklawn from 1968. Longstanding wagering operations, successive expansion and the enterprise’s scale establish a material principal asset, not merely a sporting hobby. Family commercial property holdings are also documented, but their relative contribution is not quantified; the repeatedly identified central racing and wagering business provides the best-supported sector."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "primary_industry": {
+    "classification": "gambling_casinos",
+    "label": "Gambling & Casinos",
+    "summary": "Final-lifetime position in 2017: he remained Oaklawn’s owner, president and chairman through the growth of historical-race wagering and electronic gaming. Material centrality is inferred from the continuing core enterprise and its documented operating scale, not a present-day casino valuation. Southern Real Estate remained a separate substantial property interest, but no evidence establishes that it displaced Oaklawn as the principal private business. Posthumous hotel and full casino expansion is excluded.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "Final-lifetime position in 2017: he remained Oaklawn’s owner, president and chairman through the growth of historical-race wagering and electronic gaming. Material centrality is inferred from the continuing core enterprise and its documented operating scale, not a present-day casino valuation. Southern Real Estate remained a separate substantial property interest, but no evidence establishes that it displaced Oaklawn as the principal private business. Posthumous hotel and full casino expansion is excluded."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S5",
+      "S6",
+      "S8"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Family transfer is inferred from an established family-controlled business, succession to his father after the latter’s death, and explicit identification as Oaklawn’s owner from the same year. These establish an economic succession, not management appointment alone. His subsequent expansion is well documented, but no reliable opened source specifies the legal transfer instrument; therefore Inherited and expanded is not asserted.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "Family transfer is inferred from an established family-controlled business, succession to his father after the latter’s death, and explicit identification as Oaklawn’s owner from the same year. These establish an economic succession, not management appointment alone. His subsequent expansion is well documented, but no reliable opened source specifies the legal transfer instrument; therefore Inherited and expanded is not asserted."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S6"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "operator",
+    "label": "Operator",
+    "summary": "Historical final-lifetime operator: family release and terminal reporting identify him as Oaklawn president and chairman, with sustained responsibility for its expansion and adaptation; succession to his son occurred after death. He also led the property company. This describes his material operating role at death in 2017, not a present living role or honorary board position.",
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Historical final-lifetime operator: family release and terminal reporting identify him as Oaklawn president and chairman, with sustained responsibility for its expansion and adaptation; succession to his son occurred after death. He also led the property company. This describes his material operating role at death in 2017, not a present living role or honorary board position."
+    },
+    "source_ids": [
+      "S1",
+      "S5",
+      "S6",
+      "S8"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "American businessman and third-generation owner and operator of Oaklawn Park.",
+    "defining_work": "Led the family racetrack and a St. Louis commercial-property business.",
+    "formative_context": "Succeeded his father in the established family enterprise.",
+    "decisive_moment": "Oaklawn responded to casino competition with electronic wagering on past horse races.",
+    "enduring_dimensions": [
+      "Team-led adaptation of the racetrack’s commercial model.",
+      "Improved purses to attract stronger fields.",
+      "Personal ownership of major winning thoroughbreds."
+    ],
+    "character_detail": "His personal racing stable included Breeders’ Cup Turf winner Northern Spur.",
+    "opening_options": [
+      {
+        "mode": "decisive_event",
+        "angle": "Casino competition and the decision to develop a new wagering product."
+      },
+      {
+        "mode": "defining_achievement",
+        "angle": "Oaklawn’s revival through larger purses funded by new gaming revenues."
+      }
+    ],
+    "excluded_transient_context": [
+      "Vessel relationships",
+      "Personal net-worth estimates",
+      "Private medical history",
+      "Sons’ later resort development"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4",
+      "S5",
+      "S7"
+    ]
+  },
+  "biography": {
+    "plain_text": "Charles J. Cella was an American businessman from St. Louis and the third generation of his family to own and lead Oaklawn Park in Arkansas. He succeeded his father at the racetrack and also headed Southern Real Estate and Financial Company, which held commercial properties and shopping centres around St. Louis.",
+    "html": "<p>Charles J. Cella was an American businessman from St. Louis and the third generation of his family to own and lead Oaklawn Park in Arkansas. He succeeded his father at the racetrack and also headed Southern Real Estate and Financial Company, which held commercial properties and shopping centres around St. Louis.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Material claims reverse-checked against opened official, independent and contemporary specialist sources."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Competition from nearby casinos pushed Oaklawn owner Charles Cella and his management team to find new ways to sustain horse racing. General manager Eric Jackson devised Instant Racing, which allowed customers to wager on replays of past races. Its introduction in 2000, followed by additional electronic games, helped revive the track’s finances.\n\nGaming revenue increased the money available for race prizes, attracting stronger fields and reinforcing Oaklawn’s place in the racing calendar. Cella also participated as a racehorse owner, maintaining a stable of thoroughbreds alongside his role running the venue. His Northern Spur won the Breeders’ Cup Turf in 1995.",
+    "html": "<p>Competition from nearby casinos pushed Oaklawn owner Charles Cella and his management team to find new ways to sustain horse racing. General manager Eric Jackson devised Instant Racing, which allowed customers to wager on replays of past races. Its introduction in 2000, followed by additional electronic games, helped revive the track’s finances.</p>\r\n<p>Gaming revenue increased the money available for race prizes, attracting stronger fields and reinforcing Oaklawn’s place in the racing calendar. Cella also participated as a racehorse owner, maintaining a stable of thoroughbreds alongside his role running the venue. His Northern Spur won the Breeders’ Cup Turf in 1995.</p>\r\n",
+    "word_count": 100,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Material claims reverse-checked against opened official, independent and contemporary specialist sources."
+    },
+    "source_ids": [
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "natural_voice": 4,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "inherited_operator"
+    ],
+    "notes": "Source-hidden fact pool and allocation preceded drafting. Shared anchors: Cella and Oaklawn leadership. Short-only: St. Louis background, family succession and commercial-property business. Long-only: casino competitive pressure, Jackson’s historical-racing product, prize-money mechanism and personal Northern Spur achievement. Long deliberately omits lineage and real estate; reducing it to the identity card loses concrete operating decisions and sporting achievement. Reverse-check credits Jackson and the team, not Cella alone, with invention; gaming revenue is the explicit source of race-prize funding."
+  }
+}

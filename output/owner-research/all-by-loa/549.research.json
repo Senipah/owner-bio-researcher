@@ -1,0 +1,1338 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 549,
+    "display_name": "Patrick De Barros",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The saved Seljm relationship is independently attributed to Patrick Monteiro de Barros by the International Six Metre Association and a direct Cascais interview. Portuguese nationality and elite sailing activity conclusively bridge the abbreviated owner record to the energy investor and Olympian."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "owner": {
+      "person_id": 549,
+      "display_name": "Patrick De Barros",
+      "profile_url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=549",
+      "top_100": {
+        "current_owner": false,
+        "historical_owner": false,
+        "relationships": []
+      }
+    },
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "main_residence_country",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "main_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "biography_present": false,
+    "existing_socials": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "missing_person_relevant_social_types": [
+      {
+        "type_id": "2",
+        "type": "Facebook"
+      },
+      {
+        "type_id": "3",
+        "type": "Twitter"
+      },
+      {
+        "type_id": "4",
+        "type": "Youtube"
+      },
+      {
+        "type_id": "5",
+        "type": "LinkedIn"
+      },
+      {
+        "type_id": "9",
+        "type": "Instagram"
+      },
+      {
+        "type_id": "15",
+        "type": "Personal Website"
+      },
+      {
+        "type_id": "16",
+        "type": "TikTok"
+      }
+    ],
+    "missing_supported_social_types": [
+      {
+        "type_id": "2",
+        "type": "Facebook"
+      },
+      {
+        "type_id": "3",
+        "type": "Twitter"
+      },
+      {
+        "type_id": "4",
+        "type": "Youtube"
+      },
+      {
+        "type_id": "5",
+        "type": "LinkedIn"
+      },
+      {
+        "type_id": "6",
+        "type": "Trip Advisor"
+      },
+      {
+        "type_id": "7",
+        "type": "Vimeo"
+      },
+      {
+        "type_id": "8",
+        "type": "Flickr"
+      },
+      {
+        "type_id": "9",
+        "type": "Instagram"
+      },
+      {
+        "type_id": "10",
+        "type": "Wikipedia"
+      },
+      {
+        "type_id": "11",
+        "type": "Forbes"
+      },
+      {
+        "type_id": "12",
+        "type": "Zillow"
+      },
+      {
+        "type_id": "14",
+        "type": "Company Website"
+      },
+      {
+        "type_id": "15",
+        "type": "Personal Website"
+      },
+      {
+        "type_id": "16",
+        "type": "TikTok"
+      }
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "116": "Russian",
+        "4": "American",
+        "118": "Saudi Arabian",
+        "43": "Egyptian",
+        "52": "French",
+        "145": "Ukrainian",
+        "143": "Turkish",
+        "32": "Chinese",
+        "114": "Qatari",
+        "102": "Nigerian",
+        "133": "Swedish",
+        "65": "Indonesian",
+        "29": "Canadian",
+        "36": "Croatian",
+        "57": "Greek",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "22": "British",
+        "8": "Australian",
+        "92": "Mexican",
+        "100": "New Zealander",
+        "75": "Kazakhstanian",
+        "134": "Swiss",
+        "128": "Spanish",
+        "69": "Israeli",
+        "62": "Hungarian",
+        "122": "Singaporean",
+        "89": "Malaysian",
+        "70": "Italian",
+        "105": "Pakistani",
+        "55": "German",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "68": "Irish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "81": "Lebanese",
+        "25": "Bulgarian",
+        "9": "Austrian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "111": "Polish",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "16": "Belgian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "41": "Dutch",
+        "7": "Armenian",
+        "38": "Cypriot",
+        "135": "Syrian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "85": "Luxembourgish",
+        "120": "Serbian",
+        "3": "Algerian",
+        "107": "Panamamian",
+        "11": "Bahamanian",
+        "37": "Cuban",
+        "112": "Portuguese",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "113": "Puerto Rican",
+        "1": "Afghan",
+        "90": "Maltese",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "126": "South African",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "142": "Tunisian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "2": "Albanian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "66": "Iranian",
+        "15": "Belarussian",
+        "147": "Uzbekistanian",
+        "146": "Uruguayan",
+        "58": "Grenadian"
+      },
+      "secondary_nationality": {
+        "112": "Portuguese",
+        "147": "Uzbekistanian",
+        "75": "Kazakhstanian",
+        "135": "Syrian",
+        "55": "German",
+        "69": "Israeli",
+        "4": "American",
+        "22": "British",
+        "66": "Iranian",
+        "145": "Ukrainian",
+        "120": "Serbian",
+        "29": "Canadian",
+        "38": "Cypriot",
+        "52": "French",
+        "126": "South African",
+        "122": "Singaporean",
+        "128": "Spanish",
+        "90": "Maltese",
+        "134": "Swiss",
+        "8": "Australian",
+        "100": "New Zealander",
+        "11": "Bahamanian",
+        "113": "Puerto Rican",
+        "118": "Saudi Arabian",
+        "143": "Turkish",
+        "57": "Greek",
+        "146": "Uruguayan",
+        "116": "Russian",
+        "102": "Nigerian",
+        "107": "Panamamian",
+        "68": "Irish",
+        "9": "Austrian",
+        "70": "Italian",
+        "58": "Grenadian",
+        "142": "Tunisian",
+        "133": "Swedish",
+        "41": "Dutch",
+        "85": "Luxembourgish",
+        "62": "Hungarian",
+        "16": "Belgian",
+        "81": "Lebanese",
+        "2": "Albanian",
+        "111": "Polish",
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "43": "Egyptian",
+        "32": "Chinese",
+        "114": "Qatari",
+        "65": "Indonesian",
+        "36": "Croatian",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "92": "Mexican",
+        "89": "Malaysian",
+        "105": "Pakistani",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "25": "Bulgarian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "7": "Armenian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "3": "Algerian",
+        "37": "Cuban",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "1": "Afghan",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "15": "Belarussian"
+      },
+      "main_residence_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "98": "Israel",
+        "221": "United States",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "213": "Turkey",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "73": "United Kingdom",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "29": "Bahamas",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "131": "Monaco",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "157": "Netherlands",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "66": "Finland",
+        "180": "Romania",
+        "192": "Slovakia",
+        "187": "Sweden",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "secondary_residence_country": {
+        "131": "Monaco",
+        "221": "United States",
+        "187": "Sweden",
+        "73": "United Kingdom",
+        "148": "Mexico",
+        "2": "United Arab Emirates",
+        "157": "Netherlands",
+        "213": "Turkey",
+        "84": "Greece",
+        "53": "Germany",
+        "29": "Bahamas",
+        "66": "Finland",
+        "158": "Norway",
+        "163": "Oman",
+        "98": "Israel",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "93": "Croatia",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "180": "Romania",
+        "192": "Slovakia",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "181": "Russian Federation",
+        "221": "United States",
+        "223": "Uzbekistan",
+        "61": "Egypt",
+        "71": "France",
+        "118": "Kazakhstan",
+        "183": "Saudi Arabia",
+        "213": "Turkey",
+        "45": "China",
+        "178": "Qatar",
+        "200": "Syrian Arab Republic",
+        "187": "Sweden",
+        "169": "Pakistan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "90": "Hong Kong",
+        "241": "Azerbaijan",
+        "107": "Japan",
+        "99": "India",
+        "22": "Bahrain",
+        "73": "United Kingdom",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "102": "Iran",
+        "104": "Italy",
+        "64": "Spain",
+        "98": "Israel",
+        "83": "Equatorial Guinea",
+        "95": "Hungary",
+        "149": "Malaysia",
+        "19": "Belgium",
+        "236": "South Africa",
+        "52": "Czech Republic",
+        "188": "Singapore",
+        "55": "Denmark",
+        "101": "Iraq",
+        "192": "Slovakia",
+        "216": "Taiwan",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "40": "Switzerland",
+        "130": "Morocco",
+        "39": "Congo",
+        "157": "Netherlands",
+        "7": "Armenia",
+        "28": "Brazil",
+        "33": "Belarus",
+        "51": "Cyprus",
+        "129": "Libyan Arab Jamahiriya",
+        "210": "Turkmenistan",
+        "206": "Thailand",
+        "66": "Finland",
+        "180": "Romania",
+        "106": "Jordan",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "97": "Ireland",
+        "186": "Sudan",
+        "155": "Nigeria",
+        "48": "Cuba",
+        "246": "Serbia",
+        "175": "Portugal",
+        "131": "Monaco",
+        "190": "Slovenia",
+        "126": "Lithuania",
+        "211": "Tunisia",
+        "43": "Chile",
+        "173": "Puerto Rico",
+        "219": "Uganda",
+        "86": "Guatemala",
+        "60": "Estonia",
+        "144": "Malta",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "16": "Bosnia and Herzegovina",
+        "127": "Luxembourg",
+        "165": "Peru",
+        "164": "Panama",
+        "54": "Djibouti",
+        "41": "Cote d'Ivoire",
+        "75": "Georgia",
+        "233": "Yemen",
+        "57": "Dominican Republic",
+        "29": "Bahamas",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "128": "Latvia",
+        "123": "Sri Lanka",
+        "6": "Albania",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia",
+        "243": "Isle Of Man",
+        "17": "Barbados",
+        "222": "Uruguay",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "225": "Saint Vincent and the Grenadines",
+        "146": "Maldives",
+        "201": "Swaziland",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia"
+      },
+      "birth_month": {
+        "10": "October",
+        "7": "July",
+        "11": "November",
+        "12": "December",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "6": "June",
+        "1": "January",
+        "5": "May",
+        "4": "April",
+        "2": "February"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "4": "Unknown",
+        "2": "Dead",
+        "3": "Missing"
+      },
+      "death_month": {
+        "5": "May",
+        "6": "June",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "10": "October",
+        "7": "July",
+        "1": "January",
+        "2": "February",
+        "11": "November",
+        "12": "December",
+        "4": "April"
+      }
+    },
+    "existing_social_types": []
+  },
+  "research_status": "complete",
+  "editorial_note": null,
+  "biography_brief": {
+    "durable_identity": "Portuguese energy investor, corporate director and Olympic sailor Patrick Monteiro de Barros.",
+    "defining_work": "Built an international oil-trading and refining career through Philipp Brothers, Argus Resources, Tosco, Petrogal and Petroplus.",
+    "formative_context": "Born into an affluent Portuguese business family, began in family affairs and Sonap, then established his career in the United States.",
+    "decisive_moment": "Moved into international commodities after Portuguese nationalisations and developed a long oil-trading and investment career.",
+    "enduring_dimensions": [
+      "Oil trading and refining",
+      "Energy investment and corporate governance",
+      "Olympic and international competitive sailing"
+    ],
+    "character_detail": "Combined boardroom leadership with sustained top-level sailing, including Olympic representation for Portugal.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Energy investor and Olympic sailor."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "The move from Portuguese family business into US commodities markets."
+      }
+    ],
+    "excluded_transient_context": [
+      "Personal vessel ownership",
+      "Private residences",
+      "Petroplus allegations and insolvency detail",
+      "Unverified wealth rankings"
+    ],
+    "source_ids": [
+      "S0",
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 4,
+    "opening_mode": "present_identity",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": [
+      "investor_philanthropist"
+    ],
+    "notes": "The short biography balances the defining energy career with Olympic sailing. The long biography allocates distinct detail to family context, trading progression, refining investments and corporate governance."
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Exact-name, company and Portuguese-wealth searches found no dedicated Forbes profile for Patrick Monteiro de Barros."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "energy",
+    "label": "Energy",
+    "summary": "Barros built his principal fortune through oil trading, refining investments and leadership roles spanning Philipp Brothers, Argus, Tosco and Petroplus.",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Corporate filings and detailed Portuguese business reporting consistently document a multi-decade oil-sector career and material refining shareholdings."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "primary_industry": {
+    "classification": "energy",
+    "label": "Energy",
+    "summary": "His defining final commercial field remained oil refining and broader energy investment, alongside advocacy for nuclear generation in Portugal.",
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Petroplus filings, contemporary reporting and interviews document his chairmanship, investments and continuing public energy role."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "mixed",
+    "label": "Mixed",
+    "summary": "Barros began from an affluent family-business background and later built substantial independent wealth through US commodities and refining investments.",
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Detailed profiles document both early responsibility for family business and a later self-directed fortune in US oil markets; neither component alone describes the full origin."
+    },
+    "source_ids": [
+      "S1",
+      "S6"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "investor",
+    "label": "Investor",
+    "summary": "His durable economic role combined substantial refining shareholdings with chairmanships and long-term capital allocation across energy companies.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Sources document material Tosco and Petroplus positions, Argus leadership and several energy-company board roles."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "biography": {
+    "plain_text": "Patrick Monteiro de Barros is a Portuguese energy investor and Olympic sailor. After early work at Sonap, he spent twelve years at commodities group Philipp Brothers, then led Argus Resources and held major refining interests in Tosco and Petroplus. He also served on prominent Portuguese corporate boards and championed nuclear power development.",
+    "html": "<p>Patrick Monteiro de Barros is a Portuguese energy investor and Olympic sailor. After early work at Sonap, he spent twelve years at commodities group Philipp Brothers, then led Argus Resources and held major refining interests in Tosco and Petroplus. He also served on prominent Portuguese corporate boards and championed nuclear power development.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Corporate filings, business profiles and Olympic records support the energy career, board roles, nuclear advocacy and sporting identity."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Born in Paris and raised in Cascais, Patrício Miguel Guerry Monteiro de Barros entered his family’s commercial affairs while still a student. He later joined Portuguese refiner Sonap and moved to the United States after nationalisation disrupted the business. At Philipp Brothers he built a career in international oil trading before becoming chief executive of Sigmoil and chairman of Argus Resources.\n\nBarros combined executive leadership with substantial energy investments. He held shares in Tosco before its sale to Phillips, served on Petrogal’s board and became chairman of European refiner Petroplus. His wider directorships included Portugal Telecom and Espírito Santo Financial Group. Outside business, he represented Portugal in Star-class sailing at the Seoul Olympics and remained a leading international competitor.",
+    "html": "<p>Born in Paris and raised in Cascais, Patrício Miguel Guerry Monteiro de Barros entered his family’s commercial affairs while still a student. He later joined Portuguese refiner Sonap and moved to the United States after nationalisation disrupted the business. At Philipp Brothers he built a career in international oil trading before becoming chief executive of Sigmoil and chairman of Argus Resources.</p>\r\n<p>Barros combined executive leadership with substantial energy investments. He held shares in Tosco before its sale to Phillips, served on Petrogal’s board and became chairman of European refiner Petroplus. His wider directorships included Portugal Telecom and Espírito Santo Financial Group. Outside business, he represented Portugal in Star-class sailing at the Seoul Olympics and remained a leading international competitor.</p>\r\n",
+    "word_count": 119,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Multiple independent and primary sources corroborate the family context, trading career, executive roles, refining investments and Olympic participation."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "display_name",
+      "existing_value": "Patrick De Barros",
+      "value": "Patrick Monteiro de Barros",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Corporate filings, Olympic records and direct interviews consistently use Patrick Monteiro de Barros for the identity-secure Seljm owner."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S5"
+      ]
+    },
+    {
+      "field": "middle_names",
+      "value": "Monteiro",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The middle family name appears consistently across primary corporate and Olympic records."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S5"
+      ]
+    },
+    {
+      "field": "last_name",
+      "existing_value": "De Barros",
+      "value": "de Barros",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Identity-secure Portuguese and corporate sources use the lowercase particle in the public surname."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Energy Investor and Olympic Sailor",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "His multi-decade oil career and Portuguese Olympic sailing appearance are independently documented."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S5"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Corporate, interview and Olympic sources identify Barros as male."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S5"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Paris",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Olympedia gives Paris as his birthplace."
+      },
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "field": "birth_country",
+      "value": "France",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Olympedia and Portuguese business reporting identify his birth in France."
+      },
+      "source_ids": [
+        "S1",
+        "S5"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "3",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Olympedia gives the complete birth date."
+      },
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "February",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Olympedia gives the complete birth date."
+      },
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1945",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Olympedia and contemporary age reporting support the birth year."
+      },
+      "source_ids": [
+        "S1",
+        "S5"
+      ]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Patrick Monteiro de Barros is a Portuguese energy investor and Olympic sailor. After early work at Sonap, he spent twelve years at commodities group Philipp Brothers, then led Argus Resources and held major refining interests in Tosco and Petroplus. He also served on prominent Portuguese corporate boards and championed nuclear power development.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The proposed biography draws only on well-corroborated business and sporting facts."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0216",
+      "name": "Commodity trading",
+      "summary": "Barros spent twelve years at Philipp Brothers and then led Argus Resources, making international commodities and oil trading a defining career specialism.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Petroplus’s official biography directly documents these roles and dates."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "tag_id": "tag_0368",
+      "name": "Oil refining",
+      "summary": "He held material positions and board leadership across Tosco, Petrogal and Petroplus.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Corporate filings and independent reporting establish sustained refining investment and governance roles."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "tag_id": "tag_0044",
+      "name": "Competitive sailing",
+      "summary": "Barros competed at the Olympics and remained active at international championship level for decades.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Olympedia, the International Six Metre Association and Cascais records document his sustained competitive career."
+      },
+      "source_ids": [
+        "S5",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "tag_id": "tag_3296",
+      "name": "Olympian",
+      "summary": "He represented Portugal in the Star-class event at the Seoul Olympic Games.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Olympedia records his Portuguese Olympic participation and result."
+      },
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "tag_id": "tag_0426",
+      "name": "America's Cup",
+      "summary": "Barros coordinated the Lisbon-Cascais bid to host the America’s Cup and later helped bring an America’s Cup World Series event to Cascais.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Contemporary EFE reporting and his Cascais interview document a substantial organising role."
+      },
+      "source_ids": [
+        "S8",
+        "S9"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=549",
+      "title": "Patrick De Barros saved owner record",
+      "publisher": "Superyacht Network; immutable owner export",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Abbreviated Portuguese identity and Seljm relationship used for identity resolution."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://dinheirovivo.dn.pt/patrick-monteiro-de-barros-um-homem-do-petroleo-que-quer-o-nuclear-12594895.html",
+      "title": "Patrick Monteiro de Barros: an oil man who wants nuclear",
+      "publisher": "Dinheiro Vivo",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "French birth, affluent family background, US-built fortune, Sonap, Tosco and Petroplus roles, nuclear advocacy and broader identity."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://media.corporate-ir.net/media_files/irol/15/157968/reports/2009_Annual_Report2.pdf",
+      "title": "Petroplus 2009 annual report",
+      "publisher": "Petroplus Holdings AG",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Education, Philipp Brothers, Sigmoil and Argus career, Petroplus vice-chairmanship and foundation and holding-company roles."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://media.corporate-ir.net/media_files/irol/15/157968/2010AR/PetroplusHoldingsAG-Gesch%C3%A4ftsbericht2010.pdf",
+      "title": "Petroplus 2010 annual report",
+      "publisher": "Petroplus Holdings AG",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Portuguese nationality, board tenure, vice-chairmanship and succession to chairman in 2011."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.rtp.pt/noticias/economia/as-dificuldades-das-empresas-de-patrick-de-barros_v522135",
+      "title": "The difficulties of Patrick de Barros’s companies",
+      "publisher": "RTP",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Shareholder relationship to Petroplus and continued executive engagement with the refining business."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.olympedia.org/athletes/61749",
+      "title": "Patrick Monteiro de Barros",
+      "publisher": "Olympedia",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Full name and other names, birth on 3 February 1945 in Paris, male sex, Portuguese representation and 1988 Olympic Star-class result."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.peninsula-press.com/REPORTS/portugalmiramundo_abc.pdf",
+      "title": "Portugal Mira Mundo profile",
+      "publisher": "Peninsula Press / ABC Portugal supplement",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Father’s tungsten-exporting business, early family-business responsibility, later independent career and oil-sector fortune."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://6metre.com/2022/09/07/seljm-and-bribon-500-lead-after-day-two-of-the-six-metre-european-championship-2022/",
+      "title": "Seljm leads Six Metre European Championship",
+      "publisher": "International Six Metre Association",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Exact Patrick Monteiro de Barros and Seljm identity bridge and continuing elite competitive sailing."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.cascais.pt/sites/default/files/anexos/jornal/net.pdf",
+      "title": "Interview with Patrick Monteiro de Barros",
+      "publisher": "Câmara Municipal de Cascais",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Direct interview, Cascais upbringing, business identity, Olympic sailing, America’s Cup work and Seljm history."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.nacion.com/puro-deporte/coordinador-de-candidatura-espera-decision-confiado-y-sereno/H2HC7DZO5BBBLGOXN6SAPF3H7I/story/",
+      "title": "Portuguese bid coordinator awaits America’s Cup decision",
+      "publisher": "La Nación / EFE",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Role as coordinator of the Lisbon-Cascais bid for the America’s Cup."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The saved name omits Monteiro. Exact Seljm, Olympic and corporate records establish Patrick Monteiro de Barros as the correct full public identity, so display and name fields are proposed for correction.",
+    "His legal names include Patrício Miguel Guerry, but the established public business identity is Patrick Monteiro de Barros; the dossier does not replace Patrick with the formal given names.",
+    "Mixed wealth origin reflects both an affluent family-business start and a separately built US energy fortune.",
+    "Alive status is retained because current 2023–2025 sailing records support continued activity; no death record was found.",
+    "No dedicated Forbes or identity-secure supported social profile was verified. Personal vessel details are excluded from the biographies."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "The Seljm bridge conclusively resolves the owner as Patrick Monteiro de Barros. The dossier corrects the abbreviated name, establishes full birth details, documents the oil and refining fortune, and captures his Olympic and America’s Cup record without using private-vessel material in biography."
+  }
+}

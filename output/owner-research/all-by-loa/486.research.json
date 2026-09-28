@@ -1,0 +1,1234 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 486,
+    "display_name": "Garry Campbell Comer",
+    "identity_confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Institutional obituary identifies Gary Campbell Comer, aged 78 at his October 2006 death. Exact middle/surname and Cupani, formerly Turmoil, context identify the Lands' End founder, not his son Guy. Garry is a supported spelling correction; saved identifiers remain unchanged."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "116": "Russian",
+        "4": "American",
+        "118": "Saudi Arabian",
+        "43": "Egyptian",
+        "52": "French",
+        "145": "Ukrainian",
+        "143": "Turkish",
+        "32": "Chinese",
+        "114": "Qatari",
+        "102": "Nigerian",
+        "133": "Swedish",
+        "65": "Indonesian",
+        "29": "Canadian",
+        "36": "Croatian",
+        "57": "Greek",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "22": "British",
+        "8": "Australian",
+        "92": "Mexican",
+        "100": "New Zealander",
+        "75": "Kazakhstanian",
+        "134": "Swiss",
+        "128": "Spanish",
+        "69": "Israeli",
+        "62": "Hungarian",
+        "122": "Singaporean",
+        "89": "Malaysian",
+        "70": "Italian",
+        "105": "Pakistani",
+        "55": "German",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "68": "Irish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "81": "Lebanese",
+        "25": "Bulgarian",
+        "9": "Austrian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "111": "Polish",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "16": "Belgian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "41": "Dutch",
+        "7": "Armenian",
+        "38": "Cypriot",
+        "135": "Syrian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "85": "Luxembourgish",
+        "120": "Serbian",
+        "3": "Algerian",
+        "107": "Panamamian",
+        "11": "Bahamanian",
+        "37": "Cuban",
+        "112": "Portuguese",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "113": "Puerto Rican",
+        "1": "Afghan",
+        "90": "Maltese",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "126": "South African",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "142": "Tunisian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "2": "Albanian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "66": "Iranian",
+        "15": "Belarussian",
+        "147": "Uzbekistanian",
+        "146": "Uruguayan",
+        "58": "Grenadian"
+      },
+      "secondary_nationality": {
+        "112": "Portuguese",
+        "147": "Uzbekistanian",
+        "75": "Kazakhstanian",
+        "135": "Syrian",
+        "55": "German",
+        "69": "Israeli",
+        "4": "American",
+        "22": "British",
+        "66": "Iranian",
+        "145": "Ukrainian",
+        "120": "Serbian",
+        "29": "Canadian",
+        "38": "Cypriot",
+        "52": "French",
+        "126": "South African",
+        "122": "Singaporean",
+        "128": "Spanish",
+        "90": "Maltese",
+        "134": "Swiss",
+        "8": "Australian",
+        "100": "New Zealander",
+        "11": "Bahamanian",
+        "113": "Puerto Rican",
+        "118": "Saudi Arabian",
+        "143": "Turkish",
+        "57": "Greek",
+        "146": "Uruguayan",
+        "116": "Russian",
+        "102": "Nigerian",
+        "107": "Panamamian",
+        "68": "Irish",
+        "9": "Austrian",
+        "70": "Italian",
+        "58": "Grenadian",
+        "142": "Tunisian",
+        "133": "Swedish",
+        "41": "Dutch",
+        "85": "Luxembourgish",
+        "62": "Hungarian",
+        "16": "Belgian",
+        "81": "Lebanese",
+        "2": "Albanian",
+        "111": "Polish",
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "43": "Egyptian",
+        "32": "Chinese",
+        "114": "Qatari",
+        "65": "Indonesian",
+        "36": "Croatian",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "92": "Mexican",
+        "89": "Malaysian",
+        "105": "Pakistani",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "25": "Bulgarian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "7": "Armenian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "3": "Algerian",
+        "37": "Cuban",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "1": "Afghan",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "15": "Belarussian"
+      },
+      "main_residence_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "98": "Israel",
+        "221": "United States",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "213": "Turkey",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "73": "United Kingdom",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "29": "Bahamas",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "131": "Monaco",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "157": "Netherlands",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "66": "Finland",
+        "180": "Romania",
+        "192": "Slovakia",
+        "187": "Sweden",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "secondary_residence_country": {
+        "131": "Monaco",
+        "221": "United States",
+        "187": "Sweden",
+        "73": "United Kingdom",
+        "148": "Mexico",
+        "2": "United Arab Emirates",
+        "157": "Netherlands",
+        "213": "Turkey",
+        "84": "Greece",
+        "53": "Germany",
+        "29": "Bahamas",
+        "66": "Finland",
+        "158": "Norway",
+        "163": "Oman",
+        "98": "Israel",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "93": "Croatia",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "180": "Romania",
+        "192": "Slovakia",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "181": "Russian Federation",
+        "221": "United States",
+        "223": "Uzbekistan",
+        "61": "Egypt",
+        "71": "France",
+        "118": "Kazakhstan",
+        "183": "Saudi Arabia",
+        "213": "Turkey",
+        "45": "China",
+        "178": "Qatar",
+        "200": "Syrian Arab Republic",
+        "187": "Sweden",
+        "169": "Pakistan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "90": "Hong Kong",
+        "241": "Azerbaijan",
+        "107": "Japan",
+        "99": "India",
+        "22": "Bahrain",
+        "73": "United Kingdom",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "102": "Iran",
+        "104": "Italy",
+        "64": "Spain",
+        "98": "Israel",
+        "83": "Equatorial Guinea",
+        "95": "Hungary",
+        "149": "Malaysia",
+        "19": "Belgium",
+        "236": "South Africa",
+        "52": "Czech Republic",
+        "188": "Singapore",
+        "55": "Denmark",
+        "101": "Iraq",
+        "192": "Slovakia",
+        "216": "Taiwan",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "40": "Switzerland",
+        "130": "Morocco",
+        "39": "Congo",
+        "157": "Netherlands",
+        "7": "Armenia",
+        "28": "Brazil",
+        "33": "Belarus",
+        "51": "Cyprus",
+        "129": "Libyan Arab Jamahiriya",
+        "210": "Turkmenistan",
+        "206": "Thailand",
+        "66": "Finland",
+        "180": "Romania",
+        "106": "Jordan",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "97": "Ireland",
+        "186": "Sudan",
+        "155": "Nigeria",
+        "48": "Cuba",
+        "246": "Serbia",
+        "175": "Portugal",
+        "131": "Monaco",
+        "190": "Slovenia",
+        "126": "Lithuania",
+        "211": "Tunisia",
+        "43": "Chile",
+        "173": "Puerto Rico",
+        "219": "Uganda",
+        "86": "Guatemala",
+        "60": "Estonia",
+        "144": "Malta",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "16": "Bosnia and Herzegovina",
+        "127": "Luxembourg",
+        "165": "Peru",
+        "164": "Panama",
+        "54": "Djibouti",
+        "41": "Cote d'Ivoire",
+        "75": "Georgia",
+        "233": "Yemen",
+        "57": "Dominican Republic",
+        "29": "Bahamas",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "128": "Latvia",
+        "123": "Sri Lanka",
+        "6": "Albania",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia",
+        "243": "Isle Of Man",
+        "17": "Barbados",
+        "222": "Uruguay",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "225": "Saint Vincent and the Grenadines",
+        "146": "Maldives",
+        "201": "Swaziland",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia"
+      },
+      "birth_month": {
+        "10": "October",
+        "7": "July",
+        "11": "November",
+        "12": "December",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "6": "June",
+        "1": "January",
+        "5": "May",
+        "4": "April",
+        "2": "February"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "4": "Unknown",
+        "2": "Dead",
+        "3": "Missing"
+      },
+      "death_month": {
+        "5": "May",
+        "6": "June",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "10": "October",
+        "7": "July",
+        "1": "January",
+        "2": "February",
+        "11": "November",
+        "12": "December",
+        "4": "April"
+      }
+    },
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "existing_social_types": []
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Gary Campbell Comer, American founder of Lands' End and supporter of science and children's services.",
+    "defining_work": "Turned a sailing-equipment catalogue into a large apparel retailer.",
+    "formative_context": "Chicago upbringing, public boat-shop training and an advertising copywriting career.",
+    "decisive_moment": "Moved the catalogue business towards clothing and soft luggage.",
+    "enduring_dimensions": [
+      "Mail-order apparel",
+      "Competitive sailing",
+      "Climate research and children's services"
+    ],
+    "character_detail": "Learned sailing by sanding and scrubbing boats for local sailors.",
+    "opening_options": [
+      {
+        "mode": "defining_achievement",
+        "angle": "The catalogue retailer built around a copywriter's skills."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Learning to sail through work at a local boat shop."
+      }
+    ],
+    "excluded_transient_context": [
+      "Vessel ownership",
+      "Wealth rankings",
+      "Descendants' later activities",
+      "Private addresses"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "natural_voice": 4,
+    "opening_mode": "defining_achievement",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": [
+      "founder_operator",
+      "investor_philanthropist"
+    ],
+    "notes": "Short allocates advertising, catalogue transformation, Wisconsin operations and the Sears sale. Long omits those commercial milestones and develops sailing training, competition, climate fellowships, youth facilities and hospital services. Shared anchors are the subject and Lands' End identity. Both texts stand alone; final sentences supply concrete facts rather than summarising payoff clauses. Source reverse-check and historical chronology pass completed."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://images.forbes.com/lists/2006/10/KPB1.html",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Opened exact historical personal Forbes page names Gary Comer, age 78, US citizenship, Lands' End source and the 2002 sale. The separate Comer family profile is not substituted for his personal profile."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "fashion_retail",
+    "label": "Fashion & Retail",
+    "summary": "The controlling stake he built in Lands' End and monetised in the Sears sale was the principal wealth source.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Forbes explicitly attributes wealth to Lands' End; the documented controlling stake and sale establish the mechanism. Apparel retail maps directly to Fashion & Retail."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S5"
+    ]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Final-lifetime private investment interests managed through GCI after the sale of Lands' End.",
+    "confidence": {
+      "score": 80,
+      "band": "medium",
+      "reason": "He sold the operating-company stake and had appointed a manager for his private investments at GCI before that exit. The continuing investment structure is documented independently of charitable grants. Its principal relevance after monetisation is a medium-confidence inference; later portfolio holdings and values are not backdated to 2006."
+    },
+    "source_ids": [
+      "S3",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made_independent",
+    "label": "Self-made — independent start",
+    "summary": "Built the core retailer after earning his living in advertising and forming a commercial partnership with a sailmaker.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "Positive background and launch accounts identify a railroad-worker/homemaker household, paid employment, business partners and outside professional advice. These establish a personally built core without a substantial family-wealth or family-business platform. Commercial mentoring and rent-free business premises from the venture are not family inheritance."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S5"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "passive_asset_owner",
+    "label": "Passive asset owner",
+    "summary": "Final-lifetime investment owner with management delegated to GCI staff while he concentrated on philanthropy.",
+    "confidence": {
+      "score": 78,
+      "band": "medium",
+      "reason": "The family history expressly describes his full attention shifting to philanthropy after the sale. Reporting names the manager he hired to oversee his private investments. This is positive delegated-stewardship evidence; no continuing principal operating company or personal investment-direction mandate is established. Family office principal was considered but would overstate the documented final role."
+    },
+    "source_ids": [
+      "S3",
+      "S6",
+      "S7"
+    ]
+  },
+  "biography": {
+    "plain_text": "Gary Campbell Comer turned a sailing-equipment catalogue into Lands' End, a major American clothing retailer. His earlier career as an advertising copywriter helped shape its detailed product descriptions. From its Wisconsin base, the company expanded internationally, and Comer remained its controlling shareholder until the business was sold to Sears in 2002.",
+    "html": "<p>Gary Campbell Comer turned a sailing-equipment catalogue into Lands' End, a major American clothing retailer. His earlier career as an advertising copywriter helped shape its detailed product descriptions. From its Wisconsin base, the company expanded internationally, and Comer remained its controlling shareholder until the business was sold to Sears in 2002.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Institutional and foundation records substantiate the selected commercial, sporting, scientific and charitable facts."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S5"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Gary Campbell Comer, the founder of Lands' End, learned to sail after joining a Chicago Park District boat-shop programme. Local sailors taught him in exchange for sanding and scrubbing their boats. He later won North American Star Class championships and a Pan American Games bronze medal. A Northwest Passage journey prompted him to investigate climate change; he funded fellowships for scientists studying abrupt shifts in the climate.\n\nComer directed substantial support towards the South Side neighbourhood where he grew up. His gifts helped establish the Gary Comer Youth Center beside his former elementary school. With his wife Frances, he supported the creation and expansion of Comer Children's Hospital, including a paediatric emergency department and mobile care for pupils at local schools.",
+    "html": "<p>Gary Campbell Comer, the founder of Lands' End, learned to sail after joining a Chicago Park District boat-shop programme. Local sailors taught him in exchange for sanding and scrubbing their boats. He later won North American Star Class championships and a Pan American Games bronze medal. A Northwest Passage journey prompted him to investigate climate change; he funded fellowships for scientists studying abrupt shifts in the climate.</p>\r\n<p>Comer directed substantial support towards the South Side neighbourhood where he grew up. His gifts helped establish the Gary Comer Youth Center beside his former elementary school. With his wife Frances, he supported the creation and expansion of Comer Children's Hospital, including a paediatric emergency department and mobile care for pupils at local schools.</p>\r\n",
+    "word_count": 121,
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Institutional and foundation records substantiate the selected commercial, sporting, scientific and charitable facts."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Founder of Lands' End",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Directly stated biographical detail; full birth date comes from the cited reference biography, while year and Chicago birthplace have institutional corroboration."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Directly stated biographical detail; full birth date comes from the cited reference biography, while year and Chicago birthplace have institutional corroboration."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Chicago",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Directly stated biographical detail; full birth date comes from the cited reference biography, while year and Chicago birthplace have institutional corroboration."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "10",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 87,
+        "band": "high",
+        "reason": "Directly stated biographical detail; full birth date comes from the cited reference biography, while year and Chicago birthplace have institutional corroboration."
+      },
+      "source_ids": [
+        "S8"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "December",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 87,
+        "band": "high",
+        "reason": "Directly stated biographical detail; full birth date comes from the cited reference biography, while year and Chicago birthplace have institutional corroboration."
+      },
+      "source_ids": [
+        "S8"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1927",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Directly stated biographical detail; full birth date comes from the cited reference biography, while year and Chicago birthplace have institutional corroboration."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S8"
+      ]
+    },
+    {
+      "field": "first_name",
+      "value": "Gary",
+      "existing_value": "Garry",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Full-name institutional obituary and consistent official family records establish the spelling and death."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "field": "display_name",
+      "value": "Gary Campbell Comer",
+      "existing_value": "Garry Campbell Comer",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Full-name institutional obituary and consistent official family records establish the spelling and death."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "existing_value": "Unknown",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Full-name institutional obituary and consistent official family records establish the spelling and death."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "4",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "University of Chicago Medicine obituary published 4 October 2006 explicitly states he died that day."
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "action": "fill_missing"
+    },
+    {
+      "field": "death_month",
+      "value": "October",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "University of Chicago Medicine obituary published 4 October 2006 explicitly states he died that day."
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "action": "fill_missing"
+    },
+    {
+      "field": "death_year",
+      "value": "2006",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "University of Chicago Medicine obituary published 4 October 2006 explicitly states he died that day."
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "action": "fill_missing"
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type": "Forbes",
+      "type_id": "11",
+      "url": "https://images.forbes.com/lists/2006/10/KPB1.html",
+      "verification": "Exact personal historical Forbes entry, not the later family profile.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact personal historical Forbes entry, not the later family profile."
+      },
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "type": "Wikipedia",
+      "type_id": "10",
+      "url": "https://en.wikipedia.org/wiki/Gary_Comer",
+      "verification": "Full name and life dates match institutional and family records.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Full name and life dates match institutional and family records."
+      },
+      "source_ids": [
+        "S1",
+        "S8"
+      ]
+    },
+    {
+      "type": "Company Website",
+      "type_id": "14",
+      "url": "https://gcionline.com/",
+      "verification": "Official private investment vehicle identifies his legacy; historical affiliation verified by foundation-hosted reporting.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official private investment vehicle identifies his legacy; historical affiliation verified by foundation-hosted reporting."
+      },
+      "source_ids": [
+        "S6",
+        "S7"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0429",
+      "name": "Apparel retail",
+      "summary": "Built and held control of a major catalogue clothing retailer.",
+      "relationship_type": "founder",
+      "temporal_scope": "historical",
+      "taxonomy_value": "Apparel retail",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Direct official and institutional evidence satisfies the active tag's defining-role membership."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S5"
+      ]
+    },
+    {
+      "tag_id": "tag_0044",
+      "name": "Competitive sailing",
+      "summary": "North American Star Class champion and Pan American Games medallist; sustained competitive identity, not recreational ownership.",
+      "relationship_type": "competitor",
+      "temporal_scope": "historical",
+      "taxonomy_value": "Competitive sailing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Direct official and institutional evidence satisfies the active tag's defining-role membership."
+      },
+      "source_ids": [
+        "S3"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.uchicagomedicine.org/forefront/news/gary-comer-1927-2006",
+      "title": "Gary Comer, 1927–2006",
+      "publisher": "University of Chicago Medicine",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "4 October 2006 obituary: full name Gary Campbell Comer, Chicago birth, death that day aged 78, advertising and retail career, controlling ownership until Sears sale, youth centre and hospital/mobile-care support."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://anbhf.org/laureates/gary-comer/",
+      "title": "Gary Comer",
+      "publisher": "American National Business Hall of Fame",
+      "tier": 2,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Cited business history: railroad-worker/homemaker parents, paid copywriting career, commercial sailmaker partnership and advice, catalogue evolution, Wisconsin base, international expansion and controlling equity at sale. Not a family-funded or inherited core."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.comerfamilyfoundation.org/articles/gary-comers-story",
+      "title": "Gary Comer's Story",
+      "publisher": "Comer Family Foundation",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Official biography and first-person recollection: learned sailing through boat work, major competitive results, business identity, 2002 sale and subsequent full attention to philanthropy. This limits claims of active final investment management."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.comerfamilyfoundation.org/about",
+      "title": "Foundation history",
+      "publisher": "Comer Family Foundation",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Northwest Passage journey led to climate interest; fellowship supported research into abrupt change. Contemporary-to-life youth, health and science programmes distinguished from projects launched after his death."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://images.forbes.com/lists/2006/10/KPB1.html",
+      "title": "Gary Comer, The World's Richest People 2006",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened personal profile: age 78, American, Chicago residence, self-made Lands' End fortune and sale to Sears. Historical profile retained exactly; no net-worth amount proposed."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.comerfamilyfoundation.org/news/2016/legacy-of-lands-end-founder-continues",
+      "title": "Legacy of Lands' End founder continues",
+      "publisher": "Milwaukee Journal Sentinel / Guy Boulton, excerpt hosted by Comer Family Foundation",
+      "tier": 2,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "25 November 2016 retrospective explicitly says Comer hired Bill Schleicher 25 years earlier to oversee his private investments at GCI, Gary Comer Inc. Identifies wife Frances and children Guy and Stephanie. Later portfolio size is not used as a 2006 fact."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://gcionline.com/our-philosophy/",
+      "title": "Our Philosophy",
+      "publisher": "GCI",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Official investment vehicle describes equity investment and its Gary Comer lineage. Corroborates identity of the continuing platform, not specific personal asset values or posthumous management by Gary."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://en.wikipedia.org/wiki/Gary_Comer",
+      "title": "Gary Comer",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Full name Gary Campbell Comer and dates 10 December 1927–4 October 2006; founder biography cites published obituaries. Exact birthday supported here, while year/death/place corroborated institutionally."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.autoevolution.com/news/this-34-million-superyacht-fit-for-a-billionaire-doubles-as-a-heavy-duty-research-vessel-211740.html",
+      "title": "Cupani research yacht history",
+      "publisher": "autoevolution",
+      "tier": 3,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Explicitly identifies Gary Comer as original owner of Turmoil, now Cupani, and death shortly after delivery. Used solely for identity bridge; input relationship begins before delivery and may include build period. No yacht dates corrected."
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Spelling, family and mortality",
+      "detail": "Authoritative full name is Gary Campbell Comer; source-record Garry is preserved in owner identity while first_name/display_name corrections are proposed. Son Guy and daughter Stephanie are distinct people. Saved age 78 appears to reflect age at death, not age in 2020; calculated fields left untouched. Death-date components are proposed: the actual Unknown-mortality inventory lists them as researchable. The Alive-only limitation does not apply."
+    },
+    {
+      "topic": "Final lifetime wealth role",
+      "detail": "Assessment ends in October 2006. Retail stake was sold in 2002. GCI existed to manage his private investments before that exit; later sources document continuity but do not establish his final allocation percentages. Finance & Investments is an explicit principal-platform inference. Positive delegation to Schleicher plus the stated philanthropic focus supports Passive asset owner at medium confidence; no invented personal trading or investment committee role. Charitable foundations are not treated as personal wealth assets."
+    },
+    {
+      "topic": "Social screening",
+      "detail": "Gary/Garry name searches and business context covered exact Forbes, Instagram, LinkedIn, personal websites, Facebook, Twitter, YouTube, TikTok, Vimeo, Flickr and Wikipedia. Chemical-industry, technology and Canadian powersports namesakes excluded. Youth-centre social accounts are institutional, not personal. Exact historical Forbes and Wikipedia verified; GCI official website has historical affiliation. No verified personal website or personal account. Trip Advisor and Zillow inapplicable."
+    },
+    {
+      "topic": "Evidence boundaries and missing fields",
+      "detail": "No supported secondary nationality, secondary residence or suffix. Foundation story says presidency ended 1991 while other histories say 1990; that date is omitted. Family Forbes profile is contextual and not his personal link. Sailing federation page and original newspaper link were unavailable, so the opened official family text and authorised excerpt are cited. Apparel retail and Competitive sailing are the minimum useful active tags; no unsupported investment-sector subtag or taxonomy candidate created."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Historical founder identity resolved with correction proposals and clear father/son separation. Four wealth objects independently evaluated with final-lifetime sale and delegation evidence. Complementary professional and sporting/scientific/community biographies reverse-checked. Exact Forbes, all relevant social types and active tags reviewed. No shared or live edits. Parent review corrected the initial death-field handling: the actual immutable inventory permits fills for these Unknown-baseline fields; the supported 4 October 2006 date is proposed."
+  }
+}

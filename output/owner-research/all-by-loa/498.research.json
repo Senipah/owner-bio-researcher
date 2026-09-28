@@ -1,0 +1,1285 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 498,
+    "display_name": "Sir Richard Ashmole Cooper",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The exact full name in the owner record matches the industrialist and parliamentarian, while independent vessel reporting says Natalie was commissioned for him and local history describes him as a yachtsman."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "owner": {
+      "person_id": 498,
+      "display_name": "Sir Richard Ashmole Cooper",
+      "profile_url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=498",
+      "top_100": {
+        "current_owner": false,
+        "historical_owner": false,
+        "relationships": []
+      }
+    },
+    "raw_blank_details": [
+      "name_suffix",
+      "nationality",
+      "secondary_nationality",
+      "main_residence_country",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "nationality",
+      "secondary_nationality",
+      "main_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "biography_present": false,
+    "existing_socials": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "missing_person_relevant_social_types": [
+      {
+        "type_id": "2",
+        "type": "Facebook"
+      },
+      {
+        "type_id": "3",
+        "type": "Twitter"
+      },
+      {
+        "type_id": "4",
+        "type": "Youtube"
+      },
+      {
+        "type_id": "5",
+        "type": "LinkedIn"
+      },
+      {
+        "type_id": "9",
+        "type": "Instagram"
+      },
+      {
+        "type_id": "15",
+        "type": "Personal Website"
+      },
+      {
+        "type_id": "16",
+        "type": "TikTok"
+      }
+    ],
+    "missing_supported_social_types": [
+      {
+        "type_id": "2",
+        "type": "Facebook"
+      },
+      {
+        "type_id": "3",
+        "type": "Twitter"
+      },
+      {
+        "type_id": "4",
+        "type": "Youtube"
+      },
+      {
+        "type_id": "5",
+        "type": "LinkedIn"
+      },
+      {
+        "type_id": "6",
+        "type": "Trip Advisor"
+      },
+      {
+        "type_id": "7",
+        "type": "Vimeo"
+      },
+      {
+        "type_id": "8",
+        "type": "Flickr"
+      },
+      {
+        "type_id": "9",
+        "type": "Instagram"
+      },
+      {
+        "type_id": "10",
+        "type": "Wikipedia"
+      },
+      {
+        "type_id": "11",
+        "type": "Forbes"
+      },
+      {
+        "type_id": "12",
+        "type": "Zillow"
+      },
+      {
+        "type_id": "14",
+        "type": "Company Website"
+      },
+      {
+        "type_id": "15",
+        "type": "Personal Website"
+      },
+      {
+        "type_id": "16",
+        "type": "TikTok"
+      }
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "116": "Russian",
+        "4": "American",
+        "118": "Saudi Arabian",
+        "43": "Egyptian",
+        "52": "French",
+        "145": "Ukrainian",
+        "143": "Turkish",
+        "32": "Chinese",
+        "114": "Qatari",
+        "102": "Nigerian",
+        "133": "Swedish",
+        "65": "Indonesian",
+        "29": "Canadian",
+        "36": "Croatian",
+        "57": "Greek",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "22": "British",
+        "8": "Australian",
+        "92": "Mexican",
+        "100": "New Zealander",
+        "75": "Kazakhstanian",
+        "134": "Swiss",
+        "128": "Spanish",
+        "69": "Israeli",
+        "62": "Hungarian",
+        "122": "Singaporean",
+        "89": "Malaysian",
+        "70": "Italian",
+        "105": "Pakistani",
+        "55": "German",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "68": "Irish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "81": "Lebanese",
+        "25": "Bulgarian",
+        "9": "Austrian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "111": "Polish",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "16": "Belgian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "41": "Dutch",
+        "7": "Armenian",
+        "38": "Cypriot",
+        "135": "Syrian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "85": "Luxembourgish",
+        "120": "Serbian",
+        "3": "Algerian",
+        "107": "Panamamian",
+        "11": "Bahamanian",
+        "37": "Cuban",
+        "112": "Portuguese",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "113": "Puerto Rican",
+        "1": "Afghan",
+        "90": "Maltese",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "126": "South African",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "142": "Tunisian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "2": "Albanian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "66": "Iranian",
+        "15": "Belarussian",
+        "147": "Uzbekistanian",
+        "146": "Uruguayan",
+        "58": "Grenadian"
+      },
+      "secondary_nationality": {
+        "112": "Portuguese",
+        "147": "Uzbekistanian",
+        "75": "Kazakhstanian",
+        "135": "Syrian",
+        "55": "German",
+        "69": "Israeli",
+        "4": "American",
+        "22": "British",
+        "66": "Iranian",
+        "145": "Ukrainian",
+        "120": "Serbian",
+        "29": "Canadian",
+        "38": "Cypriot",
+        "52": "French",
+        "126": "South African",
+        "122": "Singaporean",
+        "128": "Spanish",
+        "90": "Maltese",
+        "134": "Swiss",
+        "8": "Australian",
+        "100": "New Zealander",
+        "11": "Bahamanian",
+        "113": "Puerto Rican",
+        "118": "Saudi Arabian",
+        "143": "Turkish",
+        "57": "Greek",
+        "146": "Uruguayan",
+        "116": "Russian",
+        "102": "Nigerian",
+        "107": "Panamamian",
+        "68": "Irish",
+        "9": "Austrian",
+        "70": "Italian",
+        "58": "Grenadian",
+        "142": "Tunisian",
+        "133": "Swedish",
+        "41": "Dutch",
+        "85": "Luxembourgish",
+        "62": "Hungarian",
+        "16": "Belgian",
+        "81": "Lebanese",
+        "2": "Albanian",
+        "111": "Polish",
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "43": "Egyptian",
+        "32": "Chinese",
+        "114": "Qatari",
+        "65": "Indonesian",
+        "36": "Croatian",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "92": "Mexican",
+        "89": "Malaysian",
+        "105": "Pakistani",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "25": "Bulgarian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "7": "Armenian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "3": "Algerian",
+        "37": "Cuban",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "1": "Afghan",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "15": "Belarussian"
+      },
+      "main_residence_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "98": "Israel",
+        "221": "United States",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "213": "Turkey",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "73": "United Kingdom",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "29": "Bahamas",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "131": "Monaco",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "157": "Netherlands",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "66": "Finland",
+        "180": "Romania",
+        "192": "Slovakia",
+        "187": "Sweden",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "secondary_residence_country": {
+        "131": "Monaco",
+        "221": "United States",
+        "187": "Sweden",
+        "73": "United Kingdom",
+        "148": "Mexico",
+        "2": "United Arab Emirates",
+        "157": "Netherlands",
+        "213": "Turkey",
+        "84": "Greece",
+        "53": "Germany",
+        "29": "Bahamas",
+        "66": "Finland",
+        "158": "Norway",
+        "163": "Oman",
+        "98": "Israel",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "93": "Croatia",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "180": "Romania",
+        "192": "Slovakia",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "181": "Russian Federation",
+        "221": "United States",
+        "223": "Uzbekistan",
+        "61": "Egypt",
+        "71": "France",
+        "118": "Kazakhstan",
+        "183": "Saudi Arabia",
+        "213": "Turkey",
+        "45": "China",
+        "178": "Qatar",
+        "200": "Syrian Arab Republic",
+        "187": "Sweden",
+        "169": "Pakistan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "90": "Hong Kong",
+        "241": "Azerbaijan",
+        "107": "Japan",
+        "99": "India",
+        "22": "Bahrain",
+        "73": "United Kingdom",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "102": "Iran",
+        "104": "Italy",
+        "64": "Spain",
+        "98": "Israel",
+        "83": "Equatorial Guinea",
+        "95": "Hungary",
+        "149": "Malaysia",
+        "19": "Belgium",
+        "236": "South Africa",
+        "52": "Czech Republic",
+        "188": "Singapore",
+        "55": "Denmark",
+        "101": "Iraq",
+        "192": "Slovakia",
+        "216": "Taiwan",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "40": "Switzerland",
+        "130": "Morocco",
+        "39": "Congo",
+        "157": "Netherlands",
+        "7": "Armenia",
+        "28": "Brazil",
+        "33": "Belarus",
+        "51": "Cyprus",
+        "129": "Libyan Arab Jamahiriya",
+        "210": "Turkmenistan",
+        "206": "Thailand",
+        "66": "Finland",
+        "180": "Romania",
+        "106": "Jordan",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "97": "Ireland",
+        "186": "Sudan",
+        "155": "Nigeria",
+        "48": "Cuba",
+        "246": "Serbia",
+        "175": "Portugal",
+        "131": "Monaco",
+        "190": "Slovenia",
+        "126": "Lithuania",
+        "211": "Tunisia",
+        "43": "Chile",
+        "173": "Puerto Rico",
+        "219": "Uganda",
+        "86": "Guatemala",
+        "60": "Estonia",
+        "144": "Malta",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "16": "Bosnia and Herzegovina",
+        "127": "Luxembourg",
+        "165": "Peru",
+        "164": "Panama",
+        "54": "Djibouti",
+        "41": "Cote d'Ivoire",
+        "75": "Georgia",
+        "233": "Yemen",
+        "57": "Dominican Republic",
+        "29": "Bahamas",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "128": "Latvia",
+        "123": "Sri Lanka",
+        "6": "Albania",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia",
+        "243": "Isle Of Man",
+        "17": "Barbados",
+        "222": "Uruguay",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "225": "Saint Vincent and the Grenadines",
+        "146": "Maldives",
+        "201": "Swaziland",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia"
+      },
+      "birth_month": {
+        "10": "October",
+        "7": "July",
+        "11": "November",
+        "12": "December",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "6": "June",
+        "1": "January",
+        "5": "May",
+        "4": "April",
+        "2": "February"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "4": "Unknown",
+        "2": "Dead",
+        "3": "Missing"
+      },
+      "death_month": {
+        "5": "May",
+        "6": "June",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "10": "October",
+        "7": "July",
+        "1": "January",
+        "2": "February",
+        "11": "November",
+        "12": "December",
+        "4": "April"
+      }
+    },
+    "existing_social_types": []
+  },
+  "research_status": "complete",
+  "editorial_note": null,
+  "biography_brief": {
+    "durable_identity": "British industrialist, second-generation chairman of a family animal-health chemicals business, and former Walsall parliamentarian.",
+    "defining_work": "Led William Cooper & Nephews and its successor Cooper, McDougall & Robertson while serving twelve years in the House of Commons.",
+    "formative_context": "Entered the sheep-dip business founded by his grandfather and succeeded his father as both baronet and company leader.",
+    "decisive_moment": "Combined the family enterprise with McDougall & Robertson to create a broader chemicals group.",
+    "enduring_dimensions": [
+      "Family industrial succession",
+      "Animal-health chemical manufacturing and consolidation",
+      "Parliamentary politics"
+    ],
+    "character_detail": "He moved from Conservative representation to co-founding the National Party and later sat as an Independent Conservative.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "British industrialist and former Walsall parliamentarian."
+      },
+      {
+        "mode": "defining_achievement",
+        "angle": "Second-generation chairman who consolidated a family sheep-dip business into a wider chemicals group."
+      }
+    ],
+    "excluded_transient_context": [
+      "Personal leisure-vessel ownership details",
+      "Unsupported estimates of personal fortune",
+      "Detailed political controversies that do not explain his durable career"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "inheritance_then_stewardship",
+    "calibration_archetypes": [
+      "inherited_operator",
+      "acquirer_consolidator"
+    ],
+    "notes": "The short profile presents his industrial and parliamentary identity. The long profile explains succession, merger activity and political development, without repeating the vessel record or treating inherited status as a substitute for operating achievement."
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Focused exact-name and site:forbes.com/profile searches found no dedicated Forbes profile; he died decades before Forbes began its modern profile database."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "Cooper’s inherited and expanded wealth platform was an international manufacturer of sheep dip, animal-health treatments and related chemicals.",
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Parliamentary biography, the Wellcome company archive and business history consistently connect Cooper’s ownership and chairmanship to the family chemical-manufacturing enterprise and its successor."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S7",
+      "S8"
+    ]
+  },
+  "primary_industry": {
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "At the end of his life, Cooper remained chairman of the family-controlled animal-health chemicals manufacturer Cooper, McDougall & Robertson.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The company archive records his role through his death, while independent historical sources identify him as chairman from succession until 1946."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S7"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "inherited_and_expanded",
+    "label": "Inherited and expanded",
+    "summary": "Cooper entered a substantial family business, succeeded his father as its leader, and materially expanded its scope through the McDougall & Robertson combination.",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "The family succession is explicit in parliamentary and local histories, and the Wellcome archive preserves Cooper’s agreements and correspondence for the merger and enlarged company."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S7",
+      "S8"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "operator",
+    "label": "Operator",
+    "summary": "Cooper actively chaired and consolidated the inherited family chemicals business rather than merely holding a passive family interest.",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Sources identify him as the working chairman across more than three decades and document his personal role in the corporate combination."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S7"
+    ]
+  },
+  "biography": {
+    "plain_text": "Sir Richard Ashmole Cooper was a British industrialist who led his family’s animal-health chemicals business from 1913 until his death. He combined that commercial role with politics, representing Walsall in Parliament for twelve years and helping to found the National Party. Under his chairmanship, the company became Cooper, McDougall & Robertson.",
+    "html": "<p>Sir Richard Ashmole Cooper was a British industrialist who led his family’s animal-health chemicals business from 1913 until his death. He combined that commercial role with politics, representing Walsall in Parliament for twelve years and helping to found the National Party. Under his chairmanship, the company became Cooper, McDougall &amp; Robertson.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Parliamentary, archival and local-history sources agree on his business succession, company leadership, Commons service and role in founding the National Party."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S6",
+      "S7"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Richard Ashmole Cooper entered the sheep-dip chemical business founded by his family and succeeded his father as chairman in 1913. He led William Cooper & Nephews into a merger with McDougall & Robertson, creating a wider animal-health and chemicals group. Company archives preserve his agreements and correspondence around that combination, as well as records of technical research conducted under the enlarged business.\n\nCooper also served as Conservative member for Walsall for twelve years. During the First World War he helped establish the National Party, later sitting as an Independent Conservative and campaigning against the sale of honours. He remained chairman of Cooper, McDougall & Robertson until his death in 1946, ending a career that joined inherited industrial stewardship with business consolidation and parliamentary politics.",
+    "html": "<p>Richard Ashmole Cooper entered the sheep-dip chemical business founded by his family and succeeded his father as chairman in 1913. He led William Cooper &amp; Nephews into a merger with McDougall &amp; Robertson, creating a wider animal-health and chemicals group. Company archives preserve his agreements and correspondence around that combination, as well as records of technical research conducted under the enlarged business.</p>\r\n<p>Cooper also served as Conservative member for Walsall for twelve years. During the First World War he helped establish the National Party, later sitting as an Independent Conservative and campaigning against the sale of honours. He remained chairman of Cooper, McDougall &amp; Robertson until his death in 1946, ending a career that joined inherited industrial stewardship with business consolidation and parliamentary politics.</p>\r\n",
+    "word_count": 121,
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The longer account uses a scholarly parliamentary biography, the Wellcome company archive, Hansard and independent business history to support the succession, merger and political claims."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "nationality",
+      "value": "British",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "His baronetcy, British parliamentary service and repeated biographical identification establish British nationality."
+      },
+      "source_ids": [
+        "S2",
+        "S5",
+        "S6"
+      ]
+    },
+    {
+      "field": "main_residence_country",
+      "value": "United Kingdom",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Peerage and local-history records place his documented residences in England across his adult life and at death."
+      },
+      "source_ids": [
+        "S4",
+        "S5",
+        "S7"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Industrialist and former Member of Parliament",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "His chairmanship of the family chemicals group and parliamentary representation of Walsall are independently documented."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S6"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Peerage, parliamentary and family records consistently identify him as male."
+      },
+      "source_ids": [
+        "S2",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "11",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Scholarly parliamentary biography, peerage and burial records agree on 11 August 1874."
+      },
+      "source_ids": [
+        "S2",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "August",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Scholarly parliamentary biography, peerage and burial records agree on 11 August 1874."
+      },
+      "source_ids": [
+        "S2",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1874",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Multiple independent historical records agree on his birth year."
+      },
+      "source_ids": [
+        "S2",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "existing_value": "Unknown",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Wellcome’s company archive contains papers concerning his death and the burial record gives the exact date."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "5",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The burial record and company archive identify his death on 5 March 1946."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "March",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The burial record and company archive identify his death on 5 March 1946."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "1946",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The burial record, company archive and historical sources agree on 1946."
+      },
+      "source_ids": [
+        "S3",
+        "S4",
+        "S7"
+      ]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Sir Richard Ashmole Cooper was a British industrialist who led his family’s animal-health chemicals business from 1913 until his death. He combined that commercial role with politics, representing Walsall in Parliament for twelve years and helping to found the National Party. Under his chairmanship, the company became Cooper, McDougall &amp; Robertson.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The concise biography is supported by parliamentary, archival and independent historical records."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S4",
+        "S6",
+        "S7"
+      ]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0215",
+      "name": "Chemicals",
+      "summary": "Animal-health chemical manufacturing was Cooper’s defining wealth-creation and operating field across his adult business career.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "He entered, inherited, chaired and consolidated the family sheep-dip and animal-health chemicals group; the association meets the catalogue’s substantial-operation and defining-mandate tests."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S7",
+        "S8"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=498",
+      "title": "Sir Richard Ashmole Cooper saved owner record",
+      "publisher": "Superyacht Network; immutable owner export",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Exact source-record identity fields and the historical Natalie relationship from 1928 to 1941."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.superyachttimes.com/yacht-news/searching-for-superyacht-natalie",
+      "title": "Searching for Natalie: A grandson’s search for the decommissioned yacht",
+      "publisher": "SuperYacht Times",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Reports that Natalie, then Alice, was built under commission from millionaire Sir Richard Ashmole Cooper, providing a direct vessel-to-person identity bridge."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1750-0206.2012.00343.x",
+      "title": "Appendix 5: The Biographies",
+      "publisher": "Parliamentary History / Wiley",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Exact birth date; son and heir of Sir Richard Powell Cooper; education; entry into the family sheep-dip chemical business; work in America; Walsall parliamentary service; National Party founding and retirement through illness."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://preview.wellcomecollection.org/works/a4tb2ytd",
+      "title": "Secretariat papers",
+      "publisher": "Wellcome Collection",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Official company archive catalogue records agreements and correspondence bearing Cooper’s name for company formation, sale, purchase and amalgamation; also papers concerning his death and the enlarged company’s technical work."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.rectorylanecemetery.org.uk/burials/cooper-plot/",
+      "title": "Cooper Vault",
+      "publisher": "Rectory Lane Cemetery",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Exact birth and death dates; identity as second baronet and chairman of William Cooper & Nephews; family relationships; description as a keen horseman and yachtsman."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://en.wikisource.org/wiki/Page:Dod%27s_Peerage,_Baronetage,_Knightage_etc._of_Great_Britain_and_Ireland.djvu/185",
+      "title": "Dod’s Peerage, Baronetage, Knightage etc. of Great Britain and Ireland",
+      "publisher": "Dod’s Peerage via Wikisource",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Contemporary peerage entry gives his exact birth date, succession, wife, children, parliamentary identity and multiple English residences."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://api.parliament.uk/historic-hansard/commons/1910/jul/19/class-iv",
+      "title": "Class IV",
+      "publisher": "Hansard / UK Parliament",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Official parliamentary record identifies Richard Ashmole Cooper as member for Walsall during his Commons service."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.sahs.uk.net/_resources/_projects/shenstone-parish-project-survey-2009.pdf",
+      "title": "A Landscape Survey of the Parish of Shenstone",
+      "publisher": "Shenstone and District Archaeological and Historical Society",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "States that Richard Ashmole Cooper succeeded his father, ran the firm, served as Walsall MP and co-founded the National Party."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.madeinchicagomuseum.com/single-post/william-cooper-and-nephews/",
+      "title": "William Cooper & Nephews, Inc., est. 1852",
+      "publisher": "Made-in-Chicago Museum",
+      "tier": 3,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Independent business history describes Cooper’s succession, leadership of the international family business and decision to merge with McDougall & Robertson."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "No primary birth-place record was found, so place of birth and birth country remain unproposed despite strong evidence for British nationality.",
+    "The public record supports succession to and active expansion of a family business, but it does not disclose his personal estate value or precise shareholding at death.",
+    "The source owner’s birth-age fields are system calculations rather than researchable blanks and are not proposed directly.",
+    "Focused searches found no identity-secure LinkedIn, Instagram, Facebook, Twitter, YouTube, Vimeo, Flickr, TikTok, personal website or dedicated Forbes profile appropriate for proposal.",
+    "Closed-world tag review supports Chemicals. The catalogue has no active politician tag, and the broader Manufacturing concept is represented in classifications rather than by a matching active umbrella tag."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Resolved the exact industrialist through the source name and independent Natalie commission history. The dossier documents inherited-and-expanded manufacturing wealth, a final operator role, parliamentary service and verified life dates without importing unsupported personal-wealth estimates. No shared owner input, cohort, catalogue or live data was changed."
+  }
+}

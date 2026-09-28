@@ -1,0 +1,1222 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 517,
+    "display_name": "Raymond Mershon Craig III",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The uncommon complete legal name, age, US residence and vessel ownership match Raymond 'Shon' Craig. A federal court record names him as the beneficial owner of the corresponding yacht, while business and family records connect the full legal name to his Shon nickname and Critical Solutions International."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "owner": {
+      "person_id": 517,
+      "display_name": "Raymond Mershon Craig III",
+      "profile_url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=517",
+      "top_100": {
+        "current_owner": false,
+        "historical_owner": false,
+        "relationships": []
+      }
+    },
+    "raw_blank_details": [
+      "title",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "biography_present": false,
+    "existing_socials": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "missing_person_relevant_social_types": [
+      {
+        "type_id": "2",
+        "type": "Facebook"
+      },
+      {
+        "type_id": "3",
+        "type": "Twitter"
+      },
+      {
+        "type_id": "4",
+        "type": "Youtube"
+      },
+      {
+        "type_id": "5",
+        "type": "LinkedIn"
+      },
+      {
+        "type_id": "9",
+        "type": "Instagram"
+      },
+      {
+        "type_id": "15",
+        "type": "Personal Website"
+      },
+      {
+        "type_id": "16",
+        "type": "TikTok"
+      }
+    ],
+    "missing_supported_social_types": [
+      {
+        "type_id": "2",
+        "type": "Facebook"
+      },
+      {
+        "type_id": "3",
+        "type": "Twitter"
+      },
+      {
+        "type_id": "4",
+        "type": "Youtube"
+      },
+      {
+        "type_id": "5",
+        "type": "LinkedIn"
+      },
+      {
+        "type_id": "6",
+        "type": "Trip Advisor"
+      },
+      {
+        "type_id": "7",
+        "type": "Vimeo"
+      },
+      {
+        "type_id": "8",
+        "type": "Flickr"
+      },
+      {
+        "type_id": "9",
+        "type": "Instagram"
+      },
+      {
+        "type_id": "10",
+        "type": "Wikipedia"
+      },
+      {
+        "type_id": "11",
+        "type": "Forbes"
+      },
+      {
+        "type_id": "12",
+        "type": "Zillow"
+      },
+      {
+        "type_id": "14",
+        "type": "Company Website"
+      },
+      {
+        "type_id": "15",
+        "type": "Personal Website"
+      },
+      {
+        "type_id": "16",
+        "type": "TikTok"
+      }
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "116": "Russian",
+        "4": "American",
+        "118": "Saudi Arabian",
+        "43": "Egyptian",
+        "52": "French",
+        "145": "Ukrainian",
+        "143": "Turkish",
+        "32": "Chinese",
+        "114": "Qatari",
+        "102": "Nigerian",
+        "133": "Swedish",
+        "65": "Indonesian",
+        "29": "Canadian",
+        "36": "Croatian",
+        "57": "Greek",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "22": "British",
+        "8": "Australian",
+        "92": "Mexican",
+        "100": "New Zealander",
+        "75": "Kazakhstanian",
+        "134": "Swiss",
+        "128": "Spanish",
+        "69": "Israeli",
+        "62": "Hungarian",
+        "122": "Singaporean",
+        "89": "Malaysian",
+        "70": "Italian",
+        "105": "Pakistani",
+        "55": "German",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "68": "Irish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "81": "Lebanese",
+        "25": "Bulgarian",
+        "9": "Austrian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "111": "Polish",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "16": "Belgian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "41": "Dutch",
+        "7": "Armenian",
+        "38": "Cypriot",
+        "135": "Syrian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "85": "Luxembourgish",
+        "120": "Serbian",
+        "3": "Algerian",
+        "107": "Panamamian",
+        "11": "Bahamanian",
+        "37": "Cuban",
+        "112": "Portuguese",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "113": "Puerto Rican",
+        "1": "Afghan",
+        "90": "Maltese",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "126": "South African",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "142": "Tunisian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "2": "Albanian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "66": "Iranian",
+        "15": "Belarussian",
+        "147": "Uzbekistanian",
+        "146": "Uruguayan",
+        "58": "Grenadian"
+      },
+      "secondary_nationality": {
+        "112": "Portuguese",
+        "147": "Uzbekistanian",
+        "75": "Kazakhstanian",
+        "135": "Syrian",
+        "55": "German",
+        "69": "Israeli",
+        "4": "American",
+        "22": "British",
+        "66": "Iranian",
+        "145": "Ukrainian",
+        "120": "Serbian",
+        "29": "Canadian",
+        "38": "Cypriot",
+        "52": "French",
+        "126": "South African",
+        "122": "Singaporean",
+        "128": "Spanish",
+        "90": "Maltese",
+        "134": "Swiss",
+        "8": "Australian",
+        "100": "New Zealander",
+        "11": "Bahamanian",
+        "113": "Puerto Rican",
+        "118": "Saudi Arabian",
+        "143": "Turkish",
+        "57": "Greek",
+        "146": "Uruguayan",
+        "116": "Russian",
+        "102": "Nigerian",
+        "107": "Panamamian",
+        "68": "Irish",
+        "9": "Austrian",
+        "70": "Italian",
+        "58": "Grenadian",
+        "142": "Tunisian",
+        "133": "Swedish",
+        "41": "Dutch",
+        "85": "Luxembourgish",
+        "62": "Hungarian",
+        "16": "Belgian",
+        "81": "Lebanese",
+        "2": "Albanian",
+        "111": "Polish",
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "43": "Egyptian",
+        "32": "Chinese",
+        "114": "Qatari",
+        "65": "Indonesian",
+        "36": "Croatian",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "92": "Mexican",
+        "89": "Malaysian",
+        "105": "Pakistani",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "25": "Bulgarian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "7": "Armenian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "3": "Algerian",
+        "37": "Cuban",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "1": "Afghan",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "15": "Belarussian"
+      },
+      "main_residence_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "98": "Israel",
+        "221": "United States",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "213": "Turkey",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "73": "United Kingdom",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "29": "Bahamas",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "131": "Monaco",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "157": "Netherlands",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "66": "Finland",
+        "180": "Romania",
+        "192": "Slovakia",
+        "187": "Sweden",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "secondary_residence_country": {
+        "131": "Monaco",
+        "221": "United States",
+        "187": "Sweden",
+        "73": "United Kingdom",
+        "148": "Mexico",
+        "2": "United Arab Emirates",
+        "157": "Netherlands",
+        "213": "Turkey",
+        "84": "Greece",
+        "53": "Germany",
+        "29": "Bahamas",
+        "66": "Finland",
+        "158": "Norway",
+        "163": "Oman",
+        "98": "Israel",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "93": "Croatia",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "180": "Romania",
+        "192": "Slovakia",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "181": "Russian Federation",
+        "221": "United States",
+        "223": "Uzbekistan",
+        "61": "Egypt",
+        "71": "France",
+        "118": "Kazakhstan",
+        "183": "Saudi Arabia",
+        "213": "Turkey",
+        "45": "China",
+        "178": "Qatar",
+        "200": "Syrian Arab Republic",
+        "187": "Sweden",
+        "169": "Pakistan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "90": "Hong Kong",
+        "241": "Azerbaijan",
+        "107": "Japan",
+        "99": "India",
+        "22": "Bahrain",
+        "73": "United Kingdom",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "102": "Iran",
+        "104": "Italy",
+        "64": "Spain",
+        "98": "Israel",
+        "83": "Equatorial Guinea",
+        "95": "Hungary",
+        "149": "Malaysia",
+        "19": "Belgium",
+        "236": "South Africa",
+        "52": "Czech Republic",
+        "188": "Singapore",
+        "55": "Denmark",
+        "101": "Iraq",
+        "192": "Slovakia",
+        "216": "Taiwan",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "40": "Switzerland",
+        "130": "Morocco",
+        "39": "Congo",
+        "157": "Netherlands",
+        "7": "Armenia",
+        "28": "Brazil",
+        "33": "Belarus",
+        "51": "Cyprus",
+        "129": "Libyan Arab Jamahiriya",
+        "210": "Turkmenistan",
+        "206": "Thailand",
+        "66": "Finland",
+        "180": "Romania",
+        "106": "Jordan",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "97": "Ireland",
+        "186": "Sudan",
+        "155": "Nigeria",
+        "48": "Cuba",
+        "246": "Serbia",
+        "175": "Portugal",
+        "131": "Monaco",
+        "190": "Slovenia",
+        "126": "Lithuania",
+        "211": "Tunisia",
+        "43": "Chile",
+        "173": "Puerto Rico",
+        "219": "Uganda",
+        "86": "Guatemala",
+        "60": "Estonia",
+        "144": "Malta",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "16": "Bosnia and Herzegovina",
+        "127": "Luxembourg",
+        "165": "Peru",
+        "164": "Panama",
+        "54": "Djibouti",
+        "41": "Cote d'Ivoire",
+        "75": "Georgia",
+        "233": "Yemen",
+        "57": "Dominican Republic",
+        "29": "Bahamas",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "128": "Latvia",
+        "123": "Sri Lanka",
+        "6": "Albania",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia",
+        "243": "Isle Of Man",
+        "17": "Barbados",
+        "222": "Uruguay",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "225": "Saint Vincent and the Grenadines",
+        "146": "Maldives",
+        "201": "Swaziland",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia"
+      },
+      "birth_month": {
+        "10": "October",
+        "7": "July",
+        "11": "November",
+        "12": "December",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "6": "June",
+        "1": "January",
+        "5": "May",
+        "4": "April",
+        "2": "February"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "4": "Unknown",
+        "2": "Dead",
+        "3": "Missing"
+      },
+      "death_month": {
+        "5": "May",
+        "6": "June",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "10": "October",
+        "7": "July",
+        "1": "January",
+        "2": "February",
+        "11": "November",
+        "12": "December",
+        "4": "April"
+      }
+    },
+    "existing_social_types": []
+  },
+  "research_status": "complete",
+  "editorial_note": null,
+  "biography_brief": {
+    "durable_identity": "American defence entrepreneur, former Special Forces officer and current Kingston Companies president.",
+    "defining_work": "Co-founded Critical Solutions International and helped field the Husky mine-detection vehicle for US and allied forces.",
+    "formative_context": "Built leadership and technical experience during a 21-year US Army officer career with Special Forces tours.",
+    "decisive_moment": "Converted military experience into a company supplying route-clearance vehicles and services for landmine and IED threats.",
+    "enduring_dimensions": [
+      "Defence entrepreneurship",
+      "Military service",
+      "Climate-smart agriculture"
+    ],
+    "character_detail": "His later work moved from explosive-threat mitigation into soil health, while he also built restaurant businesses.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Defence entrepreneur and former Special Forces officer."
+      },
+      {
+        "mode": "defining_achievement",
+        "angle": "Fielding of the Husky mine-detection vehicle through Critical Solutions International."
+      }
+    ],
+    "excluded_transient_context": [
+      "Personal leisure-vessel details",
+      "Private-address and voter-registration details",
+      "Unverified personal wealth estimates"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "The short biography identifies Craig through the Husky and his current role. The long version explains how a lengthy military career led to defence entrepreneurship and later environmental-technology work."
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Targeted searches found no identity-secure Forbes profile for Craig."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "Craig's documented wealth platform was Critical Solutions International, which developed, supplied and supported specialist mine- and IED-detection vehicles and systems.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The founders' recapitalisation, federal transaction record and independent military reporting establish the company's defence-vehicle business and Craig's founder-shareholder role."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S5"
+    ]
+  },
+  "primary_industry": {
+    "classification": "agriculture",
+    "label": "Agriculture",
+    "summary": "Craig's current public operating role is president of Kingston Companies, which participates in SoilPoint's climate-smart soil-products business.",
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Current official management pages and Companies House records establish his Kingston role and SoilPoint involvement. Public disclosure of Kingston's wider portfolio and the proportion of Craig's time devoted to agriculture is limited."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S8"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made_independent",
+    "label": "Self-made — independent start",
+    "summary": "Craig moved from a professional military career into co-founding a defence business; no inherited company or family-capital platform is documented.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "His official biography traces the sequence from college and Army service to entrepreneurship, while transaction records identify him as a co-founder and significant shareholder."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S6"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "operator",
+    "label": "Operator",
+    "summary": "Craig currently serves as president and director of Kingston Companies after earlier founder and board roles at Critical Solutions International.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Current company and official registry records establish the president-director mandate, making operator the best description of his present relationship to business wealth."
+    },
+    "source_ids": [
+      "S3",
+      "S4"
+    ]
+  },
+  "biography": {
+    "plain_text": "Raymond M. 'Shon' Craig III is an American defence entrepreneur and former Special Forces officer who co-founded Critical Solutions International. He helped bring the Husky mine-detection vehicle into US and allied military service, then remained a shareholder and director after recapitalisation. Craig now leads Kingston Companies and supports SoilPoint's climate-smart agricultural technology.",
+    "html": "<p>Raymond M. 'Shon' Craig III is an American defence entrepreneur and former Special Forces officer who co-founded Critical Solutions International. He helped bring the Husky mine-detection vehicle into US and allied military service, then remained a shareholder and director after recapitalisation. Craig now leads Kingston Companies and supports SoilPoint's climate-smart agricultural technology.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official company biographies, transaction records and military reporting support the Army, CSI, Husky and current Kingston-SoilPoint claims."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Raymond M. 'Shon' Craig III served for 21 years as a US Army officer, including tactical tours with Special Forces. Moving into business, he co-founded Critical Solutions International and helped establish defence cooperation between the United States and South Africa. The company supplied and supported the Husky, a blast-survivable vehicle used by American and allied forces to detect landmines and improvised explosive devices.\n\nA private-equity recapitalisation left Craig as a significant shareholder and board member while providing capital for further growth. His later activities broadened into restaurants and environmental technology. As president and director of Kingston Companies, he is involved with SoilPoint, which develops humic soil products intended to reduce fertiliser use and improve crop performance. That role applies his operating and commercial experience to climate-smart agriculture and soil restoration.",
+    "html": "<p>Raymond M. 'Shon' Craig III served for 21 years as a US Army officer, including tactical tours with Special Forces. Moving into business, he co-founded Critical Solutions International and helped establish defence cooperation between the United States and South Africa. The company supplied and supported the Husky, a blast-survivable vehicle used by American and allied forces to detect landmines and improvised explosive devices.</p>\r\n<p>A private-equity recapitalisation left Craig as a significant shareholder and board member while providing capital for further growth. His later activities broadened into restaurants and environmental technology. As president and director of Kingston Companies, he is involved with SoilPoint, which develops humic soil products intended to reduce fertiliser use and improve crop performance. That role applies his operating and commercial experience to climate-smart agriculture and soil restoration.</p>\r\n",
+    "word_count": 130,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "The narrative combines Craig's current official biography with contemporaneous recapitalisation and military-field reporting and current corporate records."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S5",
+      "S8"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Defence entrepreneur and Kingston Companies president",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The phrase captures Craig's defining Critical Solutions International work and current president-director role."
+      },
+      "source_ids": [
+        "S1",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Company, family and government sources consistently identify Craig as male."
+      },
+      "source_ids": [
+        "S1",
+        "S3",
+        "S6"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "12",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "A current Florida voter-record directory gives 12 February 1954; official Companies House data independently confirm February 1954 but omit the day."
+      },
+      "source_ids": [
+        "S4",
+        "S7"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "February",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Official Companies House data and the Florida voter-record directory agree on February."
+      },
+      "source_ids": [
+        "S4",
+        "S7"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1954",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Official Companies House data, the exported age snapshot and the voter-record directory agree on 1954."
+      },
+      "source_ids": [
+        "S4",
+        "S7"
+      ]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Raymond M. 'Shon' Craig III is an American defence entrepreneur and former Special Forces officer who co-founded Critical Solutions International. He helped bring the Husky mine-detection vehicle into US and allied military service, then remained a shareholder and director after recapitalisation. Craig now leads Kingston Companies and supports SoilPoint's climate-smart agricultural technology.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The concise biography is supported by official company and registry sources and contemporaneous transaction reporting."
+      },
+      "source_ids": [
+        "S1",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "5",
+      "type": "LinkedIn",
+      "url": "https://uk.linkedin.com/in/shon-craig-419831325",
+      "verification": "The profile uses his established Shon Craig name, lists Kingston Companies and shows activity concerning SoilPoint products and partnerships, matching his current official company biography.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The employer, role and specialised SoilPoint activity uniquely align with Raymond M. 'Shon' Craig III."
+      },
+      "source_ids": [
+        "S3",
+        "S9"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0220",
+      "name": "Defence",
+      "summary": "Craig co-founded and retained a major role in a company supplying mine- and IED-detection systems to US and allied armed forces.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The recapitalisation announcement and military reporting document a defining, long-term defence-industry mandate."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S5"
+      ]
+    },
+    {
+      "tag_id": "tag_0349",
+      "name": "Military officer",
+      "summary": "Craig served 21 years as a US Army officer, including tactical Special Forces tours, before entering business.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "His current official company biography gives the length, officer status and Special Forces service."
+      },
+      "source_ids": [
+        "S3"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=517",
+      "title": "Raymond Mershon Craig III saved owner record",
+      "publisher": "Superyacht Network; immutable owner export",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Exact legal identity, age snapshot, American nationality and historical TCB and Rule No.1 relationships."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.sentinelpartners.com/sentinel-recapitalizes-critical-solutions-international-in-partnership-with-management/",
+      "title": "Sentinel recapitalises Critical Solutions International",
+      "publisher": "Sentinel Capital Partners",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Shon Craig as co-founder, significant shareholder and board member; CSI's mine- and IED-detection systems, Husky fleet and military customers."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.ftc.gov/legal-library/browse/early-termination-notices/20110162",
+      "title": "Sentinel acquisition of Critical Solutions International",
+      "publisher": "US Federal Trade Commission",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Transaction joining Sentinel Capital Partners, Raymond Mershon Craig III and Critical Solutions International."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.soilpoint.earth/team/rm-shon-craig-iii",
+      "title": "RM Shon Craig III",
+      "publisher": "SoilPoint",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Full identity and nickname; 21-year US Army officer career with Special Forces tours; defence entrepreneurship and Husky work; restaurant interests; current Kingston presidency and SoilPoint role."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/14354370/officers",
+      "title": "Kingston Companies officers",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Active director appointment, complete legal name, February 1954 birth month and year, American nationality and US residence."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.stripes.com/news/2004-01-04/new-vehicles-allow-gis-to-find-remove-hidden-ieds-1956338.html1",
+      "title": "New vehicles allow troops to find hidden IEDs",
+      "publisher": "Stars and Stripes",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Shon Craig's age, civilian-contractor role and field work introducing the vehicle-mounted mine-detection system in Iraq."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.legacy.com/us/obituaries/name/raymond-craig-obituary?pid=186812670",
+      "title": "Raymond Mershon Craig Jr obituary",
+      "publisher": "J. Henry Stuhr / Legacy",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Connects Raymond 'Shon' Mershon Craig III of Holiday, Florida to the complete legal identity and family line."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.floridaresidentsdirectory.com/person/106685289/craig-raymond",
+      "title": "Raymond Mershon Craig III voter-record profile",
+      "publisher": "Florida Residents Directory",
+      "tier": 3,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Exact 12 February 1954 birth date and active Florida residence; month and year independently corroborated by Companies House."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://soilpoint.earth/",
+      "title": "SoilPoint",
+      "publisher": "SoilPoint",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Current business focus on humic soil products, lower fertiliser use, crop performance, carbon sequestration and climate-smart agriculture."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://uk.linkedin.com/in/shon-craig-419831325",
+      "title": "Shon Craig LinkedIn profile",
+      "publisher": "LinkedIn",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Identity-secure professional profile listing Kingston Companies and current SoilPoint-related activity."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Companies House confirms February 1954 but not the day. The 12 February proposal relies on a current voter-record directory and is therefore high rather than very-high confidence.",
+    "No reliable source found in this pass establishes Craig's birthplace or college, so neither is proposed.",
+    "Manufacturing is the closest wealth-creation category for CSI's defence systems and specialist vehicles, although the company also provided distribution, training, field maintenance and support services.",
+    "Agriculture is the best supported current industry through Kingston and SoilPoint, but public information does not disclose Craig's ownership percentage, compensation or the share of his current activity devoted to that business.",
+    "Restaurant interests are documented but are not tagged because available sources do not establish their scale or contribution to his wealth strongly enough for the catalogue's material-operations threshold.",
+    "No identity-secure Instagram, Facebook, Twitter, YouTube, TikTok, personal website or Forbes profile was found. The LinkedIn profile is proposed."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "The dossier resolves Raymond Mershon Craig III to the Shon Craig business identity through federal, family and company records, documents his defence-company origin and current SoilPoint role, and proposes the independently corroborated birth month and year. No shared owner input, cohort, catalogue or live data was changed."
+  }
+}

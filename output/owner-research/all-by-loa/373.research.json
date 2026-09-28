@@ -1,0 +1,1223 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 373,
+    "display_name": "Alejandro Burillo Azcarraga",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Exact compound name, Mexican nationality and independently documented Televisa, Pegaso and sports career resolve identity. His cousin Emilio and mother Carmela are separate people."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "internal_notes",
+      "unknown_name"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "116": "Russian",
+        "4": "American",
+        "118": "Saudi Arabian",
+        "43": "Egyptian",
+        "52": "French",
+        "145": "Ukrainian",
+        "143": "Turkish",
+        "32": "Chinese",
+        "114": "Qatari",
+        "102": "Nigerian",
+        "133": "Swedish",
+        "65": "Indonesian",
+        "29": "Canadian",
+        "36": "Croatian",
+        "57": "Greek",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "22": "British",
+        "8": "Australian",
+        "92": "Mexican",
+        "100": "New Zealander",
+        "75": "Kazakhstanian",
+        "134": "Swiss",
+        "128": "Spanish",
+        "69": "Israeli",
+        "62": "Hungarian",
+        "122": "Singaporean",
+        "89": "Malaysian",
+        "70": "Italian",
+        "105": "Pakistani",
+        "55": "German",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "68": "Irish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "81": "Lebanese",
+        "25": "Bulgarian",
+        "9": "Austrian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "111": "Polish",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "16": "Belgian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "41": "Dutch",
+        "7": "Armenian",
+        "38": "Cypriot",
+        "135": "Syrian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "85": "Luxembourgish",
+        "120": "Serbian",
+        "3": "Algerian",
+        "107": "Panamamian",
+        "11": "Bahamanian",
+        "37": "Cuban",
+        "112": "Portuguese",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "113": "Puerto Rican",
+        "1": "Afghan",
+        "90": "Maltese",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "126": "South African",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "142": "Tunisian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "2": "Albanian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "66": "Iranian",
+        "15": "Belarussian",
+        "147": "Uzbekistanian",
+        "146": "Uruguayan",
+        "58": "Grenadian"
+      },
+      "secondary_nationality": {
+        "112": "Portuguese",
+        "147": "Uzbekistanian",
+        "75": "Kazakhstanian",
+        "135": "Syrian",
+        "55": "German",
+        "69": "Israeli",
+        "4": "American",
+        "22": "British",
+        "66": "Iranian",
+        "145": "Ukrainian",
+        "120": "Serbian",
+        "29": "Canadian",
+        "38": "Cypriot",
+        "52": "French",
+        "126": "South African",
+        "122": "Singaporean",
+        "128": "Spanish",
+        "90": "Maltese",
+        "134": "Swiss",
+        "8": "Australian",
+        "100": "New Zealander",
+        "11": "Bahamanian",
+        "113": "Puerto Rican",
+        "118": "Saudi Arabian",
+        "143": "Turkish",
+        "57": "Greek",
+        "146": "Uruguayan",
+        "116": "Russian",
+        "102": "Nigerian",
+        "107": "Panamamian",
+        "68": "Irish",
+        "9": "Austrian",
+        "70": "Italian",
+        "58": "Grenadian",
+        "142": "Tunisian",
+        "133": "Swedish",
+        "41": "Dutch",
+        "85": "Luxembourgish",
+        "62": "Hungarian",
+        "16": "Belgian",
+        "81": "Lebanese",
+        "2": "Albanian",
+        "111": "Polish",
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "43": "Egyptian",
+        "32": "Chinese",
+        "114": "Qatari",
+        "65": "Indonesian",
+        "36": "Croatian",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "92": "Mexican",
+        "89": "Malaysian",
+        "105": "Pakistani",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "25": "Bulgarian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "7": "Armenian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "3": "Algerian",
+        "37": "Cuban",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "1": "Afghan",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "15": "Belarussian"
+      },
+      "main_residence_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "98": "Israel",
+        "221": "United States",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "213": "Turkey",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "73": "United Kingdom",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "29": "Bahamas",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "131": "Monaco",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "157": "Netherlands",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "66": "Finland",
+        "180": "Romania",
+        "192": "Slovakia",
+        "187": "Sweden",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "secondary_residence_country": {
+        "131": "Monaco",
+        "221": "United States",
+        "187": "Sweden",
+        "73": "United Kingdom",
+        "148": "Mexico",
+        "2": "United Arab Emirates",
+        "157": "Netherlands",
+        "213": "Turkey",
+        "84": "Greece",
+        "53": "Germany",
+        "29": "Bahamas",
+        "66": "Finland",
+        "158": "Norway",
+        "163": "Oman",
+        "98": "Israel",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "93": "Croatia",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "180": "Romania",
+        "192": "Slovakia",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "181": "Russian Federation",
+        "221": "United States",
+        "223": "Uzbekistan",
+        "61": "Egypt",
+        "71": "France",
+        "118": "Kazakhstan",
+        "183": "Saudi Arabia",
+        "213": "Turkey",
+        "45": "China",
+        "178": "Qatar",
+        "200": "Syrian Arab Republic",
+        "187": "Sweden",
+        "169": "Pakistan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "90": "Hong Kong",
+        "241": "Azerbaijan",
+        "107": "Japan",
+        "99": "India",
+        "22": "Bahrain",
+        "73": "United Kingdom",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "102": "Iran",
+        "104": "Italy",
+        "64": "Spain",
+        "98": "Israel",
+        "83": "Equatorial Guinea",
+        "95": "Hungary",
+        "149": "Malaysia",
+        "19": "Belgium",
+        "236": "South Africa",
+        "52": "Czech Republic",
+        "188": "Singapore",
+        "55": "Denmark",
+        "101": "Iraq",
+        "192": "Slovakia",
+        "216": "Taiwan",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "40": "Switzerland",
+        "130": "Morocco",
+        "39": "Congo",
+        "157": "Netherlands",
+        "7": "Armenia",
+        "28": "Brazil",
+        "33": "Belarus",
+        "51": "Cyprus",
+        "129": "Libyan Arab Jamahiriya",
+        "210": "Turkmenistan",
+        "206": "Thailand",
+        "66": "Finland",
+        "180": "Romania",
+        "106": "Jordan",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "97": "Ireland",
+        "186": "Sudan",
+        "155": "Nigeria",
+        "48": "Cuba",
+        "246": "Serbia",
+        "175": "Portugal",
+        "131": "Monaco",
+        "190": "Slovenia",
+        "126": "Lithuania",
+        "211": "Tunisia",
+        "43": "Chile",
+        "173": "Puerto Rico",
+        "219": "Uganda",
+        "86": "Guatemala",
+        "60": "Estonia",
+        "144": "Malta",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "16": "Bosnia and Herzegovina",
+        "127": "Luxembourg",
+        "165": "Peru",
+        "164": "Panama",
+        "54": "Djibouti",
+        "41": "Cote d'Ivoire",
+        "75": "Georgia",
+        "233": "Yemen",
+        "57": "Dominican Republic",
+        "29": "Bahamas",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "128": "Latvia",
+        "123": "Sri Lanka",
+        "6": "Albania",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia",
+        "243": "Isle Of Man",
+        "17": "Barbados",
+        "222": "Uruguay",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "225": "Saint Vincent and the Grenadines",
+        "146": "Maldives",
+        "201": "Swaziland",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia"
+      },
+      "birth_month": {
+        "10": "October",
+        "7": "July",
+        "11": "November",
+        "12": "December",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "6": "June",
+        "1": "January",
+        "5": "May",
+        "4": "April",
+        "2": "February"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "4": "Unknown",
+        "2": "Dead",
+        "3": "Missing"
+      },
+      "death_month": {
+        "5": "May",
+        "6": "June",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "10": "October",
+        "7": "July",
+        "1": "January",
+        "2": "February",
+        "11": "November",
+        "12": "December",
+        "4": "April"
+      }
+    },
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ]
+  },
+  "research_status": "complete",
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Exact Forbes/profile searches found news coverage and profiles of relatives, but no standalone personal Forbes profile."
+    }
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Founder of Grupo Pegaso and Mextenis",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Primary sporting organisations confirm both foundations."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Consistent public obituaries."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Mexico City",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Two contemporaneous obituary profiles."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "field": "birth_country",
+      "value": "Mexico",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Explicit Mexico City birthplace."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "May",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 80,
+        "band": "medium",
+        "reason": "Contemporary report says his 75th birthday would have been in May; exact day unavailable."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1951",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "ATP and contemporary profiles agree."
+      },
+      "source_ids": [
+        "S1",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "16",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official federation and contemporary news agree."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "April",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official federation and contemporary news agree."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "2026",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official federation and contemporary news agree."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type": "Company Website",
+      "type_id": "14",
+      "url": "https://www.mextenis.com/abierto-mexicano-de-tenis/",
+      "verification": "Official Mextenis company page; ATP and the national federation identify Burillo as founder.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Verified official company page and primary founder evidence."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S12"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0678",
+      "name": "Television broadcasting",
+      "summary": "Substantial Televicentro ownership and senior Televisa management, followed by television enterprise through Pegaso.",
+      "relationship_type": "principal_shareholder_and_executive",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "A sustained defining business or senior sporting mandate satisfies the active contract; not a passive holding, sponsorship or recreational association.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Direct enterprise history and primary sporting recognition."
+      },
+      "source_ids": [
+        "S5",
+        "S6"
+      ]
+    },
+    {
+      "tag_id": "tag_0921",
+      "name": "Mobile telecommunications",
+      "summary": "Built and led the substantial Pegaso PCS enterprise before its acquisition by Telefonica.",
+      "relationship_type": "founder_operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "A sustained defining business or senior sporting mandate satisfies the active contract; not a passive holding, sponsorship or recreational association.",
+      "confidence": {
+        "score": 91,
+        "band": "high",
+        "reason": "Direct enterprise history and primary sporting recognition."
+      },
+      "source_ids": [
+        "S5",
+        "S6"
+      ]
+    },
+    {
+      "tag_id": "tag_0076",
+      "name": "Football",
+      "summary": "Longstanding Atlante ownership and senior national-team governance.",
+      "relationship_type": "club_owner_and_senior_governance",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "A sustained defining business or senior sporting mandate satisfies the active contract; not a passive holding, sponsorship or recreational association.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Direct enterprise history and primary sporting recognition."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S6"
+      ]
+    },
+    {
+      "tag_id": "tag_0185",
+      "name": "Tennis",
+      "summary": "Founded Mextenis and developed major professional tournaments over decades.",
+      "relationship_type": "founder_promoter",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "A sustained defining business or senior sporting mandate satisfies the active contract; not a passive holding, sponsorship or recreational association.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Direct enterprise history and primary sporting recognition."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.atptour.com/es/news/burillo-obituary-april-2026",
+      "title": "Recordando a Alejandro Burillo, figura destacada del tenis mexicano",
+      "publisher": "ATP Tour",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Primary obituary read successfully through public requests and BeautifulSoup after web fetch failed. Born 1951, Mextenis foundation, tournament development, clay-to-hard transition and relationships with players and sponsors."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://tenisfmt.com/dia-gris-y-triste-para-el-tenis-mexicano/",
+      "title": "Dia gris y triste para el tenis mexicano",
+      "publisher": "Federacion Mexicana de Tenis",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened official obituary: death 16 April 2026, Mextenis and Pegaso foundations, Acapulco move in 2001 and Los Cabos expansion."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.eleconomista.com.mx/deportes/empresario-alejandro-burillo-azcarraga-fallecio-74-anos-20260416-809113.html",
+      "title": "Empresario Alejandro Burillo Azcarraga fallecio a los 74 anos",
+      "publisher": "El Economista",
+      "tier": 2,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened obituary: death date, Mexico City birth in 1951, former Atlante ownership and Mextenis foundation."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.razon.com.mx/deportes/2026/04/16/quien-era-alejandro-burillo-azcarraga-primo-de-emilio-azcarraga-y-directivo-de-la-fmf/",
+      "title": "Quien era Alejandro Burillo Azcarraga",
+      "publisher": "La Razon de Mexico",
+      "tier": 2,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened contemporary obituary: born in Mexico City in 1951 and would turn 75 in May. Month only, not exact birthday."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://archivo.eluniversal.com.mx/primera/2154.html",
+      "title": "Abandona Burillo Televisa",
+      "publisher": "El Universal",
+      "tier": 2,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened contemporary 20 June 2000 transaction report: personal Televicentro stake sale, Pegaso interest purchase and Ovaciones acquisition."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://expansion.mx/negocios/2008/02/25/el-retorno-de-burillo",
+      "title": "Alejandro Burillo regresa a escena",
+      "publisher": "Expansion",
+      "tier": 2,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened 2008 business feature: material media-sale proceeds, Pegaso business expansion, final mobile exit in 2005, television operations and Atlante move to Cancun."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://forbes.com.mx/renata-burilo-arte-al-tenis/",
+      "title": "Renata Burillo: el arte ofrecio a la industria del tenis una lider",
+      "publisher": "Forbes Mexico",
+      "tier": 2,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened 2020 interview: Alejandro identified as Pegaso owner, Renata as Mextenis chair; his material investment in tennis. This is not his personal Forbes profile."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://es.scribd.com/document/297184872/Televisa",
+      "title": "Grupo Televisa S.A. - Gisela Rabinowicz and Jorge Volonte",
+      "publisher": "Named Universidad de Buenos Aires study, public reproduction on Scribd",
+      "tier": 3,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened named study identifies mother Carmela's transfer of her media stake to Alejandro. Used with independent family-holding and personal-sale evidence at medium confidence; original institutional publication not located."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://biblat.unam.mx/hevila/ElCotidiano/2012/no172/7.pdf",
+      "title": "Televisa y Ernesto Zedillo, la Era Azcarraga Jean",
+      "publisher": "El Cotidiano / Jenaro Villamil, UNAM Biblat archive",
+      "tier": 2,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened journal article pages 65-66 establishes the substantial Burillo Azcarraga family shareholding and Alejandro's continuing personal holding. Political narrative not used."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://forbes.com.mx/las-100-mujeres-mas-poderosas-en-mexico-iv/",
+      "title": "Las 100 Mujeres Mas Poderosas en Mexico - IV",
+      "publisher": "Forbes Mexico",
+      "tier": 2,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened 2018 entry identifies Renata as successor chair of Grupo Pegaso, founded by her father; prevents assuming Alejandro remained group chairman at death."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://hallapproved.com/de/cases/court-of-chancery/2025/10700423/",
+      "title": "Ramon Diez Barroso v. Vasallo TV Group LLC, October 2025 opinion",
+      "publisher": "Delaware Court of Chancery, public reproduction by HallApproved",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened court opinion calls Alejandro head of Pegaso TV. Used only as a role check; this one company does not establish final principal-portfolio role. Dispute details excluded from narrative."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://www.mextenis.com/abierto-mexicano-de-tenis/",
+      "title": "Abierto Mexicano de Tenis",
+      "publisher": "Mextenis",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Opened official company event page verifies Company Website destination."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The exact birth day is unresolved. May is supported by a contemporary report; birth year 1951 has primary ATP support. Some obituaries incorrectly give age 75, while ATP and the Mexican Tennis Federation give 74. No calculated age field is altered.",
+    "The published transaction percentages refer to Televicentro rather than an equivalent percentage of all Televisa equity. Prose uses controlling-company stake and omits percentages and uncertain transaction valuations.",
+    "Family-transfer classification is a medium-confidence inference with named secondary transfer evidence and independent ownership corroboration. No inheritance from his uncle is asserted. His own later business achievements do not justify concealing the material family holding.",
+    "Final-lifetime industry uses the explicit origin-sector fallback. Retained Founder is inferred from ownership and near-terminal Pegaso activity; Renata taking group leadership is not evidence of wholesale disposal. Precise final shareholdings and portfolio weighting remain unknown.",
+    "The named university study was read in its public Scribd reproduction; the original institutional copy was not located. No anonymous upload assertion alone is used without independent convergent economic evidence.",
+    "ATP was successfully read through a public HTTP request after web-tool fetch failure. Mextenis corporate LinkedIn was read for its founder memorial, but the corporate social account is not proposed as his personal account.",
+    "Exact-name and spelling-variant searches covered Forbes, LinkedIn, Instagram, Facebook, Twitter/X, YouTube, TikTok, Vimeo, Flickr, personal and company websites, and Wikipedia. No personal account or standalone Forbes/Wikipedia profile verified. Search results for unrelated engineers were rejected; Trip Advisor and Zillow do not offer a verified relevant profile.",
+    "The four active tags capture independently defining sectors and sporting governance. No family or company tag was invented.",
+    "No sensitive court dispute details, health facts or family conflicts are included in the biographies. The court source is used solely to test terminal company-role evidence."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal public-source decision; independent fact allocation, prose drafting, pair assessment and evidence reverse-check completed. No shared input or live writes."
+  },
+  "wealth_creation_industry": {
+    "classification": "media_entertainment",
+    "label": "Media & Entertainment",
+    "summary": "His material original capital was the substantial stake in Televicentro, the controlling company of Televisa. The 2000 sale provided the basis for subsequent investment. Contemporary transaction reporting distinguishes the holding company from Televisa itself; later telecom and sports ventures do not erase this media origin.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "His material original capital was the substantial stake in Televicentro, the controlling company of Televisa. The 2000 sale provided the basis for subsequent investment. Contemporary transaction reporting distinguishes the holding company from Televisa itself; later telecom and sports ventures do not erase this media origin."
+    },
+    "source_ids": [
+      "S5",
+      "S6"
+    ]
+  },
+  "primary_industry": {
+    "classification": "media_entertainment",
+    "label": "Media & Entertainment",
+    "summary": "Final-lifetime origin-sector fallback. Pegaso subsequently combined telecom, television, sports and other investments, while mobile telephone assets were sold and group leadership passed to Renata. The principal private assets at death cannot be ranked. Media & Entertainment repeats the evidenced origin sector without claiming final portfolio dominance or continuing Televisa ownership.",
+    "confidence": {
+      "score": 70,
+      "band": "medium",
+      "reason": "Final-lifetime origin-sector fallback. Pegaso subsequently combined telecom, television, sports and other investments, while mobile telephone assets were sold and group leadership passed to Renata. The principal private assets at death cannot be ranked. Media & Entertainment repeats the evidenced origin sector without claiming final portfolio dominance or continuing Televisa ownership."
+    },
+    "source_ids": [
+      "S5",
+      "S6",
+      "S7",
+      "S10"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Reasoned family-transfer inference: the named university study describes Carmela passing her stake to Alejandro; an independent journal article identifies a substantial Burillo family holding, and contemporary reporting verifies his personal ownership and material exit. Those convergent facts support a transferred principal family media asset. The precise legal route and financing of later increases are unresolved, so this is not an inheritance finding. Founding Pegaso with sale capital does not establish an independent start; a separately material earned component sufficient for Mixed is unproven.",
+    "confidence": {
+      "score": 78,
+      "band": "medium",
+      "reason": "Reasoned family-transfer inference: the named university study describes Carmela passing her stake to Alejandro; an independent journal article identifies a substantial Burillo family holding, and contemporary reporting verifies his personal ownership and material exit. Those convergent facts support a transferred principal family media asset. The precise legal route and financing of later increases are unresolved, so this is not an inheritance finding. Founding Pegaso with sale capital does not establish an independent start; a separately material earned component sufficient for Mixed is unproven."
+    },
+    "source_ids": [
+      "S5",
+      "S8",
+      "S9"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Historical final-lifetime Founder relationship is inferred from the continuing Pegaso platform: Forbes identified him as its owner in 2020, and a 2025 court opinion still identified him as head of Pegaso TV. His daughter’s succession to group leadership does not establish a transfer of all ownership. These positive economic and operating links support retained founder status, while precise terminal allocation and control remain undisclosed.",
+    "confidence": {
+      "score": 78,
+      "band": "medium",
+      "reason": "Reasoned inference from directly evidenced founder identity, continuing group ownership and a near-terminal role within the same platform. Leadership succession is not treated as evidence of disposal; exact final shareholdings remain unverified."
+    },
+    "source_ids": [
+      "S7",
+      "S10",
+      "S11"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "Mexican businessman from the Azcarraga media family and founder of Grupo Pegaso.",
+    "defining_work": "Built businesses in telecommunications and professional sport after a substantial media-company stake.",
+    "formative_context": "Member of the family behind Televisa and an important shareholder in its controlling company.",
+    "decisive_moment": "Sold his media holding and committed capital to his own business group.",
+    "enduring_dimensions": [
+      "Owned Atlante and moved the football club to Cancun.",
+      "Founded Mextenis and developed Mexican professional tennis.",
+      "Moved the Mexican Open to Acapulco and expanded the tournament offering."
+    ],
+    "character_detail": null,
+    "opening_options": [
+      {
+        "mode": "institution_or_asset",
+        "angle": "Mextenis as the vehicle for his professional tennis work."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Moving a tournament to a resort city to enlarge its audience."
+      }
+    ],
+    "excluded_transient_context": [
+      "Vessel ownership",
+      "Net-worth and stake estimates",
+      "Unrequested family disputes or health details",
+      "Posthumous corporate roles"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S5",
+      "S6"
+    ]
+  },
+  "biography": {
+    "plain_text": "Alejandro Burillo Azcárraga was a Mexican businessman from the Azcárraga media family who founded Grupo Pegaso. His substantial stake in Televisa's controlling company provided the financial base for ventures in telecommunications and sport after its sale. He also owned Atlante, the football club he moved from Mexico City to Cancún.",
+    "html": "<p>Alejandro Burillo Azcárraga was a Mexican businessman from the Azcárraga media family who founded Grupo Pegaso. His substantial stake in Televisa's controlling company provided the financial base for ventures in telecommunications and sport after its sale. He also owned Atlante, the football club he moved from Mexico City to Cancún.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Material statements reverse-checked against opened transaction, business and primary sporting accounts."
+    },
+    "source_ids": [
+      "S5",
+      "S6",
+      "S8",
+      "S9"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Mextenis gave Alejandro Burillo Azcárraga a means of developing professional tennis in Mexico. He founded the organisation in 1992, shortly before Mexico City hosted its first ATP Tour event. His decision to move the Mexican Open from Mexico City to Acapulco in 2001 connected the tournament with a resort audience and room to expand its facilities.\n\nHe cultivated relationships with players, sponsors and tennis authorities as the event grew in international standing. The tournament changed from clay to hard courts. Mextenis also established the Abierto de Los Cabos, an ATP 250 tournament.",
+    "html": "<p>Mextenis gave Alejandro Burillo Azcárraga a means of developing professional tennis in Mexico. He founded the organisation in 1992, shortly before Mexico City hosted its first ATP Tour event. His decision to move the Mexican Open from Mexico City to Acapulco in 2001 connected the tournament with a resort audience and room to expand its facilities.</p>\r\n<p>He cultivated relationships with players, sponsors and tennis authorities as the event grew in international standing. The tournament changed from clay to hard courts. Mextenis also established the Abierto de Los Cabos, an ATP 250 tournament.</p>\r\n",
+    "word_count": 92,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Material statements reverse-checked against opened transaction, business and primary sporting accounts."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "natural_voice": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "institution_then_person",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "Shared anchors are Burillo and professional sport. Short-only facts are the media family, substantial media holding and exit, Pegaso, telecom and Atlante relocation. Long-only facts are Mextenis formation, Acapulco relocation, player and sponsor relationships, surface adaptation and Los Cabos expansion. Long deliberately omits the financial and football story and would lose substantive tennis-development material if reduced to the short. The two-paragraph profile concerns a durable institution rather than current rankings."
+  }
+}

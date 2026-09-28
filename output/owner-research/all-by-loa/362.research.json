@@ -1,0 +1,1325 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 362,
+    "display_name": "Jimmy Buffet",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Broker explicitly identifies Fore Aces former owner as musician Jimmy Buffett, matching nationality and historical context. Source surname is a one-letter spelling error."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "116": "Russian",
+        "4": "American",
+        "118": "Saudi Arabian",
+        "43": "Egyptian",
+        "52": "French",
+        "145": "Ukrainian",
+        "143": "Turkish",
+        "32": "Chinese",
+        "114": "Qatari",
+        "102": "Nigerian",
+        "133": "Swedish",
+        "65": "Indonesian",
+        "29": "Canadian",
+        "36": "Croatian",
+        "57": "Greek",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "22": "British",
+        "8": "Australian",
+        "92": "Mexican",
+        "100": "New Zealander",
+        "75": "Kazakhstanian",
+        "134": "Swiss",
+        "128": "Spanish",
+        "69": "Israeli",
+        "62": "Hungarian",
+        "122": "Singaporean",
+        "89": "Malaysian",
+        "70": "Italian",
+        "105": "Pakistani",
+        "55": "German",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "68": "Irish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "81": "Lebanese",
+        "25": "Bulgarian",
+        "9": "Austrian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "111": "Polish",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "16": "Belgian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "41": "Dutch",
+        "7": "Armenian",
+        "38": "Cypriot",
+        "135": "Syrian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "85": "Luxembourgish",
+        "120": "Serbian",
+        "3": "Algerian",
+        "107": "Panamamian",
+        "11": "Bahamanian",
+        "37": "Cuban",
+        "112": "Portuguese",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "113": "Puerto Rican",
+        "1": "Afghan",
+        "90": "Maltese",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "126": "South African",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "142": "Tunisian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "2": "Albanian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "66": "Iranian",
+        "15": "Belarussian",
+        "147": "Uzbekistanian",
+        "146": "Uruguayan",
+        "58": "Grenadian"
+      },
+      "secondary_nationality": {
+        "112": "Portuguese",
+        "147": "Uzbekistanian",
+        "75": "Kazakhstanian",
+        "135": "Syrian",
+        "55": "German",
+        "69": "Israeli",
+        "4": "American",
+        "22": "British",
+        "66": "Iranian",
+        "145": "Ukrainian",
+        "120": "Serbian",
+        "29": "Canadian",
+        "38": "Cypriot",
+        "52": "French",
+        "126": "South African",
+        "122": "Singaporean",
+        "128": "Spanish",
+        "90": "Maltese",
+        "134": "Swiss",
+        "8": "Australian",
+        "100": "New Zealander",
+        "11": "Bahamanian",
+        "113": "Puerto Rican",
+        "118": "Saudi Arabian",
+        "143": "Turkish",
+        "57": "Greek",
+        "146": "Uruguayan",
+        "116": "Russian",
+        "102": "Nigerian",
+        "107": "Panamamian",
+        "68": "Irish",
+        "9": "Austrian",
+        "70": "Italian",
+        "58": "Grenadian",
+        "142": "Tunisian",
+        "133": "Swedish",
+        "41": "Dutch",
+        "85": "Luxembourgish",
+        "62": "Hungarian",
+        "16": "Belgian",
+        "81": "Lebanese",
+        "2": "Albanian",
+        "111": "Polish",
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "43": "Egyptian",
+        "32": "Chinese",
+        "114": "Qatari",
+        "65": "Indonesian",
+        "36": "Croatian",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "92": "Mexican",
+        "89": "Malaysian",
+        "105": "Pakistani",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "25": "Bulgarian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "7": "Armenian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "3": "Algerian",
+        "37": "Cuban",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "1": "Afghan",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "15": "Belarussian"
+      },
+      "main_residence_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "98": "Israel",
+        "221": "United States",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "213": "Turkey",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "73": "United Kingdom",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "29": "Bahamas",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "131": "Monaco",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "157": "Netherlands",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "66": "Finland",
+        "180": "Romania",
+        "192": "Slovakia",
+        "187": "Sweden",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "secondary_residence_country": {
+        "131": "Monaco",
+        "221": "United States",
+        "187": "Sweden",
+        "73": "United Kingdom",
+        "148": "Mexico",
+        "2": "United Arab Emirates",
+        "157": "Netherlands",
+        "213": "Turkey",
+        "84": "Greece",
+        "53": "Germany",
+        "29": "Bahamas",
+        "66": "Finland",
+        "158": "Norway",
+        "163": "Oman",
+        "98": "Israel",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "93": "Croatia",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "180": "Romania",
+        "192": "Slovakia",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "181": "Russian Federation",
+        "221": "United States",
+        "223": "Uzbekistan",
+        "61": "Egypt",
+        "71": "France",
+        "118": "Kazakhstan",
+        "183": "Saudi Arabia",
+        "213": "Turkey",
+        "45": "China",
+        "178": "Qatar",
+        "200": "Syrian Arab Republic",
+        "187": "Sweden",
+        "169": "Pakistan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "90": "Hong Kong",
+        "241": "Azerbaijan",
+        "107": "Japan",
+        "99": "India",
+        "22": "Bahrain",
+        "73": "United Kingdom",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "102": "Iran",
+        "104": "Italy",
+        "64": "Spain",
+        "98": "Israel",
+        "83": "Equatorial Guinea",
+        "95": "Hungary",
+        "149": "Malaysia",
+        "19": "Belgium",
+        "236": "South Africa",
+        "52": "Czech Republic",
+        "188": "Singapore",
+        "55": "Denmark",
+        "101": "Iraq",
+        "192": "Slovakia",
+        "216": "Taiwan",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "40": "Switzerland",
+        "130": "Morocco",
+        "39": "Congo",
+        "157": "Netherlands",
+        "7": "Armenia",
+        "28": "Brazil",
+        "33": "Belarus",
+        "51": "Cyprus",
+        "129": "Libyan Arab Jamahiriya",
+        "210": "Turkmenistan",
+        "206": "Thailand",
+        "66": "Finland",
+        "180": "Romania",
+        "106": "Jordan",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "97": "Ireland",
+        "186": "Sudan",
+        "155": "Nigeria",
+        "48": "Cuba",
+        "246": "Serbia",
+        "175": "Portugal",
+        "131": "Monaco",
+        "190": "Slovenia",
+        "126": "Lithuania",
+        "211": "Tunisia",
+        "43": "Chile",
+        "173": "Puerto Rico",
+        "219": "Uganda",
+        "86": "Guatemala",
+        "60": "Estonia",
+        "144": "Malta",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "16": "Bosnia and Herzegovina",
+        "127": "Luxembourg",
+        "165": "Peru",
+        "164": "Panama",
+        "54": "Djibouti",
+        "41": "Cote d'Ivoire",
+        "75": "Georgia",
+        "233": "Yemen",
+        "57": "Dominican Republic",
+        "29": "Bahamas",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "128": "Latvia",
+        "123": "Sri Lanka",
+        "6": "Albania",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia",
+        "243": "Isle Of Man",
+        "17": "Barbados",
+        "222": "Uruguay",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "225": "Saint Vincent and the Grenadines",
+        "146": "Maldives",
+        "201": "Swaziland",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia"
+      },
+      "birth_month": {
+        "10": "October",
+        "7": "July",
+        "11": "November",
+        "12": "December",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "6": "June",
+        "1": "January",
+        "5": "May",
+        "4": "April",
+        "2": "February"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "4": "Unknown",
+        "2": "Dead",
+        "3": "Missing"
+      },
+      "death_month": {
+        "5": "May",
+        "6": "June",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "10": "October",
+        "7": "July",
+        "1": "January",
+        "2": "February",
+        "11": "November",
+        "12": "December",
+        "4": "April"
+      }
+    },
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "existing_social_types": []
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "American singer-songwriter, author and entrepreneur Jimmy Buffett, 1946–2023.",
+    "defining_work": "Built a touring and recording career and extended his creative identity into a licensed lifestyle business.",
+    "formative_context": "New Orleans street and bar performances; journalism at Billboard.",
+    "decisive_moment": "Opened a branded shop after seeing unauthorized merchandise.",
+    "enduring_dimensions": [
+      "Audience-centred performance.",
+      "Storytelling in songs and books.",
+      "Control of a personal brand."
+    ],
+    "character_detail": null,
+    "opening_options": [
+      {
+        "mode": "formative_episode",
+        "angle": "Learning to entertain in New Orleans."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Unauthorized merchandise prompts a shop."
+      }
+    ],
+    "excluded_transient_context": [
+      "Vessel ownership",
+      "Net-worth figures",
+      "Estate disputes and successor activity"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": [
+      "creative_industries",
+      "founder_operator"
+    ],
+    "notes": "Shared anchors are Buffett and the Margaritaville brand. Short alone supplies nationality, musical style, hit, touring fanbase and hospitality reach. Long omits that complete bundle and develops New Orleans performance lessons, journalism, literary achievement and the unauthorized-merchandise decision. The latter explains brand control rather than repeating the enterprise list."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/jimmy-buffett/",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Exact opened Forbes person profile matches musician and Margaritaville interests."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "media_entertainment",
+    "label": "Media & Entertainment",
+    "summary": "Forbes attributes most lifetime accumulated wealth to touring and recording, with a separately valued music catalogue; the licensed brand was built on that creative career.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Forbes attributes most lifetime accumulated wealth to touring and recording, with a separately valued music catalogue; the licensed brand was built on that creative career."
+    },
+    "source_ids": [
+      "S2",
+      "S4"
+    ]
+  },
+  "primary_industry": {
+    "classification": "media_entertainment",
+    "label": "Media & Entertainment",
+    "summary": "Final-lifetime sector inferred from the documented wealth breakdown: accumulated touring and recording wealth and music rights were larger than the substantial hospitality licensing stake. Media & Entertainment therefore best describes the identifiable principal fortune at that time. This does not classify subsequent estate allocations or imply activity after death.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "Reasoned materiality assessment from the final-lifetime Forbes breakdown and the retained music-rights platform; complete asset allocation is not public. No posthumous ownership assumption is made."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Documented personal performance income, owned creative rights and founder-built licensing stake establish earned and created wealth. Early paid performing and journalism preceded expansion; no narrower starting-position subtype is required.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Documented personal performance income, owned creative rights and founder-built licensing stake establish earned and created wealth. Early paid performing and journalism preceded expansion; no narrower starting-position subtype is required."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Historical founder relationship to the creative business and Margaritaville licensing platform, with a documented retained ownership stake. This describes lifetime wealth creation, not an active posthumous executive role.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "Historical founder relationship to the creative business and Margaritaville licensing platform, with a documented retained ownership stake. This describes lifetime wealth creation, not an active posthumous executive role."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "biography": {
+    "plain_text": "Jimmy Buffett was an American singer-songwriter who blended country, folk and Caribbean influences into songs about escape and coastal life. His hit Margaritaville became the centre of a business spanning restaurants, resorts and consumer products. Decades of touring and recording built his fortune and a devoted audience whose members called themselves Parrot Heads.",
+    "html": "<p>Jimmy Buffett was an American singer-songwriter who blended country, folk and Caribbean influences into songs about escape and coastal life. His hit Margaritaville became the centre of a business spanning restaurants, resorts and consumer products. Decades of touring and recording built his fortune and a devoted audience whose members called themselves Parrot Heads.</p>\r\n",
+    "word_count": 53,
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Official obituary and opened Forbes reporting support durable facts and causal connections."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Jimmy Buffett learned to hold an audience while performing in the streets and bars of New Orleans. Work as a journalist at Billboard sharpened the observational storytelling that also shaped his songs. He carried that instinct into books, becoming one of the few writers to reach the top of both fiction and nonfiction bestseller lists.\n\nBuffett’s business ambitions grew from wanting control over his own name. After seeing unauthorized merchandise, he opened a Margaritaville shop with his friend Donna Smith in 1985. The venture evolved into a licensing operation with John Cohlan, allowing Buffett to extend his creative identity beyond the stage while retaining an ownership stake.",
+    "html": "<p>Jimmy Buffett learned to hold an audience while performing in the streets and bars of New Orleans. Work as a journalist at Billboard sharpened the observational storytelling that also shaped his songs. He carried that instinct into books, becoming one of the few writers to reach the top of both fiction and nonfiction bestseller lists.</p>\r\n<p>Buffett’s business ambitions grew from wanting control over his own name. After seeing unauthorized merchandise, he opened a Margaritaville shop with his friend Donna Smith in 1985. The venture evolved into a licensing operation with John Cohlan, allowing Buffett to extend his creative identity beyond the stage while retaining an ownership stake.</p>\r\n",
+    "word_count": 107,
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Official obituary and opened Forbes reporting support durable facts and causal connections."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "display_name",
+      "value": "Jimmy Buffett",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official name and life dates corroborated by state arts biography; public name retained."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "existing_value": "Jimmy Buffet"
+    },
+    {
+      "field": "last_name",
+      "value": "Buffett",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official name and life dates corroborated by state arts biography; public name retained."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "existing_value": "Buffet"
+    },
+    {
+      "field": "sort_name",
+      "value": "Jimmy Buffett",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official name and life dates corroborated by state arts biography; public name retained."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "existing_value": "Jimmy Buffet"
+    },
+    {
+      "field": "sort_first_name",
+      "value": "Jimmy Buffett",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official name and life dates corroborated by state arts biography; public name retained."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "existing_value": "Jimmy Buffet"
+    },
+    {
+      "field": "sort_last_name",
+      "value": "Buffett Jimmy",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official name and life dates corroborated by state arts biography; public name retained."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "existing_value": "Buffet Jimmy"
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official name and life dates corroborated by state arts biography; public name retained."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "existing_value": "Alive"
+    },
+    {
+      "field": "known_for_title",
+      "value": "Singer-songwriter and Margaritaville founder",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official name and life dates corroborated by state arts biography; public name retained."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official name and life dates corroborated by state arts biography; public name retained."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Pascagoula, Mississippi",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official name and life dates corroborated by state arts biography; public name retained."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_country",
+      "value": "United States",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official name and life dates corroborated by state arts biography; public name retained."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "25",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official name and life dates corroborated by state arts biography; public name retained."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "December",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official name and life dates corroborated by state arts biography; public name retained."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1946",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official name and life dates corroborated by state arts biography; public name retained."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type": "Forbes",
+      "type_id": "11",
+      "url": "https://www.forbes.com/profile/jimmy-buffett/",
+      "verification": "Exact official website outbound link or opened matching person/company page; accounts maintained as artist legacy channels.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official cross-link or exact opened identity match."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "type": "Personal Website",
+      "type_id": "15",
+      "url": "https://www.jimmybuffett.com/",
+      "verification": "Exact official website outbound link or opened matching person/company page; accounts maintained as artist legacy channels.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official cross-link or exact opened identity match."
+      },
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "type": "Company Website",
+      "type_id": "14",
+      "url": "https://www.margaritaville.com/",
+      "verification": "Exact official website outbound link or opened matching person/company page; accounts maintained as artist legacy channels.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official cross-link or exact opened identity match."
+      },
+      "source_ids": [
+        "S5",
+        "S7"
+      ]
+    },
+    {
+      "type": "Facebook",
+      "type_id": "2",
+      "url": "https://www.facebook.com/jimmybuffett",
+      "verification": "Exact official website outbound link or opened matching person/company page; accounts maintained as artist legacy channels.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official cross-link or exact opened identity match."
+      },
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "type": "Instagram",
+      "type_id": "9",
+      "url": "https://www.instagram.com/jimmybuffett/",
+      "verification": "Exact official website outbound link or opened matching person/company page; accounts maintained as artist legacy channels.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official cross-link or exact opened identity match."
+      },
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "type": "Twitter",
+      "type_id": "3",
+      "url": "https://twitter.com/jimmybuffett",
+      "verification": "Exact official website outbound link or opened matching person/company page; accounts maintained as artist legacy channels.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official cross-link or exact opened identity match."
+      },
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "type": "Youtube",
+      "type_id": "4",
+      "url": "https://www.youtube.com/user/jimmybuffett",
+      "verification": "Exact official website outbound link or opened matching person/company page; accounts maintained as artist legacy channels.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official cross-link or exact opened identity match."
+      },
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "type": "Wikipedia",
+      "type_id": "10",
+      "url": "https://en.wikipedia.org/wiki/Jimmy_Buffett",
+      "verification": "Exact official website outbound link or opened matching person/company page; accounts maintained as artist legacy channels.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official cross-link or exact opened identity match."
+      },
+      "source_ids": [
+        "S8"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0233",
+      "name": "Musician",
+      "summary": "Five-decade recording and touring career is a defining profession.",
+      "relationship_type": "professional",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Musician",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Five-decade recording and touring career is a defining profession."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "tag_id": "tag_0024",
+      "name": "Author",
+      "summary": "Repeated bestselling fiction and nonfiction establish a substantial literary career.",
+      "relationship_type": "professional",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Author",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Repeated bestselling fiction and nonfiction establish a substantial literary career."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "tag_id": "tag_1117",
+      "name": "Brand licensing",
+      "summary": "Repeated Margaritaville licensing across consumer and hospitality businesses materially produced wealth.",
+      "relationship_type": "founder",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Brand licensing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Repeated Margaritaville licensing across consumer and hospitality businesses materially produced wealth."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.jimmybuffett.com/obituary",
+      "title": "James William Buffett 1946–2023",
+      "publisher": "Jimmy Buffett official website",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Life dates, full name, birthplace, music, literature and early performance/journalism."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/sites/lisettevoytko/2023/04/03/beach-bum-billionaire-how-jimmy-buffett-went-from-margaritaville-to-easy-street/",
+      "title": "Beach Bum Billionaire",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Music-based wealth, owned licensing stake, merchandise origin and Cohlan partnership."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://dos.fl.gov/cultural/programs/florida-artists-hall-of-fame/jimmy-buffett",
+      "title": "Jimmy Buffett",
+      "publisher": "Florida Department of State",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Musical biography and identity."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.forbes.com/profile/jimmy-buffett/",
+      "title": "Jimmy Buffett profile",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Exact Forbes profile."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.jimmybuffett.com/",
+      "title": "Official Website of Jimmy Buffett",
+      "publisher": "Jimmy Buffett official website",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Official artist site; raw HTML verified exact Facebook, Instagram, Twitter, YouTube and company links."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.northropandjohnson.com/news/brokerage-new-build/fore-aces-124-37-7m-delta-marine-yacht-for-sale",
+      "title": "Fore Aces for sale",
+      "publisher": "Northrop and Johnson",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Explicit historical Jimmy Buffett ownership resolves source spelling."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.margaritaville.com/",
+      "title": "Margaritaville",
+      "publisher": "Margaritaville",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Official continuing brand site."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://en.wikipedia.org/wiki/Jimmy_Buffett",
+      "title": "Jimmy Buffett",
+      "publisher": "Wikipedia",
+      "tier": 4,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Exact person page corroborated by primary biography."
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Name and mortality corrections",
+      "detail": "Source Jimmy Buffet corrected to public Jimmy Buffett and sort fields. James William is legal name; public Jimmy retained. Official obituary establishes death on 1 September 2023. Mortality corrected to Dead. Validator treats death fields as inapplicable while immutable baseline says Alive, so death date retained here rather than proposed; fill after a refreshed deceased baseline. Derived age fields remain untouched."
+    },
+    {
+      "topic": "Temporal wealth scope",
+      "detail": "Industries and Founder relationship describe final lifetime interests. No posthumous operation or current personal asset ownership is implied; estate/trust allocation not investigated."
+    },
+    {
+      "topic": "Social access",
+      "detail": "Direct Facebook/Instagram access failed; Twitter content unavailable and YouTube limited. Official artist-site HTML supplies exact links, sufficient for identity. LinkedIn candidates lack authoritative links and are rejected. TikTok fan-style result unverified; no verified Vimeo/Flickr lead. Trip Advisor/Zillow inapplicable."
+    },
+    {
+      "topic": "Tag exclusions",
+      "detail": "Brand licensing captures the evidenced economic role. Licensed casino/hotel names alone do not establish personal gambling operation or hotel development, so no such tags are inferred. Music industry and Rock music overlap broad profession evidence; concise supported tags retained."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Identity spelling and mortality resolved; independent biography pair review completed. No shared cohort/catalogue or live writes."
+  }
+}

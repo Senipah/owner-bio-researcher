@@ -1,0 +1,1186 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 344,
+    "display_name": "Flavio Briatore",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Distinctive name, Italian identity and existing Wikipedia match official Alpine and personal biographies and hospitality founder records."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "116": "Russian",
+        "4": "American",
+        "118": "Saudi Arabian",
+        "43": "Egyptian",
+        "52": "French",
+        "145": "Ukrainian",
+        "143": "Turkish",
+        "32": "Chinese",
+        "114": "Qatari",
+        "102": "Nigerian",
+        "133": "Swedish",
+        "65": "Indonesian",
+        "29": "Canadian",
+        "36": "Croatian",
+        "57": "Greek",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "22": "British",
+        "8": "Australian",
+        "92": "Mexican",
+        "100": "New Zealander",
+        "75": "Kazakhstanian",
+        "134": "Swiss",
+        "128": "Spanish",
+        "69": "Israeli",
+        "62": "Hungarian",
+        "122": "Singaporean",
+        "89": "Malaysian",
+        "70": "Italian",
+        "105": "Pakistani",
+        "55": "German",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "68": "Irish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "81": "Lebanese",
+        "25": "Bulgarian",
+        "9": "Austrian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "111": "Polish",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "16": "Belgian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "41": "Dutch",
+        "7": "Armenian",
+        "38": "Cypriot",
+        "135": "Syrian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "85": "Luxembourgish",
+        "120": "Serbian",
+        "3": "Algerian",
+        "107": "Panamamian",
+        "11": "Bahamanian",
+        "37": "Cuban",
+        "112": "Portuguese",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "113": "Puerto Rican",
+        "1": "Afghan",
+        "90": "Maltese",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "126": "South African",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "142": "Tunisian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "2": "Albanian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "66": "Iranian",
+        "15": "Belarussian",
+        "147": "Uzbekistanian",
+        "146": "Uruguayan",
+        "58": "Grenadian"
+      },
+      "secondary_nationality": {
+        "112": "Portuguese",
+        "147": "Uzbekistanian",
+        "75": "Kazakhstanian",
+        "135": "Syrian",
+        "55": "German",
+        "69": "Israeli",
+        "4": "American",
+        "22": "British",
+        "66": "Iranian",
+        "145": "Ukrainian",
+        "120": "Serbian",
+        "29": "Canadian",
+        "38": "Cypriot",
+        "52": "French",
+        "126": "South African",
+        "122": "Singaporean",
+        "128": "Spanish",
+        "90": "Maltese",
+        "134": "Swiss",
+        "8": "Australian",
+        "100": "New Zealander",
+        "11": "Bahamanian",
+        "113": "Puerto Rican",
+        "118": "Saudi Arabian",
+        "143": "Turkish",
+        "57": "Greek",
+        "146": "Uruguayan",
+        "116": "Russian",
+        "102": "Nigerian",
+        "107": "Panamamian",
+        "68": "Irish",
+        "9": "Austrian",
+        "70": "Italian",
+        "58": "Grenadian",
+        "142": "Tunisian",
+        "133": "Swedish",
+        "41": "Dutch",
+        "85": "Luxembourgish",
+        "62": "Hungarian",
+        "16": "Belgian",
+        "81": "Lebanese",
+        "2": "Albanian",
+        "111": "Polish",
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "43": "Egyptian",
+        "32": "Chinese",
+        "114": "Qatari",
+        "65": "Indonesian",
+        "36": "Croatian",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "92": "Mexican",
+        "89": "Malaysian",
+        "105": "Pakistani",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "25": "Bulgarian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "7": "Armenian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "3": "Algerian",
+        "37": "Cuban",
+        "123": "Slovakian",
+        "157": "Monégasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "1": "Afghan",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "15": "Belarussian"
+      },
+      "main_residence_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "98": "Israel",
+        "221": "United States",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "213": "Turkey",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "73": "United Kingdom",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "29": "Bahamas",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "131": "Monaco",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "157": "Netherlands",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "66": "Finland",
+        "180": "Romania",
+        "192": "Slovakia",
+        "187": "Sweden",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "secondary_residence_country": {
+        "131": "Monaco",
+        "221": "United States",
+        "187": "Sweden",
+        "73": "United Kingdom",
+        "148": "Mexico",
+        "2": "United Arab Emirates",
+        "157": "Netherlands",
+        "213": "Turkey",
+        "84": "Greece",
+        "53": "Germany",
+        "29": "Bahamas",
+        "66": "Finland",
+        "158": "Norway",
+        "163": "Oman",
+        "98": "Israel",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "93": "Croatia",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "180": "Romania",
+        "192": "Slovakia",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "181": "Russian Federation",
+        "221": "United States",
+        "223": "Uzbekistan",
+        "61": "Egypt",
+        "71": "France",
+        "118": "Kazakhstan",
+        "183": "Saudi Arabia",
+        "213": "Turkey",
+        "45": "China",
+        "178": "Qatar",
+        "200": "Syrian Arab Republic",
+        "187": "Sweden",
+        "169": "Pakistan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "90": "Hong Kong",
+        "241": "Azerbaijan",
+        "107": "Japan",
+        "99": "India",
+        "22": "Bahrain",
+        "73": "United Kingdom",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "102": "Iran",
+        "104": "Italy",
+        "64": "Spain",
+        "98": "Israel",
+        "83": "Equatorial Guinea",
+        "95": "Hungary",
+        "149": "Malaysia",
+        "19": "Belgium",
+        "236": "South Africa",
+        "52": "Czech Republic",
+        "188": "Singapore",
+        "55": "Denmark",
+        "101": "Iraq",
+        "192": "Slovakia",
+        "216": "Taiwan",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "40": "Switzerland",
+        "130": "Morocco",
+        "39": "Congo",
+        "157": "Netherlands",
+        "7": "Armenia",
+        "28": "Brazil",
+        "33": "Belarus",
+        "51": "Cyprus",
+        "129": "Libyan Arab Jamahiriya",
+        "210": "Turkmenistan",
+        "206": "Thailand",
+        "66": "Finland",
+        "180": "Romania",
+        "106": "Jordan",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "97": "Ireland",
+        "186": "Sudan",
+        "155": "Nigeria",
+        "48": "Cuba",
+        "246": "Serbia",
+        "175": "Portugal",
+        "131": "Monaco",
+        "190": "Slovenia",
+        "126": "Lithuania",
+        "211": "Tunisia",
+        "43": "Chile",
+        "173": "Puerto Rico",
+        "219": "Uganda",
+        "86": "Guatemala",
+        "60": "Estonia",
+        "144": "Malta",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "16": "Bosnia and Herzegovina",
+        "127": "Luxembourg",
+        "165": "Peru",
+        "164": "Panama",
+        "54": "Djibouti",
+        "41": "Cote d'Ivoire",
+        "75": "Georgia",
+        "233": "Yemen",
+        "57": "Dominican Republic",
+        "29": "Bahamas",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "128": "Latvia",
+        "123": "Sri Lanka",
+        "6": "Albania",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia",
+        "243": "Isle Of Man",
+        "17": "Barbados",
+        "222": "Uruguay",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "225": "Saint Vincent and the Grenadines",
+        "146": "Maldives",
+        "201": "Swaziland",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia"
+      },
+      "birth_month": {
+        "10": "October",
+        "7": "July",
+        "11": "November",
+        "12": "December",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "6": "June",
+        "1": "January",
+        "5": "May",
+        "4": "April",
+        "2": "February"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "4": "Unknown",
+        "2": "Dead",
+        "3": "Missing"
+      },
+      "death_month": {
+        "5": "May",
+        "6": "June",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "10": "October",
+        "7": "July",
+        "1": "January",
+        "2": "February",
+        "11": "November",
+        "12": "December",
+        "4": "April"
+      }
+    },
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ]
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Italian entrepreneur based in Monaco, combining Formula One management and hospitality businesses.",
+    "defining_work": "Built the Billionaire hospitality concept and led Benetton and Renault racing teams.",
+    "formative_context": "Son of primary-school teachers; worked on Benetton clothing expansion before motorsport.",
+    "decisive_moment": null,
+    "enduring_dimensions": [
+      "Recruitment and development of young racing drivers.",
+      "Commercial promotion and sponsor relationships within Formula One.",
+      "Creation of restaurant and entertainment brands."
+    ],
+    "character_detail": null,
+    "opening_options": [
+      {
+        "mode": "defining_achievement",
+        "angle": "Building championship teams around young drivers."
+      },
+      {
+        "mode": "institution_or_asset",
+        "angle": "His driver-management agency as a talent-development business."
+      }
+    ],
+    "excluded_transient_context": [
+      "Personal vessels and relationships",
+      "Current financial amounts and headcounts",
+      "Sold hospitality venues as present holdings",
+      "Unrequested allegations and health"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "defining_achievement",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "Shared anchors are Briatore and motorsport involvement. Short alone carries nationality/base, family, retail expansion and hospitality brands. Long deliberately omits that bundle and develops driver recruitment, named championship outcomes, sponsorship emphasis, driver representation and the junior racing series. Those concrete sporting institutions and methods disappear if reduced to the short; no duplicated sentence or complete fact bundle."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Exact name and Forbes profile-path searches found coverage but no verified dedicated profile. Attempted profile URL failed; no invented profile link proposed."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "sports",
+    "label": "Sports",
+    "summary": "Inferred principal creation sector: his documented economic interests included Benetton equity sold to finance Supertec, acquired racing teams and the subsequently sold GP2 series. These sustained ownership and disposal mechanisms support motorsport as the strongest early capital-building activity, beyond merely an executive salary. Fashion retail preceded this; exact relative proceeds are not publicly established in the opened evidence.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "Inferred principal creation sector: his documented economic interests included Benetton equity sold to finance Supertec, acquired racing teams and the subsequently sold GP2 series. These sustained ownership and disposal mechanisms support motorsport as the strongest early capital-building activity, beyond merely an executive salary. Fashion retail preceded this; exact relative proceeds are not publicly established in the opened evidence."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "primary_industry": {
+    "classification": "hospitality",
+    "label": "Hospitality",
+    "summary": "Inferred from the central founder-owned Majestas platform, its disclosed substantial shareholding and continued development of restaurant and entertainment brands. Twiga and the former Porto Cervo Billionaire venue were sold in 2025, but the broader group continues. The value of all personal assets is unavailable; Alpine employment is not treated as ownership of a racing team.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "Inferred from the central founder-owned Majestas platform, its disclosed substantial shareholding and continued development of restaurant and entertainment brands. Twiga and the former Porto Cervo Billionaire venue were sold in 2025, but the broader group continues. The value of all personal assets is unavailable; Alpine employment is not treated as ownership of a racing team."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Reasoned inference from independently founded hospitality brands, substantial retained company ownership, and personally acquired and sold motorsport assets. The founder-built asset mechanisms support broad self-made. Parents were schoolteachers, but the full starting-capital position is not documented well enough for a narrower subtype.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "Reasoned inference from independently founded hospitality brands, substantial retained company ownership, and personally acquired and sold motorsport assets. The founder-built asset mechanisms support broad self-made. Parents were schoolteachers, but the full starting-capital position is not documented well enough for a narrower subtype."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Inferred principal relationship follows the continuing founder-led Majestas enterprise and its material owned brands. His separate executive role at Alpine is substantial publicly, but no evidence makes it the principal private asset; he remains an active creator of hospitality concepts.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "Inferred principal relationship follows the continuing founder-led Majestas enterprise and its material owned brands. His separate executive role at Alpine is substantial publicly, but no evidence makes it the principal private asset; he remains an active creator of hospitality concepts."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "biography": {
+    "plain_text": "Flavio Briatore is an Italian entrepreneur based in Monaco whose career spans Formula One and luxury hospitality. After helping expand Benetton’s clothing business in America, he built substantial interests in motorsport and founded the Billionaire entertainment brand. The son of schoolteachers, he developed the hospitality group Majestas and the Crazy Pizza restaurant concept.",
+    "html": "<p>Flavio Briatore is an Italian entrepreneur based in Monaco whose career spans Formula One and luxury hospitality. After helping expand Benetton’s clothing business in America, he built substantial interests in motorsport and founded the Billionaire entertainment brand. The son of schoolteachers, he developed the hospitality group Majestas and the Crazy Pizza restaurant concept.</p>\r\n",
+    "word_count": 53,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Opened first-party biography, team profile and corporate sources directly establish material claims."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Flavio Briatore built championship teams around young drivers whose potential he recognised early. At Benetton, Michael Schumacher won consecutive drivers’ titles; at Renault, Fernando Alonso repeated that achievement. Briatore’s management combined driver recruitment with a strong emphasis on marketing and sponsorship, treating the racing operation as a commercial organisation as well as a sporting team.\n\nHis involvement in talent development extended beyond the team garage. He established FB Management to scout and represent drivers, with a roster that included Giancarlo Fisichella, Jarno Trulli and Fernando Alonso. He also helped create GP2 as a championship alongside Formula One, giving developing drivers and engineers a competitive arena before progressing to the senior series.",
+    "html": "<p>Flavio Briatore built championship teams around young drivers whose potential he recognised early. At Benetton, Michael Schumacher won consecutive drivers’ titles; at Renault, Fernando Alonso repeated that achievement. Briatore’s management combined driver recruitment with a strong emphasis on marketing and sponsorship, treating the racing operation as a commercial organisation as well as a sporting team.</p>\r\n<p>His involvement in talent development extended beyond the team garage. He established FB Management to scout and represent drivers, with a roster that included Giancarlo Fisichella, Jarno Trulli and Fernando Alonso. He also helped create GP2 as a championship alongside Formula One, giving developing drivers and engineers a competitive arena before progressing to the senior series.</p>\r\n",
+    "word_count": 111,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Opened first-party biography, team profile and corporate sources directly establish material claims."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Formula One team manager and founder of Majestas",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Explicit official team identity or personal biography; residence stated directly rather than inferred from venue locations."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Explicit official team identity or personal biography; residence stated directly rather than inferred from venue locations."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Verzuolo",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Explicit official team identity or personal biography; residence stated directly rather than inferred from venue locations."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "12",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Explicit official team identity or personal biography; residence stated directly rather than inferred from venue locations."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "April",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Explicit official team identity or personal biography; residence stated directly rather than inferred from venue locations."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1950",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Explicit official team identity or personal biography; residence stated directly rather than inferred from venue locations."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "main_residence_country",
+      "value": "Monaco",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Explicit official team identity or personal biography; residence stated directly rather than inferred from venue locations."
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "existing_value": "Italy"
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type": "Personal Website",
+      "type_id": "15",
+      "url": "https://flaviobriatore.com/",
+      "verification": "Direct personal biography, identity corroborated by Alpine.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Direct personal biography, identity corroborated by Alpine."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "type": "Company Website",
+      "type_id": "14",
+      "url": "https://majestas.com/",
+      "verification": "Official group website and ownership disclosures establish founder relationship.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Official group website and ownership disclosures establish founder relationship."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "type": "Instagram",
+      "type_id": "9",
+      "url": "https://www.instagram.com/briatoreflavio/",
+      "verification": "Exact link in opened personal website HTML; target access failed but official cross-link verifies identity.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Exact link in opened personal website HTML; target access failed but official cross-link verifies identity."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "type": "Facebook",
+      "type_id": "2",
+      "url": "https://www.facebook.com/flaviobriatore/",
+      "verification": "Exact official personal-website link; Facebook login/rate barrier prevents content inspection.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Exact official personal-website link; Facebook login/rate barrier prevents content inspection."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "type": "Twitter",
+      "type_id": "3",
+      "url": "https://twitter.com/Briatore",
+      "verification": "Exact official personal-website link; direct platform access robots-blocked.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Exact official personal-website link; direct platform access robots-blocked."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0078",
+      "name": "Formula 1",
+      "summary": "Long-term team leadership and driver development with multiple championships.",
+      "relationship_type": "executive",
+      "temporal_scope": "current",
+      "taxonomy_value": "Distinct sustained sporting role or specific substantial hospitality operating identity.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Direct official corporate and sporting records."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "tag_id": "tag_0111",
+      "name": "Luxury hospitality",
+      "summary": "Founder-owner of a substantial luxury dining and entertainment group.",
+      "relationship_type": "founder",
+      "temporal_scope": "current",
+      "taxonomy_value": "Distinct sustained sporting role or specific substantial hospitality operating identity.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Direct official corporate and sporting records."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "tag_id": "tag_0241",
+      "name": "Restaurant groups",
+      "summary": "Built a portfolio of multiple restaurant brands and locations through Majestas.",
+      "relationship_type": "founder",
+      "temporal_scope": "current",
+      "taxonomy_value": "Distinct sustained sporting role or specific substantial hospitality operating identity.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Direct official corporate and sporting records."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://flaviobriatore.com/",
+      "title": "Official biography and Formula One history",
+      "publisher": "Flavio Briatore",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Italian identity, teacher parents, Monaco residence, fashion work, motorsport assets, driver agency and GP2; hospitality brands; exact Instagram, Facebook and Twitter links in HTML."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.alpinef1.com/members/flavio-briatore?lang=eng",
+      "title": "Flavio Briatore, Executive Advisor",
+      "publisher": "BWT Alpine Formula One Team",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Birth date/place, nationality, current title, driver recruitment and championship outcomes."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://majestas.com/",
+      "title": "Majestas: our story and brands",
+      "publisher": "Majestas",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Founder history, Costa partnership, current hospitality brands and group continuity."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://deodato.group/wp-content/uploads/2024/03/Def-Comunicato-Crazy-Pizza-Londra.pdf",
+      "title": "Crazy Pizza partnership announcement, March 2024",
+      "publisher": "Deodato.Gallery",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Briatore half ownership of Majestas, substantial operated/licensed brand portfolio, Crazy Pizza concept."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://bebeez.it/wp-content/uploads/2025/02/TWIGA_CS_rev2402.pdf",
+      "title": "LMDV Hospitality acquires Twiga, February 2025",
+      "publisher": "LMDV Hospitality",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Completed Twiga group acquisition and former Porto Cervo Billionaire venue conversion; distinguishes sold assets."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://finanza.repubblica.it/News/2023/06/20/majestas_nel_2022_ricavi_a_circa_80_milioni-161/",
+      "title": "Majestas results and ownership",
+      "publisher": "Teleborsa via La Repubblica",
+      "tier": 2,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Ownership and business scale corroboration."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.mgmt.ucl.ac.uk/sites/default/files/upload/Majestas%20Case%20Study_July23_Final_Abstract.pdf",
+      "title": "Majestas case study abstract",
+      "publisher": "UCL School of Management",
+      "tier": 1,
+      "accessed_at": "2026-09-27",
+      "supports": [
+        "Independent business-school treatment of group strategy and Briatore founder context."
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Current business scope",
+      "detail": "Twiga and former Porto Cervo Billionaire venue transferred in February 2025. Do not describe these sites as current personal holdings. Majestas and its retained brands remain a central documented private business; exact present cap table and full asset allocation are unavailable. Hospitality primacy and founder relationship therefore carry capped inference scores."
+    },
+    {
+      "topic": "Origin distinction",
+      "detail": "Benetton fashion operations preceded Formula One, and diversification included pharmaceuticals and hospitality. Multiple documented motorsport ownership transactions support Sports at medium confidence; this does not assert every early asset or receipt came from racing. Broad self-made avoids assuming a particular launch-capital situation."
+    },
+    {
+      "topic": "Forbes and links",
+      "detail": "No dedicated Forbes profile verified; magazine coverage is not a profile URL. Official HTML links directly verify Instagram, Facebook and Twitter despite platform access barriers. Name/context searches also checked LinkedIn, YouTube, TikTok, Vimeo, Flickr, existing Wikipedia and company/personal sites. LinkedIn results lack sufficient official cross-link or corroboration; no other personal channel verified. Trip Advisor and Zillow are irrelevant."
+    },
+    {
+      "topic": "Identity details",
+      "detail": "Official Alpine profile supports 12 April 1950, Verzuolo, Italy. No unverified middle name proposed. Personal website explicitly states Monaco residence, supporting correction of Italy in the source input."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Public research completed, sales/current ownership distinguished and complementary biography pair reviewed. No shared or live data modified."
+  }
+}
