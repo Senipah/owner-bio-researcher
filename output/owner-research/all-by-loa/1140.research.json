@@ -1,0 +1,502 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1140,
+    "display_name": "Mehmet Karabeyoglu",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The exact name, Turkish nationality and yacht-building context align across first-party and specialist sources. Most decisively, the upstream record links Karabeyoglu to Eugenia VII, SuperYacht Times identifies that vessel's former name as Jazz Jr., and both an exact-name interview and contemporary sailing coverage identify Turquoise Yachts founder Mehmet Karabeyoglu as Jazz Jr.'s owner."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Turkish mechanical engineer and shipyard founder who helped establish Turquoise Yachts as an internationally oriented builder of large custom yachts.",
+    "defining_work": "Karabeyoglu founded his own vessel-construction company, combined it with Proteksan and led the resulting yard through large-vessel production, international sales and a later majority investment by MB Holding.",
+    "formative_context": "Educated in England as a mechanical engineer, he brought a lifelong interest in sailing and racing into yacht construction and began building yachts in 1990.",
+    "decisive_moment": "His decision to begin a fifty-metre yacht on speculation created the vessel Turquoise and helped provide the commercial proof for the shipyard platform that followed.",
+    "enduring_dimensions": [
+      "Founder-led development of Turquoise Yachts",
+      "Engineering-led, vertically integrated custom-yacht production",
+      "International expansion and long-term leadership through a change of majority ownership"
+    ],
+    "character_detail": "Karabeyoglu paired mechanical-engineering training with practical sailing knowledge, favouring in-house hull, superstructure, piping and finishing capabilities rather than an assembly-only model.",
+    "opening_options": [
+      {
+        "mode": "decisive_event",
+        "angle": "Open with the decision to build the first fifty-metre Turquoise on speculation before an owner was secured."
+      },
+      {
+        "mode": "institution_or_asset",
+        "angle": "Begin with Turquoise Yachts as the Turkish shipyard platform Karabeyoglu built and led across ownership eras."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Lead with his mechanical-engineering education in England and early sailing interest before yacht construction."
+      }
+    ],
+    "excluded_transient_context": [
+      "Private vessel ownership, vessel names, specifications and sale timing",
+      "Current order-book counts, shipyard capacity figures and changing facilities",
+      "Unverified net-worth estimates and private ownership percentages",
+      "The Yogi casualty dispute and other episodic controversies",
+      "Source attribution and confidence deliberation in published biography copy"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "decision_then_consequence",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "reviewed_phrase_exceptions": [
+      {
+        "kind": "commercial_maritime",
+        "phrase": "Turquoise Yachts",
+        "source_ids": ["S2", "S3", "S6", "S8"],
+        "reason": "This is the exact name of Karabeyoglu's commercial shipbuilding company, not a reference to a personal asset."
+      },
+      {
+        "kind": "commercial_maritime",
+        "phrase": "large custom yachts",
+        "source_ids": ["S2", "S3", "S6", "S8"],
+        "reason": "This phrase describes the products of Karabeyoglu's commercial manufacturing business, not personally owned vessels."
+      },
+      {
+        "kind": "commercial_maritime",
+        "phrase": "yacht construction",
+        "source_ids": ["S3", "S6", "S8"],
+        "reason": "This phrase describes Karabeyoglu's documented commercial manufacturing work, not personal vessel ownership."
+      },
+      {
+        "kind": "commercial_maritime",
+        "phrase": "building yachts",
+        "source_ids": ["S3"],
+        "reason": "This phrase describes Karabeyoglu's entry into commercial vessel construction."
+      },
+      {
+        "kind": "commercial_maritime",
+        "phrase": "fifty-metre yacht",
+        "source_ids": ["S3", "S6"],
+        "reason": "This phrase describes the first large commercial build that established Karabeyoglu's shipyard platform."
+      },
+      {
+        "kind": "commercial_maritime",
+        "phrase": "custom-yacht production",
+        "source_ids": ["S3", "S6", "S8"],
+        "reason": "This phrase describes the commercial production model of Karabeyoglu's shipyard."
+      }
+    ],
+    "notes": "The short biography establishes Karabeyoglu's durable founder, engineer and shipyard-leader identity. The long profile instead opens with the speculative first build, then explains how engineering formation, institutional combination and a later capital transition shaped the business. Vessel ownership is reserved for identity resolution rather than lifestyle narrative."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes-first exact-name searches using both Karabeyoglu and Karabeyoğlu spellings found no dedicated Forbes personal profile."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "Karabeyoglu created his documented business value by founding and scaling a builder of large custom motor and sailing yachts.",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "First-party material names him as Turquoise Yachts' founder, while interviews and industry coverage document his own predecessor company, the later Proteksan combination, his CEO role and the yard's sustained construction operations. Public sources do not quantify his personal fortune, so the classification describes the supported value-creation mechanism rather than a net-worth estimate."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S6",
+      "S8"
+    ]
+  },
+  "primary_industry": {
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "Custom yacht manufacturing remains Karabeyoglu's defining principal industry, although he stepped back from Turquoise Yachts management in 2023.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The official Turquoise Yachts site continues to identify him as founder, and specialist reporting documents both his long operating leadership and his 2023 departure from management. No reliable source establishes a later principal business in another industry."
+    },
+    "source_ids": [
+      "S2",
+      "S7"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made_independent",
+    "label": "Self-made — independent start",
+    "summary": "Karabeyoglu founded his own yacht-building company after engineering training, then combined it with a partner's established operation; no reviewed source documents an inherited business or family transfer.",
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "In a direct interview, Karabeyoglu states that Turquoise was his company, that he began building yachts in 1990 and that Proteksan belonged to his partner. Later industry coverage consistently treats him as a founder. The evidence establishes an independently founded operating platform, although it does not disclose his early financing."
+    },
+    "source_ids": [
+      "S3",
+      "S6",
+      "S7"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "He founded Turquoise Yacht Construction and became a founding partner and long-serving chief executive of the combined shipyard.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Turquoise Yachts identifies Karabeyoglu as founder, his direct interview explains the formation of his predecessor company and the combination with Proteksan, and specialist reporting records his founder and CEO roles."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S6",
+      "S7"
+    ]
+  },
+  "biography": {
+    "plain_text": "Mehmet Karabeyoglu is a Turkish mechanical engineer and founder of Turquoise Yachts. He began building yachts in 1990, combined his company with Proteksan and led the resulting shipyard into international custom-yacht production. His tenure joined engineering-led, in-house construction with major facility expansion before he stepped back from management in 2023.",
+    "html": "<p>Mehmet Karabeyoglu is a Turkish mechanical engineer and founder of Turquoise Yachts. He began building yachts in 1990, combined his company with Proteksan and led the resulting shipyard into international custom-yacht production. His tenure joined engineering-led, in-house construction with major facility expansion before he stepped back from management in 2023.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The official company site, Karabeyoglu's direct interview and specialist trade reporting support his founder identity, engineering training, 1990 start, Proteksan combination, international production model, facility expansion and 2023 management departure."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S7",
+      "S8"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Before an owner was secured, Mehmet Karabeyoglu committed to building a fifty-metre yacht that would carry the Turquoise name. The speculative project expressed the operating style he brought from mechanical-engineering studies in England: take technical control, build substantial capability and compete internationally. He had entered yacht construction in 1990, and the success of that first large vessel helped turn his young company into a credible shipyard platform for complex commissioned projects.\n\nThe combination of Turquoise with Proteksan created a builder focused on large custom yachts for overseas clients. As founder and chief executive, Karabeyoglu championed in-house production of hulls, superstructures, engineering systems and finishes, then guided facility expansion under new majority ownership. This approach kept technical knowledge, craftsmanship and production decisions within the yard while it pursued larger commissions. After decades shaping the company and its international reputation, he and fellow founder Necdet Salgur stepped away from management in 2023, leaving the established business to its next leadership team.",
+    "html": "<p>Before an owner was secured, Mehmet Karabeyoglu committed to building a fifty-metre yacht that would carry the Turquoise name. The speculative project expressed the operating style he brought from mechanical-engineering studies in England: take technical control, build substantial capability and compete internationally. He had entered yacht construction in 1990, and the success of that first large vessel helped turn his young company into a credible shipyard platform for complex commissioned projects.</p>\r\n<p>The combination of Turquoise with Proteksan created a builder focused on large custom yachts for overseas clients. As founder and chief executive, Karabeyoglu championed in-house production of hulls, superstructures, engineering systems and finishes, then guided facility expansion under new majority ownership. This approach kept technical knowledge, craftsmanship and production decisions within the yard while it pursued larger commissions. After decades shaping the company and its international reputation, he and fellow founder Necdet Salgur stepped away from management in 2023, leaving the established business to its next leadership team.</p>\r\n",
+    "word_count": 159,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Karabeyoglu's direct interview supports his engineering education, 1990 entry and company combination. Trade reporting supports the speculative first Turquoise project, international custom-yacht operations, vertically integrated production, facility investment and 2023 leadership transition."
+    },
+    "source_ids": [
+      "S3",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Founder of Turquoise Yachts",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The official Turquoise Yachts team page identifies Mehmet Karabeyoglu as founder, corroborated by specialist industry reporting."
+      },
+      "source_ids": [
+        "S2",
+        "S7"
+      ]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Mehmet Karabeyoglu is a Turkish mechanical engineer and founder of Turquoise Yachts. He began building yachts in 1990, combined his company with Proteksan and led the resulting shipyard into international custom-yacht production. His tenure joined engineering-led, in-house construction with major facility expansion before he stepped back from management in 2023.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The official company site, direct interview and specialist trade sources support every durable career claim in the proposed biography."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S7",
+        "S8"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.turquoiseyachts.com/team",
+      "verification": "Official Turquoise Yachts team page naming Mehmet Karabeyoglu as founder. Type ID 14 is copied from the owner-input lookup.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The first-party company page contains his exact name, founder designation and a statement attributed to him."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0172",
+      "name": "Shipbuilding",
+      "summary": "Karabeyoglu founded and led a shipyard specialising in the engineering and construction of large custom motor and sailing yachts.",
+      "relationship_type": "founder and long-term chief executive",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Shipbuilding groups Karabeyoglu with owners whose material business value and defining operating mandate came from sustained vessel construction rather than incidental yacht ownership.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "First-party and independent sources establish that Karabeyoglu founded and led Turquoise Yachts, began building yachts in 1990 and oversaw an engineering-led yard with extensive in-house production."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S6",
+        "S8"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1140",
+      "title": "Mehmet Karabeyoglu owner record, person ID 1140",
+      "publisher": "Superyacht Network Agent",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Immutable person ID and exact upstream display name",
+        "Turkish nationality, Turkey residence and living-status baselines",
+        "Historical Eugenia VII relationship from 2007 to May 2016",
+        "Blank biography, known-for title, birth details and social profiles"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.turquoiseyachts.com/team",
+      "title": "Team",
+      "publisher": "Turquoise Yachts",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Exact Mehmet Karabeyoglu identity",
+        "Founder designation",
+        "Official company-website verification",
+        "Engineering, architecture, design and craftsmanship as the yard's operating disciplines"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://thebusinessyear.com/interview/cruise-control/",
+      "title": "Cruise Control",
+      "publisher": "The Business Year",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Education in England as a mechanical engineer",
+        "Founding of Turquoise Yachts and start of yacht construction in 1990",
+        "Combination of his Turquoise company with his partner's Proteksan company",
+        "International customer base and custom-yacht manufacturing model",
+        "Ownership of the 32.8-metre sailing yacht Jazz Jr."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.superyachttimes.com/yachts/eugenia-vii/overview",
+      "title": "Eugenia VII yacht",
+      "publisher": "SuperYacht Times",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Eugenia VII as a 32.8-metre sailing yacht built by Turquoise Yachts",
+        "Jazz Jr. as Eugenia VII's previous name",
+        "Vessel-name bridge linking the upstream relationship to Karabeyoglu's documented yacht"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://turksail.com/index.php/yeni-tekneler/3682-kizler-kendi-yaptklar-tekne-ile-yaracak",
+      "title": "‘İkizler’ kendi yaptıkları tekne ile yarışacak",
+      "publisher": "TurkSail",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Contemporary identification of Mehmet Karabeyoglu as owner of Jazz Jr.",
+        "Jazz Jr. as a 33-metre sailing yacht built at Proteksan",
+        "Direct person-to-vessel identity anchor"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://yachtsinternational.com/yachts/new-owner-at-proteksan-turquoise/",
+      "title": "New owner at Proteksan Turquoise",
+      "publisher": "Yachts International",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Karabeyoglu as co-founder and chief executive of Proteksan Turquoise",
+        "Establishment with Hayati Kamhi",
+        "Majority investment by Mohammed Al Barwani",
+        "Sustained construction of large custom yachts at the Turkish yard"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.superyachttimes.com/yacht-news/turquoise-yachts-founding-partners-step-down",
+      "title": "Turquoise Yachts founding partners Mehmet Karabeyoglu and Necdet Salgur step down",
+      "publisher": "SuperYacht Times",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Karabeyoglu and Necdet Salgur as Turquoise Yachts founding partners",
+        "Their 2023 departure from management",
+        "Continuation of the business under MB Group leadership"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.superyachtnews.com/business/turquoise-yachts-completes-major-investments",
+      "title": "Turquoise Yachts completes major investments",
+      "publisher": "SuperyachtNews",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Karabeyoglu as Turquoise Yachts chief executive",
+        "Facility expansion following the majority-ownership change",
+        "Vertically integrated construction of hulls, superstructures, engineering, piping and finishes",
+        "Engineering-led operating model and large-yacht capacity"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Name diacritics",
+      "detail": "The upstream record uses Karabeyoglu without Turkish diacritics, while Turkish and company sources commonly use Karabeyoğlu. The dossier preserves the immutable upstream display name but treats the spellings as the same person because the company and vessel evidence converge."
+    },
+    {
+      "topic": "Company formation date",
+      "detail": "Sources variously describe the combined Proteksan Turquoise platform as established in 1997, 2001 or 2002, reflecting predecessor-company and merger milestones. The biographies preserve the supported sequence without assigning a disputed combination year."
+    },
+    {
+      "topic": "Current occupation",
+      "detail": "Specialist reporting states that Karabeyoglu stepped back from Turquoise Yachts management in 2023 to pursue personal interests. No reliable source establishes a later principal operating role, so Manufacturing remains the historically defining primary-industry classification."
+    },
+    {
+      "topic": "Wealth and ownership",
+      "detail": "Public sources establish founder, partner and chief-executive roles and a later majority investment by MB Holding, but do not disclose Karabeyoglu's personal proceeds, retained stake or net worth. The dossier classifies the documented wealth-creation mechanism without quantifying wealth."
+    },
+    {
+      "topic": "Birth and additional identity details",
+      "detail": "No strong public source was found for middle names, birthplace, birth date, secondary nationality or secondary residence, so those blank fields remain unproposed."
+    },
+    {
+      "topic": "Personal social profiles",
+      "detail": "No collision-safe personal LinkedIn, Instagram, Facebook, X, YouTube, TikTok or personal website was verified. Only the exact first-party Turquoise Yachts company page is proposed."
+    },
+    {
+      "topic": "Active tag scope",
+      "detail": "Shipbuilding is the approved active catalogue tag that captures Karabeyoglu's defining yacht-construction business. More specific Yacht building and Yacht-builder founder catalogue entries are inactive and therefore are not assigned under the closed-world taxonomy rule."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier. Mehmet Karabeyoglu is conclusively matched to the Turquoise Yachts founder through exact-name company and trade evidence plus the Eugenia VII/Jazz Jr. vessel-name bridge and direct ownership reporting. Wealth is classified Manufacturing, Manufacturing, Self-made — independent start and Founder. The dossier proposes a durable biography, founder title, official company page and the active Shipbuilding tag while leaving unsupported birth details and personal socials blank."
+  }
+}

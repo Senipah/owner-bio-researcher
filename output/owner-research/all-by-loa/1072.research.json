@@ -1,0 +1,465 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1072,
+    "display_name": "Harry John Hyams",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The uncommon full Harry John Hyams identity in the saved owner record matches the Guardian obituary's exact name, dates, British property career, Centre Point association and Ramsbury Manor residence. Contemporary yacht reporting independently identifies the retired property developer Harry Hyams as Shemara's owner, closing the bridge to this specific source record."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "biography_present": true,
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Harry John Hyams was a British property developer whose tightly controlled speculative office portfolio made him a prominent figure in post-war London real estate.",
+    "defining_work": "He commissioned Centre Point and Space House, two architecturally distinctive office developments that became enduring landmarks of London's 1960s building boom.",
+    "formative_context": "Born in Hendon, north London, Hyams entered estate agency before moving into property development and becoming a millionaire before the age of thirty.",
+    "decisive_moment": "Assembling the St Giles site and securing a planning arrangement with London County Council enabled Centre Point's exceptional scale and visibility.",
+    "enduring_dimensions": [
+      "Speculative commercial property development through Oldham Estates",
+      "Commissioning architecturally significant post-war London offices",
+      "A five-decade art and decorative-arts collection preserved through the Capricorn Foundation"
+    ],
+    "character_detail": "Hyams preferred whole-building leases to blue-chip tenants and ran a large property portfolio with an unusually small staff.",
+    "opening_options": [
+      {
+        "mode": "institution_or_asset",
+        "angle": "Begin with Centre Point as both an architectural landmark and the project that made Hyams publicly visible."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Open with Hyams's move from estate agency into the bombsite opportunities of post-war London."
+      },
+      {
+        "mode": "public_contribution",
+        "angle": "Lead with the collection he assembled at Ramsbury Manor and trace it back to the fortune made in property."
+      }
+    ],
+    "excluded_transient_context": [
+      "Shemara ownership history and vessel specifications",
+      "Historic estimates of net worth and estate value",
+      "The changing occupancy and redevelopment status of Centre Point",
+      "Burglary reporting and other episodic personal news"
+    ],
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "institution_then_person",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "The short biography shares only Hyams's property identity and Centre Point anchor with the long profile, then uniquely supplies Space House, Oldham Estates and his lean operating method. The long biography opens through Centre Point's planning and architectural story before moving to Ramsbury Manor, collecting and the Capricorn Foundation."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Focused searches across Forbes for Harry Hyams, his full name, Centre Point and Oldham Estates found no dedicated individual profile or credible Forbes editorial page for this British property developer; unrelated namesakes were excluded."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "Hyams created his fortune through speculative commercial property development, building an Oldham Estates portfolio led by major London office projects.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The Guardian and Independent obituaries directly describe property development as Hyams's route to wealth, while Historic England documents his developer role on Centre Point and Space House."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "primary_industry": {
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "Real Estate is retained as an origin-sector fallback because Hyams's defining business was commercial property, while no later principal operating sector is documented after the Oldham Estates takeover.",
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Multiple strong sources establish the long-running property identity, and no evidence indicates a later operating industry. The lower score reflects that MEPC acquired Oldham Estates decades before Hyams's death and the public record does not rank his later private asset mix."
+    },
+    "source_ids": [
+      "S2",
+      "S5",
+      "S8"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Hyams built his wealth through estate agency and speculative property development, becoming a millionaire before thirty and creating the Oldham Estates portfolio rather than inheriting the core enterprise.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The Guardian traces Hyams's progression from estate agency to property development and early millionaire status, while the Independent describes his creation of Oldham Estates. Sources do not establish a transferred family business or inherited wealth platform."
+    },
+    "source_ids": [
+      "S2",
+      "S5",
+      "S8"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Hyams founded and controlled the property business that created his fortune, but Oldham Estates was taken over in 1987 and his later principal ownership relationship is not publicly established.",
+    "confidence": {
+      "score": 46,
+      "band": "insufficient",
+      "reason": "Founder-controller is strongly supported as Hyams's historical relationship to Oldham Estates, but the current-state classification cannot simply preserve that legacy role. The sources document the takeover and later private collecting, not whether his principal wealth remained as passive holdings, direct investments or another structure."
+    },
+    "source_ids": [
+      "S2",
+      "S5",
+      "S8"
+    ]
+  },
+  "biography": {
+    "plain_text": "Harry John Hyams was a British property developer who made his fortune through speculative London office projects. He commissioned Centre Point and Space House, landmarks of the post-war commercial building boom. Through Oldham Estates, Hyams used strict single-tenant leases and a small staff to control a substantial portfolio before selling the company.",
+    "html": "<p>Harry John Hyams was a British property developer who made his fortune through speculative London office projects. He commissioned Centre Point and Space House, landmarks of the post-war commercial building boom. Through Oldham Estates, Hyams used strict single-tenant leases and a small staff to control a substantial portfolio before selling the company.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "The Guardian and Independent establish Hyams's property fortune, Oldham Estates and lean operating model, while Historic England directly documents his developer role on Centre Point and Space House."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Centre Point made Harry John Hyams one of post-war London's most visible property developers. He assembled the St Giles site, negotiated a planning arrangement with London County Council and commissioned Richard Seifert's firm to create a sculptural high-rise. His insistence on a single blue-chip tenant left the building empty for years, making it both a landmark and a symbol of speculative development.\n\nHyams was equally methodical as a collector. Over half a century he filled Ramsbury Manor with paintings, ceramics, furniture, clocks and historic cars. His estate passed the manor and collections to the Capricorn Foundation, with instructions to conserve them and provide public access. The foundation now supports exhibitions and museum loans in his memory.",
+    "html": "<p>Centre Point made Harry John Hyams one of post-war London's most visible property developers. He assembled the St Giles site, negotiated a planning arrangement with London County Council and commissioned Richard Seifert's firm to create a sculptural high-rise. His insistence on a single blue-chip tenant left the building empty for years, making it both a landmark and a symbol of speculative development.</p>\r\n<p>Hyams was equally methodical as a collector. Over half a century he filled Ramsbury Manor with paintings, ceramics, furniture, clocks and historic cars. His estate passed the manor and collections to the Capricorn Foundation, with instructions to conserve them and provide public access. The foundation now supports exhibitions and museum loans in his memory.</p>\r\n",
+    "word_count": 116,
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Historic England documents the St Giles land assembly, planning agreement and Seifert commission; the Guardian explains the single-tenant strategy and public controversy; the Charity Commission records the collection, estate transfer, conservation mandate and continuing public-access work."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S6"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Developer of Centre Point",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Historic England identifies Hyams as Centre Point's developer, and both national obituaries treat the building as his defining public achievement."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S5"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Hendon, London, England",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "The Guardian obituary states that Hyams was born in Hendon, north London. The modern locality form is used for the display value."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "biography",
+      "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Harry_Hyams\">Harry John Hyams</a>, a British businessman who gained his fortune as a speculative property developer, died on December 19, 2015. He was primarily recognized for developing London&#39;s Centre Point office building.</p>\r\n",
+      "value": "<p>Harry John Hyams was a British property developer who made his fortune through speculative London office projects. He commissioned Centre Point and Space House, landmarks of the post-war commercial building boom. Through Oldham Estates, Hyams used strict single-tenant leases and a small staff to control a substantial portfolio before selling the company.</p>\r\n",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The replacement removes source-visible linking and obituary-style framing while adding the independently documented projects, operating method and business context that define Hyams's career."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0983",
+      "name": "Property developer",
+      "summary": "Hyams created his fortune by assembling sites and commissioning major speculative office developments through Oldham Estates.",
+      "relationship_type": "founder and controlling commercial property developer",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Property developer groups owners whose defining professional role was the sustained creation and control of property developments, rather than passive property ownership.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The Guardian, Independent and Historic England directly establish Hyams's repeated, long-running developer role and his responsibility for landmark London office projects."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "tag_id": "tag_0018",
+      "name": "Art collector",
+      "summary": "Hyams assembled a museum-quality collection of paintings, ceramics, furniture and decorative arts over roughly fifty years at Ramsbury Manor.",
+      "relationship_type": "long-term private art and decorative-arts collector",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Art collector captures Hyams's sustained cultural identity and the nationally significant collection preserved for conservation, education and public access after his death.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The Guardian documents Hyams's fifty years of collecting, and the Charity Commission records the extensive collection, its transfer to the Capricorn Foundation and the mandate to conserve it and provide public access."
+      },
+      "source_ids": [
+        "S2",
+        "S6"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1072",
+      "title": "Harry John Hyams owner record, person ID 1072",
+      "publisher": "Superyacht Network; saved authoritative export",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Immutable person ID and Harry John Hyams display-name baseline",
+        "British nationality, United Kingdom residence, gender, full birth and death dates and dead status",
+        "Blank known-for and place-of-birth fields",
+        "Existing short biography and absence of social profiles",
+        "Historical Shemara relationship from 1969 to 2010",
+        "Social-profile type lookup"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.theguardian.com/business/2015/dec/20/harry-hyams",
+      "title": "Harry Hyams obituary",
+      "publisher": "The Guardian",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Exact Harry John Hyams identity and 2 January 1928 to 19 December 2015 dates",
+        "Birth in Hendon, north London, and early estate-agency experience",
+        "Property development as the source of wealth and millionaire status before thirty",
+        "Centre Point and Space House commissions with Richard Seifert's practice",
+        "Whole-building lease strategy and unusually small staff",
+        "Oldham Estates takeover and later art collecting at Ramsbury Manor"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://historicengland.org.uk/listing/the-list/list-entry/1113172",
+      "title": "Centre Point, Camden",
+      "publisher": "Historic England",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Centre Point's Grade II listed status and architectural significance",
+        "Harry Hyams as developer and Richard Seifert and Partners as architect",
+        "St Giles site assembly and planning agreement with London County Council",
+        "Completion in 1966 and landmark status in post-war London"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://historicengland.org.uk/listing/the-list/list-entry/1421847",
+      "title": "Space House, Camden",
+      "publisher": "Historic England",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Space House as a speculative office development for Harry Hyams",
+        "Construction from 1964 to 1968",
+        "Architectural significance as an icon of London's 1960s building boom"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.independent.co.uk/news/obituaries/harry-hyams-property-developer-who-built-up-an-empire-but-found-notoriety-with-his-centrepoint-skyscraper-a6783571.html",
+      "title": "Harry Hyams: Property developer who built up an empire but found notoriety with his Centrepoint skyscraper",
+      "publisher": "The Independent",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Property developer identity and Centre Point association",
+        "Rise from modest beginnings and creation of a property empire",
+        "Oldham Estates history and lean six-person operating structure",
+        "Whole-building leasing model and pioneering development reputation"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://register-of-charities.charitycommission.gov.uk/en/about-the-register-of-charities?_uk_gov_ccew_onereg_charitydetails_web_portlet_CharityDetailsPortlet_objectiveId=A14330852&_uk_gov_ccew_onereg_charitydetails_web_portlet_CharityDetailsPortlet_priv_r_p_mvcRenderCommandName=%2Ffull-print&_uk_gov_ccew_onereg_charitydetails_web_portlet_CharityDetailsPortlet_priv_r_p_organisationNumber=4049576&p_p_cacheability=cacheLevelPage&p_p_id=uk_gov_ccew_onereg_charitydetails_web_portlet_CharityDetailsPortlet&p_p_lifecycle=2&p_p_mode=view&p_p_resource_id=%2Faccounts-resource&p_p_state=maximized",
+      "title": "The Capricorn Foundation annual report and accounts",
+      "publisher": "Charity Commission for England and Wales",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Foundation established by the late Harry Hyams in 2010",
+        "Hyams's 19 December 2015 death date",
+        "Transfer of Ramsbury Manor and its art, ceramics, furniture, silver, clocks, objects and cars",
+        "Conservation, education and public-access mandate",
+        "Continuing support for exhibitions and loans to museums"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://powerandmotoryacht.com/megayachts/worlds-100-largest-yachts-2006-70-shemara/",
+      "title": "World's 100 Largest Yachts 2006 #70: Shemara",
+      "publisher": "Power & Motoryacht",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Independent contemporary identification of Harry Hyams as Shemara's owner",
+        "Description of Hyams as a retired British property developer",
+        "Ramsbury Manor art-collection context linking the yacht owner to the researched person"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.independent.co.uk/news/business/hyams-threatens-suit-against-mepc-corrected-1492668.html",
+      "title": "Hyams threatens suit against MEPC",
+      "publisher": "The Independent",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Harry Hyams as founder of Oldham Estates and developer of Centre Point",
+        "MEPC's acquisition of control in 1987",
+        "Hyams's subsequent minority interest and dispute over shareholder treatment"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Identity and vessel association",
+      "detail": "The exact full name, dates, nationality, property career, Centre Point role and Ramsbury Manor residence align across the saved record and obituary evidence. Power & Motoryacht independently identifies the same retired British property developer and collector as Shemara's owner, leaving no material identity conflict."
+    },
+    {
+      "topic": "Forbes profile status",
+      "detail": "Focused exact-name and business-term searches found no dedicated Forbes individual profile or credible Forbes editorial page for Harry Hyams. No Forbes social is proposed, and unrelated contemporary namesakes were excluded."
+    },
+    {
+      "topic": "Primary industry and wealth relationship",
+      "detail": "Real Estate is an origin-sector fallback supported by Hyams's defining career, not a claim that Oldham Estates remained his current operating platform. Founder-controller is the strongest historical wealth relationship, but MEPC took control in 1987 and the later form of Hyams's principal holdings cannot be classified reliably, so the current-state relationship remains Unknown."
+    },
+    {
+      "topic": "Wealth origin",
+      "detail": "The evidence positively traces Hyams's wealth to his own estate-agency and development career and creation of Oldham Estates. Accounts differ on minor family-background details and do not prove either inherited capital or an independently constrained start, so broad Self-made is used rather than a narrower subtype."
+    },
+    {
+      "topic": "Place of birth",
+      "detail": "The Guardian gives Hendon in north London. The proposed display value uses the modern administrative geography 'Hendon, London, England' rather than attempting to reconstruct the 1928 county designation."
+    },
+    {
+      "topic": "Social profiles",
+      "detail": "Hyams died in 2015 and no identity-verified personal LinkedIn, Instagram or personal website was established. Evidence sites and the exact Wikipedia page already linked in the old biography are not proposed as personal profiles."
+    },
+    {
+      "topic": "Tag selection",
+      "detail": "Property developer captures Hyams's sustained professional role, while Art collector captures a separate five-decade cultural identity whose collection was preserved for public benefit. No overlapping generic real-estate or philanthropy tag is added."
+    },
+    {
+      "topic": "Biography replacement",
+      "detail": "The existing biography embeds a Wikipedia link and leads with Hyams's death. The replacement is source-invisible and emphasizes his enduring property work; the longer profile independently develops Centre Point's creation and the later conservation legacy at Ramsbury Manor."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier. The exact biographical match plus an independent Shemara source resolves Harry John Hyams at very high confidence. Wealth is classified Real Estate / Real Estate origin-sector fallback / Self-made / Unknown current relationship. The dossier proposes a durable known-for title, Hendon birthplace, source-invisible replacement biography and the minimum useful Property developer and Art collector tags. Nothing has been compiled, applied or written outside this dossier."
+  }
+}

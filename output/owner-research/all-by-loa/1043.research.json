@@ -1,0 +1,162 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1043,
+    "display_name": "Theodore C. Hollander",
+    "identity_confidence": {
+      "score": 85,
+      "band": "high",
+      "reason": "The exact name, American identity, Massachusetts social context and 1931 acquisition of Seapine converge with the Theodore C. Hollander who directed and sold Boston luxury retailer L.P. Hollander & Co. The timing is coherent: he sold the retailer shortly before acquiring the yacht, while court records show that he retained substantial corporate wealth and control. A younger same-name family member active in Massachusetts dog circles creates genuine ambiguity, so identity confidence is high rather than very high and no life dates are imported."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["secondary_nationality", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "death_day", "death_month", "death_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "biography_present": false,
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "American luxury-fashion retailer who led and sold the Boston house L.P. Hollander & Co. and established a charitable trust from the proceeds.",
+    "defining_work": "Expanding his family's luxury dressmaking and fashion-retail business into New York, Newport and Paris before its sale.",
+    "formative_context": "He entered the enterprise founded by his mother, Maria Theresa Hollander, and developed it with his brothers as an importer and retailer of European fashion.",
+    "decisive_moment": "Selling L.P. Hollander & Co. in 1929 converted the inherited operating business into capital that supported both continuing corporate interests and philanthropy.",
+    "enduring_dimensions": ["Luxury-fashion retail and international expansion", "Control of the former family company's corporate successor", "Boston health and education philanthropy"],
+    "character_detail": "His charitable trust focused on institutions serving newcomers to Boston, linking the proceeds of an elite retail business to practical local services.",
+    "opening_options": [
+      {"mode": "inherited_responsibility", "angle": "Open with the family fashion house he inherited and expanded before selling it."},
+      {"mode": "institution_or_asset", "angle": "Open with L.P. Hollander's transformation from a Boston dressmaking business into an international luxury retailer."}
+    ],
+    "excluded_transient_context": ["Yacht ownership and specifications", "Unverified birth and death dates belonging to a younger namesake", "Modern estimates of historic wealth"],
+    "source_ids": ["S2", "S3", "S4", "S5", "S6", "S7"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 4,
+    "opening_mode": "inherited_responsibility",
+    "narrative_shape": "inheritance_then_stewardship",
+    "calibration_archetypes": ["inherited_operator", "investor_philanthropist"],
+    "notes": "The short profile is an identity card centred on the family retailer, sale and charitable trust. The long profile opens with the institution, adds the brothers' European sourcing, resort-market expansion, retained board role and control of the successor company. The business and trust are the only shared anchors, and no sentence is restated."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 94, "band": "high", "reason": "Mandatory exact-name, site:forbes.com/profile and L.P. Hollander-qualified searches found no dedicated Forbes profile attributable to Theodore C. Hollander. Search results did not establish a Forbes identity page for either the retailer or his younger namesake."}
+  },
+  "wealth_creation_industry": {
+    "classification": "fashion_retail",
+    "label": "Fashion & Retail",
+    "summary": "Hollander's identifiable wealth came from the inherited and expanded luxury-fashion retailer L.P. Hollander & Co., which he sold after building branches beyond Boston.",
+    "confidence": {"score": 93, "band": "high", "reason": "The New York City landmarks report and Boston Foundation history identify the family luxury retailer, Theodore's leadership, its geographic expansion and the sale; contemporary court decisions corroborate his continuing control of the former company's corporate successor."},
+    "source_ids": ["S2", "S3", "S4"]
+  },
+  "primary_industry": {
+    "classification": "fashion_retail",
+    "label": "Fashion & Retail",
+    "summary": "Fashion & Retail is used as the origin-sector fallback because public records establish Hollander's defining operating career but do not publish a later holdings schedule after the business sale.",
+    "confidence": {"score": 87, "band": "high", "reason": "The retailer is his only well-documented operating platform, and court records show continuing authority over the successor company. Because he is deceased and no reliable later asset schedule identifies another dominant sector, the creation sector is transparently retained as the required fallback."},
+    "source_ids": ["S2", "S3", "S4"]
+  },
+  "wealth_origin": {
+    "classification": "inherited_and_expanded",
+    "label": "Inherited and expanded",
+    "summary": "He entered the fashion house founded by his mother and helped expand it into a multi-location luxury retailer before selling the business.",
+    "confidence": {"score": 89, "band": "high", "reason": "The official landmarks history identifies Maria Theresa Hollander as founder, her sons' participation and Theodore's later sale; the Boston Foundation traces the New York, Newport and Paris expansion to his direction. The inheritance language is independently stated by the Vintage Fashion Guild's label history."},
+    "source_ids": ["S2", "S3", "S8"]
+  },
+  "wealth_relationship": {
+    "classification": "operator",
+    "label": "Operator",
+    "summary": "Hollander actively directed the family retailer's expansion and later controlled the company that retained its former business interests.",
+    "confidence": {"score": 94, "band": "high", "reason": "The Boston Foundation describes expansion under Theodore's direction, while Massachusetts court decisions identify him as the controlling shareholder who directed Rednalloh's policy after the retail business transfer."},
+    "source_ids": ["S3", "S4"]
+  },
+  "biography": {
+    "plain_text": "Theodore C. Hollander was an American luxury-fashion retailer who inherited and expanded L.P. Hollander & Co., the Boston house founded by his mother. He directed its growth into New York, Newport and Paris before selling the business in 1929. Part of the proceeds established a charitable trust supporting Boston health and education.",
+    "html": "<p>Theodore C. Hollander was an American luxury-fashion retailer who inherited and expanded L.P. Hollander &amp; Co., the Boston house founded by his mother. He directed its growth into New York, Newport and Paris before selling the business in 1929. Part of the proceeds established a charitable trust supporting Boston health and education.</p>\r\n",
+    "word_count": 52,
+    "confidence": {"score": 89, "band": "high", "reason": "Official municipal history and the Boston Foundation support the founder relationship, expansion, sale and trust. Identity confidence is moderated by a younger same-name relative, so the biography avoids unsupported life dates."},
+    "source_ids": ["S2", "S3", "S8"]
+  },
+  "long_biography": {
+    "plain_text": "L.P. Hollander began as a Boston dressmaking business and became a destination for affluent women seeking European fashions. Theodore Hollander and his brothers travelled to London and Paris to source ready-made styles. Their work helped the family firm establish stores on Fifth Avenue and in resort communities from Newport to Palm Beach.\n\nHollander remained closely tied to the enterprise after its sale, retaining a board position. He also controlled the successor company that held its former leases. His most durable public legacy was the Theodore C. Hollander Trust, created from sale proceeds to support Boston health and education institutions serving newcomers to the city.",
+    "html": "<p>L.P. Hollander began as a Boston dressmaking business and became a destination for affluent women seeking European fashions. Theodore Hollander and his brothers travelled to London and Paris to source ready-made styles. Their work helped the family firm establish stores on Fifth Avenue and in resort communities from Newport to Palm Beach.</p>\r\n<p>Hollander remained closely tied to the enterprise after its sale, retaining a board position. He also controlled the successor company that held its former leases. His most durable public legacy was the Theodore C. Hollander Trust, created from sale proceeds to support Boston health and education institutions serving newcomers to the city.</p>\r\n",
+    "word_count": 105,
+    "confidence": {"score": 88, "band": "high", "reason": "The official landmarks report establishes the family firm's origins, European sourcing, stores and retained board role; court decisions document control of the successor company; the Boston Foundation supports the trust and its purpose."},
+    "source_ids": ["S2", "S3", "S4"]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Former owner and director of L.P. Hollander & Co.",
+      "action": "fill_missing",
+      "confidence": {"score": 92, "band": "high", "reason": "The official landmarks report identifies Theodore C. Hollander's ownership, sale of the business and continuing board role."},
+      "source_ids": ["S2"]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Theodore C. Hollander was an American luxury-fashion retailer who inherited and expanded L.P. Hollander &amp; Co., the Boston house founded by his mother. He directed its growth into New York, Newport and Paris before selling the business in 1929. Part of the proceeds established a charitable trust supporting Boston health and education.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {"score": 89, "band": "high", "reason": "The biography uses official and institutional evidence to describe Hollander's durable retail and philanthropic identity while avoiding disputed life dates and vessel detail."},
+      "source_ids": ["S2", "S3", "S8"]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0429",
+      "name": "Apparel retail",
+      "summary": "Hollander directed and sold a multi-location luxury-fashion retailer whose core business was women's apparel and imported European fashions.",
+      "relationship_type": "owner and director",
+      "temporal_scope": "former_but_defining",
+      "confidence": {"score": 94, "band": "high", "reason": "Official municipal and institutional histories establish L.P. Hollander as a women's fashion retailer and Theodore's defining leadership role."},
+      "source_ids": ["S2", "S3"],
+      "taxonomy_value": "The owner held a defining operating and ownership mandate in an apparel retailer, satisfying the active Apparel retail tag's click-through membership rule."
+    },
+    {
+      "tag_id": "tag_0230",
+      "name": "Luxury goods",
+      "summary": "L.P. Hollander served affluent customers with imported Paris fashions and operated in Fifth Avenue and elite resort markets.",
+      "relationship_type": "owner and director",
+      "temporal_scope": "former_but_defining",
+      "confidence": {"score": 90, "band": "high", "reason": "The landmarks report documents the firm's elite clientele, European sourcing, Fifth Avenue store and resort locations, establishing luxury positioning rather than general apparel retail alone."},
+      "source_ids": ["S2"],
+      "taxonomy_value": "The owner's defining company retailed high-end European fashion to affluent customers, satisfying the active Luxury goods tag's durable business-membership rule."
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1043", "title": "Theodore C. Hollander saved owner record, person ID 1043", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Exact name, American nationality, United States residence, male gender and deceased status", "Blank known-for title, birthplace, life dates and biography; no existing social profiles", "Historical Yanbu relationship from 1931 to December 1941, used only as identity context"]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Theodore%20C.%20Hollander", "title": "Forbes exact-name and profile searches", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Exact-name, site:forbes.com/profile and L.P. Hollander-qualified searches found no dedicated Forbes profile attributable to Theodore C. Hollander"]},
+    {"id": "S2", "url": "https://s-media.nyc.gov/agencies/lpc/lp/2124.pdf", "title": "L.P. Hollander & Company Building designation report", "publisher": "New York City Landmarks Preservation Commission", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Maria Theresa Hollander founded the Boston dressmaking business and involved sons Louis, Theodore and Alvin", "The family sourced European fashions and expanded to New York, Newport, Palm Beach and other resort markets", "Theodore C. Hollander sold the business in April 1929 and remained on its board"]},
+    {"id": "S3", "url": "https://www.tbf.org/-/media/tbforg/files/reports/there-from-the-beginning.pdf", "title": "There from the Beginning: A History of The Boston Foundation", "publisher": "The Boston Foundation", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Under Theodore Hollander, L.P. Hollander opened branches in New York, Newport and Paris", "He sold the company for $3 million around 1930", "He created the Theodore C. Hollander Trust to support health and education institutions serving newcomers to Boston"]},
+    {"id": "S4", "url": "https://www.casemine.com/judgement/us/5914a40cadd7b049346b2e3a", "title": "Rednalloh Co. v. Commissioner", "publisher": "United States Board of Tax Appeals via CaseMine", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Theodore C. Hollander owned substantially all Rednalloh capital stock and controlled its policies after the retail business transfer", "The former L.P. Hollander company retained leases and received income connected with the sold business", "A trust was established after the 1929 transaction"]},
+    {"id": "S5", "url": "https://www.easternyc.org/files/eychistory%20pdf.pdf", "title": "Eastern Yacht Club history", "publisher": "Eastern Yacht Club", "tier": 1, "accessed_at": "2026-09-28", "supports": ["The 1935 club fleet included Theodore Hollander's 154-foot Seapine", "The unusual name-and-vessel combination links the frozen owner record to Massachusetts social context"]},
+    {"id": "S6", "url": "https://www.gdbiw.com/ship-type/t-s-diesel-yacht/", "title": "T.S. diesel yacht Seapine", "publisher": "General Dynamics Bath Iron Works", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Seapine was delivered in July 1931", "The official shipbuilding archive associates the yacht first with Frank H. Goodyear and then Hollander"]},
+    {"id": "S7", "url": "https://akc.libraryhost.com/repositories/2/archival_objects/17015", "title": "Theodore C. Hollander papers", "publisher": "American Kennel Club Library & Archives", "tier": 1, "accessed_at": "2026-09-28", "supports": ["A younger same-name Theodore C. Hollander of South Hamilton, Massachusetts founded Craigston kennels and held leadership roles in Airedale clubs", "His distinct dog-sport and wartime naval biography is treated as a namesake collision rather than transferred to the retailer"]},
+    {"id": "S8", "url": "https://vintagefashionguild.org/resources/item/label/hollander-l-p/", "title": "L.P. Hollander label resource", "publisher": "Vintage Fashion Guild", "tier": 3, "accessed_at": "2026-09-28", "supports": ["The family fashion business passed to Theodore Hollander and was sold in 1929", "The label history corroborates inherited control and the firm's elite fashion-retail positioning"]}
+  ],
+  "uncertainties": [
+    {"topic": "Identity and same-name relative", "detail": "The evidence strongly favours the elder L.P. Hollander retailer as the yacht owner, especially the 1929 sale, 1931 acquisition and Massachusetts club context. The American Kennel Club documents a younger Theodore C. Hollander in South Hamilton with a separate dog-breeding and naval career. Public sources reviewed do not apply a generational suffix consistently, so identity confidence is capped at 84 and no life dates are proposed."},
+    {"topic": "Birthplace and life dates", "detail": "No authoritative exact-person source reviewed establishes the retailer's birthplace, birth date or death date. Dates associated with the younger namesake are excluded."},
+    {"topic": "Later holdings and primary industry", "detail": "Court records establish continuing control of Rednalloh after the retail sale, but no reliable asset schedule identifies a later dominant operating sector. Fashion & Retail is therefore a disclosed origin-sector fallback rather than a claim about activity at death."},
+    {"topic": "Social profiles", "detail": "The subject predates modern social media. LinkedIn, Instagram, Facebook, X, YouTube, TikTok, personal-site and Forbes searches produced no attributable profile; institutional history pages are retained as sources rather than proposed socials."},
+    {"topic": "Vessel and taxonomy scope", "detail": "The historical vessel relationship is used only to resolve identity and is excluded from both biographies and wealth classifications. Apparel retail and Luxury goods are the minimum active tags supported by durable operating evidence; philanthropy remains narrative rather than an additional tag."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier. Theodore C. Hollander is resolved at 84 as the elder L.P. Hollander retailer through exact name, American and Massachusetts context, the retailer's 1929 sale, the 1931 Seapine acquisition and later yacht-club evidence. A younger namesake is explicitly separated and no life dates are imported. Forbes-first research found no profile. The dossier classifies Fashion & Retail, uses that sector as a disclosed primary-industry fallback, and records Inherited and expanded plus Operator. It proposes a known-for title, biography and the active Apparel retail and Luxury goods tags; no unsupported birthplace, dates or social profile is added. No other dossier, shared file or live site was changed."
+  }
+}

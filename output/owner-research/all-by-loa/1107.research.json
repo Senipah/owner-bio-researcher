@@ -1,0 +1,135 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1107,
+    "display_name": "Mark Johnson",
+    "identity_confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "The exact historical vessel is identified by its New Zealand builder as commissioned by Mark Johnson and by contemporary reporting as belonging to an Australian corporate figure who operated it in Fiji. That rare combination aligns with Fiji-born Australian banker Mark R. G. Johnson, whose senior Macquarie and corporate career is documented in official filings. Because the name is common and no source explicitly joins the vessel to Macquarie in one sentence, the identity remains high rather than very-high confidence."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "biography_present": false,
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Fiji-born Australian banker, corporate adviser and company director whose career helped shape Macquarie's predecessor and later Australian financial-policy debates.",
+    "defining_work": "Served as joint managing director of Hill Samuel Australia, later returned as an executive director and deputy chairman of Macquarie Bank, and chaired major infrastructure and energy companies.",
+    "formative_context": "Studied law at the University of Melbourne and completed an MBA at Harvard before beginning a five-decade career in banking and corporate finance.",
+    "decisive_moment": "Joining Hill Samuel Australia as joint managing director in 1971 placed him in the leadership of the young merchant bank that later became Macquarie.",
+    "enduring_dimensions": ["Investment-banking and corporate-finance leadership", "Infrastructure, energy and investment-company governance", "Australian and Asia-Pacific financial-policy work"],
+    "character_detail": "His later criticism of bonus culture focused on how incentives shape conduct, drawing on experience inside a bank famous for performance-based rewards.",
+    "opening_options": [
+      {"mode": "public_contribution", "angle": "Lead with his chairmanship of the Australian Financial Centre Task Force and its national competitiveness remit."},
+      {"mode": "institution_or_asset", "angle": "Open with Hill Samuel Australia as the young merchant bank Johnson helped lead before it became Macquarie."},
+      {"mode": "defining_achievement", "angle": "Begin with the banking and corporate-finance institutions he helped build and govern over five decades."}
+    ],
+    "excluded_transient_context": ["Koi or Surprise ownership, specifications, charter use and transfer history", "Unrelated American, British and Australian people with the same name", "Current share prices and company-market rankings", "Source publishers, confidence language and classification deliberation"],
+    "source_ids": ["S3", "S4", "S5", "S6", "S7", "S8"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "public_contribution",
+    "narrative_shape": "public_role_then_foundation",
+    "calibration_archetypes": ["investor_philanthropist"],
+    "reviewed_phrase_exceptions": [],
+    "notes": "The short biography functions as a compact banking-and-governance identity card, including Fiji background, Hill Samuel leadership and later chairmanships. The long profile instead leads with national financial-policy work, adds the Australian Bank episode and explains how his early merchant-banking experience informed later public and board roles. Johnson and Macquarie are the only shared anchors; the public-policy and Australian Bank dimensions are long-only."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 100, "band": "very_high", "reason": "Forbes-first exact-name and Macquarie-qualified searches found profiles for unrelated American advisers and executives but no dedicated Forbes profile for Australian banker Mark R. G. Johnson AO."}
+  },
+  "wealth_creation_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Johnson's documented wealth-producing career was built across investment banking, corporate finance, infrastructure investment and company directorships centred on Macquarie and related financial institutions.",
+    "confidence": {"score": 91, "band": "high", "reason": "Official corporate biographies document more than fifty years in banking and corporate finance, including leadership at Hill Samuel, Macquarie and Australian Bank. Contemporary investment reporting also records a substantial Macquarie shareholding, although no comprehensive wealth breakdown is public."},
+    "source_ids": ["S4", "S5", "S6", "S9"]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Finance and investments is retained as an origin-sector fallback: Johnson remains a corporate-finance adviser and funds-management director, but his complete current private holdings are not publicly disclosed.",
+    "confidence": {"score": 86, "band": "high", "reason": "Gresham and Stonehouse list current finance-sector roles, while the long career record establishes finance as the durable origin sector. These roles do not prove the composition or valuation of his present wealth, so this is explicitly an origin-sector fallback rather than a verified holdings claim."},
+    "source_ids": ["S4", "S8"]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "His position arose through a long executive, advisory and equity-owning career in merchant banking and corporate finance; the evidence does not resolve whether his starting platform was independent or advantaged.",
+    "confidence": {"score": 80, "band": "medium", "reason": "Official histories establish his leadership career and contemporary reporting records ownership and sale of Macquarie shares, positively supporting career-earned wealth. A full asset history and reliable evidence about family capital are unavailable, so only the broad self-made classification reaches the threshold."},
+    "source_ids": ["S4", "S5", "S6", "S9"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Johnson's historic executive and shareholding relationship to Macquarie is clear, but the public record does not identify one current principal wealth-producing asset or a qualifying present founder, operator, investor or family-office role.",
+    "confidence": {"score": 92, "band": "high", "reason": "The strongest alternatives are historical operator and investor, while current sources show advisory and non-executive posts across several organisations. Under the current-relationship rule, those roles do not establish which asset principally underpins his private wealth."},
+    "source_ids": ["S4", "S5", "S8", "S9"]
+  },
+  "biography": {
+    "plain_text": "Mark Johnson AO is a Fiji-born Australian banker and corporate adviser who helped build Hill Samuel Australia, Macquarie Bank's predecessor, as joint managing director. He later returned as an executive director and retired as deputy chairman. His five-decade career has also included infrastructure, energy and investment-company chairmanships and government financial-policy work.",
+    "html": "<p>Mark Johnson AO is a Fiji-born Australian banker and corporate adviser who helped build Hill Samuel Australia, Macquarie Bank's predecessor, as joint managing director. He later returned as an executive director and retired as deputy chairman. His five-decade career has also included infrastructure, energy and investment-company chairmanships and government financial-policy work.</p>\r\n",
+    "word_count": 51,
+    "confidence": {"score": 96, "band": "very_high", "reason": "Official corporate biographies and filings establish his birthplace context, Hill Samuel and Macquarie roles, later chairmanships and government task-force work."},
+    "source_ids": ["S4", "S5", "S6"]
+  },
+  "long_biography": {
+    "plain_text": "Chairing Australia's Financial Centre Task Force placed Mark Johnson AO at the centre of a national effort to make the country's financial system more competitive and internationally connected. He continued that policy work through Asia-Pacific business bodies, bringing the perspective of a banker who had helped develop Australia's merchant-banking market.\n\nJohnson joined Hill Samuel Australia as joint managing director in 1971, when the young firm was building its advisory and markets capabilities. After founding and running Australian Bank, he returned to the business that became Macquarie, eventually serving as deputy chairman. He later chaired infrastructure and energy companies and remains a senior adviser in corporate finance.",
+    "html": "<p>Chairing Australia's Financial Centre Task Force placed Mark Johnson AO at the centre of a national effort to make the country's financial system more competitive and internationally connected. He continued that policy work through Asia-Pacific business bodies, bringing the perspective of a banker who had helped develop Australia's merchant-banking market.</p>\r\n<p>Johnson joined Hill Samuel Australia as joint managing director in 1971, when the young firm was building its advisory and markets capabilities. After founding and running Australian Bank, he returned to the business that became Macquarie, eventually serving as deputy chairman. He later chaired infrastructure and energy companies and remains a senior adviser in corporate finance.</p>\r\n",
+    "word_count": 106,
+    "confidence": {"score": 95, "band": "very_high", "reason": "Gresham, Macquarie-era filings and ABC reporting support the task-force, regional-policy, Hill Samuel, Australian Bank, Macquarie and later-chairmanship sequence."},
+    "source_ids": ["S4", "S5", "S6", "S7"]
+  },
+  "proposed_details": [
+    {"field": "known_for_title", "value": "Former Deputy Chairman of Macquarie Bank", "action": "fill_missing", "confidence": {"score": 100, "band": "very_high", "reason": "The title is consistently documented by Gresham, official company filings and ABC reporting."}, "source_ids": ["S4", "S5", "S6", "S7"]},
+    {"field": "biography", "value": "<p>Mark Johnson AO is a Fiji-born Australian banker and corporate adviser who helped build Hill Samuel Australia, Macquarie Bank's predecessor, as joint managing director. He later returned as an executive director and retired as deputy chairman. His five-decade career has also included infrastructure, energy and investment-company chairmanships and government financial-policy work.</p>\r\n", "action": "fill_missing", "confidence": {"score": 96, "band": "very_high", "reason": "The blank field can be filled from convergent official career evidence without relying on vessel facts."}, "source_ids": ["S4", "S5", "S6"]}
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [
+    {"tag_id": "tag_0548", "name": "Investment banking", "summary": "Johnson's defining career spans leadership of Hill Samuel Australia and Macquarie Bank, corporate finance and governance of investment and infrastructure businesses.", "relationship_type": "senior_executive", "temporal_scope": "former_but_defining", "taxonomy_value": "Places him in the cohort of principals whose sustained operating identity helped establish and lead investment-banking institutions, not merely clients or passive investors.", "confidence": {"score": 99, "band": "very_high", "reason": "Official biographies document more than fifty years in banking and corporate finance, including joint-managing-director and deputy-chairman responsibility."}, "source_ids": ["S4", "S5", "S6"]}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1107", "title": "Mark Johnson saved owner record, person ID 1107", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Records the exact saved name, Australian nationality and residence, male gender and alive status.", "Records the historical Koi relationship, used only for identity disambiguation and excluded from biography, wealth classification and tags."]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=%22Mark%20Johnson%22%20Macquarie", "title": "Forbes exact-name and Macquarie-qualified profile search", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-28", "supports": ["No dedicated Forbes profile for Australian banker Mark R. G. Johnson AO was located.", "Exact-name Forbes profiles and council pages found in search belong to unrelated American advisers and executives and were rejected."]},
+    {"id": "S2", "url": "https://www.mcmullenandwing.com/2001-surprise", "title": "2001 Surprise", "publisher": "McMullen & Wing", "tier": 1, "accessed_at": "2026-09-28", "supports": ["The builder identifies Mark Johnson as the commissioning owner of Surprise, the vessel later named Koi in the saved record.", "Used only as the exact-vessel identity anchor; no yacht fact is used in published prose or wealth reasoning."]},
+    {"id": "S3", "url": "https://soundingsonline.com/news/movie-star-boat-caught-in-tax-battle/", "title": "Movie star boat caught in tax battle", "publisher": "Soundings", "tier": 3, "accessed_at": "2026-09-28", "supports": ["Describes the same vessel's owner as Australian corporate figure Mark Johnson and records its commercial operation in Fiji.", "Provides the geography and public-business context used to distinguish the banker from numerous namesakes."]},
+    {"id": "S4", "url": "https://gresham.au/people/mark-johnson-ao/", "title": "Mark Johnson AO", "publisher": "Gresham Partners", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Documents more than fifty years in banking and corporate finance, retirement as Macquarie Bank deputy chairman, infrastructure and energy chairmanships and his current Gresham senior-adviser role.", "Records financial-policy, APEC, education and honours details."]},
+    {"id": "S5", "url": "https://www.asx.com.au/asxpdf/20130315/pdf/42dpwcvpzjd73g.pdf", "title": "Conto Resources independent expert report and notice", "publisher": "Australian Securities Exchange filing", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Identifies Johnson as Fiji-born, resident in Australia and a former Macquarie Bank deputy chairman who joined Hill Samuel Australia as joint managing director.", "Documents his ownership of Dateline Resources and its Fiji mineral-exploration subsidiary at the time of the transaction."]},
+    {"id": "S6", "url": "https://www.agl.com.au/content/dam/digital/agl/documents/about-agl/media-centre/2007/20070927-agl-notice-of-agm-2007.pdf", "title": "AGL Energy 2007 notice of annual general meeting", "publisher": "AGL Energy", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Records Johnson's Macquarie deputy-chairman retirement, Macquarie Infrastructure Group chairmanship and earlier Australian Gas Light Company governance.", "Provides a contemporaneous official identity anchor for Mark R. G. Johnson's senior corporate roles."]},
+    {"id": "S7", "url": "https://www.abc.net.au/news/2016-04-15/macquarie-founder-slams-bank-bonus-culture/7330756", "title": "Macquarie co-founder Mark Johnson slams money-focused bank bonus culture", "publisher": "ABC News", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Identifies Johnson as a Macquarie co-founder and reports his critique of incentive structures in financial services.", "Supports the character detail about his later perspective on banking culture."]},
+    {"id": "S8", "url": "https://www.stonehousecorp.com/mark-johnson", "title": "Mark Johnson", "publisher": "Stonehouse Corporation", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Documents his current non-executive role at a funds-management business and long banking, corporate-finance and public-policy career.", "Corroborates the Macquarie, infrastructure, energy and international-business sequence."]},
+    {"id": "S9", "url": "https://www.intelligentinvestor.com.au/recommendations/directors-transactions/48603", "title": "Directors Transactions: Macquarie Bank", "publisher": "Intelligent Investor", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Records Johnson as a Macquarie executive director selling 100,000 shares in 2000.", "Provides positive evidence of executive equity ownership, while not establishing a complete wealth history."]}
+  ],
+  "uncertainties": [
+    {"topic": "Identity bridge", "detail": "The builder and marine press identify the Australian owner of the exact historical vessel, while corporate sources identify Fiji-born Australian banker Mark Johnson. No reviewed source explicitly states both the vessel and Macquarie role together, so identity confidence remains high rather than very high."},
+    {"topic": "Birth country", "detail": "Official ASX material says Johnson was born in Fiji, conflicting with the saved Australian birth-country field. Fiji is absent from the supplied birth-country option lookup, so no correction is proposed; the conflict remains for manual system review."},
+    {"topic": "Personal name and birth date", "detail": "Official filings use Mark R. G. Johnson but do not expand the initials. A 2007 notice gives age 66 without a full birth date. No middle-name or birth-date proposal is made."},
+    {"topic": "Current wealth relationship", "detail": "His historic Macquarie operating and equity roles are clear, but current sources show several advisory, chair and non-executive posts rather than one demonstrably principal private asset. Founder, operator, investor and family-office-principal alternatives were considered; none reaches 70 under the current-relationship rule."},
+    {"topic": "Social profiles", "detail": "No personal LinkedIn, Instagram, personal website or exact Wikipedia page could be verified against the collision-resistant career facts. Gresham and Stonehouse pages are institutional biographies, but he neither founded nor currently leads those firms, so they are not proposed as company websites."},
+    {"topic": "Excluded material", "detail": "The historical vessel and its charter history are used only to resolve identity and do not appear in the biographies, classifications or tags."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal high-confidence dossier for a common-name record. Forbes was checked first; the exact-name profiles located were unrelated and no dedicated profile for the Australian banker was found. The saved identity most strongly resolves to Fiji-born Australian banker Mark R. G. Johnson AO through the exact vessel, Australian corporate description and Fiji context, though the final bridge remains inferential. Finance & Investments is the creation sector and disclosed origin-sector fallback; broad self-made is supported at medium confidence, while the current wealth relationship remains Unknown after testing founder, operator, investor and family-office alternatives. No vessel fact appears in published prose or wealth reasoning, and no shared input, catalogue or live record was changed."
+  }
+}

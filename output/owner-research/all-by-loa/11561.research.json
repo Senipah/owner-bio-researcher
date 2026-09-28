@@ -253,20 +253,6 @@
         "S4",
         "S5"
       ]
-    },
-    {
-      "field": "secondary_nationality",
-      "action": "fill_missing",
-      "value": "Antiguan and Barbudan",
-      "confidence": {
-        "score": 86,
-        "band": "high",
-        "reason": "The primary beneficial-owner register explicitly records citizenship of Antigua and Barbuda for the exact name and May 1958 birth month/year. It is proposed as additional nationality, without replacing the saved Australian nationality or treating a correspondence address as residence."
-      },
-      "source_ids": [
-        "S0",
-        "S9"
-      ]
     }
   ],
   "proposed_socials": [
@@ -351,6 +337,20 @@
         "S2",
         "S9"
       ]
+    },
+    {
+      "field": "secondary_nationality",
+      "value": "Antiguan and Barbudan",
+      "confidence": {
+        "score": 86,
+        "band": "high",
+        "reason": "The primary beneficial-owner register explicitly records citizenship of Antigua and Barbuda for the exact name and May 1958 birth month/year. It is proposed as additional nationality, without replacing the saved Australian nationality or treating a correspondence address as residence."
+      },
+      "source_ids": [
+        "S0",
+        "S9"
+      ],
+      "review_note": "The current owner-form lookup has no valid secondary_nationality option for 'Antiguan and Barbudan'; this supported value is retained for human review rather than automatic compilation."
     }
   ],
   "sources": [

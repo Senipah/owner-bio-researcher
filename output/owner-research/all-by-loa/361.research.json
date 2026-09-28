@@ -311,20 +311,6 @@
       ]
     },
     {
-      "field": "main_residence_country",
-      "value": "Jersey",
-      "action": "correct_existing",
-      "existing_value": "United Kingdom",
-      "confidence": {
-        "score": 99,
-        "band": "very_high",
-        "reason": "Current Companies House officer and person-with-significant-control records repeatedly identify Buckingham's country of residence as Jersey."
-      },
-      "source_ids": [
-        "S2"
-      ]
-    },
-    {
       "field": "biography",
       "value": "<p>Anthony Leslie Rowland \"Tony\" Buckingham is a British energy entrepreneur and founder of Heritage Oil. After beginning as a North Sea diver, he moved into oil-concession work and built Heritage around international exploration and production. He now leads Albion Energy, a natural-gas venture, and has also made separate investments in natural-resources companies.</p>\r\n",
       "action": "fill_missing",
@@ -424,7 +410,22 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "field": "main_residence_country",
+      "value": "Jersey",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Current Companies House officer and person-with-significant-control records repeatedly identify Buckingham's country of residence as Jersey."
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "review_note": "The current owner-form lookup has no valid main_residence_country option for 'Jersey'; this supported value is retained for human review rather than automatic compilation.",
+      "existing_value": "United Kingdom"
+    }
+  ],
   "sources": [
     {
       "id": "S1",

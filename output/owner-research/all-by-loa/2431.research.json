@@ -318,23 +318,6 @@
     },
     {
       "action": "correct_existing",
-      "field": "death_month",
-      "existing_value": "October",
-      "value": "",
-      "confidence": {
-        "score": 100,
-        "band": "very_high",
-        "reason": "October is Perotti's verified birth month, not a death month. Current 2026 Sanlorenzo governance and ownership records identify him as living chairman, chief executive and ultimate controller."
-      },
-      "source_ids": [
-        "S1",
-        "S2",
-        "S3",
-        "S4"
-      ]
-    },
-    {
-      "action": "correct_existing",
       "field": "death_year",
       "existing_value": "1960",
       "value": "",
@@ -424,7 +407,25 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "field": "death_month",
+      "value": "",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "October is Perotti's verified birth month, not a death month. Current 2026 Sanlorenzo governance and ownership records identify him as living chairman, chief executive and ultimate controller."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "review_note": "The current owner-form lookup has no valid death_month option for ''; this supported value is retained for human review rather than automatic compilation.",
+      "existing_value": "October"
+    }
+  ],
   "sources": [
     {
       "id": "S1",

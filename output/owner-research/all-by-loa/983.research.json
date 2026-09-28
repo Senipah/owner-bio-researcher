@@ -1,0 +1,149 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 983,
+    "display_name": "Thomas F. Hamilton",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The saved record's full name, intended 1894-1969 dates, American identity and aviation biography converge with Thomas Foster Hamilton. Independent Deva histories identify the vessel's 1945 buyer as aviation pioneer Thomas F. Hamilton and record its sale in 1951, exactly matching the authoritative relationship. Period business coverage, an archival finding aid and aviation-history sources independently establish the same full name, companies and career."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "name_suffix", "secondary_nationality", "main_residence_country", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_age", "birth_age_at_date", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "researchable_missing_details": ["secondary_nationality", "main_residence_country", "known_for_title", "place_of_birth"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Thomas Foster Hamilton was an American aviation pioneer, pilot, aircraft designer and manufacturer whose businesses contributed to the formation of the United Aircraft group.",
+    "defining_work": "He built early gliders and aircraft, established propeller and metal-aircraft companies, sold those businesses to United Aircraft & Transport and later led its export corporation.",
+    "formative_context": "Hamilton began experimenting with gliders as a Seattle teenager and moved to Milwaukee during the First World War to manage military propeller production.",
+    "decisive_moment": "The 1929 sale of his propeller and metal-aircraft businesses converted founder-built manufacturing assets into a role within the consolidated United Aircraft & Transport group.",
+    "enduring_dimensions": [
+      "Early American pilot and aircraft designer",
+      "Founder of aviation manufacturing businesses in Seattle, Vancouver and Milwaukee",
+      "Developer of an all-metal monoplane and later president of United Aircraft Export Corporation"
+    ],
+    "character_detail": "Hamilton was building and flying gliders in his teens; that practical interest developed into propeller manufacture, metal-aircraft design and international aviation leadership.",
+    "opening_options": [
+      {"mode": "defining_achievement", "angle": "Open with Hamilton's role in moving early aviation from experimental gliders towards propeller manufacture and metal aircraft."},
+      {"mode": "formative_episode", "angle": "Begin with the Seattle teenager who built and flew gliders before creating aviation companies."},
+      {"mode": "institution_or_asset", "angle": "Lead with the propeller and metal-aircraft businesses that United Aircraft & Transport acquired in 1929."}
+    ],
+    "excluded_transient_context": [
+      "Deva, Vega or other personally owned vessel names and ownership chronology",
+      "Source attribution, identity-resolution reasoning and confidence language",
+      "Promotional claims that Hamilton single-handedly created later Hamilton Standard technology",
+      "Unverified net-worth estimates or sale proceeds",
+      "The disputed one-day difference in secondary-source death dates"
+    ],
+    "source_ids": ["S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "defining_achievement",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": ["founder_operator"],
+    "notes": "The short biography functions as a compact business identity card centred on company creation, sale and export leadership. The long profile instead develops Hamilton's technical progression from gliders to metal aircraft, then adds Burbank Airport and the distinct Malibu and Hamiltair ventures. Both omit vessel material, net-worth claims and research narration."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 97, "band": "very_high", "reason": "Mandatory Forbes-first exact-name, profile-path, Hamilton Standard and Deva-qualified searches found no Forbes person profile for Thomas Foster Hamilton. Results concerning unrelated Thomas Hamilton names were excluded."}
+  },
+  "wealth_creation_industry": {
+    "classification": "aviation_aerospace",
+    "label": "Aviation & Aerospace",
+    "summary": "Hamilton created his principal business value through propeller manufacturing and all-metal aircraft production before selling both aviation companies to United Aircraft & Transport in 1929.",
+    "confidence": {"score": 98, "band": "very_high", "reason": "Period Time coverage directly states that Hamilton organised a propeller company as a teenager and sold his propeller and all-metal aircraft businesses to United Aircraft & Transport. The Milwaukee archival history independently documents Hamilton Aero Manufacturing and Hamilton Metalplane, while aviation sources confirm their products and industrial significance."},
+    "source_ids": ["S3", "S4", "S5", "S7", "S8"]
+  },
+  "primary_industry": {
+    "classification": "aviation_aerospace",
+    "label": "Aviation & Aerospace",
+    "summary": "Aviation & Aerospace is used as the origin-sector fallback because Hamilton's later principal private holdings cannot be ranked reliably, while his aviation businesses demonstrably created the core commercial value.",
+    "confidence": {"score": 82, "band": "medium", "reason": "Hamilton sold the founding businesses in 1929 and later pursued aviation executive, airport, resort, airline and property projects. Public sources do not establish which asset dominated his private wealth at death. The required fallback therefore uses the strongly evidenced Aviation & Aerospace creation sector without asserting continued ownership of Hamilton Standard."},
+    "source_ids": ["S3", "S4", "S5", "S7", "S8", "S9"]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Hamilton built and sold his own propeller and metal-aircraft companies; the public record does not establish his family starting position precisely enough for a narrower self-made subtype.",
+    "confidence": {"score": 94, "band": "high", "reason": "Period reporting and archival histories positively document Hamilton organising, building and selling the businesses that created the principal value. The sources do not identify an inherited core company, but they also do not describe family resources well enough to classify his starting position as independent or advantaged."},
+    "source_ids": ["S3", "S4", "S5", "S7"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Hamilton founded the aviation businesses that created the original value, but he sold them in 1929 and no later principal asset relationship is sufficiently established.",
+    "confidence": {"score": 48, "band": "insufficient", "reason": "Founder is historically accurate for Hamilton Aero Manufacturing and Hamilton Metalplane but is not a current relationship after their sale. Sources document later executive, hospitality, airline and property activities without establishing which asset principally underpinned his wealth or whether he remained an owner, operator or investor at death."},
+    "source_ids": ["S3", "S4", "S5", "S7", "S9"]
+  },
+  "biography": {
+    "plain_text": "Thomas Foster Hamilton was an American aviation pioneer, aircraft designer and manufacturer whose early propeller and metal-aircraft companies became part of United Aircraft & Transport. A teenage glider builder in Seattle, he developed wartime propellers in Milwaukee, sold his aviation businesses in 1929 and later led United Aircraft's export operation in Europe.",
+    "html": "<p>Thomas Foster Hamilton was an American aviation pioneer, aircraft designer and manufacturer whose early propeller and metal-aircraft companies became part of United Aircraft &amp; Transport. A teenage glider builder in Seattle, he developed wartime propellers in Milwaukee, sold his aviation businesses in 1929 and later led United Aircraft's export operation in Europe.</p>\r\n",
+    "word_count": 51,
+    "confidence": {"score": 97, "band": "very_high", "reason": "Time's period profile, the Milwaukee archival history and aviation-history sources establish the name, American aviation identity, teenage glider work, Milwaukee manufacturing, 1929 sale and later United Aircraft export leadership."},
+    "source_ids": ["S3", "S4", "S5", "S7"]
+  },
+  "long_biography": {
+    "plain_text": "Thomas Foster Hamilton was an American pilot and manufacturer whose experiments helped move aviation from wood-and-fabric craft towards metal aircraft. He built gliders in Seattle before opening an aeroplane business in Vancouver, then moved to Milwaukee during the First World War to manage military propeller production. In 1927 his Metalplane venture flew an all-metal monoplane used by early airlines.\n\nAs president of United Aircraft Export Corporation, Hamilton represented American aircraft makers in Europe after overseeing construction of Burbank Airport. He also created the Malibu resort at Princess Louisa Inlet and operated a small airline serving it after the Second World War. His California estate became Hamiltair, a Lake Arrowhead community planned around private beaches, shared recreation and waterfront facilities.",
+    "html": "<p>Thomas Foster Hamilton was an American pilot and manufacturer whose experiments helped move aviation from wood-and-fabric craft towards metal aircraft. He built gliders in Seattle before opening an aeroplane business in Vancouver, then moved to Milwaukee during the First World War to manage military propeller production. In 1927 his Metalplane venture flew an all-metal monoplane used by early airlines.</p>\r\n<p>As president of United Aircraft Export Corporation, Hamilton represented American aircraft makers in Europe after overseeing construction of Burbank Airport. He also created the Malibu resort at Princess Louisa Inlet and operated a small airline serving it after the Second World War. His California estate became Hamiltair, a Lake Arrowhead community planned around private beaches, shared recreation and waterfront facilities.</p>\r\n",
+    "word_count": 119,
+    "confidence": {"score": 93, "band": "high", "reason": "The Milwaukee archival history, period Time profile, Wisconsin Aviation Hall of Fame and Early Aviators material establish the glider, Vancouver, Milwaukee, propeller, Metalplane, airport and European roles. Hamiltair's community history and aviation biography support the Malibu, airline, estate and yacht-club material."},
+    "source_ids": ["S3", "S4", "S5", "S7", "S9"]
+  },
+  "proposed_details": [
+    {"field": "main_residence_country", "value": "United States", "action": "fill_missing", "confidence": {"score": 94, "band": "high", "reason": "Hamilton was born in Seattle, worked for long periods in Milwaukee and California, and maintained his permanent Lake Arrowhead estate; the United States is the well-supported principal residence country."}, "source_ids": ["S4", "S5", "S6", "S9"]},
+    {"field": "known_for_title", "value": "Aviation pioneer and aircraft manufacturer", "action": "fill_missing", "confidence": {"score": 99, "band": "very_high", "reason": "Period business coverage, the Milwaukee archival history and Wisconsin Aviation Hall of Fame consistently identify Hamilton as an early pilot, designer and manufacturer of propellers and metal aircraft."}, "source_ids": ["S3", "S4", "S5"]},
+    {"field": "place_of_birth", "value": "Seattle, Washington", "action": "fill_missing", "confidence": {"score": 95, "band": "very_high", "reason": "Time's 1936 profile identifies Seattle as Hamilton's birthplace, and the detailed aviation biography independently supplies the same location."}, "source_ids": ["S4", "S6"]},
+    {"field": "birth_day", "value": "28", "action": "correct_existing", "existing_value": "1894", "confidence": {"score": 98, "band": "very_high", "reason": "The current day field contains the four-digit year. Multiple biographical sources give 28 July 1894, demonstrating that the saved day and year values were transposed."}, "source_ids": ["S0", "S3", "S5", "S6"]},
+    {"field": "birth_year", "value": "1894", "action": "correct_existing", "existing_value": "28", "confidence": {"score": 99, "band": "very_high", "reason": "The current year field contains the day number. Period Time coverage, the archival history and aviation sources consistently place Hamilton's birth in 1894."}, "source_ids": ["S0", "S3", "S4", "S5", "S6"]},
+    {"field": "death_day", "value": "12", "action": "correct_existing", "existing_value": "1969", "confidence": {"score": 85, "band": "high", "reason": "The current day field contains the four-digit year. The existing biography and biographical sources give 12 August 1969, although the Wisconsin Aviation Hall of Fame displays 11 August; the proposal preserves the source record's intended date while correcting the transposed fields."}, "source_ids": ["S0", "S6"]},
+    {"field": "death_year", "value": "1969", "action": "correct_existing", "existing_value": "12", "confidence": {"score": 99, "band": "very_high", "reason": "The current year field contains the day number. All reviewed sources agree that Hamilton died in 1969."}, "source_ids": ["S0", "S3", "S5", "S6"]},
+    {"field": "biography", "value": "<p>Thomas Foster Hamilton was an American aviation pioneer, aircraft designer and manufacturer whose early propeller and metal-aircraft companies became part of United Aircraft &amp; Transport. A teenage glider builder in Seattle, he developed wartime propellers in Milwaukee, sold his aviation businesses in 1929 and later led United Aircraft's export operation in Europe.</p>\r\n", "action": "correct_existing", "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Thomas_F._Hamilton\">Thomas Foster Hamilton</a>, a pioneering aviator and the creator of the <a href=\"https://en.wikipedia.org/wiki/Hamilton_Standard\">Hamilton Standard Company</a>, lived from July 28, 1894 until August 12, 1969.&nbsp;</p>\r\n\r\n<p>Prior to World War II, Hamilton Standard (now Hamilton Sundstrand) was involved in developing propeller-driven aircraft propulsion technology since 1930. Hamilton Standard became one of the world&#39;s premier aerospace companies after the launch of Frank Caldwell&#39;s variable-pitch propeller.</p>\r\n", "confidence": {"score": 97, "band": "very_high", "reason": "The replacement is a durable, source-invisible 52-word identity card that distinguishes Hamilton's own manufacturing and sale history from Hamilton Standard's later technology, while removing embedded links and promotional language."}, "source_ids": ["S3", "S4", "S5", "S7"]}
+  ],
+  "proposed_socials": [
+    {"type_id": "10", "type": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Thomas_F._Hamilton", "verification": "The page gives the full name Thomas Foster Hamilton, 1894-1969 dates, Seattle and California geography, Hamilton aviation companies and archival references matching the independently verified Deva owner; type ID 10 is copied from the owner-input lookup.", "confidence": {"score": 98, "band": "very_high", "reason": "The unusual full name, exact life dates, aviation-manufacturing history and independently documented yacht relationship make the page securely attributable to person ID 983."}, "source_ids": ["S0", "S2", "S3", "S4", "S6"]}
+  ],
+  "proposed_tags": [
+    {"tag_id": "tag_0025", "name": "Aviation", "summary": "Hamilton founded and ran propeller and metal-aircraft manufacturers, later built Burbank Airport and led United Aircraft's export corporation.", "relationship_type": "founder_manufacturer_and_long_term_aviation_executive", "temporal_scope": "former_but_defining", "taxonomy_value": "Groups Hamilton with owners who created material wealth through, controlled substantial operations in or held a defining long-term operating mandate in aviation, excluding passive holdings and incidental participation.", "confidence": {"score": 99, "band": "very_high", "reason": "Period reporting and archival sources document founder-built aviation companies, substantial manufacturing activity and sustained senior aviation leadership over several decades."}, "source_ids": ["S3", "S4", "S5", "S7"]}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=983", "title": "Thomas F. Hamilton saved owner record, person ID 983", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-28", "supports": ["The saved record identifies Thomas F. Hamilton as an American man born in the United States and deceased, with a biography naming Thomas Foster Hamilton and intended dates of 28 July 1894 to 12 August 1969.", "The birth and death day/year fields are visibly transposed: day contains 1894 and 1969 while year contains 28 and 12. The record links him to Deva from 1945 through 1951."]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Thomas%20F.%20Hamilton", "title": "Forbes exact-name and profile searches", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Exact-name, full-name, profile-path, Hamilton Standard and Deva-qualified searches found no Forbes person profile attributable to Thomas Foster Hamilton.", "No Forbes URL, wealth estimate or Forbes-derived social profile is proposed."]},
+    {"id": "S2", "url": "https://www.classic-yachtsforsale.com/classic-yacht/deva-classic-yachtsforsale/", "title": "Deva vessel history", "publisher": "Classic Yachts for Sale", "tier": 2, "accessed_at": "2026-09-28", "supports": ["The detailed chronology says aviation pioneer Thomas F Hamilton bought the decommissioned former USS Juniata in 1945, renamed her Vega and converted her for chartering.", "It records the vessel's sale to Cornelius Crane in 1951, matching the authoritative Deva relationship dates and providing a collision-resistant identity bridge."]},
+    {"id": "S3", "url": "https://milwaukeehistory.net/wp-content/uploads/2023/07/0478.Hamilton-Thomas.pdf", "title": "Thomas Hamilton papers finding aid", "publisher": "Milwaukee County Historical Society", "tier": 1, "accessed_at": "2026-09-28", "supports": ["The historical note identifies Thomas F. Hamilton, born 28 July 1894, and traces Hamilton Aero Manufacturing from Vancouver to Milwaukee and his purchase of the Matthews Brothers aviation department after the First World War.", "It documents the separate Hamilton Metalplane enterprise, the 1927 first flight of its all-metal aircraft and the later acquisition of Hamilton's aviation businesses within the United Aircraft and Boeing group."]},
+    {"id": "S4", "url": "https://time.com/archive/6767854/business-finance-personnel-oct-5-1936/", "title": "Business & Finance: Personnel", "publisher": "Time", "tier": 2, "accessed_at": "2026-09-28", "supports": ["The 1936 period profile identifies Thomas Foster Hamilton as born in Seattle in 1894, an early glider pilot and founder of a teenage propeller business who later manufactured propellers and metal aircraft.", "It states that Hamilton sold his propeller and all-metal aircraft businesses to United Aircraft & Transport in 1929 and was elected president of United Aircraft Export Corporation in 1936."]},
+    {"id": "S5", "url": "https://www.wahf.org/hall-of-fame/thomas-f-hamilton/", "title": "Thomas F Hamilton", "publisher": "Wisconsin Aviation Hall of Fame", "tier": 2, "accessed_at": "2026-09-28", "supports": ["The Hall of Fame identifies Hamilton as a pioneer pilot, designer and manufacturer who established a major early aviation manufacturing presence in Wisconsin.", "It records his 28 July 1894 birth, Milwaukee propeller and pontoon production and 1927 all-metal monoplane, but gives 11 August 1969 as his death date, one day earlier than the saved biography and other biographical sources."]},
+    {"id": "S6", "url": "https://en.wikipedia.org/wiki/Thomas_F._Hamilton", "title": "Thomas F. Hamilton", "publisher": "Wikipedia", "tier": 3, "accessed_at": "2026-09-28", "supports": ["The biographical page identifies Thomas Foster Hamilton as born in Seattle on 28 July 1894 and deceased in Los Angeles on 12 August 1969, and cites the Social Security Death Index and a contemporary New York Times funeral notice for the death date.", "It traces the Seattle, Vancouver, Milwaukee, Burbank, European export, Malibu resort and post-war airline episodes, with references to archival and published histories."]},
+    {"id": "S7", "url": "https://www.earlyaviators.com/ehamilto.htm", "title": "Thomas F. Hamilton", "publisher": "Early Birds of Aviation biography collection", "tier": 2, "accessed_at": "2026-09-28", "supports": ["The aviation-history biography and archival guide identify Hamilton's early aircraft work, Hamilton Aero Manufacturing and long involvement in American aviation.", "The page points to the University of Wisconsin-Milwaukee Hamilton scrapbook and other archival collections, and records his death in 1969."]},
+    {"id": "S8", "url": "https://investors.rtx.com/static-files/5612ce4a-a018-4f37-adc6-a154069a68f3", "title": "Our Legacy of Transformation", "publisher": "United Technologies, now RTX", "tier": 1, "accessed_at": "2026-09-28", "supports": ["The corporate history places Hamilton Standard within United Aircraft's 1930s structure and documents its large-scale propeller production and later aerospace role.", "This source supports the industrial context but does not by itself establish that Hamilton retained ownership after selling his businesses."]},
+    {"id": "S9", "url": "https://www.hamiltair.com/about/", "title": "Hamiltair history", "publisher": "Hamiltair Estates Property Owners Association", "tier": 2, "accessed_at": "2026-09-28", "supports": ["The community history identifies Thomas Foster Hamilton as an aerospace pioneer and businessman whose Lake Arrowhead estate became the foundation of Hamiltair in 1961.", "It credits Hamilton with aircraft and propeller work, development of Burbank Airport and a defining role in establishing the Lake Arrowhead Yacht Club."]}
+  ],
+  "uncertainties": [
+    {"topic": "Death-day discrepancy", "detail": "The saved biography and the detailed biographical page give 12 August 1969, consistent with the transposed saved day/year values and a cited contemporary funeral notice. The Wisconsin Aviation Hall of Fame gives 11 August. The dossier proposes day 12 at high rather than very-high confidence and preserves the discrepancy for review."},
+    {"topic": "Hamilton Standard wording", "detail": "Popular biographies often call Hamilton the founder or creator of Hamilton Standard. Period and archival evidence more precisely establishes that he founded propeller and metal-aircraft businesses and sold them to United Aircraft & Transport, after which Hamilton Standard became part of the consolidated group. The biographies use the more precise company history."},
+    {"topic": "Later principal assets", "detail": "Hamilton pursued airport development, export leadership, hospitality, a small airline, California property and other interests after selling his core aviation companies. Sources reviewed do not rank those assets or establish his principal wealth relationship at death. Primary industry therefore uses the disclosed origin-sector fallback, and wealth relationship remains Unknown."},
+    {"topic": "Priority social profiles", "detail": "Hamilton died in 1969, before LinkedIn, Instagram and modern personal websites. Exact-name searches found no authentic first-party account to propose. The well-established Wikipedia page is proposed as the only supported profile and is independently bridged through the yacht, dates and aviation career."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person decision for Thomas Foster Hamilton. Deva's public history supplies the decisive yacht-to-aviation identity bridge, corroborated by period reporting and institutional archives. The dossier corrects transposed birth and death day/year fields, replaces the existing biography with neutral publication copy, and proposes United States residence, Seattle birthplace, a known-for title, Wikipedia and the approved Aviation tag. Forbes-first and priority social checks were completed. The one-day death-date conflict is disclosed; wealth relationship remains Unknown after the 1929 business sale. No other dossier, shared file or live site was changed."
+  }
+}

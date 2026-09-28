@@ -1,0 +1,175 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1052,
+    "display_name": "Marilyn Anne Horne",
+    "identity_confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The saved record's exact full name, New Zealand nationality, residence and birth-country fields align with New Zealand company records for Marilyn Anne Horne and with business reporting that identifies Marilyn Horne as co-owner of Auckland apparel company Line 7. By contrast, the saved biography and 16 January 1934 birth details exactly describe American mezzo-soprano Marilyn Horne, whom official arts sources place in Bradford, Pennsylvania. The New Zealand identity is strongly resolved, although reviewed public sources did not directly connect her to the saved historical Ever East relationship."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "researchable_missing_details": ["secondary_nationality", "known_for_title", "place_of_birth"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Marilyn Anne Horne is a New Zealand businesswoman and former co-owner of Auckland sportswear company Line 7.",
+    "defining_work": "She shared ownership of Line 7 as the specialist sailing label expanded into broader sportswear, leisurewear, retail and international distribution.",
+    "formative_context": null,
+    "decisive_moment": "Line 7's parent company acquired Musto's Australian operation, extending the group's distribution and retail position across Australasia.",
+    "enduring_dimensions": ["Ownership of a New Zealand apparel brand with strong sailing associations", "International sportswear distribution and licensing", "Later directorship and shareholding in Sportfolio"],
+    "character_detail": "The business balanced specialist marine credibility with expansion into mainstream casual clothing and sponsorships across several sports.",
+    "opening_options": [
+      {"mode": "present_identity", "angle": "Introduce Horne as the New Zealand businesswoman who co-owned Line 7."},
+      {"mode": "institution_or_asset", "angle": "Use Line 7's transition from sailing gear to a wider apparel business as the orienting subject."}
+    ],
+    "excluded_transient_context": ["Private-vessel ownership and chronology", "The American opera singer's biography, awards and birth details", "Unverified replacement birth particulars", "Current Line 7 ownership after the former company entered receivership", "Source narration and confidence language"],
+    "source_ids": ["S2", "S3", "S4", "S5", "S6", "S7"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "institution_then_person",
+    "calibration_archetypes": ["sparse_public_record"],
+    "reviewed_phrase_exceptions": [],
+    "notes": "The short biography establishes Horne's New Zealand identity, Line 7 ownership, America's Cup association and later Sportfolio role. The independent long profile develops the company's retail, licensing and acquisition strategy, then its broader sponsorship reach and receivership. It deliberately omits Sportfolio and the America's Cup detail."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Mandatory Forbes-first exact-name searches combining Marilyn Anne Horne with New Zealand, Line 7 and Ever East found no dedicated personal Forbes profile. Results for the American opera singer were rejected as a different person, and no Forbes social is proposed."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "fashion_retail",
+    "label": "Fashion & Retail",
+    "summary": "Horne's documented principal business ownership was in Line 7, a sportswear and leisure-clothing company with its own stores, wholesale distribution and international licensing relationships.",
+    "confidence": {
+      "score": 89,
+      "band": "high",
+      "reason": "Independent business reporting directly identifies Horne as a Line 7 co-owner, while World Sailing and the New Zealand Herald document the apparel company's retail, distribution and licensing model. Public sources do not publish her ownership percentage or full personal asset history, so the industry conclusion remains below very-high confidence."
+    },
+    "source_ids": ["S5", "S6", "S7"]
+  },
+  "primary_industry": {
+    "classification": "fashion_retail",
+    "label": "Fashion & Retail",
+    "summary": "Fashion & Retail is used as the origin-sector fallback because Horne's current principal private wealth sector cannot be ranked from public evidence after Line 7's receivership.",
+    "confidence": {
+      "score": 78,
+      "band": "medium",
+      "reason": "Line 7 securely establishes the creation sector, and company records show later Sportfolio and investment holdings. Those records do not disclose the nature or materiality of her current principal assets, so the required fallback retains Fashion & Retail without implying that apparel still dominates her wealth."
+    },
+    "source_ids": ["S3", "S4", "S5", "S6", "S7"]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Horne co-owned Line 7, but public sources do not establish how she acquired that interest or whether it was the principal source of her wealth; broad Self-made is the strongest alternative considered.",
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "The evidence establishes ownership and business scale but does not show whether Horne founded, bought, earned, inherited or received her stake. Ross Munro is documented as the person who bought Line 7 in 1985, and transferring that origin story to Horne would violate the positive-evidence requirement. No non-Unknown origin classification reaches 70."
+    },
+    "source_ids": ["S5", "S7"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Horne was a Line 7 co-owner and remains associated with private companies, but reviewed sources do not establish her current principal operating, investment or passive-ownership relationship.",
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Company records show directorships and shareholdings, including Sportfolio, but do not describe her day-to-day responsibilities or establish which asset principally underpins her current wealth. Former operator and current investor were considered, yet neither reaches 70 without inferring materiality or activity from titles and holdings alone."
+    },
+    "source_ids": ["S2", "S3", "S4", "S5"]
+  },
+  "biography": {
+    "plain_text": "Marilyn Anne Horne is a New Zealand businesswoman and former co-owner of Line 7, the Auckland apparel company long associated with sailing. Under her and Ross Munro's ownership, its clothing equipped Team New Zealand across successive America's Cup campaigns. She later remained a director and shareholder of Sportfolio, another New Zealand company.",
+    "html": "<p>Marilyn Anne Horne is a New Zealand businesswoman and former co-owner of Line 7, the Auckland apparel company long associated with sailing. Under her and Ross Munro's ownership, its clothing equipped Team New Zealand across successive America's Cup campaigns. She later remained a director and shareholder of Sportfolio, another New Zealand company.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Independent sailing-business reporting identifies Horne and Munro as Line 7's owners and documents the Team New Zealand relationship, while New Zealand company-data sources establish Horne's later Sportfolio directorship and shareholding."
+    },
+    "source_ids": ["S2", "S3", "S4", "S5"]
+  },
+  "long_biography": {
+    "plain_text": "Line 7's commercial expansion placed Marilyn Anne Horne within one of New Zealand's most visible apparel businesses. As co-owner with Ross Munro, she oversaw a company operating branded stores and a wider wholesale network across Australasia and other international markets.\n\nThe group widened its reach by acquiring Musto's Australian operation and supplying clothing beyond sailing to rowing, motor racing and rugby organisations. This broader strategy took Line 7 from specialist wet-weather gear into sportswear and casual clothing for men, women and children. The scale of its licensing and distribution network did not prevent financial pressure, and the company entered receivership in 2009 after more than two decades under Munro's ownership.",
+    "html": "<p>Line 7's commercial expansion placed Marilyn Anne Horne within one of New Zealand's most visible apparel businesses. As co-owner with Ross Munro, she oversaw a company operating branded stores and a wider wholesale network across Australasia and other international markets.</p>\r\n<p>The group widened its reach by acquiring Musto's Australian operation and supplying clothing beyond sailing to rowing, motor racing and rugby organisations. This broader strategy took Line 7 from specialist wet-weather gear into sportswear and casual clothing for men, women and children. The scale of its licensing and distribution network did not prevent financial pressure, and the company entered receivership in 2009 after more than two decades under Munro's ownership.</p>\r\n",
+    "word_count": 110,
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Business and specialist sailing reporting support Horne's co-ownership, Line 7's stores, distribution, product expansion, Musto acquisition, sports relationships and receivership. The profile avoids attributing Ross Munro's documented original acquisition to Horne."
+    },
+    "source_ids": ["S5", "S6", "S7"]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Former co-owner of Line 7",
+      "action": "fill_missing",
+      "confidence": {"score": 94, "band": "high", "reason": "Independent New Zealand business reporting directly identifies Marilyn Horne and Ross Munro as owners of Line 7, matching the exact New Zealand identity in company records."},
+      "source_ids": ["S2", "S5"]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0429",
+      "name": "Apparel retail",
+      "summary": "Horne co-owned Line 7 while the apparel company operated branded stores, wholesale distribution and international sportswear and leisurewear sales.",
+      "relationship_type": "co-owner",
+      "temporal_scope": "former_but_defining",
+      "confidence": {"score": 91, "band": "high", "reason": "Independent reporting identifies Horne as co-owner, while World Sailing and the New Zealand Herald document Line 7's substantial retail, wholesale and international apparel operations."},
+      "source_ids": ["S5", "S6", "S7"],
+      "taxonomy_value": "Groups Horne with owners whose defining business identity involved controlling substantial apparel-retail operations, rather than an isolated fashion investment or sponsorship."
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1052", "title": "Marilyn Anne Horne owner record, person ID 1052", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Immutable person ID, exact Marilyn Anne Horne name, New Zealand nationality, residence and birth-country fields", "Historical Ever East relationship from February 2016 to March 2021 for identity context only", "Existing biography and 16 January 1934 birth data requiring identity review", "Blank known-for title, researched place of birth, secondary nationality and social profiles"]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Marilyn%20Anne%20Horne", "title": "Forbes search for Marilyn Anne Horne", "publisher": "Forbes", "tier": 3, "accessed_at": "2026-09-28", "supports": ["Mandatory Forbes-first exact-name, New Zealand, Line 7 and vessel searches", "No dedicated Forbes personal profile found"]},
+    {"id": "S2", "url": "https://www.companiesnz.com/person/2109793/marilyn-anne-horne", "title": "Marilyn Anne Horne – New Zealand company appointments", "publisher": "Companies New Zealand", "tier": 3, "accessed_at": "2026-09-28", "supports": ["Exact-name New Zealand identity", "Directorship and shareholder associations with Cup Holdings and related companies", "Repeated business association with Ross Francis Munro and Line 7 entities"]},
+    {"id": "S3", "url": "https://www.bizdb.co.nz/company/9429035899174/", "title": "Sportfolio Limited company information", "publisher": "BizDb New Zealand", "tier": 3, "accessed_at": "2026-09-28", "supports": ["Marilyn Anne Horne as a Sportfolio director from the company's 2003 incorporation", "Horne as a shareholder alongside Ross Munro and Kevin McDonald", "Earlier Gulf Star Holdings company name"]},
+    {"id": "S4", "url": "https://oversightsolutions.co.nz/profile/SPORTFOLIO-LIMITED", "title": "Sportfolio Limited network profile", "publisher": "Oversight Solutions using New Zealand Ministry of Business, Innovation and Employment data", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Marilyn Horne as a one-third beneficial owner of Sportfolio", "Ross Munro and Kevin McDonald as the other beneficial owners", "Continuing New Zealand private-company investment context"]},
+    {"id": "S5", "url": "https://www.sail-world.com/Australia/Shed-a-tear-for-Line-7/-58426", "title": "Shed a tear for Line 7", "publisher": "National Business Review via Sail-World", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Line 7 owned by Ross Munro and Marilyn Horne", "Brand's sailing heritage and Team New Zealand supply relationship", "Stores or stockists across seven countries", "Expansion into sportswear and casual clothing", "Receivership in 2009"]},
+    {"id": "S6", "url": "https://www.sailing.org/2002/05/17/line-7-buys-musto-australia/", "title": "Line 7 buys Musto Australia", "publisher": "World Sailing", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Gulf Star Products as Line 7's parent company", "Acquisition of Musto's Australian business", "Expansion of Australasian stock, marketing and distribution", "Line 7's international sportswear, leisurewear and retail identity"]},
+    {"id": "S7", "url": "https://www.nzherald.co.nz/business/companies/retail/label-gets-benefit-of-sails-pitch/3DVGMSGPJE6BKMTLRWYCQCFO64/", "title": "Label gets benefit of sails pitch", "publisher": "New Zealand Herald", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Ross Munro's acquisition of Line 7 in 1985", "Growth into a substantial sportswear and leisurewear business", "Branded stores, wholesale distribution and retained-earnings financing", "Sailing sponsorship and international retail strategy"]},
+    {"id": "S8", "url": "https://www.arts.gov/honors/opera/marilyn-horne", "title": "Marilyn Horne – NEA Opera Honors", "publisher": "National Endowment for the Arts", "tier": 1, "accessed_at": "2026-09-28", "supports": ["American opera singer Marilyn Horne born 16 January 1934 in Bradford, Pennsylvania", "Opera career, National Medal of Arts and Kennedy Center Honors", "Conclusive demonstration that the saved biography and birth particulars belong to a different person"]}
+  ],
+  "uncertainties": [
+    {"topic": "Identity conflation", "detail": "The saved full name and New Zealand identity fields resolve to Line 7 co-owner Marilyn Anne Horne. The saved biography and 16 January 1934 birth particulars reproduce the life of the American opera singer born in Bradford, Pennsylvania, and must not be transferred to this owner. The dossier supplies a corrected biography but does not propose replacement birth fields without secure evidence."},
+    {"topic": "Vessel bridge", "detail": "The saved record links Marilyn Anne Horne to Ever East from 2016 to 2021. Reviewed public yacht sources describe the vessel but do not name Horne, and company records do not provide a direct title bridge. Identity therefore rests on the exact full name, New Zealand nationality and convergent business records, with confidence capped below very high."},
+    {"topic": "Wealth origin and current relationship", "detail": "Horne's co-ownership of Line 7 and later company holdings are documented. Public sources do not establish how she acquired the Line 7 interest, her operating responsibilities, or which current holding is financially principal. Self-made, operator and investor were considered but remain below the evidence threshold, so both classifications retain Unknown."},
+    {"topic": "Current industry", "detail": "Line 7 entered receivership in 2009, and the current nature and materiality of Horne's Sportfolio and other holdings cannot be established. Fashion & Retail is therefore used only as the disclosed origin-sector fallback, not as a claim about present asset dominance."},
+    {"topic": "Personal details and socials", "detail": "Reviewed sources do not establish a reliable birth day, month, year or place for the New Zealand owner, nor a secondary nationality. No identity-secure personal LinkedIn, Instagram, Facebook, X, YouTube, TikTok or Personal Website was found. The current Line 7 website belongs to a later brand owner and is not proposed."},
+    {"topic": "Tags", "detail": "Apparel retail is assigned because Horne's ownership covered a substantial multi-market store, wholesale and distribution operation. America's Cup and Competitive sailing are excluded because Line 7's sponsorship and clothing-supply relationship does not make Horne a professional competitor, team owner or senior sailing-governance figure."},
+    {"topic": "Repository and live-system guardrails", "detail": "Only the requested person_id 1052 dossier was created. The owner input, cohort, catalogue, other dossiers, compiled artifacts and live website were not changed; nothing was staged, committed or pushed."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier. Exact-name New Zealand company and Line 7 ownership evidence identifies Marilyn Anne Horne at high confidence and separates her from the American opera singer whose biography and birth data were attached to the saved record. Fashion & Retail is the creation sector and required current-sector fallback; wealth origin and current relationship remain Unknown. The corrected biography, known-for title and Apparel retail tag are proposed, while unsupported birth replacements and socials remain unproposed."
+  }
+}

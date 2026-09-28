@@ -273,20 +273,6 @@
       ]
     },
     {
-      "action": "fill_missing",
-      "field": "secondary_nationality",
-      "value": "Dominican",
-      "confidence": {
-        "score": 94,
-        "band": "high",
-        "reason": "RBC and Croatian public broadcasting independently report that Anisimov retains citizenship of Dominica in addition to Croatia. Dominican is the exact input catalogue label."
-      },
-      "source_ids": [
-        "S3",
-        "S8"
-      ]
-    },
-    {
       "action": "correct_existing",
       "field": "main_residence_country",
       "existing_value": "Russian Federation",
@@ -465,7 +451,22 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "field": "secondary_nationality",
+      "value": "Dominican",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "RBC and Croatian public broadcasting independently report that Anisimov retains citizenship of Dominica in addition to Croatia. Dominican is the exact input catalogue label."
+      },
+      "source_ids": [
+        "S3",
+        "S8"
+      ],
+      "review_note": "The current owner-form lookup has no valid secondary_nationality option for 'Dominican'; this supported value is retained for human review rather than automatic compilation."
+    }
+  ],
   "sources": [
     {
       "id": "S1",

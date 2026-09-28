@@ -16,11 +16,11 @@ Use this file as Custom GPT Knowledge. Behaviour, workflow order, manual-mode ru
 
 | Section | Canonical source | SHA-256 |
 | --- | --- | --- |
-| Owner tag governance | `../../../docs/ai/OWNER_TAG_GOVERNANCE.md` | `9b03cd882db56eac9cb29899d684acfa04e5ce3be50c62cc66f8861134a11f2a` |
-| Research and dossier contract | `references/research-contract.md` | `83cb5a703176772dd1da4eb8e3126c8e279d4b5835339d7228c1848b6d25c5a0` |
-| Wealth classification | `references/wealth-classification.md` | `e95ce67d9f5f239e2015b3d283a174917075aed8052ced7579a0276970f0f1f5` |
-| Biography style | `references/biography-style.md` | `0735c58c4d0c75a0a74d7a1bf95afb7f40eafd9e0b103fed3d0304079474caf8` |
-| Editorial calibrations | `references/editorial-calibrations.md` | `b705d5ebe33444a8abfecbc7bb0100478dc88c5a848b8fb4121473853a7dc9dd` |
+| Owner tag governance | `../../../docs/ai/OWNER_TAG_GOVERNANCE.md` | `56a1331d6006a5c40f7c83bc3876cbc22bb783caaad4082159bce59f7a69af1c` |
+| Research and dossier contract | `references/research-contract.md` | `d1f3d8d45d74a0f932019bd6350bd7757e2d410285f6c56ed8664ca00ce55a04` |
+| Wealth classification | `references/wealth-classification.md` | `d941b115eaac20ebca90dfdf99aa84e50e421e98b917057e07546a87059b27db` |
+| Biography style | `references/biography-style.md` | `ea1fe534a25e99d97c79fdfc89fb2f6dfba17e96c1ee865337482ce7b94f7b55` |
+| Editorial calibrations | `references/editorial-calibrations.md` | `e113250280f3da22a2f81163a4ce9644a9d4172feb26b7a5d10bb5f3f509433c` |
 
 ---
 

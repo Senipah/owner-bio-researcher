@@ -261,20 +261,6 @@
       ]
     },
     {
-      "field": "nationality",
-      "value": "Djiboutian",
-      "action": "fill_missing",
-      "confidence": {
-        "score": 100,
-        "band": "very_high",
-        "reason": "The English Commercial Court directly records that Boreh is a Djibouti national, consistent with the authoritative input's Djibouti birth country and with established reporting."
-      },
-      "source_ids": [
-        "S3",
-        "S9"
-      ]
-    },
-    {
       "field": "secondary_nationality",
       "value": "French",
       "action": "fill_missing",
@@ -395,7 +381,22 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "field": "nationality",
+      "value": "Djiboutian",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The English Commercial Court directly records that Boreh is a Djibouti national, consistent with the authoritative input's Djibouti birth country and with established reporting."
+      },
+      "source_ids": [
+        "S3",
+        "S9"
+      ],
+      "review_note": "The current owner-form lookup has no valid nationality option for 'Djiboutian'; this supported value is retained for human review rather than automatic compilation."
+    }
+  ],
   "sources": [
     {
       "id": "S1",

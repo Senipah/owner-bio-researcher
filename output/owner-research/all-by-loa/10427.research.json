@@ -315,19 +315,6 @@
       ]
     },
     {
-      "field": "birth_country",
-      "value": "Afghanistan",
-      "action": "fill_missing",
-      "confidence": {
-        "score": 96,
-        "band": "very_high",
-        "reason": "Forbes explicitly identifies him as Afghan-born; this is birthplace evidence rather than an inference from nationality."
-      },
-      "source_ids": [
-        "S2"
-      ]
-    },
-    {
       "field": "birth_month",
       "value": "October",
       "action": "fill_missing",
@@ -429,7 +416,21 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "field": "birth_country",
+      "value": "Afghanistan",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Forbes explicitly identifies him as Afghan-born; this is birthplace evidence rather than an inference from nationality."
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "review_note": "The current owner-form lookup has no valid birth_country option for 'Afghanistan'; this supported value is retained for human review rather than automatic compilation."
+    }
+  ],
   "sources": [
     {
       "id": "S1",

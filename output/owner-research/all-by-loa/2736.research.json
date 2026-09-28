@@ -258,20 +258,6 @@
     },
     {
       "action": "fill_missing",
-      "field": "secondary_nationality",
-      "value": "Sudanese",
-      "confidence": {
-        "score": 99,
-        "band": "very_high",
-        "reason": "Lancaster University's public oration identifies Ibrahim as holding joint British-Sudanese citizenship, while Forbes and official biographies corroborate his Sudanese birth and British citizenship."
-      },
-      "source_ids": [
-        "S2",
-        "S8"
-      ]
-    },
-    {
-      "action": "fill_missing",
       "field": "known_for_title",
       "value": "Founder of Celtel and the Mo Ibrahim Foundation",
       "confidence": {
@@ -415,7 +401,22 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "field": "secondary_nationality",
+      "value": "Sudanese",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Lancaster University's public oration identifies Ibrahim as holding joint British-Sudanese citizenship, while Forbes and official biographies corroborate his Sudanese birth and British citizenship."
+      },
+      "source_ids": [
+        "S2",
+        "S8"
+      ],
+      "review_note": "The current owner-form lookup has no valid secondary_nationality option for 'Sudanese'; this supported value is retained for human review rather than automatic compilation."
+    }
+  ],
   "sources": [
     {
       "id": "S1",

@@ -284,21 +284,6 @@
     },
     {
       "action": "fill_missing",
-      "field": "secondary_nationality",
-      "value": "Palestinian",
-      "confidence": {
-        "score": 92,
-        "band": "high",
-        "reason": "Dar El-Nimer and LPDC identify El Nimer as born in Nablus and explicitly describe his Palestinian identity and heritage. Lebanese corporate records establish the separate primary nationality. The proposal reflects a durable national identity but does not assert a particular passport or citizenship document."
-      },
-      "source_ids": [
-        "S8",
-        "S9",
-        "S11"
-      ]
-    },
-    {
-      "action": "fill_missing",
       "field": "known_for_title",
       "value": "First National Bank chairman-general manager and Dar El-Nimer founder",
       "confidence": {
@@ -334,20 +319,6 @@
         "score": 99,
         "band": "very_high",
         "reason": "Dar El-Nimer's founder biography and the Lebanese-Palestinian Dialogue Committee independently state that Rami El-Nimer was born in Nablus."
-      },
-      "source_ids": [
-        "S8",
-        "S9"
-      ]
-    },
-    {
-      "action": "fill_missing",
-      "field": "birth_country",
-      "value": "Palestine",
-      "confidence": {
-        "score": 99,
-        "band": "very_high",
-        "reason": "The two institutional biographies state that El Nimer was born in Nablus, Palestine. The value records the sourced birthplace geography rather than making a modern passport claim."
       },
       "source_ids": [
         "S8",
@@ -435,7 +406,37 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "field": "secondary_nationality",
+      "value": "Palestinian",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Dar El-Nimer and LPDC identify El Nimer as born in Nablus and explicitly describe his Palestinian identity and heritage. Lebanese corporate records establish the separate primary nationality. The proposal reflects a durable national identity but does not assert a particular passport or citizenship document."
+      },
+      "source_ids": [
+        "S8",
+        "S9",
+        "S11"
+      ],
+      "review_note": "The current owner-form lookup has no valid secondary_nationality option for 'Palestinian'; this supported value is retained for human review rather than automatic compilation."
+    },
+    {
+      "field": "birth_country",
+      "value": "Palestine",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The two institutional biographies state that El Nimer was born in Nablus, Palestine. The value records the sourced birthplace geography rather than making a modern passport claim."
+      },
+      "source_ids": [
+        "S8",
+        "S9"
+      ],
+      "review_note": "The current owner-form lookup has no valid birth_country option for 'Palestine'; this supported value is retained for human review rather than automatic compilation."
+    }
+  ],
   "sources": [
     {
       "id": "S1",

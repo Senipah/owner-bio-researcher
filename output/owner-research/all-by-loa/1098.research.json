@@ -1,0 +1,139 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1098,
+    "display_name": "Steve Jobs",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The saved name, exact 1955–2011 dates and biography naming Apple, NeXT and Pixar align uniquely with first-party Apple, Disney, Stanford and Smithsonian records for Steven Paul Jobs."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "biography_present": true,
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "American entrepreneur and product leader who co-founded Apple, founded NeXT and built Pixar into a publicly traded animation company.",
+    "defining_work": "Combined product strategy, hardware-software integration and design discipline at Apple while financing and controlling Pixar through its rise and sale to Disney.",
+    "formative_context": "Raised in Silicon Valley by adoptive parents, he left Reed College and started Apple with Steve Wozniak in his parents' garage.",
+    "decisive_moment": "His 1986 purchase of Lucasfilm's computer-graphics group created the platform that became Pixar and ultimately supplied most of his disclosed fortune through Disney shares.",
+    "enduring_dimensions": ["Apple's personal-computing and consumer-device businesses", "Pixar's computer-animation studio and Disney transaction", "NeXT's software and its role in Jobs's return to Apple"],
+    "character_detail": "His Stanford account described being forced out of Apple as the event that restored the freedom of being a beginner and opened his most creative period.",
+    "opening_options": [
+      {"mode": "decisive_event", "angle": "Begin with the 1986 purchase that became Pixar and altered both his career and personal fortune."},
+      {"mode": "defining_achievement", "angle": "Lead with Apple's revival and the integrated products introduced under his returned leadership."},
+      {"mode": "formative_episode", "angle": "Open in the Jobs family garage, where he and Steve Wozniak began selling personal computers."}
+    ],
+    "excluded_transient_context": ["Venus ownership, specifications and transfer history", "Medical details and speculation about illness", "Product-launch minutiae that do not explain his durable operating identity", "Source publishers, confidence language and classification deliberation"],
+    "source_ids": ["S2", "S3", "S4", "S5", "S6", "S7"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "decision_then_consequence",
+    "calibration_archetypes": ["founder_operator"],
+    "reviewed_phrase_exceptions": [],
+    "notes": "The short biography follows the independent garage start, removal from Apple and NeXT-enabled return. The long profile instead opens with the Pixar purchase and follows the resulting ownership value before moving to Apple's integrated-product strategy. Their shared anchors are Jobs and Apple; the causal sequences and material facts are otherwise distinct."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 100, "band": "very_high", "reason": "Forbes-first exact-name and company-qualified searches found extensive Forbes coverage but no live dedicated Forbes person profile for Jobs."}
+  },
+  "wealth_creation_industry": {
+    "classification": "media_entertainment",
+    "label": "Media & Entertainment",
+    "summary": "Jobs's principal personal fortune was created through the controlling Pixar stake he financed, took public and exchanged for Disney shares in 2006.",
+    "confidence": {"score": 99, "band": "very_high", "reason": "Forbes quantified the Disney stake received for Pixar at about $4.4 billion in 2010 versus about $1.3 billion of Apple stock, while Disney records establish his approximately 50.6% Pixar ownership and the all-stock acquisition."},
+    "source_ids": ["S2", "S4"]
+  },
+  "primary_industry": {
+    "classification": "media_entertainment",
+    "label": "Media & Entertainment",
+    "summary": "For this deceased subject, the latest attributable largest disclosed holding was the Disney stake received for Pixar, so media and entertainment is used as the final-holdings fallback.",
+    "confidence": {"score": 97, "band": "very_high", "reason": "Forbes's 2010 comparison identifies Disney as the majority of Jobs's fortune, and Disney's annual report records the Pixar sale, board role and large shareholding."},
+    "source_ids": ["S2", "S4"]
+  },
+  "wealth_origin": {
+    "classification": "self_made_independent",
+    "label": "Self-made — independent start",
+    "summary": "Jobs built his wealth from a garage-stage start with Wozniak and later self-directed ventures in NeXT and Pixar rather than inherited business ownership.",
+    "confidence": {"score": 99, "band": "very_high", "reason": "Jobs's own Stanford account describes starting Apple in his parents' garage, being removed, and starting NeXT and Pixar; no inherited operating asset or family capital platform appears in the record."},
+    "source_ids": ["S3", "S6", "S7"]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Jobs co-founded Apple, founded NeXT and was the entrepreneurial controlling shareholder who developed Pixar into a major animation studio.",
+    "confidence": {"score": 100, "band": "very_high", "reason": "Stanford, Apple, Disney and the National Inventors Hall of Fame independently establish his founding and controlling roles across the businesses that defined his career and fortune."},
+    "source_ids": ["S3", "S4", "S5", "S7"]
+  },
+  "biography": {
+    "plain_text": "Steve Jobs co-founded Apple with Steve Wozniak from his parents' garage, helping turn personal computers into consumer products shaped by design and ease of use. Forced out in 1985, he founded NeXT, whose software later brought him back to Apple. He led the company's revival before his death in 2011.",
+    "html": "<p>Steve Jobs co-founded Apple with Steve Wozniak from his parents' garage, helping turn personal computers into consumer products shaped by design and ease of use. Forced out in 1985, he founded NeXT, whose software later brought him back to Apple. He led the company's revival before his death in 2011.</p>\r\n",
+    "word_count": 50,
+    "confidence": {"score": 100, "band": "very_high", "reason": "Jobs's Stanford address directly supplies the garage start, removal, NeXT founding and Apple return, while Apple confirms his later leadership and succession."},
+    "source_ids": ["S3", "S5", "S7"]
+  },
+  "long_biography": {
+    "plain_text": "Buying Lucasfilm's computer-graphics division in 1986 gave Steve Jobs a second entrepreneurial platform. He financed the company that became Pixar, remained its controlling shareholder and took it public after Toy Story. Disney's all-stock acquisition in 2006 converted that holding into the largest part of his personal fortune and placed him on Disney's board.\n\nAt Apple, Jobs paired product strategy with tight control of hardware, software and industrial design. After returning, he narrowed the product line and oversaw a sequence that moved from the iMac and iPod to the iPhone and iPad. Those products rebuilt Apple around integrated consumer devices and digital services.",
+    "html": "<p>Buying Lucasfilm's computer-graphics division in 1986 gave Steve Jobs a second entrepreneurial platform. He financed the company that became Pixar, remained its controlling shareholder and took it public after Toy Story. Disney's all-stock acquisition in 2006 converted that holding into the largest part of his personal fortune and placed him on Disney's board.</p>\r\n<p>At Apple, Jobs paired product strategy with tight control of hardware, software and industrial design. After returning, he narrowed the product line and oversaw a sequence that moved from the iMac and iPod to the iPhone and iPad. Those products rebuilt Apple around integrated consumer devices and digital services.</p>\r\n",
+    "word_count": 102,
+    "confidence": {"score": 98, "band": "very_high", "reason": "Forbes and Disney records support the Pixar ownership and wealth mechanism; Apple, Stanford and the Inventors Hall of Fame support the return and subsequent product sequence."},
+    "source_ids": ["S2", "S3", "S4", "S5", "S7"]
+  },
+  "proposed_details": [
+    {"field": "middle_names", "value": "Paul", "action": "fill_missing", "confidence": {"score": 99, "band": "very_high", "reason": "The full name Steven Paul Jobs is consistently recorded in the exact-person reference biography and matches the saved biography's linked identity."}, "source_ids": ["S0", "S8", "S9"]},
+    {"field": "known_for_title", "value": "Co-founder and former CEO of Apple", "action": "fill_missing", "confidence": {"score": 100, "band": "very_high", "reason": "Apple, Stanford and the National Inventors Hall of Fame establish the co-founder and chief-executive roles."}, "source_ids": ["S3", "S5", "S7"]},
+    {"field": "place_of_birth", "value": "San Francisco", "action": "fill_missing", "confidence": {"score": 100, "band": "very_high", "reason": "Jobs states directly in his Smithsonian oral history that he was born in San Francisco."}, "source_ids": ["S6"]},
+    {"field": "biography", "value": "<p>Steve Jobs co-founded Apple with Steve Wozniak from his parents' garage, helping turn personal computers into consumer products shaped by design and ease of use. Forced out in 1985, he founded NeXT, whose software later brought him back to Apple. He led the company's revival before his death in 2011.</p>\r\n", "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Steve_Jobs\">Steven Paul Jobs</a> was an American entrepreneur, inventor, business magnate, media mogul, and investor who lived from February 24, 1955 until October 5, 2011. He was Apple&#39;s co-founder, chairman, and CEO; Pixar&#39;s chairman and majority shareholder; a member of The Walt Disney Company&#39;s board of directors after Pixar was acquired; and the founder, chairman, and CEO of NeXT. Along with his early business colleague and fellow Apple co-founder Steve Wozniak, he is widely regarded as a pioneer of the personal computer revolution of the 1970s and 1980s.</p>\r\n", "action": "correct_existing", "confidence": {"score": 100, "band": "very_high", "reason": "The replacement preserves the defining verified career arc in concise, durable prose and removes the existing list-heavy treatment."}, "source_ids": ["S3", "S5", "S7"]}
+  ],
+  "proposed_socials": [
+    {"type_id": "10", "type": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Steve_Jobs", "verification": "The page matches the exact 1955–2011 dates and distinctive Apple, NeXT and Pixar career sequence in first-party sources. Type ID 10 is copied from the owner-input lookup.", "confidence": {"score": 100, "band": "very_high", "reason": "Multiple collision-resistant identity facts match Apple, Disney, Stanford and Smithsonian evidence."}, "source_ids": ["S0", "S3", "S4", "S5", "S6", "S8"]},
+    {"type_id": "14", "type": "Company Website", "url": "https://www.apple.com/", "verification": "Apple is the company Jobs co-founded and later led; the official domain is confirmed by Apple's own newsroom. Type ID 14 is copied from the owner-input lookup.", "confidence": {"score": 100, "band": "very_high", "reason": "The relationship is direct and defining, and the URL is Apple's canonical corporate domain."}, "source_ids": ["S3", "S5"]}
+  ],
+  "proposed_tags": [
+    {"tag_id": "tag_0218", "name": "Consumer electronics", "summary": "Jobs created material wealth through and held a defining long-term operating mandate at Apple across personal computers, music players, smartphones and tablets.", "confidence": {"score": 100, "band": "very_high", "reason": "Apple and the Inventors Hall of Fame document his leadership across the Mac, iPod, iPhone and iPad product lines, meeting the catalogue's defining-operation threshold."}, "source_ids": ["S5", "S7"]},
+    {"tag_id": "tag_0101", "name": "Inventor", "summary": "Jobs was a named inventor whose contributions to interfaces, device operating systems and touch technology formed a substantial part of his recognised public identity.", "confidence": {"score": 99, "band": "very_high", "reason": "The National Inventors Hall of Fame inducted him for the iPod user interface and describes his contributions to operating systems, interfaces and touch-screen technology."}, "source_ids": ["S7"]}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1098", "title": "Steve Jobs saved owner record, person ID 1098", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Records the exact saved name, American identity, birth and death dates and existing biography linking Apple, NeXT and Pixar.", "Records a historical vessel relationship used only as source-record context and excluded from biography, wealth classification and tags."]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Steve%20Jobs", "title": "Forbes profile search for Steve Jobs", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-28", "supports": ["No live dedicated Forbes person profile for Jobs was located in the Forbes-first search.", "Located Forbes reporting on the composition of his fortune rather than a dedicated profile page."]},
+    {"id": "S2", "url": "https://www.forbes.com/sites/stevenbertoni/2010/09/22/facebooks-zuckerberg-now-richer-than-apples-steve-jobs/", "title": "Facebook's Zuckerberg Now Richer Than Apple's Steve Jobs", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Estimated Jobs's 2010 net worth at $6.1 billion.", "Attributed about $4.4 billion to 138 million Disney shares received in the Pixar sale, versus about $1.3 billion to Apple shares, establishing the dominant wealth mechanism."]},
+    {"id": "S3", "url": "https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says", "title": "You've got to find what you love, Jobs says", "publisher": "Stanford University", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Jobs states that he and Wozniak started Apple in his parents' garage, grew it, and that he was later forced out.", "He describes starting NeXT and Pixar, Pixar's Toy Story achievement and Apple's acquisition of NeXT leading to his return."]},
+    {"id": "S4", "url": "https://thewaltdisneycompany.com/press-releases/disney-to-acquire-pixar/", "title": "Disney to Acquire Pixar", "publisher": "The Walt Disney Company", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Records the all-stock 2006 acquisition terms, Jobs's approximately 50.6% Pixar ownership and his appointment to Disney's board.", "Identifies Jobs as Pixar's chairman and chief executive at the transaction."]},
+    {"id": "S5", "url": "https://www.apple.com/uk/newsroom/2011/08/24Steve-Jobs-Resigns-as-CEO-of-Apple/", "title": "Steve Jobs Resigns as CEO of Apple", "publisher": "Apple", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Records Jobs's August 2011 resignation as chief executive and election as chairman.", "Apple's board credits his leadership with saving the company and guiding it to become a highly innovative and valuable technology business."]},
+    {"id": "S6", "url": "https://www.americanhistory.si.edu/comphist/sj1.html", "title": "Oral History Interview with Steve Jobs", "publisher": "Smithsonian National Museum of American History", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Jobs states directly that he was born in San Francisco on 24 February 1955.", "The interview describes his Silicon Valley upbringing and early exposure to electronics."]},
+    {"id": "S7", "url": "https://www.invent.org/inductees/steve-jobs", "title": "National Inventors Hall of Fame Inductee Steve Jobs", "publisher": "National Inventors Hall of Fame", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Records Jobs's 1976 Apple co-founding, NeXT founding, Pixar acquisition and Apple return.", "Documents the iMac, iPod, iPhone and iPad sequence and his contributions to operating systems, user interfaces and touch-screen technology."]},
+    {"id": "S8", "url": "https://en.wikipedia.org/wiki/Steve_Jobs", "title": "Steve Jobs", "publisher": "Wikipedia", "tier": 3, "accessed_at": "2026-09-28", "supports": ["Provides the exact-person reference page and full name Steven Paul Jobs.", "Used to verify the proposed structured Wikipedia URL and middle name, not as primary authority for the operating or wealth claims."]},
+    {"id": "S9", "url": "https://www.biography.com/business-leaders/steve-jobs", "title": "Steve Jobs: Biography, Apple Cofounder, Entrepreneur", "publisher": "Biography.com", "tier": 3, "accessed_at": "2026-09-28", "supports": ["Independently records the full name Steven Paul Jobs and San Francisco birth.", "Used only as secondary corroboration for the middle-name proposal."]}
+  ],
+  "uncertainties": [
+    {"topic": "Industry classification", "detail": "Jobs's public operating identity spans technology and animation. Media & Entertainment is selected for both wealth fields because Forbes identifies the Disney stake received for Pixar as the majority of his final disclosed fortune; Apple remains central to the biographies and tags."},
+    {"topic": "Middle name", "detail": "The saved biography already links the full form Steven Paul Jobs. The proposal is additionally supported by two exact-person reference biographies, although the reviewed first-party corporate releases use the shorter Steve Jobs."},
+    {"topic": "Social profiles", "detail": "No personal LinkedIn, Instagram or contemporaneous personal website cleared verification. The exact Wikipedia page and the canonical website of the company he co-founded are proposed; no Forbes social is proposed because no dedicated profile was found."},
+    {"topic": "Excluded material", "detail": "Historical vessel ownership is omitted from the biographies, industry reasoning and tags. Medical details and speculative personality claims are also excluded as unnecessary to the durable business account."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal exact-person dossier. Forbes was checked first: no dedicated profile was found, but Forbes reporting establishes that the Disney shares received for Pixar made up most of Jobs's disclosed fortune. First-party Apple, Disney, Stanford and Smithsonian evidence resolves the identity and career sequence. The dossier proposes three missing details, a concise biography correction, Wikipedia and company-site links, and two active tags. No vessel fact appears in published prose or wealth reasoning, and no shared input, catalogue or live record was changed."
+  }
+}

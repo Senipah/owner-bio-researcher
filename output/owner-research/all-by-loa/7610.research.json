@@ -254,20 +254,6 @@
   },
   "proposed_details": [
     {
-      "field": "secondary_nationality",
-      "value": "Kittitian and Nevisian",
-      "action": "fill_missing",
-      "confidence": {
-        "score": 90,
-        "band": "high",
-        "reason": "Pappers' current INSEE/INPI-derived exact-person director record lists Saint Kitts and Nevis nationality for Sergey Trudovoy, born in January 1969. The uncommon name, birth month, Monaco and Cannes geography and connected property-company record resolve the same person."
-      },
-      "source_ids": [
-        "S3",
-        "S10"
-      ]
-    },
-    {
       "field": "known_for_title",
       "value": "Former Stylish Kitchens board chairman",
       "action": "fill_missing",
@@ -387,6 +373,20 @@
         "S8",
         "S9"
       ]
+    },
+    {
+      "field": "secondary_nationality",
+      "value": "Kittitian and Nevisian",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Pappers' current INSEE/INPI-derived exact-person director record lists Saint Kitts and Nevis nationality for Sergey Trudovoy, born in January 1969. The uncommon name, birth month, Monaco and Cannes geography and connected property-company record resolve the same person."
+      },
+      "source_ids": [
+        "S3",
+        "S10"
+      ],
+      "review_note": "The current owner-form lookup has no valid secondary_nationality option for 'Kittitian and Nevisian'; this supported value is retained for human review rather than automatic compilation."
     }
   ],
   "sources": [

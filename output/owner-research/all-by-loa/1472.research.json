@@ -243,20 +243,6 @@
   },
   "proposed_details": [
     {
-      "action": "correct_existing",
-      "field": "main_residence_country",
-      "existing_value": "Maldives",
-      "value": "Namibia",
-      "confidence": {
-        "score": 98,
-        "band": "very_high",
-        "reason": "Divine Namibia's current exact-person team biography states that Mesnard established himself in Namibia with his family, and the accompanying Gaelle Mesnard biography says she moved to Namibia to run the operation. This supersedes the source record's historical Maldives residence."
-      },
-      "source_ids": [
-        "S2"
-      ]
-    },
-    {
       "action": "fill_missing",
       "field": "known_for_title",
       "value": "Divine Namibia Director and Freediving Instructor",
@@ -340,7 +326,22 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "field": "main_residence_country",
+      "value": "Namibia",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Divine Namibia's current exact-person team biography states that Mesnard established himself in Namibia with his family, and the accompanying Gaelle Mesnard biography says she moved to Namibia to run the operation. This supersedes the source record's historical Maldives residence."
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "review_note": "The current owner-form lookup has no valid main_residence_country option for 'Namibia'; this supported value is retained for human review rather than automatic compilation.",
+      "existing_value": "Maldives"
+    }
+  ],
   "sources": [
     {
       "id": "S0",

@@ -1,0 +1,214 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1021,
+    "display_name": "Francisco Hernando Contreras",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The exact full name, Spanish identity, 2 June 1945 birth date, 3 April 2020 death date and existing Paco el Pocero biography all identify the Madrid property developer behind ONDE 2000 and the El Quiñón project in Seseña."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth"],
+    "optional_missing_details": ["name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": ["Instagram", "Twitter", "Wikipedia"],
+    "missing_priority_social_types": ["LinkedIn", "Personal Website"],
+    "social_type_lookup": {"2":"Facebook","3":"Twitter","4":"Youtube","5":"LinkedIn","6":"Trip Advisor","7":"Vimeo","8":"Flickr","9":"Instagram","10":"Wikipedia","11":"Forbes","12":"Zillow","14":"Company Website","15":"Personal Website","16":"TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Spanish self-made property developer known as Paco el Pocero and founder of ONDE 2000.",
+    "defining_work": "Built large housing schemes around Madrid and conceived the vast El Quiñón development at Seseña.",
+    "formative_context": "Raised in severe poverty in Madrid, he worked from childhood and learned sewer construction with his father.",
+    "decisive_moment": "He moved from drainage work and haulage into concrete and residential construction, later attempting an entire new urban district.",
+    "enduring_dimensions": ["Residential development", "Founder-led construction", "El Quiñón at Seseña"],
+    "character_detail": "His appetite for scale produced one of the Spanish property boom's most recognisable and controversial developments.",
+    "opening_options": [
+      {"mode":"present_identity","angle":"Self-made Madrid developer identified with the El Quiñón housing complex."},
+      {"mode":"decisive_event","angle":"A progression from sewer work to housing construction culminated in a planned city at Seseña."},
+      {"mode":"formative_episode","angle":"Childhood labour in post-war Madrid preceded the construction business that made his fortune."}
+    ],
+    "excluded_transient_context": ["Historical vessel ownership as a wealth source", "Volatile personal wealth estimates", "Unproven allegations surrounding planning decisions", "The incorrectly saved Ricardo Salinas Pliego social profiles"],
+    "source_ids": ["S0", "S2", "S3", "S4", "S5", "S6"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 4,
+    "opening_mode": "present_identity",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": ["founder_operator", "acquirer_consolidator"],
+    "reviewed_phrase_exceptions": [],
+    "notes": "Short states the self-made route and defining development. Long independently follows childhood work, successive trades, the creation of ONDE 2000, El Quiñón's scale and the property crash without reproducing allegations or private-asset detail."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score":97,"band":"very_high","reason":"Forbes-first searches for the exact full name and Paco el Pocero found no dedicated personal profile."}
+  },
+  "wealth_creation_industry": {
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "Hernando created his fortune through founder-led residential construction and property development, progressing from drainage work into large housing schemes through ONDE 2000.",
+    "confidence": {"score":99,"band":"very_high","reason":"Independent profiles and contemporaneous reporting consistently trace his rise and principal business to housing construction and development."},
+    "source_ids": ["S2", "S3", "S4", "S5"]
+  },
+  "primary_industry": {
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "Residential property development remained Hernando's defining operating field through the Seseña project and later attempted developments abroad.",
+    "confidence": {"score":98,"band":"very_high","reason":"His public career, operating company and final reported projects all centred on large-scale property development."},
+    "source_ids": ["S2", "S3", "S4", "S6"]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Born into severe poverty, Hernando worked from childhood, acquired drainage tools, started his own operation and expanded through haulage, concrete and housing construction.",
+    "confidence": {"score":98,"band":"very_high","reason":"Detailed independent profiles document both the absence of inherited capital and the sequence by which he built his businesses."},
+    "source_ids": ["S2", "S5"]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Hernando founded and controlled the construction and development businesses that produced his wealth, including ONDE 2000.",
+    "confidence": {"score":98,"band":"very_high","reason":"Profiles identify him as the entrepreneur who started his own drainage business and built the later property-development group around his projects."},
+    "source_ids": ["S2", "S4", "S5"]
+  },
+  "biography": {
+    "plain_text": "Francisco Hernando Contreras, known as Paco el Pocero, was a self-made Spanish property developer. After childhood work in Madrid and an early drainage business, he expanded into haulage, concrete and housing construction. His ONDE 2000 group became identified with El Quiñón, the vast Seseña residential scheme that embodied Spain's property boom and its subsequent collapse.",
+    "html": "<p>Francisco Hernando Contreras, known as Paco el Pocero, was a self-made Spanish property developer. After childhood work in Madrid and an early drainage business, he expanded into haulage, concrete and housing construction. His ONDE 2000 group became identified with El Quiñón, the vast Seseña residential scheme that embodied Spain's property boom and its subsequent collapse.</p>\r\n",
+    "word_count": 55,
+    "confidence": {"score":98,"band":"very_high","reason":"Multiple Spanish business and national-news sources support his nickname, founder route, construction career, company and defining Seseña project."},
+    "source_ids": ["S2", "S3", "S4", "S5"]
+  },
+  "long_biography": {
+    "plain_text": "Francisco Hernando grew up in extreme poverty in Madrid's Tetuán district and began earning money while still a child. He carried water to building workers, cleaned sewers beside his father and saved for tools to establish an independent drainage operation. Haulage work at Mercamadrid led him into trucks and concrete mixers, then into apartment construction. He eventually assembled the ONDE 2000 property group and became widely known by the nickname Paco el Pocero.\n\nHis boldest undertaking was El Quiñón at Seseña, a planned residential district of more than 13,000 homes south of Madrid. Thousands of apartments and extensive infrastructure rose before the Spanish property crash disrupted sales, financing and completion. The development became a national symbol of both the ambition and excess of the boom. Hernando later pursued proposed projects in Equatorial Guinea and other overseas markets, but none displaced Spanish residential development as his defining business. He died in Madrid in 2020.",
+    "html": "<p>Francisco Hernando grew up in extreme poverty in Madrid's Tetuán district and began earning money while still a child. He carried water to building workers, cleaned sewers beside his father and saved for tools to establish an independent drainage operation. Haulage work at Mercamadrid led him into trucks and concrete mixers, then into apartment construction. He eventually assembled the ONDE 2000 property group and became widely known by the nickname Paco el Pocero.</p>\r\n<p>His boldest undertaking was El Quiñón at Seseña, a planned residential district of more than 13,000 homes south of Madrid. Thousands of apartments and extensive infrastructure rose before the Spanish property crash disrupted sales, financing and completion. The development became a national symbol of both the ambition and excess of the boom. Hernando later pursued proposed projects in Equatorial Guinea and other overseas markets, but none displaced Spanish residential development as his defining business. He died in Madrid in 2020.</p>\r\n",
+    "word_count": 154,
+    "confidence": {"score":96,"band":"very_high","reason":"A detailed retrospective profile, contemporaneous national reporting and obituary coverage establish the formative sequence, operating company, Seseña project, overseas efforts and death."},
+    "source_ids": ["S2", "S3", "S4", "S5", "S6"]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Founder of ONDE 2000 and Spanish property developer",
+      "action": "fill_missing",
+      "confidence": {"score":99,"band":"very_high","reason":"Independent profiles and contemporary coverage consistently identify Hernando as the developer behind ONDE 2000 and El Quiñón."},
+      "source_ids": ["S2", "S3", "S4"]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Madrid",
+      "action": "fill_missing",
+      "confidence": {"score":98,"band":"very_high","reason":"Biographical and obituary sources identify Madrid as his birthplace, with detailed profiles locating his childhood in Tetuán."},
+      "source_ids": ["S2", "S5", "S6"]
+    },
+    {
+      "field": "biography",
+      "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Francisco_Hernando_Contreras\">Francisco Hernando Contreras</a>, also known as Paco el Pocero, was a Spanish construction businessman who lived from June 2, 1945, until April 3, 2020.</p>\r\n",
+      "value": "<p>Francisco Hernando Contreras, known as Paco el Pocero, was a self-made Spanish property developer. After childhood work in Madrid and an early drainage business, he expanded into haulage, concrete and housing construction. His ONDE 2000 group became identified with El Quiñón, the vast Seseña residential scheme that embodied Spain's property boom and its subsequent collapse.</p>\r\n",
+      "action": "correct_existing",
+      "confidence": {"score":99,"band":"very_high","reason":"The replacement removes an embedded link and bare life-date summary, then explains the documented wealth route, company and defining development."},
+      "source_ids": ["S2", "S3", "S4", "S5"]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0983",
+      "name": "Property developer",
+      "summary": "Founded and ran a property-development group whose defining undertaking was the large El Quiñón housing scheme at Seseña.",
+      "relationship_type": "founder_operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Property developer is a substantial, recognised, and defining occupation or practiced role in the owner's public identity.",
+      "confidence": {"score":100,"band":"very_high","reason":"Property development was Hernando's recognised occupation and the central activity of his long public career."},
+      "source_ids": ["S2", "S3", "S4"]
+    },
+    {
+      "tag_id": "tag_0997",
+      "name": "Residential development",
+      "summary": "Created material wealth through large-scale housing construction around Madrid and the 13,000-home El Quiñón plan.",
+      "relationship_type": "founder_operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "The owner created material wealth through, controlled substantial operations in, or had a defining long-term operating mandate in Residential development.",
+      "confidence": {"score":99,"band":"very_high","reason":"Residential schemes were both his wealth-creation activity and his defining sustained operating mandate."},
+      "source_ids": ["S2", "S3", "S4", "S5"]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "field": "existing_social_profile",
+      "type_id": "9",
+      "type": "Instagram",
+      "existing_value": "https://www.instagram.com/ricardosalinas/?hl=en",
+      "recommended_action": "remove_existing_profile",
+      "confidence": {"score":100,"band":"very_high","reason":"The account belongs to Mexican businessman Ricardo Salinas Pliego, not Francisco Hernando Contreras."},
+      "source_ids": ["S0"],
+      "review_note": "Remove the unrelated Ricardo Salinas Instagram URL; no verified personal Instagram for Hernando was found."
+    },
+    {
+      "field": "existing_social_profile",
+      "type_id": "3",
+      "type": "Twitter",
+      "existing_value": "https://twitter.com/ricardobsalinas?lang=en",
+      "recommended_action": "remove_existing_profile",
+      "confidence": {"score":100,"band":"very_high","reason":"The account belongs to Mexican businessman Ricardo Salinas Pliego, not Francisco Hernando Contreras."},
+      "source_ids": ["S0"],
+      "review_note": "Remove the unrelated Ricardo Salinas X/Twitter URL; no verified personal account for Hernando was found."
+    },
+    {
+      "field": "existing_social_profile",
+      "type_id": "10",
+      "type": "Wikipedia",
+      "existing_value": "https://en.wikipedia.org/wiki/Ricardo_Salinas_Pliego",
+      "recommended_value": "https://en.wikipedia.org/wiki/Francisco_Hernando_Contreras",
+      "recommended_action": "replace_existing_profile",
+      "confidence": {"score":100,"band":"very_high","reason":"The saved page is for Ricardo Salinas Pliego; the recommended page is dedicated to the exact Spanish developer and matches all core identifiers."},
+      "source_ids": ["S0", "S6"],
+      "review_note": "Replace the unrelated Wikipedia URL with the exact Francisco Hernando Contreras biography."
+    }
+  ],
+  "sources": [
+    {
+      "id":"S0","url":"https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1021","title":"Francisco Hernando Contreras saved owner record","publisher":"Superyacht Network immutable export","tier":1,"accessed_at":"2026-09-28","supports":["Records the exact Spanish identity, 2 June 1945 birth, 3 April 2020 death and existing Paco el Pocero biography.","Contains three social URLs belonging to Ricardo Salinas Pliego rather than Hernando."]
+    },
+    {
+      "id":"S1","url":"https://www.forbes.com/search/?q=Francisco%20Hernando%20Contreras","title":"Forbes exact-name profile search","publisher":"Forbes","tier":2,"accessed_at":"2026-09-28","supports":["No dedicated Forbes profile for Francisco Hernando Contreras was found."]
+    },
+    {
+      "id":"S2","url":"https://www.elconfidencial.com/empresas/2020-04-04/paco-pocero-sesena-francisco-hernando_2534075/","title":"Paco el Pocero, the builder who rose from sleeping rough to a fleet of jets","publisher":"El Confidencial","tier":2,"accessed_at":"2026-09-28","supports":["Provides a detailed account of his poor Madrid childhood, drainage work, self-funded tools, haulage, concrete and entry into housing construction.","Identifies ONDE 2000, El Quiñón and the property crash as the defining arc of his business career."]
+    },
+    {
+      "id":"S3","url":"https://www.europapress.es/economia/construccion-y-vivienda-00342/noticia-fallece-constructor-francisco-hernando-pocero-coronavirus-madrid-20200403182717.html","title":"Builder Francisco Hernando, El Pocero, dies in Madrid","publisher":"Europa Press","tier":2,"accessed_at":"2026-09-28","supports":["Confirms the exact name, nickname, age, death in Madrid and construction-business identity.","Identifies him as developer of the El Quiñón residential complex in Seseña."]
+    },
+    {
+      "id":"S4","url":"https://elpais.com/diario/2007/09/22/espana/1190412018_850215.html","title":"El Pocero celebrates before thousands of customers","publisher":"El País","tier":2,"accessed_at":"2026-09-28","supports":["Documents Hernando's role as builder and promoter of the planned 13,500-home El Quiñón development.","Describes the scheme as a defining reflection of his business trajectory."]
+    },
+    {
+      "id":"S5","url":"https://letraslibres.com/revista-espana/paco-el-pocero/","title":"Paco el Pocero","publisher":"Letras Libres","tier":2,"accessed_at":"2026-09-28","supports":["Profiles his extreme-poverty childhood and rise through sewer work into large-scale construction.","Provides independent context for his founder-led business identity and the scale of Seseña."]
+    },
+    {
+      "id":"S6","url":"https://en.wikipedia.org/wiki/Francisco_Hernando_Contreras","title":"Francisco Hernando Contreras","publisher":"Wikipedia","tier":3,"accessed_at":"2026-09-28","supports":["Exact-person page confirming full name, 2 June 1945 birth, 3 April 2020 death, Spanish construction career and Paco el Pocero nickname.","Provides the correct Wikipedia replacement for the unrelated Ricardo Salinas Pliego page saved upstream."]
+    }
+  ],
+  "uncertainties": [
+    "Reports differ between the planned and actually completed number of homes at El Quiñón; the biography distinguishes the plan from construction and avoids a definitive completed-unit count.",
+    "Later proposed developments in Equatorial Guinea, Angola and Saudi Arabia did not clearly become operating projects, so they do not alter the Spanish real-estate classification.",
+    "No reliable source establishes a secondary nationality or middle names, and these fields remain unproposed.",
+    "All three saved social URLs belong to Ricardo Salinas Pliego. They are routed for guarded correction; no live deletion or replacement is attempted."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Exact developer identity resolved at maximum confidence. Real Estate, Real Estate, Self-made and Founder follow directly from the documented poverty-to-construction path and ONDE 2000 career. Existing biography replacement and two approved active tags proposed. Three unrelated Ricardo Salinas Pliego social records are isolated for manual correction."
+  }
+}

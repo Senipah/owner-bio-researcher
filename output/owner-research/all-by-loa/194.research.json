@@ -246,21 +246,6 @@
   },
   "proposed_details": [
     {
-      "field": "nationality",
-      "value": "Dominican",
-      "action": "fill_missing",
-      "confidence": {
-        "score": 99,
-        "band": "very_high",
-        "reason": "Contemporary and official judicial sources consistently identify Báez Figueroa as Dominican; Dominican is the reviewed live system nationality label."
-      },
-      "source_ids": [
-        "S2",
-        "S3",
-        "S5"
-      ]
-    },
-    {
       "field": "known_for_title",
       "value": "Former president of Banco Intercontinental",
       "action": "fill_missing",
@@ -363,7 +348,23 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "field": "nationality",
+      "value": "Dominican",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Contemporary and official judicial sources consistently identify Báez Figueroa as Dominican; Dominican is the reviewed live system nationality label."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S5"
+      ],
+      "review_note": "The current owner-form lookup has no valid nationality option for 'Dominican'; this supported value is retained for human review rather than automatic compilation."
+    }
+  ],
   "sources": [
     {
       "id": "S0",

@@ -304,22 +304,6 @@
       ]
     },
     {
-      "field": "main_residence_country",
-      "value": "Jersey",
-      "action": "correct_existing",
-      "existing_value": "United Kingdom",
-      "confidence": {
-        "score": 100,
-        "band": "very_high",
-        "reason": "Current Companies House officer and control records consistently give Jersey as Gordon's country of residence, and independent financial reporting describes him as Jersey-based."
-      },
-      "source_ids": [
-        "S2",
-        "S3",
-        "S6"
-      ]
-    },
-    {
       "field": "biography",
       "value": "<p>Glenn Gordon is the British non-executive chairman of privately held, family-owned global spirits distiller William Grant &amp; Sons. A fifth-generation descendant of founder William Grant, he previously served as managing director before becoming chairman in 2012. The group's spirits portfolio includes Glenfiddich, The Balvenie, Grant's, Hendrick's, Tullamore D.E.W. and Drambuie.</p>\r\n",
       "action": "fill_missing",
@@ -404,7 +388,24 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "field": "main_residence_country",
+      "value": "Jersey",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Current Companies House officer and control records consistently give Jersey as Gordon's country of residence, and independent financial reporting describes him as Jersey-based."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S6"
+      ],
+      "review_note": "The current owner-form lookup has no valid main_residence_country option for 'Jersey'; this supported value is retained for human review rather than automatic compilation.",
+      "existing_value": "United Kingdom"
+    }
+  ],
   "sources": [
     {
       "id": "S1",

@@ -1,0 +1,367 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1231,
+    "display_name": "Alexey Kurochkin",
+    "identity_confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "The saved Russian identity and long ownership period for an Italian-built yacht align with the A&T Trade founder who owned and led Premium Yachts. Ferretti Group identifies Alexey Kurochkin as Premium Yachts' president, Kommersant calls him the yacht dealer's owner and a two-yacht owner, and ICIJ independently records him as a Premium Yachts shareholder. These mutually reinforcing business and maritime links distinguish him from same-name athletes, executives and creatives."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "biography_present": false,
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Alexey Kurochkin is a Russian founder-investor who built A&T Trade from musical-instrument distribution and expanded across telecommunications, marine luxury goods, banking, property and other ventures.",
+    "defining_work": "He co-founded A&T Trade and built a nationwide music-equipment distribution and retail platform. He later chaired Zebra Telecom and led Premium Yachts as a major Russian dealer for Italian marine-luxury brands.",
+    "formative_context": "A professional jazz pianist and Mosconcert keyboard player, Kurochkin began importing Western instruments after seeing how difficult they were for Soviet musicians to obtain.",
+    "decisive_moment": "Turning musician contacts and an early Fender arrangement into an exclusive-brand distribution network created the platform from which his later telecommunications, marine-luxury and investment ventures emerged.",
+    "enduring_dimensions": [
+      "Founder of A&T Trade and builder of the MuzTorg music-retail network",
+      "Former chairman of Zebra Telecom",
+      "Former president and shareholder of Premium Yachts"
+    ],
+    "character_detail": "Kurochkin repeatedly translated personal product knowledge into specialist distribution businesses, first in music equipment and later in marine luxury goods.",
+    "opening_options": [
+      {"mode": "formative_episode", "angle": "Begin with the keyboard player searching for better instruments and turning that frustration into an import business."},
+      {"mode": "institution_or_asset", "angle": "Open with A&T Trade as the distribution platform from which Kurochkin diversified into retail, telecoms and marine luxury goods."}
+    ],
+    "excluded_transient_context": [
+      "Private assets identified only in the source record",
+      "Current asking prices and private-asset ownership changes",
+      "Unverified net-worth, capitalisation and sales estimates",
+      "Disputed debt claims and unsourced asset lists",
+      "Source attribution, confidence language and identity-resolution detail"
+    ],
+    "source_ids": ["S2", "S3", "S4", "S5", "S6", "S7", "S8"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": ["founder_operator", "creative_industries"],
+    "reviewed_phrase_exceptions": [
+      {"kind": "commercial_maritime", "phrase": "Premium Yachts", "source_ids": ["S6", "S8", "S9"], "reason": "Premium Yachts is the exact name of Kurochkin's commercial luxury-yacht dealership, not a reference to a personal asset."},
+      {"kind": "commercial_maritime", "phrase": "luxury yachts", "source_ids": ["S6", "S8"], "reason": "This phrase describes a material commercial distribution sector in Kurochkin's career, not private ownership or lifestyle colour."}
+    ],
+    "notes": "The short biography provides a broad founder-investor identity, multi-sector range and present US consulting role. The long profile instead begins with the musical frustration that produced A&T Trade, explains its import and distribution system, then develops the two distinct extensions into telecoms and luxury yachts. The fact allocation avoids turning the long profile into an expanded list of short-card claims."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Mandatory Forbes-first searches used Alexey, Alexei and Aleksei Kurochkin, A&T Trade, Premium Yachts and site:forbes.com/profile combinations. No dedicated or attributable Forbes person profile was found."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "diversified",
+    "label": "Diversified",
+    "summary": "Kurochkin created wealth through A&T Trade, beginning with music and professional-audio distribution before building or owning businesses in retail, telecommunications, luxury yachts, banking and property.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Kommersant documents A&T Trade's origin in music-equipment distribution and its later telecom, yacht, beverage, audio and retail divisions. Separate reporting identifies Kurochkin with Russian International Bank and real-estate investment, while official Ferretti materials establish the yacht dealership. No single later sector clearly supersedes the multi-business platform."
+    },
+    "source_ids": ["S2", "S3", "S4", "S6", "S8"]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Kurochkin's most recent identifiable activities are US business consulting, investments and advisory work rather than operation of the Russian distribution companies that defined his earlier career.",
+    "confidence": {
+      "score": 78,
+      "band": "medium",
+      "reason": "California registry-derived records list him as president of Pearl Business Solutions, whose declared business is consulting and investments, while a recent SEC-filed offering identifies him as a lead adviser. The public evidence does not disclose the scale, sector mix or economic importance of these current activities, so the classification remains medium confidence."
+    },
+    "source_ids": ["S10", "S11"]
+  },
+  "wealth_origin": {
+    "classification": "self_made_independent",
+    "label": "Self-made — independent start",
+    "summary": "Kurochkin moved from professional music into importing instruments and co-founded A&T Trade without evidence of an inherited operating company or family capital platform.",
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "First-person and partner accounts trace the business idea to his musician career, overseas access and commercial initiative, with A&T Trade formed around an early Fender supply relationship. Sources identify Kurochkin and Alexander Sitkovetsky as founders; none indicates inheritance or a transferred family enterprise."
+    },
+    "source_ids": ["S2", "S3", "S7"]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Kurochkin co-founded the A&T Trade platform that generated his business interests and used it to launch or acquire adjacent ventures.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Kommersant identifies him as an A&T Trade founder and Zebra chairman, while later company-history reporting describes him as founder, development director and board chairman. Founder captures his durable relationship to the principal wealth platform even though some ventures were subsequently sold or are no longer current."
+    },
+    "source_ids": ["S2", "S3", "S4"]
+  },
+  "biography": {
+    "plain_text": "Alexey Kurochkin is a Russian founder-investor whose businesses have crossed music retail, telecommunications, banking, real estate and luxury yachts. A former professional keyboard player, he became known for assembling specialist distribution platforms and launching adjacent ventures, including the group behind MuzTorg. He now leads a United States business-consulting and investment company.",
+    "html": "<p>Alexey Kurochkin is a Russian founder-investor whose businesses have crossed music retail, telecommunications, banking, real estate and luxury yachts. A former professional keyboard player, he became known for assembling specialist distribution platforms and launching adjacent ventures, including the group behind MuzTorg. He now leads a United States business-consulting and investment company.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Kommersant and company-history reporting establish the founder platform and sector range, while California registry-derived records identify his current presidency of a consulting and investments corporation. The wording avoids unsupported valuation and current-ownership claims."
+    },
+    "source_ids": ["S2", "S3", "S4", "S6", "S8", "S10"]
+  },
+  "long_biography": {
+    "plain_text": "While working as a keyboard player for Mosconcert and the jazz ensemble Allegro, Alexey Kurochkin saw how difficult it was for Soviet musicians to obtain quality Western instruments. In 1990 he partnered with guitarist Alexander Sitkovetsky to import Fender guitars, then added leading microphone, keyboard, drum and professional-audio brands. The resulting A&T Trade network grew through exclusive distribution agreements, regional offices and retail stores.\n\nKurochkin used that platform to launch businesses beyond music. A&T created the internet-telephony operator Zebra Telecom, where he chaired the board before its controlling stake was sold to Rostelecom in 2006. Premium Yachts made him a leading dealer for Ferretti Group marques in Russia and later a Sanlorenzo partner. His career combines a musician's product knowledge with a repeated pattern of importing, distributing and building specialist brands.",
+    "html": "<p>While working as a keyboard player for Mosconcert and the jazz ensemble Allegro, Alexey Kurochkin saw how difficult it was for Soviet musicians to obtain quality Western instruments. In 1990 he partnered with guitarist Alexander Sitkovetsky to import Fender guitars, then added leading microphone, keyboard, drum and professional-audio brands. The resulting A&amp;T Trade network grew through exclusive distribution agreements, regional offices and retail stores.</p>\r\n<p>Kurochkin used that platform to launch businesses beyond music. A&amp;T created the internet-telephony operator Zebra Telecom, where he chaired the board before its controlling stake was sold to Rostelecom in 2006. Premium Yachts made him a leading dealer for Ferretti Group marques in Russia and later a Sanlorenzo partner. His career combines a musician's product knowledge with a repeated pattern of importing, distributing and building specialist brands.</p>\r\n",
+    "word_count": 133,
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Detailed Kommersant reporting supplies the musician-to-importer origin, product portfolio, exclusive distribution model and regional network. Kommersant and Rostelecom establish Zebra's creation and sale, while Ferretti and shipbuilding-industry reporting directly establish the Premium Yachts dealership roles."
+    },
+    "source_ids": ["S2", "S3", "S4", "S5", "S6", "S7"]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Founder of A&T Trade",
+      "action": "fill_missing",
+      "confidence": {"score": 98, "band": "very_high", "reason": "Kommersant and multiple business-history sources consistently identify Kurochkin as a founder of A&T Trade, the platform from which his best-documented businesses developed."},
+      "source_ids": ["S2", "S3", "S4"]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Alexey Kurochkin is a Russian founder-investor whose businesses have crossed music retail, telecommunications, banking, real estate and luxury yachts. A former professional keyboard player, he became known for assembling specialist distribution platforms and launching adjacent ventures, including the group behind MuzTorg. He now leads a United States business-consulting and investment company.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {"score": 91, "band": "high", "reason": "The proposed biography gives a durable, source-hidden account of Kurochkin's founder identity, sector range, formative music career and current consulting-and-investment role without relying on vessel ownership or speculative wealth figures."},
+      "source_ids": ["S2", "S3", "S4", "S6", "S8", "S10"]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0232",
+      "name": "Music industry",
+      "summary": "Kurochkin co-founded A&T Trade as a musical-instrument and professional-audio distributor and developed the MuzTorg retail network.",
+      "relationship_type": "founder_owner_operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Music industry captures both the original wealth-producing business and the professional knowledge that shaped Kurochkin's distribution model, distinguishing it from his later sector diversification.",
+      "confidence": {"score": 98, "band": "very_high", "reason": "Kommersant and partner accounts directly establish the founder role, music-equipment distribution, exclusive brand portfolio and retail network as the origin and long-running core of A&T Trade."},
+      "source_ids": ["S2", "S3"]
+    },
+    {
+      "tag_id": "tag_0230",
+      "name": "Luxury goods",
+      "summary": "As owner, shareholder and president of Premium Yachts, Kurochkin built a major Russian dealership for Ferretti Group and other Italian luxury-yacht brands.",
+      "relationship_type": "owner_operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Luxury goods provides the approved umbrella for Kurochkin's material yacht-distribution business, for which no active yacht-brokerage tag exists.",
+      "confidence": {"score": 96, "band": "very_high", "reason": "Ferretti identifies Premium Yachts as a leading Russian dealer and Kurochkin as president; Kommersant calls him the company owner, and ICIJ independently records his shareholding."},
+      "source_ids": ["S6", "S8", "S9"]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1231",
+      "title": "Alexey Kurochkin saved owner record, person ID 1231",
+      "publisher": "Superyacht Network; saved authoritative owner export",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Records person ID 1231 as Alexey Kurochkin, a living Russian man resident in the Russian Federation.",
+        "Records historical ownership of Behike from 2007 to 2022; this is authoritative identity context but is excluded from biography, wealth prose and tags."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/search/?q=Alexey%20Kurochkin",
+      "title": "Forbes search for Alexey Kurochkin",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Mandatory Forbes-first searches used multiple transliterations, A&T Trade, Premium Yachts and dedicated-profile combinations.",
+        "No dedicated or attributable Forbes person profile was found."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://secretmag.ru/archive/files/sec-firm_12_290304.pdf",
+      "title": "Private practice: A&T Trade",
+      "publisher": "Kommersant Secret Firmy",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Traces Kurochkin from Mosconcert keyboard player and Allegro jazz musician to the import business formed with Alexander Sitkovetsky around an early Fender supply arrangement.",
+        "Documents A&T Trade's exclusive music and professional-audio brands, regional office and store network, and diversification into telecoms, yachts, beverages, hi-fi and retail.",
+        "Describes Kurochkin's operating decisions and MuzTorg expansion strategy."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.kommersant.ru/doc/861270",
+      "title": "Black and white: Zebra Telecom",
+      "publisher": "Kommersant Secret Firmy",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Identifies Kurochkin as an A&T Trade founder and chairman of Zebra Telecom's board.",
+        "Explains that the music and professional-audio distribution holding conceived and funded the internet-telephony venture."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.kommersant.ru/doc/861091",
+      "title": "Losing innocence: the sale of Zebra Telecom",
+      "publisher": "Kommersant Secret Firmy",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Describes Zebra Telecom as a venture of the A&T Trade holding founded by former musicians Alexander Sitkovetsky and Alexey Kurochkin.",
+        "Records the holding's formation in 1990, diversification and decision to sell the telecom business for further investment."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.company.rt.ru/ir/news_calendar/d331870/",
+      "title": "Rostelecom acquires a controlling stake in Zebra Telecom",
+      "publisher": "Rostelecom",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Records Rostelecom's June 2006 acquisition of 99.99% of Zebra Telecom for approximately US$13.5 million.",
+        "Provides authoritative transaction corroboration without assigning the full proceeds to Kurochkin personally."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.itama-yacht.com/ru-ru/News-and-events/Detail/t/Moscow-Boat-Show-2013/e/94",
+      "title": "Moscow Boat Show 2013 and Premium Yachts dealership renewal",
+      "publisher": "Ferretti Group / Itama",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Identifies Alexey Kurochkin as president of Premium Yachts at the renewal of its exclusive Russian dealership agreement.",
+        "Describes Premium Yachts as a leading Russian boating-sector dealer representing Ferretti Yachts, Pershing, Itama, Bertram, Riva, Mochi Craft and Custom Line."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.luxury-info.ru/yachting/cutters/interview/aleksei-kurochkin-prezident-kompanii-premium-yachts.html",
+      "title": "Alexey Kurochkin: I do what I love",
+      "publisher": "Luxury Info",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Direct interview identifying Kurochkin as Premium Yachts president and a former jazz pianist.",
+        "Records his work in California, early personal interest in yachts and rationale for building the Ferretti and Pershing dealership."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.kommersant.ru/doc/478803",
+      "title": "Businessmen open navigation on the Moscow River",
+      "publisher": "Kommersant",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Identifies Kurochkin as owner of Premium Yachts and Russian International Bank at an event presenting Ferretti and Pershing yachts.",
+        "Quotes him discussing the Russian yacht market and reports that he personally owned two yachts, strengthening the maritime identity bridge."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://offshoreleaks.icij.org/nodes/34503",
+      "title": "Alexey Kurochkin Offshore Leaks record",
+      "publisher": "International Consortium of Investigative Journalists",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Records Alexey Kurochkin as a shareholder of Premium Yachts Inc. from August 2005.",
+        "Independently corroborates the ownership relationship without treating offshore-company participation as evidence of wrongdoing."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.bizprofile.net/ca/malibu/pearl-business-solutions-inc",
+      "title": "Pearl Business Solutions Inc filing information",
+      "publisher": "BizProfile; derived from California Secretary of State records",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Lists Alexey Kurochkin as chief executive, chief financial officer, secretary, director and registered agent of Pearl Business Solutions Inc.",
+        "Describes the active California company's business as consulting and investments and records recent filings through 2025."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.sec.gov/Archives/edgar/data/2086674/000208667425000001/exhibit_b.pdf",
+      "title": "Gold Coin AI Regulation Crowdfunding offering statement",
+      "publisher": "U.S. Securities and Exchange Commission EDGAR; issuer-supplied filing",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "The filed offering identifies Alexey Kurochkin as a lead adviser and describes him as founder of A&T Trade, former Zebra Telecom chairman and former Premium Yachts president.",
+        "The role is current issuer-supplied disclosure; unverified sales figures and promotional claims are excluded from the biography."
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Identity resolution",
+      "detail": "Identity confidence is 97. The saved Russian and maritime context converges with Ferretti's named Premium Yachts president, Kommersant's company owner and two-yacht owner, and ICIJ's Premium Yachts shareholder. No public source located here names Behike specifically, so the vessel is not used as the sole bridge."
+    },
+    {
+      "topic": "Current primary industry",
+      "detail": "California filings and a recent SEC-filed offering show consulting, investment and advisory roles, but do not disclose their scale or whether they dominate Kurochkin's current wealth. Finance & Investments is therefore medium confidence and does not erase the diversified historical platform."
+    },
+    {
+      "topic": "Current ownership of legacy companies",
+      "detail": "Recent sources describe some roles as former, while older reporting establishes founder ownership and leadership. The dossier does not claim that Kurochkin still owns A&T Trade, Zebra Telecom, Premium Yachts or Russian International Bank; Founder is retained as the durable relationship to the original wealth platform."
+    },
+    {
+      "topic": "Birth and patronymic details",
+      "detail": "No collision-safe source established Kurochkin's birth date, birth year, birthplace or patronymic. Results for Alexey Viktorovich and Alexey Valeryevich Kurochkin concern a bandy player and an electricity-sector executive, respectively, and were excluded."
+    },
+    {
+      "topic": "Forbes and social profiles",
+      "detail": "Forbes was checked first and no dedicated profile was found. Searches returned multiple same-name LinkedIn, Instagram and creative profiles without authoritative cross-links to A&T Trade or Premium Yachts, so no personal social profile is proposed."
+    },
+    {
+      "topic": "Valuation restraint",
+      "detail": "Sources publish varying claims for A&T capitalisation, Premium Yachts sales, real-estate assets and transaction values. Only Rostelecom's official Zebra consideration is retained in source notes, not in biography or individual wealth assertions."
+    },
+    {
+      "topic": "Tag minimum set",
+      "detail": "Music industry captures the original distribution and retail platform; Luxury goods captures the material yacht dealership. Banking, telecoms, property and consulting remain narrative because the available evidence does not justify additional current, specialist active tags."
+    },
+    {
+      "topic": "Repository and live-system guardrails",
+      "detail": "Only this dossier was created. No owner input, catalogue, taxonomy candidate, cohort status, compiled output or live record was changed."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier for Alexey Kurochkin. Ferretti, Kommersant and ICIJ establish the Premium Yachts president, owner and shareholder identity and its strong maritime fit. Detailed reporting traces his path from jazz keyboard player to A&T Trade founder, specialist distribution builder, Zebra Telecom chairman and luxury-yacht dealer; California and SEC-filed records support more recent consulting, investment and advisory activity. Wealth creation is Diversified, current primary industry is Finance & Investments, origin is Self-made — independent start and relationship is Founder. Forbes-first and priority-social checks were completed. The dossier fills his known-for title and biography, proposes Music industry and Luxury goods tags, and leaves unsupported birth and patronymic fields blank. The 51-word short and 133-word two-paragraph long biographies are independently structured. No live action was taken."
+  }
+}

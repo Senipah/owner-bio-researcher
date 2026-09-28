@@ -1,0 +1,316 @@
+{
+  "schema_version": 8,
+  "record_type": "unresolved_placeholder",
+  "owner": {
+    "person_id": 1104,
+    "display_name": "Lars Johansson",
+    "identity_confidence": {
+      "score": 10,
+      "band": "insufficient",
+      "reason": "The immutable record combines two yacht histories that independently resolve to different Swedish men. Lady Ellen was commissioned for shipowner Lars Georg Johansson, born in 1923 and deceased in 2001, while Swedish ship-registry records name Lars Niclas Johansson of Stockholm as Diablo Blanco's owner in 2012. The record's living status therefore cannot coexist with the Lady Ellen identity, and neither candidate can safely receive the combined record's biography."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    }
+  },
+  "research_status": "insufficient_evidence",
+  "biography_brief": null,
+  "editorial_assessment": null,
+  "editorial_note": {
+    "plain_text": "The saved Lars Johansson record is internally conflated. Lady Ellen's own history and Swedish maritime sources connect that vessel to Tjorn shipowner Lars Georg Johansson and his family shipping group; biographical sources establish that he died in 2001. By contrast, Sweden's official 2012 ship list records Diablo Blanco to Lars Niclas Johansson of Stockholm, and contemporaneous reporting identifies Niclas Johansson and Tone Oppenstam as its buyers. Because the two vessel relationships point to different people and conflict with the saved living status, no biography, personal details, social profiles or wealth classifications are proposed. The source relationships require human identity repair before enrichment.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The collision is supported by first-party vessel history, an official Swedish ship register, government and regional-history records, and independent contemporary reporting. The terminal unresolved decision prevents facts from either documented namesake being transferred to the other."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes-first searches for Lars Johansson, Lars Georg Johansson and Lars Niclas Johansson found no dedicated Forbes profile that could resolve the saved owner record."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No wealth-creation industry can be assigned to a record that combines two different people.",
+    "confidence": {
+      "score": 0,
+      "band": "insufficient",
+      "reason": "Shipping and shipbuilding evidence belongs to Lars Georg Johansson, but the saved living record also contains a yacht registered to Lars Niclas Johansson. Transferring the former's sector would misidentify the latter."
+    },
+    "source_ids": [
+      "S1",
+      "S4",
+      "S6",
+      "S7"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No current primary industry can be established for the unresolved combined record.",
+    "confidence": {
+      "score": 0,
+      "band": "insufficient",
+      "reason": "Lars Georg Johansson is deceased, while the evidence identifying Lars Niclas Johansson as Diablo Blanco's owner does not establish his current principal business or investable asset."
+    },
+    "source_ids": [
+      "S1",
+      "S5",
+      "S7",
+      "S8"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The record's wealth origin is unknown because no single person underlies its vessel history.",
+    "confidence": {
+      "score": 0,
+      "band": "insufficient",
+      "reason": "Entrepreneurial evidence exists for Lars Georg Johansson, but it cannot be attached to a record whose Diablo Blanco relationship belongs to Lars Niclas Johansson."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S7"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No relationship to a wealth-producing asset can be assigned until the two identities are separated.",
+    "confidence": {
+      "score": 0,
+      "band": "insufficient",
+      "reason": "Founder and operator evidence pertains to the deceased shipping magnate, whereas the younger yacht owner's business relationship is not established by the available identity-safe evidence."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "biography": null,
+  "long_biography": null,
+  "proposed_details": [],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1104",
+      "title": "Lars Johansson owner record",
+      "publisher": "Superyacht Network Agent",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Exact source-record name and person ID",
+        "Swedish nationality, Swedish residence and living status",
+        "Historical relationships to Lady Ellen and Diablo Blanco",
+        "Absence of company, occupation, birth date, biography and social-profile anchors"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/search/?q=Lars%20Johansson",
+      "title": "Forbes search: Lars Johansson",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Mandatory Forbes-first search",
+        "No dedicated Forbes profile attributable to either identity behind the combined owner record"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.ladyellen.se/om-lady-ellen/historik/",
+      "title": "Historik",
+      "publisher": "Lady Ellen",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Shipowner Lars Johansson commissioned the recreated Lady Ellen",
+        "Lady Ellen was built from the original Ellen's drawings at Kockums",
+        "The vessel's origin belongs to the Tjorn shipping-family history"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.larsobritta.se/",
+      "title": "Lars och Britta Johanssons stiftelse",
+      "publisher": "Lars och Britta Johanssons stiftelse",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Lars Johansson was born and lived on Tjorn",
+        "He began selling fuel while young and later established Wallhamn",
+        "The foundation was formed after his death and registered in 2002"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.riksgalden.se/press-och-publicerat/pressmeddelanden-och-nyheter/pressmeddelanden/2000/Riksgaldskontoret-stammer-skeppsredare-Vilgot-Johansson-Tjorn-pa-en-miljard-kronor/",
+      "title": "Riksgaldskontoret stammer skeppsredare Vilgot Johansson, Tjorn, pa en miljard kronor",
+      "publisher": "Riksgalden",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Brothers Lars and Vilgot Johansson operated a large shipping group",
+        "The group's companies entered bankruptcy in 1982",
+        "Lars Johansson settled his liability to the state in 1999"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.prismavg.se/exhibits/show/l--d--se-varv/f--r--ndrad-verksamhet-efter-1",
+      "title": "Forandrad verksamhet efter 1961",
+      "publisher": "Prisma Vastra Gotaland",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Lars and Vilgot Johansson acquired Lodose Varf in 1961",
+        "The brothers expanded the yard and built vessels for their own shipping lines and outside owners",
+        "Industrial history independently establishes the older Lars Johansson's shipping and shipbuilding role"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.shipsforsale.se/images/skeppslistan_2012.pdf",
+      "title": "Skeppslistan 2012",
+      "publisher": "Swedish Transport Agency ship register",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Diablo Blanco is listed under call sign SBHX",
+        "The registered owner is Johansson, Lars Niclas, Stockholm",
+        "The full registered name distinguishes Diablo Blanco's owner from Lars Georg Johansson"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.realtid.se/bors-finans/lyxyachten-pa-plats-hos-oppenstams/",
+      "title": "Lyxyachten pa plats hos Oppenstams",
+      "publisher": "Realtid",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "Diablo Blanco arrived in Stockholm in 2011",
+        "Tone Oppenstam and husband Niclas Johansson were identified as the buyers",
+        "Contemporaneous reporting corroborates the official-register identity"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://sv.wikipedia.org/wiki/Lars_Johansson_(redare)",
+      "title": "Lars Johansson (redare)",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "The shipping magnate's full name was Lars Georg Johansson",
+        "He was born on 15 May 1923 and died on 31 August 2001",
+        "Lady Ellen was built for him and his son Lars-Erik"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The immutable record's Lady Ellen relationship belongs to Lars Georg Johansson, the Tjorn shipowner whose documented 2001 death conflicts with the record's living status.",
+    "The immutable record's Diablo Blanco relationship belongs to Lars Niclas Johansson of Stockholm according to the official Swedish ship list and contemporaneous reporting.",
+    "The shared first and last name is insufficient to merge the deceased shipowner and the younger Stockholm yacht owner into one person; the vessel relationships require human separation or reassignment.",
+    "No biography, known-for title, middle name, birthplace, birth date, death details or personal social profile is proposed because each would require choosing one of the conflicting identities.",
+    "No exact personal LinkedIn, Instagram, Facebook, X, YouTube, TikTok or personal website can safely be assigned to the combined record.",
+    "All four wealth classifications remain Unknown. Shipping and shipbuilding evidence cannot be transferred from Lars Georg Johansson to Lars Niclas Johansson or to an unresolved combined record."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal unresolved-placeholder decision. Revisit only after the Lady Ellen and Diablo Blanco relationships are separated between the documented Lars Georg Johansson and Lars Niclas Johansson identities."
+  }
+}

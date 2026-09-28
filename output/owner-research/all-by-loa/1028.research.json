@@ -1,0 +1,224 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1028,
+    "display_name": "Sir Michael Hill",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The saved New Zealand record identifies Sir Michael Hill, gives the exact 23 December 1938 birth date and links him to Akiko. Independent maritime reporting identifies Sir Michael and Lady Christine Hill as the owners of VvS1, now Akiko, while the saved biography and public company records identify the same man as Michael Hill Jeweller's founder. The exact name, nationality, birth date, company, spouse and distinctive former vessel create a conclusive identity bridge."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth"],
+    "optional_missing_details": ["name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Sir Richard Michael Hill was a New Zealand jeweller, retailer and arts patron who co-founded Michael Hill with his wife, Christine.",
+    "defining_work": "He developed a single Whangārei jewellery shop into an international retail brand through focused merchandising, accessible stores and memorable advertising.",
+    "formative_context": "After abandoning plans to become a concert violinist, Hill spent more than two decades learning sales and store management in his uncle's jewellery business.",
+    "decisive_moment": "The destruction of his family home in 1977 prompted Hill to reassess his career; after his uncle refused to sell, he opened his own shop in 1979.",
+    "enduring_dimensions": ["Creation and international expansion of the Michael Hill jewellery brand", "Distinctive customer-focused retailing and advertising", "Long-term support for classical music through an international violin competition"],
+    "character_detail": "Hill's unrealised ambition to become a concert violinist later shaped an arts legacy centred on giving emerging musicians a global platform.",
+    "opening_options": [
+      {"mode": "decisive_event", "angle": "Open with the 1977 house fire that pushed Hill from family employee toward independent entrepreneurship."},
+      {"mode": "defining_achievement", "angle": "Lead with the transformation of one Whangārei shop into an international jewellery retailer."},
+      {"mode": "formative_episode", "angle": "Begin with Hill's early attempt to become a concert violinist and the later connection to his arts patronage."}
+    ],
+    "excluded_transient_context": ["Private-vessel ownership, design, awards and transaction history", "Current store counts, financial results, share prices and wealth estimates", "Private health details surrounding his death", "Source narration and confidence language"],
+    "source_ids": ["S2", "S3", "S5", "S6", "S7", "S8"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "decision_then_consequence",
+    "calibration_archetypes": ["founder_operator"],
+    "reviewed_phrase_exceptions": [],
+    "notes": "The short biography balances retail achievement with the enduring arts contribution. The independent long biography uses the house fire as a causal turning point, then develops the retail model, succession and violin competition. Both exclude private assets and volatile business metrics."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Mandatory exact-name, company and site-restricted Forbes-first searches found no dedicated personal Forbes profile for Sir Michael Hill. Incidental Forbes references to Michael Hill Jeweller do not constitute a personal profile, so no Forbes social is proposed."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "fashion_retail",
+    "label": "Fashion & Retail",
+    "summary": "Hill created his fortune by founding and internationally expanding the Michael Hill fine-jewellery retail chain.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The company's official history, public-company profile and independent business biography all identify jewellery retail as Hill's defining enterprise and document its expansion from a single shop into an international chain."
+    },
+    "source_ids": ["S2", "S5", "S6"]
+  },
+  "primary_industry": {
+    "classification": "fashion_retail",
+    "label": "Fashion & Retail",
+    "summary": "Jewellery retail remained Hill's principal commercial sector through his final role as Michael Hill International founder and non-executive director.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The 2025 annual report identifies Hill as the group's founder and a non-executive director until his death. His arts and golf activities were significant but did not displace jewellery retail as his principal industry."
+    },
+    "source_ids": ["S3", "S4"]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "After his uncle declined to sell the family jewellery business, Hill and his wife established their own store and built an independent international retailer.",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Detailed biographical accounts describe Hill's long employment in his uncle's shop, the refused purchase and the separate 1979 launch with external backing. The documented wealth platform was therefore built independently rather than inherited."
+    },
+    "source_ids": ["S5", "S6", "S8"]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Hill co-founded the namesake retailer with his wife and shaped its store concept, marketing and international growth.",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Michael Hill International's official company profile and annual report consistently identify Sir Michael and Lady Christine Hill as the founders of the business."
+    },
+    "source_ids": ["S2", "S3"]
+  },
+  "biography": {
+    "plain_text": "Sir Michael Hill was a New Zealand jeweller who turned a single Whangārei shop, opened with his wife Christine in 1979, into an international retail brand. Known for theatrical advertising and accessible store design, he also founded an international violin competition and supported the arts, achievements recognised with a knighthood in 2011.",
+    "html": "<p>Sir Michael Hill was a New Zealand jeweller who turned a single Whangārei shop, opened with his wife Christine in 1979, into an international retail brand. Known for theatrical advertising and accessible store design, he also founded an international violin competition and supported the arts, achievements recognised with a knighthood in 2011.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Official company, competition and honours-related sources establish the founding, retail model, international development, violin competition and knighthood."
+    },
+    "source_ids": ["S2", "S5", "S7", "S11"]
+  },
+  "long_biography": {
+    "plain_text": "Michael Hill spent more than two decades in his uncle's Whangārei jewellery business, moving from watchmaking to sales and store management. After his newly built home burned down in 1977, he tried to buy the family shop. His uncle refused, so Hill and his wife, Christine, opened their own jewellery store in 1979.\n\nThe business distinguished itself through inviting layouts, focused product ranges and memorable advertising, then expanded across New Zealand, Australia and Canada. Hill later handed the chairmanship to his daughter Emma while remaining connected to the company. His abandoned ambition to become a concert violinist resurfaced in philanthropy: he later founded an international competition for emerging violinists. He was knighted for services to business and the arts.",
+    "html": "<p>Michael Hill spent more than two decades in his uncle's Whangārei jewellery business, moving from watchmaking to sales and store management. After his newly built home burned down in 1977, he tried to buy the family shop. His uncle refused, so Hill and his wife, Christine, opened their own jewellery store in 1979.</p>\r\n<p>The business distinguished itself through inviting layouts, focused product ranges and memorable advertising, then expanded across New Zealand, Australia and Canada. Hill later handed the chairmanship to his daughter Emma while remaining connected to the company. His abandoned ambition to become a concert violinist resurfaced in philanthropy: he later founded an international competition for emerging violinists. He was knighted for services to business and the arts.</p>\r\n",
+    "word_count": 119,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "The company, violin competition, business hall of fame and detailed independent profile converge on Hill's apprenticeship, the house-fire turning point, separate business launch, retail expansion, succession and arts patronage."
+    },
+    "source_ids": ["S2", "S5", "S6", "S7", "S8"]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Founder of Michael Hill Jeweller",
+      "action": "fill_missing",
+      "confidence": {"score": 100, "band": "very_high", "reason": "The company's official profile and 2025 annual report identify Hill as founder of the namesake jewellery retailer."},
+      "source_ids": ["S2", "S3"]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Whangārei",
+      "action": "fill_missing",
+      "confidence": {"score": 99, "band": "very_high", "reason": "The detailed obituary from The Strad and regional reporting give Whangārei as Hill's birthplace and match his exact birth date and business history."},
+      "source_ids": ["S7", "S9"]
+    },
+    {
+      "field": "mortality_status",
+      "existing_value": "Alive",
+      "value": "Dead",
+      "action": "correct_existing",
+      "confidence": {"score": 100, "band": "very_high", "reason": "Michael Hill International's annual report, the NZX announcement and independent obituary reporting state that Sir Michael Hill died on 29 July 2025."},
+      "source_ids": ["S3", "S4", "S7"]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Michael_Hill_(jeweller)",
+      "verification": "Exact-person English biography matching the full name Richard Michael Hill, 23 December 1938 birth date, 29 July 2025 death date, Whangārei origin and Michael Hill Jeweller founder identity; the authoritative input biography already links this article.",
+      "confidence": {"score": 100, "band": "very_high", "reason": "The combined full name, dates, birthplace, company, honours and arts activity match the resolved owner without ambiguity."},
+      "source_ids": ["S0", "S10"]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.michaelhill.co.nz/",
+      "verification": "Current official customer website for the international jewellery retailer founded by Sir Michael and Lady Christine Hill; the site's brand history directly recounts their 1979 foundation story.",
+      "confidence": {"score": 100, "band": "very_high", "reason": "The official brand and investor sites directly connect the company domain to the resolved founder."},
+      "source_ids": ["S2", "S12"]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0229",
+      "name": "Jewellery & watches",
+      "summary": "Hill founded and internationally expanded a namesake fine-jewellery retailer after learning watchmaking, sales and store management in the family trade.",
+      "relationship_type": "founder-operator",
+      "temporal_scope": "former_but_defining",
+      "confidence": {"score": 100, "band": "very_high", "reason": "Jewellery retail was the defining enterprise, source of wealth and public identity across Hill's career."},
+      "source_ids": ["S2", "S3", "S5", "S6"],
+      "taxonomy_value": "Groups Hill with owners whose material wealth and defining operating mandate came from controlling a substantial jewellery or watch business."
+    },
+    {
+      "tag_id": "tag_0230",
+      "name": "Luxury goods",
+      "summary": "Hill built a branded fine-jewellery business whose product, store and marketing model centred on making luxury jewellery broadly accessible.",
+      "relationship_type": "brand founder",
+      "temporal_scope": "former_but_defining",
+      "confidence": {"score": 96, "band": "very_high", "reason": "The official company profile defines the brand through attainable fine jewellery and modern luxury, while documenting Hill's foundational role in its merchandising and marketing formula."},
+      "source_ids": ["S2", "S12"],
+      "taxonomy_value": "Captures Hill's long-term creation of a consumer luxury brand beyond the narrower product-category relationship recorded by Jewellery & watches."
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1028", "title": "Sir Michael Hill owner record, person ID 1028", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Immutable person ID, Sir Michael Hill display name, New Zealand nationality and residence, male gender and 23 December 1938 birth date", "Historical Akiko and 2B relationships for identity context only", "Existing biography linking Richard Michael Hill and Michael Hill Jeweller, outdated Alive status, and blank birthplace, known-for title and socials"]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Sir%20Michael%20Hill", "title": "Forbes search for Sir Michael Hill", "publisher": "Forbes", "tier": 3, "accessed_at": "2026-09-28", "supports": ["Mandatory Forbes-first exact-name, company and profile searches", "No dedicated Forbes personal profile found"]},
+    {"id": "S2", "url": "https://investor.michaelhill.com/about-us/corporate-profile", "title": "Company Profile", "publisher": "Michael Hill International", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Sir Michael and Lady Christine Hill's 1979 opening of the first Whangārei store", "Store design, focused fine-jewellery range and high-impact advertising as the retail formula", "International fine-jewellery business across Australia, New Zealand and Canada"]},
+    {"id": "S3", "url": "https://investor.michaelhill.com/static-files/e55216cf-e451-487f-9912-999ea9338286", "title": "Michael Hill International Annual Report 2025", "publisher": "Michael Hill International", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Sir Michael Hill as company founder and non-executive director", "Death on 29 July 2025", "Foundation and growth of the brand with Lady Christine Hill"]},
+    {"id": "S4", "url": "https://www.nzx.com/announcements/455838", "title": "Passing Of Our Founder Sir Michael Hill", "publisher": "NZX", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Public-company announcement of the founder's death on 29 July 2025", "Correction of the saved Alive status"]},
+    {"id": "S5", "url": "https://michaelhillviolincompetition.co.nz/about-us/the-michael-hill-story/", "title": "The Michael Hill Story", "publisher": "Michael Hill International Violin Competition", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Early violin ambition and subsequent work in his uncle's Whangārei jewellery business", "House-fire turning point, refused purchase and independent store opening", "Jewellery expansion, violin competition, arts support and 2011 knighthood"]},
+    {"id": "S6", "url": "https://www.businesshalloffame.co.nz/past-laureates/zbgbsl4p4mzyaxa-2a4e6-e9gbt-zdj4p-ad2tf-a5fgn-ce4n4-82mem-mrzdw-mnygp-n2lwy-enfla-8htkp-bprbe-tfhmz-k9mxk-4ey7k-jnzle-6eze3-wrmt6-t6ym2-gc3zx", "title": "Richard Michael Hill - CNZM", "publisher": "New Zealand Business Hall of Fame", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Full name Richard Michael Hill", "1979 business start after the family-home fire and uncle's refusal to sell", "Rapid expansion, public listing, international growth and violin and golf patronage"]},
+    {"id": "S7", "url": "https://www.thestrad.com/news/obituary-violin-competition-founder-michael-hill-1938-2025/19994.article", "title": "Obituary: violin competition founder Michael Hill (1938-2025)", "publisher": "The Strad", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Birth in Whangārei on 23 December 1938", "Death at home in Arrowtown on 29 July 2025", "Jewellery career, international growth, succession to daughter Emma and 2001 violin-competition foundation"]},
+    {"id": "S8", "url": "https://northandsouth.co.nz/2023/04/22/michael-hill-violin-competition/", "title": "Michael Hill", "publisher": "North & South", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Detailed early life, violin ambition and family jewellery apprenticeship", "1977 house fire as the catalyst for seeking ownership", "Uncle's refusal, independent 1979 store launch and self-made business path", "Long-term violin philanthropy"]},
+    {"id": "S9", "url": "https://www.nzherald.co.nz/northern-advocate/news/whangareis-sir-michael-hill-founder-of-global-jewellery-brand-dies-at-86/AKY2Z26QXVCGBH2J3OODHUP344/", "title": "Whangārei's Sir Michael Hill, founder of global jewellery brand, dies at 86", "publisher": "Northern Advocate / New Zealand Herald", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Birth in Whangārei in 1938", "Death at home in Arrowtown on 29 July 2025 at age 86", "Exact jewellery-founder identity"]},
+    {"id": "S10", "url": "https://en.wikipedia.org/wiki/Michael_Hill_(jeweller)", "title": "Michael Hill (jeweller)", "publisher": "Wikipedia", "tier": 3, "accessed_at": "2026-09-28", "supports": ["Identity-safe verification of the proposed Wikipedia social URL", "Full name, exact life dates, Whangārei birthplace, company founder identity and arts activity", "No use as sole support for wealth classifications or mortality correction"]},
+    {"id": "S11", "url": "https://natlib.govt.nz/records/22565571", "title": "Hill, Richard Michael (Sir), 1938-", "publisher": "National Library of New Zealand", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Authoritative name form Richard Michael Hill", "Jeweller and successful retailer identity", "Knight Companion honour for services to business and the arts"]},
+    {"id": "S12", "url": "https://www.michaelhill.co.nz/discover/brand-history", "title": "The Michael Hill Story", "publisher": "Michael Hill", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Official company website and brand history", "1979 foundation in Whangārei by Sir Michael and Lady Christine Hill", "Retail concept, Australian expansion and current international brand continuity"]},
+    {"id": "S13", "url": "https://oceanmagazine.com.au/vale-michael-hill/", "title": "Sir Michael Hill: A Tribute to His Legacy", "publisher": "Ocean Magazine", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Sir Michael and Lady Christine Hill aboard their vessel VvS1", "VvS1 as the former name of Akiko", "Distinctive vessel-and-person bridge only; no economic or biography claim relies on the private asset"]}
+  ],
+  "uncertainties": [
+    {"topic": "Preferred and legal names", "detail": "Authoritative records give Richard Michael Hill, while the saved record and public identity use Michael Hill. Because the saved first_name field is the preferred Michael and middle_names is blank, adding Richard as a middle name would create the incorrect sequence Michael Richard Hill. The dossier therefore leaves middle_names untouched and records the legal name in research context."},
+    {"topic": "Mortality and dependent death fields", "detail": "The immutable export says Alive, but company, exchange and independent sources establish death on 29 July 2025. The dossier proposes correcting mortality_status to Dead. Under the validator's input-state rules, death-day, month and year remain categorised as not applicable while the source says Alive, so the exact date is retained in the source ledger rather than proposed as separate field writes."},
+    {"topic": "Wealth origin", "detail": "Hill learned the trade in his uncle's business but did not inherit that company. After the uncle refused to sell, Hill and his wife opened a separate store with outside backing and built the namesake chain, supporting Self-made rather than family transfer."},
+    {"topic": "Arts and sport", "detail": "The violin competition and knighthood are enduring dimensions of Hill's public legacy. Golf patronage was also substantial, but neither activity displaced jewellery retail as the creation or principal industry, and neither Musician nor Golf is assigned as an owner tag."},
+    {"topic": "Socials and Forbes", "detail": "No dedicated Forbes profile or collision-safe personal LinkedIn, Instagram, Facebook, X, YouTube, TikTok or Personal Website was found. The exact Wikipedia biography and official company website are proposed; organisational social pages are not presented as Hill's personal accounts."},
+    {"topic": "Existing biography", "detail": "The saved biography is nonblank and is preserved without an overwrite proposal. The researched short and long biographies are supplied for editorial review, while the stale Alive status is handled as a separate correction."},
+    {"topic": "Private-asset separation", "detail": "Maritime reporting connects Akiko's former VvS1 identity to Sir Michael and Lady Christine Hill and is used only for owner identification. Private-vessel facts do not appear in either biography, any economic classification or the tag rationales."},
+    {"topic": "Repository and live-system guardrails", "detail": "Only the requested person_id 1028 dossier was created. The owner input, cohort, catalogue, other dossiers, compiled artifacts and live website were not changed; nothing was staged, committed or pushed."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier. Akiko's former VvS1 identity, exact birth date and public-company record conclusively identify person 1028 as Sir Richard Michael Hill, founder of Michael Hill Jeweller. Fashion & Retail, Self-made and Founder are the evidence-led classifications. The outdated Alive status is corrected to Dead, the legal-name ordering issue is documented without a misleading middle-name proposal, and the existing biography is preserved."
+  }
+}

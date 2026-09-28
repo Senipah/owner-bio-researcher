@@ -354,19 +354,6 @@
       ]
     },
     {
-      "field": "secondary_nationality",
-      "value": "Dominican",
-      "action": "fill_missing",
-      "confidence": {
-        "score": 100,
-        "band": "very_high",
-        "reason": "A Dominican Republic government decree grants ordinary Dominican naturalisation to the exact full name Sylvain Philippe Vieujot and identifies his prior French nationality."
-      },
-      "source_ids": [
-        "S9"
-      ]
-    },
-    {
       "field": "known_for_title",
       "value": "Co-founder and Group Chairman of Equitativa",
       "action": "correct_existing",
@@ -427,7 +414,21 @@
       "taxonomy_value": "The owner created material wealth through, controlled substantial operations in, or had a defining long-term operating mandate in Real estate investment management."
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "field": "secondary_nationality",
+      "value": "Dominican",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "A Dominican Republic government decree grants ordinary Dominican naturalisation to the exact full name Sylvain Philippe Vieujot and identifies his prior French nationality."
+      },
+      "source_ids": [
+        "S9"
+      ],
+      "review_note": "The current owner-form lookup has no valid secondary_nationality option for 'Dominican'; this supported value is retained for human review rather than automatic compilation."
+    }
+  ],
   "sources": [
     {
       "id": "S1",

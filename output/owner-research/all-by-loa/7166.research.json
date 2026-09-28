@@ -252,20 +252,6 @@
       "existing_value": "American"
     },
     {
-      "field": "main_residence_country",
-      "action": "fill_missing",
-      "value": "Antigua and Barbuda",
-      "confidence": {
-        "score": 96,
-        "band": "very_high",
-        "reason": "The current official register and direct account independently establish the main base."
-      },
-      "source_ids": [
-        "S3",
-        "S5"
-      ]
-    },
-    {
       "field": "place_of_birth",
       "action": "fill_missing",
       "value": "London",
@@ -405,6 +391,20 @@
         "S5",
         "S3"
       ]
+    },
+    {
+      "field": "main_residence_country",
+      "value": "Antigua and Barbuda",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "The current official register and direct account independently establish the main base."
+      },
+      "source_ids": [
+        "S3",
+        "S5"
+      ],
+      "review_note": "The current owner-form lookup has no valid main_residence_country option for 'Antigua and Barbuda'; this supported value is retained for human review rather than automatic compilation."
     }
   ],
   "review": {

@@ -356,23 +356,6 @@
       ]
     },
     {
-      "field": "death_month",
-      "existing_value": "July",
-      "value": "",
-      "action": "correct_existing",
-      "confidence": {
-        "score": 99,
-        "band": "very_high",
-        "reason": "Current 2026 corporate records and reporting show Chausson in active leadership roles. July is documented as his birth month, so it is misplaced in the death field."
-      },
-      "source_ids": [
-        "S8",
-        "S9",
-        "S10",
-        "S11"
-      ]
-    },
-    {
       "field": "death_year",
       "existing_value": "1961",
       "value": "",
@@ -448,7 +431,25 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "field": "death_month",
+      "value": "",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Current 2026 corporate records and reporting show Chausson in active leadership roles. July is documented as his birth month, so it is misplaced in the death field."
+      },
+      "source_ids": [
+        "S8",
+        "S9",
+        "S10",
+        "S11"
+      ],
+      "review_note": "The current owner-form lookup has no valid death_month option for ''; this supported value is retained for human review rather than automatic compilation.",
+      "existing_value": "July"
+    }
+  ],
   "sources": [
     {
       "id": "S1",

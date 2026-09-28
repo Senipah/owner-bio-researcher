@@ -1,0 +1,138 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1199,
+    "display_name": "Andrei Komarov",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The saved Andrei Komarov identity is Russian and carries the exact 11 October 1966 birth date used by Forbes and major Russian business reporting for Andrei Ilyich Komarov, former controlling owner of ChelPipe. Name transliteration, date, nationality, industrial career and portrait context all align, with no credible competing match."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "biography_present": false,
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Russian billionaire investor and industrialist Andrei Ilyich Komarov, former controlling owner of ChelPipe Group.",
+    "defining_work": "Built a fortune by accumulating control of Chelyabinsk Pipe Rolling Plant and developing ChelPipe into a major steel-pipe producer before selling the controlling stake.",
+    "formative_context": "Born in the closed industrial city then called Chelyabinsk-40, he studied chemical engineering, served in the Soviet Army and worked at Moscow's Satiricon theatre before entering metals trading.",
+    "decisive_moment": "A programme of plant modernisation produced highly automated facilities and the 'white metallurgy' operating philosophy, combining cleaner production, workplace design, safety and skilled labour.",
+    "enduring_dimensions": ["Steel-pipe industrial ownership", "Post-sale investment activity", "Vocational education for modern manufacturing"],
+    "character_detail": "A childhood essay about a celebrated Ural pipe-plant director anticipated his later ambition to build a metallurgical works unlike others in Russia.",
+    "opening_options": [
+      {"mode": "defining_achievement", "angle": "Lead with the white-metallurgy model that reshaped ChelPipe's factories and workforce."},
+      {"mode": "decisive_event", "angle": "Use the sale of the controlling ChelPipe stake to frame the shift from industrial owner to investor."},
+      {"mode": "formative_episode", "angle": "Open with the school essay about a pipe-plant director whose work fascinated him as a child."}
+    ],
+    "excluded_transient_context": ["Historic yacht ownership and specifications", "Current net-worth figure and live Forbes ranking", "Speculative acquisitions that were not confirmed as completed", "Sanctions, allegations and litigation unrelated to the requested durable business biography", "Source publishers, confidence language and classification deliberation"],
+    "source_ids": ["S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "defining_achievement",
+    "narrative_shape": "achievement_then_backstory",
+    "calibration_archetypes": ["acquirer_consolidator", "founder_operator"],
+    "reviewed_phrase_exceptions": [],
+    "notes": "The shared anchor is Komarov's ownership-led development of ChelPipe. The short identity card uniquely covers the sale, Rimera and subsequent investment focus; the long profile instead develops white metallurgy, factory culture, vocational training and the unusual Satiricon prelude. Reducing the long version to the short would lose the operating philosophy and workforce dimension."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/andrei-komarov/",
+    "confidence": {"score": 100, "band": "very_high", "reason": "The dedicated Forbes profile matches Komarov's exact age, Russian citizenship and residence, chemical-engineering education, ChelPipe ownership and sale, early trading career and current investment wealth source."}
+  },
+  "wealth_creation_industry": {
+    "classification": "metals_mining",
+    "label": "Metals & Mining",
+    "summary": "Komarov created his principal fortune by acquiring control of ChelPipe and developing the group as a major manufacturer of steel pipes and related pipeline products.",
+    "confidence": {"score": 99, "band": "very_high", "reason": "Forbes directly calls ChelPipe the steel-pipe maker that made him a billionaire. Company accounts and major business reporting document his controlling stake, pipe-manufacturing assets and long modernisation programme, making Metals & Mining the controlled sector for the steel-based fortune."},
+    "source_ids": ["S1", "S2", "S4", "S6"]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "After selling the controlling ChelPipe stake, Komarov's current wealth is identified by Forbes as investment-based, with retained industrial holdings such as Rimera forming part of that post-sale portfolio.",
+    "confidence": {"score": 94, "band": "high", "reason": "Forbes's current profile explicitly gives investments as the source of wealth and documents the completed ChelPipe exit. Interfax establishes that Komarov separately acquired the Rimera oilfield-services division before the sale; a complete current portfolio breakdown is not public."},
+    "source_ids": ["S1", "S5", "S6", "S8"]
+  },
+  "wealth_origin": {
+    "classification": "self_made_independent",
+    "label": "Self-made — independent start",
+    "summary": "Komarov moved from salaried theatre and engineering work into metals trading, said he earned the money used for his first ChelPipe stake, and built the controlling industrial position rather than receiving the core asset through family transfer.",
+    "confidence": {"score": 91, "band": "high", "reason": "Forbes directly classifies the fortune as self-made and traces the progression from theatre management through vehicle, metal-product and steel-pipe trading into the plant acquisition. In a detailed interview, Komarov said he began without money and earned the funds for his first stake; no family asset or launch platform forms part of the positively documented mechanism."},
+    "source_ids": ["S1", "S2", "S3"]
+  },
+  "wealth_relationship": {
+    "classification": "investor",
+    "label": "Investor",
+    "summary": "Following the sale of ChelPipe, Komarov principally relates to his wealth through investment capital, including retained ownership of the Rimera oilfield-services platform.",
+    "confidence": {"score": 94, "band": "high", "reason": "The current Forbes profile explicitly identifies investments as his wealth source after the controlling industrial exit. Interfax documents his deliberate carve-out and acquisition of Rimera, while contemporaneous Bloomberg reporting records his pursuit of new mining investments."},
+    "source_ids": ["S1", "S5", "S8"]
+  },
+  "biography": {
+    "plain_text": "Andrei Ilyich Komarov is a Russian billionaire investor who built his fortune by acquiring and modernising Chelyabinsk Pipe Rolling Plant, or ChelPipe. After selling his controlling stake in 2021, he retained the Rimera oilfield-services business and redirected capital towards investments. His earlier career moved from theatre administration into metals trading and industrial ownership.",
+    "html": "<p>Andrei Ilyich Komarov is a Russian billionaire investor who built his fortune by acquiring and modernising Chelyabinsk Pipe Rolling Plant, or ChelPipe. After selling his controlling stake in 2021, he retained the Rimera oilfield-services business and redirected capital towards investments. His earlier career moved from theatre administration into metals trading and industrial ownership.</p>\r\n",
+    "word_count": 53,
+    "confidence": {"score": 94, "band": "high", "reason": "Forbes, Interfax, company transaction material and established Russian business reporting support his identity, billionaire status, acquisition-led ChelPipe fortune, completed sale, retained Rimera ownership and early career."},
+    "source_ids": ["S1", "S2", "S3", "S5", "S6"]
+  },
+  "long_biography": {
+    "plain_text": "The 'white metallurgy' model became Andrei Komarov's signature at ChelPipe: cleaner, highly automated plants designed to change both production and workplace culture. He paired large-scale modernisation with strict safety standards, digital systems and carefully organised industrial spaces, presenting heavy manufacturing as skilled, precise work.\n\nThat approach extended into workforce training. New equipment required operators able to use expensive, specialised machinery, so the group developed a vocational programme with regional education partners and built practical training around production needs. Komarov's industrial outlook had an unlikely prelude: before entering metals trading, the engineering graduate worked as an administrator at Moscow's Satiricon theatre.",
+    "html": "<p>The 'white metallurgy' model became Andrei Komarov's signature at ChelPipe: cleaner, highly automated plants designed to change both production and workplace culture. He paired large-scale modernisation with strict safety standards, digital systems and carefully organised industrial spaces, presenting heavy manufacturing as skilled, precise work.</p>\r\n<p>That approach extended into workforce training. New equipment required operators able to use expensive, specialised machinery, so the group developed a vocational programme with regional education partners and built practical training around production needs. Komarov's industrial outlook had an unlikely prelude: before entering metals trading, the engineering graduate worked as an administrator at Moscow's Satiricon theatre.</p>\r\n",
+    "word_count": 100,
+    "confidence": {"score": 91, "band": "high", "reason": "Komarov's detailed Vedomosti interview directly explains the white-metallurgy workplace philosophy, safety practices, equipment demands and education partnership. Academic analysis corroborates the dual-training programme, while Forbes and Kommersant confirm his engineering education and Satiricon work."},
+    "source_ids": ["S1", "S2", "S3", "S7"]
+  },
+  "proposed_details": [
+    {"field": "middle_names", "value": "Ilyich", "action": "fill_missing", "confidence": {"score": 99, "band": "very_high", "reason": "Kommersant gives the full Russian name Andrei Ilyich Komarov and matches the exact saved date, birthplace and ChelPipe career; the variant Andrey is a transliteration of the same first name."}, "source_ids": ["S0", "S3"]},
+    {"field": "known_for_title", "value": "Former controlling owner of ChelPipe Group", "action": "fill_missing", "confidence": {"score": 100, "band": "very_high", "reason": "Forbes, company accounts, Interfax and the buyer's transaction announcement directly establish his former controlling ownership of the steel-pipe group."}, "source_ids": ["S1", "S4", "S5", "S6"]},
+    {"field": "place_of_birth", "value": "Ozyorsk, Chelyabinsk Oblast", "action": "fill_missing", "confidence": {"score": 98, "band": "very_high", "reason": "Kommersant identifies Ozyorsk in Chelyabinsk Oblast as his birthplace on the exact saved birth date, corroborated by established biographical references using the city's earlier name Chelyabinsk-40."}, "source_ids": ["S0", "S3"]},
+    {"field": "biography", "value": "<p>Andrei Ilyich Komarov is a Russian billionaire investor who built his fortune by acquiring and modernising Chelyabinsk Pipe Rolling Plant, or ChelPipe. After selling his controlling stake in 2021, he retained the Rimera oilfield-services business and redirected capital towards investments. His earlier career moved from theatre administration into metals trading and industrial ownership.</p>\r\n", "action": "fill_missing", "confidence": {"score": 94, "band": "high", "reason": "The blank biography can be filled with a durable summary supported by Forbes, transaction reporting, company accounts and detailed business profiles."}, "source_ids": ["S1", "S2", "S3", "S5", "S6"]}
+  ],
+  "proposed_socials": [
+    {"type_id": "11", "type": "Forbes", "url": "https://www.forbes.com/profile/andrei-komarov/", "verification": "The dedicated Forbes profile matches the saved exact birth date, Russian identity, Moscow residence, chemical-engineering education and ChelPipe ownership history; type ID 11 is copied from the immutable input lookup.", "confidence": {"score": 100, "band": "very_high", "reason": "This is Forbes's exact personal profile for Andrei Komarov and family, with multiple matching identity and career facts."}, "source_ids": ["S1"]}
+  ],
+  "proposed_tags": [
+    {"tag_id": "tag_0181", "name": "Steel", "summary": "Komarov built his fortune by controlling and modernising ChelPipe, one of Russia's leading steel-pipe manufacturing groups.", "relationship_type": "former_controlling_owner_operator", "temporal_scope": "former_but_defining", "taxonomy_value": "Groups him with owners whose defining wealth creation came from sustained control of steel production, rather than a passive metals holding or isolated trade.", "confidence": {"score": 99, "band": "very_high", "reason": "Forbes, ChelPipe accounts and major business reporting directly establish steel-pipe manufacturing as the business that made him a billionaire and document his controlling operating role."}, "source_ids": ["S1", "S2", "S4"]}
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1199", "title": "Andrei Komarov saved owner record, person ID 1199", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Records the Andrei Komarov name, Russian nationality and residence, Russian birth country, 11 October 1966 birth date and Alive mortality status.", "Records a historical vessel relationship used only as identity context and excluded from both biographies."]},
+    {"id": "S1", "url": "https://www.forbes.com/profile/andrei-komarov/", "title": "Andrei Komarov & family", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Provides the exact dedicated Forbes profile matching his Russian identity, age, Moscow residence and chemical-engineering education.", "Identifies him as a self-made billionaire whose fortune now comes from investments, documents the ChelPipe stake sale, and traces his early theatre, vehicle, metals and steel-pipe work."]},
+    {"id": "S2", "url": "https://www.vedomosti.ru/newspaper/articles/2013/05/16/hotelos_postroit_zavod_kakogo_net_v_mire_andrej_komarov", "title": "Andrei Komarov: I wanted to build a plant unlike any in the world", "publisher": "Vedomosti", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Profiles Komarov as ChelPipe's principal owner and says building the steel-pipe group made him a billionaire.", "Records his own account of earning the money for his first stake and gives detailed explanations of white metallurgy, modern factory organisation, safety, worker skills and the vocational training centre."]},
+    {"id": "S3", "url": "https://www.kommersant.ru/doc/2428731", "title": "Komarov, Andrei Ilyich", "publisher": "Kommersant", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Gives his full name, 11 October 1966 birth in Ozyorsk, Chelyabinsk Oblast, and graduation from the Moscow Institute of Chemical Engineering.", "Traces his Satiricon, engineering, metal-trading and ChelPipe roles and records his controlling stake in the group."]},
+    {"id": "S4", "url": "https://rustocks.com/put.phtml/CLTZ_4Q2016_IAS_consolidated_EN.pdf", "title": "ChelPipe Group consolidated financial statements 2016", "publisher": "ChelPipe Group", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Identifies Komarov as the ultimate controlling party of ChelPipe Group.", "Describes the group as one of Russia's largest pipe producers with substantial welded, large-diameter, oilfield and seamless-pipe operations."]},
+    {"id": "S5", "url": "https://interfax.com/newsroom/top-stories/71283/", "title": "ChelPipe Group selling oil services division Rimera to controlling shareholder", "publisher": "Interfax", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Documents Komarov's separate acquisition and near-total ownership of the Rimera oilfield-services division immediately before the ChelPipe sale.", "Identifies his controlling ChelPipe interest and describes Rimera's equipment-manufacturing and energy-services businesses."]},
+    {"id": "S6", "url": "https://www.marketscreener.com/quote/stock/PAO-TMK-13491397/news/PAO-TMK-PJSC-TMK-announces-completion-of-transaction-for-acquisition-of-86-54-of-shares-in-PJSC-32871640/", "title": "TMK announces completion of acquisition of 86.54% of ChelPipe", "publisher": "TMK; distributed by Public via MarketScreener", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Records completion of TMK's acquisition of Komarov's controlling ChelPipe stake in March 2021.", "Defines the sold perimeter as production, sales, service, scrap-processing and pipeline assets and confirms that Rimera was excluded."]},
+    {"id": "S7", "url": "https://vo.hse.ru/article/download/15695/14890/", "title": "Dual Education in Russia: From the German Concept to a Mass Practice", "publisher": "National Research University Higher School of Economics", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Analyses ChelPipe's Future of White Metallurgy programme as a joint dual-education project with the regional government and Pervouralsk Metallurgical College.", "Documents practical training, specialised equipment and the programme's focus on metallurgy and mechanical-engineering skills."]},
+    {"id": "S8", "url": "https://www.miningweekly.com/article/russian-tycoon-komarov-eyes-precious-metals-after-pipes-sale-2021-04-08", "title": "Russian tycoon Komarov eyes precious metals after pipes sale", "publisher": "Bloomberg via Mining Weekly", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Identifies ChelPipe as the pipe maker that made Komarov a billionaire and records the completed controlling-stake sale.", "Documents his post-sale consideration of gold and platinum-group-metals investments, supporting the transition from operating owner toward capital allocation."]}
+  ],
+  "uncertainties": [
+    {"topic": "Identity and transliteration", "detail": "The saved Andrei spelling and the common Andrey spelling both refer to Andrei Ilyich Komarov. The exact birth date, Russian identity and ChelPipe context resolve the transliteration difference conclusively; no vessel fact is needed in the biographies."},
+    {"topic": "Independent-start subtype", "detail": "Forbes directly classifies him as self-made, traces salaried and trading work before the plant acquisition, and Vedomosti records his statement that he began without money and earned the funds for the first stake. This is positive evidence for an independent launch, though the precise financing of later control purchases is not public."},
+    {"topic": "Current portfolio", "detail": "Forbes currently identifies investments as the wealth source after the ChelPipe sale, and Rimera was demonstrably retained outside that transaction. A complete current holding-by-holding asset schedule is not public, so the dossier does not claim that any proposed precious-metals acquisition was completed."},
+    {"topic": "Personal website and social accounts", "detail": "An older personal-domain reference exists for aikomarov.ru, but the site could not be accessed and its current control could not be verified. No secure LinkedIn, Instagram or other personal account was found, so only the exact Forbes profile is proposed."},
+    {"topic": "Tag minimum set", "detail": "Steel is the single active catalogue concept that directly captures his defining ChelPipe wealth creation and long control. Oilfield services remains a current holding detail, and investor is already represented by the wealth relationship; no additional overlapping literal tag is needed."},
+    {"topic": "Sensitive current context", "detail": "Sanctions and unrelated legal allegations are excluded from the biography and classifications because they are not necessary to establish identity, the wealth mechanism or the durable editorial portrait requested here."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal conclusive identity dossier for Andrei Ilyich Komarov. Forbes was checked first and the exact dedicated profile is verified and proposed as a social link. Forbes, ChelPipe accounts, Interfax, the buyer's transaction announcement and detailed business reporting establish the steel-pipe fortune, self-made independent start, controlling exit, retained Rimera platform and subsequent investor relationship. The long profile independently develops white metallurgy, workforce training and the Satiricon prelude. Middle name, known-for title, Ozyorsk birthplace and biography are proposed. Steel is the minimum useful active tag. No owner input, catalogue or live record was changed."
+  }
+}

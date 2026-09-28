@@ -1,0 +1,248 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1205,
+    "display_name": "Sietse Koopmans",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The saved Dutch owner record gives the uncommon exact name Sietse Koopmans, Belgian residence and a historical Zeepaard relationship. A direct owner interview identifies the same Dutch entrepreneur with Zeepaard, while official Luxembourg, UK corporate and patent records consistently identify Sietse Jelle Koopmans of Meer, Belgium. Zeelander and independent profiles connect that identity to his engineering and yacht-building career, leaving no material namesake ambiguity."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_country", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "birth_country", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Sietse Jelle Koopmans is a Dutch engineer and entrepreneur whose career spans oilfield technology and specialist shipbuilding.",
+    "defining_work": "He helped build ASEP into a leading well-intervention equipment manufacturer, later founded Paradigm and created the boutique shipbuilder Zeelander Yachts.",
+    "formative_context": "Koopmans came from a family of inland-waterway skippers and entered oilfield engineering through a business platform established with his father.",
+    "decisive_moment": "Unable to find the quiet, highly finished dayboat he wanted, he committed five years to developing the model that became the Zeelander Z44.",
+    "enduring_dimensions": ["Oilfield-equipment engineering and company building", "Product-led founding of Zeelander Yachts", "Practical design lessons drawn from long-distance cruising"],
+    "character_detail": "Koopmans describes himself as a product person: he treats silence, vibration control and usability as engineering problems rather than decorative refinements.",
+    "opening_options": [
+      {"mode": "defining_achievement", "angle": "Open with the five-year development programme that produced the first Zeelander Z44 and established the yard's design vocabulary."},
+      {"mode": "decisive_event", "angle": "Open with Koopmans deciding to create his own dayboat after finding that no existing model met his requirements."}
+    ],
+    "excluded_transient_context": ["Private-vessel specifications, ownership chronology and sale history", "Promotional model claims and current order-book detail", "Unverified personal net-worth estimates and reported ASEP sale price", "Private family and marital details unrelated to the business history", "Namesake social-media profiles"],
+    "source_ids": ["S0", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9", "S10", "S11", "S12", "S13", "S14"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "defining_achievement",
+    "narrative_shape": "achievement_then_backstory",
+    "calibration_archetypes": ["founder_operator", "maritime_professional"],
+    "reviewed_phrase_exceptions": [
+      {
+        "kind": "commercial_maritime",
+        "phrase": "Zeelander Yachts",
+        "source_ids": ["S2", "S9", "S10"],
+        "reason": "This is the exact name of Koopmans' commercial shipbuilding company, not a personal asset reference."
+      },
+      {
+        "kind": "commercial_maritime",
+        "phrase": "motor yachts",
+        "source_ids": ["S9", "S10"],
+        "reason": "This phrase describes the commercial products of Zeelander's operating shipyard."
+      },
+      {
+        "kind": "commercial_maritime",
+        "phrase": "commuter-yacht",
+        "source_ids": ["S9", "S11"],
+        "reason": "This is a commercial design category used to explain Zeelander's product vocabulary."
+      }
+    ],
+    "notes": "The short biography gives a compact cross-sector identity anchored in ASEP, Paradigm and Zeelander. The long biography instead opens with the Z44 achievement, then explains the oilfield-engineering and long-distance-cruising experiences that shaped Koopmans' product philosophy. Both versions are person-led and durable, and neither names a privately owned vessel, quotes a net-worth estimate or repeats temporary model and sales detail."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Mandatory Forbes-first exact-name, profile-restricted, Zeelander and ASEP searches found Forbes articles that mention Koopmans as Zeelander's founder and owner, but no dedicated Forbes personal profile. Article coverage is not treated as a profile or proposed as a Forbes social."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "energy",
+    "label": "Energy",
+    "summary": "Koopmans created his principal documented fortune by building and controlling ASEP, a manufacturer of well-intervention equipment for the oil and gas industry, before its 2009 sale to National Oilwell Varco.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "A Texas appellate opinion identifies Koopmans as ASEP Holding's majority shareholder and ASEP USA's president, patents document his oil-well equipment inventions, his profile describes 28 years of company building, and NOV officially records the acquisition of ASEP's international well-service equipment business. The controlled classification places oilfield products and services in Energy."
+    },
+    "source_ids": ["S5", "S6", "S7", "S11", "S14"]
+  },
+  "primary_industry": {
+    "classification": "energy",
+    "label": "Energy",
+    "summary": "Energy remains the most defensible present primary sector because Koopmans founded Paradigm after the ASEP sale and recent UK filings still identify him as a person with significant control of active Paradigm oilfield-technology companies.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Recent industry coverage defines Paradigm as an upstream oil-and-gas technology group founded by Koopmans, while a 2025 Companies House filing confirms his continuing significant control of an active group company. Zeelander is also current and defining, but available evidence more directly connects Energy to both the original fortune and his continuing controlled technology interests."
+    },
+    "source_ids": ["S7", "S8", "S10"]
+  },
+  "wealth_origin": {
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "Koopmans built ASEP into a dominant specialist manufacturer from a family industrial platform established with his father, then founded additional businesses in energy technology and yacht building.",
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Industry reporting states that his father founded Aggreko and that father and son established ASEP together, showing a meaningful family platform rather than an independent start. Legal records establish Koopmans' later majority ownership and operating role, and independent profiles document the company's long growth under him, supporting substantial personal creation beyond that advantage."
+    },
+    "source_ids": ["S5", "S7", "S11"]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Koopmans is the founder of the active Paradigm energy-technology group and the founder and owner of Zeelander Yachts, giving him a current founder relationship to identifiable private operating assets.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Recent industry coverage identifies him as Paradigm's founder, a 2025 UK filing records his significant control of an active Paradigm company, and Zeelander's current materials call him founder and owner. These are continuing founder-controlled operating relationships, not historical titles carried through a completed exit."
+    },
+    "source_ids": ["S7", "S8", "S10"]
+  },
+  "biography": {
+    "plain_text": "Sietse Jelle Koopmans is a Dutch engineer and entrepreneur who developed and sold oilfield-equipment maker ASEP before founding energy-technology group Paradigm. He also founded and owns Zeelander Yachts, a family-run boutique Dutch shipyard known for quiet, sculpturally curved motor yachts. His work combines patented well-intervention engineering with international specialist shipbuilding.",
+    "html": "<p>Sietse Jelle Koopmans is a Dutch engineer and entrepreneur who developed and sold oilfield-equipment maker ASEP before founding energy-technology group Paradigm. He also founded and owns Zeelander Yachts, a family-run boutique Dutch shipyard known for quiet, sculpturally curved motor yachts. His work combines patented well-intervention engineering with international specialist shipbuilding.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Official corporate, legal and patent records substantiate the ASEP ownership, engineering and sale, while current industry and company sources establish Paradigm and Zeelander as his founder-led businesses."
+    },
+    "source_ids": ["S5", "S6", "S7", "S8", "S9", "S10", "S14"]
+  },
+  "long_biography": {
+    "plain_text": "Five years of development culminated in Sietse Koopmans launching the Zeelander Z44 in 2008. Its rounded surfaces, quiet machinery and commuter-yacht proportions established a distinctive design language for the boutique shipyard he had created when the market offered no dayboat he wanted to own. The range later expanded while remaining deliberately low-volume and made to order.\n\nKoopmans brought an engineer's precision to that experiment. Building from an industrial platform established with his father, he helped turn ASEP into a market-leading oilfield-equipment manufacturer and contributed patented well-intervention technology before the business was sold. Long-distance cruising then supplied a second education: years of practical observation shaped his insistence on comfort, silence and usability. The same product-led approach now spans Zeelander and his energy-technology interests.",
+    "html": "<p>Five years of development culminated in Sietse Koopmans launching the Zeelander Z44 in 2008. Its rounded surfaces, quiet machinery and commuter-yacht proportions established a distinctive design language for the boutique shipyard he had created when the market offered no dayboat he wanted to own. The range later expanded while remaining deliberately low-volume and made to order.</p>\r\n<p>Koopmans brought an engineer's precision to that experiment. Building from an industrial platform established with his father, he helped turn ASEP into a market-leading oilfield-equipment manufacturer and contributed patented well-intervention technology before the business was sold. Long-distance cruising then supplied a second education: years of practical observation shaped his insistence on comfort, silence and usability. The same product-led approach now spans Zeelander and his energy-technology interests.</p>\r\n",
+    "word_count": 122,
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Zeelander's official history establishes the five-year development, Z44 launch and defining design attributes; legal, acquisition and patent records support the ASEP backstory; and a substantial independent profile documents how long-distance cruising informed his later product work."
+    },
+    "source_ids": ["S5", "S6", "S9", "S11", "S14"]
+  },
+  "proposed_details": [
+    {
+      "field": "middle_names",
+      "value": "Jelle",
+      "action": "fill_missing",
+      "confidence": {"score": 100, "band": "very_high", "reason": "UK Companies House and a United States patent both identify him by the full name Sietse Jelle Koopmans, with matching Belgian address and ASEP affiliations."},
+      "source_ids": ["S4", "S14"]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Founder of Paradigm and Zeelander Yachts",
+      "action": "fill_missing",
+      "confidence": {"score": 98, "band": "very_high", "reason": "Current industry coverage identifies Koopmans as Paradigm's founder, and Zeelander's official materials consistently identify him as the yacht builder's founder and owner."},
+      "source_ids": ["S7", "S9", "S10"]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Hardinxveld-Giessendam",
+      "action": "fill_missing",
+      "confidence": {"score": 100, "band": "very_high", "reason": "Two official Luxembourg gazette notices give Hardinxveld-Giessendam as Koopmans' place of birth alongside his exact birth date and Belgian residence."},
+      "source_ids": ["S3"]
+    },
+    {
+      "field": "birth_country",
+      "value": "Netherlands",
+      "action": "fill_missing",
+      "confidence": {"score": 100, "band": "very_high", "reason": "The official Luxembourg gazette identifies Hardinxveld-Giessendam, the Netherlands, as his birthplace, consistent with his saved Dutch nationality."},
+      "source_ids": ["S3"]
+    },
+    {
+      "field": "birth_year",
+      "existing_value": "1965",
+      "value": "1962",
+      "action": "correct_existing",
+      "confidence": {"score": 100, "band": "very_high", "reason": "The official Luxembourg gazette states 29 August 1962, while Companies House independently records August 1962 for the same full-name ASEP director. The saved day and month are correct, but the saved year 1965 is not."},
+      "source_ids": ["S3", "S4"]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.zeelander.com/about",
+      "verification": "Zeelander's official about page names Sietse Koopmans as founder, recounts the company's creation and identifies the Dutch shipyard and its current operations.",
+      "confidence": {"score": 100, "band": "very_high", "reason": "The official company domain directly identifies Koopmans and is the authoritative website for one of his current founder-led businesses."},
+      "source_ids": ["S9", "S10"]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0234",
+      "name": "Oil & gas",
+      "summary": "Koopmans created material wealth through ASEP's oilfield equipment business and continues to control active Paradigm energy-technology companies.",
+      "relationship_type": "majority owner, founder and oilfield-technology engineer",
+      "temporal_scope": "current",
+      "taxonomy_value": "The Oil & gas tag groups owners who created wealth through, controlled substantial operations in, or held a defining long-term mandate in the sector; Koopmans' ASEP ownership and continuing Paradigm control satisfy that standard.",
+      "confidence": {"score": 97, "band": "very_high", "reason": "Legal, official acquisition, patent, current corporate and specialist industry sources document a sustained wealth-producing and controlling role in oilfield technology, not merely a supplier or incidental investment connection."},
+      "source_ids": ["S5", "S6", "S7", "S8", "S14"]
+    },
+    {
+      "tag_id": "tag_0172",
+      "name": "Shipbuilding",
+      "summary": "Koopmans founded and owns Zeelander Yachts, developed its first model and remains the defining product leader of the active boutique Dutch shipyard.",
+      "relationship_type": "founder-owner and product leader",
+      "temporal_scope": "current",
+      "taxonomy_value": "The Shipbuilding tag covers a sustained commercial operating mandate in vessel construction; Zeelander's multi-decade, made-to-order production and Koopmans' continuing founder-owner role meet that membership rule.",
+      "confidence": {"score": 99, "band": "very_high", "reason": "Official Zeelander material and independent industry coverage consistently establish his founder-owner role, the yard's commercial production and its continuing operation."},
+      "source_ids": ["S2", "S9", "S10", "S11", "S13"]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1205", "title": "Sietse Koopmans owner record, person ID 1205", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Immutable saved name, Dutch nationality and Belgian residence", "Saved birth date of 29 August 1965 requiring year correction", "Historical Zeepaard relationship for identity context only", "Empty biography and social fields"]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Sietse%20Koopmans", "title": "Forbes search for Sietse Koopmans", "publisher": "Forbes", "tier": 3, "accessed_at": "2026-09-28", "supports": ["Mandatory Forbes-first exact-name, profile and company searches", "No dedicated Forbes personal profile found"]},
+    {"id": "S2", "url": "https://www.forbes.com/sites/katturner/2024/10/18/why-zeelanders-stylish-new-79-foot-mini-superyacht-is-such-a-big-deal/", "title": "Why Zeelander's Stylish New 79-Foot Mini Superyacht Is Such A Big Deal", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Sietse Koopmans as Zeelander's founder and owner", "Forbes article mention but not a dedicated person profile", "Continuing commercial yacht-building role"]},
+    {"id": "S3", "url": "https://memorialc.public.lu/memorial/2008/C/Pdf/c247409A.pdf", "title": "Mémorial C No. 2474: Marilux Holding S.à r.l. incorporation", "publisher": "Journal Officiel du Grand-Duché de Luxembourg", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Exact birth date of 29 August 1962", "Birthplace Hardinxveld-Giessendam, Netherlands", "Entrepreneur occupation and residence in Meer, Belgium", "Official correction of the saved 1965 birth year"]},
+    {"id": "S4", "url": "https://find-and-update.company-information.service.gov.uk/officers/RC6Xjygch7NJceDyN5XWF6ZU8tE/appointments", "title": "Sietse Jelle Koopmans personal appointments", "publisher": "UK Companies House", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Full legal name Sietse Jelle Koopmans", "August 1962 birth month and year", "Dutch nationality, Belgian address and engineer occupation", "ASEP (UK) directorship ending in April 2009"]},
+    {"id": "S5", "url": "https://law.counselstack.com/opinion/asep-usa-inc-v-cole-texapp-2006", "title": "ASEP USA, Inc. v. Cole", "publisher": "Court of Appeals of Texas opinion reproduced by Counsel Stack", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Sietse J. Koopmans as majority shareholder of privately held ASEP Holding", "ASEP USA presidency and operating authority", "ASEP subsidiaries and corporate structure"]},
+    {"id": "S6", "url": "https://investors.nov.com/news-releases/news-release-details/national-oilwell-varco-announces-two-acquisitions", "title": "National Oilwell Varco Announces Two Acquisitions", "publisher": "National Oilwell Varco", "tier": 1, "accessed_at": "2026-09-28", "supports": ["2009 acquisition of ASEP Group Holding", "ASEP as an international developer and manufacturer of well-service equipment", "Four manufacturing locations, operations in nine countries and approximately 555 employees"]},
+    {"id": "S7", "url": "https://fliphtml5.com/jeign/PARADIGM-Group/", "title": "Paradigm Group: Transforming Oilfield Technology", "publisher": "Inside Oil & Gas / Proactive Publications", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Paradigm founded by Sietse Koopmans in 2009", "His father founded Aggreko and father and son established ASEP", "ASEP's scale in wireline surface equipment", "Paradigm's current upstream oil-and-gas technology focus"]},
+    {"id": "S8", "url": "https://find-and-update.company-information.service.gov.uk/company/SC612883/filing-history", "title": "Paradigm Flow Technologies Limited filing history", "publisher": "UK Companies House", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Active Paradigm company filings through 2026", "September 2025 change-of-details filing for Sietse Jelle Koopmans as person with significant control", "Continuing current control relationship"]},
+    {"id": "S9", "url": "https://www.zeelander.com/about", "title": "About Zeelander Yachts", "publisher": "Zeelander Yachts", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Koopmans as founder and the 2002 start of Zeelander", "Five-year development of the first model and 2008 Z44 launch", "Curved, quiet and comfortable design priorities", "Current family-owned, made-to-order Dutch shipyard and company website"]},
+    {"id": "S10", "url": "https://www.zeelander.com/post/the-pinnacle-of-ability", "title": "The Pinnacle of Ability", "publisher": "Zeelander Yachts", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Sietse Koopmans as current founder and owner of Zeelander", "His continuing product and design leadership", "The common curved aesthetic across the commercial range"]},
+    {"id": "S11", "url": "https://thesuperyachtlife.com/craft/the-art-of-building-dreams/", "title": "The art of building dreams", "publisher": "Superyacht Life", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Koopmans as an engineer who built a business over 28 years before selling it", "Growth from no market share and 14 competitors to 85 percent share", "Founding Zeelander after his search for a suitable dayboat failed", "Long-distance cruising as practical input into the shipyard's product philosophy"]},
+    {"id": "S12", "url": "https://www.superyachttimes.com/yacht-news/interview-with-superyacht-owner-sietse-koopmans-at-the-gsf", "title": "Interview with superyacht owner Sietse Koopmans at the GSF", "publisher": "SuperYacht Times", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Direct identity bridge between Koopmans and the saved Zeepaard relationship", "Long-distance cruising and circumnavigation experience", "Lifelong boating background"]},
+    {"id": "S13", "url": "https://jachtbouwnederland.nl/zeelander-yachts-art-for-the-water/", "title": "Zeelander Yachts: Art for the water", "publisher": "Jachtbouw Nederland", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Current profile of Koopmans as Zeelander founder and product leader", "Family inland-shipping background and early practical boatbuilding", "Oil-industry entrepreneurial background", "Engineering emphasis on noise and vibration control"]},
+    {"id": "S14", "url": "https://patentimages.storage.googleapis.com/20/b6/2c/c1df5b701a4034/US7857042.pdf", "title": "US Patent 7,857,042: Coiled Tubing Injector Head", "publisher": "United States Patent and Trademark Office", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Sietse Jelle Koopmans as named inventor", "Matching Meer, Belgium residence", "ASEP Holding as assignee", "Direct technical contribution to oil-well intervention equipment"]},
+    {"id": "S15", "url": "https://www.dutchcraft.com/about", "title": "About DutchCraft", "publisher": "DutchCraft", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Koopmans as founder and owner of DutchCraft", "Commercial sister-brand relationship to Zeelander", "Long-distance cruising as the inspiration for a versatile craft concept"]}
+  ],
+  "uncertainties": [
+    {"topic": "Birth-year correction", "detail": "The saved record says 29 August 1965, but an official Luxembourg notarial notice gives 29 August 1962 and UK Companies House independently records August 1962 for the exact full-name ASEP director at the same Belgian address. The dossier therefore proposes correcting only the year; the saved day and month already agree."},
+    {"topic": "Wealth origin", "detail": "The evidence shows that Koopmans' father created the precursor Aggreko platform and that father and son established ASEP, while legal records later identify Sietse as majority shareholder and operating president. This supports Self-made, advantaged start rather than either an unsupported inheritance claim or an independent-start claim; the precise ownership transfer and financing route remain private."},
+    {"topic": "Industry and current relationship", "detail": "ASEP was sold in 2009, so the historical ASEP founder/operator role is not carried forward. Energy remains current because Koopmans founded Paradigm and a 2025 Companies House filing identifies him as a person with significant control of an active Paradigm company. His separate current founder-owner relationship to Zeelander supports Founder and the Shipbuilding tag, although public sources do not disclose comparative asset values."},
+    {"topic": "Forbes and social profiles", "detail": "Forbes-first research found articles naming Koopmans as Zeelander's founder and owner but no dedicated personal profile. The prominent exact-name LinkedIn result is a younger Netherlands-based designer with unrelated employment and education, so it is rejected as a namesake. No authenticated personal LinkedIn, Instagram, Personal Website, Facebook, X, YouTube or TikTok profile was established; only Zeelander's official company website is proposed."},
+    {"topic": "Tags", "detail": "Oil & gas and Shipbuilding are active catalogue tags. The former reflects a sustained wealth-producing and currently controlled oilfield-technology career; the latter reflects a multi-decade current founder-owner role in commercial yacht construction. No inactive narrower yacht-building concept or unsupported company tag is proposed."},
+    {"topic": "Repository and live-system guardrails", "detail": "Only the requested Sietse Koopmans dossier was created. The owner input, cohort, catalogue, other dossiers, compiled artifacts and live website were not changed; nothing was staged, committed or pushed."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier. Official, legal, patent, corporate and direct interview evidence resolves Sietse Jelle Koopmans as the saved Dutch, Belgium-resident subject and corrects the birth year to 1962. Energy / Energy, Self-made with an advantaged start and Founder reflect ASEP's sale, continuing Paradigm control and current Zeelander ownership. Oil & gas and Shipbuilding are the two exact active tags."
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1215,
+    "display_name": "Leo Dennis Kozlowski",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The saved full name, American nationality, 1946 birth year, Tyco biography and Wikipedia profile uniquely identify former Tyco chief executive L. Dennis Kozlowski. CBS independently names his vintage yacht Endeavour, exactly matching the saved historical vessel, while SEC, New York court, Forbes and Fortune Society records converge on his career, conviction and present public role."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "researchable_missing_details": ["secondary_nationality", "known_for_title", "place_of_birth"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": ["Wikipedia"],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Leo Dennis Kozlowski is an American industrial executive who led Tyco International's acquisition-driven transformation into a global conglomerate before an upheld corporate-crime conviction ended his tenure.",
+    "defining_work": "He spent more than two decades at Tyco, building a diversified group through scores of acquisitions across security, medical products, electronics, flow control and telecommunications.",
+    "formative_context": "Raised with modest means in Newark, Kozlowski worked several jobs, earned a business degree from Seton Hall and advanced through audit, finance and operating posts before reaching Tyco's top office.",
+    "decisive_moment": "His aggressive acquisition and cost-control model drove Tyco's expansion, but undisclosed compensation and self-dealing led to his resignation, prosecution and conviction.",
+    "enduring_dimensions": [
+      "Acquisition-led builder and former chief executive of Tyco International",
+      "Convicted of grand larceny, falsifying business records, conspiracy and securities fraud",
+      "Current M&A consultant and chair of the Fortune Society"
+    ],
+    "character_detail": "Kozlowski has connected his own experience of incarceration to board leadership at a nonprofit focused on reentry and alternatives to incarceration.",
+    "opening_options": [
+      {"mode": "formative_episode", "angle": "Begin with his modest Newark upbringing and early jobs before tracing the corporate climb and its reversal."},
+      {"mode": "defining_achievement", "angle": "Open with Tyco's acquisition-led expansion, then balance the value creation against the convictions that ended his career there."}
+    ],
+    "excluded_transient_context": [
+      "Endeavour or other personal assets and luxury purchases",
+      "Current net-worth estimates and precise historical compensation totals",
+      "Sensational party imagery and media nicknames",
+      "Disputed character judgments about guilt, remorse or rehabilitation",
+      "Source attribution, confidence language and identity-resolution process"
+    ],
+    "source_ids": ["S1", "S2", "S3", "S4", "S5", "S6", "S7"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 4,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": ["acquirer_consolidator"],
+    "notes": "The short biography concentrates on Kozlowski's executive wealth mechanism, corporate fall and later reentry work. The long profile instead opens on his Newark background and education, builds through his internal corporate ascent, explains the conglomerate's sector breadth, then turns to the specific upheld convictions, parole release, consulting and nonprofit leadership. The versions share only the identity anchors needed for reader orientation."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Mandatory exact-name and site:forbes.com/profile searches found extensive Forbes reporting and interviews about Kozlowski but no dedicated Forbes person-profile page. Editorial articles were retained as evidence rather than misclassified as a profile."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "diversified",
+    "label": "Diversified",
+    "summary": "Kozlowski's documented wealth was created through executive compensation and equity tied to his expansion of Tyco across multiple industrial and service sectors.",
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Forbes and the SEC identify Tyco as a diversified manufacturing and service conglomerate spanning security, electronics, healthcare, specialty products, flow control and telecommunications. Kozlowski's career and compensation were inseparable from that multi-sector operating platform, making Diversified more accurate than any single Tyco segment."
+    },
+    "source_ids": ["S1", "S2", "S3"]
+  },
+  "primary_industry": {
+    "classification": "diversified",
+    "label": "Diversified",
+    "summary": "Diversified is used as the origin-sector fallback because Kozlowski's current consulting practice is disclosed but its clients, assets and sector concentration are not public.",
+    "confidence": {
+      "score": 78,
+      "band": "medium",
+      "reason": "The Fortune Society confirms a current M&A and business-consulting practice, but supplies no evidence that it represents a new dominant wealth platform or industry. His durable economic identity remains Tyco's diversified conglomerate, so the required origin-sector fallback is preferable to inferring a present consulting or investment specialism."
+    },
+    "source_ids": ["S1", "S2", "S6"]
+  },
+  "wealth_origin": {
+    "classification": "self_made_independent",
+    "label": "Self-made — independent start",
+    "summary": "Kozlowski advanced from a modest Newark upbringing and salaried audit and finance posts to Tyco's top job, with no evidenced inherited company or family capital platform.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "First-person and institutional biographies describe multiple youth jobs, business education and a professional progression through SCM, Cabot and Tyco. No inherited enterprise or transferred family asset appears. The label describes the career origin, not the legitimacy of every later payment; the convictions and restitution are separately explicit."
+    },
+    "source_ids": ["S2", "S6", "S7", "S8"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Kozlowski was historically Tyco's operator, but no public evidence establishes his current principal wealth-producing asset relationship after conviction, restitution and imprisonment.",
+    "confidence": {
+      "score": 62,
+      "band": "low",
+      "reason": "The Fortune Society discloses an M&A and business-consulting practice, but not its ownership structure, clients, scale or economic importance. Nonprofit board chair is a public-service role rather than a wealth relationship, and the former Tyco operator role is no longer current."
+    },
+    "source_ids": ["S3", "S5", "S6"]
+  },
+  "biography": {
+    "plain_text": "Dennis Kozlowski advanced from audit and finance posts to lead Tyco, using disciplined takeovers to assemble a multinational industrial group. That corporate ascent generated the executive wealth that defined his career, but it ended in criminal convictions and imprisonment. He later turned part of his public work toward rehabilitation and prisoner reentry.",
+    "html": "<p>Dennis Kozlowski advanced from audit and finance posts to lead Tyco, using disciplined takeovers to assemble a multinational industrial group. That corporate ascent generated the executive wealth that defined his career, but it ended in criminal convictions and imprisonment. He later turned part of his public work toward rehabilitation and prisoner reentry.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Forbes, SEC and court records establish the Tyco expansion, executive tenure and conviction offences, while the Fortune Society confirms his later consulting practice. The wording avoids disputed dollar totals and character judgments."
+    },
+    "source_ids": ["S1", "S2", "S3", "S4", "S6"]
+  },
+  "long_biography": {
+    "plain_text": "Growing up in Newark, Dennis Kozlowski worked multiple jobs before earning a business degree from Seton Hall and joining Tyco International early in his career. He rose through operating and finance roles to become chief executive, then built the company through scores of acquisitions. Tyco evolved into a global conglomerate spanning fire and security systems, medical products, electronics, flow control and telecommunications, with Kozlowski known for tight cost control and rapid integration.\n\nThat ascent ended after his 2002 resignation and prosecution. A New York jury convicted him of grand larceny, falsifying business records, conspiracy and securities fraud; the state's highest court later upheld the convictions. After more than eight years in prison, he was released on parole in 2014. Kozlowski now runs an M&A and business-consulting practice and chairs the Fortune Society, a nonprofit supporting people returning from incarceration.",
+    "html": "<p>Growing up in Newark, Dennis Kozlowski worked multiple jobs before earning a business degree from Seton Hall and joining Tyco International early in his career. He rose through operating and finance roles to become chief executive, then built the company through scores of acquisitions. Tyco evolved into a global conglomerate spanning fire and security systems, medical products, electronics, flow control and telecommunications, with Kozlowski known for tight cost control and rapid integration.</p>\r\n<p>That ascent ended after his 2002 resignation and prosecution. A New York jury convicted him of grand larceny, falsifying business records, conspiracy and securities fraud; the state's highest court later upheld the convictions. After more than eight years in prison, he was released on parole in 2014. Kozlowski now runs an M&amp;A and business-consulting practice and chairs the Fortune Society, a nonprofit supporting people returning from incarceration.</p>\r\n",
+    "word_count": 140,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "The Fortune Society, Forbes and CBS establish his Newark background, education, Tyco ascent, acquisition model and current roles. New York appellate decisions directly establish the offences and upheld convictions, while reporting corroborates his prison term and parole release."
+    },
+    "source_ids": ["S1", "S2", "S4", "S5", "S6", "S7"]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Former chairman and CEO of Tyco International",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "SEC filings, court records, Forbes and the Fortune Society consistently identify Kozlowski's defining role as Tyco's former chairman and chief executive."
+      },
+      "source_ids": ["S1", "S2", "S3", "S4", "S6"]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Newark, New Jersey",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "CBS's direct prison interview describes Kozlowski as born in Newark, and multiple independent business biographies give Newark, New Jersey as his birthplace."
+      },
+      "source_ids": ["S7", "S8"]
+    },
+    {
+      "field": "birth_day",
+      "existing_value": "9",
+      "value": "16",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Multiple independent biographical references give 16 November 1946, matching the established Wikipedia identity; none of the reviewed sources supports the saved day 9."
+      },
+      "source_ids": ["S8", "S9"]
+    },
+    {
+      "field": "biography",
+      "existing_value": "<p><a href=\"https://en.wikipedia.org/wiki/Dennis_Kozlowski\">Leo Dennis Kozlowski</a>, a former CEO of <a href=\"https://en.wikipedia.org/wiki/Tyco_International\">Tyco International</a>, was convicted in 2005 of offences involving $81 million in illicit bonuses, $14.725 million in art purchases, and Tyco&#39;s payment of a $20 million investment banking fee to Frank Walsh, a former Tyco director.</p>\r\n",
+      "value": "<p>Dennis Kozlowski advanced from audit and finance posts to lead Tyco, using disciplined takeovers to assemble a multinational industrial group. That corporate ascent generated the executive wealth that defined his career, but it ended in criminal convictions and imprisonment. He later turned part of his public work toward rehabilitation and prisoner reentry.</p>\r\n",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The replacement removes embedded links and narrow transaction totals while preserving the corporate fall, adding the acquisition-led wealth mechanism and accurately noting his later reentry work."
+      },
+      "source_ids": ["S1", "S2", "S3", "S4", "S6"]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1215",
+      "title": "Leo Dennis Kozlowski saved owner record, person ID 1215",
+      "publisher": "Superyacht Network; saved authoritative owner export",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "The saved record identifies Leo Dennis Kozlowski as a living American man born in 1946 and includes a Tyco conviction biography and Wikipedia profile.",
+        "It links him historically to Endeavour, vessel ID 23400, until September 2006; the relationship is authoritative source context but not wealth evidence."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/forbes/1998/0615/6112066a.html",
+      "title": "Deal-a-month Dennis",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "The contemporary profile identifies Dennis Kozlowski as Tyco's chief executive and traces his internal rise and acquisition programme across medical products, security, electronics and other businesses.",
+        "It documents his cost-control and integration philosophy and notes his competitive sailing, independently aligning the executive with the source record's maritime context."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.sec.gov/litigation/complaints/complr17722.htm",
+      "title": "SEC complaint against L. Dennis Kozlowski, Mark H. Swartz and Mark A. Belnick",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "The complaint identifies Kozlowski as a Tyco affiliate from 1975, executive officer from 1992 and chairman, president and chief executive until his 2002 resignation.",
+        "It defines Tyco as a manufacturing and service conglomerate across security, electronics, healthcare, specialty products and telecommunications and details the SEC's undisclosed-compensation and self-dealing allegations."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.sec.gov/files/litigation/complaints/2006/comp19657.pdf",
+      "title": "SEC complaint against Tyco International",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "The later SEC filing records Kozlowski's Tyco career and resignation and states that a New York jury found him guilty on 22 of 23 counts in June 2005.",
+        "It distinguishes the criminal verdict from separate federal civil allegations and documents the corporate context of the misconduct."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.nycourts.gov/REPORTER/3dseries/2008/2008_07759.htm",
+      "title": "People v. Kozlowski",
+      "publisher": "New York State Court of Appeals",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "New York's highest court identifies Kozlowski as Tyco's former chief executive and records convictions for grand larceny, falsifying business records, conspiracy and securities fraud.",
+        "The Court of Appeals affirmed the lower appellate decision, providing authoritative support for describing the convictions as upheld."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.forbes.com/sites/realspin/2013/12/09/former-tyco-ceo-dennis-kozlowski-was-one-of-the-great-all-time-value-creators/",
+      "title": "Former Tyco CEO Dennis Kozlowski Was One of the Great All-Time Value Creators",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "The commentary summarizes Tyco's expansion under Kozlowski into a global company through hundreds of acquisitions and reports that he had spent more than eight years in prison.",
+        "It records the parole decision and planned January 2014 release; its favourable character interpretation is opinion and is not adopted as fact."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://fortunesociety.org/board-of-directors/",
+      "title": "The Fortune Society board of directors",
+      "publisher": "The Fortune Society",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "The current board page identifies L. Dennis Kozlowski as chairperson and gives his Seton Hall education, early corporate posts, Tyco career and current South Florida and New York residences.",
+        "It states that he now has an M&A and business-consulting practice and chairs American Friends of Magen David Adom."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.cbsnews.com/news/dennis-kozlowski-prisoner-05a4820/",
+      "title": "Dennis Kozlowski: Prisoner 05A4820",
+      "publisher": "CBS News / 60 Minutes",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "The direct prison interview describes Kozlowski's modest Newark upbringing, multiple youth jobs and corporate ascent.",
+        "CBS names his vintage yacht Endeavour, providing an independent exact-vessel bridge to person ID 1215, and records the jury's 22-count conviction."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.referenceforbusiness.com/biography/F-L/Kozlowski-Dennis-1946.html",
+      "title": "Dennis Kozlowski business biography",
+      "publisher": "Reference for Business",
+      "tier": 3,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "The reference biography gives his birth as 16 November 1946 in Newark, New Jersey and records his Seton Hall degree and corporate progression.",
+        "Its career chronology independently corroborates the audit, finance, operating and Tyco leadership path."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.lanacion.com.ar/economia/el-exitoso-ejecutivo-se-paso-raya-sus-nid2240899/",
+      "title": "The successful executive whose excesses ended in prison",
+      "publisher": "La Nacion",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": [
+        "The independent profile gives Kozlowski's full name and birth as 16 November 1946 in Newark, New Jersey.",
+        "It traces his climb at Tyco, the company's industrial expansion and his later imprisonment."
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Birth-day correction",
+      "detail": "The source record gives 9 November 1946, while multiple independent biographies and the established Wikipedia identity give 16 November 1946. No reviewed source supports day 9, so the dossier proposes 16 with high confidence."
+    },
+    {
+      "topic": "Tyco title chronology",
+      "detail": "Public sources vary on whether Kozlowski first became chief executive in 1990 or 1992 and whether the combined chairman-president-CEO title began in 1993 or 1997. The biographies avoid an exact appointment year and retain only the well-supported decade-long leadership and 2002 departure."
+    },
+    {
+      "topic": "Current wealth relationship",
+      "detail": "The Fortune Society confirms a current M&A and business-consulting practice, but no reliable public source discloses its clients, assets, ownership structure or materiality after Kozlowski's restitution and imprisonment. Current wealth relationship therefore remains Unknown."
+    },
+    {
+      "topic": "Forbes and social profiles",
+      "detail": "Forbes published substantial reporting but no dedicated profile. Searches found same-name LinkedIn and social accounts without authoritative cross-links, and the Fortune Society page is an organisational board biography rather than a personal or company website. No new social profile is proposed."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person decision for Leo Dennis Kozlowski. CBS independently links the former Tyco chief executive to Endeavour, while SEC and New York court records establish his career and upheld convictions. The dossier replaces the narrow linked biography with a balanced account of Tyco's acquisition-led growth, corporate crimes, imprisonment, consulting and reentry-focused nonprofit leadership; fills his known-for title and Newark birthplace; and corrects his birth day. Forbes-first and priority-social searches were completed. No approved active tag met the closed-world threshold. No other dossier, shared file or live site was changed."
+  }
+}

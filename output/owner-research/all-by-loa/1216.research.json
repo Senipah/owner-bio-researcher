@@ -1,0 +1,213 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1216,
+    "display_name": "Mikael Krafft",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The upstream record identifies a Swedish man resident in Monaco and historically associated with Gloria. Star Clippers' official biography identifies the exact-name Swedish founder, gives the same Monaco business base and says an Atlantic passage aboard Gloria produced the idea for the cruise company. Forbes and independent business reporting corroborate the founder, owner and Monaco context, resolving the identity without relying on name alone."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Mikael Krafft is a Swedish entrepreneur, maritime lawyer and founder of the Monaco-based tall-ship cruise company Star Clippers.",
+    "defining_work": "He turned a lifelong interest in clipper ships into a specialist cruise company operating modern passenger vessels inspired by nineteenth-century sailing ships.",
+    "formative_context": "Growing up in Saltsjöbaden near Plym's shipyard, Krafft listened to shipyard workers' stories, sailed to Åland as a boy and repeatedly explored the museum ship Pommern.",
+    "decisive_moment": "During an Atlantic crossing, he concluded that two newly built clipper-style passenger ships could form a viable cruise business.",
+    "enduring_dimensions": ["A property-development fortune that supplied capital for Star Clippers", "Maritime-law and commercial-shipping experience", "Revival of tall-ship sailing as a modern passenger experience"],
+    "character_detail": "He spent three years studying preserved sailing-ship plans and adapting them with naval architects and engineers for modern passenger service.",
+    "opening_options": [
+      {"mode": "decisive_event", "angle": "Open with the Atlantic crossing on which the two-ship Star Clippers concept came together."},
+      {"mode": "formative_episode", "angle": "Open with the boyhood sail to Åland and Krafft's exploration of the museum ship Pommern."},
+      {"mode": "institution_or_asset", "angle": "Open with Star Clippers as the commercial expression of Krafft's interest in historical sailing ships."}
+    ],
+    "excluded_transient_context": ["Private-vessel ownership history and specifications", "Current cruise fares, passenger totals and fleet deployment", "Unverified net-worth estimates", "Planned ships that were not delivered", "Unsupported secondary-nationality claims"],
+    "source_ids": ["S0", "S2", "S3", "S4", "S5", "S6", "S7", "S8"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "decision_then_consequence",
+    "calibration_archetypes": ["founder_operator", "maritime_professional"],
+    "reviewed_phrase_exceptions": [],
+    "notes": "The shared anchors are Krafft and the company he founded. The short biography explains the property capital, legal background and earlier shipping interests behind the venture; the long profile deliberately omits those facts and instead develops the Atlantic-crossing decision, historical research, shipyard childhood, Åland voyage and evolution of the commercial tall-ship concept. Reducing the long profile to the short would remove its formative and design story."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "Forbes-first exact-name and profile-restricted searches found Forbes reporting about Krafft and Star Clippers but no dedicated Forbes personal profile. The article evidence is retained in the source ledger, while no Forbes social link is proposed."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "Krafft built the fortune that enabled Star Clippers through property development after selling earlier Swedish shipping interests.",
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Finansavisen directly states that Krafft accumulated a property fortune that made the cruise venture possible. Star Clippers' official biography independently identifies him as founder of White Star Group, whose principal business was major property development in the Benelux countries, after he sold his Swedish interests."
+    },
+    "source_ids": ["S3", "S6"]
+  },
+  "primary_industry": {
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "Real Estate is used as the disclosed origin-sector fallback because reliable current reporting does not identify Krafft's principal remaining private holdings after Star Clippers passed to the next generation.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "The property-development origin is well supported, but no current asset schedule establishes whether property remains Krafft's dominant private interest. Reporting shows him reducing his role and his son Eric becoming Star Clippers' owner, so the creation sector is retained conservatively as a fallback rather than presented as a verified current holding."
+    },
+    "source_ids": ["S3", "S6", "S8"]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Krafft created the property business that produced his earlier fortune and subsequently founded Star Clippers; his starting platform is not documented well enough to distinguish an independent from an advantaged start.",
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "First-party and independent sources establish that Krafft founded White Star Group, built a property fortune and founded Star Clippers, providing positive evidence of founder-built assets rather than an inference from silence. They do not establish inherited core assets, but they also do not document family finances sufficiently to support either self-made subtype."
+    },
+    "source_ids": ["S3", "S4", "S6"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Krafft was the founder and long-term owner-operator of Star Clippers, but current sources identify his son Eric as owner and do not establish Krafft's present relationship to a principal wealth-producing asset.",
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Forbes and company materials establish the historical founder-owner role, while current reporting documents Krafft's retirement from management and identifies Eric Krafft as the company's owner. No reliable source identifies Mikael Krafft's present principal property, investment or operating relationship, so a historical founder role cannot be used as the current classification."
+    },
+    "source_ids": ["S2", "S6", "S8"]
+  },
+  "biography": {
+    "plain_text": "Mikael Krafft is a Swedish entrepreneur, maritime lawyer and founder of Star Clippers, based in Monaco. He built an earlier fortune through property development after managing and selling Swedish shipping interests. That capital helped him establish a cruise company dedicated to modern recreations of the tall sailing ships that had fascinated him since childhood.",
+    "html": "<p>Mikael Krafft is a Swedish entrepreneur, maritime lawyer and founder of Star Clippers, based in Monaco. He built an earlier fortune through property development after managing and selling Swedish shipping interests. That capital helped him establish a cruise company dedicated to modern recreations of the tall sailing ships that had fascinated him since childhood.</p>\r\n",
+    "word_count": 54,
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "The official company biography establishes Krafft's Swedish background, legal training, shipping management, property-development company and founding of Star Clippers. Forbes and independent financial reporting corroborate the Monaco-based cruise company and directly connect his property fortune to its creation."
+    },
+    "source_ids": ["S2", "S3", "S4", "S6", "S7"]
+  },
+  "long_biography": {
+    "plain_text": "An Atlantic crossing crystallised Swedish entrepreneur Mikael Krafft's idea for Star Clippers: build two passenger vessels modelled on the clippers he had admired as a boy. He spent three years studying preserved nineteenth-century plans and worked with naval architects and engineers before the first new clipper-style passenger ship in decades entered service.\n\nKrafft's fascination began in Saltsjöbaden, near Stockholm, where he helped at Plym's shipyard and listened to stories about the great sailing ships. At ten he sailed his own wooden boat across open water to Åland to explore the museum ship Pommern. Star Clippers later added a five-masted full-rigged ship to its two barquentines, translating that childhood curiosity into a lasting niche within the cruise industry.",
+    "html": "<p>An Atlantic crossing crystallised Swedish entrepreneur Mikael Krafft's idea for Star Clippers: build two passenger vessels modelled on the clippers he had admired as a boy. He spent three years studying preserved nineteenth-century plans and worked with naval architects and engineers before the first new clipper-style passenger ship in decades entered service.</p>\r\n<p>Krafft's fascination began in Saltsjöbaden, near Stockholm, where he helped at Plym's shipyard and listened to stories about the great sailing ships. At ten he sailed his own wooden boat across open water to Åland to explore the museum ship Pommern. Star Clippers later added a five-masted full-rigged ship to its two barquentines, translating that childhood curiosity into a lasting niche within the cruise industry.</p>\r\n",
+    "word_count": 117,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Star Clippers' official history and press biography establish the Atlantic-crossing idea, three-year research period, work with naval architects, Saltsjöbaden upbringing, shipyard experience, boyhood sail to Pommern and the resulting three-ship commercial fleet. Independent reporting corroborates the formative episode and business outcome."
+    },
+    "source_ids": ["S3", "S4", "S5", "S6"]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Founder of Star Clippers",
+      "action": "fill_missing",
+      "confidence": {"score": 100, "band": "very_high", "reason": "Star Clippers, Forbes and independent business reporting consistently identify Krafft as the cruise company's founder."},
+      "source_ids": ["S2", "S3", "S4", "S7", "S8"]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Stockholm",
+      "action": "fill_missing",
+      "confidence": {"score": 99, "band": "very_high", "reason": "Star Clippers' official press biography gives Stockholm as Krafft's birthplace, and the company's history independently repeats that location."},
+      "source_ids": ["S3", "S4"]
+    },
+    {
+      "field": "birth_day",
+      "value": "13",
+      "action": "fill_missing",
+      "confidence": {"score": 98, "band": "very_high", "reason": "Star Clippers' detailed official biography states that Krafft was born on 13 January 1946."},
+      "source_ids": ["S3"]
+    },
+    {
+      "field": "birth_month",
+      "value": "January",
+      "action": "fill_missing",
+      "confidence": {"score": 98, "band": "very_high", "reason": "Star Clippers' detailed official biography states that Krafft was born on 13 January 1946; January is an exact visible option in the owner input."},
+      "source_ids": ["S3"]
+    },
+    {
+      "field": "birth_year",
+      "value": "1946",
+      "action": "fill_missing",
+      "confidence": {"score": 98, "band": "very_high", "reason": "Star Clippers' detailed official biography states that Krafft was born in 1946, consistent with the upstream calculated age snapshot."},
+      "source_ids": ["S0", "S3"]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.starclippers.com/",
+      "verification": "The official Star Clippers site contains the company's history of Mikael Krafft's founding role and operates on the same domain as current company announcements. Type ID 14 is copied from the owner-input lookup.",
+      "confidence": {"score": 100, "band": "very_high", "reason": "This is the official website of Star Clippers, which the site itself and independent reporting identify as Krafft's founded company."},
+      "source_ids": ["S3", "S4", "S8"]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0048",
+      "name": "Cruise industry",
+      "summary": "Krafft founded, owned and led Star Clippers, a specialist passenger-cruise company built around tall sailing ships.",
+      "relationship_type": "founder_and_long_term_owner_operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "The assignment groups Krafft with owners whose defining long-term work involved creating and controlling substantial cruise operations, rather than with incidental cruise investors or passengers.",
+      "confidence": {"score": 100, "band": "very_high", "reason": "Forbes identifies Krafft as Star Clippers' owner and chief executive, while company and independent histories document his founding role, decades of ownership and operation of a multi-ship passenger-cruise business. This directly satisfies the active tag's defining-control contract."},
+      "source_ids": ["S2", "S3", "S4", "S7"]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1216", "title": "Mikael Krafft owner record, person ID 1216", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Immutable exact name and person ID", "Saved Swedish nationality, Monaco residence and Sweden birth country", "Calculated age snapshot consistent with a 1946 birth year", "Historical Gloria relationship used only for identity resolution", "Blank biography, personal-detail and social inventory"]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Mikael%20Krafft", "title": "Forbes search for Mikael Krafft", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Mandatory Forbes-first exact-name and profile-restricted searches", "Forbes articles found but no dedicated personal profile"]},
+    {"id": "S2", "url": "https://www.forbes.com/2005/01/06/cx_jw_0106dow.html", "title": "Smooth Sailing", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Mikael Krafft as Swedish entrepreneur", "Owner and chief executive of Star Clippers", "Intent to offer a tall-ship experience as an alternative to large cruise ships"]},
+    {"id": "S3", "url": "https://www.starclippers.com/files/documents/press-kit/Star_Clippers_press_kit_march_2023_EN.pdf", "title": "Star Clippers Press Information: Biography of Mikael Krafft", "publisher": "Star Clippers", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Birth in Stockholm on 13 January 1946", "Saltsjöbaden upbringing and Plym's shipyard experience", "Maritime-law degree and legal practice in France and Sweden", "Managing ownership of L. Jeansson and sale of Swedish interests", "Founding of property developer White Star Group", "Founding and ownership of Star Clippers"]},
+    {"id": "S4", "url": "https://www.starclippers.com/us-dom/our-fleet/our-history.html", "title": "The History of Star Clippers", "publisher": "Star Clippers", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Krafft's Stockholm birth and shipyard upbringing", "Atlantic crossing as the decisive origin of the two-ship concept", "Development of the company's three tall sailing ships", "More than three decades of commercial passenger service"]},
+    {"id": "S5", "url": "https://www.starclippers.co.uk/blog/mikael-kraffts-seafarer-journey.html", "title": "Mikael Krafft's Seafarer Journey", "publisher": "Star Clippers", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Direct account of childhood time at Plym's shipyard", "Direct account of sailing to Åland and visiting Pommern", "Star Clippers as a family project", "Continuing involvement of his children in the business by 2022"]},
+    {"id": "S6", "url": "https://www.finansavisen.no/reise-og-fritid/2025/01/03/8188684/ombord-star-clippers-i-middelhavet", "title": "Ombord Star Clippers i Middelhavet", "publisher": "Finansavisen", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Property fortune as the capital that enabled Star Clippers", "Turnaround and profitable sale of a Swedish shipping company", "Atlantic-crossing idea and three-year research process", "Succession to son Eric as Krafft reduced his role with age", "Founder and owner status at the time of reporting"]},
+    {"id": "S7", "url": "https://lobservateurdemonaco.com/enquetes/full-steam-aheadfor-growth-in-2017/", "title": "Star Clippers: A flagship in 2018", "publisher": "L'Observateur de Monaco", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Swedish lawyer and entrepreneur identity", "Star Clippers' Monaco base", "Krafft's operating leadership of the specialist cruise company", "Property, finance and earlier commercial background"]},
+    {"id": "S8", "url": "https://www.starclippers.com/en/?catid=13&id=454:star-clippers-appoints-leo-chang-as-chief-executive-officer-to-lead-next-chapter-of-tall-ship-sailing-specialist&view=article", "title": "Star Clippers Appoints Leo Chang as Chief Executive Officer", "publisher": "Star Clippers", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Star Clippers established by Mikael Krafft in 1989", "Current identification of Eric Krafft as owner and executive chairman", "Current three-ship specialist cruise operation", "Evidence that Mikael Krafft's founder role is historical rather than proof of a current principal asset relationship"]}
+  ],
+  "uncertainties": [
+    {"topic": "Current ownership and wealth relationship", "detail": "Forbes and Star Clippers' 2023 press kit identify Mikael Krafft as owner, while 2025 reporting describes his reduced role and current 2026 company material identifies his son Eric as owner. Mikael's founder role remains defining, but no current source establishes whether he retains an economic interest or identifies his principal remaining asset; wealth_relationship therefore remains Unknown."},
+    {"topic": "Industry classifications", "detail": "Finansavisen explicitly says a property fortune enabled Star Clippers, and the official company biography identifies Krafft's White Star Group as a major Benelux property developer. Real Estate is therefore the wealth-creation sector. Because no reliable current holdings schedule ranks his remaining assets after family succession at Star Clippers, Primary Industry repeats Real Estate only as the required disclosed origin-sector fallback."},
+    {"topic": "Self-made subtype", "detail": "Krafft founded the property company and cruise business that explain his wealth, supporting broad Self-made. His father's occupation, household resources and any family capital are not documented sufficiently to distinguish an independent from an advantaged start, so no narrower subtype is claimed."},
+    {"topic": "Name and nationality", "detail": "A registry-derived source suggests the legal ordering Karl Mikael Krafft, and a secondary reference claims additional Luxembourgish and Monégasque nationality. Neither point is sufficiently established by a direct authoritative personal record for an automatic proposal, so the saved first name and Swedish nationality remain unchanged and the blank middle-name and secondary-nationality fields remain unfilled."},
+    {"topic": "Social profiles", "detail": "No personal LinkedIn, Instagram, Personal Website, Facebook, X, YouTube or TikTok account could be identity-verified under the social-link contract. The official Star Clippers site qualifies as a Company Website because Krafft founded the company. Forbes reporting exists, but no dedicated Forbes personal profile was found."},
+    {"topic": "Tags", "detail": "Cruise industry is proposed because Krafft founded, owned and operated a substantial passenger-cruise company over decades. Broader maritime and historical-sailing facts remain ordinary biography evidence; no overlapping shipping, sailing or company-name tag is needed for a coherent minimum useful set."},
+    {"topic": "Repository and live-system guardrails", "detail": "Only the requested Mikael Krafft dossier was created. The owner input, cohort, catalogue, other dossiers, compiled artifacts and live website were not changed; nothing was staged, committed or pushed."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal research decision. The exact-name, Swedish, Monaco, Gloria and Star Clippers evidence resolves Krafft conclusively. Official and high-quality independent reporting supports his birth details, founder identity, property-created fortune and cruise-industry significance. Current ownership succession is preserved as an explicit limit, leaving the present wealth relationship Unknown rather than extending a historical founder role beyond the evidence."
+  }
+}

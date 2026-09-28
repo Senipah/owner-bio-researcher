@@ -298,22 +298,6 @@
       ]
     },
     {
-      "field": "death_month",
-      "existing_value": "May",
-      "value": "",
-      "action": "correct_existing",
-      "confidence": {
-        "score": 100,
-        "band": "very_high",
-        "reason": "The month forms part of a malformed three-field entry that is incompatible with the Alive status. Current 2025-26 sources identify Warmington as active, so it should be cleared and not treated as evidence of birth or death."
-      },
-      "source_ids": [
-        "S1",
-        "S4",
-        "S13"
-      ]
-    },
-    {
       "field": "death_year",
       "existing_value": "23",
       "value": "",
@@ -390,7 +374,24 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "field": "death_month",
+      "value": "",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The month forms part of a malformed three-field entry that is incompatible with the Alive status. Current 2025-26 sources identify Warmington as active, so it should be cleared and not treated as evidence of birth or death."
+      },
+      "source_ids": [
+        "S1",
+        "S4",
+        "S13"
+      ],
+      "review_note": "The current owner-form lookup has no valid death_month option for ''; this supported value is retained for human review rather than automatic compilation.",
+      "existing_value": "May"
+    }
+  ],
   "sources": [
     {
       "id": "S1",

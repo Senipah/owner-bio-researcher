@@ -237,20 +237,6 @@
   },
   "proposed_details": [
     {
-      "field": "nationality",
-      "value": "Equatoguinean",
-      "action": "fill_missing",
-      "confidence": {
-        "score": 99,
-        "band": "very_high",
-        "reason": "The United Kingdom sanctions notice records Equatorial Guinea as his nationality, and the European Court of Human Rights identifies him as an Equatoguinean national."
-      },
-      "source_ids": [
-        "S5",
-        "S6"
-      ]
-    },
-    {
       "field": "known_for_title",
       "value": "Vice President of Equatorial Guinea",
       "action": "fill_missing",
@@ -388,6 +374,10 @@
     }
   ],
   "candidates_requiring_review": [
+    {
+      "topic": "Nationality lookup gap",
+      "detail": "Authoritative sources identify him as an Equatoguinean national, but the current owner-form nationality lookup has no Equatoguinean option. The supported value therefore remains research context rather than an automatic select-field proposal."
+    },
     {
       "topic": "Birthplace conflict",
       "detail": "The United Kingdom notice gives Malabo, while the existing Wikipedia article gives Acoacán or Akuacam. The discrepancy was not resolved to the standard required for a place-of-birth proposal, so the field remains blank."

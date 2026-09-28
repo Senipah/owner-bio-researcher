@@ -278,19 +278,6 @@
       ]
     },
     {
-      "field": "secondary_nationality",
-      "value": "Belizean",
-      "action": "fill_missing",
-      "confidence": {
-        "score": 97,
-        "band": "very_high",
-        "reason": "BCB Holdings' formal annual report identifies Ashcroft as Belizean and separately notes that he is also a British citizen; the exact existing Wikipedia identity independently reports dual British and Belizean nationality."
-      },
-      "source_ids": [
-        "S10"
-      ]
-    },
-    {
       "field": "known_for_title",
       "value": "Entrepreneur, philanthropist and founder of Crimestoppers",
       "action": "fill_missing",
@@ -457,7 +444,21 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "field": "secondary_nationality",
+      "value": "Belizean",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "BCB Holdings' formal annual report identifies Ashcroft as Belizean and separately notes that he is also a British citizen; the exact existing Wikipedia identity independently reports dual British and Belizean nationality."
+      },
+      "source_ids": [
+        "S10"
+      ],
+      "review_note": "The current owner-form lookup has no valid secondary_nationality option for 'Belizean'; this supported value is retained for human review rather than automatic compilation."
+    }
+  ],
   "sources": [
     {
       "id": "S1",

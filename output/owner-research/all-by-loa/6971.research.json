@@ -248,20 +248,6 @@
       ]
     },
     {
-      "field": "main_residence_country",
-      "value": "Jersey",
-      "action": "correct_existing",
-      "existing_value": "United Kingdom",
-      "confidence": {
-        "score": 96,
-        "band": "very_high",
-        "reason": "The current Companies House director filing for Franchise Brands records Stephen Glen Hemsley's country of residence as Jersey and matches his full name, nationality, birth month/year and active company role."
-      },
-      "source_ids": [
-        "S5"
-      ]
-    },
-    {
       "field": "known_for_title",
       "value": "Co-founder and Executive Chairman, Franchise Brands",
       "action": "fill_missing",
@@ -359,7 +345,22 @@
       ]
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "field": "main_residence_country",
+      "value": "Jersey",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "The current Companies House director filing for Franchise Brands records Stephen Glen Hemsley's country of residence as Jersey and matches his full name, nationality, birth month/year and active company role."
+      },
+      "source_ids": [
+        "S5"
+      ],
+      "review_note": "The current owner-form lookup has no valid main_residence_country option for 'Jersey'; this supported value is retained for human review rather than automatic compilation.",
+      "existing_value": "United Kingdom"
+    }
+  ],
   "sources": [
     {
       "id": "S1",

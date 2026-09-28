@@ -1,0 +1,205 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1009,
+    "display_name": "Frans Heesen",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The saved Dutch owner record names Frans Heesen and links him to three yachts, including Odyssea and Crystalady. Heesen Yachts, independent marine reporting and direct interview material consistently identify the same uncommon-name Dutch entrepreneur from Oss as the shipyard's founder and as a multiple yacht owner. The nationality, residence country, age context, vessels and exact-name shipyard association leave no material namesake ambiguity."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Frans Heesen was a Dutch entrepreneur who founded the Oss-based specialist shipbuilder Heesen Yachts in 1978.",
+    "defining_work": "He developed the acquired boatyard into an internationally recognised builder of high-performance aluminium and steel vessels.",
+    "formative_context": "After leaving school, Heesen worked as a carpenter and then built businesses in industrial plastics before entering boatbuilding.",
+    "decisive_moment": "He accepted the technically and financially risky Octopussy commission; its record-setting speed in 1988 gave the yard its international breakthrough.",
+    "enduring_dimensions": ["Founder-led Dutch specialist shipbuilding", "Industrial-plastics background and opportunistic boatyard acquisition", "Performance engineering exemplified by Octopussy"],
+    "character_detail": "Even after retiring, Heesen told an interviewer that he still visited the yard most days. He preferred watching boats take shape and speaking with the shop-floor team to sitting at home.",
+    "opening_options": [
+      {"mode": "decisive_event", "angle": "Open with Heesen's 1978 acquisition of the Oss boatyard and decision to preserve its workforce and boatbuilding business."},
+      {"mode": "defining_achievement", "angle": "Use Octopussy exceeding 50 knots as the later consequence that transformed the acquired yard's reputation."}
+    ],
+    "excluded_transient_context": ["Private-vessel ownership, specifications and sale chronology", "Unverified personal net worth and conflicting sale-price estimates", "The shipyard's post-sale sanctions and ownership history except where needed to explain his exit", "Unsupported exact birth date, birthplace and family details", "Promotional claims about current models and order books"],
+    "source_ids": ["S0", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "decision_then_consequence",
+    "calibration_archetypes": ["founder_operator"],
+    "reviewed_phrase_exceptions": [
+      {
+        "kind": "commercial_maritime",
+        "phrase": "Heesen Yachts",
+        "source_ids": ["S3", "S4", "S10"],
+        "reason": "This is the exact name of Heesen's commercial shipbuilding company, not a reference to a personal asset."
+      }
+    ],
+    "notes": "The short biography gives the full career arc and life dates. The long biography now opens with the 1978 boatyard acquisition and Heesen's decision to preserve its workforce and boatbuilding activity, then explains how his earlier carpentry and plastics experience fed that choice. The second paragraph develops the consequences through aluminium capability, the high-risk Octopussy commission, international recognition, the 2008 sale and accurate 2012 retirement. Both are person-led and exclude private-yacht facts, unsupported net-worth figures and post-sale corporate controversy."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Mandatory Forbes-first exact-name, founder and shipyard searches found a Forbes article about the later owner of Heesen Yachts, which mentions Frans Heesen and the reported 2008 sale, but no dedicated Forbes personal profile for him. No Forbes social is proposed."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "Heesen created his principal documented fortune by founding and expanding a Dutch manufacturer of high-performance superyachts.",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Official company history, contemporary reporting, direct interview material and later independent coverage consistently establish Heesen as the founder and long-serving builder behind the Oss shipyard. The wealth-classification contract maps shipbuilding to Manufacturing."
+    },
+    "source_ids": ["S2", "S4", "S5", "S6", "S7", "S9"]
+  },
+  "primary_industry": {
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "Manufacturing is used as the disclosed origin-sector fallback because Heesen sold the shipyard in 2008 and reliable sources do not rank his later private holdings.",
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "The shipyard's sale and his later retirement are well documented, but no reliable holding-by-holding account establishes a different principal sector at his death. Under the origin-sector fallback, the verified manufacturing business remains the most defensible classification without implying that he still owned it."
+    },
+    "source_ids": ["S2", "S4", "S5", "S7", "S8"]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Heesen progressed from carpentry and industrial plastics to acquiring a boatyard and building the shipbuilder that bore his name; the precise financing and family starting position are not public.",
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "A direct interview traces his work from leaving school through carpentry, industrial plastics and boatbuilding, while official and independent histories show that he acquired and expanded the Oss yard. This supports broad Self-made, but not the independent-start subtype because his original capital and family platform are not documented."
+    },
+    "source_ids": ["S4", "S5", "S6", "S9"]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Heesen was the founding operator of the shipyard, but after selling it and retiring, his principal relationship to wealth-producing assets at death is not publicly established.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Sources clearly document the 2008 sale and 2012 retirement. The classification rules require the relationship to be current and do not permit a historical founder role to stand after an exit; available reliable reporting does not identify a later principal operating business, investment platform or passive asset structure."
+    },
+    "source_ids": ["S2", "S4", "S5", "S7"]
+  },
+  "biography": {
+    "plain_text": "Frans Heesen was a Dutch entrepreneur who founded Heesen Yachts in Oss in 1978 after an earlier career in carpentry and industrial plastics. He built the yard around high-performance aluminium vessels, gaining international recognition with Octopussy in 1988. He sold the company in 2008, retired in 2012 and died in 2025.",
+    "html": "<p>Frans Heesen was a Dutch entrepreneur who founded Heesen Yachts in Oss in 1978 after an earlier career in carpentry and industrial plastics. He built the yard around high-performance aluminium vessels, gaining international recognition with Octopussy in 1988. He sold the company in 2008, retired in 2012 and died in 2025.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Official shipyard history and obituary material establish the founding, breakthrough, retirement and death, while direct interview and independent reporting support the early occupational path and sale."
+    },
+    "source_ids": ["S3", "S4", "S5", "S6", "S7"]
+  },
+  "long_biography": {
+    "plain_text": "When Frans Heesen acquired an existing Oss boatyard, he chose to preserve its workforce and business rather than repurpose the site. The decision redirected an entrepreneur who had left school, worked as a carpenter and built industrial-plastics companies into specialist shipbuilding. Amigo, the first vessel bearing his name, followed a year later, and aluminium construction became a defining capability.\n\nThe choice positioned the yard for its decisive late-1980s test. American client John Staluppi requested a 44-metre vessel capable of more than 50 knots, and Heesen accepted a contract with severe performance penalties. Octopussy exceeded the target and gave the yard its international breakthrough. Heesen expanded the company before selling it in 2008, retired in 2012 and remained closely attached to the shipyard afterward.",
+    "html": "<p>When Frans Heesen acquired an existing Oss boatyard, he chose to preserve its workforce and business rather than repurpose the site. The decision redirected an entrepreneur who had left school, worked as a carpenter and built industrial-plastics companies into specialist shipbuilding. Amigo, the first vessel bearing his name, followed a year later, and aluminium construction became a defining capability.</p>\r\n<p>The choice positioned the yard for its decisive late-1980s test. American client John Staluppi requested a 44-metre vessel capable of more than 50 knots, and Heesen accepted a contract with severe performance penalties. Octopussy exceeded the target and gave the yard its international breakthrough. Heesen expanded the company before selling it in 2008, retired in 2012 and remained closely attached to the shipyard afterward.</p>\r\n",
+    "word_count": 123,
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Direct interview material supports the carpenter-to-plastics career and continuing attachment to the yard; official heritage material establishes the acquisition, Amigo and Octopussy milestones; independent coverage confirms the technical challenge and sale."
+    },
+    "source_ids": ["S4", "S5", "S6", "S7", "S9"]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Founder of Heesen Yachts",
+      "action": "fill_missing",
+      "confidence": {"score": 99, "band": "very_high", "reason": "The shipyard's official history and obituary, Forbes and independent marine coverage all identify Frans Heesen as the founder of Heesen Yachts."},
+      "source_ids": ["S2", "S3", "S4", "S6"]
+    },
+    {
+      "field": "birth_year",
+      "value": "1946",
+      "action": "fill_missing",
+      "confidence": {"score": 82, "band": "medium", "reason": "The saved record calculated age 74 on 7 May 2020, while contemporaneous 2018 reporting described Heesen as 71 and a direct interview published in 2013 described him as 66. Their overlapping ranges support 1946, but no reliable source establishes the exact day or month."},
+      "source_ids": ["S0", "S5", "S8"]
+    },
+    {
+      "field": "mortality_status",
+      "existing_value": "Alive",
+      "value": "Dead",
+      "action": "correct_existing",
+      "confidence": {"score": 100, "band": "very_high", "reason": "Heesen Yachts' official obituary states that its founder Frans Heesen died peacefully in Oss on 23 April 2025, corroborated by independent marine-industry coverage."},
+      "source_ids": ["S3", "S7"]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.heesenyachts.com/",
+      "verification": "Heesen Yachts' official website identifies Frans Heesen as its founder, describes the yard's history and publishes its official notice of his death.",
+      "confidence": {"score": 100, "band": "very_high", "reason": "The official shipyard domain directly and repeatedly identifies the subject and remains the authoritative institutional website for his defining enterprise."},
+      "source_ids": ["S3", "S4"]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0172",
+      "name": "Shipbuilding",
+      "summary": "Heesen founded, led and expanded a superyacht shipyard for three decades, making shipbuilding a defining and wealth-producing long-term operating mandate.",
+      "confidence": {"score": 99, "band": "very_high", "reason": "Official history and extensive independent coverage establish that Heesen created material wealth through and held a defining long-term operating role in shipbuilding, exactly matching the active tag's semantic contract."},
+      "source_ids": ["S2", "S4", "S5", "S6", "S7"]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1009", "title": "Frans Heesen owner record, person ID 1009", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Immutable saved name, Dutch nationality and Netherlands residence", "Saved age 74 at 7 May 2020 for birth-year inference", "Historical Odyssea, Crystalady and Mordan relationships for identity context only", "Outdated Alive status and empty biography/social fields"]},
+    {"id": "S1", "url": "https://www.forbes.com/search/?q=Frans%20Heesen", "title": "Forbes search for Frans Heesen", "publisher": "Forbes", "tier": 3, "accessed_at": "2026-09-28", "supports": ["Mandatory Forbes-first exact-name and shipyard searches", "No dedicated Forbes personal profile found"]},
+    {"id": "S2", "url": "https://www.forbes.com/sites/giacomotognini/2022/04/07/inside-the-dutch-superyacht-builder-owned-by-russian-billionaire-vagit-alekperov/", "title": "Inside The Dutch Superyacht Builder Owned By Russian Billionaire Vagit Alekperov", "publisher": "Forbes", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Frans Heesen as founder of the superyacht manufacturer", "Reported 2008 sale of the shipyard", "Forbes article mention but not a dedicated person profile"]},
+    {"id": "S3", "url": "https://www.heesenyachts.com/news/heesen-shipyard-mourns-the-loss-of-founder-frans-heesen/", "title": "Heesen Shipyard Mourns the Loss of Founder Frans Heesen", "publisher": "Heesen Yachts", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Official death date of 23 April 2025 and place of death as Oss", "Founder identity, leadership and role in the Octopussy project", "Family culture and continuing attachment to the shipyard"]},
+    {"id": "S4", "url": "https://www.heesenyachts.com/heritage/", "title": "The Heesen Heritage", "publisher": "Heesen Yachts", "tier": 1, "accessed_at": "2026-09-28", "supports": ["1978 acquisition of the existing Oss shipyard and founding of Heesen Shipyards", "1979 launch of Amigo as the first yacht bearing the Heesen name", "Octopussy's record speed and international breakthrough", "Official company website"]},
+    {"id": "S5", "url": "https://www.superyachtnews.com/owner/the_wizard_of_oss", "title": "The Wizard of Oss", "publisher": "SuperyachtNews", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Direct interview tracing work from school-leaver and carpenter to industrial-plastics entrepreneur and boatbuilder", "Heesen's age 66 at interview for birth-year inference", "Continued near-daily shipyard visits after retirement and his shop-floor attachment"]},
+    {"id": "S6", "url": "https://www.yachtingmagazine.com/yachts/tribute-to-frans-heesen/", "title": "A Tribute to Frans Heesen", "publisher": "Yachting Magazine", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Industrial-plastics background and 1978 Striker Boats acquisition", "Octopussy's 1988 speed achievement and importance to the brand", "Death on 23 April 2025"]},
+    {"id": "S7", "url": "https://marineindustrynews.co.uk/heesen-yachts-founder-frans-heesen-dies/", "title": "Obituary: Heesen Yachts founder Frans Heesen", "publisher": "Marine Industry News", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Independent confirmation of death on 23 April 2025 in Oss", "Founder role and close involvement in shipyard development", "Reported 2008 sale and the technical and financial risk of Octopussy"]},
+    {"id": "S8", "url": "https://www.quotenet.nl/lifestyle/jachten/a209331/voormalig-superjachtenbouwer-frans-heesen-geld-brengt-veel-maar-ook-veel-narigheid-209331/", "title": "Former superyacht builder Frans Heesen reflects on wealth and career", "publisher": "Quote", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Heesen described as 71 in January 2018 for birth-year inference", "Thirty-year shipbuilding career, retirement context and reported sale", "Personal attachment to the company after his advisory role ended"]},
+    {"id": "S9", "url": "https://www.omroepbrabant.nl/nieuws/4709920/waarom-superjachtenbouwer-heesen-yachts-zo-belangrijk-is-voor-brabant", "title": "Why superyacht builder Heesen Yachts matters to Brabant", "publisher": "Omroep Brabant", "tier": 2, "accessed_at": "2026-09-28", "supports": ["1978 acquisition of a bankrupt Oss boatyard while Heesen worked in plastics", "Amigo as the first delivery and Octopussy as the international breakthrough", "Growth from local yard into an internationally important manufacturer"]},
+    {"id": "S10", "url": "https://www.heesenyachts.com/our-story/", "title": "Our Story", "publisher": "Heesen Yachts", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Frans Heesen as founding father after acquiring Striker Boats in 1978", "Company-built superyacht identity and in-house manufacturing", "Retirement from the business in 2012"]}
+  ],
+  "uncertainties": [
+    {"topic": "Mortality correction", "detail": "The immutable export still says Alive, but Heesen Yachts' official obituary and independent reporting state that Frans Heesen died in Oss on 23 April 2025. The dossier therefore proposes correcting mortality status and filling the exact death date at very high confidence."},
+    {"topic": "Birth details", "detail": "The saved age calculation, a direct interview age and 2018 reporting converge on 1946, so that year is proposed at medium confidence. No reliable source found an exact birth day, month or birthplace. Low-quality sources conflict internally between 1940 and 1946 and are excluded from the evidence ledger."},
+    {"topic": "Post-sale wealth relationship", "detail": "Heesen founded and operated the yard, but sold it in 2008 and retired in 2012. Reliable sources do not describe the composition or management of his later private assets. Because the classification is current and a founder role cannot be carried through a completed exit, wealth_relationship remains Unknown; Manufacturing is used only as the disclosed primary-industry origin fallback."},
+    {"topic": "Wealth origin and sale value", "detail": "The career path and company growth support broad Self-made. Evidence does not establish the original acquisition financing or family platform, so no independent-start subtype is claimed. Reported sale values vary by source and are omitted from biography and classification summaries; the sale itself is sufficient to establish exit."},
+    {"topic": "Socials and Forbes", "detail": "Forbes-first research found an article mentioning Heesen and the sale but no dedicated profile. The only exact-name LinkedIn result belongs to a different hospitality professional in Apeldoorn. Searches found no authenticated personal LinkedIn, Instagram, Personal Website, Facebook, X, YouTube or TikTok account. The official shipyard site is proposed as the authoritative company website."},
+    {"topic": "Tags", "detail": "Shipbuilding is an active catalogue tag whose membership contract exactly covers Heesen's defining wealth-producing and long-term operating role. Narrower catalogue concepts such as Yacht building and Custom yacht building are inactive, so only Shipbuilding is proposed and no candidate is created."},
+    {"topic": "Repository and live-system guardrails", "detail": "Only the requested Frans Heesen dossier was created. The owner input, cohort, tag catalogue, other dossiers, compiled artifacts and live website were not changed; nothing was staged, committed or pushed."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier. Official and independent sources establish Frans Heesen as the Dutch founder of Heesen Yachts, his 1978 boatyard acquisition, the Octopussy breakthrough, 2008 exit, 2012 retirement and death in 2025. Manufacturing / Manufacturing, broad Self-made and Unknown current wealth relationship follow the classification contract. Shipbuilding is the sole exact active tag."
+  }
+}

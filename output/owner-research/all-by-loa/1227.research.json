@@ -1,0 +1,359 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1227,
+    "display_name": "Jan Kulczyk",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The saved Polish identity, exact 24 June 1950 birth and 29 July 2015 death match Jan Jerzy Kulczyk, founder of Kulczyk Holding and Kulczyk Investments. Forbes, official company history, government records and cultural institutions converge on the same dates, Bydgoszcz origin, companies and public profile."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "biography_present": false,
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Jan Jerzy Kulczyk was a Polish investor who founded Kulczyk Holding and transformed it into the international investment group Kulczyk Investments.",
+    "defining_work": "He assembled a diversified portfolio through automotive distribution, brewing, telecommunications, insurance, energy and infrastructure, then expanded the investment model internationally.",
+    "formative_context": "Born in Bydgoszcz and trained in law and foreign trade, he entered business with a large gift from his entrepreneur father and established Interkulpol.",
+    "decisive_moment": "Reorganising Kulczyk Holding as Kulczyk Investments shifted the platform from a Polish privatisation-era group towards resources, power and infrastructure projects across several continents.",
+    "enduring_dimensions": ["Diversified investment and capital allocation", "Automotive, brewing and infrastructure development", "Cultural patronage and scholarship"],
+    "character_detail": "His support for Warsaw's POLIN Museum enabled completion of its core exhibition and became the institution's largest private donation.",
+    "opening_options": [
+      {"mode": "institution_or_asset", "angle": "Begin with Kulczyk Holding as a private engine of Poland's economic transformation."},
+      {"mode": "defining_achievement", "angle": "Lead with the multinational investment platform Kulczyk built from a Polish trading and distribution base."},
+      {"mode": "public_contribution", "angle": "Open with the POLIN Museum exhibition his cultural patronage helped complete."}
+    ],
+    "excluded_transient_context": ["Private-vessel ownership and specifications", "Annual net-worth figures and ranking positions", "Political allegations and parliamentary controversy", "Current portfolio developments after his death", "Medical circumstances of death", "Source publishers and confidence language"],
+    "source_ids": ["S1", "S2", "S3", "S4", "S7", "S8"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "institution_then_person",
+    "calibration_archetypes": ["investor_philanthropist", "acquirer_consolidator"],
+    "reviewed_phrase_exceptions": [],
+    "notes": "The shared anchors are Kulczyk and his investment platform. The short identity card uniquely carries the paternal launch gift, Interkulpol start, sector summary and death year. The long profile instead develops specific industrial achievements, the international reorganisation, family leadership transition and POLIN patronage. Reducing the long profile to the short would lose both the transformation-era projects and the public contribution."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/jan-kulczyk/",
+    "confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The exact Forbes profile matches Jan Kulczyk's Polish citizenship, companies, education, 2015 death, children and telecom, oil and beer wealth sources."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "diversified",
+    "label": "Diversified",
+    "summary": "Kulczyk built his fortune across automotive distribution, brewing, telecommunications, insurance, energy and transport infrastructure rather than through one dominant creation sector.",
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Official group history documents distinct, material platforms in automotive distribution, brewing and toll roads, followed by energy, resources and infrastructure investment. Forbes separately attributes his wealth to telecom, oil and beer and historically categorised his industry as diversified."
+    },
+    "source_ids": ["S1", "S2", "S9"]
+  },
+  "primary_industry": {
+    "classification": "food_beverage",
+    "label": "Food & Beverage",
+    "summary": "At Kulczyk's death, his stake in brewer SABMiller represented more than half of his assessed wealth and was the clearest dominant underlying private asset.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Forbes states that more than half of Kulczyk's wealth was tied to SABMiller. Kulczyk Investments' history identifies the group as SABMiller's largest private shareholder before the AB InBev merger and traces the holding to its co-creation of Kompania Piwowarska."
+    },
+    "source_ids": ["S1", "S2"]
+  },
+  "wealth_origin": {
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "Kulczyk built and greatly expanded his own investment group after receiving a large launch gift and family business platform from his entrepreneur father.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Polish Press Agency historical reporting and contemporary profiles state that Henryk Kulczyk supplied his son with the first million dollars used to establish Interkulpol. Jan subsequently created Kulczyk Holding and expanded it across multiple sectors and countries, supporting substantial personal achievement without portraying the start as independent."
+    },
+    "source_ids": ["S2", "S4", "S10"]
+  },
+  "wealth_relationship": {
+    "classification": "investor",
+    "label": "Investor",
+    "summary": "Kulczyk's principal role was allocating family capital across companies, privatisations and infrastructure projects through Kulczyk Holding and Kulczyk Investments.",
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Official history documents repeated investment formation, acquisitions, strategic shareholdings and international projects across several sectors. Corporate filings and memorial material identify Kulczyk as owner, supervisory-board chairman and strategic principal rather than a day-to-day executive of one operating company."
+    },
+    "source_ids": ["S2", "S3", "S6", "S9"]
+  },
+  "biography": {
+    "plain_text": "Jan Kulczyk was a Polish investor who used a large gift from his businessman father to establish Interkulpol. Beginning in trade, he assembled major interests in brewing, telecommunications, energy and infrastructure, then internationalised them through Kulczyk Investments. He remained one of Poland's most prominent private businessmen until his death in 2015.",
+    "html": "<p>Jan Kulczyk was a Polish investor who used a large gift from his businessman father to establish Interkulpol. Beginning in trade, he assembled major interests in brewing, telecommunications, energy and infrastructure, then internationalised them through Kulczyk Investments. He remained one of Poland's most prominent private businessmen until his death in 2015.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Polish Press Agency reporting and contemporary profiles establish the paternal gift and Interkulpol start; official group history and Forbes support the sector mix, international investment platform, public stature and death."
+    },
+    "source_ids": ["S1", "S2", "S4", "S9", "S10"]
+  },
+  "long_biography": {
+    "plain_text": "Kulczyk Holding became one of the private engines of Poland's post-communist economic transformation. Under Jan Kulczyk, it built the country's largest automotive distribution group, co-founded Kompania Piwowarska and led the consortium behind Poland's first private toll motorway. Stakes in telecommunications, insurance and energy turned the family platform into a diversified investment house.\n\nIn 2007, he recast the business as Kulczyk Investments, pursuing resources, power and infrastructure projects across more than thirty countries. His children moved into leadership before his death, while he remained the group's strategic figure. Beyond business, Kulczyk supported culture and scholarship; his gift to Warsaw's POLIN Museum enabled completion of its core exhibition and became the museum's largest private donation.",
+    "html": "<p>Kulczyk Holding became one of the private engines of Poland's post-communist economic transformation. Under Jan Kulczyk, it built the country's largest automotive distribution group, co-founded Kompania Piwowarska and led the consortium behind Poland's first private toll motorway. Stakes in telecommunications, insurance and energy turned the family platform into a diversified investment house.</p>\r\n<p>In 2007, he recast the business as Kulczyk Investments, pursuing resources, power and infrastructure projects across more than thirty countries. His children moved into leadership before his death, while he remained the group's strategic figure. Beyond business, Kulczyk supported culture and scholarship; his gift to Warsaw's POLIN Museum enabled completion of its core exhibition and became the museum's largest private donation.</p>\r\n",
+    "word_count": 113,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Kulczyk Investments' official history supports the automotive, brewing, motorway, portfolio and internationalisation sequence. Corporate and museum sources establish the leadership transition, his continuing strategic role and the POLIN exhibition gift."
+    },
+    "source_ids": ["S2", "S3", "S7", "S8"]
+  },
+  "proposed_details": [
+    {
+      "field": "middle_names",
+      "value": "Jerzy",
+      "action": "fill_missing",
+      "confidence": {"score": 100, "band": "very_high", "reason": "UK Companies House and the official Polish presidential honours notice identify the exact 1950-born Kulczyk Investments principal as Jan Jerzy Kulczyk."},
+      "source_ids": ["S5", "S6"]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Founder of Kulczyk Investments",
+      "action": "fill_missing",
+      "confidence": {"score": 100, "band": "very_high", "reason": "Kulczyk Investments' official history, the dedicated memorial site and POLIN Museum identify Jan Kulczyk as founder of the international investment group."},
+      "source_ids": ["S2", "S3", "S7"]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Bydgoszcz",
+      "action": "fill_missing",
+      "confidence": {"score": 100, "band": "very_high", "reason": "The City of Bydgoszcz, POLIN Museum, UK Companies House and Luxembourg company records all identify Bydgoszcz as Kulczyk's birthplace."},
+      "source_ids": ["S5", "S6", "S7"]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Jan Kulczyk was a Polish investor who used a large gift from his businessman father to establish Interkulpol. Beginning in trade, he assembled major interests in brewing, telecommunications, energy and infrastructure, then internationalised them through Kulczyk Investments. He remained one of Poland's most prominent private businessmen until his death in 2015.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {"score": 95, "band": "very_high", "reason": "The proposed biography supplies a durable, source-hidden account of Kulczyk's advantaged start, wealth mechanism, sector breadth, international investment platform and death."},
+      "source_ids": ["S1", "S2", "S4", "S9", "S10"]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://www.forbes.com/profile/jan-kulczyk/",
+      "verification": "The Forbes person profile matches Jan Kulczyk's Polish citizenship, 2015 death, education, children and telecom, oil and beer wealth sources. Type ID 11 is copied from the owner-input lookup.",
+      "confidence": {"score": 100, "band": "very_high", "reason": "The exact Forbes profile is a collision-safe match to the saved identity and independently verified company and family context."},
+      "source_ids": ["S1"]
+    },
+    {
+      "type_id": "15",
+      "type": "Personal Website",
+      "url": "https://kulczyk-jan.com/en",
+      "verification": "This dedicated memorial website for Dr Jan Kulczyk is linked from Kulczyk Investments' official history and presents his business and public legacy under his own name. Type ID 15 is copied from the owner-input lookup.",
+      "confidence": {"score": 99, "band": "very_high", "reason": "The dedicated domain is directly connected from the family investment group's official site and consistently matches Kulczyk's verified identity and history."},
+      "source_ids": ["S2", "S3"]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0438",
+      "name": "Automotive distribution",
+      "summary": "Kulczyk built Poland's largest automotive import and dealer group and led it for two decades as an early foundation of his wider business platform.",
+      "relationship_type": "founder_owner_and_distribution_principal",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Automotive distribution places Kulczyk with principals whose defining wealth creation involved sustained control of a substantial vehicle-distribution network, not an isolated dealership or passive holding.",
+      "confidence": {"score": 97, "band": "very_high", "reason": "Official group history documents the creation of Poland's leading automotive group, spanning Volkswagen-group brands and more than twenty years, satisfying the tag's material, long-term and controlling-role tests."},
+      "source_ids": ["S2", "S4"]
+    },
+    {
+      "tag_id": "tag_1108",
+      "name": "Beer industry",
+      "summary": "Kulczyk co-created Kompania Piwowarska and became SABMiller's largest private shareholder, making brewing a defining source and terminal concentration of wealth.",
+      "relationship_type": "co_founder_and_strategic_shareholder",
+      "temporal_scope": "current",
+      "taxonomy_value": "Beer industry captures a materially dominant and long-standing beverage holding within Kulczyk's diversified portfolio, distinct from his automotive and infrastructure investments.",
+      "confidence": {"score": 99, "band": "very_high", "reason": "Official history identifies Kulczyk Holding as co-founder of Poland's largest brewery group and SABMiller's largest private shareholder, while Forbes states that the brewer stake represented more than half of his wealth at death."},
+      "source_ids": ["S1", "S2"]
+    },
+    {
+      "tag_id": "tag_0542",
+      "name": "Infrastructure investment",
+      "summary": "Kulczyk repeatedly developed and invested in transport, power and other infrastructure, including leadership of the consortium behind Poland's first private toll motorway.",
+      "relationship_type": "founder_investor_and_project_sponsor",
+      "temporal_scope": "current",
+      "taxonomy_value": "Infrastructure investment identifies a repeated defining business model across Kulczyk's Polish motorway platform and later international power and infrastructure projects, not a single incidental transaction.",
+      "confidence": {"score": 97, "band": "very_high", "reason": "Official group history documents the motorway consortium, a major public-private partnership and the later international focus on energy and infrastructure across many countries, meeting the tag's repeated-model and materiality requirements."},
+      "source_ids": ["S2", "S3"]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1227",
+      "title": "Jan Kulczyk saved owner record, person ID 1227",
+      "publisher": "Superyacht Network; saved authoritative owner export",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": ["Records person ID 1227, display name Jan Kulczyk, Polish nationality and residence, male gender, Poland birth country, exact 24 June 1950 birth and 29 July 2015 death.", "Records historical vessel relationships used only for identity resolution and excluded from both biographies, wealth prose and tags."]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/profile/jan-kulczyk/",
+      "title": "Jan Kulczyk",
+      "publisher": "Forbes",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": ["Verified dedicated Forbes profile matching Kulczyk's Polish identity, education, children and 2015 death.", "Attributes his wealth to telecom, oil and beer and states that more than half was tied to SABMiller at death.", "Documents the government vehicle contract, brewery acquisition and later energy and financial-services stakes."]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.kulczykinvestments.com/en/about-us/history/",
+      "title": "Kulczyk Investments history",
+      "publisher": "Kulczyk Investments",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": ["Documents Jan Kulczyk's 1991 founding of Kulczyk Holding and its automotive, brewing, motorway, energy, resources and infrastructure investments.", "Identifies the group as co-founder of Kompania Piwowarska and SABMiller's largest private shareholder before the AB InBev transaction.", "Traces the 2007 creation of Kulczyk Investments, international expansion, Sebastian Kulczyk's 2014 appointment and Jan Kulczyk's death on 29 July 2015."]
+    },
+    {
+      "id": "S3",
+      "url": "https://kulczyk-jan.com/en/entrepreneur",
+      "title": "Entrepreneur: Dr Jan Kulczyk",
+      "publisher": "Official Jan Kulczyk memorial site",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": ["Identifies Kulczyk as creator of an international investment group operating across more than thirty countries and four continents.", "Documents his use of an international advisory board and global investment strategy.", "Provides the official memorial context for the dedicated personal website."]
+    },
+    {
+      "id": "S4",
+      "url": "https://dzieje.pl/aktualnosci/jan-kulczyk-najbogatszy-polak-tworca-miedzynarodowego-imperium",
+      "title": "Jan Kulczyk, creator of an international business empire",
+      "publisher": "PAP / Dzieje.pl",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": ["Reports that Kulczyk's father supplied the first million dollars used to establish Interkulpol in 1981.", "Traces his expansion from automotive distribution into a broad international portfolio including energy.", "Corroborates his founder-built achievements while establishing the material family starting advantage."]
+    },
+    {
+      "id": "S5",
+      "url": "https://dziennikustaw.gov.pl/M2015000085101.pdf",
+      "title": "Presidential order awarding the Order of Polonia Restituta",
+      "publisher": "Monitor Polski, official journal of the Republic of Poland",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": ["Gives the exact full name Jan Jerzy Kulczyk in the official honours list.", "Records his distinction for supporting culture and sport in Poland."]
+    },
+    {
+      "id": "S6",
+      "url": "https://find-and-update.company-information.service.gov.uk/officers/mrdrHWxcP7ZACMZFm6To_EGSuPo/appointments",
+      "title": "Jan Jerzy Kulczyk appointments",
+      "publisher": "UK Companies House",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": ["Identifies Jan Jerzy Kulczyk as a Polish director of Kulczyk Investments S.A., born in June 1950.", "Records his directorship through 29 July 2015 and provides a collision-safe corporate identity match."]
+    },
+    {
+      "id": "S7",
+      "url": "https://polin.pl/en/dr-jan-kulczyk",
+      "title": "Dr Jan Kulczyk",
+      "publisher": "POLIN Museum of the History of Polish Jews",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": ["Identifies Kulczyk as a Polish entrepreneur born in Bydgoszcz and founder of Kulczyk Holding and Kulczyk Investments.", "Documents his legal and foreign-trade education, public-business roles and cultural patronage.", "Records his major gift towards the museum's core exhibition as its largest private donation."]
+    },
+    {
+      "id": "S8",
+      "url": "https://polin.pl/en/news/2015/07/29/dr-jan-kulczyk-a-distinguished-donor-and-friend-of-polin-museum",
+      "title": "Dr Jan Kulczyk, distinguished donor and friend of POLIN Museum, has passed away",
+      "publisher": "POLIN Museum of the History of Polish Jews",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": ["Records Kulczyk's death on 29 July 2015 aged 65.", "States that his gift enabled creation of the core exhibition and was the museum's largest one-time private donation.", "Describes his broader support for Polish cultural institutions."]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.forbes.com/sites/luizaoleszczuk/2015/07/29/polands-richest-man-and-legendary-investor-jan-kulczyk-dead-at-65/",
+      "title": "Poland's richest man and investor Jan Kulczyk dead at 65",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": ["Independently confirms Kulczyk's identity, investor stature and death in Vienna aged 65.", "Corroborates his broad investment history and prominence in Polish private business."]
+    },
+    {
+      "id": "S10",
+      "url": "https://finanse.wp.pl/jan-kulczyk-dobieram-spolki-jak-wino-6114793304492161a",
+      "title": "Jan Kulczyk: I choose companies like wine",
+      "publisher": "Wirtualna Polska Finanse",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": ["Reports Kulczyk's own account that his entrepreneur father gave him the first million dollars used to found Interkulpol.", "Describes a multi-generation entrepreneurial family background and his progression through Volkswagen distribution to Kulczyk Holding.", "Supports the advantaged-start classification without treating the later fortune as inherited in full."]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.bydgoszcz.pl/miasto/wyroznienia-i-nagrody/bydgoskie-autografy/jan-kulczyk/",
+      "title": "Jan Kulczyk",
+      "publisher": "City of Bydgoszcz",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": ["Gives Kulczyk's exact 24 June 1950 Bydgoszcz birth and 29 July 2015 Vienna death.", "Documents his education, Interkulpol and Kulczyk Holding formation, international investment platform and sectors."]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Identity resolution",
+      "detail": "Identity confidence is 100. The saved exact dates, Polish nationality and historical context align uniquely with Jan Jerzy Kulczyk. Forbes, official company history, UK filings, the Polish official journal and institutions in Bydgoszcz and Warsaw converge on the same person."
+    },
+    {
+      "topic": "Advantaged-start classification",
+      "detail": "Kulczyk did not inherit the completed fortune represented by his later investment group, but he did receive a large launch gift from his entrepreneur father and entered business through a multi-generation family platform. Self-made — advantaged start preserves both the material starting advantage and the separately evidenced scale he built."
+    },
+    {
+      "topic": "Industry distinction",
+      "detail": "Diversified describes how Kulczyk created wealth across several material sectors. Food & Beverage describes the strongest terminal concentration because Forbes places more than half of his assessed wealth in SABMiller and official history identifies the family group as its largest private shareholder. The fields answer different questions and are not contradictory."
+    },
+    {
+      "topic": "Investor relationship",
+      "detail": "Kulczyk founded the holding structure and held supervisory roles, but his recurring principal activity was selecting, structuring and governing investments across companies rather than operating one underlying enterprise. Investor therefore best represents the terminal relationship while Founder remains explicit in the identity and biography."
+    },
+    {
+      "topic": "Social-profile coverage",
+      "detail": "The dedicated Forbes profile and official memorial website are verified and proposed under their exact link types. No collision-safe personal LinkedIn, Instagram or other public personal account was found, and no posthumous account is inferred from name-only matches."
+    },
+    {
+      "topic": "Tag minimum set",
+      "detail": "Automotive distribution, Beer industry and Infrastructure investment capture three independently material, defining components of Kulczyk's wealth mechanism and business model. Telecommunications, energy, chemicals, insurance and cultural patronage remain in biography or classification evidence to avoid turning a diversified portfolio into an exhaustive tag list."
+    },
+    {
+      "topic": "Sensitive and transient context",
+      "detail": "Political allegations, parliamentary inquiries, fluctuating valuations and annual ranking positions were reviewed only for source context and excluded from both biographies because they are unnecessary to the durable identity and wealth mechanism. No private-vessel fact appears in biography or tag evidence."
+    },
+    {
+      "topic": "Repository and live-system guardrails",
+      "detail": "Only this dossier was created. No owner input, catalogue, taxonomy candidate, cohort status, compiled output or live record was changed."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier for Jan Jerzy Kulczyk. Forbes, official company history, government records and cultural institutions establish the exact Polish identity, Bydgoszcz birth, investment-group founder role and 2015 death. Wealth creation is Diversified, terminal primary industry is Food & Beverage, origin is Self-made — advantaged start, and relationship is Investor. The dedicated Forbes profile and memorial website are verified. The dossier proposes middle name, birthplace, known-for title, a 51-word biography, two social links and three active tags. The 113-word long biography uses two independent paragraphs and an institution-led structure. No live action was taken."
+  }
+}

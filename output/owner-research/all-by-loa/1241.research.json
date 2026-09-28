@@ -1,0 +1,265 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1241,
+    "display_name": "Walter G Ladd",
+    "identity_confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "The saved American identity, G middle initial and 1933 death year align with Walter Graeme Ladd. Independent yacht histories connect that exact New Jersey-based name to the historical vessel relationship, while the Macy Foundation's archival history establishes his full identity, marriage, work and estate."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "name_suffix", "secondary_nationality", "main_residence_country", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "birth_age", "birth_age_at_date", "death_day", "death_month", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["secondary_nationality", "main_residence_country", "known_for_title", "place_of_birth", "birth_day", "birth_month", "birth_year", "death_day", "death_month", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["birth_age", "birth_age_at_date", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "biography_present": false,
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Walter Graeme Ladd was an American merchant, investment manager and philanthropist who managed the investments and estates he shared with his wife, Kate Macy Ladd.",
+    "defining_work": "He administered the couple's inherited Macy-family fortune and estates and used his will to establish the Kate Macy Ladd Fund for convalescent care.",
+    "formative_context": "Born in 1856 to an upper-middle-class Brooklyn family, he described himself as a merchant when he married oil-and-shipping heiress Kate Macy in 1883.",
+    "decisive_moment": "After marriage he left outside business pursuits to care for his frequently ill wife and manage their investments and properties in New Jersey and Maine.",
+    "enduring_dimensions": ["Stewardship of family investments and estates", "Convalescent-care philanthropy", "Joint planning of a charitable foundation"],
+    "character_detail": "The foundation history distinguishes him from later reports that incorrectly called him an attorney or railroad executive.",
+    "opening_options": [
+      {"mode": "defining_achievement", "angle": "Lead with the fund created under his will to preserve Kate Macy Ladd's convalescent-care work."},
+      {"mode": "inherited_responsibility", "angle": "Begin with his stewardship of the Macy-derived fortune and the couple's New Jersey and Maine estates."},
+      {"mode": "formative_episode", "angle": "Open with his Brooklyn upbringing and recorded occupation as a merchant before marriage."}
+    ],
+    "excluded_transient_context": ["Private-vessel ownership and specifications", "Modern valuation equivalents", "Unverified attorney and railroad descriptions", "Source publishers and confidence language"],
+    "source_ids": ["S1", "S2", "S3", "S4"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "defining_achievement",
+    "narrative_shape": "achievement_then_backstory",
+    "calibration_archetypes": ["investor_philanthropist", "heir_custodian"],
+    "reviewed_phrase_exceptions": [],
+    "notes": "The short biography is an identity card linking merchant origins, investment stewardship and the convalescent-care bequest. The long profile opens with the bequest's institutional consequence, then explains the Macy-derived fortune, his retreat from outside business and the unrealised joint foundation. Reducing the long profile to the short would lose the sequence from estate stewardship to philanthropic divergence and testamentary continuity."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Targeted searches of Forbes for Walter G. Ladd and Walter Graeme Ladd produced no dedicated profile; the historical subject predates Forbes' modern wealth-profile coverage."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "energy",
+    "label": "Energy",
+    "summary": "The fortune Ladd managed came principally through his wife's Macy inheritance, whose family firm developed an early New York oil refinery and was ultimately acquired by Standard Oil after earlier success in shipping.",
+    "confidence": {
+      "score": 83,
+      "band": "medium",
+      "reason": "The Macy Foundation traces the family fortune from shipping into oil refining and sale to Standard Oil, while an independent historical account identifies Kate Macy and her brother as principal heirs. Energy is the best-supported durable origin sector, although the sources do not allocate the inherited estate between shipping proceeds, refinery proceeds and later investments."
+    },
+    "source_ids": ["S1", "S4"]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "After leaving outside business pursuits, Ladd's principal documented economic role was managing the couple's investments and estates rather than operating the inherited refinery business.",
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "The Macy Foundation's archival history directly says Ladd focused on managing the couple's investments and estates after marriage, and independent historical reporting likewise describes management of his wife's fortune as his chief occupation."
+    },
+    "source_ids": ["S1", "S4"]
+  },
+  "wealth_origin": {
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Ladd gained stewardship of the principal documented fortune through his marriage to Kate Macy, an heiress to the Macy shipping-and-oil estate, while retaining responsibility for its investments and properties.",
+    "confidence": {
+      "score": 87,
+      "band": "high",
+      "reason": "The marriage, Kate Macy's family inheritance and Ladd's subsequent management of the couple's fortune are directly supported. The classification records access and stewardship through marriage without claiming that legal title to Kate's assets transferred to him."
+    },
+    "source_ids": ["S1", "S2", "S4"]
+  },
+  "wealth_relationship": {
+    "classification": "investor",
+    "label": "Investor",
+    "summary": "Ladd's sustained relationship to the family wealth was the allocation and management of investments and real-estate holdings rather than operation of an underlying industrial company.",
+    "confidence": {
+      "score": 85,
+      "band": "high",
+      "reason": "The strongest archival account describes investment and estate management as Ladd's continuing work after he abandoned outside business. Investor is therefore more precise than Operator or Heir / family shareholder."
+    },
+    "source_ids": ["S1", "S4"]
+  },
+  "biography": {
+    "plain_text": "Walter Graeme Ladd was an American merchant and investment manager who oversaw the fortune and estates he shared with his wife, heiress Kate Macy Ladd. He later concentrated on her care and their properties, while helping plan a charitable foundation and endowing a fund for women's convalescent care through his will.",
+    "html": "<p>Walter Graeme Ladd was an American merchant and investment manager who oversaw the fortune and estates he shared with his wife, heiress Kate Macy Ladd. He later concentrated on her care and their properties, while helping plan a charitable foundation and endowing a fund for women's convalescent care through his will.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The Macy Foundation's archival history supports his merchant identity, marriage, investment and estate management, caregiving role, joint foundation planning and testamentary fund."
+    },
+    "source_ids": ["S1"]
+  },
+  "long_biography": {
+    "plain_text": "Walter Graeme Ladd's most durable achievement was the Kate Macy Ladd Fund, created under his will to continue the convalescent care his wife had begun at their Natirar estate. The bequest preserved a practical philanthropic priority after the couple's earlier plan for a joint Macy–Ladd foundation gave way to differing interests in convalescence and medical science.\n\nBorn in 1856 and raised in an upper-middle-class Brooklyn household, Ladd recorded his occupation as merchant when he married Kate Macy in 1883. Her inherited fortune derived from a family shipping concern that entered oil refining and was later acquired by Standard Oil. Ladd eventually gave up outside business, devoting himself to his frequently ill wife's care and to managing their investments and estates in New Jersey and Maine.",
+    "html": "<p>Walter Graeme Ladd's most durable achievement was the Kate Macy Ladd Fund, created under his will to continue the convalescent care his wife had begun at their Natirar estate. The bequest preserved a practical philanthropic priority after the couple's earlier plan for a joint Macy–Ladd foundation gave way to differing interests in convalescence and medical science.</p>\r\n<p>Born in 1856 and raised in an upper-middle-class Brooklyn household, Ladd recorded his occupation as merchant when he married Kate Macy in 1883. Her inherited fortune derived from a family shipping concern that entered oil refining and was later acquired by Standard Oil. Ladd eventually gave up outside business, devoting himself to his frequently ill wife's care and to managing their investments and estates in New Jersey and Maine.</p>\r\n",
+    "word_count": 126,
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "The archival foundation history directly supports the fund, unrealised joint-foundation plan, differing philanthropic interests, birth year, upbringing, merchant occupation, marriage and later management and caregiving. It also traces the inherited Macy fortune through shipping, refining and sale to Standard Oil."
+    },
+    "source_ids": ["S1", "S2"]
+  },
+  "proposed_details": [
+    {
+      "field": "middle_names",
+      "value": "Graeme",
+      "action": "correct_existing",
+      "existing_value": "G",
+      "confidence": {"score": 98, "band": "very_high", "reason": "The Macy Foundation history, Somerset County records and independent yacht history consistently identify the 1933-deceased subject as Walter Graeme Ladd."},
+      "source_ids": ["S1", "S2", "S3", "S5"]
+    },
+    {
+      "field": "main_residence_country",
+      "value": "United States",
+      "action": "fill_missing",
+      "confidence": {"score": 96, "band": "very_high", "reason": "The Macy Foundation records his Brooklyn upbringing and management of estates in New Jersey and Maine; Somerset County identifies Natirar as the couple's estate."},
+      "source_ids": ["S1", "S3"]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Merchant, investment manager and philanthropist",
+      "action": "fill_missing",
+      "confidence": {"score": 92, "band": "high", "reason": "The archival history records merchant as his own occupation, documents his later investment-and-estate management and identifies the fund under his will as his principal philanthropic undertaking."},
+      "source_ids": ["S1"]
+    },
+    {
+      "field": "birth_year",
+      "value": 1856,
+      "action": "fill_missing",
+      "confidence": {"score": 94, "band": "high", "reason": "The Macy Foundation's researched institutional history states that Walter Graeme Ladd was born in 1856; weaker secondary pages sometimes give 1857, so no exact day or month is proposed."},
+      "source_ids": ["S1"]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Walter Graeme Ladd was an American merchant and investment manager who oversaw the fortune and estates he shared with his wife, heiress Kate Macy Ladd. He later concentrated on her care and their properties, while helping plan a charitable foundation and endowing a fund for women's convalescent care through his will.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {"score": 94, "band": "high", "reason": "The replacement supplies a durable account of his commercial, investment, caregiving and philanthropic roles, all supported by the Macy Foundation's archival history."},
+      "source_ids": ["S1"]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1241",
+      "title": "Walter G Ladd saved owner record, person ID 1241",
+      "publisher": "Superyacht Network; saved authoritative owner export",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": ["Records person ID 1241, display name Walter G Ladd, American nationality, male gender, United States birth country and 1933 death year.", "Contains no biography or social profiles; its historical vessel relationship was used only as an identity lead and is excluded from published biography prose and tags."]
+    },
+    {
+      "id": "S1",
+      "url": "https://macyfoundation.org/assets/img/macy-history-book--final-2012.pdf",
+      "title": "The Origins of the Josiah Macy Jr. Foundation",
+      "publisher": "Josiah Macy Jr. Foundation",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": ["Identifies Walter Graeme Ladd as born in 1856, the son of William Whitehead and Sarah Hannah Phillips Ladd, raised in an upper-middle-class Brooklyn home and recorded as a merchant on his 1883 marriage licence.", "States that after marrying Kate Macy he left outside business to care for her and manage their investments and estates in New Jersey and Maine.", "Traces the Macy family business through shipping, oil refining and acquisition by Standard Oil.", "Documents the couple's proposed 1922 Macy–Ladd Foundation, their later divergence in philanthropic interests and the Kate Macy Ladd Fund created under Walter's will for convalescent care."]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.encyclopedia.com/women/dictionaries-thesauruses-pictures-and-press-releases/ladd-kate-macy-1863-1945",
+      "title": "Ladd, Kate Macy (1863–1945)",
+      "publisher": "Encyclopedia.com; Dictionary of Women Worldwide",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": ["Identifies Kate Macy's husband as Walter Graeme Ladd and records their marriage on 5 December 1883.", "Corroborates the couple's identity and Kate Macy Ladd's philanthropic work."]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.somersetcountyparks.org/sites/g/files/vyhlif8281/f/uploads/natirar_park_brochure.pdf",
+      "title": "Natirar Park brochure",
+      "publisher": "Somerset County Park Commission",
+      "tier": 1,
+      "accessed_at": "2026-09-28",
+      "supports": ["Identifies Natirar in Somerset County, New Jersey, as the estate of Kate Macy Ladd and Walter Graeme Ladd.", "Explains that the convalescent facility and later estate sale followed provisions of Walter Ladd's will and places the sale at the fiftieth anniversary of his death in 1933."]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.portlandmonthly.com/portmag/east-of-eden/",
+      "title": "East of Eden",
+      "publisher": "Portland Monthly Magazine",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": ["Reports that Ladd had worked as an insurance broker but principally managed the fortune of his wife, Kate Everit Macy.", "Traces the Macy fortune from shipping commissions through oil refining and sale to Standard Oil and identifies Kate and her brother as principal heirs."]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.sandemanyachtcompany.co.uk/yacht/410/Cox---Stevens-135-ft-Gaff-Schooner-1930-",
+      "title": "Cox & Stevens 135 ft Gaff Schooner 1930",
+      "publisher": "Sandeman Yacht Company",
+      "tier": 2,
+      "accessed_at": "2026-09-28",
+      "supports": ["Identifies the historical commissioning owner as New Jersey-based yachtsman Walter G. Ladd and records his death in 1933.", "Used only to connect the abbreviated saved identity to Walter Graeme Ladd; yacht facts are excluded from biographies, classifications and tags."]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Identity resolution",
+      "detail": "Identity confidence is 97. The G initial, American nationality, 1933 death year and historical New Jersey yacht connection align with Walter Graeme Ladd; the institutional foundation history then supplies his full name and life history."
+    },
+    {
+      "topic": "Birth-year discrepancy",
+      "detail": "The Macy Foundation's archival history gives 1856, while weaker modern secondary pages often give 1857. The dossier proposes 1856 from the stronger institutional history but leaves birth day and month blank."
+    },
+    {
+      "topic": "Wealth and marriage",
+      "detail": "Evidence establishes that Kate Macy inherited the principal fortune and that Walter managed the couple's investments and estates. Marriage / family transfer describes his access and stewardship, not a finding that legal title to her inherited assets passed to him."
+    },
+    {
+      "topic": "Industry classifications",
+      "detail": "Energy captures the refinery business that materially created the transferred Macy fortune, though shipping preceded it and the estate was later invested broadly. Finance & Investments captures Walter's documented mature role managing investments and estates rather than an unsupported claim of continued oil-company operation."
+    },
+    {
+      "topic": "Occupation conflict",
+      "detail": "Later summaries variously call Ladd a lawyer or insurance broker. The Macy Foundation history says independent scholarship rejected the attorney and railroad accounts and gives merchant from the marriage licence; the biography therefore uses merchant and the directly documented later investment-management role."
+    },
+    {
+      "topic": "Forbes and social-profile coverage",
+      "detail": "No dedicated Forbes profile or collision-safe personal LinkedIn, Instagram, personal website or other suitable social profile was found for this historical figure. No social additions are proposed."
+    },
+    {
+      "topic": "Tag minimum set",
+      "detail": "No active catalogue tag is proposed. Investment stewardship and convalescent philanthropy are well documented in the narrative, but the available evidence does not justify presenting either as a current or defining specialist taxonomy identity beyond the dossier's historical classifications."
+    },
+    {
+      "topic": "Repository and live-system guardrails",
+      "detail": "Only this dossier was created. No owner input, catalogue, taxonomy candidate, cohort status, compiled output or live record was changed."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person dossier for Walter Graeme Ladd. The Macy Foundation's archival history and independent estate and yacht records connect the saved Walter G Ladd identity to the Brooklyn-raised merchant and investment manager who died in 1933. Forbes was checked and no profile exists. Wealth creation is classified as Energy through the transferred Macy oil-refining fortune, primary industry as Finance & Investments, origin as Marriage / family transfer and relationship as Investor. The dossier proposes his full middle name, United States residence, birth year, known-for title and a 51-word biography. The independent 119-word long biography uses two paragraphs and an achievement-led structure. No social links or tags are proposed, and no live action was taken."
+  }
+}

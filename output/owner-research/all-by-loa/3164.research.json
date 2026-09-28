@@ -242,21 +242,6 @@
   },
   "proposed_details": [
     {
-      "field": "main_residence_country",
-      "existing_value": "United Kingdom",
-      "value": "Jersey",
-      "action": "correct_existing",
-      "confidence": {
-        "score": 99,
-        "band": "very_high",
-        "reason": "Companies House records Jersey as Roberts's country of residence, and Orgueil's official history describes him as a Channel Islands manager living in Jersey since 2011."
-      },
-      "source_ids": [
-        "S3",
-        "S5"
-      ]
-    },
-    {
       "field": "known_for_title",
       "value": "Founder and Chief Investment Officer of Orgueil Capital",
       "action": "fill_missing",
@@ -352,7 +337,23 @@
       "taxonomy_value": "The owner created material wealth through, controlled substantial operations in, or had a defining long-term operating mandate in Hedge funds."
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "field": "main_residence_country",
+      "value": "Jersey",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Companies House records Jersey as Roberts's country of residence, and Orgueil's official history describes him as a Channel Islands manager living in Jersey since 2011."
+      },
+      "source_ids": [
+        "S3",
+        "S5"
+      ],
+      "review_note": "The current owner-form lookup has no valid main_residence_country option for 'Jersey'; this supported value is retained for human review rather than automatic compilation.",
+      "existing_value": "United Kingdom"
+    }
+  ],
   "sources": [
     {
       "id": "S0",
@@ -487,9 +488,9 @@
       "topic": "Residence correction",
       "detail": "The saved record says United Kingdom, but Companies House identifies Jersey as Roberts's country of residence and his firm says he moved there in 2011. Jersey is a Crown Dependency rather than part of the United Kingdom, so the dossier proposes a correction rather than treating it as a secondary residence."
     },
-  {
-    "topic": "Wealth origin",
-    "detail": "Wealth origin is classified as broad Self-made under the amended reasonable-inference policy. Roberts's multidecade investment career, Horseman partnership, founding and control of Orgueil, and substantial personal founder investment establish an earned-and-built materiality link. The exact contribution of compensation, partnership economics, investment gains, family capital or other starting resources remains unresolved, so neither Self-made independent nor Self-made advantaged is supportable; no evidence establishes inheritance or family transfer as a principal mechanism."
+    {
+      "topic": "Wealth origin",
+      "detail": "Wealth origin is classified as broad Self-made under the amended reasonable-inference policy. Roberts's multidecade investment career, Horseman partnership, founding and control of Orgueil, and substantial personal founder investment establish an earned-and-built materiality link. The exact contribution of compensation, partnership economics, investment gains, family capital or other starting resources remains unresolved, so neither Self-made independent nor Self-made advantaged is supportable; no evidence establishes inheritance or family transfer as a principal mechanism."
     },
     {
       "topic": "Fund capital versus personal wealth",

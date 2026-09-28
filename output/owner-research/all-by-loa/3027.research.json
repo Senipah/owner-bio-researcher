@@ -434,23 +434,6 @@
       ]
     },
     {
-      "field": "death_month",
-      "existing_value": "May",
-      "value": "",
-      "action": "correct_existing",
-      "confidence": {
-        "score": 100,
-        "band": "very_high",
-        "reason": "The owner is recorded Alive, appears in current 2026 reporting and the three death fields reproduce his documented birth date. The value is misplaced and should be cleared."
-      },
-      "source_ids": [
-        "S0",
-        "S2",
-        "S4",
-        "S5"
-      ]
-    },
-    {
       "field": "death_year",
       "existing_value": "1983",
       "value": "",
@@ -540,6 +523,23 @@
         "S3"
       ],
       "review_note": "Do not create a duplicate Twitter social. Confirm whether the stored handle redirects, was renamed or belongs to the same account before replacing it with the profile linked by the official Telegram channel."
+    },
+    {
+      "field": "death_month",
+      "value": "",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "The owner is recorded Alive, appears in current 2026 reporting and the three death fields reproduce his documented birth date. The value is misplaced and should be cleared."
+      },
+      "source_ids": [
+        "S0",
+        "S2",
+        "S4",
+        "S5"
+      ],
+      "review_note": "The current owner-form lookup has no valid death_month option for ''; this supported value is retained for human review rather than automatic compilation.",
+      "existing_value": "May"
     }
   ],
   "sources": [

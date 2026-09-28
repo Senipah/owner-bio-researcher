@@ -1,0 +1,129 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1245,
+    "display_name": "John Laithwaite",
+    "identity_confidence": {"score": 100, "band": "very_high", "reason": "The exact name, British nationality, United Kingdom residence and June 1944 birth month and year in the owner record match Companies House records for the West Yorkshire businessman and the detailed trade obituary of JLA founder John Laithwaite. JLA's official history independently identifies that founder and his Ripponden business."}
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": ["title", "middle_names", "name_suffix", "secondary_nationality", "secondary_residence_country", "known_for_title", "place_of_birth", "birth_day", "death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "biography", "unknown_name"],
+    "researchable_missing_details": ["middle_names", "secondary_nationality", "known_for_title", "place_of_birth", "birth_day", "biography"],
+    "optional_missing_details": ["title", "name_suffix", "secondary_residence_country"],
+    "inapplicable_or_system_details": ["death_day", "death_month", "death_year", "death_age", "death_age_at_date", "internal_notes", "unknown_name"],
+    "existing_social_types": [],
+    "missing_priority_social_types": ["LinkedIn", "Instagram", "Personal Website"],
+    "social_type_lookup": {"2": "Facebook", "3": "Twitter", "4": "Youtube", "5": "LinkedIn", "6": "Trip Advisor", "7": "Vimeo", "8": "Flickr", "9": "Instagram", "10": "Wikipedia", "11": "Forbes", "12": "Zillow", "14": "Company Website", "15": "Personal Website", "16": "TikTok"}
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "John Laithwaite was a British entrepreneur who founded JLA, a commercial-equipment rental and maintenance business based in Ripponden, West Yorkshire.",
+    "defining_work": "He developed a recurring-service model that bundled laundry machines, maintenance and repairs into predictable monthly payments, turning a small equipment trade into a national provider.",
+    "formative_context": "Laithwaite began as a Manchester bank clerk, then learned the laundry trade while working with his father in a group of launderettes. Scarcity of dryers led him to import machines and sell surplus equipment from home.",
+    "decisive_moment": "After a container of equipment was lost when its ferry sank, he replaced the shipment with new machines and continued expanding rather than abandoning the young business.",
+    "enduring_dimensions": ["Founder of John Laithwaite Associates, later JLA", "Creation of the Total Care equipment-and-service model", "Expansion from laundry equipment into business-critical maintenance services"],
+    "character_detail": "An early second-hand-equipment auction drew so much traffic to the Ripponden site that police were called, giving the new company an unlikely first burst of visibility.",
+    "opening_options": [
+      {"mode": "decisive_event", "angle": "Open with Laithwaite rebuilding after a ferry sank with his equipment shipment aboard."},
+      {"mode": "defining_achievement", "angle": "Open with the Total Care model that combined equipment access, servicing and repair risk in one monthly contract."},
+      {"mode": "formative_episode", "angle": "Open with imported dryers filling Laithwaite's garage and those of his friends as he tested demand for second-hand machines."}
+    ],
+    "excluded_transient_context": ["Vessel ownership and specifications", "Unverified personal wealth estimates", "Private family details beyond relevant early business context", "Current JLA management after his ownership era", "Individual investment-company filings without a clear link to principal wealth"],
+    "source_ids": ["S0", "S1", "S2", "S3", "S4", "S5", "S6"]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "decision_then_consequence",
+    "calibration_archetypes": ["founder_operator"],
+    "reviewed_phrase_exceptions": [],
+    "notes": "The short biography provides a compact founder, business-model and exit orientation. The long biography takes a separate narrative route through the early supply problem, ferry loss and decision to rebuild, then follows how that response shaped JLA's contracted-service model. It cannot be reduced to the short without losing the human decision sequence and operating mechanics."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {"score": 100, "band": "very_high", "reason": "Forbes-first exact-name, company-name and site-specific searches found no dedicated Forbes personal profile for JLA founder John Laithwaite."}
+  },
+  "wealth_creation_industry": {
+    "classification": "service",
+    "label": "Service",
+    "summary": "Laithwaite created his wealth through JLA's supply, rental and contracted maintenance of commercial laundry equipment for institutional and business customers.",
+    "confidence": {"score": 98, "band": "very_high", "reason": "JLA and Hg describe the company's core proposition as long-term equipment rental and mission-critical maintenance services. Although machines were supplied, the recurring service contract rather than manufacturing was the defining economic model."},
+    "source_ids": ["S1", "S2", "S4", "S5"]
+  },
+  "primary_industry": {
+    "classification": "service",
+    "label": "Service",
+    "summary": "Service remains the best-supported principal-industry fallback at Laithwaite's death because JLA produced the identifiable fortune and no later holding is publicly shown to have displaced it.",
+    "confidence": {"score": 88, "band": "high", "reason": "The founder sold control of JLA in 2010, but the company sale is the documented wealth event and public records do not disclose a later dominant operating asset. Under the deceased-owner fallback, the origin sector is retained rather than speculating from private investment vehicles."},
+    "source_ids": ["S2", "S4", "S5", "S6"]
+  },
+  "wealth_origin": {
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "Laithwaite founded JLA himself after gaining practical experience in his father's launderettes, an industry platform that helped him recognise equipment-supply demand without evidence that he inherited the core company or fortune.",
+    "confidence": {"score": 94, "band": "high", "reason": "The trade obituary documents both the father's launderette business and Laithwaite's separate progression from importing and reselling dryers to founding JLA. Company and transaction sources consistently identify him as JLA's founder, supporting creation rather than transfer while preserving the material family-business advantage."},
+    "source_ids": ["S1", "S2", "S5"]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Laithwaite created and built JLA, the enterprise that principally explains his wealth, before selling a majority interest to HgCapital.",
+    "confidence": {"score": 100, "band": "very_high", "reason": "JLA's own history, the specialist obituary and acquisition reporting all directly identify Laithwaite as the founder, while Hg's investment disclosure establishes the later control transaction."},
+    "source_ids": ["S1", "S2", "S4", "S5"]
+  },
+  "biography": {
+    "plain_text": "John Laithwaite was a British entrepreneur who founded commercial-equipment specialist JLA in West Yorkshire. Beginning with imported and second-hand laundry machines, he built a contracted rental and maintenance model serving institutions across Britain. JLA became the country's leading commercial-laundry service provider before Laithwaite sold a majority stake to private-equity firm HgCapital in 2010.",
+    "html": "<p>John Laithwaite was a British entrepreneur who founded commercial-equipment specialist JLA in West Yorkshire. Beginning with imported and second-hand laundry machines, he built a contracted rental and maintenance model serving institutions across Britain. JLA became the country's leading commercial-laundry service provider before Laithwaite sold a majority stake to private-equity firm HgCapital in 2010.</p>\r\n",
+    "word_count": 53,
+    "confidence": {"score": 98, "band": "very_high", "reason": "First-party company history, a detailed trade obituary and Hg disclosures establish the founder identity, early equipment trade, contracted service model, national market position and majority investment."},
+    "source_ids": ["S1", "S2", "S4", "S5"]
+  },
+  "long_biography": {
+    "plain_text": "A shortage of commercial dryers gave John Laithwaite his opening. While working with his father in Manchester launderettes, he imported machines from the United States and sold the surplus from home, filling his garage and borrowing space from friends. He then bought a run-down Yorkshire mill for storage and founded John Laithwaite Associates in 1973.\n\nThe young business survived an early blow when a ferry sank with a container of equipment aboard. Laithwaite responded by ordering new stock and continuing to expand. JLA moved beyond machine sales into Total Care, pairing equipment with maintenance and repair cover for a monthly payment. That recurring model attracted hospitals, care homes, hotels and residential operators, and eventually supported a private-equity transaction valuing the business at about £150 million.",
+    "html": "<p>A shortage of commercial dryers gave John Laithwaite his opening. While working with his father in Manchester launderettes, he imported machines from the United States and sold the surplus from home, filling his garage and borrowing space from friends. He then bought a run-down Yorkshire mill for storage and founded John Laithwaite Associates in 1973.</p>\r\n<p>The young business survived an early blow when a ferry sank with a container of equipment aboard. Laithwaite responded by ordering new stock and continuing to expand. JLA moved beyond machine sales into Total Care, pairing equipment with maintenance and repair cover for a monthly payment. That recurring model attracted hospitals, care homes, hotels and residential operators, and eventually supported a private-equity transaction valuing the business at about £150 million.</p>\r\n",
+    "word_count": 125,
+    "confidence": {"score": 94, "band": "high", "reason": "The specialist trade obituary supplies the detailed early-business sequence and ferry-loss episode; JLA's official timeline supports formation and Total Care, while Hg and transaction reporting support the contracted model and transaction value."},
+    "source_ids": ["S1", "S2", "S4", "S6"]
+  },
+  "proposed_details": [
+    {"field": "mortality_status", "value": "Dead", "action": "correct_existing", "existing_value": "Alive", "confidence": {"score": 100, "band": "very_high", "reason": "JLA publicly announced its founder's death in March 2023 and the commercial-laundry trade press published a detailed obituary; Dead is an exact visible mortality option."}, "source_ids": ["S2", "S7"]},
+    {"field": "known_for_title", "value": "Founder of JLA", "action": "fill_missing", "confidence": {"score": 100, "band": "very_high", "reason": "The official company history and trade obituary directly identify Laithwaite as JLA's founder."}, "source_ids": ["S1", "S2"]},
+    {"field": "birth_day", "value": "26", "action": "fill_missing", "confidence": {"score": 98, "band": "very_high", "reason": "The detailed industry obituary gives 26 June 1944, matching the saved June 1944 values and independent Companies House month-and-year records."}, "source_ids": ["S2", "S3"]}
+  ],
+  "proposed_socials": [
+    {"type_id": "14", "type": "Company Website", "url": "https://jla.com/who-we-are/", "verification": "JLA's official history identifies John Laithwaite as the company's founder and traces the business he created from its Ripponden opening through the Total Care model. Type ID 14 is copied from the owner-input lookup.", "confidence": {"score": 100, "band": "very_high", "reason": "This is the official website of Laithwaite's principal founded company and contains direct exact-person founder evidence."}, "source_ids": ["S1"]}
+  ],
+  "proposed_tags": [],
+  "candidates_requiring_review": [],
+  "sources": [
+    {"id": "S0", "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1245", "title": "John Laithwaite owner record, person ID 1245", "publisher": "Superyacht Network; saved authoritative owner export", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Immutable name and person ID", "British nationality and United Kingdom residence", "June 1944 birth month and year", "Saved Alive status predating the 2023 death", "Former Dylan Anne relationship from 2021 to 2022"]},
+    {"id": "S1", "url": "https://jla.com/who-we-are/", "title": "Who we are", "publisher": "JLA", "tier": 1, "accessed_at": "2026-09-28", "supports": ["John Laithwaite as founder and company namesake", "1973 establishment in Ripponden", "Family-run origins", "Total Care launch and model", "Commercial-equipment and maintenance services", "Hg and later Cinven investment milestones"]},
+    {"id": "S2", "url": "https://www.laundryandcleaningnews.com/news/obituary-john-laithwaite-founder-of-jla-11090324/", "title": "Obituary: John Laithwaite, founder of JLA", "publisher": "Laundry and Cleaning News", "tier": 2, "accessed_at": "2026-09-28", "supports": ["Death on 11 March 2023", "Birth on 26 June 1944", "Youth in Alkrington, Manchester", "Banking start and work in father's launderettes", "Dryer-import and resale origins", "Mill purchase and 1973 company formation", "Ferry-loss recovery", "Growth into the largest UK laundry-equipment distributor", "HgCapital majority transaction"]},
+    {"id": "S3", "url": "https://find-and-update.company-information.service.gov.uk/officers/RLanj3oDnyQ41NOpAD9QWVkFtMk/appointments", "title": "John Laithwaite personal appointments", "publisher": "UK Companies House", "tier": 1, "accessed_at": "2026-09-28", "supports": ["June 1944 birth month and year", "British nationality", "United Kingdom residence", "Exact-name identity cross-check"]},
+    {"id": "S4", "url": "https://www.hgcapitaltrust.com/news-insights/news/archive/23-10-2015", "title": "HgCapital sells minority stake in JLA", "publisher": "HgCapital Trust", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Hg acquisition of JLA in March 2010", "Commercial laundry and catering equipment on contracted basis", "JLA as business-critical asset-maintenance provider", "Continuing private-equity ownership and refinancing"]},
+    {"id": "S5", "url": "https://www.investegate.co.uk/announcement/rns/hgcapital-trust--hgt/announcement-of-financial-rep/2608264", "title": "HgCapital Trust financial report: JLA investment", "publisher": "HgCapital Trust via Investegate", "tier": 1, "accessed_at": "2026-09-28", "supports": ["March 2010 acquisition", "£150 million original enterprise value", "JLA as leading on-premises laundry service provider", "More than 18,000 UK business customers", "Distribution, rental and servicing model"]},
+    {"id": "S6", "url": "https://www.thebusinessdesk.com/yorkshire/news/22287-hg-capital-set-to-swoop-for-john-laithwaite", "title": "HG Capital set to swoop for John Laithwaite", "publisher": "TheBusinessDesk.com", "tier": 2, "accessed_at": "2026-09-28", "supports": ["JLA linked directly to John Laithwaite", "Commercial washer and dryer customer base", "Reported £150 million transaction value", "£16 million EBITDA in 2009", "Need for new management at sale"]},
+    {"id": "S7", "url": "https://www.linkedin.com/posts/jla_we-offer-our-deepest-condolences-to-the-laithwaite-activity-7043622382896345089-hU90", "title": "JLA announcement of founder John Laithwaite's death", "publisher": "JLA Group on LinkedIn", "tier": 1, "accessed_at": "2026-09-28", "supports": ["Direct company announcement of founder's death in March 2023", "Founder identity", "Fifty-year business legacy", "Impact on the UK laundry sector"]}
+  ],
+  "uncertainties": [
+    {"topic": "Death details and age", "detail": "JLA and the trade obituary conclusively establish Laithwaite's death in March 2023, so mortality status is corrected. The obituary says 11 March and gives 26 June 1944 but calls him 79, whereas those dates imply age 78. Because the input snapshot categorises death-date fields as not applicable while saved Alive and the published age is internally inconsistent, only the mortality correction is proposed."},
+    {"topic": "Place of birth", "detail": "The trade obituary says Laithwaite spent his youth in Alkrington, Manchester, but does not explicitly call it his birthplace. No reliable source located gives an exact birthplace, so the field remains blank rather than converting childhood residence into birth location."},
+    {"topic": "Primary industry after exit", "detail": "Laithwaite sold JLA control to HgCapital in 2010 and public records show private investment vehicles, but no reliable public portfolio schedule establishes a later dominant sector. Service is retained under the deceased-owner origin-sector fallback because JLA remains the documented source of wealth."},
+    {"topic": "Tags", "detail": "The active catalogue has no precise commercial-laundry, equipment-rental or business-critical maintenance tag. Heavy equipment would misleadingly imply construction or industrial machinery, so the dossier makes no tag assignment rather than stretching an adjacent category."},
+    {"topic": "Social profiles", "detail": "The official JLA company history is proposed. No dedicated Forbes profile or identity-verified personal LinkedIn, Instagram, Personal Website, Facebook, X, YouTube, Wikipedia or TikTok profile was found. The company death announcement is evidence, not proposed as his personal LinkedIn account."},
+    {"topic": "Repository and live-system guardrails", "detail": "Only the requested John Laithwaite dossier was created. The owner input, cohort, catalogue, other dossiers, compiled artifacts and live website were not changed; nothing was staged, committed or pushed."}
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal posthumous dossier. Exact birth-month/year, nationality, residence and founder/company anchors resolve the common-name identity. The record corrects mortality without asserting internally inconsistent age data, and it classifies JLA's contracted equipment-maintenance model as Service."
+  }
+}

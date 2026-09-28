@@ -261,20 +261,6 @@
   },
   "proposed_details": [
     {
-      "field": "secondary_nationality",
-      "value": "Dominican",
-      "action": "fill_missing",
-      "confidence": {
-        "score": 99,
-        "band": "very_high",
-        "reason": "The current identity-verified Companies House record for the exact full legal name reports Dominican nationality, while an earlier exact-name B2BROKER filing reports Russian nationality. The evidence supports retaining Russian and adding Dominican rather than treating one as a namesake or unsupported correction."
-      },
-      "source_ids": [
-        "S5",
-        "S6"
-      ]
-    },
-    {
       "field": "known_for_title",
       "value": "Founder and CEO of B2BROKER Group; founder of B2BINPAY and EQWIRE",
       "action": "fill_missing",
@@ -421,7 +407,22 @@
       "taxonomy_value": "The owner created material wealth through, controlled substantial operations in, or had a defining long-term operating mandate in Cryptocurrency."
     }
   ],
-  "candidates_requiring_review": [],
+  "candidates_requiring_review": [
+    {
+      "field": "secondary_nationality",
+      "value": "Dominican",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The current identity-verified Companies House record for the exact full legal name reports Dominican nationality, while an earlier exact-name B2BROKER filing reports Russian nationality. The evidence supports retaining Russian and adding Dominican rather than treating one as a namesake or unsupported correction."
+      },
+      "source_ids": [
+        "S5",
+        "S6"
+      ],
+      "review_note": "The current owner-form lookup has no valid secondary_nationality option for 'Dominican'; this supported value is retained for human review rather than automatic compilation."
+    }
+  ],
   "sources": [
     {
       "id": "S1",
