@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "yacht-owner-biography-researcher",
+  "version": "0.1.0",
+  "description": "Research one yacht owner from public sources and return supported details, verified links, wealth classifications, complementary biographies and research context.",
+  "author": {
+    "name": "YachtBuyer"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Yacht Owner Biography Researcher",
+        "shortDescription": "Verified owner research and complementary biographies",
+        "longDescription": "Research a name and optional context into copyable owner-page fields, biographies, approved active tags and a source-backed explanation. Manual schema-v8 JSON is available on request.",
+        "developerName": "YachtBuyer",
+        "category": "Productivity",
+        "capabilities": [
+          "Interactive"
+        ],
+        "defaultPrompt": [
+          "Mark Zuckerberg",
+          "Shahid Khan, Flex-N-Gate owner",
+          "Research this owner and return verified social links, personal details and both biographies."
+        ]
+      }
+    }
+  }
+}

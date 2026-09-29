@@ -20,6 +20,12 @@ owner records, and applying reviewed JSON changes through the website.
 
 ## Working set
 
+- `plugins/yacht-owner-biography-researcher/`: portable one-off research plugin,
+  maintained SKILL.md/manifest and generated bundled references.
+- `tools/build_plugin.py`: generate/check plugin references and package a ZIP;
+  `--package` refuses stale references. GPT output under
+  `archive/owner-biography-gpt/` is retired and never rebuilt.
+
 - `export_owners.py`: paginated owner-list export.
 - `mark_top_100_owners.py`, `src/top_100.py`, `src/workflow.py`: Top-100
   vessel export, read-only UBO scan, annotations, and workflow flags.
@@ -93,11 +99,15 @@ owner records, and applying reviewed JSON changes through the website.
   complete or legacy-approved usable dossiers, and may import only values with
   confidence 70 or higher.
 - Do not commit generated output or the ignored `examples/` snapshots.
+  The tracked generated plugin reference files are the explicit exception;
+  plugin release ZIPs under `dist/` remain ignored.
 
 ## Validation baseline
 
 ```powershell
 .\venv\Scripts\python.exe -m pytest -q
+.\venv\Scripts\python.exe tools/build_plugin.py --check
+.\venv\Scripts\python.exe tools/build_plugin.py --package
 .\venv\Scripts\python.exe -m compileall -q src export_owners.py mark_top_100_owners.py enrich_owner_vessels.py enrich_owners.py compile_owner_research.py reorder_vessel_owners.py update_owners.py update_owner_tags.py test_dummy_account.py
 git diff --check
 ```

@@ -20,6 +20,7 @@ The human-facing commands and file lineage are maintained in `README.md`.
 
 | Concern | Source of truth | Runtime behavior |
 | --- | --- | --- |
+| One-off ChatGPT/Codex plugin | `plugins/yacht-owner-biography-researcher/`, canonical repository skill references and tag policy | `tools/build_plugin.py` bundles the reference guide, active tag whitelist and manual-dossier example. The independent plugin returns human-readable research, optional JSON, and never accesses the owner website. GPT sources are retired in `archive/owner-biography-gpt/`. |
 | Login/session | `src/auth.py` | SeleniumBase logs in, then copies browser cookies into an in-memory `requests.Session`. |
 | URLs/timeouts | `src/constants.py` | Central SYN endpoints, schema version, and wait/request timeouts. |
 | Owner report | `export_owners.py`, `src/parsers.py` | Requests fetches pages; Beautiful Soup parses rows and pagination. |

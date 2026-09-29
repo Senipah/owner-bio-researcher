@@ -335,6 +335,20 @@ cannot silently clear them. Use `--updated-owner-input` only to import a
 verified update snapshot, and use `--mark-not-updated PERSON_ID` only when new
 desired changes deliberately invalidate that owner's prior applied state.
 
+## ChatGPT plugin: one-off owner research
+
+Use the maintained [Yacht Owner Biography Researcher plugin](plugins/yacht-owner-biography-researcher/README.md) for a name-and-context request in ChatGPT or Codex. It returns copyable owner-page fields, biographies and research context; JSON is optional. The repository skill remains the separate workflow for dossiers backed by an immutable owner export.
+
+The former Custom GPT output is deprecated and archived in `archive/owner-biography-gpt/`. Do not update GPT Instructions or Knowledge uploads. Generate and validate the bundled plugin references, then build its ZIP:
+
+```powershell
+.\venv\Scripts\python.exe tools/build_plugin.py
+.\venv\Scripts\python.exe tools/build_plugin.py --check
+.\venv\Scripts\python.exe tools/build_plugin.py --package
+```
+
+The archive and checksum are written under `dist/`. For updates, edit the canonical rules/skill, bump the plugin version, rebuild, update the existing hosted plugin by its verified identity, and run its acceptance checks in a fresh conversation. Packaging does not upload, install or share anything. The old GPT builder now fails with a replacement-command message instead of generating stale GPT files.
+
 ## 4. Compile completed owner research
 
 Owner research is stored as one completed-research dossier per person under

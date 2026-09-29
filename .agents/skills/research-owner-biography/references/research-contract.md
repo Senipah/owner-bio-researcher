@@ -383,7 +383,7 @@ entities, narrative analysis, temporal roles and the binding examples.
 
 Owner research is closed-world for literal tags. `proposed_tags` contains only
 approved active catalogue assignments. Use the generated active-only
-`gpt/tag-catalogue.json` as the researcher assignment context. Search active
+`plugins/yacht-owner-biography-researcher/skills/research-owner-biography/references/tag-catalogue.json` as the researcher assignment context. Search active
 canonical names and aliases, emit the canonical active ID, and omit the tag
 when no approved concept fits. Merged, candidate and inactive catalogue
 entries are not owner-research choices and must never be assigned, reactivated
@@ -415,8 +415,9 @@ multiple owner records, inspect every lifecycle state, and use dry-run-first
 catalogue tooling. Frequency and evidence confidence never create or activate
 taxonomy state.
 
-After an approved catalogue change, rebuild and check the tracked Custom GPT
-Knowledge. The helper requires `--approval-reference`; it allocates IDs only
+After an approved catalogue change, rebuild and check the tracked plugin
+references with `python tools/build_plugin.py` and `--check` from the repo root.
+The tag-catalogue helper requires `--approval-reference`; it allocates IDs only
 for globally approved concepts and rejects collisions with non-active labels.
 
 Retain the established exclusions for generic philanthropy-domain tags,

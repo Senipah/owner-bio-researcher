@@ -364,7 +364,7 @@ def test_migration_is_valid_and_deterministic() -> None:
         / ".agents"
         / "skills"
         / "research-owner-biography"
-        / "gpt"
+        / "references"
         / "manual-dossier.example.json"
     )
     source = json.loads(example_path.read_text(encoding="utf-8"))
@@ -395,7 +395,7 @@ def test_schema_v8_refresh_replaces_only_tags_and_is_idempotent() -> None:
         / ".agents"
         / "skills"
         / "research-owner-biography"
-        / "gpt"
+        / "references"
         / "manual-dossier.example.json"
     )
     source = json.loads(example_path.read_text(encoding="utf-8"))
@@ -438,7 +438,7 @@ def test_schema_v8_refresh_audit_reports_before_and_after_changes(
         / ".agents"
         / "skills"
         / "research-owner-biography"
-        / "gpt"
+        / "references"
         / "manual-dossier.example.json"
     )
     source = json.loads(example_path.read_text(encoding="utf-8"))

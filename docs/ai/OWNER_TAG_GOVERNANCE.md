@@ -177,10 +177,10 @@ inactive names remain in a separate non-assignable lookup. Merged references
 resolve only when their terminal target is active. Broad consumers must use
 the loader rather than reading and flattening the JSON `tags` array.
 
-The tracked Custom GPT catalogue is a closed-world assignment whitelist. It
+The tracked plugin catalogue is a closed-world assignment whitelist. It
 contains only active canonical tags and their approved aliases. Candidate,
 inactive and merged records remain in the repository registry for global
-governance and collision detection, but stay outside ordinary GPT context.
+governance and collision detection, but stay outside ordinary plugin context.
 
 Every active catalogue entry also carries a `semantic_contract` defining its
 dimension, membership, exclusions, temporal scope and click-through
@@ -191,7 +191,7 @@ or alias alone is not enough.
 
 Owner research and taxonomy discovery are separate responsibilities. Owner-
 level research is closed-world: it may assign approved active tags but may not
-create formal taxonomy candidates. This applies to one-off Custom GPT work,
+create formal taxonomy candidates. This applies to one-off plugin work,
 individual dossier execution and every owner within a batch.
 
 Schema v8 is the current and sole owner-research output contract. Schema v9 was
@@ -238,7 +238,7 @@ review then:
 6. may queue a formal candidate through the dry-run-first corpus registration
    tool, or promote/create an active tag through explicitly approved catalogue
    tooling;
-7. rebuilds Custom GPT Knowledge and validates all consumers.
+7. rebuilds plugin references and validates all consumers.
 
 `register_corpus_tag_candidates.py` requires a reviewed corpus manifest with at
 least two distinct owner dossier records and the policy's relationship,
@@ -306,7 +306,7 @@ deliberately reviewed inactive reactivation; use
 `add_catalogue_tag.py --promote-id TAG_ID --approval-reference REFERENCE` for
 an isolated candidate. Applying manifest activation requires an audit path.
 
-After activation and GPT Knowledge rebuild, use
+After activation and rebuilding the plugin references, use
 `backfill_corpus_tag_manifest.py MANIFEST` without `--apply` and inspect the
 exact owner rows and selected existing dossier sources. Application requires
 both `--audit` and a new `--backup` path. It adds only the reviewed manifest

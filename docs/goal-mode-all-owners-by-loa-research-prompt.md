@@ -363,7 +363,7 @@ dossiers.
 - The transient compilation artifacts were removed after validation.
 - The offline test suite passes.
 - Python compilation passes.
-- Custom GPT Knowledge is current.
+- Plugin references are current (`python tools/build_plugin.py --check`).
 - `git diff --check` passes.
 - Nothing was staged, committed, pushed or applied to the live website.
 

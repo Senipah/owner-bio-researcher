@@ -5,7 +5,10 @@ import json
 import re
 import subprocess
 import sys
+import zipfile
 from pathlib import Path
+
+import pytest
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -15,20 +18,22 @@ SKILL_ROOT = (
     / "skills"
     / "research-owner-biography"
 )
-GPT_ROOT = SKILL_ROOT / "gpt"
-BUILDER = SKILL_ROOT / "scripts" / "build_gpt_knowledge.py"
+PLUGIN_ROOT = REPO_ROOT / "plugins" / "yacht-owner-biography-researcher"
+PLUGIN_SKILL = PLUGIN_ROOT / "skills" / "research-owner-biography"
+REFERENCES = PLUGIN_SKILL / "references"
+BUILDER = REPO_ROOT / "tools" / "build_plugin.py"
 VALIDATOR = SKILL_ROOT / "scripts" / "validate_dossier.py"
-INSTRUCTIONS = GPT_ROOT / "instructions.md"
-KNOWLEDGE = GPT_ROOT / "owner-biography-knowledge.md"
-EXAMPLE = GPT_ROOT / "manual-dossier.example.json"
-SETUP_GUIDE = GPT_ROOT / "README.md"
-PREVIEW_TESTS = GPT_ROOT / "preview-tests.md"
-TAG_CATALOGUE = GPT_ROOT / "tag-catalogue.json"
+INSTRUCTIONS = PLUGIN_SKILL / "SKILL.md"
+KNOWLEDGE = REFERENCES / "owner-biography-knowledge.md"
+EXAMPLE = REFERENCES / "manual-dossier.example.json"
+SETUP_GUIDE = PLUGIN_ROOT / "README.md"
+PREVIEW_TESTS = PLUGIN_ROOT / "VALIDATION.md"
+TAG_CATALOGUE = REFERENCES / "tag-catalogue.json"
 
 
 def _load_builder():
     spec = importlib.util.spec_from_file_location(
-        "build_gpt_knowledge",
+        "build_plugin",
         BUILDER,
     )
     assert spec is not None and spec.loader is not None
@@ -37,7 +42,7 @@ def _load_builder():
     return module
 
 
-def test_generated_gpt_knowledge_is_current() -> None:
+def test_generated_plugin_references_is_current() -> None:
     builder = _load_builder()
     knowledge = KNOWLEDGE.read_text(encoding="utf-8")
 
@@ -83,7 +88,7 @@ def test_generated_gpt_knowledge_is_current() -> None:
     assert "`marriage_family_transfer` at medium confidence" in knowledge
 
 
-def test_gpt_catalogue_exposes_only_active_closed_world_tags() -> None:
+def test_plugin_catalogue_exposes_only_active_closed_world_tags() -> None:
     catalogue = json.loads(TAG_CATALOGUE.read_text(encoding="utf-8"))
     source = json.loads(
         (REPO_ROOT / "config" / "owner-tags.json").read_text(encoding="utf-8")
@@ -108,10 +113,9 @@ def test_gpt_catalogue_exposes_only_active_closed_world_tags() -> None:
     assert "reserved_non_assignable_labels" not in catalogue
 
 
-def test_gpt_instructions_are_concise_and_decision_complete() -> None:
+def test_plugin_instructions_are_concise_and_decision_complete() -> None:
     instructions = INSTRUCTIONS.read_text(encoding="utf-8")
 
-    assert len(instructions) <= 7_000
     for required in (
         "## Intake",
         "A name alone is sufficient",
@@ -129,7 +133,7 @@ def test_gpt_instructions_are_concise_and_decision_complete() -> None:
         "For every field use the best-supported value at confidence 70+",
         "Prefer a broader\n   supported value to `unknown`",
         "Never infer from silence",
-        "Follow\n   Knowledge's separate tests for sectors, `mixed`, and current relationships",
+        "Follow\n   reference guide's separate tests for sectors, `mixed`, and current relationships",
         "a broad wealth descriptor such as `billionaire`",
         "Silently omit anything unavailable",
         "For `self_made_advantaged`",
@@ -205,7 +209,7 @@ def test_staff_response_mirrors_owner_page_field_order() -> None:
     )
 
 
-def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
+def test_setup_guide_separates_plugin_users_from_maintainers() -> None:
     guide = SETUP_GUIDE.read_text(encoding="utf-8")
     preview_tests = PREVIEW_TESTS.read_text(encoding="utf-8")
 
@@ -215,15 +219,15 @@ def test_setup_guide_separates_gpt_users_from_maintainers() -> None:
     assert "complete human-readable profile by default" in guide
     assert "come first in owner-page order" in guide
     assert "always contains a\n`Forbes` row with the exact profile URL" in guide
-    assert "Code Interpreter & Data Analysis:** optional" in guide
-    assert "## One-time GPT creator setup" in guide
-    creator_setup = guide.split("## One-time GPT creator setup", 1)[1].split(
+    assert "File creation is optional" in guide
+    assert "## Installation" in guide
+    creator_setup = guide.split("## Installation", 1)[1].split(
         "## Routine use",
         1,
     )[0]
-    assert "build_gpt_knowledge.py" not in creator_setup
+    assert "build_plugin.py" not in creator_setup
     assert "## Updating the package" in guide
-    assert "build_gpt_knowledge.py" in guide.split(
+    assert "build_plugin.py" in guide.split(
         "## Updating the package",
         1,
     )[1]
@@ -324,10 +328,47 @@ def test_manual_dossier_example_contract_and_strict_validation() -> None:
     assert result.returncode == 0, result.stderr
 
 
-def test_gpt_bundle_contains_no_local_absolute_paths() -> None:
-    for path in GPT_ROOT.iterdir():
+def test_plugin_bundle_contains_no_local_absolute_paths() -> None:
+    for path in PLUGIN_ROOT.rglob("*"):
         if path.suffix not in {".md", ".json"}:
             continue
         text = path.read_text(encoding="utf-8")
         assert "T:\\Work\\" not in text
         assert "C:\\Users\\" not in text
+
+
+def test_plugin_zip_is_self_contained_and_reproducible(tmp_path: Path) -> None:
+    builder = _load_builder()
+    first = builder.package_plugin(tmp_path / "first")
+    second = builder.package_plugin(tmp_path / "second")
+    assert first.read_bytes() == second.read_bytes()
+    with zipfile.ZipFile(first) as archive:
+        names = archive.namelist()
+        assert len(names) == 5
+        assert all(name.startswith(PLUGIN_ROOT.name + "/") for name in names)
+        assert not any("archive/" in name or "output/" in name or "config/" in name for name in names)
+        archive.extractall(tmp_path / "isolated")
+    isolated = tmp_path / "isolated" / PLUGIN_ROOT.name
+    assert len(builder.validate_plugin(isolated)) == 5
+    (isolated / "skills/research-owner-biography/references/tag-catalogue.json").unlink()
+    with pytest.raises(ValueError, match="Missing or unexpected"):
+        builder.validate_plugin(isolated)
+
+
+def test_package_refuses_stale_references(tmp_path: Path, monkeypatch) -> None:
+    builder = _load_builder()
+    stale = tmp_path / "stale-guide.md"
+    stale.write_text("Outdated reference", encoding="utf-8")
+    monkeypatch.setattr(builder, "OUTPUT_PATH", stale)
+    with pytest.raises(ValueError, match="stale plugin reference"):
+        builder.package_plugin(tmp_path / "dist")
+    assert not (tmp_path / "dist").exists()
+
+
+def test_legacy_gpt_command_is_deprecated_and_writes_nothing() -> None:
+    legacy = SKILL_ROOT / "scripts/build_gpt_knowledge.py"
+    result = subprocess.run([sys.executable, str(legacy), "--check"], cwd=REPO_ROOT, text=True, capture_output=True)
+    assert result.returncode == 2
+    assert "deprecated" in result.stderr
+    assert "tools/build_plugin.py" in result.stderr
+    assert not (SKILL_ROOT / "gpt").exists()

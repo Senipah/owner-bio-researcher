@@ -257,8 +257,22 @@ dummy account.
 
 ## Release and handoff
 
-There is no package build or deployment step. A change is ready to hand off
-when:
+The Python data toolkit has no deployment step. The one-off research plugin
+has a local source/package workflow:
+
+```powershell
+.\venv\Scripts\python.exe tools/build_plugin.py
+.\venv\Scripts\python.exe tools/build_plugin.py --check
+.\venv\Scripts\python.exe tools/build_plugin.py --package
+```
+
+Edit canonical policy/references, the plugin SKILL.md and metadata as needed;
+bump the plugin version before a release. Never refresh the retired GPT output.
+Package creation does not update a hosted plugin. When deployment is requested,
+inspect and update the existing plugin identity, preserve its audience and
+components, then test a fresh conversation using the plugin's VALIDATION.md.
+
+A change is ready to hand off when:
 
 - tests and compile checks pass;
 - live selectors were smoke-tested when they changed;

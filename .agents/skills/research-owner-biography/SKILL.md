@@ -36,7 +36,7 @@ statistics.
   evidence, confidence, social-link, and dossier rules.
 - Before any tag work, read the canonical
   [owner-tag governance policy](../../../docs/ai/OWNER_TAG_GOVERNANCE.md).
-  Use `gpt/tag-catalogue.json` as the model-facing active assignment whitelist.
+  Use the repo-root `plugins/yacht-owner-biography-researcher/skills/research-owner-biography/references/tag-catalogue.json` as the model-facing active assignment whitelist.
   Validators and explicit global taxonomy tooling use the full status-aware
   `config/owner-tags.json` through `src.tags`; only active tags are assignable
   and merged references redirect internally to an active target. Candidate and
@@ -53,8 +53,8 @@ statistics.
 - Read
   [references/editorial-calibrations.md](references/editorial-calibrations.md)
   before drafting and use the archetypes to vary structure across a batch.
-- For one-off name-and-context research in a Custom GPT, use the tracked
-  distribution documented in [gpt/README.md](gpt/README.md). The canonical
+- For one-off name-and-context research in a plugin, use the tracked
+  distribution documented in [plugin README](../../../plugins/yacht-owner-biography-researcher/README.md). The canonical
   skill and reference files remain its source of truth.
 - For a staff-facing human response, use the owner-page delivery sequence in
   `references/research-contract.md`: copyable supported values first, then
@@ -194,7 +194,7 @@ tracking. Subagents may return sourced facts which lack an active tag, but
 must not turn them into named taxonomy candidates or edit the shared catalogue.
 Repetition across individual dossiers does not create taxonomy state. A later,
 explicitly authorised corpus-level discovery pass may review the completed
-corpus as a separate operation. Rebuild GPT Knowledge after any approved
+corpus as a separate operation. Rebuild plugin references after any approved
 catalogue change.
 Do not let parallel agents edit the shared owner dataset.
 
@@ -289,7 +289,7 @@ catalogue. The main agent owns the following checkpoint workflow:
    when the approval covers every registered concept in one reviewed manifest,
    or the single-tag catalogue tool for an isolated promotion. Merge semantic
    aliases while preserving useful broader and narrower concepts.
-5. Rebuild and check GPT Knowledge after each approved catalogue change.
+5. Rebuild and check plugin references after each approved catalogue change.
 6. For an explicitly approved manifest backfill, dry-run
    `scripts/backfill_corpus_tag_manifest.py`, inspect all evidence-source
    selections, and apply only with unique audit and backup paths. The command
