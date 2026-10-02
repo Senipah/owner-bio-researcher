@@ -24,6 +24,7 @@ if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
 from src.constants import IDENTITY_CONFIDENCE_THRESHOLD
+from src.editorial_exceptions import biographies_withheld
 from src.detail_selects import (
     DETAIL_SELECT_OPTIONS_LOOKUP,
     merge_detail_select_option_lookups,
@@ -333,6 +334,11 @@ def validate(
     warnings: list[str] = []
     if not isinstance(document, dict):
         return ["dossier root must be an object"], warnings
+    try:
+        withheld = biographies_withheld(document)
+    except (ValueError, OSError, KeyError, TypeError) as exc:
+        errors.append(str(exc))
+        withheld = False
 
     required = {
         "schema_version",
@@ -550,7 +556,7 @@ def validate(
     biography_brief = document.get("biography_brief")
     editorial_assessment = document.get("editorial_assessment")
     editorial_note = document.get("editorial_note")
-    if record_type == "person":
+    if record_type == "person" and not withheld:
         if not isinstance(biography_brief, dict):
             errors.append("biography_brief must be an object for person records")
         else:
@@ -775,7 +781,7 @@ def validate(
                 errors,
             )
 
-    biography_record = record_type in {"person", "institution"}
+    biography_record = record_type in {"person", "institution"} and not withheld
     biography = document.get("biography")
     short_plain: str | None = None
     if not biography_record:

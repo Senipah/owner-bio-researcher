@@ -1,0 +1,1299 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1775,
+    "display_name": "Sergei Viktorovich Pugachev",
+    "identity_confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Exact full name, existing Wikipedia route and input age/date agree with the bank founder and former Tuva senator. Primary judicial and personal records independently corroborate. The Transbunker founder has a different patronymic and is excluded; the historical vessel linkage is not needed to force a match."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "secondary_nationality",
+      "main_residence_country",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "main_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "research_status": "complete",
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 86,
+      "band": "high",
+      "reason": "Forbes-first searches in English and Russian found contemporary Forbes banking and parliamentary wealth coverage but no verified exact personal-profile URL. Articles and a reproduced rich list are not substituted for a personal profile."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Founding and developing Mezhprombank established his core personal fortune before wider industrial acquisitions.",
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Forbes directly attributes his established personal fortune to banking in 2004. The court's factual introduction confirms bank founding and development into a major private institution; contemporary borrower disclosure identifies his principal control. Later industrial and property ownership is substantial but does not displace the evidenced banking creation platform."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S5"
+    ]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Origin-sector fallback to banking; a current principal private asset sector is not established as of 1 October 2026.",
+    "confidence": {
+      "score": 72,
+      "band": "medium",
+      "reason": "This is explicitly an origin-sector fallback, not verified current bank ownership. Positive liquidation, loss of Russian assets and creditor enforcement evidence prevent carrying the historical empire forward. A residence and asserted compensation claims do not establish a dominant current property or investment portfolio. No exact full balance sheet is demanded; the missing premise is a positively continuing principal wealth platform."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S7",
+      "S8",
+      "S9"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "He founded, built and controlled the banking enterprise underlying the fortune, then acquired other private businesses.",
+    "confidence": {
+      "score": 83,
+      "band": "medium",
+      "reason": "Positive founder-builder and principal-control evidence supports broad Self-made independently of his occupation or office. Military-family upbringing alone does not prove a wholly independent start. Political access and business partnerships matter, but the available evidence does not establish the specific initial advantage required for a narrower subtype. Family transfer, inheritance and mixed transmission lack a demonstrated personally material transferred core."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S5",
+      "S6"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The present relationship to principal private wealth cannot be established after the collapse and asset-enforcement proceedings.",
+    "confidence": {
+      "score": 58,
+      "band": "low",
+      "reason": "Founder describes the historical bank but its liquidation defeats an assumed current core. Investor is the strongest alternative, supported by his self-description and past acquisitions, yet no continuing principal deployment mandate is evidenced after asset losses and enforcement. Passive asset owner also requires a positively retained material core and passivity; residence ownership alone does not supply either. This is a substantive continuity gap, not an inference of poverty or a requirement for exact valuations."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S7",
+      "S8",
+      "S9"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "Russian-born French businessman who founded a major Russian private bank and served as a senator for Tuva.",
+    "defining_work": "Developed Mezhprombank and assembled industrial interests through United Industrial Corporation.",
+    "formative_context": null,
+    "decisive_moment": "The bank collapsed and his Russian business empire was lost, leading to prolonged litigation.",
+    "enduring_dimensions": [
+      "Ownership and assembly of major shipbuilding businesses",
+      "Practical support for displaying Tuva's Scythian treasures",
+      "Financial support for Tuvan performers abroad"
+    ],
+    "character_detail": null,
+    "opening_options": [
+      {
+        "mode": "institution_or_asset",
+        "angle": "Open on the industrial holding company's substantial shipbuilding base."
+      },
+      {
+        "mode": "public_contribution",
+        "angle": "Open on the security funding that enabled the return of Scythian treasures."
+      }
+    ],
+    "excluded_transient_context": [
+      "Current net-worth rankings and unsupported present holdings",
+      "Vessel relationships",
+      "Unadjudicated allegations stated as facts",
+      "Claims of sole responsibility for government or collective cultural work",
+      "Family private-life details and present litigation predictions"
+    ],
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S10",
+      "S11"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "institution_then_person",
+    "calibration_archetypes": [
+      "acquirer_consolidator",
+      "investor_philanthropist"
+    ],
+    "notes": "Shared anchors are the person and broad banking/industrial identity. Short-only facts are French identity, the bank name and founding date, formal Senate service and collapse/litigation. Long-only material explains the assembled shipbuilding platform and concrete museum-security support, with a separate cultural-tour contribution. The long deliberately omits the short's bank chronology and litigation sequence. Funding provider, purpose and institutional setting are explicit."
+  },
+  "biography": {
+    "plain_text": "Sergei Pugachev is a Russian-born French businessman who founded Mezhprombank in Moscow in 1992 and developed it into a major private bank. A former senator for Tuva, he built a fortune spanning finance and industry before the bank's collapse and the loss of his Russian businesses prompted years of litigation.",
+    "html": "<p>Sergei Pugachev is a Russian-born French businessman who founded Mezhprombank in Moscow in 1992 and developed it into a major private bank. A former senator for Tuva, he built a fortune spanning finance and industry before the bank's collapse and the loss of his Russian businesses prompted years of litigation.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Judicial factual narrative, contemporary wealth reporting and nationality evidence support the concise historical identity; no present business or net-worth claim."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S8"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Through his United Industrial Corporation, Sergei Pugachev assembled businesses beyond banking, including the Northern and Baltic shipyards in St Petersburg. These yards built both naval and civilian vessels, giving his holding company a substantial industrial base. He acquired controlling interests over several years rather than taking over the yards in a single transaction.\n\nIn Tuva, his funding helped overcome a practical obstacle to displaying Scythian treasures: the national museum needed stronger security before the Hermitage would return the gold. He supported cameras, protective display cases and alarm systems. He also helped finance a European tour by Tuvan performers, including a concert at UNESCO's headquarters.",
+    "html": "<p>Through his United Industrial Corporation, Sergei Pugachev assembled businesses beyond banking, including the Northern and Baltic shipyards in St Petersburg. These yards built both naval and civilian vessels, giving his holding company a substantial industrial base. He acquired controlling interests over several years rather than taking over the yards in a single transaction.</p>\r\n<p>In Tuva, his funding helped overcome a practical obstacle to displaying Scythian treasures: the national museum needed stronger security before the Hermitage would return the gold. He supported cameras, protective display cases and alarm systems. He also helped finance a European tour by Tuvan performers, including a concert at UNESCO's headquarters.</p>\r\n",
+    "word_count": 104,
+    "confidence": {
+      "score": 87,
+      "band": "high",
+      "reason": "Historical industrial control is corroborated by the contemporaneous borrower memorandum; acquisition chronology and concrete cultural funding are supported by full relevant primary and contemporary bodies."
+    },
+    "source_ids": [
+      "S4",
+      "S5",
+      "S10",
+      "S11"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "secondary_nationality",
+      "value": "French",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Primary tribunal analysis upholds French naturalisation; this adds a supported nationality without adjudicating disputed Russian renunciation."
+      },
+      "source_ids": [
+        "S4",
+        "S6",
+        "S7"
+      ]
+    },
+    {
+      "field": "main_residence_country",
+      "value": "France",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 89,
+        "band": "high",
+        "reason": "Independent 2023 home interview and 2025 reporting corroborate continuing French residence; exact move dates conflict and are not proposed."
+      },
+      "source_ids": [
+        "S7",
+        "S8",
+        "S9"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Founder of Mezhprombank and former Russian senator",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Primary judgment and contemporary reporting establish the defining historical business and public roles."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S6"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Consistent primary biographical identification and pronouns."
+      },
+      "source_ids": [
+        "S3",
+        "S6"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Kostroma",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 80,
+        "band": "medium",
+        "reason": "Exact reference biography consistently identifies Kostroma; confidence is below primary birth-date evidence because the subject's English page supplies no city."
+      },
+      "source_ids": [
+        "S13"
+      ]
+    },
+    {
+      "field": "birth_country",
+      "value": "Russian Federation",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 85,
+        "band": "high",
+        "reason": "Kostroma lies in the Russian Federation, the exact available present-country label for the Russian SFSR birthplace; nationality is not inferred from it."
+      },
+      "source_ids": [
+        "S13"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "4",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Subject's primary biography gives the full birth date; compatible with immutable age/date."
+      },
+      "source_ids": [
+        "S6",
+        "S13"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "February",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Subject's primary biography gives the full birth date; exact lookup label."
+      },
+      "source_ids": [
+        "S6",
+        "S13"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1963",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary full birth date agrees with 57 at the May 2020 input date."
+      },
+      "source_ids": [
+        "S0",
+        "S6",
+        "S13"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "15",
+      "type": "Personal Website",
+      "url": "https://www.pugachevsergei.com/",
+      "action": "add",
+      "verification": "Exact personal site directly read; independently attributed by the pre-existing reference biography and named press-service announcement.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Biographical and legal-document context establishes this as the subject's maintained personal and advocacy site, not a namesake company."
+      },
+      "source_ids": [
+        "S6",
+        "S12",
+        "S13"
+      ]
+    },
+    {
+      "type_id": "3",
+      "type": "Twitter",
+      "url": "https://twitter.com/Sergei_Pugachev",
+      "action": "add",
+      "verification": "The directly read official personal website links this exact profile in its navigation and footer; direct Twitter retrieval returned 403.",
+      "confidence": {
+        "score": 91,
+        "band": "high",
+        "reason": "First-party outbound attribution satisfies identity verification despite restricted direct access; current posting is not asserted."
+      },
+      "source_ids": [
+        "S6"
+      ]
+    },
+    {
+      "type_id": "2",
+      "type": "Facebook",
+      "url": "https://www.facebook.com/Sergei-Pugachev-1611499549096299/",
+      "action": "add",
+      "verification": "A named press-service announcement explicitly identifies this exact personal Facebook page for the subject's 2017 press conference; direct retrieval was throttled.",
+      "confidence": {
+        "score": 84,
+        "band": "medium",
+        "reason": "Official first-party attribution is specific to the banker and former senator. The historical page is verified as his, without a claim of current posting activity."
+      },
+      "source_ids": [
+        "S12"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0211",
+      "name": "Banking",
+      "summary": "Founded, developed and controlled Mezhprombank, the core original fortune platform.",
+      "relationship_type": "founder",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "The active semantic contract is satisfied by substantial historical personal control or a defining formal public mandate, rather than incidental investment or association.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Direct historical identity and substantial control or formal office meet the precise approved cohort membership; current continuation is not implied."
+      },
+      "source_ids": [
+        "S1",
+        "S3",
+        "S5"
+      ]
+    },
+    {
+      "tag_id": "tag_0172",
+      "name": "Shipbuilding",
+      "summary": "OPK controlled Northern and Baltic shipyards, each employing thousands and building naval and civilian vessels.",
+      "relationship_type": "controlling_owner",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "The active semantic contract is satisfied by substantial historical personal control or a defining formal public mandate, rather than incidental investment or association.",
+      "confidence": {
+        "score": 93,
+        "band": "high",
+        "reason": "Direct historical identity and substantial control or formal office meet the precise approved cohort membership; current continuation is not implied."
+      },
+      "source_ids": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "tag_id": "tag_0585",
+      "name": "Member of parliament",
+      "summary": "Served a defining decade as Tuva's representative in the Russian Federation Council.",
+      "relationship_type": "public_official",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "The active semantic contract is satisfied by substantial historical personal control or a defining formal public mandate, rather than incidental investment or association.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Direct historical identity and substantial control or formal office meet the precise approved cohort membership; current continuation is not implied."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S6"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1775",
+      "title": "Sergei Viktorovich Pugachev: immutable owner export, person 1775",
+      "publisher": "Superyacht Network; saved authoritative source",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Inventory before searches: exact full name, Russian baseline, age 57 at 7 May 2020, existing Wikipedia, historical DB9 and Bagheera relationships. Vessels are identity context only."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/2004/07/13/cz_04russia_bankers.html",
+      "title": "Richest Bankers",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant indexed table read: Sergei Pugachev, age 41, Mezhprombank, source banking and historical personal fortune. Article is not an exact personal-profile URL."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/2008/03/31/russia-billionaires-duma-biz-cz_hb_0401russiapols_slide.html",
+      "title": "In Pictures: Russia's Billionaire Lawmakers",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant personal entry read: banking start, subsequent own bank, later shipbuilding and real-estate interests, Tuva representation. Historical billionaire standing only; no present net worth inferred."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.bailii.org/ew/cases/EWHC/Ch/2017/2426.html",
+      "title": "JSC Mezhdunarodniy Promyshlenniy Bank v Pugachev [2017] EWHC 2426 (Ch)",
+      "publisher": "High Court of Justice of England and Wales",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant primary judgment read through identical PDF mirror https://www.rivistataf.eu/documenti/pugachev_1651521933.pdf because BAILII direct access was challenged. Paragraphs 2-9 establish bank founding in 1992, substantial development, 2010 liquidation, OPK and historical assets; paragraph 447 notes assets lost to the Russian state. Paragraphs 449-456 distinguish retained beneficial ownership of trust assets and continuing freezing orders from final asset-transfer relief. Paragraph 451 explicitly does not find facts about the alleged Russian bank misconduct."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.italaw.com/sites/default/files/case-documents/italaw170008.pdf",
+      "title": "Pugachev v Russian Federation: Award on Jurisdiction, 18 June 2020",
+      "publisher": "UNCITRAL arbitral tribunal; reproduced by italaw",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant PDF sections read: printed pages 79-80 confirm French naturalisation and expressly decline to decide disputed renunciation of Russian nationality. Printed pages 99-105 review shipyard, coal, property and overseas acquisition evidence with express weaknesses. Investments were made before French nationality; jurisdictional dismissal is not a merits finding that expropriation was lawful or unlawful."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.sec.gov/Archives/edgar/vprr/1001/10012316.pdf",
+      "title": "International Industrial Bank: 2010 consent solicitation, Debt Restructuring and Shareholder Support",
+      "publisher": "International Industrial Bank; SEC-hosted filing",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Direct PDF access returned 403 and web open exceeded size limits; full indexed Shareholder Support body read. It identifies Sergei V. Pugachev as principal controlling person and controller of OPK, which controlled Northern and Baltic shipyards. Each employed over 3,500; naval and civilian output included icebreakers and offshore supply vessels. This is historical personal control, not the state's separate United Shipbuilding Corporation."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.pugachevsergei.com/biography/?lang=en",
+      "title": "Biography",
+      "publisher": "Serge Pugachev official personal website",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full biography and outbound links read directly by HTTP. Supplies birth 4 February 1963, military family, French citizenship, 2001-2011 Senate service and official Twitter link. Advocacy assertions about expropriation and political persecution are treated as his position, not adjudicated facts."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.swissinfo.ch/eng/business/sergei-pugachev-swiss-banks-help-putin-s-people-avoid-sanctions/48710728",
+      "title": "Sergei Pugachev: Swiss banks help Putin's people avoid sanctions",
+      "publisher": "SWI swissinfo.ch",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full 2023 interview body read. Journalist visited his Nice home and identifies French citizenship and disputes over assets. His allegations against banks and authorities are attributed claims and do not demonstrate a present operating or investment platform."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.themoscowtimes.com/2025/05/13/moscow-court-jails-exiled-putin-banker-sergei-pugachev-14-years-in-absentia-a89068",
+      "title": "Moscow Court Jails Exiled 'Putin Banker' Sergei Pugachev 14 Years in Absentia",
+      "publisher": "The Moscow Times",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full 13 May 2025 report read: bank collapse, French citizenship and continuing French residence; Russian court conviction in absentia, distinguished from earlier allegations and English trust judgment. Pugachev's position is that the state seized his assets and the prosecution is politically motivated."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.pugachevsergei.com/putins-lawyers-persist-in-demanding-the-fortune-of-sergei-pugachev/?lang=en",
+      "title": "Putin's lawyers persist in demanding the fortune of Sergei Pugachev",
+      "publisher": "Serge Pugachev official personal website",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full 17 June 2025 body read as the subject's account of continuing French asset proceedings and French Riviera residence. Claims of political persecution remain attributed; the page's suggestion arbitration is still pending is not accepted over the tribunal's jurisdictional award. No current business or unencumbered personal asset portfolio is established."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://en.tuvaonline.ru/2008/11/29/5505_scythian.html",
+      "title": "British lords came to visit the opening of the exhibition of the unique collection of Scythian goldsmith art",
+      "publisher": "Tuva-Online; Dina Oyun, translated by Heda Jindrak",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full contemporary report read: lack of museum security impeded return of Scythian gold from the Hermitage; Pugachev supplied support for cameras, protective cases, doors and alarms. The collection is public museum property, not his personal collection."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://en.tuvaonline.ru/2010/04/26/5600_unesco.html",
+      "title": "Eleonora Huseinova: I will become an advocate of Tuvan throat-singing in UNESCO",
+      "publisher": "Tuva-Online",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full contemporary report read: Pugachev was one of the financial supporters of the European tour by Tuvan performers, including the UNESCO headquarters concert. No claim that he alone organised or funded it."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://www.forsmi.ru/announce/356882/",
+      "title": "Press conference of former senator Sergei Pugachev and lawyer Maria Samorodkina",
+      "publisher": "ForSMI; announcement by Sergei Pugachev's press service",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full 2017 announcement attributes exact official personal website and Facebook profile. YouTube URL is a one-event video, not a verified personal channel. Facebook direct access is restricted; historical personal attribution is explicit."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://en.wikipedia.org/wiki/Sergei_Pugachev",
+      "title": "Sergei Pugachev",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Existing identity route: full name, birth date and Kostroma birthplace; exact personal-site link. Used only as supplementary reference and source discovery, not for contested asset or legal claims."
+      ]
+    },
+    {
+      "id": "S14",
+      "url": "https://odessa-sport.info/press-klub/14255-press-klub-odessa-sport-georgij-leonchuk-ukraina-dolzhna-byt-pod-parusom.html",
+      "title": "Georgiy Leonchuk interview: Ukraine should be under sail",
+      "publisher": "Odessa-Sport",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Relevant full interview section identifies Transbunker chairman and sailor Sergei Alexandrovich Pugachev, from Zaporizhzhia: a different patronymic and biography from this owner. Recent Transbunker seizure coverage is excluded."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Assessment date is 1 October 2026. Contemporary personal wealth is not inferred from his old Forbes ranking or company gross assets. The original banking fortune is directly supported; the current sector uses the required Finance & Investments origin fallback.",
+    "Current relationship Unknown: historical founder control is positive but the bank was liquidated and major Russian assets were lost. The English judgment left trust assets beneficially his while subject to freezing and potential creditor relief; it does not establish their unencumbered retention today. The Nice residence and compensation claims do not identify a principal current portfolio or sustained allocation mandate. Investor and Passive asset owner were considered and rejected for this substantive continuity gap, not because a full balance sheet is unavailable.",
+    "Broad Self-made is supported by bank creation, development and control. Military-family ancestry is not evidence of independent business funding; political access is not automatically family advantage. The initial capital route does not support a narrower independent or advantaged subtype. No positively material inherited or gifted core was identified.",
+    "French citizenship is supported by the 2020 tribunal's analysis. The same award expressly declined to decide whether Russian nationality had effectively been renounced. Therefore French is added as secondary and the Russian baseline is preserved; the subject's claim of sole French nationality is not imported as settled law.",
+    "Primary date of birth is strong; Kostroma is supported by the exact reference biography at lower confidence. Residence dates differ among the official website, contemporary legal record and news reports, so only corroborated France residence is proposed, without a migration chronology.",
+    "The 2020 arbitration award rejected jurisdiction over investments predating French nationality. It did not award compensation or decide the merits of expropriation. The subject's 2025 website describes continued proceedings without providing a verified reversal of that award; no successful recovery is inferred.",
+    "Russian criminal allegations, the 2025 conviction in absentia, English contempt and trust findings, civil enforcement and the subject's political-persecution defence are distinct. The English 2017 trust judgment expressly refused to find facts about alleged bank misconduct in Russia. Biographies retain collapse and litigation as defining business context without unrequested legal detail or an unqualified accusation.",
+    "Recent Transbunker news concerns Sergei Alexandrovich Pugachev, a sailor from Zaporizhzhia. That individual's assets, current proceedings, sporting achievements and social accounts are excluded from Sergei Viktorovich Pugachev's dossier.",
+    "Forbes was checked first, including English and Russian exact-profile searches. Contemporary Forbes articles support research, but no exact personal profile was verified and no article is proposed as a Forbes social profile.",
+    "All relevant supported link types were checked: Personal Website, Instagram, LinkedIn, Facebook, Twitter, Youtube, TikTok, Vimeo, Flickr and existing Wikipedia, plus Forbes and a relevant company-site check. The official personal site and two directly attributed accounts are proposed. LinkedIn namesakes including the Omsk banking employee, interview hosts, third-party videos, generic photo pages and unmatched Instagram results were rejected. The press-service YouTube item is an event video; a personal channel is unverified. Trip Advisor and Zillow have no relevant personal-profile fit.",
+    "Mezhprombank and OPK historical ownership does not justify a current Company Website proposal. The existing Wikipedia link is retained. Direct Twitter and Facebook access restrictions are disclosed; attribution rests on the official site and named press service.",
+    "The active tag set is limited to Banking, Shipbuilding and Member of parliament. Coal interests were considered but the directly read record does not establish a sustained producing operation sufficiently for Coal mining. Museum support is not Museum founder, and one cultural tour does not establish a general performing-arts identity.",
+    "The museum treasures are public cultural property. Pugachev funded practical security support, not the gold collection or the entire museum. He was one supporter of the European tour; the biographies do not appropriate the performers' or museum staff's work.",
+    "Biographies are complementary: the short gives the bank, nationality, Senate service and collapse; the long adds historical shipyard assembly and specific cultural contributions. No vessel content, present title assumption, precise fortune estimate or uncorroborated political boast is published."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent reviewed and approved the four HNWI decisions and complementary pair, reading both cultural reports. Strict immutable-input and editorial validation passed with zero warnings. Terminal research as of 1 October 2026; no live changes."
+  },
+  "editorial_note": null
+}

@@ -1,0 +1,1243 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1707,
+    "display_name": "Michel Perridon",
+    "identity_confidence": {
+      "score": 87,
+      "band": "high",
+      "reason": "Distinctive exact name, Dutch nationality and Rotterdam/Netherlands business identity agree across direct interview, official holding-company site and Trust registration. The historical Awatea relationship was inventoried but not independently bridged; identity does not depend on it."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "research_status": "complete",
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Forbes-first exact-name and site:forbes.com/profile searches found no matching personal profile; Quote coverage is distinct."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "technology",
+    "label": "Technology",
+    "summary": "Trust's computer accessories and consumer technology business created his principal fortune. He personally bought out his father, developed the branded enterprise and sold his ownership; the later property portfolio is not substituted for the original wealth-creation platform.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Direct acquisition and business-building account, independently corroborated by the 2018 sale of all Trust shares and substantial international product operations."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Reasoned current classification from Perridon Holdings, his privately owned family investment platform spanning property, private equity, venture capital and public markets. Its active capital-allocation mandate is the best identifiable current organising business after the complete Trust exit.",
+    "confidence": {
+      "score": 78,
+      "band": "medium",
+      "reason": "Official office mandate, personal ownership/active-investing biography and self-financed property platform converge. Materiality is inferred from the broad post-sale principal platform; exact sector weights, family share allocations and recent Dubai disposals are not public. No gross company assets are equated with personal net worth."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Bought his father's trading business and developed Trust into the international branded company he later sold. Broad Self-made records purchased and expanded business wealth while retaining the material family trading platform; it does not imply an independent start.",
+    "confidence": {
+      "score": 86,
+      "band": "high",
+      "reason": "The direct interview explicitly states a father buyout and his subsequent substantial reorganisation. Family transfer or inheritance is not substituted for that positive purchase evidence. The price, financing and any concessions remain unclear, so no narrower starting-position subtype is asserted."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "family_office_principal",
+    "label": "Family office principal",
+    "summary": "Best current relationship is the principal of the family investment platform carrying his name. The official office's active mandate and the personal description of his own holding enterprise support continuing allocation of his post-Trust business wealth.",
+    "confidence": {
+      "score": 81,
+      "band": "medium",
+      "reason": "Personal ownership and continuing investing are explicit in the enterprise biography, independently connected to the official privately owned family office. Its central role is a reasoned materiality inference; the exact personal stake and portfolio weights are unavailable. Historical Trust operator status and a television title are not used as present-role proof."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S1"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "Dutch entrepreneur who developed the Trust computer-accessories business.",
+    "defining_work": "Bought out his father's electronics trading business, built its own-brand operation and sold Trust before concentrating on investments.",
+    "formative_context": "Traded alongside his father and learned the family electronics business.",
+    "decisive_moment": "The father buyout and reorganisation turned a trading operation into the Trust branded business.",
+    "enduring_dimensions": [
+      "Investing in property and young businesses",
+      "Collecting the Bugatti family's cars, furniture and sculpture",
+      "Helping older Rotterdam residents meet through outings and entertainment"
+    ],
+    "character_detail": "Buying a Veyron prompted interest in the wider Bugatti family's creative work.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Introduce the Dutch entrepreneur through the origins and range of his Bugatti collecting."
+      },
+      {
+        "mode": "public_contribution",
+        "angle": "Introduce the practical work of his foundation for older Rotterdam residents."
+      }
+    ],
+    "excluded_transient_context": [
+      "Personal vessel details",
+      "Estimated net worth and collection counts",
+      "Current residence and uncertain Dubai plans",
+      "Short-lived television or podcast titles",
+      "Unrelated allegations and family private matters"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 4,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "public_role_then_foundation",
+    "calibration_archetypes": [
+      "investor_philanthropist",
+      "acquirer_consolidator"
+    ],
+    "notes": "Shared anchor is the Dutch entrepreneur's identity. Short-only facts explain family trading exposure, buyout, Trust expansion/sale and investment portfolio. Long-only dimensions explain the development and exhibition of his collection and the practical neighbourhood-based foundation outings. The long omits the complete business progression and would lose both substantive dimensions if reduced to the short."
+  },
+  "editorial_note": null,
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Trust entrepreneur and investor",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Defining business ownership and investment work directly corroborated."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Consistent direct biographical references."
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "December",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Trust company officer register explicitly identifies birth month and year."
+      },
+      "source_ids": [
+        "S8"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1962",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Trust officer record corroborates established biographical date."
+      },
+      "source_ids": [
+        "S8",
+        "S9"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Rotterdam",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 85,
+        "band": "high",
+        "reason": "Biographical reference and direct interview identify his Rotterdam background; Formula 1 interview independently gives Rotterdam, 1962."
+      },
+      "source_ids": [
+        "S9",
+        "S12"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type": "Company Website",
+      "url": "https://www.perridon.com/",
+      "action": "add",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Official holding site and his enterprise biography corroborate the personal ownership link."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ],
+      "type_id": "14",
+      "verification": "Official holding site and his enterprise biography corroborate the personal ownership link."
+    },
+    {
+      "type": "Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Michel_Perridon",
+      "action": "add",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Complete article matches the Trust entrepreneur, geography and ownership history."
+      },
+      "source_ids": [
+        "S9"
+      ],
+      "type_id": "10",
+      "verification": "Complete article matches the Trust entrepreneur, geography and ownership history."
+    },
+    {
+      "type": "Instagram",
+      "url": "https://www.instagram.com/mperridon/",
+      "action": "add",
+      "confidence": {
+        "score": 82,
+        "band": "medium",
+        "reason": "Current specialist reporting embeds an original post explicitly attributed to Michel Perridon and this handle; multiple independent photo credits and the official Bugatti collection corroborate the identity. Direct profile retrieval fails, so confidence is bounded. The embedded original post URL is https://www.instagram.com/p/DdOTllDDQdT/; opening it was throttled."
+      },
+      "source_ids": [
+        "S10",
+        "S11",
+        "S6"
+      ],
+      "type_id": "9",
+      "verification": "Current specialist reporting embeds an original post explicitly attributed to Michel Perridon and this handle; multiple independent photo credits and the official Bugatti collection corroborate the identity. Direct profile retrieval fails, so confidence is bounded. The embedded original post URL is https://www.instagram.com/p/DdOTllDDQdT/; opening it was throttled."
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0218",
+      "name": "Consumer electronics",
+      "summary": "Personally acquired, developed and sold Trust's substantial international computer-accessories and consumer electronics enterprise.",
+      "relationship_type": "controlling_owner",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Captures the material operating sector behind his fortune.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Direct history and independent full-sale report establish substantial personal operating ownership."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "tag_id": "tag_0041",
+      "name": "Classic-car collector",
+      "summary": "A defining Bugatti collection includes numerous historical cars shown publicly alongside modern models.",
+      "relationship_type": "collector",
+      "temporal_scope": "current",
+      "taxonomy_value": "Groups serious historically focused collections rather than isolated luxury car purchases.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Direct collector interview and official exhibition reporting corroborate scale, historical character and sustained public identity."
+      },
+      "source_ids": [
+        "S5",
+        "S6"
+      ]
+    },
+    {
+      "tag_id": "tag_0018",
+      "name": "Art collector",
+      "summary": "Collects Carlo Bugatti furniture and Rembrandt Bugatti sculpture, including pieces loaned for a curated exhibition.",
+      "relationship_type": "collector",
+      "temporal_scope": "current",
+      "taxonomy_value": "Records a distinct notable art-and-design collection rather than treating automobile ownership itself as art collecting.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Personal collecting account and official recipient exhibition release directly identify the works and loan."
+      },
+      "source_ids": [
+        "S5",
+        "S6"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "field": "middle_names",
+      "candidate_value": "Johannes Christian Wilhelmus",
+      "reason": "Companies House uses Christian; German registration-derived discovery uses Christiaan. Withhold exact middle-name sequence until spelling is independently resolved.",
+      "confidence": {
+        "score": 65,
+        "band": "low",
+        "reason": "Strong identity link but conflicting orthography."
+      },
+      "source_ids": [
+        "S8"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "candidate_value": "11",
+      "reason": "Wikipedia gives 11 December; independent company registration discloses only month/year. Exact day is withheld pending stronger corroboration.",
+      "confidence": {
+        "score": 65,
+        "band": "low",
+        "reason": "Exact day has weaker independent support than month and year."
+      },
+      "source_ids": [
+        "S8",
+        "S9"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.deondernemer.nl/innovatie/dragons-den-investeerder-michel-perridon-losers-hebben-een-excuus-en-winnaars-hebben-een-plan~fd0559d",
+      "title": "Michel Perridon interview",
+      "publisher": "De Ondernemer / AD, 5 April 2021",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full interview body read. Father buyout, family trading experience, Trust reorganisation, sale and subsequent property/investment work; foundation purpose. Acquisition terms not disclosed."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.computable.nl/2018/04/30/egeria-neemt-elektronicafabrikant-trust-over/",
+      "title": "Egeria acquires Trust",
+      "publisher": "Computable, 30 April 2018",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Entire transaction report read. All-share acquisition, computer-accessories segments and substantial international operations; consideration undisclosed."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.perridon.com/perridon-holdings/",
+      "title": "Perridon Holdings Netherlands",
+      "publisher": "Perridon Holdings",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Entire official body read. Privately owned active family investment office, its entrepreneurship foundation and international portfolio. Does not publish his percentage or sector weights."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.dutchdragons.tv/over-de-dutch-dragons/",
+      "title": "About the Dutch Dragons: Michel Perridon",
+      "publisher": "Dutch Dragons",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant personal biography read through indexed full-page body when direct retrieval failed. His holding enterprise, continued investing and property built with own capital. Current podcast membership is not assumed."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://theliberum.com/dutch-business-tycoon-michel-perridon-showcases-some-of-his-most-exclusive-bugattis/",
+      "title": "Michel Perridon's collection at the Bugatti Festival",
+      "publisher": "The Liberum, 27 September 2023",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Entire article and personal quotations read. First Veyron sparked wider family interest; historical cars, furniture and sculpture exhibited."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://newsroom.bugatti.com/en/press-releases/celebrating-an-enduring-legacy-at-the-40th-anniversary-bugatti-festival-in-molsheim",
+      "title": "Celebrating an enduring legacy at the Bugatti Festival",
+      "publisher": "Bugatti, 18 September 2023",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete release read. Curated Carlo furniture and Rembrandt sculpture exhibition with exclusive loans by Perridon Holdings; historical automobile displays."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.friendsinbusiness.nl/rotterdam/dat-was-een-tijd/",
+      "title": "Dat was een tijd",
+      "publisher": "Friends in Business, 18 September 2019",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Entire detailed event report read through direct HTTP extraction. Foundation founder, multi-year RWG partnership, annual gala, neighbourhood grouping, affordability and volunteer-supported transport."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02509521/officers",
+      "title": "Trust Technology Products UK: officers",
+      "publisher": "Companies House",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant officer entry read. Exact Michel Johannes Christian Wilhelmus Perridon, Dutch, December 1962, historical Trust directorship. No private address retained."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://nl.wikipedia.org/wiki/Michel_Perridon",
+      "title": "Michel Perridon",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete biographical body read and identity verified. Orientation and link verification; not used alone for wealth mechanism or current asset role."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.pureluxe.nl/2026/09/bugatti-brouillard-michel-perridon/",
+      "title": "Michel Perridon receives his Bugatti Brouillard",
+      "publisher": "Pure Luxe, 18 September 2026",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Original Instagram embed explicitly names Michel Perridon and @mperridon. Used for social verification only, not cost or delivery details."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://luxurylaunches.com/transport/owner-of-bugatti-brouillard-08112025.php",
+      "title": "Michel Perridon and the Bugatti Brouillard",
+      "publisher": "Luxurylaunches, 11 August 2025",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Repeated exact Instagram photo credits for the identified Trust entrepreneur and collector corroborate handle. Other speculative statements not imported."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://www.formule1.nl/nieuws/trust-oprichter-michel-perridon-10-miljoen-later-als-je-poen-hebt-trekt-de-f1-je-leeg/",
+      "title": "Trust entrepreneur Michel Perridon interview",
+      "publisher": "FORMULE 1",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Entire direct interview read. Explicit Rotterdam, 1962 and historical ownership/sale account; used for birthplace corroboration."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://nl.linkedin.com/posts/martijnkoolhoven_je-struikelt-van-lekkere-quote-naar-lekkere-activity-7506579876733255681-n6-6",
+      "title": "Account of Michel Perridon at Club Quote",
+      "publisher": "Martijn Koolhoven, firsthand public event account",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full public post read. Describes recent departure from the podcast and a reported decision not to return to Dubai. No allegation adopted as established fact; used solely to avoid a stale current-role/residence claim."
+      ]
+    },
+    {
+      "id": "S14",
+      "url": "https://www.vastgoeddata.nl/article/7e3ebaff-1b99-11f1-b04f-464e1662e283/stevaco-vastgoed-en-minerva-development-kopen-in-dordrecht",
+      "title": "Welgelegen property sale in Dordrecht",
+      "publisher": "Vastgoeddata, 9 March 2026",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete indexed transaction body read. Identifies Welgelegen Group's personal owner and continuing Dutch property disposal. One property does not establish principal wealth sector."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Research date 1 October 2026. The historical Awatea record is selection context only and was not independently bridged. Exact unusual name, Dutch identity and public business profile support a bounded resolved match.",
+    "Direct buyout evidence takes precedence over shorthand succession/founder accounts. Broad Self-made retains the father's material trading platform; terms and financing are unknown. The same business was acquired and transformed, so advantaged self-made is not used to disguise a possible core transfer.",
+    "Current Finance & Investments and Family office principal are independently reasoned from a documented privately owned active investment enterprise and Michel's personal ownership/continuing allocation role. No net-worth schedule or complete family cap table is available. Real Estate is a plausible narrower alternative but current weighting is not established; Diversified is not inferred merely from a list of portfolio sectors.",
+    "The latest firsthand account reports a change in his Dubai intentions and podcast association. These do not establish liquidation of all assets or termination of his broader family investment activity. No current residence, podcast title or disputed allegation is proposed.",
+    "Forbes-first searches found no exact profile. LinkedIn directory matches did not supply a verified personal profile; Facebook, Twitter, Youtube, Personal Website, TikTok, Vimeo and Flickr were checked. Podcast channels and company accounts are not personal profiles. TikTok access is robot-blocked. Trip Advisor and Zillow have no relevant owner fit.",
+    "Instagram direct profile fetch failed. Original personal-post embedding in current specialist reporting, repeated independent photo credits and the primary collection bridge support the proposed handle at medium confidence. The official Company Website is separately typed.",
+    "Birth day and middle names remain candidates. No secondary nationality or residence is inferred. Companies House supports December 1962, not a precise day.",
+    "Minimum active tags capture consumer electronics and two distinct serious collecting dimensions. Video-game hardware was assessed but the initial joystick and one Trust sub-brand do not require a separate definitive video-games cohort. Venture capital/private equity exposures lack sufficient personal mandate granularity for extra literal tags. Property development is documented historically, but the investment/asset ownership context is retained in prose rather than adding an uncertain present operating identity.",
+    "Published texts omit personal vessels, rankings, counts, speculative transaction values and unrelated sensitive matters. The long supplies collecting motivation/exhibition and practical charitable methods while deliberately omitting the short's business progression."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent approved classifications and complementary 54/115-word pair after source review. Strict owner-input editorial validation passed. Original Instagram embed is explicitly attributed and independently corroborated; direct access limitation retained. No live changes."
+  },
+  "biography": {
+    "plain_text": "Michel Perridon is a Dutch entrepreneur who developed Trust into an international computer-accessories business after buying out his father's trading company. He sold Trust and subsequently focused on a broader investment portfolio through Perridon Holdings. His interests span property and young businesses, building on the commercial experience he acquired in his family's electronics trade.",
+    "html": "<p>Michel Perridon is a Dutch entrepreneur who developed Trust into an international computer-accessories business after buying out his father's trading company. He sold Trust and subsequently focused on a broader investment portfolio through Perridon Holdings. His interests span property and young businesses, building on the commercial experience he acquired in his family's electronics trade.</p>\r\n",
+    "word_count": 54,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Direct interviews and independent or official corroboration support every material claim; text avoids current-role and asset-weight uncertainties."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Dutch entrepreneur Michel Perridon's interest in Bugatti grew from owning a Veyron into collecting the work of the wider family. Alongside historic and modern cars, he acquired Carlo Bugatti's furniture and Rembrandt Bugatti's sculptures. Pieces from his collection were exhibited at the Bugatti festival in Molsheim, bringing the family's art and automotive history together.\n\nIn Rotterdam, he established the Leef je Uit Foundation to help older residents overcome loneliness through outings and entertainment. Its partnership with Rotterdam World Gateway supported an annual Christmas gala. Guests were brought together by neighbourhood so they could meet people living nearby. Volunteers and transport helped them take part in an evening they might otherwise have been unable to afford.",
+    "html": "<p>Dutch entrepreneur Michel Perridon's interest in Bugatti grew from owning a Veyron into collecting the work of the wider family. Alongside historic and modern cars, he acquired Carlo Bugatti's furniture and Rembrandt Bugatti's sculptures. Pieces from his collection were exhibited at the Bugatti festival in Molsheim, bringing the family's art and automotive history together.</p>\r\n<p>In Rotterdam, he established the Leef je Uit Foundation to help older residents overcome loneliness through outings and entertainment. Its partnership with Rotterdam World Gateway supported an annual Christmas gala. Guests were brought together by neighbourhood so they could meet people living nearby. Volunteers and transport helped them take part in an evening they might otherwise have been unable to afford.</p>\r\n",
+    "word_count": 115,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Direct interviews and independent or official corroboration support every material claim; text avoids current-role and asset-weight uncertainties."
+    },
+    "source_ids": [
+      "S5",
+      "S6",
+      "S7",
+      "S1"
+    ]
+  }
+}

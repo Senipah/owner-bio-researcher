@@ -1,0 +1,1196 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1959,
+    "display_name": "Stanley Joseph Seeger",
+    "identity_confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Rare full name, American origin and British residence match the auction-house biography. It also identifies Rosenkavalier, independently linked to Haida and the input ownership period. This is the collector born in 1930, not his physician father who died in 1952. Input age 80 is stale."
+    }
+  },
+  "research_status": "complete",
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Forbes-first exact-name, domain and profile searches found no authenticated personal Forbes profile. An art-sale report or a different Seeger is not a personal profile."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "wealth_creation_industry": {
+    "classification": "diversified",
+    "label": "Diversified",
+    "summary": "His inherited fortune arose from substantial timber, paper and hydrocarbon interests.",
+    "confidence": {
+      "score": 85,
+      "band": "high",
+      "reason": "Sotheby's traces the family wealth to timberland, oil and gas, and a major paper mill, whose eventual sale benefited Stanley personally. These materially productive activities span unrelated sectors; no single dominant contribution is established. Diversified is supported by that specific origin account, not by collecting variety."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "primary_industry": {
+    "classification": "diversified",
+    "label": "Diversified",
+    "summary": "Origin-sector fallback at his death in 2011.",
+    "confidence": {
+      "score": 70,
+      "band": "medium",
+      "reason": "The inherited operating interests had been sold. Personal art, books and homes remained substantial, but their weight against financial assets is unknown. Arts activity alone does not prove principal-sector dominance. The known wealth-creation classification is therefore retained as an explicit fallback, not a claim of continuing industrial ownership."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S7"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "inherited",
+    "label": "Inherited",
+    "summary": "A substantial family inheritance financed his collecting life.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The primary auction catalogue explicitly dates receipt of his fortune to the late 1970s. A separate house biography identifies him as heir to timber and oil wealth. Self-made and mixed lack evidence of an independently material earned fortune; profitable collection sales do not establish industrial expansion."
+    },
+    "source_ids": [
+      "S2",
+      "S3"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "heir_family_shareholder",
+    "label": "Heir / family shareholder",
+    "summary": "He remained the custodian and beneficiary of inherited patrimony.",
+    "confidence": {
+      "score": 80,
+      "band": "medium",
+      "reason": "The original family holdings were converted into proceeds, personal collections and residences. Estate-sale evidence confirms substantial personal property persisted at death. This is the heir/custodian sense of the label, not a claim of surviving family-company shares. The art transactions served collecting; no principal professional investment mandate or operating business is established."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S7"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "American-born art collector based in England.",
+    "defining_work": "Distinctive collections of modern art and rare books, alongside sustained support for Greek scholarship.",
+    "formative_context": "Milwaukee birth, music studies and an inherited industrial fortune.",
+    "decisive_moment": "Family wealth enabled large-scale independent collecting.",
+    "enduring_dimensions": [
+      "Modern painting and decorative objects.",
+      "An academic endowment supporting research and travel.",
+      "A focused Joseph Conrad library."
+    ],
+    "character_detail": null,
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Introduce the collector and the inheritance that financed his work."
+      },
+      {
+        "mode": "public_contribution",
+        "angle": "Open with his sustained support for Greek scholarship."
+      }
+    ],
+    "excluded_transient_context": [
+      "Yacht ownership",
+      "Private relationship details",
+      "Unverified estate valuation",
+      "An unproven single dominant sector at death"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "public_contribution",
+    "narrative_shape": "public_role_then_foundation",
+    "calibration_archetypes": [
+      "heir_custodian"
+    ],
+    "notes": "The person and Princeton are the two shared anchors. Short alone gives national origin, British base, industrial inheritance, birthplace, education and Picasso sale. Long adds the Hellenic fund's practical scope and a separate literary collection with specific manuscripts and inherited book provenance. It does not repeat the short's art-market narrative. The final sentence ends on a tangible object."
+  },
+  "editorial_note": null,
+  "biography": {
+    "plain_text": "Stanley Joseph Seeger was an American-born art collector based in England, with a substantial inherited family fortune from timber, oil and paper businesses. Born in Milwaukee, he studied music at Princeton. His collections ranged from modern painting to decorative objects, and he sold 88 Picasso works in a single auction.",
+    "html": "<p>Stanley Joseph Seeger was an American-born art collector based in England, with a substantial inherited family fortune from timber, oil and paper businesses. Born in Milwaukee, he studied music at Princeton. His collections ranged from modern painting to decorative objects, and he sold 88 Picasso works in a single auction.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Direct auction-house accounts and university records support the allocated facts; no present asset ownership or unsupported chronology is asserted."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S5"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Stanley Seeger's support for Greek scholarship began with a gift establishing a Hellenic fund at Princeton in 1979. He continued funding the programme for three decades, supporting research collections and enabling students and faculty to travel to Greece. The university named its Hellenic studies centre after him shortly before his death.\n\nHis private library reflected a similarly sustained interest in Joseph Conrad. It brought together first editions, presentation copies, letters and the manuscript of Typhoon, which he acquired in 1990. He was still building the collection when he died; it included a volume bearing his father's ownership signature, connecting two generations of readers.",
+    "html": "<p>Stanley Seeger's support for Greek scholarship began with a gift establishing a Hellenic fund at Princeton in 1979. He continued funding the programme for three decades, supporting research collections and enabling students and faculty to travel to Greece. The university named its Hellenic studies centre after him shortly before his death.</p>\r\n<p>His private library reflected a similarly sustained interest in Joseph Conrad. It brought together first editions, presentation copies, letters and the manuscript of Typhoon, which he acquired in 1990. He was still building the collection when he died; it included a volume bearing his father's ownership signature, connecting two generations of readers.</p>\r\n",
+    "word_count": 103,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Direct auction-house accounts and university records support the allocated facts; no present asset ownership or unsupported chronology is asserted."
+    },
+    "source_ids": [
+      "S1",
+      "S4"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Art collector",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Auction-house and university biographies establish his defining identity."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Primary personal biographies consistently identify him."
+      },
+      "source_ids": [
+        "S2",
+        "S5"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Milwaukee",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Exact birthplace in Sotheby's biographical release."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "28",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Exact birth date in the auction-house release, corroborated by the personal encyclopedia article."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "May",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Exact birth date in the auction-house release."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1930",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Consistent auction-house life dates; input age is stale."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "24",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary class memorial explicitly states 24 June 2011."
+      },
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "June",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Class memorial and auction-house release agree; the university news story's July wording is erroneous."
+      },
+      "source_ids": [
+        "S2",
+        "S5"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "2011",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Multiple primary memorial and auction records agree."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S5"
+      ]
+    },
+    {
+      "field": "secondary_nationality",
+      "value": "Greek",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 88,
+        "band": "high",
+        "reason": "Auction-house biography says he adopted Greek nationality; independent Greek reporting explicitly corroborates citizenship. No formal US renunciation conclusion is inferred."
+      },
+      "source_ids": [
+        "S2",
+        "S8"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "action": "correct_existing",
+      "existing_value": "Unknown",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Primary class memorial gives his death and date; auction-house estate sources corroborate."
+      },
+      "source_ids": [
+        "S2",
+        "S5"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stanley_J._Seeger",
+      "action": "add",
+      "verification": "Directly read article matches the exact collector, family, dates and UK context; not his physician father.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Identity independently verified against primary auction and university sources."
+      },
+      "source_ids": [
+        "S9",
+        "S2",
+        "S5"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0018",
+      "name": "Art collector",
+      "summary": "Built and dispersed major modern-art and decorative collections.",
+      "relationship_type": "collector",
+      "temporal_scope": "historical",
+      "taxonomy_value": "A sustained defining collection, not incidental purchasing or sponsorship.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Primary auction biographies and collection catalogues document decades of collecting."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "tag_id": "tag_0748",
+      "name": "Book collector",
+      "summary": "Assembled a major specialised Conrad library.",
+      "relationship_type": "collector",
+      "temporal_scope": "historical",
+      "taxonomy_value": "A separate substantial literary collection adds useful information beyond visual art collecting.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Dedicated auction catalogue establishes the library's breadth and provenance."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "field": "name_suffix",
+      "value": "Jr.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Primary auction biography distinguishes him from his identically named father. Optional inventory field retained as a candidate rather than a missing-field proposal."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.josephconradsociety.org/catalogues/steeger_L13415_1.pdf",
+      "title": "The Joseph Conrad Collection from the Library of the Late Stanley J. Seeger, Part I, 10 July 2013",
+      "publisher": "Sotheby's / Joseph Conrad Society archive",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Primary introduction on printed pages 8-9 directly read. Lot 62 on printed page 56 read in complete indexed PDF text. Establishes underlying family businesses, his sale benefit, library formation and father-to-son book provenance. Subsequent PDF retrieval intermittently failed."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://artdaily.com/news/67892/Sotheby-s-reveals-the-world-of-one-of-the-great-collectors-of-our-time--Stanley-J--Seeger-",
+      "title": "Sotheby's reveals the world of Stanley J. Seeger, 2 February 2014",
+      "publisher": "Sotheby's release reproduced by ArtDaily",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full release directly read. Gives exact name and birth, inherited timber/oil wealth, collecting identity, education, Greek nationality, English homes, Rosenkavalier association and residual collection sale. Auction totals include jointly assembled property, not a personal net-worth calculation."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.sothebys.com/en/auctions/ecatalogue/2013/contemporary-art-evening-auction-l13022/lot.9.html",
+      "title": "David Hockney: catalogue note on Stanley Seeger, 2013",
+      "publisher": "Sotheby's",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full catalogue note read. Explicit late-1970s inheritance; long-term collection formation and later dispersals. Does not document continuing ownership of the original industrial companies."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.princeton.edu/news/2011/11/22/princeton-establishes-stanley-j-seeger-52-center-hellenic-studies",
+      "title": "Princeton establishes Stanley J. Seeger '52 Center for Hellenic Studies, 22 November 2011",
+      "publisher": "Princeton University / Jennifer Greenstein Altmann",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant article body read. Establishes 1979 fund, continuing gifts, research materials and travel, music degrees and May 2011 centre establishment. Its statement that he died in July conflicts with the primary class memorial and is not adopted."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://princeton52.org/page/memorials2011",
+      "title": "Class of 1952 memorial: Stanley Seeger",
+      "publisher": "Princeton Class of 1952 / Quincey Lumsden",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete Seeger memorial section directly read. Explicit death in London on 24 June 2011, music studies, collecting career, Picasso sale and sustained Hellenic endowment."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.nauticapedia.ca/vessel.php?id=71098",
+      "title": "Haida 1929 vessel history",
+      "publisher": "Nauticapedia",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant owner table read. Records Seeger in 1981 and the subsequent 1988 owners, with Rosenkavalier among former names. Supplementary identity corroboration only."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://bartholomewlandscaping.com/projects/listed-manor-house-honiton-devon/",
+      "title": "Listed Manor House, Honiton, Devon",
+      "publisher": "Bartholomew Landscaping",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full project account read. Identifies Seeger as its client in 2006 and his direct participation in conserving and improving a personal estate. Not evidence of commercial property development."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.ekathimerini.com/society/246676/on-40th-anniversary-of-hellenic-studies-program-princeton-provost-urges-dialogue/",
+      "title": "On 40th anniversary of Hellenic Studies, 21 November 2019",
+      "publisher": "Kathimerini / Pavlos Papadopoulos",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article read. Explicitly reports adopted Greek citizenship. Institutional and personal social links are not interchangeable."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://en.wikipedia.org/wiki/Stanley_J._Seeger",
+      "title": "Stanley J. Seeger",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full personal article read for identity and leads. One passage implausibly attributes a reaction to a 2013 sale to a man who died in 2011; this and unsupported musical-performance generalisations are excluded."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Terminal wealth classifications refer to his death on 24 June 2011, not the heirs' positions in 2026. Research cutoff 30 September 2026. The remaining personal estate is not fully valued or allocated among sectors.",
+    "The heir relationship describes inherited patrimony after disposal of the original family company. It does not assert retained shares, a present family office, passive management inferred solely from age, or the value of the entire family business as his personal fortune.",
+    "Forbes-first exact-name/profile/domain checks found no authenticated personal profile. All supported social types checked: LinkedIn, Instagram, Facebook, Twitter/X, Youtube, TikTok, Vimeo, Flickr, Trip Advisor, Zillow, Personal Website and Company Website. Results were institutional tributes, auction material or unrelated names; no personal account authenticated. Princeton's named centre is not his personal or company website.",
+    "Greek citizenship is supported independently; the report that he returned his American passport does not by itself settle formal US nationality status. American-born prose avoids making a legal dual-citizenship assertion.",
+    "The input age 80 dated 2020 is inconsistent with documented life dates. No calculated-age field is proposed. Mortality corrected from Unknown, and death fields were researchable in this immutable inventory.",
+    "The university news article's July death wording conflicts with the explicit class memorial and June auction-house account. June is adopted. Some collecting accounts also misdate the Picasso auction; no auction year is used in the prose.",
+    "Minimum active tags retained: visual-art collecting and a separately documented specialised book collection. No generic philanthropic label, amateur sailing label or commercial art-investor label inferred.",
+    "Primary sources were fully read in relevant bodies/sections. New York Times and Telegraph direct opens failed; neither inaccessible text nor secondary Wikipedia detail supplies a material claim."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent approved classifications and pair, with the short revised to remove an unnecessary inheritance-versus-arrival chronology. Complementary 50/103-word biographies. Strict owner-input and editorial validation required before completion report."
+  }
+}

@@ -43,6 +43,18 @@ field is publicly knowable. Use supported `Unknown` classifications and record
 evidence limits under `uncertainties`; do not use `limited` merely because a
 resolved person has a sparse public profile.
 
+Repository-only exception: an explicit human approval in
+`config/owner-editorial-exceptions.json` may authorize withholding both
+biographies for the exact owner ID. Reference its exact ID in the optional
+`biography_exception` field. Both biographies, `biography_brief`, and
+`editorial_assessment` must be null; supply a sourced, confidence-scored
+20–120-word `editorial_note` explaining the evidence limit. No biography field
+proposal is permitted. Identity, classifications, sources, proposed details,
+and terminal-review validation still apply. Compilation preserves the input
+biographies and displays the exception in the review report. Researchers may
+not create or extend these approvals themselves. This is not a general sparse
+profile waiver and does not apply to standalone plugin work.
+
 ## Forbes check
 
 Search the exact name on Forbes and with `site:forbes.com/profile`. A verified

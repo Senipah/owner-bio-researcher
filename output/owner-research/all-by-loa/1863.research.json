@@ -1,0 +1,1348 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1863,
+    "display_name": "Nico Erik Rosberg",
+    "identity_confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Exact full name, source age 34 in May 2020, German birthplace, Monaco residence and existing personal Wikipedia page independently align with the 2016 Formula One champion. Primary city and racing records corroborate his birth. His father Keke is a distinct source owner; no family asset is automatically attributed to Nico."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "nationality",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "nationality",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "German-Finnish Formula One champion and investor based in Monaco.",
+    "defining_work": "Won the drivers' championship with Mercedes and developed an investment business after retiring.",
+    "formative_context": "His father Keke supplied management and industry connections during his development as a driver.",
+    "decisive_moment": "Retired from Formula One after achieving his championship goal.",
+    "enduring_dimensions": [
+      "Concentration routines and detailed preparation.",
+      "Technical aptitude and an interest in engineering.",
+      "Connecting technology founders with established businesses."
+    ],
+    "character_detail": "Removed news, email and Instagram distractions during his title campaign.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Introduce the champion through the concrete preparation methods behind his performance."
+      },
+      {
+        "mode": "institution_or_asset",
+        "angle": "Introduce his investment platform through its role connecting startups and established companies."
+      }
+    ],
+    "excluded_transient_context": [
+      "Personal vessel ownership",
+      "Fundraising totals and net-worth estimates",
+      "Retired projects described as current",
+      "His father's separate biography"
+    ],
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "investor_philanthropist"
+    ],
+    "notes": "Short 52 words: nationality, base, earned racing fortune, title, explicit family advantage and investment platform. Long 101 words: concentration routines, technical aptitude and the practical business-introduction work. Shared anchors are champion and investor identities; the long omits the family and wealth-origin bundle and adds several distinct practices. No personal vessel, current fund size or inherited family asset appears in either text."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/nico-rosberg/",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "The historical athlete profile explicitly matches Mercedes, racing wealth, German citizenship and Monte Carlo. The original public HTML body was successfully read after tool rendering showed mostly navigation."
+    }
+  },
+  "proposed_details": [
+    {
+      "field": "nationality",
+      "value": "German",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official team driver profile identifies German nationality."
+      },
+      "source_ids": [
+        "S6"
+      ]
+    },
+    {
+      "field": "secondary_nationality",
+      "value": "Finnish",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Formula One records Finnish and German passports; Forbes Austria explicitly confirms Finnish citizenship."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Formula One world champion and venture investor",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official racing record and current firm identify the two defining roles."
+      },
+      "source_ids": [
+        "S2",
+        "S7"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Primary sporting and city biographies identify him as a man."
+      },
+      "source_ids": [
+        "S2",
+        "S8"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Wiesbaden",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official city record and team press pack agree."
+      },
+      "source_ids": [
+        "S6",
+        "S8"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "27",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Primary city and team sources give exact birth date."
+      },
+      "source_ids": [
+        "S6",
+        "S8"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "June",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Primary city and team sources give exact birth date."
+      },
+      "source_ids": [
+        "S6",
+        "S8"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1985",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Primary city and team sources give exact birth date; source historical age agrees."
+      },
+      "source_ids": [
+        "S6",
+        "S8"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://www.forbes.com/profile/nico-rosberg/",
+      "action": "add",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Exact historical athlete profile verified by direct public HTML body and career/geography."
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "verification": "Exact historical athlete profile verified by direct public HTML body and career/geography."
+    },
+    {
+      "type_id": "15",
+      "type": "Personal Website",
+      "url": "https://www.nicorosberg.com/",
+      "action": "add",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official team press pack and primary interview link to this personal domain; current landing page and investment subpage remain attributable."
+      },
+      "source_ids": [
+        "S6",
+        "S9",
+        "S10"
+      ],
+      "verification": "Official team press pack and primary interview link to this personal domain; current landing page and investment subpage remain attributable."
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://rosberg.ventures/",
+      "action": "add",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Official firm website identifies Nico's personal investing activity; his personal domain corroborates the platform."
+      },
+      "source_ids": [
+        "S7",
+        "S9"
+      ],
+      "verification": "Official firm website identifies Nico's personal investing activity; his personal domain corroborates the platform."
+    },
+    {
+      "type_id": "5",
+      "type": "LinkedIn",
+      "url": "https://www.linkedin.com/in/nicorosberg/",
+      "action": "add",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Personal Influencer post and linked profile identify his title and ventures with firsthand detail; company page is separate. Full post read, while direct profile retrieval is restricted."
+      },
+      "source_ids": [
+        "S5"
+      ],
+      "verification": "Personal Influencer post and linked profile identify his title and ventures with firsthand detail; company page is separate. Full post read, while direct profile retrieval is restricted."
+    },
+    {
+      "type_id": "9",
+      "type": "Instagram",
+      "url": "https://www.instagram.com/nicorosberg/",
+      "action": "add",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Primary Polestar interview explicitly labels this his official Instagram; specialist profile and his verified video description corroborate the handle. Direct platform access restricted."
+      },
+      "source_ids": [
+        "S10",
+        "S11"
+      ],
+      "verification": "Primary Polestar interview explicitly labels this his official Instagram; specialist profile and his verified video description corroborate the handle. Direct platform access restricted."
+    },
+    {
+      "type_id": "2",
+      "type": "Facebook",
+      "url": "https://www.facebook.com/nicorosberg/",
+      "action": "add",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Official team press pack and primary interview independently give this exact personal channel. Platform returns a login/block page, so recent activity is not asserted."
+      },
+      "source_ids": [
+        "S6",
+        "S10"
+      ],
+      "verification": "Official team press pack and primary interview independently give this exact personal channel. Platform returns a login/block page, so recent activity is not asserted."
+    },
+    {
+      "type_id": "4",
+      "type": "Youtube",
+      "url": "https://www.youtube.com/channel/UCtLZ6qQgB-EwQy5HWIo3X-w",
+      "action": "add",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Primary interview directly links this channel; team press pack supplies legacy nicorosbergtv and indexed verified video corroborates authorship."
+      },
+      "source_ids": [
+        "S6",
+        "S10",
+        "S11"
+      ],
+      "verification": "Primary interview directly links this channel; team press pack supplies legacy nicorosbergtv and indexed verified video corroborates authorship."
+    },
+    {
+      "type_id": "3",
+      "type": "Twitter",
+      "url": "https://x.com/nicorosberg",
+      "action": "add",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "The 2025 All-In interview publisher explicitly directs listeners to this personal X account. Older primary links use nico_rosberg and now return 404; this recent verified cross-link is used instead."
+      },
+      "source_ids": [
+        "S12"
+      ],
+      "verification": "The 2025 All-In interview publisher explicitly directs listeners to this personal X account. Older primary links use nico_rosberg and now return 404; this recent verified cross-link is used instead."
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0078",
+      "name": "Formula 1",
+      "summary": "Professional Formula One driver and world champion.",
+      "relationship_type": "world champion racing driver",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Defining sustained competitive identity; the specific Formula 1 cohort is more informative than a redundant Motorsport tag.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official championship biography directly establishes membership."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "tag_id": "tag_0192",
+      "name": "Venture capital",
+      "summary": "Sustained personal startup investor and creator of an active venture-investment platform.",
+      "relationship_type": "venture investor and platform founder",
+      "temporal_scope": "current",
+      "taxonomy_value": "Repeated capital allocation and fund leadership establish a sustained specialism rather than an isolated investment. Angel investor would overlap this minimum useful assignment.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Current official platform, primary personal disclosures and 2026 independent reporting agree."
+      },
+      "source_ids": [
+        "S3",
+        "S4",
+        "S7",
+        "S9"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1863",
+      "title": "Immutable owner inventory: person 1863",
+      "publisher": "Repository export",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Exact full name, Germany birth country, Monaco residence, age 34 in May 2020 and existing personal Wikipedia URL. Thanuja historical relationship is context only."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/profile/nico-rosberg/",
+      "title": "Nico Rosberg: historical athlete profile",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full original public HTML body read via direct request. June 2016 profile identifies racing as wealth source, Mercedes career, German citizenship and Monte Carlo residence. Automatic age is not used independently."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nico-rosberg.7ryzoUXKrxqhlcNlXEUaTf",
+      "title": "Hall of Fame: Nico Rosberg",
+      "publisher": "Formula One",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read: champion identity, father's management and connections, family-team participation, dual passports, concentration practices and Williams aptitude result."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.forbes.at/artikel/eine-neue-weltmeisterschaft.html",
+      "title": "Eine neue Weltmeisterschaft, 14 March 2024",
+      "publisher": "Forbes Austria",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full interview read. Describes his own allocation as about one-quarter venture capital and three-quarters listed stocks/bonds, near-disposal of property, sustained investing and Finnish citizenship. Portfolio values are not independently audited."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.ndtvprofit.com/sports/former-f1-champ-nico-rosberg-raises-100-million-for-vc-firm-10731583",
+      "title": "Former F1 Champ Nico Rosberg Raises USD100 Million for VC Firm, 12 January 2026",
+      "publisher": "Bloomberg News via NDTV Profit",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article body read, separately from automated summary. Confirms founder/principal investor, personal startup investing, current fund activity and commercial introductions. Reported fund AUM belongs to the platform and clients, not wholly to him."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.linkedin.com/posts/nicorosberg_focus-has-always-been-the-key-to-my-success-activity-7278325234481430528-UN3a",
+      "title": "Nico Rosberg: focus and investment priorities",
+      "publisher": "Nico Rosberg via LinkedIn",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full personal post and author's follow-up comment read. Explains distraction removal during title preparation, new venture focus, ending RXR involvement and stepping back from festival operations. Links the personal Influencer account, distinct from the company page."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.ausmotive.com/downloads/Mercedes-Benz/Mercedes-AMG-2015-press-pack.pdf",
+      "title": "Mercedes AMG Petronas 2015 press pack: driver profile, page 3",
+      "publisher": "Mercedes-Benz Grand Prix via Ausmotive",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Original team PDF page text read directly: German nationality, 27 June 1985, Wiesbaden, Monaco and exact personal website, Twitter, Facebook, Instagram and YouTube references. Historical Instagram handle superseded by later primary cross-links."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://rosberg.ventures/",
+      "title": "Rosberg Ventures official website",
+      "publisher": "Rosberg Ventures",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant body read. Describes fund-of-funds activity, Nico's seed-stage co-investing and connections between German companies and startups."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.wiesbaden.de/en/kultur/stadtgeschichte/goldenes-buch-artikel/nico-rosberg",
+      "title": "Nico Rosberg: Golden Book",
+      "publisher": "City of Wiesbaden",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full primary profile read; exact birth date and city corroborate official team data."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.nicorosberg.com/rosberg-ventures-1",
+      "title": "Rosberg Ventures on Nico Rosberg's personal site",
+      "publisher": "Nico Rosberg",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Current personal domain identifies his investment platform and direct/fund strategy. Homepage update notice is separate; fund size is not personal wealth."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.polestar.com/us/news/nico-rosberg/",
+      "title": "Pure progressive performance: Nico Rosberg",
+      "publisher": "Polestar",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full interview and official-channel section read. Directly links personal website, Facebook, Instagram and exact YouTube channel ID. Its old Twitter link is not used for the current proposal."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.youtube.com/watch?v=C5mBu5W3O7Y",
+      "title": "Nico Rosberg official video: description and channel attribution",
+      "publisher": "Nico Rosberg via YouTube",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed description and verified channel attribution read; direct video retrieval was limited. Used solely to corroborate personal-channel authorship and social cross-links, not as an asset valuation."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://sites.libsyn.com/254861/nico-rosberg-on-the-booming-business-of-f1-all-in-live-from-miami",
+      "title": "All-In Live from Miami: Nico Rosberg, 29 May 2025",
+      "publisher": "All-In Podcast",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full publisher episode notes read. Explicitly directs listeners to https://x.com/nicorosberg . Audio content is not represented as reviewed."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://www.forbes.com/sites/justinbirnbaum/2024/11/15/how-f1-champion-nico-rosberg-scored-100-million-for-a-new-vc-fund/",
+      "title": "How F1 Champion Nico Rosberg Scored USD100 Million for a New VC Fund",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant indexed article passages read; direct repeat fetch later failed. Reports nearly USD80 million career pretax salary/bonus earnings and at least USD5 million personal fund commitment. Managed capital is distinct from personal investment."
+      ]
+    },
+    {
+      "id": "S14",
+      "url": "https://tre-gmbh.com/en/about-us/",
+      "title": "About us: Team Rosberg Engineering",
+      "publisher": "TRE",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full current body read. Keke originated the engineering enterprise; Nico became sole owner in January 2025. No acquisition instrument or value is given, and this does not establish his dominant current wealth sector."
+      ]
+    },
+    {
+      "id": "S15",
+      "url": "https://www.forbes.at/artikel/nico-rosbergs-fund-of-funds",
+      "title": "Nico Rosbergs Fund of Funds",
+      "publisher": "Forbes Austria",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full April 2024 report read; separates his existing private startup portfolio from client fund commitments and identifies his own substantial participation."
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Personal wealth versus client capital",
+      "detail": "Fund assets under management are not Nico's personal net worth. The decisive allocation account concerns his own money, with current continuity supported independently. Complete 2026 holdings and the relative valuation of TRE are undisclosed; the current sector remains an inference, not an audited balance sheet."
+    },
+    {
+      "topic": "Family platform and later ownership",
+      "detail": "A materially useful early management/network platform is explicit, while his original fortune was earned through his separate racing career. TRE's ownership history does not establish inherited core wealth, and the acquisition instrument is unestablished. The father's company creation and Nico's later ownership are not interchangeable facts."
+    },
+    {
+      "topic": "Chronology and discontinued projects",
+      "detail": "The personal LinkedIn announcement records withdrawal from Rosberg X Racing and Greentech Festival operations, with some festival shares to be sold. Older descriptions of those projects are not carried forward as current. The investment firm's start in 2022 and public fund launch in 2024 are different milestones. Individual startup holdings may have exited or failed; no complete static portfolio is asserted."
+    },
+    {
+      "topic": "Social verification and access",
+      "detail": "Forbes checked first; direct public HTML verified the historical athlete profile. Personal website currently shows an update notice but its investment subpage remains readable. LinkedIn post full body establishes the personal account; a similarly named company page is not substituted. Instagram/Facebook/X and YouTube retrieval is limited, so primary official cross-links establish identity without asserting current posting. Twitter's old nico_rosberg link returned 404; the 2025 interview publisher supplies nicorosberg. TikTok searches did not establish an attributable account; Vimeo and Flickr results were third-party media, and Trip Advisor/Zillow searches gave no supported personal account. Existing Wikipedia was reviewed and is not duplicated."
+    },
+    {
+      "topic": "Biographical limits",
+      "detail": "German and Finnish citizenship are distinguished from Monaco residence; the F1 article's suggestion that residence could make him Monegasque is not used as citizenship evidence. No secondary residence, exact personal asset total or undocumented yacht beneficial ownership is proposed. Source age 34 in May 2020 is consistent with birth in June 1985. Old profile family counts are not imported."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent approved the 52/101-word pair and independent wealth classifications after directly reading the decisive Forbes Austria personal-portfolio account. Fund AUM is excluded from personal wealth, and current investment continuity is corroborated. Only this assigned dossier is saved; strict validation follows against immutable input."
+  },
+  "wealth_creation_industry": {
+    "classification": "sports",
+    "label": "Sports",
+    "summary": "Professional Formula One earnings and performance bonuses created his original fortune.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Forbes' historical athlete profile explicitly identifies racing as his wealth source, while its later reporting estimates substantial career salary and bonus earnings before his investing career. This is personally earned remuneration rather than a carmaker's assets or his father's fortune."
+    },
+    "source_ids": [
+      "S1",
+      "S13"
+    ]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Financial investments now best explain the principal identifiable private asset base.",
+    "confidence": {
+      "score": 86,
+      "band": "high",
+      "reason": "A direct 2024 account allocates his own money between venture investments and a larger listed-securities portfolio. Current company activity and 2026 reporting corroborate continued personal allocation and a founder/principal-investor role. TRE is a separately owned operating asset, but no evidence displaces the financial portfolio's demonstrated importance. Fund AUM is excluded from his wealth; the full current balance sheet is unknown."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S7",
+      "S14"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "He earned a separate racing fortune with a material early advantage from his father's management and industry network.",
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Primary sporting history identifies Keke's management, extensive connections and Nico's place in the family racing team. Forbes independently establishes large personal racing earnings. The mechanism is earned wealth with a substantial launch platform, not an assumed inheritance. Later TRE ownership does not demonstrate a principal family-asset transfer; its legal route and comparative value are not established."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S13",
+      "S14"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "investor",
+    "label": "Investor",
+    "summary": "He actively allocates personal capital alongside managing a venture-investment business.",
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Personal financial allocations, repeated direct startup investments and continued commercial dealmaking establish substantive activity beyond an honorary founder title. Founder is a plausible secondary relationship to Rosberg Ventures, but the private listed and venture portfolio and sustained allocation role support Investor as the principal relationship. External commitments are not treated as personally owned assets."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5",
+      "S7"
+    ]
+  },
+  "biography": {
+    "plain_text": "Nico Rosberg is a German-Finnish former racing driver and investor based in Monaco. He earned his fortune in Formula One, winning the 2016 championship with Mercedes. His father, champion Keke Rosberg, managed his early career and opened industry connections. After retiring, he established Rosberg Ventures to invest in funds and technology companies.",
+    "html": "<p>Nico Rosberg is a German-Finnish former racing driver and investor based in Monaco. He earned his fortune in Formula One, winning the 2016 championship with Mercedes. His father, champion Keke Rosberg, managed his early career and opened industry connections. After retiring, he established Rosberg Ventures to invest in funds and technology companies.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Official racing and company records support identity, title, family advantage and business; Forbes corroborates earned wealth and dual nationality."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S7",
+      "S9"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Formula One champion Nico Rosberg used meditation and repeated kart testing to sharpen his concentration and driving technique. He also removed distractions during his title campaign, cutting out news, email and Instagram to focus on preparation. His attention to engineering had already impressed Williams, where he achieved the team's highest score in its aptitude test before joining the driver line-up.\n\nAs an investor, Rosberg seeks business introductions as well as financial returns. He approaches founders directly and brings entrepreneurs together at Grand Prix events. He has helped broker commercial agreements between startups and German companies whose owners invest in Rosberg Ventures.",
+    "html": "<p>Formula One champion Nico Rosberg used meditation and repeated kart testing to sharpen his concentration and driving technique. He also removed distractions during his title campaign, cutting out news, email and Instagram to focus on preparation. His attention to engineering had already impressed Williams, where he achieved the team's highest score in its aptitude test before joining the driver line-up.</p>\r\n<p>As an investor, Rosberg seeks business introductions as well as financial returns. He approaches founders directly and brings entrepreneurs together at Grand Prix events. He has helped broker commercial agreements between startups and German companies whose owners invest in Rosberg Ventures.</p>\r\n",
+    "word_count": 101,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Official sporting account, firsthand concentration description and full 2026 reporting support specific preparation and business practices."
+    },
+    "source_ids": [
+      "S2",
+      "S4",
+      "S5"
+    ]
+  }
+}

@@ -1,0 +1,1264 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1665,
+    "display_name": "Andreas Costas Panayiotou",
+    "identity_confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Exact full registered name, British nationality and the Ability businesses match the subject of independent profiles and the first-person maritime interview. His father Costas and son Costas are distinguished. The maritime interview supplies a compatible succession of family yachts but no fabricated exact hull bridge. The common-name footballer, researcher, architect and finance professional are excluded."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "British property entrepreneur and hotel investor associated with the Ability Group, based in Athens.",
+    "defining_work": "Expanded the residential business begun by his father, built a rental portfolio and subsequently shifted substantial investment into hotels.",
+    "formative_context": "Grew up in east London in a Cypriot family whose dry-cleaning business preceded residential development.",
+    "decisive_moment": "Succeeded his father in the same business and later sold residential holdings to fund the move into hotels.",
+    "enduring_dimensions": [
+      "Development and ownership of property rather than ordinary employment in the sector.",
+      "Working methods based on spoken information, memory and delegated specialist document handling.",
+      "Public discussion of reading difficulties in support of childhood literacy."
+    ],
+    "character_detail": "He memorised a pilot-training manual at seventeen to pursue flying.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "The hotelier organised business communications around speech and delegated document handling."
+      },
+      {
+        "mode": "inherited_responsibility",
+        "angle": "Expanding his father's residential business before changing its investment focus."
+      }
+    ],
+    "excluded_transient_context": [
+      "Vessel facts",
+      "Current net worth and rankings",
+      "Current loan advertisements",
+      "Individual trust beneficiary allocations",
+      "Company insolvency labels generalised to the person"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "inherited_operator"
+    ],
+    "notes": "The short supplies identity, Athens base, family-business succession and the change from residential rentals to branded hotels. The long omits that chronology and explains a distinctive communication routine, practical memory use, voluntary public literacy advocacy and a concrete learning incentive. Only the name and hotelier identity overlap. Neither biography depends on vessel ownership, current portfolio counts, net-worth estimates or an inferred medical diagnosis."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 85,
+      "band": "high",
+      "reason": "Forbes-first searches for Andreas Panayiotou, the full name and the Ability Group did not find a matching personal profile. The returned Drew Panayiotou marketing-executive profile is a different person. Absence from bounded searches is not a statement about wealth."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "The expanded residential rental and development business created the original principal fortune.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Independent personal wealth reporting identifies his substantial buy-to-let portfolio and its sale before the hotel pivot. His own and current company histories corroborate the retained-property model. The material asset was residential property ownership and development, rather than the family's earlier dry-cleaning occupation or a later hotel title."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "primary_industry": {
+    "classification": "hospitality",
+    "label": "Hospitality",
+    "summary": "Hotels are the best-supported current principal asset sector following the disposal of much of the residential portfolio.",
+    "confidence": {
+      "score": 76,
+      "band": "medium",
+      "reason": "This is a transparent current-asset inference: independent recent reporting attributes hotel ownership to him, the current owned-company history identifies the sustained hotel investment platform, and the 2025 Bristol extension and refinancing demonstrate material continuity. Current registry filings link him to control and reported share ownership within that platform. However, accounts identify intervening Cyprus companies and a family settlement trust, not a direct personal percentage of every hotel. The private beneficiary allocation and full portfolio valuation remain unpublished. Real Estate is the strongest alternative because development interests continue; its mandatory origin-sector fallback was considered but the positive hotel pivot and recent asset activity favour Hospitality. The new owned bridging-finance company is real, but advertised loan sizes do not establish principal deployed capital or justify Finance & Investments."
+    },
+    "source_ids": [
+      "S1",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Succeeded his father in the existing family property business and substantially expanded that same economic platform.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "Two recent first-person interview contexts explicitly identify the father's pre-existing residential business and the son's takeover when the father returned to Cyprus. Independent reporting subsequently attributes the resulting substantial fortune to Andreas, while current control disclosures and the family-trust structure corroborate continuing economic continuity. The family-transfer mechanism is inferred from succession plus owned-wealth attribution, not the word chairman alone. The precise transfer instrument and individual beneficiary allocation are not public, so inheritance is not asserted. Broad Self-made or advantaged-start would obscure the positively described transfer of the same core business; a separately founded new legal entity does not establish a separate principal fortune."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S6",
+      "S8"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "operator",
+    "label": "Operator",
+    "summary": "Continues to direct the family-derived property and hotel platform while external brands manage hotel services.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "Recent first-person interviews describe active development, financing, in-house teams and personal design decisions; current register entries establish continuing control connected with the same materially owned business. The role is therefore an active business mandate, not a title divorced from personal wealth. Investor is a credible alternative because asset allocation is important and hotel management is delegated, but the continuing direction of development and group execution favours Operator. Founder is a public label for the later group, but family succession better explains his relationship to its original core."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S6",
+      "S7",
+      "S9"
+    ]
+  },
+  "biography": {
+    "plain_text": "Andreas Panayiotou is an Athens-based British property entrepreneur who expanded his father's residential business into the Ability Group. Raised in east London by Cypriot parents, he built a large rental portfolio before selling thousands of homes and shifting into hotels. International brands were brought in to manage the hotel properties.",
+    "html": "<p>Andreas Panayiotou is an Athens-based British property entrepreneur who expanded his father's residential business into the Ability Group. Raised in east London by Cypriot parents, he built a large rental portfolio before selling thousands of homes and shifting into hotels. International brands were brought in to manage the hotel properties.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Independent recent interviews and historical wealth reporting support the family continuity and hotel pivot. Athens base is directly reported and corroborated by multiple newer official residence entries; no specific hotel is asserted to remain personally owned."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S6",
+      "S10"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Hotelier Andreas Panayiotou arranged his working day around spoken information. His assistant read emails aloud and he dictated replies, while lawyers and accountants handled specialist documents. He relied on a trained memory for figures and simplified problems before making decisions, adapting his business routine to a lifelong difficulty with reading.\n\nHe spoke publicly about that difficulty to support a London literacy campaign, describing the humiliation he had experienced at school and the value of early help for children. Learning to fly supplied a different incentive: determined to qualify as a pilot, he memorised the training manual at seventeen.",
+    "html": "<p>Hotelier Andreas Panayiotou arranged his working day around spoken information. His assistant read emails aloud and he dictated replies, while lawyers and accountants handled specialist documents. He relied on a trained memory for figures and simplified problems before making decisions, adapting his business routine to a lifelong difficulty with reading.</p>\r\n<p>He spoke publicly about that difficulty to support a London literacy campaign, describing the humiliation he had experienced at school and the value of early help for children. Learning to fly supplied a different incentive: determined to qualify as a pilot, he memorised the training manual at seventeen.</p>\r\n",
+    "word_count": 98,
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "The full independent interview records his own public explanation of the communication routine, memory, literacy campaign and pilot manual. Past tense avoids assuming every routine remains current; no diagnostic or general medical proposition is inferred."
+    },
+    "source_ids": [
+      "S3"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Property developer and Ability Group chairman",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Independent profiles and continuing group-control evidence establish the defining business identity."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S7"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "First-person family context and consistent independent pronouns identify the subject."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "London",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Recent first-person interview and independent profile directly identify London birth."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_country",
+      "value": "United Kingdom",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "London birth supports the exact available country label; Greek Cypriot parentage is not citizenship evidence."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "January",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Multiple official exact-full-name appointments and control records give January 1966."
+      },
+      "source_ids": [
+        "S6",
+        "S9",
+        "S10"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1966",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Consistent official date of birth corroborated by the personal article and age context."
+      },
+      "source_ids": [
+        "S6",
+        "S10",
+        "S11"
+      ]
+    },
+    {
+      "field": "main_residence_country",
+      "value": "Greece",
+      "existing_value": "United Kingdom",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 88,
+        "band": "high",
+        "reason": "The 2024 interview explicitly identifies Athens as his primary residence, and several current official records including the newly incorporated 2025 business list Greece. Some company entries still list England; these are preserved as a discrepancy rather than assumed to override the specific primary-residence statement."
+      },
+      "source_ids": [
+        "S1",
+        "S6",
+        "S9",
+        "S10"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Andreas_Panayiotou_(businessman)",
+      "action": "add",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Exact businessman article matches Ability, British nationality and January 1966 birth; distinguished from the footballer disambiguation."
+      },
+      "verification": "Full personal article read and cross-checked with official full-name records and independent interviews. Its dated residence and portfolio facts are not all adopted.",
+      "source_ids": [
+        "S11",
+        "S1",
+        "S6"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://ability-capital.com/",
+      "action": "add",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official business site names Andreas as chairman, gives company number 16484224 and connects the Ability history; the registry identifies his 75%+ share/vote ownership."
+      },
+      "verification": "Full home, team and history pages read and company number checked against the official register. The separate old group domain currently lacks usable corporate content.",
+      "source_ids": [
+        "S4",
+        "S10",
+        "S12"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0983",
+      "name": "Property developer",
+      "summary": "Defining long-term development of London residential property and later hotel assets.",
+      "relationship_type": "developer",
+      "temporal_scope": "current",
+      "taxonomy_value": "Captures the practiced development role that built the material business, not merely passive ownership.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Recent and historical interviews document development projects, teams and direct design involvement across the business career."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "tag_id": "tag_0855",
+      "name": "Hotel investing",
+      "summary": "Sustained substantial investment in hotel ownership and development following the residential exit.",
+      "relationship_type": "investor",
+      "temporal_scope": "current",
+      "taxonomy_value": "Captures the defining hotel asset strategy while distinguishing it from branded hotel operations delegated to third parties.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Historical hotel pivot, current owned-company history and recent material hotel extension/refinancing satisfy the sustained-specialism contract."
+      },
+      "source_ids": [
+        "S1",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1665",
+      "title": "Immutable owner inventory: person 1665",
+      "publisher": "Repository export",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Andreas Costas Panayiotou, British, United Kingdom residence, Alive. No age, date or socials. Historical Mrs Grey 23291, Alouette II 23383 and Aquila 24056; vessel relationships are identity context only."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://s3.eu-west-1.amazonaws.com/shorthand.boatinternational.com/on-board-with-andreas-panayiotou-boat-international/index.html",
+      "title": "On Board With Andreas Panayiotou",
+      "publisher": "BOAT International",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full February 2024 interview body read. Athens primary residence; father progressed from seven dry-cleaning shops into residential development, son joined at twenty and took over at twenty-five when father returned to Cyprus. Hotel ownership and direct design involvement; third-party hotel brands manage properties. Public account of reading difficulties. Its inconsistent crash chronology is not used."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.cbn.com.cy/article/105615/andreas-panayiotou-on-establishing-one-of-the-uk-s-biggest-property-companies-and-his-view-of-cyprus-real-estate-market",
+      "title": "Andreas Panayiotou on establishing one of the UK's biggest property companies",
+      "publisher": "CBN / GOLD magazine",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full March 2025 interview read. London-born son of Cypriot immigrants; succession to father's residential business at twenty-five, business expansion, bank finance, in-house development teams and current business strategy. No citizenship inferred from attachment to Cyprus."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.standard.co.uk/hp/front/secret-of-the-ps400-million-tycoon-who-does-not-know-how-to-read-6407885.html",
+      "title": "Secret of the GBP400 million tycoon who does not know how to read",
+      "publisher": "Evening Standard",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full interview read. Historical personal property fortune, residential sale and hotel pivot; voluntary literacy-campaign disclosure, assistant reading emails, dictated replies, specialist delegation, remembered figures and pilot manual at seventeen. Page displays April 2012 while citations date original to June 2011; no exact-age inference from this mismatch."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://ability-capital.com/about-us/",
+      "title": "About Us",
+      "publisher": "Ability Capital",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full current history read. Attributes group founding to Andreas in 1996, substantial rental portfolio and later hotel investment, with listed hotel brands and no outside investors or partners claimed. Founder branding does not negate the independently documented underlying family business."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://bridgingloandirectory.co.uk/client-stories/arc-co-secures-27-5m-from-coutts-for-ability-group/",
+      "title": "Arc & Co. secures GBP27.5m from Coutts for Ability Group",
+      "publisher": "Bridging Loan Directory",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full March 2025 transaction report read, quoting arranger and lender. Ability is the owner of Bristol Airport Hampton by Hilton; completed fifty-room extension and refinanced the 251-room hotel. Financing belongs to the business and is not personal net worth."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12172304/persons-with-significant-control",
+      "title": "Ability Cambridge Seven Holdings: persons with significant control",
+      "publisher": "Companies House",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full current public record read: exact full name, British, January 1966, Greece residence and reported 75%+ shares/votes control. Read alongside accounts showing intervening corporate/trust ownership; this is not described as a direct personal registered stake."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/16093656/persons-with-significant-control",
+      "title": "The Ability Group Holdings: persons with significant control",
+      "publisher": "Companies House",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full current record read. Andreas has significant influence/control; Ability (Hotels) Limited of Cyprus has 75%+ shares/votes. The corporate percentage is not assigned to Andreas. This entry retains England residence, unlike other newer entries and the specific Athens report."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12172304/filing-history/MzQ4MzIyMjcwN2FkaXF6a2N4/document?format=xhtml&download=1",
+      "title": "Ability Cambridge Seven Holdings: accounts to 31 December 2024",
+      "publisher": "Companies House / filed accounts",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Relevant accounts body and ownership notes read. Holding-company-only statements; immediate parent Ability (Hotels) Limited, ultimate company A.P. The Ability Group Limited, ultimate controller The Costas Panayiotou 1997 (No 2) Settlement Trust. Subsidiary real-estate net assets are not personal wealth. No beneficiary schedule disclosed."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12397367/persons-with-significant-control",
+      "title": "AP Hotel Holdings: persons with significant control",
+      "publisher": "Companies House",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full record read. Exact full-name subject, January 1966, British, Greece residence, current right to appoint/remove directors. Control is not treated as a quantified economic holding."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/16484224/persons-with-significant-control",
+      "title": "Ability Capital: persons with significant control",
+      "publisher": "Companies House",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full current record read. Andreas Costas Panayiotou, January 1966, British, Greece; 75%+ shares and votes from May 2025. Establishes a new owned lending business, not its relative value."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://en.wikipedia.org/wiki/Andreas_Panayiotou_(businessman)",
+      "title": "Andreas Panayiotou (businessman)",
+      "publisher": "Wikipedia",
+      "tier": 4,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full exact article read and matched to the property entrepreneur. January 1966, London, Ability identity and historical business story. Dated England residence and old portfolio details are not assumed current."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://ability-capital.com/",
+      "title": "Ability Capital",
+      "publisher": "Ability Capital",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full home page read directly after web timeout. Names company number 16484224, bridging/development finance and Arc & Co. relationship. The linked team page identifies Andreas as chairman. Advertised loan range is product marketing, not evidence of actual loan-book or personal-wealth size."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://www.theabilitygroup.com/",
+      "title": "Ability Group domain access check",
+      "publisher": "Ability Group domain",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Direct public fetch returned only a directory/debug fragment and Ability label, with no usable company biography. No corporate claims or personal profile verification rely on this page."
+      ]
+    },
+    {
+      "id": "S14",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03280282",
+      "title": "Ability Developments company overview",
+      "publisher": "Companies House",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full current official overview read; this specific entity is in liquidation. No assertion that all Ability businesses or the individual are insolvent follows. Current active companies and 2025 transactions are separately evidenced."
+      ]
+    },
+    {
+      "id": "S15",
+      "url": "https://vimeo.com/120433690",
+      "title": "Andreas Panayiotou, Andy Panayiotou, The Ability Group",
+      "publisher": "Vimeo",
+      "tier": 4,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Video page body identifies an uploaded London Daily News interview and uploader AndreasPanayiotou. It lacks independent proof the uploader is controlled by the subject; a video about him is not enough to add a personal profile."
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Personal versus corporate/trust assets",
+      "detail": "The Cambridge PSC entry reports 75%+ share/vote ownership while its accounts identify Cyprus corporate parents and a family settlement trust. No direct registered stake or beneficiary percentage is asserted. Current personal business attribution, successor history and control support medium-confidence wealth inferences, with the undisclosed private allocation acknowledged."
+    },
+    {
+      "topic": "Current sector and restructurings",
+      "detail": "Hotels remain the positive principal-sector inference from sustained reinvestment and recent material activity, not from an exhaustive private balance sheet. Residential/commercial holdings and newly owned lending business remain alternatives. Old hotel lists are not repeated as current. One development entity's liquidation does not establish personal insolvency or disappearance of the separately evidenced active hotel platform."
+    },
+    {
+      "topic": "Family transfer",
+      "detail": "Father-to-son succession in the same residential business is explicit in recent interview contexts. Later owned-wealth attribution supports economic succession by inference; precise legal instrument and beneficiary interests are not disclosed. The father's lifetime return to Cyprus is not treated as an inheritance event. Public founder labels refer to the later group organisation and do not erase its family origin."
+    },
+    {
+      "topic": "Residence and birth date",
+      "detail": "Specific Athens primary-residence reporting and several current official Greece entries support correcting United Kingdom to Greece. Other filings still say England. January 1966 is directly supported; no exact day is proposed. Cypriot ancestry and emotional attachment do not establish secondary citizenship."
+    },
+    {
+      "topic": "Forbes and personal links",
+      "detail": "Forbes was searched first; no matching personal profile was found, and Drew Panayiotou is unrelated. LinkedIn candidates belong to Notion Capital, architecture, multimedia and other namesakes; the researcher personal site is also unrelated. Instagram, Facebook, Twitter/X, YouTube, TikTok, Vimeo, Flickr, Trip Advisor and Zillow were checked. TikTok is robots-restricted. The matching Vimeo interview uploader and old promotional blogs lack adequate control attribution; photographer Flickr, Cyprus tour listing and New Jersey realtor profiles are excluded. Only the exact personal Wikipedia article and independently verified owned-company website are proposed."
+    },
+    {
+      "topic": "Editorial evidence and access",
+      "detail": "Full interview bodies and current official records were read, using direct public HTTP where necessary. The longer biography uses his voluntary public description of reading difficulties and working methods, without inventing a diagnosis or generalising his claims about dyslexia. Historical Standard date/age inconsistencies do not supply his birth date. The malformed old group site is not relied upon; current Ability Capital identity is independently verified."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent independently read the full Standard, CBN and Ability Capital bodies, Cambridge PSC and Bristol transaction account. Approved current Hospitality76, family-transfer84 and complementary 50/98-word pair, retaining explicit trust/beneficial-entitlement and unknown-instrument limitations. Strict validation against immutable input is the final completion check; only this assigned dossier is written."
+  }
+}

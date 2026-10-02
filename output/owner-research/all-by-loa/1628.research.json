@@ -1,0 +1,1291 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1628,
+    "display_name": "Aristotle Onassis",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Exact name, Greek nationality, Smyrna birth background, historical business identity and age 69 resolve the shipping entrepreneur deceased in 1975. Historical source vessel context is consistent but not needed to establish identity; descendants are separate people."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "research_status": "complete",
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Exact-name and Forbes-profile searches were conducted first. Historical Forbes reporting appeared, but no exact personal profile was found; a magazine article is not substituted for a profile."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "shipping_maritime",
+    "label": "Shipping & Maritime",
+    "summary": "Commercial shipping, especially oil tankers, created the principal Onassis fortune. Tobacco trading supplied an early commercial base, but the subsequently built international fleet was the defining wealth-producing enterprise.",
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Ownership, expansion and sustained commercial earnings are established across institutional history and archival scholarship. Transporting oil is shipping, not oil production. Earlier tobacco and later airline, hotel and casino interests do not displace the evidenced principal creation platform or require Diversified."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4",
+      "S5"
+    ]
+  },
+  "primary_industry": {
+    "classification": "shipping_maritime",
+    "label": "Shipping & Maritime",
+    "summary": "Shipping is the best supported principal private sector at his death in March 1975. His retained fleet and its succession to his daughter and the foundation support continuity of the core enterprise. This is a terminal-lifetime assessment, not attribution of the foundation's present fleet.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "Positive convergence combines the substantial fleet at death, continuing ownership and testamentary division, while the airline's return to state ownership was already arranged. A complete comparative estate schedule is unavailable, so principal weight is inferred conservatively. Substantial other holdings were considered; no later replacement platform is established. This is a supported continuing-core inference rather than an origin-only fallback."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S9"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "Onassis built the principal shipping enterprise himself after an Argentine tobacco launch materially supported by his father and uncle. Their capital, export connections and credit backing supplied a concrete family advantage; the later shipping core was separately developed.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "Archival history identifies family capital and a paternal guarantee supporting early commercial credit. The family platform therefore rules out an independent-start claim despite displacement from Smyrna. The separately built maritime enterprise became the principal fortune, rather than succession to the same family tobacco operation. Family transfer and Mixed were considered, but the documented assistance is best understood as a material launch advantage, not transfer of the principal shipping assets. Exact allocation of early family capital remains unquantified."
+    },
+    "source_ids": [
+      "S1",
+      "S4",
+      "S5"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Founder best describes his relationship to the principal private enterprise at the end of his life: he created the shipping platform, retained its economic benefit and directed its succession through his will.",
+    "confidence": {
+      "score": 89,
+      "band": "high",
+      "reason": "The retained core and personal testamentary disposition establish an economic relationship beyond a former executive title. Delegated management and final illness do not erase the founder relationship to a still-principal company. No claim is made that he personally ran daily operations until death or held a current role after 1975."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "biography": {
+    "plain_text": "Aristotle Onassis was a Greek shipping entrepreneur who built his fortune through an international tanker fleet. Displaced from Smyrna, he began trading tobacco in Argentina with capital and commercial connections from his father and uncle. He subsequently built an international shipping business and developed Olympic Airways into an intercontinental carrier.",
+    "html": "<p>Aristotle Onassis was a Greek shipping entrepreneur who built his fortune through an international tanker fleet. Displaced from Smyrna, he began trading tobacco in Argentina with capital and commercial connections from his father and uncle. He subsequently built an international shipping business and developed Olympic Airways into an intercontinental carrier.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Institutional history and archival family-business research support the commercial identity, displacement, material family help, separately built fleet and airline development."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Aristotle Onassis expanded his shipping business by matching new vessels with long-term commitments from major oil companies. Charter income supported bank borrowing, allowing him to order larger tankers without financing their entire cost himself. He placed substantial orders with German and later Japanese shipyards, using scale to reduce the cost of carrying oil.\n\nHis will gave that commercial enterprise a continuing public purpose. After the death of his son Alexander, he directed that part of his fortune establish a foundation in his memory. Its business and public-benefit activities were separated: a share of investment profits would finance charitable work, while the remainder would be reinvested to sustain the income-producing assets.",
+    "html": "<p>Aristotle Onassis expanded his shipping business by matching new vessels with long-term commitments from major oil companies. Charter income supported bank borrowing, allowing him to order larger tankers without financing their entire cost himself. He placed substantial orders with German and later Japanese shipyards, using scale to reduce the cost of carrying oil.</p>\r\n<p>His will gave that commercial enterprise a continuing public purpose. After the death of his son Alexander, he directed that part of his fortune establish a foundation in his memory. Its business and public-benefit activities were separated: a share of investment profits would finance charitable work, while the remainder would be reinvested to sustain the income-producing assets.</p>\r\n",
+    "word_count": 110,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Shipping history documents charter-backed borrowing and major shipyard orders; the foundation explains the founder's testamentary structure and reinvestment model."
+    },
+    "source_ids": [
+      "S2",
+      "S3"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "Greek shipping entrepreneur who built a major privately owned tanker business.",
+    "defining_work": "Expanded commercial shipping through larger tankers, long-term oil-company charters and bank finance.",
+    "formative_context": "Refugee from Smyrna whose Argentine tobacco venture received capital, connections and credit support from his father and uncle.",
+    "decisive_moment": "Moved from family-assisted tobacco commerce into a separately built shipping enterprise.",
+    "enduring_dimensions": [
+      "Commercial shipping finance and economies of scale",
+      "Development of an international passenger airline",
+      "Testamentary separation of business assets and public-benefit work"
+    ],
+    "character_detail": "Designed charitable succession around an income-producing business foundation rather than simply distributing the entire asset base.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Identify the shipping entrepreneur through his fortune and family-assisted start."
+      },
+      {
+        "mode": "institution_or_asset",
+        "angle": "Explain the commercial mechanism that financed his fleet expansion."
+      }
+    ],
+    "excluded_transient_context": [
+      "Personal yacht ownership and vessel specifications",
+      "Net-worth estimates and fleet-size rankings",
+      "Romantic relationships and unrelated private controversies",
+      "Present foundation assets attributed to the deceased founder",
+      "Unresolved exact birth day and first-ship chronology"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "founder_operator",
+      "maritime_professional"
+    ],
+    "notes": "Shared anchor is the shipping entrepreneur and his fleet. Short-only material is Smyrna displacement, tobacco trade, named family assistance and Olympic Airways. Long-only dimensions are charter-backed finance and shipyard scale, followed by the testamentary business/public-benefit structure. The long does not repeat the short's migration-to-business chronology. Parent approved the 50/110-word pair."
+  },
+  "editorial_note": null,
+  "proposed_details": [
+    {
+      "field": "middle_names",
+      "value": "Socrates",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "EBSCO full reference biography and the canonical article agree on the expanded name."
+      },
+      "source_ids": [
+        "S6",
+        "S7"
+      ]
+    },
+    {
+      "field": "secondary_nationality",
+      "value": "Argentinian",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 88,
+        "band": "high",
+        "reason": "EBSCO and the canonical article establish Argentine citizenship. Their acquisition years differ, so no year is asserted; exact input select label retained."
+      },
+      "source_ids": [
+        "S6",
+        "S7"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Shipping entrepreneur and founder of Olympic Airways",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Institutional histories establish the defining businesses."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Institutional biographies identify him as son and father."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Smyrna (now Izmir)",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Foundation history establishes Smyrna; the reference article identifies its modern name."
+      },
+      "source_ids": [
+        "S1",
+        "S7"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "January",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "The foundation explicitly states January 1906."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1906",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Foundation history and scholarly reference biography agree."
+      },
+      "source_ids": [
+        "S1",
+        "S6"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "15",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Foundation and specialist shipping history agree on 15 March 1975."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "March",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Convergent institutional histories."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "1975",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Convergent institutional histories."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "action": "correct_existing",
+      "existing_value": "Unknown",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Institutional histories establish death in 1975."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type": "Wikipedia",
+      "type_id": "10",
+      "url": "https://en.wikipedia.org/wiki/Aristotle_Onassis",
+      "action": "add",
+      "verification": "Canonical reference article matches exact name, Greek shipping identity and life chronology corroborated by the foundation. This is an encyclopedia link, not a personal social account.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Exact canonical article independently matched to the institutional biography."
+      },
+      "source_ids": [
+        "S7",
+        "S1"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0182",
+      "name": "Tanker shipping",
+      "summary": "Built and retained substantial oil-tanker operations, the core fortune-producing business.",
+      "relationship_type": "founder",
+      "temporal_scope": "historical",
+      "taxonomy_value": "Specific commercial maritime activity, not Energy inferred from cargo.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Full institutional and specialist histories establish the personally controlled operation and its historical materiality."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "tag_id": "tag_0058",
+      "name": "Dry-bulk shipping",
+      "summary": "Controlled a substantial dry-cargo fleet and commissioned bulk carriers during his later shipping expansion.",
+      "relationship_type": "founder",
+      "temporal_scope": "historical",
+      "taxonomy_value": "Separate evidenced commercial cargo segment alongside tankers.",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Full institutional and specialist histories establish the personally controlled operation and its historical materiality."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "tag_id": "tag_2090",
+      "name": "Passenger airlines",
+      "summary": "Acquired and developed Olympic Airways over nearly two decades into a carrier serving five continents.",
+      "relationship_type": "owner_operator",
+      "temporal_scope": "historical",
+      "taxonomy_value": "Historically defining controlled passenger operation; no present state airline assets attributed personally.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Full institutional and specialist histories establish the personally controlled operation and its historical materiality."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "tag_id": "tag_0205",
+      "name": "Gambling",
+      "summary": "Controlling ownership of SBM included the Monte Carlo casino as a substantial business interest.",
+      "relationship_type": "controlling_owner",
+      "temporal_scope": "historical",
+      "taxonomy_value": "Required umbrella for Casino operations under that tag's explicit semantic contract; otherwise generic tags are omitted.",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Full institutional and specialist histories establish the personally controlled operation and its historical materiality."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S6"
+      ]
+    },
+    {
+      "tag_id": "tag_0213",
+      "name": "Casino operations",
+      "summary": "Controlled SBM and its Monte Carlo casino as a sustained historical business.",
+      "relationship_type": "controlling_owner",
+      "temporal_scope": "historical",
+      "taxonomy_value": "Specific casino dimension, paired with contract-required Gambling.",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Full institutional and specialist histories establish the personally controlled operation and its historical materiality."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S6"
+      ]
+    },
+    {
+      "tag_id": "tag_0321",
+      "name": "Hotel operations",
+      "summary": "His controlling SBM interest included major operating hotels, including the Hotel de Paris.",
+      "relationship_type": "controlling_owner",
+      "temporal_scope": "historical",
+      "taxonomy_value": "Substantial controlled hotel business, not ownership of a personal residence; no redundant Hotel investing or Hospitality tag.",
+      "confidence": {
+        "score": 89,
+        "band": "high",
+        "reason": "Full institutional and specialist histories establish the personally controlled operation and its historical materiality."
+      },
+      "source_ids": [
+        "S2",
+        "S6"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "field": "birth_day",
+      "value": "20",
+      "confidence": {
+        "score": 65,
+        "band": "low",
+        "reason": "SNL and Wikipedia give 20 January, but the Italian presidential archive's RAI historical programme gives 15 January. Foundation supplies only month and year; exact day remains unresolved."
+      },
+      "source_ids": [
+        "S1",
+        "S7",
+        "S8",
+        "S9"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.onassis.org/people/aristotle-onassis",
+      "title": "Aristotle Onassis",
+      "publisher": "Onassis Foundation",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full biography read. Supports January 1906 Smyrna birth, family-assisted tobacco launch, fleet development, airline history, death and testamentary foundation.",
+        "Promotional claims are not repeated. Its first-vessel chronology differs from S2; exact date/count omitted."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://greekshippinghalloffame.org/?inductee=aonassis-en",
+      "title": "Aristotle Onassis",
+      "publisher": "Greek Shipping Hall of Fame",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full biography read. Establishes charter-backed borrowing, German/Japanese orders, tanker and dry-cargo interests, controlling SBM acquisition, airline expansion and succession at death.",
+        "Used for commercial mechanism and historical assets; exact first-ship dates/counts differ from S1 and S6."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.onassis.org/foundation/onassis-business-foundation",
+      "title": "Business Foundation",
+      "publisher": "Onassis Foundation",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Explains separate business/public-benefit sectors, allocation of profits and reinvestment under the founder's will; identifies the continuing shipping business.",
+        "Present fleet size and current investments are not assigned to Onassis at death. Social footer expressly belongs to institutions."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://dokumen.pub/onassis-business-history-1924-1975-brills-studies-in-maritime-history-16-9004539883-9789004539884.html",
+      "title": "Onassis Business History, 1924-1975, edited by Gelina Harlaftis",
+      "publisher": "Brill scholarly book, public indexed mirror",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant indexed sections with archival footnotes read, especially printed pp20 and26-27: family capital/connections, tobacco exports and father's credit guarantee materially enabled the Argentine business.",
+        "The publisher PDF was inaccessible and direct mirror retrieval intermittently failed; the search index supplied extended continuous chapter text, not merely a discovery snippet. Official Onassis/FORTH publication notice confirms the archival research project. No full-book access is claimed."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.cambridge.org/core/books/abs/creating-global-shipping/merchant-to-shipowner/C4D00B3ABB6CC0CF20D273C074649A0C",
+      "title": "Creating Global Shipping: Merchant to Shipowner",
+      "publisher": "Gelina Harlaftis / Cambridge University Press",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Publisher's full chapter summary read, not the full chapter. Corroborates father/uncle/cousin collaboration and the transition from tobacco commerce to shipping."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.ebsco.com/research-starters/history/aristotle-onassis",
+      "title": "Aristotle Onassis",
+      "publisher": "R. Baird Shuman / EBSCO Research Starters",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full reference article read. Corroborates Socrates middle name, Argentine citizenship, commercial fortune, controlling SBM assets and private estate succession.",
+        "Some early dates and ship counts differ from institutional history. No precise citizenship year, first-ship count or net-worth estimate imported."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://en.wikipedia.org/wiki/Aristotle_Onassis",
+      "title": "Aristotle Onassis",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Canonical article opened and matched with institutional sources. Used for verified link, expanded name and nationality corroboration; birth day conflicts with S8."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://archivio.quirinale.it/aspr/gianni-bisiach/AV-002-000517/15-gennaio-1906-nasce-l-armatore-onassis",
+      "title": "15 gennaio 1906 - Nasce l'armatore Onassis",
+      "publisher": "Italian Presidential Historical Archive / RAI Gianni Bisiach programme",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full programme description read. Gives 15 January 1906, contrary to S7/S9; the programme is historical reporting, not a civil birth certificate. Exact day withheld."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://snl.no/Aristoteles_Onassis",
+      "title": "Aristoteles Onassis",
+      "publisher": "Frode Rabbevag / Store norske leksikon",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full reference body read. Gives 20 January 1906, full name and 1975 continuing fleet. Its succession paragraph mistakenly associates the father's death with 1988; that sentence is not relied on."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.onassis.org/open-calls/the-onassis-foundation-and-the-institute-for-mediterranean-studies-of-forth-launch-a-publication-on-aristotle-onassis-business-history",
+      "title": "Publication on Aristotle Onassis Business History",
+      "publisher": "Onassis Foundation and Institute for Mediterranean Studies/FORTH",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full publication notice read. Confirms the scholarly book's authorship, scope and research in original business archives. Used to assess provenance of S4, not as substitute evidence for its detailed family-capital passage."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Research date is 1 October 2026. Primary industry and relationship refer to the terminal lifetime period ending 15 March 1975, not modern foundation assets or descendants' wealth.",
+    "Shipping is supported as a continuing principal core, but precise asset weights at death are unavailable. Aviation had moved toward state transfer by his death; the foundation records contract termination in late 1974 and formal state takeover in August 1975. Historical Monaco interests do not imply terminal ownership.",
+    "Family capital and commercial/credit support are positively evidenced; refugee status does not prove an independent start. The separately developed shipping core supports advantaged self-made rather than transfer of an inherited shipping business. No exact initial family-capital proportion is claimed.",
+    "Foundation history's suggestion that the family fortune was destroyed is qualified by archival research showing recovered receivables and a rebuilt export platform. The biography neither depicts complete poverty nor claims a principal inherited fleet.",
+    "Birth day remains unresolved between 15 and 20 January. Month/year are proposed; only a below-threshold day candidate is retained. Argentine citizenship year differs between EBSCO and Wikipedia, so nationality alone is proposed.",
+    "First ship acquisition year/count varies among foundation, shipping history and reference biography. The biographies omit that detail. Source age 69 is consistent with death in 1975; its 2020 recording date does not indicate living status.",
+    "All supported link types were checked: Forbes first, LinkedIn, Instagram, Personal Website, Facebook, Twitter, Youtube, TikTok, Wikipedia, Vimeo, Flickr, Trip Advisor, Zillow and Company Website. No verified personal social account found. Foundation and Stegi accounts are institutional and not imported as personal; the shipping footer links back to foundation information rather than a distinct personal site.",
+    "Six active historical business tags reflect substantial controlled operations. Gambling is included only because Casino operations explicitly requires its umbrella. No generic Finance, Hospitality or Real Estate tags broaden these specific activities; no taxonomy additions made.",
+    "Existing Greece residence and Turkey birth-country labels are retained. His transnational business and death near Paris do not independently establish a replacement principal residence. Optional titles and suffixes remain blank.",
+    "Source Christina O relationship ending 1988 extends beyond Aristotle's death and may reflect family continuity. It is selection context only; no relationship is corrected and neither biography contains personal vessel material."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent approved classifications and complementary pair before save. Strict immutable-input and editorial validation passed without warnings after replacing a classification-like phrase in the short opening. Final pair is 50/110 words. Casino operations retains the contract-required Gambling umbrella. Only assigned dossier changed; nothing applied live."
+  }
+}

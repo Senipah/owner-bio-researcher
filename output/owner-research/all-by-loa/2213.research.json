@@ -1,0 +1,1183 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 2213,
+    "display_name": "Baron Carel Erwin van Asbeck",
+    "identity_confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Exact full name, Dutch nationality, Laren/Amsterdam context and spouse converge. Input age 62 matches age at October 2016 death, not a 2020 living-age inference; vessel relationship ends that same month. Exact hull independently unconfirmed. Earlier naval officers and the 1941-born Philips engineer are excluded."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "116": "Russian",
+        "4": "American",
+        "118": "Saudi Arabian",
+        "43": "Egyptian",
+        "52": "French",
+        "145": "Ukrainian",
+        "143": "Turkish",
+        "32": "Chinese",
+        "114": "Qatari",
+        "102": "Nigerian",
+        "133": "Swedish",
+        "65": "Indonesian",
+        "29": "Canadian",
+        "36": "Croatian",
+        "57": "Greek",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "22": "British",
+        "8": "Australian",
+        "92": "Mexican",
+        "100": "New Zealander",
+        "75": "Kazakhstanian",
+        "134": "Swiss",
+        "128": "Spanish",
+        "69": "Israeli",
+        "62": "Hungarian",
+        "122": "Singaporean",
+        "89": "Malaysian",
+        "70": "Italian",
+        "105": "Pakistani",
+        "55": "German",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "68": "Irish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "81": "Lebanese",
+        "25": "Bulgarian",
+        "9": "Austrian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "111": "Polish",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "16": "Belgian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "41": "Dutch",
+        "7": "Armenian",
+        "38": "Cypriot",
+        "135": "Syrian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "85": "Luxembourgish",
+        "120": "Serbian",
+        "3": "Algerian",
+        "107": "Panamamian",
+        "11": "Bahamanian",
+        "37": "Cuban",
+        "112": "Portuguese",
+        "123": "Slovakian",
+        "157": "Mon\u00e9gasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "113": "Puerto Rican",
+        "1": "Afghan",
+        "90": "Maltese",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "126": "South African",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "142": "Tunisian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "2": "Albanian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "66": "Iranian",
+        "15": "Belarussian",
+        "147": "Uzbekistanian",
+        "146": "Uruguayan",
+        "58": "Grenadian"
+      },
+      "secondary_nationality": {
+        "112": "Portuguese",
+        "147": "Uzbekistanian",
+        "75": "Kazakhstanian",
+        "135": "Syrian",
+        "55": "German",
+        "69": "Israeli",
+        "4": "American",
+        "22": "British",
+        "66": "Iranian",
+        "145": "Ukrainian",
+        "120": "Serbian",
+        "29": "Canadian",
+        "38": "Cypriot",
+        "52": "French",
+        "126": "South African",
+        "122": "Singaporean",
+        "128": "Spanish",
+        "90": "Maltese",
+        "134": "Swiss",
+        "8": "Australian",
+        "100": "New Zealander",
+        "11": "Bahamanian",
+        "113": "Puerto Rican",
+        "118": "Saudi Arabian",
+        "143": "Turkish",
+        "57": "Greek",
+        "146": "Uruguayan",
+        "116": "Russian",
+        "102": "Nigerian",
+        "107": "Panamamian",
+        "68": "Irish",
+        "9": "Austrian",
+        "70": "Italian",
+        "58": "Grenadian",
+        "142": "Tunisian",
+        "133": "Swedish",
+        "41": "Dutch",
+        "85": "Luxembourgish",
+        "62": "Hungarian",
+        "16": "Belgian",
+        "81": "Lebanese",
+        "2": "Albanian",
+        "111": "Polish",
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "43": "Egyptian",
+        "32": "Chinese",
+        "114": "Qatari",
+        "65": "Indonesian",
+        "36": "Croatian",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "92": "Mexican",
+        "89": "Malaysian",
+        "105": "Pakistani",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "25": "Bulgarian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "7": "Armenian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "3": "Algerian",
+        "37": "Cuban",
+        "123": "Slovakian",
+        "157": "Mon\u00e9gasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "1": "Afghan",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "15": "Belarussian"
+      },
+      "main_residence_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "98": "Israel",
+        "221": "United States",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "213": "Turkey",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "73": "United Kingdom",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "29": "Bahamas",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "131": "Monaco",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "157": "Netherlands",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "66": "Finland",
+        "180": "Romania",
+        "192": "Slovakia",
+        "187": "Sweden",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "secondary_residence_country": {
+        "131": "Monaco",
+        "221": "United States",
+        "187": "Sweden",
+        "73": "United Kingdom",
+        "148": "Mexico",
+        "2": "United Arab Emirates",
+        "157": "Netherlands",
+        "213": "Turkey",
+        "84": "Greece",
+        "53": "Germany",
+        "29": "Bahamas",
+        "66": "Finland",
+        "158": "Norway",
+        "163": "Oman",
+        "98": "Israel",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "93": "Croatia",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "180": "Romania",
+        "192": "Slovakia",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "181": "Russian Federation",
+        "221": "United States",
+        "223": "Uzbekistan",
+        "61": "Egypt",
+        "71": "France",
+        "118": "Kazakhstan",
+        "183": "Saudi Arabia",
+        "213": "Turkey",
+        "45": "China",
+        "178": "Qatar",
+        "200": "Syrian Arab Republic",
+        "187": "Sweden",
+        "169": "Pakistan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "90": "Hong Kong",
+        "241": "Azerbaijan",
+        "107": "Japan",
+        "99": "India",
+        "22": "Bahrain",
+        "73": "United Kingdom",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "102": "Iran",
+        "104": "Italy",
+        "64": "Spain",
+        "98": "Israel",
+        "83": "Equatorial Guinea",
+        "95": "Hungary",
+        "149": "Malaysia",
+        "19": "Belgium",
+        "236": "South Africa",
+        "52": "Czech Republic",
+        "188": "Singapore",
+        "55": "Denmark",
+        "101": "Iraq",
+        "192": "Slovakia",
+        "216": "Taiwan",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "40": "Switzerland",
+        "130": "Morocco",
+        "39": "Congo",
+        "157": "Netherlands",
+        "7": "Armenia",
+        "28": "Brazil",
+        "33": "Belarus",
+        "51": "Cyprus",
+        "129": "Libyan Arab Jamahiriya",
+        "210": "Turkmenistan",
+        "206": "Thailand",
+        "66": "Finland",
+        "180": "Romania",
+        "106": "Jordan",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "97": "Ireland",
+        "186": "Sudan",
+        "155": "Nigeria",
+        "48": "Cuba",
+        "246": "Serbia",
+        "175": "Portugal",
+        "131": "Monaco",
+        "190": "Slovenia",
+        "126": "Lithuania",
+        "211": "Tunisia",
+        "43": "Chile",
+        "173": "Puerto Rico",
+        "219": "Uganda",
+        "86": "Guatemala",
+        "60": "Estonia",
+        "144": "Malta",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "16": "Bosnia and Herzegovina",
+        "127": "Luxembourg",
+        "165": "Peru",
+        "164": "Panama",
+        "54": "Djibouti",
+        "41": "Cote d'Ivoire",
+        "75": "Georgia",
+        "233": "Yemen",
+        "57": "Dominican Republic",
+        "29": "Bahamas",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "128": "Latvia",
+        "123": "Sri Lanka",
+        "6": "Albania",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia",
+        "243": "Isle Of Man",
+        "17": "Barbados",
+        "222": "Uruguay",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "225": "Saint Vincent and the Grenadines",
+        "146": "Maldives",
+        "201": "Swaziland",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia"
+      },
+      "birth_month": {
+        "10": "October",
+        "7": "July",
+        "11": "November",
+        "12": "December",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "6": "June",
+        "1": "January",
+        "5": "May",
+        "4": "April",
+        "2": "February"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "4": "Unknown",
+        "2": "Dead",
+        "3": "Missing"
+      },
+      "death_month": {
+        "5": "May",
+        "6": "June",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "10": "October",
+        "7": "July",
+        "1": "January",
+        "2": "February",
+        "11": "November",
+        "12": "December",
+        "4": "April"
+      }
+    },
+    "raw_blank_details": [
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ]
+  },
+  "research_status": "complete",
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 85,
+      "band": "high",
+      "reason": "Forbes-first exact-name checks found no authenticated individual profile."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "Property development is the demonstrated wealth-creation platform.",
+    "confidence": {
+      "score": 80,
+      "band": "medium",
+      "reason": "Personal economic materiality is inferred from a sustained founding partnership undertaking substantial completed developments, corroborated independently and through operating-company records. A salaried title alone would not suffice; exact beneficial percentages and personal proceeds are not published."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "primary_industry": {
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "Explicit origin-sector fallback at his October 2016 death; the personal terminal asset allocation is not publicly ranked.",
+    "confidence": {
+      "score": 72,
+      "band": "medium",
+      "reason": "Continued property-company offices corroborate the platform, but corporate gross assets cannot be equated with personal net holdings. Project insolvency does not establish that all private assets disappeared or changed sector."
+    },
+    "source_ids": [
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Broad founder-builder inference from the property enterprise he developed with a business partner.",
+    "confidence": {
+      "score": 74,
+      "band": "medium",
+      "reason": "Substantial personally associated venture creation and sustained development support the broad mechanism. Original funding, concessions and any family capital are unknown, so neither independent nor advantaged subtype is claimed. A noble title does not establish transferred economic assets."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S7"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Terminal-lifetime founder relationship, inferred from continuing involvement in his principal established property platform through 2016.",
+    "confidence": {
+      "score": 75,
+      "band": "medium",
+      "reason": "Founding partnership plus continuing operating offices and death-triggered replacement supports retained core continuity. Exact personal ownership weight is unavailable. One subsidiary bankruptcy does not prove total exit; no broader divestment is documented. This is not a present living role."
+    },
+    "source_ids": [
+      "S2",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "Dutch property entrepreneur.",
+    "defining_work": "Founded and expanded a redevelopment partnership.",
+    "formative_context": "Prior practical development experience.",
+    "decisive_moment": "Preserved difficult heritage features instead of maximising saleable area.",
+    "enduring_dimensions": [
+      "Commercial reuse.",
+      "Quality decisions under market pressure."
+    ],
+    "character_detail": "Retained a high specification during a downturn.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Introduce the partnership and its international scope."
+      },
+      {
+        "mode": "institution_or_asset",
+        "angle": "Explain decisions within an Amsterdam conversion."
+      }
+    ],
+    "excluded_transient_context": [
+      "Vessels.",
+      "Private addresses.",
+      "Unsupported inherited wealth.",
+      "Promotional claims of exceptional success."
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "Short provides professional identity, partnership and geographic scope. Long allocates two concrete decisions and their practical execution. Shared company anchor supplies orientation; project mechanisms do not repeat the short's expansion bundle. Work remains attributed to the partnership, not personal architectural authorship."
+  },
+  "biography": {
+    "plain_text": "Carel Erwin van Asbeck was a Dutch property developer who built a business around giving historic buildings new uses. With Maarten van Dijk, he founded Victoria Lofts, whose projects extended from the Netherlands into Belgium and France. Their partnership developed apartments, offices and other accommodation in former industrial and institutional buildings.",
+    "html": "<p>Carel Erwin van Asbeck was a Dutch property developer who built a business around giving historic buildings new uses. With Maarten van Dijk, he founded Victoria Lofts, whose projects extended from the Netherlands into Belgium and France. Their partnership developed apartments, offices and other accommodation in former industrial and institutional buildings.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Primary company material and independent trade reporting agree."
+    },
+    "source_ids": [
+      "S2",
+      "S3"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Victoria Lofts cofounder Carel van Asbeck treated preservation as part of a development's commercial appeal. In Amsterdam's former central library, his partnership retained the grand staircase and marble halls while creating apartments with mezzanines. Large communal spaces remained even though they reduced the area available for sale.\n\nA different challenge arose at the former Stork engineering headquarters when the office market weakened during renovation. The partnership continued with well-equipped offices and shared services instead of reducing the specification. It targeted creative businesses, opened the atrium to bring light into corridors and restored the old boardroom as a meeting space for tenants.",
+    "html": "<p>Victoria Lofts cofounder Carel van Asbeck treated preservation as part of a development's commercial appeal. In Amsterdam's former central library, his partnership retained the grand staircase and marble halls while creating apartments with mezzanines. Large communal spaces remained even though they reduced the area available for sale.</p>\r\n<p>A different challenge arose at the former Stork engineering headquarters when the office market weakened during renovation. The partnership continued with well-equipped offices and shared services instead of reducing the specification. It targeted creative businesses, opened the atrium to bring light into corridors and restored the old boardroom as a meeting space for tenants.</p>\r\n",
+    "word_count": 101,
+    "confidence": {
+      "score": 86,
+      "band": "high",
+      "reason": "Full relevant project descriptions read; neutral paraphrase excludes promotional outcome claims."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Property developer",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Recognised sustained professional role."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Explicit legal identification."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Amsterdam",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Exact person in reproduced official corporate notice."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "field": "birth_country",
+      "value": "Netherlands",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Amsterdam birthplace."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "3",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Official notice gives 03/11/1953."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "November",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Official notice gives 03/11/1953."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1953",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Official notice gives 03/11/1953; consistent terminal age 62."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "15",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Death expressly recorded in company legal notice."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "October",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Death expressly recorded in company legal notice."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "2016",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Death expressly recorded in company legal notice."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "action": "correct_existing",
+      "existing_value": "Unknown",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Corporate notice expressly records death and resulting termination of office; matches historical ownership end month."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type": "Company Website",
+      "type_id": "14",
+      "url": "https://www.victorialofts.com/",
+      "action": "add",
+      "verification": "Primary site explicitly identifies the subject as founder; historically authentic company connection. Last edited 2013 and not evidence of a living current appointment.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Direct company identity and founder relationship, corroborated by independent reporting and legal records."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S7"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0926",
+      "name": "Multifamily housing",
+      "summary": "Substantial apartment development was a defining sustained business mandate.",
+      "temporal_scope": "former_but_defining",
+      "confidence": {
+        "score": 89,
+        "band": "high",
+        "reason": "Active contract met through substantial controlled operations over multiple projects; not passive exposure or a single isolated deal."
+      },
+      "source_ids": [
+        "S1",
+        "S3",
+        "S7"
+      ]
+    },
+    {
+      "tag_id": "tag_0945",
+      "name": "Office real estate",
+      "summary": "Substantial office conversion operations were a defining sustained business mandate.",
+      "temporal_scope": "former_but_defining",
+      "confidence": {
+        "score": 86,
+        "band": "high",
+        "reason": "Active contract met through substantial controlled operations over multiple projects; not passive exposure or a single isolated deal."
+      },
+      "source_ids": [
+        "S1",
+        "S3",
+        "S7"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "field": "LinkedIn",
+      "value": "https://fr.linkedin.com/in/carel-van-asbeck-95621318",
+      "reason": "Exact name, company and Lille location converge, but sparse indexed body and direct 999 access error provide no fuller authentication; withheld.",
+      "confidence": {
+        "score": 65,
+        "band": "low",
+        "reason": "Candidate is plausible but not fully authenticated."
+      },
+      "source_ids": [
+        "S8"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.victorialofts.com/files/victorialofts_booklet_EN_LR.pdf",
+      "title": "Victoria Lofts company and project booklet, pp. 3,7,11,53",
+      "publisher": "Victoria Lofts",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant pages extracted in memory. Historical project mechanisms and leadership; promotional claims omitted."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.victorialofts.com/en/The_Founders/index.html",
+      "title": "The founders, last edited 17 October 2013",
+      "publisher": "Victoria Lofts",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full page read. Subject's founding role and prior development experience; partner's academic background is not his."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://propertynl.com/Nieuws/Kooijman-van-start-bij-Victoria-Lofts/368a50a0bd624da9b2d86fdebd8535b5",
+      "title": "Kooijman joins Victoria Lofts, 23 September 2008",
+      "publisher": "PropertyNL",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full short article read. Independently identifies the van Asbeck/van Dijk partnership, redevelopment operations and new Dutch acquisition/development partner. Supports substantial entrepreneurial platform rather than unrelated salaried employment."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://entreprises.lefigaro.fr/victoria-lofts-2-59/entreprise-518314950",
+      "title": "Victoria Lofts 2 legal notices, 2012 and 2018",
+      "publisher": "BODACC / company legal notice reproduced by Le Figaro",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete relevant notices read. Exact full name, Dutch nationality, Amsterdam birth 3 November 1953. Death 15 October 2016 expressly recorded; widow Gesina van Hoeven replaces him in 2018. Non-shareholding manager designation applies to this subsidiary, not proof of no indirect ownership."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.faillissementsverslagen.com/faillissement/verslagen/verslag/13_ams_15_530_F_V_01/pdf",
+      "title": "Sequoia Leidschendam and partners public insolvency report, 21 January 2016",
+      "publisher": "Court-appointed curator / Wieringa Advocaten",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full report read. Subject controlled Ceva, managing Noordenburg under Leidsegracht holding; a specific project and partners entered insolvency inDecember 2015. Corporate debt and assets are not personal net wealth. Provisional findings do not establish personal wrongdoing or whole-group insolvency."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.pappers.be/nl/company/victoria-lofts-0474689591",
+      "title": "Victoria Lofts NV historical corporate record",
+      "publisher": "Belgian registry records reproduced by Pappers",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant appointment text read:2007 managing directors van Asbeck and van Dijk. Records show Belgian entity insolvency-related closure 2017; surviving database titles are stale. This entity's fate does not resolve his entire 2016 estate."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.victorialofts.com/en/The_Vision/index.html",
+      "title": "The vision and development history, last edited 17 October 2013",
+      "publisher": "Victoria Lofts",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full page read. Scale across multiple residential and office developments. Figures are company output, never subject's personal asset valuation."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://fr.linkedin.com/in/carel-van-asbeck-95621318",
+      "title": "Carel van Asbeck profile candidate",
+      "publisher": "LinkedIn",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full available indexed body read, naming Victoria Lofts and Lille; direct access returns 999. Sparse historical profile cannot independently authenticate ownership, dates or current role."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://companyinfo.nl/organisatieprofiel/activiteiten-van-financiele-holdings/houdstermaatschappij-leidsegracht-b-v-amsterdam-32123068-000004273230",
+      "title": "Leidsegracht holding registry-derived record",
+      "publisher": "Company.info",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full public body read. CEVAST is listed as owner and G.vanHoeven as director since 2016. Corporate succession corroborates continued structure, but does not disclose her personal ownership or his terminal net stake."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Research date 1 October 2026; economic relationship assessed at death 15 October 2016. Input mortality Unknown is corrected. Its age 62 belongs to the terminal period despite the 2020 age-at-date; no calculated age fields changed.",
+    "Identity excludes the 1891-born naval officer,1913-born civil-defence official and 1941-born Philips engineer with overlapping names. No genealogical inheritance or professional achievements are imported from them. Historical Aurelius 111 relationship ends inOctober 2016 but lacks an independently verified exact hull bridge.",
+    "Personal wealth creation and broad Self-made are medium-confidence founder-builder inferences from the independently documented partnership and substantial commercial output. Exact beneficial percentages, early financing and estate composition are not public. Neither aristocratic title nor spouse succession establishes a family transfer of wealth.",
+    "Primary sector is explicit origin fallback because terminal personal asset weight is unranked. Founder 75 nevertheless has positive terminal continuity: established core and continuing operating offices ended through death. Particular corporate failures do not show a total exit or zero private estate. Investor and Passive owner have weaker evidence than the retained founding-platform relationship.",
+    "All person-relevant profiles checked: Forbes, Wikipedia, LinkedIn, Facebook, Instagram, Twitter/X, Youtube, Vimeo, Flickr, TikTok and Personal Website. No authenticated individual account beyond the withheld LinkedIn candidate. Company Website has a direct historical founding relationship; its 2013 last-edit date is disclosed. Trip Advisor and Zillow are not relevant.",
+    "Full relevant sources read through browser, indexed full public profiles and in-memory PDF extraction. The booklet's download date or index freshness is not its publication date. No direct design authorship or promotional sales-performance claims enter biographies.",
+    "Minimum active tags are Multifamily housing and Office real estate, each covering sustained substantial operations. Property developer and broader Residential development are omitted as overlapping labels; one hotel conversion does not establish a separate hotel-operating mandate.",
+    "Birth and death details are from exact-person legal notices rather than genealogy aggregators. No secondary nationality, university degree, precise original seed wealth or personal family share transfer is asserted."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent approved identity, classifications, terminal Founder inference and complementary 51/101-word pair. Strict editorial validation against immutable input passed without warnings. No live changes."
+  },
+  "editorial_note": null
+}

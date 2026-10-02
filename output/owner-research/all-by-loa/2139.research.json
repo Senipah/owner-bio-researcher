@@ -1,0 +1,1345 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 2139,
+    "display_name": "Elizabeth Taylor",
+    "identity_confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "The actress matches the name, British nationality, United States residence context and age 79 at death. Her official estate independently identifies the same historical Kalizma association with Richard Burton. The novelist, contemporary professionals and Mary Elizabeth Taylor's Forbes profile are different people; the exact source relationship dates are not independently verified."
+    }
+  },
+  "research_status": "complete",
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Forbes-first exact profile searches found reporting and dead-celebrity lists, but no verified dedicated actress profile. The plausible profile path was inaccessible; Mary Elizabeth Taylor is a different person. An article is not proposed as a Forbes profile."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "media_entertainment",
+    "label": "Media & Entertainment",
+    "summary": "Substantial earned wealth first arose through acting contracts and film participation.",
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Her personally negotiated Cleopatra contract and subsequent retained film interests establish substantial career-earned capital before her fragrance enterprise. This classifies the formative wealth-producing work, rather than treating later retail sales or jewellery ownership as its original source."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4"
+    ]
+  },
+  "primary_industry": {
+    "classification": "fashion_retail",
+    "label": "Fashion & Retail",
+    "summary": "Fragrance licensing best describes her principal commercial wealth at the end of her lifetime.",
+    "confidence": {
+      "score": 80,
+      "band": "medium",
+      "reason": "Contemporaneous reporting identifies licensed fragrances as the largest later income and fortune driver, independently of acting celebrity. The issuer confirms the continuing Taylor licence at her death, and her personally created product platform supplies the ownership mechanism. This is a terminal-lifetime inference, corroborated by continuation into the estate, not an attribution of today's estate assets to a living person. Valuable collections and film rights were also material; no exact terminal balance sheet or royalty valuation establishes their relative weight. Retail sales are not personal receipts."
+    },
+    "source_ids": [
+      "S5",
+      "S6",
+      "S7",
+      "S1",
+      "S8"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "mixed",
+    "label": "Mixed",
+    "summary": "Personally earned film and fragrance wealth coexisted with materially valuable assets received as marital gifts.",
+    "confidence": {
+      "score": 78,
+      "band": "medium",
+      "reason": "Independent career earnings and commercial licences establish a built fortune. Christie’s identifies four retained major jewels as Richard Burton gifts; their combined posthumous auction gross was about USD36 million. This is positive evidence of material transferred capital, not an assumption from marriage or total collection ownership. Auction gross includes fees and a celebrity premium and is not estate net or a date-of-death valuation. The documented gifts remain economically substantial alongside earned wealth, so neither mechanism alone adequately describes the fortune. Affluent childhood and family access to casting further qualify the earned component; they are not themselves proof of inherited assets."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S7",
+      "S8"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Creator and retained licensor of the substantial fragrance platform at death.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "She launched and supervised the fragrance products, while Arden operated under a licence that continued through her death. The personally created brand rights, combined with contemporaneous evidence of their central economic importance, support Founder at her terminal lifetime position. The judgment is not based on a charitable founder title or the unrelated jewellery-company agreement's honorary title. Film royalties and collected assets were additional relationships; her charity's property is excluded."
+    },
+    "source_ids": [
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "British-American actress and fragrance entrepreneur.",
+    "defining_work": "Built a celebrated film career and a lasting licensed perfume business.",
+    "formative_context": "London childhood with an art-dealer father and former-actress mother; family encouragement and connections helped her enter Hollywood.",
+    "decisive_moment": "Turned public recognition towards research advocacy and care for people affected by AIDS.",
+    "enduring_dimensions": [
+      "Film and fragrance enterprise.",
+      "Public advocacy for AIDS research and emergency care.",
+      "Direct-care charity financed through her own commercial proceeds and trust."
+    ],
+    "character_detail": "Combined public testimony with practical arrangements to finance charitable operations.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Introduce the actress and entrepreneur."
+      },
+      {
+        "mode": "public_contribution",
+        "angle": "Show how the actress used public attention for AIDS advocacy."
+      }
+    ],
+    "excluded_transient_context": [
+      "Vessel relationships",
+      "Estate net-worth estimates",
+      "Auction totals",
+      "Present-day charitable and estate assets",
+      "Unrelated namesake profiles"
+    ],
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S6",
+      "S9",
+      "S10"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "public_contribution",
+    "narrative_shape": "public_role_then_foundation",
+    "calibration_archetypes": [
+      "creative_industries"
+    ],
+    "notes": "Short identifies the actress, family formation, film earnings and licensed fragrances. Long shares only her actress identity, adding the research alliance, legislative testimony and concrete direct-care funding arrangements. It omits her parents, London, Cleopatra and both perfume names. The two paragraphs distinguish public research advocacy from the funding model of her separate care foundation. One year and no money figures enter the long; no expanded short fact bundle remains."
+  },
+  "editorial_note": null,
+  "proposed_details": [
+    {
+      "field": "middle_names",
+      "value": "Rosemond",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The full official estate biography and corroborating individual reference establish this detail."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "field": "secondary_nationality",
+      "value": "American",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "The full official estate biography and corroborating individual reference establish this detail."
+      },
+      "source_ids": [
+        "S4",
+        "S13"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Actress and fragrance entrepreneur",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The full official estate biography and corroborating individual reference establish this detail."
+      },
+      "source_ids": [
+        "S2",
+        "S6"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Female",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The full official estate biography and corroborating individual reference establish this detail."
+      },
+      "source_ids": [
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "London",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The full official estate biography and corroborating individual reference establish this detail."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "27",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The full official estate biography and corroborating individual reference establish this detail."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "February",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The full official estate biography and corroborating individual reference establish this detail."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1932",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The full official estate biography and corroborating individual reference establish this detail."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "23",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The full official estate biography and corroborating individual reference establish this detail."
+      },
+      "source_ids": [
+        "S2",
+        "S9"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "March",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The full official estate biography and corroborating individual reference establish this detail."
+      },
+      "source_ids": [
+        "S2",
+        "S9"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "2011",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The full official estate biography and corroborating individual reference establish this detail."
+      },
+      "source_ids": [
+        "S2",
+        "S9"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "existing_value": "Unknown",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official estate and foundation histories independently confirm her death."
+      },
+      "source_ids": [
+        "S2",
+        "S9"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "15",
+      "type": "Personal Website",
+      "url": "https://elizabethtaylor.com/",
+      "action": "add",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official cross-links or direct independent biographical corroboration establish the identity."
+      },
+      "verification": "Official personal legacy website operated by the Elizabeth Taylor Trust and Estate.",
+      "source_ids": [
+        "S12"
+      ]
+    },
+    {
+      "type_id": "9",
+      "type": "Instagram",
+      "url": "https://www.instagram.com/elizabethtaylor/",
+      "action": "add",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official cross-links or direct independent biographical corroboration establish the identity."
+      },
+      "verification": "Exact direct link from the official estate website; posthumously maintained estate account, not current personal authorship. Platform access was limited.",
+      "source_ids": [
+        "S3",
+        "S12"
+      ]
+    },
+    {
+      "type_id": "2",
+      "type": "Facebook",
+      "url": "https://www.facebook.com/elizabethtaylor/",
+      "action": "add",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official cross-links or direct independent biographical corroboration establish the identity."
+      },
+      "verification": "Exact direct link from the official estate website; posthumously maintained estate account.",
+      "source_ids": [
+        "S3",
+        "S12"
+      ]
+    },
+    {
+      "type_id": "3",
+      "type": "Twitter",
+      "url": "https://twitter.com/elizabethtaylor",
+      "action": "add",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official cross-links or direct independent biographical corroboration establish the identity."
+      },
+      "verification": "Exact direct link from the official estate website; retained personal legacy account, now maintained posthumously. Direct platform access was unavailable.",
+      "source_ids": [
+        "S3",
+        "S12"
+      ]
+    },
+    {
+      "type_id": "16",
+      "type": "TikTok",
+      "url": "https://www.tiktok.com/@theelizabethtaylor",
+      "action": "add",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official cross-links or direct independent biographical corroboration establish the identity."
+      },
+      "verification": "Exact direct link from the official estate website; posthumous estate account, not an account operated during her lifetime.",
+      "source_ids": [
+        "S3",
+        "S12"
+      ]
+    },
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Elizabeth_Taylor",
+      "action": "add",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official cross-links or direct independent biographical corroboration establish the identity."
+      },
+      "verification": "Exact actress article independently matched to the estate biography.",
+      "source_ids": [
+        "S13",
+        "S2"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0206",
+      "name": "Actor",
+      "summary": "A sustained and defining professional acting career, including major leading roles.",
+      "relationship_type": "professional actress",
+      "temporal_scope": "historical",
+      "taxonomy_value": "Practised and widely recognised profession, not an incidental appearance or passive film investment.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Primary career history and broadcaster profile establish the profession over decades."
+      },
+      "source_ids": [
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "tag_id": "tag_0219",
+      "name": "Cosmetics & beauty",
+      "summary": "Created substantial wealth from a sustained fragrance enterprise.",
+      "relationship_type": "fragrance creator and licensor",
+      "temporal_scope": "historical",
+      "taxonomy_value": "Material commercial licensing and personal product involvement exceed a one-off endorsement.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Issuer licence disclosure and contemporaneous business reporting establish sustained material participation."
+      },
+      "source_ids": [
+        "S5",
+        "S6",
+        "S7"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "biography": {
+    "plain_text": "Elizabeth Taylor was a British-American actress and fragrance entrepreneur. Born in London to an art dealer and a former actress, she entered Hollywood with her mother's encouragement and family connections. Her success in films including Cleopatra brought substantial earnings, while Passion and White Diamonds developed a lasting business in licensed perfumes.",
+    "html": "<p>Elizabeth Taylor was a British-American actress and fragrance entrepreneur. Born in London to an art dealer and a former actress, she entered Hollywood with her mother's encouragement and family connections. Her success in films including Cleopatra brought substantial earnings, while Passion and White Diamonds developed a lasting business in licensed perfumes.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "Primary histories and independently corroborated career accounts support every allocated claim."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S6"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Actress Elizabeth Taylor used her public prominence to challenge the stigma surrounding AIDS. Working with physician Michael Gottlieb and researcher Mathilde Krim, she helped establish amfAR and became its principal spokesperson. She also testified alongside Jeanne White, Ryan White's mother, to press Congress for emergency funding for communities affected by the epidemic.\n\nTaylor wanted her charitable work to reach people needing immediate care. She established The Elizabeth Taylor AIDS Foundation in 1991, using proceeds from the sale of her wedding photographs to People magazine. She arranged for her trust to cover the foundation's operating costs, allowing donations to fund its programmes.",
+    "html": "<p>Actress Elizabeth Taylor used her public prominence to challenge the stigma surrounding AIDS. Working with physician Michael Gottlieb and researcher Mathilde Krim, she helped establish amfAR and became its principal spokesperson. She also testified alongside Jeanne White, Ryan White's mother, to press Congress for emergency funding for communities affected by the epidemic.</p>\r\n<p>Taylor wanted her charitable work to reach people needing immediate care. She established The Elizabeth Taylor AIDS Foundation in 1991, using proceeds from the sale of her wedding photographs to People magazine. She arranged for her trust to cover the foundation's operating costs, allowing donations to fund its programmes.</p>\r\n",
+    "word_count": 101,
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "Primary histories and independently corroborated career accounts support every allocated claim."
+    },
+    "source_ids": [
+      "S9",
+      "S10"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=2139",
+      "title": "Immutable owner inventory",
+      "publisher": "Superyacht Network export",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Owner 2139: Elizabeth Taylor, British, United States residence, age 79 at 2020-05-07, mortality Unknown. Historical Kalizma relationship June 1974 to 1974. Blank dates and personal fields inventoried before research."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/sites/dorothypomerantz/2012/10/24/elizabeth-taylor-is-the-new-queen-of-dead-celebrities/",
+      "title": "Elizabeth Taylor tops dead-celebrity earnings list",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article read. Distinguishes posthumous auction proceeds, fragrance retail sales and retained film income. Reports personally negotiated film participations. Its annual estate inflow is not lifetime income or net worth."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://elizabethtaylor.com/biography/",
+      "title": "Elizabeth Taylor biography",
+      "publisher": "Elizabeth Taylor Estate",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full official biography read: acting career, Cleopatra contract, fragrance launches, charitable institutions and death on 23 March 2011 aged 79. Promotional superlatives and medical details are not adopted."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://elizabethtaylor.com/meet-the-taylors-how-elizabeths-family-landed-in-los-angeles/",
+      "title": "Meet the Taylors",
+      "publisher": "Elizabeth Taylor Estate",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article retrieved directly after abbreviated web rendering. Confirms full name,27 February 1932 London birth, parents' occupations, affluent upbringing, family support and mother's promotion of her acting. Official footer supplies exact Instagram, Facebook, Twitter and TikTok links."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.tcm.com/articles/featured-actors/1385495/star-of-the-month-elizabeth-taylor",
+      "title": "Elizabeth Taylor: Star of the Month",
+      "publisher": "Turner Classic Movies",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full broadcaster profile read directly: British-American identity, birth details, family friend Samuel Marx's MGM casting assistance, substantial acting career and death date."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.sec.gov/Archives/edgar/data/95052/000119312511224235/d10k.htm",
+      "title": "Elizabeth Arden 2011 Form 10-K",
+      "publisher": "Elizabeth Arden / SEC",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant licence section read. Taylor licence extended to 2022 with renewal options; her March 2011 death did not affect product marketing and sales rights. Issuer sales are not her personal wealth."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://abcnews.com/amp/Business/elizabeth-taylor-savvy-steely-eyed-business-woman/story?id=13204732",
+      "title": "Elizabeth Taylor: Savvy businesswoman",
+      "publisher": "ABC News",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article read. Contemporaneous assessment attributes major later income to branded products; identifies continuing Arden licence, recent perfume launch and brand-creator role. Actual personal share of product sales is explicitly uncertain."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.insideedition.com/2174-elizabeth-taylors-perfume-fortune",
+      "title": "Elizabeth Taylor's perfume fortune",
+      "publisher": "Inside Edition",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full contemporaneous article read. Reports personally supervised perfume and bottle development and substantial licence-derived fortune. Unverified aggregate estate estimates and retail turnover are not imported as personal asset values."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.christies.com/presscenter/pdf/2011/postsaleET.pdf",
+      "title": "The Collection of Elizabeth Taylor: post-sale release",
+      "publisher": "Christie's",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Original PDF read, including pages 2–3. Proceeds directed to Taylor Trust; separate exhibition and publication profits partly supported ETAF. Four named major jewels were Burton gifts; their combined auction gross was about USD36 million. Sale values are posthumous gross, not terminal net estate values."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://elizabethtayloraidsfoundation.org/about-us/",
+      "title": "Foundation history and timeline",
+      "publisher": "The Elizabeth Taylor AIDS Foundation",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full primary timeline read. Confirms 1990 testimony with Jeanne White, 1991 foundation creation using wedding-photograph proceeds, trust-funded operating costs and death date. Its 1986 CARE Act linkage is not used."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://elizabethtaylor.com/the-formation-of-amfar/",
+      "title": "The formation of amfAR",
+      "publisher": "Elizabeth Taylor Estate",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full direct article read. Describes Taylor's alliance with Michael Gottlieb and Mathilde Krim, institutional formation, principal spokesperson role and congressional advocacy."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://elizabethtaylor.com/elizabeth-taylors-summer-destinations/",
+      "title": "Elizabeth Taylor's summer destinations",
+      "publisher": "Elizabeth Taylor Estate",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full direct body read. Its historical Kalizma section independently connects Taylor and Burton to the source vessel. Used only for identity, not published biography or present ownership."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://elizabethtaylor.com/",
+      "title": "Official personal legacy website",
+      "publisher": "Elizabeth Taylor Trust and Estate",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full homepage identifies the Trust and Estate; official cross-links corroborate the managed legacy profiles. The present website and channels are not represented as personal current activity."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://en.wikipedia.org/wiki/Elizabeth_Taylor",
+      "title": "Elizabeth Taylor",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Exact actress article read and matched to primary life history. Corroborates dual nationality and dates; not used alone for wealth decisions."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The economic assessment is explicitly terminal at her March 2011 death. Contemporary licence evidence and subsequent estate receipts corroborate retained private rights; neither present estate value nor foundation assets are attributed to her.",
+    "Terminal Fashion & Retail is an inference from positive personal licensing and contemporary evidence of its economic importance, not a retail-turnover proxy. Film rights, art, property and valuable jewellery also existed. No exact balance sheet or sector valuation is asserted.",
+    "Mixed distinguishes separately earned wealth from documented material gifts. The gift assets' auction prices reflect posthumous market conditions, buyer fees and celebrity provenance, so they establish significance rather than precise net contribution. Family affluence and industry access qualify her earned start but do not independently establish inheritance.",
+    "Christie's original proceeds allocation is preferred to reports implying all jewellery-sale proceeds went to charity. The Trust received sale proceeds; specified related commercial profits partly benefited the foundation.",
+    "The source age is compatible with age at death despite its later as-of date. Birth and death dates and Unknown-to-Dead correction are independently supported; system-calculated age is preserved.",
+    "All person-relevant types were checked: Forbes, Instagram, LinkedIn, Personal Website, Company Website, Wikipedia, Facebook, Twitter, Youtube, TikTok, Vimeo, Flickr, Trip Advisor and Zillow. LinkedIn and Zillow results were other professionals, video and photo results were third-party material, and no additional personal profile was verified. Foundation accounts are not substituted for personal channels.",
+    "The four proposed social accounts are exact official estate cross-links and are maintained posthumously. Instagram and Twitter direct access was limited; identity verification rests on the primary outgoing links, not a name-only account match.",
+    "No dedicated Forbes profile was verified despite exact searches; substantive Forbes reporting remains in the source ledger. The novelist, Mary Elizabeth Taylor and other namesakes are excluded.",
+    "The exact short historical vessel relationship dates remain input-only. The official estate supplies the same vessel-person association, without establishing every legal ownership interval.",
+    "The foundation timeline's 1986 CARE Act reference appears chronologically inconsistent. Only its independently consistent 1990 testimony and 1991 formation passages are used.",
+    "Generic philanthropy tags are not permitted. Actor and Cosmetics & beauty form the minimum useful set; jewellery collecting is not treated as the jewellery-trade industry."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent reviewed and approved identity, four independent wealth classifications and the complementary 51-word short and 101-word long. Only this dossier is saved; strict validation against the immutable owner input follows."
+  }
+}

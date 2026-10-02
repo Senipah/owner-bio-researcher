@@ -1,0 +1,1215 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1494,
+    "display_name": "Dane A. Miller",
+    "identity_confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Exact name and middle initial, American context, recorded age 69 and February 2015 vessel-relationship end converge with the Biomet co-founder who died that month at 69. Primary records establish his full identity. No independent Homecoming beneficial-owner bridge was located."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "American biomedical engineer and entrepreneur who co-founded Biomet in Indiana.",
+    "defining_work": "Built an international orthopaedic implant manufacturer and advanced surgical biomaterials.",
+    "formative_context": "Engineering studies at General Motors Institute and doctoral training at the University of Cincinnati preceded medical-device development work.",
+    "decisive_moment": "Joined three colleagues to establish Biomet after working in orthopaedics.",
+    "enduring_dimensions": [
+      "Tested titanium's compatibility with the body and collaborated with surgeons on implant design.",
+      "Partnered with Brent Wilcoxson to restore the historic village of Winona Lake."
+    ],
+    "character_detail": "Had a titanium rod placed in his own arm to demonstrate confidence in the material.",
+    "opening_options": [
+      {
+        "mode": "decisive_event",
+        "angle": "An engineer's personal experiment with titanium as an implant material."
+      },
+      {
+        "mode": "public_contribution",
+        "angle": "An entrepreneur's role in restoring his lakeside community."
+      }
+    ],
+    "excluded_transient_context": [
+      "Vessel ownership",
+      "Equity valuations and pending merger consideration",
+      "Private illness and religious affiliations",
+      "Posthumous gifts directed by his widow"
+    ],
+    "source_ids": [
+      "S2",
+      "S3",
+      "S6",
+      "S7"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "Shared anchor: Biomet co-founder identity. Short-only facts include formal education, Indiana business base and sustained expansion. The long omits that formation-and-growth bundle, adding the titanium experiment, surgeon collaboration and independent village restoration. Reduction to the short would lose both engineering character and a substantive civic dimension. No vessel, private illness or posthumous family donation appears."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/static/pvp2005/LIRPMJM.html",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Exact historical CEO profile identifies Miller, Biomet, age 59 and matching degrees. Initial extraction was readable; repeat access encountered a redirect error. This is a 2005 executive profile, not a current billionaire listing."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "healthcare",
+    "label": "Healthcare",
+    "summary": "Biomet orthopaedic implants and founder equity created the principal documented fortune.",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Company history documents his enterprise-building; filings establish substantial personal equity. Medical devices, rather than corporate revenues or his title alone, provide the private-asset mechanism."
+    },
+    "source_ids": [
+      "S2",
+      "S4",
+      "S10"
+    ]
+  },
+  "primary_industry": {
+    "classification": "healthcare",
+    "label": "Healthcare",
+    "summary": "Inferred terminal lifetime sector: retained Biomet equity remained a central identifiable private asset before his February 2015 death.",
+    "confidence": {
+      "score": 80,
+      "band": "medium",
+      "reason": "The 2014 filing distinguishes his trust's 5.8 million shares in a multibillion-dollar combination and continuing involvement. Substantial retained exposure in the fortune-producing core supports the principal-sector inference. Property and other investments limit certainty about dominance. His wife's trust is excluded and post-death merger proceeds are not attributed to him. Origin-sector fallback was considered but current core-asset evidence reaches threshold."
+    },
+    "source_ids": [
+      "S2",
+      "S4",
+      "S7",
+      "S10"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made_independent",
+    "label": "Self-made — independent start",
+    "summary": "Built Biomet with technical work, founder capital and commercial financing from a documented modest launch position.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "The launch account describes limited family resources, personal guarantees, founders' contributions and an SBA loan. These positive conditions support independent enterprise-building; primary records establish resulting material equity. Ordinary spousal labour and borrowing are not inherited assets. Extended family resources are not exhaustively documented."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S10"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Terminal lifetime relationship: a co-founder retaining material equity and an advisory connection after leaving executive leadership.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "Founding, growth, personal trust ownership and ongoing involvement converge on the core business. This is not merely a former title or board-seat inference. Other investments do not establish allocation as his principal role. The remaining uncertainty is terminal portfolio weighting, not the retained stake."
+    },
+    "source_ids": [
+      "S2",
+      "S4",
+      "S10"
+    ]
+  },
+  "biography": {
+    "plain_text": "Dane A. Miller was an American biomedical engineer who co-founded Biomet in Warsaw, Indiana, and built his fortune in orthopaedic implants. A General Motors Institute graduate with a doctorate from the University of Cincinnati, he led the company for nearly three decades, expanding a small manufacturer into an international medical-device business.",
+    "html": "<p>Dane A. Miller was an American biomedical engineer who co-founded Biomet in Warsaw, Indiana, and built his fortune in orthopaedic implants. A General Motors Institute graduate with a doctorate from the University of Cincinnati, he led the company for nearly three decades, expanding a small manufacturer into an international medical-device business.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Forbes, company history and specialist reporting establish education and enterprise-building; the source-record identity limit applies."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Biomet co-founder Dane Miller put his belief in titanium implants to a personal test: he had a small rod placed in his arm. Its eventual removal allowed the material to be examined for compatibility with the body. He also worked closely with orthopaedic surgeons, using their suggestions to improve implant designs and shorten development times.\n\nIn Winona Lake, Miller partnered with Brent Wilcoxson to restore a declining historic neighbourhood. They bought properties, renovated homes and developed premises for shops, galleries and restaurants. They also acquired the former Chautauqua Assembly grounds from Grace College, with the aim of reviving cultural programming alongside the retail development.",
+    "html": "<p>Biomet co-founder Dane Miller put his belief in titanium implants to a personal test: he had a small rod placed in his arm. Its eventual removal allowed the material to be examined for compatibility with the body. He also worked closely with orthopaedic surgeons, using their suggestions to improve implant designs and shorten development times.</p>\r\n<p>In Winona Lake, Miller partnered with Brent Wilcoxson to restore a declining historic neighbourhood. They bought properties, renovated homes and developed premises for shops, galleries and restaurants. They also acquired the former Chautauqua Assembly grounds from Grace College, with the aim of reviving cultural programming alongside the retail development.</p>\r\n",
+    "word_count": 104,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Direct accounts support the experiment and surgeon collaboration; university history and his restoration partner's interview support the civic work."
+    },
+    "source_ids": [
+      "S3",
+      "S6",
+      "S7"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Co-founder of Biomet",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Official company memorial confirms founding."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Consistent official identification."
+      },
+      "source_ids": [
+        "S2",
+        "S5"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Bellefontaine, Ohio",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Explicit obituary birthplace, with Ohio independently confirmed."
+      },
+      "source_ids": [
+        "S3",
+        "S5"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "7",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Primary Biomet incorporation record states full date."
+      },
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "February",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Primary incorporation record states full date."
+      },
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1946",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Primary incorporation record states full date."
+      },
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "action": "correct_existing",
+      "existing_value": "Unknown",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Company remembrance and obituary establish death."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "10",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Explicit contemporary obituary date."
+      },
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "February",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Explicit contemporary obituary date."
+      },
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "2015",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Company memorial and obituary agree."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://www.forbes.com/static/pvp2005/LIRPMJM.html",
+      "verification": "Exact historical personal CEO profile.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Biomet, age and degrees match."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dane_A._Miller",
+      "verification": "Exact personal article matches Biomet and dated career.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Full article and independent primary identity match."
+      },
+      "source_ids": [
+        "S2",
+        "S8"
+      ]
+    },
+    {
+      "type_id": "5",
+      "type": "LinkedIn",
+      "url": "https://www.linkedin.com/in/dane-miller-9b7612b",
+      "verification": "Historical Biomet profile matches Winona Lake and Kettering attendance in 1964–1969.",
+      "confidence": {
+        "score": 88,
+        "band": "high",
+        "reason": "Three specific anchors match; full indexed profile read, direct access unavailable. No present activity asserted."
+      },
+      "source_ids": [
+        "S1",
+        "S3",
+        "S9"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0122",
+      "name": "Medical devices",
+      "summary": "Co-founded and built orthopaedic implant manufacturer Biomet.",
+      "relationship_type": "founder_and_former_operating_owner",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Decades of material ownership and operating leadership satisfy the active specialism contract; not incidental exposure.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official company history establishes defining sustained work."
+      },
+      "source_ids": [
+        "S2",
+        "S4"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1494",
+      "title": "Immutable owner inventory: person 1494",
+      "publisher": "Repository export",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Inventory before search. Original American name, age 69 recorded in 2020, mortality Unknown and Homecoming relationship July 2008 to February 2015. Age appears preserved from death rather than a valid living-age observation."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/static/pvp2005/LIRPMJM.html",
+      "title": "Dane A Miller, CEO of Biomet",
+      "publisher": "Forbes, 2005",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Initial profile extraction read: company, founder, age 59, Kettering BS 1969 and Cincinnati PhD 1974. Repeat access failed at Tollbit redirect."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://investor.zimmerbiomet.com/~/media/Files/Z/ZimmerBiomet-IR/press-release/10-02-2015a-inremembranceofdaneamillerphd.pdf",
+      "title": "In remembrance of Dane A. Miller, Ph.D.",
+      "publisher": "Biomet, Jeff Binder",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full letter read. Four co-founders, CEO 1977–2006, international expansion, biomaterial advances and board guidance up to death."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://orthotw.com/2015/02/dane-miller-ph-d-passes-away",
+      "title": "The Passing of Dane Miller",
+      "publisher": "Orthopedics This Week, 17 February 2015",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read: birthplace, death, education, titanium test and surgeon collaboration. Detailed modest-resource launch with founder capital, SBA loan and guarantees. Private illness and religion excluded."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.sec.gov/Archives/edgar/data/1136869/000119312514355020/d766338ds4a.htm",
+      "title": "Zimmer/LVB merger prospectus",
+      "publisher": "SEC, September 2014",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Relevant full ownership and related-party sections read. Footnote 15: own trust 5,795,936 shares, wife's 5,795,945; combined 2.10% not wholly his. Consulting and pending combination corroborate terminal connection."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://memorialc.public.lu/memorial/2004/C/Pdf/c0524195.pdf",
+      "title": "Biomet Luxembourg incorporation, Memorial C524",
+      "publisher": "Luxembourg official gazette, 19 May 2004",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "PDF p25, printed 25129 read: Dane Alan Miller, born Ohio, 7 February 1946, appointed Biomet Luxembourg manager. Residential addresses omitted."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://lakes.grace.edu/wp-content/uploads/2018/06/CFLS_Lake-Brochures-2017_Winona_EO.pdf",
+      "title": "Winona Lake: the past",
+      "publisher": "Grace College Lilly Center for Lakes & Streams",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "History section at printed p6 read. Partnership with Brent Wilcoxson restored commercial and residential areas. Posthumous science-complex funding is not treated as a lifetime gift."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://charisfellowship.com/paper-features-village-at-winona/",
+      "title": "Paper Features Village at Winona",
+      "publisher": "Charis Fellowship, newspaper feature reprint",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant body read. Wilcoxson interview: partnership purchases, residential restoration, Chautauqua grounds, retail premises and cultural programming; restored galleries and restaurants."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://en.wikipedia.org/wiki/Dane_A._Miller",
+      "title": "Dane A. Miller",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article read for exact personal link identity; not sole wealth support."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.linkedin.com/in/dane-miller-9b7612b",
+      "title": "Dane Miller — Biomet",
+      "publisher": "LinkedIn",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed profile: Biomet, Winona Lake, Kettering 1964–1969. Direct open failed. Historical identity verified; no current activity inferred."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.sec.gov/Archives/edgar/data/351346/000095013705009985/c97502ddef14a.htm",
+      "title": "Biomet definitive proxy statement",
+      "publisher": "SEC, 2005",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Relevant ownership and founding sections read. Substantial personal founder interest; spouse securities expressly distinguished. Historical materiality, not terminal valuation."
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Identity and chronology",
+      "detail": "No independent Homecoming UBO bridge found. Initial, country, age-at-death and vessel end month converge. Basketball player Dane Miller Jr., strength coach, Australian academic and current estate agents excluded. The 2020 age timestamp conflicts with established death; calculated ages remain untouched."
+    },
+    {
+      "topic": "Terminal wealth",
+      "detail": "Current fields describe his final lifetime position, not heirs today. Retained medical-device equity supports medium-confidence principal-interest inference despite other holdings. The pending Zimmer deal was not his completed personal exit. Wife's assets and total transaction consideration are not attributed to him."
+    },
+    {
+      "topic": "Starting position",
+      "detail": "Independent start rests on positive modest resources and commercial financing, not missing inheritance reports. Founders' capital is not all his. Broad Self-made is the alternative if the detailed launch account is discounted."
+    },
+    {
+      "topic": "Profiles checked",
+      "detail": "Forbes first; LinkedIn, Instagram, personal websites, Facebook, Twitter/X, YouTube, TikTok, Wikipedia, company websites, Vimeo, Flickr, Trip Advisor and Zillow checked. Only three strongly matched historical profiles proposed. University Flickr images are not a personal account. Other results concern unrelated people or third-party coverage. No personal site verified; post-merger company site not represented as currently his."
+    },
+    {
+      "topic": "Source access",
+      "detail": "Initial Forbes extraction readable; later redirects failed. LinkedIn full indexed body only. SEC sections and full specialist obituary read through web extraction. Direct SEC returned no useful body; old trade PDF redirected repeatedly, so accessible full HTML used."
+    },
+    {
+      "topic": "Editorial and taxonomy",
+      "detail": "Medical devices is the minimum active tag. Restoration is civic context without claiming dominant property wealth. The titanium experiment is public engineering practice; private health history is omitted. No taxonomy candidates or shared edits."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal research decision after exact inventory, Forbes-first research, field-specific asset tests, profile checks and complementary allocation. Only assigned dossier saved; no input, cohort, taxonomy or live changes."
+  }
+}

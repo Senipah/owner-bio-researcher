@@ -1,0 +1,1276 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1599,
+    "display_name": "Robert Ian Oatley",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The existing personal Wikipedia link identifies Bob Oatley explicitly. The family death statement supplies his exact Robert Ian name, Australian identity and matching age at death; primary winery and gallery accounts independently corroborate his public identity. The recorded historical vessel end date coincides with his death, but is not needed to resolve identity. The younger British estate-agent namesake is excluded."
+    }
+  },
+  "research_status": "complete",
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    },
+    "biography_present": false,
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ]
+  },
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://images.forbes.com/billionaires2002/LIRX6X6.html?datatype=Person&passListId=10&passListType=Person&passYear=2002&uniqueId=X6X6",
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Exact historical Forbes personal-list profile for Robert Oatley and family, directly opened in full on the Forbes image subdomain. It matches Rosemount, coffee trading, Australian citizenship and children. The family estimate is not a current individual valuation; no modern /profile/bob-oatley/ body was available."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "food_beverage",
+    "label": "Food & Beverage",
+    "summary": "Rosemount's wine production and international sales created the principal original fortune, following earlier coffee and cocoa exporting.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The historical wealth profile attributes the fortune to wine, while independent reporting and the gallery's contemporary interview connect him personally to the business built and sold. The earlier commodity trade provided business experience and capital but Rosemount became the defining large wealth-producing asset. Enterprise sale totals and family consideration are not his individually assigned proceeds."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S6"
+    ]
+  },
+  "primary_industry": {
+    "classification": "hospitality",
+    "label": "Hospitality",
+    "summary": "Hamilton Island's resort business was the best-supported central private interest at his death in January 2016.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "Contemporaneous ownership reporting identifies him with the resort, and the later retrospective family interview describes a concentration there alongside a smaller winery. The primary operator history confirms his leadership of the redevelopment. These positive scale and concentration premises support a terminal Hospitality inference rather than Diversified simply because other businesses existed. No exact personal portfolio weights are claimed; post-death trust ownership and later family transactions do not determine his terminal classification."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S5",
+      "S10"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "He built wealth through acquired and developed coffee-export interests, founding and expanding Rosemount, and reinvesting the proceeds.",
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Owned business creation and substantial realisation are positively documented. The starting route ran from junior employment through management to a partnership offered by employer R. A. Colyer, rather than a documented inherited core. Ordinary earned opportunity could support independent start, but the partnership's capital terms and the significance of Colyer's personal patronage remain unresolved. Broad Self-made captures the proven mechanism without presuming either a subsidised launch or complete independence."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S6",
+      "S9"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "At death he remained the creator of the family enterprise and a proprietor of its rebuilt resort and renewed wine interests.",
+    "confidence": {
+      "score": 85,
+      "band": "high",
+      "reason": "Primary accounts identify the enterprise as his creation and call him a resort proprietor at death. The terminal ownership report independently links him to those assets. Sandy's succession as chief executive establishes delegated operations, not Bob's full economic exit. Founder best describes the enduring relationship to the platform he created and developed; he did not found the original pre-acquisition Hamilton resort. There is no basis to replace the terminal relationship with a post-death family trustee or beneficiary role."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S5",
+      "S7",
+      "S10"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "Robert Ian, known as Bob Oatley, was an Australian wine entrepreneur born in Mosman.",
+    "defining_work": "He built Rosemount into an international wine business, then developed resort interests and founded a new wine label.",
+    "formative_context": "Coffee and cocoa exporting in Papua New Guinea preceded the wine business.",
+    "decisive_moment": "The sale of Rosemount enabled substantial reinvestment in Hamilton Island.",
+    "enduring_dimensions": [
+      "He supported the acquisition of a major Captain Cook portrait for public display.",
+      "He supplied equipment and premises to Australian Olympic sailing.",
+      "His children worked with him in the family wine enterprise."
+    ],
+    "character_detail": "He travelled to London to see the Cook portrait after friends introduced him to the acquisition.",
+    "opening_options": [
+      {
+        "mode": "public_contribution",
+        "angle": "Open with the wine entrepreneur's part in bringing a Cook portrait back to Australia."
+      },
+      {
+        "mode": "institution_or_asset",
+        "angle": "Open with Rosemount and the use of export experience to build an international wine business."
+      }
+    ],
+    "excluded_transient_context": [
+      "Vessel ownership chronology",
+      "Wealth rankings and changing estimates",
+      "Post-death family ownership and island sale",
+      "Unverified personal social accounts",
+      "Precise estate or beneficiary allocations"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "public_contribution",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "Shared anchor is the wine-entrepreneur identity only. The short uniquely covers Mosman, coffee and cocoa, Rosemount's international business and sale, Hamilton Island and the renewed winery. The long develops the Cook portrait acquisition and specific Olympic support, omitting the business chronology. Donors, introduction, acquisition purpose, equipment recipients and premises are explicit. Durable maritime exception: competitive sailing and sustained Olympic sailing support are independently central to his public life; no input vessel ownership, dimensions or sale-sensitive boat fact appears. The profile remains accurate independently of vessel ownership."
+  },
+  "editorial_note": null,
+  "biography": {
+    "plain_text": "Robert Ian 'Bob' Oatley was an Australian wine entrepreneur who built Rosemount Estate after trading Papua New Guinean coffee and cocoa. Born in Mosman, he developed an international wine business, sold Rosemount to Southcorp and reinvested in Hamilton Island. He also established Robert Oatley Vineyards, continuing his family's involvement in winemaking.",
+    "html": "<p>Robert Ian 'Bob' Oatley was an Australian wine entrepreneur who built Rosemount Estate after trading Papua New Guinean coffee and cocoa. Born in Mosman, he developed an international wine business, sold Rosemount to Southcorp and reinvested in Hamilton Island. He also established Robert Oatley Vineyards, continuing his family's involvement in winemaking.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Primary winery accounts and contemporary ownership reporting support the business sequence; birthplace is independently corroborated. Family work and the new label are explicitly documented."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S7",
+      "S8"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Wine entrepreneur Bob Oatley helped bring John Webber's portrait of Captain James Cook back to Australia for the National Portrait Gallery. His friends Gordon and Marilyn Darling introduced him to the acquisition, and he travelled to London to see the painting before contributing. He became a founding benefactor of the gallery, supplying wine for its public events throughout his remaining life.\n\nA successful competitive sailor, Oatley also equipped Australia's Olympic sailing programme. Before the Beijing Games, he bought four 470-class boats for the team. He provided Australia's national sailing association with a Sydney building rent-free for three years.",
+    "html": "<p>Wine entrepreneur Bob Oatley helped bring John Webber's portrait of Captain James Cook back to Australia for the National Portrait Gallery. His friends Gordon and Marilyn Darling introduced him to the acquisition, and he travelled to London to see the painting before contributing. He became a founding benefactor of the gallery, supplying wine for its public events throughout his remaining life.</p>\r\n<p>A successful competitive sailor, Oatley also equipped Australia's Olympic sailing programme. Before the Beijing Games, he bought four 470-class boats for the team. He provided Australia's national sailing association with a Sydney building rent-free for three years.</p>\r\n",
+    "word_count": 98,
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "The recipient gallery's original interview and obituary directly establish the acquisition and ongoing support. The Olympic equipment and premises details are reported in full by ABC with the AOC president's attribution."
+    },
+    "source_ids": [
+      "S2",
+      "S5",
+      "S6"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Founder of Rosemount Estate and Robert Oatley Vineyards",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Official winery history names him as founder of both businesses."
+      },
+      "source_ids": [
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Family statement and primary profiles identify him as male."
+      },
+      "source_ids": [
+        "S2",
+        "S5"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Mosman, New South Wales",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Forbes retrospective and the existing reference profile independently identify Mosman as birthplace."
+      },
+      "source_ids": [
+        "S3",
+        "S11"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "11",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "PNGAA's detailed obituary gives the complete date, corroborated by the existing personal reference article."
+      },
+      "source_ids": [
+        "S4",
+        "S11"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "June",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "PNGAA's detailed obituary gives the complete date, corroborated by the existing personal reference article."
+      },
+      "source_ids": [
+        "S4",
+        "S11"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1928",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "PNGAA's detailed obituary gives the complete date, corroborated by the existing personal reference article."
+      },
+      "source_ids": [
+        "S4",
+        "S11"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "action": "correct_existing",
+      "existing_value": "Unknown",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Family death statement, primary gallery obituary and independent reporting confirm his death."
+      },
+      "source_ids": [
+        "S2",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "10",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Dated obituary and the next-day primary gallery tribute agree on death on 10 January 2016."
+      },
+      "source_ids": [
+        "S2",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "January",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Dated obituary and the next-day primary gallery tribute agree on death on 10 January 2016."
+      },
+      "source_ids": [
+        "S2",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "2016",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Dated obituary and the next-day primary gallery tribute agree on death on 10 January 2016."
+      },
+      "source_ids": [
+        "S2",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://images.forbes.com/billionaires2002/LIRX6X6.html?datatype=Person&passListId=10&passListType=Person&passYear=2002&uniqueId=X6X6",
+      "action": "add",
+      "verification": "Verified historical personal-list entry for Robert Oatley and family. An archived Forbes-hosted profile, not a current net-worth estimate.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Verified historical personal-list entry for Robert Oatley and family. An archived Forbes-hosted profile, not a current net-worth estimate."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://robertoatley.com.au/",
+      "action": "add",
+      "verification": "Official website of the wine company he founded, with a dedicated founder biography. It is a company domain, not a personal account.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official website of the wine company he founded, with a dedicated founder biography. It is a company domain, not a personal account."
+      },
+      "source_ids": [
+        "S7",
+        "S8"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0201",
+      "name": "Wine production",
+      "summary": "Founded and built major wine-producing businesses including Rosemount.",
+      "relationship_type": "founder",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Defining wealth-producing operations and long-term founding ownership satisfy the wine specialism contract. This is not a private collection or passive investment.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary founder history and independent wealth evidence establish substantial operations."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "tag_id": "tag_2798",
+      "name": "Resort operations",
+      "summary": "Acquired and rebuilt the substantial Hamilton Island resort operation.",
+      "relationship_type": "operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "His defining multi-year redevelopment and ownership of a major operating resort satisfy the specialism; the tag does not arise solely from one property purchase. Broader hotel and overlapping development tags are omitted.",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Terminal proprietor evidence and the primary operator's account establish sustained personal involvement and materiality."
+      },
+      "source_ids": [
+        "S2",
+        "S5",
+        "S10"
+      ]
+    },
+    {
+      "tag_id": "tag_0044",
+      "name": "Competitive sailing",
+      "summary": "Sustained competitive sailing identity and repeated major offshore-racing success.",
+      "relationship_type": "other",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Repeated competitive achievement and a defining racing identity satisfy the sporting contract independently of sponsorship or the source-record vessel.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Primary gallery obituary and the yacht-club commodore's account establish the repeated competitive record."
+      },
+      "source_ids": [
+        "S2",
+        "S5"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://images.forbes.com/billionaires2002/LIRX6X6.html?datatype=Person&passListId=10&passListType=Person&passYear=2002&uniqueId=X6X6",
+      "title": "Robert Oatley and family: World's Richest People 2002",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full historical profile directly read. Attributes wealth to wine and describes family-built Rosemount and the Southcorp transaction. Estimate and proceeds cover the family, not a sole personal entitlement."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.abc.net.au/news/2016-01-10/businessman-and-wild-oats-owner-bob-oatley-dies/7079448",
+      "title": "Bob Oatley dies, 10 January 2016",
+      "publisher": "ABC News",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article read. Includes family's exact-name statement, terminal business ownership, wine-sale history, sporting record and AOC president's account of Olympic boats and free premises. No sensitive medical detail is proposed."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.forbes.com/sites/forbesasia/2016/10/26/australias-first-family-of-yacht-racing-focus-on-expanding-the-business-and-winning-the-sydney-hobart-race-again/",
+      "title": "Australia's first family of yacht racing",
+      "publisher": "Forbes Asia / Ron Gluckman",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article read through its accessible Forbes-hosted redirect. Retrospective interview gives working-class Mosman upbringing, acquired export interests, Sandy's earlier CEO succession and resort concentration. Later family trust ownership is kept separate from Bob's terminal interests."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.pngaa.org/post/vale-2016-march",
+      "title": "Bob Oatley obituary, March 2016",
+      "publisher": "Papua New Guinea Association of Australia",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant obituary read. Supplies exact birth and death dates, junior employment, management and Colyer partnership, export-business development and wine creation. Its mistaken OAM heading is not used for an honour proposal."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.portrait.gov.au/aboutface/2016/01/robert-oatley-ao",
+      "title": "Robert Oatley AO, 11 January 2016",
+      "publisher": "National Portrait Gallery",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full primary tribute read. Establishes founding benefactor, resort proprietor, competitive sailor and support for the portrait acquisition. Describes wine supplied for public events through his death."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.portrait.gov.au/magazines/2/the-quiet-australian",
+      "title": "The Quiet Australian, December 2001",
+      "publisher": "National Portrait Gallery / Brian Dale",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full primary interview read. Gives the Darlings' introduction, London viewing, contribution to acquisition for public display and his owned Rosemount enterprise. The acquisition year is omitted because this account and the later tribute differ."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://robertoatley.com.au/robert-oatley-ao/",
+      "title": "Robert Oatley AO BEM, founder",
+      "publisher": "Robert Oatley Wines",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full official founder biography read. Confirms prior coffee and cocoa business, wine enterprise, new label and family resort activities; corroborates death year."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://robertoatley.com.au/about-us/",
+      "title": "About Robert Oatley Wines",
+      "publisher": "Robert Oatley Wines",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full official page read. Identifies the late founder, new winery established in 2006 and children working in the original vineyards. Present leadership belongs to Sandy, not Bob."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://montevideo-maru.org/wp-content/uploads/2022/02/30September2011.pdf",
+      "title": "Bob Oatley tribute on behalf of Mr Colyer",
+      "publisher": "Rabaul and Montevideo Maru Society, Memorial News",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Original PDF pages 1-2 fully read. Describes employer Colyer's lasting influence and the 1963 opportunity to become an Angco partner. No partnership financing or gift terms are supplied."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.hamiltonislandrealestate.com.au/community/the-oatley-family/",
+      "title": "The Oatley Family",
+      "publisher": "Hamilton Island Real Estate",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed article body read; direct open returned 403. Describes family-controlled acquisition, Bob's direction of the redevelopment, the resort's substantial reinvestment and operations. Current family roles are not assigned to deceased Bob."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://en.wikipedia.org/wiki/Bob_Oatley",
+      "title": "Bob Oatley",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Existing saved link directly read. Exact full name, Australian identity and vital dates match stronger sources. Used for identity and corroboration, not sole wealth support."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://uk.linkedin.com/in/robert-oatley-29944487",
+      "title": "Robert Oatley, Winkworth",
+      "publisher": "LinkedIn",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed public profile read. London estate agent with much later schooling is a clear namesake, not the Australian entrepreneur. No profile proposed."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://www.forbes.com.au/news/billionaires/hamilton-island-changes-hands-from-the-billionaire-oatley-family-to-blackstone/",
+      "title": "Hamilton Island changes hands, December 2025",
+      "publisher": "Forbes Australia",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed report read. Later family sale is used only to avoid implying Bob still owns a resort in 2026. It does not alter classifications anchored to his death."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Research cutoff 30 September 2026, accessed 1 October 2026. Robert died on 10 January 2016: primary industry and wealth relationship describe his terminal lifetime position, not his estate, heirs or today's businesses.",
+    "The recorded age 87 as of May 2020 is stale and appears to preserve his death age. Vital dates come from independently published accounts; no birth year is calculated from that field.",
+    "Saved Wikipedia and exact public full name establish identity. The source record's historical Palm Beach XI is not independently equated to every vessel bearing Wild Oats; no vessel detail is proposed.",
+    "Forbes verification is an exact historical person-and-family list profile on images.forbes.com. The ordinary modern profile URL did not yield a body. No historical family estimate, company valuation or aggregated transaction consideration is proposed as a personal current fortune.",
+    "Food & Beverage is the principal fortune-creation sector. Coffee and cocoa trading was an important precursor, but the documented large owned wine enterprise supplies the clearest original principal-wealth premise.",
+    "Hospitality at death is a positive concentration inference from the resort's scale, terminal ownership and successor's account; it is not inferred from fame or one investment. Wine, rural and other interests existed, but the available evidence supports the resort's centrality. No precise terminal percentage is public.",
+    "Broad Self-made is supported independently by business creation and owned expansion. A working-class upbringing and advancement from employment are positive evidence for independent start, while Colyer's mentorship and partnership opportunity require caution. The legal and funding terms are insufficiently specified to distinguish a routine earned partnership from a substantial preferential launch; neither gift nor inheritance is asserted.",
+    "Founder refers to the created family enterprise and resumed winery, not a claim he founded Hamilton Island's original resort. Delegating chief executive duties to Sandy does not itself establish divestment. The primary terminal proprietor account and business reporting preserve a personal economic relationship.",
+    "Post-death trust ownership is not mapped to Valerie, Sandy or any beneficiary in this dossier. The family-controlled island's later sale is outside Bob's lifetime and supplies no personal current proceeds.",
+    "All supported link types were searched: LinkedIn, Instagram, Personal Website, Facebook, Twitter/X, Youtube, TikTok, Wikipedia, Vimeo, Flickr, Trip Advisor, Zillow and Company Website. No verified personal account was found beyond the existing Wikipedia and historical Forbes profile. TikTok access is blocked; corporate feeds, news videos and photo-tag pages are not personal accounts.",
+    "The London estate-agent Robert Oatley on LinkedIn has incompatible geography and schooling dates. Winery and racing-team social profiles are organisational. None is substituted for a personal link.",
+    "The National Portrait Gallery's contemporary interview and later tribute differ on the portrait acquisition year. The long biography deliberately omits the year and uses only the convergent acquisition, introduction and support facts.",
+    "Resort, wine and competitive-sailing tags convey three defining dimensions. No broad duplicate hotel tag, art-philanthropy tag, family-office tag or unapproved company tag is created.",
+    "Secondary nationality is unverified. Work in Papua New Guinea and overseas property do not establish a second nationality or residence. Existing Australian nationality and residence remain unchanged.",
+    "The 51/98-word pair shares only the wine-entrepreneur anchor. Long-only art-acquisition detail and Olympic equipment and premises are independently substantial. Its sailing material is durable public sporting work, not transient ownership colour."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person research as of 30 September 2026, with current wealth fields anchored to death in January 2016. Parent-reviewed complementary 51/98-word pair. Saved after the 150-owner checkpoint write hold was released; only this assigned owner dossier was written."
+  }
+}

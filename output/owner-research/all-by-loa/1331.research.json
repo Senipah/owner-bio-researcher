@@ -1,0 +1,1227 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1331,
+    "display_name": "Andreas Liveras",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Distinctive name, Cypriot nationality, existing 26 November 2008 death date and multiple commercial vessel relationships agree with company memorial, contemporary reporting and Monaco public records. October 2008 Lauren L reporting directly connects the matching input vessel to the entrepreneur; son Dion and living namesakes are distinct."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    },
+    "raw_blank_details": [
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ]
+  },
+  "research_status": "complete",
+  "wealth_creation_industry": {
+    "classification": "food_beverage",
+    "label": "Food & Beverage",
+    "summary": "The original fortune came from expanding Fleur de Lys into an industrial frozen-cake producer and subsequently building Laurens Patisseries with his son.",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Contemporary reporting identifies the bakery expansion and first major sale; the buyer's 2006 announcement confirms the scale and acquisition of the family's later dessert manufacturer."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "primary_industry": {
+    "classification": "shipping_maritime",
+    "label": "Shipping & Maritime",
+    "summary": "At his death in November 2008, the principal identifiable operating wealth was the commercial fleet and charter business of Liveras Yachts, following the sale of Laurens Patisseries.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "Reasoned terminal-at-death classification: the food business had been sold, while direct 2008 reporting describes repeated fleet investment, strong charter demand and substantial operating assets under his control. The gazette corroborates ownership and management. This is commercial fleet wealth, not inference from personal yacht ownership. Exact estate asset weights and retained food-company shares are not established."
+    },
+    "source_ids": [
+      "S2",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made_independent",
+    "label": "Self-made — independent start",
+    "summary": "Rose from a poor shepherd's family and bakery employment to purchasing and expanding his employer's business, then reinvested the proceeds in new enterprises.",
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Convergent accounts positively describe modest family circumstances, migration for work, delivery employment and an employer buyout. This supports an independent launch rather than merely inferring it from founder status or silence about inheritance; ordinary employment supplied commercial experience."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "At death, founder and chairman of Liveras Yachts, retaining a direct ownership and operating relationship to its commercial fleet business.",
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Company memorial and contemporaneous company death statement identify founding/chairmanship; Monaco formation records show 499 of 500 interests and management, with 2008 reporting confirming personal fleet decisions. Later activities by his son and estate are excluded."
+    },
+    "source_ids": [
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "biography": {
+    "plain_text": "Andreas Liveras was a British-Cypriot entrepreneur who built his fortune in frozen cakes before founding Monaco’s Liveras Yachts. A shepherd’s son, he moved to London and rose from bakery delivery work to business ownership. He later developed Laurens Patisseries with his son. He was killed in the 2008 Mumbai attacks.",
+    "html": "<p>Andreas Liveras was a British-Cypriot entrepreneur who built his fortune in frozen cakes before founding Monaco’s Liveras Yachts. A shepherd’s son, he moved to London and rose from bakery delivery work to business ownership. He later developed Laurens Patisseries with his son. He was killed in the 2008 Mumbai attacks.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Contemporary reporting and direct company evidence support the selected facts and keep the subject's lifetime separate from successor activities."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S5",
+      "S7"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "At Liveras Yachts, Andreas Liveras developed a charter business for customers travelling with large parties who wanted the facilities of a luxury hotel at sea. He combined new commissions with extensive refits, adapting accommodation and services to paying guests. Before one major conversion, he put the acquired vessel into charter for several months to collect customers’ opinions, then used that experience to guide the work.\n\nHis niece, interior designer Sophia Liveras Dafnia, worked alongside her naval architect husband on the fleet. Their familiarity with returning clients shaped practical decisions: cramped cabins became larger suites, and space was devoted to treatments and relaxation.",
+    "html": "<p>At Liveras Yachts, Andreas Liveras developed a charter business for customers travelling with large parties who wanted the facilities of a luxury hotel at sea. He combined new commissions with extensive refits, adapting accommodation and services to paying guests. Before one major conversion, he put the acquired vessel into charter for several months to collect customers’ opinions, then used that experience to guide the work.</p>\r\n<p>His niece, interior designer Sophia Liveras Dafnia, worked alongside her naval architect husband on the fleet. Their familiarity with returning clients shaped practical decisions: cramped cabins became larger suites, and space was devoted to treatments and relaxation.</p>\r\n",
+    "word_count": 102,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Contemporary reporting and direct company evidence support the selected facts and keep the subject's lifetime separate from successor activities."
+    },
+    "source_ids": [
+      "S5",
+      "S6"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "British-Cypriot entrepreneur who built food-manufacturing wealth and founded a commercial charter business.",
+    "defining_work": "Expanded bakery production and developed a charter offering for unusually large guest parties.",
+    "formative_context": "A shepherd's son who migrated to London and progressed from delivery work to buying the bakery.",
+    "decisive_moment": "Tested a newly acquired commercial vessel with charter clients before commissioning its conversion.",
+    "enduring_dimensions": [
+      "Customer feedback shaping capital investment.",
+      "A family design team translating service expectations into accommodation.",
+      "Serial business building across food and charter markets."
+    ],
+    "character_detail": "Sought paying guests' opinions before committing to a major refit.",
+    "opening_options": [
+      {
+        "mode": "institution_or_asset",
+        "angle": "The large-party charter model at Liveras Yachts."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Testing client demand before redesigning charter accommodation."
+      }
+    ],
+    "excluded_transient_context": [
+      "Personal vessel names and specifications",
+      "Family wealth estimates and rich-list rankings",
+      "Unrealised future fleet orders",
+      "Graphic accounts of his death",
+      "His son's or estate's later businesses"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "maritime_professional",
+      "founder_operator"
+    ],
+    "reviewed_phrase_exceptions": [
+      {
+        "kind": "commercial_maritime",
+        "phrase": "Liveras Yachts",
+        "reason": "The phrase is the documented trading name of his substantial charter company, not a personal vessel. Both biographies discuss enduring business work.",
+        "source_ids": [
+          "S5",
+          "S6",
+          "S8"
+        ]
+      }
+    ],
+    "notes": "Shared anchor is Liveras and his charter company. The short alone supplies nationality, family background, migration, bakery wealth, the venture with his son and death. The long omits those secondary identity-card facts and develops two distinct business dimensions: testing demand before capital work and the family design team's translation of client expectations into usable accommodation. Commercial fleet practice is defining work, not a personal-vessel inventory."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Exact profile-path and name searches found Forbes luxury-travel articles naming the entrepreneur, but no dedicated personal Forbes profile."
+    }
+  },
+  "proposed_details": [
+    {
+      "field": "middle_names",
+      "value": "Dionysiou",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Contemporary named report confirms the full name."
+      },
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "field": "secondary_nationality",
+      "value": "British",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Contemporary government notice explicitly states British nationality; family reporting confirms a British passport."
+      },
+      "source_ids": [
+        "S3",
+        "S9"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Founder of Liveras Yachts",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official company memorial and contemporary company announcement identify him as founder."
+      },
+      "source_ids": [
+        "S5",
+        "S7"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Anayia",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Contemporary Monaco official notice explicitly identifies Anayia in Cyprus, resolving weaker contradictory reference material."
+      },
+      "source_ids": [
+        "S9"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "1",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official notice and contemporary report agree on the full birth date."
+      },
+      "source_ids": [
+        "S3",
+        "S9"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "April",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official notice and contemporary report agree on the full birth date."
+      },
+      "source_ids": [
+        "S3",
+        "S9"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1935",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official notice and contemporary report agree on the full birth date."
+      },
+      "source_ids": [
+        "S3",
+        "S9"
+      ]
+    },
+    {
+      "field": "birth_country",
+      "value": "Cyprus",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official birth record description and consistent contemporary biography establish Cyprus, not the input's Greece."
+      },
+      "source_ids": [
+        "S3",
+        "S9"
+      ],
+      "existing_value": "Greece"
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Andreas_Liveras",
+      "verification": "Dedicated biography matches subject, businesses and death; birthplace error is noted separately and is not used as evidence.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Exact identity established from distinctive career and dates."
+      },
+      "source_ids": [
+        "S11",
+        "S9"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.liverasyachts.com/",
+      "verification": "Company's dedicated memorial explicitly names the late founder; association is historical.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Direct company biography establishes the founder association without claiming he remains active."
+      },
+      "source_ids": [
+        "S5"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_1973",
+      "name": "Food manufacturing",
+      "summary": "Expanded industrial frozen-cake production and built the substantial Laurens Patisseries business.",
+      "relationship_type": "founder_operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Industrial dessert production created material wealth. Broad food manufacturing fits own-label cakes better than branded foods or sugar-confectionery tags.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Buyer announcement establishes major food-manufacturing operations; biographies connect the owner to their creation and sale."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "tag_id": "tag_1019",
+      "name": "Ship chartering",
+      "summary": "Built and controlled a repeated commercial charter model using a fleet of large vessels.",
+      "relationship_type": "founder",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "A defining commercial vessel-chartering business with sustained fleet operations and client-driven capital investment, beyond occasional chartering of a personal yacht.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Company records, direct contemporary operating reporting and official ownership evidence establish the business model's materiality."
+      },
+      "source_ids": [
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.the-independent.com/incoming/andreas-liveras-entrepreneur-killed-in-mumbai-terrorist-attacks-5463052.html",
+      "title": "Andreas Liveras: Entrepreneur killed in Mumbai terrorist attacks",
+      "publisher": "The Independent, December 2008",
+      "tier": 2,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Career, bakery buyout and expansion, later enterprise with son, family background and death."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://view.news.eu.nasdaq.com/view?id=bbe8f34f01ace0a8881523c57e0efeb24&lang=en",
+      "title": "Bakkavör Group acquires Laurens Patisseries",
+      "publisher": "Bakkavör company announcement via Nasdaq, 2 May 2006",
+      "tier": 1,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "£130m acquisition of family dessert business; substantial retailer own-label production. Part of consideration was buyer shares, not all cash."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://archive.cyprus-mail.com/2008/11/28/uk-cypriot-tycoon-killed-in-bloodbath/",
+      "title": "UK Cypriot tycoon killed in bloodbath",
+      "publisher": "Cyprus Mail, 28 November 2008",
+      "tier": 2,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Family and official nationality confirmation, poor shepherd-family origins, 1 April 1935 birth, employment-to-ownership route and frozen-cake sale."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.sail-world.com/Australia/Millionaire-Yacht-Owner-Killed-in-Mumbai/-51279",
+      "title": "Millionaire Yacht Owner Killed in Mumbai",
+      "publisher": "Sail-World / BW Media, 28 November 2008",
+      "tier": 3,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Bakery career, second food business with son, charter company and death."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.liverasyachts.com/about-us/andreas-liveras/",
+      "title": "Andreas Liveras",
+      "publisher": "Liveras Yachts",
+      "tier": 1,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Founder memorial: food fortune followed by charter-company creation, larger-party market and service investment; distinguishes son Dion's later activity."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://powerandmotoryacht.com/maintenance/refit-lauren-l/",
+      "title": "The Refit of Lauren L",
+      "publisher": "Power & Motoryacht, Mike Smith, October 2008",
+      "tier": 1,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Direct company interviews and vessel visit: substantial charter fleet, owner decisions, guest testing before refit, niece-led interiors, accommodation and service changes."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.superyachttimes.com/yacht-news/tragic-loss-of-andreas-liveras",
+      "title": "Tragic loss of Andreas Liveras",
+      "publisher": "Liveras Yachts announcement carried by SuperYacht Times, 27 November 2008",
+      "tier": 1,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Indexed company statement confirms chairman at death, founder history, migration and transition from baking. Direct page body loads incompletely."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://journaldemonaco.gouv.mc/fr/Journaux/2002/Journal-7532/Societe-en-Commandite-Simple-S.C.S.-LIVERAS-ET-CIE",
+      "title": "S.C.S. Liveras et Cie",
+      "publisher": "Journal de Monaco, 1 February 2002",
+      "tier": 1,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Official formation notice: Liveras Yachts trading name, Andreas owns 499/500 interests and manages company; personal Monaco residence."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://journaldemonaco.gouv.mc/en/Journaux/2008/Journal-7862/Vente-aux-encheres-publiques-sur-licitation-en-deux-lots-apres-surenchere-Etude-de-Maitre-Georges-BLOT-Avocat-Defenseur-pres-la-Cour-d-Appel-de-Monaco-2-boulevard-d-Italie-MC-98000-MONACO",
+      "title": "Public auction notice naming Andreas Liveras",
+      "publisher": "Journal de Monaco, 2008",
+      "tier": 1,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Explicitly records birth 1 April 1935 in Anayia, Cyprus; British nationality and Monaco residence."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.cbsnews.com/news/commandos-assault-besieged-hostage-takers/",
+      "title": "Commandos Assault Besieged Hostage-Takers",
+      "publisher": "CBS News, November 2008",
+      "tier": 2,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Full middle name."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://en.wikipedia.org/wiki/Andreas_Liveras",
+      "title": "Andreas Liveras",
+      "publisher": "Wikipedia",
+      "tier": 4,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Dedicated identity-matched reference profile; its Kyrenia birthplace conflicts with stronger official evidence."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://www.forbes.com/2005/03/30/cx_sb_0331featslide.html",
+      "title": "Luxury cruises feature mentioning Andreas Liveras",
+      "publisher": "Forbes, 30 March 2005",
+      "tier": 2,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Historical commercial fleet coverage found during Forbes-first search, not a personal profile; historical website reference."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://megayachtnews.com/2008/11/andreas-liveras-remembered/",
+      "title": "Andreas Liveras Remembered",
+      "publisher": "Megayacht News, 29 November 2008",
+      "tier": 3,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Contemporary trade remembrance; describes a Facebook remembrance page rather than a personal account."
+      ]
+    },
+    {
+      "id": "S14",
+      "url": "https://www.ucy.ac.cy/pr/electrical-engineer-and-researcher-mr-andreas-liveras/?lang=en",
+      "title": "Electrical Engineer and Researcher Mr. Andreas Liveras",
+      "publisher": "University of Cyprus",
+      "tier": 1,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Rejected living professional namesake with unrelated engineering identity."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The current-industry and asset-relationship fields are expressly assessed at death in November 2008, not in 2026. The son's subsequent fleet activity, estate disposals and later company developments are not assigned to the deceased.",
+    "Shipping & Maritime is a reasoned inference from substantial retained commercial fleet operations, continued personal investment and the 2006 food-business sale. It does not claim a complete estate valuation. The acquisition included buyer shares; individual allocation and terminal holdings are not established, so neither a continuing food-control role nor diversified portfolio management is inferred.",
+    "The original bakery was purchased from an employer rather than founded from scratch. Founder describes the subsequently established charter business; independent-start origin rests on documented circumstances and acquisition-led wealth creation.",
+    "Anayia birthplace and 1 April 1935 DOB are confirmed by a 2008 official Monaco notice. Wikipedia's Kyrenia is rejected for personal-field evidence. Source references to eight or nine siblings/children differ, so no precise sibling count is proposed.",
+    "Input Greek birth country conflicts with official Cyprus evidence and is explicitly corrected. Existing Cypriot nationality is retained with British nationality added. No Greek citizenship is inferred from Greek-Cypriot ethnicity.",
+    "Monaco residence is confirmed by contemporary public notices but the optional secondary-residence field is not an importable researchable gap under the validator. Multiple bases and family links to Britain do not conclusively establish that the existing United Kingdom main-residence value is wrong; retain it and preserve the additional residence fact here.",
+    "Forbes-first exact-name and profile-path searches produced travel articles but no personal profile. His family was described as multimillionaire; no billionaire classification is asserted.",
+    "All supported person-relevant social types were searched, prioritising LinkedIn, Instagram and personal website. No verified personal Facebook, Twitter/X, YouTube, LinkedIn, Trip Advisor, Vimeo, Flickr, Instagram, Zillow or TikTok account was identified. News videos and vessel photography are third-party content.",
+    "Historical AndreasLiveras.com could not be loaded and is not proposed. A Facebook remembrance page mentioned by contemporary trade reporting is not established as an official personal account. The company memorial is verified under Company Website.",
+    "Living University of Cyprus engineer Andreas Liveras, LinkedIn Andreas Liveris medical/Vodafone profiles, Andrew Liveris of Dow, relatives' profiles and crew accounts are not the subject.",
+    "Food manufacturing and Ship chartering are the minimum complementary active tags. Cakes are not forced into sugar-confectionery membership; commissioning vessels is not shipyard ownership. No new taxonomy candidates were created.",
+    "No preexisting partial dossier was present. Commercial charter practice is biographical work; personal vessel names and ownership inventory are excluded from both biographies."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal research decision with death-date time basis, positive evidence for industry and role, official correction of birth country and place, independently allocated biographies and active literal tags only."
+  }
+}

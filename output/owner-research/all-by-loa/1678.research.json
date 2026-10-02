@@ -1,0 +1,1269 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1678,
+    "display_name": "Dan Costache Patriciu",
+    "identity_confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Primary offer document identifies Dan Costache (Dinu) Patriciu, Romanian citizen, Rompetrol principal and architect. This exact unusual full name, nationality and age at death match the source record; no namesake conflict was found."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "research_status": "complete",
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/dinu-patriciu/",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Exact profile matches Rompetrol, Romanian citizenship and post-sale interests. Complete indexed profile body read after direct access became intermittent; its wealth snapshot is dated 1 March 2012."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "energy",
+    "label": "Energy",
+    "summary": "His principal fortune came from acquiring and developing Rompetrol's refining and fuel-distribution business, followed by its two-stage sale to KazMunayGas.",
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Personal holding-company ownership, expansion and sale are corroborated by transaction documents, corporate history and Forbes wealth reporting. Earlier architecture and later reinvestments do not displace the clearly identified oil fortune."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "primary_industry": {
+    "classification": "diversified",
+    "label": "Diversified",
+    "summary": "At his death in August 2014, property and banking were independently material remaining interests. Diversified is inferred from the retained property portfolio and majority beneficial ownership of Liberty Bank, which contemporary reporting jointly identifies as his most important businesses.",
+    "confidence": {
+      "score": 76,
+      "band": "medium",
+      "reason": "This uses positive terminal ownership and comparative reporting, not the mere existence of several old ventures. Neither sector is demonstrably dominant; property gross values and bank balance-sheet assets are not personal equity. Exact net weights remain unresolved."
+    },
+    "source_ids": [
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "He acquired and expanded the Rompetrol platform and personally owned the holding company that realised the sale. This supports broad self-made wealth, without deciding whether his starting position was independent or materially advantaged.",
+    "confidence": {
+      "score": 89,
+      "band": "high",
+      "reason": "Forbes explicitly classifies self-made, corroborated by personal ownership and acquired-business development in the offer document. His father's oil career is documented, but its economic contribution to his launch is not sufficiently established for a narrower subtype."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S8"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "investor",
+    "label": "Investor",
+    "summary": "His terminal principal relationship is inferred as an investor allocating the Rompetrol proceeds across property and banking: a personally owned holding platform made repeated acquisitions and disposals, while separate executives ran the underlying businesses.",
+    "confidence": {
+      "score": 78,
+      "band": "medium",
+      "reason": "Contemporaneous portfolio restructuring, retained personal economics and delegated bank/property management converge on sustained capital allocation. This does not assume daily operating control or a formal family office. The precise scope of his personal decisions immediately before death is not fully documented."
+    },
+    "source_ids": [
+      "S2",
+      "S5",
+      "S6",
+      "S7",
+      "S11"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "Romanian businessman and architect, publicly known as Dinu Patriciu.",
+    "defining_work": "Expanded Rompetrol through acquisitions into an international oil group and sold it to KazMunayGas.",
+    "formative_context": "Architectural practice and teaching at the Ion Mincu Institute informed his emphasis on organising skilled teams.",
+    "decisive_moment": "The sale of his oil business provided capital for property and banking investments.",
+    "enduring_dimensions": [
+      "Architectural projects in Romania and the United Arab Emirates",
+      "Newspaper ownership and publishing",
+      "Student scholarships combining academic achievement and financial need"
+    ],
+    "character_detail": "Considered the organisation of talented teams central to productive businesses.",
+    "opening_options": [
+      {
+        "mode": "formative_episode",
+        "angle": "Connect architectural practice with his approach to organising teams."
+      },
+      {
+        "mode": "defining_achievement",
+        "angle": "Explain the transformation and sale of the oil group."
+      }
+    ],
+    "excluded_transient_context": [
+      "Net-worth rankings and current valuations",
+      "Personal vessel details",
+      "Private family and health matters",
+      "Unresolved allegations and litigation",
+      "Later estate transactions"
+    ],
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S8",
+      "S9",
+      "S11"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": [
+      "acquirer_consolidator",
+      "investor_philanthropist"
+    ],
+    "notes": "Shared anchors are Patriciu's identity and architectural background. The short supplies the oil fortune, two-stage exit, banking/property allocation and newspaper ownership. The long omits that business bundle and adds architectural work, team philosophy and the concrete scholarship eligibility/payment model. No near-restated sentence or expanded short fact bundle remains."
+  },
+  "editorial_note": null,
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Rompetrol entrepreneur and investor",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Principal business ownership and later investment portfolio are directly documented."
+      },
+      "source_ids": [
+        "S2",
+        "S5"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Consistent direct biographical and official financial references."
+      },
+      "source_ids": [
+        "S2",
+        "S5"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "action": "correct_existing",
+      "existing_value": "Unknown",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Contemporaneous obituary and audited bank report confirm death."
+      },
+      "source_ids": [
+        "S5",
+        "S10"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "3",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Romanian public-radio obituary gives the exact birth date, consistent with the reference profile."
+      },
+      "source_ids": [
+        "S10",
+        "S12"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "August",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Romanian public-radio obituary gives the exact birth date, consistent with the reference profile."
+      },
+      "source_ids": [
+        "S10",
+        "S12"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1950",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Romanian public-radio obituary gives the exact birth date, consistent with the reference profile."
+      },
+      "source_ids": [
+        "S10",
+        "S12"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "19",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Contemporaneous public-radio report gives the exact date; audited bank accounts corroborate month and year."
+      },
+      "source_ids": [
+        "S5",
+        "S10"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "August",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Contemporaneous public-radio report gives the exact date; audited bank accounts corroborate month and year."
+      },
+      "source_ids": [
+        "S5",
+        "S10"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "2014",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Contemporaneous public-radio report gives the exact date; audited bank accounts corroborate month and year."
+      },
+      "source_ids": [
+        "S5",
+        "S10"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://www.forbes.com/profile/dinu-patriciu/",
+      "verification": "Exact Romanian Rompetrol entrepreneur; full dated profile body read in the indexed extract. Dynamic age and stale holdings are not imported.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Exact person and business match corroborated by primary ownership records."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dinu_Patriciu",
+      "verification": "Article expressly identifies birth name Dan Costache Patriciu and matches the Romanian architect, oil businessman and death chronology.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Exact full-name bridge independently corroborated by the primary cash offer and public-radio obituary."
+      },
+      "source_ids": [
+        "S12",
+        "S2",
+        "S10"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0368",
+      "name": "Oil refining",
+      "summary": "Controlled and expanded Rompetrol's major refinery platform, which created his principal fortune.",
+      "relationship_type": "controlling_owner",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Identifies the specific industrial wealth source without redundant broad energy tags.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Direct sources establish the substantial, historically defining activity and satisfy the active semantic contract."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "tag_id": "tag_0211",
+      "name": "Banking",
+      "summary": "Retained majority beneficial ownership of Liberty Bank at death, following the controlling acquisition.",
+      "relationship_type": "controlling_owner",
+      "temporal_scope": "historical",
+      "taxonomy_value": "Groups substantial banking principals, not incidental minority investors.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Direct sources establish the substantial, historically defining activity and satisfy the active semantic contract."
+      },
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "tag_id": "tag_0209",
+      "name": "Architect",
+      "summary": "Sustained design practice and architecture teaching, with numerous executed Romanian and UAE projects.",
+      "relationship_type": "practitioner",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Captures a defining practised profession distinct from property ownership.",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Direct sources establish the substantial, historically defining activity and satisfy the active semantic contract."
+      },
+      "source_ids": [
+        "S2",
+        "S8"
+      ]
+    },
+    {
+      "tag_id": "tag_0983",
+      "name": "Property developer",
+      "summary": "Worked as developer and architect on Romanian projects and built a substantial property platform.",
+      "relationship_type": "developer",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Distinguishes hands-on development from merely holding buildings.",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Direct sources establish the substantial, historically defining activity and satisfy the active semantic contract."
+      },
+      "source_ids": [
+        "S2",
+        "S7"
+      ]
+    },
+    {
+      "tag_id": "tag_0936",
+      "name": "Newspaper publishing",
+      "summary": "Owned and expanded Adevarul Holding over six years before its sale.",
+      "relationship_type": "controlling_owner",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Captures substantial publishing control without tagging every individual title.",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Direct sources establish the substantial, historically defining activity and satisfy the active semantic contract."
+      },
+      "source_ids": [
+        "S1",
+        "S11"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/profile/dinu-patriciu/",
+      "title": "Dinu Patriciu profile",
+      "publisher": "Forbes, last updated 1 March 2012",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed profile body read. Oil-sale fortune, reinvestment and self-made classification; verified profile only. Its 2008 sale shorthand conflicts with stronger 2007/2009 transaction history, and its dynamic age ignores death."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://media.hotnews.ro/assets/document/2008/12/19/5273513-0.pdf",
+      "title": "Recommended Cash Offer for Fabian Romania",
+      "publisher": "Black Sea Global Properties / Fabian Romania, 19 December 2008",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant pp.1-2 and 7-9 read. Exact full name, sole RPH ownership, Rompetrol development, cash property acquisition, architectural teaching and executed UAE/Romanian projects."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.rompetrol.com/ro/cine-suntem/istorie/istoria-grupului",
+      "title": "Group history",
+      "publisher": "Rompetrol",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full 1998-2009 timeline read: investor acquisition, holding formation, refinery and distribution expansion, and two-stage KazMunayGas acquisition. Original state company existed before Patriciu."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.rompetrol.com/mediaroom/press-releases/kmg-international-rompetrol-part-of-kazmunaygas-for-15-years-id-1782-cmsid-471",
+      "title": "Rompetrol, part of KazMunayGas for 15 years",
+      "publisher": "KMG International, 18 November 2022",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant announcement read. Confirms 75% transaction in 2007 and remaining 25% in June 2009; later KMG investments are excluded from his achievements."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://libertybank.ge/_cdn/19/56/aft0PvfKP0WiiYPTHaDJXQ/2014.pdf",
+      "title": "2014 consolidated financial statements",
+      "publisher": "JSC Liberty Bank, audited by Ernst & Young",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Printed p.6 explicitly identifies him as majority beneficial owner at his August 2014 death. September control sale followed death. Bank assets are not personal net wealth; note also discloses encumbered shares."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.economica.net/afacerile-lui-patriciu-care-au-ramas-in-viata_86194.html",
+      "title": "Patriciu's surviving businesses",
+      "publisher": "Economica, 19 August 2014",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article read. Property and banking named the most important remaining businesses; property disposals and other smaller ventures separated from the former oil core."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.economica.net/cine-administreaza-imperiul-imobiliar-creat-de-dinu-patriciu-in-romania_93372.html",
+      "title": "Management of Patriciu's Romanian property portfolio",
+      "publisher": "Economica, 18 December 2014",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant article read. Substantial retained Romanian property, prior DPGS acquisitions and professional management; refinancing and later manager acquisitions are not treated as his personal actions."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://revista22.ro/opinii/dinu-patriciu-in-dialog-cu-gabriela-adamesteanu/nimeni-nu-mi-a-facut-cadou-nimic",
+      "title": "Interview with Gabriela Adamesteanu",
+      "publisher": "Revista 22, 23 June 2004",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full interview read. Personal account connects architecture to organising teams; acknowledges father's oil profession. His contested legal and political arguments are not adopted as findings."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.uauim.ro/anunturi/burse-fundatia-dinu-patriciu/",
+      "title": "Scholarships for students",
+      "publisher": "Ion Mincu University, foundation programme director's letter, 25 March 2008",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full letter read. Academic and financial eligibility, monthly support over university year and possible renewal."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.politicaromaneasca.ro/stiri/dinu-patriciu-a-murit-id17721.html",
+      "title": "Dinu Patriciu has died",
+      "publisher": "Radio Romania, 19 August 2014",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant obituary read. Exact real name, birth date and death date. Its compressed company history and fortune figures are not used."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.forbes.ro/dinu-patriciu_0_5926-54140",
+      "title": "Dinu Patriciu: investments in conservation",
+      "publisher": "Forbes Romania, 10 December 2012",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article read. Media acquisition and six-year expansion, completed 2012 sale, retail failures and continuing property restructuring. Historical facts only."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://en.wikipedia.org/wiki/Dinu_Patriciu",
+      "title": "Dinu Patriciu",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant public profile read for exact-name match and orientation; sensitive claims and contradictory net-worth statements are not imported."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Research date 1 October 2026. Terminal wealth assessment is immediately before his death on 19 August 2014, not today's estate or the 2012 Forbes snapshot.",
+    "The canonical full name is retained; Dinu is the well-established public alias. Age 64 in the source is consistent with age at death but is attached to a later export date. It is not treated as a live age. No independent Eleni ownership bridge was needed to overcome the unusually exact primary name match; that relationship remains input context only.",
+    "Terminal Diversified rests on independently material banking and property interests plus explicit contemporary comparative reporting. Neither gross portfolio values nor the bank's deposits/assets measure his personal equity. Specific estate allocation and retained net weights remain incomplete.",
+    "The Investor relationship is inferred from ownership, sustained post-sale acquisitions/disposals and delegated management. It is not inferred from wealth sector or the absence of a job. Historical Rompetrol Founder/Operator labels would misrepresent the complete exit.",
+    "Broad self-made is supported positively by his acquired and developed oil core. His father's oil career and his own architecture earnings do not independently settle whether material family capital or privileged access enabled the launch; neither starting subtype is imported.",
+    "Full Forbes body was available through its indexed page extract, while direct and tollbit opens were intermittent. The exact profile is verified; its 2008 sale year and dynamic age are rejected in favour of primary transaction and death sources.",
+    "All supported person-relevant social types were searched, including Instagram, LinkedIn, Facebook, Twitter, Youtube, Personal Website and TikTok. Vimeo and Flickr results were third-party institutional media. No controlled personal or estate account was verified; TikTok access is robot-blocked. Trip Advisor and Zillow have no relevant professional fit.",
+    "Company Website was assessed. Rompetrol remains official but was completely sold, and no verified current personal holding-company website was established. No company link is proposed as a substitute for a personal profile.",
+    "Place of birth is not proposed from the tertiary profile alone. No additional citizenship or residence is inferred from offices, treatment abroad or business locations.",
+    "Architecture and property development are separate practised dimensions, supported by project evidence. Oil refining, Banking and Newspaper publishing each reflect substantial control. Failed retail and smaller aviation, exploration and gambling holdings are left in research context instead of inflating the tag set.",
+    "Sensitive legal disputes and family/health material encountered during research are excluded from published biography. No acquittal, conviction or allegation is asserted; state-origin industrial assets are not confused with inherited private assets.",
+    "The pair shares only identity and architecture. The long adds specific work, management philosophy and scholarship mechanics while omitting the short's oil-sale and investment bundle."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent reviewed the primary bank ownership, terminal portfolio, architecture biography, direct interview and scholarship letter; approved four wealth fields and complementary 50/105-word pair. Strict owner-input editorial validation passed before completion. Nothing applied live."
+  },
+  "biography": {
+    "plain_text": "Dinu Patriciu was a Romanian businessman who built his fortune by acquiring and expanding Rompetrol into an international oil group. He sold the business to Kazakhstan's KazMunayGas in two stages, then invested in European property and Georgian banking. Trained as an architect, he also became a prominent Romanian newspaper proprietor.",
+    "html": "<p>Dinu Patriciu was a Romanian businessman who built his fortune by acquiring and expanding Rompetrol into an international oil group. He sold the business to Kazakhstan's KazMunayGas in two stages, then invested in European property and Georgian banking. Trained as an architect, he also became a prominent Romanian newspaper proprietor.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Primary ownership and transaction history support the core; contemporary portfolio and publishing reporting support the secondary dimensions."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S11"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Dinu Patriciu regarded architecture as preparation for organising teams, a conviction he carried into business. He taught at Bucharest's Ion Mincu Institute while maintaining a design practice, and worked on offices and residential developments in the United Arab Emirates. In Romania, his projects included designing the Ministry of Culture's headquarters and developing premises for the national lottery.\n\nEducation also became the focus of his charitable foundation. Its Invent Your Future programme offered scholarships to students who combined strong academic results with limited family means. Support was paid monthly throughout the university year, with the possibility of renewal, helping recipients meet the continuing costs of study.",
+    "html": "<p>Dinu Patriciu regarded architecture as preparation for organising teams, a conviction he carried into business. He taught at Bucharest's Ion Mincu Institute while maintaining a design practice, and worked on offices and residential developments in the United Arab Emirates. In Romania, his projects included designing the Ministry of Culture's headquarters and developing premises for the national lottery.</p>\r\n<p>Education also became the focus of his charitable foundation. Its Invent Your Future programme offered scholarships to students who combined strong academic results with limited family means. Support was paid monthly throughout the university year, with the possibility of renewal, helping recipients meet the continuing costs of study.</p>\r\n",
+    "word_count": 105,
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Direct interview, formal offer biography and university-hosted foundation letter support the distinct professional and educational profile."
+    },
+    "source_ids": [
+      "S2",
+      "S8",
+      "S9"
+    ]
+  }
+}

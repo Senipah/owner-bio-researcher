@@ -41,6 +41,58 @@ def _calibration() -> dict:
     return json.loads(CALIBRATION.read_text(encoding="utf-8"))
 
 
+def _approved_sparse_dossier() -> dict:
+    dossier = _calibration()
+    dossier["owner"]["person_id"] = 2758
+    dossier["owner"]["display_name"] = "Audrey Ann Kaufman"
+    dossier["biography_exception"] = "audrey-kaufman-sparse-profile-2026-10-01"
+    for field in ("biography", "long_biography", "biography_brief", "editorial_assessment"):
+        dossier[field] = None
+    dossier["proposed_details"] = []
+    dossier["editorial_note"] = {
+        "plain_text": "Public evidence securely identifies this owner but does not establish enough relevant personal history to support complementary biographies. Verified details remain available for review under the explicit approval.",
+        "confidence": {"score": 90, "band": "high", "reason": "Evidence reviewed."},
+        "source_ids": [dossier["sources"][0]["id"]],
+    }
+    return dossier
+
+
+def test_approved_sparse_profile_validates_and_audits(tmp_path: Path) -> None:
+    dossier = _approved_sparse_dossier()
+    result = _validate(tmp_path, dossier, strict=True)
+    assert result.returncode == 0, result.stdout + result.stderr
+    scripts = str(SKILL_ROOT / "scripts")
+    sys.path.insert(0, scripts)
+    try:
+        from audit_biography_corpus import _load_people
+        path = tmp_path / "2758.research.json"
+        path.write_text(json.dumps(dossier), encoding="utf-8")
+        assert _load_people(tmp_path) == ([], [])
+        dossier["owner"]["person_id"] = 999999
+        path.write_text(json.dumps(dossier), encoding="utf-8")
+        assert _load_people(tmp_path)[1]
+    finally:
+        sys.path.remove(scripts)
+
+
+@pytest.mark.parametrize("mutation", ["other_owner", "no_reference", "bad_reference", "biography_proposal", "empty_note", "weak_identity"])
+def test_sparse_exception_cannot_bypass_other_requirements(tmp_path: Path, mutation: str) -> None:
+    dossier = _approved_sparse_dossier()
+    if mutation == "other_owner":
+        dossier["owner"]["person_id"] = 999999
+    elif mutation == "no_reference":
+        dossier.pop("biography_exception")
+    elif mutation == "bad_reference":
+        dossier["biography_exception"] = "unapproved"
+    elif mutation == "biography_proposal":
+        dossier["proposed_details"] = [{"field": "biography", "value": "clear"}]
+    elif mutation == "empty_note":
+        dossier["editorial_note"]["plain_text"] = ""
+    else:
+        dossier["owner"]["identity_confidence"] = {"score": 60, "band": "low", "reason": "Uncertain identity"}
+    assert _validate(tmp_path, dossier, strict=True).returncode != 0
+
+
 def _set_short_biography(dossier: dict, plain: str) -> None:
     dossier["biography"]["plain_text"] = plain
     dossier["biography"]["html"] = f"<p>{plain}</p>\r\n"

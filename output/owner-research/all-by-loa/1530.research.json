@@ -1,0 +1,1313 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1530,
+    "display_name": "Dr. Giampiero Moretti",
+    "identity_confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "The primary Florida tax order identifies Italian Dr. Moretti as owner of Fifty-One in 1993; the independent SunChaser build story identifies that vessel's original owner as a motor-racing driver and a fiftieth-birthday commissioner, with delivery delayed to 1991 and renaming Fifty-One. These agree with the input vessel, sale boundary, Italian geography and the MOMO founder's 1940 birth and racing identity. Gianpiero/Giampiero are documented spelling variants. The input's age 71 matches his age at death in 2012, but its 2020 as-of date is stale. No single vessel source supplies the full name and company together, so confidence remains below very high. The philosopher born in 1955 and Quebec architect are excluded."
+    }
+  },
+  "research_status": "complete",
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Forbes was searched first using both Giampiero and Gianpiero Moretti, then the MOMO business context. No attributable personal Forbes profile was found; Mario Moretti Polegato is a different entrepreneur."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "automotive",
+    "label": "Automotive",
+    "summary": "The principal original fortune arose from founding and building MOMO's steering-wheel and automotive-accessories business.",
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "MOMO's primary history establishes his creation and industrial expansion of the business. Contemporary reporting identifies the founding family's remaining 40 percent stake sold in 1996, along with the outside shareholder's 60 percent. The same report establishes a substantial international operating business. Founding, material family ownership and disposal together support personal economic participation in the original principal platform; enterprise revenue and family sale interests are not treated as his individual net worth. Later yacht-building activity does not displace the better-established original automotive core."
+    },
+    "source_ids": [
+      "S3",
+      "S5",
+      "S6"
+    ]
+  },
+  "primary_industry": {
+    "classification": "automotive",
+    "label": "Automotive",
+    "summary": "Automotive is the explicit origin-sector fallback at his death in January 2012; the principal terminal underlying assets are not established.",
+    "confidence": {
+      "score": 70,
+      "band": "medium",
+      "reason": "MOMO ownership and the presidency passed to Breed in 1996, and MomoDesign later belonged to Cattaneo. His later Mokart project demonstrates another venture but not its importance within his terminal retained wealth. Neither Sports nor Finance & Investments can be selected from one later business or unidentified sale proceeds. Automotive is the verified origin-sector fallback, not a claim that he still owned MOMO at death; no assets of later owners or descendants are attributed to him."
+    },
+    "source_ids": [
+      "S5",
+      "S7",
+      "S10",
+      "S11"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "He created and developed the principal automotive business; the evidence does not establish the precise financial role of his prosperous family in that launch.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "Primary company history, a friend's detailed account of the workshop start and contemporary sale reporting establish a new founder-built enterprise with material economic ownership. His family owned a pharmaceutical business, but no evidence transfers that enterprise to him as the principal fortune. A contemporary interview describes his wish to earn independently of family. This supports broad Self-made rather than inherited wealth. Independent start is not established merely by aspiration; advantaged start is plausible from family resources and early racing access, but the evidence does not sufficiently connect that family platform to the company's launch. The absence of a loan amount is not the deciding test: a concrete enabling family role remains unresolved."
+    },
+    "source_ids": [
+      "S3",
+      "S5",
+      "S6",
+      "S8"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Founder is the strongest terminal alternative, but the sold core business and incompletely documented later ventures do not establish his principal asset relationship at death.",
+    "confidence": {
+      "score": 58,
+      "band": "low",
+      "reason": "MOMO's full sale and transfer of its presidency are positively documented in 1996. Later Mokart founding is credible, yet the evidence does not establish that venture as the central retained wealth platform in 2012. The original founder label therefore cannot simply be carried forward after exit. Investor lacks documented sustained principal capital allocation, and Passive asset owner lacks positive evidence of delegated stewardship of identified material assets. No family investment office or inherited core is established. This is a substantive missing principal-asset premise, not a demand for exact valuations or an inference that he had ceased all business activity."
+    },
+    "source_ids": [
+      "S5",
+      "S7",
+      "S10",
+      "S11"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "Italian automotive entrepreneur and endurance racing driver Gianpiero Moretti founded MOMO.",
+    "defining_work": "He turned a steering wheel developed for his own racing into an international automotive-accessories business.",
+    "formative_context": "He came from a prosperous Milanese family with pharmaceutical-business interests and studied political science at Pavia.",
+    "decisive_moment": "He championed Ferrari's 333 SP sports prototype, which he later drove to major endurance-racing victories.",
+    "enduring_dimensions": [
+      "MOMO expanded from racing steering wheels into alloy wheels and equipment for road cars before the family sold its remaining stake.",
+      "His 1998 season brought victories at Daytona, Sebring and Watkins Glen, followed by retirement from competitive driving.",
+      "His garage spaghetti dinners welcomed rivals and journalists into the racing paddock."
+    ],
+    "character_detail": "Cooking for guests was part of his social life at race meetings.",
+    "opening_options": [
+      {
+        "mode": "decisive_event",
+        "angle": "Open with his part in persuading Ferrari to develop the 333 SP, then follow the racing result."
+      },
+      {
+        "mode": "defining_achievement",
+        "angle": "Begin with the three major endurance-race victories, then show the competitor and paddock host behind them."
+      }
+    ],
+    "excluded_transient_context": [
+      "Vessel ownership and build details",
+      "Corporate turnover or sale stakes presented as personal net worth",
+      "Unverified terminal asset allocation",
+      "Family wealth treated as proven inherited property",
+      "Namesake social accounts"
+    ],
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S8"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 4,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "decision_then_consequence",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "The two shared anchors are MOMO founder and racing-driver identity. The short alone gives prosperous family context, the product expansion and the 1996 family stake sale. The long deliberately omits that commercial chronology and adds the Ferrari prototype initiative, earlier Porsche competition, the three-race winning season, retirement and garage cooking. It would lose the entire racing and social account if reduced to the short. Barbara Burns is identified by her personal working relationship, not as a publisher citation; her recollection characterises a concrete hospitality practice. Paragraph two changes from competition to paddock life without a generic later-philanthropy transition. All events are historical and independent of vessel relationships."
+  },
+  "editorial_note": null,
+  "biography": {
+    "plain_text": "Gianpiero Moretti was an Italian entrepreneur and racing driver who founded MOMO, the international automotive accessories business. Born into a prosperous Milanese family, he built the company around steering wheels before expanding into alloy wheels and road-car equipment. His family sold its remaining MOMO stake to Breed Technologies in 1996.",
+    "html": "<p>Gianpiero Moretti was an Italian entrepreneur and racing driver who founded MOMO, the international automotive accessories business. Born into a prosperous Milanese family, he built the company around steering wheels before expanding into alloy wheels and road-car equipment. His family sold its remaining MOMO stake to Breed Technologies in 1996.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Primary corporate history establishes founder and products; the firsthand interview establishes prosperous Milan background; contemporary reporting establishes the remaining family stake sale."
+    },
+    "source_ids": [
+      "S3",
+      "S5",
+      "S8"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Automotive entrepreneur and MOMO founder Gianpiero Moretti helped persuade Ferrari to build the 333 SP, a sports prototype intended for endurance racing. He had spent much of his own racing career in Porsches, yet wanted to compete again in a Ferrari. In 1998 he shared victories at Daytona, Sebring and Watkins Glen, completing a sweep of three major American endurance races before finally retiring from driving.\n\nThe paddock also knew Moretti as a host. He cooked spaghetti in the garage for competitors and journalists, turning race meetings into informal gatherings. His public-relations colleague Barbara Burns remembered that these dinners made guests feel included in his life.",
+    "html": "<p>Automotive entrepreneur and MOMO founder Gianpiero Moretti helped persuade Ferrari to build the 333 SP, a sports prototype intended for endurance racing. He had spent much of his own racing career in Porsches, yet wanted to compete again in a Ferrari. In 1998 he shared victories at Daytona, Sebring and Watkins Glen, completing a sweep of three major American endurance races before finally retiring from driving.</p>\r\n<p>The paddock also knew Moretti as a host. He cooked spaghetti in the garage for competitors and journalists, turning race meetings into informal gatherings. His public-relations colleague Barbara Burns remembered that these dinners made guests feel included in his life.</p>\r\n",
+    "word_count": 106,
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "IMSA's official Hall of Fame account confirms the prototype initiative, racing record, retirement and Barbara Burns's direct recollection of paddock dinners; Moretti's interview supports the Ferrari preference."
+    },
+    "source_ids": [
+      "S4",
+      "S8"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "MOMO founder and racing driver",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "The official manufacturer and championship archive independently identify both defining roles."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Official personal history consistently identifies him with male pronouns."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Milan",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "The signed racing retrospective gives Milan as his birthplace; the reference biography agrees."
+      },
+      "source_ids": [
+        "S9",
+        "S10"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1940",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 88,
+        "band": "high",
+        "reason": "The signed retrospective gives 1940, supported by the independent official IMSA age at death and friend's account. ACO instead gives 15 November 1944; that date conflicts with the convergent 71-at-death evidence. Exact day/month are withheld."
+      },
+      "source_ids": [
+        "S1",
+        "S4",
+        "S9",
+        "S10",
+        "S12"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "14",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "The friend's published account and racing retrospective agree on 14 January 2012."
+      },
+      "source_ids": [
+        "S6",
+        "S9"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "January",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "The friend's published account and racing retrospective agree on 14 January 2012."
+      },
+      "source_ids": [
+        "S6",
+        "S9"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "2012",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "The official IMSA history and contemporary obituary agree."
+      },
+      "source_ids": [
+        "S4",
+        "S9",
+        "S12"
+      ]
+    },
+    {
+      "field": "secondary_nationality",
+      "value": "Swiss",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 80,
+        "band": "medium",
+        "reason": "The interview profile explicitly states that he held a Swiss passport; this is citizenship evidence rather than inference from residence or ancestry."
+      },
+      "source_ids": [
+        "S8"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "action": "correct_existing",
+      "existing_value": "Unknown",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Death in January 2012 is directly corroborated by the championship archive and the friend's account; the input's 71-year age is stale."
+      },
+      "source_ids": [
+        "S4",
+        "S6",
+        "S9"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gianpiero_Moretti",
+      "action": "add",
+      "verification": "Exact racing-driver and MOMO-founder article, independently cross-checked with company and championship sources; the philosopher's Italian article is excluded.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Exact corroborated person article."
+      },
+      "source_ids": [
+        "S3",
+        "S4",
+        "S10"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://momo.com/it-it/chi-siamo/",
+      "action": "add",
+      "verification": "Official company history explicitly identifies him as founder. Historical founder affiliation is the reason for this company-type link; it does not imply retained ownership.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Direct official founder history."
+      },
+      "source_ids": [
+        "S3"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0259",
+      "name": "Automotive components",
+      "summary": "Founded and built a material manufacturer of steering wheels, alloy wheels and automotive accessories.",
+      "relationship_type": "founder",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "The literal operating specialism is more informative than a broad automotive label.",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Primary manufacturer history and contemporary ownership/sale reporting establish a defining industrial business."
+      },
+      "source_ids": [
+        "S3",
+        "S5"
+      ]
+    },
+    {
+      "tag_id": "tag_0989",
+      "name": "Racing driver",
+      "summary": "Sustained competitive driver with major international endurance victories.",
+      "relationship_type": "professional",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Identifies his practiced public role, distinct from owning an automotive supplier.",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "IMSA documents a twenty-year career and major wins, beyond sponsorship or recreation."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "tag_id": "tag_1957",
+      "name": "Endurance racing",
+      "summary": "A defining competitor in international sports-car endurance races.",
+      "relationship_type": "participant",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Supplies the specific sporting discipline; the broader Motorsport tag would duplicate it.",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "The official championship archive records Daytona, Sebring and Watkins Glen wins and the long competition career."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "field": "wealth_relationship",
+      "value": "Founder",
+      "reason": "Later Mokart founding is documented, but its retained ownership and importance to his principal terminal wealth are not established after the full MOMO exit.",
+      "confidence": {
+        "score": 58,
+        "band": "low",
+        "reason": "Positive later venture evidence lacks the material terminal-asset premise."
+      },
+      "source_ids": [
+        "S5",
+        "S10",
+        "S11"
+      ]
+    },
+    {
+      "field": "Personal Website",
+      "value": "http://www.gianpieromoretti.it",
+      "reason": "The reference biography identifies a family-and-friends memorial launched in 2015, but the site was unavailable when checked; the similarly named .com site belongs to an architect.",
+      "confidence": {
+        "score": 62,
+        "band": "low",
+        "reason": "Historical attribution exists but present content and control cannot be verified."
+      },
+      "source_ids": [
+        "S10",
+        "S14"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "20",
+      "reason": "Motoremotion and reference biographies give 20 March 1940, while ACO gives 15 November 1944. The year 1940 is independently supported by death-age evidence, but the day and month remain withheld.",
+      "confidence": {
+        "score": 69,
+        "band": "low",
+        "reason": "The commonly published date conflicts with a different complete date in the official ACO obituary; exact day/month lack an independent resolution."
+      },
+      "source_ids": [
+        "S9",
+        "S10",
+        "S12"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "March",
+      "reason": "Motoremotion and reference biographies give 20 March 1940, while ACO gives 15 November 1944. The year 1940 is independently supported by death-age evidence, but the day and month remain withheld.",
+      "confidence": {
+        "score": 69,
+        "band": "low",
+        "reason": "The commonly published date conflicts with a different complete date in the official ACO obituary; exact day/month lack an independent resolution."
+      },
+      "source_ids": [
+        "S9",
+        "S10",
+        "S12"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.yachtbuyer.com/en/fleet/sunchaser-125-christensen",
+      "title": "SunChaser / Fifty One: build story",
+      "publisher": "YachtBuyer",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Direct full HTML body retrieved and read. Identifies former name Fifty One, Washington-built Christensen yacht delivered in 1991; original owner was a motor-racing driver, commissioning Fifty for his fiftieth birthday before fire delayed delivery and prompted renaming. Establishes independent occupation and age-era bridge, but does not give the owner's personal name. Input commencement in 1988 predates completion; the relationship may include commissioning and is not altered."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://floridarevenue.com/TaxLaw/Documents/B.W.%20Marine%2C%20Inc.%3B%20DOR%2002-2-FOF.pdf",
+      "title": "B.W. Marine Inc., DOR 02-2-FOF / DOAH 00-0012",
+      "publisher": "Florida Department of Revenue",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Primary PDF body read, indexes 24-25, findings 14-18. Identifies Italian Dr. Moretti as owner of Washington-built Fifty-One and a late-1993 agreement to sell. This supplies the surname, title, nationality, vessel and period bridge. It concerns a subsequent owner's tax case; criticisms of maintenance are irrelevant to the biography and are not repeated as personal allegations."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://momo.com/it-it/chi-siamo/",
+      "title": "Chi siamo: MOMO origins and development",
+      "publisher": "MOMO",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete official history directly read. Identifies Gianpiero Moretti as founder, a bespoke steering wheel in 1964, John Surtees's adoption and championship, subsequent industrialisation, expansion into road-car steering wheels and alloy wheels, and international equipment customers. Supports the defining automotive business, not his continued ownership."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.imsahalloffame.com/drivers/gianpiero-moretti/",
+      "title": "Gianpiero Moretti, IMSA Hall of Fame",
+      "publisher": "International Motor Sports Association",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete primary biography read. Confirms his 1978-1998 championship career, advocacy for Ferrari's 333 SP, more Porsche starts than Ferrari starts, 1998 Daytona/Sebring/Watkins Glen victories and retirement after Watkins Glen. Longtime public-relations representative Barbara Burns supplies firsthand recollections of garage spaghetti dinners for competitors and journalists. Records death in 2012 aged 71."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://archivio.unita.news/assets/derived/1996/04/17/issue_full.pdf",
+      "title": "La Momo passa agli americani della Breed, 17 April 1996",
+      "publisher": "l'Unita",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Direct PDF downloaded and full relevant news item extracted, PDF index 16. Reports sale of the Moretti family's 40 percent and Mercury Holding's 60 percent to Breed, with terms undisclosed. Founder Giampiero Moretti left the presidency, which passed to Charles Speranzella. Group 1995 sales of 104 billion lire and around 500 employees establish enterprise scale, not individual wealth or proceeds. Contemporary acquisition reporting is preferred to later sources that date the final sale to 1995."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://kerbmotori.com/wp-content/uploads/2016/01/KERB-MOTORI-N.2-2013-LOW-RES.pdf",
+      "title": "Gaulden Memories: Cesare Martinengo's recollections, KERB 2.13",
+      "publisher": "KERB Motori / Cesare Martinengo",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Direct PDF downloaded; full PDF index 72 / printed page 73 read. Friend and later MOMO export manager recalls early steering-wheel development with Giorgio Pianta and production in a rented room at a barber's shop. States Moretti's family owned a pharmaceutical business and confirms death on 14 January 2012 aged 71. Does not establish inherited ownership or a family-funded launch. Some mechanics differ from simplified corporate origin accounts; no unnecessary exact prototype sequence is asserted."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.ilgiornale.it/news/l-italia-nel-design-10-anni-avanti-tutti-i-concorrenti.html",
+      "title": "L'Italia? Nel design e 10 anni avanti a tutti i concorrenti",
+      "publisher": "il Giornale / Marco Cattaneo interview",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article directly retrieved and read. Cattaneo describes Moretti's prosperous Swiss family, his own recruitment into the small MOMO business, later commercial scale, Moretti's Baglietto acquisition, the 1996 Breed sale and Cattaneo's subsequent separate acquisition of the MomoDesign brand. This prevents attributing Cattaneo's later enterprise to Moretti."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://sportscardigest.com/gianpiero-moretti-witness-to-the-times/",
+      "title": "Gianpiero Moretti: Witness to the Times",
+      "publisher": "Sports Car Digest / Paolo D'Alessio interview",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete interview-profile body directly retrieved. Describes prosperous Milan background, political-science study at Pavia, a desire to avoid financial dependence on family, and early steering-wheel business. Explicitly says he had a Swiss passport in a passage contrasting citizenship with his role promoting Italian culture; this refers to the racing entrepreneur, not a yacht flag or namesake. Direct recollections discuss Ferrari. The family's actual launch contribution remains unspecified."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.motoremotion.it/2023/01/14/gianpiero-moretti-luomo-della-ferrari-333sp/",
+      "title": "Gianpiero Moretti, l'uomo della Ferrari 333SP, 14 January 2023",
+      "publisher": "Motoremotion / Massimo Campi",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Signed full retrospective directly read. Gives birth in Milan on 20 March 1940 and death there on 14 January 2012. Confirms the entrepreneur and racing identity, MOMO venture and Ferrari racing achievements. Converges with the friend's death-age account and official IMSA biography."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://en.wikipedia.org/wiki/Gianpiero_Moretti",
+      "title": "Gianpiero Moretti",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full English article directly read and Italian counterpart checked. Exact MOMO-founder/racing-driver identity, 20 March 1940 birth and 14 January 2012 death. Italian page describes later Mokart and Moretti Racing activities and a family-and-friends memorial domain launched in 2015. Used as a profile link and secondary lead; original-company sale and terminal wealth conclusions rely on stronger sources."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.mokart.it/wp/wp-content/uploads/2023/12/presentazione-new.pdf",
+      "title": "Enjoy the karting: Mokart presentation",
+      "publisher": "Mokart",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Indexed passages identify Moretti founding the karting venture in 1997 and the 1998 Daytona victory. Direct PDF now returns 404, so only supplementary historical lead evidence; no terminal ownership or wealth dominance inferred. The independently read reference biography also records the venture."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://www.24h-lemans.com/fr/actualites/gianpiero-moretti-1944-2012-5986",
+      "title": "Gianpiero Moretti obituary, January 2012",
+      "publisher": "Automobile Club de l'Ouest / 24 Heures du Mans",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Primary obituary body directly read. Confirms 14 January death, MOMO entrepreneurship, sale in 1996 and Ferrari prototype role. Both headline and body give 1944, with body specifying 15 November 1944. This conflicts with the signed retrospective's 20 March 1940 and independent death-at-71 accounts. The alternative date is recorded; exact birth day/month are withheld."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://ca.linkedin.com/in/gianpiero-moretti-0a08581b",
+      "title": "Gianpiero Moretti, Universite Laval",
+      "publisher": "LinkedIn",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Public indexed profile body identifies a Quebec architecture academic, with career and education incompatible with the deceased MOMO founder. Rejected namesake. The Giampiero spelling also returned a Pizzato industrial-sales professional and a Rome agent; neither is adopted."
+      ]
+    },
+    {
+      "id": "S14",
+      "url": "http://www.gianpieromoretti.it",
+      "title": "Historical memorial-domain access check",
+      "publisher": "Gianpiero Moretti memorial site",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Direct access attempts failed. Historical family attribution is present in the Italian reference biography, but current site content and control could not be verified. Kept only as a review candidate. The .com/about result identifies the unrelated Canadian architect and is excluded."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Research cutoff 30 September 2026; sources accessed 1 October 2026. For this deceased person, primary industry and wealth relationship refer to the terminal position in January 2012, not the activities or wealth of heirs and subsequent company owners.",
+    "Identity is convergent rather than based on one source supplying full name, company and vessel: Florida DOR establishes Dr. Moretti, Italian nationality, Fifty-One and late-1993 sale; the SunChaser build story establishes the racing-driver owner and fiftieth-birthday commission delayed into 1991. These align with the MOMO founder and the immutable vessel link. Input 1988 is earlier than completion; input age 71 as of 2020 is stale and is not used to calculate a birth date.",
+    "Gianpiero is the normal corporate and racing spelling; Giampiero is also used by contemporary reporting. Existing name and Dr. title are not overwritten. No medical profession is inferred from the honorific. The philosopher born in Rome in 1955, Quebec architect and living professional LinkedIn namesakes are different people.",
+    "The signed retrospective and reference biography give 20 March 1940, whereas the official ACO obituary gives 15 November 1944 in its full body. Official IMSA and the firsthand friend account give age 71 at death in 2012, independently supporting the stated 1940 year. The exact day/month are withheld as review candidates because that portion of the date conflict is unresolved.",
+    "Automotive is supported by a founded and substantially owned industrial platform. Its sales and the family's 40 percent disposal establish material operating scale and ownership without quantifying his individual stake or wealth. No enterprise total is treated as his net worth.",
+    "Broad Self-made rests on the positive creation, growth and ownership of MOMO. Wealthy family background and a pharmaceutical business are established; neither an inherited core nor the exact extent of materially enabling family support is established. The desire for financial independence is not proof that he started without substantial advantage.",
+    "The terminal sector uses the mandatory Automotive origin fallback. Full MOMO exit and presidency transfer are documented in 1996; later MomoDesign is Cattaneo's business. Mokart and racing ventures are positive later activity, but their ownership and scale within Moretti's 2012 assets are not established. Unknown relationship retains Founder as the strongest alternative without carrying forward a sold-company role.",
+    "The interview's Swiss passport statement explicitly concerns Moretti personally and contrasts nationality with his Italian cultural identity. It is not derived from Swiss family background or any vessel registration.",
+    "Forbes-first checks found no exact profile under either spelling. LinkedIn, Instagram and Personal Website were prioritised; Facebook, Twitter/X, Youtube and TikTok were then searched. No verified personal account was established. Corporate posts and historic racing footage are not personal channels; TikTok direct access is restricted.",
+    "Other supported link checks covered Wikipedia, Company Website, Vimeo, Flickr, Trip Advisor and Zillow. Historic Flickr photographs belong to photographers, not Moretti. The inaccessible memorial domain remains a candidate. The company history is proposed solely under Company Website because he founded MOMO, not as an indication of retained ownership.",
+    "Automotive components, Racing driver and Endurance racing capture separate industrial, practiced-role and sporting-discipline dimensions. Formula 1 is excluded: supplying drivers' equipment does not establish a defining competitive or governance F1 role. The broader Motorsport tag would overlap the narrower endurance discipline. Brief Baglietto ownership does not require an additional shipyard tag.",
+    "The short and long biographies are complementary historical accounts. The short reserves family background, product expansion and family stake disposal; the long supplies competition, prototype advocacy and social hospitality. Personal net worth and terminal holdings remain outside the prose."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person decision with parent-reviewed identity reasoning, independent four-field assessment and complementary biography pair. Explicit terminal sector fallback and relationship uncertainty remain. Exact birth day/month withheld after source conflict; year independently corroborated. Source bodies and access limits recorded. Only this dossier is written; no shared owner data or live website changes."
+  }
+}

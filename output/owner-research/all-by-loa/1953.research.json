@@ -1,0 +1,1209 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1953,
+    "display_name": "Urs Ernst Schwarzenbach",
+    "identity_confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Exact full name, existing identity page, Swiss nationality, banking and Dolder interests agree with primary corporate and UK registry records. IBM, Migros and engineering professionals sharing the name are different people."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    },
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ]
+  },
+  "research_status": "complete",
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Forbes was searched first using exact name and dedicated profile routes, followed by broader site-specific searches. No dedicated Forbes profile was found; other rich lists are not substituted."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Currency dealing and personally developed trading positions created the original fortune.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Independent financial reporting and his interview describe the actual trading gains and separate dealing business; later real assets were acquired with accumulated wealth. This is positive wealth attribution, not classification from a bank job."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Finance & Investments is an explicit origin-sector fallback as of 1 October 2026; the dominant current private sector cannot be established.",
+    "confidence": {
+      "score": 73,
+      "band": "medium",
+      "reason": "Primary accounts prove a materially retained Dolder stake and shareholder lending, alongside a documented property disposal and wider assets. Neither hotel prominence nor loan face value reliably ranks hospitality against remaining property, farms, art and financial investments. The fallback does not assert that currency trading still dominates, and company gross assets are not his net wealth."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S5",
+      "S11"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "He developed a separate trading fortune after his father supplied the initial investment capital.",
+    "confidence": {
+      "score": 79,
+      "band": "medium",
+      "reason": "His account explicitly links paternal seed funding to the start of personal speculation and greater risk capacity. The advantage was material to launching a separately developed fortune; evidence does not establish a transferred operating enterprise or family asset remaining the principal wealth core. The amount is not reliably verified, so the subtype remains medium confidence."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "investor",
+    "label": "Investor",
+    "summary": "He relates to the fortune through sustained allocation of his own capital across investments, including continued personal financing of the Dolder group.",
+    "confidence": {
+      "score": 79,
+      "band": "medium",
+      "reason": "This is a bounded current inference from longstanding personal investment activity, the 2025 sale of an owned property portfolio and personally documented lending decisions. It is not inferred from a title alone. Guy chairs Dolder and professionals run it; Urs remains principal shareholder and made a further loan waiver. Evidence supports an investor relationship despite uncertainty over the dominant sector."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "Swiss financier whose trading fortune financed a broad private portfolio.",
+    "defining_work": "Developed his own currency-dealing business and later became a major investor in hotels and property.",
+    "formative_context": "His father supplied initial trading capital, followed by his own banking experience and speculation.",
+    "decisive_moment": "Converted trading success into substantial private investments, including a controlling hotel interest.",
+    "enduring_dimensions": [
+      "A substantial art collection displayed within a working hotel",
+      "Polo team ownership and long-term support for elite showjumping"
+    ],
+    "character_detail": "Made acquired art accessible throughout hotel public spaces and provided an Olympic rider with horses and a training base.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Introduce the financier and the economic path from trading to later investments."
+      },
+      {
+        "mode": "public_contribution",
+        "angle": "Introduce the financier through the art collection he placed in a working hotel."
+      }
+    ],
+    "excluded_transient_context": [
+      "Personal vessel ownership",
+      "Net-worth rankings and current valuation estimates",
+      "Tax litigation and medical details",
+      "Royal social contacts",
+      "Unverified current residence"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S6",
+      "S7",
+      "S13"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "investor_philanthropist"
+    ],
+    "notes": "The short allocates trading origin, paternal launch capital, banking experience and later economic holdings. The long uses the hotel only as the setting for a distinct art-collecting dimension, then develops sustained equestrian ownership and patronage. Shared anchors are financier identity and the Dolder name; art-display choices and the rider's decade-long training relationship are long-only. The short stands alone as business identity. No yacht content, abstract closing synthesis or chronology padding."
+  },
+  "biography": {
+    "plain_text": "Urs Schwarzenbach is a Swiss financier who made his fortune in currency trading. His father supplied initial capital. After banking work in Zurich and London, he established his own dealing business. He later invested in hotels, property and farmland, becoming the majority shareholder and financial backer of Zurich's Dolder Grand.",
+    "html": "<p>Urs Schwarzenbach is a Swiss financier who made his fortune in currency trading. His father supplied initial capital. After banking work in Zurich and London, he established his own dealing business. He later invested in hotels, property and farmland, becoming the majority shareholder and financial backer of Zurich's Dolder Grand.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "The finance profile, attributed first-person seed account and primary hotel history support the durable business synopsis."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S13"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "At the Dolder Grand, financier Urs Schwarzenbach made his art collection part of a working hotel. He acquired paintings and sculptures over several decades before choosing to display them throughout its public spaces. Works by Andy Warhol and Joan Miró sit alongside a changing selection, allowing visitors to encounter the collection beyond a conventional gallery.\n\nHe also established the Black Bears polo team and supported showjumper Steve Guerdat. Schwarzenbach bought Nino des Buissonnets and made the horse available to Guerdat, who won individual Olympic gold in London. For a decade, the rider trained at Schwarzenbach's Swiss stable before acquiring his own premises.",
+    "html": "<p>At the Dolder Grand, financier Urs Schwarzenbach made his art collection part of a working hotel. He acquired paintings and sculptures over several decades before choosing to display them throughout its public spaces. Works by Andy Warhol and Joan Miró sit alongside a changing selection, allowing visitors to encounter the collection beyond a conventional gallery.</p>\r\n<p>He also established the Black Bears polo team and supported showjumper Steve Guerdat. Schwarzenbach bought Nino des Buissonnets and made the horse available to Guerdat, who won individual Olympic gold in London. For a decade, the rider trained at Schwarzenbach's Swiss stable before acquiring his own premises.</p>\r\n",
+    "word_count": 102,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Primary hotel collection account and participant interview establish the concrete art and equestrian dimensions; the profile confirms team founding."
+    },
+    "source_ids": [
+      "S1",
+      "S6",
+      "S7"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Financier and Dolder Grand investor",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Corporate history and financial reporting establish the defining identity."
+      },
+      "source_ids": [
+        "S1",
+        "S3",
+        "S13"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Direct personal profiles and primary biographical references consistently identify him."
+      },
+      "source_ids": [
+        "S1",
+        "S8"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "17",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "A contemporaneous birthday listing on 17 September 2018 celebrates his seventieth birthday, corroborating the exact reference date."
+      },
+      "source_ids": [
+        "S9",
+        "S10"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "September",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "UK officer filing explicitly gives month and year; birthday reporting agrees."
+      },
+      "source_ids": [
+        "S8",
+        "S9"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1948",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary officer record explicitly gives September 1948; contemporary birthday listing independently corroborates."
+      },
+      "source_ids": [
+        "S8",
+        "S9"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type": "Company Website",
+      "type_id": "14",
+      "url": "https://www.dolderhotelag.com/",
+      "action": "add",
+      "verification": "Official group website and current accounts identify his principal shareholding and continuing personal financing.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Direct ownership relationship is confirmed by the company's current primary accounts; this is appropriately classified as a company website, not a personal profile."
+      },
+      "source_ids": [
+        "S3",
+        "S4",
+        "S13"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0321",
+      "name": "Hotel operations",
+      "summary": "Controlling hotel owner who financed and directed a substantial transformation of the Dolder Grand; this is historically defining control rather than a passive minority hotel investment.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Primary architectural history establishes majority control, financing and strategic chairmanship; current accounts confirm retained principal economic interest."
+      },
+      "source_ids": [
+        "S3",
+        "S13"
+      ]
+    },
+    {
+      "tag_id": "tag_0018",
+      "name": "Art collector",
+      "summary": "Decades of collecting produced a notable rotating display throughout the Dolder Grand, a sustained and defining cultural identity.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Official collection account directly attributes acquisition and exhibition choices to him; exceeds casual purchase or sponsorship."
+      },
+      "source_ids": [
+        "S6"
+      ]
+    },
+    {
+      "tag_id": "tag_0969",
+      "name": "Polo",
+      "summary": "Established and owned the Black Bears polo team and competed as a substantial amateur player, a sustained sporting identity beyond attendance or sponsorship.",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Interview profile explicitly describes competitive amateur polo and founding his team in the 1980s; primary registry corroborates historical senior polo-club governance."
+      },
+      "source_ids": [
+        "S1",
+        "S8"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "type": "LinkedIn",
+      "url": "https://ch.linkedin.com/in/urs-e-schwarzenbach-0b728816b",
+      "confidence": {
+        "score": 65,
+        "band": "low",
+        "reason": "Exact initial, Zurich and Dolder affiliation fit, but the publicly indexed profile is sparse and direct access returns 999. No independent institutional backlink or sufficient personal detail confirms account control."
+      },
+      "reason": "Plausible public profile held for manual verification; not proposed for import.",
+      "source_ids": [
+        "S12"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Thalwil",
+      "confidence": {
+        "score": 65,
+        "band": "low",
+        "reason": "Reference page says Thalwil while Le Temps says born in Küsnacht; primary profile only establishes upbringing in Thalwil."
+      },
+      "reason": "Preserve geographic discrepancy rather than converting upbringing or civic origin into birthplace.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S10"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://hotelier.ch/blogs/coverstory/er-kam-aus-dem-nichts",
+      "title": "Er kam aus dem Nichts",
+      "publisher": "Hotelier, interview profile",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article read by HTTP. Personal account of trading success and later investment portfolio; identifies Black Bears founding and competitive polo. Undated body describes age 76, so its estimates and consular status are not treated as current."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.letemps.ch/suisse/mecene-zurichois-soutient-steve-guerdat",
+      "title": "Le mécène zurichois qui soutient Steve Guerdat",
+      "publisher": "Le Temps, Catherine Cossy, 9 August 2012",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant body read. Attributed first-person seed-capital account supports the family launch advantage; independently attributes fortune to currency dealing. Its Küsnacht birthplace conflicts with reference sources and is withheld."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://report.dolderhotelag.com/finanzen/anhang/",
+      "title": "Annual report 2025: financial notes",
+      "publisher": "Dolder Hotel AG",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full notes read. Principal-shareholder loans remain material and Urs personally waived CHF7.1 million in 2025; notes distinguish subordinated and ordinary loans. Figures establish retained economics, not personal net asset value or sector dominance."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://report.dolderhotelag.com/finanzen/gesellschaftsorgane/",
+      "title": "Annual report 2025: corporate bodies",
+      "publisher": "Dolder Hotel AG",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full page read. Guy is chair, Urs a director through 2028; management is delegated to André Meier and Markus Granelli."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://aporta-stiftung.ch/assets/medienmitteilung-augustinergasse.pdf",
+      "title": "Acquisition of historic Augustinergasse properties",
+      "publisher": "Dr. Stephan à Porta-Stiftung, 25 June 2025",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full one-page release read. Purchaser names Urs as seller of eight buildings; supports current personal capital-allocation evidence and prevents presenting the disposed properties as retained."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.dolderhotelag.com/app/uploads/2020/02/The-Dolder-Grand-Art-at-The-Dolder-Grand_EN-2.pdf",
+      "title": "Art at the Dolder Grand",
+      "publisher": "Dolder Grand, 6 December 2023",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant document read. Personally attributes decades of acquisitions and decision to display works to Urs; identifies public-space and rotating collection with Warhol and Miró examples."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.worldofshowjumping.com/WoSJ-Exclusive-interviews/New-chapter-for-Heidi-Mulari-after-17-years-with-Steve-Guerdat.html",
+      "title": "New chapter for Heidi Mulari after 17 years with Steve Guerdat",
+      "publisher": "World of Showjumping, 22 March 2022",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full interview read. Long-serving participant identifies horse purchase and allocation by Schwarzenbach, ten years at his stable, 2017 move and individual Olympic victory. Participant testimony is primary for these specific facts."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://find-and-update.company-information.service.gov.uk/officers/LWreYL1IH94ygPFqclt7uwwqrxg/appointments",
+      "title": "Urs Ernst Schwarzenbach officer appointments",
+      "publisher": "Companies House",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full record read. Explicit September 1948 and Swiss nationality; identifies historical polo-club and aviation appointments. Resigned posts are not presented as current. Residence entries are dated filing evidence."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.racingpost.com/news/des-lynam-is-among-those-with-reason-to-celebrate-aqB230s3svwb/",
+      "title": "Des Lynam is among those with reason to celebrate",
+      "publisher": "Racing Post, 17 September 2018",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full birthday list read. Urs turns seventy and is identified through his racehorse ownership; corroborates the exact date rather than merely calculating from an undated age."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://en.wikipedia.org/wiki/Urs_Schwarzenbach",
+      "title": "Urs Schwarzenbach",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full page and source links checked. Existing exact identity link is correct; primary sources independently establish the person. Uncited asset figures, stale legal amounts and precise birthplace are not automatically imported."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.bilanz.ch/unternehmen/die-welt-der-reichsten-urs-schwarzenbach-and-niklas-ostbergs/pbr4376",
+      "title": "News aus der Welt der Reichsten",
+      "publisher": "Bilanz, Stefan Lüscher, 26 August 2025",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full report read by HTTP. Describes reduced fortune, property disposal and ongoing hotel financing. Its proposed use of sale proceeds is speculation and not adopted as fact. Current evidence does not rank all private asset sectors."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://ch.linkedin.com/in/urs-e-schwarzenbach-0b728816b",
+      "title": "Urs E. Schwarzenbach: Dolder Hotel AG",
+      "publisher": "LinkedIn",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Sparse complete indexed public extract read; direct request returned 999. Exact initial, affiliation and city create a candidate, not sufficient verified account control."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://www.dolderhotelag.com/app/uploads/2023/08/The-Dolder-Grand-Architectural-History_ENG.pdf",
+      "title": "The Dolder Grand architectural history",
+      "publisher": "Dolder Grand, 23 August 2023",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant history read. Majority acquisition in 2001, his financing and strategic role in refurbishment establish controlling economic participation."
+      ]
+    },
+    {
+      "id": "S14",
+      "url": "https://www.srf.ch/news/schweiz/urs-e-schwarzenbach-bundesgericht-bestaetigt-millionen-busse-gegen-dolder-besitzer",
+      "title": "Bundesgericht bestätigt Millionen-Busse gegen Dolder-Besitzer",
+      "publisher": "SRF / awp-sda, 15 August 2024",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read for source context. Final VAT-evasion conviction and fine distinguished from earlier allegations; report says open tax issues were settled. No unsupported smuggling shorthand or litigation claim is placed in biographies."
+      ]
+    },
+    {
+      "id": "S15",
+      "url": "https://www.moneyhouse.ch/de/company/wohlfahrtsfonds-der-dolder-hotel-ag-10931257051",
+      "title": "Dolder welfare foundation register notices",
+      "publisher": "Moneyhouse reproducing SHAB",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Relevant full indexed notices read. 2025 notice retains Henley residence whereas other records report Switzerland; not grounds for an automatic residence correction. Welfare-fund assets are not personal wealth."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Research date 1 October 2026. No existing assigned dossier was present before saving. Immutable input and historical vessel association are unchanged.",
+    "Finance primary is a reporting fallback, explicitly scored below the origin field. The Dolder loans and equity are economically material but do not demonstrate dominance over all other current private assets; a complete balance sheet is not required for classification, but comparative centrality remains unresolved.",
+    "Investor is a permitted inference from continuing personal capital decisions and a sustained investment history. A board seat alone does not establish operating control, and Guy's family-office activities are not imported as Urs's mandate.",
+    "Paternal seed support is directly attributed in a reputable report of his own explanation. Specific online CHF100,000 claims were found only in weak republished material and excluded. No inherited business or principal transferred family wealth is established.",
+    "Birth month and year are primary-registry confirmed; exact birthday additionally has contemporaneous specialist press support. Input age at 2020 is not used to calculate a competing year. Birthplace is withheld because sources conflict between Thalwil and Küsnacht.",
+    "Residence is not corrected: UK input, historical Swiss relocation and conflicting later register entries do not establish a clear current primary residence. Secondary nationality was searched without reliable evidence; royal contacts and consular service imply no nationality or title.",
+    "Existing Wikipedia link is identity-verified and retained without re-proposing an existing type. Forbes-first and follow-up searches found no dedicated profile. LinkedIn candidate is below import threshold; IBM, Migros and inovus namesakes are excluded.",
+    "Instagram, Facebook, Twitter/X, YouTube, TikTok and personal-website searches produced no attributable personal account. Vimeo result was an organizer's film, not his channel; Flickr search found no qualifying profile. Company social accounts and fansites are not personal profiles; Trip Advisor and Zillow are not person-relevant here.",
+    "Tag review used only active semantic contracts. Hotel operations is justified by defining controlling investment and strategic refurbishment, Art collector by sustained notable collection, and Polo by founding/ownership and competitive practice. No general asset-management or incidental agriculture/aviation tag is inferred merely from a portfolio asset.",
+    "Legal source context is preserved: current final court outcome is distinct from older interview denials. Biographies focus on defining work and independently documented cultural/sporting activity rather than unrelated sensitive legal detail.",
+    "Hotelier's full article was read, but its age-based temporal cues make valuations historical. Bilanz's scrambled rich-list page was not decoded or used; only its accessible separate reported article was used. All proposal evidence is from substantive bodies, not discovery snippets alone."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent approved classifications, complementary 50/102-word pair and active tag rationale. Strict validation against immutable owner input passed; fallback, dated current evidence and account-verification limits are explicit."
+  },
+  "editorial_note": null
+}

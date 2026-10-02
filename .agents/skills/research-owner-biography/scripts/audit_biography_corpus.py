@@ -8,6 +8,8 @@ import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
+from validate_dossier import validate
+from src.editorial_exceptions import biographies_withheld
 
 from editorial_rules import (
     FORMULAIC_SECOND_PARAGRAPH_PATTERN,
@@ -42,6 +44,13 @@ def _load_people(directory: Path) -> tuple[list[dict[str, Any]], list[str]]:
             continue
         if dossier.get("record_type") != "person":
             continue
+        if dossier.get("biography_exception") is not None:
+            errors, warnings = validate(dossier)
+            problems.extend(f"{path.name}: {issue}" for issue in errors + warnings)
+            if errors or warnings:
+                continue
+            if biographies_withheld(dossier):
+                continue
         short = dossier.get("biography")
         long = dossier.get("long_biography")
         if not isinstance(short, dict) or not isinstance(long, dict):

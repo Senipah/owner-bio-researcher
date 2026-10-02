@@ -280,6 +280,32 @@ def test_selects_unique_current_owners_by_rank() -> None:
     assert [owner["person_id"] for owner in selected] == [10, 11]
 
 
+def test_sparse_approval_preserves_biographies_and_imports_verified_details() -> None:
+    document = new_document()
+    owner = _owner(2758, "Audrey Ann Kaufman", 1, include_long_biography=True)
+    owner["details"]["long_biography"]["value"] = "Existing longer biography"
+    document["owners"] = [owner]
+    dossier = _dossier(2758, "Audrey Ann Kaufman")
+    dossier["biography_exception"] = "audrey-kaufman-sparse-profile-2026-10-01"
+    for field in ("biography", "long_biography", "biography_brief", "editorial_assessment"):
+        dossier[field] = None
+    dossier["editorial_note"] = {"plain_text": "Verified identity; relevant public evidence does not support complementary biographies.", "source_ids": ["S1"], "confidence": {"score": 90}}
+    derived, report = compile_research_batch(
+        document, {2758: dossier}, {2758: Path("dossiers/2758.research.json")},
+        source_path="owners.json", limit=1, mark_ai_enriched=True,
+    )
+    result = derived["owners"][0]
+    assert result["details"]["biography"]["value"] == "Old"
+    assert result["details"]["long_biography"]["value"] == "Existing longer biography"
+    assert result["details"]["middle_names"]["value"] == "Example"
+    assert result["workflow"]["ai_enriched"] is True
+    assert result["ai_research"]["biography_exception"] == dossier["biography_exception"]
+    rendered = render_research_report(report)
+    assert "Biographies withheld by explicit approval" in rendered
+    assert dossier["editorial_note"]["plain_text"] in rendered
+    assert owner["details"]["middle_names"]["value"] == ""
+
+
 def test_selects_fully_ranked_owners_by_largest_current_loa() -> None:
     small = _owner(30, "Small", 3)
     large_second = _owner(20, "Large Second", 2)

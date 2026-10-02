@@ -1,0 +1,1256 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 2202,
+    "display_name": "Cem Uzan",
+    "identity_confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Distinctive full identity, Turkish nationality, age and family-business history agree with input. Historical Pearl hull ownership remains independently unconfirmed; hotel executive and other namesakes excluded."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "116": "Russian",
+        "4": "American",
+        "118": "Saudi Arabian",
+        "43": "Egyptian",
+        "52": "French",
+        "145": "Ukrainian",
+        "143": "Turkish",
+        "32": "Chinese",
+        "114": "Qatari",
+        "102": "Nigerian",
+        "133": "Swedish",
+        "65": "Indonesian",
+        "29": "Canadian",
+        "36": "Croatian",
+        "57": "Greek",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "22": "British",
+        "8": "Australian",
+        "92": "Mexican",
+        "100": "New Zealander",
+        "75": "Kazakhstanian",
+        "134": "Swiss",
+        "128": "Spanish",
+        "69": "Israeli",
+        "62": "Hungarian",
+        "122": "Singaporean",
+        "89": "Malaysian",
+        "70": "Italian",
+        "105": "Pakistani",
+        "55": "German",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "68": "Irish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "81": "Lebanese",
+        "25": "Bulgarian",
+        "9": "Austrian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "111": "Polish",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "16": "Belgian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "41": "Dutch",
+        "7": "Armenian",
+        "38": "Cypriot",
+        "135": "Syrian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "85": "Luxembourgish",
+        "120": "Serbian",
+        "3": "Algerian",
+        "107": "Panamamian",
+        "11": "Bahamanian",
+        "37": "Cuban",
+        "112": "Portuguese",
+        "123": "Slovakian",
+        "157": "Mon\u00e9gasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "113": "Puerto Rican",
+        "1": "Afghan",
+        "90": "Maltese",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "126": "South African",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "142": "Tunisian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "2": "Albanian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "66": "Iranian",
+        "15": "Belarussian",
+        "147": "Uzbekistanian",
+        "146": "Uruguayan",
+        "58": "Grenadian"
+      },
+      "secondary_nationality": {
+        "112": "Portuguese",
+        "147": "Uzbekistanian",
+        "75": "Kazakhstanian",
+        "135": "Syrian",
+        "55": "German",
+        "69": "Israeli",
+        "4": "American",
+        "22": "British",
+        "66": "Iranian",
+        "145": "Ukrainian",
+        "120": "Serbian",
+        "29": "Canadian",
+        "38": "Cypriot",
+        "52": "French",
+        "126": "South African",
+        "122": "Singaporean",
+        "128": "Spanish",
+        "90": "Maltese",
+        "134": "Swiss",
+        "8": "Australian",
+        "100": "New Zealander",
+        "11": "Bahamanian",
+        "113": "Puerto Rican",
+        "118": "Saudi Arabian",
+        "143": "Turkish",
+        "57": "Greek",
+        "146": "Uruguayan",
+        "116": "Russian",
+        "102": "Nigerian",
+        "107": "Panamamian",
+        "68": "Irish",
+        "9": "Austrian",
+        "70": "Italian",
+        "58": "Grenadian",
+        "142": "Tunisian",
+        "133": "Swedish",
+        "41": "Dutch",
+        "85": "Luxembourgish",
+        "62": "Hungarian",
+        "16": "Belgian",
+        "81": "Lebanese",
+        "2": "Albanian",
+        "111": "Polish",
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "43": "Egyptian",
+        "32": "Chinese",
+        "114": "Qatari",
+        "65": "Indonesian",
+        "36": "Croatian",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "92": "Mexican",
+        "89": "Malaysian",
+        "105": "Pakistani",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "25": "Bulgarian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "7": "Armenian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "3": "Algerian",
+        "37": "Cuban",
+        "123": "Slovakian",
+        "157": "Mon\u00e9gasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "1": "Afghan",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "15": "Belarussian"
+      },
+      "main_residence_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "98": "Israel",
+        "221": "United States",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "213": "Turkey",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "73": "United Kingdom",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "29": "Bahamas",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "131": "Monaco",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "157": "Netherlands",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "66": "Finland",
+        "180": "Romania",
+        "192": "Slovakia",
+        "187": "Sweden",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "secondary_residence_country": {
+        "131": "Monaco",
+        "221": "United States",
+        "187": "Sweden",
+        "73": "United Kingdom",
+        "148": "Mexico",
+        "2": "United Arab Emirates",
+        "157": "Netherlands",
+        "213": "Turkey",
+        "84": "Greece",
+        "53": "Germany",
+        "29": "Bahamas",
+        "66": "Finland",
+        "158": "Norway",
+        "163": "Oman",
+        "98": "Israel",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "93": "Croatia",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "180": "Romania",
+        "192": "Slovakia",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "181": "Russian Federation",
+        "221": "United States",
+        "223": "Uzbekistan",
+        "61": "Egypt",
+        "71": "France",
+        "118": "Kazakhstan",
+        "183": "Saudi Arabia",
+        "213": "Turkey",
+        "45": "China",
+        "178": "Qatar",
+        "200": "Syrian Arab Republic",
+        "187": "Sweden",
+        "169": "Pakistan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "90": "Hong Kong",
+        "241": "Azerbaijan",
+        "107": "Japan",
+        "99": "India",
+        "22": "Bahrain",
+        "73": "United Kingdom",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "102": "Iran",
+        "104": "Italy",
+        "64": "Spain",
+        "98": "Israel",
+        "83": "Equatorial Guinea",
+        "95": "Hungary",
+        "149": "Malaysia",
+        "19": "Belgium",
+        "236": "South Africa",
+        "52": "Czech Republic",
+        "188": "Singapore",
+        "55": "Denmark",
+        "101": "Iraq",
+        "192": "Slovakia",
+        "216": "Taiwan",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "40": "Switzerland",
+        "130": "Morocco",
+        "39": "Congo",
+        "157": "Netherlands",
+        "7": "Armenia",
+        "28": "Brazil",
+        "33": "Belarus",
+        "51": "Cyprus",
+        "129": "Libyan Arab Jamahiriya",
+        "210": "Turkmenistan",
+        "206": "Thailand",
+        "66": "Finland",
+        "180": "Romania",
+        "106": "Jordan",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "97": "Ireland",
+        "186": "Sudan",
+        "155": "Nigeria",
+        "48": "Cuba",
+        "246": "Serbia",
+        "175": "Portugal",
+        "131": "Monaco",
+        "190": "Slovenia",
+        "126": "Lithuania",
+        "211": "Tunisia",
+        "43": "Chile",
+        "173": "Puerto Rico",
+        "219": "Uganda",
+        "86": "Guatemala",
+        "60": "Estonia",
+        "144": "Malta",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "16": "Bosnia and Herzegovina",
+        "127": "Luxembourg",
+        "165": "Peru",
+        "164": "Panama",
+        "54": "Djibouti",
+        "41": "Cote d'Ivoire",
+        "75": "Georgia",
+        "233": "Yemen",
+        "57": "Dominican Republic",
+        "29": "Bahamas",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "128": "Latvia",
+        "123": "Sri Lanka",
+        "6": "Albania",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia",
+        "243": "Isle Of Man",
+        "17": "Barbados",
+        "222": "Uruguay",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "225": "Saint Vincent and the Grenadines",
+        "146": "Maldives",
+        "201": "Swaziland",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia"
+      },
+      "birth_month": {
+        "10": "October",
+        "7": "July",
+        "11": "November",
+        "12": "December",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "6": "June",
+        "1": "January",
+        "5": "May",
+        "4": "April",
+        "2": "February"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "4": "Unknown",
+        "2": "Dead",
+        "3": "Missing"
+      },
+      "death_month": {
+        "5": "May",
+        "6": "June",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "10": "October",
+        "7": "July",
+        "1": "January",
+        "2": "February",
+        "11": "November",
+        "12": "December",
+        "4": "April"
+      }
+    },
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ]
+  },
+  "research_status": "complete",
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 85,
+      "band": "high",
+      "reason": "Forbes-first searches found a full family-business feature, not an authenticated individual Forbes wealth profile. Father and family fortune listings are not Cem's profile."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "diversified",
+    "label": "Diversified",
+    "summary": "His accumulated position arose through personally owned interests in a family conglomerate spanning construction, finance, media, telecommunications and energy. Substantial media and telecom interests are independently bridged to him; no single wealth-creation sector is demonstrably dominant.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "Materiality inference, not a list of job titles: primary adjudicated holdings connect him personally to major telecom holding companies, while sustained responsibility for media and energy and the established family financial platform show separate economic activities. Family aggregate wealth is not assigned to him."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4",
+      "S5"
+    ]
+  },
+  "primary_industry": {
+    "classification": "diversified",
+    "label": "Diversified",
+    "summary": "Explicit origin-sector fallback. Current private holdings cannot be ranked after Turkish seizures and continuing French enforcement. This does not assert that his presently available assets form a balanced diversified portfolio.",
+    "confidence": {
+      "score": 72,
+      "band": "medium",
+      "reason": "2025 and 2026 enforcement evidence and the end of his identified French property-company presidency prevent carrying historical operating assets forward. Attached shares and litigation claims do not establish a new principal sector."
+    },
+    "source_ids": [
+      "S8",
+      "S9",
+      "S10",
+      "S11"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Broad family-transfer inference from personally material ownership in the operating group founded by his father, followed by expansion within that same core. No death transmission or precise gift instrument is asserted.",
+    "confidence": {
+      "score": 80,
+      "band": "medium",
+      "reason": "Founder-parent chronology plus documented personal holdings establishes privileged economic participation in the pre-existing family platform. Ordinary employment or marriage alone would not suffice. The original conveyance terms are unavailable; later contested intrafamily transfer allegations are not relied upon."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "A principal current private-wealth relationship is unresolved. Historical operating control is well documented, but current retained asset weight and an active allocation mandate are not.",
+    "confidence": {
+      "score": 58,
+      "band": "low",
+      "reason": "Operator is the strongest historical alternative, yet seizures and the ended French presidency interrupt continuity. Investor lacks sustained current deployment over principal assets; passive owner lacks proven retained principal holdings with positive delegation. Legal claims are not realised wealth."
+    },
+    "source_ids": [
+      "S8",
+      "S9",
+      "S10",
+      "S11"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "Turkish family-business entrepreneur and former party leader.",
+    "defining_work": "Expanded family interests through private television and mobile telecommunications.",
+    "formative_context": "Entered the operating platform established by his father Kemal.",
+    "decisive_moment": "Used overseas studios and satellite transmission to enter a market reserved domestically for state television.",
+    "enduring_dimensions": [
+      "Family conglomerate expansion.",
+      "Private broadcasting's technical and regulatory route.",
+      "Sustained football-club ownership and recruitment."
+    ],
+    "character_detail": "Backed ambitious player recruitment at \u0130stanbulspor.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Introduce the businessman and his inherited operating platform."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Explain the overseas transmission route that enabled private television."
+      }
+    ],
+    "excluded_transient_context": [
+      "Private vessel relationships.",
+      "Family gross wealth estimates treated as personal net wealth.",
+      "Political positions and gratuitous litigation detail.",
+      "Unverified birthplace and exact birthday."
+    ],
+    "source_ids": [
+      "S1",
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "decision_then_consequence",
+    "calibration_archetypes": [
+      "inherited_operator"
+    ],
+    "notes": "Short allocates identity, father-founded platform, diversified expansion and neutral takeover context. Long deepens the shared Star anchor through its technical/regulatory route, then adds independently allocated football ownership, named players and departure. It does not repeat the family-wealth bundle."
+  },
+  "biography": {
+    "plain_text": "Cem Uzan is a Turkish businessman and former political party leader who expanded his family's interests in banking, media and mobile telecommunications. His father Kemal established the group's original construction business. Uzan became prominent through Star television and Telsim, before the family's Turkish companies were taken over by state authorities amid banking and debt disputes.",
+    "html": "<p>Cem Uzan is a Turkish businessman and former political party leader who expanded his family's interests in banking, media and mobile telecommunications. His father Kemal established the group's original construction business. Uzan became prominent through Star television and Telsim, before the family's Turkish companies were taken over by state authorities amid banking and debt disputes.</p>\r\n",
+    "word_count": 55,
+    "confidence": {
+      "score": 89,
+      "band": "high",
+      "reason": "Full relevant historical accounts and institutional histories support these concrete facts. Adverse business context is neutrally limited to documented state takeovers."
+    },
+    "source_ids": [
+      "S1",
+      "S4",
+      "S5"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Media entrepreneur Cem Uzan entered television with Ahmet \u00d6zal while Turkey still reserved domestic broadcasting for the state. They used studios in Germany and satellite transmission to reach Turkish viewers. Star became the country's first private television channel, offering an alternative to the state broadcaster before private broadcasting was formally permitted.\n\nUzan also bought \u0130stanbulspor and financed recruitment intended to make it a major force in Turkish football. The club returned to the top division in 1995 and fielded players including Sergen Yal\u00e7\u0131n and Aykut Kocaman. He resigned as president three years later, after which the family's financial support began to diminish.",
+    "html": "<p>Media entrepreneur Cem Uzan entered television with Ahmet \u00d6zal while Turkey still reserved domestic broadcasting for the state. They used studios in Germany and satellite transmission to reach Turkish viewers. Star became the country's first private television channel, offering an alternative to the state broadcaster before private broadcasting was formally permitted.</p>\r\n<p>Uzan also bought \u0130stanbulspor and financed recruitment intended to make it a major force in Turkish football. The club returned to the top division in 1995 and fielded players including Sergen Yal\u00e7\u0131n and Aykut Kocaman. He resigned as president three years later, after which the family's financial support began to diminish.</p>\r\n",
+    "word_count": 102,
+    "confidence": {
+      "score": 89,
+      "band": "high",
+      "reason": "Full relevant historical accounts and institutional histories support these concrete facts. Adverse business context is neutrally limited to documented state takeovers."
+    },
+    "source_ids": [
+      "S1",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "middle_names",
+      "value": "Cengiz",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Full name in primary litigation record."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Businessman and former party leader",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Established public professional identity."
+      },
+      "source_ids": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Unambiguous public identification."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "December",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 85,
+        "band": "high",
+        "reason": "French corporate officer identity records month and year, consistent with established age."
+      },
+      "source_ids": [
+        "S11"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1960",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Corporate record and scholarly biography agree; input age is consistent."
+      },
+      "source_ids": [
+        "S4",
+        "S11"
+      ]
+    },
+    {
+      "field": "main_residence_country",
+      "value": "France",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 88,
+        "band": "high",
+        "reason": "Continuing French residence and enforcement reporting, not citizenship inference."
+      },
+      "source_ids": [
+        "S8",
+        "S9",
+        "S12"
+      ],
+      "existing_value": "Turkey"
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type": "Wikipedia",
+      "type_id": "10",
+      "url": "https://en.wikipedia.org/wiki/Cem_Uzan",
+      "action": "add",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact public identity article read; disputed individual facts are not adopted."
+      },
+      "source_ids": [
+        "S14"
+      ],
+      "verification": "Exact public identity article read; disputed individual facts are not adopted."
+    },
+    {
+      "type": "Twitter",
+      "type_id": "3",
+      "url": "https://x.com/CemCUzan",
+      "action": "add",
+      "confidence": {
+        "score": 85,
+        "band": "high",
+        "reason": "Independent fact-check authenticates this exact personal handle and cross-link history. Direct X access is restricted."
+      },
+      "source_ids": [
+        "S12"
+      ],
+      "verification": "Independent fact-check authenticates this exact personal handle and cross-link history. Direct X access is restricted."
+    },
+    {
+      "type": "Instagram",
+      "type_id": "9",
+      "url": "https://www.instagram.com/cemuzan/",
+      "action": "add",
+      "confidence": {
+        "score": 82,
+        "band": "medium",
+        "reason": "Fact-check identifies verified personal Instagram and its exact Twitter cross-link; indexed profile corroborates handle. Direct profile access failed."
+      },
+      "source_ids": [
+        "S12",
+        "S13"
+      ],
+      "verification": "Fact-check identifies verified personal Instagram and its exact Twitter cross-link; indexed profile corroborates handle. Direct profile access failed."
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0678",
+      "name": "Television broadcasting",
+      "summary": "Founded and controlled a substantial pioneering private television business; sustained defining commercial mandate.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Active contract met through substantial personal ownership or sustained senior governance, rather than fandom or a customer association."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S5"
+      ],
+      "temporal_scope": "former_but_defining"
+    },
+    {
+      "tag_id": "tag_0921",
+      "name": "Mobile telecommunications",
+      "summary": "Personally material ownership through telecom holdings and family control of Telsim; historical core economic interest.",
+      "confidence": {
+        "score": 88,
+        "band": "high",
+        "reason": "Active contract met through substantial personal ownership or sustained senior governance, rather than fandom or a customer association."
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "temporal_scope": "former_but_defining"
+    },
+    {
+      "tag_id": "tag_0076",
+      "name": "Football",
+      "summary": "Owned \u0130stanbulspor and served as president through a sustained recruitment and top-division period.",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Active contract met through substantial personal ownership or sustained senior governance, rather than fandom or a customer association."
+      },
+      "source_ids": [
+        "S6",
+        "S7"
+      ],
+      "temporal_scope": "former_but_defining"
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "field": "birth_day",
+      "value": "26",
+      "reason": "Widely repeated 26 December conflicts with 20 December in published accounts; month and year can stand independently.",
+      "confidence": {
+        "score": 65,
+        "band": "low",
+        "reason": "Widely repeated 26 December conflicts with 20 December in published accounts; month and year can stand independently."
+      },
+      "source_ids": [
+        "S11",
+        "S14"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Adapazar\u0131",
+      "reason": "Scholarly biography specifies Adapazar\u0131 but other identity accounts give Istanbul; withheld pending a stronger resolution.",
+      "confidence": {
+        "score": 65,
+        "band": "low",
+        "reason": "Scholarly biography specifies Adapazar\u0131 but other identity accounts give Istanbul; withheld pending a stronger resolution."
+      },
+      "source_ids": [
+        "S4",
+        "S14"
+      ]
+    },
+    {
+      "field": "Personal Website",
+      "value": "https://www.cemuzan.org/",
+      "reason": "Historically authenticated by independent fact-check, but current direct access failed. The different hyphenated domain is an advocacy site.",
+      "confidence": {
+        "score": 65,
+        "band": "low",
+        "reason": "Historically authenticated by independent fact-check, but current direct access failed. The different hyphenated domain is an advocacy site."
+      },
+      "source_ids": [
+        "S12"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/forbes/2002/0318/086.html",
+      "title": "Dial 'D' For Dummies, 18 March 2002",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed article body read, also at images.forbes.com/forbes/2002/0318/086_print.html. Father founded construction group; sons expanded banking, media and telecom. Cem and Ahmet \u00d6zal used German studios and satellites. Family fortune figures are collective, not Cem's personal balance sheet."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://syfert.com/federal/district/cases/274-f-supp-2d-481/motorola-credit-corp-v-uzan",
+      "title": "Motorola Credit Corp. v. Uzan, 274 F. Supp. 2d 481, 2003",
+      "publisher": "US District Court, reproduced by legal publisher",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant judgment sections read. Paragraphs 131 and 158-174 identify family mandates and personal holdings: Cem had 24% of Rumeli Telefon and 39.4% of Standart Telekom. Civil findings, not criminal convictions; remedies were partly revised on appeal."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/388/39/569803/",
+      "title": "Motorola Credit Corp. v. Uzan, 388 F.3d 39, 2004",
+      "publisher": "US Court of Appeals / Justia",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant appellate reasoning and disposition read. Liability context remains distinct from vacated or remanded constructive-trust, nonparty enforcement and punitive-damages remedies. No claim that every original remedy was affirmed."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://tr.boell.org/sites/default/files/2023-12/ays-tarihvakfi-18x24-boll-r7-eng.pdf",
+      "title": "Historical biographical study, Cem Uzan section pp. 74-76",
+      "publisher": "Heinrich B\u00f6ll Foundation / History Foundation",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant pp. 74-75 read from PDF. Father-founded group and later family succession, Cem's media and football development, and political career. Gives Adapazar\u0131 and 1960; birthplace conflict remains unresolved. Political positions excluded."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://turkey.mom-gmr.org/en/media/detail/outlet/star-tv/",
+      "title": "Star TV ownership history",
+      "publisher": "Media Ownership Monitor / Global Media Registry and Bianet",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. First private television channel founded by Cem Uzan and Ahmet \u00d6zal; family business roots, state takeover and later changes of ownership. Historical holdings are not current assets."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.istanbulsportd.org/istanbulspor/tarihce/",
+      "title": "\u0130stanbulspor history",
+      "publisher": "\u0130stanbulspor Supporters Association",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full institutional history read via public HTTP after browser/certificate failure. Cem acquisition, 1995 promotion, named recruits, October 1998 resignation and subsequent decline of family financial support. Company conversion in 1990 is not conflated with his later acquisition."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://ajansspor.com/haber/fatih-terim-uzayda-bile-sampiyonluk-ister-568216",
+      "title": "Ziya Do\u011fan interview, 6 April 2021",
+      "publisher": "Ajansspor",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant firsthand coaching interview read. Describes Cem's presidency, ambitious recruitment and the operating constraints on \u0130stanbulspor. Corroborates sustained personal football mandate."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.diken.com.tr/tmsf-cem-uzan-fransada-actigi-davayi-kaybetti/",
+      "title": "TMSF statement on French enforcement, 26 November 2025",
+      "publisher": "Diken",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article and quoted creditor statement read. Describes attachments of Cem's cash, account and electricity-company shares, separately from Hakan's Vertu shares. Creditor account of enforcement, not an independently inspected French judgment or a complete personal asset schedule."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.dunya.com/dunya/cem-uzan-paristeki-68-milyar-dolarlik-tazminat-davasini-kaybetti-haberi-818133",
+      "title": "French litigation and enforcement update, 13 March 2026",
+      "publisher": "D\u00fcnya",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed body read. Reports jurisdictional dismissal of a compensation action and February enforcement appeal. Jurisdiction is distinct from merits; continuing disputes and personally available wealth remain separate questions."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://ankahaber.net/haber/detay/cem_uzan_80_milyar_dolarlik_davada_esas_durusma_27_ekimde_pariste_gorulecek_308499",
+      "title": "Cem Uzan response on continuing French proceedings, 2026",
+      "publisher": "ANKA",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full report read. Subject says a further main hearing is scheduled for 27 October 2026. This is his account, not proof of a future outcome or a realised asset; prevents describing all litigation as concluded."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.societe.com/manager/Cem.UZAN.2Fq-nVxFpld.html",
+      "title": "Cem Uzan corporate officer record",
+      "publisher": "Societe.com",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full registry-derived body read: December 1960; no active offices listed. Raphael & Cie property-agency presidency ended July 2023. Former title does not establish present principal property ownership."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://teyit.org/analiz/cem-uzandan-turkiyeye-donus-tweeti-iddiasi",
+      "title": "Cem Uzan account authentication fact-check, 2019 with later updates",
+      "publisher": "Teyit",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed fact-check and updates read. Authentic personal Twitter CemCUzan, cross-linked verified Instagram, historical cemuzan.org website. Distinguishes impersonator and later family communications account from the personal account. Exact Facebook profile URL not independently recovered."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://instme.com/profile/cemuzan",
+      "title": "Indexed Cem Uzan Instagram profile",
+      "publisher": "Instme profile mirror",
+      "tier": 4,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Profile body read as corroboration only, including the matching CemCUzan Twitter cross-link. Independent Teyit attribution supplies authentication; mirror statistics and posts are not used as biographical evidence."
+      ]
+    },
+    {
+      "id": "S14",
+      "url": "https://en.wikipedia.org/wiki/Cem_Uzan",
+      "title": "Cem Uzan identity page",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full identity page read. Same Turkish businessman and former party leader. Profile link verified while conflicting birthplace and exact-day details are withheld; legal summary not substituted for primary court sources."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Research date 1 October 2026. Source input age, nationality and distinctive identity converge strongly; the exact historical Pearl hull bridge remains unconfirmed. The unrelated hospitality executive is excluded.",
+    "Origin Diversified is a positive personal-economic inference across material operating sectors. Primary direct stakes and control, not group gross asset totals, bridge his participation. Family-transfer inference concerns the father-created platform; no inheritance or contested later conveyance is asserted.",
+    "Current industry explicitly uses origin-sector fallback. Seized or attached assets cannot be treated as freely controlled investments; neither litigation demands nor nominal French corporate capital are realised personal wealth. Current principal relationship remains Unknown after testing Operator, Investor and Passive owner.",
+    "Legal sources are differentiated: 2003 US civil findings, partly revised 2004 remedies, Turkish state takeovers, 2025/26 enforcement reporting and the subject's claim of a further October hearing. These are not interchangeable criminal convictions, nor proof every case has ended. Biographies retain only directly relevant neutral takeover context.",
+    "Every person-relevant profile type was checked: Forbes, Wikipedia, LinkedIn, Facebook, Twitter/X, Instagram, Youtube, Vimeo, Flickr, TikTok and Personal Website. Wikipedia, exact Twitter and Instagram are proposed with access limits. Unrelated LinkedIn hospitality profiles, interview-host YouTube channels and fan accounts are excluded. No current Company Website relationship verified; Trip Advisor and Zillow are not relevant.",
+    "French residence is distinct from nationality; no French citizenship inferred. Birth month/year are supported independently, but conflicting birthplace and day remain review candidates. Historical personal website inaccessible currently.",
+    "Full relevant source bodies or complete relevant primary sections were read. Forbes indexed full article, PDF extraction and public HTTP club history supplied readable bodies where direct browser access failed. Source-derived prose is kept within each source's budget.",
+    "Minimum active contracts retain Television broadcasting, Mobile telecommunications and Football. These reflect personally material ownership or sustained senior governance. Banking and overlapping media labels add no necessary separately established cohort dimension; political activity is not tagged."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent approved identity, four classifications and complementary 55/102-word pair. Strict validation against immutable input passed without warnings. Current sector is explicit origin fallback and current relationship remains Unknown. No live changes."
+  },
+  "editorial_note": null
+}

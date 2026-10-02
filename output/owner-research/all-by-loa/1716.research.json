@@ -1,0 +1,1245 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1716,
+    "display_name": "Ghaith Rashad Pharaon",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The rare exact full name, Saudi nationality, Lebanon context and January 2017 relationship end agree with the industrialist. La Repubblica independently names him as Le Pharaon's owner and REDEC founder; company and registry records corroborate identity. His son Laith and other family shareholders remain separate."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Saudi industrialist Ghaith Rashad Pharaon.",
+    "defining_work": "Founded the construction company REDEC and developed international industrial interests including Attock.",
+    "formative_context": "Childhood in Paris during his father's diplomatic service, followed by schooling in Lebanon, Syria and Switzerland and American higher education.",
+    "decisive_moment": "Built a materially owned construction enterprise before broadening his international business activities.",
+    "enduring_dimensions": [
+      "Family connections brought access to influential business associates.",
+      "American bank acquisitions resulted in a civil penalty and permanent banking prohibition."
+    ],
+    "character_detail": "His upbringing joined diplomatic family connections with education across several countries.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Introduce the industrialist through his construction and petroleum enterprises."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Open with childhood in Paris during his father's diplomatic posting."
+      }
+    ],
+    "excluded_transient_context": [
+      "Vessel ownership",
+      "Estimated net worth",
+      "Disputed hotel-to-REDEC funding chronology",
+      "Current descendants' assets and holdings"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S5",
+      "S11"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 4,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "Short 53 establishes the Saudi industrialist, construction fortune, higher education and Attock businesses. Long 123 develops diplomatic childhood, influential contacts and the later administrative banking decision. It deliberately omits REDEC's formation, the Harvard qualification and the Attock bundle. Only identity and broad formative context overlap. The questionable hotel-financed launch sequence is excluded. Regulatory findings are attributed to the decision-maker and distinguished from unresolved criminal charges."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Forbes was searched first for exact Ghaith/Rashad Pharaon profiles. The 2008 fugitive-list article is about him but is not a personal Forbes profile. No qualifying profile was located."
+    }
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "REDEC founder and industrialist",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Documented company creation and industrial holdings establish this durable identity."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S11"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Consistent institutional and biographical identification."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "September",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Exact matched Companies House officer record gives September 1940."
+      },
+      "source_ids": [
+        "S7"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1940",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Exact matched Companies House officer record gives September 1940."
+      },
+      "source_ids": [
+        "S7"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "7",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 75,
+        "band": "medium",
+        "reason": "The matched personal reference article gives 7 September; the primary registry corroborates month and year but not day, so confidence is capped."
+      },
+      "source_ids": [
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "6",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Corporate board-change announcement specifies death on 6 January 2017 and agrees with the matched personal reference."
+      },
+      "source_ids": [
+        "S6",
+        "S8"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "January",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Corporate board-change announcement specifies death on 6 January 2017 and agrees with the matched personal reference."
+      },
+      "source_ids": [
+        "S6",
+        "S8"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "2017",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Corporate board-change announcement specifies death on 6 January 2017 and agrees with the matched personal reference."
+      },
+      "source_ids": [
+        "S6",
+        "S8"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "action": "correct_existing",
+      "existing_value": "Unknown",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official company memorial and contemporaneous corporate death announcement establish mortality."
+      },
+      "source_ids": [
+        "S2",
+        "S6"
+      ]
+    },
+    {
+      "field": "biography",
+      "value": "<p>Ghaith Rashad Pharaon was a Saudi industrialist who founded REDEC, building his fortune through construction before developing international business interests. He studied petroleum engineering and earned a Harvard MBA. His subsequent industrial ventures included Pakistan's Attock Group, whose businesses spanned petroleum, power and cement, and he remained Attock Petroleum's chairman until his death.</p>\r\n",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Supported complementary identity card; source field is blank."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S6",
+        "S11"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.arl.com.pk/",
+      "action": "add",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "The company's official memorial identifies him as founding chairman of the Attock Group."
+      },
+      "verification": "Official board page read in full. This is a historical company association, not a personal account or claim to current ownership.",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0529",
+      "name": "Heavy civil construction",
+      "summary": "Founded and materially owned REDEC, whose substantial infrastructure contracting created his industrial fortune.",
+      "relationship_type": "founder and controlling shareholder",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Connects owners with defining infrastructure-construction businesses, not isolated projects or passive investments.",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Personal 61% stake, attributed construction wealth and documented infrastructure works satisfy the active historical industry contract."
+      },
+      "source_ids": [
+        "S1",
+        "S11",
+        "S12"
+      ]
+    },
+    {
+      "tag_id": "tag_0368",
+      "name": "Oil refining",
+      "summary": "Built and led the Attock industrial group with a substantial refining operation over many years.",
+      "relationship_type": "former controlling investor and group founder",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Connects sustained refining-industry principals; the documented historical control is distinct from unproved terminal beneficial ownership.",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Official group history and the court's historic holding chain establish a defining refining involvement, rather than incidental exposure."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1716",
+      "title": "Immutable owner inventory: 1716 Ghaith Rashad Pharaon",
+      "publisher": "Repository export",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Saudi Arabian, Lebanon residence, existing matched Wikipedia link; age 76 assessed in 2020 is stale. Historical Victory and Le Pharaon, latter ending January 2017. Blank biography and missing personal dates; inventory preserved."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://irp.fas.org/congress/1992_rpt/bcci/06early.htm",
+      "title": "The BCCI Affair: Ghaith Pharaon and the NBG takeover, 1992",
+      "publisher": "U.S. Senate report / FAS archive",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant body read, especially paragraphs184-188. Father royal physician and diplomat; childhood Paris, schooling Lebanon/Syria/Switzerland; U.S. petroleum engineering and Harvard MBA. Family funds and opportunities, Adham/Abedi introduction and REDEC construction success as foundation of fortune. Its hotel-funded REDEC launch chronology is questionable against the independently documented 1966 incorporation; that causal claim is excluded. Nominee bank interests are distinguished from personal assets."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.arl.com.pk/board/",
+      "title": "Board: memorial to founder chairman Dr Ghaith R. Pharaon",
+      "publisher": "Attock Refinery",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Official memorial describes founder chairman and international industrial interests in petroleum, power, chemicals, property and cement. Distinguishes current sons' board roles and professional group CEO. No automatic personal ownership claim from group scale."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://apl.com.pk/wp-content/uploads/2024/02/PG2016.pdf",
+      "title": "Annual report 2016",
+      "publisher": "Attock Petroleum",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "PDF text read: group overview, Ghaith's August 2016 chairman review and shareholding schedule. Describes petroleum group operations and continued chairmanship. Direct register records Ghaith one share, versus large Pharaon Investment Group and Attock company holdings. No unsupported look-through attribution to his personal wealth."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://caselaw.shc.gov.pk/caselaw/view-file/MTg4MQ==",
+      "title": "Privatisation dispute: Attock consortium and BayView ownership",
+      "publisher": "High Court of Sindh",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant court body read, including the conclusion at paragraph 214. Prima facie finding: Ghaith fully owned BayView at the statement of qualification, with later transfer to children without commission consent. BayView owned Attock Oil, which held major refining and oilfield interests. Counsel's other allegations are not treated as adjudicated facts; an interim court conclusion is labelled as such."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.federalreserve.gov/boarddocs/press/enforcement/1997/19970204/",
+      "title": "Final decision, prohibition and civil money penalty, 4 February 1997",
+      "publisher": "Federal Reserve Board",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full official notice read. USD37 million civil penalty and permanent U.S. banking prohibition following nineteen-day administrative hearing. Found secret BCCI nominee activity in Independence Bank's 1985 acquisition. Counsel participated. Separate federal/state criminal indictments were unresolved; this is not a criminal conviction."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.marketscreener.com/quote/stock/ATTOCK-PETROLEUM-LIMITED-6499062/news/Attock-Petroleum-Limited-Announces-Board-Changes-35217779/",
+      "title": "Attock Petroleum announces board changes, 26 January 2017",
+      "publisher": "S&P Capital IQ / MarketScreener",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed corporate announcement read: Ghaith chairman died 6 January 2017; Laith succeeds effective 27 January. Direct page retrieval includes large navigation and is not needed to infer any current family wealth."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://find-and-update.company-information.service.gov.uk/officers/3E3Vjhj_Z3sjQ_GOzROjUCYmsuE/appointments",
+      "title": "Ghaith R PHARAON: appointments",
+      "publisher": "Companies House",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full primary registry page read. September 1940 birth month/year, Saudi Arabian, historical Attock Oil director. Exact day is not supplied. Personal correspondence details are not reproduced."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://en.wikipedia.org/wiki/Ghaith_Pharaon",
+      "title": "Ghaith Pharaon",
+      "publisher": "Wikipedia",
+      "tier": 4,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full matched personal article read. Exact full name; 7 September 1940 and 6 January 2017, Beirut death. Existing link valid. Primary sources take precedence for legal findings and ownership; unsourced degree, birthplace and wealth claims are not imported."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://napoli.repubblica.it/cronaca/2021/01/15/news/yacht-282613822/",
+      "title": "Le Pharaon at Marina di Stabia",
+      "publisher": "La Repubblica",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed article body read: names Saudi REDEC founder Ghaith Pharaon as the historical owner and records death in 2017. Strong vessel-era identity bridge; dates are not used to overwrite relationships and ownership stays out of biographies."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.forbes.com/2008/08/27/legal-crime-fbi-biz-cz_nv_0827fugitives_slide.html",
+      "title": "Fugitives list, 27 August 2008: Ghaith Pharaon",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Relevant complete indexed entry read during Forbes-first search: historic BCCI allegations, civil fine, hotel and Attock activities. An editorial article is not an exact Forbes profile. Primary court/company evidence supersedes loose personal-ownership descriptions."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.upi.com/amp/Archives/1986/02/13/Giant-Saudi-company-to-restructure-debt/2799508654800/",
+      "title": "Giant Saudi company to restructure debt, 13 February 1986",
+      "publisher": "United Press International",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant indexed article text read; direct page returned 403. REDEC established January 1966, 61% personally owned by Ghaith with remainder held by family. Corporate debt restructuring and other separately structured international holdings. Establishes personal material operating asset; corporate liabilities and turnover are not assigned personally."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://www.latimes.com/archives/la-xpm-1985-10-08-fi-15487-story.html",
+      "title": "Profile of Ghaith Pharaon's industrial business, 8 October 1985",
+      "publisher": "Los Angeles Times",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Relevant indexed body read. REDEC undertook substantial Saudi sewer, drainage and gas infrastructure projects."
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Terminal assets and role",
+      "detail": "Current classifications refer to his January 2017 death, not descendants' assets today. The affirmative 2007 BayView transfer prevents automatic attribution of Attock subsidiaries. A2016 chairman mandate and one direct share are insufficient to establish his principal remaining personal asset relationship. Origin-sector fallback and Unknown relationship are independent decisions."
+    },
+    {
+      "topic": "Family starting position",
+      "detail": "The Senate describes inherited funds and opportunities; neither amount nor transfer instrument is established. The separate, personally majority-owned construction enterprise supports an advantaged build. Mixed remains the strongest alternative if an independently material transferred fortune is later established; the report is not treated as proof of a testamentary inheritance at launch."
+    },
+    {
+      "topic": "Conflicting startup chronology",
+      "detail": "The Senate's hotel-profit-before-REDEC narrative is inconsistent with contemporary UPI's January 1966 incorporation and BCCI's later foundation. The hotel causal story has been removed from biographies and classification reasoning. Compatible independently corroborated construction, family and education facts remain."
+    },
+    {
+      "topic": "Birth details and mortality",
+      "detail": "Primary registry verifies September 1940; day7 is reference-only and therefore75 confidence. Riyadh appears in weak derivative profiles but is withheld, as is birth country absent robust birthplace evidence. Input age assessed in 2020 is not used. Death6January 2017 is corroborated by the corporate announcement."
+    },
+    {
+      "topic": "Personal profile checks",
+      "detail": "Forbes exact profile searched first; only articles found. Existing Wikipedia checked and retained. LinkedIn, Instagram, Personal Website, Facebook, Twitter/X, YouTube, TikTok, Vimeo, Flickr, Trip Advisor and Zillow checked by exact-name platform searches. Results were third-party commentary/photos rather than authenticated personal accounts. No personal profile proposed. Official Attock company site is proposed as historical association only."
+    },
+    {
+      "topic": "Legal evidence limits",
+      "detail": "The 1997 Federal Reserve ruling was an administrative civil decision, not a criminal conviction. Separate criminal charges remained unresolved in the cited record. The Sindh conclusion is expressly prima facie in the privatisation case, not a finding on unrelated allegations. No later guilt or descendant liability is inferred."
+    },
+    {
+      "topic": "Access and tag restraint",
+      "detail": "Government, company, registry and annual report bodies were read. Corporate death notice, UPI, Forbes, La Repubblica and historical press were read in indexed text; direct UPI403 is retained. Refining and heavy civil construction are defining historical industries. Family, unrelated corporate assets and generic wealthy-person tags are excluded."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal dossier after parent pre-save review. Four independent HNWI assessments distinguish historical creation from the post-transfer terminal portfolio. Pair 53/123 is complementary; unresolved chronology and legal distinctions are explicit. No live changes."
+  },
+  "wealth_creation_industry": {
+    "classification": "construction_engineering",
+    "label": "Construction & Engineering",
+    "summary": "REDEC's construction business was the principal documented foundation of his industrial fortune.",
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "The Senate report expressly connects REDEC's success with his substantial fortune, and contemporary UPI coverage documents his personal 61% stake rather than merely a corporate office. His construction enterprise therefore supplies both the personal economic link and material wealth-creation mechanism. Earlier land investing and hotel activity were important, but do not displace the specifically attributed construction core. Oil and cement were later material enterprises. BCCI nominee bank assets are not counted as wholly personal assets. The Senate's specific hotel-profit startup chronology conflicts with REDEC's 1966 founding and is not relied upon."
+    },
+    "source_ids": [
+      "S1",
+      "S11",
+      "S12"
+    ]
+  },
+  "primary_industry": {
+    "classification": "construction_engineering",
+    "label": "Construction & Engineering",
+    "summary": "Explicit origin-sector fallback for the terminal lifetime portfolio in January 2017.",
+    "confidence": {
+      "score": 74,
+      "band": "medium",
+      "reason": "Current means at death. Attock remained a substantial energy and cement group and he remained chairman, but the Sindh High Court prima facie finding records transfer of his BayView/Attock holding to his children in 2007. The 2016 share register records only one direct APL share; the large holding-company stakes cannot automatically be assigned to him. These positive counter-indications prevent equating group assets with his terminal personal wealth. No sufficiently material retained private portfolio establishes Energy, Manufacturing, Real Estate or Diversified instead. The verified construction origin is therefore the mandatory disclosed fallback, not a claim that he still principally held construction assets."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S6",
+      "S11"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "Built a separate construction fortune with material family financial and social advantages.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "The Senate report explicitly describes funds and opportunities from his father, a royal physician and diplomat, and explains access to influential business associates. This is a materially advantaged platform, not merely education or ordinary third-party fundraising. Separately, founding REDEC and his documented 61% ownership establish personal built wealth. Mixed is the strongest alternative because funds were received from family, but the evidence does not establish a separately material inherited asset base alongside the created enterprise. Nor is there evidence that REDEC itself was an inherited operating company. The transfer amount and legal instrument remain unknown; a testamentary inheritance at the company's launch is not assumed. The broad built-wealth conclusion survives removal of the disputed hotel funding story."
+    },
+    "source_ids": [
+      "S1",
+      "S11"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "His terminal relationship to the principal remaining personal assets is not established after the family holding transfer.",
+    "confidence": {
+      "score": 55,
+      "band": "low",
+      "reason": "Founder describes his historical REDEC and Attock roles, and the 2016 report confirms continued chairmanship. However, the affirmative BayView transfer to children prevents treating those roles as proof that the group's core remained his principal personal asset. His one disclosed direct APL share does not establish that premise. Investor or Family office principal would require clearer evidence that he directed a principal retained personal portfolio or the relevant family investment structure; the reviewed material does not establish that relationship. This is a specific post-transfer economic gap, not a requirement for an exact valuation or a claim that he owned nothing."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S6"
+    ]
+  },
+  "biography": {
+    "plain_text": "Ghaith Rashad Pharaon was a Saudi industrialist who founded REDEC, building his fortune through construction before developing international business interests. He studied petroleum engineering and earned a Harvard MBA. His subsequent industrial ventures included Pakistan's Attock Group, whose businesses spanned petroleum, power and cement, and he remained Attock Petroleum's chairman until his death.",
+    "html": "<p>Ghaith Rashad Pharaon was a Saudi industrialist who founded REDEC, building his fortune through construction before developing international business interests. He studied petroleum engineering and earned a Harvard MBA. His subsequent industrial ventures included Pakistan's Attock Group, whose businesses spanned petroleum, power and cement, and he remained Attock Petroleum's chairman until his death.</p>\r\n",
+    "word_count": 53,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "The complementary texts use verified institutional and contemporary evidence, excluding the disputed startup chronology, unproven criminal guilt, vessel history and family asset attribution."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S6",
+      "S11"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Saudi businessman Ghaith Pharaon spent part of his childhood in Paris while his father, Rashad, served as a Saudi ambassador. A physician who became close to the kingdom's founder, his father gave the family influential connections. Pharaon also attended schools in Lebanon, Syria and Switzerland. His contacts included Kamal Adham, who introduced him to BCCI founder Agha Hasan Abedi.\n\nHis American bank acquisitions later brought lasting regulatory consequences. In 1997, the Federal Reserve imposed a $37 million civil penalty and permanently barred him from U.S. banking after finding that he had secretly acted for BCCI in buying Independence Bank of Encino. The decision followed an administrative hearing in which his lawyers participated; it was separate from the unresolved criminal charges against him.",
+    "html": "<p>Saudi businessman Ghaith Pharaon spent part of his childhood in Paris while his father, Rashad, served as a Saudi ambassador. A physician who became close to the kingdom's founder, his father gave the family influential connections. Pharaon also attended schools in Lebanon, Syria and Switzerland. His contacts included Kamal Adham, who introduced him to BCCI founder Agha Hasan Abedi.</p>\r\n<p>His American bank acquisitions later brought lasting regulatory consequences. In 1997, the Federal Reserve imposed a $37 million civil penalty and permanently barred him from U.S. banking after finding that he had secretly acted for BCCI in buying Independence Bank of Encino. The decision followed an administrative hearing in which his lawyers participated; it was separate from the unresolved criminal charges against him.</p>\r\n",
+    "word_count": 123,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "The complementary texts use verified institutional and contemporary evidence, excluding the disputed startup chronology, unproven criminal guilt, vessel history and family asset attribution."
+    },
+    "source_ids": [
+      "S1",
+      "S5",
+      "S8"
+    ]
+  }
+}

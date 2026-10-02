@@ -1,0 +1,1235 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1618,
+    "display_name": "King Haakon VII of Norway",
+    "identity_confidence": {
+      "score": 100,
+      "band": "very_high",
+      "reason": "The distinctive regnal name, Norway and historical Norge relationship identify the monarch who lived from 1872 to 1957. The Royal Court independently documents his receipt of Norge and succession by Olav in 1957. The modern Crown Prince or King Haakon is a different person. The input birth country is an identifiable factual error, not an identity conflict."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "middle_names",
+      "last_name",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "last_name",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Haakon VII, Danish-born King of Norway, reigned from 1905 until 1957.",
+    "defining_work": "Constitutional monarchy grounded in parliamentary government, and national resistance to German occupation.",
+    "formative_context": "Born Prince Carl into the Danish royal family, trained in the Danish navy and married Britain's Princess Maud.",
+    "decisive_moment": "Refusal to accept a German demand for a government led by Vidkun Quisling.",
+    "enduring_dimensions": [
+      "Insistence on a referendum before accepting the Norwegian throne.",
+      "Respect for parliamentary majorities, illustrated by the invitation to Labour's Christopher Hornsrud.",
+      "Exile with the Norwegian government in Britain and resistance broadcasts."
+    ],
+    "character_detail": "He offered abdication rather than accept Quisling while leaving ministers responsible for their own decision.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Constitutional king and his practice of respecting elected government."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Refusal of the German demand to install Quisling."
+      }
+    ],
+    "excluded_transient_context": [
+      "Current royal-family accounts and descendants' wealth",
+      "Vessel ownership, names, dimensions and dates",
+      "Uncertain private fortune estimates and classifications",
+      "State-versus-private asset deliberations"
+    ],
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "decision_then_consequence",
+    "calibration_archetypes": [
+      "royal_public_office"
+    ],
+    "notes": "The shared anchor is Haakon's identity as Norway's king. The short owns Danish background, naval training, marriage, referendum, election and choice of name. The long deliberately omits that formation bundle and adds two distinct decisions: parliamentary government formation and refusal of imposed wartime government, followed by exile broadcasts. Reducing it to the short would lose both governing practice and wartime consequence. The German demand, his ministers' decision and Haakon's conditional abdication are explicitly distinguished; no asset or wealth inference enters either text."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Exact regnal-name and Forbes profile-domain searches were performed first. Forbes coverage of Nordic leadership was found, but no personal Forbes profile for the historical monarch was identified."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The private royal inheritance is established, but the underlying sector that originally created the transferred capital is not. Finance & Investments is the strongest alternative, describing later investment of that capital.",
+    "confidence": {
+      "score": 60,
+      "band": "low",
+      "reason": "Reporting traces the private fortune to Danish and British royal inheritances and gifts, including Maud's money inherited by Haakon. The subsequent portfolio is documented but does not establish the economic source of its seed fortune. Real Estate was tested against personal residences; those gifts and domestic use do not establish a principal property enterprise. Diversified would require evidence that several sectors materially created the original fortune, not simply a later stock list. Direct evidence, reasoned inference and less-specific alternatives therefore leave the creation-sector premise unresolved. This is not an inference from royal title or Norway's economy."
+    },
+    "source_ids": [
+      "S3",
+      "S5",
+      "S6"
+    ]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Finance & Investments is inferred for his principal identifiable private wealth at death: a substantial inherited overseas securities portfolio that subsequently passed to Olav.",
+    "confidence": {
+      "score": 76,
+      "band": "medium",
+      "reason": "The detailed historical account identifies privately inherited capital, a portfolio spread across unrelated overseas companies, Haakon's direction to invest abroad and the fortune's later succession to his son. Separate reporting corroborates a material inherited financial fund through the royal succession. This supports a continuing core financial portfolio, independently of state properties or isolated domestic residences. The classification describes financial investment holdings rather than any one issuer's industry, and is a terminal-lifetime inference, not a claim to a 1957 audited balance sheet. Original royal capital creation remains unresolved; later portfolio stewardship is better evidenced. Modern descendants' balances and holdings are not attributed to him."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "dynastic_royal",
+    "label": "Dynastic / royal",
+    "summary": "Private family inheritances and gifts tied to Danish, British and Norwegian royal status explain his access to substantial personal wealth.",
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Historical financial reporting expressly attributes private money to royal-family inheritance, including Haakon's receipt of Maud's estate. The Royal Court independently identifies the coronation villa given to the couple as private property. Thus private economic benefit, rather than sovereign control alone, is positively established. Inherited and Marriage / family transfer were considered; the more informative mechanism is the interlocking royal dynasties and status-based gifts. No self-created business mechanism is asserted. Reported exact inheritance amounts differ and are omitted."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S5",
+      "S6"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "royal_beneficiary",
+    "label": "Royal beneficiary",
+    "summary": "Royal beneficiary is inferred for his terminal lifetime relationship to private inherited capital and royal gifts.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "The private inheritance that passed through Haakon to Olav and the personally gifted residence establish substantial personal benefit attributable to royal status. They are separate from Bygdo, which the Royal Court identifies as state-owned. Investor was tested against the reported overseas investment direction, but that alone does not establish sustained personal allocation as the principal practiced role. Passive asset owner was also considered: a historic funds manager is named, but terminal delegation is not sufficiently described to replace the positively evidenced royal relationship. Trustee or custodian would misdescribe the private assets, although it can describe official state-property use. The terminal relationship is inferred from continuity of the inherited fortune, not modern descendants' roles."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "biography": {
+    "plain_text": "Haakon VII was the Danish-born King of Norway from 1905 until his death in 1957. A trained naval officer and husband of Britain's Princess Maud, he accepted the throne after insisting on a referendum. Parliament elected him following Norway's separation from Sweden, and he adopted the historic royal name Haakon.",
+    "html": "<p>Haakon VII was the Danish-born King of Norway from 1905 until his death in 1957. A trained naval officer and husband of Britain's Princess Maud, he accepted the throne after insisting on a referendum. Parliament elected him following Norway's separation from Sweden, and he adopted the historic royal name Haakon.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The Royal Court's detailed biography directly supports the selected facts, with the authored national encyclopedia corroborating identity, chronology and constitutional public role."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Haakon VII, Norway's constitutional king, insisted that elected representatives should govern. When Labour became the largest parliamentary party in 1928, he invited Christopher Hornsrud to form a government despite pressure to choose the Agrarian Party. His commitment to parliamentary rules extended to respecting Cabinet decisions and avoiding identification with a single party.\n\nWhen Germany invaded in 1940, he refused its demand that Vidkun Quisling head a new government. Haakon told his ministers he would abdicate if they accepted that demand, while leaving their decision to them. He subsequently joined the government in exile in Britain, where his radio broadcasts became a rallying point for Norwegian resistance.",
+    "html": "<p>Haakon VII, Norway's constitutional king, insisted that elected representatives should govern. When Labour became the largest parliamentary party in 1928, he invited Christopher Hornsrud to form a government despite pressure to choose the Agrarian Party. His commitment to parliamentary rules extended to respecting Cabinet decisions and avoiding identification with a single party.</p>\r\n<p>When Germany invaded in 1940, he refused its demand that Vidkun Quisling head a new government. Haakon told his ministers he would abdicate if they accepted that demand, while leaving their decision to them. He subsequently joined the government in exile in Britain, where his radio broadcasts became a rallying point for Norwegian resistance.</p>\r\n",
+    "word_count": 106,
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The Royal Court's detailed biography directly supports the selected facts, with the authored national encyclopedia corroborating identity, chronology and constitutional public role."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "King of Norway (1905-1957)",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The Royal Court's biography and the national encyclopedia directly establish this biographical fact."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The Royal Court's biography and the national encyclopedia directly establish this biographical fact."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Charlottenlund Palace, Gentofte, Denmark",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The Royal Court's biography and the national encyclopedia directly establish this biographical fact."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "birth_country",
+      "value": "Denmark",
+      "action": "correct_existing",
+      "existing_value": "Norway",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Both the Royal Court and the national encyclopedia place his birth in Denmark; the input's Norway value is incorrect."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "3",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The Royal Court's biography and the national encyclopedia directly establish this biographical fact."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "August",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The Royal Court's biography and the national encyclopedia directly establish this biographical fact."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1872",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The Royal Court's biography and the national encyclopedia directly establish this biographical fact."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "action": "correct_existing",
+      "existing_value": "Unknown",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The Royal Court's biography and the national encyclopedia directly establish this biographical fact."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "21",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The Royal Court's biography and the national encyclopedia directly establish this biographical fact."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "September",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The Royal Court's biography and the national encyclopedia directly establish this biographical fact."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "1957",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The Royal Court's biography and the national encyclopedia directly establish this biographical fact."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Haakon_VII",
+      "verification": "Exact historical monarch, life dates, consort and accession agree with the official Royal Court biography; modern Haakon is a different person.",
+      "action": "add",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Exact historical monarch, life dates, consort and accession match the official royal biography; distinguished from modern Haakon."
+      },
+      "source_ids": [
+        "S1",
+        "S9"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0165",
+      "name": "Royalty",
+      "summary": "Reigning King of Norway from 1905 until his death in 1957.",
+      "relationship_type": "reigning_monarch",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Personal sovereign status is explicit and historically defining, rather than inferred from government service or proximity to royalty.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Official royal biography establishes the full reign."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "tag_id": "tag_0135",
+      "name": "Norwegian royal family",
+      "summary": "Norway's king and father of his successor Olav V.",
+      "relationship_type": "dynasty_member_and_monarch",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "The named family cohort supplies a specific dynastic affiliation distinct from the general Royalty status grouping; it is documented through the monarch and succession, not surname or marriage alone.",
+      "confidence": {
+        "score": 100,
+        "band": "very_high",
+        "reason": "Official biography identifies his reign, son and succession."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "field": "wealth_creation_industry",
+      "value": "Finance & Investments",
+      "confidence": {
+        "score": 60,
+        "band": "low",
+        "reason": "Substantial invested royal capital is documented, but its original wealth-producing sector is not. Portfolio deployment is insufficient to establish that financial investing created the transferred fortune."
+      },
+      "source_ids": [
+        "S5",
+        "S6"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1618",
+      "title": "Immutable owner inventory: person 1618",
+      "publisher": "Repository export",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "King Haakon VII of Norway; Norwegian nationality and Norway residence. Historical Norge, vessel 23681, July 1947 to September 1957. Birth country Norway is contradicted by primary biography. Mortality Unknown and date fields are blank. Exact source values retained in inventory; no live read or relationship rewrite."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.kongehuset.no/historie/alt-for-norge/kong-haakon-vii/biografi",
+      "title": "King Haakon VII: biography",
+      "publisher": "Royal Court of Norway",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full Norwegian biography read. Birth and death dates, Danish birthplace, naval formation, Maud marriage, referendum and election; parliamentary restraint, Hornsrud invitation, Quisling refusal, conditional abdication, exile and resistance broadcasts. The text's marriage year is used; an inconsistent wedding photograph caption is not."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://snl.no/Haakon_7.",
+      "title": "Haakon 7.",
+      "publisher": "Store norske leksikon",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Authored historical reference read for biographical identity and formation; confirms Denmark birth, precise dates, reign, naval education and Maud marriage. Constitutional-monarchy and wartime sections corroborate the official public profile. Used independently of Wikipedia."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.kongehuset.no/kongelige-eiendommer/private-eiendommer/kongsseteren",
+      "title": "Kongsseteren",
+      "publisher": "Royal Court of Norway",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full page read. Identifies the villa as private property and the original coronation gift to Haakon and Maud funded by the Norwegian people. It is personal royal benefit, not evidence of a property-development business. No present valuation is assigned to his historical estate."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.kongehuset.no/kongelige-eiendommer/bygdo-kongsgard",
+      "title": "Bygdo Royal Farm",
+      "publisher": "Royal Court of Norway",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full page read. The estate is state-owned and placed at the king's disposal. Haakon and Maud used it as a summer home from 1906. This asset is expressly excluded from personal wealth."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.newsinenglish.no/2019/08/05/royal-wealth-defies-the-folksy-image/",
+      "title": "Royal wealth defies the folksy image",
+      "publisher": "Norway's News in English / Nina Berglund",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full 2019 article read. Reporting of DN archival research explicitly says Haakon inherited Maud's money in 1938, invested abroad, and later left the fortune to Olav. A historical securities overview and a manager's letter establish diversified overseas financial holdings. Supports private financial capital and transfer, not exact terminal value. Modern family holdings and estimates are excluded."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.newsinenglish.no/2010/04/12/royal-fortunes-spark-tax-demands/",
+      "title": "Royal fortunes spur tax demands",
+      "publisher": "Norway's News in English / Nina Berglund",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article read. Reports former palace official Carl-Erik Grimstad's archival research into Haakon's Danish inheritance and British family money received by Maud and the couple. Corroborates transferred private capital. Exact estimates differ from later reporting and are omitted; its incorrect incidental description of Haakon's mother is not adopted."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.dagbladet.no/nyheter/sikrer-seg-mot-krig-og-krise/65498377",
+      "title": "Sikrer seg mot krig og krise",
+      "publisher": "Dagbladet",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full 1999 article read. Reports the inherited foreign fund through Maud and royal succession, with palace statements about subsequent private capital. Modern values and managers are not assigned to Haakon; source provides continuity context, not his 1957 allocation."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.kongehuset.no/kongelige-eiendommer/kongeskipet-norge",
+      "title": "The Royal Yacht Norge",
+      "publisher": "Royal Court of Norway",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full historical page read. Public fundraising bought the vessel for Haakon's 75th birthday; formal delivery followed in 1948. It belongs to the monarch and is operated by the navy for official and private use. Establishes the owner-record identity bridge and distinct legal/use context; no vessel detail enters the biographies or establishes Shipping & Maritime wealth."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://en.wikipedia.org/wiki/Haakon_VII",
+      "title": "Haakon VII",
+      "publisher": "Wikipedia",
+      "tier": 4,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Page opened and identity cross-checked with official biography. Correct historical monarch and public encyclopedia link. Used for link verification only, not as the sole authority for wealth."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.dn.no/magasinet/dokumentar/kongehuset/det-kongelige-hoff/kong-harald/jakten-pa-kongehusets-formue/2-1-626447",
+      "title": "Jakten pa kongehusets formue",
+      "publisher": "Dagens Naeringsliv",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Only introduction and publication metadata were accessible. They identify an inherited overseas fortune originating with Maud, but the complete investigation was unavailable. Detailed investment and succession claims are attributed to the separately read Berglund report, not falsely presented as direct access to DN's full body."
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Original sector and terminal financial interests",
+      "detail": "Original creation sector remains Unknown after testing Finance & Investments, Real Estate and Diversified. A substantial inherited stock portfolio is directly described; its underlying original capital source is not. Terminal Finance & Investments is a transparent inference from that core financial asset and its onward succession, not a modern wealth estimate or arbitrary assignment based on a bank account. Because creation industry is unknown, no origin-sector fallback is available or needed. Exact values and changes in the portfolio through the war are unresolved."
+    },
+    {
+      "topic": "Private and public royal assets",
+      "detail": "Kongsseteren's private status and the reported private inheritance support personal benefit. Bygdo is explicitly state-owned and excluded; government expenditure, sovereignty and Norwegian national wealth are not personal assets. The monarch's publicly gifted, navy-operated yacht is an identity and royal-benefit context, never evidence of commercial shipping wealth. No descendants' assets are attributed to Haakon."
+    },
+    {
+      "topic": "Personal fields",
+      "detail": "Birth country is corrected to Denmark, independently corroborated by the official court and national encyclopedia. Existing Norwegian nationality and Norway residence are retained. Danish royal birth is not used to invent a present secondary nationality, and full baptismal names are not inserted into fields belonging to the regnal identity. System-derived ages remain unchanged."
+    },
+    {
+      "topic": "Forbes and all personal profile types",
+      "detail": "Forbes was checked first; coverage but no exact personal profile was found. LinkedIn, Instagram, Facebook, Twitter/X, YouTube, TikTok, Personal Website, Wikipedia, Vimeo, Flickr, Trip Advisor and Zillow were checked. Results were historical imagery, fan or media coverage, monuments, street-name businesses and modern relatives, not attributable personal accounts. TikTok restricts automated access. The verified historical Wikipedia page is proposed. The court's historical biography is an institutional archive rather than a personal or company website; no such website is proposed."
+    },
+    {
+      "topic": "Source access and estimate conflict",
+      "detail": "Official Norwegian court bodies were fully accessible. DN's 2019 original investigation was accessible only as its introduction, so its detailed conclusions are used through the fully read, attributed Berglund account. Published inheritance estimates differ materially and the 2010 report has an incidental parental-description error; no numerical wealth estimate or that description is imported. The named private inheritance and financial portfolio mechanism are consistent across accounts."
+    },
+    {
+      "topic": "Minimum active tags",
+      "detail": "Royalty and Norwegian royal family serve distinct status and specific dynasty dimensions. Naval training and early naval service are supported but a Military officer tag would overweight a formative profession against his defining mature public identity. No sovereign, state-ownership, commercial sector or investment-profession tag is inferred."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal research and parent source/editorial review completed. Approved decisions are Unknown creation sector, inferred terminal Finance & Investments, Dynastic / royal origin and inferred Royal beneficiary relationship. The complementary pair separates formation and election from parliamentary practice and wartime decisions. Only this assigned dossier is saved; strict validation against the immutable input is the final completion check."
+  }
+}

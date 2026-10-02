@@ -1,0 +1,1214 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1815,
+    "display_name": "Alexey M. Reznikovich",
+    "identity_confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The existing Wikipedia link identifies this exact executive. Primary SEC records reproduce his full name and career; the UK registry birth month and year agree with input age 52 in May 2020, and London residence matches. No independent confirmation of the historical Rebels beneficial ownership is claimed."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "London-based investor with a background in telecommunications and management consulting.",
+    "defining_work": "Led Altimo and LetterOne's technology business, then founded Chesterfield.",
+    "formative_context": "Studied for an MBA at Georgetown and INSEAD and became a McKinsey partner.",
+    "decisive_moment": "Co-founded eMax and redirected its development towards paid internet centres after the portal's advertising model faltered.",
+    "enduring_dimensions": [
+      "Telecommunications investment and business leadership.",
+      "Founding an internet-access business with a former consulting colleague.",
+      "Combining internet access, refreshments and office services in public centres."
+    ],
+    "character_detail": "CafeMax sold a varying number of internet minutes for a fixed payment depending on how many computers were occupied.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Introduce the investor through his telecommunications leadership."
+      },
+      {
+        "mode": "institution_or_asset",
+        "angle": "Introduce the investor through the eMax venture and its original business plan."
+      }
+    ],
+    "excluded_transient_context": [
+      "Yacht ownership",
+      "Current investment amounts and portfolio valuations",
+      "Unsupported citizenship claims",
+      "Family and sporting claims lacking sufficient primary corroboration"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S8",
+      "S9"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "institution_then_person",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "Short 51 words: present investment identity, defining telecom leadership, share ownership, consulting and education. Long 105 words: an independent entrepreneurial episode, its changed revenue model, premises and pricing. Shared anchors are investor identity and consulting background. Long deliberately omits Chesterfield, Altimo leadership, LetterOne, MBA and personal telecom share ownership; its concrete operating detail cannot be recovered from the short."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Exact English and Russian profile-domain searches performed first and repeated. A 2006 Forbes article names him, but no attributable personal Forbes profile was located. It is not proposed as a profile."
+    }
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Chesterfield founder and telecommunications investor",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Primary company and career sources establish the title."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Moscow",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 88,
+        "band": "high",
+        "reason": "Contemporary biographical reporting gives Moscow and 15 April 1968; the UK official record independently confirms April 1968. Birth country uses the present-day input label for Moscow, not a claim of Soviet citizenship."
+      },
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "field": "birth_country",
+      "value": "Russian Federation",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 88,
+        "band": "high",
+        "reason": "Contemporary biographical reporting gives Moscow and 15 April 1968; the UK official record independently confirms April 1968. Birth country uses the present-day input label for Moscow, not a claim of Soviet citizenship."
+      },
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "15",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 88,
+        "band": "high",
+        "reason": "Contemporary biographical reporting gives Moscow and 15 April 1968; the UK official record independently confirms April 1968. Birth country uses the present-day input label for Moscow, not a claim of Soviet citizenship."
+      },
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "April",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Contemporary biographical reporting gives Moscow and 15 April 1968; the UK official record independently confirms April 1968. Birth country uses the present-day input label for Moscow, not a claim of Soviet citizenship."
+      },
+      "source_ids": [
+        "S10",
+        "S11"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1968",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Contemporary biographical reporting gives Moscow and 15 April 1968; the UK official record independently confirms April 1968. Birth country uses the present-day input label for Moscow, not a claim of Soviet citizenship."
+      },
+      "source_ids": [
+        "S10",
+        "S11"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "5",
+      "type": "LinkedIn",
+      "url": "https://uk.linkedin.com/in/alexey-reznikovich-1a5226184",
+      "action": "add",
+      "verification": "Indexed profile body identifies Chesterfield, London and the distinctive Georgetown/INSEAD MBA, converging with primary company and career records; not a name-only directory.",
+      "confidence": {
+        "score": 84,
+        "band": "medium",
+        "reason": "Exact company, location and distinctive joint education match; no current direct official outbound link could be recovered."
+      },
+      "source_ids": [
+        "S1",
+        "S3",
+        "S12"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://chesterfieldfund.com/",
+      "action": "add",
+      "verification": "Official website names the founder and describes his investment organisation and portfolio.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Current official about page identifies Alexey as founder-team leader; indexed primary leadership bio identifies managing partner and founder."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0152",
+      "name": "Private equity",
+      "summary": "Defining investment leadership at LetterOne Technology and his founded Chesterfield platform.",
+      "relationship_type": "founder and sustained investment manager",
+      "temporal_scope": "current",
+      "taxonomy_value": "Identifies a sustained private-equity business mandate rather than a single passive investment.",
+      "confidence": {
+        "score": 88,
+        "band": "high",
+        "reason": "Primary company biography identifies his private-equity management mandate; the current portfolio and founding record show sustained investment activity."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1815",
+      "title": "Immutable owner inventory: person 1815",
+      "publisher": "Repository export",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Exact existing Wikipedia link, Russian nationality, UK residence, age 52 in May 2020 and historical Rebels relationship 2013 to May 2026. Used for identity; yacht ownership is not independently verified."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://chesterfieldfund.com/leadership",
+      "title": "Alexey Reznikovich: managing partner and founder",
+      "publisher": "Chesterfield",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant indexed primary biography read. Current direct URL returns not-found; cached biography identifies founder/managing partner, prior LetterOne technology leadership, McKinsey and MBA. No current role at the former employers is implied."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://chesterfieldfund.com/about/",
+      "title": "About Chesterfield",
+      "publisher": "Chesterfield",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full direct body read. Founded in 2016 by team led by Reznikovich; continuing financing, strategic and management support for portfolio. Aggregate AUM exceeds USD300m, not his personal wealth."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.sec.gov/Archives/edgar/data/1023977/000119312509111289/d20f.htm",
+      "title": "VimpelCom annual report: Alexey M. Reznikovich",
+      "publisher": "VimpelCom via SEC",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant indexed director biography read: Altimo CEO, McKinsey partner, EMAX founder and CafeMax board member, Georgetown/INSEAD MBA."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.kommersant.ru/doc/1322957",
+      "title": "Altimo ownership disclosure, February 2010",
+      "publisher": "Kommersant",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full direct body read. Documents an executive option exercised for 1.25% in 2008; two sources identify Reznikovich, who declined comment, while Altimo neither confirmed nor denied. Describes underlying mobile-operator stakes. This qualified identification is retained as reporting, not an authenticated personal cap table."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.vedomosti.ru/newspaper/articles/2007/01/12/schedryj-fridman",
+      "title": "Management co-ownership, January 2007",
+      "publisher": "Vedomosti",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Relevant direct passage read: Reznikovich confirms Altimo managers are co-owners but does not disclose individual stakes."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://filearchive.cnews.ru/mag/2014/09/CNews_73.pdf",
+      "title": "2014 ranking of telecommunications fortunes",
+      "publisher": "CNews",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant indexed ranking table and introductory methodology read. His row estimates USD90m in 2014 and USD230m in 2013, attributed to LetterOne's VimpelCom/Turkcell interests. PDF direct open was unavailable; figures are historical specialist estimates, not verified current net worth."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.larepublica.co/empresas/wom-colombia-fue-adquirida-por-sur-holdings-y-reforzara-sus-operaciones-este-ano-4037626",
+      "title": "WOM Colombia acquired by SUR Holdings, March 2025",
+      "publisher": "La Republica",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant direct body read. Names Reznikovich and three other investors in acquisition and quotes his digital-transformation plans. Its present-tense rendering of former employment is stale and excluded. Group acquisition funding is not assigned to him personally."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.kommersant.ru/doc/861255",
+      "title": "CafeMax minus eMax, March 2003",
+      "publisher": "Kommersant / Sekret Firmy",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full direct article read: Reznikovich and Nikolau founded eMax, paired portal and public centres, shifted focus after weak advertising income, expanded Moscow/St Petersburg, and combined access, games, refreshments, room hire and office services. Operating explanations are attributed to the venture, not fabricated personal quotations."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.cnews.ru/news/top/v_moskve_otkrylsya_krupnejshij_internettsentr",
+      "title": "Opening of CafeMax, July 2001",
+      "publisher": "CNews",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full direct article body read: named co-founders; first centre opened July 2001 with work/gaming areas, shops and cafe. Fixed payment bought fewer minutes as occupancy rose."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.kommersant.ru/doc/1267918",
+      "title": "Alexey Mikhailovich Reznikovich: personal file, November 2009",
+      "publisher": "Kommersant",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full biographical body read. Born 15 April 1968 in Moscow; education, consulting, EMAX/CafeMax and telecom chronology."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/OC386300/officers",
+      "title": "LetterOne Technology (UK) LLP: officers",
+      "publisher": "Companies House",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Relevant full official officer entry read: Alexei Reznikovich born April 1968, England residence, appointment 2014 and resignation 2020. A different PSC entry naming Leonid is not reassigned to Alexey."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://uk.linkedin.com/in/alexey-reznikovich-1a5226184",
+      "title": "Alexey Reznikovich professional profile",
+      "publisher": "LinkedIn",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed public profile body read: London, Chesterfield (profile misspells it Chesterfied), distinctive Georgetown/INSEAD education 1991 to 1993. Direct profile was not fully accessible."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://chesterfieldfund.com/portfolio",
+      "title": "Portfolio",
+      "publisher": "Chesterfield",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full direct body read. Current portfolio includes WOM, Firefly, Health Gorilla, Qvantel, Tupl, Devialet and Oversee. WOM acquisition year is stated as 2024 here but announced 2025 in news; no exact year imported."
+      ]
+    },
+    {
+      "id": "S14",
+      "url": "https://www.forbes.com/2006/09/18/altimo-fridman-telecom-face-cx_cn_0918autofacescan02.html",
+      "title": "Elder Statesmen, Captains Of Industry To Advise Russia's Altimo",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed 2006 article read: confirms Reznikovich's leadership and education. Altimo's aggregate assets belong to the group; article is not a personal Forbes profile."
+      ]
+    },
+    {
+      "id": "S15",
+      "url": "https://en.wikipedia.org/wiki/Alexey_M._Reznikovich",
+      "title": "Alexey M. Reznikovich",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full page read to verify existing target and locate sources. Unsupported nationality, foundation, sport and film claims are not imported solely from it."
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Personal versus group wealth",
+      "detail": "Altimo and LetterOne corporate assets are not his personal wealth. The 1.25% option recipient is identified by two reported sources rather than a public named cap table. The separate specialist fortune estimate supports materiality, with historical valuation uncertainty. Chesterfield AUM and consortium funding remain collective amounts."
+    },
+    {
+      "topic": "Current sector and relationship",
+      "detail": "The founder-led platform has a real portfolio and a recent personally attributed WOM acquisition interest. His exact ownership percentage, limited-partner arrangements and full personal allocation are undisclosed. The material current investment-platform premise is a transparent inference, not a conversion of AUM to net worth or of a job title to asset ownership."
+    },
+    {
+      "topic": "Origin and starting platform",
+      "detail": "Reported executive equity provides a positive earned-asset mechanism, distinct from salary or office alone. It supports broad Self-made without asserting an independent or advantaged start. His father's theatrical career is not evidence of a material family financial platform or transfer."
+    },
+    {
+      "topic": "Source access and chronology",
+      "detail": "Chesterfield's leadership biography remains fully indexed but now returns not-found directly. The about and portfolio pages are accessible. The CNews wealth table and SEC relevant biographies were read in indexed full passages; no claim of downloading the inaccessible original PDF is made. WOM dates differ between the company portfolio and announcement; no exact acquisition year enters biography."
+    },
+    {
+      "topic": "All supported personal links",
+      "detail": "Forbes checked first and repeated in English and Russian. LinkedIn attributable profile verified; existing Wikipedia link retained. Searches of Instagram, Facebook, Twitter/X, YouTube, TikTok, Vimeo, Flickr, Trip Advisor, Zillow and Personal Website found no further verified personal account. TikTok blocks direct access. A WordPress name blog lacks sufficient authorship verification and is excluded. Corporate social accounts are not substituted."
+    },
+    {
+      "topic": "Nationality, details and vessel",
+      "detail": "British and Maltese citizenship claims lack sufficient corroboration, so no nationality change is proposed. Exact birth date and Moscow are supported by contemporary reporting, with official month/year corroboration. Russian Federation is the present-day geographical birth-country label, not his country at birth. No yacht UBO claim or vessel-based character detail is imported."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent reviewed the pair, full Altimo ownership article, CafeMax body, official platform and WOM reporting. The positive current founder platform and personal investment support medium-confidence principal-asset inferences; no managed asset total becomes personal wealth. Strict validation against the immutable source is required before handoff."
+  },
+  "wealth_creation_industry": {
+    "classification": "telecom",
+    "label": "Telecom",
+    "summary": "Inferred material fortune from personal equity in the underlying mobile-telecommunications interests.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "The reported executive option identifies a personally acquired Altimo interest, and the separate CNews table attributes substantial personal assets to VimpelCom and Turkcell. Those are telecom operations, not the entirety of Alfa Group's financial holdings. Together they support a central wealth-producing sector beyond his executive title. His earlier consulting partnership and cafe venture are not documented as comparable personal fortunes. Exact original balance-sheet weights remain unknown."
+    },
+    "source_ids": [
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Inferred current principal private investment platform and portfolio, led through Chesterfield.",
+    "confidence": {
+      "score": 76,
+      "band": "medium",
+      "reason": "Chesterfield's founding and continuing leadership, substantial active multi-company portfolio, and independently named personal participation in the WOM acquisition converge on a material ongoing private investment platform. The portfolio spans telecoms, software, digital healthcare, advertising and consumer technology. This is inference about the principal investment business rather than occupation alone. Platform AUM is not personal wealth; his precise economic stake and allocation remain undisclosed. The positive current platform evidence supports this broader sector, although Telecommunications would be the conservative origin-sector fallback if the current personal-platform inference were rejected."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S7",
+      "S13"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Inferred material wealth earned through executive equity and subsequently developed investment interests.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "The documented option mechanism and reported personal recipient, corroborated by a specialist estimate of his telecom holdings, establish earned productive assets of material scale. This supports broad Self-made rather than inferring wealth merely from leadership. Earlier founder activity adds career context but is not claimed as the principal fortune. Neither an independent start nor a substantial family launch advantage is established; the broad label does not imply either. No inherited-asset mechanism is substituted for the positive earned-equity evidence."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "investor",
+    "label": "Investor",
+    "summary": "Inferred sustained personal investment allocation through his founded platform and consortium stakes.",
+    "confidence": {
+      "score": 78,
+      "band": "medium",
+      "reason": "The current founder-led Chesterfield portfolio and recently named personal WOM investor role connect him to ongoing productive assets and repeated strategic allocation. Historic personal telecom equity corroborates an economic interest distinct from managing other people's assets. Investor better describes this sustained portfolio activity than passive shareholder or a former corporate office. Founder remains a plausible narrower relationship to Chesterfield alone; the full current personal holdings and delegation arrangements are unavailable, limiting the principal-role inference."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4",
+      "S6",
+      "S7",
+      "S13"
+    ]
+  },
+  "biography": {
+    "plain_text": "London-based investor Alexey Reznikovich founded Chesterfield after leading Altimo, the telecommunications investment business, and LetterOne's technology arm. A former McKinsey partner, he became a shareholder in the telecoms interests he helped manage. His business training included an MBA at Georgetown and INSEAD, before a career spanning corporate management and private investment.",
+    "html": "<p>London-based investor Alexey Reznikovich founded Chesterfield after leading Altimo, the telecommunications investment business, and LetterOne's technology arm. A former McKinsey partner, he became a shareholder in the telecoms interests he helped manage. His business training included an MBA at Georgetown and INSEAD, before a career spanning corporate management and private investment.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "Career and education are primary-supported; personal telecom ownership is corroborated by qualified reporting and a specialist wealth table."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S6",
+      "S11",
+      "S12"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Alexey Reznikovich, the telecommunications investor, co-founded eMax with fellow McKinsey consultant Lev Nikolau. Their original plan combined an internet portal with public internet centres. When the portal's expected advertising income failed to materialise, the founders concentrated on the centres, where customers paid for access to the web.\n\nThe first CafeMax opened in Moscow in 2001, with separate areas for work and games, shops and a coffee bar. Pricing varied with demand: a fixed payment bought fewer minutes when more computers were occupied. The network subsequently expanded to St Petersburg. Alongside internet access and games, its centres earned revenue from refreshments, meeting-room hire and office services.",
+    "html": "<p>Alexey Reznikovich, the telecommunications investor, co-founded eMax with fellow McKinsey consultant Lev Nikolau. Their original plan combined an internet portal with public internet centres. When the portal's expected advertising income failed to materialise, the founders concentrated on the centres, where customers paid for access to the web.</p>\r\n<p>The first CafeMax opened in Moscow in 2001, with separate areas for work and games, shops and a coffee bar. Pricing varied with demand: a fixed payment bought fewer minutes when more computers were occupied. The network subsequently expanded to St Petersburg. Alongside internet access and games, its centres earned revenue from refreshments, meeting-room hire and office services.</p>\r\n",
+    "word_count": 105,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Contemporary detailed reporting and primary founding attribution support the distinct venture narrative."
+    },
+    "source_ids": [
+      "S3",
+      "S8",
+      "S9"
+    ]
+  }
+}

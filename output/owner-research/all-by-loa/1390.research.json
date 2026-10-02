@@ -1,0 +1,1225 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1390,
+    "display_name": "Ziyad Manasir",
+    "identity_confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "The input explicitly identifies the Manaseer Group founder. Forbes connects the Russian spelling Manasir with Ziad Manaseer; corporate records match December 1965, Jordanian origin and the same company. Separate relatives on group boards are not the subject."
+    }
+  },
+  "research_status": "complete",
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "biography_brief": {
+    "durable_identity": "Jordanian-Russian industrial entrepreneur.",
+    "defining_work": "Created a Russian construction fortune and built Manaseer Group in Jordan.",
+    "formative_context": "Engineering studies accompanied by small-scale trading.",
+    "decisive_moment": "Buying a Tyumen construction factory opened a route into housing contracts.",
+    "enduring_dimensions": [
+      "Operating businesses in Jordan",
+      "Personally funded support for research"
+    ],
+    "character_detail": null,
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Introduce the founder and the two countries central to his businesses."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Introduce the businessman through student trading and his first construction undertaking."
+      }
+    ],
+    "excluded_transient_context": [
+      "Vessel relationships",
+      "Live wealth estimates",
+      "Planned projects and future investment totals",
+      "Unresolved precise main residence"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S6",
+      "S7"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "identity_then_origin",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "The short alone names the two business platforms, gives dual nationality and describes the present product range. The long adds student commerce, the Tyumen factory and housing mechanism, the small distributor's starting scale, and his independently funded research institution. Shared anchors are the construction background and Jordanian business beginnings; the long avoids repeating the present corporate bundle. Both texts have standalone identity openings."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/ziyad-manasir/",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Matching personal profile opened. Its wealth estimate and residence are dated 2015, not current."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "construction_engineering",
+    "label": "Construction & Engineering",
+    "summary": "His original fortune came from ownership and expansion of the Russian contractor Stroygazconsulting.",
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Forbes directly attributes the fortune to construction; Interfax independently identifies him as the company's creator and former owner. Gazprom was a customer, not his privately owned asset."
+    },
+    "source_ids": [
+      "S1",
+      "S8"
+    ]
+  },
+  "primary_industry": {
+    "classification": "energy",
+    "label": "Energy",
+    "summary": "Energy is inferred to be the principal current sector through his owned Manaseer Group, where it generates about 70% of revenue.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "The 2026 interview directly establishes ownership and a multibillion-dollar operating platform, with energy dominant in sales. Current fuel-distribution acquisitions corroborate substantive operations. Revenue is a proxy, not a personal equity valuation: industrial assets may carry different margins and capital values. Diversified remains plausible, but the positive weighting supports Energy. This is a current assessment, so origin-sector fallback is unnecessary."
+    },
+    "source_ids": [
+      "S2",
+      "S4"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Built the original contracting business and subsequently financed his Jordanian enterprise from his own earlier business proceeds.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Forbes expressly identifies Self Made and documents the trading-to-construction mechanism. His later account of self-funding corroborates continuity of earned business capital. Broad Self-made avoids claiming a fully documented independent starting platform; political or commercial connections do not themselves establish inherited wealth or a material family launch advantage."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Founder and continuing owner of the substantial Manaseer operating group.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The recent interview explicitly establishes creation and ownership of the principal continuing enterprise; official management confirms his chairmanship. This is an economic relationship to a major business, not merely a title carried forward from the disposed Russian contractor."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S5"
+    ]
+  },
+  "biography": {
+    "plain_text": "Ziyad Manasir is a Jordanian-Russian businessman who founded Stroygazconsulting, a major contractor for Russia's gas industry, and Jordan's Manaseer Group. He built his original fortune through major construction contracts before concentrating on businesses in his home country. The group he owns and chairs supplies fuel, building materials and agricultural products.",
+    "html": "<p>Ziyad Manasir is a Jordanian-Russian businessman who founded Stroygazconsulting, a major contractor for Russia's gas industry, and Jordan's Manaseer Group. He built his original fortune through major construction contracts before concentrating on businesses in his home country. The group he owns and chairs supplies fuel, building materials and agricultural products.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "Business identity and original wealth mechanism are corroborated by Forbes; current company materials establish product sectors."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4",
+      "S6"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Businessman Ziyad Manasir began trading while studying engineering in the Soviet Union, buying and selling computers and cars before moving into commodities. His purchase of a construction factory in Tyumen led to work building homes for Gazprom employees. These ventures preceded his return to Jordan, where he started a chemicals and fertilizer distributor with just 15 employees in 1999.\n\nHis charitable foundation, established in 2014, is funded personally and does not accept donations. It supports a research and innovation award aimed at solutions to Jordan's development needs. Manasir chairs its board of trustees.",
+    "html": "<p>Businessman Ziyad Manasir began trading while studying engineering in the Soviet Union, buying and selling computers and cars before moving into commodities. His purchase of a construction factory in Tyumen led to work building homes for Gazprom employees. These ventures preceded his return to Jordan, where he started a chemicals and fertilizer distributor with just 15 employees in 1999.</p>\r\n<p>His charitable foundation, established in 2014, is funded personally and does not accept donations. It supports a research and innovation award aimed at solutions to Jordan's development needs. Manasir chairs its board of trustees.</p>\r\n",
+    "word_count": 93,
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "The historical Forbes biography supports the early commercial sequence; the company's founding account gives the original team, and the foundation directly describes its funding and research award."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S7"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "middle_names",
+      "value": "Khalaf Mohammed",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "The official Arabic annual report prints Ziad Khalaf Mohammed Al Manaseer; Companies House gives the matching middle names as Khalaf Moh'D."
+      },
+      "source_ids": [
+        "S9",
+        "S10"
+      ]
+    },
+    {
+      "field": "secondary_nationality",
+      "value": "Jordanian",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Companies House explicitly records Jordanian nationality and the recent event biography identifies both Jordanian and Russian nationality."
+      },
+      "source_ids": [
+        "S6",
+        "S9"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Founder of Stroygazconsulting and Manaseer Group",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Founding identities agree across Forbes and the company history."
+      },
+      "source_ids": [
+        "S1",
+        "S3",
+        "S6"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Amman",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Recent named Forbes event biography explicitly identifies Amman as his birthplace."
+      },
+      "source_ids": [
+        "S6"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://www.forbes.com/profile/ziyad-manasir/",
+      "verification": "Matched personal profile, distinct from company rankings.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Name and Russian construction business match."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://manaseergroup.com/",
+      "verification": "Official website of the business he founded, owns and chairs.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official chairman's message and independent ownership interview agree."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S5"
+      ]
+    },
+    {
+      "type_id": "5",
+      "type": "LinkedIn",
+      "url": "https://www.linkedin.com/in/ziad-manaseer",
+      "verification": "Forbes Middle East explicitly tags this personal account in an interview post republished by Manaseer Group. Indexed account content matches the company, studies and recent interview.",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "The exact tagged URL resolves to /in/ziad-manaseer. This provides organisational/editorial corroboration beyond matching name and followers; direct profile retrieval is restricted."
+      },
+      "source_ids": [
+        "S11",
+        "S12"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0529",
+      "name": "Heavy civil construction",
+      "summary": "Built the former Russian contracting platform responsible for substantial road and infrastructure projects.",
+      "relationship_type": "founder_operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Groups owners whose fortunes arose from major civil infrastructure contracting, beyond a general construction label.",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "The historical wealth profile identifies major transport and infrastructure work by his company; Interfax confirms his ownership."
+      },
+      "source_ids": [
+        "S1",
+        "S8"
+      ]
+    },
+    {
+      "tag_id": "tag_0234",
+      "name": "Oil & gas",
+      "summary": "Owns and leads a group with substantial fuel-distribution and gas operations in Jordan.",
+      "relationship_type": "founder_controller",
+      "temporal_scope": "current",
+      "taxonomy_value": "Identifies a material controlled petroleum business, rather than treating past work for an energy customer as petroleum ownership.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Direct group ownership and the current Afaq energy subsidiary's acquisition establish substantial ongoing operations."
+      },
+      "source_ids": [
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "tag_id": "tag_0475",
+      "name": "Construction materials",
+      "summary": "Founded and controls a major producer of building materials through Manaseer Group.",
+      "relationship_type": "founder_controller",
+      "temporal_scope": "current",
+      "taxonomy_value": "Distinguishes ownership of cement and other building-product operations from construction contracting.",
+      "confidence": {
+        "score": 93,
+        "band": "high",
+        "reason": "Group operations and the controlling Jordan Cement acquisition demonstrate substantial production interests."
+      },
+      "source_ids": [
+        "S2",
+        "S4"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "field": "main_residence_country",
+      "value": "Jordan",
+      "reason": "The ongoing UK control record lists Jordan and current professional sources place him in Amman. These do not decisively establish his principal personal residence over the input's Russian Federation; no automatic correction.",
+      "confidence": {
+        "score": 68,
+        "band": "low",
+        "reason": "Country-level business and filing evidence is positive but main-residence priority remains unresolved."
+      },
+      "source_ids": [
+        "S9",
+        "S12"
+      ]
+    },
+    {
+      "field": "socials.Wikipedia",
+      "value": "https://en.wikipedia.org/wiki/Ziyad_Manasir",
+      "reason": "Input Wikipedia link identifies the company rather than this person. The personal article is identity-matched; retained for deliberate replacement review rather than duplicating the existing type.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Personal article matches founder identity and birth information."
+      },
+      "source_ids": [
+        "S13"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/profile/ziyad-manasir/",
+      "title": "Ziyad Manasir — archived billionaire profile",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Construction wealth and self-made attribution",
+        "Early trading and factory purchase; infrastructure contracts",
+        "Personal Forbes URL; last financial update in 2015"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://fliphtml5.com/ptdlz/hdqs/Forbes_Middle_East_-_June_2026_English/",
+      "title": "The Billion Dollar Homecoming — June 2026 cover interview",
+      "publisher": "Forbes Middle East",
+      "tier": 2,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Direct ownership statement; current platform materiality",
+        "Energy revenue weighting; personal reinvestment mechanism",
+        "Read full cover feature in publisher's public text edition"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://manaseergroup.com/Home/about.php",
+      "title": "Chairman's message and group history",
+      "publisher": "Manaseer Group",
+      "tier": 1,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "1999 establishment as a distributor with 15 employees",
+        "Founder identity and official website"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.forbesmiddleeast.com/lists/top-100-arab-family-businesses-2026/manaseer-group/",
+      "title": "Manaseer Group — Top 100 Arab Family Businesses 2026",
+      "publisher": "Forbes Middle East",
+      "tier": 2,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Current operating sectors",
+        "Afaq acquisition of Central Gas; controlling Jordan Cement transaction"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://manaseergroup.com/Home/managment.php",
+      "title": "Our Management",
+      "publisher": "Manaseer Group",
+      "tier": 1,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Current chairman"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://forbesmiddleeastevents.com/team-members/ziad-manaseer/",
+      "title": "Ziad Manaseer — speaker biography",
+      "publisher": "Forbes Middle East Events",
+      "tier": 2,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Amman birthplace; dual nationality; engineering studies",
+        "Founding identities"
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://zm-ria.com/about-us/",
+      "title": "About us — Ziad Al-Manaseer Innovative Research Award",
+      "publisher": "Ziad Al-Manaseer Innovative Research Award",
+      "tier": 1,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Personally funded charity established in December 2014",
+        "Research award purpose and chairmanship; does not accept donations"
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.interfax.ru/business/629803",
+      "title": "Part of Stroygazconsulting's assets transferred to Gazstroyprom's owners",
+      "publisher": "Interfax",
+      "tier": 2,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Founder and former ownership; UCP and Gazprombank owned company from May 2015"
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/13047880/persons-with-significant-control",
+      "title": "Manaseer UK Limited — persons with significant control",
+      "publisher": "Companies House",
+      "tier": 1,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Full name variant, December 1965, Jordanian nationality, declared country of residence",
+        "Significant influence or control; not a disclosed percentage for this person"
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://exchange.jo/ar/download/disclosure/1615146",
+      "title": "Jordan Magnesia Company — 2019 annual report",
+      "publisher": "Amman Stock Exchange / Jordan Magnesia Company",
+      "tier": 1,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Arabic full name on chairman portrait and board biography",
+        "1965 birth year and Jordanian nationality"
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://ae.linkedin.com/posts/manaseerg_%D8%B2%D9%8A%D8%A7%D8%AF-%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B5%D9%8A%D8%B1-%D9%8A%D8%B1%D9%88%D9%8A-%D8%B1%D8%AD%D9%84%D8%A9-%D8%A7%D9%84%D8%B5%D8%B9%D9%88%D8%AF-%D9%85%D9%86-%D8%B7%D8%A7%D9%84%D8%A8-%D9%85%D8%BA%D8%AA%D8%B1%D8%A8-activity-7480560589900152832-qAc8",
+      "title": "Manaseer Group shares Forbes Middle East interview",
+      "publisher": "Manaseer Group / Forbes Middle East on LinkedIn",
+      "tier": 1,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Explicit personal-account hyperlink /in/ziad-manaseer"
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://jo.linkedin.com/in/ziad-manaseer",
+      "title": "Ziad Manaseer — public LinkedIn profile",
+      "publisher": "LinkedIn",
+      "tier": 3,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Indexed profile: company, engineering institution and interview posts",
+        "Direct open restricted; indexed body reviewed"
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://en.wikipedia.org/wiki/Ziyad_Manasir",
+      "title": "Ziyad Manasir",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-09-30",
+      "supports": [
+        "Identity-matched personal article for replacement review"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Current wealth weighting",
+      "detail": "No complete private balance sheet or segment equity valuation is public. Energy is the supported inferred principal sector; material building-products operations remain. Group revenue and investment totals are not represented as personal net worth."
+    },
+    {
+      "topic": "Original starting platform",
+      "detail": "Broad Self-made is positively supported. Humble-background publicity alone does not prove the independent-start subtype, and business connections are not evidence of inherited principal assets."
+    },
+    {
+      "topic": "Chronology",
+      "detail": "The 2026 interview dates the Russian withdrawal to 2014; Interfax documents successor ownership from May 2015. Avoided a precise exit date, founding year for Stroygazconsulting and unverified sale proceeds. Education sources vary in institutional rendering; biographies use engineering studies in the Soviet Union."
+    },
+    {
+      "topic": "Social search coverage",
+      "detail": "Searched English and Arabic name variants for LinkedIn, Instagram, Facebook, Twitter/X, YouTube, TikTok and personal websites. Verified the LinkedIn account through the explicit Forbes/company post link. No independently verified personal account on the other platforms or personal website found; company and interview channels are not personal accounts. Crunchbase links a different LinkedIn slug, /in/ziadalmanaseer, which is not proposed."
+    },
+    {
+      "topic": "Existing Wikipedia link",
+      "detail": "The immutable input links to Manaseer Group, not the person. A matched replacement is flagged for review; no removal or duplicate is proposed."
+    },
+    {
+      "topic": "Document access",
+      "detail": "The annual report's Arabic text was readable, including the full-name cover heading. The requested screenshot timed out; no numerical table inference relies on the failed image. LinkedIn profile opening returned access errors, while the company post and its outgoing personal-account link were readable."
+    },
+    {
+      "topic": "Scope and disputed claims",
+      "detail": "Searches surfaced advocacy allegations about historic Gazprom relationships. They are not adjudicated findings in the reviewed sources and are not used to infer inheritance, a current asset or a biographical character claim. No clean legal-history assertion is made."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal evidence assessment complete as of 30 September 2026. Original construction fortune and current energy-weighted group assessed separately; all four fields have independent premises. Remaining residence and social uncertainties are preserved. Only approved active tags assigned. No shared data or live changes."
+  }
+}

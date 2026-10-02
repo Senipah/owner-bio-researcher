@@ -1,0 +1,1240 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1871,
+    "display_name": "Nathaniel Philip Rothschild",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Exact full-name, date-of-birth, family and Volex identity in the input converge with primary company and family records. Forbes separately associates him with Planet Nine; vessel reporting is corroborative, not the basis for citizenship or financial conclusions."
+    }
+  },
+  "research_status": "complete",
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/nathaniel-rothschild/",
+    "confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Exact personal profile with matching family, business and Canadian citizenship. The USD 1 billion estimate is explicitly dated 1 March 2012, not current."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "His independently earned original fortune arose from his owned hedge-fund partnership and investment activity.",
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Contemporary reporting separates his multimillion-pound Atticus fortune from an anticipated future paternal inheritance. His equity partnership and investing success establish personal economic benefit, rather than treating client assets under management as his wealth. Later manufacturing activity does not change the original creation mechanism."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "primary_industry": {
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "Volex is the best-supported current principal owned business.",
+    "confidence": {
+      "score": 85,
+      "band": "high",
+      "reason": "In the 2024 AGM exchange he explicitly identified Volex as a substantial part of his net worth and his primary business focus. Current beneficial ownership is independently confirmed by the 2026 annual report and September holding notification. Electrical manufacturing, rather than its customers' industries, describes the underlying asset. The complete private portfolio is unavailable, but these positive materiality premises support the classification without an origin fallback."
+    },
+    "source_ids": [
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "Built a separate personal fortune after formative access to his father's investment work and network.",
+    "confidence": {
+      "score": 78,
+      "band": "medium",
+      "reason": "The principal earned fortune is positively documented. The advantage inference rests on actual early work with Jacob Rothschild on investment transactions and introductions through his father's international business activity, not the surname alone. This provided relevant experience and commercial access before his independent investment career. Neither the amount nor provenance of all launch capital is established. Family-company holdings are reported, but an actual material inheritance or transfer of the principal wealth-producing core is not sufficiently established to prefer Mixed or Inherited."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S8",
+      "S9"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "operator",
+    "label": "Operator",
+    "summary": "Active chief executive and substantial beneficial shareholder in the principal manufacturing business.",
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "The annual report verifies appointment as chief executive in November 2025 and substantial beneficial equity held directly and through NR Holdings. His operational involvement and personal materiality statement distinguish this from an outside executive job. He did not found Volex; other investment mandates do not outweigh this positively identified operating core."
+    },
+    "source_ids": [
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "Canadian financier who became an owner and operating leader of an electrical manufacturing business.",
+    "defining_work": "Earned a personal fortune through Atticus Capital and subsequently concentrated on the industrial business Volex.",
+    "formative_context": "Worked on investment transactions with his father Jacob before establishing his separate investing career.",
+    "decisive_moment": "Shifted from financial investing to sustained operational responsibility in manufacturing.",
+    "enduring_dimensions": [
+      "Substantial continuing personal economic interest in the business he runs.",
+      "Oxford history education.",
+      "Practical attention to production methods and learning between factories."
+    ],
+    "character_detail": "A competitor's factory visit supplied a concrete operational benchmark.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Identify his current operating role alongside the financial career."
+      },
+      {
+        "mode": "decisive_event",
+        "angle": "Open with a factory visit that illustrates his management approach."
+      }
+    ],
+    "excluded_transient_context": [
+      "Current share price or wealth ranking",
+      "Yacht details",
+      "Social and political quarrels",
+      "Unverified inheritance totals",
+      "Promotional industrial-growth claims"
+    ],
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S6",
+      "S8",
+      "S10"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "acquirer_consolidator"
+    ],
+    "notes": "Two shared anchors are Volex and its electrical manufacturing work. The short alone supplies nationality, family-enabled early experience, the Atticus fortune, Oxford and substantial ownership. The long develops a factory visit, improvement leadership, inter-plant learning and selective internal production. It is not an expanded finance-career chronology. The father's relevant early business access is stated neutrally, without implying receipt of an inherited core."
+  },
+  "editorial_note": null,
+  "biography": {
+    "plain_text": "Nathaniel Rothschild is a Canadian financier and chief executive of Volex, the electrical manufacturing group in which he holds a substantial stake. The son of financier Jacob Rothschild, he worked on investment deals with his father before building his own fortune as a partner in Atticus Capital. He studied history at Oxford.",
+    "html": "<p>Nathaniel Rothschild is a Canadian financier and chief executive of Volex, the electrical manufacturing group in which he holds a substantial stake. The son of financier Jacob Rothschild, he worked on investment deals with his father before building his own fortune as a partner in Atticus Capital. He studied history at Oxford.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "The allocated facts are supported by directly read primary company material and substantive contemporary biographical reporting."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S8",
+      "S10"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "A visit to a Taiwanese competitor gave Volex's Nat Rothschild a practical benchmark for the factories he led. The rival's manufacturing methods impressed him, even though its profitability lagged behind his own company's. He made the exchange of production knowledge between plants a central part of his approach to running the electrical manufacturer.\n\nAfter becoming operationally involved in 2015, Rothschild brought in a specialist to lead continuous improvement, initially as a consultant and later as a full-time employee. Teams shared methods developed at their most advanced factories across countries and continents. He also invested in making more components internally, including cable extrusion and electric-vehicle charging products, where production volumes justified the investment.",
+    "html": "<p>A visit to a Taiwanese competitor gave Volex's Nat Rothschild a practical benchmark for the factories he led. The rival's manufacturing methods impressed him, even though its profitability lagged behind his own company's. He made the exchange of production knowledge between plants a central part of his approach to running the electrical manufacturer.</p>\r\n<p>After becoming operationally involved in 2015, Rothschild brought in a specialist to lead continuous improvement, initially as a consultant and later as a full-time employee. Teams shared methods developed at their most advanced factories across countries and continents. He also invested in making more components internally, including cable extrusion and electric-vehicle charging products, where production volumes justified the investment.</p>\r\n",
+    "word_count": 112,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "The allocated facts are supported by directly read primary company material and substantive contemporary biographical reporting."
+    },
+    "source_ids": [
+      "S11"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "middle_names",
+      "value": "Philip Victor James",
+      "existing_value": "Philip",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Full name directly identified by the family archive and already expanded in the input biography."
+      },
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "field": "nationality",
+      "value": "Canadian",
+      "existing_value": "British",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "His direct interview explicitly identifies Canadian citizenship and denies being a British citizen; Forbes independently lists Canada. British-born is not synonymous with citizenship."
+      },
+      "source_ids": [
+        "S1",
+        "S8"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Financier and chief executive of Volex",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Primary current company reporting verifies the executive role; his financial career is independently documented."
+      },
+      "source_ids": [
+        "S2",
+        "S4"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://www.forbes.com/profile/nathaniel-rothschild/",
+      "action": "add",
+      "verification": "Exact profile with matching family and investment history; its financial estimate is historical.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Exact profile with matching family and investment history; its financial estimate is historical."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nathaniel_Rothschild,_5th_Baron_Rothschild",
+      "action": "add",
+      "verification": "Exact full-name and Volex biography, matching the input's existing Wikipedia reference. Citizenship details are checked independently.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Exact full-name and Volex biography, matching the input's existing Wikipedia reference. Citizenship details are checked independently."
+      },
+      "source_ids": [
+        "S12"
+      ]
+    },
+    {
+      "type_id": "5",
+      "type": "LinkedIn",
+      "url": "https://www.linkedin.com/in/nat-rothschild-04b3a311a/",
+      "action": "add",
+      "verification": "Official Volex post explicitly tags this personal profile as its executive chairman; the exact target was confirmed in public HTML. Profile itself has access restrictions.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Official Volex post explicitly tags this personal profile as its executive chairman; the exact target was confirmed in public HTML. Profile itself has access restrictions."
+      },
+      "source_ids": [
+        "S13"
+      ]
+    },
+    {
+      "type_id": "3",
+      "type": "Twitter",
+      "url": "https://x.com/NatRothschild1",
+      "action": "add",
+      "verification": "Contemporary independent reporting explicitly identifies this handle; current company account references the same handle. Direct X access is restricted.",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Contemporary independent reporting explicitly identifies this handle; current company account references the same handle. Direct X access is restricted."
+      },
+      "source_ids": [
+        "S14",
+        "S15"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.volex.com/",
+      "action": "add",
+      "verification": "Current company website for the business he leads and substantially beneficially owns.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Current company website for the business he leads and substantially beneficially owns."
+      },
+      "source_ids": [
+        "S4",
+        "S7"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0093",
+      "name": "Hedge funds",
+      "summary": "Atticus equity partnership produced his original independently earned fortune.",
+      "relationship_type": "owner_operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "A defining material wealth-creation specialism, rather than passive investment or brief employment; avoids redundant generic finance tags.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Contemporary reporting and primary career records establish the sustained partnership and personal wealth mechanism."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S10"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "field": "Instagram",
+      "value": "https://www.instagram.com/nathanielrothschild1/",
+      "confidence": {
+        "score": 65,
+        "band": "low",
+        "reason": "Named by secondary profile coverage, but no reliable direct official cross-link or accessible account biography was obtained; not proposed."
+      },
+      "source_ids": [
+        "S16"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "London",
+      "confidence": {
+        "score": 65,
+        "band": "low",
+        "reason": "Input narrative and Wikipedia agree, but no sufficiently independent primary or strong biographical birthplace evidence was obtained."
+      },
+      "source_ids": [
+        "S12"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/profile/nathaniel-rothschild/",
+      "title": "Nathaniel Rothschild: profile dated 1 March 2012",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant profile body read. Historical Banking wealth category, USD 1 billion estimate, Canadian citizenship and Klosters base. Inheritance wording alongside heir-apparent language is insufficient to establish a dated principal-asset transfer."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.the-independent.com/news/uk/home-news/from-libya-to-london-the-world-of-a-wild-child-turned-powerbroker-1776482.html",
+      "title": "From Libya to London: the world of a wild child turned power-broker, 23 August 2009",
+      "publisher": "The Independent",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full substantive biographical body read. Distinguishes personally earned Atticus fortune from a projected future paternal inheritance. Client investment assets are not individual wealth."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.standard.co.uk/business/markets/after-his-bumi-exit-what-does-the-future-hold-for-nat-rothschild-8214761.html",
+      "title": "After his Bumi exit, what does the future hold for Nat Rothschild?",
+      "publisher": "Evening Standard",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Early work with his father on the 1989 tobacco bid, participation in Russia visits and resulting business contacts, trainee banking work and Atticus partnership."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.volex.com/media/bk3ne401/volex_ar_2026_web.pdf",
+      "title": "Annual Report and Accounts 2026",
+      "publisher": "Volex",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Relevant primary PDF sections downloaded into memory and extracted. Printed pages 10 and 91 verify CEO transition in November 2025; pages 127 and 130 (PDF indices 128 and 131) disclose 47,393,110 beneficial shares directly and through NR Holdings at 31 March 2026."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.investegate.co.uk/index.php/announcement/rns/volex--vlx/holding-s-in-company/9796094",
+      "title": "Holding(s) in Company, 29 September 2026",
+      "publisher": "Volex via RNS/Investegate",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full TR-1 body directly read, excluding the site's AI summary. September notification gives 47,400,610 voting rights, 26.0185%, and names Nathaniel as ultimate controlling person; NR Holdings carries 23.1037% in the chain."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://stockanalysis.com/quote/lon/VLX/transcripts/740568-agm-2024/",
+      "title": "Volex AGM 2024 transcript",
+      "publisher": "Volex remarks via Quartr/Stock Analysis",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant shareholder question and Rothschild response read. He identifies the company as a substantial part of his net worth and his primary business focus. This is personal materiality evidence, not an inference from company size alone."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.volex.com/investors/year-in-review-2026",
+      "title": "Year in Review 2026",
+      "publisher": "Volex",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Current electrical manufacturing activities and annual-report links; broad customer sectors do not make the underlying company a diversified personal portfolio."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.standard.co.uk/lifestyle/london-life/my-winners-are-ahead-of-my-losers-and-that-s-what-business-is-about-nat-rothschild-on-money-modesty-and-feeling-a-bit-swiss-9815749.html",
+      "title": "Nat Rothschild on money, modesty and feeling a bit Swiss, 2014",
+      "publisher": "Evening Standard",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full interview read. Personally states Canadian passport and absence of British citizenship; Swiss citizenship is then an aspiration. Discusses personally earned investing wealth and Klosters home."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.thejc.com/life/the-son-may-eclipse-the-father-xzjiqwil",
+      "title": "The son may eclipse the father, 7 July 2011",
+      "publisher": "The Jewish Chronicle",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Substantive complete relevant indexed paragraphs read; direct page partly paywalled. Reports 35% in Five Arrows and RIT ownership, but does not establish acquisition route or current principal-wealth proportion."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://family.rothschildarchive.org/people/178-nathaniel-philip-victor-james-nat-rothschild-1971",
+      "title": "Nathaniel Philip Victor James (Nat) Rothschild (1971-)",
+      "publisher": "The Rothschild Archive",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete indexed profile body read; direct endpoint intermittently failed. Exact full name, parents, history education and career. Apparent errors in parental death chronology are excluded; current executive title is sourced separately."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.roic.ai/quote/VLX.L/transcripts/2024-year/2-quarter",
+      "title": "Volex half-year presentation, 27 November 2023",
+      "publisher": "Volex remarks via Roic AI",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant Rothschild answers read, especially continuous improvement and internal production sections. Supports the factory-method narrative; financial promotional claims are omitted."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://en.wikipedia.org/wiki/Nathaniel_Rothschild,_5th_Baron_Rothschild",
+      "title": "Nathaniel Rothschild, 5th Baron Rothschild",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full biographical body and references inspected for identity and source discovery. Exact profile confirmed; unsupported citizenship claims and birthplace are not automatically imported."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://www.linkedin.com/posts/volex_our-executive-chairman-nat-rothschild-visited-activity-7142844944875995137-kPAk",
+      "title": "Volex Tijuana visit: official post",
+      "publisher": "Volex on LinkedIn",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full public post and HTML link target read. Named executive chairman links directly to nat-rothschild-04b3a311a."
+      ]
+    },
+    {
+      "id": "S14",
+      "url": "https://finance.detik.com/bursa-dan-valas/d-2539449/bakrie-rothschild-perang-di-twitter-pasca-cerai",
+      "title": "Bakrie-Rothschild Perang di Twitter Pasca Cerai, 28 March 2014",
+      "publisher": "detikFinance",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article read. Explicit attribution of personal Twitter handle NatRothschild1; dispute details are not used in the biography."
+      ]
+    },
+    {
+      "id": "S15",
+      "url": "https://www.sotwe.com/Volex?lang=en",
+      "title": "Volex public Twitter/X feed mirror",
+      "publisher": "Sotwe reproduction of Volex",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Substantive indexed company post read; identifies the executive chairman's NatRothschild1 handle in its Sky News interview announcement. Mirror corroborates, rather than independently authenticates, the account."
+      ]
+    },
+    {
+      "id": "S16",
+      "url": "https://www.mengerti.id/sosok/66413282089/agama-nat-rothschild-apa-profil-dan-biodata-sahabat-dekat-prabowo-subianto-umur-istri-instagram?page=3",
+      "title": "Nat Rothschild profile and social handles",
+      "publisher": "Mengerti",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Relevant indexed biographical section read. Lists an Instagram candidate; weak corroboration and errors elsewhere prevent verification."
+      ]
+    },
+    {
+      "id": "S17",
+      "url": "https://www.forbes.com/sites/jimdobson/2019/12/13/billionaire-superyacht-showdown-whos-who-in-st-barths-for-new-years-2020/",
+      "title": "Billionaire Superyacht Showdown, 13 December 2019",
+      "publisher": "Forbes contributor Jim Dobson",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant body read. Names Nathaniel Rothschild in relation to Planet Nine. Contributor credits Superyachtfan for ownership sourcing; used only as corroboration to the already precise personal identity."
+      ]
+    },
+    {
+      "id": "S18",
+      "url": "https://www.sec.gov/Archives/edgar/data/2123475/000121390026041578/filename1.htm",
+      "title": "Snow Rothschild Acquisition Corp registration material, 2026",
+      "publisher": "US Securities and Exchange Commission",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant management and founding-investor sections read. Confirms continuing investment activity as an alternative role, without proving that the SPAC or other investments outweigh the personally identified Volex core."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Research cutoff 30 September 2026; accessed 1 October 2026. No preexisting dossier was found. Only the assigned dossier is written; immutable source, shared cohort and live website remain untouched.",
+    "Identity is exceptionally strong from the precise name, existing full-name biography, birth date, family and Volex career. Vessel reporting is corroborative and partly derivative, not a legal beneficial-ownership finding.",
+    "Current Manufacturing is independently supported by substantial beneficial equity plus the owner's explicit personal materiality statement and continuing executive responsibility. It is not merely an origin fallback, company revenue attribution or inference from a job title. A full private asset schedule is unavailable.",
+    "Atticus client assets, total Volex value, family wealth estimates and future inheritance projections are not assigned as personal net worth. The Forbes estimate is historical and the dossier makes no current net-worth proposal.",
+    "Advantaged start is a medium-confidence inference from actual formative family investment experience and commercial introductions. It does not assert a gift, inherited operating company or particular launch-funding sum. Mixed is the strongest alternative because family-company equity is reported, but its legal route, timing and relative personal materiality remain unclear.",
+    "Present relationship is Operator, despite continuing investment interests: core ownership and chief executive responsibilities are positive. Volex was not founded by Rothschild. Snow Rothschild's existence does not establish a larger current investment asset base.",
+    "Canadian citizenship is directly self-confirmed and independently corroborated. Swiss residence is not citizenship; later Swiss or Montenegrin nationality claims lack adequate corroboration here. No secondary nationality is proposed. London remains a low-confidence candidate and optional hereditary title is not proposed.",
+    "All supported social types were assessed: LinkedIn, Instagram, Personal Website, Facebook, Twitter/X, Youtube, TikTok, Wikipedia, Forbes, Company Website, Vimeo, Flickr, Trip Advisor and Zillow. No reliable personal Facebook, Youtube, TikTok, separate website or other minor-platform account was found. Corporate channels and interview videos are not personal accounts. Instagram is held as a candidate, and unsupported dynasty/Illuminati profiles are excluded.",
+    "Direct LinkedIn profile and X access were restricted; LinkedIn is verified through an official company post's exact HTML target and X through explicit contemporaneous reporting with current corporate corroboration. No private or login-only account content was used.",
+    "The archive contains apparent parental-date errors; these are not adopted. Its exact-name and education information is consistent with independent records. The annual report supersedes the old executive-chairman role.",
+    "The single Hedge funds tag captures a defining historical personal wealth mechanism. Customer markets such as electric vehicles do not justify extra sector tags, and family-name or noble-title facts remain ordinary research context absent an appropriate active tag.",
+    "Source-hidden pair uses separate early-career and operating-method material. The long reflects his stated management practices, rather than independent measurement of their financial effectiveness. No transient disputes, boats or estimated wealth totals are included."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent approved four classifications and complementary pair after independent source review, including the personal materiality exchange. Complete terminal research, subject to final strict validation."
+  }
+}

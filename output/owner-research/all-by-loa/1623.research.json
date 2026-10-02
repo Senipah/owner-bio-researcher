@@ -1,0 +1,1279 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1623,
+    "display_name": "Mansour Akram Ojjeh",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The distinctive full name, Saudi nationality, age context and historical Kogo relationship identify the TAG leader and McLaren shareholder. A broker's documented history independently names Mansour Ojjeh as the vessel's commissioner. The McLaren obituary and business sources consistently identify his father Akram and the same life dates. He is not his father, brother Abdulaziz or son Sultan."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "secondary_nationality",
+      "main_residence_country",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "main_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "French-Saudi businessman, TAG group leader and long-standing McLaren shareholder.",
+    "defining_work": "Deploying family investment capital into racing technology, road cars, aviation and the development of TAG Heuer.",
+    "formative_context": "Son of TAG founder Akram Ojjeh; educated in Paris and California before taking leadership of the family investment platform.",
+    "decisive_moment": "Financing Porsche's turbo engine programme for McLaren and backing its expansion into road cars.",
+    "enduring_dimensions": [
+      "Family investment stewardship and brand building.",
+      "Technical investment decisions connecting racing and road-car manufacture.",
+      "Strategic engagement paired with authority delegated to executives."
+    ],
+    "character_detail": "He joined the executive delivering a difficult driver-contract decision rather than leaving it entirely to management.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "French-Saudi investor and family investment group leader."
+      },
+      {
+        "mode": "defining_achievement",
+        "angle": "Financing the engine programme that helped deliver consecutive championships."
+      }
+    ],
+    "excluded_transient_context": [
+      "Vessel identity evidence and ownership chronology",
+      "Net worth estimates, present descendants and estate disputes",
+      "Clinical information",
+      "Uncertain birthplace and private trust distribution"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S6"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "inherited_operator",
+      "investor_philanthropist"
+    ],
+    "notes": "Two shared anchors orient the pair: TAG and McLaren shareholding. The short owns family background, education and the watch-brand acquisition and sale. The long adds the engine programme, road-car decisions and a concrete management practice, ending with personal participation in a difficult staff conversation. It does not repeat the formation or watch-brand bundle; shortening it into the short would erase technical investment and management texture. Wealth inference and source language remain outside both biographies."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Exact-name and Forbes profile-domain searches were performed first. Forbes business coverage of McLaren ownership was found and read through its indexed body, but no attributable personal Forbes profile was located."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "service",
+    "label": "Service",
+    "summary": "Service is inferred for the original fortune transferred through the family TAG platform: commercial agency commissions rather than manufacturing the goods brokered.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "The detailed 1999 TAG profile identifies Akram's business-agent commissions on major Saudi procurement as the original capital, then reinvestment into the family investment empire that Mansour took over. This is a positive source-of-fortune mechanism, not a classification from his father's occupation alone. The family trust and continued control link that platform to Mansour's economic position. Manufacturing and Aviation describe later underlying investments and procured products, not the original intermediary activity. Finance & Investments describes subsequent allocation rather than the first material fortune. The broad Service category is therefore the least-specific supported original sector."
+    },
+    "source_ids": [
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "primary_industry": {
+    "classification": "automotive",
+    "label": "Automotive",
+    "summary": "Automotive is inferred for the principal identifiable retained private business interest at his death in June 2021, through the material McLaren holding.",
+    "confidence": {
+      "score": 76,
+      "band": "medium",
+      "reason": "McLaren's annual report identifies TAG Automotive's substantial group equity holding, while its segment accounts show road-car operations as the largest underlying business. The company obituary identifies Mansour as a major shareholder with continuing strategic influence. Separately, the TAG aviation executive confirms the 2019-20 disposal of the aviation operations, and TAG Heuer had already been sold. These are convergent positive premises for a retained automotive core, not a sector assigned merely from a famous directorship. The 14.30% group stake belongs to the TAG vehicle and is not claimed wholly as his personal percentage. Cash and reinvested disposal proceeds, other family holdings and the exact terminal beneficial distribution are unquantified; this limits confidence. Diversified was tested but several simultaneously material terminal sectors are not demonstrated. Finance & Investments would overlook the substantive operating assets within the holding vehicle. Current means terminal lifetime, not descendants' holdings in 2026. The creation-sector fallback was considered but is unnecessary because the retained material business and sector are positively evidenced."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S8",
+      "S9"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "Family transfer is inferred from succession to the father-created, family-benefit TAG trust and investment platform, followed by active expansion.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "The evidence goes beyond a wealthy surname: the regulatory ownership chain locates TAG in a trust solely for the Ojjeh family, with Mansour among its trustees; the detailed business history says he took over his father's established financial empire, and reporting describes the father's lifetime trust arrangements. That materially transferred family platform supported subsequent acquisitions and investment. Exact personal distribution and whether a particular economic interest vested before or after Akram's death remain unclear, so the broad family-transfer category is preferred to a narrower inheritance mechanism. Inherited and expanded is a plausible alternative, but later expansion does not establish the initial legal route. Self-made with an advantaged start would imply a materially separate self-built fortune; the positive evidence instead shows continued family-platform assets and leadership. Broad Self-made alone would omit the established transferred platform."
+    },
+    "source_ids": [
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "family_office_principal",
+    "label": "Family office principal",
+    "summary": "Family office principal is inferred for his terminal role directing the family investment platform and its important retained McLaren interest.",
+    "confidence": {
+      "score": 80,
+      "band": "medium",
+      "reason": "The TAG family trust ownership chain, leadership of its acquisitions, later aviation disposals and continuing strategic participation at McLaren establish active family-capital direction. The management account describes an owner of several businesses who chose and supported executives while retaining significant strategic decisions. This is a practiced economic role in material family assets, not a job title or mere family association. He had left the McLaren board in 2020, so a continuing formal directorship is not claimed. Investor is a credible broader alternative; family office principal better captures the documented family-controlled allocation platform. Operator overstates daily management, which was delegated, while Heir / family shareholder understates his sustained allocation and oversight. No claim is made that he owned every trust asset outright."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4",
+      "S5",
+      "S6",
+      "S8"
+    ]
+  },
+  "biography": {
+    "plain_text": "Mansour Ojjeh was a French-Saudi businessman who led TAG, the investment group founded by his father, Akram. Educated in Paris and California, he became a major McLaren shareholder and developed interests in aviation and luxury watches. He bought Heuer, built the TAG Heuer brand and sold the watchmaker to LVMH.",
+    "html": "<p>Mansour Ojjeh was a French-Saudi businessman who led TAG, the investment group founded by his father, Akram. Educated in Paris and California, he became a major McLaren shareholder and developed interests in aviation and luxury watches. He bought Heuer, built the TAG Heuer brand and sold the watchmaker to LVMH.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Company-authored biography, specialist watch reporting and regulatory nationality evidence directly support the selected formation and business facts. The sale describes the controlled watch business, not sole ownership of all its equity."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S5"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "McLaren shareholder Mansour Ojjeh committed TAG funds to finance Porsche's development of a turbo engine for the team. The partnership helped Niki Lauda and Alain Prost win three consecutive drivers' championships. His ambitions extended beyond racing: he pressed for the creation of the McLaren F1 road car and later supported the establishment of McLaren Automotive.\n\nOjjeh left daily management to executives while remaining involved in strategic decisions, including the choice of engine partners. He expected to understand each business well enough to judge its management, but gave managers authority to run it. He also took a personal role in difficult staff decisions, joining Zak Brown when they told driver Stoffel Vandoorne that his contract would not be renewed.",
+    "html": "<p>McLaren shareholder Mansour Ojjeh committed TAG funds to finance Porsche's development of a turbo engine for the team. The partnership helped Niki Lauda and Alain Prost win three consecutive drivers' championships. His ambitions extended beyond racing: he pressed for the creation of the McLaren F1 road car and later supported the establishment of McLaren Automotive.</p>\r\n<p>Ojjeh left daily management to executives while remaining involved in strategic decisions, including the choice of engine partners. He expected to understand each business well enough to judge its management, but gave managers authority to run it. He also took a personal role in difficult staff decisions, joining Zak Brown when they told driver Stoffel Vandoorne that his contract would not be renewed.</p>\r\n",
+    "word_count": 118,
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "The McLaren-authored obituary and Adam Cooper account with executive interviews support engine funding, championship context, road-car decisions, delegated management and the Vandoorne conversation."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "secondary_nationality",
+      "value": "French",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "The regulatory filing explicitly identifies dual Saudi Arabian and French citizenship; this is independent of birthplace."
+      },
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "TAG Group leader and McLaren shareholder",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Company and specialist biographies identify the defining investment leadership and material shareholding."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Consistent identification in the company-authored and specialist biographies."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "25",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "The company-authored obituary gives the exact birth date, corroborated by specialist watch-industry reporting."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "September",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "The company-authored obituary gives the exact birth date, corroborated by specialist watch-industry reporting."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1952",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "The company-authored obituary gives the exact birth date, corroborated by specialist watch-industry reporting."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "action": "correct_existing",
+      "existing_value": "Alive",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Company-authored and contemporary independent obituaries document death on 6 June 2021."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mansour_Ojjeh",
+      "action": "add",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Exact full name, father, TAG and McLaren roles, life dates and family context agree with independently read sources."
+      },
+      "verification": "Exact identity and career agree with company-authored and specialist sources; disputed birthplace content is not imported.",
+      "source_ids": [
+        "S1",
+        "S12"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.mclaren.com/racing/",
+      "action": "add",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Official site of the business in which he held a substantial, defining economic and strategic role until his death."
+      },
+      "verification": "Official McLaren Racing site opened and matched to his documented historical shareholding and strategic leadership. This is a company website, not a personal social account.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S13"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0129",
+      "name": "Motorsport",
+      "summary": "Long-standing McLaren shareholder and strategic backer of its engine programme and racing development.",
+      "relationship_type": "substantial_owner_and_strategic_leader",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Sustained substantial ownership and consequential strategic decisions establish defining motorsport participation, independently of sponsorship or recreational interest.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Company history and executive testimony establish decades of ownership and active strategic participation."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "tag_id": "tag_3629",
+      "name": "Watchmaking",
+      "summary": "Led the acquisition and development of Heuer as TAG Heuer before its 1999 sale.",
+      "relationship_type": "controlling_investor_and_business_leader",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Substantial ownership and sustained development of a watchmaking business satisfy the industry participation contract; this is not inferred from watch collecting.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Specialist reporting identifies his controlling family group, acquisition, brand development and disposal."
+      },
+      "source_ids": [
+        "S1",
+        "S3",
+        "S6"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "field": "birth_country",
+      "value": "France",
+      "confidence": {
+        "score": 65,
+        "band": "low",
+        "reason": "RaceFans and other obituary reporting give Paris, whereas the immutable input says Saudi Arabia and other reference accounts conflict. No decisive primary birthplace record was located; the existing country is not changed."
+      },
+      "source_ids": [
+        "S0",
+        "S11",
+        "S12"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "6",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The company-authored obituary and contemporary reporting establish the exact death date."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "reason": "Supported exact date, but the immutable Alive inventory classifies death fields as inapplicable. Apply after the mortality correction is reconciled; the verified date remains in this review ledger."
+    },
+    {
+      "field": "death_month",
+      "value": "June",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The company-authored obituary and contemporary reporting establish the exact death date."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "reason": "Supported exact date, but the immutable Alive inventory classifies death fields as inapplicable. Apply after the mortality correction is reconciled; the verified date remains in this review ledger."
+    },
+    {
+      "field": "death_year",
+      "value": "2021",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The company-authored obituary and contemporary reporting establish the exact death date."
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "reason": "Supported exact date, but the immutable Alive inventory classifies death fields as inapplicable. Apply after the mortality correction is reconciled; the verified date remains in this review ledger."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1623",
+      "title": "Immutable owner inventory: person 1623",
+      "publisher": "Repository export",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Mansour Akram Ojjeh, Saudi Arabian nationality, Saudi Arabia birth country, age 68 at 2020-05-07 and Alive mortality value. Kogo, vessel 22338, historical relationship 2003-2012. No existing social links. Input is preserved; mortality correction is separately evidenced and vessel dates are not rewritten."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.asp70.org/class_profile.cfm?member_id=8822937",
+      "title": "Mansour Ojjeh, 25 September 1952 - 6 June 2021",
+      "publisher": "McLaren-authored obituary reproduced by American School of Paris Class of 1970",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full reproduced obituary read. Dates, American School of Paris and California education, father-created TAG, McLaren shareholding, Porsche engine finance, road-car initiatives, TAG Heuer development and aviation investments. The original linked McLaren obituary redirected to an unavailable group site; this is transparently a public authored reprint, not a successful read of that original endpoint."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.motorsport.com/f1/news/mansour-ojjeh-the-unknown-driving-force-behind-mclaren/6554278/",
+      "title": "Mansour Ojjeh: The unknown driving force behind McLaren",
+      "publisher": "Motorsport.com / Adam Cooper",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article read. Executive interviews describe consequential investment and strategic decisions, engine partners, the road-car venture, delegation of everyday management, and the joint conversation with Stoffel Vandoorne. Distinguishes leaving the board in 2020 from continuing strategic involvement and future family stewardship by Sultan."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://nationaljeweler.com/articles/9868-mansour-ojjeh-the-tag-in-tag-heuer-dies-at-68",
+      "title": "Mansour Ojjeh, the TAG in TAG Heuer, dies at 68",
+      "publisher": "National Jeweler",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full June 2021 report read. Exact birth date, death in Geneva, family-owned TAG acquisition of Heuer in 1985, brand development and LVMH purchase in 1999. TAG was the largest shareholder; the reported company transaction price is not attributed wholly as his personal proceeds."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://ultimatejet.com/interview-with-florent-series-managing-director-tag-aviation-sa-and-sales-director-tag-aviation-europe/",
+      "title": "Interview with Florent Series, Managing Director TAG Aviation SA",
+      "publisher": "Ultimate Jet",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full April 2021 executive interview read. Ojjeh family withdrew from aviation through 2019-20 transactions: maintenance to Dassault, Farnborough to Macquarie, aircraft management and charter to Young Brothers, and the Geneva terminal to Signature. Provides direct counterevidence to treating historic aviation businesses as his retained terminal operating assets."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://downloads.regulations.gov/DOT-OST-2005-22829-0001-0001/attachment_1.pdf",
+      "title": "TAG ownership and nationality filing, DOT-OST-2005-22829",
+      "publisher": "US Department of Transportation regulatory filing",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Indexed substantive sections 6-7 and footnote read. Ultimate TAG Holding ownership is the Akram Ojjeh Trust for the sole benefit of the Ojjeh family, with Mansour, Abdulaziz and Jean de Roquefeuil as trustees. Footnote explicitly states the brothers hold dual Saudi Arabian and French citizenship. Direct PDF retrieval failed and the complete filing was not read; no individual beneficial percentage or distribution schedule is asserted."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.grandprix.com/features/joe-saward/financial-mighty-mclaren.html",
+      "title": "Financial: Mighty McLaren",
+      "publisher": "GrandPrix.com / Joe Saward",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full 1999 profile read. Father built the financial empire through agency commissions on Saudi purchases and reinvested the capital. Mansour took over and diversified; the TAG platform is family controlled through a private trust structure. Describes major business divisions, acquisitions and major joint decisions with Dennis while Dennis handled everyday operations. Historic divisions are not assumed retained in 2021."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.lemonde.fr/en/m-le-mag/article/2025/07/06/the-arms-dealer-the-general-s-daughter-and-the-speed-demon-an-inheritance-battle_6743074_117.html",
+      "title": "An inheritance battle in the Ojjeh family",
+      "publisher": "Le Monde",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Relevant indexed article passages read, including father-created commission capital, lifetime trust arrangements and Mansour designated to lead the platform. Used narrowly for family-transfer context, without importing disputes, allegations or a personal percentage."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://uploads1.craft.co/uploads/operating_source/document/981457/ff2a17188d7a2294.pdf",
+      "title": "McLaren Group Limited annual report and consolidated financial statements, 31 December 2020",
+      "publisher": "McLaren Group; public Craft mirror",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant report pages read through PDF text extraction: segment accounts on pages 56-57 and shareholder table on page 81. TAG Automotive holds 14.30% of the group; Automotive is the largest operating segment, also strongly dominant in 2019. Racing includes an intra-group heritage transfer that cannot be treated as independent external revenue. The holding is the vehicle stake, not a claim to Mansour personally owning that entire percentage."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.forbes.com/sites/csylt/2018/03/03/revealed-mclaren-takes-formula-one-board-seat/",
+      "title": "Revealed: McLaren takes Formula One board seat",
+      "publisher": "Forbes / Christian Sylt",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Substantive indexed article body read after Forbes-first searching; later direct opening failed. Identifies Ojjeh as the second-largest single shareholder after the Dennis disposal and the sovereign shareholder as controlling. Establishes historical relative stake significance, not the exact 2021 personal percentage or a Forbes profile."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://yachtmasters.com/wp-content/uploads/2022/03/Kogo-for-sale.pdf",
+      "title": "Kogo sales brochure and documented history",
+      "publisher": "Yacht Masters",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Relevant PDF history page read; names Mansour Ojjeh as the vessel commissioner and describes subsequent ownership. Provides the independent bridge to the immutable owner record. All vessel particulars are excluded from biographies and wealth-sector decisions."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.racefans.net/2021/06/11/farewell-to-a-man-whose-passion-for-competition-shaped-mclaren-and-f1/",
+      "title": "Farewell to a man whose passion for competition shaped McLaren and F1",
+      "publisher": "RaceFans",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read through direct HTTP after the browser endpoint returned an access error. Reports Paris birth and a move to Geneva, contributing to the birthplace discrepancy and broad residence context. Not treated as a definitive birth certificate or sufficiently specific terminal principal-residence record."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://en.wikipedia.org/wiki/Mansour_Ojjeh",
+      "title": "Mansour Ojjeh",
+      "publisher": "Wikipedia",
+      "tier": 4,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Exact person page opened and cross-checked for link identity against independently read company and specialist accounts. Birthplace claims conflict with other accounts and are not imported. Not a sole wealth source."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://www.mclaren.com/racing/",
+      "title": "McLaren Racing",
+      "publisher": "McLaren",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Official company website opened and matched to independently documented defining historical ownership and strategic participation. Company link only; official corporate social accounts are not proposed as personal accounts."
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Terminal personal assets and economic materiality",
+      "detail": "All current fields refer to his lifetime ending 6 June 2021. The retained TAG McLaren stake is substantial, and operating accounts establish its automotive core. Corporate stake percentages and entire family trust assets are not assigned wholly to Mansour. Cash proceeds and other personal or family assets could change relative portfolio weights; Automotive is an explicit medium-confidence principal-asset inference, not a balance-sheet assertion. Known disposed aviation and watch operations are excluded. Original Service differs from retained Automotive; origin-sector fallback was tested but not needed."
+    },
+    {
+      "topic": "Family transfer and practiced relationship",
+      "detail": "The father-created platform, family-benefit trust and succession to control supply positive transfer premises. The precise individual allocation and timing of vested beneficial rights remain unresolved. Marriage / family transfer is the least-specific supported mechanism, without inventing marriage as the route. Continued growth within those assets does not establish a separate self-made fortune. Family office principal describes sustained capital direction, acquisitions and disposals rather than daily operation; directorship ended in 2020 but strategic involvement continued."
+    },
+    {
+      "topic": "Personal details and conflicting birthplace",
+      "detail": "The source mortality value Alive is superseded by well-corroborated death on 6 June 2021. Birth date and French secondary nationality are supported independently. Paris is reported in credible obituaries, Saudi Arabia appears in the immutable input, and reference accounts also differ. No birthplace or birth-country correction passes the import threshold. Geneva residence context is insufficiently precise for a terminal main-residence proposal; the blank is preserved. System-derived ages remain untouched."
+    },
+    {
+      "topic": "Forbes and full personal-profile checks",
+      "detail": "Forbes was checked first: coverage found, no exact personal profile. LinkedIn, Instagram, Facebook, Twitter/X, YouTube, TikTok, Personal Website, Wikipedia and Company Website were checked, along with Vimeo, Flickr, Trip Advisor and Zillow. Results were company accounts, tribute posts, photographs, fan coverage, relatives or uncorroborated namesakes. TikTok restricts automated access. No personal account passes identity verification. Only the exact Wikipedia page and official McLaren company website are proposed. The sold aviation company and unrelated TAG businesses are not used as his current company link."
+    },
+    {
+      "topic": "Access and source interpretation",
+      "detail": "The McLaren-authored obituary was fully read on an alumni-site reprint because the original endpoint failed. The 2020 company report was read on a public mirror. DOT ownership and nationality passages and the relevant Forbes and Le Monde passages were read as indexed substantive bodies; direct access limitations are disclosed rather than represented as complete document reads. Regulatory evidence identifies collective trust benefit and trustees, not Mansour as sole beneficial owner. Family disputes, health information and speculative net worth estimates are unnecessary and omitted."
+    },
+    {
+      "topic": "Active tag selection",
+      "detail": "Motorsport and Watchmaking cover two distinct, materially documented activities. Both are former but defining. Motorsport is justified by durable substantial shareholding and strategic participation, not sponsorship alone. Watchmaking follows a substantial acquisition and fourteen-year business development mandate. Generic investment, wealth and collector labels are omitted; no taxonomy candidates are created."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal research and parent source, classification and complementary-pair review completed. Four classifications are separately reasoned and refer to terminal lifetime where applicable. Only the assigned dossier is saved. Strict source and editorial validation is the completion check."
+  }
+}

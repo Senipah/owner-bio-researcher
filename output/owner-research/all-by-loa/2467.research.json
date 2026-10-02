@@ -1,0 +1,1287 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 2467,
+    "display_name": "Mr Erbil Mehmet Arkin",
+    "identity_confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Exact full name in UK and Malta records, the Tempus Fugit company relationship and a supplier's direct account of the matching vessel owner converge with the Arkın Group founder."
+    }
+  },
+  "research_status": "complete",
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "researchable_missing_details": [
+      "nationality",
+      "secondary_nationality",
+      "main_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    },
+    "existing_socials": [],
+    "raw_blank_details": [
+      "name_suffix",
+      "nationality",
+      "secondary_nationality",
+      "main_residence_country",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "missing_person_relevant_social_types": [
+      "Facebook",
+      "Twitter",
+      "Youtube",
+      "LinkedIn",
+      "Instagram",
+      "Personal Website",
+      "TikTok"
+    ],
+    "missing_supported_social_types": [
+      "Facebook",
+      "Twitter",
+      "Youtube",
+      "LinkedIn",
+      "Trip Advisor",
+      "Vimeo",
+      "Flickr",
+      "Instagram",
+      "Wikipedia",
+      "Forbes",
+      "Zillow",
+      "Company Website",
+      "Personal Website",
+      "TikTok"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Forbes-first exact name, spelling-variant and profile-domain searches found no personal Forbes profile."
+    }
+  },
+  "proposed_socials": [
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.arkingroup.com/",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Official group identifies the founder and his continuing business platform."
+      },
+      "source_ids": [
+        "S5",
+        "S6"
+      ],
+      "verification": "Official site and its founder/chair statement match independently documented businesses and identity."
+    },
+    {
+      "type_id": "5",
+      "type": "LinkedIn",
+      "url": "https://tr.linkedin.com/in/erbil-arkin-846a4043",
+      "confidence": {
+        "score": 82,
+        "band": "medium",
+        "reason": "Exact rare name, group affiliation, three independently corroborated businesses and university match."
+      },
+      "source_ids": [
+        "S10",
+        "S11",
+        "S5"
+      ],
+      "verification": "Full indexed profile body names Arkin Group, Arkin Pruva, Hersham Golf and De Montfort. These independent identity anchors support attribution despite limited public activity. Turkey location is not imported as current residence."
+    }
+  ],
+  "candidates_requiring_review": [],
+  "editorial_note": null,
+  "wealth_creation_industry": {
+    "classification": "gambling_casinos",
+    "label": "Gambling & Casinos",
+    "summary": "Casino and betting businesses are the best-supported principal fortune-creation sector.",
+    "confidence": {
+      "score": 85,
+      "band": "high",
+      "reason": "First-person commercial history describes a licensed casino launch with investors, later ownership consolidation and a profitable British betting-shop exit. Primary casino-company ownership corroborates personal economics. Hotel and industrial ventures also mattered, but sustained gambling entrepreneurship provides the strongest original core; no company valuation is equated with his wealth."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S7"
+    ]
+  },
+  "primary_industry": {
+    "classification": "gambling_casinos",
+    "label": "Gambling & Casinos",
+    "summary": "Gambling & Casinos is an explicit origin-sector fallback for current principal private wealth.",
+    "confidence": {
+      "score": 73,
+      "band": "medium",
+      "reason": "Retained casino/hotel businesses, overseas interests and an art collection are identifiable, but their personal net economic weights cannot be ranked. Current hotel expansion does not establish Hospitality as dominant. The marina announcement transfers management, not proven asset ownership. The original sector remains the permitted proxy; no present portfolio ranking is asserted."
+    },
+    "source_ids": [
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "He built and consolidated personally owned operating businesses.",
+    "confidence": {
+      "score": 83,
+      "band": "medium",
+      "reason": "An investor-backed first casino and subsequent partner buyouts support a personally built principal platform. His later oil venture involved his father-in-law and brother-in-law, but no gift, inherited operating core or concessional financing is established. That commercially useful family connection and incomplete original financing prevent a narrow independent-start classification."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S7"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Founder remains the best-supported relationship to his continuing principal business platform.",
+    "confidence": {
+      "score": 80,
+      "band": "medium",
+      "reason": "Direct casino equity, explicit hotel partner buyouts, subsequent personal descriptions of the businesses and continuing group founder/chair authority provide positive retained-core evidence. This is an inference across dated ownership and current leadership, not a paid-title assumption. Unranked outside assets and absent current consolidated personal ownership percentages limit confidence; no broad disposal or complete delegation was established."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "biography": {
+    "plain_text": "Erbil Arkın is a Turkish Cypriot businessman who built casino and hotel interests through the Arkın Group. He obtained his first casino licence in 1977 and brought in investors to launch the venture. His businesses expanded into British betting shops and hotels in northern Cyprus, including the Colony and Palm Beach.",
+    "html": "<p>Erbil Arkın is a Turkish Cypriot businessman who built casino and hotel interests through the Arkın Group. He obtained his first casino licence in 1977 and brought in investors to launch the venture. His businesses expanded into British betting shops and hotels in northern Cyprus, including the Colony and Palm Beach.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Firsthand business history and primary educational sources support the distinct narrative, without promotional rankings or private vessel content."
+    },
+    "source_ids": [
+      "S4",
+      "S5",
+      "S7"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "A visit to London's Tate Gallery at sixteen introduced businessman Erbil Arkın to Rodin's The Kiss and helped inspire his later sculpture collection. Raised in a working-class immigrant family, he paid his way through art and design studies with grants and jobs in shops and restaurants.\n\nHe founded the Arkin University of Creative Arts and Design in 2017, seeking to combine academic teaching with students making their own work. His Rodin collection became publicly accessible alongside the university's opening and later moved to a permanent gallery in Kyrenia. Students use the sculptures for close study during courses, and the public can visit free of charge.",
+    "html": "<p>A visit to London's Tate Gallery at sixteen introduced businessman Erbil Arkın to Rodin's The Kiss and helped inspire his later sculpture collection. Raised in a working-class immigrant family, he paid his way through art and design studies with grants and jobs in shops and restaurants.</p>\r\n<p>He founded the Arkin University of Creative Arts and Design in 2017, seeking to combine academic teaching with students making their own work. His Rodin collection became publicly accessible alongside the university's opening and later moved to a permanent gallery in Kyrenia. Students use the sculptures for close study during courses, and the public can visit free of charge.</p>\r\n",
+    "word_count": 105,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Firsthand business history and primary educational sources support the distinct narrative, without promotional rankings or private vessel content."
+    },
+    "source_ids": [
+      "S7",
+      "S8",
+      "S9"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "nationality",
+      "value": "British",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Exact full-name Companies House personal-control record explicitly identifies British nationality."
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "action": "fill_missing"
+    },
+    {
+      "field": "main_residence_country",
+      "value": "Cyprus",
+      "confidence": {
+        "score": 82,
+        "band": "medium",
+        "reason": "Current public PSC page declares Cyprus, consistent with firsthand Bellapais residence. Other corporate/social locations say Turkey, so confidence is bounded."
+      },
+      "source_ids": [
+        "S1",
+        "S7",
+        "S11"
+      ],
+      "action": "fill_missing"
+    },
+    {
+      "field": "known_for_title",
+      "value": "Businessman and art collector",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Substantial owned businesses and a sustained publicly displayed sculpture collection."
+      },
+      "source_ids": [
+        "S3",
+        "S5",
+        "S8"
+      ],
+      "action": "fill_missing"
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Consistent personal identification and pronouns in firsthand interviews and official institutional records."
+      },
+      "source_ids": [
+        "S7",
+        "S12"
+      ],
+      "action": "fill_missing"
+    },
+    {
+      "field": "birth_country",
+      "value": "Cyprus",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Both conflicting town accounts agree on Cyprus birth."
+      },
+      "source_ids": [
+        "S7",
+        "S11"
+      ],
+      "action": "fill_missing"
+    },
+    {
+      "field": "birth_month",
+      "value": "July",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Exact full-name primary UK corporate record states July 1950."
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "action": "fill_missing"
+    },
+    {
+      "field": "birth_year",
+      "value": "1950",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Primary corporate record and first-person newsletter agree."
+      },
+      "source_ids": [
+        "S1",
+        "S11"
+      ],
+      "action": "fill_missing"
+    },
+    {
+      "field": "mortality_status",
+      "value": "Alive",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Personally attended and presented diplomas at the July 2026 university ceremony."
+      },
+      "source_ids": [
+        "S12"
+      ],
+      "action": "correct_existing",
+      "existing_value": "Unknown"
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0205",
+      "name": "Gambling",
+      "summary": "Personally built and owned a sustained international gambling business.",
+      "relationship_type": "founder",
+      "temporal_scope": "current",
+      "taxonomy_value": "Required umbrella for the separate casino specialism under its binding contract.",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Personally built and owned a sustained international gambling business."
+      },
+      "source_ids": [
+        "S3",
+        "S4",
+        "S7"
+      ]
+    },
+    {
+      "tag_id": "tag_0213",
+      "name": "Casino operations",
+      "summary": "Casino ownership and operation form a defining long-term business identity.",
+      "relationship_type": "founder",
+      "temporal_scope": "current",
+      "taxonomy_value": "Specific controlled gambling operation; not incidental investment.",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Casino ownership and operation form a defining long-term business identity."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "tag_id": "tag_0321",
+      "name": "Hotel operations",
+      "summary": "Developed and consolidated multiple hotels over decades.",
+      "relationship_type": "founder",
+      "temporal_scope": "current",
+      "taxonomy_value": "Substantial personally linked operations distinct from gambling activity.",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Developed and consolidated multiple hotels over decades."
+      },
+      "source_ids": [
+        "S4",
+        "S5",
+        "S6"
+      ]
+    },
+    {
+      "tag_id": "tag_0018",
+      "name": "Art collector",
+      "summary": "Assembled a substantial Rodin collection publicly displayed and used in education.",
+      "relationship_type": "collector",
+      "temporal_scope": "current",
+      "taxonomy_value": "Not a single purchase or casual interest; a defining sustained collection.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Assembled a substantial Rodin collection publicly displayed and used in education."
+      },
+      "source_ids": [
+        "S8"
+      ]
+    },
+    {
+      "tag_id": "tag_0787",
+      "name": "Cultural institution founder",
+      "summary": "Founded an arts university and made his collection available through a permanent gallery.",
+      "relationship_type": "founder",
+      "temporal_scope": "current",
+      "taxonomy_value": "Substantial practiced institution-building with sustained cultural education, not honorary patronage.",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Founded an arts university and made his collection available through a permanent gallery."
+      },
+      "source_ids": [
+        "S8",
+        "S9",
+        "S12"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/10472963/persons-with-significant-control",
+      "title": "Arena Sports & Entertainment: personal control",
+      "publisher": "Companies House",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Exact name, July 1950, British nationality, Cyprus residence and majority personal control. No private address retained."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://offshoreleaks.icij.org/nodes/56060871",
+      "title": "Erbil Mehmet Arkin, Malta registry connections",
+      "publisher": "International Consortium of Investigative Journalists",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full registry extract read. Historic Tempus Fugit and Daima company shareholding supports identity only; no allegation or present asset inference."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://basimevi.gov.ct.tr/Portals/6/2016/122.pdf?ver=2021-04-03-144848-443",
+      "title": "Decision H(K-I)968-2016, printed page936",
+      "publisher": "Official Gazette, Northern Cyprus",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant PDF page87 extracted and read; screenshot timed out. Casino licensee Arkin Ventures: subject 4,525,242 shares after transfer, other two holders two each. Historical personal economic control, not a current cap table."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://haberkibris.com/is-insani-erbil-arkindan-tartisma-yaratacak-roportaj-2016-08-07.html",
+      "title": "Interview with Erbil Arkin, August 2016",
+      "publisher": "Haber Kıbrıs",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete relevant interview read. Initial investors, casino and betting development, partner buyouts and later in-law venture. Political views and unrelated assertions excluded."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.arkingroup.com/",
+      "title": "Arkin Group: company and activities",
+      "publisher": "Arkin Group",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Founder and continuing multi-hotel platform. Corporate narrative is promotional; no claim that all group assets are his net worth."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.arkingroup.com/tr/karpazgatemarina",
+      "title": "Karpaz Gate Marina management transition, 2024",
+      "publisher": "Arkin Group",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Entire press release read by HTTP. Founder/chair personally explains expansion; management handover distinguished from ownership acquisition. Group's yachtbuilder ownership is commercial context."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://cyprus-mail.com/2021/05/12/turkish-cypriot-collector-aims-to-leave-his-mark",
+      "title": "Turkish Cypriot collector aims to leave his mark",
+      "publisher": "Cyprus Mail",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant interview body read. Working parents, grants and employment, personal business account; town of birth conflicts with first-person newsletter. Political opinions excluded."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://arucad.edu.tr/en/the-arkin-rodin-collection-gallery-2/",
+      "title": "The Arkın Rodin Collection Gallery",
+      "publisher": "ARUCAD",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete indexed page read after direct-fetch failure. Youthful Tate encounter, personal collection, public access and teaching uses. Varying collection counts omitted."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://alvi-consult.com/files/arucad_prospektus_en.pdf",
+      "title": "Founder introduction, prospectus pages8–9",
+      "publisher": "ARUCAD, reproduced by Alvi Consult",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant first-person introduction read in indexed PDF body. Founder describes practical artistic production alongside academic learning."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://tr.linkedin.com/in/erbil-arkin-846a4043",
+      "title": "Erbil Arkin personal LinkedIn profile",
+      "publisher": "LinkedIn",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed profile body read. Company, university and multiple business links authenticate the person; sparse profile not used to rank wealth or infer residence."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://cyprusscene.com/wp-content/uploads/2020/06/The-TREE-newsletter-SUMMER-2020.pdf",
+      "title": "Get to know Erbil Arkin, Summer 2020",
+      "publisher": "Anglo Turkish Association, hosted by CyprusScene",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Relevant first-person biographical section read. Nicosia 1950 claim conflicts with later Ayia Anna account; De Montfort education and Bellapais residence. No forced town selection."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://arucad.edu.tr/en/arucad-held-its-2025-2026-academic-year-graduation-ceremony/",
+      "title": "July 2026 graduation ceremony",
+      "publisher": "ARUCAD",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant event body read. Personal attendance and diploma presentation establish recent living status; son chairs trustees."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://wessexresins.co.uk/2016/03/31/tempus-fugit-the-super-fast-superyacht/",
+      "title": "Tempus Fugit project account",
+      "publisher": "Wessex Resins & Adhesives",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full participant account read. Names the matching vessel's owner and shipyard proprietor directly; used only for identity, not biography."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Research date 1 October 2026. Exact full-name and historical vessel evidence resolve the person; Mehmet Arkin born August 1967 and son Sadi Sinan are distinct individuals.",
+    "Current primary sector is explicitly an origin fallback. Founder is separately supported by dated personal economics and continuing control of the built platform; neither marina management nor group gross assets establishes personal ownership or a net-worth ranking.",
+    "Broad Self-made avoids assuming inherited assets from marriage or independent capital from modest childhood. A later commercially important in-law joint venture is acknowledged without inventing a transfer.",
+    "All seven personal profile types checked: LinkedIn, Instagram, Facebook, Twitter/X, Youtube, TikTok and Personal Website. Only LinkedIn authenticated. Institutional accounts, third-party interviews and TEDx videos are not personal channels. No personal Wikipedia or Forbes profile found.",
+    "British nationality is explicit in the exact-name registry. Turkish Cypriot is cultural identity in prose, not proof of Turkish citizenship. Cyprus birth is secure; Nicosia versus Ayia Anna unresolved, so town and exact birth day withheld. Turkey labels conflict with Cyprus residence and limit its confidence.",
+    "Sources were read in full relevant bodies. Gallery, founder prospectus and LinkedIn relied on full indexed text after direct access limitations. Gazette economic table was independently extracted; screenshot unavailable. Published biographies use no sensitive allegations, political positions or private vessel details.",
+    "Active contract review retains casino specialism with its explicitly required Gambling umbrella, a separate hotel operating dimension and two distinct cultural roles. No additional shipbuilding, marina, golf, betting or property tags needed for the minimum useful set.",
+    "Source budgets allocated conservatively: business interview supports short and compact economic reasoning; institutional gallery supplies long-only collection facts; Cyprus Mail supplies formative work context; prospectus supplies teaching purpose. No source exceeds 200 derived words including metadata."
+  ],
+  "biography_brief": {
+    "durable_identity": "Turkish Cypriot entrepreneur with personally built gambling and hospitality businesses.",
+    "defining_work": "A sustained operating platform developed with partners and later consolidated.",
+    "formative_context": "Artistic training supported by work and educational grants.",
+    "decisive_moment": "A youthful encounter with sculpture preceded a serious collection.",
+    "enduring_dimensions": [
+      "Practical arts education.",
+      "Public access to a personally assembled collection."
+    ],
+    "character_detail": "A specific learning experience and later educational choices are documented; character is not inferred.",
+    "opening_options": [
+      {
+        "mode": "formative_episode",
+        "angle": "Introduce the businessman through the art encounter that shaped later collecting."
+      },
+      {
+        "mode": "public_contribution",
+        "angle": "Start with the cultural institution and explain its origins."
+      }
+    ],
+    "excluded_transient_context": [
+      "Current portfolio weights and collection counts.",
+      "Private yacht ownership.",
+      "Political opinions and disputed town of birth."
+    ],
+    "source_ids": [
+      "S7",
+      "S8",
+      "S9"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "Parent approved pair. Short owns casino launch and hotel expansion; long owns artistic formation, institution-building and concrete public use. The shared person anchor does not repeat a business bundle."
+  },
+  "review": {
+    "status": "complete",
+    "notes": "Parent approved identity, four classifications and independent pair. Strict owner-input/editorial validation passed without warnings; terminal research complete."
+  }
+}

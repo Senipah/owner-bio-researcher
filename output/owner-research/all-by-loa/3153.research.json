@@ -1,0 +1,1240 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 3153,
+    "display_name": "Muammar  al-Gaddaffi",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Distinctive name and Libyan ruler identity converge with the exact Valeria/Al-Farah relationship: reported 1978 acquisition and 25 years of presidential use match the input. Public use does not prove private beneficial ownership."
+    }
+  },
+  "research_status": "complete",
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "nationality",
+      "secondary_nationality",
+      "main_residence_country",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "nationality",
+      "secondary_nationality",
+      "main_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    },
+    "existing_social_types": []
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 85,
+      "band": "high",
+      "reason": "Forbes-first exact-name searches found articles about Libya and disputed wealth estimates, not a dedicated personal profile."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No sufficiently evidenced sector of principal personal wealth creation was established.",
+    "confidence": {
+      "score": 60,
+      "band": "low",
+      "reason": "Energy was tested against Libya's petroleum revenue, Finance against sovereign investment vehicles, and Diversified against reported family holdings. State control and family aggregation do not establish his personal economic entitlement or original material corpus. Public remuneration is not documented as a material fortune."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "His principal personal asset sector at death remains unestablished.",
+    "confidence": {
+      "score": 60,
+      "band": "low",
+      "reason": "Treasury distinguishes state assets from designated individuals; Parliament identifies the main frozen portfolio with sovereign vehicles. None ranks his own terminal assets. Finance, Energy and Diversified remain unsupported personal-sector alternatives. The mandatory origin-sector fallback was tested, but origin itself is Unknown."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Political ascent is established, but the acquisition mechanism of a principal personal fortune is not.",
+    "confidence": {
+      "score": 58,
+      "band": "low",
+      "reason": "Broad Self-made was tested independently: building political power does not establish a personally acquired material asset corpus. Modest family origins neither prove independent self-made wealth nor exclude later transfers. No substantial personal inheritance, family gift, earned enterprise or mixed corpus is established. Unverified state/family estimates cannot fill this gap."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Public leadership is not a demonstrated private economic relationship to principal assets at death.",
+    "confidence": {
+      "score": 58,
+      "band": "low",
+      "reason": "Founder, Operator and Investor would require a personally owned material business or capital mandate. Sovereign authority does not supply that premise. Royal beneficiary is inappropriate for a republican ruler without evidenced dynastic entitlement. Nor do asset freezes prove passive ownership of a principal personal portfolio. Unknown does not deny that private assets existed."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "Libyan military ruler.",
+    "defining_work": "Led the overthrow of the monarchy and the subsequent national government.",
+    "formative_context": "Secondary schooling followed by officer training.",
+    "decisive_moment": null,
+    "enduring_dimensions": [
+      "Authored The Green Book.",
+      "Convened the summit that adopted the African Union declaration."
+    ],
+    "character_detail": null,
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "National ruler and institutional authority."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Education and officer formation."
+      }
+    ],
+    "excluded_transient_context": [
+      "Private vessel use",
+      "Unverified fortune estimates",
+      "Political opinions",
+      "Unrequested criminal allegations",
+      "Relatives' personal assets"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S6",
+      "S7"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": [
+      "royal_public_office"
+    ],
+    "notes": "The short owns the accession, national offices and authorship. The long adds schooling, recruitment and technical military service, then a concrete convening action and its institutional result. Ruler and military identity are the shared anchors; no private-asset or vessel story enters either text."
+  },
+  "editorial_note": null,
+  "proposed_details": [
+    {
+      "field": "middle_names",
+      "value": "Mohammed Abu Minyar",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "UN identity entry separates these name elements from Muammar and Qadhafi."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "nationality",
+      "value": "Libyan",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Consistent national identity in official and biographical records."
+      },
+      "source_ids": [
+        "S1",
+        "S6",
+        "S7"
+      ]
+    },
+    {
+      "field": "main_residence_country",
+      "value": "Libyan Arab Jamahiriya",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Lifetime country of residence, not a claim about any current family domicile."
+      },
+      "source_ids": [
+        "S1",
+        "S8"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Former ruler of Libya",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Established public identity."
+      },
+      "source_ids": [
+        "S2",
+        "S8"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Unambiguous personal identity across official records."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Near Sirte",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Biographical location is more precise than the UN's Sirte entry without inventing a village."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "birth_country",
+      "value": "Libyan Arab Jamahiriya",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Present-day country corresponding to the documented birthplace, using the input's exact available label."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1942",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "UN records the year; exact day and month remain uncertain."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "existing_value": "Unknown",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The UN historical record explicitly confirms death."
+      },
+      "source_ids": [
+        "S8"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "20",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Explicit UN historical record."
+      },
+      "source_ids": [
+        "S8"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "October",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Explicit UN historical record."
+      },
+      "source_ids": [
+        "S8"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "2011",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Explicit UN historical record."
+      },
+      "source_ids": [
+        "S8"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type": "Wikipedia",
+      "type_id": "10",
+      "url": "https://en.wikipedia.org/wiki/Muammar_Gaddafi",
+      "action": "add",
+      "verification": "Dedicated personal article matches the independently resolved ruler and lifetime.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Exact subject and official identity agree."
+      },
+      "source_ids": [
+        "S2",
+        "S9"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0319",
+      "name": "Head of state",
+      "summary": "Historically defining national leadership.",
+      "relationship_type": "status",
+      "temporal_scope": "historical",
+      "taxonomy_value": "Formal former national office, not merely family association or honorary proximity.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "His RCC presidency establishes the formal historical office; later unconventional leadership does not erase it."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "tag_id": "tag_0349",
+      "name": "Military officer",
+      "summary": "Defining practiced command identity.",
+      "relationship_type": "profession",
+      "temporal_scope": "historical",
+      "taxonomy_value": "Substantial military leadership, beyond training alone.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The UN identifies Supreme Commander; early officer service corroborates practiced military work."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "biography": {
+    "plain_text": "Muammar Gaddafi was the Libyan military ruler who overthrew King Idris in 1969 and remained in power until 2011. He chaired the Revolutionary Command Council and later governed under the title Leader of the Revolution. The author of The Green Book, he reshaped Libya's institutions around his own system of government.",
+    "html": "<p>Muammar Gaddafi was the Libyan military ruler who overthrew King Idris in 1969 and remained in power until 2011. He chaired the Revolutionary Command Council and later governed under the title Leader of the Revolution. The author of The Green Book, he reshaped Libya's institutions around his own system of government.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Biographical formation and institutional primary records support the bounded historical narrative."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S8"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Libyan ruler Muammar Gaddafi grew up in a herding family near Sirte and completed his secondary education in Misurata. He entered the military academy in Benghazi and encouraged members of his clandestine movement to enrol alongside him. After further training in Britain, he served as a lieutenant in the Signal Corps.\n\nHe invited African leaders to an extraordinary summit in Sirte in 1999. The resulting declaration committed them to establish the African Union and instructed ministers to prepare its founding legal text. Gaddafi later served a one-year term as the Union's chair, representing Libya in its rotating leadership.",
+    "html": "<p>Libyan ruler Muammar Gaddafi grew up in a herding family near Sirte and completed his secondary education in Misurata. He entered the military academy in Benghazi and encouraged members of his clandestine movement to enrol alongside him. After further training in Britain, he served as a lieutenant in the Signal Corps.</p>\r\n<p>He invited African leaders to an extraordinary summit in Sirte in 1999. The resulting declaration committed them to establish the African Union and instructed ministers to prepare its founding legal text. Gaddafi later served a one-year term as the Union's chair, representing Libya in its rotating leadership.</p>\r\n",
+    "word_count": 98,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Biographical formation and institutional primary records support the bounded historical narrative."
+    },
+    "source_ids": [
+      "S1",
+      "S6",
+      "S7"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=3153",
+      "title": "Immutable inventory 3153",
+      "publisher": "Repository export",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Raw name preserves doubled space and spelling; mortality Unknown; no personal links. Valeria 33761 relationship 1978–2003."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/muammar-al-gaddafi",
+      "title": "Muammar Al-Gaddafi",
+      "publisher": "Encyclopedia of World Biography via Encyclopedia.com",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Formation, accession, formal offices and authorship. Historical entry, not current family details."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://main.un.org/securitycouncil/sites/default/files/7h9u3en-all.html",
+      "title": "Consolidated list, entry LYi.013",
+      "publisher": "United Nations Security Council",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant identity entry read. Name elements, year 1942, Sirte and command designation. Archived generated list; not presented as a fresh sanctions update."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://home.treasury.gov/news/press-releases/tg1387",
+      "title": "Fact Sheet: Lifting Sanctions on the Government of Libya",
+      "publisher": "U.S. Treasury",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Explicit distinction between sovereign funds and separate designated family/regime interests; no individual net worth."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://publications.parliament.uk/pa/cm201719/cmselect/cmniaf/1723/172306.htm",
+      "title": "Libya's frozen assets, paragraphs 24–25",
+      "publisher": "UK House of Commons",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Bulk frozen holdings associated with sovereign investment institutions rather than an identified personal estate."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://questions-statements.parliament.uk/written-questions/detail/2017-01-31/62636/",
+      "title": "Gaddafi family assets: written answer",
+      "publisher": "UK Treasury via Parliament",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full answer read. Aggregate reporting deliberately withholds individual allocation; it cannot establish the subject's own wealth."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://aiil-iadi.org/wp-content/uploads/2023/04/AU_Book3_OAU-Final_ONLINE-compressed.pdf/wp-admin/",
+      "title": "Sirte Declaration EAHG/Decl.1 (IV), printed pages 701–702",
+      "publisher": "OAU primary text in African Institute of International Law compilation",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant PDF pages 726–727 read. Personal invitation, adopted Union decision and ministerial drafting instruction."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://au.int/en/assembly",
+      "title": "The Assembly: historical chairpersons",
+      "publisher": "African Union",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant table read. February 2009 to January 2010 term."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://main.un.org/securitycouncil/sites/default/files/en/sc/repertoire/2010-2011/Part%20I/2010-2011_Libya.pdf",
+      "title": "Repertoire of Security Council practice: Libya",
+      "publisher": "United Nations",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant PDF page 6 passage read. Confirms death on 20 October 2011."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://en.wikipedia.org/wiki/Muammar_Gaddafi",
+      "title": "Muammar Gaddafi",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Dedicated personal article verified against primary identity; no independent reliance for contested economic figures."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.denisonyachtsales.com/2023/07/for-sale-five-superyacht-projects-in-need-of-rescue-in-the-news/",
+      "title": "Valeria historical account",
+      "publisher": "Denison, reproducing Boat International",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant section read. Same hull/name chain and period corroborate identity; presidential use is not a private-equity finding."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://algaddafi.org/",
+      "title": "AlGaddafi.org archive",
+      "publisher": "Self-described backup/legacy website",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full page read. Claims historical official backup status, now solicits archive support; independent authorised estate management not established."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Personal wealth is not conflated with Libya's treasury, central bank, national oil enterprise, LIA, LAIP or relatives' property. Official aggregate freezes establish restrictions, not his individual beneficial balance sheet.",
+    "All four fields were assessed independently. Unknown reflects missing personal materiality and acquisition/role premises, not a requirement for an exact valuation and not a claim that he owned nothing.",
+    "Broad Self-made could apply to a positively evidenced personally acquired corpus regardless of lawfulness. The reviewed record does not reliably separate such a corpus from assets attributed collectively to the regime or family. Political origin alone is insufficient.",
+    "Current classifications refer to the terminal lifetime. Later unfreezing, state recovery and relatives' inheritance are contextual evidence, not a new personal portfolio.",
+    "The exact birth day and month remain unproposed: public conventions conflict and the UN records only 1942. Secondary nationality is unestablished. Transliteration variants are not distinct individuals.",
+    "Mortality Unknown is proposed for correction to Dead. Death fields are researchable in this inventory, unlike an Alive record; they are supported independently of vessel relationship dates.",
+    "Forbes-first search found no dedicated personal profile. LinkedIn, Instagram, Facebook, Twitter, Youtube, TikTok and Personal Website checks returned directories, supporters, memorials and media. Vimeo and Flickr material belongs to filmmakers or photographers; Trip Advisor and Zillow yielded no attributable accounts. No personal-channel verification is inferred from name matching.",
+    "The self-described backup site is retained as context only. Its historical claim and today's commercial archive do not establish an authenticated personal/estate account. State and AU websites are not proposed as his Company Website.",
+    "Head of state and Military officer meet historical defining-role contracts. No business-sector tag is assigned from state economic control, and authorship is not expanded into political-belief labels.",
+    "Both biographies remain independent of vessel ownership. No alleged crime, personal health, religion, or family-sensitive detail is imported.",
+    "Encyclopedia-derived prose and supporting metadata are kept within its 200-word budget; primary documents support distinct institutional and economic claims. No extended quotation is reproduced."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent reviewed and accepted identity, four independent Unknown judgments and complementary pair. No live or shared-state changes."
+  }
+}

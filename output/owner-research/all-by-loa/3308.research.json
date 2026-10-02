@@ -1,0 +1,1238 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 3308,
+    "display_name": "Abraham  D Gosman",
+    "identity_confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Exact uncommon name and primary business history converge with independent journalism identifying the same nursing-home entrepreneur as the historical Octopussy owner. A title deed was not obtained; the input's end date extends beyond his death."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "nationality",
+      "secondary_nationality",
+      "main_residence_country",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "nationality",
+      "secondary_nationality",
+      "main_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "research_status": "complete",
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Exact-name and profile-specific searches found historical fortune mentions but no identifiable personal Forbes profile."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "Personal wealth arose principally from developing and trading healthcare properties, alongside the related care business.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "Property creation preceded later financial investments. The award profile expressly connects his substantial personal fortune to this platform. Healthcare is a meaningful operating component; neither corporate assets nor disposal totals are treated as his own proceeds."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "primary_industry": {
+    "classification": "real_estate",
+    "label": "Real Estate",
+    "summary": "Explicit origin-sector fallback at his 2013 death; a terminal principal sector cannot be established after liquidation.",
+    "confidence": {
+      "score": 73,
+      "band": "medium",
+      "reason": "Real Estate describes the supported creation platform, not a verified surviving portfolio. The bankruptcy record positively establishes asset realisations; no sufficiently complete later holdings or continuing principal core was substantiated."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S5"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Broad founder-builder mechanism from personally owned acquisitions and expansion. Initial family help prevents an independent-start assertion.",
+    "confidence": {
+      "score": 80,
+      "band": "medium",
+      "reason": "His earned enterprise growth and personal ownership are positive premises. The startup loan does not establish a transferred operating fortune; the early directory's family-business clue is unresolved. Neither inheritance, a substantial privileged launch, nor their absence is demonstrated sufficiently for a narrower subtype."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S8"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Terminal relationship remains Unknown. Founder is the strongest historical alternative, but later liquidation prevents assuming retention of the former principal core.",
+    "confidence": {
+      "score": 58,
+      "band": "low",
+      "reason": "Direct and inference tests establish former ownership, then substantial realisation under a trustee. They do not establish a material surviving founded business, sustained personal investment mandate or positive delegation at death. Retirement and death alone cannot support Passive asset owner; no lesser relationship reaches 70."
+    },
+    "source_ids": [
+      "S1",
+      "S4",
+      "S5"
+    ]
+  },
+  "biography": {
+    "plain_text": "Abraham Gosman was an American property entrepreneur who built a healthcare property business by converting mansions into nursing homes. He founded Mediplex and Meditrust, separating care operations from property ownership. After selling Mediplex to Avon, he bought it back, restored profitability and sold it again, this time to Sun Healthcare.",
+    "html": "<p>Abraham Gosman was an American property entrepreneur who built a healthcare property business by converting mansions into nursing homes. He founded Mediplex and Meditrust, separating care operations from property ownership. After selling Mediplex to Avon, he bought it back, restored profitability and sold it again, this time to Sun Healthcare.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Full institutional, family and reference accounts support the narrative; historical roles are not presented as current."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Healthcare property entrepreneur Abraham Gosman began with a shoe business, developing an inexpensive method of attaching reptile skins to footwear while studying at the University of New Hampshire. A loan from his mother financed the venture. Its earnings gave him capital to invest beyond manufacturing.\n\nHis philanthropy included a gift to Brandeis University for its Sports and Convocation Center. In West Palm Beach, he served as a life trustee of the Kravis Center for the Performing Arts. He donated $1 million towards building the Gosman Amphitheater, an outdoor performance venue.",
+    "html": "<p>Healthcare property entrepreneur Abraham Gosman began with a shoe business, developing an inexpensive method of attaching reptile skins to footwear while studying at the University of New Hampshire. A loan from his mother financed the venture. Its earnings gave him capital to invest beyond manufacturing.</p>\r\n<p>His philanthropy included a gift to Brandeis University for its Sports and Convocation Center. In West Palm Beach, he served as a life trustee of the Kravis Center for the Performing Arts. He donated $1 million towards building the Gosman Amphitheater, an outdoor performance venue.</p>\r\n",
+    "word_count": 90,
+    "confidence": {
+      "score": 89,
+      "band": "high",
+      "reason": "Full institutional, family and reference accounts support the narrative; historical roles are not presented as current."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S7"
+    ]
+  },
+  "editorial_note": null,
+  "biography_brief": {
+    "durable_identity": "American healthcare-property entrepreneur.",
+    "defining_work": "Built linked care and property enterprises.",
+    "formative_context": "An early manufacturing venture supplied capital for expansion.",
+    "decisive_moment": "Repurchased and rebuilt a business previously sold.",
+    "enduring_dimensions": [
+      "Practical product development.",
+      "Institutional gifts for education and performance."
+    ],
+    "character_detail": "Found an inexpensive way to laminate exotic skins onto shoes.",
+    "opening_options": [
+      {
+        "mode": "formative_episode",
+        "angle": "Begin with the entrepreneur's practical product experiment."
+      },
+      {
+        "mode": "defining_achievement",
+        "angle": "Explain the separation of operating businesses from property."
+      }
+    ],
+    "excluded_transient_context": [
+      "Vessel ownership",
+      "Personal net-worth figures",
+      "Private family disputes",
+      "Unverified terminal assets"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "Short reserves healthcare-property formation, the operating/property split and repeat corporate sale. Long adds the earlier product and its financing, then two concrete institutional gifts. The shared profession is only an identity anchor; no repeated transaction bundle or yacht content."
+  },
+  "proposed_details": [
+    {
+      "field": "first_name",
+      "value": "Abraham",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Primary sources confirm spelling; removes trailing whitespace."
+      },
+      "source_ids": [
+        "S1",
+        "S5"
+      ],
+      "existing_value": "Abraham "
+    },
+    {
+      "field": "middle_names",
+      "value": "David",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Federal court heading gives the full legal name."
+      },
+      "source_ids": [
+        "S5"
+      ],
+      "existing_value": "D"
+    },
+    {
+      "field": "nationality",
+      "value": "American",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 80,
+        "band": "medium",
+        "reason": "Biographical reference explicitly identifies nationality; long US business and residence history corroborate."
+      },
+      "source_ids": [
+        "S6"
+      ]
+    },
+    {
+      "field": "main_residence_country",
+      "value": "United States",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Family notice gives both terminal residences in the United States."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Healthcare property entrepreneur",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Direct award and business history describe the defining work."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Primary family notice consistently identifies him as husband and father."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "8",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact dates in the family memorial heading."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "December",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact dates in the family memorial heading."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1928",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact dates in the family memorial heading."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "21",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact dates in the family memorial heading."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "October",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact dates in the family memorial heading."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "2013",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact dates in the family memorial heading."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Family notice explicitly records death."
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "existing_value": "Unknown"
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Abraham_Gosman",
+      "verification": "Exact expanded name, career and dates match primary evidence. The page's family-count error is not imported.",
+      "confidence": {
+        "score": 93,
+        "band": "high",
+        "reason": "Identity-page match verified against primary notice and court."
+      },
+      "source_ids": [
+        "S1",
+        "S5",
+        "S6"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0471",
+      "name": "Commercial real estate",
+      "summary": "Long-term development and ownership of income-producing healthcare properties.",
+      "relationship_type": "founder_and_developer",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Substantial personally wealth-producing property activity satisfies the cohort; not a private residence or incidental holding.",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Institutional profile and company history establish the defining commercial property platform."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "tag_id": "tag_6891",
+      "name": "Private healthcare providers",
+      "summary": "Founded and owned the direct-care operator Mediplex and earlier nursing homes.",
+      "relationship_type": "founder_and_operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Personally operated care facilities and the sustained provider platform are distinct from property-only holdings; the former business remained defining.",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Court confirms sole ownership and operation; business history establishes the expanded provider enterprise."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "field": "place_of_birth",
+      "value": "Manchester, New Hampshire",
+      "confidence": {
+        "score": 65,
+        "band": "low",
+        "reason": "Reference page states birthplace; its underlying newspaper biography could not be read directly."
+      },
+      "source_ids": [
+        "S6"
+      ]
+    },
+    {
+      "field": "birth_country",
+      "value": "United States",
+      "confidence": {
+        "score": 65,
+        "band": "low",
+        "reason": "Depends on the uncorroborated birthplace."
+      },
+      "source_ids": [
+        "S6"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.dignitymemorial.com/obituaries/brookline-ma/abraham-gosman-5706401",
+      "title": "Abraham D. Gosman obituary",
+      "publisher": "Stanetsky Memorial Chapel / family notice",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read: exact life dates, terminal US residences, career and institutional gifts. Promotional praise and family details omitted."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.babson.edu/entrepreneurship-center/about/awards/academy-of-distinguished-entrepreneurs/inductees/",
+      "title": "Academy of Distinguished Entrepreneurs: Abraham D. Gosman, 1998",
+      "publisher": "Babson College",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant award biography read. Directly attributes substantial personal wealth to developed enterprises; transactions remain corporate. Career wording partly overlaps the family notice, not independent corroboration."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.fundinguniverse.com/company-histories/meditrust-history/",
+      "title": "Meditrust history",
+      "publisher": "International Directory of Company Histories / St James Press, reproduced by FundingUniverse",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full 1995 entry read. Early family loan, proceeds reinvested in development, wealth before the bank trade and later sale-and-leaseback structure. Cites contemporary reporting."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://app.midpage.ai/document/gosman-v-united-states-8596082",
+      "title": "Gosman v. United States, 573 F.2d 31 (1978)",
+      "publisher": "US Court of Claims, reproduced by Midpage",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant facts read: personal sole ownership and operation of four homes, plus a partnership interest, before their sale. Reimbursement litigation is not biography content."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.govinfo.gov/content/pkg/USCOURTS-flsb-9_01-bk-30953/pdf/USCOURTS-flsb-9_01-bk-30953-0.pdf",
+      "title": "In re Abraham David Gosman: order of 5 March 2007",
+      "publisher": "US Bankruptcy Court / GovInfo",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant pp1–6 read. Records 2001 filing, 2002 liquidation conversion and trustee realisations. Denies Chase's equitable-lien motion; this does not establish a surviving terminal fortune. Used for asset continuity, not allegations."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://en.wikipedia.org/wiki/Abraham_Gosman",
+      "title": "Abraham Gosman",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read and identity cross-checked. Nationality explicit. Birthplace candidate only; family-count error and unverified historical fortune estimate excluded."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://education.pbchistory.org/kravis-center/",
+      "title": "Kravis Center",
+      "publisher": "Historical Society of Palm Beach County",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read; confirms the outdoor performance facility. No seating number or opening chronology imported."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://ldsgenealogy.com/MA/books/The-Boston-directory-including-Allston-Brighton-Charlestown-Dorchester-East-Boston-Hyde-Park-Jamaica-Plain-Readville-Roslindale-Roxbury-South-Boston-West-Roxbury-1957-part-247.htm",
+      "title": "Boston directory, 1957: Newton Nursing Home entry",
+      "publisher": "Historical directory transcription",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Relevant entry names Morris Gosman and Abe as manager. A family-platform clue, not a proven transfer, ownership instrument or quantified launch advantage."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://prospect.org/2020/10/20/the-corporatization-of-nursing-homes/",
+      "title": "The Corporatization of Nursing Homes",
+      "publisher": "The American Prospect / Maureen Tkacik",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant body read. Explicitly connects the nursing-home dealmaker Abe Gosman to Octopussy. Used narrowly for independent identity context, not broad critical characterisations or terminal wealth."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Research date is 1 October 2026; current-sector and relationship questions are evaluated at death in 2013. No live changes or current living-person role asserted.",
+    "Forbes checked first: no exact profile identified. LinkedIn, Instagram, Personal Website, Facebook, Twitter, Youtube and TikTok searches returned no authenticated personal destination. Third-party posts and institutional pages are not personal accounts; Wikipedia is the only proposed link.",
+    "The historical vessel record runs to 2021 despite the primary death notice. Independent journalism confirms the name/vessel context but no title instrument was obtained. YachtBuyer was a lead within the same data ecosystem, not independent corroboration.",
+    "Broad self-made is an economic mechanism inference from personally acquired and expanded operations, not a claim of starting without family help. The exact contribution of an early family-associated home remains unresolved.",
+    "Primary industry is explicitly an origin fallback. Trustee-held liquidation proceeds are not personally controlled investments, and the last supported former holdings do not establish terminal Founder or Investor status.",
+    "The company history places business formation after graduation, whereas institutional and family accounts describe product development before graduation. No exact launch year is asserted; the distinction between developing the method and formally starting the company is not resolved.",
+    "Birthplace remains candidate only. The inaccessible newspaper biography and a later historical essay with erroneous death-time wealth were not used as import evidence.",
+    "The minimum two tags distinguish income-producing property from actual care delivery. No generic philanthropy, finance, apparel or culture-founder tags; one early product and gifts do not satisfy those sustained-role contracts.",
+    "All published claims were checked against full relevant bodies. Source-derived prose including briefs and ledger stays within individual limits, with no direct quotations; repeated obituary/award wording is treated as shared provenance."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent reviewed and approved identity, classifications and complementary pair. Strict owner-input validation passed. Terminal wealth assessed at 21 October 2013; research completed 1 October 2026. No live changes."
+  }
+}

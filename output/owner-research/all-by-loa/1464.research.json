@@ -1,0 +1,1190 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1464,
+    "display_name": "Doctor Francisco Javier Sitges Menendez",
+    "identity_confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Rare full name, chemistry doctorate, Spain and age agree. The independent broker identifies Xargo as commissioned for Francisco Sitges, corroborating the source vessel context. His decorator son Sitges Aparicio and property executive Sitges Compte are different people."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Spanish industrial chemist and executive Francisco Javier Sitges Menéndez.",
+    "defining_work": "Leadership of Asturiana de Zinc and Mefasa; co-development of a more efficient zinc-recovery process.",
+    "formative_context": "Born in Arnao into a family with several generations of industrial leadership in Asturias.",
+    "decisive_moment": null,
+    "enduring_dimensions": [
+      "Practical invention in metal processing.",
+      "Service on a national scientific-award jury.",
+      "Leadership of the port of Avilés."
+    ],
+    "character_detail": null,
+    "opening_options": [
+      {
+        "mode": "defining_achievement",
+        "angle": "A chemist's contribution to extracting more zinc from ore."
+      },
+      {
+        "mode": "present_identity",
+        "angle": "An industrial executive from Asturias with technical and civic responsibilities."
+      }
+    ],
+    "excluded_transient_context": [
+      "Transaction prices and changing shareholdings.",
+      "Personal possessions and social-circle anecdotes."
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 5,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "defining_achievement",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "sparse_public_record"
+    ],
+    "notes": "Short allocates corporate leadership, birthplace, family industrial setting and port responsibility. Long shares the chemist identity and Asturiana de Zinc anchor, adding the jarosite process, cathode invention and scientific jury. It omits Mefasa, geographic formation and civic leadership. Technical claims concern his work, not personal ownership of company patents or royalties. Sparse-public-record calibration applies specifically to private wealth, not the substantial professional history."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Forbes.com and Forbes.es were searched first using full and shortened names. No attributable profile was found; unrelated medical lists were rejected."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Manufacturing is the strongest candidate because he bought and developed a substantial Mefasa stake. Metals & Mining is also professionally relevant through Asturiana de Zinc. Neither is sufficiently established as the sector that created his principal personal fortune.",
+    "confidence": {
+      "score": 55,
+      "band": "low",
+      "reason": "The evidence establishes ownership and a long industrial career, but not the required wealth-producing materiality. Mefasa's eventual symbolic-price disposal is not a wealth-realising exit. Corporate production and patent income cannot be attributed to him personally."
+    },
+    "source_ids": [
+      "S2",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "primary_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "No principal private business or investment sector is established at his death in 2020. His former industrial assets and leadership cannot be carried forward as terminal holdings. The origin-sector fallback was tested but is unavailable because the creation sector itself remains unresolved.",
+    "confidence": {
+      "score": 50,
+      "band": "low",
+      "reason": "The documented disposal predates death by decades, and no positive evidence identifies the dominant terminal private portfolio. There is no supported creation-sector value to reuse; choosing diversified would conceal the same gap."
+    },
+    "source_ids": [
+      "S1",
+      "S4",
+      "S5"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Personal share purchases and business development support a possible self-made mechanism, but their importance to the original fortune is not established. Family industrial influence is documented without a transfer of his principal wealth-producing assets.",
+    "confidence": {
+      "score": 55,
+      "band": "low",
+      "reason": "Broad self-made was tested independently: acquisition proves capital deployment, not that this business created the principal fortune. Family succession to offices does not establish inheritance or an economic transfer. No two independently material mechanisms support Mixed."
+    },
+    "source_ids": [
+      "S2",
+      "S4",
+      "S5"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "He was historically an operator and shareholder, but no supported role in the principal assets at death is established. Former management, civic office and technical invention are not a current private-asset relationship.",
+    "confidence": {
+      "score": 55,
+      "band": "low",
+      "reason": "Operator is the strongest historical alternative. The known business exit and lack of a positively identified terminal core asset prevent carrying it forward. Silence about later activity does not justify passive owner, investor or heir."
+    },
+    "source_ids": [
+      "S1",
+      "S4",
+      "S5"
+    ]
+  },
+  "biography": {
+    "plain_text": "Francisco Javier Sitges Menéndez was a Spanish chemist and industrial executive who led Asturiana de Zinc and the engineering company Mefasa. Born in Arnao, Asturias, he belonged to a family closely associated with the region's metals industry over several generations. He also chaired the governing board of the port of Avilés.",
+    "html": "<p>Francisco Javier Sitges Menéndez was a Spanish chemist and industrial executive who led Asturiana de Zinc and the engineering company Mefasa. Born in Arnao, Asturias, he belonged to a family closely associated with the region's metals industry over several generations. He also chaired the governing board of the port of Avilés.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Professional history, family context and place are corroborated by detailed reporting; the official appointment independently establishes port leadership."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S5",
+      "S7"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "The Spanish industrial chemist Francisco Javier Sitges Menéndez helped make zinc extraction more efficient. With Vicente Arregui, he developed the jarosite process at Asturiana de Zinc, substantially increasing the amount of metal recovered from its ore. The innovation became a widely used part of zinc production and generated royalties for the company.\n\nSitges continued developing practical equipment for metal production. He co-invented a cathode designed to make deposited zinc easier to detach, working with colleagues who included his brother Fernando. He also served on the Prince of Asturias Award jury for technical and scientific research, helping select work for recognition beyond his own industry.",
+    "html": "<p>The Spanish industrial chemist Francisco Javier Sitges Menéndez helped make zinc extraction more efficient. With Vicente Arregui, he developed the jarosite process at Asturiana de Zinc, substantially increasing the amount of metal recovered from its ore. The innovation became a widely used part of zinc production and generated royalties for the company.</p>\r\n<p>Sitges continued developing practical equipment for metal production. He co-invented a cathode designed to make deposited zinc easier to detach, working with colleagues who included his brother Fernando. He also served on the Prince of Asturias Award jury for technical and scientific research, helping select work for recognition beyond his own industry.</p>\r\n",
+    "word_count": 104,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Detailed industrial reporting supports the process contribution; the patent office and award foundation directly establish the subsequent invention and jury role."
+    },
+    "source_ids": [
+      "S2",
+      "S6",
+      "S8",
+      "S9"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "middle_names",
+      "value": "Javier",
+      "action": "correct_existing",
+      "existing_value": "Javier Sitges",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The patent office explicitly separates surname Sitges Menendez from given names Francisco Javier."
+      },
+      "source_ids": [
+        "S6"
+      ]
+    },
+    {
+      "field": "last_name",
+      "value": "Sitges Menéndez",
+      "action": "correct_existing",
+      "existing_value": "Menendez",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Primary patent indexing establishes both surnames; family notice supplies the accent."
+      },
+      "source_ids": [
+        "S1",
+        "S6"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Former chairman of Asturiana de Zinc",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Contemporaneous industrial reporting and retrospective history agree."
+      },
+      "source_ids": [
+        "S2",
+        "S5"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Consistent family and professional identification."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Arnao, Castrillón",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 93,
+        "band": "high",
+        "reason": "Explicit birthplace in the detailed obituary; not inferred from residence."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1929",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 93,
+        "band": "high",
+        "reason": "The obituary states the year explicitly; it is not calculated from age."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "action": "correct_existing",
+      "existing_value": "Alive",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "The exact full-name family notice records death in Madrid on 22 October 2020."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0101",
+      "name": "Inventor",
+      "summary": "Co-developed the jarosite process and continued inventing practical metal-processing equipment.",
+      "relationship_type": "practising_co_inventor",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Sustained, recognised technical invention is a defining practiced role, corroborated across industrial history and patent records; this is not an education-only or isolated-project attribution.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Distinct technical contributions establish a substantial inventive role."
+      },
+      "source_ids": [
+        "S2",
+        "S6"
+      ]
+    },
+    {
+      "tag_id": "tag_0172",
+      "name": "Shipbuilding",
+      "summary": "Led Mefasa and held a controlling stake during its substantial construction activity.",
+      "relationship_type": "historical_operating_shareholder",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "The documented operating mandate and substantial equity meet the industry contract independently of personal vessel ownership or an unproved fortune-source classification.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Contemporaneous trade reporting establishes the commercial activity and his former controlling interest."
+      },
+      "source_ids": [
+        "S2",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "field": "wealth_creation_industry",
+      "value": "Manufacturing",
+      "reason": "Strongest sector candidate: a substantial personally acquired engineering-company interest, but no adequate premise that it generated the principal fortune. The failed exit, not an absence of exact valuation, limits this inference.",
+      "confidence": {
+        "score": 60,
+        "band": "low",
+        "reason": "Personal ownership is clear; wealth-creation materiality remains below threshold."
+      },
+      "source_ids": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "22",
+      "reason": "Verified death date, retained for review because the immutable Alive inventory marks this field inapplicable and the strict validator disallows filling it in this dossier. Apply only after the supported mortality correction is reflected in a new baseline.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Explicit family death notice."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "October",
+      "reason": "Verified death date, retained for review because the immutable Alive inventory marks this field inapplicable and the strict validator disallows filling it in this dossier. Apply only after the supported mortality correction is reflected in a new baseline.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Explicit family death notice; exact lookup label."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "2020",
+      "reason": "Verified death date, retained for review because the immutable Alive inventory marks this field inapplicable and the strict validator disallows filling it in this dossier. Apply only after the supported mortality correction is reflected in a new baseline.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Explicit family death notice."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1464",
+      "title": "Saved owner record: Doctor Francisco Javier Sitges Menendez, ID 1464",
+      "publisher": "Superyacht Network immutable export",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Read-only inventory: Spanish, Spain, age 91 recorded May 2020, Alive, Doctor; historical Xargo relationship 1974-1988. Input mortality precedes the subsequently documented death."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://esquelas.elcomercio.es/necrologicas/don-francisco-javier-sitges-menendez-83965.html",
+      "title": "Don Francisco Javier Sitges Menéndez",
+      "publisher": "Family notice in El Comercio",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant body read. Chemistry doctorate; death on 22 October 2020 in Madrid, age 91; family naming distinguishes sons Sitges Aparicio. No private contact or funeral details retained."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://blogs.elcomercio.es/dame-buenas-noticias/2020/10/26/referentes-de-verdad/",
+      "title": "Referentes de verdad",
+      "publisher": "José María Urbano, El Comercio",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article read. Born Arnao, 1929; industrial leadership, jarosite work with Arregui, and Mefasa history. The author identifies corporate technology and production, not a personal fortune. Published 26 October 2020."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.mediaship.it/news-en/schhoner-35-mt-xargo",
+      "title": "Schooner 35 mt Xargo",
+      "publisher": "Media Ship",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant broker history read. Spanish entrepreneur Francisco Sitges commissioned the vessel; independent identity bridge. Its 1976 launch differs from input ownership start 1974, which is not independently validated or altered."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://es.scribd.com/document/724325302/Sentencia-Tribunal-Supemo-Caso-Banesto-29-07-02",
+      "title": "Supreme Court judgment 867/2002, 29 July 2002",
+      "publisher": "Spanish Supreme Court, document reproduced on Scribd",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant text pp 39-40 read: 1.43% purchase in 1966, 24% via family company by 1990, 36% bought in 1994 for 250 million pesetas, eventual 60% sold for one peseta. The transcription has an impossible company-formation year, excluded. Only proved transaction history is used; allegations about other assets are not adopted."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://sectormaritimo.es/wp-content/uploads/1995/199512.pdf",
+      "title": "Azsa compra el sesenta por ciento de Mefasa",
+      "publisher": "Ingeniería Naval, December 1995",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Original PDF p 808 / PDF page 61 read in full: his 60% sold to AZSA, financial distress, naval division and industrial-equipment operations. Independently corroborates ownership and exit."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://data.epo.org/publication-server/rest/v1.2/patents/EP0634503NWA1/document.pdf",
+      "title": "EP0634503A1: cathode for electrolytic deposition of non-ferrous metals",
+      "publisher": "European Patent Office",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Original application p 1 and abstract read. Publication 1995; applicant Asturiana de Zinc; co-inventors include Francisco Javier Sitges Menendez and Fernando. The cathode facilitates zinc-layer detachment. Inventorship does not establish personal ownership of the patent or royalties."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-1972-42050",
+      "title": "Decreto 1552/1972: appointment to port governing board",
+      "publisher": "Boletín Oficial del Estado",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Official appointment record read: president of Junta del Puerto y Ría de Avilés. No personal ownership is inferred from public office."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.fpa.es/en/princess-of-asturias-awards/laureates/1987-jacinto-convit-and-pablo-rudomin/?texto=acta",
+      "title": "Prince of Asturias Award for Technical and Scientific Research: jury minutes",
+      "publisher": "Fundación Princesa de Asturias",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full jury minutes read; exact full name among jurors. Page heading and final date give 1987 but one meeting line says 1986; the biography omits an exact year."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://elpais.com/diario/1996/02/19/economia/824684412_850215.html?outputType=amp",
+      "title": "Sitges, una dinastía vinculada a Banesto",
+      "publisher": "El País",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full accessible article body read. Family industrial connections, chemical qualification, company royalty income, and Mefasa's first loss in 1993. No quantified personal returns or core-asset inheritance established."
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Personal wealth and materiality",
+      "detail": "Independent checks covered share acquisition, prior profitability, remuneration, dividends, later holdings and family transfer. Earlier corporate profitability does not establish personal wealth formation. Failed business equity, company patents and royalty income are not attributed as personal proceeds. No complete balance sheet is required, but a positive principal-wealth premise remains missing for all sector/origin alternatives."
+    },
+    {
+      "topic": "Terminal lifetime and relatives",
+      "detail": "Current classifications refer to assets at death in 2020, not heirs' later interests. The decorator son Francisco Javier Sitges Aparicio and unrelated Francisco Javier Sitges Compte are excluded. Reports of a family property marketed by the son do not establish the father's terminal property portfolio."
+    },
+    {
+      "topic": "Name and dates",
+      "detail": "Correct the database's allocation of Sitges as a middle name; given names are Francisco Javier and surnames Sitges Menéndez. Preserve the immutable display name. Doctor denotes chemistry qualification. Exact birth day/month are not established. Death details are relevant despite the inventory's earlier Alive categorisation. The schema rejects death-date fill proposals against the original Alive inventory; the verified components remain review candidates, while the mortality correction is proposed."
+    },
+    {
+      "topic": "Profile checks",
+      "detail": "Forbes was searched first. LinkedIn, Instagram and personal websites were prioritised; Facebook, X/Twitter, YouTube, TikTok, Wikipedia, company websites, Vimeo, Flickr, Trip Advisor and Zillow were also checked. No attributable personal profile or appropriate current company website was verified. Namesake and family profiles are not proposed."
+    },
+    {
+      "topic": "Evidence boundaries",
+      "detail": "The court document is a third-party reproduction, with ownership corroborated by contemporary trade reporting. No legal allegation appears in the biographies. Web access failed for the trade PDF and patent's alternative Google page, but original PDFs were read directly. Published jury-date and ship-launch discrepancies are recorded without forcing corrections."
+    },
+    {
+      "topic": "Taxonomy",
+      "detail": "Inventor and Shipbuilding capture two distinct, defining documented dimensions. Chemical education alone does not support Chemicals as a commercial industry. No new tag or formal taxonomy candidate is created."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal research decision after Forbes-first search, identity resolution, asset-specific inference and fallback review, social checks and complementary editorial pass. Four Unknown values reflect unestablished material premises, not an exact-valuation requirement. Parent reviewed the source bodies, biography pair and retained Unknown decisions. Save authorised after the 100-owner checkpoint; no live or shared-state changes."
+  }
+}

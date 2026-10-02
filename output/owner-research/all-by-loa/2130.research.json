@@ -1,0 +1,1215 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 2130,
+    "display_name": "Sarik Tara",
+    "identity_confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "The distinctive name, Turkish context, older generation and vessel relationship ending in the independently documented month of death converge on the ENKA co-founder. No direct hull ownership record was established. Grandson Sarik Omer Tara is a different individual; the source age appears frozen at death rather than its later as-of date."
+    }
+  },
+  "research_status": "complete",
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/sarik-tara/",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Full exact personal profile matches founder, nationality and family; explicitly marked deceased. Its wealth data are dated March 2018."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "construction_engineering",
+    "label": "Construction & Engineering",
+    "summary": "Built his original principal fortune through the ENKA contracting enterprise.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Founder history and Forbes' explicit wealth attribution establish the creation mechanism. The independently documented personal holding confirms an economic asset rather than an executive title."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "primary_industry": {
+    "classification": "construction_engineering",
+    "label": "Construction & Engineering",
+    "summary": "Inferred principal sector at death in 2018: construction, through the retained ENKA interest.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "The terminal personal stake is tied to an operating group whose preceding-year construction segment held more than half of assets, net assets and profit. Energy's larger turnover alone is not a wealth-value proxy; rental and energy were independently substantial but construction remained the best-supported core. Segment book values are imperfect personal fair-value proxies, so this is an explicit medium-confidence inference rather than an assertion about every private asset or an origin fallback."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Created and expanded the principal enterprise, with outside launch equity and family participation.",
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "The quoted formation account identifies an investor providing capital in exchange for half the early partnership, with Tara supplying the work. This is a positively built business, not a transferred pre-existing fortune. Childhood affluence was followed by reduced circumstances, while later paternal participation is documented without its scale. These mixed starting-position signals do not justify either subtype; ordinary outside equity is not inheritance."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S5",
+      "S10",
+      "S11"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "At death, retained substantial ownership in the enterprise he had co-founded.",
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "The near-terminal issuer disclosure attributes a 33.72% indirect interest to him separately from his son's stake. That material retained platform is independently identified as his principal fortune. His retirement and honorary title do not establish current operation, but do not erase the continuing founder relationship to the core owned asset."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S6"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "Turkish civil engineer and co-founder of ENKA.",
+    "defining_work": "Developed an international contracting enterprise with industrial and investment activities.",
+    "formative_context": "Wartime relocation, student employment and technical training.",
+    "decisive_moment": "Used a practical construction method to deliver a technically difficult slipway.",
+    "enduring_dimensions": [
+      "Engineering problem-solving and collegial management.",
+      "Sustained work for Turkish-Greek dialogue."
+    ],
+    "character_detail": "Encouraged discussion among colleagues without competition for authority.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Introduce the engineer and contracting founder."
+      },
+      {
+        "mode": "defining_achievement",
+        "angle": "Show the engineer through a concrete construction method."
+      }
+    ],
+    "excluded_transient_context": [
+      "Vessel relationships",
+      "Descendants' present holdings",
+      "Current group project totals",
+      "Personal wealth estimates"
+    ],
+    "source_ids": [
+      "S2",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "defining_achievement",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "Short establishes migration, education, formation and the group's expansion. Long adds the slipway technique, workplace discussion practice and concrete bilateral dialogue role. Engineering identity and ENKA are shared anchors; the long omits the founding partner, education sequence and sector expansion. One explicit year and no money or ownership figure enter the long."
+  },
+  "editorial_note": null,
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "ENKA co-founder",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary company memorial explicitly establishes the detail."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary company memorial explicitly establishes the detail."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Skopje",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary company memorial explicitly establishes the detail."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "22",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary company memorial explicitly establishes the detail."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "April",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary company memorial explicitly establishes the detail."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1930",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary company memorial explicitly establishes the detail."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "28",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary company memorial explicitly establishes the detail."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "June",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary company memorial explicitly establishes the detail."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "2018",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary company memorial explicitly establishes the detail."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "action": "correct_existing",
+      "existing_value": "Unknown",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Primary memorial confirms death; the source mortality value is Unknown."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://www.forbes.com/profile/sarik-tara/",
+      "action": "add",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact founder, dates and company identity corroborated by primary biography."
+      },
+      "verification": "Full exact individual profile read and independently corroborated.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/%C5%9Ear%C4%B1k_Tara",
+      "action": "add",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact founder, dates and company identity corroborated by primary biography."
+      },
+      "verification": "Full exact individual profile read and independently corroborated.",
+      "source_ids": [
+        "S9",
+        "S2"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.enka.com/",
+      "action": "add",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Exact founder, dates and company identity corroborated by primary biography."
+      },
+      "verification": "Official website of his historically founded and retained core company, not a personal social account.",
+      "source_ids": [
+        "S2",
+        "S2"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_2292",
+      "name": "Engineer",
+      "summary": "Civil engineering was a defining practiced profession throughout his contracting career.",
+      "relationship_type": "civil engineer and contracting founder",
+      "temporal_scope": "historical",
+      "taxonomy_value": "Sustained technical practice and problem-solving beyond a degree or short early job.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "University testimony, technical project account and long construction career establish the active profession contract."
+      },
+      "source_ids": [
+        "S2",
+        "S5",
+        "S8"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "biography": {
+    "plain_text": "Şarık Tara was a Turkish civil engineer who co-founded ENKA with his brother-in-law Sadi Gülçelik. After wartime migration from Skopje, he worked while studying in Istanbul and became a construction site manager. He developed the contracting partnership into an international group, later expanding into power generation and property investment alongside its engineering work.",
+    "html": "<p>Şarık Tara was a Turkish civil engineer who co-founded ENKA with his brother-in-law Sadi Gülçelik. After wartime migration from Skopje, he worked while studying in Istanbul and became a construction site manager. He developed the contracting partnership into an international group, later expanding into power generation and property investment alongside its engineering work.</p>\r\n",
+    "word_count": 53,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Primary history, direct interview and specific institutional evidence support the allocated facts."
+    },
+    "source_ids": [
+      "S2",
+      "S8"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Civil engineer Şarık Tara pursued difficult jobs that required unfamiliar techniques. At Gölcük, his team built a ship-launching slipway by casting concrete blocks on land and placing them on piles in the sea. Inside ENKA, he worked with former university classmates and encouraged open discussion rather than competition for authority.\n\nBeyond construction, Tara worked to improve relations between Turkey and Greece. He helped bring their prime ministers together at Davos in 1988 and subsequently chaired the Turkish-Greek Business Council. His efforts continued through exchanges between the two business communities, giving the political dialogue a sustained commercial counterpart.",
+    "html": "<p>Civil engineer Şarık Tara pursued difficult jobs that required unfamiliar techniques. At Gölcük, his team built a ship-launching slipway by casting concrete blocks on land and placing them on piles in the sea. Inside ENKA, he worked with former university classmates and encouraged open discussion rather than competition for authority.</p>\r\n<p>Beyond construction, Tara worked to improve relations between Turkey and Greece. He helped bring their prime ministers together at Davos in 1988 and subsequently chaired the Turkish-Greek Business Council. His efforts continued through exchanges between the two business communities, giving the political dialogue a sustained commercial counterpart.</p>\r\n",
+    "word_count": 97,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Primary history, direct interview and specific institutional evidence support the allocated facts."
+    },
+    "source_ids": [
+      "S2",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=2130",
+      "title": "Immutable owner inventory",
+      "publisher": "Superyacht Network export",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Read owner 2130 Sarik Tara: Turkish, Turkey residence, mortality Unknown, age 88 at 2020-05-07; historical Cipitouba II March 2008 to June 2018."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/profile/sarik-tara/",
+      "title": "Sarik Tara profile",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full profile read through its Forbes redirect. March 2018 data identify principal ENKA shareholder and construction/self-made origin; deceased flag present. Energy's revenue majority and the son's management role are kept distinct from personal asset value."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.enka.com/about-us/in-memory-of-sarik-tara/",
+      "title": "In memory of Sarik Tara",
+      "publisher": "ENKA",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full memorial read. Exact birth and death dates, original migration and work, company formation, international expansion, charitable institutions and Turkish-Greek council role. Current group achievements are not attributed to his lifetime."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.kap.org.tr/tr/Bildirim/672041",
+      "title": "ENKA company information disclosure, 30 March 2018",
+      "publisher": "ENKA / KAP",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full original issuer filing read after locating its syndicated copy. Separately identifies indirect interests of Sarik Tara 33.72% and Sinan Tara 16.93%, with the younger generations holding executive roles. This is terminal lifetime ownership evidence."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.enka.com/allfiles/pdf/ENKAI_ANNUAL_REPORT_31122018.pdf",
+      "title": "Annual report 2018: comparative 2017 segment table",
+      "publisher": "ENKA",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed comparative table at printed pp 190-191 read. Construction: assets USD 4.233 billion, liabilities USD 0.696 billion and profit USD 372.7 million; group totals USD 8.031 billion, USD 1.747 billion and USD 714 million. Book net assets and profit support relative weight, not a personal valuation. PDF opened with page/line metadata, but subsequent direct fetch and screenshot timed out; exact indexed table supplied the content."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.gzt.com/ekonomi/sarik-taradan-10-ders-3127005",
+      "title": "Ten lessons from Sarik Tara",
+      "publisher": "GZT / Derin Ekonomi",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full February 2018 article read. Quoted recollections describe employment, investor Bahir Torumkuney's launch equity in exchange for half the early partnership, and the Golcuk slipway construction method. Outside investor is linked to a former employer, not asserted as inherited family money."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.capital.com.tr/gundem/aktuel/deneyime-degil-yenilige-inanirim",
+      "title": "Interview: adapting to innovation",
+      "publisher": "Capital",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full earlier interview republished in June 2018 read, with full RTIB republication cross-checked. Classmate management, open discussion and retirement testimony. The original interview is older than republication: son's stated age and proposed projects are not treated as 2018 facts. Its migration-age wording conflicts with primary history and is excluded."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.weforum.org/press/2016/10/world-economic-forum-announces-inaugural-business-statesman-award/",
+      "title": "Inaugural Business Statesman Award",
+      "publisher": "World Economic Forum",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full 2016 announcement read. Confirms active contribution to the 1988 Davos Declaration and dialogue between Turkey and Greece, alongside modern management and educational philanthropy."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://ins.itu.edu.tr/hakkimizda/mezunlar/sarik-tara",
+      "title": "Sarik Tara alumni testimony",
+      "publisher": "Istanbul Technical University",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full primary personal statement read. Civil engineering qualification and practiced site-management career; university experience and subsequent international enterprise. Honorary doctorate is not treated as a medical or earned doctoral qualification."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://en.wikipedia.org/wiki/%C5%9Ear%C4%B1k_Tara",
+      "title": "Sarik Tara",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full exact personal article read; founder, dates and family corroborated by primary material. Present-day birthplace is North Macedonia. Descendants' roles are not imported as his own."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.enka.com/allfiles/media/catalogues/ENKA_Year-40_Catalogue_Showcase.pdf",
+      "title": "Forty years of ENKA: formation history",
+      "publisher": "ENKA",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed formation paragraph read; direct PDF unavailable. It names Fevzi Tara and Sabahattin Gulcelik as additional partners. This prevents treating an independent-start subtype as established, but does not quantify paternal capital or identify inherited core assets."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://getem.boun.edu.tr/?q=node/30369",
+      "title": "Sarik Tara Anlatiyor: memoir synopsis",
+      "publisher": "Bogazici University GETEM",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full bibliographic page and first-person publisher synopsis read. Describes prewar affluence, wartime loss, educational sacrifices and student earnings; supports a nuanced start assessment rather than either extreme."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Current classifications refer to the last evidenced lifetime position before June 2018, not present-day heirs or foundation property. The historical founder retained the principal stake even after handing executive management to younger generations.",
+    "Construction is an inferred terminal principal sector based on underlying segment net assets and profits. Energy turnover was higher, and rental property was also material. Book segment allocation is not equivalent to fair market value or a complete personal balance sheet; the inference is capped accordingly.",
+    "Broad Self-made is supported by the positively built enterprise. Initial external equity, earlier family affluence followed by wartime loss, and unquantified later paternal partnership do not cleanly establish either starting-position subtype. No family inheritance of the core company was identified.",
+    "Exact birth and death dates are supported. The input age appears to have remained at the age at death despite a later as-of date; calculated fields are preserved. North Macedonia is absent from the source birth-country options, so no unsupported country selection is proposed. Skopje is supplied as the place.",
+    "The immutable ASCII display and given name are preserved. Biographies use the established Turkish spelling. No uncertain middle name or birth surname is proposed. Grandson Sarik Omer Tara and modern trading-feed namesakes are explicitly excluded.",
+    "The vessel end month supports chronology but there is no direct independently verified hull bridge. No present ownership assertion or yacht narrative is imported.",
+    "All supported personal link types searched: Forbes, LinkedIn, Instagram, Personal Website, Company Website, Wikipedia, Facebook, Twitter, Youtube, TikTok, Vimeo, Flickr, Trip Advisor and Zillow. Only verified Forbes, Wikipedia and official historical company website are proposed. Institutional school/team accounts, commemorative posts, Flickr portraits and relatives' profiles are excluded.",
+    "Annual-report segment and anniversary formation content was available as complete indexed passages; direct PDF retrieval was unreliable. The original KAP personal ownership table and all prose sources were read in full. The older interview's dates and project forecasts are not updated to its republication year."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent approved identity, four independent wealth decisions and complementary 53-word short and 97-word long. Only this dossier is saved; strict source validation follows."
+  }
+}

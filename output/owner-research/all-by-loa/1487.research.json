@@ -1,0 +1,1241 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1487,
+    "display_name": "Robert Milhous",
+    "identity_confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "The Getty caption identifies American Bob and Gail Milhous at Aria's 2000 launch. Independent vessel history identifies Vita Nova as the former Aria, while the builder story names that same couple. The family obituary identifies Robert Edward, known as Bob, with wife Gail, matching the printing entrepreneur and Florida geography. This is distinct from the younger Florida realtor and Augusta photographer namesakes. Input age 81 in May 2020 conflicts with the directly stated January 1937 birth; the strongly convergent spouse, vessel and business chain outweighs that approximate age discrepancy."
+    }
+  },
+  "research_status": "complete",
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Forbes was searched first using exact Robert Milhous and Bob Milhous names, followed by profile-specific queries. No attributable personal Forbes profile was found; Richard Milhous Nixon results and unrelated people were rejected."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "Commercial printing created his principal original fortune through the substantial Treasure Chest business he built and owned with his brother.",
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "The court records that the brothers purchased and expanded Treasure Chest, controlled family trusts holding 76 percent, and sold its assets in 1993. It describes a major producer of advertising circulars, comics and television listings. This is industrial contract printing, not ownership of editorial media or an advertising agency. Documented personal beneficial control and a major operating asset sale establish principal wealth materiality beyond an executive title. The corporate sale consideration is not his individual proceeds or net worth."
+    },
+    "source_ids": [
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "primary_industry": {
+    "classification": "manufacturing",
+    "label": "Manufacturing",
+    "summary": "Manufacturing is an explicit origin-sector fallback for the terminal position at his death in November 2022; dominant underlying assets at that time are unestablished.",
+    "confidence": {
+      "score": 70,
+      "band": "medium",
+      "reason": "The 2004 SEC filing establishes substantial family ownership of Perry Judd's through Ropamil and a privately owned Novamil management platform. Perry Judd's was acquired by RR Donnelley in January 2007. The later obituary mentions manufacturing and property businesses but does not identify or rank terminal holdings. The registry's 2018 Florida registration revocation is administrative and does not establish liquidation. Neither Diversified nor Real Estate has a positive terminal materiality basis. Manufacturing is the documented origin-sector fallback, not a claim of verified 2022 manufacturing dominance."
+    },
+    "source_ids": [
+      "S1",
+      "S4",
+      "S7",
+      "S8",
+      "S11"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "He created the principal printing fortune by building a business with his brother; the launch resources do not support a narrower subtype.",
+    "confidence": {
+      "score": 86,
+      "band": "high",
+      "reason": "Positive evidence links the brothers' purchase of a small advertising enterprise and used press to their expansion of Treasure Chest and substantial personally controlled ownership at its sale. The family obituary independently describes Bob bringing Paul into the enterprise and subsequent business creation. This directly supported founder-built core asset warrants broad Self-made. Partnership with a brother is not itself inherited or transferred family wealth. Starting capital, parental resources and any material pre-existing platform remain unknown, so neither independent nor advantaged start is assigned from silence."
+    },
+    "source_ids": [
+      "S1",
+      "S4",
+      "S5"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "Family office principal is the strongest alternative, but his principal retained asset relationship at death in 2022 cannot be established.",
+    "confidence": {
+      "score": 58,
+      "band": "low",
+      "reason": "The SEC filing directly establishes Robert and Paul's beneficial ownership of Novamil, which managed controlled affiliates, and their interests in the partnership holding 87.2 percent of Perry Judd's. This was a substantive family capital platform, not a title alone. However, the identified printing investment was sold in 2007; the registry's last listed annual filings are from 2017, and the obituary gives no specific terminal portfolio or role. A continuing family office relationship is plausible but its 2022 principal-wealth premise remains unsupported. Founder is historically clear but does not establish a retained founding asset at death. Investor or passive owner likewise require positive terminal relationship evidence. No inference of retirement, dissolution or passivity is made from missing reports."
+    },
+    "source_ids": [
+      "S1",
+      "S7",
+      "S8",
+      "S11"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "American printing entrepreneur Robert Edward Milhous, known as Bob, built businesses with his brother Paul and shared a substantial collection of cars and mechanical music.",
+    "defining_work": "Treasure Chest grew into a national producer of retail advertising inserts before its sale; subsequent business interests included manufacturing and commercial and residential property.",
+    "formative_context": "Raised in Plainfield, Indiana, he repaired old cars as a teenager and studied mechanical engineering and industrial economics at Purdue.",
+    "decisive_moment": "The brothers dispersed their major museum collection after decades of collecting.",
+    "enduring_dimensions": [
+      "The Milhous Museum combined restored cars with elaborate mechanical musical instruments and hosted charitable events.",
+      "Milhous restored antique automobiles and took them on rallies around the world.",
+      "Their first collector car became a Pebble Beach Best of Show winner."
+    ],
+    "character_detail": "His interests in machinery extended from childhood car repairs to restored automobiles, organs and a specially built carousel.",
+    "opening_options": [
+      {
+        "mode": "institution_or_asset",
+        "angle": "Open with the Milhous Museum's combination of automobiles and mechanical music, then explore its creator."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Open with a teenager repairing old cars, orienting immediately to the printing entrepreneur and later collector."
+      }
+    ],
+    "excluded_transient_context": [
+      "Vessel ownership and names",
+      "Unverified present or terminal portfolio rankings",
+      "Corporate and auction sale totals",
+      "Stale input age and mortality status",
+      "Illness and bereavement details"
+    ],
+    "source_ids": [
+      "S1",
+      "S4",
+      "S5",
+      "S9",
+      "S10"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "institution_then_person",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "Shared anchors are the printing-entrepreneur identity and brother Paul. The short alone describes Indiana upbringing, commercial expansion, the 1993 business sale and later manufacturing/property interests. The long omits that business bundle and adds mechanical formation and Purdue studies, museum composition, rallies and charitable use, the prize-winning first collector car and international auction. Its second paragraph stays with the museum and collection rather than imposing a separate later-life philanthropy chapter. Reducing it to the short would lose these distinct dimensions. No source, confidence, vessel or classification language enters the pair."
+  },
+  "editorial_note": null,
+  "biography": {
+    "plain_text": "Robert \"Bob\" Milhous was an American printing entrepreneur who built Treasure Chest Advertising with his brother Paul. Raised in Indiana, he expanded the business into a national producer of retail advertising inserts before its sale in 1993. Based later in Florida, he also developed businesses in manufacturing and commercial and residential property.",
+    "html": "<p>Robert \"Bob\" Milhous was an American printing entrepreneur who built Treasure Chest Advertising with his brother Paul. Raised in Indiana, he expanded the business into a national producer of retail advertising inserts before its sale in 1993. Based later in Florida, he also developed businesses in manufacturing and commercial and residential property.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Family remembrance and the court establish the personal background, brother partnership, printing expansion, sale and later business interests without converting enterprise values into personal wealth."
+    },
+    "source_ids": [
+      "S1",
+      "S4",
+      "S5"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "At the Milhous Museum in Boca Raton, printing entrepreneur Robert Milhous assembled antique cars alongside elaborate mechanical musical instruments with his brother Paul. His enthusiasm for machinery had begun with repairing old cars as a teenager; he subsequently studied mechanical engineering and industrial economics at Purdue University. The brothers' collection brought together restored automobiles, fairground organs, clocks and a specially built carousel.\n\nMilhous took antique cars on rallies around the world, while the museum hosted charitable events. The brothers' first collector car, a 1934 Packard Convertible Victoria, became a Pebble Beach Best of Show winner. When they dispersed the collection at auction in 2012, bidders came from eighteen countries. An Oldsmobile Limited headed the sale, setting an auction record for the marque.",
+    "html": "<p>At the Milhous Museum in Boca Raton, printing entrepreneur Robert Milhous assembled antique cars alongside elaborate mechanical musical instruments with his brother Paul. His enthusiasm for machinery had begun with repairing old cars as a teenager; he subsequently studied mechanical engineering and industrial economics at Purdue University. The brothers' collection brought together restored automobiles, fairground organs, clocks and a specially built carousel.</p>\r\n<p>Milhous took antique cars on rallies around the world, while the museum hosted charitable events. The brothers' first collector car, a 1934 Packard Convertible Victoria, became a Pebble Beach Best of Show winner. When they dispersed the collection at auction in 2012, bidders came from eighteen countries. An Oldsmobile Limited headed the sale, setting an auction record for the marque.</p>\r\n",
+    "word_count": 122,
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Family remembrance supports teenage repairs, Purdue education, international rallies and the museum's charitable events. The auction house documents the collection, first collector car, award and auction outcomes."
+    },
+    "source_ids": [
+      "S1",
+      "S9",
+      "S10"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "middle_names",
+      "value": "Edward",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Explicitly supported by the family obituary, with Robert Edward's business and spouse independently corroborated."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Printing entrepreneur and collector",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Explicitly supported by the family obituary, with Robert Edward's business and spouse independently corroborated."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Explicitly supported by the family obituary, with Robert Edward's business and spouse independently corroborated."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Indianapolis, Indiana, United States",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Explicitly supported by the family obituary, with Robert Edward's business and spouse independently corroborated."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "14",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Explicitly supported by the family obituary, with Robert Edward's business and spouse independently corroborated."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "January",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Explicitly supported by the family obituary, with Robert Edward's business and spouse independently corroborated."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1937",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Explicitly supported by the family obituary, with Robert Edward's business and spouse independently corroborated."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "existing_value": "Alive",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Family obituary expressly records his death on 27 November 2022, reproduced by the Classic Car Club of America Florida Region."
+      },
+      "source_ids": [
+        "S1",
+        "S12"
+      ]
+    }
+  ],
+  "proposed_socials": [],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0041",
+      "name": "Classic-car collector",
+      "summary": "Built a major classic-car collection with his brother over decades, restored cars and entered international rallies.",
+      "relationship_type": "collector",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "A sustained, publicly documented notable collection satisfies the cultural-identity facet beyond casual vehicle ownership.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary auction records and the family obituary document the major collection, prize-winning cars, restoration and rallies."
+      },
+      "source_ids": [
+        "S1",
+        "S9",
+        "S10"
+      ]
+    },
+    {
+      "tag_id": "tag_0928",
+      "name": "Museum founder",
+      "summary": "Created the private Milhous Museum with his brother to house their cars and mechanical musical instruments.",
+      "relationship_type": "founder",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Adds the distinct public institutional setting and charitable use of the collection, rather than merely duplicating ownership of antique cars.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Family remembrance describes the brothers starting their museum; the auction house independently documents the private collection and museum."
+      },
+      "source_ids": [
+        "S1",
+        "S9",
+        "S10"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "field": "wealth_relationship",
+      "value": "Family office principal",
+      "reason": "Strong historical Novamil ownership and management evidence, but continuing principal assets and Robert's terminal relationship in 2022 remain unestablished.",
+      "confidence": {
+        "score": 58,
+        "band": "low",
+        "reason": "Historical beneficial ownership is direct; terminal continuity is not."
+      },
+      "source_ids": [
+        "S7",
+        "S8",
+        "S11"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "27",
+      "reason": "Directly verified death date; input Alive categorizes the blank death fields as inapplicable, so retained here pending mortality correction.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Explicit family obituary and club reproduction."
+      },
+      "source_ids": [
+        "S1",
+        "S12"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "November",
+      "reason": "Directly verified; conditional death field is not a researchable blank in immutable input.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Explicit family obituary and club reproduction."
+      },
+      "source_ids": [
+        "S1",
+        "S12"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "2022",
+      "reason": "Directly verified; conditional death field is not a researchable blank in immutable input.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Explicit family obituary and club reproduction."
+      },
+      "source_ids": [
+        "S1",
+        "S12"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.glickfamilyfuneralhome.com/obituary/Robert-Milhous",
+      "title": "Obituary for Robert Edward Milhous",
+      "publisher": "Glick Family Funeral Home",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full obituary body read through web retrieval; subsequent direct requests were blocked. Robert Edward (Bob), 14 January 1937 Indianapolis to 27 November 2022 Boca Raton; wife Gail; Plainfield upbringing, teen car repairs, Purdue mechanical engineering and industrial economics, brother Paul joining California business, later manufacturing and commercial/residential property ventures, car restoration/rallies and museum charitable events."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.gettyimages.co.uk/detail/news-photo/americans-gail-and-bob-milhous-launch-their-156-foot-news-photo/56072990",
+      "title": "Gail and Bob Milhous launch Aria, 15 October 2000",
+      "publisher": "Getty Images / David Hallett",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete indexed caption read; direct retrieval later failed. Names Americans Gail and Bob Milhous launching the 156-foot Aria at Sensation Yachts, Henderson, Auckland, on 15 October 2000. Contemporary spouse and vessel identity bridge."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.yachtcharterfleet.com/luxury-charter-yacht-23704/Vita%20Nova.htm",
+      "title": "Vita Nova yacht, formerly Aria",
+      "publisher": "YachtCharterFleet",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Indexed vessel description read: 47-metre Sensation yacht built in 2001, former Aria. Supports former-name bridge to immutable Vita Nova, separately from the YachtBuyer story; no biography content drawn from vessel details."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://law.justia.com/cases/california/court-of-appeal/2005/d043058.html",
+      "title": "Milhous v. Franchise Tax Board, D043058",
+      "publisher": "California Court of Appeal via Justia",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Court opinion body read. Brothers bought and developed Treasure Chest in the late 1960s; incorporated in 1973; moved to Florida in 1988. Family trusts they controlled held 76 percent. A leading printer of circulars, comics and TV listings; 1993 sale to TCA. Court describes total cash consideration of USD 120 million including USD 30 million noncompete consideration. These are company transaction figures, not Robert's personal net worth."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.referenceforbusiness.com/history2/29/Big-Flower-Press-Holdings-Inc.html",
+      "title": "Big Flower Press Holdings Inc. history",
+      "publisher": "Gale / Reference for Business",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full history body read via direct HTML. Brothers bought a used press in 1967 and printed the Treasure Chest of Values shopper; expanded to six plants within five years; bought first new press in 1974. Advertising circulars were 85 percent of 1990 sales. Used for operating development, not conflicting acquisition valuation or an implausible daily paper-volume statement."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.piworld.com/article/donald-roland-accentuating-solutions-not-processes-17224/",
+      "title": "Donald Roland: Accentuating Solutions, Not Processes",
+      "publisher": "Printing Impressions",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed interview body read. Milhous brothers owned Treasure Chest and recruited professional management; substantial multi-plant commercial printing enterprise before its 1993 sale. Corroborates personal ownership and business scale; company revenues are not personal wealth."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.sec.gov/Archives/edgar/data/1053722/000110465904008084/a04-3632_110k.htm",
+      "title": "Perry Judd's Holdings annual report, 2004 filing",
+      "publisher": "US SEC / Perry Judd's Holdings",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full filing retrieved and relevant ownership/management passages read. Robert chaired Perry Judd's from December 1994. Novamil beneficially owned by Robert and Paul managed companies owned by controlled affiliates. Ropamil held 87.2 percent of Perry Judd's; brothers and affiliates owned all partnership interests. Demonstrates historical principal ownership and family capital management, not terminal 2022 continuity."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://search.sunbiz.org/Inquiry/corporationsearch/SearchResultDetail?aggregateId=forp-f02000001666-8140843c-372d-4957-b1ba-285acb648cb1&directionType=ForwardList&inquirytype=EntityName&listNameOrder=NOVAMETALS+P120000927660&searchNameOrder=NOVAMIL+F020000016660&searchTerm=NOVA+LOT+4%2C+LLC",
+      "title": "Novamil Corporation entity record F02000001666",
+      "publisher": "Florida Division of Corporations",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full entity page read. Delaware corporation registered in Florida in 2002; Robert listed as president/chair, Paul and Kenneth Dorff as other officers. Last displayed annual reports 2015-2017; registered-agent resignation December 2017 and revocation May 2018. Administrative foreign-registration status does not establish underlying business liquidation or Robert's 2022 portfolio."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://rmsothebys.com/media-center/press-releases/milhous-collection-achieves-impressive-383-million-in-sales/",
+      "title": "Milhous Collection achieves impressive USD 38.3 million in sales",
+      "publisher": "RM Sotheby's",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full release retrieved earlier and complete indexed body read; later direct retrieval intermittently returned 404. Brothers' decades of collecting; first collector car a 1934 Packard Convertible Victoria, Pebble Beach Best of Show winner; elaborate mechanical instruments, fair organs and carousel; collection dispersal in 2012. USD 38.3 million is the combined auction total, not Robert's personal net worth."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://rmsothebys.com/auctions/mh12/",
+      "title": "The Milhous Collection, 24-25 February 2012",
+      "publisher": "RM Sotheby's",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full auction report body directly read. All lots sold; bidders represented eighteen countries; Oldsmobile Limited headed the auction and set a marque auction record. Bob quoted on choosing to disperse the collection."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.sec.gov/Archives/edgar/data/29669/000119312507096881/dex991.htm",
+      "title": "RR Donnelley first-quarter 2007 results, 1 May 2007",
+      "publisher": "US SEC / RR Donnelley",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full release directly retrieved. Confirms acquisition of Perry Judd's Holdings on 24 January 2007. This prevents projecting the family's 2004 printing interest unchanged to Robert's death."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://cccafloridaregion.com/wp-content/uploads/2023/03/Feb-2023-Final.pdf",
+      "title": "Classic Lines, February 2023: Robert Edward Milhous remembrance",
+      "publisher": "Classic Car Club of America, Florida Region",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Direct PDF body extracted and read, printed page 12 / zero-based page index 11. Reproduces the family obituary including DOB, death, education, business, cars and museum. Corroborating access channel, not an independent second biographical account."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://www.yachtbuyer.com/en/fleet/vita-nova-156-sensation-yachts",
+      "title": "Vita Nova build story",
+      "publisher": "YachtBuyer",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed build story identifies Bob and Gail Milhous commissioning Aria and choosing its design. Supplementary identity evidence; independently corroborated contemporary Getty caption and vessel former-name record carry the bridge."
+      ]
+    },
+    {
+      "id": "S14",
+      "url": "https://www.linkedin.com/in/robert-milhous-560b756",
+      "title": "Robert Milhous, real estate profile",
+      "publisher": "LinkedIn",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Indexed profile evidence identifies younger Punta Gorda / southwest Florida realtor with Washington and Jefferson College attendance in 1997-2001; rejected as a personal profile for the 1937-born printing entrepreneur. Direct LinkedIn access restricted."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Research cutoff 30 September 2026; sources accessed 1 October 2026. Wealth relationship and primary-industry assessment use his terminal position at death on 27 November 2022, not successors' later assets.",
+    "The input's age 81 as of 7 May 2020 conflicts with directly stated 14 January 1937 birth (83 on that date). No calculated age field is proposed. The Alive value is demonstrably stale and a Dead correction is proposed; the date itself is preserved as review candidates because the immutable inventory treats death fields as inapplicable while Alive.",
+    "Original sale materiality rests on his substantial controlled ownership and developed industrial platform, not on allocating the whole company sale price to him. The 2005 court describes USD 120 million including USD 30 million noncompete consideration; other accounts use different valuation bases. No corporate total is converted into personal net worth.",
+    "Broad Self-made is directly supported by the core enterprise he built and owned. A used-press launch does not alone establish independent starting resources. No positive family-capital premise supports advantaged start or inheritance; lack of such reporting is not used as proof of independence.",
+    "Family office principal is the strongest terminal relationship candidate. SEC ownership and family-asset management are historical and material, but the named large printing investment was sold in 2007. Novamil's last Florida annual filings in 2017 and administrative revocation in 2018 do not establish closure or prove retained principal assets in 2022. The obituary's unspecified businesses cannot rank terminal investments; broad Investor, Founder and passive owner also lack a sufficient terminal premise.",
+    "Primary Manufacturing is expressly the origin-sector fallback. Real Estate or Diversified would require positive material personally attributable terminal asset evidence, not merely the obituary's list of sectors. No successors' or Paul's separate assets are assigned to Robert.",
+    "Forbes-first exact and profile searches found no attributable personal profile. Priority Instagram, LinkedIn and personal website searches, followed by Facebook, Twitter/X, Youtube and TikTok, found no identity-verified personal account. Company social pages, obituary share buttons and article videos are not personal accounts. TikTok/LinkedIn access restrictions limit completeness.",
+    "Other supported-platform checks for Wikipedia, Vimeo, Flickr, Trip Advisor and Zillow established no personal profile for this owner. The Fort Myers/Punta Gorda realtor's Zillow and LinkedIn and an Augusta photographer/chiropractor Robert Evan Milhous were rejected; similarly named CPA and hydrology researcher matches do not share the identity chain. No verified current official domain for Novamil or personal museum website was established.",
+    "The auction totals are combined collection results, not the owner's net worth. The museum's charitable use is directly described, but no public-opening schedule, permanent endowment or continued operation after the dispersal is inferred.",
+    "The minimum useful active tags distinguish sustained classic-car collecting from the museum-founder status. Generic advertising, manufacturing, philanthropy and real-estate tags would either misstate the contract-printing activity, duplicate wealth fields or exceed the demonstrated defining association."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person research with complementary biographies and direct principal-wealth evidence. The terminal relationship remains Unknown after considering substantive historical family-office ownership, disposed operating assets and the absence of a positive retained principal-asset premise. Only the assigned dossier is saved; nothing applied to the website or shared dataset."
+  }
+}

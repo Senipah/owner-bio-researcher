@@ -1,0 +1,1317 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 2191,
+    "display_name": "Ted Turner",
+    "identity_confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "The American media founder's public name, country and exact birth date match the input age of 81 on 7 May 2020. The Florida state archive explicitly names him as Bounty's donor in 1993, independently bridging the vessel association. The source relationship start remains unverified. Robert Edward Turner III is distinct from his son IV, the guitarist and unrelated LinkedIn namesakes."
+    }
+  },
+  "research_status": "complete",
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/ted-turner/",
+    "confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Exact profile independently matches the cable entrepreneur, family-business succession and documented death. Forbes was checked first; full indexed profile and direct page via publisher redirect were reviewed."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "media_entertainment",
+    "label": "Media & Entertainment",
+    "summary": "The inherited advertising company and the broadcasting empire developed from it formed his original principal fortune.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "His own interview establishes control of the father's billboard business through the estate and the financing methods used to expand it. The company's documented conversion into radio and television, followed by the personally attributable media fortune recognised by Forbes, establishes an owned wealth-producing platform. This is not an inference from the public CNN role alone."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "primary_industry": {
+    "classification": "agriculture",
+    "label": "Agriculture",
+    "summary": "Terminal-lifetime inference from the substantial privately held commercial ranching platform.",
+    "confidence": {
+      "score": 76,
+      "band": "medium",
+      "reason": "The official terminal account identifies major personal landholdings and a privately managed bison herd; the ranch FAQ identifies commercial ranch ownership and productive uses. Independent county-record reporting corroborates continued personally controlled ranch land after documented donations. These positive assets and their continuing productive scale support Agriculture as the best current principal-sector inference, rather than treating land solely as Real Estate. Restaurant, tourism, energy and securities interests exist but their relative values are unavailable. Already donated land and foundation assets are excluded. No exact terminal acreage allocation or comprehensive balance sheet is asserted; the conclusion is medium confidence, not a valuation-based majority calculation."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "inherited_and_expanded",
+    "label": "Inherited and expanded",
+    "summary": "Inherited the core family advertising enterprise and transformed it into a much larger media group.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The first-person account describes the father's estate, his executor role and resulting control of the existing business. Independent reporting explicitly identifies inheritance. Primary company history then documents the expansion through broadcasting and national networks that generated his principal fortune. The continuity of the transferred core and its material personal transformation supports Inherited and expanded; a mere advantaged start would conceal the business transfer. Mixed is unnecessary because expansion of this inherited platform already describes the mechanism."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5",
+      "S12"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "family_office_principal",
+    "label": "Family office principal",
+    "summary": "Terminal co-chair of the private holding structure managing his substantial personal land, business and investment assets.",
+    "confidence": {
+      "score": 80,
+      "band": "medium",
+      "reason": "The official terminal biography explicitly records that he remained co-chair of Turner Enterprises until death and that it managed his personal businesses, investments, land and bison. The separately corroborated material ranch assets establish that this was a principal wealth structure, not an honorary foundation seat. Family office principal describes representation and direction through that holding platform; it does not assert daily ranch management. Founder is less precise across acquired holdings, and passive ownership is not inferred from delegation. Exact beneficial allocations and the final extent of charitable transfers remain unavailable."
+    },
+    "source_ids": [
+      "S3",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "American media entrepreneur, competitive sailor and conservationist.",
+    "defining_work": "Transformed the inherited advertising business into national cable television networks.",
+    "formative_context": "Worked in his father's billboard enterprise before succeeding to it.",
+    "decisive_moment": "Created a continuous television news network and subsequently combined the broadcasting group with Time Warner.",
+    "enduring_dimensions": [
+      "Commercial bison ranching alongside restoration of native wildlife.",
+      "Competitive sailing at America's Cup and major offshore-race level.",
+      "Institution-building philanthropy supporting the United Nations."
+    ],
+    "character_detail": "Recruited familiar offshore sailors for his successful America's Cup crew.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Introduce the entrepreneur through commercial ranching and conservation."
+      },
+      {
+        "mode": "defining_achievement",
+        "angle": "Introduce the competitive sailor through his America's Cup crew and victory."
+      }
+    ],
+    "excluded_transient_context": [
+      "Recreational vessel ownership",
+      "Estate distribution assumptions",
+      "Unrelated private family matters",
+      "Health details",
+      "Annual wealth estimates"
+    ],
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S9",
+      "S10"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "inherited_operator",
+      "investor_philanthropist"
+    ],
+    "notes": "Short owns the inherited advertising-to-broadcasting platform, CNN and TBS, merger and UN commitment. Long shares only his American entrepreneurial identity and supplies commercial conservation practices, an agricultural research gift and the concrete composition and success of his sailing crew. Neither the media-development bundle nor the UN gift is repeated. One explicit year, no monetary figure and no sale-dependent vessel content."
+  },
+  "editorial_note": null,
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Founder of CNN and Turner Broadcasting",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Direct official biography independently corroborates the exact personal fact."
+      },
+      "source_ids": [
+        "S3",
+        "S5"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Direct official biography independently corroborates the exact personal fact."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Cincinnati, Ohio",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Direct official biography independently corroborates the exact personal fact."
+      },
+      "source_ids": [
+        "S3",
+        "S9"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "19",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Direct official biography independently corroborates the exact personal fact."
+      },
+      "source_ids": [
+        "S3",
+        "S9"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "November",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Direct official biography independently corroborates the exact personal fact."
+      },
+      "source_ids": [
+        "S3",
+        "S9"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1938",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Direct official biography independently corroborates the exact personal fact."
+      },
+      "source_ids": [
+        "S3",
+        "S9"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "existing_value": "Alive",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official family announcement records death on 6 May 2026, independently corroborated by the official legacy account and Forbes."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://www.forbes.com/profile/ted-turner/",
+      "action": "add",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary cross-link or independent exact biographical matching verifies this destination."
+      },
+      "verification": "Exact dedicated profile for the CNN founder, independently matched to official history and vital dates.",
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.tedturner.com/",
+      "action": "add",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary cross-link or independent exact biographical matching verifies this destination."
+      },
+      "verification": "Official Turner Enterprises website, the private company he co-chaired until death; also carries his official legacy material.",
+      "source_ids": [
+        "S3",
+        "S8",
+        "S11"
+      ]
+    },
+    {
+      "type_id": "9",
+      "type": "Instagram",
+      "url": "https://www.instagram.com/tedturneriii/",
+      "action": "add",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary cross-link or independent exact biographical matching verifies this destination."
+      },
+      "verification": "Direct link from the official homepage. Platform body was unavailable; affiliation is established by the primary cross-link. Retained official legacy account, not an assertion of personal authorship after death.",
+      "source_ids": [
+        "S11"
+      ]
+    },
+    {
+      "type_id": "2",
+      "type": "Facebook",
+      "url": "https://www.facebook.com/pages/Ted-Turner/505718032870783",
+      "action": "add",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary cross-link or independent exact biographical matching verifies this destination."
+      },
+      "verification": "Exact direct link from the official homepage. Platform body unavailable; identity verified by the official cross-link. Retained legacy account.",
+      "source_ids": [
+        "S11"
+      ]
+    },
+    {
+      "type_id": "3",
+      "type": "Twitter",
+      "url": "https://twitter.com/TedTurnerIII",
+      "action": "add",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary cross-link or independent exact biographical matching verifies this destination."
+      },
+      "verification": "Exact official homepage link and indexed account biography naming Turner, his team and tedturner.com; direct platform body unavailable. Retained legacy account.",
+      "source_ids": [
+        "S11",
+        "S14"
+      ]
+    },
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ted_Turner",
+      "action": "add",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary cross-link or independent exact biographical matching verifies this destination."
+      },
+      "verification": "Exact article matches the independently established name, dates and media identity; used for link verification only.",
+      "source_ids": [
+        "S13",
+        "S3"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0678",
+      "name": "Television broadcasting",
+      "summary": "Inherited and transformed an advertising enterprise into nationally significant television networks.",
+      "relationship_type": "historical founder and controlling media entrepreneur",
+      "temporal_scope": "historical",
+      "taxonomy_value": "A defining and sustained activity with direct primary evidence, meeting the active catalogue contract rather than incidental participation.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Primary institutional histories establish sustained personal contribution and substantial scale."
+      },
+      "source_ids": [
+        "S1",
+        "S3",
+        "S5"
+      ]
+    },
+    {
+      "tag_id": "tag_0044",
+      "name": "Competitive sailing",
+      "summary": "Sustained championship sailing, including an America's Cup defence and major offshore victories.",
+      "relationship_type": "championship skipper",
+      "temporal_scope": "historical",
+      "taxonomy_value": "A defining and sustained activity with direct primary evidence, meeting the active catalogue contract rather than incidental participation.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Primary institutional histories establish sustained personal contribution and substantial scale."
+      },
+      "source_ids": [
+        "S9"
+      ]
+    },
+    {
+      "tag_id": "tag_0070",
+      "name": "Environmental conservation",
+      "summary": "Built institutions and committed land to sustained native-species restoration and sustainable land management.",
+      "relationship_type": "conservation institution founder and land donor",
+      "temporal_scope": "historical",
+      "taxonomy_value": "A defining and sustained activity with direct primary evidence, meeting the active catalogue contract rather than incidental participation.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Primary institutional histories establish sustained personal contribution and substantial scale."
+      },
+      "source_ids": [
+        "S3",
+        "S6",
+        "S7"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "biography": {
+    "plain_text": "Ted Turner was an American media entrepreneur who expanded his inherited billboard business into Turner Broadcasting and founded CNN, pioneering round-the-clock television news. He also created the TBS Superstation and built entertainment networks before the Time Warner merger. His philanthropy included establishing the United Nations Foundation with a billion-dollar commitment.",
+    "html": "<p>Ted Turner was an American media entrepreneur who expanded his inherited billboard business into Turner Broadcasting and founded CNN, pioneering round-the-clock television news. He also created the TBS Superstation and built entertainment networks before the Time Warner merger. His philanthropy included establishing the United Nations Foundation with a billion-dollar commitment.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Direct primary accounts and corroborating reporting support each material claim independently of wealth inference."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5",
+      "S10",
+      "S12"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "American entrepreneur Ted Turner combined commercial bison ranching with efforts to restore native wildlife. His ranches used grazing, hunting, fishing and limited timber production to support the land's management. He also helped create a research institute studying sustainable ranching, donating land to put its work into practice.\n\nAs a competitive sailor, Turner assembled an America's Cup crew from sailors he already knew through offshore racing, including tactician Gary Jobson and trimmer Robbie Doyle. He steered the team to a clean sweep of the 1977 defence and won the storm-struck Fastnet Race two years later.",
+    "html": "<p>American entrepreneur Ted Turner combined commercial bison ranching with efforts to restore native wildlife. His ranches used grazing, hunting, fishing and limited timber production to support the land's management. He also helped create a research institute studying sustainable ranching, donating land to put its work into practice.</p>\r\n<p>As a competitive sailor, Turner assembled an America's Cup crew from sailors he already knew through offshore racing, including tactician Gary Jobson and trimmer Robbie Doyle. He steered the team to a clean sweep of the 1977 defence and won the storm-struck Fastnet Race two years later.</p>\r\n",
+    "word_count": 94,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Direct primary accounts and corroborating reporting support each material claim independently of wealth inference."
+    },
+    "source_ids": [
+      "S6",
+      "S7",
+      "S9"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=2191",
+      "title": "Immutable owner record",
+      "publisher": "Superyacht Network export",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "American, US birth and residence; input Alive and age 81 on 7 May 2020. Historical Bounty relationship 1983 to 1993. Context only."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/profile/ted-turner/",
+      "title": "Ted Turner profile",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Forbes-first exact profile; full indexed body and publisher redirect reviewed. Identifies cable television wealth, family-company succession, later stock sale and deceased status. Current displayed 2026 estimate is dated before death and is not imported as a final estate valuation."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.tedturner.com/2026/05/philanthropist-environmentalist-and-cable-pioneer-ted-turner-passes-at-87/",
+      "title": "Family announcement, 6 May 2026",
+      "publisher": "Turner Enterprises",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full family announcement read. Records death on 6 May 2026 at age 87; no health or private family circumstances used."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.tedturner.com/ted-turner-legacy/",
+      "title": "Robert Edward Ted Turner III: official legacy",
+      "publisher": "Turner Enterprises",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Exact full name, birth particulars and media development; explicitly co-chair of the private asset-management company until death, personally significant land and bison interests. Charitable organisations are separately identified. No claim all cited acreage remained personally owned after transfers."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://achievement.org/achiever/ted-turner/",
+      "title": "Ted Turner interview and biography",
+      "publisher": "Academy of Achievement",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant interview and surrounding biography read. First-person account of the father's will, executor role and control of the existing billboard business, followed by expansion finance from prepaid advertising and employee shares. Peripheral editorial errors concerning education and sailing are not relied upon."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.tedturner.com/turner-family/ted-turner/",
+      "title": "Ted Turner: company biography",
+      "publisher": "Turner Enterprises",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Television acquisition, TBS Superstation, CNN and later entertainment networks substantiate the short profile. Historical present-tense wording is not used to imply he remains alive."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.tedturner.com/turner-ranches/turner-ranches-faq/",
+      "title": "Turner Ranches FAQ",
+      "publisher": "Turner Enterprises",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Terminal-lifetime land scale and company-owned 13 ranches; commercial bison, hunting, fishing and limited timber uses; a 45,000-bison private herd. Supports productive agriculture rather than undeveloped land alone. Exact terminal division between charitable and private acreage is not supplied."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://nebraskapublicmedia.org/en/news/news-articles/ted-turner-longtime-nebraska-land-baron-still-buying-as-next-chapter-nears/",
+      "title": "Ted Turner still buying land, 8 December 2023",
+      "publisher": "Flatwater Free Press via Nebraska Public Media",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article read. County-record analysis documents ongoing purchases and substantial controlled ranchland after an 80,000-acre gift to the research institute in 2021. Confirms institute creation with family and university research partnership. Further transfers were unclear; this is not a complete estate schedule."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.tedturner.com/about/",
+      "title": "About Turner Enterprises",
+      "publisher": "Turner Enterprises",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Private company manages the late founder's businesses, investments and land, separately from the foundations. Corroborates the holding-platform relationship."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://thesailingmuseum.org/inductee/turner-ted/",
+      "title": "Robert Ted Edward Turner: Hall of Fame profile",
+      "publisher": "The Sailing Museum and National Sailing Hall of Fame",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Competitive history, recruitment of familiar offshore crew including Jobson and Doyle, a 4-0 America's Cup defence in 1977 and Fastnet victory in 1979. Birth and death dates independently corroborate official biography."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://unfoundation.org/who-we-are/our-founder-ted-turner/",
+      "title": "Our founder, Ted Turner",
+      "publisher": "United Nations Foundation",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant indexed body read; direct request met a security interstitial. Explains the billion-dollar pledge and subsequent foundation established as its vehicle. Supports the personal commitment without treating foundation assets as his property."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.tedturner.com/",
+      "title": "Official homepage and profile cross-links",
+      "publisher": "Turner Enterprises",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full page and link targets read directly. Explicit Instagram tedturneriii, Twitter TedTurnerIII and Facebook numerical-page links establish official affiliation despite platform retrieval limits."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://www.lemonde.fr/en/obituaries/article/2026/05/06/ted-turner-founder-of-cnn-is-dead_6753188_15.html",
+      "title": "Ted Turner obituary, 6 May 2026",
+      "publisher": "Le Monde",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed relevant body read. Explicitly describes inheritance of the father's billboard company, independently corroborating the first-person estate account."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://en.wikipedia.org/wiki/Ted_Turner",
+      "title": "Ted Turner",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Article identity and link checked against official dates and career. Not sole evidence for economic judgments."
+      ]
+    },
+    {
+      "id": "S14",
+      "url": "https://x.com/TedTurnerIII/with_replies",
+      "title": "Ted Turner account biography",
+      "publisher": "X",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Indexed account body identifies the official profile and posts from Ted and his team, links tedturner.com and matches the official homepage cross-link. Direct platform body unavailable."
+      ]
+    },
+    {
+      "id": "S15",
+      "url": "https://www.floridamemory.com/items/show/297119",
+      "title": "HMS Bounty under full sail: archive record",
+      "publisher": "State Library and Archives of Florida",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full archive record read. Explicitly identifies Ted Turner as the previous owner who donated the ship in 1993. Establishes the historical owner-record bridge, not its 1983 starting date or the legal corporate holding structure."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The input Alive value is outdated. The official family announcement records death on 6 May 2026; a mortality correction is proposed. Death-date fields remain inapplicable under the immutable source inventory, so the date stays in this research ledger.",
+    "The official full name is Robert Edward Turner III. Ted is the established public name in the source record; adding Edward alone to a nickname-based name structure would create an inconsistent legal-name rendering. No middle-name, suffix or first-name change is proposed. No secondary nationality or additional residence is inferred.",
+    "The source Bounty relationship begins in 1983. Independent archive evidence confirms the 1993 donation but does not validate that start; published acquisition histories point to 1986. No vessel relationship is edited, and no vessel ownership detail enters the biographies.",
+    "All wealth fields use the subject's terminal lifetime. Agriculture is a reasoned current principal-sector inference from substantial continuing private productive holdings, with incomplete sector valuations and charitable transfer boundaries. It is not a claim that every ranch acre belonged to him personally or that institutional assets were private wealth.",
+    "The holding-company role is positively documented until death. It supports representation of his principal assets, not daily operating activity or a claim that all family assets were his. Founder, Investor and passive ownership were considered; the private holding-platform relationship is the most precise available description.",
+    "Forbes was checked first and the exact profile verified. All supported personal types were checked: LinkedIn, Instagram, Facebook, Twitter, Youtube, TikTok, Personal Website, Wikipedia, Vimeo, Flickr, Trip Advisor and Zillow. Official cross-linked accounts are retained after death; no current personal authorship inferred. No attributable LinkedIn, Youtube, TikTok or ancillary account was verified. Search results included an IT namesake, third-party videos, photographs and unrelated property agents; those were excluded.",
+    "Direct Instagram and Facebook bodies were unavailable, and Twitter had no readable direct body. The company's direct cross-links establish affiliation. TikTok was robots-blocked. The official domain is classified as Company Website because it represents Turner Enterprises as well as the founder's legacy; no duplicate Personal Website row.",
+    "Only the minimum active defining tags are proposed. Ranching remains in the ordinary biography and wealth evidence because no matching active granular tag was identified. No taxonomy candidates or catalogue changes.",
+    "Some biographical summaries mistakenly imply an earned Brown degree; only the official account of study is accepted and no education qualification is proposed. Sensitive health and family circumstances are omitted. Source-derived text stays within individual publisher budgets."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent reviewed and approved the complementary pair, independent wealth judgments and terminal-lifetime asset boundaries. Only this assigned dossier was saved; strict validation follows."
+  }
+}

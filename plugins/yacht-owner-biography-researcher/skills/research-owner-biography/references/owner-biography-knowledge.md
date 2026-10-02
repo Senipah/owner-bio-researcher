@@ -17,7 +17,7 @@ This is a bundled plugin reference. Behaviour, workflow order, manual-mode rules
 | Section | Canonical source | SHA-256 |
 | --- | --- | --- |
 | Owner tag governance | `../../../docs/ai/OWNER_TAG_GOVERNANCE.md` | `bf6ef681d35646e6a5723f893dfafed494d512d5acfea14d0738aa23553e5eb5` |
-| Research and dossier contract | `references/research-contract.md` | `085c193e070202a739a2999cb4d8b60dcd704c777feb39434a73222427938b08` |
+| Research and dossier contract | `references/research-contract.md` | `6d7d328df39de5dbb0b79f1e0c11d67409e28d3405d3dd78998f69b6c28dddbe` |
 | Wealth classification | `references/wealth-classification.md` | `b2d90299ff2ca17df209e27404040185f1129607c32b3dc15498a41ea93d6b0e` |
 | Biography style | `references/biography-style.md` | `387965b76e490fc632e7a0fdcee608b8e0a8d6c014206e0f6ad1020c62484f32` |
 | Editorial calibrations | `references/editorial-calibrations.md` | `0514f1418a9a3df3a362941d7a0dae7dd06b23a511dfefc903e2854c00340898` |
@@ -494,6 +494,18 @@ have reached a terminal research decision. It does not mean that every desired
 field is publicly knowable. Use supported `Unknown` classifications and record
 evidence limits under `uncertainties`; do not use `limited` merely because a
 resolved person has a sparse public profile.
+
+Repository-only exception: an explicit human approval in
+`config/owner-editorial-exceptions.json` may authorize withholding both
+biographies for the exact owner ID. Reference its exact ID in the optional
+`biography_exception` field. Both biographies, `biography_brief`, and
+`editorial_assessment` must be null; supply a sourced, confidence-scored
+20–120-word `editorial_note` explaining the evidence limit. No biography field
+proposal is permitted. Identity, classifications, sources, proposed details,
+and terminal-review validation still apply. Compilation preserves the input
+biographies and displays the exception in the review report. Researchers may
+not create or extend these approvals themselves. This is not a general sparse
+profile waiver and does not apply to standalone plugin work.
 
 ## Forbes check
 

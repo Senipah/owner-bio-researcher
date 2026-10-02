@@ -1,0 +1,1215 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1849,
+    "display_name": "Loretta Anne Rogers",
+    "identity_confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Exact full name, existing personal Wikipedia target, Canadian nationality, age 81 in May 2020 and independently documented Bahamas association converge with the wife of Ted Rogers. Official primary records establish her death in June 2022; source January 2023 death data and Canada birthplace are errors, not a second credible identity. Children and husband are distinct people. No claim of independent beneficial-ownership proof for each input vessel is made."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "London-born Canadian businesswoman, Rogers Communications director and philanthropist.",
+    "defining_work": "Helped finance the early communications business and held a family interest after her husband's death.",
+    "formative_context": "Fine-arts education at the University of Miami and settlement in Toronto after marriage.",
+    "decisive_moment": null,
+    "enduring_dimensions": [
+      "Painting and teaching art, including published children's illustrations.",
+      "Personal direction of hospital fundraising projects.",
+      "Company and family governance over several decades."
+    ],
+    "character_detail": "Her children's book illustrations included a story about caring for an injured loon.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Introduce the Canadian businesswoman through her art education and published paintings."
+      },
+      {
+        "mode": "public_contribution",
+        "angle": "Open with the hospital renovation campaign she launched and its purpose."
+      }
+    ],
+    "excluded_transient_context": [
+      "Family disputes",
+      "Personal illness",
+      "Personal vessel holdings",
+      "Family net-worth rankings",
+      "Current heirs' holdings"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "heir_custodian",
+      "creative_industries"
+    ],
+    "notes": "Short 51 words: business identity, early finance, inheritance, Toronto settlement and broad giving. Long 109 words: art education, published creative work, teaching, hospital campaign purpose and precise donor distinction. Shared anchors are her Canadian business identity and philanthropic work. The long omits the inheritance and corporate-governance bundle, adds several substantive personal practices and ends on an identifiable research outcome."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/loretta-robinson/",
+    "confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Historical profile under her birth surname explicitly matches husband, children, Canadian company and Toronto. It remains identifiable although its automatic age field is obsolete."
+    }
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Rogers Communications director and philanthropist",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Primary company and beneficiary institution records establish these defining roles."
+      },
+      "source_ids": [
+        "S2",
+        "S4",
+        "S6"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Female",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Explicit public biographical identification."
+      },
+      "source_ids": [
+        "S3",
+        "S9"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "13",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Official city condolence records exact birth date."
+      },
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "April",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Official city condolence records exact birth date."
+      },
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1939",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Official city record and company obituary agree."
+      },
+      "source_ids": [
+        "S3",
+        "S9"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "London",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Official city record names London, England."
+      },
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_country",
+      "value": "United Kingdom",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "London, England maps to the exact approved country label; source Canada is contradicted by primary evidence."
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "existing_value": "Canada"
+    },
+    {
+      "field": "death_day",
+      "value": "11",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Multiple primary announcements agree on 11 June 2022, correcting source 19 January 2023."
+      },
+      "source_ids": [
+        "S3",
+        "S7",
+        "S9"
+      ],
+      "existing_value": "19"
+    },
+    {
+      "field": "death_month",
+      "value": "June",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Multiple primary announcements agree on 11 June 2022."
+      },
+      "source_ids": [
+        "S3",
+        "S7",
+        "S9"
+      ],
+      "existing_value": "January"
+    },
+    {
+      "field": "death_year",
+      "value": "2022",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Multiple primary announcements agree on 11 June 2022."
+      },
+      "source_ids": [
+        "S3",
+        "S7",
+        "S9"
+      ],
+      "existing_value": "2023"
+    },
+    {
+      "field": "main_residence_country",
+      "value": "Canada",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 88,
+        "band": "high",
+        "reason": "Forbes Toronto residence and her terminal 2022 corporate biography corroborate long-term Toronto settlement. Bahamas community ties remain valid but do not establish principal residence there at death."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S7"
+      ],
+      "existing_value": "Bahamas"
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://www.forbes.com/profile/loretta-robinson/",
+      "action": "add",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Verified historical personal-and-family profile under her birth surname with exact spouse and company."
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "verification": "Verified historical personal-and-family profile under her birth surname with exact spouse and company."
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://about.rogers.com/stories/loretta-rogers/",
+      "action": "add",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Official company page specifically identifies her historical investment and directorship; distinct from a personal site."
+      },
+      "source_ids": [
+        "S4"
+      ],
+      "verification": "Official company page specifically identifies her historical investment and directorship; distinct from a personal site."
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0607",
+      "name": "Painter",
+      "summary": "Practised painting, contributed art to several published children's books and taught friends in an art school she established.",
+      "relationship_type": "practising painter and art teacher",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "A recurring publicly recognised creative practice supported by several works and teaching, beyond education or a single hobby mention.",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "City and university primary profiles independently identify her sustained painting, published work and teaching."
+      },
+      "source_ids": [
+        "S3",
+        "S5"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1849",
+      "title": "Immutable owner inventory: person 1849",
+      "publisher": "Repository export",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Exact name, Canadian nationality, age 81 as at 7 May 2020, Bahamas residence and existing personal Wikipedia link. Historical Ab Initio and Mazy relationships remain input context only."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/profile/loretta-robinson/",
+      "title": "Loretta Robinson & family: historical 2015 profile",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full profile read through Forbes redirect. Names her husband Ted and four children; explicitly reports that they inherited a large Rogers Communications stake after his 2008 death, with cable TV as wealth source. Family total is not assigned wholly to Loretta. Auto-updating age is obsolete after her death."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.sec.gov/Archives/edgar/data/733099/000119312522080055/d150388dex991.htm",
+      "title": "Rogers Communications 2022 management information circular",
+      "publisher": "Rogers Communications / SEC",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant governance, biography and personal securities passages read. Loretta was a corporate director and Control Trust advisory member at terminal lifetime. Her row records 2,000 Class A, 45,741 Class B and 100,082 deferred units in 2022; these are distinct from collectively held family securities. The trust controls the family's operating-company stake; executive, chair and trustee duties are separately assigned."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.toronto.ca/legdocs/mmis/2022/rm/bgrd/backgroundfile-229065.pdf",
+      "title": "Expression of Condolence for Loretta Rogers",
+      "publisher": "Toronto City Council",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete two-page text read. Born London on 13 April 1939; died 11 June 2022. Canadian businesswoman; Miami degree and fine arts, marriage followed by Toronto settlement; early principal investor. Taught friends at Tobin Island School of Fine Arts; paintings publicly displayed and published."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://about.rogers.com/stories/loretta-rogers/",
+      "title": "Loretta Rogers",
+      "publisher": "Rogers Communications",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete company tribute read. Early personal investor financing expansion from radio; director until death and Control Trust advisory member. Supports personal business contribution without quantifying her original investment or calling the family's entire stake her own."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.utoronto.ca/news/give-back-any-way-you-can-says-philanthropist-and-u-t-honorary-degree-recipient-loretta-rogers",
+      "title": "Give back in any way you can: Loretta Rogers",
+      "publisher": "University of Toronto",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete 2018 profile read. Early investment and continuing directorship; painter contributing to several children's books alongside Robert Bateman. Larry the Loon concerns the care of an injured loon."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.uhn.ca/corporate/News/Pages/Remembering_Loretta_Anne_Rogers.aspx",
+      "title": "Remembering Loretta Anne Rogers",
+      "publisher": "University Health Network",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete relevant obituary and timeline read. She launched the Toronto Western critical-care renovation campaign, with Ted pledging the naming gift. Her later personal donation created the heart function research chair held by Heather Ross. Confirms death in June 2022 and distinguishes personal, spousal and collective gifts."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://lyfordcayfoundations.org/lyford-cay-foundations-pays-tribute-to-late-board-member-loretta-anne-rogers/",
+      "title": "Tribute to board member Loretta Anne Rogers",
+      "publisher": "Lyford Cay Foundations",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Web reader failed on repeat access; complete article read directly with public HTTP request. Long-term Bahamas community connection; Canadian foundation chair 1981-2014 and subsequent board service. Confirms death in Toronto on 11 June 2022."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://en.wikipedia.org/wiki/Loretta_Rogers",
+      "title": "Loretta Rogers",
+      "publisher": "Wikipedia",
+      "tier": 4,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Canonical personal article verified against primary birth, death, company and family evidence. Used for URL correction and orientation, not sole support for material claims."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.sec.gov/Archives/edgar/data/733099/000119312522172434/d283602dex991.htm",
+      "title": "Loretta Rogers 1939-2022",
+      "publisher": "Rogers Communications / SEC",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete company announcement read; confirms 11 June 2022 death, age 83, spouse identity and advisory/director roles."
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Asset attribution and origin alternatives",
+      "detail": "Forbes' family net worth is not a personal balance sheet. Her exact estate-holding entitlement is undisclosed. Primary sources establish principal early investment, financing and strategic guidance, independently of the later large inheritance. These positive economic contributions support Mixed at medium confidence without requiring exact proportions. The provenance of original investment capital and the split between built and inherited assets remain unestablished."
+    },
+    {
+      "topic": "Identity corrections and chronology",
+      "detail": "Primary city and corporate sources correct birthplace Canada to London, United Kingdom and death 19 January 2023 to 11 June 2022. Age 81 on the source's May 2020 date agrees. Corporate tributes describe directorship from 1964 whereas the listed-company proxy gives 1979; the biographies deliberately use no start year. UHN and company accounts also differ on the foundation-board starting year, which is omitted."
+    },
+    {
+      "topic": "Historical geography",
+      "detail": "Primary sources establish both Toronto settlement/residence and a longstanding Bahamas community connection. Principal residence is corrected to Canada on terminal evidence; no unsupported dual citizenship or exact residency allocation is proposed."
+    },
+    {
+      "topic": "Personal profiles checked",
+      "detail": "Forbes was searched first and verified under Loretta Robinson. LinkedIn, Instagram, personal website, Facebook, Twitter/X, YouTube and TikTok searches yielded institutional coverage or unrelated namesakes, including the Florida romance writer Loretta C. Rogers. No attributable personal account was found. Vimeo, Flickr, Trip Advisor and Zillow searches also produced no supported account. Institutional videos are not personal channels. The verified company biography is labelled Company Website."
+    },
+    {
+      "topic": "Scope and access",
+      "detail": "No direct beneficial-ownership document for the input vessels is asserted. The exact-name, age, nationality, personal article and Bahamas connections establish the target. Personal illness and family disputes are excluded. The obituary hosting service and direct company PDF request were inaccessible; the SEC complete relevant text and other primary bodies were read. A book-preview search lead about advanced family capital was not recoverable in the opened preview, so its specific amount and mechanism are not treated as verified evidence."
+    },
+    {
+      "topic": "Existing Wikipedia link",
+      "detail": "The canonical verified personal page is https://en.wikipedia.org/wiki/Loretta_Rogers . The source already has a Wikipedia type with a malformed spaced URL. The current dossier contract permits only missing-type additions, so no replacement is proposed; this correction is retained for separate review."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent approved the 51/109-word pair and terminal classifications, including Mixed at medium confidence from her principal early investment and later material inheritance. Parent independently read the full UHN remembrance distinguishing her campaign, Ted's naming gift and her own research-chair gift. Only the assigned dossier is saved; no shared or live records changed."
+  },
+  "wealth_creation_industry": {
+    "classification": "telecom",
+    "label": "Telecom",
+    "summary": "Rogers Communications' cable and telecommunications business created the core fortune in which she invested and later inherited a family stake.",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Forbes directly identifies cable TV and the materially large family-company inheritance; the company confirms her own early financing. The underlying radio-to-cable and telecommunications enterprise is the principal established fortune, distinct from charitable work or family rank."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4"
+    ]
+  },
+  "primary_industry": {
+    "classification": "telecom",
+    "label": "Telecom",
+    "summary": "At her death in 2022, telecommunications remained the best-supported principal sector through her Rogers interests. This is a terminal-lifetime assessment, not a claim about present heirs.",
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Terminal-lifetime inference from Forbes' identified core inherited stake, continuing 2022 family holding structure and her separately disclosed personal Rogers equity. The 2022 filings demonstrate continued economic exposure to the same substantive telecom asset, not merely an old board title. Her precise trust entitlement and full estate allocation are not disclosed; family totals are not personal holdings."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "mixed",
+    "label": "Mixed",
+    "summary": "Her wealth combined an early personal investment in building Rogers Communications with a later materially large inherited family stake.",
+    "confidence": {
+      "score": 78,
+      "band": "medium",
+      "reason": "The city identifies her as a principal early investor, and the company credits her financing and strategic guidance during expansion. Those positive premises support a material wealth-building contribution independently of Forbes' explicit later inheritance. Mixed is a reasoned inference from both mechanisms; exact percentages and a separate company are unnecessary. The precise provenance of her initial capital and the allocation between built and inherited interests remain unestablished."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "heir_family_shareholder",
+    "label": "Heir / family shareholder",
+    "summary": "At the end of her life she held family and personal Rogers interests and participated in corporate and family governance.",
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Her inherited economic interest is explicit in Forbes, with personal securities and continuing advisory/director status in the 2022 circular. The circular assigns executive operation, trust administration and chair powers to separately named officers. This supports family shareholder rather than an assumed passive owner, principal operator or investment-office allocator; her early investment does not automatically describe her terminal role."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S4",
+      "S9"
+    ]
+  },
+  "biography": {
+    "plain_text": "Loretta Rogers was a London-born Canadian businesswoman and philanthropist who helped finance her husband Ted Rogers's early communications business. A longstanding company director, she later shared in the inheritance of his Rogers Communications stake. She settled in Toronto after their marriage and became a major supporter of medical research and education.",
+    "html": "<p>Loretta Rogers was a London-born Canadian businesswoman and philanthropist who helped finance her husband Ted Rogers's early communications business. A longstanding company director, she later shared in the inheritance of his Rogers Communications stake. She settled in Toronto after their marriage and became a major supporter of medical research and education.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Primary city, university, company and hospital records support every material biographical claim; Forbes directly corroborates the inherited stake."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S6"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Canadian businesswoman Loretta Rogers studied fine arts at the University of Miami and contributed paintings to children's books. Her illustrations appeared alongside work by wildlife artist Robert Bateman in books including Larry the Loon, which recounts efforts to care for an injured bird. She also taught painting to friends through the Tobin Island School of Fine Arts.\n\nAt Toronto Western Hospital, Rogers launched a campaign to renovate the critical care facilities, seeking better surroundings for patients, families and staff. Her husband pledged the funds to name the new centre in her honour. She later made a personal gift establishing a heart function research chair held by cardiologist Heather Ross.",
+    "html": "<p>Canadian businesswoman Loretta Rogers studied fine arts at the University of Miami and contributed paintings to children's books. Her illustrations appeared alongside work by wildlife artist Robert Bateman in books including Larry the Loon, which recounts efforts to care for an injured bird. She also taught painting to friends through the Tobin Island School of Fine Arts.</p>\r\n<p>At Toronto Western Hospital, Rogers launched a campaign to renovate the critical care facilities, seeking better surroundings for patients, families and staff. Her husband pledged the funds to name the new centre in her honour. She later made a personal gift establishing a heart function research chair held by cardiologist Heather Ross.</p>\r\n",
+    "word_count": 109,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Primary city, university, company and hospital records support every material biographical claim; Forbes directly corroborates the inherited stake."
+    },
+    "source_ids": [
+      "S3",
+      "S5",
+      "S6"
+    ]
+  }
+}

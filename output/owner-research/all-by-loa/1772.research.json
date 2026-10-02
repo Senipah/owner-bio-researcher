@@ -1,0 +1,1300 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1772,
+    "display_name": "Mikhail Prokhorov",
+    "identity_confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Exact existing biography identifies the Norilsk Nickel, ONEXIM and Nets businessman; age at the input date matches the primary corporate birth date. Primary foundation and company records and the exact Forbes profile agree. No namesake ambiguity remains."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "research_status": "complete",
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://www.forbes.com/profile/mikhail-prokhorov/",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Exact profile directly read; mining origin, education and former Nets investment match the independently established owner."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "metals_mining",
+    "label": "Metals & Mining",
+    "summary": "The personally held Norilsk Nickel interest and its development created the core fortune; banking was the acquisition platform.",
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Contemporary reporting identifies the mining stake and its sale as the principal fortune source, corroborated by the current wealth profile and the corporate record of industrial leadership. Subsequent investments do not rewrite the origin sector."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Investment holdings and financial businesses best describe the current principal identifiable private interests, assessed on 1 October 2026.",
+    "confidence": {
+      "score": 77,
+      "band": "medium",
+      "reason": "This is a convergent inference: current wealth reporting attributes his fortune to investments, while 2026 reports confirm retained banking and insurance economics through ONEXIM and a sustained capital-deployment platform. Recent disposals are excluded. Portfolio weights and the allocation of sale proceeds remain incomplete; the decision is not based merely on an investment-company title or one bank's gross assets."
+    },
+    "source_ids": [
+      "S1",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "He acquired and developed the core mining interest through a commercial banking partnership and Russia's privatisation process.",
+    "confidence": {
+      "score": 89,
+      "band": "high",
+      "reason": "Positive acquisition, personal ownership and operational development support the broad earned/built mechanism. No family succession supplied Norilsk. The loans-for-shares institutional advantages and connected partnership make an unsupported independent-start claim inappropriate; the record does not resolve the starting platform sufficiently for a narrower subtype. This is an asset-origin classification, not an endorsement of the privatisation arrangements."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "investor",
+    "label": "Investor",
+    "summary": "His relationship to principal wealth is best described as the principal behind a continuing investment and financial-business portfolio.",
+    "confidence": {
+      "score": 78,
+      "band": "medium",
+      "reason": "Personally retained ONEXIM economics, repeated acquisitions and exits, and contemporary banking and insurance holdings support a sustained investment mandate. Corporate operations are managed by executives; ownership and allocation history, not an honorary title, underpin this inference. Current individual investment decisions and the full portfolio are not publicly itemised, limiting confidence."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "Russian investor and industrialist whose principal fortune came from Norilsk Nickel.",
+    "defining_work": "Acquired and developed a metals interest through post-Soviet privatisation, then established ONEXIM as a separate investment platform.",
+    "formative_context": "Trained at the Moscow Finance Institute before entering banking.",
+    "decisive_moment": "Sold his Norilsk holding before the financial crisis, obtaining substantial capital for further investments.",
+    "enduring_dimensions": [
+      "Restructuring industrial operations and separating the gold business",
+      "Sustained ownership of the Nets basketball franchise",
+      "Regional cultural philanthropy with his sister, including theatre and library support"
+    ],
+    "character_detail": null,
+    "opening_options": [
+      {
+        "mode": "institution_or_asset",
+        "angle": "Open on the industrial restructuring at Norilsk and the distinct gold business."
+      },
+      {
+        "mode": "public_contribution",
+        "angle": "Introduce the cultural foundation's regional work in Norilsk and Siberia."
+      }
+    ],
+    "excluded_transient_context": [
+      "Current net-worth rankings and exact portfolio values",
+      "Historical company stakes presented as current",
+      "Personal vessel ownership",
+      "Unrequested political positions and irrelevant private-life allegations",
+      "Changing presidential and executive titles"
+    ],
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S8",
+      "S9",
+      "S10",
+      "S11"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "public_role_then_foundation",
+    "calibration_archetypes": [
+      "investor_philanthropist"
+    ],
+    "notes": "Only the person and Norilsk industrial identity are shared anchors. The short alone covers education, ONEXIM formation, Potanin and the Nets. The long adds concrete restructuring and the gold separation, then regional cultural work and personally funded library purchases. It omits the short's complete business sequence. The grant provider is explicitly his, corroborated by the programme's named founder grant."
+  },
+  "biography": {
+    "plain_text": "Mikhail Prokhorov is a Russian investor who built his fortune through Norilsk Nickel during Russia's post-Soviet privatisation. A Moscow Finance Institute graduate, he founded ONEXIM Group after separating from business partner Vladimir Potanin. His investments also included the Brooklyn Nets basketball team, which he owned before selling to Joe Tsai.",
+    "html": "<p>Mikhail Prokhorov is a Russian investor who built his fortune through Norilsk Nickel during Russia's post-Soviet privatisation. A Moscow Finance Institute graduate, he founded ONEXIM Group after separating from business partner Vladimir Potanin. His investments also included the Brooklyn Nets basketball team, which he owned before selling to Joe Tsai.</p>\r\n",
+    "word_count": 50,
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "Every material statement is directly supported by the cited corporate, contemporary reporting and foundation evidence."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S8"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "At Norilsk Nickel, Mikhail Prokhorov took responsibility for reshaping a sprawling metals producer. He shed non-core operations and helped separate its gold assets into Polyus Gold, creating a distinct business from interests previously held within the nickel group. His sale of the Norilsk stake before the global financial crisis left him with substantial funds for new investments.\n\nWith his sister Irina, a publisher, he established the Mikhail Prokhorov Foundation in 2004. It began in Norilsk, supporting theatre and contemporary art before extending its work across Siberia. The Krasnoyarsk Book Culture Fair combined book sales with public discussion, while his grant helped regional libraries buy books.",
+    "html": "<p>At Norilsk Nickel, Mikhail Prokhorov took responsibility for reshaping a sprawling metals producer. He shed non-core operations and helped separate its gold assets into Polyus Gold, creating a distinct business from interests previously held within the nickel group. His sale of the Norilsk stake before the global financial crisis left him with substantial funds for new investments.</p>\r\n<p>With his sister Irina, a publisher, he established the Mikhail Prokhorov Foundation in 2004. It began in Norilsk, supporting theatre and contemporary art before extending its work across Siberia. The Krasnoyarsk Book Culture Fair combined book sales with public discussion, while his grant helped regional libraries buy books.</p>\r\n",
+    "word_count": 105,
+    "confidence": {
+      "score": 93,
+      "band": "high",
+      "reason": "Every material statement is directly supported by the cited corporate, contemporary reporting and foundation evidence."
+    },
+    "source_ids": [
+      "S2",
+      "S4",
+      "S9",
+      "S10",
+      "S11"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "middle_names",
+      "value": "Dmitrievich",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary annual-report biography supplies the patronymic."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "field": "known_for_title",
+      "value": "Investor and founder of ONEXIM Group",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Current wealth profile and primary organisation identify the investment platform and its founder."
+      },
+      "source_ids": [
+        "S1",
+        "S10"
+      ]
+    },
+    {
+      "field": "secondary_nationality",
+      "value": "Israeli",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Current Forbes profile records acquisition of Israeli citizenship in 2022; exact reference biography corroborates."
+      },
+      "source_ids": [
+        "S1",
+        "S14"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Moscow",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 87,
+        "band": "high",
+        "reason": "Undisputed reference biography states Moscow; consistent with independent reporting of Moscow upbringing, though the corporate birth record does not name a city."
+      },
+      "source_ids": [
+        "S14"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "3",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary annual report gives complete birth date."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "May",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary annual report gives complete birth date."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1965",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Primary annual report agrees with the immutable age/date context."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://www.forbes.com/profile/mikhail-prokhorov/",
+      "action": "add",
+      "verification": "Exact profile read directly and matched to the mining, finance and Nets identity.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Independent primary records corroborate the exact person."
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "type_id": "3",
+      "type": "Twitter",
+      "url": "https://twitter.com/MD_Prokhorov",
+      "action": "add",
+      "verification": "Two independent editorial sources explicitly identify this exact account as Prokhorov's; profile access is restricted, so no current activity is asserted.",
+      "confidence": {
+        "score": 80,
+        "band": "medium",
+        "reason": "The Moscow Times and Cossa independently attribute the same personal account with biographical context. Verification rests on those sources, not the badge or follower count."
+      },
+      "source_ids": [
+        "S12",
+        "S13"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0364",
+      "name": "Nickel mining",
+      "summary": "His acquired stake and sustained leadership of Norilsk Nickel created the central fortune.",
+      "relationship_type": "owner_operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Personal material wealth creation, controlled substantial operations or sustained defining leadership meets the approved contract; incidental portfolio exposure alone is excluded.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Directly evidenced personal ownership or defining operational role meets this specific approved tag contract."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "tag_id": "tag_0523",
+      "name": "Gold mining",
+      "summary": "He helped separate and chaired Polyus Gold, a substantial gold producer in which he held personal shares.",
+      "relationship_type": "owner_operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Personal material wealth creation, controlled substantial operations or sustained defining leadership meets the approved contract; incidental portfolio exposure alone is excluded.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Directly evidenced personal ownership or defining operational role meets this specific approved tag contract."
+      },
+      "source_ids": [
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "tag_id": "tag_0548",
+      "name": "Investment banking",
+      "summary": "ONEXIM controlled Renaissance Capital across a sustained investment period before the 2024 Russian-business sale.",
+      "relationship_type": "controlling_owner",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Personal material wealth creation, controlled substantial operations or sustained defining leadership meets the approved contract; incidental portfolio exposure alone is excluded.",
+      "confidence": {
+        "score": 88,
+        "band": "high",
+        "reason": "Directly evidenced personal ownership or defining operational role meets this specific approved tag contract."
+      },
+      "source_ids": [
+        "S2",
+        "S7"
+      ]
+    },
+    {
+      "tag_id": "tag_0228",
+      "name": "Insurance",
+      "summary": "His ONEXIM group retains substantial control of Soglasie through direct and indirect holdings; the separately transferred Mediana is excluded.",
+      "relationship_type": "controlling_owner",
+      "temporal_scope": "current",
+      "taxonomy_value": "Personal material wealth creation, controlled substantial operations or sustained defining leadership meets the approved contract; incidental portfolio exposure alone is excluded.",
+      "confidence": {
+        "score": 86,
+        "band": "high",
+        "reason": "Directly evidenced personal ownership or defining operational role meets this specific approved tag contract."
+      },
+      "source_ids": [
+        "S1",
+        "S6"
+      ]
+    },
+    {
+      "tag_id": "tag_0028",
+      "name": "Basketball",
+      "summary": "His multi-year ownership of the Nets was a defining sporting ownership role, concluded by the sale to Joe Tsai.",
+      "relationship_type": "team_owner",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Defining sustained franchise ownership meets sporting identity; no claim of competitive playing ability.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Directly evidenced personal ownership or defining operational role meets this specific approved tag contract."
+      },
+      "source_ids": [
+        "S1",
+        "S8"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "field": "Personal Website",
+      "candidate_value": "https://mdprokhorov.ru",
+      "reason": "Known historical personal domain, but current access failed and no current attributable content was verified.",
+      "confidence": {
+        "score": 65,
+        "band": "low",
+        "reason": "Historical attribution is credible; destination status is unresolved."
+      },
+      "source_ids": [
+        "S14"
+      ]
+    },
+    {
+      "field": "Facebook",
+      "candidate_value": "https://www.facebook.com/prokhorovmd",
+      "reason": "Historical published references suggest this account; direct access and sufficiently strong independent verification remain incomplete.",
+      "confidence": {
+        "score": 65,
+        "band": "low",
+        "reason": "No import from a name-only or legacy attribution."
+      },
+      "source_ids": [
+        "S14"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1772",
+      "title": "Mikhail Prokhorov: immutable owner export, person 1772",
+      "publisher": "Superyacht Network; saved authoritative source",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Inventory read before research. Existing age/date, Russian identity and biography identify Norilsk, ONEXIM and former Nets ownership. Existing Wikipedia retained. Historical vessel links are disambiguation only."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/profile/mikhail-prokhorov/",
+      "title": "Mikhail Prokhorov",
+      "publisher": "Forbes; current profile",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full profile read directly by HTTP and web. Attributes much of the fortune to the Norilsk disposal and current source to investments; notes banking/insurance interests and Israeli citizenship. Current figures are excluded from prose."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/global/2009/0330/058-billionaires-russia-last-man-standing.html",
+      "title": "Last Man Standing",
+      "publisher": "Forbes; Anita Raghavan, 20 March 2009",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant indexed article body read; ordinary page retrieval was inconsistent. Describes hands-on restructuring, disposal of peripheral operations, Polyus separation, personal Norilsk interest and reinvestment into Renaissance. Historic figures are not current assets."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.forbes.com/sites/katyasoldak/2013/03/05/russian-billionaire-mikhail-prokhorov-from-oligarch-to-president/",
+      "title": "Russian Billionaire Mikhail Prokhorov: From Oligarch To President?",
+      "publisher": "Forbes; Katya Soldak, 5 March 2013",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed interview/profile read. Covers banking partnership, loans-for-shares acquisition, industrial development and private investment fund. Past delegation is not automatically projected to current passive ownership."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://fs.moex.com/content/annualreports/358/2/plzl-2008-eng.pdf",
+      "title": "Polyus Gold annual report 2008: board biography and company description",
+      "publisher": "Polyus Gold; Moscow Exchange archive",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant indexed PDF sections read, including named Prokhorov biography with 3 May 1965, Dmitrievich, education, Norilsk leadership and personal shareholding. Corporate introduction explains separation of the gold assets. Historical direct shares are not treated as his entire beneficial stake or current holding."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.finmarket.ru/currency/news/6598946",
+      "title": "Renaissance Credit 2025 results",
+      "publisher": "Finmarket / Interfax, 14 April 2026",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full report body read. Names Prokhorov's ONEXIM as the bank's principal owner and reports its continuing operating business. Bank balance-sheet assets and customer deposits are not personal wealth."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.interfax.ru/amp/1071751",
+      "title": "Full control of Mediana passed to Irina Prokhorova",
+      "publisher": "Interfax, 9 February 2026",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full direct body read. Registry-based report records Mediana transfer to the sister, excluding it from his retained holdings, and separately details ONEXIM's control through Interconsento of established insurer Soglasie."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.rbc.ru/finances/13/11/2024/6734c4959a794748cb808261",
+      "title": "ONEXIM sold the Russian Renaissance Capital business",
+      "publisher": "RBC, 13 November 2024",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant indexed body read after ordinary HTTP returned no article. Completed sale of specified Russian investment-business entities to management; no inference that every overseas entity or consumer bank was included."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.barclayscenter.com/news/detail/joe-tsai-completes-acquisition-of-full-ownership-of-brooklyn-nets-and-barclays-center",
+      "title": "Joe Tsai completes acquisition of full ownership of Brooklyn Nets and Barclays Center",
+      "publisher": "Barclays Center, 18 September 2019",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full release read. Completed full ownership transfer means the Nets are a former defining role, not current wealth."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.prokhorovfund.ru/fund/history/",
+      "title": "Foundation history",
+      "publisher": "Mikhail Prokhorov Foundation",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read directly. Foundation began in 2004 in Norilsk, introduced cultural projects and expanded regionally; book fair paired sales and discussion with a founder's library-purchase grant."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.prokhorovfund.ru/fund/structure/",
+      "title": "Foundation structure and founders",
+      "publisher": "Mikhail Prokhorov Foundation",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full founders and governance sections read directly. Names Mikhail and publisher Irina as cofounders, explains their strategic role, and identifies his ONEXIM foundation. Foundation property is not personal wealth."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.prokhorovfund.ru/projects/project_archive/detail/krasnoyarskaya-yarmarka-knizhnoy-kultury-2013/",
+      "title": "Krasnoyarsk Book Culture Fair",
+      "publisher": "Mikhail Prokhorov Foundation; archived programme",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant programme section read. Explicitly names Mikhail as provider of the grant for Krasnoyarsk regional libraries to purchase books from participating publishers; supports the unambiguous personal grant attribution. URL year and embedded programme year differ; no programme year or amount is used."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://www.themoscowtimes.com/2011/12/22/twitter-becomes-key-for-moscow-protests-a11617/pdf",
+      "title": "Twitter Becomes Key for Moscow Protests",
+      "publisher": "The Moscow Times; Rina Soloveitchik, 22 December 2011",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article and account list read. Explicitly identifies @MD_Prokhorov as Mikhail Prokhorov."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://www.cossa.ru/152/44478/",
+      "title": "Who to read on Twitter: interesting politicians",
+      "publisher": "Cossa; Nora Kirk, 10 July 2013",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant account section read. Independently identifies the exact handle and attributes personal event photographs and statements to Prokhorov."
+      ]
+    },
+    {
+      "id": "S14",
+      "url": "https://en.wikipedia.org/wiki/Mikhail_Prokhorov",
+      "title": "Mikhail Prokhorov",
+      "publisher": "Wikipedia; existing reference link",
+      "tier": 4,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant identity and external-link sections read as orientation. Moscow birthplace, patronymic and citizenship align with independent records; historical personal-domain attribution retained only as a candidate. No disputed wealth or allegation rests on this source."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Current assessment date is 1 October 2026. The profile distinguishes original mining wealth from later investment interests; no legacy metal, sports or energy stake is automatically carried forward.",
+    "Finance & Investments is a medium-confidence inference from present wealth attribution, sustained investment activity and retained banking/insurance ownership. A complete personal asset breakdown and allocation of liquid proceeds are not public. This does not make bank gross assets or clients' money the owner's fortune.",
+    "The 2024 sale concerns the Russian Renaissance Capital entities and is distinct from the consumer bank Renaissance Credit. Mediana's 2026 transfer to Irina is excluded. These disposals qualify the broader current Forbes profile instead of being ignored.",
+    "Investor is independently supported by the continuing personal investment platform and deployment record. Founder and Passive asset owner were tested; historical delegation during politics alone does not establish current passivity, and the platform's age alone does not settle principal relationship.",
+    "Broad Self-made describes acquired and developed personal economics. Loans-for-shares and business-partner access are retained as material context. Neither an inherited family core nor an independent blank-slate start is inferred. The more precise initial capital and privileged-access subtype remains unresolved.",
+    "Current net worth, asset percentages and rankings are omitted from biographies. Divested Norilsk and Polyus holdings are explicitly historical; personal holdings are distinguished from company-wide values.",
+    "All supported personal profile types were checked: Instagram, LinkedIn, Personal Website, Facebook, Twitter, Youtube, TikTok, Vimeo, Flickr and Wikipedia, with Forbes first. Namesake LinkedIn accounts, generic Instagram biography claims, team clips and fan content were rejected. Twitter has two independent exact attributions despite restricted current access; no current posting claim is made.",
+    "The old personal domain and Facebook account remain candidates, not import proposals. ONEXIM domains were inaccessible and are not proposed as verified current company URLs. Foundation pages support research but are not substituted for a personal website. Trip Advisor and Zillow lack relevant fit.",
+    "The existing Wikipedia URL is unchanged. Birth date and patronymic come from the primary corporate biography; Moscow birthplace has lower confidence because the directly read corporate section supplies no city. Russian nationality and residence baseline are not rewritten from citizenship acquisition.",
+    "Five active tags form the minimum useful set for evidenced separate dimensions: Nickel mining, Gold mining, Investment banking, Insurance and Basketball. Generic Private equity would add overlap to the investment-platform description. Casual martial arts, recreational skiing, sponsorship and generic philanthropy do not yield tags.",
+    "Biographies omit unrequested political advocacy and irrelevant personal allegations. Privatisation remains in the short because it explains the wealth mechanism. Long-only industrial restructuring and regional cultural work are directly sourced, without attributing foundation staff's work solely to him."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent reviewed and approved the HNWI decisions and complementary pair. Grant-provider wording was clarified. Strict editorial and immutable-input validation passed with zero warnings. Terminal research as of 1 October 2026; no live changes."
+  },
+  "editorial_note": null
+}

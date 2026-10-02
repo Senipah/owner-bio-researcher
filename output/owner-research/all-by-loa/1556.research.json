@@ -1,0 +1,1338 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1556,
+    "display_name": "Sir Douglas Myers",
+    "identity_confidence": {
+      "score": 96,
+      "band": "very_high",
+      "reason": "Port Nikau explicitly identifies Sir Douglas Myers as the former owner of Senses sold to Larry Page in 2011. Contemporary January reporting dates the sale to the previous month, matching the input's December 2010 endpoint. Nationality, family brewing identity and subsequent London base converge across Forbes, the business laureate profile and family death notice. Film-editing, US consulting and lending namesakes are excluded."
+    }
+  },
+  "research_status": "complete",
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    },
+    "raw_blank_details": [
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ]
+  },
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://images.forbes.com/lists/2006/78/2FEA.html",
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "Forbes was searched first. Its directly accessible 2006 personal list entry matches the New Zealand brewer, company sale and London residence. This is a verified historical profile, not a current wealth estimate."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "food_beverage",
+    "label": "Food & Beverage",
+    "summary": "Brewing and related drinks businesses created the principal original fortune.",
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "The biographers and business laureate institution establish personal ownership of Campbell & Ehrenfried, its drinks interests and the substantial Lion Nathan shareholding eventually sold to Kirin. Cross-border brewing expansion and a personal share sale establish both sector and principal economic materiality. Corporate turnover and the purchaser's total acquired block are not equated with his personal wealth."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4",
+      "S7"
+    ]
+  },
+  "primary_industry": {
+    "classification": "diversified",
+    "label": "Diversified",
+    "summary": "At his death in April 2017, substantial identifiable private interests spanned clinical research and music publishing.",
+    "confidence": {
+      "score": 75,
+      "band": "medium",
+      "reason": "This is a bounded qualitative inference from two sustained core businesses, not an assumption that any portfolio is diversified. Chiltern's primary announcement links consolidated ownership and growth investment to Myers-associated interests; the transaction adviser identifies the Myers Business Trust as buyer and documents substantial pre-death scale. Music ownership is directly reported, its global offices and commercially important catalogue are confirmed by the publisher's own announcement, and sustained funding is independently documented. His Cambridge interview identifies both interests as a major renewed wealth-building effort; its prediction of a second fortune is not treated as an achieved return. Terminal continuity is corroborated separately. Exact personal percentages, debt and relative values are unavailable, so neither sector is asserted to dominate. If music materiality were rejected, the alternative would be a disclosed Food & Beverage origin-sector fallback, not unsupported Healthcare dominance."
+    },
+    "source_ids": [
+      "S8",
+      "S9",
+      "S10",
+      "S11",
+      "S12",
+      "S16",
+      "S18",
+      "S19"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "marriage_family_transfer",
+    "label": "Marriage / family transfer",
+    "summary": "His core brewing ownership arose through paid succession to the established family enterprise, which he substantially expanded.",
+    "confidence": {
+      "score": 78,
+      "band": "medium",
+      "reason": "He bought relatives' interests in the same longstanding family company, taking full ownership in 1972. Heritage documentation independently connects his financing activity to the family-interest purchase, while legal scholarship records a bridge loan from his father's trust. That is positive continuity and economic acquisition of the family's principal business, rather than management succession alone or a separate startup. The broad family-transfer classification is an editorial inference about paid family succession; it does not claim an inheritance, gift or free transfer. His later expansion is independently established. Self-made with an advantaged start is the strongest alternative if purchased family succession is classified differently, but Inherited and Inherited and expanded would incorrectly imply a documented testamentary transfer."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "investor",
+    "label": "Investor",
+    "summary": "His terminal principal role was investing in and supporting the development of privately held businesses after his brewing exit.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "Independent evidence establishes repeated personal capital allocation, substantial retained business interests and active attention to their growth. Chiltern's ownership consolidation and investment programme, Downtown's longstanding backing, and his own description of renewed business interests support Investor beyond an isolated holding. The official register directly connects his personal shareholding with the Myers Business Trust, although it does not reveal all underlying assets. Continued work near death supports the terminal timing. Separate professional managers ran the companies; neither Founder of the original family brewer, passive retirement nor a modern inherited estate role adequately describes this allocation activity. No current 2026 role or ownership by his heirs is attributed to him."
+    },
+    "source_ids": [
+      "S1",
+      "S8",
+      "S9",
+      "S10",
+      "S11",
+      "S16",
+      "S18",
+      "S19",
+      "S17"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "Sir Douglas Myers was a New Zealand brewing magnate and investor.",
+    "defining_work": "He acquired the family drinks enterprise and developed Lion Nathan across the Tasman.",
+    "formative_context": "The family's established brewing, hotel and drinks interests provided the business he bought and transformed.",
+    "decisive_moment": "He took on substantial debt to acquire Lion shares before the proceeds from a separate drinks holding were settled.",
+    "enduring_dimensions": [
+      "He pressed for market-oriented economic reforms through the New Zealand Business Roundtable.",
+      "He backed music publishing and clinical research after leaving brewing."
+    ],
+    "character_detail": "His son's interest in music prompted him to back a New York record business.",
+    "opening_options": [
+      {
+        "mode": "decisive_event",
+        "angle": "Open with the leveraged Lion purchase before the separate sale price had been settled."
+      },
+      {
+        "mode": "institution_or_asset",
+        "angle": "Open with the two businesses he backed beyond brewing."
+      }
+    ],
+    "excluded_transient_context": [
+      "Vessel ownership",
+      "Rich-list ranking and changing net-worth estimates",
+      "Group valuations presented as personal wealth",
+      "Estate and family holdings after his death",
+      "Unverified personal social accounts"
+    ],
+    "source_ids": [
+      "S3",
+      "S4",
+      "S7",
+      "S8",
+      "S9",
+      "S11"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "decision_then_consequence",
+    "calibration_archetypes": [
+      "acquirer_consolidator"
+    ],
+    "notes": "The sole shared business anchor is his brewing/Lion identity. The short uniquely carries the family buyout, trans-Tasman achievement, Roundtable, Kirin exit and London home. The long omits that bundle and adds the debt-funded timing risk, operating discipline, family prompt for music investment and clinical-research expansion. Its second paragraph changes industry through concrete decisions; the final sentence names funded development activities. There is no repeated sentence, expanded short bundle or vessel material. Parent reviewed and accepted the complementary pair."
+  },
+  "editorial_note": null,
+  "biography": {
+    "plain_text": "Sir Douglas Myers was a New Zealand brewing magnate who bought out his family's interests in Campbell & Ehrenfried and built Lion Nathan into a major trans-Tasman group. He chaired the New Zealand Business Roundtable during its campaign for market reforms, sold his brewing stake to Kirin and subsequently settled in London.",
+    "html": "<p>Sir Douglas Myers was a New Zealand brewing magnate who bought out his family's interests in Campbell &amp; Ehrenfried and built Lion Nathan into a major trans-Tasman group. He chaired the New Zealand Business Roundtable during its campaign for market reforms, sold his brewing stake to Kirin and subsequently settled in London.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "The family purchase, expansion and exit are supported by biographical and primary institutional accounts; the Roundtable role and London settlement are independently corroborated."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S7",
+      "S15"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "In 1981, brewer Sir Douglas Myers borrowed heavily to buy into Lion while the price of his stake in a separate drinks business remained unsettled. He counted on the eventual payment to cover the borrowing. The gamble succeeded, and he became Lion's managing director, selling peripheral activities and concentrating on brewery efficiency.\n\nHis son Campbell's interest in music prompted Myers to invest in Downtown, the New York business that developed into a global music publisher. Its catalogue included administration rights to John Lennon's solo work. Myers also committed capital to Chiltern, supporting the expansion of its clinical-trials business through investment in staff, technology and acquisitions.",
+    "html": "<p>In 1981, brewer Sir Douglas Myers borrowed heavily to buy into Lion while the price of his stake in a separate drinks business remained unsettled. He counted on the eventual payment to cover the borrowing. The gamble succeeded, and he became Lion's managing director, selling peripheral activities and concentrating on brewery efficiency.</p>\r\n<p>His son Campbell's interest in music prompted Myers to invest in Downtown, the New York business that developed into a global music publisher. Its catalogue included administration rights to John Lennon's solo work. Myers also committed capital to Chiltern, supporting the expansion of its clinical-trials business through investment in staff, technology and acquisitions.</p>\r\n",
+    "word_count": 105,
+    "confidence": {
+      "score": 86,
+      "band": "high",
+      "reason": "The biographer's full indexed obituary supplies the borrowing, unsettled sale proceeds and operating method. Independent music reporting and the primary clinical-research announcement support the separate investment paragraph."
+    },
+    "source_ids": [
+      "S4",
+      "S9",
+      "S11",
+      "S12",
+      "S18",
+      "S20"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Brewing magnate and investor",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "Longstanding brewing ownership and separately documented private investment activity establish the durable identity."
+      },
+      "source_ids": [
+        "S7",
+        "S8",
+        "S9",
+        "S11"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Primary family and institutional profiles consistently identify him as male."
+      },
+      "source_ids": [
+        "S7",
+        "S13"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Auckland",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 88,
+        "band": "high",
+        "reason": "The biographical reference identifies Auckland; the official register's city spelling broadly corroborates it, while its contradictory country is rejected."
+      },
+      "source_ids": [
+        "S14",
+        "S17"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "29",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "The primary family notice explicitly supplies the complete date."
+      },
+      "source_ids": [
+        "S13"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "October",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "The primary family notice explicitly supplies the complete date."
+      },
+      "source_ids": [
+        "S13"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1938",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "The primary family notice explicitly supplies the complete date."
+      },
+      "source_ids": [
+        "S13"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "8",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "The primary family notice explicitly supplies the complete date."
+      },
+      "source_ids": [
+        "S13"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "April",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "The primary family notice explicitly supplies the complete date."
+      },
+      "source_ids": [
+        "S13"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "2017",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "The primary family notice explicitly supplies the complete date."
+      },
+      "source_ids": [
+        "S13"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "action": "correct_existing",
+      "existing_value": "Unknown",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The primary family death notice and institutional memorial establish death in 2017."
+      },
+      "source_ids": [
+        "S7",
+        "S13"
+      ]
+    },
+    {
+      "field": "main_residence_country",
+      "value": "United Kingdom",
+      "action": "correct_existing",
+      "existing_value": "New Zealand",
+      "confidence": {
+        "score": 92,
+        "band": "high",
+        "reason": "The obituary directly establishes settlement in London, independently corroborated by the official register before death."
+      },
+      "source_ids": [
+        "S15",
+        "S17"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://images.forbes.com/lists/2006/78/2FEA.html",
+      "action": "add",
+      "verification": "Direct historical personal profile matches the New Zealand brewer, Lion/Kirin transaction and London base.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Multiple durable identity anchors match independently verified sources; the page is a historical 2006 profile."
+      },
+      "source_ids": [
+        "S1",
+        "S7"
+      ]
+    },
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Douglas_Myers",
+      "action": "add",
+      "verification": "Full article matches exact dates, family, nationality, company and terminal residence.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "The correctly disambiguated biographical article agrees with primary institutional and family sources."
+      },
+      "source_ids": [
+        "S13",
+        "S14"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_1110",
+      "name": "Beverage manufacturing",
+      "summary": "Controlled and expanded a major brewing operation that created his principal original fortune.",
+      "relationship_type": "operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "The substantial Lion brewing mandate and personal economic stake satisfy the active industry-or-investment-specialism contract. This is a defining production business, not a drinks consumer, customer or incidental investment.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "The primary business laureate profile and biographical history establish his control, brewing expansion and personal exit."
+      },
+      "source_ids": [
+        "S3",
+        "S4",
+        "S7"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://images.forbes.com/lists/2006/78/2FEA.html",
+      "title": "Douglas Myers: 2006 Australia and New Zealand rich list",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full historical profile body read. Identifies the New Zealand brewery businessman, personal Kirin sale, London residence and Bayard Capital investment. The reported 45% block conflicts with more precise personal-stake accounts, so neither that percentage nor the historical wealth estimate is proposed."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://portnikau.nz/senses-45-million-superyacht/",
+      "title": "Senses: $45 Million Superyacht",
+      "publisher": "Port Nikau",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full official port article read, dated 9 February 2021. Directly identifies Sir Douglas Myers as the prior owner of Senses before its purchase by Larry Page in 2011. Supplies the independent person-vessel identity bridge."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.michaelbassett.co.nz/books.php?b=themyers",
+      "title": "The Myers: a family history",
+      "publisher": "Michael Bassett",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Author's full indexed book description read; direct page extraction was incomplete. Describes the established family enterprise, Douglas's 1972 buyout, later mergers and international brewing expansion, substantial personal stake and eventual Kirin exit. The ancestor's inheritance is not treated as Douglas's own inheritance."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.nbr.co.nz/obituary-sir-douglas-myers-1938-2017/",
+      "title": "Obituary: Sir Douglas Myers, 1938-2017",
+      "publisher": "National Business Review / Paul Goldsmith",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed obituary body read; direct access returned 403. The biographer supplies the long profile's financing episode and operating method, distinguishing the late-1981 purchase from the December 1982 managing-director appointment."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.heritage.org.nz/list-details/123/Listing",
+      "title": "Strand Arcade heritage listing",
+      "publisher": "Heritage New Zealand",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant official history read. Explains property transactions used in financing Douglas Myers's purchase of family interests in Campbell & Ehrenfried. Corroborates acquisition rather than assuming a bequest."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.nzlii.org/nz/journals/AukULawRw/1980/7.pdf",
+      "title": "Coleman v Myers: takeover financing discussion",
+      "publisher": "Auckland University Law Review via NZLII",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete indexed paragraph on printed page 111 read; direct PDF access was restricted. Describes the father's trust bridge loan for purchasing shares and subsequent company financing. This supports the paid-succession mechanism; it does not establish inheritance."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.businesshalloffame.co.nz/past-laureates/kllpymwkl6hkkmc-ferjn-swhza-fnf74-d2x8l-kd299-wjb9m",
+      "title": "Sir Douglas Myers, past laureate",
+      "publisher": "New Zealand Business Hall of Fame",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full primary laureate profile read. Identifies the established family background, Lion takeover and development, Kirin sale in 1998, chairmanship until 2001 and Business Roundtable chairmanship during 1990-1997."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.cai.cam.ac.uk/sites/default/files/Sir%20Douglas%20Myers%20in%20Once%20a%20Caian.pdf",
+      "title": "A High Achiever: Sir Douglas Myers",
+      "publisher": "Gonville and Caius College, Cambridge",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full PDF extracted and read, page index 0, printed pages 14-15. First-person profile describes the family enterprise, overseas brewing expansion, educational support, and substantial personal engagement with global music publishing and drug testing. The expected second fortune is explicitly a future hope, not proof of realised profits. The year after the writer's name is his college entry year, not the publication date."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.prnewswire.co.uk/news-releases/chiltern-announces-the-consolidation-of-existing-investor-base-236147111.html",
+      "title": "Chiltern Announces The Consolidation Of Existing Investor Base",
+      "publisher": "Chiltern via PR Newswire",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full company release of 17 December 2013 read. Consolidated ownership is led by Myers-associated interests; new investment supports people, technology and targeted acquisitions in a substantial international clinical-trials business. Separate chairman and chief executive are named."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.cornerstone-cf.co.uk/deals/",
+      "title": "Completed transactions: Chiltern",
+      "publisher": "Cornerstone Corporate Finance",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant transaction-table entries read. Adviser records a January 2014 sale to the Myers Business Trust at GBP 135 million, January 2016 restructuring of a GBP 500 million group and August 2017 sale to LabCorp at USD 1.2 billion. These are enterprise transaction references, not personal proceeds; the final sale followed his death."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://thespinoff.co.nz/pop-culture/13-04-2017/how-rich-lister-doug-myers-bankrolled-one-of-the-greatest-singles-of-the-2000s",
+      "title": "How Doug Myers bankrolled a major music single",
+      "publisher": "The Spinoff / Pete Douglas",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full 13 April 2017 article read. Explains his investment in the New York music business prompted by son Campbell's interest and the early successful recording activity. Used for investment motivation and sustained involvement, not the article's political opinion."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://shorefire.com/releases/entry/downtown-music-publishing-signs-deal-with-sturgill-simpson",
+      "title": "Downtown Music Publishing signs Sturgill Simpson",
+      "publisher": "Downtown Music Publishing via Shore Fire Media",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full 23 June 2015 release read. Establishes a global music-rights business with five international offices and a commercially substantial catalogue, including John Lennon and Yoko Ono. This supports operating scope, not Myers's precise ownership percentage."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://notices.nzherald.co.nz/nz/obituaries/nzherald-nz/name/arthur-myers-obituary?id=43742200",
+      "title": "Arthur Douglas Myers family death notice",
+      "publisher": "Myers family via New Zealand Herald notices",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed family notice read; direct access restricted. Gives birth on 29 October 1938 and death in London on 8 April 2017, with the title and family identities matching the brewer. No private contact details are retained."
+      ]
+    },
+    {
+      "id": "S14",
+      "url": "https://en.wikipedia.org/wiki/Douglas_Myers",
+      "title": "Douglas Myers",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article body read. Cross-corroborates Auckland birth, complete name, dates, the brewing identity and official references. This is the correctly matched encyclopaedia profile, distinct from the film editor."
+      ]
+    },
+    {
+      "id": "S15",
+      "url": "https://www.odt.co.nz/news/national/sir-douglas-myers-dies-oi62y308",
+      "title": "Sir Douglas Myers dies",
+      "publisher": "Otago Daily Times",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full obituary body read. Explicitly dates his move to live in London to 2002 while retaining visits to the New Zealand family farm. Used for terminal main residence, not its relative-day wording for the exact death date."
+      ]
+    },
+    {
+      "id": "S16",
+      "url": "https://www.nzherald.co.nz/business/life-lessons-from-my-pen-pal-douglas-myers/JDUJZRDEYFHLJIQHKWW3E2BPS4/",
+      "title": "Life lessons from my pen pal, Douglas Myers",
+      "publisher": "New Zealand Herald / Jane Phare",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article read through its indexed body and licensed INKL reproduction. Corroborates continued attention to both businesses near death."
+      ]
+    },
+    {
+      "id": "S17",
+      "url": "https://memorialc.public.lu/memorial/2014/C/Pdf/c297816A.pdf",
+      "title": "Dabao shareholder transfer notice, publication 2014140197",
+      "publisher": "Luxembourg official company register",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Official PDF extracted and read at page index 11, printed page 142908. Records Arthur Douglas Myers's transfer of all Dabao shares to the trustee of Myers Business Trust in May 2014. Confirms personal trust connection, London domicile and birth date; the printed Auckland/Australia birthplace inconsistency is not adopted. Underlying Dabao assets are not established."
+      ]
+    },
+    {
+      "id": "S18",
+      "url": "https://www.nzedge.com/news/businessman-buys-up-rights-to-lennons-solo-recordings/",
+      "title": "Businessman buys up rights to Lennon's solo recordings",
+      "publisher": "NZEDGE",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete indexed report read; direct page parser returned minimal text. Identifies Myers as owner of Downtown and specifies US administration rights to Lennon's solo work and Yoko Ono's catalogue. These are not described as outright ownership of all recording copyrights. Its recycled brewing-share percentage is excluded."
+      ]
+    },
+    {
+      "id": "S19",
+      "url": "https://www.nzherald.co.nz/lifestyle/what-happens-when-you-reach-the-pinnacle-of-life/CQ4BHGBAADDMGHBKFXKL45EXIA/",
+      "title": "What happens when you reach the pinnacle of life?",
+      "publisher": "New Zealand Herald",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed personal section read. Myers describes controlling two global growth businesses and arranging family succession."
+      ]
+    },
+    {
+      "id": "S20",
+      "url": "https://www.nzherald.co.nz/business/markets/shares/brian-gaynor-sir-douglas-myers-achievement-amid-the-controversy/HVMBBZ4OZDTYSQBBVGTXCVB55Y/",
+      "title": "Sir Douglas Myers: achievement amid the controversy",
+      "publisher": "New Zealand Herald / Brian Gaynor",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed article read. Independently dates the Lion share purchase to November 1981."
+      ]
+    },
+    {
+      "id": "S21",
+      "url": "https://www.nzherald.co.nz/nz/google-billionaire-buys-kiwis-superyacht/NCGVGS3CWPW5YYUVYJGSX3DMS4/",
+      "title": "Google billionaire buys Kiwi's superyacht",
+      "publisher": "New Zealand Herald",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed article read. January 2011 report dates the Senses sale to the previous month."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Research cutoff 30 September 2026; access date 1 October 2026. Both present-sector and asset-relationship classifications use the terminal personal position at death on 8 April 2017, not the subsequent estate or the family's 2026 holdings.",
+    "The mortality-status correction uses the exact supplied Dead label. The input's age 79 at May 2020 is stale and inconsistent with the independently documented dates. It is not used to calculate a birth year or silently cleared; derived age fields are outside these proposals.",
+    "The full legal name is Arthur Douglas Myers, but the input correctly uses his established preferred name Douglas. Putting Arthur into the middle-name blank would reverse the legal order, so no misleading name expansion is proposed.",
+    "Main residence is corrected to United Kingdom on direct London settlement evidence. New Zealand remained a recurring family base, but the optional secondary-residence blank is not treated as a researchable proposal. Residence does not establish British nationality.",
+    "Family succession was a purchase of the existing core enterprise, supported by specific family financing and subsequent personal ownership. The chosen broad mechanism does not assert inheritance or deny his substantial independent expansion. The ancestor's bequest cannot establish a bequest to Douglas.",
+    "The diversified terminal judgment is qualitative and medium confidence. It relies on substantial and sustained personal participation in two core businesses, corroborated company scale and contemporaneous engagement. No precise portfolio split or net worth is inferred, and an optimistic forecast is not treated as money already earned.",
+    "Chiltern's later sale consideration and the adviser's group values are not attributed wholly to Myers. The sale occurred after his death. The official personal-to-trust share transfer corroborates a trust connection but does not supply a complete beneficial-ownership schedule or prove the underlying business of Dabao.",
+    "The official register has an internally inconsistent birthplace wording; independent biographical sources place him in Auckland, New Zealand. The family death notice supplies exact dates, which take precedence over relative-day news phrasing.",
+    "Forbes was checked first and the exact historical personal profile is proposed. The apparent conflation of his own stake with Kirin's wider purchased block is excluded; no numerical wealth claim is proposed.",
+    "All supported person-relevant link types were checked: LinkedIn, Instagram, Personal Website, Facebook, Twitter/X, Youtube, TikTok, Wikipedia, Vimeo, Flickr, Trip Advisor, Zillow and Company Website. Only Forbes and Wikipedia were securely attributable personal profile links. The scholarship programme is an institutional site, not his personal website; historical investee domains are not proposed as present personal accounts.",
+    "Rejected LinkedIn namesakes include the US soEASY consultant, Ohio Green Lending mortgage professional, South Carolina ICON professional and UK NEC consultant. Recent posts, education and careers are incompatible with the deceased New Zealand brewer. News videos, scholarship recipients and fan pages are not his personal channels.",
+    "Only Beverage manufacturing meets a useful active assignment contract. The music labels require creative practice or a notable cultural collection and cannot be assigned solely for financial backing. Contract clinical research is preserved in ordinary narrative rather than stretched into direct patient-care or drug-manufacturing cohorts. No taxonomy candidate is created.",
+    "Central primary bodies were read directly or extracted from PDFs. The biographer's obituary, author summary, family notice, legal-review passage and selected news stories were available through full indexed text when direct access was restricted. Source-specific access limitations are disclosed. Brief paraphrases from restricted news sources are kept within their source limits.",
+    "The biography pair is independent: the short identifies paid family succession, group building and public role; the long explains a financing decision, operating discipline and named investments. Vessel context is confined to identity resolution."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person research with independently reasoned wealth fields, historical Forbes and Wikipedia links, one literal active tag and a parent-reviewed complementary biography pair. Strict owner-input and editorial validation passed without warnings. Only this dossier is written; no live or shared-state change."
+  }
+}

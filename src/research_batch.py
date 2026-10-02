@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 from .constants import IDENTITY_CONFIDENCE_THRESHOLD
+from .editorial_exceptions import biographies_withheld
 from .detail_selects import (
     build_detail_select_option_lookups,
     resolve_detail_select_option_id,
@@ -312,6 +313,7 @@ def _build_owner_summary(
             else None
         ),
         "editorial_note": dossier.get("editorial_note"),
+        "biography_exception": dossier.get("biography_exception"),
         "editorial_assessment": dossier.get("editorial_assessment"),
         "research_status": dossier.get("research_status"),
         "review_status": dossier.get("review", {}).get("status"),
@@ -342,6 +344,7 @@ def apply_dossier(
     detail_select_option_lookups: dict[str, dict[str, str]],
 ) -> dict[str, Any]:
     person_id = owner["person_id"]
+    withheld = biographies_withheld(dossier)
     if dossier.get("owner", {}).get("person_id") != person_id:
         raise ValueError(f"Dossier owner mismatch for person_id {person_id}")
     record_type = dossier.get("record_type", "person")
@@ -390,7 +393,7 @@ def apply_dossier(
     long_biography = dossier.get("long_biography")
     biography_score: int | None = None
     long_biography_score: int | None = None
-    if record_type in {"person", "institution"}:
+    if record_type in {"person", "institution"} and not withheld:
         if not isinstance(biography, dict):
             raise ValueError(f"Owner {person_id} has no dossier biography")
         biography_score = _confidence_score(
@@ -425,6 +428,7 @@ def apply_dossier(
             "biography": deepcopy(biography),
             "long_biography": deepcopy(long_biography),
             "editorial_note": deepcopy(dossier.get("editorial_note")),
+            "biography_exception": dossier.get("biography_exception"),
             **{
                 field: deepcopy(dossier.get(field))
                 for field in RESEARCH_CLASSIFICATION_FIELDS
@@ -444,70 +448,72 @@ def apply_dossier(
     if not isinstance(details, dict):
         raise ValueError(f"Owner {person_id} has no details object")
 
-    biography_field = details.get("biography")
-    if not isinstance(biography_field, dict):
-        raise ValueError(f"Owner {person_id} input has no biography field")
-    before_biography = biography_field.get("value")
-    after_biography = biography.get("html")
-    if not isinstance(after_biography, str) or not after_biography.strip():
-        raise ValueError(f"Owner {person_id} biography HTML is empty")
-    biography_field["value"] = after_biography
-    if before_biography != after_biography:
-        changes.append(
-            {
-                "kind": "biography",
-                "action": (
-                    "fill_missing" if _blank(before_biography)
-                    else "correct_existing"
-                ),
-                "field": "biography",
-                "label": "Biography",
-                "before": before_biography,
-                "after": biography.get("plain_text"),
-                "confidence": biography_score,
-                "source_ids": biography.get("source_ids", []),
-            }
-        )
-
-    before_long_biography = None
-    after_long_biography = long_biography.get("html")
-    if (
-        not isinstance(after_long_biography, str)
-        or not after_long_biography.strip()
-    ):
-        raise ValueError(f"Owner {person_id} long biography HTML is empty")
-    long_biography_field = details.get("long_biography")
-    if long_biography_field is not None:
-        if not isinstance(long_biography_field, dict):
-            raise ValueError(
-                f"Owner {person_id} long_biography field is not editable"
-            )
-        before_long_biography = long_biography_field.get("value")
-        long_biography_field["value"] = after_long_biography
-        if before_long_biography != after_long_biography:
+    biography_values = {}
+    if not withheld:
+        biography_field = details.get("biography")
+        if not isinstance(biography_field, dict):
+            raise ValueError(f"Owner {person_id} input has no biography field")
+        before_biography = biography_field.get("value")
+        after_biography = biography.get("html")
+        if not isinstance(after_biography, str) or not after_biography.strip():
+            raise ValueError(f"Owner {person_id} biography HTML is empty")
+        biography_field["value"] = after_biography
+        if before_biography != after_biography:
             changes.append(
                 {
-                    "kind": "long_biography",
+                    "kind": "biography",
                     "action": (
-                        "fill_missing" if _blank(before_long_biography)
+                        "fill_missing" if _blank(before_biography)
                         else "correct_existing"
                     ),
-                    "field": "long_biography",
-                    "label": "Long Biography",
-                    "before": before_long_biography,
-                    "after": long_biography.get("plain_text"),
-                    "confidence": long_biography_score,
-                    "source_ids": long_biography.get("source_ids", []),
+                    "field": "biography",
+                    "label": "Biography",
+                    "before": before_biography,
+                    "after": biography.get("plain_text"),
+                    "confidence": biography_score,
+                    "source_ids": biography.get("source_ids", []),
                 }
             )
 
-    biography_values = {
-        "biography": (before_biography, after_biography),
-        "long_biography": (
-            before_long_biography,
-            after_long_biography,
-        ),
-    }
+        before_long_biography = None
+        after_long_biography = long_biography.get("html")
+        if (
+            not isinstance(after_long_biography, str)
+            or not after_long_biography.strip()
+        ):
+            raise ValueError(f"Owner {person_id} long biography HTML is empty")
+        long_biography_field = details.get("long_biography")
+        if long_biography_field is not None:
+            if not isinstance(long_biography_field, dict):
+                raise ValueError(
+                    f"Owner {person_id} long_biography field is not editable"
+                )
+            before_long_biography = long_biography_field.get("value")
+            long_biography_field["value"] = after_long_biography
+            if before_long_biography != after_long_biography:
+                changes.append(
+                    {
+                        "kind": "long_biography",
+                        "action": (
+                            "fill_missing" if _blank(before_long_biography)
+                            else "correct_existing"
+                        ),
+                        "field": "long_biography",
+                        "label": "Long Biography",
+                        "before": before_long_biography,
+                        "after": long_biography.get("plain_text"),
+                        "confidence": long_biography_score,
+                        "source_ids": long_biography.get("source_ids", []),
+                    }
+                )
+
+        biography_values = {
+            "biography": (before_biography, after_biography),
+            "long_biography": (
+                before_long_biography,
+                after_long_biography,
+            ),
+        }
     for index, proposal in enumerate(dossier.get("proposed_details", [])):
         field = proposal.get("field")
         if not isinstance(field, str) or field not in details:
@@ -640,6 +646,7 @@ def apply_dossier(
         "biography": deepcopy(biography),
         "long_biography": deepcopy(long_biography),
         "editorial_note": deepcopy(dossier.get("editorial_note")),
+        "biography_exception": dossier.get("biography_exception"),
         **{
             field: deepcopy(dossier.get(field))
             for field in RESEARCH_CLASSIFICATION_FIELDS
@@ -836,7 +843,7 @@ def attach_biography_comparisons(
         owner.pop("comparison_cohort_position", None)
         changed_fields: dict[str, dict[str, Any]] = {}
 
-        if owner.get("record_type") == "person":
+        if owner.get("record_type") == "person" and not owner.get("biography_exception"):
             for field in ("biography", "long_biography"):
                 earlier_biography = earlier.get(field)
                 if not isinstance(earlier_biography, dict):
@@ -1301,7 +1308,16 @@ def render_research_report(report: dict[str, Any]) -> str:
             if forbes_url
             else _e(forbes.get("status"))
         )
-        if owner.get("record_type") == "person":
+        if owner.get("biography_exception"):
+            summary_confidence = '<span class="status">biographies withheld</span>'
+            editorial_note = owner.get("editorial_note") or {}
+            biography_review = f"""
+                <h3>Biographies withheld by explicit approval</h3>
+                <blockquote>{_e(editorial_note.get("plain_text"))}</blockquote>
+                <p class="muted">Existing biography fields are preserved.
+                Approval: {_e(owner.get("biography_exception"))}.</p>
+            """
+        elif owner.get("record_type") == "person":
             assessment = owner.get("editorial_assessment") or {}
             assessment_text = ", ".join(
                 f"{label}: {_e(assessment.get(field))}/5"

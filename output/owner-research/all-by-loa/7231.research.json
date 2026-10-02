@@ -1,0 +1,1233 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 7231,
+    "display_name": "Robert Herjavec",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Exact supplied Wikipedia identity and birth particulars agree with the broadcaster, scholarly biographical entry and official business records."
+    }
+  },
+  "research_status": "complete",
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "existing_social_types": [
+      "Wikipedia"
+    ],
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "place_of_birth",
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "place_of_birth",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "birth_age",
+      "birth_age_at_date",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Forbes-first exact-name and profile searches found articles and a photograph page, but no eligible Forbes.com personal profile."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "wealth_creation_industry": {
+    "classification": "technology",
+    "label": "Technology",
+    "summary": "Personally created and realised substantial wealth through internet security businesses.",
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "His firsthand account identifies the AT&T disposal as personally transformative. Successive owned cybersecurity platforms and the buyer's acquisition statement establish the underlying activity and economic interest, independently of television prominence. Enterprise transaction totals are not assigned as his proceeds."
+    },
+    "source_ids": [
+      "S3",
+      "S5",
+      "S6"
+    ]
+  },
+  "primary_industry": {
+    "classification": "technology",
+    "label": "Technology",
+    "summary": "Continuing material private cybersecurity interests at 30 September 2026.",
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "The CEO transition expressly retains his significant investment and identifies Cyderes as his core business focus. The current board biography corroborates continuity. Television investments and a minority Zetaris holding broaden his interests but do not displace that directly stated core; no complete asset valuation is claimed."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made_independent",
+    "label": "Self-made — independent start",
+    "summary": "Inferred independent start from earned livelihood and a personally developed business.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "A financially constrained immigrant household, restaurant earnings during unpaid technical training, and paid employment maintained during the initial venture establish a concrete earned launch path. The substantial realisation came from his own enterprise. This conclusion rests on positive starting circumstances, not silence about inheritance; a complete financing schedule is unavailable."
+    },
+    "source_ids": [
+      "S6",
+      "S7",
+      "S10"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "Retained economic and strategic relationship to the core enterprise he created.",
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Current official evidence identifies significant ownership, board service and strategic participation after delegated executive management. His express core-business commitment makes Founder more precise than a general Investor label. This is not inferred solely from a former chief-executive title, and does not claim majority control."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "Canadian entrepreneur in internet security and a television investor.",
+    "defining_work": "Built and sold security businesses and founded Herjavec Group.",
+    "formative_context": "A financially constrained immigrant upbringing and paid work alongside an early venture.",
+    "decisive_moment": "Recognised a practical networking opportunity after discussing shared printers with Robert Metcalfe.",
+    "enduring_dimensions": [
+      "Replacing dependence on exceptional individuals with repeatable business procedures.",
+      "Reading customer spending plans and testing ideas against actual sales."
+    ],
+    "character_detail": null,
+    "opening_options": [
+      {
+        "mode": "decisive_event",
+        "angle": "Begin with the trade-show conversation that prompted a commercial decision."
+      },
+      {
+        "mode": "present_identity",
+        "angle": "Introduce the security entrepreneur through his practical business methods."
+      }
+    ],
+    "excluded_transient_context": [
+      "Private vessel ownership and specifications",
+      "Unrequested health, religious, political or dispute material",
+      "Company values treated as personal net worth",
+      "Stale executive titles"
+    ],
+    "source_ids": [
+      "S2",
+      "S3",
+      "S6",
+      "S7",
+      "S8",
+      "S10"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "decision_then_consequence",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "reviewed_phrase_exceptions": [],
+    "notes": "Short reserves nationality, upbringing, simultaneous paid work, television identity and retained successor-company interest. Long shares only the broad technology-business identity and entrepreneurial activity; it adds the practical networking decision, repeatable procedures and demand-based commercial judgment. It omits the short's background, named core successor and present ownership transition, ending on a concrete investment test."
+  },
+  "editorial_note": null,
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Technology entrepreneur and television investor",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Primary company and broadcaster accounts establish sustained roles."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "secondary_nationality",
+      "value": "Canadian",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "The firsthand Entrepreneur feature expressly identifies naturalised Canadian citizenship. The existing American value is not treated as mutually exclusive."
+      },
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Varaždin",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "The scholarly personal entry and local report explicitly name the birthplace, corroborated by the broadcaster's hometown. Historical jurisdiction was Yugoslavia."
+      },
+      "source_ids": [
+        "S11",
+        "S12"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "15",
+      "type": "Personal Website",
+      "url": "https://robertherjavec.com/",
+      "verification": "Official personal-site HTML links directly to this account; the personal site itself is also crosslinked by the broadcaster.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Direct official crosslinks or continuing company ownership establish the correct identity."
+      },
+      "source_ids": [
+        "S2",
+        "S9"
+      ]
+    },
+    {
+      "type_id": "5",
+      "type": "LinkedIn",
+      "url": "https://www.linkedin.com/in/robertherjavec/",
+      "verification": "Official personal-site HTML links directly to this account; the personal site itself is also crosslinked by the broadcaster.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Direct official crosslinks or continuing company ownership establish the correct identity."
+      },
+      "source_ids": [
+        "S2",
+        "S9"
+      ]
+    },
+    {
+      "type_id": "9",
+      "type": "Instagram",
+      "url": "https://www.instagram.com/robertherjavec/",
+      "verification": "Official personal-site HTML links directly to this account; the personal site itself is also crosslinked by the broadcaster.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Direct official crosslinks or continuing company ownership establish the correct identity."
+      },
+      "source_ids": [
+        "S2",
+        "S9"
+      ]
+    },
+    {
+      "type_id": "2",
+      "type": "Facebook",
+      "url": "https://web.facebook.com/@robertherjavec007",
+      "verification": "Official personal-site HTML links directly to this account; the personal site itself is also crosslinked by the broadcaster.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Direct official crosslinks or continuing company ownership establish the correct identity."
+      },
+      "source_ids": [
+        "S2",
+        "S9"
+      ]
+    },
+    {
+      "type_id": "3",
+      "type": "Twitter",
+      "url": "https://x.com/robertherjavec",
+      "verification": "Official personal-site HTML links directly to this account; the personal site itself is also crosslinked by the broadcaster.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Direct official crosslinks or continuing company ownership establish the correct identity."
+      },
+      "source_ids": [
+        "S2",
+        "S9"
+      ]
+    },
+    {
+      "type_id": "4",
+      "type": "Youtube",
+      "url": "https://www.youtube.com/@robert-herjavec",
+      "verification": "Official personal-site HTML links directly to this account; the personal site itself is also crosslinked by the broadcaster.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Direct official crosslinks or continuing company ownership establish the correct identity."
+      },
+      "source_ids": [
+        "S2",
+        "S9"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.cyderes.com/",
+      "verification": "Official current company biography and CEO transition establish retained ownership and board participation.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Direct official crosslinks or continuing company ownership establish the correct identity."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0051",
+      "name": "Cybersecurity",
+      "summary": "Created and retained a material interest in substantial security operations.",
+      "relationship_type": "founder and continuing owner",
+      "temporal_scope": "current",
+      "taxonomy_value": "Defines the principal sustained commercial specialism, not passive exposure or a customer relationship.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Primary ownership and operating history directly meet the active contract."
+      },
+      "source_ids": [
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "tag_id": "tag_0184",
+      "name": "Television producer",
+      "summary": "Sustained executive-producer work on Shark Tank.",
+      "relationship_type": "executive producer",
+      "temporal_scope": "current",
+      "taxonomy_value": "A separately documented practiced role, beyond appearing as an investor.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Television Academy credits repeatedly identify him as executive producer from 2020 through 2026."
+      },
+      "source_ids": [
+        "S2",
+        "S13"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "review": {
+    "status": "complete",
+    "notes": "Parent approved the identity, four classifications and complementary 53/103-word pair before save. Strict owner-input and editorial validation required before completion report."
+  },
+  "biography": {
+    "plain_text": "Robert Herjavec is a Canadian technology entrepreneur and Shark Tank investor who built and sold internet security businesses. Raised in an immigrant household with limited means, he combined paid work with his first venture. He founded Herjavec Group and retained a significant investment in its successor, Cyderes, after stepping down as chief executive.",
+    "html": "<p>Robert Herjavec is a Canadian technology entrepreneur and Shark Tank investor who built and sold internet security businesses. Raised in an immigrant household with limited means, he combined paid work with his first venture. He founded Herjavec Group and retained a significant investment in its successor, Cyderes, after stepping down as chief executive.</p>\r\n",
+    "word_count": 53,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Full firsthand and primary bodies support the allocated facts; transaction totals and uncertain chronology are omitted."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S6",
+      "S10"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Technology entrepreneur Robert Herjavec saw the possibilities of computer networking while talking to Ethernet inventor Robert Metcalfe at a trade show. Sharing printers through a network seemed a compelling alternative to connecting each computer separately. When his employer declined to change direction, Herjavec established his own networking business.\n\nAs his companies grew, he favoured repeatable procedures over relying entirely on unusually talented individuals. He also paid close attention to customers' spending plans, recognising weakening demand before the financial crisis intensified. His approach to assessing young businesses put particular weight on existing sales: paying customers demonstrated demand more convincingly than an attractive idea alone.",
+    "html": "<p>Technology entrepreneur Robert Herjavec saw the possibilities of computer networking while talking to Ethernet inventor Robert Metcalfe at a trade show. Sharing printers through a network seemed a compelling alternative to connecting each computer separately. When his employer declined to change direction, Herjavec established his own networking business.</p>\r\n<p>As his companies grew, he favoured repeatable procedures over relying entirely on unusually talented individuals. He also paid close attention to customers' spending plans, recognising weakening demand before the financial crisis intensified. His approach to assessing young businesses put particular weight on existing sales: paying customers demonstrated demand more convincingly than an attractive idea alone.</p>\r\n",
+    "word_count": 103,
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Full firsthand and primary bodies support the allocated facts; transaction totals and uncertain chronology are omitted."
+    },
+    "source_ids": [
+      "S7",
+      "S8"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.forbes.com/sites/steveolenski/2015/07/09/robert-herjavec-of-shark-tank-and-the-small-business-revolution/",
+      "title": "Robert Herjavec and the Small Business Revolution, 9 July 2015",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Relevant full indexed interview read. Article rather than an eligible personal profile; inconsistent early-company chronology is not imported."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://abc.com/cast/22f00795-4263-4ed3-b279-e0b8852dc864",
+      "title": "Robert Herjavec official Shark Tank biography",
+      "publisher": "ABC",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Identity, television work, company founding, minority Zetaris investment and multiple geographic bases; no company value assigned personally."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.cyderes.com/company/about/robert-herjavec",
+      "title": "Robert Herjavec board biography",
+      "publisher": "Cyderes",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Current ownership and advisory relationship; historical founding and disposal. Merger-year inconsistency is not relied upon."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.cyderes.com/news/cyderes-announces-new-ceo",
+      "title": "Cyderes announces new CEO, 24 September 2024",
+      "publisher": "Cyderes",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Effective October transition; retained significant investment, strategic role and explicit principal business commitment."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.apax.com/news-views/funds-advised-by-apax-to-acquire-herjavec-group/",
+      "title": "Funds advised by Apax to acquire Herjavec Group, 11 February 2021",
+      "publisher": "Apax",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant acquisition release read. Majority purchase and founder's retained significant stake; undisclosed financial terms."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://waterfront-magazine.com/articles/robert-herjavec",
+      "title": "The Shark Without the Bite",
+      "publisher": "Toronto Waterfront / firsthand interview",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full interview read. Earned launch circumstances and personally transformative disposal. Site date is 2023 but family ages show an earlier interview; no present-tense role imported."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.leadersmag.com/issues/2010.1_Jan/ROB/Herjavec.html",
+      "title": "The Substance in the Economy, January 2010",
+      "publisher": "LEADERS / firsthand interview",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Early livelihood and business methods. Its transaction amount differs from other accounts and is excluded."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.success.com/dream-bigger-robert-herjavec",
+      "title": "Robert Herjavec on AI, cybersecurity and dreaming bigger, June 2026",
+      "publisher": "SUCCESS / firsthand interview",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Trade-show discussion and subsequent commercial decision; forecasts and reported transaction amounts omitted."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://robertherjavec.com/",
+      "title": "Robert Herjavec official personal website",
+      "publisher": "Robert Herjavec",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body and original HTML outbound links inspected. Five personal platform URLs are directly crosslinked. About-page CEO wording is stale."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.entrepreneur.com/leadership/robert-herjavec-to-immigrant-entrepreneurs-people-dont/278061",
+      "title": "Robert Herjavec to immigrant entrepreneurs, 24 June 2016",
+      "publisher": "Entrepreneur / firsthand interview",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant body read. Express Canadian naturalisation and earned commercial path; sensitive material excluded."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.index.hr/magazin/clanak/hrvat-milijunas-robert-herjavec-postao-zvijezda-amerike/544769.aspx",
+      "title": "Robert Herjavec profile, 30 March 2011",
+      "publisher": "Index.hr",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article read in Croatian. Explicit birthplace; unsupported transaction total and obsolete family details not imported."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://www.pilar.hr/wp-content/uploads/2020/10/_Leksikon_hrvatskoga_iseljenistva_i_manjina_full.pdf",
+      "title": "Lexicon of Croatian emigration and minorities: HERJAVEC, Robert",
+      "publisher": "Ivo Pilar Institute",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed personal entry read, including birth and bibliography. Scholarly compilation partly cites Wikipedia, so separately corroborated."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://www.televisionacademy.com/bios/robert-herjavec",
+      "title": "Robert Herjavec production credits and awards",
+      "publisher": "Television Academy",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full person page read. Repeated executive-producer credits establish sustained practice independently of on-screen appearances."
+      ]
+    },
+    {
+      "id": "S14",
+      "url": "https://www.linkedin.com/in/robertherjavec/",
+      "title": "Robert Herjavec official LinkedIn",
+      "publisher": "Robert Herjavec / LinkedIn",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full public indexed profile read; official-site direct link distinguishes similarly named unverified accounts."
+      ]
+    },
+    {
+      "id": "S15",
+      "url": "https://linktr.ee/realrobertherjavec",
+      "title": "Robert Herjavec Linktree candidate",
+      "publisher": "Linktree",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Public body inspected; mentions TikTok but no verified inbound official bridge or usable exact destination was established."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Research cutoff 30 September 2026; accessed 1 October. Exact supplied identity resolves independently of the historical vessel relationship; no private vessel appears in either biography.",
+    "Current sector and founder relationship rest on directly affirmed retained material equity and the owner's core-business declaration, corroborated by current board presence. A complete personal portfolio is unavailable. Investor is a meaningful alternative, but television deal activity alone does not establish that it supersedes the created core.",
+    "Independent start82 is an inference from positive earned-launch circumstances and limited family means. No exact startup cap table is claimed. The account includes ordinary employment opportunities, which are not equivalent to a materially preferential family platform.",
+    "Published histories differ over early-company timing and acquisition amounts. His own interview distinguishes a small earlier disposal from the much larger AT&T sale. No uncertain founding date, disputed price, aggregate enterprise total or billionaire estimate is imported.",
+    "Canadian naturalisation is expressly documented. Existing American nationality remains unverified rather than disproved; filling secondary Canadian does not certify dual citizenship. Contemporary sources divide his time between Toronto, Los Angeles and Australia; no sole main residence correction is justified.",
+    "Birthplace Varaždin is corroborated across local reporting, scholarly biography and official hometown. Croatia is the modern territory; Yugoslavia was the birth-era state. No expanded middle name found.",
+    "All seven person-relevant link types checked. Personal website, Instagram, Facebook, Twitter/X, YouTube and LinkedIn are directly linked by the official site. Instagram direct retrieval failed, but the independent crosslink verifies identity. TikTok search was blocked; the Linktree candidate does not supply a sufficiently verified exact destination, so no guessed handle is proposed.",
+    "Name-only LinkedIn alternatives, including a numerical-suffix profile and a casino-promoting account, are rejected in favour of the official site's exact URL. Existing Wikipedia is retained. Forbes articles and picture pages do not qualify as dedicated personal profiles.",
+    "Cybersecurity and Television producer form the minimum useful active set. The latter has recurring primary credits, not merely an on-screen role. Casual racing descriptions are not used to force a sporting tag; no general media industry tag is inferred from television prominence.",
+    "Source budgets cover prose, brief and evidence metadata. SUCCESS supplies the networking episode; LEADERS supplies procedures and customer tests. Each remains below its 200-word derivation allowance, as do the other individual works. Sensitive interview passages and private vessels are excluded."
+  ]
+}

@@ -1,0 +1,1254 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 2131,
+    "display_name": "Roustam Tariko",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "Uncommon name, Russian nationality, dated age and extensive Russian Standard identity converge. Statutory Roust record and personal interviews identify the same entrepreneur. Exact historical vessel hull is not needed; competing birth dates are a detail conflict, not a competing person."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_country",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "detail_select_option_lookups": {
+      "nationality": {
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "116": "Russian",
+        "4": "American",
+        "118": "Saudi Arabian",
+        "43": "Egyptian",
+        "52": "French",
+        "145": "Ukrainian",
+        "143": "Turkish",
+        "32": "Chinese",
+        "114": "Qatari",
+        "102": "Nigerian",
+        "133": "Swedish",
+        "65": "Indonesian",
+        "29": "Canadian",
+        "36": "Croatian",
+        "57": "Greek",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "22": "British",
+        "8": "Australian",
+        "92": "Mexican",
+        "100": "New Zealander",
+        "75": "Kazakhstanian",
+        "134": "Swiss",
+        "128": "Spanish",
+        "69": "Israeli",
+        "62": "Hungarian",
+        "122": "Singaporean",
+        "89": "Malaysian",
+        "70": "Italian",
+        "105": "Pakistani",
+        "55": "German",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "68": "Irish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "81": "Lebanese",
+        "25": "Bulgarian",
+        "9": "Austrian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "111": "Polish",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "16": "Belgian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "41": "Dutch",
+        "7": "Armenian",
+        "38": "Cypriot",
+        "135": "Syrian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "85": "Luxembourgish",
+        "120": "Serbian",
+        "3": "Algerian",
+        "107": "Panamamian",
+        "11": "Bahamanian",
+        "37": "Cuban",
+        "112": "Portuguese",
+        "123": "Slovakian",
+        "157": "Mon\u00e9gasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "113": "Puerto Rican",
+        "1": "Afghan",
+        "90": "Maltese",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "126": "South African",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "142": "Tunisian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "2": "Albanian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "66": "Iranian",
+        "15": "Belarussian",
+        "147": "Uzbekistanian",
+        "146": "Uruguayan",
+        "58": "Grenadian"
+      },
+      "secondary_nationality": {
+        "112": "Portuguese",
+        "147": "Uzbekistanian",
+        "75": "Kazakhstanian",
+        "135": "Syrian",
+        "55": "German",
+        "69": "Israeli",
+        "4": "American",
+        "22": "British",
+        "66": "Iranian",
+        "145": "Ukrainian",
+        "120": "Serbian",
+        "29": "Canadian",
+        "38": "Cypriot",
+        "52": "French",
+        "126": "South African",
+        "122": "Singaporean",
+        "128": "Spanish",
+        "90": "Maltese",
+        "134": "Swiss",
+        "8": "Australian",
+        "100": "New Zealander",
+        "11": "Bahamanian",
+        "113": "Puerto Rican",
+        "118": "Saudi Arabian",
+        "143": "Turkish",
+        "57": "Greek",
+        "146": "Uruguayan",
+        "116": "Russian",
+        "102": "Nigerian",
+        "107": "Panamamian",
+        "68": "Irish",
+        "9": "Austrian",
+        "70": "Italian",
+        "58": "Grenadian",
+        "142": "Tunisian",
+        "133": "Swedish",
+        "41": "Dutch",
+        "85": "Luxembourgish",
+        "62": "Hungarian",
+        "16": "Belgian",
+        "81": "Lebanese",
+        "2": "Albanian",
+        "111": "Polish",
+        "103": "Norwegian",
+        "45": "Emirati",
+        "104": "Omanian",
+        "43": "Egyptian",
+        "32": "Chinese",
+        "114": "Qatari",
+        "65": "Indonesian",
+        "36": "Croatian",
+        "73": "Japanese",
+        "64": "Indian",
+        "12": "Bahrainian",
+        "92": "Mexican",
+        "89": "Malaysian",
+        "105": "Pakistani",
+        "159": "Cambodian",
+        "39": "Czech",
+        "40": "Danish",
+        "67": "Iraqi",
+        "136": "Taiwanese",
+        "10": "Azerbaijani",
+        "25": "Bulgarian",
+        "50": "Filipino",
+        "78": "Kuwaiti",
+        "148": "Venezuelan",
+        "21": "Brazilian",
+        "34": "Congolese",
+        "95": "Moroccan",
+        "7": "Armenian",
+        "51": "Finnish",
+        "115": "Romanian",
+        "74": "Jordanian",
+        "42": "Ecuadorian",
+        "6": "Argentinian",
+        "3": "Algerian",
+        "37": "Cuban",
+        "123": "Slovakian",
+        "157": "Mon\u00e9gasque",
+        "138": "Thai",
+        "84": "Lithuanian",
+        "156": "English",
+        "33": "Colombian",
+        "31": "Chilian",
+        "1": "Afghan",
+        "54": "Georgian",
+        "80": "Latvian",
+        "60": "Guatemalan",
+        "47": "Estonian",
+        "19": "Bosnian",
+        "110": "Peruvian",
+        "71": "Ivorian",
+        "124": "Slovenian",
+        "151": "Yemenese",
+        "24": "Bruneian",
+        "5": "Angolan",
+        "83": "Libyan",
+        "82": "Liberian",
+        "72": "Jamaican",
+        "93": "Moldavian",
+        "13": "Bangladeshi",
+        "18": "Bolivian",
+        "15": "Belarussian"
+      },
+      "main_residence_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "98": "Israel",
+        "221": "United States",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "213": "Turkey",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "73": "United Kingdom",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "29": "Bahamas",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "131": "Monaco",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "157": "Netherlands",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "66": "Finland",
+        "180": "Romania",
+        "192": "Slovakia",
+        "187": "Sweden",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "secondary_residence_country": {
+        "131": "Monaco",
+        "221": "United States",
+        "187": "Sweden",
+        "73": "United Kingdom",
+        "148": "Mexico",
+        "2": "United Arab Emirates",
+        "157": "Netherlands",
+        "213": "Turkey",
+        "84": "Greece",
+        "53": "Germany",
+        "29": "Bahamas",
+        "66": "Finland",
+        "158": "Norway",
+        "163": "Oman",
+        "98": "Israel",
+        "40": "Switzerland",
+        "223": "Uzbekistan",
+        "183": "Saudi Arabia",
+        "61": "Egypt",
+        "71": "France",
+        "181": "Russian Federation",
+        "178": "Qatar",
+        "155": "Nigeria",
+        "216": "Taiwan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "93": "Croatia",
+        "90": "Hong Kong",
+        "107": "Japan",
+        "22": "Bahrain",
+        "14": "Australia",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "64": "Spain",
+        "83": "Equatorial Guinea",
+        "188": "Singapore",
+        "45": "China",
+        "149": "Malaysia",
+        "104": "Italy",
+        "118": "Kazakhstan",
+        "169": "Pakistan",
+        "99": "India",
+        "206": "Thailand",
+        "52": "Czech Republic",
+        "55": "Denmark",
+        "101": "Iraq",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "243": "Isle Of Man",
+        "175": "Portugal",
+        "28": "Brazil",
+        "130": "Morocco",
+        "17": "Barbados",
+        "95": "Hungary",
+        "19": "Belgium",
+        "222": "Uruguay",
+        "210": "Turkmenistan",
+        "180": "Romania",
+        "192": "Slovakia",
+        "106": "Jordan",
+        "51": "Cyprus",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "127": "Luxembourg",
+        "164": "Panama",
+        "60": "Estonia",
+        "97": "Ireland",
+        "236": "South Africa",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "246": "Serbia",
+        "43": "Chile",
+        "241": "Azerbaijan",
+        "173": "Puerto Rico",
+        "225": "Saint Vincent and the Grenadines",
+        "126": "Lithuania",
+        "144": "Malta",
+        "75": "Georgia",
+        "128": "Latvia",
+        "86": "Guatemala",
+        "16": "Bosnia and Herzegovina",
+        "165": "Peru",
+        "146": "Maldives",
+        "41": "Cote d'Ivoire",
+        "190": "Slovenia",
+        "201": "Swaziland",
+        "211": "Tunisia",
+        "57": "Dominican Republic",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "129": "Libyan Arab Jamahiriya",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "6": "Albania",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia",
+        "33": "Belarus",
+        "200": "Syrian Arab Republic",
+        "102": "Iran",
+        "39": "Congo",
+        "7": "Armenia",
+        "186": "Sudan",
+        "48": "Cuba",
+        "219": "Uganda",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "54": "Djibouti",
+        "233": "Yemen",
+        "123": "Sri Lanka",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "158": "Norway",
+        "2": "United Arab Emirates",
+        "163": "Oman",
+        "181": "Russian Federation",
+        "221": "United States",
+        "223": "Uzbekistan",
+        "61": "Egypt",
+        "71": "France",
+        "118": "Kazakhstan",
+        "183": "Saudi Arabia",
+        "213": "Turkey",
+        "45": "China",
+        "178": "Qatar",
+        "200": "Syrian Arab Republic",
+        "187": "Sweden",
+        "169": "Pakistan",
+        "96": "Indonesia",
+        "35": "Canada",
+        "53": "Germany",
+        "93": "Croatia",
+        "84": "Greece",
+        "90": "Hong Kong",
+        "241": "Azerbaijan",
+        "107": "Japan",
+        "99": "India",
+        "22": "Bahrain",
+        "73": "United Kingdom",
+        "14": "Australia",
+        "148": "Mexico",
+        "162": "New Zealand",
+        "218": "Ukraine",
+        "102": "Iran",
+        "104": "Italy",
+        "64": "Spain",
+        "98": "Israel",
+        "83": "Equatorial Guinea",
+        "95": "Hungary",
+        "149": "Malaysia",
+        "19": "Belgium",
+        "236": "South Africa",
+        "52": "Czech Republic",
+        "188": "Singapore",
+        "55": "Denmark",
+        "101": "Iraq",
+        "192": "Slovakia",
+        "216": "Taiwan",
+        "120": "Lebanon",
+        "21": "Bulgaria",
+        "13": "Austria",
+        "168": "Philippines",
+        "116": "Kuwait",
+        "170": "Poland",
+        "226": "Venezuela",
+        "40": "Switzerland",
+        "130": "Morocco",
+        "39": "Congo",
+        "157": "Netherlands",
+        "7": "Armenia",
+        "28": "Brazil",
+        "33": "Belarus",
+        "51": "Cyprus",
+        "129": "Libyan Arab Jamahiriya",
+        "210": "Turkmenistan",
+        "206": "Thailand",
+        "66": "Finland",
+        "180": "Romania",
+        "106": "Jordan",
+        "59": "Ecuador",
+        "11": "Argentina",
+        "97": "Ireland",
+        "186": "Sudan",
+        "155": "Nigeria",
+        "48": "Cuba",
+        "246": "Serbia",
+        "175": "Portugal",
+        "131": "Monaco",
+        "190": "Slovenia",
+        "126": "Lithuania",
+        "211": "Tunisia",
+        "43": "Chile",
+        "173": "Puerto Rico",
+        "219": "Uganda",
+        "86": "Guatemala",
+        "60": "Estonia",
+        "144": "Malta",
+        "65": "Ethiopia",
+        "195": "Senegal",
+        "16": "Bosnia and Herzegovina",
+        "127": "Luxembourg",
+        "165": "Peru",
+        "164": "Panama",
+        "54": "Djibouti",
+        "41": "Cote d'Ivoire",
+        "75": "Georgia",
+        "233": "Yemen",
+        "57": "Dominican Republic",
+        "29": "Bahamas",
+        "124": "Liberia",
+        "244": "Montenegro",
+        "105": "Jamaica",
+        "128": "Latvia",
+        "123": "Sri Lanka",
+        "6": "Albania",
+        "89": "Guyana",
+        "46": "Colombia",
+        "27": "Bolivia",
+        "243": "Isle Of Man",
+        "17": "Barbados",
+        "222": "Uruguay",
+        "78": "Gibraltar",
+        "228": "Virgin Islands, U.S.",
+        "225": "Saint Vincent and the Grenadines",
+        "146": "Maldives",
+        "201": "Swaziland",
+        "26": "Brunei Darussalam",
+        "25": "Bermuda",
+        "166": "French Polynesia",
+        "9": "Angola",
+        "214": "Trinidad and Tobago",
+        "1": "Andorra",
+        "204": "French Southern Territories",
+        "110": "Cambodia"
+      },
+      "birth_month": {
+        "10": "October",
+        "7": "July",
+        "11": "November",
+        "12": "December",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "6": "June",
+        "1": "January",
+        "5": "May",
+        "4": "April",
+        "2": "February"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "4": "Unknown",
+        "2": "Dead",
+        "3": "Missing"
+      },
+      "death_month": {
+        "5": "May",
+        "6": "June",
+        "9": "September",
+        "3": "March",
+        "8": "August",
+        "10": "October",
+        "7": "July",
+        "1": "January",
+        "2": "February",
+        "11": "November",
+        "12": "December",
+        "4": "April"
+      }
+    }
+  },
+  "research_status": "complete",
+  "forbes_profile": {
+    "status": "verified",
+    "url": "https://images.forbes.com/lists/2007/10/07billionaires_Roustam-Tariko_JAHI.html",
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "Discovered Forbes-first; exact legacy personal billionaire profile opens directly with full biography and HTTP 200. Banking and spirits identity matches independent evidence. Historical rank and valuation are not current claims."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Russian Standard Bank became the principal evidenced wealth-creation platform after the initial spirits-distribution business.",
+    "confidence": {
+      "score": 85,
+      "band": "high",
+      "reason": "Forbes explicitly classifies the personal fortune as Finance and identifies the wholly owned bank as the major profit generator. Contemporary interview evidence corroborates the bank's substantial earnings relative to the earlier distribution platform. Spirits were a material starting business, but this is not a first-job classification or an assumption that all company assets belong to him."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S14"
+    ]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Finance & Investments is an explicit origin-sector fallback because the present relative net weight of the retained bank and international drinks holdings is unresolved.",
+    "confidence": {
+      "score": 73,
+      "band": "medium",
+      "reason": "Both platforms remain substantial and economically connected, but bank regulatory capital and drinks-company sales are not comparable personal equity values. Holding-company liabilities and incomplete consolidated spirits accounts prevent an honest principal-sector ranking. The score supports the prescribed fallback rather than asserting that banking still dominates current wealth."
+    },
+    "source_ids": [
+      "S1",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S12"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made_independent",
+    "label": "Self-made \u2014 independent start",
+    "summary": "Personally earned travel-service income funded the import business from which he built the later consumer-business fortune.",
+    "confidence": {
+      "score": 87,
+      "band": "high",
+      "reason": "Interview-based INSEAD research explicitly identifies earned capital reinvested into his own venture. The founder-built core and modest early employment provide positive independent-start premises; normal business contacts and supplier consignment are not inherited advantages. Later borrowing and state-bank support are separately dated, not treated as initial family wealth."
+    },
+    "source_ids": [
+      "S2",
+      "S3"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "founder",
+    "label": "Founder",
+    "summary": "His continuing personally held interests remain rooted in the consumer businesses he established, with a continuing founder-chairman role at Roust.",
+    "confidence": {
+      "score": 82,
+      "band": "medium",
+      "reason": "Direct majority ownership in the original vodka producer, current corporate leadership, continuing statutory influence and the retained substantial banking platform support founder-core continuity. This is a bounded principal-wealth inference, not a claim that every group asset is personally owned or that a paid title alone establishes wealth."
+    },
+    "source_ids": [
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S12"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "Russian entrepreneur who developed consumer brands across banking and drinks.",
+    "defining_work": "Built a premium spirits business and a consumer bank under Russian Standard.",
+    "formative_context": "Earned commissions serving foreign visitors before risking those earnings on imports.",
+    "decisive_moment": "Tested demand for Italian chocolates through a consignment before expanding.",
+    "enduring_dimensions": [
+      "Consumer banking and spirits entrepreneurship.",
+      "Commercial opportunities found through practical service work.",
+      "Educational and recreational support for children."
+    ],
+    "character_detail": "Secured permission for direct hotel bookings and later helped fund a free children's park.",
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Introduce the entrepreneur through the two consumer businesses that define his career."
+      },
+      {
+        "mode": "formative_episode",
+        "angle": "Explain the hotel-booking problem and the earned capital used in his first imports."
+      }
+    ],
+    "excluded_transient_context": [
+      "Private yachts, travel and assets.",
+      "Unverified personal social accounts.",
+      "Historical bank profit presented as personal net worth.",
+      "Speculative motives, geopolitics or unsupported allegations."
+    ],
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S8",
+      "S9"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "formative_episode",
+    "narrative_shape": "formative_episode_then_payoff",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "Short-only: established vodka and bank businesses, retail lending method, acquisitions and Gancia. Long-only: hotel-booking permissions and commissions, earned capital and chocolate trial, followed by foundation and specific public park facilities. Shared consumer-entrepreneur identity does not repeat the bank/spirits expansion sequence. The architect, not Tariko, receives design attribution."
+  },
+  "biography": {
+    "plain_text": "Roustam Tariko is a Russian entrepreneur who built Russian Standard across consumer banking and premium spirits. After importing Western drinks, he launched his own vodka brand and established a bank offering household loans through retailers. His Roust group subsequently expanded through acquisitions, adding established spirits producers and the Italian wine house Gancia.",
+    "html": "<p>Roustam Tariko is a Russian entrepreneur who built Russian Standard across consumer banking and premium spirits. After importing Western drinks, he launched his own vodka brand and established a bank offering household loans through retailers. His Roust group subsequently expanded through acquisitions, adding established spirits producers and the Italian wine house Gancia.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "Official business history, primary research and contemporaneous reporting support the defining businesses and acquisition-led expansion."
+    },
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Banking and drinks entrepreneur Roustam Tariko began earning money by arranging Moscow hotel rooms for foreign visitors. Working with a travel agency, he persuaded a hotel manager to secure permission for direct bookings and earned commissions. He later invested money from that work in his own import business, initially testing demand with a consignment of Italian chocolates.\n\nHis Russian Standard Foundation supported educational opportunities for promising children from disadvantaged backgrounds. As its board chairman, he also backed the Buratino Children's Park in Moscow, which opened free to the public in 2013. Designed by an Italian architect, it included a tree maze, a zip line and a musical pavilion where children could explore sound through games.",
+    "html": "<p>Banking and drinks entrepreneur Roustam Tariko began earning money by arranging Moscow hotel rooms for foreign visitors. Working with a travel agency, he persuaded a hotel manager to secure permission for direct bookings and earned commissions. He later invested money from that work in his own import business, initially testing demand with a consignment of Italian chocolates.</p>\r\n<p>His Russian Standard Foundation supported educational opportunities for promising children from disadvantaged backgrounds. As its board chairman, he also backed the Buratino Children's Park in Moscow, which opened free to the public in 2013. Designed by an Italian architect, it included a tree maze, a zip line and a musical pavilion where children could explore sound through games.</p>\r\n",
+    "word_count": 115,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Detailed interview and academic fieldwork support the initial business mechanism; official philanthropy and a contemporary park-opening report identify his role and concrete facilities."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S8",
+      "S9"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Entrepreneur",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Primary company history and retained founder ownership establish the occupation."
+      },
+      "source_ids": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Primary corporate biography uses male pronouns."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "March",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Current statutory record and the later bank-hosted direct interview agree; an older reproduced biography conflicts."
+      },
+      "source_ids": [
+        "S6",
+        "S10"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1962",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Current statutory record and later interview biography agree. Earlier 1961 source is expressly preserved as conflicting evidence."
+      },
+      "source_ids": [
+        "S6",
+        "S10"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Menzelinsk",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Birthplace is consistent across the older bank-hosted biography and personal reference page despite conflicting dates."
+      },
+      "source_ids": [
+        "S14",
+        "S11"
+      ]
+    },
+    {
+      "field": "birth_country",
+      "value": "Russian Federation",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Menzelinsk is in present-day Russian Federation; the exact input country vocabulary is used without implying that the modern state existed at birth."
+      },
+      "source_ids": [
+        "S14"
+      ]
+    },
+    {
+      "field": "secondary_nationality",
+      "value": "Italian",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 80,
+        "band": "medium",
+        "reason": "Exact-person current statutory Roust PSC entry expressly declares Italian nationality, independently of honorary municipal citizenship. Single statutory declaration limits confidence."
+      },
+      "source_ids": [
+        "S6"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "https://images.forbes.com/lists/2007/10/07billionaires_Roustam-Tariko_JAHI.html",
+      "action": "add",
+      "verification": "Exact historical personal profile, directly accessible and independently matched.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Exact historical personal profile, directly accessible and independently matched."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Roustam_Tariko",
+      "action": "add",
+      "verification": "Exact personal biography matched to primary company and statutory evidence; disputed or unsourced page details are not imported.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "Exact personal biography matched to primary company and statutory evidence; disputed or unsourced page details are not imported."
+      },
+      "source_ids": [
+        "S11",
+        "S4",
+        "S6"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://roust.com/en/",
+      "action": "add",
+      "verification": "Official site names the subject founder and chairman; recent direct equity evidence confirms an economic connection.",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official site names the subject founder and chairman; recent direct equity evidence confirms an economic connection."
+      },
+      "source_ids": [
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0211",
+      "name": "Banking",
+      "summary": "Founded and substantially owned a defining consumer-bank platform that generated material personal wealth.",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Material founder economics and sustained control satisfy the industry contract, rather than customer or passive portfolio exposure."
+      },
+      "source_ids": [
+        "S1",
+        "S10",
+        "S12"
+      ]
+    },
+    {
+      "tag_id": "tag_0246",
+      "name": "Spirits & distilling",
+      "summary": "Founded and developed a substantial spirits production and distribution group with continuing personal majority ownership in its original vodka producer.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Long operating history and actual controlling equity satisfy the active substantial-operation and wealth contracts."
+      },
+      "source_ids": [
+        "S4",
+        "S5",
+        "S7"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "field": "main_residence_country",
+      "value": "Italy",
+      "confidence": {
+        "score": 68,
+        "band": "low",
+        "reason": "Current statutory entry declares Italy residence, but principal residence is not distinguished from his international living arrangements. Older direct interview said predominantly Russia. Withheld as a correction."
+      },
+      "source_ids": [
+        "S6",
+        "S10"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "17",
+      "confidence": {
+        "score": 65,
+        "band": "low",
+        "reason": "Later bank-hosted interview says 17 March 1962, but earlier firsthand publication gives 30 August 1961. Statutory month/year confirmation cannot resolve the exact day; manual review retained."
+      },
+      "source_ids": [
+        "S10",
+        "S14"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://images.forbes.com/lists/2007/10/07billionaires_Roustam-Tariko_JAHI.html",
+      "title": "Roustam Tariko: 2007 billionaire profile",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full profile read directly and by HTTP. Personal fortune attribution, Finance classification, complete bank ownership after IFC buyout and substantial bank profitability. Historical age and fortune are not represented as current."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.forbes.com/forbes/2006/0327/128.html",
+      "title": "A Common Touch",
+      "publisher": "Forbes",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed article body read. First-person hotel-booking permissions and commissions, commercial beginnings and bank development. Corporate financial figures are distinguished from personal wealth."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://flora.insead.edu/fichiersti_wp/inseadwp2004/2004-54.pdf",
+      "title": "The New Russian Business Leaders",
+      "publisher": "INSEAD",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant interview-based case section, pages 9-10, read. Own travel-service earnings funded the import business; chocolate consignment tested demand. The subsequent bank and brand development are independently documented."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://roust.com/en/about-us/",
+      "title": "About Roust",
+      "publisher": "Roust",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full current company page read. Founder and chairman identification, actual business history, Gancia acquisition and production facilities. Promotional superlatives are not adopted."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://interfax.com/newsroom/top-stories/112763/",
+      "title": "Tariko becomes direct owner of 65% of Russian Standard Vodka",
+      "publisher": "Interfax",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full 18 July 2025 report read. Register-based 65.08% direct holding after suspension of foreign parent corporate rights. This is a legal ownership reorganisation, not proof of new economic wealth or personal seizure."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/08500762/persons-with-significant-control",
+      "title": "Roust UK Ltd persons with significant control",
+      "publisher": "Companies House",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full current entry read. Exact company-related subject, March 1962 birth, Italian nationality, Italy residence and significant influence/control. PSC influence is not converted into an exact shareholding."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.finmarket.ru/news/6594012",
+      "title": "Roust's 2025 vodka-market share and financial results",
+      "publisher": "Finmarket / Interfax",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full 6 April 2026 article read by HTTP. Continuing substantial drinks operations, selected entity financial results and founder-chair attribution. Partial entity accounts are not aggregated into personal or group net worth."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://roust.com/en/social-projects/",
+      "title": "Philanthropy",
+      "publisher": "Roust",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full current page read. Russian Standard Foundation's education and extracurricular support for promising disadvantaged students."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://moodiedavittreport.com/russian-standard-foundation-opens-childrens-park-in-southern-moscow/",
+      "title": "Russian Standard Foundation opens children's park",
+      "publisher": "The Moodie Davitt Report",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant 2013 report read by HTTP. Foundation board chairman personally identified; local prefect confirms free public access. Architect attribution and the maze, zip line and sound-games pavilion are described. The 2024 page update is not treated as the opening date."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.rsb.ru/press-center/publications/2010/734-za-oshibki-vse-dolzhny-platit-rustam-tariko-gendirektor-zao-russkiy-standart-predsedatel-soveta-/",
+      "title": "Everyone must pay for their mistakes: Tariko interview",
+      "publisher": "Vedomosti, reproduced by Russian Standard Bank",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant interview and biographical sections read. Personally owned bank and vodka business, 17 March 1962 date, historical residence and personal educational funding. First-person statements are dated and not mechanically carried forward."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://en.wikipedia.org/wiki/Roustam_Tariko",
+      "title": "Roustam Tariko",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full personal page read and identity checked against primary sources. Conflicting age, degree and unrelated allegation material are not imported."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://raexpert.ru/releases/2026/apr08d",
+      "title": "Russian Standard Bank rating confirmed, 8 April 2026",
+      "publisher": "Expert RA",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant rating assessment read. Continuing sizeable bank, capital, dividends and non-core-asset plan; identifies main-shareholder-related economics but does not name him. Combined with named ownership evidence, not used alone as identity proof."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://www.vedomosti.ru/business/news/2023/09/26/997230-vs-rf-otkazal-citibank",
+      "title": "Supreme Court declines Citibank collateral appeal",
+      "publisher": "Vedomosti",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Attempt to foreclose 49% held by Tariko structures failed. Procedural outcome does not establish debt repayment or eliminate every creditor risk."
+      ]
+    },
+    {
+      "id": "S14",
+      "url": "https://www.rsb.ru/press-center/publications/2007/232-orientir-dlya-russkogo-standarta-absolut-/",
+      "title": "Russian Standard's benchmark is Absolut",
+      "publisher": "Kommersant, reproduced by Russian Standard Bank",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Relevant full interview/biographical and company sections read. Menzelinsk birthplace and historical company economics; older 30 August 1961 birth date conflicts with the later interview and current statutory record."
+      ]
+    },
+    {
+      "id": "S15",
+      "url": "https://caliber.az/post/bank-russkij-standart-podal-v-sud-novoe-zayavlenie-na-nemeckuyu-kompaniyu",
+      "title": "Russian Standard Bank application against Stock Spirits",
+      "publisher": "Caliber.Az",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full short April 2026 report read. Expressly identifies the bank as Tariko-owned and Roust as controlled by him. Used as corroboration of continuity, not sole proof of percentage or personal liabilities."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Current assessment is 1 October 2026. Finance primary industry is an explicit origin fallback: retained bank and drinks holdings are each substantial, but comparative personal equity values cannot be honestly established. Bank assets, regulatory capital, subsidiary revenues and group sales are not interchangeable personal wealth.",
+    "Russian Standard Bank ownership continuity rests on dated primary/interview ownership, the failed 2023 foreclosure and named 2026 reporting; the current rating corroborates meaningful continuing economics. No assumption that holding-company debt is personal debt, that it is extinguished, or that the bank is insolvent is made.",
+    "Roust's 2025 direct ownership reorganisation is explicitly distinguished from a new inherited or state-transferred fortune. The original founder mechanism is supported independently by personally earned startup capital. State support received much later does not itself reclassify the launch.",
+    "Date conflict: a 2007 bank-hosted interview biography and some older references give 30 August 1961. The 2010 interview gives 17 March 1962 and the current statutory record independently agrees with March 1962. Month/year are proposed; exact day remains below-threshold manual review because independent statutory evidence does not resolve it. No degree claim enters the biographies.",
+    "Italian nationality is a current statutory declaration, not inferred from honorary citizenship of Olbia. It is proposed as secondary to retained Russian nationality; no relinquishment assumed. Italy residence remains manual review because principal residence is unestablished. Private addresses are excluded.",
+    "Forbes-first search found and directly verified the legacy personal profile. No current Forbes valuation is claimed. LinkedIn, Instagram and Personal Website searches found no authenticated exact personal account; Facebook photo attribution had no recoverable exact profile. Twitter/X, Youtube, TikTok, Vimeo and Flickr checks likewise yielded no authenticated personal link. Company brand accounts and interviews hosted on others' channels are not personal profiles. TikTok indexing is limited. Trip Advisor and Zillow have no relevant application.",
+    "Only Banking and Spirits & distilling are assigned as the minimum distinct defining business tags. Wine production is a supported subsidiary activity but not needed to repeat the drinks-platform dimension. Educational support is retained in ordinary research and biography without manufacturing a taxonomy candidate.",
+    "The biographies separate early practical formation and concrete public contribution from the established-business summary. Park design is attributed to its architect, not the funder. No yachts, wealth estimates, transitory percentages, unrelated private family details or allegations appear in either biography."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent approved the complementary pair, four independent wealth decisions, statutory nationality and conservative birth-date treatment. Strict editorial validation against the immutable owner input passed without warnings."
+  },
+  "editorial_note": null
+}

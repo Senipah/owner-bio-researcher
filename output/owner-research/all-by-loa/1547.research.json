@@ -1,0 +1,1313 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1547,
+    "display_name": "Peter Munk",
+    "identity_confidence": {
+      "score": 97,
+      "band": "very_high",
+      "reason": "Exact name, Canadian nationality, Hungarian birthplace and age match. Independent maritime reporting identifies his Golden Eagle purchase in 2009 and continued ownership at death; the rename to Natalia V bridges the immutable vessel record. Distinct Danish businesspeople and medical namesakes are excluded."
+    }
+  },
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "research_status": "complete",
+  "biography_brief": {
+    "durable_identity": "Hungarian-born Canadian entrepreneur who established Barrick Gold and supported major Canadian institutions.",
+    "defining_work": "Built a gold-mining business through acquisitions after earlier ventures in consumer electronics and Pacific hotels.",
+    "formative_context": "Studied electrical engineering at the University of Toronto; his first father-in-law supplied seed funding for the Clairtone venture.",
+    "decisive_moment": "Proceeds from building and selling a Pacific hotel business supplied capital for Barrick.",
+    "enduring_dimensions": [
+      "Created and financed businesses across mining, commercial property and hospitality.",
+      "Supported specialist cardiac care, university research and public debate with his wife, Melanie."
+    ],
+    "character_detail": "Connected his donations to gratitude for Canada's welcome when he arrived as a young immigrant.",
+    "opening_options": [
+      {
+        "mode": "institution_or_asset",
+        "angle": "The cardiac centre and the couple's practical contributions to its treatment and research capacity."
+      },
+      {
+        "mode": "defining_achievement",
+        "angle": "The creation of Barrick Gold after ventures in other industries."
+      }
+    ],
+    "excluded_transient_context": [
+      "Vessel ownership",
+      "Net-worth estimates and business valuations",
+      "Present charitable assets attributed to the deceased donor",
+      "Speculative terminal portfolio weights",
+      "Unnecessary religion, health and family disputes"
+    ],
+    "source_ids": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "institution_or_asset",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "founder_operator"
+    ],
+    "notes": "Two shared anchors: Barrick founder and Canadian philanthropy. The short owns Hungarian background, wealth mechanism, Clairtone and father-in-law funding, hotels and property. The long deliberately omits that commercial bundle and adds the cardiac centre's equipment and research chairs, immigration-linked gratitude, engineering education, the university institution and live debates. Its distinct institutional detail would be lost if reduced to the short."
+  },
+  "editorial_note": null,
+  "forbes_profile": {
+    "status": "verified",
+    "url": "http://people.forbes.com/profile/peter-munk/10584",
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The exact historical Forbes executive profile was read in its 2 November 2008 Internet Archive capture. Name, Barrick founder role, Toronto and age match. The original endpoint is now unavailable; this is not a verified current Forbes wealth-list profile."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "metals_mining",
+    "label": "Metals & Mining",
+    "summary": "Gold mining through Barrick was the principal fortune-producing sector, alongside substantial earlier hotel and later property ventures.",
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Bloomberg expressly attributes most of his wealth to Barrick. Primary filings independently establish personally held Barrick equity and its material value. Hotel-sale proceeds and Trizec ownership establish real competing wealth sources, but do not displace the explicit principal-fortune attribution. Barrick's full market capitalisation is not his personal wealth."
+    },
+    "source_ids": [
+      "S2",
+      "S7",
+      "S8"
+    ]
+  },
+  "primary_industry": {
+    "classification": "metals_mining",
+    "label": "Metals & Mining",
+    "summary": "Explicit origin-sector fallback for the terminal lifetime position: gold mining. The dominant sector of his remaining private wealth at death in March 2018 is not established.",
+    "confidence": {
+      "score": 76,
+      "band": "medium",
+      "reason": "The original mining attribution is supported, but terminal weights across retained investments, sale proceeds and other assets are unavailable. Trizec was sold and the 2016 Porto Montenegro exit is directly documented; SPDI confirms a personally beneficial property investment at death without establishing its primacy. Real Estate and Finance & Investments were considered, but neither has a sufficient dominant-asset premise. The mandatory fallback does not assert continued Barrick dominance in 2018 or attribute heirs' and charities' later assets to him."
+    },
+    "source_ids": [
+      "S2",
+      "S7",
+      "S8",
+      "S9",
+      "S10"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made_advantaged",
+    "label": "Self-made — advantaged start",
+    "summary": "Inferred self-made origin with an advantaged launch: family seed funding helped establish Clairtone, while he separately built hotels, mining and property interests.",
+    "confidence": {
+      "score": 84,
+      "band": "medium",
+      "reason": "UHN's detailed account identifies his first father-in-law's money as the seed for Clairtone, a material early business opportunity. The same account documents personal proceeds from the subsequently built hotel business and their use in launching Barrick. Bloomberg's wealth attribution and primary personal holdings corroborate independently created principal assets. The early funding is not a transfer of Barrick or a mature family enterprise, and no independently material inherited core is established. Family advantage is retained without claiming an unsupported inheritance or an independent start."
+    },
+    "source_ids": [
+      "S2",
+      "S3",
+      "S7",
+      "S8"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "investor",
+    "label": "Investor",
+    "summary": "Inferred terminal lifetime relationship: allocator of personal investment capital across businesses and holdings, after retirement from Barrick's chairmanship.",
+    "confidence": {
+      "score": 76,
+      "band": "medium",
+      "reason": "Primary filings identify his wholly owned PM Capital and substantial personally attributable Trizec sale consideration. His later majority-owned Porto Montenegro investment and sale, SPDI subscription and terminal confirmation of beneficial ownership establish sustained private allocation beyond one residual shareholding. This supports Investor as the best description of the personal portfolio near death, independently of its uncertain sector weights. The precise terminal mandate and all holdings are not public; honorary founder status alone is not used to retain Founder or Operator, and charitable assets are excluded."
+    },
+    "source_ids": [
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11"
+    ]
+  },
+  "biography": {
+    "plain_text": "Hungarian-born Canadian entrepreneur Peter Munk founded Barrick Gold, building much of his fortune through gold mining. His earlier ventures included Clairtone, the stereo manufacturer launched with funding from his father-in-law, and a Pacific hotel business. Based in Toronto, he also developed commercial property and became a major donor to Canadian institutions.",
+    "html": "<p>Hungarian-born Canadian entrepreneur Peter Munk founded Barrick Gold, building much of his fortune through gold mining. His earlier ventures included Clairtone, the stereo manufacturer launched with funding from his father-in-law, and a Pacific hotel business. Based in Toronto, he also developed commercial property and became a major donor to Canadian institutions.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "Independent business reporting, primary institutional biographies and the detailed origin account support every published claim."
+    },
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S7"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "Barrick Gold founder Peter Munk and his wife, Melanie, helped establish the cardiac centre bearing his name at Toronto General Hospital. Their gifts equipped the centre and endowed research chairs in fields including aortic disease and advanced cardiac therapies. Munk linked his donations to gratitude for Canada, where he had arrived as a young immigrant and studied electrical engineering at the University of Toronto.\n\nAt his alma mater, the couple supported the creation of the Munk School of Global Affairs and Public Policy. They also funded the Munk Debates, bringing public figures and thinkers to Toronto to discuss international issues before an audience.",
+    "html": "<p>Barrick Gold founder Peter Munk and his wife, Melanie, helped establish the cardiac centre bearing his name at Toronto General Hospital. Their gifts equipped the centre and endowed research chairs in fields including aortic disease and advanced cardiac therapies. Munk linked his donations to gratitude for Canada, where he had arrived as a young immigrant and studied electrical engineering at the University of Toronto.</p>\r\n<p>At his alma mater, the couple supported the creation of the Munk School of Global Affairs and Public Policy. They also funded the Munk Debates, bringing public figures and thinkers to Toronto to discuss international issues before an audience.</p>\r\n",
+    "word_count": 103,
+    "confidence": {
+      "score": 94,
+      "band": "high",
+      "reason": "The university and hospital directly document the institutions, engineering education, gifts and their purposes; the debates' own account verifies the public format."
+    },
+    "source_ids": [
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Founder of Barrick Gold",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary university biography and historical Forbes profile agree."
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Consistent named personal and family biographies."
+      },
+      "source_ids": [
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Budapest",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Independent obituary and detailed institutional tribute agree."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "8",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Both accounts state 8 November 1927."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "November",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Both accounts state 8 November 1927."
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1927",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Independent and primary institutional accounts agree."
+      },
+      "source_ids": [
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "field": "death_day",
+      "value": "28",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 96,
+        "band": "very_high",
+        "reason": "Dated obituary and institutional tribute explicitly state 28 March 2018."
+      },
+      "source_ids": [
+        "S3",
+        "S12"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "March",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Dated obituary and institutional tribute agree."
+      },
+      "source_ids": [
+        "S3",
+        "S12"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "2018",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Multiple institutional and independent sources agree."
+      },
+      "source_ids": [
+        "S3",
+        "S4",
+        "S12"
+      ]
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "existing_value": "Unknown",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Death on 28 March 2018 is explicitly documented by multiple primary and independent sources."
+      },
+      "source_ids": [
+        "S3",
+        "S4",
+        "S12"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "11",
+      "type": "Forbes",
+      "url": "http://people.forbes.com/profile/peter-munk/10584",
+      "verification": "Exact historical Forbes executive profile verified through a readable Internet Archive capture. Original endpoint currently unavailable; no contemporary wealth-list implication.",
+      "confidence": {
+        "score": 94,
+        "band": "high",
+        "reason": "The 2008 capture directly identifies Barrick's founder in Toronto and matches his age and prior Trizec roles."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "type_id": "14",
+      "type": "Company Website",
+      "url": "https://www.barrick.com/",
+      "verification": "Official website of the company he founded; its current memorial page preserves that relationship. Company website, not a personal social account.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Direct institutional founder attribution; his death and former role are explicit."
+      },
+      "source_ids": [
+        "S15"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0523",
+      "name": "Gold mining",
+      "summary": "Founded and developed Barrick, the central gold-mining enterprise in his fortune.",
+      "relationship_type": "founder_and_long_term_leader",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Historical founder ownership, material wealth creation and a sustained operating mandate meet the active specialism contract; this is not incidental mining exposure.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "Primary company history, personal equity disclosures and independent wealth attribution converge."
+      },
+      "source_ids": [
+        "S2",
+        "S8",
+        "S15"
+      ]
+    },
+    {
+      "tag_id": "tag_0218",
+      "name": "Consumer electronics",
+      "summary": "Co-founded and ran Clairtone, the stereo manufacturer that defined his early business career.",
+      "relationship_type": "co_founder_and_operator",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "A substantial, sustained manufacturing venture and defining operating history qualify even though the enterprise later failed; not an early ordinary job.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Primary university history and detailed contemporary-family business account document the company and his role."
+      },
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "tag_id": "tag_3493",
+      "name": "Marina operations",
+      "summary": "Conceived, financed and principally owned Porto Montenegro before its sale.",
+      "relationship_type": "founder_and_majority_owner",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "The commercial marina-centred business was a substantial defining development with sustained majority ownership; qualifying evidence is the operating marina, not his recreational yacht.",
+      "confidence": {
+        "score": 97,
+        "band": "very_high",
+        "reason": "The official sale announcement explicitly identifies him as majority shareholder of the owning company and documents the development and exit."
+      },
+      "source_ids": [
+        "S9",
+        "S12"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=1547",
+      "title": "Immutable owner inventory: person 1547",
+      "publisher": "Repository export",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Inventory before research: Canadian, Hungary birth country, Canada residence, age 90 recorded in 2020, mortality Unknown; historical Natalia V December 2009 to March 2018. Existing Wikipedia URL contains two spaces."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://web.archive.org/web/20081102072200/http://people.forbes.com/profile/peter-munk/10584",
+      "title": "Peter Munk: Forbes executive profile, 2008 capture",
+      "publisher": "Forbes / Internet Archive",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full archived profile read: exact name, age 80, Toronto, founder and chairman of Barrick; previous Trizec leadership. Original URL http://people.forbes.com/profile/peter-munk/10584 is now unavailable."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://english.aawsat.com/home/article/1229766/peter-munk-entrepreneur-who-founded-barrick-gold-dies-90",
+      "title": "Peter Munk, Entrepreneur Who Founded Barrick Gold, Dies at 90",
+      "publisher": "Bloomberg, syndicated by Asharq Al-Awsat",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed article body read; explicitly attributes most wealth to Barrick. Confirms Budapest birth on 8 November 1927, Toronto death, personally realised hotel proceeds, mining formation and material property ventures. Direct secondary HTTP request returned 403; the indexed article was accessible."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.uhn.ca/PMCC/About/Globe_Mail/Pages/a_debt_repaid_in_full.aspx",
+      "title": "A debt repaid in full",
+      "publisher": "University Health Network / Simon Avery, The Globe and Mail",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read. Father-in-law supplied Clairtone seed capital; independently built hotel business yielded personal proceeds used for Barrick. Gives birth and death dates and cardiac centre equipment and endowed research chairs."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.chancellorscircle.utoronto.ca/members/peter-munk-and-melanie-munk/",
+      "title": "Peter Munk and Melanie Munk",
+      "publisher": "University of Toronto",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read: Canadian institutional identity, Hungary origins, electrical-engineering degree, Clairtone and Barrick creation, Melanie partnership, Munk School and other named institutions."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.uhn.ca/corporate/News/Pages/Heart_of_Gold_Historic_$100_million_gift_by_Munk_Foundation.aspx",
+      "title": "Heart of Gold: Historic commitment by Munk Foundation",
+      "publisher": "University Health Network",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full 19 September 2017 body read: namesake centre, long-term gifts, explicit personal gratitude to Canada and practical research ambitions. Chairman Emeritus, not current operating chairman."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://munkdebates.com/about/",
+      "title": "About the Munk Debates",
+      "publisher": "Munk Debates",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read: Peter Munk founder, dates 1927–2018, public debates in Toronto and continuing family support."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.sec.gov/Archives/edgar/data/1172367/000095013706009237/c07849exv99w1.htm",
+      "title": "Trizec Canada 2006 arrangement circular",
+      "publisher": "Trizec Canada / SEC",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Relevant full indexed sections read: wholly owned PM Capital; personally attributable shares and approximately USD299.3 million indicative transaction consideration including options. Explicit cash exit terms; not the entire company's transaction value. Direct HTTP access restricted."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.sec.gov/Archives/edgar/data/756894/000119312514123863/d677793dex991.htm",
+      "title": "Barrick 2014 management information circular",
+      "publisher": "Barrick / SEC",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Relevant full indexed sections read: retirement from chairman and board in 2014; personal share and award values at March 2014. Historical personal equity materiality, not proof of retained 2018 quantities."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.newswire.ca/news-releases/investment-corporation-of-dubai-acquires-exclusive-porto-montenegro-578429521.html",
+      "title": "Investment Corporation of Dubai Acquires Exclusive Porto Montenegro",
+      "publisher": "Porto Montenegro / CNW",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full 6 May 2016 release read: majority shareholder of Montport Capital, development conception and financing, substantial marina-centred operating business, and sale to ICD."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://www.secure-property.eu/cms/wp-content/uploads/2018/04/2018-04-05-SECURE-PROPERTY-Board-Appointments-2.pdf",
+      "title": "Board appointments and tribute to Peter Munk",
+      "publisher": "Secure Property Development & Investment",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full three-page 5 April 2018 announcement read: longstanding significant SPDI shareholder through beneficial ownership of PM Capital at death. Does not establish the position as his largest asset."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://www.lse.co.uk/rns/SPDI/proposed-placing-to-raise-16-million-p3luhqflhmi01ih.html",
+      "title": "Proposed placing to raise USD16 million",
+      "publisher": "Secure Property Development & Investment / RNS",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant 24 January 2013 announcement read: Munk participated in property-company capital subscription; identifies prior Trigranit co-founding. Total subscription shared with other investors is not attributed entirely to Munk."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://megayachtnews.com/2018/04/peter-munk-porto-montenegro-yacht-owner/",
+      "title": "Peter Munk, Porto Montenegro Founder & Yacht Owner, Dies",
+      "publisher": "Megayacht News",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read: Golden Eagle acquired in 2009 and retained until death; 28 March death at age 90; marina development. Its inaccurate compressed migration chronology is not used."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://www.autoevolution.com/news/this-classic-beauty-was-a-billionaires-single-and-final-yacht-204962.html",
+      "title": "This Classic Beauty Was a Billionaire's Single and Final Yacht",
+      "publisher": "Autoevolution",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed body read: identifies Golden Eagle as the later Natalia V. Used only as supplementary vessel-name bridge; its arithmetic and wealth rhetoric are not used."
+      ]
+    },
+    {
+      "id": "S14",
+      "url": "https://en.wikipedia.org/wiki/Peter_Munk",
+      "title": "Peter Munk",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Existing profile identity verified; canonical working URL supplied for reviewer context. Two-space source URL preserved because dossier social proposals cannot replace an existing type."
+      ]
+    },
+    {
+      "id": "S15",
+      "url": "https://www.barrick.com/English/news/news-details/2018/remembering-peter-munk/default.aspx",
+      "title": "Remembering Peter Munk",
+      "publisher": "Barrick",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full company tribute read: enduring founder identity and building of the gold producer; verifies official company website."
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "topic": "Terminal lifetime scope",
+      "detail": "Deceased in March 2018. Classifications describe his lifetime assets and relationship near death, not the subsequent foundation or heirs. Sold Trizec and Porto Montenegro are excluded from current holdings. Mining is explicitly an origin-sector fallback, not a current portfolio assertion."
+    },
+    {
+      "topic": "Inference boundaries",
+      "detail": "Investor at 76 rests on repeated personally attributable allocation and exits plus terminal beneficial holding-company ownership. The SPDI position alone would not establish principal wealth activity or sector. Family office principal lacks a sufficiently documented terminal directing mandate. Current Founder was considered, but historical Barrick creation does not establish the principal retained asset relationship after retirement."
+    },
+    {
+      "topic": "Starting advantage",
+      "detail": "Family seed funding materially enabled Clairtone, while the later principal assets were separately built. The account of a formerly wealthy family losing its property is not used to claim a blank-slate start. A principal inherited or transferred operating asset is not evidenced; ordinary family identity alone supplies no classification."
+    },
+    {
+      "topic": "Personal details",
+      "detail": "Middle names Meir Abraham appear in one obituary lead but were not sufficiently corroborated for proposal. Hungarian origin does not independently establish retained dual nationality. No secondary nationality is proposed. Existing calculated age and residence are preserved; the age-at-date entry is stale relative to verified death. Arrival-year accounts differ by one year and no exact migration date appears in published prose."
+    },
+    {
+      "topic": "Forbes and profile checks",
+      "detail": "Forbes checked first; exact legacy executive profile verified in readable 2008 archive, original URL unavailable. Historical Forbes URL proposed with limitation. Personal website, Instagram, LinkedIn, Facebook, Twitter/X, YouTube, TikTok, Wikipedia, company website, Vimeo, Flickr, Trip Advisor and Zillow searched. No attributable personal account located; namesake professional profiles and corporate/charitable channels rejected. Flickr name-only account cannot be matched. Vimeo video is a third-party interview. Company website is separately typed."
+    },
+    {
+      "topic": "Existing Wikipedia URL",
+      "detail": "Canonical personal article is https://en.wikipedia.org/wiki/Peter_Munk. The source contains https://en.wikipedia.org/wiki/Peter  Munk. No replacement is proposed because the dossier contract forbids proposing an existing social type; this is a reviewer-visible correction candidate, not a shared or live change."
+    },
+    {
+      "topic": "Source and taxonomy limits",
+      "detail": "Some direct requests to SEC, Forbes and the syndicated obituary were unavailable, but relevant indexed full passages or the exact archived profile were read. No search snippets or namesake profiles supply material claims. Three non-overlapping active tags describe defining historical industries. No generic philanthropy tags, unapproved candidates, or catalogue edits."
+    }
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal decision after immutable inventory, Forbes-first research, primary asset evidence, independent wealth classifications, complete profile checks and parent review of the complementary biographies. Passed strict validation against the immutable input with no errors or warnings. No shared or live changes."
+  }
+}

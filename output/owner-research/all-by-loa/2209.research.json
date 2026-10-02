@@ -1,0 +1,1214 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 2209,
+    "display_name": "Jérôme Valcke",
+    "identity_confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "The uncommon exact name, French nationality, primary birth date matching age 59 in May 2020 and existing Wikipedia identity converge on the former FIFA official. No competing credible identity emerged. The historical vessel links remain input context, without an independently verified hull bridge."
+    }
+  },
+  "research_status": "complete",
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "name_suffix",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "name_suffix",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "existing_social_types": [
+      "Wikipedia"
+    ],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    }
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Exact accented and unaccented Forbes-first searches found journalism mentioning him, but no dedicated personal profile. Article mentions are not treated as a profile."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "sports",
+    "label": "Sports",
+    "summary": "Personal remuneration from football administration is the best-supported material origin.",
+    "confidence": {
+      "score": 85,
+      "band": "high",
+      "reason": "The primary decision documents CHF10 million of personal bonuses paid in 2013 and 2014, besides normal salary. This establishes substantial individual accumulation through FIFA, unlike its institutional revenues. Earlier television employment lacks comparable personal wealth evidence. The bonuses were found improper; this classification makes no claim about lawful entitlement."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "primary_industry": {
+    "classification": "sports",
+    "label": "Sports",
+    "summary": "Origin-sector fallback; current principal private holdings are not established.",
+    "confidence": {
+      "score": 74,
+      "band": "medium",
+      "reason": "His established remuneration source is retained as the explicit fallback. The later winery was sold in 2025; neither its proceeds nor other holdings establish current sector dominance. Institutional FIFA assets and the purchaser's portfolio are excluded."
+    },
+    "source_ids": [
+      "S2",
+      "S5",
+      "S6"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "self_made",
+    "label": "Self-made",
+    "summary": "Broad inference from personally accumulated career remuneration.",
+    "confidence": {
+      "score": 80,
+      "band": "medium",
+      "reason": "Documented substantial payments attached to his own employment establish a personal acquisition mechanism. Their disciplinary treatment does not turn them into inherited wealth. Independent versus advantaged starting conditions are unestablished, so no subtype is assigned; no inference is drawn from an absence of family reporting."
+    },
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "A current relationship to principal private assets is not established.",
+    "confidence": {
+      "score": 55,
+      "band": "low",
+      "reason": "Operator is the strongest alternative given his former executive career and winery involvement. Departure from FIFA and the reported winery sale prevent carrying those roles forward. A continuing personal investment mandate, retained dominant business or passive principal asset is not positively established. Neither former title nor uncertainty about proceeds establishes Investor."
+    },
+    "source_ids": [
+      "S3",
+      "S5",
+      "S6"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "French sports administrator and former television journalist.",
+    "defining_work": "FIFA secretary general responsible for two World Cups.",
+    "formative_context": "Television news and sports-marketing experience.",
+    "decisive_moment": null,
+    "enduring_dimensions": [
+      "International rights negotiation.",
+      "Direct sales and agency representation.",
+      "Later joint winery ownership."
+    ],
+    "character_detail": null,
+    "opening_options": [
+      {
+        "mode": "present_identity",
+        "angle": "Introduce the former football administrator."
+      },
+      {
+        "mode": "institution_or_asset",
+        "angle": "Begin with broadcasting-rights negotiations."
+      }
+    ],
+    "excluded_transient_context": [
+      "Yacht relationships",
+      "Institutional revenue as personal wealth",
+      "Unverified current portfolio",
+      "Unrequested legal details",
+      "Stale residence claims"
+    ],
+    "source_ids": [
+      "S1",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 4,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "present_identity",
+    "narrative_shape": "core_work_deepened",
+    "calibration_archetypes": [
+      "creative_industries"
+    ],
+    "notes": "Short owns the journalism background, named World Cup hosts and historical winery interest. Long shares the sports-rights and FIFA anchors, adding agency sales mechanics and Olympic programming. It omits the winery and tournament-delivery summary. No figures or explicit years in the long profile. Notes only; no audio claim."
+  },
+  "editorial_note": null,
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "Former FIFA secretary general",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Primary institutional career record."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Institutional and personal biographical descriptions agree."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "6",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Explicit institutional birth date."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "October",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Explicit institutional birth date."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1960",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Explicit institutional birth date; input age agrees."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Paris",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 88,
+        "band": "high",
+        "reason": "Personal published biography gives the birthplace."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "field": "secondary_nationality",
+      "value": "South African",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 88,
+        "band": "high",
+        "reason": "Personal biography corroborates reported naturalisation."
+      },
+      "source_ids": [
+        "S4",
+        "S12"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "3",
+      "type": "Twitter",
+      "url": "https://twitter.com/jeromevalcke",
+      "action": "add",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Twitter's own published guide explicitly identifies the FIFA secretary general's account; an official federation article independently links it."
+      },
+      "verification": "Platform guide and federation attribution; direct current profile failed to load. Historical authenticity verified, current activity not asserted.",
+      "source_ids": [
+        "S8",
+        "S9"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0393",
+      "name": "Sports administrator",
+      "summary": "Defining historical FIFA executive mandate.",
+      "relationship_type": "former secretary general",
+      "temporal_scope": "historical",
+      "taxonomy_value": "A substantial practiced executive role, not fandom or sponsorship.",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Primary institutional career record."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "tag_id": "tag_0678",
+      "name": "Television broadcasting",
+      "summary": "Sustained historical broadcasting and sports-rights leadership.",
+      "relationship_type": "former executive",
+      "temporal_scope": "historical",
+      "taxonomy_value": "Long operating responsibility at Canal+ and Sport+, not a short earlier job or passive holding.",
+      "confidence": {
+        "score": 90,
+        "band": "high",
+        "reason": "Institutional biography establishes years of senior broadcasting responsibility."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [
+    {
+      "field": "Wikipedia URL correction",
+      "value": "https://en.wikipedia.org/wiki/J%C3%A9r%C3%B4me_Valcke",
+      "confidence": {
+        "score": 95,
+        "band": "very_high",
+        "reason": "Exact article verified. Input contains two spaces; the schema rejects proposals for existing social types, so no duplicate row is proposed."
+      },
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "field": "LinkedIn",
+      "value": "https://ae.linkedin.com/in/j%C3%A9r%C3%B4me-valcke-318933114",
+      "confidence": {
+        "score": 65,
+        "band": "low",
+        "reason": "Indexed profile describes four decades in media and sport and a Gratallops role, but direct profile access failed and no official ownership link was found."
+      },
+      "source_ids": [
+        "S11"
+      ]
+    },
+    {
+      "field": "main_residence_country",
+      "value": "Spain",
+      "confidence": {
+        "score": 60,
+        "band": "low",
+        "reason": "Dated 2023; current residence unverified."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    }
+  ],
+  "biography": {
+    "plain_text": "Jérôme Valcke is a French sports administrator who became FIFA's secretary general after working in television journalism and sports marketing. He oversaw preparations for the World Cups in South Africa and Brazil before leaving the organisation. With his wife Ornella, he later owned Mas Igneus, a winery in Spain's Priorat region.",
+    "html": "<p>Jérôme Valcke is a French sports administrator who became FIFA's secretary general after working in television journalism and sports marketing. He oversaw preparations for the World Cups in South Africa and Brazil before leaving the organisation. With his wife Ornella, he later owned Mas Igneus, a winery in Spain's Priorat region.</p>\r\n",
+    "word_count": 51,
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Institutional career evidence and published interview notes support the account; historical winery ownership is time-qualified."
+    },
+    "source_ids": [
+      "S1",
+      "S4",
+      "S5",
+      "S6",
+      "S13"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "French sports executive Jérôme Valcke negotiated international broadcasting rights before entering football administration. At Canal+, his responsibilities included buying sports coverage and developing Sport+, an agency that supplied the broadcaster and sold rights abroad. During the Barcelona and Atlanta Olympics, the channel devoted its output to round-the-clock coverage of the Games.\n\nAt FIFA, he advocated bringing media-rights sales into the organisation, expanding a commercial operation initially focused on sponsorship. Major markets were handled directly, while agencies continued to represent particular territories. This work required negotiations with broadcasters and intermediaries, alongside the government relationships involved in delivering international tournaments.",
+    "html": "<p>French sports executive Jérôme Valcke negotiated international broadcasting rights before entering football administration. At Canal+, his responsibilities included buying sports coverage and developing Sport+, an agency that supplied the broadcaster and sold rights abroad. During the Barcelona and Atlanta Olympics, the channel devoted its output to round-the-clock coverage of the Games.</p>\r\n<p>At FIFA, he advocated bringing media-rights sales into the organisation, expanding a commercial operation initially focused on sponsorship. Major markets were handled directly, while agencies continued to represent particular territories. This work required negotiations with broadcasters and intermediaries, alongside the government relationships involved in delivering international tournaments.</p>\r\n",
+    "word_count": 98,
+    "confidence": {
+      "score": 88,
+      "band": "high",
+      "reason": "Institutional career evidence and published interview notes support the account; historical winery ownership is time-qualified."
+    },
+    "source_ids": [
+      "S4"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://agent.superyachtnetwork.com/yaycontact/vessel/owners/person/detail.htm?id=2209",
+      "title": "Immutable owner inventory",
+      "publisher": "Repository export",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Exact record, nationality, dated age and existing link; historical Love Boat and Funky Town relationships used only for disambiguation. No live access."
+      ]
+    },
+    {
+      "id": "S1",
+      "url": "https://www.sportbuzzbusiness.fr/wp-content/uploads/2015/03/r%C3%A9sultats-FIFA-2010-2014.pdf",
+      "title": "FIFA Financial Report 2014, governance biography, printed page72",
+      "publisher": "FIFA, mirrored by SportBuzzBusiness",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete biographical section read in PDF index75: birth date, nationality and sustained Canal+/Sport+ leadership before FIFA."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://digitalhub.fifa.com/m/799d1d006e8b50c9/original/rbg8wb8zjxvepkukv5wq-pdf.pdf",
+      "title": "Ethics Committee decision, Valcke, Adj.8/2020",
+      "publisher": "FIFA",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant payment findings pp4–7 and sanction/restitution reasoning pp24–27 read directly from PDF; individual amounts distinguished from combined awards."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://inside.fifa.com/organisation/committees/media-releases/adjudicatory-chamber-of-the-independent-ethics-committee-sanctions-mr-joseph-s-b",
+      "title": "Adjudicatory chamber sanctions former officials, 24March2021",
+      "publisher": "FIFA",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full release read: former position and separate ethics sanction; no continuing FIFA role inferred."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://podbay.fm/p/the-sports-entrepreneurs-podcast-by-marcus-luer/e/1686112236",
+      "title": "Jerome Valcke, Back Alive, 7June2023",
+      "publisher": "Sports Entrepreneurs Podcast, Marcus Luer, via Podbay",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Published interview notes and personal biography, not audio."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://dopriorat.com/es/productors/mas-igneus/",
+      "title": "Mas Igneus producer account",
+      "publisher": "DOPriorat independent directory",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body read: historical joint ownership. Publisher explicitly disclaims regulator affiliation; corroborative only."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://cronicaglobal.elespanol.com/business/20250826/fondo-tyrus-capital-compra-bodega-priorat-igneus/1003742683827_0.html",
+      "title": "Tyrus Capital buys Mas Igneus, 26August2025",
+      "publisher": "Crónica Global",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full report read: completed sale and Ornella's acquisition; company transaction value is not individual net proceeds."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.swissinfo.ch/eng/various/federal-court-confirms-judgement-against-ex-fifa-official-valcke/90667880",
+      "title": "Swiss court confirms ex-FIFA official's verdict, 19December2025",
+      "publisher": "Swissinfo / Keystone-SDA",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full substantive body read: final appeal outcome. Retained only as contextual research, not biography content."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://blog.x.com/en_gb/a/en-gb/2013/follow-the-world-cup-draw-on-twitter-0",
+      "title": "Follow the World Cup draw on Twitter",
+      "publisher": "Twitter",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Platform's own guide explicitly identifies @JeromeValcke as the secretary general's account."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://rfef.es/es/noticias/fifa-fan-fest-sacaran-emocion-del-mundial-calles",
+      "title": "FIFA Fan Fest and Valcke's account, 17February2014",
+      "publisher": "Royal Spanish Football Federation",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full article and embedded tweet identify the same personal Twitter account."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://en.wikipedia.org/wiki/J%C3%A9r%C3%B4me_Valcke",
+      "title": "Jérôme Valcke",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Dedicated article matches exact identity; used to verify the correction candidate, not unresolved allegations."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://ae.linkedin.com/in/j%C3%A9r%C3%B4me-valcke-318933114",
+      "title": "Jérôme Valcke, TBC",
+      "publisher": "LinkedIn profile candidate",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Indexed body describes media/sport career and Gratallops; direct access failed. Not sufficiently authenticated for import."
+      ]
+    },
+    {
+      "id": "S12",
+      "url": "https://iol.co.za/news/politics/2017-08-15-not-only-guptas-got-citizenship-speeded-up/",
+      "title": "Not only Guptas got citizenship speeded up",
+      "publisher": "IOL",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant ministerial-list passage confirms naturalisation in 2012."
+      ]
+    },
+    {
+      "id": "S13",
+      "url": "https://masigneus.com/en/about-us/",
+      "title": "About us",
+      "publisher": "Mas Igneus",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full historical account read: Ornella's 2020 acquisition and professional team. Current wording is stale against the later sale."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Current principal asset weights, net retained remuneration, liabilities and investment mandate are unestablished; classification is not a net-worth estimate.",
+    "The ethics decision found the relevant bonuses improper and required their return where applicable. No recovery amount or present balance is inferred.",
+    "Separately, reporting on the final Swiss appeal records passive-bribery and forgery convictions, with a suspended sentence. Other proceedings had different outcomes; no allegation is imported into the biographies.",
+    "Interview notes contain an unused tournament-date typo.",
+    "The independent DOPriorat directory is not the appellation regulator. Older winery pages do not supersede the reported sale.",
+    "LinkedIn searches produced a stale Zurich/FIFA profile and a newer UAE/TBC candidate. Neither proves present residence or a current economic role.",
+    "Instagram, Facebook, personal website, Youtube, TikTok, Vimeo, Flickr, Trip Advisor and Zillow checks found no verified personal account. Interview-host, institutional and photographer accounts were excluded.",
+    "No winery or FIFA company website is proposed: neither is a current personally owned or led platform established by the evidence. The wine interest is not assigned a tag because its scale and personally defining operating mandate remain insufficient.",
+    "No additional middle names or current residence correction were securely established. Mortality remains Alive; death fields are inapplicable."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Parent reviewed identity, four economic decisions and complementary pair. Legal outcomes retained only in research context. Missing fields, historical social verification and closed active tags checked; strict validation follows. Only the assigned dossier is written."
+  }
+}

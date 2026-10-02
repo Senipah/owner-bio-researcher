@@ -1,0 +1,1215 @@
+{
+  "schema_version": 8,
+  "record_type": "person",
+  "owner": {
+    "person_id": 1619,
+    "display_name": "King Olav V of Norway",
+    "identity_confidence": {
+      "score": 99,
+      "band": "very_high",
+      "reason": "The exact monarch's name and Norwegian nationality are unambiguous. The Royal Court's Norge history independently matches the input's September 1957-January 1991 relationship. Official biography and succession records corroborate the identity and distinguish him from earlier Norwegian kings and his father and son."
+    }
+  },
+  "research_status": "complete",
+  "input_snapshot": {
+    "source_path": "output/owners-list.vessel-enriched.enriched.json",
+    "researchable_missing_details": [
+      "middle_names",
+      "secondary_nationality",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "biography"
+    ],
+    "optional_missing_details": [
+      "title",
+      "secondary_residence_country"
+    ],
+    "inapplicable_or_system_details": [
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "unknown_name"
+    ],
+    "social_type_lookup": {
+      "2": "Facebook",
+      "3": "Twitter",
+      "4": "Youtube",
+      "5": "LinkedIn",
+      "6": "Trip Advisor",
+      "7": "Vimeo",
+      "8": "Flickr",
+      "9": "Instagram",
+      "10": "Wikipedia",
+      "11": "Forbes",
+      "12": "Zillow",
+      "14": "Company Website",
+      "15": "Personal Website",
+      "16": "TikTok"
+    },
+    "detail_select_option_lookups": {
+      "nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "secondary_nationality": {
+        "1": "Afghan",
+        "2": "Albanian",
+        "3": "Algerian",
+        "4": "American",
+        "5": "Angolan",
+        "6": "Argentinian",
+        "7": "Armenian",
+        "8": "Australian",
+        "9": "Austrian",
+        "10": "Azerbaijani",
+        "11": "Bahamanian",
+        "12": "Bahrainian",
+        "13": "Bangladeshi",
+        "15": "Belarussian",
+        "16": "Belgian",
+        "18": "Bolivian",
+        "19": "Bosnian",
+        "21": "Brazilian",
+        "22": "British",
+        "24": "Bruneian",
+        "25": "Bulgarian",
+        "29": "Canadian",
+        "31": "Chilian",
+        "32": "Chinese",
+        "33": "Colombian",
+        "34": "Congolese",
+        "36": "Croatian",
+        "37": "Cuban",
+        "38": "Cypriot",
+        "39": "Czech",
+        "40": "Danish",
+        "41": "Dutch",
+        "42": "Ecuadorian",
+        "43": "Egyptian",
+        "45": "Emirati",
+        "47": "Estonian",
+        "50": "Filipino",
+        "51": "Finnish",
+        "52": "French",
+        "54": "Georgian",
+        "55": "German",
+        "57": "Greek",
+        "58": "Grenadian",
+        "60": "Guatemalan",
+        "62": "Hungarian",
+        "64": "Indian",
+        "65": "Indonesian",
+        "66": "Iranian",
+        "67": "Iraqi",
+        "68": "Irish",
+        "69": "Israeli",
+        "70": "Italian",
+        "71": "Ivorian",
+        "72": "Jamaican",
+        "73": "Japanese",
+        "74": "Jordanian",
+        "75": "Kazakhstanian",
+        "78": "Kuwaiti",
+        "80": "Latvian",
+        "81": "Lebanese",
+        "82": "Liberian",
+        "83": "Libyan",
+        "84": "Lithuanian",
+        "85": "Luxembourgish",
+        "89": "Malaysian",
+        "90": "Maltese",
+        "92": "Mexican",
+        "93": "Moldavian",
+        "95": "Moroccan",
+        "100": "New Zealander",
+        "102": "Nigerian",
+        "103": "Norwegian",
+        "104": "Omanian",
+        "105": "Pakistani",
+        "107": "Panamamian",
+        "110": "Peruvian",
+        "111": "Polish",
+        "112": "Portuguese",
+        "113": "Puerto Rican",
+        "114": "Qatari",
+        "115": "Romanian",
+        "116": "Russian",
+        "118": "Saudi Arabian",
+        "120": "Serbian",
+        "122": "Singaporean",
+        "123": "Slovakian",
+        "124": "Slovenian",
+        "126": "South African",
+        "128": "Spanish",
+        "133": "Swedish",
+        "134": "Swiss",
+        "135": "Syrian",
+        "136": "Taiwanese",
+        "138": "Thai",
+        "142": "Tunisian",
+        "143": "Turkish",
+        "145": "Ukrainian",
+        "146": "Uruguayan",
+        "147": "Uzbekistanian",
+        "148": "Venezuelan",
+        "151": "Yemenese",
+        "156": "English",
+        "157": "Monégasque",
+        "159": "Cambodian"
+      },
+      "main_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "secondary_residence_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "gender": {
+        "1": "Male",
+        "2": "Female"
+      },
+      "birth_country": {
+        "1": "Andorra",
+        "2": "United Arab Emirates",
+        "6": "Albania",
+        "7": "Armenia",
+        "9": "Angola",
+        "11": "Argentina",
+        "13": "Austria",
+        "14": "Australia",
+        "16": "Bosnia and Herzegovina",
+        "17": "Barbados",
+        "19": "Belgium",
+        "21": "Bulgaria",
+        "22": "Bahrain",
+        "25": "Bermuda",
+        "26": "Brunei Darussalam",
+        "27": "Bolivia",
+        "28": "Brazil",
+        "29": "Bahamas",
+        "33": "Belarus",
+        "35": "Canada",
+        "39": "Congo",
+        "40": "Switzerland",
+        "41": "Cote d'Ivoire",
+        "43": "Chile",
+        "45": "China",
+        "46": "Colombia",
+        "48": "Cuba",
+        "51": "Cyprus",
+        "52": "Czech Republic",
+        "53": "Germany",
+        "54": "Djibouti",
+        "55": "Denmark",
+        "57": "Dominican Republic",
+        "59": "Ecuador",
+        "60": "Estonia",
+        "61": "Egypt",
+        "64": "Spain",
+        "65": "Ethiopia",
+        "66": "Finland",
+        "71": "France",
+        "73": "United Kingdom",
+        "75": "Georgia",
+        "78": "Gibraltar",
+        "83": "Equatorial Guinea",
+        "84": "Greece",
+        "86": "Guatemala",
+        "89": "Guyana",
+        "90": "Hong Kong",
+        "93": "Croatia",
+        "95": "Hungary",
+        "96": "Indonesia",
+        "97": "Ireland",
+        "98": "Israel",
+        "99": "India",
+        "101": "Iraq",
+        "102": "Iran",
+        "104": "Italy",
+        "105": "Jamaica",
+        "106": "Jordan",
+        "107": "Japan",
+        "110": "Cambodia",
+        "116": "Kuwait",
+        "118": "Kazakhstan",
+        "120": "Lebanon",
+        "123": "Sri Lanka",
+        "124": "Liberia",
+        "126": "Lithuania",
+        "127": "Luxembourg",
+        "128": "Latvia",
+        "129": "Libyan Arab Jamahiriya",
+        "130": "Morocco",
+        "131": "Monaco",
+        "144": "Malta",
+        "146": "Maldives",
+        "148": "Mexico",
+        "149": "Malaysia",
+        "155": "Nigeria",
+        "157": "Netherlands",
+        "158": "Norway",
+        "162": "New Zealand",
+        "163": "Oman",
+        "164": "Panama",
+        "165": "Peru",
+        "166": "French Polynesia",
+        "168": "Philippines",
+        "169": "Pakistan",
+        "170": "Poland",
+        "173": "Puerto Rico",
+        "175": "Portugal",
+        "178": "Qatar",
+        "180": "Romania",
+        "181": "Russian Federation",
+        "183": "Saudi Arabia",
+        "186": "Sudan",
+        "187": "Sweden",
+        "188": "Singapore",
+        "190": "Slovenia",
+        "192": "Slovakia",
+        "195": "Senegal",
+        "200": "Syrian Arab Republic",
+        "201": "Swaziland",
+        "204": "French Southern Territories",
+        "206": "Thailand",
+        "210": "Turkmenistan",
+        "211": "Tunisia",
+        "213": "Turkey",
+        "214": "Trinidad and Tobago",
+        "216": "Taiwan",
+        "218": "Ukraine",
+        "219": "Uganda",
+        "221": "United States",
+        "222": "Uruguay",
+        "223": "Uzbekistan",
+        "225": "Saint Vincent and the Grenadines",
+        "226": "Venezuela",
+        "228": "Virgin Islands, U.S.",
+        "233": "Yemen",
+        "236": "South Africa",
+        "241": "Azerbaijan",
+        "243": "Isle Of Man",
+        "244": "Montenegro",
+        "246": "Serbia"
+      },
+      "birth_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "mortality_status": {
+        "1": "Alive",
+        "2": "Dead",
+        "3": "Missing",
+        "4": "Unknown"
+      },
+      "death_month": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    },
+    "raw_blank_details": [
+      "title",
+      "middle_names",
+      "secondary_nationality",
+      "secondary_residence_country",
+      "known_for_title",
+      "gender",
+      "place_of_birth",
+      "birth_day",
+      "birth_month",
+      "birth_year",
+      "death_day",
+      "death_month",
+      "death_year",
+      "death_age",
+      "death_age_at_date",
+      "internal_notes",
+      "biography",
+      "unknown_name"
+    ],
+    "existing_social_types": [],
+    "missing_priority_social_types": [
+      "LinkedIn",
+      "Instagram",
+      "Personal Website"
+    ]
+  },
+  "forbes_profile": {
+    "status": "not_found",
+    "url": null,
+    "confidence": {
+      "score": 91,
+      "band": "high",
+      "reason": "Forbes was checked first and a focused exact-name personal-profile search repeated. No matching profile was found. Royal office, historical wealth and the family's present prominence are not substitutes for a verified personal Forbes page."
+    }
+  },
+  "wealth_creation_industry": {
+    "classification": "unknown",
+    "label": "Unknown",
+    "summary": "The economic sector that originally created the inherited private royal fortune could not be established; Finance & Investments is the strongest alternative.",
+    "confidence": {
+      "score": 55,
+      "band": "low",
+      "reason": "The private fortune passed through Queen Maud and King Haakon, but the reports identify royal gifts and inheritances before describing a mixed securities portfolio. Later investment management does not establish which sector generated the initial family capital. The historical holdings in railways, mining, aviation, telecoms and consumer businesses have no materiality breakdown. Neither Finance & Investments nor Diversified reaches the threshold for original wealth creation. State assets and Norwegian petroleum are excluded."
+    },
+    "source_ids": [
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "primary_industry": {
+    "classification": "finance_investments",
+    "label": "Finance & Investments",
+    "summary": "Inferred terminal primary sector: a substantial inherited private financial reserve was maintained during his lifetime and passed to his heirs.",
+    "confidence": {
+      "score": 74,
+      "band": "medium",
+      "reason": "A court official confirms that Harald received a substantial private inheritance from Olav and that maintaining an independent reserve was Olav's deliberate policy. Historical reporting independently traces the family's securities fortune through Haakon to Olav. These convergent facts establish a material private financial core at death, supporting Finance & Investments at medium confidence. Exact 1999 fund allocations, management arrangements and amounts belong to Harald and are not backcast to 1991. Private residences and possessions existed, but no better-supported principal operating sector emerges."
+    },
+    "source_ids": [
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "wealth_origin": {
+    "classification": "dynastic_royal",
+    "label": "Dynastic / royal",
+    "summary": "Access to his private family fortune followed the Norwegian royal line and the wealth brought into it through Queen Maud.",
+    "confidence": {
+      "score": 92,
+      "band": "high",
+      "reason": "The inheritance chain and substantial private reserve are positively documented, independently of his public constitutional office. Royal lineage best describes the principal access mechanism; ordinary Inherited is less specific. No claim is made to personal ownership of national resources, sovereign funds or state residences."
+    },
+    "source_ids": [
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "wealth_relationship": {
+    "classification": "royal_beneficiary",
+    "label": "Royal beneficiary",
+    "summary": "At his death, his private assets and financial benefits remained principally those of a member and head of the royal family.",
+    "confidence": {
+      "score": 90,
+      "band": "high",
+      "reason": "Private inheritance, a maintained personal reserve and family property establish beneficial access, not merely official custody. No independently defining business operation or personal investment-management mandate is documented. Royal beneficiary is more precise than a generic heir label and does not make him the owner of state property. The terminal frame is January 1991; later heir holdings are separate."
+    },
+    "source_ids": [
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "biography_brief": {
+    "durable_identity": "Olav V was Norway's constitutional monarch, succeeding his father Haakon VII.",
+    "defining_work": "His public service included wartime exile, military leadership and more than three decades as king.",
+    "formative_context": "Born in England and raised in Norway, he received Norwegian military training and studied at Oxford.",
+    "decisive_moment": "The exile government appointed him chief of defence during the Second World War.",
+    "enduring_dimensions": [
+      "He became known as the people's king through a readily approachable public manner.",
+      "He combined Olympic sailing success with sustained sporting administration."
+    ],
+    "character_detail": "During driving restrictions he took a tram to go skiing and offered a banknote for the fare.",
+    "opening_options": [
+      {
+        "mode": "decisive_event",
+        "angle": "Open with the photographed tram journey and the public image it expressed."
+      },
+      {
+        "mode": "present_identity",
+        "angle": "Open with the constitutional monarch's succession and preparation for public service."
+      }
+    ],
+    "excluded_transient_context": [
+      "Input vessel and changing property ownership",
+      "Speculative wealth estimates and state asset totals",
+      "Unverified modern personal accounts",
+      "Sensitive medical or family speculation",
+      "Later descendants' finances"
+    ],
+    "source_ids": [
+      "S1",
+      "S3",
+      "S4"
+    ]
+  },
+  "editorial_assessment": {
+    "causal_clarity": 5,
+    "human_specificity": 5,
+    "durability": 5,
+    "source_invisibility": 5,
+    "natural_voice": 4,
+    "reader_orientation": 5,
+    "structural_independence": 5,
+    "opening_mode": "decisive_event",
+    "narrative_shape": "public_role_then_foundation",
+    "calibration_archetypes": [
+      "royal_public_office"
+    ],
+    "notes": "Shared anchor is the Norwegian monarch's identity. The short uniquely supplies reign, succession, upbringing, education and wartime command. The long omits that chronology and adds the photographed tram event, its public meaning, Olympic achievement, engagement and specific sporting governance. The fare is offered, not said to have been paid personally; photographers are explicitly present. Durable maritime exception: Olympic competition and sustained sporting administration are independently defining public work, not input-vessel ownership colour. The long loses substantive event and governance material if reduced to the short."
+  },
+  "editorial_note": null,
+  "biography": {
+    "plain_text": "Olav V was King of Norway from 1957 to 1991, succeeding his father, Haakon VII. Born in England and raised in Norway, he trained at the Norwegian Military Academy and studied at Oxford. During the Second World War, he served the government in exile and became Norway's chief of defence in 1944.",
+    "html": "<p>Olav V was King of Norway from 1957 to 1991, succeeding his father, Haakon VII. Born in England and raised in Norway, he trained at the Norwegian Military Academy and studied at Oxford. During the Second World War, he served the government in exile and became Norway's chief of defence in 1944.</p>\r\n",
+    "word_count": 52,
+    "confidence": {
+      "score": 98,
+      "band": "very_high",
+      "reason": "The full official biography directly supports the compact public-service chronology."
+    },
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "long_biography": {
+    "plain_text": "In December 1973, King Olav V took the tram to go skiing while Norway restricted driving during the oil crisis. Photographers accompanied the journey, and the image of him offering a banknote for his fare became an enduring expression of his reputation as the people's king.\n\nSport was a substantial part of his life. He won Olympic sailing gold at Amsterdam in 1928, returning home secretly engaged to Princess Märtha of Sweden. He later chaired the Royal Norwegian Sailing Association and served as a judge and technical expert at competitions. He also represented Norway in international sailing organisations.",
+    "html": "<p>In December 1973, King Olav V took the tram to go skiing while Norway restricted driving during the oil crisis. Photographers accompanied the journey, and the image of him offering a banknote for his fare became an enduring expression of his reputation as the people's king.</p>\r\n<p>Sport was a substantial part of his life. He won Olympic sailing gold at Amsterdam in 1928, returning home secretly engaged to Princess Märtha of Sweden. He later chaired the Royal Norwegian Sailing Association and served as a judge and technical expert at competitions. He also represented Norway in international sailing organisations.</p>\r\n",
+    "word_count": 98,
+    "confidence": {
+      "score": 95,
+      "band": "very_high",
+      "reason": "The museum's full indexed essay documents the tram event and photographers, while the Royal Court's full sporting history establishes Olympic victory, engagement and governance duties."
+    },
+    "source_ids": [
+      "S3",
+      "S4"
+    ]
+  },
+  "proposed_details": [
+    {
+      "field": "known_for_title",
+      "value": "King of Norway (1957-1991)",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official reign and succession records agree."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "field": "gender",
+      "value": "Male",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official personal biography and family records identify him as male."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "place_of_birth",
+      "value": "Appleton House, Norfolk, England",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Explicitly identified in the official biography."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "birth_day",
+      "value": "2",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official biography supplies the complete birth date."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "birth_month",
+      "value": "July",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official biography supplies the complete birth date."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "birth_year",
+      "value": "1903",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "Official biography supplies the complete birth date."
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "field": "birth_country",
+      "value": "United Kingdom",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 98,
+        "band": "very_high",
+        "reason": "The official birthplace is Norfolk, England; exact visible country label used."
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "existing_value": "Norway"
+    },
+    {
+      "field": "mortality_status",
+      "value": "Dead",
+      "action": "correct_existing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official succession account confirms death."
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "existing_value": "Unknown"
+    },
+    {
+      "field": "death_day",
+      "value": "17",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official succession account gives the complete date."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "death_month",
+      "value": "January",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official succession account gives the complete date."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "field": "death_year",
+      "value": "1991",
+      "action": "fill_missing",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official succession account gives the complete date."
+      },
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "proposed_socials": [
+    {
+      "type_id": "10",
+      "type": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Olav_V",
+      "action": "add",
+      "verification": "Exact personal reference article matches official name, reign, parentage and vital dates.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Exact personal reference article matches official name, reign, parentage and vital dates."
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S10"
+      ]
+    }
+  ],
+  "proposed_tags": [
+    {
+      "tag_id": "tag_0353",
+      "name": "Monarch",
+      "summary": "Norway's constitutional monarch for more than three decades.",
+      "relationship_type": "other",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Personally held the sovereign office; the specific Monarch status replaces overlapping generic Royalty.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official reign and succession records establish the defining office."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "tag_id": "tag_0135",
+      "name": "Norwegian royal family",
+      "summary": "Son of Haakon VII and father of Harald V, in the Norwegian royal dynasty.",
+      "relationship_type": "family_member",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Directly documented dynastic membership is central to status and wealth, a distinct family-affiliation dimension.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official parentage and succession establish membership."
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "tag_id": "tag_0044",
+      "name": "Competitive sailing",
+      "summary": "Olympic champion with a sustained competitive and sporting-governance career.",
+      "relationship_type": "other",
+      "temporal_scope": "former_but_defining",
+      "taxonomy_value": "Olympic success, decades of racing and formal administration meet the sustained sporting-identity contract independently of private vessel use.",
+      "confidence": {
+        "score": 99,
+        "band": "very_high",
+        "reason": "Official sporting history documents competition and senior governance."
+      },
+      "source_ids": [
+        "S4"
+      ]
+    }
+  ],
+  "candidates_requiring_review": [],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.kongehuset.no/historie/alt-for-norge/kong-olav-v/kong-olavs-biografi",
+      "title": "King Olav V: official biography",
+      "publisher": "Royal Court of Norway",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Complete substantive biography read through web extraction; direct HTTP retrieval encountered a security checkpoint. Establishes parentage, birthplace and date, education, wartime command and constitutional role."
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.kongehuset.no/nyheter/tronskiftet-1991",
+      "title": "The succession in 1991",
+      "publisher": "Royal Court of Norway",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full official account read. Gives reign beginning 21 September 1957, death on 17 January 1991 and Harald's immediate succession; confirms age 87 at death."
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://arkiv.preusmuseum.no/eng/Discover-the-Exhibitions/Education/Image-of-the-week/Folkekongen.html",
+      "title": "The people's king: image of the week, 2018",
+      "publisher": "Preus Museum",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed museum essay read; direct opening returned 403. Describes 16 December 1973 tram journey during driving restrictions, invited photographers and the offered banknote. It does not support a habitual commute or an unplanned press encounter."
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.kongehuset.no/nyheter/kongelige-olympiere",
+      "title": "Royal Olympians, 11 August 2008",
+      "publisher": "Royal Court of Norway",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full official article read. Documents 1928 Olympic gold, secret engagement, chairmanship of the national royal sailing association in 1932-1936, judging and technical duties, and sustained racing. Son Harald's achievements are kept separate."
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.dagbladet.no/nyheter/sikrer-seg-mot-krig-og-krise/65498377",
+      "title": "A reserve against war and crisis, 12 January 1999",
+      "publisher": "Dagbladet / Arild J. Waagbo",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body directly read. Quotes chief of court confirming substantial inheritance from Olav and Olav's policy of retaining a private emergency reserve. Described fund managers, fund mix and estimates are Harald's 1999 position, not a 1991 balance sheet."
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.newsinenglish.no/2019/08/05/royal-wealth-defies-the-folksy-image/",
+      "title": "Royal wealth defies the folksy image",
+      "publisher": "News in English / Nina Berglund",
+      "tier": 2,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full body directly read. Summarises DN's archive-based investigation: Maud's privately inherited funds, historical overseas securities and passage through Haakon to Olav and his heirs. Distinguishes state residences from private assets. Contemporary family estimates are not assigned to Olav."
+      ]
+    },
+    {
+      "id": "S7",
+      "url": "https://www.regjeringen.no/no/dokumenter/otprp-nr-1-2001-2002-/id124168/?ch=4",
+      "title": "Ot.prp. 1 (2001-2002), chapter 4",
+      "publisher": "Norwegian Ministry of Finance",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full relevant sections 4.2-4.3 read. Official discussion expressly identifies the estate settlement after Olav's death and distinguishes private royal property and capital income from state property. Used as historical corroboration, not current legal advice."
+      ]
+    },
+    {
+      "id": "S8",
+      "url": "https://www.kongehuset.no/kongelige-eiendommer/private-eiendommer/kongsseteren",
+      "title": "Kongsseteren",
+      "publisher": "Royal Court of Norway",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Substantive official history read. Identifies the villa as private family property and an original coronation gift to Haakon and Maud. No terminal personal valuation or real-estate business is inferred."
+      ]
+    },
+    {
+      "id": "S9",
+      "url": "https://www.kongehuset.no/kongelige-eiendommer/kongeskipet-norge",
+      "title": "The royal vessel Norge",
+      "publisher": "Royal Court of Norway",
+      "tier": 1,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full official history read. Explicitly records Olav taking over in 1957 and Harald succeeding in 1991, matching the immutable relationship. Differentiates the royal gift and naval operation; used for identity, not a shipping-wealth inference."
+      ]
+    },
+    {
+      "id": "S10",
+      "url": "https://en.wikipedia.org/wiki/Olav_V",
+      "title": "Olav V",
+      "publisher": "Wikipedia",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Directly opened personal article and relevant biographical sections read. Its name, reign and dates agree with the Royal Court; proposed as a reference link, not sole evidence for financial classifications."
+      ]
+    },
+    {
+      "id": "S11",
+      "url": "https://nl.linkedin.com/in/ovanruijven",
+      "title": "Olav V., JERA Nex bp",
+      "publisher": "LinkedIn",
+      "tier": 3,
+      "accessed_at": "2026-10-01",
+      "supports": [
+        "Full indexed public profile read. Contemporary Dutch energy professional with 2012-2014 education is a namesake, not the monarch who died in 1991. No personal LinkedIn link proposed."
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Research cutoff 30 September 2026, accessed 1 October 2026. Current industry and relationship fields are evaluated at Olav's death on 17 January 1991, not for his estate or later descendants.",
+    "The input's age 87 recorded in 2020 appears to preserve death age. Dates are independently sourced and not derived from the stale field. The incorrect birth-country value Norway is explicitly corrected to United Kingdom.",
+    "The name is stored as first_name King, last_name Olav and suffix V of Norway. This dossier leaves display and name parsing intact. The childhood baptismal name Alexander Edward Christian Frederik is not mechanically placed into the middle_names field of his regnal identity.",
+    "Unknown creation industry remains after testing Finance & Investments, Diversified and Real Estate. A securities portfolio and royal inheritance are established, but the economic production of the original transferred capital and relative materiality of historical sectors are not. The current-sector inference does not circularly establish its origin.",
+    "Finance & Investments at death is a bounded inference from Olav's substantial personally maintained reserve, its direct inheritance by Harald and the separately documented private-securities lineage. No 1999 weights, two-manager arrangement or later balance is asserted for 1991. There is no mandatory origin fallback because the origin sector itself is unestablished.",
+    "Dynastic / royal and Royal beneficiary rest on private inheritance and access, not office alone. Private property existed, but use of palaces, national petroleum revenue and sovereign assets does not establish ownership. A trustee-only classification would overlook documented personal inheritance.",
+    "Historical reports differ widely in valuations of Maud's inheritance and later family wealth. No monetary fortune estimate is proposed. Estate succession corroborates beneficial ownership without establishing a complete terminal asset allocation.",
+    "Forbes was searched first and again by exact profile query; no matching personal profile found. A deceased monarch's omission from those results is not evidence of absence of wealth.",
+    "All supported link types were considered and searched: LinkedIn, Instagram, Personal Website, Facebook, Twitter/X, Youtube, TikTok, Wikipedia, Vimeo, Flickr, Trip Advisor, Zillow and Company Website. Only the exact Wikipedia article is proposed. The modern Royal Court and family social channels are institutional, and archival films, museum photographs, fan pages and the Tripadvisor statue listing are not his personal accounts.",
+    "The Dutch LinkedIn Olav V. is excluded by career and dates. No business company domain is proposed for a constitutional monarch. The Royal Court history serves as an evidence source rather than being mislabelled as his personal website.",
+    "The Preus Museum text was available as a complete indexed essay despite direct 403. It explicitly records invited photographers; the biography therefore avoids implying a spontaneous unobserved commute. The official biography says the adjutant had already paid, so only his offered banknote is described.",
+    "Three active tags capture distinct royal status, named dynastic affiliation and sporting identity. Generic Royalty would duplicate Monarch and is omitted. Sporting excellence does not imply a Sports source of wealth.",
+    "The 52/98-word pair shares identity only. The long omits the short's reign dates, succession, education and wartime command while adding a concrete public episode, sporting achievement and governance."
+  ],
+  "review": {
+    "status": "complete",
+    "notes": "Terminal resolved-person research with wealth fields anchored to January 1991. Parent reviewed and approved the complementary pair, Dynastic / royal and Royal beneficiary classifications, Unknown creation sector and bounded Finance & Investments terminal inference before save. Only this assigned dossier was written."
+  }
+}
